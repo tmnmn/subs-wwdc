@@ -120,13 +120,46 @@ end
 
 class SubDownloader
   def self.download(m3uUrl, dirPath)
-    filename = File.join(dirPath, File.basename(m3uUrl))
-    open(m3uUrl) do |file|
-      open(filename, "w+b") do |out|
-        out.write(file.read)
+    begin
+      filename = File.join(dirPath, File.basename(m3uUrl))
+      open(m3uUrl) do |file|
+        open(filename, "w+b") do |out|
+          out.write(file.read)
+        end
       end
+    rescue => e
+      p "! #{m3uUrl} #{filename} (#{e})"
     end
     return filename
+  end
+end
+
+class MasterPlayListParser
+  def self.parse_sub_playlist_url_from_master_playlist(m3uFilePath)
+
+    # e.g. master play list
+    #
+    # #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,LANGUAGE="eng",URI="subtitles/eng/prog_index.m3u8"
+    # #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="日本語",DEFAULT=NO,AUTOSELECT=NO,FORCED=NO,LANGUAGE="Japanese",URI="subtitles/jpn/prog_index.m3u8"
+    # #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="简体中文",DEFAULT=NO,AUTOSELECT=NO,FORCED=NO,LANGUAGE="Chinese",URI="subtitles/zho/prog_index.m3u8"
+
+    m3uHash = []
+    open(m3uFilePath, "r") do |f|
+      f.each_line do |line|
+        if line.start_with?('#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",')
+          keyAndValues = line.split(",")
+          keyAndValues.each do |item|
+            keyAndValue = item.split("=")
+            if keyAndValue[0] == "URI"
+              value = keyAndValue[1].gsub(/["\n]/, "")
+              m3uHash.push(value)
+              break
+            end
+          end
+        end
+      end
+    end
+    return m3uHash
   end
 end
 
@@ -145,7 +178,7 @@ def create_index_file(wwdcyear, filePath)
     dirPath = File.dirname(filePath)
     FileUtils.mkdir_p(dirPath) unless FileTest.exist?(dirPath)
     File.open(filePath, "w") do |f|
-      JSON.dump(sessionInfos, f);
+      JSON.dump(sessionInfos, f)
     end
   rescue => e
     p "! #{filePath} (#{e})"
@@ -156,7 +189,7 @@ def download_master_playlists(filePath)
   sessionInfoHashs = []
   begin
     File.open(filePath, "r") do |f|
-      sessionInfoHashs = JSON.load(f);
+      sessionInfoHashs = JSON.load(f)
     end
   rescue => e
     p "! #{filePath} (#{e})"
@@ -173,8 +206,58 @@ def download_master_playlists(filePath)
   end
 end
 
-def download_sub_playlists(masterPlaylistFilepath)
+def download_sub_playlists(filePath)
+  sessionInfoHashs = []
+  begin
+    File.open(filePath, "r") do |f|
+      sessionInfoHashs = JSON.load(f)
+    end
+  rescue => e
+    p "! #{filePath} (#{e})"
+  end
 
+  sessionInfoHashs.each do |sessionInfoHash|
+    sessionInfo = SessionInfo.create_from_hash(sessionInfoHash)
+
+    sessionNumber = File.basename(sessionInfo.url)
+    dirPath = File.join(File.dirname(filePath), sessionNumber)
+    masterPlayListFileName = File.basename(sessionInfo.m3uUrl)
+
+    masterPlayListFilePath = File.join(dirPath, masterPlayListFileName)
+
+    subPlaylistsURLs = []
+    subPlaylistsURLs = MasterPlayListParser.parse_sub_playlist_url_from_master_playlist(masterPlayListFilePath)
+
+    baseURL = File.dirname(sessionInfo.m3uUrl)
+    subPlaylistsURLs.each do |subPlaylistsURL|
+      # 1. fetch subPlaylistsURLs
+      downloadSubPlaylistsURL = ""
+      subDirPath = ""
+      if subPlaylistsURL =~ (/^[\w]+?:\/\/.+/)
+        downloadSubPlaylistsURL = subPlaylistsURL
+        baseURL = File.dirname(subPlaylistsURL)
+        subDirPath = "subtitles/#{baseURL.split("/").last}"
+      else
+        downloadSubPlaylistsURL = File.join(baseURL, subPlaylistsURL)
+        subDirPath = File.dirname(subPlaylistsURL)
+      end
+
+      subDownloadDirPath = File.join(dirPath, subDirPath)
+
+      FileUtils.mkdir_p(subDownloadDirPath) unless FileTest.exist?(subDownloadDirPath)
+
+      # 2. fetch subs playlist
+      SubDownloader.download(downloadSubPlaylistsURL, subDownloadDirPath)
+      begin
+        filename = File.join(subDownloadDirPath, "url")
+        open(filename, "w") do |out|
+          out.write(downloadSubPlaylistsURL)
+        end
+      rescue => e
+        p "! #{m3uUrl} #{filename} (#{e})"
+      end
+    end
+  end
 end
 
 # main
@@ -184,12 +267,16 @@ def main (argv)
   case argv[0]
   when 'createIndexFile'
     create_index_file(wwdcyear, filePath)
+    exit true
   when 'downloadMasterPlaylists'
     download_master_playlists(filePath)
-  when 'downloadSubPlaylist'
+    exit true
+  when 'downloadSubPlaylists'
     download_sub_playlists(filePath)
+    exit true
   else
     puts "sub commands: `createIndexFile` `downloadMasterPlaylists` `downloadSubPlaylists` `generateSubs`"
+    exit false
   end
 end
 
