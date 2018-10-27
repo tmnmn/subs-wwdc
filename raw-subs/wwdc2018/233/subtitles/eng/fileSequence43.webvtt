@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:00.036 --> 00:43:01.796 A:middle
+in your app.
+
+00:43:01.956 --> 00:43:03.966 A:middle
+Again, they're also great things
+
+00:43:03.966 --> 00:43:05.326 A:middle
+to not include when you submit
+
+00:43:05.326 --> 00:43:06.006 A:middle
+to the App Store.
+
+00:43:07.436 --> 00:43:08.716 A:middle
+It's important to note that
+
+00:43:08.716 --> 00:43:10.646 A:middle
+these are Objective-C selectors.
+
+00:43:11.146 --> 00:43:12.466 A:middle
+So, before using them, you'll
+
+00:43:12.466 --> 00:43:14.316 A:middle
+want to put your debugger into
+
+00:43:14.316 --> 00:43:16.706 A:middle
+Objective-C mode, using this
+
+00:43:16.706 --> 00:43:17.166 A:middle
+command.
+
+00:43:18.276 --> 00:43:19.826 A:middle
+We're going to walk through each
+
+00:43:19.826 --> 00:43:20.996 A:middle
+of these debugging methods,
+
+00:43:21.146 --> 00:43:22.976 A:middle
+step-by-step, and how they can
+
+00:43:22.976 --> 00:43:25.366 A:middle
+help you, starting with UIView
+
+00:43:25.526 --> 00:43:27.196 A:middle
+recursiveDescription.
+
+00:43:28.616 --> 00:43:29.526 A:middle
+&gt;&gt; So, UIView
+
+00:43:29.526 --> 00:43:31.796 A:middle
+recursiveDescription will print
+
+00:43:31.826 --> 00:43:34.136 A:middle
+the view hierarchy of the
+
+00:43:34.136 --> 00:43:35.156 A:middle
+receiver -- the subview
+
+00:43:35.156 --> 00:43:35.606 A:middle
+hierarchy.
+
+00:43:36.096 --> 00:43:37.996 A:middle
+And, some associated properties
+
+00:43:38.196 --> 00:43:39.256 A:middle
+to help you understand the
+
+00:43:39.256 --> 00:43:40.216 A:middle
+layout attributes.
+
+00:43:40.706 --> 00:43:42.896 A:middle
+Let's take a look at an example.
+
+00:43:43.696 --> 00:43:44.536 A:middle
+We have another bug in our
+
+00:43:44.536 --> 00:43:46.086 A:middle
+screenshots UI with a missing
+
+00:43:46.086 --> 00:43:46.386 A:middle
+view.
+
+00:43:47.686 --> 00:43:48.276 A:middle
+So, we're going to call
+
+00:43:48.276 --> 00:43:49.926 A:middle
+recursiveDescription on our
+
+00:43:49.926 --> 00:43:51.516 A:middle
+viewController's view.
+
+00:43:52.086 --> 00:43:55.086 A:middle
+Now, this might look like a wall
+
+00:43:55.086 --> 00:43:56.346 A:middle
+of debug text, and that's
+
+00:43:56.346 --> 00:43:57.166 A:middle
+because it is.
+
+00:43:57.626 --> 00:43:59.916 A:middle
+But, we know what we're looking
+
+00:43:59.916 --> 00:44:00.196 A:middle
+for.
+

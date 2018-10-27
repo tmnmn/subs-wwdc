@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.946 --> 00:05:01.026 A:middle
+VNObservation class.
+
+00:05:01.616 --> 00:05:02.746 A:middle
+How do we get an observation?
+
+00:05:03.616 --> 00:05:04.886 A:middle
+Well, first, the most natural
+
+00:05:04.886 --> 00:05:06.566 A:middle
+way is when the request is
+
+00:05:06.566 --> 00:05:07.746 A:middle
+processed, you're going to look
+
+00:05:07.746 --> 00:05:08.886 A:middle
+at the results property of that
+
+00:05:08.886 --> 00:05:10.256 A:middle
+request, and that results
+
+00:05:10.256 --> 00:05:11.356 A:middle
+property is a collection of
+
+00:05:11.356 --> 00:05:11.966 A:middle
+observations.
+
+00:05:11.966 --> 00:05:13.516 A:middle
+That's how we tell you results
+
+00:05:13.726 --> 00:05:14.306 A:middle
+of processing.
+
+00:05:14.976 --> 00:05:18.606 A:middle
+The second way is you create it
+
+00:05:18.606 --> 00:05:18.996 A:middle
+manually.
+
+00:05:19.696 --> 00:05:20.866 A:middle
+We're going to look at examples
+
+00:05:20.866 --> 00:05:22.006 A:middle
+for other presentations how to
+
+00:05:22.006 --> 00:05:22.336 A:middle
+do both.
+
+00:05:26.636 --> 00:05:28.886 A:middle
+Let's now look at what's new
+
+00:05:28.886 --> 00:05:29.636 A:middle
+coming this year.
+
+00:05:30.476 --> 00:05:32.286 A:middle
+First, we have our new face
+
+00:05:32.286 --> 00:05:32.706 A:middle
+detector.
+
+00:05:33.206 --> 00:05:36.336 A:middle
+Now, we can detect more faces,
+
+00:05:37.196 --> 00:05:37.986 A:middle
+and we're now
+
+00:05:38.096 --> 00:05:39.096 A:middle
+orientation-agnostic.
+
+00:05:39.886 --> 00:05:40.726 A:middle
+Let's look at example.
+
+00:05:41.186 --> 00:05:42.256 A:middle
+On the left-hand side, you can
+
+00:05:42.256 --> 00:05:43.776 A:middle
+see an image with seven faces in
+
+00:05:43.776 --> 00:05:45.806 A:middle
+it, and we could process that
+
+00:05:45.806 --> 00:05:46.906 A:middle
+image with the detector from
+
+00:05:46.906 --> 00:05:48.236 A:middle
+last year, we can detect only
+
+00:05:48.236 --> 00:05:50.206 A:middle
+three faces, and those faces are
+
+00:05:50.406 --> 00:05:51.746 A:middle
+the ones that are close to the
+
+00:05:51.746 --> 00:05:52.596 A:middle
+upright position.
+
+00:05:53.966 --> 00:05:55.216 A:middle
+If you process the same image
+
+00:05:55.216 --> 00:05:56.596 A:middle
+with the face detector that's
+
+00:05:57.016 --> 00:05:58.426 A:middle
+coming this year, as you can
+
+00:05:58.426 --> 00:05:59.866 A:middle
+see, all faces can be detected,
+
+00:05:59.996 --> 00:06:01.256 A:middle
+and orientation is not a problem
+

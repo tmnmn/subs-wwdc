@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.766 --> 00:05:00.986 A:middle
+not necessarily automatically
+
+00:05:00.986 --> 00:05:02.536 A:middle
+get the benefits unless you
+
+00:05:02.536 --> 00:05:03.996 A:middle
+retrain [inaudible] new model.
+
+00:05:04.666 --> 00:05:06.096 A:middle
+So, if you start developing with
+
+00:05:06.186 --> 00:05:07.536 A:middle
+this, this year, and you want to
+
+00:05:07.676 --> 00:05:08.666 A:middle
+you know, take advantage of
+
+00:05:08.756 --> 00:05:09.866 A:middle
+whatever we come out over the
+
+00:05:09.866 --> 00:05:11.876 A:middle
+next years, hold onto your data
+
+00:05:11.876 --> 00:05:14.036 A:middle
+sets so you can actually retrain
+
+00:05:14.036 --> 00:05:15.046 A:middle
+[inaudible].
+
+00:05:15.046 --> 00:05:18.896 A:middle
+A few more things about our
+
+00:05:18.896 --> 00:05:21.986 A:middle
+feature extractor.
+
+00:05:21.986 --> 00:05:23.656 A:middle
+It's already on the device, and
+
+00:05:23.656 --> 00:05:24.816 A:middle
+that was kind of an important
+
+00:05:24.816 --> 00:05:27.716 A:middle
+decision for us, because it
+
+00:05:27.716 --> 00:05:29.306 A:middle
+makes the disc footprint for
+
+00:05:29.306 --> 00:05:30.776 A:middle
+your models significantly
+
+00:05:30.776 --> 00:05:31.276 A:middle
+smaller.
+
+00:05:32.136 --> 00:05:33.286 A:middle
+So, let's compare a little bit.
+
+00:05:34.106 --> 00:05:36.136 A:middle
+So, I chose some common, you
+
+00:05:36.136 --> 00:05:37.806 A:middle
+know, available models that we
+
+00:05:37.806 --> 00:05:38.486 A:middle
+use today.
+
+00:05:38.926 --> 00:05:40.156 A:middle
+The first thing would be Resnet.
+
+00:05:40.156 --> 00:05:42.106 A:middle
+So, if I train my classifier on
+
+00:05:42.106 --> 00:05:43.446 A:middle
+top of Resnet, how big is my
+
+00:05:43.446 --> 00:05:43.816 A:middle
+model?
+
+00:05:44.486 --> 00:05:45.496 A:middle
+Ninety-eight megabytes.
+
+00:05:47.386 --> 00:05:48.486 A:middle
+If I use Squeezenet, so
+
+00:05:48.486 --> 00:05:49.806 A:middle
+Squeezenet is a much smaller
+
+00:05:49.806 --> 00:05:50.146 A:middle
+model.
+
+00:05:50.146 --> 00:05:51.216 A:middle
+It's not capable of
+
+00:05:51.266 --> 00:05:52.306 A:middle
+differentiating as many
+
+00:05:52.306 --> 00:05:54.876 A:middle
+categories, and that's 5
+
+00:05:54.916 --> 00:05:55.406 A:middle
+megabytes.
+
+00:05:55.406 --> 00:05:57.176 A:middle
+So, it's about saving there, but
+
+00:05:57.636 --> 00:05:58.806 A:middle
+it will not be as versatile.
+
+00:05:58.806 --> 00:06:00.316 A:middle
+Now, how about Vision?
+

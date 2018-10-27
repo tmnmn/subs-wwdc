@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.452 --> 00:27:00.888 align:start position:30% line:-1
+メインキューで実行です
+
+00:27:00.988 --> 00:27:04.591 align:start position:34% line:-2
+ワークアウト中なら
+タイマーを開始
+
+00:27:04.858 --> 00:27:07.694 align:start position:32% line:-1
+それ以外なら止めます
+
+00:27:08.595 --> 00:27:12.933 align:start position:32% line:-2
+これで タイマーが
+経過時間を追跡します
+
+00:27:13.901 --> 00:27:19.306 align:start position:23% line:-2
+次に UIに表示される測定値が
+正確かを確認しましょう
+
+00:27:19.907 --> 00:27:24.578 align:start position:21% line:-2
+builderが新たなサンプルを
+収集する度に
+
+00:27:24.678 --> 00:27:27.047 align:start position:25% line:-1
+このメソッドが呼び出されます
+
+00:27:27.614 --> 00:27:32.252 align:start position:14% line:-2
+ここでは collectedTypesを
+反復します
+
+00:27:36.623 --> 00:27:42.229 align:start position:30% line:-2
+今回 欲しいデータは
+全て数量サンプルなので
+
+00:27:42.329 --> 00:27:45.732 align:start position:27% line:-1
+それだけを扱うようにします
+
+00:27:47.501 --> 00:27:51.004 align:start position:29% line:-1
+ここで 新しいメソッド―
+
+00:27:51.104 --> 00:27:56.443 align:start position:5% line:-2
+workoutBuilder.statistics
+(for: quantityType)を利用
+
+00:27:56.543 --> 00:27:59.513 align:start position:16% line:-2
+HKStatisticsオブジェクトが
+得られます
+
+00:27:59.613 --> 00:28:06.487 align:start position:23% line:-2
+各タイプの最大値 最小値
+平均値 最新値が含まれています
+

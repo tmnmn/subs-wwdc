@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.726 --> 00:19:00.346 A:middle
+to hide that start-game button
+
+00:19:00.346 --> 00:19:01.336 A:middle
+and hide that leaderboard
+
+00:19:01.336 --> 00:19:01.746 A:middle
+button.
+
+00:19:02.656 --> 00:19:04.206 A:middle
+Then we need to update our
+
+00:19:04.206 --> 00:19:05.726 A:middle
+points label and set it to zero.
+
+00:19:06.366 --> 00:19:07.706 A:middle
+And we can even do some cool
+
+00:19:07.706 --> 00:19:09.576 A:middle
+things here like dynamically
+
+00:19:09.576 --> 00:19:11.666 A:middle
+change the color of our points
+
+00:19:11.666 --> 00:19:13.016 A:middle
+label throughout our code.
+
+00:19:13.226 --> 00:19:14.576 A:middle
+And here I'm going to set that
+
+00:19:14.576 --> 00:19:15.996 A:middle
+text color to magenta during
+
+00:19:16.046 --> 00:19:16.706 A:middle
+active gameplay.
+
+00:19:17.756 --> 00:19:19.406 A:middle
+Finally at the end of setting up
+
+00:19:19.406 --> 00:19:21.486 A:middle
+my start new game, I'm going to
+
+00:19:21.486 --> 00:19:23.196 A:middle
+call the first round of my game.
+
+00:19:24.646 --> 00:19:27.326 A:middle
+Okay? Let's look at that.
+
+00:19:27.526 --> 00:19:29.196 A:middle
+In our one-game round, we first
+
+00:19:29.196 --> 00:19:30.706 A:middle
+update our points label, make
+
+00:19:30.706 --> 00:19:31.626 A:middle
+sure that it's up to date.
+
+00:19:32.286 --> 00:19:34.116 A:middle
+Then we display a random button.
+
+00:19:34.116 --> 00:19:35.586 A:middle
+Either that unicorn or that poop
+
+00:19:35.646 --> 00:19:37.396 A:middle
+in a random location on our
+
+00:19:37.396 --> 00:19:37.816 A:middle
+screen.
+
+00:19:38.316 --> 00:19:39.716 A:middle
+I've written this helper method
+
+00:19:39.716 --> 00:19:41.046 A:middle
+display random button that
+
+00:19:41.046 --> 00:19:42.376 A:middle
+chooses a random x and y
+
+00:19:42.376 --> 00:19:44.276 A:middle
+coordinate to place our button.
+
+00:19:45.406 --> 00:19:47.156 A:middle
+Then we set a timer for one
+
+00:19:47.156 --> 00:19:47.606 A:middle
+second.
+
+00:19:48.726 --> 00:19:51.026 A:middle
+Now, if this timer goes off
+
+00:19:51.116 --> 00:19:53.216 A:middle
+after one second, then the code
+
+00:19:53.216 --> 00:19:54.596 A:middle
+inside the block of the timer
+
+00:19:54.596 --> 00:19:55.306 A:middle
+will get called.
+
+00:19:55.796 --> 00:19:58.226 A:middle
+And in that case, we want to
+
+00:19:58.226 --> 00:19:59.676 A:middle
+check if the current button
+
+00:19:59.676 --> 00:20:01.486 A:middle
+that's on screen is a unicorn,
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:55.496 --> 00:15:00.133 align:start position:5% line:-2
+PlanetUpdateService.swift
+というコードで
+
+00:15:00.234 --> 00:15:03.504 align:start position:36% line:-2
+惑星の更新を操る
+ファイルです
+
+00:15:03.604 --> 00:15:08.709 align:start position:20% line:-2
+logとsignpostを追加して
+原因を探ります
+
+00:15:09.042 --> 00:15:12.012 align:start position:25% line:-1
+まずログハンドルを追加します
+
+00:15:12.546 --> 00:15:17.784 align:start position:12% line:-2
+新しいカテゴリの
+pointsOfInterestを使います
+
+00:15:18.051 --> 00:15:20.454 align:start position:29% line:-1
+これは特別なカテゴリで―
+
+00:15:20.554 --> 00:15:25.225 align:start position:32% line:-2
+ログを取ると自動的に
+右側に表示されます
+
+00:15:25.926 --> 00:15:30.898 align:start position:30% line:-2
+まず更新を開始する時の
+状態を確認しましょう
+
+00:15:30.998 --> 00:15:35.002 align:start position:29% line:-2
+このメソッドで起こるので
+ログステートメントを追加
+
+00:15:35.102 --> 00:15:38.605 align:start position:9% line:-2
+Requesting planet dataで
+分かるでしょう
+
+00:15:39.173 --> 00:15:42.943 align:start position:34% line:-2
+何より知りたいのは
+データを処理し―
+
+00:15:43.043 --> 00:15:47.047 align:start position:27% line:-1
+解析するのにかかる時間です
+
+00:15:47.347 --> 00:15:50.551 align:start position:30% line:-1
+ここで処理が行われます
+
+00:15:50.651 --> 00:15:54.221 align:start position:18% line:-2
+可視化できるように
+いくつかsignpostを追加します
+
+00:15:54.321 --> 00:15:56.123 align:start position:27% line:-1
+最初のsignpostは―
+
+00:15:56.523 --> 00:16:01.428 align:start position:12% line:-2
+作業直前に置く
+begin-type signpostです
+

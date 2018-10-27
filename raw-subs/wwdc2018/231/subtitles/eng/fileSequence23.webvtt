@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.956 --> 00:23:01.786 A:middle
+Now, as an administrator, they,
+
+00:23:01.786 --> 00:23:03.666 A:middle
+these users can add accessories,
+
+00:23:03.666 --> 00:23:04.626 A:middle
+edit scenes.
+
+00:23:04.896 --> 00:23:06.696 A:middle
+They basically have full control
+
+00:23:06.696 --> 00:23:07.546 A:middle
+over the home.
+
+00:23:09.316 --> 00:23:10.806 A:middle
+But you may only want to give
+
+00:23:11.086 --> 00:23:12.806 A:middle
+some users normal access to the
+
+00:23:12.806 --> 00:23:14.606 A:middle
+home and only allow them to
+
+00:23:15.126 --> 00:23:16.596 A:middle
+control accessories and not edit
+
+00:23:16.596 --> 00:23:16.906 A:middle
+them.
+
+00:23:17.316 --> 00:23:18.446 A:middle
+And those are
+
+00:23:18.446 --> 00:23:19.806 A:middle
+non-administrators.
+
+00:23:21.186 --> 00:23:22.216 A:middle
+Now, the important take-away
+
+00:23:22.216 --> 00:23:23.136 A:middle
+here is that if you're building
+
+00:23:23.136 --> 00:23:25.236 A:middle
+an app, you want to make sure
+
+00:23:25.236 --> 00:23:27.946 A:middle
+that if your HM user is not an
+
+00:23:27.946 --> 00:23:29.846 A:middle
+administrator that you disable
+
+00:23:29.846 --> 00:23:31.986 A:middle
+some key functionality so that
+
+00:23:31.986 --> 00:23:33.216 A:middle
+it doesn't fail when they go try
+
+00:23:33.216 --> 00:23:35.866 A:middle
+and use it.
+
+00:23:36.636 --> 00:23:38.236 A:middle
+Again, all this user management
+
+00:23:38.316 --> 00:23:39.586 A:middle
+is done through the HMHome
+
+00:23:39.586 --> 00:23:42.116 A:middle
+object, and you'll quickly see
+
+00:23:42.116 --> 00:23:43.346 A:middle
+that this is a common design
+
+00:23:43.346 --> 00:23:45.786 A:middle
+pattern we use where the HMHome
+
+00:23:46.146 --> 00:23:47.376 A:middle
+exposes a lot of the basic
+
+00:23:47.376 --> 00:23:47.996 A:middle
+functionality.
+
+00:23:48.436 --> 00:23:51.776 A:middle
+So let's take a look at some
+
+00:23:51.776 --> 00:23:52.946 A:middle
+sample code and see what this
+
+00:23:52.946 --> 00:23:53.316 A:middle
+looks like.
+
+00:23:53.866 --> 00:23:58.876 A:middle
+So here we have a class where we
+
+00:23:58.876 --> 00:24:00.116 A:middle
+will instantiate an
+

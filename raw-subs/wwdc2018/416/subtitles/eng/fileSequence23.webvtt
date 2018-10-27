@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.196 --> 00:23:00.036 A:middle
+the image, and it will use a
+
+00:23:00.036 --> 00:23:01.466 A:middle
+streaming API such that you only
+
+00:23:01.466 --> 00:23:03.136 A:middle
+pay the dirty memory cost of the
+
+00:23:03.136 --> 00:23:03.996 A:middle
+resulting image.
+
+00:23:04.196 --> 00:23:05.256 A:middle
+So this will save you a memory
+
+00:23:05.256 --> 00:23:05.566 A:middle
+spike.
+
+00:23:06.076 --> 00:23:09.126 A:middle
+As an example, here's some code
+
+00:23:09.196 --> 00:23:10.346 A:middle
+where I get a file on disk.
+
+00:23:10.506 --> 00:23:11.526 A:middle
+This could also be a file I
+
+00:23:11.526 --> 00:23:11.996 A:middle
+downloaded.
+
+00:23:12.916 --> 00:23:16.456 A:middle
+And I'm using the UIImage to
+
+00:23:16.546 --> 00:23:17.696 A:middle
+draw into a smaller rect.
+
+00:23:18.106 --> 00:23:19.216 A:middle
+This is still going to have that
+
+00:23:19.216 --> 00:23:19.796 A:middle
+big spike.
+
+00:23:21.036 --> 00:23:22.626 A:middle
+Now, instead, if I switch to
+
+00:23:22.626 --> 00:23:24.376 A:middle
+ImageIO, I still have to load
+
+00:23:24.376 --> 00:23:25.236 A:middle
+the file from disk.
+
+00:23:25.896 --> 00:23:27.846 A:middle
+I set up some parameters because
+
+00:23:27.846 --> 00:23:29.476 A:middle
+it's a lower-level API to say
+
+00:23:29.476 --> 00:23:30.936 A:middle
+how big I want this image to be,
+
+00:23:31.186 --> 00:23:33.126 A:middle
+and then I just ask it to create
+
+00:23:33.126 --> 00:23:34.206 A:middle
+it with CGImageSource
+
+00:23:34.246 --> 00:23:35.346 A:middle
+CreateThumbnail AtIndex.
+
+00:23:35.916 --> 00:23:37.506 A:middle
+Now, that CG image I can wrap in
+
+00:23:37.506 --> 00:23:38.956 A:middle
+a UIImage, and I'm good to go.
+
+00:23:39.096 --> 00:23:40.246 A:middle
+I've got a much smaller image,
+
+00:23:40.526 --> 00:23:42.046 A:middle
+and it's about 50% faster than
+
+00:23:42.046 --> 00:23:43.486 A:middle
+that previous code.
+
+00:23:45.146 --> 00:23:47.086 A:middle
+Now, another thing we want to
+
+00:23:47.086 --> 00:23:48.406 A:middle
+talk about is how to optimize
+
+00:23:48.406 --> 00:23:49.096 A:middle
+when in the background.
+
+00:23:49.946 --> 00:23:53.316 A:middle
+Say I have an image in an app,
+
+00:23:53.616 --> 00:23:54.196 A:middle
+full screen.
+
+00:23:54.196 --> 00:23:54.886 A:middle
+It's beautiful.
+
+00:23:54.886 --> 00:23:55.446 A:middle
+I'm loving it.
+
+00:23:55.906 --> 00:23:57.376 A:middle
+But then, I need to go to my
+
+00:23:57.376 --> 00:23:58.706 A:middle
+Home screen to take care of a
+
+00:23:58.706 --> 00:24:00.376 A:middle
+notification or go to a
+

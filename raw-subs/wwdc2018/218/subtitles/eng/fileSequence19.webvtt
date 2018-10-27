@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.366 --> 00:19:00.426 A:middle
+yourself and add it to your UI
+
+00:19:01.136 --> 00:19:02.156 A:middle
+using a view called
+
+00:19:02.356 --> 00:19:03.676 A:middle
+NSVisualEffectView.
+
+00:19:04.466 --> 00:19:05.416 A:middle
+If you're not familiar with
+
+00:19:05.416 --> 00:19:07.206 A:middle
+NSVisualEffectView, quite
+
+00:19:07.206 --> 00:19:09.016 A:middle
+simply, it's a view that shows a
+
+00:19:09.016 --> 00:19:09.466 A:middle
+material.
+
+00:19:10.676 --> 00:19:11.836 A:middle
+And if you want to use one,
+
+00:19:12.346 --> 00:19:14.136 A:middle
+you'll need to be aware of three
+
+00:19:14.136 --> 00:19:15.406 A:middle
+main properties that you'll have
+
+00:19:15.446 --> 00:19:17.156 A:middle
+to set up and I'll go through
+
+00:19:17.156 --> 00:19:17.696 A:middle
+these in order.
+
+00:19:17.836 --> 00:19:19.556 A:middle
+The state, blendingMode, and
+
+00:19:19.556 --> 00:19:20.636 A:middle
+material properties.
+
+00:19:23.046 --> 00:19:24.206 A:middle
+So, first, the state property.
+
+00:19:24.766 --> 00:19:27.336 A:middle
+This controls whether the
+
+00:19:27.336 --> 00:19:29.536 A:middle
+material uses the active window
+
+00:19:29.536 --> 00:19:29.786 A:middle
+look.
+
+00:19:30.246 --> 00:19:31.776 A:middle
+Now, by default, the material
+
+00:19:31.776 --> 00:19:33.366 A:middle
+will just match its containing
+
+00:19:33.366 --> 00:19:34.916 A:middle
+window and so when that window
+
+00:19:34.916 --> 00:19:36.256 A:middle
+is active it'll look active.
+
+00:19:36.556 --> 00:19:37.926 A:middle
+When the window's inactive, the
+
+00:19:37.926 --> 00:19:39.106 A:middle
+material will look inactive.
+
+00:19:39.686 --> 00:19:42.456 A:middle
+But you can also specify this
+
+00:19:42.866 --> 00:19:44.776 A:middle
+specifically to be active or
+
+00:19:44.776 --> 00:19:46.076 A:middle
+inactive if you'd like to
+
+00:19:46.076 --> 00:19:47.006 A:middle
+control it manually.
+
+00:19:49.546 --> 00:19:50.556 A:middle
+Second, the blendingMode
+
+00:19:50.556 --> 00:19:51.076 A:middle
+property.
+
+00:19:51.776 --> 00:19:53.846 A:middle
+This property controls whether
+
+00:19:53.846 --> 00:19:55.886 A:middle
+the material punches through the
+
+00:19:55.886 --> 00:19:56.646 A:middle
+back of the window.
+
+00:19:56.856 --> 00:19:57.926 A:middle
+Let me show you what I mean by
+
+00:19:57.926 --> 00:19:58.146 A:middle
+that.
+
+00:19:59.676 --> 00:20:02.106 A:middle
+Here's a preview using two
+

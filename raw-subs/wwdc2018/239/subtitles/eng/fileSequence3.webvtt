@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.216 --> 00:03:00.056 A:middle
+viewport meta-tags initial scale
+
+00:03:00.056 --> 00:03:01.546 A:middle
+is ignored in favor of an
+
+00:03:01.546 --> 00:03:02.926 A:middle
+initial scale that contains the
+
+00:03:02.926 --> 00:03:04.686 A:middle
+entire content of the page.
+
+00:03:06.336 --> 00:03:07.846 A:middle
+Additionally, inner width is
+
+00:03:07.846 --> 00:03:10.356 A:middle
+inflated to a minimum of 320 CSS
+
+00:03:10.356 --> 00:03:10.866 A:middle
+pixels.
+
+00:03:10.896 --> 00:03:12.676 A:middle
+And when using media queries,
+
+00:03:12.966 --> 00:03:14.246 A:middle
+the device width will also
+
+00:03:14.246 --> 00:03:16.196 A:middle
+appear to be 320 CSS pixels
+
+00:03:16.536 --> 00:03:17.746 A:middle
+rather than the true width of
+
+00:03:17.746 --> 00:03:18.426 A:middle
+Apple Watch.
+
+00:03:20.096 --> 00:03:21.726 A:middle
+By shrinking to fit, we also
+
+00:03:21.726 --> 00:03:23.256 A:middle
+avoid horizontal scrolling on
+
+00:03:23.256 --> 00:03:24.796 A:middle
+pages where content is wider
+
+00:03:24.796 --> 00:03:25.616 A:middle
+than the viewport.
+
+00:03:27.706 --> 00:03:30.606 A:middle
+These heuristics adapt existing
+
+00:03:30.606 --> 00:03:32.246 A:middle
+content to Apple Watch, but you
+
+00:03:32.246 --> 00:03:33.626 A:middle
+can override them when designing
+
+00:03:33.626 --> 00:03:34.936 A:middle
+content tailored for this form
+
+00:03:34.936 --> 00:03:35.366 A:middle
+factor.
+
+00:03:36.106 --> 00:03:37.346 A:middle
+Let's look at an example.
+
+00:03:37.916 --> 00:03:40.596 A:middle
+I've written a web page that
+
+00:03:40.596 --> 00:03:42.056 A:middle
+contains a gallery of photos I
+
+00:03:42.056 --> 00:03:43.276 A:middle
+took from a recent trip to
+
+00:03:43.276 --> 00:03:44.926 A:middle
+Vietnam, and I'd like to share
+
+00:03:44.926 --> 00:03:45.766 A:middle
+it with my friends.
+
+00:03:47.246 --> 00:03:48.316 A:middle
+If I send them a link to this
+
+00:03:48.316 --> 00:03:49.956 A:middle
+page using messages, they can
+
+00:03:49.956 --> 00:03:51.036 A:middle
+view it on Apple Watch.
+
+00:03:51.806 --> 00:03:52.996 A:middle
+Right now it's laying out at a
+
+00:03:52.996 --> 00:03:55.036 A:middle
+width of 320 CSS pixels and
+
+00:03:55.036 --> 00:03:56.056 A:middle
+shrinking down to fit.
+
+00:03:56.936 --> 00:03:58.286 A:middle
+However, I've also written this
+
+00:03:58.286 --> 00:03:59.746 A:middle
+page to be responsive on Apple
+
+00:03:59.746 --> 00:04:01.686 A:middle
+Watch by using a media query to
+

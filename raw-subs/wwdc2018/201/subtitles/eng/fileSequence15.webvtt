@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.726 --> 00:15:00.286 A:middle
+As you can see, because we
+
+00:15:00.286 --> 00:15:01.736 A:middle
+design and developed the app in
+
+00:15:01.736 --> 00:15:03.866 A:middle
+English our layout works great
+
+00:15:03.866 --> 00:15:04.546 A:middle
+in English.
+
+00:15:05.236 --> 00:15:07.036 A:middle
+However, we still want to make
+
+00:15:07.036 --> 00:15:08.556 A:middle
+sure it can adapt for other
+
+00:15:08.556 --> 00:15:09.046 A:middle
+languages.
+
+00:15:09.946 --> 00:15:11.316 A:middle
+Because we are still early in
+
+00:15:11.316 --> 00:15:12.926 A:middle
+the development cycle and we
+
+00:15:12.996 --> 00:15:14.376 A:middle
+haven't localized the app, yet,
+
+00:15:14.846 --> 00:15:16.406 A:middle
+we can use the pseudolanguages
+
+00:15:16.406 --> 00:15:17.076 A:middle
+in Xcode.
+
+00:15:17.876 --> 00:15:19.596 A:middle
+To do that, I'm going to go
+
+00:15:19.596 --> 00:15:20.846 A:middle
+through the Current Scheme,
+
+00:15:21.616 --> 00:15:22.536 A:middle
+click Edit Scheme.
+
+00:15:23.666 --> 00:15:25.206 A:middle
+And in the scheme editor I have
+
+00:15:25.206 --> 00:15:26.756 A:middle
+an Application Language
+
+00:15:26.756 --> 00:15:27.286 A:middle
+selector.
+
+00:15:28.326 --> 00:15:29.436 A:middle
+I can select one of the
+
+00:15:29.436 --> 00:15:31.286 A:middle
+pseudolanguages like the Bounded
+
+00:15:31.286 --> 00:15:32.346 A:middle
+String Pseudolanguage.
+
+00:15:33.616 --> 00:15:35.496 A:middle
+It's very useful for exposing
+
+00:15:35.496 --> 00:15:37.226 A:middle
+potential clipping or truncation
+
+00:15:37.226 --> 00:15:37.646 A:middle
+issues.
+
+00:15:38.866 --> 00:15:39.916 A:middle
+Let's run the app in this
+
+00:15:39.916 --> 00:15:40.666 A:middle
+configuration.
+
+00:15:41.216 --> 00:15:43.556 A:middle
+As you can see, this
+
+00:15:43.976 --> 00:15:45.446 A:middle
+pseudolanguage adds a few
+
+00:15:45.506 --> 00:15:46.626 A:middle
+special characters at the
+
+00:15:46.626 --> 00:15:48.246 A:middle
+beginning and end of every UI
+
+00:15:48.246 --> 00:15:48.616 A:middle
+strings.
+
+00:15:49.496 --> 00:15:51.236 A:middle
+Our tag line here is still good.
+
+00:15:51.806 --> 00:15:52.906 A:middle
+But the Browse button is
+
+00:15:52.906 --> 00:15:53.476 A:middle
+truncated.
+
+00:15:54.336 --> 00:15:57.326 A:middle
+Let's try to fix that.
+
+00:15:57.536 --> 00:15:58.996 A:middle
+When I select the Browse button
+
+00:15:59.906 --> 00:16:01.496 A:middle
+I can see that there's a wording
+

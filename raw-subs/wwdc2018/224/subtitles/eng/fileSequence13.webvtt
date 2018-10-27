@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.356 --> 00:13:04.546 A:middle
+We could just register for the
+
+00:13:04.976 --> 00:13:07.156 A:middle
+managed object contextWillSave
+
+00:13:07.156 --> 00:13:08.866 A:middle
+notification with a function
+
+00:13:09.296 --> 00:13:10.286 A:middle
+that goes through all of the
+
+00:13:10.286 --> 00:13:11.406 A:middle
+posts that have been inserted,
+
+00:13:11.696 --> 00:13:13.136 A:middle
+incrementing the count for each
+
+00:13:13.136 --> 00:13:15.626 A:middle
+day that's relevant, and another
+
+00:13:16.066 --> 00:13:16.946 A:middle
+loop going through all of the
+
+00:13:16.946 --> 00:13:18.186 A:middle
+deleted objects, decrementing
+
+00:13:18.186 --> 00:13:18.956 A:middle
+the count for each day.
+
+00:13:19.646 --> 00:13:20.656 A:middle
+And that affects the state of
+
+00:13:20.656 --> 00:13:22.106 A:middle
+the context before it commits to
+
+00:13:22.106 --> 00:13:23.516 A:middle
+the database, so it all winds up
+
+00:13:23.516 --> 00:13:25.166 A:middle
+happening in one transaction, so
+
+00:13:25.166 --> 00:13:27.236 A:middle
+this scales really well, which
+
+00:13:27.236 --> 00:13:28.916 A:middle
+is useful because my teammate
+
+00:13:28.916 --> 00:13:30.366 A:middle
+Nick Gillett is here to talk
+
+00:13:30.366 --> 00:13:31.676 A:middle
+about how Core Data can help us
+
+00:13:31.676 --> 00:13:33.296 A:middle
+as our little app scales beyond
+
+00:13:33.296 --> 00:13:34.186 A:middle
+our wildest dreams.
+
+00:13:34.846 --> 00:13:34.976 A:middle
+Nick.
+
+00:13:35.271 --> 00:13:37.271 A:middle
+[ Applause ]
+
+00:13:37.526 --> 00:13:37.976 A:middle
+&gt;&gt; Thanks, Scott.
+
+00:13:38.416 --> 00:13:40.416 A:middle
+[ Applause ]
+
+00:13:40.816 --> 00:13:42.296 A:middle
+So, as Scott said, as your
+
+00:13:42.296 --> 00:13:43.876 A:middle
+applications grow, they get more
+
+00:13:43.876 --> 00:13:46.606 A:middle
+and more complex and at Core
+
+00:13:46.606 --> 00:13:48.196 A:middle
+Data it's really important to us
+
+00:13:48.196 --> 00:13:50.656 A:middle
+that your applications do grow.
+
+00:13:50.656 --> 00:13:51.746 A:middle
+In fact, we want this.
+
+00:13:51.746 --> 00:13:53.336 A:middle
+That's the whole reason we exist
+
+00:13:53.426 --> 00:13:54.626 A:middle
+is to help you manage this
+
+00:13:54.626 --> 00:13:56.166 A:middle
+growth, make it efficient for
+
+00:13:56.166 --> 00:13:58.026 A:middle
+you to work with, and help you
+
+00:13:58.026 --> 00:13:59.106 A:middle
+give more value to your
+
+00:13:59.106 --> 00:13:59.656 A:middle
+customers.
+

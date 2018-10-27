@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.666 --> 00:11:00.666 A:middle
+So besides informing the user,
+
+00:11:00.936 --> 00:11:02.496 A:middle
+these keys are also being used
+
+00:11:02.496 --> 00:11:04.066 A:middle
+to inform the operating system
+
+00:11:04.486 --> 00:11:06.926 A:middle
+that -- as the developer -- you
+
+00:11:06.926 --> 00:11:08.366 A:middle
+intend for your app to access
+
+00:11:08.406 --> 00:11:09.506 A:middle
+the user's personal data.
+
+00:11:10.816 --> 00:11:12.636 A:middle
+And should an app try to access
+
+00:11:12.696 --> 00:11:14.716 A:middle
+the user personal data but not
+
+00:11:14.716 --> 00:11:17.406 A:middle
+include the appropriate key and
+
+00:11:17.406 --> 00:11:18.726 A:middle
+purpose string for that data,
+
+00:11:20.056 --> 00:11:22.156 A:middle
+macOS Mojave assumes that that
+
+00:11:22.156 --> 00:11:24.296 A:middle
+access was unintended -- and the
+
+00:11:24.296 --> 00:11:24.946 A:middle
+app exits.
+
+00:11:26.426 --> 00:11:28.146 A:middle
+For compatibility, these keys
+
+00:11:28.226 --> 00:11:30.256 A:middle
+are optional for apps that link
+
+00:11:30.306 --> 00:11:31.926 A:middle
+- that target older SDKs.
+
+00:11:33.126 --> 00:11:34.146 A:middle
+So for example, if you have an
+
+00:11:34.146 --> 00:11:36.176 A:middle
+app that still targets the 10.13
+
+00:11:36.396 --> 00:11:38.426 A:middle
+SDK and tries to access the
+
+00:11:38.426 --> 00:11:40.246 A:middle
+user's personal data via one of
+
+00:11:40.246 --> 00:11:43.376 A:middle
+these APIs, the app will not
+
+00:11:43.426 --> 00:11:45.516 A:middle
+exit but will display a prompt
+
+00:11:45.686 --> 00:11:46.856 A:middle
+lacking the purpose string --
+
+00:11:47.006 --> 00:11:48.246 A:middle
+like the first one that we saw a
+
+00:11:48.246 --> 00:11:48.706 A:middle
+minute ago.
+
+00:11:49.276 --> 00:11:50.556 A:middle
+So we still encourage you to
+
+00:11:50.556 --> 00:11:53.016 A:middle
+include the Info.plist keys in
+
+00:11:53.016 --> 00:11:54.586 A:middle
+your apps, even if you are
+
+00:11:54.586 --> 00:11:56.716 A:middle
+targeting an older SDK, so that
+
+00:11:57.786 --> 00:11:59.516 A:middle
+the user is better informed why
+
+00:11:59.516 --> 00:12:00.616 A:middle
+your app is accessing their
+

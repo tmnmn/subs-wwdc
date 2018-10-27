@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:55.516 --> 00:32:00.196 A:middle
+[ Applause ]
+
+00:32:00.696 --> 00:32:01.616 A:middle
+So, that was pretty easy.
+
+00:32:01.906 --> 00:32:03.256 A:middle
+I only had to modify two
+
+00:32:03.256 --> 00:32:05.456 A:middle
+existing methods in order to
+
+00:32:05.456 --> 00:32:06.636 A:middle
+accept file promises.
+
+00:32:09.056 --> 00:32:10.976 A:middle
+Now. Let's add some text.
+
+00:32:15.296 --> 00:32:15.856 A:middle
+Like this.
+
+00:32:16.626 --> 00:32:18.206 A:middle
+And, wouldn't it be great if I'm
+
+00:32:18.206 --> 00:32:19.686 A:middle
+not quite ready to send out my
+
+00:32:19.686 --> 00:32:20.956 A:middle
+meme to somebody, if I could
+
+00:32:20.956 --> 00:32:23.076 A:middle
+just drag it onto the desktop to
+
+00:32:23.076 --> 00:32:24.226 A:middle
+save it as an image file?
+
+00:32:24.876 --> 00:32:28.376 A:middle
+As you can see, this doesn't
+
+00:32:28.376 --> 00:32:28.686 A:middle
+work.
+
+00:32:29.326 --> 00:32:31.036 A:middle
+So, let's jump back to Xcode and
+
+00:32:31.156 --> 00:32:31.976 A:middle
+fix this as well.
+
+00:32:38.076 --> 00:32:39.446 A:middle
+At the bottom of the class, we
+
+00:32:39.446 --> 00:32:40.896 A:middle
+have this method which returns
+
+00:32:41.116 --> 00:32:42.686 A:middle
+an object conforming to
+
+00:32:42.686 --> 00:32:45.636 A:middle
+NSPasteboardWriting, and as you
+
+00:32:45.636 --> 00:32:47.296 A:middle
+can see, we're just returning a
+
+00:32:47.296 --> 00:32:48.476 A:middle
+simple NSImage here.
+
+00:32:49.086 --> 00:32:50.716 A:middle
+So, we're going to replace it
+
+00:32:51.616 --> 00:32:52.976 A:middle
+with a filePromiseProvider.
+
+00:32:57.046 --> 00:32:58.056 A:middle
+So, we're creating a file
+
+00:32:58.056 --> 00:33:00.616 A:middle
+provider, and we're going to
+

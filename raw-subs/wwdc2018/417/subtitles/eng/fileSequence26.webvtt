@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:56.166 --> 00:26:01.336 A:middle
+forgotten one or the other.
+
+00:26:01.586 --> 00:26:03.376 A:middle
+So, over in my unit tests, I'll
+
+00:26:03.376 --> 00:26:05.046 A:middle
+define a struct nested in my
+
+00:26:05.046 --> 00:26:06.986 A:middle
+test class for mocking, which
+
+00:26:06.986 --> 00:26:08.366 A:middle
+conforms to the locationFetcher
+
+00:26:08.366 --> 00:26:09.696 A:middle
+protocol and fill out its
+
+00:26:09.696 --> 00:26:10.326 A:middle
+requirements.
+
+00:26:11.566 --> 00:26:12.846 A:middle
+Notice, in its RequestLocation
+
+00:26:12.846 --> 00:26:14.886 A:middle
+method, it calls a block to get
+
+00:26:14.886 --> 00:26:16.136 A:middle
+a fake location that I can
+
+00:26:16.136 --> 00:26:18.536 A:middle
+customize in my tests, and then
+
+00:26:18.536 --> 00:26:19.786 A:middle
+it invokes the delegate method,
+
+00:26:20.066 --> 00:26:21.416 A:middle
+passing it that fake location.
+
+00:26:22.026 --> 00:26:25.656 A:middle
+Now that I have all the pieces I
+
+00:26:25.656 --> 00:26:27.056 A:middle
+need, I can write my test.
+
+00:26:28.026 --> 00:26:29.516 A:middle
+I create a MockLocationFetcher
+
+00:26:29.516 --> 00:26:31.016 A:middle
+struct and configure its
+
+00:26:31.016 --> 00:26:32.676 A:middle
+handleRequestLocation block to
+
+00:26:32.676 --> 00:26:33.966 A:middle
+provide a fake location.
+
+00:26:35.306 --> 00:26:36.036 A:middle
+Then I create my
+
+00:26:36.036 --> 00:26:38.036 A:middle
+CurrentLocationProvider, passing
+
+00:26:38.036 --> 00:26:39.286 A:middle
+it the MockLocationFetcher.
+
+00:26:40.206 --> 00:26:41.156 A:middle
+And, finally, I call
+
+00:26:41.156 --> 00:26:42.676 A:middle
+checkCurrentLocation with a
+
+00:26:42.676 --> 00:26:43.366 A:middle
+completion block.
+
+00:26:44.286 --> 00:26:45.376 A:middle
+Inside the completion block,
+
+00:26:45.676 --> 00:26:46.806 A:middle
+there's an assertion that checks
+
+00:26:46.806 --> 00:26:48.076 A:middle
+that the location actually is a
+
+00:26:48.076 --> 00:26:51.156 A:middle
+point of interest.
+
+00:26:51.226 --> 00:26:51.976 A:middle
+So, it works.
+
+00:26:51.976 --> 00:26:53.666 A:middle
+I can now mock my classes' usage
+
+00:26:53.666 --> 00:26:55.426 A:middle
+of CLLocationManager without
+
+00:26:55.426 --> 00:26:56.536 A:middle
+needing to create a real one.
+
+00:26:57.246 --> 00:26:59.276 A:middle
+So, here, I've shown how to use
+
+00:26:59.396 --> 00:27:01.346 A:middle
+protocols to mock interaction
+

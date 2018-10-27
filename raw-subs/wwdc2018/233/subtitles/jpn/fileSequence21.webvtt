@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:55.923 --> 00:21:01.094 align:start position:23% line:-2
+起動を構成する ５つの
+高レベル構成要素をご説明します
+
+00:21:02.596 --> 00:21:05.866 align:start position:34% line:-2
+まずは１つ目の
+プロセスのフォーク
+
+00:21:06.900 --> 00:21:09.469 align:start position:36% line:-2
+このフェーズでは
+何ができる？
+
+00:21:10.003 --> 00:21:13.507 align:start position:32% line:-2
+プロセスのフォークは
+本当に複雑です
+
+00:21:13.607 --> 00:21:16.743 align:start position:25% line:-2
+fork and execの
+manページを読んで―
+
+00:21:16.844 --> 00:21:19.847 align:start position:34% line:-2
+POSIXの基本を
+把握したくなります
+
+00:21:19.947 --> 00:21:24.418 align:start position:23% line:-2
+冗談です　プロセスのフォークは
+iOSにお任せください
+
+00:21:25.619 --> 00:21:28.555 align:start position:32% line:-2
+１つ目はお任せを
+２つ目に行きましょう
+
+00:21:31.458 --> 00:21:32.693 align:start position:34% line:-1
+ダイナミックリンク
+
+00:21:34.228 --> 00:21:39.066 align:start position:21% line:-2
+このフェーズではメモリを割り当て
+アプリケーションを実行し
+
+00:21:39.733 --> 00:21:42.102 align:start position:29% line:-2
+ライブラリと
+フレームワークをリンクし
+
+00:21:42.503 --> 00:21:45.739 align:start position:16% line:-2
+Swiftや Objective-Cや
+Foundationを初期化
+
+00:21:46.306 --> 00:21:48.942 align:start position:34% line:-2
+静的オブジェクトも
+初期化します
+
+00:21:50.077 --> 00:21:55.949 align:start position:23% line:-2
+通常は これで標準起動時間の
+40～50％を取られかねません
+
+00:21:57.151 --> 00:22:01.422 align:start position:23% line:-2
+ここで重要なのは
+コードを全く実行していないこと
+

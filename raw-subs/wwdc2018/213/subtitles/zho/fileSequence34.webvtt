@@ -1,0 +1,76 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.538 --> 00:34:01.708 align:middle line:-1
+你可以提供横幅通知
+
+00:34:01.775 --> 00:34:03.410 align:middle line:-1
+当你的app在后台时会显示
+
+00:34:03.944 --> 00:34:08.415 align:middle line:-1
+这适用于移动方向更新以及导航警告
+
+00:34:09.949 --> 00:34:11.051 align:middle line:-1
+在你的地图模板委托中
+
+00:34:11.118 --> 00:34:13.387 align:middle line:-1
+有三个方法可以实施
+
+00:34:14.087 --> 00:34:17.090 align:middle line:-2
+第一个是mapTemplate
+ShouldShowNotificationFor移动方向
+
+00:34:17.558 --> 00:34:20.860 align:middle line:-2
+当你设置了新的移动方向
+并且你的app处于后台时
+
+00:34:21.328 --> 00:34:22.596 align:middle line:-1
+系统就会调用这个方法
+
+00:34:22.728 --> 00:34:26.934 align:middle line:-2
+如果你返回真
+系统会把那个移动方向转化成
+
+00:34:27.000 --> 00:34:28.202 align:middle line:-1
+一个横幅通知
+
+00:34:29.335 --> 00:34:31.972 align:middle line:-2
+如果你已经针对某个移动方向
+呈现了横幅通知
+
+00:34:32.039 --> 00:34:34.007 align:middle line:-1
+你只需要简单更新旅行预估
+
+00:34:34.274 --> 00:34:37.043 align:middle line:-2
+带travelEstimates的mapTemplate
+shouldUpdateNotificationFor
+
+00:34:37.110 --> 00:34:37.945 align:middle line:-1
+移动方向
+
+00:34:38.011 --> 00:34:41.581 align:middle line:-2
+将会被调用 从而允许你更新
+在那个横幅中所显示的内容
+
+00:34:41.982 --> 00:34:44.284 align:middle line:-1
+那么 现在不需要一个新的通知
+
+00:34:44.351 --> 00:34:46.920 align:middle line:-2
+你可以简单地更新
+已经显示在那里的内容
+
+00:34:47.855 --> 00:34:52.092 align:middle line:-2
+对于导航警告
+你也可以利用它来显示那些信息
+
+00:34:52.159 --> 00:34:53.060 align:middle line:-1
+使用mapTemplate
+
+00:34:53.126 --> 00:34:55.495 align:middle line:-2
+shouldShowNotificationFor
+navigationAlert
+
+00:34:56.429 --> 00:34:59.933 align:middle line:-2
+我想邀请Jonathan
+再次上台来给大家演示
+

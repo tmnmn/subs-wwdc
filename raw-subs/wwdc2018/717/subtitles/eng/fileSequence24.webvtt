@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.166 --> 00:24:01.186 A:middle
+Request, to compare against the
+
+00:24:01.186 --> 00:24:02.026 A:middle
+previous frame.
+
+00:24:03.436 --> 00:24:04.916 A:middle
+Out of that, we get our
+
+00:24:04.916 --> 00:24:07.406 A:middle
+translation as of terms of an
+
+00:24:07.406 --> 00:24:08.826 A:middle
+alignment transform which tells
+
+00:24:08.826 --> 00:24:10.296 A:middle
+me the X and Y of like how the
+
+00:24:10.296 --> 00:24:13.116 A:middle
+previous frame has shifted to
+
+00:24:13.116 --> 00:24:13.966 A:middle
+[inaudible] the current one.
+
+00:24:15.986 --> 00:24:17.126 A:middle
+Then we talked about that we
+
+00:24:17.126 --> 00:24:18.596 A:middle
+want to only analyze the scene
+
+00:24:18.596 --> 00:24:19.326 A:middle
+when it's stable.
+
+00:24:20.266 --> 00:24:22.896 A:middle
+And for that, we created our VN
+
+00:24:22.896 --> 00:24:24.156 A:middle
+Image Request Handler off the
+
+00:24:24.156 --> 00:24:24.986 A:middle
+current buffer.
+
+00:24:25.396 --> 00:24:28.116 A:middle
+And we passed in together both
+
+00:24:28.116 --> 00:24:30.636 A:middle
+the barcode detection and the
+
+00:24:30.636 --> 00:24:31.586 A:middle
+classification.
+
+00:24:32.206 --> 00:24:34.086 A:middle
+So, that allows Vision to do its
+
+00:24:34.086 --> 00:24:35.956 A:middle
+optimization underneath the
+
+00:24:35.956 --> 00:24:37.936 A:middle
+covers and can actually perform
+
+00:24:37.936 --> 00:24:39.056 A:middle
+much faster than if you would
+
+00:24:39.236 --> 00:24:40.536 A:middle
+run them as separate requests.
+
+00:24:41.006 --> 00:24:44.606 A:middle
+Next was the part about thinking
+
+00:24:44.606 --> 00:24:46.636 A:middle
+about how many buffers do I hold
+
+00:24:46.636 --> 00:24:47.166 A:middle
+in flight?
+
+00:24:47.636 --> 00:24:48.976 A:middle
+And that's why I say manage your
+
+00:24:48.976 --> 00:24:49.436 A:middle
+buffers.
+
+00:24:50.966 --> 00:24:52.396 A:middle
+Some Vision requests, like these
+
+00:24:52.816 --> 00:24:54.696 A:middle
+convolutional networks, can take
+
+00:24:54.696 --> 00:24:55.316 A:middle
+a bit longer.
+
+00:24:55.966 --> 00:24:57.396 A:middle
+And these longer running tasks
+
+00:24:57.396 --> 00:24:59.016 A:middle
+are better to perform on a
+
+00:24:59.016 --> 00:25:01.216 A:middle
+background queue, so that
+

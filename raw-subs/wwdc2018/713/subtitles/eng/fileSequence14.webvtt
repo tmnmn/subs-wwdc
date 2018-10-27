@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.216 --> 00:14:01.386 A:middle
+various kinds of terms in a
+
+00:14:01.996 --> 00:14:02.236 A:middle
+sentence.
+
+00:14:02.326 --> 00:14:04.766 A:middle
+Or another application, if you
+
+00:14:04.766 --> 00:14:06.086 A:middle
+need to take a sentence and
+
+00:14:06.086 --> 00:14:07.966 A:middle
+divide it up into phrases, noun
+
+00:14:07.966 --> 00:14:09.356 A:middle
+phrases, verb phrases,
+
+00:14:09.426 --> 00:14:10.596 A:middle
+propositional phrases.
+
+00:14:10.996 --> 00:14:11.906 A:middle
+With the appropriate sort of
+
+00:14:11.906 --> 00:14:14.186 A:middle
+labeling, you could train a word
+
+00:14:14.186 --> 00:14:16.206 A:middle
+tagger to do this, and many,
+
+00:14:16.206 --> 00:14:19.556 A:middle
+many other kinds of tasks can be
+
+00:14:19.556 --> 00:14:21.796 A:middle
+phrased in terms of labeling,
+
+00:14:22.136 --> 00:14:23.946 A:middle
+applying labels to portions of
+
+00:14:23.946 --> 00:14:26.346 A:middle
+text, either words in sequence
+
+00:14:26.696 --> 00:14:29.176 A:middle
+or chunks of text in the text
+
+00:14:29.176 --> 00:14:29.756 A:middle
+classifier.
+
+00:14:33.676 --> 00:14:36.246 A:middle
+So these are supervised machine
+
+00:14:36.246 --> 00:14:37.526 A:middle
+learning models, so there are
+
+00:14:37.526 --> 00:14:39.946 A:middle
+two phases always involved.
+
+00:14:40.266 --> 00:14:41.806 A:middle
+The first phase is training, and
+
+00:14:41.996 --> 00:14:43.506 A:middle
+the second phase is inference.
+
+00:14:43.786 --> 00:14:46.016 A:middle
+So training is what you do in
+
+00:14:46.016 --> 00:14:46.996 A:middle
+part of your development
+
+00:14:46.996 --> 00:14:47.726 A:middle
+process.
+
+00:14:48.256 --> 00:14:50.926 A:middle
+You take labeled training data,
+
+00:14:51.936 --> 00:14:54.356 A:middle
+and you feed it into Create ML
+
+00:14:54.606 --> 00:14:55.806 A:middle
+and produce a model.
+
+00:14:57.266 --> 00:14:59.266 A:middle
+Inference is then what happens
+
+00:14:59.336 --> 00:15:01.246 A:middle
+in your app when you incorporate
+

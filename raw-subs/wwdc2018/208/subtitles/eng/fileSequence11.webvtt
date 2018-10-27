@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:57.516 --> 00:11:02.546 A:middle
+[ Applause ]
+
+00:11:03.046 --> 00:11:04.966 A:middle
+This means that apps written in
+
+00:11:04.966 --> 00:11:07.036 A:middle
+frameworks such as Metal can now
+
+00:11:07.036 --> 00:11:09.056 A:middle
+adopt focus directly into their
+
+00:11:09.056 --> 00:11:09.996 A:middle
+interaction model.
+
+00:11:10.456 --> 00:11:12.006 A:middle
+This is accomplished by allowing
+
+00:11:12.006 --> 00:11:13.596 A:middle
+you to conform your own classes
+
+00:11:13.596 --> 00:11:15.666 A:middle
+to focus protocols, even if they
+
+00:11:15.666 --> 00:11:17.196 A:middle
+don't inherit from UIKit
+
+00:11:17.196 --> 00:11:17.976 A:middle
+components.
+
+00:11:18.796 --> 00:11:20.386 A:middle
+Now, what this means for your
+
+00:11:20.386 --> 00:11:22.726 A:middle
+apps is they will get state
+
+00:11:22.726 --> 00:11:24.266 A:middle
+management of what's currently
+
+00:11:24.266 --> 00:11:24.876 A:middle
+focused.
+
+00:11:25.406 --> 00:11:27.246 A:middle
+Geometric determination of where
+
+00:11:27.246 --> 00:11:28.806 A:middle
+focus can and cannot move.
+
+00:11:29.366 --> 00:11:32.136 A:middle
+Full accessibility support, and
+
+00:11:32.426 --> 00:11:34.316 A:middle
+focus movement, hinting, and
+
+00:11:34.316 --> 00:11:36.216 A:middle
+scrolling that feels just like
+
+00:11:36.216 --> 00:11:37.686 A:middle
+native tvOS apps.
+
+00:11:39.076 --> 00:11:40.556 A:middle
+Before we take a look at the new
+
+00:11:40.556 --> 00:11:42.626 A:middle
+focus API's, let's briefly
+
+00:11:42.626 --> 00:11:43.816 A:middle
+refresh ourselves on some
+
+00:11:43.816 --> 00:11:45.266 A:middle
+existing focus components.
+
+00:11:46.256 --> 00:11:47.226 A:middle
+First, we have
+
+00:11:47.226 --> 00:11:48.536 A:middle
+UIFocusEnvironments.
+
+00:11:48.866 --> 00:11:50.626 A:middle
+This protocol manages state
+
+00:11:50.626 --> 00:11:52.026 A:middle
+where focus interactions can
+
+00:11:52.026 --> 00:11:52.666 A:middle
+take place.
+
+00:11:53.076 --> 00:11:54.316 A:middle
+It is notified when focus
+
+00:11:54.316 --> 00:11:56.296 A:middle
+updates occur, and can influence
+
+00:11:56.296 --> 00:11:57.506 A:middle
+focus update behavior.
+
+00:11:57.976 --> 00:12:00.206 A:middle
+In UIKit, UIViewController is a
+

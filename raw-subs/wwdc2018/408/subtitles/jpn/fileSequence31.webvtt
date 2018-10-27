@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:57.558 --> 00:31:02.129 align:start position:21% line:-2
+Objective-Cで書かれ
+Swiftに参照させたい部分です
+
+00:31:02.296 --> 00:31:06.733 align:start position:27% line:-2
+あるいは ヘッダで宣言して
+他の部分を参照させます
+
+00:31:08.435 --> 00:31:13.006 align:start position:27% line:-2
+Bridgingヘッダは
+Swiftに参照させたい―
+
+00:31:13.106 --> 00:31:16.577 align:start position:27% line:-1
+情報をすべて集めたものです
+
+00:31:18.011 --> 00:31:21.748 align:start position:29% line:-2
+Xcodeのビルド設定で
+管理します
+
+00:31:21.849 --> 00:31:27.621 align:start position:14% line:-2
+すると コンパイラは
+Objective-Cインターフェースを
+
+00:31:27.721 --> 00:31:29.156 align:start position:29% line:-1
+Swiftに参照させます
+
+00:31:30.457 --> 00:31:34.928 align:start position:34% line:-2
+コンパイラは 次に
+逆の役割を担う―
+
+00:31:35.028 --> 00:31:37.030 align:start position:23% line:-1
+Generatedヘッダを作成
+
+00:31:37.164 --> 00:31:42.669 align:start position:9% line:-2
+Swiftのどの部分をObjective-Cに
+見せるかを記述します
+
+00:31:43.704 --> 00:31:47.841 align:start position:29% line:-2
+Objective-Cの
+実装ファイルで使用され
+
+00:31:48.475 --> 00:31:51.778 align:start position:36% line:-2
+一部のヘッダは
+最初から使えます
+
+00:31:52.880 --> 00:31:58.619 align:start position:25% line:-2
+もちろん Swiftコードに
+依存しないものもありますが
+
+00:31:58.852 --> 00:32:01.288 align:start position:32% line:-1
+ここでは重視しません
+

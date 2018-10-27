@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.298 --> 00:15:01.068 align:start position:27% line:-1
+プロセスを完了させましょう
+
+00:15:01.902 --> 00:15:07.474 align:start position:27% line:-2
+次に エンジンが
+これらの変数に値を与えます
+
+00:15:07.574 --> 00:15:12.346 align:start position:25% line:-2
+そして ビューに
+変更された変数が伝えられます
+
+00:15:13.480 --> 00:15:15.449 align:start position:34% line:-1
+どう返すでしょう？
+
+00:15:16.450 --> 00:15:20.587 align:start position:16% line:-2
+少し考えて Superviewを呼んで
+こう言います
+
+00:15:20.687 --> 00:15:22.022 align:start position:21% line:-1
+“setNeedsLayout”
+
+00:15:22.189 --> 00:15:24.091 align:start position:30% line:-1
+動く必要があるからです
+
+00:15:25.159 --> 00:15:30.664 align:start position:11% line:-2
+これが updateConstraintsで
+起こることです
+
+00:15:31.031 --> 00:15:35.936 align:start position:12% line:-2
+“setNeedsLayout”を受け取り
+Layoutに移ります
+
+00:15:36.603 --> 00:15:38.639 align:start position:34% line:-1
+では 次に行きます
+
+00:15:38.739 --> 00:15:43.310 align:start position:9% line:-2
+最後に UIViewが
+“layoutSubviews”を受け取ります
+
+00:15:43.610 --> 00:15:45.779 align:start position:9% line:-1
+UIViewのlayoutSubviewsは―
+
+00:15:45.879 --> 00:15:49.483 align:start position:30% line:-2
+データをエンジンから
+フレームにコピーします
+
+00:15:50.250 --> 00:15:54.221 align:start position:27% line:-2
+エンジンに
+“変数の値は？”と聞きます
+
+00:15:54.321 --> 00:15:58.358 align:start position:29% line:-2
+エンジンは それに答えて
+Superviewから―
+
+00:15:58.458 --> 00:16:02.396 align:start position:7% line:-2
+“setBounds”と“setCenter”を
+呼びます
+

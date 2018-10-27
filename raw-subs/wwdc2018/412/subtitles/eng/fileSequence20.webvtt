@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.976 --> 00:20:00.096 A:middle
+our expression and we can do
+
+00:20:00.096 --> 00:20:01.596 A:middle
+that by pressing the plus button
+
+00:20:02.006 --> 00:20:03.446 A:middle
+and adding another command
+
+00:20:03.446 --> 00:20:03.786 A:middle
+action.
+
+00:20:04.686 --> 00:20:06.756 A:middle
+Expression jump astronaut
+
+00:20:06.756 --> 00:20:08.176 A:middle
+animated false.
+
+00:20:08.526 --> 00:20:09.566 A:middle
+And we make this order
+
+00:20:09.566 --> 00:20:10.086 A:middle
+continuing.
+
+00:20:10.736 --> 00:20:11.806 A:middle
+So what we've got here is a
+
+00:20:11.806 --> 00:20:14.096 A:middle
+breakpoint then when execution
+
+00:20:14.096 --> 00:20:16.336 A:middle
+reaches this line but before it
+
+00:20:16.336 --> 00:20:17.526 A:middle
+executes this line, the
+
+00:20:17.856 --> 00:20:18.796 A:middle
+breakpoint is triggered.
+
+00:20:18.796 --> 00:20:20.686 A:middle
+It will perform the command to
+
+00:20:20.686 --> 00:20:22.976 A:middle
+jump over that line and then use
+
+00:20:22.976 --> 00:20:25.196 A:middle
+expression to call the function
+
+00:20:25.196 --> 00:20:26.126 A:middle
+call that we'd like to make
+
+00:20:26.126 --> 00:20:26.966 A:middle
+instead.
+
+00:20:27.336 --> 00:20:28.936 A:middle
+So now, if we tap on the
+
+00:20:28.936 --> 00:20:30.796 A:middle
+astronaut, we can rapidly
+
+00:20:30.796 --> 00:20:31.936 A:middle
+progress through the game state
+
+00:20:31.936 --> 00:20:33.386 A:middle
+and skip all the animations and
+
+00:20:33.386 --> 00:20:34.476 A:middle
+easily reproduce our bug.
+
+00:20:35.396 --> 00:20:36.656 A:middle
+So, as I said, the game was
+
+00:20:36.656 --> 00:20:38.646 A:middle
+meant to end after 10 attempts,
+
+00:20:38.646 --> 00:20:40.386 A:middle
+and we've gone well beyond that,
+
+00:20:40.676 --> 00:20:42.916 A:middle
+so let's have a look at the game
+
+00:20:42.916 --> 00:20:43.266 A:middle
+state.
+
+00:20:44.206 --> 00:20:45.836 A:middle
+That is all stored in a property
+
+00:20:45.836 --> 00:20:48.376 A:middle
+up here called GamePlay, so I'm
+
+00:20:48.506 --> 00:20:49.636 A:middle
+going to set a breakpoint on
+
+00:20:49.636 --> 00:20:51.736 A:middle
+that property and start a new
+
+00:20:51.736 --> 00:20:52.016 A:middle
+jump.
+
+00:20:52.196 --> 00:20:53.906 A:middle
+And now we've paused at the next
+
+00:20:53.906 --> 00:20:54.916 A:middle
+reference to that property.
+
+00:20:55.626 --> 00:20:56.926 A:middle
+I'm going to use po to look at
+
+00:20:56.976 --> 00:20:58.296 A:middle
+the current state of that
+
+00:20:58.296 --> 00:21:00.026 A:middle
+object, and here we see the
+

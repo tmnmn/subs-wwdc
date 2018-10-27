@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.586 --> 00:20:02.216 A:middle
+So that's layout-driven UI.
+
+00:20:02.816 --> 00:20:03.916 A:middle
+Remember the recipe.
+
+00:20:04.396 --> 00:20:06.826 A:middle
+Find and track all of that state
+
+00:20:06.826 --> 00:20:07.906 A:middle
+that affects your UI.
+
+00:20:08.236 --> 00:20:09.386 A:middle
+And, use Swift property
+
+00:20:09.386 --> 00:20:10.746 A:middle
+observers to trigger
+
+00:20:10.746 --> 00:20:12.726 A:middle
+setNeedsLayout whenever this
+
+00:20:12.726 --> 00:20:13.636 A:middle
+state changes.
+
+00:20:14.666 --> 00:20:16.426 A:middle
+Finally, in your implementation
+
+00:20:16.426 --> 00:20:18.786 A:middle
+of layoutSubviews, make sure to
+
+00:20:18.786 --> 00:20:21.216 A:middle
+update your view state based on
+
+00:20:21.216 --> 00:20:22.746 A:middle
+this state that you tracked.
+
+00:20:22.746 --> 00:20:22.926 A:middle
+Thank you.
+
+00:20:23.516 --> 00:20:28.716 A:middle
+[ Applause ]
+
+00:20:29.216 --> 00:20:31.276 A:middle
+&gt;&gt; The iOS experience is all
+
+00:20:31.276 --> 00:20:32.626 A:middle
+about being responsive.
+
+00:20:33.706 --> 00:20:35.036 A:middle
+And, you want to get your
+
+00:20:35.036 --> 00:20:36.776 A:middle
+customers to your delightful
+
+00:20:36.776 --> 00:20:39.046 A:middle
+experiences as quickly as
+
+00:20:39.086 --> 00:20:39.546 A:middle
+possible.
+
+00:20:40.736 --> 00:20:43.276 A:middle
+There is one step between them
+
+00:20:43.276 --> 00:20:45.406 A:middle
+tapping on your icon, and being
+
+00:20:45.406 --> 00:20:45.936 A:middle
+delighted.
+
+00:20:47.036 --> 00:20:49.196 A:middle
+And, that one step is your
+
+00:20:49.196 --> 00:20:50.606 A:middle
+launch time.
+
+00:20:52.256 --> 00:20:54.986 A:middle
+To help you optimize this, we're
+
+00:20:54.986 --> 00:20:56.206 A:middle
+going to take you through the
+
+00:20:56.206 --> 00:20:58.516 A:middle
+five high-level components that
+
+00:20:58.516 --> 00:21:00.876 A:middle
+make up the anatomy of a launch.
+

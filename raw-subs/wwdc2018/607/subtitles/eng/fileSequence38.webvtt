@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:03.286 --> 00:38:04.676 A:middle
+So multi-sample anti-aliasing
+
+00:38:04.676 --> 00:38:06.016 A:middle
+improves image quality by
+
+00:38:06.016 --> 00:38:08.396 A:middle
+supersampling depth, stencil,
+
+00:38:08.766 --> 00:38:10.026 A:middle
+and blending, but shades only
+
+00:38:10.026 --> 00:38:10.676 A:middle
+once per pixel.
+
+00:38:11.816 --> 00:38:13.026 A:middle
+Multiple samples are later
+
+00:38:13.026 --> 00:38:14.716 A:middle
+resolved into a final image
+
+00:38:14.896 --> 00:38:15.836 A:middle
+using simple averaging.
+
+00:38:18.166 --> 00:38:19.676 A:middle
+Now, multi-sampling is efficient
+
+00:38:19.676 --> 00:38:21.696 A:middle
+on all A series GPUs because
+
+00:38:21.746 --> 00:38:23.196 A:middle
+samples are stored in tile
+
+00:38:23.196 --> 00:38:24.546 A:middle
+memory, where blending and
+
+00:38:24.546 --> 00:38:25.946 A:middle
+resolve operations have fast
+
+00:38:25.946 --> 00:38:26.986 A:middle
+access to the samples.
+
+00:38:29.236 --> 00:38:31.436 A:middle
+The A11 GPU optimizes
+
+00:38:31.436 --> 00:38:33.356 A:middle
+multi-sampling even further by
+
+00:38:33.356 --> 00:38:34.616 A:middle
+tracking the unique colors
+
+00:38:34.616 --> 00:38:35.346 A:middle
+within each pixel.
+
+00:38:36.036 --> 00:38:37.416 A:middle
+So blending operations that
+
+00:38:37.416 --> 00:38:38.386 A:middle
+previously operated on each
+
+00:38:38.386 --> 00:38:40.206 A:middle
+sample now only operate on each
+
+00:38:40.246 --> 00:38:40.746 A:middle
+color.
+
+00:38:41.616 --> 00:38:42.636 A:middle
+This could be a significant
+
+00:38:42.636 --> 00:38:44.036 A:middle
+savings because the interior of
+
+00:38:44.036 --> 00:38:45.756 A:middle
+every triangle only contains 1
+
+00:38:45.756 --> 00:38:46.386 A:middle
+unique color.
+
+00:38:49.186 --> 00:38:50.246 A:middle
+Now, this mapping of unique
+
+00:38:50.276 --> 00:38:53.406 A:middle
+color to samples is called color
+
+00:38:53.406 --> 00:38:54.606 A:middle
+coverage control, and it's
+
+00:38:54.606 --> 00:38:55.576 A:middle
+managed by the GPU.
+
+00:38:56.206 --> 00:38:57.966 A:middle
+But tile shaders can also read
+
+00:38:57.966 --> 00:38:59.506 A:middle
+and modify this color coverage.
+

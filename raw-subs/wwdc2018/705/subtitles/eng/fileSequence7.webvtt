@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.536 --> 00:07:00.386 A:middle
+this transaction that we're
+
+00:07:00.426 --> 00:07:00.886 A:middle
+processing.
+
+00:07:01.886 --> 00:07:02.956 A:middle
+Back here in our Transaction
+
+00:07:02.956 --> 00:07:04.676 A:middle
+Observer you can access that
+
+00:07:04.676 --> 00:07:05.946 A:middle
+binary receipt data using the
+
+00:07:05.946 --> 00:07:08.486 A:middle
+App Store receipt URL API on the
+
+00:07:08.486 --> 00:07:09.066 A:middle
+main bundle.
+
+00:07:09.956 --> 00:07:11.046 A:middle
+Once you have this URL you can
+
+00:07:11.136 --> 00:07:13.146 A:middle
+pull out the binary data located
+
+00:07:13.146 --> 00:07:14.976 A:middle
+at that spot on the file system
+
+00:07:15.016 --> 00:07:16.286 A:middle
+and you can pull out that
+
+00:07:16.286 --> 00:07:18.066 A:middle
+receiptData and base64Encode and
+
+00:07:18.066 --> 00:07:19.406 A:middle
+this will give you a nice string
+
+00:07:19.406 --> 00:07:20.576 A:middle
+that you can send up to your own
+
+00:07:20.576 --> 00:07:21.586 A:middle
+server for processing.
+
+00:07:21.786 --> 00:07:23.386 A:middle
+You might provide some in-app
+
+00:07:23.386 --> 00:07:25.156 A:middle
+networking API for the current
+
+00:07:25.836 --> 00:07:25.986 A:middle
+user.
+
+00:07:26.916 --> 00:07:28.306 A:middle
+When you're sending that data up
+
+00:07:28.306 --> 00:07:29.486 A:middle
+to your server for processing
+
+00:07:29.486 --> 00:07:30.866 A:middle
+firstly you'll do this securely
+
+00:07:30.866 --> 00:07:31.296 A:middle
+obviously.
+
+00:07:31.676 --> 00:07:32.616 A:middle
+You can send it up to maybe a
+
+00:07:32.616 --> 00:07:34.146 A:middle
+process transaction endpoint on
+
+00:07:34.146 --> 00:07:34.586 A:middle
+your server.
+
+00:07:35.476 --> 00:07:36.816 A:middle
+In this endpoint you might have
+
+00:07:36.816 --> 00:07:38.546 A:middle
+a user ID associated with the
+
+00:07:38.546 --> 00:07:40.166 A:middle
+current user for an account on
+
+00:07:40.166 --> 00:07:40.736 A:middle
+your own system.
+
+00:07:41.786 --> 00:07:42.946 A:middle
+You can send this receipt data
+
+00:07:42.946 --> 00:07:44.566 A:middle
+up to your server and then once
+
+00:07:44.566 --> 00:07:45.566 A:middle
+you get that on your server you
+
+00:07:45.566 --> 00:07:46.506 A:middle
+can establish a secure
+
+00:07:46.506 --> 00:07:47.896 A:middle
+connection to the App Store's
+
+00:07:47.896 --> 00:07:49.526 A:middle
+verify receipt endpoint.
+
+00:07:50.036 --> 00:07:51.376 A:middle
+And you can send over that
+
+00:07:51.376 --> 00:07:52.856 A:middle
+receipt data to the App Store.
+
+00:07:52.856 --> 00:07:55.546 A:middle
+Here you can include a password
+
+00:07:55.546 --> 00:07:56.666 A:middle
+field, this is just a shared
+
+00:07:56.666 --> 00:07:58.526 A:middle
+secret between your app and the
+
+00:07:58.526 --> 00:07:59.006 A:middle
+App Store.
+
+00:07:59.006 --> 00:08:00.176 A:middle
+You can set this up in App Store
+

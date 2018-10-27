@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.713 --> 00:33:01.949 align:middle line:-1
+回到PetWall app
+
+00:33:02.883 --> 00:33:05.919 align:middle line:-2
+在界面控制器里
+有个Swift的界面
+
+00:33:07.020 --> 00:33:08.622 align:middle line:-2
+Objective-C
+app代理
+
+00:33:09.022 --> 00:33:10.524 align:middle line:-1
+和Swift单元测试
+
+00:33:11.625 --> 00:33:12.559 align:middle line:-1
+为了编译
+
+00:33:12.626 --> 00:33:15.762 align:middle line:-2
+哪怕只是上面这个
+PetViewController
+
+00:33:16.430 --> 00:33:19.266 align:middle line:-2
+编译器也要
+进行4个不同的运算
+
+00:33:20.400 --> 00:33:22.803 align:middle line:-1
+首先要找到声明
+
+00:33:23.337 --> 00:33:27.641 align:middle line:-2
+Swift目标里的
+和来自Objective-C的
+
+00:33:29.243 --> 00:33:33.180 align:middle line:-2
+它还要生成接口
+描述文件内容
+
+00:33:33.480 --> 00:33:36.250 align:middle line:-2
+以便声明可以
+被找到并用于
+
+00:33:36.316 --> 00:33:39.520 align:middle line:-2
+Objective-C
+和其他Swift目标
+
+00:33:40.754 --> 00:33:42.189 align:middle line:-1
+接下来的部分
+
+00:33:42.256 --> 00:33:46.760 align:middle line:-2
+我会演示这个例子
+分别阐述这四个任务
+
+00:33:47.694 --> 00:33:50.898 align:middle line:-1
+首先是在Swift目标里查找声明
+
+00:33:55.469 --> 00:33:58.138 align:middle line:-2
+要编译
+PetViewController.swift
+
+00:33:58.705 --> 00:34:02.075 align:middle line:-2
+编译器会查找
+PetView的初始程序类型
+

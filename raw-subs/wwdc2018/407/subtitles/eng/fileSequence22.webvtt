@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.076 --> 00:22:00.356 A:middle
+these small samples that
+
+00:22:00.356 --> 00:22:02.186 A:middle
+occurred during this set of
+
+00:22:02.226 --> 00:22:04.676 A:middle
+frames, is here in the call tree
+
+00:22:04.676 --> 00:22:05.596 A:middle
+constraint section.
+
+00:22:06.126 --> 00:22:07.646 A:middle
+Let me show you.
+
+00:22:11.146 --> 00:22:12.716 A:middle
+I'm going to tell Instruments
+
+00:22:12.716 --> 00:22:14.006 A:middle
+that I would only like to see
+
+00:22:14.486 --> 00:22:16.236 A:middle
+areas of the trace that
+
+00:22:16.236 --> 00:22:18.256 A:middle
+accounted for let's say 20 or
+
+00:22:18.256 --> 00:22:18.966 A:middle
+more samples.
+
+00:22:19.256 --> 00:22:20.566 A:middle
+I'm picking 20 because I know
+
+00:22:20.566 --> 00:22:21.606 A:middle
+that I've selected about a two
+
+00:22:21.606 --> 00:22:23.066 A:middle
+second interval and 20
+
+00:22:23.066 --> 00:22:24.376 A:middle
+milliseconds is going to
+
+00:22:24.376 --> 00:22:26.076 A:middle
+represent about 1% of the total
+
+00:22:26.076 --> 00:22:27.036 A:middle
+work, and that is about the
+
+00:22:27.036 --> 00:22:28.376 A:middle
+granularity that I like to work
+
+00:22:28.376 --> 00:22:29.846 A:middle
+at by default.
+
+00:22:31.336 --> 00:22:32.926 A:middle
+So with call tree constraints
+
+00:22:33.986 --> 00:22:37.206 A:middle
+set to a minimum of 20, I now
+
+00:22:37.206 --> 00:22:38.846 A:middle
+focus this down much more
+
+00:22:38.846 --> 00:22:39.516 A:middle
+significantly.
+
+00:22:40.456 --> 00:22:41.346 A:middle
+Now, I mentioned here that we
+
+00:22:41.346 --> 00:22:42.856 A:middle
+were expanding out my view
+
+00:22:42.856 --> 00:22:43.296 A:middle
+items.
+
+00:22:43.336 --> 00:22:45.026 A:middle
+I see that in the fact that
+
+00:22:45.026 --> 00:22:46.446 A:middle
+we're calling NS outline view,
+
+00:22:46.446 --> 00:22:47.836 A:middle
+expand item, expand children.
+
+00:22:48.436 --> 00:22:50.476 A:middle
+Now, a lot of people would stop
+
+00:22:50.946 --> 00:22:51.816 A:middle
+with the call graph at this
+
+00:22:51.876 --> 00:22:52.146 A:middle
+point.
+
+00:22:52.556 --> 00:22:54.136 A:middle
+They'd see I'm calling into a
+
+00:22:54.136 --> 00:22:55.226 A:middle
+system framework, and I'm
+
+00:22:55.226 --> 00:22:56.346 A:middle
+spending a lot of time there.
+
+00:22:56.706 --> 00:22:58.086 A:middle
+This isn't my fault, right?
+
+00:22:58.086 --> 00:22:58.926 A:middle
+What can I do about this?
+
+00:22:58.926 --> 00:23:00.486 A:middle
+I can't optimize NS Outline
+

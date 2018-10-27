@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.536 --> 00:41:01.326 A:middle
+on certain GPUs or not or you
+
+00:41:01.396 --> 00:41:02.986 A:middle
+put an asset that requires a
+
+00:41:02.986 --> 00:41:05.106 A:middle
+little more processing than
+
+00:41:05.106 --> 00:41:05.526 A:middle
+others.
+
+00:41:06.136 --> 00:41:08.006 A:middle
+I'd like to give two simple
+
+00:41:08.006 --> 00:41:10.386 A:middle
+examples as food for thought on
+
+00:41:10.386 --> 00:41:11.056 A:middle
+how this could work.
+
+00:41:11.306 --> 00:41:14.076 A:middle
+And the way I'm going to give
+
+00:41:14.076 --> 00:41:15.576 A:middle
+the example is by talking about
+
+00:41:15.576 --> 00:41:16.386 A:middle
+NSDataAsset.
+
+00:41:16.936 --> 00:41:19.116 A:middle
+NSDataAsset is a very simple
+
+00:41:19.116 --> 00:41:20.216 A:middle
+piece of Asset Catalog but it
+
+00:41:20.216 --> 00:41:21.076 A:middle
+can be very powerful.
+
+00:41:21.306 --> 00:41:23.006 A:middle
+All it is is a way to provide a
+
+00:41:23.006 --> 00:41:24.306 A:middle
+flexible container that you can
+
+00:41:24.306 --> 00:41:26.256 A:middle
+put in your Asset Catalog with
+
+00:41:26.256 --> 00:41:27.786 A:middle
+content variants around
+
+00:41:27.876 --> 00:41:29.036 A:middle
+arbitrary files.
+
+00:41:29.336 --> 00:41:30.446 A:middle
+This doesn't have to be an
+
+00:41:30.446 --> 00:41:31.196 A:middle
+image, it doesn't have to be a
+
+00:41:31.196 --> 00:41:32.366 A:middle
+very specific format, this can
+
+00:41:32.366 --> 00:41:32.976 A:middle
+be anything.
+
+00:41:33.596 --> 00:41:36.226 A:middle
+But you can use this with Asset
+
+00:41:36.226 --> 00:41:37.666 A:middle
+Catalogs in App Thinning to
+
+00:41:37.696 --> 00:41:39.676 A:middle
+route arbitrary data to these
+
+00:41:39.676 --> 00:41:40.806 A:middle
+different performance classes.
+
+00:41:40.876 --> 00:41:42.706 A:middle
+So that's an example, consider a
+
+00:41:42.706 --> 00:41:44.636 A:middle
+cut scene video in a game.
+
+00:41:45.676 --> 00:41:47.126 A:middle
+So you might provide, have a
+
+00:41:47.126 --> 00:41:49.096 A:middle
+nice video that you put in sort
+
+00:41:49.096 --> 00:41:49.856 A:middle
+of the mid-tier of the
+
+00:41:49.856 --> 00:41:52.246 A:middle
+performance spectrum and then
+
+00:41:52.246 --> 00:41:53.416 A:middle
+you might have a really awesome
+
+00:41:53.416 --> 00:41:55.456 A:middle
+high resolution, maybe it's even
+
+00:41:55.456 --> 00:41:57.246 A:middle
+HDR who knows video that you put
+
+00:41:57.246 --> 00:41:59.396 A:middle
+in the really capable quadrants
+
+00:41:59.396 --> 00:42:00.776 A:middle
+of that capability spectrum.
+

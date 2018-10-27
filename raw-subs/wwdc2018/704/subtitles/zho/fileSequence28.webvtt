@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:01.014 --> 00:28:03.083 align:middle line:-1
+最后如果你使用了收据验证
+
+00:28:04.484 --> 00:28:07.855 align:middle line:-2
+你需要确保在调用finishTransaction之前
+执行此操作
+
+00:28:08.755 --> 00:28:11.225 align:middle line:-1
+这对可消耗性app内购买尤为重要
+
+00:28:11.291 --> 00:28:13.126 align:middle line:-1
+因为可消耗性app内购买
+
+00:28:13.193 --> 00:28:15.929 align:middle line:-1
+只有在未完成时才会出现在收据中
+
+00:28:16.697 --> 00:28:17.931 align:middle line:-2
+在你调用了
+finishTransaction之后
+
+00:28:17.998 --> 00:28:21.001 align:middle line:-2
+它们就不会再出现在自己的位置上
+你也就无法再验证它们
+
+00:28:21.768 --> 00:28:23.203 align:middle line:-1
+因此如果你使用了收据验证
+
+00:28:23.270 --> 00:28:26.740 align:middle line:-2
+请确保它是真正的Apple签名的
+用户付费的交易
+
+00:28:27.508 --> 00:28:29.543 align:middle line:-2
+在调用finishTransaction之前
+始终执行此操作
+
+00:28:31.912 --> 00:28:32.813 align:middle line:0
+我想把舞台交还给Dana
+
+00:28:32.880 --> 00:28:34.481 align:middle line:0
+来讨论管理收据的一些技巧
+
+00:28:39.753 --> 00:28:40.654 align:middle line:-1
+再次谢谢你 Ross
+
+00:28:43.790 --> 00:28:44.791 align:middle line:-1
+那么收据是什么呢？
+
+00:28:46.026 --> 00:28:50.297 align:middle line:-2
+这就像它的名字所暗示的那样
+它是app在app内购买中的记录
+
+00:28:50.364 --> 00:28:53.934 align:middle line:-2
+这很像你买零售品时
+得到的那张纸
+
+00:28:56.436 --> 00:28:58.338 align:middle line:-1
+它存储在设备上 它是一个文件
+
+00:28:58.405 --> 00:29:00.641 align:middle line:-2
+它其实是从App Store
+获得的文件
+

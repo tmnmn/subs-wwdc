@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.976 --> 00:26:00.536 A:middle
+rect version.
+
+00:26:00.746 --> 00:26:01.996 A:middle
+And, we also use that for things
+
+00:26:01.996 --> 00:26:02.556 A:middle
+like printing.
+
+00:26:02.616 --> 00:26:03.916 A:middle
+So, it's fine to implement both
+
+00:26:03.916 --> 00:26:04.296 A:middle
+of these.
+
+00:26:05.056 --> 00:26:06.386 A:middle
+If you have a view that you
+
+00:26:06.386 --> 00:26:07.726 A:middle
+really can't express using the
+
+00:26:07.806 --> 00:26:09.346 A:middle
+CG drawing API's, or the AppKit
+
+00:26:09.346 --> 00:26:11.336 A:middle
+drawing API's, you can, in
+
+00:26:11.336 --> 00:26:12.406 A:middle
+addition to the update layer
+
+00:26:12.406 --> 00:26:13.576 A:middle
+method, override
+
+00:26:13.576 --> 00:26:15.796 A:middle
+wantsUpdateLayer, and if you
+
+00:26:15.796 --> 00:26:16.906 A:middle
+just return "true" from that, we
+
+00:26:16.906 --> 00:26:18.186 A:middle
+know that you need an explicit
+
+00:26:18.186 --> 00:26:19.716 A:middle
+layer to do what you want to
+
+00:26:19.716 --> 00:26:20.216 A:middle
+accomplish.
+
+00:26:22.276 --> 00:26:24.626 A:middle
+There's another way of taking
+
+00:26:24.626 --> 00:26:26.476 A:middle
+best advantage of AppKit and
+
+00:26:26.476 --> 00:26:27.746 A:middle
+core animations features here,
+
+00:26:27.976 --> 00:26:29.236 A:middle
+and that's just to build your
+
+00:26:29.236 --> 00:26:30.206 A:middle
+UI's out of a very simple
+
+00:26:30.206 --> 00:26:33.096 A:middle
+vocabulary of basic NSViews.
+
+00:26:33.456 --> 00:26:35.166 A:middle
+NSImageView, NSBox, and
+
+00:26:35.166 --> 00:26:36.926 A:middle
+NSTextField, these are all
+
+00:26:36.926 --> 00:26:38.336 A:middle
+really great building blocks to
+
+00:26:38.336 --> 00:26:39.446 A:middle
+make complicated UI's, and
+
+00:26:39.666 --> 00:26:40.766 A:middle
+they'll do the right thing no
+
+00:26:40.766 --> 00:26:42.286 A:middle
+matter what technologies we pick
+
+00:26:42.286 --> 00:26:43.546 A:middle
+to actually render to the
+
+00:26:43.546 --> 00:26:43.966 A:middle
+screen.
+
+00:26:45.606 --> 00:26:46.546 A:middle
+With our changes to layer
+
+00:26:46.546 --> 00:26:48.376 A:middle
+backing, there's a few patterns
+
+00:26:48.376 --> 00:26:49.566 A:middle
+I want to call out that aren't
+
+00:26:49.566 --> 00:26:50.996 A:middle
+going to work in macOS 10.14
+
+00:26:50.996 --> 00:26:51.396 A:middle
+anymore.
+
+00:26:51.996 --> 00:26:53.616 A:middle
+If you're using NSView lockFocus
+
+00:26:53.616 --> 00:26:55.106 A:middle
+and unlockFocus, or trying to
+
+00:26:55.106 --> 00:26:56.566 A:middle
+access the window's graphics
+
+00:26:56.566 --> 00:26:59.046 A:middle
+contents directly, there's a
+
+00:26:59.046 --> 00:27:00.116 A:middle
+better way of doing that.
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:01.126 --> 00:40:02.386 A:middle
+But tile shading alone isn't
+
+00:40:02.386 --> 00:40:02.716 A:middle
+enough.
+
+00:40:02.956 --> 00:40:04.266 A:middle
+We need color coverage control
+
+00:40:04.266 --> 00:40:05.566 A:middle
+to change the multi-sampling
+
+00:40:05.566 --> 00:40:06.586 A:middle
+rate in place.
+
+00:40:07.576 --> 00:40:08.876 A:middle
+Using color coverage control is
+
+00:40:08.996 --> 00:40:10.996 A:middle
+really powerful and really easy.
+
+00:40:11.526 --> 00:40:12.496 A:middle
+Let's take a look at the shader.
+
+00:40:16.176 --> 00:40:17.976 A:middle
+Okay, so remember that our goal
+
+00:40:17.976 --> 00:40:19.336 A:middle
+here is to average the samples
+
+00:40:19.336 --> 00:40:20.766 A:middle
+of each pixel and then store
+
+00:40:20.766 --> 00:40:22.126 A:middle
+that result back into the image
+
+00:40:22.236 --> 00:40:23.756 A:middle
+block as the overall pixel
+
+00:40:23.756 --> 00:40:24.106 A:middle
+value.
+
+00:40:25.616 --> 00:40:27.276 A:middle
+Now, instead of looping through
+
+00:40:27.276 --> 00:40:29.686 A:middle
+each color, through each sample,
+
+00:40:29.826 --> 00:40:30.776 A:middle
+we're going to take advantage of
+
+00:40:30.776 --> 00:40:32.146 A:middle
+the color rate capabilities of
+
+00:40:32.146 --> 00:40:33.916 A:middle
+the A11 and only loop through
+
+00:40:33.916 --> 00:40:34.916 A:middle
+unique colors.
+
+00:40:36.836 --> 00:40:38.726 A:middle
+To properly average across all
+
+00:40:38.726 --> 00:40:40.066 A:middle
+samples, we need to weigh each
+
+00:40:40.066 --> 00:40:41.416 A:middle
+color by the number of samples
+
+00:40:41.416 --> 00:40:43.166 A:middle
+associated with it, and we do
+
+00:40:43.166 --> 00:40:46.436 A:middle
+this by counting the bit set in
+
+00:40:46.436 --> 00:40:47.866 A:middle
+the color coverage mask.
+
+00:40:49.186 --> 00:40:50.426 A:middle
+We then complete our averaging
+
+00:40:50.426 --> 00:40:51.606 A:middle
+by dividing by the total number
+
+00:40:51.606 --> 00:40:54.766 A:middle
+of samples and, finally, write
+
+00:40:54.766 --> 00:40:56.106 A:middle
+the result back into the
+
+00:40:56.106 --> 00:40:56.616 A:middle
+imageblock.
+
+00:40:57.136 --> 00:40:58.526 A:middle
+The output sample mask tells
+
+00:40:58.526 --> 00:41:00.126 A:middle
+Metal to apply the results to
+

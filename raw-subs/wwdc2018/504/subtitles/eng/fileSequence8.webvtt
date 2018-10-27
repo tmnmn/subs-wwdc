@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.006 --> 00:08:00.796 A:middle
+calls me and gives me that
+
+00:08:00.796 --> 00:08:01.436 A:middle
+information.
+
+00:08:01.926 --> 00:08:04.086 A:middle
+And when I do this, I can just
+
+00:08:04.086 --> 00:08:06.646 A:middle
+update progress for my user in
+
+00:08:06.646 --> 00:08:07.026 A:middle
+my UI.
+
+00:08:07.726 --> 00:08:10.266 A:middle
+And then, when the download
+
+00:08:10.266 --> 00:08:12.316 A:middle
+completes, I can, of course,
+
+00:08:12.316 --> 00:08:13.686 A:middle
+manage the file, and I might
+
+00:08:13.686 --> 00:08:15.426 A:middle
+want to post a notification
+
+00:08:15.426 --> 00:08:17.156 A:middle
+alerting my user that there's a
+
+00:08:17.156 --> 00:08:18.246 A:middle
+playback opportunity.
+
+00:08:18.766 --> 00:08:21.976 A:middle
+And, of course, I'm also going
+
+00:08:21.976 --> 00:08:22.936 A:middle
+to be called into a
+
+00:08:22.936 --> 00:08:24.946 A:middle
+didCompleteWithError, so I just
+
+00:08:24.946 --> 00:08:26.266 A:middle
+want to clean up appropriately
+
+00:08:26.496 --> 00:08:28.066 A:middle
+and handle any errors at that
+
+00:08:28.066 --> 00:08:28.916 A:middle
+point, if there are any.
+
+00:08:29.946 --> 00:08:31.466 A:middle
+And that's wonderful,
+
+00:08:31.466 --> 00:08:32.976 A:middle
+URLSession, for when we can
+
+00:08:32.976 --> 00:08:34.265 A:middle
+download directly to the watch,
+
+00:08:34.816 --> 00:08:36.416 A:middle
+but sometimes the content might
+
+00:08:36.416 --> 00:08:38.056 A:middle
+already exist on our iPhone.
+
+00:08:39.106 --> 00:08:40.576 A:middle
+In that case, we can just use
+
+00:08:40.576 --> 00:08:42.135 A:middle
+watch connectivity and transfer
+
+00:08:42.135 --> 00:08:43.946 A:middle
+the file directly over to our
+
+00:08:43.946 --> 00:08:44.416 A:middle
+watch.
+
+00:08:48.536 --> 00:08:50.336 A:middle
+And to do so, we'll just use the
+
+00:08:50.336 --> 00:08:51.426 A:middle
+transfer file API.
+
+00:08:51.426 --> 00:08:53.946 A:middle
+And new in watchOS 5, you can
+
+00:08:53.946 --> 00:08:55.756 A:middle
+get the progress of that
+
+00:08:55.756 --> 00:08:56.256 A:middle
+transfer.
+
+00:08:57.376 --> 00:08:58.306 A:middle
+So let's take a look.
+
+00:08:58.956 --> 00:09:00.546 A:middle
+Here we are in code, and I see
+

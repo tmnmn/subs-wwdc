@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.296 --> 00:37:01.606 A:middle
+That's how easy it is to take
+
+00:37:01.606 --> 00:37:02.286 A:middle
+advantage of threadgroup
+
+00:37:02.286 --> 00:37:02.826 A:middle
+persistence.
+
+00:37:05.806 --> 00:37:07.806 A:middle
+Okay, so now that you've seen
+
+00:37:07.806 --> 00:37:08.686 A:middle
+tile shading and threadgroup
+
+00:37:08.686 --> 00:37:10.206 A:middle
+persistence, let's revisit our
+
+00:37:10.206 --> 00:37:11.436 A:middle
+order-independent transparency
+
+00:37:11.436 --> 00:37:11.876 A:middle
+example.
+
+00:37:14.166 --> 00:37:15.446 A:middle
+Okay, so remember how I said
+
+00:37:15.446 --> 00:37:17.126 A:middle
+that changing imageblock layouts
+
+00:37:17.126 --> 00:37:18.116 A:middle
+requires tile shading?
+
+00:37:18.916 --> 00:37:20.106 A:middle
+That's because tile shading
+
+00:37:20.106 --> 00:37:22.336 A:middle
+provides the synchronization we
+
+00:37:22.336 --> 00:37:24.176 A:middle
+need to safely change layouts.
+
+00:37:24.686 --> 00:37:26.276 A:middle
+This means we actually have to
+
+00:37:26.276 --> 00:37:27.926 A:middle
+insert a tile shade between the
+
+00:37:27.926 --> 00:37:29.316 A:middle
+lighting and the MLAB steps.
+
+00:37:33.226 --> 00:37:34.436 A:middle
+So tile shading is going to wait
+
+00:37:34.516 --> 00:37:35.406 A:middle
+for the lighting stage to
+
+00:37:35.406 --> 00:37:36.576 A:middle
+complete before transitioning
+
+00:37:36.576 --> 00:37:38.436 A:middle
+from G-buffer layout to MLAB
+
+00:37:38.436 --> 00:37:40.426 A:middle
+layout, and it's also going to
+
+00:37:40.426 --> 00:37:41.466 A:middle
+carry forward the accumulated
+
+00:37:41.466 --> 00:37:42.646 A:middle
+lighting value from the lighting
+
+00:37:42.646 --> 00:37:44.106 A:middle
+step into the MLAB step for
+
+00:37:44.106 --> 00:37:44.776 A:middle
+final blending.
+
+00:37:49.146 --> 00:37:50.706 A:middle
+Okay, so now that we've covered
+
+00:37:50.706 --> 00:37:52.496 A:middle
+imageblocks, tile shading, and
+
+00:37:52.496 --> 00:37:53.576 A:middle
+threadgroup persistence, it's
+
+00:37:53.576 --> 00:37:54.736 A:middle
+time to move on to our final
+
+00:37:54.736 --> 00:37:56.376 A:middle
+topic, multi-sample
+
+00:37:56.376 --> 00:37:58.066 A:middle
+anti-aliasing and sample
+
+00:37:58.066 --> 00:37:58.676 A:middle
+coverage control.
+

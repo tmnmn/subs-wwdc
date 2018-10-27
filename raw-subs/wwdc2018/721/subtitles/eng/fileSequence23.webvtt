@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.366 --> 00:23:00.206 A:middle
+should be done without
+
+00:23:00.206 --> 00:23:01.736 A:middle
+animation, since the
+
+00:23:01.736 --> 00:23:03.086 A:middle
+presentation of your principal
+
+00:23:03.086 --> 00:23:04.296 A:middle
+view controller is already
+
+00:23:04.296 --> 00:23:04.766 A:middle
+animated.
+
+00:23:05.356 --> 00:23:09.766 A:middle
+In general, extensions should be
+
+00:23:09.766 --> 00:23:10.826 A:middle
+lightweight and ready to
+
+00:23:10.826 --> 00:23:12.416 A:middle
+terminate when they're done, and
+
+00:23:12.416 --> 00:23:13.396 A:middle
+this includes AutoFill
+
+00:23:13.396 --> 00:23:14.896 A:middle
+Credential Provider Extensions.
+
+00:23:16.046 --> 00:23:17.226 A:middle
+Your extension will be invoked
+
+00:23:17.226 --> 00:23:18.846 A:middle
+to perform one particular task,
+
+00:23:18.996 --> 00:23:20.126 A:middle
+and you shouldn't include any
+
+00:23:20.126 --> 00:23:21.966 A:middle
+unnecessary work flows or user
+
+00:23:21.966 --> 00:23:23.216 A:middle
+interactions beyond what is
+
+00:23:23.216 --> 00:23:23.536 A:middle
+needed.
+
+00:23:25.116 --> 00:23:26.666 A:middle
+Be aware that the system may
+
+00:23:26.666 --> 00:23:27.866 A:middle
+terminate or suspend your
+
+00:23:27.866 --> 00:23:29.526 A:middle
+extension for various reasons at
+
+00:23:29.526 --> 00:23:30.026 A:middle
+any time.
+
+00:23:30.026 --> 00:23:32.256 A:middle
+For example, the system will
+
+00:23:32.256 --> 00:23:33.566 A:middle
+terminate AutoFill Credential
+
+00:23:33.566 --> 00:23:34.866 A:middle
+Provider Extensions while
+
+00:23:34.866 --> 00:23:36.166 A:middle
+they're in use if the user
+
+00:23:36.166 --> 00:23:37.016 A:middle
+switches apps.
+
+00:23:38.656 --> 00:23:39.936 A:middle
+And your extension will have a
+
+00:23:39.936 --> 00:23:41.206 A:middle
+separate sign box from your main
+
+00:23:41.206 --> 00:23:42.616 A:middle
+app, but it will still need to
+
+00:23:42.616 --> 00:23:44.066 A:middle
+share data, such as the user's
+
+00:23:44.066 --> 00:23:44.726 A:middle
+credentials.
+
+00:23:45.586 --> 00:23:47.106 A:middle
+Use App Groups or Shared
+
+00:23:47.106 --> 00:23:48.746 A:middle
+Keychains to share data between
+
+00:23:48.746 --> 00:23:50.146 A:middle
+your app and its extensions.
+
+00:23:51.316 --> 00:23:52.616 A:middle
+For a review about extension
+
+00:23:52.616 --> 00:23:54.596 A:middle
+development in general, refer to
+
+00:23:54.596 --> 00:23:56.426 A:middle
+the Creating Extensions for iOS
+
+00:23:56.506 --> 00:23:58.856 A:middle
+and OS X part two session from
+
+00:23:58.856 --> 00:24:00.436 A:middle
+WWDC 2014.
+

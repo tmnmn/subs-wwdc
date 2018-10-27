@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:00.156 --> 00:01:02.086 A:middle
+Now, while we work through all
+
+00:01:02.086 --> 00:01:03.916 A:middle
+the tasks required to build our
+
+00:01:03.916 --> 00:01:05.266 A:middle
+app, we're going to touch on a
+
+00:01:05.266 --> 00:01:07.466 A:middle
+wide range of topics regarding
+
+00:01:07.466 --> 00:01:08.616 A:middle
+UICollectionView including
+
+00:01:08.886 --> 00:01:10.916 A:middle
+layouts, updates, and
+
+00:01:10.916 --> 00:01:11.606 A:middle
+animations.
+
+00:01:12.356 --> 00:01:14.026 A:middle
+So we've got a ton of ground to
+
+00:01:14.026 --> 00:01:15.326 A:middle
+cover, so let's jump right in.
+
+00:01:17.116 --> 00:01:19.106 A:middle
+All right, so here's the first
+
+00:01:19.106 --> 00:01:20.526 A:middle
+spec we got from our designer.
+
+00:01:20.716 --> 00:01:21.916 A:middle
+It looks like a friends feed,
+
+00:01:21.916 --> 00:01:22.406 A:middle
+imagine that.
+
+00:01:22.406 --> 00:01:24.336 A:middle
+A great little columnar layout.
+
+00:01:24.996 --> 00:01:28.826 A:middle
+It looks pretty straightforward,
+
+00:01:28.826 --> 00:01:28.976 A:middle
+okay.
+
+00:01:29.076 --> 00:01:30.086 A:middle
+Okay, this looks great.
+
+00:01:30.526 --> 00:01:31.526 A:middle
+So here we've got this really
+
+00:01:31.626 --> 00:01:33.296 A:middle
+fancy looking mosaic layout,
+
+00:01:33.446 --> 00:01:34.786 A:middle
+which is the contents of our
+
+00:01:34.786 --> 00:01:35.436 A:middle
+friends feed.
+
+00:01:36.176 --> 00:01:37.966 A:middle
+Okay, so Mohammed, since you're
+
+00:01:37.966 --> 00:01:38.826 A:middle
+going to be writing all the code
+
+00:01:38.826 --> 00:01:39.936 A:middle
+for us and walking us through
+
+00:01:39.936 --> 00:01:41.806 A:middle
+how to use these features, what
+
+00:01:41.806 --> 00:01:42.476 A:middle
+are your thoughts on these
+
+00:01:42.516 --> 00:01:43.046 A:middle
+designs?
+
+00:01:43.256 --> 00:01:44.096 A:middle
+&gt;&gt; Well, you know, I'm seeing
+
+00:01:44.096 --> 00:01:45.526 A:middle
+these for the first time, but
+
+00:01:45.716 --> 00:01:47.346 A:middle
+they seem like great candidates
+
+00:01:47.346 --> 00:01:48.096 A:middle
+for collection view.
+
+00:01:48.166 --> 00:01:49.186 A:middle
+I think we can have a lot of fun
+
+00:01:49.186 --> 00:01:50.146 A:middle
+with this one, especially.
+
+00:01:50.146 --> 00:01:50.956 A:middle
+&gt;&gt; Yeah, this one looks great.
+
+00:01:51.716 --> 00:01:52.746 A:middle
+All right.
+
+00:01:52.746 --> 00:01:55.626 A:middle
+So before we dive into code, and
+
+00:01:55.626 --> 00:01:56.686 A:middle
+Mohammed starts walking us
+
+00:01:56.686 --> 00:01:58.566 A:middle
+through this, we need to cover
+
+00:01:58.786 --> 00:02:00.196 A:middle
+three core concepts we need to
+

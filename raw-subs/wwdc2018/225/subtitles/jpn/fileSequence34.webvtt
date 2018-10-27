@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.873 --> 00:34:03.343 align:start position:23% line:-1
+データソースは更新前の状態です
+
+00:34:03.944 --> 00:34:08.415 align:start position:21% line:-1
+終わると更新後の状態に移行します
+
+00:34:08.514 --> 00:34:13.687 align:start position:25% line:-2
+indexPathは
+削除に対し常に更新前の状態を
+
+00:34:14.621 --> 00:34:16.156 align:start position:41% line:-1
+参照します
+
+00:34:16.255 --> 00:34:20.694 align:start position:16% line:-2
+一方 挿入は
+indexPathで昇順に処理されます
+
+00:34:20.793 --> 00:34:24.231 align:start position:16% line:-1
+よってindexPathは挿入に対して
+
+00:34:24.331 --> 00:34:28.668 align:start position:25% line:-1
+常に更新後の状態を参照します
+
+00:34:29.536 --> 00:34:34.741 align:start position:21% line:-2
+移動はこの２つを混ぜたもので
+indexPathからの更新前と
+
+00:34:34.842 --> 00:34:39.746 align:start position:30% line:-2
+indexPathへの
+更新後の状態があります
+
+00:34:41.148 --> 00:34:44.217 align:start position:25% line:-1
+リロードはスーパーコマンドで
+
+00:34:44.318 --> 00:34:48.355 align:start position:30% line:-2
+削除と挿入に
+分解することができます
+
+00:34:49.056 --> 00:34:52.326 align:start position:23% line:-1
+リロードのindexPathは
+
+00:34:52.426 --> 00:34:55.462 align:start position:27% line:-1
+更新前の状態を示しています
+
+00:34:56.063 --> 00:35:00.033 align:start position:25% line:-1
+リロードの仕組みを理解すると
+

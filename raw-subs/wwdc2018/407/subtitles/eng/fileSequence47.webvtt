@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.356 --> 00:47:01.486 A:middle
+Now, let's take a step back, and
+
+00:47:01.486 --> 00:47:02.636 A:middle
+look at what we are trying to
+
+00:47:02.636 --> 00:47:03.176 A:middle
+achieve here.
+
+00:47:03.866 --> 00:47:05.076 A:middle
+We wanted to have this portable
+
+00:47:05.076 --> 00:47:06.896 A:middle
+view, with sections and mini
+
+00:47:06.896 --> 00:47:07.466 A:middle
+cells in it.
+
+00:47:09.846 --> 00:47:11.226 A:middle
+And that is basically what your
+
+00:47:11.226 --> 00:47:12.836 A:middle
+Collection view is providing,
+
+00:47:12.836 --> 00:47:13.076 A:middle
+right?
+
+00:47:13.636 --> 00:47:15.036 A:middle
+Except that in this extreme
+
+00:47:15.036 --> 00:47:16.246 A:middle
+case, we are restricting the
+
+00:47:16.246 --> 00:47:17.506 A:middle
+limit of what we could achieve
+
+00:47:17.506 --> 00:47:18.576 A:middle
+with a basic approach.
+
+00:47:18.746 --> 00:47:20.546 A:middle
+And that resulted in too many
+
+00:47:20.546 --> 00:47:21.616 A:middle
+views, too many layers.
+
+00:47:23.796 --> 00:47:26.256 A:middle
+But also in an increased layered
+
+00:47:26.256 --> 00:47:28.396 A:middle
+complexity, and that also had an
+
+00:47:28.396 --> 00:47:30.086 A:middle
+increased memory cost.
+
+00:47:31.706 --> 00:47:33.086 A:middle
+So we needed to innovate here,
+
+00:47:33.846 --> 00:47:35.126 A:middle
+and we did that by restricting
+
+00:47:35.126 --> 00:47:36.436 A:middle
+the number of views drastically
+
+00:47:36.436 --> 00:47:37.826 A:middle
+while still using a collection
+
+00:47:37.826 --> 00:47:37.966 A:middle
+view.
+
+00:47:40.176 --> 00:47:42.066 A:middle
+We used a technique more
+
+00:47:42.066 --> 00:47:43.466 A:middle
+commonly used in video games,
+
+00:47:43.466 --> 00:47:44.606 A:middle
+that is called atlasing.
+
+00:47:45.146 --> 00:47:47.106 A:middle
+And it basically consists of
+
+00:47:47.106 --> 00:47:48.766 A:middle
+combining a set of images into a
+
+00:47:48.766 --> 00:47:49.406 A:middle
+single one.
+
+00:47:50.536 --> 00:47:52.186 A:middle
+We do that efficiently by using
+
+00:47:52.186 --> 00:47:53.806 A:middle
+only very small thumbnails
+
+00:47:53.806 --> 00:47:56.736 A:middle
+first, then we stamp all the raw
+
+00:47:56.736 --> 00:47:58.856 A:middle
+image data on the canvas we are
+
+00:47:58.856 --> 00:47:59.716 A:middle
+using as a strip.
+

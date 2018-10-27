@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:57.711 --> 00:33:00.480 align:middle line:-2
+他们能够添加快捷方式
+并通过Siri使用
+
+00:33:00.547 --> 00:33:04.084 align:middle line:-2
+为此最好的方式就是
+将快捷方式加入到大家的app中
+
+00:33:04.451 --> 00:33:08.121 align:middle line:-2
+用户也好直接在app中
+创建快捷方式
+
+00:33:08.188 --> 00:33:09.223 align:middle line:-1
+（将快捷方式加入app）
+
+00:33:09.289 --> 00:33:12.092 align:middle line:-1
+好 举个例子 我刚订了一份汤
+
+00:33:12.693 --> 00:33:16.430 align:middle line:-2
+我就需要推荐
+来把快捷方式添加到Siri
+
+00:33:18.432 --> 00:33:23.604 align:middle line:-2
+当我点击“添加到Siri”
+就会显示相同的系统界面
+
+00:33:23.804 --> 00:33:27.574 align:middle line:-2
+可以让我设置一个
+新Siri用的快捷方式
+
+00:33:28.809 --> 00:33:30.644 align:middle line:-2
+好 我们来看看
+该功能的API
+
+00:33:32.346 --> 00:33:34.548 align:middle line:-2
+同样 我要获取
+userActivity
+
+00:33:34.615 --> 00:33:38.619 align:middle line:-2
+并用它创建INShortcut
+然后用这 我要创建
+
+00:33:38.685 --> 00:33:42.623 align:middle line:-2
+一个INUIAddVoiceShortcut
+ViewController
+
+00:33:42.689 --> 00:33:44.625 align:middle line:-1
+设置delegate属性 调用present
+
+00:33:45.759 --> 00:33:47.194 align:middle line:-1
+对于Intents也如此
+
+00:33:47.528 --> 00:33:51.965 align:middle line:-2
+若不用userActivity
+创建INShortcut
+
+00:33:52.032 --> 00:33:56.770 align:middle line:-2
+我就用Intent来创建viewController
+设置delegate属性 调用present
+
+00:33:57.771 --> 00:34:01.175 align:middle line:-2
+我做好之后
+用户直接从app中
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.816 --> 00:32:00.556 A:middle
+class interacts with.
+
+00:32:01.386 --> 00:32:02.666 A:middle
+So, we can apply the mocking
+
+00:32:02.666 --> 00:32:03.826 A:middle
+with protocols technique we
+
+00:32:03.826 --> 00:32:04.896 A:middle
+discussed earlier here.
+
+00:32:06.176 --> 00:32:07.806 A:middle
+To do that, we'll create a small
+
+00:32:08.026 --> 00:32:09.296 A:middle
+protocol, containing this
+
+00:32:09.296 --> 00:32:10.156 A:middle
+addTimer method.
+
+00:32:10.816 --> 00:32:13.266 A:middle
+I've called this new protocol
+
+00:32:13.356 --> 00:32:15.376 A:middle
+TimerScheduler, and it just has
+
+00:32:15.406 --> 00:32:17.466 A:middle
+that one addTimer method, which
+
+00:32:17.466 --> 00:32:18.956 A:middle
+matches the signature of the
+
+00:32:18.956 --> 00:32:21.796 A:middle
+runLoop API.
+
+00:32:22.276 --> 00:32:23.836 A:middle
+Now, back in my code, I need to
+
+00:32:23.836 --> 00:32:25.326 A:middle
+replace the runLoop with the
+
+00:32:25.326 --> 00:32:26.746 A:middle
+protocol that I just created.
+
+00:32:27.296 --> 00:32:31.416 A:middle
+And in my tests, I don't want to
+
+00:32:31.416 --> 00:32:32.406 A:middle
+use a real runLoop as my
+
+00:32:32.406 --> 00:32:33.246 A:middle
+TimerScheduler.
+
+00:32:33.856 --> 00:32:35.306 A:middle
+Instead, I want to create a mock
+
+00:32:35.396 --> 00:32:36.996 A:middle
+scheduler that passes the timer
+
+00:32:37.086 --> 00:32:39.646 A:middle
+to my tests.
+
+00:32:39.686 --> 00:32:40.846 A:middle
+I'll do this by creating a new
+
+00:32:40.846 --> 00:32:42.666 A:middle
+struct nested in my unit test
+
+00:32:42.666 --> 00:32:44.626 A:middle
+class called MockTimerScheduler,
+
+00:32:44.926 --> 00:32:46.286 A:middle
+conforming to the TimerScheduler
+
+00:32:46.286 --> 00:32:46.716 A:middle
+protocol.
+
+00:32:47.976 --> 00:32:49.146 A:middle
+It stores a block that will be
+
+00:32:49.316 --> 00:32:50.756 A:middle
+called whenever it's told to add
+
+00:32:51.766 --> 00:32:53.766 A:middle
+a timer.
+
+00:32:53.766 --> 00:32:54.696 A:middle
+And with all the pieces in
+
+00:32:54.696 --> 00:32:56.406 A:middle
+place, I can write my final unit
+
+00:32:56.406 --> 00:32:56.776 A:middle
+test.
+
+00:32:57.796 --> 00:32:58.866 A:middle
+First, I create a
+
+00:32:58.866 --> 00:33:01.086 A:middle
+MockTimerScheduler and configure
+

@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:55.309 --> 00:48:00.514 align:start position:11% line:-2
+スクリーンショットのビューで
+ivarDescriptionを呼び出すと―
+
+00:48:00.614 --> 00:48:06.453 align:start position:14% line:-2
+cropEnabledのivarの設定が
+NOになっていると分かります
+
+00:48:07.554 --> 00:48:10.724 align:start position:30% line:-2
+ここからバグを調べると
+いいでしょう
+
+00:48:11.692 --> 00:48:12.926 align:start position:41% line:-1
+すばらしい
+
+00:48:13.126 --> 00:48:18.966 align:start position:14% line:-2
+ダンプとivarDescriptionは
+問題を診断するのに最適です
+
+00:48:20.067 --> 00:48:24.972 align:start position:25% line:-2
+もう１つのすばらしいヒントは
+ブレークポイント
+
+00:48:25.572 --> 00:48:29.910 align:start position:25% line:-2
+これを使うと任意の実行状態で
+プログラムを停止し―
+
+00:48:30.110 --> 00:48:31.578 align:start position:30% line:-1
+コマンドを実行できます
+
+00:48:32.379 --> 00:48:36.850 align:start position:27% line:-2
+LLDBのコマンドラインか
+XcodeのUIで―
+
+00:48:36.950 --> 00:48:40.487 align:start position:29% line:-2
+ブレークポイント実行前に
+条件の追加もできます
+
+00:48:40.621 --> 00:48:43.791 align:start position:25% line:-2
+ブレークポイントに達するたび
+実行するコマンドも
+
+00:48:44.525 --> 00:48:47.861 align:start position:25% line:-2
+ブレークポイントは
+デバッグの作業の流れの根幹で
+
+00:48:47.961 --> 00:48:52.433 align:start position:12% line:-2
+expressionコマンド
+ダンプ ivarDescriptionは―
+
+00:48:52.533 --> 00:48:54.735 align:start position:34% line:-2
+ブレークポイントと
+併用できます
+
+00:48:54.902 --> 00:49:00.073 align:start position:25% line:-2
+次のデバッグでは
+ぜひブレークポイントの使用を
+

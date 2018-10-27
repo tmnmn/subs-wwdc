@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.156 --> 00:20:00.296 A:middle
+They do not always appear in the
+
+00:20:00.296 --> 00:20:02.446 A:middle
+Xcode Organizer, so be careful
+
+00:20:02.446 --> 00:20:02.726 A:middle
+of that.
+
+00:20:04.416 --> 00:20:06.706 A:middle
+In Apple's developer
+
+00:20:06.706 --> 00:20:09.186 A:middle
+documentation we have a technote
+
+00:20:09.186 --> 00:20:10.936 A:middle
+that describes many different
+
+00:20:11.206 --> 00:20:13.136 A:middle
+signatures and structures of
+
+00:20:13.136 --> 00:20:14.926 A:middle
+crash logs like these particular
+
+00:20:14.926 --> 00:20:16.976 A:middle
+examples, what they look like,
+
+00:20:16.976 --> 00:20:19.206 A:middle
+how you can recognize them, and
+
+00:20:19.206 --> 00:20:20.536 A:middle
+it goes into much more detail
+
+00:20:20.536 --> 00:20:21.796 A:middle
+than we have time for here.
+
+00:20:23.026 --> 00:20:24.676 A:middle
+But let's look at one example,
+
+00:20:25.426 --> 00:20:27.236 A:middle
+here's another crash log file
+
+00:20:27.776 --> 00:20:29.896 A:middle
+and again in order to understand
+
+00:20:29.896 --> 00:20:31.166 A:middle
+the crash log we start with the
+
+00:20:31.166 --> 00:20:32.216 A:middle
+crash reason.
+
+00:20:32.866 --> 00:20:34.426 A:middle
+In this case the crash reason is
+
+00:20:34.426 --> 00:20:37.226 A:middle
+in EXC crash exception with the
+
+00:20:37.226 --> 00:20:38.836 A:middle
+SIGKILL signal.
+
+00:20:39.796 --> 00:20:41.766 A:middle
+The SIGKILL signal is commonly
+
+00:20:41.766 --> 00:20:43.836 A:middle
+used when the operating system
+
+00:20:43.836 --> 00:20:45.466 A:middle
+wants to stop your process.
+
+00:20:46.016 --> 00:20:48.386 A:middle
+It sends the SIGKILL signal, the
+
+00:20:48.526 --> 00:20:50.056 A:middle
+SIGKILL signal cannot be
+
+00:20:50.056 --> 00:20:51.706 A:middle
+handled, it cannot be caught by
+
+00:20:51.706 --> 00:20:53.846 A:middle
+your process, it will die in
+
+00:20:53.846 --> 00:20:54.856 A:middle
+response to this signal.
+
+00:20:56.666 --> 00:20:58.446 A:middle
+We can also see the reason the
+
+00:20:58.446 --> 00:21:00.086 A:middle
+operating system sent the signal
+

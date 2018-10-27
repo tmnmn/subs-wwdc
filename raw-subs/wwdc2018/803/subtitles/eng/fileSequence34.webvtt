@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.196 --> 00:34:01.336 A:middle
+overwhelming or unwieldy for
+
+00:34:01.636 --> 00:34:02.996 A:middle
+controlling the behavior of
+
+00:34:03.416 --> 00:34:04.426 A:middle
+objects on the screen.
+
+00:34:05.876 --> 00:34:07.376 A:middle
+So, we think our design tool
+
+00:34:07.376 --> 00:34:09.366 A:middle
+should have a bit of a human
+
+00:34:09.366 --> 00:34:10.346 A:middle
+interface to them.
+
+00:34:10.786 --> 00:34:11.806 A:middle
+That they need to reflect the
+
+00:34:11.806 --> 00:34:12.906 A:middle
+needs of the designer that's
+
+00:34:13.056 --> 00:34:13.746 A:middle
+using the tool.
+
+00:34:14.886 --> 00:34:16.255 A:middle
+And so, how do we go about that?
+
+00:34:16.255 --> 00:34:17.246 A:middle
+How do we simplify these
+
+00:34:17.246 --> 00:34:18.806 A:middle
+properties down to make it more
+
+00:34:19.815 --> 00:34:20.626 A:middle
+design friendly?
+
+00:34:22.516 --> 00:34:24.396 A:middle
+So, mass stiffness and damping
+
+00:34:24.396 --> 00:34:25.815 A:middle
+will remain behind the scenes,
+
+00:34:25.815 --> 00:34:26.606 A:middle
+they're the fundamental
+
+00:34:26.606 --> 00:34:28.016 A:middle
+properties of the spring system
+
+00:34:28.016 --> 00:34:28.696 A:middle
+that we're using.
+
+00:34:28.696 --> 00:34:30.226 A:middle
+But, we can simplify our
+
+00:34:30.226 --> 00:34:31.775 A:middle
+interface down to two simple
+
+00:34:31.775 --> 00:34:32.266 A:middle
+properties.
+
+00:34:33.446 --> 00:34:35.176 A:middle
+The first is damping, which
+
+00:34:35.176 --> 00:34:36.835 A:middle
+controls how much or little
+
+00:34:36.886 --> 00:34:39.306 A:middle
+overshoot there is from 100%
+
+00:34:39.306 --> 00:34:40.565 A:middle
+damping, where there will be no
+
+00:34:40.565 --> 00:34:43.136 A:middle
+overshoot to 0% damping where
+
+00:34:43.136 --> 00:34:44.545 A:middle
+the spring would oscillate
+
+00:34:44.545 --> 00:34:45.246 A:middle
+indefinitely.
+
+00:34:47.126 --> 00:34:50.485 A:middle
+The second property is response.
+
+00:34:52.025 --> 00:34:53.565 A:middle
+And, this controls how quickly
+
+00:34:53.565 --> 00:34:55.186 A:middle
+the value will try and get to
+
+00:34:55.186 --> 00:34:55.735 A:middle
+the target.
+
+00:34:56.956 --> 00:34:58.296 A:middle
+And, you might notice that I
+
+00:34:58.296 --> 00:34:59.956 A:middle
+haven't used the word duration.
+

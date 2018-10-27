@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.876 --> 00:29:00.366 A:middle
+Now the great thing about unsafe
+
+00:29:00.456 --> 00:29:01.926 A:middle
+bit cast is that it returns a
+
+00:29:01.926 --> 00:29:04.026 A:middle
+typed result, so we can call our
+
+00:29:04.026 --> 00:29:05.266 A:middle
+functions and property names on
+
+00:29:05.296 --> 00:29:06.276 A:middle
+it such as .frame.
+
+00:29:06.856 --> 00:29:08.036 A:middle
+And in this case, I'd like to
+
+00:29:08.036 --> 00:29:09.936 A:middle
+inspect a center point and then
+
+00:29:09.936 --> 00:29:11.026 A:middle
+modify that center point.
+
+00:29:11.026 --> 00:29:12.216 A:middle
+Let's change it to 300
+
+00:29:12.896 --> 00:29:14.276 A:middle
+[inaudible] we can see it has
+
+00:29:14.276 --> 00:29:17.076 A:middle
+changed to 300, but the view in
+
+00:29:17.076 --> 00:29:18.176 A:middle
+the simulator hasn't moved.
+
+00:29:18.376 --> 00:29:18.876 A:middle
+Well, why not?
+
+00:29:19.756 --> 00:29:20.526 A:middle
+Well, we're paused in the
+
+00:29:20.526 --> 00:29:22.126 A:middle
+debugger, so cronomation isn't
+
+00:29:22.126 --> 00:29:23.606 A:middle
+currently applying any view
+
+00:29:23.606 --> 00:29:24.776 A:middle
+module changes to the screen's
+
+00:29:24.776 --> 00:29:25.156 A:middle
+frame buffer.
+
+00:29:25.156 --> 00:29:26.976 A:middle
+But we can ask cronomation to do
+
+00:29:26.976 --> 00:29:28.566 A:middle
+that for us, just use the
+
+00:29:28.566 --> 00:29:31.526 A:middle
+expression ca transaction.flush
+
+00:29:32.016 --> 00:29:34.486 A:middle
+and that tells cronomation to
+
+00:29:34.486 --> 00:29:35.606 A:middle
+update the screen's frame
+
+00:29:35.606 --> 00:29:35.836 A:middle
+buffer.
+
+00:29:36.516 --> 00:29:41.616 A:middle
+[ Applause ]
+
+00:29:42.116 --> 00:29:43.436 A:middle
+So now, I can just use these two
+
+00:29:43.436 --> 00:29:45.506 A:middle
+lines to fix the new positions
+
+00:29:45.596 --> 00:29:46.996 A:middle
+and continue flashing and we can
+
+00:29:46.996 --> 00:29:47.516 A:middle
+move [inaudible] around.
+
+00:29:48.036 --> 00:29:48.986 A:middle
+And in fact, I find this to be
+
+00:29:48.986 --> 00:29:50.046 A:middle
+so convenient that I kind of
+
+00:29:50.046 --> 00:29:51.146 A:middle
+wanted to wrap all this up in
+
+00:29:51.146 --> 00:29:52.496 A:middle
+just a single command to nudge
+
+00:29:52.496 --> 00:29:53.816 A:middle
+views around, and so that's what
+
+00:29:53.816 --> 00:29:54.046 A:middle
+I did.
+
+00:29:54.726 --> 00:29:55.336 A:middle
+Let me show you that.
+
+00:29:55.336 --> 00:29:57.296 A:middle
+I'm going to switch to terminal
+
+00:29:57.656 --> 00:29:58.916 A:middle
+and open a Python file.
+
+00:29:59.916 --> 00:30:00.926 A:middle
+Why a Python file?
+

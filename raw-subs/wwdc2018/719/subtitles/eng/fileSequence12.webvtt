@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.966 --> 00:12:01.126 A:middle
+X, Y, Z, W going in a
+
+00:12:01.336 --> 00:12:02.466 A:middle
+counter-clockwise direction.
+
+00:12:02.466 --> 00:12:04.006 A:middle
+This is the same direction that
+
+00:12:04.006 --> 00:12:05.096 A:middle
+is used in Metal, if you're
+
+00:12:05.096 --> 00:12:07.776 A:middle
+familiar with the gather
+
+00:12:07.776 --> 00:12:08.816 A:middle
+operations in Metal.
+
+00:12:10.136 --> 00:12:11.506 A:middle
+So, again in that one
+
+00:12:11.506 --> 00:12:12.686 A:middle
+instruction we've done four
+
+00:12:12.686 --> 00:12:13.966 A:middle
+reads and we're going to repeat
+
+00:12:13.966 --> 00:12:15.356 A:middle
+this process for the other
+
+00:12:15.356 --> 00:12:16.056 A:middle
+groups of four.
+
+00:12:16.196 --> 00:12:17.946 A:middle
+So, we're going to get group 2,
+
+00:12:18.296 --> 00:12:20.006 A:middle
+group 3, and group 4.
+
+00:12:20.766 --> 00:12:22.346 A:middle
+Now that we've done all 16
+
+00:12:22.346 --> 00:12:23.626 A:middle
+reads, we need to figure out
+
+00:12:24.076 --> 00:12:25.186 A:middle
+what values go in what
+
+00:12:25.186 --> 00:12:25.866 A:middle
+locations.
+
+00:12:26.246 --> 00:12:27.286 A:middle
+So, the first thing we're going
+
+00:12:27.286 --> 00:12:29.626 A:middle
+to do is get the appropriate
+
+00:12:29.626 --> 00:12:31.466 A:middle
+channels of this 3 by 3 sub
+
+00:12:31.466 --> 00:12:34.066 A:middle
+group and average them together.
+
+00:12:34.066 --> 00:12:35.396 A:middle
+And then we're going to store
+
+00:12:35.396 --> 00:12:38.486 A:middle
+those channels into the result 1
+
+00:12:38.486 --> 00:12:38.886 A:middle
+variable.
+
+00:12:39.516 --> 00:12:40.486 A:middle
+And we're going to repeat this
+
+00:12:40.486 --> 00:12:42.016 A:middle
+process for the other four
+
+00:12:42.016 --> 00:12:45.576 A:middle
+result pixels that we want to
+
+00:12:45.576 --> 00:12:46.106 A:middle
+write -- R1, R2, R3, and R4.
+
+00:12:46.106 --> 00:12:48.616 A:middle
+And the last thing we're going
+
+00:12:48.616 --> 00:12:50.366 A:middle
+to do is called "Destination
+
+00:12:50.366 --> 00:12:52.956 A:middle
+Write" to write the 4 pixels all
+
+00:12:52.956 --> 00:12:53.806 A:middle
+in one operation.
+
+00:12:54.156 --> 00:12:55.256 A:middle
+So note, this is a little
+
+00:12:55.256 --> 00:12:56.756 A:middle
+different from a traditional CI
+
+00:12:56.926 --> 00:12:58.006 A:middle
+kernel where you would've
+
+00:12:58.006 --> 00:13:00.536 A:middle
+returned a value from your
+

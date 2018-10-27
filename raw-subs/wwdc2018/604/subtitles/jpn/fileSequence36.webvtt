@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:56.690 --> 00:36:00.094 align:start position:30% line:-2
+GPUにアイドル状態が
+認められた場合
+
+00:36:00.260 --> 00:36:05.098 align:start position:27% line:-2
+複数のコマンドバッファに
+フレームを分けるといいです
+
+00:36:05.566 --> 00:36:09.770 align:start position:21% line:-2
+GPUが１つのコマンドバッファを
+処理している間
+
+00:36:09.937 --> 00:36:12.472 align:start position:30% line:-2
+CPUは他を
+エンコーディングします
+
+00:36:13.273 --> 00:36:17.678 align:start position:27% line:-2
+フレームエンコーディングを
+複数のスレッドに分ける場合
+
+00:36:17.778 --> 00:36:21.281 align:start position:25% line:-2
+スレッドごとに
+コマンドバッファを作成します
+
+00:36:21.582 --> 00:36:27.121 align:start position:25% line:-2
+しかし各コマンドバッファには
+追加CPUコストが関わります
+
+00:36:27.221 --> 00:36:30.390 align:start position:30% line:-2
+可能な限り
+少なくしたいところです
+
+00:36:31.992 --> 00:36:36.630 align:start position:23% line:-2
+Metalは完了コールバックを
+登録するAPIを提供し
+
+00:36:36.964 --> 00:36:41.535 align:start position:21% line:-2
+GPUがコマンドバッファの処理を
+完了した時に関与します
+
+00:36:41.835 --> 00:36:45.072 align:start position:36% line:-2
+稼動するAPIを
+見てみましょう
+
+00:36:46.740 --> 00:36:51.111 align:start position:23% line:-2
+初期化メソッド内に
+コマンドキューを作成しています
+
+00:36:51.211 --> 00:36:54.348 align:start position:18% line:-2
+これを用いて
+commandBufferメソッドを
+
+00:36:54.448 --> 00:36:57.718 align:start position:25% line:-2
+コールして
+コマンドバッファを入手します
+
+00:36:58.752 --> 00:37:01.555 align:start position:34% line:-2
+この中にコマンドを
+エンコードします
+

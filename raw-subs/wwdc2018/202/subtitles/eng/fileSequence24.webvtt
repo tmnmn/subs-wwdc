@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.656 --> 00:24:01.326 A:middle
+the other global constants all
+
+00:24:01.326 --> 00:24:03.806 A:middle
+throughout UIKit and nested all
+
+00:24:03.806 --> 00:24:05.006 A:middle
+of them in appropriate places.
+
+00:24:05.346 --> 00:24:06.486 A:middle
+So things like UI Float Range
+
+00:24:06.486 --> 00:24:08.536 A:middle
+Zero and UI Float Range Infinite
+
+00:24:08.536 --> 00:24:10.216 A:middle
+have not just become properties
+
+00:24:10.216 --> 00:24:12.396 A:middle
+on UI Float Range so they're
+
+00:24:12.396 --> 00:24:14.326 A:middle
+both easy to find and easier to
+
+00:24:14.326 --> 00:24:14.786 A:middle
+use.
+
+00:24:15.096 --> 00:24:16.686 A:middle
+In places to take a UI Float
+
+00:24:16.686 --> 00:24:18.096 A:middle
+Range, you can now just type
+
+00:24:18.206 --> 00:24:20.386 A:middle
+.zero or .infinite and, in fact,
+
+00:24:20.616 --> 00:24:21.656 A:middle
+because they're now properties,
+
+00:24:21.906 --> 00:24:23.226 A:middle
+Xcode can suggest them as
+
+00:24:23.226 --> 00:24:24.866 A:middle
+auto-completions for you in
+
+00:24:24.866 --> 00:24:26.666 A:middle
+places where they make sense.
+
+00:24:27.776 --> 00:24:29.046 A:middle
+Now in addition to constants,
+
+00:24:29.046 --> 00:24:30.316 A:middle
+we've also audited all of our
+
+00:24:30.316 --> 00:24:31.056 A:middle
+global functions.
+
+00:24:31.536 --> 00:24:32.776 A:middle
+So things like UI Edge Inserts
+
+00:24:32.776 --> 00:24:36.206 A:middle
+and UI Image had some global
+
+00:24:36.206 --> 00:24:37.376 A:middle
+functions for operating on
+
+00:24:37.376 --> 00:24:38.076 A:middle
+different types.
+
+00:24:38.556 --> 00:24:40.326 A:middle
+Now in Swift 4.2, these had
+
+00:24:40.326 --> 00:24:42.676 A:middle
+become methods on the
+
+00:24:42.676 --> 00:24:43.796 A:middle
+appropriate type.
+
+00:24:44.576 --> 00:24:46.286 A:middle
+So it's now really easy to inset
+
+00:24:46.326 --> 00:24:48.196 A:middle
+Rect or get png Data from an
+
+00:24:48.196 --> 00:24:50.366 A:middle
+image in a really natural Swift
+
+00:24:50.366 --> 00:24:51.046 A:middle
+feeling way.
+
+00:24:52.516 --> 00:24:57.166 A:middle
+[ Applause ]
+
+00:24:57.666 --> 00:24:59.176 A:middle
+Now, here was one other big
+
+00:24:59.176 --> 00:25:00.286 A:middle
+class of functions that I want
+

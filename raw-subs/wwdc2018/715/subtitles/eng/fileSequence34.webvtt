@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.376 --> 00:34:00.656 A:middle
+And the way that you send it on
+
+00:34:00.656 --> 00:34:01.706 A:middle
+the connection is you simply
+
+00:34:01.706 --> 00:34:03.886 A:middle
+call connection.send and pass
+
+00:34:04.196 --> 00:34:04.636 A:middle
+that data.
+
+00:34:05.556 --> 00:34:06.956 A:middle
+Now if you're used to using
+
+00:34:06.956 --> 00:34:09.496 A:middle
+sockets to send on your
+
+00:34:09.496 --> 00:34:11.775 A:middle
+connections, you either are
+
+00:34:11.775 --> 00:34:13.045 A:middle
+using a blocking socket, in
+
+00:34:13.126 --> 00:34:15.676 A:middle
+which case if you have a hundred
+
+00:34:15.676 --> 00:34:17.436 A:middle
+bytes of data to send, if
+
+00:34:17.436 --> 00:34:18.446 A:middle
+there's not room in the send
+
+00:34:18.446 --> 00:34:20.496 A:middle
+buffer, it'll actually block up
+
+00:34:20.496 --> 00:34:22.226 A:middle
+your thread and wait for the
+
+00:34:22.226 --> 00:34:24.815 A:middle
+network connection to drain out,
+
+00:34:25.166 --> 00:34:27.126 A:middle
+or if you're using a nonblocking
+
+00:34:27.126 --> 00:34:30.585 A:middle
+socket, that send may actually
+
+00:34:30.585 --> 00:34:31.846 A:middle
+not send your complete data.
+
+00:34:31.846 --> 00:34:33.196 A:middle
+It'll say, oh, I only sent 50
+
+00:34:33.196 --> 00:34:33.696 A:middle
+bytes of it.
+
+00:34:33.696 --> 00:34:34.696 A:middle
+Come back some other time to
+
+00:34:34.696 --> 00:34:35.846 A:middle
+send the next 50 bytes.
+
+00:34:36.536 --> 00:34:37.596 A:middle
+This requires you and your
+
+00:34:37.596 --> 00:34:38.795 A:middle
+application to handle a lot of
+
+00:34:38.795 --> 00:34:40.716 A:middle
+state about how much you have
+
+00:34:40.716 --> 00:34:42.565 A:middle
+actually done of sending your
+
+00:34:43.186 --> 00:34:43.315 A:middle
+data.
+
+00:34:44.235 --> 00:34:45.466 A:middle
+So the great thing about a
+
+00:34:45.466 --> 00:34:46.606 A:middle
+network connection is you can
+
+00:34:46.606 --> 00:34:48.056 A:middle
+simply send all of your data at
+
+00:34:48.106 --> 00:34:49.056 A:middle
+once, and you don't have to
+
+00:34:49.056 --> 00:34:51.126 A:middle
+worry about this, and it doesn't
+
+00:34:51.126 --> 00:34:51.826 A:middle
+block anything.
+
+00:34:53.106 --> 00:34:54.286 A:middle
+But then, of course, you have to
+
+00:34:54.286 --> 00:34:55.906 A:middle
+handle what happens if the
+
+00:34:55.906 --> 00:34:57.226 A:middle
+connection is backing up,
+
+00:34:57.226 --> 00:34:58.286 A:middle
+because we don't want to just
+
+00:34:58.456 --> 00:35:00.746 A:middle
+send a ton of data unnecessarily
+

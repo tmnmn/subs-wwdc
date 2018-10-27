@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.376 --> 00:02:02.276 A:middle
+Let's start with our training.
+
+00:02:03.426 --> 00:02:04.216 A:middle
+So, how do we train?
+
+00:02:04.216 --> 00:02:05.446 A:middle
+We use of course, Create ML.
+
+00:02:06.586 --> 00:02:08.235 A:middle
+The first step of course we have
+
+00:02:08.235 --> 00:02:09.596 A:middle
+to do, is we have to take
+
+00:02:09.596 --> 00:02:10.036 A:middle
+pictures.
+
+00:02:11.426 --> 00:02:13.816 A:middle
+Then we put them in folders and
+
+00:02:13.816 --> 00:02:15.426 A:middle
+we use the folder names as our
+
+00:02:15.426 --> 00:02:16.616 A:middle
+classification labels.
+
+00:02:18.876 --> 00:02:20.586 A:middle
+Now, the biggest question that
+
+00:02:20.586 --> 00:02:22.256 A:middle
+everybody has, "How much data do
+
+00:02:22.256 --> 00:02:22.576 A:middle
+I need?"
+
+00:02:23.426 --> 00:02:25.646 A:middle
+The first thing is, well, we
+
+00:02:25.646 --> 00:02:28.126 A:middle
+need a minimum of about 10
+
+00:02:28.456 --> 00:02:31.456 A:middle
+images per category, but that's
+
+00:02:31.456 --> 00:02:32.266 A:middle
+on the low side.
+
+00:02:32.266 --> 00:02:33.026 A:middle
+You definitely want to have
+
+00:02:33.076 --> 00:02:33.426 A:middle
+more.
+
+00:02:33.646 --> 00:02:34.846 A:middle
+The more, the better, actually
+
+00:02:34.846 --> 00:02:36.306 A:middle
+your classifier will perform
+
+00:02:36.306 --> 00:02:36.546 A:middle
+better.
+
+00:02:38.406 --> 00:02:39.966 A:middle
+Another thing to look out for is
+
+00:02:40.076 --> 00:02:41.586 A:middle
+highly imbalanced data sets.
+
+00:02:41.656 --> 00:02:42.546 A:middle
+What do I mean by that?
+
+00:02:43.016 --> 00:02:44.196 A:middle
+When a data set has like
+
+00:02:44.196 --> 00:02:45.656 A:middle
+thousands of images in one
+
+00:02:45.656 --> 00:02:46.976 A:middle
+category, and only ten in the
+
+00:02:46.976 --> 00:02:48.776 A:middle
+other one, this model will not
+
+00:02:48.836 --> 00:02:49.586 A:middle
+train really well.
+
+00:02:49.586 --> 00:02:50.746 A:middle
+So, you want to have like an
+
+00:02:50.746 --> 00:02:52.626 A:middle
+equal distribution between most
+
+00:02:52.626 --> 00:02:53.366 A:middle
+of your categories.
+
+00:02:55.696 --> 00:02:57.496 A:middle
+Another thing that we actually
+
+00:02:57.756 --> 00:02:59.356 A:middle
+introduce, is augmentation.
+

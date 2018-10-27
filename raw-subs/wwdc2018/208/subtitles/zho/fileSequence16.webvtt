@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.926 --> 00:16:02.262 align:middle line:-2
+它向FocusItem
+提供了一个移动暗示
+
+00:16:02.329 --> 00:16:05.265 align:middle line:-2
+包含你可以用于创建
+某个效果的原始值
+
+00:16:05.566 --> 00:16:08.735 align:middle line:-2
+是指能暗示焦点
+即将向哪个方向移动的效果
+
+00:16:09.736 --> 00:16:11.905 align:middle line:-1
+最后你需要提供一个框架
+
+00:16:12.239 --> 00:16:15.008 align:middle line:-1
+正如我之前所说 这个框架必须
+
+00:16:15.075 --> 00:16:18.579 align:middle line:-2
+在包含FocusItemContainer的
+coordinateSpace中表达过
+
+00:16:18.846 --> 00:16:24.718 align:middle line:-2
+比如UIView在它的超级试图的
+coordinateSpace中表达了它的框架
+
+00:16:25.018 --> 00:16:28.055 align:middle line:-1
+那也是它的FocusItemContainer
+
+00:16:29.289 --> 00:16:33.160 align:middle line:-2
+现在让我们具体了解一下
+FocusMovementHint对象
+
+00:16:34.194 --> 00:16:35.929 align:middle line:-1
+移动方向是一个矢量
+
+00:16:36.196 --> 00:16:40.300 align:middle line:-1
+它的值在-1、-1和1、1之间
+
+00:16:40.601 --> 00:16:44.671 align:middle line:-2
+代表焦点的移动
+距某一特定方向有多近
+
+00:16:45.439 --> 00:16:47.541 align:middle line:-1
+这个值被绑定为
+
+00:16:47.608 --> 00:16:51.111 align:middle line:-2
+在Siri Remote触摸表面
+用户的手指所创建的路径
+
+00:16:52.579 --> 00:16:55.349 align:middle line:-1
+说得透彻一点 旋转和转换
+
+00:16:55.616 --> 00:17:00.153 align:middle line:-2
+是你可以用来匹配
+tvOS的嵌入交互暗示的值
+

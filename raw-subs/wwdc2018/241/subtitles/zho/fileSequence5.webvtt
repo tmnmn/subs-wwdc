@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.131 --> 00:05:00.801 align:middle line:-1
+把我的app内容的逻辑结构数据
+
+00:05:00.868 --> 00:05:02.369 align:middle line:-1
+提供给辅助功能运行时间
+
+00:05:02.936 --> 00:05:06.707 align:middle line:-1
+促成辅助技术以不同的方式呈现内容
+
+00:05:07.774 --> 00:05:10.244 align:middle line:-2
+我们需要做同样的事情
+来使拖动具辅助功能
+
+00:05:10.777 --> 00:05:13.113 align:middle line:-2
+为此 我们需要对
+UIAccessibilityDragging非正式协议
+
+00:05:13.180 --> 00:05:15.983 align:middle line:-1
+了解一些更具体的细节
+
+00:05:18.151 --> 00:05:19.520 align:middle line:-1
+首先我们来看看
+
+00:05:19.586 --> 00:05:21.388 align:middle line:-2
+UIAccessibility
+LocationDescriptor类
+
+00:05:23.657 --> 00:05:26.326 align:middle line:-1
+这个类描述一个互动
+
+00:05:26.393 --> 00:05:29.062 align:middle line:-1
+通过指定一个点
+
+00:05:30.464 --> 00:05:31.532 align:middle line:-1
+在视图中
+
+00:05:32.833 --> 00:05:34.067 align:middle line:-1
+并有特定的名称
+
+00:05:34.835 --> 00:05:37.638 align:middle line:0
+因此对于我们的条形图中的一个例子
+
+00:05:38.705 --> 00:05:42.042 align:middle line:0
+拖动条形的位置描述符
+
+00:05:42.509 --> 00:05:43.610 align:middle line:0
+可能看起来像这样
+
+00:05:43.677 --> 00:05:45.679 align:middle line:0
+可以给它命名为
+“Drag Bar Data”
+
+00:05:46.146 --> 00:05:48.482 align:middle line:0
+视图就是条形图视图本身
+
+00:05:48.549 --> 00:05:51.018 align:middle line:0
+这个点则是位于条形内的一个点
+
+00:05:54.087 --> 00:05:54.922 align:middle line:0
+那么 我们如何处理
+
+00:05:54.988 --> 00:05:56.990 align:middle line:0
+UIAccessibility
+LocationDescriptor对象？
+
+00:05:58.058 --> 00:06:00.661 align:middle line:0
+我们将它们赋给前面提到的两个属性
+

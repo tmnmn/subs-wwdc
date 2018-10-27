@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.896 --> 00:21:00.236 A:middle
+these.
+
+00:21:01.286 --> 00:21:03.766 A:middle
+One of them here is OPC Message
+
+00:21:03.766 --> 00:21:04.076 A:middle
+Send.
+
+00:21:04.646 --> 00:21:06.926 A:middle
+This can occur all over your
+
+00:21:06.926 --> 00:21:07.676 A:middle
+tracers if you're writing
+
+00:21:07.676 --> 00:21:08.296 A:middle
+objective C.
+
+00:21:08.606 --> 00:21:09.916 A:middle
+Even if you're writing Swift
+
+00:21:09.916 --> 00:21:10.936 A:middle
+code, as you work your way into
+
+00:21:10.936 --> 00:21:11.966 A:middle
+the system libraries, you'll see
+
+00:21:11.966 --> 00:21:12.296 A:middle
+this.
+
+00:21:12.636 --> 00:21:13.856 A:middle
+You'll often see its counterpart
+
+00:21:13.856 --> 00:21:15.916 A:middle
+functions, OPC, Load Strong,
+
+00:21:15.916 --> 00:21:18.726 A:middle
+Load Weak, etc., Retain, you can
+
+00:21:18.726 --> 00:21:20.936 A:middle
+remove all that content from the
+
+00:21:20.936 --> 00:21:23.826 A:middle
+call tree by context clicking on
+
+00:21:23.866 --> 00:21:28.096 A:middle
+it, and choosing Charge OPC to
+
+00:21:28.096 --> 00:21:28.706 A:middle
+Callers.
+
+00:21:29.406 --> 00:21:30.436 A:middle
+That's going to tell Instruments
+
+00:21:30.466 --> 00:21:31.886 A:middle
+to take all the samples that
+
+00:21:31.886 --> 00:21:33.686 A:middle
+came from lib OPC and remove
+
+00:21:33.686 --> 00:21:35.176 A:middle
+them from the call data, but
+
+00:21:35.176 --> 00:21:36.456 A:middle
+keep the time as attributed to
+
+00:21:36.456 --> 00:21:37.636 A:middle
+the parent frames that called
+
+00:21:37.636 --> 00:21:37.846 A:middle
+them.
+
+00:21:38.176 --> 00:21:39.776 A:middle
+I tend to treat those objective
+
+00:21:39.776 --> 00:21:41.126 A:middle
+C runtime functions as just the
+
+00:21:41.126 --> 00:21:42.266 A:middle
+cost of doing business when
+
+00:21:42.266 --> 00:21:43.306 A:middle
+writing objective C code.
+
+00:21:43.706 --> 00:21:45.196 A:middle
+It's rarely the case that I'm
+
+00:21:45.196 --> 00:21:46.136 A:middle
+going to attempt to optimize
+
+00:21:46.136 --> 00:21:48.396 A:middle
+them out, so I just prefer to
+
+00:21:48.456 --> 00:21:49.596 A:middle
+remove them from the data, so I
+
+00:21:49.596 --> 00:21:50.886 A:middle
+can focus on the things that I'm
+
+00:21:50.886 --> 00:21:51.916 A:middle
+likely to take action on.
+
+00:21:53.176 --> 00:21:55.466 A:middle
+Another very powerful filter
+
+00:21:55.466 --> 00:21:56.866 A:middle
+that you can apply, and one that
+
+00:21:56.866 --> 00:21:59.076 A:middle
+I'm going to use to remove all
+
+00:21:59.076 --> 00:22:00.356 A:middle
+these small samples that
+

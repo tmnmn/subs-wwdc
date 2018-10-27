@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:53.500 --> 00:24:00.040 align:start position:29% line:-2
+iOSのような親子関係に
+縛られることもありません
+
+00:24:03.243 --> 00:24:07.681 align:start position:27% line:-2
+ここでのプログラムとしての
+大きな変化は
+
+00:24:07.781 --> 00:24:12.052 align:start position:29% line:-2
+wantsLayerを
+使わなくてもいいことです
+
+00:24:12.152 --> 00:24:16.890 align:start position:23% line:-2
+macOS 10.14を使えば
+AppKitがしてくれます
+
+00:24:19.493 --> 00:24:21.028 align:start position:27% line:-1
+macOS 10.14を…
+
+00:24:21.228 --> 00:24:25.499 align:start position:43% line:-1
+(拍手)
+
+00:24:25.599 --> 00:24:29.636 align:start position:32% line:-2
+このプロパティを使う
+推奨すらしません
+
+00:24:29.736 --> 00:24:33.574 align:start position:27% line:-2
+“true”にすれば
+ビューのレイヤが決まります
+
+00:24:33.674 --> 00:24:36.310 align:start position:36% line:-2
+最適化しなくとも
+複数のビューが
+
+00:24:36.410 --> 00:24:38.846 align:start position:27% line:-1
+１つのレイヤに表示されます
+
+00:24:38.946 --> 00:24:42.049 align:start position:36% line:-2
+古いOSでは
+必要な手順ですが
+
+00:24:42.149 --> 00:24:44.718 align:start position:32% line:-2
+無視して
+飛ばすこともできます
+
+00:24:45.752 --> 00:24:51.225 align:start position:23% line:-2
+次に CALayerを使う際の
+他のパターンを紹介します
+
+00:24:51.325 --> 00:24:56.997 align:start position:25% line:-2
+簡単なのは CALayerを
+上書きするか
+
+00:24:57.097 --> 00:24:59.333 align:start position:32% line:-2
+デリゲートメソッドを
+実行します
+
+00:24:59.433 --> 00:25:02.836 align:start position:32% line:-2
+NSViewには
+様々な機能があるので
+

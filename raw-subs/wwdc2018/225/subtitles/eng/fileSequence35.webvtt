@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.106 --> 00:35:00.946 A:middle
+really doing can kind of tell us
+
+00:35:00.946 --> 00:35:02.426 A:middle
+a little bit of what's going on
+
+00:35:02.756 --> 00:35:04.466 A:middle
+with our error in our app
+
+00:35:05.476 --> 00:35:06.516 A:middle
+because of the delete on the
+
+00:35:06.516 --> 00:35:07.696 A:middle
+reload on the last one is
+
+00:35:07.696 --> 00:35:09.026 A:middle
+conflicting internally with the
+
+00:35:09.026 --> 00:35:10.376 A:middle
+notion of moving that item,
+
+00:35:10.476 --> 00:35:10.796 A:middle
+okay.
+
+00:35:10.846 --> 00:35:12.006 A:middle
+So we can address this in a
+
+00:35:12.006 --> 00:35:14.396 A:middle
+minute when we get back to code.
+
+00:35:14.396 --> 00:35:15.906 A:middle
+Okay, so I'm not going to go
+
+00:35:15.906 --> 00:35:16.856 A:middle
+through these, but you can
+
+00:35:16.856 --> 00:35:17.866 A:middle
+reason about these later.
+
+00:35:17.866 --> 00:35:18.996 A:middle
+Just put it up here as reference
+
+00:35:18.996 --> 00:35:19.706 A:middle
+that these are the things
+
+00:35:19.706 --> 00:35:21.596 A:middle
+that'll cause CollectionView to
+
+00:35:21.596 --> 00:35:22.346 A:middle
+go bonkers.
+
+00:35:22.726 --> 00:35:23.576 A:middle
+Don't do it.
+
+00:35:23.716 --> 00:35:27.486 A:middle
+And how can we take all this
+
+00:35:27.486 --> 00:35:29.176 A:middle
+knowledge and simplify it,
+
+00:35:29.176 --> 00:35:30.746 A:middle
+distill it in such a way that we
+
+00:35:30.746 --> 00:35:32.456 A:middle
+can always apply our data source
+
+00:35:32.456 --> 00:35:34.016 A:middle
+updates from a given set of
+
+00:35:34.016 --> 00:35:35.026 A:middle
+CollectionView or TableView
+
+00:35:35.026 --> 00:35:36.366 A:middle
+updates and make sure everything
+
+00:35:36.366 --> 00:35:36.826 A:middle
+is in sync.
+
+00:35:37.056 --> 00:35:37.426 A:middle
+All right.
+
+00:35:37.496 --> 00:35:38.796 A:middle
+So these four basic rules.
+
+00:35:39.446 --> 00:35:40.176 A:middle
+So first of all you want to
+
+00:35:40.176 --> 00:35:41.466 A:middle
+decompose those moves and to
+
+00:35:41.466 --> 00:35:42.336 A:middle
+delete and inserts.
+
+00:35:42.556 --> 00:35:44.776 A:middle
+Easy. And then combine all your
+
+00:35:44.776 --> 00:35:45.796 A:middle
+deletes and inserts into two
+
+00:35:45.796 --> 00:35:48.536 A:middle
+separate lists, process the
+
+00:35:48.536 --> 00:35:50.546 A:middle
+deletes first in descending
+
+00:35:50.546 --> 00:35:52.396 A:middle
+order on the index paths, and
+
+00:35:52.396 --> 00:35:54.176 A:middle
+then finally apply those inserts
+
+00:35:54.246 --> 00:35:55.356 A:middle
+in the ascending index path
+
+00:35:55.356 --> 00:35:55.636 A:middle
+order.
+
+00:35:55.776 --> 00:35:59.586 A:middle
+Do this, and you're good to go.
+
+00:35:59.816 --> 00:36:00.826 A:middle
+What about reload data?
+

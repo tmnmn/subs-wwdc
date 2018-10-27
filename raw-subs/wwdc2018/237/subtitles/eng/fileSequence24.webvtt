@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:12.236 --> 00:24:14.556 A:middle
+And now as the last step we
+
+00:24:14.556 --> 00:24:16.446 A:middle
+implement the magic method which
+
+00:24:16.446 --> 00:24:18.156 A:middle
+tells Quick Look which view to
+
+00:24:18.156 --> 00:24:20.176 A:middle
+use as the source for the zoom
+
+00:24:20.176 --> 00:24:22.156 A:middle
+animation when it is about to be
+
+00:24:22.156 --> 00:24:22.756 A:middle
+presented.
+
+00:24:34.366 --> 00:24:36.506 A:middle
+As you can see, we are using the
+
+00:24:36.506 --> 00:24:38.816 A:middle
+image view of the most recently
+
+00:24:38.816 --> 00:24:40.356 A:middle
+tapped cell which we keep a
+
+00:24:40.356 --> 00:24:42.356 A:middle
+reference of and return it to
+
+00:24:42.356 --> 00:24:42.896 A:middle
+Quick Look.
+
+00:24:44.196 --> 00:24:45.646 A:middle
+That's literally all we have to
+
+00:24:45.646 --> 00:24:47.316 A:middle
+do to make the zoom animation
+
+00:24:47.316 --> 00:24:47.666 A:middle
+work.
+
+00:24:48.066 --> 00:24:49.836 A:middle
+Quick Look will call this method
+
+00:24:49.836 --> 00:24:51.626 A:middle
+when it's presented and when
+
+00:24:51.626 --> 00:24:52.416 A:middle
+it's dismissed.
+
+00:24:52.996 --> 00:24:53.916 A:middle
+Let's try it out.
+

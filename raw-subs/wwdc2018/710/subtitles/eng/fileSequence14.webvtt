@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.816 --> 00:14:01.436 A:middle
+currently presented actions so
+
+00:14:01.436 --> 00:14:02.956 A:middle
+that we can extract the comment
+
+00:14:02.956 --> 00:14:04.606 A:middle
+action from there without having
+
+00:14:04.606 --> 00:14:06.056 A:middle
+to create it again.
+
+00:14:07.276 --> 00:14:09.276 A:middle
+Then we create a new array of
+
+00:14:09.276 --> 00:14:10.326 A:middle
+these new actions that we've
+
+00:14:10.326 --> 00:14:13.526 A:middle
+created and simply set that on
+
+00:14:13.606 --> 00:14:14.626 A:middle
+the notification actions
+
+00:14:14.626 --> 00:14:14.936 A:middle
+variable.
+
+00:14:17.456 --> 00:14:19.536 A:middle
+So once we've done this and the
+
+00:14:19.536 --> 00:14:21.656 A:middle
+user takes the like action, then
+
+00:14:21.656 --> 00:14:23.666 A:middle
+the UI will automatically update
+
+00:14:23.786 --> 00:14:26.236 A:middle
+to show them the new action, and
+
+00:14:26.236 --> 00:14:27.416 A:middle
+then the user can then toggle
+
+00:14:27.416 --> 00:14:28.356 A:middle
+between the two actions,
+
+00:14:28.566 --> 00:14:29.796 A:middle
+depending upon how you handle
+
+00:14:29.796 --> 00:14:30.956 A:middle
+that state in your content
+
+00:14:30.956 --> 00:14:31.486 A:middle
+extensions.
+
+00:14:32.596 --> 00:14:34.726 A:middle
+Now, this API can be used in
+
+00:14:34.726 --> 00:14:36.026 A:middle
+multiple other ways as well.
+
+00:14:36.516 --> 00:14:38.696 A:middle
+For example, now you can set
+
+00:14:38.696 --> 00:14:40.446 A:middle
+your actions at the time you're
+
+00:14:40.446 --> 00:14:41.486 A:middle
+setting up your content
+
+00:14:41.486 --> 00:14:43.116 A:middle
+extension view in the did
+
+00:14:43.116 --> 00:14:44.306 A:middle
+receive notification method.
+
+00:14:45.036 --> 00:14:46.306 A:middle
+What this means is your
+
+00:14:46.306 --> 00:14:47.916 A:middle
+notification requests are no
+
+00:14:47.916 --> 00:14:49.826 A:middle
+longer tied to the category to
+
+00:14:49.826 --> 00:14:51.386 A:middle
+define the actions that you want
+
+00:14:51.386 --> 00:14:52.306 A:middle
+to present around these
+
+00:14:52.306 --> 00:14:53.016 A:middle
+notifications.
+
+00:14:53.016 --> 00:14:57.126 A:middle
+You can also now present a
+
+00:14:57.126 --> 00:14:58.956 A:middle
+secondary set of actions by
+
+00:14:58.956 --> 00:15:00.026 A:middle
+replacing the currently
+

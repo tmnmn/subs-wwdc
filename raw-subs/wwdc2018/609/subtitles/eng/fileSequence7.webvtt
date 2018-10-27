@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.236 --> 00:07:01.116 A:middle
+network is producing a very low
+
+00:07:01.116 --> 00:07:03.026 A:middle
+result for the correct Class 7,
+
+00:07:03.656 --> 00:07:05.336 A:middle
+and it's assigning the highest
+
+00:07:05.336 --> 00:07:07.686 A:middle
+probability to a Class 9, which
+
+00:07:07.686 --> 00:07:08.976 A:middle
+is why the network is returning
+
+00:07:08.976 --> 00:07:09.756 A:middle
+9 as the answer.
+
+00:07:11.486 --> 00:07:12.566 A:middle
+So, now we take all of this
+
+00:07:12.566 --> 00:07:14.576 A:middle
+information and we pass it to
+
+00:07:14.776 --> 00:07:15.646 A:middle
+our loss primitive.
+
+00:07:16.316 --> 00:07:20.386 A:middle
+And as I mentioned previously,
+
+00:07:21.476 --> 00:07:23.266 A:middle
+loss measures the difference
+
+00:07:23.476 --> 00:07:25.506 A:middle
+between the network's output and
+
+00:07:25.666 --> 00:07:26.466 A:middle
+the ground truth.
+
+00:07:27.266 --> 00:07:28.836 A:middle
+And the objective of a training
+
+00:07:28.836 --> 00:07:30.216 A:middle
+algorithm is to minimize loss.
+
+00:07:32.306 --> 00:07:33.756 A:middle
+And now, we also need the second
+
+00:07:33.756 --> 00:07:36.106 A:middle
+half of the graph.
+
+00:07:36.616 --> 00:07:37.646 A:middle
+The second half of the graph
+
+00:07:37.876 --> 00:07:40.736 A:middle
+contains gradient primitives for
+
+00:07:40.736 --> 00:07:41.876 A:middle
+each responding forward
+
+00:07:41.876 --> 00:07:42.226 A:middle
+primitive.
+
+00:07:43.286 --> 00:07:45.456 A:middle
+The gradient primitives compute
+
+00:07:45.456 --> 00:07:47.166 A:middle
+gradients that are needed to
+
+00:07:47.166 --> 00:07:48.306 A:middle
+update weights.
+
+00:07:49.136 --> 00:07:52.366 A:middle
+So, the loss primitive computes
+
+00:07:52.786 --> 00:07:54.856 A:middle
+the first gradient, which is a
+
+00:07:54.856 --> 00:07:56.146 A:middle
+derivative of a chosen loss
+
+00:07:56.146 --> 00:07:57.376 A:middle
+function with respect to its
+
+00:07:57.376 --> 00:07:57.756 A:middle
+inputs.
+
+00:07:58.286 --> 00:07:59.646 A:middle
+And then we take this gradient
+

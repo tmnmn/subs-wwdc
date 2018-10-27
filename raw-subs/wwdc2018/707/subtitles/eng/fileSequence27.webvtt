@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.916 --> 00:27:00.556 A:middle
+the main queue.
+
+00:27:00.796 --> 00:27:02.606 A:middle
+And if the session is running,
+
+00:27:03.076 --> 00:27:04.256 A:middle
+I'm going to start the timer.
+
+00:27:04.966 --> 00:27:06.116 A:middle
+And if it's not, I'm going to
+
+00:27:06.116 --> 00:27:07.336 A:middle
+call Stop on the timer.
+
+00:27:08.696 --> 00:27:09.966 A:middle
+And that's all you need to do to
+
+00:27:09.966 --> 00:27:12.176 A:middle
+get the timer tracking the
+
+00:27:12.176 --> 00:27:13.786 A:middle
+elapsed time.
+
+00:27:13.986 --> 00:27:15.826 A:middle
+Next, let's make sure that our
+
+00:27:15.826 --> 00:27:17.566 A:middle
+metrics displayed in the UI are
+
+00:27:18.016 --> 00:27:19.036 A:middle
+also accurate.
+
+00:27:19.986 --> 00:27:22.246 A:middle
+So every time new samples are
+
+00:27:22.246 --> 00:27:24.976 A:middle
+collected by the builder, this
+
+00:27:25.016 --> 00:27:26.746 A:middle
+method here will be called.
+
+00:27:27.506 --> 00:27:29.366 A:middle
+And so here, I'm just going to
+
+00:27:29.366 --> 00:27:31.016 A:middle
+go and iterate over the
+
+00:27:31.046 --> 00:27:31.946 A:middle
+collectedTypes.
+
+00:27:36.396 --> 00:27:39.016 A:middle
+And, in my case, all of the data
+
+00:27:39.016 --> 00:27:41.006 A:middle
+that I'm interested in is
+
+00:27:41.236 --> 00:27:42.336 A:middle
+quantity samples.
+
+00:27:42.416 --> 00:27:44.236 A:middle
+So I'm going to make sure that I
+
+00:27:44.236 --> 00:27:45.476 A:middle
+only handle those.
+
+00:27:46.006 --> 00:27:49.276 A:middle
+And from there, we can make use
+
+00:27:49.276 --> 00:27:53.226 A:middle
+of the new builder's method,
+
+00:27:53.636 --> 00:27:55.886 A:middle
+builder.statistics, for quantity
+
+00:27:55.886 --> 00:27:57.566 A:middle
+types, which will give me an
+
+00:27:57.566 --> 00:27:59.856 A:middle
+HKStatistics object that
+
+00:27:59.886 --> 00:28:01.336 A:middle
+contains information like
+

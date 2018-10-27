@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.516 --> 00:26:03.126 A:middle
+[ Applause ]
+
+00:26:03.626 --> 00:26:03.986 A:middle
+:15
+
+00:26:04.076 --> 00:26:04.886 A:middle
+&gt;&gt; Thank you, Chad.
+
+00:26:09.836 --> 00:26:12.576 A:middle
+So Trailblazer app is an iOS app
+
+00:26:12.706 --> 00:26:14.676 A:middle
+that displays lists of popular
+
+00:26:14.796 --> 00:26:16.176 A:middle
+hiking trails near you.
+
+00:26:16.856 --> 00:26:19.686 A:middle
+As an UI component, UI table
+
+00:26:19.686 --> 00:26:19.976 A:middle
+View.
+
+00:26:21.006 --> 00:26:22.766 A:middle
+Each cell loads image for a
+
+00:26:22.766 --> 00:26:24.156 A:middle
+trail asynchronously.
+
+00:26:25.276 --> 00:26:26.936 A:middle
+To prevent glitches and as an
+
+00:26:26.936 --> 00:26:28.876 A:middle
+optimization when cell is
+
+00:26:28.876 --> 00:26:30.376 A:middle
+reused, we cancel the download.
+
+00:26:31.556 --> 00:26:33.276 A:middle
+To visualize my flow of
+
+00:26:33.276 --> 00:26:35.546 A:middle
+downloads, I wrap every download
+
+00:26:35.586 --> 00:26:36.356 A:middle
+in os signpost call.
+
+00:26:36.356 --> 00:26:36.936 A:middle
+Let's take a look at it.
+
+00:26:41.536 --> 00:26:42.556 A:middle
+When my [inaudible] cell is
+
+00:26:42.556 --> 00:26:44.796 A:middle
+displayed, start Image download
+
+00:26:44.796 --> 00:26:45.556 A:middle
+method is called.
+
+00:26:46.046 --> 00:26:48.456 A:middle
+We create downloader signpost
+
+00:26:48.456 --> 00:26:50.946 A:middle
+ID, which takes os log handle
+
+00:26:51.026 --> 00:26:52.466 A:middle
+and downloader object.
+
+00:26:53.306 --> 00:26:55.516 A:middle
+We then grab address of UI table
+
+00:26:55.516 --> 00:26:59.366 A:middle
+View cell and call os signpost
+
+00:26:59.366 --> 00:27:03.016 A:middle
+begin with os log which is
+

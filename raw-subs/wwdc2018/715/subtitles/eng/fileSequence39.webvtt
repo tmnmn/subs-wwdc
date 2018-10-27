@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.126 --> 00:39:00.156 A:middle
+for your header, read out the
+
+00:39:00.156 --> 00:39:02.126 A:middle
+length, and then let's say you
+
+00:39:02.126 --> 00:39:04.526 A:middle
+want to read a couple megabytes,
+
+00:39:04.646 --> 00:39:05.906 A:middle
+and you essentially do the same
+
+00:39:05.906 --> 00:39:08.186 A:middle
+thing to read your body, and you
+
+00:39:08.186 --> 00:39:09.546 A:middle
+just pass, well I want to read
+
+00:39:09.546 --> 00:39:11.326 A:middle
+exactly this amount for my
+
+00:39:11.326 --> 00:39:12.486 A:middle
+connection, and this allows you
+
+00:39:12.486 --> 00:39:13.926 A:middle
+to not go back and forth between
+
+00:39:13.926 --> 00:39:15.576 A:middle
+the stack and your app but just
+
+00:39:15.576 --> 00:39:16.976 A:middle
+have a single callback of when
+
+00:39:17.056 --> 00:39:18.516 A:middle
+all of your data is ready to go.
+
+00:39:19.616 --> 00:39:21.216 A:middle
+So it's a really great way to
+
+00:39:21.256 --> 00:39:22.686 A:middle
+optimize the interactions.
+
+00:39:23.366 --> 00:39:25.856 A:middle
+Beyond sending and receiving,
+
+00:39:26.366 --> 00:39:27.776 A:middle
+there are a couple of advanced
+
+00:39:27.776 --> 00:39:28.696 A:middle
+options that I'd like to
+
+00:39:28.696 --> 00:39:30.916 A:middle
+highlight in your network
+
+00:39:30.916 --> 00:39:32.316 A:middle
+parameters that allow you to
+
+00:39:32.346 --> 00:39:34.216 A:middle
+configure your connection to get
+
+00:39:34.616 --> 00:39:37.056 A:middle
+very good startup time as well
+
+00:39:37.056 --> 00:39:38.876 A:middle
+as behavior on the network when
+
+00:39:38.876 --> 00:39:39.656 A:middle
+you're actually sending and
+
+00:39:39.656 --> 00:39:40.046 A:middle
+receiving.
+
+00:39:41.226 --> 00:39:42.746 A:middle
+So the first one is one that
+
+00:39:42.746 --> 00:39:43.986 A:middle
+we've talked about many times
+
+00:39:43.986 --> 00:39:46.236 A:middle
+here at WWDC, which is ECN.
+
+00:39:46.306 --> 00:39:48.136 A:middle
+This is explicit congestion
+
+00:39:48.136 --> 00:39:48.836 A:middle
+notification.
+
+00:39:50.086 --> 00:39:52.966 A:middle
+It gives you a way to smooth out
+
+00:39:52.966 --> 00:39:54.986 A:middle
+your connection by having the
+
+00:39:54.986 --> 00:39:57.856 A:middle
+network let the end host know
+
+00:39:58.176 --> 00:39:59.226 A:middle
+when there's congestion on the
+
+00:39:59.226 --> 00:40:00.796 A:middle
+network so we can pace things
+

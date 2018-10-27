@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.336 --> 00:16:01.616 A:middle
+So I want to dig into what
+
+00:16:01.616 --> 00:16:03.166 A:middle
+happens when you call start.
+
+00:16:03.166 --> 00:16:04.216 A:middle
+What's actually going on?
+
+00:16:04.976 --> 00:16:06.326 A:middle
+So here's a little state
+
+00:16:06.326 --> 00:16:08.356 A:middle
+machine, the innards of the
+
+00:16:08.356 --> 00:16:09.016 A:middle
+NWConnection.
+
+00:16:09.016 --> 00:16:10.976 A:middle
+When we begin at the setup state
+
+00:16:10.976 --> 00:16:13.686 A:middle
+and we call start, we move into
+
+00:16:13.686 --> 00:16:15.146 A:middle
+the preparing state.
+
+00:16:16.416 --> 00:16:19.116 A:middle
+So the preparing state does a
+
+00:16:19.116 --> 00:16:20.566 A:middle
+lot more than just calling
+
+00:16:20.776 --> 00:16:22.626 A:middle
+connect on a TCP socket.
+
+00:16:23.696 --> 00:16:25.516 A:middle
+For TCP socket, that would just
+
+00:16:25.516 --> 00:16:27.896 A:middle
+send out a SYN packet across to
+
+00:16:27.896 --> 00:16:29.066 A:middle
+the server that you're trying to
+
+00:16:29.066 --> 00:16:29.456 A:middle
+reach.
+
+00:16:30.876 --> 00:16:32.356 A:middle
+But when you call start on an
+
+00:16:32.356 --> 00:16:33.456 A:middle
+NWConnection, it actually
+
+00:16:33.456 --> 00:16:34.766 A:middle
+handles all of the things that
+
+00:16:34.766 --> 00:16:36.226 A:middle
+Josh was mentioning earlier.
+
+00:16:37.206 --> 00:16:38.786 A:middle
+It evaluates the network you're
+
+00:16:38.786 --> 00:16:41.106 A:middle
+on and tries to make the fastest
+
+00:16:41.106 --> 00:16:42.296 A:middle
+connection possible for you.
+
+00:16:42.296 --> 00:16:44.086 A:middle
+I want to dig into that a little
+
+00:16:44.086 --> 00:16:44.446 A:middle
+bit more.
+
+00:16:45.086 --> 00:16:46.896 A:middle
+So this is what we call Smart
+
+00:16:47.146 --> 00:16:48.296 A:middle
+Connection Establishment.
+
+00:16:48.826 --> 00:16:51.286 A:middle
+So the very first thing that we
+
+00:16:51.286 --> 00:16:54.086 A:middle
+do when you call start is that
+
+00:16:54.086 --> 00:16:56.056 A:middle
+we take your endpoint, and then
+
+00:16:56.056 --> 00:16:57.396 A:middle
+we evaluate what are all the
+
+00:16:57.396 --> 00:16:58.306 A:middle
+networks that are currently
+
+00:16:58.306 --> 00:16:58.966 A:middle
+available to me.
+
+00:16:59.876 --> 00:17:01.866 A:middle
+In this case, we have WiFi and
+

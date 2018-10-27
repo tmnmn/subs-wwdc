@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:58.586 --> 00:44:00.486 A:middle
+the grouping and you to assign a
+
+00:44:00.486 --> 00:44:01.206 A:middle
+name to it.
+
+00:44:01.206 --> 00:44:02.396 A:middle
+So you can deal with it, you can
+
+00:44:02.396 --> 00:44:03.456 A:middle
+have a little bit of control and
+
+00:44:03.456 --> 00:44:04.916 A:middle
+sort of organize things that
+
+00:44:04.916 --> 00:44:05.146 A:middle
+way.
+
+00:44:06.166 --> 00:44:07.866 A:middle
+But you can still access the
+
+00:44:07.866 --> 00:44:09.246 A:middle
+images contained within using
+
+00:44:09.246 --> 00:44:11.216 A:middle
+the standard UIImage and NSImage
+
+00:44:11.546 --> 00:44:13.586 A:middle
+APIs, and the names within that.
+
+00:44:13.996 --> 00:44:15.706 A:middle
+In addition, there is an
+
+00:44:15.706 --> 00:44:16.916 A:middle
+intriguing way that you can use
+
+00:44:16.916 --> 00:44:18.346 A:middle
+SpriteKit framework even though
+
+00:44:18.346 --> 00:44:19.606 A:middle
+you're not building a SpriteKit
+
+00:44:19.606 --> 00:44:21.786 A:middle
+application by taking advantage
+
+00:44:21.786 --> 00:44:23.416 A:middle
+of the SKTextureAtlas preload
+
+00:44:23.416 --> 00:44:25.416 A:middle
+texture atlas named API if you
+
+00:44:25.416 --> 00:44:27.086 A:middle
+have a case where you have a
+
+00:44:27.086 --> 00:44:28.436 A:middle
+large number of images that have
+
+00:44:28.436 --> 00:44:30.786 A:middle
+to be loaded fairly quickly and
+
+00:44:30.786 --> 00:44:31.906 A:middle
+have to be used right away.
+
+00:44:32.246 --> 00:44:33.646 A:middle
+So what this API will do is
+
+00:44:33.646 --> 00:44:35.656 A:middle
+it'll preload or load from disk,
+
+00:44:35.696 --> 00:44:38.636 A:middle
+decode, get ready and warmed up
+
+00:44:38.696 --> 00:44:40.426 A:middle
+in memory asynchronously with a
+
+00:44:40.426 --> 00:44:43.286 A:middle
+callback completion handler for
+
+00:44:43.286 --> 00:44:44.546 A:middle
+a set of named atlases.
+
+00:44:44.816 --> 00:44:46.796 A:middle
+So this is great, but I will
+
+00:44:46.796 --> 00:44:48.606 A:middle
+caution you, do not use this API
+
+00:44:48.666 --> 00:44:51.586 A:middle
+indiscriminately because it does
+
+00:44:51.586 --> 00:44:52.916 A:middle
+exactly what it says it's going
+
+00:44:52.916 --> 00:44:55.376 A:middle
+to do and that means it's going
+
+00:44:55.376 --> 00:44:57.436 A:middle
+to potentially consume a large
+
+00:44:57.436 --> 00:45:00.016 A:middle
+amount of I/O and memory to load
+

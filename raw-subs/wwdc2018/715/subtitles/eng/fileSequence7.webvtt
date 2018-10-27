@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.446 --> 00:07:01.256 A:middle
+things people love about sockets
+
+00:07:01.256 --> 00:07:02.446 A:middle
+is that it gives them very
+
+00:07:02.446 --> 00:07:03.976 A:middle
+fine-grain control over just
+
+00:07:03.976 --> 00:07:05.456 A:middle
+about everything, and they're
+
+00:07:05.456 --> 00:07:06.926 A:middle
+really loathe to give that up.
+
+00:07:07.166 --> 00:07:08.156 A:middle
+So as we developed
+
+00:07:08.156 --> 00:07:09.386 A:middle
+Network.framework, we wanted to
+
+00:07:09.386 --> 00:07:10.866 A:middle
+make sure that it did the right
+
+00:07:10.926 --> 00:07:12.536 A:middle
+thing by default in the way that
+
+00:07:12.536 --> 00:07:14.296 A:middle
+sockets doesn't, but it gave you
+
+00:07:14.296 --> 00:07:16.186 A:middle
+all the knobs that sockets does.
+
+00:07:16.506 --> 00:07:17.236 A:middle
+And it's kind of got this
+
+00:07:17.276 --> 00:07:19.936 A:middle
+gradient, so the more knobs you
+
+00:07:19.936 --> 00:07:20.976 A:middle
+turn, the more complex it
+
+00:07:21.016 --> 00:07:21.546 A:middle
+becomes.
+
+00:07:22.016 --> 00:07:23.266 A:middle
+It gives you all the power you
+
+00:07:23.266 --> 00:07:24.836 A:middle
+need, but you don't have to pay
+
+00:07:24.866 --> 00:07:26.146 A:middle
+for the complexity unless you
+
+00:07:26.146 --> 00:07:29.506 A:middle
+actually need some of it.
+
+00:07:30.406 --> 00:07:32.426 A:middle
+Network.framework has incredibly
+
+00:07:32.426 --> 00:07:34.016 A:middle
+smart connection establishment.
+
+00:07:34.856 --> 00:07:36.936 A:middle
+It handles the dual stack cases.
+
+00:07:36.936 --> 00:07:38.916 A:middle
+It handles IPv6 only networks.
+
+00:07:38.916 --> 00:07:39.726 A:middle
+It handles PAC.
+
+00:07:39.876 --> 00:07:40.976 A:middle
+It handles proxies.
+
+00:07:41.676 --> 00:07:43.936 A:middle
+It will help you connect on
+
+00:07:43.936 --> 00:07:45.386 A:middle
+networks that are otherwise very
+
+00:07:45.386 --> 00:07:46.206 A:middle
+difficult to deal with.
+
+00:07:47.116 --> 00:07:48.656 A:middle
+It has an incredibly optimized
+
+00:07:48.656 --> 00:07:50.706 A:middle
+data transfer path that lets you
+
+00:07:50.706 --> 00:07:52.146 A:middle
+go way beyond the performance of
+
+00:07:52.146 --> 00:07:52.906 A:middle
+anything you can do with
+
+00:07:52.906 --> 00:07:54.086 A:middle
+sockets, and Tommy will cover
+
+00:07:54.086 --> 00:07:54.746 A:middle
+that in a little bit.
+
+00:07:55.906 --> 00:07:57.326 A:middle
+It has support for built-in
+
+00:07:57.326 --> 00:07:57.856 A:middle
+security.
+
+00:07:58.326 --> 00:08:00.796 A:middle
+It supports TLS and DTLS by
+

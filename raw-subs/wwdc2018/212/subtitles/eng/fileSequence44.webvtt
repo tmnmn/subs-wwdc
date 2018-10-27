@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:58.476 --> 00:44:00.386 A:middle
+is that even though it can tell
+
+00:44:00.386 --> 00:44:02.916 A:middle
+us where we are, and it can tell
+
+00:44:02.916 --> 00:44:05.236 A:middle
+us where Bigfoot is, it doesn't
+
+00:44:05.236 --> 00:44:06.416 A:middle
+yet tell us how to get there.
+
+00:44:07.536 --> 00:44:08.986 A:middle
+So, I'm going to add some
+
+00:44:08.986 --> 00:44:11.876 A:middle
+directions from All Current
+
+00:44:11.876 --> 00:44:13.086 A:middle
+Location, which is the McEnery
+
+00:44:13.086 --> 00:44:15.686 A:middle
+Convention Center, to these
+
+00:44:15.686 --> 00:44:17.366 A:middle
+Bigfoot locations.
+
+00:44:17.596 --> 00:44:19.276 A:middle
+I will use the MapKit JS
+
+00:44:19.276 --> 00:44:20.956 A:middle
+direction services to do that.
+
+00:44:21.396 --> 00:44:22.816 A:middle
+I will use polyline overlays to
+
+00:44:22.816 --> 00:44:23.296 A:middle
+draw them.
+
+00:44:24.206 --> 00:44:25.666 A:middle
+But the first thing I need to do
+
+00:44:25.666 --> 00:44:28.206 A:middle
+is I need to make sure that the
+
+00:44:28.206 --> 00:44:30.816 A:middle
+user - I need to find a way so
+
+00:44:30.816 --> 00:44:32.116 A:middle
+that the user can tell me which
+
+00:44:32.116 --> 00:44:33.306 A:middle
+one of these sightings they want
+
+00:44:33.456 --> 00:44:33.886 A:middle
+to see.
+
+00:44:34.296 --> 00:44:37.326 A:middle
+So, well, this one is selected,
+
+00:44:37.326 --> 00:44:38.676 A:middle
+so that's probably the one that
+
+00:44:38.676 --> 00:44:40.056 A:middle
+the user wants to see, right?
+
+00:44:40.426 --> 00:44:42.156 A:middle
+So, this is what we will do.
+
+00:44:42.516 --> 00:44:44.446 A:middle
+We will use the Select Event
+
+00:44:44.446 --> 00:44:46.826 A:middle
+Listener from the map to listen
+
+00:44:46.826 --> 00:44:48.496 A:middle
+to annotation selections from
+
+00:44:48.496 --> 00:44:49.256 A:middle
+the user.
+
+00:44:49.786 --> 00:44:50.816 A:middle
+And when an annotation is
+
+00:44:50.816 --> 00:44:52.326 A:middle
+selected, that means they might
+
+00:44:52.326 --> 00:44:54.036 A:middle
+be interested in knowing how to
+
+00:44:54.036 --> 00:44:56.226 A:middle
+see that specific location.
+
+00:44:56.556 --> 00:44:59.326 A:middle
+So, we will request a route and
+
+00:44:59.326 --> 00:45:01.226 A:middle
+draw it so that they can see how
+

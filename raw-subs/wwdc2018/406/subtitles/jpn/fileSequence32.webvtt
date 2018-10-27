@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.553 --> 00:32:03.090 align:start position:4% line:-2
+明示的に コレクションと
+BidirectionalCollectionと書け
+
+00:32:03.290 --> 00:32:06.326 align:start position:32% line:-2
+ここに全準拠があると
+アサートできます
+
+00:32:06.427 --> 00:32:10.898 align:start position:29% line:-2
+または文体を考慮し
+異なる準拠を分けられます
+
+00:32:12.399 --> 00:32:17.137 align:start position:16% line:-2
+今 Range型はパワフルで
+CountableRangeと同等です
+
+00:32:17.237 --> 00:32:20.374 align:start position:23% line:-2
+CountableRangeは
+消せますが―
+
+00:32:20.607 --> 00:32:25.846 align:start position:18% line:-2
+実際 CountableRangeを
+使うコードは多いです
+
+00:32:25.946 --> 00:32:29.850 align:start position:29% line:-2
+汎用的型エイリアスとして
+残しましょう
+
+00:32:30.918 --> 00:32:32.319 align:start position:39% line:-1
+良い解決です
+
+00:32:32.419 --> 00:32:37.858 align:start position:23% line:-2
+これで 要件を加え
+Rangeを可算可能にできます
+
+00:32:37.958 --> 00:32:41.828 align:start position:30% line:-2
+コレクションへの変更に
+必要な要件ですが
+
+00:32:41.929 --> 00:32:45.099 align:start position:21% line:-1
+単に土台のRange型の別名です
+
+00:32:46.733 --> 00:32:50.904 align:start position:27% line:-2
+繰り返しますが
+ソース互換性に良い解決です
+
+00:32:51.004 --> 00:32:55.475 align:start position:5% line:-2
+RandomAccessCollectionとして
+追加機能を持つRangeに
+
+00:32:55.576 --> 00:32:59.546 align:start position:25% line:-1
+命名することも 良いことです
+
+00:32:59.813 --> 00:33:02.883 align:start position:29% line:-2
+実際 他コードの
+クリーンアップに使えます
+

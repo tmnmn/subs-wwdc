@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.716 --> 00:46:00.056 A:middle
+type
+
+00:46:00.226 --> 00:46:02.096 A:middle
+ARWorldTrackingConfiguration by
+
+00:46:02.096 --> 00:46:03.776 A:middle
+specifying the detection objects
+
+00:46:03.806 --> 00:46:04.196 A:middle
+property.
+
+00:46:04.706 --> 00:46:07.166 A:middle
+When I'm done setting up my
+
+00:46:07.236 --> 00:46:09.706 A:middle
+configuration, again I run my
+
+00:46:09.786 --> 00:46:10.346 A:middle
+session with it.
+
+00:46:11.406 --> 00:46:12.696 A:middle
+And just as image detection,
+
+00:46:13.326 --> 00:46:14.466 A:middle
+once the AR session is running,
+
+00:46:14.466 --> 00:46:15.496 A:middle
+I get an ARFrame with every
+
+00:46:15.496 --> 00:46:18.936 A:middle
+update, and in this case, once
+
+00:46:18.936 --> 00:46:20.386 A:middle
+an object has been detected in
+
+00:46:20.386 --> 00:46:22.606 A:middle
+the scene, I will find an AR
+
+00:46:23.106 --> 00:46:25.966 A:middle
+object anchor as part of my AR
+
+00:46:25.966 --> 00:46:26.336 A:middle
+frame.
+
+00:46:28.926 --> 00:46:30.866 A:middle
+Such an AR object is a simple
+
+00:46:30.866 --> 00:46:32.506 A:middle
+subclass of AR anchor.
+
+00:46:33.156 --> 00:46:34.336 A:middle
+So it comes with a transform,
+
+00:46:34.336 --> 00:46:35.606 A:middle
+which represents its position
+
+00:46:35.796 --> 00:46:37.016 A:middle
+and orientation and six degrees
+
+00:46:37.016 --> 00:46:39.656 A:middle
+of freedom as well as it tells
+
+00:46:39.656 --> 00:46:41.706 A:middle
+me which objects has been
+
+00:46:41.706 --> 00:46:43.056 A:middle
+detected by giving me a
+
+00:46:43.056 --> 00:46:44.296 A:middle
+reference to the AR reference
+
+00:46:44.296 --> 00:46:44.676 A:middle
+object.
+
+00:46:46.326 --> 00:46:49.596 A:middle
+And implementing this can be
+
+00:46:49.596 --> 00:46:51.866 A:middle
+done with three simple lines of
+
+00:46:51.936 --> 00:46:52.186 A:middle
+code.
+
+00:46:52.976 --> 00:46:54.286 A:middle
+I create a configuration of type
+
+00:46:54.486 --> 00:46:56.876 A:middle
+ARWorldTrackingConfiguration and
+
+00:46:56.876 --> 00:46:59.116 A:middle
+specify a set of objects I'd
+
+00:46:59.116 --> 00:46:59.756 A:middle
+like to detect.
+

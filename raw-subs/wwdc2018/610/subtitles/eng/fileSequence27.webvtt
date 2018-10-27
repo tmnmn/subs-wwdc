@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.876 --> 00:27:01.496 A:middle
+mandatory for your experience,
+
+00:27:01.786 --> 00:27:04.006 A:middle
+you should again guide the user
+
+00:27:04.426 --> 00:27:06.006 A:middle
+to move the camera with enough
+
+00:27:06.106 --> 00:27:08.956 A:middle
+translation to ensure a dense
+
+00:27:08.956 --> 00:27:11.616 A:middle
+reconstruction based on the
+
+00:27:11.616 --> 00:27:13.396 A:middle
+parallax, and also, enough
+
+00:27:13.396 --> 00:27:15.086 A:middle
+visual complexity in the scene.
+
+00:27:15.976 --> 00:27:18.096 A:middle
+Again, for the reconstruction, a
+
+00:27:18.096 --> 00:27:20.416 A:middle
+rotation only is not enough.
+
+00:27:20.946 --> 00:27:23.856 A:middle
+Now, how can you enable the
+
+00:27:23.856 --> 00:27:24.796 A:middle
+Plane Detection?
+
+00:27:25.786 --> 00:27:26.966 A:middle
+It's, again, very simple.
+
+00:27:27.116 --> 00:27:28.676 A:middle
+As the Plane Detection reuses
+
+00:27:28.676 --> 00:27:30.286 A:middle
+the 3D map from the World
+
+00:27:30.286 --> 00:27:32.486 A:middle
+Tracking, it can be configured
+
+00:27:32.646 --> 00:27:33.316 A:middle
+by using the
+
+00:27:33.316 --> 00:27:35.126 A:middle
+ARWorldTrackingConfiguration.
+
+00:27:35.646 --> 00:27:38.346 A:middle
+Then, the property
+
+00:27:38.346 --> 00:27:40.706 A:middle
+planeDetection just needs to be
+
+00:27:40.706 --> 00:27:41.986 A:middle
+set to either horizontal,
+
+00:27:41.986 --> 00:27:43.626 A:middle
+vertical, or like in this case,
+
+00:27:43.706 --> 00:27:43.926 A:middle
+both.
+
+00:27:45.116 --> 00:27:47.446 A:middle
+And then, just call your
+
+00:27:47.446 --> 00:27:49.046 A:middle
+ARSession with this
+
+00:27:49.106 --> 00:27:50.226 A:middle
+configuration.
+
+00:27:50.476 --> 00:27:52.146 A:middle
+And the detection of the planes
+
+00:27:52.146 --> 00:27:52.856 A:middle
+will be started.
+
+00:27:53.526 --> 00:27:56.086 A:middle
+Now, how are those, the results
+
+00:27:56.086 --> 00:27:57.686 A:middle
+of the detected planes returned
+
+00:27:57.686 --> 00:27:58.576 A:middle
+to you?
+

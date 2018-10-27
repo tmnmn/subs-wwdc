@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.366 --> 00:36:01.686 A:middle
+can combine os signpost data
+
+00:36:01.746 --> 00:36:03.396 A:middle
+with custom instruments.
+
+00:36:03.776 --> 00:36:04.806 A:middle
+And we think that you'll be able
+
+00:36:04.806 --> 00:36:07.566 A:middle
+to take this, I think you'll be
+
+00:36:07.566 --> 00:36:08.666 A:middle
+able to take these two, this
+
+00:36:08.666 --> 00:36:10.106 A:middle
+combination pretty far.
+
+00:36:10.886 --> 00:36:13.846 A:middle
+Now, we can talk about some of
+
+00:36:13.846 --> 00:36:15.026 A:middle
+the advanced topics,
+
+00:36:15.056 --> 00:36:16.546 A:middle
+specifically how you create and
+
+00:36:16.546 --> 00:36:18.286 A:middle
+define modelers.
+
+00:36:19.366 --> 00:36:20.466 A:middle
+Now a modeler conceptually is
+
+00:36:20.466 --> 00:36:21.296 A:middle
+very simple machine.
+
+00:36:21.296 --> 00:36:23.156 A:middle
+It takes a series of inputs.
+
+00:36:23.266 --> 00:36:24.256 A:middle
+It does some reasoning over
+
+00:36:24.256 --> 00:36:25.806 A:middle
+those inputs and produces
+
+00:36:25.806 --> 00:36:26.376 A:middle
+outputs.
+
+00:36:27.326 --> 00:36:28.506 A:middle
+The inputs of the modelers are
+
+00:36:28.506 --> 00:36:30.246 A:middle
+always perfectly time ordered
+
+00:36:30.736 --> 00:36:32.116 A:middle
+and so if you request several
+
+00:36:32.116 --> 00:36:33.506 A:middle
+different input tables, those
+
+00:36:33.506 --> 00:36:34.756 A:middle
+tables are first time ordered
+
+00:36:34.756 --> 00:36:36.246 A:middle
+and then merged into a
+
+00:36:36.246 --> 00:36:38.646 A:middle
+time-ordered queue, which feeds
+
+00:36:38.646 --> 00:36:39.406 A:middle
+the working memory.
+
+00:36:39.916 --> 00:36:41.356 A:middle
+So as we pull these events off
+
+00:36:41.356 --> 00:36:42.476 A:middle
+one by one, they're entered into
+
+00:36:42.536 --> 00:36:43.776 A:middle
+what's called the working memory
+
+00:36:43.776 --> 00:36:44.356 A:middle
+of the modeler.
+
+00:36:45.236 --> 00:36:47.886 A:middle
+And as the modeler sees the
+
+00:36:47.886 --> 00:36:49.306 A:middle
+evolution of this working
+
+00:36:49.306 --> 00:36:51.006 A:middle
+memory, it can draw inference.
+
+00:36:51.226 --> 00:36:52.766 A:middle
+And when it sees a pattern that
+
+00:36:52.766 --> 00:36:54.086 A:middle
+it wants to produce an output
+
+00:36:54.086 --> 00:36:56.206 A:middle
+for, it simply writes it to its
+
+00:36:56.206 --> 00:36:57.406 A:middle
+outbound output tables.
+
+00:36:58.166 --> 00:37:00.256 A:middle
+Let's walk over like a really
+

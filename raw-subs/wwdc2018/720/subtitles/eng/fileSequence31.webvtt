@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.166 --> 00:31:01.886 A:middle
+And, if this is the case, you
+
+00:31:01.886 --> 00:31:03.876 A:middle
+should do what we did previously
+
+00:31:03.906 --> 00:31:05.466 A:middle
+and instantiate a
+
+00:31:05.796 --> 00:31:07.426 A:middle
+PKAddPassesViewController and
+
+00:31:07.426 --> 00:31:07.906 A:middle
+present it.
+
+00:31:10.256 --> 00:31:11.436 A:middle
+Now, let's go up to the
+
+00:31:11.436 --> 00:31:12.206 A:middle
+viewDidLoad method.
+
+00:31:12.206 --> 00:31:14.486 A:middle
+As we saw, there was a QR code
+
+00:31:14.486 --> 00:31:14.616 A:middle
+here.
+
+00:31:14.616 --> 00:31:18.086 A:middle
+Again, if your pass has a QR
+
+00:31:18.086 --> 00:31:19.836 A:middle
+code on the front, there's no
+
+00:31:19.836 --> 00:31:21.136 A:middle
+need to have it in your app.
+
+00:31:21.136 --> 00:31:22.316 A:middle
+And, since our pass is now
+
+00:31:22.396 --> 00:31:24.126 A:middle
+NFC-capable, we don't need this
+
+00:31:24.126 --> 00:31:24.956 A:middle
+view anymore.
+
+00:31:25.146 --> 00:31:26.536 A:middle
+So, let's go ahead and remove
+
+00:31:26.536 --> 00:31:26.976 A:middle
+these lines of code.
+
+00:31:31.316 --> 00:31:36.416 A:middle
+Here is the PKAddPassButton, or
+
+00:31:36.416 --> 00:31:38.856 A:middle
+our Add to Wallet button.
+
+00:31:39.176 --> 00:31:40.726 A:middle
+In order to-- another way to
+
+00:31:40.726 --> 00:31:42.606 A:middle
+enhance the user's experience is
+
+00:31:42.966 --> 00:31:44.536 A:middle
+when the summary view is
+
+00:31:44.566 --> 00:31:45.656 A:middle
+presented right after they've
+
+00:31:45.736 --> 00:31:47.126 A:middle
+purchased the ticket, we
+
+00:31:47.126 --> 00:31:49.786 A:middle
+immediately ask them if they
+
+00:31:49.786 --> 00:31:51.056 A:middle
+want to add the pass to Wallet,
+
+00:31:51.266 --> 00:31:52.556 A:middle
+rather than having a button
+
+00:31:52.556 --> 00:31:53.146 A:middle
+onscreen.
+
+00:31:54.076 --> 00:31:55.936 A:middle
+Of course, you can have this Add
+
+00:31:55.936 --> 00:31:57.686 A:middle
+to Apple Wallet button somewhere
+
+00:31:57.686 --> 00:31:58.866 A:middle
+else in your app, if the user
+
+00:31:58.866 --> 00:32:00.756 A:middle
+decides to add the pass later.
+

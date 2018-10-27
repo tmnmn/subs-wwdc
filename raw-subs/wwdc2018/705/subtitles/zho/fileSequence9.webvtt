@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.139 --> 00:09:01.375 align:middle line:0
+现在你已准备好继续进行第三步
+
+00:09:01.842 --> 00:09:03.777 align:middle line:-1
+更新用户的订阅状态
+
+00:09:07.481 --> 00:09:09.950 align:middle line:-1
+与每个订阅周期始于某笔交易类似
+
+00:09:10.017 --> 00:09:13.253 align:middle line:-1
+它也会以到期日期结束
+
+00:09:14.454 --> 00:09:16.757 align:middle line:-2
+/verifyReceipt的
+响应会告诉我们
+
+00:09:16.823 --> 00:09:19.459 align:middle line:-1
+每个交易的到期日期
+
+00:09:19.526 --> 00:09:22.296 align:middle line:-2
+回头看一下
+/verifyReceipt响应
+
+00:09:22.596 --> 00:09:24.865 align:middle line:-1
+你会注意到交易中的
+
+00:09:24.932 --> 00:09:26.433 align:middle line:-1
+这个expires_date字段
+
+00:09:26.500 --> 00:09:27.634 align:middle line:-1
+（更新订阅状态）
+
+00:09:27.701 --> 00:09:29.136 align:middle line:-1
+现在让我们看看用户表
+
+00:09:29.203 --> 00:09:31.438 align:middle line:-2
+你可能会将这些数据
+保存在你的服务器上
+
+00:09:33.006 --> 00:09:35.375 align:middle line:-1
+你可以从此交易中获取此过期日期
+
+00:09:35.442 --> 00:09:37.911 align:middle line:-2
+并将其填充到你的服务器上的
+一个字段中
+
+00:09:37.978 --> 00:09:40.814 align:middle line:-2
+比如该用户的
+latestExpiresDate字段
+
+00:09:40.881 --> 00:09:44.117 align:middle line:-1
+这个字段将作为你的服务器
+
+00:09:44.184 --> 00:09:47.154 align:middle line:-1
+判断该用户是否为订阅用户的依据
+
+00:09:48.355 --> 00:09:50.791 align:middle line:-2
+你也应该记录这个字段
+original_transaction_id
+
+00:09:50.858 --> 00:09:53.460 align:middle line:-1
+你可以将其
+
+00:09:53.527 --> 00:09:55.262 align:middle line:-1
+保存到该用户的
+
+00:09:55.329 --> 00:09:56.930 align:middle line:-1
+originalTransactionId字段中
+
+00:09:56.997 --> 00:09:58.465 align:middle line:-1
+我们稍后还会谈到
+
+00:09:58.532 --> 00:09:59.867 align:middle line:-1
+为什么这很重要
+

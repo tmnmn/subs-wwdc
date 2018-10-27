@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.006 --> 00:17:00.106 A:middle
+interaction hinting.
+
+00:17:01.046 --> 00:17:02.496 A:middle
+And, interactionTransform
+
+00:17:02.626 --> 00:17:04.116 A:middle
+combines all three of these
+
+00:17:04.116 --> 00:17:05.715 A:middle
+values into a single 3D
+
+00:17:05.715 --> 00:17:06.326 A:middle
+transform.
+
+00:17:06.786 --> 00:17:09.945 A:middle
+Next, let's look at how to
+
+00:17:09.945 --> 00:17:11.006 A:middle
+implement a custom
+
+00:17:11.006 --> 00:17:12.965 A:middle
+focusItemScrollableContainer.
+
+00:17:13.726 --> 00:17:15.286 A:middle
+This is a special type of
+
+00:17:15.286 --> 00:17:17.086 A:middle
+focusItemContainer, and by
+
+00:17:17.086 --> 00:17:18.606 A:middle
+conforming to this protocol,
+
+00:17:18.876 --> 00:17:20.336 A:middle
+your container signals to the
+
+00:17:20.336 --> 00:17:22.016 A:middle
+focus engine that it supports
+
+00:17:22.016 --> 00:17:22.486 A:middle
+scrolling.
+
+00:17:22.806 --> 00:17:24.626 A:middle
+For example, UIScrollView
+
+00:17:24.626 --> 00:17:26.006 A:middle
+conforms to this protocol.
+
+00:17:26.986 --> 00:17:28.856 A:middle
+It provides three additional
+
+00:17:28.856 --> 00:17:30.786 A:middle
+properties that allows the focus
+
+00:17:30.786 --> 00:17:32.446 A:middle
+engine to manage its scrolling
+
+00:17:32.446 --> 00:17:32.986 A:middle
+behavior.
+
+00:17:33.436 --> 00:17:36.146 A:middle
+First, we have contentOffset,
+
+00:17:36.456 --> 00:17:38.376 A:middle
+which is a read/write property
+
+00:17:38.536 --> 00:17:39.746 A:middle
+representing how far the
+
+00:17:39.746 --> 00:17:41.106 A:middle
+container has been scrolled.
+
+00:17:41.586 --> 00:17:43.406 A:middle
+This property will automatically
+
+00:17:43.406 --> 00:17:45.506 A:middle
+be set by the focus engine as
+
+00:17:45.506 --> 00:17:47.916 A:middle
+focus is moved in order to keep
+
+00:17:47.916 --> 00:17:49.416 A:middle
+the currently focused item on
+
+00:17:49.416 --> 00:17:49.916 A:middle
+screen.
+
+00:17:51.196 --> 00:17:53.076 A:middle
+Second, we have contentSize,
+
+00:17:53.276 --> 00:17:56.686 A:middle
+which represents the total size
+
+00:17:56.686 --> 00:17:58.626 A:middle
+of your scrollable content and
+
+00:17:58.726 --> 00:18:00.956 A:middle
+third, we have visibleSize,
+

@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.836 --> 00:17:00.306 A:middle
+But it's important to notice
+
+00:17:00.546 --> 00:17:02.676 A:middle
+that encoding of GPU operations
+
+00:17:02.676 --> 00:17:05.336 A:middle
+on a CPU takes much less time
+
+00:17:05.586 --> 00:17:06.796 A:middle
+than processing of these
+
+00:17:06.796 --> 00:17:08.165 A:middle
+operations on the GPU.
+
+00:17:08.986 --> 00:17:10.336 A:middle
+So we can benefit from this
+
+00:17:10.336 --> 00:17:13.935 A:middle
+fact, and split our encoding
+
+00:17:13.935 --> 00:17:15.656 A:middle
+operation into a few common
+
+00:17:15.656 --> 00:17:17.876 A:middle
+buffers while a few common
+
+00:17:17.876 --> 00:17:19.276 A:middle
+buffer will be encoded very
+
+00:17:19.276 --> 00:17:21.266 A:middle
+fast, with just few operations,
+
+00:17:21.776 --> 00:17:23.715 A:middle
+and submitted to GPU as fast as
+
+00:17:23.786 --> 00:17:24.336 A:middle
+possible.
+
+00:17:25.626 --> 00:17:30.426 A:middle
+This way, now our encoding is
+
+00:17:30.486 --> 00:17:33.016 A:middle
+processing in parallel to GPU
+
+00:17:33.016 --> 00:17:34.626 A:middle
+already processing our frame,
+
+00:17:35.086 --> 00:17:36.826 A:middle
+and as you can see, we've just
+
+00:17:36.826 --> 00:17:39.926 A:middle
+extended the time when GPU is
+
+00:17:40.036 --> 00:17:43.456 A:middle
+doing its work, and as a result,
+
+00:17:43.456 --> 00:17:45.216 A:middle
+further increase amount of work
+
+00:17:45.216 --> 00:17:46.706 A:middle
+that you can submit in a frame.
+
+00:17:48.156 --> 00:17:49.226 A:middle
+Now, let's get back to our
+
+00:17:49.266 --> 00:17:50.826 A:middle
+diagram, and see how it all
+
+00:17:50.826 --> 00:17:51.906 A:middle
+looks together.
+
+00:17:53.446 --> 00:17:55.636 A:middle
+So as you can see, now both CPU
+
+00:17:55.636 --> 00:17:57.766 A:middle
+and GPU are fully utilized.
+
+00:17:58.746 --> 00:18:00.056 A:middle
+So [inaudible] application is
+

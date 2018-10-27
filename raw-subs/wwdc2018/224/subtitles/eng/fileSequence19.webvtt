@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:01.396 --> 00:19:05.176 A:middle
+So, let's consider the following
+
+00:19:05.176 --> 00:19:06.036 A:middle
+set of changes.
+
+00:19:06.776 --> 00:19:08.236 A:middle
+As you can see, these are posts
+
+00:19:08.236 --> 00:19:09.376 A:middle
+that are being inserted to our
+
+00:19:09.376 --> 00:19:12.436 A:middle
+database and when this happens,
+
+00:19:12.806 --> 00:19:14.206 A:middle
+given our table view, we would
+
+00:19:14.206 --> 00:19:17.046 A:middle
+want to refresh the UI, which we
+
+00:19:17.046 --> 00:19:18.346 A:middle
+can do by using the
+
+00:19:18.346 --> 00:19:19.726 A:middle
+objectIDNotification.
+
+00:19:20.296 --> 00:19:21.356 A:middle
+These are analogous to
+
+00:19:21.486 --> 00:19:23.316 A:middle
+NSManageObjectContextDidSave
+
+00:19:23.316 --> 00:19:25.076 A:middle
+notifications and can be merged
+
+00:19:25.076 --> 00:19:26.586 A:middle
+in using the same API.
+
+00:19:29.756 --> 00:19:31.186 A:middle
+But if we downloaded a list of
+
+00:19:31.186 --> 00:19:33.516 A:middle
+comments that we don't want to
+
+00:19:33.516 --> 00:19:35.406 A:middle
+manifest in a user update for,
+
+00:19:35.976 --> 00:19:39.936 A:middle
+we can filter them.
+
+00:19:40.146 --> 00:19:41.556 A:middle
+Using this small amount of code,
+
+00:19:41.616 --> 00:19:42.826 A:middle
+we can filter out the changes
+
+00:19:42.826 --> 00:19:44.046 A:middle
+from a given transaction to
+
+00:19:44.046 --> 00:19:45.086 A:middle
+decide if any of them were
+
+00:19:45.086 --> 00:19:47.306 A:middle
+relevant to the post entity and
+
+00:19:48.876 --> 00:19:50.916 A:middle
+in that way we won't refresh the
+
+00:19:50.916 --> 00:19:53.876 A:middle
+UI and cause an unnecessary blip
+
+00:19:53.976 --> 00:19:55.276 A:middle
+or stutter to the user.
+
+00:19:56.256 --> 00:19:57.436 A:middle
+But as you can see here, we're
+
+00:19:57.436 --> 00:19:58.906 A:middle
+actually only using a small
+
+00:19:58.906 --> 00:20:00.496 A:middle
+amount of the post content.
+

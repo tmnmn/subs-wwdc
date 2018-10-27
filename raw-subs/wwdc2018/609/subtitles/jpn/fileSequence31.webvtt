@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.258 --> 00:31:01.628 align:start position:36% line:-2
+データの特徴は
+失われていません
+
+00:31:03.096 --> 00:31:09.603 align:start position:20% line:-2
+これが長さが20のシーケンスとして
+LSTMのプリミティブに渡されます
+
+00:31:10.304 --> 00:31:12.606 align:start position:23% line:-1
+LSTMを20反復 実行します
+
+00:31:12.740 --> 00:31:16.910 align:start position:27% line:-2
+LSTMは2000ではなく
+20の長さで動作するので
+
+00:31:17.010 --> 00:31:20.781 align:start position:29% line:-2
+より高度な特徴のデータと
+なっています
+
+00:31:22.416 --> 00:31:25.018 align:start position:38% line:-2
+追加のCNNの
+プリミティブも
+
+00:31:25.352 --> 00:31:28.589 align:start position:32% line:-2
+データに高度な特徴を
+持っています
+
+00:31:29.289 --> 00:31:32.960 align:start position:23% line:-2
+最後は
+SoftMaxプリミティブです
+
+00:31:33.060 --> 00:31:36.296 align:start position:25% line:-2
+異なるアクティビティクラスの
+確率を生成
+
+00:31:36.396 --> 00:31:38.098 align:start position:32% line:-1
+これが出力になります
+
+00:31:38.565 --> 00:31:41.135 align:start position:27% line:-1
+では 訓練について話します
+
+00:31:42.169 --> 00:31:44.771 align:start position:32% line:-2
+必要なのは
+損失のプリミティブで
+
+00:31:44.872 --> 00:31:48.308 align:start position:32% line:-2
+ネットワークの出力と
+ラベルを入力とします
+
+00:31:48.475 --> 00:31:52.279 align:start position:30% line:-2
+そして 後半のグラフが
+必要となります
+
+00:31:52.379 --> 00:31:56.216 align:start position:21% line:-2
+対応するフォワードプリミティブの
+勾配プリミティブは
+
+00:31:56.316 --> 00:31:58.418 align:start position:23% line:-1
+LSTMのプリミティブなどです
+
+00:31:58.986 --> 00:32:00.621 align:start position:38% line:-1
+訓練するために
+

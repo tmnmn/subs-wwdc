@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.496 --> 00:23:00.776 A:middle
+video.example access to its
+
+00:23:00.776 --> 00:23:02.676 A:middle
+cookies while embedded in
+
+00:23:02.676 --> 00:23:03.486 A:middle
+news.example.
+
+00:23:04.036 --> 00:23:06.896 A:middle
+If the user clicks allow, this
+
+00:23:06.896 --> 00:23:07.916 A:middle
+choice will be sticky, and the
+
+00:23:07.916 --> 00:23:09.566 A:middle
+user won't be prompted again on
+
+00:23:09.566 --> 00:23:11.006 A:middle
+this combination of domains.
+
+00:23:12.156 --> 00:23:13.516 A:middle
+But if the user clicks deny, the
+
+00:23:13.516 --> 00:23:14.776 A:middle
+site can always reprompt.
+
+00:23:15.186 --> 00:23:17.446 A:middle
+Let's assume the user clicked
+
+00:23:17.446 --> 00:23:17.836 A:middle
+allow.
+
+00:23:18.766 --> 00:23:20.776 A:middle
+The request will go through, and
+
+00:23:20.776 --> 00:23:22.396 A:middle
+cookies will be returned to the
+
+00:23:22.396 --> 00:23:22.996 A:middle
+embedded site.
+
+00:23:24.496 --> 00:23:25.376 A:middle
+Now, this could create a
+
+00:23:25.376 --> 00:23:27.106 A:middle
+tracking risk as now
+
+00:23:27.106 --> 00:23:29.466 A:middle
+video.example has their users
+
+00:23:29.566 --> 00:23:31.956 A:middle
+logged in identity associated
+
+00:23:31.956 --> 00:23:33.796 A:middle
+with their presence on this news
+
+00:23:33.796 --> 00:23:34.026 A:middle
+site.
+
+00:23:35.446 --> 00:23:36.926 A:middle
+Now this is especially important
+
+00:23:37.016 --> 00:23:38.616 A:middle
+given changes to intelligent
+
+00:23:38.616 --> 00:23:40.046 A:middle
+tracking prevention this year.
+
+00:23:41.016 --> 00:23:44.076 A:middle
+Now outside of the user consent
+
+00:23:44.076 --> 00:23:45.516 A:middle
+provided via the Storage Access
+
+00:23:45.516 --> 00:23:48.106 A:middle
+API, cookies from domains that
+
+00:23:48.106 --> 00:23:49.616 A:middle
+are classified as trackers will
+
+00:23:49.616 --> 00:23:52.156 A:middle
+be partitioned immediately and
+
+00:23:52.156 --> 00:23:53.316 A:middle
+can never be used in a
+
+00:23:53.316 --> 00:23:54.526 A:middle
+third-party context.
+
+00:23:55.916 --> 00:23:58.106 A:middle
+Additionally, after 30 days
+
+00:23:58.106 --> 00:23:59.566 A:middle
+without user involvement, these
+
+00:23:59.566 --> 00:24:01.236 A:middle
+cookies will be purged entirely.
+

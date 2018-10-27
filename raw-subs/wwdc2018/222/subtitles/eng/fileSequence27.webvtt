@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.336 --> 00:27:00.326 A:middle
+If you're writing a Swift app,
+
+00:27:00.326 --> 00:27:01.156 A:middle
+this is something you have to be
+
+00:27:01.156 --> 00:27:01.656 A:middle
+mindful of.
+
+00:27:02.406 --> 00:27:03.956 A:middle
+Swift can't catch Objective-C or
+
+00:27:03.956 --> 00:27:06.046 A:middle
+C++ exceptions, and so this can
+
+00:27:06.046 --> 00:27:07.146 A:middle
+lead to a fatal error in your
+
+00:27:07.146 --> 00:27:07.296 A:middle
+app.
+
+00:27:07.296 --> 00:27:08.946 A:middle
+Now again, this can lead to a
+
+00:27:08.946 --> 00:27:10.936 A:middle
+crash and a bad experience our
+
+00:27:10.936 --> 00:27:11.426 A:middle
+customers.
+
+00:27:11.976 --> 00:27:14.946 A:middle
+If the decoding failure policy
+
+00:27:14.946 --> 00:27:16.526 A:middle
+to set error and return, the
+
+00:27:16.526 --> 00:27:17.596 A:middle
+error will be assigned to the
+
+00:27:17.596 --> 00:27:18.886 A:middle
+Unarchiver's error property.
+
+00:27:19.436 --> 00:27:20.906 A:middle
+And execution has to continue.
+
+00:27:21.556 --> 00:27:22.666 A:middle
+And in this case, because
+
+00:27:22.666 --> 00:27:24.296 A:middle
+execution does continue, the
+
+00:27:24.296 --> 00:27:25.526 A:middle
+decode call has to return
+
+00:27:25.966 --> 00:27:27.376 A:middle
+something, and so it will return
+
+00:27:27.376 --> 00:27:29.086 A:middle
+nil to indicate that nothing
+
+00:27:29.086 --> 00:27:29.726 A:middle
+could be decoded.
+
+00:27:30.096 --> 00:27:32.666 A:middle
+And as mentioned, if you're
+
+00:27:32.666 --> 00:27:33.996 A:middle
+decoding a primitive type, here
+
+00:27:33.996 --> 00:27:35.876 A:middle
+and we find an object or a
+
+00:27:35.876 --> 00:27:36.896 A:middle
+primitive type that's
+
+00:27:36.896 --> 00:27:38.996 A:middle
+incompatible, the same series of
+
+00:27:38.996 --> 00:27:39.966 A:middle
+steps has to happened.
+
+00:27:39.966 --> 00:27:41.006 A:middle
+And in this case, instead of
+
+00:27:41.006 --> 00:27:42.356 A:middle
+returning nil, we'll simply
+
+00:27:42.356 --> 00:27:43.606 A:middle
+return 0.
+
+00:27:44.236 --> 00:27:49.116 A:middle
+Now failWithError is API on
+
+00:27:49.146 --> 00:27:50.716 A:middle
+NSKeyedUnarchiver, and we urge
+
+00:27:50.716 --> 00:27:52.296 A:middle
+you to use in your own code to
+
+00:27:52.296 --> 00:27:53.616 A:middle
+indicate when failures happen
+
+00:27:53.726 --> 00:27:54.806 A:middle
+and what went wrong.
+
+00:27:55.636 --> 00:27:56.966 A:middle
+Instead of simply returning nil,
+
+00:27:57.216 --> 00:27:58.976 A:middle
+failWithError first to record
+
+00:27:58.976 --> 00:27:59.686 A:middle
+that information.
+

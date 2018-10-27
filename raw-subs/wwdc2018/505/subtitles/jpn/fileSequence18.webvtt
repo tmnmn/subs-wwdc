@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:56.043 --> 00:18:00.114 align:start position:20% line:-1
+Xcodeのエラーが表示されるので
+
+00:18:00.681 --> 00:18:02.549 align:start position:14% line:-1
+ChangeObserverを追加します
+
+00:18:02.816 --> 00:18:05.886 align:start position:38% line:-1
+そしてここに…
+
+00:18:09.423 --> 00:18:11.892 align:start position:11% line:-2
+photoLibraryDidChangeを
+追加します
+
+00:18:12.759 --> 00:18:17.498 align:start position:20% line:-2
+これはPhoto Libraryが
+変更された時に呼び出され
+
+00:18:18.098 --> 00:18:22.503 align:start position:23% line:-1
+変更のインスタンスが得られます
+
+00:18:23.537 --> 00:18:28.609 align:start position:12% line:-2
+オブジェクトのChangeDetailsに
+変更インスタンスを要求します
+
+00:18:28.742 --> 00:18:33.046 align:start position:11% line:-2
+プロジェクトのfetchAllAssetsを
+変更するので
+
+00:18:33.146 --> 00:18:35.215 align:start position:18% line:-1
+そのfetchResultを渡します
+
+00:18:35.682 --> 00:18:40.754 align:start position:23% line:-2
+変更結果が戻されたら
+キャッシュされたフェッチ結果と
+
+00:18:40.854 --> 00:18:45.392 align:start position:5% line:-2
+fetchResultsAfterChangesを
+更新します
+
+00:18:45.492 --> 00:18:47.794 align:start position:2% line:-1
+projectExtensionContextを得たら
+
+00:18:47.895 --> 00:18:52.799 align:start position:11% line:-2
+updateProjectInfoを呼び出し
+ProjectInfoに渡します
+
+00:18:53.567 --> 00:18:56.603 align:start position:9% line:-1
+updateProjectInfoが返されたら
+
+00:18:56.703 --> 00:19:01.275 align:start position:21% line:-2
+高度な方法で同じ
+セットアップコードを呼び出します
+

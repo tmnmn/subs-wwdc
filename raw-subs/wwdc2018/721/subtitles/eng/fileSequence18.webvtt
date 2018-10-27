@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.016 --> 00:18:00.436 A:middle
+The most important thing to keep
+
+00:18:00.436 --> 00:18:01.526 A:middle
+in mind when implementing this
+
+00:18:01.526 --> 00:18:02.896 A:middle
+functionality is that your
+
+00:18:02.896 --> 00:18:04.346 A:middle
+extension needs to respond to
+
+00:18:04.346 --> 00:18:05.846 A:middle
+the initial non-UI request
+
+00:18:05.846 --> 00:18:07.376 A:middle
+quickly, regardless of the
+
+00:18:07.376 --> 00:18:07.896 A:middle
+results.
+
+00:18:09.316 --> 00:18:11.066 A:middle
+Your UI hasn't been presented
+
+00:18:11.066 --> 00:18:12.816 A:middle
+yet, so it's not obvious to the
+
+00:18:12.816 --> 00:18:14.086 A:middle
+user that your extension is
+
+00:18:14.086 --> 00:18:15.056 A:middle
+working in the background.
+
+00:18:16.076 --> 00:18:17.226 A:middle
+If it takes a long time to
+
+00:18:17.226 --> 00:18:18.776 A:middle
+return the password, the user
+
+00:18:18.776 --> 00:18:20.676 A:middle
+may perceive the system, your
+
+00:18:20.676 --> 00:18:22.246 A:middle
+app, or the service they're
+
+00:18:22.246 --> 00:18:23.846 A:middle
+using as being unresponsive.
+
+00:18:24.796 --> 00:18:25.786 A:middle
+This would be a poor user
+
+00:18:25.786 --> 00:18:26.426 A:middle
+experience.
+
+00:18:26.946 --> 00:18:29.436 A:middle
+And this is so important.
+
+00:18:29.776 --> 00:18:31.396 A:middle
+If a few seconds pass, and your
+
+00:18:31.396 --> 00:18:32.556 A:middle
+extension hasn't returned the
+
+00:18:32.556 --> 00:18:34.586 A:middle
+password, requested to show its
+
+00:18:34.586 --> 00:18:36.356 A:middle
+UI, or canceled with another
+
+00:18:36.356 --> 00:18:38.116 A:middle
+error, AutoFill will cancel the
+
+00:18:38.116 --> 00:18:39.336 A:middle
+extension without filling the
+
+00:18:39.336 --> 00:18:39.776 A:middle
+credential.
+
+00:18:41.616 --> 00:18:43.486 A:middle
+However, this timeout doesn't
+
+00:18:43.486 --> 00:18:45.376 A:middle
+happen for debug builds, or when
+
+00:18:45.376 --> 00:18:47.066 A:middle
+running on the simulator, so you
+
+00:18:47.066 --> 00:18:48.226 A:middle
+can take your time to debug the
+
+00:18:48.226 --> 00:18:49.556 A:middle
+extension without the system
+
+00:18:49.556 --> 00:18:49.996 A:middle
+interrupting.
+
+00:18:54.236 --> 00:18:55.746 A:middle
+When you're implementing support
+
+00:18:55.746 --> 00:18:56.736 A:middle
+for displaying your app's
+
+00:18:56.736 --> 00:18:57.726 A:middle
+credentials on the QuickType
+
+00:18:57.726 --> 00:18:59.346 A:middle
+bar, it's essential that you
+
+00:18:59.346 --> 00:19:00.406 A:middle
+keep the Credential Identity
+

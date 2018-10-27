@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:00.016 --> 00:36:01.566 A:middle
+We start by loading a set of
+
+00:36:01.656 --> 00:36:02.736 A:middle
+reference images, either from
+
+00:36:02.736 --> 00:36:04.456 A:middle
+file or from the asset catalog.
+
+00:36:05.676 --> 00:36:07.246 A:middle
+Once I'm done loading such a set
+
+00:36:07.246 --> 00:36:09.276 A:middle
+of reference images, I use this
+
+00:36:09.966 --> 00:36:11.596 A:middle
+to set up my session that can be
+
+00:36:11.676 --> 00:36:13.726 A:middle
+of type world tracking by
+
+00:36:13.806 --> 00:36:15.226 A:middle
+specifying its detection images
+
+00:36:15.286 --> 00:36:17.026 A:middle
+property or of type
+
+00:36:17.026 --> 00:36:19.386 A:middle
+ARImageTrackingConfiguration by
+
+00:36:19.386 --> 00:36:20.786 A:middle
+specifying the tracking images
+
+00:36:20.826 --> 00:36:20.986 A:middle
+one.
+
+00:36:22.406 --> 00:36:24.036 A:middle
+Once I'm done setting up my
+
+00:36:24.036 --> 00:36:26.316 A:middle
+configuration, I use this to run
+
+00:36:26.316 --> 00:36:26.846 A:middle
+my session.
+
+00:36:28.296 --> 00:36:30.276 A:middle
+And just as usual, once the
+
+00:36:30.326 --> 00:36:31.966 A:middle
+session is running, I'll get an
+
+00:36:31.966 --> 00:36:33.496 A:middle
+ARFrame at every update.
+
+00:36:34.476 --> 00:36:35.776 A:middle
+And such and ARFrame will
+
+00:36:35.776 --> 00:36:37.486 A:middle
+continue an object of type
+
+00:36:37.676 --> 00:36:40.116 A:middle
+ARImageAnchor, once an image has
+
+00:36:40.156 --> 00:36:40.676 A:middle
+been detected.
+
+00:36:41.036 --> 00:36:44.086 A:middle
+Such an ARImageAnchor is now a
+
+00:36:44.086 --> 00:36:45.066 A:middle
+trackable object.
+
+00:36:45.406 --> 00:36:46.836 A:middle
+I can see this by conforming to
+
+00:36:46.836 --> 00:36:48.086 A:middle
+the AR trackable protocol.
+
+00:36:48.786 --> 00:36:51.346 A:middle
+This means it comes as a boolean
+
+00:36:51.546 --> 00:36:55.036 A:middle
+isTracked, which informs you about
+
+00:36:55.036 --> 00:36:56.466 A:middle
+the tracking state of the image.
+
+00:36:56.976 --> 00:36:58.566 A:middle
+It's true if it's tracked and
+
+00:36:58.566 --> 00:36:59.246 A:middle
+false otherwise.
+

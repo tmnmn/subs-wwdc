@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.899 --> 00:25:03.771 align:start position:21% line:-2
+並列なのでコードが
+同時に走ってるとイメージできます
+
+00:25:03.871 --> 00:25:06.306 align:start position:25% line:-1
+横に並べてシミュレートします
+
+00:25:07.107 --> 00:25:10.144 align:start position:32% line:-2
+アプリケーションで
+クマを確認しましょう
+
+00:25:11.211 --> 00:25:14.781 align:start position:21% line:-1
+みんなが眠ってるかもしれませんし
+
+00:25:15.048 --> 00:25:18.886 align:start position:30% line:-2
+Grandpaより
+Cubが先に寝るのかも
+
+00:25:19.386 --> 00:25:22.523 align:start position:32% line:-2
+Grandpaだけが
+寝てる時もあります
+
+00:25:23.791 --> 00:25:25.792 align:start position:36% line:-1
+Cubだけの時も
+
+00:25:26.560 --> 00:25:30.597 align:start position:34% line:-2
+クラッシュした時は
+誰も寝ていません
+
+00:25:32.132 --> 00:25:35.002 align:start position:21% line:-1
+これは競合状態がある可能性を示し
+
+00:25:35.102 --> 00:25:40.507 align:start position:27% line:-2
+関係あるすべてのスレッドが
+関わっているようです
+
+00:25:41.074 --> 00:25:45.445 align:start position:20% line:-2
+確かめるには
+XcodeにあるTSanが使えます
+
+00:25:45.612 --> 00:25:49.216 align:start position:21% line:-1
+アウトプットはこのようになります
+
+00:25:49.750 --> 00:25:56.857 align:start position:21% line:-2
+TSanが競合を割り出し
+関連するスレッドを教えてくれます
+
+00:25:57.558 --> 00:26:01.528 align:start position:25% line:-2
+どの列から手をつければいいか
+教えます
+

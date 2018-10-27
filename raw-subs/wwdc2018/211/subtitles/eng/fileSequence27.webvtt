@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.716 --> 00:27:01.266 A:middle
+contains the intent of the
+
+00:27:01.266 --> 00:27:03.126 A:middle
+order, and then I just donate
+
+00:27:03.126 --> 00:27:06.066 A:middle
+that interaction, and that's it.
+
+00:27:07.336 --> 00:27:08.606 A:middle
+Finally, we need to handle the
+
+00:27:08.606 --> 00:27:09.036 A:middle
+intent.
+
+00:27:09.366 --> 00:27:11.056 A:middle
+I'll start by adding support in
+
+00:27:11.056 --> 00:27:13.196 A:middle
+the app itself, so I'll go to
+
+00:27:13.196 --> 00:27:15.196 A:middle
+the AppDelegate, and, in the
+
+00:27:15.196 --> 00:27:17.086 A:middle
+continueUserActivity, I'll add
+
+00:27:17.086 --> 00:27:17.686 A:middle
+support for it.
+
+00:27:18.236 --> 00:27:22.086 A:middle
+I check if the activityType of
+
+00:27:22.616 --> 00:27:24.396 A:middle
+the userActivity is equal to the
+
+00:27:24.396 --> 00:27:26.096 A:middle
+class name of the intent that I
+
+00:27:26.096 --> 00:27:26.786 A:middle
+want to handle.
+
+00:27:27.216 --> 00:27:29.196 A:middle
+If that's the case, I extract
+
+00:27:29.196 --> 00:27:30.196 A:middle
+the intent from the
+
+00:27:30.196 --> 00:27:32.226 A:middle
+userActivity, and I generate an
+
+00:27:32.226 --> 00:27:32.886 A:middle
+order with it.
+
+00:27:33.346 --> 00:27:34.966 A:middle
+Finally, I present the order
+
+00:27:34.966 --> 00:27:35.276 A:middle
+view.
+
+00:27:35.686 --> 00:27:37.426 A:middle
+So, since we're launching the
+
+00:27:37.426 --> 00:27:38.966 A:middle
+app, I'm assuming that the user
+
+00:27:38.966 --> 00:27:39.776 A:middle
+doesn't want to immediately
+
+00:27:39.776 --> 00:27:41.096 A:middle
+place the order but wants to
+
+00:27:41.096 --> 00:27:42.746 A:middle
+make some customizations before
+
+00:27:42.746 --> 00:27:44.566 A:middle
+placing it, so that's why I'm
+
+00:27:44.566 --> 00:27:45.596 A:middle
+presenting the order view
+
+00:27:45.596 --> 00:27:46.036 A:middle
+instead.
+
+00:27:46.846 --> 00:27:50.276 A:middle
+And, finally, let's add support
+
+00:27:50.456 --> 00:27:52.556 A:middle
+with an intents extension so the
+
+00:27:52.556 --> 00:27:54.106 A:middle
+user can run this intent in the
+
+00:27:54.106 --> 00:27:54.646 A:middle
+background.
+
+00:27:55.506 --> 00:27:56.776 A:middle
+I'll need to add an intents
+
+00:27:56.776 --> 00:27:58.216 A:middle
+extension first, so I'll go to
+
+00:27:58.216 --> 00:28:02.966 A:middle
+File, View, Target and select
+

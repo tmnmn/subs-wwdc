@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:59.846 --> 00:53:01.266 A:middle
+Compile your functions offline,
+
+00:53:01.266 --> 00:53:03.426 A:middle
+build your library offline, and
+
+00:53:03.476 --> 00:53:04.566 A:middle
+pull all of your functions into
+
+00:53:04.566 --> 00:53:05.326 A:middle
+a single library.
+
+00:53:05.846 --> 00:53:07.056 A:middle
+But you really want to make sure
+
+00:53:07.056 --> 00:53:08.656 A:middle
+you create all of your PSOs at
+
+00:53:08.656 --> 00:53:09.146 A:middle
+load time.
+
+00:53:09.556 --> 00:53:10.986 A:middle
+But what do you do if you can't
+
+00:53:10.986 --> 00:53:11.346 A:middle
+do that?
+
+00:53:11.786 --> 00:53:12.966 A:middle
+So for us, the permutation
+
+00:53:12.966 --> 00:53:14.086 A:middle
+matrix is just crazy.
+
+00:53:14.136 --> 00:53:15.516 A:middle
+There's way too many for us to
+
+00:53:15.516 --> 00:53:16.826 A:middle
+realistically create at load
+
+00:53:17.576 --> 00:53:18.016 A:middle
+time.
+
+00:53:18.076 --> 00:53:20.586 A:middle
+We have multiple artist-authored
+
+00:53:20.586 --> 00:53:22.286 A:middle
+shaders -- thousands of them --
+
+00:53:22.846 --> 00:53:24.306 A:middle
+multiple lighting scenarios
+
+00:53:24.306 --> 00:53:26.356 A:middle
+based on number of shadow
+
+00:53:26.356 --> 00:53:28.926 A:middle
+cascades and so on, different
+
+00:53:28.926 --> 00:53:30.546 A:middle
+render target formats, MSAA.
+
+00:53:30.776 --> 00:53:31.516 A:middle
+The list goes on.
+
+00:53:32.726 --> 00:53:33.576 A:middle
+We tried to minimize
+
+00:53:33.576 --> 00:53:35.116 A:middle
+permutations where we could, and
+
+00:53:35.116 --> 00:53:35.776 A:middle
+this does help.
+
+00:53:35.776 --> 00:53:37.136 A:middle
+Sometimes a dynamic branch is
+
+00:53:37.136 --> 00:53:38.626 A:middle
+good enough and better than
+
+00:53:38.626 --> 00:53:40.046 A:middle
+creating a static permutation,
+
+00:53:40.646 --> 00:53:42.356 A:middle
+but sometimes not.
+
+00:53:42.736 --> 00:53:44.716 A:middle
+What we had to do is we decided
+
+00:53:44.716 --> 00:53:45.966 A:middle
+to identify the most common
+
+00:53:45.966 --> 00:53:47.186 A:middle
+subset that we're likely to
+
+00:53:47.186 --> 00:53:48.816 A:middle
+need, and we create those at
+
+00:53:48.816 --> 00:53:49.196 A:middle
+load.
+
+00:53:49.566 --> 00:53:50.346 A:middle
+We don't try to create
+
+00:53:50.346 --> 00:53:50.856 A:middle
+everything.
+
+00:53:51.306 --> 00:53:52.576 A:middle
+The way we achieved this is we
+
+00:53:52.576 --> 00:53:54.116 A:middle
+created an automation pass where
+
+00:53:54.116 --> 00:53:55.296 A:middle
+we basically flew a camera
+
+00:53:55.296 --> 00:53:56.716 A:middle
+through the environment and
+
+00:53:56.716 --> 00:53:58.116 A:middle
+recorded all of the PSOs that we
+
+00:53:58.116 --> 00:53:59.286 A:middle
+actually needed to render the
+
+00:53:59.286 --> 00:53:59.876 A:middle
+environment.
+

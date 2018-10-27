@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.346 --> 00:27:02.416 A:middle
+transaction fails silently, this
+
+00:27:02.416 --> 00:27:03.486 A:middle
+means that nothing will be
+
+00:27:03.486 --> 00:27:04.566 A:middle
+returned to your Transaction
+
+00:27:04.566 --> 00:27:04.916 A:middle
+Observer.
+
+00:27:05.686 --> 00:27:07.946 A:middle
+Furthermore, all Ask to Buy
+
+00:27:07.946 --> 00:27:09.416 A:middle
+transactions within that 24
+
+00:27:09.416 --> 00:27:11.036 A:middle
+hours are consolidated into a
+
+00:27:11.036 --> 00:27:12.886 A:middle
+single ask.
+
+00:27:13.506 --> 00:27:14.486 A:middle
+So the important takeaway here
+
+00:27:14.486 --> 00:27:15.756 A:middle
+is that you should not wait on
+
+00:27:15.756 --> 00:27:17.486 A:middle
+deferred transactions or even
+
+00:27:17.486 --> 00:27:18.646 A:middle
+expect them to come back at all,
+
+00:27:18.826 --> 00:27:19.946 A:middle
+you should make sure you don't
+
+00:27:19.946 --> 00:27:21.176 A:middle
+lock the UI and allow the user
+
+00:27:21.176 --> 00:27:22.546 A:middle
+to continue using your app as
+
+00:27:22.546 --> 00:27:24.666 A:middle
+much as possible.
+
+00:27:24.666 --> 00:27:26.106 A:middle
+Another important tip when
+
+00:27:26.106 --> 00:27:27.756 A:middle
+working with in-app purchases
+
+00:27:27.756 --> 00:27:29.326 A:middle
+that have Apple hosted content
+
+00:27:29.326 --> 00:27:31.096 A:middle
+via SKDownload is that you
+
+00:27:31.096 --> 00:27:32.346 A:middle
+should always finish downloading
+
+00:27:32.346 --> 00:27:34.246 A:middle
+the hosted content before
+
+00:27:34.246 --> 00:27:35.356 A:middle
+calling Finish Transaction.
+
+00:27:36.616 --> 00:27:37.996 A:middle
+This is because once you call
+
+00:27:37.996 --> 00:27:39.556 A:middle
+Finish Transaction all
+
+00:27:39.696 --> 00:27:41.766 A:middle
+SKDownloads will be canceled and
+
+00:27:41.876 --> 00:27:42.896 A:middle
+no longer valid for
+
+00:27:42.896 --> 00:27:43.436 A:middle
+redownloading.
+
+00:27:44.256 --> 00:27:45.826 A:middle
+If you do this on accident then
+
+00:27:45.826 --> 00:27:47.066 A:middle
+you have to call Restore
+
+00:27:47.066 --> 00:27:48.146 A:middle
+Transactions to get a new
+
+00:27:48.146 --> 00:27:49.016 A:middle
+download to finish.
+
+00:27:49.346 --> 00:27:51.056 A:middle
+So even if your download fails
+
+00:27:51.786 --> 00:27:53.116 A:middle
+you should withhold calling
+
+00:27:53.116 --> 00:27:54.656 A:middle
+Finish Transaction until you
+
+00:27:54.656 --> 00:27:55.726 A:middle
+retry it and you actually
+
+00:27:56.006 --> 00:27:56.996 A:middle
+successfully download it and
+
+00:27:56.996 --> 00:27:58.016 A:middle
+deliver that content to the
+
+00:27:58.016 --> 00:27:58.316 A:middle
+user.
+

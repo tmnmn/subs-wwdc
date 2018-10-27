@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.306 --> 00:29:01.066 A:middle
+Now, this is a two-way street,
+
+00:29:01.336 --> 00:29:02.776 A:middle
+because smaller views often led
+
+00:29:02.776 --> 00:29:04.086 A:middle
+you to have more fine-grain
+
+00:29:04.086 --> 00:29:05.376 A:middle
+caching, which can be good for
+
+00:29:05.376 --> 00:29:06.156 A:middle
+performance as well.
+
+00:29:07.266 --> 00:29:08.896 A:middle
+But generally, you can tweak the
+
+00:29:08.896 --> 00:29:10.446 A:middle
+number of views that you have in
+
+00:29:10.446 --> 00:29:11.606 A:middle
+order to have a significant
+
+00:29:11.606 --> 00:29:12.666 A:middle
+impact on performance.
+
+00:29:12.786 --> 00:29:14.596 A:middle
+It is not always best to have
+
+00:29:14.596 --> 00:29:16.556 A:middle
+fewer views, otherwise all of
+
+00:29:16.556 --> 00:29:17.606 A:middle
+our applications would just have
+
+00:29:17.686 --> 00:29:18.866 A:middle
+one giant view for the whole
+
+00:29:18.866 --> 00:29:19.116 A:middle
+thing.
+
+00:29:21.266 --> 00:29:22.396 A:middle
+Another technique that comes up
+
+00:29:22.396 --> 00:29:23.816 A:middle
+pretty frequently is using
+
+00:29:23.816 --> 00:29:24.806 A:middle
+direct observation.
+
+00:29:25.356 --> 00:29:26.916 A:middle
+We often have two areas of our
+
+00:29:26.916 --> 00:29:29.716 A:middle
+source code that are loosely
+
+00:29:29.716 --> 00:29:30.136 A:middle
+coupled.
+
+00:29:30.286 --> 00:29:31.466 A:middle
+Maybe one area knows about the
+
+00:29:31.466 --> 00:29:33.296 A:middle
+other, and they're communicating
+
+00:29:33.296 --> 00:29:34.996 A:middle
+with each other through some
+
+00:29:34.996 --> 00:29:36.016 A:middle
+indirect mechanism.
+
+00:29:36.456 --> 00:29:37.796 A:middle
+Maybe they're using NS
+
+00:29:37.796 --> 00:29:39.916 A:middle
+Notification Center, some
+
+00:29:39.966 --> 00:29:41.316 A:middle
+block-based call backs,
+
+00:29:41.516 --> 00:29:43.146 A:middle
+delegation, or key value
+
+00:29:43.146 --> 00:29:43.606 A:middle
+observing.
+
+00:29:45.006 --> 00:29:46.156 A:middle
+Now something that I see very
+
+00:29:46.216 --> 00:29:47.326 A:middle
+frequently is we'll have some
+
+00:29:47.326 --> 00:29:49.076 A:middle
+model code, and it's going in a
+
+00:29:49.076 --> 00:29:50.946 A:middle
+loop, being changed, and every
+
+00:29:50.946 --> 00:29:51.856 A:middle
+time it is going to that loop,
+
+00:29:52.206 --> 00:29:54.146 A:middle
+it is firing lots of KVO
+
+00:29:54.326 --> 00:29:55.136 A:middle
+notifications.
+
+00:29:55.386 --> 00:29:56.286 A:middle
+You can't actually see that in
+
+00:29:56.286 --> 00:29:57.876 A:middle
+the model code, of course, but
+
+00:29:57.956 --> 00:29:59.236 A:middle
+over in some other controller,
+
+00:29:59.526 --> 00:30:00.946 A:middle
+it's madly responding and trying
+

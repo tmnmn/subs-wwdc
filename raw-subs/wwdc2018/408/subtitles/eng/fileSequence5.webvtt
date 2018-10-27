@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.836 --> 00:05:00.696 A:middle
+And specifically, you'll need to
+
+00:05:00.696 --> 00:05:01.826 A:middle
+look at the Build Action.
+
+00:05:02.936 --> 00:05:05.046 A:middle
+And in there, the Build Options.
+
+00:05:05.366 --> 00:05:06.866 A:middle
+Now, there are two listed here.
+
+00:05:07.196 --> 00:05:08.866 A:middle
+The first is Parallelize Build.
+
+00:05:08.986 --> 00:05:10.916 A:middle
+And the second is Find Implicit
+
+00:05:10.916 --> 00:05:11.656 A:middle
+Dependencies.
+
+00:05:12.426 --> 00:05:13.856 A:middle
+You'll want to check Parallelize
+
+00:05:13.926 --> 00:05:14.146 A:middle
+Build.
+
+00:05:14.706 --> 00:05:16.176 A:middle
+This will allow Xcode to use the
+
+00:05:16.176 --> 00:05:17.656 A:middle
+dependency information across
+
+00:05:17.656 --> 00:05:19.296 A:middle
+your targets so that it can
+
+00:05:19.296 --> 00:05:20.846 A:middle
+attempt to build your targets in
+
+00:05:20.846 --> 00:05:21.376 A:middle
+parallel.
+
+00:05:21.956 --> 00:05:24.646 A:middle
+So let's look at how your
+
+00:05:24.936 --> 00:05:25.996 A:middle
+dependencies are actually
+
+00:05:25.996 --> 00:05:27.116 A:middle
+configured within Xcode.
+
+00:05:28.286 --> 00:05:29.406 A:middle
+This is done through the Build
+
+00:05:29.406 --> 00:05:30.036 A:middle
+Phase Editor.
+
+00:05:30.586 --> 00:05:31.496 A:middle
+And you can get to the Build
+
+00:05:31.496 --> 00:05:33.616 A:middle
+Phase Editor by going to your
+
+00:05:33.616 --> 00:05:35.566 A:middle
+Project Navigator and selecting
+
+00:05:35.566 --> 00:05:36.116 A:middle
+your project.
+
+00:05:36.636 --> 00:05:37.806 A:middle
+In this case we're looking at
+
+00:05:37.806 --> 00:05:39.556 A:middle
+the Game Target -- or the Game
+
+00:05:39.556 --> 00:05:39.916 A:middle
+Project.
+
+00:05:40.326 --> 00:05:43.296 A:middle
+Next, you want to click on Build
+
+00:05:43.296 --> 00:05:43.816 A:middle
+Phases.
+
+00:05:44.916 --> 00:05:46.036 A:middle
+So, let's take a look at the
+
+00:05:46.036 --> 00:05:46.626 A:middle
+Game Target.
+
+00:05:46.866 --> 00:05:47.946 A:middle
+This is the Build Phase Editor
+
+00:05:47.946 --> 00:05:48.806 A:middle
+for our Game Target.
+
+00:05:48.886 --> 00:05:50.156 A:middle
+And we're going to look at how
+
+00:05:50.156 --> 00:05:51.536 A:middle
+its dependencies are configured.
+
+00:05:52.056 --> 00:05:52.826 A:middle
+And I want to call your
+
+00:05:52.826 --> 00:05:54.916 A:middle
+attention first to the Link
+
+00:05:55.186 --> 00:05:57.166 A:middle
+Binary with Libraries phase.
+
+00:05:57.836 --> 00:05:59.446 A:middle
+Now, this is the phase of your
+
+00:05:59.446 --> 00:06:00.746 A:middle
+build process where you define
+

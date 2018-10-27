@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:00.986 --> 00:17:02.936 A:middle
+But if we now go ahead and
+
+00:17:02.936 --> 00:17:04.376 A:middle
+scroll back all the way to the
+
+00:17:04.376 --> 00:17:06.226 A:middle
+very top, we end up with a
+
+00:17:06.226 --> 00:17:07.616 A:middle
+content offset that actually
+
+00:17:07.616 --> 00:17:08.296 A:middle
+goes negative.
+
+00:17:09.736 --> 00:17:10.955 A:middle
+That's because we are now able
+
+00:17:10.955 --> 00:17:13.256 A:middle
+to scroll beyond the top edge of
+
+00:17:13.256 --> 00:17:13.876 A:middle
+our content.
+
+00:17:14.296 --> 00:17:15.976 A:middle
+And so we can scroll as far as
+
+00:17:15.976 --> 00:17:18.165 A:middle
+the negative content inset on
+
+00:17:18.165 --> 00:17:20.156 A:middle
+the top edge.
+
+00:17:20.406 --> 00:17:22.856 A:middle
+Now starting in iOS 7, this
+
+00:17:22.935 --> 00:17:24.415 A:middle
+content inset technique became
+
+00:17:24.415 --> 00:17:25.396 A:middle
+really important and that's
+
+00:17:25.396 --> 00:17:27.476 A:middle
+because with iOS 7, translucent
+
+00:17:27.476 --> 00:17:29.466 A:middle
+bars became really common across
+
+00:17:29.466 --> 00:17:29.986 A:middle
+the system.
+
+00:17:30.336 --> 00:17:31.576 A:middle
+And the idea was that you would
+
+00:17:31.576 --> 00:17:33.026 A:middle
+display your content edge to
+
+00:17:33.026 --> 00:17:33.466 A:middle
+edge.
+
+00:17:33.856 --> 00:17:35.756 A:middle
+And it would underlap the bars
+
+00:17:35.756 --> 00:17:36.726 A:middle
+so that you could get these nice
+
+00:17:36.726 --> 00:17:38.626 A:middle
+colorful blurs with your content
+
+00:17:38.626 --> 00:17:39.426 A:middle
+through the bars, right?
+
+00:17:39.806 --> 00:17:41.216 A:middle
+Tool bars, navigation bars, and
+
+00:17:41.406 --> 00:17:41.796 A:middle
+so forth.
+
+00:17:42.096 --> 00:17:43.876 A:middle
+So because this was so common,
+
+00:17:44.366 --> 00:17:45.396 A:middle
+we wanted a way to help
+
+00:17:45.506 --> 00:17:47.016 A:middle
+automatically set the content
+
+00:17:47.016 --> 00:17:48.506 A:middle
+inset on your scroll views to
+
+00:17:48.506 --> 00:17:49.976 A:middle
+make this easier in your apps.
+
+00:17:50.296 --> 00:17:51.946 A:middle
+And to do this, we had a
+
+00:17:51.946 --> 00:17:53.326 A:middle
+property on UI View Controller.
+
+00:17:53.696 --> 00:17:54.946 A:middle
+And this was called
+
+00:17:54.946 --> 00:17:56.706 A:middle
+automatically adjust scroll view
+
+00:17:56.706 --> 00:17:57.316 A:middle
+insets.
+
+00:17:57.796 --> 00:17:59.876 A:middle
+And the intent, intent again was
+
+00:17:59.876 --> 00:18:01.556 A:middle
+to automatically set the content
+

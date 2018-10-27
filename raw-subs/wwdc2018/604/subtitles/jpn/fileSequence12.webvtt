@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:56.783 --> 00:12:00.854 align:start position:30% line:-2
+テクスチャとバッファは
+固定されていますが
+
+00:12:00.954 --> 00:12:04.358 align:start position:30% line:-2
+これらオブジェクト内の
+データは変更できます
+
+00:12:05.893 --> 00:12:08.195 align:start position:32% line:-2
+Metalは
+オブジェクト作成時に
+
+00:12:08.295 --> 00:12:09.897 align:start position:32% line:-2
+高価なセットアップを
+すべて実行できます
+
+00:12:10.230 --> 00:12:13.100 align:start position:23% line:-1
+OpenGLは可変モデルなので
+
+00:12:13.200 --> 00:12:16.169 align:start position:34% line:-2
+アプリケーションが
+ステートに触れると
+
+00:12:16.670 --> 00:12:19.740 align:start position:27% line:-2
+オブジェクト再コンパイルが
+生じるかもしれません
+
+00:12:19.840 --> 00:12:22.976 align:start position:27% line:-2
+またOpenGLは描画前に
+ステート確認のため
+
+00:12:23.076 --> 00:12:27.748 align:start position:34% line:-2
+フラグ階層の
+チェックが必要です
+
+00:12:27.948 --> 00:12:31.785 align:start position:30% line:-2
+変更不可のMetalは
+ステート変更を
+
+00:12:31.885 --> 00:12:35.756 align:start position:25% line:-2
+チェックする必要がなく
+ドローコールが速くなるのです
+
+00:12:37.391 --> 00:12:41.261 align:start position:27% line:-2
+オブジェクトはスレッド間で
+効率的に使用できます
+
+00:12:41.361 --> 00:12:44.998 align:start position:27% line:-2
+他のスレッド内の変更による
+無効化を防ぐために
+
+00:12:45.098 --> 00:12:47.034 align:start position:27% line:-2
+オブジェクトを
+ロックする必要もありません
+
+00:12:51.138 --> 00:12:53.240 align:start position:32% line:-1
+次は移植についてです
+
+00:12:54.508 --> 00:12:58.212 align:start position:34% line:-2
+レンダリング
+アプリケーションの
+
+00:12:58.312 --> 00:13:00.614 align:start position:32% line:-1
+典型的なフェーズです
+

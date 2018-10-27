@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:57.906 --> 00:15:01.026 A:middle
+Back in Jupyter notebook.
+
+00:15:01.416 --> 00:15:02.786 A:middle
+Now I'm also going to load up a
+
+00:15:02.786 --> 00:15:04.196 A:middle
+second SFrame called
+
+00:15:04.196 --> 00:15:04.996 A:middle
+annotations.
+
+00:15:05.536 --> 00:15:09.416 A:middle
+And this I'm just going to call
+
+00:15:09.416 --> 00:15:11.066 A:middle
+the SFrame instructor and
+
+00:15:11.066 --> 00:15:12.346 A:middle
+provide a file name to
+
+00:15:12.346 --> 00:15:13.896 A:middle
+annotations.csv.
+
+00:15:14.326 --> 00:15:16.286 A:middle
+This is a CSV file containing
+
+00:15:16.286 --> 00:15:17.776 A:middle
+the annotations that correspond
+
+00:15:17.776 --> 00:15:18.546 A:middle
+to those images.
+
+00:15:19.236 --> 00:15:23.256 A:middle
+And let's take a look at that.
+
+00:15:23.876 --> 00:15:25.206 A:middle
+Right in Jupyter notebook, we
+
+00:15:25.206 --> 00:15:26.296 A:middle
+can see that this SFrame
+
+00:15:26.296 --> 00:15:28.146 A:middle
+contains a path column, again
+
+00:15:28.146 --> 00:15:29.476 A:middle
+pointing to that relative path
+
+00:15:29.476 --> 00:15:30.706 A:middle
+on disk of the image.
+
+00:15:31.206 --> 00:15:32.926 A:middle
+And an annotation column
+
+00:15:33.156 --> 00:15:34.606 A:middle
+containing a JSON object
+
+00:15:34.806 --> 00:15:36.326 A:middle
+describing the bounding box and
+
+00:15:36.326 --> 00:15:37.966 A:middle
+labels associated with that
+
+00:15:37.966 --> 00:15:38.366 A:middle
+image.
+
+00:15:39.806 --> 00:15:40.866 A:middle
+But now we have two different
+
+00:15:40.866 --> 00:15:42.636 A:middle
+data sources and we need to
+
+00:15:42.826 --> 00:15:44.286 A:middle
+provide one data source to train
+
+00:15:44.286 --> 00:15:44.776 A:middle
+our model.
+
+00:15:45.316 --> 00:15:46.406 A:middle
+Let's join them together.
+
+00:15:47.096 --> 00:15:48.986 A:middle
+In Turi Create, this is as easy
+
+00:15:48.986 --> 00:15:50.186 A:middle
+as calling the join method.
+
+00:15:50.616 --> 00:15:52.626 A:middle
+I'm going to say data equals
+
+00:15:52.956 --> 00:15:57.946 A:middle
+images.joinannotations and now
+
+00:15:58.066 --> 00:15:59.916 A:middle
+we can see we have a single
+

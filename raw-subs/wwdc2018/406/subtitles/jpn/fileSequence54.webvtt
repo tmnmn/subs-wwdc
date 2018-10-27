@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:55.736 --> 00:54:00.941 align:start position:16% line:-2
+この要件の追加により
+TaxiにVehicleを継承した際―
+
+00:54:01.041 --> 00:54:06.080 align:start position:21% line:-2
+同じ名前のイニシャライザの導入も
+必要です
+
+00:54:06.480 --> 00:54:10.150 align:start position:20% line:-2
+このイニシャライザは
+HourlyRateをデコードし―
+
+00:54:10.250 --> 00:54:16.590 align:start position:21% line:-2
+スーパークラスにつなげ
+Vehicle型もデコードします
+
+00:54:20.194 --> 00:54:26.300 align:start position:14% line:-2
+ところで スライドの
+“non-final”に気付きましたか？
+
+00:54:26.700 --> 00:54:30.771 align:start position:25% line:-2
+定義では ファイナルクラスは
+サブクラスを持たず―
+
+00:54:30.871 --> 00:54:34.174 align:start position:21% line:-1
+あとで置換されることはありません
+
+00:54:36.043 --> 00:54:40.848 align:start position:21% line:-2
+Requiredイニシャライザも
+不要です
+
+00:54:40.948 --> 00:54:47.287 align:start position:18% line:-2
+Decodableなどの要件の扱いも
+少し楽になります
+
+00:54:47.387 --> 00:54:50.958 align:start position:21% line:-2
+Requiredイニシャライザが
+不要ですからね
+
+00:54:51.859 --> 00:54:55.095 align:start position:23% line:-1
+参照の意味でクラスを使う場合―
+
+00:54:55.929 --> 00:55:02.069 align:start position:23% line:-2
+クラスのカスタマイズが不要なら
+ファイナルを使いましょう
+

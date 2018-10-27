@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.926 --> 00:03:03.846 A:middle
+In Swift 4, NSImage.Name came
+
+00:03:03.846 --> 00:03:05.216 A:middle
+across as a struct, which is the
+
+00:03:05.216 --> 00:03:06.686 A:middle
+way you would declare the string
+
+00:03:06.686 --> 00:03:07.596 A:middle
+enumerations.
+
+00:03:07.926 --> 00:03:09.886 A:middle
+In Swift 4.2, it's as a
+
+00:03:09.886 --> 00:03:12.276 A:middle
+typealias, a simple, good old,
+
+00:03:12.366 --> 00:03:13.926 A:middle
+garden variety typealias.
+
+00:03:14.286 --> 00:03:14.936 A:middle
+Much simpler.
+
+00:03:16.046 --> 00:03:17.246 A:middle
+So, the question is, why did we
+
+00:03:17.246 --> 00:03:17.726 A:middle
+do this?
+
+00:03:18.136 --> 00:03:19.216 A:middle
+Let's look at a call site
+
+00:03:19.306 --> 00:03:19.826 A:middle
+example.
+
+00:03:22.056 --> 00:03:24.786 A:middle
+Here in Swift 4 is how you would
+
+00:03:24.826 --> 00:03:26.486 A:middle
+take a string, and create an
+
+00:03:26.486 --> 00:03:28.946 A:middle
+NSImage with it, by using the
+
+00:03:28.946 --> 00:03:29.606 A:middle
+named method.
+
+00:03:29.976 --> 00:03:31.686 A:middle
+As you'll see here, you'll be
+
+00:03:31.686 --> 00:03:32.986 A:middle
+taking the string, and we're
+
+00:03:32.986 --> 00:03:34.936 A:middle
+converting it to an NSImage.Name
+
+00:03:34.936 --> 00:03:36.126 A:middle
+into the [inaudible] name before
+
+00:03:36.126 --> 00:03:37.456 A:middle
+we call NSImage named.
+
+00:03:37.966 --> 00:03:38.796 A:middle
+This does not feel
+
+00:03:38.796 --> 00:03:40.526 A:middle
+super-streamlined to have to
+
+00:03:40.656 --> 00:03:42.316 A:middle
+repeat NSImage.Name here.
+
+00:03:42.956 --> 00:03:44.806 A:middle
+Now, with changes in Swift 4.2,
+
+00:03:45.296 --> 00:03:46.206 A:middle
+this is all we have to write.
+
+00:03:46.286 --> 00:03:47.536 A:middle
+You do not have to convert to
+
+00:03:47.536 --> 00:03:49.246 A:middle
+the NSImage name, which is more
+
+00:03:49.246 --> 00:03:50.736 A:middle
+streamlined, a little cleaner,
+
+00:03:50.846 --> 00:03:51.846 A:middle
+less redundancy there.
+
+00:03:52.426 --> 00:03:53.636 A:middle
+So, we believe this typedef
+
+00:03:53.636 --> 00:03:55.576 A:middle
+approach is appropriate for
+
+00:03:55.576 --> 00:03:55.976 A:middle
+passed-through values.
+
+00:03:56.516 --> 00:04:01.126 A:middle
+[ Applause ]
+

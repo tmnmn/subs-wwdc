@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:00.046 --> 00:23:01.276 A:middle
+So now, let's take a look at how
+
+00:23:01.276 --> 00:23:04.336 A:middle
+to use an optimizer in MPS.
+
+00:23:05.436 --> 00:23:07.526 A:middle
+So, recall that your data source
+
+00:23:07.526 --> 00:23:09.276 A:middle
+provider has an init method.
+
+00:23:09.676 --> 00:23:11.066 A:middle
+This is where you want to create
+
+00:23:11.066 --> 00:23:12.726 A:middle
+your optimizer because you only
+
+00:23:12.726 --> 00:23:13.746 A:middle
+want to create it once.
+
+00:23:14.356 --> 00:23:16.626 A:middle
+And now, let's take a look at
+
+00:23:16.626 --> 00:23:18.176 A:middle
+the implementation of our update
+
+00:23:18.176 --> 00:23:18.496 A:middle
+method.
+
+00:23:19.016 --> 00:23:21.536 A:middle
+The update method receives the
+
+00:23:21.536 --> 00:23:23.446 A:middle
+source state and gradient state
+
+00:23:23.446 --> 00:23:23.956 A:middle
+as inputs.
+
+00:23:24.676 --> 00:23:27.726 A:middle
+So, the source state contains
+
+00:23:27.726 --> 00:23:29.176 A:middle
+the old weights, the gradient
+
+00:23:29.176 --> 00:23:30.546 A:middle
+state contains the computed
+
+00:23:30.546 --> 00:23:32.706 A:middle
+gradients, and now we can encode
+
+00:23:32.706 --> 00:23:34.736 A:middle
+our optimizer with this data,
+
+00:23:34.736 --> 00:23:36.666 A:middle
+and the last step is to return
+
+00:23:36.666 --> 00:23:38.276 A:middle
+the source state, which now has
+
+00:23:38.326 --> 00:23:39.226 A:middle
+the update weights.
+
+00:23:39.636 --> 00:23:40.466 A:middle
+So, pretty simple.
+
+00:23:40.936 --> 00:23:44.936 A:middle
+And now we have just one more
+
+00:23:44.936 --> 00:23:45.856 A:middle
+step to discuss.
+
+00:23:46.116 --> 00:23:47.546 A:middle
+So, as I said, training is an
+
+00:23:47.546 --> 00:23:48.526 A:middle
+iterative process.
+
+00:23:48.526 --> 00:23:50.416 A:middle
+It can take many iterations to
+
+00:23:50.416 --> 00:23:51.186 A:middle
+train a network.
+
+00:23:52.396 --> 00:23:53.906 A:middle
+And you will need to know when
+
+00:23:53.906 --> 00:23:54.676 A:middle
+to stop training.
+
+00:23:55.316 --> 00:23:57.036 A:middle
+So, let's now discuss how can
+
+00:23:57.036 --> 00:23:58.716 A:middle
+you make this decision in the
+
+00:23:58.716 --> 00:24:00.586 A:middle
+context of your training loop?
+

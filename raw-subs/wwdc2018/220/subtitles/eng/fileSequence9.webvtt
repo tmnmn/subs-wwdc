@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.476 --> 00:09:01.076 A:middle
+it's called we're deactivating
+
+00:09:01.276 --> 00:09:03.196 A:middle
+constraints and then activating
+
+00:09:03.196 --> 00:09:03.996 A:middle
+them again new ones.
+
+00:09:05.406 --> 00:09:06.546 A:middle
+We are saying this is analogous
+
+00:09:06.546 --> 00:09:07.326 A:middle
+to layoutSubviews.
+
+00:09:07.706 --> 00:09:09.616 A:middle
+So if we wrote the exact same
+
+00:09:09.616 --> 00:09:11.966 A:middle
+code in layout Subviews that is
+
+00:09:11.966 --> 00:09:14.076 A:middle
+the analog, that would be as if
+
+00:09:14.476 --> 00:09:16.996 A:middle
+you -- every time layoutSubviews
+
+00:09:16.996 --> 00:09:18.436 A:middle
+was called you destroyed all
+
+00:09:18.436 --> 00:09:20.236 A:middle
+your Subviews, created them from
+
+00:09:20.236 --> 00:09:22.076 A:middle
+scratch and then added them
+
+00:09:22.076 --> 00:09:22.346 A:middle
+again.
+
+00:09:23.436 --> 00:09:25.596 A:middle
+And I think a lot of people have
+
+00:09:25.596 --> 00:09:26.836 A:middle
+the completely accurate
+
+00:09:26.836 --> 00:09:27.946 A:middle
+intuition that that's not going
+
+00:09:27.946 --> 00:09:28.726 A:middle
+to perform very well.
+
+00:09:29.306 --> 00:09:31.916 A:middle
+So the thing to really get is
+
+00:09:31.916 --> 00:09:33.266 A:middle
+that it's the same.
+
+00:09:33.586 --> 00:09:34.976 A:middle
+Whatever intuition you take from
+
+00:09:34.976 --> 00:09:36.436 A:middle
+that apply it to
+
+00:09:36.436 --> 00:09:37.756 A:middle
+updateConstraints as well.
+
+00:09:38.046 --> 00:09:39.216 A:middle
+When you are ripping down
+
+00:09:39.216 --> 00:09:40.336 A:middle
+constraints like that you're
+
+00:09:40.336 --> 00:09:42.376 A:middle
+doing a lot of extra work.
+
+00:09:42.466 --> 00:09:43.156 A:middle
+So how do you fix it?
+
+00:09:43.766 --> 00:09:46.076 A:middle
+Well, you need to use -- as we
+
+00:09:46.076 --> 00:09:47.116 A:middle
+were saying, you need to make
+
+00:09:47.116 --> 00:09:48.536 A:middle
+sure that you're not doing it
+
+00:09:48.536 --> 00:09:49.286 A:middle
+more than once.
+
+00:09:49.506 --> 00:09:50.606 A:middle
+It's for deferring work.
+
+00:09:51.566 --> 00:09:53.076 A:middle
+So it should be something like
+
+00:09:53.076 --> 00:09:54.576 A:middle
+this, we say did we already do
+
+00:09:54.576 --> 00:09:55.056 A:middle
+this work?
+
+00:09:55.636 --> 00:09:57.326 A:middle
+If we did then just don't do
+
+00:09:57.326 --> 00:09:57.856 A:middle
+anything at all.
+
+00:09:57.856 --> 00:09:58.886 A:middle
+If we haven't done it yet, then
+
+00:09:58.886 --> 00:09:59.816 A:middle
+sure set up those constraints
+
+00:09:59.816 --> 00:09:59.976 A:middle
+once.
+

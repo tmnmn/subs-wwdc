@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.766 --> 00:41:00.216 A:middle
+terms of the subsequence.
+
+00:41:00.616 --> 00:41:02.206 A:middle
+But that index that's returned
+
+00:41:02.656 --> 00:41:04.786 A:middle
+also needs to be a valid index
+
+00:41:04.936 --> 00:41:06.406 A:middle
+for the current collection.
+
+00:41:06.766 --> 00:41:08.276 A:middle
+So we can capture all of these
+
+00:41:08.276 --> 00:41:10.246 A:middle
+requirements in the collection
+
+00:41:10.246 --> 00:41:11.456 A:middle
+protocol itself.
+
+00:41:11.456 --> 00:41:13.416 A:middle
+Now the first thing we want to
+
+00:41:13.416 --> 00:41:15.376 A:middle
+do is say that the subsequence
+
+00:41:15.376 --> 00:41:17.076 A:middle
+of a collection is itself a
+
+00:41:17.076 --> 00:41:17.696 A:middle
+collection.
+
+00:41:18.046 --> 00:41:19.606 A:middle
+This is a so-called recursive
+
+00:41:19.606 --> 00:41:20.256 A:middle
+constraint.
+
+00:41:20.446 --> 00:41:21.676 A:middle
+Because the associated type
+
+00:41:21.676 --> 00:41:23.626 A:middle
+conforms to its own enclosing
+
+00:41:23.626 --> 00:41:24.156 A:middle
+protocol.
+
+00:41:24.996 --> 00:41:27.176 A:middle
+We can then use associated type
+
+00:41:27.176 --> 00:41:29.036 A:middle
+where clauses to further
+
+00:41:29.036 --> 00:41:30.736 A:middle
+constrain our subsequence.
+
+00:41:31.356 --> 00:41:33.386 A:middle
+As we talked about earlier, it
+
+00:41:33.386 --> 00:41:34.576 A:middle
+has an element type.
+
+00:41:34.576 --> 00:41:36.086 A:middle
+And that element type needs to
+
+00:41:36.086 --> 00:41:38.006 A:middle
+be the same as that of the
+
+00:41:38.006 --> 00:41:39.136 A:middle
+original collection.
+
+00:41:39.376 --> 00:41:40.606 A:middle
+So we can express that here with
+
+00:41:40.606 --> 00:41:41.656 A:middle
+the same type constraint.
+
+00:41:41.856 --> 00:41:43.416 A:middle
+Subsequent element is the same
+
+00:41:43.416 --> 00:41:44.136 A:middle
+as element.
+
+00:41:45.006 --> 00:41:46.436 A:middle
+We can do exactly the same thing
+
+00:41:46.436 --> 00:41:47.466 A:middle
+for the index type.
+
+00:41:48.266 --> 00:41:49.776 A:middle
+Now, these cover all the
+
+00:41:49.776 --> 00:41:51.696 A:middle
+properties that we discovered by
+
+00:41:51.696 --> 00:41:53.416 A:middle
+looking at the implementation of
+
+00:41:53.416 --> 00:41:54.926 A:middle
+the sorted insertion point of
+
+00:41:55.076 --> 00:41:55.776 A:middle
+algorithm.
+
+00:41:57.076 --> 00:41:58.886 A:middle
+This leads us to an interesting
+
+00:41:58.886 --> 00:41:59.466 A:middle
+question.
+
+00:41:59.776 --> 00:42:01.666 A:middle
+Can you slice a subsequence?
+

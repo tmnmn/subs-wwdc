@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.546 --> 00:25:00.006 A:middle
+And, by giving this information
+
+00:25:00.006 --> 00:25:01.996 A:middle
+to the system, we can understand
+
+00:25:01.996 --> 00:25:03.276 A:middle
+and learn patterns in the user's
+
+00:25:03.276 --> 00:25:03.836 A:middle
+behavior.
+
+00:25:03.836 --> 00:25:06.646 A:middle
+So, if the user, for example, is
+
+00:25:06.646 --> 00:25:07.766 A:middle
+looking or performing the same
+
+00:25:07.766 --> 00:25:08.996 A:middle
+action at the same time every
+
+00:25:08.996 --> 00:25:10.966 A:middle
+single day, or around similar
+
+00:25:10.966 --> 00:25:12.746 A:middle
+locations, the system can pick
+
+00:25:12.746 --> 00:25:14.186 A:middle
+up on these patterns, and again,
+
+00:25:14.186 --> 00:25:15.526 A:middle
+surface the relevant shortcuts
+
+00:25:15.556 --> 00:25:16.956 A:middle
+when they're appropriate to your
+
+00:25:16.956 --> 00:25:17.456 A:middle
+users.
+
+00:25:19.236 --> 00:25:21.886 A:middle
+So, if you're using
+
+00:25:21.886 --> 00:25:23.426 A:middle
+NSUserActivities to represent
+
+00:25:23.566 --> 00:25:25.286 A:middle
+your donations, there's a few
+
+00:25:25.286 --> 00:25:26.416 A:middle
+things you need to do to be able
+
+00:25:26.536 --> 00:25:27.576 A:middle
+to provide those donations to
+
+00:25:27.576 --> 00:25:28.066 A:middle
+the system.
+
+00:25:28.706 --> 00:25:30.056 A:middle
+The first is you need to set
+
+00:25:30.106 --> 00:25:31.296 A:middle
+both these properties to "true"
+
+00:25:31.296 --> 00:25:32.856 A:middle
+in your NSUserActivity, the
+
+00:25:32.856 --> 00:25:34.096 A:middle
+eligibleForPrediction and
+
+00:25:34.096 --> 00:25:35.066 A:middle
+eligibleForSearch.
+
+00:25:37.056 --> 00:25:38.156 A:middle
+Next, you need to make sure that
+
+00:25:38.156 --> 00:25:39.436 A:middle
+your user activity is supported
+
+00:25:39.436 --> 00:25:40.936 A:middle
+by an application, by indicating
+
+00:25:40.936 --> 00:25:42.206 A:middle
+that within your info.plist.
+
+00:25:43.936 --> 00:25:44.926 A:middle
+And, finally you want to make
+
+00:25:44.926 --> 00:25:46.056 A:middle
+sure that you're donating these
+
+00:25:46.056 --> 00:25:47.196 A:middle
+user activities whenever this
+
+00:25:47.236 --> 00:25:48.636 A:middle
+piece of content is visible to
+
+00:25:48.636 --> 00:25:50.096 A:middle
+the user, so the system can
+
+00:25:50.096 --> 00:25:50.966 A:middle
+start to pick up on the
+
+00:25:50.966 --> 00:25:51.566 A:middle
+patterns.
+
+00:25:51.966 --> 00:25:54.696 A:middle
+And so, to provide that
+
+00:25:54.696 --> 00:25:56.166 A:middle
+donation, there's a method on
+
+00:25:56.216 --> 00:25:57.756 A:middle
+NSUserActivity, becomeCurrent,
+
+00:25:58.006 --> 00:25:59.126 A:middle
+that allows you to donate to the
+
+00:25:59.126 --> 00:25:59.546 A:middle
+system.
+

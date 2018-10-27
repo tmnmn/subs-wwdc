@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.372 --> 00:24:03.777 align:start position:5% line:-2
+checkCurrentLocationメソッドに
+１カ所 変更が必要です
+
+00:24:05.379 --> 00:24:07.848 align:start position:30% line:-2
+最後に
+デリゲートメソッドです
+
+00:24:08.115 --> 00:24:12.653 align:start position:27% line:-2
+少し問題なのはデリゲートが
+マネージャパラメータを―
+
+00:24:12.753 --> 00:24:16.924 align:start position:12% line:-2
+本物のCLLocationManagerと
+考えるからです
+
+00:24:17.491 --> 00:24:20.594 align:start position:30% line:-2
+デリゲートでは
+少し複雑になりますが―
+
+00:24:20.694 --> 00:24:22.930 align:start position:29% line:-1
+プロトコルを適用できます
+
+00:24:23.030 --> 00:24:24.631 align:start position:38% line:-1
+確認しましょう
+
+00:24:26.300 --> 00:24:30.003 align:start position:23% line:-2
+LocationFetcher
+プロトコルに戻り
+
+00:24:30.270 --> 00:24:34.474 align:start position:7% line:-2
+デリゲートプロパティ名を
+LocationFetcherDelegateへ
+
+00:24:34.575 --> 00:24:36.643 align:start position:29% line:-1
+そして型は新プロトコルへ
+
+00:24:36.743 --> 00:24:40.681 align:start position:4% line:-2
+CLLocationManagerDelegateと
+ほぼ同じインターフェイスです
+
+00:24:40.781 --> 00:24:42.449 align:start position:30% line:-1
+しかしメソッド名を変え
+
+00:24:42.549 --> 00:24:45.986 align:start position:21% line:-2
+最初のパラメータ型を
+LocationFetcherへ
+
+00:24:49.289 --> 00:24:53.393 align:start position:9% line:-2
+LocationFetcherDelegate
+プロパティを実装しましょう
+
+00:24:53.494 --> 00:24:56.430 align:start position:34% line:-2
+もはや要件を
+満たさないからです
+
+00:24:56.897 --> 00:24:59.800 align:start position:29% line:-2
+ゲッタとセッタを実装し
+フォースキャストを用い―
+
+00:24:59.900 --> 00:25:03.270 align:start position:20% line:-2
+CLLocationManager
+Delegateとの間で変換
+

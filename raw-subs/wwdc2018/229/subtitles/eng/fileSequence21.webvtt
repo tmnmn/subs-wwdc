@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.476 --> 00:21:01.146 A:middle
+And you have to be able to do
+
+00:21:01.146 --> 00:21:01.976 A:middle
+this in constant time.
+
+00:21:05.356 --> 00:21:07.846 A:middle
+The next is called a Range
+
+00:21:07.846 --> 00:21:08.856 A:middle
+Replaceable Collection, and this
+
+00:21:08.856 --> 00:21:09.726 A:middle
+is the kind of collection that
+
+00:21:09.726 --> 00:21:11.196 A:middle
+you get when you can remove
+
+00:21:11.196 --> 00:21:13.596 A:middle
+elements from a collection or
+
+00:21:13.596 --> 00:21:14.196 A:middle
+insert them.
+
+00:21:14.326 --> 00:21:16.916 A:middle
+And now I want to talk about one
+
+00:21:16.916 --> 00:21:18.326 A:middle
+of the questions I get asked all
+
+00:21:19.176 --> 00:21:20.206 A:middle
+the time.
+
+00:21:20.416 --> 00:21:21.806 A:middle
+Why does my perfectly reasonable
+
+00:21:21.806 --> 00:21:22.646 A:middle
+collection code crash?
+
+00:21:23.736 --> 00:21:24.796 A:middle
+And like all good question
+
+00:21:24.796 --> 00:21:26.066 A:middle
+answers, I almost always follow
+
+00:21:26.066 --> 00:21:26.986 A:middle
+up with a few questions of my
+
+00:21:26.986 --> 00:21:27.206 A:middle
+own.
+
+00:21:28.436 --> 00:21:29.246 A:middle
+Sometimes I start with the
+
+00:21:29.246 --> 00:21:30.186 A:middle
+classic, well what are you
+
+00:21:30.186 --> 00:21:30.706 A:middle
+trying to do?
+
+00:21:30.896 --> 00:21:32.986 A:middle
+And I usually quickly follow up
+
+00:21:32.986 --> 00:21:34.026 A:middle
+with, well how are you using
+
+00:21:34.026 --> 00:21:34.756 A:middle
+your collections?
+
+00:21:35.156 --> 00:21:36.056 A:middle
+Are you mutating them?
+
+00:21:36.236 --> 00:21:36.786 A:middle
+Are you sure you aren't
+
+00:21:36.786 --> 00:21:37.806 A:middle
+accessing your collections for
+
+00:21:37.806 --> 00:21:38.366 A:middle
+multiple threads?
+
+00:21:38.976 --> 00:21:40.366 A:middle
+And I ask these questions
+
+00:21:40.366 --> 00:21:42.836 A:middle
+because their answers often lead
+
+00:21:42.836 --> 00:21:44.186 A:middle
+to the root cause of the
+
+00:21:44.456 --> 00:21:44.776 A:middle
+problem.
+
+00:21:44.776 --> 00:21:46.696 A:middle
+Well, let's begin with the
+
+00:21:46.696 --> 00:21:47.556 A:middle
+assumption that threads aren't
+
+00:21:47.556 --> 00:21:47.866 A:middle
+involved.
+
+00:21:48.276 --> 00:21:49.146 A:middle
+I'm not ready to think about
+
+00:21:49.146 --> 00:21:49.516 A:middle
+threads yet.
+
+00:21:49.516 --> 00:21:51.996 A:middle
+It's not even 9:30.
+
+00:21:52.176 --> 00:21:54.026 A:middle
+Suppose we had an array, and we
+
+00:21:54.026 --> 00:21:55.716 A:middle
+get the index of an element that
+
+00:21:55.716 --> 00:21:57.576 A:middle
+we know is there, in this case
+
+00:21:57.576 --> 00:21:58.076 A:middle
+the value e.
+
+00:21:58.346 --> 00:21:59.396 A:middle
+And then we mutate the
+
+00:21:59.396 --> 00:22:00.546 A:middle
+collection, say by removing its
+

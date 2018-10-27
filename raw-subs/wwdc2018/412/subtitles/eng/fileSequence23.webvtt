@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.886 --> 00:23:00.796 A:middle
+code that's modifying the
+
+00:23:00.796 --> 00:23:01.706 A:middle
+attempts variable.
+
+00:23:02.186 --> 00:23:04.436 A:middle
+I can disable this watchpoint
+
+00:23:04.436 --> 00:23:05.336 A:middle
+because I no longer need it.
+
+00:23:05.336 --> 00:23:06.736 A:middle
+And we can look at the code here
+
+00:23:06.936 --> 00:23:07.896 A:middle
+while the game's playing,
+
+00:23:07.896 --> 00:23:09.126 A:middle
+increment attempts, and if
+
+00:23:09.126 --> 00:23:10.376 A:middle
+successful, increment score.
+
+00:23:10.716 --> 00:23:12.106 A:middle
+So I'm not seeing any logic that
+
+00:23:12.106 --> 00:23:13.406 A:middle
+will detect if attempts has
+
+00:23:13.406 --> 00:23:15.426 A:middle
+exceeded maximum and transition
+
+00:23:15.426 --> 00:23:16.526 A:middle
+to the end-of-game state.
+
+00:23:17.136 --> 00:23:18.086 A:middle
+So I think that's all that's
+
+00:23:18.086 --> 00:23:19.416 A:middle
+needed, but in this case, I'd
+
+00:23:19.416 --> 00:23:20.786 A:middle
+like to test my hypothesis
+
+00:23:21.006 --> 00:23:22.406 A:middle
+before I make any actual code
+
+00:23:22.406 --> 00:23:22.916 A:middle
+changes.
+
+00:23:23.316 --> 00:23:24.596 A:middle
+So I'm going to create a
+
+00:23:24.596 --> 00:23:26.306 A:middle
+breakpoint and configure it to
+
+00:23:26.306 --> 00:23:27.616 A:middle
+inject that change to see if it
+
+00:23:27.616 --> 00:23:29.246 A:middle
+fixes the problem before I make
+
+00:23:29.246 --> 00:23:30.096 A:middle
+any code changes.
+
+00:23:30.536 --> 00:23:31.656 A:middle
+So once again, I can add a
+
+00:23:31.656 --> 00:23:32.876 A:middle
+debugger command action with an
+
+00:23:32.876 --> 00:23:34.676 A:middle
+expression and I think what we
+
+00:23:34.676 --> 00:23:36.406 A:middle
+need is if attempts is greater
+
+00:23:36.406 --> 00:23:38.516 A:middle
+and equal to max attempts, then
+
+00:23:38.516 --> 00:23:39.826 A:middle
+we change the game state to
+
+00:23:39.826 --> 00:23:41.826 A:middle
+ended and make this order
+
+00:23:41.826 --> 00:23:42.356 A:middle
+continuing.
+
+00:23:42.996 --> 00:23:44.406 A:middle
+So now it's easy just to test if
+
+00:23:44.406 --> 00:23:45.666 A:middle
+that actually fixes the problem
+
+00:23:45.666 --> 00:23:46.616 A:middle
+by pressing continue.
+
+00:23:46.876 --> 00:23:48.136 A:middle
+Execution will continue through
+
+00:23:48.136 --> 00:23:48.816 A:middle
+this breakpoint.
+
+00:23:49.116 --> 00:23:50.486 A:middle
+Inject the code and we can see
+
+00:23:50.546 --> 00:23:51.856 A:middle
+that it does look like it fixes
+
+00:23:51.856 --> 00:23:52.286 A:middle
+the problem.
+
+00:23:52.386 --> 00:23:54.166 A:middle
+I'd like to verify that from the
+
+00:23:54.166 --> 00:23:55.356 A:middle
+start of the game and I can
+
+00:23:55.356 --> 00:23:56.386 A:middle
+quickly and easily do that by
+
+00:23:56.386 --> 00:23:58.146 A:middle
+clicking play again and rapidly
+
+00:23:58.146 --> 00:23:59.526 A:middle
+progressing through 10 attempts.
+
+00:23:59.976 --> 00:24:01.186 A:middle
+And at the tenth, we see that it
+

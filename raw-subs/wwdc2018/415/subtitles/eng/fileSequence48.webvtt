@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:55.956 --> 00:48:00.256 A:middle
+There are also TBD files, or
+
+00:48:00.346 --> 00:48:02.156 A:middle
+text-based dylib stubs.
+
+00:48:02.156 --> 00:48:03.286 A:middle
+So what are those?
+
+00:48:04.036 --> 00:48:08.286 A:middle
+Well, when we made the SDKs for
+
+00:48:08.286 --> 00:48:10.256 A:middle
+iOS and macOS, we had all these
+
+00:48:10.296 --> 00:48:11.336 A:middle
+dylibs with all these great
+
+00:48:11.336 --> 00:48:13.146 A:middle
+functions like MapKit and WebKit
+
+00:48:13.146 --> 00:48:14.296 A:middle
+that you may want to use.
+
+00:48:14.816 --> 00:48:15.966 A:middle
+But we don't want to ship the
+
+00:48:15.966 --> 00:48:17.326 A:middle
+entire copy of those with the
+
+00:48:17.326 --> 00:48:18.856 A:middle
+SDK because it would be large.
+
+00:48:18.856 --> 00:48:21.096 A:middle
+Ant the compiler and linker
+
+00:48:21.096 --> 00:48:21.606 A:middle
+don't need.
+
+00:48:21.606 --> 00:48:22.826 A:middle
+It's only needed to run the
+
+00:48:22.826 --> 00:48:23.236 A:middle
+program.
+
+00:48:23.236 --> 00:48:24.106 A:middle
+So instead we create what's
+
+00:48:24.106 --> 00:48:25.356 A:middle
+called a stub dylib where we
+
+00:48:25.356 --> 00:48:27.156 A:middle
+delete the bodies of all of the
+
+00:48:27.156 --> 00:48:27.966 A:middle
+symbols and we just have the
+
+00:48:27.966 --> 00:48:28.716 A:middle
+names.
+
+00:48:29.456 --> 00:48:31.176 A:middle
+And then once we did that, we've
+
+00:48:31.176 --> 00:48:32.526 A:middle
+made a textual representation of
+
+00:48:32.526 --> 00:48:33.576 A:middle
+them that are easier for us to
+
+00:48:33.576 --> 00:48:33.866 A:middle
+use.
+
+00:48:33.866 --> 00:48:35.536 A:middle
+Currently, they are only used
+
+00:48:35.766 --> 00:48:38.056 A:middle
+for distributing the SDKs to
+
+00:48:38.056 --> 00:48:38.876 A:middle
+reduce size.
+
+00:48:40.246 --> 00:48:41.566 A:middle
+So you may see them in your
+
+00:48:41.566 --> 00:48:42.596 A:middle
+project, but you don't have to
+
+00:48:42.596 --> 00:48:43.246 A:middle
+worry about them.
+
+00:48:43.246 --> 00:48:45.016 A:middle
+And they only contain symbols.
+
+00:48:46.226 --> 00:48:47.166 A:middle
+Finally, we have static
+
+00:48:47.166 --> 00:48:48.106 A:middle
+archives.
+
+00:48:48.526 --> 00:48:53.086 A:middle
+So static archives are just
+
+00:48:53.086 --> 00:48:54.626 A:middle
+collections of .o files that
+
+00:48:54.626 --> 00:48:56.746 A:middle
+have been built with the AR tool
+
+00:48:56.746 --> 00:48:59.226 A:middle
+or in some cases the lib the lib
+
+00:48:59.226 --> 00:49:00.156 A:middle
+tool which is a wrapper for
+

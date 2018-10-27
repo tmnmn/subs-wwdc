@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.746 --> 00:16:00.516 A:middle
+we didn't add any special case
+
+00:16:00.516 --> 00:16:01.506 A:middle
+for these animations.
+
+00:16:02.186 --> 00:16:03.296 A:middle
+We just kind of got this
+
+00:16:03.296 --> 00:16:05.516 A:middle
+animated layout for free by
+
+00:16:05.516 --> 00:16:07.466 A:middle
+doing our layout inside of an
+
+00:16:07.466 --> 00:16:08.326 A:middle
+animation block.
+
+00:16:09.266 --> 00:16:10.756 A:middle
+This is really, really awesome.
+
+00:16:11.526 --> 00:16:12.946 A:middle
+So, that's how we can add
+
+00:16:12.946 --> 00:16:14.356 A:middle
+animations to our layout-driven
+
+00:16:14.356 --> 00:16:15.426 A:middle
+UI app.
+
+00:16:16.176 --> 00:16:17.856 A:middle
+Finally, let's take about the
+
+00:16:18.006 --> 00:16:20.136 A:middle
+third core aspect of an iOS app,
+
+00:16:20.306 --> 00:16:21.536 A:middle
+and that's gestures.
+
+00:16:22.166 --> 00:16:24.026 A:middle
+And, of course, we can't talk
+
+00:16:24.026 --> 00:16:25.516 A:middle
+about gestures without talking
+
+00:16:25.516 --> 00:16:27.386 A:middle
+about UIGestureRecognizer,
+
+00:16:27.876 --> 00:16:29.916 A:middle
+UIKit's awesome API for adding
+
+00:16:29.916 --> 00:16:31.386 A:middle
+gestural interactions to your
+
+00:16:33.266 --> 00:16:33.346 A:middle
+app.
+
+00:16:33.616 --> 00:16:35.186 A:middle
+&gt;&gt; UIKit provides a number of
+
+00:16:35.226 --> 00:16:36.976 A:middle
+great concrete subclasses of
+
+00:16:36.976 --> 00:16:38.086 A:middle
+UIgestureRecognizer.
+
+00:16:38.936 --> 00:16:40.646 A:middle
+Everything from pans to pinches
+
+00:16:40.646 --> 00:16:41.876 A:middle
+to swipes to rotation.
+
+00:16:42.486 --> 00:16:43.496 A:middle
+You should be able to create the
+
+00:16:43.496 --> 00:16:44.686 A:middle
+kind of interactions you want,
+
+00:16:44.686 --> 00:16:45.346 A:middle
+using these.
+
+00:16:45.856 --> 00:16:47.266 A:middle
+And, they're highly customizable
+
+00:16:47.266 --> 00:16:47.656 A:middle
+as well.
+
+00:16:49.026 --> 00:16:50.366 A:middle
+If you want something really
+
+00:16:50.506 --> 00:16:52.366 A:middle
+crazy, you can always subclass
+
+00:16:52.366 --> 00:16:53.696 A:middle
+UIGestureRecognizer yourself as
+
+00:16:53.696 --> 00:16:53.936 A:middle
+well.
+
+00:16:55.876 --> 00:16:57.206 A:middle
+&gt;&gt; When looking between the
+
+00:16:57.206 --> 00:16:57.746 A:middle
+built-in
+
+00:16:57.746 --> 00:17:00.206 A:middle
+UIKitGestureRecognizers, it's
+

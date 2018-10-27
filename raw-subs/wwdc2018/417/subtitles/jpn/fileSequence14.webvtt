@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:54.668 --> 00:14:00.174 align:start position:20% line:-2
+ここで“通知”というのは
+Foundationレベルの通知で
+
+00:14:00.274 --> 00:14:02.876 align:start position:23% line:-2
+NSNotificationと
+Objective-Cです
+
+00:14:03.243 --> 00:14:07.114 align:start position:30% line:-2
+通知の監視を
+テストすることもあれば
+
+00:14:07.214 --> 00:14:11.018 align:start position:29% line:-2
+通知の送信を
+テストする場合もあります
+
+00:14:11.418 --> 00:14:14.621 align:start position:30% line:-2
+通知は１対多数の
+コミュニケーションです
+
+00:14:14.721 --> 00:14:20.761 align:start position:27% line:-2
+つまり１つの通知の受け手は
+アプリケーション全体や―
+
+00:14:20.861 --> 00:14:24.198 align:start position:29% line:-2
+フレームワークコード内に
+複数います
+
+00:14:24.298 --> 00:14:29.603 align:start position:30% line:-2
+そこで通知のテストでは
+分離することが重要です
+
+00:14:29.703 --> 00:14:33.440 align:start position:30% line:-1
+意図しない副作用を避け
+
+00:14:33.540 --> 00:14:37.311 align:start position:34% line:-2
+信頼性を損なうのを
+防ぐためです
+
+00:14:37.511 --> 00:14:40.681 align:start position:30% line:-2
+この問題のあるコードを
+見ましょう
+
+00:14:41.248 --> 00:14:45.819 align:start position:12% line:-2
+PointsOfInterest
+TableViewControllerです
+
+00:14:46.086 --> 00:14:49.356 align:start position:30% line:-2
+近くのスポットを
+テーブルビューで表示し
+
+00:14:49.656 --> 00:14:54.461 align:start position:29% line:-2
+位置承認に変更があると
+データを再読み込みします
+
+00:14:54.628 --> 00:14:57.331 align:start position:20% line:-1
+authChangedという通知を
+
+00:14:57.431 --> 00:15:00.467 align:start position:9% line:-2
+CurrentLocationProvider
+クラスから監視します
+

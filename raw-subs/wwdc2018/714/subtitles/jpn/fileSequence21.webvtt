@@ -1,0 +1,48 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:02.095 --> 00:21:05.899 align:start position:32% line:-2
+このプロトコルは
+HTTP/1.1です
+
+00:21:06.867 --> 00:21:08.769 align:start position:29% line:-1
+リソースを取得するため―
+
+00:21:09.336 --> 00:21:13.640 align:start position:30% line:-2
+URLSessionで
+タスクを開始します
+
+00:21:14.141 --> 00:21:17.578 align:start position:32% line:-2
+するとDNSやTCP
+TLSを含んだ―
+
+00:21:17.678 --> 00:21:21.615 align:start position:29% line:-1
+新たな接続が作成されます
+
+00:21:22.616 --> 00:21:27.154 align:start position:34% line:-2
+サーバに接続したら
+リクエストを送り―
+
+00:21:28.455 --> 00:21:31.959 align:start position:27% line:-1
+サーバからの応答を待ちます
+
+00:21:32.593 --> 00:21:38.899 align:start position:27% line:-2
+この間 アプリケーションに
+待機時間が発生するのです
+
+00:21:40.567 --> 00:21:44.004 align:start position:36% line:-2
+応答が得られたら
+終了ブロックか―
+
+00:21:44.104 --> 00:21:47.875 align:start position:32% line:-2
+デリゲートで
+ロードを終了させます
+
+00:21:49.309 --> 00:21:54.314 align:start position:29% line:-2
+ロード中に別のリソースを
+取得することも可能です
+
+00:21:55.449 --> 00:22:00.554 align:start position:21% line:-2
+その場合はURLSessionで
+別のタスクを作成し―
+

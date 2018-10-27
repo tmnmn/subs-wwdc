@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.293 --> 00:06:03.897 align:start position:29% line:-2
+ターゲットとリンクさせる
+アイテムを定義します
+
+00:06:04.631 --> 00:06:08.535 align:start position:25% line:-2
+ここでは Physicsと
+Utilitiesがあります
+
+00:06:09.937 --> 00:06:12.940 align:start position:30% line:-2
+これがプロジェクト内の
+ターゲットで
+
+00:06:13.040 --> 00:06:17.010 align:start position:30% line:-2
+Xcodeが依存関係を
+作成しています
+
+00:06:17.678 --> 00:06:21.381 align:start position:20% line:-1
+Autolinkなどのリンク機能や
+
+00:06:21.615 --> 00:06:24.284 align:start position:20% line:-2
+LD Build Flagsなどを
+用いている場合
+
+00:06:24.384 --> 00:06:28.021 align:start position:34% line:-2
+暗示的な依存関係の
+作成はできません
+
+00:06:28.121 --> 00:06:31.658 align:start position:34% line:-2
+明示的な依存関係を
+このフェーズか―
+
+00:06:32.125 --> 00:06:35.262 align:start position:7% line:-2
+Target Dependenciesフェーズで
+作成します
+
+00:06:35.896 --> 00:06:39.500 align:start position:29% line:-2
+さて このシェーダという
+アイテムは
+
+00:06:40.634 --> 00:06:43.637 align:start position:29% line:-1
+リンク時には使用しません
+
+00:06:43.737 --> 00:06:47.841 align:start position:32% line:-2
+別のビルドフェーズで
+使用されます
+
+00:06:48.041 --> 00:06:51.411 align:start position:30% line:-2
+それをXcodeに
+知らせることが重要です
+
+00:06:51.512 --> 00:06:54.882 align:start position:27% line:-1
+ターゲットをビルドする前に
+
+00:06:54.982 --> 00:06:59.219 align:start position:23% line:-2
+シェーダのビルドとコンパイルも
+完了させます
+

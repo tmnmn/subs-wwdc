@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.136 --> 00:36:01.986 A:middle
+And this property is also
+
+00:36:02.246 --> 00:36:03.426 A:middle
+configurable from Interface
+
+00:36:04.056 --> 00:36:04.216 A:middle
+Builder.
+
+00:36:06.486 --> 00:36:07.826 A:middle
+Now let's rotate back to
+
+00:36:07.826 --> 00:36:08.246 A:middle
+portrait.
+
+00:36:08.666 --> 00:36:09.836 A:middle
+And in the main screen of our
+
+00:36:09.836 --> 00:36:11.566 A:middle
+application, we mentioned this
+
+00:36:11.566 --> 00:36:12.676 A:middle
+sheet that slides up from the
+
+00:36:12.676 --> 00:36:13.986 A:middle
+bottom before containing a
+
+00:36:13.986 --> 00:36:14.476 A:middle
+picker view.
+
+00:36:15.606 --> 00:36:19.536 A:middle
+Now the safe area of the screen
+
+00:36:19.536 --> 00:36:23.026 A:middle
+here means that we have to
+
+00:36:23.256 --> 00:36:25.066 A:middle
+adjust the layout of the picker
+
+00:36:25.066 --> 00:36:28.706 A:middle
+view to be inside this safe
+
+00:36:28.706 --> 00:36:28.946 A:middle
+area.
+
+00:36:31.036 --> 00:36:33.426 A:middle
+And most of the system controls,
+
+00:36:33.486 --> 00:36:34.966 A:middle
+like UI picker view and other
+
+00:36:34.966 --> 00:36:36.016 A:middle
+controls, and probably controls
+
+00:36:36.016 --> 00:36:37.426 A:middle
+of your own many views don't
+
+00:36:37.426 --> 00:36:39.976 A:middle
+make sense to have to know
+
+00:36:39.976 --> 00:36:40.986 A:middle
+anything about the safe area.
+
+00:36:40.986 --> 00:36:42.586 A:middle
+Because it's not clear how they
+
+00:36:42.586 --> 00:36:44.446 A:middle
+would respond or like re-lay out
+
+00:36:44.446 --> 00:36:45.446 A:middle
+themselves internally.
+
+00:36:46.496 --> 00:36:47.556 A:middle
+So we have a recommended
+
+00:36:47.606 --> 00:36:49.126 A:middle
+technique for handling the
+
+00:36:49.126 --> 00:36:50.216 A:middle
+layout of these kinds of views,
+
+00:36:50.636 --> 00:36:53.146 A:middle
+which is to place them inside of
+
+00:36:53.146 --> 00:36:53.766 A:middle
+the container view.
+
+00:36:53.766 --> 00:36:56.016 A:middle
+And the responsibility of this
+
+00:36:56.046 --> 00:36:57.966 A:middle
+container view is simply to
+
+00:36:58.266 --> 00:37:00.466 A:middle
+position its safe area unaware
+

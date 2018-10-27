@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.706 --> 00:12:01.156 A:middle
+file is safely read to present a
+
+00:12:01.156 --> 00:12:02.746 A:middle
+preview for you.
+
+00:12:02.956 --> 00:12:04.566 A:middle
+Now, there's a dedicated endup
+
+00:12:04.566 --> 00:12:06.696 A:middle
+session about Quick Look and
+
+00:12:06.696 --> 00:12:08.006 A:middle
+previewing all file types,
+
+00:12:08.006 --> 00:12:10.056 A:middle
+including the new usdz file type
+
+00:12:10.056 --> 00:12:10.916 A:middle
+that I encourage you to check
+
+00:12:10.916 --> 00:12:10.983 A:middle
+out.
+
+00:12:13.346 --> 00:12:15.426 A:middle
+So, let's take a quick look at
+
+00:12:15.426 --> 00:12:16.716 A:middle
+the preview flow.
+
+00:12:16.956 --> 00:12:18.006 A:middle
+Here's the apps ViewController
+
+00:12:18.086 --> 00:12:18.596 A:middle
+on the left.
+
+00:12:19.136 --> 00:12:20.816 A:middle
+It has a grid of thumbnails for
+
+00:12:20.816 --> 00:12:22.076 A:middle
+various 3D models.
+
+00:12:22.486 --> 00:12:23.376 A:middle
+When someone taps on one of
+
+00:12:23.376 --> 00:12:24.896 A:middle
+these thumbnails, I want to show
+
+00:12:24.896 --> 00:12:25.726 A:middle
+a Quick Look preview of the
+
+00:12:25.726 --> 00:12:26.886 A:middle
+model for that thumbnail.
+
+00:12:27.596 --> 00:12:29.246 A:middle
+The first thing I want to do is
+
+00:12:29.246 --> 00:12:31.126 A:middle
+create a QLPreviewController.
+
+00:12:31.596 --> 00:12:32.826 A:middle
+I have instance, I have
+
+00:12:32.826 --> 00:12:34.096 A:middle
+ViewController that allows you
+
+00:12:34.096 --> 00:12:35.046 A:middle
+to preview documents.
+
+00:12:35.806 --> 00:12:37.876 A:middle
+And I set myself as a dataSource
+
+00:12:38.126 --> 00:12:38.706 A:middle
+and a delegate.
+
+00:12:38.916 --> 00:12:40.586 A:middle
+So it can ask me questions about
+
+00:12:40.586 --> 00:12:41.476 A:middle
+what should be previewed.
+
+00:12:42.496 --> 00:12:43.876 A:middle
+With that configured, I present
+
+00:12:43.876 --> 00:12:45.256 A:middle
+that QLPreviewController.
+
+00:12:46.086 --> 00:12:47.836 A:middle
+Now, it doesn't appear
+
+00:12:47.836 --> 00:12:48.766 A:middle
+immediately, however.
+
+00:12:49.036 --> 00:12:50.636 A:middle
+It first asks me some questions.
+
+00:12:51.336 --> 00:12:53.186 A:middle
+It starts by asking how many
+
+00:12:53.186 --> 00:12:54.486 A:middle
+items do you have for me to
+
+00:12:55.256 --> 00:12:55.826 A:middle
+preview?
+
+00:12:55.826 --> 00:12:57.736 A:middle
+And for usdz files, the answer
+
+00:12:57.736 --> 00:12:58.096 A:middle
+is one.
+
+00:12:59.386 --> 00:13:01.746 A:middle
+Now, it asks me for a URL for
+

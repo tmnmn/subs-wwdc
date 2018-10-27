@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.106 --> 00:28:01.236 A:middle
+And knowing which pass to focus
+
+00:28:01.236 --> 00:28:02.846 A:middle
+on is quite important.
+
+00:28:03.646 --> 00:28:05.876 A:middle
+The good news is we have great
+
+00:28:05.876 --> 00:28:07.756 A:middle
+profiling tools built into Metal
+
+00:28:07.756 --> 00:28:09.886 A:middle
+frame debugger to help you with
+
+00:28:11.236 --> 00:28:11.386 A:middle
+this.
+
+00:28:11.576 --> 00:28:13.636 A:middle
+GPU counters gives you high
+
+00:28:13.636 --> 00:28:14.736 A:middle
+level performance [inaudible] of
+
+00:28:14.736 --> 00:28:15.476 A:middle
+your app.
+
+00:28:16.406 --> 00:28:17.846 A:middle
+That you can see, time
+
+00:28:17.946 --> 00:28:19.946 A:middle
+[inaudible] or draw call, and
+
+00:28:19.946 --> 00:28:21.896 A:middle
+also providing you different
+
+00:28:21.896 --> 00:28:23.786 A:middle
+counters showing bottlenecks.
+
+00:28:25.066 --> 00:28:26.686 A:middle
+And from here, once you know
+
+00:28:26.856 --> 00:28:28.616 A:middle
+your expansive pass, you can
+
+00:28:28.616 --> 00:28:29.526 A:middle
+just move to pipeline
+
+00:28:29.526 --> 00:28:30.276 A:middle
+statistics.
+
+00:28:31.076 --> 00:28:33.446 A:middle
+And here you get great compile
+
+00:28:33.646 --> 00:28:36.486 A:middle
+for your shaders, giving you the
+
+00:28:36.486 --> 00:28:38.926 A:middle
+type of instructions you have.
+
+00:28:39.676 --> 00:28:42.566 A:middle
+And using the Shader Profiler,
+
+00:28:42.986 --> 00:28:44.846 A:middle
+you get visibility into timings
+
+00:28:44.896 --> 00:28:47.136 A:middle
+for draw call or per-pipeline
+
+00:28:48.366 --> 00:28:48.536 A:middle
+states.
+
+00:28:48.826 --> 00:28:51.896 A:middle
+So today, I'll be focusing on
+
+00:28:51.986 --> 00:28:53.736 A:middle
+Shader Profiler, and I will show
+
+00:28:53.736 --> 00:28:55.296 A:middle
+you work flows that will help
+
+00:28:55.296 --> 00:28:57.016 A:middle
+you optimize your shaders.
+
+00:28:57.516 --> 00:29:02.176 A:middle
+So once you are in the Metal
+

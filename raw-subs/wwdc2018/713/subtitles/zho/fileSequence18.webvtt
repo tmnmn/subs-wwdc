@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.579 --> 00:18:02.983 align:middle line:-2
+用来训练它的Create ML
+几乎是完全一样的
+
+00:18:03.951 --> 00:18:08.355 align:middle line:-2
+你将训练数据
+从JSON加载到数据表中
+
+00:18:10.190 --> 00:18:13.927 align:middle line:-2
+然后你创建并训练
+一个WordTagger对象
+
+00:18:13.994 --> 00:18:15.429 align:middle line:-1
+而非之前的文本分类器对象
+
+00:18:15.863 --> 00:18:17.931 align:middle line:-1
+然后将其写入磁盘
+
+00:18:18.298 --> 00:18:23.504 align:middle line:-2
+Create ML中还有许多
+其他选项和API可以使用
+
+00:18:23.570 --> 00:18:25.305 align:middle line:-1
+我鼓励你 如果你还没有的话
+
+00:18:25.372 --> 00:18:28.876 align:middle line:-2
+看看昨天举办的
+Create ML演讲
+
+00:18:28.942 --> 00:18:32.246 align:middle line:-2
+以及Create ML文档
+以获取更多信息
+
+00:18:33.046 --> 00:18:36.550 align:middle line:0
+现在 一旦你训练好了模型
+我们就可以进入推理部分
+
+00:18:36.717 --> 00:18:40.120 align:middle line:0
+你把你的模型拖到
+你的Xcode项目中
+
+00:18:40.187 --> 00:18:44.091 align:middle line:0
+Xcode将编译并将其
+包含在你的app资源中
+
+00:18:44.458 --> 00:18:48.929 align:middle line:0
+然后你在运行时做什么呢？
+记住这是一个Core ML模型
+
+00:18:48.996 --> 00:18:50.998 align:middle line:0
+你可以像使用其他任何
+Core ML模型一样使用它
+
+00:18:51.431 --> 00:18:56.270 align:middle line:-2
+但有趣的是这些模型能够很好地
+与Natural Language API共同工作
+
+00:18:56.570 --> 00:19:01.441 align:middle line:-1
+就像是我们自己的
+

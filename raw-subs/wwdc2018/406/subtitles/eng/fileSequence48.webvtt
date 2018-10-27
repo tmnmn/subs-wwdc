@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:00.726 --> 00:48:01.976 A:middle
+If you find yourself needing
+
+00:48:02.076 --> 00:48:03.256 A:middle
+different associated type
+
+00:48:03.256 --> 00:48:04.896 A:middle
+defaults at different points in
+
+00:48:04.896 --> 00:48:05.896 A:middle
+the collection hierarchy.
+
+00:48:06.216 --> 00:48:07.146 A:middle
+You might have a problem with
+
+00:48:07.146 --> 00:48:07.686 A:middle
+your design.
+
+00:48:08.316 --> 00:48:09.396 A:middle
+Recursive restraints are a
+
+00:48:09.396 --> 00:48:10.426 A:middle
+powerful tool.
+
+00:48:10.646 --> 00:48:12.286 A:middle
+Used with associated type and
+
+00:48:12.286 --> 00:48:13.916 A:middle
+protocol where clauses, they
+
+00:48:13.916 --> 00:48:14.996 A:middle
+help us write the protocol
+
+00:48:14.996 --> 00:48:17.016 A:middle
+requirements we need to express
+
+00:48:17.016 --> 00:48:18.336 A:middle
+divide-and-conquer algorithms
+
+00:48:18.336 --> 00:48:20.116 A:middle
+naturally in generic code.
+
+00:48:20.596 --> 00:48:22.266 A:middle
+And now we return to the final
+
+00:48:22.266 --> 00:48:23.606 A:middle
+portion of the WWDC talk.
+
+00:48:25.026 --> 00:48:26.506 A:middle
+So, Swift is a multi-paradigm
+
+00:48:26.506 --> 00:48:26.906 A:middle
+language.
+
+00:48:27.036 --> 00:48:28.426 A:middle
+We've been talking exclusively
+
+00:48:28.426 --> 00:48:29.636 A:middle
+about generics right now.
+
+00:48:29.636 --> 00:48:30.876 A:middle
+But of course, Swift also
+
+00:48:30.876 --> 00:48:32.136 A:middle
+supports object-oriented
+
+00:48:32.136 --> 00:48:32.716 A:middle
+programming.
+
+00:48:33.756 --> 00:48:34.866 A:middle
+And so, I'd like to take a few
+
+00:48:34.866 --> 00:48:35.906 A:middle
+moments to talk about the
+
+00:48:35.906 --> 00:48:37.686 A:middle
+interaction between those two
+
+00:48:37.686 --> 00:48:38.276 A:middle
+features.
+
+00:48:38.376 --> 00:48:39.846 A:middle
+How they work together in the
+
+00:48:39.846 --> 00:48:40.646 A:middle
+Swift language.
+
+00:48:41.166 --> 00:48:43.696 A:middle
+So with class inheritance, we
+
+00:48:43.696 --> 00:48:44.546 A:middle
+know how class inheritance
+
+00:48:44.576 --> 00:48:44.906 A:middle
+works.
+
+00:48:45.076 --> 00:48:45.866 A:middle
+It's fairly simple.
+
+00:48:46.386 --> 00:48:47.716 A:middle
+You can declare a superclass,
+
+00:48:47.716 --> 00:48:48.386 A:middle
+like Vehicle.
+
+00:48:48.536 --> 00:48:50.156 A:middle
+You can declare some subclasses,
+
+00:48:50.156 --> 00:48:51.616 A:middle
+like Taxi and PoliceCar that
+
+00:48:51.616 --> 00:48:52.786 A:middle
+both inherit from Vehicle.
+
+00:48:53.606 --> 00:48:55.126 A:middle
+And, once you do this, you have
+
+00:48:55.126 --> 00:48:56.466 A:middle
+this object-oriented hierarchy.
+
+00:48:56.956 --> 00:48:58.506 A:middle
+You have some expectations about
+
+00:48:58.506 --> 00:48:59.636 A:middle
+where you can use those
+
+00:48:59.636 --> 00:49:00.516 A:middle
+subclasses.
+

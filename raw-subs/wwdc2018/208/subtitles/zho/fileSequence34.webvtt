@@ -1,0 +1,82 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.273 --> 00:34:01.141 align:middle line:-1
+可以让我观看我喜欢的内容
+
+00:34:01.642 --> 00:34:03.977 align:middle line:-1
+但并不是所有内容都适用于
+
+00:34:04.044 --> 00:34:05.179 align:middle line:-1
+房子里的每一个人
+
+00:34:05.245 --> 00:34:08.215 align:middle line:-2
+因此我希望用一个PIN码
+对它进行保护
+
+00:34:08.581 --> 00:34:10.317 align:middle line:-1
+以便我可以限制谁能观看它
+
+00:34:11.118 --> 00:34:12.953 align:middle line:-1
+我们这里有一个收集视图
+
+00:34:13.187 --> 00:34:15.755 align:middle line:-2
+里面都是Hans刚介绍过的
+TVPosterViews
+
+00:34:17.024 --> 00:34:19.760 align:middle line:-1
+如果我们深入到收集视图内：
+
+00:34:19.860 --> 00:34:21.328 align:middle line:-2
+didSelectItemAt
+indexPath
+
+00:34:22.029 --> 00:34:23.063 align:middle line:-1
+我们首先要做的是
+
+00:34:23.463 --> 00:34:25.532 align:middle line:-2
+公布一个
+TVDigitEntryViewController
+
+00:34:26.033 --> 00:34:27.935 align:middle line:-1
+并发送相应的标题和提示文本
+
+00:34:28.001 --> 00:34:31.338 align:middle line:-2
+让用户知道
+他们应该输入一个五位密码
+
+00:34:32.105 --> 00:34:33.607 align:middle line:-1
+我们把数位的数量设置为五
+
+00:34:34.107 --> 00:34:38.344 align:middle line:-2
+把isSecure entry设为“真”
+因为我们正在收集密码
+
+00:34:40.246 --> 00:34:43.317 align:middle line:-2
+接下来我们要实施
+entryCompletionHandler
+
+00:34:44.184 --> 00:34:45.686 align:middle line:-1
+它会返回一个字符串
+
+00:34:46.119 --> 00:34:49.121 align:middle line:-1
+一旦用户填写完全部数位
+
+00:34:49.188 --> 00:34:50.190 align:middle line:-1
+在数位视图中
+
+00:34:50.891 --> 00:34:52.993 align:middle line:-1
+因为我正在app中
+
+00:34:53.126 --> 00:34:54.795 align:middle line:-1
+我们只需查看每一个数位是否正确
+
+00:34:54.862 --> 00:34:57.130 align:middle line:-1
+如果是 我们就丢弃视图控制器
+
+00:34:57.197 --> 00:34:58.265 align:middle line:-1
+并显示内容
+
+00:34:58.565 --> 00:35:00.367 align:middle line:-1
+否则我们就会更新提示文本
+

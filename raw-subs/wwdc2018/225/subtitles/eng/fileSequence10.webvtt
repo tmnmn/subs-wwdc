@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.346 --> 00:10:00.956 A:middle
+it's delegate as well, so we can
+
+00:10:00.956 --> 00:10:02.066 A:middle
+handle cell selection.
+
+00:10:02.986 --> 00:10:04.196 A:middle
+So now that we've gotten set up,
+
+00:10:04.196 --> 00:10:05.976 A:middle
+we need to actually conform to
+
+00:10:05.976 --> 00:10:07.216 A:middle
+these two protocols.
+
+00:10:07.876 --> 00:10:10.036 A:middle
+So let's start out by conforming
+
+00:10:10.036 --> 00:10:12.606 A:middle
+to the data source, and we have
+
+00:10:12.676 --> 00:10:14.176 A:middle
+two required methods we need to
+
+00:10:14.176 --> 00:10:14.816 A:middle
+implement here.
+
+00:10:14.946 --> 00:10:17.906 A:middle
+The first of these is number of
+
+00:10:17.976 --> 00:10:20.656 A:middle
+items in section where we can
+
+00:10:20.656 --> 00:10:22.696 A:middle
+just return the number of people
+
+00:10:22.816 --> 00:10:23.926 A:middle
+or the number of items in our
+
+00:10:23.926 --> 00:10:26.956 A:middle
+people array to get our data
+
+00:10:26.956 --> 00:10:27.996 A:middle
+model objects displayed.
+
+00:10:28.666 --> 00:10:30.586 A:middle
+The second method we'll need to
+
+00:10:30.586 --> 00:10:31.566 A:middle
+implement is
+
+00:10:32.106 --> 00:10:34.456 A:middle
+CellForItemAtIndexPath where
+
+00:10:34.456 --> 00:10:36.226 A:middle
+we'll dequeue a cell from the
+
+00:10:36.226 --> 00:10:37.726 A:middle
+CollectionView using our unique
+
+00:10:37.726 --> 00:10:41.106 A:middle
+identifier, pass a person and
+
+00:10:41.106 --> 00:10:42.526 A:middle
+object that we get out of our
+
+00:10:42.526 --> 00:10:43.976 A:middle
+people array, to the cell to
+
+00:10:44.136 --> 00:10:47.126 A:middle
+actually display our data, and
+
+00:10:47.126 --> 00:10:48.576 A:middle
+then return the cell.
+
+00:10:50.426 --> 00:10:52.566 A:middle
+And to wrap things up here,
+
+00:10:52.566 --> 00:10:54.686 A:middle
+we'll just need to implement one
+
+00:10:54.756 --> 00:10:56.396 A:middle
+optional method from the
+
+00:10:56.396 --> 00:10:58.066 A:middle
+Delegate protocol, so we can
+
+00:10:58.066 --> 00:10:58.836 A:middle
+handle selection.
+
+00:10:59.336 --> 00:11:00.826 A:middle
+So I'm just going to add
+

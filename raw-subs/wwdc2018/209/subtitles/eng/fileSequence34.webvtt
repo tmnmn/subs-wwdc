@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.356 --> 00:34:00.776 A:middle
+Here's a sample window that
+
+00:34:00.776 --> 00:34:01.616 A:middle
+shows all four.
+
+00:34:02.236 --> 00:34:03.226 A:middle
+TextViews are sometimes
+
+00:34:03.226 --> 00:34:04.916 A:middle
+misconfigured when clients need
+
+00:34:04.916 --> 00:34:06.506 A:middle
+to override the fieldEditor in a
+
+00:34:06.576 --> 00:34:07.066 A:middle
+textField.
+
+00:34:07.236 --> 00:34:08.766 A:middle
+And so, using a fieldEditor
+
+00:34:08.766 --> 00:34:10.186 A:middle
+factory method can help avoid
+
+00:34:10.186 --> 00:34:10.856 A:middle
+problems there.
+
+00:34:11.815 --> 00:34:13.636 A:middle
+The next one, scrollableTextView
+
+00:34:14.346 --> 00:34:15.716 A:middle
+should be used for textViews
+
+00:34:15.815 --> 00:34:17.946 A:middle
+that are for auxiliary text in
+
+00:34:17.946 --> 00:34:19.726 A:middle
+popovers and inspector panes.
+
+00:34:19.726 --> 00:34:20.386 A:middle
+Things like that.
+
+00:34:20.386 --> 00:34:22.376 A:middle
+And then, the bottom two are for
+
+00:34:22.376 --> 00:34:23.876 A:middle
+text that's main document
+
+00:34:23.876 --> 00:34:24.266 A:middle
+content.
+
+00:34:24.456 --> 00:34:25.996 A:middle
+The one on the left is for rich
+
+00:34:25.996 --> 00:34:27.376 A:middle
+text; the one on the right is
+
+00:34:27.376 --> 00:34:28.025 A:middle
+for plain text.
+
+00:34:28.846 --> 00:34:29.846 A:middle
+You might be wondering at this
+
+00:34:29.926 --> 00:34:31.466 A:middle
+point what the distinction is,
+
+00:34:31.516 --> 00:34:32.666 A:middle
+because they all look fairly
+
+00:34:32.706 --> 00:34:33.106 A:middle
+similar.
+
+00:34:33.596 --> 00:34:34.696 A:middle
+The main benefit is that you
+
+00:34:34.696 --> 00:34:35.775 A:middle
+don't need to worry about the
+
+00:34:35.775 --> 00:34:36.755 A:middle
+system configuration.
+
+00:34:37.496 --> 00:34:38.936 A:middle
+For example, if the system's in
+
+00:34:38.936 --> 00:34:40.565 A:middle
+Dark Mode, they begin to look
+
+00:34:40.565 --> 00:34:41.326 A:middle
+more distinct.
+
+00:34:42.266 --> 00:34:44.746 A:middle
+The rich text's textView retains
+
+00:34:44.746 --> 00:34:46.045 A:middle
+its white background, and the
+
+00:34:46.045 --> 00:34:47.926 A:middle
+plain text turns dark to match
+
+00:34:48.016 --> 00:34:48.996 A:middle
+the rest of the system for
+
+00:34:48.996 --> 00:34:49.406 A:middle
+example.
+
+00:34:50.106 --> 00:34:51.396 A:middle
+So, in general if you use these
+
+00:34:51.396 --> 00:34:52.815 A:middle
+factory methods, it'll help keep
+
+00:34:52.815 --> 00:34:54.366 A:middle
+your application consistent with
+
+00:34:54.366 --> 00:34:55.775 A:middle
+the specifications for the rest
+
+00:34:55.775 --> 00:34:56.255 A:middle
+of the system.
+
+00:34:58.696 --> 00:34:59.876 A:middle
+The other change to textView
+
+00:34:59.876 --> 00:35:01.206 A:middle
+that I'd like to talk about is a
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.626 --> 00:11:02.246 A:middle
+Setting the origin claim is
+
+00:11:02.246 --> 00:11:03.656 A:middle
+always recommended, but
+
+00:11:03.656 --> 00:11:05.296 A:middle
+especially on tokens with long
+
+00:11:05.296 --> 00:11:05.956 A:middle
+expiry.
+
+00:11:06.276 --> 00:11:07.756 A:middle
+This is your strongest defense
+
+00:11:07.756 --> 00:11:08.826 A:middle
+against misuse of your
+
+00:11:08.826 --> 00:11:09.426 A:middle
+credentials.
+
+00:11:11.236 --> 00:11:12.886 A:middle
+Now with this token handy, we're
+
+00:11:12.886 --> 00:11:13.756 A:middle
+ready to make a map.
+
+00:11:15.546 --> 00:11:17.096 A:middle
+The simplest example of this is
+
+00:11:17.096 --> 00:11:18.586 A:middle
+to create an HTML page,
+
+00:11:19.266 --> 00:11:21.946 A:middle
+including a script tag linking
+
+00:11:21.946 --> 00:11:24.376 A:middle
+to MapKit JS on the Apple CDN.
+
+00:11:26.116 --> 00:11:27.286 A:middle
+Remember when I said that I
+
+00:11:27.286 --> 00:11:28.476 A:middle
+would show you how to make
+
+00:11:28.476 --> 00:11:30.446 A:middle
+MapKit JS aware of your token
+
+00:11:30.446 --> 00:11:31.036 A:middle
+endpoint?
+
+00:11:31.116 --> 00:11:33.426 A:middle
+That happens when you provide a
+
+00:11:33.426 --> 00:11:35.166 A:middle
+callback function when you
+
+00:11:35.166 --> 00:11:36.776 A:middle
+initialize MapKit JS.
+
+00:11:37.586 --> 00:11:39.736 A:middle
+For short-lived tokens, MapKit
+
+00:11:39.736 --> 00:11:41.316 A:middle
+JS will fetch new tokens as
+
+00:11:41.316 --> 00:11:42.886 A:middle
+needed throughout an active
+
+00:11:42.886 --> 00:11:43.686 A:middle
+user's session.
+
+00:11:46.326 --> 00:11:48.866 A:middle
+Note that when MapKit JS invokes
+
+00:11:48.866 --> 00:11:50.726 A:middle
+your callback function, it'll
+
+00:11:50.726 --> 00:11:52.676 A:middle
+pass it a function, which for
+
+00:11:52.676 --> 00:11:54.256 A:middle
+this example we're calling done.
+
+00:11:55.166 --> 00:11:56.826 A:middle
+Call this function with your new
+
+00:11:56.826 --> 00:11:58.956 A:middle
+token to allow MapKit JS to
+
+00:11:58.956 --> 00:12:00.706 A:middle
+proceed with the authorization
+

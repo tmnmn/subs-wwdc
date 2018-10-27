@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.266 --> 00:17:00.566 A:middle
+Oh, nice! Okay, so when I press
+
+00:17:00.566 --> 00:17:02.196 A:middle
+this start-game button, I should
+
+00:17:02.196 --> 00:17:04.406 A:middle
+see that the start-game button
+
+00:17:04.406 --> 00:17:05.566 A:middle
+was pressed is logged in my
+
+00:17:05.566 --> 00:17:06.366 A:middle
+console down here.
+
+00:17:07.126 --> 00:17:09.036 A:middle
+Awesome! We've just created a
+
+00:17:09.036 --> 00:17:10.476 A:middle
+UI, and we've connected it to
+
+00:17:10.476 --> 00:17:10.925 A:middle
+our code.
+
+00:17:11.856 --> 00:17:13.465 A:middle
+Let's jump back over and start
+
+00:17:13.465 --> 00:17:15.296 A:middle
+talking about the game logic for
+
+00:17:15.296 --> 00:17:15.536 A:middle
+our app.
+
+00:17:19.046 --> 00:17:20.336 A:middle
+Okay, so in the very beginning
+
+00:17:20.336 --> 00:17:21.506 A:middle
+of our game, we know we have
+
+00:17:21.506 --> 00:17:23.316 A:middle
+that start screen, and it has
+
+00:17:23.396 --> 00:17:24.695 A:middle
+two buttons on it.
+
+00:17:24.695 --> 00:17:25.986 A:middle
+It has that start-game button
+
+00:17:26.036 --> 00:17:27.215 A:middle
+and that leaderboard button.
+
+00:17:27.586 --> 00:17:28.756 A:middle
+But we're just talking about the
+
+00:17:28.756 --> 00:17:29.696 A:middle
+gameplay right now.
+
+00:17:30.016 --> 00:17:31.436 A:middle
+So we're going to wait for the
+
+00:17:31.646 --> 00:17:34.236 A:middle
+start-game button pressed.
+
+00:17:34.236 --> 00:17:35.536 A:middle
+And once that button is pressed,
+
+00:17:35.806 --> 00:17:37.236 A:middle
+we drop into playing mode.
+
+00:17:37.996 --> 00:17:39.266 A:middle
+And at the beginning of playing
+
+00:17:39.266 --> 00:17:41.796 A:middle
+mode, we get a random emoji in a
+
+00:17:41.796 --> 00:17:43.386 A:middle
+random location on the screen.
+
+00:17:43.666 --> 00:17:45.216 A:middle
+Either a unicorn or a poop.
+
+00:17:46.066 --> 00:17:48.096 A:middle
+At that point, we set a timer
+
+00:17:48.096 --> 00:17:50.396 A:middle
+for one second to allow our user
+
+00:17:50.396 --> 00:17:52.176 A:middle
+to have time to interact with
+
+00:17:52.176 --> 00:17:52.746 A:middle
+our button.
+
+00:17:54.136 --> 00:17:55.476 A:middle
+Now at the end of that one
+
+00:17:55.476 --> 00:17:57.376 A:middle
+second, if the user did not
+
+00:17:57.626 --> 00:17:59.196 A:middle
+press a unicorn, then the
+
+00:17:59.196 --> 00:18:00.706 A:middle
+unicorn was lonely, and they
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.096 --> 00:03:01.276 A:middle
+using the thread identifier and
+
+00:03:01.276 --> 00:03:02.406 A:middle
+for a local notification.
+
+00:03:02.536 --> 00:03:03.636 A:middle
+You can set it on the
+
+00:03:03.806 --> 00:03:05.606 A:middle
+UNMutableNotificationContent
+
+00:03:05.606 --> 00:03:06.906 A:middle
+object as seen here.
+
+00:03:08.056 --> 00:03:10.096 A:middle
+And for a remote notification
+
+00:03:10.096 --> 00:03:11.876 A:middle
+payload, you can also include it
+
+00:03:11.876 --> 00:03:13.366 A:middle
+as part of your notification
+
+00:03:13.366 --> 00:03:13.706 A:middle
+payload.
+
+00:03:15.756 --> 00:03:17.816 A:middle
+Now the thread identifier might
+
+00:03:17.816 --> 00:03:19.286 A:middle
+be familiar to some of you
+
+00:03:19.286 --> 00:03:19.696 A:middle
+already.
+
+00:03:20.996 --> 00:03:23.616 A:middle
+We use it today for forwarding
+
+00:03:23.616 --> 00:03:25.486 A:middle
+notifications to a notification
+
+00:03:25.486 --> 00:03:27.126 A:middle
+content extension that is
+
+00:03:27.126 --> 00:03:28.976 A:middle
+presented for your application,
+
+00:03:29.176 --> 00:03:30.406 A:middle
+which has the exact same thread
+
+00:03:30.406 --> 00:03:32.336 A:middle
+identifier, allowing the content
+
+00:03:32.336 --> 00:03:33.986 A:middle
+extension view to update it
+
+00:03:34.026 --> 00:03:35.176 A:middle
+based on the new incoming
+
+00:03:35.176 --> 00:03:35.846 A:middle
+notification.
+
+00:03:37.256 --> 00:03:39.346 A:middle
+Starting in iOS 11, we started
+
+00:03:39.346 --> 00:03:41.536 A:middle
+using the thread identifier for
+
+00:03:41.536 --> 00:03:43.386 A:middle
+doing grouping of notifications,
+
+00:03:43.386 --> 00:03:44.806 A:middle
+if the user had turned on
+
+00:03:45.076 --> 00:03:45.826 A:middle
+[inaudible] notification
+
+00:03:45.826 --> 00:03:46.326 A:middle
+previous.
+
+00:03:47.156 --> 00:03:48.126 A:middle
+So we're just taking this
+
+00:03:48.126 --> 00:03:50.006 A:middle
+concept and expanding it for all
+
+00:03:50.006 --> 00:03:51.096 A:middle
+notifications in general.
+
+00:03:52.756 --> 00:03:54.726 A:middle
+So how does this grouping work?
+
+00:03:55.446 --> 00:03:57.166 A:middle
+So when a new notification comes
+
+00:03:57.166 --> 00:03:59.676 A:middle
+in to you, the user's device, if
+
+00:03:59.676 --> 00:04:01.556 A:middle
+there is no thread identifier
+

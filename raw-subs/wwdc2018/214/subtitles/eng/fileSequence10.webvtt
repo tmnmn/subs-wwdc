@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.976 --> 00:10:02.936 A:middle
+But this is our chance to also
+
+00:10:02.936 --> 00:10:04.656 A:middle
+check that the soup is available
+
+00:10:04.656 --> 00:10:05.516 A:middle
+right now, and that we can place
+
+00:10:05.516 --> 00:10:05.976 A:middle
+the order of that.
+
+00:10:06.116 --> 00:10:08.766 A:middle
+So, let's do that.
+
+00:10:09.316 --> 00:10:11.196 A:middle
+First, I'll grab a reference to
+
+00:10:11.196 --> 00:10:11.936 A:middle
+my menu item.
+
+00:10:13.156 --> 00:10:15.036 A:middle
+Then check if it's available.
+
+00:10:15.856 --> 00:10:17.626 A:middle
+And if it isn't, I'm going to
+
+00:10:17.626 --> 00:10:19.406 A:middle
+call the Completion Handler with
+
+00:10:19.406 --> 00:10:21.246 A:middle
+our new custom Failure Out of
+
+00:10:21.246 --> 00:10:22.216 A:middle
+Stock Response Code.
+
+00:10:22.726 --> 00:10:25.866 A:middle
+If everything looks great, we'll
+
+00:10:26.296 --> 00:10:27.526 A:middle
+continue as before.
+
+00:10:28.516 --> 00:10:30.216 A:middle
+This is also our chance to
+
+00:10:30.216 --> 00:10:32.696 A:middle
+provide custom response --
+
+00:10:32.696 --> 00:10:34.176 A:middle
+custom confirmation response.
+
+00:10:34.606 --> 00:10:36.026 A:middle
+Support for those will be coming
+
+00:10:36.026 --> 00:10:37.176 A:middle
+in upcoming [inaudible].
+
+00:10:37.626 --> 00:10:40.176 A:middle
+Alright, that was confirmation.
+
+00:10:40.706 --> 00:10:43.596 A:middle
+Now, it's time to handle the
+
+00:10:43.596 --> 00:10:43.966 A:middle
+intent.
+
+00:10:44.466 --> 00:10:46.276 A:middle
+For us, that means to place the
+
+00:10:46.276 --> 00:10:46.956 A:middle
+order for the soup.
+
+00:10:47.726 --> 00:10:49.466 A:middle
+So, I'm going to build an order
+
+00:10:49.636 --> 00:10:51.256 A:middle
+from all the information that is
+
+00:10:51.296 --> 00:10:52.636 A:middle
+present on my intent.
+
+00:10:53.946 --> 00:10:55.896 A:middle
+And then place the order with
+
+00:10:55.896 --> 00:10:56.616 A:middle
+our Order Manager.
+
+00:10:57.256 --> 00:10:58.846 A:middle
+And if it's successful, we'll
+
+00:10:58.846 --> 00:11:00.516 A:middle
+let the system know, by calling
+

@@ -1,0 +1,86 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.427 --> 00:16:02.529 align:middle line:-1
+这其中具有大量的中间计算
+
+00:16:02.596 --> 00:16:04.198 align:middle line:-1
+而我们并不总是希望这样
+
+00:16:04.731 --> 00:16:06.934 align:middle line:-2
+如果有办法不进行这些计算
+除非绝对需要
+
+00:16:07.000 --> 00:16:08.502 align:middle line:-1
+那就太好了
+
+00:16:10.337 --> 00:16:13.440 align:middle line:-2
+Swift对此的回答称为“懒惰”
+就像在现实生活中一样
+
+00:16:13.507 --> 00:16:14.675 align:middle line:-1
+（惰性函数）
+
+00:16:14.741 --> 00:16:17.511 align:middle line:-1
+我们仍然从Range开始
+
+00:16:17.978 --> 00:16:19.813 align:middle line:-2
+我们会告诉该Range
+让它"懒惰"一点
+
+00:16:19.913 --> 00:16:21.582 align:middle line:-2
+当我们这样做时
+所发生的事是
+
+00:16:21.648 --> 00:16:25.452 align:middle line:-2
+我们用LazyCollection
+包装了原始集合
+
+00:16:25.919 --> 00:16:28.455 align:middle line:-2
+当我们对这个LazyCollection
+执行操作时
+
+00:16:28.622 --> 00:16:30.824 align:middle line:-2
+所发生的事是
+我们要再次包装它
+
+00:16:30.891 --> 00:16:34.127 align:middle line:-2
+所以当我们在它上面调用map时
+我们实际上并没有映射
+
+00:16:34.328 --> 00:16:35.429 align:middle line:-1
+我们没对该闭包做任何事
+
+00:16:35.495 --> 00:16:38.232 align:middle line:-1
+除了将其存储以便我们将来需要它
+
+00:16:38.532 --> 00:16:41.068 align:middle line:-2
+如果我进一步过滤了
+LazyMapCollection
+
+00:16:41.335 --> 00:16:43.470 align:middle line:-1
+过滤器只是简单地包装该映射集合
+
+00:16:43.770 --> 00:16:45.639 align:middle line:-1
+请注意它会在将来按需过滤
+
+00:16:45.706 --> 00:16:46.707 align:middle line:-1
+而不是现在
+
+00:16:47.841 --> 00:16:49.176 align:middle line:-1
+现在让我们继续并请求
+
+00:16:49.243 --> 00:16:51.478 align:middle line:-2
+LazyFilterCollection
+的第一个元素
+
+00:16:55.516 --> 00:16:56.517 align:middle line:0
+当我们这样做时
+
+00:16:57.117 --> 00:16:59.253 align:middle line:0
+我们将首先请求
+LazyFilterCollection的
+
+00:16:59.319 --> 00:17:00.320 align:middle line:0
+第一个元素
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.776 --> 00:16:00.496 A:middle
+visible objects onto the GPU.
+
+00:16:01.306 --> 00:16:03.236 A:middle
+GPUs are just better at handling
+
+00:16:03.476 --> 00:16:04.906 A:middle
+the growing scene complexity of
+
+00:16:04.906 --> 00:16:05.796 A:middle
+the latest games.
+
+00:16:06.936 --> 00:16:09.526 A:middle
+Unfortunately, this creates a
+
+00:16:09.526 --> 00:16:10.816 A:middle
+sync point in your frame.
+
+00:16:12.456 --> 00:16:14.486 A:middle
+And the, it makes it so that the
+
+00:16:14.486 --> 00:16:16.266 A:middle
+CPU cannot encode draw calls
+
+00:16:16.266 --> 00:16:17.996 A:middle
+until the GPU produces the data.
+
+00:16:18.466 --> 00:16:19.826 A:middle
+It's extremely difficult to get
+
+00:16:19.826 --> 00:16:21.436 A:middle
+this right without wasting
+
+00:16:21.436 --> 00:16:23.766 A:middle
+valuable CPU and GPU time on
+
+00:16:23.766 --> 00:16:24.636 A:middle
+synchronization.
+
+00:16:25.716 --> 00:16:27.566 A:middle
+With ICBs, the benefits are
+
+00:16:27.566 --> 00:16:28.216 A:middle
+immense.
+
+00:16:28.726 --> 00:16:30.176 A:middle
+Not only can you move the final
+
+00:16:30.176 --> 00:16:32.086 A:middle
+bits of processing to the GPU,
+
+00:16:32.646 --> 00:16:34.176 A:middle
+you naturally remove any sync
+
+00:16:34.176 --> 00:16:35.426 A:middle
+points required to hand over the
+
+00:16:35.426 --> 00:16:37.766 A:middle
+data and you improve your CPU
+
+00:16:37.806 --> 00:16:39.076 A:middle
+and GPU utilization.
+
+00:16:39.706 --> 00:16:42.116 A:middle
+At the same time, you reduce
+
+00:16:42.116 --> 00:16:43.886 A:middle
+your CPU overhead to a constant.
+
+00:16:44.566 --> 00:16:47.086 A:middle
+So let's look at the encoding in
+
+00:16:47.086 --> 00:16:48.136 A:middle
+a little bit more detail.
+
+00:16:49.166 --> 00:16:51.806 A:middle
+I'm going to start by expanding
+
+00:16:51.806 --> 00:16:53.566 A:middle
+on our previous example and look
+
+00:16:53.566 --> 00:16:55.316 A:middle
+at the massively parallel nature
+
+00:16:55.316 --> 00:16:57.216 A:middle
+that only the GPU can provide.
+
+00:16:57.876 --> 00:16:59.736 A:middle
+We could begin with the list of
+
+00:16:59.736 --> 00:17:01.846 A:middle
+visible objects and LODs coming
+

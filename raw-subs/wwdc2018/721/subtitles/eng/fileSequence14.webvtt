@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.116 --> 00:14:00.516 A:middle
+list of credential identities
+
+00:14:00.516 --> 00:14:01.676 A:middle
+that AutoFill will consider
+
+00:14:01.676 --> 00:14:02.246 A:middle
+suggesting.
+
+00:14:04.556 --> 00:14:06.026 A:middle
+When individual changes are
+
+00:14:06.026 --> 00:14:07.826 A:middle
+made, these saved credential
+
+00:14:07.826 --> 00:14:09.496 A:middle
+identities or removed credential
+
+00:14:09.496 --> 00:14:11.666 A:middle
+identities methods allow you to
+
+00:14:11.666 --> 00:14:13.846 A:middle
+add, update or remove credential
+
+00:14:13.846 --> 00:14:15.386 A:middle
+identities without completely
+
+00:14:15.386 --> 00:14:16.596 A:middle
+replacing the contents of the
+
+00:14:16.596 --> 00:14:16.906 A:middle
+store.
+
+00:14:20.426 --> 00:14:21.486 A:middle
+One important aspect of the
+
+00:14:21.486 --> 00:14:23.426 A:middle
+system to understand is that the
+
+00:14:23.426 --> 00:14:25.036 A:middle
+Credential Identity Store may be
+
+00:14:25.036 --> 00:14:26.506 A:middle
+deleted at times that your app
+
+00:14:26.506 --> 00:14:27.516 A:middle
+won't be able to predict.
+
+00:14:28.076 --> 00:14:31.276 A:middle
+As a few examples, if the user
+
+00:14:31.276 --> 00:14:32.596 A:middle
+disables your extension for
+
+00:14:32.596 --> 00:14:34.336 A:middle
+AutoFill, then later re-enables
+
+00:14:34.336 --> 00:14:36.026 A:middle
+it, the system will have cleared
+
+00:14:36.026 --> 00:14:36.386 A:middle
+the store.
+
+00:14:37.296 --> 00:14:38.696 A:middle
+If the system determines that
+
+00:14:38.696 --> 00:14:39.996 A:middle
+your app provides credential
+
+00:14:39.996 --> 00:14:41.546 A:middle
+identities, but consistently
+
+00:14:41.546 --> 00:14:43.076 A:middle
+fails to provide the passwords
+
+00:14:43.076 --> 00:14:44.276 A:middle
+when the user selects these
+
+00:14:44.276 --> 00:14:46.076 A:middle
+credentials, the credential
+
+00:14:46.076 --> 00:14:47.976 A:middle
+identity store may be deleted to
+
+00:14:47.976 --> 00:14:49.116 A:middle
+prevent the user from seeing
+
+00:14:49.116 --> 00:14:49.926 A:middle
+these stale credential
+
+00:14:49.926 --> 00:14:50.646 A:middle
+suggestions.
+
+00:14:51.076 --> 00:14:54.756 A:middle
+If the user restores their
+
+00:14:54.756 --> 00:14:56.176 A:middle
+device from a backup where they
+
+00:14:56.176 --> 00:14:57.116 A:middle
+were using your credential
+
+00:14:57.116 --> 00:14:59.056 A:middle
+provider extension, the store
+
+00:14:59.056 --> 00:15:00.306 A:middle
+won't contain any credential
+

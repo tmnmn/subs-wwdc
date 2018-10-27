@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.996 --> 00:11:02.706 A:middle
+beginCollection and pass a start
+
+00:11:02.706 --> 00:11:02.926 A:middle
+date.
+
+00:11:04.076 --> 00:11:04.896 A:middle
+It's that simple.
+
+00:11:06.426 --> 00:11:09.046 A:middle
+If you are on watchOS, you can
+
+00:11:09.046 --> 00:11:10.676 A:middle
+use the live workout builder.
+
+00:11:11.056 --> 00:11:13.266 A:middle
+And so first, you need to create
+
+00:11:13.266 --> 00:11:15.946 A:middle
+a workout session by passing the
+
+00:11:15.946 --> 00:11:16.766 A:middle
+healthStore and
+
+00:11:16.766 --> 00:11:19.386 A:middle
+workoutConfiguration, and then
+
+00:11:19.756 --> 00:11:21.576 A:middle
+you do not create the builder
+
+00:11:21.576 --> 00:11:23.386 A:middle
+yourself, but you retrieve it
+
+00:11:23.386 --> 00:11:25.876 A:middle
+directly from the session by
+
+00:11:25.876 --> 00:11:26.626 A:middle
+using this call.
+
+00:11:27.836 --> 00:11:29.156 A:middle
+Once we have the session and
+
+00:11:29.156 --> 00:11:30.936 A:middle
+builder, we can go ahead and
+
+00:11:30.936 --> 00:11:32.146 A:middle
+start them up.
+
+00:11:32.736 --> 00:11:35.006 A:middle
+And so it's as easy as calling
+
+00:11:35.006 --> 00:11:37.466 A:middle
+startActivity on the session and
+
+00:11:37.776 --> 00:11:39.416 A:middle
+beginCollection on the builder
+
+00:11:39.916 --> 00:11:41.236 A:middle
+by passing a start date.
+
+00:11:41.726 --> 00:11:45.376 A:middle
+So this is how you set up and
+
+00:11:45.376 --> 00:11:47.496 A:middle
+start a workout using the
+
+00:11:47.496 --> 00:11:47.876 A:middle
+builder.
+
+00:11:48.886 --> 00:11:49.996 A:middle
+Now, let's see how we can
+
+00:11:50.376 --> 00:11:53.666 A:middle
+collect data displayed directly
+
+00:11:53.666 --> 00:11:56.576 A:middle
+in our user interface and be
+
+00:11:56.576 --> 00:11:58.116 A:middle
+able to control the state of the
+
+00:11:58.116 --> 00:12:00.036 A:middle
+workout when the user requests
+

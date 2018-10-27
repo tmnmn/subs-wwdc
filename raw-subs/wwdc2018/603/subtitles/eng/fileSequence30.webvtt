@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.846 --> 00:30:01.416 A:middle
+parts of our model are rough or
+
+00:30:01.416 --> 00:30:02.996 A:middle
+shiny by providing a roughness
+
+00:30:02.996 --> 00:30:03.366 A:middle
+texture.
+
+00:30:04.886 --> 00:30:06.246 A:middle
+We can add in a normal map.
+
+00:30:06.896 --> 00:30:08.056 A:middle
+This creates the illusion of
+
+00:30:08.116 --> 00:30:09.326 A:middle
+depth and variances within the
+
+00:30:09.326 --> 00:30:11.176 A:middle
+surfaces, the model's surface,
+
+00:30:11.426 --> 00:30:12.606 A:middle
+without changing the underlying
+
+00:30:12.606 --> 00:30:13.026 A:middle
+mesh.
+
+00:30:13.596 --> 00:30:16.086 A:middle
+We can add an ambient occlusion
+
+00:30:16.086 --> 00:30:17.896 A:middle
+texture to specify where the
+
+00:30:17.896 --> 00:30:19.746 A:middle
+model casts shadows on itself in
+
+00:30:19.746 --> 00:30:21.036 A:middle
+the crevices and nooks and
+
+00:30:21.036 --> 00:30:21.776 A:middle
+crannies of the model.
+
+00:30:23.036 --> 00:30:24.726 A:middle
+And if our model emits lights,
+
+00:30:25.066 --> 00:30:26.306 A:middle
+we can provide an emissive
+
+00:30:26.306 --> 00:30:27.916 A:middle
+texture for things like a TV
+
+00:30:27.916 --> 00:30:29.346 A:middle
+screen or a computer monitor.
+
+00:30:29.926 --> 00:30:32.276 A:middle
+Now, if you're just getting
+
+00:30:32.276 --> 00:30:34.456 A:middle
+started with PBR, we have a
+
+00:30:34.456 --> 00:30:35.886 A:middle
+session on Thursday about
+
+00:30:35.916 --> 00:30:38.006 A:middle
+creating PBR-based models for
+
+00:30:38.006 --> 00:30:39.826 A:middle
+any AR experience, and I highly
+
+00:30:39.826 --> 00:30:40.726 A:middle
+recommend you check it out.
+
+00:30:42.036 --> 00:30:43.366 A:middle
+For now, we'll take a look at
+
+00:30:43.366 --> 00:30:45.306 A:middle
+how these six textures affect AR
+
+00:30:45.306 --> 00:30:46.456 A:middle
+Quick Look particularly.
+
+00:30:47.996 --> 00:30:49.566 A:middle
+So, I'll start with a model of a
+
+00:30:49.566 --> 00:30:50.056 A:middle
+TV.
+
+00:30:50.606 --> 00:30:52.106 A:middle
+Right now, it has no textures.
+
+00:30:52.196 --> 00:30:53.586 A:middle
+It's pretty bland.
+
+00:30:55.016 --> 00:30:57.356 A:middle
+We'll bring in an albedo texture
+
+00:30:57.546 --> 00:30:59.386 A:middle
+to give it some base color, and
+
+00:30:59.386 --> 00:31:00.746 A:middle
+it's much more recognizable as a
+

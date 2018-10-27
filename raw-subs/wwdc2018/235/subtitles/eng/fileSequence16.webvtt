@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.716 --> 00:16:01.196 A:middle
+property called content inset.
+
+00:16:01.746 --> 00:16:04.936 A:middle
+So content inset is a mechanism
+
+00:16:04.936 --> 00:16:06.316 A:middle
+for you to provide insets that
+
+00:16:06.316 --> 00:16:08.236 A:middle
+you can specify from the edges
+
+00:16:08.236 --> 00:16:09.456 A:middle
+of the scrollable area of the
+
+00:16:09.456 --> 00:16:11.066 A:middle
+scroll view to the content
+
+00:16:11.066 --> 00:16:11.486 A:middle
+inside.
+
+00:16:12.406 --> 00:16:13.866 A:middle
+So adding content inset
+
+00:16:13.946 --> 00:16:15.696 A:middle
+increases the scrollable area
+
+00:16:15.696 --> 00:16:17.466 A:middle
+and makes the scroll view able
+
+00:16:17.466 --> 00:16:18.976 A:middle
+to scroll to a larger area.
+
+00:16:19.546 --> 00:16:20.966 A:middle
+So let's set a content inset on
+
+00:16:20.966 --> 00:16:22.706 A:middle
+the top edge here and see what
+
+00:16:22.706 --> 00:16:23.016 A:middle
+happens.
+
+00:16:24.416 --> 00:16:25.546 A:middle
+So here we've set a content
+
+00:16:25.546 --> 00:16:26.326 A:middle
+inset of 20.
+
+00:16:27.126 --> 00:16:28.816 A:middle
+And as you can see, that extends
+
+00:16:28.816 --> 00:16:30.336 A:middle
+that top edge of the scroll view
+
+00:16:30.336 --> 00:16:31.476 A:middle
+so that the scrollable area is
+
+00:16:31.476 --> 00:16:32.076 A:middle
+now larger.
+
+00:16:33.176 --> 00:16:35.416 A:middle
+Now when our content offset is
+
+00:16:35.416 --> 00:16:37.536 A:middle
+sitting at zero, our content is
+
+00:16:37.536 --> 00:16:38.636 A:middle
+still aligned with the top of
+
+00:16:38.636 --> 00:16:39.266 A:middle
+the scroll view.
+
+00:16:39.846 --> 00:16:40.876 A:middle
+But the scroll view could
+
+00:16:40.876 --> 00:16:42.196 A:middle
+actually scroll even farther
+
+00:16:42.596 --> 00:16:43.406 A:middle
+towards the top now.
+
+00:16:44.096 --> 00:16:45.786 A:middle
+So let's scroll around like we
+
+00:16:45.786 --> 00:16:47.196 A:middle
+did before and watch how things
+
+00:16:47.196 --> 00:16:47.906 A:middle
+have changed.
+
+00:16:48.866 --> 00:16:50.756 A:middle
+We'll scroll to the bottom and
+
+00:16:50.786 --> 00:16:51.976 A:middle
+just like before, we're still
+
+00:16:51.976 --> 00:16:54.056 A:middle
+here at a content offset of 100.
+
+00:16:54.936 --> 00:16:55.986 A:middle
+That's because we didn't change
+
+00:16:55.986 --> 00:16:57.296 A:middle
+anything on the bottom edge.
+
+00:16:57.536 --> 00:16:58.506 A:middle
+And we still have a bottom
+
+00:16:58.506 --> 00:16:59.886 A:middle
+content inset of zero.
+

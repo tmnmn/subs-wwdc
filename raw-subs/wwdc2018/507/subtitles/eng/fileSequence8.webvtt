@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.666 --> 00:08:02.026 A:middle
+When that happens, millions of
+
+00:08:02.056 --> 00:08:04.086 A:middle
+clients request keys, all at
+
+00:08:04.086 --> 00:08:06.306 A:middle
+once, resulting in huge impulse
+
+00:08:06.306 --> 00:08:07.446 A:middle
+load on the key server.
+
+00:08:08.816 --> 00:08:11.056 A:middle
+When you disperse this key
+
+00:08:11.056 --> 00:08:12.846 A:middle
+request event across a small
+
+00:08:12.846 --> 00:08:14.996 A:middle
+time window before they appear
+
+00:08:15.156 --> 00:08:16.936 A:middle
+and before the EXT-X-KEY tag
+
+00:08:16.936 --> 00:08:18.796 A:middle
+appears in the playlist, you're,
+
+00:08:18.796 --> 00:08:20.266 A:middle
+basically, load balancing
+
+00:08:20.266 --> 00:08:21.466 A:middle
+requests reaching your key
+
+00:08:21.466 --> 00:08:21.866 A:middle
+server.
+
+00:08:24.446 --> 00:08:25.966 A:middle
+We covered this use case in
+
+00:08:25.966 --> 00:08:28.096 A:middle
+detail with sample code during
+
+00:08:28.096 --> 00:08:30.336 A:middle
+last year's session on HLS.
+
+00:08:30.816 --> 00:08:32.086 A:middle
+So, do check out the sessions
+
+00:08:32.086 --> 00:08:33.256 A:middle
+were recording on
+
+00:08:33.256 --> 00:08:36.476 A:middle
+developerapple.com or WWDC app.
+
+00:08:38.535 --> 00:08:40.046 A:middle
+Apart from allowing you to
+
+00:08:40.046 --> 00:08:42.015 A:middle
+manage and deliver content
+
+00:08:42.015 --> 00:08:43.025 A:middle
+decryption keys
+
+00:08:43.326 --> 00:08:45.516 A:middle
+AVContentKeySession also serves
+
+00:08:45.516 --> 00:08:47.796 A:middle
+as a home for new FairPlay
+
+00:08:47.796 --> 00:08:48.966 A:middle
+Streaming content protection
+
+00:08:48.966 --> 00:08:49.626 A:middle
+features.
+
+00:08:50.676 --> 00:08:52.296 A:middle
+We released one such feature
+
+00:08:52.296 --> 00:08:52.896 A:middle
+last year.
+
+00:08:53.966 --> 00:08:55.646 A:middle
+We call it Offline Rentals.
+
+00:08:56.606 --> 00:08:58.466 A:middle
+Offline Rentals is a FairPlay
+
+00:08:58.466 --> 00:09:00.346 A:middle
+Streaming feature that allows
+

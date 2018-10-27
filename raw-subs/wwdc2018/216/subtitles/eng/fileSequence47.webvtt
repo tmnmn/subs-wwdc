@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:58.806 --> 00:47:00.956 A:middle
+system that your app handles
+
+00:47:00.956 --> 00:47:03.056 A:middle
+Open in Place, we must access
+
+00:47:03.056 --> 00:47:05.076 A:middle
+the document in the following UI
+
+00:47:05.076 --> 00:47:06.356 A:middle
+application delegate method.
+
+00:47:08.076 --> 00:47:09.876 A:middle
+Again, if your app is document
+
+00:47:09.876 --> 00:47:12.996 A:middle
+browser-based, typically in this
+
+00:47:12.996 --> 00:47:14.646 A:middle
+method, you make the
+
+00:47:14.646 --> 00:47:16.646 A:middle
+revealDocument call on the
+
+00:47:16.646 --> 00:47:18.166 A:middle
+documentBrowserViewController.
+
+00:47:19.376 --> 00:47:21.016 A:middle
+Once the completion handler is
+
+00:47:21.016 --> 00:47:22.596 A:middle
+called in this method, you
+
+00:47:22.596 --> 00:47:23.686 A:middle
+present the document in the
+
+00:47:23.686 --> 00:47:24.476 A:middle
+completion handler.
+
+00:47:25.126 --> 00:47:26.926 A:middle
+This is already done for you in
+
+00:47:26.926 --> 00:47:27.676 A:middle
+the Xcode template.
+
+00:47:28.016 --> 00:47:31.246 A:middle
+We can now tap on our app icon
+
+00:47:31.466 --> 00:47:32.806 A:middle
+in the Share sheet, and go
+
+00:47:32.806 --> 00:47:34.506 A:middle
+straight to our app.
+
+00:47:34.506 --> 00:47:36.176 A:middle
+As you see here, we report
+
+00:47:36.246 --> 00:47:38.266 A:middle
+progress in the UI, since the
+
+00:47:38.266 --> 00:47:41.116 A:middle
+document could be in the cloud.
+
+00:47:41.276 --> 00:47:42.866 A:middle
+And, since that download could
+
+00:47:42.866 --> 00:47:44.926 A:middle
+take awhile, we also support
+
+00:47:44.926 --> 00:47:46.626 A:middle
+user cancellation, so we can
+
+00:47:46.666 --> 00:47:48.096 A:middle
+cancel opening this document,
+
+00:47:48.096 --> 00:47:51.116 A:middle
+and jump back to the browser.
+
+00:47:51.596 --> 00:47:52.946 A:middle
+Here's how you can implement
+
+00:47:52.996 --> 00:47:56.186 A:middle
+progress supporting in your app.
+
+00:47:56.456 --> 00:47:57.216 A:middle
+If you call the
+
+00:47:57.216 --> 00:47:58.666 A:middle
+documentBrowserViewController
+
+00:47:58.666 --> 00:48:00.896 A:middle
+revealDocument API that's been
+

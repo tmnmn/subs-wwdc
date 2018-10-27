@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:57.958 --> 00:11:02.262 align:middle line:-2
+这使你有机会为遗失的上下文
+创建完全不同的内容
+
+00:11:03.530 --> 00:11:06.066 align:middle line:-2
+还有一种使用相对路径
+查找上下文的方法
+
+00:11:07.134 --> 00:11:09.536 align:middle line:-1
+如果你已经持有对某个上下文的引用
+
+00:11:09.603 --> 00:11:11.338 align:middle line:-2
+但你想找到其后代
+这时它就很有用
+
+00:11:12.039 --> 00:11:13.974 align:middle line:-1
+实现它的方法是
+
+00:11:14.041 --> 00:11:16.743 align:middle line:-2
+CLSContext的 descendent
+(matchingIdentifierPath)函数
+
+00:11:17.477 --> 00:11:18.545 align:middle line:-1
+这里的区别在于
+
+00:11:18.612 --> 00:11:20.781 align:middle line:-2
+你要么获取到该上下文
+要么获取到null
+
+00:11:20.848 --> 00:11:22.649 align:middle line:-1
+如果它不匹配任何路径
+
+00:11:24.551 --> 00:11:27.354 align:middle line:-1
+还有一种查找上下文的方式
+
+00:11:27.421 --> 00:11:32.893 align:middle line:-2
+这是通过CLSDataStore的 contexts
+(matching:predicate)方法实现的
+
+00:11:33.293 --> 00:11:34.628 align:middle line:-1
+在幻灯片的例子中
+
+00:11:34.695 --> 00:11:38.265 align:middle line:-2
+你可以看到如何找到
+某个上下文的所有孩子
+
+00:11:39.299 --> 00:11:42.736 align:middle line:-2
+此外 还有一个
+DataStoreDelegate
+
+00:11:43.604 --> 00:11:48.342 align:middle line:-1
+它与我们刚才看到的路径查找方法
+
+00:11:48.408 --> 00:11:49.409 align:middle line:-1
+一同使用
+
+00:11:52.446 --> 00:11:55.849 align:middle line:-1
+屏幕上是委托声明
+
+00:11:59.486 --> 00:12:00.921 align:middle line:-1
+这当你的上下文是
+

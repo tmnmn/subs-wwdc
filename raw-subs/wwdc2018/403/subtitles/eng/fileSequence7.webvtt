@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.936 --> 00:07:03.116 A:middle
+So, here I have a project called
+
+00:07:03.116 --> 00:07:03.806 A:middle
+Dev Cast.
+
+00:07:04.376 --> 00:07:05.986 A:middle
+It's a simple messaging app and
+
+00:07:05.986 --> 00:07:07.596 A:middle
+I created the iOS version for
+
+00:07:07.596 --> 00:07:08.566 A:middle
+this talk last year.
+
+00:07:08.976 --> 00:07:10.066 A:middle
+So, this year, I wanted to
+
+00:07:10.066 --> 00:07:11.206 A:middle
+create a Mac version.
+
+00:07:12.196 --> 00:07:13.396 A:middle
+But I wanted to share the
+
+00:07:13.396 --> 00:07:14.956 A:middle
+business logic between the iOS
+
+00:07:14.956 --> 00:07:16.296 A:middle
+and Mac versions, so I put it
+
+00:07:16.296 --> 00:07:17.656 A:middle
+all into a framework called
+
+00:07:17.656 --> 00:07:20.886 A:middle
+DevCastkit and today, my goal is
+
+00:07:20.886 --> 00:07:22.726 A:middle
+to explore and maybe improve the
+
+00:07:22.726 --> 00:07:24.496 A:middle
+code coverage of this framework.
+
+00:07:25.716 --> 00:07:26.986 A:middle
+So, right now, I'm not
+
+00:07:27.056 --> 00:07:28.296 A:middle
+collecting code coverage, so I
+
+00:07:28.296 --> 00:07:29.376 A:middle
+just need to turn it on.
+
+00:07:30.456 --> 00:07:32.146 A:middle
+I'll do that by selecting the
+
+00:07:32.146 --> 00:07:34.756 A:middle
+scheme, selecting edit scheme,
+
+00:07:35.426 --> 00:07:38.286 A:middle
+go into the test action, go into
+
+00:07:38.286 --> 00:07:38.846 A:middle
+options.
+
+00:07:39.566 --> 00:07:42.216 A:middle
+And down here, I will just
+
+00:07:42.216 --> 00:07:43.366 A:middle
+enable code coverage.
+
+00:07:47.276 --> 00:07:49.106 A:middle
+Now I will run my test by going
+
+00:07:49.106 --> 00:07:50.496 A:middle
+to product test.
+
+00:07:51.316 --> 00:07:53.446 A:middle
+Right now, my framework, my test
+
+00:07:53.446 --> 00:07:55.066 A:middle
+bundle and my Mac app are
+
+00:07:55.066 --> 00:07:57.316 A:middle
+getting built, and my tests are
+
+00:07:57.316 --> 00:07:57.866 A:middle
+being run.
+
+00:07:58.446 --> 00:08:01.196 A:middle
+Now the test finished so let's
+

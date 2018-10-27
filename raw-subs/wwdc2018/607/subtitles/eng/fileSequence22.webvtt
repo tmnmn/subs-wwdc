@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.386 --> 00:22:00.526 A:middle
+calculation for a chunk only and
+
+00:22:00.526 --> 00:22:02.356 A:middle
+not on each individual triangle.
+
+00:22:03.576 --> 00:22:05.496 A:middle
+We then tell the GPU to only
+
+00:22:05.496 --> 00:22:06.536 A:middle
+render the chunks that are
+
+00:22:06.536 --> 00:22:07.416 A:middle
+actually visible.
+
+00:22:07.916 --> 00:22:11.956 A:middle
+And again, let's see the
+
+00:22:11.956 --> 00:22:13.016 A:middle
+side-by-side view.
+
+00:22:13.406 --> 00:22:14.566 A:middle
+The left side is your camera
+
+00:22:14.566 --> 00:22:16.376 A:middle
+view, and the right side is
+
+00:22:16.376 --> 00:22:17.556 A:middle
+another view of the bus.
+
+00:22:18.466 --> 00:22:20.346 A:middle
+You could see the red and
+
+00:22:20.346 --> 00:22:21.326 A:middle
+pinkish tint there.
+
+00:22:21.326 --> 00:22:22.846 A:middle
+That is what our compute shaders
+
+00:22:22.846 --> 00:22:24.306 A:middle
+determined is invisible.
+
+00:22:25.536 --> 00:22:27.606 A:middle
+We never actually send this work
+
+00:22:27.606 --> 00:22:30.216 A:middle
+to the GPU, so it saves us 50%
+
+00:22:30.216 --> 00:22:31.636 A:middle
+or more of the geometry
+
+00:22:31.706 --> 00:22:32.536 A:middle
+rendering cost.
+
+00:22:35.896 --> 00:22:38.316 A:middle
+Here's 1 last view showing
+
+00:22:38.316 --> 00:22:40.046 A:middle
+which, how much this technique
+
+00:22:40.046 --> 00:22:40.666 A:middle
+could save you.
+
+00:22:41.846 --> 00:22:43.516 A:middle
+So notice on the right, many of
+
+00:22:43.516 --> 00:22:44.876 A:middle
+the buses and ambulances are
+
+00:22:44.876 --> 00:22:45.976 A:middle
+actually invisible.
+
+00:22:50.516 --> 00:22:52.036 A:middle
+This is really amazing.
+
+00:22:52.036 --> 00:22:52.866 A:middle
+I love this.
+
+00:22:53.556 --> 00:22:55.156 A:middle
+So please take a chance to
+
+00:22:55.156 --> 00:22:56.996 A:middle
+explore the code, and I hope
+
+00:22:57.136 --> 00:22:58.776 A:middle
+I'll see this technology in some
+
+00:22:58.776 --> 00:22:59.986 A:middle
+of your games in the future.
+

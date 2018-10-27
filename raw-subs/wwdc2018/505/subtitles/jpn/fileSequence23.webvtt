@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:56.643 --> 00:23:00.514 align:start position:29% line:-2
+またドラッグ＆ドロップの
+設定も関係してきます
+
+00:23:00.614 --> 00:23:04.184 align:start position:25% line:-1
+つまり位置情報を保存する場合
+
+00:23:04.284 --> 00:23:08.555 align:start position:27% line:-2
+メタデータを含まない
+新規ファイルが転送されます
+
+00:23:09.122 --> 00:23:14.328 align:start position:27% line:-2
+メインスレッドで
+ダウンロードや転送を行うと
+
+00:23:14.428 --> 00:23:17.498 align:start position:29% line:-1
+時間がかかってしまいます
+
+00:23:19.399 --> 00:23:23.504 align:start position:30% line:-2
+そこで非同期のAPIが
+必要になります
+
+00:23:24.404 --> 00:23:29.243 align:start position:25% line:-2
+ここで登場するのが
+File Promiseです
+
+00:23:30.377 --> 00:23:35.015 align:start position:23% line:-2
+このAPIは
+ローカルに存在しないファイルを
+
+00:23:35.115 --> 00:23:39.319 align:start position:34% line:-2
+指示された場所に
+書き込んでくれます
+
+00:23:39.586 --> 00:23:43.357 align:start position:25% line:-2
+また裏での
+ファイルの書き込みも可能です
+
+00:23:45.526 --> 00:23:48.662 align:start position:32% line:-1
+方法は２通りあります
+
+00:23:48.762 --> 00:23:51.965 align:start position:5% line:-2
+NSFilePromiseReceiverを使った
+ファイルの受信と
+
+00:23:52.065 --> 00:23:55.369 align:start position:5% line:-2
+NSFilePromiseProviderを使った
+ファイルの送信です
+
+00:23:55.802 --> 00:24:00.474 align:start position:12% line:-2
+これらのAPIは
+macOS Sierraから導入されました
+

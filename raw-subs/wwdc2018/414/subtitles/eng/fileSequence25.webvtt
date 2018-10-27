@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.856 --> 00:25:00.486 A:middle
+release?
+
+00:25:00.956 --> 00:25:01.806 A:middle
+We can look at the rest of the
+
+00:25:01.806 --> 00:25:02.636 A:middle
+stack trace.
+
+00:25:03.226 --> 00:25:05.286 A:middle
+We have the object dispose
+
+00:25:05.286 --> 00:25:07.526 A:middle
+function, this is a function in
+
+00:25:07.526 --> 00:25:09.376 A:middle
+the Objective-C runtime that is
+
+00:25:09.376 --> 00:25:11.176 A:middle
+used to deallocate objects.
+
+00:25:12.516 --> 00:25:14.086 A:middle
+The object dispose function
+
+00:25:14.086 --> 00:25:16.426 A:middle
+called a function called ivar
+
+00:25:16.426 --> 00:25:18.716 A:middle
+destroyer on one of our classes,
+
+00:25:18.716 --> 00:25:20.956 A:middle
+our LoginViewController class.
+
+00:25:21.846 --> 00:25:24.176 A:middle
+The ivar destroyer function is
+
+00:25:24.176 --> 00:25:26.166 A:middle
+part of Swift code, this is a
+
+00:25:26.166 --> 00:25:27.516 A:middle
+function that cleans up the
+
+00:25:27.516 --> 00:25:29.466 A:middle
+properties, that cleans up the
+
+00:25:29.466 --> 00:25:31.776 A:middle
+ivar storage of an object as it
+
+00:25:31.776 --> 00:25:32.686 A:middle
+is deallocated.
+
+00:25:33.766 --> 00:25:35.386 A:middle
+So that gives us part of the
+
+00:25:35.386 --> 00:25:36.966 A:middle
+story as to what caused this
+
+00:25:36.966 --> 00:25:37.446 A:middle
+crash.
+
+00:25:37.956 --> 00:25:39.856 A:middle
+We were deallocating an object
+
+00:25:39.946 --> 00:25:41.956 A:middle
+of our login view controller
+
+00:25:41.956 --> 00:25:42.526 A:middle
+class.
+
+00:25:43.536 --> 00:25:46.156 A:middle
+That class in its d init code
+
+00:25:46.356 --> 00:25:47.556 A:middle
+was trying to clean up its
+
+00:25:47.556 --> 00:25:49.816 A:middle
+properties and its ivars and
+
+00:25:49.816 --> 00:25:51.536 A:middle
+while releasing one of those
+
+00:25:51.536 --> 00:25:53.266 A:middle
+properties we crashed.
+
+00:25:53.266 --> 00:25:55.716 A:middle
+So that gives us a little bit of
+
+00:25:55.716 --> 00:25:56.876 A:middle
+detail as to what went wrong.
+
+00:25:56.906 --> 00:25:58.826 A:middle
+Can we do better, is there more
+
+00:25:58.826 --> 00:26:00.206 A:middle
+information in the crash log
+

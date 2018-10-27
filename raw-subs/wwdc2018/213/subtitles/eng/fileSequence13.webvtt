@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.676 --> 00:13:00.546 A:middle
+indexPath to initiate fetching
+
+00:13:00.546 --> 00:13:01.046 A:middle
+content.
+
+00:13:01.906 --> 00:13:04.006 A:middle
+This API will be called whenever
+
+00:13:04.006 --> 00:13:05.316 A:middle
+any of your index paths are
+
+00:13:05.316 --> 00:13:06.856 A:middle
+visible on the CarPlay display.
+
+00:13:07.036 --> 00:13:08.406 A:middle
+So, when the user is scrolling
+
+00:13:08.406 --> 00:13:10.106 A:middle
+through table cells or selecting
+
+00:13:10.106 --> 00:13:10.906 A:middle
+different tabs,
+
+00:13:11.596 --> 00:13:12.946 A:middle
+beginLoadingChildItems will be
+
+00:13:12.946 --> 00:13:14.366 A:middle
+called for every single index
+
+00:13:14.366 --> 00:13:15.666 A:middle
+path that shows on the display.
+
+00:13:17.126 --> 00:13:18.626 A:middle
+This gives your app a chance to
+
+00:13:18.626 --> 00:13:20.136 A:middle
+start loading before the user,
+
+00:13:20.136 --> 00:13:21.536 A:middle
+actually, selects the content.
+
+00:13:22.436 --> 00:13:23.896 A:middle
+And here's a code example inside
+
+00:13:23.896 --> 00:13:26.036 A:middle
+of Srirocka, where when the user
+
+00:13:26.346 --> 00:13:28.116 A:middle
+sees that the Heating Habaneros
+
+00:13:28.116 --> 00:13:29.396 A:middle
+playlist is visible on the
+
+00:13:29.396 --> 00:13:31.086 A:middle
+CarPlay display, we start
+
+00:13:31.086 --> 00:13:32.726 A:middle
+processing that playlist.
+
+00:13:32.726 --> 00:13:33.876 A:middle
+And when the user makes a
+
+00:13:33.876 --> 00:13:35.426 A:middle
+selection, will have either been
+
+00:13:35.426 --> 00:13:36.496 A:middle
+midway through the network
+
+00:13:36.496 --> 00:13:39.036 A:middle
+request or ready to go and able
+
+00:13:39.036 --> 00:13:39.946 A:middle
+to provide content.
+
+00:13:41.176 --> 00:13:42.906 A:middle
+So, let's take a look at some
+
+00:13:42.906 --> 00:13:45.446 A:middle
+app scenarios that may occur
+
+00:13:45.766 --> 00:13:47.106 A:middle
+when developing your app for
+
+00:13:47.106 --> 00:13:47.516 A:middle
+CarPlay.
+
+00:13:48.776 --> 00:13:50.226 A:middle
+Now, Srirocka provides a very
+
+00:13:50.346 --> 00:13:52.926 A:middle
+rich user experience when logged
+
+00:13:52.926 --> 00:13:53.176 A:middle
+out.
+
+00:13:53.426 --> 00:13:54.646 A:middle
+It's very clear here, with
+
+00:13:54.816 --> 00:13:56.436 A:middle
+beautiful typography and great
+
+00:13:56.436 --> 00:13:58.826 A:middle
+graphic design, that the user is
+
+00:13:58.826 --> 00:14:00.246 A:middle
+logged out and will need to log
+

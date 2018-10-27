@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.366 --> 00:17:01.876 A:middle
+I release the mouse and nothing
+
+00:17:01.876 --> 00:17:02.296 A:middle
+happens.
+
+00:17:02.666 --> 00:17:04.126 A:middle
+The assets were added to the
+
+00:17:04.126 --> 00:17:05.986 A:middle
+project, but my extension
+
+00:17:06.215 --> 00:17:07.165 A:middle
+doesn't list the change
+
+00:17:07.165 --> 00:17:07.776 A:middle
+notification.
+
+00:17:08.096 --> 00:17:10.316 A:middle
+And, doesn't know that assets
+
+00:17:10.316 --> 00:17:11.146 A:middle
+were added to the project.
+
+00:17:12.616 --> 00:17:14.286 A:middle
+So, let's switch back to Xcode
+
+00:17:14.286 --> 00:17:15.965 A:middle
+and fix that.
+
+00:17:16.736 --> 00:17:18.396 A:middle
+In my projectViewController, I
+
+00:17:18.396 --> 00:17:20.205 A:middle
+have the begin and resumeProject
+
+00:17:20.205 --> 00:17:21.896 A:middle
+method, which are a part of the
+
+00:17:21.896 --> 00:17:24.106 A:middle
+projectExtensionController
+
+00:17:24.106 --> 00:17:24.626 A:middle
+protocol.
+
+00:17:25.116 --> 00:17:27.006 A:middle
+And, here I want to register for
+
+00:17:27.136 --> 00:17:27.965 A:middle
+change observation.
+
+00:17:28.465 --> 00:17:32.686 A:middle
+And, we add the same code in
+
+00:17:32.746 --> 00:17:33.676 A:middle
+both methods.
+
+00:17:33.676 --> 00:17:36.796 A:middle
+First, we get the PhotoKit
+
+00:17:37.156 --> 00:17:39.426 A:middle
+object we're interested in.
+
+00:17:39.916 --> 00:17:42.286 A:middle
+We're interested in additions of
+
+00:17:42.356 --> 00:17:44.326 A:middle
+assets to the project, so we are
+
+00:17:44.326 --> 00:17:45.916 A:middle
+getting a fetch result for all
+
+00:17:45.916 --> 00:17:47.956 A:middle
+assets on the project, and then
+
+00:17:48.026 --> 00:17:49.916 A:middle
+we are registering asset change
+
+00:17:49.916 --> 00:17:51.116 A:middle
+observer for the library.
+
+00:17:51.816 --> 00:17:53.596 A:middle
+In finished project, we
+
+00:17:53.836 --> 00:17:54.626 A:middle
+[inaudible] registering.
+
+00:17:55.456 --> 00:17:57.996 A:middle
+And, since Xcode complains that
+
+00:17:57.996 --> 00:17:59.546 A:middle
+we don't implement the protocol,
+
+00:17:59.696 --> 00:18:01.096 A:middle
+we add that.
+

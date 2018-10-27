@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.766 --> 00:16:01.156 A:middle
+the template for it.
+
+00:16:01.616 --> 00:16:06.866 A:middle
+"Sorry, Soup is Out of Stock."
+
+00:16:07.216 --> 00:16:11.666 A:middle
+And with that, we have defined
+
+00:16:11.666 --> 00:16:12.876 A:middle
+our custom responses.
+
+00:16:13.376 --> 00:16:14.796 A:middle
+Now, let's head over to the
+
+00:16:14.796 --> 00:16:15.976 A:middle
+Intent Handler file.
+
+00:16:24.656 --> 00:16:27.956 A:middle
+Alright, here we are.
+
+00:16:29.116 --> 00:16:30.686 A:middle
+As you see here, we have a
+
+00:16:30.686 --> 00:16:32.556 A:middle
+Confirm and a Handle Method.
+
+00:16:33.136 --> 00:16:34.356 A:middle
+Let's look at Confirm first.
+
+00:16:35.036 --> 00:16:36.776 A:middle
+We find out which soup the user
+
+00:16:36.776 --> 00:16:39.926 A:middle
+has requested, and then check
+
+00:16:39.926 --> 00:16:41.276 A:middle
+with our menu manager whether
+
+00:16:41.276 --> 00:16:42.896 A:middle
+that soup exists on our menu.
+
+00:16:43.466 --> 00:16:44.946 A:middle
+If it does, we return the
+
+00:16:44.946 --> 00:16:45.866 A:middle
+response code "Ready."
+
+00:16:47.066 --> 00:16:48.786 A:middle
+What I would like to do here, is
+
+00:16:48.786 --> 00:16:50.926 A:middle
+to check whether that soup item
+
+00:16:50.976 --> 00:16:53.016 A:middle
+is available currently to order.
+
+00:16:53.446 --> 00:16:55.516 A:middle
+So first, let's grab reference
+
+00:16:55.516 --> 00:16:57.206 A:middle
+to the menu item from our menu
+
+00:16:57.206 --> 00:16:57.566 A:middle
+manager.
+
+00:16:59.116 --> 00:17:00.986 A:middle
+Then, I'm going to check if it's
+

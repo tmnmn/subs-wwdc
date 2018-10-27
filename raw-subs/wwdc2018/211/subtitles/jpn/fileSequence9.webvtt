@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.605 --> 00:09:02.743 align:start position:30% line:-2
+定義と報告が終わったら
+処理のステップです
+
+00:09:02.843 --> 00:09:05.979 align:start position:18% line:-1
+NSUserActivityを使うと
+
+00:09:06.079 --> 00:09:09.683 align:start position:29% line:-2
+常にAppで
+それが開きます
+
+00:09:09.850 --> 00:09:13.120 align:start position:9% line:-2
+そのためには
+continueUserActivityという
+
+00:09:13.220 --> 00:09:16.857 align:start position:20% line:-2
+AppDelegateのメソッドを
+実装します
+
+00:09:16.957 --> 00:09:22.229 align:start position:27% line:-2
+まずアクティビティタイプが
+正しいか確認します
+
+00:09:22.329 --> 00:09:25.165 align:start position:30% line:-2
+正しかったら
+アクティビティ登録時の
+
+00:09:25.265 --> 00:09:27.734 align:start position:38% line:-1
+状態に復元します
+
+00:09:28.936 --> 00:09:32.339 align:start position:36% line:-2
+これでSiriが
+ショートカットを
+
+00:09:32.439 --> 00:09:35.242 align:start position:27% line:-1
+提案できるようになりました
+
+00:09:37.077 --> 00:09:40.247 align:start position:21% line:-1
+次はIntentを使った方法です
+
+00:09:41.148 --> 00:09:43.417 align:start position:32% line:-2
+まずショートカットを
+定義します
+
+00:09:43.517 --> 00:09:49.523 align:start position:21% line:-2
+最初にどのタイプのIntentを
+使用するか決めます
+
+00:09:50.090 --> 00:09:53.393 align:start position:32% line:-2
+SiriKitには
+メッセージの送信など
+
+00:09:53.494 --> 00:09:56.864 align:start position:32% line:-2
+様々なビルトインの
+Intentがあります
+
+00:09:57.364 --> 00:10:02.903 align:start position:25% line:-2
+新しいカスタムIntentを
+Xcodeで定義もできます
+

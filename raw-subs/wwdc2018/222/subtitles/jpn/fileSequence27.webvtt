@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.253 --> 00:27:02.022 align:start position:27% line:-1
+Swiftだと心配でしょう
+
+00:27:02.289 --> 00:27:07.728 align:start position:16% line:-2
+Objective-CやC++の例外を
+認知できないためです
+
+00:27:08.061 --> 00:27:11.832 align:start position:29% line:-2
+クラッシュや満足度低下の
+原因となります
+
+00:27:13.267 --> 00:27:16.236 align:start position:11% line:-2
+decodingFailurePolicyが
+エラーを設定すると
+
+00:27:16.336 --> 00:27:21.375 align:start position:12% line:-2
+エラーはUnarchiverに割り当てられ
+実行は継続します
+
+00:27:21.642 --> 00:27:26.480 align:start position:23% line:-2
+この例では
+復号化のコールが何かを返します
+
+00:27:26.580 --> 00:27:30.150 align:start position:23% line:-1
+何も復号できない時はnilです
+
+00:27:31.752 --> 00:27:38.025 align:start position:25% line:-2
+プリミティブ型を復号するのに
+不適切な型がある場合も
+
+00:27:38.125 --> 00:27:39.760 align:start position:39% line:-1
+同じ流れです
+
+00:27:39.860 --> 00:27:43.997 align:start position:29% line:-2
+この場合 nilではなく
+ゼロが返されます
+
+00:27:47.568 --> 00:27:50.104 align:start position:9% line:-2
+failWithErrorは
+NSKeyedUnarchiverのAPIです
+
+00:27:50.204 --> 00:27:55.175 align:start position:23% line:-2
+独自のコードで
+失敗の日時や原因を示しましょう
+
+00:27:55.542 --> 00:28:00.013 align:start position:12% line:-2
+failWithErrorはnilを返さず
+情報を記録します
+

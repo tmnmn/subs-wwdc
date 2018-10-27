@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.966 --> 00:15:01.456 A:middle
+passed those same checks that
+
+00:15:01.456 --> 00:15:03.156 A:middle
+you did before you can take that
+
+00:15:03.156 --> 00:15:05.186 A:middle
+receipt data and store that in a
+
+00:15:05.186 --> 00:15:06.686 A:middle
+field called latest receipt data
+
+00:15:06.836 --> 00:15:08.086 A:middle
+against the current user.
+
+00:15:09.496 --> 00:15:10.426 A:middle
+And now that you have that
+
+00:15:10.426 --> 00:15:11.846 A:middle
+latest receipt data stored,
+
+00:15:12.276 --> 00:15:13.956 A:middle
+that's a base64Encode string
+
+00:15:14.216 --> 00:15:14.706 A:middle
+with the user.
+
+00:15:15.326 --> 00:15:16.296 A:middle
+When it comes time to answer
+
+00:15:16.296 --> 00:15:18.156 A:middle
+that question, does my user have
+
+00:15:18.156 --> 00:15:19.136 A:middle
+an active subscription you can
+
+00:15:19.136 --> 00:15:20.416 A:middle
+just take that latest receipt
+
+00:15:20.416 --> 00:15:22.216 A:middle
+data from your server directly
+
+00:15:22.216 --> 00:15:23.596 A:middle
+and send it to the verify
+
+00:15:23.596 --> 00:15:24.366 A:middle
+receipt endpoint.
+
+00:15:25.276 --> 00:15:26.416 A:middle
+You can also include here an
+
+00:15:26.416 --> 00:15:28.186 A:middle
+optional flag that's the exclude
+
+00:15:28.186 --> 00:15:30.096 A:middle
+old transactions flag, this is
+
+00:15:30.096 --> 00:15:31.256 A:middle
+just telling verify receipt that
+
+00:15:31.256 --> 00:15:32.026 A:middle
+you don't even want to know
+
+00:15:32.026 --> 00:15:33.316 A:middle
+about that decoded version of
+
+00:15:33.316 --> 00:15:34.396 A:middle
+the receipt you just want to
+
+00:15:34.396 --> 00:15:35.416 A:middle
+find out about any new
+
+00:15:35.416 --> 00:15:36.076 A:middle
+transactions.
+
+00:15:37.376 --> 00:15:39.456 A:middle
+Verify receipt will respond with
+
+00:15:39.456 --> 00:15:41.326 A:middle
+that particular object, the
+
+00:15:41.326 --> 00:15:42.646 A:middle
+latest receipt info object.
+
+00:15:43.026 --> 00:15:44.506 A:middle
+And inside this object is those
+
+00:15:44.506 --> 00:15:45.736 A:middle
+new transactions that have
+
+00:15:45.736 --> 00:15:47.316 A:middle
+occurred before this receipt
+
+00:15:47.316 --> 00:15:48.296 A:middle
+data was actually generated.
+
+00:15:48.296 --> 00:15:50.306 A:middle
+And you can take the expires
+
+00:15:50.336 --> 00:15:52.126 A:middle
+date directly from the response
+
+00:15:52.796 --> 00:15:53.936 A:middle
+of the latest receipt info
+
+00:15:53.936 --> 00:15:56.556 A:middle
+object and update it against the
+
+00:15:56.556 --> 00:15:58.266 A:middle
+current user, again extending
+
+00:15:58.266 --> 00:15:59.586 A:middle
+them access to that next
+
+00:15:59.586 --> 00:16:00.386 A:middle
+subscription window.
+

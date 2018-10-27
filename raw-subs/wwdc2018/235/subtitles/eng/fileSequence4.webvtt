@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.676 --> 00:04:00.846 A:middle
+from one view to the next.
+
+00:04:01.456 --> 00:04:03.846 A:middle
+So we'll just take away the text
+
+00:04:04.226 --> 00:04:05.296 A:middle
+and add a subview.
+
+00:04:05.446 --> 00:04:07.136 A:middle
+And this is going to cover most
+
+00:04:07.136 --> 00:04:10.336 A:middle
+of the bottom edge of that view.
+
+00:04:10.556 --> 00:04:12.836 A:middle
+Now, how does the safe area get
+
+00:04:12.836 --> 00:04:13.946 A:middle
+calculated for this?
+
+00:04:14.406 --> 00:04:17.146 A:middle
+Well, as we saw, that subview
+
+00:04:17.146 --> 00:04:19.435 A:middle
+that we just added, it intrudes
+
+00:04:19.505 --> 00:04:21.116 A:middle
+on the unsafe parts of the view
+
+00:04:21.276 --> 00:04:24.816 A:middle
+on the left, right, and bottom
+
+00:04:24.816 --> 00:04:25.576 A:middle
+of its superview.
+
+00:04:25.836 --> 00:04:27.816 A:middle
+And so those are the values that
+
+00:04:27.816 --> 00:04:29.596 A:middle
+you will see in the UI edge
+
+00:04:29.596 --> 00:04:31.226 A:middle
+insets represented by the safe
+
+00:04:31.226 --> 00:04:32.626 A:middle
+area insets property on that
+
+00:04:32.676 --> 00:04:33.056 A:middle
+subview.
+
+00:04:33.856 --> 00:04:35.736 A:middle
+And similarly, you'll see a safe
+
+00:04:35.736 --> 00:04:37.526 A:middle
+area layout guide whose layout
+
+00:04:37.526 --> 00:04:40.356 A:middle
+frame looks kind of like this.
+
+00:04:40.556 --> 00:04:43.786 A:middle
+Now once you've seen this, and
+
+00:04:43.786 --> 00:04:45.656 A:middle
+you've got a view, you might
+
+00:04:45.656 --> 00:04:46.896 A:middle
+want to actually add additional
+
+00:04:46.896 --> 00:04:48.696 A:middle
+insets for your UI.
+
+00:04:48.786 --> 00:04:49.816 A:middle
+You might decide that you want
+
+00:04:49.816 --> 00:04:51.746 A:middle
+to add controls through your
+
+00:04:51.746 --> 00:04:53.456 A:middle
+view controllers that will then
+
+00:04:53.456 --> 00:04:55.096 A:middle
+add to the safe area or subtract
+
+00:04:55.096 --> 00:04:56.736 A:middle
+from the safe area for your
+
+00:04:56.736 --> 00:04:57.346 A:middle
+subviews.
+
+00:04:58.076 --> 00:04:58.856 A:middle
+So we'll go ahead and add
+
+00:04:58.856 --> 00:05:01.386 A:middle
+another subview here.
+

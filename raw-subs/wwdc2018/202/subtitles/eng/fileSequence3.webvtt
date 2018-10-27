@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.496 --> 00:03:01.476 A:middle
+including a fairly large amount
+
+00:03:01.476 --> 00:03:02.856 A:middle
+of expensive operations like
+
+00:03:02.896 --> 00:03:05.416 A:middle
+reading files, loading data out
+
+00:03:05.416 --> 00:03:06.916 A:middle
+of databases, or other things of
+
+00:03:06.916 --> 00:03:07.516 A:middle
+that nature.
+
+00:03:07.936 --> 00:03:09.056 A:middle
+So you'll definitely want to
+
+00:03:09.056 --> 00:03:10.536 A:middle
+look at the expense here in your
+
+00:03:10.536 --> 00:03:13.396 A:middle
+own apps but it tends to be this
+
+00:03:13.396 --> 00:03:14.616 A:middle
+is where a good portion of it
+
+00:03:14.926 --> 00:03:15.686 A:middle
+will exist.
+
+00:03:17.276 --> 00:03:18.956 A:middle
+Now, you may think looking here
+
+00:03:18.956 --> 00:03:19.936 A:middle
+that that's the end of the
+
+00:03:19.936 --> 00:03:21.766 A:middle
+expensive work but even once you
+
+00:03:21.766 --> 00:03:23.006 A:middle
+return from this method, there's
+
+00:03:23.006 --> 00:03:24.316 A:middle
+actually more work that has to
+
+00:03:24.376 --> 00:03:25.956 A:middle
+happen in order to get the cell
+
+00:03:25.956 --> 00:03:27.086 A:middle
+prepared to have it show up on
+
+00:03:27.086 --> 00:03:27.506 A:middle
+screen.
+
+00:03:28.206 --> 00:03:29.786 A:middle
+So, of course, next, we have to
+
+00:03:29.786 --> 00:03:31.306 A:middle
+lay out all of the content in
+
+00:03:31.306 --> 00:03:31.836 A:middle
+that cell.
+
+00:03:32.336 --> 00:03:33.936 A:middle
+We need to size all the views
+
+00:03:33.936 --> 00:03:34.866 A:middle
+and position them in the right
+
+00:03:34.926 --> 00:03:35.686 A:middle
+spot.
+
+00:03:36.086 --> 00:03:37.276 A:middle
+Now, this can actually be a
+
+00:03:37.276 --> 00:03:38.476 A:middle
+pretty substantial amount of the
+
+00:03:38.476 --> 00:03:39.736 A:middle
+total time that we're spending
+
+00:03:39.736 --> 00:03:41.176 A:middle
+because it can include other
+
+00:03:41.176 --> 00:03:42.946 A:middle
+expensive operations like
+
+00:03:43.036 --> 00:03:44.666 A:middle
+measuring text.
+
+00:03:45.296 --> 00:03:46.886 A:middle
+Once everything is properly
+
+00:03:46.886 --> 00:03:48.666 A:middle
+sized and positioned, then it's
+
+00:03:48.666 --> 00:03:50.736 A:middle
+time to generate any content
+
+00:03:50.736 --> 00:03:52.276 A:middle
+that would need to be drawn
+
+00:03:52.276 --> 00:03:54.116 A:middle
+using drawing calls and to do
+
+00:03:54.116 --> 00:03:55.606 A:middle
+that we have to call draw Rect
+
+00:03:55.606 --> 00:03:57.246 A:middle
+on all of the subviews within
+
+00:03:57.246 --> 00:03:57.746 A:middle
+that cell.
+
+00:03:58.276 --> 00:03:59.816 A:middle
+Again, this can be a pretty
+
+00:03:59.816 --> 00:04:01.216 A:middle
+large amount of the time because
+

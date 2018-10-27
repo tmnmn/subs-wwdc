@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:01.562 --> 00:26:03.130 align:middle line:-1
+因此在我的单元测试中
+
+00:26:03.197 --> 00:26:06.733 align:middle line:-2
+我将为模拟定义一个嵌套在
+我的测试类中的struct
+
+00:26:06.800 --> 00:26:08.969 align:middle line:-2
+它符合
+locationFetcher协议
+
+00:26:09.036 --> 00:26:10.537 align:middle line:-1
+并满足其要求
+
+00:26:11.505 --> 00:26:13.407 align:middle line:-1
+注意在它的requestLocation方法中
+
+00:26:13.473 --> 00:26:17.611 align:middle line:-2
+它调用一个块来获取一个假的位置
+我可以在测试中自定义它
+
+00:26:18.245 --> 00:26:21.682 align:middle line:-2
+然它后调用委托方法
+将那个假位置传递给它
+
+00:26:24.585 --> 00:26:27.254 align:middle line:-2
+现在我有了我所需要的一切
+我可以写我的测试
+
+00:26:27.988 --> 00:26:30.057 align:middle line:-2
+我创建一个
+MockLocationFetcher结构
+
+00:26:30.123 --> 00:26:32.593 align:middle line:-2
+并配置它的
+handleRequestLocation块
+
+00:26:32.659 --> 00:26:34.161 align:middle line:-1
+以提供假位置
+
+00:26:35.262 --> 00:26:39.600 align:middle line:-2
+然后我创建CurrentLocationProvider
+并将MockLocationFetcher传递给它
+
+00:26:40.167 --> 00:26:43.637 align:middle line:-2
+最后我用一个完成块调用
+checkCurrentLocation
+
+00:26:44.238 --> 00:26:45.606 align:middle line:-1
+在完成块中有一个断言
+
+00:26:45.672 --> 00:26:47.441 align:middle line:-1
+用于检查位置
+
+00:26:47.508 --> 00:26:49.076 align:middle line:-1
+是一个感兴趣的点
+
+00:26:51.178 --> 00:26:52.012 align:middle line:-1
+所以它很管用
+
+00:26:52.079 --> 00:26:54.948 align:middle line:-2
+我现在可以模拟我的类使用
+CLLocationManager
+
+00:26:55.015 --> 00:26:56.850 align:middle line:-2
+而不需要创建一个真正的
+CLLocationManager
+
+00:26:58.185 --> 00:27:00.120 align:middle line:-1
+因此在这里我展示了如何使用
+

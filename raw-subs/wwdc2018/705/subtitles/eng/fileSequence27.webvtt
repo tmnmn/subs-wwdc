@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:56.516 --> 00:27:02.546 A:middle
+[ Applause ]
+
+00:27:03.046 --> 00:27:04.276 A:middle
+Now if we look at how our tuning
+
+00:27:04.516 --> 00:27:05.876 A:middle
+has impacted the recovery of
+
+00:27:05.876 --> 00:27:07.966 A:middle
+subscriptions we can see that
+
+00:27:08.006 --> 00:27:09.636 A:middle
+quarter over quarter we've been
+
+00:27:09.636 --> 00:27:11.416 A:middle
+able to continue to recover more
+
+00:27:11.416 --> 00:27:13.146 A:middle
+and more of your subscriptions.
+
+00:27:13.706 --> 00:27:17.456 A:middle
+Now the net result of this has
+
+00:27:17.456 --> 00:27:19.766 A:middle
+been 12 million of your
+
+00:27:19.766 --> 00:27:21.076 A:middle
+subscriptions recovered since
+
+00:27:21.116 --> 00:27:21.966 A:middle
+the launch of Billing Retry.
+
+00:27:22.516 --> 00:27:26.636 A:middle
+[ Applause ]
+
+00:27:27.136 --> 00:27:28.436 A:middle
+So that's what Apple's doing to
+
+00:27:28.436 --> 00:27:29.756 A:middle
+minimize involuntary churn for
+
+00:27:29.756 --> 00:27:29.986 A:middle
+you.
+
+00:27:30.846 --> 00:27:31.986 A:middle
+But there's also some tactics
+
+00:27:32.056 --> 00:27:33.526 A:middle
+that you as a developer can do
+
+00:27:33.606 --> 00:27:35.046 A:middle
+to minimize voluntary churn
+
+00:27:35.366 --> 00:27:36.636 A:middle
+inside of your subscription
+
+00:27:36.636 --> 00:27:37.216 A:middle
+applications.
+
+00:27:38.386 --> 00:27:39.626 A:middle
+You can leverage some of the
+
+00:27:39.686 --> 00:27:41.136 A:middle
+subscription specific receipt
+
+00:27:41.176 --> 00:27:42.236 A:middle
+fields that Pete mentioned
+
+00:27:42.236 --> 00:27:42.596 A:middle
+earlier.
+
+00:27:43.516 --> 00:27:44.926 A:middle
+You can implement grace periods
+
+00:27:45.066 --> 00:27:47.436 A:middle
+and during that time you can
+
+00:27:47.586 --> 00:27:49.236 A:middle
+deploy some effective customer
+
+00:27:49.236 --> 00:27:49.716 A:middle
+messaging.
+
+00:27:51.106 --> 00:27:52.216 A:middle
+So let's take a look at an
+
+00:27:52.216 --> 00:27:53.226 A:middle
+example subscription.
+
+00:27:54.356 --> 00:27:55.656 A:middle
+Here we can see that our
+
+00:27:55.656 --> 00:27:57.406 A:middle
+subscriber was set to renew on
+
+00:27:57.406 --> 00:28:00.206 A:middle
+April 26th, however, they
+

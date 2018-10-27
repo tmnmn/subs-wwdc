@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.336 --> 00:21:00.396 A:middle
+And, we've defined a number of
+
+00:21:00.396 --> 00:21:01.686 A:middle
+system effects for interaction,
+
+00:21:01.686 --> 00:21:02.576 A:middle
+like the pressed state or the
+
+00:21:02.576 --> 00:21:04.036 A:middle
+disabled state, and we'll go
+
+00:21:04.036 --> 00:21:05.616 A:middle
+ahead and apply a recipe to a
+
+00:21:05.616 --> 00:21:07.066 A:middle
+base color to produce a new
+
+00:21:07.066 --> 00:21:08.736 A:middle
+color that's appropriate for the
+
+00:21:08.736 --> 00:21:10.176 A:middle
+current appearance as well as a
+
+00:21:10.176 --> 00:21:11.716 A:middle
+sort of interaction being done
+
+00:21:11.716 --> 00:21:12.406 A:middle
+with that control.
+
+00:21:12.956 --> 00:21:13.806 A:middle
+So, this will save you the
+
+00:21:13.806 --> 00:21:14.906 A:middle
+trouble of having to develop a
+
+00:21:14.906 --> 00:21:17.366 A:middle
+formula yourself for modifying a
+
+00:21:17.366 --> 00:21:18.506 A:middle
+color for these states.
+
+00:21:18.506 --> 00:21:19.636 A:middle
+And, it'll also save you from
+
+00:21:19.636 --> 00:21:20.676 A:middle
+cases where you might have a
+
+00:21:20.676 --> 00:21:22.266 A:middle
+really long list of hard-coded
+
+00:21:22.266 --> 00:21:23.136 A:middle
+colors for different
+
+00:21:23.136 --> 00:21:23.766 A:middle
+interactions.
+
+00:21:24.126 --> 00:21:25.846 A:middle
+So, it's a great API to make use
+
+00:21:25.846 --> 00:21:25.966 A:middle
+of.
+
+00:21:26.996 --> 00:21:29.576 A:middle
+We're going to talk about color
+
+00:21:29.576 --> 00:21:30.136 A:middle
+for a bit more.
+
+00:21:30.446 --> 00:21:31.926 A:middle
+In this case, a new feature of
+
+00:21:31.926 --> 00:21:34.086 A:middle
+macOS 10.14, is what we call the
+
+00:21:34.086 --> 00:21:34.966 A:middle
+content tint color.
+
+00:21:35.996 --> 00:21:36.906 A:middle
+If you look at my mock
+
+00:21:36.906 --> 00:21:38.706 A:middle
+application here, you can see
+
+00:21:38.706 --> 00:21:40.036 A:middle
+it's mostly user content, it's
+
+00:21:40.036 --> 00:21:40.816 A:middle
+mostly text.
+
+00:21:41.296 --> 00:21:42.426 A:middle
+But, there's a few elements that
+
+00:21:42.426 --> 00:21:44.316 A:middle
+I want to call attention to.
+
+00:21:45.336 --> 00:21:47.516 A:middle
+These are things where the user
+
+00:21:47.516 --> 00:21:48.596 A:middle
+can click on them to perform
+
+00:21:48.596 --> 00:21:49.146 A:middle
+more actions.
+
+00:21:49.476 --> 00:21:50.486 A:middle
+And, I didn't want to use the
+
+00:21:50.486 --> 00:21:52.276 A:middle
+normal button borders because I
+
+00:21:52.276 --> 00:21:53.536 A:middle
+felt that, kind of, overwhelmed
+
+00:21:53.536 --> 00:21:54.026 A:middle
+the content.
+
+00:21:54.586 --> 00:21:56.606 A:middle
+But, in macOS 10.14, we're going
+
+00:21:56.606 --> 00:21:57.686 A:middle
+to let you tint borderless
+
+00:21:57.686 --> 00:21:59.236 A:middle
+buttons and image views to call
+
+00:21:59.236 --> 00:22:00.386 A:middle
+them out, so the user can still
+

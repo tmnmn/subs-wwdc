@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.906 --> 00:12:02.136 A:middle
+kept free to service new
+
+00:12:02.136 --> 00:12:03.646 A:middle
+allocation requests as they come
+
+00:12:03.646 --> 00:12:03.876 A:middle
+in.
+
+00:12:04.546 --> 00:12:05.896 A:middle
+Now, most of that memory is
+
+00:12:05.896 --> 00:12:07.666 A:middle
+probably not truly free.
+
+00:12:07.666 --> 00:12:08.946 A:middle
+It's likely including things
+
+00:12:08.946 --> 00:12:11.006 A:middle
+like caches or other things that
+
+00:12:11.006 --> 00:12:12.426 A:middle
+can be quickly thrown away to
+
+00:12:12.426 --> 00:12:13.276 A:middle
+make sure that the memory is
+
+00:12:13.276 --> 00:12:15.276 A:middle
+available to satisfy demand
+
+00:12:15.486 --> 00:12:17.856 A:middle
+right away but in general it's
+
+00:12:17.856 --> 00:12:19.056 A:middle
+probably actually being used for
+
+00:12:19.056 --> 00:12:21.196 A:middle
+something, but it is readily
+
+00:12:21.196 --> 00:12:21.626 A:middle
+available.
+
+00:12:22.546 --> 00:12:23.556 A:middle
+So let's look at what happens
+
+00:12:23.556 --> 00:12:24.826 A:middle
+when your application requests
+
+00:12:24.826 --> 00:12:25.276 A:middle
+some memory.
+
+00:12:25.906 --> 00:12:26.716 A:middle
+Maybe you'll make a small
+
+00:12:26.716 --> 00:12:29.116 A:middle
+request, something that can be
+
+00:12:29.156 --> 00:12:30.376 A:middle
+satisfied by the amount that's
+
+00:12:30.486 --> 00:12:31.686 A:middle
+currently available in that free
+
+00:12:31.736 --> 00:12:31.956 A:middle
+pool.
+
+00:12:32.466 --> 00:12:33.516 A:middle
+Well, if that's the case, it'll
+
+00:12:33.516 --> 00:12:35.526 A:middle
+be return right away to your app
+
+00:12:35.526 --> 00:12:36.826 A:middle
+and you can continue on with
+
+00:12:36.826 --> 00:12:37.966 A:middle
+your work.
+
+00:12:39.256 --> 00:12:40.526 A:middle
+Now, let's say, though, that
+
+00:12:40.526 --> 00:12:42.136 A:middle
+your application makes a larger
+
+00:12:42.136 --> 00:12:44.326 A:middle
+request, and maybe it doesn't
+
+00:12:44.326 --> 00:12:45.756 A:middle
+need it for a long period of
+
+00:12:45.756 --> 00:12:47.186 A:middle
+time, so you might not be real
+
+00:12:47.186 --> 00:12:47.886 A:middle
+worried about it.
+
+00:12:48.246 --> 00:12:49.316 A:middle
+Perhaps you're just going to
+
+00:12:49.316 --> 00:12:50.866 A:middle
+load an image off disc and
+
+00:12:51.006 --> 00:12:52.656 A:middle
+decompress it, perform some
+
+00:12:52.656 --> 00:12:54.056 A:middle
+quick operation on some of the
+
+00:12:54.056 --> 00:12:55.536 A:middle
+pixels and then throw it away.
+
+00:12:55.876 --> 00:12:56.926 A:middle
+So it seems like a quick
+
+00:12:56.926 --> 00:12:57.976 A:middle
+operation that you don't have to
+
+00:12:57.976 --> 00:12:58.806 A:middle
+worry too much about.
+
+00:12:59.506 --> 00:13:00.406 A:middle
+Well, we'll make that big
+

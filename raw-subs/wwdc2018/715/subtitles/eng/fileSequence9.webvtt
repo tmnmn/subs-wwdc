@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.266 --> 00:09:00.266 A:middle
+your connection from your local
+
+00:09:00.266 --> 00:09:03.246 A:middle
+device, to your server, or to
+
+00:09:03.246 --> 00:09:04.586 A:middle
+some other peer device that's on
+
+00:09:04.586 --> 00:09:05.966 A:middle
+your local network.
+
+00:09:06.856 --> 00:09:09.296 A:middle
+But you may be wondering, what
+
+00:09:09.296 --> 00:09:10.306 A:middle
+kind of connections are
+
+00:09:10.306 --> 00:09:11.526 A:middle
+appropriate to use with
+
+00:09:11.526 --> 00:09:12.246 A:middle
+Network.framework.
+
+00:09:12.716 --> 00:09:13.826 A:middle
+What are the use cases?
+
+00:09:14.596 --> 00:09:16.716 A:middle
+And so let's explore first some
+
+00:09:16.716 --> 00:09:18.836 A:middle
+scenarios of apps that may be
+
+00:09:18.836 --> 00:09:21.096 A:middle
+using sockets today and would
+
+00:09:21.096 --> 00:09:22.826 A:middle
+really benefit a lot by taking
+
+00:09:22.826 --> 00:09:23.976 A:middle
+advantage of Network.framework
+
+00:09:24.126 --> 00:09:24.926 A:middle
+going forward.
+
+00:09:25.526 --> 00:09:28.066 A:middle
+So the first one of these I want
+
+00:09:28.066 --> 00:09:30.296 A:middle
+to highlight is gaming apps.
+
+00:09:31.076 --> 00:09:33.316 A:middle
+Gaming apps often use UDP to
+
+00:09:33.886 --> 00:09:35.456 A:middle
+send real-time data about the
+
+00:09:35.456 --> 00:09:37.866 A:middle
+game state between one device
+
+00:09:37.866 --> 00:09:38.386 A:middle
+and another.
+
+00:09:39.246 --> 00:09:40.506 A:middle
+And they really care about
+
+00:09:40.506 --> 00:09:42.496 A:middle
+optimizing for latency and
+
+00:09:42.496 --> 00:09:43.866 A:middle
+making sure there's no lag or
+
+00:09:43.866 --> 00:09:44.906 A:middle
+anything being dropped there.
+
+00:09:46.056 --> 00:09:47.626 A:middle
+If you have an app like this,
+
+00:09:48.396 --> 00:09:49.276 A:middle
+you're going to love how
+
+00:09:49.276 --> 00:09:50.896 A:middle
+Network.framework allows you to
+
+00:09:50.996 --> 00:09:52.736 A:middle
+really optimize your UDP,
+
+00:09:52.996 --> 00:09:54.756 A:middle
+sending and receiving to be
+
+00:09:55.246 --> 00:09:57.336 A:middle
+faster than ever before with the
+
+00:09:57.336 --> 00:09:58.546 A:middle
+least latency possible.
+
+00:09:58.946 --> 00:10:02.306 A:middle
+Another type of app that would
+

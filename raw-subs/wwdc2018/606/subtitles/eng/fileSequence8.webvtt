@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.496 --> 00:08:00.066 A:middle
+This core intersection problem
+
+00:08:00.386 --> 00:08:01.716 A:middle
+is, also, common to all Ray
+
+00:08:01.716 --> 00:08:02.766 A:middle
+Tracing applications.
+
+00:08:04.836 --> 00:08:06.026 A:middle
+So, we decided to solve this
+
+00:08:06.026 --> 00:08:07.456 A:middle
+core intersection problem for
+
+00:08:07.456 --> 00:08:09.176 A:middle
+you, so that you can start with
+
+00:08:09.176 --> 00:08:10.766 A:middle
+a high performance intersector
+
+00:08:11.126 --> 00:08:12.556 A:middle
+and just focus on the details of
+
+00:08:12.556 --> 00:08:12.996 A:middle
+you app.
+
+00:08:14.206 --> 00:08:16.576 A:middle
+So, this year, we're introducing
+
+00:08:16.576 --> 00:08:18.276 A:middle
+the MPSRayIntersector API.
+
+00:08:19.676 --> 00:08:21.306 A:middle
+This is an API which accelerates
+
+00:08:21.306 --> 00:08:22.386 A:middle
+ray triangle intersection
+
+00:08:22.386 --> 00:08:25.136 A:middle
+testing on the GPU on all of our
+
+00:08:25.136 --> 00:08:26.786 A:middle
+macOS and iOS devices.
+
+00:08:28.116 --> 00:08:29.626 A:middle
+We wanted to make it easy to
+
+00:08:29.626 --> 00:08:30.806 A:middle
+integrate his into existing
+
+00:08:30.806 --> 00:08:32.676 A:middle
+apps, so we simply take in rays
+
+00:08:32.726 --> 00:08:33.606 A:middle
+through a METAL buffer.
+
+00:08:34.666 --> 00:08:35.966 A:middle
+MPS will find the closest
+
+00:08:35.966 --> 00:08:38.035 A:middle
+intersection along each ray and
+
+00:08:38.035 --> 00:08:39.166 A:middle
+return the results in another
+
+00:08:39.166 --> 00:08:39.796 A:middle
+METAL buffer.
+
+00:08:40.686 --> 00:08:42.885 A:middle
+All you need to do is provide a
+
+00:08:42.885 --> 00:08:44.326 A:middle
+METAL command buffer at the
+
+00:08:44.326 --> 00:08:45.566 A:middle
+point in your application where
+
+00:08:45.566 --> 00:08:46.436 A:middle
+you'd like to perform
+
+00:08:46.436 --> 00:08:47.426 A:middle
+intersection testing.
+
+00:08:47.826 --> 00:08:49.016 A:middle
+And we'll encode all of the
+
+00:08:49.016 --> 00:08:50.096 A:middle
+intersection work into the
+
+00:08:50.096 --> 00:08:51.126 A:middle
+command buffer for you.
+
+00:08:52.346 --> 00:08:53.936 A:middle
+So, let's take a closer look at
+
+00:08:53.936 --> 00:08:54.796 A:middle
+the problem that we're trying to
+
+00:08:54.796 --> 00:08:55.156 A:middle
+solve.
+
+00:08:55.816 --> 00:09:02.916 A:middle
+Oh. Okay. So, 3D models are,
+

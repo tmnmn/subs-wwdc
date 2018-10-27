@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.046 --> 00:27:00.116 A:middle
+better way of doing that.
+
+00:27:00.116 --> 00:27:01.656 A:middle
+You should just subclass NSView
+
+00:27:01.656 --> 00:27:02.556 A:middle
+and implement draw rect.
+
+00:27:02.846 --> 00:27:04.786 A:middle
+Both of those methods have been
+
+00:27:04.786 --> 00:27:06.876 A:middle
+kind of finicky for a while.
+
+00:27:06.916 --> 00:27:07.836 A:middle
+So, you'll be saving yourself
+
+00:27:07.836 --> 00:27:08.326 A:middle
+some trouble.
+
+00:27:08.756 --> 00:27:09.716 A:middle
+The other thing I want to point
+
+00:27:09.716 --> 00:27:10.686 A:middle
+out is I've actually written
+
+00:27:10.686 --> 00:27:12.236 A:middle
+these in Objective-C, which is a
+
+00:27:12.236 --> 00:27:13.606 A:middle
+little weird for a talk that's
+
+00:27:13.606 --> 00:27:14.986 A:middle
+mostly in Swift.
+
+00:27:14.986 --> 00:27:16.486 A:middle
+And, the really great news about
+
+00:27:16.486 --> 00:27:18.146 A:middle
+this is I've never actually seen
+
+00:27:18.146 --> 00:27:19.676 A:middle
+any Swift code using these.
+
+00:27:20.276 --> 00:27:21.656 A:middle
+The takeaway from that is I
+
+00:27:21.656 --> 00:27:22.986 A:middle
+really don't want any of you to
+
+00:27:22.986 --> 00:27:24.456 A:middle
+be the first to go ahead and
+
+00:27:24.456 --> 00:27:25.056 A:middle
+surprise me.
+
+00:27:26.456 --> 00:27:29.816 A:middle
+So, we have one more thing about
+
+00:27:29.816 --> 00:27:31.086 A:middle
+our changes with layer backing.
+
+00:27:31.456 --> 00:27:33.326 A:middle
+If you're using NSOpenGL classes
+
+00:27:33.326 --> 00:27:34.726 A:middle
+to render with OpenGL, and you
+
+00:27:34.726 --> 00:27:37.106 A:middle
+link against macOS 10.14, some
+
+00:27:37.106 --> 00:27:38.466 A:middle
+of our implementation details
+
+00:27:38.466 --> 00:27:39.756 A:middle
+for how we bind the OpenGL
+
+00:27:39.756 --> 00:27:41.576 A:middle
+system to our layers are a bit
+
+00:27:41.576 --> 00:27:41.976 A:middle
+different.
+
+00:27:41.976 --> 00:27:43.146 A:middle
+And, you may notice a few small
+
+00:27:43.146 --> 00:27:43.816 A:middle
+changes there.
+
+00:27:44.576 --> 00:27:45.846 A:middle
+But, more importantly, I want to
+
+00:27:45.846 --> 00:27:48.206 A:middle
+call out that as of macOS 10.14,
+
+00:27:48.426 --> 00:27:49.756 A:middle
+OpenGL on our platform is
+
+00:27:49.806 --> 00:27:50.426 A:middle
+deprecated.
+
+00:27:51.016 --> 00:27:52.626 A:middle
+If you've been using NSOpenGL
+
+00:27:52.626 --> 00:27:54.286 A:middle
+view, we really encourage you to
+
+00:27:54.286 --> 00:27:55.846 A:middle
+adopt MTKView instead.
+
+00:27:55.956 --> 00:27:57.166 A:middle
+And, there's a great session
+
+00:27:57.166 --> 00:27:58.676 A:middle
+coming up later today about
+
+00:27:58.676 --> 00:27:59.986 A:middle
+adopting Metal for OpenGL
+
+00:27:59.986 --> 00:28:00.556 A:middle
+developers.
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.606 --> 00:04:00.616 A:middle
+This makes Ray Tracing the
+
+00:04:00.616 --> 00:04:01.586 A:middle
+method of choice for
+
+00:04:01.586 --> 00:04:03.596 A:middle
+photorealistic offline rendering
+
+00:04:03.596 --> 00:04:04.346 A:middle
+applications.
+
+00:04:05.886 --> 00:04:07.366 A:middle
+The tradeoff is that Ray Tracing
+
+00:04:07.366 --> 00:04:08.376 A:middle
+is significantly more
+
+00:04:08.376 --> 00:04:09.766 A:middle
+computationally expensive than
+
+00:04:09.766 --> 00:04:11.476 A:middle
+rasterization because we're
+
+00:04:11.476 --> 00:04:12.506 A:middle
+doing so much more work to
+
+00:04:12.506 --> 00:04:13.526 A:middle
+simulate these effects.
+
+00:04:14.856 --> 00:04:16.226 A:middle
+So, let's first take a closer
+
+00:04:16.226 --> 00:04:17.606 A:middle
+look at how rendering works with
+
+00:04:17.606 --> 00:04:18.956 A:middle
+the Ray Tracer, and then we'll
+
+00:04:18.956 --> 00:04:20.245 A:middle
+see how we can accelerate is
+
+00:04:20.245 --> 00:04:20.786 A:middle
+with METAL.
+
+00:04:21.386 --> 00:04:24.606 A:middle
+So, we use an algorithm called
+
+00:04:24.636 --> 00:04:25.436 A:middle
+Path Tracing.
+
+00:04:26.516 --> 00:04:27.856 A:middle
+In the real world, photons are
+
+00:04:27.856 --> 00:04:29.696 A:middle
+emitted from light sources and
+
+00:04:29.696 --> 00:04:30.886 A:middle
+they bounce around until they
+
+00:04:30.886 --> 00:04:32.586 A:middle
+enter the camera or your eye.
+
+00:04:33.316 --> 00:04:35.176 A:middle
+But most of those photons
+
+00:04:35.416 --> 00:04:36.486 A:middle
+actually never make it to the
+
+00:04:36.486 --> 00:04:36.866 A:middle
+camera.
+
+00:04:37.406 --> 00:04:38.326 A:middle
+So, this would be very
+
+00:04:38.326 --> 00:04:39.466 A:middle
+inefficient to simulate.
+
+00:04:39.956 --> 00:04:42.516 A:middle
+Fortunately, due to properties
+
+00:04:42.516 --> 00:04:44.116 A:middle
+of light we can, actually, work
+
+00:04:44.176 --> 00:04:45.476 A:middle
+backwards, starting from the
+
+00:04:45.476 --> 00:04:45.866 A:middle
+camera.
+
+00:04:47.206 --> 00:04:49.536 A:middle
+We start by casting primary rays
+
+00:04:49.776 --> 00:04:51.816 A:middle
+from the camera into the scene.
+
+00:04:53.446 --> 00:04:54.886 A:middle
+We then compute shading at the
+
+00:04:54.886 --> 00:04:55.776 A:middle
+intersection points.
+
+00:04:56.836 --> 00:04:58.256 A:middle
+Shading consists of figuring out
+
+00:04:58.296 --> 00:04:59.896 A:middle
+how much light is arriving at
+
+00:04:59.896 --> 00:05:01.556 A:middle
+the shading point and what
+

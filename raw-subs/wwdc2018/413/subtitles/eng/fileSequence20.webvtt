@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:02.046 --> 00:20:03.396 A:middle
+Description is text that should
+
+00:20:03.396 --> 00:20:04.826 A:middle
+describe the purpose of your
+
+00:20:04.826 --> 00:20:05.306 A:middle
+document.
+
+00:20:05.556 --> 00:20:06.926 A:middle
+And it will also show up within
+
+00:20:06.926 --> 00:20:07.916 A:middle
+Detail Views and Swift
+
+00:20:07.916 --> 00:20:08.396 A:middle
+Playgrounds.
+
+00:20:10.996 --> 00:20:12.926 A:middle
+contentIdentifier is another
+
+00:20:12.926 --> 00:20:14.506 A:middle
+reverse DNS identifier.
+
+00:20:15.176 --> 00:20:16.516 A:middle
+It must be unique to the book
+
+00:20:16.516 --> 00:20:17.496 A:middle
+and it must match the
+
+00:20:17.496 --> 00:20:19.016 A:middle
+contentIdentifier within your
+
+00:20:19.016 --> 00:20:20.756 A:middle
+books manifest.plistfile.
+
+00:20:21.756 --> 00:20:23.026 A:middle
+It should start with the feed
+
+00:20:23.026 --> 00:20:24.346 A:middle
+identifier of the feed that
+
+00:20:24.346 --> 00:20:25.486 A:middle
+contains this book.
+
+00:20:25.656 --> 00:20:26.696 A:middle
+So in this example
+
+00:20:26.696 --> 00:20:29.486 A:middle
+io.github.WWDCPhotoFilters.
+
+00:20:30.976 --> 00:20:32.326 A:middle
+You should host your content at
+
+00:20:32.326 --> 00:20:33.636 A:middle
+the same place where you host
+
+00:20:33.636 --> 00:20:34.596 A:middle
+your feed.JSON file.
+
+00:20:35.126 --> 00:20:36.376 A:middle
+But if you don't that's OK,
+
+00:20:36.376 --> 00:20:37.856 A:middle
+you'll just need to include a
+
+00:20:37.856 --> 00:20:39.546 A:middle
+secure hash of your Zipped
+
+00:20:39.606 --> 00:20:41.046 A:middle
+Playground Book as another key.
+
+00:20:41.566 --> 00:20:42.746 A:middle
+And you can learn about this
+
+00:20:42.746 --> 00:20:45.000 A:middle
+more in the feed format online.
+
+00:20:47.326 --> 00:20:47.726 A:middle
+And there's the
+
+00:20:47.726 --> 00:20:48.526 A:middle
+contentIdentifier.
+
+00:20:50.776 --> 00:20:52.136 A:middle
+Content version is the way that
+
+00:20:52.136 --> 00:20:53.466 A:middle
+you can do versioning with your
+
+00:20:53.466 --> 00:20:53.776 A:middle
+book.
+
+00:20:54.416 --> 00:20:55.596 A:middle
+You need to increment this when
+
+00:20:55.596 --> 00:20:57.156 A:middle
+you update your book, and it
+
+00:20:57.156 --> 00:20:58.506 A:middle
+always must match the content
+
+00:20:58.506 --> 00:21:01.000 A:middle
+version in your book's manifest.
+

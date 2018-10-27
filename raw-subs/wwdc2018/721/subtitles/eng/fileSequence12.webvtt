@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.416 --> 00:12:00.616 A:middle
+Credential Identity Store to the
+
+00:12:00.616 --> 00:12:02.516 A:middle
+Cloud or includes it in backups,
+
+00:12:02.736 --> 00:12:04.746 A:middle
+so this information never leaves
+
+00:12:05.276 --> 00:12:06.000 A:middle
+the device.
+
+00:12:07.826 --> 00:12:09.246 A:middle
+Each app has its own Credential
+
+00:12:09.246 --> 00:12:11.216 A:middle
+Identity Store, and only the app
+
+00:12:11.216 --> 00:12:12.736 A:middle
+and its extensions can modify
+
+00:12:13.366 --> 00:12:13.436 A:middle
+it.
+
+00:12:14.066 --> 00:12:15.336 A:middle
+The store is only read by
+
+00:12:15.336 --> 00:12:17.246 A:middle
+AutoFill for determining which
+
+00:12:17.246 --> 00:12:19.286 A:middle
+credentials to suggest to users.
+
+00:12:19.836 --> 00:12:23.316 A:middle
+And the Credential Identity
+
+00:12:23.316 --> 00:12:25.046 A:middle
+Store can only be modified while
+
+00:12:25.046 --> 00:12:26.226 A:middle
+your app's extension has been
+
+00:12:26.226 --> 00:12:27.296 A:middle
+enabled by the user.
+
+00:12:28.506 --> 00:12:29.716 A:middle
+If your extension is disabled,
+
+00:12:29.866 --> 00:12:31.036 A:middle
+attempts to update the store
+
+00:12:31.036 --> 00:12:31.616 A:middle
+will fail.
+
+00:12:32.106 --> 00:12:33.386 A:middle
+And if the user disables your
+
+00:12:33.386 --> 00:12:34.806 A:middle
+extension or deletes your app,
+
+00:12:35.146 --> 00:12:36.296 A:middle
+the Credential Identity Store
+
+00:12:36.296 --> 00:12:37.026 A:middle
+will be deleted.
+
+00:12:37.476 --> 00:12:41.276 A:middle
+Your app should update its
+
+00:12:41.276 --> 00:12:42.706 A:middle
+Credential Identity Store when
+
+00:12:42.706 --> 00:12:43.856 A:middle
+it has new information about
+
+00:12:43.856 --> 00:12:45.076 A:middle
+what credentials it can offer.
+
+00:12:46.316 --> 00:12:47.896 A:middle
+As an example, let's say your
+
+00:12:47.896 --> 00:12:49.616 A:middle
+app uses an online service to
+
+00:12:49.616 --> 00:12:50.916 A:middle
+store the user's credentials.
+
+00:12:51.456 --> 00:12:54.156 A:middle
+When the user signs in, your app
+
+00:12:54.156 --> 00:12:55.006 A:middle
+would start retrieving the
+
+00:12:55.006 --> 00:12:56.026 A:middle
+user's credentials.
+
+00:12:56.486 --> 00:12:58.356 A:middle
+At this time, you would update
+
+00:12:58.356 --> 00:12:59.186 A:middle
+the list of credential
+
+00:12:59.186 --> 00:13:00.796 A:middle
+identities in the store, so the
+

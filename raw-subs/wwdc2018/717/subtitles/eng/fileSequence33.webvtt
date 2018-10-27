@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.216 --> 00:33:00.546 A:middle
+all the implementation work of
+
+00:33:01.216 --> 00:33:01.386 A:middle
+that.
+
+00:33:02.076 --> 00:33:04.426 A:middle
+Alright, last but not least,
+
+00:33:04.426 --> 00:33:06.006 A:middle
+let's enhance our Vision mastery
+
+00:33:06.006 --> 00:33:06.876 A:middle
+and go into some of our
+
+00:33:06.876 --> 00:33:07.586 A:middle
+fundamentals.
+
+00:33:08.556 --> 00:33:10.256 A:middle
+Few things are important to know
+
+00:33:10.256 --> 00:33:11.246 A:middle
+when dealing with the Vision
+
+00:33:11.246 --> 00:33:11.756 A:middle
+framework.
+
+00:33:12.976 --> 00:33:14.206 A:middle
+First and foremost, and this is
+
+00:33:14.206 --> 00:33:16.006 A:middle
+a common source of problems,
+
+00:33:17.056 --> 00:33:18.066 A:middle
+image orientation.
+
+00:33:20.016 --> 00:33:21.546 A:middle
+Now, not all of our Vision
+
+00:33:21.546 --> 00:33:22.916 A:middle
+algorithms are orientation
+
+00:33:22.916 --> 00:33:23.496 A:middle
+agnostic.
+
+00:33:24.096 --> 00:33:25.106 A:middle
+You might have heard early that
+
+00:33:25.106 --> 00:33:26.436 A:middle
+we have a new face detector that
+
+00:33:26.436 --> 00:33:28.436 A:middle
+is orientation agnostic.
+
+00:33:29.136 --> 00:33:30.656 A:middle
+But the previous one was not.
+
+00:33:32.156 --> 00:33:33.636 A:middle
+This means we need to know what
+
+00:33:33.636 --> 00:33:35.016 A:middle
+is the upright position of the
+
+00:33:35.016 --> 00:33:35.406 A:middle
+image?
+
+00:33:36.296 --> 00:33:38.436 A:middle
+And it can be deceiving because
+
+00:33:38.436 --> 00:33:39.866 A:middle
+if you look at it and preview on
+
+00:33:39.866 --> 00:33:41.376 A:middle
+the final, my image looks
+
+00:33:41.376 --> 00:33:43.046 A:middle
+upright, but that is not how it
+
+00:33:43.046 --> 00:33:43.906 A:middle
+is stored on disk.
+
+00:33:45.026 --> 00:33:46.466 A:middle
+There is something that tells us
+
+00:33:46.466 --> 00:33:48.206 A:middle
+how the device is oriented, and
+
+00:33:48.206 --> 00:33:49.086 A:middle
+this is called the EXIF
+
+00:33:49.086 --> 00:33:49.896 A:middle
+Orientation.
+
+00:33:50.976 --> 00:33:53.856 A:middle
+So, if an image is captured,
+
+00:33:53.856 --> 00:33:54.866 A:middle
+that's normally in the sensor
+
+00:33:54.866 --> 00:33:56.346 A:middle
+orientation, with the EXIF, we
+
+00:33:56.346 --> 00:33:57.716 A:middle
+know what is actually upright
+
+00:33:57.906 --> 00:34:00.096 A:middle
+and if you pass an URL into
+

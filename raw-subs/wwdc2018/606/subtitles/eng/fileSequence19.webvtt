@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.546 --> 00:19:00.386 A:middle
+to the final kernel.
+
+00:19:00.956 --> 00:19:03.526 A:middle
+We configure these options on
+
+00:19:03.526 --> 00:19:04.406 A:middle
+the ray intersector.
+
+00:19:04.966 --> 00:19:07.496 A:middle
+First, we'll set the rayDataType
+
+00:19:07.496 --> 00:19:09.166 A:middle
+to match our struct type.
+
+00:19:10.056 --> 00:19:12.056 A:middle
+Then, we'll set a rayStride to
+
+00:19:12.056 --> 00:19:13.606 A:middle
+skip past the color at the end
+
+00:19:13.606 --> 00:19:16.166 A:middle
+of the struct.
+
+00:19:16.606 --> 00:19:17.726 A:middle
+Next, we'll run the shadow rays
+
+00:19:17.766 --> 00:19:18.626 A:middle
+through the intersector.
+
+00:19:19.106 --> 00:19:22.036 A:middle
+This was our original call to
+
+00:19:22.036 --> 00:19:22.816 A:middle
+the intersector.
+
+00:19:23.566 --> 00:19:24.756 A:middle
+Remember that shadow rays are
+
+00:19:24.756 --> 00:19:26.256 A:middle
+only checking for visibility
+
+00:19:26.256 --> 00:19:27.556 A:middle
+between the original shading
+
+00:19:27.556 --> 00:19:28.586 A:middle
+point and the light source.
+
+00:19:28.956 --> 00:19:30.086 A:middle
+So, there are two optimizations
+
+00:19:30.086 --> 00:19:30.486 A:middle
+we can do.
+
+00:19:31.596 --> 00:19:32.946 A:middle
+First, just like we can
+
+00:19:32.946 --> 00:19:35.076 A:middle
+customize the rayDataType, we
+
+00:19:35.076 --> 00:19:36.146 A:middle
+can also customize the
+
+00:19:36.146 --> 00:19:38.346 A:middle
+intersection data type or what
+
+00:19:38.346 --> 00:19:39.586 A:middle
+data is returned to us by the
+
+00:19:39.586 --> 00:19:40.206 A:middle
+intersector.
+
+00:19:41.516 --> 00:19:43.136 A:middle
+In this case, we only need to
+
+00:19:43.136 --> 00:19:44.416 A:middle
+know if the distance is positive
+
+00:19:44.416 --> 00:19:46.236 A:middle
+or negative, indicating a hit or
+
+00:19:46.236 --> 00:19:46.546 A:middle
+a miss.
+
+00:19:47.046 --> 00:19:48.726 A:middle
+So, we can set the intersection
+
+00:19:48.726 --> 00:19:50.196 A:middle
+data type to just distance.
+
+00:19:50.746 --> 00:19:51.756 A:middle
+This will save some memory
+
+00:19:51.756 --> 00:19:53.406 A:middle
+bandwidth reading from and
+
+00:19:53.406 --> 00:19:54.626 A:middle
+writing to the intersection
+
+00:19:54.626 --> 00:19:54.996 A:middle
+buffer.
+
+00:19:55.366 --> 00:19:58.946 A:middle
+Second, because we don't,
+
+00:19:58.946 --> 00:19:59.906 A:middle
+actually, need to know which
+
+00:19:59.906 --> 00:20:01.676 A:middle
+triangle we hit, we can end the
+

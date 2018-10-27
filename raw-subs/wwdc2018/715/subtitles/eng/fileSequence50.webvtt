@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.666 --> 00:50:00.276 A:middle
+because you're going to be
+
+00:50:00.276 --> 00:50:01.606 A:middle
+compressing differently.
+
+00:50:01.606 --> 00:50:02.566 A:middle
+You're going to be already
+
+00:50:02.566 --> 00:50:03.576 A:middle
+trying to make your connections
+
+00:50:03.576 --> 00:50:04.236 A:middle
+more efficient.
+
+00:50:05.196 --> 00:50:06.966 A:middle
+But if you have an app that's
+
+00:50:06.966 --> 00:50:08.426 A:middle
+generating live data, especially
+
+00:50:08.426 --> 00:50:10.336 A:middle
+if you're using UDP to send and
+
+00:50:10.336 --> 00:50:11.896 A:middle
+receive a lot of packets, I
+
+00:50:11.956 --> 00:50:13.706 A:middle
+invite you to try using
+
+00:50:13.706 --> 00:50:15.026 A:middle
+Network.framework within your
+
+00:50:15.026 --> 00:50:16.466 A:middle
+app and run it through
+
+00:50:16.466 --> 00:50:17.086 A:middle
+instruments.
+
+00:50:17.636 --> 00:50:19.096 A:middle
+Measure the difference in CPU
+
+00:50:19.096 --> 00:50:21.026 A:middle
+usage that you have when you're
+
+00:50:21.026 --> 00:50:22.256 A:middle
+using Network.framework versus
+
+00:50:22.256 --> 00:50:23.746 A:middle
+sockets, and I think you'll be
+
+00:50:23.746 --> 00:50:24.796 A:middle
+really happy with what you see.
+
+00:50:30.336 --> 00:50:31.986 A:middle
+So the last topic we want to
+
+00:50:31.986 --> 00:50:34.156 A:middle
+talk about today is how we can
+
+00:50:34.226 --> 00:50:35.416 A:middle
+solve the problems around
+
+00:50:35.416 --> 00:50:37.256 A:middle
+network mobility, and this is a
+
+00:50:37.256 --> 00:50:38.606 A:middle
+key area that we're trying to
+
+00:50:38.606 --> 00:50:41.416 A:middle
+solve with Network.framework.
+
+00:50:42.166 --> 00:50:45.566 A:middle
+And the first step of this is
+
+00:50:45.566 --> 00:50:46.816 A:middle
+just making sure that we start
+
+00:50:46.816 --> 00:50:47.786 A:middle
+connections gracefully.
+
+00:50:48.816 --> 00:50:49.746 A:middle
+So we already mentioned this,
+
+00:50:49.746 --> 00:50:50.686 A:middle
+but I want to recap a little
+
+00:50:50.686 --> 00:50:50.906 A:middle
+bit.
+
+00:50:51.836 --> 00:50:54.146 A:middle
+The waiting state is the key
+
+00:50:54.206 --> 00:50:55.776 A:middle
+thing to handle network
+
+00:50:55.776 --> 00:50:58.326 A:middle
+transitions when your connection
+
+00:50:58.326 --> 00:50:59.126 A:middle
+is first coming up.
+
+00:50:59.726 --> 00:51:00.836 A:middle
+It will indicate that there's a
+

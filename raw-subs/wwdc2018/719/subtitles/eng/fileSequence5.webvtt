@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.836 --> 00:05:00.306 A:middle
+runtime.
+
+00:05:01.576 --> 00:05:03.776 A:middle
+As before, you substantiate a
+
+00:05:03.776 --> 00:05:06.326 A:middle
+kernel based on this code by
+
+00:05:06.326 --> 00:05:08.136 A:middle
+using the kernel with Metal
+
+00:05:08.136 --> 00:05:10.196 A:middle
+function name and binary data.
+
+00:05:11.526 --> 00:05:14.206 A:middle
+The advantage here is that this
+
+00:05:15.016 --> 00:05:16.896 A:middle
+data can be applied without
+
+00:05:17.416 --> 00:05:18.526 A:middle
+paying the cost of an additional
+
+00:05:18.526 --> 00:05:18.946 A:middle
+compile.
+
+00:05:19.566 --> 00:05:21.776 A:middle
+The caveat, however, is it works
+
+00:05:21.776 --> 00:05:23.676 A:middle
+on Metal backed CI context.
+
+00:05:24.306 --> 00:05:25.606 A:middle
+But it gives a big performance
+
+00:05:27.186 --> 00:05:27.606 A:middle
+advantage.
+
+00:05:27.606 --> 00:05:29.976 A:middle
+So, starting in this release
+
+00:05:29.976 --> 00:05:31.606 A:middle
+we're going to be marking the CI
+
+00:05:31.606 --> 00:05:33.296 A:middle
+kernel language as deprecated,
+
+00:05:33.786 --> 00:05:35.206 A:middle
+because while we will continue
+
+00:05:35.206 --> 00:05:37.486 A:middle
+to support this language, we
+
+00:05:37.486 --> 00:05:39.106 A:middle
+feel that the new way of writing
+
+00:05:39.106 --> 00:05:40.636 A:middle
+Metal kernels offers a lot of
+
+00:05:40.636 --> 00:05:41.606 A:middle
+advantages to you, the
+
+00:05:41.606 --> 00:05:42.096 A:middle
+developer.
+
+00:05:42.256 --> 00:05:43.236 A:middle
+For one thing, you get the
+
+00:05:43.236 --> 00:05:44.956 A:middle
+performance advantage I outlined
+
+00:05:44.956 --> 00:05:46.496 A:middle
+earlier, but it also gives you
+
+00:05:46.496 --> 00:05:48.606 A:middle
+the advantage of getting build
+
+00:05:48.606 --> 00:05:50.476 A:middle
+time syntax coloring on your
+
+00:05:50.476 --> 00:05:52.726 A:middle
+code and great debugging tools
+
+00:05:52.906 --> 00:05:54.596 A:middle
+when you're working with your
+
+00:05:54.766 --> 00:05:56.946 A:middle
+Metal source.
+
+00:05:57.956 --> 00:05:58.916 A:middle
+So, great.
+
+00:05:59.516 --> 00:06:03.246 A:middle
+[ Applause ]
+

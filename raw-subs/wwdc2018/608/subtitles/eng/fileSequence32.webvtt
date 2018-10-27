@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.256 --> 00:32:00.456 A:middle
+per line timing information and
+
+00:32:00.456 --> 00:32:02.386 A:middle
+instruction categories, even in
+
+00:32:02.386 --> 00:32:03.326 A:middle
+inline functions.
+
+00:32:03.966 --> 00:32:05.546 A:middle
+My name is Max, and I am going
+
+00:32:05.546 --> 00:32:07.686 A:middle
+to help you max out your Shader
+
+00:32:09.796 --> 00:32:12.500 A:middle
+performance [applause].
+
+00:32:13.776 --> 00:32:15.846 A:middle
+So I've captured the same water
+
+00:32:15.846 --> 00:32:17.946 A:middle
+simulation again, but this time,
+
+00:32:18.206 --> 00:32:19.636 A:middle
+on my iPhone.
+
+00:32:20.636 --> 00:32:23.736 A:middle
+Let's begin by change to view
+
+00:32:23.736 --> 00:32:25.046 A:middle
+frame by performance.
+
+00:32:25.566 --> 00:32:28.216 A:middle
+We now see a list of pipelines
+
+00:32:28.216 --> 00:32:30.066 A:middle
+being used in our frame, ordered
+
+00:32:30.106 --> 00:32:32.546 A:middle
+by time, and we can easily see
+
+00:32:32.866 --> 00:32:34.066 A:middle
+that the noise pipeline is
+
+00:32:34.116 --> 00:32:35.526 A:middle
+taking a significant amount of
+
+00:32:35.526 --> 00:32:35.876 A:middle
+time.
+
+00:32:37.046 --> 00:32:39.716 A:middle
+Disclosing this, we can see that
+
+00:32:39.716 --> 00:32:41.226 A:middle
+we spent nearly all the time in
+
+00:32:41.226 --> 00:32:42.176 A:middle
+our fragment Shader.
+
+00:32:42.736 --> 00:32:44.456 A:middle
+But this year, we can go deeper.
+
+00:32:45.096 --> 00:32:48.896 A:middle
+We can see the time we are
+
+00:32:48.896 --> 00:32:51.046 A:middle
+spending each inside of each of
+
+00:32:51.046 --> 00:32:52.656 A:middle
+the functions that this shader
+
+00:32:52.656 --> 00:32:53.306 A:middle
+is calling.
+
+00:32:53.816 --> 00:32:56.766 A:middle
+Just clicking here goes to the
+
+00:32:56.766 --> 00:32:58.126 A:middle
+source code file, and directly
+
+00:32:58.126 --> 00:32:59.256 A:middle
+jumps to the right line.
+
+00:32:59.506 --> 00:33:00.736 A:middle
+And that is the start of our
+

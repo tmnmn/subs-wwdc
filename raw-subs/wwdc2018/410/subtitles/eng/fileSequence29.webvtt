@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.656 --> 00:29:00.296 A:middle
+that we passed in os signpost
+
+00:29:00.296 --> 00:29:01.756 A:middle
+begin and end calls.
+
+00:29:04.266 --> 00:29:05.966 A:middle
+Message element is the same as
+
+00:29:05.966 --> 00:29:07.596 A:middle
+the format string you passed but
+
+00:29:07.596 --> 00:29:10.326 A:middle
+instead of format arguments, you
+
+00:29:10.326 --> 00:29:12.516 A:middle
+pass variables here to capture
+
+00:29:12.516 --> 00:29:14.406 A:middle
+the values that you passed when
+
+00:29:14.406 --> 00:29:15.556 A:middle
+calling os signpost.
+
+00:29:16.066 --> 00:29:18.786 A:middle
+Let's take a look at how we fill
+
+00:29:18.786 --> 00:29:20.576 A:middle
+out those values in our columns.
+
+00:29:23.926 --> 00:29:26.876 A:middle
+Here, you can see status column.
+
+00:29:27.066 --> 00:29:28.566 A:middle
+It's type of string because it's
+
+00:29:28.566 --> 00:29:30.246 A:middle
+either completed or canceled,
+
+00:29:31.486 --> 00:29:32.756 A:middle
+and we fill it out with the
+
+00:29:32.756 --> 00:29:34.956 A:middle
+value of status variable.
+
+00:29:36.676 --> 00:29:38.806 A:middle
+Because expression element could
+
+00:29:38.926 --> 00:29:40.826 A:middle
+take arbitrary Clips expression,
+
+00:29:41.706 --> 00:29:42.586 A:middle
+we could also do more
+
+00:29:42.586 --> 00:29:44.156 A:middle
+sophisticated things in it.
+
+00:29:44.816 --> 00:29:47.056 A:middle
+Here, we could compute event
+
+00:29:47.056 --> 00:29:49.006 A:middle
+impact by looking at size.
+
+00:29:49.846 --> 00:29:51.536 A:middle
+If it's greater than 3 and 1/2
+
+00:29:51.536 --> 00:29:53.326 A:middle
+megabytes, we say that impact is
+
+00:29:53.416 --> 00:29:56.056 A:middle
+high, else impact of operation
+
+00:29:56.056 --> 00:29:56.516 A:middle
+is low.
+
+00:29:58.076 --> 00:30:00.236 A:middle
+That's our definition for os
+

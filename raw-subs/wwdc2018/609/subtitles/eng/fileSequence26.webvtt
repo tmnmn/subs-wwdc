@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.696 --> 00:26:05.266 A:middle
+So, in this demo, I will be
+
+00:26:05.266 --> 00:26:06.856 A:middle
+using a MacBook Pro, with a
+
+00:26:06.856 --> 00:26:08.196 A:middle
+connected external GPU.
+
+00:26:08.986 --> 00:26:12.066 A:middle
+I will be running Turi Create on
+
+00:26:12.066 --> 00:26:14.816 A:middle
+the MacBook Pro and I will use
+
+00:26:14.816 --> 00:26:16.526 A:middle
+an external GPU to train the
+
+00:26:16.526 --> 00:26:17.596 A:middle
+network with MPS.
+
+00:26:18.606 --> 00:26:20.276 A:middle
+This is a great example of how
+
+00:26:20.276 --> 00:26:22.196 A:middle
+you can use an external GPU to
+
+00:26:22.196 --> 00:26:23.806 A:middle
+enhance the computational power
+
+00:26:23.806 --> 00:26:24.526 A:middle
+of a MacBook Pro.
+
+00:26:24.526 --> 00:26:26.916 A:middle
+The external GPU we're using is
+
+00:26:26.916 --> 00:26:28.116 A:middle
+an AMD Vega GPU.
+
+00:26:29.006 --> 00:26:30.876 A:middle
+So, in this demo setup, I've
+
+00:26:30.876 --> 00:26:32.486 A:middle
+already imported Turi Create,
+
+00:26:32.956 --> 00:26:34.956 A:middle
+and preloaded the object
+
+00:26:34.956 --> 00:26:36.606 A:middle
+detection network, and a
+
+00:26:36.606 --> 00:26:37.436 A:middle
+training data set.
+
+00:26:37.996 --> 00:26:41.556 A:middle
+So, now let's train this network
+
+00:26:41.556 --> 00:26:42.606 A:middle
+for 10 iterations.
+
+00:26:43.246 --> 00:26:46.206 A:middle
+And now, the entire object
+
+00:26:46.206 --> 00:26:47.456 A:middle
+detection network, all the
+
+00:26:47.456 --> 00:26:49.386 A:middle
+primitives, the optimizer, the
+
+00:26:49.386 --> 00:26:52.906 A:middle
+weight update step, everything
+
+00:26:52.906 --> 00:26:54.706 A:middle
+is running on the external GPU.
+
+00:26:58.206 --> 00:26:59.256 A:middle
+Okay, so we're already done with
+
+00:26:59.296 --> 00:27:01.476 A:middle
+10 iterations of training, it
+

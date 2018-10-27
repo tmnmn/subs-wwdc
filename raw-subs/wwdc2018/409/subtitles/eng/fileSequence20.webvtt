@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.986 --> 00:20:00.946 A:middle
+are destroyed where necessary.
+
+00:20:02.756 --> 00:20:05.576 A:middle
+However, it can cause unexpected
+
+00:20:05.576 --> 00:20:08.276 A:middle
+crashes and they're even more
+
+00:20:08.276 --> 00:20:10.096 A:middle
+unexpected because you don't
+
+00:20:10.096 --> 00:20:11.546 A:middle
+even need to write the word
+
+00:20:11.626 --> 00:20:12.756 A:middle
+autoreleasing in your
+
+00:20:12.756 --> 00:20:14.036 A:middle
+application to have those
+
+00:20:14.036 --> 00:20:14.576 A:middle
+crashes.
+
+00:20:15.126 --> 00:20:16.896 A:middle
+So for instance, there is a
+
+00:20:16.896 --> 00:20:19.336 A:middle
+validation function here and it
+
+00:20:19.336 --> 00:20:21.586 A:middle
+takes in out parameter NSError.
+
+00:20:22.336 --> 00:20:24.366 A:middle
+And out parameters are actually
+
+00:20:24.366 --> 00:20:25.996 A:middle
+autoreleasing in Objective-C
+
+00:20:25.996 --> 00:20:27.436 A:middle
+under ARC by default.
+
+00:20:28.126 --> 00:20:30.456 A:middle
+So when we write to this out
+
+00:20:30.506 --> 00:20:32.326 A:middle
+parameter inside the autorelease
+
+00:20:32.326 --> 00:20:36.956 A:middle
+pool and then the function exits
+
+00:20:37.206 --> 00:20:38.706 A:middle
+the error value is actually
+
+00:20:38.706 --> 00:20:39.196 A:middle
+released.
+
+00:20:39.926 --> 00:20:41.556 A:middle
+And then if the caller tries to
+
+00:20:41.556 --> 00:20:42.966 A:middle
+read the value of this error
+
+00:20:42.966 --> 00:20:45.086 A:middle
+variable they might crash with
+
+00:20:45.086 --> 00:20:45.976 A:middle
+use-after-free.
+
+00:20:51.046 --> 00:20:53.046 A:middle
+That pattern is already hard to
+
+00:20:53.046 --> 00:20:54.936 A:middle
+detect, but it actually gets
+
+00:20:54.996 --> 00:20:56.896 A:middle
+even worse when you don't even
+
+00:20:56.896 --> 00:20:57.986 A:middle
+control the part of the
+
+00:20:57.986 --> 00:20:59.106 A:middle
+application which has the
+
+00:20:59.106 --> 00:21:00.016 A:middle
+autorelease pool.
+

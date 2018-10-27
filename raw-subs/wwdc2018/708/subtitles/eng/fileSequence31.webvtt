@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.656 --> 00:31:02.396 A:middle
+Our list of supported operations
+
+00:31:02.396 --> 00:31:03.806 A:middle
+is large and always growing,
+
+00:31:04.306 --> 00:31:05.416 A:middle
+trying to keep up with new
+
+00:31:05.416 --> 00:31:06.506 A:middle
+developments in the field.
+
+00:31:07.436 --> 00:31:08.746 A:middle
+But what if there is a layer
+
+00:31:08.746 --> 00:31:10.116 A:middle
+that just isn't supported in
+
+00:31:10.116 --> 00:31:10.646 A:middle
+Core ML?
+
+00:31:11.256 --> 00:31:14.476 A:middle
+In the past, you either needed
+
+00:31:14.476 --> 00:31:15.926 A:middle
+to wait or you needed a
+
+00:31:15.926 --> 00:31:16.516 A:middle
+different model.
+
+00:31:16.516 --> 00:31:18.866 A:middle
+But what if this layer is the
+
+00:31:19.126 --> 00:31:20.596 A:middle
+key horse-finding layer?
+
+00:31:21.076 --> 00:31:22.166 A:middle
+This is the breakthrough that
+
+00:31:22.166 --> 00:31:23.626 A:middle
+your horse app was waiting for.
+
+00:31:23.966 --> 00:31:24.836 A:middle
+Can you afford to wait?
+
+00:31:26.546 --> 00:31:27.816 A:middle
+Given the speed of machine
+
+00:31:27.816 --> 00:31:28.566 A:middle
+learning, this could be a
+
+00:31:28.566 --> 00:31:29.426 A:middle
+serious obstacle.
+
+00:31:31.216 --> 00:31:33.376 A:middle
+So we introduced custom layers
+
+00:31:33.376 --> 00:31:34.406 A:middle
+for neural network models.
+
+00:31:35.076 --> 00:31:37.176 A:middle
+Now if a neural network layer is
+
+00:31:37.176 --> 00:31:38.866 A:middle
+missing, you can provide an
+
+00:31:38.866 --> 00:31:40.926 A:middle
+implementation with -- will mesh
+
+00:31:41.116 --> 00:31:42.326 A:middle
+seamlessly with the rest of the
+
+00:31:42.326 --> 00:31:43.186 A:middle
+Core ML model.
+
+00:31:44.026 --> 00:31:45.606 A:middle
+Inside the model, the custom
+
+00:31:45.606 --> 00:31:46.876 A:middle
+layer stores the name of an
+
+00:31:46.876 --> 00:31:48.166 A:middle
+implementing class -- the
+
+00:31:48.166 --> 00:31:49.726 A:middle
+AAPLCustomHorseLayer in this
+
+00:31:49.726 --> 00:31:50.126 A:middle
+case.
+
+00:31:50.906 --> 00:31:52.626 A:middle
+The implementation class fills
+
+00:31:52.626 --> 00:31:53.656 A:middle
+the role of the missing
+
+00:31:53.656 --> 00:31:54.976 A:middle
+implementation in the inference
+
+00:31:54.976 --> 00:31:55.286 A:middle
+engine.
+
+00:31:55.906 --> 00:31:56.936 A:middle
+Just like the layer is built
+
+00:31:56.936 --> 00:31:59.406 A:middle
+into Core ML, the implementation
+
+00:31:59.406 --> 00:32:00.856 A:middle
+provided here should be general
+

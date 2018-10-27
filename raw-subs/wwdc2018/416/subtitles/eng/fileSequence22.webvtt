@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.176 --> 00:22:01.396 A:middle
+This means that it's 75% less
+
+00:22:01.706 --> 00:22:02.346 A:middle
+memory use.
+
+00:22:02.786 --> 00:22:04.316 A:middle
+That's a great savings and the
+
+00:22:04.316 --> 00:22:05.086 A:middle
+same fidelity.
+
+00:22:05.676 --> 00:22:10.906 A:middle
+As an additional bonus, if I
+
+00:22:10.906 --> 00:22:11.916 A:middle
+want to use this mask over
+
+00:22:11.916 --> 00:22:13.476 A:middle
+again, I can change the tint
+
+00:22:13.476 --> 00:22:16.006 A:middle
+color on an image view, and that
+
+00:22:16.006 --> 00:22:17.366 A:middle
+will just change it with a
+
+00:22:17.366 --> 00:22:19.676 A:middle
+multiply, meaning that I don't
+
+00:22:19.676 --> 00:22:20.556 A:middle
+have to allocate any more
+
+00:22:20.556 --> 00:22:20.906 A:middle
+memory.
+
+00:22:21.216 --> 00:22:23.006 A:middle
+So I can use this not just as a
+
+00:22:23.006 --> 00:22:24.196 A:middle
+black circle, but as a blue
+
+00:22:24.196 --> 00:22:25.646 A:middle
+circle, red circle, green circle
+
+00:22:25.646 --> 00:22:26.896 A:middle
+with no additional memory cost.
+
+00:22:27.216 --> 00:22:27.826 A:middle
+It's really cool.
+
+00:22:32.236 --> 00:22:32.866 A:middle
+One other thing that we
+
+00:22:32.866 --> 00:22:34.136 A:middle
+typically do with images is
+
+00:22:34.136 --> 00:22:34.876 A:middle
+downsample them.
+
+00:22:35.516 --> 00:22:36.936 A:middle
+So when we want to make like a
+
+00:22:36.936 --> 00:22:38.286 A:middle
+thumbnail or something, we want
+
+00:22:38.286 --> 00:22:38.866 A:middle
+to scale it down.
+
+00:22:39.196 --> 00:22:41.426 A:middle
+What we don't want to do is use
+
+00:22:41.426 --> 00:22:42.836 A:middle
+a UIImage for the downscaling.
+
+00:22:42.956 --> 00:22:44.336 A:middle
+If we actually use UIImage to
+
+00:22:44.336 --> 00:22:46.126 A:middle
+draw, it's a little bit less
+
+00:22:46.126 --> 00:22:47.126 A:middle
+performant due to internal
+
+00:22:47.126 --> 00:22:48.856 A:middle
+coordinate space transforms.
+
+00:22:49.316 --> 00:22:50.946 A:middle
+And, as we saw earlier, it would
+
+00:22:50.946 --> 00:22:52.256 A:middle
+decompress the entire image in
+
+00:22:52.256 --> 00:22:52.656 A:middle
+the memory.
+
+00:22:53.616 --> 00:22:55.476 A:middle
+Instead, there's this ImageIO
+
+00:22:55.476 --> 00:22:55.886 A:middle
+framework.
+
+00:22:56.536 --> 00:22:58.196 A:middle
+ImageIO can actually downsample
+
+00:22:58.196 --> 00:23:00.036 A:middle
+the image, and it will use a
+

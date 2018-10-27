@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.696 --> 00:06:01.486 A:middle
+can cast secondary rays in
+
+00:06:01.486 --> 00:06:02.596 A:middle
+random directions from the
+
+00:06:02.596 --> 00:06:03.256 A:middle
+shading point.
+
+00:06:04.686 --> 00:06:05.786 A:middle
+We then, repeat the shading
+
+00:06:05.786 --> 00:06:07.126 A:middle
+process at the secondary
+
+00:06:07.126 --> 00:06:08.106 A:middle
+intersection points.
+
+00:06:09.896 --> 00:06:11.046 A:middle
+We'll first compute how much
+
+00:06:11.046 --> 00:06:13.176 A:middle
+light is arriving directly at
+
+00:06:13.176 --> 00:06:14.596 A:middle
+the second intersection point
+
+00:06:15.066 --> 00:06:16.366 A:middle
+and what fraction of that light
+
+00:06:16.636 --> 00:06:17.876 A:middle
+is reflected back towards the
+
+00:06:17.876 --> 00:06:19.236 A:middle
+previous intersection point.
+
+00:06:19.236 --> 00:06:21.186 A:middle
+And, ultimately, back into the
+
+00:06:21.186 --> 00:06:21.616 A:middle
+camera.
+
+00:06:22.566 --> 00:06:24.186 A:middle
+We'll also need to cast another
+
+00:06:24.186 --> 00:06:25.806 A:middle
+shadow ray from the secondary
+
+00:06:25.806 --> 00:06:26.706 A:middle
+intersection point.
+
+00:06:26.706 --> 00:06:30.346 A:middle
+And we can repeat this process
+
+00:06:30.346 --> 00:06:31.946 A:middle
+however many times we'd like to
+
+00:06:31.946 --> 00:06:33.836 A:middle
+simulate light bouncing around
+
+00:06:34.356 --> 00:06:36.336 A:middle
+the scene.
+
+00:06:37.006 --> 00:06:38.446 A:middle
+Now, in order to get these nice
+
+00:06:38.446 --> 00:06:39.906 A:middle
+soft shadow and bounced lighting
+
+00:06:39.906 --> 00:06:41.746 A:middle
+effects we, actually, need to
+
+00:06:41.746 --> 00:06:43.256 A:middle
+cast many shadow and secondary
+
+00:06:43.256 --> 00:06:46.326 A:middle
+rays per point along the path.
+
+00:06:46.546 --> 00:06:47.516 A:middle
+This means that the number of
+
+00:06:47.516 --> 00:06:48.916 A:middle
+rays, actually, grows
+
+00:06:48.916 --> 00:06:50.206 A:middle
+exponentially with the number of
+
+00:06:50.206 --> 00:06:50.716 A:middle
+bounces.
+
+00:06:51.946 --> 00:06:53.436 A:middle
+To avoid this exponential growth
+
+00:06:54.346 --> 00:06:55.666 A:middle
+we'll, instead, choose just one
+
+00:06:55.666 --> 00:06:57.446 A:middle
+shadow ray and one secondary ray
+
+00:06:57.446 --> 00:06:58.636 A:middle
+direction at each bounce.
+

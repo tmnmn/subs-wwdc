@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.386 --> 00:18:02.676 A:middle
+Well first we don't charge, this
+
+00:18:02.676 --> 00:18:04.266 A:middle
+is an environment for you to
+
+00:18:04.266 --> 00:18:05.406 A:middle
+test your in-apps.
+
+00:18:05.756 --> 00:18:06.716 A:middle
+You're going to test them over
+
+00:18:06.716 --> 00:18:08.066 A:middle
+and over and over again, there's
+
+00:18:08.066 --> 00:18:09.306 A:middle
+no reason to charge.
+
+00:18:10.206 --> 00:18:12.396 A:middle
+Second, we have specific
+
+00:18:12.396 --> 00:18:14.266 A:middle
+dedicated Sandbox accounts that
+
+00:18:14.266 --> 00:18:16.146 A:middle
+you create in App Store Connect
+
+00:18:16.476 --> 00:18:18.406 A:middle
+for your developer to use in the
+
+00:18:18.406 --> 00:18:19.986 A:middle
+Sandbox environment, they're not
+
+00:18:19.986 --> 00:18:22.136 A:middle
+the same as your regular iTunes
+
+00:18:22.136 --> 00:18:23.686 A:middle
+in-apps accounts.
+
+00:18:24.956 --> 00:18:26.586 A:middle
+We also as I mentioned before
+
+00:18:26.586 --> 00:18:27.906 A:middle
+have a completely different
+
+00:18:27.906 --> 00:18:29.196 A:middle
+backend environment which means
+
+00:18:29.196 --> 00:18:30.526 A:middle
+there's a completely different
+
+00:18:30.526 --> 00:18:32.006 A:middle
+URL from when you're doing
+
+00:18:32.196 --> 00:18:33.726 A:middle
+server to server receipt
+
+00:18:33.726 --> 00:18:34.496 A:middle
+validation.
+
+00:18:34.746 --> 00:18:35.886 A:middle
+This is important to know if
+
+00:18:35.886 --> 00:18:37.726 A:middle
+you're taking that development
+
+00:18:37.896 --> 00:18:39.736 A:middle
+test receipt from your device,
+
+00:18:39.736 --> 00:18:41.916 A:middle
+sending it to your QA server and
+
+00:18:41.916 --> 00:18:43.896 A:middle
+wanting to have that go to the
+
+00:18:44.186 --> 00:18:45.726 A:middle
+Verify Receipt endpoint for
+
+00:18:45.726 --> 00:18:46.406 A:middle
+validation.
+
+00:18:47.256 --> 00:18:48.186 A:middle
+I'll talk more about that a
+
+00:18:48.186 --> 00:18:49.086 A:middle
+little bit later on.
+
+00:18:50.416 --> 00:18:52.016 A:middle
+We also offer some test modes
+
+00:18:52.016 --> 00:18:53.196 A:middle
+right in StoreKit.
+
+00:18:53.596 --> 00:18:54.496 A:middle
+So for example,
+
+00:18:54.656 --> 00:18:58.536 A:middle
+SKReceiptRefreshRequest can take
+
+00:18:58.536 --> 00:19:00.616 A:middle
+in an argument to get an expired
+

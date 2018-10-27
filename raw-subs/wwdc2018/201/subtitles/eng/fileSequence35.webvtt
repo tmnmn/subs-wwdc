@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:01.476 --> 00:35:02.596 A:middle
+Let's say we have an app with a
+
+00:35:02.656 --> 00:35:04.696 A:middle
+Search feature and we want to
+
+00:35:04.696 --> 00:35:05.866 A:middle
+highlight the part of the
+
+00:35:05.866 --> 00:35:07.326 A:middle
+results that matched to make it
+
+00:35:07.326 --> 00:35:08.266 A:middle
+clear to the user what's
+
+00:35:08.266 --> 00:35:08.706 A:middle
+happening.
+
+00:35:09.636 --> 00:35:11.066 A:middle
+Now, this works really well for
+
+00:35:11.066 --> 00:35:13.756 A:middle
+English, by using a bolder
+
+00:35:13.756 --> 00:35:14.986 A:middle
+weight for the matched segment.
+
+00:35:15.676 --> 00:35:19.716 A:middle
+It works really badly for Hindi.
+
+00:35:20.226 --> 00:35:23.446 A:middle
+So, what you're seeing here, so
+
+00:35:23.476 --> 00:35:24.916 A:middle
+anybody who can read Hindi will
+
+00:35:24.916 --> 00:35:26.056 A:middle
+tell you that everything on the
+
+00:35:26.056 --> 00:35:27.176 A:middle
+right-hand side looks completely
+
+00:35:27.176 --> 00:35:27.596 A:middle
+broken.
+
+00:35:28.406 --> 00:35:31.096 A:middle
+Any time you see a dotted circle
+
+00:35:31.346 --> 00:35:33.646 A:middle
+inside a Hindi word, something
+
+00:35:33.646 --> 00:35:34.926 A:middle
+has gone very, very wrong.
+
+00:35:35.896 --> 00:35:37.396 A:middle
+And the reason this is happening
+
+00:35:37.796 --> 00:35:39.286 A:middle
+is because even though it's the
+
+00:35:39.286 --> 00:35:40.826 A:middle
+same font family, different
+
+00:35:40.826 --> 00:35:42.716 A:middle
+weights within that font are,
+
+00:35:42.716 --> 00:35:43.926 A:middle
+actually, a different font.
+
+00:35:44.326 --> 00:35:45.446 A:middle
+And you can't have the
+
+00:35:45.446 --> 00:35:46.996 A:middle
+appropriate joining behavior for
+
+00:35:46.996 --> 00:35:48.956 A:middle
+languages like Hindi if you have
+
+00:35:48.996 --> 00:35:49.836 A:middle
+two different fonts.
+
+00:35:51.466 --> 00:35:54.026 A:middle
+So, one easy way to solve this
+
+00:35:54.026 --> 00:35:55.856 A:middle
+problem is use a different kind
+
+00:35:55.856 --> 00:35:57.316 A:middle
+of emphasis at a character
+
+00:35:57.316 --> 00:35:57.526 A:middle
+level.
+
+00:35:57.526 --> 00:35:58.596 A:middle
+So, at a character level you can
+
+00:35:58.596 --> 00:36:00.766 A:middle
+use something like using a
+

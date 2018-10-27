@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.326 --> 00:37:00.916 A:middle
+example, on an iPhone versus an
+
+00:37:00.966 --> 00:37:03.876 A:middle
+iPad and on, say, Build 30 of
+
+00:37:03.876 --> 00:37:04.226 A:middle
+you app.
+
+00:37:05.596 --> 00:37:06.966 A:middle
+The third and most important
+
+00:37:06.966 --> 00:37:08.426 A:middle
+piece of information is the
+
+00:37:08.426 --> 00:37:09.996 A:middle
+weighted call graph that will
+
+00:37:09.996 --> 00:37:11.516 A:middle
+show you the energy hotspots in
+
+00:37:11.516 --> 00:37:11.916 A:middle
+your code.
+
+00:37:12.456 --> 00:37:14.256 A:middle
+So, let's talk a little bit more
+
+00:37:14.256 --> 00:37:15.366 A:middle
+about the weighted call graph,
+
+00:37:16.126 --> 00:37:17.896 A:middle
+how it was generated, and how
+
+00:37:17.896 --> 00:37:19.386 A:middle
+you can use it to debug energy
+
+00:37:19.386 --> 00:37:19.796 A:middle
+issues.
+
+00:37:23.576 --> 00:37:24.626 A:middle
+Let's say your program is
+
+00:37:24.626 --> 00:37:26.846 A:middle
+comprised of a main function and
+
+00:37:26.846 --> 00:37:28.406 A:middle
+a number of methods, Method 1,
+
+00:37:28.546 --> 00:37:30.436 A:middle
+Method 2, Method 3, and Method
+
+00:37:30.436 --> 00:37:30.776 A:middle
+4.
+
+00:37:31.286 --> 00:37:35.046 A:middle
+Your code begins to execute
+
+00:37:35.496 --> 00:37:37.316 A:middle
+until a high CPU energy event is
+
+00:37:37.316 --> 00:37:37.806 A:middle
+detected.
+
+00:37:38.376 --> 00:37:42.516 A:middle
+Up to this point, backtraces are
+
+00:37:42.516 --> 00:37:44.686 A:middle
+continuously sampled at a
+
+00:37:44.686 --> 00:37:46.406 A:middle
+periodic interval of once per
+
+00:37:46.406 --> 00:37:49.916 A:middle
+second, where each backtrace is
+
+00:37:49.916 --> 00:37:53.446 A:middle
+a sample of an active frames in
+
+00:37:53.446 --> 00:37:54.096 A:middle
+execution.
+
+00:37:55.576 --> 00:37:57.026 A:middle
+The first backtrace, for
+
+00:37:57.026 --> 00:37:59.606 A:middle
+example, shows that main Method
+
+00:37:59.606 --> 00:38:01.986 A:middle
+1 and Method 2 were active.
+

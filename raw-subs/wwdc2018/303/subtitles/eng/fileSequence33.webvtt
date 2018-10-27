@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.186 --> 00:33:00.906 A:middle
+the first is the Audience for
+
+00:33:00.906 --> 00:33:02.466 A:middle
+the token and that will always
+
+00:33:02.526 --> 00:33:03.736 A:middle
+be App Store Connect.
+
+00:33:04.206 --> 00:33:07.036 A:middle
+And finally, you'll need to
+
+00:33:07.036 --> 00:33:09.976 A:middle
+assign or you'll need to add the
+
+00:33:09.976 --> 00:33:12.076 A:middle
+algorithm that was used to sign
+
+00:33:12.076 --> 00:33:12.666 A:middle
+the token.
+
+00:33:13.096 --> 00:33:15.976 A:middle
+And for this, we have chosen to
+
+00:33:15.976 --> 00:33:16.686 A:middle
+use ES256.
+
+00:33:17.406 --> 00:33:19.006 A:middle
+Now this algorithm corresponds
+
+00:33:19.096 --> 00:33:21.256 A:middle
+to a JWT-supported algorithm
+
+00:33:21.626 --> 00:33:23.346 A:middle
+that we have chosen to have you
+
+00:33:23.346 --> 00:33:25.256 A:middle
+use but don't worry, you don't
+
+00:33:25.256 --> 00:33:26.826 A:middle
+need to implement this
+
+00:33:26.826 --> 00:33:27.596 A:middle
+algorithm.
+
+00:33:28.216 --> 00:33:30.326 A:middle
+Fortunately, JWT provides
+
+00:33:30.786 --> 00:33:32.486 A:middle
+multiple libraries across
+
+00:33:32.546 --> 00:33:34.556 A:middle
+virtually any language that
+
+00:33:34.556 --> 00:33:36.056 A:middle
+makes creating and signing these
+
+00:33:36.136 --> 00:33:37.866 A:middle
+tokens as easy as possible.
+
+00:33:39.066 --> 00:33:40.816 A:middle
+This example behind me is
+
+00:33:40.816 --> 00:33:42.676 A:middle
+written in Ruby and, as you can
+
+00:33:42.736 --> 00:33:45.026 A:middle
+see, all I need to do is pass in
+
+00:33:45.026 --> 00:33:46.686 A:middle
+these few pieces of information
+
+00:33:47.046 --> 00:33:48.726 A:middle
+along with my private key and
+
+00:33:48.726 --> 00:33:50.856 A:middle
+this encode method returns to me
+
+00:33:50.856 --> 00:33:52.376 A:middle
+a complete and signed token.
+
+00:33:53.696 --> 00:33:56.706 A:middle
+That token can then be added to
+
+00:33:56.706 --> 00:33:59.586 A:middle
+my request by simply placing it
+
+00:33:59.586 --> 00:34:00.806 A:middle
+inside of an authorization
+

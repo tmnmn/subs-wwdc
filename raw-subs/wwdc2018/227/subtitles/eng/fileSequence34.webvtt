@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.456 --> 00:34:00.556 A:middle
+-- to the other components of
+
+00:34:00.556 --> 00:34:01.406 A:middle
+your application.
+
+00:34:02.756 --> 00:34:04.616 A:middle
+How do you retrieve these?
+
+00:34:04.946 --> 00:34:07.976 A:middle
+It's simple, you just use the
+
+00:34:08.036 --> 00:34:10.235 A:middle
+image constructors like UIImage
+
+00:34:10.235 --> 00:34:12.025 A:middle
+named in bundle compatible with
+
+00:34:12.025 --> 00:34:13.596 A:middle
+trait collection that gives the
+
+00:34:13.596 --> 00:34:14.576 A:middle
+bundle argument.
+
+00:34:14.576 --> 00:34:15.866 A:middle
+On the macOS side of course
+
+00:34:15.866 --> 00:34:17.226 A:middle
+there's the NS bundle category
+
+00:34:17.505 --> 00:34:18.436 A:middle
+image for resource.
+
+00:34:19.726 --> 00:34:21.806 A:middle
+And keep in mind, that each of
+
+00:34:21.806 --> 00:34:23.295 A:middle
+these bundles provide a unique
+
+00:34:23.295 --> 00:34:25.795 A:middle
+namespace, so within them the
+
+00:34:25.795 --> 00:34:27.536 A:middle
+names have to be unique.
+
+00:34:27.536 --> 00:34:29.946 A:middle
+But across bundles you feel free
+
+00:34:29.946 --> 00:34:31.626 A:middle
+to use any naming convention you
+
+00:34:31.626 --> 00:34:31.866 A:middle
+like.
+
+00:34:34.255 --> 00:34:36.235 A:middle
+So speaking of namespaces,
+
+00:34:36.235 --> 00:34:37.496 A:middle
+there's another feature I'd like
+
+00:34:37.496 --> 00:34:39.496 A:middle
+to call attention to and another
+
+00:34:39.556 --> 00:34:41.016 A:middle
+challenge with large projects.
+
+00:34:41.366 --> 00:34:43.815 A:middle
+Now in this case the problem I'm
+
+00:34:43.815 --> 00:34:46.156 A:middle
+addressing is large collections
+
+00:34:46.585 --> 00:34:47.446 A:middle
+where they might have some
+
+00:34:47.446 --> 00:34:49.806 A:middle
+structure in them right.
+
+00:34:50.286 --> 00:34:52.266 A:middle
+So let's imagine you have an app
+
+00:34:52.266 --> 00:34:53.775 A:middle
+that deals with 50 different
+
+00:34:53.775 --> 00:34:55.216 A:middle
+rooms, each one of those rooms
+
+00:34:55.216 --> 00:34:56.585 A:middle
+has a table and a chair in it
+
+00:34:56.585 --> 00:34:57.656 A:middle
+and there's assets for each of
+
+00:34:57.656 --> 00:34:57.976 A:middle
+those.
+
+00:34:58.216 --> 00:34:59.326 A:middle
+In your code you'd really like
+
+00:34:59.326 --> 00:35:00.516 A:middle
+to refer to them as table and
+

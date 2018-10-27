@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.526 --> 00:13:00.396 A:middle
+issues and we have introduced a
+
+00:13:00.396 --> 00:13:02.326 A:middle
+new API around notification
+
+00:13:02.326 --> 00:13:04.206 A:middle
+actions, where now we're
+
+00:13:04.206 --> 00:13:05.496 A:middle
+exposing these notification
+
+00:13:05.496 --> 00:13:06.666 A:middle
+actions as part of the
+
+00:13:06.666 --> 00:13:08.736 A:middle
+NSExtensionContext tied to your
+
+00:13:08.736 --> 00:13:09.596 A:middle
+content extension.
+
+00:13:10.686 --> 00:13:12.356 A:middle
+What this API allows you to do
+
+00:13:12.576 --> 00:13:14.146 A:middle
+is access the currently
+
+00:13:14.146 --> 00:13:15.626 A:middle
+presented notification actions
+
+00:13:15.626 --> 00:13:17.626 A:middle
+to the user as well as replace
+
+00:13:17.626 --> 00:13:19.526 A:middle
+these actions by setting a brand
+
+00:13:19.526 --> 00:13:20.766 A:middle
+new array of notification
+
+00:13:20.766 --> 00:13:22.786 A:middle
+actions for your content
+
+00:13:25.236 --> 00:13:25.556 A:middle
+extension.
+
+00:13:25.556 --> 00:13:27.016 A:middle
+So going back to our sample,
+
+00:13:27.076 --> 00:13:28.826 A:middle
+what if after the user took the
+
+00:13:28.826 --> 00:13:30.476 A:middle
+like action we wanted to replace
+
+00:13:30.476 --> 00:13:32.546 A:middle
+it say with the unlike action so
+
+00:13:32.546 --> 00:13:33.896 A:middle
+that they can do the reverse of
+
+00:13:33.896 --> 00:13:36.776 A:middle
+the action they just took?
+
+00:13:36.956 --> 00:13:39.226 A:middle
+So using this new API, let's
+
+00:13:39.226 --> 00:13:40.356 A:middle
+take a look of how we can set
+
+00:13:40.356 --> 00:13:41.286 A:middle
+this up.
+
+00:13:41.376 --> 00:13:42.816 A:middle
+So we go back to our did receive
+
+00:13:42.816 --> 00:13:44.206 A:middle
+response method and again
+
+00:13:44.626 --> 00:13:46.296 A:middle
+identify the like action and
+
+00:13:46.296 --> 00:13:47.716 A:middle
+update our application state.
+
+00:13:48.916 --> 00:13:51.216 A:middle
+This time, we also create a new
+
+00:13:51.216 --> 00:13:53.446 A:middle
+action for unlike, giving it a
+
+00:13:53.446 --> 00:13:55.146 A:middle
+unique identifier as well as a
+
+00:13:55.146 --> 00:13:55.476 A:middle
+title.
+
+00:13:56.056 --> 00:13:59.816 A:middle
+We can also take a look at the
+
+00:13:59.816 --> 00:14:01.436 A:middle
+currently presented actions so
+

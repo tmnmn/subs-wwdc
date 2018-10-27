@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.656 --> 00:23:01.926 A:middle
+CPGridTemplate with a title of
+
+00:23:01.926 --> 00:23:03.016 A:middle
+Favorites, since these are our
+
+00:23:03.016 --> 00:23:04.976 A:middle
+favorite categories, and the
+
+00:23:04.976 --> 00:23:06.116 A:middle
+array of grid buttons we've
+
+00:23:06.116 --> 00:23:06.966 A:middle
+created in code.
+
+00:23:07.186 --> 00:23:09.126 A:middle
+And this is where we jump back
+
+00:23:09.276 --> 00:23:10.266 A:middle
+to that interface controller
+
+00:23:10.266 --> 00:23:11.436 A:middle
+object I mentioned earlier.
+
+00:23:12.116 --> 00:23:13.176 A:middle
+That is how we manage what is
+
+00:23:13.176 --> 00:23:14.656 A:middle
+presenting on the car screen.
+
+00:23:15.296 --> 00:23:16.526 A:middle
+So, we would use that interface
+
+00:23:16.526 --> 00:23:18.426 A:middle
+controller to push this new grid
+
+00:23:18.426 --> 00:23:20.226 A:middle
+template onto the car screen.
+
+00:23:20.696 --> 00:23:23.376 A:middle
+Now, that we have a way to
+
+00:23:23.406 --> 00:23:24.236 A:middle
+search for our favorite
+
+00:23:24.676 --> 00:23:25.796 A:middle
+categories and our favorite
+
+00:23:25.796 --> 00:23:27.536 A:middle
+items, we need a way to display
+
+00:23:27.536 --> 00:23:28.846 A:middle
+the search results to our users.
+
+00:23:29.156 --> 00:23:30.866 A:middle
+For that, we can use a list
+
+00:23:30.906 --> 00:23:31.286 A:middle
+template.
+
+00:23:32.616 --> 00:23:33.786 A:middle
+The list template will display a
+
+00:23:33.786 --> 00:23:35.346 A:middle
+list of CPList items.
+
+00:23:35.856 --> 00:23:37.006 A:middle
+They can be configured with
+
+00:23:37.196 --> 00:23:39.306 A:middle
+text, detailed text, an image,
+
+00:23:39.616 --> 00:23:40.726 A:middle
+and a disclosure indicator.
+
+00:23:41.036 --> 00:23:42.226 A:middle
+You can provide multiple
+
+00:23:42.226 --> 00:23:42.766 A:middle
+sections.
+
+00:23:42.936 --> 00:23:44.276 A:middle
+And you also, have a navigation
+
+00:23:44.276 --> 00:23:45.256 A:middle
+bar where you can provide a
+
+00:23:45.256 --> 00:23:46.736 A:middle
+title and those same leading and
+
+00:23:46.736 --> 00:23:47.426 A:middle
+trailing buttons.
+
+00:23:47.806 --> 00:23:49.016 A:middle
+One of the nice things about the
+
+00:23:49.016 --> 00:23:50.366 A:middle
+CarPlay framework is that, when
+
+00:23:50.366 --> 00:23:51.726 A:middle
+appropriate, it will also
+
+00:23:51.726 --> 00:23:53.346 A:middle
+display a nice scroll bar on the
+
+00:23:53.346 --> 00:23:55.286 A:middle
+side that helps your users page
+
+00:23:55.286 --> 00:23:56.156 A:middle
+through their search results
+
+00:23:56.156 --> 00:23:56.666 A:middle
+while driving.
+
+00:23:58.006 --> 00:23:59.396 A:middle
+Let's build a list template.
+
+00:23:59.916 --> 00:24:01.776 A:middle
+The first thing we're going to
+

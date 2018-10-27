@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:01.146 --> 00:06:03.446 A:middle
+We set up sample count to 4, as
+
+00:06:03.446 --> 00:06:05.386 A:middle
+it's an optimal tradeoff between
+
+00:06:05.426 --> 00:06:07.486 A:middle
+quality and performance, and at
+
+00:06:07.486 --> 00:06:09.736 A:middle
+the same time, we set up our
+
+00:06:09.826 --> 00:06:12.436 A:middle
+other length to 2 as we want to
+
+00:06:12.436 --> 00:06:16.346 A:middle
+store each image for each I in
+
+00:06:16.446 --> 00:06:17.226 A:middle
+separate slice.
+
+00:06:18.676 --> 00:06:21.776 A:middle
+So let's see how our pipeline
+
+00:06:21.776 --> 00:06:22.376 A:middle
+will change.
+
+00:06:23.606 --> 00:06:25.126 A:middle
+We can now replace those 2D
+
+00:06:25.126 --> 00:06:27.396 A:middle
+multi-sample textures with
+
+00:06:27.396 --> 00:06:29.596 A:middle
+single 2D multi-sample
+
+00:06:32.066 --> 00:06:32.156 A:middle
+[inaudible] one.
+
+00:06:33.136 --> 00:06:34.856 A:middle
+So now application can render
+
+00:06:34.966 --> 00:06:38.396 A:middle
+both I in single render pass and
+
+00:06:38.396 --> 00:06:40.686 A:middle
+if it's using instancing, it can
+
+00:06:40.976 --> 00:06:42.356 A:middle
+even do that in single draw
+
+00:06:42.356 --> 00:06:42.596 A:middle
+code.
+
+00:06:42.596 --> 00:06:45.606 A:middle
+So that already looks great, but
+
+00:06:45.606 --> 00:06:47.266 A:middle
+we still need to resolve those
+
+00:06:47.726 --> 00:06:49.976 A:middle
+2D multi-sample array texture
+
+00:06:49.976 --> 00:06:52.346 A:middle
+slices into separate iOS
+
+00:06:52.406 --> 00:06:54.636 A:middle
+[inaudible] faces before we pass
+
+00:06:54.636 --> 00:06:55.716 A:middle
+them to compositor.
+
+00:06:56.936 --> 00:06:59.156 A:middle
+So let's focus on our way,
+
+00:06:59.156 --> 00:07:01.276 A:middle
+application shares textures with
+

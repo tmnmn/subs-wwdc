@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.726 --> 00:06:02.706 A:middle
+So now you know what you can do
+
+00:06:02.706 --> 00:06:03.966 A:middle
+with TextKit just by using the
+
+00:06:03.966 --> 00:06:04.796 A:middle
+built-in controls.
+
+00:06:05.596 --> 00:06:06.686 A:middle
+But if you want to go beyond
+
+00:06:06.766 --> 00:06:07.716 A:middle
+what these controls provide,
+
+00:06:08.206 --> 00:06:08.986 A:middle
+you'll need to find the right
+
+00:06:08.986 --> 00:06:10.336 A:middle
+customization point within the
+
+00:06:10.336 --> 00:06:11.276 A:middle
+text stack.
+
+00:06:12.376 --> 00:06:14.036 A:middle
+And like much of Cocoa, TextKit
+
+00:06:14.036 --> 00:06:15.496 A:middle
+is based on the model view
+
+00:06:15.496 --> 00:06:16.766 A:middle
+controller design pattern.
+
+00:06:17.316 --> 00:06:19.356 A:middle
+And the text system can be
+
+00:06:19.356 --> 00:06:20.946 A:middle
+divided into three phases that
+
+00:06:20.946 --> 00:06:22.256 A:middle
+correspond it directly to NBC
+
+00:06:22.386 --> 00:06:24.676 A:middle
+and that's storage, display, and
+
+00:06:24.866 --> 00:06:25.236 A:middle
+layout.
+
+00:06:25.996 --> 00:06:27.446 A:middle
+And so now let's take a closer
+
+00:06:27.446 --> 00:06:28.916 A:middle
+look at the TextKit objects that
+
+00:06:28.916 --> 00:06:29.946 A:middle
+make up each of these phases.
+
+00:06:30.346 --> 00:06:32.176 A:middle
+And we'll start with the storage
+
+00:06:32.466 --> 00:06:35.746 A:middle
+which corresponds to the model.
+
+00:06:35.746 --> 00:06:36.866 A:middle
+Now NSTextStorage holds your
+
+00:06:36.866 --> 00:06:38.026 A:middle
+string data and your attributes.
+
+00:06:38.746 --> 00:06:40.166 A:middle
+It's a subclass of mutable
+
+00:06:40.166 --> 00:06:41.806 A:middle
+attributed string and so you can
+
+00:06:41.806 --> 00:06:43.146 A:middle
+work with it in the same way
+
+00:06:43.146 --> 00:06:44.046 A:middle
+that you already know how to
+
+00:06:44.046 --> 00:06:45.046 A:middle
+work with attributed strings.
+
+00:06:46.036 --> 00:06:47.256 A:middle
+And my colleague Emily will show
+
+00:06:47.256 --> 00:06:48.666 A:middle
+you some really powerful ways to
+
+00:06:48.666 --> 00:06:49.896 A:middle
+customize the text storage a
+
+00:06:49.896 --> 00:06:51.246 A:middle
+little bit later so stay tuned
+
+00:06:51.246 --> 00:06:52.146 A:middle
+for that.
+
+00:06:53.706 --> 00:06:55.716 A:middle
+Now NSTextContainer models the
+
+00:06:55.716 --> 00:06:56.906 A:middle
+geometry of the area where your
+
+00:06:56.906 --> 00:06:57.866 A:middle
+text will be laid out.
+
+00:06:58.586 --> 00:07:00.006 A:middle
+And by default, it's a rectangle
+

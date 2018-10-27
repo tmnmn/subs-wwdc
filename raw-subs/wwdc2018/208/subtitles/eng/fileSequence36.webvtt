@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.566 --> 00:36:00.846 A:middle
+here, and we're going to allow
+
+00:36:00.846 --> 00:36:02.056 A:middle
+the user to set their own
+
+00:36:02.056 --> 00:36:02.546 A:middle
+passcode.
+
+00:36:03.436 --> 00:36:04.216 A:middle
+So, I've got my [inaudible]
+
+00:36:04.306 --> 00:36:05.156 A:middle
+action down here.
+
+00:36:06.036 --> 00:36:07.996 A:middle
+And, again, we're going to vend
+
+00:36:07.996 --> 00:36:09.496 A:middle
+a TVDigitEntryViewController,
+
+00:36:09.996 --> 00:36:10.966 A:middle
+and we're going to set the title
+
+00:36:10.966 --> 00:36:12.546 A:middle
+text to let them know that we're
+
+00:36:12.816 --> 00:36:14.176 A:middle
+collecting a passcode that will
+
+00:36:14.296 --> 00:36:15.456 A:middle
+restrict which content can be
+
+00:36:15.456 --> 00:36:17.006 A:middle
+watched, and again, set the
+
+00:36:17.006 --> 00:36:18.116 A:middle
+number of digits to 5.
+
+00:36:19.446 --> 00:36:20.926 A:middle
+Next, we're going to implement
+
+00:36:21.336 --> 00:36:22.596 A:middle
+the entryCompletionHandler
+
+00:36:22.596 --> 00:36:22.886 A:middle
+again.
+
+00:36:23.486 --> 00:36:25.506 A:middle
+Now, I have an extra variable up
+
+00:36:25.506 --> 00:36:27.176 A:middle
+here, a optional string called
+
+00:36:27.176 --> 00:36:28.076 A:middle
+passcodeToVerify.
+
+00:36:28.386 --> 00:36:29.716 A:middle
+What this is going to do, is
+
+00:36:29.716 --> 00:36:32.066 A:middle
+it's going to hold the passcode
+
+00:36:32.066 --> 00:36:33.416 A:middle
+the user enters the first time
+
+00:36:33.416 --> 00:36:34.936 A:middle
+so we can verify it to make sure
+
+00:36:34.936 --> 00:36:36.126 A:middle
+that they actually entered the
+
+00:36:36.126 --> 00:36:36.876 A:middle
+correct passcode.
+
+00:36:37.526 --> 00:36:38.606 A:middle
+So, we see that when our
+
+00:36:38.606 --> 00:36:39.816 A:middle
+completionHandler gets called,
+
+00:36:40.626 --> 00:36:41.386 A:middle
+we check to see if the
+
+00:36:41.386 --> 00:36:42.776 A:middle
+passcodeToVerify is nil.
+
+00:36:42.906 --> 00:36:44.056 A:middle
+If it is, this is the first
+
+00:36:44.056 --> 00:36:46.196 A:middle
+time, so we're going to ask them
+
+00:36:46.266 --> 00:36:48.376 A:middle
+to verify their passcode, and
+
+00:36:48.376 --> 00:36:49.086 A:middle
+we're going to call the
+
+00:36:49.086 --> 00:36:51.366 A:middle
+clearEntry animated, except this
+
+00:36:51.396 --> 00:36:52.086 A:middle
+time false.
+
+00:36:52.346 --> 00:36:53.086 A:middle
+We don't want to shake it,
+
+00:36:53.086 --> 00:36:53.886 A:middle
+because they didn't do anything
+
+00:36:53.886 --> 00:36:55.646 A:middle
+wrong, but we want to clear it
+
+00:36:55.646 --> 00:36:56.606 A:middle
+so they can enter it again.
+
+00:36:57.266 --> 00:36:58.766 A:middle
+Otherwise, if there is a value
+
+00:36:58.766 --> 00:37:00.366 A:middle
+stored in the passcodeToVerify,
+

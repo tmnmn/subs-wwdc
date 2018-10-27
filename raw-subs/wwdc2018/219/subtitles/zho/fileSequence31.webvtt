@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:55.722 --> 00:31:00.360 align:middle line:-2
+如果你从CIImage创建一个
+UIImage并将其交给UIImageView
+
+00:31:00.727 --> 00:31:05.232 align:middle line:-2
+UIImageView将负责
+在GPU上执行该配方
+
+00:31:06.733 --> 00:31:07.701 align:middle line:-1
+这非常高效 并且它可以
+
+00:31:07.768 --> 00:31:10.771 align:middle line:-2
+保持CPU空闲从而能够
+在你的app中执行其他工作
+
+00:31:12.139 --> 00:31:14.775 align:middle line:-2
+为了使用它
+像平常一样创建你的CIImage
+
+00:31:15.209 --> 00:31:17.778 align:middle line:-2
+然后调用UIImage
+CIImage初始程序
+
+00:31:18.512 --> 00:31:19.746 align:middle line:-1
+（高级图像处理）
+
+00:31:19.813 --> 00:31:21.481 align:middle line:-1
+iOS上还有其他用于处理和渲染
+
+00:31:21.548 --> 00:31:25.052 align:middle line:-1
+图形内容的高级框架
+
+00:31:25.319 --> 00:31:29.823 align:middle line:-2
+包括Metal Vision
+和Accelerate
+
+00:31:31.158 --> 00:31:35.195 align:middle line:-2
+这些框架中常见的数据类型之一
+是CVPixelBuffer
+
+00:31:36.563 --> 00:31:40.801 align:middle line:-2
+这是一种数据类型
+其用来表示在CPU或GPU上
+
+00:31:40.868 --> 00:31:43.437 align:middle line:-2
+正在使用的缓冲区
+或尚未使用的缓冲区
+
+00:31:44.605 --> 00:31:46.340 align:middle line:-1
+构建这些像素缓冲区之一时
+
+00:31:46.740 --> 00:31:48.575 align:middle line:-1
+确保使用最好的初始化程序
+
+00:31:48.642 --> 00:31:51.678 align:middle line:-1
+即最接近你手头表述的那个
+
+00:31:52.746 --> 00:31:55.115 align:middle line:-1
+不要展开任何解码工作
+
+00:31:55.182 --> 00:31:58.051 align:middle line:-1
+这些工作已经由现有的
+
+00:31:58.118 --> 00:32:00.287 align:middle line:-2
+UIImage
+或CGImage实现完成
+

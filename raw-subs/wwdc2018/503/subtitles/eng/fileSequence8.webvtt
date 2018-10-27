@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.116 --> 00:08:01.386 A:middle
+blurring the mask so that we get
+
+00:08:01.386 --> 00:08:03.006 A:middle
+a nice feathered look.
+
+00:08:03.766 --> 00:08:05.126 A:middle
+Let's have a look at this in
+
+00:08:05.126 --> 00:08:05.456 A:middle
+action.
+
+00:08:06.486 --> 00:08:07.456 A:middle
+So remember all of this is
+
+00:08:07.456 --> 00:08:09.966 A:middle
+executed live in the browser
+
+00:08:09.966 --> 00:08:11.396 A:middle
+using Core Image as a back end.
+
+00:08:11.866 --> 00:08:13.836 A:middle
+All right so the first thing I
+
+00:08:13.836 --> 00:08:15.356 A:middle
+want to show you is how changing
+
+00:08:15.356 --> 00:08:16.836 A:middle
+percentile point changes my mask
+
+00:08:16.836 --> 00:08:17.036 A:middle
+here.
+
+00:08:17.286 --> 00:08:19.216 A:middle
+So the higher it is the less
+
+00:08:19.216 --> 00:08:20.496 A:middle
+aggressive I am on clipping the
+
+00:08:20.496 --> 00:08:21.026 A:middle
+foreground.
+
+00:08:21.276 --> 00:08:22.316 A:middle
+So let's pick a value that's
+
+00:08:22.316 --> 00:08:24.016 A:middle
+reasonable, maybe something like
+
+00:08:24.016 --> 00:08:24.466 A:middle
+this here.
+
+00:08:25.226 --> 00:08:26.556 A:middle
+And what you can see here is
+
+00:08:26.556 --> 00:08:28.246 A:middle
+that there are regions or
+
+00:08:28.246 --> 00:08:29.376 A:middle
+islands we call them that are
+
+00:08:29.716 --> 00:08:31.226 A:middle
+connected to my foreground and
+
+00:08:31.226 --> 00:08:32.176 A:middle
+there's a bit of the subject
+
+00:08:32.176 --> 00:08:33.086 A:middle
+here I'd like to take out.
+
+00:08:33.296 --> 00:08:35.086 A:middle
+So what I'll do is I'll add a
+
+00:08:35.086 --> 00:08:36.446 A:middle
+bit of morphological closing.
+
+00:08:36.926 --> 00:08:38.385 A:middle
+Look at how this appears
+
+00:08:38.385 --> 00:08:38.936 A:middle
+magically.
+
+00:08:38.976 --> 00:08:40.885 A:middle
+If I go too far obviously I lose
+
+00:08:40.885 --> 00:08:41.956 A:middle
+my entire subjects, I don't want
+
+00:08:41.956 --> 00:08:42.265 A:middle
+to do that.
+
+00:08:43.066 --> 00:08:43.866 A:middle
+So let's pick something like
+
+00:08:43.866 --> 00:08:44.226 A:middle
+this.
+
+00:08:44.916 --> 00:08:46.576 A:middle
+What I can do then is change the
+
+00:08:46.576 --> 00:08:47.876 A:middle
+feathering by applying the mask
+
+00:08:47.876 --> 00:08:48.556 A:middle
+on top of it all.
+
+00:08:49.196 --> 00:08:50.306 A:middle
+Let's take a look at how the RGB
+
+00:08:50.306 --> 00:08:51.266 A:middle
+is threshold in back.
+
+00:08:51.686 --> 00:08:52.906 A:middle
+This is not the effect we're
+
+00:08:52.906 --> 00:08:54.176 A:middle
+coming up it's just to give a
+
+00:08:54.176 --> 00:08:55.166 A:middle
+sense of how the mask is
+
+00:08:55.166 --> 00:08:56.306 A:middle
+applied, so let's keep going.
+
+00:08:57.186 --> 00:08:59.206 A:middle
+So I've chosen a few parameters
+
+00:08:59.206 --> 00:09:01.746 A:middle
+for this thresholding here and
+

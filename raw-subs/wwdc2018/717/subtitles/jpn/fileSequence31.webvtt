@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.425 --> 00:31:02.196 align:start position:29% line:-2
+この機能を可能にしたのが
+新しいAPIの―
+
+00:31:02.296 --> 00:31:05.399 align:start position:0% line:-2
+VNRecognizedObjectObservation
+です
+
+00:31:07.201 --> 00:31:11.371 align:start position:30% line:-2
+Core MLモデルの
+リクエストが実行され
+
+00:31:11.472 --> 00:31:17.411 align:start position:29% line:-2
+かつ 物体認識を行う場合
+自動的に出てきます
+
+00:31:20.881 --> 00:31:23.750 align:start position:29% line:-1
+YOLOを基にしています
+
+00:31:23.851 --> 00:31:29.056 align:start position:29% line:-2
+YOLOは目新しくないと
+思うかもしれませんが
+
+00:31:29.790 --> 00:31:34.461 align:start position:30% line:-2
+今までは多くのコードが
+必要でしたね
+
+00:31:34.561 --> 00:31:38.899 align:start position:23% line:-1
+これなら たった数行で済むので
+
+00:31:38.999 --> 00:31:41.702 align:start position:23% line:-1
+YOLOモデルを簡単に使えます
+
+00:31:42.069 --> 00:31:44.071 align:start position:32% line:-1
+コードに戻りましょう
+
+00:31:44.204 --> 00:31:48.375 align:start position:32% line:-2
+モデルを作成したら
+リクエストを作ります
+
+00:31:48.876 --> 00:31:50.844 align:start position:38% line:-1
+完了ハンドラは
+
+00:31:50.978 --> 00:31:55.682 align:start position:23% line:-1
+複数の対象物の領域を確認します
+
+00:31:55.916 --> 00:32:00.420 align:start position:29% line:-2
+さらに 境界ボックスや
+ラベルを提示してくれます
+

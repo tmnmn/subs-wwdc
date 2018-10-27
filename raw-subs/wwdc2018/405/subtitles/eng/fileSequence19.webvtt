@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.916 --> 00:19:01.476 A:middle
+Now you'll notice that initially
+
+00:19:01.566 --> 00:19:03.216 A:middle
+we have a white background and
+
+00:19:03.216 --> 00:19:04.426 A:middle
+then the image comes in later
+
+00:19:04.426 --> 00:19:04.896 A:middle
+and fills in.
+
+00:19:04.896 --> 00:19:06.486 A:middle
+And this is a pretty common
+
+00:19:06.486 --> 00:19:08.296 A:middle
+pattern in an application like
+
+00:19:08.296 --> 00:19:08.536 A:middle
+this.
+
+00:19:08.536 --> 00:19:09.526 A:middle
+And sometimes it's implemented
+
+00:19:09.526 --> 00:19:12.466 A:middle
+with a future or a promise but
+
+00:19:12.466 --> 00:19:13.796 A:middle
+this pattern -- as much as it
+
+00:19:13.896 --> 00:19:15.746 A:middle
+helps with performance, it's
+
+00:19:15.746 --> 00:19:16.976 A:middle
+also pretty difficult to
+
+00:19:16.976 --> 00:19:17.496 A:middle
+profile.
+
+00:19:17.556 --> 00:19:19.176 A:middle
+And the reason for that is
+
+00:19:19.176 --> 00:19:19.896 A:middle
+because there are a lot of
+
+00:19:19.896 --> 00:19:21.226 A:middle
+asynchronous activities going
+
+00:19:21.226 --> 00:19:21.486 A:middle
+on.
+
+00:19:21.876 --> 00:19:23.796 A:middle
+As the user scrolls, there are
+
+00:19:23.796 --> 00:19:25.206 A:middle
+downloads that are in-flight at
+
+00:19:25.206 --> 00:19:25.996 A:middle
+the same time.
+
+00:19:25.996 --> 00:19:27.316 A:middle
+And if the user scrolls really
+
+00:19:27.316 --> 00:19:29.226 A:middle
+quickly like this then the
+
+00:19:29.226 --> 00:19:31.646 A:middle
+download may not complete before
+
+00:19:31.776 --> 00:19:33.066 A:middle
+the image cell needs to be
+
+00:19:33.066 --> 00:19:33.536 A:middle
+reused.
+
+00:19:34.066 --> 00:19:35.256 A:middle
+And so then we have to cancel
+
+00:19:35.256 --> 00:19:35.826 A:middle
+that download.
+
+00:19:36.076 --> 00:19:37.986 A:middle
+If we fail to do that, then we
+
+00:19:37.986 --> 00:19:40.236 A:middle
+end up with several downloads
+
+00:19:40.236 --> 00:19:41.326 A:middle
+running in parallel that we
+
+00:19:41.326 --> 00:19:42.276 A:middle
+didn't really want.
+
+00:19:42.936 --> 00:19:44.196 A:middle
+So let's take a look at how we
+
+00:19:44.196 --> 00:19:46.416 A:middle
+can use signposts to analyze the
+
+00:19:46.416 --> 00:19:47.866 A:middle
+application of our Trailblazer.
+
+00:19:48.546 --> 00:19:51.326 A:middle
+Now inside the trail cell, we
+
+00:19:51.326 --> 00:19:53.026 A:middle
+have a method called
+
+00:19:53.206 --> 00:19:54.956 A:middle
+startImageDownload.
+
+00:19:55.286 --> 00:19:56.486 A:middle
+And this is invoked when we need
+
+00:19:56.486 --> 00:19:58.736 A:middle
+to download that new image, and
+
+00:19:58.996 --> 00:20:00.726 A:middle
+it's passed in the image name
+

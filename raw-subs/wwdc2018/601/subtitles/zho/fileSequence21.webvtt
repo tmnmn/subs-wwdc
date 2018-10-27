@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.158 --> 00:21:01.562 align:middle line:-2
+为此ReplayKit提供一个
+API函数
+
+00:21:01.795 --> 00:21:04.565 align:middle line:-2
+叫做broadcastAnnotated
+WithapplicationInfo
+
+00:21:04.631 --> 00:21:07.367 align:middle line:-1
+一旦玩家开始游戏
+
+00:21:08.602 --> 00:21:12.840 align:middle line:-2
+愤怒的小鸟发送样本
+ReplayKit通知扩展
+
+00:21:13.473 --> 00:21:16.009 align:middle line:-1
+游戏开始并提供词库
+
+00:21:16.076 --> 00:21:18.245 align:middle line:-1
+详细说明启动的app信息
+
+00:21:20.981 --> 00:21:25.752 align:middle line:-2
+比如 你可以使用
+ReplayKit定义的密钥
+
+00:21:25.819 --> 00:21:29.623 align:middle line:-2
+RPApplicationInfo
+BundleIdentifierKey
+
+00:21:29.690 --> 00:21:31.892 align:middle line:-1
+获取游戏的捆绑包ID
+
+00:21:31.959 --> 00:21:34.461 align:middle line:-1
+作为元数据传输给流
+
+00:21:35.896 --> 00:21:38.832 align:middle line:-1
+（处理播放完成）
+
+00:21:40.300 --> 00:21:43.136 align:middle line:-1
+用户停止直播时 无论以何种方式
+
+00:21:44.271 --> 00:21:47.541 align:middle line:-2
+ReplayKit使用的函数为
+broadcastFinished
+
+00:21:47.808 --> 00:21:50.677 align:middle line:-1
+来告诉扩展直播已经结束
+
+00:21:50.744 --> 00:21:54.448 align:middle line:-2
+不会再有新的样本
+传输至SampleHandler
+
+00:21:55.949 --> 00:21:58.185 align:middle line:-1
+这个函数中 你需要
+
+00:21:58.252 --> 00:22:00.888 align:middle line:-1
+结束上传缓存视频
+

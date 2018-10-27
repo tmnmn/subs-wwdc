@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:00.076 --> 00:22:01.386 A:middle
+This is based on the XCTest
+
+00:22:01.386 --> 00:22:02.716 A:middle
+framework that you're already
+
+00:22:02.716 --> 00:22:03.306 A:middle
+familiar with.
+
+00:22:03.916 --> 00:22:07.136 A:middle
+We support parallel testing, so
+
+00:22:07.136 --> 00:22:08.026 A:middle
+that you can get your test
+
+00:22:08.026 --> 00:22:08.876 A:middle
+results faster.
+
+00:22:10.036 --> 00:22:12.766 A:middle
+And we support test filtering so
+
+00:22:12.766 --> 00:22:13.856 A:middle
+that you can run a subset of
+
+00:22:13.886 --> 00:22:15.566 A:middle
+tests and iterate on a single
+
+00:22:15.566 --> 00:22:15.936 A:middle
+feature.
+
+00:22:16.496 --> 00:22:20.816 A:middle
+As we're evolving SwiftPM, we're
+
+00:22:20.816 --> 00:22:21.726 A:middle
+thinking about workflow
+
+00:22:21.726 --> 00:22:23.776 A:middle
+features, especially so that you
+
+00:22:23.776 --> 00:22:25.116 A:middle
+can do all of your development
+
+00:22:25.116 --> 00:22:27.526 A:middle
+on the command line.
+
+00:22:27.716 --> 00:22:29.376 A:middle
+One such feature is edit mode,
+
+00:22:30.246 --> 00:22:31.476 A:middle
+which allows overwriting all
+
+00:22:31.476 --> 00:22:32.876 A:middle
+transitive occurrences of a
+
+00:22:32.876 --> 00:22:34.986 A:middle
+specific package, with a locally
+
+00:22:34.986 --> 00:22:37.186 A:middle
+checked out copy so that
+
+00:22:37.386 --> 00:22:40.626 A:middle
+temporary edits can be made, and
+
+00:22:40.626 --> 00:22:41.766 A:middle
+changes to transitive
+
+00:22:41.766 --> 00:22:43.326 A:middle
+dependencies can be tested
+
+00:22:43.806 --> 00:22:44.996 A:middle
+without having to forward all
+
+00:22:44.996 --> 00:22:46.836 A:middle
+packages in the graph upfront.
+
+00:22:51.036 --> 00:22:53.396 A:middle
+Branch dependencies allow
+
+00:22:53.396 --> 00:22:54.826 A:middle
+depending on packages without
+
+00:22:54.826 --> 00:22:56.346 A:middle
+strict versioning requirements.
+
+00:22:56.626 --> 00:22:58.146 A:middle
+This is useful when you're
+
+00:22:58.146 --> 00:22:59.496 A:middle
+developing multiple packages
+
+00:22:59.666 --> 00:23:00.076 A:middle
+together.
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.006 --> 00:19:00.216 A:middle
+CPBarButton and are created
+
+00:19:00.216 --> 00:19:02.526 A:middle
+either with text or images and
+
+00:19:02.526 --> 00:19:04.046 A:middle
+are automatically sized and
+
+00:19:04.046 --> 00:19:05.296 A:middle
+styled by the system.
+
+00:19:06.086 --> 00:19:08.186 A:middle
+There's no notion of predefined
+
+00:19:08.186 --> 00:19:09.536 A:middle
+button actions in the CarPlay
+
+00:19:09.536 --> 00:19:10.006 A:middle
+framework.
+
+00:19:10.366 --> 00:19:11.696 A:middle
+But when you create a button,
+
+00:19:11.696 --> 00:19:13.046 A:middle
+you provide a custom action
+
+00:19:13.046 --> 00:19:13.506 A:middle
+handler.
+
+00:19:13.836 --> 00:19:15.176 A:middle
+And when the user interacts with
+
+00:19:15.176 --> 00:19:16.716 A:middle
+your button on the car screen
+
+00:19:17.286 --> 00:19:18.566 A:middle
+your custom action handler will
+
+00:19:18.566 --> 00:19:20.386 A:middle
+be called in your app.
+
+00:19:20.806 --> 00:19:22.166 A:middle
+You may also place up to four
+
+00:19:22.166 --> 00:19:23.936 A:middle
+buttons that appear above your
+
+00:19:23.936 --> 00:19:24.626 A:middle
+map window.
+
+00:19:25.126 --> 00:19:26.476 A:middle
+And these are map buttons.
+
+00:19:26.856 --> 00:19:27.786 A:middle
+You can create them with an
+
+00:19:27.786 --> 00:19:29.526 A:middle
+image, and unlike the bar
+
+00:19:29.526 --> 00:19:31.366 A:middle
+buttons, these are not styled by
+
+00:19:31.366 --> 00:19:31.756 A:middle
+the system.
+
+00:19:32.656 --> 00:19:34.646 A:middle
+The map template is also home to
+
+00:19:34.646 --> 00:19:36.546 A:middle
+a lot of other mapping and
+
+00:19:36.546 --> 00:19:37.416 A:middle
+navigational related
+
+00:19:37.416 --> 00:19:38.056 A:middle
+functionality.
+
+00:19:38.496 --> 00:19:40.096 A:middle
+Such as panning the map,
+
+00:19:41.166 --> 00:19:42.666 A:middle
+providing important contextual
+
+00:19:42.666 --> 00:19:44.096 A:middle
+information to your users using
+
+00:19:44.096 --> 00:19:45.226 A:middle
+navigation alerts.
+
+00:19:45.716 --> 00:19:47.296 A:middle
+And of course, turn by turn
+
+00:19:47.386 --> 00:19:47.946 A:middle
+guidance.
+
+00:19:48.736 --> 00:19:49.426 A:middle
+We're going to talk about
+
+00:19:49.426 --> 00:19:50.416 A:middle
+guidance in a little bit.
+
+00:19:50.826 --> 00:19:51.826 A:middle
+So, let's get started by going
+
+00:19:51.826 --> 00:19:53.796 A:middle
+over panning and navigation
+
+00:19:53.796 --> 00:19:54.246 A:middle
+alerts.
+
+00:19:54.936 --> 00:19:56.596 A:middle
+If your app supports panning the
+
+00:19:56.596 --> 00:19:58.866 A:middle
+map, we require that you present
+
+00:19:58.866 --> 00:20:00.386 A:middle
+a button on the map template,
+

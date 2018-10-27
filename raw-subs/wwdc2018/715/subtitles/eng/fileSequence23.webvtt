@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.966 --> 00:23:00.706 A:middle
+raw bytes from the camera, ship
+
+00:23:00.706 --> 00:23:01.866 A:middle
+them across the network, and
+
+00:23:01.866 --> 00:23:02.936 A:middle
+display them on the other side.
+
+00:23:03.456 --> 00:23:05.966 A:middle
+In order to make this happen, we
+
+00:23:05.966 --> 00:23:07.206 A:middle
+need to divvy those frames up
+
+00:23:07.206 --> 00:23:09.006 A:middle
+into smaller chunks that we can
+
+00:23:09.006 --> 00:23:10.416 A:middle
+send in UDP packets.
+
+00:23:11.986 --> 00:23:13.236 A:middle
+Of course, to send those UDP
+
+00:23:13.236 --> 00:23:14.876 A:middle
+packets on the network, we need
+
+00:23:15.766 --> 00:23:16.926 A:middle
+a connection.
+
+00:23:16.926 --> 00:23:17.846 A:middle
+Switching over to the other
+
+00:23:17.846 --> 00:23:19.906 A:middle
+device, we need a listener that
+
+00:23:19.906 --> 00:23:21.036 A:middle
+can receive that incoming
+
+00:23:21.036 --> 00:23:23.196 A:middle
+connection and read the data
+
+00:23:23.196 --> 00:23:24.366 A:middle
+packets off the network.
+
+00:23:25.156 --> 00:23:26.326 A:middle
+From there, we simply reverse
+
+00:23:26.326 --> 00:23:27.336 A:middle
+the earlier process,
+
+00:23:27.796 --> 00:23:29.056 A:middle
+reassembling the video frames
+
+00:23:29.366 --> 00:23:30.756 A:middle
+and sending them to the display
+
+00:23:30.756 --> 00:23:31.666 A:middle
+so that we can see them on the
+
+00:23:31.666 --> 00:23:31.966 A:middle
+screen.
+
+00:23:32.556 --> 00:23:35.536 A:middle
+To keep things simple, we've
+
+00:23:35.536 --> 00:23:36.766 A:middle
+already abstracted out the
+
+00:23:36.766 --> 00:23:37.846 A:middle
+camera and the display
+
+00:23:37.846 --> 00:23:39.346 A:middle
+functionalities so that we can
+
+00:23:39.346 --> 00:23:41.156 A:middle
+focus just on the parts that use
+
+00:23:41.156 --> 00:23:41.806 A:middle
+Network.framework.
+
+00:23:43.296 --> 00:23:44.856 A:middle
+There's one piece we haven't yet
+
+00:23:44.856 --> 00:23:46.086 A:middle
+covered here, and that's the
+
+00:23:46.086 --> 00:23:46.496 A:middle
+listener.
+
+00:23:46.836 --> 00:23:47.646 A:middle
+So we're going to take a minute
+
+00:23:47.646 --> 00:23:50.076 A:middle
+to do that now.
+
+00:23:50.326 --> 00:23:51.726 A:middle
+Listener functionality is
+
+00:23:51.726 --> 00:23:53.116 A:middle
+provided by the NWListener
+
+00:23:53.116 --> 00:23:54.976 A:middle
+class, which you can create
+
+00:23:54.976 --> 00:23:56.026 A:middle
+using the same parameters
+
+00:23:56.026 --> 00:23:57.386 A:middle
+objects that you used to
+
+00:23:57.386 --> 00:23:58.206 A:middle
+configure connections.
+
+00:23:59.836 --> 00:24:01.296 A:middle
+It's really easy to set up a
+

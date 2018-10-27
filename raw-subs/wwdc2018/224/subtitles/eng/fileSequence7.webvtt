@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.596 --> 00:07:00.836 A:middle
+utility types as well.
+
+00:07:01.806 --> 00:07:02.926 A:middle
+Instead of passing Core Data
+
+00:07:02.926 --> 00:07:05.006 A:middle
+types for presentation, we can
+
+00:07:05.006 --> 00:07:06.446 A:middle
+pass things like URLs or
+
+00:07:06.446 --> 00:07:08.106 A:middle
+serialized data into background
+
+00:07:08.106 --> 00:07:10.496 A:middle
+work controllers and turn those
+
+00:07:10.496 --> 00:07:11.896 A:middle
+into new and updated managed
+
+00:07:11.896 --> 00:07:13.446 A:middle
+objects using a background
+
+00:07:13.506 --> 00:07:14.876 A:middle
+context instead of a view
+
+00:07:14.876 --> 00:07:16.476 A:middle
+context to do our work.
+
+00:07:18.016 --> 00:07:19.136 A:middle
+Adopting this kind of interface
+
+00:07:19.136 --> 00:07:20.616 A:middle
+and utility type is super easy
+
+00:07:20.616 --> 00:07:22.146 A:middle
+since we own the initializer, so
+
+00:07:22.146 --> 00:07:22.956 A:middle
+we can just require the
+
+00:07:22.956 --> 00:07:23.936 A:middle
+parameters to create the
+
+00:07:23.936 --> 00:07:24.466 A:middle
+controller.
+
+00:07:24.566 --> 00:07:26.316 A:middle
+But how do we get our boundary
+
+00:07:26.316 --> 00:07:27.416 A:middle
+variables into our view
+
+00:07:27.416 --> 00:07:28.086 A:middle
+controllers?
+
+00:07:28.676 --> 00:07:31.946 A:middle
+Well, if we're using segues, we
+
+00:07:31.946 --> 00:07:33.226 A:middle
+can override the prepare method
+
+00:07:34.636 --> 00:07:35.706 A:middle
+and get a reference to the
+
+00:07:35.706 --> 00:07:37.086 A:middle
+destinationViewController and
+
+00:07:37.086 --> 00:07:38.186 A:middle
+then configure it there.
+
+00:07:38.806 --> 00:07:40.636 A:middle
+If we're using storyboards or
+
+00:07:40.636 --> 00:07:42.656 A:middle
+nibs, then we already have code
+
+00:07:42.656 --> 00:07:43.576 A:middle
+that has to cons up a
+
+00:07:43.576 --> 00:07:45.676 A:middle
+destinationViewController, so
+
+00:07:45.676 --> 00:07:46.516 A:middle
+all we need to do is set the
+
+00:07:46.516 --> 00:07:47.976 A:middle
+properties before presentation.
+
+00:07:48.506 --> 00:07:50.586 A:middle
+And, if we're driving stick, we
+
+00:07:50.586 --> 00:07:51.676 A:middle
+can just write an initializer
+
+00:07:51.676 --> 00:07:52.826 A:middle
+that explicitly defines the
+
+00:07:52.826 --> 00:07:54.256 A:middle
+boundary conditions, just like
+
+00:07:54.256 --> 00:07:55.676 A:middle
+we do with our utility types.
+
+00:07:56.276 --> 00:07:59.656 A:middle
+OK. So, now we've got a fetch
+
+00:07:59.656 --> 00:08:01.056 A:middle
+request and a context for our
+

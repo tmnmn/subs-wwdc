@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.966 --> 00:23:01.566 A:middle
+settings of drag and drop, so if
+
+00:23:01.566 --> 00:23:02.956 A:middle
+the user choose to save the
+
+00:23:02.956 --> 00:23:04.566 A:middle
+location information, then
+
+00:23:04.566 --> 00:23:06.646 A:middle
+Photos will export a new file
+
+00:23:06.646 --> 00:23:07.736 A:middle
+which does not contain this
+
+00:23:07.736 --> 00:23:08.296 A:middle
+metadata.
+
+00:23:09.246 --> 00:23:10.826 A:middle
+Both downloading and exporting
+
+00:23:10.826 --> 00:23:12.746 A:middle
+file takes time, and you don't
+
+00:23:12.746 --> 00:23:13.696 A:middle
+want to do that on the main
+
+00:23:13.696 --> 00:23:16.776 A:middle
+trade, since it's going to block
+
+00:23:16.776 --> 00:23:19.106 A:middle
+your app UI.
+
+00:23:19.486 --> 00:23:21.206 A:middle
+So, in order to fix this, we
+
+00:23:21.206 --> 00:23:22.926 A:middle
+need an asynchronous API.
+
+00:23:24.486 --> 00:23:27.136 A:middle
+In fact, we do have one, it's
+
+00:23:27.136 --> 00:23:28.706 A:middle
+called file promises.
+
+00:23:30.246 --> 00:23:32.886 A:middle
+File promise is a promise of--
+
+00:23:32.986 --> 00:23:34.746 A:middle
+that's a file of a certain type
+
+00:23:35.206 --> 00:23:36.776 A:middle
+that does not exist yet on disk,
+
+00:23:36.776 --> 00:23:38.446 A:middle
+will be written in a provided
+
+00:23:38.446 --> 00:23:39.006 A:middle
+location.
+
+00:23:39.726 --> 00:23:41.636 A:middle
+It also allows the sender to
+
+00:23:41.636 --> 00:23:42.966 A:middle
+write files in the background.
+
+00:23:45.296 --> 00:23:47.446 A:middle
+There are two ways to interact
+
+00:23:47.446 --> 00:23:49.426 A:middle
+with file promises: receiving
+
+00:23:49.426 --> 00:23:50.556 A:middle
+files by using
+
+00:23:50.556 --> 00:23:52.576 A:middle
+NSFilePromiseReceiver and
+
+00:23:52.576 --> 00:23:53.846 A:middle
+providing files by using
+
+00:23:53.846 --> 00:23:55.006 A:middle
+NSFilePromiseProvider.
+
+00:23:55.926 --> 00:23:57.556 A:middle
+Both of these modern API's have
+
+00:23:57.556 --> 00:23:59.196 A:middle
+been introduced two years ago
+
+00:23:59.196 --> 00:24:00.176 A:middle
+with macOS Sierra.
+

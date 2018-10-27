@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.086 --> 00:11:00.716 A:middle
+like array.
+
+00:11:01.596 --> 00:11:03.526 A:middle
+It's also definitely easy for
+
+00:11:03.526 --> 00:11:04.586 A:middle
+users of the protocol to
+
+00:11:04.586 --> 00:11:05.116 A:middle
+understand.
+
+00:11:06.186 --> 00:11:07.296 A:middle
+But is it flexible enough for a
+
+00:11:07.296 --> 00:11:08.526 A:middle
+slightly more complicated type,
+
+00:11:08.626 --> 00:11:09.506 A:middle
+like a dictionary?
+
+00:11:11.136 --> 00:11:13.636 A:middle
+Now no matter how you model it,
+
+00:11:13.866 --> 00:11:15.256 A:middle
+a dictionary's probably going to
+
+00:11:15.256 --> 00:11:16.406 A:middle
+be backed by some fairly
+
+00:11:16.406 --> 00:11:17.746 A:middle
+complicated internal data
+
+00:11:17.746 --> 00:11:18.176 A:middle
+structure.
+
+00:11:18.666 --> 00:11:19.866 A:middle
+That has specific logic for
+
+00:11:19.866 --> 00:11:21.466 A:middle
+moving from one element to the
+
+00:11:21.466 --> 00:11:21.916 A:middle
+next.
+
+00:11:22.586 --> 00:11:24.146 A:middle
+For example, it could be backed
+
+00:11:24.276 --> 00:11:26.046 A:middle
+by an internal buffer of some
+
+00:11:26.046 --> 00:11:29.096 A:middle
+kind, and it could use an index
+
+00:11:29.096 --> 00:11:30.736 A:middle
+type that stored an offset into
+
+00:11:30.736 --> 00:11:31.266 A:middle
+that buffer.
+
+00:11:31.266 --> 00:11:33.166 A:middle
+That it could then take as the
+
+00:11:33.166 --> 00:11:34.526 A:middle
+argument to subscript in order
+
+00:11:34.526 --> 00:11:35.366 A:middle
+to fetch an element to the
+
+00:11:35.366 --> 00:11:37.346 A:middle
+position, using that offset.
+
+00:11:38.166 --> 00:11:39.776 A:middle
+But it would be critical that
+
+00:11:39.776 --> 00:11:41.496 A:middle
+the dictionary's index type be
+
+00:11:41.496 --> 00:11:43.116 A:middle
+an opaque type that only the
+
+00:11:43.116 --> 00:11:44.416 A:middle
+dictionary can control.
+
+00:11:45.206 --> 00:11:45.866 A:middle
+You wouldn't want somebody
+
+00:11:45.866 --> 00:11:47.506 A:middle
+necessarily just adding one to
+
+00:11:47.506 --> 00:11:48.036 A:middle
+your offset.
+
+00:11:48.306 --> 00:11:49.176 A:middle
+That wouldn't necessarily move
+
+00:11:49.176 --> 00:11:50.076 A:middle
+to the next element in the
+
+00:11:50.076 --> 00:11:50.576 A:middle
+dictionary.
+
+00:11:51.056 --> 00:11:52.466 A:middle
+It could move some arbitrary,
+
+00:11:52.466 --> 00:11:54.206 A:middle
+maybe uninitialized part of the
+
+00:11:54.206 --> 00:11:55.706 A:middle
+dictionary's internal storage.
+
+00:11:56.826 --> 00:11:57.936 A:middle
+So instead we want the
+
+00:11:57.936 --> 00:12:00.486 A:middle
+dictionary to control moving
+

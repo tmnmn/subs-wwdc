@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.376 --> 00:31:00.766 A:middle
+now safe for GPU B to access it.
+
+00:31:01.816 --> 00:31:04.096 A:middle
+So, this is an elegant way to
+
+00:31:04.096 --> 00:31:05.446 A:middle
+fix our synchronization problem.
+
+00:31:06.826 --> 00:31:08.696 A:middle
+But, clearly, having a GPU,
+
+00:31:08.856 --> 00:31:10.496 A:middle
+potentially, a very powerful GPU
+
+00:31:10.496 --> 00:31:11.936 A:middle
+just sitting there waiting is
+
+00:31:12.206 --> 00:31:12.746 A:middle
+not good.
+
+00:31:13.706 --> 00:31:15.106 A:middle
+So, we need to make this wait as
+
+00:31:15.106 --> 00:31:17.056 A:middle
+short as possible and, ideally,
+
+00:31:17.056 --> 00:31:18.626 A:middle
+we want the GPU working instead
+
+00:31:18.626 --> 00:31:19.006 A:middle
+of waiting.
+
+00:31:19.056 --> 00:31:21.726 A:middle
+So, what I'm talking about,
+
+00:31:21.776 --> 00:31:22.946 A:middle
+here, is load balancing.
+
+00:31:23.586 --> 00:31:25.916 A:middle
+So currently, we just split the
+
+00:31:25.916 --> 00:31:27.756 A:middle
+screen equally between GPUs.
+
+00:31:27.916 --> 00:31:29.126 A:middle
+And there's a couple of problems
+
+00:31:29.126 --> 00:31:29.526 A:middle
+with this.
+
+00:31:30.376 --> 00:31:31.846 A:middle
+Firstly, it doesn't take into
+
+00:31:31.846 --> 00:31:33.116 A:middle
+account that you might be using
+
+00:31:33.116 --> 00:31:34.466 A:middle
+GPUs of different performance.
+
+00:31:35.676 --> 00:31:37.276 A:middle
+If one GPU is much faster than
+
+00:31:37.276 --> 00:31:38.156 A:middle
+the other, then it stands to
+
+00:31:38.156 --> 00:31:39.206 A:middle
+reason that, yeah, it's going to
+
+00:31:39.206 --> 00:31:39.926 A:middle
+finish first.
+
+00:31:41.086 --> 00:31:43.386 A:middle
+And the other problem is that
+
+00:31:43.666 --> 00:31:44.696 A:middle
+some parts of the screen are
+
+00:31:44.696 --> 00:31:45.936 A:middle
+more complicated to render than
+
+00:31:45.936 --> 00:31:46.216 A:middle
+others.
+
+00:31:46.216 --> 00:31:46.766 A:middle
+They take longer.
+
+00:31:47.536 --> 00:31:48.586 A:middle
+They might have more complex
+
+00:31:48.586 --> 00:31:50.006 A:middle
+geometry or more complex
+
+00:31:50.006 --> 00:31:50.596 A:middle
+materials.
+
+00:31:52.316 --> 00:31:53.966 A:middle
+So, to fix this, we need to
+
+00:31:53.966 --> 00:31:55.246 A:middle
+adjust our region sizes
+
+00:31:55.246 --> 00:31:55.846 A:middle
+adaptively.
+
+00:31:56.866 --> 00:31:58.406 A:middle
+Now, the aim here is for each
+
+00:31:58.406 --> 00:32:00.056 A:middle
+GPU to take, approximately, the
+

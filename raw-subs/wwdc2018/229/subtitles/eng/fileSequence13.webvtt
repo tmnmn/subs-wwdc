@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.096 --> 00:13:00.706 A:middle
+substrings, again, are tuned to
+
+00:13:00.706 --> 00:13:01.806 A:middle
+the special cases that are most
+
+00:13:01.806 --> 00:13:02.396 A:middle
+common with strings.
+
+00:13:03.406 --> 00:13:06.196 A:middle
+Some types, like set, will make
+
+00:13:06.196 --> 00:13:07.746 A:middle
+use of the generalized slice
+
+00:13:07.846 --> 00:13:08.766 A:middle
+type defined in the standard
+
+00:13:08.766 --> 00:13:09.106 A:middle
+library.
+
+00:13:09.256 --> 00:13:10.096 A:middle
+That's because sets are
+
+00:13:10.096 --> 00:13:10.516 A:middle
+unordered.
+
+00:13:10.516 --> 00:13:11.506 A:middle
+There's not very much else that
+
+00:13:11.506 --> 00:13:11.886 A:middle
+they can do.
+
+00:13:11.886 --> 00:13:12.806 A:middle
+They just basically need to
+
+00:13:12.806 --> 00:13:13.976 A:middle
+maintain a start and an end
+
+00:13:13.976 --> 00:13:14.906 A:middle
+index [inaudible] to the
+
+00:13:14.906 --> 00:13:15.896 A:middle
+original collection.
+
+00:13:16.906 --> 00:13:18.576 A:middle
+Data and range on the other hand
+
+00:13:18.576 --> 00:13:20.426 A:middle
+are their own slice types, and
+
+00:13:20.426 --> 00:13:21.736 A:middle
+so there's a lot of options that
+
+00:13:21.736 --> 00:13:22.326 A:middle
+you have here.
+
+00:13:22.756 --> 00:13:24.106 A:middle
+And there's one more thing about
+
+00:13:24.106 --> 00:13:25.166 A:middle
+slices that I want to talk about
+
+00:13:25.166 --> 00:13:25.846 A:middle
+before we move on.
+
+00:13:26.366 --> 00:13:28.576 A:middle
+Let's suppose that we had a
+
+00:13:28.716 --> 00:13:29.986 A:middle
+really large collection, like
+
+00:13:30.176 --> 00:13:31.276 A:middle
+thousands and thousands and
+
+00:13:31.276 --> 00:13:32.166 A:middle
+thousands of elements.
+
+00:13:32.806 --> 00:13:34.016 A:middle
+And we add a couple of small
+
+00:13:34.016 --> 00:13:34.976 A:middle
+slices to parts of that
+
+00:13:34.976 --> 00:13:35.476 A:middle
+collection.
+
+00:13:36.666 --> 00:13:37.746 A:middle
+It's important to remember that
+
+00:13:37.746 --> 00:13:39.586 A:middle
+the slice keeps the entirety of
+
+00:13:39.586 --> 00:13:41.506 A:middle
+the originating collection alive
+
+00:13:41.506 --> 00:13:43.206 A:middle
+as long as the slice is around.
+
+00:13:43.286 --> 00:13:44.506 A:middle
+And this can lead to surprising
+
+00:13:44.506 --> 00:13:44.996 A:middle
+problems.
+
+00:13:45.226 --> 00:13:46.426 A:middle
+Let see how this works in code.
+
+00:13:47.836 --> 00:13:49.296 A:middle
+Let's suppose I have an
+
+00:13:49.296 --> 00:13:50.196 A:middle
+extension on an array that
+
+00:13:50.196 --> 00:13:51.226 A:middle
+allows me to return the first
+
+00:13:51.226 --> 00:13:53.816 A:middle
+half, and I'm using the droplast
+
+00:13:53.816 --> 00:13:55.236 A:middle
+function here to do so.
+
+00:13:55.806 --> 00:13:56.806 A:middle
+And we have an array of eight
+
+00:13:56.806 --> 00:13:58.096 A:middle
+numbers, and we call our
+
+00:13:58.096 --> 00:14:00.526 A:middle
+extension, producing the slice,
+

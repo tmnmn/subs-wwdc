@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.776 --> 00:08:01.116 A:middle
+describing the roles played by
+
+00:08:01.116 --> 00:08:03.176 A:middle
+your code, the system, and the
+
+00:08:03.176 --> 00:08:04.536 A:middle
+app where the user is signing
+
+00:08:05.056 --> 00:08:05.123 A:middle
+in.
+
+00:08:07.376 --> 00:08:09.186 A:middle
+To start with, your app needs to
+
+00:08:09.186 --> 00:08:10.876 A:middle
+let AutoFill know ahead of time
+
+00:08:11.126 --> 00:08:12.356 A:middle
+what credentials it wants to
+
+00:08:12.356 --> 00:08:13.606 A:middle
+make available for the QuickType
+
+00:08:13.606 --> 00:08:13.816 A:middle
+bar.
+
+00:08:15.126 --> 00:08:16.266 A:middle
+Your app provides AutoFill a
+
+00:08:16.266 --> 00:08:17.996 A:middle
+list of credential identities.
+
+00:08:18.336 --> 00:08:19.846 A:middle
+The credential identity includes
+
+00:08:19.846 --> 00:08:21.106 A:middle
+information about a credential,
+
+00:08:21.406 --> 00:08:22.746 A:middle
+such as the username and the
+
+00:08:22.746 --> 00:08:24.616 A:middle
+service, but not the password.
+
+00:08:25.106 --> 00:08:28.116 A:middle
+When the user begins signing
+
+00:08:28.116 --> 00:08:29.886 A:middle
+into an app, the app talks to
+
+00:08:29.886 --> 00:08:31.356 A:middle
+AutoFill, and lets it know when
+
+00:08:31.356 --> 00:08:32.756 A:middle
+a username or password field is
+
+00:08:32.756 --> 00:08:33.356 A:middle
+focused.
+
+00:08:34.645 --> 00:08:35.946 A:middle
+AutoFill then looks for
+
+00:08:35.946 --> 00:08:36.796 A:middle
+appropriate credential
+
+00:08:36.796 --> 00:08:38.046 A:middle
+identities to suggest for the
+
+00:08:38.046 --> 00:08:38.265 A:middle
+app.
+
+00:08:38.905 --> 00:08:39.866 A:middle
+It does this by searching
+
+00:08:39.866 --> 00:08:40.616 A:middle
+through the credential
+
+00:08:40.616 --> 00:08:41.635 A:middle
+identities that your app has
+
+00:08:41.635 --> 00:08:43.076 A:middle
+already provided, so your
+
+00:08:43.076 --> 00:08:44.176 A:middle
+extension doesn't need to be
+
+00:08:44.176 --> 00:08:44.706 A:middle
+launched yet.
+
+00:08:45.996 --> 00:08:46.856 A:middle
+If there are any matching
+
+00:08:46.856 --> 00:08:47.726 A:middle
+credential identities to
+
+00:08:47.726 --> 00:08:49.886 A:middle
+suggest, AutoFill displays them
+
+00:08:49.886 --> 00:08:50.616 A:middle
+on the QuickType bar.
+
+00:08:51.726 --> 00:08:53.096 A:middle
+These suggestions are rendered
+
+00:08:53.096 --> 00:08:54.666 A:middle
+privately by the system, so the
+
+00:08:54.666 --> 00:08:56.246 A:middle
+app isn't yet able to determine
+
+00:08:56.246 --> 00:08:57.466 A:middle
+what credentials the user has
+
+00:08:57.466 --> 00:08:58.946 A:middle
+saved for the app.
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.993 --> 00:26:03.130 align:start position:29% line:-2
+階層のスナップショットが
+3Dになり
+
+00:26:03.230 --> 00:26:05.532 align:start position:29% line:-1
+ビューを調べられるのです
+
+00:26:05.632 --> 00:26:07.601 align:start position:27% line:-1
+後でセバスチャンが話します
+
+00:26:07.701 --> 00:26:09.303 align:start position:34% line:-1
+私が紹介するのは―
+
+00:26:09.403 --> 00:26:14.374 align:start position:29% line:-2
+デバッグコンソールで
+単純な階層を見る方法です
+
+00:26:14.741 --> 00:26:19.413 align:start position:9% line:-2
+recursiveDescriptionという
+デバッグ関数を使います
+
+00:26:20.280 --> 00:26:24.251 align:start position:11% line:-2
+po self.view.
+recursiveDescriptionです
+
+00:26:24.751 --> 00:26:27.321 align:start position:30% line:-1
+うまくいかない場合は？
+
+00:26:27.588 --> 00:26:30.390 align:start position:23% line:-2
+この関数は
+デバッグのために存在するので―
+
+00:26:30.490 --> 00:26:35.195 align:start position:29% line:-2
+パブリックAPIではなく
+Swiftで使えません
+
+00:26:35.529 --> 00:26:40.434 align:start position:23% line:-2
+定義されていない関数は
+Swiftで呼び出せないのです
+
+00:26:40.534 --> 00:26:45.639 align:start position:23% line:-2
+しかしObjective-Cは
+ダイナミックな言語で
+
+00:26:45.739 --> 00:26:49.076 align:start position:36% line:-2
+このような関数も
+呼び出せます
+
+00:26:49.176 --> 00:26:53.213 align:start position:21% line:-2
+ではデバッガに
+Objective-Cの構文で―
+
+00:26:53.313 --> 00:26:55.916 align:start position:29% line:-1
+この式を評価させましょう
+
+00:26:56.016 --> 00:27:00.420 align:start position:0% line:-2
+“expression option -l objc”と
+入力します
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.516 --> 00:37:01.956 A:middle
+It also informs about which
+
+00:37:01.956 --> 00:37:03.566 A:middle
+image has been detected and
+
+00:37:03.566 --> 00:37:06.176 A:middle
+where it is by giving me it's
+
+00:37:06.406 --> 00:37:08.536 A:middle
+position and orientation as a 4
+
+00:37:08.536 --> 00:37:09.956 A:middle
+by 4 matrix.
+
+00:37:11.496 --> 00:37:13.326 A:middle
+So in order to get such image
+
+00:37:13.326 --> 00:37:14.896 A:middle
+anchors, it all starts by
+
+00:37:14.896 --> 00:37:15.646 A:middle
+loading images.
+
+00:37:15.726 --> 00:37:16.676 A:middle
+So that's good.
+
+00:37:16.906 --> 00:37:18.176 A:middle
+Let's have a look at what good
+
+00:37:18.216 --> 00:37:19.096 A:middle
+images could be.
+
+00:37:19.846 --> 00:37:21.426 A:middle
+This image here could be found
+
+00:37:21.486 --> 00:37:23.476 A:middle
+in a book for children, and in
+
+00:37:23.476 --> 00:37:25.686 A:middle
+fact, it works great for image
+
+00:37:25.686 --> 00:37:26.066 A:middle
+tracking.
+
+00:37:26.436 --> 00:37:27.976 A:middle
+It has a lot of distinct visual
+
+00:37:27.976 --> 00:37:28.496 A:middle
+features.
+
+00:37:28.806 --> 00:37:30.346 A:middle
+It's we'll textured and shows
+
+00:37:30.346 --> 00:37:31.096 A:middle
+really good contrast.
+
+00:37:32.566 --> 00:37:34.236 A:middle
+On the other hand, an image like
+
+00:37:34.236 --> 00:37:36.076 A:middle
+this, which could also be found
+
+00:37:36.076 --> 00:37:39.446 A:middle
+in a textbook for kids, is not
+
+00:37:39.446 --> 00:37:39.986 A:middle
+recommended.
+
+00:37:40.756 --> 00:37:41.646 A:middle
+It has a lot of repetitive
+
+00:37:41.646 --> 00:37:43.326 A:middle
+structures, uniform color
+
+00:37:43.326 --> 00:37:44.876 A:middle
+regions, and a pretty narrow
+
+00:37:44.876 --> 00:37:46.666 A:middle
+histogram once converted to gray
+
+00:37:46.666 --> 00:37:46.946 A:middle
+scale.
+
+00:37:48.436 --> 00:37:49.586 A:middle
+But you don't have to identify
+
+00:37:49.586 --> 00:37:50.966 A:middle
+these statistics yourself as
+
+00:37:51.066 --> 00:37:52.066 A:middle
+Xcode is here to help.
+
+00:37:52.926 --> 00:37:54.716 A:middle
+So if I import these two images
+
+00:37:54.716 --> 00:37:57.286 A:middle
+to Xcode, I see the sea life one
+
+00:37:57.586 --> 00:37:59.216 A:middle
+without any warning, which means
+
+00:37:59.216 --> 00:38:01.296 A:middle
+it's recommended, and the one
+

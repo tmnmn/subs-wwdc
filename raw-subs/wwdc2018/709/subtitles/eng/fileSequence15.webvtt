@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.226 --> 00:15:00.766 A:middle
+My quantized model did the same.
+
+00:15:00.766 --> 00:15:03.476 A:middle
+And that happened over 98, 94.8%
+
+00:15:03.476 --> 00:15:04.126 A:middle
+of the data set.
+
+00:15:05.846 --> 00:15:07.576 A:middle
+So I can go ahead and use this
+
+00:15:07.576 --> 00:15:08.276 A:middle
+model in my app.
+
+00:15:08.746 --> 00:15:10.416 A:middle
+But I want to see if other
+
+00:15:10.416 --> 00:15:11.576 A:middle
+quantization techniques work
+
+00:15:11.576 --> 00:15:12.546 A:middle
+better on this model.
+
+00:15:13.526 --> 00:15:15.146 A:middle
+As I mentioned, Core ML supports
+
+00:15:15.176 --> 00:15:16.496 A:middle
+two types of quantization
+
+00:15:16.496 --> 00:15:16.936 A:middle
+techniques.
+
+00:15:17.096 --> 00:15:18.686 A:middle
+Linear quantization and lookup
+
+00:15:18.686 --> 00:15:19.546 A:middle
+table quantization.
+
+00:15:19.956 --> 00:15:21.636 A:middle
+So let's go ahead and try and
+
+00:15:21.636 --> 00:15:23.326 A:middle
+quantize this model using lookup
+
+00:15:23.326 --> 00:15:24.136 A:middle
+table quantization.
+
+00:15:30.936 --> 00:15:31.996 A:middle
+Again, we pass in an original
+
+00:15:31.996 --> 00:15:33.496 A:middle
+model, the number of bits we
+
+00:15:33.496 --> 00:15:34.726 A:middle
+want to quantize our model to.
+
+00:15:35.666 --> 00:15:37.306 A:middle
+And our quantization techniques.
+
+00:15:37.896 --> 00:15:39.976 A:middle
+Oops, made a typo there.
+
+00:15:48.156 --> 00:15:49.816 A:middle
+Let's go ahead and run this.
+
+00:15:50.656 --> 00:15:52.746 A:middle
+Now, k-means is a simple
+
+00:15:52.746 --> 00:15:54.136 A:middle
+clustering algorithm which
+
+00:15:54.196 --> 00:15:55.856 A:middle
+approximates the distribution of
+
+00:15:55.856 --> 00:15:56.346 A:middle
+our weights.
+
+00:15:56.606 --> 00:15:58.566 A:middle
+And using this distribution, we
+
+00:15:58.566 --> 00:16:00.606 A:middle
+can construct the lookup table
+

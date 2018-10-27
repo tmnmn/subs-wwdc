@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:57.876 --> 00:15:00.066 A:middle
+wanted to use just one label, we
+
+00:15:00.066 --> 00:15:01.486 A:middle
+wouldn't be able to do this in
+
+00:15:01.486 --> 00:15:02.356 A:middle
+Interface Builder.
+
+00:15:02.836 --> 00:15:06.156 A:middle
+So how could we do this?
+
+00:15:06.546 --> 00:15:07.646 A:middle
+Well, we can take advantage of
+
+00:15:07.646 --> 00:15:09.216 A:middle
+the power and flexibility of
+
+00:15:09.216 --> 00:15:10.056 A:middle
+attributed strings.
+
+00:15:11.856 --> 00:15:13.556 A:middle
+Now an attributed string is a
+
+00:15:13.556 --> 00:15:15.026 A:middle
+run of characters that can have
+
+00:15:15.026 --> 00:15:16.796 A:middle
+attributes applied to ranges of
+
+00:15:16.796 --> 00:15:17.236 A:middle
+characters.
+
+00:15:18.076 --> 00:15:19.246 A:middle
+Now some attributes you get for
+
+00:15:19.246 --> 00:15:21.506 A:middle
+free like the default font and
+
+00:15:21.506 --> 00:15:23.766 A:middle
+text color, but we can override
+
+00:15:23.766 --> 00:15:24.796 A:middle
+these attributes with our own
+
+00:15:24.796 --> 00:15:25.156 A:middle
+values.
+
+00:15:25.956 --> 00:15:27.216 A:middle
+In this case, we're going to set
+
+00:15:27.216 --> 00:15:28.426 A:middle
+part of our string's text color
+
+00:15:28.426 --> 00:15:28.756 A:middle
+to white.
+
+00:15:28.756 --> 00:15:32.796 A:middle
+Now to see attributed string in
+
+00:15:32.926 --> 00:15:34.386 A:middle
+action, we'll use the add
+
+00:15:34.556 --> 00:15:35.646 A:middle
+attribute method on
+
+00:15:35.706 --> 00:15:37.606 A:middle
+NSMutableAttributedString to set
+
+00:15:37.606 --> 00:15:39.376 A:middle
+the text color to white just for
+
+00:15:39.376 --> 00:15:40.266 A:middle
+the range that we want.
+
+00:15:41.506 --> 00:15:42.816 A:middle
+And this time we'll set the
+
+00:15:42.816 --> 00:15:44.476 A:middle
+attributed text property on our
+
+00:15:44.476 --> 00:15:44.796 A:middle
+label.
+
+00:15:45.256 --> 00:15:49.586 A:middle
+At runtime, this looks pretty
+
+00:15:50.066 --> 00:15:50.246 A:middle
+spiffy.
+
+00:15:51.336 --> 00:15:53.516 A:middle
+Now UILabels were a great choice
+
+00:15:53.516 --> 00:15:55.846 A:middle
+for this sort of text.
+
+00:15:55.846 --> 00:15:56.876 A:middle
+Now if we look at the bottom of
+
+00:15:56.876 --> 00:15:57.846 A:middle
+the screen, we'll see a
+
+00:15:57.966 --> 00:15:58.366 A:middle
+headline.
+
+00:15:58.546 --> 00:15:59.666 A:middle
+Now this is also text, but it's
+
+00:15:59.666 --> 00:16:01.516 A:middle
+a little bit bigger and it spans
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.766 --> 00:17:00.516 A:middle
+that we see here acts as a
+
+00:17:00.516 --> 00:17:02.276 A:middle
+thumbnail for what's behind it
+
+00:17:02.276 --> 00:17:03.126 A:middle
+once you tap it.
+
+00:17:03.256 --> 00:17:05.496 A:middle
+For example, tapping the
+
+00:17:05.496 --> 00:17:07.286 A:middle
+elephant should show a large
+
+00:17:07.286 --> 00:17:08.866 A:middle
+photo of the elephant in full
+
+00:17:08.866 --> 00:17:11.826 A:middle
+screen and tapping the giraffe
+
+00:17:12.066 --> 00:17:13.945 A:middle
+should preview an entire PDF
+
+00:17:13.945 --> 00:17:15.715 A:middle
+about all sorts of giraffes.
+
+00:17:17.215 --> 00:17:18.906 A:middle
+Right now we can't do anything
+
+00:17:18.906 --> 00:17:20.445 A:middle
+else than just looking at it,
+
+00:17:21.156 --> 00:17:23.126 A:middle
+tapping won't do anything yet so
+
+00:17:23.126 --> 00:17:23.806 A:middle
+let's fix this.
+
+00:17:28.306 --> 00:17:30.406 A:middle
+Now this application is fairly
+
+00:17:30.406 --> 00:17:31.376 A:middle
+simply structured.
+
+00:17:32.546 --> 00:17:33.916 A:middle
+For displaying the grid of
+
+00:17:33.916 --> 00:17:35.166 A:middle
+photos we use a
+
+00:17:35.166 --> 00:17:36.356 A:middle
+CollectionViewController.
+
+00:17:38.886 --> 00:17:41.686 A:middle
+When initializing it we obtain a
+
+00:17:41.686 --> 00:17:43.996 A:middle
+list of URLs of documents that
+
+00:17:43.996 --> 00:17:45.656 A:middle
+are bundled with the application
+
+00:17:45.656 --> 00:17:46.776 A:middle
+like the elephant we've just
+
+00:17:46.776 --> 00:17:46.946 A:middle
+seen.
+
+00:17:51.196 --> 00:17:53.276 A:middle
+We use that list to initialize
+
+00:17:53.276 --> 00:17:54.866 A:middle
+what we call a document data
+
+00:17:54.866 --> 00:17:55.396 A:middle
+source.
+
+00:17:56.666 --> 00:17:58.626 A:middle
+This object serves as the model
+
+00:17:58.626 --> 00:17:59.966 A:middle
+for the collection view in the
+
+00:17:59.966 --> 00:18:01.296 A:middle
+implementation of the
+

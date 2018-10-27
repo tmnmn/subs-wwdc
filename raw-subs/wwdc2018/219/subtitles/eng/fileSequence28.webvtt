@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.826 --> 00:28:00.026 A:middle
+that copy operation.
+
+00:28:00.536 --> 00:28:02.046 A:middle
+Rather than having to hold on to
+
+00:28:02.046 --> 00:28:03.476 A:middle
+a separate copy of your image
+
+00:28:03.886 --> 00:28:06.036 A:middle
+with your solid color applied to
+
+00:28:07.666 --> 00:28:07.746 A:middle
+it.
+
+00:28:08.006 --> 00:28:09.246 A:middle
+Another optimization built into
+
+00:28:09.246 --> 00:28:12.626 A:middle
+UIKit provided view, UILabel is
+
+00:28:12.626 --> 00:28:16.046 A:middle
+able to use 75% less memory when
+
+00:28:16.046 --> 00:28:18.486 A:middle
+displaying monochrome text than
+
+00:28:18.486 --> 00:28:19.756 A:middle
+when displaying color text or
+
+00:28:19.756 --> 00:28:20.336 A:middle
+emojis.
+
+00:28:21.496 --> 00:28:22.786 A:middle
+If you want to know more about
+
+00:28:22.786 --> 00:28:24.136 A:middle
+how this optimization works in
+
+00:28:24.136 --> 00:28:25.936 A:middle
+detail and how to apply it to
+
+00:28:25.936 --> 00:28:27.306 A:middle
+your custom subclasses of
+
+00:28:27.306 --> 00:28:29.736 A:middle
+UIView, check out the iOS Memory
+
+00:28:29.736 --> 00:28:30.786 A:middle
+Deep Dive session.
+
+00:28:31.356 --> 00:28:32.616 A:middle
+Goes into great detail about
+
+00:28:32.616 --> 00:28:34.636 A:middle
+this backing store format called
+
+00:28:35.186 --> 00:28:35.253 A:middle
+A8.
+
+00:28:38.306 --> 00:28:39.646 A:middle
+Sometimes, you want to render
+
+00:28:41.096 --> 00:28:44.256 A:middle
+artwork offscreen stored in an
+
+00:28:44.356 --> 00:28:45.506 A:middle
+image buffer in memory.
+
+00:28:45.736 --> 00:28:47.536 A:middle
+And the class UIKit provides to
+
+00:28:47.536 --> 00:28:48.376 A:middle
+do that is
+
+00:28:48.376 --> 00:28:49.826 A:middle
+UIGraphicsImageRenderer.
+
+00:28:50.796 --> 00:28:52.036 A:middle
+There's another function that's
+
+00:28:52.036 --> 00:28:52.456 A:middle
+older;
+
+00:28:53.156 --> 00:28:55.116 A:middle
+UIGraphicsBeginImageContext.
+
+00:28:55.446 --> 00:28:56.656 A:middle
+But please, don't use that.
+
+00:28:57.076 --> 00:28:58.386 A:middle
+Because only Graphics Image
+
+00:28:58.386 --> 00:29:00.186 A:middle
+Renderer is capable of correctly
+

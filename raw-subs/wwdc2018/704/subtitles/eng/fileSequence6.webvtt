@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:57.446 --> 00:06:00.176 A:middle
+price that renews twice at 1.99
+
+00:06:00.176 --> 00:06:00.536 A:middle
+each.
+
+00:06:02.396 --> 00:06:03.596 A:middle
+The billing period would look
+
+00:06:03.596 --> 00:06:05.716 A:middle
+like this, the user purchases
+
+00:06:05.716 --> 00:06:07.046 A:middle
+the subscription at the
+
+00:06:07.046 --> 00:06:09.446 A:middle
+introductory price of 1.99 and
+
+00:06:09.446 --> 00:06:11.036 A:middle
+receives 3 months of access.
+
+00:06:11.556 --> 00:06:13.166 A:middle
+After that they can renew at
+
+00:06:13.166 --> 00:06:15.106 A:middle
+1.99 for another 3 months of
+
+00:06:15.106 --> 00:06:15.596 A:middle
+access.
+
+00:06:16.076 --> 00:06:18.236 A:middle
+When that's over they'll renew
+
+00:06:18.236 --> 00:06:19.416 A:middle
+at the normal subscription terms
+
+00:06:19.416 --> 00:06:20.756 A:middle
+of 9.99 for 3 months.
+
+00:06:20.756 --> 00:06:23.856 A:middle
+Here's what the data from
+
+00:06:23.856 --> 00:06:25.326 A:middle
+StoreKit would look like in this
+
+00:06:25.326 --> 00:06:25.706 A:middle
+case.
+
+00:06:26.546 --> 00:06:27.536 A:middle
+You can see the
+
+00:06:27.536 --> 00:06:28.826 A:middle
+subscriptionPeriod has a unit of
+
+00:06:28.826 --> 00:06:30.636 A:middle
+month and the number of units is
+
+00:06:30.636 --> 00:06:32.426 A:middle
+3, so it'll renew every 3 months
+
+00:06:32.456 --> 00:06:32.606 A:middle
+number.
+
+00:06:33.376 --> 00:06:34.486 A:middle
+And then the numberOfPeriods is
+
+00:06:34.486 --> 00:06:35.726 A:middle
+2 giving us that total of 6
+
+00:06:35.726 --> 00:06:36.516 A:middle
+months of introductory.
+
+00:06:37.056 --> 00:06:39.426 A:middle
+The payment mode is payAsYouGo.
+
+00:06:39.486 --> 00:06:40.376 A:middle
+And the price for the
+
+00:06:40.376 --> 00:06:41.976 A:middle
+introductory price is 1.99.
+
+00:06:46.046 --> 00:06:47.276 A:middle
+The next payment mode is
+
+00:06:47.406 --> 00:06:47.926 A:middle
+payUpFront.
+
+00:06:47.926 --> 00:06:50.846 A:middle
+With this type of introductory
+
+00:06:50.846 --> 00:06:52.206 A:middle
+price the user pays just one
+
+00:06:52.206 --> 00:06:53.336 A:middle
+time and receives the entire
+
+00:06:53.336 --> 00:06:54.246 A:middle
+introductory duration.
+
+00:06:55.516 --> 00:06:57.436 A:middle
+This is not limited to multiples
+
+00:06:57.436 --> 00:06:58.536 A:middle
+of your subscriptions renewal
+
+00:06:58.536 --> 00:06:58.876 A:middle
+period.
+
+00:06:59.206 --> 00:07:00.326 A:middle
+So in this case, you could have
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.226 --> 00:37:01.206 A:middle
+But if you call batch within
+
+00:37:01.206 --> 00:37:03.706 A:middle
+that block, you can call send or
+
+00:37:03.706 --> 00:37:05.016 A:middle
+actually receive as many times
+
+00:37:05.016 --> 00:37:06.586 A:middle
+as you want, and the connection
+
+00:37:06.586 --> 00:37:08.406 A:middle
+will hold off processing any of
+
+00:37:08.406 --> 00:37:10.936 A:middle
+the data until you finish the
+
+00:37:10.936 --> 00:37:12.756 A:middle
+batch block and will try to send
+
+00:37:12.756 --> 00:37:14.656 A:middle
+all of those datagrams all as
+
+00:37:14.806 --> 00:37:16.876 A:middle
+one single batch down into the
+
+00:37:16.876 --> 00:37:19.026 A:middle
+system, ideally have just one
+
+00:37:19.026 --> 00:37:20.926 A:middle
+context switch down into the
+
+00:37:20.956 --> 00:37:22.026 A:middle
+kernel, and send out the
+
+00:37:22.026 --> 00:37:22.666 A:middle
+interface.
+
+00:37:23.126 --> 00:37:24.856 A:middle
+This allows you to be very, very
+
+00:37:24.856 --> 00:37:25.286 A:middle
+efficient.
+
+00:37:25.766 --> 00:37:28.196 A:middle
+So that's sending.
+
+00:37:28.846 --> 00:37:31.286 A:middle
+Receiving, like sending, is
+
+00:37:31.346 --> 00:37:32.586 A:middle
+asynchronous, and the
+
+00:37:32.586 --> 00:37:34.466 A:middle
+asynchronous nature gives you
+
+00:37:34.596 --> 00:37:35.606 A:middle
+the back pressure that allows
+
+00:37:35.606 --> 00:37:37.106 A:middle
+you to pace your app.
+
+00:37:38.276 --> 00:37:40.416 A:middle
+So in this case, I have a
+
+00:37:40.416 --> 00:37:43.116 A:middle
+TCP-based protocol, and it's
+
+00:37:43.116 --> 00:37:44.686 A:middle
+very common for apps when
+
+00:37:44.686 --> 00:37:46.386 A:middle
+they're reading to essentially
+
+00:37:46.386 --> 00:37:48.216 A:middle
+want to be reading some type of
+
+00:37:48.216 --> 00:37:49.066 A:middle
+record format.
+
+00:37:49.666 --> 00:37:52.286 A:middle
+Let's say that your protocol has
+
+00:37:52.286 --> 00:37:55.186 A:middle
+a header of 10 bytes that tells
+
+00:37:55.186 --> 00:37:56.316 A:middle
+you some information about what
+
+00:37:56.316 --> 00:37:57.606 A:middle
+you're about to receive, maybe
+
+00:37:57.606 --> 00:37:58.726 A:middle
+the length of the body that
+
+00:37:58.726 --> 00:37:59.406 A:middle
+you're about to receive.
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.586 --> 00:48:01.046 A:middle
+and forth directly from your
+
+00:48:01.046 --> 00:48:01.666 A:middle
+application.
+
+00:48:02.286 --> 00:48:04.456 A:middle
+So to show how this works and
+
+00:48:04.456 --> 00:48:05.996 A:middle
+the effect it can have, I want
+
+00:48:05.996 --> 00:48:08.906 A:middle
+to show you a video that was
+
+00:48:08.906 --> 00:48:11.166 A:middle
+taken using the same app that
+
+00:48:11.166 --> 00:48:12.966 A:middle
+Eric showed you earlier to
+
+00:48:12.966 --> 00:48:14.816 A:middle
+demonstrate UDP performance with
+
+00:48:14.816 --> 00:48:15.816 A:middle
+user space networking.
+
+00:48:16.076 --> 00:48:18.876 A:middle
+So in this example, we're going
+
+00:48:18.876 --> 00:48:20.206 A:middle
+to have two videos running
+
+00:48:20.206 --> 00:48:21.126 A:middle
+simultaneously.
+
+00:48:21.676 --> 00:48:25.386 A:middle
+The device on the left is
+
+00:48:25.386 --> 00:48:28.866 A:middle
+receiving a video stream from an
+
+00:48:28.866 --> 00:48:30.066 A:middle
+application that was written
+
+00:48:30.066 --> 00:48:30.976 A:middle
+using sockets.
+
+00:48:32.186 --> 00:48:33.656 A:middle
+And the device on the right is
+
+00:48:33.656 --> 00:48:35.006 A:middle
+going to be receiving exactly
+
+00:48:35.006 --> 00:48:37.696 A:middle
+the same video stream from a
+
+00:48:37.696 --> 00:48:40.576 A:middle
+device that has an app written
+
+00:48:40.576 --> 00:48:42.176 A:middle
+using Network.framework so it
+
+00:48:42.176 --> 00:48:43.626 A:middle
+can take advantage of the user
+
+00:48:43.626 --> 00:48:44.906 A:middle
+space networking stack.
+
+00:48:45.456 --> 00:48:47.716 A:middle
+And in this case, we're
+
+00:48:47.716 --> 00:48:48.596 A:middle
+streaming the video.
+
+00:48:49.026 --> 00:48:50.756 A:middle
+It's just raw frames.
+
+00:48:50.756 --> 00:48:51.436 A:middle
+It's not compressed.
+
+00:48:51.496 --> 00:48:52.526 A:middle
+It's not great quality or
+
+00:48:52.526 --> 00:48:53.606 A:middle
+anything, but there's a lot of
+
+00:48:53.606 --> 00:48:54.536 A:middle
+packets going back and forth.
+
+00:48:55.746 --> 00:48:57.126 A:middle
+And we chose specifically for
+
+00:48:57.126 --> 00:49:00.596 A:middle
+this demonstration to not lower
+

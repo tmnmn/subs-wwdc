@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.646 --> 00:21:02.086 A:middle
+in your stack up to TLS, for
+
+00:21:02.086 --> 00:21:02.486 A:middle
+example.
+
+00:21:03.476 --> 00:21:04.646 A:middle
+At this point, you can read and
+
+00:21:04.646 --> 00:21:07.066 A:middle
+write, and this is also where we
+
+00:21:07.066 --> 00:21:10.036 A:middle
+give you callbacks about the
+
+00:21:10.036 --> 00:21:11.476 A:middle
+network transitions that you're
+
+00:21:11.476 --> 00:21:12.016 A:middle
+going through.
+
+00:21:12.536 --> 00:21:14.086 A:middle
+So if your connection is
+
+00:21:14.086 --> 00:21:15.236 A:middle
+established and then you change
+
+00:21:15.236 --> 00:21:17.196 A:middle
+networks, we'll give you updates
+
+00:21:17.196 --> 00:21:18.426 A:middle
+about that so you can handle the
+
+00:21:18.426 --> 00:21:20.416 A:middle
+mobility gracefully, and we'll
+
+00:21:20.416 --> 00:21:21.716 A:middle
+be talking about this later on
+
+00:21:21.716 --> 00:21:21.976 A:middle
+in the talk.
+
+00:21:24.536 --> 00:21:25.606 A:middle
+If there's an error on the
+
+00:21:25.606 --> 00:21:27.046 A:middle
+connection, either during the
+
+00:21:27.046 --> 00:21:28.716 A:middle
+connection establishment or
+
+00:21:28.716 --> 00:21:29.916 A:middle
+after you've already connected,
+
+00:21:30.076 --> 00:21:31.136 A:middle
+we'll give you the failed state
+
+00:21:31.136 --> 00:21:33.546 A:middle
+with an error, and then once
+
+00:21:33.546 --> 00:21:34.336 A:middle
+you're totally done with the
+
+00:21:34.336 --> 00:21:35.396 A:middle
+connection, let's say you
+
+00:21:35.396 --> 00:21:36.506 A:middle
+already closed it or you
+
+00:21:36.506 --> 00:21:37.696 A:middle
+received a close from the other
+
+00:21:37.696 --> 00:21:39.606 A:middle
+side, and you want to just
+
+00:21:39.606 --> 00:21:40.766 A:middle
+invalidate the connection, you
+
+00:21:40.766 --> 00:21:42.716 A:middle
+call cancel, and we move into
+
+00:21:42.716 --> 00:21:43.536 A:middle
+the cancelled state.
+
+00:21:43.636 --> 00:21:45.376 A:middle
+And this is guaranteed to be the
+
+00:21:45.376 --> 00:21:47.156 A:middle
+very last event that we will
+
+00:21:47.156 --> 00:21:49.506 A:middle
+deliver to your object so you
+
+00:21:49.506 --> 00:21:50.656 A:middle
+can clean up any memory that you
+
+00:21:50.656 --> 00:21:52.506 A:middle
+have associated and move on.
+
+00:21:53.656 --> 00:21:54.456 A:middle
+So that's it.
+
+00:21:54.576 --> 00:21:56.046 A:middle
+That's an overview of the basic
+
+00:21:56.046 --> 00:21:58.176 A:middle
+lifetime of a connection object
+
+00:21:58.176 --> 00:21:59.786 A:middle
+in Network.framework, and to
+
+00:21:59.786 --> 00:22:01.306 A:middle
+show you how you can use this to
+

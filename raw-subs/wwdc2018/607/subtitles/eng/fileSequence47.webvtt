@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.456 --> 00:47:00.866 A:middle
+For instance, an iPhone 8 is
+
+00:47:00.866 --> 00:47:02.336 A:middle
+faster than an iPhone 7 Plus,
+
+00:47:02.336 --> 00:47:03.796 A:middle
+but it has less physical memory.
+
+00:47:04.256 --> 00:47:05.146 A:middle
+This means when you're taking
+
+00:47:05.146 --> 00:47:06.506 A:middle
+into account scalability, you
+
+00:47:06.506 --> 00:47:07.316 A:middle
+need to treat memory
+
+00:47:07.316 --> 00:47:07.936 A:middle
+differently.
+
+00:47:07.936 --> 00:47:09.786 A:middle
+We ended up treating it as an
+
+00:47:09.786 --> 00:47:11.616 A:middle
+orthogonal axis of scalability
+
+00:47:12.226 --> 00:47:14.256 A:middle
+and just had 2 buckets, low
+
+00:47:14.256 --> 00:47:15.226 A:middle
+memory and high memory.
+
+00:47:16.046 --> 00:47:17.506 A:middle
+For low-memory devices, we
+
+00:47:17.506 --> 00:47:18.926 A:middle
+disabled foliage and shadows.
+
+00:47:19.446 --> 00:47:20.956 A:middle
+We also reduced some of the
+
+00:47:20.956 --> 00:47:21.656 A:middle
+memory pool.
+
+00:47:21.656 --> 00:47:23.296 A:middle
+So for instance, we limited GPU
+
+00:47:23.296 --> 00:47:25.396 A:middle
+particles to a total of 16,000
+
+00:47:25.846 --> 00:47:27.416 A:middle
+and reduced the pool use for
+
+00:47:27.416 --> 00:47:29.246 A:middle
+cosmetics and texture memory.
+
+00:47:29.816 --> 00:47:32.926 A:middle
+We still need to do quite a bit
+
+00:47:32.926 --> 00:47:34.266 A:middle
+of memory optimization in order
+
+00:47:34.266 --> 00:47:35.346 A:middle
+to get the game to fit on the
+
+00:47:35.346 --> 00:47:35.846 A:middle
+device.
+
+00:47:36.366 --> 00:47:37.816 A:middle
+The most important was level
+
+00:47:37.816 --> 00:47:38.936 A:middle
+streaming -- basically, just
+
+00:47:38.936 --> 00:47:40.046 A:middle
+making sure that nothing is in
+
+00:47:40.046 --> 00:47:41.176 A:middle
+memory that is not around the
+
+00:47:41.176 --> 00:47:41.566 A:middle
+player.
+
+00:47:42.356 --> 00:47:44.606 A:middle
+We also used ASTC texture
+
+00:47:44.606 --> 00:47:46.116 A:middle
+compression and tend to prefer
+
+00:47:46.416 --> 00:47:48.776 A:middle
+compressing for size rather than
+
+00:47:48.836 --> 00:47:50.476 A:middle
+quality in most cases.
+
+00:47:50.846 --> 00:47:52.236 A:middle
+And we also gave our artists a
+
+00:47:52.236 --> 00:47:54.106 A:middle
+lot of tools for being able to
+
+00:47:54.506 --> 00:47:57.426 A:middle
+cook out different LODs that
+
+00:47:57.426 --> 00:47:59.946 A:middle
+aren't needed or reduce audio
+
+00:47:59.946 --> 00:48:01.766 A:middle
+variations on a per-platform
+

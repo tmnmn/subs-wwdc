@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.625 --> 00:21:00.127 align:middle line:-1
+这种模式会变得更糟
+
+00:21:00.694 --> 00:21:05.566 align:middle line:-2
+这里有一个类似的函数
+它也接受out参数错误
+
+00:21:06.166 --> 00:21:09.837 align:middle line:-2
+然后调用
+一个enumerateObjectsUsingBlock
+
+00:21:09.937 --> 00:21:12.706 align:middle line:-2
+这是一个流行的
+foundation API
+
+00:21:12.773 --> 00:21:15.709 align:middle line:-1
+它在集合的每个元素上调用一个块
+
+00:21:16.476 --> 00:21:18.979 align:middle line:-1
+但是enumerateObjectsUsingBlock
+
+00:21:19.479 --> 00:21:23.550 align:middle line:-2
+实际上把x称为返回的
+自动释放返回池中的一个给定块
+
+00:21:24.051 --> 00:21:25.919 align:middle line:-1
+因此这里也出现了一个类似的问题
+
+00:21:26.286 --> 00:21:30.123 align:middle line:-1
+当我们在块中创建一个错误值
+
+00:21:30.190 --> 00:21:31.925 align:middle line:-1
+并将其写入out参数时
+
+00:21:32.559 --> 00:21:34.194 align:middle line:-2
+当控件到达
+enumerateObjectsUsingBlock时
+
+00:21:34.261 --> 00:21:38.131 align:middle line:-1
+它实际上会被释放
+
+00:21:39.533 --> 00:21:42.636 align:middle line:-1
+然后当调用者试图阅读它时
+
+00:21:42.803 --> 00:21:45.205 align:middle line:-1
+它们也可能会释放后使用中崩溃
+
+00:21:47.975 --> 00:21:51.044 align:middle line:-2
+在此之前
+我们已经介绍了编译器警告
+
+00:21:51.378 --> 00:21:55.048 align:middle line:-1
+它在块中捕获隐式自动发出的参数时
+
+00:21:55.115 --> 00:21:56.517 align:middle line:-1
+发出警告
+
+00:21:56.984 --> 00:21:58.118 align:middle line:-1
+编译器警告
+
+00:21:58.185 --> 00:22:01.355 align:middle line:-1
+建议显式地使这些参数自动发送
+

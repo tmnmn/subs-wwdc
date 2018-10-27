@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.086 --> 00:43:00.086 A:middle
+at a couple of privacy
+
+00:43:00.086 --> 00:43:01.776 A:middle
+considerations and how you can
+
+00:43:01.776 --> 00:43:03.236 A:middle
+make sure your user are never
+
+00:43:03.236 --> 00:43:04.816 A:middle
+upset by what is suggested to
+
+00:43:04.816 --> 00:43:04.966 A:middle
+them.
+
+00:43:08.046 --> 00:43:09.426 A:middle
+Your users expect that when they
+
+00:43:09.426 --> 00:43:10.626 A:middle
+delete something from within
+
+00:43:10.626 --> 00:43:12.046 A:middle
+your app that it's deleted for
+
+00:43:12.046 --> 00:43:12.286 A:middle
+good.
+
+00:43:12.946 --> 00:43:15.706 A:middle
+It's important to honor this so
+
+00:43:15.706 --> 00:43:17.066 A:middle
+you maintain your users' trust
+
+00:43:17.146 --> 00:43:18.626 A:middle
+and your so users aren't
+
+00:43:18.626 --> 00:43:20.176 A:middle
+presented with suggestions for
+
+00:43:20.176 --> 00:43:21.296 A:middle
+things that are not relevant to
+
+00:43:21.296 --> 00:43:21.946 A:middle
+them anymore.
+
+00:43:22.986 --> 00:43:25.076 A:middle
+So, if you donate shortcuts that
+
+00:43:25.076 --> 00:43:26.606 A:middle
+contain information that the
+
+00:43:26.606 --> 00:43:28.106 A:middle
+user can delete, you should make
+
+00:43:28.106 --> 00:43:29.596 A:middle
+sure to delete those donations
+
+00:43:29.716 --> 00:43:31.506 A:middle
+at the appropriate time.
+
+00:43:32.176 --> 00:43:33.246 A:middle
+Let's take a look at how to
+
+00:43:33.246 --> 00:43:35.226 A:middle
+delete donations, starting with
+
+00:43:35.226 --> 00:43:36.016 A:middle
+NSUserActivity.
+
+00:43:39.376 --> 00:43:41.506 A:middle
+There are two ways to delete a
+
+00:43:41.506 --> 00:43:42.696 A:middle
+donated user activity.
+
+00:43:43.766 --> 00:43:45.276 A:middle
+If you use Spotlight indexing
+
+00:43:45.396 --> 00:43:46.286 A:middle
+and you set the
+
+00:43:46.286 --> 00:43:48.206 A:middle
+relatedUniqueIdentifier, then
+
+00:43:48.206 --> 00:43:49.256 A:middle
+deleting the content from
+
+00:43:49.256 --> 00:43:50.616 A:middle
+Spotlight will automatically
+
+00:43:50.616 --> 00:43:51.786 A:middle
+delete the donated user
+
+00:43:51.786 --> 00:43:52.346 A:middle
+activity.
+
+00:43:53.966 --> 00:43:54.436 A:middle
+Just set the
+
+00:43:54.436 --> 00:43:56.056 A:middle
+relatedUniqueIdentifier on the
+
+00:43:56.056 --> 00:43:57.706 A:middle
+contentAttributeSet to the
+
+00:43:57.706 --> 00:43:59.056 A:middle
+identifier of the searchable
+
+00:43:59.056 --> 00:44:00.476 A:middle
+item that it matches with.
+

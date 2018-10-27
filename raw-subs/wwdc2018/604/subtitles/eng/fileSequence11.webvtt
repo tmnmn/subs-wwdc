@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.836 --> 00:11:01.076 A:middle
+delineation between commands
+
+00:11:01.126 --> 00:11:02.916 A:middle
+directed to different sets of
+
+00:11:02.916 --> 00:11:03.506 A:middle
+render targets.
+
+00:11:04.186 --> 00:11:06.196 A:middle
+Let's talk a little bit about
+
+00:11:06.506 --> 00:11:07.896 A:middle
+the object you'll use for
+
+00:11:07.896 --> 00:11:08.256 A:middle
+rendering.
+
+00:11:09.446 --> 00:11:10.476 A:middle
+Metal has a number of similar
+
+00:11:10.476 --> 00:11:11.276 A:middle
+objects to OpenGL.
+
+00:11:11.276 --> 00:11:14.346 A:middle
+There are textures, buffers,
+
+00:11:15.136 --> 00:11:17.846 A:middle
+samplers and pipeline state
+
+00:11:17.846 --> 00:11:19.666 A:middle
+objects which resemble OpenGL's
+
+00:11:19.696 --> 00:11:22.086 A:middle
+program objects, and also depth
+
+00:11:22.206 --> 00:11:23.766 A:middle
+stencil state objects which
+
+00:11:23.766 --> 00:11:24.966 A:middle
+don't really exists in OpenGL
+
+00:11:25.176 --> 00:11:26.706 A:middle
+but are just the containers for
+
+00:11:26.706 --> 00:11:28.156 A:middle
+the same depth and stencil state
+
+00:11:28.396 --> 00:11:29.346 A:middle
+that OpenGL's got.
+
+00:11:31.496 --> 00:11:32.996 A:middle
+One significant difference
+
+00:11:33.076 --> 00:11:35.556 A:middle
+between OpenGL and Metal objects
+
+00:11:35.906 --> 00:11:37.616 A:middle
+are how they are created and
+
+00:11:37.616 --> 00:11:37.866 A:middle
+managed.
+
+00:11:39.176 --> 00:11:40.336 A:middle
+The objects are all created from
+
+00:11:40.336 --> 00:11:41.756 A:middle
+a device object so they're
+
+00:11:41.756 --> 00:11:43.426 A:middle
+associated with a single GPU.
+
+00:11:44.716 --> 00:11:46.156 A:middle
+You set most of an object state
+
+00:11:46.276 --> 00:11:48.316 A:middle
+when you create it by specifying
+
+00:11:48.646 --> 00:11:50.186 A:middle
+properties in a descriptor
+
+00:11:50.186 --> 00:11:50.656 A:middle
+object.
+
+00:11:51.936 --> 00:11:53.656 A:middle
+All states set when the object
+
+00:11:53.656 --> 00:11:55.166 A:middle
+is created is fixed and
+
+00:11:55.166 --> 00:11:55.596 A:middle
+immutable.
+
+00:11:56.946 --> 00:11:58.306 A:middle
+Although the state of textures
+
+00:11:58.306 --> 00:11:59.856 A:middle
+and buffers are fixed upon
+
+00:11:59.856 --> 00:12:02.226 A:middle
+creation, data contained by
+

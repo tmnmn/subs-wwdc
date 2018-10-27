@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.256 --> 00:07:00.286 A:middle
+more of the trace, we can see
+
+00:07:00.286 --> 00:07:01.066 A:middle
+what was going on.
+
+00:07:01.866 --> 00:07:03.326 A:middle
+The cell prefetching API was
+
+00:07:03.436 --> 00:07:05.536 A:middle
+being called at the same time
+
+00:07:05.536 --> 00:07:06.826 A:middle
+that we were requesting the
+
+00:07:06.826 --> 00:07:07.496 A:middle
+current cell.
+
+00:07:08.056 --> 00:07:09.326 A:middle
+Now it wasn't being called for
+
+00:07:09.326 --> 00:07:10.626 A:middle
+the data for the current cell.
+
+00:07:10.626 --> 00:07:11.706 A:middle
+It was being called for data
+
+00:07:11.706 --> 00:07:12.976 A:middle
+that we might need in a future
+
+00:07:12.976 --> 00:07:14.706 A:middle
+cell, but it was getting run at
+
+00:07:14.736 --> 00:07:15.606 A:middle
+the same time.
+
+00:07:15.976 --> 00:07:17.596 A:middle
+And so there was now contention
+
+00:07:17.596 --> 00:07:19.616 A:middle
+for the CPU as we tried to both
+
+00:07:19.616 --> 00:07:21.766 A:middle
+load the current frame and also
+
+00:07:21.766 --> 00:07:23.146 A:middle
+load data for a future frame
+
+00:07:23.146 --> 00:07:24.276 A:middle
+that we don't actually need yet.
+
+00:07:25.736 --> 00:07:27.006 A:middle
+So because of that contention,
+
+00:07:27.006 --> 00:07:28.846 A:middle
+it actually caused both tasks to
+
+00:07:28.846 --> 00:07:29.996 A:middle
+take a little bit longer.
+
+00:07:30.666 --> 00:07:33.126 A:middle
+Now in iOS 12, we're much more
+
+00:07:33.126 --> 00:07:35.226 A:middle
+intelligent about scheduling
+
+00:07:35.956 --> 00:07:37.166 A:middle
+these background prefetch
+
+00:07:37.166 --> 00:07:39.046 A:middle
+operations so that rather than
+
+00:07:39.096 --> 00:07:40.226 A:middle
+happening concurrently and
+
+00:07:40.286 --> 00:07:42.056 A:middle
+causing some CPU contention,
+
+00:07:42.386 --> 00:07:43.776 A:middle
+they'll now happen serially,
+
+00:07:44.136 --> 00:07:45.176 A:middle
+shortening the time that you
+
+00:07:45.176 --> 00:07:47.626 A:middle
+need to take to load the current
+
+00:07:47.626 --> 00:07:49.486 A:middle
+cell and helping avoid dropped
+
+00:07:49.486 --> 00:07:50.886 A:middle
+frames in many cases.
+
+00:07:52.516 --> 00:07:56.456 A:middle
+[ Applause ]
+
+00:07:56.956 --> 00:07:58.016 A:middle
+So once we had that fixed, we
+
+00:07:58.016 --> 00:08:00.086 A:middle
+kept profiling our apps and we
+

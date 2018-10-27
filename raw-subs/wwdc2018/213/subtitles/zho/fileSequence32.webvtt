@@ -1,0 +1,85 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.218 --> 00:32:00.621 align:middle line:-2
+使用CPNavigationSession
+和CPManeuver
+
+00:32:00.954 --> 00:32:02.422 align:middle line:-1
+你可以设置即将发生的移动方向
+
+00:32:02.789 --> 00:32:05.492 align:middle line:-1
+并且系统会自动显示一个主方向
+
+00:32:05.893 --> 00:32:09.196 align:middle line:-2
+如果你提供了第二个移动方向
+它会把第二个移动方向
+
+00:32:09.263 --> 00:32:10.264 align:middle line:-1
+显示在路线指引卡上
+
+00:32:11.465 --> 00:32:13.901 align:middle line:-2
+然后你就可以
+使用移动方向的更新预估
+
+00:32:14.134 --> 00:32:17.437 align:middle line:-2
+来持续更新
+在路线指引卡中所显示的内容
+
+00:32:17.504 --> 00:32:20.440 align:middle line:-2
+并让你的用户了解
+当他们接近所指示的移动方向时
+
+00:32:21.308 --> 00:32:24.178 align:middle line:-1
+你的app很可能会重放音频提示
+
+00:32:24.244 --> 00:32:25.412 align:middle line:-1
+从而让用户了解信息
+
+00:32:25.979 --> 00:32:28.282 align:middle line:-1
+为此你需要确保你的音频会话
+
+00:32:28.348 --> 00:32:30.284 align:middle line:-2
+已针对CarPlay车载系统
+做了适当的配置
+
+00:32:31.118 --> 00:32:34.922 align:middle line:-2
+我们必须要记住 当我们在车里时
+你的用户可能正在收听
+
+00:32:34.988 --> 00:32:37.824 align:middle line:-2
+来自iOS系统的音频源
+或者他们可能正在收听
+
+00:32:37.891 --> 00:32:40.194 align:middle line:-2
+来自汽车系统的音频源
+比如FM收音机
+
+00:32:40.994 --> 00:32:42.729 align:middle line:-2
+要用
+AVAudioSessionModeVoicePrompt
+
+00:32:42.796 --> 00:32:44.831 align:middle line:-1
+配置你的音频会话
+
+00:32:45.232 --> 00:32:47.167 align:middle line:-1
+因为这会让CarPlay车载系统
+
+00:32:47.768 --> 00:32:50.103 align:middle line:-1
+了解何时可以适当地躲避音频源
+
+00:32:50.170 --> 00:32:51.605 align:middle line:-1
+无论它来自哪里
+
+00:32:51.672 --> 00:32:56.043 align:middle line:-2
+你还可以用类别选项配置
+你的会话 duckOthers
+
+00:32:56.109 --> 00:32:58.111 align:middle line:-2
+和interruptSpokenAudio
+AndMixWithOthers
+
+00:32:58.178 --> 00:33:02.149 align:middle line:-2
+这将帮助确保你的音频
+和其它iOS音频源能同时播放
+

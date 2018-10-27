@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.706 --> 00:40:00.596 A:middle
+What does subsequence do?
+
+00:40:01.266 --> 00:40:02.686 A:middle
+All we know about subsequence
+
+00:40:02.686 --> 00:40:04.296 A:middle
+right now is that it's the
+
+00:40:04.296 --> 00:40:05.456 A:middle
+result type of the slicing
+
+00:40:05.456 --> 00:40:06.656 A:middle
+subscript operation.
+
+00:40:07.146 --> 00:40:08.666 A:middle
+But we need more to actually use
+
+00:40:08.666 --> 00:40:08.966 A:middle
+it.
+
+00:40:09.286 --> 00:40:10.816 A:middle
+So to answer this question, we
+
+00:40:10.816 --> 00:40:11.896 A:middle
+have to go back to the
+
+00:40:11.896 --> 00:40:13.856 A:middle
+algorithms that we want to write
+
+00:40:13.856 --> 00:40:15.196 A:middle
+in terms of subsequence.
+
+00:40:15.776 --> 00:40:17.666 A:middle
+Our algorithm is recursive.
+
+00:40:18.186 --> 00:40:20.016 A:middle
+It forms a slice which is now a
+
+00:40:20.016 --> 00:40:22.186 A:middle
+value of the subsequence type.
+
+00:40:22.186 --> 00:40:24.796 A:middle
+And then recursively calls sort
+
+00:40:24.796 --> 00:40:26.856 A:middle
+insertion point of on that
+
+00:40:26.856 --> 00:40:27.386 A:middle
+slice.
+
+00:40:27.926 --> 00:40:30.236 A:middle
+Now this only makes sense if the
+
+00:40:30.236 --> 00:40:32.176 A:middle
+subsequence type you get back is
+
+00:40:32.176 --> 00:40:33.696 A:middle
+itself a collection.
+
+00:40:34.436 --> 00:40:35.716 A:middle
+Now when it performs that call,
+
+00:40:35.916 --> 00:40:37.356 A:middle
+we're going to pass a value of
+
+00:40:37.356 --> 00:40:39.076 A:middle
+the collection's element type.
+
+00:40:39.666 --> 00:40:41.226 A:middle
+But the recursive call itself is
+
+00:40:41.226 --> 00:40:43.216 A:middle
+going to expect a value of this
+
+00:40:43.216 --> 00:40:45.126 A:middle
+subsequence's element type.
+
+00:40:45.816 --> 00:40:47.546 A:middle
+The only way this can possibly
+
+00:40:47.546 --> 00:40:49.716 A:middle
+make sense is if those element
+
+00:40:49.716 --> 00:40:51.396 A:middle
+types are identical.
+
+00:40:51.396 --> 00:40:54.416 A:middle
+Now the same issue comes up when
+
+00:40:54.416 --> 00:40:56.196 A:middle
+returning an index from the
+
+00:40:56.196 --> 00:40:57.066 A:middle
+recursive call.
+
+00:40:57.666 --> 00:40:58.766 A:middle
+Which is going to be computed in
+
+00:40:58.766 --> 00:41:00.216 A:middle
+terms of the subsequence.
+

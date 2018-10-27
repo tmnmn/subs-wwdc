@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:57:00.956 --> 00:57:02.356 A:middle
+In general, when working with AR
+
+00:57:02.356 --> 00:57:04.256 A:middle
+content, the use of a lot of
+
+00:57:04.256 --> 00:57:05.216 A:middle
+transparent surfaces can
+
+00:57:05.216 --> 00:57:07.376 A:middle
+potentially have a huge impact
+
+00:57:07.376 --> 00:57:09.106 A:middle
+on performance, especially if
+
+00:57:09.106 --> 00:57:10.206 A:middle
+you are having transparent
+
+00:57:10.206 --> 00:57:11.036 A:middle
+surfaces that are, kind of,
+
+00:57:11.036 --> 00:57:12.526 A:middle
+stacked in front of each other
+
+00:57:12.606 --> 00:57:13.286 A:middle
+when you're viewing them.
+
+00:57:13.716 --> 00:57:14.726 A:middle
+This is known as overdraw, and
+
+00:57:14.726 --> 00:57:15.196 A:middle
+it's something that you
+
+00:57:15.196 --> 00:57:16.526 A:middle
+definitely want to avoid when
+
+00:57:16.526 --> 00:57:17.306 A:middle
+you're working in AR.
+
+00:57:18.716 --> 00:57:19.256 A:middle
+Whew. Alright.
+
+00:57:19.476 --> 00:57:20.826 A:middle
+I hope everybody's still with
+
+00:57:20.826 --> 00:57:21.996 A:middle
+me, as that was quite a lot to
+
+00:57:21.996 --> 00:57:22.486 A:middle
+go through.
+
+00:57:23.036 --> 00:57:24.646 A:middle
+So far, we've focused mostly on
+
+00:57:25.126 --> 00:57:27.156 A:middle
+how the AR content will react to
+
+00:57:27.266 --> 00:57:28.786 A:middle
+the simulated spotlights found
+
+00:57:28.786 --> 00:57:29.826 A:middle
+in our 3D engines.
+
+00:57:30.156 --> 00:57:31.276 A:middle
+But now, it's time to focus on
+
+00:57:31.276 --> 00:57:32.576 A:middle
+some ways to make our content
+
+00:57:32.576 --> 00:57:33.966 A:middle
+seem like it's actually part of
+
+00:57:33.966 --> 00:57:34.506 A:middle
+the real world.
+
+00:57:35.046 --> 00:57:37.696 A:middle
+A fantastic option to use to
+
+00:57:37.696 --> 00:57:38.846 A:middle
+compensate for varied lighting
+
+00:57:38.846 --> 00:57:40.226 A:middle
+conditions is to leverage one of
+
+00:57:40.306 --> 00:57:44.636 A:middle
+ARKit's well known features, and
+
+00:57:44.636 --> 00:57:45.326 A:middle
+light estimation.
+
+00:57:45.996 --> 00:57:47.116 A:middle
+Let's begin by activating this
+
+00:57:47.116 --> 00:57:48.126 A:middle
+functionality and see how it
+
+00:57:48.126 --> 00:57:48.736 A:middle
+affects our kettle.
+
+00:57:49.156 --> 00:57:50.286 A:middle
+Notice that how when the ambient
+
+00:57:50.286 --> 00:57:51.406 A:middle
+light changes in intensity in
+
+00:57:51.406 --> 00:57:52.906 A:middle
+the real world, a similar
+
+00:57:52.906 --> 00:57:53.766 A:middle
+adjustment is made to the
+
+00:57:53.766 --> 00:57:55.316 A:middle
+ambient light in our AR scene.
+
+00:57:56.436 --> 00:57:57.676 A:middle
+The way this works is that ARKit
+
+00:57:57.676 --> 00:57:59.256 A:middle
+analyzes each frame of the
+
+00:57:59.256 --> 00:58:01.286 A:middle
+video, and uses them to estimate
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.076 --> 00:35:00.096 A:middle
+All right, so that was
+
+00:35:00.096 --> 00:35:01.026 A:middle
+constraint churn in the
+
+00:35:01.026 --> 00:35:01.546 A:middle
+instrument.
+
+00:35:01.626 --> 00:35:02.596 A:middle
+We also have that view at the
+
+00:35:02.596 --> 00:35:04.326 A:middle
+bottom that said UILabel sizing.
+
+00:35:05.236 --> 00:35:07.186 A:middle
+UILabel sizing is tracking the
+
+00:35:07.186 --> 00:35:08.246 A:middle
+amount of time it takes for the
+
+00:35:08.246 --> 00:35:09.926 A:middle
+label to calculate its size.
+
+00:35:10.226 --> 00:35:11.566 A:middle
+So let's talk about intrinsic
+
+00:35:11.566 --> 00:35:12.236 A:middle
+content size.
+
+00:35:12.566 --> 00:35:14.796 A:middle
+I'm going to take a walk over
+
+00:35:14.796 --> 00:35:15.036 A:middle
+here.
+
+00:35:15.886 --> 00:35:17.546 A:middle
+OK, not all views actually need
+
+00:35:17.896 --> 00:35:19.096 A:middle
+intrinsic content size.
+
+00:35:20.716 --> 00:35:21.426 A:middle
+Some views do.
+
+00:35:21.836 --> 00:35:24.076 A:middle
+Views with non-view content like
+
+00:35:24.076 --> 00:35:25.276 A:middle
+to return a size for their
+
+00:35:25.276 --> 00:35:26.936 A:middle
+intrinsic content size based on
+
+00:35:26.936 --> 00:35:28.086 A:middle
+that non-view content.
+
+00:35:28.486 --> 00:35:30.126 A:middle
+Two examples of this are
+
+00:35:30.126 --> 00:35:32.156 A:middle
+UIImageView, which uses the size
+
+00:35:32.156 --> 00:35:33.826 A:middle
+of its image to calculate its
+
+00:35:33.826 --> 00:35:36.036 A:middle
+intrinsic content size and
+
+00:35:36.036 --> 00:35:38.116 A:middle
+UILabel, which measures its text
+
+00:35:38.576 --> 00:35:39.976 A:middle
+and uses that to return its
+
+00:35:39.976 --> 00:35:41.056 A:middle
+intrinsic content size.
+
+00:35:41.636 --> 00:35:43.666 A:middle
+There's nothing really magical
+
+00:35:43.666 --> 00:35:45.076 A:middle
+about intrinsic content size,
+
+00:35:45.486 --> 00:35:47.286 A:middle
+it's used to create constraints
+
+00:35:47.286 --> 00:35:47.856 A:middle
+by UIView.
+
+00:35:48.486 --> 00:35:49.886 A:middle
+It makes sizing constraints for
+
+00:35:49.886 --> 00:35:50.886 A:middle
+you and that's it.
+
+00:35:51.596 --> 00:35:52.476 A:middle
+You can define all of your
+
+00:35:52.476 --> 00:35:54.106 A:middle
+sizing in constraints yourself
+
+00:35:54.576 --> 00:35:55.576 A:middle
+and skip this whole thing.
+
+00:35:56.436 --> 00:35:57.496 A:middle
+There are a few circumstances
+
+00:35:57.496 --> 00:35:58.646 A:middle
+where it needs to be overridden,
+
+00:35:58.646 --> 00:36:00.026 A:middle
+that's what it's there, as we
+

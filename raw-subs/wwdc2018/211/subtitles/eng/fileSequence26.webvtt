@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.286 --> 00:26:00.116 A:middle
+Let's start using it.
+
+00:26:00.676 --> 00:26:03.016 A:middle
+I'll start by adding two helper
+
+00:26:03.016 --> 00:26:05.426 A:middle
+methods to our order object to
+
+00:26:05.556 --> 00:26:06.596 A:middle
+make it easier to convert
+
+00:26:06.596 --> 00:26:08.016 A:middle
+between it and the intent.
+
+00:26:08.916 --> 00:26:11.566 A:middle
+I'll go to the order class and,
+
+00:26:11.606 --> 00:26:15.016 A:middle
+at the bottom, I'll add an order
+
+00:26:15.016 --> 00:26:15.536 A:middle
+extension.
+
+00:26:16.026 --> 00:26:20.146 A:middle
+It contains a computer variable
+
+00:26:20.146 --> 00:26:22.196 A:middle
+that returns an intent.
+
+00:26:22.196 --> 00:26:23.546 A:middle
+In it, I create the intent.
+
+00:26:23.886 --> 00:26:26.266 A:middle
+I set the soup quantity and
+
+00:26:26.266 --> 00:26:27.556 A:middle
+options, and I return the
+
+00:26:27.556 --> 00:26:27.926 A:middle
+intent.
+
+00:26:28.966 --> 00:26:30.316 A:middle
+Extension also defines a new
+
+00:26:30.316 --> 00:26:31.466 A:middle
+initializer that dates an
+
+00:26:31.466 --> 00:26:31.846 A:middle
+intent.
+
+00:26:32.556 --> 00:26:34.316 A:middle
+In it, I extract the soup,
+
+00:26:34.636 --> 00:26:36.996 A:middle
+quantity, and options, and then
+
+00:26:37.046 --> 00:26:38.786 A:middle
+I initialize the order with
+
+00:26:38.956 --> 00:26:40.096 A:middle
+those values.
+
+00:26:41.056 --> 00:26:42.216 A:middle
+Great, this will be very
+
+00:26:42.216 --> 00:26:42.556 A:middle
+helpful.
+
+00:26:43.926 --> 00:26:45.256 A:middle
+Next, we need to make sure that
+
+00:26:45.256 --> 00:26:46.996 A:middle
+we donate the intent every time
+
+00:26:46.996 --> 00:26:48.156 A:middle
+the user places an order.
+
+00:26:48.726 --> 00:26:50.296 A:middle
+So, I'll go to the soup order
+
+00:26:50.296 --> 00:26:53.026 A:middle
+data manager, and, in the
+
+00:26:53.026 --> 00:26:54.656 A:middle
+placeOrder method, I'll add our
+
+00:26:54.656 --> 00:26:55.436 A:middle
+donation logic.
+
+00:26:57.486 --> 00:26:59.716 A:middle
+I create an INInteraction that
+
+00:26:59.716 --> 00:27:01.266 A:middle
+contains the intent of the
+

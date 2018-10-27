@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.376 --> 00:26:01.956 A:middle
+Now, once all GPUs have finished
+
+00:26:02.296 --> 00:26:03.686 A:middle
+we'll pick whichever one is
+
+00:26:03.686 --> 00:26:06.006 A:middle
+connected to the display and
+
+00:26:06.006 --> 00:26:07.116 A:middle
+we'll copy across all of our
+
+00:26:07.116 --> 00:26:08.196 A:middle
+completed regions for
+
+00:26:08.196 --> 00:26:08.746 A:middle
+composition.
+
+00:26:09.346 --> 00:26:12.136 A:middle
+Now, composition could just be
+
+00:26:12.136 --> 00:26:13.656 A:middle
+stitching the regions together
+
+00:26:13.656 --> 00:26:15.116 A:middle
+into one frame buffer.
+
+00:26:16.046 --> 00:26:17.226 A:middle
+Or you might want to combine
+
+00:26:17.226 --> 00:26:18.416 A:middle
+them with the results of a
+
+00:26:18.416 --> 00:26:20.076 A:middle
+previous render to refine the
+
+00:26:20.076 --> 00:26:21.366 A:middle
+image and remove noise.
+
+00:26:21.926 --> 00:26:24.816 A:middle
+Now, before we can render
+
+00:26:24.816 --> 00:26:26.346 A:middle
+anything, we need to make sure
+
+00:26:26.346 --> 00:26:27.846 A:middle
+that each GPU has a complete
+
+00:26:27.846 --> 00:26:28.696 A:middle
+copy of the scene.
+
+00:26:30.166 --> 00:26:31.936 A:middle
+Assets, such as your vertex
+
+00:26:31.936 --> 00:26:33.476 A:middle
+buffers and your textures need
+
+00:26:33.476 --> 00:26:35.316 A:middle
+to be replicated on all GPUs.
+
+00:26:36.576 --> 00:26:37.516 A:middle
+And so, do the triangle
+
+00:26:37.516 --> 00:26:38.656 A:middle
+acceleration structures that
+
+00:26:38.656 --> 00:26:41.086 A:middle
+Sean introduced earlier.
+
+00:26:42.126 --> 00:26:44.086 A:middle
+Now, for the acceleration
+
+00:26:44.086 --> 00:26:45.906 A:middle
+structures, we really wanted to
+
+00:26:45.906 --> 00:26:47.106 A:middle
+avoid you having to build them
+
+00:26:47.106 --> 00:26:48.626 A:middle
+from scratch for each GPU.
+
+00:26:49.546 --> 00:26:51.876 A:middle
+So, we added an API that enables
+
+00:26:51.876 --> 00:26:52.906 A:middle
+you to take an existing
+
+00:26:52.906 --> 00:26:54.866 A:middle
+acceleration structure and make
+
+00:26:54.866 --> 00:26:56.226 A:middle
+a copy for each GPU that you
+
+00:26:56.226 --> 00:26:56.776 A:middle
+want to use.
+
+00:26:58.156 --> 00:27:00.386 A:middle
+Now, this copy is nonrecursive.
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+01:16:58.966 --> 01:17:00.636 A:middle
+bounce off of objects through
+
+01:17:00.636 --> 01:17:02.676 A:middle
+the scene, toward the screen,
+
+01:17:02.676 --> 01:17:03.686 A:middle
+and into your eye.
+
+01:17:04.326 --> 01:17:05.756 A:middle
+And to achieve higher and higher
+
+01:17:05.756 --> 01:17:07.126 A:middle
+resolutions, you would need to
+
+01:17:07.126 --> 01:17:09.796 A:middle
+add more, and more, and more
+
+01:17:10.866 --> 01:17:14.206 A:middle
+rays until you could reach the
+
+01:17:14.206 --> 01:17:15.486 A:middle
+desired resolution.
+
+01:17:15.486 --> 01:17:17.626 A:middle
+And this simple 1k-by-1k image
+
+01:17:17.626 --> 01:17:19.206 A:middle
+would take nearly 6 million rays
+
+01:17:19.206 --> 01:17:19.776 A:middle
+to generate.
+
+01:17:20.756 --> 01:17:22.066 A:middle
+Now each of those rays also must
+
+01:17:22.066 --> 01:17:23.256 A:middle
+be processed with at least two
+
+01:17:23.256 --> 01:17:24.856 A:middle
+sets of expensive mathematical
+
+01:17:24.856 --> 01:17:25.726 A:middle
+calculations.
+
+01:17:26.136 --> 01:17:27.496 A:middle
+First, you had to determine if a
+
+01:17:27.496 --> 01:17:28.606 A:middle
+given ray intersects a
+
+01:17:28.606 --> 01:17:29.746 A:middle
+particular triangle in your
+
+01:17:29.746 --> 01:17:30.226 A:middle
+scene.
+
+01:17:30.576 --> 01:17:31.966 A:middle
+And second, you must apply a
+
+01:17:31.966 --> 01:17:33.266 A:middle
+material-specific shader
+
+01:17:33.266 --> 01:17:35.106 A:middle
+necessary to generate the pixel.
+
+01:17:35.986 --> 01:17:37.166 A:middle
+Now originally, both of these
+
+01:17:37.166 --> 01:17:38.716 A:middle
+operations would have been
+
+01:17:38.716 --> 01:17:39.696 A:middle
+performed by the CPU.
+
+01:17:39.936 --> 01:17:41.656 A:middle
+But while the GPU can easily
+
+01:17:41.656 --> 01:17:43.336 A:middle
+handle the pixel shading, the
+
+01:17:43.336 --> 01:17:45.036 A:middle
+ray-triangle intersection itself
+
+01:17:45.036 --> 01:17:46.506 A:middle
+could remain an expensive CPU
+
+01:17:46.506 --> 01:17:47.716 A:middle
+bottleneck, and it would be
+
+01:17:47.716 --> 01:17:49.026 A:middle
+incredibly difficult to move
+
+01:17:49.026 --> 01:17:50.386 A:middle
+this to the GPU efficiently.
+
+01:17:51.546 --> 01:17:52.876 A:middle
+But the new Metal Ray-Triangle
+
+01:17:52.876 --> 01:17:54.526 A:middle
+Intersector solves this problem
+
+01:17:54.526 --> 01:17:55.016 A:middle
+for you.
+
+01:17:55.276 --> 01:17:56.726 A:middle
+And with this new API, you get a
+
+01:17:56.726 --> 01:17:58.306 A:middle
+dramatic increase in performance
+
+01:17:58.306 --> 01:18:00.106 A:middle
+of up to 10x in a very
+

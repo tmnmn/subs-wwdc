@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.365 --> 00:30:01.668 align:middle line:-2
+现在该上下文可以开始
+记录进度数据了
+
+00:30:02.703 --> 00:30:05.105 align:middle line:-2
+我们可以看到
+我的讲义成功发布
+
+00:30:05.172 --> 00:30:06.340 align:middle line:-1
+我可以点击它
+
+00:30:06.974 --> 00:30:08.809 align:middle line:-1
+在这里我们看到了我添加的上下文
+
+00:30:08.876 --> 00:30:13.313 align:middle line:-2
+并且我的漂亮图标
+就在上下文名称旁边
+
+00:30:14.014 --> 00:30:16.917 align:middle line:-1
+如果我点击图标 它应该直接将我
+
+00:30:16.984 --> 00:30:18.719 align:middle line:-1
+导航到加法数学测验
+
+00:30:19.019 --> 00:30:20.320 align:middle line:-1
+我们点击它
+
+00:30:21.455 --> 00:30:26.293 align:middle line:-2
+Schoolwork启动了app
+但这不是加法数学测验
+
+00:30:27.094 --> 00:30:29.830 align:middle line:-2
+哦 对了 这是对的
+我们忘了添加深度链接
+
+00:30:29.897 --> 00:30:31.932 align:middle line:-1
+让我们回到Xcode并添加它
+
+00:30:33.000 --> 00:30:34.801 align:middle line:-1
+打开AppDelegate
+
+00:30:34.868 --> 00:30:38.005 align:middle line:-2
+让我们加入Continue
+Restoration Handler
+
+00:30:40.107 --> 00:30:44.478 align:middle line:-2
+在这里 Continue Restoration
+Handler将处理一些用户活动
+
+00:30:45.345 --> 00:30:47.548 align:middle line:-1
+我们需要使用该用户活动
+
+00:30:47.614 --> 00:30:49.850 align:middle line:-2
+并获取它的
+contextIdentifierPath
+
+00:30:51.151 --> 00:30:52.953 align:middle line:-1
+一旦我们有了上下文路径
+
+00:30:53.420 --> 00:30:56.557 align:middle line:-1
+我们将实例化我们自己的
+
+00:30:56.623 --> 00:30:58.892 align:middle line:-1
+关联到该上下文的内部测验模型
+
+00:30:59.927 --> 00:31:01.295 align:middle line:-1
+然后我们要确定
+

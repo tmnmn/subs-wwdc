@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.156 --> 00:13:03.206 A:middle
+We can search for content within
+
+00:13:03.206 --> 00:13:04.156 A:middle
+the Apple Music catalog.
+
+00:13:04.796 --> 00:13:08.276 A:middle
+We can browse the iCloud Music
+
+00:13:08.276 --> 00:13:09.876 A:middle
+Library for the logged-in user,
+
+00:13:10.306 --> 00:13:11.996 A:middle
+and search also works within a
+
+00:13:11.996 --> 00:13:12.856 A:middle
+library scope.
+
+00:13:13.286 --> 00:13:16.196 A:middle
+We can set and control that
+
+00:13:16.196 --> 00:13:17.206 A:middle
+queue of songs directly.
+
+00:13:17.266 --> 00:13:20.576 A:middle
+And we can react to playback
+
+00:13:20.576 --> 00:13:22.116 A:middle
+events, and we drive our UI off
+
+00:13:23.006 --> 00:13:25.936 A:middle
+of this.
+
+00:13:26.146 --> 00:13:28.676 A:middle
+So we're going to look at some
+
+00:13:28.786 --> 00:13:28.876 A:middle
+code.
+
+00:13:28.876 --> 00:13:29.836 A:middle
+First, we're going to use the
+
+00:13:29.836 --> 00:13:33.366 A:middle
+MusicKit getInstant method.
+
+00:13:33.506 --> 00:13:34.776 A:middle
+MusicKit is a singleton because
+
+00:13:34.776 --> 00:13:35.986 A:middle
+you can only play back a single
+
+00:13:35.986 --> 00:13:37.886 A:middle
+song at a time, so we're going
+
+00:13:37.886 --> 00:13:39.026 A:middle
+to assign this to that music
+
+00:13:39.026 --> 00:13:40.896 A:middle
+variable, and we'll use that
+
+00:13:40.896 --> 00:13:41.666 A:middle
+throughout the rest of these
+
+00:13:41.666 --> 00:13:42.246 A:middle
+examples.
+
+00:13:42.756 --> 00:13:46.486 A:middle
+You can look up a song by ID.
+
+00:13:47.376 --> 00:13:49.406 A:middle
+The song method takes the ID,
+
+00:13:49.406 --> 00:13:50.416 A:middle
+and then you need to supply a
+
+00:13:50.416 --> 00:13:50.866 A:middle
+callback.
+
+00:13:50.866 --> 00:13:52.006 A:middle
+And this is a promise.
+
+00:13:52.406 --> 00:13:53.516 A:middle
+You'll see that promise model
+
+00:13:53.516 --> 00:13:54.476 A:middle
+used throughout MusicKit.
+
+00:13:54.996 --> 00:13:58.086 A:middle
+You then get a content object
+
+00:13:58.086 --> 00:13:59.486 A:middle
+back, and this content object
+
+00:13:59.486 --> 00:14:00.756 A:middle
+shows you the attributes of that
+

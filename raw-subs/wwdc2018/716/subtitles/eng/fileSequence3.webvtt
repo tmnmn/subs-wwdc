@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.116 --> 00:03:00.956 A:middle
+and CoreML, I invite you to come
+
+00:03:00.956 --> 00:03:02.246 A:middle
+to the next session in this room
+
+00:03:02.516 --> 00:03:03.756 A:middle
+where Fran, my colleague, will
+
+00:03:03.756 --> 00:03:05.246 A:middle
+cover details of that
+
+00:03:05.246 --> 00:03:05.786 A:middle
+integration.
+
+00:03:07.426 --> 00:03:09.546 A:middle
+Let's take a look at the request
+
+00:03:09.546 --> 00:03:09.956 A:middle
+handlers.
+
+00:03:10.936 --> 00:03:12.226 A:middle
+In Vision, we have two.
+
+00:03:12.506 --> 00:03:13.896 A:middle
+We have Image Request Handler,
+
+00:03:13.896 --> 00:03:15.766 A:middle
+and we have Sequence Request
+
+00:03:15.766 --> 00:03:16.046 A:middle
+Handler.
+
+00:03:16.646 --> 00:03:18.446 A:middle
+Let's compare the two using this
+
+00:03:18.446 --> 00:03:18.826 A:middle
+criteria.
+
+00:03:20.066 --> 00:03:21.196 A:middle
+First, we'll look at the Image
+
+00:03:21.196 --> 00:03:21.736 A:middle
+Request Handler.
+
+00:03:23.796 --> 00:03:25.326 A:middle
+Image request handler is used to
+
+00:03:25.326 --> 00:03:27.996 A:middle
+process one or more requests on
+
+00:03:27.996 --> 00:03:28.666 A:middle
+the same image.
+
+00:03:30.126 --> 00:03:31.676 A:middle
+What it doesn't say, it caches
+
+00:03:31.676 --> 00:03:33.066 A:middle
+certain information like image
+
+00:03:33.066 --> 00:03:34.796 A:middle
+derivatives and results of
+
+00:03:34.796 --> 00:03:35.636 A:middle
+posting requests.
+
+00:03:35.956 --> 00:03:37.216 A:middle
+So, other requests in the
+
+00:03:37.216 --> 00:03:38.416 A:middle
+pipeline can use that
+
+00:03:38.416 --> 00:03:39.006 A:middle
+information.
+
+00:03:39.666 --> 00:03:40.526 A:middle
+I'm going to give you an
+
+00:03:40.526 --> 00:03:41.036 A:middle
+example.
+
+00:03:41.396 --> 00:03:43.116 A:middle
+If a request depends on running
+
+00:03:43.116 --> 00:03:44.606 A:middle
+neural network, as you know,
+
+00:03:44.606 --> 00:03:46.436 A:middle
+neural network expects images in
+
+00:03:46.436 --> 00:03:47.876 A:middle
+certain sizes and certain colors
+
+00:03:47.876 --> 00:03:48.276 A:middle
+schemes.
+
+00:03:48.606 --> 00:03:49.926 A:middle
+Let's say your neural network
+
+00:03:50.076 --> 00:03:52.706 A:middle
+expects 500 by 500 black and
+
+00:03:52.706 --> 00:03:52.906 A:middle
+white.
+
+00:03:53.926 --> 00:03:55.446 A:middle
+It's very rare that you'll get
+
+00:03:55.446 --> 00:03:57.006 A:middle
+user input just in that format.
+
+00:03:57.236 --> 00:03:58.786 A:middle
+So, what we'll do inside, we'll
+
+00:03:58.786 --> 00:03:59.626 A:middle
+convert the image.
+
+00:03:59.856 --> 00:04:01.066 A:middle
+We'll feed it into that neural
+

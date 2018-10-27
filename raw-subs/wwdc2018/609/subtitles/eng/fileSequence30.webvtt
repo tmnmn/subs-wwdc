@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:56.476 --> 00:30:00.676 A:middle
+As you can see, this network is
+
+00:30:00.676 --> 00:30:03.416 A:middle
+set up in an interesting way.
+
+00:30:03.636 --> 00:30:07.496 A:middle
+So, it contains a series of CNN
+
+00:30:07.496 --> 00:30:09.556 A:middle
+primitives, followed by LSTM
+
+00:30:09.556 --> 00:30:11.656 A:middle
+primitive, followed by more CNN
+
+00:30:11.656 --> 00:30:12.096 A:middle
+primitives.
+
+00:30:12.666 --> 00:30:13.986 A:middle
+So, why is it set up this way?
+
+00:30:13.986 --> 00:30:15.326 A:middle
+Let's take a look.
+
+00:30:16.296 --> 00:30:18.716 A:middle
+So, even though our input is
+
+00:30:18.716 --> 00:30:21.786 A:middle
+sensor data, it's represented by
+
+00:30:21.786 --> 00:30:23.696 A:middle
+a batch of 1D images with six
+
+00:30:23.696 --> 00:30:24.336 A:middle
+feature channels.
+
+00:30:24.336 --> 00:30:26.466 A:middle
+So, one feature channel for
+
+00:30:26.576 --> 00:30:28.466 A:middle
+access in the accelerometer and
+
+00:30:28.466 --> 00:30:29.386 A:middle
+gyroscope readings.
+
+00:30:30.716 --> 00:30:33.296 A:middle
+And each 1D image has 2,000
+
+00:30:33.296 --> 00:30:33.676 A:middle
+pixels.
+
+00:30:33.936 --> 00:30:35.516 A:middle
+And you can think of them as
+
+00:30:36.206 --> 00:30:38.176 A:middle
+samples in time because the
+
+00:30:38.386 --> 00:30:39.706 A:middle
+activity we're trying to
+
+00:30:39.706 --> 00:30:41.546 A:middle
+identify, occurs over time.
+
+00:30:43.346 --> 00:30:46.656 A:middle
+And then we pass these images
+
+00:30:46.656 --> 00:30:47.976 A:middle
+through a 1D convolution
+
+00:30:47.976 --> 00:30:51.026 A:middle
+primitive which compresses these
+
+00:30:51.086 --> 00:30:53.186 A:middle
+2,000 samples, to just 20
+
+00:30:53.186 --> 00:30:53.626 A:middle
+samples.
+
+00:30:54.346 --> 00:30:57.236 A:middle
+But it expends a number of
+
+00:30:57.236 --> 00:30:59.316 A:middle
+feature channels, because -- so,
+
+00:30:59.366 --> 00:31:01.256 A:middle
+we're not losing any features in
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.106 --> 00:22:00.826 A:middle
+talk between these two windows
+
+00:22:01.086 --> 00:22:02.466 A:middle
+without giving the opener
+
+00:22:02.466 --> 00:22:04.566 A:middle
+control of your window and then
+
+00:22:04.566 --> 00:22:06.156 A:middle
+you can say allow post message.
+
+00:22:07.206 --> 00:22:08.896 A:middle
+OK. That's also new technology
+
+00:22:08.896 --> 00:22:10.126 A:middle
+and now we've gone through the
+
+00:22:10.126 --> 00:22:11.416 A:middle
+cross-origin lockdown.
+
+00:22:12.336 --> 00:22:15.516 A:middle
+As you can see, that's not too
+
+00:22:15.516 --> 00:22:15.946 A:middle
+hard.
+
+00:22:15.946 --> 00:22:18.326 A:middle
+It's a set of response headers.
+
+00:22:18.326 --> 00:22:19.836 A:middle
+It's the content security policy
+
+00:22:19.836 --> 00:22:22.096 A:middle
+where you whitelist things, and
+
+00:22:22.096 --> 00:22:24.066 A:middle
+it's the integrity attribute for
+
+00:22:24.066 --> 00:22:26.126 A:middle
+script tags that's more or less
+
+00:22:26.126 --> 00:22:27.116 A:middle
+what we're talking about here.
+
+00:22:27.666 --> 00:22:28.926 A:middle
+I'll give you some motivation.
+
+00:22:29.136 --> 00:22:29.926 A:middle
+We're going to look at some
+
+00:22:29.926 --> 00:22:30.976 A:middle
+attack scenarios.
+
+00:22:30.976 --> 00:22:32.806 A:middle
+What are you defending against
+
+00:22:32.806 --> 00:22:34.666 A:middle
+and how to these security
+
+00:22:34.666 --> 00:22:36.696 A:middle
+technologies fit in with these
+
+00:22:36.696 --> 00:22:37.256 A:middle
+attacks?
+
+00:22:37.256 --> 00:22:38.286 A:middle
+We're going to look at
+
+00:22:38.286 --> 00:22:39.406 A:middle
+cross-origin attacks,
+
+00:22:39.546 --> 00:22:41.396 A:middle
+speculative execution attacks--
+
+00:22:41.666 --> 00:22:43.586 A:middle
+some people may have heard about
+
+00:22:43.586 --> 00:22:45.046 A:middle
+Spectre-- and we're going to
+
+00:22:45.046 --> 00:22:46.596 A:middle
+look at window control attacks.
+
+00:22:47.136 --> 00:22:48.756 A:middle
+Let's dive into the cross-origin
+
+00:22:48.756 --> 00:22:49.086 A:middle
+ones.
+
+00:22:50.066 --> 00:22:51.046 A:middle
+We're going to talk about
+
+00:22:51.046 --> 00:22:52.596 A:middle
+cross-site scripting, when
+
+00:22:52.596 --> 00:22:53.566 A:middle
+something goes bad with your
+
+00:22:53.666 --> 00:22:53.936 A:middle
+CDN.
+
+00:22:53.936 --> 00:22:55.586 A:middle
+And that one you kind of could
+
+00:22:55.696 --> 00:22:56.756 A:middle
+tell that I was going for,
+
+00:22:56.756 --> 00:22:56.986 A:middle
+right?
+
+00:22:57.486 --> 00:22:58.576 A:middle
+And cross-site request
+
+00:22:58.576 --> 00:22:59.146 A:middle
+forgeries.
+

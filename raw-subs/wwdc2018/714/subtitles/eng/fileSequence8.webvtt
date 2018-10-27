@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.336 --> 00:08:01.036 A:middle
+Internet services use pretty
+
+00:08:01.036 --> 00:08:03.666 A:middle
+short lifetimes on their DNS
+
+00:08:03.666 --> 00:08:04.266 A:middle
+records.
+
+00:08:04.666 --> 00:08:06.596 A:middle
+And they do this because if a
+
+00:08:06.596 --> 00:08:08.736 A:middle
+data center goes down, they want
+
+00:08:08.736 --> 00:08:10.496 A:middle
+to be able to update the DNS and
+
+00:08:10.496 --> 00:08:12.686 A:middle
+very rapidly direct traffic to a
+
+00:08:12.686 --> 00:08:13.666 A:middle
+different data center.
+
+00:08:15.266 --> 00:08:16.636 A:middle
+The problem with this approach
+
+00:08:17.076 --> 00:08:19.166 A:middle
+is you're paying a performance
+
+00:08:19.166 --> 00:08:20.736 A:middle
+cost for something that almost
+
+00:08:20.736 --> 00:08:21.506 A:middle
+never happens.
+
+00:08:21.596 --> 00:08:23.816 A:middle
+Data centers very rarely go
+
+00:08:23.816 --> 00:08:24.186 A:middle
+down.
+
+00:08:25.066 --> 00:08:27.316 A:middle
+And what this means is every
+
+00:08:27.316 --> 00:08:29.276 A:middle
+time a DNS address record is
+
+00:08:29.276 --> 00:08:31.096 A:middle
+expired, your client has to
+
+00:08:31.096 --> 00:08:32.736 A:middle
+spend another round-trip delay
+
+00:08:33.046 --> 00:08:35.496 A:middle
+waiting for the response from
+
+00:08:35.496 --> 00:08:37.306 A:middle
+the DNS server, which is the
+
+00:08:37.306 --> 00:08:38.606 A:middle
+same as what it knew already
+
+00:08:38.606 --> 00:08:39.155 A:middle
+last time.
+
+00:08:39.756 --> 00:08:42.736 A:middle
+So thinking about this, we
+
+00:08:42.736 --> 00:08:44.826 A:middle
+realized and optimization we
+
+00:08:44.826 --> 00:08:45.216 A:middle
+could do.
+
+00:08:45.866 --> 00:08:47.856 A:middle
+If you pass the flag to opt into
+
+00:08:47.856 --> 00:08:50.866 A:middle
+this new behavior, then when you
+
+00:08:50.866 --> 00:08:52.846 A:middle
+do a DNS query, if we have a
+
+00:08:52.846 --> 00:08:54.446 A:middle
+stale, expired answer in the
+
+00:08:54.446 --> 00:08:56.956 A:middle
+cache, we will give that to you
+
+00:08:57.056 --> 00:08:59.286 A:middle
+immediately while in parallel,
+
+00:08:59.286 --> 00:09:00.876 A:middle
+at the same time, doing the
+

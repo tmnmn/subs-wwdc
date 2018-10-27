@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.146 --> 00:19:02.716 A:middle
+For the playing card package,
+
+00:19:02.986 --> 00:19:04.326 A:middle
+we're using up to the next minor
+
+00:19:04.326 --> 00:19:04.976 A:middle
+syntax.
+
+00:19:05.446 --> 00:19:06.866 A:middle
+This means, we're getting only
+
+00:19:06.866 --> 00:19:08.316 A:middle
+updates to the patch component.
+
+00:19:09.566 --> 00:19:10.466 A:middle
+You might want to use that
+
+00:19:10.466 --> 00:19:11.786 A:middle
+syntax if you want to be more
+
+00:19:11.786 --> 00:19:13.416 A:middle
+conservative as a dependency and
+
+00:19:13.416 --> 00:19:14.576 A:middle
+only take bug fixes.
+
+00:19:15.216 --> 00:19:17.786 A:middle
+In this case, we're ending up
+
+00:19:17.786 --> 00:19:21.916 A:middle
+with a tag 3.0.2.
+
+00:19:22.066 --> 00:19:23.626 A:middle
+Finally, when looking at a
+
+00:19:23.626 --> 00:19:26.486 A:middle
+target, SwiftPM has to match up
+
+00:19:26.576 --> 00:19:28.456 A:middle
+its required products with the
+
+00:19:28.456 --> 00:19:30.606 A:middle
+packages that we resolved.
+
+00:19:31.186 --> 00:19:32.556 A:middle
+For this, we're looking at the
+
+00:19:32.556 --> 00:19:34.996 A:middle
+dealer target from the demo, and
+
+00:19:34.996 --> 00:19:36.696 A:middle
+as you can see, the utility
+
+00:19:36.696 --> 00:19:39.176 A:middle
+product is provided by the
+
+00:19:39.176 --> 00:19:40.346 A:middle
+SwiftPM package.
+
+00:19:41.476 --> 00:19:43.116 A:middle
+And the rest of the packages
+
+00:19:43.786 --> 00:19:45.186 A:middle
+provide the other products.
+
+00:19:45.646 --> 00:19:50.156 A:middle
+After dependency resolution, the
+
+00:19:50.156 --> 00:19:52.106 A:middle
+resolves are recorded in a file
+
+00:19:52.106 --> 00:19:53.236 A:middle
+called package.resolved.
+
+00:19:53.816 --> 00:19:56.106 A:middle
+the purpose of this file is so
+
+00:19:56.106 --> 00:19:57.556 A:middle
+that you can share the resolve
+
+00:19:57.606 --> 00:19:59.086 A:middle
+versions with other members of
+
+00:19:59.086 --> 00:20:01.076 A:middle
+your team, or your continuous
+

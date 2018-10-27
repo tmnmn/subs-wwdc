@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:59.866 --> 00:42:01.296 A:middle
+cause crashes once in a while,
+
+00:42:01.546 --> 00:42:03.506 A:middle
+so your code might seem to work
+
+00:42:03.506 --> 00:42:05.546 A:middle
+fine in 99% of cases.
+
+00:42:06.016 --> 00:42:08.056 A:middle
+And these bugs can go unnoticed
+
+00:42:08.056 --> 00:42:10.146 A:middle
+for a very long time.
+
+00:42:11.306 --> 00:42:12.996 A:middle
+Often monitoring bugs cause
+
+00:42:13.236 --> 00:42:14.446 A:middle
+memory corruptions and what
+
+00:42:14.446 --> 00:42:16.076 A:middle
+you'll see in crash logs looks
+
+00:42:16.076 --> 00:42:17.506 A:middle
+just like memory corruptions as
+
+00:42:17.506 --> 00:42:19.676 A:middle
+well and we've seen examples of
+
+00:42:19.676 --> 00:42:20.856 A:middle
+those in the previous section.
+
+00:42:21.316 --> 00:42:22.186 A:middle
+So when you're dealing with
+
+00:42:22.186 --> 00:42:23.706 A:middle
+crashes inside the malloc or
+
+00:42:23.706 --> 00:42:25.516 A:middle
+free or retained counting
+
+00:42:25.516 --> 00:42:27.466 A:middle
+operations those are typical
+
+00:42:27.466 --> 00:42:29.176 A:middle
+symptoms of memory corruptions.
+
+00:42:30.556 --> 00:42:31.966 A:middle
+There's specific symptoms of
+
+00:42:31.966 --> 00:42:32.996 A:middle
+multithreading bugs as well.
+
+00:42:33.916 --> 00:42:35.546 A:middle
+The crashing thread often
+
+00:42:35.806 --> 00:42:37.566 A:middle
+contains, sorry the crash log
+
+00:42:37.566 --> 00:42:39.136 A:middle
+often contains multiple threads
+
+00:42:39.576 --> 00:42:41.416 A:middle
+that are executing related parts
+
+00:42:41.416 --> 00:42:41.956 A:middle
+of your code.
+
+00:42:42.436 --> 00:42:44.046 A:middle
+So if a particular class or a
+
+00:42:44.046 --> 00:42:45.996 A:middle
+method shows up in a crash log
+
+00:42:45.996 --> 00:42:48.006 A:middle
+in multiple threads that's an
+
+00:42:48.006 --> 00:42:49.256 A:middle
+indication of a potential
+
+00:42:49.256 --> 00:42:50.136 A:middle
+multithreading bug.
+
+00:42:51.646 --> 00:42:53.576 A:middle
+The memory corruptions that are
+
+00:42:53.576 --> 00:42:55.036 A:middle
+caused by multithreading issues
+
+00:42:55.186 --> 00:42:56.436 A:middle
+are often very random.
+
+00:42:56.616 --> 00:42:58.486 A:middle
+So you might see crashes
+
+00:42:58.486 --> 00:43:00.016 A:middle
+happening at slightly different
+

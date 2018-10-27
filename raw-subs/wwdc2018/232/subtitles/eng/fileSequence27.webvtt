@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.566 --> 00:27:01.846 A:middle
+keychain to pull out any stored
+
+00:27:01.846 --> 00:27:02.896 A:middle
+credentials that you may have.
+
+00:27:04.336 --> 00:27:07.176 A:middle
+From here the next step is we go
+
+00:27:07.176 --> 00:27:09.686 A:middle
+directly to your business server
+
+00:27:10.156 --> 00:27:11.436 A:middle
+to hit the OAuth website.
+
+00:27:12.196 --> 00:27:14.716 A:middle
+Now this can be existing or
+
+00:27:14.716 --> 00:27:17.186 A:middle
+potentially a little bit change
+
+00:27:17.186 --> 00:27:18.836 A:middle
+for Business Chat but it allows
+
+00:27:18.836 --> 00:27:21.186 A:middle
+you to carry the user through
+
+00:27:21.386 --> 00:27:22.676 A:middle
+your standard login flow,
+
+00:27:22.966 --> 00:27:24.446 A:middle
+including any extra additional
+
+00:27:24.446 --> 00:27:27.566 A:middle
+information, extra verification
+
+00:27:27.566 --> 00:27:28.636 A:middle
+fields, anything along those
+
+00:27:28.636 --> 00:27:28.926 A:middle
+lines.
+
+00:27:29.486 --> 00:27:31.526 A:middle
+At the end of OAuth your OAuth
+
+00:27:31.526 --> 00:27:33.386 A:middle
+returns a token, this is your
+
+00:27:33.386 --> 00:27:35.586 A:middle
+login token and there it's sent
+
+00:27:35.586 --> 00:27:36.576 A:middle
+back to the Messages app.
+
+00:27:36.916 --> 00:27:38.376 A:middle
+What we do next is we encrypt
+
+00:27:38.376 --> 00:27:39.886 A:middle
+that token so no one else can
+
+00:27:39.886 --> 00:27:41.766 A:middle
+see it with a public key that I
+
+00:27:41.766 --> 00:27:42.616 A:middle
+mentioned earlier that's
+
+00:27:42.616 --> 00:27:45.436 A:middle
+included in the request.
+
+00:27:45.436 --> 00:27:47.066 A:middle
+Now your token is encrypted and
+
+00:27:47.066 --> 00:27:48.606 A:middle
+it passes back up through the
+
+00:27:48.606 --> 00:27:50.536 A:middle
+Apple Chat Server which Apple
+
+00:27:50.536 --> 00:27:53.006 A:middle
+can't read and it lands back to
+
+00:27:53.006 --> 00:27:53.436 A:middle
+the agent.
+
+00:27:54.466 --> 00:27:57.926 A:middle
+Now at this time your agent may
+
+00:27:57.926 --> 00:27:59.156 A:middle
+have the private key to decrypt
+
+00:27:59.156 --> 00:28:00.436 A:middle
+that or your business may have
+

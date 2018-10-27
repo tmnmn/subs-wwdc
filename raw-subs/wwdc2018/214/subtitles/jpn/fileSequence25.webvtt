@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.299 --> 00:25:03.403 align:start position:27% line:-2
+できれば それぞれに合った
+スープの画像を
+
+00:25:03.504 --> 00:25:06.140 align:start position:29% line:-1
+表示したいところですよね
+
+00:25:06.306 --> 00:25:07.775 align:start position:38% line:-1
+こんな感じです
+
+00:25:08.742 --> 00:25:10.944 align:start position:34% line:-1
+使えるAPIは２つ
+
+00:25:11.078 --> 00:25:14.348 align:start position:25% line:-2
+userActivity用と
+Intent用です
+
+00:25:15.816 --> 00:25:20.888 align:start position:30% line:-2
+ユーザが スープの
+注文履歴を見たとします
+
+00:25:20.988 --> 00:25:23.690 align:start position:36% line:-2
+我々は それを
+ショートカットに
+
+00:25:23.791 --> 00:25:25.893 align:start position:29% line:-1
+結びつけることができます
+
+00:25:26.593 --> 00:25:31.031 align:start position:16% line:-2
+まず CSSearchableItem
+AttributeSetを作成
+
+00:25:31.131 --> 00:25:35.669 align:start position:36% line:-2
+これは補足文の
+提供と同じですが
+
+00:25:35.769 --> 00:25:37.838 align:start position:30% line:-1
+ここでは画像を使います
+
+00:25:37.938 --> 00:25:40.674 align:start position:25% line:-1
+クラムチャウダーの画像を作成
+
+00:25:40.874 --> 00:25:45.879 align:start position:21% line:-2
+PNGデータをサムネイルとして
+attributesに設定します
+
+00:25:46.113 --> 00:25:50.884 align:start position:21% line:-2
+次に そのattributesを
+userActivityに設定
+
+00:25:50.984 --> 00:25:56.590 align:start position:16% line:-2
+最後に viewControllerで
+userActivityを提供します
+
+00:25:58.258 --> 00:26:00.828 align:start position:29% line:-2
+Intentで
+どう動くか見てみましょう
+

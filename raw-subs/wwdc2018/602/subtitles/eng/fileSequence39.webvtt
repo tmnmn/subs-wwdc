@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.666 --> 00:39:00.286 A:middle
+detected can now be tracked.
+
+00:39:00.726 --> 00:39:03.626 A:middle
+And we have a new configuration,
+
+00:39:03.626 --> 00:39:03.746 A:middle
+the
+
+00:39:03.746 --> 00:39:05.486 A:middle
+ARImageTrackingConfiguration,
+
+00:39:05.846 --> 00:39:07.456 A:middle
+which performs stand-alone image
+
+00:39:07.456 --> 00:39:07.836 A:middle
+tracking.
+
+00:39:09.086 --> 00:39:10.396 A:middle
+This means it's independent from
+
+00:39:10.396 --> 00:39:12.636 A:middle
+world tracking and does not rely
+
+00:39:12.706 --> 00:39:14.906 A:middle
+on the motion sensor to perform
+
+00:39:14.906 --> 00:39:15.406 A:middle
+the tracking.
+
+00:39:16.206 --> 00:39:18.386 A:middle
+This means this configuration is
+
+00:39:18.386 --> 00:39:20.966 A:middle
+not to initialize before it
+
+00:39:20.966 --> 00:39:23.306 A:middle
+starts to identify images and
+
+00:39:23.306 --> 00:39:25.046 A:middle
+could also succeed in scenarios
+
+00:39:25.046 --> 00:39:26.696 A:middle
+in which world tracking fails,
+
+00:39:26.856 --> 00:39:28.776 A:middle
+such as moving platform like an
+
+00:39:28.816 --> 00:39:30.076 A:middle
+elevator or a train.
+
+00:39:31.336 --> 00:39:33.766 A:middle
+I think in this case ARKit would
+
+00:39:33.816 --> 00:39:35.276 A:middle
+estimate the position and
+
+00:39:35.276 --> 00:39:36.946 A:middle
+orientation for every frame at
+
+00:39:37.036 --> 00:39:39.286 A:middle
+60 frames per second.
+
+00:39:39.406 --> 00:39:40.696 A:middle
+And implementing this can be
+
+00:39:40.696 --> 00:39:42.546 A:middle
+done in four simple lines of
+
+00:39:42.586 --> 00:39:43.126 A:middle
+code.
+
+00:39:44.096 --> 00:39:46.026 A:middle
+So all you need to do, I create
+
+00:39:46.026 --> 00:39:46.916 A:middle
+a configuration type
+
+00:39:47.096 --> 00:39:49.566 A:middle
+ARImageTrackingConfiguration and
+
+00:39:49.566 --> 00:39:52.006 A:middle
+specify a set of images I'd like
+
+00:39:52.006 --> 00:39:52.396 A:middle
+to track.
+
+00:39:53.146 --> 00:39:54.836 A:middle
+In this case, I specified a
+
+00:39:54.836 --> 00:39:56.806 A:middle
+photo of a cat, a dog, and a
+
+00:39:56.806 --> 00:39:57.076 A:middle
+bird.
+
+00:39:59.556 --> 00:40:00.816 A:middle
+I tell the configuration how
+

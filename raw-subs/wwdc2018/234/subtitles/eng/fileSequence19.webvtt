@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.916 --> 00:19:01.176 A:middle
+cases, you have two options.
+
+00:19:01.456 --> 00:19:03.436 A:middle
+One, you can add the decoding
+
+00:19:03.486 --> 00:19:05.176 A:middle
+async attribute to your images
+
+00:19:05.176 --> 00:19:06.136 A:middle
+elements in markup.
+
+00:19:06.756 --> 00:19:09.536 A:middle
+Or, you can use the JavaScript
+
+00:19:09.536 --> 00:19:11.996 A:middle
+API's HTMLImageElements.decode
+
+00:19:11.996 --> 00:19:13.856 A:middle
+method, which returns a promise,
+
+00:19:14.106 --> 00:19:15.726 A:middle
+making sure that you know when
+
+00:19:15.726 --> 00:19:17.756 A:middle
+an image can be added to the dom
+
+00:19:17.836 --> 00:19:19.546 A:middle
+without causing a decoding delay
+
+00:19:19.866 --> 00:19:20.796 A:middle
+on the next frame.
+
+00:19:21.306 --> 00:19:24.216 A:middle
+And, continuing with
+
+00:19:24.216 --> 00:19:26.336 A:middle
+asynchronous calls is support
+
+00:19:26.336 --> 00:19:27.416 A:middle
+for the Beacon API.
+
+00:19:28.266 --> 00:19:29.566 A:middle
+We know, as developers, you want
+
+00:19:29.566 --> 00:19:31.466 A:middle
+to send data on an unload event.
+
+00:19:31.956 --> 00:19:33.936 A:middle
+Perhaps to track outgoing links.
+
+00:19:34.416 --> 00:19:35.896 A:middle
+And normally, asynchronous
+
+00:19:35.896 --> 00:19:37.766 A:middle
+requests on unload are ignored,
+
+00:19:37.906 --> 00:19:38.776 A:middle
+so you're stuck using a
+
+00:19:38.776 --> 00:19:40.266 A:middle
+synchronous request, which can
+
+00:19:40.266 --> 00:19:41.816 A:middle
+stall the next page load.
+
+00:19:42.756 --> 00:19:44.206 A:middle
+However, we now support the
+
+00:19:44.206 --> 00:19:45.066 A:middle
+Beacon API.
+
+00:19:45.706 --> 00:19:47.086 A:middle
+So, as long as Safari is
+
+00:19:47.086 --> 00:19:48.816 A:middle
+running, you can send your data
+
+00:19:48.816 --> 00:19:50.866 A:middle
+to the server and forget about
+
+00:19:50.866 --> 00:19:52.666 A:middle
+it, with the guarantee that it
+
+00:19:52.666 --> 00:19:53.466 A:middle
+will be delivered.
+
+00:19:53.966 --> 00:19:57.036 A:middle
+But, you've heard me talk
+
+00:19:57.036 --> 00:19:57.446 A:middle
+enough.
+
+00:19:57.926 --> 00:19:59.096 A:middle
+I mean, I'm sure you want to see
+
+00:19:59.096 --> 00:20:00.036 A:middle
+some of these security and
+

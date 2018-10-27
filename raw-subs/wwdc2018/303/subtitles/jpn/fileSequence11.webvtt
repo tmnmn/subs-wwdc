@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:56.323 --> 00:11:00.260 align:start position:29% line:-2
+例えばこのユーザの役割は
+デベロッパです
+
+00:11:00.627 --> 00:11:03.931 align:start position:30% line:-2
+マーケティングの役割を
+加えてみます
+
+00:11:04.665 --> 00:11:08.135 align:start position:23% line:-2
+変更には
+PATCHリクエストを使います
+
+00:11:08.335 --> 00:11:13.240 align:start position:27% line:-2
+この場合のURLはユーザの
+リソースセルフリンク
+
+00:11:13.740 --> 00:11:17.711 align:start position:27% line:-1
+役割の属性だけを記載します
+
+00:11:17.811 --> 00:11:22.916 align:start position:29% line:-2
+このリクエストで
+マーケティングを加えます
+
+00:11:23.016 --> 00:11:28.121 align:start position:29% line:-2
+他に変更の必要はないので
+属性だけ記載します
+
+00:11:28.789 --> 00:11:31.959 align:start position:30% line:-2
+このリクエストの
+レスポンスが成功すると
+
+00:11:32.459 --> 00:11:37.297 align:start position:32% line:-2
+変更後のリソースの
+全容が送られてきます
+
+00:11:38.699 --> 00:11:41.201 align:start position:30% line:-1
+最後の処理である削除は
+
+00:11:41.301 --> 00:11:45.072 align:start position:21% line:-2
+リソースセルフリンクに
+DELETEリクエストを出すだけ
+
+00:11:45.172 --> 00:11:49.343 align:start position:20% line:-2
+204 NO CONTENTという
+レスポンスが返ってきます
+
+00:11:49.810 --> 00:11:54.748 align:start position:21% line:-2
+REST通なら200番台の意味は
+成功だとご存じですね
+
+00:11:54.848 --> 00:11:58.819 align:start position:29% line:-2
+ユーザが削除されたことを
+示しています
+
+00:11:58.919 --> 00:12:04.925 align:start position:25% line:-2
+他のデータは不要なので
+NO CONTENTとします
+

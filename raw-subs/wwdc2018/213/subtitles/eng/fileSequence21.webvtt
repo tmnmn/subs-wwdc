@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.206 --> 00:21:00.016 A:middle
+Navigation alerts present on the
+
+00:21:00.016 --> 00:21:01.326 A:middle
+map template and can be
+
+00:21:01.326 --> 00:21:02.676 A:middle
+configured with a title,
+
+00:21:02.906 --> 00:21:05.916 A:middle
+subtitle, image, primary and
+
+00:21:05.916 --> 00:21:07.426 A:middle
+secondary action, and if it
+
+00:21:07.426 --> 00:21:08.466 A:middle
+makes sense, you can use a
+
+00:21:08.466 --> 00:21:10.106 A:middle
+dismiss interval after which the
+
+00:21:10.106 --> 00:21:11.596 A:middle
+alert will self-dismiss.
+
+00:21:12.106 --> 00:21:14.736 A:middle
+Let's take a look at some code
+
+00:21:14.736 --> 00:21:16.046 A:middle
+on how we built our root
+
+00:21:16.046 --> 00:21:16.366 A:middle
+template.
+
+00:21:16.606 --> 00:21:18.916 A:middle
+And let's add a new button for a
+
+00:21:18.916 --> 00:21:20.036 A:middle
+missing feature on our Country
+
+00:21:20.036 --> 00:21:22.266 A:middle
+Roads app.
+
+00:21:22.516 --> 00:21:23.666 A:middle
+Since this was our function that
+
+00:21:23.666 --> 00:21:24.706 A:middle
+created out root template, the
+
+00:21:24.706 --> 00:21:26.106 A:middle
+first thing we're going to do is
+
+00:21:26.106 --> 00:21:27.296 A:middle
+create an instance of
+
+00:21:27.296 --> 00:21:28.396 A:middle
+CPMapTemplate.
+
+00:21:28.976 --> 00:21:31.416 A:middle
+We will then create a new button
+
+00:21:31.526 --> 00:21:32.256 A:middle
+for a missing feature.
+
+00:21:33.606 --> 00:21:34.536 A:middle
+One of the great things about
+
+00:21:34.536 --> 00:21:36.096 A:middle
+Country Roads is that our users
+
+00:21:36.096 --> 00:21:37.256 A:middle
+can search for their favorite
+
+00:21:37.256 --> 00:21:37.836 A:middle
+categories.
+
+00:21:38.616 --> 00:21:39.826 A:middle
+And we'll add a new button for
+
+00:21:39.826 --> 00:21:40.036 A:middle
+that.
+
+00:21:40.226 --> 00:21:41.546 A:middle
+So, let's create a CPBarButton
+
+00:21:41.546 --> 00:21:42.406 A:middle
+of type Image.
+
+00:21:42.896 --> 00:21:44.396 A:middle
+And in its custom action handler
+
+00:21:44.536 --> 00:21:45.696 A:middle
+we will call a function of our
+
+00:21:45.696 --> 00:21:47.406 A:middle
+own that is display our favorite
+
+00:21:47.406 --> 00:21:47.936 A:middle
+categories.
+
+00:21:48.756 --> 00:21:50.306 A:middle
+We'll then retrieve an image and
+
+00:21:50.306 --> 00:21:51.336 A:middle
+assign it to the button.
+
+00:21:51.576 --> 00:21:52.936 A:middle
+And we want this button to
+
+00:21:52.936 --> 00:21:54.126 A:middle
+appear in the trailing space
+
+00:21:54.126 --> 00:21:55.576 A:middle
+alongside our traffic button.
+
+00:21:55.926 --> 00:21:57.116 A:middle
+So, we'll assign those two
+
+00:21:57.116 --> 00:21:58.136 A:middle
+buttons to the trailing
+
+00:21:58.136 --> 00:21:59.356 A:middle
+navigation bar buttons on our
+
+00:21:59.356 --> 00:21:59.916 A:middle
+map template.
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.546 --> 00:08:02.049 align:start position:25% line:-1
+どうやら私が悪かったようです
+
+00:08:02.583 --> 00:08:04.751 align:start position:14% line:-1
+numberOfSectionsという―
+
+00:08:04.885 --> 00:08:08.622 align:start position:29% line:-2
+デリゲートメソッドを
+クラスに実装していました
+
+00:08:08.789 --> 00:08:12.826 align:start position:25% line:-1
+それがヘッダの数を求めており
+
+00:08:12.926 --> 00:08:15.562 align:start position:23% line:-1
+私は“材料”の数を返しています
+
+00:08:15.662 --> 00:08:17.798 align:start position:30% line:-1
+その数が“８”なのです
+
+00:08:18.398 --> 00:08:21.001 align:start position:32% line:-1
+いい解決法があります
+
+00:08:21.101 --> 00:08:25.873 align:start position:23% line:-2
+“レシピ”セクションenumの
+ケースの数を返せばいい
+
+00:08:25.973 --> 00:08:28.041 align:start position:29% line:-1
+Swift 4.2では―
+
+00:08:28.141 --> 00:08:33.113 align:start position:23% line:-2
+オープンソースコミュニティから
+新しい機能が追加されました
+
+00:08:33.212 --> 00:08:35.549 align:start position:11% line:-1
+CaseIterableというプロトコルです
+
+00:08:35.649 --> 00:08:39.453 align:start position:16% line:-2
+“レシピ”セクションを
+CaseIterableに準拠させると
+
+00:08:40.287 --> 00:08:43.724 align:start position:32% line:-2
+“レシピ”セクション
+enumにある―
+
+00:08:43.823 --> 00:08:47.427 align:start position:23% line:-1
+ケースの数を返すことができます
+
+00:08:47.528 --> 00:08:48.762 align:start position:39% line:-1
+そうすれば―
+
+00:08:49.496 --> 00:08:53.667 align:start position:23% line:-1
+正確なセクションの数を返せます
+
+00:08:53.767 --> 00:08:55.435 align:start position:32% line:-1
+これでうまくいきます
+
+00:08:56.970 --> 00:09:00.674 align:start position:23% line:-1
+ではレシピを確認してみましょう
+

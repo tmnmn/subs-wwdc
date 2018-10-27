@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.246 --> 00:20:00.586 A:middle
+But as a developer, you may
+
+00:20:00.846 --> 00:20:01.806 A:middle
+actually want to get
+
+00:20:01.806 --> 00:20:03.716 A:middle
+pre-prompted so that you can
+
+00:20:03.716 --> 00:20:05.876 A:middle
+test how your app behaves while
+
+00:20:05.876 --> 00:20:08.586 A:middle
+the prompt is displayed, if the
+
+00:20:08.586 --> 00:20:11.386 A:middle
+user consents, and if the user
+
+00:20:11.786 --> 00:20:12.906 A:middle
+declines authorization.
+
+00:20:13.826 --> 00:20:15.246 A:middle
+So for that purpose macOS
+
+00:20:15.376 --> 00:20:17.376 A:middle
+provides a tool, called tccutil,
+
+00:20:18.396 --> 00:20:19.666 A:middle
+that you can use to make the
+
+00:20:19.746 --> 00:20:22.596 A:middle
+operating system forget your
+
+00:20:22.596 --> 00:20:23.876 A:middle
+previous answers to consent
+
+00:20:24.096 --> 00:20:24.436 A:middle
+prompts.
+
+00:20:25.506 --> 00:20:26.626 A:middle
+So the next time that you run
+
+00:20:26.626 --> 00:20:28.676 A:middle
+your app, and your app requires
+
+00:20:28.676 --> 00:20:30.626 A:middle
+authorization, the operating
+
+00:20:30.626 --> 00:20:31.606 A:middle
+system will re-prompt.
+
+00:20:32.776 --> 00:20:33.776 A:middle
+So this tool is provided for
+
+00:20:33.776 --> 00:20:34.966 A:middle
+testing purposes only.
+
+00:20:35.726 --> 00:20:37.406 A:middle
+Your app should not invoke this
+
+00:20:37.406 --> 00:20:38.736 A:middle
+tool automatically, even in
+
+00:20:38.736 --> 00:20:39.386 A:middle
+debug builds.
+
+00:20:39.386 --> 00:20:42.576 A:middle
+So in summary, ensure your
+
+00:20:43.296 --> 00:20:44.806 A:middle
+approval prompts are presented
+
+00:20:44.806 --> 00:20:45.436 A:middle
+in context.
+
+00:20:46.046 --> 00:20:46.996 A:middle
+This is important so that the
+
+00:20:46.996 --> 00:20:48.716 A:middle
+user understands why they are
+
+00:20:48.716 --> 00:20:49.476 A:middle
+being prompted.
+
+00:20:50.966 --> 00:20:53.566 A:middle
+And add Info.plist keys so the
+
+00:20:53.566 --> 00:20:55.726 A:middle
+user understands what your app
+
+00:20:55.726 --> 00:20:57.906 A:middle
+is going to do with the data and
+
+00:20:57.906 --> 00:20:59.006 A:middle
+what functionality will be
+
+00:20:59.006 --> 00:21:01.056 A:middle
+unavailable if they decline.
+

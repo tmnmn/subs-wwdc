@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.246 --> 00:35:00.266 A:middle
+the Browser or the Picker.
+
+00:35:01.716 --> 00:35:03.896 A:middle
+This URL has a security scoped
+
+00:35:03.896 --> 00:35:06.026 A:middle
+resource attached to it.
+
+00:35:06.326 --> 00:35:07.676 A:middle
+You can think of this resource
+
+00:35:07.676 --> 00:35:09.426 A:middle
+as a permissions token granted
+
+00:35:09.426 --> 00:35:11.246 A:middle
+to you by the system, and
+
+00:35:11.306 --> 00:35:13.126 A:middle
+accessing this token would allow
+
+00:35:13.126 --> 00:35:15.436 A:middle
+your app to access this
+
+00:35:15.436 --> 00:35:15.936 A:middle
+document.
+
+00:35:16.356 --> 00:35:19.446 A:middle
+We can start accessing this
+
+00:35:19.446 --> 00:35:21.096 A:middle
+document using the following URL
+
+00:35:21.096 --> 00:35:21.646 A:middle
+API's.
+
+00:35:22.846 --> 00:35:23.666 A:middle
+When we call
+
+00:35:23.836 --> 00:35:25.826 A:middle
+startAccessingSecurityScoped
+
+00:35:25.826 --> 00:35:28.576 A:middle
+Resource, your app gets access
+
+00:35:28.576 --> 00:35:30.206 A:middle
+to this document, and so you can
+
+00:35:30.206 --> 00:35:31.676 A:middle
+start displaying or editing the
+
+00:35:31.676 --> 00:35:32.166 A:middle
+document.
+
+00:35:32.896 --> 00:35:34.386 A:middle
+And, once you're done using it,
+
+00:35:34.386 --> 00:35:36.796 A:middle
+the document, you should call
+
+00:35:36.796 --> 00:35:38.806 A:middle
+the stopAccessingSecurityScoped
+
+00:35:38.806 --> 00:35:40.516 A:middle
+Resource API on that URL.
+
+00:35:41.026 --> 00:35:42.856 A:middle
+And, as you can see here, access
+
+00:35:42.856 --> 00:35:44.686 A:middle
+is again restricted to that
+
+00:35:44.686 --> 00:35:45.196 A:middle
+document.
+
+00:35:47.676 --> 00:35:50.546 A:middle
+So, here's a simple recipe to
+
+00:35:50.546 --> 00:35:51.866 A:middle
+guarantee that you will always
+
+00:35:51.866 --> 00:35:53.366 A:middle
+interact successfully with
+
+00:35:53.416 --> 00:35:54.596 A:middle
+Sandbox documents.
+
+00:35:55.136 --> 00:35:57.556 A:middle
+We walked through this example
+
+00:35:57.626 --> 00:35:58.716 A:middle
+where we make these calls.
+
+00:35:59.996 --> 00:36:01.586 A:middle
+First, we make the
+

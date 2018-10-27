@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.766 --> 00:19:00.056 A:middle
+So you want your app to know
+
+00:19:00.526 --> 00:19:02.086 A:middle
+that as well.
+
+00:19:02.086 --> 00:19:03.076 A:middle
+Topic analysis.
+
+00:19:03.736 --> 00:19:05.696 A:middle
+The Warriors just had an amazing
+
+00:19:05.696 --> 00:19:06.636 A:middle
+comeback win.
+
+00:19:07.166 --> 00:19:08.686 A:middle
+That's a sport post.
+
+00:19:08.906 --> 00:19:10.406 A:middle
+You want your app to be able to
+
+00:19:10.406 --> 00:19:11.186 A:middle
+classify that.
+
+00:19:12.406 --> 00:19:14.876 A:middle
+So to train such a classifier,
+
+00:19:14.876 --> 00:19:16.226 A:middle
+the first thing you do is to
+
+00:19:16.226 --> 00:19:17.436 A:middle
+collect some training data.
+
+00:19:18.326 --> 00:19:21.076 A:middle
+With Create ML, we support a few
+
+00:19:21.076 --> 00:19:22.256 A:middle
+different ways for you to
+
+00:19:22.256 --> 00:19:23.686 A:middle
+organize your training data.
+
+00:19:24.326 --> 00:19:26.776 A:middle
+For example, label directories.
+
+00:19:27.486 --> 00:19:28.796 A:middle
+Here you have two folders.
+
+00:19:29.116 --> 00:19:30.856 A:middle
+One named positive, the other
+
+00:19:30.856 --> 00:19:32.196 A:middle
+one named negative.
+
+00:19:32.836 --> 00:19:34.526 A:middle
+Within each folder, you have a
+
+00:19:34.526 --> 00:19:37.026 A:middle
+number of articles with just raw
+
+00:19:37.026 --> 00:19:40.046 A:middle
+text whose truth label is simply
+
+00:19:40.046 --> 00:19:41.616 A:middle
+the name of the folder.
+
+00:19:43.096 --> 00:19:45.056 A:middle
+Alternatively, you can prepare
+
+00:19:45.056 --> 00:19:46.456 A:middle
+your training data using simple
+
+00:19:46.456 --> 00:19:48.866 A:middle
+CSV where you prepare your raw
+
+00:19:48.866 --> 00:19:50.766 A:middle
+text and the truth label
+
+00:19:50.966 --> 00:19:51.916 A:middle
+separated by comma.
+
+00:19:52.926 --> 00:19:54.926 A:middle
+We also support JSON formatting
+
+00:19:54.926 --> 00:19:56.856 A:middle
+the training data and know that
+
+00:19:57.236 --> 00:19:58.426 A:middle
+we just talk about the training
+
+00:19:58.426 --> 00:20:00.326 A:middle
+data organization and you can
+

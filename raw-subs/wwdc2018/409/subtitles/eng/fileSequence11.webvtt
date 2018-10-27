@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.476 --> 00:11:01.736 A:middle
+code to get access to the
+
+00:11:01.736 --> 00:11:03.816 A:middle
+underlying Swift declarations.
+
+00:11:04.756 --> 00:11:06.546 A:middle
+Now let's get more specific and
+
+00:11:06.546 --> 00:11:08.396 A:middle
+let's talk about how Swift's
+
+00:11:08.546 --> 00:11:10.486 A:middle
+closure parameters are important
+
+00:11:10.486 --> 00:11:11.436 A:middle
+to Objective-C.
+
+00:11:12.226 --> 00:11:14.296 A:middle
+So right now on the screen you
+
+00:11:14.296 --> 00:11:16.186 A:middle
+see an example of a Swift
+
+00:11:16.356 --> 00:11:17.846 A:middle
+protocol called Executor.
+
+00:11:18.796 --> 00:11:20.796 A:middle
+This protocol defines a function
+
+00:11:20.796 --> 00:11:22.726 A:middle
+member called performOperation
+
+00:11:22.976 --> 00:11:24.536 A:middle
+which takes in a closure
+
+00:11:24.536 --> 00:11:25.926 A:middle
+parameter called handler.
+
+00:11:27.246 --> 00:11:29.506 A:middle
+Now in Swift closure parameters
+
+00:11:29.506 --> 00:11:31.236 A:middle
+are non-escaping by default,
+
+00:11:31.576 --> 00:11:33.496 A:middle
+which means that they should not
+
+00:11:33.496 --> 00:11:35.896 A:middle
+be retained or called after the
+
+00:11:35.896 --> 00:11:37.056 A:middle
+function returns.
+
+00:11:38.596 --> 00:11:40.366 A:middle
+Now it can be easy for the
+
+00:11:40.366 --> 00:11:42.486 A:middle
+program and to forget that this
+
+00:11:42.486 --> 00:11:44.826 A:middle
+contract exists when conforming
+
+00:11:44.826 --> 00:11:46.446 A:middle
+to the executive protocol in
+
+00:11:46.446 --> 00:11:47.356 A:middle
+Objective-C.
+
+00:11:48.156 --> 00:11:50.316 A:middle
+For example, as you see right
+
+00:11:50.316 --> 00:11:52.096 A:middle
+now on the slide we have a
+
+00:11:52.096 --> 00:11:54.406 A:middle
+dispatch Executor interface in
+
+00:11:54.406 --> 00:11:56.566 A:middle
+Objective-C and conforms to the
+
+00:11:56.566 --> 00:11:58.676 A:middle
+Executor protocol, so it
+
+00:11:58.676 --> 00:12:00.416 A:middle
+provides the performOperation
+

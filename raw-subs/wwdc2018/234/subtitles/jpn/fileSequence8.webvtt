@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.413 --> 00:08:02.749 align:start position:29% line:-2
+そのため
+改ざんされたスクリプトが
+
+00:08:02.850 --> 00:08:05.686 align:start position:29% line:-1
+提供される危険があります
+
+00:08:06.019 --> 00:08:11.225 align:start position:11% line:-2
+Subresource Integrityは
+これを防ぎます
+
+00:08:11.325 --> 00:08:14.027 align:start position:32% line:-1
+方法はハッシュ化です
+
+00:08:14.127 --> 00:08:18.499 align:start position:20% line:-2
+まずはScriptやLink要素に
+Integrity属性を付与
+
+00:08:18.699 --> 00:08:22.803 align:start position:27% line:-2
+値はハッシュ関数を適用して
+生成します
+
+00:08:23.270 --> 00:08:26.874 align:start position:32% line:-2
+読み込み時に
+別のハッシュ値を計算
+
+00:08:26.974 --> 00:08:31.612 align:start position:27% line:-2
+２つが一致しなければ
+スクリプトは実行されません
+
+00:08:31.712 --> 00:08:36.216 align:start position:29% line:-2
+こうして改ざんファイルの
+読み込みを防ぎます
+
+00:08:36.316 --> 00:08:39.720 align:start position:25% line:-1
+ハッシュ値が一致しない限り―
+
+00:08:40.020 --> 00:08:42.054 align:start position:34% line:-1
+実行されないのです
+
+00:08:42.322 --> 00:08:48.662 align:start position:23% line:-2
+機能を失わないよう
+フォールバックを追加しておけば
+
+00:08:48.762 --> 00:08:52.399 align:start position:27% line:-1
+リソースを再ロードできます
+
+00:08:54.368 --> 00:08:58.972 align:start position:27% line:-2
+これで悪意あるファイルから
+ユーザを守れます
+
+00:08:59.072 --> 00:09:03.076 align:start position:29% line:-2
+そしてITPはユーザの
+プライバシーを保護します
+

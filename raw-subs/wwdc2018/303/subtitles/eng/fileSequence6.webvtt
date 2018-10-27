@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.056 --> 00:06:00.116 A:middle
+code to stop working.
+
+00:06:00.596 --> 00:06:01.986 A:middle
+So when that ever happens, we'll
+
+00:06:01.986 --> 00:06:03.496 A:middle
+change this version number and
+
+00:06:03.496 --> 00:06:04.466 A:middle
+the old version will keep
+
+00:06:04.466 --> 00:06:06.046 A:middle
+working for a period of time so
+
+00:06:06.046 --> 00:06:07.366 A:middle
+you have time to adjust to our
+
+00:06:07.366 --> 00:06:07.856 A:middle
+changes.
+
+00:06:08.746 --> 00:06:10.716 A:middle
+Now after the version, we have
+
+00:06:10.716 --> 00:06:11.506 A:middle
+to add something called the
+
+00:06:11.506 --> 00:06:12.906 A:middle
+resource type name.
+
+00:06:13.356 --> 00:06:14.376 A:middle
+This is a really important
+
+00:06:14.376 --> 00:06:15.306 A:middle
+concept in the API.
+
+00:06:15.806 --> 00:06:17.216 A:middle
+The resource is like the
+
+00:06:17.216 --> 00:06:19.106 A:middle
+fundamental unit of the API.
+
+00:06:19.816 --> 00:06:20.876 A:middle
+Conceptually, you can almost
+
+00:06:20.876 --> 00:06:22.176 A:middle
+think of the API as a big
+
+00:06:22.176 --> 00:06:24.096 A:middle
+collection of resources that you
+
+00:06:24.096 --> 00:06:24.796 A:middle
+operate on.
+
+00:06:25.546 --> 00:06:26.446 A:middle
+We have a whole bunch of
+
+00:06:26.446 --> 00:06:27.586 A:middle
+resources in the API.
+
+00:06:28.336 --> 00:06:29.366 A:middle
+Most of them map to things
+
+00:06:29.366 --> 00:06:30.306 A:middle
+you're familiar with in App
+
+00:06:30.306 --> 00:06:31.156 A:middle
+Store Connect and we're not
+
+00:06:31.156 --> 00:06:32.266 A:middle
+going to talk about all of those
+
+00:06:32.266 --> 00:06:32.616 A:middle
+today.
+
+00:06:32.956 --> 00:06:34.566 A:middle
+We'll focus on just a few and
+
+00:06:34.566 --> 00:06:36.346 A:middle
+we'll start with Users.
+
+00:06:36.996 --> 00:06:38.916 A:middle
+And so here we have a complete
+
+00:06:38.916 --> 00:06:41.216 A:middle
+API URL: api.appstoreconnect
+
+00:06:41.396 --> 00:06:44.876 A:middle
+.apple.com/v1/users.
+
+00:06:45.296 --> 00:06:46.556 A:middle
+This URL represents all the
+
+00:06:46.556 --> 00:06:47.866 A:middle
+users on your team.
+
+00:06:48.566 --> 00:06:49.536 A:middle
+And, of course, you can go get
+
+00:06:49.536 --> 00:06:51.766 A:middle
+this URL and you'll get back a
+
+00:06:51.766 --> 00:06:52.696 A:middle
+JSON object.
+
+00:06:53.526 --> 00:06:54.186 A:middle
+And the first thing you'll
+
+00:06:54.186 --> 00:06:55.546 A:middle
+notice about this subject is it
+
+00:06:55.546 --> 00:06:57.176 A:middle
+has a data property.
+
+00:06:57.826 --> 00:06:59.316 A:middle
+Anytime we send you a successful
+
+00:06:59.316 --> 00:07:01.136 A:middle
+response with data in it, we
+

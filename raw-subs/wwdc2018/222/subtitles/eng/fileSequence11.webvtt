@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.126 --> 00:11:01.646 A:middle
+will fail because they're not
+
+00:11:01.646 --> 00:11:03.246 A:middle
+strings and we never checked to
+
+00:11:03.376 --> 00:11:04.516 A:middle
+make sure they work before we
+
+00:11:04.516 --> 00:11:04.846 A:middle
+cast.
+
+00:11:06.706 --> 00:11:08.206 A:middle
+So, to avoid this, our main
+
+00:11:08.206 --> 00:11:09.476 A:middle
+tenant for the day will always
+
+00:11:09.476 --> 00:11:11.616 A:middle
+be validate first, execute
+
+00:11:11.616 --> 00:11:11.886 A:middle
+later.
+
+00:11:13.186 --> 00:11:14.216 A:middle
+Instead of asserting that you
+
+00:11:14.216 --> 00:11:15.206 A:middle
+know what the structure of the
+
+00:11:15.206 --> 00:11:16.776 A:middle
+data is, check first.
+
+00:11:17.436 --> 00:11:18.436 A:middle
+Don't blindly assume.
+
+00:11:19.426 --> 00:11:20.246 A:middle
+So, let's see how we can do
+
+00:11:20.246 --> 00:11:21.316 A:middle
+that.
+
+00:11:21.646 --> 00:11:22.926 A:middle
+So, here again is that first
+
+00:11:22.926 --> 00:11:23.926 A:middle
+forced downcast.
+
+00:11:24.266 --> 00:11:25.376 A:middle
+And instead of forcibly
+
+00:11:25.376 --> 00:11:27.646 A:middle
+downcasting these values, I can
+
+00:11:27.646 --> 00:11:29.466 A:middle
+conditionally downcast.
+
+00:11:32.336 --> 00:11:35.756 A:middle
+This allows me to validate that
+
+00:11:35.756 --> 00:11:37.366 A:middle
+the data actually contains what
+
+00:11:37.366 --> 00:11:39.696 A:middle
+I want and if that cast fails,
+
+00:11:40.716 --> 00:11:41.936 A:middle
+well I can handle that error
+
+00:11:41.936 --> 00:11:42.966 A:middle
+instead of fatally erroring.
+
+00:11:44.486 --> 00:11:45.666 A:middle
+Now, similarly, later
+
+00:11:46.306 --> 00:11:47.476 A:middle
+downcasting that list of
+
+00:11:47.476 --> 00:11:49.136 A:middle
+strings, instead of forcibly
+
+00:11:49.136 --> 00:11:50.766 A:middle
+downcasting, again I can
+
+00:11:50.766 --> 00:11:52.106 A:middle
+conditionally downcast.
+
+00:11:52.536 --> 00:11:53.596 A:middle
+And in this case, instead of
+
+00:11:53.666 --> 00:11:55.396 A:middle
+throwing an error, I can give a
+
+00:11:55.396 --> 00:11:56.606 A:middle
+default value that allows
+
+00:11:56.606 --> 00:11:57.696 A:middle
+execution to continue.
+
+00:11:57.846 --> 00:11:59.526 A:middle
+In this case, I'll simply ignore
+
+00:11:59.526 --> 00:12:01.046 A:middle
+any product listings that don't
+

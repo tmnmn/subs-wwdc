@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.946 --> 00:11:00.106 A:middle
+ID.
+
+00:11:01.256 --> 00:11:02.206 A:middle
+And it's important because it
+
+00:11:02.206 --> 00:11:03.436 A:middle
+shows up in all subsequent
+
+00:11:03.436 --> 00:11:04.786 A:middle
+renewal transactions.
+
+00:11:05.136 --> 00:11:06.456 A:middle
+Let's take a look at how this
+
+00:11:06.456 --> 00:11:06.796 A:middle
+works.
+
+00:11:07.206 --> 00:11:07.746 A:middle
+So let's say that you're
+
+00:11:07.746 --> 00:11:09.366 A:middle
+verifying a renewal transaction,
+
+00:11:09.676 --> 00:11:10.646 A:middle
+this happens in just the same
+
+00:11:10.646 --> 00:11:11.466 A:middle
+way you might use the same
+
+00:11:11.466 --> 00:11:12.996 A:middle
+process transaction endpoint on
+
+00:11:12.996 --> 00:11:13.546 A:middle
+your own server.
+
+00:11:14.716 --> 00:11:16.236 A:middle
+When you do those techniques of
+
+00:11:16.236 --> 00:11:18.186 A:middle
+verifying the transactions a
+
+00:11:18.186 --> 00:11:19.736 A:middle
+valid one, and you get up to
+
+00:11:19.736 --> 00:11:20.806 A:middle
+that stage of updating the
+
+00:11:20.806 --> 00:11:22.766 A:middle
+user's subscription state you'll
+
+00:11:22.766 --> 00:11:23.686 A:middle
+observe here that there's now
+
+00:11:23.686 --> 00:11:25.216 A:middle
+multiple transactions since this
+
+00:11:25.216 --> 00:11:26.556 A:middle
+is a renewal transaction.
+
+00:11:27.976 --> 00:11:29.766 A:middle
+Now according to your existing
+
+00:11:29.766 --> 00:11:31.576 A:middle
+server-side logic this latest
+
+00:11:31.576 --> 00:11:32.836 A:middle
+expires date is now a date in
+
+00:11:32.836 --> 00:11:34.296 A:middle
+the past, so the user is not
+
+00:11:34.396 --> 00:11:35.516 A:middle
+currently a subscriber and you
+
+00:11:35.516 --> 00:11:36.726 A:middle
+need to figure out are they
+
+00:11:36.726 --> 00:11:38.306 A:middle
+still a subscriber based on the
+
+00:11:38.306 --> 00:11:39.206 A:middle
+data in this receipt.
+
+00:11:40.126 --> 00:11:41.926 A:middle
+So how can you use this receipt
+
+00:11:41.926 --> 00:11:43.656 A:middle
+data and make that deduction?
+
+00:11:43.886 --> 00:11:46.026 A:middle
+Well for discovering whether or
+
+00:11:46.026 --> 00:11:47.176 A:middle
+not the user has an active
+
+00:11:47.176 --> 00:11:48.366 A:middle
+subscription you can pull out
+
+00:11:48.366 --> 00:11:50.406 A:middle
+the transactions associated with
+
+00:11:50.406 --> 00:11:52.106 A:middle
+that original transaction ID.
+
+00:11:53.346 --> 00:11:54.536 A:middle
+And then you can find the
+
+00:11:54.536 --> 00:11:55.776 A:middle
+transaction that has the latest
+
+00:11:55.806 --> 00:11:56.606 A:middle
+expires date.
+
+00:11:57.226 --> 00:11:58.476 A:middle
+Now if you find a date in the
+
+00:11:58.476 --> 00:12:00.226 A:middle
+past that's an indication that
+

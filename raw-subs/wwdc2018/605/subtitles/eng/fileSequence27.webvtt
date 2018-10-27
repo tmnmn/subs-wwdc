@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.096 --> 00:27:00.356 A:middle
+Overall, we reduce the number of
+
+00:27:00.356 --> 00:27:02.126 A:middle
+bits for each object by more
+
+00:27:02.916 --> 00:27:04.706 A:middle
+than half.
+
+00:27:04.706 --> 00:27:05.656 A:middle
+Now, even though we've
+
+00:27:05.706 --> 00:27:08.106 A:middle
+compressed the numbers, property
+
+00:27:08.106 --> 00:27:09.616 A:middle
+lists still have a fair amount
+
+00:27:09.616 --> 00:27:11.526 A:middle
+of overhead for the metadata
+
+00:27:11.526 --> 00:27:13.466 A:middle
+around it, sending each field by
+
+00:27:13.466 --> 00:27:13.686 A:middle
+name.
+
+00:27:14.796 --> 00:27:16.226 A:middle
+We said there's no reason for
+
+00:27:16.226 --> 00:27:16.436 A:middle
+that.
+
+00:27:16.866 --> 00:27:17.886 A:middle
+We all know what these objects
+
+00:27:17.886 --> 00:27:18.106 A:middle
+are.
+
+00:27:18.106 --> 00:27:19.786 A:middle
+That's not information we need.
+
+00:27:20.446 --> 00:27:24.456 A:middle
+So, to do this, we implemented a
+
+00:27:24.456 --> 00:27:26.386 A:middle
+new serialization strategy which
+
+00:27:26.386 --> 00:27:27.136 A:middle
+we call a BitStream.
+
+00:27:28.416 --> 00:27:29.826 A:middle
+BitStreams are designed to pack
+
+00:27:29.876 --> 00:27:31.066 A:middle
+the information into as few
+
+00:27:31.066 --> 00:27:32.926 A:middle
+bytes as possible by providing
+
+00:27:32.926 --> 00:27:34.216 A:middle
+fast serialization and
+
+00:27:34.216 --> 00:27:34.986 A:middle
+deserialization.
+
+00:27:34.986 --> 00:27:36.966 A:middle
+Now, our implementation is
+
+00:27:36.996 --> 00:27:38.716 A:middle
+purpose-built for communicating
+
+00:27:38.716 --> 00:27:40.956 A:middle
+binary data with low latency in
+
+00:27:40.956 --> 00:27:42.056 A:middle
+an application like this.
+
+00:27:42.916 --> 00:27:44.706 A:middle
+Strategies like this wouldn't
+
+00:27:44.706 --> 00:27:47.036 A:middle
+work well for data that needs to
+
+00:27:47.036 --> 00:27:48.946 A:middle
+persist or data that, where you
+
+00:27:48.946 --> 00:27:50.256 A:middle
+need to keep track of the schema
+
+00:27:50.476 --> 00:27:51.626 A:middle
+and watch it changing over time.
+
+00:27:52.526 --> 00:27:54.376 A:middle
+But for an ephemeral application
+
+00:27:54.376 --> 00:27:55.576 A:middle
+like this, it was just the
+
+00:27:55.986 --> 00:27:56.096 A:middle
+thing.
+
+00:27:57.896 --> 00:27:59.316 A:middle
+To help implement this, we
+
+00:27:59.316 --> 00:28:01.606 A:middle
+created two protocols, BitStream
+

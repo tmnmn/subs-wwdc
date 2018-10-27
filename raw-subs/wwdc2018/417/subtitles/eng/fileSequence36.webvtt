@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.316 --> 00:36:00.806 A:middle
+In this screenshot, I've added
+
+00:36:00.806 --> 00:36:02.226 A:middle
+an environment variable named
+
+00:36:02.306 --> 00:36:04.056 A:middle
+IS-UNIT-TESTING set to 1.
+
+00:36:06.096 --> 00:36:08.066 A:middle
+Then, modify your app delegate's
+
+00:36:08.216 --> 00:36:09.976 A:middle
+appDidFinishLaunching code to
+
+00:36:09.976 --> 00:36:11.266 A:middle
+check for this condition, using
+
+00:36:11.266 --> 00:36:12.406 A:middle
+code similar to this.
+
+00:36:13.606 --> 00:36:15.136 A:middle
+Now, if you do this, be sure
+
+00:36:15.136 --> 00:36:16.866 A:middle
+that the code you skip truly is
+
+00:36:16.866 --> 00:36:18.526 A:middle
+nonessential for your unit test
+
+00:36:18.526 --> 00:36:19.000 A:middle
+to function.
+
+00:36:23.106 --> 00:36:27.226 A:middle
+So, to wrap up, Brian started by
+
+00:36:27.226 --> 00:36:28.376 A:middle
+reminding us about the testing
+
+00:36:28.376 --> 00:36:29.976 A:middle
+pyramid and how to have a
+
+00:36:29.976 --> 00:36:31.226 A:middle
+balanced testing strategy in
+
+00:36:31.226 --> 00:36:32.846 A:middle
+your app, showing several
+
+00:36:32.846 --> 00:36:34.656 A:middle
+practical techniques for testing
+
+00:36:34.656 --> 00:36:35.666 A:middle
+network operations.
+
+00:36:36.956 --> 00:36:38.596 A:middle
+Then, I talked about isolating
+
+00:36:38.596 --> 00:36:40.886 A:middle
+foundation notifications and
+
+00:36:40.886 --> 00:36:42.056 A:middle
+using dependency injection.
+
+00:36:43.506 --> 00:36:44.906 A:middle
+We offered a solution to one of
+
+00:36:44.906 --> 00:36:46.326 A:middle
+the most common challenges when
+
+00:36:46.326 --> 00:36:48.196 A:middle
+writing tests, interacting with
+
+00:36:48.196 --> 00:36:50.306 A:middle
+external classes, even if they
+
+00:36:50.306 --> 00:36:51.056 A:middle
+have a delegate.
+
+00:36:52.356 --> 00:36:53.506 A:middle
+And we shared some tips for
+
+00:36:53.506 --> 00:36:55.036 A:middle
+keeping your tests running fast
+
+00:36:55.036 --> 00:36:56.666 A:middle
+and avoiding artificial delays.
+
+00:36:57.866 --> 00:36:58.836 A:middle
+We really hope you'll find these
+
+00:36:58.836 --> 00:37:00.126 A:middle
+tests useful and look for ways
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.956 --> 00:25:00.966 A:middle
+Now there is no way to inject
+
+00:25:00.966 --> 00:25:03.006 A:middle
+script into your web pages and
+
+00:25:03.006 --> 00:25:04.796 A:middle
+make them execute because you
+
+00:25:04.796 --> 00:25:06.326 A:middle
+set the policy for the page.
+
+00:25:08.326 --> 00:25:10.946 A:middle
+OK. What could happen if your
+
+00:25:10.946 --> 00:25:12.096 A:middle
+CDN gets compromised?
+
+00:25:12.526 --> 00:25:14.186 A:middle
+This is bad and let's just hope
+
+00:25:14.186 --> 00:25:15.986 A:middle
+it doesn't happen, but it can
+
+00:25:16.796 --> 00:25:17.266 A:middle
+happen.
+
+00:25:17.816 --> 00:25:19.216 A:middle
+So, you're loading the framework
+
+00:25:19.216 --> 00:25:22.486 A:middle
+off of that CDN and you really
+
+00:25:22.486 --> 00:25:24.056 A:middle
+rely on this because it's
+
+00:25:24.056 --> 00:25:25.406 A:middle
+executing with the same powers
+
+00:25:25.406 --> 00:25:26.516 A:middle
+as your own scripts.
+
+00:25:28.136 --> 00:25:30.016 A:middle
+Now, what if they've been
+
+00:25:30.016 --> 00:25:31.656 A:middle
+compromised and are redirecting
+
+00:25:31.656 --> 00:25:33.416 A:middle
+that script request to
+
+00:25:33.456 --> 00:25:35.286 A:middle
+evil.example, loading attack
+
+00:25:35.366 --> 00:25:35.666 A:middle
+code.
+
+00:25:36.526 --> 00:25:38.126 A:middle
+Now suddenly you thought you got
+
+00:25:38.126 --> 00:25:40.146 A:middle
+a framework-- maybe they were
+
+00:25:40.146 --> 00:25:41.406 A:middle
+nice enough to bundle in the
+
+00:25:41.406 --> 00:25:42.846 A:middle
+framework, but they're also
+
+00:25:42.846 --> 00:25:44.156 A:middle
+doing some nasty things.
+
+00:25:44.866 --> 00:25:46.836 A:middle
+So, what did you do?
+
+00:25:47.546 --> 00:25:49.426 A:middle
+Well, you whitelisted script
+
+00:25:49.426 --> 00:25:50.966 A:middle
+source in your content security
+
+00:25:50.966 --> 00:25:53.626 A:middle
+policy, so the browser will just
+
+00:25:53.626 --> 00:25:55.396 A:middle
+refuse to execute any code
+
+00:25:55.396 --> 00:25:56.736 A:middle
+coming from evil.example.
+
+00:25:58.246 --> 00:26:01.026 A:middle
+OK. Oh, now the attacker needs
+

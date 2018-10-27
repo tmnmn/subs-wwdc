@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:55.726 --> 00:04:00.876 A:middle
+can actually make it dirty.
+
+00:04:01.056 --> 00:04:03.146 A:middle
+Dirty memory is any memory that
+
+00:04:03.146 --> 00:04:04.556 A:middle
+has been written to by your app.
+
+00:04:05.676 --> 00:04:07.516 A:middle
+Now, these can be objects,
+
+00:04:07.946 --> 00:04:09.016 A:middle
+anything that has been malloced
+
+00:04:09.146 --> 00:04:10.416 A:middle
+-- strings, arrays, et cetera.
+
+00:04:11.056 --> 00:04:14.186 A:middle
+It can be decoded image buffers,
+
+00:04:14.366 --> 00:04:15.426 A:middle
+which we'll talk about in a bit.
+
+00:04:15.926 --> 00:04:18.576 A:middle
+And it can also be frameworks.
+
+00:04:19.305 --> 00:04:21.196 A:middle
+Frameworks have a data section
+
+00:04:21.196 --> 00:04:23.136 A:middle
+and a data dirty section as
+
+00:04:23.136 --> 00:04:23.356 A:middle
+well.
+
+00:04:24.256 --> 00:04:25.226 A:middle
+Now, those are always going to
+
+00:04:25.226 --> 00:04:26.786 A:middle
+count towards dirty memory.
+
+00:04:27.926 --> 00:04:29.216 A:middle
+And if you might have noticed, I
+
+00:04:29.216 --> 00:04:30.446 A:middle
+brought up frameworks twice.
+
+00:04:30.776 --> 00:04:32.486 A:middle
+Yes, frameworks that you link
+
+00:04:32.486 --> 00:04:34.976 A:middle
+actually use memory and dirty
+
+00:04:34.976 --> 00:04:35.286 A:middle
+memory.
+
+00:04:35.766 --> 00:04:36.976 A:middle
+Now, this is just a necessary
+
+00:04:36.976 --> 00:04:39.066 A:middle
+part of linking frameworks, but
+
+00:04:39.066 --> 00:04:39.756 A:middle
+if you maintain your own
+
+00:04:39.756 --> 00:04:41.776 A:middle
+framework, singletons and global
+
+00:04:41.776 --> 00:04:43.726 A:middle
+initializers are a great way to
+
+00:04:43.726 --> 00:04:45.256 A:middle
+reduce the amount of dirty
+
+00:04:45.256 --> 00:04:46.786 A:middle
+memory they use because a
+
+00:04:46.786 --> 00:04:48.146 A:middle
+singleton's always going to be
+
+00:04:48.226 --> 00:04:49.246 A:middle
+in memory after it's been
+
+00:04:49.366 --> 00:04:51.376 A:middle
+created, and these initializers
+
+00:04:51.376 --> 00:04:52.696 A:middle
+are also run whenever the
+
+00:04:52.696 --> 00:04:53.766 A:middle
+framework is linked or the class
+
+00:04:53.766 --> 00:04:53.976 A:middle
+is loaded.
+
+00:04:57.346 --> 00:04:59.546 A:middle
+Now, compressed memory is pretty
+

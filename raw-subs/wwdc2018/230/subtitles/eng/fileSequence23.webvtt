@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.526 --> 00:23:00.346 A:middle
+elements property.
+
+00:23:01.736 --> 00:23:03.706 A:middle
+We also saw that when Bhavya was
+
+00:23:03.706 --> 00:23:04.606 A:middle
+swiping through elements in the
+
+00:23:04.606 --> 00:23:06.466 A:middle
+app that the shelter info view
+
+00:23:06.466 --> 00:23:08.026 A:middle
+was split up into three distinct
+
+00:23:08.026 --> 00:23:09.346 A:middle
+elements, the name of the
+
+00:23:09.346 --> 00:23:10.986 A:middle
+shelter, the location button,
+
+00:23:10.986 --> 00:23:11.776 A:middle
+and a call button.
+
+00:23:13.216 --> 00:23:14.986 A:middle
+The buttons have the same issue
+
+00:23:14.986 --> 00:23:16.816 A:middle
+of lacking contexts as labels.
+
+00:23:17.186 --> 00:23:18.866 A:middle
+If you reach them first without
+
+00:23:18.866 --> 00:23:19.466 A:middle
+reaching the name of the
+
+00:23:19.466 --> 00:23:21.146 A:middle
+shelter, then it's unclear what
+
+00:23:21.146 --> 00:23:22.066 A:middle
+they correspond to.
+
+00:23:23.616 --> 00:23:24.746 A:middle
+Having these three elements
+
+00:23:24.746 --> 00:23:26.396 A:middle
+exist separately increases the
+
+00:23:26.396 --> 00:23:27.666 A:middle
+amount of elements that a user
+
+00:23:27.666 --> 00:23:28.536 A:middle
+is going to have to navigate
+
+00:23:28.536 --> 00:23:29.536 A:middle
+through to find the content
+
+00:23:29.536 --> 00:23:30.246 A:middle
+they're looking for.
+
+00:23:30.636 --> 00:23:31.736 A:middle
+So it makes more sense to
+
+00:23:31.736 --> 00:23:33.556 A:middle
+combine them into one and give
+
+00:23:33.556 --> 00:23:34.586 A:middle
+us quicker navigation.
+
+00:23:36.216 --> 00:23:37.256 A:middle
+As well, we want to think about
+
+00:23:37.256 --> 00:23:38.616 A:middle
+what the priority is here.
+
+00:23:39.176 --> 00:23:40.236 A:middle
+The most relevant piece of
+
+00:23:40.236 --> 00:23:41.586 A:middle
+information is what shelter the
+
+00:23:41.586 --> 00:23:42.546 A:middle
+dog is housed in.
+
+00:23:42.826 --> 00:23:44.716 A:middle
+So we'll provide that first and
+
+00:23:44.716 --> 00:23:46.206 A:middle
+add supplementary actions for
+
+00:23:46.206 --> 00:23:47.206 A:middle
+locating and calling the
+
+00:23:47.206 --> 00:23:47.656 A:middle
+shelter.
+
+00:23:49.086 --> 00:23:50.476 A:middle
+To accomplish this, we can use
+
+00:23:50.476 --> 00:23:52.096 A:middle
+our accessibility custom actions
+
+00:23:52.096 --> 00:23:52.396 A:middle
+API.
+
+00:23:53.306 --> 00:23:55.096 A:middle
+This allows us to add actions to
+
+00:23:55.096 --> 00:23:56.276 A:middle
+an element that the user can
+
+00:23:56.276 --> 00:23:58.106 A:middle
+cycle through until they find
+
+00:23:58.106 --> 00:23:59.206 A:middle
+the one they're looking for and
+
+00:23:59.206 --> 00:23:59.826 A:middle
+activate it.
+

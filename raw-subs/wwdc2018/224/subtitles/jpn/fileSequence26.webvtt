@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.060 --> 00:26:03.630 align:start position:23% line:-2
+これはアサーションが正常に
+機能していることを示すものです
+
+00:26:04.531 --> 00:26:06.934 align:start position:25% line:-1
+SQLデバッグを有効にすると
+
+00:26:07.034 --> 00:26:09.403 align:start position:21% line:-1
+フェッチ要求のためのセレクト文や
+
+00:26:09.503 --> 00:26:11.205 align:start position:32% line:-1
+所要時間が見られます
+
+00:26:11.605 --> 00:26:14.842 align:start position:23% line:-2
+４つ目の段階では
+“EXPLAIN”が得られます
+
+00:26:14.942 --> 00:26:17.244 align:start position:34% line:-2
+それは与えられた
+セレクト文のための
+
+00:26:17.344 --> 00:26:19.379 align:start position:30% line:-1
+クエリプランを示します
+
+00:26:19.479 --> 00:26:24.384 align:start position:21% line:-2
+ここではテーブルスキャンを通して
+テーブルビューが選択されています
+
+00:26:24.484 --> 00:26:27.054 align:start position:32% line:-2
+タイムスタンプ上の
+ORDER BY用に
+
+00:26:27.154 --> 00:26:29.990 align:start position:21% line:-2
+メモリ内の一時的なB-treeを
+使っています
+
+00:26:30.424 --> 00:26:32.593 align:start position:29% line:-2
+これは潜在的な
+パフォーマンスの問題です
+
+00:26:32.693 --> 00:26:36.430 align:start position:25% line:-2
+アプリケーションを動かす際は
+こうしたメッセージを利用して
+
+00:26:36.530 --> 00:26:39.500 align:start position:25% line:-1
+ムダのある箇所を確認できます
+
+00:26:40.267 --> 00:26:41.802 align:start position:38% line:-1
+修正の方法は？
+
+00:26:42.870 --> 00:26:43.604 align:start position:45% line:-1
+答えは
+
+00:26:44.471 --> 00:26:47.040 align:start position:27% line:-1
+SQLite 3にあります
+
+00:26:47.407 --> 00:26:51.612 align:start position:20% line:-2
+データベースを開き SQLログから
+セレクトクエリを渡せば
+
+00:26:51.879 --> 00:26:53.914 align:start position:32% line:-2
+エキスパートモードを
+有効にできます
+
+00:26:54.214 --> 00:26:57.718 align:start position:25% line:-2
+これはクエリを分析して
+カバリングインデックスを作り
+
+00:26:57.818 --> 00:27:00.621 align:start position:30% line:-2
+最適なソリューションを
+与えてくれます
+

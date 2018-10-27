@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.116 --> 00:02:00.496 A:middle
+an Encrypted Key Response, also
+
+00:02:00.496 --> 00:02:01.996 A:middle
+known as CKC.
+
+00:02:02.486 --> 00:02:05.046 A:middle
+Finally, the app provided CKC
+
+00:02:05.046 --> 00:02:07.426 A:middle
+back to AVFoundation so it could
+
+00:02:07.826 --> 00:02:09.726 A:middle
+start decryption and playback.
+
+00:02:11.286 --> 00:02:13.886 A:middle
+Until recently, apps used the
+
+00:02:13.886 --> 00:02:16.136 A:middle
+generic AVFoundation API called
+
+00:02:16.136 --> 00:02:18.036 A:middle
+AVAssetResourceLoader to deliver
+
+00:02:18.036 --> 00:02:19.166 A:middle
+content decryption keys.
+
+00:02:20.676 --> 00:02:23.126 A:middle
+But last year we introduced the
+
+00:02:23.126 --> 00:02:25.336 A:middle
+new AVFoundation Class called
+
+00:02:25.336 --> 00:02:27.036 A:middle
+AVContentKeySession that was
+
+00:02:27.036 --> 00:02:28.436 A:middle
+designed specifically around
+
+00:02:28.436 --> 00:02:29.586 A:middle
+content decryption keys.
+
+00:02:31.776 --> 00:02:33.836 A:middle
+We had two goals in mind for
+
+00:02:33.836 --> 00:02:35.036 A:middle
+AVContentKeySession.
+
+00:02:35.826 --> 00:02:38.076 A:middle
+One, to simplify key loading
+
+00:02:38.076 --> 00:02:40.356 A:middle
+process and provide applications
+
+00:02:40.356 --> 00:02:42.086 A:middle
+better control over the life
+
+00:02:42.086 --> 00:02:43.226 A:middle
+cycle of content decryption
+
+00:02:43.226 --> 00:02:43.686 A:middle
+keys.
+
+00:02:43.936 --> 00:02:47.406 A:middle
+And two, serve as a home for new
+
+00:02:47.406 --> 00:02:48.866 A:middle
+content protection features.
+
+00:02:51.076 --> 00:02:53.006 A:middle
+AVContentKeySession adoption has
+
+00:02:53.006 --> 00:02:54.196 A:middle
+been great, so far.
+
+00:02:54.556 --> 00:02:56.266 A:middle
+And already, a majority of
+
+00:02:56.266 --> 00:02:57.546 A:middle
+FairPlay Streaming keys
+
+00:02:58.016 --> 00:03:00.336 A:middle
+delivered on our platforms come
+

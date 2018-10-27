@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.599 --> 00:40:00.934 align:start position:21% line:-1
+SubSequenceの役割です
+
+00:40:01.168 --> 00:40:06.940 align:start position:21% line:-2
+スライスするサブスクリプト操作の
+結果の型というだけでは
+
+00:40:07.041 --> 00:40:09.076 align:start position:36% line:-1
+実際に使えません
+
+00:40:09.176 --> 00:40:15.582 align:start position:16% line:-2
+では SubSequenceの観点から
+このアルゴリズムを見ましょう
+
+00:40:15.682 --> 00:40:17.985 align:start position:34% line:-1
+これは再帰的であり
+
+00:40:18.085 --> 00:40:22.589 align:start position:18% line:-2
+SubSequence型の値となった
+Sliceを形成します
+
+00:40:22.723 --> 00:40:27.728 align:start position:9% line:-2
+次にsortedInsertionPointを
+再帰的に呼びますが
+
+00:40:27.828 --> 00:40:34.034 align:start position:20% line:-2
+返されたSubSequence型は
+コレクションでなければなりません
+
+00:40:34.334 --> 00:40:39.473 align:start position:27% line:-2
+呼び出し時 コレクションの
+要素型の値を渡しますが
+
+00:40:39.573 --> 00:40:45.546 align:start position:16% line:-2
+再帰的呼び出しで期待されるのは
+このSubSequenceの要素型の値
+
+00:40:45.746 --> 00:40:51.785 align:start position:27% line:-2
+理にかなう唯一の方法は
+要素型が同一であることです
+
+00:40:52.186 --> 00:40:57.424 align:start position:27% line:-2
+インデックスが返される時も
+同じ問題が起こります
+
+00:40:57.558 --> 00:41:00.527 align:start position:14% line:-1
+SubSequence側から出されますが
+

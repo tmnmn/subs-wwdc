@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:02.276 --> 00:04:04.278 align:start position:30% line:-1
+初期のプロトタイプでは
+
+00:04:04.478 --> 00:04:08.815 align:start position:21% line:-2
+View Controllerの
+１メソッドで行っていました
+
+00:04:09.049 --> 00:04:10.584 align:start position:38% line:-1
+このようにです
+
+00:04:12.586 --> 00:04:15.656 align:start position:32% line:-2
+ユーザの位置で
+パラメータを取ります
+
+00:04:17.357 --> 00:04:19.091 align:start position:27% line:-1
+位置をクエリパラメータとし
+
+00:04:19.192 --> 00:04:23.630 align:start position:23% line:-2
+サービスAPIエンドポイントの
+URLを生成
+
+00:04:26.066 --> 00:04:29.169 align:start position:25% line:-2
+そしてFoundationの
+URLSessionを使い
+
+00:04:29.269 --> 00:04:32.873 align:start position:23% line:-2
+URLのGETリクエストのため
+データタスクを作成
+
+00:04:34.875 --> 00:04:38.278 align:start position:34% line:-2
+サーバが応答して
+データをアンラップ
+
+00:04:39.413 --> 00:04:42.616 align:start position:9% line:-2
+FoundationのJSONDecoderで
+デコードし
+
+00:04:42.883 --> 00:04:45.419 align:start position:14% line:-1
+PointOfInterest値の配列へ
+
+00:04:45.519 --> 00:04:50.057 align:start position:27% line:-2
+これは他で宣言した構造体で
+プロトコルに準拠します
+
+00:04:51.792 --> 00:04:57.564 align:start position:29% line:-2
+それをプロパティに保存し
+テーブルビューで表示
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.916 --> 00:34:02.546 A:middle
+So on X86-64 we only have 16 now
+
+00:34:02.546 --> 00:34:04.526 A:middle
+we have 32, so this is a lot of
+
+00:34:04.526 --> 00:34:07.196 A:middle
+data to process.
+
+00:34:07.326 --> 00:34:09.085 A:middle
+And even if for some reason the
+
+00:34:09.085 --> 00:34:10.735 A:middle
+auto-vectorizer is not able to
+
+00:34:11.176 --> 00:34:13.786 A:middle
+make use of these vectors then
+
+00:34:13.786 --> 00:34:15.806 A:middle
+we still have ore skill
+
+00:34:15.806 --> 00:34:17.235 A:middle
+registers or even for code that
+
+00:34:17.235 --> 00:34:18.696 A:middle
+just does float or double.
+
+00:34:19.556 --> 00:34:21.166 A:middle
+There are lots of performance
+
+00:34:21.166 --> 00:34:22.985 A:middle
+benefits in AVX-512.
+
+00:34:23.916 --> 00:34:25.636 A:middle
+So let's look at how we can
+
+00:34:26.246 --> 00:34:28.206 A:middle
+exploit it in my compute
+
+00:34:28.235 --> 00:34:29.525 A:middle
+[inaudible] expensive function.
+
+00:34:30.106 --> 00:34:32.886 A:middle
+So the first thing I'm going to
+
+00:34:32.886 --> 00:34:35.065 A:middle
+do is to keep around my existing
+
+00:34:35.065 --> 00:34:36.676 A:middle
+function because that's going to
+
+00:34:36.676 --> 00:34:38.646 A:middle
+be the fallback that I have that
+
+00:34:38.646 --> 00:34:39.896 A:middle
+runs on all Macs.
+
+00:34:40.326 --> 00:34:43.275 A:middle
+Next, I can try to specialize my
+
+00:34:43.275 --> 00:34:43.696 A:middle
+function.
+
+00:34:44.025 --> 00:34:45.815 A:middle
+So one way to do that is using
+
+00:34:45.815 --> 00:34:46.806 A:middle
+the target attributes.
+
+00:34:47.306 --> 00:34:50.826 A:middle
+And that tells the compiler that
+
+00:34:50.826 --> 00:34:52.666 A:middle
+it's okay to assume that this
+
+00:34:52.666 --> 00:34:54.516 A:middle
+function has AVX-512, so it only
+
+00:34:54.516 --> 00:34:57.206 A:middle
+runs on an iMac Pro.
+
+00:34:57.416 --> 00:34:58.926 A:middle
+So if you use simd.h, for
+
+00:34:58.926 --> 00:35:01.126 A:middle
+instance the simd float4 128-bit
+

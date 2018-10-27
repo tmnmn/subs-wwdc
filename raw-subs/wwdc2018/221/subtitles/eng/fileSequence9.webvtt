@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.056 --> 00:09:00.066 A:middle
+glyphs is not always one-to-one.
+
+00:09:01.476 --> 00:09:03.286 A:middle
+So here this string ffi has
+
+00:09:03.386 --> 00:09:04.996 A:middle
+three characters, but it could
+
+00:09:04.996 --> 00:09:06.476 A:middle
+be represented by a single glyph
+
+00:09:06.556 --> 00:09:07.096 A:middle
+for the ligature.
+
+00:09:07.096 --> 00:09:09.176 A:middle
+And you can go in the other
+
+00:09:09.176 --> 00:09:09.726 A:middle
+direction too.
+
+00:09:10.456 --> 00:09:11.626 A:middle
+Here we have n [inaudible] which
+
+00:09:11.846 --> 00:09:13.436 A:middle
+is a single character that can
+
+00:09:13.436 --> 00:09:14.436 A:middle
+be represented by multiple
+
+00:09:14.436 --> 00:09:16.786 A:middle
+glyphs: one for the n and one
+
+00:09:16.786 --> 00:09:17.226 A:middle
+for the tilde.
+
+00:09:18.836 --> 00:09:20.416 A:middle
+And so going back to our diagram
+
+00:09:20.416 --> 00:09:22.456 A:middle
+here, we have NSLayoutManager
+
+00:09:22.456 --> 00:09:24.206 A:middle
+performing glyph generation and
+
+00:09:24.206 --> 00:09:24.726 A:middle
+glyph layout.
+
+00:09:25.486 --> 00:09:27.036 A:middle
+And glyph generation is where
+
+00:09:27.036 --> 00:09:28.096 A:middle
+the layout manager takes the
+
+00:09:28.096 --> 00:09:29.446 A:middle
+characters and figures out what
+
+00:09:29.476 --> 00:09:30.396 A:middle
+glyphs need to be drawn.
+
+00:09:31.276 --> 00:09:32.716 A:middle
+And glyph layout is where the
+
+00:09:32.716 --> 00:09:34.056 A:middle
+layout manager positions those
+
+00:09:34.056 --> 00:09:35.646 A:middle
+glyphs for display in your view.
+
+00:09:36.116 --> 00:09:38.416 A:middle
+And there's a lot more to learn
+
+00:09:38.416 --> 00:09:39.876 A:middle
+about the layout manager from
+
+00:09:39.876 --> 00:09:41.536 A:middle
+these past WWDC sessions and
+
+00:09:41.536 --> 00:09:42.216 A:middle
+documentation.
+
+00:09:42.596 --> 00:09:43.916 A:middle
+And you can access them from,
+
+00:09:44.356 --> 00:09:45.596 A:middle
+you guessed it, the more
+
+00:09:45.596 --> 00:09:46.936 A:middle
+information link at the end of
+
+00:09:47.596 --> 00:09:49.416 A:middle
+the session.
+
+00:09:49.576 --> 00:09:51.976 A:middle
+Okay. So now you understand the
+
+00:09:51.976 --> 00:09:53.096 A:middle
+phases of the text system.
+
+00:09:53.466 --> 00:09:54.296 A:middle
+And you know the TextKit
+
+00:09:54.296 --> 00:09:55.366 A:middle
+components that make up each
+
+00:09:55.366 --> 00:09:55.666 A:middle
+phase.
+
+00:09:57.276 --> 00:09:58.796 A:middle
+So now let's explore choosing
+
+00:09:58.796 --> 00:10:00.336 A:middle
+the right configuration of these
+

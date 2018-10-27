@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:53.427 --> 00:55:00.033 align:start position:27% line:-2
+ネットワークの可動性を
+どう扱うかに対する解決策は
+
+00:55:00.134 --> 00:55:03.704 align:start position:18% line:-2
+マルチパスコネクションの
+Multipath TCPにあります
+
+00:55:04.104 --> 00:55:08.142 align:start position:9% line:-2
+まずはパラメータに
+multipathServiceTypeと打ち
+
+00:55:08.642 --> 00:55:14.081 align:start position:16% line:-2
+クライアント上で
+Multipath TCPを起動します
+
+00:55:14.281 --> 00:55:18.886 align:start position:23% line:-2
+すると接続は自動的に
+ネットワーク間を行き来できます
+
+00:55:18.986 --> 00:55:24.024 align:start position:25% line:-2
+アプリケーション内での作業は
+何も必要ありません
+
+00:55:24.858 --> 00:55:29.029 align:start position:27% line:-2
+これはURLセッションでも
+利用可能です
+
+00:55:30.731 --> 00:55:35.002 align:start position:18% line:-2
+Network.frameworkで
+注目したいことがあります
+
+00:55:35.569 --> 00:55:40.541 align:start position:23% line:-2
+それはインターフェイスタイプを
+制限すると
+
+00:55:40.641 --> 00:55:42.743 align:start position:25% line:-2
+Multipath TCPが
+適用されることです
+
+00:55:42.843 --> 00:55:47.548 align:start position:21% line:-2
+つまり マルチパスコネクションで
+モバイルデータ通信を避けたい時は
+
+00:55:47.814 --> 00:55:52.653 align:start position:25% line:-2
+別のWi-Fiネットワークへ
+切り替えるのです
+
+00:55:54.688 --> 00:55:58.325 align:start position:18% line:-1
+そして Multipath TCPは
+
+00:55:58.425 --> 00:56:00.627 align:start position:16% line:-2
+ConnectionViability
+ハンドラとは異なります
+

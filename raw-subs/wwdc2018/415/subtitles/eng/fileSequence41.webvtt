@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.966 --> 00:41:02.776 A:middle
+Here I've used the PWL prefix so
+
+00:41:02.876 --> 00:41:04.286 A:middle
+to reduce the likelihood of a
+
+00:41:04.286 --> 00:41:04.836 A:middle
+conflict.
+
+00:41:05.696 --> 00:41:07.246 A:middle
+With this change, I can refer to
+
+00:41:07.246 --> 00:41:10.436 A:middle
+the class as PWLPetCollar in
+
+00:41:10.436 --> 00:41:11.196 A:middle
+Objective-C.
+
+00:41:13.836 --> 00:41:15.396 A:middle
+The compiler takes a similar
+
+00:41:15.396 --> 00:41:16.696 A:middle
+approach to generating
+
+00:41:16.696 --> 00:41:18.456 A:middle
+interfaces to other Swift
+
+00:41:18.456 --> 00:41:19.066 A:middle
+targets.
+
+00:41:19.626 --> 00:41:23.496 A:middle
+To do this, Swift builds on
+
+00:41:23.496 --> 00:41:25.076 A:middle
+Clang's concept of a module,
+
+00:41:25.436 --> 00:41:26.596 A:middle
+which Jurgen told you about.
+
+00:41:27.326 --> 00:41:28.656 A:middle
+And more deeply integrates it
+
+00:41:28.656 --> 00:41:29.556 A:middle
+into the language.
+
+00:41:30.756 --> 00:41:32.396 A:middle
+In Swift, a module is a
+
+00:41:32.396 --> 00:41:33.656 A:middle
+distributable unit of
+
+00:41:33.656 --> 00:41:34.516 A:middle
+declarations.
+
+00:41:34.916 --> 00:41:36.216 A:middle
+And to be able to use those
+
+00:41:36.216 --> 00:41:38.386 A:middle
+declarations you have to import
+
+00:41:38.556 --> 00:41:39.146 A:middle
+the module.
+
+00:41:40.406 --> 00:41:42.056 A:middle
+You can import Objective-C
+
+00:41:42.056 --> 00:41:42.666 A:middle
+modules.
+
+00:41:43.006 --> 00:41:44.346 A:middle
+XEtest, for example.
+
+00:41:45.366 --> 00:41:47.626 A:middle
+And in Xcode each Swift target
+
+00:41:47.756 --> 00:41:49.486 A:middle
+produces a separate module.
+
+00:41:50.126 --> 00:41:51.226 A:middle
+Including your app target.
+
+00:41:52.546 --> 00:41:53.876 A:middle
+This is why you have to import
+
+00:41:53.876 --> 00:41:55.726 A:middle
+your app's main module in order
+
+00:41:55.726 --> 00:42:00.536 A:middle
+to test it from your unit tests.
+

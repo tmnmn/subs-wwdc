@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.796 --> 00:11:00.636 A:middle
+results in slightly different
+
+00:11:00.636 --> 00:11:02.236 A:middle
+views into the environment,
+
+00:11:02.606 --> 00:11:04.706 A:middle
+which allows you to see stereo
+
+00:11:04.816 --> 00:11:06.056 A:middle
+and perceive the depth.
+
+00:11:07.106 --> 00:11:08.406 A:middle
+And this is what ARKit now,
+
+00:11:08.406 --> 00:11:10.176 A:middle
+also, does with the different
+
+00:11:10.176 --> 00:11:12.076 A:middle
+views of the same camera stream
+
+00:11:12.076 --> 00:11:12.956 A:middle
+during the process of
+
+00:11:13.026 --> 00:11:14.156 A:middle
+triangulation.
+
+00:11:14.736 --> 00:11:16.206 A:middle
+And it does it once there's
+
+00:11:16.256 --> 00:11:18.046 A:middle
+enough parallax present.
+
+00:11:18.896 --> 00:11:20.786 A:middle
+It computes the missing depth
+
+00:11:20.786 --> 00:11:22.736 A:middle
+information for those matched
+
+00:11:22.816 --> 00:11:23.306 A:middle
+features.
+
+00:11:23.706 --> 00:11:26.826 A:middle
+Meaning those 2D features from
+
+00:11:26.826 --> 00:11:28.556 A:middle
+the image are now reconstructed
+
+00:11:28.556 --> 00:11:29.316 A:middle
+in 3D.
+
+00:11:30.806 --> 00:11:32.066 A:middle
+Please, note that this
+
+00:11:32.066 --> 00:11:34.476 A:middle
+reconstruction to be successful,
+
+00:11:35.706 --> 00:11:37.536 A:middle
+the camera position must have
+
+00:11:37.676 --> 00:11:39.776 A:middle
+changed by a translation to
+
+00:11:39.776 --> 00:11:41.316 A:middle
+provide enough parallax.
+
+00:11:42.356 --> 00:11:44.086 A:middle
+For example, with the sidewise
+
+00:11:44.086 --> 00:11:44.626 A:middle
+movement.
+
+00:11:44.966 --> 00:11:47.746 A:middle
+The pure rotation does not give
+
+00:11:47.746 --> 00:11:48.856 A:middle
+enough information here.
+
+00:11:50.536 --> 00:11:52.606 A:middle
+So, this is your first small map
+
+00:11:52.606 --> 00:11:53.646 A:middle
+of your environment.
+
+00:11:53.646 --> 00:11:55.826 A:middle
+In ARKit we call this a World
+
+00:11:55.906 --> 00:11:56.136 A:middle
+map.
+
+00:11:57.396 --> 00:11:59.826 A:middle
+In this same moment, also, the
+
+00:11:59.826 --> 00:12:01.626 A:middle
+camera's positions and
+

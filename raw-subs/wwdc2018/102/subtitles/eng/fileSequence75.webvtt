@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+01:14:59.866 --> 01:15:00.856 A:middle
+three of them today --
+
+01:15:01.526 --> 01:15:03.096 A:middle
+GPU-driven command encoding,
+
+01:15:03.416 --> 01:15:04.556 A:middle
+machine learning training
+
+01:15:04.556 --> 01:15:06.576 A:middle
+acceleration, and ray tracing.
+
+01:15:07.496 --> 01:15:09.016 A:middle
+So first, GPU-driven command
+
+01:15:09.016 --> 01:15:09.466 A:middle
+encoding.
+
+01:15:09.676 --> 01:15:11.606 A:middle
+Now historically, your app would
+
+01:15:11.606 --> 01:15:13.536 A:middle
+encode its GPU commands using
+
+01:15:13.536 --> 01:15:14.936 A:middle
+the CPU and then subsequently
+
+01:15:14.936 --> 01:15:16.206 A:middle
+execute those commands on the
+
+01:15:16.206 --> 01:15:16.686 A:middle
+GPU.
+
+01:15:17.086 --> 01:15:18.196 A:middle
+And while Metal enabled this
+
+01:15:18.196 --> 01:15:20.326 A:middle
+encoding to be very fast, it
+
+01:15:20.326 --> 01:15:21.426 A:middle
+could still become bottlenecked
+
+01:15:21.456 --> 01:15:23.086 A:middle
+by the synchronization between
+
+01:15:23.086 --> 01:15:24.246 A:middle
+the CPU and the GPU.
+
+01:15:24.746 --> 01:15:26.506 A:middle
+Well, now in iOS 12 and macOS
+
+01:15:26.506 --> 01:15:28.026 A:middle
+Mojave, you can actually encode
+
+01:15:28.026 --> 01:15:29.836 A:middle
+those commands right on the GPU
+
+01:15:29.836 --> 01:15:32.046 A:middle
+itself, freeing up precious CPU
+
+01:15:32.046 --> 01:15:34.076 A:middle
+time for other use by your games
+
+01:15:34.076 --> 01:15:34.806 A:middle
+and apps.
+
+01:15:35.276 --> 01:15:36.746 A:middle
+And because you issue these
+
+01:15:36.746 --> 01:15:38.476 A:middle
+commands right on the GPU using
+
+01:15:38.476 --> 01:15:39.886 A:middle
+a compute shader, you can
+
+01:15:39.886 --> 01:15:41.016 A:middle
+actually officially construct
+
+01:15:41.016 --> 01:15:42.386 A:middle
+massive numbers of commands in
+
+01:15:42.386 --> 01:15:44.076 A:middle
+parallel as well, unlocking
+
+01:15:44.076 --> 01:15:45.666 A:middle
+completely new levels of
+
+01:15:45.666 --> 01:15:47.176 A:middle
+rendering performance and
+
+01:15:47.176 --> 01:15:47.976 A:middle
+sophistication.
+
+01:15:48.966 --> 01:15:50.876 A:middle
+Next, I'd like to share the
+
+01:15:50.876 --> 01:15:52.526 A:middle
+latest advances in Metal's
+
+01:15:52.716 --> 01:15:54.036 A:middle
+support for machine learning.
+
+01:15:54.396 --> 01:15:57.186 A:middle
+In iOS 12 and macOS Mojave, we
+
+01:15:57.186 --> 01:15:58.496 A:middle
+have augmented our existing
+
+01:15:58.496 --> 01:15:59.936 A:middle
+library of Metal performance
+
+01:15:59.936 --> 01:16:01.876 A:middle
+shaders with an enormous array
+

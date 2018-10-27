@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:59.767 --> 00:55:01.068 align:start position:38% line:-1
+なぜでしょう？
+
+00:55:01.735 --> 00:55:04.705 align:start position:23% line:-1
+openがどこにあるか調べます
+
+00:55:05.772 --> 00:55:10.110 align:start position:16% line:-2
+ありました
+libSystem.tbdファイルです
+
+00:55:11.145 --> 00:55:14.214 align:start position:25% line:-2
+これは
+システムライブラリの一部で―
+
+00:55:14.314 --> 00:55:17.384 align:start position:32% line:-2
+アプリケーションには
+含まれません
+
+00:55:17.751 --> 00:55:21.288 align:start position:27% line:-2
+呼び出せるように
+情報を与える必要があります
+
+00:55:21.388 --> 00:55:23.357 align:start position:29% line:-1
+そこで仮の関数を作ります
+
+00:55:23.490 --> 00:55:25.058 align:start position:30% line:-1
+これはテンプレートで―
+
+00:55:25.225 --> 00:55:29.363 align:start position:29% line:-2
+ライブラリから呼び出す
+どの関数にも適用できます
+
+00:55:29.630 --> 00:55:31.298 align:start position:32% line:-1
+関数を見てみましょう
+
+00:55:31.632 --> 00:55:35.369 align:start position:25% line:-2
+ポインタから読み込むのですね
+open$pointerです
+
+00:55:36.036 --> 00:55:37.137 align:start position:38% line:-1
+そこへ飛びます
+
+00:55:37.237 --> 00:55:40.941 align:start position:27% line:-2
+つまり 他のC言語と同様の
+関数ポインタが必要です
+
+00:55:42.576 --> 00:55:45.446 align:start position:29% line:-2
+DATAセグメントに
+作りましょう
+
+00:55:45.546 --> 00:55:48.649 align:start position:32% line:-2
+グローバル変数が入る
+セグメントです
+
+00:55:49.316 --> 00:55:51.251 align:start position:34% line:-1
+ゼロになっています
+
+00:55:51.351 --> 00:55:54.788 align:start position:29% line:-2
+nullに飛ぶと
+クラッシュしてしまいます
+
+00:55:55.923 --> 00:56:00.561 align:start position:21% line:-2
+LINKEDITを追加します
+メタデータのセグメントです
+

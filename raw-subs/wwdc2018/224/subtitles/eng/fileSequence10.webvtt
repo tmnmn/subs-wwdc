@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.316 --> 00:10:02.316 A:middle
+Next, we want to group together
+
+00:10:02.316 --> 00:10:04.536 A:middle
+all results whose day attributes
+
+00:10:04.536 --> 00:10:05.716 A:middle
+share the same value.
+
+00:10:06.316 --> 00:10:07.076 A:middle
+Since we're now fetching
+
+00:10:07.076 --> 00:10:08.566 A:middle
+aggregates instead of individual
+
+00:10:08.566 --> 00:10:09.796 A:middle
+objects, we have to change the
+
+00:10:09.796 --> 00:10:10.876 A:middle
+result type to something more
+
+00:10:10.876 --> 00:10:12.576 A:middle
+sensible as well, in this case,
+
+00:10:12.576 --> 00:10:13.066 A:middle
+a dictionary.
+
+00:10:14.726 --> 00:10:16.266 A:middle
+Finally, we define an expression
+
+00:10:16.266 --> 00:10:17.346 A:middle
+that represents the number of
+
+00:10:17.346 --> 00:10:19.316 A:middle
+objects in each group and tell
+
+00:10:19.316 --> 00:10:20.976 A:middle
+the fetch requests to return
+
+00:10:20.976 --> 00:10:22.936 A:middle
+that count along with the day it
+
+00:10:22.936 --> 00:10:23.616 A:middle
+represents.
+
+00:10:24.926 --> 00:10:26.996 A:middle
+This fetch request returns 30
+
+00:10:26.996 --> 00:10:28.416 A:middle
+results, each of which is one
+
+00:10:28.416 --> 00:10:29.876 A:middle
+point on our chart.
+
+00:10:31.216 --> 00:10:34.466 A:middle
+If you're into databases, this
+
+00:10:34.466 --> 00:10:35.546 A:middle
+is the SQLite query that Core
+
+00:10:35.546 --> 00:10:36.686 A:middle
+Data generates from that fetch
+
+00:10:36.686 --> 00:10:37.186 A:middle
+request.
+
+00:10:37.646 --> 00:10:38.846 A:middle
+It's exactly what you do if
+
+00:10:38.846 --> 00:10:39.516 A:middle
+you're writing the query
+
+00:10:39.516 --> 00:10:40.046 A:middle
+yourself.
+
+00:10:40.496 --> 00:10:41.816 A:middle
+Core Data understands how to
+
+00:10:41.816 --> 00:10:43.226 A:middle
+convert many expression
+
+00:10:43.226 --> 00:10:44.716 A:middle
+functions into optimal database
+
+00:10:44.716 --> 00:10:45.196 A:middle
+queries.
+
+00:10:45.776 --> 00:10:46.856 A:middle
+A group by query can use
+
+00:10:46.856 --> 00:10:48.066 A:middle
+aggregate functions such as
+
+00:10:48.066 --> 00:10:50.076 A:middle
+average and sum and scalar
+
+00:10:50.076 --> 00:10:51.736 A:middle
+queries, like a normal fetch
+
+00:10:51.736 --> 00:10:53.336 A:middle
+request, can use scalar math and
+
+00:10:53.336 --> 00:10:54.926 A:middle
+date functions, like abs for the
+
+00:10:54.926 --> 00:10:56.416 A:middle
+absolute value and now for the
+
+00:10:56.416 --> 00:10:57.026 A:middle
+current time.
+
+00:10:57.156 --> 00:10:59.366 A:middle
+If you want to know more about
+
+00:10:59.366 --> 00:11:00.236 A:middle
+what you can do with
+

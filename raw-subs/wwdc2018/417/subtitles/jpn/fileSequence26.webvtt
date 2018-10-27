@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:01.528 --> 00:26:06.700 align:start position:21% line:-2
+ユニットテストではテストクラスで
+入れ子になった構造体を定義
+
+00:26:06.800 --> 00:26:10.838 align:start position:12% line:-2
+locationFetcherプロトコルに
+準拠し 要求を満たします
+
+00:26:11.438 --> 00:26:14.241 align:start position:12% line:-2
+requestLocationメソッドでは
+ブロックを呼び
+
+00:26:14.341 --> 00:26:17.945 align:start position:32% line:-2
+カスタマイズできる
+偽の位置を取得します
+
+00:26:18.178 --> 00:26:21.949 align:start position:27% line:-2
+デリゲートメソッドを起動し
+偽の位置を渡します
+
+00:26:24.484 --> 00:26:27.588 align:start position:34% line:-2
+材料がそろったので
+テストの記述です
+
+00:26:27.921 --> 00:26:30.023 align:start position:16% line:-2
+MockLocationFetcher
+構造体を作成
+
+00:26:30.124 --> 00:26:32.493 align:start position:12% line:-2
+handleRequestLocation
+ブロックを設定し
+
+00:26:32.593 --> 00:26:34.495 align:start position:32% line:-1
+偽の位置を提供します
+
+00:26:35.195 --> 00:26:37.531 align:start position:20% line:-2
+次にCurrentLocation
+Providerを作成し
+
+00:26:37.631 --> 00:26:39.900 align:start position:14% line:-2
+MockLocationFetcherに
+渡します
+
+00:26:40.200 --> 00:26:43.971 align:start position:5% line:-2
+最後に完了ブロックで
+checkCurrentLocationを呼びます
+
+00:26:44.204 --> 00:26:45.505 align:start position:36% line:-1
+完了ブロックでは
+
+00:26:45.606 --> 00:26:49.343 align:start position:29% line:-2
+位置がスポットなのかを
+アサーションが確認します
+
+00:26:51.078 --> 00:26:54.882 align:start position:12% line:-2
+これで クラスによる
+CLLocationManagerの使用を
+
+00:26:54.982 --> 00:26:57.117 align:start position:30% line:-1
+うまくモックしましたね
+
+00:26:58.118 --> 00:27:02.523 align:start position:27% line:-2
+プロトコルを使って
+やり取りをモックする方法を
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.426 --> 00:05:00.126 A:middle
+Digital Crown, then, in that
+
+00:05:00.126 --> 00:05:01.646 A:middle
+case, the volume control will be
+
+00:05:01.956 --> 00:05:04.026 A:middle
+tinted to the system green color
+
+00:05:04.026 --> 00:05:05.746 A:middle
+to match the rest of the system.
+
+00:05:06.276 --> 00:05:09.796 A:middle
+So for the volume control, to
+
+00:05:09.796 --> 00:05:12.376 A:middle
+actually decide when or not to
+
+00:05:12.626 --> 00:05:14.596 A:middle
+control the local or iPhone's
+
+00:05:14.596 --> 00:05:17.036 A:middle
+volume, there, in the Attributes
+
+00:05:17.036 --> 00:05:18.506 A:middle
+Inspector is a check box for
+
+00:05:18.506 --> 00:05:19.746 A:middle
+Controls Local Volume.
+
+00:05:20.486 --> 00:05:21.696 A:middle
+So if you leave it unchecked,
+
+00:05:21.926 --> 00:05:22.866 A:middle
+then the volume control will
+
+00:05:22.866 --> 00:05:24.316 A:middle
+control the iPhone's content.
+
+00:05:25.086 --> 00:05:27.056 A:middle
+And if you check it off, then
+
+00:05:27.166 --> 00:05:28.676 A:middle
+the volume control will control
+
+00:05:28.676 --> 00:05:29.676 A:middle
+the watch's content.
+
+00:05:30.216 --> 00:05:32.656 A:middle
+And so if your application might
+
+00:05:32.656 --> 00:05:34.366 A:middle
+have multiple scenarios where it
+
+00:05:34.366 --> 00:05:35.506 A:middle
+could either remote control some
+
+00:05:35.506 --> 00:05:37.466 A:middle
+content or play some content
+
+00:05:37.466 --> 00:05:39.236 A:middle
+locally, then, in that case, you
+
+00:05:39.236 --> 00:05:40.446 A:middle
+might have different controls
+
+00:05:40.446 --> 00:05:41.616 A:middle
+with different volume controls
+
+00:05:41.616 --> 00:05:43.136 A:middle
+within them, and you make those
+
+00:05:43.136 --> 00:05:44.436 A:middle
+decisions at design time.
+
+00:05:45.516 --> 00:05:47.176 A:middle
+All right, so those are really
+
+00:05:47.176 --> 00:05:49.276 A:middle
+our system controls, so now
+
+00:05:49.276 --> 00:05:50.466 A:middle
+let's talk about, how do we
+
+00:05:50.466 --> 00:05:51.996 A:middle
+actually get content over to the
+
+00:05:51.996 --> 00:05:53.266 A:middle
+device itself?
+
+00:05:55.096 --> 00:05:57.606 A:middle
+So I've been building a museum
+
+00:05:57.606 --> 00:05:59.306 A:middle
+guided tour type application.
+
+00:05:59.466 --> 00:06:01.166 A:middle
+I want to allow my user to just
+

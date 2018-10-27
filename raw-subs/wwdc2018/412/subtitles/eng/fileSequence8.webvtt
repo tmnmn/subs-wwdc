@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.576 --> 00:08:00.256 A:middle
+function uses UIKit Dynamics to
+
+00:08:00.256 --> 00:08:02.216 A:middle
+simulate failing the jump.
+
+00:08:02.216 --> 00:08:04.916 A:middle
+So it starts by creating a UI
+
+00:08:04.956 --> 00:08:06.756 A:middle
+Dynamic animator and then calls
+
+00:08:06.756 --> 00:08:07.976 A:middle
+a function to add behaviors to
+
+00:08:07.976 --> 00:08:09.056 A:middle
+create the physics effects.
+
+00:08:09.516 --> 00:08:10.766 A:middle
+And then the astronaut is meant
+
+00:08:10.766 --> 00:08:12.756 A:middle
+to be reoriented and recentered
+
+00:08:13.036 --> 00:08:14.866 A:middle
+in the dynamic animator did
+
+00:08:15.106 --> 00:08:17.016 A:middle
+pause delegate callback.
+
+00:08:17.386 --> 00:08:18.546 A:middle
+Now we can scroll down and see
+
+00:08:18.546 --> 00:08:20.016 A:middle
+that that delegate callback is
+
+00:08:20.016 --> 00:08:21.686 A:middle
+implemented successfully, so
+
+00:08:21.686 --> 00:08:22.336 A:middle
+that looks fine.
+
+00:08:22.996 --> 00:08:23.856 A:middle
+But I'm noticing that no
+
+00:08:23.856 --> 00:08:25.516 A:middle
+delegate is set on this object,
+
+00:08:26.416 --> 00:08:28.956 A:middle
+so if I add that code in here, I
+
+00:08:28.956 --> 00:08:30.016 A:middle
+think this is the change I'll
+
+00:08:30.016 --> 00:08:31.016 A:middle
+need to fix the problem.
+
+00:08:31.336 --> 00:08:32.676 A:middle
+Now, at this point, I can
+
+00:08:32.976 --> 00:08:34.806 A:middle
+recompile and rerun and try and
+
+00:08:34.806 --> 00:08:36.866 A:middle
+verify my fix, but I'd like to
+
+00:08:36.866 --> 00:08:38.275 A:middle
+shortcut that whole cycle if I
+
+00:08:38.275 --> 00:08:38.556 A:middle
+can.
+
+00:08:38.765 --> 00:08:40.476 A:middle
+So what I'm going to do is use a
+
+00:08:40.476 --> 00:08:41.986 A:middle
+breakpoint to inject this change
+
+00:08:41.986 --> 00:08:43.806 A:middle
+for me so I can see if this does
+
+00:08:43.806 --> 00:08:45.486 A:middle
+fix the problem quickly and
+
+00:08:45.486 --> 00:08:46.066 A:middle
+conveniently.
+
+00:08:46.586 --> 00:08:47.556 A:middle
+So I'll create a break point,
+
+00:08:47.916 --> 00:08:49.956 A:middle
+double click to bring up the
+
+00:08:49.956 --> 00:08:51.836 A:middle
+edit window, which is a shortcut
+
+00:08:51.836 --> 00:08:52.976 A:middle
+for bringing up the edit window.
+
+00:08:52.976 --> 00:08:54.636 A:middle
+And then, once again, use a
+
+00:08:54.636 --> 00:08:55.846 A:middle
+debugger command action to
+
+00:08:55.846 --> 00:08:57.576 A:middle
+inject an expression, and I can
+
+00:08:57.576 --> 00:08:59.696 A:middle
+type in that line of code that I
+
+00:08:59.696 --> 00:09:01.396 A:middle
+think will fix the problem and
+

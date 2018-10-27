@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.276 --> 00:11:00.396 A:middle
+or build graph even further by
+
+00:11:00.396 --> 00:11:03.156 A:middle
+allowing the Utilities target to
+
+00:11:03.156 --> 00:11:04.716 A:middle
+be built right after the Code
+
+00:11:04.716 --> 00:11:06.146 A:middle
+Gen target instead of having to
+
+00:11:06.146 --> 00:11:07.196 A:middle
+wait for all of the Physics
+
+00:11:07.196 --> 00:11:11.156 A:middle
+target to be done.
+
+00:11:11.346 --> 00:11:13.746 A:middle
+Now, previously in Xcode, when
+
+00:11:13.746 --> 00:11:15.046 A:middle
+you built targets that have a
+
+00:11:15.046 --> 00:11:16.396 A:middle
+dependency on another target,
+
+00:11:16.396 --> 00:11:18.326 A:middle
+you have to wait for the
+
+00:11:18.326 --> 00:11:19.646 A:middle
+dependent target to finish its
+
+00:11:19.646 --> 00:11:21.236 A:middle
+entire build process.
+
+00:11:21.756 --> 00:11:23.096 A:middle
+Well, we have a new feature in
+
+00:11:23.096 --> 00:11:24.916 A:middle
+Xcode 10 that allows us to
+
+00:11:24.916 --> 00:11:27.046 A:middle
+introduce some parallelism into
+
+00:11:27.046 --> 00:11:28.086 A:middle
+your build for free.
+
+00:11:28.596 --> 00:11:32.226 A:middle
+And we do this by starting the
+
+00:11:32.226 --> 00:11:34.626 A:middle
+compilation of your target as
+
+00:11:34.626 --> 00:11:36.596 A:middle
+soon as the build phases that go
+
+00:11:36.596 --> 00:11:38.666 A:middle
+into its dependencies that
+
+00:11:38.706 --> 00:11:40.206 A:middle
+satisfy our compilation are
+
+00:11:40.206 --> 00:11:40.636 A:middle
+complete.
+
+00:11:41.696 --> 00:11:42.926 A:middle
+So things like linking can now
+
+00:11:42.926 --> 00:11:43.746 A:middle
+be done in parallel.
+
+00:11:45.936 --> 00:11:47.486 A:middle
+Now, if you have run script
+
+00:11:47.486 --> 00:11:49.266 A:middle
+phases, this is one of those
+
+00:11:49.316 --> 00:11:50.896 A:middle
+build phases that your target is
+
+00:11:50.996 --> 00:11:53.216 A:middle
+going to have to wait on to
+
+00:11:53.216 --> 00:11:54.796 A:middle
+finish in order before it can
+
+00:11:54.796 --> 00:11:56.436 A:middle
+start taking advantage of some
+
+00:11:56.806 --> 00:11:58.476 A:middle
+of these new parallelization
+
+00:11:58.476 --> 00:11:58.886 A:middle
+benefits.
+
+00:11:58.956 --> 00:12:01.476 A:middle
+So let's talk about run script
+

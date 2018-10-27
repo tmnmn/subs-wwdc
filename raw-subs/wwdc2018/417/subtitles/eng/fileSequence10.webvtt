@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.536 --> 00:10:00.906 A:middle
+method, where we'll take our
+
+00:10:00.906 --> 00:10:02.016 A:middle
+requestHandler to the test
+
+00:10:02.016 --> 00:10:04.546 A:middle
+subsets and call it with a
+
+00:10:04.546 --> 00:10:05.706 A:middle
+URLRequest as a parameter.
+
+00:10:07.296 --> 00:10:08.766 A:middle
+We'll take what it returns and
+
+00:10:08.766 --> 00:10:10.156 A:middle
+pass it back to the system,
+
+00:10:10.926 --> 00:10:12.746 A:middle
+either as a URL response plus
+
+00:10:12.806 --> 00:10:15.496 A:middle
+data, or as an error.
+
+00:10:15.666 --> 00:10:19.666 A:middle
+If you want to do test request
+
+00:10:19.666 --> 00:10:21.116 A:middle
+cancellation, we could do
+
+00:10:21.116 --> 00:10:22.476 A:middle
+something similar in a
+
+00:10:22.476 --> 00:10:23.626 A:middle
+stopLoading method
+
+00:10:23.626 --> 00:10:24.336 A:middle
+implementation.
+
+00:10:28.576 --> 00:10:30.406 A:middle
+With the stub protocol in hand,
+
+00:10:30.716 --> 00:10:33.346 A:middle
+we can write our test.
+
+00:10:33.476 --> 00:10:34.546 A:middle
+We set up by making an
+
+00:10:34.546 --> 00:10:36.126 A:middle
+APIRequestLoader instance,
+
+00:10:36.676 --> 00:10:38.026 A:middle
+configure it with a request type
+
+00:10:39.166 --> 00:10:40.786 A:middle
+and a URLSession that's been
+
+00:10:40.786 --> 00:10:41.836 A:middle
+configured to use our
+
+00:10:41.836 --> 00:10:42.546 A:middle
+URLProtocol.
+
+00:10:46.056 --> 00:10:48.346 A:middle
+In the test body, we set a
+
+00:10:48.346 --> 00:10:49.426 A:middle
+requestHandler on the
+
+00:10:49.426 --> 00:10:52.086 A:middle
+MockURLProtocol, making
+
+00:10:52.086 --> 00:10:53.696 A:middle
+assertions about the request
+
+00:10:53.696 --> 00:10:56.526 A:middle
+that's going out, then providing
+
+00:10:56.526 --> 00:10:57.326 A:middle
+a stub response.
+
+00:10:57.896 --> 00:11:01.676 A:middle
+Then we can call loadAPIRequest,
+

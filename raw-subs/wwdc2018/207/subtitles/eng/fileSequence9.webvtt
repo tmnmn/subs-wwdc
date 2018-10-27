@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.116 --> 00:09:00.806 A:middle
+policy, but it's not good
+
+00:09:00.806 --> 00:09:01.176 A:middle
+enough.
+
+00:09:01.546 --> 00:09:03.506 A:middle
+So, you need to opt in to some
+
+00:09:03.506 --> 00:09:04.726 A:middle
+more defaults.
+
+00:09:05.106 --> 00:09:07.016 A:middle
+Starting out with subresource
+
+00:09:07.016 --> 00:09:08.716 A:middle
+integrity-- I'll go through them
+
+00:09:08.756 --> 00:09:09.956 A:middle
+and I'll mention them here.
+
+00:09:10.536 --> 00:09:12.256 A:middle
+This is just a simple change in
+
+00:09:12.256 --> 00:09:14.006 A:middle
+the markup for your script tags.
+
+00:09:15.126 --> 00:09:16.426 A:middle
+The second part is content
+
+00:09:16.426 --> 00:09:17.376 A:middle
+security policy.
+
+00:09:17.526 --> 00:09:19.056 A:middle
+This is providing a full-on
+
+00:09:19.056 --> 00:09:20.576 A:middle
+security policy for your whole
+
+00:09:20.576 --> 00:09:22.366 A:middle
+page where you can say, hey, I
+
+00:09:22.366 --> 00:09:23.596 A:middle
+only want to load scripts from
+
+00:09:23.596 --> 00:09:24.236 A:middle
+over here.
+
+00:09:24.546 --> 00:09:25.976 A:middle
+I don't want to have any frames
+
+00:09:25.976 --> 00:09:27.596 A:middle
+from other servers, and so on.
+
+00:09:27.696 --> 00:09:28.326 A:middle
+We'll look at that.
+
+00:09:29.076 --> 00:09:30.686 A:middle
+And the third category here are
+
+00:09:30.686 --> 00:09:32.496 A:middle
+simple server configurations.
+
+00:09:32.986 --> 00:09:35.076 A:middle
+These are HTTP response headers
+
+00:09:35.136 --> 00:09:36.666 A:middle
+that you send out telling the
+
+00:09:36.666 --> 00:09:38.856 A:middle
+browser engine, hey, I want more
+
+00:09:38.856 --> 00:09:40.466 A:middle
+secure defaults, I don't want
+
+00:09:40.466 --> 00:09:42.366 A:middle
+these old legacy APIs that
+
+00:09:42.366 --> 00:09:43.496 A:middle
+you've been supporting because I
+
+00:09:43.496 --> 00:09:44.206 A:middle
+don't need them.
+
+00:09:44.426 --> 00:09:45.176 A:middle
+Please help me here.
+
+00:09:45.756 --> 00:09:47.926 A:middle
+So, let's dive into it and look
+
+00:09:47.926 --> 00:09:49.566 A:middle
+at subresource integrity.
+
+00:09:50.696 --> 00:09:52.746 A:middle
+Now, this is a perfectly
+
+00:09:52.746 --> 00:09:54.416 A:middle
+plausible way of loading that
+
+00:09:54.416 --> 00:09:55.906 A:middle
+framework from the CDN, your
+
+00:09:56.366 --> 00:09:57.826 A:middle
+content delivery network.
+
+00:09:58.826 --> 00:10:01.916 A:middle
+And that script tag is going to
+

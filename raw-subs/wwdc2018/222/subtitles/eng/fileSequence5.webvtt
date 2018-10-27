@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.186 --> 00:05:01.186 A:middle
+Now, let's start by talking
+
+00:05:01.186 --> 00:05:01.776 A:middle
+about raw data.
+
+00:05:02.836 --> 00:05:04.996 A:middle
+Again, as we mentioned, raw data
+
+00:05:04.996 --> 00:05:06.486 A:middle
+is just a stream of bytes that's
+
+00:05:06.486 --> 00:05:08.496 A:middle
+made its way into your app.
+
+00:05:08.496 --> 00:05:10.296 A:middle
+Until you inspect that data and
+
+00:05:10.296 --> 00:05:11.586 A:middle
+you give it meaning, there's not
+
+00:05:11.586 --> 00:05:13.266 A:middle
+much you can do with it.
+
+00:05:13.766 --> 00:05:15.686 A:middle
+Now, we might care to know what
+
+00:05:15.716 --> 00:05:17.316 A:middle
+we can take a look at about that
+
+00:05:17.316 --> 00:05:18.296 A:middle
+data before we start
+
+00:05:18.296 --> 00:05:18.906 A:middle
+interpreting it.
+
+00:05:19.366 --> 00:05:20.466 A:middle
+Is it even safe to do that?
+
+00:05:22.016 --> 00:05:23.106 A:middle
+One thing we can validate about
+
+00:05:23.106 --> 00:05:24.476 A:middle
+this data before making use of
+
+00:05:24.476 --> 00:05:25.146 A:middle
+it is its length.
+
+00:05:26.306 --> 00:05:27.776 A:middle
+Say your app expects to load a
+
+00:05:27.776 --> 00:05:29.396 A:middle
+1-kilobyte file from disc, but
+
+00:05:29.396 --> 00:05:31.096 A:middle
+finds a 1-gigabyte file in disc.
+
+00:05:32.226 --> 00:05:33.376 A:middle
+Does it make sense to even load
+
+00:05:33.376 --> 00:05:34.436 A:middle
+that data in the first place,
+
+00:05:34.436 --> 00:05:35.176 A:middle
+and start reading it?
+
+00:05:36.016 --> 00:05:38.366 A:middle
+Almost certainly not.
+
+00:05:38.666 --> 00:05:39.736 A:middle
+Now, sometimes we might not be
+
+00:05:39.736 --> 00:05:41.216 A:middle
+able to have length expectations
+
+00:05:41.216 --> 00:05:41.796 A:middle
+about the data.
+
+00:05:42.286 --> 00:05:43.476 A:middle
+Maybe it's external data we
+
+00:05:43.476 --> 00:05:43.956 A:middle
+don't own.
+
+00:05:43.956 --> 00:05:44.906 A:middle
+We don't' know how much data
+
+00:05:44.906 --> 00:05:45.426 A:middle
+there could be.
+
+00:05:46.366 --> 00:05:48.336 A:middle
+But in some cases, we might also
+
+00:05:48.336 --> 00:05:49.966 A:middle
+be able to verify a checksum, or
+
+00:05:49.966 --> 00:05:51.436 A:middle
+a cryptographic signature that
+
+00:05:51.716 --> 00:05:53.336 A:middle
+represents what the data might
+
+00:05:53.336 --> 00:05:54.346 A:middle
+look like, even if we don't know
+
+00:05:54.346 --> 00:05:54.956 A:middle
+what's inside.
+
+00:05:56.046 --> 00:05:57.516 A:middle
+Checksum is built by hashing all
+
+00:05:57.516 --> 00:05:57.956 A:middle
+of the data.
+
+00:05:58.056 --> 00:05:59.836 A:middle
+And if any bit in the data
+
+00:05:59.836 --> 00:06:01.196 A:middle
+changes, either due to a
+

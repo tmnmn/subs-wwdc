@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.951 --> 00:17:02.489 align:start position:16% line:-2
+APIを通じ全ユーザのcookieへの
+アクセス権を与えてしまいます
+
+00:17:03.190 --> 00:17:07.661 align:start position:32% line:-2
+強力な権限を
+与えすぎだと思います
+
+00:17:07.761 --> 00:17:13.233 align:start position:23% line:-2
+HTTPOnlyと指定した
+cookieでログインする方が
+
+00:17:13.567 --> 00:17:16.002 align:start position:43% line:-1
+安全です
+
+00:17:16.336 --> 00:17:22.608 align:start position:20% line:-2
+このset-cookieヘッダーに
+あるようにHTTPOnlyを送信し
+
+00:17:23.143 --> 00:17:27.548 align:start position:14% line:-2
+document.cookie APIで
+cookieを表示しないよう指定します
+
+00:17:28.015 --> 00:17:31.051 align:start position:12% line:-2
+これでJavaScriptでcookieを
+閲覧できなくなります
+
+00:17:31.151 --> 00:17:36.657 align:start position:27% line:-2
+操作したりや盗み出すことも
+不可能となるのです
+
+00:17:38.091 --> 00:17:43.831 align:start position:14% line:-2
+また SameSite cookiesが
+導入されました
+
+00:17:44.398 --> 00:17:49.970 align:start position:25% line:-2
+ここでもcookieの設定に
+ヘッダーを使います
+
+00:17:50.337 --> 00:17:54.474 align:start position:21% line:-2
+SameSite=strictと
+入力しました
+
+00:17:54.575 --> 00:17:59.079 align:start position:30% line:-2
+これは簡易版ですが
+基本的な意味はこうです
+
+00:17:59.479 --> 00:18:05.519 align:start position:27% line:-2
+自分がオーナーのページのみ
+cookieを送信します
+

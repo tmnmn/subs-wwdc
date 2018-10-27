@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.576 --> 00:13:00.996 A:middle
+The number of bits we want to
+
+00:13:00.996 --> 00:13:02.066 A:middle
+quantize our model to.
+
+00:13:02.226 --> 00:13:03.536 A:middle
+In this case, it's 8 bits.
+
+00:13:04.716 --> 00:13:05.996 A:middle
+And the quantization algorithm
+
+00:13:05.996 --> 00:13:06.666 A:middle
+we want to use.
+
+00:13:07.066 --> 00:13:08.366 A:middle
+Let's try linear quantization.
+
+00:13:09.866 --> 00:13:11.436 A:middle
+Now what's happening is that the
+
+00:13:11.436 --> 00:13:12.996 A:middle
+utility is iterating over all of
+
+00:13:12.996 --> 00:13:14.586 A:middle
+the layers of the linear
+
+00:13:14.586 --> 00:13:15.126 A:middle
+networks.
+
+00:13:15.126 --> 00:13:16.876 A:middle
+And is quantizing all the
+
+00:13:16.876 --> 00:13:17.726 A:middle
+weights in those layers.
+
+00:13:18.186 --> 00:13:18.756 A:middle
+And we're finished.
+
+00:13:20.496 --> 00:13:23.246 A:middle
+Now, if you recall a few moments
+
+00:13:23.246 --> 00:13:24.806 A:middle
+ago I mentioned that quantizing
+
+00:13:24.806 --> 00:13:26.676 A:middle
+our model had an associated loss
+
+00:13:26.676 --> 00:13:27.276 A:middle
+in accuracy.
+
+00:13:27.586 --> 00:13:28.966 A:middle
+So we want to know how our
+
+00:13:28.966 --> 00:13:30.746 A:middle
+quantized model stacks up to the
+
+00:13:30.746 --> 00:13:31.286 A:middle
+original model.
+
+00:13:31.476 --> 00:13:33.236 A:middle
+And the easiest way of doing
+
+00:13:33.236 --> 00:13:34.706 A:middle
+this is taking some data,
+
+00:13:35.236 --> 00:13:37.936 A:middle
+passing and getting inference on
+
+00:13:37.936 --> 00:13:39.556 A:middle
+that data using our original
+
+00:13:39.556 --> 00:13:39.916 A:middle
+model.
+
+00:13:40.596 --> 00:13:42.296 A:middle
+And doing the same inference on
+
+00:13:42.296 --> 00:13:43.406 A:middle
+the same data using our
+
+00:13:43.406 --> 00:13:45.206 A:middle
+quantized model and comparing
+
+00:13:45.206 --> 00:13:46.416 A:middle
+the predictions from that model.
+
+00:13:47.146 --> 00:13:48.436 A:middle
+And seeing how well they agree.
+
+00:13:49.066 --> 00:13:50.296 A:middle
+Core ML Tools has utilities
+
+00:13:50.296 --> 00:13:51.226 A:middle
+which help you to do that.
+
+00:13:51.486 --> 00:13:53.096 A:middle
+And we can do that by making
+
+00:13:53.096 --> 00:13:54.176 A:middle
+this call which is called
+
+00:13:54.176 --> 00:13:55.596 A:middle
+compare models.
+
+00:13:56.236 --> 00:13:57.616 A:middle
+We pass in our full precision
+
+00:13:57.616 --> 00:13:59.796 A:middle
+model, and we pass in our model
+
+00:13:59.796 --> 00:14:01.136 A:middle
+which we had just quantized.
+

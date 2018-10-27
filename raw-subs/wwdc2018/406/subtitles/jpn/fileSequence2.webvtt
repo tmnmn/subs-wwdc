@@ -1,0 +1,46 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.452 --> 00:02:01.021 align:start position:23% line:-1
+まず ジェネリクスの重要性です
+
+00:02:01.722 --> 00:02:06.960 align:start position:23% line:-2
+インパクトを見る方法の１つは
+型といったコレクション設計です
+
+00:02:08.161 --> 00:02:12.132 align:start position:32% line:-2
+バッファと呼びますが
+配列型に似ています
+
+00:02:12.733 --> 00:02:16.503 align:start position:23% line:-1
+バッファ読み込みのAPIには―
+
+00:02:16.603 --> 00:02:21.808 align:start position:21% line:-2
+要素のカウントや
+ポジションへのフェッチがあります
+
+00:02:22.009 --> 00:02:24.444 align:start position:29% line:-1
+では その返り値の型は？
+
+00:02:25.112 --> 00:02:31.818 align:start position:21% line:-2
+もしジェネリクスがなければ
+何らかの型の作成が必要になります
+
+00:02:32.019 --> 00:02:35.322 align:start position:23% line:-1
+id型やVoid Starです
+
+00:02:35.422 --> 00:02:41.595 align:start position:25% line:-2
+Swiftでは Anyが
+あらゆる型の代わりとなります
+
+00:02:43.897 --> 00:02:47.901 align:start position:20% line:-1
+バッファの処理も返り値はAnyです
+
+00:02:48.001 --> 00:02:51.972 align:start position:25% line:-2
+しかし
+不愉快なユーザ体験となります
+
+00:02:52.072 --> 00:02:58.245 align:start position:23% line:-2
+使うためにはボックスから
+その型を取り出さねばなりません
+

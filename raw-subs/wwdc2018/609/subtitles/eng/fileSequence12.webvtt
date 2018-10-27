@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.796 --> 00:12:01.356 A:middle
+It takes a single line of code
+
+00:12:01.686 --> 00:12:03.176 A:middle
+to create a gradient node from
+
+00:12:03.176 --> 00:12:03.856 A:middle
+the forward node.
+
+00:12:04.226 --> 00:12:05.976 A:middle
+So, here is an example of how
+
+00:12:05.976 --> 00:12:07.296 A:middle
+you can create a gradient
+
+00:12:07.296 --> 00:12:08.746 A:middle
+convolution node from the
+
+00:12:08.746 --> 00:12:10.266 A:middle
+convolution node.
+
+00:12:12.656 --> 00:12:14.376 A:middle
+And now, let's build an entire
+
+00:12:14.376 --> 00:12:14.796 A:middle
+graph.
+
+00:12:16.206 --> 00:12:18.016 A:middle
+So, here we have a very small
+
+00:12:18.016 --> 00:12:18.476 A:middle
+network.
+
+00:12:18.476 --> 00:12:19.946 A:middle
+We have a convolution node
+
+00:12:19.946 --> 00:12:21.226 A:middle
+followed by a pooling node,
+
+00:12:21.356 --> 00:12:22.776 A:middle
+followed by another convolution
+
+00:12:22.776 --> 00:12:22.976 A:middle
+node.
+
+00:12:23.916 --> 00:12:25.116 A:middle
+So, how do we connect these
+
+00:12:25.116 --> 00:12:27.356 A:middle
+nodes into a graph?
+
+00:12:27.966 --> 00:12:28.886 A:middle
+So, that's easy.
+
+00:12:29.636 --> 00:12:32.396 A:middle
+We take the result node of --
+
+00:12:32.396 --> 00:12:34.796 A:middle
+the result image of one node and
+
+00:12:34.836 --> 00:12:36.926 A:middle
+pass it as a source image to the
+
+00:12:36.926 --> 00:12:37.776 A:middle
+subsequent node.
+
+00:12:38.976 --> 00:12:40.306 A:middle
+And here we have an entire
+
+00:12:40.306 --> 00:12:41.576 A:middle
+connected graph.
+
+00:12:42.716 --> 00:12:44.416 A:middle
+And now, let's build a training
+
+00:12:44.416 --> 00:12:44.806 A:middle
+graph.
+
+00:12:45.286 --> 00:12:47.776 A:middle
+So first, we need to add a loss
+
+00:12:47.776 --> 00:12:49.956 A:middle
+node to the graph.
+
+00:12:50.056 --> 00:12:51.516 A:middle
+And now, let's add some gradient
+
+00:12:51.516 --> 00:12:51.776 A:middle
+nodes.
+
+00:12:52.136 --> 00:12:53.386 A:middle
+So, as I said, it takes a single
+
+00:12:53.386 --> 00:12:54.866 A:middle
+line of code to create a
+
+00:12:54.866 --> 00:12:56.766 A:middle
+gradient node from its
+
+00:12:56.766 --> 00:12:58.466 A:middle
+corresponding forward node.
+
+00:12:58.466 --> 00:12:59.526 A:middle
+And then we connect them as
+
+00:12:59.526 --> 00:13:01.376 A:middle
+previously, and now you have a
+

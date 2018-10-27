@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.286 --> 00:07:00.206 A:middle
+somehow represent these param --
+
+00:07:00.516 --> 00:07:02.026 A:middle
+these parameters using a fewer
+
+00:07:02.026 --> 00:07:03.456 A:middle
+number of bits, we can
+
+00:07:03.456 --> 00:07:04.676 A:middle
+drastically reduce the size of
+
+00:07:04.676 --> 00:07:05.096 A:middle
+this model.
+
+00:07:05.776 --> 00:07:08.626 A:middle
+In fact, this process is called
+
+00:07:08.906 --> 00:07:09.676 A:middle
+quantization.
+
+00:07:10.476 --> 00:07:12.116 A:middle
+In quantization, we take the
+
+00:07:12.116 --> 00:07:13.846 A:middle
+weights for our layers which
+
+00:07:13.846 --> 00:07:15.086 A:middle
+[inaudible] to minimum and to
+
+00:07:15.086 --> 00:07:18.816 A:middle
+maximum value and we map them to
+
+00:07:18.816 --> 00:07:19.736 A:middle
+unsigned integers.
+
+00:07:20.936 --> 00:07:22.706 A:middle
+Now for APIC quantization, we
+
+00:07:22.706 --> 00:07:24.526 A:middle
+map these values from a range of
+
+00:07:24.586 --> 00:07:26.686 A:middle
+0 to 55.
+
+00:07:27.106 --> 00:07:28.876 A:middle
+For 7-bit quantization, we map
+
+00:07:28.926 --> 00:07:31.826 A:middle
+them from 0 to 127, all the way
+
+00:07:31.826 --> 00:07:32.556 A:middle
+down to 1 bit.
+
+00:07:32.786 --> 00:07:34.076 A:middle
+Where we map these weights as
+
+00:07:34.076 --> 00:07:35.486 A:middle
+either zeros or ones.
+
+00:07:36.106 --> 00:07:37.606 A:middle
+Since we're using fewer bits to
+
+00:07:37.606 --> 00:07:38.856 A:middle
+represent the same information,
+
+00:07:39.176 --> 00:07:40.476 A:middle
+we reduce the size of our model.
+
+00:07:42.406 --> 00:07:44.786 A:middle
+Great. Now many of you may have
+
+00:07:44.786 --> 00:07:46.276 A:middle
+noticed that we're mapping
+
+00:07:46.276 --> 00:07:47.246 A:middle
+floats to integers.
+
+00:07:47.646 --> 00:07:48.926 A:middle
+And you may have come to the
+
+00:07:48.926 --> 00:07:50.046 A:middle
+conclusion that maybe there's
+
+00:07:50.046 --> 00:07:52.366 A:middle
+some accuracy loss in this
+
+00:07:52.366 --> 00:07:52.786 A:middle
+mapping.
+
+00:07:53.326 --> 00:07:53.836 A:middle
+That's true.
+
+00:07:54.736 --> 00:07:56.316 A:middle
+The rule of thumb is the lower
+
+00:07:56.316 --> 00:07:57.416 A:middle
+the number of bits you quantize
+
+00:07:57.416 --> 00:07:59.226 A:middle
+your model to, the more of a hit
+
+00:07:59.226 --> 00:08:00.346 A:middle
+our model takes in terms of
+

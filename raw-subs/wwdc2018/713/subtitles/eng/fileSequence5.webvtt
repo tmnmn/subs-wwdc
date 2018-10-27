@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.636 --> 00:05:00.066 A:middle
+that leeway in terms of what
+
+00:05:00.066 --> 00:05:01.366 A:middle
+could be the top hypothesis.
+
+00:05:02.126 --> 00:05:03.636 A:middle
+So you can do this with a new
+
+00:05:03.636 --> 00:05:05.856 A:middle
+API called Language Hypotheses.
+
+00:05:06.176 --> 00:05:07.336 A:middle
+You can specify the maximum
+
+00:05:07.336 --> 00:05:08.306 A:middle
+number of languages that you
+
+00:05:08.306 --> 00:05:09.866 A:middle
+want, and what you get back is
+
+00:05:09.866 --> 00:05:11.126 A:middle
+an object with the top-end
+
+00:05:11.126 --> 00:05:12.706 A:middle
+languages and their associated
+
+00:05:12.706 --> 00:05:13.446 A:middle
+probabilities.
+
+00:05:14.596 --> 00:05:15.836 A:middle
+Now in order to tokenize this
+
+00:05:15.836 --> 00:05:17.816 A:middle
+Chinese text, you can again see
+
+00:05:17.816 --> 00:05:19.186 A:middle
+the pattern is very similar.
+
+00:05:20.066 --> 00:05:21.196 A:middle
+You again import Natural
+
+00:05:21.196 --> 00:05:21.646 A:middle
+Language.
+
+00:05:22.316 --> 00:05:23.616 A:middle
+You create an instance of the
+
+00:05:23.616 --> 00:05:25.856 A:middle
+NLTokenizer, and in this
+
+00:05:25.856 --> 00:05:27.576 A:middle
+particular instance, you specify
+
+00:05:27.576 --> 00:05:28.856 A:middle
+the unit to be word because you
+
+00:05:28.856 --> 00:05:30.126 A:middle
+want to tokenize the string into
+
+00:05:30.126 --> 00:05:30.666 A:middle
+words.
+
+00:05:31.176 --> 00:05:34.776 A:middle
+You attach the string, and you
+
+00:05:34.776 --> 00:05:36.486 A:middle
+simply call the tokens method on
+
+00:05:36.486 --> 00:05:38.006 A:middle
+the string, on the object.
+
+00:05:39.006 --> 00:05:40.446 A:middle
+And what you get is an array of
+
+00:05:40.516 --> 00:05:41.096 A:middle
+tokens here.
+
+00:05:41.526 --> 00:05:43.296 A:middle
+Now with this array of tokens,
+
+00:05:43.546 --> 00:05:44.896 A:middle
+you can look up the particular
+
+00:05:45.136 --> 00:05:47.756 A:middle
+token here is goodnight, and lo
+
+00:05:47.756 --> 00:05:48.676 A:middle
+and behold, you have
+
+00:05:48.676 --> 00:05:50.256 A:middle
+multilingual support in your
+
+00:05:50.716 --> 00:05:50.783 A:middle
+app.
+
+00:05:51.026 --> 00:05:52.746 A:middle
+So your app can now support
+
+00:05:52.746 --> 00:05:54.626 A:middle
+Chinese with simple calls to
+
+00:05:54.626 --> 00:05:56.446 A:middle
+language identification and
+
+00:05:56.636 --> 00:05:58.966 A:middle
+tokenization APIs.
+
+00:05:59.026 --> 00:06:00.456 A:middle
+Now let's look at a different
+

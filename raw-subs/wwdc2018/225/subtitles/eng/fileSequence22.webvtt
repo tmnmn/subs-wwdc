@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.776 --> 00:22:01.116 A:middle
+the bulk of our layout work
+
+00:22:01.326 --> 00:22:03.086 A:middle
+because it's getting called once
+
+00:22:03.146 --> 00:22:04.086 A:middle
+per invalidation.
+
+00:22:04.686 --> 00:22:06.616 A:middle
+We can set up our layout here
+
+00:22:06.756 --> 00:22:08.696 A:middle
+and then avoid having to do any
+
+00:22:08.696 --> 00:22:10.626 A:middle
+heavy layout work or any heavy
+
+00:22:10.626 --> 00:22:12.776 A:middle
+layout math in the methods that
+
+00:22:12.776 --> 00:22:13.976 A:middle
+are called much more frequently.
+
+00:22:18.486 --> 00:22:19.226 A:middle
+So we're doing a couple of
+
+00:22:19.226 --> 00:22:19.696 A:middle
+things here.
+
+00:22:19.956 --> 00:22:21.836 A:middle
+First, we're resetting our
+
+00:22:21.836 --> 00:22:23.086 A:middle
+cached attributes and our
+
+00:22:23.086 --> 00:22:24.816 A:middle
+content bounds just to clear out
+
+00:22:24.816 --> 00:22:26.956 A:middle
+any stale information from
+
+00:22:26.956 --> 00:22:28.276 A:middle
+previous invalidations.
+
+00:22:29.576 --> 00:22:32.196 A:middle
+Next, we're doing a few things
+
+00:22:32.196 --> 00:22:33.426 A:middle
+for every item in our
+
+00:22:33.426 --> 00:22:34.056 A:middle
+CollectionView.
+
+00:22:35.346 --> 00:22:36.736 A:middle
+The first of these is actually
+
+00:22:36.786 --> 00:22:38.536 A:middle
+preparing the attributes, and
+
+00:22:38.536 --> 00:22:39.626 A:middle
+now I'm not going to go too
+
+00:22:39.626 --> 00:22:41.506 A:middle
+deeply into what that entails
+
+00:22:41.506 --> 00:22:42.836 A:middle
+for our specific layout because
+
+00:22:42.836 --> 00:22:43.676 A:middle
+this is going to be different
+
+00:22:43.676 --> 00:22:44.076 A:middle
+for you.
+
+00:22:44.466 --> 00:22:46.376 A:middle
+This is where you are going to
+
+00:22:46.376 --> 00:22:47.606 A:middle
+calculate the sizes and
+
+00:22:47.606 --> 00:22:49.506 A:middle
+positions and transforms, etc.,
+
+00:22:49.506 --> 00:22:52.116 A:middle
+for your cells to match your
+
+00:22:52.116 --> 00:22:52.976 A:middle
+design needs.
+
+00:22:53.746 --> 00:22:54.886 A:middle
+But there are a couple of key
+
+00:22:54.886 --> 00:22:55.646 A:middle
+things that we're going to do
+
+00:22:55.646 --> 00:22:57.076 A:middle
+here after we are done with the
+
+00:22:57.076 --> 00:22:57.706 A:middle
+attributes.
+
+00:22:58.176 --> 00:22:59.266 A:middle
+The first is, we're going to
+
+00:22:59.266 --> 00:22:59.676 A:middle
+cache them.
+
+00:22:59.786 --> 00:23:00.576 A:middle
+We're going to put them in our
+

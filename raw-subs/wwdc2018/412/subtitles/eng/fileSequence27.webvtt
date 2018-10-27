@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.726 --> 00:27:02.026 A:middle
+That tells expression that
+
+00:27:02.026 --> 00:27:02.706 A:middle
+you're about to give it
+
+00:27:02.876 --> 00:27:04.126 A:middle
+Objective-C code even though
+
+00:27:04.126 --> 00:27:05.056 A:middle
+you're in a Swift frame.
+
+00:27:05.346 --> 00:27:08.226 A:middle
+And we'll give it -O, tell it
+
+00:27:08.296 --> 00:27:09.546 A:middle
+that we also want the debug
+
+00:27:09.546 --> 00:27:10.956 A:middle
+description the same as po would
+
+00:27:10.956 --> 00:27:12.976 A:middle
+do and -- to indicate that there
+
+00:27:12.976 --> 00:27:14.156 A:middle
+are no more options.
+
+00:27:14.946 --> 00:27:16.406 A:middle
+The rest of the line is just raw
+
+00:27:16.406 --> 00:27:17.116 A:middle
+expression input.
+
+00:27:17.496 --> 00:27:18.846 A:middle
+So we should be able to then
+
+00:27:18.846 --> 00:27:20.996 A:middle
+give it the Objective-C format
+
+00:27:20.996 --> 00:27:22.056 A:middle
+of this method call.
+
+00:27:22.906 --> 00:27:23.786 A:middle
+Unfortunately, that doesn't
+
+00:27:23.786 --> 00:27:25.056 A:middle
+quite work and the reason for
+
+00:27:25.056 --> 00:27:26.126 A:middle
+that is that expression will
+
+00:27:26.126 --> 00:27:27.366 A:middle
+create a temporary expression
+
+00:27:27.366 --> 00:27:28.726 A:middle
+context for the Objective-C
+
+00:27:29.016 --> 00:27:30.446 A:middle
+compilation, and it doesn't
+
+00:27:30.446 --> 00:27:31.596 A:middle
+inherit all the variables from
+
+00:27:31.596 --> 00:27:32.216 A:middle
+the Swift frame.
+
+00:27:32.616 --> 00:27:33.486 A:middle
+So there's a way around that,
+
+00:27:33.486 --> 00:27:33.686 A:middle
+though.
+
+00:27:34.506 --> 00:27:35.566 A:middle
+If we just put [inaudible] view
+
+00:27:35.566 --> 00:27:36.216 A:middle
+in back ticks.
+
+00:27:36.466 --> 00:27:37.536 A:middle
+Back ticks is like a [inaudible]
+
+00:27:37.536 --> 00:27:39.626 A:middle
+step that says first, evaluate
+
+00:27:39.626 --> 00:27:40.496 A:middle
+the contents of this in the
+
+00:27:40.546 --> 00:27:41.806 A:middle
+current frame and insert the
+
+00:27:41.806 --> 00:27:43.026 A:middle
+result, and then we can evaluate
+
+00:27:43.026 --> 00:27:43.486 A:middle
+the rest.
+
+00:27:43.526 --> 00:27:44.606 A:middle
+And now we get the recursive
+
+00:27:44.606 --> 00:27:44.956 A:middle
+description.
+
+00:27:45.516 --> 00:27:51.586 A:middle
+[ Applause ]
+
+00:27:52.086 --> 00:27:53.246 A:middle
+So using this, we can see all
+
+00:27:53.246 --> 00:27:54.346 A:middle
+the debug descriptions for all
+
+00:27:54.346 --> 00:27:54.706 A:middle
+the views.
+
+00:27:54.866 --> 00:27:56.376 A:middle
+And I'm interested in the
+
+00:27:56.376 --> 00:27:57.606 A:middle
+scoreboard views, which host
+
+00:27:57.606 --> 00:27:59.196 A:middle
+these labels, so we can find the
+
+00:27:59.196 --> 00:28:00.346 A:middle
+memory address for one of those.
+

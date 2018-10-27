@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.971 --> 00:24:02.242 align:start position:23% line:-1
+異なる場合にtrueを返します
+
+00:24:04.111 --> 00:24:07.414 align:start position:4% line:-2
+その後layoutAttributesForItem
+AtIndexPathを実装します
+
+00:24:07.514 --> 00:24:11.518 align:start position:23% line:-2
+準備はprepareメソッドで
+行っています
+
+00:24:11.618 --> 00:24:15.656 align:start position:16% line:-2
+そのため
+要求したIndexPathに合う属性を
+
+00:24:15.756 --> 00:24:18.392 align:start position:32% line:-1
+配列から選ぶだけです
+
+00:24:19.726 --> 00:24:21.762 align:start position:34% line:-1
+最後に実装するのは
+
+00:24:22.196 --> 00:24:24.698 align:start position:2% line:-2
+layoutAttributesForElements
+InRectです
+
+00:24:25.232 --> 00:24:30.137 align:start position:27% line:-2
+このメソッドで呼び出された
+矩形の範囲は
+
+00:24:30.237 --> 00:24:32.806 align:start position:16% line:-2
+CollectionViewより大きい
+こともあります
+
+00:24:32.906 --> 00:24:35.776 align:start position:23% line:-1
+CollectionViewは
+
+00:24:35.876 --> 00:24:38.312 align:start position:23% line:-1
+領域に合う属性だけを要求します
+
+00:24:38.545 --> 00:24:44.618 align:start position:16% line:-2
+CollectionViewの矩形内に
+表示されるアイテムに
+
+00:24:44.718 --> 00:24:49.323 align:start position:29% line:-2
+対応する属性を含む配列を
+返す必要があります
+
+00:24:50.557 --> 00:24:53.260 align:start position:32% line:-1
+これは簡単に行えます
+
+00:24:53.360 --> 00:24:56.463 align:start position:23% line:-1
+キャッシュ保存された属性配列を
+
+00:24:56.563 --> 00:25:00.000 align:start position:21% line:-1
+属性フレームでフィルタにかけます
+

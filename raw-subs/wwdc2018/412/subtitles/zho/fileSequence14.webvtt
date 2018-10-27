@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.506 --> 00:14:01.708 align:middle line:-2
+我们写一个表达式
+测试它是否为false
+
+00:14:01.975 --> 00:14:03.343 align:middle line:-1
+然后断点就会被触发
+
+00:14:03.744 --> 00:14:05.045 align:middle line:-1
+然而我没有该属性
+
+00:14:05.112 --> 00:14:06.547 align:middle line:-1
+我要告诉你一个不同的方法
+
+00:14:07.114 --> 00:14:08.949 align:middle line:-1
+我将删除该符号断点
+
+00:14:09.449 --> 00:14:12.819 align:middle line:-2
+并向下滚动到此函数
+jumpCompleted
+
+00:14:12.886 --> 00:14:14.087 align:middle line:-1
+并在这里设置一个断点
+
+00:14:14.655 --> 00:14:17.791 align:middle line:-2
+jumpCompleted函数
+将会在动画完成后被调用
+
+00:14:18.225 --> 00:14:20.394 align:middle line:-2
+以便它可以更新用户界面
+并更新游戏状态
+
+00:14:21.094 --> 00:14:23.030 align:middle line:-1
+然而我们不希望在这个函数中中断
+
+00:14:23.297 --> 00:14:26.300 align:middle line:-1
+我想要做的只是配置这个断点
+
+00:14:26.366 --> 00:14:29.136 align:middle line:-2
+并让它在UILabel setText处
+替我设置一个符号断点
+
+00:14:29.603 --> 00:14:31.805 align:middle line:-2
+我可以通过添加一个
+Debugger Command的Action来做到这点
+
+00:14:32.472 --> 00:14:36.410 align:middle line:-2
+命令为breakpoint set
+参数为--one-shot true
+
+00:14:37.077 --> 00:14:39.680 align:middle line:-1
+这个一次性断点是一个临时断点
+
+00:14:39.746 --> 00:14:43.150 align:middle line:-1
+它一旦触发后就会被自动删除
+
+00:14:44.017 --> 00:14:46.019 align:middle line:-1
+我们给它起一个有意义的名字
+
+00:14:46.887 --> 00:14:48.088 align:middle line:-1
+UILabel setText
+
+00:14:48.255 --> 00:14:50.057 align:middle line:-1
+并使其成为自动继续断点
+
+00:14:50.390 --> 00:14:51.959 align:middle line:-1
+这里我们创建了这样一个断点
+
+00:14:52.359 --> 00:14:56.396 align:middle line:-2
+即当执行进入
+jumpCompleted函数时
+
+00:14:56.697 --> 00:14:58.866 align:middle line:-1
+它会替我们在我们感兴趣的位置
+
+00:14:58.932 --> 00:15:01.134 align:middle line:-2
+设置一个临时断点
+然后继续执行
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.666 --> 00:16:00.946 A:middle
+things perfectly clear, and this
+
+00:16:00.946 --> 00:16:04.436 A:middle
+is a piece of training data for
+
+00:16:04.816 --> 00:16:06.516 A:middle
+a text classifier that's a
+
+00:16:06.516 --> 00:16:07.666 A:middle
+sediment classifier.
+
+00:16:07.916 --> 00:16:11.396 A:middle
+So each training example, like
+
+00:16:11.396 --> 00:16:13.546 A:middle
+this one, consists of two parts,
+
+00:16:13.856 --> 00:16:16.686 A:middle
+a chunk of text, and the
+
+00:16:16.686 --> 00:16:17.986 A:middle
+appropriate label for it.
+
+00:16:18.676 --> 00:16:20.696 A:middle
+And so this for example is a
+
+00:16:20.696 --> 00:16:22.056 A:middle
+positive sentence, so the label
+
+00:16:22.056 --> 00:16:23.206 A:middle
+is positive, but you can pick
+
+00:16:23.246 --> 00:16:27.636 A:middle
+whatever label set you want.
+
+00:16:27.816 --> 00:16:29.896 A:middle
+Now, then when you start using
+
+00:16:29.896 --> 00:16:31.806 A:middle
+Create ML, the Create ML
+
+00:16:32.476 --> 00:16:34.066 A:middle
+provides a very, very simple way
+
+00:16:34.156 --> 00:16:36.296 A:middle
+to train models in just a few
+
+00:16:36.296 --> 00:16:36.986 A:middle
+lines of code.
+
+00:16:36.986 --> 00:16:40.046 A:middle
+First line, we just load our
+
+00:16:40.146 --> 00:16:42.446 A:middle
+training data from our JSON
+
+00:16:42.446 --> 00:16:42.846 A:middle
+file.
+
+00:16:42.886 --> 00:16:44.676 A:middle
+So we give it a URL to the JSON
+
+00:16:44.676 --> 00:16:48.116 A:middle
+file, create a Create ML data
+
+00:16:48.116 --> 00:16:48.836 A:middle
+table from it.
+
+00:16:49.996 --> 00:16:52.216 A:middle
+Then in one line of code, create
+
+00:16:52.216 --> 00:16:55.046 A:middle
+and train a text classifier from
+
+00:16:55.046 --> 00:16:55.586 A:middle
+this data.
+
+00:16:55.806 --> 00:16:57.086 A:middle
+All you have to tell it is what
+
+00:16:57.086 --> 00:16:58.456 A:middle
+the names of the fields are,
+
+00:16:58.866 --> 00:17:02.046 A:middle
+text and label, and then once
+

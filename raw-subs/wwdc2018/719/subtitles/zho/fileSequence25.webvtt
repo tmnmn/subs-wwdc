@@ -1,0 +1,77 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.999 --> 00:25:02.703 align:middle line:-2
+在此之前 我想快速过一下
+PyCoreImage的备忘单
+
+00:25:02.769 --> 00:25:04.204 align:middle line:-1
+我们来看看API
+
+00:25:04.872 --> 00:25:07.875 align:middle line:-2
+正如你之前看到的
+我们从pycoreimage包
+
+00:25:07.941 --> 00:25:09.309 align:middle line:-1
+导入了CIMG类
+
+00:25:10.143 --> 00:25:13.180 align:middle line:-2
+我们可以调用fromFile
+来用它加载文件中的图像
+
+00:25:14.114 --> 00:25:16.517 align:middle line:-2
+你如果想知道的话
+这是等同于Swift的
+
+00:25:16.583 --> 00:25:18.585 align:middle line:-2
+你可以用
+CIImage(contentsOfFile:)
+
+00:25:20.821 --> 00:25:23.857 align:middle line:-2
+你可以使用fromFile
+直接加载纵向褪光信息
+
+00:25:23.924 --> 00:25:25.259 align:middle line:-1
+以及肖像深度
+
+00:25:25.325 --> 00:25:28.762 align:middle line:-2
+只需使用可选参数
+useDepth和useMatte
+
+00:25:31.298 --> 00:25:35.435 align:middle line:-2
+你可以通过把NumPy缓冲区
+包裹CIImage于构造函数中
+
+00:25:35.502 --> 00:25:37.037 align:middle line:-1
+来解释NumPy
+
+00:25:37.404 --> 00:25:40.007 align:middle line:-2
+或直接在CIImage实例下
+调用生成
+
+00:25:40.073 --> 00:25:41.241 align:middle line:-1
+此为另一个选择
+
+00:25:43.443 --> 00:25:44.344 align:middle line:0
+如果你用Swift
+
+00:25:44.411 --> 00:25:45.879 align:middle line:0
+还有一些代码要写
+
+00:25:45.946 --> 00:25:48.115 align:middle line:0
+你需要先创建一个
+CIRenderDestination
+
+00:25:48.549 --> 00:25:50.851 align:middle line:0
+确保你预先分配了缓冲区
+
+00:25:51.718 --> 00:25:53.820 align:middle line:0
+和提供正确的缓冲区属性
+
+00:25:53.887 --> 00:25:58.292 align:middle line:0
+创建CIContext
+的实例并提示测试生成
+
+00:25:59.626 --> 00:26:01.728 align:middle line:-1
+这些都是在幕后处理的
+

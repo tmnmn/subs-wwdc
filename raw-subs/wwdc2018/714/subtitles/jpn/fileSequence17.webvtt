@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.684 --> 00:17:01.155 align:start position:29% line:-2
+URLSessionを
+お使いの方もいるでしょう
+
+00:17:01.255 --> 00:17:06.960 align:start position:18% line:-2
+URLSessionはソケット通信と
+大差ないと思いますか？
+
+00:17:07.928 --> 00:17:10.097 align:start position:36% line:-1
+それは間違いです
+
+00:17:10.830 --> 00:17:15.502 align:start position:20% line:-2
+URLSessionはAppleの
+ユーザ空間を使って―
+
+00:17:15.602 --> 00:17:18.204 align:start position:36% line:-1
+設計されています
+
+00:17:18.305 --> 00:17:21.040 align:start position:32% line:-1
+iOS 12からは―
+
+00:17:21.141 --> 00:17:25.212 align:start position:27% line:-2
+URLSessionと同じ
+APIが使用されます
+
+00:17:25.311 --> 00:17:29.449 align:start position:30% line:-2
+お持ちの
+アプリケーションから―
+
+00:17:29.550 --> 00:17:33.387 align:start position:32% line:-2
+TCP接続などのため
+直接使用可能です
+
+00:17:33.487 --> 00:17:38.926 align:start position:18% line:-2
+URLやGETメソッドを使ってる方は
+ご検討ください
+
+00:17:39.026 --> 00:17:44.531 align:start position:25% line:-2
+URLSession非対応の
+アプリケーション用に―
+
+00:17:44.631 --> 00:17:47.234 align:start position:36% line:-2
+フレームワークも
+公開しています
+
+00:17:47.868 --> 00:17:51.305 align:start position:27% line:-2
+BSDソケットで設計された
+ライブラリを―
+
+00:17:51.405 --> 00:17:55.375 align:start position:34% line:-2
+開発されている方も
+いるでしょう
+
+00:17:55.475 --> 00:17:59.479 align:start position:11% line:-2
+その場合はNetwork.framework
+APIを使ってください
+
+00:17:59.580 --> 00:18:04.751 align:start position:30% line:-2
+ライブラリを高性能な
+APIに移行いただき―
+

@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.484 --> 00:07:02.322 align:start position:20% line:-2
+テクスチャをCompositorと
+共有するには
+
+00:07:02.723 --> 00:07:06.260 align:start position:27% line:-2
+IOSurfaceを使えば
+可能です
+
+00:07:06.760 --> 00:07:12.366 align:start position:27% line:-2
+異なるプロセスやGPU間で
+テクスチャを共有できます
+
+00:07:12.666 --> 00:07:15.836 align:start position:32% line:-1
+しかし欠点もあります
+
+00:07:16.436 --> 00:07:21.675 align:start position:20% line:-2
+IOSurfaceで共有できるのは
+単純な2Dテクスチャだけです
+
+00:07:21.775 --> 00:07:26.613 align:start position:29% line:-2
+そのためマルチサンプルを
+用いる場合は
+
+00:07:26.713 --> 00:07:28.081 align:start position:38% line:-1
+共有できません
+
+00:07:28.949 --> 00:07:32.486 align:start position:23% line:-2
+そこで 共有可能な
+Metalテクスチャの紹介です
+
+00:07:32.586 --> 00:07:38.926 align:start position:23% line:-2
+どのタイプのテクスチャも
+プロセス間で共有可能になります
+
+00:07:39.026 --> 00:07:43.430 align:start position:30% line:-2
+ただし１つのGPU内の
+テクスチャに限ります
+
+00:07:45.332 --> 00:07:49.469 align:start position:32% line:-2
+高度なVRへの
+利用が可能になります
+
+00:07:49.570 --> 00:07:54.274 align:start position:18% line:-2
+例えば VR Compositorと
+深度を共有できます
+
+00:07:54.374 --> 00:07:56.944 align:start position:30% line:-1
+それだけではありません
+
+00:07:57.211 --> 00:08:00.547 align:start position:32% line:-2
+テクスチャの作り方を
+見てみましょう
+

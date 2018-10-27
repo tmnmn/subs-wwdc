@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:02.096 --> 00:20:04.276 A:middle
+So those are some tips and
+
+00:20:04.276 --> 00:20:05.606 A:middle
+tricks around how to build your
+
+00:20:05.606 --> 00:20:07.086 A:middle
+app and server architecture.
+
+00:20:07.086 --> 00:20:08.666 A:middle
+Let's talk about three tips that
+
+00:20:08.666 --> 00:20:09.926 A:middle
+you can use in your in-app
+
+00:20:09.926 --> 00:20:11.526 A:middle
+experience to really enhance the
+
+00:20:11.526 --> 00:20:12.456 A:middle
+user's experience.
+
+00:20:13.526 --> 00:20:14.906 A:middle
+Firstly, we made the assumption
+
+00:20:14.946 --> 00:20:16.726 A:middle
+earlier that the user was signed
+
+00:20:16.726 --> 00:20:17.946 A:middle
+in to an account on your own
+
+00:20:17.946 --> 00:20:18.556 A:middle
+service.
+
+00:20:19.776 --> 00:20:21.666 A:middle
+In order to keep track of each
+
+00:20:21.666 --> 00:20:22.896 A:middle
+subscription ID you need this
+
+00:20:22.936 --> 00:20:24.736 A:middle
+particular user table located on
+
+00:20:24.736 --> 00:20:25.146 A:middle
+your server.
+
+00:20:25.746 --> 00:20:26.646 A:middle
+Now when it comes to actually
+
+00:20:26.646 --> 00:20:28.156 A:middle
+creating accounts we think it's
+
+00:20:28.196 --> 00:20:29.696 A:middle
+best to offer in-app purchase
+
+00:20:29.886 --> 00:20:31.606 A:middle
+before an account creation step.
+
+00:20:32.666 --> 00:20:33.156 A:middle
+Why is that?
+
+00:20:33.156 --> 00:20:34.576 A:middle
+Well as the user it's a much
+
+00:20:34.576 --> 00:20:35.576 A:middle
+better experience, you can just
+
+00:20:35.716 --> 00:20:36.996 A:middle
+open the app for the first time
+
+00:20:36.996 --> 00:20:38.256 A:middle
+and buy the subscription
+
+00:20:38.256 --> 00:20:39.326 A:middle
+immediately getting access to
+
+00:20:39.326 --> 00:20:40.106 A:middle
+the content you're after.
+
+00:20:40.106 --> 00:20:41.746 A:middle
+For you it's better because you
+
+00:20:41.746 --> 00:20:43.056 A:middle
+get higher conversion rates,
+
+00:20:43.296 --> 00:20:44.196 A:middle
+users don't have to go through
+
+00:20:44.236 --> 00:20:45.726 A:middle
+funnels of entering emails and
+
+00:20:45.936 --> 00:20:47.086 A:middle
+passwords to be able to get
+
+00:20:47.086 --> 00:20:48.066 A:middle
+access to giving you money.
+
+00:20:49.316 --> 00:20:50.396 A:middle
+Now you can use the techniques
+
+00:20:50.426 --> 00:20:51.836 A:middle
+that we just went through by
+
+00:20:51.836 --> 00:20:53.406 A:middle
+using an anonymous account in
+
+00:20:53.406 --> 00:20:54.116 A:middle
+these instances.
+
+00:20:55.646 --> 00:20:58.156 A:middle
+And you can rely on the original
+
+00:20:58.156 --> 00:20:59.636 A:middle
+transaction ID if you need to
+
+00:20:59.636 --> 00:21:01.206 A:middle
+associate multiple devices.
+

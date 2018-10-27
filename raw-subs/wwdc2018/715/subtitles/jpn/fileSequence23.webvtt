@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.778 --> 00:23:03.250 align:start position:27% line:-2
+低バイトのデータを受け取り
+別の画面に映し出します
+
+00:23:04.351 --> 00:23:10.824 align:start position:27% line:-2
+フレームを小さな塊に分割し
+UDPパケットを送信
+
+00:23:11.859 --> 00:23:15.529 align:start position:27% line:-1
+当然 接続が必要になります
+
+00:23:16.797 --> 00:23:18.499 align:start position:38% line:-1
+接続を受け取り
+
+00:23:18.599 --> 00:23:24.638 align:start position:29% line:-2
+データパケットを読み取る
+リスナーが必要です
+
+00:23:25.005 --> 00:23:27.574 align:start position:36% line:-1
+そして逆の手順で
+
+00:23:27.674 --> 00:23:32.379 align:start position:29% line:-2
+ビデオフレームを再構築し
+ディスプレイへ送ります
+
+00:23:33.947 --> 00:23:38.685 align:start position:27% line:-2
+カメラとディスプレイ機能を
+省くことで
+
+00:23:38.786 --> 00:23:42.222 align:start position:18% line:-2
+Network.frameworkを
+使う部分に焦点を当てます
+
+00:23:43.490 --> 00:23:48.061 align:start position:34% line:-2
+隠していない部分は
+リスナーです
+
+00:23:50.230 --> 00:23:53.801 align:start position:20% line:-2
+リスナー機能は
+NWListnerで提供されており
+
+00:23:53.901 --> 00:23:58.672 align:start position:14% line:-2
+接続の設定と同じ
+Parameterオブジェクトで作れます
+
+00:23:59.706 --> 00:24:03.911 align:start position:21% line:-2
+Bonjourサービスを
+アドバタイズするリスナーの設定に
+

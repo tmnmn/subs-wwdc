@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:00.200 --> 00:55:03.604 align:middle line:-1
+多路径连接 多路径TCP
+
+00:55:04.204 --> 00:55:07.941 align:middle line:-2
+如果你能够在服务器上
+启用多路径TCP
+
+00:55:08.675 --> 00:55:12.779 align:middle line:-1
+并且在客户端启用参数中的
+
+00:55:12.846 --> 00:55:13.847 align:middle line:-1
+multipathServiceType
+
+00:55:14.414 --> 00:55:16.750 align:middle line:-1
+那么你的连接将随着网络的变换
+
+00:55:16.817 --> 00:55:18.685 align:middle line:-1
+而在它们之间自动迁移
+
+00:55:18.986 --> 00:55:22.122 align:middle line:-1
+这是一种非常棒的无缝体验
+
+00:55:22.322 --> 00:55:23.857 align:middle line:-1
+你的app不需要处理任何工作
+
+00:55:24.858 --> 00:55:28.762 align:middle line:-2
+这也是URLSession中
+可用的相同服务类型
+
+00:55:30.731 --> 00:55:34.768 align:middle line:-2
+关于Network.framework
+我想在此强调几点
+
+00:55:35.569 --> 00:55:38.772 align:middle line:-2
+若你在NWParameters中
+限制可以使用的接口类型
+
+00:55:39.173 --> 00:55:42.543 align:middle line:-1
+这将适用于MPTCP
+
+00:55:42.876 --> 00:55:45.979 align:middle line:-2
+所以在使用多路径连接时
+你仍然可以选择
+
+00:55:46.046 --> 00:55:47.481 align:middle line:-1
+不使用蜂窝网络
+
+00:55:47.848 --> 00:55:51.251 align:middle line:-2
+这样我们只会在可用的
+不同Wi-Fi网络之间
+
+00:55:51.318 --> 00:55:52.553 align:middle line:-1
+进行无缝迁移
+
+00:55:54.721 --> 00:55:58.091 align:middle line:-2
+此外 之前我提到的
+连接可行性处理程序
+
+00:55:58.392 --> 00:56:00.260 align:middle line:-1
+与多路径TCP略有不同
+

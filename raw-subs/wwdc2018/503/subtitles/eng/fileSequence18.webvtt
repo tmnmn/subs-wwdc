@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.696 --> 00:18:01.306 A:middle
+and gauge the system pressure
+
+00:18:01.306 --> 00:18:04.006 A:middle
+level which goes from nominal to
+
+00:18:04.006 --> 00:18:06.216 A:middle
+fair, serious, critical, and
+
+00:18:06.216 --> 00:18:07.056 A:middle
+then shutdown.
+
+00:18:07.476 --> 00:18:08.956 A:middle
+And the responsibility is in
+
+00:18:08.956 --> 00:18:10.886 A:middle
+your hands because the system
+
+00:18:11.166 --> 00:18:12.326 A:middle
+will let you go all the way to
+
+00:18:12.326 --> 00:18:15.206 A:middle
+shutdown but when it does it's
+
+00:18:15.206 --> 00:18:17.326 A:middle
+bye-bye every capture device.
+
+00:18:17.726 --> 00:18:22.026 A:middle
+Another thing you can do is to
+
+00:18:22.026 --> 00:18:24.006 A:middle
+adopt a degradation scheme, if
+
+00:18:24.006 --> 00:18:25.496 A:middle
+the pressure level gets serious
+
+00:18:25.496 --> 00:18:27.206 A:middle
+you can reduce the frame rate to
+
+00:18:27.206 --> 00:18:29.736 A:middle
+15 frames per second or you can
+
+00:18:29.736 --> 00:18:31.516 A:middle
+choose a more elaborate scheme
+
+00:18:31.896 --> 00:18:33.966 A:middle
+with gentle degradation going
+
+00:18:33.966 --> 00:18:37.356 A:middle
+from 30, 24, 20 and 15 frames
+
+00:18:37.356 --> 00:18:39.536 A:middle
+per second anytime the pressure
+
+00:18:39.536 --> 00:18:39.976 A:middle
+level increases.
+
+00:18:43.836 --> 00:18:45.026 A:middle
+So we have holes in the depth
+
+00:18:45.026 --> 00:18:46.406 A:middle
+map what can we do about it?
+
+00:18:47.686 --> 00:18:49.456 A:middle
+Well, in fact you could get the
+
+00:18:49.456 --> 00:18:51.496 A:middle
+stream already filtered for you.
+
+00:18:52.176 --> 00:18:53.936 A:middle
+There is a parameter called
+
+00:18:53.936 --> 00:18:55.546 A:middle
+isFilteringEnabled and it's'
+
+00:18:55.546 --> 00:18:57.676 A:middle
+defaulted to true, which means
+
+00:18:57.676 --> 00:18:59.236 A:middle
+you get a filtered depth map
+
+00:18:59.606 --> 00:19:01.576 A:middle
+smooth, spatially and temporally
+

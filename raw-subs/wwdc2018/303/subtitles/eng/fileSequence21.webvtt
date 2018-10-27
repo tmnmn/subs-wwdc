@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.476 --> 00:21:00.816 A:middle
+of beta Groups and a set of
+
+00:21:00.816 --> 00:21:01.366 A:middle
+attributes.
+
+00:21:01.366 --> 00:21:03.296 A:middle
+And since the name is the only
+
+00:21:03.296 --> 00:21:04.696 A:middle
+required field when we're
+
+00:21:04.696 --> 00:21:06.516 A:middle
+creating a group, let's give it
+
+00:21:06.516 --> 00:21:08.776 A:middle
+a name and we'll simply call it
+
+00:21:09.116 --> 00:21:09.606 A:middle
+Test Group.
+
+00:21:10.606 --> 00:21:11.866 A:middle
+And I'll send the request now
+
+00:21:12.566 --> 00:21:15.136 A:middle
+and we get a 409 CONFLICT
+
+00:21:15.136 --> 00:21:15.636 A:middle
+response.
+
+00:21:15.936 --> 00:21:18.316 A:middle
+So let's look at the details.
+
+00:21:18.606 --> 00:21:19.686 A:middle
+It says, "You must provide a
+
+00:21:19.686 --> 00:21:21.106 A:middle
+value for the relationship app
+
+00:21:21.386 --> 00:21:22.106 A:middle
+with this request."
+
+00:21:22.886 --> 00:21:24.266 A:middle
+So in TestFlight, you cannot
+
+00:21:24.266 --> 00:21:25.746 A:middle
+create a beta Group that does
+
+00:21:25.746 --> 00:21:27.486 A:middle
+not belong to any app and, thus,
+
+00:21:27.486 --> 00:21:28.916 A:middle
+we must create a relationship to
+
+00:21:28.916 --> 00:21:30.366 A:middle
+an app while we're creating beta
+
+00:21:30.366 --> 00:21:30.726 A:middle
+Group.
+
+00:21:31.106 --> 00:21:31.946 A:middle
+And how do we do this?
+
+00:21:32.296 --> 00:21:33.666 A:middle
+We can include the relationship
+
+00:21:33.666 --> 00:21:37.496 A:middle
+in the payload like this.
+
+00:21:37.676 --> 00:21:38.836 A:middle
+So now we have the relationship
+
+00:21:38.836 --> 00:21:40.936 A:middle
+in the payload of an app with a
+
+00:21:40.936 --> 00:21:42.926 A:middle
+data type of apps and the id
+
+00:21:43.006 --> 00:21:44.776 A:middle
+specifies which apps the beta
+
+00:21:44.776 --> 00:21:46.396 A:middle
+Groups should be linked to.
+
+00:21:46.676 --> 00:21:48.006 A:middle
+So this will create beta Groups
+
+00:21:48.006 --> 00:21:49.546 A:middle
+with the name of Test Group and
+
+00:21:49.546 --> 00:21:52.436 A:middle
+link to an app with the id.
+
+00:21:52.546 --> 00:21:53.936 A:middle
+So let's resend this request.
+
+00:21:54.936 --> 00:21:56.506 A:middle
+And now we get a 201 CREATED
+
+00:21:56.506 --> 00:21:56.876 A:middle
+response.
+
+00:21:57.356 --> 00:21:58.796 A:middle
+In the response, we have the id
+
+00:21:58.946 --> 00:21:59.846 A:middle
+that is generated.
+
+00:21:59.846 --> 00:22:04.006 A:middle
+So let's copy this id.
+

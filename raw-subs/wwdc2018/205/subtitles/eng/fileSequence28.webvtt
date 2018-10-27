@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.416 --> 00:28:00.446 A:middle
+Let's take a look at what the
+
+00:28:00.446 --> 00:28:01.476 A:middle
+query function looks like.
+
+00:28:01.896 --> 00:28:05.596 A:middle
+As you can see, in this line,
+
+00:28:06.086 --> 00:28:07.566 A:middle
+recording for any new tremor
+
+00:28:07.566 --> 00:28:09.056 A:middle
+records that were stored on the
+
+00:28:09.056 --> 00:28:10.896 A:middle
+device since our last query
+
+00:28:11.086 --> 00:28:11.306 A:middle
+date.
+
+00:28:12.776 --> 00:28:14.956 A:middle
+These records are stored on
+
+00:28:14.956 --> 00:28:17.736 A:middle
+device by the API, but they also
+
+00:28:17.736 --> 00:28:19.426 A:middle
+will expire after seven days.
+
+00:28:20.036 --> 00:28:21.656 A:middle
+And so, before it expires,
+
+00:28:21.916 --> 00:28:22.826 A:middle
+you're going to want to take
+
+00:28:22.986 --> 00:28:24.596 A:middle
+ownership of those records
+
+00:28:25.186 --> 00:28:27.486 A:middle
+either by serializing them and
+
+00:28:27.486 --> 00:28:28.756 A:middle
+storing them on this device
+
+00:28:28.756 --> 00:28:30.586 A:middle
+yourself, or transferring it to
+
+00:28:30.586 --> 00:28:32.046 A:middle
+a different platform so you can
+
+00:28:32.046 --> 00:28:33.206 A:middle
+visualize it and analyze it.
+
+00:28:34.436 --> 00:28:35.846 A:middle
+The data will be returned to you
+
+00:28:35.846 --> 00:28:37.626 A:middle
+as an array of minute long
+
+00:28:37.866 --> 00:28:38.786 A:middle
+object results.
+
+00:28:39.306 --> 00:28:42.006 A:middle
+So, one hour's worth of data, 60
+
+00:28:42.176 --> 00:28:43.236 A:middle
+result objects.
+
+00:28:43.746 --> 00:28:45.256 A:middle
+Let's take a look at what one of
+
+00:28:45.256 --> 00:28:46.406 A:middle
+those result objects will look
+
+00:28:46.406 --> 00:28:46.556 A:middle
+like.
+
+00:28:52.186 --> 00:28:53.706 A:middle
+As you can see, the result
+
+00:28:53.706 --> 00:28:55.656 A:middle
+objects return the percentage of
+
+00:28:55.656 --> 00:28:57.096 A:middle
+the time the percentage of that
+
+00:28:57.096 --> 00:28:58.686 A:middle
+one minute that the algorithm
+
+00:28:58.686 --> 00:29:00.006 A:middle
+was able to observe the
+

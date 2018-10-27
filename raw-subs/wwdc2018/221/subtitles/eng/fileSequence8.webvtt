@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.296 --> 00:08:00.546 A:middle
+how that layout process works.
+
+00:08:01.426 --> 00:08:03.166 A:middle
+So text layout happens after the
+
+00:08:03.216 --> 00:08:04.596 A:middle
+system fixes attributes in the
+
+00:08:04.596 --> 00:08:06.006 A:middle
+text storage to remove
+
+00:08:06.006 --> 00:08:08.206 A:middle
+inconsistencies like making sure
+
+00:08:08.206 --> 00:08:09.626 A:middle
+that all the characters in the
+
+00:08:09.626 --> 00:08:11.206 A:middle
+string are covered by fonts that
+
+00:08:11.246 --> 00:08:12.156 A:middle
+support displaying those
+
+00:08:12.186 --> 00:08:12.626 A:middle
+characters.
+
+00:08:13.086 --> 00:08:14.906 A:middle
+And so in this example, the
+
+00:08:14.906 --> 00:08:15.996 A:middle
+Times New Roman font is
+
+00:08:16.056 --> 00:08:17.566 A:middle
+specified for the entire string,
+
+00:08:18.096 --> 00:08:19.486 A:middle
+but this font doesn't support
+
+00:08:19.936 --> 00:08:21.486 A:middle
+displaying Japanese kanji or
+
+00:08:21.486 --> 00:08:21.906 A:middle
+emoji.
+
+00:08:23.136 --> 00:08:24.536 A:middle
+And so after attribute fixing,
+
+00:08:24.536 --> 00:08:25.446 A:middle
+your text storage will look
+
+00:08:25.476 --> 00:08:26.876 A:middle
+something like this with an
+
+00:08:26.876 --> 00:08:28.146 A:middle
+appropriate Japanese font
+
+00:08:28.376 --> 00:08:29.346 A:middle
+assigned to the Japanese
+
+00:08:29.346 --> 00:08:31.186 A:middle
+characters and the emoji font
+
+00:08:31.186 --> 00:08:32.476 A:middle
+assigned to the emoji character.
+
+00:08:32.476 --> 00:08:33.145 A:middle
+All right.
+
+00:08:33.856 --> 00:08:36.006 A:middle
+So once the attributes are
+
+00:08:36.006 --> 00:08:37.405 A:middle
+fixed, the layout process can
+
+00:08:37.405 --> 00:08:37.666 A:middle
+begin.
+
+00:08:37.666 --> 00:08:39.606 A:middle
+And we can think of layout in
+
+00:08:39.666 --> 00:08:41.806 A:middle
+two steps: glyph generation
+
+00:08:41.956 --> 00:08:42.866 A:middle
+followed by glyph layout.
+
+00:08:44.256 --> 00:08:45.366 A:middle
+And once they're laid out,
+
+00:08:45.646 --> 00:08:46.456 A:middle
+they're ready for display.
+
+00:08:47.086 --> 00:08:48.606 A:middle
+But wait a minute.
+
+00:08:48.946 --> 00:08:49.356 A:middle
+What's a glyph?
+
+00:08:50.206 --> 00:08:51.226 A:middle
+Let's back up and review that.
+
+00:08:52.146 --> 00:08:53.296 A:middle
+A glyph is a visual
+
+00:08:53.296 --> 00:08:54.536 A:middle
+representation of one or more
+
+00:08:54.536 --> 00:08:55.046 A:middle
+characters.
+
+00:08:55.536 --> 00:08:56.916 A:middle
+And as you can see here, the
+
+00:08:56.916 --> 00:08:58.056 A:middle
+mapping between characters and
+
+00:08:58.056 --> 00:09:00.066 A:middle
+glyphs is not always one-to-one.
+

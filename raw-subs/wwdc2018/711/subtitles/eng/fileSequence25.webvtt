@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.716 --> 00:25:01.906 A:middle
+So after you set a localized
+
+00:25:01.906 --> 00:25:03.426 A:middle
+string here, you need to
+
+00:25:03.426 --> 00:25:04.416 A:middle
+localize the string.
+
+00:25:05.606 --> 00:25:08.976 A:middle
+And you localize the string in a
+
+00:25:09.206 --> 00:25:10.766 A:middle
+strings dict file.
+
+00:25:11.426 --> 00:25:12.996 A:middle
+A strings dict file is a
+
+00:25:13.436 --> 00:25:14.646 A:middle
+property list file that
+
+00:25:14.646 --> 00:25:18.036 A:middle
+describes a performance string
+
+00:25:18.236 --> 00:25:20.186 A:middle
+and a configuration dictionary.
+
+00:25:20.526 --> 00:25:21.956 A:middle
+In the configuration dictionary
+
+00:25:21.956 --> 00:25:23.526 A:middle
+here at the bottom, you see the
+
+00:25:23.526 --> 00:25:26.646 A:middle
+two versions of the string for
+
+00:25:26.646 --> 00:25:28.586 A:middle
+singular and plural in English.
+
+00:25:29.526 --> 00:25:31.396 A:middle
+But as I said, all you need to
+
+00:25:31.396 --> 00:25:33.046 A:middle
+do to support other languages
+
+00:25:33.046 --> 00:25:34.256 A:middle
+and different pluralization
+
+00:25:34.256 --> 00:25:37.296 A:middle
+rules is change this stings dict
+
+00:25:37.296 --> 00:25:37.666 A:middle
+file.
+
+00:25:37.936 --> 00:25:38.796 A:middle
+You create a new one.
+
+00:25:38.956 --> 00:25:40.776 A:middle
+And you see here Hebrew has
+
+00:25:40.826 --> 00:25:42.356 A:middle
+three different cases for
+
+00:25:43.556 --> 00:25:44.096 A:middle
+plurals.
+
+00:25:44.696 --> 00:25:47.106 A:middle
+And Russian has three different
+
+00:25:47.106 --> 00:25:48.616 A:middle
+ones and they're different from
+
+00:25:48.616 --> 00:25:48.996 A:middle
+Hebrew.
+
+00:25:49.216 --> 00:25:51.336 A:middle
+And you don't need to know which
+
+00:25:51.336 --> 00:25:52.266 A:middle
+one to use when.
+
+00:25:52.716 --> 00:25:53.886 A:middle
+If you use the foundation API
+
+00:25:53.886 --> 00:25:54.656 A:middle
+that we provide.
+
+00:25:56.776 --> 00:25:59.666 A:middle
+This is for the simple summary
+

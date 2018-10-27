@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:03.396 --> 00:19:05.796 A:middle
+We create a new controller, we
+
+00:19:05.796 --> 00:19:07.426 A:middle
+assign the document data source
+
+00:19:07.426 --> 00:19:09.676 A:middle
+to it as the data source and
+
+00:19:09.856 --> 00:19:11.446 A:middle
+then make sure Quick Look shows
+
+00:19:11.446 --> 00:19:12.936 A:middle
+the correct preview when it's
+
+00:19:12.936 --> 00:19:15.016 A:middle
+presented by setting the right
+
+00:19:15.116 --> 00:19:15.976 A:middle
+CurrentPreviewItemIndex.
+
+00:19:20.056 --> 00:19:22.316 A:middle
+Great, now Xcode is already
+
+00:19:22.316 --> 00:19:23.986 A:middle
+complaining about our new code,
+
+00:19:23.986 --> 00:19:25.486 A:middle
+it doesn't know
+
+00:19:25.486 --> 00:19:27.106 A:middle
+QLPreviewController yet.
+
+00:19:27.826 --> 00:19:29.106 A:middle
+We need to import Quick Look
+
+00:19:29.106 --> 00:19:31.396 A:middle
+first and therefore we return to
+
+00:19:31.396 --> 00:19:32.666 A:middle
+the top of the file and import
+
+00:19:32.716 --> 00:19:32.976 A:middle
+Quick Look.
+
+00:19:44.046 --> 00:19:46.456 A:middle
+Done. The next thing Xcode
+
+00:19:46.456 --> 00:19:47.946 A:middle
+complains about is the data
+
+00:19:47.946 --> 00:19:48.446 A:middle
+source.
+
+00:19:49.166 --> 00:19:50.766 A:middle
+The document data source that we
+
+00:19:50.766 --> 00:19:52.016 A:middle
+assigned to the new preview
+
+00:19:52.016 --> 00:19:53.556 A:middle
+controller doesn't seem to
+
+00:19:53.556 --> 00:19:54.416 A:middle
+conform to the
+
+00:19:54.416 --> 00:19:56.226 A:middle
+QLPreviewController data source
+
+00:19:56.226 --> 00:19:57.946 A:middle
+protocol yet which we have
+
+00:19:57.946 --> 00:19:58.946 A:middle
+talked about earlier.
+

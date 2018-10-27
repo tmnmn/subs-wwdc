@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.246 --> 00:06:00.856 A:middle
+Now, it is important that you
+
+00:06:00.856 --> 00:06:01.936 A:middle
+know just what to test.
+
+00:06:02.346 --> 00:06:03.686 A:middle
+I want to caution you that I
+
+00:06:03.686 --> 00:06:05.096 A:middle
+don't ever immediately jump to
+
+00:06:05.096 --> 00:06:06.086 A:middle
+these sort of performance
+
+00:06:06.086 --> 00:06:08.106 A:middle
+overhauls as a way of fixing a
+
+00:06:08.106 --> 00:06:08.896 A:middle
+performance problem.
+
+00:06:09.296 --> 00:06:10.816 A:middle
+I love to do that.
+
+00:06:10.816 --> 00:06:12.046 A:middle
+It's sort of Greenfield
+
+00:06:12.046 --> 00:06:13.106 A:middle
+engineering, where you get to
+
+00:06:13.106 --> 00:06:14.326 A:middle
+design things from the ground
+
+00:06:14.326 --> 00:06:16.126 A:middle
+up, but it's very risky.
+
+00:06:16.556 --> 00:06:17.346 A:middle
+You're going to end up with a
+
+00:06:17.346 --> 00:06:18.666 A:middle
+better product at the end, but
+
+00:06:18.666 --> 00:06:19.686 A:middle
+it's going to be a turbulent
+
+00:06:19.686 --> 00:06:21.376 A:middle
+path getting there as you rework
+
+00:06:21.376 --> 00:06:23.976 A:middle
+an entire feature.
+
+00:06:24.116 --> 00:06:25.186 A:middle
+When you're doing this style of
+
+00:06:25.186 --> 00:06:26.666 A:middle
+work, it is imperative you
+
+00:06:26.666 --> 00:06:28.156 A:middle
+understand not only the
+
+00:06:28.286 --> 00:06:29.436 A:middle
+functional constraints of the
+
+00:06:29.436 --> 00:06:31.336 A:middle
+code in question, but also the
+
+00:06:31.336 --> 00:06:32.986 A:middle
+performance constraints, and the
+
+00:06:32.986 --> 00:06:34.356 A:middle
+typical use patterns that your
+
+00:06:34.356 --> 00:06:35.616 A:middle
+users are most frequently
+
+00:06:35.616 --> 00:06:37.386 A:middle
+applying to this feature, and
+
+00:06:37.386 --> 00:06:39.106 A:middle
+you only get that by having done
+
+00:06:39.256 --> 00:06:40.276 A:middle
+performance work in the area in
+
+00:06:40.276 --> 00:06:40.736 A:middle
+the past.
+
+00:06:41.636 --> 00:06:43.326 A:middle
+I'd like to share an anecdote
+
+00:06:43.326 --> 00:06:45.046 A:middle
+about our work on a situation
+
+00:06:45.046 --> 00:06:46.216 A:middle
+like this, within Xcode.
+
+00:06:47.216 --> 00:06:49.406 A:middle
+In Xcode 9, we reworked Project
+
+00:06:49.406 --> 00:06:50.606 A:middle
+Find, with performance as a
+
+00:06:50.606 --> 00:06:51.406 A:middle
+primary goal.
+
+00:06:52.366 --> 00:06:53.716 A:middle
+It was our goal to deliver
+
+00:06:53.716 --> 00:06:55.376 A:middle
+search results in just tens of
+
+00:06:55.376 --> 00:06:56.076 A:middle
+milliseconds.
+
+00:06:56.926 --> 00:06:59.156 A:middle
+When we were going to discuss
+
+00:06:59.156 --> 00:07:00.006 A:middle
+this feature with our
+

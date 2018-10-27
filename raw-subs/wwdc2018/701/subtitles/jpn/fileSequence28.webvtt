@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.679 --> 00:28:00.180 align:start position:38% line:-1
+新しく作ります
+
+00:28:01.482 --> 00:28:03.150 align:start position:32% line:-1
+Vimageの機能で
+
+00:28:03.250 --> 00:28:06.920 align:start position:18% line:-1
+CGImageCreateがあります
+
+00:28:08.021 --> 00:28:12.893 align:start position:27% line:-2
+Vimageバッファから
+CGImageを作成します
+
+00:28:13.794 --> 00:28:15.229 align:start position:38% line:-1
+特筆すべき点は
+
+00:28:15.329 --> 00:28:21.068 align:start position:27% line:-2
+大きなデータバッファを
+コピーしていないということ
+
+00:28:21.201 --> 00:28:24.271 align:start position:27% line:-1
+CGImageを単に作成し
+
+00:28:24.371 --> 00:28:27.574 align:start position:34% line:-2
+画像バッファの
+容量を足しています
+
+00:28:28.108 --> 00:28:33.514 align:start position:21% line:-2
+必要な情報を提供し
+CGImageを作成しているので
+
+00:28:33.614 --> 00:28:35.716 align:start position:36% line:-1
+コピーは不要です
+
+00:28:37.117 --> 00:28:41.989 align:start position:29% line:-2
+作成したCGImageを
+イメージビューに送ると
+
+00:28:42.422 --> 00:28:44.758 align:start position:29% line:-1
+スクリーンに投影されます
+
+00:28:44.892 --> 00:28:46.126 align:start position:43% line:-1
+簡単です
+
+00:28:46.293 --> 00:28:50.063 align:start position:32% line:-2
+４つのステップで
+エフェクトを加えます
+
+00:28:50.164 --> 00:28:51.865 align:start position:36% line:-1
+例は彩度でしたが
+
+00:28:51.965 --> 00:28:56.503 align:start position:27% line:-2
+Vimageの他の
+エフェクトも紹介しましょう
+
+00:28:57.538 --> 00:29:03.210 align:start position:30% line:-2
+時計回りと反時計回りに
+画像を回転させることと
+

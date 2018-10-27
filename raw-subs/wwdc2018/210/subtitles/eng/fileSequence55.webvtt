@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:59.506 --> 00:55:00.176 A:middle
+something like that.
+
+00:55:00.596 --> 00:55:01.966 A:middle
+And all of the text and images
+
+00:55:01.966 --> 00:55:03.646 A:middle
+within that also get that dark
+
+00:55:03.646 --> 00:55:05.946 A:middle
+styling, but we can also use
+
+00:55:05.946 --> 00:55:07.356 A:middle
+this to fix the problem we had
+
+00:55:07.356 --> 00:55:08.916 A:middle
+before with our text area.
+
+00:55:09.876 --> 00:55:11.786 A:middle
+We can see here that we actually
+
+00:55:11.786 --> 00:55:13.316 A:middle
+want this entire document area
+
+00:55:13.386 --> 00:55:14.486 A:middle
+to remain having a light
+
+00:55:14.486 --> 00:55:16.086 A:middle
+appearance, and so by setting
+
+00:55:16.086 --> 00:55:17.536 A:middle
+the lightAqua appearance, we can
+
+00:55:17.536 --> 00:55:18.406 A:middle
+make sure that the text
+
+00:55:18.406 --> 00:55:19.826 A:middle
+highlighting color gets the
+
+00:55:19.826 --> 00:55:21.426 A:middle
+correct appearance as well as
+
+00:55:21.426 --> 00:55:22.466 A:middle
+the autocorrect bubble
+
+00:55:22.676 --> 00:55:24.196 A:middle
+inheriting that light appearance
+
+00:55:24.196 --> 00:55:24.556 A:middle
+as well.
+
+00:55:26.606 --> 00:55:27.546 A:middle
+However, in addition to be able
+
+00:55:27.546 --> 00:55:28.756 A:middle
+to be used for some really cool
+
+00:55:28.756 --> 00:55:30.426 A:middle
+effects, it can also lead to
+
+00:55:30.426 --> 00:55:31.966 A:middle
+some hard-to-debug situations.
+
+00:55:31.966 --> 00:55:34.386 A:middle
+For instance, here, we're using
+
+00:55:34.386 --> 00:55:35.336 A:middle
+the vibrantLight appearance
+
+00:55:35.336 --> 00:55:36.656 A:middle
+explicitly on our table view,
+
+00:55:36.656 --> 00:55:38.546 A:middle
+and that looks perfectly fine in
+
+00:55:38.546 --> 00:55:39.786 A:middle
+the light appearance, where it's
+
+00:55:39.786 --> 00:55:41.366 A:middle
+actually already inheriting the
+
+00:55:41.366 --> 00:55:43.546 A:middle
+vibrantLight appearance.
+
+00:55:43.546 --> 00:55:44.806 A:middle
+In Dark Mode, this quickly
+
+00:55:44.806 --> 00:55:46.586 A:middle
+becomes a very visible problem.
+
+00:55:47.226 --> 00:55:48.426 A:middle
+We can see that the text and
+
+00:55:48.426 --> 00:55:49.866 A:middle
+images inside that table view
+
+00:55:49.866 --> 00:55:50.876 A:middle
+are now inheriting that
+
+00:55:50.876 --> 00:55:52.636 A:middle
+vibrantLight appearance and look
+
+00:55:52.636 --> 00:55:53.936 A:middle
+bad on top of that dark
+
+00:55:53.936 --> 00:55:54.356 A:middle
+background.
+
+00:55:54.356 --> 00:55:56.386 A:middle
+So, for the most part, we just
+
+00:55:56.386 --> 00:55:57.516 A:middle
+want to remove these explicit
+
+00:55:57.516 --> 00:55:59.126 A:middle
+overrides in places where we
+
+00:55:59.186 --> 00:56:00.776 A:middle
+really do not intend to have an
+

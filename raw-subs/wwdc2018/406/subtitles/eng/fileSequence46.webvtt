@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:00.006 --> 00:46:01.286 A:middle
+And simplifies the use of the
+
+00:46:01.286 --> 00:46:02.276 A:middle
+collection protocol.
+
+00:46:02.566 --> 00:46:04.316 A:middle
+There's no more need to reason
+
+00:46:04.356 --> 00:46:06.226 A:middle
+about infinite tower of types.
+
+00:46:06.226 --> 00:46:08.736 A:middle
+Now there's one last issue here
+
+00:46:08.736 --> 00:46:10.276 A:middle
+involving subsequence.
+
+00:46:10.616 --> 00:46:11.906 A:middle
+We've said it's required to be a
+
+00:46:11.906 --> 00:46:12.656 A:middle
+collection.
+
+00:46:12.926 --> 00:46:14.546 A:middle
+But we need the subsequence type
+
+00:46:14.546 --> 00:46:16.426 A:middle
+to be a random access collection
+
+00:46:16.616 --> 00:46:18.826 A:middle
+to perform this index offset by
+
+00:46:18.826 --> 00:46:19.676 A:middle
+operation.
+
+00:46:20.806 --> 00:46:22.556 A:middle
+To describe this, we can use
+
+00:46:22.766 --> 00:46:24.456 A:middle
+protocol where clauses.
+
+00:46:24.846 --> 00:46:26.656 A:middle
+So when bidirectionalCollection
+
+00:46:26.826 --> 00:46:28.116 A:middle
+inherits from collection.
+
+00:46:28.386 --> 00:46:30.026 A:middle
+It can add a new constraint on
+
+00:46:30.026 --> 00:46:32.056 A:middle
+subsequence, requiring it to
+
+00:46:32.056 --> 00:46:33.246 A:middle
+conform to that
+
+00:46:33.246 --> 00:46:34.346 A:middle
+bidirectionalCollection
+
+00:46:34.346 --> 00:46:34.936 A:middle
+protocol.
+
+00:46:35.346 --> 00:46:37.136 A:middle
+This again is a recursive
+
+00:46:37.136 --> 00:46:38.496 A:middle
+constraint but now it's
+
+00:46:38.496 --> 00:46:39.156 A:middle
+expressed on the
+
+00:46:39.156 --> 00:46:40.156 A:middle
+bidirectionalCollection
+
+00:46:40.156 --> 00:46:40.606 A:middle
+protocol.
+
+00:46:40.966 --> 00:46:42.806 A:middle
+We can do the exact same thing
+
+00:46:42.806 --> 00:46:44.736 A:middle
+for randomAccessCollections.
+
+00:46:44.856 --> 00:46:46.146 A:middle
+Such as the subsequence of a
+
+00:46:46.146 --> 00:46:47.876 A:middle
+random access collection, itself
+
+00:46:47.876 --> 00:46:48.716 A:middle
+conforms to
+
+00:46:48.896 --> 00:46:50.156 A:middle
+randomAccessCollection.
+
+00:46:50.706 --> 00:46:52.176 A:middle
+Note how the constraints on
+
+00:46:52.176 --> 00:46:54.566 A:middle
+subsequence follow the enclosing
+
+00:46:54.566 --> 00:46:55.196 A:middle
+protocol.
+
+00:46:55.476 --> 00:46:57.106 A:middle
+This might sound a little bit
+
+00:46:57.106 --> 00:46:57.796 A:middle
+familiar.
+
+00:46:58.586 --> 00:47:00.436 A:middle
+Both recursive constraints and
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:03.376 --> 00:46:04.546 A:middle
+Here's something else that we've
+
+00:46:04.546 --> 00:46:05.776 A:middle
+encountered in a couple places,
+
+00:46:06.296 --> 00:46:07.526 A:middle
+which is appearances that are
+
+00:46:07.526 --> 00:46:08.666 A:middle
+set in Interface Builder.
+
+00:46:09.346 --> 00:46:10.246 A:middle
+So, if you're going ahead and
+
+00:46:10.246 --> 00:46:11.576 A:middle
+building and debugging your
+
+00:46:11.576 --> 00:46:12.796 A:middle
+application and you find that
+
+00:46:12.796 --> 00:46:13.646 A:middle
+there's some part of your app
+
+00:46:13.686 --> 00:46:15.596 A:middle
+that just isn't switching, you
+
+00:46:15.596 --> 00:46:17.506 A:middle
+might have this in your
+
+00:46:17.506 --> 00:46:18.136 A:middle
+Interface Builder.
+
+00:46:18.136 --> 00:46:20.496 A:middle
+A hardcoded aqua appearance.
+
+00:46:20.746 --> 00:46:21.976 A:middle
+And it's easy to miss, because
+
+00:46:22.016 --> 00:46:23.756 A:middle
+before today, essentially, you
+
+00:46:23.756 --> 00:46:24.956 A:middle
+were always running under aqua,
+
+00:46:25.366 --> 00:46:26.536 A:middle
+so you didn't notice it.
+
+00:46:27.056 --> 00:46:29.226 A:middle
+And the fix for this is easy.
+
+00:46:29.866 --> 00:46:30.976 A:middle
+If you set this back to the
+
+00:46:30.976 --> 00:46:32.696 A:middle
+Inherited option in the pop-up
+
+00:46:32.696 --> 00:46:34.206 A:middle
+menu, your view's going to
+
+00:46:34.206 --> 00:46:35.596 A:middle
+automatically inherit from its
+
+00:46:35.596 --> 00:46:36.146 A:middle
+ancestor.
+
+00:46:36.696 --> 00:46:40.516 A:middle
+An extra special case of this is
+
+00:46:40.626 --> 00:46:41.556 A:middle
+NSVisualEffectView.
+
+00:46:41.916 --> 00:46:42.966 A:middle
+It's very likely that if you
+
+00:46:42.966 --> 00:46:44.646 A:middle
+have a VisualEffectView in
+
+00:46:44.646 --> 00:46:45.866 A:middle
+Interface Builder or even in
+
+00:46:45.866 --> 00:46:47.516 A:middle
+code, you're setting one of the
+
+00:46:47.516 --> 00:46:49.656 A:middle
+two vibrant appearances on it
+
+00:46:49.746 --> 00:46:51.936 A:middle
+and the great news is that in
+
+00:46:51.936 --> 00:46:54.446 A:middle
+macOS 10.14 this is no longer
+
+00:46:54.446 --> 00:46:55.086 A:middle
+necessary.
+
+00:46:55.436 --> 00:46:56.606 A:middle
+NSVisualEffectView will
+
+00:46:56.676 --> 00:46:58.076 A:middle
+automatically pick the right
+
+00:46:58.076 --> 00:46:59.576 A:middle
+vibrant appearance based on the
+
+00:46:59.576 --> 00:47:00.516 A:middle
+appearance it's inheriting.
+

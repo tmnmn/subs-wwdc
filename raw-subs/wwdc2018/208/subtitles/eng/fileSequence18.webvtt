@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.726 --> 00:18:00.956 A:middle
+third, we have visibleSize,
+
+00:18:01.146 --> 00:18:02.626 A:middle
+which represents the onscreen
+
+00:18:02.626 --> 00:18:04.016 A:middle
+size of your container.
+
+00:18:04.406 --> 00:18:06.196 A:middle
+This property is analogous to
+
+00:18:06.196 --> 00:18:08.346 A:middle
+bounds.size on the UIScrollView.
+
+00:18:09.396 --> 00:18:11.736 A:middle
+It is important to remember that
+
+00:18:11.736 --> 00:18:13.166 A:middle
+contentOffset will be set
+
+00:18:13.256 --> 00:18:15.086 A:middle
+automatically, and it is your
+
+00:18:15.086 --> 00:18:17.306 A:middle
+responsibility to update your
+
+00:18:17.306 --> 00:18:18.786 A:middle
+rendered content as appropriate
+
+00:18:18.786 --> 00:18:19.976 A:middle
+whenever this property is set.
+
+00:18:24.166 --> 00:18:25.916 A:middle
+Now, let's talk about adding
+
+00:18:25.916 --> 00:18:27.566 A:middle
+accessibility to our custom
+
+00:18:27.566 --> 00:18:28.326 A:middle
+rendered apps.
+
+00:18:28.926 --> 00:18:30.926 A:middle
+It's actually incredibly easy.
+
+00:18:31.496 --> 00:18:32.366 A:middle
+By implementing
+
+00:18:32.366 --> 00:18:34.816 A:middle
+focusItemContainers, focusItems
+
+00:18:34.816 --> 00:18:36.356 A:middle
+in rect method, you are
+
+00:18:36.356 --> 00:18:38.176 A:middle
+providing the focus engine with
+
+00:18:38.176 --> 00:18:39.826 A:middle
+enough information to allow
+
+00:18:39.826 --> 00:18:41.836 A:middle
+voiceover to assist your users
+
+00:18:41.836 --> 00:18:42.736 A:middle
+in navigation.
+
+00:18:43.526 --> 00:18:45.456 A:middle
+Remember to set accessibility
+
+00:18:45.456 --> 00:18:47.716 A:middle
+labels and accessibility hints
+
+00:18:47.866 --> 00:18:49.876 A:middle
+on your focusItems in order for
+
+00:18:49.876 --> 00:18:51.676 A:middle
+voiceover to give your users the
+
+00:18:51.676 --> 00:18:53.066 A:middle
+best experience.
+
+00:18:53.676 --> 00:18:55.056 A:middle
+I highly recommend that you
+
+00:18:55.056 --> 00:18:56.536 A:middle
+watch "What's New in
+
+00:18:56.536 --> 00:18:59.946 A:middle
+Accessibility" from WWDC 2016
+
+00:18:59.946 --> 00:19:02.206 A:middle
+for a more in-depth look at how
+

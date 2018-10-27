@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.816 --> 00:38:00.236 A:middle
+manages its subviews using Auto
+
+00:38:00.236 --> 00:38:00.576 A:middle
+Layout.
+
+00:38:01.876 --> 00:38:03.616 A:middle
+Not very frequent usage but is
+
+00:38:03.616 --> 00:38:05.306 A:middle
+there and can be used.
+
+00:38:05.696 --> 00:38:07.346 A:middle
+I want to tell you how this
+
+00:38:07.346 --> 00:38:09.096 A:middle
+method works because it might be
+
+00:38:09.096 --> 00:38:10.066 A:middle
+a little more expensive than you
+
+00:38:10.066 --> 00:38:10.306 A:middle
+think.
+
+00:38:11.736 --> 00:38:13.046 A:middle
+When you call System Layout Size
+
+00:38:13.046 --> 00:38:14.926 A:middle
+Fitting Size an engine is
+
+00:38:14.966 --> 00:38:15.386 A:middle
+created.
+
+00:38:16.086 --> 00:38:17.006 A:middle
+Constraints are added to this
+
+00:38:17.006 --> 00:38:18.886 A:middle
+engine, the layout is solved,
+
+00:38:19.536 --> 00:38:21.206 A:middle
+and then the size of the top
+
+00:38:21.206 --> 00:38:23.546 A:middle
+views frame is returned, and
+
+00:38:23.546 --> 00:38:24.666 A:middle
+then the engine gets discarded.
+
+00:38:25.706 --> 00:38:26.646 A:middle
+So each time you call this
+
+00:38:26.646 --> 00:38:27.916 A:middle
+method an engine is being
+
+00:38:27.916 --> 00:38:28.946 A:middle
+created and discarded.
+
+00:38:29.856 --> 00:38:31.386 A:middle
+While this is fine for small
+
+00:38:31.386 --> 00:38:33.006 A:middle
+uses, if you're doing it a lot
+
+00:38:33.286 --> 00:38:34.306 A:middle
+you can see how it might start
+
+00:38:34.306 --> 00:38:35.486 A:middle
+to build up over time.
+
+00:38:35.706 --> 00:38:37.336 A:middle
+So be cautious when calling
+
+00:38:37.336 --> 00:38:38.616 A:middle
+System Layout Size Fitting Size.
+
+00:38:39.636 --> 00:38:41.486 A:middle
+One of the uses that we
+
+00:38:41.486 --> 00:38:42.956 A:middle
+sometimes see people do is
+
+00:38:42.996 --> 00:38:44.646 A:middle
+forwarding that call from their
+
+00:38:44.646 --> 00:38:45.886 A:middle
+self-sizing collection or table
+
+00:38:45.886 --> 00:38:47.636 A:middle
+view cell to a content view.
+
+00:38:47.896 --> 00:38:49.186 A:middle
+And when you do that you're
+
+00:38:49.186 --> 00:38:50.326 A:middle
+actually overriding some
+
+00:38:50.326 --> 00:38:51.886 A:middle
+optimizations we've made to make
+
+00:38:51.886 --> 00:38:53.026 A:middle
+that scrolling, scrolling in
+
+00:38:53.026 --> 00:38:54.716 A:middle
+that view faster and you're
+
+00:38:54.716 --> 00:38:55.706 A:middle
+adding extra engines.
+
+00:38:56.026 --> 00:38:57.086 A:middle
+So if you're currently doing
+
+00:38:57.086 --> 00:38:58.106 A:middle
+that and your scrolling is no
+
+00:38:58.106 --> 00:38:59.946 A:middle
+good, maybe look into that.
+

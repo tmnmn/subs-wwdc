@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.873 --> 00:29:02.242 align:start position:32% line:-2
+SQLiteはそれを
+ソートに使えません
+
+00:29:03.510 --> 00:29:06.313 align:start position:27% line:-2
+そこで選んだ最適化の方法は
+複合インデックスを使い
+
+00:29:06.413 --> 00:29:10.884 align:start position:21% line:-2
+まず結果セットを
+小さなオブジェクトのセットに変え
+
+00:29:10.984 --> 00:29:14.121 align:start position:21% line:-2
+ORDER BY用にインメモリで
+B-treeをソートすることです
+
+00:29:16.223 --> 00:29:18.559 align:start position:21% line:-1
+ご覧のように このインデックスは
+
+00:29:18.659 --> 00:29:22.529 align:start position:27% line:-2
+フェッチのパフォーマンスを
+約25％向上させます
+
+00:29:23.864 --> 00:29:28.635 align:start position:21% line:-2
+このケースでは性能テストを
+10万行以上にわたり行ったところ
+
+00:29:28.735 --> 00:29:33.307 align:start position:20% line:-2
+フェッチだけで
+約130ミリ秒の改善が見られました
+
+00:29:34.608 --> 00:29:37.811 align:start position:27% line:-2
+ここでCore Dataの
+テストの話に移りましょう
+
+00:29:38.545 --> 00:29:42.783 align:start position:27% line:-2
+ご存じかもしれませんが
+私たちはテストが大好きです
+
+00:29:42.883 --> 00:29:44.384 align:start position:30% line:-1
+Core Dataでは
+
+00:29:44.484 --> 00:29:48.722 align:start position:25% line:-2
+正確性と学習性の両方の観点で
+テストを行います
+
+00:29:48.822 --> 00:29:54.595 align:start position:20% line:-2
+Core Dataの機能や
+APIの動作を確認する上で重要です
+
+00:29:55.229 --> 00:30:00.234 align:start position:18% line:-2
+また Core Dataの機能に関し
+仮説を検証する上でも有効です
+

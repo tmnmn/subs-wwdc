@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.539 --> 00:34:01.041 align:start position:29% line:-1
+遅延のモックは要りません
+
+00:34:01.909 --> 00:34:03.544 align:start position:30% line:-2
+我々の
+アプリケーションだと―
+
+00:34:03.644 --> 00:34:07.614 align:start position:32% line:-2
+遅延が次の注目地点に
+変換されます
+
+00:34:07.714 --> 00:34:13.053 align:start position:29% line:-2
+１～２つのテストで
+タイマーの遅れを正せます
+
+00:34:13.152 --> 00:34:16.989 align:start position:11% line:-2
+scheduleNextPlaceメソッドを
+直接 呼び出し
+
+00:34:17.091 --> 00:34:19.793 align:start position:30% line:-1
+モックは必要ありません
+
+00:34:22.496 --> 00:34:26.900 align:start position:29% line:-2
+テストの実行速度について
+あと２つ コツがあります
+
+00:34:27.601 --> 00:34:31.538 align:start position:9% line:-2
+NSPredicateExpectationの
+使用に関しては―
+
+00:34:31.772 --> 00:34:36.176 align:start position:16% line:-2
+他のExpectationクラスほどの
+性能はありません
+
+00:34:36.275 --> 00:34:40.179 align:start position:27% line:-2
+直接的な
+コールバックでないからです
+
+00:34:40.514 --> 00:34:46.219 align:start position:23% line:-2
+条件の評価が別のプロセスである
+UIテストに主に用いられます
+
+00:34:46.320 --> 00:34:50.257 align:start position:29% line:-2
+ユニットテストには
+直接的な方法がお勧めです
+
+00:34:50.357 --> 00:34:53.793 align:start position:5% line:-2
+XCTestExpectationや
+NSNotificationExpectation
+
+00:34:53.893 --> 00:34:55.795 align:start position:18% line:-1
+KVOExpectationなどです
+
+00:34:57.931 --> 00:34:59.533 align:start position:34% line:-1
+もう１つのコツは―
+
+00:34:59.633 --> 00:35:02.770 align:start position:29% line:-2
+アプリケーションの起動を
+速めることです
+

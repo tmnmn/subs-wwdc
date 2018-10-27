@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.536 --> 00:11:01.836 A:middle
+time, and then [inaudible] bring
+
+00:11:01.836 --> 00:11:02.886 A:middle
+in the multitasking cards?
+
+00:11:02.886 --> 00:11:04.236 A:middle
+Well, it turns out that's too
+
+00:11:04.236 --> 00:11:04.976 A:middle
+slow.
+
+00:11:05.196 --> 00:11:06.636 A:middle
+People expect to be able to get
+
+00:11:06.636 --> 00:11:08.086 A:middle
+to multitasking instantly.
+
+00:11:08.786 --> 00:11:10.856 A:middle
+And, we need a way that can
+
+00:11:10.856 --> 00:11:13.986 A:middle
+respond as fast as them.
+
+00:11:14.206 --> 00:11:15.116 A:middle
+So, instead we look at your
+
+00:11:15.116 --> 00:11:16.376 A:middle
+finger's acceleration.
+
+00:11:17.266 --> 00:11:18.636 A:middle
+It turns out there's a huge
+
+00:11:18.636 --> 00:11:20.336 A:middle
+spike in the acceleration of
+
+00:11:20.336 --> 00:11:21.416 A:middle
+your finger when you pause.
+
+00:11:21.816 --> 00:11:23.056 A:middle
+And, actually the faster you
+
+00:11:23.056 --> 00:11:25.076 A:middle
+stop, the faster we can detect
+
+00:11:25.076 --> 00:11:25.226 A:middle
+it.
+
+00:11:25.776 --> 00:11:27.016 A:middle
+So, it's actually responding to
+
+00:11:27.016 --> 00:11:29.126 A:middle
+the change in motion, as fast as
+
+00:11:29.126 --> 00:11:30.886 A:middle
+we know how, instead of waiting
+
+00:11:30.886 --> 00:11:31.676 A:middle
+for some timer.
+
+00:11:33.006 --> 00:11:34.326 A:middle
+So, this is a good example of
+
+00:11:34.326 --> 00:11:35.666 A:middle
+responding to redirection as
+
+00:11:35.666 --> 00:11:37.006 A:middle
+fast as possible.
+
+00:11:37.586 --> 00:11:40.856 A:middle
+So, this is the concept of
+
+00:11:41.196 --> 00:11:42.436 A:middle
+interruption and redirection.
+
+00:11:43.096 --> 00:11:44.426 A:middle
+This stuff makes the interface
+
+00:11:44.426 --> 00:11:45.936 A:middle
+feel really, really connected to
+
+00:11:46.046 --> 00:11:46.246 A:middle
+you.
+
+00:11:47.596 --> 00:11:50.576 A:middle
+Next, we want to talk a little
+
+00:11:50.576 --> 00:11:51.646 A:middle
+bit about the architecture of
+
+00:11:51.646 --> 00:11:52.096 A:middle
+the interface.
+
+00:11:52.096 --> 00:11:52.976 A:middle
+How you lay it out,
+
+00:11:53.716 --> 00:11:54.406 A:middle
+conceptually.
+
+00:11:55.696 --> 00:11:56.596 A:middle
+And, we think when you're doing
+
+00:11:56.596 --> 00:11:58.006 A:middle
+that, it's important to maintain
+
+00:11:58.116 --> 00:11:59.846 A:middle
+spatial consistency throughout
+
+00:11:59.956 --> 00:12:00.246 A:middle
+movement.
+

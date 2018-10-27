@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.736 --> 00:07:01.366 A:middle
+For more information, please
+
+00:07:01.366 --> 00:07:02.736 A:middle
+look at our talk, Advances in
+
+00:07:02.736 --> 00:07:05.116 A:middle
+TVMLKit from last year's WWDC.
+
+00:07:08.246 --> 00:07:10.706 A:middle
+This year, we've extended that
+
+00:07:10.706 --> 00:07:11.436 A:middle
+vocabulary.
+
+00:07:11.996 --> 00:07:13.366 A:middle
+To begin, we've added a more
+
+00:07:13.366 --> 00:07:14.896 A:middle
+generic way of binding child
+
+00:07:14.896 --> 00:07:17.076 A:middle
+elements of an element using the
+
+00:07:17.076 --> 00:07:17.876 A:middle
+children binding.
+
+00:07:19.406 --> 00:07:20.986 A:middle
+And to help better organize your
+
+00:07:20.986 --> 00:07:22.526 A:middle
+DOM, we've added a couple of
+
+00:07:22.526 --> 00:07:24.186 A:middle
+special elements, namely
+
+00:07:24.186 --> 00:07:25.276 A:middle
+fragment and rules.
+
+00:07:25.836 --> 00:07:27.446 A:middle
+We'll go into this in detail,
+
+00:07:27.446 --> 00:07:29.076 A:middle
+starting with children binding.
+
+00:07:32.246 --> 00:07:33.526 A:middle
+Children binding is a more
+
+00:07:33.526 --> 00:07:35.106 A:middle
+generic form of items binding.
+
+00:07:35.996 --> 00:07:37.966 A:middle
+Items binding is optimized for
+
+00:07:37.966 --> 00:07:39.936 A:middle
+use cases where you have a
+
+00:07:39.936 --> 00:07:42.046 A:middle
+section of a shelf, grid, or
+
+00:07:42.276 --> 00:07:44.316 A:middle
+list in order to work
+
+00:07:44.316 --> 00:07:45.486 A:middle
+efficiently with large data
+
+00:07:45.486 --> 00:07:45.836 A:middle
+sets.
+
+00:07:46.826 --> 00:07:48.146 A:middle
+They can be used outside these
+
+00:07:48.146 --> 00:07:48.706 A:middle
+elements.
+
+00:07:49.686 --> 00:07:51.046 A:middle
+For everything else, use
+
+00:07:51.046 --> 00:07:51.766 A:middle
+children's binding.
+
+00:07:54.116 --> 00:07:55.436 A:middle
+And it's because of a very
+
+00:07:55.436 --> 00:07:56.136 A:middle
+simple reason.
+
+00:07:56.206 --> 00:07:57.976 A:middle
+It works by generating children
+
+00:07:57.976 --> 00:07:59.736 A:middle
+of a target element itself.
+

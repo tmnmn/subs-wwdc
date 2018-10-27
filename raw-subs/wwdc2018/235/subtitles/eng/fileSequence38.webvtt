@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.946 --> 00:38:02.626 A:middle
+So the first constraint we need
+
+00:38:02.896 --> 00:38:04.586 A:middle
+represents the padding that we
+
+00:38:04.586 --> 00:38:05.996 A:middle
+would other-- we would normally
+
+00:38:06.226 --> 00:38:06.316 A:middle
+add.
+
+00:38:06.886 --> 00:38:07.956 A:middle
+So this is just a constant
+
+00:38:07.956 --> 00:38:09.066 A:middle
+constraint from the bottom of
+
+00:38:09.066 --> 00:38:11.236 A:middle
+the super view to the bottom of
+
+00:38:11.236 --> 00:38:11.756 A:middle
+our control.
+
+00:38:12.366 --> 00:38:13.386 A:middle
+But in this case, we're going to
+
+00:38:13.386 --> 00:38:15.126 A:middle
+make it not required so that we
+
+00:38:15.126 --> 00:38:16.906 A:middle
+can break it when the safe, when
+
+00:38:16.906 --> 00:38:17.776 A:middle
+the safe area insets are
+
+00:38:17.776 --> 00:38:18.336 A:middle
+non-zero.
+
+00:38:19.936 --> 00:38:21.806 A:middle
+The second constraint is an
+
+00:38:21.806 --> 00:38:23.666 A:middle
+inequality constraint from the
+
+00:38:23.666 --> 00:38:25.406 A:middle
+bottom of our control to the
+
+00:38:25.406 --> 00:38:26.346 A:middle
+bottom of the safe area.
+
+00:38:27.186 --> 00:38:29.886 A:middle
+This ensures that our control is
+
+00:38:29.886 --> 00:38:31.326 A:middle
+always inside the safe area.
+
+00:38:32.006 --> 00:38:34.546 A:middle
+So if I change the safe area
+
+00:38:34.546 --> 00:38:36.036 A:middle
+insets to make them non-zero,
+
+00:38:36.666 --> 00:38:38.496 A:middle
+you can see that the inequality
+
+00:38:38.496 --> 00:38:40.656 A:middle
+constraint ensures our content
+
+00:38:40.656 --> 00:38:42.946 A:middle
+is not clipped while still
+
+00:38:42.946 --> 00:38:43.786 A:middle
+maintaining some minimum
+
+00:38:43.786 --> 00:38:44.000 A:middle
+padding.
+
+00:38:48.096 --> 00:38:50.956 A:middle
+Now we've talked about many
+
+00:38:50.956 --> 00:38:53.186 A:middle
+different adaptive APIs in this
+
+00:38:53.266 --> 00:38:54.806 A:middle
+talk and in previous talks.
+
+00:38:55.226 --> 00:38:56.996 A:middle
+Layout margins help keep lots of
+
+00:38:56.996 --> 00:38:57.996 A:middle
+your elements aligned.
+
+00:38:58.886 --> 00:39:00.466 A:middle
+Safe area insets protect your
+

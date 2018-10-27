@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.126 --> 00:25:00.026 A:middle
+your database at a periodic
+
+00:25:00.026 --> 00:25:00.396 A:middle
+interval.
+
+00:25:00.706 --> 00:25:02.476 A:middle
+For example, every time your app
+
+00:25:02.476 --> 00:25:03.106 A:middle
+gets updated.
+
+00:25:04.326 --> 00:25:04.826 A:middle
+&gt;&gt; Thanks, Peter.
+
+00:25:06.216 --> 00:25:08.066 A:middle
+The next phase of the launch is
+
+00:25:08.066 --> 00:25:09.276 A:middle
+when we create your very first
+
+00:25:09.276 --> 00:25:09.586 A:middle
+frame.
+
+00:25:10.216 --> 00:25:13.286 A:middle
+At this point, core animation is
+
+00:25:13.316 --> 00:25:14.266 A:middle
+doing all the rendering
+
+00:25:14.266 --> 00:25:15.526 A:middle
+necessary to get that frame
+
+00:25:15.526 --> 00:25:15.776 A:middle
+ready.
+
+00:25:17.146 --> 00:25:18.376 A:middle
+It's doing text drawing.
+
+00:25:18.626 --> 00:25:19.666 A:middle
+And, we're loading and
+
+00:25:19.666 --> 00:25:21.026 A:middle
+decompressing any images that
+
+00:25:21.026 --> 00:25:23.186 A:middle
+need to be shown in your UI.
+
+00:25:23.186 --> 00:25:25.536 A:middle
+So, Peter, do you have any more
+
+00:25:25.536 --> 00:25:27.356 A:middle
+sage advice for this phase of
+
+00:25:27.356 --> 00:25:27.806 A:middle
+the launch?
+
+00:25:28.776 --> 00:25:29.516 A:middle
+&gt;&gt; Oh, do I.
+
+00:25:29.926 --> 00:25:31.416 A:middle
+When preparing your first frame,
+
+00:25:31.416 --> 00:25:32.996 A:middle
+it's really important that you
+
+00:25:32.996 --> 00:25:35.196 A:middle
+take great care to only prepare
+
+00:25:35.196 --> 00:25:36.256 A:middle
+the user interface that you
+
+00:25:36.256 --> 00:25:37.896 A:middle
+absolutely need during launch
+
+00:25:37.896 --> 00:25:38.196 A:middle
+time.
+
+00:25:38.896 --> 00:25:41.106 A:middle
+If your user hasn't navigated to
+
+00:25:41.106 --> 00:25:42.486 A:middle
+a particular section of your
+
+00:25:42.486 --> 00:25:44.186 A:middle
+app, avoid loading it.
+
+00:25:44.386 --> 00:25:46.286 A:middle
+And, instead, pull it in lazily
+
+00:25:46.416 --> 00:25:47.616 A:middle
+when you absolutely need it.
+
+00:25:48.426 --> 00:25:51.036 A:middle
+Also, you should avoid hiding
+
+00:25:51.036 --> 00:25:52.616 A:middle
+views and layers that should not
+
+00:25:52.616 --> 00:25:53.936 A:middle
+be visible when we first
+
+00:25:53.936 --> 00:25:54.846 A:middle
+navigate to your app.
+
+00:25:56.106 --> 00:25:57.296 A:middle
+Even when views and layers are
+
+00:25:57.296 --> 00:25:59.456 A:middle
+hidden, they still have a cost.
+
+00:25:59.656 --> 00:26:00.866 A:middle
+So, only bring in the views and
+

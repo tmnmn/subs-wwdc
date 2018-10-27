@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.606 --> 00:19:02.743 align:start position:30% line:-1
+これは数秒で終わります
+
+00:19:02.876 --> 00:19:06.447 align:start position:30% line:-2
+検証しましょう
+ランダムに選んでみます
+
+00:19:06.547 --> 00:19:09.182 align:start position:29% line:-1
+では“２”にしましょうか
+
+00:19:09.483 --> 00:19:12.486 align:start position:27% line:-1
+このJSONオブジェクトは
+
+00:19:12.586 --> 00:19:16.223 align:start position:30% line:-2
+訓練データと同じ形式で
+予測されました
+
+00:19:16.323 --> 00:19:21.595 align:start position:21% line:-2
+高さや幅　xとyの座標と
+“バナナ”というラベルが出ました
+
+00:19:21.695 --> 00:19:26.200 align:start position:30% line:-2
+モデルの信頼度は
+約87パーセントですが
+
+00:19:26.767 --> 00:19:30.204 align:start position:32% line:-2
+これは人間には
+解釈しにくいものです
+
+00:19:30.304 --> 00:19:34.308 align:start position:36% line:-2
+この画像が本当に
+バナナなのか―
+
+00:19:34.408 --> 00:19:38.846 align:start position:29% line:-2
+座標の表す位置が
+正確なのかも分かりません
+
+00:19:39.580 --> 00:19:43.383 align:start position:27% line:-2
+Turi Createには
+境界ボックスを
+
+00:19:43.484 --> 00:19:47.354 align:start position:34% line:-2
+画像に正しく
+描く機能があります
+
+00:19:47.454 --> 00:19:49.189 align:start position:36% line:-1
+やってみましょう
+
+00:19:49.423 --> 00:19:54.194 align:start position:25% line:-2
+さっきのテストSFrameに
+予測画像のカラムを作り
+
+00:19:54.928 --> 00:19:59.299 align:start position:25% line:-2
+物体検知器のユーティリティの
+出力を指定
+
+00:19:59.399 --> 00:20:01.368 align:start position:29% line:-1
+境界ボックスを作成します
+

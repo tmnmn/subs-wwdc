@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.106 --> 00:08:00.236 A:middle
+If the signature of any given
+
+00:08:00.236 --> 00:08:01.196 A:middle
+task is different than the
+
+00:08:01.196 --> 00:08:02.136 A:middle
+signature that it had in the
+
+00:08:02.256 --> 00:08:03.916 A:middle
+previous build, then the build
+
+00:08:03.916 --> 00:08:05.096 A:middle
+system reruns that task.
+
+00:08:06.096 --> 00:08:07.716 A:middle
+If they're the same, then it's
+
+00:08:07.716 --> 00:08:08.046 A:middle
+skipped.
+
+00:08:08.166 --> 00:08:10.316 A:middle
+That's the basic idea behind how
+
+00:08:10.316 --> 00:08:11.336 A:middle
+incremental builds work.
+
+00:08:12.596 --> 00:08:14.766 A:middle
+So now that we have an idea of
+
+00:08:14.766 --> 00:08:16.346 A:middle
+what the build process is and
+
+00:08:16.396 --> 00:08:18.066 A:middle
+how it works, how can you help
+
+00:08:18.066 --> 00:08:19.366 A:middle
+the build system do its job?
+
+00:08:19.906 --> 00:08:22.146 A:middle
+Let's go back to basics for a
+
+00:08:22.146 --> 00:08:22.466 A:middle
+moment.
+
+00:08:23.046 --> 00:08:24.596 A:middle
+A build process is a series of
+
+00:08:24.596 --> 00:08:26.746 A:middle
+tasks executed in a particular
+
+00:08:26.806 --> 00:08:27.096 A:middle
+order.
+
+00:08:27.096 --> 00:08:28.826 A:middle
+But remember that the build is
+
+00:08:28.826 --> 00:08:30.606 A:middle
+represented as a directed graph.
+
+00:08:31.936 --> 00:08:33.155 A:middle
+So we don't want to think about
+
+00:08:33.206 --> 00:08:34.366 A:middle
+the order in which these tasks
+
+00:08:34.366 --> 00:08:35.666 A:middle
+should be executed because
+
+00:08:35.666 --> 00:08:36.916 A:middle
+that's the build system's job.
+
+00:08:37.796 --> 00:08:39.756 A:middle
+Instead, as developers, we need
+
+00:08:39.756 --> 00:08:41.316 A:middle
+to think about dependencies
+
+00:08:41.316 --> 00:08:43.025 A:middle
+between tasks and let the build
+
+00:08:43.025 --> 00:08:44.236 A:middle
+system figure out how to best
+
+00:08:44.236 --> 00:08:45.316 A:middle
+execute them according to the
+
+00:08:45.316 --> 00:08:46.226 A:middle
+graph's structure.
+
+00:08:46.936 --> 00:08:48.266 A:middle
+This lets the build system order
+
+00:08:48.266 --> 00:08:50.146 A:middle
+tasks correctly and parallelize
+
+00:08:50.146 --> 00:08:51.616 A:middle
+where possible in order to take
+
+00:08:51.616 --> 00:08:53.076 A:middle
+full advantage of multicore
+
+00:08:53.076 --> 00:08:53.496 A:middle
+hardware.
+
+00:08:54.966 --> 00:08:56.506 A:middle
+So where do dependencies come
+
+00:08:56.506 --> 00:08:56.796 A:middle
+from?
+
+00:08:56.916 --> 00:08:58.726 A:middle
+For certain tasks, dependency
+
+00:08:58.726 --> 00:09:00.326 A:middle
+information comes from knowledge
+

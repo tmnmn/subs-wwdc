@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.296 --> 00:41:00.166 A:middle
+at some start time and we know
+
+00:41:00.166 --> 00:41:01.796 A:middle
+the cause of the fire and we
+
+00:41:01.796 --> 00:41:03.536 A:middle
+have a table that's bound to our
+
+00:41:03.536 --> 00:41:05.876 A:middle
+append side, that's the output
+
+00:41:05.876 --> 00:41:08.876 A:middle
+side of the modeler, and that
+
+00:41:08.946 --> 00:41:11.336 A:middle
+table happens to be the schema
+
+00:41:11.336 --> 00:41:12.926 A:middle
+that we define called started a
+
+00:41:12.926 --> 00:41:16.776 A:middle
+fire, then we can create a row
+
+00:41:16.776 --> 00:41:18.126 A:middle
+in that table and then set the
+
+00:41:18.246 --> 00:41:19.946 A:middle
+time and who started the fire to
+
+00:41:19.946 --> 00:41:21.276 A:middle
+the values that we captured up
+
+00:41:21.276 --> 00:41:23.826 A:middle
+here in the pattern.
+
+00:41:23.906 --> 00:41:25.826 A:middle
+Now with that, we basically
+
+00:41:25.826 --> 00:41:27.756 A:middle
+created our very first expert
+
+00:41:27.756 --> 00:41:29.356 A:middle
+system to look for bad patterns
+
+00:41:29.356 --> 00:41:30.776 A:middle
+in our application with these
+
+00:41:30.776 --> 00:41:31.406 A:middle
+two rules.
+
+00:41:32.436 --> 00:41:34.376 A:middle
+Now you may have noticed that
+
+00:41:34.376 --> 00:41:36.016 A:middle
+the rules were prepended by
+
+00:41:36.016 --> 00:41:38.396 A:middle
+either modeler or recorder.
+
+00:41:38.966 --> 00:41:39.546 A:middle
+Those are what are called
+
+00:41:39.546 --> 00:41:41.606 A:middle
+modules in Clips and they allow
+
+00:41:41.606 --> 00:41:43.916 A:middle
+you to both group rules but also
+
+00:41:43.916 --> 00:41:45.426 A:middle
+control the execution order of
+
+00:41:45.426 --> 00:41:45.956 A:middle
+the rules.
+
+00:41:46.526 --> 00:41:48.556 A:middle
+So for example, if you kept all
+
+00:41:48.556 --> 00:41:50.946 A:middle
+of your output, all of the rules
+
+00:41:50.946 --> 00:41:52.176 A:middle
+that produced output the output
+
+00:41:52.176 --> 00:41:54.006 A:middle
+tables in the recorder module,
+
+00:41:55.116 --> 00:41:57.536 A:middle
+then you can be sure that you
+
+00:41:57.536 --> 00:41:59.896 A:middle
+won't write an output while
+
+00:41:59.896 --> 00:42:00.456 A:middle
+you're in the middle of the
+

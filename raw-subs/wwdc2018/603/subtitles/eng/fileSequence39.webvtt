@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.876 --> 00:39:01.586 A:middle
+Let's look inside a usdz file.
+
+00:39:03.036 --> 00:39:04.406 A:middle
+In essence, these are
+
+00:39:04.406 --> 00:39:06.146 A:middle
+uncompressed zip archives.
+
+00:39:06.926 --> 00:39:09.626 A:middle
+The first file is always a usdc
+
+00:39:09.756 --> 00:39:10.016 A:middle
+file.
+
+00:39:10.786 --> 00:39:12.236 A:middle
+This contains the model's mesh,
+
+00:39:12.546 --> 00:39:13.936 A:middle
+its animation, if it has some,
+
+00:39:13.936 --> 00:39:15.536 A:middle
+and any material definitions it
+
+00:39:15.536 --> 00:39:15.726 A:middle
+needs.
+
+00:39:16.976 --> 00:39:17.936 A:middle
+And then, the remainder of the
+
+00:39:17.936 --> 00:39:19.916 A:middle
+files in the archive are any
+
+00:39:19.996 --> 00:39:21.276 A:middle
+textures, any images, like the
+
+00:39:21.276 --> 00:39:22.876 A:middle
+ones we saw earlier on.
+
+00:39:24.116 --> 00:39:25.446 A:middle
+If you're thinking of creating
+
+00:39:25.446 --> 00:39:27.666 A:middle
+your own tooling to build usdz
+
+00:39:27.666 --> 00:39:29.406 A:middle
+files, the great news is that
+
+00:39:29.406 --> 00:39:30.246 A:middle
+this is that this is an open
+
+00:39:30.246 --> 00:39:32.436 A:middle
+format and Pixar have published
+
+00:39:32.486 --> 00:39:33.856 A:middle
+the direct specification for
+
+00:39:33.856 --> 00:39:36.536 A:middle
+usdz on the graphics.pixar.com
+
+00:39:37.106 --> 00:39:37.206 A:middle
+site.
+
+00:39:38.836 --> 00:39:40.446 A:middle
+To create one with a usdz
+
+00:39:40.446 --> 00:39:42.486 A:middle
+converter, first note that we
+
+00:39:42.486 --> 00:39:44.476 A:middle
+call the tool with xcrun because
+
+00:39:44.476 --> 00:39:45.556 A:middle
+it shifts inside Xcode.
+
+00:39:46.476 --> 00:39:47.516 A:middle
+We pass in the name of the model
+
+00:39:47.516 --> 00:39:49.436 A:middle
+we want to convert, an OBJ file
+
+00:39:49.436 --> 00:39:51.206 A:middle
+in this case, and the file name
+
+00:39:51.206 --> 00:39:52.866 A:middle
+of the usdz we want to have the
+
+00:39:52.866 --> 00:39:53.706 A:middle
+other end.
+
+00:39:54.676 --> 00:39:56.766 A:middle
+To map PBR textures to the
+
+00:39:56.766 --> 00:39:59.246 A:middle
+meshes they're in, we use the -g
+
+00:39:59.246 --> 00:40:00.816 A:middle
+option, followed by the name of
+

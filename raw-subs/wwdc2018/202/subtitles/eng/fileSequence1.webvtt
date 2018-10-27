@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:57.876 --> 00:01:00.056 A:middle
+APIs in the SDK, including
+
+00:01:00.056 --> 00:01:01.566 A:middle
+notifications and messages.
+
+00:01:02.566 --> 00:01:04.025 A:middle
+And then we're going to end with
+
+00:01:04.156 --> 00:01:05.086 A:middle
+Siri Shortcuts.
+
+00:01:05.816 --> 00:01:07.126 A:middle
+So let's get started with our
+
+00:01:07.196 --> 00:01:08.936 A:middle
+first topic: Performance
+
+00:01:09.196 --> 00:01:09.776 A:middle
+Updates.
+
+00:01:11.106 --> 00:01:12.716 A:middle
+Now we're going to talk about
+
+00:01:12.716 --> 00:01:14.506 A:middle
+performance across three main
+
+00:01:14.506 --> 00:01:17.876 A:middle
+areas: scrolling, memory, and
+
+00:01:17.876 --> 00:01:18.546 A:middle
+auto layout.
+
+00:01:19.786 --> 00:01:21.726 A:middle
+Now before we get in to it, it's
+
+00:01:21.726 --> 00:01:23.106 A:middle
+important to keep in mind one
+
+00:01:23.106 --> 00:01:24.146 A:middle
+little bit of background
+
+00:01:24.146 --> 00:01:25.496 A:middle
+information about scrolling.
+
+00:01:27.796 --> 00:01:30.076 A:middle
+Scrolling on iOS follows a
+
+00:01:30.156 --> 00:01:31.836 A:middle
+pretty common pattern in most
+
+00:01:31.876 --> 00:01:32.236 A:middle
+places.
+
+00:01:32.876 --> 00:01:34.536 A:middle
+We load content to be displayed
+
+00:01:34.536 --> 00:01:36.336 A:middle
+into the views and then we're
+
+00:01:36.336 --> 00:01:38.096 A:middle
+just moving that content around.
+
+00:01:38.846 --> 00:01:39.666 A:middle
+And while we're moving it
+
+00:01:39.666 --> 00:01:41.546 A:middle
+around, most of those frames are
+
+00:01:41.546 --> 00:01:43.036 A:middle
+really cheap to generate because
+
+00:01:43.036 --> 00:01:44.376 A:middle
+we don't have to load anything
+
+00:01:44.376 --> 00:01:44.656 A:middle
+new.
+
+00:01:45.656 --> 00:01:47.226 A:middle
+But every now and then, a new
+
+00:01:47.226 --> 00:01:49.506 A:middle
+view first becomes visible and
+
+00:01:49.506 --> 00:01:51.096 A:middle
+the one frame when that first
+
+00:01:51.096 --> 00:01:53.206 A:middle
+happens is quite a bit more
+
+00:01:53.206 --> 00:01:54.816 A:middle
+expensive to generate than those
+
+00:01:54.816 --> 00:01:55.776 A:middle
+other cheaper ones.
+
+00:01:56.286 --> 00:01:58.656 A:middle
+Now, of course, once that one
+
+00:01:58.696 --> 00:02:00.476 A:middle
+frame is loaded, we're just back
+

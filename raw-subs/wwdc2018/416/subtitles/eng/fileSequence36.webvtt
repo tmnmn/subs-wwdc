@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.856 --> 00:36:02.346 A:middle
+there's a tree view here of all
+
+00:36:02.346 --> 00:36:03.336 A:middle
+the things that have references,
+
+00:36:03.336 --> 00:36:04.676 A:middle
+and what references them, and
+
+00:36:04.676 --> 00:36:06.006 A:middle
+what references them, and so on
+
+00:36:06.006 --> 00:36:06.616 A:middle
+and so forth.
+
+00:36:06.616 --> 00:36:08.646 A:middle
+And in fact, if we go back to
+
+00:36:08.646 --> 00:36:11.026 A:middle
+Xcode, and we actually filter on
+
+00:36:11.026 --> 00:36:14.066 A:middle
+the same address, and I go ahead
+
+00:36:14.066 --> 00:36:16.766 A:middle
+and look at this object, this
+
+00:36:16.766 --> 00:36:18.406 A:middle
+tree is the exact same tree I
+
+00:36:18.406 --> 00:36:19.246 A:middle
+see from leaks.
+
+00:36:19.436 --> 00:36:20.626 A:middle
+And if I wanted to, I could go
+
+00:36:20.626 --> 00:36:22.146 A:middle
+through and expand every single
+
+00:36:22.146 --> 00:36:23.876 A:middle
+one of these nodes and look at
+
+00:36:23.876 --> 00:36:25.436 A:middle
+the details for each of them,
+
+00:36:25.436 --> 00:36:26.946 A:middle
+but that's going to take a
+
+00:36:26.946 --> 00:36:28.306 A:middle
+while, and it's kind of tedious.
+
+00:36:28.386 --> 00:36:29.986 A:middle
+The nice thing about the leaks
+
+00:36:29.986 --> 00:36:32.566 A:middle
+output is not only can I kind of
+
+00:36:32.566 --> 00:36:33.946 A:middle
+quickly scan through it, if I
+
+00:36:33.946 --> 00:36:36.296 A:middle
+want to, I can search or filter
+
+00:36:36.296 --> 00:36:37.736 A:middle
+it, or I can put it into a bug
+
+00:36:37.736 --> 00:36:39.676 A:middle
+report or an email, which I
+
+00:36:39.676 --> 00:36:40.786 A:middle
+can't really do with the
+
+00:36:40.786 --> 00:36:42.786 A:middle
+graphical view that's in Xcode.
+
+00:36:43.686 --> 00:36:44.996 A:middle
+So what am I looking for here in
+
+00:36:44.996 --> 00:36:45.536 A:middle
+this output?
+
+00:36:46.116 --> 00:36:48.286 A:middle
+Well, ideally, I would find
+
+00:36:48.286 --> 00:36:49.876 A:middle
+something, a class that I'm
+
+00:36:49.876 --> 00:36:51.326 A:middle
+responsible for, a class from my
+
+00:36:51.326 --> 00:36:52.146 A:middle
+application.
+
+00:36:52.306 --> 00:36:54.066 A:middle
+I happen to have looked through
+
+00:36:54.066 --> 00:36:55.106 A:middle
+this already, and I know there's
+
+00:36:55.106 --> 00:36:56.846 A:middle
+none of my classes in here, so
+
+00:36:56.846 --> 00:36:57.976 A:middle
+what's the next best thing?
+
+00:36:58.376 --> 00:37:00.236 A:middle
+Well, a class that I know I'm
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.246 --> 00:31:00.806 A:middle
+take up n space in the next one.
+
+00:31:01.206 --> 00:31:02.296 A:middle
+Then we need to go element by
+
+00:31:02.296 --> 00:31:04.806 A:middle
+element and convert potentially
+
+00:31:04.806 --> 00:31:05.376 A:middle
+between them, and this
+
+00:31:05.436 --> 00:31:06.276 A:middle
+per-element bridging can
+
+00:31:06.276 --> 00:31:06.976 A:middle
+sometimes be recursive.
+
+00:31:07.076 --> 00:31:08.886 A:middle
+For instance, if I have an array
+
+00:31:08.886 --> 00:31:10.226 A:middle
+of strings, first we'll bridge
+
+00:31:10.226 --> 00:31:11.406 A:middle
+the array, and then we'll bridge
+
+00:31:11.446 --> 00:31:12.786 A:middle
+each individual string.
+
+00:31:12.966 --> 00:31:14.746 A:middle
+And when this happens at the
+
+00:31:14.746 --> 00:31:15.606 A:middle
+boundary between the two
+
+00:31:15.606 --> 00:31:16.996 A:middle
+languages, we call it eager
+
+00:31:16.996 --> 00:31:17.366 A:middle
+bridging.
+
+00:31:17.836 --> 00:31:19.996 A:middle
+And collections will always be
+
+00:31:19.996 --> 00:31:21.036 A:middle
+bridged eagerly when the
+
+00:31:21.036 --> 00:31:22.846 A:middle
+elements of the collection need
+
+00:31:22.846 --> 00:31:23.536 A:middle
+bridging as well.
+
+00:31:23.536 --> 00:31:25.506 A:middle
+And this arises most often with
+
+00:31:25.536 --> 00:31:27.316 A:middle
+dictionaries keyed by strings.
+
+00:31:27.846 --> 00:31:29.926 A:middle
+When collection bridging is not
+
+00:31:29.966 --> 00:31:31.446 A:middle
+eager, we call it lazy.
+
+00:31:31.526 --> 00:31:32.416 A:middle
+And this happens when the
+
+00:31:32.416 --> 00:31:33.636 A:middle
+element types of the collection
+
+00:31:33.776 --> 00:31:35.296 A:middle
+aren't bridged themselves, such
+
+00:31:35.376 --> 00:31:36.016 A:middle
+as NSViews.
+
+00:31:36.526 --> 00:31:37.816 A:middle
+In this case, bridging will be
+
+00:31:38.056 --> 00:31:39.566 A:middle
+deferred until the collection is
+
+00:31:39.566 --> 00:31:40.746 A:middle
+actually first used.
+
+00:31:40.966 --> 00:31:42.276 A:middle
+Let's make this concrete with
+
+00:31:42.276 --> 00:31:42.826 A:middle
+some examples.
+
+00:31:43.596 --> 00:31:44.356 A:middle
+We'll first consider an
+
+00:31:44.356 --> 00:31:45.896 A:middle
+objective-C API describing an
+
+00:31:45.896 --> 00:31:46.926 A:middle
+NSArray of NSDatas.
+
+00:31:47.866 --> 00:31:49.566 A:middle
+Now NSArray is bridged to array,
+
+00:31:49.566 --> 00:31:51.076 A:middle
+and NSData is bridged to
+
+00:31:51.076 --> 00:31:51.856 A:middle
+value-type data.
+
+00:31:52.086 --> 00:31:53.606 A:middle
+And so such a collection would
+
+00:31:53.606 --> 00:31:54.396 A:middle
+be bridged eagerly.
+
+00:31:54.616 --> 00:31:57.016 A:middle
+I mentioned a moment ago that
+
+00:31:57.016 --> 00:31:58.126 A:middle
+NSViews are not bridged in
+
+00:31:58.126 --> 00:31:58.466 A:middle
+Swift.
+
+00:31:58.466 --> 00:32:00.206 A:middle
+They remain reference types in
+

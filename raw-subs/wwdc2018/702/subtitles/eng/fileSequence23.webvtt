@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.236 --> 00:23:02.086 A:middle
+First off, code signing: When
+
+00:23:02.086 --> 00:23:03.646 A:middle
+you opt into this new runtime,
+
+00:23:04.016 --> 00:23:05.506 A:middle
+the system will enforce that
+
+00:23:05.876 --> 00:23:07.846 A:middle
+every single executable page
+
+00:23:07.946 --> 00:23:09.746 A:middle
+within your address space must
+
+00:23:09.746 --> 00:23:11.176 A:middle
+be backed by the original code
+
+00:23:11.176 --> 00:23:12.636 A:middle
+signature that shipped with your
+
+00:23:13.296 --> 00:23:13.366 A:middle
+app.
+
+00:23:14.586 --> 00:23:17.336 A:middle
+It is a fine behavior for most
+
+00:23:17.336 --> 00:23:17.946 A:middle
+apps out there.
+
+00:23:18.046 --> 00:23:18.866 A:middle
+Of course it might be
+
+00:23:18.866 --> 00:23:20.546 A:middle
+undesirable in some of these
+
+00:23:20.546 --> 00:23:20.766 A:middle
+cases.
+
+00:23:20.956 --> 00:23:21.596 A:middle
+So let's see how we can
+
+00:23:21.596 --> 00:23:22.246 A:middle
+configure this.
+
+00:23:22.746 --> 00:23:25.136 A:middle
+Let's say, for example, that
+
+00:23:25.136 --> 00:23:27.206 A:middle
+your app has a scripting runtime
+
+00:23:27.336 --> 00:23:28.086 A:middle
+for which you have
+
+00:23:28.086 --> 00:23:29.326 A:middle
+high-performance requirements --
+
+00:23:29.996 --> 00:23:31.346 A:middle
+in which case, you'll most
+
+00:23:31.346 --> 00:23:33.476 A:middle
+likely use JIT compiled code if
+
+00:23:33.576 --> 00:23:34.606 A:middle
+you want to execute a runtime.
+
+00:23:35.586 --> 00:23:37.826 A:middle
+With this, you can use the first
+
+00:23:37.826 --> 00:23:38.816 A:middle
+entitlement in this list.
+
+00:23:39.596 --> 00:23:40.666 A:middle
+It gives you access to the new
+
+00:23:40.666 --> 00:23:43.286 A:middle
+MAP JIT flag in the MMAP system
+
+00:23:43.286 --> 00:23:45.046 A:middle
+call, which allows you to create
+
+00:23:45.046 --> 00:23:46.586 A:middle
+what we call JIT regions, which
+
+00:23:46.586 --> 00:23:48.406 A:middle
+are memory regions that are
+
+00:23:48.406 --> 00:23:50.686 A:middle
+readable, writable, and
+
+00:23:51.436 --> 00:23:51.856 A:middle
+executable.
+
+00:23:52.306 --> 00:23:54.596 A:middle
+And if you have a poliacre
+
+00:23:54.596 --> 00:23:54.976 A:middle
+[phonetic] system,
+
+00:23:55.086 --> 00:23:56.926 A:middle
+where you might expect to be
+
+00:23:56.926 --> 00:23:58.936 A:middle
+able to execute load plug-ins
+
+00:23:59.256 --> 00:24:01.246 A:middle
+that are not properly signed or
+

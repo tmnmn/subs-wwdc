@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.446 --> 00:01:00.026 A:middle
+Finally, Chris will talk about
+
+00:01:00.026 --> 00:01:02.276 A:middle
+how to localize Siri Shortcuts
+
+00:01:02.376 --> 00:01:03.906 A:middle
+by using an Intent definition
+
+00:01:03.936 --> 00:01:05.936 A:middle
+file which is a new file format
+
+00:01:06.026 --> 00:01:07.546 A:middle
+we introduced this year as well
+
+00:01:07.756 --> 00:01:08.646 A:middle
+in Xcode 10.
+
+00:01:10.036 --> 00:01:11.536 A:middle
+So let's get started with a
+
+00:01:11.566 --> 00:01:12.576 A:middle
+quick overview.
+
+00:01:15.236 --> 00:01:17.666 A:middle
+So before Xcode 10, if you had a
+
+00:01:17.716 --> 00:01:19.166 A:middle
+project that contains
+
+00:01:19.166 --> 00:01:20.996 A:middle
+localizations that your
+
+00:01:20.996 --> 00:01:22.676 A:middle
+application supports, we look
+
+00:01:22.716 --> 00:01:24.276 A:middle
+for strings base localizable
+
+00:01:24.276 --> 00:01:25.696 A:middle
+resources in your project.
+
+00:01:26.176 --> 00:01:27.746 A:middle
+So these strings can be defined
+
+00:01:27.746 --> 00:01:29.026 A:middle
+in your source code, your
+
+00:01:29.116 --> 00:01:30.546 A:middle
+storyboard files, your strings
+
+00:01:30.546 --> 00:01:31.606 A:middle
+files, or your strings
+
+00:01:31.606 --> 00:01:32.186 A:middle
+dictionaries.
+
+00:01:32.786 --> 00:01:34.466 A:middle
+So once we identify these
+
+00:01:34.466 --> 00:01:36.426 A:middle
+resources, we extract strings
+
+00:01:36.476 --> 00:01:38.786 A:middle
+from them and we export them in
+
+00:01:38.786 --> 00:01:39.766 A:middle
+an XLIFF format.
+
+00:01:40.386 --> 00:01:42.556 A:middle
+So XLIFF is an industry standard
+
+00:01:42.556 --> 00:01:44.296 A:middle
+and most localizers are already
+
+00:01:44.296 --> 00:01:45.056 A:middle
+familiar with.
+
+00:01:45.636 --> 00:01:46.536 A:middle
+So that's what you will be
+
+00:01:46.586 --> 00:01:48.246 A:middle
+sending over for translations.
+
+00:01:49.936 --> 00:01:51.546 A:middle
+So once you get your XLIFF files
+
+00:01:51.546 --> 00:01:54.216 A:middle
+back translated on imports, we
+
+00:01:54.216 --> 00:01:55.356 A:middle
+add them to localizable
+
+00:01:55.356 --> 00:01:57.596 A:middle
+resources in your Xcode projects
+
+00:01:57.596 --> 00:01:59.346 A:middle
+with the new translations that
+
+00:01:59.346 --> 00:02:01.036 A:middle
+are provided in the XLIFF files.
+

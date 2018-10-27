@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.252 --> 00:27:01.221 align:start position:25% line:-1
+それからモデルをロードします
+
+00:27:02.656 --> 00:27:06.059 align:start position:23% line:-1
+Kerasモデルをロードしたら
+
+00:27:06.160 --> 00:27:10.197 align:start position:29% line:-2
+モデルやカスタムレイヤに
+パーツを割り振ります
+
+00:27:10.964 --> 00:27:14.802 align:start position:25% line:-2
+このモデルをCore MLに
+変換しましょう
+
+00:27:15.602 --> 00:27:19.473 align:start position:14% line:-2
+Core ML Toolsをインポートし
+実行します
+
+00:27:19.907 --> 00:27:23.844 align:start position:29% line:-1
+先ほどもお見せしたように
+
+00:27:23.944 --> 00:27:27.347 align:start position:27% line:-1
+１度のコールで変換できます
+
+00:27:28.448 --> 00:27:32.419 align:start position:30% line:-2
+エラーが表示されるのは
+想定内です
+
+00:27:33.387 --> 00:27:36.023 align:start position:25% line:-1
+大量のエラーメッセージですが
+
+00:27:36.123 --> 00:27:40.194 align:start position:27% line:-1
+肝心なのは最後の行だけです
+
+00:27:40.294 --> 00:27:41.361 align:start position:38% line:-1
+見てみましょう
+
+00:27:46.733 --> 00:27:51.605 align:start position:23% line:-2
+“このレイヤは
+サポートしていない”と出ました
+
+00:27:51.805 --> 00:27:55.142 align:start position:29% line:-1
+これを解決するためには…
+
+00:27:55.242 --> 00:27:58.312 align:start position:27% line:-1
+閉じたほうが見やすいですね
+
+00:27:58.412 --> 00:28:00.948 align:start position:27% line:-1
+変換のコールを書き換えます
+

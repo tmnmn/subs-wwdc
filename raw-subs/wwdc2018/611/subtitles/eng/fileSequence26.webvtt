@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.166 --> 00:26:00.076 A:middle
+about this GPU workload
+
+00:26:00.116 --> 00:26:02.106 A:middle
+distribution, as multi-GPU
+
+00:26:02.106 --> 00:26:04.026 A:middle
+configuration are becoming
+
+00:26:04.136 --> 00:26:05.956 A:middle
+common on Apple platforms.
+
+00:26:07.956 --> 00:26:10.266 A:middle
+So let's summarize everything
+
+00:26:10.266 --> 00:26:11.326 A:middle
+that we've learned in this
+
+00:26:11.416 --> 00:26:11.866 A:middle
+section.
+
+00:26:12.496 --> 00:26:13.426 A:middle
+We showed multi-thread
+
+00:26:13.426 --> 00:26:15.986 A:middle
+application to take full benefit
+
+00:26:16.076 --> 00:26:17.396 A:middle
+of all CPU codes.
+
+00:26:17.466 --> 00:26:20.556 A:middle
+And split your command buffers,
+
+00:26:20.786 --> 00:26:22.666 A:middle
+to ensure that GPU is not idle.
+
+00:26:23.756 --> 00:26:25.776 A:middle
+When doing that, if possible,
+
+00:26:26.066 --> 00:26:26.916 A:middle
+try to separate
+
+00:26:27.046 --> 00:26:28.396 A:middle
+pause-independent from
+
+00:26:28.466 --> 00:26:31.036 A:middle
+pause-dependent workloads, to be
+
+00:26:31.036 --> 00:26:32.946 A:middle
+able to encode this work as soon
+
+00:26:32.946 --> 00:26:35.746 A:middle
+as possible, and even further,
+
+00:26:36.206 --> 00:26:38.086 A:middle
+splitting workloads by frequency
+
+00:26:38.086 --> 00:26:41.126 A:middle
+of update so if your application
+
+00:26:41.126 --> 00:26:42.586 A:middle
+will execute on multi-GPU
+
+00:26:42.586 --> 00:26:44.486 A:middle
+configuration, you can easily
+
+00:26:44.486 --> 00:26:47.576 A:middle
+distribute it across those GPUs.
+
+00:26:48.126 --> 00:26:50.726 A:middle
+And while doing that, ensure
+
+00:26:51.136 --> 00:26:53.296 A:middle
+that you drive each GPU with
+
+00:26:53.296 --> 00:26:55.566 A:middle
+separate rendering threads to
+
+00:26:55.566 --> 00:26:57.446 A:middle
+ensure that they all execute
+
+00:26:57.446 --> 00:26:58.206 A:middle
+asynchronously.
+
+00:26:59.116 --> 00:27:01.126 A:middle
+Now, you switch to reducing fill
+

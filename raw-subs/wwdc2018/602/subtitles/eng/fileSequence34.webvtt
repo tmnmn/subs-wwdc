@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.646 --> 00:34:01.326 A:middle
+Image detection searches for
+
+00:34:01.326 --> 00:34:03.086 A:middle
+known 2D images in the scene.
+
+00:34:03.776 --> 00:34:05.836 A:middle
+The term detection here implies
+
+00:34:05.996 --> 00:34:07.996 A:middle
+that these images are static and
+
+00:34:07.996 --> 00:34:09.126 A:middle
+are therefore not supposed to
+
+00:34:09.126 --> 00:34:09.396 A:middle
+move.
+
+00:34:10.326 --> 00:34:11.626 A:middle
+Great examples for such images
+
+00:34:11.626 --> 00:34:13.576 A:middle
+could be movie posters or
+
+00:34:13.576 --> 00:34:14.746 A:middle
+paintings in a museum.
+
+00:34:16.416 --> 00:34:18.536 A:middle
+ARKit will estimate the position
+
+00:34:18.636 --> 00:34:20.156 A:middle
+and orientation of such an image
+
+00:34:20.466 --> 00:34:22.216 A:middle
+in six degrees of freedom once
+
+00:34:22.216 --> 00:34:23.416 A:middle
+an image has been detected.
+
+00:34:24.536 --> 00:34:26.446 A:middle
+This pose can be used to trigger
+
+00:34:26.446 --> 00:34:28.005 A:middle
+content in your rendered scene.
+
+00:34:28.525 --> 00:34:31.576 A:middle
+As I mentioned earlier, all this
+
+00:34:31.626 --> 00:34:33.065 A:middle
+is fully integrated world
+
+00:34:33.065 --> 00:34:33.505 A:middle
+tracking.
+
+00:34:34.065 --> 00:34:35.065 A:middle
+So all you need to do is set
+
+00:34:35.065 --> 00:34:37.626 A:middle
+once in your property to set it
+
+00:34:38.666 --> 00:34:38.746 A:middle
+up.
+
+00:34:39.025 --> 00:34:40.255 A:middle
+In order to load images to be
+
+00:34:40.255 --> 00:34:42.386 A:middle
+used for image detection, you
+
+00:34:42.386 --> 00:34:44.275 A:middle
+made load them from file or use
+
+00:34:44.346 --> 00:34:46.196 A:middle
+Xcode's asset catalog, which
+
+00:34:46.196 --> 00:34:47.946 A:middle
+also gives you the detection
+
+00:34:47.946 --> 00:34:49.056 A:middle
+quality for an image.
+
+00:34:50.406 --> 00:34:51.496 A:middle
+So image detection is already
+
+00:34:51.496 --> 00:34:54.275 A:middle
+great, but now in iOS 12, we can
+
+00:34:54.275 --> 00:34:54.735 A:middle
+do better.
+
+00:34:54.926 --> 00:34:56.636 A:middle
+So let's talk about image
+
+00:34:56.636 --> 00:34:56.976 A:middle
+tracking.
+
+00:34:57.846 --> 00:34:59.636 A:middle
+Image tracking is an extension
+
+00:34:59.636 --> 00:35:01.546 A:middle
+to image detection with a big
+

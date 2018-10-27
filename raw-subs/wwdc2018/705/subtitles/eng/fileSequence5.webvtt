@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.066 --> 00:05:00.196 A:middle
+do those checks for you.
+
+00:05:00.776 --> 00:05:03.136 A:middle
+You can use either of these
+
+00:05:03.136 --> 00:05:04.646 A:middle
+techniques, but whichever one
+
+00:05:04.646 --> 00:05:05.816 A:middle
+you choose it's important not to
+
+00:05:05.816 --> 00:05:07.256 A:middle
+use online validation directly
+
+00:05:07.256 --> 00:05:08.826 A:middle
+from the user's device, this is
+
+00:05:08.826 --> 00:05:10.076 A:middle
+not a secure way of actually
+
+00:05:10.306 --> 00:05:11.656 A:middle
+validating this document is
+
+00:05:11.656 --> 00:05:12.096 A:middle
+authentic.
+
+00:05:13.096 --> 00:05:14.256 A:middle
+But let's compare each of these
+
+00:05:14.256 --> 00:05:15.396 A:middle
+two approaches in a little more
+
+00:05:15.396 --> 00:05:16.536 A:middle
+detail, especially around
+
+00:05:16.536 --> 00:05:17.736 A:middle
+subscription management and
+
+00:05:17.736 --> 00:05:19.166 A:middle
+order renewable subscriptions.
+
+00:05:20.466 --> 00:05:21.466 A:middle
+Both of these techniques give
+
+00:05:21.466 --> 00:05:23.086 A:middle
+you a way to validate that this
+
+00:05:23.136 --> 00:05:24.206 A:middle
+is an authentic document.
+
+00:05:25.636 --> 00:05:26.696 A:middle
+They also give you access to the
+
+00:05:26.696 --> 00:05:27.766 A:middle
+contents of the receipt, any
+
+00:05:27.766 --> 00:05:29.356 A:middle
+transactions that have occurred
+
+00:05:29.356 --> 00:05:30.416 A:middle
+for this particular user.
+
+00:05:31.436 --> 00:05:32.306 A:middle
+But when it comes to auto
+
+00:05:32.306 --> 00:05:33.426 A:middle
+renewable subscriptions there's
+
+00:05:33.456 --> 00:05:34.716 A:middle
+a few key advantages that
+
+00:05:34.786 --> 00:05:35.836 A:middle
+server-to-server receipt
+
+00:05:35.836 --> 00:05:37.096 A:middle
+validation actually gives you
+
+00:05:37.376 --> 00:05:38.396 A:middle
+over on-device receipt
+
+00:05:38.396 --> 00:05:38.886 A:middle
+validation.
+
+00:05:39.496 --> 00:05:40.496 A:middle
+Firstly, we include some
+
+00:05:40.496 --> 00:05:41.686 A:middle
+additional subscription
+
+00:05:41.686 --> 00:05:43.676 A:middle
+information in the response to
+
+00:05:43.966 --> 00:05:44.976 A:middle
+that validation check.
+
+00:05:45.406 --> 00:05:46.786 A:middle
+You can use this, Michael will
+
+00:05:46.786 --> 00:05:47.526 A:middle
+talk about a little later in
+
+00:05:47.526 --> 00:05:47.886 A:middle
+this talk.
+
+00:05:47.886 --> 00:05:51.126 A:middle
+Your server is always on to
+
+00:05:51.126 --> 00:05:51.906 A:middle
+handle those renewal
+
+00:05:51.906 --> 00:05:53.206 A:middle
+transactions in the background.
+
+00:05:53.206 --> 00:05:54.166 A:middle
+This is really important if
+
+00:05:54.166 --> 00:05:55.476 A:middle
+you've got a service with maybe
+
+00:05:55.476 --> 00:05:56.416 A:middle
+multiple platforms.
+
+00:05:56.946 --> 00:05:59.676 A:middle
+Your server is not susceptible
+
+00:05:59.716 --> 00:06:01.106 A:middle
+to a device clock change.
+

@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.992 --> 00:31:04.098 align:start position:29% line:-2
+OSがAppのために
+要求するメモリの容量です
+
+00:31:04.198 --> 00:31:06.600 align:start position:27% line:-1
+これら２つのカラムに注目し
+
+00:31:06.700 --> 00:31:08.902 align:start position:32% line:-1
+大きな数値を探します
+
+00:31:09.002 --> 00:31:11.472 align:start position:25% line:-1
+CG画像がすぐ目に入りました
+
+00:31:11.572 --> 00:31:15.109 align:start position:32% line:-2
+ダーティなサイズと
+圧縮されたサイズです
+
+00:31:15.209 --> 00:31:18.212 align:start position:29% line:-1
+今はとにかく探し続けます
+
+00:31:18.412 --> 00:31:23.183 align:start position:27% line:-2
+IOSurfaceに大きな
+ダーティサイズがあります
+
+00:31:23.283 --> 00:31:25.018 align:start position:25% line:-1
+圧縮されたサイズはありません
+
+00:31:25.119 --> 00:31:28.655 align:start position:25% line:-2
+MALLOC LARGEにも
+ダーティサイズがありますね
+
+00:31:28.755 --> 00:31:31.725 align:start position:21% line:-1
+圧縮されたサイズはとても少量です
+
+00:31:31.825 --> 00:31:35.429 align:start position:23% line:-2
+他にはそれほど
+大きなサイズのものはありません
+
+00:31:35.529 --> 00:31:38.131 align:start position:34% line:-1
+ここで見る限りでは
+
+00:31:38.232 --> 00:31:42.736 align:start position:30% line:-2
+仮想領域のCG画像に
+集中していくべきですね
+
+00:31:43.036 --> 00:31:45.038 align:start position:23% line:-1
+それを理解した上で進みましょう
+
+00:31:45.505 --> 00:31:47.908 align:start position:36% line:-1
+次のステップは？
+
+00:31:48.108 --> 00:31:51.678 align:start position:21% line:-1
+仮想メモリについて知りたいですね
+
+00:31:51.778 --> 00:31:54.481 align:start position:29% line:-1
+vmmapに行きましょう
+
+00:31:54.581 --> 00:32:00.754 align:start position:18% line:-2
+今回はsummay flagではなく
+Memgraghファイルを実行します
+

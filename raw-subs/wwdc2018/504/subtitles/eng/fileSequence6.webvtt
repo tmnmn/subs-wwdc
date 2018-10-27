@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.466 --> 00:06:01.166 A:middle
+I want to allow my user to just
+
+00:06:01.456 --> 00:06:03.336 A:middle
+tap in, listen to a guided tour
+
+00:06:03.336 --> 00:06:04.836 A:middle
+while they're in the museum, and
+
+00:06:04.836 --> 00:06:06.116 A:middle
+it's a great experience on the
+
+00:06:06.116 --> 00:06:08.606 A:middle
+watch because I can just put my
+
+00:06:08.606 --> 00:06:09.496 A:middle
+phone away.
+
+00:06:09.496 --> 00:06:10.716 A:middle
+I can just have the entire
+
+00:06:10.716 --> 00:06:12.666 A:middle
+experience on my wrist and enjoy
+
+00:06:12.666 --> 00:06:14.656 A:middle
+the beautiful art around me.
+
+00:06:15.046 --> 00:06:17.936 A:middle
+And let's say I had a, like a
+
+00:06:17.936 --> 00:06:19.706 A:middle
+buffer that allowed my user to
+
+00:06:19.816 --> 00:06:21.646 A:middle
+download the content on, when
+
+00:06:21.646 --> 00:06:22.816 A:middle
+they're on their way to the
+
+00:06:22.816 --> 00:06:23.446 A:middle
+museum.
+
+00:06:24.236 --> 00:06:25.616 A:middle
+In that case, I would want to
+
+00:06:25.616 --> 00:06:27.926 A:middle
+use URLSession and grab that
+
+00:06:27.926 --> 00:06:29.726 A:middle
+directly from my server, all my
+
+00:06:29.726 --> 00:06:31.196 A:middle
+content, and download it to the
+
+00:06:31.196 --> 00:06:31.906 A:middle
+watch itself.
+
+00:06:33.326 --> 00:06:35.546 A:middle
+So let's jump into some code and
+
+00:06:35.546 --> 00:06:38.026 A:middle
+see how we could do that.
+
+00:06:38.226 --> 00:06:39.256 A:middle
+So here we are.
+
+00:06:39.256 --> 00:06:41.626 A:middle
+I have an IBAction which is tied
+
+00:06:41.626 --> 00:06:43.206 A:middle
+to my WK Interface button.
+
+00:06:43.446 --> 00:06:44.246 A:middle
+And the first thing you'll
+
+00:06:44.246 --> 00:06:46.776 A:middle
+notice is I set my frontmost
+
+00:06:46.816 --> 00:06:48.456 A:middle
+timeout extended property to be
+
+00:06:48.456 --> 00:06:48.776 A:middle
+true.
+
+00:06:50.006 --> 00:06:51.096 A:middle
+And we're going to talk a little
+
+00:06:51.096 --> 00:06:52.546 A:middle
+bit more about frontmost later,
+
+00:06:52.686 --> 00:06:53.586 A:middle
+but the thing I wanted to
+
+00:06:53.586 --> 00:06:55.416 A:middle
+mention is that the user has
+
+00:06:55.416 --> 00:06:57.526 A:middle
+made a user interaction, so it's
+
+00:06:57.616 --> 00:06:59.496 A:middle
+fair to say that the user, next
+
+00:06:59.496 --> 00:07:00.526 A:middle
+time they raise their wrist,
+

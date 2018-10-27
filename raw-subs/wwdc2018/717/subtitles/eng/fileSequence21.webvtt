@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.866 --> 00:21:01.326 A:middle
+And then comes our part of catch
+
+00:21:01.326 --> 00:21:01.766 A:middle
+the output.
+
+00:21:01.766 --> 00:21:02.786 A:middle
+So, this is the call that
+
+00:21:02.786 --> 00:21:04.746 A:middle
+actually AV Foundation calls
+
+00:21:04.746 --> 00:21:05.416 A:middle
+[inaudible] buffers from the
+
+00:21:05.416 --> 00:21:05.866 A:middle
+camera.
+
+00:21:06.726 --> 00:21:08.056 A:middle
+I'm making sure that I you know,
+
+00:21:08.056 --> 00:21:09.486 A:middle
+hold onto the previous pixel
+
+00:21:09.486 --> 00:21:11.026 A:middle
+buffer because that's what I'm
+
+00:21:11.026 --> 00:21:12.486 A:middle
+going to compare against for my
+
+00:21:12.636 --> 00:21:15.996 A:middle
+registration, and swap those out
+
+00:21:15.996 --> 00:21:17.006 A:middle
+after I'm done with that.
+
+00:21:17.956 --> 00:21:19.196 A:middle
+So, I create my Translational
+
+00:21:19.196 --> 00:21:20.646 A:middle
+Image Registration Request with
+
+00:21:20.646 --> 00:21:21.416 A:middle
+my current buffer.
+
+00:21:21.416 --> 00:21:24.136 A:middle
+And then on the Sequence Request
+
+00:21:24.136 --> 00:21:25.916 A:middle
+Handler, I simply perform my
+
+00:21:25.916 --> 00:21:26.496 A:middle
+request.
+
+00:21:27.376 --> 00:21:28.956 A:middle
+Now, I get my observations back.
+
+00:21:29.616 --> 00:21:30.546 A:middle
+I can check if they are all
+
+00:21:30.546 --> 00:21:30.956 A:middle
+okay.
+
+00:21:31.716 --> 00:21:33.146 A:middle
+And add them into my array.
+
+00:21:34.496 --> 00:21:36.476 A:middle
+And last but not least, I check
+
+00:21:36.796 --> 00:21:37.786 A:middle
+if the scene's stable.
+
+00:21:38.566 --> 00:21:39.966 A:middle
+Then I bring up my little,
+
+00:21:39.966 --> 00:21:41.856 A:middle
+yellow box which is [inaudible]
+
+00:21:42.326 --> 00:21:43.216 A:middle
+detection overlay.
+
+00:21:44.466 --> 00:21:45.946 A:middle
+I know this is my currently
+
+00:21:45.946 --> 00:21:46.866 A:middle
+analyzed buffer.
+
+00:21:47.766 --> 00:21:51.296 A:middle
+And simply ask it to form its
+
+00:21:51.296 --> 00:21:52.276 A:middle
+analysis on that.
+
+00:21:52.906 --> 00:21:55.746 A:middle
+The one thing that you saw that
+
+00:21:55.746 --> 00:21:57.936 A:middle
+I did at the end of the
+
+00:21:58.426 --> 00:22:00.056 A:middle
+asynchronous call, in the
+

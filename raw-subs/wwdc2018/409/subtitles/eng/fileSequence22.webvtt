@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.476 --> 00:22:00.636 A:middle
+parameters explicitly
+
+00:22:00.636 --> 00:22:01.346 A:middle
+autoreleasing.
+
+00:22:02.156 --> 00:22:03.486 A:middle
+But we have noticed that such
+
+00:22:03.486 --> 00:22:06.486 A:middle
+issue kept occurring, so in
+
+00:22:06.486 --> 00:22:08.026 A:middle
+Xcode 10 we introduced a more
+
+00:22:08.026 --> 00:22:10.356 A:middle
+powerful Clang Static Analyzer
+
+00:22:10.356 --> 00:22:13.906 A:middle
+warning which knows which APIs
+
+00:22:14.956 --> 00:22:16.866 A:middle
+call the provided block inside
+
+00:22:16.866 --> 00:22:18.846 A:middle
+the autorelease pool and warns
+
+00:22:18.846 --> 00:22:19.966 A:middle
+about such cases.
+
+00:22:24.066 --> 00:22:24.956 A:middle
+So now let's see how this issue
+
+00:22:24.956 --> 00:22:25.676 A:middle
+can be fixed.
+
+00:22:26.286 --> 00:22:28.316 A:middle
+And the simplest fix here is
+
+00:22:28.316 --> 00:22:29.796 A:middle
+just to introduce a strong local
+
+00:22:29.796 --> 00:22:32.376 A:middle
+variable and then when you're
+
+00:22:32.376 --> 00:22:34.836 A:middle
+inside the block write a value
+
+00:22:34.836 --> 00:22:36.296 A:middle
+into the strong variable in
+
+00:22:36.296 --> 00:22:36.806 A:middle
+stat.
+
+00:22:37.646 --> 00:22:39.456 A:middle
+And then only copy to the out
+
+00:22:39.516 --> 00:22:41.646 A:middle
+parameter once the control is
+
+00:22:41.646 --> 00:22:43.286 A:middle
+outside of the block and you
+
+00:22:43.286 --> 00:22:44.666 A:middle
+know it's not inside the
+
+00:22:44.666 --> 00:22:46.216 A:middle
+autorelease pool and it's safe
+
+00:22:46.276 --> 00:22:47.696 A:middle
+to write into the autoreleasing
+
+00:22:47.696 --> 00:22:47.976 A:middle
+variable.
+
+00:22:53.236 --> 00:22:55.206 A:middle
+And finally, we also have
+
+00:22:55.206 --> 00:22:56.306 A:middle
+improved performance and
+
+00:22:56.306 --> 00:22:57.706 A:middle
+visualizations of the Clang
+
+00:22:57.706 --> 00:22:58.566 A:middle
+Static Analyzer.
+
+00:22:59.676 --> 00:23:02.736 A:middle
+So in Xcode 10 we have improved
+

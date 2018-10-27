@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:57.451 --> 00:02:01.588 align:start position:34% line:-2
+一旦 読み込めば
+負荷はかかりません
+
+00:02:02.022 --> 00:02:07.060 align:start position:32% line:-2
+CPU上での作業量も
+かなり少なくなります
+
+00:02:09.163 --> 00:02:14.368 align:start position:27% line:-2
+高負荷なフレーム生成の際は
+何が起きているのか？
+
+00:02:14.768 --> 00:02:17.838 align:start position:29% line:-2
+UITableViewの
+観点から考えます
+
+00:02:17.938 --> 00:02:21.275 align:start position:18% line:-2
+UICollectionViewでも
+同様です
+
+00:02:21.375 --> 00:02:25.579 align:start position:30% line:-2
+他のビューでも
+似たようなものでしょう
+
+00:02:26.813 --> 00:02:32.186 align:start position:25% line:-2
+高負荷なフレームの生成は
+TableViewの実装から
+
+00:02:32.286 --> 00:02:34.588 align:start position:11% line:-2
+cellForRowAt indexPath
+メソッドです
+
+00:02:36.056 --> 00:02:39.593 align:start position:32% line:-2
+まず表示したいセルを
+取得するために
+
+00:02:39.760 --> 00:02:43.230 align:start position:27% line:-2
+再利用可能な
+キューからデキューを試みる
+
+00:02:44.031 --> 00:02:49.436 align:start position:29% line:-2
+利用不可の場合は
+メモリの割り当てをします
+
+00:02:51.004 --> 00:02:54.575 align:start position:34% line:-2
+セルを取得したら
+モデルデータを入力
+
+00:02:54.875 --> 00:02:58.579 align:start position:30% line:-2
+アプリケーションにより
+費用は異なりますが
+
+00:02:58.679 --> 00:03:02.749 align:start position:32% line:-2
+かなり高負荷な操作を
+カバーできるでしょう
+

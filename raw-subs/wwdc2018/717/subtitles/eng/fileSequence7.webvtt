@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.036 --> 00:07:00.936 A:middle
+In this case, use our Vision
+
+00:07:00.936 --> 00:07:02.686 A:middle
+Feature Print and we'll
+
+00:07:02.686 --> 00:07:04.036 A:middle
+[inaudible] the classification.
+
+00:07:04.786 --> 00:07:08.636 A:middle
+So, that was everything we
+
+00:07:08.636 --> 00:07:09.456 A:middle
+needed to know about the
+
+00:07:09.456 --> 00:07:09.926 A:middle
+training.
+
+00:07:11.206 --> 00:07:12.616 A:middle
+But, I said there was some
+
+00:07:12.766 --> 00:07:13.976 A:middle
+caveats that you want to kind of
+
+00:07:13.976 --> 00:07:15.186 A:middle
+look at when we deal with the
+
+00:07:16.326 --> 00:07:16.866 A:middle
+app.
+
+00:07:16.866 --> 00:07:20.326 A:middle
+So, first thing, we only want to
+
+00:07:20.326 --> 00:07:21.826 A:middle
+actually run our classifier when
+
+00:07:21.826 --> 00:07:22.606 A:middle
+we really have to.
+
+00:07:24.526 --> 00:07:25.666 A:middle
+Classifiers are deep
+
+00:07:25.666 --> 00:07:26.966 A:middle
+convolutional networks that are
+
+00:07:26.966 --> 00:07:28.426 A:middle
+pretty computational intensive.
+
+00:07:28.696 --> 00:07:30.996 A:middle
+So, when we run those, it will
+
+00:07:30.996 --> 00:07:32.646 A:middle
+definitely use up kind of you
+
+00:07:32.646 --> 00:07:33.996 A:middle
+know, some electrons running on
+
+00:07:33.996 --> 00:07:35.116 A:middle
+the CPU and GPU.
+
+00:07:35.116 --> 00:07:36.546 A:middle
+So, you don't want to use this
+
+00:07:36.846 --> 00:07:37.956 A:middle
+unless you really have to.
+
+00:07:38.776 --> 00:07:40.326 A:middle
+In the example that I'm going to
+
+00:07:40.326 --> 00:07:43.116 A:middle
+show in my demo laters, I really
+
+00:07:43.116 --> 00:07:44.206 A:middle
+only want to classify if
+
+00:07:44.206 --> 00:07:45.816 A:middle
+actually the person looks really
+
+00:07:45.816 --> 00:07:47.026 A:middle
+at an item and not when just a
+
+00:07:47.026 --> 00:07:48.086 A:middle
+camera moves around.
+
+00:07:49.816 --> 00:07:52.186 A:middle
+So, I'm asking the question, "Am
+
+00:07:52.186 --> 00:07:53.006 A:middle
+I holding still?"
+
+00:07:53.066 --> 00:07:54.216 A:middle
+and then I'm going to run my
+
+00:07:54.216 --> 00:07:54.846 A:middle
+classifier.
+
+00:07:56.106 --> 00:07:56.846 A:middle
+How do I do this?
+
+00:07:56.846 --> 00:07:59.096 A:middle
+By using Vision, I can use
+
+00:07:59.096 --> 00:07:59.906 A:middle
+Registration.
+

@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:57.451 --> 00:22:00.154 align:start position:32% line:-1
+もう１つ問題なのは―
+
+00:22:00.254 --> 00:22:03.557 align:start position:27% line:-2
+CoreLocationが
+ユーザ認証を求めることです
+
+00:22:03.657 --> 00:22:07.794 align:start position:25% line:-2
+認証していないと
+許可ダイアログが表示されます
+
+00:22:08.295 --> 00:22:10.864 align:start position:29% line:-1
+デバイスの状態に左右され
+
+00:22:10.964 --> 00:22:14.535 align:start position:34% line:-2
+テストが不合格に
+なりやすくなります
+
+00:22:16.236 --> 00:22:21.475 align:start position:27% line:-2
+この問題に対処するには
+外部クラスのサブクラス化と
+
+00:22:21.575 --> 00:22:24.578 align:start position:34% line:-2
+メソッドの
+オーバーライドです
+
+00:22:24.778 --> 00:22:25.679 align:start position:43% line:-1
+例えば―
+
+00:22:25.779 --> 00:22:28.982 align:start position:18% line:-2
+CLLocationManagerの
+サブクラス化と
+
+00:22:29.082 --> 00:22:31.785 align:start position:14% line:-2
+requestLocationメソッドの
+オーバーライドです
+
+00:22:32.052 --> 00:22:35.022 align:start position:23% line:-1
+最初はよくてもリスクが高いです
+
+00:22:35.522 --> 00:22:40.160 align:start position:27% line:-2
+SDKからのクラスの一部は
+サブクラス化に向いておらず
+
+00:22:40.594 --> 00:22:45.799 align:start position:21% line:-2
+スーパークラスのイニシャライザを
+呼ぶ必要もあります
+
+00:22:46.166 --> 00:22:47.668 align:start position:32% line:-1
+しかし主要な問題は―
+
+00:22:47.768 --> 00:22:52.039 align:start position:30% line:-2
+メソッド呼び出しのため
+コードを修正した時で
+
+00:22:52.139 --> 00:22:56.543 align:start position:29% line:-2
+そのメソッドの
+オーバーライドが必要です
+
+00:22:57.010 --> 00:23:02.416 align:start position:27% line:-2
+別のメソッドを呼び出したと
+コンパイラが通知せず―
+

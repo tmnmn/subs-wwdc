@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.412 --> 00:08:03.283 align:start position:25% line:-2
+レイトレーシングの
+アプリケーションでも同様です
+
+00:08:04.785 --> 00:08:07.921 align:start position:29% line:-1
+この問題を解決するために
+
+00:08:08.021 --> 00:08:13.493 align:start position:29% line:-2
+高性能なインターセクタを
+提供することにしました
+
+00:08:14.661 --> 00:08:18.632 align:start position:9% line:-2
+今年 導入する
+MPSRayIntersectorのAPIです
+
+00:08:19.566 --> 00:08:22.936 align:start position:14% line:-1
+macOSとiOSデバイスのGPU上で―
+
+00:08:23.036 --> 00:08:27.207 align:start position:30% line:-1
+交差判定を高速化します
+
+00:08:28.442 --> 00:08:33.881 align:start position:23% line:-2
+レイは まとめて
+Metalバッファに格納します
+
+00:08:34.548 --> 00:08:37.751 align:start position:23% line:-1
+最も近い交点をMPSが見つけ―
+
+00:08:37.851 --> 00:08:40.254 align:start position:29% line:-1
+別のバッファに格納します
+
+00:08:40.654 --> 00:08:43.957 align:start position:29% line:-2
+あとは
+交差判定をしたい箇所で―
+
+00:08:44.057 --> 00:08:47.761 align:start position:25% line:-2
+Metalコマンドバッファを
+提供するだけ
+
+00:08:47.861 --> 00:08:51.465 align:start position:21% line:-1
+そこに交差情報をエンコードします
+
+00:08:52.699 --> 00:08:55.669 align:start position:30% line:-1
+詳しくご説明しましょう
+
+00:08:59.640 --> 00:09:00.507 align:start position:41% line:-1
+出ましたね
+

@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:00.496 --> 00:23:02.396 A:middle
+we'll see my iCloud Music
+
+00:23:02.396 --> 00:23:04.216 A:middle
+Library results as well as the
+
+00:23:04.216 --> 00:23:05.946 A:middle
+catalog library results.
+
+00:23:06.366 --> 00:23:10.866 A:middle
+And I can click, and we get
+
+00:23:10.866 --> 00:23:12.326 A:middle
+playback of the cloud library
+
+00:23:12.326 --> 00:23:12.896 A:middle
+item as well.
+
+00:23:14.516 --> 00:23:17.736 A:middle
+[ Music ]
+
+00:23:18.236 --> 00:23:19.706 A:middle
+Looking at the Now Playing
+
+00:23:19.706 --> 00:23:21.096 A:middle
+screen, or the Now Playing
+
+00:23:21.096 --> 00:23:22.616 A:middle
+information at the bottom makes
+
+00:23:22.616 --> 00:23:23.996 A:middle
+me realize that it's missing a
+
+00:23:23.996 --> 00:23:25.256 A:middle
+progress indicator to let me
+
+00:23:25.256 --> 00:23:26.856 A:middle
+know how far through the current
+
+00:23:26.856 --> 00:23:27.806 A:middle
+playing track we are.
+
+00:23:28.346 --> 00:23:30.576 A:middle
+And we can add something like
+
+00:23:30.576 --> 00:23:33.636 A:middle
+that by simply listening for the
+
+00:23:33.636 --> 00:23:35.206 A:middle
+playbackProgress DidChange event
+
+00:23:35.476 --> 00:23:38.000 A:middle
+that MusicKit JS provides.
+
+00:23:42.296 --> 00:23:43.696 A:middle
+Here we add an event listener to
+
+00:23:43.696 --> 00:23:45.686 A:middle
+the MusicKit instance, listen
+
+00:23:45.686 --> 00:23:47.136 A:middle
+for playbackProgress DidChange,
+
+00:23:47.356 --> 00:23:48.636 A:middle
+and have a custom renderer to
+
+00:23:48.636 --> 00:23:51.166 A:middle
+render progress when we get that
+
+00:23:54.336 --> 00:23:54.526 A:middle
+event.
+
+00:23:54.646 --> 00:23:56.186 A:middle
+So we can look for A list again.
+
+00:23:56.716 --> 00:23:59.226 A:middle
+And this time, when I play that
+
+00:23:59.226 --> 00:24:01.126 A:middle
+song, we see our custom progress
+

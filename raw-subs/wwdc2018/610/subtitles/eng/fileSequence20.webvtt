@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.726 --> 00:20:01.176 A:middle
+motion sensor would actually
+
+00:20:01.176 --> 00:20:02.706 A:middle
+sense a motion like going up or
+
+00:20:02.706 --> 00:20:04.476 A:middle
+down in the elevator while,
+
+00:20:04.476 --> 00:20:06.766 A:middle
+visually, your environment had
+
+00:20:06.816 --> 00:20:07.566 A:middle
+not changed.
+
+00:20:08.066 --> 00:20:11.846 A:middle
+So, how can you get notified
+
+00:20:11.846 --> 00:20:13.966 A:middle
+about the tracking quality that
+
+00:20:14.036 --> 00:20:15.036 A:middle
+the user is currently
+
+00:20:15.036 --> 00:20:16.926 A:middle
+experiencing with your app?
+
+00:20:18.236 --> 00:20:19.916 A:middle
+ARKit monitors its tracking
+
+00:20:19.916 --> 00:20:20.586 A:middle
+performance.
+
+00:20:21.186 --> 00:20:22.776 A:middle
+We applied machine learning,
+
+00:20:23.076 --> 00:20:24.536 A:middle
+which was trained on thousands
+
+00:20:24.536 --> 00:20:26.546 A:middle
+of data sets to which we had the
+
+00:20:26.546 --> 00:20:28.706 A:middle
+information how well tracking
+
+00:20:28.706 --> 00:20:30.266 A:middle
+performed in those situations.
+
+00:20:31.776 --> 00:20:33.276 A:middle
+To train a classifier, which
+
+00:20:33.276 --> 00:20:35.036 A:middle
+tells you how tracking performs,
+
+00:20:35.036 --> 00:20:36.846 A:middle
+we used annotations like the
+
+00:20:36.846 --> 00:20:39.486 A:middle
+number of visual-- visible
+
+00:20:39.566 --> 00:20:41.136 A:middle
+features tracked in the image
+
+00:20:41.936 --> 00:20:43.576 A:middle
+and also, the current velocity
+
+00:20:43.576 --> 00:20:44.346 A:middle
+of the device.
+
+00:20:45.496 --> 00:20:47.866 A:middle
+Now, during runtime, the health
+
+00:20:47.866 --> 00:20:50.636 A:middle
+of tracking is determined based
+
+00:20:50.636 --> 00:20:51.746 A:middle
+on those parameters.
+
+00:20:52.616 --> 00:20:55.116 A:middle
+In this video, we can see how
+
+00:20:55.116 --> 00:20:57.026 A:middle
+the health estimate, which can
+
+00:20:57.026 --> 00:20:58.406 A:middle
+be seen-- which, is reported in
+
+00:20:58.406 --> 00:21:00.846 A:middle
+the lower left, gets worse when
+

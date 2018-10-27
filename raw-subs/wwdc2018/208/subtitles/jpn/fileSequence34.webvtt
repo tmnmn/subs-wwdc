@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.037 --> 00:34:01.408 align:start position:18% line:-2
+今回 “Top Movies”という
+アプリケーションを使います
+
+00:34:01.508 --> 00:34:05.045 align:start position:34% line:-2
+コンテンツの適性は
+人それぞれ
+
+00:34:05.145 --> 00:34:10.650 align:start position:29% line:-2
+そこでPINコードを使い
+視聴者を制限します
+
+00:34:10.984 --> 00:34:16.023 align:start position:21% line:-2
+TVPosterViewを使った
+コレクションビューです
+
+00:34:16.889 --> 00:34:21.628 align:start position:4% line:-2
+didSelectItemAt indexPathが
+このビューのコードです
+
+00:34:21.728 --> 00:34:25.799 align:start position:2% line:-2
+TVDigitEntryViewControllerを
+用意し
+
+00:34:25.899 --> 00:34:31.605 align:start position:27% line:-2
+５桁のパスコードを要求する
+テキストに設定します
+
+00:34:32.005 --> 00:34:33.873 align:start position:36% line:-1
+桁数は５とします
+
+00:34:33.974 --> 00:34:38.579 align:start position:20% line:-2
+パスコードを扱うため
+isSecureはtrueにセット
+
+00:34:40.114 --> 00:34:43.583 align:start position:7% line:-2
+次に実装するのが
+entryCompletionHandlerです
+
+00:34:44.051 --> 00:34:50.257 align:start position:29% line:-2
+ユーザがビューに入力を
+終えると文字列を返します
+
+00:34:50.791 --> 00:34:54.628 align:start position:34% line:-2
+今回は５桁すべてを
+１に設定します
+
+00:34:54.728 --> 00:34:58.365 align:start position:18% line:-2
+入力が正しければ
+View Controllerが外れ
+
+00:34:58.465 --> 00:35:02.669 align:start position:34% line:-2
+間違いなら無効だと
+ユーザに伝えます
+

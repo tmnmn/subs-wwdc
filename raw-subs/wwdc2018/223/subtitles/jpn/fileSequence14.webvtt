@@ -1,0 +1,46 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.973 --> 00:14:04.144 align:start position:21% line:-1
+動かない要素の順序は保持しますが
+
+00:14:04.344 --> 00:14:07.748 align:start position:21% line:-1
+後ろに移動する要素は入れ換えます
+
+00:14:09.082 --> 00:14:15.489 align:start position:16% line:-2
+次の“removeSubrange”は
+場合により下位範囲を削除します
+
+00:14:16.690 --> 00:14:19.092 align:start position:36% line:-1
+部分範囲の表記は
+
+00:14:20.093 --> 00:14:24.498 align:start position:25% line:-2
+コレクションの終わりの範囲を
+記すのに便利です
+
+00:14:26.800 --> 00:14:32.239 align:start position:20% line:-2
+“removeSubrange”は
+パブリックAPIの一部ですが
+
+00:14:32.339 --> 00:14:38.078 align:start position:11% line:-2
+“halfStablePartition”は
+実装の詳細になります
+
+00:14:41.081 --> 00:14:45.519 align:start position:32% line:-2
+ここでは 一部だけを
+取り上げます
+
+00:14:46.420 --> 00:14:51.692 align:start position:27% line:-2
+まず 接尾辞の先頭の要素の
+位置を検索する―
+
+00:14:51.825 --> 00:14:56.296 align:start position:12% line:-2
+“firstIndex(where:)”を
+呼び出します
+
+00:14:57.097 --> 00:14:59.333 align:start position:32% line:-1
+ループ変数をｊに設定
+
+00:14:59.433 --> 00:15:02.402 align:start position:30% line:-1
+ループインデックスｊが
+

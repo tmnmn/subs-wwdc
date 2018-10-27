@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.352 --> 00:12:00.921 align:middle line:-2
+因此它提供了
+performOperation方法
+
+00:12:01.321 --> 00:12:03.390 align:middle line:-1
+该方法接受与Swift的
+
+00:12:03.457 --> 00:12:06.827 align:middle line:-2
+处理程序闭包参数对应的
+处理程序块参数
+
+00:12:07.427 --> 00:12:09.863 align:middle line:-2
+但仅仅通过查看
+Objective-C代码
+
+00:12:10.097 --> 00:12:11.865 align:middle line:-1
+我们无法知道
+
+00:12:11.932 --> 00:12:14.568 align:middle line:-1
+处理程序参数是否可以转义
+
+00:12:16.003 --> 00:12:21.341 align:middle line:-2
+Xcode 10
+现在提供了一个警告
+
+00:12:21.708 --> 00:12:24.878 align:middle line:-2
+帮助我们记住这个参数
+实际上不是转义的
+
+00:12:27.481 --> 00:12:31.151 align:middle line:-2
+为了修正这个警告 你可以使用
+NS_NOESCAPE注释
+
+00:12:31.218 --> 00:12:33.587 align:middle line:-1
+来注释你的块参数
+
+00:12:34.588 --> 00:12:35.856 align:middle line:-1
+你还应该用
+
+00:12:35.923 --> 00:12:39.059 align:middle line:-2
+NS_NOESCAPE注释
+来注释方法的实现
+
+00:12:39.126 --> 00:12:42.796 align:middle line:-1
+或方法实现中的参数
+
+00:12:44.164 --> 00:12:49.770 align:middle line:-2
+NS_NOESCAPE注释只是
+一个对程序员的提醒
+
+00:12:50.204 --> 00:12:54.741 align:middle line:-1
+以确保在执行操作方法返回后
+
+00:12:54.808 --> 00:12:57.578 align:middle line:-1
+你不存储或调用处理程序块
+
+00:12:59.012 --> 00:13:02.316 align:middle line:-1
+因此这是为了帮助你记住
+

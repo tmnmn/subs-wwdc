@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:01.286 --> 00:24:02.796 A:middle
+So if I want to calculate the
+
+00:24:02.836 --> 00:24:04.566 A:middle
+Hash code of the city object,
+
+00:24:05.066 --> 00:24:06.986 A:middle
+then I'm going to calculate the
+
+00:24:07.016 --> 00:24:08.336 A:middle
+Hash code of the name and the
+
+00:24:08.336 --> 00:24:09.636 A:middle
+Hash code of the state and I
+
+00:24:09.636 --> 00:24:11.086 A:middle
+have to combine them somehow.
+
+00:24:11.646 --> 00:24:12.686 A:middle
+But how do I do that?
+
+00:24:13.296 --> 00:24:15.286 A:middle
+Well, I can use an exclusive or
+
+00:24:15.286 --> 00:24:18.246 A:middle
+operation or I could use some
+
+00:24:18.246 --> 00:24:20.196 A:middle
+random math formula that I found
+
+00:24:20.196 --> 00:24:21.866 A:middle
+on the Internet or just came up
+
+00:24:21.866 --> 00:24:22.656 A:middle
+with myself.
+
+00:24:23.246 --> 00:24:24.976 A:middle
+But neither one of these is very
+
+00:24:24.976 --> 00:24:27.306 A:middle
+satisfying and it feels like
+
+00:24:27.306 --> 00:24:28.896 A:middle
+these Hash combining functions
+
+00:24:29.176 --> 00:24:30.556 A:middle
+have a lot of magic to them.
+
+00:24:30.876 --> 00:24:32.336 A:middle
+And the cost of getting it wrong
+
+00:24:32.336 --> 00:24:34.376 A:middle
+is pretty high because the
+
+00:24:34.376 --> 00:24:35.846 A:middle
+performance properties that you
+
+00:24:35.846 --> 00:24:37.526 A:middle
+expect to get from a dictionary
+
+00:24:37.526 --> 00:24:39.716 A:middle
+or a set really rely on having a
+
+00:24:39.716 --> 00:24:41.416 A:middle
+good high-quality Hash function.
+
+00:24:42.146 --> 00:24:43.956 A:middle
+There's also a security angle
+
+00:24:44.016 --> 00:24:44.266 A:middle
+here.
+
+00:24:44.636 --> 00:24:46.966 A:middle
+So if an attacker is able to
+
+00:24:46.966 --> 00:24:49.336 A:middle
+craft inputs that all Hash to
+
+00:24:49.336 --> 00:24:51.086 A:middle
+the same value and send them to
+
+00:24:51.086 --> 00:24:52.336 A:middle
+your app over the Internet
+
+00:24:52.396 --> 00:24:54.286 A:middle
+somehow, then it might slow your
+
+00:24:54.286 --> 00:24:55.466 A:middle
+app down to the point where it
+
+00:24:55.466 --> 00:24:56.906 A:middle
+becomes unusable creating a
+
+00:24:56.906 --> 00:24:58.056 A:middle
+denial of service attack.
+
+00:24:58.536 --> 00:25:01.066 A:middle
+So in Swift 4.2 we've added a
+

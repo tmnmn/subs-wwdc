@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.046 --> 00:10:01.386 A:middle
+that has ARC object pointer
+
+00:10:01.386 --> 00:10:03.766 A:middle
+fields from Swift you will just
+
+00:10:03.766 --> 00:10:05.346 A:middle
+get a compilation error because
+
+00:10:05.676 --> 00:10:06.976 A:middle
+the structure will not be found.
+
+00:10:14.046 --> 00:10:16.286 A:middle
+In addition to new features like
+
+00:10:16.696 --> 00:10:18.356 A:middle
+support for ARC object pointer
+
+00:10:18.356 --> 00:10:22.306 A:middle
+fields Xcode 10 comes with a lot
+
+00:10:22.306 --> 00:10:24.356 A:middle
+of new compiler diagnostics.
+
+00:10:24.896 --> 00:10:26.426 A:middle
+We actually have over a hundred
+
+00:10:26.556 --> 00:10:28.986 A:middle
+new warnings in Xcode 10 and
+
+00:10:28.986 --> 00:10:30.566 A:middle
+today I'd like to talk about two
+
+00:10:30.566 --> 00:10:30.846 A:middle
+of them.
+
+00:10:31.986 --> 00:10:33.326 A:middle
+The first warning might be of
+
+00:10:33.556 --> 00:10:36.036 A:middle
+interest to those of you who
+
+00:10:36.036 --> 00:10:38.676 A:middle
+have mixed Swift and Objective-C
+
+00:10:38.676 --> 00:10:39.036 A:middle
+code.
+
+00:10:39.906 --> 00:10:42.466 A:middle
+So as you know Swift code can be
+
+00:10:42.466 --> 00:10:45.786 A:middle
+imported into Objective-C and
+
+00:10:46.316 --> 00:10:48.586 A:middle
+Xcode allows you to do that by
+
+00:10:48.586 --> 00:10:50.356 A:middle
+generating a header file that
+
+00:10:50.356 --> 00:10:52.826 A:middle
+describes the Swift interface
+
+00:10:53.086 --> 00:10:54.836 A:middle
+using Objective-C declarations.
+
+00:10:55.266 --> 00:10:57.856 A:middle
+And you can import this header
+
+00:10:57.856 --> 00:10:59.476 A:middle
+file into your own Objective-C
+
+00:10:59.476 --> 00:11:01.736 A:middle
+code to get access to the
+

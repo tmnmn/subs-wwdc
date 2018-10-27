@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:00.276 --> 00:23:01.716 A:middle
+you can get command buffers for
+
+00:23:01.716 --> 00:23:02.306 A:middle
+your render loop.
+
+00:23:02.806 --> 00:23:06.846 A:middle
+Let's move on building your
+
+00:23:06.846 --> 00:23:07.546 A:middle
+render objects.
+
+00:23:08.216 --> 00:23:10.546 A:middle
+I'm going to talk about creating
+
+00:23:10.736 --> 00:23:12.106 A:middle
+three types of objects used for
+
+00:23:12.106 --> 00:23:13.936 A:middle
+rendering, textures, buffers and
+
+00:23:13.936 --> 00:23:14.426 A:middle
+pipelines.
+
+00:23:15.496 --> 00:23:17.846 A:middle
+Let's start with textures.
+
+00:23:18.106 --> 00:23:19.466 A:middle
+As mentioned earlier, you create
+
+00:23:19.466 --> 00:23:20.726 A:middle
+render objects from a device
+
+00:23:20.726 --> 00:23:21.066 A:middle
+object.
+
+00:23:22.416 --> 00:23:23.756 A:middle
+You'll use a descriptor object
+
+00:23:23.756 --> 00:23:24.836 A:middle
+to create most of these.
+
+00:23:25.546 --> 00:23:26.916 A:middle
+Descriptors are really simple
+
+00:23:26.916 --> 00:23:28.356 A:middle
+objects without any true
+
+00:23:28.356 --> 00:23:28.756 A:middle
+methods.
+
+00:23:29.296 --> 00:23:30.586 A:middle
+They only contain properties
+
+00:23:30.586 --> 00:23:31.856 A:middle
+needed for object setup.
+
+00:23:33.146 --> 00:23:34.526 A:middle
+So for example, to create a
+
+00:23:34.526 --> 00:23:35.836 A:middle
+texture you'd use a texture
+
+00:23:35.836 --> 00:23:36.326 A:middle
+descriptor.
+
+00:23:37.076 --> 00:23:38.306 A:middle
+You specify the properties that
+
+00:23:38.306 --> 00:23:39.386 A:middle
+you'd like the created texture
+
+00:23:39.386 --> 00:23:39.666 A:middle
+to have.
+
+00:23:40.186 --> 00:23:41.406 A:middle
+So things like the type of
+
+00:23:41.436 --> 00:23:43.396 A:middle
+texture, 2D, 3D, cubeMap.
+
+00:23:44.146 --> 00:23:45.296 A:middle
+The texture's dimensions and the
+
+00:23:45.296 --> 00:23:46.486 A:middle
+number of Mipmaps you'd like it
+
+00:23:46.486 --> 00:23:47.286 A:middle
+to have.
+
+00:23:47.286 --> 00:23:49.746 A:middle
+And the pixel format of data in
+
+00:23:50.676 --> 00:23:51.576 A:middle
+the texture.
+
+00:23:51.706 --> 00:23:53.416 A:middle
+Once you've set the desired
+
+00:23:53.416 --> 00:23:54.346 A:middle
+values for each of the
+
+00:23:54.346 --> 00:23:56.076 A:middle
+properties you call a method on
+
+00:23:56.076 --> 00:23:58.026 A:middle
+the device to create a usable
+
+00:23:58.026 --> 00:23:58.856 A:middle
+texture object.
+

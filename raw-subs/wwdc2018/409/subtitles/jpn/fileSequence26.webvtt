@@ -1,0 +1,44 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.227 --> 00:26:04.598 align:start position:29% line:-2
+このdlogflileに
+別の関数を呼び出すと
+
+00:26:05.699 --> 00:26:08.202 align:start position:21% line:-1
+独自のスタックフレームができます
+
+00:26:09.336 --> 00:26:14.441 align:start position:25% line:-2
+処理が済むとフレームから外れ
+呼び出し元に戻ります
+
+00:26:16.777 --> 00:26:20.147 align:start position:21% line:-1
+スタックフレームを分析しましょう
+
+00:26:21.515 --> 00:26:27.654 align:start position:25% line:-2
+４バイトのローカルバッファを
+持つ関数に変更します
+
+00:26:29.723 --> 00:26:32.960 align:start position:23% line:-1
+デバッグの文字列を用意するため
+
+00:26:33.060 --> 00:26:36.964 align:start position:12% line:-1
+bufferを含むstrcpyを配置します
+
+00:26:38.499 --> 00:26:41.502 align:start position:23% line:-1
+バイト単位で文字をコピーします
+
+00:26:41.602 --> 00:26:44.905 align:start position:34% line:-1
+“H　e　l　l”
+
+00:26:46.006 --> 00:26:49.643 align:start position:21% line:-1
+しかし４バイトを使い切ったことで
+
+00:26:49.843 --> 00:26:53.614 align:start position:30% line:-2
+バッファには
+バイトが余っていません
+
+00:26:54.515 --> 00:26:59.953 align:start position:16% line:-2
+そうなるとstrcpyは戻りアドレスを
+オーバーライドします
+

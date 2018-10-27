@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.786 --> 00:32:00.206 A:middle
+be distributed just like before.
+
+00:32:00.956 --> 00:32:02.256 A:middle
+And when it ends up on a user's
+
+00:32:02.256 --> 00:32:04.196 A:middle
+system, Gatekeeper will verify
+
+00:32:04.196 --> 00:32:05.996 A:middle
+notarization and provide the new
+
+00:32:05.996 --> 00:32:06.936 A:middle
+first-launch experience.
+
+00:32:07.606 --> 00:32:11.796 A:middle
+Now because this is a highly
+
+00:32:11.796 --> 00:32:13.396 A:middle
+automated process, we are
+
+00:32:13.396 --> 00:32:15.046 A:middle
+targeting providing tickets back
+
+00:32:15.296 --> 00:32:16.026 A:middle
+within an hour.
+
+00:32:16.776 --> 00:32:17.916 A:middle
+But we'll be working to improve
+
+00:32:17.916 --> 00:32:19.496 A:middle
+the speed and quality of the
+
+00:32:19.496 --> 00:32:20.996 A:middle
+service as we roll it out.
+
+00:32:22.356 --> 00:32:23.256 A:middle
+So let's talk a little more
+
+00:32:23.256 --> 00:32:24.016 A:middle
+about those security
+
+00:32:24.016 --> 00:32:24.876 A:middle
+requirements I mentioned
+
+00:32:24.876 --> 00:32:25.226 A:middle
+earlier.
+
+00:32:26.226 --> 00:32:29.016 A:middle
+Well, first and foremost, no
+
+00:32:29.016 --> 00:32:29.906 A:middle
+malicious software.
+
+00:32:30.646 --> 00:32:32.966 A:middle
+If the security check finds
+
+00:32:32.966 --> 00:32:34.216 A:middle
+anything malicious inside of the
+
+00:32:34.216 --> 00:32:35.706 A:middle
+Developer ID signed content, it
+
+00:32:35.776 --> 00:32:36.746 A:middle
+will immediately create a
+
+00:32:36.746 --> 00:32:37.946 A:middle
+special kind of ticket called a
+
+00:32:37.946 --> 00:32:39.636 A:middle
+revocation ticket and
+
+00:32:39.636 --> 00:32:40.486 A:middle
+immediately notify the
+
+00:32:40.486 --> 00:32:40.906 A:middle
+developer.
+
+00:32:42.156 --> 00:32:44.846 A:middle
+Second, all executables need to
+
+00:32:44.846 --> 00:32:45.976 A:middle
+be properly code signed.
+
+00:32:46.926 --> 00:32:47.976 A:middle
+And this is important to make
+
+00:32:47.976 --> 00:32:49.356 A:middle
+sure that when the application
+
+00:32:49.356 --> 00:32:50.656 A:middle
+ends up on a develop - on a
+
+00:32:50.656 --> 00:32:52.646 A:middle
+user's system, Gatekeeper can
+
+00:32:52.646 --> 00:32:53.976 A:middle
+verify that it wasn't tampered
+
+00:32:53.976 --> 00:32:54.176 A:middle
+with.
+
+00:32:54.666 --> 00:32:58.466 A:middle
+And finally, all binaries must
+
+00:32:58.466 --> 00:32:59.786 A:middle
+opt into the enhanced runtime
+
+00:32:59.786 --> 00:33:01.446 A:middle
+that Pierre described earlier so
+

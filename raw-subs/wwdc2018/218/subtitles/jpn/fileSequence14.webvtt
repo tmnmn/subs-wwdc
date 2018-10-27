@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:01.408 --> 00:14:04.578 align:start position:27% line:-1
+カスタムされたサブレイヤは
+
+00:14:04.678 --> 00:14:08.215 align:start position:30% line:-2
+ビューのアピアランスを
+自動で継承しません
+
+00:14:09.650 --> 00:14:11.985 align:start position:27% line:-1
+これを克服する簡単な方法は
+
+00:14:12.085 --> 00:14:15.422 align:start position:27% line:-2
+サブレイヤからサブビューに
+切り替えることです
+
+00:14:15.522 --> 00:14:18.659 align:start position:21% line:-1
+そうすれば AppKitによって
+
+00:14:18.759 --> 00:14:24.164 align:start position:29% line:-2
+アピアランスが自動的に
+継承されるようになります
+
+00:14:25.232 --> 00:14:28.569 align:start position:30% line:-2
+もし レイヤーを手動で
+管理する場合は
+
+00:14:28.669 --> 00:14:31.071 align:start position:27% line:-1
+テクニックが必要になります
+
+00:14:31.171 --> 00:14:33.140 align:start position:14% line:-2
+viewDidChange
+EffectiveAppearanceや
+
+00:14:33.240 --> 00:14:35.876 align:start position:16% line:-2
+Current Appearanceの
+概念です
+
+00:14:37.845 --> 00:14:41.215 align:start position:16% line:-2
+まずは viewDidChange
+EffectiveAppearance
+
+00:14:41.315 --> 00:14:45.853 align:start position:23% line:-2
+NSViewの新しいメソッドで
+これをオーバーライドすると
+
+00:14:46.553 --> 00:14:50.057 align:start position:7% line:-2
+Effective Appearanceが変わる
+タイミングが分かります
+
+00:14:51.058 --> 00:14:55.095 align:start position:29% line:-2
+カスタムを無効にするには
+いい機会です
+
+00:14:55.195 --> 00:14:58.232 align:start position:27% line:-1
+キャッシュの削除も同様です
+
+00:14:58.665 --> 00:15:02.469 align:start position:32% line:-2
+しかし ビュー自体の
+無効化については
+

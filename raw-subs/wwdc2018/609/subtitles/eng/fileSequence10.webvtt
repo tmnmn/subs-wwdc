@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.666 --> 00:10:01.206 A:middle
+network is fully trained and now
+
+00:10:01.206 --> 00:10:02.496 A:middle
+we can use the computed trained
+
+00:10:02.526 --> 00:10:03.976 A:middle
+parameters for inference.
+
+00:10:04.826 --> 00:10:06.196 A:middle
+And now, let's take a look at
+
+00:10:06.666 --> 00:10:08.286 A:middle
+the steps necessary to train a
+
+00:10:08.286 --> 00:10:10.046 A:middle
+neural network using the Metal
+
+00:10:10.046 --> 00:10:11.336 A:middle
+Performance Shaders Framework.
+
+00:10:11.516 --> 00:10:13.116 A:middle
+Neural networks are often
+
+00:10:13.116 --> 00:10:14.826 A:middle
+described using graph
+
+00:10:14.826 --> 00:10:15.516 A:middle
+abstraction.
+
+00:10:15.816 --> 00:10:17.726 A:middle
+So, in MPS, we enable you to
+
+00:10:17.726 --> 00:10:18.936 A:middle
+describe your networks as a
+
+00:10:18.936 --> 00:10:19.316 A:middle
+graph.
+
+00:10:20.996 --> 00:10:22.326 A:middle
+So, the first step is to create
+
+00:10:22.326 --> 00:10:22.916 A:middle
+a training graph.
+
+00:10:24.526 --> 00:10:25.526 A:middle
+Then we need to prepare our
+
+00:10:25.526 --> 00:10:26.216 A:middle
+inputs.
+
+00:10:26.456 --> 00:10:27.876 A:middle
+We need to specify weights.
+
+00:10:28.066 --> 00:10:29.306 A:middle
+And then we execute the graph.
+
+00:10:29.476 --> 00:10:31.186 A:middle
+So, we run the forward paths,
+
+00:10:31.346 --> 00:10:33.166 A:middle
+compute loss, do the gradient
+
+00:10:33.226 --> 00:10:34.496 A:middle
+pass, and update weights.
+
+00:10:35.266 --> 00:10:37.086 A:middle
+And training is an iterative
+
+00:10:37.176 --> 00:10:37.646 A:middle
+process.
+
+00:10:38.706 --> 00:10:40.486 A:middle
+It can take many iterations to
+
+00:10:40.486 --> 00:10:41.246 A:middle
+train a network.
+
+00:10:41.246 --> 00:10:42.936 A:middle
+So, we'll also need to know when
+
+00:10:42.936 --> 00:10:43.806 A:middle
+we can stop training.
+
+00:10:43.806 --> 00:10:45.306 A:middle
+So, let's now discuss each one
+
+00:10:45.306 --> 00:10:47.046 A:middle
+of these topics in more detail.
+
+00:10:47.576 --> 00:10:51.246 A:middle
+Let's start with creating a
+
+00:10:51.936 --> 00:10:52.486 A:middle
+training graph.
+
+00:10:52.806 --> 00:10:54.626 A:middle
+So, as I said, in MPS, we enable
+
+00:10:54.626 --> 00:10:56.236 A:middle
+you to describe your networks as
+
+00:10:56.236 --> 00:10:57.636 A:middle
+a graph using a neural network
+
+00:10:57.636 --> 00:10:58.336 A:middle
+graph API.
+
+00:10:58.886 --> 00:11:00.296 A:middle
+So, here we again have a
+

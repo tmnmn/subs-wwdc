@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.926 --> 00:23:00.486 A:middle
+I can't optimize NS Outline
+
+00:23:00.486 --> 00:23:01.976 A:middle
+View, Expand Items.
+
+00:23:03.126 --> 00:23:04.606 A:middle
+You absolutely have the power to
+
+00:23:04.606 --> 00:23:05.806 A:middle
+influence these situations.
+
+00:23:06.336 --> 00:23:07.706 A:middle
+For example, the system
+
+00:23:07.706 --> 00:23:08.936 A:middle
+framework could be spending all
+
+00:23:08.936 --> 00:23:10.976 A:middle
+of this time because it's
+
+00:23:10.976 --> 00:23:11.966 A:middle
+operating on data that you
+
+00:23:11.966 --> 00:23:12.526 A:middle
+provided it.
+
+00:23:13.366 --> 00:23:14.546 A:middle
+It could be taking a lot of time
+
+00:23:14.616 --> 00:23:15.496 A:middle
+because you are calling this
+
+00:23:15.496 --> 00:23:16.996 A:middle
+method thousands or millions of
+
+00:23:16.996 --> 00:23:17.476 A:middle
+times.
+
+00:23:18.366 --> 00:23:19.526 A:middle
+It could be taking a lot of time
+
+00:23:19.526 --> 00:23:20.666 A:middle
+because it's calling back into
+
+00:23:20.666 --> 00:23:22.376 A:middle
+your code through delegation.
+
+00:23:22.376 --> 00:23:24.566 A:middle
+And most importantly, you can
+
+00:23:24.566 --> 00:23:25.906 A:middle
+get an insight into what the
+
+00:23:25.906 --> 00:23:27.836 A:middle
+system framework is doing by
+
+00:23:27.836 --> 00:23:28.886 A:middle
+expanding down through the
+
+00:23:28.886 --> 00:23:30.186 A:middle
+Instruments tree, and looking at
+
+00:23:30.186 --> 00:23:31.256 A:middle
+the names of functions that are
+
+00:23:31.256 --> 00:23:31.816 A:middle
+being called.
+
+00:23:32.216 --> 00:23:33.766 A:middle
+In fact, that's exactly how I
+
+00:23:33.766 --> 00:23:36.966 A:middle
+learned to fix this bug.
+
+00:23:37.166 --> 00:23:39.166 A:middle
+As I expand the trace into the
+
+00:23:39.166 --> 00:23:41.406 A:middle
+outline view, I can see that it
+
+00:23:41.406 --> 00:23:42.726 A:middle
+is calling these two methods
+
+00:23:42.726 --> 00:23:42.966 A:middle
+here.
+
+00:23:44.716 --> 00:23:47.106 A:middle
+Batch Expand Items with item
+
+00:23:47.106 --> 00:23:49.266 A:middle
+entries, expand children, and do
+
+00:23:49.266 --> 00:23:50.686 A:middle
+work after end updates.
+
+00:23:51.756 --> 00:23:53.356 A:middle
+Now, those are big clues to me
+
+00:23:53.356 --> 00:23:54.366 A:middle
+that there is probably some
+
+00:23:54.366 --> 00:23:55.686 A:middle
+opportunity for efficiency
+
+00:23:55.686 --> 00:23:56.226 A:middle
+through batching.
+
+00:23:56.226 --> 00:23:58.326 A:middle
+As you could imagine, the
+
+00:23:58.326 --> 00:24:00.886 A:middle
+outline view starts with a small
+

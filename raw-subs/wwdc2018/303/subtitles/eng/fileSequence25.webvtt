@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:00.326 --> 00:25:01.926 A:middle
+And we have the two testers that
+
+00:25:01.926 --> 00:25:03.426 A:middle
+are added to this beta Groups.
+
+00:25:09.656 --> 00:25:12.086 A:middle
+So in this demo, we saw how to
+
+00:25:12.086 --> 00:25:13.506 A:middle
+create beta Groups and beta
+
+00:25:13.506 --> 00:25:15.286 A:middle
+testers and so some relationship
+
+00:25:15.286 --> 00:25:16.486 A:middle
+between testers and groups.
+
+00:25:17.376 --> 00:25:18.696 A:middle
+And this concludes the demo on
+
+00:25:18.746 --> 00:25:20.086 A:middle
+How to Use App Store Connect API
+
+00:25:20.306 --> 00:25:20.946 A:middle
+with TestFlight.
+
+00:25:20.946 --> 00:25:22.316 A:middle
+And I'll give the stage back to
+
+00:25:22.316 --> 00:25:22.566 A:middle
+Geoff.
+
+00:25:22.616 --> 00:25:22.976 A:middle
+Thank you.
+
+00:25:23.516 --> 00:25:29.386 A:middle
+[ Applause ]
+
+00:25:29.886 --> 00:25:30.706 A:middle
+&gt;&gt; Thanks again, Sehoon.
+
+00:25:30.706 --> 00:25:31.476 A:middle
+That was awesome.
+
+00:25:32.706 --> 00:25:36.746 A:middle
+So that's getting data, changing
+
+00:25:36.746 --> 00:25:37.996 A:middle
+data, and relationships.
+
+00:25:37.996 --> 00:25:38.986 A:middle
+It kind of covers the basic
+
+00:25:38.986 --> 00:25:39.976 A:middle
+features of the API.
+
+00:25:40.566 --> 00:25:41.736 A:middle
+But as you saw a glimpse in
+
+00:25:41.736 --> 00:25:43.446 A:middle
+Sehoon's demo, sometimes you
+
+00:25:43.446 --> 00:25:44.806 A:middle
+make mistakes and we can't
+
+00:25:44.806 --> 00:25:45.916 A:middle
+process your request.
+
+00:25:46.236 --> 00:25:47.166 A:middle
+So we're going to shift gears
+
+00:25:47.166 --> 00:25:48.616 A:middle
+now and talk about how the API
+
+00:25:48.836 --> 00:25:50.576 A:middle
+communicates these errors back
+
+00:25:50.666 --> 00:25:51.036 A:middle
+to you.
+
+00:25:52.186 --> 00:25:53.636 A:middle
+Anytime a request fails, you'll
+
+00:25:53.636 --> 00:25:54.736 A:middle
+get a response that looks like
+
+00:25:54.736 --> 00:25:55.076 A:middle
+this.
+
+00:25:56.536 --> 00:25:58.546 A:middle
+Now the first thing to notice is
+
+00:25:58.546 --> 00:25:59.286 A:middle
+that we'll send back an
+
+00:25:59.286 --> 00:26:01.416 A:middle
+appropriate HTTP response status
+

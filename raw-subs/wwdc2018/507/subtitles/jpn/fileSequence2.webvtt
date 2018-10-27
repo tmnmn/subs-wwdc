@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:57.417 --> 00:02:02.155 align:start position:27% line:-2
+CKCともいう暗号化キーで
+サーバが応答します
+
+00:02:02.489 --> 00:02:06.460 align:start position:16% line:-2
+最後に アプリケーションから
+CKCがAVFoundationへ渡り
+
+00:02:06.560 --> 00:02:10.030 align:start position:36% line:-2
+復号化を経て
+再生がなされます
+
+00:02:11.198 --> 00:02:13.534 align:start position:27% line:-1
+最近までアプリケーションは
+
+00:02:13.634 --> 00:02:17.404 align:start position:7% line:-2
+AVAssetResourceLoaderという
+汎用AV Foundation APIで―
+
+00:02:17.504 --> 00:02:19.573 align:start position:36% line:-2
+復号化キーを
+配信していました
+
+00:02:20.908 --> 00:02:24.745 align:start position:16% line:-2
+しかし昨年 新しい
+AV Foundationクラスを導入
+
+00:02:24.845 --> 00:02:30.017 align:start position:12% line:-2
+復号化キー専用に設計した
+AVContentKeySessionです
+
+00:02:31.652 --> 00:02:35.389 align:start position:30% line:-2
+これについては
+２つの目標がありました
+
+00:02:35.789 --> 00:02:39.326 align:start position:29% line:-2
+１つ目は キーの
+ロードプロセスの簡素化と
+
+00:02:39.426 --> 00:02:44.097 align:start position:27% line:-2
+コンテンツ復号化キーの
+ライフサイクル管理の効率化
+
+00:02:44.464 --> 00:02:49.303 align:start position:27% line:-2
+２つ目は新しいコンテンツの
+保護機能のホームとなる
+
+00:02:51.271 --> 00:02:54.441 align:start position:9% line:-2
+AVContentKeySessionの導入は
+順調で―
+
+00:02:54.541 --> 00:02:57.878 align:start position:12% line:-2
+FairPlay Streamingキーの
+大多数は―
+
+00:02:57.978 --> 00:03:02.115 align:start position:11% line:-2
+AVContentKeySessionからの
+ものです
+

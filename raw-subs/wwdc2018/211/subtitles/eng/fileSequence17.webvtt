@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.966 --> 00:17:01.736 A:middle
+target in your Xcode project and
+
+00:17:01.736 --> 00:17:03.366 A:middle
+choose the Intents Extension
+
+00:17:03.416 --> 00:17:03.806 A:middle
+template.
+
+00:17:04.326 --> 00:17:07.836 A:middle
+Make your intent handler conform
+
+00:17:07.925 --> 00:17:09.445 A:middle
+to the intent handling protocol.
+
+00:17:09.836 --> 00:17:10.636 A:middle
+In this case, it's
+
+00:17:10.876 --> 00:17:12.766 A:middle
+OrderSoupIntent handling and
+
+00:17:12.766 --> 00:17:14.076 A:middle
+then implement these methods,
+
+00:17:14.076 --> 00:17:15.876 A:middle
+which are confirm and handle.
+
+00:17:16.425 --> 00:17:17.566 A:middle
+Now, note that unlike
+
+00:17:17.566 --> 00:17:19.356 A:middle
+traditional SiriKit, you don't
+
+00:17:19.356 --> 00:17:20.846 A:middle
+need to implement any resolve
+
+00:17:20.846 --> 00:17:22.876 A:middle
+methods, because your intent is
+
+00:17:22.996 --> 00:17:24.346 A:middle
+ready to go without any
+
+00:17:24.486 --> 00:17:25.866 A:middle
+customization needed or any
+
+00:17:25.866 --> 00:17:26.965 A:middle
+follow-ups from the user.
+
+00:17:27.346 --> 00:17:29.676 A:middle
+So, in confirm, you should check
+
+00:17:29.676 --> 00:17:30.906 A:middle
+all of the values of the
+
+00:17:30.906 --> 00:17:32.126 A:middle
+properties of your intent to
+
+00:17:32.126 --> 00:17:33.056 A:middle
+make sure that they're valid.
+
+00:17:33.396 --> 00:17:34.596 A:middle
+And, if they're not, you should
+
+00:17:34.596 --> 00:17:36.066 A:middle
+return an error code if you
+
+00:17:36.066 --> 00:17:36.906 A:middle
+don't think you'll be able to
+
+00:17:36.906 --> 00:17:38.096 A:middle
+handle that intent.
+
+00:17:38.716 --> 00:17:40.866 A:middle
+And then you should handle,
+
+00:17:40.916 --> 00:17:42.726 A:middle
+actually perform your shortcut.
+
+00:17:43.086 --> 00:17:44.106 A:middle
+So, in this case, that means
+
+00:17:44.106 --> 00:17:45.416 A:middle
+actually placing an order for
+
+00:17:45.416 --> 00:17:45.786 A:middle
+the soup.
+
+00:17:46.136 --> 00:17:47.996 A:middle
+And then you return a response
+
+00:17:47.996 --> 00:17:49.756 A:middle
+object that indicates the
+
+00:17:49.756 --> 00:17:51.266 A:middle
+outcome, such as success.
+
+00:17:52.926 --> 00:17:54.596 A:middle
+Again, you should implement an
+
+00:17:54.596 --> 00:17:56.816 A:middle
+intents extension for every
+
+00:17:56.816 --> 00:17:58.476 A:middle
+shortcut that can run in the
+
+00:17:58.476 --> 00:18:00.046 A:middle
+background, because then they'll
+

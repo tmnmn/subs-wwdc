@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.436 --> 00:08:01.356 A:middle
+It can modify the scripts, and
+
+00:08:01.356 --> 00:08:03.086 A:middle
+styles you serve to users if
+
+00:08:03.086 --> 00:08:04.296 A:middle
+that third-party server is
+
+00:08:04.296 --> 00:08:05.026 A:middle
+compromised.
+
+00:08:06.156 --> 00:08:08.076 A:middle
+Subresource integrity ensures
+
+00:08:08.076 --> 00:08:09.516 A:middle
+that you don't serve compromised
+
+00:08:09.516 --> 00:08:10.936 A:middle
+scripts to your users.
+
+00:08:10.936 --> 00:08:12.076 A:middle
+So, how does it work?
+
+00:08:12.396 --> 00:08:13.566 A:middle
+Well, with hashing.
+
+00:08:14.256 --> 00:08:15.626 A:middle
+First, you add the integrity
+
+00:08:15.626 --> 00:08:17.196 A:middle
+property for a script or link
+
+00:08:17.196 --> 00:08:18.306 A:middle
+element in your markup.
+
+00:08:18.826 --> 00:08:20.316 A:middle
+The value for this property is a
+
+00:08:20.476 --> 00:08:21.786 A:middle
+hash that you create using a
+
+00:08:21.786 --> 00:08:22.986 A:middle
+secure hash algorithm.
+
+00:08:23.306 --> 00:08:24.996 A:middle
+When a user fetches the files,
+
+00:08:25.286 --> 00:08:26.886 A:middle
+then another hash is calculated.
+
+00:08:27.116 --> 00:08:28.456 A:middle
+The two are compared, and if
+
+00:08:28.456 --> 00:08:30.096 A:middle
+they don't match, your script
+
+00:08:30.096 --> 00:08:31.106 A:middle
+will fail to execute.
+
+00:08:31.846 --> 00:08:33.826 A:middle
+This process ensures that
+
+00:08:33.826 --> 00:08:35.535 A:middle
+scripts won't execute if they're
+
+00:08:35.535 --> 00:08:36.076 A:middle
+compromised.
+
+00:08:36.456 --> 00:08:38.616 A:middle
+Unless they match what you
+
+00:08:38.616 --> 00:08:41.056 A:middle
+intended, your scripts will not
+
+00:08:41.056 --> 00:08:41.476 A:middle
+execute.
+
+00:08:42.376 --> 00:08:43.726 A:middle
+And, to make sure you don't lose
+
+00:08:43.756 --> 00:08:45.306 A:middle
+functionality, you can also
+
+00:08:45.306 --> 00:08:47.316 A:middle
+provide a fallback to reload a
+
+00:08:47.316 --> 00:08:49.026 A:middle
+resource from your server, in
+
+00:08:49.026 --> 00:08:50.676 A:middle
+case the third-party script
+
+00:08:50.936 --> 00:08:51.896 A:middle
+fails to execute.
+
+00:08:52.446 --> 00:08:55.516 A:middle
+Now, keeping compromised
+
+00:08:55.516 --> 00:08:57.636 A:middle
+resources from executing keeps
+
+00:08:57.816 --> 00:08:58.706 A:middle
+users secure.
+
+00:08:59.086 --> 00:09:00.336 A:middle
+And, intelligent tracking
+

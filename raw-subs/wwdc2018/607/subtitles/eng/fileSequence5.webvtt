@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.156 --> 00:05:00.216 A:middle
+added to the command queue.
+
+00:05:01.026 --> 00:05:02.696 A:middle
+So now, let's take a look at how
+
+00:05:02.696 --> 00:05:04.316 A:middle
+easy this is to do in your code.
+
+00:05:04.316 --> 00:05:09.176 A:middle
+So you can see this is not a lot
+
+00:05:09.176 --> 00:05:09.606 A:middle
+of code.
+
+00:05:10.136 --> 00:05:11.016 A:middle
+The first thing that you're
+
+00:05:11.016 --> 00:05:13.816 A:middle
+going to do is create any number
+
+00:05:13.816 --> 00:05:14.856 A:middle
+of command buffers from the
+
+00:05:14.856 --> 00:05:15.146 A:middle
+queue.
+
+00:05:16.346 --> 00:05:19.126 A:middle
+Next, we're going to define the
+
+00:05:19.126 --> 00:05:21.456 A:middle
+GPU execution order upfront by
+
+00:05:21.456 --> 00:05:22.846 A:middle
+using the enqueue interface.
+
+00:05:23.366 --> 00:05:25.526 A:middle
+This is great because you can do
+
+00:05:25.526 --> 00:05:27.076 A:middle
+all this without waiting for the
+
+00:05:27.076 --> 00:05:28.276 A:middle
+command buffer to be encoded
+
+00:05:28.276 --> 00:05:28.746 A:middle
+first.
+
+00:05:29.436 --> 00:05:31.906 A:middle
+And finally, we're going to
+
+00:05:31.906 --> 00:05:33.696 A:middle
+create separate threads and
+
+00:05:33.696 --> 00:05:35.096 A:middle
+caller encoding functions for
+
+00:05:35.096 --> 00:05:35.536 A:middle
+each.
+
+00:05:35.826 --> 00:05:36.506 A:middle
+And that's it.
+
+00:05:36.966 --> 00:05:37.996 A:middle
+That's all you have to do.
+
+00:05:38.566 --> 00:05:40.186 A:middle
+It's really fast, it's really
+
+00:05:40.186 --> 00:05:41.046 A:middle
+efficient, and it's really
+
+00:05:41.046 --> 00:05:41.446 A:middle
+simple.
+
+00:05:42.136 --> 00:05:43.516 A:middle
+So now, let's go back to the
+
+00:05:43.516 --> 00:05:45.136 A:middle
+previous diagram and look at
+
+00:05:45.136 --> 00:05:45.896 A:middle
+another example.
+
+00:05:46.246 --> 00:05:49.166 A:middle
+So as you can see, we did a
+
+00:05:49.166 --> 00:05:51.356 A:middle
+pretty good job parallelizing
+
+00:05:51.356 --> 00:05:54.196 A:middle
+these on the CPU, but what if
+
+00:05:54.196 --> 00:05:56.146 A:middle
+you have 1 really long rendering
+
+00:05:58.116 --> 00:05:58.826 A:middle
+pass?
+
+00:05:58.826 --> 00:06:01.036 A:middle
+So in cases like this, Metal has
+

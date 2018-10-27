@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.946 --> 00:03:01.296 A:middle
+You receive transactions on a
+
+00:03:01.296 --> 00:03:02.466 A:middle
+callback in the Transaction
+
+00:03:02.466 --> 00:03:03.056 A:middle
+Observed called
+
+00:03:03.126 --> 00:03:05.316 A:middle
+updatedTransactions and it's
+
+00:03:05.316 --> 00:03:06.976 A:middle
+here that StoreKit will inform
+
+00:03:06.976 --> 00:03:08.196 A:middle
+your app of a set of
+
+00:03:08.196 --> 00:03:09.706 A:middle
+transactions for you to process.
+
+00:03:09.996 --> 00:03:11.126 A:middle
+They can come in various
+
+00:03:11.126 --> 00:03:11.986 A:middle
+different states that we're not
+
+00:03:11.986 --> 00:03:13.106 A:middle
+going to go completely into in
+
+00:03:13.106 --> 00:03:14.556 A:middle
+this talk, but keep an eye out
+
+00:03:14.556 --> 00:03:15.606 A:middle
+for a transaction in the
+
+00:03:15.726 --> 00:03:16.546 A:middle
+purchased state.
+
+00:03:17.266 --> 00:03:18.126 A:middle
+That's a transaction that
+
+00:03:18.126 --> 00:03:19.996 A:middle
+StoreKit is telling your app is
+
+00:03:19.996 --> 00:03:21.436 A:middle
+ready for verification and
+
+00:03:21.436 --> 00:03:21.766 A:middle
+unlocking.
+
+00:03:21.766 --> 00:03:25.726 A:middle
+Once you've got a transaction
+
+00:03:25.726 --> 00:03:26.606 A:middle
+the purchase state you're ready
+
+00:03:26.606 --> 00:03:27.826 A:middle
+to go with that next step, which
+
+00:03:27.826 --> 00:03:29.356 A:middle
+is to verify that it is an
+
+00:03:29.356 --> 00:03:30.366 A:middle
+authentic transaction.
+
+00:03:30.906 --> 00:03:33.826 A:middle
+So when it comes to checking for
+
+00:03:33.826 --> 00:03:34.936 A:middle
+authenticity how can you know
+
+00:03:34.936 --> 00:03:36.086 A:middle
+that money really has changed
+
+00:03:37.016 --> 00:03:37.176 A:middle
+hands?
+
+00:03:37.696 --> 00:03:38.826 A:middle
+You use a thing called the App
+
+00:03:38.826 --> 00:03:39.396 A:middle
+Store receipt.
+
+00:03:40.526 --> 00:03:41.446 A:middle
+The App Store receipt is just
+
+00:03:41.446 --> 00:03:42.716 A:middle
+like a receipt you'd get in a
+
+00:03:42.716 --> 00:03:43.896 A:middle
+department store, it's a proof
+
+00:03:43.896 --> 00:03:45.066 A:middle
+of purchase that a user has
+
+00:03:45.296 --> 00:03:46.436 A:middle
+bought something that they say
+
+00:03:46.436 --> 00:03:46.836 A:middle
+they've bought.
+
+00:03:46.836 --> 00:03:48.726 A:middle
+In this case it's a trusted
+
+00:03:48.726 --> 00:03:50.146 A:middle
+record of the initial app
+
+00:03:50.196 --> 00:03:51.266 A:middle
+download and any in-app
+
+00:03:51.346 --> 00:03:52.796 A:middle
+purchases that have occurred for
+
+00:03:52.796 --> 00:03:53.166 A:middle
+this app.
+
+00:03:54.606 --> 00:03:55.706 A:middle
+This is a digital document, it's
+
+00:03:55.706 --> 00:03:57.286 A:middle
+stored on the user's device, we
+
+00:03:57.286 --> 00:03:58.756 A:middle
+provide an API for you to access
+
+00:03:58.756 --> 00:04:00.576 A:middle
+it and it's put there by the App
+

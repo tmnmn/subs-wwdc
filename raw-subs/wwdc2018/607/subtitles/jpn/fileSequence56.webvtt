@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:57.257 --> 00:56:00.460 align:start position:30% line:-2
+分割したことがなくても
+深度を利用できます
+
+00:56:01.795 --> 00:56:04.598 align:start position:25% line:-2
+MSAAのクオリティ向上にも
+利用できます
+
+00:56:04.698 --> 00:56:09.803 align:start position:27% line:-2
+HDRレンダリングを行い
+MSAAの処理もすることで
+
+00:56:09.903 --> 00:56:12.306 align:start position:30% line:-1
+線がギザギザになります
+
+00:56:12.406 --> 00:56:16.910 align:start position:32% line:-2
+明るい空や暗い前景に
+影響します
+
+00:56:17.010 --> 00:56:21.615 align:start position:29% line:-2
+ボックスフィルター処理を
+することで
+
+00:56:21.715 --> 00:56:26.820 align:start position:27% line:-2
+明るかったり暗かったりする
+サブサンプルに対し
+
+00:56:26.920 --> 00:56:31.291 align:start position:32% line:-2
+白に近い非常に明るい
+ピクセルを返します
+
+00:56:31.391 --> 00:56:34.094 align:start position:29% line:-1
+大きく変わってしまいます
+
+00:56:34.695 --> 00:56:40.500 align:start position:25% line:-2
+そこでMSAAサンプルに対し
+プレトーンマップをします
+
+00:56:41.001 --> 00:56:43.237 align:start position:23% line:-1
+それから通常のMSAA処理をし
+
+00:56:43.337 --> 00:56:47.007 align:start position:29% line:-2
+ポストプロセス処理をして
+プレトーンマップをします
+
+00:56:47.374 --> 00:56:50.477 align:start position:29% line:-2
+ここでプログラマブル
+ブレンディングを使います
+
+00:56:50.677 --> 00:56:55.048 align:start position:30% line:-2
+記録したMSAAカラー
+バッファも読み込めます
+
+00:56:55.249 --> 00:56:57.117 align:start position:32% line:-1
+負担に応じて選べます
+
+00:56:58.886 --> 00:57:04.324 align:start position:23% line:-2
+今後 Metalで行いたいのが
+並列レンダリングです
+

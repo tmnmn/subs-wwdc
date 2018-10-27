@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:58.536 --> 00:54:00.126 A:middle
+So you should keep that in mind
+
+00:54:00.126 --> 00:54:01.356 A:middle
+and make sure that your
+
+00:54:01.686 --> 00:54:03.966 A:middle
+automated or manual testing uses
+
+00:54:03.966 --> 00:54:05.366 A:middle
+Thread Sanitizer, especially on
+
+00:54:05.366 --> 00:54:06.996 A:middle
+any code that is using threading
+
+00:54:06.996 --> 00:54:07.356 A:middle
+or GCD.
+
+00:54:07.356 --> 00:54:10.846 A:middle
+And if you'd like to know more I
+
+00:54:10.846 --> 00:54:12.366 A:middle
+recommend that you watch a video
+
+00:54:12.366 --> 00:54:15.486 A:middle
+from my WWDC 2016 session called
+
+00:54:15.486 --> 00:54:16.786 A:middle
+Thread Sanitizer and Static
+
+00:54:16.786 --> 00:54:18.206 A:middle
+Analysis where we have
+
+00:54:18.336 --> 00:54:20.346 A:middle
+introduced this tool and we also
+
+00:54:20.486 --> 00:54:21.936 A:middle
+talked about how it works under
+
+00:54:21.936 --> 00:54:22.226 A:middle
+the hood.
+
+00:54:22.596 --> 00:54:25.566 A:middle
+As a reminder, Thread Sanitizer
+
+00:54:25.566 --> 00:54:26.926 A:middle
+can be found in the Scheme
+
+00:54:26.926 --> 00:54:27.206 A:middle
+Editor.
+
+00:54:27.686 --> 00:54:29.686 A:middle
+So if you go to Product, Scheme
+
+00:54:29.956 --> 00:54:32.006 A:middle
+and Edit Scheme that will bring
+
+00:54:32.006 --> 00:54:32.956 A:middle
+up the Scheme Editor.
+
+00:54:32.956 --> 00:54:34.646 A:middle
+And then we can switch over to
+
+00:54:34.646 --> 00:54:36.026 A:middle
+the Diagnostics tab where you
+
+00:54:36.026 --> 00:54:37.836 A:middle
+can find Thread Sanitizer among
+
+00:54:37.836 --> 00:54:39.536 A:middle
+the other runtime diagnostic
+
+00:54:39.586 --> 00:54:39.976 A:middle
+tools.
+
+00:54:41.216 --> 00:54:43.546 A:middle
+I have one more debugging tip
+
+00:54:43.546 --> 00:54:44.516 A:middle
+that I would like to share with
+
+00:54:44.516 --> 00:54:46.136 A:middle
+you that's useful when dealing
+
+00:54:46.176 --> 00:54:46.986 A:middle
+with multithreading.
+
+00:54:48.046 --> 00:54:49.686 A:middle
+When you are creating dispatch
+
+00:54:49.686 --> 00:54:51.906 A:middle
+queues you can provide a custom
+
+00:54:51.906 --> 00:54:53.216 A:middle
+label in the initializer.
+
+00:54:54.576 --> 00:54:56.266 A:middle
+You can assign a custom name to
+
+00:54:56.266 --> 00:54:58.566 A:middle
+an operation queue and if you're
+
+00:54:58.566 --> 00:55:00.326 A:middle
+working with threads you can use
+

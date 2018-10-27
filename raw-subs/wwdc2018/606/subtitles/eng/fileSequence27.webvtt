@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.156 --> 00:27:00.386 A:middle
+Now, this copy is nonrecursive.
+
+00:27:01.086 --> 00:27:02.146 A:middle
+So, any buffers that you have
+
+00:27:02.146 --> 00:27:03.446 A:middle
+attached to your acceleration
+
+00:27:03.446 --> 00:27:04.966 A:middle
+structure, for example, your
+
+00:27:04.966 --> 00:27:06.556 A:middle
+vertex and your index buffers,
+
+00:27:07.626 --> 00:27:08.406 A:middle
+you'll need to copy those
+
+00:27:08.406 --> 00:27:08.896 A:middle
+separately.
+
+00:27:09.196 --> 00:27:10.446 A:middle
+And then, attach them to the
+
+00:27:10.446 --> 00:27:11.706 A:middle
+acceleration structure that we
+
+00:27:11.706 --> 00:27:12.286 A:middle
+just created.
+
+00:27:12.286 --> 00:27:17.596 A:middle
+So, now that the data is
+
+00:27:17.596 --> 00:27:19.076 A:middle
+replicated on all GPUs we're
+
+00:27:19.136 --> 00:27:20.116 A:middle
+ready to start rendering.
+
+00:27:21.996 --> 00:27:23.286 A:middle
+Now, the interesting thing for
+
+00:27:23.286 --> 00:27:25.176 A:middle
+our multi-GPU perspective is
+
+00:27:25.256 --> 00:27:26.886 A:middle
+that this part of the pipeline
+
+00:27:26.886 --> 00:27:28.376 A:middle
+is virtually unchanged from what
+
+00:27:28.376 --> 00:27:29.206 A:middle
+Sean described earlier.
+
+00:27:30.246 --> 00:27:31.376 A:middle
+The only difference we need to
+
+00:27:31.376 --> 00:27:33.416 A:middle
+make for multi-GPU is to
+
+00:27:33.416 --> 00:27:34.816 A:middle
+restrict regeneration to
+
+00:27:34.816 --> 00:27:36.156 A:middle
+whichever part of the screen a
+
+00:27:36.156 --> 00:27:37.636 A:middle
+particular GPU is working on.
+
+00:27:38.486 --> 00:27:39.586 A:middle
+Everything else is the same.
+
+00:27:40.466 --> 00:27:42.516 A:middle
+So, for that reason, let's move
+
+00:27:42.516 --> 00:27:44.096 A:middle
+straight on to what's, probably,
+
+00:27:44.256 --> 00:27:45.176 A:middle
+the trickiest stage for
+
+00:27:45.176 --> 00:27:47.416 A:middle
+multi-GPU, and that's its final
+
+00:27:47.416 --> 00:27:50.426 A:middle
+composition phase here.
+
+00:27:51.396 --> 00:27:53.326 A:middle
+Now, for best performance on
+
+00:27:53.326 --> 00:27:55.616 A:middle
+macOS, each GPU will render into
+
+00:27:55.616 --> 00:27:56.846 A:middle
+its own private buffer.
+
+00:27:57.146 --> 00:27:59.446 A:middle
+And once rendering has finished
+
+00:27:59.866 --> 00:28:01.456 A:middle
+we need to copy that buffer over
+

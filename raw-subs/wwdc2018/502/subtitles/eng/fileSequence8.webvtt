@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.296 --> 00:08:00.056 A:middle
+Well, we recommend that you use
+
+00:08:00.296 --> 00:08:01.996 A:middle
+the total duration watched and
+
+00:08:01.996 --> 00:08:04.636 A:middle
+compute the stall rate in terms
+
+00:08:04.636 --> 00:08:07.476 A:middle
+of stalls per unit of time
+
+00:08:07.476 --> 00:08:08.986 A:middle
+watched, such as stalls per
+
+00:08:08.986 --> 00:08:09.326 A:middle
+hour.
+
+00:08:09.926 --> 00:08:13.976 A:middle
+A stall of 30 seconds is much
+
+00:08:13.976 --> 00:08:16.296 A:middle
+worse to the user than a stall
+
+00:08:16.296 --> 00:08:17.206 A:middle
+of one second.
+
+00:08:17.436 --> 00:08:19.296 A:middle
+This is why we also care about
+
+00:08:19.506 --> 00:08:20.806 A:middle
+rebuffering time or stall
+
+00:08:20.806 --> 00:08:21.356 A:middle
+duration.
+
+00:08:22.276 --> 00:08:23.716 A:middle
+By measuring the time interval
+
+00:08:23.716 --> 00:08:25.026 A:middle
+between playback stalled
+
+00:08:25.026 --> 00:08:26.956 A:middle
+notification and when the player
+
+00:08:26.956 --> 00:08:28.566 A:middle
+item time base changes back to
+
+00:08:28.566 --> 00:08:31.306 A:middle
+1, you can compute an accurate
+
+00:08:31.306 --> 00:08:32.206 A:middle
+stall duration.
+
+00:08:32.936 --> 00:08:34.956 A:middle
+Again, the total duration can be
+
+00:08:34.956 --> 00:08:37.206 A:middle
+normalized using the duration
+
+00:08:37.206 --> 00:08:38.746 A:middle
+watched of the session.
+
+00:08:39.025 --> 00:08:40.106 A:middle
+Well, you might be wondering at
+
+00:08:40.106 --> 00:08:41.356 A:middle
+this point, how do I compute the
+
+00:08:41.356 --> 00:08:43.006 A:middle
+duration watched of a session?
+
+00:08:43.395 --> 00:08:44.826 A:middle
+And the answer is, through the
+
+00:08:44.826 --> 00:08:45.636 A:middle
+Access Log.
+
+00:08:45.636 --> 00:08:46.596 A:middle
+Let's see how we do that.
+
+00:08:47.686 --> 00:08:49.866 A:middle
+So this is a snippet of code.
+
+00:08:50.806 --> 00:08:52.396 A:middle
+First, we get a reference to the
+
+00:08:52.396 --> 00:08:54.126 A:middle
+Access Log from the player item.
+
+00:08:55.096 --> 00:08:57.386 A:middle
+We iterate through the events in
+
+00:08:57.386 --> 00:08:59.316 A:middle
+the Access Log, and we simply
+
+00:08:59.316 --> 00:09:02.156 A:middle
+sum up each events duration
+

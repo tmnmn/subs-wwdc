@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.866 --> 00:33:01.086 A:middle
+MockTimerScheduler and configure
+
+00:33:01.086 --> 00:33:02.286 A:middle
+its handleAddTimer block.
+
+00:33:03.496 --> 00:33:04.796 A:middle
+This block receives the timer.
+
+00:33:04.846 --> 00:33:05.576 A:middle
+Once it's added to the
+
+00:33:05.576 --> 00:33:07.506 A:middle
+scheduler, it records the
+
+00:33:07.506 --> 00:33:09.336 A:middle
+timer's delay, and then it
+
+00:33:09.336 --> 00:33:11.696 A:middle
+invokes the block by firing the
+
+00:33:11.696 --> 00:33:13.226 A:middle
+timer to bypass the delay.
+
+00:33:14.756 --> 00:33:15.796 A:middle
+Then, we create a
+
+00:33:15.796 --> 00:33:17.386 A:middle
+FeaturedPlaceManager and give it
+
+00:33:17.386 --> 00:33:18.446 A:middle
+our MockTimerScheduler.
+
+00:33:19.966 --> 00:33:20.796 A:middle
+And, finally, we call
+
+00:33:20.796 --> 00:33:22.366 A:middle
+scheduleNextPlace to start the
+
+00:33:22.366 --> 00:33:25.286 A:middle
+test, and, voila, our tests no
+
+00:33:25.286 --> 00:33:26.276 A:middle
+longer have any delay.
+
+00:33:27.066 --> 00:33:28.466 A:middle
+They execute super fast, and
+
+00:33:28.626 --> 00:33:29.886 A:middle
+they aren't timer dependent, so
+
+00:33:29.886 --> 00:33:31.006 A:middle
+it'll be more reliable.
+
+00:33:32.236 --> 00:33:34.146 A:middle
+And, as a bonus, I can now
+
+00:33:34.146 --> 00:33:35.866 A:middle
+verify the amount of timer delay
+
+00:33:36.156 --> 00:33:37.206 A:middle
+using this assertion at the
+
+00:33:37.206 --> 00:33:37.566 A:middle
+bottom.
+
+00:33:38.116 --> 00:33:39.056 A:middle
+And that's not something I was
+
+00:33:39.056 --> 00:33:40.906 A:middle
+able to do in the previous test.
+
+00:33:42.636 --> 00:33:44.886 A:middle
+So, like I said, the delay in
+
+00:33:44.886 --> 00:33:46.116 A:middle
+our code is fully eliminated
+
+00:33:46.116 --> 00:33:46.976 A:middle
+using this technique.
+
+00:33:48.086 --> 00:33:49.306 A:middle
+We think this was a great way to
+
+00:33:49.306 --> 00:33:50.636 A:middle
+test code that involves delayed
+
+00:33:50.636 --> 00:33:52.786 A:middle
+actions, but, for the fastest
+
+00:33:52.786 --> 00:33:54.096 A:middle
+overall execution speed in your
+
+00:33:54.096 --> 00:33:56.076 A:middle
+tests, it's still preferable to
+
+00:33:56.076 --> 00:33:57.686 A:middle
+structure the bulk of your tests
+
+00:33:57.686 --> 00:33:59.136 A:middle
+to be direct and not need to
+
+00:33:59.136 --> 00:34:00.496 A:middle
+mock delayed actions at all.
+

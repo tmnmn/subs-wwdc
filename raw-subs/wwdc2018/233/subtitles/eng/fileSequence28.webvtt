@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.986 --> 00:28:00.536 A:middle
+to help preserve this illusion
+
+00:28:00.536 --> 00:28:02.416 A:middle
+of your app's content sliding on
+
+00:28:02.416 --> 00:28:03.826 A:middle
+this magic sheet of glass.
+
+00:28:05.116 --> 00:28:06.776 A:middle
+At Apple, we've got a phrase
+
+00:28:06.776 --> 00:28:07.956 A:middle
+that we like to say, that your
+
+00:28:07.956 --> 00:28:09.736 A:middle
+app should feel smooth like
+
+00:28:09.736 --> 00:28:10.046 A:middle
+butter.
+
+00:28:10.896 --> 00:28:13.446 A:middle
+But, from time to time, you have
+
+00:28:13.446 --> 00:28:15.226 A:middle
+some hitches and stutters that
+
+00:28:15.226 --> 00:28:16.936 A:middle
+make it feel less like butter,
+
+00:28:17.606 --> 00:28:18.926 A:middle
+and more like peanut butter.
+
+00:28:20.296 --> 00:28:21.426 A:middle
+And, you've seen this before.
+
+00:28:21.426 --> 00:28:22.786 A:middle
+Your app feels choppy or
+
+00:28:22.786 --> 00:28:23.316 A:middle
+stuttery.
+
+00:28:24.786 --> 00:28:26.726 A:middle
+Ben, what are some causes of the
+
+00:28:26.726 --> 00:28:28.256 A:middle
+slow behavior in apps?
+
+00:28:29.186 --> 00:28:30.656 A:middle
+&gt;&gt; Well, Peter, this slow
+
+00:28:30.656 --> 00:28:31.866 A:middle
+behavior that you're describing
+
+00:28:32.076 --> 00:28:34.166 A:middle
+is really that we're dropping
+
+00:28:34.166 --> 00:28:34.646 A:middle
+frames.
+
+00:28:35.316 --> 00:28:36.476 A:middle
+And so, we need to understand
+
+00:28:36.476 --> 00:28:37.466 A:middle
+why that might be happening.
+
+00:28:37.466 --> 00:28:39.216 A:middle
+And, there are two key areas
+
+00:28:39.416 --> 00:28:40.316 A:middle
+where this can happen.
+
+00:28:41.046 --> 00:28:42.386 A:middle
+The first is you could be doing
+
+00:28:42.426 --> 00:28:43.666 A:middle
+too much computation.
+
+00:28:44.716 --> 00:28:46.366 A:middle
+And, the second is you could be
+
+00:28:46.366 --> 00:28:48.196 A:middle
+doing too much complex graphics
+
+00:28:48.196 --> 00:28:48.836 A:middle
+compositing.
+
+00:28:50.236 --> 00:28:51.416 A:middle
+Let's look at each of these in
+
+00:28:51.416 --> 00:28:53.766 A:middle
+turn, starting with computation.
+
+00:28:55.056 --> 00:28:56.346 A:middle
+How do you know if you're doing
+
+00:28:56.346 --> 00:28:57.286 A:middle
+too much computation?
+
+00:28:58.656 --> 00:29:00.656 A:middle
+Well, the Time Profiler, built
+

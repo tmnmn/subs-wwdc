@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:58.866 --> 00:52:00.006 A:middle
+points in iOS.
+
+00:52:01.456 --> 00:52:03.266 A:middle
+So, once the touch reaches this
+
+00:52:03.266 --> 00:52:04.776 A:middle
+distance, the swipe begins.
+
+00:52:05.976 --> 00:52:07.706 A:middle
+This is also a good moment to
+
+00:52:07.706 --> 00:52:08.706 A:middle
+decide the direction of the
+
+00:52:08.706 --> 00:52:09.086 A:middle
+swipe.
+
+00:52:09.516 --> 00:52:11.366 A:middle
+If it's horizontal, or vertical
+
+00:52:11.366 --> 00:52:12.136 A:middle
+for instance.
+
+00:52:12.526 --> 00:52:13.796 A:middle
+We don't really need it for
+
+00:52:13.796 --> 00:52:15.766 A:middle
+example, but it's very useful in
+
+00:52:15.766 --> 00:52:16.626 A:middle
+some situations.
+
+00:52:16.626 --> 00:52:19.356 A:middle
+So, now that the swipe has been
+
+00:52:19.356 --> 00:52:20.856 A:middle
+detected, this is the initial
+
+00:52:20.856 --> 00:52:21.976 A:middle
+position of a gesture.
+
+00:52:22.816 --> 00:52:24.746 A:middle
+After this moment, the touch and
+
+00:52:24.746 --> 00:52:26.516 A:middle
+the image should stay together
+
+00:52:26.516 --> 00:52:27.686 A:middle
+and move as one thing.
+
+00:52:28.286 --> 00:52:29.426 A:middle
+We should respect the relative
+
+00:52:29.426 --> 00:52:31.106 A:middle
+position, and never use the
+
+00:52:31.106 --> 00:52:32.396 A:middle
+center of the image as the
+
+00:52:32.396 --> 00:52:33.186 A:middle
+dragging point.
+
+00:52:34.266 --> 00:52:35.456 A:middle
+During the drag, we should also
+
+00:52:35.456 --> 00:52:36.926 A:middle
+keep track of the position and
+
+00:52:36.926 --> 00:52:38.576 A:middle
+speed up the touch, so when the
+
+00:52:38.576 --> 00:52:40.136 A:middle
+drag is over, we don't use the
+
+00:52:40.136 --> 00:52:41.036 A:middle
+last position.
+
+00:52:41.406 --> 00:52:42.846 A:middle
+We use the history of the touch,
+
+00:52:42.966 --> 00:52:44.876 A:middle
+to ensure that all the motion is
+
+00:52:44.876 --> 00:52:46.436 A:middle
+transferred fluidly into the
+
+00:52:46.436 --> 00:52:46.896 A:middle
+image.
+
+00:52:50.296 --> 00:52:52.286 A:middle
+So, as we've seen, touch and
+
+00:52:52.316 --> 00:52:53.906 A:middle
+content should move together.
+
+00:52:54.436 --> 00:52:56.136 A:middle
+One-to-one tracking is extremely
+
+00:52:56.136 --> 00:52:56.806 A:middle
+important.
+
+00:52:57.406 --> 00:52:59.436 A:middle
+When swiping or dragging, the
+
+00:52:59.436 --> 00:53:00.696 A:middle
+contents should stay attached to
+

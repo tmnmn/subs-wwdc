@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:00.506 --> 00:08:01.536 A:middle
+all the intermediate ones are
+
+00:08:01.536 --> 00:08:02.856 A:middle
+wasted, you really just want to
+
+00:08:02.856 --> 00:08:03.516 A:middle
+measure at the end.
+
+00:08:03.816 --> 00:08:04.896 A:middle
+And that's what the Render Loop
+
+00:08:04.896 --> 00:08:05.316 A:middle
+gives you.
+
+00:08:05.876 --> 00:08:07.656 A:middle
+Because what you can do instead
+
+00:08:08.086 --> 00:08:10.066 A:middle
+is that inside a set font you
+
+00:08:10.066 --> 00:08:10.646 A:middle
+can just call
+
+00:08:10.646 --> 00:08:13.206 A:middle
+setNeedsUpdateConstraints and
+
+00:08:13.336 --> 00:08:14.986 A:middle
+then you're guaranteed to get
+
+00:08:15.176 --> 00:08:17.366 A:middle
+update constraints at the end
+
+00:08:17.436 --> 00:08:18.466 A:middle
+before the frame goes to the
+
+00:08:18.466 --> 00:08:18.826 A:middle
+screen.
+
+00:08:19.816 --> 00:08:20.456 A:middle
+And that's what it's for.
+
+00:08:21.486 --> 00:08:22.876 A:middle
+So the couple things to
+
+00:08:22.876 --> 00:08:24.386 A:middle
+understand from this before we
+
+00:08:24.386 --> 00:08:26.176 A:middle
+move on is number one it runs a
+
+00:08:26.176 --> 00:08:27.626 A:middle
+lot, 120 frames a second.
+
+00:08:28.406 --> 00:08:30.346 A:middle
+Number two they're parallel.
+
+00:08:30.686 --> 00:08:31.906 A:middle
+So you can use that for
+
+00:08:31.906 --> 00:08:32.696 A:middle
+intuition as well.
+
+00:08:32.726 --> 00:08:33.866 A:middle
+If you feel like you understand
+
+00:08:33.866 --> 00:08:35.035 A:middle
+the layout pass or have some
+
+00:08:35.035 --> 00:08:36.956 A:middle
+feel for that, same deal when
+
+00:08:36.956 --> 00:08:37.506 A:middle
+you're thinking about
+
+00:08:37.506 --> 00:08:38.525 A:middle
+UpdateConstraints or you're
+
+00:08:38.525 --> 00:08:39.256 A:middle
+thinking about display.
+
+00:08:40.155 --> 00:08:41.746 A:middle
+And then the last thing being
+
+00:08:41.746 --> 00:08:43.756 A:middle
+that the whole reason it's there
+
+00:08:43.756 --> 00:08:45.886 A:middle
+is to avoid wasted work, to
+
+00:08:45.886 --> 00:08:47.656 A:middle
+defer work and possibly skip it
+
+00:08:47.656 --> 00:08:48.036 A:middle
+entirely.
+
+00:08:49.006 --> 00:08:53.316 A:middle
+All right, so having looked at
+
+00:08:53.316 --> 00:08:54.876 A:middle
+that we are now in position to
+
+00:08:54.876 --> 00:08:56.156 A:middle
+analyze the rest of this method.
+
+00:08:56.896 --> 00:08:59.476 A:middle
+See how we are -- every time
+
+00:08:59.476 --> 00:09:01.076 A:middle
+it's called we're deactivating
+

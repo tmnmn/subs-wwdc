@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:56.896 --> 00:19:00.066 A:middle
+We also have aggregations.
+
+00:19:00.176 --> 00:19:01.976 A:middle
+And aggregations are nice when
+
+00:19:01.976 --> 00:19:03.186 A:middle
+you want to try to subtract out
+
+00:19:03.186 --> 00:19:04.586 A:middle
+the time component and you want
+
+00:19:04.586 --> 00:19:05.396 A:middle
+to look at your data in
+
+00:19:05.396 --> 00:19:05.906 A:middle
+aggregate.
+
+00:19:05.906 --> 00:19:06.726 A:middle
+You want to apply some
+
+00:19:06.726 --> 00:19:07.956 A:middle
+statistics to everything that's
+
+00:19:07.956 --> 00:19:08.556 A:middle
+in that table.
+
+00:19:09.376 --> 00:19:10.406 A:middle
+And so when we define an
+
+00:19:10.406 --> 00:19:12.316 A:middle
+aggregation, what we're doing is
+
+00:19:12.316 --> 00:19:13.966 A:middle
+the columns this time are now
+
+00:19:13.966 --> 00:19:14.596 A:middle
+functions.
+
+00:19:14.896 --> 00:19:15.956 A:middle
+So you can use functions like
+
+00:19:16.026 --> 00:19:19.186 A:middle
+sum, average, count, and several
+
+00:19:19.186 --> 00:19:20.436 A:middle
+other statistical functions to
+
+00:19:20.726 --> 00:19:24.396 A:middle
+help you create the aggregation
+
+00:19:24.396 --> 00:19:26.256 A:middle
+view that you want to create.
+
+00:19:28.146 --> 00:19:29.576 A:middle
+Now the nice part about
+
+00:19:29.716 --> 00:19:30.776 A:middle
+aggregations is that you can
+
+00:19:30.776 --> 00:19:32.096 A:middle
+define a hierarchy as well.
+
+00:19:32.266 --> 00:19:33.846 A:middle
+So here we've defined a process
+
+00:19:33.926 --> 00:19:35.296 A:middle
+thread in virtual memory
+
+00:19:35.296 --> 00:19:37.316 A:middle
+operation hierarchy, so we can
+
+00:19:37.316 --> 00:19:38.976 A:middle
+see these totals broken down by
+
+00:19:38.976 --> 00:19:40.626 A:middle
+the process and then by each
+
+00:19:40.626 --> 00:19:41.766 A:middle
+thread that's in that process
+
+00:19:42.086 --> 00:19:43.286 A:middle
+and then by each type of
+
+00:19:43.286 --> 00:19:45.156 A:middle
+operation that's in that thread,
+
+00:19:45.246 --> 00:19:46.036 A:middle
+in that process.
+
+00:19:46.206 --> 00:19:47.556 A:middle
+So aggregation is a really nice,
+
+00:19:47.626 --> 00:19:49.156 A:middle
+powerful way to look at a lot of
+
+00:19:49.156 --> 00:19:50.386 A:middle
+data in summary.
+
+00:19:51.476 --> 00:19:53.396 A:middle
+Now another type of aggregation
+
+00:19:53.396 --> 00:19:54.476 A:middle
+is called Call Tree.
+
+00:19:55.496 --> 00:19:56.696 A:middle
+Now the Call Tree is useful when
+
+00:19:56.696 --> 00:19:57.876 A:middle
+you have a column that is a
+
+00:19:57.876 --> 00:19:59.466 A:middle
+backtrace and you got another
+
+00:19:59.466 --> 00:20:00.246 A:middle
+column that's a weight.
+

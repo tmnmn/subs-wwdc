@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.866 --> 00:28:01.456 A:middle
+we need to copy that buffer over
+
+00:28:01.456 --> 00:28:03.136 A:middle
+to whichever GPU we're using for
+
+00:28:03.136 --> 00:28:03.636 A:middle
+composition.
+
+00:28:04.656 --> 00:28:06.216 A:middle
+Now, we can't copy between the
+
+00:28:06.216 --> 00:28:07.886 A:middle
+buffers, directly, because METAL
+
+00:28:07.886 --> 00:28:09.346 A:middle
+resources can only be used on
+
+00:28:09.346 --> 00:28:10.096 A:middle
+the device that they were
+
+00:28:10.096 --> 00:28:10.886 A:middle
+created on.
+
+00:28:11.036 --> 00:28:12.776 A:middle
+So, you can't create a buffer on
+
+00:28:12.776 --> 00:28:14.416 A:middle
+one GPU, and then try and attach
+
+00:28:14.416 --> 00:28:15.576 A:middle
+it to a Blit encoder on a
+
+00:28:15.576 --> 00:28:16.296 A:middle
+different GPU.
+
+00:28:16.296 --> 00:28:17.416 A:middle
+That's just not going to work.
+
+00:28:18.136 --> 00:28:19.986 A:middle
+So, this means that our copies
+
+00:28:19.986 --> 00:28:20.986 A:middle
+will need to go through system
+
+00:28:20.986 --> 00:28:21.296 A:middle
+memory.
+
+00:28:21.906 --> 00:28:24.806 A:middle
+Now, to make this as efficient
+
+00:28:24.806 --> 00:28:26.286 A:middle
+as we can, we use the buffer
+
+00:28:26.286 --> 00:28:27.506 A:middle
+arrangement that you see here.
+
+00:28:28.136 --> 00:28:30.516 A:middle
+We're going to create two METAL
+
+00:28:30.516 --> 00:28:32.796 A:middle
+buffers; one on each device that
+
+00:28:32.796 --> 00:28:34.686 A:middle
+wrap a common CPU allocation.
+
+00:28:35.726 --> 00:28:37.576 A:middle
+And as the buffers wrap the same
+
+00:28:37.576 --> 00:28:39.676 A:middle
+underlying memory anything that
+
+00:28:39.676 --> 00:28:40.906 A:middle
+is written into the METAL buffer
+
+00:28:40.906 --> 00:28:43.456 A:middle
+on device A is, also, visible to
+
+00:28:43.456 --> 00:28:44.996 A:middle
+the METAL buffer on device B.
+
+00:28:45.586 --> 00:28:48.586 A:middle
+Now, as I mentioned earlier, for
+
+00:28:49.096 --> 00:28:51.296 A:middle
+performance reasons on macOS all
+
+00:28:51.296 --> 00:28:52.866 A:middle
+of the actual rendering work is
+
+00:28:52.906 --> 00:28:54.106 A:middle
+done using private buffers.
+
+00:28:55.166 --> 00:28:56.626 A:middle
+And then, we Blit our completed
+
+00:28:56.626 --> 00:28:58.016 A:middle
+regions through system memory
+
+00:28:58.296 --> 00:28:59.426 A:middle
+when it's time to copy them to a
+
+00:28:59.426 --> 00:29:00.126 A:middle
+different GPU.
+

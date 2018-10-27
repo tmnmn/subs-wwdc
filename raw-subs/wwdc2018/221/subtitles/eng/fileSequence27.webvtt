@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.716 --> 00:27:02.366 A:middle
+Now here we have our original
+
+00:27:02.366 --> 00:27:02.746 A:middle
+font.
+
+00:27:03.386 --> 00:27:05.326 A:middle
+And we're going to use a font
+
+00:27:05.326 --> 00:27:06.796 A:middle
+descriptor to create a bold
+
+00:27:06.796 --> 00:27:08.376 A:middle
+version of this original font.
+
+00:27:09.936 --> 00:27:11.796 A:middle
+Then, we're going to initialize
+
+00:27:11.796 --> 00:27:13.196 A:middle
+our mutable attributed string
+
+00:27:13.526 --> 00:27:14.526 A:middle
+using the original text.
+
+00:27:14.526 --> 00:27:16.866 A:middle
+We're going to apply our new
+
+00:27:16.866 --> 00:27:18.876 A:middle
+font or new bold font to the
+
+00:27:18.876 --> 00:27:20.586 A:middle
+word don't and that's going to
+
+00:27:20.586 --> 00:27:21.496 A:middle
+be the first five characters.
+
+00:27:21.496 --> 00:27:22.986 A:middle
+And then we're going to set the
+
+00:27:22.986 --> 00:27:24.386 A:middle
+attributed text property of our
+
+00:27:24.386 --> 00:27:25.996 A:middle
+UITextView to use this new
+
+00:27:25.996 --> 00:27:28.566 A:middle
+attributed string except when we
+
+00:27:28.606 --> 00:27:30.096 A:middle
+do that we'll see that our new
+
+00:27:30.096 --> 00:27:32.186 A:middle
+bold font applied to the word
+
+00:27:32.186 --> 00:27:34.416 A:middle
+don't just as we expected but
+
+00:27:34.416 --> 00:27:35.676 A:middle
+the rest of the string somehow
+
+00:27:35.676 --> 00:27:36.986 A:middle
+lost the original font.
+
+00:27:37.506 --> 00:27:39.696 A:middle
+And now those of you who despise
+
+00:27:39.696 --> 00:27:40.966 A:middle
+Comic Sans might be happy about
+
+00:27:40.966 --> 00:27:43.676 A:middle
+that, but the result is wrong
+
+00:27:43.806 --> 00:27:45.296 A:middle
+and so that warrants a sad face.
+
+00:27:46.456 --> 00:27:47.926 A:middle
+So why did this happen?
+
+00:27:48.506 --> 00:27:51.046 A:middle
+And to answer that, let's take a
+
+00:27:51.046 --> 00:27:52.196 A:middle
+closer look at how we're
+
+00:27:52.196 --> 00:27:53.476 A:middle
+initializing our attributed
+
+00:27:53.546 --> 00:27:53.856 A:middle
+string.
+
+00:27:55.226 --> 00:27:56.806 A:middle
+So notice that we're using a
+
+00:27:56.966 --> 00:27:58.526 A:middle
+plain text string to initialize
+
+00:27:58.526 --> 00:27:59.616 A:middle
+it, and we're using the
+
+00:27:59.616 --> 00:28:01.006 A:middle
+initializer with no attribute
+

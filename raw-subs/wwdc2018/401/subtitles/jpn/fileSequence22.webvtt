@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:57.684 --> 00:22:03.190 align:start position:21% line:-2
+Swift 4.1から同値比較の
+実装が可能になりました
+
+00:22:03.290 --> 00:22:06.894 align:start position:18% line:-2
+実装しなくても
+プロパティがEquatableならば
+
+00:22:06.994 --> 00:22:10.430 align:start position:34% line:-2
+コンパイラが
+自動的に処理します
+
+00:22:11.031 --> 00:22:13.033 align:start position:27% line:-1
+Hashableも同様です
+
+00:22:13.901 --> 00:22:16.069 align:start position:30% line:-1
+ジェネリックタイプは？
+
+00:22:16.170 --> 00:22:22.643 align:start position:25% line:-2
+これはleftとrightの
+インスタンスのデータ型です
+
+00:22:22.843 --> 00:22:26.613 align:start position:27% line:-2
+両方をEquatableに
+制限したくありません
+
+00:22:26.713 --> 00:22:32.786 align:start position:12% line:-2
+関数やエラー non Equatableも
+使用可能にするためです
+
+00:22:32.920 --> 00:22:35.689 align:start position:30% line:-1
+限定的な適合を宣言し―
+
+00:22:35.789 --> 00:22:39.993 align:start position:18% line:-2
+両方がそうなら
+それぞれもEquatableとします
+
+00:22:40.094 --> 00:22:41.995 align:start position:30% line:-1
+これだけではありません
+
+00:22:42.095 --> 00:22:44.865 align:start position:29% line:-1
+同値比較の実装については
+
+00:22:44.998 --> 00:22:47.768 align:start position:30% line:-1
+正しいやり方は１つです
+
+00:22:47.868 --> 00:22:50.938 align:start position:27% line:-1
+どちらの値も同じ型か確認し
+
+00:22:51.038 --> 00:22:54.341 align:start position:32% line:-2
+ペイロードが同等かを
+チェックします
+
+00:22:54.675 --> 00:23:00.614 align:start position:20% line:-2
+Swift 4.2ではコンパイラが
+この合成作業を行います
+

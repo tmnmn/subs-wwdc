@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.986 --> 00:08:00.736 A:middle
+for that contact.
+
+00:08:01.546 --> 00:08:03.966 A:middle
+Now, that we know how to use the
+
+00:08:03.966 --> 00:08:05.686 A:middle
+UIAccessibilityDragging informal
+
+00:08:05.686 --> 00:08:07.056 A:middle
+protocol, exposing these is
+
+00:08:07.056 --> 00:08:07.736 A:middle
+straightforward.
+
+00:08:09.036 --> 00:08:11.126 A:middle
+We can override the
+
+00:08:11.126 --> 00:08:12.096 A:middle
+accessibilityDrop
+
+00:08:12.096 --> 00:08:13.676 A:middle
+PointDescriptors getter of the
+
+00:08:13.676 --> 00:08:17.346 A:middle
+View, compute the midpoints of
+
+00:08:17.346 --> 00:08:19.626 A:middle
+the two wells, and then return
+
+00:08:19.626 --> 00:08:20.966 A:middle
+two location descriptors that
+
+00:08:20.966 --> 00:08:22.256 A:middle
+name each drop point.
+
+00:08:24.616 --> 00:08:26.276 A:middle
+So, in summary, because you want
+
+00:08:26.276 --> 00:08:27.656 A:middle
+everyone to be able to use all
+
+00:08:27.656 --> 00:08:29.206 A:middle
+the cool features you build into
+
+00:08:29.206 --> 00:08:31.136 A:middle
+your app, you want to make sure
+
+00:08:32.206 --> 00:08:33.926 A:middle
+that the drags and drops
+
+00:08:33.926 --> 00:08:35.316 A:middle
+associated with Accessibility
+
+00:08:35.316 --> 00:08:36.876 A:middle
+elements in your app are exposed
+
+00:08:36.876 --> 00:08:38.106 A:middle
+to assistive technologies.
+
+00:08:38.916 --> 00:08:40.015 A:middle
+To do so, use the
+
+00:08:40.015 --> 00:08:41.096 A:middle
+accessibilityDrag
+
+00:08:41.096 --> 00:08:42.535 A:middle
+SourceDescriptors property to
+
+00:08:42.535 --> 00:08:43.916 A:middle
+specify what drag should be
+
+00:08:43.916 --> 00:08:45.546 A:middle
+exposed, and the
+
+00:08:45.546 --> 00:08:46.496 A:middle
+accessibilityDrop
+
+00:08:46.496 --> 00:08:48.256 A:middle
+PointDescriptors property to
+
+00:08:48.256 --> 00:08:49.346 A:middle
+specify what drop should be
+
+00:08:49.346 --> 00:08:49.876 A:middle
+exposed.
+
+00:08:50.326 --> 00:08:51.746 A:middle
+Finally, these properties are
+
+00:08:51.746 --> 00:08:53.506 A:middle
+just arrays of UIAccessibility
+
+00:08:53.506 --> 00:08:54.906 A:middle
+LocationDescriptor objects,
+
+00:08:55.236 --> 00:08:56.836 A:middle
+which describe to Accessibility
+
+00:08:57.066 --> 00:08:58.796 A:middle
+where these drags and drops are
+
+00:08:58.956 --> 00:09:01.006 A:middle
+in your application and how to
+

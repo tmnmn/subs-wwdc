@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:01.026 --> 00:26:02.646 A:middle
+So let's have a look.
+
+00:26:03.596 --> 00:26:05.606 A:middle
+The Module Map is actually very
+
+00:26:05.606 --> 00:26:06.066 A:middle
+simple.
+
+00:26:06.196 --> 00:26:07.876 A:middle
+This is the whole Module Map for
+
+00:26:07.876 --> 00:26:08.426 A:middle
+foundation.
+
+00:26:08.626 --> 00:26:08.966 A:middle
+That's it.
+
+00:26:09.996 --> 00:26:12.256 A:middle
+It obviously describes what is
+
+00:26:12.296 --> 00:26:13.446 A:middle
+the name of the module which is,
+
+00:26:13.446 --> 00:26:13.936 A:middle
+Foundation.
+
+00:26:14.436 --> 00:26:17.636 A:middle
+And then it also specifies what
+
+00:26:17.746 --> 00:26:19.616 A:middle
+headers are part of this module.
+
+00:26:20.716 --> 00:26:22.746 A:middle
+You'll notice there's only one
+
+00:26:22.746 --> 00:26:24.036 A:middle
+header file here, only
+
+00:26:24.036 --> 00:26:26.236 A:middle
+Foundation.h. But this is a
+
+00:26:26.236 --> 00:26:27.166 A:middle
+special header file.
+
+00:26:27.616 --> 00:26:28.646 A:middle
+This is the umbrella header
+
+00:26:29.086 --> 00:26:30.496 A:middle
+which is also marked by the
+
+00:26:30.496 --> 00:26:31.476 A:middle
+special keyword umbrella.
+
+00:26:32.496 --> 00:26:34.806 A:middle
+That means Clang has also to
+
+00:26:34.806 --> 00:26:36.286 A:middle
+look into this particular header
+
+00:26:36.286 --> 00:26:39.816 A:middle
+file to figure out if NSString.h
+
+00:26:39.816 --> 00:26:40.806 A:middle
+is part of the module.
+
+00:26:42.356 --> 00:26:44.716 A:middle
+And yeah, it's there, okay.
+
+00:26:45.236 --> 00:26:46.766 A:middle
+So now we have found out
+
+00:26:47.096 --> 00:26:48.926 A:middle
+NSString.h is part of the
+
+00:26:48.926 --> 00:26:49.876 A:middle
+foundation module.
+
+00:26:50.666 --> 00:26:52.726 A:middle
+Now Clang, now Clang can upgrade
+
+00:26:52.966 --> 00:26:55.036 A:middle
+this textual import to a module
+
+00:26:55.036 --> 00:26:57.386 A:middle
+import and we know we have to
+
+00:26:57.476 --> 00:26:58.816 A:middle
+build the foundation module to
+
+00:26:59.616 --> 00:27:00.946 A:middle
+do that.
+

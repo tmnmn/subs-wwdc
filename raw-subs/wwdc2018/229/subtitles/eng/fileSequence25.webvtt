@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.936 --> 00:25:01.196 A:middle
+dispatch queue, it's some time
+
+00:25:01.196 --> 00:25:02.456 A:middle
+helpful to like imagine the code
+
+00:25:02.456 --> 00:25:04.086 A:middle
+running at the same time, which
+
+00:25:04.086 --> 00:25:05.466 A:middle
+I'll simulate by putting them on
+
+00:25:05.466 --> 00:25:06.176 A:middle
+the same line.
+
+00:25:06.986 --> 00:25:08.086 A:middle
+And later in our application,
+
+00:25:08.086 --> 00:25:09.036 A:middle
+let's go ahead and check in on
+
+00:25:09.036 --> 00:25:11.376 A:middle
+those sleeping bears, and
+
+00:25:11.376 --> 00:25:13.506 A:middle
+sometimes we'll see grandpa and
+
+00:25:13.556 --> 00:25:14.476 A:middle
+cubs snoozing happily.
+
+00:25:15.136 --> 00:25:17.086 A:middle
+Other times, cub will go to
+
+00:25:17.086 --> 00:25:18.276 A:middle
+sleep first, and then it'll be
+
+00:25:18.276 --> 00:25:18.636 A:middle
+grandpa.
+
+00:25:19.516 --> 00:25:20.936 A:middle
+Sometimes, quite mysteriously,
+
+00:25:21.166 --> 00:25:22.966 A:middle
+only grandpa is sleeping in.
+
+00:25:23.506 --> 00:25:25.166 A:middle
+And other times, it'll be the
+
+00:25:25.226 --> 00:25:28.226 A:middle
+cub, and sometimes our program
+
+00:25:28.226 --> 00:25:29.986 A:middle
+just up and crashes, and nobody
+
+00:25:30.086 --> 00:25:32.046 A:middle
+bear's getting any sleep.
+
+00:25:32.216 --> 00:25:33.246 A:middle
+All of these possibilities
+
+00:25:33.246 --> 00:25:34.356 A:middle
+suggest that there's a possible
+
+00:25:34.356 --> 00:25:36.306 A:middle
+race condition, and indeed, it
+
+00:25:36.356 --> 00:25:37.336 A:middle
+seems likely given all the
+
+00:25:37.336 --> 00:25:39.326 A:middle
+potential threads involved in
+
+00:25:39.326 --> 00:25:40.146 A:middle
+this example.
+
+00:25:41.116 --> 00:25:41.946 A:middle
+And we can prove this to
+
+00:25:41.946 --> 00:25:42.916 A:middle
+ourselves using the thread
+
+00:25:42.916 --> 00:25:44.196 A:middle
+sanitizer or TSAN that's
+
+00:25:44.196 --> 00:25:45.106 A:middle
+included within Xcode.
+
+00:25:45.606 --> 00:25:47.406 A:middle
+And if we were to do so, we'd
+
+00:25:47.406 --> 00:25:48.376 A:middle
+get output that kind of looks
+
+00:25:48.376 --> 00:25:50.836 A:middle
+like this, and indeed, TSAN
+
+00:25:50.836 --> 00:25:51.676 A:middle
+would catch the race.
+
+00:25:51.676 --> 00:25:53.586 A:middle
+It would tell us there's a Swift
+
+00:25:53.586 --> 00:25:54.066 A:middle
+access race.
+
+00:25:54.626 --> 00:25:55.796 A:middle
+It would tell us which threads
+
+00:25:55.796 --> 00:25:58.016 A:middle
+are involved and give us a
+
+00:25:58.016 --> 00:25:59.076 A:middle
+summary at the end telling us
+
+00:25:59.126 --> 00:26:00.346 A:middle
+which line to actually go start
+

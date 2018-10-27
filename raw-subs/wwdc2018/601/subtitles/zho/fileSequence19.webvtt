@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.174 --> 00:19:03.477 align:middle line:-2
+ReplayKit会提供
+原始音视频样本
+
+00:19:04.044 --> 00:19:08.115 align:middle line:-1
+扩展要做的是编码并上传至直播平台
+
+00:19:08.348 --> 00:19:10.717 align:middle line:-1
+根据偏好 可使用任何技术
+
+00:19:12.853 --> 00:19:15.856 align:middle line:-2
+ReplayKit为扩展提供
+三种样本
+
+00:19:15.923 --> 00:19:18.025 align:middle line:-1
+（直播上传扩展）
+
+00:19:18.258 --> 00:19:20.561 align:middle line:-1
+录屏视频样本
+
+00:19:21.228 --> 00:19:23.363 align:middle line:-1
+app音频样本
+
+00:19:24.064 --> 00:19:27.768 align:middle line:-1
+和麦克风音频样本
+
+00:19:28.268 --> 00:19:32.539 align:middle line:-2
+扩展将所有这些编码
+并上传至直播平台
+
+00:19:35.542 --> 00:19:37.878 align:middle line:-1
+所有扩展处理的内容
+
+00:19:37.945 --> 00:19:39.780 align:middle line:-1
+是由一个函数控制
+
+00:19:40.547 --> 00:19:42.316 align:middle line:-1
+叫做processSampleBuffer
+
+00:19:42.950 --> 00:19:47.154 align:middle line:-2
+该函数接收单个
+CMSampleBuffer
+
+00:19:47.487 --> 00:19:48.755 align:middle line:-1
+以及该缓冲类型
+
+00:19:49.890 --> 00:19:53.093 align:middle line:-2
+你要做的就是对媒体样本
+进行编码并上传
+
+00:19:53.560 --> 00:19:55.529 align:middle line:-1
+这段代码样本展示了
+
+00:19:55.596 --> 00:19:58.565 align:middle line:-2
+如何使用Video Toolbox
+对视频编码
+
+00:19:59.733 --> 00:20:02.736 align:middle line:-2
+我们建议使用
+Video Toolbox
+

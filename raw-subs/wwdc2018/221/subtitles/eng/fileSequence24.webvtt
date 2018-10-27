@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.866 --> 00:24:00.376 A:middle
+And now we have two text views
+
+00:24:00.376 --> 00:24:01.596 A:middle
+but we want them to display the
+
+00:24:01.696 --> 00:24:03.546 A:middle
+same content but look a little
+
+00:24:03.546 --> 00:24:04.286 A:middle
+different on the right.
+
+00:24:05.916 --> 00:24:07.176 A:middle
+So we want a configuration like
+
+00:24:07.176 --> 00:24:08.806 A:middle
+this where we have one text
+
+00:24:08.806 --> 00:24:10.716 A:middle
+storage but two of everything
+
+00:24:11.546 --> 00:24:11.666 A:middle
+else.
+
+00:24:14.096 --> 00:24:16.506 A:middle
+To do this, we will replace the
+
+00:24:16.506 --> 00:24:17.996 A:middle
+text storage on the right with
+
+00:24:18.066 --> 00:24:19.106 A:middle
+that from the left.
+
+00:24:20.616 --> 00:24:21.506 A:middle
+Now let's see what this looks
+
+00:24:21.536 --> 00:24:21.766 A:middle
+like.
+
+00:24:22.286 --> 00:24:25.186 A:middle
+Now this is actually really
+
+00:24:25.186 --> 00:24:25.326 A:middle
+cool.
+
+00:24:25.526 --> 00:24:26.626 A:middle
+If we add any characters to the
+
+00:24:26.626 --> 00:24:27.636 A:middle
+left, they'll show up
+
+00:24:27.636 --> 00:24:28.556 A:middle
+immediately on the right-hand
+
+00:24:28.556 --> 00:24:28.826 A:middle
+side.
+
+00:24:29.726 --> 00:24:31.056 A:middle
+Now usually the right-hand side
+
+00:24:31.906 --> 00:24:33.166 A:middle
+doesn't really show the Markdown
+
+00:24:33.166 --> 00:24:35.406 A:middle
+characters but since this is a
+
+00:24:35.406 --> 00:24:38.036 A:middle
+shared text storage, it means we
+
+00:24:38.036 --> 00:24:39.196 A:middle
+have to hide the characters
+
+00:24:39.406 --> 00:24:40.486 A:middle
+during the layout process.
+
+00:24:40.486 --> 00:24:44.236 A:middle
+Now since we need to do it this
+
+00:24:44.236 --> 00:24:45.846 A:middle
+way, we really only have one
+
+00:24:45.916 --> 00:24:48.486 A:middle
+option and that's to implement
+
+00:24:49.016 --> 00:24:50.746 A:middle
+the shouldGenerateGlyphs method
+
+00:24:51.176 --> 00:24:52.746 A:middle
+on the NSLayoutManager delegate.
+
+00:24:53.796 --> 00:24:55.196 A:middle
+This will allow us to intervene
+
+00:24:55.316 --> 00:24:57.446 A:middle
+in the glyph generation process.
+
+00:24:58.036 --> 00:24:59.776 A:middle
+So we can take the glyphs that
+
+00:24:59.776 --> 00:25:01.986 A:middle
+are about to be laid out and if
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.506 --> 00:38:00.856 A:middle
+So, here's a sampling of the
+
+00:38:00.856 --> 00:38:02.186 A:middle
+system colors that we support
+
+00:38:02.246 --> 00:38:03.146 A:middle
+that are dynamic for the
+
+00:38:03.146 --> 00:38:03.686 A:middle
+appearance.
+
+00:38:04.006 --> 00:38:05.076 A:middle
+And what I want to highlight
+
+00:38:05.076 --> 00:38:06.446 A:middle
+here is that the ones
+
+00:38:06.446 --> 00:38:07.586 A:middle
+highlighted in green have been
+
+00:38:07.586 --> 00:38:10.406 A:middle
+available since at least 10.10
+
+00:38:10.406 --> 00:38:12.076 A:middle
+Yosemite, many of them actually
+
+00:38:12.076 --> 00:38:12.896 A:middle
+far further back.
+
+00:38:12.896 --> 00:38:15.426 A:middle
+And that means that we think
+
+00:38:15.426 --> 00:38:17.166 A:middle
+that you have a great vocabulary
+
+00:38:17.166 --> 00:38:18.416 A:middle
+of colors available to you to
+
+00:38:18.416 --> 00:38:20.046 A:middle
+describe more or less any UI
+
+00:38:20.046 --> 00:38:22.206 A:middle
+that you'd like and that all
+
+00:38:22.206 --> 00:38:23.936 A:middle
+supports backward deployment out
+
+00:38:23.936 --> 00:38:24.586 A:middle
+of the box.
+
+00:38:26.336 --> 00:38:28.266 A:middle
+For custom colors, our modern
+
+00:38:28.266 --> 00:38:29.576 A:middle
+preferred solution for defining
+
+00:38:29.576 --> 00:38:32.146 A:middle
+them is asset catalogs and these
+
+00:38:32.146 --> 00:38:33.936 A:middle
+are available back to 10.13.
+
+00:38:35.326 --> 00:38:37.376 A:middle
+Now, when you do specify dark
+
+00:38:37.646 --> 00:38:39.276 A:middle
+variants for any of your assets,
+
+00:38:39.596 --> 00:38:41.246 A:middle
+when you back deploy them, those
+
+00:38:41.246 --> 00:38:42.776 A:middle
+dark variants are safely ignored
+
+00:38:42.776 --> 00:38:43.816 A:middle
+on previous versions of the
+
+00:38:43.816 --> 00:38:45.786 A:middle
+operating system, so that's a--
+
+00:38:45.786 --> 00:38:46.996 A:middle
+that's a solution that has
+
+00:38:47.036 --> 00:38:48.156 A:middle
+backward deployment built right
+
+00:38:48.156 --> 00:38:48.336 A:middle
+in.
+
+00:38:49.116 --> 00:38:50.126 A:middle
+But if you want to deploy back
+
+00:38:50.126 --> 00:38:52.556 A:middle
+further than 10.13, you can use
+
+00:38:52.556 --> 00:38:55.256 A:middle
+a technique like this where you
+
+00:38:55.396 --> 00:38:56.776 A:middle
+write a custom color property.
+
+00:38:57.826 --> 00:38:59.386 A:middle
+And here we just encapsulate the
+
+00:38:59.386 --> 00:39:01.116 A:middle
+availability check to use our
+

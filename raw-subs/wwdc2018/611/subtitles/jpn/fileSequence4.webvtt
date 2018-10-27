@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.305 --> 00:04:01.208 align:start position:30% line:-1
+対処法はないでしょうか
+
+00:04:02.676 --> 00:04:07.047 align:start position:27% line:-2
+アプリケーションに
+MSAAを使用したい場合―
+
+00:04:07.147 --> 00:04:10.784 align:start position:29% line:-2
+両眼にそれぞれ
+専用テクスチャが必要です
+
+00:04:11.084 --> 00:04:13.520 align:start position:30% line:-1
+１つを両眼で共有すると
+
+00:04:13.620 --> 00:04:16.255 align:start position:29% line:-1
+どちらも不完全になります
+
+00:04:16.490 --> 00:04:22.029 align:start position:29% line:-2
+専用テクスチャは 別々に
+ドローコールが必要です
+
+00:04:23.063 --> 00:04:26.333 align:start position:30% line:-2
+一方
+共有テクスチャの場合は
+
+00:04:26.433 --> 00:04:29.436 align:start position:23% line:-1
+レンダリングが１回で済みますが
+
+00:04:30.204 --> 00:04:33.774 align:start position:27% line:-1
+後処理効果で問題が生じます
+
+00:04:34.975 --> 00:04:40.681 align:start position:27% line:-2
+レイヤードテクスチャは
+両方の利点を兼ね備えますが
+
+00:04:41.148 --> 00:04:44.384 align:start position:30% line:-1
+MSAAでは使えません
+
+00:04:45.786 --> 00:04:50.057 align:start position:30% line:-2
+このため MSAAを
+用いるかどうかによって
+
+00:04:50.157 --> 00:04:54.728 align:start position:34% line:-2
+異なるレイアウトを
+使わざるを得ません
+
+00:04:54.862 --> 00:04:57.664 align:start position:36% line:-2
+または周辺作業で
+どうにかします
+
+00:04:57.764 --> 00:05:00.467 align:start position:30% line:-1
+これを最適化するには？
+

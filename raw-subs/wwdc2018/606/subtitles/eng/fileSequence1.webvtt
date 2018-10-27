@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:00.996 --> 00:01:02.536 A:middle
+MPS includes support for image
+
+00:01:02.536 --> 00:01:04.855 A:middle
+processing, linear algebra, and
+
+00:01:04.855 --> 00:01:05.586 A:middle
+machine learning.
+
+00:01:06.796 --> 00:01:08.036 A:middle
+We've talk extensively about
+
+00:01:08.036 --> 00:01:09.676 A:middle
+these topics in previous
+
+00:01:09.676 --> 00:01:10.156 A:middle
+sessions.
+
+00:01:11.316 --> 00:01:12.666 A:middle
+This year, we've also added
+
+00:01:12.666 --> 00:01:14.136 A:middle
+support for training.
+
+00:01:14.626 --> 00:01:16.066 A:middle
+And there's an entire session
+
+00:01:16.066 --> 00:01:17.306 A:middle
+about this topic tomorrow.
+
+00:01:17.796 --> 00:01:19.966 A:middle
+For today, I'll talk about the
+
+00:01:19.966 --> 00:01:21.576 A:middle
+new support we've added this
+
+00:01:21.576 --> 00:01:22.786 A:middle
+year for Ray Tracing.
+
+00:01:23.796 --> 00:01:25.856 A:middle
+So first, what is Ray Tracing?
+
+00:01:27.856 --> 00:01:29.286 A:middle
+Ray Tracing applications are
+
+00:01:29.286 --> 00:01:30.966 A:middle
+based on following the paths
+
+00:01:30.966 --> 00:01:32.846 A:middle
+that Rays take as they interact
+
+00:01:32.846 --> 00:01:33.456 A:middle
+with the scene.
+
+00:01:34.596 --> 00:01:36.776 A:middle
+Rays can model light, sound, or
+
+00:01:36.776 --> 00:01:37.746 A:middle
+other forms of energy.
+
+00:01:38.576 --> 00:01:40.166 A:middle
+So, Ray Tracing has applications
+
+00:01:40.546 --> 00:01:43.036 A:middle
+in rendering, audio, and physics
+
+00:01:43.036 --> 00:01:43.546 A:middle
+simulation.
+
+00:01:44.586 --> 00:01:46.196 A:middle
+But rays can, also, represent
+
+00:01:46.196 --> 00:01:48.136 A:middle
+more abstract concepts, like
+
+00:01:48.136 --> 00:01:49.356 A:middle
+whether or not one point is
+
+00:01:49.356 --> 00:01:50.266 A:middle
+visible from another.
+
+00:01:51.326 --> 00:01:52.366 A:middle
+So, Ray Tracing also has
+
+00:01:52.366 --> 00:01:53.506 A:middle
+applications in collision
+
+00:01:53.506 --> 00:01:54.786 A:middle
+detection, artificial
+
+00:01:54.786 --> 00:01:56.696 A:middle
+intelligence, and pathfinding.
+
+00:01:57.606 --> 00:01:59.396 A:middle
+For today, though, I'll focus on
+
+00:01:59.396 --> 00:02:01.006 A:middle
+rendering as an example of how
+

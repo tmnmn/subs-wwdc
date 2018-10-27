@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:01.076 --> 00:52:03.046 A:middle
+If your application is CPU bound
+
+00:52:03.046 --> 00:52:05.436 A:middle
+then multithreading your CPU
+
+00:52:05.436 --> 00:52:07.006 A:middle
+encoding work can help.
+
+00:52:07.746 --> 00:52:09.636 A:middle
+You can encode multiple command
+
+00:52:09.636 --> 00:52:11.316 A:middle
+buffers simultaneously on
+
+00:52:11.316 --> 00:52:12.346 A:middle
+separate threads.
+
+00:52:12.926 --> 00:52:14.776 A:middle
+You can even split single
+
+00:52:14.776 --> 00:52:16.556 A:middle
+command buffer encoding across
+
+00:52:16.556 --> 00:52:18.346 A:middle
+multiple threads using parallel
+
+00:52:18.346 --> 00:52:18.976 A:middle
+render command encoder.
+
+00:52:25.046 --> 00:52:26.926 A:middle
+Also, GPUs compute by planned
+
+00:52:26.926 --> 00:52:29.236 A:middle
+processing APIs is built right
+
+00:52:29.236 --> 00:52:30.186 A:middle
+into Metal.
+
+00:52:30.776 --> 00:52:32.946 A:middle
+You can use GPU in whole new
+
+00:52:32.946 --> 00:52:33.536 A:middle
+ways.
+
+00:52:34.046 --> 00:52:36.666 A:middle
+To start with instead of CPU you
+
+00:52:36.666 --> 00:52:38.976 A:middle
+can leverage compute pipeline to
+
+00:52:38.976 --> 00:52:40.746 A:middle
+generate graphics GPU data.
+
+00:52:41.336 --> 00:52:43.616 A:middle
+By letting GPU to generate its
+
+00:52:43.616 --> 00:52:45.346 A:middle
+own data you're not only
+
+00:52:45.346 --> 00:52:47.846 A:middle
+reducing the CPU utilization and
+
+00:52:47.846 --> 00:52:49.776 A:middle
+synchronization points now you
+
+00:52:49.776 --> 00:52:50.796 A:middle
+are freeing up the data
+
+00:52:50.796 --> 00:52:52.106 A:middle
+bandwidth to GPU.
+
+00:52:53.176 --> 00:52:54.946 A:middle
+Now with this high bandwidth
+
+00:52:55.246 --> 00:52:56.846 A:middle
+compute processor you can
+
+00:52:56.846 --> 00:52:58.456 A:middle
+implement many more complex
+
+00:52:58.456 --> 00:52:58.966 A:middle
+algorithms like these.
+

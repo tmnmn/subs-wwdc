@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.216 --> 00:18:03.636 A:middle
+An ARCamera object, again,
+
+00:18:03.636 --> 00:18:05.626 A:middle
+contains the transform, which in
+
+00:18:05.626 --> 00:18:06.946 A:middle
+this case of World Tracking
+
+00:18:07.496 --> 00:18:08.806 A:middle
+contains, additionally, to the
+
+00:18:08.806 --> 00:18:11.016 A:middle
+rotation, also, the translation
+
+00:18:11.016 --> 00:18:12.116 A:middle
+of the track camera.
+
+00:18:13.286 --> 00:18:15.106 A:middle
+Additionally, the ARCamera also
+
+00:18:15.106 --> 00:18:16.886 A:middle
+contains information about the
+
+00:18:16.886 --> 00:18:18.556 A:middle
+tracking state and
+
+00:18:18.556 --> 00:18:19.746 A:middle
+trackingStateReason.
+
+00:18:20.166 --> 00:18:22.366 A:middle
+This will provide some
+
+00:18:22.366 --> 00:18:24.206 A:middle
+information about the current
+
+00:18:24.306 --> 00:18:25.216 A:middle
+tracking quality.
+
+00:18:26.736 --> 00:18:27.976 A:middle
+So, tracking quality.
+
+00:18:28.516 --> 00:18:29.906 A:middle
+Have you ever experienced
+
+00:18:30.016 --> 00:18:32.376 A:middle
+opening an AR app and the
+
+00:18:32.376 --> 00:18:34.476 A:middle
+tracking worked very poorly or
+
+00:18:34.476 --> 00:18:35.646 A:middle
+maybe it didn't work at all?
+
+00:18:36.276 --> 00:18:37.346 A:middle
+How did that feel?
+
+00:18:38.446 --> 00:18:39.846 A:middle
+Maybe frustrating?
+
+00:18:39.846 --> 00:18:40.796 A:middle
+You might not open the app,
+
+00:18:40.796 --> 00:18:41.166 A:middle
+again.
+
+00:18:42.026 --> 00:18:43.566 A:middle
+So, how can you get a higher
+
+00:18:43.566 --> 00:18:45.326 A:middle
+tracking quality for your app?
+
+00:18:46.726 --> 00:18:48.626 A:middle
+For this, we need to understand
+
+00:18:48.626 --> 00:18:49.846 A:middle
+the main factors that are
+
+00:18:49.846 --> 00:18:51.016 A:middle
+influencing the tracking
+
+00:18:51.016 --> 00:18:51.646 A:middle
+quality.
+
+00:18:52.156 --> 00:18:53.436 A:middle
+And I want to highlight three of
+
+00:18:53.476 --> 00:18:53.856 A:middle
+them here.
+
+00:18:55.056 --> 00:18:56.756 A:middle
+First of all, World Tracking
+
+00:18:56.756 --> 00:18:58.996 A:middle
+relies on a constant stream of
+
+00:18:59.056 --> 00:19:01.136 A:middle
+camera images and sensor data.
+

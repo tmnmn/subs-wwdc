@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.276 --> 00:15:00.316 A:middle
+Here we will look at a
+
+00:15:00.316 --> 00:15:02.066 A:middle
+conceptual timeline of commits.
+
+00:15:02.716 --> 00:15:04.376 A:middle
+If you've made local changes and
+
+00:15:04.376 --> 00:15:05.816 A:middle
+others have also made changes
+
+00:15:05.816 --> 00:15:07.346 A:middle
+while you were working, you will
+
+00:15:07.346 --> 00:15:09.536 A:middle
+have to pull before you push.
+
+00:15:10.466 --> 00:15:12.506 A:middle
+In this situation, your work,
+
+00:15:13.196 --> 00:15:14.696 A:middle
+shown in green, has diverged
+
+00:15:14.696 --> 00:15:16.406 A:middle
+from your coworker's work, shown
+
+00:15:16.406 --> 00:15:17.076 A:middle
+here in blue.
+
+00:15:19.876 --> 00:15:21.766 A:middle
+To rectify this, you'll have two
+
+00:15:21.766 --> 00:15:24.586 A:middle
+options in Git: merging and
+
+00:15:24.586 --> 00:15:25.146 A:middle
+rebasing.
+
+00:15:26.026 --> 00:15:26.956 A:middle
+Let's take a look at both.
+
+00:15:28.016 --> 00:15:29.086 A:middle
+So again, in this scenario you
+
+00:15:29.086 --> 00:15:31.056 A:middle
+have two changes to push and
+
+00:15:31.056 --> 00:15:31.676 A:middle
+three to pull.
+
+00:15:32.486 --> 00:15:34.016 A:middle
+When merging, this situation is
+
+00:15:34.016 --> 00:15:35.526 A:middle
+resolved by creating a new
+
+00:15:35.526 --> 00:15:37.756 A:middle
+commit, after both yours and
+
+00:15:37.756 --> 00:15:39.796 A:middle
+your coworker's, that indicates
+
+00:15:39.796 --> 00:15:40.936 A:middle
+how the divergence should be
+
+00:15:40.936 --> 00:15:41.506 A:middle
+handled.
+
+00:15:42.756 --> 00:15:44.036 A:middle
+With the commits now unified
+
+00:15:44.036 --> 00:15:46.356 A:middle
+back into a single branch, this
+
+00:15:46.356 --> 00:15:47.556 A:middle
+can be pushed up to the server
+
+00:15:47.556 --> 00:15:49.186 A:middle
+and synchronized across all your
+
+00:15:49.186 --> 00:15:49.686 A:middle
+machines.
+
+00:15:50.956 --> 00:15:52.496 A:middle
+A rebase pull works a little
+
+00:15:52.496 --> 00:15:53.046 A:middle
+differently.
+
+00:15:53.456 --> 00:15:54.776 A:middle
+Instead of creating a new merge
+
+00:15:54.776 --> 00:15:56.306 A:middle
+commit, your local changes are
+
+00:15:56.306 --> 00:15:58.266 A:middle
+set aside and then replayed
+
+00:15:58.566 --> 00:15:59.776 A:middle
+after the changes you just
+
+00:15:59.846 --> 00:16:00.266 A:middle
+pulled.
+

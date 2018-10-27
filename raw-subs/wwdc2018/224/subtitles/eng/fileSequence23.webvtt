@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.416 --> 00:23:00.926 A:middle
+across the entire platform and
+
+00:23:01.016 --> 00:23:03.146 A:middle
+the KeyedArchiver API has
+
+00:23:03.146 --> 00:23:04.596 A:middle
+changed significantly this year
+
+00:23:04.596 --> 00:23:05.436 A:middle
+in support of that.
+
+00:23:06.496 --> 00:23:07.786 A:middle
+For Core Data, this means that
+
+00:23:07.786 --> 00:23:09.586 A:middle
+value transformers are changing,
+
+00:23:09.586 --> 00:23:11.066 A:middle
+so if you have a transformable
+
+00:23:11.066 --> 00:23:13.086 A:middle
+property in your managed object
+
+00:23:13.086 --> 00:23:14.916 A:middle
+model and you're not sending a
+
+00:23:14.916 --> 00:23:16.876 A:middle
+value transformer today, you
+
+00:23:16.876 --> 00:23:17.836 A:middle
+used to be getting
+
+00:23:18.036 --> 00:23:18.946 A:middle
+NSKeyedUnarchive
+
+00:23:18.946 --> 00:23:20.696 A:middle
+FromDataTransformer as your
+
+00:23:20.936 --> 00:23:22.316 A:middle
+default value transformer.
+
+00:23:22.916 --> 00:23:24.446 A:middle
+In the future, you'll be getting
+
+00:23:24.676 --> 00:23:25.616 A:middle
+NSSecureUnarchive
+
+00:23:25.736 --> 00:23:28.196 A:middle
+FromDataTransformer and this
+
+00:23:28.196 --> 00:23:29.496 A:middle
+implements secure coding under
+
+00:23:29.496 --> 00:23:31.016 A:middle
+the covers and you should adopt
+
+00:23:31.016 --> 00:23:31.576 A:middle
+it today.
+
+00:23:32.176 --> 00:23:33.416 A:middle
+There was a great talk this
+
+00:23:33.416 --> 00:23:35.496 A:middle
+morning about exactly this topic
+
+00:23:36.976 --> 00:23:38.216 A:middle
+called the Data You Can Trust
+
+00:23:38.636 --> 00:23:40.006 A:middle
+and I highly recommend that you
+
+00:23:40.006 --> 00:23:41.666 A:middle
+view it to get more information
+
+00:23:41.666 --> 00:23:43.496 A:middle
+about secure coding and how to
+
+00:23:43.496 --> 00:23:44.706 A:middle
+make your applications more
+
+00:23:44.706 --> 00:23:45.146 A:middle
+resilient.
+
+00:23:48.246 --> 00:23:49.356 A:middle
+You can specify this in the
+
+00:23:49.356 --> 00:23:50.266 A:middle
+model editor with a
+
+00:23:50.266 --> 00:23:52.976 A:middle
+transformable property by the
+
+00:23:52.976 --> 00:23:54.766 A:middle
+value transformer name field.
+
+00:23:55.716 --> 00:23:57.486 A:middle
+And today, we want you to
+
+00:23:57.486 --> 00:23:59.676 A:middle
+implement this on your own.
+

@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.536 --> 00:12:01.186 A:middle
+Now the second thing I want to
+
+00:12:01.186 --> 00:12:02.576 A:middle
+do is I want to import all the
+
+00:12:02.576 --> 00:12:03.906 A:middle
+new quantization utilities that
+
+00:12:03.906 --> 00:12:04.966 A:middle
+we have in Core ML Tools.
+
+00:12:05.026 --> 00:12:06.976 A:middle
+And we do that by running this.
+
+00:12:16.206 --> 00:12:17.516 A:middle
+And now we need to load up the
+
+00:12:17.516 --> 00:12:18.866 A:middle
+model which we want to quantize.
+
+00:12:19.186 --> 00:12:20.376 A:middle
+And we just saw the SqueezeNet
+
+00:12:20.376 --> 00:12:21.126 A:middle
+model a minute okay.
+
+00:12:21.126 --> 00:12:22.106 A:middle
+We're going to go ahead and get
+
+00:12:22.106 --> 00:12:22.976 A:middle
+an instance of that model.
+
+00:12:32.056 --> 00:12:37.716 A:middle
+Send this to my desktop.
+
+00:12:38.086 --> 00:12:40.416 A:middle
+Great. Now to quantize this
+
+00:12:40.416 --> 00:12:41.996 A:middle
+model, we just need to make one
+
+00:12:41.996 --> 00:12:43.056 A:middle
+simple API call.
+
+00:12:43.516 --> 00:12:44.666 A:middle
+And let's try a linear,
+
+00:12:44.666 --> 00:12:46.166 A:middle
+quantizing this model using
+
+00:12:46.166 --> 00:12:47.256 A:middle
+linear quantization.
+
+00:12:51.176 --> 00:12:53.166 A:middle
+And its API is simply called
+
+00:12:53.456 --> 00:12:54.346 A:middle
+quantize weights.
+
+00:12:54.816 --> 00:12:56.216 A:middle
+And the first parameter we pass
+
+00:12:56.216 --> 00:12:58.236 A:middle
+in is the original model which
+
+00:12:58.236 --> 00:12:59.396 A:middle
+you just loaded up.
+
+00:12:59.576 --> 00:13:00.996 A:middle
+The number of bits we want to
+

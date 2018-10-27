@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.856 --> 00:34:00.236 A:middle
+it that's still drawing wrong.
+
+00:34:00.866 --> 00:34:03.476 A:middle
+And if you're stuck and can't
+
+00:34:03.476 --> 00:34:06.366 A:middle
+figure out what to do, I suggest
+
+00:34:06.366 --> 00:34:08.505 A:middle
+taking advantage of Xcode's View
+
+00:34:08.505 --> 00:34:09.005 A:middle
+Debugger.
+
+00:34:09.716 --> 00:34:10.806 A:middle
+I'm just going to cover this
+
+00:34:10.835 --> 00:34:13.025 A:middle
+briefly here, and the advanced
+
+00:34:13.025 --> 00:34:14.466 A:middle
+Dark Mode session will go into
+
+00:34:14.466 --> 00:34:16.565 A:middle
+more detail about debugging tips
+
+00:34:16.565 --> 00:34:17.116 A:middle
+and tricks.
+
+00:34:18.525 --> 00:34:22.196 A:middle
+So, I can see that light view is
+
+00:34:22.196 --> 00:34:24.315 A:middle
+actually my scroll view, and I
+
+00:34:24.315 --> 00:34:26.706 A:middle
+had set in the interface builder
+
+00:34:27.106 --> 00:34:28.446 A:middle
+to a custom gray color.
+
+00:34:28.926 --> 00:34:29.936 A:middle
+That's why I couldn't find it
+
+00:34:29.936 --> 00:34:30.946 A:middle
+searching through my code.
+
+00:34:31.996 --> 00:34:33.936 A:middle
+So, I switched it to the default
+
+00:34:33.936 --> 00:34:36.016 A:middle
+background color, and now
+
+00:34:36.146 --> 00:34:37.076 A:middle
+everything looks great.
+
+00:34:38.156 --> 00:34:39.246 A:middle
+And while we're here on this
+
+00:34:39.286 --> 00:34:40.485 A:middle
+text view, I'd like to go
+
+00:34:40.485 --> 00:34:41.626 A:middle
+through some of the colors in
+
+00:34:41.626 --> 00:34:43.505 A:middle
+play here that are dynamic
+
+00:34:43.686 --> 00:34:45.136 A:middle
+system colors that also may be
+
+00:34:45.136 --> 00:34:45.846 A:middle
+useful to you.
+
+00:34:46.396 --> 00:34:50.746 A:middle
+First, there's textColor, which
+
+00:34:50.746 --> 00:34:52.656 A:middle
+is switching between black and
+
+00:34:52.656 --> 00:34:55.676 A:middle
+white; textBackgroundColors
+
+00:34:55.676 --> 00:34:58.936 A:middle
+switches from white to black;
+
+00:34:58.936 --> 00:35:02.116 A:middle
+selectedTextColor goes from
+

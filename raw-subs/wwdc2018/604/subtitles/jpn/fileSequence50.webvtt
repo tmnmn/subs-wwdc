@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:54.962 --> 00:50:00.667 align:start position:23% line:-2
+ただ他のテクスチャと異なり
+ドローアブルはビューへ示せます
+
+00:50:01.101 --> 00:50:03.303 align:start position:36% line:-1
+コードの一例です
+
+00:50:04.738 --> 00:50:09.943 align:start position:23% line:-2
+ドローアブルは限定的な
+シェードシステムリソースなので
+
+00:50:10.043 --> 00:50:13.847 align:start position:30% line:-2
+その保持は極力
+短時間に留めるべきです
+
+00:50:14.181 --> 00:50:18.619 align:start position:27% line:-2
+そこでドローアブル取得前に
+オフスクリーンレンダパスを
+
+00:50:18.719 --> 00:50:20.954 align:start position:32% line:-1
+エンコードしましょう
+
+00:50:22.022 --> 00:50:26.260 align:start position:27% line:-2
+MTKViewを作成し
+このようにエンコーダ作成に
+
+00:50:26.360 --> 00:50:31.431 align:start position:23% line:-2
+直接使える完全実装のレンダパス
+ディスクリプタを設定したり
+
+00:50:31.531 --> 00:50:34.768 align:start position:7% line:-1
+view.currentDrawableを使って
+
+00:50:34.868 --> 00:50:40.174 align:start position:30% line:-2
+特定のテクスチャを
+要請することもできます
+
+00:50:40.708 --> 00:50:44.812 align:start position:27% line:-2
+レンダパスディスクリプタも
+この周囲に構築できます
+
+00:50:47.247 --> 00:50:49.516 align:start position:27% line:-1
+フレームのエンコード終了後
+
+00:50:49.616 --> 00:50:54.087 align:start position:16% line:-2
+コマンドバッファの
+drawableメソッドをコールすると
+
+00:50:54.188 --> 00:50:58.458 align:start position:23% line:-2
+GPUのコマンドバッファ処理後
+ドローアブルが表示されます
+
+00:50:58.826 --> 00:51:04.431 align:start position:23% line:-2
+GPUのフレーム処理が終わると
+フレームが表示されます
+

@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.286 --> 00:17:05.224 align:start position:27% line:-2
+点で示されたマップの中心と
+緯度と経度の幅で
+
+00:17:05.492 --> 00:17:07.728 align:start position:34% line:-1
+表示する地域を指定
+
+00:17:07.828 --> 00:17:12.232 align:start position:30% line:-2
+すると このように
+点線で四角く囲まれます
+
+00:17:12.833 --> 00:17:17.471 align:start position:25% line:-2
+しかしマップに示された地域は
+指定した範囲より
+
+00:17:17.570 --> 00:17:20.240 align:start position:34% line:-1
+広いかもしれません
+
+00:17:20.339 --> 00:17:22.709 align:start position:27% line:-1
+これは指定したエリア全体を
+
+00:17:22.809 --> 00:17:25.945 align:start position:25% line:-1
+設定した範囲に収めるためです
+
+00:17:26.046 --> 00:17:30.517 align:start position:32% line:-2
+この場合は
+北と南に余白を作って
+
+00:17:30.617 --> 00:17:34.588 align:start position:32% line:-2
+指定した地域すべてが
+収まるようにします
+
+00:17:34.688 --> 00:17:39.960 align:start position:18% line:-2
+MapKit JSのフレームワークを
+設定する場合
+
+00:17:40.060 --> 00:17:45.432 align:start position:12% line:-2
+中心はmapkit.Coordinateで
+緯度と経度
+
+00:17:45.732 --> 00:17:49.102 align:start position:21% line:-2
+CordinateRegionで
+地域を設定
+
+00:17:49.203 --> 00:17:51.939 align:start position:27% line:-1
+２つのメンバーが含まれます
+
+00:17:52.039 --> 00:17:54.141 align:start position:25% line:-1
+中心もCoordinateで
+
+00:17:54.241 --> 00:17:58.612 align:start position:23% line:-2
+CoordinateSpanは
+緯度と経度の差分です
+

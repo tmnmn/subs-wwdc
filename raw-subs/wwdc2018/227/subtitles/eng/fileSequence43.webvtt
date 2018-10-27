@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:58.856 --> 00:43:00.056 A:middle
+about how to use performance
+
+00:43:00.056 --> 00:43:00.566 A:middle
+classes.
+
+00:43:02.956 --> 00:43:04.086 A:middle
+Next, I'd like to talk about
+
+00:43:04.086 --> 00:43:05.276 A:middle
+Sprite atlases.
+
+00:43:06.126 --> 00:43:08.326 A:middle
+So Sprite atlases were
+
+00:43:08.356 --> 00:43:09.906 A:middle
+introduced a few years ago in
+
+00:43:09.906 --> 00:43:11.476 A:middle
+support of SpriteKit
+
+00:43:11.616 --> 00:43:13.956 A:middle
+applications in SpriteKit games.
+
+00:43:15.336 --> 00:43:17.406 A:middle
+Now, but I'm not going to talk
+
+00:43:17.406 --> 00:43:18.466 A:middle
+about them in the context of
+
+00:43:18.466 --> 00:43:20.996 A:middle
+SpriteKit based games, I'm going
+
+00:43:20.996 --> 00:43:22.186 A:middle
+to talk about them in the
+
+00:43:22.186 --> 00:43:23.586 A:middle
+context of regular applications.
+
+00:43:25.466 --> 00:43:27.456 A:middle
+Now they have some attributes
+
+00:43:27.456 --> 00:43:28.796 A:middle
+that are very similar to what
+
+00:43:28.796 --> 00:43:30.056 A:middle
+Will talked about with automatic
+
+00:43:30.056 --> 00:43:31.936 A:middle
+image packing, you're taking all
+
+00:43:31.936 --> 00:43:33.006 A:middle
+of the related images in that
+
+00:43:33.006 --> 00:43:34.276 A:middle
+Sprite atlas and packing them
+
+00:43:34.276 --> 00:43:35.486 A:middle
+into a single unit, they get
+
+00:43:35.486 --> 00:43:37.476 A:middle
+loaded at once, and then all the
+
+00:43:37.476 --> 00:43:38.716 A:middle
+images that you reference that
+
+00:43:38.716 --> 00:43:40.076 A:middle
+are contained within that atlas
+
+00:43:40.326 --> 00:43:41.886 A:middle
+are just lightweight references
+
+00:43:42.076 --> 00:43:44.096 A:middle
+to locations within that atlas.
+
+00:43:45.486 --> 00:43:46.186 A:middle
+So that's great.
+
+00:43:46.676 --> 00:43:49.716 A:middle
+But the key thing is that you
+
+00:43:49.716 --> 00:43:51.096 A:middle
+don't really need to use
+
+00:43:51.186 --> 00:43:52.616 A:middle
+SpriteKit to access these, you
+
+00:43:52.616 --> 00:43:53.826 A:middle
+can just use this as a grouping
+
+00:43:53.826 --> 00:43:54.946 A:middle
+mechanism because the one
+
+00:43:54.946 --> 00:43:56.146 A:middle
+difference that Sprite atlases
+
+00:43:56.146 --> 00:43:57.216 A:middle
+have over automatic image
+
+00:43:57.216 --> 00:43:58.586 A:middle
+packing is you get to control
+
+00:43:58.586 --> 00:44:00.486 A:middle
+the grouping and you to assign a
+

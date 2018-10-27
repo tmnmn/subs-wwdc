@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.486 --> 00:25:01.786 A:middle
+When it does that
+
+00:25:02.076 --> 00:25:03.536 A:middle
+NSKeyedUnarchiver uses that
+
+00:25:03.536 --> 00:25:05.146 A:middle
+class to build a new allowed
+
+00:25:05.146 --> 00:25:05.826 A:middle
+class list.
+
+00:25:06.236 --> 00:25:07.226 A:middle
+And everything is checked
+
+00:25:07.226 --> 00:25:08.286 A:middle
+against this new version of the
+
+00:25:08.286 --> 00:25:08.606 A:middle
+list.
+
+00:25:09.916 --> 00:25:10.946 A:middle
+We go ahead and decode an
+
+00:25:10.946 --> 00:25:12.316 A:middle
+object, the same checks are
+
+00:25:12.316 --> 00:25:13.476 A:middle
+performed and in this case a
+
+00:25:13.476 --> 00:25:14.876 A:middle
+listing is still valid to
+
+00:25:15.426 --> 00:25:15.586 A:middle
+decode.
+
+00:25:17.236 --> 00:25:19.816 A:middle
+But again, if we try to decode
+
+00:25:19.816 --> 00:25:21.506 A:middle
+an object of an unexpected class
+
+00:25:21.566 --> 00:25:22.656 A:middle
+that's not in the list, it will
+
+00:25:22.656 --> 00:25:23.226 A:middle
+be rejected.
+
+00:25:23.796 --> 00:25:27.186 A:middle
+Let's take a look at what that
+
+00:25:27.186 --> 00:25:28.286 A:middle
+rejection might look like.
+
+00:25:28.506 --> 00:25:30.256 A:middle
+And this is called decoding
+
+00:25:30.256 --> 00:25:31.046 A:middle
+failure and there are a few
+
+00:25:31.046 --> 00:25:32.356 A:middle
+other types of failures that we
+
+00:25:32.356 --> 00:25:33.576 A:middle
+might care to look at.
+
+00:25:33.746 --> 00:25:35.176 A:middle
+So, when secure coding is on, we
+
+00:25:35.176 --> 00:25:36.276 A:middle
+might be able to see secure
+
+00:25:36.276 --> 00:25:37.726 A:middle
+coding violations in cases like
+
+00:25:37.726 --> 00:25:37.986 A:middle
+this.
+
+00:25:37.986 --> 00:25:39.016 A:middle
+But there's other forms of
+
+00:25:39.016 --> 00:25:39.716 A:middle
+failure here, too.
+
+00:25:40.916 --> 00:25:42.956 A:middle
+For example, a type mismatch can
+
+00:25:42.956 --> 00:25:44.556 A:middle
+happen if you try to decode an
+
+00:25:44.556 --> 00:25:45.696 A:middle
+object and instead there's a
+
+00:25:45.696 --> 00:25:47.066 A:middle
+primitive value, like an integer
+
+00:25:47.066 --> 00:25:48.466 A:middle
+in the archive at that location.
+
+00:25:49.116 --> 00:25:50.356 A:middle
+Or, you try to decode a
+
+00:25:50.356 --> 00:25:52.396 A:middle
+primitive, like an integer, and
+
+00:25:52.396 --> 00:25:54.146 A:middle
+instead we find an object or a
+
+00:25:54.146 --> 00:25:55.376 A:middle
+primitive of an incompatible
+
+00:25:55.476 --> 00:25:56.126 A:middle
+type like double.
+
+00:25:57.026 --> 00:25:58.006 A:middle
+These can cause decoding
+
+00:25:58.006 --> 00:25:58.456 A:middle
+failures.
+
+00:25:59.996 --> 00:26:01.936 A:middle
+There's another form of failure
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:00.236 --> 00:34:01.806 A:middle
+So let's figure out why.
+
+00:34:02.326 --> 00:34:06.696 A:middle
+Just following the performance
+
+00:34:06.696 --> 00:34:08.456 A:middle
+numbers, we will arrive at this
+
+00:34:08.456 --> 00:34:11.196 A:middle
+line, where we spent over 50% of
+
+00:34:11.196 --> 00:34:13.235 A:middle
+our entire shader time.
+
+00:34:14.016 --> 00:34:15.176 A:middle
+Taking a look into the
+
+00:34:15.176 --> 00:34:17.275 A:middle
+instruction categories again, we
+
+00:34:17.275 --> 00:34:18.755 A:middle
+can see that we spend a
+
+00:34:18.755 --> 00:34:20.376 A:middle
+significant amount in
+
+00:34:20.376 --> 00:34:21.286 A:middle
+synchronization.
+
+00:34:21.866 --> 00:34:22.346 A:middle
+But why?
+
+00:34:26.176 --> 00:34:28.166 A:middle
+We are using a color value here
+
+00:34:28.936 --> 00:34:30.255 A:middle
+that we have read from a color
+
+00:34:30.255 --> 00:34:32.766 A:middle
+texture here using an offset.
+
+00:34:34.356 --> 00:34:36.045 A:middle
+This offset was read from a
+
+00:34:36.045 --> 00:34:37.085 A:middle
+noise texture here.
+
+00:34:37.406 --> 00:34:39.466 A:middle
+So we have a dependent texture
+
+00:34:39.466 --> 00:34:39.786 A:middle
+read.
+
+00:34:39.906 --> 00:34:42.545 A:middle
+The GPU could not process until
+
+00:34:42.545 --> 00:34:43.786 A:middle
+data from the texture read
+
+00:34:43.876 --> 00:34:44.706 A:middle
+became available.
+
+00:34:45.106 --> 00:34:47.396 A:middle
+So what can we do about this?
+
+00:34:47.846 --> 00:34:50.596 A:middle
+Well, instead of reading from a
+
+00:34:50.596 --> 00:34:52.536 A:middle
+noise texture, we could just
+
+00:34:52.536 --> 00:34:54.166 A:middle
+simply calculate a noise value
+
+00:34:54.166 --> 00:34:55.025 A:middle
+in our GPU.
+
+00:34:55.886 --> 00:34:59.136 A:middle
+Let me do that.
+
+00:34:59.266 --> 00:35:01.226 A:middle
+Now, let me update my Shader.
+

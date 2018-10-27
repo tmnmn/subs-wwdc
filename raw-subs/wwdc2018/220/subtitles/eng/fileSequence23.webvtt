@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.016 --> 00:23:00.266 A:middle
+very fast one step update of
+
+00:23:00.266 --> 00:23:02.426 A:middle
+just exactly what has to change
+
+00:23:02.696 --> 00:23:03.756 A:middle
+due to this one constraint
+
+00:23:03.756 --> 00:23:04.106 A:middle
+changing.
+
+00:23:04.916 --> 00:23:05.896 A:middle
+So that's a performance
+
+00:23:05.896 --> 00:23:06.606 A:middle
+optimization.
+
+00:23:06.606 --> 00:23:07.936 A:middle
+That's why we even have this
+
+00:23:07.936 --> 00:23:08.936 A:middle
+method set constant.
+
+00:23:09.476 --> 00:23:11.526 A:middle
+Last to talk about it priority.
+
+00:23:12.436 --> 00:23:14.536 A:middle
+So here you can say, you know,
+
+00:23:14.536 --> 00:23:16.266 A:middle
+you can say this view should
+
+00:23:16.266 --> 00:23:18.676 A:middle
+ideally be 100 points wide, but
+
+00:23:18.876 --> 00:23:20.046 A:middle
+if something else prevents that
+
+00:23:20.046 --> 00:23:21.766 A:middle
+just please be as close as
+
+00:23:21.766 --> 00:23:22.236 A:middle
+possible.
+
+00:23:22.956 --> 00:23:24.636 A:middle
+This does incur some more work,
+
+00:23:25.326 --> 00:23:26.196 A:middle
+some amount of work.
+
+00:23:26.196 --> 00:23:27.666 A:middle
+So let's talk about that a
+
+00:23:27.666 --> 00:23:28.306 A:middle
+little bit more.
+
+00:23:28.576 --> 00:23:29.866 A:middle
+Another way to think about that
+
+00:23:30.206 --> 00:23:31.626 A:middle
+is to say that the width of that
+
+00:23:31.626 --> 00:23:32.936 A:middle
+field is going to be equal to
+
+00:23:32.936 --> 00:23:35.666 A:middle
+100 plus some error and please
+
+00:23:35.666 --> 00:23:36.716 A:middle
+minimize the error.
+
+00:23:37.436 --> 00:23:38.496 A:middle
+That's what you're asking for.
+
+00:23:39.776 --> 00:23:41.266 A:middle
+So there is an error
+
+00:23:41.266 --> 00:23:42.536 A:middle
+minimization phase I didn't
+
+00:23:42.536 --> 00:23:43.156 A:middle
+discuss before.
+
+00:23:43.366 --> 00:23:46.816 A:middle
+So when the view asks the engine
+
+00:23:46.816 --> 00:23:48.086 A:middle
+as part of layout subviews and
+
+00:23:48.086 --> 00:23:49.896 A:middle
+says, hey what's the value for
+
+00:23:49.896 --> 00:23:50.446 A:middle
+these variables?
+
+00:23:50.686 --> 00:23:51.866 A:middle
+The engine needs to make sure
+
+00:23:51.866 --> 00:23:53.366 A:middle
+that all of those error terms
+
+00:23:53.366 --> 00:23:54.626 A:middle
+have been minimized first.
+
+00:23:55.386 --> 00:23:57.476 A:middle
+And this is actually, this is --
+
+00:23:57.476 --> 00:23:58.546 A:middle
+I'm not going to go into how
+
+00:23:58.546 --> 00:23:59.976 A:middle
+this works but I am going to
+
+00:23:59.976 --> 00:24:00.726 A:middle
+talk a little bit about
+

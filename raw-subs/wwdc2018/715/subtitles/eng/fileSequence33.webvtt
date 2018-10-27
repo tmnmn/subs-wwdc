@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.976 --> 00:33:00.126 A:middle
+sockets was able to do.
+
+00:33:00.676 --> 00:33:03.096 A:middle
+And I want to start with the way
+
+00:33:03.096 --> 00:33:04.886 A:middle
+that you in your application
+
+00:33:05.126 --> 00:33:06.496 A:middle
+interact with your networking
+
+00:33:06.496 --> 00:33:08.586 A:middle
+connections in the most basic
+
+00:33:08.586 --> 00:33:10.846 A:middle
+way, which is just sending and
+
+00:33:10.846 --> 00:33:11.506 A:middle
+receiving data.
+
+00:33:12.786 --> 00:33:14.686 A:middle
+And these calls are very simple,
+
+00:33:15.226 --> 00:33:17.146 A:middle
+but the nuances about how you
+
+00:33:17.146 --> 00:33:18.956 A:middle
+handle sending and receiving and
+
+00:33:18.956 --> 00:33:20.326 A:middle
+really make a huge difference
+
+00:33:20.796 --> 00:33:22.076 A:middle
+for the responsiveness of your
+
+00:33:22.076 --> 00:33:23.696 A:middle
+app and how much buffering there
+
+00:33:23.696 --> 00:33:25.816 A:middle
+is going on on the device and
+
+00:33:25.816 --> 00:33:26.266 A:middle
+the network.
+
+00:33:26.886 --> 00:33:29.016 A:middle
+So the first example I want to
+
+00:33:29.016 --> 00:33:30.516 A:middle
+walk through is when we're
+
+00:33:30.516 --> 00:33:32.786 A:middle
+sending data, in the application
+
+00:33:32.786 --> 00:33:34.236 A:middle
+very much like what Eric just
+
+00:33:34.236 --> 00:33:35.616 A:middle
+showed you, something that's
+
+00:33:35.616 --> 00:33:36.826 A:middle
+live streaming, something that
+
+00:33:36.826 --> 00:33:38.586 A:middle
+is generating data on the fly.
+
+00:33:39.166 --> 00:33:40.736 A:middle
+But in this case, let's talk
+
+00:33:40.736 --> 00:33:42.476 A:middle
+about when we're sending it over
+
+00:33:42.476 --> 00:33:44.776 A:middle
+a TCP stream, a TCP stream that
+
+00:33:44.776 --> 00:33:46.676 A:middle
+can back up on the network, that
+
+00:33:46.676 --> 00:33:47.926 A:middle
+has a certain window that it can
+
+00:33:47.976 --> 00:33:48.336 A:middle
+send.
+
+00:33:48.616 --> 00:33:50.486 A:middle
+So how do we handle this?
+
+00:33:51.356 --> 00:33:53.716 A:middle
+So here's a function to send a
+
+00:33:53.716 --> 00:33:54.446 A:middle
+single frame.
+
+00:33:54.446 --> 00:33:56.136 A:middle
+This is some frame of data that
+
+00:33:56.136 --> 00:33:57.796 A:middle
+your application has generated.
+
+00:33:58.376 --> 00:34:00.656 A:middle
+And the way that you send it on
+

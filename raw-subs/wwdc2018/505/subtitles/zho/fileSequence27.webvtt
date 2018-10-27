@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:01.121 --> 00:27:03.490 align:middle line:-1
+这就是接收文件承诺的内容
+
+00:27:03.557 --> 00:27:06.593 align:middle line:-1
+让我们看下要如何提供文件承诺
+
+00:27:07.094 --> 00:27:10.931 align:middle line:-1
+如果你想发送到拖拽的数据
+
+00:27:11.164 --> 00:27:12.599 align:middle line:-1
+在磁盘上还没有
+
+00:27:12.666 --> 00:27:15.602 align:middle line:-1
+那么你应该在app进行实现
+
+00:27:16.436 --> 00:27:21.775 align:middle line:-2
+让我们通过看这个API
+来看下应该如何实现
+
+00:27:25.646 --> 00:27:30.184 align:middle line:-2
+首先你需要创建一个
+NSFilePromiseProvider实例
+
+00:27:32.486 --> 00:27:35.189 align:middle line:-2
+你应该为每个承诺的文件
+创建一个实例
+
+00:27:35.422 --> 00:27:38.992 align:middle line:-1
+在将filePromiseProvider对象
+
+00:27:39.059 --> 00:27:42.262 align:middle line:-2
+写入到剪切板之前
+它必须包含一个类型
+
+00:27:42.596 --> 00:27:43.764 align:middle line:-1
+以及一个代理
+
+00:27:44.298 --> 00:27:47.701 align:middle line:-1
+这些代理会将文件写入磁盘中
+
+00:27:48.368 --> 00:27:52.840 align:middle line:-2
+在NSFilePromiseProvider
+代理中只有三个方法
+
+00:27:53.006 --> 00:27:56.043 align:middle line:-1
+第一个方法由拖拽的目的地所调用
+
+00:27:56.777 --> 00:27:59.613 align:middle line:-2
+并且返回的是文件名
+而不是整个路径
+
+00:27:59.980 --> 00:28:06.453 align:middle line:-2
+第二个方法会返回一个
+operationQueue
+

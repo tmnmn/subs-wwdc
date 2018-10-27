@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:55.509 --> 00:13:00.214 align:start position:27% line:-2
+アセンブリフレームで
+引数を調べるのに好都合です
+
+00:13:00.914 --> 00:13:05.152 align:start position:27% line:-2
+でも目的のものでないので
+continueを押すと―
+
+00:13:05.252 --> 00:13:07.754 align:start position:27% line:-1
+ブレークポイントに達します
+
+00:13:07.855 --> 00:13:10.824 align:start position:23% line:-1
+$arg1でレシーバを調べると
+
+00:13:10.924 --> 00:13:14.261 align:start position:27% line:-2
+高さラベルが
+“０フィート”になってます
+
+00:13:14.361 --> 00:13:16.430 align:start position:34% line:-1
+問題が分かりました
+
+00:13:17.097 --> 00:13:21.201 align:start position:32% line:-2
+ジャンプすると同時に
+高さラベルが更新され
+
+00:13:21.301 --> 00:13:26.373 align:start position:27% line:-2
+かなり頻繁に
+ブレークポイントに達します
+
+00:13:26.473 --> 00:13:32.246 align:start position:20% line:-2
+setTextのブレークポイントに
+達するのは非常に困難です
+
+00:13:32.346 --> 00:13:36.350 align:start position:34% line:-2
+そこでシンボリック
+ブレークポイントを
+
+00:13:36.450 --> 00:13:40.687 align:start position:32% line:-2
+ジャンプ終了後だけに
+設定してみましょう
+
+00:13:41.121 --> 00:13:46.059 align:start position:27% line:-2
+ナビゲータでインジケータを
+ダブルクリックすると
+
+00:13:46.159 --> 00:13:48.095 align:start position:34% line:-1
+エディタが開きます
+
+00:13:48.195 --> 00:13:52.733 align:start position:20% line:-2
+“Condition”に
+trueかfalseになる式を入れ
+
+00:13:52.833 --> 00:13:56.103 align:start position:25% line:-2
+trueの時だけ
+ブレークポイントを起動します
+
+00:13:56.203 --> 00:13:59.439 align:start position:36% line:-2
+もしプロパティが
+分かっていれば―
+
+00:13:59.540 --> 00:14:03.744 align:start position:29% line:-2
+式を編集して
+テストすることができます
+

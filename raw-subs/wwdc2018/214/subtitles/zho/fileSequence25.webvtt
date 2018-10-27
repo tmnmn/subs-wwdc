@@ -1,0 +1,85 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.931 --> 00:25:01.168 align:middle line:-2
+Soup Chef的app图标
+但修改一下会不会更好
+
+00:25:01.235 --> 00:25:03.470 align:middle line:-2
+在蛤蜊浓汤上
+显示蛤蜊浓汤图像
+
+00:25:03.537 --> 00:25:06.006 align:middle line:-2
+在番茄汤上
+显示番茄汤的图像
+
+00:25:06.440 --> 00:25:07.274 align:middle line:-1
+大概就像这样
+
+00:25:08.876 --> 00:25:10.878 align:middle line:-1
+为此 我们提供了两个API
+
+00:25:11.144 --> 00:25:13.313 align:middle line:-2
+一个用于NSUserActivity
+另一个用于Intents
+
+00:25:13.380 --> 00:25:14.348 align:middle line:-1
+好 我们来看看
+
+00:25:15.983 --> 00:25:19.152 align:middle line:-2
+好 来设置一些情景
+该用户刚刚浏览了
+
+00:25:19.219 --> 00:25:22.289 align:middle line:-2
+之前的一个汤订单
+我们要生成该订单
+
+00:25:22.356 --> 00:25:25.626 align:middle line:-1
+我们就可以把这绑定到快捷方式
+
+00:25:26.727 --> 00:25:27.961 align:middle line:-1
+那么 我们首先要做的
+
+00:25:28.028 --> 00:25:31.064 align:middle line:-2
+就是创建一个
+CSSearchableItemAttributeSet
+
+00:25:31.131 --> 00:25:33.000 align:middle line:-2
+顺便说一下
+如果你想要
+
+00:25:33.066 --> 00:25:36.336 align:middle line:-2
+把副标题赋给userActivity
+也是同样道理 但此时
+
+00:25:36.403 --> 00:25:40.307 align:middle line:-2
+我要设置图像 所以首先创建
+一个名称为Chowder的图像
+
+00:25:41.041 --> 00:25:44.745 align:middle line:-2
+获取它的PNG数据
+赋值给attributes的
+
+00:25:44.811 --> 00:25:45.779 align:middle line:-1
+thumbnailData属性
+
+00:25:46.280 --> 00:25:48.315 align:middle line:-2
+下一步我就获取到了
+这些attributes
+
+00:25:48.382 --> 00:25:51.018 align:middle line:-2
+把它赋给userActivity
+的contentAttributeSet属性
+
+00:25:51.084 --> 00:25:53.854 align:middle line:-2
+最后 我要传送userActivity
+就把它赋给
+
+00:25:53.921 --> 00:25:56.423 align:middle line:-2
+viewController的
+userActivity属性
+
+00:25:58.458 --> 00:26:00.727 align:middle line:-2
+好 我们来看它是
+怎么用在Intents的
+

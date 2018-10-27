@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.836 --> 00:16:01.336 A:middle
+Let's look at this vertex output
+
+00:16:01.336 --> 00:16:02.946 A:middle
+type returned by our vertex
+
+00:16:02.946 --> 00:16:03.186 A:middle
+shader.
+
+00:16:03.776 --> 00:16:06.506 A:middle
+Its definition here specifies
+
+00:16:06.506 --> 00:16:07.736 A:middle
+what's passed down for the
+
+00:16:07.736 --> 00:16:09.186 A:middle
+rasterization stage and
+
+00:16:09.186 --> 00:16:10.466 A:middle
+eventually to the fragment
+
+00:16:10.466 --> 00:16:10.806 A:middle
+program.
+
+00:16:11.336 --> 00:16:13.756 A:middle
+The four-component
+
+00:16:13.756 --> 00:16:15.146 A:middle
+floating-point member named
+
+00:16:15.186 --> 00:16:17.396 A:middle
+clipPos has this position
+
+00:16:17.396 --> 00:16:18.766 A:middle
+attribute specifier next to it.
+
+00:16:19.336 --> 00:16:20.756 A:middle
+This indicates that this member
+
+00:16:20.756 --> 00:16:22.096 A:middle
+will serve as the output
+
+00:16:22.136 --> 00:16:23.746 A:middle
+position of our vertex shader.
+
+00:16:25.116 --> 00:16:26.376 A:middle
+This texCoord member which
+
+00:16:26.376 --> 00:16:27.326 A:middle
+doesn't have an attribute
+
+00:16:27.326 --> 00:16:30.096 A:middle
+specifier defaults to a variable
+
+00:16:30.306 --> 00:16:31.656 A:middle
+that will be interpolated with
+
+00:16:31.656 --> 00:16:34.986 A:middle
+the texture coordinate values of
+
+00:16:34.986 --> 00:16:36.726 A:middle
+other vertices defining the
+
+00:16:36.726 --> 00:16:38.616 A:middle
+rasterized triangle much like a
+
+00:16:38.616 --> 00:16:39.986 A:middle
+varying in GLSL.
+
+00:16:41.616 --> 00:16:42.616 A:middle
+Let's take a look at some of the
+
+00:16:42.616 --> 00:16:43.786 A:middle
+parameters of our fragment
+
+00:16:43.786 --> 00:16:44.046 A:middle
+shader.
+
+00:16:45.146 --> 00:16:46.796 A:middle
+So we're using this vertexOutput
+
+00:16:46.796 --> 00:16:48.966 A:middle
+struct that we just looked at
+
+00:16:49.406 --> 00:16:50.846 A:middle
+down here as an input to our
+
+00:16:51.076 --> 00:16:51.716 A:middle
+fragment shader.
+
+00:16:52.336 --> 00:16:53.966 A:middle
+And it gives us the interpolated
+
+00:16:54.006 --> 00:16:55.446 A:middle
+texture coordinate that we
+
+00:16:55.716 --> 00:16:57.346 A:middle
+constructed in the vertex shader
+
+00:16:58.486 --> 00:17:00.206 A:middle
+and we use it here to sample
+

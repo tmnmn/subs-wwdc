@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.546 --> 00:08:00.056 A:middle
+The response that we've seen
+
+00:08:00.056 --> 00:08:01.136 A:middle
+from people here at the show to
+
+00:08:01.136 --> 00:08:02.596 A:middle
+SwiftShot has been really
+
+00:08:02.596 --> 00:08:04.196 A:middle
+amazing and it's been gratifying
+
+00:08:04.196 --> 00:08:05.496 A:middle
+to see some people already
+
+00:08:05.846 --> 00:08:07.106 A:middle
+downloading it, building it and
+
+00:08:07.106 --> 00:08:08.266 A:middle
+altering it from the sample
+
+00:08:08.266 --> 00:08:08.606 A:middle
+code.
+
+00:08:08.606 --> 00:08:09.746 A:middle
+So, I thank you for that.
+
+00:08:09.746 --> 00:08:10.966 A:middle
+We're really excited about that.
+
+00:08:10.966 --> 00:08:13.476 A:middle
+I want to talk by talking first
+
+00:08:13.476 --> 00:08:15.246 A:middle
+about the technologies we used
+
+00:08:15.246 --> 00:08:16.126 A:middle
+in building SwiftShot.
+
+00:08:16.516 --> 00:08:18.736 A:middle
+The first and foremost is ARKit,
+
+00:08:19.166 --> 00:08:20.766 A:middle
+which lets us render the content
+
+00:08:20.916 --> 00:08:22.416 A:middle
+into the physical world around
+
+00:08:22.416 --> 00:08:23.656 A:middle
+the players, immersing them in
+
+00:08:23.656 --> 00:08:24.396 A:middle
+the experience.
+
+00:08:26.336 --> 00:08:28.636 A:middle
+We use SceneKit to manage and
+
+00:08:28.636 --> 00:08:30.096 A:middle
+draw that content, using
+
+00:08:30.096 --> 00:08:31.896 A:middle
+advanced 3D rendering and
+
+00:08:31.896 --> 00:08:33.106 A:middle
+realistic physics for fun
+
+00:08:33.106 --> 00:08:33.466 A:middle
+gameplay.
+
+00:08:35.186 --> 00:08:36.686 A:middle
+Metal lets us harness the power
+
+00:08:36.686 --> 00:08:39.686 A:middle
+of the GPU devices.
+
+00:08:39.686 --> 00:08:41.655 A:middle
+It came into play both within
+
+00:08:41.655 --> 00:08:43.256 A:middle
+SceneKit for the shading and
+
+00:08:43.256 --> 00:08:45.346 A:middle
+rendering and also for the flag
+
+00:08:45.346 --> 00:08:46.346 A:middle
+simulation, which I'll talk
+
+00:08:46.346 --> 00:08:48.166 A:middle
+about a little later on.
+
+00:08:48.856 --> 00:08:50.406 A:middle
+GameplayKit provides an entity
+
+00:08:50.406 --> 00:08:52.046 A:middle
+component architecture for our
+
+00:08:52.046 --> 00:08:52.666 A:middle
+game object.
+
+00:08:52.786 --> 00:08:54.526 A:middle
+It let us easily share behaviors
+
+00:08:54.526 --> 00:08:57.506 A:middle
+between objects in the game.
+
+00:08:57.716 --> 00:08:59.566 A:middle
+Multi-peer connectivity provides
+
+00:08:59.566 --> 00:09:01.676 A:middle
+the networking layer, including
+

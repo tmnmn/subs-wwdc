@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.827 --> 00:21:02.095 align:start position:27% line:-1
+コンテンツ領域に入りました
+
+00:21:02.196 --> 00:21:07.100 align:start position:14% line:-2
+スクロールビューのSafe Area内に
+完全に収まっています
+
+00:21:08.035 --> 00:21:12.473 align:start position:27% line:-2
+ですが スクロールビューを
+下にスクロールすると
+
+00:21:12.639 --> 00:21:18.912 align:start position:16% line:-2
+サブビューがスクロールビューの
+Safe Area外に出てしまいました
+
+00:21:19.546 --> 00:21:23.684 align:start position:14% line:-2
+safeAreaInsetsの伝播の話に
+基づけば サブビューは
+
+00:21:23.784 --> 00:21:29.690 align:start position:12% line:-2
+自身の上辺のsafeAreaInsetsを
+見るのだと思うかもしれませんね
+
+00:21:30.390 --> 00:21:32.159 align:start position:39% line:-1
+実は違います
+
+00:21:32.593 --> 00:21:35.062 align:start position:27% line:-1
+スクロールビューは自動で―
+
+00:21:35.162 --> 00:21:39.833 align:start position:12% line:-2
+adjustedContentInsetに
+safeAreaInsetsを取り込みます
+
+00:21:39.933 --> 00:21:45.205 align:start position:23% line:-2
+そうすると これらの辺の余白は
+サブビューに伝播されないのです
+
+00:21:46.240 --> 00:21:47.674 align:start position:39% line:-1
+重要な点です
+
+00:21:48.141 --> 00:21:53.881 align:start position:14% line:-2
+スクロールビューはSafe Area内で
+コンテンツをスクロールさせます
+
+00:21:54.448 --> 00:22:01.488 align:start position:12% line:-2
+もしスクロール領域を広げるための
+safeAreaInsetsまで伝播したら
+

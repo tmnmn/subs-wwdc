@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.436 --> 00:21:00.886 A:middle
+multi-peer connectivity lets you
+
+00:21:00.886 --> 00:21:02.786 A:middle
+make that decision and specify
+
+00:21:02.786 --> 00:21:04.206 A:middle
+whether a particular data packet
+
+00:21:04.206 --> 00:21:06.016 A:middle
+is to be sent reliably or
+
+00:21:06.016 --> 00:21:06.626 A:middle
+unreliably.
+
+00:21:07.556 --> 00:21:08.716 A:middle
+If you choose reliably,
+
+00:21:09.246 --> 00:21:10.606 A:middle
+multi-peer connectivity takes
+
+00:21:10.606 --> 00:21:12.046 A:middle
+care of the retries for you, so
+
+00:21:12.176 --> 00:21:13.316 A:middle
+you don't have to worry about
+
+00:21:13.346 --> 00:21:15.876 A:middle
+that in your code.
+
+00:21:15.876 --> 00:21:17.426 A:middle
+Even when you're broadcasting to
+
+00:21:17.426 --> 00:21:18.676 A:middle
+all members of the session.
+
+00:21:18.676 --> 00:21:22.686 A:middle
+Now that we have a networking
+
+00:21:22.686 --> 00:21:24.106 A:middle
+layer, we need to build our
+
+00:21:24.106 --> 00:21:25.446 A:middle
+application protocol on top of
+
+00:21:26.166 --> 00:21:26.236 A:middle
+it.
+
+00:21:26.456 --> 00:21:28.456 A:middle
+SwiftEnums with associated types
+
+00:21:28.736 --> 00:21:29.756 A:middle
+make this very easy.
+
+00:21:30.736 --> 00:21:32.416 A:middle
+Each case has a data structure
+
+00:21:32.416 --> 00:21:34.356 A:middle
+around it, ensuring type safety
+
+00:21:34.606 --> 00:21:35.896 A:middle
+as information moves around the
+
+00:21:35.896 --> 00:21:36.266 A:middle
+system.
+
+00:21:37.496 --> 00:21:39.056 A:middle
+Some of those can be further
+
+00:21:39.056 --> 00:21:39.496 A:middle
+enums.
+
+00:21:39.866 --> 00:21:40.766 A:middle
+So, for instance, in this
+
+00:21:40.766 --> 00:21:42.446 A:middle
+example, gameAction includes
+
+00:21:42.446 --> 00:21:43.806 A:middle
+things like a player grabbed a
+
+00:21:43.806 --> 00:21:44.386 A:middle
+catapult.
+
+00:21:44.386 --> 00:21:46.076 A:middle
+A projectile launched, and so
+
+00:21:46.076 --> 00:21:46.386 A:middle
+forth.
+
+00:21:47.166 --> 00:21:48.966 A:middle
+The PhysicsSyncData is a strut
+
+00:21:49.096 --> 00:21:50.476 A:middle
+and we'll talk more about how we
+
+00:21:50.476 --> 00:21:52.336 A:middle
+encoded that later on.
+
+00:21:53.316 --> 00:21:55.046 A:middle
+Again, Swift makes this very
+
+00:21:55.046 --> 00:21:55.276 A:middle
+easy.
+
+00:21:55.576 --> 00:21:57.206 A:middle
+For struts, if all the members
+
+00:21:57.206 --> 00:21:59.136 A:middle
+of the struct are codable, then
+
+00:21:59.136 --> 00:22:00.756 A:middle
+all you need to do is mark that
+

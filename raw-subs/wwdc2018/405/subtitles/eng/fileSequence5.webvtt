@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.506 --> 00:05:02.496 A:middle
+And then because signposts are
+
+00:05:02.496 --> 00:05:04.146 A:middle
+part of the OSLog functionality,
+
+00:05:04.586 --> 00:05:05.946 A:middle
+we're going to create a log
+
+00:05:05.946 --> 00:05:06.276 A:middle
+handle.
+
+00:05:06.796 --> 00:05:08.406 A:middle
+Here, this log handle takes two
+
+00:05:08.406 --> 00:05:09.746 A:middle
+arguments, a subsystem and a
+
+00:05:09.746 --> 00:05:10.296 A:middle
+category.
+
+00:05:11.216 --> 00:05:13.896 A:middle
+The subsystem is just probably
+
+00:05:13.896 --> 00:05:14.566 A:middle
+the same throughout your
+
+00:05:14.566 --> 00:05:15.096 A:middle
+project.
+
+00:05:15.516 --> 00:05:16.596 A:middle
+It looks a lot like your bundle
+
+00:05:16.596 --> 00:05:16.676 A:middle
+ID.
+
+00:05:16.676 --> 00:05:18.666 A:middle
+And it represents the component
+
+00:05:18.666 --> 00:05:19.996 A:middle
+or the piece of software, maybe
+
+00:05:19.996 --> 00:05:20.776 A:middle
+the framework that you're
+
+00:05:20.776 --> 00:05:21.246 A:middle
+working on.
+
+00:05:22.816 --> 00:05:24.726 A:middle
+The category is used to relate
+
+00:05:25.346 --> 00:05:27.266 A:middle
+-- to group related operations
+
+00:05:27.266 --> 00:05:28.586 A:middle
+together or related signposts.
+
+00:05:29.136 --> 00:05:30.236 A:middle
+And you'll see why that could be
+
+00:05:30.236 --> 00:05:33.096 A:middle
+useful later in the session.
+
+00:05:33.256 --> 00:05:34.596 A:middle
+Once we have that log handle,
+
+00:05:35.416 --> 00:05:36.316 A:middle
+we're just going to make two
+
+00:05:36.316 --> 00:05:37.516 A:middle
+calls to os signpost.
+
+00:05:37.826 --> 00:05:38.536 A:middle
+One with .begin.
+
+00:05:38.536 --> 00:05:39.036 A:middle
+One with .end.
+
+00:05:39.036 --> 00:05:41.486 A:middle
+We're going to pass that log
+
+00:05:41.486 --> 00:05:42.876 A:middle
+handle into those calls.
+
+00:05:42.876 --> 00:05:44.566 A:middle
+And then for the third argument,
+
+00:05:44.956 --> 00:05:46.686 A:middle
+we have a signpost name.
+
+00:05:47.826 --> 00:05:49.396 A:middle
+The signpost name is a string
+
+00:05:49.396 --> 00:05:51.156 A:middle
+literal that identifies the
+
+00:05:51.186 --> 00:05:52.996 A:middle
+interval that identifies the
+
+00:05:53.056 --> 00:05:54.246 A:middle
+operation that we're interested
+
+00:05:54.246 --> 00:05:54.676 A:middle
+in measuring.
+
+00:05:55.696 --> 00:05:57.326 A:middle
+That string literal is used to
+
+00:05:57.326 --> 00:05:59.346 A:middle
+match up the begin point that
+
+00:05:59.346 --> 00:06:00.806 A:middle
+we've annotated or that gets
+

@@ -1,0 +1,138 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.806 --> 00:25:00.076 A:middle
+separate, and we can categorize
+
+00:25:00.076 --> 00:25:01.546 A:middle
+them in separate protocols.
+
+00:25:02.056 --> 00:25:02.946 A:middle
+So, for example, the
+
+00:25:02.946 --> 00:25:04.576 A:middle
+randomAccessCollection protocol
+
+00:25:04.976 --> 00:25:06.686 A:middle
+is something where it allows us
+
+00:25:06.686 --> 00:25:08.516 A:middle
+to jump around the collection,
+
+00:25:08.596 --> 00:25:09.756 A:middle
+moving indices quickly.
+
+00:25:10.466 --> 00:25:11.476 A:middle
+And there are types like
+
+00:25:11.476 --> 00:25:12.886 A:middle
+unsafeBufferPointer that can
+
+00:25:12.886 --> 00:25:13.986 A:middle
+give you random access.
+
+00:25:14.326 --> 00:25:16.616 A:middle
+But, do not allow any mutation.
+
+00:25:16.736 --> 00:25:18.096 A:middle
+That's a separate capability.
+
+00:25:19.036 --> 00:25:19.826 A:middle
+So, we also have the
+
+00:25:19.826 --> 00:25:21.436 A:middle
+mutableCollection protocol here.
+
+00:25:22.366 --> 00:25:23.536 A:middle
+And, we can think of types here
+
+00:25:23.536 --> 00:25:24.976 A:middle
+that allow mutation, but not
+
+00:25:24.976 --> 00:25:25.896 A:middle
+random access, like the
+
+00:25:25.896 --> 00:25:27.186 A:middle
+singlyLinkedList that we talked
+
+00:25:27.186 --> 00:25:27.826 A:middle
+about earlier.
+
+00:25:28.556 --> 00:25:29.446 A:middle
+Now, you notice that we've
+
+00:25:29.446 --> 00:25:30.686 A:middle
+essentially split the
+
+00:25:30.686 --> 00:25:31.946 A:middle
+inheritance hierarchy here.
+
+00:25:33.246 --> 00:25:34.616 A:middle
+We've got the access side for
+
+00:25:34.616 --> 00:25:35.846 A:middle
+random access, bidirectional,
+
+00:25:35.846 --> 00:25:36.356 A:middle
+and so on.
+
+00:25:36.616 --> 00:25:37.446 A:middle
+And then, we've got this
+
+00:25:37.446 --> 00:25:38.266 A:middle
+mutation side.
+
+00:25:38.746 --> 00:25:39.816 A:middle
+That's perfectly fine, because
+
+00:25:39.816 --> 00:25:41.396 A:middle
+clients themselves can compose
+
+00:25:41.396 --> 00:25:43.736 A:middle
+multiple protocols to implement
+
+00:25:43.736 --> 00:25:44.776 A:middle
+whatever generic algorithm
+
+00:25:44.776 --> 00:25:45.246 A:middle
+they're doing.
+
+00:25:45.666 --> 00:25:46.876 A:middle
+So, we go back to our shuffle
+
+00:25:46.876 --> 00:25:47.406 A:middle
+algorithm.
+
+00:25:47.466 --> 00:25:49.466 A:middle
+And it can be written as an
+
+00:25:49.466 --> 00:25:50.396 A:middle
+extension on
+
+00:25:50.396 --> 00:25:52.056 A:middle
+randomAccessCollection, with a
+
+00:25:52.056 --> 00:25:52.666 A:middle
+self-type.
+
+00:25:52.666 --> 00:25:53.756 A:middle
+So this is the type that
+
+00:25:53.756 --> 00:25:54.246 A:middle
+conforms to
+
+00:25:54.246 --> 00:25:56.096 A:middle
+randomAccessCollection also
+
+00:25:56.096 --> 00:25:56.756 A:middle
+conforms to the
+
+00:25:56.756 --> 00:25:58.096 A:middle
+mutableCollection protocol.
+
+00:25:58.536 --> 00:25:59.516 A:middle
+And now, we've pulled together
+
+00:25:59.516 --> 00:26:00.556 A:middle
+the capabilities of both of
+

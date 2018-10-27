@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:57.344 --> 00:43:00.147 align:start position:27% line:-1
+NSImageを作成します
+
+00:43:00.781 --> 00:43:05.652 align:start position:21% line:-2
+しかしlockFocusを使うと
+多くのセマンティクスを失い
+
+00:43:05.752 --> 00:43:08.255 align:start position:27% line:-1
+ビットマップしか残りません
+
+00:43:08.922 --> 00:43:10.557 align:start position:27% line:-1
+アピアランスが変わる場合や
+
+00:43:10.657 --> 00:43:13.927 align:start position:30% line:-1
+ディスプレイの違いから
+
+00:43:14.027 --> 00:43:17.698 align:start position:32% line:-2
+スケールファクターが
+後退する場合など
+
+00:43:18.031 --> 00:43:20.000 align:start position:34% line:-1
+描画が古くなります
+
+00:43:20.868 --> 00:43:25.839 align:start position:29% line:-2
+ブロックベースを使うのが
+解決策の１つです
+
+00:43:25.939 --> 00:43:29.143 align:start position:36% line:-2
+NSImageの
+描画ハンドラです
+
+00:43:29.576 --> 00:43:34.848 align:start position:27% line:-2
+先ほどと同じ描画を
+このブロック内で作成します
+
+00:43:35.082 --> 00:43:40.854 align:start position:20% line:-2
+NSImageViewを適用すると
+自動的に修正され
+
+00:43:40.954 --> 00:43:46.260 align:start position:29% line:-2
+アピアランス他
+すべての変化に対応します
+
+00:43:46.693 --> 00:43:50.964 align:start position:29% line:-2
+このバッジは動的な色にも
+適用しているので
+
+00:43:51.064 --> 00:43:53.534 align:start position:29% line:-2
+常に正しいアピアランスを
+提供します
+
+00:43:54.902 --> 00:43:57.571 align:start position:27% line:-1
+他のオフスクリーン描画では
+
+00:43:57.804 --> 00:44:00.140 align:start position:16% line:-2
+NSGraphicsContextや
+CGBitmapContextを使った
+

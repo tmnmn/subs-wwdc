@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.676 --> 00:26:00.356 A:middle
+connections.
+
+00:26:00.886 --> 00:26:05.516 A:middle
+Let's suppose you have an app
+
+00:26:05.516 --> 00:26:06.806 A:middle
+and that app wants to fetch a
+
+00:26:06.806 --> 00:26:09.586 A:middle
+resource from menu.example.com.
+
+00:26:10.746 --> 00:26:12.526 A:middle
+We open a connection with the
+
+00:26:12.606 --> 00:26:13.836 A:middle
+server, and the server presents
+
+00:26:13.836 --> 00:26:14.806 A:middle
+us with the certificate.
+
+00:26:16.076 --> 00:26:17.126 A:middle
+If your app wants to fetch
+
+00:26:17.126 --> 00:26:18.206 A:middle
+another resource from
+
+00:26:18.446 --> 00:26:21.026 A:middle
+delivery.example.com, we open
+
+00:26:21.026 --> 00:26:22.486 A:middle
+another connection and the
+
+00:26:22.486 --> 00:26:23.556 A:middle
+server presents us with another
+
+00:26:23.556 --> 00:26:24.066 A:middle
+certificate.
+
+00:26:25.436 --> 00:26:27.526 A:middle
+This is the old behavior where
+
+00:26:27.646 --> 00:26:29.556 A:middle
+URLSession would create two
+
+00:26:29.556 --> 00:26:31.366 A:middle
+connections to fetch these
+
+00:26:31.366 --> 00:26:32.896 A:middle
+resources from the given host
+
+00:26:32.896 --> 00:26:33.236 A:middle
+names.
+
+00:26:33.726 --> 00:26:36.836 A:middle
+But if you look closely, the
+
+00:26:36.936 --> 00:26:39.016 A:middle
+first certificate presented to
+
+00:26:39.016 --> 00:26:41.596 A:middle
+us covers all the subdomains
+
+00:26:41.796 --> 00:26:44.606 A:middle
+under example.com which means
+
+00:26:44.946 --> 00:26:48.536 A:middle
+delivery.example.com is covered
+
+00:26:48.566 --> 00:26:50.316 A:middle
+by this first certificate.
+
+00:26:50.356 --> 00:26:51.506 A:middle
+Also notice that
+
+00:26:51.716 --> 00:26:54.146 A:middle
+delivery.example.com, it results
+
+00:26:54.146 --> 00:26:55.906 A:middle
+to the same IP address as the
+
+00:26:55.906 --> 00:26:56.886 A:middle
+first connection.
+
+00:26:57.426 --> 00:27:00.406 A:middle
+At this point, it's safe for us
+

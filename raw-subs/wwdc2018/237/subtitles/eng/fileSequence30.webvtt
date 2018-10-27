@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.376 --> 00:30:01.696 A:middle
+When a new preview has to be
+
+00:30:01.696 --> 00:30:03.066 A:middle
+generated for a file type
+
+00:30:03.066 --> 00:30:04.096 A:middle
+[inaudible] Quick Look will
+
+00:30:04.776 --> 00:30:06.156 A:middle
+create a new
+
+00:30:06.156 --> 00:30:07.986 A:middle
+PreviewViewController instance
+
+00:30:08.456 --> 00:30:09.026 A:middle
+and calls it
+
+00:30:09.086 --> 00:30:10.636 A:middle
+preparePreviewOfFile at URL
+
+00:30:10.636 --> 00:30:12.056 A:middle
+completionHandler method.
+
+00:30:14.976 --> 00:30:16.716 A:middle
+This method is part of the
+
+00:30:16.716 --> 00:30:18.876 A:middle
+QLPreviewingController protocol
+
+00:30:19.216 --> 00:30:20.826 A:middle
+and is mandatory to provide
+
+00:30:20.826 --> 00:30:22.296 A:middle
+previews for a file.
+
+00:30:23.156 --> 00:30:25.296 A:middle
+Quick Look will display
+
+00:30:25.336 --> 00:30:26.116 A:middle
+[inaudible] while waiting for
+
+00:30:26.116 --> 00:30:27.486 A:middle
+your extension to be ready to
+
+00:30:27.486 --> 00:30:28.266 A:middle
+display the preview.
+
+00:30:28.756 --> 00:30:31.026 A:middle
+All you have to take care of is
+
+00:30:31.026 --> 00:30:32.116 A:middle
+loading the contents of your
+
+00:30:32.116 --> 00:30:34.276 A:middle
+preview and calling the
+
+00:30:34.276 --> 00:30:36.196 A:middle
+completion handler as soon as
+
+00:30:36.196 --> 00:30:38.886 A:middle
+your extension is ready.
+
+00:30:39.026 --> 00:30:40.216 A:middle
+All right that's it for the
+
+00:30:40.216 --> 00:30:42.676 A:middle
+preview extensions, let's go one
+
+00:30:42.676 --> 00:30:43.216 A:middle
+step further.
+
+00:30:44.016 --> 00:30:46.046 A:middle
+Similarly to previews you can
+
+00:30:46.046 --> 00:30:47.266 A:middle
+also provide thumbnails for
+
+00:30:47.266 --> 00:30:48.926 A:middle
+files of your own file format.
+
+00:30:49.316 --> 00:30:51.506 A:middle
+Let's talk about Quick Look
+
+00:30:51.506 --> 00:30:52.356 A:middle
+thumbnail extensions.
+
+00:30:52.916 --> 00:30:56.776 A:middle
+A thumbnail is an image of a
+
+00:30:56.776 --> 00:30:58.806 A:middle
+limited size that represents the
+
+00:30:58.806 --> 00:31:00.806 A:middle
+contents of a file.
+

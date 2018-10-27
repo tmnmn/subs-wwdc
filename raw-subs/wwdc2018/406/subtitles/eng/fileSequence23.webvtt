@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.306 --> 00:23:00.136 A:middle
+it introduces to figure out how
+
+00:23:00.136 --> 00:23:01.566 A:middle
+to categorize those into
+
+00:23:01.566 --> 00:23:02.656 A:middle
+protocols meaningfully.
+
+00:23:03.396 --> 00:23:04.446 A:middle
+So the Fisher-Yates shuffle
+
+00:23:04.446 --> 00:23:05.276 A:middle
+algorithm's a pretty old
+
+00:23:05.276 --> 00:23:05.706 A:middle
+algorithm.
+
+00:23:06.186 --> 00:23:07.216 A:middle
+It's also fairly simple.
+
+00:23:07.546 --> 00:23:09.256 A:middle
+You start with an index to the
+
+00:23:09.256 --> 00:23:10.666 A:middle
+first element in the collection.
+
+00:23:11.586 --> 00:23:13.836 A:middle
+And then, you select randomly
+
+00:23:14.186 --> 00:23:15.376 A:middle
+some other element in the
+
+00:23:15.376 --> 00:23:17.196 A:middle
+collection, and swap those two.
+
+00:23:18.556 --> 00:23:20.666 A:middle
+In the next iteration, you move
+
+00:23:21.016 --> 00:23:22.596 A:middle
+the left index forward one.
+
+00:23:23.476 --> 00:23:24.716 A:middle
+Randomly select between there
+
+00:23:24.716 --> 00:23:25.996 A:middle
+and the end, swap those
+
+00:23:25.996 --> 00:23:26.556 A:middle
+elements.
+
+00:23:26.916 --> 00:23:28.196 A:middle
+And so, the algorithm is pretty
+
+00:23:28.196 --> 00:23:28.466 A:middle
+simple.
+
+00:23:28.466 --> 00:23:29.886 A:middle
+It's just this linear march
+
+00:23:30.146 --> 00:23:32.446 A:middle
+through the collection, randomly
+
+00:23:32.446 --> 00:23:33.636 A:middle
+selecting another element to
+
+00:23:33.636 --> 00:23:34.196 A:middle
+swap with.
+
+00:23:34.576 --> 00:23:36.206 A:middle
+And, at the end of this, you end
+
+00:23:36.206 --> 00:23:37.516 A:middle
+up with a nicely shuffled
+
+00:23:37.886 --> 00:23:38.406 A:middle
+collection.
+
+00:23:39.326 --> 00:23:40.676 A:middle
+So, we can actually look at the
+
+00:23:40.676 --> 00:23:41.116 A:middle
+code here.
+
+00:23:41.306 --> 00:23:42.446 A:middle
+It's a little bit involved.
+
+00:23:42.446 --> 00:23:43.236 A:middle
+Don't worry about that.
+
+00:23:43.626 --> 00:23:44.996 A:middle
+And, we're going to implement it
+
+00:23:44.996 --> 00:23:46.366 A:middle
+on some kind of collection.
+
+00:23:46.896 --> 00:23:47.646 A:middle
+So, we'll look at the core
+
+00:23:47.646 --> 00:23:48.576 A:middle
+operations in here.
+
+00:23:48.906 --> 00:23:49.966 A:middle
+So, first we need to be able to
+
+00:23:49.966 --> 00:23:51.896 A:middle
+grab a random number between
+
+00:23:51.896 --> 00:23:53.156 A:middle
+where we are in the collection
+
+00:23:53.156 --> 00:23:54.206 A:middle
+and the end of the collection,
+
+00:23:54.396 --> 00:23:55.626 A:middle
+using this, this random
+
+00:23:55.626 --> 00:23:56.086 A:middle
+facility.
+
+00:23:56.446 --> 00:23:57.206 A:middle
+But, that's an integer.
+
+00:23:57.366 --> 00:23:58.586 A:middle
+And what we need is an index
+
+00:23:58.586 --> 00:23:59.316 A:middle
+into the collection.
+
+00:23:59.316 --> 00:24:00.226 A:middle
+We know those are different.
+

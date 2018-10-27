@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.846 --> 00:11:00.916 A:middle
+switch on effectiveAppearance
+
+00:11:01.356 --> 00:11:05.286 A:middle
+bestMatch(from:, I'll pass an
+
+00:11:05.286 --> 00:11:06.796 A:middle
+array with all of the appearance
+
+00:11:06.796 --> 00:11:08.576 A:middle
+names that my view happens to
+
+00:11:08.576 --> 00:11:08.916 A:middle
+know about.
+
+00:11:08.976 --> 00:11:11.276 A:middle
+In this case, aqua and darkAqua.
+
+00:11:11.806 --> 00:11:14.326 A:middle
+Then it's just a matter of
+
+00:11:14.666 --> 00:11:16.606 A:middle
+implementing behavior for each
+
+00:11:16.606 --> 00:11:17.416 A:middle
+of those appearances.
+
+00:11:17.716 --> 00:11:19.366 A:middle
+So, for the aqua appearance,
+
+00:11:19.676 --> 00:11:21.616 A:middle
+I'll simply use my imageView
+
+00:11:21.616 --> 00:11:23.856 A:middle
+with Chloe's face as a subview.
+
+00:11:24.456 --> 00:11:27.856 A:middle
+And for darkAqua, I'll not only
+
+00:11:27.856 --> 00:11:28.786 A:middle
+use that imageView, but I'll
+
+00:11:28.786 --> 00:11:30.946 A:middle
+also through my glowView behind
+
+00:11:31.536 --> 00:11:31.606 A:middle
+it.
+
+00:11:33.736 --> 00:11:35.766 A:middle
+Finally, I'll implement a
+
+00:11:35.766 --> 00:11:38.146 A:middle
+default case and this is for
+
+00:11:38.146 --> 00:11:40.266 A:middle
+appearances my view doesn't know
+
+00:11:40.266 --> 00:11:41.586 A:middle
+about and that includes
+
+00:11:41.636 --> 00:11:43.006 A:middle
+potential appearances Apple
+
+00:11:43.006 --> 00:11:44.026 A:middle
+might come out with in the
+
+00:11:44.086 --> 00:11:44.436 A:middle
+future.
+
+00:11:45.076 --> 00:11:45.176 A:middle
+OK.
+
+00:11:46.056 --> 00:11:47.536 A:middle
+Let's take a look at what it
+
+00:11:47.536 --> 00:11:48.236 A:middle
+looks like.
+
+00:11:48.636 --> 00:11:50.696 A:middle
+So, there it is in light, no
+
+00:11:50.696 --> 00:11:52.106 A:middle
+glow, that's what we wanted.
+
+00:11:52.836 --> 00:11:54.696 A:middle
+Switch to dark and we have that
+
+00:11:54.696 --> 00:11:55.006 A:middle
+glow.
+
+00:11:55.276 --> 00:11:55.666 A:middle
+That's great.
+
+00:11:56.106 --> 00:11:56.266 A:middle
+All right.
+
+00:11:58.116 --> 00:11:59.596 A:middle
+Let's talk for a minute about
+
+00:11:59.596 --> 00:12:00.746 A:middle
+high contrast.
+

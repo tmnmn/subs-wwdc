@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.058 --> 00:06:00.661 align:middle line:0
+我们将它们赋给前面提到的两个属性
+
+00:06:02.396 --> 00:06:03.830 align:middle line:-1
+协议中的两个属性是
+
+00:06:03.897 --> 00:06:05.766 align:middle line:-2
+accessibilityDrag
+SourceDescriptors
+
+00:06:05.832 --> 00:06:07.768 align:middle line:-2
+和accessibilityDrop
+PointDescriptors
+
+00:06:09.570 --> 00:06:12.773 align:middle line:-1
+DragSourceDescriptors用于显示
+
+00:06:12.840 --> 00:06:14.808 align:middle line:-1
+在逻辑上与元素相关联的拖动源
+
+00:06:15.175 --> 00:06:18.712 align:middle line:-1
+DropPointDescriptors则显示
+
+00:06:18.779 --> 00:06:20.380 align:middle line:-1
+逻辑上与元素相关联的放置位置
+
+00:06:21.315 --> 00:06:23.984 align:middle line:-1
+这些属性告诉辅助功能
+
+00:06:24.051 --> 00:06:27.254 align:middle line:-2
+一个给定的元素
+什么可以拖 什么可以放
+
+00:06:29.089 --> 00:06:31.391 align:middle line:-1
+要注意的一点是描述符
+
+00:06:31.458 --> 00:06:34.361 align:middle line:-1
+必须引用实际有互动的视图
+
+00:06:34.795 --> 00:06:37.731 align:middle line:-1
+所以 你不应该引用窗口中
+
+00:06:37.798 --> 00:06:40.467 align:middle line:-1
+在主管互动的视图中的一个点
+
+00:06:40.534 --> 00:06:42.102 align:middle line:-1
+而是指定该视图本身
+
+00:06:45.138 --> 00:06:48.208 align:middle line:-2
+总之
+从某个元素中呈现单个拖动
+
+00:06:48.275 --> 00:06:49.977 align:middle line:-1
+根本不需要几行代码
+
+00:06:50.043 --> 00:06:52.145 align:middle line:-2
+你通过在主管互动的视图中
+指定一个点
+
+00:06:52.212 --> 00:06:54.848 align:middle line:-1
+建一个指定该拖动的描述符
+
+00:06:54.915 --> 00:06:55.949 align:middle line:-1
+并给它一个名字即可
+
+00:06:56.383 --> 00:06:57.217 align:middle line:-1
+然后设置元素的
+
+00:06:57.284 --> 00:07:00.153 align:middle line:-2
+accessibilityDrag
+SourceDescriptors属性
+

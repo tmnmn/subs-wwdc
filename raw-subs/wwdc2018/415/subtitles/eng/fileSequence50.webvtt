@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.946 --> 00:50:00.996 A:middle
+If you're using some sort of
+
+00:50:00.996 --> 00:50:02.376 A:middle
+non-symbol behavior like a
+
+00:50:02.376 --> 00:50:04.486 A:middle
+static initializer, or you're
+
+00:50:04.486 --> 00:50:05.616 A:middle
+re-exporting them as part of
+
+00:50:05.616 --> 00:50:06.916 A:middle
+your own dylib, you may need to
+
+00:50:06.916 --> 00:50:08.286 A:middle
+explicitly use something like
+
+00:50:09.096 --> 00:50:11.276 A:middle
+force load or all load to the
+
+00:50:11.416 --> 00:50:12.446 A:middle
+linker to tell it bring in
+
+00:50:12.446 --> 00:50:13.266 A:middle
+everything.
+
+00:50:13.266 --> 00:50:14.256 A:middle
+Or these files, even though
+
+00:50:14.256 --> 00:50:15.106 A:middle
+there's no linkage.
+
+00:50:15.666 --> 00:50:19.786 A:middle
+So let's go through an example
+
+00:50:19.786 --> 00:50:20.776 A:middle
+to try to tie this altogether.
+
+00:50:23.236 --> 00:50:25.686 A:middle
+So up on stage we have an
+
+00:50:25.686 --> 00:50:28.136 A:middle
+example of a playSound function
+
+00:50:28.136 --> 00:50:29.186 A:middle
+because what fun would be
+
+00:50:29.186 --> 00:50:29.996 A:middle
+looking at pets without
+
+00:50:29.996 --> 00:50:32.076 A:middle
+listening to them?
+
+00:50:32.296 --> 00:50:35.896 A:middle
+And you know it calls playSound.
+
+00:50:35.896 --> 00:50:36.906 A:middle
+You know, there's a function on
+
+00:50:36.906 --> 00:50:37.956 A:middle
+cat that calls playSound.
+
+00:50:37.956 --> 00:50:38.926 A:middle
+That seems pretty simple.
+
+00:50:38.926 --> 00:50:40.576 A:middle
+So let's look at the assembly
+
+00:50:40.576 --> 00:50:41.176 A:middle
+that generates.
+
+00:50:41.176 --> 00:50:45.476 A:middle
+So here's cat.o that comes out
+
+00:50:45.476 --> 00:50:46.966 A:middle
+of it.
+
+00:50:46.966 --> 00:50:49.766 A:middle
+Now if we look, we can see we
+
+00:50:49.766 --> 00:50:53.116 A:middle
+have the string purr.aac which
+
+00:50:53.116 --> 00:50:54.846 A:middle
+would be our AAC sound file.
+
+00:50:54.916 --> 00:50:57.406 A:middle
+And that gets copied into cat.o.
+
+00:50:57.406 --> 00:50:58.856 A:middle
+You'll note that the name purr
+
+00:50:58.856 --> 00:51:00.196 A:middle
+file does not appear in there
+

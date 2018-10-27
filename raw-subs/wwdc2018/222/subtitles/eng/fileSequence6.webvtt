@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.836 --> 00:06:01.196 A:middle
+changes, either due to a
+
+00:06:01.196 --> 00:06:02.726 A:middle
+potential malicious third party,
+
+00:06:03.166 --> 00:06:04.796 A:middle
+or just regular data corruption,
+
+00:06:04.796 --> 00:06:06.196 A:middle
+bad blocks on disc, a bad
+
+00:06:06.196 --> 00:06:06.946 A:middle
+network connection.
+
+00:06:07.306 --> 00:06:08.996 A:middle
+If any one of the bits flips in
+
+00:06:08.996 --> 00:06:10.906 A:middle
+that data, it will invalidate
+
+00:06:10.906 --> 00:06:12.216 A:middle
+the checksum, or the signature.
+
+00:06:12.556 --> 00:06:13.516 A:middle
+And we'll know before even
+
+00:06:13.516 --> 00:06:15.016 A:middle
+reading any of those bytes, that
+
+00:06:15.016 --> 00:06:16.456 A:middle
+the data is incorrect, and you
+
+00:06:16.456 --> 00:06:18.746 A:middle
+shouldn't trust it.
+
+00:06:19.396 --> 00:06:21.106 A:middle
+Now, we also don't always have a
+
+00:06:21.106 --> 00:06:21.576 A:middle
+checksum.
+
+00:06:21.576 --> 00:06:22.706 A:middle
+Maybe it's data we don't own,
+
+00:06:22.706 --> 00:06:23.606 A:middle
+where you can't get that ahead
+
+00:06:23.606 --> 00:06:23.986 A:middle
+of time.
+
+00:06:23.986 --> 00:06:25.706 A:middle
+So, at this stage, there isn't
+
+00:06:25.706 --> 00:06:27.146 A:middle
+much we can do with this data,
+
+00:06:27.826 --> 00:06:29.186 A:middle
+besides read it and inspect it.
+
+00:06:29.186 --> 00:06:32.346 A:middle
+And so, once we do that, we can
+
+00:06:32.346 --> 00:06:34.376 A:middle
+get primitive data out.
+
+00:06:34.736 --> 00:06:36.286 A:middle
+Now, as we've mentioned, we can
+
+00:06:36.286 --> 00:06:38.036 A:middle
+take that raw data and pass it
+
+00:06:38.036 --> 00:06:39.576 A:middle
+through, usually deserialize it,
+
+00:06:39.636 --> 00:06:40.616 A:middle
+like foundations JSON
+
+00:06:40.616 --> 00:06:41.316 A:middle
+serialization.
+
+00:06:42.856 --> 00:06:44.156 A:middle
+When we do that, we'll get inert
+
+00:06:44.156 --> 00:06:45.556 A:middle
+strings and dictionaries and
+
+00:06:45.556 --> 00:06:46.846 A:middle
+arrays of numbers back out that
+
+00:06:46.846 --> 00:06:47.456 A:middle
+we can use.
+
+00:06:47.666 --> 00:06:49.406 A:middle
+And if this process exceeds, we
+
+00:06:49.406 --> 00:06:50.596 A:middle
+know two things about that data.
+
+00:06:52.316 --> 00:06:53.716 A:middle
+One, that the data was indeed in
+
+00:06:53.716 --> 00:06:54.656 A:middle
+the correct format that we
+
+00:06:54.656 --> 00:06:55.126 A:middle
+expected.
+
+00:06:55.306 --> 00:06:56.696 A:middle
+For instance, XML data won't
+
+00:06:56.696 --> 00:06:58.096 A:middle
+pass through JSON serialization.
+
+00:06:58.736 --> 00:07:00.936 A:middle
+And two, if we trust the
+

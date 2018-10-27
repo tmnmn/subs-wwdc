@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:58.972 --> 00:44:02.509 align:middle line:-2
+但我们知道我们在寻找什么
+我们的截屏视图就在那里
+
+00:44:02.576 --> 00:44:06.547 align:middle line:-2
+我们可以看到它 而在审查中
+我们看到它目前是隐藏的
+
+00:44:08.282 --> 00:44:11.318 align:middle line:-2
+所以我们需要看看我们在这个视图上
+设置隐藏属性的所有地方
+
+00:44:11.385 --> 00:44:13.587 align:middle line:-1
+并搞清楚为什么它没有显示
+
+00:44:16.089 --> 00:44:18.125 align:middle line:-1
+除了recursiveDescription
+
+00:44:18.192 --> 00:44:22.496 align:middle line:-2
+UIView还有parentDescription
+它将向上查看父视图的视图层次结构
+
+00:44:22.563 --> 00:44:27.000 align:middle line:-1
+直到它到达一个值为nil的父视图
+
+00:44:27.467 --> 00:44:29.670 align:middle line:-1
+它将打印相同类型的调试信息
+
+00:44:32.139 --> 00:44:33.173 align:middle line:-1
+recursiveDescription
+
+00:44:33.240 --> 00:44:36.577 align:middle line:-2
+和parentDescription
+非常适合处理UIView问题
+
+00:44:36.643 --> 00:44:40.047 align:middle line:-2
+但有时候你遇到的是
+UIViewController的问题
+
+00:44:40.414 --> 00:44:43.317 align:middle line:-1
+为此你可以使用一个很棒的类方法
+
+00:44:43.383 --> 00:44:45.752 align:middle line:-2
+即UIViewController
+printHierarchy
+
+00:44:46.987 --> 00:44:49.756 align:middle line:-2
+最近我们的截屏编辑器中
+出现了一个漏洞
+
+00:44:49.823 --> 00:44:52.059 align:middle line:-1
+我们的一个viewController无法收到
+
+00:44:52.125 --> 00:44:53.894 align:middle line:-1
+viewDidAppear消息
+
+00:44:54.194 --> 00:44:56.296 align:middle line:-1
+所以它没有适当地设置其状态
+
+00:44:57.231 --> 00:45:00.000 align:middle line:-2
+通过运行UIViewController
+printHierarchy
+

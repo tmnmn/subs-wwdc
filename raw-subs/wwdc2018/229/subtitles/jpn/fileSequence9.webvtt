@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:56.870 --> 00:09:01.275 align:start position:16% line:-1
+firstの場合と同様 戻りは任意です
+
+00:09:02.109 --> 00:09:06.613 align:start position:23% line:-2
+では サブスクリプトの“１”と
+しましょう
+
+00:09:06.713 --> 00:09:12.352 align:start position:25% line:-2
+しかし ０オリジンでは使えず
+コンパイラに注意されます
+
+00:09:13.820 --> 00:09:18.458 align:start position:29% line:-2
+すべてのコレクションで
+このコードを使いたければ
+
+00:09:18.926 --> 00:09:20.627 align:start position:34% line:-1
+別のやり方をします
+
+00:09:21.161 --> 00:09:24.198 align:start position:20% line:-1
+startIndex + 1ですが
+
+00:09:25.599 --> 00:09:28.235 align:start position:27% line:-1
+コンパイラに引っかかります
+
+00:09:29.036 --> 00:09:34.408 align:start position:30% line:-2
+不透明のインデックスに
+“１”は付けられません
+
+00:09:35.576 --> 00:09:40.280 align:start position:21% line:-1
+APIを使ってこれを可能にします
+
+00:09:40.380 --> 00:09:41.748 align:start position:36% line:-1
+やってみましょう
+
+00:09:42.616 --> 00:09:47.020 align:start position:30% line:-2
+２番目の要素を
+見つける指示をしました
+
+00:09:47.154 --> 00:09:50.591 align:start position:27% line:-2
+まずはコレクションが空かを
+確認します
+
+00:09:51.024 --> 00:09:54.695 align:start position:29% line:-2
+開始と終了インデックスが
+等しい時は空です
+
+00:09:54.795 --> 00:09:56.997 align:start position:30% line:-1
+そしてnilを返します
+
+00:09:57.397 --> 00:10:01.268 align:start position:27% line:-1
+２番目の要素がないからです
+

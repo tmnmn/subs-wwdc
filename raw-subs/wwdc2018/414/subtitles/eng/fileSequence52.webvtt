@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:59.126 --> 00:52:01.296 A:middle
+into this queue.sync it will be
+
+00:52:01.296 --> 00:52:02.456 A:middle
+executed as part of that
+
+00:52:02.696 --> 00:52:03.286 A:middle
+dispatch queue.
+
+00:52:03.796 --> 00:52:06.076 A:middle
+So this way the code is now
+
+00:52:06.076 --> 00:52:07.856 A:middle
+thread safe because every single
+
+00:52:08.096 --> 00:52:09.316 A:middle
+line of code that accesses
+
+00:52:09.316 --> 00:52:11.576 A:middle
+storage is always executed
+
+00:52:11.666 --> 00:52:13.426 A:middle
+inside a serial dispatch queue,
+
+00:52:13.546 --> 00:52:15.126 A:middle
+which means it will only be
+
+00:52:15.126 --> 00:52:16.706 A:middle
+executed one at a time and is
+
+00:52:16.706 --> 00:52:18.376 A:middle
+[inaudible] thread safe.
+
+00:52:18.376 --> 00:52:20.286 A:middle
+Now it might be tempting to only
+
+00:52:20.286 --> 00:52:22.596 A:middle
+use the synchronization in the
+
+00:52:22.596 --> 00:52:24.736 A:middle
+setter where we are modifying
+
+00:52:24.736 --> 00:52:26.686 A:middle
+the storage and avoiding it in
+
+00:52:26.686 --> 00:52:27.546 A:middle
+the getter like this.
+
+00:52:28.496 --> 00:52:29.866 A:middle
+But that's not correct, that can
+
+00:52:29.866 --> 00:52:31.286 A:middle
+still cause memory corruptions
+
+00:52:31.286 --> 00:52:32.316 A:middle
+and still cause crashes.
+
+00:52:32.586 --> 00:52:33.956 A:middle
+Let me actually prove that to
+
+00:52:33.956 --> 00:52:35.706 A:middle
+you by running this version of
+
+00:52:35.706 --> 00:52:37.466 A:middle
+the code in the Simulator and
+
+00:52:37.466 --> 00:52:39.146 A:middle
+let's see if the Sanitizer finds
+
+00:52:39.146 --> 00:52:40.766 A:middle
+this little more subtle bug now.
+
+00:52:41.316 --> 00:52:44.926 A:middle
+As I expected it does.
+
+00:52:45.246 --> 00:52:47.056 A:middle
+We really have to protect both
+
+00:52:47.056 --> 00:52:49.046 A:middle
+the getter and the setter with
+
+00:52:49.046 --> 00:52:49.866 A:middle
+the synchronization.
+
+00:52:50.036 --> 00:52:52.596 A:middle
+So let me run my app one last
+
+00:52:52.596 --> 00:52:53.716 A:middle
+time in the Simulator and you
+
+00:52:53.716 --> 00:52:55.706 A:middle
+will see it if I try to a new
+
+00:52:55.706 --> 00:52:56.586 A:middle
+recipe this time.
+
+00:52:57.076 --> 00:52:58.406 A:middle
+The controller loads up just
+
+00:52:58.406 --> 00:52:59.866 A:middle
+fine and we don't get any more
+
+00:52:59.866 --> 00:53:01.206 A:middle
+warnings because the class is
+

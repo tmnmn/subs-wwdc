@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.596 --> 00:31:00.756 A:middle
+memory, if you have a lot of
+
+00:31:00.756 --> 00:31:02.186 A:middle
+data, this will cause a lot of
+
+00:31:02.186 --> 00:31:03.536 A:middle
+memory growth in your test
+
+00:31:03.976 --> 00:31:04.146 A:middle
+suite.
+
+00:31:07.616 --> 00:31:09.476 A:middle
+You should have at least one
+
+00:31:10.076 --> 00:31:11.676 A:middle
+test, though, that actually
+
+00:31:11.676 --> 00:31:13.146 A:middle
+materializes your store file on
+
+00:31:13.146 --> 00:31:13.506 A:middle
+disk.
+
+00:31:14.026 --> 00:31:15.746 A:middle
+And this is because if you can't
+
+00:31:15.746 --> 00:31:16.806 A:middle
+open your store for your test
+
+00:31:16.806 --> 00:31:18.316 A:middle
+suite, it's highly likely that
+
+00:31:18.316 --> 00:31:19.436 A:middle
+your customer can't either.
+
+00:31:21.076 --> 00:31:22.546 A:middle
+If your persistent container is
+
+00:31:22.546 --> 00:31:24.156 A:middle
+in the application delegate, you
+
+00:31:24.156 --> 00:31:25.506 A:middle
+can have a test base class that
+
+00:31:25.506 --> 00:31:26.866 A:middle
+grabs the container out and
+
+00:31:26.866 --> 00:31:28.506 A:middle
+writes directly to that store.
+
+00:31:29.296 --> 00:31:31.496 A:middle
+But I must caution you to take
+
+00:31:31.496 --> 00:31:33.086 A:middle
+care when you do this, because
+
+00:31:33.086 --> 00:31:34.106 A:middle
+that means that you're writing
+
+00:31:34.106 --> 00:31:35.566 A:middle
+to the store file that's in use
+
+00:31:35.566 --> 00:31:37.776 A:middle
+by the application, so if you
+
+00:31:37.776 --> 00:31:38.916 A:middle
+run your test on a personal
+
+00:31:38.916 --> 00:31:40.646 A:middle
+device, you'll see the effects
+
+00:31:40.646 --> 00:31:42.006 A:middle
+of the unit test when you open
+
+00:31:42.006 --> 00:31:47.316 A:middle
+your application the next time.
+
+00:31:47.536 --> 00:31:48.446 A:middle
+What if I told you I could
+
+00:31:48.446 --> 00:31:50.316 A:middle
+insert 100,000 records in just
+
+00:31:50.316 --> 00:31:51.236 A:middle
+seven lines of code?
+
+00:31:53.806 --> 00:31:55.036 A:middle
+I'm cheating a little bit.
+
+00:31:55.036 --> 00:31:56.356 A:middle
+I was going to leave this as an
+
+00:31:56.356 --> 00:31:58.556 A:middle
+exercise to the reader, but this
+
+00:31:58.556 --> 00:31:59.946 A:middle
+type of scaffolding is a great
+
+00:31:59.946 --> 00:32:01.306 A:middle
+way to help you build a test
+

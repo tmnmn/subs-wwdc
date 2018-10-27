@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.246 --> 00:06:00.616 A:middle
+network is not doing so well.
+
+00:06:01.256 --> 00:06:03.136 A:middle
+It's outputting a result that's
+
+00:06:03.136 --> 00:06:03.806 A:middle
+clearly wrong.
+
+00:06:03.806 --> 00:06:05.056 A:middle
+So, why is it doing so badly?
+
+00:06:05.656 --> 00:06:06.896 A:middle
+Well, this is expected.
+
+00:06:06.896 --> 00:06:08.756 A:middle
+We just initialized our weights
+
+00:06:08.756 --> 00:06:09.746 A:middle
+with some random numbers.
+
+00:06:09.836 --> 00:06:11.046 A:middle
+We haven't trained the network
+
+00:06:11.046 --> 00:06:12.626 A:middle
+to do any better yet.
+
+00:06:13.656 --> 00:06:15.636 A:middle
+So, now, we need some weight to
+
+00:06:15.636 --> 00:06:18.296 A:middle
+quantify how well or how badly
+
+00:06:18.376 --> 00:06:19.636 A:middle
+our network is currently doing.
+
+00:06:20.086 --> 00:06:21.886 A:middle
+So, we can use this information
+
+00:06:22.476 --> 00:06:24.206 A:middle
+to improve our weights, so that
+
+00:06:24.206 --> 00:06:25.686 A:middle
+hopefully after more iterations
+
+00:06:25.686 --> 00:06:27.096 A:middle
+of training, the network can
+
+00:06:27.096 --> 00:06:28.106 A:middle
+produce a better result.
+
+00:06:28.776 --> 00:06:31.696 A:middle
+But in order to know how well
+
+00:06:31.696 --> 00:06:33.006 A:middle
+we're doing, we need to know
+
+00:06:33.006 --> 00:06:34.146 A:middle
+what the right answers are.
+
+00:06:34.666 --> 00:06:36.326 A:middle
+So, the ground truth, which I
+
+00:06:36.326 --> 00:06:38.406 A:middle
+will call labels from now on, is
+
+00:06:38.406 --> 00:06:40.276 A:middle
+an input to the network along
+
+00:06:40.276 --> 00:06:41.256 A:middle
+with the input image.
+
+00:06:42.356 --> 00:06:43.646 A:middle
+So, in this case, it's a vector
+
+00:06:43.646 --> 00:06:45.276 A:middle
+of 10 values, where we have 1
+
+00:06:45.276 --> 00:06:47.006 A:middle
+for the correct class, Class 7,
+
+00:06:47.376 --> 00:06:48.756 A:middle
+and zeros for all the other
+
+00:06:49.566 --> 00:06:49.786 A:middle
+classes.
+
+00:06:51.376 --> 00:06:53.526 A:middle
+The output of the network is our
+
+00:06:53.526 --> 00:06:54.496 A:middle
+10 probabilities.
+
+00:06:54.926 --> 00:06:55.526 A:middle
+One per class.
+
+00:06:56.156 --> 00:06:58.136 A:middle
+So, as you can see in this first
+
+00:06:58.136 --> 00:06:59.236 A:middle
+situation of training, the
+
+00:06:59.236 --> 00:07:01.116 A:middle
+network is producing a very low
+

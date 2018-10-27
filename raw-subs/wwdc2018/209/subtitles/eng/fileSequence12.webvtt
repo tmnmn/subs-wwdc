@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.046 --> 00:12:01.246 A:middle
+will return an error if some
+
+00:12:01.246 --> 00:12:02.386 A:middle
+problem's encountered.
+
+00:12:02.946 --> 00:12:04.086 A:middle
+Now, note the second method
+
+00:12:04.086 --> 00:12:04.306 A:middle
+here.
+
+00:12:04.306 --> 00:12:05.526 A:middle
+It's sort of decorated like a
+
+00:12:06.116 --> 00:12:07.706 A:middle
+crazy fancy peacock.
+
+00:12:08.296 --> 00:12:12.006 A:middle
+All that decoration enables
+
+00:12:12.006 --> 00:12:13.596 A:middle
+Swift to infer the return type
+
+00:12:13.596 --> 00:12:14.666 A:middle
+much better, which is of course
+
+00:12:14.716 --> 00:12:16.066 A:middle
+a trick Swift is really good at.
+
+00:12:16.866 --> 00:12:18.166 A:middle
+Now, note that all the way out
+
+00:12:18.166 --> 00:12:20.156 A:middle
+at this SDK this year, they do
+
+00:12:20.156 --> 00:12:24.026 A:middle
+work back to 10.13, and iOS 11.
+
+00:12:24.196 --> 00:12:25.296 A:middle
+So, you can start using them,
+
+00:12:25.616 --> 00:12:26.606 A:middle
+even with those deployment
+
+00:12:26.636 --> 00:12:27.146 A:middle
+targets.
+
+00:12:28.886 --> 00:12:30.576 A:middle
+These methods replace the
+
+00:12:30.576 --> 00:12:32.056 A:middle
+methods on this slide here.
+
+00:12:32.886 --> 00:12:34.416 A:middle
+Now, you'll note that these are
+
+00:12:34.416 --> 00:12:36.596 A:middle
+being deprecated in 10.14 and
+
+00:12:36.596 --> 00:12:37.856 A:middle
+also iOS 12.
+
+00:12:38.586 --> 00:12:40.226 A:middle
+Since these are not doing secure
+
+00:12:40.226 --> 00:12:42.116 A:middle
+coding, we are deprecating them
+
+00:12:42.116 --> 00:12:43.486 A:middle
+immediately, rather than going
+
+00:12:43.486 --> 00:12:44.426 A:middle
+through that formal soft
+
+00:12:44.426 --> 00:12:45.826 A:middle
+deprecation, because we really
+
+00:12:45.826 --> 00:12:47.086 A:middle
+encourage you, we really want
+
+00:12:47.086 --> 00:12:48.146 A:middle
+you to switch to the secure
+
+00:12:48.146 --> 00:12:49.376 A:middle
+coding if you haven't done so
+
+00:12:49.636 --> 00:12:49.826 A:middle
+yet.
+
+00:12:51.426 --> 00:12:53.636 A:middle
+Now, one more thing about secure
+
+00:12:53.636 --> 00:12:54.856 A:middle
+coding is a new value
+
+00:12:54.856 --> 00:12:55.616 A:middle
+transformer.
+
+00:12:56.046 --> 00:12:56.676 A:middle
+As you may know,
+
+00:12:56.786 --> 00:12:58.316 A:middle
+NSValueTransformer is a class
+
+00:12:58.606 --> 00:12:59.446 A:middle
+used for automatically
+
+00:12:59.446 --> 00:13:00.906 A:middle
+transforming values from one to
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:57.676 --> 00:03:00.356 A:middle
+in SteamVR runtime on Mac OS.
+
+00:03:03.006 --> 00:03:04.796 A:middle
+So, now let's see how new Metal
+
+00:03:04.796 --> 00:03:06.486 A:middle
+features that we're introducing
+
+00:03:06.486 --> 00:03:07.876 A:middle
+can develop a [inaudible] Mac OS
+
+00:03:07.876 --> 00:03:09.786 A:middle
+Mojave can be used to
+
+00:03:09.786 --> 00:03:11.166 A:middle
+fiber-optimize your VR
+
+00:03:11.166 --> 00:03:11.946 A:middle
+application.
+
+00:03:12.036 --> 00:03:14.356 A:middle
+As a quick refresher, let's
+
+00:03:15.086 --> 00:03:16.736 A:middle
+review current interaction
+
+00:03:16.736 --> 00:03:18.096 A:middle
+between application and VR
+
+00:03:18.136 --> 00:03:18.786 A:middle
+compositor.
+
+00:03:18.896 --> 00:03:21.386 A:middle
+Application will start by
+
+00:03:21.386 --> 00:03:23.106 A:middle
+rendering image for left and
+
+00:03:23.106 --> 00:03:25.466 A:middle
+right eye into 30 multi-sample
+
+00:03:25.516 --> 00:03:26.026 A:middle
+textures.
+
+00:03:26.776 --> 00:03:28.306 A:middle
+Then it will resolve those
+
+00:03:28.306 --> 00:03:30.556 A:middle
+images into iOS surface back
+
+00:03:30.726 --> 00:03:32.456 A:middle
+textures that can be further
+
+00:03:32.456 --> 00:03:33.816 A:middle
+passed to VR compositor.
+
+00:03:33.816 --> 00:03:37.926 A:middle
+VR compositor will perform final
+
+00:03:37.986 --> 00:03:39.476 A:middle
+processing step that will
+
+00:03:39.556 --> 00:03:41.256 A:middle
+include [inaudible] distortion
+
+00:03:41.256 --> 00:03:42.446 A:middle
+correction, chromatic
+
+00:03:42.446 --> 00:03:43.656 A:middle
+aberration, and order
+
+00:03:43.656 --> 00:03:44.356 A:middle
+operations.
+
+00:03:44.986 --> 00:03:47.026 A:middle
+We can call it in short warp.
+
+00:03:48.426 --> 00:03:49.866 A:middle
+Once the final image is
+
+00:03:49.956 --> 00:03:52.066 A:middle
+produced, it can be sent to the
+
+00:03:52.066 --> 00:03:53.846 A:middle
+headset for presentment.
+
+00:03:54.936 --> 00:03:56.856 A:middle
+It is a lot of work here that is
+
+00:03:56.916 --> 00:03:59.446 A:middle
+happening twice, so let's see if
+
+00:03:59.446 --> 00:04:02.456 A:middle
+you can do something about that.
+

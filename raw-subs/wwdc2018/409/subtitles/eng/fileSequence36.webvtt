@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.516 --> 00:36:00.286 A:middle
+So you can only pass large
+
+00:36:00.286 --> 00:36:03.666 A:middle
+vectors, so 256 bits and up from
+
+00:36:03.666 --> 00:36:05.296 A:middle
+and to AVX-512 functions.
+
+00:36:05.626 --> 00:36:07.766 A:middle
+So the ABI is different from the
+
+00:36:07.766 --> 00:36:09.016 A:middle
+generic and a specialized
+
+00:36:09.016 --> 00:36:10.516 A:middle
+variance, so you cannot pass
+
+00:36:10.516 --> 00:36:13.966 A:middle
+them between those.
+
+00:36:14.166 --> 00:36:16.376 A:middle
+Additionally, these vectors are
+
+00:36:16.376 --> 00:36:18.236 A:middle
+large and they're large enough
+
+00:36:18.236 --> 00:36:19.856 A:middle
+that their natural alignment is
+
+00:36:20.106 --> 00:36:21.966 A:middle
+too big for what's guaranteed by
+
+00:36:21.966 --> 00:36:22.746 A:middle
+things like malloc.
+
+00:36:22.746 --> 00:36:24.216 A:middle
+So you have to take that into
+
+00:36:24.216 --> 00:36:25.596 A:middle
+account when allocating these
+
+00:36:26.526 --> 00:36:30.316 A:middle
+anywhere other than the stack.
+
+00:36:30.316 --> 00:36:31.876 A:middle
+And so in general all of these
+
+00:36:31.956 --> 00:36:33.406 A:middle
+things are things that we are
+
+00:36:33.406 --> 00:36:34.396 A:middle
+already go through lots of
+
+00:36:34.536 --> 00:36:36.056 A:middle
+things in the opening system.
+
+00:36:36.536 --> 00:36:37.936 A:middle
+So for instance, if you can at
+
+00:36:37.936 --> 00:36:40.056 A:middle
+all use accelerate.framework and
+
+00:36:40.056 --> 00:36:41.326 A:middle
+it's much easier to do so
+
+00:36:41.656 --> 00:36:42.976 A:middle
+because we already specialized
+
+00:36:42.976 --> 00:36:44.506 A:middle
+all the functions for every
+
+00:36:44.506 --> 00:36:45.696 A:middle
+single microarchitecture.
+
+00:36:46.346 --> 00:36:49.806 A:middle
+So this is AVX-512.
+
+00:36:50.406 --> 00:36:53.576 A:middle
+Now we also have new features on
+
+00:36:53.576 --> 00:36:56.936 A:middle
+the iPhone 8, 8 Plus and X.
+
+00:36:59.016 --> 00:37:01.716 A:middle
+So one of the first feature is
+

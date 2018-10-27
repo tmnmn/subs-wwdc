@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.866 --> 00:10:01.046 A:middle
+VM Memory Trace.
+
+00:10:01.786 --> 00:10:03.326 A:middle
+This provides a deep view into
+
+00:10:03.326 --> 00:10:04.446 A:middle
+the virtual memory system's
+
+00:10:04.446 --> 00:10:05.806 A:middle
+performance with regards to your
+
+00:10:05.986 --> 00:10:06.726 A:middle
+app.
+
+00:10:08.736 --> 00:10:10.486 A:middle
+I find the By Operation tab
+
+00:10:10.486 --> 00:10:11.226 A:middle
+really useful here.
+
+00:10:11.916 --> 00:10:12.996 A:middle
+It gives you a virtual memory
+
+00:10:12.996 --> 00:10:14.386 A:middle
+system profile and will show you
+
+00:10:14.386 --> 00:10:16.376 A:middle
+things like page cache hits and
+
+00:10:16.376 --> 00:10:18.826 A:middle
+page zero fills for the VM.
+
+00:10:21.016 --> 00:10:22.536 A:middle
+Kyle mentioned earlier that if
+
+00:10:22.536 --> 00:10:23.726 A:middle
+you approach the memory limit of
+
+00:10:23.726 --> 00:10:25.146 A:middle
+the device, you'll receive an
+
+00:10:25.146 --> 00:10:26.766 A:middle
+EXC resource exception.
+
+00:10:27.276 --> 00:10:28.346 A:middle
+Well, if you're running your app
+
+00:10:28.346 --> 00:10:31.136 A:middle
+now in Xcode 10, Xcode will
+
+00:10:31.136 --> 00:10:32.586 A:middle
+catch this exception and pause
+
+00:10:32.586 --> 00:10:33.266 A:middle
+your app for you.
+
+00:10:33.636 --> 00:10:34.506 A:middle
+This means you can start the
+
+00:10:34.506 --> 00:10:35.636 A:middle
+memory debugger and begin your
+
+00:10:35.636 --> 00:10:36.816 A:middle
+investigation right from there.
+
+00:10:37.066 --> 00:10:38.066 A:middle
+I think this is really, really
+
+00:10:38.066 --> 00:10:38.436 A:middle
+useful.
+
+00:10:39.016 --> 00:10:42.006 A:middle
+The memory debugger for Xcode
+
+00:10:42.006 --> 00:10:43.606 A:middle
+was shipped in Xcode 8, and it
+
+00:10:43.606 --> 00:10:44.926 A:middle
+helps you track down object
+
+00:10:44.926 --> 00:10:46.546 A:middle
+dependencies, cycles, and leaks.
+
+00:10:46.996 --> 00:10:48.336 A:middle
+And in Xcode 10, it's been
+
+00:10:48.336 --> 00:10:49.716 A:middle
+updated with this great new
+
+00:10:49.716 --> 00:10:50.036 A:middle
+layout.
+
+00:10:50.536 --> 00:10:52.066 A:middle
+It's so good for viewing really
+
+00:10:52.066 --> 00:10:52.986 A:middle
+large Memgraphs.
+
+00:10:53.926 --> 00:10:55.836 A:middle
+Under the hood, Xcode uses the
+
+00:10:55.836 --> 00:10:57.456 A:middle
+Memgraph file format to store
+
+00:10:57.456 --> 00:10:58.916 A:middle
+information about the memory use
+
+00:10:58.916 --> 00:10:59.706 A:middle
+of your app.
+

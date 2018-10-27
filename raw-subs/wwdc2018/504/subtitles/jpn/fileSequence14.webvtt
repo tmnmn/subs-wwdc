@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:57.037 --> 00:14:00.974 align:start position:12% line:-2
+info.plistバックグラウンドモード
+にオーディオを追加
+
+00:14:03.076 --> 00:14:05.212 align:start position:25% line:-1
+それからセッションを設定し―
+
+00:14:05.312 --> 00:14:09.917 align:start position:25% line:-2
+システムにバックグラウンドで
+再生することを伝えます
+
+00:14:11.451 --> 00:14:14.922 align:start position:29% line:-2
+別のルートにしたい場合も
+あるでしょう
+
+00:14:16.056 --> 00:14:18.025 align:start position:39% line:-1
+その場合は―
+
+00:14:18.592 --> 00:14:23.263 align:start position:30% line:-2
+再生セッションの途中で
+適切に処理するだけです
+
+00:14:23.864 --> 00:14:27.668 align:start position:32% line:-2
+それでは もう少し
+細分化してみましょう
+
+00:14:29.369 --> 00:14:33.907 align:start position:18% line:-2
+Xcodeでバックグラウンドモードの
+スイッチをオン
+
+00:14:34.007 --> 00:14:38.445 align:start position:30% line:-2
+オーディオはオフにし
+次のステップに進みます
+
+00:14:40.647 --> 00:14:42.049 align:start position:21% line:-1
+AVAudioSessionで―
+
+00:14:42.149 --> 00:14:46.620 align:start position:16% line:-2
+routeSharingPolicyを
+ロングフォームに設定します
+
+00:14:47.955 --> 00:14:53.760 align:start position:14% line:-2
+それから AVAudioSessionで
+完了メソッドを呼び出します
+
+00:14:53.894 --> 00:14:56.630 align:start position:29% line:-1
+そして再生を呼び出します
+
+00:14:57.164 --> 00:15:00.167 align:start position:34% line:-2
+最初に有効化関数を
+呼び出し―
+

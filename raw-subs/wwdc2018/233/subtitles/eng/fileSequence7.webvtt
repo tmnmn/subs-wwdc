@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.376 --> 00:07:01.476 A:middle
+The next thing you're going to
+
+00:07:01.476 --> 00:07:03.386 A:middle
+want to think about is changing
+
+00:07:03.386 --> 00:07:04.686 A:middle
+your app's default behavior for
+
+00:07:05.186 --> 00:07:06.616 A:middle
+when it has an external display
+
+00:07:06.616 --> 00:07:07.106 A:middle
+connected.
+
+00:07:07.106 --> 00:07:10.276 A:middle
+Let's look at an example of some
+
+00:07:10.276 --> 00:07:12.266 A:middle
+code from our demo app.
+
+00:07:13.256 --> 00:07:14.466 A:middle
+This is the code that's called
+
+00:07:14.496 --> 00:07:16.216 A:middle
+when we tap on a photo in your
+
+00:07:16.216 --> 00:07:16.806 A:middle
+collection view.
+
+00:07:17.326 --> 00:07:19.436 A:middle
+When we're in single display
+
+00:07:19.436 --> 00:07:21.236 A:middle
+mode, we create our
+
+00:07:21.236 --> 00:07:23.186 A:middle
+photoViewController and push it
+
+00:07:23.296 --> 00:07:24.396 A:middle
+onto our navigation stack.
+
+00:07:25.576 --> 00:07:26.766 A:middle
+But, when we have an external
+
+00:07:26.766 --> 00:07:28.596 A:middle
+display connected, we're already
+
+00:07:28.596 --> 00:07:29.966 A:middle
+showing that photoViewController
+
+00:07:30.026 --> 00:07:31.886 A:middle
+full screen in that second UI,
+
+00:07:32.576 --> 00:07:34.466 A:middle
+so we just tell it to present
+
+00:07:34.466 --> 00:07:35.066 A:middle
+that photo.
+
+00:07:35.746 --> 00:07:37.046 A:middle
+Really easy.
+
+00:07:37.836 --> 00:07:39.356 A:middle
+The third thing you should think
+
+00:07:39.356 --> 00:07:40.976 A:middle
+about when designing for an
+
+00:07:40.976 --> 00:07:43.616 A:middle
+external display is you should
+
+00:07:43.616 --> 00:07:45.476 A:middle
+handle connection changes with
+
+00:07:45.476 --> 00:07:46.556 A:middle
+graceful transitions.
+
+00:07:47.046 --> 00:07:50.366 A:middle
+Let's go back to our demo app to
+
+00:07:50.366 --> 00:07:51.006 A:middle
+illustrate this.
+
+00:07:52.846 --> 00:07:54.776 A:middle
+Here you can see our demo app is
+
+00:07:54.856 --> 00:07:56.056 A:middle
+currently showing a photo full
+
+00:07:56.056 --> 00:07:56.446 A:middle
+size.
+
+00:07:57.056 --> 00:07:58.436 A:middle
+And, we haven't yet connected
+
+00:07:58.436 --> 00:07:59.496 A:middle
+the external display yet.
+

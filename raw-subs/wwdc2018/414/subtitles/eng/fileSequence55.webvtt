@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:58.566 --> 00:55:00.326 A:middle
+working with threads you can use
+
+00:55:00.326 --> 00:55:01.646 A:middle
+custom names with threads as
+
+00:55:01.646 --> 00:55:01.876 A:middle
+well.
+
+00:55:03.086 --> 00:55:04.406 A:middle
+These names and labels are
+
+00:55:04.406 --> 00:55:05.756 A:middle
+displayed in the debugger but
+
+00:55:05.756 --> 00:55:07.606 A:middle
+they also appear in some types
+
+00:55:07.606 --> 00:55:09.646 A:middle
+of crash logs and that can help
+
+00:55:09.646 --> 00:55:11.306 A:middle
+you often narrow down possible
+
+00:55:11.306 --> 00:55:14.616 A:middle
+causes of multithreading bugs.
+
+00:55:15.556 --> 00:55:16.896 A:middle
+Okay so to stay on top of
+
+00:55:16.896 --> 00:55:19.116 A:middle
+crashes I have three takeaway
+
+00:55:19.116 --> 00:55:19.776 A:middle
+points for you.
+
+00:55:20.556 --> 00:55:22.656 A:middle
+Number one, always test your
+
+00:55:22.656 --> 00:55:25.276 A:middle
+apps on real devices before
+
+00:55:25.276 --> 00:55:26.356 A:middle
+submitting them to the App
+
+00:55:26.356 --> 00:55:28.626 A:middle
+Store, that will help you avoid
+
+00:55:28.626 --> 00:55:30.506 A:middle
+getting rejected in App Review.
+
+00:55:31.796 --> 00:55:33.416 A:middle
+Number two, when you do get
+
+00:55:33.606 --> 00:55:35.386 A:middle
+crashes from your users you
+
+00:55:35.386 --> 00:55:36.686 A:middle
+should always try to reproduce
+
+00:55:36.686 --> 00:55:36.866 A:middle
+them.
+
+00:55:37.506 --> 00:55:39.126 A:middle
+Look at the crash logs and look
+
+00:55:39.126 --> 00:55:40.356 A:middle
+at the stack traces and try to
+
+00:55:40.356 --> 00:55:41.846 A:middle
+figure out which parts of your
+
+00:55:41.846 --> 00:55:43.886 A:middle
+app do you need to exercise to
+
+00:55:43.886 --> 00:55:45.456 A:middle
+trigger a crash or to try to
+
+00:55:45.456 --> 00:55:46.336 A:middle
+reproduce the crash.
+
+00:55:46.906 --> 00:55:49.166 A:middle
+And finally, for crashes that
+
+00:55:49.166 --> 00:55:50.936 A:middle
+are hard to reproduce I
+
+00:55:50.936 --> 00:55:52.446 A:middle
+recommend using bug finding
+
+00:55:52.446 --> 00:55:54.216 A:middle
+tools, such as Address Sanitizer
+
+00:55:54.216 --> 00:55:56.486 A:middle
+or Thread Sanitizer which work
+
+00:55:56.486 --> 00:55:58.096 A:middle
+for editing memory corruption
+
+00:55:58.096 --> 00:55:59.216 A:middle
+bugs and multithreading
+
+00:55:59.216 --> 00:55:59.706 A:middle
+problems.
+

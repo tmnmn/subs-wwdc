@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.986 --> 00:12:01.955 align:start position:32% line:-1
+このような見え方です
+
+00:12:02.122 --> 00:12:03.156 align:start position:36% line:-1
+ソースコードが―
+
+00:12:03.257 --> 00:12:07.161 align:start position:18% line:-2
+Swift Playgroundsで
+横に表示されます
+
+00:12:07.261 --> 00:12:13.400 align:start position:23% line:-2
+シミュレート用に左側に
+いくつかのボタンを追加しました
+
+00:12:13.500 --> 00:12:15.569 align:start position:23% line:-1
+test app用のコードです
+
+00:12:15.669 --> 00:12:18.405 align:start position:30% line:-1
+グレースがタップすると
+
+00:12:18.572 --> 00:12:21.909 align:start position:29% line:-1
+フィルタが適用されました
+
+00:12:22.009 --> 00:12:23.410 align:start position:41% line:-1
+すばらしい
+
+00:12:23.510 --> 00:12:28.815 align:start position:18% line:-2
+今度は“CIPointillize”
+フィルタを試してみましょう
+
+00:12:28.916 --> 00:12:30.450 align:start position:38% line:-1
+タップすると…
+
+00:12:32.186 --> 00:12:34.388 align:start position:32% line:-1
+同じように見えますが
+
+00:12:34.488 --> 00:12:38.892 align:start position:27% line:-2
+先ほどのピンクのフィルタが
+縁に残っています
+
+00:12:38.992 --> 00:12:44.231 align:start position:21% line:-2
+Pointillizeフィルタの
+サイズが小さかったのです
+
+00:12:44.331 --> 00:12:50.037 align:start position:11% line:-2
+FilterRendererにバグがあるので
+Xcodeに戻りましょう
+
+00:12:50.337 --> 00:12:51.905 align:start position:27% line:-1
+renderという関数です
+
+00:12:52.005 --> 00:12:56.009 align:start position:18% line:-2
+Open Quickly機能を使って
+呼び出します
+
+00:12:57.077 --> 00:13:01.415 align:start position:21% line:-2
+さらにメソッドがリターンする前に
+ブレークポイントを設定
+

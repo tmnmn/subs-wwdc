@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.646 --> 00:33:00.656 A:middle
+And we discussed the layer
+
+00:33:00.656 --> 00:33:02.986 A:middle
+descriptor setup in our last
+
+00:33:02.986 --> 00:33:04.676 A:middle
+year WWDC session in a lot more
+
+00:33:04.676 --> 00:33:05.146 A:middle
+detail.
+
+00:33:05.146 --> 00:33:06.766 A:middle
+So, I want to refer you to the
+
+00:33:06.766 --> 00:33:08.616 A:middle
+session for more information on
+
+00:33:08.616 --> 00:33:10.376 A:middle
+LSTM layer descriptor setup.
+
+00:33:11.196 --> 00:33:12.586 A:middle
+Once you have the descriptor,
+
+00:33:13.936 --> 00:33:15.936 A:middle
+the next step is to create LSTM
+
+00:33:15.936 --> 00:33:17.046 A:middle
+training layer with this
+
+00:33:17.076 --> 00:33:17.596 A:middle
+descriptor.
+
+00:33:19.836 --> 00:33:22.156 A:middle
+MPS will populate training
+
+00:33:22.156 --> 00:33:24.146 A:middle
+weights using the data sources
+
+00:33:24.146 --> 00:33:25.576 A:middle
+specified in the descriptor.
+
+00:33:25.906 --> 00:33:27.506 A:middle
+And we also need to have some
+
+00:33:27.506 --> 00:33:29.116 A:middle
+matrices to hold the computed
+
+00:33:29.116 --> 00:33:29.626 A:middle
+gradients.
+
+00:33:30.816 --> 00:33:31.496 A:middle
+You will use the
+
+00:33:31.496 --> 00:33:34.376 A:middle
+createWeightGradientMatrices API
+
+00:33:34.376 --> 00:33:36.346 A:middle
+on the training layer to create
+
+00:33:36.346 --> 00:33:37.036 A:middle
+these matrices.
+
+00:33:37.446 --> 00:33:39.456 A:middle
+And then, the training weights
+
+00:33:39.886 --> 00:33:41.426 A:middle
+will be used in a forward and
+
+00:33:41.426 --> 00:33:43.526 A:middle
+gradient passes and will be
+
+00:33:43.526 --> 00:33:45.026 A:middle
+passed to an optimizer along
+
+00:33:45.026 --> 00:33:46.246 A:middle
+with the computed gradients,
+
+00:33:46.336 --> 00:33:47.106 A:middle
+job, to date, weights.
+
+00:33:47.636 --> 00:33:50.726 A:middle
+And now we need to prepare some
+
+00:33:50.726 --> 00:33:52.736 A:middle
+inputs and outputs for training
+
+00:33:52.736 --> 00:33:53.516 A:middle
+our LSTM.
+
+00:33:53.996 --> 00:33:55.836 A:middle
+So, here's an example of how you
+
+00:33:55.836 --> 00:33:58.266 A:middle
+can create the matrices to hold
+
+00:33:58.266 --> 00:33:59.776 A:middle
+the input and output sequences
+
+00:33:59.776 --> 00:34:01.286 A:middle
+for both the forward and
+

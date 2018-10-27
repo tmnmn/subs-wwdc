@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.186 --> 00:14:00.196 A:middle
+that comes, that indicates that
+
+00:14:00.196 --> 00:14:02.116 A:middle
+it preserves the order of the
+
+00:14:02.116 --> 00:14:03.646 A:middle
+elements that it doesn't move,
+
+00:14:04.486 --> 00:14:06.396 A:middle
+but it can scramble the elements
+
+00:14:06.436 --> 00:14:09.026 A:middle
+that it moves to the end.
+
+00:14:09.206 --> 00:14:10.426 A:middle
+Now, sometimes, that doesn't
+
+00:14:10.426 --> 00:14:11.786 A:middle
+matter though; the second
+
+00:14:11.786 --> 00:14:13.166 A:middle
+algorithm removes subrange.
+
+00:14:13.166 --> 00:14:14.146 A:middle
+It's just going to delete them
+
+00:14:14.146 --> 00:14:14.456 A:middle
+anyway.
+
+00:14:16.476 --> 00:14:17.956 A:middle
+Have we all seen this partial
+
+00:14:17.956 --> 00:14:18.696 A:middle
+range notation?
+
+00:14:19.256 --> 00:14:21.426 A:middle
+It's just a really convenient
+
+00:14:21.426 --> 00:14:22.656 A:middle
+way of writing a range that
+
+00:14:22.656 --> 00:14:23.696 A:middle
+extends to the end of the
+
+00:14:23.696 --> 00:14:24.000 A:middle
+collection.
+
+00:14:26.896 --> 00:14:27.116 A:middle
+Okay.
+
+00:14:27.846 --> 00:14:29.986 A:middle
+Now, remove subrange is part of
+
+00:14:29.986 --> 00:14:31.826 A:middle
+the library's public API, so you
+
+00:14:31.826 --> 00:14:33.496 A:middle
+can find its documentation
+
+00:14:33.496 --> 00:14:36.276 A:middle
+online, but halfStablePartition
+
+00:14:36.456 --> 00:14:37.696 A:middle
+is an implementation detail.
+
+00:14:38.236 --> 00:14:42.166 A:middle
+Now, we're not going to step
+
+00:14:42.166 --> 00:14:43.556 A:middle
+through all of it, but there are
+
+00:14:43.556 --> 00:14:44.906 A:middle
+a few things worth noticing
+
+00:14:44.906 --> 00:14:45.116 A:middle
+here.
+
+00:14:46.516 --> 00:14:48.846 A:middle
+First, it starts by calling yet
+
+00:14:48.846 --> 00:14:49.696 A:middle
+another algorithm,
+
+00:14:50.486 --> 00:14:52.596 A:middle
+firstIndex(where), to find the
+
+00:14:52.856 --> 00:14:54.716 A:middle
+position of the first element
+
+00:14:54.716 --> 00:14:55.796 A:middle
+that belongs in the suffix.
+
+00:14:57.176 --> 00:14:58.766 A:middle
+Next, it sets up a loop variable
+
+00:14:58.766 --> 00:15:01.126 A:middle
+j, and there's a single loop,
+

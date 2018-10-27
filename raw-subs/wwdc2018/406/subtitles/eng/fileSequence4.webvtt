@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.176 --> 00:04:01.266 A:middle
+interested in it.
+
+00:04:01.586 --> 00:04:02.976 A:middle
+What's more, because Any has to
+
+00:04:02.976 --> 00:04:04.526 A:middle
+account for any different kind
+
+00:04:04.526 --> 00:04:04.896 A:middle
+of type.
+
+00:04:05.466 --> 00:04:06.566 A:middle
+Including types that are too
+
+00:04:06.566 --> 00:04:08.686 A:middle
+large to fit inside its own
+
+00:04:08.686 --> 00:04:10.666 A:middle
+internal storage, it has to
+
+00:04:10.666 --> 00:04:11.866 A:middle
+sometimes use indirection.
+
+00:04:11.866 --> 00:04:13.456 A:middle
+It has to hold a pointer to the
+
+00:04:13.456 --> 00:04:14.886 A:middle
+values, and that value could be
+
+00:04:14.886 --> 00:04:16.565 A:middle
+located all over memory.
+
+00:04:17.886 --> 00:04:18.875 A:middle
+And so we really want to solve
+
+00:04:18.875 --> 00:04:20.136 A:middle
+these problems, not just for
+
+00:04:20.136 --> 00:04:21.526 A:middle
+ease of use and correctness, but
+
+00:04:21.526 --> 00:04:23.556 A:middle
+also for performance reasons.
+
+00:04:24.146 --> 00:04:26.126 A:middle
+And, we do it using a technique
+
+00:04:26.816 --> 00:04:28.556 A:middle
+called parametric polymorphism.
+
+00:04:29.376 --> 00:04:30.606 A:middle
+Which is just another term for
+
+00:04:30.606 --> 00:04:32.776 A:middle
+what we in Swift refer to as
+
+00:04:32.776 --> 00:04:33.446 A:middle
+generics.
+
+00:04:34.716 --> 00:04:36.476 A:middle
+With a generic approach, we put
+
+00:04:36.476 --> 00:04:38.346 A:middle
+more information on the buffer,
+
+00:04:38.346 --> 00:04:39.466 A:middle
+to represent the type that the
+
+00:04:39.466 --> 00:04:40.596 A:middle
+buffer is going to contain.
+
+00:04:41.746 --> 00:04:42.836 A:middle
+We'll call that type Element.
+
+00:04:44.196 --> 00:04:45.826 A:middle
+Element is a generic parameter
+
+00:04:45.826 --> 00:04:47.436 A:middle
+of the type, hence the term of
+
+00:04:47.436 --> 00:04:48.896 A:middle
+parametric polymorphism.
+
+00:04:49.096 --> 00:04:50.726 A:middle
+You can think of it kind of like
+
+00:04:50.726 --> 00:04:52.626 A:middle
+a compile-time argument that
+
+00:04:52.626 --> 00:04:53.926 A:middle
+tells the buffer what it's going
+
+00:04:53.926 --> 00:04:54.396 A:middle
+to contain.
+
+00:04:55.716 --> 00:04:56.946 A:middle
+Now it has a way of referring to
+
+00:04:56.946 --> 00:04:57.706 A:middle
+that element type.
+
+00:04:57.976 --> 00:04:59.106 A:middle
+It can use it wherever it was
+
+00:04:59.146 --> 00:05:00.316 A:middle
+previously using Any.
+

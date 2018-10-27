@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.336 --> 00:54:01.556 A:middle
+It, it's just replaced with a no
+
+00:54:01.556 --> 00:54:02.046 A:middle
+operation.
+
+00:54:02.666 --> 00:54:03.636 A:middle
+Finally we branch.
+
+00:54:04.916 --> 00:54:10.276 A:middle
+Okay, but we branch and what are
+
+00:54:10.276 --> 00:54:11.366 A:middle
+we going to do?
+
+00:54:11.366 --> 00:54:12.456 A:middle
+Because we have this undefined
+
+00:54:12.456 --> 00:54:12.816 A:middle
+symbol?
+
+00:54:12.876 --> 00:54:14.146 A:middle
+Well, we're going to go and keep
+
+00:54:14.146 --> 00:54:15.696 A:middle
+looking through, and all of our
+
+00:54:15.696 --> 00:54:16.616 A:middle
+.o's have been included at this
+
+00:54:16.666 --> 00:54:17.326 A:middle
+point.
+
+00:54:18.416 --> 00:54:19.186 A:middle
+So we'll start looking at the
+
+00:54:19.186 --> 00:54:20.496 A:middle
+static archives [inaudible] and
+
+00:54:20.596 --> 00:54:22.376 A:middle
+PetSupport.a is there.
+
+00:54:22.376 --> 00:54:24.436 A:middle
+And inside of PetSupport.a, we
+
+00:54:24.436 --> 00:54:27.286 A:middle
+have a couple of files including
+
+00:54:27.286 --> 00:54:30.666 A:middle
+PetSounds.o. And if we look, we
+
+00:54:30.666 --> 00:54:31.966 A:middle
+see that matching file-- that
+
+00:54:31.966 --> 00:54:33.376 A:middle
+matching symbol for playSound.
+
+00:54:34.806 --> 00:54:38.216 A:middle
+So we pull it in.
+
+00:54:38.446 --> 00:54:39.796 A:middle
+We'll note that we do not pull
+
+00:54:39.796 --> 00:54:42.496 A:middle
+in PetCare.o. Because that .o
+
+00:54:42.496 --> 00:54:44.026 A:middle
+file did not have any symbols
+
+00:54:44.026 --> 00:54:45.236 A:middle
+that were referred to by any of
+
+00:54:45.236 --> 00:54:46.326 A:middle
+the other portions of the
+
+00:54:46.326 --> 00:54:46.966 A:middle
+application.
+
+00:54:47.536 --> 00:54:49.786 A:middle
+Okay, so we pulled that in, but
+
+00:54:49.786 --> 00:54:52.536 A:middle
+now that needs, open which we
+
+00:54:52.536 --> 00:54:53.316 A:middle
+didn't define.
+
+00:54:53.316 --> 00:54:56.256 A:middle
+You'll see in the, in the, the
+
+00:54:56.256 --> 00:54:57.096 A:middle
+conversion we copied in.
+
+00:54:57.096 --> 00:54:57.916 A:middle
+We actually replaced it with
+
+00:54:57.916 --> 00:54:59.626 A:middle
+something called open$stub.
+
+00:54:59.846 --> 00:55:01.306 A:middle
+Now why did we do that?
+

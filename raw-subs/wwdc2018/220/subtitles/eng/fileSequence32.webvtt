@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.006 --> 00:32:00.346 A:middle
+log entry label being able to
+
+00:32:00.346 --> 00:32:00.806 A:middle
+get longer.
+
+00:32:01.616 --> 00:32:02.726 A:middle
+So those green constraints
+
+00:32:03.046 --> 00:32:04.866 A:middle
+should be added when you create
+
+00:32:04.866 --> 00:32:07.806 A:middle
+the views and then left in
+
+00:32:07.806 --> 00:32:08.206 A:middle
+place.
+
+00:32:08.566 --> 00:32:09.046 A:middle
+Don't touch them.
+
+00:32:09.276 --> 00:32:10.236 A:middle
+They want to stay where they
+
+00:32:10.236 --> 00:32:10.446 A:middle
+are.
+
+00:32:12.026 --> 00:32:13.646 A:middle
+But now we have the four
+
+00:32:13.646 --> 00:32:15.076 A:middle
+constraints that are controlling
+
+00:32:15.076 --> 00:32:15.586 A:middle
+the image view.
+
+00:32:15.846 --> 00:32:16.926 A:middle
+So what do we do with those?
+
+00:32:17.216 --> 00:32:17.916 A:middle
+Well, let's stick them in an
+
+00:32:17.916 --> 00:32:21.366 A:middle
+array and let's also take the
+
+00:32:21.366 --> 00:32:22.276 A:middle
+constraints that are going to be
+
+00:32:22.276 --> 00:32:23.746 A:middle
+there when there's no image.
+
+00:32:24.126 --> 00:32:25.246 A:middle
+And I very creatively named
+
+00:32:25.246 --> 00:32:26.416 A:middle
+these imageConstraints and
+
+00:32:26.416 --> 00:32:27.696 A:middle
+noImageConstraints so you can
+
+00:32:27.696 --> 00:32:28.526 A:middle
+keep them apart.
+
+00:32:29.216 --> 00:32:32.316 A:middle
+And let's, when we're getting to
+
+00:32:32.316 --> 00:32:33.456 A:middle
+the point where we're going to
+
+00:32:33.456 --> 00:32:34.526 A:middle
+be putting in this image view or
+
+00:32:34.526 --> 00:32:36.366 A:middle
+taking it away, let's see what
+
+00:32:36.366 --> 00:32:37.556 A:middle
+layout we're currently in.
+
+00:32:38.036 --> 00:32:38.666 A:middle
+Deactivate the
+
+00:32:38.666 --> 00:32:40.546 A:middle
+noImageConstraints if we need to
+
+00:32:41.086 --> 00:32:42.346 A:middle
+and activate the ones for the
+
+00:32:42.346 --> 00:32:42.776 A:middle
+image.
+
+00:32:43.786 --> 00:32:45.516 A:middle
+If we don't have an image coming
+
+00:32:45.516 --> 00:32:46.716 A:middle
+in, you know, all of our other
+
+00:32:46.716 --> 00:32:47.426 A:middle
+constraints are already
+
+00:32:47.426 --> 00:32:48.886 A:middle
+activated, we just have the one
+
+00:32:49.186 --> 00:32:49.846 A:middle
+that we're adding.
+
+00:32:50.176 --> 00:32:51.416 A:middle
+Now I put these both in arrays
+
+00:32:51.416 --> 00:32:52.456 A:middle
+despite the fact that this is a
+
+00:32:52.456 --> 00:32:53.936 A:middle
+single constraint because it
+
+00:32:53.936 --> 00:32:55.226 A:middle
+simplifies things in my code.
+
+00:32:55.756 --> 00:32:56.676 A:middle
+I don't need to check and see
+
+00:32:56.676 --> 00:32:57.486 A:middle
+whether I'm dealing with an
+
+00:32:57.486 --> 00:32:58.846 A:middle
+array or a single constraint,
+
+00:32:59.206 --> 00:33:00.226 A:middle
+I'm always dealing with an array
+

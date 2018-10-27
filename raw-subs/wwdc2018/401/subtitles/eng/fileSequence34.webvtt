@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.896 --> 00:34:01.386 A:middle
+Memory Exclusivity Checking,
+
+00:34:01.646 --> 00:34:02.896 A:middle
+which was a combination of
+
+00:34:02.956 --> 00:34:05.186 A:middle
+compile time and runtime checks
+
+00:34:05.436 --> 00:34:06.696 A:middle
+that restricted certain
+
+00:34:06.696 --> 00:34:08.856 A:middle
+operations from being performed.
+
+00:34:09.315 --> 00:34:10.976 A:middle
+In particular we banned
+
+00:34:11.286 --> 00:34:13.376 A:middle
+overlapping access to the same
+
+00:34:13.376 --> 00:34:14.356 A:middle
+memory location.
+
+00:34:14.856 --> 00:34:15.656 A:middle
+What does this mean?
+
+00:34:15.815 --> 00:34:17.096 A:middle
+Well, let's look at an example.
+
+00:34:17.666 --> 00:34:20.085 A:middle
+So here's a piece of code that
+
+00:34:20.085 --> 00:34:21.706 A:middle
+implements a data type for
+
+00:34:21.896 --> 00:34:23.246 A:middle
+operating system paths.
+
+00:34:23.766 --> 00:34:25.446 A:middle
+And this is represented as an
+
+00:34:25.565 --> 00:34:27.005 A:middle
+array of path components.
+
+00:34:27.576 --> 00:34:28.815 A:middle
+And there's a withAppended
+
+00:34:28.815 --> 00:34:29.206 A:middle
+method.
+
+00:34:30.216 --> 00:34:31.946 A:middle
+This method adds an element to
+
+00:34:31.946 --> 00:34:33.735 A:middle
+the array, then in calls a
+
+00:34:33.735 --> 00:34:35.806 A:middle
+closure that you pass in and
+
+00:34:35.806 --> 00:34:37.036 A:middle
+then it removes that element
+
+00:34:37.076 --> 00:34:37.626 A:middle
+from the array.
+
+00:34:38.295 --> 00:34:40.036 A:middle
+And this code is totally fine,
+
+00:34:40.036 --> 00:34:41.726 A:middle
+it's a valid Swift 4 code.
+
+00:34:42.755 --> 00:34:44.505 A:middle
+But let's look at this usage of
+
+00:34:44.505 --> 00:34:45.536 A:middle
+our path data type.
+
+00:34:46.545 --> 00:34:47.976 A:middle
+So here I have a path that's
+
+00:34:47.976 --> 00:34:49.746 A:middle
+stored and a local variable and
+
+00:34:50.056 --> 00:34:51.806 A:middle
+then I call withAppended on it
+
+00:34:52.295 --> 00:34:54.856 A:middle
+and inside the closure I access
+
+00:34:54.856 --> 00:34:56.306 A:middle
+that local variable again
+
+00:34:56.536 --> 00:34:57.056 A:middle
+printing it.
+
+00:34:57.556 --> 00:34:58.696 A:middle
+So what the problem here?
+
+00:34:59.436 --> 00:35:01.076 A:middle
+Well, it turns out this code is
+

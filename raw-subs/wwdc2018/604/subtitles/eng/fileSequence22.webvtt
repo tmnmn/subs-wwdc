@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.456 --> 00:22:00.956 A:middle
+textures, buffers and pipeline
+
+00:22:00.956 --> 00:22:01.386 A:middle
+objects.
+
+00:22:02.846 --> 00:22:04.506 A:middle
+In iOS since there's only ever
+
+00:22:04.506 --> 00:22:06.826 A:middle
+one GPU there's only one device
+
+00:22:06.826 --> 00:22:08.626 A:middle
+you can get, but on macOS
+
+00:22:08.916 --> 00:22:10.356 A:middle
+systems can have multiple
+
+00:22:10.356 --> 00:22:12.216 A:middle
+devices since there may be both
+
+00:22:12.216 --> 00:22:14.126 A:middle
+an integrated and discrete GPU
+
+00:22:14.126 --> 00:22:16.026 A:middle
+and even multiple eGPUs.
+
+00:22:17.236 --> 00:22:18.286 A:middle
+Usually though, getting the
+
+00:22:18.286 --> 00:22:20.146 A:middle
+default device is sufficient for
+
+00:22:20.146 --> 00:22:21.126 A:middle
+most applications.
+
+00:22:21.886 --> 00:22:23.776 A:middle
+And getting this device is
+
+00:22:23.826 --> 00:22:25.216 A:middle
+really simple, you call
+
+00:22:25.276 --> 00:22:26.876 A:middle
+MTLCreateSystem
+
+00:22:26.876 --> 00:22:27.616 A:middle
+DefaultDevice.
+
+00:22:28.296 --> 00:22:31.136 A:middle
+One of the first things you'll
+
+00:22:31.136 --> 00:22:33.396 A:middle
+do with this device is create a
+
+00:22:33.396 --> 00:22:33.966 A:middle
+command queue.
+
+00:22:35.746 --> 00:22:37.416 A:middle
+The queue is used mostly in your
+
+00:22:37.416 --> 00:22:38.736 A:middle
+applications render loop to
+
+00:22:38.736 --> 00:22:40.036 A:middle
+obtain command buffers each
+
+00:22:40.086 --> 00:22:41.536 A:middle
+frame, but you want to create
+
+00:22:41.536 --> 00:22:42.836 A:middle
+the command queue at
+
+00:22:42.996 --> 00:22:43.826 A:middle
+initialization.
+
+00:22:45.036 --> 00:22:46.176 A:middle
+Typically, a single queue is
+
+00:22:46.176 --> 00:22:48.006 A:middle
+sufficient but more complex apps
+
+00:22:48.276 --> 00:22:49.926 A:middle
+that execute many tasks in
+
+00:22:49.926 --> 00:22:51.566 A:middle
+parallel may need multiple
+
+00:22:51.596 --> 00:22:51.986 A:middle
+queues.
+
+00:22:53.206 --> 00:22:54.696 A:middle
+Creating a queue is also really
+
+00:22:54.696 --> 00:22:56.666 A:middle
+simple, you call newCommandQueue
+
+00:22:56.906 --> 00:22:57.936 A:middle
+with the device you just
+
+00:22:57.936 --> 00:22:58.336 A:middle
+created.
+
+00:22:58.956 --> 00:22:59.996 A:middle
+And once you've got your queue
+

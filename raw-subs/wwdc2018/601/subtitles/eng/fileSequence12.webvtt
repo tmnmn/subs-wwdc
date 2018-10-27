@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.976 --> 00:12:01.436 A:middle
+know that many of you in this
+
+00:12:01.436 --> 00:12:04.206 A:middle
+room broadcast service
+
+00:12:04.206 --> 00:12:04.866 A:middle
+developers.
+
+00:12:05.756 --> 00:12:07.276 A:middle
+And finally, with this new API
+
+00:12:07.426 --> 00:12:09.696 A:middle
+your users can start the
+
+00:12:09.696 --> 00:12:11.616 A:middle
+broadcast directly from your
+
+00:12:11.616 --> 00:12:13.746 A:middle
+application and there's no more
+
+00:12:13.746 --> 00:12:14.816 A:middle
+need to include all those
+
+00:12:14.816 --> 00:12:16.316 A:middle
+tutorials, how you can enable
+
+00:12:16.316 --> 00:12:17.256 A:middle
+the screen recording and
+
+00:12:17.256 --> 00:12:18.886 A:middle
+settings and how to find your
+
+00:12:18.886 --> 00:12:19.816 A:middle
+service and that [inaudible] in
+
+00:12:19.816 --> 00:12:20.756 A:middle
+the Control Center.
+
+00:12:21.866 --> 00:12:24.306 A:middle
+But, however, you would probably
+
+00:12:24.566 --> 00:12:26.436 A:middle
+like the Picker to show the
+
+00:12:26.436 --> 00:12:28.786 A:middle
+broadcast extension for just
+
+00:12:28.786 --> 00:12:33.916 A:middle
+your service, and ReplayKit
+
+00:12:33.916 --> 00:12:35.956 A:middle
+provides API that lets you do
+
+00:12:35.956 --> 00:12:37.596 A:middle
+exactly that.
+
+00:12:38.116 --> 00:12:40.856 A:middle
+And it is just a property of
+
+00:12:40.856 --> 00:12:43.946 A:middle
+that view and what you need to
+
+00:12:43.946 --> 00:12:45.426 A:middle
+do is just get the bundle
+
+00:12:45.426 --> 00:12:47.866 A:middle
+identifier from your broadcast
+
+00:12:47.866 --> 00:12:49.836 A:middle
+extension and assign to the
+
+00:12:50.046 --> 00:12:51.966 A:middle
+property of the view called
+
+00:12:52.246 --> 00:12:53.306 A:middle
+preferredExtension.
+
+00:12:55.976 --> 00:12:58.596 A:middle
+Here's a code example of how you
+
+00:12:58.596 --> 00:12:59.256 A:middle
+could do this.
+
+00:12:59.616 --> 00:13:02.926 A:middle
+You would probably like to set
+

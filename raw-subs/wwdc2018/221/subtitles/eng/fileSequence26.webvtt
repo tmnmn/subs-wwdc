@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.516 --> 00:26:06.066 A:middle
+[ Applause ]
+
+00:26:06.566 --> 00:26:07.236 A:middle
+&gt;&gt; Thanks, Emily.
+
+00:26:08.056 --> 00:26:09.056 A:middle
+Those are some really cool
+
+00:26:09.056 --> 00:26:09.536 A:middle
+examples.
+
+00:26:09.666 --> 00:26:10.786 A:middle
+And I really hope you'll be able
+
+00:26:10.786 --> 00:26:11.706 A:middle
+to take some of the techniques
+
+00:26:11.706 --> 00:26:13.056 A:middle
+that she showed off and use them
+
+00:26:13.056 --> 00:26:13.876 A:middle
+in your own apps.
+
+00:26:14.596 --> 00:26:16.086 A:middle
+But now let's shift gears a bit
+
+00:26:16.416 --> 00:26:17.226 A:middle
+and talk about some best
+
+00:26:17.266 --> 00:26:19.766 A:middle
+practices for working with text.
+
+00:26:21.756 --> 00:26:23.196 A:middle
+So on the topic of correctness,
+
+00:26:23.796 --> 00:26:24.996 A:middle
+if your text doesn't render the
+
+00:26:24.996 --> 00:26:26.716 A:middle
+way you expect, it could be
+
+00:26:26.716 --> 00:26:28.596 A:middle
+related to incomplete or
+
+00:26:28.596 --> 00:26:29.806 A:middle
+incorrect attributes on your
+
+00:26:29.806 --> 00:26:30.556 A:middle
+attributed string.
+
+00:26:31.946 --> 00:26:33.636 A:middle
+And so let's take a look at an
+
+00:26:33.636 --> 00:26:35.066 A:middle
+example to see this in practice.
+
+00:26:36.116 --> 00:26:37.466 A:middle
+Let's say we have a UITextView
+
+00:26:37.666 --> 00:26:39.536 A:middle
+with some attributed text that
+
+00:26:39.536 --> 00:26:40.846 A:middle
+says don't hate.
+
+00:26:40.846 --> 00:26:42.636 A:middle
+And it says this in the font
+
+00:26:42.706 --> 00:26:44.266 A:middle
+Comic Sans 24 point.
+
+00:26:44.766 --> 00:26:46.746 A:middle
+And we want to programmatically
+
+00:26:46.746 --> 00:26:48.946 A:middle
+apply a bold typeface to the
+
+00:26:48.946 --> 00:26:50.736 A:middle
+word don't because if there's
+
+00:26:50.736 --> 00:26:52.396 A:middle
+any font more universally hated
+
+00:26:52.396 --> 00:26:54.116 A:middle
+than Comic Sans, it's Comic Sans
+
+00:26:54.116 --> 00:26:54.396 A:middle
+bold.
+
+00:26:54.776 --> 00:26:58.316 A:middle
+And so at first blush, it might
+
+00:26:58.316 --> 00:26:59.366 A:middle
+seem reasonable to write code
+
+00:26:59.366 --> 00:26:59.696 A:middle
+like this.
+

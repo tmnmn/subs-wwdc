@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.616 --> 00:28:00.136 A:middle
+have a little bit of code right
+
+00:28:00.136 --> 00:28:01.256 A:middle
+before the return of the
+
+00:28:01.256 --> 00:28:02.796 A:middle
+function that checks whether the
+
+00:28:02.796 --> 00:28:04.406 A:middle
+canary is still valid.
+
+00:28:05.916 --> 00:28:07.676 A:middle
+So if we keep writing in strcpy
+
+00:28:07.676 --> 00:28:08.826 A:middle
+we're going to override the
+
+00:28:08.826 --> 00:28:12.666 A:middle
+canary first and then we're
+
+00:28:12.666 --> 00:28:14.126 A:middle
+going to check the canary first
+
+00:28:14.126 --> 00:28:16.246 A:middle
+before returning and that's
+
+00:28:16.246 --> 00:28:16.866 A:middle
+going to abort.
+
+00:28:17.686 --> 00:28:19.076 A:middle
+So we turned ad potentially
+
+00:28:19.076 --> 00:28:20.276 A:middle
+exploitable security
+
+00:28:20.426 --> 00:28:22.516 A:middle
+vulnerability into a reliable
+
+00:28:22.516 --> 00:28:24.366 A:middle
+crash and that's not good for an
+
+00:28:24.366 --> 00:28:24.766 A:middle
+attacker.
+
+00:28:25.386 --> 00:28:27.506 A:middle
+So this is what's called the
+
+00:28:27.506 --> 00:28:27.966 A:middle
+Stack Protector.
+
+00:28:33.416 --> 00:28:34.896 A:middle
+It defects certain kinds of
+
+00:28:34.896 --> 00:28:36.306 A:middle
+stack buffer overflows, which is
+
+00:28:36.306 --> 00:28:37.346 A:middle
+the attack that we just saw.
+
+00:28:37.406 --> 00:28:39.466 A:middle
+And it's already enabled by
+
+00:28:39.466 --> 00:28:41.096 A:middle
+default in many versions of
+
+00:28:41.096 --> 00:28:41.416 A:middle
+Xcode.
+
+00:28:41.976 --> 00:28:45.856 A:middle
+So next I'm going to talk about
+
+00:28:45.856 --> 00:28:47.596 A:middle
+a trickier case where we
+
+00:28:47.676 --> 00:28:48.866 A:middle
+introduced a new mitigation.
+
+00:28:48.986 --> 00:28:52.346 A:middle
+So let's say I took my function,
+
+00:28:52.986 --> 00:28:55.346 A:middle
+again my dlog function and I
+
+00:28:55.346 --> 00:28:56.616 A:middle
+changed the buffer so that now
+
+00:28:56.616 --> 00:28:57.776 A:middle
+it's a variable length array.
+
+00:28:58.856 --> 00:29:00.426 A:middle
+And the length comes from a
+

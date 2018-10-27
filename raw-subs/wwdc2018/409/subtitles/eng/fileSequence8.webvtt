@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.906 --> 00:08:00.586 A:middle
+feature and if any of you were
+
+00:08:00.586 --> 00:08:02.896 A:middle
+put off from migrates over to
+
+00:08:02.896 --> 00:08:05.746 A:middle
+ARC because of lack of features
+
+00:08:05.746 --> 00:08:07.906 A:middle
+like that I hope that support
+
+00:08:07.906 --> 00:08:09.486 A:middle
+from ARC object pointer fields
+
+00:08:09.486 --> 00:08:11.596 A:middle
+in Xcode 10 will help you
+
+00:08:11.596 --> 00:08:12.816 A:middle
+reconsider your choice.
+
+00:08:14.076 --> 00:08:15.526 A:middle
+Now let's take a look at
+
+00:08:16.356 --> 00:08:17.636 A:middle
+Objective-C pointers and
+
+00:08:17.636 --> 00:08:19.476 A:middle
+structures in general and see
+
+00:08:19.856 --> 00:08:22.646 A:middle
+where and how can the structures
+
+00:08:22.686 --> 00:08:25.066 A:middle
+be used in different language
+
+00:08:25.066 --> 00:08:26.286 A:middle
+modes in Xcode 10.
+
+00:08:27.506 --> 00:08:30.966 A:middle
+So in Xcode 10 you can use
+
+00:08:31.146 --> 00:08:33.056 A:middle
+structures that have Objective-C
+
+00:08:33.056 --> 00:08:35.015 A:middle
+object pointer fields across
+
+00:08:35.015 --> 00:08:36.086 A:middle
+different language modes.
+
+00:08:36.576 --> 00:08:38.426 A:middle
+For example, you can use the
+
+00:08:38.496 --> 00:08:41.785 A:middle
+same structure in C Objective-C
+
+00:08:41.926 --> 00:08:43.796 A:middle
+or even Objective-C++.
+
+00:08:44.806 --> 00:08:47.046 A:middle
+And it will work correctly even
+
+00:08:47.246 --> 00:08:49.316 A:middle
+when you're compiling your code
+
+00:08:49.646 --> 00:08:51.956 A:middle
+in ARC or in the manual retain
+
+00:08:51.956 --> 00:08:52.606 A:middle
+release mode.
+
+00:08:54.176 --> 00:08:56.446 A:middle
+In Xcode 10 we actually unified
+
+00:08:56.796 --> 00:08:59.746 A:middle
+the Objective-C++ ABI between
+
+00:08:59.746 --> 00:09:02.596 A:middle
+calls to functions that took in
+

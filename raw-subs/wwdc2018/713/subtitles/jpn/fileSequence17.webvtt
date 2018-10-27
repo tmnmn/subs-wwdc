@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:55.716 --> 00:17:00.053 align:start position:32% line:-2
+訓練に使うテキストと
+ラベルを指定し―
+
+00:17:01.388 --> 00:17:05.459 align:start position:34% line:-2
+完成したモデルの
+保存先を指定します
+
+00:17:07.194 --> 00:17:12.165 align:start position:29% line:-2
+単語のタグ付け器の場合は
+もう少し複雑です
+
+00:17:12.266 --> 00:17:15.102 align:start position:27% line:-1
+例が１つのテキストではなく
+
+00:17:15.202 --> 00:17:17.971 align:start position:27% line:-1
+連続するトークンだからです
+
+00:17:18.704 --> 00:17:21.241 align:start position:32% line:-1
+すべてのトークンに―
+
+00:17:21.340 --> 00:17:24.744 align:start position:29% line:-1
+ラベルが１つ付いています
+
+00:17:24.845 --> 00:17:27.814 align:start position:34% line:-1
+この訓練データは―
+
+00:17:27.915 --> 00:17:32.152 align:start position:30% line:-2
+固有名詞を
+抽出するためのものです
+
+00:17:32.352 --> 00:17:35.856 align:start position:36% line:-2
+それぞれの単語に
+ラベルがあります
+
+00:17:35.956 --> 00:17:39.259 align:start position:32% line:-2
+固有名詞でない場合は
+“NONE”
+
+00:17:39.359 --> 00:17:43.664 align:start position:30% line:-2
+組織名には“ORG”
+商品名には“PROD”
+
+00:17:43.764 --> 00:17:48.035 align:start position:29% line:-2
+他にもさまざまなラベルを
+作れます
+
+00:17:48.135 --> 00:17:50.370 align:start position:29% line:-1
+各トークンにラベルがあり
+
+00:17:50.671 --> 00:17:53.674 align:start position:29% line:-1
+１つの文章はトークンと―
+
+00:17:53.774 --> 00:17:57.110 align:start position:29% line:-1
+ラベルで構成されています
+
+00:17:58.512 --> 00:18:03.283 align:start position:25% line:-2
+Create MLの使い方は
+ほぼ同じです
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.136 --> 00:10:00.396 A:middle
+FairPlay introduced a new TLLV
+
+00:10:00.396 --> 00:10:02.526 A:middle
+called Offline Key TLLV for this
+
+00:10:02.526 --> 00:10:03.076 A:middle
+purpose.
+
+00:10:04.046 --> 00:10:06.176 A:middle
+This has to be signaled in the
+
+00:10:06.176 --> 00:10:07.386 A:middle
+CKC that is used while
+
+00:10:07.386 --> 00:10:08.936 A:middle
+requesting persistent key.
+
+00:10:11.966 --> 00:10:14.026 A:middle
+In terms of code, you generate a
+
+00:10:14.026 --> 00:10:16.216 A:middle
+persistent key by calling this
+
+00:10:16.216 --> 00:10:17.286 A:middle
+method on
+
+00:10:17.286 --> 00:10:18.776 A:middle
+AVPersistableContentKeyRequest
+
+00:10:18.776 --> 00:10:19.196 A:middle
+Object.
+
+00:10:20.376 --> 00:10:22.126 A:middle
+This returns a persistent key
+
+00:10:22.126 --> 00:10:24.246 A:middle
+data blob that you should save
+
+00:10:24.246 --> 00:10:26.666 A:middle
+in your app storage and use it
+
+00:10:26.836 --> 00:10:28.256 A:middle
+to answer future key loading
+
+00:10:28.256 --> 00:10:29.406 A:middle
+requests.
+
+00:10:30.606 --> 00:10:32.166 A:middle
+Note that this key is valid
+
+00:10:32.526 --> 00:10:33.776 A:middle
+until the end of storage
+
+00:10:33.776 --> 00:10:35.306 A:middle
+duration, 30 days from our
+
+00:10:35.306 --> 00:10:35.816 A:middle
+example.
+
+00:10:37.426 --> 00:10:39.456 A:middle
+So, when you use this key to
+
+00:10:39.456 --> 00:10:41.046 A:middle
+start the playback for the first
+
+00:10:41.046 --> 00:10:43.486 A:middle
+time you might receive an
+
+00:10:43.516 --> 00:10:46.316 A:middle
+updated persistent key through a
+
+00:10:46.316 --> 00:10:47.606 A:middle
+new delegate callback.
+
+00:10:49.476 --> 00:10:50.556 A:middle
+When the delegate callback is
+
+00:10:50.556 --> 00:10:52.446 A:middle
+involved you should discard the
+
+00:10:52.446 --> 00:10:54.696 A:middle
+original persistent key and save
+
+00:10:54.696 --> 00:10:56.206 A:middle
+this updated persistent key in
+
+00:10:56.206 --> 00:10:57.246 A:middle
+your app storage.
+
+00:10:58.926 --> 00:11:01.436 A:middle
+You should use this to answer
+

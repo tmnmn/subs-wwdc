@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.316 --> 00:18:01.136 A:middle
+on our behalf inside face
+
+00:18:01.136 --> 00:18:01.546 A:middle
+detector.
+
+00:18:02.106 --> 00:18:03.686 A:middle
+It gets results from that face
+
+00:18:03.686 --> 00:18:05.306 A:middle
+detector, and that's where
+
+00:18:05.306 --> 00:18:06.536 A:middle
+landmarks are being searched
+
+00:18:06.536 --> 00:18:06.716 A:middle
+for.
+
+00:18:08.716 --> 00:18:10.896 A:middle
+On the right-hand side, you can
+
+00:18:11.306 --> 00:18:14.186 A:middle
+see a snippet of what face
+
+00:18:14.186 --> 00:18:15.386 A:middle
+observation object would look
+
+00:18:15.386 --> 00:18:15.566 A:middle
+like.
+
+00:18:15.816 --> 00:18:16.576 A:middle
+These are just a couple of
+
+00:18:16.576 --> 00:18:17.446 A:middle
+fields from that object.
+
+00:18:17.806 --> 00:18:19.296 A:middle
+One is a unique ID that we
+
+00:18:19.296 --> 00:18:20.376 A:middle
+discussed that is set to some
+
+00:18:20.376 --> 00:18:20.956 A:middle
+unique number.
+
+00:18:21.656 --> 00:18:23.316 A:middle
+Then, the bounding box, that's
+
+00:18:23.316 --> 00:18:25.216 A:middle
+where the face is located, and
+
+00:18:25.216 --> 00:18:26.436 A:middle
+then, finally, the landmarks
+
+00:18:26.436 --> 00:18:27.936 A:middle
+field, which points to some
+
+00:18:27.936 --> 00:18:29.216 A:middle
+object where the landmarks are
+
+00:18:29.216 --> 00:18:29.656 A:middle
+described.
+
+00:18:33.526 --> 00:18:35.236 A:middle
+Now, let's take a look at the
+
+00:18:35.236 --> 00:18:37.716 A:middle
+same use case but now done
+
+00:18:37.716 --> 00:18:38.336 A:middle
+explicitly.
+
+00:18:40.416 --> 00:18:41.556 A:middle
+What I'm going to do here
+
+00:18:41.556 --> 00:18:42.876 A:middle
+first-- first, I'm going to
+
+00:18:42.876 --> 00:18:44.486 A:middle
+explicitly run my face detector.
+
+00:18:45.116 --> 00:18:47.516 A:middle
+You've seen these four lines of
+
+00:18:47.516 --> 00:18:49.076 A:middle
+code already several times in
+
+00:18:49.076 --> 00:18:49.796 A:middle
+the presentation.
+
+00:18:49.856 --> 00:18:51.346 A:middle
+When I run it, I get my bounding
+
+00:18:51.346 --> 00:18:51.786 A:middle
+box back.
+
+00:18:52.606 --> 00:18:54.376 A:middle
+As you can see, the results are
+
+00:18:54.376 --> 00:18:56.016 A:middle
+returned in the same type, face
+
+00:18:56.016 --> 00:18:56.616 A:middle
+observation.
+
+00:18:57.276 --> 00:18:58.796 A:middle
+The fields that we saw on the
+
+00:18:58.796 --> 00:18:59.946 A:middle
+previous slide may look like
+
+00:18:59.946 --> 00:19:01.176 A:middle
+this, so you get some unique
+

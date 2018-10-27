@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.806 --> 00:14:03.136 A:middle
+be collected for this workout.
+
+00:14:03.236 --> 00:14:05.486 A:middle
+Next, I simply need to set the
+
+00:14:05.486 --> 00:14:07.676 A:middle
+data source on the live workout
+
+00:14:07.676 --> 00:14:07.956 A:middle
+builder.
+
+00:14:09.546 --> 00:14:11.616 A:middle
+And optionally, you can add or
+
+00:14:11.616 --> 00:14:13.576 A:middle
+remove types that are being
+
+00:14:13.576 --> 00:14:14.036 A:middle
+collected.
+
+00:14:14.746 --> 00:14:16.636 A:middle
+So let's say I want to add the
+
+00:14:16.636 --> 00:14:17.016 A:middle
+type.
+
+00:14:17.686 --> 00:14:20.206 A:middle
+I can specify which type I want
+
+00:14:20.206 --> 00:14:22.096 A:middle
+to add here as well as an
+
+00:14:22.166 --> 00:14:24.056 A:middle
+optional predicate if I want to
+
+00:14:24.056 --> 00:14:26.046 A:middle
+further limit which types are
+
+00:14:26.046 --> 00:14:26.756 A:middle
+being collected.
+
+00:14:27.786 --> 00:14:29.516 A:middle
+And finally, we just call
+
+00:14:29.996 --> 00:14:30.856 A:middle
+dataSource.
+
+00:14:31.036 --> 00:14:34.566 A:middle
+collectStatistics for and pass
+
+00:14:34.616 --> 00:14:36.586 A:middle
+the type as well as the
+
+00:14:36.586 --> 00:14:37.676 A:middle
+optionalPredicate.
+
+00:14:37.966 --> 00:14:41.816 A:middle
+So now that we have data being
+
+00:14:41.866 --> 00:14:44.186 A:middle
+collected, let's see how we can
+
+00:14:44.726 --> 00:14:47.026 A:middle
+display it directly in our user
+
+00:14:47.026 --> 00:14:47.686 A:middle
+interface.
+
+00:14:48.246 --> 00:14:52.916 A:middle
+So every time new data comes in
+
+00:14:53.866 --> 00:14:55.486 A:middle
+the builder's delegate method,
+
+00:14:55.926 --> 00:14:58.346 A:middle
+workout builder did collect data
+
+00:14:58.346 --> 00:14:59.966 A:middle
+of collected types will be
+
+00:14:59.966 --> 00:15:00.356 A:middle
+called.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.236 --> 00:08:00.446 A:middle
+mentioned earlier, is
+
+00:08:00.446 --> 00:08:01.956 A:middle
+proportional to the size of the
+
+00:08:02.036 --> 00:08:02.786 A:middle
+input image.
+
+00:08:03.116 --> 00:08:04.616 A:middle
+Not necessarily, the size of the
+
+00:08:04.616 --> 00:08:05.946 A:middle
+image view that's actually
+
+00:08:05.946 --> 00:08:07.006 A:middle
+rendered in the frame buffer.
+
+00:08:07.196 --> 00:08:09.196 A:middle
+And this can have some pretty
+
+00:08:09.196 --> 00:08:10.346 A:middle
+negative consequences on
+
+00:08:10.346 --> 00:08:11.026 A:middle
+performance.
+
+00:08:12.416 --> 00:08:14.806 A:middle
+The large allocation that is in
+
+00:08:14.806 --> 00:08:16.356 A:middle
+your application's address space
+
+00:08:16.706 --> 00:08:18.356 A:middle
+could force other related
+
+00:08:18.356 --> 00:08:20.896 A:middle
+content apart from content that
+
+00:08:20.896 --> 00:08:21.876 A:middle
+it wants to reference.
+
+00:08:21.916 --> 00:08:23.436 A:middle
+This is called fragmentation.
+
+00:08:25.596 --> 00:08:27.476 A:middle
+Eventually, if your application
+
+00:08:27.476 --> 00:08:29.116 A:middle
+starts accumulating a lot of
+
+00:08:29.116 --> 00:08:30.956 A:middle
+memory usage the operating
+
+00:08:30.956 --> 00:08:32.326 A:middle
+system will step in and start
+
+00:08:32.326 --> 00:08:34.006 A:middle
+transparently compressing the
+
+00:08:34.006 --> 00:08:35.586 A:middle
+content of physical memory.
+
+00:08:36.736 --> 00:08:38.126 A:middle
+Now, the CPU needs to be
+
+00:08:38.126 --> 00:08:39.946 A:middle
+involved in this operation so in
+
+00:08:39.946 --> 00:08:41.576 A:middle
+addition to any CPU usage in
+
+00:08:41.576 --> 00:08:42.936 A:middle
+your own application.
+
+00:08:43.356 --> 00:08:45.326 A:middle
+You could be increasing global
+
+00:08:45.326 --> 00:08:46.676 A:middle
+CPU usage that you have no
+
+00:08:46.676 --> 00:08:47.336 A:middle
+control over.
+
+00:08:48.986 --> 00:08:50.346 A:middle
+Eventually, your application
+
+00:08:50.626 --> 00:08:51.956 A:middle
+could start consuming so much
+
+00:08:51.956 --> 00:08:53.706 A:middle
+physical memory that the OS
+
+00:08:53.706 --> 00:08:55.036 A:middle
+needs to start terminating
+
+00:08:55.036 --> 00:08:55.816 A:middle
+processes.
+
+00:08:56.426 --> 00:08:57.756 A:middle
+And it'll start with background
+
+00:08:57.756 --> 00:08:59.186 A:middle
+processes of low priority.
+
+00:08:59.546 --> 00:09:01.676 A:middle
+And, eventually, if your
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.016 --> 00:12:01.036 A:middle
+tests is that when something
+
+00:12:01.036 --> 00:12:01.986 A:middle
+goes wrong when you get a test
+
+00:12:01.986 --> 00:12:03.806 A:middle
+failure, it can be really hard
+
+00:12:03.806 --> 00:12:04.986 A:middle
+to know where to start looking
+
+00:12:04.986 --> 00:12:06.006 A:middle
+for the source of the problem.
+
+00:12:06.516 --> 00:12:08.876 A:middle
+One thing that we were doing in
+
+00:12:08.876 --> 00:12:09.876 A:middle
+our test recently to help
+
+00:12:09.876 --> 00:12:12.156 A:middle
+mitigate this was to set up a
+
+00:12:12.156 --> 00:12:13.606 A:middle
+local instance of a mock server,
+
+00:12:14.366 --> 00:12:15.806 A:middle
+interrupting our UI tests to
+
+00:12:15.806 --> 00:12:16.996 A:middle
+make requests against that
+
+00:12:17.366 --> 00:12:18.386 A:middle
+instead of the real server.
+
+00:12:19.736 --> 00:12:21.126 A:middle
+This allowed our UI test to be
+
+00:12:21.126 --> 00:12:22.696 A:middle
+much more reliable, because we
+
+00:12:22.696 --> 00:12:24.226 A:middle
+had control over the data being
+
+00:12:24.226 --> 00:12:26.066 A:middle
+fed back into the app.
+
+00:12:28.366 --> 00:12:30.106 A:middle
+Now, while using a mock server
+
+00:12:30.106 --> 00:12:31.106 A:middle
+can be really useful in this
+
+00:12:31.106 --> 00:12:33.156 A:middle
+context, it is also good to have
+
+00:12:33.156 --> 00:12:34.816 A:middle
+some tests making requests
+
+00:12:34.816 --> 00:12:35.706 A:middle
+against the real server.
+
+00:12:36.256 --> 00:12:40.056 A:middle
+One cool technique for doing
+
+00:12:40.056 --> 00:12:41.836 A:middle
+this can be to have some tests
+
+00:12:41.836 --> 00:12:43.656 A:middle
+in the unit testing bundle that
+
+00:12:43.656 --> 00:12:45.236 A:middle
+call directly into your apps in
+
+00:12:45.236 --> 00:12:47.686 A:middle
+that work in Stack and use that
+
+00:12:47.836 --> 00:12:48.966 A:middle
+to direct requests against the
+
+00:12:48.966 --> 00:12:49.566 A:middle
+real server.
+
+00:12:51.096 --> 00:12:52.596 A:middle
+This provides a way of verifying
+
+00:12:52.596 --> 00:12:54.316 A:middle
+that the server is accepting
+
+00:12:54.316 --> 00:12:55.716 A:middle
+requests the way that your app
+
+00:12:55.716 --> 00:12:57.986 A:middle
+is making them and that you're
+
+00:12:57.986 --> 00:12:58.956 A:middle
+able to parse the server's
+
+00:12:58.956 --> 00:13:01.566 A:middle
+responses without having to deal
+

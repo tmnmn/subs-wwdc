@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.684 --> 00:12:01.955 align:start position:20% line:-2
+MapKit JSが認証プロセスを
+進められるようにします
+
+00:12:03.223 --> 00:12:07.528 align:start position:25% line:-2
+長期トークンでは
+認証コールバック関数の本文で
+
+00:12:07.661 --> 00:12:10.564 align:start position:32% line:-2
+直ちにdone関数を
+呼び出します
+
+00:12:11.031 --> 00:12:14.034 align:start position:32% line:-2
+MapKit JSは
+同じ長期トークンを―
+
+00:12:14.134 --> 00:12:17.738 align:start position:32% line:-2
+認証を再読込する際に
+使用します
+
+00:12:19.473 --> 00:12:23.544 align:start position:29% line:-2
+最後に マップコンテナと
+マップの中心の設定です
+
+00:12:25.779 --> 00:12:29.049 align:start position:32% line:-2
+サーバーを起動して
+実際に見てみましょう
+
+00:12:31.051 --> 00:12:35.189 align:start position:23% line:-2
+設定が正しければ
+ブラウザにマップが表示されます
+
+00:12:36.490 --> 00:12:39.893 align:start position:32% line:-2
+ウェブインスペクタで
+短期トークン使用なら
+
+00:12:39.993 --> 00:12:43.630 align:start position:27% line:-2
+サーバーのエンドポイントが
+呼び出され
+
+00:12:43.697 --> 00:12:45.999 align:start position:29% line:-1
+認証トークンが返されます
+
+00:12:46.767 --> 00:12:50.838 align:start position:20% line:-2
+MapKit JSに認証が付与され
+残りの作業へ
+
+00:12:51.004 --> 00:12:56.143 align:start position:18% line:-2
+MapKit JSは 随時ルートから
+新規トークンを要求します
+
+00:12:57.778 --> 00:13:01.281 align:start position:27% line:-2
+以上がMapKit JSの
+認証方法です
+

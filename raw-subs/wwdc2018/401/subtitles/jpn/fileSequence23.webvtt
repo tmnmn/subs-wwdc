@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:54.675 --> 00:23:00.614 align:start position:20% line:-2
+Swift 4.2ではコンパイラが
+この合成作業を行います
+
+00:23:01.148 --> 00:23:03.550 align:start position:27% line:-1
+Hashableも同様です
+
+00:23:04.952 --> 00:23:10.124 align:start position:29% line:-2
+これで 例えば整数または
+文字列のSetが持てます
+
+00:23:11.825 --> 00:23:12.493 align:start position:45% line:-1
+さて…
+
+00:23:12.593 --> 00:23:15.996 align:start position:43% line:-1
+(拍手)
+
+00:23:16.096 --> 00:23:22.402 align:start position:27% line:-2
+時に同値比較とハッシュ化を
+手入力で行う場合があります
+
+00:23:23.670 --> 00:23:25.772 align:start position:34% line:-1
+例を見てみましょう
+
+00:23:26.507 --> 00:23:29.643 align:start position:32% line:-2
+都市を表す
+データがあるとします
+
+00:23:29.810 --> 00:23:34.515 align:start position:34% line:-2
+都市名と州と人口が
+情報としてあります
+
+00:23:34.615 --> 00:23:37.284 align:start position:32% line:-1
+この例での目的は１つ
+
+00:23:37.384 --> 00:23:40.687 align:start position:27% line:-1
+都市名と州を同値比較します
+
+00:23:40.787 --> 00:23:44.258 align:start position:29% line:-2
+同値であれば
+人口のチェックは不要です
+
+00:23:44.491 --> 00:23:48.896 align:start position:30% line:-2
+もしコンパイラに
+同値比較を実行させると
+
+00:23:48.996 --> 00:23:53.433 align:start position:34% line:-2
+不要な人口の比較も
+してしまいます
+
+00:23:53.767 --> 00:23:57.971 align:start position:29% line:-2
+ここは手入力ができますし
+簡単な作業です
+
+00:23:58.605 --> 00:24:00.174 align:start position:29% line:-1
+でもHashableは？
+

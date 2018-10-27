@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.106 --> 00:29:04.678 align:start position:12% line:-2
+異なる任意のsafeAreaInsetsに
+適応できるとしましょう
+
+00:29:04.812 --> 00:29:07.514 align:start position:25% line:-1
+そうすると それらのビューは
+
+00:29:07.614 --> 00:29:14.154 align:start position:21% line:-2
+アプリケーション全体で動かせ
+環境によって異なる実行も可能です
+
+00:29:16.523 --> 00:29:20.794 align:start position:30% line:-2
+次は ステータスバーを
+隠す方法についてです
+
+00:29:22.095 --> 00:29:24.364 align:start position:29% line:-1
+ステータスバーを隠すには
+
+00:29:24.464 --> 00:29:29.736 align:start position:25% line:-2
+矩形画面の縦スクリーンで
+20ptの範囲が要求されます
+
+00:29:30.737 --> 00:29:35.042 align:start position:2% line:-2
+方法は prefersStatusBarHiddenを
+オーバーライドし
+
+00:29:35.142 --> 00:29:37.344 align:start position:30% line:-1
+trueとするだけです
+
+00:29:37.444 --> 00:29:41.615 align:start position:9% line:-2
+これは内包するView Controllerの
+階層にも伝播され
+
+00:29:41.715 --> 00:29:45.385 align:start position:21% line:-1
+システムのルートにも尊重されます
+
+00:29:46.587 --> 00:29:52.993 align:start position:14% line:-2
+しかしiPhone Xでは 同じ方法では
+センサーハウジングが隠れません
+
+00:29:53.160 --> 00:29:55.662 align:start position:21% line:-1
+この下にコンテンツは入りませんね
+
+00:29:55.762 --> 00:29:57.765 align:start position:43% line:-1
+(笑い)
+
+00:29:57.865 --> 00:30:01.768 align:start position:23% line:-2
+UIKitは そのようなUIを
+作らせないようにしています
+

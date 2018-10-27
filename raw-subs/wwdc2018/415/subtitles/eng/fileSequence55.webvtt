@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:59.846 --> 00:55:01.306 A:middle
+Now why did we do that?
+
+00:55:01.826 --> 00:55:03.326 A:middle
+Well we kept looking, and we
+
+00:55:03.326 --> 00:55:04.416 A:middle
+found a copy of open.
+
+00:55:04.416 --> 00:55:07.896 A:middle
+And that copy of open is in the
+
+00:55:07.896 --> 00:55:09.876 A:middle
+lib system TBD file.
+
+00:55:11.256 --> 00:55:13.306 A:middle
+And so we said I know this is
+
+00:55:13.306 --> 00:55:14.416 A:middle
+part of the system library.
+
+00:55:14.416 --> 00:55:15.456 A:middle
+I'm not going to copy this into
+
+00:55:15.456 --> 00:55:16.146 A:middle
+my application.
+
+00:55:16.146 --> 00:55:18.336 A:middle
+But I need to put enough
+
+00:55:18.336 --> 00:55:19.516 A:middle
+information in the information
+
+00:55:19.516 --> 00:55:20.836 A:middle
+to make it so that it can call
+
+00:55:20.836 --> 00:55:21.166 A:middle
+this.
+
+00:55:21.506 --> 00:55:23.556 A:middle
+So we create a fake function
+
+00:55:23.556 --> 00:55:25.626 A:middle
+that's just a template where we
+
+00:55:25.626 --> 00:55:26.656 A:middle
+replaced a function with
+
+00:55:26.656 --> 00:55:27.606 A:middle
+whatever we're pulling out of
+
+00:55:27.606 --> 00:55:28.726 A:middle
+lib system which is open in this
+
+00:55:28.726 --> 00:55:29.046 A:middle
+case.
+
+00:55:29.216 --> 00:55:30.426 A:middle
+And if you look in that
+
+00:55:30.426 --> 00:55:32.876 A:middle
+function, it actually loads from
+
+00:55:32.876 --> 00:55:35.036 A:middle
+a pointer, open$ pointer.
+
+00:55:36.186 --> 00:55:37.416 A:middle
+And jumps to it.
+
+00:55:37.416 --> 00:55:38.686 A:middle
+So we just need a function
+
+00:55:38.716 --> 00:55:39.996 A:middle
+pointer, just like any normal C
+
+00:55:39.996 --> 00:55:40.636 A:middle
+function pointer.
+
+00:55:41.256 --> 00:55:44.796 A:middle
+And we'll create that down in
+
+00:55:44.796 --> 00:55:46.186 A:middle
+the data segment which is where
+
+00:55:46.186 --> 00:55:47.636 A:middle
+global variables would be if you
+
+00:55:47.636 --> 00:55:48.396 A:middle
+had any globals.
+
+00:55:49.406 --> 00:55:50.966 A:middle
+But it's just set to zero.
+
+00:55:51.426 --> 00:55:53.226 A:middle
+So if we dereference null and
+
+00:55:53.226 --> 00:55:54.436 A:middle
+jump to it we're going to crash.
+
+00:55:56.036 --> 00:55:57.536 A:middle
+So we then add what's called a
+
+00:55:57.536 --> 00:55:58.606 A:middle
+link edit segment.
+
+00:55:58.606 --> 00:56:01.096 A:middle
+And the link edit is metadata
+

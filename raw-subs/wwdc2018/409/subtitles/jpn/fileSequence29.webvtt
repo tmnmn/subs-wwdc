@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.072 --> 00:29:01.842 align:start position:27% line:-1
+パラメータにはlenを使用
+
+00:29:04.011 --> 00:29:10.117 align:start position:20% line:-2
+特定の呼び出しで
+１万5000バイトの容量を要します
+
+00:29:10.918 --> 00:29:14.388 align:start position:23% line:-1
+スタックフレームも同等の長さに
+
+00:29:16.990 --> 00:29:19.993 align:start position:25% line:-1
+しかし全メモリは即座に使えず
+
+00:29:20.094 --> 00:29:25.999 align:start position:27% line:-2
+ページに分かれることで
+スタックが必要に応じて拡張
+
+00:29:26.567 --> 00:29:30.771 align:start position:30% line:-2
+１万バイトのバッファで
+アクセスしても
+
+00:29:30.871 --> 00:29:35.342 align:start position:34% line:-2
+次ページにあるため
+有効ではありません
+
+00:29:35.442 --> 00:29:38.912 align:start position:25% line:-1
+CPU内のページ不良に備えて
+
+00:29:39.012 --> 00:29:44.351 align:start position:25% line:-2
+OSがスタックを延長すべきか
+判断しているのです
+
+00:29:44.852 --> 00:29:46.854 align:start position:32% line:-1
+システムが管理します
+
+00:29:49.056 --> 00:29:52.292 align:start position:25% line:-1
+しかし 攻撃者が長さを制御し
+
+00:29:52.392 --> 00:29:56.396 align:start position:29% line:-2
+ページを増やしてしまった
+としましょう
+
+00:29:57.798 --> 00:29:59.233 align:start position:38% line:-1
+新たな問題です
+
+00:29:59.800 --> 00:30:05.372 align:start position:27% line:-2
+メモリは有限ですから
+スタックに割り当て続ければ
+

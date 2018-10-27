@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.259 --> 00:36:02.830 align:start position:30% line:-2
+今回はメモリエラーの
+問題のあるアドレスです
+
+00:36:02.930 --> 00:36:06.467 align:start position:27% line:-2
+そしてクラッシュした関数の
+逆アセンブルをしました
+
+00:36:08.635 --> 00:36:14.141 align:start position:27% line:-2
+メモリエラーには
+様々なクラッシュがあります
+
+00:36:14.241 --> 00:36:19.313 align:start position:27% line:-2
+メモリエラーが原因となる
+ログのシグネチャは多様です
+
+00:36:19.880 --> 00:36:22.516 align:start position:32% line:-1
+いくつか例があります
+
+00:36:22.750 --> 00:36:26.019 align:start position:14% line:-1
+objc msgSend関数のクラッシュ
+
+00:36:26.186 --> 00:36:28.222 align:start position:16% line:-1
+SwiftやObjective-Cの―
+
+00:36:28.322 --> 00:36:32.226 align:start position:32% line:-2
+参照カウント装置や
+解放装置のクラッシュ
+
+00:36:32.326 --> 00:36:35.829 align:start position:25% line:-2
+これらの多くは
+メモリエラーが原因となります
+
+00:36:37.064 --> 00:36:42.469 align:start position:23% line:-2
+もう１つ よくあるエラー症状は
+認識されないセレクタ例外です
+
+00:36:43.203 --> 00:36:47.474 align:start position:29% line:-2
+状況としては
+何かのオブジェクトがあり
+
+00:36:47.574 --> 00:36:50.277 align:start position:30% line:-1
+コードがそれを使います
+
+00:36:50.377 --> 00:36:53.847 align:start position:23% line:-1
+解放された後 また使用されます
+
+00:36:54.381 --> 00:36:59.853 align:start position:18% line:-2
+しかし malloc空きページリスト
+シグネチャを得ずに―
+

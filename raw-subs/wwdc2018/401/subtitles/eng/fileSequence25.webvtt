@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.536 --> 00:25:01.066 A:middle
+So in Swift 4.2 we've added a
+
+00:25:01.066 --> 00:25:02.476 A:middle
+better API for this.
+
+00:25:03.316 --> 00:25:05.396 A:middle
+Now recall the Hashable protocol
+
+00:25:05.396 --> 00:25:06.896 A:middle
+in Swift 4 and 4.1.
+
+00:25:07.486 --> 00:25:09.076 A:middle
+It has a single Hash value
+
+00:25:09.076 --> 00:25:10.446 A:middle
+requirement that produces a
+
+00:25:10.446 --> 00:25:11.696 A:middle
+single integer value.
+
+00:25:12.446 --> 00:25:14.676 A:middle
+In Swift 4.2 we've redesigned
+
+00:25:14.676 --> 00:25:16.936 A:middle
+the Hashable protocol so now
+
+00:25:17.296 --> 00:25:19.116 A:middle
+there's a different Hash into
+
+00:25:19.116 --> 00:25:19.746 A:middle
+requirement.
+
+00:25:20.126 --> 00:25:21.346 A:middle
+And instead of producing a
+
+00:25:21.346 --> 00:25:23.466 A:middle
+single Hash code value, Hash
+
+00:25:23.466 --> 00:25:26.146 A:middle
+into takes a Hasher instance and
+
+00:25:26.146 --> 00:25:27.636 A:middle
+then you can feed multiple
+
+00:25:27.636 --> 00:25:29.616 A:middle
+values into the Hasher, which
+
+00:25:29.616 --> 00:25:31.126 A:middle
+will combine them into one Hash
+
+00:25:31.126 --> 00:25:31.376 A:middle
+code.
+
+00:25:32.306 --> 00:25:34.096 A:middle
+So going back to our example of
+
+00:25:34.096 --> 00:25:36.076 A:middle
+the city data type, all we have
+
+00:25:36.076 --> 00:25:38.226 A:middle
+to do is implement Hash into by
+
+00:25:38.226 --> 00:25:40.546 A:middle
+recursively calling Hash into on
+
+00:25:40.546 --> 00:25:42.576 A:middle
+the name and the state passing
+
+00:25:42.576 --> 00:25:44.596 A:middle
+in the Hasher object instance
+
+00:25:44.596 --> 00:25:45.316 A:middle
+that we were given.
+
+00:25:46.486 --> 00:25:49.786 A:middle
+And the Hash combining algorithm
+
+00:25:49.786 --> 00:25:51.726 A:middle
+in the Hasher, it does a good
+
+00:25:51.726 --> 00:25:53.526 A:middle
+job of balancing the quality of
+
+00:25:53.526 --> 00:25:55.146 A:middle
+the Hash code with performance
+
+00:25:55.476 --> 00:25:56.556 A:middle
+and as an added layer of
+
+00:25:56.606 --> 00:25:57.816 A:middle
+protection against denial of
+
+00:25:57.816 --> 00:25:59.686 A:middle
+service attacks, it uses a
+
+00:25:59.686 --> 00:26:01.616 A:middle
+random preprocess seed, which is
+

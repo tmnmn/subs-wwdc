@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.896 --> 00:33:01.676 A:middle
+APIs because this allows you to
+
+00:33:01.676 --> 00:33:04.376 A:middle
+add these action sets, execute
+
+00:33:04.376 --> 00:33:08.076 A:middle
+the action sets, and the HMHome
+
+00:33:08.266 --> 00:33:10.136 A:middle
+APIs also expose the way of
+
+00:33:11.576 --> 00:33:13.536 A:middle
+accessing the built-in action
+
+00:33:18.346 --> 00:33:18.476 A:middle
+sets.
+
+00:33:18.776 --> 00:33:19.666 A:middle
+So if we look at some quick
+
+00:33:19.666 --> 00:33:21.506 A:middle
+sample code, we'll see that if
+
+00:33:21.506 --> 00:33:23.816 A:middle
+we want to create an action set,
+
+00:33:24.566 --> 00:33:26.316 A:middle
+we call addActionSet withName on
+
+00:33:26.316 --> 00:33:27.916 A:middle
+the home, we pass in the name of
+
+00:33:27.916 --> 00:33:30.306 A:middle
+the action set, then we'll want
+
+00:33:30.366 --> 00:33:32.106 A:middle
+to iterate through our list of
+
+00:33:32.106 --> 00:33:35.076 A:middle
+actions and add each one to the
+
+00:33:35.076 --> 00:33:35.706 A:middle
+action set.
+
+00:33:37.656 --> 00:33:39.626 A:middle
+Then, later, if we want to run
+
+00:33:39.626 --> 00:33:42.216 A:middle
+the scene, all you do is call
+
+00:33:42.426 --> 00:33:44.396 A:middle
+executeActionSet on the home.
+
+00:33:48.636 --> 00:33:50.266 A:middle
+Now, running scenes via the UI
+
+00:33:50.266 --> 00:33:52.786 A:middle
+or via Siri is great, but
+
+00:33:52.786 --> 00:33:53.626 A:middle
+sometimes you want things to
+
+00:33:53.626 --> 00:33:54.606 A:middle
+happen automatically.
+
+00:33:55.296 --> 00:33:57.326 A:middle
+Now, we have several options for
+
+00:33:57.326 --> 00:33:58.936 A:middle
+automatically triggering scenes
+
+00:33:59.116 --> 00:34:00.256 A:middle
+and automatically controlling
+

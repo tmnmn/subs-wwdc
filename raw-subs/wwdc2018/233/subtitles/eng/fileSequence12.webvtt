@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:00.816 --> 00:12:01.526 A:middle
+So, I guess we'll have a
+
+00:12:01.526 --> 00:12:03.256 A:middle
+variable called feelingCool.
+
+00:12:03.976 --> 00:12:06.206 A:middle
+OK. Ben, what's the second step
+
+00:12:06.206 --> 00:12:06.846 A:middle
+in the recipe?
+
+00:12:07.536 --> 00:12:08.906 A:middle
+&gt;&gt; Well, now, every time this
+
+00:12:08.906 --> 00:12:10.626 A:middle
+state changes, we need to dirty
+
+00:12:10.626 --> 00:12:12.066 A:middle
+the layout system by calling
+
+00:12:12.066 --> 00:12:12.876 A:middle
+setNeedsLayout.
+
+00:12:13.696 --> 00:12:15.336 A:middle
+But, we need to make sure that
+
+00:12:15.336 --> 00:12:16.586 A:middle
+every time this state changes
+
+00:12:16.586 --> 00:12:17.196 A:middle
+this happens.
+
+00:12:17.196 --> 00:12:18.646 A:middle
+And, this state could change
+
+00:12:19.256 --> 00:12:20.426 A:middle
+from various places in our
+
+00:12:20.426 --> 00:12:21.076 A:middle
+application.
+
+00:12:21.666 --> 00:12:23.016 A:middle
+So, Peter, how can we ensure
+
+00:12:23.016 --> 00:12:24.196 A:middle
+that we're always dirtying the
+
+00:12:24.196 --> 00:12:25.066 A:middle
+layout system when there's
+
+00:12:25.066 --> 00:12:25.446 A:middle
+changes?
+
+00:12:25.906 --> 00:12:27.226 A:middle
+&gt;&gt; I'm happy you asked, because
+
+00:12:27.226 --> 00:12:28.386 A:middle
+I think I've got a good idea for
+
+00:12:28.386 --> 00:12:28.756 A:middle
+this.
+
+00:12:29.356 --> 00:12:30.506 A:middle
+We can use a feature called
+
+00:12:30.506 --> 00:12:32.456 A:middle
+Swift property observers.
+
+00:12:33.326 --> 00:12:35.526 A:middle
+These let us run code before or
+
+00:12:35.526 --> 00:12:37.106 A:middle
+after a property is set.
+
+00:12:37.106 --> 00:12:39.366 A:middle
+So, we can use the didSet
+
+00:12:39.396 --> 00:12:41.146 A:middle
+property observer to call
+
+00:12:41.146 --> 00:12:42.046 A:middle
+setNeedsLayout.
+
+00:12:42.576 --> 00:12:44.286 A:middle
+This is a really excellent use
+
+00:12:44.286 --> 00:12:45.776 A:middle
+of Swift property observers in
+
+00:12:45.776 --> 00:12:47.276 A:middle
+your app.
+
+00:12:47.336 --> 00:12:49.076 A:middle
+OK. So, we're almost done.
+
+00:12:49.496 --> 00:12:50.766 A:middle
+Ben, what's the last step in the
+
+00:12:50.766 --> 00:12:51.286 A:middle
+recipe?
+
+00:12:51.766 --> 00:12:53.056 A:middle
+&gt;&gt; Well now, Peter, using this
+
+00:12:53.056 --> 00:12:54.986 A:middle
+state, we need to update our UI
+
+00:12:55.226 --> 00:12:56.236 A:middle
+in layoutSubviews.
+
+00:12:57.396 --> 00:12:58.676 A:middle
+&gt;&gt; OK, easy.
+
+00:12:59.336 --> 00:13:00.876 A:middle
+We'll override layoutSubviews,
+

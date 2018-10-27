@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.556 --> 00:35:00.196 A:middle
+render loop.
+
+00:35:00.876 --> 00:35:03.156 A:middle
+So this includes obtaining and
+
+00:35:03.206 --> 00:35:04.826 A:middle
+submitting command buffers to
+
+00:35:04.826 --> 00:35:06.426 A:middle
+GPU with the list of GPU
+
+00:35:06.426 --> 00:35:06.736 A:middle
+commands.
+
+00:35:06.736 --> 00:35:10.046 A:middle
+And updating your resources in
+
+00:35:10.046 --> 00:35:12.206 A:middle
+such a way that allows the GPU
+
+00:35:12.206 --> 00:35:13.926 A:middle
+to asynchronously read from it
+
+00:35:14.566 --> 00:35:16.086 A:middle
+which you have written in your
+
+00:35:16.176 --> 00:35:16.726 A:middle
+render loop.
+
+00:35:17.266 --> 00:35:19.526 A:middle
+And encoding render passes by
+
+00:35:19.526 --> 00:35:20.686 A:middle
+creating render command
+
+00:35:20.686 --> 00:35:21.326 A:middle
+encoders.
+
+00:35:21.936 --> 00:35:24.636 A:middle
+And finally, presenting your
+
+00:35:24.636 --> 00:35:25.776 A:middle
+frames to the display.
+
+00:35:25.776 --> 00:35:29.196 A:middle
+So let's first talk about this
+
+00:35:29.196 --> 00:35:30.356 A:middle
+command buffer object.
+
+00:35:32.396 --> 00:35:34.066 A:middle
+One of the key changes from
+
+00:35:34.066 --> 00:35:36.536 A:middle
+OpenGL is that Metal provides
+
+00:35:36.606 --> 00:35:38.196 A:middle
+explicit control over command
+
+00:35:38.196 --> 00:35:40.366 A:middle
+buffers, which means it's up to
+
+00:35:40.366 --> 00:35:42.396 A:middle
+you to create these command
+
+00:35:42.396 --> 00:35:44.106 A:middle
+buffers and you can decide when
+
+00:35:44.106 --> 00:35:45.766 A:middle
+to commit them to GPU for its
+
+00:35:45.766 --> 00:35:46.486 A:middle
+execution.
+
+00:35:47.306 --> 00:35:49.496 A:middle
+So the straightforward thing to
+
+00:35:49.496 --> 00:35:51.056 A:middle
+do is to create one command
+
+00:35:51.056 --> 00:35:52.476 A:middle
+buffer which will render your
+
+00:35:52.476 --> 00:35:53.236 A:middle
+whole frame.
+
+00:35:53.946 --> 00:35:55.796 A:middle
+And once your application is up
+
+00:35:55.796 --> 00:35:57.916 A:middle
+and running and if you perhaps
+
+00:35:57.916 --> 00:35:59.816 A:middle
+see some idle time on GPU, then
+
+00:35:59.816 --> 00:36:01.976 A:middle
+you might want to consider
+

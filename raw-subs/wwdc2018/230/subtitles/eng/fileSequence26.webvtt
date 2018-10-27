@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.906 --> 00:26:01.296 A:middle
+houses our collection view of
+
+00:26:01.296 --> 00:26:02.876 A:middle
+the dogs, our favorite button,
+
+00:26:03.116 --> 00:26:04.016 A:middle
+and our gallery button.
+
+00:26:04.406 --> 00:26:06.096 A:middle
+As Skyler mentioned, we'd like
+
+00:26:06.096 --> 00:26:07.166 A:middle
+to implement the increment and
+
+00:26:07.166 --> 00:26:08.616 A:middle
+decrement functionality so that
+
+00:26:08.616 --> 00:26:09.996 A:middle
+we can swipe up and down to
+
+00:26:09.996 --> 00:26:10.986 A:middle
+scroll through our carousel.
+
+00:26:11.716 --> 00:26:13.146 A:middle
+To do this, we can create a
+
+00:26:13.146 --> 00:26:14.946 A:middle
+property on this class called
+
+00:26:14.946 --> 00:26:16.416 A:middle
+carousel accessibility element,
+
+00:26:17.246 --> 00:26:18.276 A:middle
+which will be a custom UI
+
+00:26:18.276 --> 00:26:19.516 A:middle
+accessibility element that
+
+00:26:19.516 --> 00:26:20.676 A:middle
+supports those gestures.
+
+00:26:21.286 --> 00:26:23.496 A:middle
+Let's implement carousel
+
+00:26:23.496 --> 00:26:24.466 A:middle
+accessibility element.
+
+00:26:28.836 --> 00:26:30.336 A:middle
+This will be a subclass of UI
+
+00:26:30.336 --> 00:26:31.376 A:middle
+accessibility element.
+
+00:26:31.946 --> 00:26:33.136 A:middle
+It also needs to know about the
+
+00:26:33.136 --> 00:26:34.216 A:middle
+current dog object it's
+
+00:26:34.216 --> 00:26:35.476 A:middle
+representing, so let's create a
+
+00:26:35.476 --> 00:26:36.846 A:middle
+property for that.
+
+00:26:38.216 --> 00:26:40.556 A:middle
+We'll give it an initializer
+
+00:26:40.556 --> 00:26:43.766 A:middle
+also, and let's give it some
+
+00:26:43.766 --> 00:26:45.306 A:middle
+basic accessibility like the
+
+00:26:45.306 --> 00:26:48.926 A:middle
+label and the value.
+
+00:26:48.926 --> 00:26:50.476 A:middle
+Our label will be dog picker,
+
+00:26:51.326 --> 00:26:52.386 A:middle
+and the value will be a
+
+00:26:52.386 --> 00:26:53.476 A:middle
+combination of the name of the
+
+00:26:53.476 --> 00:26:55.226 A:middle
+dog and it's favorited status.
+
+00:26:55.776 --> 00:26:59.046 A:middle
+Okay. Let's get into the
+
+00:26:59.046 --> 00:27:00.196 A:middle
+increment and decrement
+

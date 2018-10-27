@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.646 --> 00:15:00.316 A:middle
+conformance.
+
+00:15:01.336 --> 00:15:02.536 A:middle
+It's easy for dictionary to make
+
+00:15:02.536 --> 00:15:03.736 A:middle
+its index type equatable as
+
+00:15:03.736 --> 00:15:03.976 A:middle
+well.
+
+00:15:07.346 --> 00:15:08.106 A:middle
+Next, let's talk about
+
+00:15:08.226 --> 00:15:10.246 A:middle
+optimizing this count operation
+
+00:15:10.426 --> 00:15:12.256 A:middle
+with a customization point.
+
+00:15:14.416 --> 00:15:16.456 A:middle
+So, we've written a version of
+
+00:15:16.456 --> 00:15:19.126 A:middle
+count, that calculates the
+
+00:15:19.126 --> 00:15:19.886 A:middle
+number of elements in the
+
+00:15:19.886 --> 00:15:21.446 A:middle
+collection by walking over the
+
+00:15:21.446 --> 00:15:22.356 A:middle
+entire collection.
+
+00:15:22.356 --> 00:15:23.176 A:middle
+But, obviously a lot of
+
+00:15:23.176 --> 00:15:24.846 A:middle
+collections can probably do that
+
+00:15:24.846 --> 00:15:25.476 A:middle
+a lot faster.
+
+00:15:25.476 --> 00:15:27.596 A:middle
+For example, supposing a
+
+00:15:27.596 --> 00:15:29.736 A:middle
+dictionary kept internally a
+
+00:15:29.736 --> 00:15:30.946 A:middle
+count of the number of elements
+
+00:15:30.946 --> 00:15:32.516 A:middle
+it held, for its own purposes.
+
+00:15:33.256 --> 00:15:34.946 A:middle
+If it has this information, it
+
+00:15:34.946 --> 00:15:36.376 A:middle
+can just serve it up in its own
+
+00:15:36.376 --> 00:15:37.416 A:middle
+implementation of count.
+
+00:15:38.386 --> 00:15:40.396 A:middle
+That means that when people call
+
+00:15:40.396 --> 00:15:41.806 A:middle
+count on a dictionary, they're
+
+00:15:42.036 --> 00:15:43.676 A:middle
+getting fast constant time.
+
+00:15:44.096 --> 00:15:45.416 A:middle
+Instead of the linear time that
+
+00:15:45.416 --> 00:15:47.116 A:middle
+our original version that works
+
+00:15:47.116 --> 00:15:48.256 A:middle
+with any collection takes.
+
+00:15:49.116 --> 00:15:51.296 A:middle
+But, when adding optimizations
+
+00:15:51.296 --> 00:15:52.196 A:middle
+like this, there's something you
+
+00:15:52.196 --> 00:15:52.796 A:middle
+need to be aware of.
+
+00:15:52.796 --> 00:15:54.386 A:middle
+Which is the difference between
+
+00:15:54.386 --> 00:15:55.476 A:middle
+fulfilling protocol
+
+00:15:55.476 --> 00:15:57.486 A:middle
+requirements, and just adding
+
+00:15:57.486 --> 00:15:59.546 A:middle
+lots of overloads onto specific
+
+00:15:59.546 --> 00:16:00.076 A:middle
+types.
+

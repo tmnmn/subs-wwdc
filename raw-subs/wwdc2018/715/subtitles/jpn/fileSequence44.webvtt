@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.106 --> 00:44:03.811 align:start position:23% line:-2
+TCP Fast Open内に
+送信できるか試します
+
+00:44:05.145 --> 00:44:08.949 align:start position:14% line:-2
+TCP Fast Openを使った方法を
+もう１つ紹介します
+
+00:44:09.049 --> 00:44:12.653 align:start position:23% line:-2
+アプリケーションで
+データを送る必要のない方法です
+
+00:44:14.621 --> 00:44:17.558 align:start position:21% line:-1
+TCPに加えてTLSを使う場合は
+
+00:44:17.891 --> 00:44:21.061 align:start position:27% line:-2
+TLSの最初のメッセージは
+ClientHelloです
+
+00:44:21.161 --> 00:44:25.299 align:start position:23% line:-2
+これはTCPの初期データとして
+使えます
+
+00:44:25.833 --> 00:44:30.237 align:start position:20% line:-2
+ご自身のFast Openデータを
+提供したくない場合は
+
+00:44:30.971 --> 00:44:36.710 align:start position:21% line:-2
+TCPの詳細なオプションから
+Fast Openを有効にします
+
+00:44:37.010 --> 00:44:43.317 align:start position:20% line:-2
+すると 自動的にTLSから取り込み
+接続の確立中に送信します
+
+00:44:47.021 --> 00:44:51.725 align:start position:27% line:-2
+データの往復を
+節約するものがまだあります
+
+00:44:51.825 --> 00:44:55.429 align:start position:29% line:-2
+スチュアートが
+前のセッションで話した―
+
+00:44:55.596 --> 00:44:58.298 align:start position:21% line:-1
+Optimistic DNSです
+
+00:44:58.599 --> 00:45:05.239 align:start position:23% line:-2
+これは短い間しか存続せずに
+失効したDNSの応答が使えます
+

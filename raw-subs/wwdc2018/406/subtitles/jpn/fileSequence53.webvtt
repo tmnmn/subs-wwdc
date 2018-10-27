@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:57.744 --> 00:53:03.684 align:start position:20% line:-2
+Vehicleクラス内で宣言された
+イニシャライザだけです
+
+00:53:03.784 --> 00:53:05.285 align:start position:34% line:-1
+スーパークラスです
+
+00:53:06.420 --> 00:53:10.958 align:start position:25% line:-2
+Vehicleのデコード法は
+知っていますが
+
+00:53:11.058 --> 00:53:13.694 align:start position:18% line:-1
+Taxiサブクラスについては無知です
+
+00:53:14.261 --> 00:53:20.567 align:start position:18% line:-2
+このイニシャライザを直接使うと
+HourlyRateは初期化されず―
+
+00:53:20.667 --> 00:53:24.671 align:start position:32% line:-2
+請求書を受け取る際に
+誤解が生じ得ます
+
+00:53:26.240 --> 00:53:27.407 align:start position:39% line:-1
+対処方法は？
+
+00:53:27.541 --> 00:53:30.844 align:start position:18% line:-1
+Swiftならこの問題は起こりません
+
+00:53:31.278 --> 00:53:36.617 align:start position:23% line:-2
+Decodableプロトコルに
+準拠させる時点で診断し
+
+00:53:36.717 --> 00:53:41.288 align:start position:18% line:-1
+Requiredとマークするからです
+
+00:53:42.823 --> 00:53:47.294 align:start position:27% line:-2
+このイニシャライザは
+全サブクラスで実装されます
+
+00:53:47.394 --> 00:53:50.230 align:start position:27% line:-1
+直下のサブクラスに限らず―
+
+00:53:50.330 --> 00:53:54.802 align:start position:30% line:-2
+それらのサブクラスや
+将来のサブクラスもです
+
+00:53:55.736 --> 00:54:00.941 align:start position:16% line:-2
+この要件の追加により
+TaxiにVehicleを継承した際―
+

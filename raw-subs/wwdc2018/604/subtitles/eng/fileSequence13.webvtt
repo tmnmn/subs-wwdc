@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.286 --> 00:13:00.226 A:middle
+rendering application.
+
+00:13:01.046 --> 00:13:02.166 A:middle
+You build the app compiling
+
+00:13:02.166 --> 00:13:03.746 A:middle
+source and bundling your assets.
+
+00:13:04.696 --> 00:13:05.926 A:middle
+Start up and initializing it.
+
+00:13:06.306 --> 00:13:07.796 A:middle
+Loading the assets and
+
+00:13:07.796 --> 00:13:09.666 A:middle
+initializing objects that will
+
+00:13:09.666 --> 00:13:11.386 A:middle
+persist for the lifetime of your
+
+00:13:11.386 --> 00:13:11.986 A:middle
+application.
+
+00:13:13.236 --> 00:13:14.966 A:middle
+And you repeatedly render
+
+00:13:15.456 --> 00:13:16.976 A:middle
+setting up state, issuing many
+
+00:13:16.976 --> 00:13:19.336 A:middle
+draw calls, and presenting frame
+
+00:13:19.486 --> 00:13:19.986 A:middle
+after frame.
+
+00:13:20.676 --> 00:13:23.816 A:middle
+I'll talk about developing for
+
+00:13:23.816 --> 00:13:25.686 A:middle
+Metal in the earlier stages of
+
+00:13:25.686 --> 00:13:26.796 A:middle
+the application's lifetime,
+
+00:13:28.316 --> 00:13:29.806 A:middle
+including building shaders
+
+00:13:29.806 --> 00:13:31.176 A:middle
+offline and creating object's
+
+00:13:31.176 --> 00:13:32.136 A:middle
+initialization.
+
+00:13:33.256 --> 00:13:34.666 A:middle
+And Sukanya will describe how to
+
+00:13:34.666 --> 00:13:36.396 A:middle
+port your per frame rendering
+
+00:13:36.396 --> 00:13:36.656 A:middle
+code.
+
+00:13:38.676 --> 00:13:39.936 A:middle
+So let's start out with
+
+00:13:39.936 --> 00:13:41.706 A:middle
+application build time which is
+
+00:13:41.706 --> 00:13:43.166 A:middle
+where shaders are typically
+
+00:13:43.226 --> 00:13:43.736 A:middle
+compiled.
+
+00:13:44.896 --> 00:13:46.246 A:middle
+We'll begin with a look at the
+
+00:13:46.246 --> 00:13:47.006 A:middle
+shading language.
+
+00:13:47.866 --> 00:13:49.006 A:middle
+The Metal shading language is
+
+00:13:49.126 --> 00:13:50.476 A:middle
+based on C++.
+
+00:13:50.936 --> 00:13:53.316 A:middle
+So just like C++ you can create
+
+00:13:53.386 --> 00:13:55.206 A:middle
+classes, templates, structures,
+
+00:13:55.606 --> 00:13:57.336 A:middle
+define enums and namespaces.
+
+00:13:58.466 --> 00:14:00.156 A:middle
+Like GLSL there are built-in
+

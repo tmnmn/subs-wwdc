@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.946 --> 00:48:01.766 A:middle
+variations on a per-platform
+
+00:48:01.766 --> 00:48:02.326 A:middle
+basis.
+
+00:48:04.926 --> 00:48:05.936 A:middle
+Want to talk a little bit about
+
+00:48:05.936 --> 00:48:06.736 A:middle
+frame rate targets.
+
+00:48:07.156 --> 00:48:08.566 A:middle
+So on iOS, we wanted to target
+
+00:48:08.566 --> 00:48:10.546 A:middle
+30 fps at the highest visual
+
+00:48:10.546 --> 00:48:11.626 A:middle
+fidelity possible.
+
+00:48:12.176 --> 00:48:13.886 A:middle
+However, you can't just max out
+
+00:48:13.916 --> 00:48:14.426 A:middle
+the device.
+
+00:48:14.426 --> 00:48:15.766 A:middle
+If we were maxing out the CPU
+
+00:48:15.766 --> 00:48:17.676 A:middle
+and the GPU the entire time, the
+
+00:48:17.676 --> 00:48:19.466 A:middle
+operating system would end up
+
+00:48:19.526 --> 00:48:21.206 A:middle
+downclocking us, then we'd no
+
+00:48:21.206 --> 00:48:22.486 A:middle
+longer hit our frame rates.
+
+00:48:22.486 --> 00:48:24.756 A:middle
+We also want to conserve battery
+
+00:48:24.756 --> 00:48:25.126 A:middle
+life.
+
+00:48:25.476 --> 00:48:26.776 A:middle
+If players are playing several
+
+00:48:26.776 --> 00:48:27.786 A:middle
+games in a row during their
+
+00:48:27.786 --> 00:48:30.336 A:middle
+commute, we want to support that
+
+00:48:30.336 --> 00:48:31.806 A:middle
+rather than their device dying
+
+00:48:31.806 --> 00:48:32.676 A:middle
+before they even make it to
+
+00:48:32.676 --> 00:48:32.916 A:middle
+work.
+
+00:48:33.766 --> 00:48:36.716 A:middle
+So for this, what we decided to
+
+00:48:36.716 --> 00:48:38.216 A:middle
+do was to target 60 frames per
+
+00:48:38.216 --> 00:48:39.686 A:middle
+second for the environment, but
+
+00:48:39.686 --> 00:48:41.796 A:middle
+vsync at 30, which means most of
+
+00:48:41.796 --> 00:48:42.936 A:middle
+the time when you're exploring
+
+00:48:43.106 --> 00:48:45.306 A:middle
+the map in Fortnite, your phone
+
+00:48:45.306 --> 00:48:47.146 A:middle
+is idle about 50% of the time.
+
+00:48:47.216 --> 00:48:48.236 A:middle
+Using that time to conserve
+
+00:48:48.236 --> 00:48:49.986 A:middle
+battery life and keep cool.
+
+00:48:52.476 --> 00:48:53.916 A:middle
+To make sure that we hit those
+
+00:48:53.916 --> 00:48:56.006 A:middle
+targets, we track performance
+
+00:48:56.006 --> 00:48:56.896 A:middle
+every day.
+
+00:48:57.396 --> 00:48:58.546 A:middle
+So every day, we have an
+
+00:48:58.546 --> 00:49:00.096 A:middle
+automation pass that goes
+

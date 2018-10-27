@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.246 --> 00:11:00.876 A:middle
+build action of the scheme one
+
+00:11:00.876 --> 00:11:01.406 A:middle
+by one.
+
+00:11:02.026 --> 00:11:03.196 A:middle
+Target dependencies still have
+
+00:11:03.196 --> 00:11:04.686 A:middle
+higher priority in determining
+
+00:11:04.686 --> 00:11:05.706 A:middle
+which targets build first.
+
+00:11:05.936 --> 00:11:07.086 A:middle
+But otherwise, Xcode will
+
+00:11:07.086 --> 00:11:07.986 A:middle
+respect that ordering.
+
+00:11:08.636 --> 00:11:10.436 A:middle
+Now it might be tempting to use
+
+00:11:10.436 --> 00:11:11.256 A:middle
+this as it gives you a
+
+00:11:11.256 --> 00:11:12.666 A:middle
+predictable build order even if
+
+00:11:12.666 --> 00:11:13.366 A:middle
+you haven't set your
+
+00:11:13.366 --> 00:11:14.336 A:middle
+dependencies correctly.
+
+00:11:14.786 --> 00:11:15.856 A:middle
+But you're sacrificing a lot of
+
+00:11:15.856 --> 00:11:17.406 A:middle
+parallelization when you do this
+
+00:11:17.796 --> 00:11:18.766 A:middle
+and slowing down your build.
+
+00:11:19.176 --> 00:11:20.186 A:middle
+So we recommend that you leave
+
+00:11:20.186 --> 00:11:21.556 A:middle
+the parallelize builds checkbox
+
+00:11:21.556 --> 00:11:22.886 A:middle
+enabled, set up your target
+
+00:11:22.886 --> 00:11:24.126 A:middle
+dependencies correctly and don't
+
+00:11:24.126 --> 00:11:24.946 A:middle
+rely on ordering.
+
+00:11:27.296 --> 00:11:29.256 A:middle
+Lastly, dependency information
+
+00:11:29.336 --> 00:11:30.956 A:middle
+comes from you, the developers.
+
+00:11:31.586 --> 00:11:33.926 A:middle
+If you're creating custom shell
+
+00:11:33.926 --> 00:11:35.256 A:middle
+script build phases or build
+
+00:11:35.256 --> 00:11:36.636 A:middle
+rules, make sure to tell the
+
+00:11:36.636 --> 00:11:38.016 A:middle
+build system what its inputs and
+
+00:11:38.016 --> 00:11:38.546 A:middle
+outputs are.
+
+00:11:39.086 --> 00:11:40.386 A:middle
+This lets the build system avoid
+
+00:11:40.386 --> 00:11:41.626 A:middle
+rerunning the script tasks
+
+00:11:41.626 --> 00:11:42.396 A:middle
+unnecessarily.
+
+00:11:42.596 --> 00:11:43.786 A:middle
+And can help make sure that they
+
+00:11:43.786 --> 00:11:45.316 A:middle
+are executed in the right order.
+
+00:11:45.796 --> 00:11:46.906 A:middle
+You can define the inputs and
+
+00:11:46.906 --> 00:11:48.286 A:middle
+outputs in the run script phase
+
+00:11:48.286 --> 00:11:48.716 A:middle
+editor.
+
+00:11:48.716 --> 00:11:50.236 A:middle
+And the paths of these files
+
+00:11:50.236 --> 00:11:51.256 A:middle
+will be made available to your
+
+00:11:51.256 --> 00:11:52.816 A:middle
+script as environment variables.
+
+00:11:54.456 --> 00:11:56.336 A:middle
+Don't rely on auto-link for
+
+00:11:56.336 --> 00:11:57.506 A:middle
+target dependencies in your
+
+00:11:57.506 --> 00:11:57.976 A:middle
+project.
+
+00:11:58.736 --> 00:11:59.676 A:middle
+The client compiler has a
+
+00:11:59.676 --> 00:12:01.006 A:middle
+feature called auto-link which
+

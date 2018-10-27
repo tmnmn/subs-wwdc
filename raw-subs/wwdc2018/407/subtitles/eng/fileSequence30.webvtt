@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.526 --> 00:30:00.946 A:middle
+it's madly responding and trying
+
+00:30:00.946 --> 00:30:01.966 A:middle
+to keep up with whatever is
+
+00:30:01.966 --> 00:30:03.126 A:middle
+changing in the model, and
+
+00:30:03.126 --> 00:30:04.786 A:middle
+you're burning lots of CPU time
+
+00:30:04.786 --> 00:30:06.636 A:middle
+doing this, that ends up being
+
+00:30:06.636 --> 00:30:07.656 A:middle
+redundant when you consider the
+
+00:30:07.656 --> 00:30:08.806 A:middle
+whole scope of changes.
+
+00:30:09.496 --> 00:30:12.306 A:middle
+Now, if this was direct callouts
+
+00:30:12.776 --> 00:30:13.826 A:middle
+from the model code, either
+
+00:30:13.826 --> 00:30:14.866 A:middle
+through notifications,
+
+00:30:15.416 --> 00:30:17.106 A:middle
+delegation or manual block-based
+
+00:30:17.106 --> 00:30:18.426 A:middle
+call backs, it would be much
+
+00:30:18.426 --> 00:30:19.506 A:middle
+more obvious that this was
+
+00:30:19.506 --> 00:30:20.516 A:middle
+happening as you edited that
+
+00:30:20.516 --> 00:30:20.936 A:middle
+model code.
+
+00:30:21.396 --> 00:30:22.556 A:middle
+And you might decide that it is
+
+00:30:22.556 --> 00:30:24.366 A:middle
+totally appropriate to pull some
+
+00:30:24.366 --> 00:30:26.126 A:middle
+of those notifications out from
+
+00:30:26.126 --> 00:30:27.916 A:middle
+inside the loop to outside the
+
+00:30:27.916 --> 00:30:29.276 A:middle
+loop, to have a big impact on
+
+00:30:29.276 --> 00:30:29.906 A:middle
+performance.
+
+00:30:30.556 --> 00:30:31.856 A:middle
+Now, alternatively, on the
+
+00:30:31.856 --> 00:30:33.476 A:middle
+controller side, you could use
+
+00:30:33.476 --> 00:30:35.206 A:middle
+one of these deferring and
+
+00:30:35.206 --> 00:30:36.946 A:middle
+batching techniques to avoid the
+
+00:30:36.946 --> 00:30:38.336 A:middle
+redundant work and just not
+
+00:30:38.336 --> 00:30:39.246 A:middle
+respond synchronously.
+
+00:30:41.136 --> 00:30:42.216 A:middle
+Last, this is an easy one.
+
+00:30:42.836 --> 00:30:44.716 A:middle
+Once your code is already on the
+
+00:30:45.046 --> 00:30:46.386 A:middle
+[inaudible] happy path, you
+
+00:30:46.386 --> 00:30:47.586 A:middle
+know, it's already linear, and
+
+00:30:47.586 --> 00:30:48.736 A:middle
+it's not going to get any better
+
+00:30:48.736 --> 00:30:49.366 A:middle
+than linear.
+
+00:30:49.366 --> 00:30:50.346 A:middle
+That's sort of the minimum
+
+00:30:51.796 --> 00:30:52.766 A:middle
+performance that you're going to
+
+00:30:52.766 --> 00:30:52.966 A:middle
+get.
+
+00:30:53.626 --> 00:30:54.876 A:middle
+You're after all the constant
+
+00:30:54.876 --> 00:30:57.186 A:middle
+time improvements that you can.
+
+00:30:57.246 --> 00:30:58.676 A:middle
+Now, an easy one is that if
+
+00:30:58.676 --> 00:31:00.096 A:middle
+you're using dictionaries like
+

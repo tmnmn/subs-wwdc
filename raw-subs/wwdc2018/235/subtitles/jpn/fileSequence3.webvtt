@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:54.174 --> 00:03:01.215 align:start position:21% line:-2
+どう使えばアダプティブな
+アプリケーションが作れるでしょう
+
+00:03:03.450 --> 00:03:07.621 align:start position:30% line:-2
+では 任意視点について
+見ていきましょう
+
+00:03:08.055 --> 00:03:12.392 align:start position:23% line:-1
+上下左右の４辺に余白があります
+
+00:03:12.492 --> 00:03:17.064 align:start position:30% line:-2
+これらの部分に
+コンテンツを表示すると
+
+00:03:17.164 --> 00:03:21.068 align:start position:30% line:-2
+何らかの要素で覆われる
+可能性があります
+
+00:03:21.735 --> 00:03:24.204 align:start position:21% line:-1
+UIViewでの取得に使うのは―
+
+00:03:24.304 --> 00:03:26.673 align:start position:12% line:-1
+safeAreaInsetsプロパティです
+
+00:03:26.773 --> 00:03:30.043 align:start position:25% line:-2
+UIEdgeInsets型で
+上下左右の値を取得できます
+
+00:03:31.011 --> 00:03:32.913 align:start position:18% line:-1
+Auto Layoutをお使いの方は
+
+00:03:33.013 --> 00:03:37.017 align:start position:29% line:-2
+単に 安全な矩形の領域を
+見たいかもしれません
+
+00:03:37.351 --> 00:03:41.355 align:start position:7% line:-2
+それは safeAreaLayoutGuideを
+使えば可能です
+
+00:03:41.455 --> 00:03:45.792 align:start position:32% line:-2
+レイアウトアンカーを
+扱えるようになる―
+
+00:03:45.893 --> 00:03:48.228 align:start position:23% line:-1
+UILayoutGuideです
+
+00:03:48.328 --> 00:03:51.231 align:start position:21% line:-2
+矩形を見るだけなら
+layoutFrameも使えます
+
+00:03:53.100 --> 00:04:00.607 align:start position:14% line:-2
+それではSafe Areaの見え方に続き
+画面遷移についてお話ししましょう
+

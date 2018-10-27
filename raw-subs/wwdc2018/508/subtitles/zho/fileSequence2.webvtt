@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:900000,LOCAL:00:00:00.000
+
+00:01:59.419 --> 00:02:01.588 align:middle line:-1
+相反 你将创建有限制的令牌
+
+00:02:01.822 --> 00:02:03.891 align:middle line:-1
+并用你的密钥来签名
+
+00:02:04.591 --> 00:02:06.260 align:middle line:-1
+你就用这个令牌
+
+00:02:06.326 --> 00:02:09.463 align:middle line:-2
+通过MapKit JS API
+进行授权
+
+00:02:10.864 --> 00:02:14.067 align:middle line:-2
+让我们看看如何创建
+一个MapKit JS密钥
+
+00:02:15.636 --> 00:02:17.437 align:middle line:-2
+MapKit JS密钥
+是你的身份凭证
+
+00:02:17.504 --> 00:02:19.706 align:middle line:-2
+与MapKit JS API
+一起使用
+
+00:02:20.541 --> 00:02:22.509 align:middle line:-2
+这是一次性设置
+具体过程是这样的
+
+00:02:23.277 --> 00:02:24.545 align:middle line:-1
+创建一个地图标识符
+
+00:02:25.512 --> 00:02:29.216 align:middle line:-2
+创建一个MapKit JS密钥
+并将其与该标识符关联
+
+00:02:30.384 --> 00:02:33.053 align:middle line:-2
+然后下载你的密钥
+并将其保存到一个安全的地方
+
+00:02:34.655 --> 00:02:35.489 align:middle line:-1
+在我们开始之前
+
+00:02:35.889 --> 00:02:39.326 align:middle line:-2
+请到
+developer.apple.com/account登录
+
+00:02:40.427 --> 00:02:43.664 align:middle line:-2
+左侧菜单中 单击
+Certificates 然后IDs
+
+00:02:43.730 --> 00:02:44.765 align:middle line:-1
+再Profiles
+
+00:02:47.100 --> 00:02:49.870 align:middle line:0
+我们的第一步是创建一个地图标识符
+
+00:02:50.437 --> 00:02:53.774 align:middle line:0
+这将在Apple Developer
+网站中识别你的项目
+
+00:02:54.341 --> 00:02:56.710 align:middle line:0
+同时它也用于跟踪使用限制
+
+00:02:58.979 --> 00:03:01.248 align:middle line:0
+你可能想要对生产和开发环境
+

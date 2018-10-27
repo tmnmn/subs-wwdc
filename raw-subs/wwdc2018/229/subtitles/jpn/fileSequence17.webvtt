@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:55.482 --> 00:17:00.387 align:start position:7% line:-2
+まず LazyFilterCollectionに
+最初の要素を要求します
+
+00:17:00.654 --> 00:17:02.456 align:start position:34% line:-1
+しかし認識しません
+
+00:17:02.890 --> 00:17:06.460 align:start position:12% line:-2
+そこでLazyMapCollectionに
+同じ要求をしますが
+
+00:17:06.560 --> 00:17:10.030 align:start position:23% line:-1
+これも最初の要素を認識しません
+
+00:17:10.130 --> 00:17:14.134 align:start position:25% line:-2
+しかしコレクションのラップで
+レンジが認識します
+
+00:17:14.835 --> 00:17:17.404 align:start position:27% line:-1
+最初の要素である値“１”を
+
+00:17:17.503 --> 00:17:19.573 align:start position:11% line:-1
+LazyMapCollectionに返します
+
+00:17:19.673 --> 00:17:25.279 align:start position:23% line:-2
+クロージャを実行し
+値“２”が計算できるようになり
+
+00:17:25.378 --> 00:17:29.082 align:start position:12% line:-2
+LazyFilterCollectionに
+最初の要素を返せます
+
+00:17:29.249 --> 00:17:32.286 align:start position:30% line:-2
+幸いなことに
+２は10より小さいので
+
+00:17:32.386 --> 00:17:35.889 align:start position:23% line:-1
+最初の要素を見つけられるのです
+
+00:17:36.223 --> 00:17:37.758 align:start position:30% line:-1
+これを発信元に戻します
+
+00:17:38.959 --> 00:17:40.961 align:start position:36% line:-1
+計算だらけですね
+
+00:17:41.395 --> 00:17:45.766 align:start position:30% line:-2
+lazyは要求時にのみ
+計算しますが
+
+00:17:45.966 --> 00:17:48.969 align:start position:25% line:-1
+中間ストレージを作成しません
+
+00:17:49.369 --> 00:17:50.904 align:start position:36% line:-1
+例を見せましょう
+
+00:17:52.306 --> 00:17:54.741 align:start position:29% line:-1
+様々なクマがいる配列です
+
+00:17:55.242 --> 00:17:59.046 align:start position:27% line:-1
+中にはクマが重複しています
+
+00:17:59.379 --> 00:18:02.349 align:start position:21% line:-1
+クマだと繰り返す必要はありません
+

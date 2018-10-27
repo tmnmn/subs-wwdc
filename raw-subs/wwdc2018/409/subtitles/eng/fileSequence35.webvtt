@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.926 --> 00:35:01.126 A:middle
+instance the simd float4 128-bit
+
+00:35:01.126 --> 00:35:03.336 A:middle
+vector type then now we might
+
+00:35:03.336 --> 00:35:04.696 A:middle
+have better performance than the
+
+00:35:04.696 --> 00:35:06.466 A:middle
+AVX-512 version using the same
+
+00:35:06.466 --> 00:35:06.716 A:middle
+code.
+
+00:35:07.216 --> 00:35:10.906 A:middle
+And if you use the even larger
+
+00:35:10.906 --> 00:35:12.026 A:middle
+vector types, so for instance
+
+00:35:12.026 --> 00:35:14.336 A:middle
+simd float16, then now you have
+
+00:35:14.366 --> 00:35:15.606 A:middle
+much better performance than the
+
+00:35:15.606 --> 00:35:17.506 A:middle
+AVX-512 version where the
+
+00:35:17.506 --> 00:35:19.406 A:middle
+512-bit vector is actually
+
+00:35:19.996 --> 00:35:20.146 A:middle
+native.
+
+00:35:21.776 --> 00:35:23.146 A:middle
+And if you go all the way down
+
+00:35:23.146 --> 00:35:25.206 A:middle
+to X86 intrinsics, then now you
+
+00:35:25.206 --> 00:35:27.256 A:middle
+can start using the new AVX-512
+
+00:35:27.256 --> 00:35:29.636 A:middle
+variance, as well as the M512
+
+00:35:30.306 --> 00:35:30.436 A:middle
+types.
+
+00:35:32.536 --> 00:35:34.316 A:middle
+So if you want to specialize
+
+00:35:34.496 --> 00:35:35.836 A:middle
+larger units of codes, so not
+
+00:35:35.836 --> 00:35:37.166 A:middle
+just individual functions but
+
+00:35:37.836 --> 00:35:40.706 A:middle
+files, targets, libraries, then
+
+00:35:40.706 --> 00:35:42.936 A:middle
+you can use the new AVX-512
+
+00:35:42.936 --> 00:35:45.156 A:middle
+value of the additional vector
+
+00:35:45.156 --> 00:35:46.116 A:middle
+extensions build setting.
+
+00:35:46.666 --> 00:35:50.236 A:middle
+So when you do that there are
+
+00:35:50.236 --> 00:35:52.176 A:middle
+some things to keep in mind and
+
+00:35:52.176 --> 00:35:53.776 A:middle
+if you're familiar with AVX-1
+
+00:35:53.776 --> 00:35:56.246 A:middle
+and AVX-2 these are very similar
+
+00:35:56.386 --> 00:35:56.816 A:middle
+issues.
+
+00:35:58.516 --> 00:36:00.286 A:middle
+So you can only pass large
+

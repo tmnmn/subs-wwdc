@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.058 --> 00:31:00.627 align:start position:29% line:-1
+GPU Bが読み出せます
+
+00:31:02.529 --> 00:31:05.899 align:start position:27% line:-1
+これで同期の問題は解決です
+
+00:31:06.667 --> 00:31:11.371 align:start position:30% line:-2
+しかし高性能なGPUを
+遊ばせておくのは―
+
+00:31:11.472 --> 00:31:13.173 align:start position:36% line:-1
+もったいないです
+
+00:31:13.707 --> 00:31:19.479 align:start position:30% line:-2
+GPUが待機する時間は
+できるだけ短くしたい
+
+00:31:20.814 --> 00:31:23.317 align:start position:25% line:-1
+ここでロードバランシングです
+
+00:31:24.518 --> 00:31:27.955 align:start position:27% line:-2
+GPUに対して
+均等に画面を分割したことで
+
+00:31:28.055 --> 00:31:29.990 align:start position:34% line:-1
+問題が発生しました
+
+00:31:30.257 --> 00:31:34.828 align:start position:27% line:-2
+まずGPUの性能差を
+考慮していないのが問題です
+
+00:31:35.696 --> 00:31:40.300 align:start position:30% line:-2
+一方のGPUが速ければ
+先に処理を終えます
+
+00:31:41.535 --> 00:31:47.274 align:start position:29% line:-2
+また 画面の領域によって
+複雑さが違うのも問題です
+
+00:31:47.474 --> 00:31:51.011 align:start position:30% line:-2
+複雑なジオメトリなどが
+あり得ます
+
+00:31:52.246 --> 00:31:56.283 align:start position:29% line:-2
+つまり領域を
+調整する必要があるのです
+
+00:31:56.783 --> 00:32:01.255 align:start position:29% line:-2
+各GPUがレンダリングに
+かかる時間を―
+

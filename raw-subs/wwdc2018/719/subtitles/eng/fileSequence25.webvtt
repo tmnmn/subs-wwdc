@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.986 --> 00:25:01.926 A:middle
+quickly a cheat sheet for
+
+00:25:01.926 --> 00:25:02.736 A:middle
+PyCoreImage.
+
+00:25:02.736 --> 00:25:03.716 A:middle
+So, let's have a look at the
+
+00:25:03.716 --> 00:25:03.976 A:middle
+API.
+
+00:25:04.996 --> 00:25:06.716 A:middle
+So, as you saw earlier, we
+
+00:25:06.716 --> 00:25:08.096 A:middle
+import the CIMG class from the
+
+00:25:08.096 --> 00:25:09.086 A:middle
+pycoreimage package.
+
+00:25:10.256 --> 00:25:11.766 A:middle
+We can use this to load images
+
+00:25:11.796 --> 00:25:12.416 A:middle
+fromfile [inaudible].
+
+00:25:12.546 --> 00:25:15.296 A:middle
+Here's a Swift equivalent for
+
+00:25:15.296 --> 00:25:16.486 A:middle
+those of you who are wondering.
+
+00:25:16.486 --> 00:25:18.056 A:middle
+You can use CIImage for contents
+
+00:25:18.056 --> 00:25:18.476 A:middle
+of file.
+
+00:25:19.116 --> 00:25:22.206 A:middle
+You can use fromfile to load
+
+00:25:22.206 --> 00:25:23.496 A:middle
+your portrait matte information
+
+00:25:23.496 --> 00:25:24.506 A:middle
+directly as well as your
+
+00:25:24.506 --> 00:25:26.116 A:middle
+portrait depth by just using the
+
+00:25:26.116 --> 00:25:28.056 A:middle
+optional arguments usedepth and
+
+00:25:28.056 --> 00:25:29.066 A:middle
+usematte.
+
+00:25:30.616 --> 00:25:33.646 A:middle
+You can interpret with NumPy by
+
+00:25:33.646 --> 00:25:35.806 A:middle
+wrapping your NumPy buffers in
+
+00:25:35.806 --> 00:25:37.636 A:middle
+the CIImage constructor or
+
+00:25:37.636 --> 00:25:38.876 A:middle
+calling render directly under
+
+00:25:38.876 --> 00:25:40.816 A:middle
+CIImage instances to go the
+
+00:25:41.346 --> 00:25:42.706 A:middle
+other way around.
+
+00:25:43.536 --> 00:25:44.716 A:middle
+If you're in Swift, there's a
+
+00:25:44.716 --> 00:25:45.896 A:middle
+bit more set of coding to do.
+
+00:25:45.956 --> 00:25:46.756 A:middle
+You need to first create a
+
+00:25:46.756 --> 00:25:47.856 A:middle
+CIrender destination.
+
+00:25:48.636 --> 00:25:49.776 A:middle
+Make sure to allocate your
+
+00:25:49.776 --> 00:25:50.696 A:middle
+buffer previous.
+
+00:25:51.716 --> 00:25:52.706 A:middle
+Make sure to give the right
+
+00:25:52.706 --> 00:25:54.966 A:middle
+buffer properties, initiate and
+
+00:25:55.116 --> 00:25:56.006 A:middle
+create an incidence of the CI
+
+00:25:56.006 --> 00:25:58.196 A:middle
+Contex and Qtest render.
+
+00:25:59.476 --> 00:26:00.956 A:middle
+So, all of that is handled for
+

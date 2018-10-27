@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.553 --> 00:32:02.422 align:middle line:-2
+我们只加入了一个
+ORKOrderedTask类型的语音识别
+
+00:32:03.023 --> 00:32:07.027 align:middle line:-2
+如果注意的话 其中一个参数
+是语音识别器语言环境
+
+00:32:07.394 --> 00:32:09.630 align:middle line:-2
+这是由ResearchKit
+提供的项目
+
+00:32:09.897 --> 00:32:12.833 align:middle line:-1
+表示所有支持的语言环境
+
+00:32:12.900 --> 00:32:14.034 align:middle line:-1
+被语音识别API所支持
+
+00:32:14.401 --> 00:32:17.538 align:middle line:-1
+让你作为开发者不必担心
+
+00:32:17.604 --> 00:32:20.307 align:middle line:-2
+你的语言环境是否
+被这些语音识别API支持
+
+00:32:21.408 --> 00:32:23.577 align:middle line:-2
+现在 让我们接着介绍
+评估管理器
+
+00:32:24.945 --> 00:32:27.848 align:middle line:-2
+正如Gabriel提到的那样
+我们有一个叫做管理器的变量
+
+00:32:27.915 --> 00:32:30.517 align:middle line:-2
+CMMovementDisorderManager
+类型的
+
+00:32:31.218 --> 00:32:33.387 align:middle line:-2
+如果你注意的话
+我们有一个函数调用
+
+00:32:33.453 --> 00:32:36.757 align:middle line:-2
+monitorKinesias
+方法来计算七天的最大持续时间
+
+00:32:37.357 --> 00:32:39.226 align:middle line:-1
+让我们在初始化程序中调用它
+
+00:32:40.694 --> 00:32:45.399 align:middle line:-2
+不管谁创建了一个
+AssessmentManager类型的对象
+
+00:32:45.666 --> 00:32:48.035 align:middle line:-2
+都能开始震颤
+和运动障碍症状查询
+
+00:32:49.069 --> 00:32:50.470 align:middle line:-1
+一旦我们收集了这些数据
+
+00:32:50.537 --> 00:32:52.472 align:middle line:-2
+我们也需要一个方法来查询
+这些数据点
+
+00:32:52.673 --> 00:32:55.509 align:middle line:-2
+让我们继续添加一个方法
+来查询这些数据
+
+00:32:56.476 --> 00:33:01.215 align:middle line:-2
+我添加了一个新的queryNewAssessments方法
+我在那里调用queryTremor方法
+

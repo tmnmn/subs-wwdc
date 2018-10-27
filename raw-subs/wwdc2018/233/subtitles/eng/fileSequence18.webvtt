@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.976 --> 00:18:00.436 A:middle
+continuous gestures is the
+
+00:18:00.466 --> 00:18:01.966 A:middle
+UIPanGestureRecognizer.
+
+00:18:02.786 --> 00:18:03.776 A:middle
+And, there are two great
+
+00:18:03.916 --> 00:18:05.766 A:middle
+functions available to help you
+
+00:18:05.766 --> 00:18:06.656 A:middle
+get the most out of it.
+
+00:18:08.136 --> 00:18:09.786 A:middle
+translationInView will tell you
+
+00:18:09.786 --> 00:18:11.396 A:middle
+where the gesture is tracking,
+
+00:18:11.656 --> 00:18:12.956 A:middle
+relative to your views.
+
+00:18:13.456 --> 00:18:16.126 A:middle
+And, velocityInView will tell
+
+00:18:16.126 --> 00:18:17.466 A:middle
+you how fast your gesture is
+
+00:18:17.466 --> 00:18:17.866 A:middle
+moving.
+
+00:18:18.366 --> 00:18:20.026 A:middle
+And, this is really powerful for
+
+00:18:20.026 --> 00:18:21.596 A:middle
+handing off velocity between a
+
+00:18:21.596 --> 00:18:23.166 A:middle
+gesture and a subsequent
+
+00:18:23.166 --> 00:18:23.706 A:middle
+animation.
+
+00:18:25.256 --> 00:18:26.686 A:middle
+To learn all about how to build
+
+00:18:26.686 --> 00:18:28.416 A:middle
+really great gesture
+
+00:18:28.416 --> 00:18:30.046 A:middle
+interactions using these, check
+
+00:18:30.046 --> 00:18:31.386 A:middle
+out Building Interruptible and
+
+00:18:31.386 --> 00:18:33.256 A:middle
+Responsive Interactions from
+
+00:18:33.256 --> 00:18:34.866 A:middle
+WWDC 2014.
+
+00:18:36.326 --> 00:18:37.536 A:middle
+&gt;&gt; So, I also love
+
+00:18:37.586 --> 00:18:39.266 A:middle
+UIPanGestureRecognizer.
+
+00:18:39.656 --> 00:18:40.896 A:middle
+And, we used it to help build
+
+00:18:40.896 --> 00:18:42.886 A:middle
+that card dragging behavior you
+
+00:18:42.886 --> 00:18:43.576 A:middle
+saw earlier.
+
+00:18:44.436 --> 00:18:45.716 A:middle
+Let's look at how we did this
+
+00:18:45.816 --> 00:18:46.886 A:middle
+using layout-driven UI.
+
+00:18:48.856 --> 00:18:50.916 A:middle
+Again, we have a local variable,
+
+00:18:51.026 --> 00:18:53.996 A:middle
+which tracks the offsets for
+
+00:18:53.996 --> 00:18:55.486 A:middle
+each of our cards that the
+
+00:18:55.486 --> 00:18:56.546 A:middle
+gesture has applied.
+
+00:18:57.366 --> 00:18:59.136 A:middle
+And again notice every time this
+
+00:18:59.136 --> 00:19:00.616 A:middle
+variable changes, we're
+

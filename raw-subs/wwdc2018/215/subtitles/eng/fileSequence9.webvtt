@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.656 --> 00:09:02.336 A:middle
+identify contexts across
+
+00:09:02.336 --> 00:09:02.846 A:middle
+siblings.
+
+00:09:03.376 --> 00:09:05.916 A:middle
+What I mean by this is that it's
+
+00:09:05.916 --> 00:09:07.286 A:middle
+okay for you to have a context
+
+00:09:07.286 --> 00:09:08.346 A:middle
+with the same identifier,
+
+00:09:08.666 --> 00:09:10.046 A:middle
+multiple contexts with the same
+
+00:09:10.046 --> 00:09:11.736 A:middle
+identifier, as long as they
+
+00:09:11.736 --> 00:09:12.816 A:middle
+don't have the same parent,
+
+00:09:13.496 --> 00:09:14.416 A:middle
+which will be fine.
+
+00:09:15.896 --> 00:09:17.506 A:middle
+So, that [inaudible] is
+
+00:09:17.566 --> 00:09:18.856 A:middle
+something we call Context
+
+00:09:18.856 --> 00:09:20.406 A:middle
+Identifier Path.
+
+00:09:20.956 --> 00:09:22.696 A:middle
+Context Identifier Paths are
+
+00:09:22.696 --> 00:09:24.206 A:middle
+what we actually use to uniquely
+
+00:09:24.206 --> 00:09:26.086 A:middle
+identify context within the
+
+00:09:26.156 --> 00:09:29.026 A:middle
+tree, within the context tree.
+
+00:09:29.106 --> 00:09:30.716 A:middle
+And what Context Identifier
+
+00:09:30.716 --> 00:09:32.186 A:middle
+Paths are, well, it's just an
+
+00:09:32.186 --> 00:09:33.476 A:middle
+area of Context Identifiers.
+
+00:09:34.456 --> 00:09:35.986 A:middle
+The way we use them is that we
+
+00:09:36.436 --> 00:09:38.156 A:middle
+traverse the Context [inaudible]
+
+00:09:38.156 --> 00:09:40.436 A:middle
+following the path, until we
+
+00:09:40.436 --> 00:09:42.756 A:middle
+reach a note there -- the last
+
+00:09:42.756 --> 00:09:45.356 A:middle
+note within the path.
+
+00:09:45.546 --> 00:09:46.726 A:middle
+Let's actually take a walk how
+
+00:09:46.726 --> 00:09:48.966 A:middle
+this looks in action.
+
+00:09:50.136 --> 00:09:51.556 A:middle
+In this example, we have a
+
+00:09:51.856 --> 00:09:53.176 A:middle
+context card that's pointing to
+
+00:09:53.176 --> 00:09:54.976 A:middle
+Section 1 Context within some
+
+00:09:55.016 --> 00:09:56.006 A:middle
+chapter, within some book.
+
+00:09:56.786 --> 00:09:58.536 A:middle
+And we also have our Context
+
+00:09:58.536 --> 00:09:58.666 A:middle
+Tree.
+
+00:09:59.276 --> 00:10:00.746 A:middle
+To find Section 1, we will first
+

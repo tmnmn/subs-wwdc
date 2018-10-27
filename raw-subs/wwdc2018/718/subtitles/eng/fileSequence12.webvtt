@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.746 --> 00:12:00.046 A:middle
+your app.
+
+00:12:00.546 --> 00:12:02.216 A:middle
+And these fall into two general
+
+00:12:02.216 --> 00:12:03.866 A:middle
+categories of accessing user
+
+00:12:03.866 --> 00:12:05.986 A:middle
+data and more broadly, data
+
+00:12:05.986 --> 00:12:06.656 A:middle
+stewardship.
+
+00:12:07.896 --> 00:12:09.776 A:middle
+So for data access, let's start
+
+00:12:09.826 --> 00:12:12.336 A:middle
+by talking about iOS, and much
+
+00:12:12.336 --> 00:12:13.656 A:middle
+of this guidance will apply to
+
+00:12:13.656 --> 00:12:15.666 A:middle
+tvOS and watchOS as well.
+
+00:12:16.186 --> 00:12:18.576 A:middle
+Let's imagine you're building a
+
+00:12:18.576 --> 00:12:20.266 A:middle
+game for iOS where players can
+
+00:12:20.266 --> 00:12:21.916 A:middle
+compete against each other, and
+
+00:12:21.916 --> 00:12:22.746 A:middle
+you want them to be able to
+
+00:12:22.746 --> 00:12:24.256 A:middle
+upload a photo to identify
+
+00:12:24.256 --> 00:12:24.896 A:middle
+themselves.
+
+00:12:25.816 --> 00:12:26.716 A:middle
+Now we've all seen those
+
+00:12:26.756 --> 00:12:28.276 A:middle
+permission prompts for access to
+
+00:12:28.276 --> 00:12:30.386 A:middle
+photos, but wouldn't it be great
+
+00:12:30.386 --> 00:12:31.416 A:middle
+if we could just have the user
+
+00:12:31.416 --> 00:12:32.906 A:middle
+click a button, select a
+
+00:12:32.906 --> 00:12:34.436 A:middle
+picture, and have it appear
+
+00:12:34.436 --> 00:12:36.646 A:middle
+immediately in their app?
+
+00:12:37.276 --> 00:12:39.006 A:middle
+Well, you can already do this
+
+00:12:39.006 --> 00:12:39.396 A:middle
+today.
+
+00:12:40.786 --> 00:12:41.796 A:middle
+Because we have a feature
+
+00:12:41.796 --> 00:12:43.366 A:middle
+available called out-of-process
+
+00:12:43.366 --> 00:12:45.056 A:middle
+pickers for contacts, camera,
+
+00:12:45.056 --> 00:12:47.646 A:middle
+and photos data, where the
+
+00:12:47.646 --> 00:12:49.356 A:middle
+picker that appears runs outside
+
+00:12:49.356 --> 00:12:51.476 A:middle
+your apps process so the only
+
+00:12:51.476 --> 00:12:52.786 A:middle
+information that's shared back
+
+00:12:52.786 --> 00:12:54.396 A:middle
+with the app is what the user
+
+00:12:54.396 --> 00:12:55.096 A:middle
+selects.
+
+00:12:56.196 --> 00:12:57.916 A:middle
+We talked about those privacy
+
+00:12:57.916 --> 00:12:58.516 A:middle
+techniques.
+
+00:12:58.516 --> 00:13:00.256 A:middle
+This is a case where because
+

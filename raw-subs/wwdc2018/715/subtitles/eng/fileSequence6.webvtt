@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.886 --> 00:06:00.626 A:middle
+is built on the same primitives
+
+00:06:00.626 --> 00:06:01.826 A:middle
+that you would use yourself.
+
+00:06:03.366 --> 00:06:04.476 A:middle
+But it turns out that's not the
+
+00:06:04.476 --> 00:06:06.046 A:middle
+case.
+
+00:06:06.046 --> 00:06:07.786 A:middle
+URLSession is built on top of
+
+00:06:07.786 --> 00:06:08.396 A:middle
+something we call
+
+00:06:08.396 --> 00:06:09.126 A:middle
+Network.framework.
+
+00:06:10.116 --> 00:06:11.806 A:middle
+URLSession really focuses on all
+
+00:06:11.806 --> 00:06:14.186 A:middle
+of the HTTP bits, and it
+
+00:06:14.186 --> 00:06:15.766 A:middle
+offloads a lot of the transport
+
+00:06:15.766 --> 00:06:16.646 A:middle
+functionality to
+
+00:06:16.646 --> 00:06:17.356 A:middle
+Network.framework.
+
+00:06:21.056 --> 00:06:22.156 A:middle
+Network.framework is something
+
+00:06:22.156 --> 00:06:23.076 A:middle
+we've been working on for a
+
+00:06:23.076 --> 00:06:24.496 A:middle
+number of years, and in
+
+00:06:24.496 --> 00:06:25.886 A:middle
+supporting URLSession, we've
+
+00:06:25.886 --> 00:06:27.716 A:middle
+learned a lot, and we've taken a
+
+00:06:27.716 --> 00:06:28.826 A:middle
+lot of those lessons to the
+
+00:06:28.826 --> 00:06:29.166 A:middle
+IETF.
+
+00:06:29.166 --> 00:06:30.706 A:middle
+A number of our engineers
+
+00:06:30.706 --> 00:06:32.536 A:middle
+regularly participate in the
+
+00:06:32.536 --> 00:06:33.966 A:middle
+IETF and meet with engineers
+
+00:06:33.966 --> 00:06:35.366 A:middle
+from other companies, and
+
+00:06:35.366 --> 00:06:36.376 A:middle
+they've been discussing a lot of
+
+00:06:36.376 --> 00:06:37.146 A:middle
+what we've learned in the
+
+00:06:37.146 --> 00:06:38.366 A:middle
+transport services working
+
+00:06:38.366 --> 00:06:38.576 A:middle
+group.
+
+00:06:39.116 --> 00:06:40.196 A:middle
+And in those discussions, we've
+
+00:06:40.196 --> 00:06:41.636 A:middle
+got some great feedback, and
+
+00:06:41.636 --> 00:06:42.766 A:middle
+we've brought that back in and
+
+00:06:42.766 --> 00:06:44.086 A:middle
+improved Network.framework based
+
+00:06:44.086 --> 00:06:44.396 A:middle
+on that.
+
+00:06:45.556 --> 00:06:46.636 A:middle
+We are really excited to
+
+00:06:46.636 --> 00:06:48.376 A:middle
+announce this year that your
+
+00:06:48.376 --> 00:06:50.266 A:middle
+applications can take advantage
+
+00:06:50.336 --> 00:06:51.826 A:middle
+of this same library directly
+
+00:06:51.826 --> 00:06:51.976 A:middle
+now.
+
+00:06:52.516 --> 00:06:58.176 A:middle
+[ Applause ]
+
+00:06:58.676 --> 00:06:59.446 A:middle
+Now we know that one of the
+
+00:06:59.446 --> 00:07:01.256 A:middle
+things people love about sockets
+

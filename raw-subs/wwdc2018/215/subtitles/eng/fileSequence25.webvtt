@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.936 --> 00:25:00.576 A:middle
+and create CLS Binary Items and
+
+00:25:01.706 --> 00:25:03.436 A:middle
+we'll add each one of those as
+
+00:25:03.436 --> 00:25:05.686 A:middle
+an additional activity item on
+
+00:25:05.686 --> 00:25:06.316 A:middle
+our activity.
+
+00:25:07.156 --> 00:25:08.876 A:middle
+So, now that we've determined
+
+00:25:08.876 --> 00:25:10.266 A:middle
+what type of ClassKit close
+
+00:25:10.266 --> 00:25:12.096 A:middle
+we're going to write, let's go
+
+00:25:12.566 --> 00:25:14.486 A:middle
+ahead and see what that actually
+
+00:25:15.336 --> 00:25:19.746 A:middle
+looks like in action.
+
+00:25:20.466 --> 00:25:21.686 A:middle
+So here, I'm mirroring my
+
+00:25:21.686 --> 00:25:23.696 A:middle
+display for you and have Xcode
+
+00:25:23.696 --> 00:25:24.266 A:middle
+on screen.
+
+00:25:25.056 --> 00:25:26.236 A:middle
+The first thing that I'm going
+
+00:25:26.236 --> 00:25:28.706 A:middle
+to do is select my project's
+
+00:25:28.706 --> 00:25:29.046 A:middle
+target.
+
+00:25:30.166 --> 00:25:31.306 A:middle
+Once I do that, I'm going to
+
+00:25:31.306 --> 00:25:33.196 A:middle
+select the Capabilities Pane,
+
+00:25:33.586 --> 00:25:34.766 A:middle
+and we're going to find the
+
+00:25:34.766 --> 00:25:36.386 A:middle
+ClassKit APIs right here.
+
+00:25:37.536 --> 00:25:38.846 A:middle
+Then, all we need to do is make
+
+00:25:38.846 --> 00:25:40.806 A:middle
+sure that we toggle that on, and
+
+00:25:40.806 --> 00:25:42.326 A:middle
+we're all set to start writing
+
+00:25:42.326 --> 00:25:43.396 A:middle
+some ClassKit code.
+
+00:25:44.376 --> 00:25:46.176 A:middle
+So, first we're going to write
+
+00:25:46.176 --> 00:25:48.006 A:middle
+our context and we said that we
+
+00:25:48.006 --> 00:25:49.596 A:middle
+could do that as soon as the app
+
+00:25:49.596 --> 00:25:50.136 A:middle
+launches.
+
+00:25:50.736 --> 00:25:52.326 A:middle
+So, let's go ahead and open up
+
+00:25:52.376 --> 00:25:53.266 A:middle
+the App Delegate.
+
+00:25:54.096 --> 00:25:56.206 A:middle
+And in here, let's go ahead and
+
+00:25:56.276 --> 00:25:57.786 A:middle
+create a function that will
+
+00:25:57.856 --> 00:26:00.186 A:middle
+publish our context for us.
+

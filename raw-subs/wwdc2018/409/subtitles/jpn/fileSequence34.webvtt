@@ -1,0 +1,46 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.873 --> 00:34:05.612 align:start position:25% line:-2
+X86-64の16個を上回る
+32個でデータを管理します
+
+00:34:07.214 --> 00:34:13.454 align:start position:23% line:-2
+自動ベクトル化機能が
+これらのベクトルを生かせずとも
+
+00:34:13.554 --> 00:34:19.025 align:start position:14% line:-2
+スカラレジスタは増えており
+float型 double型も対応します
+
+00:34:20.060 --> 00:34:22.663 align:start position:27% line:-1
+他にも多くの利点があります
+
+00:34:24.164 --> 00:34:29.969 align:start position:29% line:-2
+計算に負担のかかる関数を
+例に取り上げてみましょう
+
+00:34:31.772 --> 00:34:35.742 align:start position:21% line:-1
+まずは既存の関数を備えておきます
+
+00:34:36.009 --> 00:34:40.047 align:start position:25% line:-2
+どのMacも
+フォールバックとして有効です
+
+00:34:41.681 --> 00:34:44.051 align:start position:30% line:-1
+次に関数を特殊化します
+
+00:34:44.150 --> 00:34:47.321 align:start position:23% line:-1
+方法は属性のターゲット指定です
+
+00:34:49.156 --> 00:34:52.292 align:start position:16% line:-1
+iMac Proのみですが この関数に
+
+00:34:52.391 --> 00:34:55.762 align:start position:30% line:-2
+AVX-512の適用を
+コンパイラに伝えます
+
+00:34:57.331 --> 00:35:02.135 align:start position:23% line:-2
+128ビットベクトルの
+simd float4を使えば
+

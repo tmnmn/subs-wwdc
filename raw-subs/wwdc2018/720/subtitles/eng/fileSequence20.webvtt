@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.486 --> 00:20:01.106 A:middle
+We support values of 0 and 1,
+
+00:20:01.106 --> 00:20:02.506 A:middle
+and that's going to be coming to
+
+00:20:02.506 --> 00:20:02.976 A:middle
+you in a future seed.
+
+00:20:04.456 --> 00:20:06.216 A:middle
+On older versions, "row" will be
+
+00:20:06.216 --> 00:20:06.626 A:middle
+ignored.
+
+00:20:07.356 --> 00:20:09.256 A:middle
+And, in that case, auxiliary
+
+00:20:09.256 --> 00:20:10.366 A:middle
+fields will be displayed on one
+
+00:20:10.366 --> 00:20:13.206 A:middle
+row, up to a limit of 4 fields
+
+00:20:13.206 --> 00:20:13.626 A:middle
+per row.
+
+00:20:15.006 --> 00:20:16.096 A:middle
+So, make sure you consider this
+
+00:20:16.096 --> 00:20:17.166 A:middle
+when designing your passes.
+
+00:20:17.406 --> 00:20:18.996 A:middle
+And, test across supported
+
+00:20:18.996 --> 00:20:20.206 A:middle
+devices and versions.
+
+00:20:22.436 --> 00:20:24.476 A:middle
+So now, we've got passes in
+
+00:20:24.476 --> 00:20:25.756 A:middle
+Wallet, looking great.
+
+00:20:26.306 --> 00:20:27.906 A:middle
+How do we make that content even
+
+00:20:27.906 --> 00:20:28.186 A:middle
+richer?
+
+00:20:28.746 --> 00:20:31.346 A:middle
+Let's get the most from a pass.
+
+00:20:31.866 --> 00:20:33.266 A:middle
+You can include information that
+
+00:20:33.266 --> 00:20:34.696 A:middle
+the system can leverage to
+
+00:20:34.696 --> 00:20:35.816 A:middle
+provide the user enhanced
+
+00:20:35.816 --> 00:20:36.506 A:middle
+experiences.
+
+00:20:37.356 --> 00:20:38.326 A:middle
+And, one of those you may
+
+00:20:38.326 --> 00:20:39.306 A:middle
+already know about, is
+
+00:20:39.306 --> 00:20:39.836 A:middle
+relevancy.
+
+00:20:40.396 --> 00:20:43.196 A:middle
+You can add relevancy by setting
+
+00:20:43.196 --> 00:20:45.766 A:middle
+the locations, relevantText, and
+
+00:20:45.766 --> 00:20:47.276 A:middle
+relevantDate pass JSON fields.
+
+00:20:47.796 --> 00:20:50.676 A:middle
+And, this allows the system to
+
+00:20:50.676 --> 00:20:51.836 A:middle
+present the pass to the user
+
+00:20:51.976 --> 00:20:53.136 A:middle
+just at the right moment.
+
+00:20:54.026 --> 00:20:55.436 A:middle
+We handle multiple relevant
+
+00:20:55.436 --> 00:20:55.866 A:middle
+passes.
+
+00:20:56.736 --> 00:20:57.966 A:middle
+And, if you're issuing passes
+
+00:20:57.966 --> 00:20:59.436 A:middle
+for a single journey, multiple
+
+00:20:59.436 --> 00:21:01.516 A:middle
+ones, then you should make sure
+

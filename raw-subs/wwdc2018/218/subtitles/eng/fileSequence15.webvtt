@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.636 --> 00:15:00.246 A:middle
+But remember you don't need to
+
+00:15:00.246 --> 00:15:02.136 A:middle
+invalidate the view itself here,
+
+00:15:02.576 --> 00:15:03.736 A:middle
+AppKit will do that for you
+
+00:15:03.776 --> 00:15:04.546 A:middle
+automatically.
+
+00:15:07.236 --> 00:15:08.676 A:middle
+Second, the concept of the
+
+00:15:08.896 --> 00:15:09.726 A:middle
+current appearance.
+
+00:15:10.536 --> 00:15:12.796 A:middle
+Now, this is a thread local
+
+00:15:12.796 --> 00:15:14.766 A:middle
+variable that you can access
+
+00:15:14.796 --> 00:15:16.076 A:middle
+through a class property on
+
+00:15:16.076 --> 00:15:16.976 A:middle
+NSAppearance.
+
+00:15:17.536 --> 00:15:20.196 A:middle
+If you're familiar with concepts
+
+00:15:20.196 --> 00:15:21.576 A:middle
+like the current NSGraphics
+
+00:15:21.576 --> 00:15:22.836 A:middle
+context or the current
+
+00:15:22.836 --> 00:15:24.516 A:middle
+NSProgress, you already know
+
+00:15:24.516 --> 00:15:25.516 A:middle
+what I'm talking about.
+
+00:15:25.976 --> 00:15:27.836 A:middle
+If not, just remember that this
+
+00:15:27.956 --> 00:15:29.416 A:middle
+is the appearance used to
+
+00:15:29.416 --> 00:15:31.476 A:middle
+resolve dynamic colors and
+
+00:15:32.096 --> 00:15:32.326 A:middle
+images.
+
+00:15:34.076 --> 00:15:35.856 A:middle
+AppKit will set up the current
+
+00:15:35.856 --> 00:15:37.386 A:middle
+appearance automatically for you
+
+00:15:37.386 --> 00:15:39.146 A:middle
+before we call any of those
+
+00:15:39.146 --> 00:15:40.866 A:middle
+special NSView methods we talked
+
+00:15:40.866 --> 00:15:41.806 A:middle
+about before, like
+
+00:15:41.986 --> 00:15:44.286 A:middle
+updateConstraints, layout, draw,
+
+00:15:44.286 --> 00:15:47.116 A:middle
+and updateLayer, but you can
+
+00:15:47.166 --> 00:15:49.076 A:middle
+also set it up yourself where
+
+00:15:49.076 --> 00:15:50.656 A:middle
+necessary and let's take a look
+
+00:15:50.656 --> 00:15:51.796 A:middle
+at an example why you might do
+
+00:15:51.796 --> 00:15:52.046 A:middle
+that.
+
+00:15:55.396 --> 00:15:57.146 A:middle
+So, here's a custom that
+
+00:15:57.146 --> 00:15:58.576 A:middle
+maintains some sublayers.
+

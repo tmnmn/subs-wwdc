@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.976 --> 00:12:00.206 A:middle
+In UIKit, UIViewController is a
+
+00:12:00.206 --> 00:12:01.696 A:middle
+great example of a focus
+
+00:12:01.696 --> 00:12:02.316 A:middle
+environment.
+
+00:12:03.456 --> 00:12:05.526 A:middle
+Next, we have UIFocusItem.
+
+00:12:06.336 --> 00:12:08.036 A:middle
+This protocol inherits from
+
+00:12:08.036 --> 00:12:09.756 A:middle
+FocusEnvironment, and adds the
+
+00:12:09.756 --> 00:12:11.326 A:middle
+ability for focus items to
+
+00:12:11.326 --> 00:12:12.636 A:middle
+actually be able to become
+
+00:12:12.636 --> 00:12:13.246 A:middle
+focused.
+
+00:12:13.646 --> 00:12:16.186 A:middle
+UIKit's UIView, and SpriteKit's
+
+00:12:16.186 --> 00:12:18.156 A:middle
+SKNode are great examples of
+
+00:12:18.156 --> 00:12:19.036 A:middle
+focus items.
+
+00:12:19.976 --> 00:12:21.746 A:middle
+And, finally we have the
+
+00:12:21.746 --> 00:12:23.666 A:middle
+UIFocusSystem, which provides
+
+00:12:23.666 --> 00:12:24.736 A:middle
+the famously useful
+
+00:12:24.736 --> 00:12:26.556 A:middle
+functionality of being able to
+
+00:12:26.556 --> 00:12:28.616 A:middle
+register custom sounds to play
+
+00:12:28.806 --> 00:12:30.216 A:middle
+during focus interactions.
+
+00:12:31.216 --> 00:12:32.906 A:middle
+For more information on how to
+
+00:12:32.906 --> 00:12:34.706 A:middle
+work with these components, and
+
+00:12:34.776 --> 00:12:37.036 A:middle
+debug focus, I highly recommend
+
+00:12:37.036 --> 00:12:38.176 A:middle
+that you watch "Focus
+
+00:12:38.176 --> 00:12:40.476 A:middle
+Interaction in tvOS 11" from
+
+00:12:40.476 --> 00:12:41.096 A:middle
+last year.
+
+00:12:42.046 --> 00:12:44.286 A:middle
+And now, I'm really excited to
+
+00:12:44.286 --> 00:12:46.196 A:middle
+introduce some new components to
+
+00:12:46.196 --> 00:12:47.076 A:middle
+the focus engine.
+
+00:12:47.656 --> 00:12:50.756 A:middle
+First, starting in tvOS 12, we
+
+00:12:50.756 --> 00:12:52.486 A:middle
+are expanding the functionality
+
+00:12:52.536 --> 00:12:54.056 A:middle
+of the focusSystem object.
+
+00:12:54.476 --> 00:12:55.496 A:middle
+You may now retrieve a
+
+00:12:55.496 --> 00:12:56.996 A:middle
+focusSystem for a given
+
+00:12:56.996 --> 00:12:58.926 A:middle
+environment, and access the
+
+00:12:58.926 --> 00:13:00.596 A:middle
+currently focused item off of
+

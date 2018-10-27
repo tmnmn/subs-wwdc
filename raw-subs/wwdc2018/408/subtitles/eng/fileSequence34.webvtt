@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.086 --> 00:34:00.816 A:middle
+exposed to Objective-C.
+
+00:34:00.916 --> 00:34:02.056 A:middle
+It doesn't actually need to be
+
+00:34:02.056 --> 00:34:03.786 A:middle
+used from any other files in my
+
+00:34:03.786 --> 00:34:06.046 A:middle
+project, Swift or Objective-C.
+
+00:34:06.486 --> 00:34:09.286 A:middle
+So I can mark it private.
+
+00:34:10.106 --> 00:34:11.775 A:middle
+And once again have that
+
+00:34:11.775 --> 00:34:13.326 A:middle
+reduction in the shape of my
+
+00:34:13.326 --> 00:34:14.176 A:middle
+generated header.
+
+00:34:14.815 --> 00:34:17.255 A:middle
+In cases like this, there's
+
+00:34:17.255 --> 00:34:19.246 A:middle
+often another option as well.
+
+00:34:19.596 --> 00:34:20.585 A:middle
+And that's to switch to
+
+00:34:20.585 --> 00:34:21.896 A:middle
+block-based API's.
+
+00:34:22.775 --> 00:34:24.166 A:middle
+In many cases, this can even
+
+00:34:24.166 --> 00:34:25.866 A:middle
+clear up your code because you
+
+00:34:25.866 --> 00:34:27.536 A:middle
+can implicitly capture state
+
+00:34:27.666 --> 00:34:28.485 A:middle
+from the function that's
+
+00:34:28.485 --> 00:34:30.016 A:middle
+registering for the notification
+
+00:34:30.396 --> 00:34:31.516 A:middle
+rather than having to carry it
+
+00:34:31.516 --> 00:34:33.065 A:middle
+along as some kind of context
+
+00:34:33.065 --> 00:34:33.456 A:middle
+object.
+
+00:34:34.076 --> 00:34:37.286 A:middle
+Now, the last tip for reducing
+
+00:34:37.286 --> 00:34:38.485 A:middle
+the contents of your generated
+
+00:34:38.485 --> 00:34:41.235 A:middle
+header is actually a very old
+
+00:34:41.235 --> 00:34:41.576 A:middle
+one.
+
+00:34:41.815 --> 00:34:43.255 A:middle
+You can migrate to Swift 4.
+
+00:34:44.366 --> 00:34:45.646 A:middle
+And you've already heard that
+
+00:34:45.646 --> 00:34:46.706 A:middle
+you're going to have to do that
+
+00:34:46.706 --> 00:34:47.216 A:middle
+this year.
+
+00:34:47.596 --> 00:34:49.076 A:middle
+That Xcode 10 will be the last
+
+00:34:49.076 --> 00:34:51.795 A:middle
+set of releases where Swift 3
+
+00:34:51.795 --> 00:34:52.886 A:middle
+mode is supported.
+
+00:34:53.976 --> 00:34:56.386 A:middle
+And so, this is something you'll
+
+00:34:56.386 --> 00:34:57.946 A:middle
+be doing anyway.
+
+00:34:57.976 --> 00:34:59.166 A:middle
+Edit. Convert.
+
+00:34:59.316 --> 00:35:01.076 A:middle
+To Current Swift Syntax.
+

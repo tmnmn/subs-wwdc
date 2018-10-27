@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:56.149 --> 00:52:00.687 align:middle line:-2
+既然已经
+将字符串加载到x0
+
+00:52:01.855 --> 00:52:05.692 align:middle line:-2
+就可以调用playSound
+不用写入playSound
+
+00:52:05.759 --> 00:52:10.430 align:middle line:-2
+我们写入
+__z9playSoundPKc
+
+00:52:11.498 --> 00:52:12.599 align:middle line:-1
+这是什么？
+
+00:52:12.666 --> 00:52:13.734 align:middle line:-1
+这是变形的符号
+
+00:52:13.800 --> 00:52:16.136 align:middle line:-2
+如果仔细看
+会看到cat.mm
+
+00:52:16.203 --> 00:52:17.804 align:middle line:-1
+这是Objective-C++
+
+00:52:18.405 --> 00:52:21.542 align:middle line:-2
+playSound实际是
+C++函数
+
+00:52:22.042 --> 00:52:22.876 align:middle line:-1
+那么…
+
+00:52:22.943 --> 00:52:24.344 align:middle line:-1
+如果你不熟悉
+
+00:52:25.979 --> 00:52:28.715 align:middle line:-2
+可以在命令窗口
+输入命令
+
+00:52:28.782 --> 00:52:31.151 align:middle line:-2
+如果运行
+Swift-demangle
+
+00:52:31.385 --> 00:52:33.554 align:middle line:-2
+传递符号
+然后反修饰
+
+00:52:33.720 --> 00:52:35.856 align:middle line:-2
+没有用
+它不是Swift符号
+
+00:52:36.456 --> 00:52:39.092 align:middle line:-2
+但C++filt
+C++反修饰器
+
+00:52:39.226 --> 00:52:40.427 align:middle line:-1
+告诉我们它实际上是
+
+00:52:41.328 --> 00:52:42.529 align:middle line:-1
+playSound的符号
+
+00:52:42.596 --> 00:52:44.932 align:middle line:-2
+除了playSound
+它还有一个实参
+
+00:52:44.998 --> 00:52:47.534 align:middle line:-1
+就是const char*
+
+00:52:47.601 --> 00:52:52.139 align:middle line:-2
+因为C++会将更多信息
+编入修饰符号
+
+00:52:53.640 --> 00:52:55.108 align:middle line:-1
+现在有了.o文件
+
+00:52:55.509 --> 00:52:57.811 align:middle line:-1
+实际构建中会有更多
+
+00:52:58.946 --> 00:53:01.048 align:middle line:-1
+那怎么办呢？
+

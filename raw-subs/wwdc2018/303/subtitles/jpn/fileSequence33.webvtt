@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.179 --> 00:33:04.118 align:start position:16% line:-2
+１つ目はオーディエンス
+App Store Connectです
+
+00:33:05.452 --> 00:33:08.689 align:start position:36% line:-2
+最後にトークンの
+署名に使う―
+
+00:33:08.789 --> 00:33:12.793 align:start position:29% line:-2
+アルゴリズムを
+割り当てる必要があります
+
+00:33:13.126 --> 00:33:16.830 align:start position:23% line:-1
+これにはES256を選びました
+
+00:33:17.431 --> 00:33:21.502 align:start position:29% line:-2
+JWT支援アルゴリズムに
+対応するものが
+
+00:33:21.602 --> 00:33:23.804 align:start position:34% line:-1
+適切だと考えました
+
+00:33:23.904 --> 00:33:27.674 align:start position:29% line:-2
+でもこのアルゴリズムを
+実行する必要はありません
+
+00:33:28.208 --> 00:33:33.180 align:start position:27% line:-2
+幸いJWTは多言語で
+ライブラリを提供しています
+
+00:33:33.280 --> 00:33:38.151 align:start position:30% line:-2
+非常に簡単にトークンの
+作成や署名ができます
+
+00:33:39.319 --> 00:33:43.156 align:start position:34% line:-2
+この例はRubyで
+書かれています
+
+00:33:43.257 --> 00:33:48.629 align:start position:30% line:-2
+プライベートキーと共に
+情報を提供するだけで
+
+00:33:48.729 --> 00:33:52.666 align:start position:29% line:-2
+このエンコードメソッドで
+完璧なトークンができます
+
+00:33:54.001 --> 00:33:57.704 align:start position:32% line:-2
+このトークンを
+リクエストに加えます
+
+00:33:57.805 --> 00:34:01.375 align:start position:36% line:-2
+認証ヘッダーに
+記載するだけです
+

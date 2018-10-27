@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.106 --> 00:15:02.866 A:middle
+So when we start world tracking,
+
+00:15:02.866 --> 00:15:04.186 A:middle
+WorldMappingStatus will be not
+
+00:15:04.186 --> 00:15:04.666 A:middle
+available.
+
+00:15:05.056 --> 00:15:06.936 A:middle
+As soon as we start scanning the
+
+00:15:06.936 --> 00:15:08.156 A:middle
+physical space, it will be
+
+00:15:08.266 --> 00:15:08.786 A:middle
+limited.
+
+00:15:10.356 --> 00:15:12.786 A:middle
+The more we move in the physical
+
+00:15:12.786 --> 00:15:14.526 A:middle
+world, world tracking will
+
+00:15:14.526 --> 00:15:19.406 A:middle
+continue to extend the map.
+
+00:15:19.546 --> 00:15:21.196 A:middle
+And if we have scanned enough
+
+00:15:21.336 --> 00:15:23.656 A:middle
+physical world from current
+
+00:15:23.656 --> 00:15:24.206 A:middle
+point of view,
+
+00:15:24.366 --> 00:15:25.586 A:middle
+WorldMappingStatus will be
+
+00:15:25.756 --> 00:15:26.096 A:middle
+mapped.
+
+00:15:34.236 --> 00:15:36.486 A:middle
+So note that if you point away
+
+00:15:36.486 --> 00:15:39.356 A:middle
+from a map physical space,
+
+00:15:39.926 --> 00:15:41.766 A:middle
+WorldMappingStatus may go back
+
+00:15:41.766 --> 00:15:42.526 A:middle
+to limited.
+
+00:15:43.126 --> 00:15:44.756 A:middle
+So it will start to learn more
+
+00:15:44.756 --> 00:15:46.996 A:middle
+about the new environment that
+
+00:15:46.996 --> 00:15:51.076 A:middle
+we are starting to see.
+
+00:15:51.306 --> 00:15:52.196 A:middle
+So how you can use
+
+00:15:52.196 --> 00:15:53.386 A:middle
+WorldMappingStatus in your
+
+00:15:53.386 --> 00:15:54.096 A:middle
+application code.
+
+00:15:54.586 --> 00:15:58.076 A:middle
+Let's say you have an app that
+
+00:15:58.076 --> 00:15:59.806 A:middle
+lets you share your World Map
+
+00:15:59.876 --> 00:16:02.346 A:middle
+with another user, and you have
+

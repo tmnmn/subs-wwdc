@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:57.906 --> 00:03:00.596 A:middle
+linear algebra as well as sparse
+
+00:03:00.596 --> 00:03:03.336 A:middle
+linear algebra, and we have a
+
+00:03:03.336 --> 00:03:05.176 A:middle
+specialized library for neural
+
+00:03:05.176 --> 00:03:06.626 A:middle
+networks called BNNS.
+
+00:03:06.626 --> 00:03:07.896 A:middle
+It stands for Basic Neural
+
+00:03:07.896 --> 00:03:08.726 A:middle
+Network Subroutines.
+
+00:03:09.766 --> 00:03:10.916 A:middle
+Not strictly part of the
+
+00:03:10.916 --> 00:03:12.596 A:middle
+Accelerate framework but very
+
+00:03:12.596 --> 00:03:13.716 A:middle
+closely related, and we find
+
+00:03:13.716 --> 00:03:14.796 A:middle
+these libraries very useful,
+
+00:03:15.126 --> 00:03:16.656 A:middle
+include libraries like simd,
+
+00:03:17.406 --> 00:03:18.336 A:middle
+which is a vector programming
+
+00:03:18.336 --> 00:03:20.636 A:middle
+aid for the CPU, and
+
+00:03:20.636 --> 00:03:21.956 A:middle
+Compression, which contains
+
+00:03:22.036 --> 00:03:23.386 A:middle
+several different lossless data
+
+00:03:23.386 --> 00:03:24.136 A:middle
+compression algorithms.
+
+00:03:24.136 --> 00:03:27.116 A:middle
+So let's take a look at our
+
+00:03:27.116 --> 00:03:27.766 A:middle
+first library.
+
+00:03:28.266 --> 00:03:30.646 A:middle
+We're going to take a look at
+
+00:03:31.366 --> 00:03:31.776 A:middle
+vDSP.
+
+00:03:31.916 --> 00:03:33.186 A:middle
+VDSP is a state-of-the-art
+
+00:03:33.186 --> 00:03:34.346 A:middle
+signal processing library, and
+
+00:03:34.516 --> 00:03:35.556 A:middle
+it contains a wide range of
+
+00:03:35.556 --> 00:03:36.606 A:middle
+signal processing primitives.
+
+00:03:37.706 --> 00:03:39.016 A:middle
+These range from basic
+
+00:03:39.016 --> 00:03:40.456 A:middle
+arithmetic operations on arrays
+
+00:03:40.766 --> 00:03:43.396 A:middle
+such as add and subtract as well
+
+00:03:43.396 --> 00:03:44.806 A:middle
+as more complicated operations
+
+00:03:44.996 --> 00:03:47.716 A:middle
+like convolution and FFTs.
+
+00:03:47.716 --> 00:03:50.306 A:middle
+If you're a successful app
+
+00:03:50.306 --> 00:03:51.846 A:middle
+developer and maybe in the past
+
+00:03:51.846 --> 00:03:54.196 A:middle
+you have avoided FFTs, I want to
+
+00:03:54.196 --> 00:03:55.156 A:middle
+show you how we make that easy
+
+00:03:55.156 --> 00:03:55.776 A:middle
+with Accelerate.
+
+00:03:56.286 --> 00:03:57.326 A:middle
+With just a few lines of code,
+
+00:03:57.486 --> 00:03:58.286 A:middle
+you can make that work.
+
+00:03:59.206 --> 00:03:59.946 A:middle
+And I have an example.
+
+00:03:59.946 --> 00:04:00.696 A:middle
+I'm going to show you how to
+

@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.073 --> 00:14:02.442 align:middle line:-1
+及其子环境或项
+
+00:14:02.743 --> 00:14:05.345 align:middle line:-1
+你必须app一个父聚焦环境
+
+00:14:05.546 --> 00:14:07.047 align:middle line:-1
+和一个FocusItemContainer
+
+00:14:07.447 --> 00:14:08.448 align:middle line:-1
+比如
+
+00:14:08.515 --> 00:14:11.451 align:middle line:-2
+UIViewController
+可能会把它的父viewController
+
+00:14:11.518 --> 00:14:13.053 align:middle line:-1
+提供为它的parentFocusEnvironment
+
+00:14:13.420 --> 00:14:16.223 align:middle line:-2
+并把它的视图
+提供为它的FocusItemContainer
+
+00:14:17.524 --> 00:14:20.127 align:middle line:-2
+FocusEnvironment提供了
+一系列的方法 你可以用于
+
+00:14:20.194 --> 00:14:22.696 align:middle line:-1
+控制和应对焦点更新
+
+00:14:22.963 --> 00:14:23.964 align:middle line:-1
+比如
+
+00:14:24.031 --> 00:14:27.734 align:middle line:-2
+preferredFocusEnvironments
+允许你引导聚焦系统
+
+00:14:27.935 --> 00:14:31.471 align:middle line:-2
+在视图初始化之后
+选择要聚焦哪一项
+
+00:14:31.839 --> 00:14:33.841 align:middle line:-1
+或是一个程序性的焦点更新
+
+00:14:34.775 --> 00:14:37.711 align:middle line:-1
+我在这里要提醒你们注意两个方法
+
+00:14:37.778 --> 00:14:39.146 align:middle line:-1
+在FocusEnvironment上
+
+00:14:39.646 --> 00:14:42.883 align:middle line:-2
+SetNeedsFocusUpdate
+和updateFocusIfNeeded
+
+00:14:43.283 --> 00:14:45.385 align:middle line:-1
+你对这些方法的实施
+
+00:14:45.452 --> 00:14:49.857 align:middle line:-2
+必须在FocusSystem上
+调用指定方法
+
+00:14:51.425 --> 00:14:55.062 align:middle line:-2
+接下来让我们实施一个自定义
+FocusItemContainer
+
+00:14:57.164 --> 00:14:59.766 align:middle line:-2
+首先你要提供一个
+coordinateSpace
+

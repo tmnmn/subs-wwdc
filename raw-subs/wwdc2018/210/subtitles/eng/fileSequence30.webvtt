@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.526 --> 00:30:00.916 A:middle
+And let's see how it looks now,
+
+00:30:01.356 --> 00:30:02.576 A:middle
+using headerColor.
+
+00:30:03.366 --> 00:30:04.606 A:middle
+Looks a lot better and dark with
+
+00:30:04.606 --> 00:30:05.446 A:middle
+that dark green.
+
+00:30:06.056 --> 00:30:07.846 A:middle
+But something becomes obvious,
+
+00:30:08.946 --> 00:30:10.116 A:middle
+and that's the text.
+
+00:30:10.666 --> 00:30:13.236 A:middle
+Chloe's name and age are hard to
+
+00:30:13.236 --> 00:30:14.526 A:middle
+read now against the darker
+
+00:30:14.526 --> 00:30:14.966 A:middle
+green.
+
+00:30:16.336 --> 00:30:19.596 A:middle
+Things looked okay in light, but
+
+00:30:19.596 --> 00:30:22.276 A:middle
+they don't look good in dark.
+
+00:30:22.456 --> 00:30:24.516 A:middle
+Well, there, we were using black
+
+00:30:25.166 --> 00:30:27.236 A:middle
+and dark gray, and those are
+
+00:30:27.236 --> 00:30:28.956 A:middle
+static colors, also.
+
+00:30:29.526 --> 00:30:31.686 A:middle
+Not exactly the same as
+
+00:30:31.686 --> 00:30:33.266 A:middle
+hardcoded, because we're using
+
+00:30:33.456 --> 00:30:36.446 A:middle
+available colors, but they don't
+
+00:30:36.446 --> 00:30:36.896 A:middle
+change.
+
+00:30:38.076 --> 00:30:39.766 A:middle
+So, instead of using asset
+
+00:30:39.766 --> 00:30:41.206 A:middle
+catalogs this time, we're going
+
+00:30:41.206 --> 00:30:43.906 A:middle
+to take advantage of dynamic
+
+00:30:43.906 --> 00:30:44.626 A:middle
+system colors.
+
+00:30:45.506 --> 00:30:48.416 A:middle
+NSColor has many dynamic colors
+
+00:30:48.416 --> 00:30:50.366 A:middle
+available for you to use with
+
+00:30:50.366 --> 00:30:51.766 A:middle
+definitions across the different
+
+00:30:51.766 --> 00:30:52.386 A:middle
+appearances.
+
+00:30:53.466 --> 00:30:55.106 A:middle
+And a special thing about
+
+00:30:55.106 --> 00:30:57.156 A:middle
+NSColor is that the colors are
+
+00:30:57.156 --> 00:30:59.476 A:middle
+resolved at draw time, which
+
+00:30:59.476 --> 00:31:01.506 A:middle
+means that the actual RGBA
+

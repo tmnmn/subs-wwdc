@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.776 --> 00:28:01.906 A:middle
+Since the navigation controller
+
+00:28:01.906 --> 00:28:03.996 A:middle
+is inside of that, it also
+
+00:28:04.036 --> 00:28:05.256 A:middle
+receives a safe area inside in
+
+00:28:05.256 --> 00:28:06.966 A:middle
+the bottom that accounts for the
+
+00:28:06.966 --> 00:28:07.406 A:middle
+tab bar.
+
+00:28:08.456 --> 00:28:09.596 A:middle
+And the content view controller
+
+00:28:09.596 --> 00:28:11.166 A:middle
+inside of both received safe
+
+00:28:11.166 --> 00:28:12.286 A:middle
+area insets that account for
+
+00:28:12.286 --> 00:28:12.926 A:middle
+both bars.
+
+00:28:12.926 --> 00:28:15.726 A:middle
+Now what does the story look
+
+00:28:15.726 --> 00:28:16.466 A:middle
+like in landscape?
+
+00:28:17.536 --> 00:28:18.086 A:middle
+Similar.
+
+00:28:18.086 --> 00:28:19.426 A:middle
+There are safe area insets in
+
+00:28:19.426 --> 00:28:20.206 A:middle
+the top and bottom.
+
+00:28:20.696 --> 00:28:22.106 A:middle
+But there are also insets on the
+
+00:28:22.106 --> 00:28:24.676 A:middle
+left and right that account for
+
+00:28:25.286 --> 00:28:26.486 A:middle
+the size of the screen.
+
+00:28:26.486 --> 00:28:27.886 A:middle
+And those are propagated all the
+
+00:28:27.886 --> 00:28:29.546 A:middle
+way down from the screen through
+
+00:28:29.546 --> 00:28:30.576 A:middle
+the view controller hierarchy.
+
+00:28:32.226 --> 00:28:33.696 A:middle
+Now I want to stop here and use
+
+00:28:33.696 --> 00:28:35.566 A:middle
+this example to make a point
+
+00:28:35.686 --> 00:28:37.516 A:middle
+about how you should think about
+
+00:28:37.516 --> 00:28:38.636 A:middle
+using safe area when you
+
+00:28:38.636 --> 00:28:39.856 A:middle
+implement your own views.
+
+00:28:40.806 --> 00:28:43.156 A:middle
+So this custom view shouldn't
+
+00:28:43.156 --> 00:28:44.516 A:middle
+know that it's running on an
+
+00:28:44.516 --> 00:28:45.156 A:middle
+iPhone 10.
+
+00:28:45.586 --> 00:28:46.886 A:middle
+It shouldn't even know that it's
+
+00:28:46.886 --> 00:28:48.626 A:middle
+contained inside of container
+
+00:28:48.626 --> 00:28:49.326 A:middle
+view controllers.
+
+00:28:50.286 --> 00:28:51.776 A:middle
+This is the idea of
+
+00:28:51.776 --> 00:28:52.726 A:middle
+encapsulation.
+
+00:28:53.236 --> 00:28:55.456 A:middle
+If your views only read the safe
+
+00:28:55.456 --> 00:28:57.036 A:middle
+area insets that are provided to
+
+00:28:57.036 --> 00:28:59.436 A:middle
+them on all four sides, and are
+
+00:28:59.436 --> 00:29:02.876 A:middle
+able to adapt to different, to
+

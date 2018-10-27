@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.706 --> 00:41:01.636 A:middle
+UIWebView to WKWebview.
+
+00:41:02.046 --> 00:41:03.076 A:middle
+These are the basics.
+
+00:41:03.786 --> 00:41:05.216 A:middle
+Then we have the defense
+
+00:41:05.216 --> 00:41:06.586 A:middle
+mechanisms we've been going
+
+00:41:06.586 --> 00:41:07.006 A:middle
+through.
+
+00:41:07.386 --> 00:41:09.386 A:middle
+Content security policy will
+
+00:41:09.386 --> 00:41:11.956 A:middle
+help you here with cross-site
+
+00:41:11.956 --> 00:41:13.236 A:middle
+scripting and speculative
+
+00:41:13.236 --> 00:41:14.276 A:middle
+execution attacks.
+
+00:41:16.266 --> 00:41:17.686 A:middle
+HttpOnly cookies will provide
+
+00:41:17.746 --> 00:41:19.706 A:middle
+you with some kind of protection
+
+00:41:19.706 --> 00:41:20.826 A:middle
+against cross-site scripting,
+
+00:41:20.906 --> 00:41:22.526 A:middle
+meaning the scripts can't steal
+
+00:41:22.526 --> 00:41:24.306 A:middle
+the cookies, but it will
+
+00:41:24.306 --> 00:41:26.026 A:middle
+definitely help you against
+
+00:41:26.026 --> 00:41:27.586 A:middle
+speculative execution attacks
+
+00:41:27.626 --> 00:41:29.616 A:middle
+because HttpOnly cookies are
+
+00:41:29.756 --> 00:41:31.236 A:middle
+kept in the network process.
+
+00:41:33.286 --> 00:41:34.446 A:middle
+Subresource integrity.
+
+00:41:34.876 --> 00:41:36.036 A:middle
+This is the way you fight
+
+00:41:36.436 --> 00:41:37.896 A:middle
+against a compromised CDN.
+
+00:41:38.306 --> 00:41:40.246 A:middle
+Someone's executing code on your
+
+00:41:40.246 --> 00:41:42.106 A:middle
+page that you never wanted to be
+
+00:41:42.106 --> 00:41:42.346 A:middle
+there.
+
+00:41:44.576 --> 00:41:47.176 A:middle
+SameSite cookies, this is a way
+
+00:41:47.176 --> 00:41:49.766 A:middle
+to fight forged requests done
+
+00:41:49.816 --> 00:41:51.936 A:middle
+invisibly by some phishing page
+
+00:41:52.026 --> 00:41:52.816 A:middle
+to your server.
+
+00:41:52.906 --> 00:41:54.456 A:middle
+You will know that because the
+
+00:41:54.456 --> 00:41:56.036 A:middle
+SameSite cookie won't be sent
+
+00:41:56.036 --> 00:41:57.496 A:middle
+when you're embedded and so you
+
+00:41:57.496 --> 00:41:59.336 A:middle
+don't accept the request.
+

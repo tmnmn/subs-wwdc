@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.538 --> 00:24:01.175 align:middle line:-2
+我们之前看过这个代码片段
+broadcastStarted
+
+00:24:01.508 --> 00:24:04.378 align:middle line:-1
+这里我要展示的是你如何处理
+
+00:24:04.444 --> 00:24:05.712 align:middle line:-1
+当用户未登录时
+
+00:24:06.313 --> 00:24:09.750 align:middle line:-2
+这里有个函数
+finishBroadcastWithError
+
+00:24:10.884 --> 00:24:15.389 align:middle line:-1
+你要做的是提供用户信息词库
+
+00:24:15.455 --> 00:24:20.294 align:middle line:-2
+说明失败原因 然后
+ReplayKit将用这个字符串
+
+00:24:20.727 --> 00:24:23.163 align:middle line:-1
+并在程序终止后 显示该字符串
+
+00:24:26.533 --> 00:24:29.603 align:middle line:-1
+（开发直播扩展）
+
+00:24:29.670 --> 00:24:30.838 align:middle line:-1
+好了
+
+00:24:32.873 --> 00:24:35.375 align:middle line:-1
+现在看看如何开发直播扩展
+
+00:24:36.610 --> 00:24:39.713 align:middle line:-1
+如你所见 过程简单直白
+
+00:24:41.548 --> 00:24:43.750 align:middle line:-1
+app控制直播设置
+
+00:24:44.618 --> 00:24:46.987 align:middle line:-1
+然后将信息递给扩展
+
+00:24:50.691 --> 00:24:52.759 align:middle line:-1
+直播开始后
+
+00:24:52.826 --> 00:24:56.063 align:middle line:-1
+收取并编码媒体样本
+
+00:24:57.231 --> 00:25:00.133 align:middle line:-1
+同时获取屏幕上的app信息
+

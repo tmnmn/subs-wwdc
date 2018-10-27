@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.399 --> 00:20:01.368 align:start position:29% line:-1
+境界ボックスを作成します
+
+00:20:02.369 --> 00:20:05.038 align:start position:29% line:-1
+ボックスの作成に使うのは
+
+00:20:05.572 --> 00:20:09.910 align:start position:30% line:-2
+テスト画像のカラム
+つまり画像そのものです
+
+00:20:10.010 --> 00:20:13.947 align:start position:32% line:-2
+さらにモデルから得た
+予測も使います
+
+00:20:14.248 --> 00:20:18.452 align:start position:30% line:-2
+これで画像に
+境界ボックスを描きます
+
+00:20:18.552 --> 00:20:23.390 align:start position:25% line:-2
+今度は画像形式で
+先ほどの予測結果を表示します
+
+00:20:24.892 --> 00:20:28.695 align:start position:30% line:-2
+“.show”を使って
+予測画像を確認します
+
+00:20:28.796 --> 00:20:31.165 align:start position:32% line:-1
+これで表示されました
+
+00:20:31.365 --> 00:20:35.335 align:start position:43% line:-1
+(拍手)
+
+00:20:38.438 --> 00:20:43.410 align:start position:27% line:-2
+このモデルは
+１枚の写真には有効でしたが
+
+00:20:43.510 --> 00:20:48.115 align:start position:30% line:-2
+例えば５万枚の画像では
+どうでしょうか？
+
+00:20:48.549 --> 00:20:52.152 align:start position:32% line:-2
+今度はモデルを量的に
+評価してみます
+
+00:20:53.120 --> 00:20:56.623 align:start position:12% line:-2
+“Evaluate the model”の
+セクションを作ります
+
+00:20:56.857 --> 00:21:00.260 align:start position:20% line:-2
+“model.evaluate”を
+呼び出して
+

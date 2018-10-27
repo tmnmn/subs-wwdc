@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:56.023 --> 00:01:00.561 align:start position:27% line:-2
+Xcode 10の信頼性を
+大幅に向上させました
+
+00:01:02.129 --> 00:01:04.331 align:start position:34% line:-1
+ええ　そうなんです
+
+00:01:04.431 --> 00:01:08.402 align:start position:43% line:-1
+(拍手)
+
+00:01:08.502 --> 00:01:14.641 align:start position:27% line:-2
+Swiftデバッグにおける
+エッジケースを解消しました
+
+00:01:14.741 --> 00:01:16.777 align:start position:32% line:-1
+いくつかお話しします
+
+00:01:17.511 --> 00:01:21.515 align:start position:30% line:-2
+複雑なプロジェクトや
+ビルド設定のケースです
+
+00:01:21.615 --> 00:01:25.485 align:start position:29% line:-2
+コンソールでpoの使用や
+式の評価を試みると
+
+00:01:25.586 --> 00:01:28.455 align:start position:34% line:-2
+このようなエラーが
+発生します
+
+00:01:28.622 --> 00:01:31.191 align:start position:20% line:-1
+この“AST context”とは
+
+00:01:31.291 --> 00:01:37.564 align:start position:23% line:-2
+コンパイラの状態の再構成のため
+必要な式のコンテキストです
+
+00:01:37.664 --> 00:01:40.367 align:start position:29% line:-1
+モジュールの衝突などで―
+
+00:01:40.467 --> 00:01:45.873 align:start position:23% line:-2
+式のコンテキストが再構成できず
+失敗するのです
+
+00:01:46.373 --> 00:01:51.278 align:start position:23% line:-2
+Xcode 10ではLLDBが
+フォールバックを実装
+
+00:01:51.378 --> 00:01:57.384 align:start position:29% line:-2
+より簡単なコンテキストを
+現在のフレームに作り
+
+00:01:57.484 --> 00:01:59.920 align:start position:32% line:-1
+式の評価に使用します
+

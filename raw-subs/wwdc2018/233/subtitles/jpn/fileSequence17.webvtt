@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.853 --> 00:17:04.925 align:start position:21% line:-2
+単発ジェスチャと連続ジェスチャの
+違いを理解することが重要
+
+00:17:05.826 --> 00:17:08.996 align:start position:27% line:-2
+連続ジェスチャは
+イベントの発生を知らせます
+
+00:17:09.463 --> 00:17:11.165 align:start position:23% line:-1
+Possibleの状態で開始し
+
+00:17:11.397 --> 00:17:14.801 align:start position:29% line:-2
+“Goを通過せず
+200ドルも受け取らず”
+
+00:17:14.902 --> 00:17:17.604 align:start position:21% line:-2
+すぐに
+Recognizedの状態に遷移
+
+00:17:18.372 --> 00:17:22.509 align:start position:27% line:-2
+アプリケーションの操作の
+自動識別と追跡に便利ですが
+
+00:17:22.608 --> 00:17:26.079 align:start position:29% line:-2
+操作中の全段階で
+知らせるわけではないです
+
+00:17:27.448 --> 00:17:33.353 align:start position:23% line:-2
+もう１つの連続ジェスチャは
+はるかに高い忠実性を提供します
+
+00:17:34.188 --> 00:17:37.291 align:start position:25% line:-2
+単発ジェスチャと同様
+Possibleの状態で開始
+
+00:17:37.624 --> 00:17:41.328 align:start position:30% line:-2
+しかし認識され始めると
+Beganの状態に遷移
+
+00:17:42.496 --> 00:17:45.465 align:start position:23% line:-2
+追跡する時
+Changedの状態に入ります
+
+00:17:45.599 --> 00:17:50.270 align:start position:23% line:-2
+ここでジェスチャが動き回り
+一連の連続イベントを受信します
+
+00:17:51.338 --> 00:17:55.709 align:start position:25% line:-2
+ジェスチャが完了すると
+Endedの状態に遷移します
+
+00:17:57.478 --> 00:18:02.249 align:start position:9% line:-2
+UIPanGestureRecognizerは
+我々の好む連続ジェスチャの１つで
+

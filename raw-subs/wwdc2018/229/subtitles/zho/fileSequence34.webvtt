@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:00.707 --> 00:34:02.509 align:middle line:-1
+其中的原因是我们实际上正在
+
+00:34:02.576 --> 00:34:04.244 align:middle line:-1
+两种语言间多次桥接字符串
+
+00:34:04.511 --> 00:34:08.014 align:middle line:-2
+MutableAttributedString是一个
+Objective-C引用类型
+
+00:34:08.081 --> 00:34:10.284 align:middle line:-1
+所以当我们访问string属性时
+
+00:34:10.350 --> 00:34:13.120 align:middle line:-2
+我们实际上需要从NSString
+转换为string
+
+00:34:13.554 --> 00:34:16.657 align:middle line:-2
+当我们计算第一个范围时
+我们在这里进行一次桥接
+
+00:34:16.956 --> 00:34:19.659 align:middle line:-2
+我们在转换为NSRange时
+进行第二次桥接
+
+00:34:20.694 --> 00:34:22.329 align:middle line:-1
+你可以想象这样的开销有多大
+
+00:34:22.396 --> 00:34:24.864 align:middle line:-2
+如果我们在一个循环中
+查找所有文本以进行着色
+
+00:34:25.465 --> 00:34:27.367 align:middle line:-2
+现在我们来看看为什么
+会发生这种情况
+
+00:34:27.434 --> 00:34:31.071 align:middle line:-2
+每次调用text.string时
+都会在Swift执行上下文中启动
+
+00:34:31.737 --> 00:34:34.908 align:middle line:-2
+然而NSMutableAttributedString
+是用Objective-C实现的
+
+00:34:34.975 --> 00:34:36.577 align:middle line:-1
+所以为了提供结果
+
+00:34:36.643 --> 00:34:39.279 align:middle line:-1
+我们实际上必须咨询其原始实现
+
+00:34:39.346 --> 00:34:40.614 align:middle line:-1
+（桥接发生时）
+
+00:34:40.681 --> 00:34:44.284 align:middle line:-2
+原始实现返回NSString
+它是引用类型
+
+00:34:44.451 --> 00:34:46.820 align:middle line:-2
+所以当返回到字符串时
+它需要被桥接
+
+00:34:47.521 --> 00:34:49.755 align:middle line:-1
+逐个图像集
+
+00:34:50.824 --> 00:34:51.992 align:middle line:-1
+逐个字符
+
+00:34:52.826 --> 00:34:58.098 align:middle line:-2
+无论是返回类型还是参数
+都会发生桥接
+

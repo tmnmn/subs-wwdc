@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.106 --> 00:47:01.636 A:middle
+the kernel into your app, and
+
+00:47:01.636 --> 00:47:02.786 A:middle
+then generally if you're doing
+
+00:47:02.786 --> 00:47:04.476 A:middle
+TLS, it will have to get another
+
+00:47:04.476 --> 00:47:05.876 A:middle
+transformation to decrypt that
+
+00:47:05.906 --> 00:47:07.376 A:middle
+data before you can actually
+
+00:47:07.376 --> 00:47:08.776 A:middle
+send it up to the application.
+
+00:47:09.366 --> 00:47:12.286 A:middle
+So how does this look when we do
+
+00:47:12.376 --> 00:47:13.306 A:middle
+user space networking?
+
+00:47:13.926 --> 00:47:17.646 A:middle
+So as you can see, the main
+
+00:47:17.646 --> 00:47:19.186 A:middle
+change is that we've moved the
+
+00:47:19.186 --> 00:47:21.836 A:middle
+transport stack, TCP and UDP, up
+
+00:47:21.836 --> 00:47:22.466 A:middle
+into your app.
+
+00:47:23.026 --> 00:47:24.146 A:middle
+So what does this give us?
+
+00:47:25.056 --> 00:47:26.626 A:middle
+Now, when a packet comes in off
+
+00:47:26.626 --> 00:47:27.956 A:middle
+the network, comes into the
+
+00:47:27.956 --> 00:47:29.846 A:middle
+driver like before, but we move
+
+00:47:29.846 --> 00:47:31.736 A:middle
+it into a memory mapped region
+
+00:47:32.236 --> 00:47:33.726 A:middle
+that your application
+
+00:47:34.436 --> 00:47:36.196 A:middle
+automatically can scoop packets
+
+00:47:36.196 --> 00:47:38.096 A:middle
+out of without doing a copy,
+
+00:47:38.176 --> 00:47:39.416 A:middle
+without doing extra contexts
+
+00:47:39.416 --> 00:47:41.206 A:middle
+switch, and start processing the
+
+00:47:41.206 --> 00:47:42.296 A:middle
+packets automatically.
+
+00:47:42.816 --> 00:47:44.146 A:middle
+This way the only transformation
+
+00:47:44.146 --> 00:47:45.846 A:middle
+we're doing is the decryption
+
+00:47:45.846 --> 00:47:47.606 A:middle
+that we have to do anyway for
+
+00:47:48.346 --> 00:47:48.466 A:middle
+TLS.
+
+00:47:49.176 --> 00:47:50.886 A:middle
+This really can reduce the
+
+00:47:50.886 --> 00:47:53.046 A:middle
+amount of CPU time that it takes
+
+00:47:53.116 --> 00:47:54.506 A:middle
+to send and receive packets,
+
+00:47:55.096 --> 00:47:56.636 A:middle
+especially for protocols like
+
+00:47:56.636 --> 00:47:58.296 A:middle
+UDP in which you're going to be
+
+00:47:58.296 --> 00:47:59.586 A:middle
+sending a lot of packets back
+
+00:47:59.586 --> 00:48:01.046 A:middle
+and forth directly from your
+

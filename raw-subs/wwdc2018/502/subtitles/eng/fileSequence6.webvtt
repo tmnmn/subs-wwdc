@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.156 --> 00:06:00.936 A:middle
+they occur, but maybe more
+
+00:06:00.936 --> 00:06:02.646 A:middle
+importantly, how long does it
+
+00:06:02.676 --> 00:06:04.126 A:middle
+take to recover from a stall?
+
+00:06:05.126 --> 00:06:07.466 A:middle
+Yet, the best strategy without
+
+00:06:07.466 --> 00:06:09.126 A:middle
+knowledge of the future to not
+
+00:06:09.126 --> 00:06:11.136 A:middle
+stall is to deliver content at
+
+00:06:11.136 --> 00:06:12.666 A:middle
+the lowest available bitrate.
+
+00:06:13.106 --> 00:06:14.386 A:middle
+But of course that's not what we
+
+00:06:14.386 --> 00:06:14.666 A:middle
+want.
+
+00:06:14.666 --> 00:06:16.076 A:middle
+We want to deliver the best
+
+00:06:16.076 --> 00:06:18.206 A:middle
+audio and video quality while
+
+00:06:18.206 --> 00:06:19.356 A:middle
+still not stalling.
+
+00:06:19.686 --> 00:06:21.116 A:middle
+So there's a clear tradeoff
+
+00:06:21.116 --> 00:06:23.136 A:middle
+between risk of stalling and
+
+00:06:23.136 --> 00:06:24.526 A:middle
+media quality, right.
+
+00:06:24.626 --> 00:06:26.606 A:middle
+For that, we need another
+
+00:06:26.606 --> 00:06:28.566 A:middle
+measure of the overall media
+
+00:06:28.566 --> 00:06:29.776 A:middle
+quality for a session.
+
+00:06:30.736 --> 00:06:32.976 A:middle
+And finally, playback errors.
+
+00:06:32.976 --> 00:06:33.806 A:middle
+We talked about that.
+
+00:06:34.166 --> 00:06:35.366 A:middle
+They are more disruptive than
+
+00:06:35.366 --> 00:06:36.166 A:middle
+stalls, right.
+
+00:06:36.826 --> 00:06:39.806 A:middle
+What can we do to track playback
+
+00:06:39.806 --> 00:06:40.276 A:middle
+errors?
+
+00:06:41.196 --> 00:06:41.586 A:middle
+Okay.
+
+00:06:41.736 --> 00:06:42.866 A:middle
+Let's begin with startup time.
+
+00:06:43.676 --> 00:06:45.526 A:middle
+There are multiple APIs that you
+
+00:06:45.526 --> 00:06:47.506 A:middle
+can use to obtain or compute
+
+00:06:47.506 --> 00:06:48.296 A:middle
+startup time.
+
+00:06:48.666 --> 00:06:50.786 A:middle
+First, don't use the AV Player
+
+00:06:51.046 --> 00:06:52.476 A:middle
+status changing to ready to
+
+00:06:52.476 --> 00:06:52.836 A:middle
+play.
+
+00:06:52.836 --> 00:06:53.796 A:middle
+That doesn't tell you that
+
+00:06:53.836 --> 00:06:56.256 A:middle
+playback is going to start.
+
+00:06:56.446 --> 00:06:58.086 A:middle
+However, if you are using
+
+00:06:58.086 --> 00:06:59.346 A:middle
+Autoplay, so you're setting the
+
+00:06:59.346 --> 00:07:00.726 A:middle
+rate, the player's rate in
+

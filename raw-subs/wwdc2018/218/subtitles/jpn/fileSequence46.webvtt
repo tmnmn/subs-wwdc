@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:03.597 --> 00:46:06.100 align:start position:34% line:-1
+次も問題の一例です
+
+00:46:06.200 --> 00:46:09.002 align:start position:9% line:-2
+Interface Builderにセットした
+アピアランスで
+
+00:46:09.236 --> 00:46:12.039 align:start position:38% line:-2
+組み立てると
+バグが起きます
+
+00:46:12.139 --> 00:46:15.175 align:start position:27% line:-1
+ダークモードに対応しません
+
+00:46:15.375 --> 00:46:18.479 align:start position:18% line:-2
+Interface Builderに
+ハードコードされた
+
+00:46:18.979 --> 00:46:20.647 align:start position:30% line:-2
+Aquaアピアランスが
+あるからです
+
+00:46:20.748 --> 00:46:23.450 align:start position:27% line:-2
+今までは常に
+Aquaで起動していたので
+
+00:46:23.550 --> 00:46:26.820 align:start position:32% line:-1
+つい見落としがちです
+
+00:46:27.955 --> 00:46:29.523 align:start position:38% line:-1
+修正は簡単です
+
+00:46:29.757 --> 00:46:33.360 align:start position:30% line:-1
+インヘリタンスの選択で
+
+00:46:33.694 --> 00:46:36.463 align:start position:27% line:-1
+自動的に親要素を継承します
+
+00:46:38.966 --> 00:46:41.702 align:start position:14% line:-2
+NSVisualEffectViewでは
+少し違います
+
+00:46:41.802 --> 00:46:44.338 align:start position:18% line:-2
+Interface Builderや
+コードに
+
+00:46:44.438 --> 00:46:46.406 align:start position:12% line:-2
+NSVisualEffectViewを含む
+場合があります
+
+00:46:46.507 --> 00:46:49.109 align:start position:38% line:-2
+アピアランスの
+設定が必要です
+
+00:46:49.643 --> 00:46:53.414 align:start position:25% line:-2
+この操作は
+mac OS 10.14では
+
+00:46:53.647 --> 00:46:55.249 align:start position:38% line:-1
+不要になります
+
+00:46:55.349 --> 00:46:58.986 align:start position:14% line:-2
+NSVisualEffectViewでは
+インヘリタンスを基に
+
+00:46:59.086 --> 00:47:00.788 align:start position:27% line:-1
+アピアランスが設定されます
+

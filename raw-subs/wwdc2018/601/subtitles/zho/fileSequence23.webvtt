@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:55.375 --> 00:23:00.047 align:middle line:-2
+或某些东西缺失
+我现在告诉大家如何处理
+
+00:23:02.282 --> 00:23:06.753 align:middle line:-2
+ReplayKit提供的API
+让扩展可以通知用户
+
+00:23:07.654 --> 00:23:09.223 align:middle line:-1
+直播无法开启
+
+00:23:09.489 --> 00:23:12.759 align:middle line:-1
+并提供某种解决方案
+
+00:23:14.828 --> 00:23:19.600 align:middle line:-1
+工作原理是扩展调用API函数
+
+00:23:19.666 --> 00:23:25.305 align:middle line:-2
+ReplayKit终止程序
+并向用户报错
+
+00:23:27.107 --> 00:23:30.878 align:middle line:-1
+扩展提供运行失败的原因
+
+00:23:31.278 --> 00:23:34.615 align:middle line:-2
+这个例子中
+报错信息来自Mobcrush
+
+00:23:34.681 --> 00:23:37.050 align:middle line:-1
+原因是用户未登录
+
+00:23:39.686 --> 00:23:43.257 align:middle line:-1
+接下来用户点击底部回到app
+
+00:23:44.057 --> 00:23:46.693 align:middle line:-1
+ReplayKit启动app
+
+00:23:46.760 --> 00:23:50.163 align:middle line:-1
+你要做的是以某种方式处理这个情况
+
+00:23:50.230 --> 00:23:52.666 align:middle line:-2
+比如显示用户界面
+让用户登录或注册
+
+00:23:53.000 --> 00:23:55.202 align:middle line:-1
+之后直播就可以正常运行
+
+00:23:57.538 --> 00:24:01.175 align:middle line:-2
+我们之前看过这个代码片段
+broadcastStarted
+

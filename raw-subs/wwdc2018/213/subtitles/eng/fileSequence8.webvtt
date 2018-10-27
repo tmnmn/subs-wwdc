@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.436 --> 00:08:00.996 A:middle
+Now, if you already set Now
+
+00:08:00.996 --> 00:08:02.446 A:middle
+Playing metadata to Control
+
+00:08:02.446 --> 00:08:03.976 A:middle
+Center or Lock Screen, or you're
+
+00:08:03.976 --> 00:08:05.196 A:middle
+already working on this on your
+
+00:08:05.196 --> 00:08:06.696 A:middle
+existing audio app, you're
+
+00:08:06.696 --> 00:08:08.016 A:middle
+already familiar with these two
+
+00:08:08.096 --> 00:08:08.576 A:middle
+APIs.
+
+00:08:09.816 --> 00:08:12.706 A:middle
+MPNowPlayingInfo Center allows
+
+00:08:12.706 --> 00:08:14.006 A:middle
+you to populate your now playing
+
+00:08:14.006 --> 00:08:16.016 A:middle
+metadata and things such as
+
+00:08:16.016 --> 00:08:17.586 A:middle
+title and album artwork and
+
+00:08:17.586 --> 00:08:19.556 A:middle
+etcetera onto the CarPlay's now
+
+00:08:19.556 --> 00:08:20.276 A:middle
+playing screen.
+
+00:08:20.436 --> 00:08:21.676 A:middle
+As well as Control Center and
+
+00:08:21.676 --> 00:08:22.566 A:middle
+Lock Screen if you've already
+
+00:08:22.566 --> 00:08:23.176 A:middle
+been doing so.
+
+00:08:24.426 --> 00:08:26.006 A:middle
+MPRemoteCommandCenter allows
+
+00:08:26.006 --> 00:08:27.436 A:middle
+your app to respond to remote
+
+00:08:27.436 --> 00:08:29.246 A:middle
+command events, such as the Play
+
+00:08:29.246 --> 00:08:31.046 A:middle
+command, Next Track, and so on.
+
+00:08:32.116 --> 00:08:33.346 A:middle
+We want to allow your CarPlay
+
+00:08:33.346 --> 00:08:34.966 A:middle
+app for a seamless Now Playing
+
+00:08:34.966 --> 00:08:35.655 A:middle
+experience.
+
+00:08:35.796 --> 00:08:36.716 A:middle
+Now, let's take a look at how
+
+00:08:36.716 --> 00:08:38.885 A:middle
+this is done in code.
+
+00:08:39.076 --> 00:08:40.566 A:middle
+So, when Srirocka is launched,
+
+00:08:40.566 --> 00:08:41.506 A:middle
+I'm going to use Srirocka as an
+
+00:08:41.506 --> 00:08:42.166 A:middle
+example, here.
+
+00:08:42.546 --> 00:08:43.606 A:middle
+This is what is needed at a
+
+00:08:43.606 --> 00:08:45.226 A:middle
+minimum to support CarPlay audio
+
+00:08:45.226 --> 00:08:45.526 A:middle
+apps.
+
+00:08:46.036 --> 00:08:47.436 A:middle
+Srirocka will provide a data
+
+00:08:47.436 --> 00:08:49.366 A:middle
+source and a delegate to
+
+00:08:49.396 --> 00:08:51.086 A:middle
+MPPlayableContentManager, so
+
+00:08:51.086 --> 00:08:52.306 A:middle
+that Srirocka can provide
+
+00:08:52.406 --> 00:08:53.446 A:middle
+information to the CarPlay
+
+00:08:53.446 --> 00:08:55.076 A:middle
+display and respond when
+
+00:08:55.076 --> 00:08:55.986 A:middle
+absolutely necessary.
+
+00:08:57.436 --> 00:08:59.506 A:middle
+Next, I've set
+
+00:08:59.506 --> 00:09:00.916 A:middle
+NowPlayingInfoCenter to let
+

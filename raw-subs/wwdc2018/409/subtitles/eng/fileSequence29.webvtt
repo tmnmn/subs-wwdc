@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.856 --> 00:29:00.426 A:middle
+And the length comes from a
+
+00:29:00.426 --> 00:29:02.186 A:middle
+parameter called len.
+
+00:29:03.756 --> 00:29:07.186 A:middle
+So let's say len in a specific
+
+00:29:07.186 --> 00:29:09.046 A:middle
+call is something big like
+
+00:29:09.046 --> 00:29:12.006 A:middle
+15,000, so now the stack frame
+
+00:29:12.006 --> 00:29:13.826 A:middle
+has to be at least 15,000 bytes
+
+00:29:13.826 --> 00:29:14.056 A:middle
+long.
+
+00:29:16.696 --> 00:29:18.816 A:middle
+But memory is not all
+
+00:29:18.816 --> 00:29:20.636 A:middle
+immediately available, so memory
+
+00:29:20.636 --> 00:29:23.216 A:middle
+is split into pages and the
+
+00:29:23.216 --> 00:29:25.696 A:middle
+stack grows only when necessary.
+
+00:29:26.656 --> 00:29:28.176 A:middle
+So for instance, when we try to
+
+00:29:28.176 --> 00:29:30.866 A:middle
+access by 10,000 of the buffer
+
+00:29:30.926 --> 00:29:32.136 A:middle
+that's in the next page of the
+
+00:29:32.136 --> 00:29:35.066 A:middle
+stack that's not yet available
+
+00:29:35.566 --> 00:29:36.716 A:middle
+so it's going to do a page fault
+
+00:29:36.716 --> 00:29:37.966 A:middle
+in the CPU that talks to the
+
+00:29:37.966 --> 00:29:39.556 A:middle
+opening system, the operating
+
+00:29:39.556 --> 00:29:40.586 A:middle
+system sees that we have the
+
+00:29:40.586 --> 00:29:42.306 A:middle
+right to grow the stack, and it
+
+00:29:42.306 --> 00:29:43.706 A:middle
+grows it and we can continue
+
+00:29:43.706 --> 00:29:44.016 A:middle
+writing.
+
+00:29:44.936 --> 00:29:46.926 A:middle
+So this all happens under the
+
+00:29:48.816 --> 00:29:48.926 A:middle
+hood.
+
+00:29:49.146 --> 00:29:51.736 A:middle
+But say an attacker controls the
+
+00:29:51.736 --> 00:29:54.296 A:middle
+length and it makes it huge, big
+
+00:29:54.296 --> 00:29:56.256 A:middle
+enough that it spans many pages.
+
+00:29:57.556 --> 00:29:58.876 A:middle
+So now there's a new problem,
+
+00:29:59.896 --> 00:30:02.626 A:middle
+the memory is not infinite so if
+

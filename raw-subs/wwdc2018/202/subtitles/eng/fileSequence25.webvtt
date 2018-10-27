@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.176 --> 00:25:00.286 A:middle
+class of functions that I want
+
+00:25:00.286 --> 00:25:01.236 A:middle
+to mention this morning and that
+
+00:25:01.236 --> 00:25:02.446 A:middle
+was all of these string
+
+00:25:02.446 --> 00:25:03.956 A:middle
+conversion functions for all of
+
+00:25:03.956 --> 00:25:05.306 A:middle
+the many types in UIKit,
+
+00:25:05.776 --> 00:25:07.206 A:middle
+CGPoint, CGRect, CGSize,
+
+00:25:07.346 --> 00:25:09.706 A:middle
+CGVector, all of them, there's
+
+00:25:09.706 --> 00:25:11.726 A:middle
+quite a lot, both to and from
+
+00:25:11.726 --> 00:25:12.106 A:middle
+strings.
+
+00:25:12.516 --> 00:25:14.676 A:middle
+Now, when we looked at these and
+
+00:25:14.676 --> 00:25:15.386 A:middle
+tried to decide where they
+
+00:25:15.386 --> 00:25:16.836 A:middle
+should go, we realized that they
+
+00:25:16.836 --> 00:25:18.596 A:middle
+actually have two different use
+
+00:25:18.596 --> 00:25:19.086 A:middle
+cases.
+
+00:25:19.386 --> 00:25:20.716 A:middle
+One is for encoding and
+
+00:25:20.716 --> 00:25:21.216 A:middle
+decoding.
+
+00:25:21.676 --> 00:25:22.586 A:middle
+But the other is that they're
+
+00:25:22.666 --> 00:25:24.276 A:middle
+commonly used to print things
+
+00:25:24.466 --> 00:25:25.296 A:middle
+when you're just trying to get
+
+00:25:25.296 --> 00:25:26.276 A:middle
+some debug descriptions.
+
+00:25:26.826 --> 00:25:28.586 A:middle
+And those are two very different
+
+00:25:28.586 --> 00:25:30.886 A:middle
+uses but, in fact, Swift has
+
+00:25:30.946 --> 00:25:32.466 A:middle
+first-class support for both of
+
+00:25:32.466 --> 00:25:33.166 A:middle
+those cases.
+
+00:25:33.626 --> 00:25:34.846 A:middle
+And so we've made sure that all
+
+00:25:34.846 --> 00:25:36.166 A:middle
+of these types will work really
+
+00:25:36.166 --> 00:25:37.436 A:middle
+great with Swift's built-in
+
+00:25:37.436 --> 00:25:38.156 A:middle
+support for both.
+
+00:25:38.776 --> 00:25:40.706 A:middle
+So in Swift 4.2, all of these
+
+00:25:40.786 --> 00:25:42.436 A:middle
+types will conform to Codable so
+
+00:25:42.706 --> 00:25:44.526 A:middle
+that you can very easily do
+
+00:25:44.526 --> 00:25:46.146 A:middle
+things such as encode and decode
+
+00:25:46.146 --> 00:25:47.616 A:middle
+JSON for all of these different
+
+00:25:47.616 --> 00:25:47.896 A:middle
+types.
+
+00:25:48.516 --> 00:25:53.656 A:middle
+[ Applause ]
+
+00:25:54.156 --> 00:25:55.236 A:middle
+Of course, debug printing in
+
+00:25:55.306 --> 00:25:56.766 A:middle
+Swift is actually even easier
+
+00:25:56.766 --> 00:25:58.296 A:middle
+than in Objective-C because you
+
+00:25:58.296 --> 00:26:00.106 A:middle
+don't have to do any additional
+

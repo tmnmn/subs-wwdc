@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.126 --> 00:25:01.316 A:middle
+UDPClient class and the
+
+00:25:01.316 --> 00:25:02.076 A:middle
+UDPServer class.
+
+00:25:03.156 --> 00:25:05.016 A:middle
+The UDPClient is going to be
+
+00:25:05.016 --> 00:25:06.306 A:middle
+responsible for creating the
+
+00:25:06.306 --> 00:25:07.966 A:middle
+connection to the other side and
+
+00:25:07.966 --> 00:25:09.026 A:middle
+sending the frames across.
+
+00:25:10.286 --> 00:25:11.776 A:middle
+Likewise, the server is
+
+00:25:11.776 --> 00:25:12.816 A:middle
+responsible for creating the
+
+00:25:12.816 --> 00:25:14.736 A:middle
+listener, accepting incoming
+
+00:25:14.736 --> 00:25:16.446 A:middle
+connections, reading the data
+
+00:25:16.446 --> 00:25:17.746 A:middle
+off those connections, and
+
+00:25:17.746 --> 00:25:18.756 A:middle
+sending them up to the screen.
+
+00:25:19.736 --> 00:25:22.416 A:middle
+Let's start with the client.
+
+00:25:22.526 --> 00:25:23.656 A:middle
+My client class has an
+
+00:25:23.656 --> 00:25:25.656 A:middle
+initializer that takes a name,
+
+00:25:25.996 --> 00:25:28.056 A:middle
+which is a string describing the
+
+00:25:28.056 --> 00:25:29.766 A:middle
+bonjour name that we want to
+
+00:25:30.316 --> 00:25:31.436 A:middle
+connect to.
+
+00:25:31.646 --> 00:25:33.836 A:middle
+I'll create my connection by
+
+00:25:33.836 --> 00:25:35.986 A:middle
+simply calling NWConnection and
+
+00:25:35.986 --> 00:25:37.296 A:middle
+passing in a service endpoint.
+
+00:25:38.096 --> 00:25:39.116 A:middle
+Using the name that I was
+
+00:25:39.116 --> 00:25:42.826 A:middle
+provided and camera.udp as the
+
+00:25:43.456 --> 00:25:43.556 A:middle
+type.
+
+00:25:43.776 --> 00:25:45.336 A:middle
+We also passed the default UDP
+
+00:25:45.336 --> 00:25:45.876 A:middle
+parameters.
+
+00:25:46.386 --> 00:25:49.596 A:middle
+As Tommy mentioned, we can use a
+
+00:25:49.596 --> 00:25:52.826 A:middle
+state update handler to check
+
+00:25:53.226 --> 00:25:54.546 A:middle
+for the ready and the failed
+
+00:25:54.546 --> 00:25:55.016 A:middle
+states.
+
+00:25:56.066 --> 00:25:57.546 A:middle
+Here, when our connection is
+
+00:25:57.546 --> 00:25:58.776 A:middle
+ready, we'll call
+
+00:25:58.776 --> 00:26:00.676 A:middle
+sendInitialFrame, which we'll
+

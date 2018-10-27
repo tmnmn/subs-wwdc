@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.176 --> 00:21:00.966 A:middle
+And then we encode our graph,
+
+00:21:01.346 --> 00:21:02.946 A:middle
+and the encode call returns
+
+00:21:02.976 --> 00:21:03.566 A:middle
+immediately.
+
+00:21:04.196 --> 00:21:06.006 A:middle
+And a user specified callback is
+
+00:21:06.006 --> 00:21:07.886 A:middle
+called, when the GPU is done
+
+00:21:07.886 --> 00:21:08.426 A:middle
+running the graph.
+
+00:21:09.086 --> 00:21:10.136 A:middle
+So, now we know.
+
+00:21:10.236 --> 00:21:11.446 A:middle
+The GPU is done running the
+
+00:21:11.446 --> 00:21:13.896 A:middle
+graph, and the CPU can continue
+
+00:21:14.316 --> 00:21:16.566 A:middle
+encoding more work to the GPU,
+
+00:21:17.746 --> 00:21:19.226 A:middle
+work that was previously waiting
+
+00:21:19.226 --> 00:21:19.916 A:middle
+on the semaphore.
+
+00:21:20.936 --> 00:21:22.386 A:middle
+So, why are we using double
+
+00:21:22.386 --> 00:21:22.906 A:middle
+buffering?
+
+00:21:22.906 --> 00:21:24.856 A:middle
+Why not encode more runs of the
+
+00:21:24.856 --> 00:21:27.536 A:middle
+graph, to the GPU concurrently?
+
+00:21:28.766 --> 00:21:30.336 A:middle
+Well, it takes a lot less time
+
+00:21:30.396 --> 00:21:31.446 A:middle
+to encode commands to the
+
+00:21:31.446 --> 00:21:33.066 A:middle
+command buffer, than to run the
+
+00:21:33.066 --> 00:21:33.476 A:middle
+graph.
+
+00:21:33.786 --> 00:21:35.146 A:middle
+So, we don't want to encode too
+
+00:21:35.146 --> 00:21:36.446 A:middle
+many runs of the graph
+
+00:21:36.446 --> 00:21:37.926 A:middle
+concurrently to minimize memory
+
+00:21:37.926 --> 00:21:38.386 A:middle
+footprint.
+
+00:21:38.656 --> 00:21:42.576 A:middle
+Okay, we've talked about
+
+00:21:42.576 --> 00:21:43.676 A:middle
+executing the graph.
+
+00:21:43.936 --> 00:21:45.396 A:middle
+When we execute the graph, we do
+
+00:21:45.396 --> 00:21:47.146 A:middle
+the forward pass, we compute
+
+00:21:47.146 --> 00:21:49.206 A:middle
+loss, we do the gradient pass,
+
+00:21:49.356 --> 00:21:50.756 A:middle
+and the graph will also update
+
+00:21:50.756 --> 00:21:51.196 A:middle
+weights.
+
+00:21:51.676 --> 00:21:53.136 A:middle
+So now, let's talk about weight
+
+00:21:53.176 --> 00:21:53.516 A:middle
+updates.
+
+00:21:54.196 --> 00:21:57.286 A:middle
+As I mentioned, data source
+
+00:21:57.286 --> 00:22:00.176 A:middle
+providers are essential for
+

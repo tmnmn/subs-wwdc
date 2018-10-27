@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:55.756 --> 00:31:00.494 align:start position:16% line:-1
+CIImageからUIImageを作り
+
+00:31:00.727 --> 00:31:05.666 align:start position:23% line:-2
+それをUIImageViewが
+GPUで加工します
+
+00:31:06.767 --> 00:31:11.038 align:start position:29% line:-2
+その間 CPUは
+他のタスクを処理できます
+
+00:31:12.105 --> 00:31:17.978 align:start position:29% line:-2
+CIImageを作った後
+イニシャライザを使います
+
+00:31:19.813 --> 00:31:25.185 align:start position:30% line:-2
+iOSで画像処理できる
+高度なフレームワークは
+
+00:31:25.319 --> 00:31:26.720 align:start position:36% line:-1
+他にも あります
+
+00:31:26.820 --> 00:31:30.190 align:start position:29% line:-2
+Metal　Vision
+Accelerateです
+
+00:31:31.158 --> 00:31:35.596 align:start position:27% line:-2
+データ型は
+CVPixelBuffer
+
+00:31:36.563 --> 00:31:39.333 align:start position:30% line:-1
+バッファの働きをする―
+
+00:31:39.433 --> 00:31:43.804 align:start position:27% line:-2
+CPUやGPUで使用可能な
+データ型です
+
+00:31:44.571 --> 00:31:48.509 align:start position:30% line:-2
+このピクセルバッファを
+構成する時は
+
+00:31:48.609 --> 00:31:51.979 align:start position:30% line:-2
+最良のイニシャライザを
+使います
+
+00:31:52.746 --> 00:31:56.383 align:start position:36% line:-2
+エンコードは
+しないでください
+
+00:31:56.750 --> 00:32:00.687 align:start position:32% line:-2
+UIImageなどが
+デコード済みです
+

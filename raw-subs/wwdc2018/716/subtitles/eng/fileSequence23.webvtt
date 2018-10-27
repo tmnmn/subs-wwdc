@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.636 --> 00:23:01.236 A:middle
+we will try to do that first.
+
+00:23:01.996 --> 00:23:03.346 A:middle
+If GPU is not available for
+
+00:23:03.346 --> 00:23:04.616 A:middle
+whatever reason at that point in
+
+00:23:04.616 --> 00:23:06.176 A:middle
+time, we will switch to CPU
+
+00:23:06.766 --> 00:23:08.896 A:middle
+because that's our default
+
+00:23:08.896 --> 00:23:09.306 A:middle
+behavior.
+
+00:23:09.946 --> 00:23:12.846 A:middle
+But let's say your application
+
+00:23:13.326 --> 00:23:14.876 A:middle
+is dependent on displaying a lot
+
+00:23:14.876 --> 00:23:16.306 A:middle
+of graphics on the screen, so
+
+00:23:16.306 --> 00:23:18.276 A:middle
+you may want to save the GPU for
+
+00:23:18.276 --> 00:23:19.446 A:middle
+that particular job.
+
+00:23:20.176 --> 00:23:21.386 A:middle
+In this case, you can override
+
+00:23:21.766 --> 00:23:23.526 A:middle
+user CPU on the property and set
+
+00:23:23.526 --> 00:23:24.736 A:middle
+it to true on the request
+
+00:23:24.736 --> 00:23:25.036 A:middle
+object.
+
+00:23:25.576 --> 00:23:26.886 A:middle
+This will tell us to process
+
+00:23:26.886 --> 00:23:28.856 A:middle
+your request directly on the
+
+00:23:28.856 --> 00:23:29.000 A:middle
+CPU.
+
+00:23:35.316 --> 00:23:37.176 A:middle
+Now that we've covered basic how
+
+00:23:37.176 --> 00:23:39.236 A:middle
+to interact with Vision, Vision
+
+00:23:39.236 --> 00:23:41.276 A:middle
+API, in particular, we've seen a
+
+00:23:41.276 --> 00:23:43.136 A:middle
+couple of examples, let's switch
+
+00:23:43.136 --> 00:23:44.016 A:middle
+to the main topic of our
+
+00:23:44.016 --> 00:23:45.916 A:middle
+presentation, which is tracking
+
+00:23:46.046 --> 00:23:47.166 A:middle
+in Vision.
+
+00:23:48.616 --> 00:23:49.636 A:middle
+So, what is tracking?
+
+00:23:50.986 --> 00:23:52.746 A:middle
+Tracking is defined as a problem
+
+00:23:52.746 --> 00:23:54.406 A:middle
+of finding an object of interest
+
+00:23:54.756 --> 00:23:55.716 A:middle
+in a sequence of frames.
+
+00:23:56.166 --> 00:23:57.466 A:middle
+Usually, you find that object in
+
+00:23:57.466 --> 00:23:59.256 A:middle
+the first frame, and you try to
+
+00:23:59.426 --> 00:24:00.846 A:middle
+look for it in the sequence of
+

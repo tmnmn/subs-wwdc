@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.086 --> 00:43:01.836 A:middle
+a magazine page, for example, we
+
+00:43:01.836 --> 00:43:04.396 A:middle
+can see that the Xcode says that
+
+00:43:04.556 --> 00:43:05.776 A:middle
+the histogram is not well
+
+00:43:05.776 --> 00:43:06.436 A:middle
+distributed.
+
+00:43:06.676 --> 00:43:07.626 A:middle
+In fact, you can see there's a
+
+00:43:07.626 --> 00:43:09.326 A:middle
+lot of whites in the image.
+
+00:43:09.476 --> 00:43:10.626 A:middle
+And it would also say that this
+
+00:43:10.626 --> 00:43:11.716 A:middle
+image contains repetitive
+
+00:43:11.716 --> 00:43:14.486 A:middle
+structures, mainly caused by the
+
+00:43:15.476 --> 00:43:15.636 A:middle
+text.
+
+00:43:15.776 --> 00:43:18.076 A:middle
+Another example, if you have two
+
+00:43:18.076 --> 00:43:20.126 A:middle
+images which are too similar and
+
+00:43:20.126 --> 00:43:22.176 A:middle
+are at risk of being confused at
+
+00:43:22.506 --> 00:43:24.366 A:middle
+detection time, also, Xcode
+
+00:43:24.366 --> 00:43:25.166 A:middle
+warns you about that.
+
+00:43:25.906 --> 00:43:26.986 A:middle
+You can see an example of these
+
+00:43:26.986 --> 00:43:28.906 A:middle
+two images of the same mountain
+
+00:43:28.906 --> 00:43:29.756 A:middle
+range, the Sierra.
+
+00:43:30.156 --> 00:43:32.446 A:middle
+There's a few things that we can
+
+00:43:32.446 --> 00:43:33.506 A:middle
+do to deal with this warning.
+
+00:43:33.936 --> 00:43:34.956 A:middle
+For example, let's go back to
+
+00:43:34.956 --> 00:43:38.236 A:middle
+this image that had repetitive
+
+00:43:38.236 --> 00:43:40.746 A:middle
+structures and not well
+
+00:43:40.746 --> 00:43:41.746 A:middle
+distributed histograms.
+
+00:43:42.516 --> 00:43:44.186 A:middle
+You can try to identify a region
+
+00:43:44.186 --> 00:43:45.126 A:middle
+of this image which is
+
+00:43:45.126 --> 00:43:46.596 A:middle
+distinctive enough, like in this
+
+00:43:46.596 --> 00:43:48.736 A:middle
+case, for example, the actual
+
+00:43:48.736 --> 00:43:49.536 A:middle
+image of the page.
+
+00:43:50.106 --> 00:43:51.276 A:middle
+And then, you can crop that out
+
+00:43:51.276 --> 00:43:52.756 A:middle
+and use this as the reference
+
+00:43:52.756 --> 00:43:53.556 A:middle
+image, instead.
+
+00:43:53.876 --> 00:43:55.126 A:middle
+Which will give you, of course,
+
+00:43:55.476 --> 00:43:56.756 A:middle
+all the warnings are going to be
+
+00:43:56.756 --> 00:43:58.296 A:middle
+removed and will give you better
+
+00:43:58.946 --> 00:43:59.716 A:middle
+tracking quality.
+

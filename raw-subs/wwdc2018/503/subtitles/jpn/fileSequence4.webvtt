@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.941 --> 00:04:05.345 align:start position:27% line:-2
+AVFoundationは
+キャプチャタイムも含みます
+
+00:04:05.445 --> 00:04:08.382 align:start position:27% line:-2
+AVFoundationの
+セットアップ時には
+
+00:04:08.482 --> 00:04:12.452 align:start position:2% line:-2
+CaptureInput CaputrueDevice
+CaptureSessionを入れます
+
+00:04:13.453 --> 00:04:18.058 align:start position:30% line:-2
+まず環境確認のため
+以下のコードを使います
+
+00:04:18.158 --> 00:04:22.095 align:start position:0% line:-1
+isDepthDataDeliverySupportedと
+
+00:04:22.196 --> 00:04:24.965 align:start position:11% line:-2
+isPortraitEffectsMatte
+DeliverySupportedです
+
+00:04:25.065 --> 00:04:29.336 align:start position:12% line:-2
+DepthとPortrait Matteの
+２つが必要な理由は
+
+00:04:29.436 --> 00:04:32.472 align:start position:12% line:-1
+Portrait Matteを利用するには
+
+00:04:32.573 --> 00:04:37.477 align:start position:27% line:-2
+深度データも引き渡す必要が
+あるからです
+
+00:04:38.011 --> 00:04:43.717 align:start position:4% line:-2
+利用するためには
+AVCapturePhotoSettingsを修正し
+
+00:04:43.817 --> 00:04:49.256 align:start position:23% line:-2
+Portrait Matteと
+深度データを引き渡します
+
+00:04:50.724 --> 00:04:56.196 align:start position:0% line:-2
+キャプチャタイムは
+didFinishProcessingPhoto callback
+
+00:04:56.997 --> 00:04:58.365 align:start position:41% line:-1
+簡単ですね
+

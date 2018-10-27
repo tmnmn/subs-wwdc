@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.806 --> 00:37:03.006 A:middle
+And bilateral filter can be used
+
+00:37:03.006 --> 00:37:03.756 A:middle
+for many, many different
+
+00:37:03.756 --> 00:37:04.246 A:middle
+purposes.
+
+00:37:04.246 --> 00:37:05.386 A:middle
+In this particular case, we'll
+
+00:37:05.386 --> 00:37:06.406 A:middle
+use it to do sharpening.
+
+00:37:07.086 --> 00:37:08.256 A:middle
+And to achieve sharpening with
+
+00:37:08.256 --> 00:37:10.026 A:middle
+this filter, we can simply take
+
+00:37:10.026 --> 00:37:11.426 A:middle
+the image on the left and
+
+00:37:11.426 --> 00:37:12.616 A:middle
+subtract the image on the right,
+
+00:37:12.616 --> 00:37:13.826 A:middle
+giving us a map of high
+
+00:37:13.826 --> 00:37:15.476 A:middle
+frequencies or details of the
+
+00:37:15.476 --> 00:37:15.866 A:middle
+image.
+
+00:37:15.966 --> 00:37:16.816 A:middle
+Let's do just that.
+
+00:37:17.196 --> 00:37:19.036 A:middle
+So, here what I'm doing is I'm
+
+00:37:19.036 --> 00:37:20.576 A:middle
+rendering my image, it's an
+
+00:37:20.576 --> 00:37:21.296 A:middle
+NumPy buffer.
+
+00:37:21.776 --> 00:37:24.346 A:middle
+Rendering my bilinear, my
+
+00:37:24.976 --> 00:37:27.116 A:middle
+filtered image and we're
+
+00:37:27.116 --> 00:37:28.706 A:middle
+subtracting them together using
+
+00:37:28.706 --> 00:37:30.096 A:middle
+the operator overloading that's
+
+00:37:30.096 --> 00:37:30.826 A:middle
+provided with NumPy.
+
+00:37:30.826 --> 00:37:32.776 A:middle
+Let's take a look at the detail
+
+00:37:32.776 --> 00:37:33.106 A:middle
+layer.
+
+00:37:33.856 --> 00:37:35.946 A:middle
+So, if you have detail on your
+
+00:37:35.946 --> 00:37:37.306 A:middle
+left-hand side for the entire
+
+00:37:37.306 --> 00:37:39.036 A:middle
+image and a crop for the center
+
+00:37:39.036 --> 00:37:39.556 A:middle
+of the image.
+
+00:37:40.276 --> 00:37:42.306 A:middle
+Now, what we can do with this is
+
+00:37:42.306 --> 00:37:44.126 A:middle
+we can add it on top of the
+
+00:37:44.126 --> 00:37:44.886 A:middle
+original image.
+
+00:37:45.996 --> 00:37:46.946 A:middle
+We're going to be doing just
+
+00:37:46.946 --> 00:37:47.456 A:middle
+that here.
+
+00:37:47.486 --> 00:37:48.736 A:middle
+We're going to be adding it
+
+00:37:48.736 --> 00:37:49.176 A:middle
+twice.
+
+00:37:50.196 --> 00:37:51.376 A:middle
+By doing this, we achieve formed
+
+00:37:51.376 --> 00:37:51.826 A:middle
+sharpening.
+
+00:37:52.906 --> 00:37:53.756 A:middle
+It's really that simple.
+
+00:37:53.916 --> 00:37:55.646 A:middle
+If I wanted, I could go back to
+
+00:37:55.646 --> 00:37:58.256 A:middle
+my filter kernel string and
+
+00:37:58.256 --> 00:37:59.336 A:middle
+start hacking away and making
+
+00:37:59.336 --> 00:38:01.086 A:middle
+changes there in real time.
+

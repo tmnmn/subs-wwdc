@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.126 --> 00:37:00.116 A:middle
+any overshoot, it can often feel
+
+00:37:00.116 --> 00:37:03.506 A:middle
+broken or unsatisfying to have
+
+00:37:03.566 --> 00:37:05.236 A:middle
+the motion follow that gesture.
+
+00:37:05.786 --> 00:37:08.796 A:middle
+An example of where we use this
+
+00:37:08.796 --> 00:37:09.696 A:middle
+is in the Music app.
+
+00:37:10.516 --> 00:37:12.186 A:middle
+So, the Music app has a small
+
+00:37:12.186 --> 00:37:14.076 A:middle
+minibar representing Now Playing
+
+00:37:14.076 --> 00:37:15.796 A:middle
+at the bottom of the screen, and
+
+00:37:15.796 --> 00:37:18.076 A:middle
+you can tap the bar to show Now
+
+00:37:18.076 --> 00:37:18.456 A:middle
+Playing.
+
+00:37:18.946 --> 00:37:22.306 A:middle
+Because the tap doesn't have any
+
+00:37:22.356 --> 00:37:24.316 A:middle
+momentum in the direction of the
+
+00:37:24.356 --> 00:37:26.286 A:middle
+presentation of Now Playing, we
+
+00:37:26.286 --> 00:37:28.606 A:middle
+use 100% damping to make sure it
+
+00:37:28.636 --> 00:37:29.486 A:middle
+doesn't overshoot.
+
+00:37:30.126 --> 00:37:32.656 A:middle
+But, if you swipe to dismiss Now
+
+00:37:32.736 --> 00:37:34.506 A:middle
+Playing, there is momentum in
+
+00:37:34.506 --> 00:37:36.566 A:middle
+the direction of the dismissal,
+
+00:37:37.016 --> 00:37:39.166 A:middle
+and so we use 80% damping to
+
+00:37:39.166 --> 00:37:40.426 A:middle
+have a little bit of bounce and
+
+00:37:40.426 --> 00:37:42.306 A:middle
+squish, making the gesture a lot
+
+00:37:42.306 --> 00:37:43.126 A:middle
+more satisfying.
+
+00:37:46.416 --> 00:37:48.766 A:middle
+Bounciness can also be used as a
+
+00:37:48.766 --> 00:37:50.696 A:middle
+utility, as a functional means.
+
+00:37:51.476 --> 00:37:53.106 A:middle
+It can serve as a helpful hint
+
+00:37:53.176 --> 00:37:54.576 A:middle
+that there's something more
+
+00:37:54.666 --> 00:37:57.166 A:middle
+below the surface.
+
+00:37:57.306 --> 00:37:59.056 A:middle
+With iPhone 10, we introduced
+
+00:37:59.056 --> 00:38:01.136 A:middle
+two buttons to the cover sheet
+

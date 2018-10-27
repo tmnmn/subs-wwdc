@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.166 --> 00:21:00.896 A:middle
+Design for sustained performance
+
+00:21:01.416 --> 00:21:04.106 A:middle
+and deal with the occasional
+
+00:21:04.106 --> 00:21:04.856 A:middle
+thermal issues.
+
+00:21:05.776 --> 00:21:07.056 A:middle
+So let's see how we go about
+
+00:21:07.806 --> 00:21:07.926 A:middle
+that.
+
+00:21:08.616 --> 00:21:10.926 A:middle
+iOS devices give you access to
+
+00:21:10.926 --> 00:21:12.206 A:middle
+an unprecedented amount of
+
+00:21:12.296 --> 00:21:12.656 A:middle
+power.
+
+00:21:12.906 --> 00:21:14.336 A:middle
+But [inaudible] in a very small
+
+00:21:14.336 --> 00:21:15.076 A:middle
+form factor.
+
+00:21:15.726 --> 00:21:17.826 A:middle
+So more apps use more resources
+
+00:21:17.826 --> 00:21:20.386 A:middle
+on the device, the system may
+
+00:21:20.386 --> 00:21:22.156 A:middle
+begin enacting measures in order
+
+00:21:22.156 --> 00:21:24.186 A:middle
+to stay cool and responsive.
+
+00:21:25.246 --> 00:21:27.876 A:middle
+Also the user may have enabled a
+
+00:21:27.876 --> 00:21:30.136 A:middle
+low power mode condition, which
+
+00:21:30.136 --> 00:21:32.196 A:middle
+will have a very similar effect.
+
+00:21:32.696 --> 00:21:36.506 A:middle
+Okay, so the best practice
+
+00:21:36.506 --> 00:21:38.946 A:middle
+really is just to adjust your
+
+00:21:38.946 --> 00:21:41.016 A:middle
+workload to the system state.
+
+00:21:42.306 --> 00:21:43.716 A:middle
+You should monitor the system
+
+00:21:43.856 --> 00:21:44.726 A:middle
+and tune the workload
+
+00:21:44.726 --> 00:21:45.296 A:middle
+accordingly.
+
+00:21:45.996 --> 00:21:47.996 A:middle
+iOS has many APIs to help you
+
+00:21:47.996 --> 00:21:48.366 A:middle
+with that.
+
+00:21:48.996 --> 00:21:51.526 A:middle
+For example, use NSProcessInfo
+
+00:21:51.606 --> 00:21:53.776 A:middle
+thermalState to either query or
+
+00:21:53.776 --> 00:21:55.786 A:middle
+register for notification when
+
+00:21:55.786 --> 00:21:56.686 A:middle
+the device thermal state
+
+00:21:56.686 --> 00:21:57.116 A:middle
+changes.
+
+00:21:57.946 --> 00:21:59.026 A:middle
+You should also check for the
+
+00:21:59.026 --> 00:22:01.366 A:middle
+low power mode condition in a
+

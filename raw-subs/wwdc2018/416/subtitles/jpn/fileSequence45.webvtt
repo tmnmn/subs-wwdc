@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:57.364 --> 00:45:01.902 align:start position:32% line:-2
+フィルタに渡る前に
+画像を縮小したいです
+
+00:45:02.002 --> 00:45:04.405 align:start position:29% line:-1
+カイルの言っていたように
+
+00:45:04.505 --> 00:45:06.540 align:start position:27% line:-1
+UIImageは使いません
+
+00:45:06.640 --> 00:45:11.545 align:start position:23% line:-2
+画像全体をメモリに
+読む込むことは避けたいからです
+
+00:45:12.379 --> 00:45:15.883 align:start position:25% line:-1
+この関数は使わないでおきます
+
+00:45:16.150 --> 00:45:20.220 align:start position:32% line:-2
+カイルの提案どおりの
+コードに置き換えます
+
+00:45:22.589 --> 00:45:24.958 align:start position:27% line:-1
+すると どうなるでしょう？
+
+00:45:25.792 --> 00:45:30.664 align:start position:25% line:-1
+バンドルから画像を取得します
+
+00:45:30.898 --> 00:45:31.732 align:start position:43% line:-1
+今回は―
+
+00:45:31.832 --> 00:45:34.301 align:start position:36% line:-1
+少し幅を広げて…
+
+00:45:34.735 --> 00:45:37.838 align:start position:2% line:-2
+CGImageSourceCreateWithURLを
+呼び出します
+
+00:45:37.938 --> 00:45:43.977 align:start position:9% line:-2
+それからCGImageSourceCreate
+ThumbnailAtIndexにパスし
+
+00:45:44.077 --> 00:45:49.516 align:start position:25% line:-2
+全体をメモリに読み込まずとも
+サイズが変更できます
+
+00:45:49.950 --> 00:45:52.753 align:start position:32% line:-1
+違いを確認しましょう
+
+00:45:52.853 --> 00:45:54.488 align:start position:39% line:-1
+再構築します
+
+00:45:55.823 --> 00:45:58.559 align:start position:25% line:-1
+そしてAppの起動を待ちます
+
+00:45:59.426 --> 00:46:01.028 align:start position:34% line:-1
+一旦表示されると…
+

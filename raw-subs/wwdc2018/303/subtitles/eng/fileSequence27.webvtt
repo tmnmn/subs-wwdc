@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.556 --> 00:27:00.716 A:middle
+email incorrectly.
+
+00:27:01.296 --> 00:27:03.056 A:middle
+So these are great values to log
+
+00:27:03.056 --> 00:27:04.546 A:middle
+and use in your troubleshooting
+
+00:27:04.786 --> 00:27:07.246 A:middle
+and learning the API, but you
+
+00:27:07.246 --> 00:27:08.566 A:middle
+don't want to use these in your
+
+00:27:08.566 --> 00:27:08.886 A:middle
+code.
+
+00:27:08.886 --> 00:27:09.506 A:middle
+You don't want to try and
+
+00:27:09.506 --> 00:27:10.856 A:middle
+interpret these with your code.
+
+00:27:10.856 --> 00:27:12.296 A:middle
+I don't make any promises that
+
+00:27:12.296 --> 00:27:13.436 A:middle
+we won't change the wording on
+
+00:27:13.436 --> 00:27:15.326 A:middle
+these messages over time without
+
+00:27:15.326 --> 00:27:15.716 A:middle
+warning.
+
+00:27:17.056 --> 00:27:18.646 A:middle
+For programmatic error handling,
+
+00:27:19.056 --> 00:27:19.926 A:middle
+you want to use the code
+
+00:27:19.926 --> 00:27:20.846 A:middle
+property instead.
+
+00:27:21.366 --> 00:27:22.216 A:middle
+This is a stable
+
+00:27:22.216 --> 00:27:23.466 A:middle
+machine-readable string that
+
+00:27:23.466 --> 00:27:24.906 A:middle
+represents what went wrong.
+
+00:27:25.376 --> 00:27:27.186 A:middle
+It's a hierarchical value with
+
+00:27:27.186 --> 00:27:28.506 A:middle
+dots between levels of
+
+00:27:28.506 --> 00:27:29.296 A:middle
+specificity.
+
+00:27:29.626 --> 00:27:30.786 A:middle
+So in this example, I can see
+
+00:27:30.786 --> 00:27:32.086 A:middle
+that I have a parameter error,
+
+00:27:32.086 --> 00:27:33.926 A:middle
+generally, and more specifically
+
+00:27:34.086 --> 00:27:35.146 A:middle
+one of those parameters is
+
+00:27:35.206 --> 00:27:35.786 A:middle
+invalid.
+
+00:27:36.196 --> 00:27:37.686 A:middle
+Now these codes can get very
+
+00:27:37.686 --> 00:27:39.756 A:middle
+long and very specific and
+
+00:27:39.756 --> 00:27:40.786 A:middle
+sometimes you don't care about
+
+00:27:40.786 --> 00:27:41.986 A:middle
+all that specificity.
+
+00:27:41.986 --> 00:27:43.046 A:middle
+In fact, usually you don't.
+
+00:27:43.046 --> 00:27:44.796 A:middle
+So we structure them this way so
+
+00:27:44.796 --> 00:27:46.036 A:middle
+that you can do a prefix match
+
+00:27:46.036 --> 00:27:47.906 A:middle
+on the code and be as generic or
+
+00:27:47.906 --> 00:27:49.866 A:middle
+a specific as you need to be for
+
+00:27:49.866 --> 00:27:51.156 A:middle
+your particular use case.
+
+00:27:51.816 --> 00:27:53.086 A:middle
+But if you need to be specific,
+
+00:27:53.186 --> 00:27:54.466 A:middle
+say so you can report back to
+
+00:27:54.466 --> 00:27:56.076 A:middle
+your own users with clarity
+
+00:27:56.076 --> 00:27:57.556 A:middle
+about what went wrong, we try to
+
+00:27:57.556 --> 00:27:58.746 A:middle
+give you enough information to
+
+00:27:58.746 --> 00:27:59.206 A:middle
+do that.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+01:17:58.306 --> 01:18:00.106 A:middle
+of up to 10x in a very
+
+01:18:00.106 --> 01:18:01.336 A:middle
+simple-to-use package, all
+
+01:18:01.336 --> 01:18:03.336 A:middle
+pre-optimized for use with our
+
+01:18:03.516 --> 01:18:05.376 A:middle
+iOS and macOS GPUs.
+
+01:18:06.186 --> 01:18:07.956 A:middle
+And it really is that simple,
+
+01:18:07.956 --> 01:18:09.216 A:middle
+just a few lines of code.
+
+01:18:09.216 --> 01:18:12.216 A:middle
+And the ray tracing, like many
+
+01:18:12.216 --> 01:18:13.896 A:middle
+GPU compute operations, is
+
+01:18:13.896 --> 01:18:15.086 A:middle
+exactly the kind of operation
+
+01:18:15.086 --> 01:18:16.376 A:middle
+that can efficiently scale with
+
+01:18:16.376 --> 01:18:18.356 A:middle
+the available GPU horsepower.
+
+01:18:18.356 --> 01:18:20.066 A:middle
+So we can actually get even more
+
+01:18:20.066 --> 01:18:21.936 A:middle
+performance by using Metal 2
+
+01:18:21.936 --> 01:18:23.216 A:middle
+support for external GPUs.
+
+01:18:23.216 --> 01:18:25.266 A:middle
+Now you really have to see this
+
+01:18:25.266 --> 01:18:25.806 A:middle
+in action.
+
+01:18:25.976 --> 01:18:27.076 A:middle
+And I'd like to invite Rav to
+
+01:18:27.076 --> 01:18:28.366 A:middle
+give a quick demonstration.
+
+01:18:28.666 --> 01:18:29.406 A:middle
+Rav?
+
+01:18:30.516 --> 01:18:34.016 A:middle
+[ Applause ]
+
+01:18:34.516 --> 01:18:35.106 A:middle
+&gt;&gt; Thank you, Jeremy.
+
+01:18:35.806 --> 01:18:37.716 A:middle
+All right, let's bring up this
+
+01:18:37.716 --> 01:18:39.296 A:middle
+ray trace rendering of the
+
+01:18:39.476 --> 01:18:41.316 A:middle
+Amazon Lumberyard Bistro scene
+
+01:18:41.626 --> 01:18:43.536 A:middle
+using the CPU to perform the
+
+01:18:43.536 --> 01:18:44.956 A:middle
+intersection calculations.
+
+01:18:45.516 --> 01:18:47.186 A:middle
+And this implementation is
+
+01:18:47.316 --> 01:18:49.496 A:middle
+optimized to run on all 10 cores
+
+01:18:49.496 --> 01:18:50.686 A:middle
+in our iMac Pro.
+
+01:18:51.776 --> 01:18:52.786 A:middle
+We've also added a little
+
+01:18:52.786 --> 01:18:54.296 A:middle
+benchmark mode that times how
+
+01:18:54.296 --> 01:18:56.116 A:middle
+long it takes to do 80
+
+01:18:56.116 --> 01:18:57.596 A:middle
+iterations of our ray-tracing
+
+01:18:57.596 --> 01:18:58.116 A:middle
+algorithm.
+
+01:18:59.016 --> 01:19:01.016 A:middle
+And for context, that requires
+

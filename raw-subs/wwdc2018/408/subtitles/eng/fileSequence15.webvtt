@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.876 --> 00:15:01.116 A:middle
+run script phase to give you the
+
+00:15:01.116 --> 00:15:03.126 A:middle
+opportunity to generate those
+
+00:15:03.366 --> 00:15:04.606 A:middle
+missing output files.
+
+00:15:05.836 --> 00:15:08.446 A:middle
+Now also new in Xcode 10, we
+
+00:15:08.446 --> 00:15:10.466 A:middle
+have documentation for the run
+
+00:15:10.466 --> 00:15:11.396 A:middle
+script phases.
+
+00:15:12.516 --> 00:15:16.916 A:middle
+[ Applause ]
+
+00:15:17.416 --> 00:15:18.746 A:middle
+So, it goes through more detail
+
+00:15:18.746 --> 00:15:19.966 A:middle
+of what I just explained and it
+
+00:15:19.966 --> 00:15:20.726 A:middle
+tells you about all of the
+
+00:15:20.726 --> 00:15:21.886 A:middle
+additional build settings that
+
+00:15:21.886 --> 00:15:22.956 A:middle
+are made available to you,
+
+00:15:23.256 --> 00:15:24.546 A:middle
+including how you can use those
+
+00:15:24.736 --> 00:15:26.146 A:middle
+file lists within your own
+
+00:15:26.146 --> 00:15:26.906 A:middle
+script content.
+
+00:15:28.216 --> 00:15:29.636 A:middle
+Now, when setting up your run
+
+00:15:29.636 --> 00:15:30.896 A:middle
+script phases and declaring all
+
+00:15:30.896 --> 00:15:32.166 A:middle
+of these new dependencies, and
+
+00:15:32.166 --> 00:15:34.046 A:middle
+including when you modify the
+
+00:15:34.046 --> 00:15:35.316 A:middle
+dependencies in your targets,
+
+00:15:35.866 --> 00:15:37.596 A:middle
+you may run into a dependency
+
+00:15:37.596 --> 00:15:37.986 A:middle
+cycle.
+
+00:15:38.636 --> 00:15:40.386 A:middle
+And a dependency cycle is simply
+
+00:15:40.516 --> 00:15:42.036 A:middle
+an interdependency graph
+
+00:15:42.036 --> 00:15:43.226 A:middle
+somewhere there is a loop that's
+
+00:15:43.226 --> 00:15:43.706 A:middle
+created.
+
+00:15:44.836 --> 00:15:46.346 A:middle
+Well, new in Xcode 10 we have
+
+00:15:46.346 --> 00:15:48.586 A:middle
+better diagnostics to detect
+
+00:15:48.586 --> 00:15:49.836 A:middle
+these cycles and will give you
+
+00:15:49.836 --> 00:15:51.546 A:middle
+an error, including the ability
+
+00:15:51.546 --> 00:15:53.046 A:middle
+for you to expand this box to
+
+00:15:53.046 --> 00:15:54.406 A:middle
+get all of the inputs that the
+
+00:15:54.406 --> 00:15:56.076 A:middle
+Xcode build system knows that
+
+00:15:56.076 --> 00:15:57.516 A:middle
+went into creating the cycle.
+
+00:15:58.916 --> 00:16:01.016 A:middle
+So, cycles are bad for a couple
+

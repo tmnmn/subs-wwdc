@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.376 --> 00:24:01.226 A:middle
+This means returning as quickly
+
+00:24:01.226 --> 00:24:02.726 A:middle
+as possible from the UI
+
+00:24:02.826 --> 00:24:05.076 A:middle
+application activation methods.
+
+00:24:05.576 --> 00:24:06.726 A:middle
+WillFinishLaunching,
+
+00:24:07.156 --> 00:24:08.606 A:middle
+didFinishLaunching, and
+
+00:24:08.606 --> 00:24:09.686 A:middle
+didBecomeActive.
+
+00:24:10.096 --> 00:24:11.696 A:middle
+Because UIKit waits for you to
+
+00:24:11.696 --> 00:24:13.036 A:middle
+return from these functions
+
+00:24:13.356 --> 00:24:15.006 A:middle
+before we can mark your app as
+
+00:24:15.006 --> 00:24:15.506 A:middle
+active.
+
+00:24:17.096 --> 00:24:18.656 A:middle
+Next, you're going to want to
+
+00:24:18.656 --> 00:24:21.436 A:middle
+avoid any file system writes
+
+00:24:21.436 --> 00:24:22.886 A:middle
+during your application launch,
+
+00:24:23.566 --> 00:24:24.836 A:middle
+as these are blocking, and
+
+00:24:24.836 --> 00:24:25.906 A:middle
+require a sys call.
+
+00:24:26.916 --> 00:24:28.206 A:middle
+Hand in hand with these, you're
+
+00:24:28.206 --> 00:24:29.516 A:middle
+going to want to avoid very
+
+00:24:29.516 --> 00:24:31.856 A:middle
+large reads during app launch as
+
+00:24:31.856 --> 00:24:32.226 A:middle
+well.
+
+00:24:33.076 --> 00:24:35.066 A:middle
+Instead, consider streaming in
+
+00:24:35.066 --> 00:24:36.926 A:middle
+only the data you absolutely
+
+00:24:36.926 --> 00:24:37.916 A:middle
+need right now.
+
+00:24:39.176 --> 00:24:41.106 A:middle
+And, finally I encourage you to
+
+00:24:41.106 --> 00:24:42.546 A:middle
+check your database hygiene.
+
+00:24:42.776 --> 00:24:44.076 A:middle
+It's always a good idea to stay
+
+00:24:44.076 --> 00:24:44.496 A:middle
+clean.
+
+00:24:45.486 --> 00:24:47.006 A:middle
+If you're using a library like
+
+00:24:47.006 --> 00:24:49.546 A:middle
+CoreData, consider optimizing
+
+00:24:49.546 --> 00:24:51.586 A:middle
+your schema, to make it as fast
+
+00:24:51.586 --> 00:24:52.216 A:middle
+as possible.
+
+00:24:52.886 --> 00:24:53.936 A:middle
+And, if you're rolling your own
+
+00:24:53.936 --> 00:24:56.006 A:middle
+solution with SQLite, or similar
+
+00:24:56.006 --> 00:24:58.126 A:middle
+technology, consider vacuuming
+
+00:24:58.126 --> 00:25:00.026 A:middle
+your database at a periodic
+

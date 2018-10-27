@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:07.195 --> 00:17:08.546 A:middle
+The second variant is Spline.
+
+00:17:09.826 --> 00:17:11.126 A:middle
+Spline is really more useful if
+
+00:17:11.126 --> 00:17:12.396 A:middle
+you have more than two
+
+00:17:12.396 --> 00:17:12.996 A:middle
+rotations.
+
+00:17:13.116 --> 00:17:14.066 A:middle
+So, for instance, here we're
+
+00:17:14.066 --> 00:17:16.205 A:middle
+going to interpolate between an
+
+00:17:16.205 --> 00:17:18.226 A:middle
+array of rotations, and there's
+
+00:17:18.226 --> 00:17:19.256 A:middle
+quite a bit of boilerplate code
+
+00:17:19.256 --> 00:17:20.526 A:middle
+here, so I want you to focus
+
+00:17:20.526 --> 00:17:21.476 A:middle
+just on the Spline call.
+
+00:17:23.695 --> 00:17:25.695 A:middle
+Effectively what we're doing is
+
+00:17:25.695 --> 00:17:27.175 A:middle
+just iterating through all the
+
+00:17:27.175 --> 00:17:28.465 A:middle
+individual rotations and
+
+00:17:28.465 --> 00:17:28.946 A:middle
+applying Spline.
+
+00:17:34.546 --> 00:17:35.516 A:middle
+So the thing you have to specify
+
+00:17:35.516 --> 00:17:37.426 A:middle
+with Spline is not only the two
+
+00:17:38.086 --> 00:17:39.136 A:middle
+rotations that you wish to
+
+00:17:39.136 --> 00:17:40.696 A:middle
+interpolate between but also the
+
+00:17:40.696 --> 00:17:42.176 A:middle
+previous and the next as well.
+
+00:17:42.296 --> 00:17:44.856 A:middle
+And this is what this looks
+
+00:17:44.856 --> 00:17:44.976 A:middle
+like.
+
+00:17:52.076 --> 00:17:53.056 A:middle
+So if you're a game developer,
+
+00:17:53.056 --> 00:17:54.146 A:middle
+you're probably not interested
+
+00:17:54.146 --> 00:17:55.476 A:middle
+in rotating individual vectors.
+
+00:17:55.476 --> 00:17:56.486 A:middle
+You're probably interested in
+
+00:17:56.486 --> 00:17:57.286 A:middle
+rotating objects.
+
+00:17:57.976 --> 00:17:58.766 A:middle
+So we have that for you.
+
+00:17:58.906 --> 00:17:59.936 A:middle
+We have a cube.
+

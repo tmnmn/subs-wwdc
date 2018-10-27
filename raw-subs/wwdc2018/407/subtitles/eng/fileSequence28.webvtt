@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.526 --> 00:28:00.766 A:middle
+And they can't batch across each
+
+00:28:00.766 --> 00:28:02.186 A:middle
+other, and you can get even--
+
+00:28:02.596 --> 00:28:03.606 A:middle
+you can still get that same
+
+00:28:03.606 --> 00:28:04.946 A:middle
+style of performance through
+
+00:28:04.946 --> 00:28:06.346 A:middle
+deferring the work and doing it
+
+00:28:06.346 --> 00:28:06.796 A:middle
+lazily.
+
+00:28:09.196 --> 00:28:10.996 A:middle
+A third easy way to improve
+
+00:28:10.996 --> 00:28:11.966 A:middle
+performance is you look through
+
+00:28:11.966 --> 00:28:14.026 A:middle
+that instrument's trace, is to
+
+00:28:14.026 --> 00:28:15.156 A:middle
+find areas where you see the
+
+00:28:15.156 --> 00:28:17.016 A:middle
+same thing being computed over
+
+00:28:17.016 --> 00:28:17.656 A:middle
+and over again.
+
+00:28:18.236 --> 00:28:19.556 A:middle
+For example, you have a method
+
+00:28:19.676 --> 00:28:20.856 A:middle
+in its computing, the size of
+
+00:28:20.856 --> 00:28:22.526 A:middle
+some text, then you see the same
+
+00:28:22.526 --> 00:28:24.156 A:middle
+thing happening several frames
+
+00:28:24.156 --> 00:28:25.946 A:middle
+later, for the same text, and
+
+00:28:25.946 --> 00:28:27.006 A:middle
+again, and again.
+
+00:28:27.436 --> 00:28:28.426 A:middle
+Now, in this situation, of
+
+00:28:28.496 --> 00:28:29.536 A:middle
+course, you want to try to just
+
+00:28:29.536 --> 00:28:31.076 A:middle
+compute that value one time.
+
+00:28:32.076 --> 00:28:33.226 A:middle
+Compute it at the top, and pass
+
+00:28:33.226 --> 00:28:35.406 A:middle
+it down or maybe cache it.
+
+00:28:36.476 --> 00:28:37.846 A:middle
+Another technique you have
+
+00:28:37.846 --> 00:28:38.876 A:middle
+available in your UI
+
+00:28:38.876 --> 00:28:41.166 A:middle
+applications is considering how
+
+00:28:41.166 --> 00:28:42.296 A:middle
+many views you are using to
+
+00:28:42.296 --> 00:28:43.146 A:middle
+render your UI.
+
+00:28:43.146 --> 00:28:46.466 A:middle
+It can be very great for your
+
+00:28:46.466 --> 00:28:48.106 A:middle
+source code organization to use
+
+00:28:48.106 --> 00:28:50.216 A:middle
+very small views, with small
+
+00:28:50.216 --> 00:28:51.306 A:middle
+sets of functionality, and to
+
+00:28:51.306 --> 00:28:52.286 A:middle
+compose them together into
+
+00:28:52.286 --> 00:28:53.066 A:middle
+larger pieces.
+
+00:28:53.516 --> 00:28:55.216 A:middle
+But the more views you use, the
+
+00:28:55.216 --> 00:28:57.516 A:middle
+harder you tax the rendering and
+
+00:28:57.516 --> 00:28:58.276 A:middle
+layout systems.
+
+00:28:59.306 --> 00:29:01.066 A:middle
+Now, this is a two-way street,
+

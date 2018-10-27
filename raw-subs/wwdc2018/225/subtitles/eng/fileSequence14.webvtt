@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.756 --> 00:14:01.176 A:middle
+Now while this is okay, you
+
+00:14:01.176 --> 00:14:03.106 A:middle
+might be thinking, it's not the
+
+00:14:03.106 --> 00:14:04.316 A:middle
+best that we can do here.
+
+00:14:04.316 --> 00:14:06.886 A:middle
+It doesn't look as great as it
+
+00:14:07.736 --> 00:14:07.976 A:middle
+can.
+
+00:14:08.486 --> 00:14:09.736 A:middle
+We might want to do something
+
+00:14:09.736 --> 00:14:10.696 A:middle
+more interesting here like
+
+00:14:10.696 --> 00:14:12.216 A:middle
+display multiple columns since
+
+00:14:12.216 --> 00:14:14.546 A:middle
+we have the space available to
+
+00:14:14.546 --> 00:14:14.806 A:middle
+us.
+
+00:14:15.336 --> 00:14:16.936 A:middle
+Now flow layout makes it really
+
+00:14:16.936 --> 00:14:17.876 A:middle
+easy to do this.
+
+00:14:18.166 --> 00:14:19.926 A:middle
+If you remember during Steve's
+
+00:14:19.926 --> 00:14:21.366 A:middle
+explanation of how flow layout
+
+00:14:21.486 --> 00:14:22.666 A:middle
+performs it's layout earlier,
+
+00:14:22.746 --> 00:14:24.536 A:middle
+flow layout will automatically
+
+00:14:24.536 --> 00:14:26.656 A:middle
+try to fit in as many items as
+
+00:14:26.656 --> 00:14:28.876 A:middle
+it can within a line before it
+
+00:14:28.876 --> 00:14:29.946 A:middle
+wraps to the next one.
+
+00:14:30.526 --> 00:14:33.396 A:middle
+So using that, we can kind of
+
+00:14:33.876 --> 00:14:36.086 A:middle
+figure out that layout-- that we
+
+00:14:36.086 --> 00:14:37.626 A:middle
+can get multiple columns if we
+
+00:14:37.626 --> 00:14:38.826 A:middle
+change our item size.
+
+00:14:39.506 --> 00:14:41.996 A:middle
+So if we head back to Xcode, to
+
+00:14:41.996 --> 00:14:44.446 A:middle
+our layout here, and if we just
+
+00:14:44.446 --> 00:14:46.986 A:middle
+change how we're calculating our
+
+00:14:46.986 --> 00:14:47.976 A:middle
+item size here.
+
+00:14:47.976 --> 00:14:50.886 A:middle
+So I'm just going to remove this
+
+00:14:50.886 --> 00:14:52.156 A:middle
+fit here, and I'm going to
+
+00:14:52.906 --> 00:14:54.216 A:middle
+replace it with something that
+
+00:14:54.296 --> 00:14:55.336 A:middle
+does a little bit of extra math.
+
+00:14:56.336 --> 00:14:57.926 A:middle
+So I'm just starting out with
+
+00:14:58.006 --> 00:14:59.896 A:middle
+the same available width that I
+
+00:14:59.896 --> 00:15:00.536 A:middle
+had before.
+

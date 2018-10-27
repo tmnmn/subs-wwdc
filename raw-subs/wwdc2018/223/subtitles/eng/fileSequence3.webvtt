@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.656 --> 00:03:02.316 A:middle
+We loop from 0 to count, and
+
+00:03:02.316 --> 00:03:03.326 A:middle
+when we find something to
+
+00:03:03.326 --> 00:03:05.126 A:middle
+delete, we [inaudible] remove
+
+00:03:05.126 --> 00:03:07.546 A:middle
+that, and then we continue with
+
+00:03:07.546 --> 00:03:11.266 A:middle
+our loop until, ouch, we walk
+
+00:03:11.266 --> 00:03:11.846 A:middle
+off the end.
+
+00:03:13.366 --> 00:03:14.906 A:middle
+The array got shorter, but we
+
+00:03:14.906 --> 00:03:16.256 A:middle
+picked the number of iterations
+
+00:03:16.256 --> 00:03:17.166 A:middle
+when the loop started.
+
+00:03:17.876 --> 00:03:19.196 A:middle
+Fortunately, you can't miss this
+
+00:03:19.246 --> 00:03:20.796 A:middle
+bug if you Swift and test your
+
+00:03:20.826 --> 00:03:23.436 A:middle
+code because it'll trap.
+
+00:03:23.946 --> 00:03:25.226 A:middle
+But if you had to learn this
+
+00:03:25.266 --> 00:03:26.996 A:middle
+lesson as a C-programmer, like I
+
+00:03:26.996 --> 00:03:28.966 A:middle
+did, you might not be so lucky.
+
+00:03:29.926 --> 00:03:30.256 A:middle
+Okay.
+
+00:03:30.626 --> 00:03:32.796 A:middle
+So, we can fix it by replacing
+
+00:03:32.796 --> 00:03:34.096 A:middle
+the for loop with a somewhat
+
+00:03:34.096 --> 00:03:36.346 A:middle
+uglier while loop, which lets us
+
+00:03:36.346 --> 00:03:37.516 A:middle
+examine the count at each
+
+00:03:37.516 --> 00:03:38.096 A:middle
+iteration.
+
+00:03:38.646 --> 00:03:42.156 A:middle
+But there's a subtle bug in this
+
+00:03:42.156 --> 00:03:42.736 A:middle
+one too.
+
+00:03:43.956 --> 00:03:46.056 A:middle
+If two consecutive elements are
+
+00:03:46.056 --> 00:03:48.706 A:middle
+selected, it'll remove the first
+
+00:03:48.706 --> 00:03:51.916 A:middle
+one and then immediately hop
+
+00:03:51.916 --> 00:03:54.256 A:middle
+over the next one.
+
+00:03:54.466 --> 00:03:56.956 A:middle
+Now, this bug is a little more
+
+00:03:56.956 --> 00:03:58.496 A:middle
+insidious because it hides from
+
+00:03:58.496 --> 00:04:00.286 A:middle
+you unless your tests happen to
+

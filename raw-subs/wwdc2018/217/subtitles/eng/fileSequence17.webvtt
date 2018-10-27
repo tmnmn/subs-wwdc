@@ -1,0 +1,147 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.076 --> 00:17:00.506 A:middle
+instances where our application
+
+00:17:00.506 --> 00:17:02.106 A:middle
+will get a callback directly.
+
+00:17:02.656 --> 00:17:03.646 A:middle
+The first one being if there's
+
+00:17:03.646 --> 00:17:04.856 A:middle
+an error during execution, and
+
+00:17:04.856 --> 00:17:05.776 A:middle
+we say we need to handle this
+
+00:17:05.776 --> 00:17:06.846 A:middle
+within our app.
+
+00:17:07.116 --> 00:17:08.165 A:middle
+The other one, though, might
+
+00:17:08.165 --> 00:17:09.096 A:middle
+happen if the user wants to
+
+00:17:09.096 --> 00:17:09.856 A:middle
+tweak a couple of the
+
+00:17:09.856 --> 00:17:10.415 A:middle
+parameters.
+
+00:17:10.856 --> 00:17:11.836 A:middle
+For instance, they see that
+
+00:17:11.836 --> 00:17:12.806 A:middle
+they're about to log a cookie,
+
+00:17:13.076 --> 00:17:13.866 A:middle
+when they really know they just
+
+00:17:13.866 --> 00:17:14.356 A:middle
+ate 5.
+
+00:17:14.356 --> 00:17:16.195 A:middle
+So, we'll tap on the top module,
+
+00:17:16.336 --> 00:17:17.086 A:middle
+we'll launch into your
+
+00:17:17.086 --> 00:17:18.276 A:middle
+application, and you'll get a
+
+00:17:18.276 --> 00:17:18.945 A:middle
+callback here.
+
+00:17:19.396 --> 00:17:20.945 A:middle
+The userActivity you'll receive
+
+00:17:21.415 --> 00:17:22.586 A:middle
+will have an activity type equal
+
+00:17:22.586 --> 00:17:23.945 A:middle
+to the name of the class of
+
+00:17:23.945 --> 00:17:24.846 A:middle
+intent you gave us.
+
+00:17:25.386 --> 00:17:27.626 A:middle
+At this point, you can extract
+
+00:17:27.626 --> 00:17:28.526 A:middle
+an interaction off of
+
+00:17:28.526 --> 00:17:30.546 A:middle
+userActivity, and an intent off
+
+00:17:30.546 --> 00:17:31.936 A:middle
+of that interaction, which will
+
+00:17:31.936 --> 00:17:33.176 A:middle
+have all the parameters you set
+
+00:17:33.176 --> 00:17:33.826 A:middle
+when you created your
+
+00:17:33.826 --> 00:17:35.086 A:middle
+relevantShortcut.
+
+00:17:35.836 --> 00:17:37.366 A:middle
+So, now we're ready to create
+
+00:17:37.366 --> 00:17:38.506 A:middle
+relevant shortcuts whenever our
+
+00:17:38.506 --> 00:17:39.596 A:middle
+application has runtime.
+
+00:17:39.956 --> 00:17:40.966 A:middle
+But, it's very important to
+
+00:17:40.966 --> 00:17:42.136 A:middle
+note, that just because your
+
+00:17:42.136 --> 00:17:43.166 A:middle
+content is showing up on the
+
+00:17:43.166 --> 00:17:44.456 A:middle
+Siri watch face, doesn't mean
+
+00:17:44.456 --> 00:17:45.676 A:middle
+your application is actively
+
+00:17:45.676 --> 00:17:45.966 A:middle
+running.
+
+00:17:46.496 --> 00:17:48.006 A:middle
+So, to help you get more runtime
+
+00:17:48.176 --> 00:17:49.256 A:middle
+to provide relative shortcuts,
+
+00:17:49.516 --> 00:17:50.186 A:middle
+we've created the
+
+00:17:50.186 --> 00:17:52.676 A:middle
+WKRelevantShortcutRefresh
+
+00:17:52.676 --> 00:17:53.336 A:middle
+BackgroundTask.
+
+00:17:54.556 --> 00:17:56.026 A:middle
+We'll be handing this out to
+
+00:17:56.026 --> 00:17:57.516 A:middle
+applications that are providing
+
+00:17:57.596 --> 00:17:58.916 A:middle
+awesome relevant shortcuts that
+
+00:17:58.916 --> 00:17:59.896 A:middle
+our users are spending time
+
+00:17:59.896 --> 00:18:02.116 A:middle
+looking at, tapping through, but
+

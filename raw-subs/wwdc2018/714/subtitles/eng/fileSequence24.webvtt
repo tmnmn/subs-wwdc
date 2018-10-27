@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.336 --> 00:24:00.336 A:middle
+HTTP/2 can significantly reduce
+
+00:24:00.336 --> 00:24:02.916 A:middle
+this delay and allows us to send
+
+00:24:02.916 --> 00:24:04.636 A:middle
+the request almost immediately
+
+00:24:04.636 --> 00:24:06.256 A:middle
+when the app desires the
+
+00:24:06.256 --> 00:24:06.866 A:middle
+resource.
+
+00:24:07.306 --> 00:24:11.976 A:middle
+Also pay attention to these gray
+
+00:24:11.976 --> 00:24:12.576 A:middle
+boxes.
+
+00:24:13.446 --> 00:24:14.946 A:middle
+If you recall, this is the
+
+00:24:14.946 --> 00:24:17.016 A:middle
+network idle time when your app
+
+00:24:17.016 --> 00:24:18.546 A:middle
+is not doing any networking,
+
+00:24:18.836 --> 00:24:20.426 A:middle
+waiting to get a response from
+
+00:24:20.506 --> 00:24:21.476 A:middle
+the server.
+
+00:24:22.736 --> 00:24:25.606 A:middle
+HTTP/2 can significantly reduce
+
+00:24:25.656 --> 00:24:27.876 A:middle
+this network idle time allowing
+
+00:24:27.876 --> 00:24:29.376 A:middle
+you to better utilize the
+
+00:24:29.376 --> 00:24:31.936 A:middle
+bandwidth and load the resources
+
+00:24:31.936 --> 00:24:32.596 A:middle
+much faster.
+
+00:24:35.476 --> 00:24:37.236 A:middle
+We just discussed many benefits
+
+00:24:37.236 --> 00:24:40.186 A:middle
+of using HTTP/2 over HTTP/1.1,
+
+00:24:40.636 --> 00:24:41.726 A:middle
+but let's quickly summarize
+
+00:24:41.726 --> 00:24:41.926 A:middle
+them.
+
+00:24:43.166 --> 00:24:45.086 A:middle
+HTTP/2 solves the head-of-line
+
+00:24:45.086 --> 00:24:46.456 A:middle
+blocking problem at the HTTP
+
+00:24:46.456 --> 00:24:47.146 A:middle
+layer.
+
+00:24:47.476 --> 00:24:49.696 A:middle
+And it also allows you to better
+
+00:24:49.696 --> 00:24:50.686 A:middle
+utilize the bandwidth.
+
+00:24:52.286 --> 00:24:54.786 A:middle
+If your apps use URLSession, you
+
+00:24:54.786 --> 00:24:55.826 A:middle
+don't need to make any
+
+00:24:55.826 --> 00:24:57.016 A:middle
+client-side changes.
+
+00:24:57.926 --> 00:25:00.556 A:middle
+Simply enable HTTP/2 on your
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.326 --> 00:45:01.226 A:middle
+draw it so that they can see how
+
+00:45:01.226 --> 00:45:01.806 A:middle
+to get there.
+
+00:45:01.806 --> 00:45:02.976 A:middle
+And then finally, we will let
+
+00:45:02.976 --> 00:45:04.626 A:middle
+them also select one of the
+
+00:45:04.626 --> 00:45:07.546 A:middle
+routes from the options that are
+
+00:45:07.546 --> 00:45:09.306 A:middle
+returned by Direction Services
+
+00:45:09.806 --> 00:45:11.456 A:middle
+and display more information
+
+00:45:11.456 --> 00:45:12.696 A:middle
+about each of these routes.
+
+00:45:13.436 --> 00:45:14.756 A:middle
+So, let's start by setting up
+
+00:45:14.756 --> 00:45:15.606 A:middle
+our Event Listener.
+
+00:45:17.666 --> 00:45:19.166 A:middle
+So, we listen to the select
+
+00:45:19.166 --> 00:45:21.236 A:middle
+events from the map, which tells
+
+00:45:21.236 --> 00:45:23.166 A:middle
+us when an annotation or an
+
+00:45:23.166 --> 00:45:24.306 A:middle
+overlay is selected.
+
+00:45:24.886 --> 00:45:26.196 A:middle
+So, this is the property of the
+
+00:45:26.196 --> 00:45:27.976 A:middle
+event, object that I received.
+
+00:45:28.236 --> 00:45:30.216 A:middle
+And if annotation has a value,
+
+00:45:30.216 --> 00:45:31.276 A:middle
+then that means that this
+
+00:45:31.276 --> 00:45:32.656 A:middle
+annotation was just selected.
+
+00:45:32.656 --> 00:45:34.126 A:middle
+So, there is only one annotation
+
+00:45:34.126 --> 00:45:37.016 A:middle
+overlay selected at a time, in
+
+00:45:37.016 --> 00:45:37.456 A:middle
+MapKit.
+
+00:45:37.456 --> 00:45:38.956 A:middle
+So, there is no ambiguity here.
+
+00:45:39.236 --> 00:45:40.476 A:middle
+This is the one that we want to
+
+00:45:40.476 --> 00:45:40.886 A:middle
+go to.
+
+00:45:41.256 --> 00:45:43.236 A:middle
+So, I will show routes to that
+
+00:45:43.236 --> 00:45:43.846 A:middle
+annotation.
+
+00:45:46.506 --> 00:45:48.426 A:middle
+Showing our route means drawing
+
+00:45:48.426 --> 00:45:49.106 A:middle
+it on the map.
+
+00:45:49.596 --> 00:45:51.516 A:middle
+So, let's set up a polyline
+
+00:45:51.516 --> 00:45:54.176 A:middle
+overlay to draw a route on the
+
+00:45:54.176 --> 00:45:54.396 A:middle
+map.
+
+00:45:55.016 --> 00:45:56.576 A:middle
+So, first off, I will start by
+
+00:45:56.576 --> 00:45:58.206 A:middle
+defining a style that I will use
+
+00:45:58.206 --> 00:45:59.976 A:middle
+for all my routes, setting some
+
+00:45:59.976 --> 00:46:01.566 A:middle
+opacity and some line width to
+

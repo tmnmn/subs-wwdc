@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:00.316 --> 00:54:01.226 A:middle
+Then, during our daily
+
+00:54:01.226 --> 00:54:03.396 A:middle
+playtests, we harvested any PSOs
+
+00:54:03.396 --> 00:54:06.106 A:middle
+that were created that were not
+
+00:54:06.106 --> 00:54:07.576 A:middle
+caught by that automation pass.
+
+00:54:07.966 --> 00:54:09.276 A:middle
+The automation pass also
+
+00:54:09.756 --> 00:54:12.476 A:middle
+catches, like, cosmetics, and
+
+00:54:12.896 --> 00:54:14.176 A:middle
+effects from firing different
+
+00:54:14.176 --> 00:54:15.136 A:middle
+weapons, and so on.
+
+00:54:16.556 --> 00:54:18.056 A:middle
+We take all of that information
+
+00:54:18.056 --> 00:54:19.126 A:middle
+from automation and from the
+
+00:54:19.126 --> 00:54:20.276 A:middle
+playtest, combine it into a
+
+00:54:20.276 --> 00:54:20.666 A:middle
+list.
+
+00:54:20.856 --> 00:54:22.486 A:middle
+That's what we create at load
+
+00:54:22.486 --> 00:54:23.856 A:middle
+time, and that's what we ship
+
+00:54:23.856 --> 00:54:24.416 A:middle
+with the game.
+
+00:54:24.956 --> 00:54:26.266 A:middle
+It's not perfect, but we find
+
+00:54:26.266 --> 00:54:27.556 A:middle
+that the number of PSOs we
+
+00:54:27.556 --> 00:54:28.686 A:middle
+create at runtime is in the
+
+00:54:28.686 --> 00:54:30.136 A:middle
+single digits for any given play
+
+00:54:30.136 --> 00:54:31.146 A:middle
+session, on average.
+
+00:54:31.516 --> 00:54:32.926 A:middle
+And so players don't experience
+
+00:54:32.926 --> 00:54:34.846 A:middle
+any hitching from PSO creation.
+
+00:54:37.356 --> 00:54:39.096 A:middle
+Resource allocation.
+
+00:54:39.196 --> 00:54:43.216 A:middle
+So basically, creating and
+
+00:54:43.366 --> 00:54:46.466 A:middle
+deleting resources is expensive
+
+00:54:46.466 --> 00:54:47.326 A:middle
+or can be expensive.
+
+00:54:47.326 --> 00:54:50.046 A:middle
+It's kind of like, think of
+
+00:54:50.046 --> 00:54:50.113 A:middle
+[inaudible].
+
+00:54:50.113 --> 00:54:51.166 A:middle
+You really want to minimize the
+
+00:54:51.166 --> 00:54:52.276 A:middle
+number of [inaudible] you're
+
+00:54:52.276 --> 00:54:53.036 A:middle
+making per frame.
+
+00:54:53.436 --> 00:54:54.246 A:middle
+You really don't want to be
+
+00:54:54.246 --> 00:54:55.416 A:middle
+creating and destroying a lot of
+
+00:54:55.416 --> 00:54:57.246 A:middle
+resources on the fly, but when
+
+00:54:57.246 --> 00:54:58.476 A:middle
+you're streaming in content
+
+00:54:58.656 --> 00:55:00.606 A:middle
+dynamically, when you have a lot
+

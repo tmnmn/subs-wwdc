@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.336 --> 00:20:00.576 A:middle
+idle time on GPU.
+
+00:20:00.636 --> 00:20:01.846 A:middle
+As soon as previous frame is
+
+00:20:01.846 --> 00:20:04.086 A:middle
+finished, GPU can start with the
+
+00:20:04.626 --> 00:20:06.766 A:middle
+next one.
+
+00:20:06.896 --> 00:20:09.376 A:middle
+The last subsection is a
+
+00:20:09.376 --> 00:20:11.306 A:middle
+multi-GPU workload distribution.
+
+00:20:13.226 --> 00:20:15.666 A:middle
+We can scale our workload across
+
+00:20:15.666 --> 00:20:16.386 A:middle
+multiple GPUs.
+
+00:20:16.386 --> 00:20:19.226 A:middle
+Current Mac Book Pro has two GPU
+
+00:20:19.306 --> 00:20:21.166 A:middle
+on board, and while they have
+
+00:20:21.166 --> 00:20:22.056 A:middle
+different performance
+
+00:20:22.116 --> 00:20:23.616 A:middle
+characteristics, there is
+
+00:20:23.616 --> 00:20:25.126 A:middle
+nothing preventing us from using
+
+00:20:25.126 --> 00:20:25.366 A:middle
+them.
+
+00:20:26.036 --> 00:20:27.926 A:middle
+Similarly, if each GPU is
+
+00:20:27.986 --> 00:20:29.906 A:middle
+connected, application can use
+
+00:20:29.906 --> 00:20:31.756 A:middle
+it for rendering to the headset
+
+00:20:32.096 --> 00:20:34.866 A:middle
+while using Mac's primary GPU to
+
+00:20:34.896 --> 00:20:35.936 A:middle
+offload some work.
+
+00:20:39.066 --> 00:20:40.516 A:middle
+So we've just separated
+
+00:20:40.666 --> 00:20:43.286 A:middle
+pause-independent work and moved
+
+00:20:43.566 --> 00:20:45.256 A:middle
+it to a secondary GPU.
+
+00:20:45.796 --> 00:20:48.436 A:middle
+We could do that because it was
+
+00:20:48.436 --> 00:20:52.046 A:middle
+already encoded much earlier in
+
+00:20:52.046 --> 00:20:53.576 A:middle
+our frame, and now this
+
+00:20:53.666 --> 00:20:55.866 A:middle
+pause-independent workload is
+
+00:20:55.866 --> 00:20:57.516 A:middle
+executing in parallel to
+
+00:20:57.616 --> 00:20:58.986 A:middle
+pause-dependent workload of
+
+00:20:59.066 --> 00:20:59.746 A:middle
+previous frame.
+

@@ -1,0 +1,86 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:01.468 --> 00:20:02.836 align:middle line:-1
+我首先要做的是
+
+00:20:02.903 --> 00:20:05.906 align:middle line:-2
+扩展LevelTile类
+以便实施UIFocusItem
+
+00:20:06.673 --> 00:20:08.675 align:middle line:-1
+这就是允许它变得可聚焦的东西
+
+00:20:09.943 --> 00:20:10.978 align:middle line:-1
+这里有一些方法
+
+00:20:11.245 --> 00:20:13.347 align:middle line:-2
+我只想让你们注意一下
+顶部的几个方法
+
+00:20:14.214 --> 00:20:16.583 align:middle line:-2
+对于canBecomeFocused
+我要键入“真”
+
+00:20:16.817 --> 00:20:17.885 align:middle line:-1
+就是这么直截了当
+
+00:20:18.652 --> 00:20:19.920 align:middle line:-1
+对于parentFocusEnvironment
+
+00:20:20.220 --> 00:20:22.589 align:middle line:-2
+我要返回渲染这些项的
+MetalView
+
+00:20:23.524 --> 00:20:25.759 align:middle line:-2
+最后
+在didUpdateFocus中
+
+00:20:26.126 --> 00:20:28.929 align:middle line:-2
+我要把方格设置为
+把自己设定为活动状态
+
+00:20:29.196 --> 00:20:30.397 align:middle line:-1
+当它变为焦点时
+
+00:20:31.665 --> 00:20:34.768 align:middle line:-2
+接下来我要告诉聚焦引擎
+如何处理这些新项
+
+00:20:35.469 --> 00:20:36.470 align:middle line:-1
+为此
+
+00:20:36.537 --> 00:20:39.306 align:middle line:-2
+我要扩展渲染
+它们的MetalView
+
+00:20:40.307 --> 00:20:42.209 align:middle line:-1
+这个视图已经在视图等级之中了
+
+00:20:42.276 --> 00:20:44.211 align:middle line:-1
+并且聚焦引擎也已知道了它的存在
+
+00:20:44.278 --> 00:20:45.612 align:middle line:-1
+这是一个钩入的绝佳位置
+
+00:20:46.480 --> 00:20:47.915 align:middle line:-1
+因为这是一个UIView
+
+00:20:48.182 --> 00:20:50.584 align:middle line:-2
+它已变换为
+UIFocusItemContainer
+
+00:20:50.884 --> 00:20:53.620 align:middle line:-1
+并且它把自己作为了一个坐标空间
+
+00:20:54.321 --> 00:20:55.589 align:middle line:-1
+我唯一要做的是
+
+00:20:55.656 --> 00:20:59.593 align:middle line:-2
+覆盖FocusItem方框
+以返回我的等级方格
+
+00:20:59.826 --> 00:21:01.929 align:middle line:-2
+当然
+它现在是UIFocusItems
+

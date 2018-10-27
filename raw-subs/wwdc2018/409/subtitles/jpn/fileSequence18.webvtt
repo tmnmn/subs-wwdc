@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:54.341 --> 00:18:00.547 align:start position:25% line:-2
+非同期でセマフォを使う時
+問題が生じる可能性があります
+
+00:18:00.781 --> 00:18:04.985 align:start position:21% line:-1
+優先順位の低いキューが実行されて
+
+00:18:05.085 --> 00:18:09.590 align:start position:30% line:-2
+パフォーマンスの劣化や
+ハングを起こすのです
+
+00:18:10.057 --> 00:18:13.794 align:start position:30% line:-2
+他にもパフォーマンスを
+下げる原因となる―
+
+00:18:13.927 --> 00:18:17.731 align:start position:21% line:-1
+無用なスレッドを作ってしまいます
+
+00:18:18.932 --> 00:18:21.301 align:start position:30% line:-1
+この問題を解決するため
+
+00:18:21.401 --> 00:18:24.805 align:start position:29% line:-2
+スタティックアナライザが
+警告します
+
+00:18:26.206 --> 00:18:29.476 align:start position:27% line:-1
+問題が生じた場所を示します
+
+00:18:31.512 --> 00:18:33.680 align:start position:36% line:-1
+修正方法はこちら
+
+00:18:33.981 --> 00:18:40.020 align:start position:21% line:-2
+最良の例として
+同期が可能なAPIを用意しました
+
+00:18:40.154 --> 00:18:42.489 align:start position:20% line:-1
+NSXPCConnectionには
+
+00:18:42.589 --> 00:18:47.394 align:start position:14% line:-2
+類似APIのsynchronous
+RemoteObjectProxyを配置
+
+00:18:47.661 --> 00:18:53.267 align:start position:30% line:-2
+セマフォの必要性を消し
+より高速に実行させます
+
+00:18:55.102 --> 00:18:59.606 align:start position:32% line:-2
+次は同期したAPIが
+無い場合の方法です
+
+00:18:59.706 --> 00:19:03.277 align:start position:21% line:-1
+startメソッドに継続を使用し
+

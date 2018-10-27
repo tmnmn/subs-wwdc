@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.716 --> 00:29:00.026 A:middle
+you should try to keep the
+
+00:29:00.026 --> 00:29:02.086 A:middle
+arguments the same, if possible.
+
+00:29:02.646 --> 00:29:07.746 A:middle
+So this is how we find and build
+
+00:29:07.746 --> 00:29:09.456 A:middle
+modules for system frameworks
+
+00:29:10.426 --> 00:29:12.436 A:middle
+but what about your frameworks?
+
+00:29:12.876 --> 00:29:14.316 A:middle
+How do we build modules for
+
+00:29:14.316 --> 00:29:14.706 A:middle
+those?
+
+00:29:15.246 --> 00:29:18.106 A:middle
+Let's go back to our original
+
+00:29:18.106 --> 00:29:20.156 A:middle
+cat example, and this time we
+
+00:29:20.156 --> 00:29:20.986 A:middle
+turn on modules.
+
+00:29:21.676 --> 00:29:24.826 A:middle
+If we would use a headermap
+
+00:29:24.826 --> 00:29:27.256 A:middle
+again, the headermap will point
+
+00:29:27.256 --> 00:29:29.906 A:middle
+us back to the source directory.
+
+00:29:30.506 --> 00:29:32.876 A:middle
+But if you look at that source
+
+00:29:32.876 --> 00:29:34.016 A:middle
+directory, we have a problem
+
+00:29:34.016 --> 00:29:34.336 A:middle
+now.
+
+00:29:34.906 --> 00:29:36.956 A:middle
+Theirs is no modules directory.
+
+00:29:38.246 --> 00:29:39.496 A:middle
+It doesn't look like a framework
+
+00:29:39.496 --> 00:29:42.946 A:middle
+at all and Clang doesn't know
+
+00:29:42.946 --> 00:29:44.606 A:middle
+how to do this in this case.
+
+00:29:45.526 --> 00:29:47.476 A:middle
+So we introduced a new concept
+
+00:29:47.606 --> 00:29:49.846 A:middle
+to solve this, and it's called
+
+00:29:50.126 --> 00:29:51.676 A:middle
+Clang's Virtual File System.
+
+00:29:52.606 --> 00:29:54.556 A:middle
+It basically creates a virtual
+
+00:29:54.556 --> 00:29:57.016 A:middle
+abstraction of a framework that
+
+00:29:57.016 --> 00:29:58.656 A:middle
+allows Clang to build the
+
+00:29:58.656 --> 00:29:59.216 A:middle
+module.
+

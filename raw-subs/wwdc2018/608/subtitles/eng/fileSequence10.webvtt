@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.306 --> 00:10:00.456 A:middle
+smooth, but as we can see, there
+
+00:10:00.576 --> 00:10:01.596 A:middle
+is a steep cliff.
+
+00:10:02.416 --> 00:10:03.696 A:middle
+So let's pick one of the
+
+00:10:03.696 --> 00:10:04.966 A:middle
+triangles that looks wrong.
+
+00:10:04.966 --> 00:10:06.276 A:middle
+For example, this one.
+
+00:10:06.686 --> 00:10:08.596 A:middle
+And now, let's select the broken
+
+00:10:08.656 --> 00:10:10.576 A:middle
+vertex that is the one here at
+
+00:10:10.576 --> 00:10:11.126 A:middle
+the bottom.
+
+00:10:11.476 --> 00:10:13.686 A:middle
+You can easily do this, by using
+
+00:10:13.686 --> 00:10:14.456 A:middle
+this table here.
+
+00:10:14.456 --> 00:10:17.816 A:middle
+So now that we have found our
+
+00:10:17.816 --> 00:10:20.316 A:middle
+broken vertex, let's take the
+
+00:10:20.316 --> 00:10:21.346 A:middle
+input positions.
+
+00:10:21.636 --> 00:10:24.666 A:middle
+As we can see here, all of the
+
+00:10:24.666 --> 00:10:26.496 A:middle
+input positions are very similar
+
+00:10:26.496 --> 00:10:27.846 A:middle
+for all of the vertices of this
+
+00:10:27.906 --> 00:10:30.316 A:middle
+triangle, and in fact, the white
+
+00:10:30.316 --> 00:10:32.126 A:middle
+coordinate is exactly the same.
+
+00:10:32.546 --> 00:10:34.616 A:middle
+So this looks correct, and it
+
+00:10:34.616 --> 00:10:35.346 A:middle
+was inspected.
+
+00:10:35.766 --> 00:10:39.216 A:middle
+Seeing the input is correct, but
+
+00:10:39.216 --> 00:10:40.556 A:middle
+as we can see here, in the 3D
+
+00:10:40.556 --> 00:10:43.076 A:middle
+view, the output is wrong, then
+
+00:10:43.076 --> 00:10:44.566 A:middle
+the problem has been our vertex
+
+00:10:44.566 --> 00:10:44.946 A:middle
+shader.
+
+00:10:45.616 --> 00:10:46.686 A:middle
+So let's use the new Shader
+
+00:10:46.686 --> 00:10:48.176 A:middle
+Debugger to debug and fix this
+
+00:10:48.176 --> 00:10:51.016 A:middle
+issue, just by clicking on the
+
+00:10:51.016 --> 00:10:52.556 A:middle
+Debug button that you can find
+
+00:10:52.556 --> 00:10:54.046 A:middle
+here in the bottom right corner.
+
+00:10:54.556 --> 00:10:58.946 A:middle
+And just like that, we are now
+
+00:10:58.946 --> 00:10:59.896 A:middle
+in the Shader Debugger.
+

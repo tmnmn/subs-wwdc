@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.652 --> 00:12:03.357 align:start position:30% line:-2
+インターセクタで
+レイと物体の交差を判定
+
+00:12:03.924 --> 00:12:07.928 align:start position:32% line:-2
+最後に その結果から
+シェーディングを計算
+
+00:12:09.096 --> 00:12:10.998 align:start position:34% line:-2
+では まず
+インターセクタです
+
+00:12:12.499 --> 00:12:17.671 align:start position:12% line:-2
+MPSRayIntersectorクラスで
+交差判定を支援
+
+00:12:18.238 --> 00:12:23.377 align:start position:20% line:-2
+交差判定に使うMetalデバイスを
+提供するだけで作成できます
+
+00:12:25.279 --> 00:12:27.481 align:start position:30% line:-1
+次は加速構造の作成です
+
+00:12:28.882 --> 00:12:32.820 align:start position:0% line:-2
+MPSTriangleAccelerationStructure
+クラスで―
+
+00:12:32.986 --> 00:12:38.358 align:start position:18% line:-2
+インターセクタの時と同じ
+Metalデバイスを提供するだけです
+
+00:12:39.960 --> 00:12:43.630 align:start position:18% line:-2
+vertexBufferをアタッチし
+triangleCountを指定
+
+00:12:44.198 --> 00:12:47.367 align:start position:27% line:-1
+そして加速構造を構築します
+
+00:12:47.467 --> 00:12:53.006 align:start position:30% line:-2
+１回 作成しておけば
+何度でも再利用できます
+
+00:12:56.543 --> 00:13:00.280 align:start position:27% line:-2
+次はプライマリレイの生成と
+バッファ格納です
+

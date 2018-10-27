@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.273 --> 00:29:03.010 align:start position:11% line:-2
+複数のnoirFilter
+multiple filtersなどがあれば
+
+00:29:03.110 --> 00:29:06.246 align:start position:25% line:-2
+予想以上に
+調べられることは多いでしょう
+
+00:29:06.447 --> 00:29:10.083 align:start position:27% line:-2
+予測以上の
+インスタンスはないようです
+
+00:29:10.184 --> 00:29:12.252 align:start position:29% line:-1
+１つのサイズが大きいので
+
+00:29:12.352 --> 00:29:14.254 align:start position:29% line:-1
+念のため調べてみましょう
+
+00:29:14.354 --> 00:29:18.158 align:start position:29% line:-2
+メモリインスペクタを使い
+確認します
+
+00:29:18.258 --> 00:29:20.828 align:start position:29% line:-2
+オブジェクトの
+サイズがリスト化されます
+
+00:29:20.928 --> 00:29:23.831 align:start position:27% line:-1
+私のAppは32バイトです
+
+00:29:23.931 --> 00:29:26.133 align:start position:9% line:-1
+viewcontrollerのデータは1500
+
+00:29:26.233 --> 00:29:27.868 align:start position:38% line:-1
+よく見てみても
+
+00:29:28.469 --> 00:29:33.106 align:start position:25% line:-2
+ここにあるどのオブジェクトも
+Appが１ギガを超えている―
+
+00:29:33.240 --> 00:29:36.543 align:start position:27% line:-1
+原因ではなさそうに思えます
+
+00:29:37.010 --> 00:29:41.315 align:start position:23% line:-2
+これがXcodeで
+memgraphを扱う方法です
+
+00:29:41.415 --> 00:29:42.816 align:start position:32% line:-1
+次はどうしましょう？
+
+00:29:43.217 --> 00:29:47.120 align:start position:25% line:-1
+WWDCセッションで学んだ―
+
+00:29:47.221 --> 00:29:51.158 align:start position:23% line:-1
+コマンドラインツールを使います
+
+00:29:51.425 --> 00:29:54.828 align:start position:23% line:-1
+何か見つかるか試してみましょう
+
+00:29:55.329 --> 00:29:58.332 align:start position:30% line:-1
+ジェイムスのお薦めは―
+
+00:29:58.432 --> 00:30:01.969 align:start position:27% line:-2
+summary flagと
+vmmapを使うことでした
+

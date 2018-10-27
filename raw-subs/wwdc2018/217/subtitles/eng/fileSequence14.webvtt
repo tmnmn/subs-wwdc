@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.426 --> 00:14:00.426 A:middle
+us the gym situation.
+
+00:14:01.006 --> 00:14:04.186 A:middle
+So, now that we have all of this
+
+00:14:04.186 --> 00:14:05.736 A:middle
+API in our toolbox, let's build
+
+00:14:05.736 --> 00:14:06.846 A:middle
+a couple of relevant shortcuts.
+
+00:14:07.956 --> 00:14:09.336 A:middle
+In my examples we've got a
+
+00:14:09.336 --> 00:14:10.546 A:middle
+hypothetical meal logging
+
+00:14:10.546 --> 00:14:12.656 A:middle
+application that allows users to
+
+00:14:12.656 --> 00:14:13.726 A:middle
+log their meals, and they can
+
+00:14:13.726 --> 00:14:14.626 A:middle
+opt to do challenges.
+
+00:14:15.016 --> 00:14:16.186 A:middle
+This week's challenge, our users
+
+00:14:16.186 --> 00:14:17.676 A:middle
+opted into a veggie challenge.
+
+00:14:18.346 --> 00:14:19.636 A:middle
+So, we're going to create a user
+
+00:14:19.636 --> 00:14:22.336 A:middle
+activity for logging meals.
+
+00:14:22.556 --> 00:14:23.846 A:middle
+It's an activity type is
+
+00:14:23.846 --> 00:14:25.386 A:middle
+com.myapp.LogMeal.
+
+00:14:25.926 --> 00:14:26.596 A:middle
+And, because we're going to be
+
+00:14:26.596 --> 00:14:27.696 A:middle
+displaying this for the dinner
+
+00:14:27.806 --> 00:14:28.936 A:middle
+meal, we're going to set the
+
+00:14:28.936 --> 00:14:30.076 A:middle
+value for the meal key in our
+
+00:14:30.076 --> 00:14:31.656 A:middle
+user info dictionary to Dinner.
+
+00:14:32.986 --> 00:14:34.056 A:middle
+Once we have our userActivity
+
+00:14:34.056 --> 00:14:35.266 A:middle
+set up, we can create a
+
+00:14:35.266 --> 00:14:36.166 A:middle
+shortcut, and from that
+
+00:14:36.166 --> 00:14:36.976 A:middle
+shortcut, we can create a
+
+00:14:36.976 --> 00:14:37.676 A:middle
+relevantShortcut.
+
+00:14:38.716 --> 00:14:39.536 A:middle
+Now, we want to really let our
+
+00:14:39.536 --> 00:14:40.696 A:middle
+users know that this is showing
+
+00:14:40.696 --> 00:14:41.736 A:middle
+up on the watch face, because
+
+00:14:41.736 --> 00:14:42.916 A:middle
+they've opted into the veggie
+
+00:14:42.916 --> 00:14:43.406 A:middle
+challenge.
+
+00:14:43.896 --> 00:14:44.716 A:middle
+So, we're going to create a
+
+00:14:44.716 --> 00:14:45.606 A:middle
+default card template to
+
+00:14:45.606 --> 00:14:47.516 A:middle
+customize their UI with Log
+
+00:14:47.516 --> 00:14:48.316 A:middle
+Dinner as our title.
+
+00:14:48.796 --> 00:14:49.876 A:middle
+And, we're going to convey the
+
+00:14:49.876 --> 00:14:51.436 A:middle
+veggie challenge in our subtitle
+
+00:14:51.606 --> 00:14:52.396 A:middle
+and our custom image.
+
+00:14:52.986 --> 00:14:55.466 A:middle
+Now, our users haven't always
+
+00:14:55.466 --> 00:14:56.876 A:middle
+been necessarily logging their
+
+00:14:56.876 --> 00:14:58.076 A:middle
+dinners, but they've opted into
+
+00:14:58.076 --> 00:14:58.636 A:middle
+this challenge.
+
+00:14:58.896 --> 00:15:00.136 A:middle
+So, we want to give the system a
+

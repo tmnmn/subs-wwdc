@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.616 --> 00:21:00.746 A:middle
+and awoke an object of a class
+
+00:21:00.746 --> 00:21:01.546 A:middle
+that we didn't expect.
+
+00:21:02.896 --> 00:21:03.906 A:middle
+What kind of effect can this
+
+00:21:03.906 --> 00:21:05.826 A:middle
+have in our app?
+
+00:21:06.106 --> 00:21:07.326 A:middle
+Well, as we saw before, the
+
+00:21:07.326 --> 00:21:08.626 A:middle
+conditional downcast here,
+
+00:21:08.896 --> 00:21:10.006 A:middle
+prevents us from accidentally
+
+00:21:10.086 --> 00:21:11.216 A:middle
+using an object of this
+
+00:21:11.216 --> 00:21:12.246 A:middle
+unexpected class.
+
+00:21:12.696 --> 00:21:13.796 A:middle
+We're only going to work with
+
+00:21:13.796 --> 00:21:15.146 A:middle
+objects of the types that we did
+
+00:21:15.146 --> 00:21:15.566 A:middle
+expect.
+
+00:21:15.976 --> 00:21:17.636 A:middle
+The downcast fails, well we'll
+
+00:21:17.636 --> 00:21:17.936 A:middle
+fail.
+
+00:21:20.476 --> 00:21:22.516 A:middle
+But decoding one such object can
+
+00:21:22.516 --> 00:21:23.846 A:middle
+have a lasting impact in our
+
+00:21:24.136 --> 00:21:24.476 A:middle
+app.
+
+00:21:24.686 --> 00:21:27.036 A:middle
+Say that class has an alloc
+
+00:21:27.036 --> 00:21:28.306 A:middle
+method, which changes global
+
+00:21:28.306 --> 00:21:28.626 A:middle
+state.
+
+00:21:28.696 --> 00:21:30.146 A:middle
+Maybe it allocates a singleton
+
+00:21:30.146 --> 00:21:33.306 A:middle
+or changes some global data.
+
+00:21:33.476 --> 00:21:34.796 A:middle
+Even though we throw the object
+
+00:21:34.796 --> 00:21:36.346 A:middle
+away, if this fails, this can
+
+00:21:36.346 --> 00:21:37.686 A:middle
+have a lasting impact in our
+
+00:21:37.936 --> 00:21:38.006 A:middle
+app.
+
+00:21:38.006 --> 00:21:39.716 A:middle
+And can cause differing behavior
+
+00:21:39.846 --> 00:21:41.196 A:middle
+somewhere else and an archive
+
+00:21:41.196 --> 00:21:43.076 A:middle
+can be maliciously constructed
+
+00:21:43.076 --> 00:21:44.506 A:middle
+in this way to cause this to
+
+00:21:44.506 --> 00:21:45.416 A:middle
+happen in our apps.
+
+00:21:46.246 --> 00:21:47.806 A:middle
+So, how can we validate the data
+
+00:21:47.806 --> 00:21:48.796 A:middle
+to prevent this from happening?
+
+00:21:49.946 --> 00:21:51.196 A:middle
+This is exactly where the
+
+00:21:51.196 --> 00:21:52.416 A:middle
+NSSecureCoding protocol comes
+
+00:21:52.416 --> 00:21:52.516 A:middle
+in.
+
+00:21:53.886 --> 00:21:55.566 A:middle
+NSSecureCoding is a protocol
+
+00:21:55.966 --> 00:21:58.126 A:middle
+inheriting from NSCoding, whose
+
+00:21:58.126 --> 00:22:00.536 A:middle
+goal is to prevent exactly this
+

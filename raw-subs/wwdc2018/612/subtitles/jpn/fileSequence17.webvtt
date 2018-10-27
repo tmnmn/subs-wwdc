@@ -1,0 +1,46 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.652 --> 00:17:04.525 align:start position:21% line:-2
+GPUが正常に動作していないのが
+一目で分かります
+
+00:17:04.992 --> 00:17:10.897 align:start position:30% line:-2
+アイドル状態があって
+あまりよくありませんね
+
+00:17:12.232 --> 00:17:17.538 align:start position:27% line:-2
+CPUを見ると このように
+かなりのビジー状態で
+
+00:17:17.704 --> 00:17:21.141 align:start position:30% line:-1
+絶え間なく動いています
+
+00:17:22.443 --> 00:17:28.214 align:start position:14% line:-2
+しかし
+Time Profilerビューを見ると
+
+00:17:28.315 --> 00:17:30.651 align:start position:38% line:-1
+動いていません
+
+00:17:31.318 --> 00:17:36.323 align:start position:32% line:-2
+なぜスタッタリングが
+発生したのでしょう？
+
+00:17:36.957 --> 00:17:42.829 align:start position:20% line:-2
+Thread Statesビューに
+切り替えます
+
+00:17:43.397 --> 00:17:47.334 align:start position:21% line:-1
+そのためにはアイコンをクリックし
+
+00:17:47.768 --> 00:17:52.739 align:start position:18% line:-1
+Track Displayを開きます
+
+00:17:53.640 --> 00:17:56.043 align:start position:21% line:-1
+Thread Statesを選択
+
+00:17:57.678 --> 00:18:01.815 align:start position:27% line:-2
+何か問題が起きていることが
+分かります
+

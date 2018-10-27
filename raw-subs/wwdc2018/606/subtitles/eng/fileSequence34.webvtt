@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.566 --> 00:34:01.266 A:middle
+rays, secondary rays, and the
+
+00:34:01.266 --> 00:34:01.756 A:middle
+shadow rays.
+
+00:34:01.756 --> 00:34:02.766 A:middle
+They're all included in this
+
+00:34:02.766 --> 00:34:03.166 A:middle
+metric.
+
+00:34:03.646 --> 00:34:05.396 A:middle
+So, you can see, we're getting
+
+00:34:05.396 --> 00:34:06.796 A:middle
+about 30 million rays per
+
+00:34:06.796 --> 00:34:07.226 A:middle
+second.
+
+00:34:07.376 --> 00:34:09.126 A:middle
+And it'd be nice if we were
+
+00:34:09.126 --> 00:34:10.456 A:middle
+going a little faster.
+
+00:34:10.505 --> 00:34:12.016 A:middle
+So, I'm going to enable one of
+
+00:34:12.016 --> 00:34:13.606 A:middle
+the eGPUs that I have connected,
+
+00:34:13.606 --> 00:34:13.755 A:middle
+here.
+
+00:34:13.886 --> 00:34:18.056 A:middle
+So, you can see from the text
+
+00:34:18.056 --> 00:34:19.206 A:middle
+there, we're now running on an
+
+00:34:19.206 --> 00:34:21.266 A:middle
+RX 580, as well as the internal
+
+00:34:21.266 --> 00:34:21.926 A:middle
+GPU, here.
+
+00:34:22.646 --> 00:34:24.045 A:middle
+And performance has doubled to
+
+00:34:24.045 --> 00:34:25.416 A:middle
+about 60 million rays per
+
+00:34:25.416 --> 00:34:25.806 A:middle
+second.
+
+00:34:26.846 --> 00:34:27.916 A:middle
+And you can also see the green
+
+00:34:27.916 --> 00:34:29.005 A:middle
+lines here that we're using to
+
+00:34:29.005 --> 00:34:30.366 A:middle
+help visualize how the load is
+
+00:34:30.366 --> 00:34:31.576 A:middle
+split between GPUs.
+
+00:34:32.196 --> 00:34:33.795 A:middle
+So, one GPU is rendering
+
+00:34:33.795 --> 00:34:34.886 A:middle
+everything above the line.
+
+00:34:35.176 --> 00:34:36.476 A:middle
+And one GPU is rendering
+
+00:34:36.476 --> 00:34:37.085 A:middle
+everything below.
+
+00:34:37.545 --> 00:34:39.996 A:middle
+So, with the eGPU we're now
+
+00:34:39.996 --> 00:34:41.585 A:middle
+going about twice as fast as we
+
+00:34:41.585 --> 00:34:42.156 A:middle
+were before.
+
+00:34:42.755 --> 00:34:44.906 A:middle
+I was kind of hoping for a bit
+
+00:34:44.906 --> 00:34:45.275 A:middle
+more, there.
+
+00:34:45.826 --> 00:34:47.835 A:middle
+And so, the problem is the eGPU
+
+00:34:47.835 --> 00:34:49.326 A:middle
+is sitting there waiting.
+
+00:34:50.136 --> 00:34:51.016 A:middle
+And that's because we're using
+
+00:34:51.016 --> 00:34:52.045 A:middle
+these fixed partitions.
+
+00:34:52.906 --> 00:34:54.545 A:middle
+So, if we switch on the adaptive
+
+00:34:54.545 --> 00:34:56.286 A:middle
+load balancing, here, you see
+
+00:34:56.366 --> 00:34:58.226 A:middle
+the RX 580 just grabs a big
+
+00:34:58.226 --> 00:34:59.096 A:middle
+chunk of the work, now.
+
+00:34:59.256 --> 00:35:00.676 A:middle
+And we're going much faster than
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.936 --> 00:06:01.046 A:middle
+you'll be able to play back full
+
+00:06:01.046 --> 00:06:02.856 A:middle
+songs from Apple Music in the
+
+00:06:02.856 --> 00:06:03.246 A:middle
+browser.
+
+00:06:04.076 --> 00:06:05.536 A:middle
+It works on all modern browsers
+
+00:06:05.536 --> 00:06:06.746 A:middle
+without the need for any plug
+
+00:06:06.746 --> 00:06:08.646 A:middle
+ins or external dependencies.
+
+00:06:09.436 --> 00:06:11.156 A:middle
+You can use it on its own or
+
+00:06:11.216 --> 00:06:12.626 A:middle
+with any JavaScript framework of
+
+00:06:12.626 --> 00:06:13.066 A:middle
+your choice.
+
+00:06:14.796 --> 00:06:15.976 A:middle
+So for playback, we need to
+
+00:06:15.976 --> 00:06:16.856 A:middle
+authorize the user.
+
+00:06:18.046 --> 00:06:19.426 A:middle
+We'll handle that for you to
+
+00:06:19.426 --> 00:06:20.606 A:middle
+ensure that the user is an Apple
+
+00:06:20.606 --> 00:06:21.376 A:middle
+Music subscriber.
+
+00:06:21.916 --> 00:06:24.066 A:middle
+The JavaScript library is going
+
+00:06:24.066 --> 00:06:25.326 A:middle
+to keep a queue of songs so you
+
+00:06:25.326 --> 00:06:26.756 A:middle
+can play back a full album or a
+
+00:06:26.756 --> 00:06:27.336 A:middle
+whole playlist.
+
+00:06:27.446 --> 00:06:31.536 A:middle
+Once you have that queue of
+
+00:06:31.536 --> 00:06:32.486 A:middle
+songs, you'll be able to
+
+00:06:32.486 --> 00:06:32.866 A:middle
+control.
+
+00:06:33.006 --> 00:06:34.466 A:middle
+You'll be able to play, pause,
+
+00:06:34.466 --> 00:06:36.256 A:middle
+and skip to the previous or skip
+
+00:06:36.256 --> 00:06:37.466 A:middle
+to the next track.
+
+00:06:38.676 --> 00:06:39.736 A:middle
+And we're also going to keep
+
+00:06:39.736 --> 00:06:40.786 A:middle
+track of the Now Playing
+
+00:06:40.786 --> 00:06:42.606 A:middle
+metadata for the song that's
+
+00:06:42.606 --> 00:06:43.916 A:middle
+currently playing or currently
+
+00:06:43.916 --> 00:06:45.446 A:middle
+loading so you can render your
+
+00:06:45.446 --> 00:06:47.126 A:middle
+UI off of it.
+
+00:06:48.596 --> 00:06:49.836 A:middle
+So let's talk about how we would
+
+00:06:49.836 --> 00:06:50.896 A:middle
+build a simple player for the
+
+00:06:50.896 --> 00:06:51.146 A:middle
+web.
+
+00:06:51.576 --> 00:06:53.066 A:middle
+We're going to include the
+
+00:06:53.066 --> 00:06:54.566 A:middle
+JavaScript library.
+
+00:06:56.676 --> 00:06:57.876 A:middle
+Then, you need to provide your
+
+00:06:57.876 --> 00:06:58.686 A:middle
+developer token.
+
+00:06:58.936 --> 00:07:00.296 A:middle
+You can generate this using your
+

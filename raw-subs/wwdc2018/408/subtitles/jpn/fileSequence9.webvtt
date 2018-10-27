@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.405 --> 00:09:00.674 align:start position:32% line:-1
+全体を取得しています
+
+00:09:01.141 --> 00:09:05.879 align:start position:27% line:-2
+ゲームは３つのターゲットに
+依存しています
+
+00:09:05.979 --> 00:09:07.247 align:start position:34% line:-1
+これはいいでしょう
+
+00:09:08.415 --> 00:09:13.253 align:start position:25% line:-2
+怪しいのはシェーダと
+Utilitiesの関係です
+
+00:09:13.687 --> 00:09:16.490 align:start position:27% line:-2
+シェーダはメタライブラリを
+生成します
+
+00:09:16.590 --> 00:09:20.527 align:start position:32% line:-2
+これはGPUコードを
+まとめたものです
+
+00:09:21.328 --> 00:09:25.799 align:start position:16% line:-2
+Utilitiesが生成するフレームは
+CPUコードです
+
+00:09:25.899 --> 00:09:29.303 align:start position:29% line:-2
+ですから この依存関係は
+疑問です
+
+00:09:29.469 --> 00:09:34.074 align:start position:29% line:-2
+Utilitiesの中に
+ビルドフェーズがあります
+
+00:09:34.174 --> 00:09:37.878 align:start position:29% line:-2
+これは両ターゲットが使う
+情報を生成します
+
+00:09:37.978 --> 00:09:43.050 align:start position:25% line:-2
+しかし Utilitiesの
+その他の部分は不要です
+
+00:09:43.250 --> 00:09:47.688 align:start position:29% line:-2
+ですから 別ターゲットに
+分割しましょう
+
+00:09:48.555 --> 00:09:50.724 align:start position:36% line:-1
+この少しの変更が
+
+00:09:50.824 --> 00:09:54.995 align:start position:30% line:-2
+全体のタイムラインに
+大きな影響を及ぼします
+
+00:09:57.097 --> 00:10:00.067 align:start position:27% line:-1
+緑色が新たなターゲットです
+

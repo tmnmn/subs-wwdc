@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.396 --> 00:02:01.006 A:middle
+rendering as an example of how
+
+00:02:01.006 --> 00:02:02.266 A:middle
+you can use Ray Tracing in your
+
+00:02:02.266 --> 00:02:02.956 A:middle
+applications.
+
+00:02:04.476 --> 00:02:06.206 A:middle
+So, you may be familiar with the
+
+00:02:06.206 --> 00:02:07.496 A:middle
+rasterization pipeline.
+
+00:02:08.216 --> 00:02:09.895 A:middle
+The rasterizer works by
+
+00:02:09.895 --> 00:02:11.216 A:middle
+projecting one triangle at a
+
+00:02:11.216 --> 00:02:13.686 A:middle
+time onto the screen and shading
+
+00:02:13.686 --> 00:02:14.796 A:middle
+the corresponding pixels.
+
+00:02:15.726 --> 00:02:16.876 A:middle
+This can be implemented very
+
+00:02:16.876 --> 00:02:19.066 A:middle
+quickly in GPU hardware, which
+
+00:02:19.066 --> 00:02:20.296 A:middle
+makes this the method of choice
+
+00:02:20.296 --> 00:02:21.756 A:middle
+for games and other real time
+
+00:02:21.756 --> 00:02:22.446 A:middle
+applications.
+
+00:02:23.476 --> 00:02:25.626 A:middle
+But the rasterization model
+
+00:02:25.996 --> 00:02:27.356 A:middle
+makes it difficult to simulate
+
+00:02:27.356 --> 00:02:28.646 A:middle
+certain physical behaviors of
+
+00:02:28.646 --> 00:02:28.946 A:middle
+light.
+
+00:02:30.746 --> 00:02:32.176 A:middle
+One example is reflections.
+
+00:02:33.076 --> 00:02:34.806 A:middle
+With the rasterizer, reflections
+
+00:02:34.806 --> 00:02:35.886 A:middle
+are, typically, implemented
+
+00:02:35.946 --> 00:02:37.566 A:middle
+using approximations, such as
+
+00:02:37.566 --> 00:02:38.956 A:middle
+cube maps and screen space
+
+00:02:38.956 --> 00:02:39.536 A:middle
+reflections.
+
+00:02:40.136 --> 00:02:41.956 A:middle
+But with the Ray Tracer we can
+
+00:02:41.956 --> 00:02:43.636 A:middle
+compute accurate reflections,
+
+00:02:43.636 --> 00:02:44.176 A:middle
+directly.
+
+00:02:45.926 --> 00:02:47.316 A:middle
+Another example is shadows.
+
+00:02:48.186 --> 00:02:49.816 A:middle
+With the rasterizer, shadows are
+
+00:02:49.816 --> 00:02:51.046 A:middle
+typically implemented using
+
+00:02:51.046 --> 00:02:51.826 A:middle
+shadow maps.
+
+00:02:52.516 --> 00:02:53.456 A:middle
+But these can be tricky to
+
+00:02:53.456 --> 00:02:55.066 A:middle
+implement without suffering from
+
+00:02:55.066 --> 00:02:56.786 A:middle
+aliasing and resolution issues.
+
+00:02:57.756 --> 00:02:59.746 A:middle
+Furthermore, soft shadow mapping
+
+00:02:59.746 --> 00:03:00.956 A:middle
+techniques tend to produce
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.296 --> 00:26:00.106 A:middle
+don't have to do any additional
+
+00:26:00.106 --> 00:26:00.706 A:middle
+conversion.
+
+00:26:01.276 --> 00:26:03.246 A:middle
+The built-in introspection of
+
+00:26:03.246 --> 00:26:04.356 A:middle
+the types can allow you to print
+
+00:26:04.356 --> 00:26:04.916 A:middle
+them directly.
+
+00:26:05.226 --> 00:26:06.396 A:middle
+So in Swift 4.2, you just
+
+00:26:06.396 --> 00:26:07.486 A:middle
+actually pass these types
+
+00:26:07.486 --> 00:26:08.726 A:middle
+directly to your print functions
+
+00:26:09.146 --> 00:26:10.416 A:middle
+if you want to print them out
+
+00:26:10.446 --> 00:26:12.056 A:middle
+for debug purposes or log them.
+
+00:26:12.916 --> 00:26:14.186 A:middle
+And then finally, you may
+
+00:26:14.186 --> 00:26:15.786 A:middle
+already have some existing code
+
+00:26:15.786 --> 00:26:17.196 A:middle
+that was using the behavior of
+
+00:26:17.196 --> 00:26:18.826 A:middle
+the old string conversion
+
+00:26:18.826 --> 00:26:20.986 A:middle
+functions and need a compatible
+
+00:26:20.986 --> 00:26:22.766 A:middle
+functionality going forward.
+
+00:26:23.366 --> 00:26:24.346 A:middle
+And so for that we've actually
+
+00:26:24.346 --> 00:26:25.476 A:middle
+just renamed all of these and
+
+00:26:25.476 --> 00:26:27.326 A:middle
+moved them to be properties on
+
+00:26:27.496 --> 00:26:28.126 A:middle
+NSCoder.
+
+00:26:28.526 --> 00:26:29.826 A:middle
+This really helps to emphasize
+
+00:26:29.826 --> 00:26:30.926 A:middle
+the fact that the intent of
+
+00:26:30.926 --> 00:26:32.516 A:middle
+these methods was to be used for
+
+00:26:32.516 --> 00:26:34.276 A:middle
+encoding and decoding, so it's a
+
+00:26:34.276 --> 00:26:35.476 A:middle
+pretty natural fit for them to
+
+00:26:35.476 --> 00:26:36.066 A:middle
+go over there.
+
+00:26:37.966 --> 00:26:39.476 A:middle
+So these are just a few of the
+
+00:26:39.476 --> 00:26:40.666 A:middle
+consistency improvements that
+
+00:26:40.666 --> 00:26:43.106 A:middle
+you'll find across the iOS 12
+
+00:26:43.806 --> 00:26:46.946 A:middle
+SDK for Swift 4.2 but you'll
+
+00:26:46.946 --> 00:26:48.056 A:middle
+find many more as well.
+
+00:26:49.476 --> 00:26:51.176 A:middle
+Now speaking of encoding and
+
+00:26:51.176 --> 00:26:54.246 A:middle
+decoding, NS Secure Coding, in
+
+00:26:55.096 --> 00:26:57.566 A:middle
+iOS 12 there are now new secure
+
+00:26:57.566 --> 00:26:59.456 A:middle
+by default encoding and decoding
+
+00:26:59.456 --> 00:26:59.856 A:middle
+APIs.
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.706 --> 00:29:00.056 A:middle
+release at this point in the
+
+00:29:00.056 --> 00:29:01.656 A:middle
+code has already been
+
+00:29:01.656 --> 00:29:03.606 A:middle
+deallocated, that's the memory
+
+00:29:03.606 --> 00:29:04.486 A:middle
+error that occurred.
+
+00:29:06.226 --> 00:29:08.006 A:middle
+So that's additional detail of
+
+00:29:08.186 --> 00:29:09.496 A:middle
+what our story is.
+
+00:29:09.546 --> 00:29:10.476 A:middle
+We have our object being
+
+00:29:10.476 --> 00:29:12.336 A:middle
+deallocated, we're cleaning up
+
+00:29:12.336 --> 00:29:14.916 A:middle
+its ivars, one of those ivars
+
+00:29:15.386 --> 00:29:17.116 A:middle
+was already a freed object and
+
+00:29:17.116 --> 00:29:18.266 A:middle
+that's what caused our crash.
+
+00:29:19.506 --> 00:29:20.566 A:middle
+Can we do better?
+
+00:29:20.566 --> 00:29:23.736 A:middle
+Can we figure out which object
+
+00:29:23.736 --> 00:29:25.876 A:middle
+was being released by objc
+
+00:29:25.876 --> 00:29:26.566 A:middle
+release?
+
+00:29:27.636 --> 00:29:29.806 A:middle
+Ordinarily, the function calling
+
+00:29:29.806 --> 00:29:31.276 A:middle
+objc release would give us a
+
+00:29:31.326 --> 00:29:32.926 A:middle
+clue as to what that was.
+
+00:29:33.516 --> 00:29:35.166 A:middle
+But the problem with the ivar
+
+00:29:35.166 --> 00:29:37.186 A:middle
+destroyer function is it is a
+
+00:29:37.186 --> 00:29:39.306 A:middle
+compiler generated function.
+
+00:29:39.876 --> 00:29:41.016 A:middle
+We didn't write a function
+
+00:29:41.016 --> 00:29:42.826 A:middle
+called ivar destroyer, which
+
+00:29:42.826 --> 00:29:44.476 A:middle
+means there's no filename or
+
+00:29:44.476 --> 00:29:46.816 A:middle
+line number associated with this
+
+00:29:46.816 --> 00:29:48.006 A:middle
+point in the crash, we don't
+
+00:29:48.006 --> 00:29:50.436 A:middle
+know which of our properties was
+
+00:29:50.436 --> 00:29:52.346 A:middle
+being deallocated at that point.
+
+00:29:53.326 --> 00:29:55.156 A:middle
+Here's our class, we have three
+
+00:29:55.156 --> 00:29:56.696 A:middle
+properties in this class, we
+
+00:29:56.696 --> 00:29:58.916 A:middle
+have a username, a database, and
+
+00:29:58.916 --> 00:29:59.976 A:middle
+an array of views.
+

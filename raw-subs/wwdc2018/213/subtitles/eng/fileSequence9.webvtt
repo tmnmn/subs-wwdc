@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.506 --> 00:09:00.916 A:middle
+NowPlayingInfoCenter to let
+
+00:09:01.186 --> 00:09:02.756 A:middle
+MPNowPlayingInfoCenter know that
+
+00:09:02.756 --> 00:09:03.886 A:middle
+my app will be providing
+
+00:09:03.886 --> 00:09:05.386 A:middle
+NowPlaying metadata when it
+
+00:09:05.386 --> 00:09:06.386 A:middle
+becomes a Now Playing app.
+
+00:09:07.826 --> 00:09:09.506 A:middle
+And finally, I've responded to
+
+00:09:09.596 --> 00:09:10.916 A:middle
+MPRemoteCommandCenter events.
+
+00:09:10.956 --> 00:09:12.046 A:middle
+Specifically, just a Play
+
+00:09:12.046 --> 00:09:13.716 A:middle
+command in this case, so that
+
+00:09:14.096 --> 00:09:15.576 A:middle
+when Srirocka becomes the Now
+
+00:09:15.576 --> 00:09:16.856 A:middle
+Playing app it can respond to
+
+00:09:16.856 --> 00:09:17.476 A:middle
+these events.
+
+00:09:18.656 --> 00:09:21.216 A:middle
+So, we can see here that the one
+
+00:09:21.216 --> 00:09:23.256 A:middle
+API that was needed for CarPlay
+
+00:09:23.256 --> 00:09:24.426 A:middle
+is MPPlayableContent.
+
+00:09:24.906 --> 00:09:27.006 A:middle
+And for iOS 12, we took a good
+
+00:09:27.006 --> 00:09:28.316 A:middle
+look at how to better optimize
+
+00:09:28.316 --> 00:09:30.116 A:middle
+this and we can safely say, for
+
+00:09:30.116 --> 00:09:32.006 A:middle
+iOS 12, we've remastered
+
+00:09:32.006 --> 00:09:32.826 A:middle
+MPPlayableContent.
+
+00:09:34.516 --> 00:09:38.500 A:middle
+[ Applause ]
+
+00:09:39.156 --> 00:09:40.836 A:middle
+We took a deep dive into
+
+00:09:40.866 --> 00:09:42.566 A:middle
+MPPlayableContent and we pushed
+
+00:09:42.566 --> 00:09:43.866 A:middle
+for performance improvements in
+
+00:09:43.866 --> 00:09:45.396 A:middle
+how the data source and delegate
+
+00:09:45.396 --> 00:09:46.206 A:middle
+calls are made.
+
+00:09:47.066 --> 00:09:48.516 A:middle
+Without changing your current
+
+00:09:48.516 --> 00:09:49.726 A:middle
+audio app's implementation in
+
+00:09:49.726 --> 00:09:51.686 A:middle
+CarPlay, we sped up the startup
+
+00:09:51.686 --> 00:09:53.006 A:middle
+sequence and provided much
+
+00:09:53.006 --> 00:09:54.336 A:middle
+smoother animations whenever
+
+00:09:54.336 --> 00:09:55.546 A:middle
+content is changed on the
+
+00:09:55.546 --> 00:09:56.246 A:middle
+CarPlay display.
+
+00:09:57.326 --> 00:09:58.746 A:middle
+We've also provided much better
+
+00:09:58.746 --> 00:10:00.606 A:middle
+communication to your app to
+

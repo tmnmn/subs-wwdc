@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.727 --> 00:36:01.428 align:start position:32% line:-1
+データのリロードは？
+
+00:36:01.528 --> 00:36:04.798 align:start position:30% line:-2
+モハメドが言ったように
+リロードは
+
+00:36:04.898 --> 00:36:06.733 align:start position:30% line:-1
+ボタン１つで終わります
+
+00:36:07.234 --> 00:36:09.737 align:start position:25% line:-1
+しかしアニメーションが出せず
+
+00:36:09.837 --> 00:36:12.306 align:start position:30% line:-1
+荒っぽいアプローチです
+
+00:36:12.406 --> 00:36:16.477 align:start position:23% line:-1
+アニメーションを提供したいので
+
+00:36:16.577 --> 00:36:19.880 align:start position:23% line:-1
+これは特別な時にしか使いません
+
+00:36:20.214 --> 00:36:23.116 align:start position:27% line:-1
+モハメド コードを修正して
+
+00:36:23.217 --> 00:36:27.521 align:start position:25% line:-2
+更新アニメーションを出せるか
+試してみよう
+
+00:36:27.621 --> 00:36:29.356 align:start position:36% line:-1
+名誉挽回の時間だ
+
+00:36:29.890 --> 00:36:34.995 align:start position:25% line:-2
+スティーブが説明した
+修正ガイドラインを使用します
+
+00:36:35.095 --> 00:36:37.965 align:start position:29% line:-1
+まず古い実装を削除します
+
+00:36:38.966 --> 00:36:44.738 align:start position:30% line:-2
+更新はリロード 削除
+移動から成っていました
+
+00:36:44.838 --> 00:36:50.310 align:start position:20% line:-2
+そしてリロードと移動は
+同じindexPathを使いました
+
+00:36:50.410 --> 00:36:52.613 align:start position:34% line:-1
+そこが矛盾点でした
+
+00:36:52.713 --> 00:36:55.782 align:start position:25% line:-1
+まず この２つを切り離します
+
+00:36:55.883 --> 00:37:00.921 align:start position:7% line:-2
+リロードを
+performBatchUpdatesに移します
+

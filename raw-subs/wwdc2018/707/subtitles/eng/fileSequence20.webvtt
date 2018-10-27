@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.586 --> 00:20:00.156 A:middle
+in the workout.
+
+00:20:00.706 --> 00:20:02.586 A:middle
+Of course, my user will have the
+
+00:20:02.586 --> 00:20:04.686 A:middle
+option to control the state of
+
+00:20:04.686 --> 00:20:06.526 A:middle
+the workout, so my user can
+
+00:20:06.596 --> 00:20:08.666 A:middle
+pause, resume, and end the
+
+00:20:08.666 --> 00:20:09.036 A:middle
+workout.
+
+00:20:11.716 --> 00:20:14.326 A:middle
+So I already went ahead and
+
+00:20:14.326 --> 00:20:16.066 A:middle
+implemented the user interface.
+
+00:20:16.446 --> 00:20:18.626 A:middle
+So all that's left for me now is
+
+00:20:18.656 --> 00:20:20.646 A:middle
+to use the new workout API and
+
+00:20:20.986 --> 00:20:22.366 A:middle
+make my app functional.
+
+00:20:22.916 --> 00:20:25.706 A:middle
+And the first thing that we need
+
+00:20:25.706 --> 00:20:27.796 A:middle
+to do here is make sure that the
+
+00:20:27.866 --> 00:20:29.596 A:middle
+project is properly set up.
+
+00:20:30.486 --> 00:20:31.786 A:middle
+And so to do that, I'm going to
+
+00:20:31.786 --> 00:20:32.886 A:middle
+head over to my Project
+
+00:20:32.886 --> 00:20:35.596 A:middle
+Settings, go to the Capabilities
+
+00:20:35.596 --> 00:20:37.916 A:middle
+tab, and here just make sure
+
+00:20:37.916 --> 00:20:40.376 A:middle
+that the HealthKit Capability is
+
+00:20:40.416 --> 00:20:40.906 A:middle
+turned on.
+
+00:20:42.126 --> 00:20:43.716 A:middle
+And you should also do the same
+
+00:20:44.006 --> 00:20:46.026 A:middle
+for your WatchKit app extension.
+
+00:20:46.336 --> 00:20:48.236 A:middle
+So again, make sure that the
+
+00:20:48.236 --> 00:20:50.196 A:middle
+HealthKit Capability is turned
+
+00:20:50.196 --> 00:20:50.366 A:middle
+on.
+
+00:20:51.356 --> 00:20:53.646 A:middle
+Once I did that, we should also
+
+00:20:53.646 --> 00:20:56.566 A:middle
+add the 2 purpose strings in the
+
+00:20:56.566 --> 00:20:59.246 A:middle
+info.plist file that will tell
+
+00:20:59.246 --> 00:21:01.966 A:middle
+my users why I need access to
+

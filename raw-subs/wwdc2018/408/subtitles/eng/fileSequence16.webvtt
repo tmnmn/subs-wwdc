@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.916 --> 00:16:01.016 A:middle
+So, cycles are bad for a couple
+
+00:16:01.746 --> 00:16:02.636 A:middle
+of reasons.
+
+00:16:02.716 --> 00:16:04.516 A:middle
+One, they represent a
+
+00:16:04.516 --> 00:16:05.956 A:middle
+configuration issue within your
+
+00:16:05.956 --> 00:16:06.386 A:middle
+project.
+
+00:16:07.306 --> 00:16:08.846 A:middle
+And two, they can be the source
+
+00:16:08.846 --> 00:16:10.176 A:middle
+of spurious rebuilds within your
+
+00:16:10.176 --> 00:16:10.676 A:middle
+project.
+
+00:16:11.126 --> 00:16:12.346 A:middle
+Or of getting out-of-date
+
+00:16:12.346 --> 00:16:13.346 A:middle
+information in your build
+
+00:16:13.386 --> 00:16:13.956 A:middle
+process.
+
+00:16:15.176 --> 00:16:17.236 A:middle
+So we also have updated health
+
+00:16:17.286 --> 00:16:19.156 A:middle
+topics on dependency cycles,
+
+00:16:20.026 --> 00:16:22.356 A:middle
+including some specific sections
+
+00:16:22.356 --> 00:16:26.086 A:middle
+that we call out of the most
+
+00:16:26.086 --> 00:16:28.236 A:middle
+likely dependency cycles that
+
+00:16:28.236 --> 00:16:29.626 A:middle
+you run into, and ways that you
+
+00:16:29.626 --> 00:16:30.276 A:middle
+can fix those.
+
+00:16:30.796 --> 00:16:34.636 A:middle
+So, the last thing I want to
+
+00:16:34.636 --> 00:16:35.966 A:middle
+talk to you about today, is
+
+00:16:35.966 --> 00:16:37.256 A:middle
+measuring your build time.
+
+00:16:37.516 --> 00:16:39.406 A:middle
+We have two new pieces of
+
+00:16:39.406 --> 00:16:40.666 A:middle
+functionality in Xcode 10 for
+
+00:16:40.666 --> 00:16:40.976 A:middle
+this.
+
+00:16:42.436 --> 00:16:45.026 A:middle
+The first is we have introduced
+
+00:16:45.126 --> 00:16:47.016 A:middle
+in-line task times to give you
+
+00:16:47.016 --> 00:16:48.226 A:middle
+the duration that each of your
+
+00:16:48.226 --> 00:16:49.586 A:middle
+tasks has taken to run.
+
+00:16:49.586 --> 00:16:52.796 A:middle
+Now, I want to point out
+
+00:16:52.796 --> 00:16:54.156 A:middle
+something about your build logs.
+
+00:16:54.586 --> 00:16:55.886 A:middle
+There's a filter bar across the
+
+00:16:55.886 --> 00:16:56.236 A:middle
+top.
+
+00:16:57.166 --> 00:16:58.956 A:middle
+And specifically, the All the
+
+00:16:58.956 --> 00:17:00.866 A:middle
+Recent filters.
+

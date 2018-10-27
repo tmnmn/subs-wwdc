@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.946 --> 00:34:01.206 A:middle
+batch update starts, your data
+
+00:34:01.206 --> 00:34:02.786 A:middle
+source is in a before state.
+
+00:34:04.046 --> 00:34:05.466 A:middle
+Now once everything is done in
+
+00:34:05.466 --> 00:34:07.156 A:middle
+the batch updates, you'll be an
+
+00:34:07.276 --> 00:34:08.025 A:middle
+after state.
+
+00:34:08.606 --> 00:34:10.906 A:middle
+Okay. So for delete, the index
+
+00:34:10.966 --> 00:34:12.346 A:middle
+paths always referred to the
+
+00:34:12.346 --> 00:34:13.275 A:middle
+before stage.
+
+00:34:13.686 --> 00:34:15.326 A:middle
+So that's delete.
+
+00:34:15.326 --> 00:34:18.226 A:middle
+So insert is processed in
+
+00:34:18.335 --> 00:34:19.886 A:middle
+ascending index path order
+
+00:34:19.886 --> 00:34:20.255 A:middle
+paths.
+
+00:34:20.846 --> 00:34:23.346 A:middle
+So the index paths refer to in
+
+00:34:23.346 --> 00:34:25.376 A:middle
+the insert are always referring
+
+00:34:25.446 --> 00:34:27.116 A:middle
+to the final state or the after
+
+00:34:27.255 --> 00:34:28.206 A:middle
+updates stage.
+
+00:34:29.636 --> 00:34:30.946 A:middle
+Okay, a move is this mixture of
+
+00:34:30.946 --> 00:34:31.436 A:middle
+the two, right.
+
+00:34:31.436 --> 00:34:33.485 A:middle
+You have a from and a to index
+
+00:34:33.485 --> 00:34:35.235 A:middle
+path, and the from is in the
+
+00:34:35.235 --> 00:34:37.916 A:middle
+before state, right, and the to
+
+00:34:38.416 --> 00:34:39.366 A:middle
+is in the after state.
+
+00:34:39.806 --> 00:34:42.545 A:middle
+Reload. Now reload is a little
+
+00:34:42.545 --> 00:34:43.846 A:middle
+bit of a super command if you
+
+00:34:43.846 --> 00:34:44.186 A:middle
+will, right.
+
+00:34:44.186 --> 00:34:46.096 A:middle
+It actually decomposes down into
+
+00:34:46.096 --> 00:34:47.876 A:middle
+a delete and an insert.
+
+00:34:48.416 --> 00:34:51.266 A:middle
+And the index path specified in
+
+00:34:51.266 --> 00:34:54.045 A:middle
+a reload is speaking about the
+
+00:34:54.045 --> 00:34:55.016 A:middle
+before state.
+
+00:34:56.126 --> 00:34:57.776 A:middle
+Okay. So this insight now that
+
+00:34:57.776 --> 00:34:59.106 A:middle
+we understand what reload is
+
+00:34:59.106 --> 00:35:00.946 A:middle
+really doing can kind of tell us
+

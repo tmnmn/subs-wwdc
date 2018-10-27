@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.306 --> 00:34:01.416 A:middle
+And the reason for that is that
+
+00:34:01.416 --> 00:34:02.256 A:middle
+we're actually bridging our
+
+00:34:02.256 --> 00:34:03.766 A:middle
+string multiple times across
+
+00:34:03.766 --> 00:34:04.306 A:middle
+languages.
+
+00:34:04.576 --> 00:34:05.976 A:middle
+Mutable attributed string is an
+
+00:34:05.976 --> 00:34:08.295 A:middle
+objective-C reference type, and
+
+00:34:08.295 --> 00:34:09.766 A:middle
+so when we're asking for the
+
+00:34:09.766 --> 00:34:10.826 A:middle
+string property, we're actually
+
+00:34:10.826 --> 00:34:11.646 A:middle
+having to convert from an
+
+00:34:11.646 --> 00:34:12.366 A:middle
+NSString to a string.
+
+00:34:12.585 --> 00:34:15.326 A:middle
+And we're doing it once here
+
+00:34:15.326 --> 00:34:16.335 A:middle
+when we calculated the first
+
+00:34:16.335 --> 00:34:17.505 A:middle
+range, and we're doing it a
+
+00:34:17.505 --> 00:34:18.466 A:middle
+second time when we convert for
+
+00:34:18.466 --> 00:34:19.166 A:middle
+the NSRange.
+
+00:34:19.516 --> 00:34:21.726 A:middle
+You can imagine how expensive
+
+00:34:21.766 --> 00:34:22.996 A:middle
+this would be if we did this in
+
+00:34:22.996 --> 00:34:24.505 A:middle
+a loop looking for all the text
+
+00:34:24.505 --> 00:34:24.886 A:middle
+to color.
+
+00:34:24.886 --> 00:34:26.556 A:middle
+Now let's look into why this is
+
+00:34:26.556 --> 00:34:26.946 A:middle
+happening.
+
+00:34:27.556 --> 00:34:28.876 A:middle
+Every time I call text.string,
+
+00:34:29.206 --> 00:34:30.545 A:middle
+we start in a Swift execution
+
+00:34:30.585 --> 00:34:31.106 A:middle
+context.
+
+00:34:31.795 --> 00:34:33.025 A:middle
+However, the implementation of
+
+00:34:33.025 --> 00:34:34.056 A:middle
+NSMutableAttributedString is
+
+00:34:34.056 --> 00:34:35.496 A:middle
+objective-C, and so in order to
+
+00:34:35.496 --> 00:34:37.076 A:middle
+provide the result, we actually
+
+00:34:37.076 --> 00:34:38.466 A:middle
+have to consult the original
+
+00:34:38.466 --> 00:34:39.085 A:middle
+implementation.
+
+00:34:40.436 --> 00:34:41.716 A:middle
+The original implementation
+
+00:34:41.716 --> 00:34:43.596 A:middle
+returns an NSString, which is
+
+00:34:43.596 --> 00:34:44.856 A:middle
+the reference type, and so when
+
+00:34:44.856 --> 00:34:46.606 A:middle
+return to string, it needs to be
+
+00:34:47.565 --> 00:34:48.996 A:middle
+bridged, graphing cluster by
+
+00:34:48.996 --> 00:34:51.295 A:middle
+graphing cluster, character by
+
+00:34:51.295 --> 00:34:51.775 A:middle
+character.
+
+00:34:51.775 --> 00:34:55.085 A:middle
+And bridging happens whether
+
+00:34:55.646 --> 00:34:57.596 A:middle
+it's a return type or a
+
+00:34:57.596 --> 00:34:58.000 A:middle
+parameter.
+

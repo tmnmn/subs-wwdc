@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.956 --> 00:48:01.796 A:middle
+I'm building my request for the
+
+00:48:01.796 --> 00:48:02.156 A:middle
+origin.
+
+00:48:02.156 --> 00:48:03.926 A:middle
+I will hot code this place, the
+
+00:48:03.926 --> 00:48:05.256 A:middle
+McEnery Convention Center.
+
+00:48:05.546 --> 00:48:09.046 A:middle
+Again, I could put coordinates
+
+00:48:09.176 --> 00:48:10.956 A:middle
+for instance, instead, but this
+
+00:48:10.956 --> 00:48:12.166 A:middle
+is much more convenience.
+
+00:48:12.266 --> 00:48:14.236 A:middle
+For the destination, I will use
+
+00:48:14.236 --> 00:48:15.626 A:middle
+coordinate because I have them.
+
+00:48:15.626 --> 00:48:16.636 A:middle
+They are the coordinate of the
+
+00:48:16.636 --> 00:48:18.256 A:middle
+annotation that was given as a
+
+00:48:18.256 --> 00:48:18.756 A:middle
+parameter.
+
+00:48:19.966 --> 00:48:21.196 A:middle
+And I want to show all of the
+
+00:48:21.196 --> 00:48:22.936 A:middle
+possible - not all of the
+
+00:48:22.936 --> 00:48:25.226 A:middle
+possible but the several
+
+00:48:25.226 --> 00:48:27.166 A:middle
+possible routes to this point.
+
+00:48:27.166 --> 00:48:28.916 A:middle
+So, I make sure that My Request
+
+00:48:29.076 --> 00:48:30.536 A:middle
+Alternate Routes Property's set
+
+00:48:30.536 --> 00:48:32.496 A:middle
+to true.
+
+00:48:32.496 --> 00:48:33.646 A:middle
+Now, that my request has been
+
+00:48:33.646 --> 00:48:36.846 A:middle
+created, I can execute it on the
+
+00:48:36.846 --> 00:48:38.466 A:middle
+Direction Services using the
+
+00:48:38.466 --> 00:48:39.126 A:middle
+Route Method.
+
+00:48:42.566 --> 00:48:44.476 A:middle
+Things can go wrong when you do
+
+00:48:44.476 --> 00:48:45.366 A:middle
+these kind of queries.
+
+00:48:45.366 --> 00:48:46.886 A:middle
+So, we must make sure that we
+
+00:48:46.886 --> 00:48:48.536 A:middle
+have a way to handle errors when
+
+00:48:48.536 --> 00:48:49.116 A:middle
+they occur.
+
+00:48:49.536 --> 00:48:51.466 A:middle
+So, in this case, I will fall
+
+00:48:51.466 --> 00:48:53.546 A:middle
+back to show a default route
+
+00:48:53.546 --> 00:48:54.966 A:middle
+that I've created and it's just
+
+00:48:54.966 --> 00:48:55.526 A:middle
+a straight line.
+
+00:48:55.526 --> 00:48:56.586 A:middle
+So, if we see a straight line,
+
+00:48:56.586 --> 00:48:57.476 A:middle
+then we know we're in trouble.
+
+00:48:59.836 --> 00:49:01.606 A:middle
+But let's focus, let's be
+

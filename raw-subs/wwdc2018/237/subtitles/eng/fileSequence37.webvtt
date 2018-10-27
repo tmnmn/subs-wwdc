@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.276 --> 00:37:02.296 A:middle
+As mentioned in the presentation
+
+00:37:02.626 --> 00:37:03.796 A:middle
+we need to implement this
+
+00:37:03.796 --> 00:37:05.976 A:middle
+method, preparePreviewOfFile at
+
+00:37:05.976 --> 00:37:07.166 A:middle
+URL completionHandler.
+
+00:37:07.536 --> 00:37:10.506 A:middle
+Our main app Particles already
+
+00:37:10.506 --> 00:37:12.316 A:middle
+has a view controller class
+
+00:37:12.626 --> 00:37:13.686 A:middle
+which [inaudible] the particle
+
+00:37:13.686 --> 00:37:14.526 A:middle
+system on screen.
+
+00:37:15.546 --> 00:37:16.866 A:middle
+We are going to reduce
+
+00:37:16.866 --> 00:37:17.766 A:middle
+[inaudible] controller in our
+
+00:37:17.766 --> 00:37:18.346 A:middle
+extension.
+
+00:37:19.406 --> 00:37:21.126 A:middle
+We are going to create a helper
+
+00:37:21.126 --> 00:37:22.716 A:middle
+method that will take care of
+
+00:37:22.716 --> 00:37:24.176 A:middle
+loading such a view controller
+
+00:37:24.366 --> 00:37:25.826 A:middle
+and adding it to the view
+
+00:37:25.826 --> 00:37:26.316 A:middle
+hierarchy.
+
+00:37:28.046 --> 00:37:30.726 A:middle
+As you can see present
+
+00:37:30.726 --> 00:37:32.156 A:middle
+particleViewController for a
+
+00:37:32.156 --> 00:37:33.656 A:middle
+document simply creates a
+
+00:37:33.656 --> 00:37:35.526 A:middle
+particleViewController and
+
+00:37:35.526 --> 00:37:37.146 A:middle
+passes it to the document it
+
+00:37:37.146 --> 00:37:38.426 A:middle
+received so that the
+
+00:37:38.426 --> 00:37:39.806 A:middle
+particleViewController can
+
+00:37:39.806 --> 00:37:41.566 A:middle
+render the particles that the
+
+00:37:41.566 --> 00:37:42.586 A:middle
+document represents.
+
+00:37:44.126 --> 00:37:45.426 A:middle
+We still need to call this
+
+00:37:45.426 --> 00:37:46.896 A:middle
+method from preparePreviewOfFile
+
+00:37:46.896 --> 00:37:50.286 A:middle
+at URL, so let's do it.
+
+00:37:51.336 --> 00:37:54.136 A:middle
+We first create a document that
+
+00:37:54.136 --> 00:37:55.146 A:middle
+is a subclass of [inaudible]
+
+00:37:55.226 --> 00:37:56.096 A:middle
+document.
+
+00:37:57.136 --> 00:37:59.876 A:middle
+We open it and once it is open
+
+00:37:59.876 --> 00:38:01.846 A:middle
+and usable we call our helper
+

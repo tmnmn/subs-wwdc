@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.232 --> 00:30:00.567 align:middle line:-1
+该图像可能使用
+
+00:30:00.634 --> 00:30:05.105 align:middle line:-1
+超出SRGB色域的色彩空间值
+
+00:30:06.073 --> 00:30:09.243 align:middle line:-1
+但实际上并不需要更大的元素
+
+00:30:09.309 --> 00:30:10.444 align:middle line:-1
+来存储这些信息
+
+00:30:10.944 --> 00:30:12.646 align:middle line:-1
+UIImage有一个可以用来获取一个预构建的
+
+00:30:13.113 --> 00:30:15.649 align:middle line:-2
+UIGraphicsImageRendererFormat
+对象的
+
+00:30:15.716 --> 00:30:21.088 align:middle line:-2
+image renderer format属性
+该对象用于在重新渲染图像时
+
+00:30:21.154 --> 00:30:22.656 align:middle line:-1
+进行最优化存储
+
+00:30:26.960 --> 00:30:28.362 align:middle line:-1
+最后我们将谈一些
+
+00:30:28.428 --> 00:30:31.999 align:middle line:-1
+有关如何在你的app中集成
+
+00:30:32.065 --> 00:30:35.068 align:middle line:-2
+我们在iOS中提供的先进
+CPU和GPU技术的话题
+
+00:30:37.504 --> 00:30:40.440 align:middle line:-2
+如果你需要使用
+Core Image
+
+00:30:40.507 --> 00:30:44.945 align:middle line:-1
+对你的图片实时进行大量的高级处理
+
+00:30:45.012 --> 00:30:45.913 align:middle line:-1
+（高级图像效果）
+
+00:30:45.979 --> 00:30:48.182 align:middle line:-2
+Core Image
+是这样一个框架
+
+00:30:48.248 --> 00:30:51.285 align:middle line:-1
+它允许你创建处理图像的配方
+
+00:30:51.652 --> 00:30:54.521 align:middle line:-1
+并在CPU或GPU上进行处理
+
+00:30:55.722 --> 00:31:00.360 align:middle line:-2
+如果你从CIImage创建一个
+UIImage并将其交给UIImageView
+

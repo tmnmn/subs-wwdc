@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:58.146 --> 00:44:00.306 A:middle
+that the codecs tag indicates
+
+00:44:00.716 --> 00:44:04.096 A:middle
+all the different codecs that
+
+00:44:04.096 --> 00:44:06.226 A:middle
+can occur within that rendition
+
+00:44:07.516 --> 00:44:07.766 A:middle
+group.
+
+00:44:08.086 --> 00:44:09.126 A:middle
+Now, notice that we had to
+
+00:44:09.126 --> 00:44:11.506 A:middle
+duplicate our video variant.
+
+00:44:12.196 --> 00:44:13.986 A:middle
+So now we've got two entries,
+
+00:44:13.986 --> 00:44:16.186 A:middle
+one pointing to one audio group,
+
+00:44:16.536 --> 00:44:17.416 A:middle
+and the other pointing to the
+
+00:44:17.416 --> 00:44:18.256 A:middle
+other audio group.
+
+00:44:18.476 --> 00:44:19.286 A:middle
+And you'll see this kind of
+
+00:44:19.286 --> 00:44:21.106 A:middle
+duplication again in later
+
+00:44:21.106 --> 00:44:21.596 A:middle
+slides.
+
+00:44:22.936 --> 00:44:25.856 A:middle
+Well let's say rather than 5.1,
+
+00:44:25.856 --> 00:44:27.566 A:middle
+I've got several audio bitrates.
+
+00:44:27.566 --> 00:44:30.616 A:middle
+I've got some high bitrate
+
+00:44:30.616 --> 00:44:32.176 A:middle
+audio, and I know I need to
+
+00:44:32.176 --> 00:44:35.476 A:middle
+provide a low bitrate for some
+
+00:44:35.786 --> 00:44:36.326 A:middle
+users.
+
+00:44:36.996 --> 00:44:38.566 A:middle
+So in terms of the renditions,
+
+00:44:38.736 --> 00:44:40.386 A:middle
+this is similar to what we had
+
+00:44:40.816 --> 00:44:41.386 A:middle
+before.
+
+00:44:41.596 --> 00:44:42.636 A:middle
+We still got a matrix.
+
+00:44:42.636 --> 00:44:43.676 A:middle
+We want to fill it out with
+
+00:44:44.046 --> 00:44:45.506 A:middle
+every language for every
+
+00:44:45.506 --> 00:44:45.996 A:middle
+bitrate.
+
+00:44:47.126 --> 00:44:48.606 A:middle
+And since these are both AAC,
+
+00:44:48.606 --> 00:44:49.566 A:middle
+they're considered the same
+
+00:44:49.566 --> 00:44:50.266 A:middle
+format.
+
+00:44:50.706 --> 00:44:52.426 A:middle
+So if I also want to have
+
+00:44:52.886 --> 00:44:55.556 A:middle
+another format, all I do is
+
+00:44:55.556 --> 00:44:56.606 A:middle
+extend that matrix.
+
+00:44:57.096 --> 00:44:58.306 A:middle
+Now, I want to mention that I've
+
+00:44:58.306 --> 00:44:59.256 A:middle
+been saying language for
+
+00:44:59.256 --> 00:45:00.296 A:middle
+convenience, but you should
+

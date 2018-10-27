@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.226 --> 00:12:00.126 A:middle
+But if that's not what you
+
+00:12:00.126 --> 00:12:01.416 A:middle
+wanted, you have to go through
+
+00:12:01.416 --> 00:12:02.906 A:middle
+all those schemes and disable
+
+00:12:02.906 --> 00:12:04.426 A:middle
+the test there manually.
+
+00:12:05.646 --> 00:12:07.096 A:middle
+So, in Xcode 10, we're
+
+00:12:07.096 --> 00:12:08.176 A:middle
+introducing a new mode for
+
+00:12:08.176 --> 00:12:09.516 A:middle
+schemes to instead, encode the
+
+00:12:09.516 --> 00:12:10.566 A:middle
+tests to run.
+
+00:12:12.356 --> 00:12:13.746 A:middle
+If you switch your scheme to
+
+00:12:13.746 --> 00:12:15.756 A:middle
+that mode, only the test that
+
+00:12:15.756 --> 00:12:18.526 A:middle
+you hand pick will run in that
+
+00:12:20.896 --> 00:12:21.026 A:middle
+scheme.
+
+00:12:21.226 --> 00:12:22.486 A:middle
+You control this mode in the
+
+00:12:22.486 --> 00:12:24.026 A:middle
+scheme editors test action,
+
+00:12:24.986 --> 00:12:26.306 A:middle
+where in the list of test
+
+00:12:26.306 --> 00:12:27.806 A:middle
+targets, there's a new options
+
+00:12:27.866 --> 00:12:29.346 A:middle
+pop-up, where you can declare
+
+00:12:29.346 --> 00:12:30.316 A:middle
+whether the scheme should
+
+00:12:30.376 --> 00:12:31.796 A:middle
+automatically include new tests
+
+00:12:31.836 --> 00:12:32.266 A:middle
+or not.
+
+00:12:33.576 --> 00:12:34.956 A:middle
+This way, some of your schemes
+
+00:12:34.956 --> 00:12:36.526 A:middle
+can continue to run any new
+
+00:12:36.526 --> 00:12:38.206 A:middle
+tests you write, while other
+
+00:12:38.286 --> 00:12:40.136 A:middle
+schemes will only run a list of
+
+00:12:40.136 --> 00:12:43.386 A:middle
+hand-picked tests.
+
+00:12:43.536 --> 00:12:45.866 A:middle
+So, we've discussed how we can
+
+00:12:45.866 --> 00:12:47.016 A:middle
+better control which of our
+
+00:12:47.016 --> 00:12:48.696 A:middle
+tests run and when, but the
+
+00:12:48.696 --> 00:12:50.386 A:middle
+order of our tests can be
+
+00:12:50.386 --> 00:12:51.286 A:middle
+significant too.
+
+00:12:52.816 --> 00:12:55.376 A:middle
+By default, tests in Xcode are
+
+00:12:55.376 --> 00:12:56.536 A:middle
+sorted by their name.
+
+00:12:57.536 --> 00:12:58.776 A:middle
+This means that unless you
+
+00:12:58.776 --> 00:13:00.486 A:middle
+rename your tests, they will
+

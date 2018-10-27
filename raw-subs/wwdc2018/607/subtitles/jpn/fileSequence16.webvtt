@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:55.722 --> 00:16:00.861 align:start position:25% line:-2
+可視オブジェクトの判定を
+GPUで行うゲームは多いです
+
+00:16:01.428 --> 00:16:06.099 align:start position:25% line:-2
+GPUは複雑なシーンの処理に
+向いているのです
+
+00:16:06.900 --> 00:16:11.205 align:start position:32% line:-2
+ただし この処理では
+同期点が生じます
+
+00:16:12.873 --> 00:16:18.245 align:start position:25% line:-2
+GPUがデータを生成するまで
+CPUは描画できません
+
+00:16:18.345 --> 00:16:20.581 align:start position:34% line:-1
+これを調整するには
+
+00:16:20.681 --> 00:16:24.985 align:start position:30% line:-2
+同期に使用時間を
+浪費するしかありません
+
+00:16:25.619 --> 00:16:28.522 align:start position:30% line:-2
+その点
+新機能の効果は絶大です
+
+00:16:28.622 --> 00:16:32.459 align:start position:32% line:-2
+最終ビットを
+GPUに委ねることで
+
+00:16:32.559 --> 00:16:36.029 align:start position:34% line:-2
+データ移動に使う
+同期点をなくします
+
+00:16:36.129 --> 00:16:39.399 align:start position:30% line:-2
+結果 CPUとGPUの
+使用率が改善します
+
+00:16:39.766 --> 00:16:44.304 align:start position:23% line:-2
+また CPUのオーバーヘッドを
+一定量減らせます
+
+00:16:45.739 --> 00:16:48.475 align:start position:29% line:-1
+符号化の詳細を見てみます
+
+00:16:50.277 --> 00:16:53.080 align:start position:29% line:-1
+まずは 前の例を応用して
+
+00:16:53.180 --> 00:16:57.584 align:start position:27% line:-2
+GPUが持つ超並列の性質に
+注目しましょう
+
+00:16:58.185 --> 00:17:03.423 align:start position:27% line:-2
+最初に 可視オブジェクトと
+詳細度をリスト化します
+

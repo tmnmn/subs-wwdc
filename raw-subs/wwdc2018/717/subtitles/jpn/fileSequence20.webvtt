@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.566 --> 00:20:02.269 align:start position:29% line:-1
+対象の画像を解析させます
+
+00:20:02.436 --> 00:20:05.239 align:start position:30% line:-1
+実際に解析を行う時には
+
+00:20:05.572 --> 00:20:11.245 align:start position:16% line:-2
+device orientationで
+デバイスの向きを確認します
+
+00:20:11.879 --> 00:20:17.017 align:start position:11% line:-2
+VNImageRequestHandlerを
+実行するバッファに作ります
+
+00:20:17.851 --> 00:20:22.256 align:start position:25% line:-1
+そして非同期的に実行させます
+
+00:20:24.291 --> 00:20:29.763 align:start position:29% line:-2
+以上がCore MLと
+バーコードの処理方法です
+
+00:20:30.264 --> 00:20:34.535 align:start position:30% line:-2
+次は 対象物を
+正確に捉える仕組みです
+
+00:20:34.635 --> 00:20:39.339 align:start position:30% line:-2
+リセット可能なキューに
+ポイントを追加しました
+
+00:20:39.940 --> 00:20:43.610 align:start position:27% line:-2
+そして
+記録したポイントのキューを
+
+00:20:43.710 --> 00:20:46.346 align:start position:30% line:-1
+調べる機能を作りました
+
+00:20:46.447 --> 00:20:49.383 align:start position:27% line:-1
+自分の経験から 最大でも―
+
+00:20:49.483 --> 00:20:53.687 align:start position:27% line:-2
+20ピクセル程度になるよう
+設定しました
+
+00:20:53.787 --> 00:20:58.392 align:start position:27% line:-2
+すると カメラが静止したと
+認識されます
+
+00:20:59.827 --> 00:21:01.728 align:start position:29% line:-1
+次は出力のキャプチャです
+

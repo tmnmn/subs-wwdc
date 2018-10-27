@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.476 --> 00:25:00.676 A:middle
+provide a great list of best
+
+00:25:00.676 --> 00:25:01.796 A:middle
+practices to follow.
+
+00:25:02.186 --> 00:25:03.196 A:middle
+We won't cover those.
+
+00:25:03.456 --> 00:25:05.096 A:middle
+Instead we'll focus on how to
+
+00:25:05.096 --> 00:25:06.506 A:middle
+tell if something is expensive
+
+00:25:06.586 --> 00:25:07.066 A:middle
+to render.
+
+00:25:08.126 --> 00:25:10.066 A:middle
+And as we've done with the CPU
+
+00:25:10.066 --> 00:25:12.226 A:middle
+several times today, the best
+
+00:25:12.226 --> 00:25:14.106 A:middle
+practice here is profile your
+
+00:25:14.106 --> 00:25:15.326 A:middle
+GPU as well.
+
+00:25:15.976 --> 00:25:18.666 A:middle
+The power of our GPUs can hide
+
+00:25:18.666 --> 00:25:20.216 A:middle
+many efficiencies in either
+
+00:25:20.276 --> 00:25:22.026 A:middle
+content or algorithms.
+
+00:25:22.706 --> 00:25:23.696 A:middle
+You will want to time your
+
+00:25:23.696 --> 00:25:26.536 A:middle
+workload, but also understand
+
+00:25:26.686 --> 00:25:27.806 A:middle
+each rendering technique that
+
+00:25:27.806 --> 00:25:28.366 A:middle
+you enable.
+
+00:25:29.116 --> 00:25:30.696 A:middle
+And only keep those that add
+
+00:25:30.746 --> 00:25:32.596 A:middle
+noticeably to the visual quality
+
+00:25:32.596 --> 00:25:33.206 A:middle
+of your games.
+
+00:25:34.376 --> 00:25:35.386 A:middle
+But how do you find these
+
+00:25:35.386 --> 00:25:36.336 A:middle
+inefficiencies?
+
+00:25:37.096 --> 00:25:38.396 A:middle
+How do you determine which parts
+
+00:25:38.396 --> 00:25:39.886 A:middle
+of your pipeline are flat-out
+
+00:25:39.886 --> 00:25:40.426 A:middle
+excessive?
+
+00:25:40.816 --> 00:25:42.846 A:middle
+This of course brings us back to
+
+00:25:42.846 --> 00:25:43.236 A:middle
+tools.
+
+00:25:44.596 --> 00:25:46.286 A:middle
+As always, your first stop
+
+00:25:46.286 --> 00:25:47.346 A:middle
+should be Instruments.
+
+00:25:48.106 --> 00:25:49.146 A:middle
+Here we're looking at Metal
+
+00:25:49.146 --> 00:25:50.026 A:middle
+System Trace.
+
+00:25:50.646 --> 00:25:51.826 A:middle
+It'll provide you accurate
+
+00:25:51.826 --> 00:25:54.136 A:middle
+timings for vertex, fragment,
+
+00:25:54.446 --> 00:25:55.876 A:middle
+and compute work being done.
+
+00:25:56.606 --> 00:25:58.926 A:middle
+But by measuring your GPU time,
+
+00:25:59.186 --> 00:26:00.316 A:middle
+you're only halfway there.
+

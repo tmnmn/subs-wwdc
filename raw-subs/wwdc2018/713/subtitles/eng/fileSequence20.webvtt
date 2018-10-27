@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.116 --> 00:20:02.226 A:middle
+with NLTagger in exactly the
+
+00:20:02.226 --> 00:20:03.866 A:middle
+same way that you use our
+
+00:20:03.866 --> 00:20:06.976 A:middle
+built-in models for an existing
+
+00:20:06.976 --> 00:20:07.716 A:middle
+functionality.
+
+00:20:08.176 --> 00:20:09.036 A:middle
+So let me show you how that
+
+00:20:09.036 --> 00:20:09.466 A:middle
+works.
+
+00:20:10.366 --> 00:20:12.326 A:middle
+In addition to the existing tag
+
+00:20:12.326 --> 00:20:13.776 A:middle
+schemes that we have for things
+
+00:20:13.776 --> 00:20:15.336 A:middle
+like named identity recognition
+
+00:20:15.336 --> 00:20:17.136 A:middle
+part of speech tagging, you can
+
+00:20:17.136 --> 00:20:18.676 A:middle
+create your own custom tag
+
+00:20:18.676 --> 00:20:22.446 A:middle
+scheme, give it a name, and then
+
+00:20:22.516 --> 00:20:24.636 A:middle
+you can create a tagger that
+
+00:20:24.636 --> 00:20:26.066 A:middle
+includes any number of different
+
+00:20:26.066 --> 00:20:26.776 A:middle
+tag schemes.
+
+00:20:27.146 --> 00:20:28.826 A:middle
+Your custom tag scheme or any of
+
+00:20:28.826 --> 00:20:30.426 A:middle
+our built-in tag schemes or all
+
+00:20:31.086 --> 00:20:33.086 A:middle
+of them, and then all you have
+
+00:20:33.086 --> 00:20:35.496 A:middle
+to do is to tell the tagger to
+
+00:20:35.496 --> 00:20:37.136 A:middle
+use your custom model for your
+
+00:20:37.136 --> 00:20:38.146 A:middle
+custom tag scheme.
+
+00:20:38.686 --> 00:20:40.886 A:middle
+And then you just use it
+
+00:20:42.186 --> 00:20:42.706 A:middle
+normally.
+
+00:20:43.246 --> 00:20:44.776 A:middle
+You attach a string to the
+
+00:20:44.776 --> 00:20:46.756 A:middle
+tagger, and you can go through
+
+00:20:46.756 --> 00:20:49.256 A:middle
+and look at the tags for
+
+00:20:49.706 --> 00:20:51.736 A:middle
+whatever unit of text is
+
+00:20:51.736 --> 00:20:52.996 A:middle
+appropriate for your particular
+
+00:20:52.996 --> 00:20:56.296 A:middle
+model, and the tagger will
+
+00:20:56.296 --> 00:20:58.246 A:middle
+automatically call the model as
+
+00:20:58.246 --> 00:20:59.886 A:middle
+necessary to get the tags and
+
+00:20:59.886 --> 00:21:01.436 A:middle
+return the tags to you and will
+

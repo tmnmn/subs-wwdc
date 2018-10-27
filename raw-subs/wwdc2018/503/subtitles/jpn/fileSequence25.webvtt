@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.365 --> 00:25:03.771 align:start position:29% line:-2
+それを新たにXYZという
+座標系に変えたいのです
+
+00:25:04.204 --> 00:25:09.943 align:start position:29% line:-2
+深度マップのZはあるので
+あとはXとYです
+
+00:25:10.043 --> 00:25:15.315 align:start position:25% line:-2
+そのためには
+内部パラメータ行列が必要です
+
+00:25:15.415 --> 00:25:18.719 align:start position:36% line:-2
+焦点と主点情報を
+得るためです
+
+00:25:19.219 --> 00:25:23.690 align:start position:29% line:-2
+Xが欲しい場合
+ピクセル座標のUから始め
+
+00:25:23.791 --> 00:25:29.029 align:start position:29% line:-2
+主点を抽出し　深度を掛け
+焦点距離で割ります
+
+00:25:29.129 --> 00:25:32.299 align:start position:36% line:-2
+他の次元でも
+同じことをします
+
+00:25:33.100 --> 00:25:36.737 align:start position:30% line:-1
+内部パラメータ行列には
+
+00:25:36.837 --> 00:25:39.573 align:start position:27% line:-2
+キャリブレーションデータが
+必要です
+
+00:25:41.108 --> 00:25:47.314 align:start position:23% line:-2
+TrueDepthストリームの
+全フレームで行われます
+
+00:25:47.414 --> 00:25:51.018 align:start position:36% line:-2
+映像ストリームと
+深度ストリームは
+
+00:25:51.118 --> 00:25:54.788 align:start position:36% line:-2
+２つのカメラから
+来ているからです
+
+00:25:55.556 --> 00:26:00.627 align:start position:27% line:-2
+深度マップは
+ポイントクラウドに変換でき
+

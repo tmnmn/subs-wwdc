@@ -1,0 +1,46 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:01.168 --> 00:30:05.172 align:middle line:-2
+试着将这张图片拖放到
+我们的app中
+
+00:30:06.840 --> 00:30:09.009 align:middle line:-1
+不幸的是 这样不行
+
+00:30:09.543 --> 00:30:13.180 align:middle line:-2
+让我们进入Xcode
+看看能不能修复这个问题
+
+00:30:17.150 --> 00:30:20.087 align:middle line:-2
+我现在在app的
+主ViewController中
+
+00:30:20.420 --> 00:30:23.957 align:middle line:-2
+我们要直接跳到
+viewDidLoad中
+
+00:30:24.358 --> 00:30:26.527 align:middle line:-1
+看看发生了什么
+
+00:30:28.662 --> 00:30:32.599 align:middle line:-1
+在这里 我们只注册了文件的URL
+
+00:30:33.133 --> 00:30:37.437 align:middle line:-2
+让我们修复这个问题
+把FilePromiseReceiver也注册了
+
+00:30:41.642 --> 00:30:46.280 align:middle line:-1
+然后在处理拖拽操作的时候
+
+00:30:46.713 --> 00:30:50.450 align:middle line:-2
+我们也需要对
+FilePromiseReceiver进行处理
+
+00:30:51.351 --> 00:30:55.222 align:middle line:-1
+让我们跳到下面的这个方法
+
+00:30:56.790 --> 00:31:01.328 align:middle line:-2
+这个是所支持的类的列表
+而我们只有NSURL
+

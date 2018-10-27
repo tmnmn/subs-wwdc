@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.206 --> 00:09:01.176 A:middle
+look at the updated coverage
+
+00:09:01.176 --> 00:09:01.636 A:middle
+reports.
+
+00:09:03.126 --> 00:09:04.716 A:middle
+So, now you can see that I only
+
+00:09:04.716 --> 00:09:05.906 A:middle
+have the framework in the
+
+00:09:05.906 --> 00:09:06.566 A:middle
+coverage report.
+
+00:09:06.736 --> 00:09:07.696 A:middle
+This is what I wanted.
+
+00:09:08.226 --> 00:09:09.986 A:middle
+So, now I can just focus on this
+
+00:09:09.986 --> 00:09:10.626 A:middle
+one target.
+
+00:09:11.676 --> 00:09:12.636 A:middle
+So, looking at the coverage
+
+00:09:12.636 --> 00:09:15.086 A:middle
+percentage, is at 84%, which is
+
+00:09:15.086 --> 00:09:16.706 A:middle
+not bad, but I know I can do
+
+00:09:16.706 --> 00:09:17.116 A:middle
+better.
+
+00:09:17.796 --> 00:09:18.996 A:middle
+So, to understand which of the
+
+00:09:18.996 --> 00:09:21.116 A:middle
+files need more attention, I
+
+00:09:21.146 --> 00:09:24.056 A:middle
+will disclose the target and see
+
+00:09:24.056 --> 00:09:25.566 A:middle
+that the first file is only
+
+00:09:25.566 --> 00:09:27.466 A:middle
+covered at about 66%.
+
+00:09:28.506 --> 00:09:30.196 A:middle
+So, I'll jump to the file by
+
+00:09:30.196 --> 00:09:31.216 A:middle
+clicking on the arrow here.
+
+00:09:31.816 --> 00:09:36.456 A:middle
+And here, I'll look at my local
+
+00:09:36.456 --> 00:09:37.346 A:middle
+server class.
+
+00:09:38.306 --> 00:09:39.536 A:middle
+On the right-hand side, I can
+
+00:09:39.536 --> 00:09:41.046 A:middle
+see the execution counts for
+
+00:09:41.046 --> 00:09:43.096 A:middle
+each region of the code so I can
+
+00:09:43.096 --> 00:09:44.846 A:middle
+see that all of the executable
+
+00:09:44.896 --> 00:09:47.216 A:middle
+parts of my class are covered by
+
+00:09:47.216 --> 00:09:47.756 A:middle
+tests.
+
+00:09:47.976 --> 00:09:48.676 A:middle
+This is good.
+
+00:09:49.396 --> 00:09:50.936 A:middle
+Unfortunately, my convenience
+
+00:09:50.936 --> 00:09:52.666 A:middle
+function, get recent messages,
+
+00:09:52.916 --> 00:09:54.206 A:middle
+hasn't been called for my tests
+
+00:09:54.206 --> 00:09:55.566 A:middle
+at all, so I don't know if it's
+
+00:09:55.566 --> 00:09:56.316 A:middle
+working properly.
+
+00:09:57.716 --> 00:09:59.496 A:middle
+To fix that, I'll go to the
+
+00:09:59.496 --> 00:10:03.526 A:middle
+corresponding test file and I
+

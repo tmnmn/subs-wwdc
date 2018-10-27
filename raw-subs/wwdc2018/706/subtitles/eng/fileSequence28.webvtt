@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:57.396 --> 00:28:00.116 A:middle
+access to this information Swift
+
+00:28:00.116 --> 00:28:01.856 A:middle
+codable and JSON serialization
+
+00:28:02.006 --> 00:28:03.576 A:middle
+may not be appropriate tools.
+
+00:28:04.596 --> 00:28:06.646 A:middle
+And with that, I'd love to hand
+
+00:28:06.646 --> 00:28:08.496 A:middle
+back to Peyton and see what
+
+00:28:08.496 --> 00:28:10.376 A:middle
+wonderful things he can do with
+
+00:28:10.376 --> 00:28:10.976 A:middle
+this new API.
+
+00:28:11.516 --> 00:28:18.606 A:middle
+[ Applause ]
+
+00:28:19.106 --> 00:28:19.686 A:middle
+&gt;&gt; Thanks, Jason.
+
+00:28:20.636 --> 00:28:21.896 A:middle
+So back to the immunization
+
+00:28:21.896 --> 00:28:23.186 A:middle
+dashboard I've been working on.
+
+00:28:23.726 --> 00:28:25.526 A:middle
+I'm using HealthKit to fetch my
+
+00:28:25.526 --> 00:28:27.316 A:middle
+users' vaccinations, but right
+
+00:28:27.316 --> 00:28:28.826 A:middle
+now it's tough for a user to
+
+00:28:28.826 --> 00:28:30.696 A:middle
+tell what vaccinations they have
+
+00:28:30.766 --> 00:28:31.846 A:middle
+and what they might need to get.
+
+00:28:31.846 --> 00:28:34.616 A:middle
+So I'm going to solve that by
+
+00:28:34.616 --> 00:28:36.436 A:middle
+implementing an immunization
+
+00:28:36.656 --> 00:28:37.346 A:middle
+checklist.
+
+00:28:37.866 --> 00:28:39.466 A:middle
+Users can see a summary of their
+
+00:28:39.466 --> 00:28:41.706 A:middle
+immunizations in plain language.
+
+00:28:43.126 --> 00:28:44.816 A:middle
+To populate this list I need to
+
+00:28:44.816 --> 00:28:46.016 A:middle
+know that this combination
+
+00:28:46.016 --> 00:28:48.516 A:middle
+vaccine induces immunity against
+
+00:28:48.516 --> 00:28:51.136 A:middle
+chickenpox and against MMR.
+
+00:28:51.756 --> 00:28:54.016 A:middle
+Health institutions speak
+
+00:28:54.016 --> 00:28:55.926 A:middle
+different languages so I can't
+
+00:28:55.926 --> 00:28:58.596 A:middle
+rely on name alone, so that's
+
+00:28:58.596 --> 00:28:59.806 A:middle
+where the interoperability of
+
+00:28:59.806 --> 00:29:00.856 A:middle
+FHIR comes into play.
+

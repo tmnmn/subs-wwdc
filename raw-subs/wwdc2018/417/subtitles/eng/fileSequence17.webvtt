@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.656 --> 00:17:00.526 A:middle
+app, since existing clients
+
+00:17:00.596 --> 00:17:01.486 A:middle
+won't need to pass the new
+
+00:17:01.486 --> 00:17:03.366 A:middle
+parameter, only our unit tests
+
+00:17:03.366 --> 00:17:03.556 A:middle
+will.
+
+00:17:05.096 --> 00:17:07.076 A:middle
+Now let's go back and update our
+
+00:17:07.076 --> 00:17:07.616 A:middle
+tests.
+
+00:17:08.906 --> 00:17:10.046 A:middle
+Here's the original test code,
+
+00:17:10.935 --> 00:17:12.786 A:middle
+and now I've modified it to use
+
+00:17:12.786 --> 00:17:14.165 A:middle
+a separate NotificationCenter.
+
+00:17:17.455 --> 00:17:19.366 A:middle
+So, this shows how we can test
+
+00:17:19.366 --> 00:17:20.606 A:middle
+that our subject observes a
+
+00:17:20.606 --> 00:17:22.906 A:middle
+notification, but how do we test
+
+00:17:22.906 --> 00:17:23.776 A:middle
+that our subject posts a
+
+00:17:23.776 --> 00:17:24.415 A:middle
+notification?
+
+00:17:25.536 --> 00:17:27.026 A:middle
+We'll use the same separate
+
+00:17:27.185 --> 00:17:28.916 A:middle
+NotificationCenter trick again,
+
+00:17:29.186 --> 00:17:30.346 A:middle
+but I'll also show how to make
+
+00:17:30.346 --> 00:17:32.366 A:middle
+use of built-in expectation APIs
+
+00:17:32.366 --> 00:17:33.776 A:middle
+to add a notification observer.
+
+00:17:35.666 --> 00:17:36.746 A:middle
+So, here's another section of
+
+00:17:36.746 --> 00:17:38.096 A:middle
+code from our app, the
+
+00:17:38.096 --> 00:17:39.686 A:middle
+CurrentLocationProvider class.
+
+00:17:40.536 --> 00:17:41.706 A:middle
+I'll talk more about this class
+
+00:17:41.706 --> 00:17:44.106 A:middle
+later, but notice that it has
+
+00:17:44.106 --> 00:17:45.246 A:middle
+this method for signaling to
+
+00:17:45.246 --> 00:17:47.066 A:middle
+other classes in my app that the
+
+00:17:47.066 --> 00:17:48.776 A:middle
+app's location authorization has
+
+00:17:48.776 --> 00:17:49.896 A:middle
+changed by posting a
+
+00:17:49.896 --> 00:17:50.566 A:middle
+notification.
+
+00:17:51.976 --> 00:17:53.286 A:middle
+As with our view controller,
+
+00:17:53.376 --> 00:17:54.726 A:middle
+it's currently hardcoding the
+
+00:17:54.726 --> 00:17:56.066 A:middle
+default NotificationCenter.
+
+00:17:56.646 --> 00:17:59.836 A:middle
+And here's a unit test I wrote
+
+00:17:59.836 --> 00:18:00.716 A:middle
+for this class.
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:01.021 --> 00:27:03.290 align:start position:21% line:-2
+Foundationモジュールの
+ビルド方法は？
+
+00:27:03.924 --> 00:27:07.661 align:start position:32% line:-2
+Clangは まず
+別の領域を作成します
+
+00:27:08.495 --> 00:27:13.100 align:start position:21% line:-2
+Foundationモジュールの
+全ヘッダを収める場所です
+
+00:27:15.135 --> 00:27:18.939 align:start position:25% line:-2
+最初のコンパイルで残っている
+コンテキストを―
+
+00:27:19.072 --> 00:27:21.375 align:start position:29% line:-1
+変更する必要はありません
+
+00:27:21.508 --> 00:27:23.143 align:start position:25% line:-1
+コンテキストフリーですからね
+
+00:27:24.011 --> 00:27:28.248 align:start position:21% line:-2
+変更するのは Clangに渡した
+コマンドライン引数です
+
+00:27:28.348 --> 00:27:29.783 align:start position:29% line:-1
+Clangが持っています
+
+00:27:32.119 --> 00:27:34.388 align:start position:21% line:-2
+Foundationモジュールを
+ビルドしました
+
+00:27:35.422 --> 00:27:39.026 align:start position:30% line:-2
+しかし
+このフレームワークは―
+
+00:27:39.293 --> 00:27:41.862 align:start position:32% line:-2
+別のフレームワークを
+インクルードします
+
+00:27:41.962 --> 00:27:45.132 align:start position:29% line:-2
+そのモジュールも
+ビルドする必要があります
+
+00:27:46.633 --> 00:27:51.672 align:start position:27% line:-2
+さらなるインクルードに備え
+これを繰り返していきます
+
+00:27:52.239 --> 00:27:54.608 align:start position:27% line:-1
+これにはメリットがあります
+
+00:27:55.142 --> 00:27:57.478 align:start position:34% line:-2
+同様のインポートが
+ある場合に―
+
+00:27:57.578 --> 00:28:00.581 align:start position:34% line:-1
+再利用できますよね
+

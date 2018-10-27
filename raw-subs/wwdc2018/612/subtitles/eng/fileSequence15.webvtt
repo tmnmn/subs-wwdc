@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.606 --> 00:15:02.056 A:middle
+So if a thread does a lot of
+
+00:15:02.096 --> 00:15:04.176 A:middle
+work, its priority will be
+
+00:15:04.176 --> 00:15:06.206 A:middle
+lowered over time so other
+
+00:15:06.206 --> 00:15:07.456 A:middle
+threads can run instead.
+
+00:15:08.326 --> 00:15:09.516 A:middle
+That's the concept known as
+
+00:15:09.566 --> 00:15:10.536 A:middle
+priority decay.
+
+00:15:11.986 --> 00:15:13.676 A:middle
+Also you see on the slide behind
+
+00:15:13.676 --> 00:15:15.776 A:middle
+me priority inversion.
+
+00:15:16.196 --> 00:15:17.196 A:middle
+This is another class of
+
+00:15:17.296 --> 00:15:18.956 A:middle
+problems that manifests in a
+
+00:15:18.956 --> 00:15:19.906 A:middle
+very similar way.
+
+00:15:20.636 --> 00:15:22.376 A:middle
+In this case, priority inversion
+
+00:15:22.856 --> 00:15:24.306 A:middle
+occurs when the render thread
+
+00:15:24.886 --> 00:15:26.396 A:middle
+depends on the lower priority
+
+00:15:26.396 --> 00:15:28.736 A:middle
+worker thread from your same
+
+00:15:28.736 --> 00:15:30.306 A:middle
+engine in order to complete the
+
+00:15:30.306 --> 00:15:30.576 A:middle
+work.
+
+00:15:31.586 --> 00:15:32.736 A:middle
+Let's see how that looks like in
+
+00:15:32.736 --> 00:15:34.006 A:middle
+the same timeline as we've seen
+
+00:15:34.006 --> 00:15:34.396 A:middle
+before.
+
+00:15:34.956 --> 00:15:37.646 A:middle
+In this case, we start rendering
+
+00:15:37.646 --> 00:15:39.516 A:middle
+at 30 frames per second so we
+
+00:15:39.516 --> 00:15:40.006 A:middle
+are cool.
+
+00:15:41.156 --> 00:15:42.896 A:middle
+But then there is some
+
+00:15:42.896 --> 00:15:43.706 A:middle
+background work.
+
+00:15:44.786 --> 00:15:45.936 A:middle
+iOS does lots of stuff.
+
+00:15:45.936 --> 00:15:47.086 A:middle
+Maybe now it's checking the
+
+00:15:47.086 --> 00:15:47.406 A:middle
+email.
+
+00:15:48.826 --> 00:15:50.846 A:middle
+And the problem here is that the
+
+00:15:50.846 --> 00:15:51.686 A:middle
+[inaudible] thread is not well
+
+00:15:51.686 --> 00:15:52.316 A:middle
+configured.
+
+00:15:53.556 --> 00:15:54.876 A:middle
+You may get preempted by that
+
+00:15:54.926 --> 00:15:55.486 A:middle
+background work.
+
+00:15:56.066 --> 00:15:58.386 A:middle
+You may not finish scheduling
+
+00:15:58.386 --> 00:15:59.746 A:middle
+all the work onto the GPU.
+

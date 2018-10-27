@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.386 --> 00:13:01.746 A:middle
+Now, it asks me for a URL for
+
+00:13:01.746 --> 00:13:03.376 A:middle
+the first item to be previewed,
+
+00:13:04.066 --> 00:13:05.846 A:middle
+and I respond with the file URL
+
+00:13:06.316 --> 00:13:08.316 A:middle
+for my app bundle for the model
+
+00:13:08.316 --> 00:13:10.046 A:middle
+that was tapped.
+
+00:13:10.106 --> 00:13:12.056 A:middle
+Finally, it asks me for the view
+
+00:13:12.056 --> 00:13:13.856 A:middle
+to use as a source view for the
+
+00:13:13.856 --> 00:13:15.356 A:middle
+transition animation for when
+
+00:13:15.356 --> 00:13:16.296 A:middle
+the preview is presented.
+
+00:13:16.856 --> 00:13:18.666 A:middle
+And here, I want a seamless
+
+00:13:18.666 --> 00:13:20.276 A:middle
+animation from the view that was
+
+00:13:20.356 --> 00:13:21.576 A:middle
+tapped to the view that was
+
+00:13:21.576 --> 00:13:22.376 A:middle
+going to be presented.
+
+00:13:22.776 --> 00:13:24.306 A:middle
+And so, I return View #3.
+
+00:13:25.536 --> 00:13:27.366 A:middle
+With all that configured, we're
+
+00:13:27.366 --> 00:13:28.606 A:middle
+ready to present our preview
+
+00:13:28.606 --> 00:13:30.496 A:middle
+controller, and so it's going to
+
+00:13:30.496 --> 00:13:31.776 A:middle
+animate and scale up from the
+
+00:13:31.816 --> 00:13:32.486 A:middle
+view that was tapped.
+
+00:13:32.486 --> 00:13:35.556 A:middle
+And this is what it looks like
+
+00:13:35.556 --> 00:13:35.856 A:middle
+in code.
+
+00:13:36.626 --> 00:13:38.026 A:middle
+In order to preview and present
+
+00:13:38.166 --> 00:13:39.466 A:middle
+documents, we need to
+
+00:13:39.466 --> 00:13:40.506 A:middle
+instantiate a
+
+00:13:40.506 --> 00:13:41.466 A:middle
+QLPreviewController.
+
+00:13:42.016 --> 00:13:42.856 A:middle
+It's part of the Quick Look
+
+00:13:42.856 --> 00:13:43.216 A:middle
+framework.
+
+00:13:43.506 --> 00:13:45.756 A:middle
+It has a dataSource and a
+
+00:13:45.756 --> 00:13:47.346 A:middle
+delegate, which I'll get into in
+
+00:13:47.346 --> 00:13:47.686 A:middle
+a bit.
+
+00:13:48.366 --> 00:13:50.016 A:middle
+And then we then present the
+
+00:13:50.046 --> 00:13:51.276 A:middle
+previewController modally.
+
+00:13:52.326 --> 00:13:53.086 A:middle
+Pretty simple, right.
+
+00:13:53.826 --> 00:13:54.976 A:middle
+So, let's take a look at the
+
+00:13:54.976 --> 00:13:56.476 A:middle
+protocol for a dataSource.
+
+00:13:58.336 --> 00:14:00.026 A:middle
+So, as I just mentioned, we need
+

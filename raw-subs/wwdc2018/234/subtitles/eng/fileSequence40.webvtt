@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:02.256 --> 00:40:03.616 A:middle
+Here's the constructor for the
+
+00:40:03.616 --> 00:40:04.596 A:middle
+Payment Request API.
+
+00:40:05.456 --> 00:40:07.406 A:middle
+It accepts three arguments.
+
+00:40:07.596 --> 00:40:10.466 A:middle
+We'll start by adding the
+
+00:40:10.466 --> 00:40:13.036 A:middle
+paymentMethod data object.
+
+00:40:16.636 --> 00:40:18.456 A:middle
+This contains the Apple Pay
+
+00:40:18.456 --> 00:40:20.826 A:middle
+paymentMethod identifier, along
+
+00:40:20.826 --> 00:40:22.256 A:middle
+with some options specific to
+
+00:40:22.256 --> 00:40:26.496 A:middle
+Apple Pay.
+
+00:40:26.696 --> 00:40:29.396 A:middle
+Following that, are the payment
+
+00:40:29.396 --> 00:40:29.956 A:middle
+details.
+
+00:40:30.406 --> 00:40:31.976 A:middle
+This is where we specify details
+
+00:40:31.976 --> 00:40:33.716 A:middle
+about the transaction, such as
+
+00:40:33.716 --> 00:40:35.366 A:middle
+my website's name, the total
+
+00:40:35.366 --> 00:40:37.086 A:middle
+amount, and each line time.
+
+00:40:37.636 --> 00:40:40.546 A:middle
+I kept things simple, and
+
+00:40:40.546 --> 00:40:41.556 A:middle
+decided that I'm just going to
+
+00:40:41.556 --> 00:40:43.396 A:middle
+charge $5 for everything on this
+
+00:40:43.396 --> 00:40:43.696 A:middle
+list.
+
+00:40:48.076 --> 00:40:50.346 A:middle
+Finally, the options argument
+
+00:40:50.776 --> 00:40:52.466 A:middle
+specifies what information I
+
+00:40:52.466 --> 00:40:54.006 A:middle
+need to collect from my user to
+
+00:40:54.006 --> 00:40:55.206 A:middle
+complete the transaction.
+
+00:40:55.746 --> 00:40:58.626 A:middle
+Let's switch back to the iPad
+
+00:40:58.626 --> 00:41:01.606 A:middle
+and add some supplies to my
+

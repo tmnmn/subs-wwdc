@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:56.336 --> 00:04:01.108 align:start position:16% line:-2
+AutoFill Credential
+Providerを有効にします
+
+00:04:01.208 --> 00:04:03.277 align:start position:27% line:-1
+すると必要な資格が追加され
+
+00:04:03.377 --> 00:04:06.547 align:start position:32% line:-2
+新しい認証サービスに
+リンクします
+
+00:04:06.647 --> 00:04:09.950 align:start position:27% line:-2
+これでパスワード自動入力の
+APIが提供されます
+
+00:04:12.419 --> 00:04:17.457 align:start position:0% line:-2
+次にAutoFill Credential Provider
+Extensionをプロジェクトに追加
+
+00:04:17.558 --> 00:04:20.459 align:start position:27% line:-2
+Xcode 10には
+テンプレートが備わってます
+
+00:04:22.529 --> 00:04:25.065 align:start position:18% line:-2
+これにより
+ViewControllerクラスと
+
+00:04:25.165 --> 00:04:28.969 align:start position:7% line:-2
+ASCredentialProviderView
+Controllerのサブクラスを作成
+
+00:04:29.069 --> 00:04:31.171 align:start position:23% line:-2
+自動入力にExtensionの
+起動が必要な場合
+
+00:04:31.271 --> 00:04:34.608 align:start position:21% line:-2
+このクラスのインスタンスが
+作成されて メソッドが呼び出され
+
+00:04:34.708 --> 00:04:36.743 align:start position:27% line:-1
+サブクラスは上書きされます
+
+00:04:37.978 --> 00:04:40.447 align:start position:32% line:-2
+プロジェクトの構成が
+終わったら
+
+00:04:40.547 --> 00:04:45.819 align:start position:18% line:-2
+QuickTypeバーから呼び出せる
+クレデンシャルリストを実装します
+
+00:04:45.919 --> 00:04:47.454 align:start position:32% line:-1
+その方法を説明します
+
+00:04:49.156 --> 00:04:53.894 align:start position:18% line:-2
+サインインでQuickTypeバーに
+クレデンシャルを呼び出せます
+
+00:04:54.862 --> 00:04:59.633 align:start position:16% line:-2
+この時 自動入力でExtensionに
+ユーザのログイン場所が知らされ
+
+00:04:59.733 --> 00:05:02.469 align:start position:25% line:-2
+最も関連性の高い
+クレデンシャルが提案されます
+

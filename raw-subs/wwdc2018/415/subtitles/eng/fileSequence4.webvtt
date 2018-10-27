@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.176 --> 00:04:01.916 A:middle
+Similarly, a linker task
+
+00:04:01.946 --> 00:04:03.536 A:middle
+consumes a number of object
+
+00:04:03.536 --> 00:04:04.986 A:middle
+files produced by the compiler
+
+00:04:04.986 --> 00:04:06.096 A:middle
+in previous tasks.
+
+00:04:06.456 --> 00:04:07.966 A:middle
+And produces and executable or
+
+00:04:07.966 --> 00:04:08.806 A:middle
+library output.
+
+00:04:09.026 --> 00:04:10.426 A:middle
+Like the PetWall executable that
+
+00:04:10.426 --> 00:04:11.616 A:middle
+will go into our .app bundle.
+
+00:04:12.286 --> 00:04:13.306 A:middle
+And hopefully you're starting to
+
+00:04:13.306 --> 00:04:14.756 A:middle
+see a bit of a pattern emerge
+
+00:04:14.756 --> 00:04:14.976 A:middle
+here.
+
+00:04:16.055 --> 00:04:17.046 A:middle
+You can see how the dependency
+
+00:04:17.046 --> 00:04:18.736 A:middle
+information flows through this
+
+00:04:18.736 --> 00:04:20.706 A:middle
+graph structure which ultimately
+
+00:04:20.706 --> 00:04:22.276 A:middle
+informs the order of execution.
+
+00:04:23.016 --> 00:04:24.246 A:middle
+Now if you look at the
+
+00:04:24.246 --> 00:04:26.036 A:middle
+compilation tasks in the graph
+
+00:04:26.036 --> 00:04:27.676 A:middle
+as sort of like lanes of
+
+00:04:27.866 --> 00:04:28.316 A:middle
+traffic.
+
+00:04:28.656 --> 00:04:29.836 A:middle
+You can see hoe the compilation
+
+00:04:29.836 --> 00:04:31.656 A:middle
+tasks are totally independent in
+
+00:04:31.656 --> 00:04:32.866 A:middle
+their own lanes and can
+
+00:04:32.866 --> 00:04:34.206 A:middle
+therefore run in parallel.
+
+00:04:34.256 --> 00:04:36.526 A:middle
+And because the linker task
+
+00:04:36.576 --> 00:04:37.716 A:middle
+takes everything else's input,
+
+00:04:38.106 --> 00:04:39.946 A:middle
+we know that has to come last.
+
+00:04:41.016 --> 00:04:42.826 A:middle
+So the build system uses
+
+00:04:42.826 --> 00:04:44.206 A:middle
+dependency information to
+
+00:04:44.206 --> 00:04:45.266 A:middle
+determine the order in which
+
+00:04:45.266 --> 00:04:47.126 A:middle
+tasks should be run and which
+
+00:04:47.126 --> 00:04:49.136 A:middle
+tasks can be run in parallel and
+
+00:04:49.256 --> 00:04:50.896 A:middle
+we call this dependency order.
+
+00:04:51.756 --> 00:04:52.606 A:middle
+Now that we've covered what the
+
+00:04:52.606 --> 00:04:54.526 A:middle
+build process is, let's go into
+
+00:04:54.526 --> 00:04:56.276 A:middle
+a little more detail on how it
+
+00:04:56.276 --> 00:04:56.616 A:middle
+works.
+
+00:04:57.476 --> 00:04:58.966 A:middle
+What happens when you press
+
+00:04:58.966 --> 00:04:59.316 A:middle
+build?
+

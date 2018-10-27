@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.006 --> 00:08:00.176 A:middle
+You can set this up in App Store
+
+00:08:00.176 --> 00:08:01.416 A:middle
+Connect and store it on your
+
+00:08:01.416 --> 00:08:01.696 A:middle
+server.
+
+00:08:03.086 --> 00:08:04.206 A:middle
+And when you send this receipt
+
+00:08:04.206 --> 00:08:05.556 A:middle
+data to the verify receipt
+
+00:08:05.556 --> 00:08:06.946 A:middle
+endpoint the verify receipt
+
+00:08:06.946 --> 00:08:08.406 A:middle
+endpoint will respond with JSON
+
+00:08:08.406 --> 00:08:10.546 A:middle
+payload that looks a little like
+
+00:08:11.496 --> 00:08:11.596 A:middle
+this.
+
+00:08:11.816 --> 00:08:13.336 A:middle
+The first thing to check when
+
+00:08:13.336 --> 00:08:14.326 A:middle
+you're verifying that this
+
+00:08:14.326 --> 00:08:15.666 A:middle
+transaction is authentic is this
+
+00:08:15.836 --> 00:08:16.476 A:middle
+status field.
+
+00:08:17.236 --> 00:08:18.476 A:middle
+This is an indication that Apple
+
+00:08:18.476 --> 00:08:19.706 A:middle
+has actually issued this
+
+00:08:19.706 --> 00:08:20.876 A:middle
+document in the first place.
+
+00:08:21.766 --> 00:08:22.886 A:middle
+Once you've verified that the
+
+00:08:22.886 --> 00:08:24.486 A:middle
+status is zero like this you can
+
+00:08:24.486 --> 00:08:25.346 A:middle
+check the contents of the
+
+00:08:25.346 --> 00:08:27.676 A:middle
+receipt portion of this payload.
+
+00:08:27.986 --> 00:08:29.236 A:middle
+This is the decoded version of
+
+00:08:29.236 --> 00:08:30.496 A:middle
+that binary data that you just
+
+00:08:30.556 --> 00:08:32.385 A:middle
+sent to verify receipt endpoint.
+
+00:08:32.385 --> 00:08:33.645 A:middle
+So in here you can do things
+
+00:08:33.645 --> 00:08:35.336 A:middle
+like verify that the bundle ID
+
+00:08:35.336 --> 00:08:37.426 A:middle
+in this receipt matches your
+
+00:08:37.426 --> 00:08:38.246 A:middle
+app's bundle ID.
+
+00:08:39.076 --> 00:08:40.446 A:middle
+And then you can inspect the
+
+00:08:40.446 --> 00:08:42.326 A:middle
+in-app array, this contains a
+
+00:08:42.326 --> 00:08:43.556 A:middle
+list of transactions for this
+
+00:08:43.556 --> 00:08:45.156 A:middle
+particular user for your app.
+
+00:08:45.156 --> 00:08:46.596 A:middle
+And you can verify that the
+
+00:08:46.596 --> 00:08:49.356 A:middle
+product ID associated with this
+
+00:08:49.356 --> 00:08:50.846 A:middle
+receipt is the one associated
+
+00:08:50.846 --> 00:08:51.296 A:middle
+with your app.
+
+00:08:52.566 --> 00:08:53.886 A:middle
+So assuming that these all match
+
+00:08:54.476 --> 00:08:55.856 A:middle
+you're determining that this
+
+00:08:55.856 --> 00:08:57.326 A:middle
+receipt entitles this particular
+
+00:08:57.326 --> 00:08:58.676 A:middle
+user to your subscription
+
+00:08:58.676 --> 00:08:59.986 A:middle
+product you're ready to go ahead
+
+00:08:59.986 --> 00:09:01.096 A:middle
+now with that third step,
+

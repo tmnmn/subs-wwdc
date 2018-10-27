@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.996 --> 00:02:01.566 A:middle
+Double tapping zooms into the
+
+00:02:01.566 --> 00:02:03.256 A:middle
+page and a subsequent double tab
+
+00:02:03.406 --> 00:02:04.376 A:middle
+zooms back out.
+
+00:02:06.246 --> 00:02:07.676 A:middle
+Lastly, a firm press reveals
+
+00:02:07.676 --> 00:02:09.246 A:middle
+back and forward buttons, but
+
+00:02:09.246 --> 00:02:10.795 A:middle
+you can also swipe forwards or
+
+00:02:10.795 --> 00:02:12.036 A:middle
+backwards to navigate through
+
+00:02:12.036 --> 00:02:12.646 A:middle
+your history.
+
+00:02:13.266 --> 00:02:14.986 A:middle
+It's important to note that we
+
+00:02:14.986 --> 00:02:16.276 A:middle
+optimized WebKit for quickly
+
+00:02:16.276 --> 00:02:17.286 A:middle
+consuming content.
+
+00:02:17.896 --> 00:02:19.106 A:middle
+Therefore, a limited set of
+
+00:02:19.106 --> 00:02:20.396 A:middle
+features are not supported at
+
+00:02:20.396 --> 00:02:20.966 A:middle
+this time.
+
+00:02:21.726 --> 00:02:23.206 A:middle
+These include video playback,
+
+00:02:23.336 --> 00:02:25.006 A:middle
+service workers, and web fonts.
+
+00:02:26.536 --> 00:02:27.906 A:middle
+Now let's see how WebKit lays
+
+00:02:27.906 --> 00:02:29.616 A:middle
+out web pages on Apple Watch.
+
+00:02:32.086 --> 00:02:33.436 A:middle
+Most responsive content is
+
+00:02:33.436 --> 00:02:34.786 A:middle
+already well proportioned when
+
+00:02:34.786 --> 00:02:37.206 A:middle
+laid out at 320 CSS pixels, the
+
+00:02:37.206 --> 00:02:38.516 A:middle
+width of iPhone SE.
+
+00:02:40.096 --> 00:02:41.146 A:middle
+We ensure that it's also
+
+00:02:41.146 --> 00:02:42.626 A:middle
+well-proportioned on Apple Watch
+
+00:02:42.626 --> 00:02:44.196 A:middle
+by laying out at this width and
+
+00:02:44.196 --> 00:02:45.766 A:middle
+then computing the initial scale
+
+00:02:45.766 --> 00:02:47.056 A:middle
+of the page such that the
+
+00:02:47.056 --> 00:02:48.396 A:middle
+content width fits within the
+
+00:02:48.396 --> 00:02:48.976 A:middle
+viewport.
+
+00:02:49.586 --> 00:02:51.206 A:middle
+This means that text and images
+
+00:02:51.206 --> 00:02:52.636 A:middle
+may appear smaller but the
+
+00:02:52.636 --> 00:02:54.046 A:middle
+overall layout of the page is
+
+00:02:54.046 --> 00:02:54.626 A:middle
+preserved.
+
+00:02:56.736 --> 00:02:58.216 A:middle
+When this technique is used, the
+
+00:02:58.216 --> 00:03:00.056 A:middle
+viewport meta-tags initial scale
+

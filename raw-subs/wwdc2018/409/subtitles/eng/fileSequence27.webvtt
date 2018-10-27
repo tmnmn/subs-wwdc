@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.276 --> 00:27:01.536 A:middle
+address and this is a big
+
+00:27:01.536 --> 00:27:02.386 A:middle
+security problem.
+
+00:27:02.956 --> 00:27:04.826 A:middle
+So if an attacker controls the
+
+00:27:04.826 --> 00:27:06.446 A:middle
+string that I'm copying which is
+
+00:27:06.716 --> 00:27:08.496 A:middle
+not that hard, then it can
+
+00:27:08.496 --> 00:27:09.776 A:middle
+control the return address.
+
+00:27:10.276 --> 00:27:11.496 A:middle
+If it can control the return
+
+00:27:11.496 --> 00:27:12.626 A:middle
+address then they control
+
+00:27:12.626 --> 00:27:13.806 A:middle
+basically what the program does
+
+00:27:13.806 --> 00:27:14.706 A:middle
+next, so it's a big security
+
+00:27:14.706 --> 00:27:14.976 A:middle
+problem.
+
+00:27:19.076 --> 00:27:21.446 A:middle
+So if you had a test that caught
+
+00:27:21.506 --> 00:27:23.586 A:middle
+this and you ran the address
+
+00:27:23.586 --> 00:27:26.376 A:middle
+sanitizer, then you will have
+
+00:27:26.446 --> 00:27:27.886 A:middle
+had an easy way to fix this.
+
+00:27:28.436 --> 00:27:29.266 A:middle
+And really what I should have
+
+00:27:29.266 --> 00:27:32.686 A:middle
+done here is strncpy that knows
+
+00:27:32.686 --> 00:27:34.546 A:middle
+about the size or even better
+
+00:27:34.546 --> 00:27:35.876 A:middle
+use a higher-level API like
+
+00:27:35.876 --> 00:27:36.886 A:middle
+NSString or [inaudible] string.
+
+00:27:37.406 --> 00:27:40.736 A:middle
+But still sometimes these bugs
+
+00:27:40.736 --> 00:27:42.236 A:middle
+can survive into release builds
+
+00:27:43.156 --> 00:27:46.566 A:middle
+and we avoid these by using
+
+00:27:46.566 --> 00:27:48.366 A:middle
+what's called the Stack
+
+00:27:49.496 --> 00:27:49.766 A:middle
+Protector.
+
+00:27:49.766 --> 00:27:51.086 A:middle
+So the Stack Protector changes
+
+00:27:51.086 --> 00:27:52.176 A:middle
+the layout of the stack frame to
+
+00:27:52.176 --> 00:27:54.716 A:middle
+add a new field the canary so
+
+00:27:55.416 --> 00:27:58.616 A:middle
+that when we do our write we
+
+00:27:58.616 --> 00:28:00.136 A:middle
+have a little bit of code right
+

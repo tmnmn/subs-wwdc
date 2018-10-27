@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.606 --> 00:27:00.056 A:middle
+system.
+
+00:27:00.866 --> 00:27:04.076 A:middle
+Second, the operating system
+
+00:27:04.076 --> 00:27:06.796 A:middle
+doesn't just, doesn't use just
+
+00:27:06.926 --> 00:27:08.396 A:middle
+how much memory your app is
+
+00:27:08.396 --> 00:27:09.606 A:middle
+using when designing when to
+
+00:27:09.606 --> 00:27:11.176 A:middle
+terminate your app, but also
+
+00:27:11.176 --> 00:27:12.246 A:middle
+what else is going on in the
+
+00:27:12.246 --> 00:27:13.206 A:middle
+operating system.
+
+00:27:13.696 --> 00:27:15.446 A:middle
+So just because we're not to the
+
+00:27:15.446 --> 00:27:16.956 A:middle
+red yet doesn't mean we're not
+
+00:27:16.956 --> 00:27:19.176 A:middle
+in danger of being terminated.
+
+00:27:20.076 --> 00:27:22.196 A:middle
+And third, this represents a
+
+00:27:22.376 --> 00:27:23.606 A:middle
+terrible experience for the
+
+00:27:23.606 --> 00:27:24.076 A:middle
+user.
+
+00:27:24.636 --> 00:27:25.706 A:middle
+In fact, if you look at the
+
+00:27:25.706 --> 00:27:27.736 A:middle
+usage comparison chart, you can
+
+00:27:27.736 --> 00:27:29.776 A:middle
+see other processes has zero
+
+00:27:29.776 --> 00:27:30.856 A:middle
+kilobytes of memory.
+
+00:27:31.496 --> 00:27:32.726 A:middle
+That's because they've all been
+
+00:27:32.726 --> 00:27:33.866 A:middle
+jettisoned by the operating
+
+00:27:33.866 --> 00:27:36.906 A:middle
+system to make room for our app.
+
+00:27:36.906 --> 00:27:38.266 A:middle
+You should all take a good look
+
+00:27:38.266 --> 00:27:39.856 A:middle
+at me and give me the stink eye
+
+00:27:40.376 --> 00:27:41.686 A:middle
+because now when the user has to
+
+00:27:41.686 --> 00:27:43.156 A:middle
+go watch your app, you have to
+
+00:27:43.156 --> 00:27:44.076 A:middle
+load from scratch.
+
+00:27:45.246 --> 00:27:47.046 A:middle
+So James makes some pretty good
+
+00:27:47.046 --> 00:27:48.316 A:middle
+points, so I think, in general,
+
+00:27:48.316 --> 00:27:49.566 A:middle
+we want to get this needle as
+
+00:27:49.566 --> 00:27:51.856 A:middle
+far to the left as possible
+
+00:27:51.856 --> 00:27:53.216 A:middle
+instead of as far to the right.
+
+00:27:54.076 --> 00:27:55.766 A:middle
+So let's see what we can do.
+
+00:27:56.256 --> 00:27:57.496 A:middle
+Let me go ahead and take a look
+
+00:27:57.496 --> 00:27:58.706 A:middle
+at the Memgraph file.
+
+00:27:59.266 --> 00:28:03.496 A:middle
+And I have a couple go-to tricks
+

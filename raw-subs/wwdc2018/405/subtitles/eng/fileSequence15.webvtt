@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.236 --> 00:15:01.566 A:middle
+But you may want to be able to
+
+00:15:01.566 --> 00:15:03.066 A:middle
+turn your signposts off.
+
+00:15:03.406 --> 00:15:05.186 A:middle
+Maybe you want to eliminate as
+
+00:15:05.186 --> 00:15:06.836 A:middle
+much overhead as you can from a
+
+00:15:06.836 --> 00:15:07.656 A:middle
+particular code path.
+
+00:15:08.176 --> 00:15:10.186 A:middle
+Or you might have two categories
+
+00:15:10.186 --> 00:15:11.386 A:middle
+of signposts, both of which are
+
+00:15:11.386 --> 00:15:13.126 A:middle
+super-high volume and you really
+
+00:15:13.126 --> 00:15:14.546 A:middle
+are only interested in debugging
+
+00:15:14.546 --> 00:15:16.016 A:middle
+one or the other at a given
+
+00:15:16.016 --> 00:15:17.096 A:middle
+point in time.
+
+00:15:17.876 --> 00:15:19.536 A:middle
+Well, to do that we're going to
+
+00:15:19.536 --> 00:15:20.806 A:middle
+take advantage of a feature of
+
+00:15:20.856 --> 00:15:23.266 A:middle
+OSLog, the disabled log handle.
+
+00:15:24.136 --> 00:15:25.896 A:middle
+So the disabled log handle is a
+
+00:15:26.386 --> 00:15:27.226 A:middle
+simple handle.
+
+00:15:27.276 --> 00:15:30.036 A:middle
+And what it does is every OSLog
+
+00:15:30.096 --> 00:15:31.846 A:middle
+and os signpost call made
+
+00:15:31.846 --> 00:15:33.766 A:middle
+against that handle will just
+
+00:15:33.766 --> 00:15:35.226 A:middle
+turn into something very close
+
+00:15:35.226 --> 00:15:35.736 A:middle
+to a no-op.
+
+00:15:36.556 --> 00:15:38.186 A:middle
+In fact, if you adopt this in C,
+
+00:15:38.466 --> 00:15:39.576 A:middle
+we'll even do the check for you
+
+00:15:39.626 --> 00:15:41.506 A:middle
+in line and then we won't even
+
+00:15:41.506 --> 00:15:42.346 A:middle
+evaluate the rest of the
+
+00:15:42.346 --> 00:15:42.856 A:middle
+arguments.
+
+00:15:43.546 --> 00:15:45.246 A:middle
+So you can just change this
+
+00:15:45.246 --> 00:15:46.156 A:middle
+handle at runtime.
+
+00:15:46.566 --> 00:15:47.746 A:middle
+Let me show you an example.
+
+00:15:48.426 --> 00:15:51.226 A:middle
+So we're going to go back to the
+
+00:15:51.226 --> 00:15:52.816 A:middle
+very first example code that we
+
+00:15:52.816 --> 00:15:53.146 A:middle
+had.
+
+00:15:53.146 --> 00:15:54.846 A:middle
+And you see that initialization
+
+00:15:54.846 --> 00:15:56.066 A:middle
+of that log handle up top.
+
+00:15:56.896 --> 00:15:59.066 A:middle
+Well, instead I'm going to make
+
+00:15:59.106 --> 00:16:00.596 A:middle
+that initialization conditional.
+

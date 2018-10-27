@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.198 --> 00:30:02.135 align:start position:23% line:-1
+“..<”演算子で作られた型は
+
+00:30:02.236 --> 00:30:05.005 align:start position:23% line:-1
+Range型と命名されています
+
+00:30:05.239 --> 00:30:07.941 align:start position:27% line:-1
+土台のバウンド型に汎用的で
+
+00:30:08.041 --> 00:30:12.513 align:start position:25% line:-2
+ダブルのRangeに
+上限と下限だけ格納しています
+
+00:30:12.613 --> 00:30:13.847 align:start position:39% line:-1
+シンプルです
+
+00:30:14.214 --> 00:30:16.150 align:start position:25% line:-1
+Swift 4.2より前は―
+
+00:30:16.583 --> 00:30:20.254 align:start position:23% line:-2
+IntegerRangeという
+違う型から得ていました
+
+00:30:20.354 --> 00:30:22.523 align:start position:20% line:-1
+CountableRange型です
+
+00:30:23.056 --> 00:30:25.959 align:start position:23% line:-1
+構造的にはRange型と同じで
+
+00:30:26.059 --> 00:30:29.096 align:start position:25% line:-2
+型パラメータ１つと
+上限下限のバウンドがあります
+
+00:30:29.296 --> 00:30:33.066 align:start position:27% line:-2
+しかしこれは バウンド型に
+要件を追加します
+
+00:30:33.167 --> 00:30:37.671 align:start position:21% line:-2
+バウンドがStrideableで
+全要素を列挙する要件です
+
+00:30:37.771 --> 00:30:42.810 align:start position:9% line:-2
+RandomAccessCollectionに
+CountableRangeを準拠させ―
+
+00:30:43.744 --> 00:30:47.114 align:start position:23% line:-1
+反復ループを可能にさせるのです
+
+00:30:47.981 --> 00:30:51.084 align:start position:32% line:-2
+条件付き準拠なら
+もっとうまくいきます
+
+00:30:51.418 --> 00:30:56.457 align:start position:25% line:-2
+では 基本的なRange型を
+コレクションに変えます
+
+00:30:56.823 --> 00:31:01.195 align:start position:18% line:-2
+バウンド型には
+Strideableの要件があります
+

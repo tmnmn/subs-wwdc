@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:56.650 --> 00:32:00.387 align:start position:27% line:-2
+続いて デヴィンが話すのは
+Swiftと―
+
+00:32:00.621 --> 00:32:02.489 align:start position:18% line:-1
+Clang Modulesの関係です
+
+00:32:02.589 --> 00:32:08.962 align:start position:43% line:-1
+(拍手)
+
+00:32:09.062 --> 00:32:10.130 align:start position:41% line:-1
+ありがとう
+
+00:32:11.331 --> 00:32:13.300 align:start position:27% line:-1
+これから ご説明するのは―
+
+00:32:13.634 --> 00:32:19.506 align:start position:18% line:-2
+Swiftとビルドシステムが協力して
+宣言を見つける方法です
+
+00:32:21.408 --> 00:32:23.710 align:start position:36% line:-2
+ユルゲンの話を
+振り返りましょう
+
+00:32:23.811 --> 00:32:27.214 align:start position:21% line:-2
+Objective-Cファイルは
+個別にコンパイルされます
+
+00:32:27.781 --> 00:32:31.919 align:start position:29% line:-2
+別のファイルを探すのに
+クラスを参照したい場合―
+
+00:32:32.386 --> 00:32:36.256 align:start position:29% line:-2
+クラスを宣言したヘッダを
+インポートします
+
+00:32:37.424 --> 00:32:41.328 align:start position:25% line:-2
+でも Swiftではヘッダを
+記述する必要がありません
+
+00:32:41.528 --> 00:32:44.798 align:start position:29% line:-2
+初めて開発言語を学ぶ人に
+親切ですね
+
+00:32:44.898 --> 00:32:49.036 align:start position:23% line:-2
+別々のファイルで
+宣言を繰り返す必要もありません
+
+00:32:50.337 --> 00:32:54.541 align:start position:27% line:-2
+ただ コンパイラにとっては
+記録管理の手間が増えます
+
+00:32:54.942 --> 00:32:57.444 align:start position:30% line:-2
+どうやって記録するのか
+説明します
+
+00:32:59.713 --> 00:33:02.282 align:start position:23% line:-1
+PetWallで見てみましょう
+

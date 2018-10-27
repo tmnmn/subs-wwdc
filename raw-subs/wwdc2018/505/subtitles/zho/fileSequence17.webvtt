@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:00.120 --> 00:17:02.489 align:middle line:-2
+我松开鼠标按键的话
+什么都没有发生
+
+00:17:02.856 --> 00:17:04.758 align:middle line:-1
+资源会被加入到项目中
+
+00:17:04.825 --> 00:17:07.994 align:middle line:-1
+但是我的扩展并没有列出变化通知
+
+00:17:08.060 --> 00:17:11.464 align:middle line:-1
+而且也不知道加入到项目中的资源
+
+00:17:12.633 --> 00:17:14.768 align:middle line:-2
+让我们切换回Xcode
+来修复一下吧
+
+00:17:16.670 --> 00:17:21.642 align:middle line:-2
+在我的projectViewController中
+我有begin和resumeProject方法
+
+00:17:21.708 --> 00:17:24.810 align:middle line:-2
+它们是projectExtensionController
+协议的一部分
+
+00:17:25.078 --> 00:17:28.182 align:middle line:-1
+这里我想要注册观察到的变化
+
+00:17:31.051 --> 00:17:34.054 align:middle line:-1
+我们在两个方法中有着相同的代码
+
+00:17:36.490 --> 00:17:39.626 align:middle line:-2
+首先我们获得了
+感兴趣的PhotoKit对象
+
+00:17:39.893 --> 00:17:43.697 align:middle line:-1
+我们对添加到项目中的资源感兴趣
+
+00:17:43.764 --> 00:17:47.000 align:middle line:-2
+所以我们获取了一份项目中
+所有资源的结果
+
+00:17:47.534 --> 00:17:51.338 align:middle line:-1
+然后我们注册了库的资源变化观察者
+
+00:17:51.772 --> 00:17:54.708 align:middle line:-1
+在项目结束的时候 我们再取消注册
+
+00:17:56.043 --> 00:17:59.613 align:middle line:-2
+由于Xcode提示我们
+没有实现这个协议
+
+00:17:59.680 --> 00:18:01.181 align:middle line:-1
+我们要将变化观察者
+

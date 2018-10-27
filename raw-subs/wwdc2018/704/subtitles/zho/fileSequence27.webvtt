@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:57.751 --> 00:27:01.054 align:middle line:-1
+那么交易就会静默地失败
+
+00:27:02.189 --> 00:27:04.825 align:middle line:-2
+这意味着什么都
+不会返回到你的交易观察器
+
+00:27:05.659 --> 00:27:09.630 align:middle line:-2
+此外 24小时内的
+所有请求购买交易
+
+00:27:09.696 --> 00:27:12.099 align:middle line:-1
+都会合并为一个任务
+
+00:27:13.467 --> 00:27:15.502 align:middle line:-2
+所以重要的一点是
+你不该等待延期交易
+
+00:27:15.569 --> 00:27:18.672 align:middle line:-1
+甚至不要期望它们会回来
+
+00:27:19.273 --> 00:27:21.875 align:middle line:-2
+你该确保你不要锁定用户界面
+并允许用户尽可能
+
+00:27:21.942 --> 00:27:23.210 align:middle line:-1
+继续使用你的app
+
+00:27:24.645 --> 00:27:28.048 align:middle line:-1
+另一个重要提示是 在app内购买
+
+00:27:28.115 --> 00:27:31.418 align:middle line:-2
+已经通过Apple托管
+SKDownload内容时
+
+00:27:31.485 --> 00:27:35.455 align:middle line:-2
+你该在调用finishTransaction前
+先停止下载托管的内容
+
+00:27:36.890 --> 00:27:38.792 align:middle line:-2
+这是因为在你调用了
+finishTransaction之后
+
+00:27:39.259 --> 00:27:43.430 align:middle line:-2
+所有SKDownloads
+都将被取消并且不能被重新下载
+
+00:27:44.231 --> 00:27:45.199 align:middle line:-1
+如果你不小心这么做了
+
+00:27:45.666 --> 00:27:49.069 align:middle line:-2
+你须调用restoreTransactions
+开始一个新下载
+
+00:27:49.303 --> 00:27:51.038 align:middle line:-1
+即使你的下载失败了
+
+00:27:51.805 --> 00:27:55.108 align:middle line:-2
+也应该先暂停调用finishTransaction
+直到你重新下载
+
+00:27:55.175 --> 00:27:58.378 align:middle line:-2
+并且成功下载
+而且将该内容提供给用户
+

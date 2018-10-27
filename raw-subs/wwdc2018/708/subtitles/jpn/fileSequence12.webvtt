@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:54.781 --> 00:12:01.555 align:start position:16% line:-2
+Core MLフォーマットの場合は
+量子化にCore ML Toolsを使いますが
+
+00:12:01.655 --> 00:12:04.591 align:start position:20% line:-1
+Core ML 2の場合は自動です
+
+00:12:05.492 --> 00:12:08.195 align:start position:25% line:-1
+量子化モデルの学習も可能です
+
+00:12:09.263 --> 00:12:12.599 align:start position:25% line:-1
+ゼロから量子化して学習ことも
+
+00:12:12.699 --> 00:12:15.802 align:start position:25% line:-1
+既存モデルの再学習も可能です
+
+00:12:16.403 --> 00:12:21.909 align:start position:25% line:-2
+量子化モデルの取得後に
+Core MLに変換します
+
+00:12:22.209 --> 00:12:25.345 align:start position:32% line:-2
+Appへの
+変更はありません
+
+00:12:25.579 --> 00:12:29.483 align:start position:36% line:-2
+モデル内の値は
+異なる精度ですが
+
+00:12:29.583 --> 00:12:33.353 align:start position:34% line:-2
+インターフェイスは
+全く変更されません
+
+00:12:35.522 --> 00:12:38.792 align:start position:29% line:-1
+ただし 量子化モデルでは―
+
+00:12:38.992 --> 00:12:43.764 align:start position:27% line:-2
+元の浮動小数点モデルに比べて
+低精度の近似値となります
+
+00:12:44.231 --> 00:12:49.136 align:start position:25% line:-2
+つまり正確性とモデルサイズの
+トレードオフがあるのです
+
+00:12:49.703 --> 00:12:53.407 align:start position:27% line:-2
+このトレードオフはモデルや
+ユースケースに依存します
+
+00:12:53.774 --> 00:12:56.243 align:start position:29% line:-1
+研究が活発な分野なので―
+
+00:12:56.443 --> 00:12:59.947 align:start position:34% line:-2
+常に量子化モデルの
+精度をチェックし
+

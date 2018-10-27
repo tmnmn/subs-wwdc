@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:57.216 --> 00:32:00.376 A:middle
+pass my Memgraph file.
+
+00:32:01.266 --> 00:32:02.806 A:middle
+But I really only care about the
+
+00:32:02.896 --> 00:32:04.126 A:middle
+CG image memory.
+
+00:32:04.336 --> 00:32:05.936 A:middle
+I don't care about all the other
+
+00:32:05.936 --> 00:32:09.186 A:middle
+virtual memory regions that
+
+00:32:09.186 --> 00:32:10.516 A:middle
+vmmap will tell me about.
+
+00:32:10.516 --> 00:32:12.026 A:middle
+So I'm going to go ahead and use
+
+00:32:12.026 --> 00:32:15.876 A:middle
+grep to just show me the lines
+
+00:32:15.906 --> 00:32:17.736 A:middle
+that talk about CG image.
+
+00:32:18.016 --> 00:32:18.896 A:middle
+So let's see what that looks
+
+00:32:18.896 --> 00:32:19.116 A:middle
+like.
+
+00:32:20.016 --> 00:32:21.336 A:middle
+So now, I have three lines.
+
+00:32:21.646 --> 00:32:24.636 A:middle
+I see there's two virtual memory
+
+00:32:24.636 --> 00:32:25.096 A:middle
+regions.
+
+00:32:25.426 --> 00:32:26.646 A:middle
+There, and I see their start
+
+00:32:26.646 --> 00:32:28.576 A:middle
+address and their end address.
+
+00:32:28.906 --> 00:32:30.416 A:middle
+And then, I can see these are
+
+00:32:30.416 --> 00:32:31.636 A:middle
+the same columns as above.
+
+00:32:31.636 --> 00:32:34.006 A:middle
+This is virtual, resident,
+
+00:32:34.516 --> 00:32:36.066 A:middle
+dirty, and compressed.
+
+00:32:36.686 --> 00:32:37.736 A:middle
+And this last line here is
+
+00:32:37.736 --> 00:32:39.586 A:middle
+actually the summary line again.
+
+00:32:40.536 --> 00:32:43.216 A:middle
+So that's the same data that was
+
+00:32:43.216 --> 00:32:43.666 A:middle
+above.
+
+00:32:44.506 --> 00:32:45.966 A:middle
+Looking at my two regions, I can
+
+00:32:45.966 --> 00:32:47.616 A:middle
+see I have a really small region
+
+00:32:47.696 --> 00:32:49.026 A:middle
+and a really big region.
+
+00:32:49.416 --> 00:32:50.986 A:middle
+That big region is clearly what
+
+00:32:50.986 --> 00:32:53.706 A:middle
+I want to know more about.
+
+00:32:53.906 --> 00:32:55.876 A:middle
+So how can I find out more about
+
+00:32:55.876 --> 00:32:58.286 A:middle
+that particular VM region?
+
+00:32:58.936 --> 00:33:00.366 A:middle
+Well, I went looking through the
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.246 --> 00:24:00.516 A:middle
+So take care to only calculate
+
+00:24:00.516 --> 00:24:01.446 A:middle
+indices as needed.
+
+00:24:01.956 --> 00:24:04.146 A:middle
+So a little bit later, let's
+
+00:24:04.176 --> 00:24:04.816 A:middle
+bring threads into the
+
+00:24:04.816 --> 00:24:05.296 A:middle
+discussion.
+
+00:24:05.786 --> 00:24:06.576 A:middle
+I mentioned that one of the
+
+00:24:06.576 --> 00:24:07.966 A:middle
+questions that I ask is are your
+
+00:24:08.046 --> 00:24:09.866 A:middle
+threads accessible for multiple
+
+00:24:09.866 --> 00:24:10.166 A:middle
+threads?
+
+00:24:10.456 --> 00:24:13.256 A:middle
+And the reason why I ask this is
+
+00:24:13.256 --> 00:24:14.646 A:middle
+because our collections assume
+
+00:24:14.646 --> 00:24:15.686 A:middle
+that you will access them from a
+
+00:24:15.686 --> 00:24:16.416 A:middle
+single thread.
+
+00:24:17.156 --> 00:24:18.746 A:middle
+And this is a really good thing
+
+00:24:18.746 --> 00:24:19.916 A:middle
+for reasons of performance.
+
+00:24:20.516 --> 00:24:21.376 A:middle
+It makes it so that all
+
+00:24:21.376 --> 00:24:22.696 A:middle
+single-threaded use cases don't
+
+00:24:22.696 --> 00:24:24.716 A:middle
+have to pay the tax of locks or
+
+00:24:24.716 --> 00:24:26.416 A:middle
+any of those other primitives
+
+00:24:26.416 --> 00:24:27.386 A:middle
+that you could use to ensure
+
+00:24:27.386 --> 00:24:29.076 A:middle
+mutual exclusion.
+
+00:24:30.226 --> 00:24:31.196 A:middle
+And when threads are involved,
+
+00:24:31.356 --> 00:24:32.746 A:middle
+only developers using the
+
+00:24:32.746 --> 00:24:33.786 A:middle
+collections will have all the
+
+00:24:33.786 --> 00:24:35.066 A:middle
+information needed to restrict
+
+00:24:35.066 --> 00:24:36.556 A:middle
+access with the appropriate lock
+
+00:24:36.556 --> 00:24:38.056 A:middle
+or a serial queue at a much
+
+00:24:38.106 --> 00:24:39.346 A:middle
+higher level abstraction than us
+
+00:24:39.346 --> 00:24:40.466 A:middle
+lowly framework developers could
+
+00:24:40.466 --> 00:24:40.956 A:middle
+ever offer.
+
+00:24:40.956 --> 00:24:43.596 A:middle
+So let's see what these kinds of
+
+00:24:43.596 --> 00:24:44.356 A:middle
+problems could look like.
+
+00:24:45.536 --> 00:24:46.546 A:middle
+Let's suppose we have an array
+
+00:24:46.546 --> 00:24:47.596 A:middle
+that we aim to fill up with
+
+00:24:47.596 --> 00:24:49.896 A:middle
+sleeping bears, and to simulate
+
+00:24:49.896 --> 00:24:52.026 A:middle
+each bear being their own bear
+
+00:24:52.026 --> 00:24:52.926 A:middle
+and in charge of themselves,
+
+00:24:52.926 --> 00:24:53.796 A:middle
+we're going to get access to a
+
+00:24:53.886 --> 00:24:56.356 A:middle
+concurrent dispatch queue that
+
+00:24:56.356 --> 00:24:57.496 A:middle
+we'll use to tell each bear to
+
+00:24:57.496 --> 00:24:58.036 A:middle
+go to sleep.
+
+00:24:58.156 --> 00:24:59.936 A:middle
+And because this is a concurrent
+
+00:24:59.936 --> 00:25:01.196 A:middle
+dispatch queue, it's some time
+

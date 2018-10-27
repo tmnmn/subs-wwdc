@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:57.511 --> 00:28:03.217 align:start position:23% line:-2
+ARKit APIはどのように
+この機能を有効にしていくか
+
+00:28:07.688 --> 00:28:12.092 align:start position:30% line:-2
+ワールドトラッキングの
+構成でやるべきことは
+
+00:28:12.259 --> 00:28:15.996 align:start position:14% line:-2
+environmentTexturing
+プロパティをautomaticにして
+
+00:28:17.030 --> 00:28:18.665 align:start position:36% line:-1
+セッションを起動
+
+00:28:19.032 --> 00:28:21.034 align:start position:36% line:-1
+こんなに簡単です
+
+00:28:21.835 --> 00:28:27.841 align:start position:43% line:-1
+(拍手)
+
+00:28:29.543 --> 00:28:34.548 align:start position:16% line:-2
+ARSessionはバックグラウンドで
+環境テクスチャリングを行い
+
+00:28:34.648 --> 00:28:37.484 align:start position:27% line:-1
+環境プローブアンカーとして
+
+00:28:37.885 --> 00:28:40.020 align:start position:27% line:-1
+環境テクスチャを提供します
+
+00:28:41.155 --> 00:28:44.725 align:start position:5% line:-2
+AREnvironmentProbeAnchorは
+ARAnchorのExtensionです
+
+00:28:44.825 --> 00:28:49.429 align:start position:25% line:-2
+6DoF･位置･向きを示す
+transformを持ちます
+
+00:28:50.898 --> 00:28:55.002 align:start position:20% line:-2
+さらにMTLTextureの形式の
+キューブマップがあります
+
+00:28:58.272 --> 00:29:02.543 align:start position:25% line:-2
+ARKitはキューブマップの
+物理的な範囲も示します
+

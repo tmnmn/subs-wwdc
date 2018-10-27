@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:57.197 --> 00:45:00.167 align:start position:23% line:-2
+printHierarchyを
+実行すると―
+
+00:45:00.500 --> 00:45:05.906 align:start position:11% line:-2
+表示中のView Controllerと
+表示されたView Controllerと―
+
+00:45:06.473 --> 00:45:09.643 align:start position:11% line:-2
+parentViewControllerと
+childViewControllersと―
+
+00:45:09.743 --> 00:45:12.112 align:start position:9% line:-2
+presentationControllerの
+出力が取得可能
+
+00:45:12.212 --> 00:45:13.881 align:start position:21% line:-1
+まさに controller祭り
+
+00:45:14.281 --> 00:45:17.751 align:start position:20% line:-2
+ではスクリーンショットUIの
+printHierarchyを実行
+
+00:45:19.319 --> 00:45:22.389 align:start position:14% line:-2
+これは
+View Controllerの階層です
+
+00:45:22.523 --> 00:45:25.726 align:start position:12% line:-2
+問題のある
+View Controllerを調べると―
+
+00:45:25.826 --> 00:45:30.964 align:start position:27% line:-2
+出現状態で固まり
+コールバックに失敗していた
+
+00:45:31.064 --> 00:45:35.068 align:start position:27% line:-2
+そこで このコールバックの
+呼び出しをする所を調べ―
+
+00:45:35.168 --> 00:45:36.703 align:start position:36% line:-1
+問題を見つけます
+
+00:45:37.337 --> 00:45:42.676 align:start position:14% line:-2
+ビューやView Controllerの
+問題をこれで特定できます
+
+00:45:43.143 --> 00:45:46.413 align:start position:25% line:-2
+しかし時には
+もっと根本的な問題があります
+
+00:45:46.980 --> 00:45:51.218 align:start position:23% line:-2
+これには状態のデバッグに関する
+すばらしいヒントを
+
+00:45:51.852 --> 00:45:57.558 align:start position:14% line:-2
+LLDBのexpressionコマンドで
+任意のコードを実行できます
+
+00:45:57.925 --> 00:46:01.495 align:start position:27% line:-2
+ソースエディタ
+デバッガに直接 書き込み―
+

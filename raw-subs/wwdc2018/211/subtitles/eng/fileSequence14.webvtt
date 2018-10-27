@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.946 --> 00:14:00.546 A:middle
+And, for the best experience,
+
+00:14:00.776 --> 00:14:02.366 A:middle
+you should-- on all the shortcut
+
+00:14:02.366 --> 00:14:03.506 A:middle
+types, you can-- support
+
+00:14:03.506 --> 00:14:04.496 A:middle
+background execution.
+
+00:14:05.136 --> 00:14:06.686 A:middle
+Shortcut types that support
+
+00:14:06.686 --> 00:14:08.226 A:middle
+background execution provide
+
+00:14:08.226 --> 00:14:09.756 A:middle
+more acceleration to the user,
+
+00:14:09.756 --> 00:14:10.716 A:middle
+and so they'll actually be
+
+00:14:10.716 --> 00:14:12.056 A:middle
+suggested more frequently.
+
+00:14:13.726 --> 00:14:15.336 A:middle
+You can provide up to 16
+
+00:14:15.336 --> 00:14:16.826 A:middle
+shortcut types for every intent
+
+00:14:16.826 --> 00:14:17.446 A:middle
+that you define.
+
+00:14:18.766 --> 00:14:19.946 A:middle
+Now, once your intent is
+
+00:14:19.946 --> 00:14:21.696 A:middle
+defined, Xcode will
+
+00:14:21.696 --> 00:14:23.446 A:middle
+automatically code generate an
+
+00:14:24.016 --> 00:14:25.596 A:middle
+intent class and an intent
+
+00:14:25.596 --> 00:14:26.906 A:middle
+handling protocol.
+
+00:14:27.236 --> 00:14:29.176 A:middle
+In my case, we've generated the
+
+00:14:29.176 --> 00:14:31.666 A:middle
+OrderSoupIntent class and an
+
+00:14:31.746 --> 00:14:33.666 A:middle
+OrderSoupIntentHandling protocol
+
+00:14:33.806 --> 00:14:36.116 A:middle
+with properties that correspond
+
+00:14:36.266 --> 00:14:37.616 A:middle
+to what I just defined in my
+
+00:14:37.616 --> 00:14:39.146 A:middle
+intent definition file.
+
+00:14:39.816 --> 00:14:41.386 A:middle
+Because Xcode is doing code
+
+00:14:41.386 --> 00:14:42.396 A:middle
+generation, it's really
+
+00:14:42.396 --> 00:14:44.316 A:middle
+important to consider in which
+
+00:14:44.316 --> 00:14:45.886 A:middle
+targets Xcode is doing this code
+
+00:14:45.886 --> 00:14:47.486 A:middle
+generation, because you don't
+
+00:14:47.486 --> 00:14:48.796 A:middle
+want to end up with duplicate
+
+00:14:48.796 --> 00:14:50.586 A:middle
+instances of the same classes
+
+00:14:50.586 --> 00:14:51.576 A:middle
+that conflict with each other.
+
+00:14:52.606 --> 00:14:55.026 A:middle
+So, let's look at the targets in
+
+00:14:55.156 --> 00:14:56.706 A:middle
+the target membership section of
+
+00:14:56.736 --> 00:14:58.156 A:middle
+the inspector on my intent
+
+00:14:58.156 --> 00:14:58.876 A:middle
+definition file.
+

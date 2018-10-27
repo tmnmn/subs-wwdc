@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:58.726 --> 00:56:00.686 A:middle
+normal maped logs before.
+
+00:56:00.836 --> 00:56:02.436 A:middle
+Now, there's some great details
+
+00:56:02.436 --> 00:56:03.756 A:middle
+found in the ridges, but we can
+
+00:56:03.756 --> 00:56:04.746 A:middle
+definitely improve some of these
+
+00:56:04.746 --> 00:56:05.256 A:middle
+areas.
+
+00:56:06.366 --> 00:56:07.436 A:middle
+Now, as we look at the ambient
+
+00:56:07.436 --> 00:56:08.626 A:middle
+occlusion map, you can see how
+
+00:56:08.626 --> 00:56:10.366 A:middle
+we've added some regions of
+
+00:56:10.696 --> 00:56:11.386 A:middle
+self-shadowing.
+
+00:56:11.386 --> 00:56:12.956 A:middle
+So, lower portions of the log,
+
+00:56:12.956 --> 00:56:14.176 A:middle
+as well as around the small
+
+00:56:14.176 --> 00:56:15.026 A:middle
+embedded stumps.
+
+00:56:15.346 --> 00:56:17.746 A:middle
+And, after we apply the map to
+
+00:56:17.746 --> 00:56:19.196 A:middle
+our ambient occlusion property,
+
+00:56:19.446 --> 00:56:20.746 A:middle
+I hope you can see the benefits
+
+00:56:20.746 --> 00:56:22.286 A:middle
+of adding those baked detail
+
+00:56:22.286 --> 00:56:24.036 A:middle
+shadows without the need of
+
+00:56:24.036 --> 00:56:25.516 A:middle
+using expensive dynamic lights
+
+00:56:25.516 --> 00:56:26.066 A:middle
+in your scene.
+
+00:56:26.586 --> 00:56:30.266 A:middle
+When working in AR, we recommend
+
+00:56:30.266 --> 00:56:31.426 A:middle
+that you actually bake your
+
+00:56:31.426 --> 00:56:32.766 A:middle
+ambient occlusion into a map.
+
+00:56:33.316 --> 00:56:34.086 A:middle
+Which is what we've done for
+
+00:56:34.086 --> 00:56:34.456 A:middle
+CampfiAR.
+
+00:56:34.456 --> 00:56:36.426 A:middle
+Rather than use the alternative,
+
+00:56:37.086 --> 00:56:39.056 A:middle
+such as screen space ambient
+
+00:56:39.326 --> 00:56:40.306 A:middle
+occlusions, which is a
+
+00:56:40.306 --> 00:56:41.886 A:middle
+camera-based post-process
+
+00:56:41.886 --> 00:56:43.286 A:middle
+effect, and can potentially lead
+
+00:56:43.286 --> 00:56:45.256 A:middle
+to poor rendering performance in
+
+00:56:45.706 --> 00:56:47.076 A:middle
+your scene.
+
+00:56:47.176 --> 00:56:48.336 A:middle
+And, last but certainly not
+
+00:56:48.336 --> 00:56:50.686 A:middle
+least, be frugal with the use of
+
+00:56:50.686 --> 00:56:51.526 A:middle
+your transparency in your
+
+00:56:51.526 --> 00:56:52.346 A:middle
+materials materials.
+
+00:56:52.346 --> 00:56:53.926 A:middle
+If you must use transparencies,
+
+00:56:54.126 --> 00:56:54.956 A:middle
+we recommend that you use
+
+00:56:54.956 --> 00:56:56.336 A:middle
+separate materials for objects
+
+00:56:56.336 --> 00:56:57.506 A:middle
+where you see a combination of
+
+00:56:57.716 --> 00:56:59.066 A:middle
+transparent and non-transparent
+
+00:56:59.066 --> 00:56:59.696 A:middle
+surfaces.
+

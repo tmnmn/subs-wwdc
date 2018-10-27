@@ -1,0 +1,80 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.565 --> 00:35:00.367 align:middle line:-1
+否则我们就会更新提示文本
+
+00:35:00.434 --> 00:35:02.669 align:middle line:-1
+让用户知道密码无效
+
+00:35:02.736 --> 00:35:05.439 align:middle line:-2
+我们调用clearEntry
+animated为真
+
+00:35:05.873 --> 00:35:08.675 align:middle line:-1
+这将清除所填写的全部数位
+
+00:35:08.976 --> 00:35:11.645 align:middle line:-2
+并晃动数位视图
+让用户知道出错了
+
+00:35:12.479 --> 00:35:14.715 align:middle line:-2
+最后我们显示
+viewController
+
+00:35:14.781 --> 00:35:18.886 align:middle line:-2
+由于这只是一个viewController
+我们可以使用自定义显示样式
+
+00:35:19.286 --> 00:35:21.722 align:middle line:-2
+我们使用
+blurOverFullScreen
+
+00:35:22.089 --> 00:35:24.091 align:middle line:-2
+这是我们去年在tvOS中
+引入的功能
+
+00:35:25.559 --> 00:35:26.860 align:middle line:-1
+运行它 看看该如何实现
+
+00:35:28.228 --> 00:35:29.930 align:middle line:-1
+我要选择我的电影
+
+00:35:30.364 --> 00:35:33.033 align:middle line:-2
+我们得到了一个
+blurOverFullScreen动画
+
+00:35:33.100 --> 00:35:35.068 align:middle line:-1
+我们得到提示说要输入密码
+
+00:35:35.402 --> 00:35:37.204 align:middle line:-1
+现在我们知道目前是五位密码
+
+00:35:37.271 --> 00:35:39.806 align:middle line:-2
+那么让我们看看
+如果我输入两个数位会怎样
+
+00:35:40.574 --> 00:35:43.277 align:middle line:-2
+我们看到有一个漂亮的晃动动画
+并且更新了文本
+
+00:35:44.211 --> 00:35:46.180 align:middle line:-1
+现在我要输入全部五位密码
+
+00:35:47.014 --> 00:35:48.315 align:middle line:-1
+我们知道这是正确的密码
+
+00:35:48.382 --> 00:35:50.784 align:middle line:-2
+所以我们丢弃viewController
+并可以播放内容了
+
+00:35:52.586 --> 00:35:54.688 align:middle line:-1
+现在如果用户希望使用…
+
+00:35:54.755 --> 00:35:57.291 align:middle line:-1
+他们很可能希望使用他们自己的密码
+
+00:35:57.357 --> 00:36:00.093 align:middle line:-2
+我们要做的就是
+获取这里的设置按钮
+

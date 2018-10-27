@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:58.405 --> 00:54:00.707 align:middle line:-1
+因此你应该牢记这一点并确保
+
+00:54:00.774 --> 00:54:04.545 align:middle line:-2
+你的自动或手动测试程序使用了
+Thread Sanitizer
+
+00:54:04.611 --> 00:54:07.714 align:middle line:-1
+特别是在使用线程或GCD的代码上
+
+00:54:09.249 --> 00:54:10.617 align:middle line:-1
+如果你想了解更多
+
+00:54:10.684 --> 00:54:14.855 align:middle line:-2
+我建议你观看我在2016年
+WWDC中的演讲视频
+
+00:54:15.122 --> 00:54:17.591 align:middle line:-2
+其标题为
+“Thread Sanitizer和静态分析”
+
+00:54:17.658 --> 00:54:19.560 align:middle line:-1
+我们在其中介绍了这个工具
+
+00:54:19.626 --> 00:54:22.496 align:middle line:-1
+并谈到了它的工作原理
+
+00:54:23.830 --> 00:54:27.201 align:middle line:-2
+提醒一下 Thread Sanitizer
+可以在方案编辑器中找到
+
+00:54:27.668 --> 00:54:30.871 align:middle line:-2
+你可以点击Product-&gt;
+Scheme-&gt;Edit Scheme
+
+00:54:31.371 --> 00:54:32.906 align:middle line:-1
+来调出方案编辑器
+
+00:54:32.973 --> 00:54:35.576 align:middle line:-2
+然后你可以切换到
+“Diagnostics”标签页
+
+00:54:35.642 --> 00:54:39.980 align:middle line:-2
+你可以从中找到Thread Sanitizer
+和一些其它运行时诊断工具
+
+00:54:41.815 --> 00:54:44.484 align:middle line:-1
+我还想与你分享一个调试技巧
+
+00:54:44.551 --> 00:54:46.987 align:middle line:-1
+它在处理多线程时很有用
+
+00:54:47.955 --> 00:54:50.157 align:middle line:-1
+在创建调度队列时
+
+00:54:50.557 --> 00:54:53.227 align:middle line:-2
+你可以在初始化函数中
+提供自定义标签
+
+00:54:54.494 --> 00:54:57.364 align:middle line:-1
+你可以为操作队列指定自定义名称
+
+00:54:58.131 --> 00:54:59.566 align:middle line:-1
+并且如果你正在使用线程
+
+00:54:59.633 --> 00:55:01.869 align:middle line:-1
+你也可以在线程中使用自定义名称
+

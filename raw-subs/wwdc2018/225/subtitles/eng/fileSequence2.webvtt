@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.786 --> 00:02:00.196 A:middle
+three core concepts we need to
+
+00:02:00.196 --> 00:02:01.596 A:middle
+understand about CollectionView
+
+00:02:01.596 --> 00:02:02.526 A:middle
+before we dive right into that
+
+00:02:02.606 --> 00:02:02.766 A:middle
+code.
+
+00:02:02.766 --> 00:02:04.236 A:middle
+So let's do these now, and we're
+
+00:02:04.236 --> 00:02:05.896 A:middle
+going to talk about the layout,
+
+00:02:06.006 --> 00:02:09.936 A:middle
+data source, and the delegate.
+
+00:02:10.036 --> 00:02:11.496 A:middle
+Okay. So, first of all, let's
+
+00:02:11.496 --> 00:02:12.506 A:middle
+chat a little bit about the
+
+00:02:12.506 --> 00:02:13.086 A:middle
+layout.
+
+00:02:13.646 --> 00:02:15.566 A:middle
+So if you open up the definition
+
+00:02:15.566 --> 00:02:16.706 A:middle
+for UICollectionView for the
+
+00:02:16.706 --> 00:02:18.876 A:middle
+very first time, and you're
+
+00:02:18.876 --> 00:02:20.546 A:middle
+familiar with UITableView, you
+
+00:02:20.546 --> 00:02:21.716 A:middle
+notice right away that there's a
+
+00:02:21.716 --> 00:02:22.936 A:middle
+lot of familiarity in the API.
+
+00:02:22.936 --> 00:02:25.266 A:middle
+You got a delegate and a data
+
+00:02:25.266 --> 00:02:25.676 A:middle
+source.
+
+00:02:25.676 --> 00:02:26.686 A:middle
+All these things look pretty
+
+00:02:26.686 --> 00:02:28.856 A:middle
+familiar, but the layout
+
+00:02:28.856 --> 00:02:30.796 A:middle
+concept, that's pretty unique
+
+00:02:30.846 --> 00:02:32.306 A:middle
+and distinct to
+
+00:02:32.306 --> 00:02:33.176 A:middle
+UICollectionView.
+
+00:02:33.176 --> 00:02:34.146 A:middle
+You can really think of it as
+
+00:02:34.146 --> 00:02:35.656 A:middle
+UICollectionView's super power.
+
+00:02:36.846 --> 00:02:38.146 A:middle
+It allows CollectionView to
+
+00:02:38.146 --> 00:02:39.746 A:middle
+abstract away the visual
+
+00:02:39.746 --> 00:02:40.936 A:middle
+arrangement from your content
+
+00:02:41.336 --> 00:02:42.636 A:middle
+separate from the content
+
+00:02:42.636 --> 00:02:43.326 A:middle
+itself.
+
+00:02:44.416 --> 00:02:45.816 A:middle
+Layout is all about the where
+
+00:02:46.146 --> 00:02:47.216 A:middle
+content is displayed.
+
+00:02:48.946 --> 00:02:52.206 A:middle
+Now, each individual item is
+
+00:02:52.206 --> 00:02:53.046 A:middle
+specified by the
+
+00:02:53.046 --> 00:02:54.066 A:middle
+UICollectionView layout
+
+00:02:54.066 --> 00:02:56.646 A:middle
+attributes, for attributes like
+
+00:02:56.646 --> 00:02:58.046 A:middle
+such as bound, center, and
+
+00:02:58.046 --> 00:02:59.116 A:middle
+frame, things like that.
+
+00:02:59.656 --> 00:03:00.716 A:middle
+You can think of it as a set of
+

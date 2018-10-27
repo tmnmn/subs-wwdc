@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.636 --> 00:12:00.086 A:middle
+And over the next few weeks, we
+
+00:12:00.086 --> 00:12:02.066 A:middle
+will be updating these tables as
+
+00:12:02.066 --> 00:12:03.996 A:middle
+we start converging on accurate
+
+00:12:03.996 --> 00:12:04.526 A:middle
+data.
+
+00:12:05.946 --> 00:12:07.496 A:middle
+Now let's take a look at how
+
+00:12:07.496 --> 00:12:09.636 A:middle
+this Active Task actually works.
+
+00:12:10.766 --> 00:12:12.956 A:middle
+The user is required to hear
+
+00:12:12.956 --> 00:12:15.576 A:middle
+tones at a particular frequency
+
+00:12:15.756 --> 00:12:18.616 A:middle
+at varying levels of dBHL value.
+
+00:12:19.496 --> 00:12:20.866 A:middle
+When the user hears a tone, they
+
+00:12:20.866 --> 00:12:22.486 A:middle
+are expected to tap the button
+
+00:12:22.486 --> 00:12:23.816 A:middle
+to indicate that they have heard
+
+00:12:23.816 --> 00:12:24.006 A:middle
+it.
+
+00:12:24.326 --> 00:12:25.746 A:middle
+And at that point we will start
+
+00:12:25.846 --> 00:12:28.196 A:middle
+decreasing the dBHL value as
+
+00:12:28.246 --> 00:12:29.876 A:middle
+indicated here by the green
+
+00:12:29.876 --> 00:12:30.306 A:middle
+dots.
+
+00:12:30.776 --> 00:12:32.276 A:middle
+Now, when the user fails to tap
+
+00:12:32.276 --> 00:12:34.846 A:middle
+the button after a given timeout
+
+00:12:34.846 --> 00:12:36.636 A:middle
+period, we will start increasing
+
+00:12:36.636 --> 00:12:38.476 A:middle
+the dBHL values as indicated by
+
+00:12:38.476 --> 00:12:39.296 A:middle
+the red dots.
+
+00:12:39.626 --> 00:12:41.326 A:middle
+And over time we will feed these
+
+00:12:41.326 --> 00:12:42.226 A:middle
+data points to the
+
+00:12:42.226 --> 00:12:44.256 A:middle
+Hughson-Westlake Method in order
+
+00:12:44.256 --> 00:12:45.566 A:middle
+to determine the hearing
+
+00:12:45.566 --> 00:12:48.586 A:middle
+threshold level of the user in
+
+00:12:49.096 --> 00:12:51.966 A:middle
+the dBHL scale.
+
+00:12:52.036 --> 00:12:53.086 A:middle
+Now, from a developer
+
+00:12:53.086 --> 00:12:55.076 A:middle
+perspective, the entirety of
+
+00:12:55.166 --> 00:12:57.226 A:middle
+tone generation occurs in three
+
+00:12:57.226 --> 00:12:57.736 A:middle
+phases.
+
+00:12:58.466 --> 00:13:00.636 A:middle
+The first one, is a pre-stimulus
+

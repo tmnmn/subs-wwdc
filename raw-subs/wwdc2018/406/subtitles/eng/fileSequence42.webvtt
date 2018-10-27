@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:59.776 --> 00:42:01.666 A:middle
+Can you slice a subsequence?
+
+00:42:02.416 --> 00:42:03.936 A:middle
+Well, every subsequence is a
+
+00:42:03.936 --> 00:42:05.856 A:middle
+collection and every collection
+
+00:42:05.856 --> 00:42:07.126 A:middle
+has a slice operation.
+
+00:42:07.396 --> 00:42:08.866 A:middle
+So of course you can slice a
+
+00:42:08.866 --> 00:42:09.706 A:middle
+subsequence.
+
+00:42:09.986 --> 00:42:11.796 A:middle
+And the result is going to be a
+
+00:42:11.796 --> 00:42:14.146 A:middle
+subsequence of the subsequence.
+
+00:42:15.156 --> 00:42:17.036 A:middle
+Now you can do this again and
+
+00:42:17.036 --> 00:42:18.166 A:middle
+get a subsequence of a
+
+00:42:18.166 --> 00:42:19.996 A:middle
+subsequence of a subsequence.
+
+00:42:20.566 --> 00:42:22.956 A:middle
+And keep on going on and on and
+
+00:42:22.956 --> 00:42:23.326 A:middle
+on.
+
+00:42:24.786 --> 00:42:26.466 A:middle
+Now interestingly, at each point
+
+00:42:26.556 --> 00:42:28.226 A:middle
+we could have a brand-new type.
+
+00:42:28.226 --> 00:42:29.746 A:middle
+And so we have this potentially
+
+00:42:29.776 --> 00:42:31.376 A:middle
+infinite tower of types.
+
+00:42:31.906 --> 00:42:33.156 A:middle
+That's actually okay.
+
+00:42:33.896 --> 00:42:35.106 A:middle
+Each recursive step in our
+
+00:42:35.106 --> 00:42:36.546 A:middle
+generic algorithm could
+
+00:42:36.546 --> 00:42:38.946 A:middle
+conceivably create a new type.
+
+00:42:39.666 --> 00:42:41.236 A:middle
+Based on the current collection
+
+00:42:41.236 --> 00:42:41.536 A:middle
+type.
+
+00:42:42.136 --> 00:42:43.246 A:middle
+So long as the recursion
+
+00:42:43.246 --> 00:42:44.336 A:middle
+eventually terminates at
+
+00:42:44.336 --> 00:42:46.166 A:middle
+runtime, there's no problem with
+
+00:42:46.166 --> 00:42:46.566 A:middle
+this.
+
+00:42:47.306 --> 00:42:49.116 A:middle
+However, it's often the case
+
+00:42:49.166 --> 00:42:50.676 A:middle
+divide-and-conquer algorithms
+
+00:42:50.676 --> 00:42:51.646 A:middle
+can be implemented more
+
+00:42:51.646 --> 00:42:53.376 A:middle
+efficiently by making them
+
+00:42:53.376 --> 00:42:54.396 A:middle
+nonrecursive.
+
+00:42:55.876 --> 00:42:58.146 A:middle
+So here is the nonrecursive
+
+00:42:58.146 --> 00:42:59.846 A:middle
+implementation of the sort and
+
+00:42:59.846 --> 00:43:01.496 A:middle
+insertion point of algorithm.
+

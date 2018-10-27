@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.056 --> 00:44:00.476 A:middle
+item that it matches with.
+
+00:44:01.316 --> 00:44:03.306 A:middle
+Then, when that searchable item
+
+00:44:03.366 --> 00:44:04.576 A:middle
+would be deleted, it would
+
+00:44:04.576 --> 00:44:05.976 A:middle
+automatically delete the user
+
+00:44:05.976 --> 00:44:06.516 A:middle
+activity.
+
+00:44:07.146 --> 00:44:10.746 A:middle
+If you don't use Spotlight
+
+00:44:10.746 --> 00:44:12.266 A:middle
+indexing, you can use the
+
+00:44:12.266 --> 00:44:13.926 A:middle
+persistent identifier property
+
+00:44:14.196 --> 00:44:15.366 A:middle
+on NSUserActivity.
+
+00:44:15.996 --> 00:44:17.746 A:middle
+This is a new property that you
+
+00:44:17.746 --> 00:44:19.276 A:middle
+can set so you can keep track of
+
+00:44:19.276 --> 00:44:21.446 A:middle
+your user activities and delete
+
+00:44:21.446 --> 00:44:23.506 A:middle
+them at the appropriate time.
+
+00:44:24.476 --> 00:44:27.406 A:middle
+To use it, just set the
+
+00:44:27.406 --> 00:44:28.886 A:middle
+persistentIdentifier property
+
+00:44:29.026 --> 00:44:30.646 A:middle
+before donating user activity.
+
+00:44:31.536 --> 00:44:32.536 A:middle
+Then, when you want to delete
+
+00:44:32.536 --> 00:44:33.526 A:middle
+it, you call
+
+00:44:33.526 --> 00:44:35.316 A:middle
+deleteSavedUserActivities with
+
+00:44:35.316 --> 00:44:36.766 A:middle
+the identifiers that you want to
+
+00:44:36.766 --> 00:44:37.056 A:middle
+delete.
+
+00:44:37.826 --> 00:44:39.166 A:middle
+You can also delete all your
+
+00:44:39.166 --> 00:44:40.306 A:middle
+donated user activities.
+
+00:44:41.386 --> 00:44:42.746 A:middle
+For instance, when your user
+
+00:44:42.746 --> 00:44:44.376 A:middle
+logs out, you can do that by
+
+00:44:44.376 --> 00:44:44.756 A:middle
+calling
+
+00:44:45.006 --> 00:44:46.916 A:middle
+deleteAllSavedUserActivities.
+
+00:44:48.576 --> 00:44:50.256 A:middle
+Intents have an existing API,
+
+00:44:50.256 --> 00:44:51.536 A:middle
+which is similar to this new
+
+00:44:51.536 --> 00:44:53.436 A:middle
+user activity API.
+
+00:44:54.336 --> 00:44:56.476 A:middle
+Since you donate intents through
+
+00:44:56.636 --> 00:44:58.166 A:middle
+INInteraction the leading and
+
+00:44:58.166 --> 00:44:59.656 A:middle
+donated intent also happens
+
+00:44:59.656 --> 00:45:00.586 A:middle
+through INInteraction.
+

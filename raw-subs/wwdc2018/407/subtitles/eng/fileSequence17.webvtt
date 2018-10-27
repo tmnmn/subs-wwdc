@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.386 --> 00:17:00.556 A:middle
+Sometimes you'll have much more.
+
+00:17:00.626 --> 00:17:01.716 A:middle
+Depends on how concurrent your
+
+00:17:01.716 --> 00:17:02.436 A:middle
+application is.
+
+00:17:03.306 --> 00:17:04.796 A:middle
+I often like to collapse these
+
+00:17:04.796 --> 00:17:06.276 A:middle
+in the name of focusing, and I
+
+00:17:06.276 --> 00:17:07.756 A:middle
+also like to collapse them so
+
+00:17:07.756 --> 00:17:10.356 A:middle
+they're based on the top level
+
+00:17:10.356 --> 00:17:11.976 A:middle
+functions executing in each of
+
+00:17:11.976 --> 00:17:13.346 A:middle
+the threads, rather than the
+
+00:17:13.346 --> 00:17:14.636 A:middle
+thread IDs, because that
+
+00:17:14.636 --> 00:17:16.165 A:middle
+corresponds better with how I
+
+00:17:16.165 --> 00:17:17.406 A:middle
+use Grand Central Dispatch.
+
+00:17:18.616 --> 00:17:19.715 A:middle
+Down in the bottom of the
+
+00:17:19.715 --> 00:17:21.076 A:middle
+Instruments window, I'm going to
+
+00:17:21.076 --> 00:17:22.236 A:middle
+click on this button that says
+
+00:17:22.266 --> 00:17:24.576 A:middle
+Call Tree, and I'm going to zoom
+
+00:17:24.576 --> 00:17:25.536 A:middle
+in on it, so you can see what
+
+00:17:25.536 --> 00:17:26.076 A:middle
+I'm about to do.
+
+00:17:26.806 --> 00:17:27.935 A:middle
+There are several filters
+
+00:17:27.935 --> 00:17:28.556 A:middle
+available here.
+
+00:17:28.906 --> 00:17:30.136 A:middle
+One of them is separate by
+
+00:17:30.136 --> 00:17:30.516 A:middle
+thread.
+
+00:17:30.516 --> 00:17:31.756 A:middle
+It is on by default.
+
+00:17:31.886 --> 00:17:33.176 A:middle
+I am going to go ahead and
+
+00:17:33.176 --> 00:17:35.466 A:middle
+disable that, and instead, all
+
+00:17:35.466 --> 00:17:36.326 A:middle
+of the threads are going to be
+
+00:17:36.326 --> 00:17:37.586 A:middle
+grouped by their top level entry
+
+00:17:37.586 --> 00:17:38.926 A:middle
+point, rather than their thread
+
+00:17:39.596 --> 00:17:39.666 A:middle
+ID.
+
+00:17:42.356 --> 00:17:45.646 A:middle
+Now, looking at this trace, I
+
+00:17:45.646 --> 00:17:46.946 A:middle
+can see that of all these
+
+00:17:46.946 --> 00:17:49.336 A:middle
+threads running, which by the
+
+00:17:49.336 --> 00:17:50.816 A:middle
+way, below the main trace, which
+
+00:17:50.816 --> 00:17:53.126 A:middle
+is the aggregate CPU usage, the
+
+00:17:53.126 --> 00:17:54.416 A:middle
+CPU usage is broken down per
+
+00:17:54.416 --> 00:17:56.086 A:middle
+thread, I can see that almost
+
+00:17:56.086 --> 00:17:57.046 A:middle
+all the other threads were
+
+00:17:57.176 --> 00:17:58.456 A:middle
+largely inactive during this
+
+00:17:58.456 --> 00:17:58.826 A:middle
+trace.
+
+00:17:59.416 --> 00:18:00.836 A:middle
+I can focus on just the main
+

@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.433 --> 00:05:01.435 align:middle line:0
+为这些可能的语言留有余地
+
+00:05:02.269 --> 00:05:05.839 align:middle line:0
+你可以用一个叫做languageHypotheses的
+新API来做到这一点
+
+00:05:06.139 --> 00:05:08.775 align:middle line:0
+你可以指定返回语言的最大数量
+
+00:05:08.842 --> 00:05:11.778 align:middle line:0
+其将返回的是最可能语言的对象
+
+00:05:11.845 --> 00:05:13.447 align:middle line:0
+以及各自的概率
+
+00:05:14.581 --> 00:05:16.683 align:middle line:0
+为了对这个中文文本进行分词
+
+00:05:16.984 --> 00:05:19.253 align:middle line:-1
+你可以看到它的用法非常类似
+
+00:05:20.053 --> 00:05:21.688 align:middle line:-2
+你再次导入
+NaturalLanguage
+
+00:05:22.356 --> 00:05:24.458 align:middle line:-2
+创建一个
+NLTokenizer的实例
+
+00:05:25.158 --> 00:05:28.428 align:middle line:-2
+在这个实例中
+将单位设为“word”
+
+00:05:28.495 --> 00:05:30.664 align:middle line:-1
+因为你要将字符串切分为单词
+
+00:05:32.799 --> 00:05:33.901 align:middle line:-1
+你传入了字符串
+
+00:05:34.535 --> 00:05:38.105 align:middle line:-2
+然后只需在对象的字符串上
+调用tokens方法即可
+
+00:05:39.039 --> 00:05:41.175 align:middle line:0
+在这里你得到一个tokens数组
+
+00:05:41.975 --> 00:05:45.345 align:middle line:0
+现在有了这个tokens数组
+你可以查找一个特定的token
+
+00:05:45.412 --> 00:05:46.580 align:middle line:0
+这里是“晚安”
+
+00:05:47.381 --> 00:05:50.250 align:middle line:0
+瞧 你的app现在支持多语言了
+
+00:05:50.984 --> 00:05:54.421 align:middle line:-1
+因此 你的app现在可以通过
+
+00:05:54.488 --> 00:05:57.858 align:middle line:-2
+简单的调用语言识别和分词API
+来支持中文
+
+00:05:59.059 --> 00:06:01.261 align:middle line:-2
+让我们看看另一种
+不同类型的API 我的意思是
+

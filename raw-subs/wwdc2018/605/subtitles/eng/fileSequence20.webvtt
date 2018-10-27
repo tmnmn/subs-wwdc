@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.576 --> 00:20:00.796 A:middle
+as the source of truth for the
+
+00:20:00.796 --> 00:20:01.336 A:middle
+game state.
+
+00:20:01.736 --> 00:20:03.226 A:middle
+But again, that's the decision
+
+00:20:03.226 --> 00:20:04.166 A:middle
+we layered on top of the
+
+00:20:04.166 --> 00:20:05.636 A:middle
+networking protocol; it's not
+
+00:20:05.636 --> 00:20:06.566 A:middle
+inherent in multi-peer
+
+00:20:06.566 --> 00:20:07.116 A:middle
+connectivity.
+
+00:20:07.536 --> 00:20:11.696 A:middle
+Once the session is set up,
+
+00:20:11.696 --> 00:20:13.366 A:middle
+multi-peer connectivity lets us
+
+00:20:13.366 --> 00:20:15.006 A:middle
+send data between peers in three
+
+00:20:15.006 --> 00:20:15.416 A:middle
+ways.
+
+00:20:15.946 --> 00:20:17.096 A:middle
+As data packets.
+
+00:20:17.716 --> 00:20:19.906 A:middle
+As resources, file URLs on the
+
+00:20:19.906 --> 00:20:20.636 A:middle
+local storage.
+
+00:20:21.096 --> 00:20:21.946 A:middle
+And as streams.
+
+00:20:22.716 --> 00:20:23.986 A:middle
+Data objects can be sent,
+
+00:20:23.986 --> 00:20:25.216 A:middle
+broadcast to all peers in the
+
+00:20:25.216 --> 00:20:27.366 A:middle
+network whereas resources and
+
+00:20:27.366 --> 00:20:28.766 A:middle
+streams are device to device.
+
+00:20:29.026 --> 00:20:32.196 A:middle
+In SwiftShot, we use the data
+
+00:20:32.196 --> 00:20:33.816 A:middle
+packets primarily as a way to
+
+00:20:33.816 --> 00:20:35.676 A:middle
+share game events and also the
+
+00:20:35.676 --> 00:20:36.256 A:middle
+physics state.
+
+00:20:36.566 --> 00:20:38.886 A:middle
+We'll talk about that later on.
+
+00:20:38.886 --> 00:20:40.206 A:middle
+And then we used the resources
+
+00:20:40.206 --> 00:20:41.186 A:middle
+to transfer the WorldMap.
+
+00:20:41.186 --> 00:20:43.146 A:middle
+It ended up we didn't need
+
+00:20:43.146 --> 00:20:44.176 A:middle
+streams for our application.
+
+00:20:44.656 --> 00:20:47.456 A:middle
+Under the covers, multi-peer
+
+00:20:47.456 --> 00:20:49.326 A:middle
+connectivity relies on UDP for
+
+00:20:49.326 --> 00:20:50.736 A:middle
+the transfer between devices.
+
+00:20:51.366 --> 00:20:53.726 A:middle
+This gives a low latency for,
+
+00:20:53.896 --> 00:20:55.156 A:middle
+great for applications like
+
+00:20:55.156 --> 00:20:55.506 A:middle
+games.
+
+00:20:56.536 --> 00:20:57.926 A:middle
+Now, UDP inherently doesn't
+
+00:20:57.926 --> 00:20:59.436 A:middle
+guarantee delivery, so
+
+00:20:59.436 --> 00:21:00.886 A:middle
+multi-peer connectivity lets you
+

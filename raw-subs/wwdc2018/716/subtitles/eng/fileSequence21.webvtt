@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:02.566 --> 00:21:03.616 A:middle
+We want your apps to have
+
+00:21:03.866 --> 00:21:05.136 A:middle
+optimal performance both in
+
+00:21:05.136 --> 00:21:06.576 A:middle
+terms of memory usage and
+
+00:21:06.576 --> 00:21:07.356 A:middle
+execution speed.
+
+00:21:07.466 --> 00:21:08.486 A:middle
+That's why it's important to
+
+00:21:08.486 --> 00:21:09.586 A:middle
+look at the next two slides.
+
+00:21:11.696 --> 00:21:12.956 A:middle
+How long should you keep your
+
+00:21:12.956 --> 00:21:14.346 A:middle
+objects in memory?
+
+00:21:16.756 --> 00:21:17.956 A:middle
+Well, for the image request
+
+00:21:17.956 --> 00:21:19.356 A:middle
+handler, you should keep it as
+
+00:21:19.416 --> 00:21:21.066 A:middle
+long as the image needs
+
+00:21:21.066 --> 00:21:21.486 A:middle
+processing.
+
+00:21:22.356 --> 00:21:23.716 A:middle
+This may sound like a very
+
+00:21:23.716 --> 00:21:24.936 A:middle
+innocent and simple statement,
+
+00:21:25.296 --> 00:21:26.496 A:middle
+but it is very important that
+
+00:21:26.496 --> 00:21:28.296 A:middle
+you do just that.
+
+00:21:28.296 --> 00:21:29.736 A:middle
+If you release the object early,
+
+00:21:29.736 --> 00:21:31.066 A:middle
+and you still have outstanding
+
+00:21:31.066 --> 00:21:32.446 A:middle
+requests to be processed, you
+
+00:21:32.446 --> 00:21:33.716 A:middle
+will have to recreate your image
+
+00:21:33.716 --> 00:21:34.386 A:middle
+to request handler.
+
+00:21:34.716 --> 00:21:36.346 A:middle
+But now you have lost all the
+
+00:21:36.346 --> 00:21:37.676 A:middle
+cache that was associated with
+
+00:21:37.676 --> 00:21:39.066 A:middle
+the previous object, and you'll
+
+00:21:39.066 --> 00:21:40.636 A:middle
+have to pay this performance to
+
+00:21:40.636 --> 00:21:42.036 A:middle
+recalculate these derivatives.
+
+00:21:42.666 --> 00:21:45.386 A:middle
+If you release it too late, on
+
+00:21:45.386 --> 00:21:47.546 A:middle
+the other hand, then, first
+
+00:21:47.546 --> 00:21:48.486 A:middle
+you're going to start causing
+
+00:21:48.486 --> 00:21:50.196 A:middle
+memory fragmentation, and then
+
+00:21:50.196 --> 00:21:51.416 A:middle
+the memory is not going to be
+
+00:21:51.416 --> 00:21:53.006 A:middle
+reclaimed by your app for other
+
+00:21:53.006 --> 00:21:54.606 A:middle
+meaningful things that you want
+
+00:21:54.606 --> 00:21:55.500 A:middle
+to do.
+
+00:21:56.156 --> 00:21:57.696 A:middle
+So, it's important to release
+
+00:21:57.696 --> 00:21:59.236 A:middle
+it, use it as long as you need
+
+00:21:59.236 --> 00:22:00.176 A:middle
+and release it right after.
+

@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:57.130 --> 00:20:01.668 align:start position:29% line:-2
+バックグラウンドの作業を
+プリエンプトしているので
+
+00:20:02.536 --> 00:20:05.139 align:start position:27% line:-1
+スタッタリングはありません
+
+00:20:05.305 --> 00:20:09.076 align:start position:27% line:-2
+ゲームは毎秒30フレームで
+動いており
+
+00:20:09.176 --> 00:20:11.578 align:start position:27% line:-1
+負荷は膨大ですが大丈夫です
+
+00:20:12.012 --> 00:20:14.982 align:start position:23% line:-1
+まさに“技術的にすごい”ですね
+
+00:20:15.182 --> 00:20:18.719 align:start position:36% line:-2
+ではコードを
+見ていきましょう
+
+00:20:19.953 --> 00:20:24.124 align:start position:23% line:-1
+必要なのは わずか数行だけです
+
+00:20:24.725 --> 00:20:29.129 align:start position:20% line:-2
+この場合は
+pthread属性を設定したあとに
+
+00:20:29.229 --> 00:20:31.532 align:start position:23% line:-1
+pthreadを作成しています
+
+00:20:32.166 --> 00:20:37.104 align:start position:12% line:-2
+Quality of Serviceを止め
+優先度を45にしています
+
+00:20:38.005 --> 00:20:42.409 align:start position:23% line:-2
+これで必要な
+pthreadが作成できました
+
+00:20:43.110 --> 00:20:45.479 align:start position:32% line:-2
+シンプルで
+技術的にすごいですね
+
+00:20:47.181 --> 00:20:51.785 align:start position:34% line:-2
+次の問題は
+もう少し複雑ですよ
+
+00:20:52.586 --> 00:20:55.055 align:start position:38% line:-1
+温度の状態です
+
+00:20:56.256 --> 00:21:01.395 align:start position:27% line:-2
+持続可能なパフォーマンスの
+ためのデザインには
+

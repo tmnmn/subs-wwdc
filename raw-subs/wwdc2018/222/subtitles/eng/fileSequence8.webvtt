@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:00.106 --> 00:08:02.716 A:middle
+app, my app makes a request to
+
+00:08:02.716 --> 00:08:03.256 A:middle
+my server.
+
+00:08:03.966 --> 00:08:05.876 A:middle
+Which requests a list of
+
+00:08:05.926 --> 00:08:06.986 A:middle
+products that are currently
+
+00:08:06.986 --> 00:08:08.166 A:middle
+available for sale to my friends
+
+00:08:08.166 --> 00:08:08.546 A:middle
+and family.
+
+00:08:09.646 --> 00:08:11.156 A:middle
+When the server receives this
+
+00:08:11.156 --> 00:08:12.636 A:middle
+request, it responses with JSON,
+
+00:08:13.026 --> 00:08:13.986 A:middle
+that indicates here are the
+
+00:08:13.986 --> 00:08:16.576 A:middle
+products available to sell.
+
+00:08:17.296 --> 00:08:18.956 A:middle
+Now, this is what an API
+
+00:08:18.956 --> 00:08:20.186 A:middle
+response from my server might
+
+00:08:20.186 --> 00:08:20.576 A:middle
+look like.
+
+00:08:21.576 --> 00:08:22.606 A:middle
+It's an array of product
+
+00:08:22.606 --> 00:08:23.836 A:middle
+listings, which have some
+
+00:08:23.836 --> 00:08:24.716 A:middle
+interesting fields that you
+
+00:08:24.716 --> 00:08:25.516 A:middle
+might care to look at.
+
+00:08:26.766 --> 00:08:29.116 A:middle
+For instance, each listing has a
+
+00:08:29.366 --> 00:08:29.986 A:middle
+product ID.
+
+00:08:30.166 --> 00:08:31.776 A:middle
+A positive integer that uniquely
+
+00:08:31.776 --> 00:08:32.686 A:middle
+identifies the product.
+
+00:08:33.076 --> 00:08:34.275 A:middle
+And in my case, these are
+
+00:08:34.275 --> 00:08:35.986 A:middle
+sequential integer IDs.
+
+00:08:37.346 --> 00:08:38.905 A:middle
+Every listing also has a name
+
+00:08:38.905 --> 00:08:39.706 A:middle
+and a description which are
+
+00:08:39.706 --> 00:08:40.196 A:middle
+strings.
+
+00:08:40.196 --> 00:08:41.306 A:middle
+And there are a few other type
+
+00:08:41.306 --> 00:08:42.366 A:middle
+fields here that we might care
+
+00:08:42.366 --> 00:08:42.756 A:middle
+to look at.
+
+00:08:43.846 --> 00:08:45.216 A:middle
+For instance, there's a field
+
+00:08:45.386 --> 00:08:46.506 A:middle
+that's a Boolean that indicates
+
+00:08:46.506 --> 00:08:47.586 A:middle
+whether or not this listing has
+
+00:08:47.586 --> 00:08:48.236 A:middle
+already been sold.
+
+00:08:48.796 --> 00:08:50.716 A:middle
+And there's some internal
+
+00:08:50.716 --> 00:08:51.386 A:middle
+structure here.
+
+00:08:51.476 --> 00:08:52.626 A:middle
+This list of tags, which are
+
+00:08:52.626 --> 00:08:53.726 A:middle
+strings, which we might care to
+
+00:08:53.726 --> 00:08:54.066 A:middle
+use.
+
+00:08:55.496 --> 00:08:57.216 A:middle
+There are also a few fields
+
+00:08:57.216 --> 00:08:58.256 A:middle
+here, which come to us as
+
+00:08:58.256 --> 00:08:59.736 A:middle
+strings, but really represent
+
+00:08:59.806 --> 00:09:01.026 A:middle
+other forms of data that we
+

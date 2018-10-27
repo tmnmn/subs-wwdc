@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:01.716 --> 00:16:04.636 A:middle
+So now you see me and now you
+
+00:16:04.636 --> 00:16:04.906 A:middle
+don't.
+
+00:16:05.516 --> 00:16:09.266 A:middle
+[ Applause ]
+
+00:16:09.766 --> 00:16:11.666 A:middle
+So how do you add the stream
+
+00:16:11.666 --> 00:16:12.896 A:middle
+from the TrueDepth camera into
+
+00:16:12.896 --> 00:16:13.986 A:middle
+your application?
+
+00:16:14.946 --> 00:16:15.906 A:middle
+Well I'm glad you asked.
+
+00:16:16.276 --> 00:16:17.526 A:middle
+The first thing you need to do
+
+00:16:17.986 --> 00:16:19.346 A:middle
+is to discover the built-in
+
+00:16:19.346 --> 00:16:22.146 A:middle
+TrueDepth camera and then you
+
+00:16:22.146 --> 00:16:23.866 A:middle
+initialize the device capture
+
+00:16:23.866 --> 00:16:24.186 A:middle
+input.
+
+00:16:24.186 --> 00:16:27.416 A:middle
+And you add the depth data
+
+00:16:27.416 --> 00:16:28.766 A:middle
+output into your session.
+
+00:16:29.606 --> 00:16:31.426 A:middle
+At this point you're good to go,
+
+00:16:31.496 --> 00:16:32.826 A:middle
+you can start the session and
+
+00:16:32.826 --> 00:16:33.706 A:middle
+you will have the TrueDepth
+
+00:16:33.706 --> 00:16:35.266 A:middle
+stream with your session.
+
+00:16:37.376 --> 00:16:39.286 A:middle
+This stream can come in two
+
+00:16:39.286 --> 00:16:41.836 A:middle
+forms of data, disparity or
+
+00:16:41.836 --> 00:16:42.166 A:middle
+depth.
+
+00:16:42.846 --> 00:16:44.306 A:middle
+Now disparity is the inverse of
+
+00:16:44.306 --> 00:16:46.586 A:middle
+depth and vice versa, so which
+
+00:16:46.586 --> 00:16:47.396 A:middle
+one should you choose?
+
+00:16:48.666 --> 00:16:51.366 A:middle
+Well disparity usually yields
+
+00:16:51.366 --> 00:16:53.456 A:middle
+better results, especially for
+
+00:16:53.456 --> 00:16:54.596 A:middle
+machine learning applications
+
+00:16:55.216 --> 00:16:56.646 A:middle
+but the depth data has more
+
+00:16:56.646 --> 00:16:58.346 A:middle
+meaning in terms of real-world
+
+00:16:58.346 --> 00:16:58.926 A:middle
+measurements.
+

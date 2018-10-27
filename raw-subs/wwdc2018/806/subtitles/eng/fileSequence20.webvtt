@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.466 --> 00:20:01.016 A:middle
+A simple tap on each group
+
+00:20:01.016 --> 00:20:02.496 A:middle
+expands it open and you can
+
+00:20:02.496 --> 00:20:04.206 A:middle
+interact with each notification
+
+00:20:04.426 --> 00:20:04.956 A:middle
+individually.
+
+00:20:05.386 --> 00:20:07.196 A:middle
+And by default, notifications
+
+00:20:07.196 --> 00:20:08.646 A:middle
+will group together by app.
+
+00:20:09.246 --> 00:20:11.226 A:middle
+And for most cases, that make
+
+00:20:11.226 --> 00:20:11.796 A:middle
+sense.
+
+00:20:12.256 --> 00:20:13.716 A:middle
+But you know there's some
+
+00:20:13.716 --> 00:20:14.946 A:middle
+circumstances when sorting them
+
+00:20:14.946 --> 00:20:16.736 A:middle
+out in a more detailed way can
+
+00:20:16.736 --> 00:20:17.286 A:middle
+be helpful.
+
+00:20:17.376 --> 00:20:19.236 A:middle
+And messages is a perfect
+
+00:20:19.236 --> 00:20:19.686 A:middle
+example.
+
+00:20:19.856 --> 00:20:21.136 A:middle
+I don't think it would be the
+
+00:20:21.136 --> 00:20:22.646 A:middle
+most useful thing to see every
+
+00:20:22.646 --> 00:20:23.916 A:middle
+missed message from every
+
+00:20:23.916 --> 00:20:25.376 A:middle
+conversation thread and group
+
+00:20:25.376 --> 00:20:26.786 A:middle
+chat you're having all lumped
+
+00:20:26.786 --> 00:20:28.176 A:middle
+together into a single group.
+
+00:20:29.186 --> 00:20:30.356 A:middle
+So, to more clearly organize
+
+00:20:30.356 --> 00:20:32.136 A:middle
+everything we create a new group
+
+00:20:32.326 --> 00:20:33.486 A:middle
+for each conversation.
+
+00:20:33.816 --> 00:20:34.836 A:middle
+And we call each individual
+
+00:20:34.836 --> 00:20:35.866 A:middle
+group a thread.
+
+00:20:37.276 --> 00:20:38.696 A:middle
+So, let's take a moment and talk
+
+00:20:38.696 --> 00:20:40.556 A:middle
+about notification threads and
+
+00:20:40.556 --> 00:20:41.896 A:middle
+what the best ways may be to
+
+00:20:41.896 --> 00:20:42.886 A:middle
+organize your content.
+
+00:20:43.336 --> 00:20:44.686 A:middle
+So, notification grouping uses
+
+00:20:44.686 --> 00:20:46.276 A:middle
+the existing thread identifier
+
+00:20:46.276 --> 00:20:46.636 A:middle
+API.
+
+00:20:47.346 --> 00:20:49.016 A:middle
+This API was introduced as part
+
+00:20:49.016 --> 00:20:50.326 A:middle
+of the notification content
+
+00:20:50.326 --> 00:20:50.956 A:middle
+extensions.
+
+00:20:51.316 --> 00:20:53.366 A:middle
+We expanded its use to create
+
+00:20:53.366 --> 00:20:54.326 A:middle
+notification groups.
+
+00:20:55.056 --> 00:20:56.736 A:middle
+The thread identifier can be any
+
+00:20:56.736 --> 00:20:58.256 A:middle
+string that you want and the
+
+00:20:58.256 --> 00:20:59.626 A:middle
+notifications with the same
+
+00:20:59.626 --> 00:21:01.216 A:middle
+thread identifier are all
+

@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:55.689 --> 00:31:00.060 align:start position:29% line:-2
+まずはメンタルモデルから
+見ていきます
+
+00:31:00.160 --> 00:31:01.595 align:start position:36% line:-1
+どういうものか？
+
+00:31:01.895 --> 00:31:06.467 align:start position:32% line:-2
+Swift 3より
+式の型ではありません
+
+00:31:06.567 --> 00:31:08.202 align:start position:36% line:-1
+そうは考えません
+
+00:31:08.302 --> 00:31:13.407 align:start position:30% line:-2
+代わりに宣言の属性だと
+考えてください
+
+00:31:13.941 --> 00:31:17.678 align:start position:34% line:-2
+こういった宣言を
+まずコンパイラは―
+
+00:31:17.778 --> 00:31:21.181 align:start position:20% line:-1
+Optionalとして型検査します
+
+00:31:21.281 --> 00:31:24.551 align:start position:36% line:-2
+そこでつじつまが
+合わない場合
+
+00:31:24.651 --> 00:31:29.189 align:start position:29% line:-2
+アンラップ後
+マークをして型検査します
+
+00:31:30.190 --> 00:31:32.826 align:start position:34% line:-1
+例を見てみましょう
+
+00:31:33.160 --> 00:31:34.795 align:start position:34% line:-1
+関数が２つあります
+
+00:31:34.895 --> 00:31:38.532 align:start position:14% line:-2
+Implicitly Unwrapped
+Optionalの整数と
+
+00:31:38.632 --> 00:31:41.568 align:start position:27% line:-1
+どんな型にも対応する値です
+
+00:31:41.735 --> 00:31:45.606 align:start position:32% line:-2
+１つ目の結果で
+２つ目を呼び出します
+
+00:31:45.839 --> 00:31:50.644 align:start position:21% line:-2
+AnyにOptional整数値を
+格納できるので
+
+00:31:50.744 --> 00:31:53.313 align:start position:29% line:-1
+強制アンラップは不要です
+
+00:31:53.413 --> 00:31:56.316 align:start position:23% line:-1
+値はOptionalになります
+
+00:31:57.918 --> 00:32:00.320 align:start position:30% line:-1
+２つ目の例を見ましょう
+

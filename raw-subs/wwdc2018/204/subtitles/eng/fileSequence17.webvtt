@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.586 --> 00:17:01.056 A:middle
+I'll tap on Create Account.
+
+00:17:02.316 --> 00:17:02.916 A:middle
+Tap on Email.
+
+00:17:02.916 --> 00:17:05.665 A:middle
+And I don't see any suggested
+
+00:17:05.665 --> 00:17:06.126 A:middle
+username.
+
+00:17:07.026 --> 00:17:08.606 A:middle
+When I tap on the Password field
+
+00:17:08.606 --> 00:17:10.236 A:middle
+I don't see any Automatic Strong
+
+00:17:10.236 --> 00:17:11.406 A:middle
+Passwords suggestion, either.
+
+00:17:11.726 --> 00:17:13.465 A:middle
+So, let's go back to Xcode and
+
+00:17:13.465 --> 00:17:14.526 A:middle
+investigate this, further.
+
+00:17:14.636 --> 00:17:20.306 A:middle
+The first thing to make sure of
+
+00:17:20.306 --> 00:17:22.476 A:middle
+is associated domains for your
+
+00:17:22.476 --> 00:17:22.816 A:middle
+apps.
+
+00:17:23.536 --> 00:17:25.136 A:middle
+In this case, I've already
+
+00:17:25.136 --> 00:17:26.576 A:middle
+ensure that Shiny has an
+
+00:17:26.576 --> 00:17:27.536 A:middle
+associated domain.
+
+00:17:27.816 --> 00:17:30.046 A:middle
+In fact, earlier today I was
+
+00:17:30.046 --> 00:17:31.866 A:middle
+able to get Autofill suggestions
+
+00:17:31.866 --> 00:17:33.116 A:middle
+when I wanted to logging into
+
+00:17:33.116 --> 00:17:33.476 A:middle
+Shiny.
+
+00:17:34.496 --> 00:17:37.666 A:middle
+Next, you should take a look.
+
+00:17:37.666 --> 00:17:39.036 A:middle
+You should take a closer look at
+
+00:17:39.036 --> 00:17:40.286 A:middle
+your signup view controller.
+
+00:17:40.856 --> 00:17:44.326 A:middle
+I'll click on the Email field.
+
+00:17:46.166 --> 00:17:49.266 A:middle
+And here, under Text Input
+
+00:17:49.266 --> 00:17:51.286 A:middle
+Traits, Content Type, I see that
+
+00:17:51.286 --> 00:17:52.706 A:middle
+I'm correctly setting the
+
+00:17:52.706 --> 00:17:53.966 A:middle
+content type to username.
+
+00:17:55.266 --> 00:17:57.586 A:middle
+And because I want the format of
+
+00:17:57.586 --> 00:17:58.906 A:middle
+this username to be of type
+
+00:17:58.906 --> 00:18:00.876 A:middle
+email address, I'm also
+

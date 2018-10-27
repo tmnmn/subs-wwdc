@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.146 --> 00:03:01.436 A:middle
+Augmentation will help you to
+
+00:03:01.436 --> 00:03:04.216 A:middle
+make this model more robust, but
+
+00:03:04.216 --> 00:03:05.396 A:middle
+it doesn't really replace the
+
+00:03:05.396 --> 00:03:06.016 A:middle
+variety.
+
+00:03:06.016 --> 00:03:07.856 A:middle
+So, you still want to have lots
+
+00:03:07.856 --> 00:03:09.736 A:middle
+of images of your objects that
+
+00:03:09.736 --> 00:03:10.616 A:middle
+you want to classify.
+
+00:03:11.326 --> 00:03:12.966 A:middle
+But, with the augmentation, what
+
+00:03:12.966 --> 00:03:14.336 A:middle
+we're going to do is, we take an
+
+00:03:14.336 --> 00:03:15.496 A:middle
+image and we perturb it.
+
+00:03:15.496 --> 00:03:17.936 A:middle
+So, we have noised it, we blur
+
+00:03:17.936 --> 00:03:19.766 A:middle
+it, we rotate it, flip it, so it
+
+00:03:19.766 --> 00:03:20.676 A:middle
+looks different to the
+
+00:03:20.676 --> 00:03:21.886 A:middle
+classifier actually when we
+
+00:03:21.886 --> 00:03:22.926 A:middle
+train it.
+
+00:03:24.096 --> 00:03:25.616 A:middle
+Let's look a little bit under
+
+00:03:25.616 --> 00:03:26.776 A:middle
+the hood of how our training
+
+00:03:26.776 --> 00:03:28.186 A:middle
+actually works.
+
+00:03:29.426 --> 00:03:30.496 A:middle
+You might have already heard it,
+
+00:03:30.576 --> 00:03:32.076 A:middle
+the term, transfer learning.
+
+00:03:32.076 --> 00:03:32.966 A:middle
+And this is what we're going to
+
+00:03:32.966 --> 00:03:34.626 A:middle
+use in Create ML when we train
+
+00:03:34.626 --> 00:03:35.376 A:middle
+our classifier.
+
+00:03:36.366 --> 00:03:37.716 A:middle
+So, we start with a pretrained
+
+00:03:37.716 --> 00:03:39.266 A:middle
+model, and that's where all the
+
+00:03:39.266 --> 00:03:40.676 A:middle
+heavy lifting actually happens.
+
+00:03:40.676 --> 00:03:42.386 A:middle
+These models train normally for
+
+00:03:42.386 --> 00:03:44.216 A:middle
+weeks, and with millions of
+
+00:03:44.256 --> 00:03:46.136 A:middle
+images, and that is the first
+
+00:03:46.136 --> 00:03:47.476 A:middle
+starting point that you need to
+
+00:03:47.476 --> 00:03:49.696 A:middle
+actually work with this.
+
+00:03:50.306 --> 00:03:52.136 A:middle
+Out of this model, we can use
+
+00:03:52.136 --> 00:03:53.496 A:middle
+this as a feature extractor.
+
+00:03:53.496 --> 00:03:54.866 A:middle
+This gives us a feature vector
+
+00:03:54.866 --> 00:03:56.186 A:middle
+which is pretty much a numerical
+
+00:03:56.186 --> 00:03:57.586 A:middle
+description of what we have in
+
+00:03:57.586 --> 00:03:58.246 A:middle
+our image.
+
+00:03:59.446 --> 00:04:01.446 A:middle
+Now, you bring in your data and
+

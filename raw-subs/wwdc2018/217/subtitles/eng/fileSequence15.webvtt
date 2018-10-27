@@ -1,0 +1,141 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.896 --> 00:15:00.136 A:middle
+So, we want to give the system a
+
+00:15:00.136 --> 00:15:00.986 A:middle
+hint that this should be
+
+00:15:00.986 --> 00:15:02.406 A:middle
+displayed in the evening by
+
+00:15:02.406 --> 00:15:02.926 A:middle
+passing a
+
+00:15:03.166 --> 00:15:04.566 A:middle
+dailyRoutineRelevanceProvider
+
+00:15:04.566 --> 00:15:05.636 A:middle
+with the situation .evening.
+
+00:15:06.366 --> 00:15:07.076 A:middle
+And now that our
+
+00:15:07.076 --> 00:15:08.306 A:middle
+relevantShortcut is configured,
+
+00:15:08.306 --> 00:15:09.246 A:middle
+we can pass it along to the
+
+00:15:09.246 --> 00:15:10.466 A:middle
+default relevantShortcutStore.
+
+00:15:10.536 --> 00:15:14.006 A:middle
+For our next example, in our
+
+00:15:14.006 --> 00:15:15.466 A:middle
+application, users also have a
+
+00:15:15.466 --> 00:15:16.346 A:middle
+bunch of favorites they can
+
+00:15:16.346 --> 00:15:17.786 A:middle
+configure for snacks they eat
+
+00:15:17.786 --> 00:15:19.196 A:middle
+often, or perhaps a breakfast
+
+00:15:19.196 --> 00:15:19.886 A:middle
+they had every day.
+
+00:15:19.936 --> 00:15:20.726 A:middle
+So, we've created a
+
+00:15:20.726 --> 00:15:23.176 A:middle
+logFavoriteMealIntent.
+
+00:15:24.136 --> 00:15:25.206 A:middle
+We want a couple of these to
+
+00:15:25.206 --> 00:15:26.146 A:middle
+surface on the watch face to
+
+00:15:26.146 --> 00:15:27.206 A:middle
+make it even easier for our
+
+00:15:27.206 --> 00:15:28.226 A:middle
+users to log their favorite
+
+00:15:28.226 --> 00:15:28.936 A:middle
+snacks and meals.
+
+00:15:29.736 --> 00:15:30.896 A:middle
+So, we'll create an instance of
+
+00:15:30.896 --> 00:15:32.806 A:middle
+our intent, and take one of our
+
+00:15:32.806 --> 00:15:33.736 A:middle
+favorites, and set it on the
+
+00:15:33.736 --> 00:15:34.466 A:middle
+favorites parameter.
+
+00:15:34.566 --> 00:15:36.256 A:middle
+In this case, our user likes to
+
+00:15:36.256 --> 00:15:36.746 A:middle
+eat cookies.
+
+00:15:36.986 --> 00:15:39.496 A:middle
+We'll also set an image for that
+
+00:15:39.496 --> 00:15:40.936 A:middle
+parameter, so that when it shows
+
+00:15:40.936 --> 00:15:42.106 A:middle
+up on the watch face, they get a
+
+00:15:42.106 --> 00:15:43.136 A:middle
+little bit more context about
+
+00:15:43.136 --> 00:15:43.876 A:middle
+what they're about to log.
+
+00:15:45.076 --> 00:15:46.146 A:middle
+From here, we can take our
+
+00:15:46.146 --> 00:15:47.416 A:middle
+intent and create a shortcut,
+
+00:15:47.416 --> 00:15:48.646 A:middle
+and from our shortcut, create a
+
+00:15:48.646 --> 00:15:49.316 A:middle
+relevantShortcut.
+
+00:15:50.536 --> 00:15:51.416 A:middle
+At this point, we're ready to
+
+00:15:51.416 --> 00:15:52.636 A:middle
+pass along our relevantShortcut
+
+00:15:52.636 --> 00:15:54.106 A:middle
+to the relevant shortcut store.
+
+00:15:54.756 --> 00:15:55.656 A:middle
+We don't need a default card
+
+00:15:55.656 --> 00:15:56.806 A:middle
+template, because the title
+
+00:15:56.806 --> 00:15:58.236 A:middle
+strings and image, the image
+
+00:15:58.236 --> 00:15:59.056 A:middle
+that we pass along to our
+
+00:15:59.056 --> 00:16:00.086 A:middle
+intent, should be sufficient.
+

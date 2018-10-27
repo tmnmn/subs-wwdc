@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.616 --> 00:18:01.586 A:middle
+For example, you can know when a
+
+00:18:01.586 --> 00:18:03.596 A:middle
+song is loading, when it's
+
+00:18:03.596 --> 00:18:04.906 A:middle
+playing, or when it's paused,
+
+00:18:05.026 --> 00:18:06.766 A:middle
+and then you would update your
+
+00:18:06.766 --> 00:18:07.416 A:middle
+UI appropriately.
+
+00:18:08.406 --> 00:18:09.646 A:middle
+This event is going to give you
+
+00:18:09.646 --> 00:18:11.076 A:middle
+the old state and then the new
+
+00:18:11.076 --> 00:18:11.826 A:middle
+state that it's being
+
+00:18:11.826 --> 00:18:12.586 A:middle
+transitioned to.
+
+00:18:16.676 --> 00:18:18.486 A:middle
+As the song is playing, you'll
+
+00:18:18.486 --> 00:18:20.296 A:middle
+get playback progress change
+
+00:18:20.296 --> 00:18:23.786 A:middle
+events, and this event has the
+
+00:18:23.786 --> 00:18:25.366 A:middle
+current playback progress as a
+
+00:18:25.366 --> 00:18:25.896 A:middle
+percentage.
+
+00:18:26.426 --> 00:18:27.476 A:middle
+You can use this to update a
+
+00:18:27.476 --> 00:18:28.166 A:middle
+progress UI.
+
+00:18:31.576 --> 00:18:32.766 A:middle
+And you're also going to listen
+
+00:18:32.766 --> 00:18:34.326 A:middle
+for any media playback errors.
+
+00:18:35.206 --> 00:18:37.196 A:middle
+The mediaPlaybackError event
+
+00:18:37.196 --> 00:18:37.806 A:middle
+will fire.
+
+00:18:39.016 --> 00:18:40.276 A:middle
+You can catch that and then
+
+00:18:40.276 --> 00:18:41.496 A:middle
+present the appropriate error
+
+00:18:41.496 --> 00:18:42.466 A:middle
+messaging to the user.
+
+00:18:42.726 --> 00:18:46.846 A:middle
+So I'd like to bring up Jae back
+
+00:18:46.846 --> 00:18:47.396 A:middle
+to the stage.
+
+00:18:47.706 --> 00:18:48.676 A:middle
+He's going to take the player we
+
+00:18:48.676 --> 00:18:50.616 A:middle
+just built, and we're going to
+
+00:18:50.616 --> 00:18:51.466 A:middle
+show you how to use some of
+
+00:18:51.466 --> 00:18:53.336 A:middle
+those JavaScript APIs to add
+
+00:18:53.726 --> 00:18:55.046 A:middle
+search for the Apple Music
+
+00:18:55.046 --> 00:18:56.866 A:middle
+catalog, search within the
+
+00:18:56.866 --> 00:18:58.936 A:middle
+iCloud Music Library, and we're
+
+00:18:58.936 --> 00:19:00.556 A:middle
+also going to use events to
+

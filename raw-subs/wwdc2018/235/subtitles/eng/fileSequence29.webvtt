@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.436 --> 00:29:02.876 A:middle
+able to adapt to different, to
+
+00:29:02.876 --> 00:29:04.626 A:middle
+arbitrary safe area insets, that
+
+00:29:04.926 --> 00:29:06.976 A:middle
+will ensure that your views will
+
+00:29:06.976 --> 00:29:08.866 A:middle
+be able to, will be modular, can
+
+00:29:08.866 --> 00:29:09.576 A:middle
+be moved throughout your
+
+00:29:09.576 --> 00:29:10.796 A:middle
+application and run in
+
+00:29:10.796 --> 00:29:12.266 A:middle
+different, different
+
+00:29:12.266 --> 00:29:13.376 A:middle
+environments and still not be
+
+00:29:13.376 --> 00:29:13.776 A:middle
+occluded.
+
+00:29:16.266 --> 00:29:18.796 A:middle
+Now let's jump to an article and
+
+00:29:18.886 --> 00:29:21.086 A:middle
+talk about hiding the status
+
+00:29:21.896 --> 00:29:21.996 A:middle
+bar.
+
+00:29:22.226 --> 00:29:23.736 A:middle
+So hiding the status bar is a
+
+00:29:23.736 --> 00:29:25.596 A:middle
+technique that would reclaim 20
+
+00:29:25.596 --> 00:29:27.446 A:middle
+points of vertical screen real
+
+00:29:27.446 --> 00:29:28.966 A:middle
+estate on rectangular screen
+
+00:29:28.966 --> 00:29:29.396 A:middle
+phones.
+
+00:29:30.856 --> 00:29:32.686 A:middle
+And we're just doing this by
+
+00:29:32.686 --> 00:29:34.806 A:middle
+overriding preferred status bar
+
+00:29:34.806 --> 00:29:35.956 A:middle
+hidden in our content view
+
+00:29:35.956 --> 00:29:36.816 A:middle
+controller and we're turning
+
+00:29:36.816 --> 00:29:37.076 A:middle
+true.
+
+00:29:37.526 --> 00:29:38.486 A:middle
+And this preference is then
+
+00:29:38.486 --> 00:29:39.936 A:middle
+propagating up through our
+
+00:29:39.936 --> 00:29:40.906 A:middle
+contained view controller
+
+00:29:40.906 --> 00:29:43.576 A:middle
+hierarchy and respected by the
+
+00:29:43.576 --> 00:29:46.526 A:middle
+root-- the root of the system.
+
+00:29:46.666 --> 00:29:48.756 A:middle
+Now unfortunately on iPhone 10,
+
+00:29:49.296 --> 00:29:50.536 A:middle
+preferring the status bar hidden
+
+00:29:50.696 --> 00:29:52.196 A:middle
+does not also hide the sensor
+
+00:29:52.196 --> 00:29:52.476 A:middle
+housing.
+
+00:29:53.256 --> 00:29:55.186 A:middle
+So we can't slide content
+
+00:29:55.186 --> 00:29:56.676 A:middle
+underneath it.
+
+00:29:57.996 --> 00:29:59.106 A:middle
+[Laughs] So UIKit will protect
+
+00:29:59.106 --> 00:30:00.816 A:middle
+you and will not allow you to
+

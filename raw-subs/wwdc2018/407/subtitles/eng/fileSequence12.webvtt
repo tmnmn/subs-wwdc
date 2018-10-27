@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.626 --> 00:12:01.116 A:middle
+That definitely doesn't meet my
+
+00:12:01.116 --> 00:12:02.216 A:middle
+expectations as far as
+
+00:12:02.216 --> 00:12:04.036 A:middle
+performance goes, and we need to
+
+00:12:04.036 --> 00:12:04.596 A:middle
+fix this.
+
+00:12:04.956 --> 00:12:06.376 A:middle
+So let's take a look at how you
+
+00:12:06.376 --> 00:12:06.826 A:middle
+would do that.
+
+00:12:08.266 --> 00:12:09.106 A:middle
+First, I'm going to launch
+
+00:12:09.106 --> 00:12:09.566 A:middle
+Instruments.
+
+00:12:09.606 --> 00:12:10.716 A:middle
+That is our profiling tool.
+
+00:12:11.436 --> 00:12:12.686 A:middle
+You can do that from the Xcode
+
+00:12:12.686 --> 00:12:14.586 A:middle
+menu, under Open Developer Tool,
+
+00:12:14.886 --> 00:12:15.506 A:middle
+Instruments.
+
+00:12:15.976 --> 00:12:17.766 A:middle
+Now, I'm currently in Xcode 9,
+
+00:12:18.106 --> 00:12:19.146 A:middle
+so if I choose this, it's going
+
+00:12:19.146 --> 00:12:20.036 A:middle
+to launch the Instruments from
+
+00:12:20.036 --> 00:12:21.476 A:middle
+Xcode 9, and of course, I want
+
+00:12:21.476 --> 00:12:22.606 A:middle
+the Instruments from Xcode 10,
+
+00:12:22.706 --> 00:12:23.766 A:middle
+which I've put here in my doc.
+
+00:12:24.066 --> 00:12:26.066 A:middle
+So I'm going to hide Xcode, and
+
+00:12:26.066 --> 00:12:28.956 A:middle
+bring up Instruments.
+
+00:12:29.146 --> 00:12:30.366 A:middle
+Now, when Instruments launches,
+
+00:12:31.796 --> 00:12:33.026 A:middle
+we're presented with a list of
+
+00:12:33.026 --> 00:12:34.226 A:middle
+profiling tools that we could
+
+00:12:34.226 --> 00:12:35.546 A:middle
+use to measure our application.
+
+00:12:36.356 --> 00:12:37.426 A:middle
+There's all kinds of tools here.
+
+00:12:37.786 --> 00:12:38.736 A:middle
+They can measure graphics
+
+00:12:38.736 --> 00:12:41.186 A:middle
+utilization, memory consumption,
+
+00:12:41.836 --> 00:12:44.006 A:middle
+IO, and time in general.
+
+00:12:45.726 --> 00:12:47.096 A:middle
+It can be intimidating to know
+
+00:12:47.096 --> 00:12:48.406 A:middle
+which one of these profilers to
+
+00:12:48.406 --> 00:12:49.676 A:middle
+start with.
+
+00:12:51.236 --> 00:12:53.936 A:middle
+I would encourage all of you, if
+
+00:12:53.936 --> 00:12:55.596 A:middle
+you just learn one of these
+
+00:12:55.596 --> 00:12:56.976 A:middle
+tools, it should be the Time
+
+00:12:56.976 --> 00:12:57.516 A:middle
+Profiler.
+
+00:12:58.296 --> 00:13:00.426 A:middle
+I use it for 95% or more of my
+

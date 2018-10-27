@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.298 --> 00:25:02.503 align:start position:7% line:-2
+Navigation Controllerの中に
+スクロールビューが含まれる場合
+
+00:25:02.603 --> 00:25:05.772 align:start position:18% line:-2
+上部と下部の
+contentInsetを調節します
+
+00:25:05.873 --> 00:25:10.210 align:start position:30% line:-2
+これは縦スクロールが
+できない場合も同じです
+
+00:25:10.310 --> 00:25:15.249 align:start position:29% line:-2
+今回のような短い記事でも
+適切な余白を得られます
+
+00:25:15.349 --> 00:25:19.286 align:start position:25% line:-2
+一般的に要求される挙動なので
+これがデフォルトです
+
+00:25:19.386 --> 00:25:25.592 align:start position:0% line:-2
+しかしautomaticallyAdjustsScroll
+ViewInsetsをfalseにしていると
+
+00:25:25.692 --> 00:25:30.531 align:start position:11% line:-2
+この挙動は無効となり
+scrollableAxesと同様になります
+
+00:25:31.131 --> 00:25:34.668 align:start position:27% line:-2
+そこで登場するのが
+最後の挙動 neverです
+
+00:25:35.435 --> 00:25:41.308 align:start position:16% line:-2
+これを使えば スクロールビューは
+contentInsetを調節しません
+
+00:25:42.009 --> 00:25:44.912 align:start position:21% line:-1
+しかし そうすると弊害があります
+
+00:25:45.712 --> 00:25:47.915 align:start position:27% line:-1
+第一に スクロールビューが
+
+00:25:48.015 --> 00:25:52.920 align:start position:20% line:-2
+すべての辺においてsafeArea
+Insetsを伝播してしまいます
+
+00:25:53.020 --> 00:25:57.758 align:start position:27% line:-2
+これは 先ほど述べたような
+厄介な挙動を招きます
+
+00:25:57.858 --> 00:26:01.562 align:start position:20% line:-2
+例えばSafe Areaと関連する
+レイアウトマージンが
+

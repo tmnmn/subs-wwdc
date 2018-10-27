@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.876 --> 00:28:00.396 A:middle
+latitude and longitude property
+
+00:28:00.396 --> 00:28:02.046 A:middle
+that I added for the purposes of
+
+00:28:02.046 --> 00:28:02.536 A:middle
+this slide.
+
+00:28:04.816 --> 00:28:06.836 A:middle
+We change the query type in this
+
+00:28:06.836 --> 00:28:08.246 A:middle
+box by selecting R-tree.
+
+00:28:08.796 --> 00:28:10.836 A:middle
+And then we can set up our
+
+00:28:10.836 --> 00:28:12.556 A:middle
+predicate on the fetch request
+
+00:28:13.206 --> 00:28:14.906 A:middle
+to say get all of the posts that
+
+00:28:14.906 --> 00:28:16.136 A:middle
+happen inside of continental
+
+00:28:16.136 --> 00:28:16.516 A:middle
+China.
+
+00:28:18.406 --> 00:28:20.186 A:middle
+This predicate is a little more
+
+00:28:20.186 --> 00:28:21.656 A:middle
+advanced because it uses
+
+00:28:21.716 --> 00:28:24.306 A:middle
+functions inside the actual
+
+00:28:24.306 --> 00:28:26.256 A:middle
+select statement to hit the
+
+00:28:26.256 --> 00:28:27.676 A:middle
+index that we created in the
+
+00:28:27.676 --> 00:28:28.676 A:middle
+managed object model.
+
+00:28:31.556 --> 00:28:33.266 A:middle
+When we run our application
+
+00:28:33.266 --> 00:28:35.016 A:middle
+without this predicate and
+
+00:28:35.016 --> 00:28:36.596 A:middle
+without this index, we see the
+
+00:28:36.596 --> 00:28:38.266 A:middle
+same results that we saw before
+
+00:28:38.726 --> 00:28:40.696 A:middle
+where we're hitting only the
+
+00:28:40.696 --> 00:28:41.826 A:middle
+timestamp index.
+
+00:28:42.366 --> 00:28:44.956 A:middle
+But when we run it with our new
+
+00:28:44.956 --> 00:28:47.196 A:middle
+index and predicate, we see that
+
+00:28:47.196 --> 00:28:48.956 A:middle
+SQLite is using the index to
+
+00:28:48.956 --> 00:28:51.626 A:middle
+generate faster results for both
+
+00:28:51.626 --> 00:28:53.056 A:middle
+of the between statements.
+
+00:28:55.026 --> 00:28:56.806 A:middle
+Unfortunately, because our
+
+00:28:56.806 --> 00:28:58.446 A:middle
+timestamp index doesn't have any
+
+00:28:58.446 --> 00:28:59.656 A:middle
+bounding predicates on it,
+
+00:28:59.976 --> 00:29:01.566 A:middle
+SQLite can't use it for the
+

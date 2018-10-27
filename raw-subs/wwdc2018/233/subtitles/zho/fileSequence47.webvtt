@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.052 --> 00:47:01.188 align:middle line:-1
+而现在我们的一个标签丢失了
+
+00:47:02.256 --> 00:47:04.224 align:middle line:-1
+因此我们将在父视图上运行dump
+
+00:47:04.992 --> 00:47:06.593 align:middle line:-1
+并看看这里发生了什么
+
+00:47:07.761 --> 00:47:12.933 align:middle line:-2
+我们发现了丢失的标签 它就在这里
+但是如果我们看一下
+
+00:47:13.000 --> 00:47:14.935 align:middle line:-1
+位于它旁边的imageView
+
+00:47:15.669 --> 00:47:19.273 align:middle line:-1
+我们注意到这两者的frame属性
+
+00:47:19.339 --> 00:47:21.008 align:middle line:-1
+都具有相同的源
+
+00:47:22.042 --> 00:47:26.313 align:middle line:-2
+所以这里可能发生的是
+标签被imageView阻挡了
+
+00:47:27.214 --> 00:47:29.583 align:middle line:-2
+因此我想我们需要再次查看
+我们的布局代码
+
+00:47:31.451 --> 00:47:34.555 align:middle line:-2
+除了对Swift对象的
+dump函数
+
+00:47:35.656 --> 00:47:37.925 align:middle line:-2
+如果你还有一些
+Objective-C代码
+
+00:47:38.492 --> 00:47:41.695 align:middle line:-2
+NSObject也有
+ivarDescription方法
+
+00:47:42.696 --> 00:47:43.730 align:middle line:-1
+这将打印出
+
+00:47:43.797 --> 00:47:47.000 align:middle line:-2
+Objective-C对象的
+所有实例变量
+
+00:47:48.435 --> 00:47:50.771 align:middle line:-1
+我们的截屏代码中还有另一个漏洞
+
+00:47:51.371 --> 00:47:53.740 align:middle line:-2
+我们的裁剪处理功能
+出于某些原因无法工作
+
+00:47:55.342 --> 00:47:58.779 align:middle line:-2
+如果我们在截屏的视图中调用
+ivarDescription
+
+00:47:59.613 --> 00:48:02.149 align:middle line:-1
+我们仔细观察可以看到
+

@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:55.582 --> 00:32:00.454 align:start position:43% line:-1
+(拍手)
+
+00:32:00.554 --> 00:32:04.558 align:start position:34% line:-2
+既存メソッド２つを
+修正するだけです
+
+00:32:04.758 --> 00:32:07.161 align:start position:18% line:-1
+File Promiseの承諾ですね
+
+00:32:08.962 --> 00:32:11.832 align:start position:25% line:-1
+ではテキストを追加しましょう
+
+00:32:15.169 --> 00:32:16.370 align:start position:38% line:-1
+こんな感じです
+
+00:32:16.537 --> 00:32:20.340 align:start position:30% line:-2
+作成した画像を
+まだ送信したくない場合
+
+00:32:20.440 --> 00:32:24.578 align:start position:29% line:-2
+デスクトップに
+保存できたらいいですよね
+
+00:32:27.247 --> 00:32:29.083 align:start position:36% line:-1
+うまくいきません
+
+00:32:29.183 --> 00:32:32.519 align:start position:25% line:-1
+再度Xcodeに戻りましょう
+
+00:32:38.025 --> 00:32:44.164 align:start position:23% line:-2
+クラスの一番下にあるのは
+オブジェクトを返すメソッドです
+
+00:32:44.498 --> 00:32:48.802 align:start position:25% line:-2
+この状態では
+NSImageしか返しません
+
+00:32:49.369 --> 00:32:53.474 align:start position:7% line:-2
+これをfilePromisedProviderに
+置き換えます
+
+00:32:56.944 --> 00:32:59.012 align:start position:21% line:-1
+fileProviderを作成し
+
+00:32:59.346 --> 00:33:02.883 align:start position:27% line:-1
+JPEGイメージを与えます
+

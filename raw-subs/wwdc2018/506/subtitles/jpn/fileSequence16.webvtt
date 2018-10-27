@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.525 --> 00:16:01.828 align:start position:30% line:-2
+ユーザがボタンを押すと
+再生が始まります
+
+00:16:01.929 --> 00:16:04.565 align:start position:20% line:-2
+これにはsetQueueメソッドを
+使用します
+
+00:16:04.965 --> 00:16:07.201 align:start position:25% line:-1
+ここではアルバムIDを供給し
+
+00:16:07.301 --> 00:16:11.638 align:start position:23% line:-2
+MusicKitがメタデータの
+取得をし キューを設定します
+
+00:16:12.306 --> 00:16:14.741 align:start position:29% line:-2
+コンテンツオブジェクトが
+ある場合は
+
+00:16:14.908 --> 00:16:17.544 align:start position:32% line:-2
+それを直接渡すことで
+処理がなされます
+
+00:16:19.780 --> 00:16:21.815 align:start position:20% line:-2
+setQueueはpromiseを
+返送します
+
+00:16:22.082 --> 00:16:24.151 align:start position:25% line:-2
+キューが十分にロードされると
+再生を開始
+
+00:16:24.284 --> 00:16:27.855 align:start position:27% line:-2
+“music.play”で
+自動的に再生を始めます
+
+00:16:31.091 --> 00:16:34.161 align:start position:30% line:-2
+再生が始まったあと
+コントロールも可能です
+
+00:16:34.461 --> 00:16:38.232 align:start position:27% line:-2
+前後のアイテムにスキップや
+一時停止もできます
+
+00:16:42.302 --> 00:16:46.273 align:start position:23% line:-2
+UI内にアクションを設定すれば
+楽曲 アルバムなどを
+
+00:16:46.373 --> 00:16:50.677 align:start position:18% line:-2
+iCloudミュージックライブラリへ
+付加できるようにします
+
+00:16:51.145 --> 00:16:53.680 align:start position:14% line:-2
+ここにaddToLibraryメソッドが
+あります
+
+00:16:56.350 --> 00:17:00.487 align:start position:32% line:-2
+これら３つのコールを
+バッチで実行できます
+

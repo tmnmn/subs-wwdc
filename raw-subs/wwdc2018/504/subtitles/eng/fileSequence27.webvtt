@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.236 --> 00:27:01.446 A:middle
+And when we're actually playing
+
+00:27:01.446 --> 00:27:03.996 A:middle
+back some audio, our app will be
+
+00:27:03.996 --> 00:27:06.046 A:middle
+kept frontmost for the duration
+
+00:27:06.046 --> 00:27:07.796 A:middle
+of that session, just like when
+
+00:27:07.796 --> 00:27:08.586 A:middle
+we were actually remote
+
+00:27:08.586 --> 00:27:10.006 A:middle
+controlling the audio when it
+
+00:27:10.006 --> 00:27:11.266 A:middle
+was occurring on iPhone.
+
+00:27:12.396 --> 00:27:13.566 A:middle
+And again, if the user ever
+
+00:27:13.566 --> 00:27:15.716 A:middle
+navigates away, then you're no
+
+00:27:15.716 --> 00:27:17.646 A:middle
+longer frontmost, but your
+
+00:27:17.646 --> 00:27:19.066 A:middle
+background playback will still
+
+00:27:19.066 --> 00:27:20.016 A:middle
+occur appropriately.
+
+00:27:21.166 --> 00:27:22.346 A:middle
+And in that case, you can, of
+
+00:27:22.346 --> 00:27:23.826 A:middle
+course, properly handle all of
+
+00:27:23.826 --> 00:27:26.266 A:middle
+your background events.
+
+00:27:26.266 --> 00:27:26.766 A:middle
+All right.
+
+00:27:28.656 --> 00:27:30.786 A:middle
+So now, we're -- and when we are
+
+00:27:30.786 --> 00:27:33.746 A:middle
+in that frontmost state, then we
+
+00:27:33.746 --> 00:27:35.306 A:middle
+also can integrate properly with
+
+00:27:35.306 --> 00:27:36.116 A:middle
+notification.
+
+00:27:36.116 --> 00:27:38.406 A:middle
+So we could post, for example,
+
+00:27:38.406 --> 00:27:39.586 A:middle
+when the download completes, a
+
+00:27:39.586 --> 00:27:40.806 A:middle
+content available local
+
+00:27:40.806 --> 00:27:41.546 A:middle
+notification.
+
+00:27:42.006 --> 00:27:43.466 A:middle
+And we might want to have play
+
+00:27:43.466 --> 00:27:44.826 A:middle
+as our primary action.
+
+00:27:45.596 --> 00:27:46.876 A:middle
+And with our new interaction
+
+00:27:46.876 --> 00:27:49.046 A:middle
+notifications on watchOS, we can
+
+00:27:49.046 --> 00:27:50.396 A:middle
+allow our user to actually
+
+00:27:50.396 --> 00:27:52.906 A:middle
+configure some playback right
+
+00:27:52.906 --> 00:27:54.766 A:middle
+from within the notification and
+
+00:27:54.766 --> 00:27:56.156 A:middle
+then be able to call play as the
+
+00:27:56.156 --> 00:27:57.946 A:middle
+primary action, then get into
+
+00:27:57.946 --> 00:27:59.616 A:middle
+your app and immediately cause
+
+00:27:59.616 --> 00:28:00.646 A:middle
+some playback to occur.
+

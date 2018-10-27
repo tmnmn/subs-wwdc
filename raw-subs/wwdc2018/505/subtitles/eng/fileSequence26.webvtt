@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.506 --> 00:26:00.786 A:middle
+when the file is ready, then the
+
+00:26:00.786 --> 00:26:02.306 A:middle
+reader block is called on the
+
+00:26:02.306 --> 00:26:04.156 A:middle
+provided operationQueue, where
+
+00:26:04.156 --> 00:26:05.206 A:middle
+you can handle the file.
+
+00:26:05.776 --> 00:26:09.576 A:middle
+It's very important to provide a
+
+00:26:09.576 --> 00:26:12.776 A:middle
+background operationQueue to not
+
+00:26:12.776 --> 00:26:14.616 A:middle
+block the main trades while
+
+00:26:14.616 --> 00:26:15.886 A:middle
+waiting for the file to be
+
+00:26:15.886 --> 00:26:18.896 A:middle
+downloaded over-- to be
+
+00:26:19.026 --> 00:26:20.716 A:middle
+downloaded, to be written by the
+
+00:26:20.716 --> 00:26:21.266 A:middle
+source file.
+
+00:26:22.286 --> 00:26:23.896 A:middle
+Because this process can take a
+
+00:26:23.896 --> 00:26:26.176 A:middle
+long time, and you don't want--
+
+00:26:26.176 --> 00:26:28.936 A:middle
+especially if the file needs to
+
+00:26:28.936 --> 00:26:30.096 A:middle
+be downloaded over a slow
+
+00:26:30.096 --> 00:26:30.466 A:middle
+network.
+
+00:26:30.976 --> 00:26:34.516 A:middle
+So, for a better user
+
+00:26:34.516 --> 00:26:36.796 A:middle
+experience, you need to display
+
+00:26:37.216 --> 00:26:39.606 A:middle
+a loading activity, and when the
+
+00:26:39.606 --> 00:26:41.206 A:middle
+file is ready, then you can
+
+00:26:41.406 --> 00:26:42.926 A:middle
+replace the UI with the real
+
+00:26:42.926 --> 00:26:43.396 A:middle
+content.
+
+00:26:43.816 --> 00:26:47.556 A:middle
+Here you will see an example of
+
+00:26:47.686 --> 00:26:51.896 A:middle
+Mail, showing a placeholder UI
+
+00:26:51.896 --> 00:26:53.786 A:middle
+while waiting for the image to
+
+00:26:53.786 --> 00:26:54.976 A:middle
+be downloaded via file promises.
+

@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:56.850 --> 00:22:00.220 align:start position:32% line:-2
+メモリアドレスと
+プロパティなどを表示
+
+00:22:00.320 --> 00:22:04.191 align:start position:30% line:-2
+最大の挑戦回数は10で
+正しい設定なので
+
+00:22:04.291 --> 00:22:06.927 align:start position:30% line:-1
+論理エラーのようですね
+
+00:22:07.027 --> 00:22:12.199 align:start position:29% line:-2
+挑戦回数が最大を超えても
+判断できないのです
+
+00:22:12.299 --> 00:22:16.203 align:start position:27% line:-2
+挑戦回数を変更するコードを
+見つけましょう
+
+00:22:16.370 --> 00:22:20.674 align:start position:16% line:-2
+変数ビューを開いて
+View Controllerを展開し
+
+00:22:20.774 --> 00:22:25.612 align:start position:25% line:-2
+下のフィルタに
+gamePlayと入力します
+
+00:22:25.712 --> 00:22:29.449 align:start position:30% line:-2
+プロパティを展開し
+attemptsを選択
+
+00:22:29.550 --> 00:22:35.422 align:start position:16% line:-2
+コンテキストメニューを開き
+Watch “attempts”を選択
+
+00:22:36.223 --> 00:22:39.526 align:start position:34% line:-2
+ウォッチポイントが
+生成されます
+
+00:22:39.626 --> 00:22:42.296 align:start position:34% line:-2
+ブレークポイント
+ナビゲータの下部に
+
+00:22:42.396 --> 00:22:46.733 align:start position:21% line:-2
+Watchpointsという名の
+グループとができます
+
+00:22:46.833 --> 00:22:48.735 align:start position:32% line:-1
+ウォッチポイントは―
+
+00:22:48.836 --> 00:22:52.539 align:start position:29% line:-2
+変数の値が変更された時に
+停止します
+
+00:22:52.639 --> 00:22:57.144 align:start position:29% line:-2
+不要なブレークポイントを
+消して 再開を押すと
+
+00:22:57.244 --> 00:22:59.112 align:start position:30% line:-1
+ウォッチポイントで停止
+
+00:22:59.213 --> 00:23:02.216 align:start position:34% line:-2
+これが挑戦回数を
+変更するコードです
+

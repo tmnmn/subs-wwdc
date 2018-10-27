@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.946 --> 00:13:02.649 align:start position:20% line:-1
+最も一般的なSubstringです
+
+00:13:03.283 --> 00:13:05.552 align:start position:34% line:-1
+集合のような型では
+
+00:13:05.953 --> 00:13:09.189 align:start position:23% line:-1
+一般的なスライスの型を使います
+
+00:13:09.289 --> 00:13:11.658 align:start position:27% line:-1
+集合には順番がないからです
+
+00:13:11.758 --> 00:13:16.163 align:start position:21% line:-2
+基本的に開始と終了インデックスが
+必要です
+
+00:13:16.830 --> 00:13:20.133 align:start position:32% line:-2
+データやレンジには
+独自のスライスがあり
+
+00:13:20.267 --> 00:13:22.636 align:start position:36% line:-1
+選択肢は様々です
+
+00:13:22.903 --> 00:13:26.173 align:start position:27% line:-1
+スライスについて もう１つ
+
+00:13:27.674 --> 00:13:32.446 align:start position:30% line:-2
+何千もの要素がある
+巨大なコレクションから
+
+00:13:33.113 --> 00:13:35.749 align:start position:21% line:-1
+いくつかをスライスで切り出します
+
+00:13:36.583 --> 00:13:43.457 align:start position:23% line:-2
+ただし スライスをしても
+元のコレクションは生きています
+
+00:13:43.557 --> 00:13:46.693 align:start position:29% line:-1
+そのために問題も起きます
+
+00:13:48.061 --> 00:13:51.431 align:start position:20% line:-1
+例えば dropLastを使った―
+
+00:13:51.532 --> 00:13:55.502 align:start position:21% line:-2
+配列の前半を戻す
+Extensionがあるとします
+
+00:13:55.836 --> 00:14:00.841 align:start position:16% line:-2
+８つの数字の配列があり
+Extensionを呼びスライスします
+

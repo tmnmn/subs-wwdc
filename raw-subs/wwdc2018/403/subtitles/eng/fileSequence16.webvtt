@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.736 --> 00:16:01.206 A:middle
+order to shorten this critical
+
+00:16:01.206 --> 00:16:02.636 A:middle
+part of the development cycle.
+
+00:16:03.406 --> 00:16:04.946 A:middle
+So, last year, we introduced a
+
+00:16:04.946 --> 00:16:08.156 A:middle
+feature in Xcode 9 to help you
+
+00:16:08.156 --> 00:16:10.096 A:middle
+run tests faster, it's called
+
+00:16:10.096 --> 00:16:11.536 A:middle
+Parallel Destination Testing.
+
+00:16:12.336 --> 00:16:13.906 A:middle
+This is the ability to run all
+
+00:16:13.906 --> 00:16:15.376 A:middle
+of your tests on multiple
+
+00:16:15.376 --> 00:16:17.166 A:middle
+destinations at the same time.
+
+00:16:18.186 --> 00:16:19.406 A:middle
+And you do this from the command
+
+00:16:19.406 --> 00:16:20.946 A:middle
+line by passing multiple
+
+00:16:20.946 --> 00:16:22.676 A:middle
+destinations specifiers to
+
+00:16:22.676 --> 00:16:23.376 A:middle
+xcodebuild.
+
+00:16:25.316 --> 00:16:27.066 A:middle
+Previously, if you were to run
+
+00:16:27.066 --> 00:16:28.726 A:middle
+your tests, let's say on an
+
+00:16:28.826 --> 00:16:31.926 A:middle
+iPhone X and an iPad, xcodebuild
+
+00:16:31.926 --> 00:16:33.466 A:middle
+would run all of the tests on
+
+00:16:33.466 --> 00:16:35.466 A:middle
+the iPhone X and then all of the
+
+00:16:35.466 --> 00:16:36.646 A:middle
+tests on the iPad.
+
+00:16:37.396 --> 00:16:38.986 A:middle
+Neither device would be running
+
+00:16:38.986 --> 00:16:42.466 A:middle
+tests at the same time.
+
+00:16:42.466 --> 00:16:44.016 A:middle
+But in Xcode 9, we changed this
+
+00:16:44.046 --> 00:16:45.896 A:middle
+behavior so that by default,
+
+00:16:46.176 --> 00:16:47.696 A:middle
+tests run concurrently on the
+
+00:16:47.696 --> 00:16:49.556 A:middle
+devices and this can
+
+00:16:49.556 --> 00:16:50.946 A:middle
+dramatically shorten the overall
+
+00:16:50.946 --> 00:16:54.406 A:middle
+execution time, which is great.
+
+00:16:54.586 --> 00:16:55.556 A:middle
+However, there are some
+
+00:16:55.556 --> 00:16:57.076 A:middle
+limitations to this approach.
+
+00:16:58.436 --> 00:17:00.816 A:middle
+First, it's only beneficial if
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:00.006 --> 00:08:02.926 A:middle
+and back propagate it, backward
+
+00:08:02.926 --> 00:08:04.596 A:middle
+through the network, backward
+
+00:08:04.596 --> 00:08:07.586 A:middle
+through the first gradient
+
+00:08:07.586 --> 00:08:08.966 A:middle
+primitive in the backward
+
+00:08:08.966 --> 00:08:09.496 A:middle
+direction.
+
+00:08:09.556 --> 00:08:11.196 A:middle
+In this case, it's the SoftMax
+
+00:08:12.026 --> 00:08:12.836 A:middle
+gradient primitive.
+
+00:08:14.036 --> 00:08:15.266 A:middle
+And we use the Chain Rule to do
+
+00:08:15.266 --> 00:08:15.486 A:middle
+that.
+
+00:08:15.576 --> 00:08:16.796 A:middle
+So, the Chain Rule allows us to
+
+00:08:16.796 --> 00:08:18.116 A:middle
+back propagate gradients,
+
+00:08:18.116 --> 00:08:19.106 A:middle
+backwards through the network.
+
+00:08:20.486 --> 00:08:21.556 A:middle
+And we're computing these
+
+00:08:21.556 --> 00:08:23.396 A:middle
+gradients so that we can update
+
+00:08:23.396 --> 00:08:23.796 A:middle
+weights.
+
+00:08:24.166 --> 00:08:25.736 A:middle
+So, we're computing very small
+
+00:08:25.736 --> 00:08:27.376 A:middle
+deltas to apply to the weights,
+
+00:08:28.016 --> 00:08:29.216 A:middle
+in each iteration of training.
+
+00:08:29.766 --> 00:08:32.645 A:middle
+And then we can use these
+
+00:08:32.645 --> 00:08:34.056 A:middle
+updated weights in the next
+
+00:08:34.056 --> 00:08:36.395 A:middle
+iteration of training, to
+
+00:08:36.395 --> 00:08:37.785 A:middle
+ideally produce a lower loss
+
+00:08:37.785 --> 00:08:38.816 A:middle
+value, which is what we're
+
+00:08:38.816 --> 00:08:39.626 A:middle
+trying to minimize.
+
+00:08:43.606 --> 00:08:45.156 A:middle
+In practice, any situation of
+
+00:08:45.156 --> 00:08:47.086 A:middle
+training, we're not going to
+
+00:08:47.086 --> 00:08:48.506 A:middle
+operate on a single image.
+
+00:08:49.116 --> 00:08:50.666 A:middle
+We're going to operate on a
+
+00:08:50.666 --> 00:08:52.226 A:middle
+group or a batch of images.
+
+00:08:52.226 --> 00:08:54.396 A:middle
+For example, a batch of size 32
+
+00:08:54.396 --> 00:08:55.056 A:middle
+or 64.
+
+00:08:55.566 --> 00:08:57.176 A:middle
+And we need a corresponding
+
+00:08:57.176 --> 00:08:59.916 A:middle
+batch of labels, for loss
+
+00:08:59.916 --> 00:09:00.576 A:middle
+computation.
+

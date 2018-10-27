@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.296 --> 00:02:02.156 A:middle
+health, we establish a secure
+
+00:02:02.156 --> 00:02:03.586 A:middle
+connection to healthcare
+
+00:02:03.586 --> 00:02:07.176 A:middle
+institutions and download users'
+
+00:02:07.176 --> 00:02:09.496 A:middle
+health records in FHIR direct to
+
+00:02:09.496 --> 00:02:10.675 A:middle
+their iOS devices.
+
+00:02:12.496 --> 00:02:14.816 A:middle
+From here we it store securely
+
+00:02:14.816 --> 00:02:18.266 A:middle
+in HealthKit and aggregate data
+
+00:02:18.296 --> 00:02:20.076 A:middle
+across multiple institutions.
+
+00:02:21.876 --> 00:02:24.986 A:middle
+Starting today in iOS 12 we are
+
+00:02:24.986 --> 00:02:26.986 A:middle
+providing APIs to allow you to
+
+00:02:26.986 --> 00:02:28.916 A:middle
+access this data and work with
+
+00:02:28.916 --> 00:02:30.000 A:middle
+it in your apps.
+
+00:02:36.046 --> 00:02:36.846 A:middle
+First, I'm going to introduce
+
+00:02:36.846 --> 00:02:38.536 A:middle
+the new sample types that we've
+
+00:02:38.536 --> 00:02:39.956 A:middle
+added to support this feature.
+
+00:02:41.476 --> 00:02:42.916 A:middle
+Then we can see how you
+
+00:02:42.916 --> 00:02:44.766 A:middle
+authorize your application and
+
+00:02:44.766 --> 00:02:48.000 A:middle
+query for data.
+
+00:02:48.056 --> 00:02:49.556 A:middle
+After that, I'll take a brief
+
+00:02:49.556 --> 00:02:51.286 A:middle
+dive into FHIR and show you
+
+00:02:51.286 --> 00:02:52.876 A:middle
+what's possible here.
+
+00:02:54.276 --> 00:02:56.706 A:middle
+And finally, we can take some
+
+00:02:56.706 --> 00:02:58.336 A:middle
+time to think about how you can
+
+00:02:58.336 --> 00:03:00.606 A:middle
+help protect your users' privacy
+

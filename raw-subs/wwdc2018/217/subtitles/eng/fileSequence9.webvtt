@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.416 --> 00:09:00.706 A:middle
+order of parameters you have
+
+00:09:00.706 --> 00:09:01.576 A:middle
+listed in your intents
+
+00:09:01.576 --> 00:09:02.256 A:middle
+definition file.
+
+00:09:02.836 --> 00:09:05.106 A:middle
+In the case of an
+
+00:09:05.106 --> 00:09:06.906 A:middle
+NSUserActivity, when you're
+
+00:09:06.906 --> 00:09:07.926 A:middle
+creating your userActivity to
+
+00:09:07.926 --> 00:09:09.536 A:middle
+make a shortcut, you'll supply
+
+00:09:09.536 --> 00:09:10.896 A:middle
+it-- userActivity type that
+
+00:09:10.896 --> 00:09:11.776 A:middle
+you've listed in your app's
+
+00:09:11.776 --> 00:09:12.776 A:middle
+info.plist.
+
+00:09:13.156 --> 00:09:13.986 A:middle
+And, for us to be able to
+
+00:09:13.986 --> 00:09:15.076 A:middle
+display it without a default
+
+00:09:15.076 --> 00:09:16.116 A:middle
+card template, you'll need to
+
+00:09:16.116 --> 00:09:17.176 A:middle
+give us a title on the title
+
+00:09:17.176 --> 00:09:17.596 A:middle
+property.
+
+00:09:18.646 --> 00:09:20.486 A:middle
+In iOS you can also supply a
+
+00:09:20.486 --> 00:09:22.526 A:middle
+subtitle and a custom image by
+
+00:09:22.526 --> 00:09:22.896 A:middle
+creating a
+
+00:09:22.896 --> 00:09:25.066 A:middle
+CSSearchableItemAttributeSet.
+
+00:09:26.256 --> 00:09:27.336 A:middle
+And, on that attribute set,
+
+00:09:27.336 --> 00:09:28.666 A:middle
+we'll extract a subtitle from
+
+00:09:28.666 --> 00:09:29.456 A:middle
+the content description
+
+00:09:29.456 --> 00:09:31.146 A:middle
+property, and the custom image
+
+00:09:31.146 --> 00:09:32.306 A:middle
+from the thumbnailData property.
+
+00:09:33.476 --> 00:09:34.426 A:middle
+When you're done configuring
+
+00:09:34.426 --> 00:09:35.926 A:middle
+this attribute set, set on your
+
+00:09:35.966 --> 00:09:36.926 A:middle
+NSUserActivity's
+
+00:09:37.066 --> 00:09:38.336 A:middle
+contentAttributeSet property.
+
+00:09:38.916 --> 00:09:42.216 A:middle
+If you don't want to give us the
+
+00:09:42.216 --> 00:09:43.856 A:middle
+content that's baked into your
+
+00:09:43.856 --> 00:09:44.846 A:middle
+shortcut, you can supply a
+
+00:09:44.846 --> 00:09:46.306 A:middle
+default card template, which has
+
+00:09:46.306 --> 00:09:47.156 A:middle
+properties for each of the
+
+00:09:47.156 --> 00:09:48.066 A:middle
+fields on this platter.
+
+00:09:48.536 --> 00:09:49.376 A:middle
+And, depending on what we have
+
+00:09:49.376 --> 00:09:51.106 A:middle
+available to us, we will display
+
+00:09:51.136 --> 00:09:51.796 A:middle
+a different layout.
+
+00:09:52.536 --> 00:09:53.296 A:middle
+You can see in the right two
+
+00:09:53.296 --> 00:09:54.746 A:middle
+configurations, that if no image
+
+00:09:54.746 --> 00:09:55.796 A:middle
+is provided, we'll lay out the
+
+00:09:55.796 --> 00:09:57.296 A:middle
+text further to the left, giving
+
+00:09:57.296 --> 00:09:58.696 A:middle
+you more space for your words.
+
+00:09:59.376 --> 00:10:00.836 A:middle
+In the bottom two cases, if
+

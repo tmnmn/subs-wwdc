@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.536 --> 00:14:00.786 A:middle
+Now, I like to keep an eye on
+
+00:14:00.786 --> 00:14:02.256 A:middle
+this area of the window to track
+
+00:14:02.256 --> 00:14:03.396 A:middle
+view while I'm recording.
+
+00:14:03.786 --> 00:14:05.216 A:middle
+So I'm going to resize the Xcode
+
+00:14:05.216 --> 00:14:06.866 A:middle
+window to be a little shorter,
+
+00:14:06.866 --> 00:14:08.026 A:middle
+so I can still see that, and
+
+00:14:08.256 --> 00:14:09.336 A:middle
+then I'm going to do the thing
+
+00:14:09.336 --> 00:14:09.896 A:middle
+that was slow.
+
+00:14:09.896 --> 00:14:10.736 A:middle
+I'm going to create a couple
+
+00:14:10.736 --> 00:14:11.316 A:middle
+more tabs.
+
+00:14:12.726 --> 00:14:15.006 A:middle
+And you can see the graph
+
+00:14:15.246 --> 00:14:15.826 A:middle
+changed here.
+
+00:14:15.826 --> 00:14:17.016 A:middle
+Now, I'm going to go ahead and
+
+00:14:17.086 --> 00:14:19.636 A:middle
+quit, and return to Instruments.
+
+00:14:21.316 --> 00:14:23.056 A:middle
+So what just happened?
+
+00:14:23.936 --> 00:14:25.266 A:middle
+While the Profiler was running,
+
+00:14:26.126 --> 00:14:27.476 A:middle
+it was attached to our process
+
+00:14:27.476 --> 00:14:28.076 A:middle
+like a debugger.
+
+00:14:28.076 --> 00:14:30.586 A:middle
+And it stopped it, thousands of
+
+00:14:30.586 --> 00:14:32.816 A:middle
+times per second, and as it was
+
+00:14:32.816 --> 00:14:34.336 A:middle
+stopping it, it gathered back
+
+00:14:34.366 --> 00:14:34.936 A:middle
+traces.
+
+00:14:35.236 --> 00:14:37.026 A:middle
+Now, just a reminder, a back
+
+00:14:37.026 --> 00:14:38.546 A:middle
+trace is a description of how
+
+00:14:38.546 --> 00:14:39.706 A:middle
+your program got to where it
+
+00:14:39.706 --> 00:14:40.386 A:middle
+currently is.
+
+00:14:40.876 --> 00:14:42.006 A:middle
+So if you're on line 6 of
+
+00:14:42.006 --> 00:14:43.716 A:middle
+function C and you got there
+
+00:14:43.716 --> 00:14:45.286 A:middle
+because main called A, called B,
+
+00:14:45.326 --> 00:14:46.926 A:middle
+called C, then your back trace
+
+00:14:47.016 --> 00:14:48.256 A:middle
+is Main, A, B, C.
+
+00:14:49.006 --> 00:14:50.346 A:middle
+When Instruments captures one of
+
+00:14:50.346 --> 00:14:51.946 A:middle
+these back traces, it notes,
+
+00:14:52.226 --> 00:14:53.356 A:middle
+hey, we just spent one
+
+00:14:53.356 --> 00:14:54.686 A:middle
+millisecond in function C.
+
+00:14:54.686 --> 00:14:56.916 A:middle
+It says one millisecond, because
+
+00:14:56.916 --> 00:14:58.056 A:middle
+that is our sampling interval
+
+00:14:58.056 --> 00:14:59.016 A:middle
+for recording once every
+
+00:14:59.016 --> 00:14:59.546 A:middle
+millisecond.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.746 --> 00:21:01.156 A:middle
+collections in ways that were
+
+00:21:01.156 --> 00:21:02.256 A:middle
+not possible before.
+
+00:21:02.986 --> 00:21:05.886 A:middle
+So here I have a set of arrays
+
+00:21:05.886 --> 00:21:08.166 A:middle
+of optional integers and
+
+00:21:09.176 --> 00:21:10.366 A:middle
+everything just works.
+
+00:21:10.916 --> 00:21:13.416 A:middle
+If you want to learn more
+
+00:21:13.416 --> 00:21:14.656 A:middle
+there's a session later this
+
+00:21:14.656 --> 00:21:17.026 A:middle
+week where you can learn about
+
+00:21:17.026 --> 00:21:18.476 A:middle
+conditional conformance and some
+
+00:21:18.476 --> 00:21:19.946 A:middle
+other generics improvements in
+
+00:21:19.946 --> 00:21:21.256 A:middle
+Swift 4.2 that I won't be
+
+00:21:21.256 --> 00:21:22.536 A:middle
+covering today.
+
+00:21:23.896 --> 00:21:25.756 A:middle
+So what about defining your own
+
+00:21:25.756 --> 00:21:26.776 A:middle
+Equatable and Hashable
+
+00:21:26.776 --> 00:21:27.606 A:middle
+conformances.
+
+00:21:28.596 --> 00:21:30.376 A:middle
+Well, a common pattern in Swift
+
+00:21:30.446 --> 00:21:32.446 A:middle
+is that I have a struct with a
+
+00:21:32.446 --> 00:21:34.516 A:middle
+bunch of stored properties and
+
+00:21:34.516 --> 00:21:36.006 A:middle
+all those stored properties are
+
+00:21:36.006 --> 00:21:37.096 A:middle
+themselves Equatable.
+
+00:21:37.436 --> 00:21:38.546 A:middle
+And then I want to make the
+
+00:21:38.546 --> 00:21:40.656 A:middle
+struct Equatable just by
+
+00:21:40.656 --> 00:21:42.156 A:middle
+comparing those properties of
+
+00:21:42.156 --> 00:21:43.056 A:middle
+the two values.
+
+00:21:43.516 --> 00:21:45.616 A:middle
+In Swift 4 previously you had to
+
+00:21:45.616 --> 00:21:46.726 A:middle
+write this out by hand.
+
+00:21:47.166 --> 00:21:48.486 A:middle
+And this is just boilerplate.
+
+00:21:48.706 --> 00:21:50.276 A:middle
+If I add a new stored property
+
+00:21:50.276 --> 00:21:51.836 A:middle
+to my struct, I have to remember
+
+00:21:51.836 --> 00:21:53.286 A:middle
+to update this implementation of
+
+00:21:53.286 --> 00:21:54.926 A:middle
+Equatable and it's easy to make
+
+00:21:54.926 --> 00:21:56.466 A:middle
+a copy and paste error or some
+
+00:21:56.466 --> 00:21:57.166 A:middle
+other mistake.
+
+00:21:57.796 --> 00:21:59.676 A:middle
+So in Swift 4.1 we introduce
+
+00:21:59.676 --> 00:22:01.536 A:middle
+this ability to synthesize the
+

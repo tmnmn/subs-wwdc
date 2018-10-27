@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.136 --> 00:06:00.216 A:middle
+this crash log in our source
+
+00:06:00.216 --> 00:06:01.406 A:middle
+code I can reason about what's
+
+00:06:01.406 --> 00:06:01.966 A:middle
+going on.
+
+00:06:02.336 --> 00:06:03.526 A:middle
+So I'm going to click the Open
+
+00:06:03.526 --> 00:06:05.796 A:middle
+in Project button, select the
+
+00:06:05.796 --> 00:06:07.286 A:middle
+project that matches build 5 of
+
+00:06:07.286 --> 00:06:10.126 A:middle
+my app and what I do, what you
+
+00:06:10.126 --> 00:06:12.146 A:middle
+can see is that this crash log
+
+00:06:12.146 --> 00:06:13.296 A:middle
+has opened up in the debug
+
+00:06:13.296 --> 00:06:15.096 A:middle
+navigator as if this app has
+
+00:06:15.096 --> 00:06:15.806 A:middle
+just crashed.
+
+00:06:16.776 --> 00:06:17.796 A:middle
+And you can see here that we're
+
+00:06:17.796 --> 00:06:19.296 A:middle
+stopped on this fatal error.
+
+00:06:20.556 --> 00:06:22.416 A:middle
+So a good question to ask myself
+
+00:06:22.416 --> 00:06:23.916 A:middle
+is, is this a valid use of fatal
+
+00:06:23.916 --> 00:06:25.106 A:middle
+error, I only want to be
+
+00:06:25.106 --> 00:06:26.366 A:middle
+crashing if it's absolutely
+
+00:06:26.366 --> 00:06:26.936 A:middle
+necessary.
+
+00:06:28.316 --> 00:06:31.136 A:middle
+So I can see that this is an
+
+00:06:31.136 --> 00:06:33.846 A:middle
+initializer of an enum from an
+
+00:06:33.896 --> 00:06:36.756 A:middle
+int and that enum can only be
+
+00:06:36.756 --> 00:06:38.886 A:middle
+zero or one, if it's not I'll
+
+00:06:38.886 --> 00:06:39.796 A:middle
+hit this fatal error.
+
+00:06:40.246 --> 00:06:41.126 A:middle
+So I think that this makes
+
+00:06:41.196 --> 00:06:42.136 A:middle
+sense, this should only be
+
+00:06:42.196 --> 00:06:43.796 A:middle
+crashing if there's some kind of
+
+00:06:43.796 --> 00:06:45.086 A:middle
+misuse by the programmer.
+
+00:06:45.796 --> 00:06:48.856 A:middle
+So I can see the caller of this
+
+00:06:48.856 --> 00:06:50.476 A:middle
+initializer if I navigate up the
+
+00:06:50.536 --> 00:06:53.076 A:middle
+call stack here and I can see
+
+00:06:53.076 --> 00:06:54.396 A:middle
+it's this tableView delegate
+
+00:06:54.396 --> 00:06:54.836 A:middle
+method.
+
+00:06:54.936 --> 00:06:56.666 A:middle
+This method is asking for a
+
+00:06:56.716 --> 00:06:58.226 A:middle
+title for a header in a given
+
+00:06:58.226 --> 00:06:58.886 A:middle
+section number.
+
+00:06:59.636 --> 00:07:00.776 A:middle
+So it must be that that section
+

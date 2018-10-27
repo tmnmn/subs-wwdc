@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.446 --> 00:04:02.456 A:middle
+you can do something about that.
+
+00:04:02.766 --> 00:04:04.126 A:middle
+See, now with VR application it
+
+00:04:04.126 --> 00:04:05.336 A:middle
+wants to benefit from
+
+00:04:05.336 --> 00:04:06.656 A:middle
+multi-sample [inaudible], it
+
+00:04:07.236 --> 00:04:08.806 A:middle
+needed to use the dedicated
+
+00:04:08.976 --> 00:04:12.016 A:middle
+textures per i, or single shared
+
+00:04:12.016 --> 00:04:13.666 A:middle
+one, for both.
+
+00:04:13.716 --> 00:04:15.246 A:middle
+But none of those layouts is
+
+00:04:15.306 --> 00:04:15.726 A:middle
+perfect.
+
+00:04:16.576 --> 00:04:18.386 A:middle
+The dedicated textures require
+
+00:04:18.386 --> 00:04:20.505 A:middle
+separate draw calls and passes,
+
+00:04:20.886 --> 00:04:21.846 A:middle
+as we just saw.
+
+00:04:23.166 --> 00:04:25.246 A:middle
+While straight textures enable
+
+00:04:25.246 --> 00:04:27.296 A:middle
+rendering of both eyes in single
+
+00:04:27.656 --> 00:04:30.456 A:middle
+rendered and results pass, they
+
+00:04:30.456 --> 00:04:32.206 A:middle
+are problematic when it comes to
+
+00:04:32.276 --> 00:04:34.196 A:middle
+post-processing the effects.
+
+00:04:34.736 --> 00:04:36.986 A:middle
+[Inaudible] textures have all
+
+00:04:36.986 --> 00:04:38.956 A:middle
+the benefits of both dedicated
+
+00:04:39.126 --> 00:04:41.556 A:middle
+and shared layouts, but
+
+00:04:41.646 --> 00:04:43.026 A:middle
+currently they couldn't be used
+
+00:04:43.176 --> 00:04:44.056 A:middle
+with MSAA.
+
+00:04:45.816 --> 00:04:47.506 A:middle
+This was forcing app developers
+
+00:04:47.566 --> 00:04:48.826 A:middle
+to use different rendering
+
+00:04:48.936 --> 00:04:50.876 A:middle
+part-time layouts, based on the
+
+00:04:51.096 --> 00:04:54.046 A:middle
+fact if they wanted to use MSAA
+
+00:04:54.046 --> 00:04:54.406 A:middle
+or not.
+
+00:04:54.936 --> 00:04:56.716 A:middle
+Or use different tricks to work
+
+00:04:56.716 --> 00:04:57.646 A:middle
+around it.
+
+00:04:57.866 --> 00:04:59.416 A:middle
+So let's see how we can optimize
+
+00:04:59.466 --> 00:05:00.116 A:middle
+this rendering.
+

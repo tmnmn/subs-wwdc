@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:56.510 --> 00:13:00.581 align:start position:21% line:-1
+セットアップ方法を例に説明します
+
+00:13:02.716 --> 00:13:06.253 align:start position:34% line:-2
+先ほどの例のとおり
+プロトタイプを
+
+00:13:06.587 --> 00:13:10.357 align:start position:23% line:-1
+rulesを使い構成してみます
+
+00:13:10.724 --> 00:13:13.961 align:start position:23% line:-2
+まず ユーザインターフェイスの
+共通項目で
+
+00:13:14.061 --> 00:13:16.697 align:start position:29% line:-1
+プロトタイプを定義します
+
+00:13:17.531 --> 00:13:20.334 align:start position:29% line:-1
+今回は画像とタイトルです
+
+00:13:21.935 --> 00:13:26.240 align:start position:21% line:-2
+プログレスバーの
+placeholderもあります
+
+00:13:26.573 --> 00:13:30.077 align:start position:29% line:-2
+placeholderも
+特別な非表示要素で
+
+00:13:30.177 --> 00:13:35.749 align:start position:29% line:-2
+データ状態が一致した際
+代替ターゲットになります
+
+00:13:37.718 --> 00:13:39.386 align:start position:36% line:-1
+早速 記述します
+
+00:13:40.020 --> 00:13:44.558 align:start position:18% line:-2
+兄弟要素に働くrulesのグループは
+rulesタグでカプセル化
+
+00:13:47.494 --> 00:13:53.100 align:start position:12% line:-2
+そして 個別のrulesは
+specializeの要素としてカプセル化
+
+00:13:54.535 --> 00:13:59.473 align:start position:23% line:-2
+specializeの要素は
+状態に応じアクティブになります
+

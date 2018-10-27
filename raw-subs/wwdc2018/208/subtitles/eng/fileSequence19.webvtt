@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.946 --> 00:19:02.206 A:middle
+for a more in-depth look at how
+
+00:19:02.316 --> 00:19:04.576 A:middle
+focus and voiceover work
+
+00:19:04.576 --> 00:19:06.116 A:middle
+together in tvOS.
+
+00:19:06.966 --> 00:19:10.336 A:middle
+And now, I'd like to invite my
+
+00:19:10.526 --> 00:19:12.026 A:middle
+colleague, Paul, to give us a
+
+00:19:12.026 --> 00:19:13.406 A:middle
+demo on how to create a
+
+00:19:13.406 --> 00:19:14.886 A:middle
+focus-powered Metal app.
+
+00:19:15.516 --> 00:19:21.516 A:middle
+[ Applause ]
+
+00:19:22.016 --> 00:19:22.466 A:middle
+&gt;&gt; Thanks, Ada.
+
+00:19:22.466 --> 00:19:25.036 A:middle
+So, I'm working on the setting
+
+00:19:25.036 --> 00:19:26.576 A:middle
+screen for a Metal-based game.
+
+00:19:27.136 --> 00:19:28.156 A:middle
+At the bottom of the screen,
+
+00:19:28.306 --> 00:19:29.226 A:middle
+there's some standard UI
+
+00:19:29.226 --> 00:19:29.646 A:middle
+buttons.
+
+00:19:30.426 --> 00:19:32.116 A:middle
+And, up at the top are some
+
+00:19:32.116 --> 00:19:33.406 A:middle
+tiles for selecting levels.
+
+00:19:34.086 --> 00:19:35.076 A:middle
+These tiles are actually
+
+00:19:35.076 --> 00:19:36.006 A:middle
+rendered by the game engine
+
+00:19:36.006 --> 00:19:36.526 A:middle
+itself.
+
+00:19:36.906 --> 00:19:37.736 A:middle
+I'm sure you can tell by the
+
+00:19:37.736 --> 00:19:38.986 A:middle
+incredible 3D graphics that you
+
+00:19:38.986 --> 00:19:39.516 A:middle
+see up there.
+
+00:19:40.266 --> 00:19:41.736 A:middle
+So, I want to be able to select
+
+00:19:41.736 --> 00:19:43.216 A:middle
+the tiles using the remote.
+
+00:19:44.296 --> 00:19:45.646 A:middle
+Previously, I would have had to
+
+00:19:45.646 --> 00:19:46.616 A:middle
+handle events from the remote
+
+00:19:46.616 --> 00:19:48.596 A:middle
+myself, and implement my own
+
+00:19:48.596 --> 00:19:50.446 A:middle
+navigation, trying my best to
+
+00:19:50.446 --> 00:19:51.466 A:middle
+match the feel of the focus
+
+00:19:51.466 --> 00:19:51.806 A:middle
+engine.
+
+00:19:52.306 --> 00:19:54.256 A:middle
+In tvOS 12, I can connect these
+
+00:19:54.256 --> 00:19:55.706 A:middle
+tiles directly to the focus
+
+00:19:55.706 --> 00:19:56.016 A:middle
+engine.
+
+00:19:56.016 --> 00:19:56.976 A:middle
+So, let's go ahead and do that.
+

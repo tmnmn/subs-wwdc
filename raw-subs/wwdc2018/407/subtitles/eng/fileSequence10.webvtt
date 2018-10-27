@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.866 --> 00:10:01.506 A:middle
+So, if I was writing code
+
+00:10:01.506 --> 00:10:03.106 A:middle
+completion unit tests for Xcode,
+
+00:10:03.756 --> 00:10:05.996 A:middle
+I'm sorry, integration tests, I
+
+00:10:05.996 --> 00:10:08.466 A:middle
+would launch the full Xcode app.
+
+00:10:08.466 --> 00:10:09.566 A:middle
+I would open a source file.
+
+00:10:09.566 --> 00:10:11.136 A:middle
+I would navigate to the source
+
+00:10:11.136 --> 00:10:13.366 A:middle
+file, and I would type, and I
+
+00:10:13.366 --> 00:10:14.396 A:middle
+would bring up code completion
+
+00:10:14.486 --> 00:10:15.306 A:middle
+over and over again.
+
+00:10:16.076 --> 00:10:17.636 A:middle
+When I profile this, to see what
+
+00:10:17.636 --> 00:10:18.686 A:middle
+Xcode is doing, and how much
+
+00:10:18.686 --> 00:10:20.316 A:middle
+time it is taking, I am going to
+
+00:10:20.316 --> 00:10:21.886 A:middle
+find that this test is anything
+
+00:10:21.886 --> 00:10:22.956 A:middle
+but focused and quiet.
+
+00:10:24.006 --> 00:10:25.476 A:middle
+Xcode is going to be doing
+
+00:10:25.476 --> 00:10:26.986 A:middle
+drawing and layout as I type.
+
+00:10:26.986 --> 00:10:28.996 A:middle
+It is going to be doing syntax
+
+00:10:29.066 --> 00:10:29.906 A:middle
+coloring as I type.
+
+00:10:30.556 --> 00:10:31.536 A:middle
+In the background, it might be
+
+00:10:31.536 --> 00:10:33.636 A:middle
+indexing, fetching get status,
+
+00:10:34.086 --> 00:10:35.506 A:middle
+deciding to show new files in
+
+00:10:35.506 --> 00:10:35.976 A:middle
+the Assistant Editor,
+
+00:10:36.056 --> 00:10:36.866 A:middle
+and all of these things are
+
+00:10:37.166 --> 00:10:40.056 A:middle
+going to be competing for CPU
+
+00:10:40.116 --> 00:10:41.806 A:middle
+resources, along with code
+
+00:10:41.806 --> 00:10:42.246 A:middle
+completion.
+
+00:10:43.086 --> 00:10:44.046 A:middle
+Maybe when I look in the
+
+00:10:44.046 --> 00:10:45.786 A:middle
+Profiler, I'll see that we spend
+
+00:10:45.786 --> 00:10:47.636 A:middle
+80% of our time syntax coloring,
+
+00:10:47.916 --> 00:10:50.136 A:middle
+and 20% of our time in code
+
+00:10:50.136 --> 00:10:50.626 A:middle
+completion.
+
+00:10:51.086 --> 00:10:52.636 A:middle
+And with this data, I would know
+
+00:10:52.636 --> 00:10:54.776 A:middle
+that the best way to improve
+
+00:10:54.816 --> 00:10:55.976 A:middle
+code completion performance
+
+00:10:56.256 --> 00:10:57.696 A:middle
+would be to defer syntax
+
+00:10:57.746 --> 00:10:58.076 A:middle
+coloring.
+
+00:10:58.686 --> 00:11:00.256 A:middle
+I will never gain that type of
+

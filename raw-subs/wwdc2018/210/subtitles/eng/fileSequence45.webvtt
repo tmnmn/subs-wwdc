@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.586 --> 00:45:01.076 A:middle
+this photo browser where we draw
+
+00:45:01.076 --> 00:45:02.406 A:middle
+a selection ring around the
+
+00:45:02.406 --> 00:45:03.816 A:middle
+selected photo.
+
+00:45:04.356 --> 00:45:06.126 A:middle
+Here, we were using the
+
+00:45:06.226 --> 00:45:08.026 A:middle
+selectedContentBackgroundColor,
+
+00:45:08.376 --> 00:45:09.576 A:middle
+and that, again, automatically
+
+00:45:09.576 --> 00:45:11.066 A:middle
+adjusts based on the user's
+
+00:45:11.066 --> 00:45:12.056 A:middle
+selected accent.
+
+00:45:13.846 --> 00:45:14.696 A:middle
+Let's open up one of these
+
+00:45:14.696 --> 00:45:15.986 A:middle
+photos and take a look at a
+
+00:45:15.986 --> 00:45:17.956 A:middle
+nice, big, beautiful photo of
+
+00:45:17.956 --> 00:45:18.336 A:middle
+Chloe.
+
+00:45:19.056 --> 00:45:21.396 A:middle
+The first thing that stands out
+
+00:45:21.396 --> 00:45:22.636 A:middle
+is the fact that the background
+
+00:45:22.636 --> 00:45:24.436 A:middle
+has not adjusted for Dark Mode.
+
+00:45:25.066 --> 00:45:26.276 A:middle
+It's still using its light
+
+00:45:26.276 --> 00:45:28.256 A:middle
+translucency effect similar to a
+
+00:45:28.256 --> 00:45:29.106 A:middle
+hardcoded color.
+
+00:45:30.916 --> 00:45:32.066 A:middle
+This effect is provided by
+
+00:45:32.066 --> 00:45:33.896 A:middle
+NSVisualEfffectView, which
+
+00:45:33.926 --> 00:45:35.246 A:middle
+provides the translucent blur
+
+00:45:35.246 --> 00:45:36.616 A:middle
+materials you see across the
+
+00:45:36.616 --> 00:45:37.026 A:middle
+system.
+
+00:45:37.186 --> 00:45:38.766 A:middle
+For instance, there's the
+
+00:45:38.766 --> 00:45:40.236 A:middle
+sidebars which blur onto the
+
+00:45:40.236 --> 00:45:41.736 A:middle
+desktop and other windows behind
+
+00:45:41.736 --> 00:45:43.446 A:middle
+it, as well as things like the
+
+00:45:43.446 --> 00:45:44.886 A:middle
+title bar, which blur the
+
+00:45:44.886 --> 00:45:45.886 A:middle
+content that's scrolled
+
+00:45:45.886 --> 00:45:47.066 A:middle
+underneath.
+
+00:45:47.966 --> 00:45:50.226 A:middle
+NSVisualEffectView also enables
+
+00:45:50.226 --> 00:45:51.566 A:middle
+the vibrant foreground blending,
+
+00:45:51.866 --> 00:45:53.636 A:middle
+that Raymond talked about, by
+
+00:45:53.636 --> 00:45:55.586 A:middle
+taking a grayscale color plus a
+
+00:45:55.586 --> 00:45:57.206 A:middle
+Blend Mode and making it really
+
+00:45:57.206 --> 00:45:58.846 A:middle
+pop on top of these backgrounds.
+
+00:45:59.826 --> 00:46:00.906 A:middle
+The advanced Dark Mode talk is
+

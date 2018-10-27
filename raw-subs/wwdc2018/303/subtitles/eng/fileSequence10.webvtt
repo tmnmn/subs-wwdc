@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.066 --> 00:10:01.226 A:middle
+That's just standard REST
+
+00:10:01.286 --> 00:10:02.316 A:middle
+behavior to tell you that the
+
+00:10:02.316 --> 00:10:03.506 A:middle
+resource was successfully
+
+00:10:03.506 --> 00:10:03.976 A:middle
+created.
+
+00:10:05.266 --> 00:10:06.976 A:middle
+And we also include the full
+
+00:10:06.976 --> 00:10:08.446 A:middle
+resource information in the
+
+00:10:08.446 --> 00:10:10.086 A:middle
+response data and this is
+
+00:10:10.086 --> 00:10:11.336 A:middle
+important for two reasons.
+
+00:10:11.606 --> 00:10:13.656 A:middle
+First, it gives you the ID and
+
+00:10:14.046 --> 00:10:15.736 A:middle
+the resource self link of the
+
+00:10:15.736 --> 00:10:17.396 A:middle
+resource that was created, which
+
+00:10:17.396 --> 00:10:18.426 A:middle
+is stuff you're probably going
+
+00:10:18.426 --> 00:10:19.676 A:middle
+to need later so you can come
+
+00:10:19.676 --> 00:10:21.136 A:middle
+back and operate on this
+
+00:10:21.136 --> 00:10:21.676 A:middle
+resource.
+
+00:10:22.226 --> 00:10:23.816 A:middle
+And also if you look at the
+
+00:10:23.816 --> 00:10:25.286 A:middle
+attributes, you may see
+
+00:10:25.286 --> 00:10:27.076 A:middle
+attributes in this response that
+
+00:10:27.076 --> 00:10:28.686 A:middle
+you didn't include in the POST.
+
+00:10:29.626 --> 00:10:30.636 A:middle
+For example with user
+
+00:10:30.636 --> 00:10:32.036 A:middle
+invitations, Apple will assign
+
+00:10:32.036 --> 00:10:34.056 A:middle
+an expiration Date to every user
+
+00:10:34.056 --> 00:10:35.166 A:middle
+invitation you create.
+
+00:10:35.476 --> 00:10:37.106 A:middle
+Now you don't set that, so you
+
+00:10:37.106 --> 00:10:38.416 A:middle
+don't include it in the POST.
+
+00:10:38.656 --> 00:10:39.746 A:middle
+And that's why this response
+
+00:10:39.796 --> 00:10:41.296 A:middle
+data is really important to you.
+
+00:10:41.296 --> 00:10:42.346 A:middle
+It shows you the complete
+
+00:10:42.346 --> 00:10:44.376 A:middle
+picture of this resource after
+
+00:10:44.376 --> 00:10:46.166 A:middle
+it's been created and all of our
+
+00:10:46.166 --> 00:10:48.966 A:middle
+rules have been applied to it.
+
+00:10:49.226 --> 00:10:50.496 A:middle
+Now if this user accepts,
+
+00:10:50.496 --> 00:10:51.746 A:middle
+they'll become a user on our
+
+00:10:51.836 --> 00:10:52.126 A:middle
+team.
+
+00:10:52.526 --> 00:10:53.846 A:middle
+And suppose we want to come back
+
+00:10:53.846 --> 00:10:55.656 A:middle
+later and modify them in some
+
+00:10:55.656 --> 00:10:57.116 A:middle
+way, like for instance you can
+
+00:10:57.116 --> 00:10:58.356 A:middle
+see from the attributes here
+
+00:10:58.356 --> 00:10:59.726 A:middle
+this user has the developer
+
+00:10:59.726 --> 00:11:00.066 A:middle
+role.
+

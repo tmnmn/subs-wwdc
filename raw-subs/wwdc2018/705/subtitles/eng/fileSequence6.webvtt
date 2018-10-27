@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.716 --> 00:06:01.106 A:middle
+to a device clock change.
+
+00:06:01.786 --> 00:06:02.996 A:middle
+If you're using on-device
+
+00:06:02.996 --> 00:06:03.946 A:middle
+receipt validation for
+
+00:06:03.946 --> 00:06:05.246 A:middle
+subscription management on the
+
+00:06:05.246 --> 00:06:06.256 A:middle
+user's device there's actually
+
+00:06:06.256 --> 00:06:07.306 A:middle
+nothing stopping the user from
+
+00:06:07.536 --> 00:06:08.656 A:middle
+winding their clock back and
+
+00:06:08.886 --> 00:06:10.216 A:middle
+putting themselves into a valid
+
+00:06:10.216 --> 00:06:11.336 A:middle
+subscription period, maybe a
+
+00:06:11.426 --> 00:06:12.996 A:middle
+free trial that they've actually
+
+00:06:12.996 --> 00:06:14.206 A:middle
+lapsed their subscription from.
+
+00:06:14.796 --> 00:06:17.396 A:middle
+And finally, it's just a little
+
+00:06:17.466 --> 00:06:17.756 A:middle
+simpler.
+
+00:06:18.616 --> 00:06:19.986 A:middle
+The server-to-server validation
+
+00:06:19.986 --> 00:06:21.046 A:middle
+you're dealing with JSON API,
+
+00:06:21.046 --> 00:06:23.506 A:middle
+you don't have to build OpenSSL
+
+00:06:23.506 --> 00:06:24.956 A:middle
+or use ASN.1 decoding.
+
+00:06:24.956 --> 00:06:26.526 A:middle
+So with all these things in mind
+
+00:06:26.526 --> 00:06:27.556 A:middle
+we're really encouraging more
+
+00:06:27.556 --> 00:06:28.516 A:middle
+and more people to actually
+
+00:06:28.516 --> 00:06:29.636 A:middle
+adopt server-to-server
+
+00:06:29.636 --> 00:06:30.896 A:middle
+validation when it comes to
+
+00:06:30.896 --> 00:06:32.486 A:middle
+maintaining an auto renewable
+
+00:06:32.486 --> 00:06:33.346 A:middle
+subscription state.
+
+00:06:34.526 --> 00:06:36.436 A:middle
+If you've got a simple utility
+
+00:06:36.436 --> 00:06:37.506 A:middle
+app that doesn't need any kind
+
+00:06:37.506 --> 00:06:38.976 A:middle
+of networking you can still use
+
+00:06:38.976 --> 00:06:40.186 A:middle
+on-device validation for
+
+00:06:40.376 --> 00:06:41.316 A:middle
+subscription management.
+
+00:06:41.646 --> 00:06:42.246 A:middle
+And if you're interested in
+
+00:06:42.246 --> 00:06:43.446 A:middle
+finding more about that I'd
+
+00:06:43.446 --> 00:06:44.556 A:middle
+invite you to check out the
+
+00:06:44.556 --> 00:06:45.736 A:middle
+video from last year's events
+
+00:06:45.836 --> 00:06:47.126 A:middle
+StoreKit Talk where we went into
+
+00:06:47.126 --> 00:06:48.466 A:middle
+more detail about on-device
+
+00:06:48.466 --> 00:06:49.246 A:middle
+receipt validation.
+
+00:06:50.306 --> 00:06:51.336 A:middle
+But for the purposes of this
+
+00:06:51.336 --> 00:06:52.356 A:middle
+talk we're really going to focus
+
+00:06:52.356 --> 00:06:53.616 A:middle
+more on the server to server
+
+00:06:53.616 --> 00:06:55.186 A:middle
+techniques outlined here.
+
+00:06:56.256 --> 00:06:57.496 A:middle
+So let's go back to our example
+
+00:06:57.496 --> 00:06:58.326 A:middle
+and see how we can use
+
+00:06:58.326 --> 00:06:59.536 A:middle
+server-to-server validation for
+
+00:06:59.536 --> 00:07:00.386 A:middle
+this transaction that we're
+

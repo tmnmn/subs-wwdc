@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.626 --> 00:29:00.406 A:middle
+sleep in your tests, because the
+
+00:29:00.406 --> 00:29:01.686 A:middle
+code your testing is
+
+00:29:01.686 --> 00:29:03.166 A:middle
+asynchronous or uses a timer.
+
+00:29:04.416 --> 00:29:05.886 A:middle
+Delayed actions can be tricky,
+
+00:29:05.886 --> 00:29:06.996 A:middle
+so we want to be sure to include
+
+00:29:06.996 --> 00:29:08.576 A:middle
+them in our tests, but they can
+
+00:29:08.886 --> 00:29:10.246 A:middle
+also slow things down a lot if
+
+00:29:10.246 --> 00:29:10.786 A:middle
+we're not careful.
+
+00:29:11.856 --> 00:29:13.066 A:middle
+So, I'd like to talk about some
+
+00:29:13.066 --> 00:29:13.936 A:middle
+ways that we can avoid
+
+00:29:13.936 --> 00:29:15.526 A:middle
+artificial delays in our tests,
+
+00:29:15.806 --> 00:29:16.506 A:middle
+since they should never be
+
+00:29:16.506 --> 00:29:17.036 A:middle
+necessary.
+
+00:29:17.636 --> 00:29:19.896 A:middle
+Here's an example.
+
+00:29:19.956 --> 00:29:21.946 A:middle
+In the points of interest app
+
+00:29:21.946 --> 00:29:23.526 A:middle
+Brian and I are building, in the
+
+00:29:23.526 --> 00:29:25.116 A:middle
+main UI, we have a strip at the
+
+00:29:25.116 --> 00:29:26.506 A:middle
+bottom that shows the featured
+
+00:29:26.506 --> 00:29:26.936 A:middle
+place.
+
+00:29:27.546 --> 00:29:28.606 A:middle
+It basically loops through the
+
+00:29:28.606 --> 00:29:30.706 A:middle
+top places nearby, rotating to
+
+00:29:30.706 --> 00:29:32.136 A:middle
+show a new location every 10
+
+00:29:32.136 --> 00:29:32.666 A:middle
+seconds.
+
+00:29:33.446 --> 00:29:34.906 A:middle
+Now, there are several ways I
+
+00:29:34.906 --> 00:29:36.426 A:middle
+might implement this, but, here,
+
+00:29:36.426 --> 00:29:37.996 A:middle
+I'm using the timer API for
+
+00:29:37.996 --> 00:29:38.616 A:middle
+foundation.
+
+00:29:38.616 --> 00:29:42.106 A:middle
+Let's look at a unit test that I
+
+00:29:42.106 --> 00:29:43.076 A:middle
+might write for this class.
+
+00:29:44.106 --> 00:29:44.696 A:middle
+It creates a
+
+00:29:44.696 --> 00:29:46.996 A:middle
+FeaturedPlaceManager and stores
+
+00:29:46.996 --> 00:29:49.186 A:middle
+its current place before calling
+
+00:29:49.226 --> 00:29:50.636 A:middle
+the scheduleNextPlace method.
+
+00:29:51.526 --> 00:29:53.376 A:middle
+Then it runs the run loop for 11
+
+00:29:53.376 --> 00:29:53.926 A:middle
+seconds.
+
+00:29:53.976 --> 00:29:55.676 A:middle
+I added an extra second as a
+
+00:29:55.676 --> 00:29:56.226 A:middle
+grace period.
+
+00:29:57.416 --> 00:29:58.456 A:middle
+And, finally, it checks that the
+
+00:29:58.456 --> 00:29:59.916 A:middle
+currentPlace changed at the end.
+

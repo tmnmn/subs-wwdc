@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+01:01:59.366 --> 01:02:00.116 A:middle
+training dataset.
+
+01:02:00.546 --> 01:02:01.856 A:middle
+But what I'd really like to know
+
+01:02:01.856 --> 01:02:03.586 A:middle
+is how it performs on new types
+
+01:02:03.636 --> 01:02:05.186 A:middle
+of flowers that it hasn't seen.
+
+01:02:05.316 --> 01:02:07.156 A:middle
+And I've set some of those aside
+
+01:02:07.206 --> 01:02:09.146 A:middle
+here, and I can just drag them
+
+01:02:09.246 --> 01:02:10.796 A:middle
+in to let the model begin
+
+01:02:10.796 --> 01:02:12.346 A:middle
+evaluating on these new ones.
+
+01:02:13.076 --> 01:02:15.266 A:middle
+And if I scroll, you can see
+
+01:02:15.456 --> 01:02:16.996 A:middle
+what the actual label was for
+
+01:02:16.996 --> 01:02:18.556 A:middle
+each type of flower and what the
+
+01:02:18.556 --> 01:02:19.436 A:middle
+model predicted.
+
+01:02:20.676 --> 01:02:24.006 A:middle
+Now 95% is pretty decent on this
+
+01:02:24.056 --> 01:02:24.486 A:middle
+dataset.
+
+01:02:25.236 --> 01:02:26.886 A:middle
+So what I'd like to do is add it
+
+01:02:26.886 --> 01:02:27.986 A:middle
+into my app.
+
+01:02:27.986 --> 01:02:29.456 A:middle
+And you can do so just by
+
+01:02:29.456 --> 01:02:31.406 A:middle
+dragging and dropping it.
+
+01:02:34.096 --> 01:02:34.736 A:middle
+I'll then add it.
+
+01:02:34.856 --> 01:02:36.616 A:middle
+And if we take a look at this
+
+01:02:36.616 --> 01:02:38.926 A:middle
+new model, we can see it's only
+
+01:02:39.116 --> 01:02:40.016 A:middle
+50 kilobytes.
+
+01:02:40.566 --> 01:02:41.866 A:middle
+That's a huge savings.
+
+01:02:42.396 --> 01:02:44.226 A:middle
+So I'll go ahead and delete --
+
+01:02:45.516 --> 01:02:52.046 A:middle
+[ Applause ]
+
+01:02:52.546 --> 01:02:53.966 A:middle
+-- I'll delete the 100-megabyte
+
+01:02:53.966 --> 01:02:55.496 A:middle
+model and initialize the new
+
+01:02:55.496 --> 01:02:56.966 A:middle
+image classifier.
+
+01:02:58.986 --> 01:03:01.976 A:middle
+Now if I rerun the app, it's
+

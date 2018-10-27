@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.933 --> 00:15:02.236 align:start position:29% line:-1
+それは問題ではありません
+
+00:15:05.606 --> 00:15:07.841 align:start position:27% line:-1
+ヒープは数でソートされます
+
+00:15:08.308 --> 00:15:11.945 align:start position:30% line:-2
+私が見たいのは
+数ではなくサイズなので
+
+00:15:12.045 --> 00:15:15.582 align:start position:21% line:-2
+sortBySizeフラグを使い
+サイズでソートします
+
+00:15:16.583 --> 00:15:19.786 align:start position:14% line:-1
+NSConcreteDataが巨大ですね
+
+00:15:19.887 --> 00:15:24.992 align:start position:25% line:-2
+結果はバグレポートにしますが
+まだ十分ではありません
+
+00:15:25.092 --> 00:15:26.860 align:start position:38% line:-1
+源を探るのです
+
+00:15:27.761 --> 00:15:31.265 align:start position:18% line:-2
+NSConcreteDataの１つを
+アドレスを取得します
+
+00:15:31.899 --> 00:15:33.233 align:start position:30% line:-1
+アドレスフラグを使い―
+
+00:15:33.333 --> 00:15:38.071 align:start position:23% line:-2
+クラス名でアドレス指定をすると
+アドレスが取得できます
+
+00:15:39.773 --> 00:15:43.010 align:start position:29% line:-1
+データの源が分かりました
+
+00:15:43.877 --> 00:15:46.146 align:start position:20% line:-2
+ここでmallocのスタックログが
+役立ちます
+
+00:15:46.480 --> 00:15:50.184 align:start position:25% line:-1
+システムが各配置を記録します
+
+00:15:50.284 --> 00:15:53.253 align:start position:21% line:-2
+ログはmemgraphの記録時に
+キャプチャされ
+
+00:15:53.353 --> 00:15:56.723 align:start position:36% line:-2
+ツールの出力時に
+注釈を付けます
+
+00:15:57.090 --> 00:16:00.961 align:start position:14% line:-1
+diagnosticsタブで設定可能です
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.466 --> 00:27:01.896 A:middle
+So, I'll go back to my view,
+
+00:27:01.896 --> 00:27:04.736 A:middle
+I'll override layout, and I'll
+
+00:27:04.736 --> 00:27:05.816 A:middle
+go ahead and add a
+
+00:27:05.816 --> 00:27:06.816 A:middle
+VisualEffectView.
+
+00:27:07.896 --> 00:27:09.716 A:middle
+I'll set its material to the
+
+00:27:09.716 --> 00:27:11.786 A:middle
+contentBackground material, and
+
+00:27:12.916 --> 00:27:14.616 A:middle
+then I'll create a drawing
+
+00:27:14.616 --> 00:27:17.176 A:middle
+handler image using the NSImage
+
+00:27:17.356 --> 00:27:19.816 A:middle
+size flipped initializer that
+
+00:27:19.816 --> 00:27:20.516 A:middle
+takes a block.
+
+00:27:22.076 --> 00:27:24.306 A:middle
+In it, I'll set the white
+
+00:27:24.416 --> 00:27:25.686 A:middle
+color-- this color doesn't
+
+00:27:25.686 --> 00:27:27.056 A:middle
+really matter as long as its
+
+00:27:27.056 --> 00:27:27.426 A:middle
+opaque.
+
+00:27:27.426 --> 00:27:29.426 A:middle
+And then I'll go ahead and fill
+
+00:27:29.486 --> 00:27:32.796 A:middle
+with my path.
+
+00:27:32.956 --> 00:27:34.956 A:middle
+Then I'll set that image ask the
+
+00:27:34.956 --> 00:27:36.146 A:middle
+maskImage on my
+
+00:27:36.146 --> 00:27:36.846 A:middle
+VisualEffectView.
+
+00:27:37.676 --> 00:27:39.006 A:middle
+All right.
+
+00:27:39.276 --> 00:27:41.606 A:middle
+Let's look at it now.
+
+00:27:41.846 --> 00:27:42.666 A:middle
+Looks a lot better.
+
+00:27:43.616 --> 00:27:44.626 A:middle
+It's desktop-tinted.
+
+00:27:45.706 --> 00:27:47.936 A:middle
+And, if we look side by side, we
+
+00:27:47.936 --> 00:27:51.476 A:middle
+can really see the difference.
+
+00:27:51.636 --> 00:27:53.356 A:middle
+So, this technique works with
+
+00:27:53.466 --> 00:27:55.626 A:middle
+any material, but just remember
+
+00:27:55.626 --> 00:27:57.256 A:middle
+that only the alpha channel of
+
+00:27:57.256 --> 00:27:58.596 A:middle
+the image is used for the mask.
+
+00:27:58.726 --> 00:27:59.976 A:middle
+This is similar to template
+
+00:27:59.976 --> 00:28:00.496 A:middle
+images.
+

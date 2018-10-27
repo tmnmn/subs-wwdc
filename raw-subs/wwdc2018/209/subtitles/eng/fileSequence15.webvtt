@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.656 --> 00:15:01.176 A:middle
+to want to do, is we're going to
+
+00:15:01.176 --> 00:15:02.406 A:middle
+search our application for
+
+00:15:02.406 --> 00:15:03.936 A:middle
+places we've hardcoded color
+
+00:15:03.936 --> 00:15:04.376 A:middle
+values.
+
+00:15:04.566 --> 00:15:05.266 A:middle
+And, we're going to want to
+
+00:15:05.266 --> 00:15:05.966 A:middle
+replace them with an
+
+00:15:05.966 --> 00:15:07.086 A:middle
+appearance-sensitive color
+
+00:15:07.086 --> 00:15:07.486 A:middle
+instead.
+
+00:15:08.696 --> 00:15:10.646 A:middle
+For, most system UI elements,
+
+00:15:10.906 --> 00:15:12.656 A:middle
+AppKit actually offers a lot of
+
+00:15:12.656 --> 00:15:14.226 A:middle
+dynamic system colors that will
+
+00:15:14.226 --> 00:15:15.106 A:middle
+react with the current
+
+00:15:15.106 --> 00:15:16.546 A:middle
+appearance, and look great for
+
+00:15:16.546 --> 00:15:18.166 A:middle
+whatever UI element you're
+
+00:15:18.166 --> 00:15:19.216 A:middle
+trying to come across with.
+
+00:15:19.476 --> 00:15:20.466 A:middle
+And, to flesh out the list,
+
+00:15:20.466 --> 00:15:22.156 A:middle
+we've added even more in macOS
+
+00:15:22.156 --> 00:15:23.006 A:middle
+10.14.
+
+00:15:24.186 --> 00:15:25.836 A:middle
+But, in some cases you're not
+
+00:15:25.836 --> 00:15:26.676 A:middle
+trying to make a system UI
+
+00:15:26.676 --> 00:15:28.026 A:middle
+element, you're trying to make
+
+00:15:28.026 --> 00:15:29.206 A:middle
+some piece of your document
+
+00:15:29.206 --> 00:15:30.596 A:middle
+model that also looks great in
+
+00:15:30.596 --> 00:15:31.156 A:middle
+Dark Mode.
+
+00:15:31.266 --> 00:15:32.836 A:middle
+Now, you can do this by sorting
+
+00:15:32.836 --> 00:15:34.806 A:middle
+your colors in asset catalogs.
+
+00:15:35.796 --> 00:15:37.276 A:middle
+So, if you go to the color
+
+00:15:37.276 --> 00:15:39.166 A:middle
+editor in Xcode, you can
+
+00:15:39.166 --> 00:15:40.416 A:middle
+configure which appearances
+
+00:15:40.676 --> 00:15:42.246 A:middle
+you'd like to set up specific
+
+00:15:42.246 --> 00:15:44.206 A:middle
+colors for, using the sidebar on
+
+00:15:44.206 --> 00:15:44.526 A:middle
+the right.
+
+00:15:45.046 --> 00:15:46.466 A:middle
+In this case, we've picked
+
+00:15:46.466 --> 00:15:47.986 A:middle
+colors explicitly for the light
+
+00:15:47.986 --> 00:15:49.266 A:middle
+appearance, for the dark
+
+00:15:49.266 --> 00:15:50.396 A:middle
+appearance, and a general
+
+00:15:50.396 --> 00:15:51.706 A:middle
+fallback color for any other
+
+00:15:51.706 --> 00:15:52.246 A:middle
+appearances.
+
+00:15:52.756 --> 00:15:56.296 A:middle
+Similar to with colors, we're
+
+00:15:56.296 --> 00:15:57.436 A:middle
+going to want to go through our
+
+00:15:57.436 --> 00:15:59.096 A:middle
+UI's and find places we can use
+
+00:15:59.156 --> 00:15:59.876 A:middle
+template images.
+

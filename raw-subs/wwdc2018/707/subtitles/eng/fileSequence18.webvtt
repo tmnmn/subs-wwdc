@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.146 --> 00:18:03.126 A:middle
+And to be able to move between
+
+00:18:03.126 --> 00:18:05.356 A:middle
+all these states, you simply
+
+00:18:05.356 --> 00:18:08.166 A:middle
+need to use these calls directly
+
+00:18:08.166 --> 00:18:09.256 A:middle
+on the workout session.
+
+00:18:14.886 --> 00:18:16.916 A:middle
+So that's how we can collect
+
+00:18:16.966 --> 00:18:18.926 A:middle
+data displayed in our user
+
+00:18:18.926 --> 00:18:21.286 A:middle
+interface as well as control the
+
+00:18:21.286 --> 00:18:22.356 A:middle
+state of the session.
+
+00:18:23.296 --> 00:18:25.256 A:middle
+Let's see now how we can end the
+
+00:18:25.256 --> 00:18:26.786 A:middle
+workout and save it in
+
+00:18:26.786 --> 00:18:27.176 A:middle
+HealthKit.
+
+00:18:27.726 --> 00:18:32.066 A:middle
+So to end the workout, you first
+
+00:18:32.066 --> 00:18:35.366 A:middle
+call session.end, and then you
+
+00:18:35.366 --> 00:18:37.066 A:middle
+also call builder.
+
+00:18:37.336 --> 00:18:39.256 A:middle
+endCollection and pass the
+
+00:18:39.256 --> 00:18:40.246 A:middle
+workout's end date.
+
+00:18:41.206 --> 00:18:43.066 A:middle
+At this point, no data is going
+
+00:18:43.066 --> 00:18:44.746 A:middle
+to be collected for this
+
+00:18:44.966 --> 00:18:45.356 A:middle
+workout.
+
+00:18:45.906 --> 00:18:48.546 A:middle
+And then, if you want to save
+
+00:18:48.546 --> 00:18:50.176 A:middle
+the workout in HealthKit, you
+
+00:18:50.176 --> 00:18:51.336 A:middle
+just call builder.
+
+00:18:52.366 --> 00:18:54.706 A:middle
+finishWorkout, and you will get
+
+00:18:54.706 --> 00:18:56.946 A:middle
+back a workout object in the
+
+00:18:56.946 --> 00:18:58.576 A:middle
+completion handler that's
+
+00:18:58.626 --> 00:19:00.586 A:middle
+already saved in HealthKit with
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.786 --> 00:06:01.086 A:middle
+to the last screen in the
+
+00:06:01.086 --> 00:06:01.826 A:middle
+screens array.
+
+00:06:02.416 --> 00:06:03.506 A:middle
+We know that this is the
+
+00:06:03.506 --> 00:06:05.186 A:middle
+external screen, because we're
+
+00:06:05.186 --> 00:06:05.686 A:middle
+inside of our
+
+00:06:05.686 --> 00:06:07.696 A:middle
+didConnectNotification callback.
+
+00:06:08.626 --> 00:06:10.926 A:middle
+Next, we'll make a new UI window
+
+00:06:10.926 --> 00:06:12.186 A:middle
+to show on this external
+
+00:06:12.186 --> 00:06:12.676 A:middle
+display.
+
+00:06:12.676 --> 00:06:14.936 A:middle
+And, we'll assign its screen
+
+00:06:14.936 --> 00:06:16.786 A:middle
+property to the screen.
+
+00:06:17.266 --> 00:06:18.436 A:middle
+Next, we're going to want to
+
+00:06:18.436 --> 00:06:19.906 A:middle
+make sure we set up this window.
+
+00:06:20.356 --> 00:06:21.456 A:middle
+We factored this into a
+
+00:06:21.456 --> 00:06:23.146 A:middle
+function, but all we're doing
+
+00:06:23.146 --> 00:06:24.276 A:middle
+here is making a root view
+
+00:06:24.276 --> 00:06:25.786 A:middle
+controller, and sticking it on
+
+00:06:25.786 --> 00:06:27.856 A:middle
+the window, the same way we'd do
+
+00:06:27.856 --> 00:06:29.146 A:middle
+for the onboard display.
+
+00:06:29.896 --> 00:06:31.416 A:middle
+And, finally, we're going to
+
+00:06:31.416 --> 00:06:33.436 A:middle
+mark this window as not hidden
+
+00:06:33.566 --> 00:06:34.816 A:middle
+to show it on the external
+
+00:06:34.816 --> 00:06:35.236 A:middle
+screen.
+
+00:06:36.316 --> 00:06:37.386 A:middle
+So, that's connection.
+
+00:06:37.756 --> 00:06:38.476 A:middle
+Now, let's look at
+
+00:06:38.476 --> 00:06:39.956 A:middle
+disconnection, which is even
+
+00:06:39.956 --> 00:06:40.496 A:middle
+easier.
+
+00:06:41.326 --> 00:06:42.536 A:middle
+So, here we are inside of our
+
+00:06:42.536 --> 00:06:43.436 A:middle
+UIScreen
+
+00:06:43.506 --> 00:06:45.226 A:middle
+.didDisconnectNotification
+
+00:06:45.226 --> 00:06:47.066 A:middle
+handler, and all we have to do
+
+00:06:47.066 --> 00:06:49.486 A:middle
+here is hide the window, and nil
+
+00:06:49.486 --> 00:06:50.826 A:middle
+out our local reference to it,
+
+00:06:50.976 --> 00:06:52.366 A:middle
+to free up any resources.
+
+00:06:52.366 --> 00:06:53.296 A:middle
+And, that's it.
+
+00:06:53.296 --> 00:06:54.636 A:middle
+We've implemented screen
+
+00:06:54.636 --> 00:06:56.266 A:middle
+connection and disconnection in
+
+00:06:56.266 --> 00:06:56.596 A:middle
+our app.
+
+00:06:57.236 --> 00:06:58.256 A:middle
+&gt;&gt; Wow, Peter, that was really
+
+00:06:58.256 --> 00:06:58.696 A:middle
+easy.
+

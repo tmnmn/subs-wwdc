@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:01.166 --> 00:32:02.426 A:middle
+Thumbnails provided by this
+
+00:32:02.426 --> 00:32:04.906 A:middle
+extension appear in the Files
+
+00:32:04.906 --> 00:32:06.416 A:middle
+app, as well as in any
+
+00:32:06.416 --> 00:32:07.616 A:middle
+UIDocumentBrowswer
+
+00:32:07.616 --> 00:32:09.526 A:middle
+ViewController-based app.
+
+00:32:10.576 --> 00:32:12.256 A:middle
+They also appear in the Quick
+
+00:32:12.256 --> 00:32:14.076 A:middle
+Look list, that you can see when
+
+00:32:14.076 --> 00:32:15.746 A:middle
+tapping the list button when
+
+00:32:15.746 --> 00:32:17.106 A:middle
+previewing multiple files in
+
+00:32:17.106 --> 00:32:17.546 A:middle
+Quick Look.
+
+00:32:17.546 --> 00:32:20.166 A:middle
+If you have custom file types
+
+00:32:20.166 --> 00:32:22.136 A:middle
+that the user can share and
+
+00:32:22.136 --> 00:32:24.276 A:middle
+interact with you will likely
+
+00:32:24.276 --> 00:32:25.396 A:middle
+want to provide a certain
+
+00:32:25.396 --> 00:32:26.416 A:middle
+extension with your app.
+
+00:32:27.166 --> 00:32:28.786 A:middle
+Let's now see how you can do so.
+
+00:32:31.796 --> 00:32:33.436 A:middle
+Creating a thumbnail extension
+
+00:32:33.466 --> 00:32:34.996 A:middle
+is as just creating a preview
+
+00:32:34.996 --> 00:32:35.466 A:middle
+extension.
+
+00:32:36.856 --> 00:32:39.626 A:middle
+To do so add a new target in
+
+00:32:39.626 --> 00:32:40.936 A:middle
+your existing application
+
+00:32:40.936 --> 00:32:42.536 A:middle
+project and select the Thumbnail
+
+00:32:42.536 --> 00:32:43.986 A:middle
+Extension template.
+
+00:32:46.326 --> 00:32:48.226 A:middle
+Xcode will generate for you two
+
+00:32:48.226 --> 00:32:50.126 A:middle
+files, the ThumbnailProvider
+
+00:32:50.126 --> 00:32:51.316 A:middle
+class with a basic
+
+00:32:51.316 --> 00:32:52.046 A:middle
+implementation.
+
+00:32:53.326 --> 00:32:54.716 A:middle
+This is where you will have to
+
+00:32:54.716 --> 00:32:56.296 A:middle
+add the code that takes care of
+
+00:32:56.296 --> 00:32:57.456 A:middle
+generating thumbnails.
+
+00:32:58.476 --> 00:33:00.596 A:middle
+And an Info.plist this is just
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.166 --> 00:43:02.056 A:middle
+send initial data in the first
+
+00:43:02.196 --> 00:43:03.856 A:middle
+packet that TCP sends out, in
+
+00:43:03.856 --> 00:43:05.386 A:middle
+the SYN, so that you don't have
+
+00:43:05.386 --> 00:43:07.046 A:middle
+to wait for a whole handshake to
+
+00:43:07.046 --> 00:43:08.766 A:middle
+start sending your application
+
+00:43:09.406 --> 00:43:09.536 A:middle
+data.
+
+00:43:10.156 --> 00:43:11.976 A:middle
+Now in order to do this, you
+
+00:43:11.976 --> 00:43:13.546 A:middle
+need to enter into a contract
+
+00:43:13.546 --> 00:43:15.156 A:middle
+from your application with the
+
+00:43:15.156 --> 00:43:17.526 A:middle
+connection saying that you will
+
+00:43:17.526 --> 00:43:19.016 A:middle
+be providing this initial data
+
+00:43:19.016 --> 00:43:19.676 A:middle
+to send out.
+
+00:43:20.716 --> 00:43:22.076 A:middle
+So to enable this, you mark
+
+00:43:22.236 --> 00:43:23.576 A:middle
+allow fast open on your
+
+00:43:23.576 --> 00:43:24.286 A:middle
+parameters.
+
+00:43:24.996 --> 00:43:26.426 A:middle
+You then create your connection,
+
+00:43:27.436 --> 00:43:28.806 A:middle
+and then before you can call
+
+00:43:28.806 --> 00:43:30.796 A:middle
+start, you can actually call
+
+00:43:30.856 --> 00:43:32.806 A:middle
+send and get your initial data
+
+00:43:33.056 --> 00:43:33.676 A:middle
+sent out.
+
+00:43:33.856 --> 00:43:36.536 A:middle
+Now I want to point out here
+
+00:43:36.536 --> 00:43:38.116 A:middle
+that the completion handler here
+
+00:43:38.226 --> 00:43:39.816 A:middle
+is replaced by a marker that
+
+00:43:39.816 --> 00:43:41.886 A:middle
+this data is item potent, and
+
+00:43:41.886 --> 00:43:43.226 A:middle
+item potent means that the data
+
+00:43:43.226 --> 00:43:44.896 A:middle
+is safe to be replayed because
+
+00:43:44.896 --> 00:43:46.966 A:middle
+initial data may get resent over
+
+00:43:46.966 --> 00:43:48.256 A:middle
+the network, and so you don't
+
+00:43:48.256 --> 00:43:49.756 A:middle
+want it to have side effects if
+
+00:43:49.756 --> 00:43:51.086 A:middle
+it gets resent.
+
+00:43:52.776 --> 00:43:55.266 A:middle
+Then, you simply call start, and
+
+00:43:55.266 --> 00:43:56.656 A:middle
+as we're doing the connection
+
+00:43:56.656 --> 00:43:58.106 A:middle
+bring up, all the attempts that
+
+00:43:58.106 --> 00:43:59.916 A:middle
+we mentioned before, we will use
+
+00:43:59.916 --> 00:44:01.826 A:middle
+that initial data if we can to
+

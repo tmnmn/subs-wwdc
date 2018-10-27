@@ -1,0 +1,48 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:57.331 --> 00:35:02.135 align:start position:23% line:-2
+128ビットベクトルの
+simd float4を使えば
+
+00:35:02.603 --> 00:35:07.041 align:start position:25% line:-2
+AVX-512を上回る性能に
+なるかもしれません
+
+00:35:09.109 --> 00:35:13.447 align:start position:25% line:-2
+さらに大きい容量の
+simd float16なら
+
+00:35:13.547 --> 00:35:19.653 align:start position:20% line:-2
+512ビットベクトルがネイティブの
+性能を大きく超えるでしょう
+
+00:35:21.955 --> 00:35:24.792 align:start position:27% line:-1
+X86のモデルをご使用なら
+
+00:35:24.892 --> 00:35:30.030 align:start position:20% line:-2
+m512データ型と共に
+AVX-512遷移をお試しください
+
+00:35:32.766 --> 00:35:37.471 align:start position:25% line:-2
+より大きなユニットのコードも
+特殊化できます
+
+00:35:37.871 --> 00:35:40.607 align:start position:32% line:-2
+ファイル ターゲット
+ライブラリなどです
+
+00:35:40.741 --> 00:35:46.647 align:start position:25% line:-2
+ベクトル拡張のビルド設定から
+AVX-512の値が使えます
+
+00:35:49.383 --> 00:35:51.752 align:start position:23% line:-1
+AVX-1やAVX-2と同様―
+
+00:35:51.919 --> 00:35:56.990 align:start position:32% line:-2
+使用する時の注意点が
+いくつかあります
+
+00:35:58.759 --> 00:36:02.896 align:start position:20% line:-1
+256ビット以上のベクトルであれば
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.906 --> 00:19:00.286 A:middle
+setting a shader with a pipeline
+
+00:19:00.286 --> 00:19:03.396 A:middle
+state and then a separate buffer
+
+00:19:03.396 --> 00:19:04.976 A:middle
+for the geometry and material.
+
+00:19:05.886 --> 00:19:07.646 A:middle
+And finally, this is how you
+
+00:19:07.646 --> 00:19:08.566 A:middle
+encode a draw call.
+
+00:19:09.096 --> 00:19:10.126 A:middle
+Thanks to the Metal shading
+
+00:19:10.126 --> 00:19:11.826 A:middle
+language, encoding on the GPU is
+
+00:19:11.996 --> 00:19:13.136 A:middle
+really, really simple.
+
+00:19:13.906 --> 00:19:15.486 A:middle
+Even though this is in a compute
+
+00:19:15.486 --> 00:19:17.146 A:middle
+shader, this looks just like
+
+00:19:17.146 --> 00:19:18.106 A:middle
+what you're already doing on the
+
+00:19:18.106 --> 00:19:18.786 A:middle
+CPU today.
+
+00:19:18.786 --> 00:19:21.196 A:middle
+Now, let's look at 1 more
+
+00:19:21.196 --> 00:19:21.636 A:middle
+sample.
+
+00:19:23.116 --> 00:19:24.336 A:middle
+Here are some of the basic
+
+00:19:24.946 --> 00:19:26.706 A:middle
+things you need to do to create,
+
+00:19:26.896 --> 00:19:28.746 A:middle
+encode, and execute an ICB.
+
+00:19:29.956 --> 00:19:31.846 A:middle
+To create it, you first fill out
+
+00:19:31.846 --> 00:19:32.576 A:middle
+a descriptor.
+
+00:19:33.016 --> 00:19:34.646 A:middle
+The descriptor contains things
+
+00:19:34.646 --> 00:19:38.136 A:middle
+like draw types, and inheritance
+
+00:19:38.136 --> 00:19:39.836 A:middle
+properties, and per-stage bind
+
+00:19:39.836 --> 00:19:40.346 A:middle
+counts.
+
+00:19:40.596 --> 00:19:42.306 A:middle
+This describes the way that the
+
+00:19:42.306 --> 00:19:43.446 A:middle
+indirect buffer will behave.
+
+00:19:44.116 --> 00:19:47.726 A:middle
+When it's time to encode the
+
+00:19:47.726 --> 00:19:49.506 A:middle
+ICB, you simply create compute
+
+00:19:49.506 --> 00:19:50.996 A:middle
+encoder and call dispatch just
+
+00:19:50.996 --> 00:19:51.806 A:middle
+like what you've been doing
+
+00:19:51.806 --> 00:19:52.276 A:middle
+already.
+
+00:19:54.046 --> 00:19:55.786 A:middle
+Once the ICB is encoded, you can
+
+00:19:55.786 --> 00:19:57.306 A:middle
+optionally decide if you want to
+
+00:19:57.306 --> 00:19:58.116 A:middle
+optimize it.
+
+00:19:58.486 --> 00:19:59.786 A:middle
+When you optimize it, you remove
+
+00:19:59.886 --> 00:20:01.526 A:middle
+all the redundant state, and the
+

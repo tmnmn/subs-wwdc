@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.126 --> 00:31:01.496 A:middle
+So this is another important
+
+00:31:01.496 --> 00:31:01.926 A:middle
+security flaw.
+
+00:31:07.046 --> 00:31:08.346 A:middle
+So this is something that we
+
+00:31:08.346 --> 00:31:11.026 A:middle
+mitigated with a new feature and
+
+00:31:11.026 --> 00:31:13.056 A:middle
+the future works by emitting
+
+00:31:13.056 --> 00:31:15.196 A:middle
+some new codes at the entry of
+
+00:31:15.196 --> 00:31:17.926 A:middle
+the function that checks whether
+
+00:31:17.926 --> 00:31:20.056 A:middle
+it's okay to have the stack
+
+00:31:20.056 --> 00:31:20.286 A:middle
+frame.
+
+00:31:21.446 --> 00:31:22.806 A:middle
+So it asks the operating system
+
+00:31:22.806 --> 00:31:23.976 A:middle
+above the maximum size of the
+
+00:31:23.976 --> 00:31:26.146 A:middle
+stack and if you try to make an
+
+00:31:26.146 --> 00:31:27.256 A:middle
+allocation that's bigger than
+
+00:31:27.256 --> 00:31:29.456 A:middle
+that then it actually aborts.
+
+00:31:29.836 --> 00:31:33.106 A:middle
+And again, this turns a
+
+00:31:33.106 --> 00:31:34.726 A:middle
+potentially exploitable security
+
+00:31:34.726 --> 00:31:37.586 A:middle
+bug into a reliable crash and
+
+00:31:37.586 --> 00:31:41.176 A:middle
+that's no good for an attacker.
+
+00:31:41.176 --> 00:31:43.076 A:middle
+So this is Stack Checking, it
+
+00:31:43.076 --> 00:31:44.116 A:middle
+detects something that you might
+
+00:31:44.116 --> 00:31:46.206 A:middle
+have heard of called Stack Clash
+
+00:31:46.806 --> 00:31:48.226 A:middle
+and it's enabled by default in
+
+00:31:48.226 --> 00:31:48.806 A:middle
+Xcode 10.
+
+00:31:53.056 --> 00:31:55.246 A:middle
+So next I want to talk about a
+
+00:31:55.246 --> 00:31:56.836 A:middle
+new set of features we added in
+
+00:31:56.836 --> 00:31:58.906 A:middle
+Xcode 10 and that's support for
+
+00:31:58.906 --> 00:32:00.796 A:middle
+new extension, sect extensions.
+

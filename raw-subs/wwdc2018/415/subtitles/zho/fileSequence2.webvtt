@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.119 --> 00:02:02.189 align:middle line:-2
+首先来了解
+什么是构建过程
+
+00:02:02.256 --> 00:02:05.592 align:middle line:-2
+以及如何用Xcode
+创建类似PetWall的app
+
+00:02:06.126 --> 00:02:08.595 align:middle line:-1
+这里你看到app对象、框架
+
+00:02:08.662 --> 00:02:11.698 align:middle line:-2
+不同的代码文件 都是Swift
+和Objective-C
+
+00:02:11.899 --> 00:02:14.134 align:middle line:-1
+看起来可能很像你自己的项目
+
+00:02:15.669 --> 00:02:18.105 align:middle line:-1
+在构建app的时候
+
+00:02:19.106 --> 00:02:22.009 align:middle line:-1
+要经过很多步骤 从源代码
+
+00:02:22.075 --> 00:02:23.610 align:middle line:-1
+和项目资源开始
+
+00:02:24.044 --> 00:02:25.679 align:middle line:-1
+到提供给客户的打包文件
+
+00:02:25.746 --> 00:02:28.248 align:middle line:-1
+或上传到App Store发布
+
+00:02:29.049 --> 00:02:31.785 align:middle line:-1
+你要编译和连接源代码
+
+00:02:31.885 --> 00:02:36.924 align:middle line:-2
+复制和处理资源 比如头文件
+资源目录和Storyboard
+
+00:02:37.224 --> 00:02:39.927 align:middle line:-1
+最后是代码签名以及自定义
+
+00:02:39.993 --> 00:02:41.595 align:middle line:-1
+shell脚本或make文件
+
+00:02:41.662 --> 00:02:44.398 align:middle line:-1
+比如给框架构建API文件
+
+00:02:44.531 --> 00:02:47.267 align:middle line:-1
+运行代码检查和验证工具等
+
+00:02:48.402 --> 00:02:49.703 align:middle line:-1
+大多数任务
+
+00:02:49.770 --> 00:02:52.339 align:middle line:-2
+在构建过程中
+由命令行工具运行
+
+00:02:52.406 --> 00:02:56.910 align:middle line:-2
+比如Clang、LD、AC工具
+IB工具、代码符号等
+
+00:02:57.444 --> 00:02:59.112 align:middle line:-1
+这些工具的执行
+
+00:02:59.179 --> 00:03:00.948 align:middle line:-1
+需要一组特定的实参
+

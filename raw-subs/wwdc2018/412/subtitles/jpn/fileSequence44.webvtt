@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:58.872 --> 00:44:03.277 align:start position:23% line:-2
+そしてsetConstantを
+マイナス30に設定
+
+00:44:03.710 --> 00:44:08.448 align:start position:30% line:-2
+しかし先ほどと同様
+停止中は更新されません
+
+00:44:08.549 --> 00:44:13.620 align:start position:11% line:-2
+そこで
+CATransaction.flushを使い
+
+00:44:13.720 --> 00:44:19.359 align:start position:27% line:-2
+停止したインターフェイスを
+更新しましょう
+
+00:44:19.760 --> 00:44:22.462 align:start position:21% line:-1
+クリスが加えたコマンドを使います
+
+00:44:23.230 --> 00:44:26.033 align:start position:30% line:-1
+コマンドを入れましょう
+
+00:44:26.333 --> 00:44:29.870 align:start position:30% line:-2
+惑星が水平方向の中央に
+位置しました
+
+00:44:29.970 --> 00:44:32.306 align:start position:32% line:-1
+定数を入れて成功です
+
+00:44:32.406 --> 00:44:36.710 align:start position:30% line:-2
+この変更を
+コードに適用しましょう
+
+00:44:38.011 --> 00:44:42.883 align:start position:23% line:-2
+制約を選択すると
+右側にバックトレースが表示され
+
+00:44:42.983 --> 00:44:47.854 align:start position:27% line:-2
+どのフレームが
+割り当てられたか分かります
+
+00:44:47.955 --> 00:44:52.593 align:start position:32% line:-2
+制約を作ったコードに
+ジャンプできるのです
+
+00:44:52.693 --> 00:44:57.898 align:start position:12% line:-2
+Malloc Stack Loggingを
+有効にします
+
+00:44:57.998 --> 00:45:00.300 align:start position:34% line:-1
+ご覧に入れましょう
+

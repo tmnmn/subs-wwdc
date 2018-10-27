@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.778 --> 00:23:02.149 align:start position:21% line:-2
+一度のインクルードで
+約800個ものヘッダファイルを―
+
+00:23:02.249 --> 00:23:04.451 align:start position:30% line:-1
+処理することになります
+
+00:23:05.485 --> 00:23:11.024 align:start position:23% line:-2
+実に９MB以上のソースコードを
+解析し検証するのです
+
+00:23:11.758 --> 00:23:15.229 align:start position:32% line:-2
+コンパイラを
+呼び出すたびにですよ
+
+00:23:15.462 --> 00:23:18.298 align:start position:30% line:-1
+あまりに冗長な処理です
+
+00:23:18.966 --> 00:23:19.933 align:start position:45% line:-1
+では―
+
+00:23:20.868 --> 00:23:21.835 align:start position:41% line:-1
+改善策は？
+
+00:23:23.937 --> 00:23:27.908 align:start position:27% line:-2
+プリコンパイル済みヘッダも
+１つの手です
+
+00:23:28.075 --> 00:23:30.110 align:start position:34% line:-1
+改善できるでしょう
+
+00:23:30.510 --> 00:23:31.845 align:start position:36% line:-1
+もっといいのは―
+
+00:23:32.079 --> 00:23:35.249 align:start position:23% line:-2
+数年前に導入した
+Clang Modulesです
+
+00:23:36.250 --> 00:23:38.786 align:start position:30% line:-2
+これを使うと
+フレームワークごとに―
+
+00:23:39.019 --> 00:23:42.222 align:start position:25% line:-1
+１度しかヘッダを参照しません
+
+00:23:42.322 --> 00:23:47.728 align:start position:29% line:-2
+ディスク上にキャッシュし
+再利用するからです
+
+00:23:48.262 --> 00:23:51.165 align:start position:29% line:-1
+ビルド時間が短縮できます
+
+00:23:53.801 --> 00:23:55.202 align:start position:32% line:-1
+これを実現するため―
+
+00:23:55.335 --> 00:23:58.238 align:start position:32% line:-2
+いくつか必要な要素を
+開発しました
+
+00:23:59.339 --> 00:24:02.943 align:start position:30% line:-2
+中でも重要なのが
+コンテキストフリーです
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.166 --> 00:37:00.256 A:middle
+Let's walk over like a really
+
+00:37:00.406 --> 00:37:01.766 A:middle
+kind of playful example of how
+
+00:37:01.766 --> 00:37:03.336 A:middle
+you might use a modeler.
+
+00:37:03.606 --> 00:37:05.966 A:middle
+So let's say you define a schema
+
+00:37:06.106 --> 00:37:07.406 A:middle
+called playing with matches,
+
+00:37:07.636 --> 00:37:07.906 A:middle
+right.
+
+00:37:08.006 --> 00:37:10.166 A:middle
+This is an os signpost interval
+
+00:37:10.166 --> 00:37:12.666 A:middle
+schema and it's for an os
+
+00:37:12.876 --> 00:37:14.156 A:middle
+signpost that you've defined
+
+00:37:14.156 --> 00:37:15.036 A:middle
+where you're going to do some
+
+00:37:15.036 --> 00:37:16.816 A:middle
+sort of dangerous operation in
+
+00:37:16.816 --> 00:37:17.226 A:middle
+your code.
+
+00:37:17.726 --> 00:37:19.996 A:middle
+And we define another schema
+
+00:37:20.156 --> 00:37:21.766 A:middle
+called app on fire, right.
+
+00:37:22.186 --> 00:37:23.916 A:middle
+It's also a signpost schema but
+
+00:37:24.066 --> 00:37:25.206 A:middle
+these signposts mean that the
+
+00:37:25.206 --> 00:37:27.386 A:middle
+application has entered into a
+
+00:37:27.386 --> 00:37:28.986 A:middle
+bad state and we really want to
+
+00:37:28.986 --> 00:37:29.396 A:middle
+know why.
+
+00:37:30.406 --> 00:37:31.816 A:middle
+So you create an output schema,
+
+00:37:31.816 --> 00:37:33.306 A:middle
+which is a point schema, that's
+
+00:37:33.306 --> 00:37:34.426 A:middle
+going to hold the object that
+
+00:37:34.426 --> 00:37:35.836 A:middle
+was playing with matches and the
+
+00:37:35.836 --> 00:37:37.476 A:middle
+time at which the fire started.
+
+00:37:37.956 --> 00:37:38.676 A:middle
+We are going to call that the
+
+00:37:38.676 --> 00:37:39.796 A:middle
+started a fire schema.
+
+00:37:39.796 --> 00:37:43.376 A:middle
+Now the modeler's world looks
+
+00:37:43.476 --> 00:37:44.066 A:middle
+like this.
+
+00:37:44.226 --> 00:37:46.686 A:middle
+So we have all of our inputs set
+
+00:37:46.686 --> 00:37:48.486 A:middle
+up in time order ready to go and
+
+00:37:48.486 --> 00:37:51.096 A:middle
+this dashed line on the left is
+
+00:37:51.096 --> 00:37:52.436 A:middle
+what's called the modeler's
+
+00:37:52.536 --> 00:37:53.126 A:middle
+clock.
+
+00:37:54.136 --> 00:37:55.976 A:middle
+Now when we grab the first input
+
+00:37:55.976 --> 00:37:57.206 A:middle
+and we enter that into the
+
+00:37:57.206 --> 00:37:58.636 A:middle
+working memory, the modeler's
+
+00:37:58.686 --> 00:37:59.686 A:middle
+clock moves to the start of that
+
+00:37:59.686 --> 00:38:03.076 A:middle
+interval and then we grab the
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.816 --> 00:11:01.476 A:middle
+Analytics Data you can see all
+
+00:11:01.476 --> 00:11:02.516 A:middle
+of the logs that are saved to
+
+00:11:02.516 --> 00:11:04.556 A:middle
+disk and your users can share a
+
+00:11:04.556 --> 00:11:08.506 A:middle
+log directly from this screen.
+
+00:11:08.696 --> 00:11:11.246 A:middle
+Okay so to ensure that
+
+00:11:11.246 --> 00:11:13.106 A:middle
+symbolication just works I have
+
+00:11:13.156 --> 00:11:14.766 A:middle
+three important best practices
+
+00:11:14.766 --> 00:11:15.066 A:middle
+for you.
+
+00:11:16.096 --> 00:11:18.816 A:middle
+Number one, if you use the
+
+00:11:18.816 --> 00:11:20.806 A:middle
+Crashes Organizer upload your
+
+00:11:20.806 --> 00:11:21.866 A:middle
+symbols with your app.
+
+00:11:22.146 --> 00:11:23.906 A:middle
+This is the default, this will
+
+00:11:23.906 --> 00:11:25.036 A:middle
+ensure that server-side
+
+00:11:25.036 --> 00:11:27.166 A:middle
+symbolication works, it's very
+
+00:11:27.706 --> 00:11:27.826 A:middle
+easy.
+
+00:11:28.366 --> 00:11:31.656 A:middle
+Number two, be sure to save your
+
+00:11:31.656 --> 00:11:32.546 A:middle
+app archives.
+
+00:11:33.096 --> 00:11:34.956 A:middle
+Your archive contains a copy of
+
+00:11:34.956 --> 00:11:37.736 A:middle
+your debug symbols, your .
+
+00:11:37.736 --> 00:11:39.576 A:middle
+Xcode uses Spotlight to find
+
+00:11:39.656 --> 00:11:41.236 A:middle
+these dSYMs and to perform local
+
+00:11:41.236 --> 00:11:42.426 A:middle
+symbolication when it's
+
+00:11:42.426 --> 00:11:43.486 A:middle
+necessary automatically.
+
+00:11:43.906 --> 00:11:47.526 A:middle
+And if you upload an app that
+
+00:11:47.526 --> 00:11:49.906 A:middle
+contains bitcode you should use
+
+00:11:49.906 --> 00:11:51.706 A:middle
+the Archives Organizer Download
+
+00:11:51.706 --> 00:11:53.916 A:middle
+Debug Symbols button to download
+
+00:11:53.916 --> 00:11:55.376 A:middle
+any dSYMs that come from a
+
+00:11:55.376 --> 00:11:56.916 A:middle
+store-side bitcode compilation.
+
+00:11:57.476 --> 00:12:01.416 A:middle
+Okay we've covered all the tools
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:00.616 --> 00:25:01.406 A:middle
+You start your tracking
+
+00:25:01.406 --> 00:25:02.546 A:middle
+sequence, and you run your face
+
+00:25:02.546 --> 00:25:03.576 A:middle
+detector on the first frame.
+
+00:25:04.266 --> 00:25:05.236 A:middle
+You get five faces back.
+
+00:25:06.136 --> 00:25:07.146 A:middle
+Then, you run it in the second
+
+00:25:07.146 --> 00:25:08.516 A:middle
+frame; you get another five
+
+00:25:08.516 --> 00:25:08.976 A:middle
+faces back.
+
+00:25:09.676 --> 00:25:11.506 A:middle
+How do you know that the faces
+
+00:25:11.506 --> 00:25:12.546 A:middle
+from the second frame are
+
+00:25:12.546 --> 00:25:14.096 A:middle
+exactly the same faces as from
+
+00:25:14.096 --> 00:25:14.596 A:middle
+the first frame?
+
+00:25:15.306 --> 00:25:16.276 A:middle
+One person could have stepped
+
+00:25:16.276 --> 00:25:18.166 A:middle
+out; another one showed up.
+
+00:25:18.956 --> 00:25:20.446 A:middle
+So, now, you're in the business
+
+00:25:20.446 --> 00:25:22.316 A:middle
+of matching objects that you
+
+00:25:22.316 --> 00:25:23.736 A:middle
+found, which is a completely
+
+00:25:23.736 --> 00:25:25.326 A:middle
+different task that you may not
+
+00:25:25.326 --> 00:25:25.876 A:middle
+want to deal with.
+
+00:25:27.166 --> 00:25:30.716 A:middle
+Trackers, on the other hand, use
+
+00:25:30.716 --> 00:25:31.956 A:middle
+[inaudible] information to match
+
+00:25:31.956 --> 00:25:32.346 A:middle
+objects.
+
+00:25:32.516 --> 00:25:33.866 A:middle
+They know the trajectory how the
+
+00:25:33.866 --> 00:25:35.136 A:middle
+objects move, and they can
+
+00:25:35.136 --> 00:25:36.336 A:middle
+slightly predict where they
+
+00:25:36.336 --> 00:25:38.286 A:middle
+would be moving in the next
+
+00:25:38.546 --> 00:25:38.660 A:middle
+frame.
+
+00:25:39.336 --> 00:25:40.656 A:middle
+But let's say you're lucky
+
+00:25:40.656 --> 00:25:40.856 A:middle
+again.
+
+00:25:41.536 --> 00:25:43.296 A:middle
+You're tracking faces, and your
+
+00:25:43.296 --> 00:25:45.076 A:middle
+use case is limited to a single
+
+00:25:45.076 --> 00:25:45.806 A:middle
+face in the frame.
+
+00:25:46.196 --> 00:25:47.416 A:middle
+Should you use detectors then?
+
+00:25:48.376 --> 00:25:50.036 A:middle
+Well, maybe not even in this
+
+00:25:50.696 --> 00:25:51.000 A:middle
+case.
+
+00:25:56.556 --> 00:25:57.666 A:middle
+Now, speed is a problem.
+
+00:25:58.126 --> 00:26:00.116 A:middle
+Trackers are usually lightweight
+

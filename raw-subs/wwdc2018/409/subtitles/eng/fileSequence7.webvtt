@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.646 --> 00:07:00.396 A:middle
+which will cause undesired
+
+00:07:00.696 --> 00:07:02.156 A:middle
+runtime behavior for your
+
+00:07:02.156 --> 00:07:03.316 A:middle
+program at runtime.
+
+00:07:04.896 --> 00:07:07.996 A:middle
+The second issue is that the ARC
+
+00:07:07.996 --> 00:07:09.406 A:middle
+object pointer fields are not
+
+00:07:09.516 --> 00:07:11.116 A:middle
+cleared before the memory is
+
+00:07:11.166 --> 00:07:14.666 A:middle
+deallocated which will cause
+
+00:07:14.876 --> 00:07:16.496 A:middle
+runtime memory leaks in your
+
+00:07:16.496 --> 00:07:17.076 A:middle
+program.
+
+00:07:17.656 --> 00:07:21.916 A:middle
+Now to fix the first issue you
+
+00:07:21.916 --> 00:07:23.916 A:middle
+can replace the call to malloc
+
+00:07:23.976 --> 00:07:25.106 A:middle
+with a call to calloc.
+
+00:07:25.816 --> 00:07:27.526 A:middle
+This will ensure that your
+
+00:07:27.526 --> 00:07:29.346 A:middle
+memory is zero initialized,
+
+00:07:30.126 --> 00:07:32.386 A:middle
+which will remove all of those
+
+00:07:32.546 --> 00:07:34.666 A:middle
+nasty unexpected runtime issues.
+
+00:07:35.796 --> 00:07:38.076 A:middle
+To fix the second issue you can
+
+00:07:38.076 --> 00:07:40.516 A:middle
+write a loop before it's
+
+00:07:40.516 --> 00:07:42.086 A:middle
+allocated in your memory to
+
+00:07:42.086 --> 00:07:43.976 A:middle
+clear out all of the ARC object
+
+00:07:44.036 --> 00:07:45.396 A:middle
+pointer fields in your items.
+
+00:07:46.326 --> 00:07:48.226 A:middle
+This will ensure that the name
+
+00:07:48.226 --> 00:07:50.076 A:middle
+and the price in the items are
+
+00:07:50.076 --> 00:07:51.836 A:middle
+not leaked when the items are
+
+00:07:51.836 --> 00:07:51.976 A:middle
+freed.
+
+00:07:56.086 --> 00:07:57.836 A:middle
+Now this is an exciting new
+
+00:07:57.906 --> 00:08:00.586 A:middle
+feature and if any of you were
+

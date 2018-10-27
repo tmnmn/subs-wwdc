@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.956 --> 00:41:00.526 A:middle
+three buffers to triple buffer
+
+00:41:00.526 --> 00:41:02.126 A:middle
+our dynamic data updates.
+
+00:41:02.816 --> 00:41:04.756 A:middle
+So in frame 1 we will write to a
+
+00:41:04.756 --> 00:41:06.846 A:middle
+buffer and then the GPU will
+
+00:41:06.846 --> 00:41:07.516 A:middle
+read from it.
+
+00:41:08.206 --> 00:41:10.166 A:middle
+And in frame 2 we will write to
+
+00:41:10.166 --> 00:41:11.856 A:middle
+another buffer avoiding this
+
+00:41:11.856 --> 00:41:12.666 A:middle
+race condition.
+
+00:41:13.326 --> 00:41:15.246 A:middle
+Similarly, in frame 3 we will
+
+00:41:15.246 --> 00:41:18.146 A:middle
+write the third buffer.
+
+00:41:18.346 --> 00:41:20.176 A:middle
+But now we have used up all
+
+00:41:20.176 --> 00:41:21.836 A:middle
+three buffers and exhausted our
+
+00:41:21.836 --> 00:41:22.406 A:middle
+buffer pool.
+
+00:41:23.526 --> 00:41:25.246 A:middle
+We need to wait for the GPU to
+
+00:41:25.246 --> 00:41:27.166 A:middle
+finish the frame 1 so that we
+
+00:41:27.166 --> 00:41:28.616 A:middle
+can reuse it for frame 4.
+
+00:41:29.186 --> 00:41:33.736 A:middle
+Now this completion handler will
+
+00:41:33.736 --> 00:41:35.906 A:middle
+come handy, it will let us know
+
+00:41:35.906 --> 00:41:38.046 A:middle
+when GPU has done executing this
+
+00:41:38.096 --> 00:41:38.406 A:middle
+frame.
+
+00:41:39.096 --> 00:41:41.396 A:middle
+So when frame 1 is done we can
+
+00:41:41.396 --> 00:41:43.586 A:middle
+reuse its buffer for frame 4 and
+
+00:41:44.396 --> 00:41:44.916 A:middle
+so on.
+
+00:41:44.916 --> 00:41:48.696 A:middle
+So let's look at a sample.
+
+00:41:49.226 --> 00:41:52.916 A:middle
+For triple buffer implementation
+
+00:41:53.326 --> 00:41:55.316 A:middle
+outside your render loop first
+
+00:41:55.316 --> 00:41:56.996 A:middle
+we will create a FIFO queue of
+
+00:41:57.086 --> 00:41:57.726 A:middle
+three buffers.
+
+00:41:58.286 --> 00:42:01.006 A:middle
+And we also need a
+

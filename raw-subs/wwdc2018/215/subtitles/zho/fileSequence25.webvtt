@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:55.629 --> 00:25:00.767 align:middle line:-2
+要做到这一点 我们可以创建
+CLSBinaryItem
+
+00:25:01.702 --> 00:25:03.303 align:middle line:-1
+并将其中每一个
+
+00:25:03.370 --> 00:25:06.440 align:middle line:-1
+都添加为活动的附加活动项目
+
+00:25:07.608 --> 00:25:08.809 align:middle line:-1
+现在我们已经确定了
+
+00:25:08.876 --> 00:25:11.144 align:middle line:-2
+要写什么类型的
+ClassKit代码
+
+00:25:11.712 --> 00:25:14.648 align:middle line:-1
+让我们看看这实际上看起来如何
+
+00:25:15.115 --> 00:25:16.750 align:middle line:-1
+（演示）
+
+00:25:20.454 --> 00:25:24.291 align:middle line:-2
+现在屏幕上是我的显示器镜像
+我打开了Xcode
+
+00:25:24.925 --> 00:25:29.296 align:middle line:-2
+我首先要做的是
+选择我的项目的目标
+
+00:25:30.163 --> 00:25:33.467 align:middle line:-2
+然后我将选择
+Capabilities窗格
+
+00:25:33.534 --> 00:25:36.537 align:middle line:-2
+在这里找到
+ClassKit API
+
+00:25:37.538 --> 00:25:40.374 align:middle line:-1
+然后 我们要确保将这个选项打开
+
+00:25:40.674 --> 00:25:43.443 align:middle line:-2
+现在我们就准备好开始
+写一些ClassKit代码了
+
+00:25:44.378 --> 00:25:46.880 align:middle line:-1
+首先我们要写我们的上下文
+
+00:25:47.214 --> 00:25:50.250 align:middle line:-2
+我们说过可以在app
+启动后立即这样做
+
+00:25:50.717 --> 00:25:53.387 align:middle line:-2
+现在让我们打开
+AppDelegate
+
+00:25:54.087 --> 00:25:57.424 align:middle line:-1
+我们在这里创建一个函数
+
+00:25:57.491 --> 00:25:59.860 align:middle line:-1
+它将为我们发布我们的上下文
+

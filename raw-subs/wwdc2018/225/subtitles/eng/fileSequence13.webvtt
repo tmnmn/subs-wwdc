@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.586 --> 00:13:01.086 A:middle
+CollectionView's item size to a
+
+00:13:01.276 --> 00:13:03.586 A:middle
+CG size with a width that is the
+
+00:13:03.586 --> 00:13:04.886 A:middle
+width of the CollectionView's
+
+00:13:04.886 --> 00:13:07.206 A:middle
+bounds, inset by its layout
+
+00:13:07.206 --> 00:13:08.996 A:middle
+margins, and then we're going to
+
+00:13:08.996 --> 00:13:10.946 A:middle
+give it a height of 70 points
+
+00:13:10.946 --> 00:13:12.736 A:middle
+just to match our design.
+
+00:13:14.046 --> 00:13:14.856 A:middle
+And since we're already here,
+
+00:13:14.856 --> 00:13:15.746 A:middle
+I'm going to do a couple of
+
+00:13:15.836 --> 00:13:17.536 A:middle
+other little things here just to
+
+00:13:17.536 --> 00:13:18.816 A:middle
+get things to look nice.
+
+00:13:19.296 --> 00:13:21.326 A:middle
+I'm going to apply a section
+
+00:13:21.326 --> 00:13:22.816 A:middle
+inset with some padding at the
+
+00:13:22.896 --> 00:13:24.526 A:middle
+top that matches our inter-item
+
+00:13:24.646 --> 00:13:26.636 A:middle
+spacing, and I'm going to set
+
+00:13:26.776 --> 00:13:28.216 A:middle
+the layout section inset
+
+00:13:28.216 --> 00:13:30.106 A:middle
+reference property to from safe
+
+00:13:30.106 --> 00:13:32.256 A:middle
+area so everything is neatly
+
+00:13:32.256 --> 00:13:33.846 A:middle
+tucked within the CollectionView
+
+00:13:33.846 --> 00:13:34.956 A:middle
+safe area insets.
+
+00:13:35.616 --> 00:13:37.526 A:middle
+Okay. So let's go back to the
+
+00:13:37.526 --> 00:13:39.546 A:middle
+simulator one more time and see
+
+00:13:39.546 --> 00:13:40.746 A:middle
+what our properly constructed
+
+00:13:40.746 --> 00:13:41.546 A:middle
+layout looks like.
+
+00:13:41.816 --> 00:13:42.086 A:middle
+All right.
+
+00:13:43.656 --> 00:13:44.926 A:middle
+That looks great.
+
+00:13:44.926 --> 00:13:47.056 A:middle
+That looks just like our spec. I
+
+00:13:47.056 --> 00:13:47.916 A:middle
+think our designer is going to
+
+00:13:47.916 --> 00:13:48.626 A:middle
+be really happy.
+
+00:13:48.626 --> 00:13:52.316 A:middle
+And if we rotate to landscape,
+
+00:13:52.396 --> 00:13:53.426 A:middle
+we see that our cell is a great
+
+00:13:53.426 --> 00:13:54.866 A:middle
+size, and so we know that our
+
+00:13:55.206 --> 00:13:56.956 A:middle
+invalidation code is getting
+
+00:13:56.956 --> 00:13:58.166 A:middle
+called again in prepare.
+
+00:13:59.756 --> 00:14:01.176 A:middle
+Now while this is okay, you
+

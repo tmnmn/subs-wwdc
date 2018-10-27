@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:00.506 --> 00:43:02.816 A:middle
+And, when the PIP is thrown, our
+
+00:43:02.816 --> 00:43:04.986 A:middle
+goal is to find the correct
+
+00:43:04.986 --> 00:43:06.086 A:middle
+endpoint, the one that was
+
+00:43:06.086 --> 00:43:06.746 A:middle
+intended.
+
+00:43:07.426 --> 00:43:09.726 A:middle
+And, we call this aligning the
+
+00:43:10.216 --> 00:43:11.896 A:middle
+endpoint with the intent of the
+
+00:43:11.896 --> 00:43:12.306 A:middle
+gesture.
+
+00:43:12.986 --> 00:43:17.446 A:middle
+So, one approach for this is to
+
+00:43:17.596 --> 00:43:18.936 A:middle
+keep track of the closest
+
+00:43:18.936 --> 00:43:21.366 A:middle
+endpoint as I'm dragging the
+
+00:43:21.936 --> 00:43:22.046 A:middle
+PIP.
+
+00:43:22.226 --> 00:43:24.056 A:middle
+Now, this kind of works.
+
+00:43:24.056 --> 00:43:25.286 A:middle
+I can move the PIP to the other
+
+00:43:25.286 --> 00:43:29.086 A:middle
+corner of the screen, but it
+
+00:43:29.086 --> 00:43:30.366 A:middle
+starts to break down as soon as
+
+00:43:30.366 --> 00:43:32.886 A:middle
+I move the PIP a little bit
+
+00:43:33.446 --> 00:43:33.596 A:middle
+further.
+
+00:43:33.776 --> 00:43:35.796 A:middle
+Now, I actually need to drag the
+
+00:43:35.886 --> 00:43:38.506 A:middle
+PIP quite far, like past halfway
+
+00:43:38.676 --> 00:43:39.516 A:middle
+over the screen.
+
+00:43:39.636 --> 00:43:40.496 A:middle
+Pretty close to the other
+
+00:43:40.496 --> 00:43:40.836 A:middle
+corner.
+
+00:43:40.836 --> 00:43:42.606 A:middle
+So, it's not really magnifying
+
+00:43:42.606 --> 00:43:43.046 A:middle
+my input.
+
+00:43:43.046 --> 00:43:44.656 A:middle
+It's not really working for me.
+
+00:43:44.656 --> 00:43:47.056 A:middle
+And, if I try and flick the PIP,
+
+00:43:48.196 --> 00:43:49.566 A:middle
+it kind of goes back to the
+
+00:43:49.566 --> 00:43:50.586 A:middle
+nearest corner, which isn't
+
+00:43:50.586 --> 00:43:52.036 A:middle
+necessarily what I expected.
+
+00:43:52.146 --> 00:43:54.726 A:middle
+So, the issue here is that we're
+
+00:43:54.816 --> 00:43:56.206 A:middle
+only looking at position.
+
+00:43:56.366 --> 00:43:58.756 A:middle
+We're completely ignoring the
+
+00:43:58.756 --> 00:44:00.386 A:middle
+momentum of the PIP, and its
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.836 --> 00:10:01.216 A:middle
+This, we switch to a new
+
+00:10:01.216 --> 00:10:03.686 A:middle
+terminal window and we open up
+
+00:10:04.116 --> 00:10:05.806 A:middle
+the package.swift manifest file.
+
+00:10:05.806 --> 00:10:10.636 A:middle
+We want to add a new dependency.
+
+00:10:10.896 --> 00:10:15.156 A:middle
+In this case, this is actually
+
+00:10:15.156 --> 00:10:16.136 A:middle
+SwiftPM itself.
+
+00:10:16.216 --> 00:10:19.296 A:middle
+As Rick told you, it is itself,
+
+00:10:19.346 --> 00:10:20.426 A:middle
+its own Swift Package.
+
+00:10:20.856 --> 00:10:22.446 A:middle
+It doesn't provide a stable API,
+
+00:10:22.606 --> 00:10:23.686 A:middle
+though, that is why we're
+
+00:10:23.686 --> 00:10:25.166 A:middle
+depending on an exact version
+
+00:10:25.166 --> 00:10:25.486 A:middle
+number.
+
+00:10:27.516 --> 00:10:30.146 A:middle
+We also want to depend on one of
+
+00:10:30.146 --> 00:10:32.086 A:middle
+its products in the libdealer
+
+00:10:32.086 --> 00:10:32.476 A:middle
+target.
+
+00:10:33.016 --> 00:10:34.206 A:middle
+It is called utility.
+
+00:10:34.546 --> 00:10:37.716 A:middle
+And among other things, it has a
+
+00:10:37.716 --> 00:10:40.146 A:middle
+class called terminal
+
+00:10:40.146 --> 00:10:42.026 A:middle
+controller, which provides us
+
+00:10:42.216 --> 00:10:43.866 A:middle
+with the possibility to color
+
+00:10:43.996 --> 00:10:46.326 A:middle
+the terminal output.
+
+00:10:46.476 --> 00:10:48.056 A:middle
+Note however, that this is no
+
+00:10:48.056 --> 00:10:49.986 A:middle
+official Apple API, we're just
+
+00:10:49.986 --> 00:10:51.196 A:middle
+using it for the demo.
+
+00:10:51.756 --> 00:10:54.476 A:middle
+Let's switch back to the
+
+00:10:54.476 --> 00:10:54.906 A:middle
+terminal.
+
+00:10:57.136 --> 00:10:59.576 A:middle
+I already changed the code to
+
+00:10:59.576 --> 00:11:01.156 A:middle
+make use of the new dependency
+

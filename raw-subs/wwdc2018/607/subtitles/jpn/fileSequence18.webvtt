@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.011 --> 00:18:00.247 align:start position:34% line:-1
+符号化を実行します
+
+00:18:01.915 --> 00:18:04.117 align:start position:30% line:-1
+間接コマンドバッファは
+
+00:18:04.251 --> 00:18:07.588 align:start position:30% line:-2
+描画コマンドの配列だと
+考えられます
+
+00:18:07.688 --> 00:18:13.760 align:start position:27% line:-2
+シェーダやドローコールで
+構成されたパイプラインです
+
+00:18:14.628 --> 00:18:17.464 align:start position:27% line:-1
+また 並列処理が可能なため
+
+00:18:17.564 --> 00:18:20.567 align:start position:32% line:-2
+符号化は
+同時進行で行われます
+
+00:18:21.001 --> 00:18:23.971 align:start position:27% line:-1
+Metalはシンプルなので
+
+00:18:24.071 --> 00:18:27.174 align:start position:30% line:-2
+CPUで処理するような
+軽快さです
+
+00:18:28.342 --> 00:18:32.646 align:start position:27% line:-2
+加えて 各コマンドは
+個別のプロパティを持てます
+
+00:18:32.880 --> 00:18:36.316 align:start position:32% line:-1
+これは大きな前進です
+
+00:18:36.416 --> 00:18:40.154 align:start position:34% line:-2
+間接レンダリングが
+再現できるのです
+
+00:18:40.888 --> 00:18:43.357 align:start position:30% line:-1
+コードを見てみましょう
+
+00:18:44.825 --> 00:18:47.828 align:start position:30% line:-2
+ドローコールの符号化は
+簡単です
+
+00:18:48.362 --> 00:18:53.433 align:start position:25% line:-2
+まず スレッドIDを取得して
+描画コマンドを選びます
+
+00:18:55.402 --> 00:18:57.404 align:start position:27% line:-1
+次にプロパティを設定します
+
+00:18:57.504 --> 00:19:00.908 align:start position:34% line:-2
+この例では
+シェーダを設けます
+

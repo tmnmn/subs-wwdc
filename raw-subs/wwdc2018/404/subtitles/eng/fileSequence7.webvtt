@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.176 --> 00:07:00.086 A:middle
+Localization Catalog on top of
+
+00:07:00.086 --> 00:07:01.106 A:middle
+the XLIFF format.
+
+00:07:02.026 --> 00:07:03.416 A:middle
+So if we take a look at our
+
+00:07:03.416 --> 00:07:05.696 A:middle
+example earlier, so all of our
+
+00:07:05.826 --> 00:07:07.206 A:middle
+strings base localizable
+
+00:07:07.206 --> 00:07:09.416 A:middle
+resources will be extracted in
+
+00:07:09.416 --> 00:07:11.726 A:middle
+an XLIFF format and anything
+
+00:07:11.796 --> 00:07:13.406 A:middle
+else that you have marked as
+
+00:07:13.406 --> 00:07:16.116 A:middle
+localizable in your project will
+
+00:07:16.116 --> 00:07:17.906 A:middle
+be supported by the Localization
+
+00:07:17.906 --> 00:07:21.006 A:middle
+Catalog and exported in an xcloc
+
+00:07:21.756 --> 00:07:23.326 A:middle
+along with the XLIFF files that
+
+00:07:23.356 --> 00:07:24.336 A:middle
+contains the strings.
+
+00:07:25.416 --> 00:07:27.066 A:middle
+So let's take a look closely at
+
+00:07:27.066 --> 00:07:29.176 A:middle
+what is inside a Localization
+
+00:07:29.176 --> 00:07:29.706 A:middle
+Catalog.
+
+00:07:30.226 --> 00:07:33.156 A:middle
+So inside your xcloc, you will
+
+00:07:33.156 --> 00:07:36.536 A:middle
+find a contents.json file, which
+
+00:07:36.536 --> 00:07:38.656 A:middle
+contains metadata about the
+
+00:07:38.656 --> 00:07:40.486 A:middle
+exported Localization Catalog.
+
+00:07:40.906 --> 00:07:43.286 A:middle
+So it has information like the
+
+00:07:43.286 --> 00:07:45.106 A:middle
+development language of your
+
+00:07:45.106 --> 00:07:47.806 A:middle
+application, the target language
+
+00:07:47.806 --> 00:07:49.456 A:middle
+of the exported Localization
+
+00:07:49.456 --> 00:07:50.006 A:middle
+Catalog.
+
+00:07:50.746 --> 00:07:52.046 A:middle
+It has information about the
+
+00:07:52.046 --> 00:07:53.416 A:middle
+tool that generated that
+
+00:07:53.416 --> 00:07:54.506 A:middle
+Localization Catalog.
+
+00:07:54.506 --> 00:07:55.846 A:middle
+In this case, it's Xcode, so you
+
+00:07:55.846 --> 00:07:57.436 A:middle
+will find information like the
+
+00:07:57.436 --> 00:07:58.756 A:middle
+version number and the build
+
+00:07:58.756 --> 00:07:59.936 A:middle
+number of Xcode.
+

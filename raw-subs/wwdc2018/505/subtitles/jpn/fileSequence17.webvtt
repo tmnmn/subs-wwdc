@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:00.120 --> 00:17:02.623 align:start position:34% line:-1
+何も変わりませんね
+
+00:17:02.823 --> 00:17:06.026 align:start position:23% line:-1
+正常に追加されてはいるのですが
+
+00:17:06.126 --> 00:17:08.762 align:start position:30% line:-1
+ビューは変更されません
+
+00:17:09.029 --> 00:17:11.598 align:start position:34% line:-1
+これでは困りますね
+
+00:17:12.465 --> 00:17:14.701 align:start position:25% line:-1
+再度Xcodeに戻りましょう
+
+00:17:16.603 --> 00:17:21.074 align:start position:9% line:-2
+projectViewControllerには
+beginProjectと
+
+00:17:21.175 --> 00:17:24.912 align:start position:18% line:-2
+resumeProjectメソッドが
+ありますね
+
+00:17:25.012 --> 00:17:28.315 align:start position:12% line:-2
+ここにChangeObservationを
+登録します
+
+00:17:31.018 --> 00:17:34.154 align:start position:23% line:-1
+こちらのメソッドにも追加します
+
+00:17:36.423 --> 00:17:39.726 align:start position:30% line:-2
+まずPhotoKitの
+オブジェクトがあり
+
+00:17:39.827 --> 00:17:43.597 align:start position:34% line:-2
+そして追加された
+アセットがあります
+
+00:17:43.697 --> 00:17:47.134 align:start position:21% line:-1
+アセットのフェッチ結果を得てから
+
+00:17:47.234 --> 00:17:51.471 align:start position:14% line:-2
+ライブラリに
+ChangeObserverを登録します
+
+00:17:51.705 --> 00:17:54.942 align:start position:25% line:-1
+まずプロジェクトを終了します
+
+00:17:56.043 --> 00:18:00.114 align:start position:20% line:-1
+Xcodeのエラーが表示されるので
+

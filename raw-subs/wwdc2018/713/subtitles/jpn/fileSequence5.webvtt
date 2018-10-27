@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:57.998 --> 00:05:01.668 align:start position:29% line:-1
+さまざまな応用が可能です
+
+00:05:02.169 --> 00:05:06.006 align:start position:12% line:-2
+languageHypothesesという
+APIを使います
+
+00:05:06.106 --> 00:05:08.675 align:start position:27% line:-1
+出力する候補数を設定すると
+
+00:05:08.775 --> 00:05:13.680 align:start position:30% line:-2
+その候補と それぞれの
+確率が出力されます
+
+00:05:14.548 --> 00:05:19.520 align:start position:29% line:-2
+次に この文字列を
+トークン化してみましょう
+
+00:05:19.987 --> 00:05:21.989 align:start position:20% line:-2
+Natural Languageを
+インポートし
+
+00:05:22.289 --> 00:05:24.825 align:start position:29% line:-2
+NLTokenizerの
+インスタンスを作成
+
+00:05:25.125 --> 00:05:28.328 align:start position:27% line:-1
+いくつかの文字をつなげて―
+
+00:05:28.428 --> 00:05:31.064 align:start position:32% line:-1
+単語として識別します
+
+00:05:32.733 --> 00:05:34.168 align:start position:38% line:-1
+文字列を入力し
+
+00:05:34.501 --> 00:05:38.372 align:start position:16% line:-2
+オブジェクトの
+“tokens”メソッドを呼び出します
+
+00:05:39.039 --> 00:05:41.508 align:start position:36% line:-1
+単語が現れました
+
+00:05:41.909 --> 00:05:46.747 align:start position:34% line:-2
+“おやすみ”という
+単語も入っています
+
+00:05:47.347 --> 00:05:50.717 align:start position:27% line:-1
+これで多言語に対応しました
+
+00:05:50.918 --> 00:05:55.923 align:start position:21% line:-2
+言語識別のAPIと
+トークン化のAPIを使うことで―
+
+00:05:56.023 --> 00:05:58.192 align:start position:38% line:-1
+実現できました
+
+00:05:58.959 --> 00:06:00.961 align:start position:34% line:-1
+別のAPIのお話を
+

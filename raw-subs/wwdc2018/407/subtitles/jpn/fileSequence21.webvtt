@@ -1,0 +1,76 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.492 --> 00:21:00.527 align:start position:25% line:-1
+ここにすべて集約されています
+
+00:21:01.328 --> 00:21:04.364 align:start position:18% line:-2
+その１つが
+objc messageSendです
+
+00:21:04.531 --> 00:21:08.435 align:start position:21% line:-2
+これは Objective-Cで
+書いていると起こります
+
+00:21:08.535 --> 00:21:10.003 align:start position:30% line:-1
+Swiftコードでも―
+
+00:21:10.104 --> 00:21:12.406 align:start position:21% line:-2
+システムライブラリを使っていると
+これが起こります
+
+00:21:12.506 --> 00:21:14.208 align:start position:29% line:-1
+対応する機能も目にします
+
+00:21:14.308 --> 00:21:15.509 align:start position:14% line:-1
+“objc”や“load strong”
+
+00:21:15.609 --> 00:21:17.711 align:start position:11% line:-1
+“load weak”や“retain”など
+
+00:21:17.811 --> 00:21:21.782 align:start position:25% line:-2
+これらを呼び出し木から
+すべて取り除くことができます
+
+00:21:22.816 --> 00:21:25.485 align:start position:27% line:-2
+コンテキストをクリックして
+以下を選択します
+
+00:21:26.787 --> 00:21:29.122 align:start position:4% line:-2
+“Charge libobjc.A.dylib to
+callers”
+
+00:21:29.256 --> 00:21:33.026 align:start position:20% line:-2
+“libobjc”からのサンプルを
+すべて拾い取り除くよう―
+
+00:21:33.126 --> 00:21:34.795 align:start position:16% line:-1
+Instrumentsに命令しています
+
+00:21:34.895 --> 00:21:37.965 align:start position:21% line:-2
+しかし 親フレームが呼んだ時間は
+保持したままです
+
+00:21:38.065 --> 00:21:40.601 align:start position:29% line:-1
+私はこれらの実行時間を―
+
+00:21:40.701 --> 00:21:43.504 align:start position:21% line:-2
+Objective-Cを書く時に
+必要なものと捉えています
+
+00:21:43.604 --> 00:21:46.740 align:start position:30% line:-2
+それを最適化することは
+ほとんどないので
+
+00:21:46.874 --> 00:21:52.212 align:start position:21% line:-2
+データから取り除いて
+必要な部分にフォーカスしています
+
+00:21:53.046 --> 00:21:56.250 align:start position:32% line:-2
+フィルタの適用方法を
+もう１つ紹介します
+
+00:21:56.350 --> 00:22:00.387 align:start position:23% line:-2
+それが このセットフレーム間に
+生じた―
+

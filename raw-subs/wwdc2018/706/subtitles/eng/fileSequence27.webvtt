@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.586 --> 00:27:01.016 A:middle
+You should therefore use the
+
+00:27:01.016 --> 00:27:03.726 A:middle
+FHIR resource directly to access
+
+00:27:03.756 --> 00:27:05.356 A:middle
+these dates for each resource
+
+00:27:05.396 --> 00:27:05.676 A:middle
+type.
+
+00:27:06.746 --> 00:27:08.436 A:middle
+Start date and end date that are
+
+00:27:08.436 --> 00:27:09.786 A:middle
+available on the HKSample
+
+00:27:09.786 --> 00:27:11.716 A:middle
+superclass are set for the date
+
+00:27:11.716 --> 00:27:14.096 A:middle
+that we first add that resource
+
+00:27:14.966 --> 00:27:16.000 A:middle
+to Health.
+
+00:27:18.186 --> 00:27:20.046 A:middle
+You should use source, resource,
+
+00:27:20.046 --> 00:27:21.556 A:middle
+type and identifier when
+
+00:27:21.556 --> 00:27:23.856 A:middle
+uniquely identifying a health
+
+00:27:23.856 --> 00:27:24.346 A:middle
+record.
+
+00:27:24.756 --> 00:27:26.476 A:middle
+This will allow you to identify
+
+00:27:26.476 --> 00:27:27.506 A:middle
+a health record across the
+
+00:27:27.506 --> 00:27:29.636 A:middle
+course of its lifetime as it is
+
+00:27:29.636 --> 00:27:31.016 A:middle
+updated by the healthcare
+
+00:27:31.016 --> 00:27:31.736 A:middle
+institution.
+
+00:27:32.156 --> 00:27:36.666 A:middle
+And finally, you should be aware
+
+00:27:36.666 --> 00:27:39.536 A:middle
+that FHIR and JSON don't fully
+
+00:27:39.536 --> 00:27:41.486 A:middle
+agree when it comes to numerical
+
+00:27:41.486 --> 00:27:42.086 A:middle
+precision.
+
+00:27:43.286 --> 00:27:45.426 A:middle
+FHIR ascribes significance to
+
+00:27:45.426 --> 00:27:47.316 A:middle
+the number of digits following
+
+00:27:47.316 --> 00:27:48.916 A:middle
+the decimal place and this can
+
+00:27:48.916 --> 00:27:50.986 A:middle
+be lost when using Swift codable
+
+00:27:51.166 --> 00:27:52.666 A:middle
+or JSON serialization.
+
+00:27:53.176 --> 00:27:54.976 A:middle
+If it's really fundamental to
+
+00:27:54.976 --> 00:27:57.396 A:middle
+your app that you have full
+
+00:27:57.396 --> 00:28:00.116 A:middle
+access to this information Swift
+

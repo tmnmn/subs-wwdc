@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.446 --> 00:06:00.746 A:middle
+build process where you define
+
+00:06:00.746 --> 00:06:01.866 A:middle
+all of the items that you would
+
+00:06:01.916 --> 00:06:03.566 A:middle
+like to link with your target.
+
+00:06:04.676 --> 00:06:06.046 A:middle
+In this case I have two items.
+
+00:06:06.046 --> 00:06:08.346 A:middle
+I have Physics and Utilities.
+
+00:06:08.716 --> 00:06:11.526 A:middle
+Now, these are targets within
+
+00:06:11.526 --> 00:06:12.856 A:middle
+our project and our workspace.
+
+00:06:13.086 --> 00:06:14.696 A:middle
+So Xcode can create an implicit
+
+00:06:14.696 --> 00:06:16.716 A:middle
+dependency on those targets.
+
+00:06:17.766 --> 00:06:19.356 A:middle
+If you're using other linking
+
+00:06:19.356 --> 00:06:22.156 A:middle
+features such as Autolink or the
+
+00:06:22.216 --> 00:06:23.756 A:middle
+other LD Build Flags build
+
+00:06:23.786 --> 00:06:25.416 A:middle
+setting, those are not going to
+
+00:06:25.416 --> 00:06:27.256 A:middle
+be made available to you here
+
+00:06:27.256 --> 00:06:27.846 A:middle
+implicitly.
+
+00:06:28.166 --> 00:06:29.236 A:middle
+So you either have to make an
+
+00:06:29.236 --> 00:06:30.636 A:middle
+explicit dependency in this
+
+00:06:30.686 --> 00:06:33.756 A:middle
+build phase, or in the Target
+
+00:06:33.756 --> 00:06:34.996 A:middle
+Dependencies build phase.
+
+00:06:35.396 --> 00:06:37.806 A:middle
+So you can see here that we have
+
+00:06:37.806 --> 00:06:38.686 A:middle
+another item here called
+
+00:06:38.686 --> 00:06:39.206 A:middle
+Shaders.
+
+00:06:39.616 --> 00:06:42.106 A:middle
+And Shaders is something that is
+
+00:06:42.106 --> 00:06:43.926 A:middle
+not used at link time, but
+
+00:06:43.926 --> 00:06:45.776 A:middle
+instead it's used by another
+
+00:06:45.776 --> 00:06:47.126 A:middle
+build phase within our current
+
+00:06:47.126 --> 00:06:47.456 A:middle
+target.
+
+00:06:48.096 --> 00:06:49.316 A:middle
+So it's important that we let
+
+00:06:49.316 --> 00:06:50.926 A:middle
+Xcode know that this is a
+
+00:06:50.926 --> 00:06:52.256 A:middle
+dependency and that we need to
+
+00:06:52.256 --> 00:06:54.506 A:middle
+wait for the Shaders to finish
+
+00:06:54.566 --> 00:06:57.046 A:middle
+its compilation and build before
+
+00:06:57.046 --> 00:06:57.886 A:middle
+we can actually build the
+
+00:06:57.886 --> 00:06:58.876 A:middle
+current target we're on.
+
+00:06:59.406 --> 00:07:02.336 A:middle
+Now, this target actually exists
+

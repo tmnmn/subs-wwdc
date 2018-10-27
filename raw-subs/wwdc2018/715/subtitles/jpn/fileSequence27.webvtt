@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:55.849 --> 00:27:00.854 align:start position:5% line:-2
+データを読み込むための
+connection.receiveを呼び出します
+
+00:27:01.422 --> 00:27:04.691 align:start position:30% line:-2
+その完了ハンドラの中で
+コンテンツを確認後
+
+00:27:04.792 --> 00:27:08.462 align:start position:29% line:-2
+残りのアプリケーションに
+接続されます
+
+00:27:08.562 --> 00:27:11.865 align:start position:25% line:-2
+そしてカメラハードウェアから
+フレームの生成を開始
+
+00:27:13.901 --> 00:27:19.573 align:start position:21% line:-2
+この時 残りのアプリケーションが
+送信を呼び出します
+
+00:27:22.676 --> 00:27:27.414 align:start position:25% line:-2
+そしてそこに
+データオブジェクトを渡します
+
+00:27:28.982 --> 00:27:32.319 align:start position:34% line:-2
+送信の操作を
+早く完了させるため
+
+00:27:32.419 --> 00:27:36.123 align:start position:14% line:-2
+connection.batchを通った
+ブロック内だけで実行しましょう
+
+00:27:37.558 --> 00:27:42.529 align:start position:32% line:-2
+このブロック内で
+全てのフレームを調べ
+
+00:27:42.629 --> 00:27:45.432 align:start position:14% line:-1
+connection.sendへ渡します
+
+00:27:45.732 --> 00:27:51.205 align:start position:27% line:-2
+先ほどと同様に
+完了ハンドラでエラーを確認
+
+00:27:51.939 --> 00:27:55.909 align:start position:21% line:-2
+これでUDPクライアントクラスが
+完成しました
+
+00:27:57.644 --> 00:27:58.879 align:start position:30% line:-1
+サーバを見てみましょう
+
+00:27:59.780 --> 00:28:04.017 align:start position:27% line:-2
+サーバ側には接続を受け取る
+リスナーが必要です
+

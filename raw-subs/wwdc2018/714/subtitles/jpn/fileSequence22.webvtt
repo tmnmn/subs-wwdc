@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:55.449 --> 00:22:00.554 align:start position:21% line:-2
+その場合はURLSessionで
+別のタスクを作成し―
+
+00:22:00.654 --> 00:22:03.590 align:start position:30% line:-2
+接続プールに
+ムダな接続がない状態で
+
+00:22:03.690 --> 00:22:07.127 align:start position:32% line:-2
+リソース取得のために
+新たに接続します
+
+00:22:08.128 --> 00:22:13.634 align:start position:29% line:-2
+さらに他のリソースを
+取得したい場合も同様に―
+
+00:22:13.734 --> 00:22:18.272 align:start position:30% line:-2
+URLSessionで
+別のタスクを作成します
+
+00:22:19.406 --> 00:22:22.142 align:start position:30% line:-1
+ここでは同じサーバから
+
+00:22:22.242 --> 00:22:26.647 align:start position:23% line:-2
+３つの接続で
+異なるリソースを取得しています
+
+00:22:27.714 --> 00:22:31.518 align:start position:32% line:-2
+初回の接続には
+時間を要しましたが―
+
+00:22:32.486 --> 00:22:36.457 align:start position:30% line:-2
+これが単一接続だったら
+どうでしょう
+
+00:22:38.659 --> 00:22:40.761 align:start position:34% line:-1
+単一接続の場合です
+
+00:22:40.928 --> 00:22:45.866 align:start position:27% line:-2
+初回の接続時間は短いですが
+別の問題があります
+
+00:22:46.567 --> 00:22:49.536 align:start position:29% line:-1
+２つ目の緑色のタスクは―
+
+00:22:49.636 --> 00:22:53.574 align:start position:30% line:-2
+最初のタスクの完了まで
+待機が必要です
+
+00:22:54.141 --> 00:22:56.844 align:start position:30% line:-2
+３つ目の
+オレンジ色のタスクも―
+
+00:22:56.944 --> 00:23:02.649 align:start position:27% line:-2
+２つ目のタスクが終わるまで
+待機が必要です
+

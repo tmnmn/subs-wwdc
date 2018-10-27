@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.176 --> 00:26:01.846 A:middle
+This includes two pieces of
+
+00:26:01.846 --> 00:26:02.876 A:middle
+really important information,
+
+00:26:02.876 --> 00:26:04.666 A:middle
+the first is a public key.
+
+00:26:05.176 --> 00:26:06.306 A:middle
+This public key is going to be
+
+00:26:06.306 --> 00:26:07.916 A:middle
+later used to encrypt the token
+
+00:26:07.916 --> 00:26:08.806 A:middle
+that you received from the
+
+00:26:08.806 --> 00:26:10.426 A:middle
+authentication request.
+
+00:26:11.626 --> 00:26:13.406 A:middle
+It also includes the URL of
+
+00:26:13.406 --> 00:26:16.406 A:middle
+where the OAuth webpage lives
+
+00:26:16.506 --> 00:26:17.886 A:middle
+and we'll go through that a
+
+00:26:17.886 --> 00:26:19.026 A:middle
+little bit more in a minute.
+
+00:26:19.826 --> 00:26:21.296 A:middle
+So this is where it starts, the
+
+00:26:21.296 --> 00:26:22.496 A:middle
+authentication request comes
+
+00:26:22.496 --> 00:26:24.546 A:middle
+down and it passes through, stop
+
+00:26:24.546 --> 00:26:25.826 A:middle
+on the way at Apple Business
+
+00:26:25.886 --> 00:26:26.476 A:middle
+Chat Server.
+
+00:26:27.126 --> 00:26:27.996 A:middle
+Now why do we do this?
+
+00:26:27.996 --> 00:26:30.166 A:middle
+This we added and we did a lot
+
+00:26:30.166 --> 00:26:31.386 A:middle
+of thinking about this about
+
+00:26:31.606 --> 00:26:32.476 A:middle
+adding security.
+
+00:26:32.516 --> 00:26:33.986 A:middle
+We want to make sure that your
+
+00:26:33.986 --> 00:26:35.536 A:middle
+business has authenticated user
+
+00:26:35.536 --> 00:26:36.966 A:middle
+to the proper OAuth website.
+
+00:26:37.846 --> 00:26:39.646 A:middle
+And for that we make sure it's
+
+00:26:39.646 --> 00:26:41.256 A:middle
+the proper information that
+
+00:26:41.256 --> 00:26:42.646 A:middle
+you've already as a business
+
+00:26:42.646 --> 00:26:44.086 A:middle
+registered through Apple
+
+00:26:44.086 --> 00:26:45.046 A:middle
+Register previously.
+
+00:26:46.206 --> 00:26:48.526 A:middle
+We verify also that the request
+
+00:26:48.526 --> 00:26:49.966 A:middle
+contains all the required
+
+00:26:49.966 --> 00:26:50.336 A:middle
+fields.
+
+00:26:50.906 --> 00:26:52.506 A:middle
+And then finally we deliver it
+
+00:26:52.506 --> 00:26:53.596 A:middle
+in your Messages app for the
+
+00:26:53.596 --> 00:26:53.966 A:middle
+customer.
+
+00:26:54.396 --> 00:26:56.296 A:middle
+From there as I showed you can
+
+00:26:56.296 --> 00:26:57.246 A:middle
+either type in the password
+
+00:26:57.246 --> 00:26:59.566 A:middle
+manually or access the system
+
+00:26:59.566 --> 00:27:01.846 A:middle
+keychain to pull out any stored
+

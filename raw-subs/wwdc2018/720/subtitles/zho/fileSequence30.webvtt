@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:01.401 --> 00:30:04.705 align:middle line:-2
+然后我们使用该凭证实例化一个
+PKAddPassesViewController
+
+00:30:04.771 --> 00:30:07.441 align:middle line:-1
+并呈现它
+
+00:30:08.876 --> 00:30:11.945 align:middle line:-2
+但正如Ben之前提到的
+我们可以使用一个更好的API
+
+00:30:12.012 --> 00:30:14.515 align:middle line:-1
+来自动将凭证添加到Wallet
+
+00:30:15.282 --> 00:30:17.417 align:middle line:-1
+所以让我们删除这两行代码
+
+00:30:17.484 --> 00:30:19.052 align:middle line:-1
+并将其替换为那个API
+
+00:30:20.954 --> 00:30:25.125 align:middle line:-2
+那个API在PKPassLibrary中
+所以让我们创建一个它的实例
+
+00:30:27.294 --> 00:30:29.296 align:middle line:-1
+然后让我们调用该API
+
+00:30:31.398 --> 00:30:33.133 align:middle line:-1
+该函数名为addPasses
+
+00:30:33.767 --> 00:30:38.172 align:middle line:-2
+它需要一个凭证数组
+还有一个带有状态的完成处理程序
+
+00:30:38.605 --> 00:30:41.108 align:middle line:-1
+返回的状态有三种可能
+
+00:30:41.842 --> 00:30:45.913 align:middle line:-2
+didAddPasses 这表示用户想要
+将凭证添加到Wallet
+
+00:30:46.713 --> 00:30:48.148 align:middle line:-1
+didCancelAddPasses
+
+00:30:48.215 --> 00:30:50.384 align:middle line:-2
+这意味着用户不希望
+将凭证添加到Wallet
+
+00:30:51.185 --> 00:30:52.653 align:middle line:0
+以及shouldReviewPasses
+
+00:30:53.453 --> 00:30:56.957 align:middle line:0
+在这种情况下
+用户希望先看到凭证的预览
+
+00:30:57.558 --> 00:30:59.726 align:middle line:0
+再决定是否将其添加到Wallet
+

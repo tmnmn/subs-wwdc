@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.546 --> 00:13:05.906 A:middle
+Let's look at the example.
+
+00:13:05.906 --> 00:13:06.776 A:middle
+What I'm doing here, I'm
+
+00:13:06.776 --> 00:13:08.106 A:middle
+breaking my detect barcodes
+
+00:13:08.106 --> 00:13:08.756 A:middle
+request object.
+
+00:13:09.616 --> 00:13:11.256 A:middle
+If I were to do nothing else and
+
+00:13:11.256 --> 00:13:12.856 A:middle
+just took my request object and
+
+00:13:12.856 --> 00:13:15.256 A:middle
+fed it into request handler, I
+
+00:13:15.256 --> 00:13:16.586 A:middle
+would be working on the entire
+
+00:13:16.586 --> 00:13:18.416 A:middle
+image, looking for my barcodes.
+
+00:13:19.176 --> 00:13:20.066 A:middle
+What I'm going to do here
+
+00:13:20.066 --> 00:13:22.316 A:middle
+instead, I'm going to specify a
+
+00:13:22.316 --> 00:13:23.746 A:middle
+small portion like a central
+
+00:13:23.746 --> 00:13:24.516 A:middle
+property image.
+
+00:13:24.966 --> 00:13:25.716 A:middle
+There's this where I want to
+
+00:13:25.716 --> 00:13:27.506 A:middle
+focus to look for my barcodes,
+
+00:13:27.556 --> 00:13:29.186 A:middle
+and I'm going to overwrite my
+
+00:13:29.186 --> 00:13:30.466 A:middle
+region of interest property with
+
+00:13:30.466 --> 00:13:30.696 A:middle
+that.
+
+00:13:31.476 --> 00:13:32.886 A:middle
+If I take my request object now
+
+00:13:32.886 --> 00:13:33.976 A:middle
+and feed it into request
+
+00:13:33.976 --> 00:13:35.046 A:middle
+handler, I'm going to be
+
+00:13:35.046 --> 00:13:36.406 A:middle
+focusing on the smaller portion
+
+00:13:36.406 --> 00:13:37.116 A:middle
+of the image only.
+
+00:13:38.166 --> 00:13:39.586 A:middle
+A region of interest property
+
+00:13:39.776 --> 00:13:41.496 A:middle
+here is an example of the
+
+00:13:41.496 --> 00:13:42.646 A:middle
+optional property that we have.
+
+00:13:43.776 --> 00:13:45.026 A:middle
+What's important to understand
+
+00:13:45.026 --> 00:13:47.896 A:middle
+here also that once you get a
+
+00:13:47.896 --> 00:13:49.186 A:middle
+request object in your hands,
+
+00:13:49.436 --> 00:13:50.956 A:middle
+it's a fully constructed object.
+
+00:13:51.656 --> 00:13:52.546 A:middle
+It's the object that you can
+
+00:13:52.546 --> 00:13:54.226 A:middle
+start working with whenever you
+
+00:13:54.226 --> 00:13:55.366 A:middle
+have constructed objects.
+
+00:13:55.716 --> 00:13:56.736 A:middle
+If you decide to overwrite
+
+00:13:56.736 --> 00:13:58.396 A:middle
+certain properties later on,
+
+00:13:58.716 --> 00:13:59.766 A:middle
+you're welcome to do so.
+

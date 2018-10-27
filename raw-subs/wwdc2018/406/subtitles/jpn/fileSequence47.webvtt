@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:58.485 --> 00:47:04.258 align:start position:27% line:-2
+再帰的制約も条件付き準拠も
+プロトコル階層を追跡します
+
+00:47:04.358 --> 00:47:10.964 align:start position:14% line:-2
+この機能で SubSequenceに対し
+関連型のデフォルトが得られ―
+
+00:47:11.064 --> 00:47:17.704 align:start position:12% line:-2
+SelfのSliceは コレクション階層の
+どのレベルでも働くのです
+
+00:47:18.005 --> 00:47:21.208 align:start position:2% line:-1
+BidirectionalCollectionを作れば
+
+00:47:21.308 --> 00:47:26.480 align:start position:14% line:-2
+これに準拠するSubSequence型が
+必要となります
+
+00:47:26.880 --> 00:47:30.284 align:start position:20% line:-1
+Sliceアダプタの条件付き準拠で
+
+00:47:30.384 --> 00:47:34.555 align:start position:7% line:-2
+BidirectionalCollectionと
+なります
+
+00:47:34.655 --> 00:47:36.690 align:start position:32% line:-1
+その要件も満たします
+
+00:47:36.890 --> 00:47:39.359 align:start position:9% line:-2
+RandomAccessCollectionも
+同様です
+
+00:47:39.727 --> 00:47:43.030 align:start position:14% line:-1
+SubSequenceはその要件を取得し
+
+00:47:43.130 --> 00:47:48.035 align:start position:27% line:-2
+Sliceの条件付き準拠で
+その要件を満たします
+
+00:47:48.135 --> 00:47:51.538 align:start position:7% line:-2
+それ自体が
+RandomAccessCollectionです
+
+00:47:51.638 --> 00:47:57.311 align:start position:23% line:-2
+関連型のデフォルトが
+階層内の全プロトコルに働くのは
+
+00:47:57.411 --> 00:48:00.280 align:start position:29% line:-1
+凝集設計の好例と言えます
+

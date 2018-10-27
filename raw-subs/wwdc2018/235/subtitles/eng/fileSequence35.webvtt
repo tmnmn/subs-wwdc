@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:03.066 --> 00:35:05.336 A:middle
+Now keeping with table views but
+
+00:35:05.336 --> 00:35:07.066 A:middle
+moving on from readable width,
+
+00:35:08.266 --> 00:35:11.006 A:middle
+there is something else to know
+
+00:35:11.006 --> 00:35:11.966 A:middle
+how they work with safe area,
+
+00:35:12.496 --> 00:35:14.826 A:middle
+which is that the content views
+
+00:35:14.886 --> 00:35:17.186 A:middle
+of your table view cells will
+
+00:35:17.186 --> 00:35:20.156 A:middle
+not extend beyond the safe area.
+
+00:35:21.656 --> 00:35:23.476 A:middle
+However, by default, the
+
+00:35:23.636 --> 00:35:25.066 A:middle
+background and selected
+
+00:35:25.066 --> 00:35:27.176 A:middle
+background views do-- of UI
+
+00:35:27.176 --> 00:35:29.206 A:middle
+table view cell do extend beyond
+
+00:35:29.206 --> 00:35:29.736 A:middle
+the safe area.
+
+00:35:31.136 --> 00:35:32.556 A:middle
+So if you have some content you
+
+00:35:32.556 --> 00:35:33.946 A:middle
+want to place in custom table
+
+00:35:33.946 --> 00:35:35.836 A:middle
+view cells that you want to
+
+00:35:35.836 --> 00:35:37.526 A:middle
+overflow outside the safe area
+
+00:35:37.526 --> 00:35:38.646 A:middle
+and bleed to the edges of the
+
+00:35:38.646 --> 00:35:40.666 A:middle
+screen, you can either place it
+
+00:35:40.706 --> 00:35:42.126 A:middle
+in the background or selected
+
+00:35:42.126 --> 00:35:43.196 A:middle
+background views if the
+
+00:35:43.196 --> 00:35:44.426 A:middle
+semantics of those views make
+
+00:35:44.466 --> 00:35:44.836 A:middle
+sense.
+
+00:35:45.446 --> 00:35:47.416 A:middle
+Or there's a property on UI
+
+00:35:47.416 --> 00:35:50.156 A:middle
+table view called insets content
+
+00:35:50.156 --> 00:35:52.706 A:middle
+views to safe area, which by
+
+00:35:52.706 --> 00:35:55.026 A:middle
+default is true, but you can
+
+00:35:55.026 --> 00:35:56.486 A:middle
+change to false to get your
+
+00:35:56.486 --> 00:35:58.206 A:middle
+content views to also extend to
+
+00:35:58.206 --> 00:35:58.576 A:middle
+the edges.
+
+00:35:59.136 --> 00:36:01.986 A:middle
+And this property is also
+

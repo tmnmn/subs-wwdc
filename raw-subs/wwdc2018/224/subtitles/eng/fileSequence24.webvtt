@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:00.146 --> 00:24:01.566 A:middle
+This will become the default in
+
+00:24:01.566 --> 00:24:03.506 A:middle
+a future release and in a future
+
+00:24:03.506 --> 00:24:04.986 A:middle
+release Xcode will also start
+
+00:24:04.986 --> 00:24:06.266 A:middle
+emitting a warning for anyone
+
+00:24:06.266 --> 00:24:07.886 A:middle
+that's using the default value
+
+00:24:07.886 --> 00:24:08.706 A:middle
+transformer name.
+
+00:24:10.036 --> 00:24:10.956 A:middle
+If you're building your models
+
+00:24:10.956 --> 00:24:13.056 A:middle
+in code, you can set it by using
+
+00:24:13.056 --> 00:24:14.146 A:middle
+the valueTransformerName
+
+00:24:14.146 --> 00:24:15.996 A:middle
+property on NSAttribute
+
+00:24:15.996 --> 00:24:16.416 A:middle
+description.
+
+00:24:17.726 --> 00:24:19.046 A:middle
+This should be transparent for
+
+00:24:19.046 --> 00:24:21.176 A:middle
+you if you're not encoding
+
+00:24:21.176 --> 00:24:22.256 A:middle
+custom class types.
+
+00:24:22.296 --> 00:24:23.926 A:middle
+So, for plist types, this is a
+
+00:24:23.926 --> 00:24:24.306 A:middle
+no op.
+
+00:24:24.756 --> 00:24:25.806 A:middle
+You simply change the value
+
+00:24:25.806 --> 00:24:27.336 A:middle
+transformer name and you'll get
+
+00:24:27.336 --> 00:24:28.726 A:middle
+the new secure coding behavior.
+
+00:24:29.286 --> 00:24:30.856 A:middle
+However, if you are implementing
+
+00:24:30.856 --> 00:24:32.456 A:middle
+custom classes, those classes
+
+00:24:32.456 --> 00:24:34.786 A:middle
+need to adopt secure coding and
+
+00:24:34.846 --> 00:24:36.276 A:middle
+you can come see us in the labs
+
+00:24:36.276 --> 00:24:37.616 A:middle
+for help with that.
+
+00:24:38.296 --> 00:24:40.486 A:middle
+But we can help you more.
+
+00:24:41.286 --> 00:24:42.866 A:middle
+At Core Data, we've spent time
+
+00:24:43.066 --> 00:24:44.726 A:middle
+building in new debugging tools
+
+00:24:45.026 --> 00:24:46.566 A:middle
+over the years that can help you
+
+00:24:46.566 --> 00:24:47.796 A:middle
+understand what's going on under
+
+00:24:47.796 --> 00:24:48.236 A:middle
+the stack.
+
+00:24:49.026 --> 00:24:50.216 A:middle
+So, this is a picture of our
+
+00:24:50.216 --> 00:24:51.666 A:middle
+preferred default scheme
+
+00:24:51.666 --> 00:24:52.536 A:middle
+configuration.
+
+00:24:52.866 --> 00:24:54.686 A:middle
+We have a couple of process
+
+00:24:54.686 --> 00:24:56.396 A:middle
+arguments that we have that can
+
+00:24:56.396 --> 00:24:57.386 A:middle
+help you get more debugging
+
+00:24:57.386 --> 00:24:59.416 A:middle
+information about SQLite, but
+
+00:24:59.416 --> 00:25:00.746 A:middle
+the big one you should always
+

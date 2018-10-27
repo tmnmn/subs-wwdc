@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.416 --> 00:19:00.566 A:middle
+Now, I'm not using the code
+
+00:19:00.566 --> 00:19:02.036 A:middle
+completion from Core ML in this
+
+00:19:02.036 --> 00:19:03.946 A:middle
+case, because this is the only
+
+00:19:03.946 --> 00:19:05.136 A:middle
+line of Core ML that I'm
+
+00:19:05.136 --> 00:19:05.916 A:middle
+actually using my whole
+
+00:19:05.916 --> 00:19:07.536 A:middle
+application, and it allows me to
+
+00:19:07.536 --> 00:19:08.936 A:middle
+do my custom kind of error
+
+00:19:08.936 --> 00:19:09.276 A:middle
+handling.
+
+00:19:09.396 --> 00:19:10.866 A:middle
+But, you can choose also to use
+
+00:19:10.866 --> 00:19:12.226 A:middle
+the code completion already from
+
+00:19:12.226 --> 00:19:12.676 A:middle
+Core ML.
+
+00:19:12.776 --> 00:19:13.936 A:middle
+Both are absolutely valid.
+
+00:19:14.866 --> 00:19:16.316 A:middle
+Now, I create my Vision model
+
+00:19:16.316 --> 00:19:17.196 A:middle
+from that.
+
+00:19:17.196 --> 00:19:19.826 A:middle
+My Vision Core ML Model, and my
+
+00:19:19.826 --> 00:19:20.416 A:middle
+request.
+
+00:19:20.816 --> 00:19:22.736 A:middle
+And again, simply when the
+
+00:19:22.736 --> 00:19:24.576 A:middle
+request returns, meaning I'm
+
+00:19:24.576 --> 00:19:26.236 A:middle
+executing my completion handler.
+
+00:19:26.756 --> 00:19:29.046 A:middle
+I simply look, "What kind of
+
+00:19:29.266 --> 00:19:30.626 A:middle
+specifications did I get back?"
+
+00:19:31.786 --> 00:19:33.386 A:middle
+And then I set this threshold
+
+00:19:33.386 --> 00:19:33.676 A:middle
+here.
+
+00:19:34.236 --> 00:19:35.396 A:middle
+Now, this is one that I
+
+00:19:35.396 --> 00:19:36.676 A:middle
+empirically set against a
+
+00:19:36.676 --> 00:19:37.396 A:middle
+confidence goal.
+
+00:19:37.396 --> 00:19:38.876 A:middle
+I'm using 0.98.
+
+00:19:39.026 --> 00:19:41.466 A:middle
+So, a 98% confidence that this
+
+00:19:41.466 --> 00:19:43.496 A:middle
+is actually correct.
+
+00:19:43.496 --> 00:19:44.506 A:middle
+Why am I doing that?
+
+00:19:45.156 --> 00:19:46.766 A:middle
+That allows me to filter out
+
+00:19:46.766 --> 00:19:47.516 A:middle
+actually when I'm looking at
+
+00:19:47.516 --> 00:19:48.646 A:middle
+something, and maybe not quite
+
+00:19:48.646 --> 00:19:49.426 A:middle
+sure what that is.
+
+00:19:49.426 --> 00:19:50.146 A:middle
+Maybe we'll see that in a
+
+00:19:50.146 --> 00:19:51.036 A:middle
+moment, actually what that
+
+00:19:51.036 --> 00:19:51.376 A:middle
+means.
+
+00:19:52.606 --> 00:19:54.516 A:middle
+So now, I have all my requests.
+
+00:19:55.556 --> 00:19:56.916 A:middle
+When it comes to the time that I
+
+00:19:56.916 --> 00:19:57.996 A:middle
+actually want to execute them, I
+
+00:19:57.996 --> 00:19:59.366 A:middle
+created a little function here
+
+00:19:59.366 --> 00:20:01.036 A:middle
+that actually mean, "analyze on
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:00.176 --> 00:47:01.976 A:middle
+All right here we go, the
+
+00:47:01.976 --> 00:47:04.406 A:middle
+debugger has stopped because it
+
+00:47:04.406 --> 00:47:05.936 A:middle
+has crashed, but even when you
+
+00:47:05.936 --> 00:47:07.806 A:middle
+actually do catch this crash in
+
+00:47:07.806 --> 00:47:08.826 A:middle
+the debugger it doesn't really
+
+00:47:08.826 --> 00:47:09.806 A:middle
+help us.
+
+00:47:10.256 --> 00:47:11.536 A:middle
+All the debugger provides is
+
+00:47:11.536 --> 00:47:13.636 A:middle
+that this is some sort of XC bad
+
+00:47:13.636 --> 00:47:15.906 A:middle
+excess but it does not what
+
+00:47:15.906 --> 00:47:17.646 A:middle
+caused the corruption or why did
+
+00:47:17.646 --> 00:47:19.036 A:middle
+it actually happen.
+
+00:47:19.806 --> 00:47:21.866 A:middle
+Luckily Xcode has a tool that's
+
+00:47:21.916 --> 00:47:23.356 A:middle
+perfect just for this situation
+
+00:47:23.356 --> 00:47:24.616 A:middle
+and it's called Thread Sanitizer
+
+00:47:24.616 --> 00:47:25.676 A:middle
+and that's what I'm going to use
+
+00:47:25.676 --> 00:47:25.876 A:middle
+here.
+
+00:47:26.266 --> 00:47:27.816 A:middle
+So let's open up the scheme
+
+00:47:27.816 --> 00:47:29.206 A:middle
+editor of our project which I
+
+00:47:29.206 --> 00:47:30.446 A:middle
+can do by clicking the name of
+
+00:47:30.446 --> 00:47:32.066 A:middle
+our app here and choosing Edit
+
+00:47:32.066 --> 00:47:32.426 A:middle
+Scheme.
+
+00:47:33.336 --> 00:47:35.536 A:middle
+And if I then switch over to the
+
+00:47:35.786 --> 00:47:37.576 A:middle
+tab called Diagnostics you'll
+
+00:47:37.576 --> 00:47:40.006 A:middle
+see that we have several runtime
+
+00:47:40.006 --> 00:47:41.426 A:middle
+diagnostic tools here, like
+
+00:47:41.426 --> 00:47:42.676 A:middle
+Address Sanitizer which is great
+
+00:47:42.676 --> 00:47:44.136 A:middle
+at finding buffer overflows.
+
+00:47:45.486 --> 00:47:46.746 A:middle
+Let me choose Thread Sanitizer
+
+00:47:46.746 --> 00:47:48.396 A:middle
+and I'll also select Pause on
+
+00:47:48.396 --> 00:47:49.876 A:middle
+Issues which means that the
+
+00:47:49.876 --> 00:47:51.206 A:middle
+debugger will break every time
+
+00:47:51.446 --> 00:47:52.826 A:middle
+that Sanitizer detects a bug.
+
+00:47:54.636 --> 00:47:56.086 A:middle
+Let's run the app in the
+
+00:47:56.086 --> 00:47:57.556 A:middle
+Simulator with Thread Sanitizer
+
+00:47:57.556 --> 00:47:58.566 A:middle
+enabled and let's see what
+
+00:47:58.566 --> 00:48:00.366 A:middle
+happens now if I try to add a
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:00.186 --> 00:50:02.006 A:middle
+However, in our notes section,
+
+00:50:02.326 --> 00:50:03.296 A:middle
+where we have this awesome
+
+00:50:03.296 --> 00:50:05.836 A:middle
+custom stationary, we have a
+
+00:50:05.836 --> 00:50:07.426 A:middle
+light grey background that isn't
+
+00:50:07.426 --> 00:50:08.456 A:middle
+appropriate for Dark Mode and
+
+00:50:08.456 --> 00:50:10.016 A:middle
+hasn't been adjusted with that
+
+00:50:10.016 --> 00:50:11.096 A:middle
+under page semantic.
+
+00:50:11.576 --> 00:50:14.366 A:middle
+We can open up Interface Builder
+
+00:50:14.366 --> 00:50:15.436 A:middle
+and see where we're setting up
+
+00:50:15.436 --> 00:50:17.056 A:middle
+this background drawing view and
+
+00:50:17.056 --> 00:50:18.756 A:middle
+see that, indeed, we are filing
+
+00:50:18.756 --> 00:50:19.976 A:middle
+it with a custom gray color.
+
+00:50:21.006 --> 00:50:23.356 A:middle
+And pretty quickly in IB, we can
+
+00:50:23.356 --> 00:50:24.486 A:middle
+change that to using the Under
+
+00:50:24.486 --> 00:50:25.986 A:middle
+Page Background color that
+
+00:50:25.986 --> 00:50:27.626 A:middle
+represents that semantic and
+
+00:50:27.626 --> 00:50:28.626 A:middle
+immediately see that we'll get
+
+00:50:28.626 --> 00:50:30.696 A:middle
+the right result, making it look
+
+00:50:31.116 --> 00:50:32.286 A:middle
+just at home with the rest of
+
+00:50:32.286 --> 00:50:34.646 A:middle
+the document apps in Dark Mode.
+
+00:50:34.646 --> 00:50:37.516 A:middle
+The next thing that kind of
+
+00:50:37.516 --> 00:50:38.636 A:middle
+stands out here, though, is the
+
+00:50:38.636 --> 00:50:40.156 A:middle
+dark foreground on top of light
+
+00:50:40.156 --> 00:50:42.376 A:middle
+background of our stationary and
+
+00:50:42.376 --> 00:50:43.036 A:middle
+document area.
+
+00:50:43.036 --> 00:50:45.276 A:middle
+And because this is a WYSIWYG
+
+00:50:45.276 --> 00:50:47.206 A:middle
+editor where we, as users of
+
+00:50:47.336 --> 00:50:48.676 A:middle
+Chameleon Wrangler have complete
+
+00:50:48.676 --> 00:50:51.276 A:middle
+control over the colors, images,
+
+00:50:51.276 --> 00:50:53.876 A:middle
+and fonts seen within it, we
+
+00:50:53.876 --> 00:50:55.846 A:middle
+expect this to stay the same as
+
+00:50:55.846 --> 00:50:57.356 A:middle
+a light appearing document.
+
+00:50:58.566 --> 00:50:59.656 A:middle
+However, there are a few subtle
+
+00:50:59.656 --> 00:51:01.406 A:middle
+details that don't seem quite
+

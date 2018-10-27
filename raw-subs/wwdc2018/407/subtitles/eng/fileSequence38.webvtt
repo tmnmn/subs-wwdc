@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.616 --> 00:38:00.876 A:middle
+we don't need.
+
+00:38:01.396 --> 00:38:02.546 A:middle
+The second one is that we want
+
+00:38:02.546 --> 00:38:04.506 A:middle
+to be proactive, and it's valid
+
+00:38:04.506 --> 00:38:05.256 A:middle
+for two things.
+
+00:38:05.256 --> 00:38:07.866 A:middle
+It's valid for being proactive
+
+00:38:08.006 --> 00:38:09.716 A:middle
+in order to anticipate the work
+
+00:38:09.716 --> 00:38:12.296 A:middle
+that we are making it later, we
+
+00:38:12.296 --> 00:38:13.526 A:middle
+also want to be proactive and
+
+00:38:13.526 --> 00:38:15.176 A:middle
+catch regressions quickly, so
+
+00:38:15.176 --> 00:38:16.116 A:middle
+you should make sure that you
+
+00:38:16.116 --> 00:38:17.586 A:middle
+have continuous integration
+
+00:38:17.916 --> 00:38:18.716 A:middle
+testing in place.
+
+00:38:21.536 --> 00:38:23.116 A:middle
+And the last point is we want to
+
+00:38:23.116 --> 00:38:24.726 A:middle
+be constant, regardless of the
+
+00:38:24.806 --> 00:38:26.046 A:middle
+total amount of data that we
+
+00:38:26.046 --> 00:38:26.566 A:middle
+need to load.
+
+00:38:29.496 --> 00:38:31.646 A:middle
+Now, if we were taking a naïve
+
+00:38:31.646 --> 00:38:32.986 A:middle
+approach, and we were loading
+
+00:38:32.986 --> 00:38:34.186 A:middle
+everything we needed during
+
+00:38:34.186 --> 00:38:35.366 A:middle
+launch, this is how long it
+
+00:38:35.366 --> 00:38:37.806 A:middle
+would take roughly for a 30,000
+
+00:38:37.806 --> 00:38:38.556 A:middle
+item library.
+
+00:38:39.696 --> 00:38:41.106 A:middle
+First you need to initialize the
+
+00:38:41.106 --> 00:38:42.696 A:middle
+database, then you need to
+
+00:38:42.696 --> 00:38:43.986 A:middle
+prepare some view controllers.
+
+00:38:44.356 --> 00:38:45.516 A:middle
+You need to configure the data
+
+00:38:45.516 --> 00:38:47.236 A:middle
+sources, load some library
+
+00:38:47.236 --> 00:38:48.586 A:middle
+images, and fetch the cloud
+
+00:38:48.586 --> 00:38:49.066 A:middle
+status.
+
+00:38:49.986 --> 00:38:52.236 A:middle
+And keep in mind that this might
+
+00:38:52.306 --> 00:38:54.496 A:middle
+vary as the data grow, and in
+
+00:38:54.496 --> 00:38:56.666 A:middle
+fact, the data will grow forever
+
+00:38:56.666 --> 00:38:58.606 A:middle
+as people takes pictures every
+
+00:38:59.526 --> 00:38:59.593 A:middle
+day.
+

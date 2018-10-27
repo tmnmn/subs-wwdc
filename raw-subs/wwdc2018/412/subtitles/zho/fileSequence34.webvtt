@@ -1,0 +1,80 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:01.208 --> 00:34:04.745 align:middle line:-2
+我们甚至可以使用
+表达式expression -l objc
+
+00:34:04.978 --> 00:34:07.047 align:middle line:-2
+来在Swift框架中
+执行Objective-C代码
+
+00:34:08.348 --> 00:34:11.150 align:middle line:-2
+我们可以使用 expression
+CATransition.flush()
+
+00:34:11.217 --> 00:34:13.187 align:middle line:-1
+将视图更改直接刷新到屏幕上
+
+00:34:13.286 --> 00:34:15.289 align:middle line:-1
+即使是在调试器中暂停时
+
+00:34:16.056 --> 00:34:18.958 align:middle line:-1
+你还可以添加自定义LLDB命令
+
+00:34:19.025 --> 00:34:22.429 align:middle line:-1
+无论是给常用命令设置别名
+
+00:34:23.030 --> 00:34:26.366 align:middle line:-2
+还是使用
+LLDB Python脚本
+
+00:34:26.433 --> 00:34:28.268 align:middle line:-1
+完全自定义并创建自己的命令
+
+00:34:28.768 --> 00:34:30.704 align:middle line:-1
+别忘了访问我们的演讲网站
+
+00:34:30.804 --> 00:34:33.473 align:middle line:-2
+我们会尽快发布这个nudge脚本
+以便你可以下载它
+
+00:34:33.706 --> 00:34:35.943 align:middle line:-2
+研究它并将其用作
+你自己的命令的基础
+
+00:34:38.212 --> 00:34:40.246 align:middle line:-1
+还有一件事我想和你们提一下
+
+00:34:40.313 --> 00:34:42.983 align:middle line:-1
+就是当前的LLDB打印命令
+
+00:34:43.417 --> 00:34:44.685 align:middle line:-1
+你可能已经很熟悉po了
+
+00:34:44.751 --> 00:34:46.186 align:middle line:-1
+在演示中我们多次用到它
+
+00:34:46.420 --> 00:34:47.721 align:middle line:-1
+我们看到po
+
+00:34:47.888 --> 00:34:49.755 align:middle line:-1
+会请求对象的调试描述
+
+00:34:49.857 --> 00:34:51.158 align:middle line:-1
+而且你可以自定义该描述
+
+00:34:51.391 --> 00:34:53.293 align:middle line:-2
+那是因为po只是一个
+以下命令的别名
+
+00:34:53.527 --> 00:34:55.629 align:middle line:-2
+expression
+--object-description
+
+00:34:56.864 --> 00:34:58.632 align:middle line:-1
+或expression -O
+
+00:34:59.366 --> 00:35:01.268 align:middle line:-1
+与p命令相比
+

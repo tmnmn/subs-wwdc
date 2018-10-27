@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:59.996 --> 00:49:01.536 A:middle
+There's nothing out of place,
+
+00:49:02.286 --> 00:49:04.156 A:middle
+but I find that when I scroll
+
+00:49:04.156 --> 00:49:06.586 A:middle
+and rubber band a bit, oh, I'm
+
+00:49:06.586 --> 00:49:07.476 A:middle
+revealing something that I
+
+00:49:07.476 --> 00:49:08.236 A:middle
+didn't expect.
+
+00:49:08.346 --> 00:49:09.326 A:middle
+There's a light background
+
+00:49:09.426 --> 00:49:11.516 A:middle
+hiding back there somewhere, but
+
+00:49:11.516 --> 00:49:12.936 A:middle
+it's hard to see without doing
+
+00:49:12.936 --> 00:49:14.056 A:middle
+that little scroll gesture.
+
+00:49:14.776 --> 00:49:16.446 A:middle
+And this is a great case for
+
+00:49:16.446 --> 00:49:17.446 A:middle
+using the View Debugger.
+
+00:49:18.686 --> 00:49:19.606 A:middle
+Using the View Debugger's
+
+00:49:19.606 --> 00:49:22.026 A:middle
+expanded 3D view, the view
+
+00:49:22.026 --> 00:49:23.336 A:middle
+that's drawing unexpectedly is
+
+00:49:23.416 --> 00:49:24.686 A:middle
+really easy to spot.
+
+00:49:25.606 --> 00:49:26.786 A:middle
+And in this case, we can see
+
+00:49:26.786 --> 00:49:27.756 A:middle
+that although our collection
+
+00:49:27.756 --> 00:49:29.266 A:middle
+view was drawing the background
+
+00:49:29.416 --> 00:49:31.116 A:middle
+that we expected, the scroll
+
+00:49:31.116 --> 00:49:32.696 A:middle
+view behind it still has a light
+
+00:49:32.696 --> 00:49:33.526 A:middle
+background for some reason.
+
+00:49:33.526 --> 00:49:35.556 A:middle
+And when we select it, we can
+
+00:49:35.556 --> 00:49:37.396 A:middle
+use the Inspector to see how
+
+00:49:37.396 --> 00:49:38.226 A:middle
+it's being configured.
+
+00:49:38.226 --> 00:49:39.606 A:middle
+And in this case, we can verify
+
+00:49:39.606 --> 00:49:40.726 A:middle
+that, yeah, it's just drawing a
+
+00:49:40.726 --> 00:49:42.156 A:middle
+hardcoded white color and that's
+
+00:49:42.156 --> 00:49:43.776 A:middle
+a really easy fix.
+
+00:49:44.916 --> 00:49:46.036 A:middle
+The View Debugger has made a
+
+00:49:46.036 --> 00:49:47.276 A:middle
+number of enhancements in Xcode
+
+00:49:47.276 --> 00:49:48.756 A:middle
+10 that are great for debugging
+
+00:49:48.756 --> 00:49:49.836 A:middle
+Dark Mode applications,
+
+00:49:50.666 --> 00:49:53.096 A:middle
+including colors.
+
+00:49:53.146 --> 00:49:54.326 A:middle
+They can now show you the names
+
+00:49:54.326 --> 00:49:55.756 A:middle
+of colors, both dynamic system
+
+00:49:55.756 --> 00:49:57.416 A:middle
+colors and your asset catalog
+
+00:49:57.416 --> 00:49:59.016 A:middle
+colors, so you can identify
+
+00:49:59.096 --> 00:50:00.546 A:middle
+where these RGB components are
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.156 --> 00:15:00.836 A:middle
+discretionary property and a
+
+00:15:00.836 --> 00:15:02.356 A:middle
+background session will enable
+
+00:15:02.356 --> 00:15:03.996 A:middle
+you to take advantage of this
+
+00:15:03.996 --> 00:15:05.696 A:middle
+sort of an optimization very
+
+00:15:05.696 --> 00:15:06.056 A:middle
+quickly,
+
+00:15:06.546 --> 00:15:09.466 A:middle
+and this is the right way to do
+
+00:15:10.016 --> 00:15:10.086 A:middle
+it.
+
+00:15:10.936 --> 00:15:12.286 A:middle
+Let's take a look at what the
+
+00:15:12.286 --> 00:15:14.156 A:middle
+energy over time looks like now,
+
+00:15:14.426 --> 00:15:15.236 A:middle
+if we've done this.
+
+00:15:15.726 --> 00:15:18.596 A:middle
+We can see here that while it
+
+00:15:18.596 --> 00:15:20.236 A:middle
+might take a little longer for
+
+00:15:20.236 --> 00:15:21.676 A:middle
+our app to do any sort of
+
+00:15:21.676 --> 00:15:23.216 A:middle
+uploading for analytics, the
+
+00:15:23.216 --> 00:15:24.006 A:middle
+energy that we're going to
+
+00:15:24.006 --> 00:15:26.326 A:middle
+consume is going to be far less,
+
+00:15:26.746 --> 00:15:27.876 A:middle
+and it's going to be condensed
+
+00:15:27.876 --> 00:15:28.936 A:middle
+to one single burst.
+
+00:15:29.656 --> 00:15:31.256 A:middle
+This is effectively the result
+
+00:15:31.406 --> 00:15:33.386 A:middle
+of coalescing any tasks when
+
+00:15:33.386 --> 00:15:33.786 A:middle
+you're running in the
+
+00:15:33.786 --> 00:15:34.196 A:middle
+background.
+
+00:15:35.126 --> 00:15:36.666 A:middle
+You get a high energy for a
+
+00:15:36.666 --> 00:15:38.176 A:middle
+short period of time completing
+
+00:15:38.176 --> 00:15:39.436 A:middle
+those tasks, but then once
+
+00:15:39.436 --> 00:15:40.926 A:middle
+you're finished you no longer
+
+00:15:40.926 --> 00:15:41.916 A:middle
+have to worry about doing those
+
+00:15:41.916 --> 00:15:42.886 A:middle
+tasks and potentially
+
+00:15:42.886 --> 00:15:44.086 A:middle
+interrupting an experience of
+
+00:15:44.086 --> 00:15:45.336 A:middle
+another application.
+
+00:15:47.016 --> 00:15:49.306 A:middle
+Another example that seems sort
+
+00:15:49.306 --> 00:15:50.666 A:middle
+of straightforward is to end
+
+00:15:50.666 --> 00:15:51.506 A:middle
+your tasks quickly.
+
+00:15:52.706 --> 00:15:54.126 A:middle
+With many APIs on the system
+
+00:15:54.126 --> 00:15:55.256 A:middle
+that allow you to take advantage
+
+00:15:55.256 --> 00:15:57.446 A:middle
+of background running, things
+
+00:15:57.446 --> 00:15:58.636 A:middle
+like UI background task and
+
+00:15:58.636 --> 00:16:00.546 A:middle
+UIKit, or VOIP and PushKit.
+

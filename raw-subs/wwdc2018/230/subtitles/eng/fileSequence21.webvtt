@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.246 --> 00:21:00.056 A:middle
+accessibility element to create
+
+00:21:00.056 --> 00:21:01.766 A:middle
+a new element in place of the
+
+00:21:01.766 --> 00:21:02.476 A:middle
+collection view.
+
+00:21:03.256 --> 00:21:04.696 A:middle
+UI accessibility element is a
+
+00:21:04.696 --> 00:21:06.406 A:middle
+class used to create custom
+
+00:21:06.406 --> 00:21:08.356 A:middle
+elements oftentimes for
+
+00:21:08.356 --> 00:21:09.606 A:middle
+representing parts of your UI
+
+00:21:09.606 --> 00:21:10.726 A:middle
+that are inaccessible, like
+
+00:21:10.886 --> 00:21:12.036 A:middle
+something you've drawn in Core
+
+00:21:12.036 --> 00:21:12.986 A:middle
+Graphics for instance.
+
+00:21:13.946 --> 00:21:15.976 A:middle
+But we can also leverage it to
+
+00:21:15.976 --> 00:21:17.436 A:middle
+create a custom experience,
+
+00:21:17.506 --> 00:21:18.386 A:middle
+which is what we're going to do
+
+00:21:18.386 --> 00:21:18.966 A:middle
+in this case.
+
+00:21:20.236 --> 00:21:21.576 A:middle
+We'll need to return any custom
+
+00:21:21.576 --> 00:21:23.246 A:middle
+elements from the accessibility
+
+00:21:23.246 --> 00:21:24.806 A:middle
+elements property for the view
+
+00:21:24.806 --> 00:21:25.696 A:middle
+that would contain them.
+
+00:21:26.176 --> 00:21:27.216 A:middle
+This tells our assistive
+
+00:21:27.216 --> 00:21:30.686 A:middle
+technology what the accessible
+
+00:21:30.686 --> 00:21:32.596 A:middle
+sub elements of a given view are
+
+00:21:32.866 --> 00:21:33.806 A:middle
+and the order that they should
+
+00:21:33.806 --> 00:21:34.456 A:middle
+be navigable.
+
+00:21:35.786 --> 00:21:37.746 A:middle
+So if we get our custom element
+
+00:21:37.746 --> 00:21:39.186 A:middle
+in place, we can swipe to the
+
+00:21:39.186 --> 00:21:40.386 A:middle
+content for each dog easily.
+
+00:21:40.536 --> 00:21:40.786 A:middle
+Great.
+
+00:21:41.546 --> 00:21:43.606 A:middle
+But then how do we change dogs?
+
+00:21:45.266 --> 00:21:46.326 A:middle
+Well, we can take advantage of
+
+00:21:46.326 --> 00:21:47.596 A:middle
+accessibility increment and
+
+00:21:47.596 --> 00:21:48.866 A:middle
+accessibility decrement.
+
+00:21:49.276 --> 00:21:50.966 A:middle
+By adding the adjustable trait
+
+00:21:50.966 --> 00:21:52.936 A:middle
+to our custom element, we'll let
+
+00:21:52.936 --> 00:21:54.386 A:middle
+the assistive technique know
+
+00:21:54.386 --> 00:21:55.756 A:middle
+that our element responds to
+
+00:21:55.756 --> 00:21:57.376 A:middle
+these callbacks so that in the
+
+00:21:57.376 --> 00:21:59.286 A:middle
+case of VoiceOver when a user
+
+00:21:59.286 --> 00:22:00.586 A:middle
+swipes up or down with their
+

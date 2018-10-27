@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.156 --> 00:10:00.936 A:middle
+ability to define custom intents
+
+00:10:00.936 --> 00:10:01.916 A:middle
+in Xcode for Shortcuts.
+
+00:10:03.146 --> 00:10:05.346 A:middle
+And so if the shortcut that you
+
+00:10:05.346 --> 00:10:06.486 A:middle
+want to build corresponds to one
+
+00:10:06.486 --> 00:10:08.156 A:middle
+of the default built-in SiriKit
+
+00:10:08.156 --> 00:10:09.566 A:middle
+intents, then you should adopt
+
+00:10:09.566 --> 00:10:09.876 A:middle
+that.
+
+00:10:10.466 --> 00:10:11.726 A:middle
+But, otherwise, you can define
+
+00:10:11.726 --> 00:10:12.136 A:middle
+your own.
+
+00:10:12.616 --> 00:10:15.096 A:middle
+And whether you want to define
+
+00:10:15.096 --> 00:10:16.416 A:middle
+your own or adopt an existing
+
+00:10:16.416 --> 00:10:18.046 A:middle
+one to customize it, you want to
+
+00:10:18.046 --> 00:10:19.566 A:middle
+get started by creating an
+
+00:10:19.566 --> 00:10:21.356 A:middle
+intent definition file in Xcode.
+
+00:10:21.786 --> 00:10:24.746 A:middle
+So, believe it or not, in my
+
+00:10:24.746 --> 00:10:25.896 A:middle
+spare time, I've been working
+
+00:10:25.896 --> 00:10:26.956 A:middle
+with a couple friends on a new
+
+00:10:26.956 --> 00:10:29.156 A:middle
+app, and it's a soup delivery
+
+00:10:29.156 --> 00:10:31.026 A:middle
+app, and it's called Soup Chef.
+
+00:10:31.026 --> 00:10:32.666 A:middle
+It's the easiest way to order
+
+00:10:32.666 --> 00:10:34.646 A:middle
+soup, and I'm really excited
+
+00:10:34.676 --> 00:10:35.946 A:middle
+about the potential of hooking
+
+00:10:35.946 --> 00:10:36.586 A:middle
+it up to Siri.
+
+00:10:37.016 --> 00:10:38.586 A:middle
+So, let's step through how to
+
+00:10:38.586 --> 00:10:40.286 A:middle
+use the new Intent Editor to
+
+00:10:40.286 --> 00:10:42.066 A:middle
+build an intent for Soup Chef.
+
+00:10:42.126 --> 00:10:43.426 A:middle
+I'm going to start by going to
+
+00:10:43.426 --> 00:10:45.646 A:middle
+File, New File in Xcode, and
+
+00:10:45.646 --> 00:10:47.256 A:middle
+I'll choose the SiriKit Intent
+
+00:10:47.256 --> 00:10:48.196 A:middle
+Definition File type.
+
+00:10:48.196 --> 00:10:50.626 A:middle
+And then I'll see the new Intent
+
+00:10:50.626 --> 00:10:51.176 A:middle
+Editor.
+
+00:10:51.636 --> 00:10:52.986 A:middle
+So, let's get started by
+
+00:10:52.986 --> 00:10:54.346 A:middle
+clicking the plus button in the
+
+00:10:54.346 --> 00:10:54.866 A:middle
+bottom left.
+
+00:10:54.866 --> 00:10:58.146 A:middle
+Next, I want to give my intent a
+
+00:10:58.146 --> 00:10:58.486 A:middle
+name.
+
+00:10:58.756 --> 00:10:59.926 A:middle
+And, so in this case, I'm making
+
+00:10:59.926 --> 00:11:01.076 A:middle
+an intent for ordering a soup,
+

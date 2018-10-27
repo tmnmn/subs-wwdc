@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.780 --> 00:33:05.052 align:start position:27% line:-2
+このテクニックを
+ぜひ皆さんもお使いください
+
+00:33:05.152 --> 00:33:15.095 align:start position:43% line:-1
+(拍手)
+
+00:33:15.796 --> 00:33:20.234 align:start position:32% line:-2
+デバッグセッションで
+取り上げた秘訣を
+
+00:33:20.334 --> 00:33:22.503 align:start position:32% line:-1
+振り返ってみましょう
+
+00:33:22.770 --> 00:33:27.474 align:start position:18% line:-2
+まず Xcodeの“ビヘイビア”から
+デバッグタブを生成
+
+00:33:27.574 --> 00:33:30.878 align:start position:21% line:-2
+LLDBのexpressionで
+プログラム状態を変更
+
+00:33:30.978 --> 00:33:35.549 align:start position:23% line:-2
+自動再開するブレークポイントで
+実行中にコードを挿入
+
+00:33:35.649 --> 00:33:40.254 align:start position:14% line:-2
+“breakpoint set”続いて
+“one-shot true”を使って―
+
+00:33:40.354 --> 00:33:43.257 align:start position:27% line:-2
+独立したブレークポイントを
+作成
+
+00:33:43.490 --> 00:33:44.992 align:start position:30% line:-1
+アセンブリフレームで―
+
+00:33:45.092 --> 00:33:50.230 align:start position:21% line:-2
+$arg1や$arg2などを使い
+関数の引数を確認
+
+00:33:50.330 --> 00:33:56.003 align:start position:16% line:-2
+命令ポインタかthread jumpで
+コードの行をスキップ
+
+00:33:56.336 --> 00:34:00.541 align:start position:34% line:-2
+ウォッチポイントで
+変数の変更時に停止
+

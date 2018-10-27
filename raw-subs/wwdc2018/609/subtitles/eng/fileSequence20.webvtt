@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.546 --> 00:20:01.216 A:middle
+size, like 32 or 64.
+
+00:20:02.256 --> 00:20:03.426 A:middle
+And now, let's take a look at
+
+00:20:03.426 --> 00:20:04.766 A:middle
+each training iteration.
+
+00:20:06.296 --> 00:20:10.126 A:middle
+In each training iteration, we
+
+00:20:10.126 --> 00:20:11.506 A:middle
+encode a batch of images for
+
+00:20:11.506 --> 00:20:11.906 A:middle
+training.
+
+00:20:13.146 --> 00:20:14.976 A:middle
+But we don't want the CPU to
+
+00:20:14.976 --> 00:20:17.116 A:middle
+wait for the GPU to finish
+
+00:20:17.116 --> 00:20:19.616 A:middle
+running one run of the graph,
+
+00:20:20.036 --> 00:20:22.226 A:middle
+with one batch of images before
+
+00:20:22.226 --> 00:20:24.296 A:middle
+the CPU can start encoding
+
+00:20:24.296 --> 00:20:25.526 A:middle
+commands to the command buffer
+
+00:20:25.526 --> 00:20:26.786 A:middle
+for the next run of the graph.
+
+00:20:27.536 --> 00:20:30.056 A:middle
+We want the CPU and the GPU to
+
+00:20:30.056 --> 00:20:30.976 A:middle
+work concurrently.
+
+00:20:31.466 --> 00:20:32.566 A:middle
+And for this, we're going to use
+
+00:20:32.666 --> 00:20:33.486 A:middle
+double buffering.
+
+00:20:34.106 --> 00:20:36.336 A:middle
+So, in this setup, we're going
+
+00:20:36.336 --> 00:20:38.936 A:middle
+to create a counting semaphore
+
+00:20:39.056 --> 00:20:40.426 A:middle
+with an initial value of 2.
+
+00:20:40.566 --> 00:20:42.266 A:middle
+It's because we want only two
+
+00:20:42.266 --> 00:20:43.586 A:middle
+encodes to be in flight at the
+
+00:20:43.586 --> 00:20:44.146 A:middle
+same time.
+
+00:20:45.726 --> 00:20:46.916 A:middle
+And then when we enter the
+
+00:20:46.916 --> 00:20:48.496 A:middle
+training iteration function,
+
+00:20:48.796 --> 00:20:50.066 A:middle
+we're going to call weight on
+
+00:20:50.066 --> 00:20:50.696 A:middle
+the semaphore.
+
+00:20:50.846 --> 00:20:51.866 A:middle
+That's decrementing it.
+
+00:20:52.656 --> 00:20:54.596 A:middle
+So, if the value of the count
+
+00:20:54.596 --> 00:20:55.816 A:middle
+has already been decremented to
+
+00:20:55.816 --> 00:20:57.016 A:middle
+zero, we wait.
+
+00:20:57.016 --> 00:20:58.126 A:middle
+Otherwise, we continue.
+
+00:20:59.176 --> 00:21:00.966 A:middle
+And then we encode our graph,
+

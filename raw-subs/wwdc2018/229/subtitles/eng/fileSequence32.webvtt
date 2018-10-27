@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.466 --> 00:32:00.206 A:middle
+They remain reference types in
+
+00:32:00.206 --> 00:32:00.516 A:middle
+Swift.
+
+00:32:00.516 --> 00:32:02.556 A:middle
+And so an NSArray of NSViews
+
+00:32:03.186 --> 00:32:04.186 A:middle
+will be lazily bridged.
+
+00:32:04.406 --> 00:32:05.436 A:middle
+The bridging won't happen until
+
+00:32:05.436 --> 00:32:07.626 A:middle
+you first access or try to use
+
+00:32:07.626 --> 00:32:08.806 A:middle
+that array.
+
+00:32:10.556 --> 00:32:13.066 A:middle
+And finally, an NSDictionary
+
+00:32:13.066 --> 00:32:15.336 A:middle
+with keys that are NS strings
+
+00:32:15.336 --> 00:32:17.666 A:middle
+will be bridged eagerly because
+
+00:32:17.666 --> 00:32:18.756 A:middle
+the strings need to come across
+
+00:32:18.846 --> 00:32:21.346 A:middle
+in Swift as value-type strings.
+
+00:32:22.336 --> 00:32:22.996 A:middle
+So now that we know what
+
+00:32:22.996 --> 00:32:24.616 A:middle
+bridging is, how it works, and
+
+00:32:24.616 --> 00:32:26.166 A:middle
+when it happens, we can move on
+
+00:32:26.166 --> 00:32:27.146 A:middle
+to the most important question
+
+00:32:27.146 --> 00:32:28.956 A:middle
+of all, which is when should you
+
+00:32:28.956 --> 00:32:29.586 A:middle
+care about it.
+
+00:32:29.736 --> 00:32:30.506 A:middle
+And the answer is really
+
+00:32:30.506 --> 00:32:31.116 A:middle
+straightforward.
+
+00:32:31.416 --> 00:32:32.466 A:middle
+When you measure it negatively
+
+00:32:32.466 --> 00:32:33.966 A:middle
+impacting your app.
+
+00:32:35.676 --> 00:32:36.906 A:middle
+Specifically, when you take a
+
+00:32:37.026 --> 00:32:37.856 A:middle
+time profile or trace an
+
+00:32:37.856 --> 00:32:39.206 A:middle
+instrument, pay special
+
+00:32:39.206 --> 00:32:40.416 A:middle
+attention to where your code
+
+00:32:40.416 --> 00:32:41.736 A:middle
+crosses between the languages,
+
+00:32:41.946 --> 00:32:42.956 A:middle
+especially when this happens
+
+00:32:42.956 --> 00:32:44.236 A:middle
+inside a loop.
+
+00:32:44.956 --> 00:32:45.736 A:middle
+Some bridging is going to
+
+00:32:45.736 --> 00:32:47.196 A:middle
+happen, and that's totally okay.
+
+00:32:47.596 --> 00:32:48.586 A:middle
+What you're looking for though
+
+00:32:48.976 --> 00:32:50.456 A:middle
+is a disproportionate amount of
+
+00:32:50.526 --> 00:32:51.626 A:middle
+time or a surprising amount of
+
+00:32:51.696 --> 00:32:53.106 A:middle
+time spent in code that you
+
+00:32:53.106 --> 00:32:54.486 A:middle
+didn't write that has the word
+
+00:32:54.486 --> 00:32:55.026 A:middle
+bridge in it.
+
+00:32:56.556 --> 00:32:57.346 A:middle
+Let's look at a concrete
+
+00:32:57.406 --> 00:32:58.376 A:middle
+example.
+
+00:32:58.886 --> 00:33:00.186 A:middle
+Suppose I have a manuscript for
+

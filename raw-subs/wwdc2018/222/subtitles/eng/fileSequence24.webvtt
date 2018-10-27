@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.586 --> 00:24:00.636 A:middle
+both conforming to NSCoding, and
+
+00:24:00.636 --> 00:24:01.846 A:middle
+the superclass adopts
+
+00:24:01.846 --> 00:24:04.066 A:middle
+NSSecureCoding conformance, the
+
+00:24:04.066 --> 00:24:05.516 A:middle
+subclass will inherit that
+
+00:24:05.516 --> 00:24:06.176 A:middle
+conformance.
+
+00:24:06.786 --> 00:24:09.436 A:middle
+Now, the subclass may never have
+
+00:24:09.436 --> 00:24:11.406 A:middle
+had a chance to rewrite its init
+
+00:24:11.406 --> 00:24:12.656 A:middle
+with coder to do the secure
+
+00:24:12.656 --> 00:24:12.986 A:middle
+thing.
+
+00:24:13.756 --> 00:24:14.956 A:middle
+And so, we have an escape hatch
+
+00:24:15.586 --> 00:24:15.676 A:middle
+here.
+
+00:24:16.816 --> 00:24:18.126 A:middle
+The support secure coding
+
+00:24:18.126 --> 00:24:19.386 A:middle
+method, allows you to say,
+
+00:24:19.386 --> 00:24:21.226 A:middle
+actually I don't really support
+
+00:24:21.226 --> 00:24:22.936 A:middle
+secure coding, and you can turn
+
+00:24:22.936 --> 00:24:25.136 A:middle
+this off to say, I'm not ready
+
+00:24:26.456 --> 00:24:26.566 A:middle
+yet.
+
+00:24:26.776 --> 00:24:28.826 A:middle
+Alternatively, if you still say
+
+00:24:28.826 --> 00:24:30.466 A:middle
+yes, we have to make sure that
+
+00:24:30.466 --> 00:24:32.736 A:middle
+you either inherited the full
+
+00:24:32.736 --> 00:24:34.276 A:middle
+conformance to NSSecureCoding
+
+00:24:34.276 --> 00:24:36.256 A:middle
+from the superclass, or that you
+
+00:24:36.256 --> 00:24:38.086 A:middle
+overrode both of the methods to
+
+00:24:38.086 --> 00:24:40.126 A:middle
+indicate yes I really do support
+
+00:24:40.126 --> 00:24:40.796 A:middle
+secure coding.
+
+00:24:40.986 --> 00:24:43.696 A:middle
+There isn't a mismatch here.
+
+00:24:44.166 --> 00:24:45.716 A:middle
+In our case, purchase meets both
+
+00:24:45.716 --> 00:24:47.106 A:middle
+of these requirements and so we
+
+00:24:47.106 --> 00:24:49.186 A:middle
+can safely decode it from the
+
+00:24:49.756 --> 00:24:49.986 A:middle
+archive.
+
+00:24:50.946 --> 00:24:52.826 A:middle
+Now, we go ahead and decode a
+
+00:24:52.886 --> 00:24:54.976 A:middle
+purchase, it itself decodes a
+
+00:24:54.976 --> 00:24:55.416 A:middle
+listing.
+
+00:24:55.416 --> 00:24:56.806 A:middle
+And it can make use of the same
+
+00:24:56.806 --> 00:24:58.206 A:middle
+type of call to indicate that it
+
+00:24:58.206 --> 00:24:58.906 A:middle
+wants a listing.
+
+00:24:59.486 --> 00:25:01.786 A:middle
+When it does that
+

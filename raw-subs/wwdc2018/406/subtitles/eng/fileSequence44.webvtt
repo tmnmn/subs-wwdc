@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.956 --> 00:44:01.496 A:middle
+types are not necessarily the
+
+00:44:01.496 --> 00:44:01.956 A:middle
+same.
+
+00:44:02.566 --> 00:44:04.296 A:middle
+That's really inconvenient here
+
+00:44:04.296 --> 00:44:05.356 A:middle
+because it prevents us from
+
+00:44:05.356 --> 00:44:06.646 A:middle
+writing this nonrecursive
+
+00:44:06.646 --> 00:44:07.116 A:middle
+algorithm.
+
+00:44:07.116 --> 00:44:09.326 A:middle
+And it doesn't really reflect
+
+00:44:09.386 --> 00:44:10.996 A:middle
+how specific collection types
+
+00:44:10.996 --> 00:44:11.506 A:middle
+behave.
+
+00:44:11.506 --> 00:44:12.706 A:middle
+Think about string.
+
+00:44:13.266 --> 00:44:15.376 A:middle
+If you slice a string, you get a
+
+00:44:15.376 --> 00:44:15.996 A:middle
+substring.
+
+00:44:16.446 --> 00:44:18.276 A:middle
+If you slice a substring, you
+
+00:44:18.276 --> 00:44:20.586 A:middle
+don't get a sub-substring.
+
+00:44:21.256 --> 00:44:23.286 A:middle
+You just get another instance of
+
+00:44:23.286 --> 00:44:24.296 A:middle
+the substring type.
+
+00:44:25.206 --> 00:44:27.196 A:middle
+So let's go back to how this
+
+00:44:27.196 --> 00:44:28.646 A:middle
+slice adapter works to
+
+00:44:28.646 --> 00:44:29.816 A:middle
+generalize this notion.
+
+00:44:30.306 --> 00:44:31.426 A:middle
+We have a collection.
+
+00:44:31.426 --> 00:44:32.426 A:middle
+We're going to call it Self,
+
+00:44:32.776 --> 00:44:34.606 A:middle
+that we've sliced from I to J.
+
+00:44:35.536 --> 00:44:36.576 A:middle
+Now that's going to build
+
+00:44:36.736 --> 00:44:37.996 A:middle
+something of the type slice of
+
+00:44:37.996 --> 00:44:38.506 A:middle
+Self.
+
+00:44:38.746 --> 00:44:40.676 A:middle
+Which is just a view on the
+
+00:44:40.676 --> 00:44:42.146 A:middle
+underlying Self collection.
+
+00:44:42.686 --> 00:44:45.276 A:middle
+If we then slice the slice, we
+
+00:44:45.276 --> 00:44:47.676 A:middle
+get a slice of slice of self.
+
+00:44:47.866 --> 00:44:50.586 A:middle
+Which is a view of a view on
+
+00:44:50.586 --> 00:44:52.576 A:middle
+that same underlying Self
+
+00:44:52.576 --> 00:44:53.246 A:middle
+collection.
+
+00:44:53.906 --> 00:44:55.646 A:middle
+So this is our infinite tower of
+
+00:44:55.646 --> 00:44:56.876 A:middle
+types in practice.
+
+00:44:57.346 --> 00:44:58.956 A:middle
+However, it doesn't have to be
+
+00:44:58.956 --> 00:44:59.446 A:middle
+this way.
+

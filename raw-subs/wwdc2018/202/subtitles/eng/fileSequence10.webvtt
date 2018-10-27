@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.716 --> 00:10:00.346 A:middle
+where the load starts right
+
+00:10:00.346 --> 00:10:02.066 A:middle
+here, we end up seeing that
+
+00:10:02.066 --> 00:10:03.676 A:middle
+we've ramped the CPU far more
+
+00:10:03.676 --> 00:10:05.746 A:middle
+frequently or, far more quickly,
+
+00:10:05.806 --> 00:10:07.206 A:middle
+to the exact amount of perform
+
+00:10:07.206 --> 00:10:08.736 A:middle
+it needs to make sure that we
+
+00:10:08.736 --> 00:10:10.426 A:middle
+hit that deadline and don't drop
+
+00:10:10.476 --> 00:10:10.976 A:middle
+frames.
+
+00:10:12.286 --> 00:10:13.806 A:middle
+This has caused a really great
+
+00:10:13.806 --> 00:10:14.976 A:middle
+improvement across many
+
+00:10:14.976 --> 00:10:16.226 A:middle
+different scrolling scenarios
+
+00:10:16.226 --> 00:10:16.976 A:middle
+around iOS.
+
+00:10:20.956 --> 00:10:24.086 A:middle
+So all of your applications will
+
+00:10:24.086 --> 00:10:25.666 A:middle
+get all of this enhancements,
+
+00:10:25.666 --> 00:10:27.146 A:middle
+both of them and a number of
+
+00:10:27.146 --> 00:10:28.526 A:middle
+others, for free with no
+
+00:10:28.526 --> 00:10:29.686 A:middle
+additional work on your part,
+
+00:10:30.156 --> 00:10:31.266 A:middle
+but there are a couple of things
+
+00:10:31.266 --> 00:10:32.466 A:middle
+that you can do to make sure
+
+00:10:32.466 --> 00:10:33.666 A:middle
+that you get the most out of
+
+00:10:33.666 --> 00:10:34.136 A:middle
+both of them.
+
+00:10:34.996 --> 00:10:36.216 A:middle
+So first of all, if you haven't
+
+00:10:36.216 --> 00:10:37.666 A:middle
+already adopted that tableView
+
+00:10:37.666 --> 00:10:39.116 A:middle
+cell prefetching API or the
+
+00:10:39.116 --> 00:10:40.596 A:middle
+Collection View one, definitely
+
+00:10:40.596 --> 00:10:42.096 A:middle
+look into that because having
+
+00:10:42.096 --> 00:10:43.336 A:middle
+your data ready is one of the
+
+00:10:43.336 --> 00:10:44.596 A:middle
+best things you can do to make
+
+00:10:44.596 --> 00:10:46.076 A:middle
+sure that loading cells is as
+
+00:10:46.076 --> 00:10:46.836 A:middle
+quick as possible.
+
+00:10:47.406 --> 00:10:50.506 A:middle
+Of course, it's also important
+
+00:10:50.506 --> 00:10:51.856 A:middle
+that you profile your full
+
+00:10:51.856 --> 00:10:53.116 A:middle
+critical sections of your cell
+
+00:10:53.116 --> 00:10:55.186 A:middle
+loading and reduce that demand
+
+00:10:55.186 --> 00:10:56.076 A:middle
+as much as you can.
+
+00:10:56.076 --> 00:10:58.966 A:middle
+iOS 12 will now try to match the
+
+00:10:58.966 --> 00:11:00.416 A:middle
+CPU performance to the needs of
+

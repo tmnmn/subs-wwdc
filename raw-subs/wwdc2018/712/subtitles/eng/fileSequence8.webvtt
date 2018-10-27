@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:00.216 --> 00:08:01.426 A:middle
+So it's also worth noting that
+
+00:08:01.426 --> 00:08:03.066 A:middle
+with object detection, you can
+
+00:08:03.066 --> 00:08:05.196 A:middle
+reference or detect multiple
+
+00:08:05.196 --> 00:08:07.486 A:middle
+images, multiple objects within
+
+00:08:07.486 --> 00:08:07.996 A:middle
+each image.
+
+00:08:07.996 --> 00:08:11.086 A:middle
+So I mentioned that we'd be
+
+00:08:11.086 --> 00:08:12.816 A:middle
+loading our data into this
+
+00:08:12.816 --> 00:08:14.246 A:middle
+tabular data structure called an
+
+00:08:14.246 --> 00:08:14.686 A:middle
+SFrame.
+
+00:08:15.406 --> 00:08:16.716 A:middle
+And in this example, we will end
+
+00:08:16.716 --> 00:08:17.926 A:middle
+up with two columns.
+
+00:08:18.136 --> 00:08:19.326 A:middle
+The first column will contain
+
+00:08:19.326 --> 00:08:19.836 A:middle
+your images.
+
+00:08:20.466 --> 00:08:22.086 A:middle
+The second column will contain
+
+00:08:22.086 --> 00:08:24.000 A:middle
+your annotations in JSON format.
+
+00:08:27.476 --> 00:08:29.306 A:middle
+Let's or by now you're probably
+
+00:08:29.306 --> 00:08:30.886 A:middle
+wondering what is an SFrame?
+
+00:08:30.886 --> 00:08:32.506 A:middle
+So let's take a step back and,
+
+00:08:32.506 --> 00:08:34.706 A:middle
+and learn more about it.
+
+00:08:34.706 --> 00:08:36.596 A:middle
+SFrame is a [inaudible] tabular
+
+00:08:36.596 --> 00:08:37.376 A:middle
+data structure.
+
+00:08:37.566 --> 00:08:39.006 A:middle
+And what this means is you can
+
+00:08:39.395 --> 00:08:40.976 A:middle
+create machine learning models
+
+00:08:40.976 --> 00:08:41.806 A:middle
+on your laptop.
+
+00:08:41.966 --> 00:08:43.015 A:middle
+Even if you have enormous
+
+00:08:43.015 --> 00:08:45.226 A:middle
+amounts of data.
+
+00:08:45.366 --> 00:08:46.656 A:middle
+SFrame allows you to perform
+
+00:08:46.656 --> 00:08:48.676 A:middle
+common data manipulation tasks.
+
+00:08:49.026 --> 00:08:50.816 A:middle
+Like joining two SFrames or
+
+00:08:50.816 --> 00:08:52.686 A:middle
+filtering to specific rows or
+
+00:08:52.686 --> 00:08:53.476 A:middle
+columns of data.
+
+00:08:55.296 --> 00:08:57.046 A:middle
+SFrames let you work with all
+
+00:08:57.046 --> 00:08:57.976 A:middle
+different data types.
+
+00:08:58.926 --> 00:08:59.986 A:middle
+And once you have your data
+

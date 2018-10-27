@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.986 --> 00:45:01.136 A:middle
+printHierarchy, we can get an
+
+00:45:01.136 --> 00:45:02.746 A:middle
+output of all of our presenting
+
+00:45:02.746 --> 00:45:04.826 A:middle
+viewControllers, our presented
+
+00:45:04.826 --> 00:45:06.926 A:middle
+viewControllers, our
+
+00:45:06.976 --> 00:45:08.246 A:middle
+parentViewControllers and
+
+00:45:08.246 --> 00:45:10.466 A:middle
+childViewControllers, and even
+
+00:45:10.466 --> 00:45:11.966 A:middle
+our presentationControllers.
+
+00:45:12.306 --> 00:45:13.616 A:middle
+It's Controllerpalooza.
+
+00:45:14.436 --> 00:45:16.466 A:middle
+So, let's run printHierarchy in
+
+00:45:16.466 --> 00:45:17.296 A:middle
+our screenshot UI.
+
+00:45:19.176 --> 00:45:20.906 A:middle
+Here we can see our
+
+00:45:20.906 --> 00:45:22.136 A:middle
+viewController hierarchy.
+
+00:45:22.476 --> 00:45:23.506 A:middle
+And, when we inspect the
+
+00:45:23.506 --> 00:45:24.716 A:middle
+viewController that we're having
+
+00:45:24.716 --> 00:45:26.476 A:middle
+the problem with, we can see
+
+00:45:26.476 --> 00:45:28.096 A:middle
+that it's stuck in the appearing
+
+00:45:28.096 --> 00:45:28.486 A:middle
+state.
+
+00:45:29.366 --> 00:45:30.936 A:middle
+So, we had missed a callback.
+
+00:45:31.136 --> 00:45:32.666 A:middle
+And so, we need to look into our
+
+00:45:32.666 --> 00:45:34.256 A:middle
+app to where we're calling this
+
+00:45:34.286 --> 00:45:35.986 A:middle
+callback, and then we found the
+
+00:45:35.986 --> 00:45:36.396 A:middle
+issue.
+
+00:45:37.516 --> 00:45:38.136 A:middle
+So, great.
+
+00:45:38.576 --> 00:45:39.956 A:middle
+Using these methods, you can
+
+00:45:39.956 --> 00:45:41.926 A:middle
+identify view and viewController
+
+00:45:41.926 --> 00:45:42.476 A:middle
+issues.
+
+00:45:43.156 --> 00:45:44.366 A:middle
+But, sometimes you have a more
+
+00:45:44.366 --> 00:45:46.156 A:middle
+fundamental issue with your app.
+
+00:45:46.976 --> 00:45:48.716 A:middle
+And, for that we can use some
+
+00:45:48.716 --> 00:45:50.326 A:middle
+great state debugging tips that
+
+00:45:50.326 --> 00:45:50.986 A:middle
+we have for you.
+
+00:45:52.016 --> 00:45:55.066 A:middle
+LLDB's expression command can
+
+00:45:55.066 --> 00:45:56.766 A:middle
+let you run arbitrary code in
+
+00:45:56.766 --> 00:45:57.296 A:middle
+the debugger.
+
+00:45:58.066 --> 00:45:58.786 A:middle
+Think about that.
+
+00:45:58.786 --> 00:46:00.676 A:middle
+Any code that you can run in the
+

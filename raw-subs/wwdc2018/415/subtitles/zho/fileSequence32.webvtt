@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.285 --> 00:32:02.256 align:middle line:-2
+他为大家讲解Swift和
+Swift对Clang模块的使用
+
+00:32:09.096 --> 00:32:09.963 align:middle line:-1
+谢谢 Jurgen
+
+00:32:11.331 --> 00:32:13.300 align:middle line:-1
+我们现在要具体讲解
+
+00:32:13.767 --> 00:32:16.770 align:middle line:-2
+Swift和构建系统
+如何并肩作战
+
+00:32:17.037 --> 00:32:19.506 align:middle line:-1
+在项目中查找声明
+
+00:32:21.475 --> 00:32:23.377 align:middle line:-2
+先总结下
+Jurgen的演讲
+
+00:32:23.844 --> 00:32:26.914 align:middle line:-2
+Clang单独编译
+每个Objective-C文件
+
+00:32:27.781 --> 00:32:31.652 align:middle line:-2
+如果你要在另一个文件夹
+查找一个类
+
+00:32:32.419 --> 00:32:35.789 align:middle line:-1
+你要导入声明那个类的头文件
+
+00:32:37.457 --> 00:32:41.061 align:middle line:-1
+Swift的设计不需要写入头文件
+
+00:32:41.562 --> 00:32:44.598 align:middle line:-1
+为了方便初学者上手应用
+
+00:32:44.865 --> 00:32:49.036 align:middle line:-2
+避免了在不同文件里
+重复一个声明
+
+00:32:50.370 --> 00:32:52.039 align:middle line:-1
+但这就意味着编译器
+
+00:32:52.105 --> 00:32:54.408 align:middle line:-1
+要做些额外的记录工作
+
+00:32:54.975 --> 00:32:57.211 align:middle line:-2
+下面就讲讲
+记录工作怎么做
+
+00:32:59.713 --> 00:33:01.949 align:middle line:-1
+回到PetWall app
+

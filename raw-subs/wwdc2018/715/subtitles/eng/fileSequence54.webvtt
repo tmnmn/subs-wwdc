@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.736 --> 00:54:01.646 A:middle
+which you connect initially over
+
+00:54:01.646 --> 00:54:02.856 A:middle
+the cellular network, and then
+
+00:54:02.856 --> 00:54:04.496 A:middle
+the user walks into a building
+
+00:54:04.736 --> 00:54:06.246 A:middle
+and now they have WiFi access.
+
+00:54:07.126 --> 00:54:08.356 A:middle
+In this case, your connection,
+
+00:54:08.596 --> 00:54:09.706 A:middle
+the original one, is totally
+
+00:54:09.706 --> 00:54:10.076 A:middle
+fine.
+
+00:54:10.166 --> 00:54:12.106 A:middle
+You're still viable, but you now
+
+00:54:12.106 --> 00:54:13.256 A:middle
+also have a better path
+
+00:54:13.256 --> 00:54:13.736 A:middle
+available.
+
+00:54:14.296 --> 00:54:17.706 A:middle
+In this case, again, if you can
+
+00:54:17.706 --> 00:54:19.216 A:middle
+migrate your connection, this is
+
+00:54:19.216 --> 00:54:20.826 A:middle
+probably a good time to try to
+
+00:54:21.216 --> 00:54:23.046 A:middle
+establish a new connection and
+
+00:54:23.046 --> 00:54:23.906 A:middle
+move your data over.
+
+00:54:24.536 --> 00:54:26.326 A:middle
+That will save the user their
+
+00:54:26.926 --> 00:54:28.316 A:middle
+data bill.
+
+00:54:28.526 --> 00:54:30.386 A:middle
+But, continue to use the
+
+00:54:30.386 --> 00:54:31.876 A:middle
+original connection until you
+
+00:54:31.876 --> 00:54:32.636 A:middle
+have the new one fully
+
+00:54:32.636 --> 00:54:33.216 A:middle
+established.
+
+00:54:34.276 --> 00:54:35.496 A:middle
+Just to show how this looks in
+
+00:54:35.496 --> 00:54:37.896 A:middle
+code, we have the viability
+
+00:54:37.896 --> 00:54:39.286 A:middle
+update handler that you can set
+
+00:54:39.286 --> 00:54:40.366 A:middle
+in your connection, we'll give
+
+00:54:40.366 --> 00:54:41.426 A:middle
+you a boolean back to let you
+
+00:54:41.426 --> 00:54:42.776 A:middle
+know whenever you're viable or
+
+00:54:42.776 --> 00:54:45.866 A:middle
+not, and a better path update
+
+00:54:45.866 --> 00:54:47.006 A:middle
+handler to let you know when
+
+00:54:47.006 --> 00:54:48.796 A:middle
+there's a better path available
+
+00:54:49.176 --> 00:54:49.976 A:middle
+or is no longer available.
+
+00:54:53.236 --> 00:54:55.486 A:middle
+And now the better solution to
+
+00:54:55.546 --> 00:54:56.806 A:middle
+all of this to handle network
+
+00:54:56.836 --> 00:54:58.296 A:middle
+mobility is something that we've
+
+00:54:58.296 --> 00:54:59.816 A:middle
+talked about in previous years,
+

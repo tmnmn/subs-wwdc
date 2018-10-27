@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.196 --> 00:11:00.366 A:middle
+you are archiving, basically
+
+00:11:00.366 --> 00:11:01.286 A:middle
+allows you to specify what
+
+00:11:01.286 --> 00:11:03.226 A:middle
+classes are expected, that way
+
+00:11:03.226 --> 00:11:04.916 A:middle
+it can be an explicit error if
+
+00:11:04.916 --> 00:11:05.766 A:middle
+those classes are not
+
+00:11:05.766 --> 00:11:06.946 A:middle
+encountered in the archive.
+
+00:11:08.126 --> 00:11:09.106 A:middle
+Now, the way we did secure
+
+00:11:09.106 --> 00:11:13.626 A:middle
+coding, the secure coding was an
+
+00:11:13.626 --> 00:11:14.436 A:middle
+optional feature.
+
+00:11:14.906 --> 00:11:16.766 A:middle
+But, we now have new API's that
+
+00:11:16.766 --> 00:11:18.886 A:middle
+enable both secure coding as a
+
+00:11:18.886 --> 00:11:20.376 A:middle
+default behavior, and as a
+
+00:11:20.376 --> 00:11:21.866 A:middle
+bonus, they enable error
+
+00:11:21.866 --> 00:11:22.556 A:middle
+returns.
+
+00:11:23.076 --> 00:11:24.526 A:middle
+Our archiver and unarchiver
+
+00:11:24.526 --> 00:11:25.836 A:middle
+API's worked with exceptions,
+
+00:11:25.836 --> 00:11:27.016 A:middle
+but of course we prefer error
+
+00:11:27.016 --> 00:11:27.576 A:middle
+returns.
+
+00:11:27.576 --> 00:11:29.606 A:middle
+And, the new API's enabled error
+
+00:11:29.606 --> 00:11:31.006 A:middle
+return behaviors by default.
+
+00:11:32.296 --> 00:11:34.086 A:middle
+So, I'll show you the API's
+
+00:11:34.086 --> 00:11:35.616 A:middle
+NSKeyedUnarchiver, since that's
+
+00:11:35.616 --> 00:11:36.546 A:middle
+the most interesting.
+
+00:11:37.126 --> 00:11:38.506 A:middle
+Here is an NSKeyedUnarchiver.
+
+00:11:38.886 --> 00:11:39.896 A:middle
+One new method is in it.
+
+00:11:39.976 --> 00:11:40.866 A:middle
+It simply creates a
+
+00:11:40.866 --> 00:11:43.296 A:middle
+keyedUnarchiver, securely, and
+
+00:11:43.296 --> 00:11:44.876 A:middle
+in a way will return errors.
+
+00:11:45.736 --> 00:11:47.736 A:middle
+Two other new methods are these
+
+00:11:47.736 --> 00:11:49.296 A:middle
+convenience API's,
+
+00:11:49.296 --> 00:11:51.506 A:middle
+unarchivedObject(ofClasses from,
+
+00:11:51.756 --> 00:11:53.556 A:middle
+and unarchivedObject(ofClass
+
+00:11:53.646 --> 00:11:53.986 A:middle
+from.
+
+00:11:54.256 --> 00:11:56.086 A:middle
+These basically unarchive a
+
+00:11:56.086 --> 00:11:57.466 A:middle
+single object and return it.
+
+00:11:57.926 --> 00:11:59.046 A:middle
+They do it securely, and they
+
+00:11:59.046 --> 00:12:01.246 A:middle
+will return an error if some
+

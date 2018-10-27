@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.719 --> 00:17:03.757 align:start position:27% line:-2
+しかしCPUがエンコードに
+要する時間は
+
+00:17:03.857 --> 00:17:08.494 align:start position:25% line:-2
+GPUの操作にかかる時間より
+はるかに短いのです
+
+00:17:08.962 --> 00:17:10.931 align:start position:32% line:-1
+この事実を利用します
+
+00:17:11.265 --> 00:17:16.537 align:start position:27% line:-2
+エンコードを いくつかの
+コマンドバッファに分けます
+
+00:17:16.637 --> 00:17:21.575 align:start position:27% line:-2
+分かれたコマンドバッファは
+迅速にエンコードされ
+
+00:17:21.675 --> 00:17:24.711 align:start position:29% line:-1
+すぐにGPUに渡されます
+
+00:17:25.579 --> 00:17:26.780 align:start position:39% line:-1
+こうすれば―
+
+00:17:27.981 --> 00:17:34.922 align:start position:23% line:-2
+エンコードと並行して
+GPUがフレームを処理できます
+
+00:17:35.022 --> 00:17:41.295 align:start position:27% line:-2
+GPUが処理に使える時間も
+増やすことができました
+
+00:17:41.862 --> 00:17:47.034 align:start position:27% line:-2
+１フレームあたりの処理量も
+大幅に増やせます
+
+00:17:48.068 --> 00:17:52.139 align:start position:29% line:-2
+では ダイヤグラム全体を
+見てみましょう
+
+00:17:53.340 --> 00:17:58.278 align:start position:29% line:-2
+CPUとGPUを
+最大限に活用できています
+
+00:17:58.712 --> 00:18:03.183 align:start position:30% line:-2
+この時点で
+かなり よい見本ですが
+

@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.339 --> 00:19:02.910 align:start position:34% line:-2
+今回はコード補完を
+使っていません
+
+00:19:03.010 --> 00:19:06.613 align:start position:18% line:-2
+これは私がCore MLで使っている
+唯一のコードですし
+
+00:19:06.713 --> 00:19:09.516 align:start position:29% line:-1
+自分で調整できるからです
+
+00:19:09.616 --> 00:19:14.254 align:start position:30% line:-2
+コード補完を使うことも
+効果的だと思います
+
+00:19:14.788 --> 00:19:20.661 align:start position:11% line:-2
+こうしてVision Core MLモデルと
+リクエストを構築しました
+
+00:19:20.761 --> 00:19:26.633 align:start position:27% line:-2
+リクエストが返されると
+完了ハンドラが実行されます
+
+00:19:26.733 --> 00:19:31.205 align:start position:34% line:-2
+どんな分類結果が
+出てきたか確認して
+
+00:19:31.738 --> 00:19:34.007 align:start position:32% line:-1
+しきい値を設定します
+
+00:19:34.174 --> 00:19:38.846 align:start position:30% line:-2
+ここでは実験的に
+0.98と設定しました
+
+00:19:38.946 --> 00:19:42.349 align:start position:29% line:-2
+正解の自信が
+98％あるという意味です
+
+00:19:43.383 --> 00:19:49.256 align:start position:23% line:-2
+この設定により
+不確実な分類結果を除去できます
+
+00:19:49.356 --> 00:19:51.525 align:start position:36% line:-1
+あとで説明します
+
+00:19:52.893 --> 00:19:54.928 align:start position:29% line:-1
+リクエストがそろいました
+
+00:19:55.495 --> 00:19:59.466 align:start position:32% line:-2
+これらを実行する際に
+関数を設定して
+
+00:19:59.566 --> 00:20:02.269 align:start position:29% line:-1
+対象の画像を解析させます
+

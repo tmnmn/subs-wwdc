@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.696 --> 00:26:00.686 A:middle
+really need it.
+
+00:26:01.296 --> 00:26:02.746 A:middle
+If your app is actually a
+
+00:26:02.746 --> 00:26:04.296 A:middle
+debugger, then you will use the
+
+00:26:04.296 --> 00:26:05.576 A:middle
+second entitlement in the list.
+
+00:26:06.466 --> 00:26:07.776 A:middle
+And then finally, in the few
+
+00:26:07.776 --> 00:26:09.176 A:middle
+rare occasions where your app
+
+00:26:09.766 --> 00:26:11.476 A:middle
+needs to rely on the DYLD
+
+00:26:11.476 --> 00:26:12.736 A:middle
+environment variables to modify
+
+00:26:12.736 --> 00:26:12.976 A:middle
+its BFU [phonetic]
+
+00:26:13.096 --> 00:26:15.756 A:middle
+at runtime, then you can use the
+
+00:26:15.756 --> 00:26:19.856 A:middle
+last entitlement in this list.
+
+00:26:19.856 --> 00:26:20.766 A:middle
+And finally, your resource
+
+00:26:20.766 --> 00:26:23.636 A:middle
+access: This runtime requires
+
+00:26:23.636 --> 00:26:25.356 A:middle
+you to be transparent about the
+
+00:26:25.356 --> 00:26:27.196 A:middle
+kind of data classing that your
+
+00:26:27.196 --> 00:26:28.246 A:middle
+app needs to access.
+
+00:26:28.886 --> 00:26:30.176 A:middle
+So if your app attempts to
+
+00:26:30.176 --> 00:26:32.736 A:middle
+access any data that is part of
+
+00:26:32.736 --> 00:26:34.216 A:middle
+one of the protected categories
+
+00:26:34.216 --> 00:26:35.426 A:middle
+that Kelly described in his
+
+00:26:35.526 --> 00:26:37.616 A:middle
+previous section, and you don't
+
+00:26:37.616 --> 00:26:38.856 A:middle
+have the appropriate entitlement
+
+00:26:38.906 --> 00:26:40.296 A:middle
+signed in your app, then the
+
+00:26:40.296 --> 00:26:41.346 A:middle
+system will automatically
+
+00:26:41.346 --> 00:26:42.446 A:middle
+terminate it.
+
+00:26:44.096 --> 00:26:45.786 A:middle
+We have entitlements that map to
+
+00:26:45.786 --> 00:26:47.156 A:middle
+every single category that Kelly
+
+00:26:47.156 --> 00:26:47.646 A:middle
+described.
+
+00:26:48.906 --> 00:26:50.986 A:middle
+But remember that just adding
+
+00:26:50.986 --> 00:26:52.256 A:middle
+this entitlement is not enough.
+
+00:26:53.616 --> 00:26:54.656 A:middle
+You also need to add a purpose
+
+00:26:54.656 --> 00:26:55.436 A:middle
+string if you are linking
+
+00:26:55.436 --> 00:26:56.586 A:middle
+against the 10.14 SDK.
+
+00:26:56.586 --> 00:26:58.876 A:middle
+And finally, it does not
+
+00:26:58.876 --> 00:27:00.306 A:middle
+automatically grant you access
+

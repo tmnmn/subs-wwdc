@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.471 --> 00:09:01.308 align:start position:32% line:-2
+入力画像から
+９つのサンプルを作り
+
+00:09:01.408 --> 00:09:03.343 align:start position:32% line:-1
+赤のチャネルのみ使用
+
+00:09:04.111 --> 00:09:09.183 align:start position:20% line:-2
+９つの値を平均化し
+vec4のピクセル値を返すという―
+
+00:09:09.283 --> 00:09:12.286 align:start position:34% line:-2
+従来の方法で
+書き込みを行います
+
+00:09:14.087 --> 00:09:16.924 align:start position:30% line:-2
+処理を速くするため
+Metalに変換します
+
+00:09:17.024 --> 00:09:18.192 align:start position:36% line:-1
+作業はシンプルで
+
+00:09:18.292 --> 00:09:22.396 align:start position:29% line:-2
+従来のCIカーネル言語の
+コードから始めます
+
+00:09:22.496 --> 00:09:26.233 align:start position:32% line:-2
+コードを置き換えて
+Metalベースの―
+
+00:09:26.333 --> 00:09:29.169 align:start position:29% line:-2
+新しいCIカーネル言語に
+更新します
+
+00:09:29.269 --> 00:09:34.708 align:start position:23% line:-2
+デスティネーションパラメータを
+カーネルに追加しました
+
+00:09:34.808 --> 00:09:40.280 align:start position:25% line:-2
+これはカーネルのシェーダ内の
+デスティネーション座標を
+
+00:09:40.380 --> 00:09:42.416 align:start position:30% line:-1
+確認する場合に重要です
+
+00:09:42.983 --> 00:09:46.386 align:start position:25% line:-2
+最新式のシンタックスを用いて
+サンプリングするため
+
+00:09:46.487 --> 00:09:50.257 align:start position:20% line:-2
+“s.sample”と
+“s.transform”とします
+
+00:09:51.058 --> 00:09:56.930 align:start position:20% line:-2
+それから従来のvec4とvec2の
+パラメータタイプを
+
+00:09:57.030 --> 00:09:59.366 align:start position:21% line:-1
+float4とfloat2に変更
+

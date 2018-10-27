@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.746 --> 00:30:02.146 A:middle
+So for example, if you're only
+
+00:30:02.146 --> 00:30:04.406 A:middle
+interested in large houses, you
+
+00:30:04.406 --> 00:30:05.956 A:middle
+can create an indicator variable
+
+00:30:05.956 --> 00:30:06.896 A:middle
+and filter it out.
+
+00:30:08.116 --> 00:30:09.846 A:middle
+There a lot of operations that
+
+00:30:09.846 --> 00:30:11.656 A:middle
+data table support.
+
+00:30:11.656 --> 00:30:13.686 A:middle
+I urge you to try it out in
+
+00:30:13.686 --> 00:30:14.626 A:middle
+Xcode playground.
+
+00:30:14.766 --> 00:30:15.196 A:middle
+They're fun.
+
+00:30:15.196 --> 00:30:19.406 A:middle
+Now once you have data in data
+
+00:30:19.406 --> 00:30:20.706 A:middle
+table, you would like to do the
+
+00:30:20.746 --> 00:30:21.426 A:middle
+training on it.
+
+00:30:22.846 --> 00:30:24.416 A:middle
+Create ML supports a large
+
+00:30:24.416 --> 00:30:25.766 A:middle
+number of algorithms such as
+
+00:30:25.766 --> 00:30:29.006 A:middle
+Boosted Tree Regression, Random
+
+00:30:29.006 --> 00:30:30.146 A:middle
+Forest, etcetera.
+
+00:30:31.256 --> 00:30:33.526 A:middle
+And all of these algorithms are
+
+00:30:33.526 --> 00:30:34.506 A:middle
+represented by their class.
+
+00:30:34.506 --> 00:30:37.936 A:middle
+In order to train your model,
+
+00:30:37.936 --> 00:30:39.356 A:middle
+you only have to write one line
+
+00:30:39.356 --> 00:30:39.816 A:middle
+of code.
+
+00:30:40.246 --> 00:30:41.786 A:middle
+Basically, you tell what is the
+
+00:30:41.826 --> 00:30:44.036 A:middle
+target and where you're getting
+
+00:30:44.036 --> 00:30:45.466 A:middle
+the data and which is the
+
+00:30:45.466 --> 00:30:46.886 A:middle
+algorithm you are instantiating.
+
+00:30:47.456 --> 00:30:49.006 A:middle
+So in this case, let's just say
+
+00:30:49.006 --> 00:30:49.846 A:middle
+you are running Linear
+
+00:30:49.846 --> 00:30:52.586 A:middle
+Regression or Regularized Linear
+
+00:30:52.586 --> 00:30:53.816 A:middle
+Regression, you just actually
+
+00:30:53.816 --> 00:30:56.676 A:middle
+tell it that the data is house
+
+00:30:56.676 --> 00:30:57.876 A:middle
+data and the column is price.
+
+00:30:58.666 --> 00:31:03.016 A:middle
+If you do Boosted Tree
+

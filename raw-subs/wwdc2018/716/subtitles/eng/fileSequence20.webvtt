@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.776 --> 00:20:00.326 A:middle
+calculate landmarks and populate
+
+00:20:00.326 --> 00:20:01.036 A:middle
+the landmarks field.
+
+00:20:02.246 --> 00:20:03.726 A:middle
+Now, if you look now, you will
+
+00:20:03.726 --> 00:20:05.246 A:middle
+notice that the UID in most
+
+00:20:05.246 --> 00:20:06.356 A:middle
+cases is the same.
+
+00:20:07.286 --> 00:20:07.796 A:middle
+Why is that?
+
+00:20:08.266 --> 00:20:09.366 A:middle
+Because we're talking about the
+
+00:20:09.366 --> 00:20:10.026 A:middle
+same face.
+
+00:20:10.026 --> 00:20:11.916 A:middle
+It's the same processing step,
+
+00:20:11.956 --> 00:20:14.046 A:middle
+if you will.
+
+00:20:14.266 --> 00:20:15.526 A:middle
+Where would you use implicit
+
+00:20:15.526 --> 00:20:16.326 A:middle
+versus explicit?
+
+00:20:17.406 --> 00:20:18.516 A:middle
+Well, if your application is
+
+00:20:18.516 --> 00:20:20.566 A:middle
+very simple, you would probably
+
+00:20:20.726 --> 00:20:22.006 A:middle
+want to opt for implicit way.
+
+00:20:22.406 --> 00:20:23.046 A:middle
+It's very simple.
+
+00:20:23.046 --> 00:20:24.106 A:middle
+You create a single request;
+
+00:20:24.106 --> 00:20:25.466 A:middle
+everything else is done on your
+
+00:20:25.466 --> 00:20:26.606 A:middle
+behalf.
+
+00:20:28.706 --> 00:20:30.236 A:middle
+If, on the other hand, your
+
+00:20:30.236 --> 00:20:31.686 A:middle
+application is more complex, for
+
+00:20:31.686 --> 00:20:33.106 A:middle
+example, you want to process
+
+00:20:33.106 --> 00:20:35.076 A:middle
+faces first, detect them, then
+
+00:20:35.076 --> 00:20:35.916 A:middle
+do some filtering.
+
+00:20:36.006 --> 00:20:37.186 A:middle
+Let's say you don't care about
+
+00:20:37.186 --> 00:20:38.366 A:middle
+faces on the periphery, or you
+
+00:20:38.366 --> 00:20:39.986 A:middle
+want to just focus on the ones
+
+00:20:39.986 --> 00:20:42.046 A:middle
+that are in the center, you can
+
+00:20:42.046 --> 00:20:44.026 A:middle
+do that step, and then you can
+
+00:20:44.026 --> 00:20:45.576 A:middle
+do landmarks on the remaining
+
+00:20:45.576 --> 00:20:46.436 A:middle
+set of faces.
+
+00:20:47.276 --> 00:20:48.476 A:middle
+In this case, you probably want
+
+00:20:48.476 --> 00:20:49.566 A:middle
+to use the explicit version
+
+00:20:50.626 --> 00:20:52.566 A:middle
+because, in this case, landmarks
+
+00:20:52.656 --> 00:20:54.236 A:middle
+detector is not going to rerun
+
+00:20:54.306 --> 00:20:54.936 A:middle
+face detector inside.
+

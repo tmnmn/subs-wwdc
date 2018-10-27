@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.921 --> 00:27:03.490 align:start position:20% line:-1
+File Promiseの受信です
+
+00:27:03.590 --> 00:27:06.627 align:start position:27% line:-1
+次は送信を見ていきましょう
+
+00:27:07.094 --> 00:27:10.964 align:start position:34% line:-2
+データがローカルに
+存在しない場合は
+
+00:27:11.198 --> 00:27:15.836 align:start position:27% line:-2
+アプリケーションに
+これを実装してみてください
+
+00:27:16.437 --> 00:27:18.939 align:start position:27% line:-1
+では実際にAPIを見ながら
+
+00:27:19.773 --> 00:27:21.842 align:start position:32% line:-1
+説明していきましょう
+
+00:27:25.646 --> 00:27:30.317 align:start position:7% line:-2
+まずNSFilePromiseProviderの
+インスタンスを作成します
+
+00:27:32.553 --> 00:27:35.255 align:start position:20% line:-1
+Promisedファイルごとにです
+
+00:27:35.355 --> 00:27:40.160 align:start position:12% line:-2
+Pasteboardに書き込む
+filePromiseProviderには
+
+00:27:40.260 --> 00:27:43.964 align:start position:27% line:-2
+ファイルの型とデリゲートが
+必要です
+
+00:27:44.198 --> 00:27:47.835 align:start position:27% line:-2
+デリゲートは重いファイルを
+処理してくれます
+
+00:27:48.402 --> 00:27:52.639 align:start position:25% line:-2
+デリゲートに対するメソッドは
+３つだけです
+
+00:27:53.040 --> 00:27:56.109 align:start position:7% line:-2
+１つ目はDrag Destinationによって
+呼び出され
+
+00:27:56.710 --> 00:27:59.780 align:start position:32% line:-1
+ファイル名を返します
+
+00:27:59.913 --> 00:28:04.184 align:start position:16% line:-2
+２つ目は
+operationQueueを返します
+

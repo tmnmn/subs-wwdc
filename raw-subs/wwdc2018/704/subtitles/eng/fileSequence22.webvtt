@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.106 --> 00:22:00.856 A:middle
+to handle them.
+
+00:22:01.056 --> 00:22:02.756 A:middle
+First things first, you should
+
+00:22:02.756 --> 00:22:04.236 A:middle
+add your Transaction Observer to
+
+00:22:04.236 --> 00:22:05.576 A:middle
+the default gaming queue as
+
+00:22:05.636 --> 00:22:06.806 A:middle
+early as possible in the life
+
+00:22:06.806 --> 00:22:08.066 A:middle
+cycle of your app.
+
+00:22:09.456 --> 00:22:10.956 A:middle
+This is a common issue we see
+
+00:22:10.956 --> 00:22:12.176 A:middle
+where apps don't add a
+
+00:22:12.176 --> 00:22:13.416 A:middle
+Transaction Observer until the
+
+00:22:13.416 --> 00:22:14.616 A:middle
+user navigates to the in-app
+
+00:22:14.656 --> 00:22:16.216 A:middle
+purchase UI or even until they
+
+00:22:16.216 --> 00:22:17.136 A:middle
+begin a transaction.
+
+00:22:18.206 --> 00:22:19.996 A:middle
+In fact we recommend adding it
+
+00:22:20.376 --> 00:22:21.586 A:middle
+right in the application
+
+00:22:21.586 --> 00:22:22.336 A:middle
+didFinishLaunching
+
+00:22:22.336 --> 00:22:23.316 A:middle
+WithOptions method of your
+
+00:22:23.316 --> 00:22:23.866 A:middle
+AppDelegate.
+
+00:22:25.616 --> 00:22:26.946 A:middle
+Well why we recommend this.
+
+00:22:27.746 --> 00:22:29.016 A:middle
+Well the Transaction Observer is
+
+00:22:29.016 --> 00:22:30.276 A:middle
+StoreKit's way of communicating
+
+00:22:30.276 --> 00:22:32.366 A:middle
+changes in transactions the user
+
+00:22:32.366 --> 00:22:34.186 A:middle
+is making in their app and
+
+00:22:34.186 --> 00:22:35.236 A:middle
+pretty much all of these changes
+
+00:22:35.236 --> 00:22:35.726 A:middle
+are important.
+
+00:22:35.726 --> 00:22:37.636 A:middle
+And it's a good user experience
+
+00:22:37.636 --> 00:22:38.796 A:middle
+and generally good business to
+
+00:22:38.796 --> 00:22:39.706 A:middle
+make sure you handle any
+
+00:22:39.706 --> 00:22:40.736 A:middle
+transaction promptly.
+
+00:22:42.596 --> 00:22:43.776 A:middle
+There are a few cases when
+
+00:22:43.776 --> 00:22:44.656 A:middle
+transactions can become
+
+00:22:44.656 --> 00:22:45.146 A:middle
+interrupted.
+
+00:22:46.426 --> 00:22:47.626 A:middle
+For example, if the user leaves
+
+00:22:47.626 --> 00:22:48.356 A:middle
+your app in the middle of a
+
+00:22:48.356 --> 00:22:49.846 A:middle
+transaction, maybe they got
+
+00:22:49.846 --> 00:22:51.076 A:middle
+caught playing games in class.
+
+00:22:52.446 --> 00:22:53.526 A:middle
+Your app could be terminated by
+
+00:22:53.526 --> 00:22:55.076 A:middle
+the system later on or even by
+
+00:22:55.076 --> 00:22:56.886 A:middle
+the user and then when it's
+
+00:22:56.886 --> 00:22:58.456 A:middle
+opened back up again StoreKit
+
+00:22:58.456 --> 00:22:59.346 A:middle
+won't know to continue the
+
+00:22:59.346 --> 00:23:00.676 A:middle
+transaction until you add the
+

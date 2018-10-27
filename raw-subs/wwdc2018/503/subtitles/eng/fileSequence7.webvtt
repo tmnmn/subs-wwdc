@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.296 --> 00:07:00.436 A:middle
+So we have the portrait depth on
+
+00:07:00.436 --> 00:07:02.206 A:middle
+the left and the portrait matte
+
+00:07:02.206 --> 00:07:03.046 A:middle
+on the right-hand side and you
+
+00:07:03.046 --> 00:07:04.116 A:middle
+can just see how fine the
+
+00:07:04.116 --> 00:07:04.796 A:middle
+details are.
+
+00:07:05.366 --> 00:07:07.496 A:middle
+And we'll do a zoom crop in just
+
+00:07:07.496 --> 00:07:09.896 A:middle
+a minute so that you can better
+
+00:07:09.896 --> 00:07:12.126 A:middle
+appreciate just how high quality
+
+00:07:12.126 --> 00:07:13.066 A:middle
+it is.
+
+00:07:13.836 --> 00:07:15.686 A:middle
+Then next thing we do is we
+
+00:07:15.686 --> 00:07:16.586 A:middle
+resize the images.
+
+00:07:17.426 --> 00:07:18.966 A:middle
+As you see the RGB and the depth
+
+00:07:18.966 --> 00:07:20.596 A:middle
+data vary greatly in size.
+
+00:07:22.006 --> 00:07:23.516 A:middle
+So we resize our images and
+
+00:07:23.516 --> 00:07:24.426 A:middle
+let's have a look at them
+
+00:07:24.426 --> 00:07:25.126 A:middle
+side-by-side.
+
+00:07:25.436 --> 00:07:26.686 A:middle
+So we have our RGB and our depth
+
+00:07:26.686 --> 00:07:27.536 A:middle
+data on the right-hand side.
+
+00:07:27.946 --> 00:07:29.076 A:middle
+During the first part of this
+
+00:07:29.076 --> 00:07:30.876 A:middle
+demo I'll focus on depth data,
+
+00:07:31.326 --> 00:07:32.806 A:middle
+then we'll see how things get
+
+00:07:32.806 --> 00:07:33.946 A:middle
+much, much simpler when you use
+
+00:07:33.946 --> 00:07:34.846 A:middle
+a portrait effects matte.
+
+00:07:35.596 --> 00:07:37.806 A:middle
+So the effect I'm going to be
+
+00:07:37.806 --> 00:07:39.296 A:middle
+working on today is depth
+
+00:07:39.296 --> 00:07:41.346 A:middle
+thresholding and essentially
+
+00:07:41.346 --> 00:07:42.426 A:middle
+what I'll be doing is computing
+
+00:07:42.426 --> 00:07:43.576 A:middle
+a histogram of the gray level
+
+00:07:43.576 --> 00:07:45.316 A:middle
+values in my portrait depth.
+
+00:07:45.316 --> 00:07:47.596 A:middle
+And I'll be applying a threshold
+
+00:07:47.596 --> 00:07:48.536 A:middle
+or a clipping point in that
+
+00:07:48.536 --> 00:07:49.636 A:middle
+histogram so that everything
+
+00:07:49.636 --> 00:07:51.516 A:middle
+becomes zero or one depending if
+
+00:07:51.516 --> 00:07:52.986 A:middle
+it's sitting below or above that
+
+00:07:52.986 --> 00:07:53.426 A:middle
+threshold.
+
+00:07:54.346 --> 00:07:55.886 A:middle
+Then we'll be closing holes in
+
+00:07:55.886 --> 00:07:57.336 A:middle
+the image by using morphological
+
+00:07:57.336 --> 00:07:59.116 A:middle
+closing operations and then
+
+00:07:59.116 --> 00:08:01.386 A:middle
+blurring the mask so that we get
+

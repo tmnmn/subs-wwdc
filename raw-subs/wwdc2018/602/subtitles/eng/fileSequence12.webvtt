@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:56.636 --> 00:12:00.076 A:middle
+technology to share with every
+
+00:12:00.076 --> 00:12:00.436 A:middle
+user.
+
+00:12:02.156 --> 00:12:04.336 A:middle
+For example, for sharing you can
+
+00:12:04.406 --> 00:12:06.706 A:middle
+use air drop or multipeer
+
+00:12:06.706 --> 00:12:08.336 A:middle
+connectivity that relies on
+
+00:12:08.336 --> 00:12:10.136 A:middle
+local Bluetooth or WiFi
+
+00:12:10.136 --> 00:12:10.636 A:middle
+connection.
+
+00:12:10.636 --> 00:12:13.186 A:middle
+So it means that you don't
+
+00:12:13.186 --> 00:12:14.296 A:middle
+really need an internet
+
+00:12:14.296 --> 00:12:16.226 A:middle
+connection for this feature to
+
+00:12:16.746 --> 00:12:16.846 A:middle
+work.
+
+00:12:22.416 --> 00:12:24.226 A:middle
+:15 So let's see how ARKit API
+
+00:12:24.226 --> 00:12:25.856 A:middle
+makes it very easy for you to
+
+00:12:26.406 --> 00:12:28.606 A:middle
+retrieve and load World Map.
+
+00:12:30.736 --> 00:12:33.516 A:middle
+On your AR session object, you
+
+00:12:33.516 --> 00:12:35.576 A:middle
+will need to call get current
+
+00:12:35.576 --> 00:12:39.666 A:middle
+world map at any point in time.
+
+00:12:39.836 --> 00:12:41.146 A:middle
+This method comes with a
+
+00:12:41.146 --> 00:12:43.846 A:middle
+completion handler in which it
+
+00:12:43.846 --> 00:12:46.586 A:middle
+will return you and ARWorldMap
+
+00:12:48.446 --> 00:12:48.656 A:middle
+object.
+
+00:12:49.006 --> 00:12:50.676 A:middle
+Note also that it can also
+
+00:12:50.676 --> 00:12:52.746 A:middle
+return and other in case World
+
+00:12:52.746 --> 00:12:53.846 A:middle
+Map is not available.
+
+00:12:54.186 --> 00:12:55.676 A:middle
+So it's important to handle this
+
+00:12:55.676 --> 00:12:57.486 A:middle
+error in your application code.
+
+00:12:59.116 --> 00:13:03.146 A:middle
+So once you have ARWorldMap, you
+

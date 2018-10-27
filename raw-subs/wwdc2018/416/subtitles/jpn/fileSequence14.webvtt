@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:56.603 --> 00:14:00.807 align:start position:23% line:-2
+最新のleaksは
+リークされたオブジェクト以外に
+
+00:14:01.808 --> 00:14:05.612 align:start position:29% line:-2
+それらが属するサイクルも
+表示されます
+
+00:14:05.913 --> 00:14:08.582 align:start position:27% line:-2
+mallocスタックログが
+プロセス上で可能なら
+
+00:14:08.682 --> 00:14:11.385 align:start position:25% line:-2
+ルートノードの
+バックトレースも提供されます
+
+00:14:14.354 --> 00:14:17.691 align:start position:23% line:-1
+メモリはどこへ行くのでしょう？
+
+00:14:18.058 --> 00:14:22.329 align:start position:29% line:-2
+vmmapを調べると
+ヒープは本当に大きいです
+
+00:14:22.563 --> 00:14:27.234 align:start position:21% line:-2
+ヒープツールはプロセス上すべての
+オブジェクト配置情報を提供します
+
+00:14:27.334 --> 00:14:31.772 align:start position:29% line:-2
+同じ種類のオブジェクトや
+配置の追跡に役立ちます
+
+00:14:34.274 --> 00:14:39.046 align:start position:18% line:-2
+Xcodeがメモリリソースの例外を
+キャッチした際のmemgraphです
+
+00:14:39.146 --> 00:14:40.714 align:start position:34% line:-1
+ヒープを調査します
+
+00:14:40.814 --> 00:14:46.119 align:start position:29% line:-2
+するとオブジェクト情報
+クラス名などが分かります
+
+00:14:47.087 --> 00:14:48.489 align:start position:32% line:-1
+オブジェクトの数量や
+
+00:14:49.490 --> 00:14:53.694 align:start position:36% line:-2
+平均サイズや
+合計サイズなども
+
+00:14:54.895 --> 00:14:59.833 align:start position:32% line:-2
+小さなオブジェクトも
+多数 表示されますが
+
+00:14:59.933 --> 00:15:02.236 align:start position:29% line:-1
+それは問題ではありません
+

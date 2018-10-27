@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:01.021 --> 00:27:02.656 align:start position:38% line:-1
+これは危険です
+
+00:27:02.856 --> 00:27:06.527 align:start position:34% line:-2
+攻撃者はコピー中の
+文字列と同様に―
+
+00:27:06.627 --> 00:27:09.897 align:start position:27% line:-1
+戻りアドレスも制御できます
+
+00:27:10.164 --> 00:27:15.903 align:start position:21% line:-2
+よって次の動作まで制御できるため
+安全性を脅かします
+
+00:27:18.739 --> 00:27:24.645 align:start position:11% line:-2
+この問題を検出するため
+Address Sanitizerを使います
+
+00:27:24.845 --> 00:27:27.981 align:start position:29% line:-1
+これで簡単に修正できます
+
+00:27:28.382 --> 00:27:33.821 align:start position:23% line:-2
+重要なのはサイズを
+把握しているstrncpyです
+
+00:27:33.921 --> 00:27:37.257 align:start position:21% line:-1
+より高レベルなAPIも効果的です
+
+00:27:38.959 --> 00:27:42.729 align:start position:27% line:-2
+このバグはリリースビルドに
+残る場合があり
+
+00:27:43.030 --> 00:27:48.135 align:start position:14% line:-2
+対策として
+Stack Protectorを使います
+
+00:27:49.736 --> 00:27:54.341 align:start position:25% line:-2
+スタックフレームの順序を変え
+カナリーを加えます
+
+00:27:55.609 --> 00:27:57.644 align:start position:36% line:-1
+コードを書く時に
+
+00:27:58.378 --> 00:28:04.051 align:start position:27% line:-2
+returnの上のコードで
+カナリーが有効か確認します
+

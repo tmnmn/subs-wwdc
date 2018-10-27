@@ -1,0 +1,80 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.273 --> 00:54:02.142 align:middle line:-1
+不如用零行动替代
+
+00:54:02.609 --> 00:54:03.777 align:middle line:-1
+最后是分支
+
+00:54:04.845 --> 00:54:06.246 align:middle line:-1
+那么分支指令…
+
+00:54:07.581 --> 00:54:08.415 align:middle line:-1
+然后…
+
+00:54:09.850 --> 00:54:11.218 align:middle line:-1
+要怎么做？
+
+00:54:11.285 --> 00:54:12.886 align:middle line:-1
+因为这个未定义符号？
+
+00:54:13.120 --> 00:54:14.855 align:middle line:-1
+我们要继续浏览
+
+00:54:14.922 --> 00:54:17.124 align:middle line:-1
+所有已经导入的.o文件
+
+00:54:18.325 --> 00:54:20.127 align:middle line:-1
+首先是过去的静态库
+
+00:54:20.194 --> 00:54:22.496 align:middle line:-1
+这是PetSupport.a
+
+00:54:22.963 --> 00:54:24.865 align:middle line:-1
+PetSupport.a里面
+
+00:54:25.566 --> 00:54:28.468 align:middle line:-2
+有一些文件
+包括PetSounds.o
+
+00:54:29.503 --> 00:54:33.574 align:middle line:-2
+大家能看到
+playSound对应的符号
+
+00:54:34.741 --> 00:54:35.642 align:middle line:-1
+把它拉入
+
+00:54:38.378 --> 00:54:41.048 align:middle line:-2
+PetCare.o
+不能被拉入
+
+00:54:41.381 --> 00:54:43.851 align:middle line:-1
+因为这个.o文件没有符号
+
+00:54:43.917 --> 00:54:45.953 align:middle line:-1
+能被app的其他部分
+
+00:54:46.019 --> 00:54:46.987 align:middle line:-1
+引用
+
+00:54:48.555 --> 00:54:50.624 align:middle line:-2
+所有我们把它拉入
+现在需要
+
+00:54:51.859 --> 00:54:53.193 align:middle line:-2
+_open
+但没有定义
+
+00:54:53.260 --> 00:54:54.895 align:middle line:-1
+你看到
+
+00:54:56.096 --> 00:54:57.664 align:middle line:-1
+拉入的对话已变成
+
+00:54:57.731 --> 00:54:59.466 align:middle line:-1
+open$stub
+
+00:54:59.766 --> 00:55:01.001 align:middle line:-1
+为什么呢？
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.856 --> 00:17:00.326 A:middle
+how the label's data is laid out
+
+00:17:00.326 --> 00:17:00.836 A:middle
+in memory.
+
+00:17:01.246 --> 00:17:03.886 A:middle
+And then you need to create an
+
+00:17:03.886 --> 00:17:05.665 A:middle
+MPSCNNLossLabel object, with
+
+00:17:05.665 --> 00:17:06.415 A:middle
+this descriptor.
+
+00:17:06.976 --> 00:17:09.445 A:middle
+And then you create a batch of
+
+00:17:09.445 --> 00:17:11.586 A:middle
+these for training, and when the
+
+00:17:11.586 --> 00:17:13.066 A:middle
+GPU's done running the graph,
+
+00:17:13.506 --> 00:17:15.236 A:middle
+your batch of labels will
+
+00:17:15.236 --> 00:17:16.675 A:middle
+contain the per image loss
+
+00:17:16.675 --> 00:17:18.626 A:middle
+values for the batch.
+
+00:17:18.955 --> 00:17:20.006 A:middle
+And you can inspect these
+
+00:17:20.006 --> 00:17:21.496 A:middle
+values, or you can compute a
+
+00:17:21.496 --> 00:17:22.955 A:middle
+single value across the batch
+
+00:17:22.955 --> 00:17:23.976 A:middle
+and inspect that value.
+
+00:17:27.356 --> 00:17:28.946 A:middle
+So, now that we have a training
+
+00:17:28.946 --> 00:17:30.626 A:middle
+graph and we talked about how to
+
+00:17:30.796 --> 00:17:32.706 A:middle
+provide inputs to our graph,
+
+00:17:32.706 --> 00:17:34.186 A:middle
+let's talk about how to provide
+
+00:17:34.186 --> 00:17:35.726 A:middle
+weights to the graph nodes that
+
+00:17:35.726 --> 00:17:36.316 A:middle
+require weights.
+
+00:17:38.336 --> 00:17:40.606 A:middle
+The only way to provide weights
+
+00:17:40.606 --> 00:17:42.546 A:middle
+to convolution fully connected,
+
+00:17:42.786 --> 00:17:45.456 A:middle
+batch normalization and instance
+
+00:17:45.456 --> 00:17:47.356 A:middle
+normalization nodes, is through
+
+00:17:47.356 --> 00:17:48.966 A:middle
+data source provider protocols.
+
+00:17:50.146 --> 00:17:52.216 A:middle
+This is an example of how to
+
+00:17:52.216 --> 00:17:54.116 A:middle
+create a convolution node, with
+
+00:17:54.116 --> 00:17:55.166 A:middle
+a data source provider.
+
+00:17:56.206 --> 00:17:58.636 A:middle
+You need to implement a class
+
+00:17:58.636 --> 00:18:00.106 A:middle
+that conforms to the protocol.
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.196 --> 00:07:00.626 A:middle
+Another option is to include all
+
+00:07:00.626 --> 00:07:02.566 A:middle
+key identifiers in the master
+
+00:07:02.566 --> 00:07:05.106 A:middle
+playlist as session keys while
+
+00:07:05.106 --> 00:07:06.996 A:middle
+authoring the content and use
+
+00:07:06.996 --> 00:07:08.496 A:middle
+preloads eligible content keys
+
+00:07:08.496 --> 00:07:09.746 A:middle
+property on
+
+00:07:09.746 --> 00:07:10.676 A:middle
+AVAssetResourceLoader.
+
+00:07:12.126 --> 00:07:14.206 A:middle
+At this point I would like to
+
+00:07:14.206 --> 00:07:15.486 A:middle
+point out that we have a
+
+00:07:15.486 --> 00:07:17.446 A:middle
+dedicated session about
+
+00:07:17.446 --> 00:07:19.006 A:middle
+optimizing HLS performance in
+
+00:07:19.006 --> 00:07:20.506 A:middle
+general, not just key delivery.
+
+00:07:21.706 --> 00:07:24.816 A:middle
+You should definitely check that
+
+00:07:25.396 --> 00:07:25.606 A:middle
+out.
+
+00:07:26.526 --> 00:07:27.936 A:middle
+Moving on from preloading,
+
+00:07:28.156 --> 00:07:29.956 A:middle
+AVContentKeySession could also
+
+00:07:29.956 --> 00:07:31.916 A:middle
+help you scale your live
+
+00:07:31.916 --> 00:07:32.426 A:middle
+offering.
+
+00:07:33.176 --> 00:07:34.226 A:middle
+Are you wondering how?
+
+00:07:35.226 --> 00:07:36.796 A:middle
+Well, you could use
+
+00:07:36.796 --> 00:07:38.536 A:middle
+AVContentKeySession to disperse
+
+00:07:38.536 --> 00:07:40.386 A:middle
+key loading requests from
+
+00:07:40.386 --> 00:07:41.896 A:middle
+clients that are streaming your
+
+00:07:41.896 --> 00:07:42.686 A:middle
+live content.
+
+00:07:44.036 --> 00:07:46.346 A:middle
+Typically, live streams rotate
+
+00:07:46.806 --> 00:07:49.026 A:middle
+keys periodically in order to
+
+00:07:49.026 --> 00:07:50.516 A:middle
+add an extra layer of protection
+
+00:07:50.516 --> 00:07:51.456 A:middle
+for the content.
+
+00:07:51.886 --> 00:07:55.126 A:middle
+It is easy to imagine that these
+
+00:07:55.126 --> 00:07:56.676 A:middle
+keys appear at the exact same
+
+00:07:56.676 --> 00:07:58.616 A:middle
+time when clients refresh live
+
+00:07:58.616 --> 00:07:59.296 A:middle
+playlists.
+
+00:07:59.666 --> 00:08:02.026 A:middle
+When that happens, millions of
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.416 --> 00:04:01.546 A:middle
+In this case, the orange color
+
+00:04:01.546 --> 00:04:03.496 A:middle
+you can see means that there are
+
+00:04:03.496 --> 00:04:05.336 A:middle
+more runnable threads available
+
+00:04:05.536 --> 00:04:06.486 A:middle
+than CPU cores.
+
+00:04:06.886 --> 00:04:08.206 A:middle
+So there is some contingency.
+
+00:04:09.076 --> 00:04:10.746 A:middle
+These will offer a great view of
+
+00:04:10.786 --> 00:04:11.376 A:middle
+the system.
+
+00:04:12.816 --> 00:04:14.226 A:middle
+There's a couple of great talks
+
+00:04:14.226 --> 00:04:15.696 A:middle
+that talk about this instrument
+
+00:04:15.696 --> 00:04:16.326 A:middle
+in more depth.
+
+00:04:17.086 --> 00:04:20.216 A:middle
+Please follow-up on them.
+
+00:04:20.446 --> 00:04:22.626 A:middle
+Next on our list is Metal System
+
+00:04:22.626 --> 00:04:24.406 A:middle
+Trace, our GPU profiling tool.
+
+00:04:25.046 --> 00:04:26.576 A:middle
+It offers a great view of the
+
+00:04:26.576 --> 00:04:27.326 A:middle
+graphic stack.
+
+00:04:28.236 --> 00:04:29.306 A:middle
+All the way from the Metal
+
+00:04:29.306 --> 00:04:31.346 A:middle
+Framework down to the display.
+
+00:04:32.686 --> 00:04:34.586 A:middle
+In particular, we will want to
+
+00:04:34.586 --> 00:04:36.256 A:middle
+pay close attention to the GPU
+
+00:04:37.426 --> 00:04:38.106 A:middle
+[inaudible], which is split in
+
+00:04:38.106 --> 00:04:40.826 A:middle
+vertex, fragment, and compute if
+
+00:04:40.826 --> 00:04:41.646 A:middle
+your game uses it.
+
+00:04:42.846 --> 00:04:44.286 A:middle
+Notice as well that the display
+
+00:04:44.286 --> 00:04:45.626 A:middle
+track will be the starting point
+
+00:04:45.626 --> 00:04:46.896 A:middle
+of many of our investigations.
+
+00:04:47.656 --> 00:04:49.196 A:middle
+We will identify a long frame or
+
+00:04:49.196 --> 00:04:50.686 A:middle
+a starter and we will work it
+
+00:04:50.686 --> 00:04:51.666 A:middle
+all the way up from there.
+
+00:04:52.186 --> 00:04:53.436 A:middle
+So it's a very natural place to
+
+00:04:53.436 --> 00:04:53.776 A:middle
+start.
+
+00:04:54.266 --> 00:04:57.916 A:middle
+There is a lot of information
+
+00:04:57.916 --> 00:04:59.106 A:middle
+about the tool because it really
+
+00:04:59.106 --> 00:05:00.416 A:middle
+is a very powerful tool.
+

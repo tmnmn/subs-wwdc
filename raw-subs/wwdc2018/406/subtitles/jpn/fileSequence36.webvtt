@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:57.524 --> 00:36:01.762 align:start position:32% line:-2
+次に 値が中央要素の
+前に来るかを確認し
+
+00:36:01.862 --> 00:36:05.833 align:start position:29% line:-2
+挿入位置が
+前半か後半かを見極めます
+
+00:36:06.433 --> 00:36:10.470 align:start position:29% line:-2
+この例では
+値は中央要素より上なので
+
+00:36:10.571 --> 00:36:16.310 align:start position:23% line:-2
+中央より後ろのインデックスから
+Sliceを取っていきます
+
+00:36:16.443 --> 00:36:20.514 align:start position:4% line:-2
+次にsortedInsertionPoint（ofを
+再帰的に呼びます
+
+00:36:20.614 --> 00:36:26.320 align:start position:29% line:-2
+これが 範囲を絞っていく
+分割統治アルゴリズムです
+
+00:36:26.687 --> 00:36:32.626 align:start position:27% line:-2
+さて これを使うには
+スライシング構文が必要です
+
+00:36:32.993 --> 00:36:35.062 align:start position:27% line:-1
+全コレクションに可能なので
+
+00:36:35.162 --> 00:36:42.102 align:start position:18% line:-2
+インデックスを整え Sliceを生む
+汎用操作を導入してください
+
+00:36:42.870 --> 00:36:47.941 align:start position:30% line:-2
+Sliceアダプタは
+全コレクションに働き―
+
+00:36:48.042 --> 00:36:54.281 align:start position:27% line:-2
+土台のコレクションの要素を
+表示するとお話ししましたね
+
+00:36:54.481 --> 00:36:58.018 align:start position:29% line:-2
+それで
+このアルゴリズムが使え―
+
+00:36:58.118 --> 00:37:02.456 align:start position:34% line:-2
+スライシング構文も
+提供できるのです
+

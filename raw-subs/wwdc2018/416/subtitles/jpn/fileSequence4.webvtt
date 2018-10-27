@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:01.008 --> 00:04:05.012 align:start position:30% line:-2
+ダーティはAppによる
+書込みがあるメモリです
+
+00:04:05.612 --> 00:04:07.781 align:start position:21% line:-2
+ダーティメモリにはオブジェクトや
+文字列や配列などの
+
+00:04:07.881 --> 00:04:10.851 align:start position:29% line:-2
+mallocで定義された
+あらゆるものがあります
+
+00:04:12.619 --> 00:04:15.789 align:start position:34% line:-2
+またデコードされた
+イメージバッファや
+
+00:04:17.391 --> 00:04:18.992 align:start position:29% line:-1
+フレームワークもそうです
+
+00:04:19.259 --> 00:04:23.730 align:start position:21% line:-2
+フレームワークには通常のデータと
+ダーティな部分がありますが
+
+00:04:24.231 --> 00:04:27.301 align:start position:23% line:-1
+ダーティとして認識されています
+
+00:04:27.935 --> 00:04:30.637 align:start position:36% line:-2
+フレームワークは
+２度登場しました
+
+00:04:30.737 --> 00:04:35.642 align:start position:23% line:-2
+フレームワークをリンクするには
+両方のメモリを使うのです
+
+00:04:35.742 --> 00:04:38.478 align:start position:29% line:-2
+フレームワークのリンクの
+話をすると
+
+00:04:38.579 --> 00:04:40.447 align:start position:25% line:-1
+このフレームワークの整備には
+
+00:04:40.781 --> 00:04:43.483 align:start position:27% line:-2
+Singletonsと
+グローバルイニシャライザが
+
+00:04:43.584 --> 00:04:46.320 align:start position:23% line:-1
+ダーティメモリ削減に役立ちます
+
+00:04:46.420 --> 00:04:50.290 align:start position:20% line:-2
+Singletonsは生成された後
+必ずメモリに起生し
+
+00:04:50.424 --> 00:04:54.962 align:start position:23% line:-2
+イニシャライザはリンク時
+クラスのロード時に実行されます
+
+00:04:57.631 --> 00:05:00.033 align:start position:29% line:-1
+次は圧縮されたメモリです
+

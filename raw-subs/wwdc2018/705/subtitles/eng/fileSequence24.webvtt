@@ -1,0 +1,141 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.056 --> 00:24:00.616 A:middle
+The third tip here is around
+
+00:24:00.616 --> 00:24:01.626 A:middle
+subscription management.
+
+00:24:03.046 --> 00:24:04.406 A:middle
+You can offer the user upgrades
+
+00:24:04.406 --> 00:24:05.376 A:middle
+and downgrades between
+
+00:24:05.376 --> 00:24:07.286 A:middle
+subscription tiers right in your
+
+00:24:07.286 --> 00:24:07.676 A:middle
+app's UI.
+
+00:24:08.516 --> 00:24:09.656 A:middle
+And to do this you can actually
+
+00:24:09.656 --> 00:24:10.796 A:middle
+treat it just like selling an
+
+00:24:10.796 --> 00:24:11.686 A:middle
+initial subscription.
+
+00:24:12.326 --> 00:24:14.646 A:middle
+Now if the subscription you're
+
+00:24:14.646 --> 00:24:15.996 A:middle
+selling the user is part of the
+
+00:24:15.996 --> 00:24:17.456 A:middle
+same subscription group, so it's
+
+00:24:17.456 --> 00:24:18.786 A:middle
+a different tier than the one
+
+00:24:18.786 --> 00:24:19.846 A:middle
+the user has already subscribed
+
+00:24:19.916 --> 00:24:22.656 A:middle
+to you can basically just create
+
+00:24:22.746 --> 00:24:23.966 A:middle
+an SKPayment just like you would
+
+00:24:23.966 --> 00:24:24.906 A:middle
+if you were selling them an
+
+00:24:24.906 --> 00:24:25.706 A:middle
+initial subscription.
+
+00:24:26.026 --> 00:24:27.306 A:middle
+And when you do this StoreKit
+
+00:24:27.306 --> 00:24:28.336 A:middle
+actually handles the fact that
+
+00:24:28.336 --> 00:24:29.786 A:middle
+it's an upgrade or downgrade for
+
+00:24:29.786 --> 00:24:29.966 A:middle
+you.
+
+00:24:30.636 --> 00:24:31.846 A:middle
+So you don't have to worry about
+
+00:24:31.846 --> 00:24:32.866 A:middle
+that user being subscribed
+
+00:24:32.866 --> 00:24:33.276 A:middle
+twice.
+
+00:24:34.346 --> 00:24:35.576 A:middle
+Now if you don't want to provide
+
+00:24:35.576 --> 00:24:37.246 A:middle
+your own UI for upgrades and
+
+00:24:37.246 --> 00:24:38.626 A:middle
+downgrades in your app you can
+
+00:24:38.626 --> 00:24:39.976 A:middle
+also just provide a link out to
+
+00:24:39.976 --> 00:24:41.436 A:middle
+the App Store subscription
+
+00:24:41.436 --> 00:24:42.106 A:middle
+management screen.
+
+00:24:42.106 --> 00:24:43.356 A:middle
+We provide a link for you to be
+
+00:24:43.356 --> 00:24:44.356 A:middle
+able to get to this screen
+
+00:24:44.476 --> 00:24:46.276 A:middle
+directly from your app and here
+
+00:24:46.276 --> 00:24:47.676 A:middle
+the user can upgrade, downgrade
+
+00:24:47.676 --> 00:24:48.486 A:middle
+or even cancel their
+
+00:24:48.486 --> 00:24:49.006 A:middle
+subscription.
+
+00:24:50.276 --> 00:24:51.546 A:middle
+Now your app is often the first
+
+00:24:51.636 --> 00:24:52.676 A:middle
+place a user will go for
+
+00:24:52.676 --> 00:24:53.786 A:middle
+subscription management, to be
+
+00:24:53.786 --> 00:24:54.856 A:middle
+able to upgrade, downgrade or
+
+00:24:54.856 --> 00:24:55.226 A:middle
+cancel.
+
+00:24:55.226 --> 00:24:56.296 A:middle
+So it's a really good idea to
+
+00:24:56.296 --> 00:24:57.836 A:middle
+give some kind of link maybe in
+
+00:24:57.836 --> 00:24:59.486 A:middle
+your app's settings for a user
+
+00:24:59.486 --> 00:25:00.426 A:middle
+to be able to do this.
+

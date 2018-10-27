@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.106 --> 00:37:00.476 A:middle
+structure of those primitive
+
+00:37:00.476 --> 00:37:02.006 A:middle
+values, we made sure that it was
+
+00:37:02.006 --> 00:37:03.346 A:middle
+valid to work with them to turn
+
+00:37:03.346 --> 00:37:05.026 A:middle
+them into our own model types.
+
+00:37:06.476 --> 00:37:07.966 A:middle
+By validating the semantics and
+
+00:37:07.966 --> 00:37:09.216 A:middle
+relationships between those
+
+00:37:09.216 --> 00:37:10.846 A:middle
+model types, we made sure that
+
+00:37:10.846 --> 00:37:12.166 A:middle
+they were valid to work with and
+
+00:37:12.166 --> 00:37:13.076 A:middle
+that they were data we could
+
+00:37:13.766 --> 00:37:13.946 A:middle
+trust.
+
+00:37:15.216 --> 00:37:16.746 A:middle
+So, where to go from here?
+
+00:37:18.116 --> 00:37:19.136 A:middle
+Well, now that you know all of
+
+00:37:19.136 --> 00:37:20.346 A:middle
+this, I encourage you to go and
+
+00:37:20.346 --> 00:37:21.926 A:middle
+look at your code and do just
+
+00:37:21.926 --> 00:37:22.286 A:middle
+this.
+
+00:37:23.386 --> 00:37:26.426 A:middle
+Validate data at every stage in
+
+00:37:26.426 --> 00:37:27.476 A:middle
+the lifecycle of that data.
+
+00:37:28.046 --> 00:37:29.406 A:middle
+Check for types and nullability.
+
+00:37:29.646 --> 00:37:30.916 A:middle
+But more importantly, range, and
+
+00:37:30.916 --> 00:37:32.186 A:middle
+length, and domain-specific
+
+00:37:32.186 --> 00:37:32.926 A:middle
+applications.
+
+00:37:33.516 --> 00:37:35.956 A:middle
+If you have NSCoding types,
+
+00:37:36.246 --> 00:37:37.736 A:middle
+audit those types and earn your
+
+00:37:37.796 --> 00:37:38.816 A:middle
+NSSecureCoding badge.
+
+00:37:38.936 --> 00:37:40.186 A:middle
+And don't just earn it, use it.
+
+00:37:40.286 --> 00:37:41.786 A:middle
+Turn on secure coding wherever
+
+00:37:41.786 --> 00:37:42.146 A:middle
+you can.
+
+00:37:43.656 --> 00:37:45.596 A:middle
+And lastly, for new data types,
+
+00:37:45.666 --> 00:37:47.556 A:middle
+adopt Codable where possible and
+
+00:37:47.556 --> 00:37:48.826 A:middle
+make sure to perform that
+
+00:37:48.826 --> 00:37:49.456 A:middle
+validation.
+
+00:37:50.246 --> 00:37:51.556 A:middle
+Make sure you're only ever
+
+00:37:51.556 --> 00:37:53.826 A:middle
+working with data you can trust.
+
+00:37:54.936 --> 00:37:56.026 A:middle
+For more information about
+
+00:37:56.026 --> 00:37:57.926 A:middle
+Codable, specifically, see last
+
+00:37:57.926 --> 00:37:58.976 A:middle
+year's talk about What's New in
+
+00:37:58.976 --> 00:37:59.486 A:middle
+Foundation.
+
+00:37:59.716 --> 00:38:01.076 A:middle
+But if you have more questions
+

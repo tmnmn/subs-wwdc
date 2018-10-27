@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.739 --> 00:34:05.379 align:start position:21% line:-2
+テキストが複数行ある場合は
+テーブルビューのマージンを調節し
+
+00:34:05.479 --> 00:34:10.250 align:start position:30% line:-2
+可読領域の中で各要素を
+並べるといいでしょう
+
+00:34:10.617 --> 00:34:16.690 align:start position:0% line:-2
+それを行えるAPIが cellLayout
+MarginsFollowReadableWidthです
+
+00:34:16.790 --> 00:34:20.594 align:start position:20% line:-2
+falseの場合 テーブルビューは
+システムのマージンを使い
+
+00:34:20.694 --> 00:34:24.164 align:start position:23% line:-1
+trueにすると余白が入ります
+
+00:34:24.965 --> 00:34:31.505 align:start position:23% line:-2
+このプロパティのデフォルト値は
+iOS 12で変更されました
+
+00:34:31.772 --> 00:34:37.210 align:start position:20% line:-2
+以前はデフォルトでtrueでしたが
+現在はfalseです
+
+00:34:37.744 --> 00:34:42.382 align:start position:25% line:-2
+特にスマートフォンにおいては
+影響はないはずです
+
+00:34:42.482 --> 00:34:46.687 align:start position:27% line:-2
+通常はデフォルト値のままを
+お勧めします
+
+00:34:46.786 --> 00:34:53.126 align:start position:20% line:-2
+テーブルビューが多くの行を
+含みそうならtrueとしてください
+
+00:34:54.695 --> 00:34:56.228 align:start position:16% line:-1
+Interface Builderでは
+
+00:34:56.330 --> 00:35:00.167 align:start position:7% line:-2
+“Follow Readable Width”に
+チェックを入れてください
+

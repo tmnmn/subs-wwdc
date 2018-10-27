@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:01.386 --> 00:15:02.866 A:middle
+So, next topic is security.
+
+00:15:02.866 --> 00:15:03.906 A:middle
+There'll be number of these
+
+00:15:03.906 --> 00:15:04.926 A:middle
+throughout today's session.
+
+00:15:05.436 --> 00:15:06.416 A:middle
+This is something that Bob
+
+00:15:06.416 --> 00:15:08.046 A:middle
+talked about last year, that we
+
+00:15:08.046 --> 00:15:09.296 A:middle
+were going to begin requiring
+
+00:15:09.296 --> 00:15:10.916 A:middle
+transport security this year.
+
+00:15:11.206 --> 00:15:12.336 A:middle
+And, in fact, we're going to do
+
+00:15:12.336 --> 00:15:14.446 A:middle
+that in both iOS and macOS this
+
+00:15:14.446 --> 00:15:14.636 A:middle
+year.
+
+00:15:16.156 --> 00:15:17.466 A:middle
+Your SCEP server should make
+
+00:15:17.466 --> 00:15:19.076 A:middle
+sure to advertise its
+
+00:15:19.076 --> 00:15:20.686 A:middle
+capabilities, so that we know
+
+00:15:20.686 --> 00:15:22.296 A:middle
+what the highest level of
+
+00:15:22.296 --> 00:15:23.506 A:middle
+security you support, and don't
+
+00:15:23.506 --> 00:15:25.386 A:middle
+have to fall back to a lower
+
+00:15:25.586 --> 00:15:27.286 A:middle
+security encryption algorithm.
+
+00:15:28.506 --> 00:15:30.966 A:middle
+We stopped supporting DES last
+
+00:15:30.966 --> 00:15:31.206 A:middle
+year.
+
+00:15:31.206 --> 00:15:33.146 A:middle
+Definitely supports one of the
+
+00:15:33.146 --> 00:15:35.326 A:middle
+modern and much more secure
+
+00:15:35.656 --> 00:15:36.296 A:middle
+algorithms.
+
+00:15:37.906 --> 00:15:39.106 A:middle
+This year, I also wanted to give
+
+00:15:39.106 --> 00:15:40.406 A:middle
+you a note on how you can verify
+
+00:15:40.406 --> 00:15:41.496 A:middle
+that your server is ready for
+
+00:15:41.496 --> 00:15:43.116 A:middle
+this transition as we roll out
+
+00:15:43.116 --> 00:15:44.246 A:middle
+the new versions of iOS and
+
+00:15:44.246 --> 00:15:45.036 A:middle
+macOS this year.
+
+00:15:45.676 --> 00:15:48.796 A:middle
+You can use NSCurl against each
+
+00:15:48.796 --> 00:15:49.906 A:middle
+of the URL's that your server
+
+00:15:49.906 --> 00:15:52.126 A:middle
+supports, and verify that there
+
+00:15:52.126 --> 00:15:53.156 A:middle
+are no issues that the
+
+00:15:53.156 --> 00:15:54.466 A:middle
+diagnostics find.
+
+00:15:55.346 --> 00:15:58.096 A:middle
+Now, let's turn to the new
+
+00:15:58.096 --> 00:15:59.596 A:middle
+management controls, commands
+
+00:15:59.596 --> 00:16:00.256 A:middle
+and settings.
+

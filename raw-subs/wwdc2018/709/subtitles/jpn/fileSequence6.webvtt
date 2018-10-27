@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:57.624 --> 00:06:00.460 align:start position:25% line:-2
+オリジナルは Core ML
+ニューラルネットワークの
+
+00:06:00.561 --> 00:06:03.564 align:start position:23% line:-1
+32ビットフロートのモデルです
+
+00:06:03.697 --> 00:06:07.734 align:start position:20% line:-2
+Core ML Toolsを使って
+これを量子化すると
+
+00:06:08.101 --> 00:06:10.437 align:start position:30% line:-1
+サイズが小さくなります
+
+00:06:10.771 --> 00:06:16.343 align:start position:29% line:-2
+量子化のビット数によって
+サイズ縮小率は変わります
+
+00:06:17.778 --> 00:06:21.181 align:start position:30% line:-2
+量子化とは
+どういうことでしょう？
+
+00:06:21.281 --> 00:06:23.584 align:start position:30% line:-1
+サイズを変える方法は？
+
+00:06:23.984 --> 00:06:26.653 align:start position:34% line:-1
+詳しく見ていきます
+
+00:06:30.357 --> 00:06:35.662 align:start position:23% line:-2
+ニューラルネットワークは
+関数のレイヤで構成されています
+
+00:06:36.063 --> 00:06:39.299 align:start position:29% line:-1
+この関数をウェイトと呼び
+
+00:06:39.700 --> 00:06:43.070 align:start position:27% line:-2
+通常は32ビットフロートで
+格納します
+
+00:06:44.304 --> 00:06:47.474 align:start position:18% line:-1
+前回はResnet50を紹介しました
+
+00:06:47.674 --> 00:06:52.212 align:start position:34% line:-2
+画像分類に使われる
+機械学習モデルです
+
+00:06:52.446 --> 00:06:56.617 align:start position:20% line:-2
+2500万ものウェイトパラメータを
+含んでいます
+
+00:06:57.050 --> 00:07:00.420 align:start position:34% line:-2
+少ないビット数で
+表すことができれば
+

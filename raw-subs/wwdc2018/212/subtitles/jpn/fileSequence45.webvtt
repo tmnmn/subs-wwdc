@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:56.396 --> 00:45:01.602 align:start position:25% line:-2
+それで経路をリクエストし
+道順が分かるように提示します
+
+00:45:01.702 --> 00:45:05.205 align:start position:30% line:-2
+あとは ユーザに経路を
+選んでもらいます
+
+00:45:05.305 --> 00:45:09.576 align:start position:25% line:-1
+経路サービスが返した選択肢を
+
+00:45:09.710 --> 00:45:12.913 align:start position:21% line:-1
+各ルートの詳細とともに提示します
+
+00:45:13.247 --> 00:45:16.650 align:start position:20% line:-2
+まずはeventListenerを
+設定しましょう
+
+00:45:17.618 --> 00:45:20.320 align:start position:29% line:-1
+マップから選択情報を確認
+
+00:45:20.554 --> 00:45:24.491 align:start position:27% line:-2
+注釈やオーバーレイの選択を
+把握します
+
+00:45:24.758 --> 00:45:28.028 align:start position:27% line:-2
+これが受け取ったイベントの
+プロパティです
+
+00:45:28.128 --> 00:45:32.466 align:start position:30% line:-2
+ifに値があれば
+注釈は選択されています
+
+00:45:32.566 --> 00:45:37.337 align:start position:20% line:-2
+MapKitで一度に選ばれる注釈は
+１つだけなので
+
+00:45:37.438 --> 00:45:39.039 align:start position:32% line:-1
+曖昧さは ありません
+
+00:45:39.139 --> 00:45:41.041 align:start position:30% line:-1
+これが行きたい場所です
+
+00:45:41.141 --> 00:45:43.977 align:start position:27% line:-1
+注釈への経路を示しましょう
+
+00:45:46.580 --> 00:45:49.316 align:start position:29% line:-1
+マップ上に経路を描きます
+
+00:45:49.449 --> 00:45:52.186 align:start position:23% line:-1
+ポリラインのオーバーレイを使い
+
+00:45:52.286 --> 00:45:54.621 align:start position:30% line:-1
+マップに経路を描きます
+
+00:45:54.888 --> 00:45:59.159 align:start position:32% line:-2
+まず 全経路で使う
+スタイルを定義します
+
+00:45:59.326 --> 00:46:03.197 align:start position:30% line:-2
+目立つように
+不透過率や線の幅を設定
+

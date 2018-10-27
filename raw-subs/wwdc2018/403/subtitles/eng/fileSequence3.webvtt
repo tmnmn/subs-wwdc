@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.346 --> 00:03:00.716 A:middle
+write, they're also more
+
+00:03:00.716 --> 00:03:02.046 A:middle
+accurate than ever before.
+
+00:03:02.106 --> 00:03:05.056 A:middle
+One example of this is header
+
+00:03:05.056 --> 00:03:05.606 A:middle
+files.
+
+00:03:06.066 --> 00:03:08.246 A:middle
+Xcode 9 didn't correctly collect
+
+00:03:08.246 --> 00:03:09.396 A:middle
+and show coverage in header
+
+00:03:09.396 --> 00:03:11.666 A:middle
+files and this was a problem for
+
+00:03:11.666 --> 00:03:14.106 A:middle
+a code basis that used C++ as in
+
+00:03:14.106 --> 00:03:15.546 A:middle
+that language, you can have a
+
+00:03:15.666 --> 00:03:17.276 A:middle
+good portion of your executable
+
+00:03:17.276 --> 00:03:18.506 A:middle
+code in headers.
+
+00:03:19.776 --> 00:03:20.826 A:middle
+So, if you're one of the people
+
+00:03:20.826 --> 00:03:22.106 A:middle
+affected, you'll be happy to
+
+00:03:22.106 --> 00:03:24.006 A:middle
+hear that Xcode now correctly
+
+00:03:24.046 --> 00:03:25.296 A:middle
+gathers and presents code
+
+00:03:25.326 --> 00:03:27.316 A:middle
+coverage for both implementation
+
+00:03:27.376 --> 00:03:28.336 A:middle
+and header files.
+
+00:03:29.586 --> 00:03:30.916 A:middle
+Now let's talk about code
+
+00:03:30.916 --> 00:03:32.006 A:middle
+coverage features.
+
+00:03:33.416 --> 00:03:34.686 A:middle
+The first one is target
+
+00:03:34.686 --> 00:03:35.346 A:middle
+selection.
+
+00:03:36.576 --> 00:03:38.466 A:middle
+This is a new option to control
+
+00:03:38.466 --> 00:03:39.876 A:middle
+not only whether code coverage
+
+00:03:39.876 --> 00:03:42.136 A:middle
+is enabled or disabled but when
+
+00:03:42.136 --> 00:03:44.506 A:middle
+it's enabled, you actually
+
+00:03:44.506 --> 00:03:46.416 A:middle
+control which targets are
+
+00:03:46.416 --> 00:03:46.886 A:middle
+included.
+
+00:03:48.056 --> 00:03:49.476 A:middle
+This can be important if your
+
+00:03:49.476 --> 00:03:50.816 A:middle
+project builds third-party
+
+00:03:50.816 --> 00:03:52.516 A:middle
+dependencies that you're not
+
+00:03:52.516 --> 00:03:54.156 A:middle
+expected to cover by your tests
+
+00:03:54.576 --> 00:03:55.986 A:middle
+or if you work at a company
+
+00:03:56.186 --> 00:03:57.906 A:middle
+where another team supplies you
+
+00:03:57.906 --> 00:03:59.176 A:middle
+with a framework that they
+
+00:03:59.176 --> 00:03:59.916 A:middle
+already tested.
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.546 --> 00:12:00.466 A:middle
+example of this.
+
+00:12:01.396 --> 00:12:02.766 A:middle
+Adding count metadata to our
+
+00:12:02.766 --> 00:12:04.526 A:middle
+store is exactly the kind of
+
+00:12:04.526 --> 00:12:06.476 A:middle
+compromise we need to get our
+
+00:12:06.546 --> 00:12:07.866 A:middle
+chart's performance again.
+
+00:12:08.666 --> 00:12:10.676 A:middle
+So, let's look at how our model
+
+00:12:10.676 --> 00:12:12.366 A:middle
+can group posts into counts by
+
+00:12:12.366 --> 00:12:12.736 A:middle
+day.
+
+00:12:13.626 --> 00:12:15.556 A:middle
+We'll need a new entity with two
+
+00:12:15.556 --> 00:12:17.246 A:middle
+attributes, plus a bit of extra
+
+00:12:17.246 --> 00:12:17.896 A:middle
+maintenance to keep them
+
+00:12:17.896 --> 00:12:18.316 A:middle
+accurate.
+
+00:12:19.186 --> 00:12:20.796 A:middle
+Grouping by day improves our
+
+00:12:20.796 --> 00:12:22.396 A:middle
+fetch request so much that it
+
+00:12:22.396 --> 00:12:23.756 A:middle
+guarantees good performance for
+
+00:12:23.756 --> 00:12:25.386 A:middle
+charts covering years of data,
+
+00:12:25.766 --> 00:12:26.776 A:middle
+so we only have to create this
+
+00:12:26.776 --> 00:12:29.376 A:middle
+one level of denormalization and
+
+00:12:29.376 --> 00:12:30.516 A:middle
+the fetch request that we passed
+
+00:12:30.516 --> 00:12:31.496 A:middle
+to the chart view controller?
+
+00:12:32.386 --> 00:12:33.446 A:middle
+It's super simple.
+
+00:12:34.416 --> 00:12:35.256 A:middle
+It's really not that much
+
+00:12:35.256 --> 00:12:36.336 A:middle
+different than the fetch request
+
+00:12:36.336 --> 00:12:37.576 A:middle
+that we'd pass off to any other
+
+00:12:37.576 --> 00:12:39.386 A:middle
+list view, which is actually
+
+00:12:39.506 --> 00:12:40.636 A:middle
+kind of sort of what a chart
+
+00:12:40.636 --> 00:12:41.826 A:middle
+view is if you squint hard
+
+00:12:41.826 --> 00:12:42.176 A:middle
+enough.
+
+00:12:43.766 --> 00:12:44.866 A:middle
+But what about that extra
+
+00:12:44.866 --> 00:12:45.396 A:middle
+maintenance?
+
+00:12:46.186 --> 00:12:47.656 A:middle
+We've got to increment the count
+
+00:12:47.656 --> 00:12:48.986 A:middle
+whenever a post gets published
+
+00:12:48.986 --> 00:12:50.236 A:middle
+and decrement it whenever a post
+
+00:12:50.236 --> 00:12:50.846 A:middle
+is removed.
+
+00:12:51.556 --> 00:12:53.016 A:middle
+We could do this in the methods
+
+00:12:53.016 --> 00:12:54.296 A:middle
+that change the post object's
+
+00:12:54.296 --> 00:12:55.836 A:middle
+relevant state, but a more
+
+00:12:55.836 --> 00:12:56.886 A:middle
+foolproof solution is to update
+
+00:12:56.886 --> 00:12:58.046 A:middle
+our counts in response to the
+
+00:12:58.046 --> 00:12:58.796 A:middle
+context saving.
+
+00:12:59.356 --> 00:13:04.546 A:middle
+We could just register for the
+

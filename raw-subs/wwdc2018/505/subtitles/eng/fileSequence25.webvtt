@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.466 --> 00:25:01.966 A:middle
+So, if you want to receive files
+
+00:25:02.036 --> 00:25:04.176 A:middle
+from those apps, or any app
+
+00:25:04.226 --> 00:25:05.546 A:middle
+providing file promises, then
+
+00:25:05.546 --> 00:25:07.266 A:middle
+your app needs to read file
+
+00:25:07.266 --> 00:25:08.426 A:middle
+promises, and need to accept
+
+00:25:08.476 --> 00:25:08.986 A:middle
+those files.
+
+00:25:09.566 --> 00:25:11.206 A:middle
+So, let's see how we can do that
+
+00:25:11.206 --> 00:25:12.246 A:middle
+by looking at some code.
+
+00:25:12.676 --> 00:25:17.206 A:middle
+First, during setup, a view must
+
+00:25:17.206 --> 00:25:18.546 A:middle
+register what types it'll accept
+
+00:25:18.746 --> 00:25:19.406 A:middle
+by calling
+
+00:25:19.406 --> 00:25:21.176 A:middle
+registerForDraggedTypes.
+
+00:25:21.576 --> 00:25:23.516 A:middle
+And, in order to accept file
+
+00:25:23.516 --> 00:25:25.956 A:middle
+promises, you can use the class
+
+00:25:25.956 --> 00:25:28.336 A:middle
+property readableDraggedTypes on
+
+00:25:28.336 --> 00:25:29.526 A:middle
+NSFilePromiseReceiver.
+
+00:25:31.756 --> 00:25:34.736 A:middle
+Then, when performing the drag
+
+00:25:34.736 --> 00:25:37.456 A:middle
+operation, and when enumerating
+
+00:25:37.456 --> 00:25:40.076 A:middle
+or draggingItems, you should add
+
+00:25:40.076 --> 00:25:40.766 A:middle
+support to
+
+00:25:40.766 --> 00:25:43.086 A:middle
+NSFilePromiseReceiver, and make
+
+00:25:43.086 --> 00:25:44.456 A:middle
+sure to handle it first.
+
+00:25:45.066 --> 00:25:46.886 A:middle
+Because it's more likely to
+
+00:25:46.886 --> 00:25:48.656 A:middle
+contain the highest quality
+
+00:25:48.656 --> 00:25:49.456 A:middle
+representation.
+
+00:25:49.646 --> 00:25:54.176 A:middle
+For each filePromiseReceiver,
+
+00:25:54.846 --> 00:25:57.506 A:middle
+you call in the promise, and
+
+00:25:57.506 --> 00:26:00.786 A:middle
+when the file is ready, then the
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:02.956 --> 00:32:05.656 A:middle
+Alright, so once you go to Mars
+
+00:32:05.656 --> 00:32:06.936 A:middle
+once, you're probably going to
+
+00:32:06.936 --> 00:32:08.656 A:middle
+want to go again and again and
+
+00:32:08.656 --> 00:32:10.506 A:middle
+again because those trips are
+
+00:32:10.506 --> 00:32:11.636 A:middle
+really cheap, as we saw.
+
+00:32:12.716 --> 00:32:14.036 A:middle
+And it would be nice if our app
+
+00:32:14.036 --> 00:32:16.086 A:middle
+could suggest additional trips
+
+00:32:16.206 --> 00:32:18.486 A:middle
+to these frequent fliers and
+
+00:32:18.486 --> 00:32:19.736 A:middle
+give them a shortcut to book the
+
+00:32:19.736 --> 00:32:20.596 A:middle
+next vacation.
+
+00:32:20.846 --> 00:32:22.706 A:middle
+So with that in mind, I've added
+
+00:32:22.706 --> 00:32:24.526 A:middle
+an intent definition to our
+
+00:32:24.526 --> 00:32:25.036 A:middle
+project.
+
+00:32:25.146 --> 00:32:28.606 A:middle
+Let's go look at it.
+
+00:32:29.166 --> 00:32:30.136 A:middle
+Okay, here's our intent
+
+00:32:30.136 --> 00:32:30.756 A:middle
+definition.
+
+00:32:31.456 --> 00:32:33.136 A:middle
+So we have a custom intent
+
+00:32:33.246 --> 00:32:35.946 A:middle
+called "Book Item," has a title,
+
+00:32:36.666 --> 00:32:40.026 A:middle
+a description, and down here is
+
+00:32:40.026 --> 00:32:41.566 A:middle
+the actual suggestion.
+
+00:32:42.106 --> 00:32:45.386 A:middle
+So it is book a type for
+
+00:32:45.546 --> 00:32:46.756 A:middle
+travelers, people.
+
+00:32:46.806 --> 00:32:47.736 A:middle
+Like Chris said, it's a
+
+00:32:47.736 --> 00:32:49.436 A:middle
+combination of parameters.
+
+00:32:50.516 --> 00:32:52.836 A:middle
+So we can see travelers is an
+
+00:32:52.836 --> 00:32:57.406 A:middle
+integer and type is defined in
+
+00:32:57.406 --> 00:32:59.026 A:middle
+this enum here, so we can see it
+
+00:32:59.026 --> 00:33:01.376 A:middle
+can be a flight, a cruise, a
+

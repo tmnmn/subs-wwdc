@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.976 --> 00:29:01.566 A:middle
+SQLite can't use it for the
+
+00:29:01.566 --> 00:29:02.006 A:middle
+sort.
+
+00:29:02.556 --> 00:29:04.776 A:middle
+So, the optimization that we've
+
+00:29:04.776 --> 00:29:07.216 A:middle
+chosen here is to use a compound
+
+00:29:07.216 --> 00:29:08.636 A:middle
+index to first filter out the
+
+00:29:08.636 --> 00:29:10.166 A:middle
+result set to a smaller set of
+
+00:29:10.166 --> 00:29:11.676 A:middle
+objects and then we'll do an
+
+00:29:11.676 --> 00:29:13.276 A:middle
+in-memory B-tree sort for the
+
+00:29:13.276 --> 00:29:13.736 A:middle
+order by.
+
+00:29:14.336 --> 00:29:18.536 A:middle
+As you can see, this index
+
+00:29:18.536 --> 00:29:20.186 A:middle
+increases the performance of our
+
+00:29:20.186 --> 00:29:22.286 A:middle
+fetch by about 25%.
+
+00:29:23.986 --> 00:29:25.256 A:middle
+In this case, my performance
+
+00:29:25.256 --> 00:29:27.066 A:middle
+test was run over a size of
+
+00:29:27.066 --> 00:29:29.726 A:middle
+about 100,000 rows and we saw
+
+00:29:29.726 --> 00:29:31.616 A:middle
+around 130 milliseconds of
+
+00:29:31.616 --> 00:29:33.036 A:middle
+improvement for just the fetch.
+
+00:29:34.476 --> 00:29:35.876 A:middle
+Which brings me to my next topic
+
+00:29:36.196 --> 00:29:37.466 A:middle
+of testing with Core Data.
+
+00:29:38.646 --> 00:29:40.716 A:middle
+As you may know, we really like
+
+00:29:40.716 --> 00:29:41.086 A:middle
+tests.
+
+00:29:41.656 --> 00:29:42.476 A:middle
+Tests are awesome.
+
+00:29:43.026 --> 00:29:45.156 A:middle
+And, at Core Data, we use them
+
+00:29:45.156 --> 00:29:46.686 A:middle
+internally for both correctness
+
+00:29:46.686 --> 00:29:48.476 A:middle
+as well as learning.
+
+00:29:48.906 --> 00:29:49.826 A:middle
+They're a great way to learn
+
+00:29:49.826 --> 00:29:51.026 A:middle
+about the functionality of Core
+
+00:29:51.026 --> 00:29:52.846 A:middle
+Data and how our API behaves
+
+00:29:52.846 --> 00:29:54.406 A:middle
+under a given set of conditions.
+
+00:29:55.316 --> 00:29:56.326 A:middle
+They're also a great way to
+
+00:29:56.326 --> 00:29:58.876 A:middle
+verify your assumptions about
+
+00:29:58.986 --> 00:30:00.806 A:middle
+how Core Data works and how it's
+

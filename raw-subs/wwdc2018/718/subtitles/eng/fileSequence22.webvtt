@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.426 --> 00:22:00.486 A:middle
+explicit consent.
+
+00:22:01.016 --> 00:22:02.646 A:middle
+Let's go through an example.
+
+00:22:03.156 --> 00:22:05.696 A:middle
+Here the user is browsing a news
+
+00:22:05.696 --> 00:22:08.576 A:middle
+site, news.example, and the news
+
+00:22:08.576 --> 00:22:10.036 A:middle
+site has an embedded video
+
+00:22:10.036 --> 00:22:11.786 A:middle
+player from video.example.
+
+00:22:12.686 --> 00:22:14.676 A:middle
+Now the user has a paid account
+
+00:22:14.676 --> 00:22:16.406 A:middle
+on the video site and would like
+
+00:22:16.406 --> 00:22:17.986 A:middle
+to grant the embedded video
+
+00:22:17.986 --> 00:22:20.666 A:middle
+access to its cookies so that
+
+00:22:20.666 --> 00:22:22.226 A:middle
+they can enjoy the benefits of
+
+00:22:22.226 --> 00:22:24.066 A:middle
+their subscription while reading
+
+00:22:24.066 --> 00:22:24.566 A:middle
+the news.
+
+00:22:25.746 --> 00:22:26.676 A:middle
+To accomplish this,
+
+00:22:26.776 --> 00:22:29.146 A:middle
+video.example needs to implement
+
+00:22:29.206 --> 00:22:30.576 A:middle
+the Storage Access API.
+
+00:22:32.866 --> 00:22:35.356 A:middle
+Video.example should add a call
+
+00:22:35.446 --> 00:22:37.636 A:middle
+to the Storage Access API when
+
+00:22:37.636 --> 00:22:39.336 A:middle
+the user clicks the play button
+
+00:22:39.366 --> 00:22:40.486 A:middle
+in their app.
+
+00:22:41.026 --> 00:22:42.976 A:middle
+Now this is an asynchronous API
+
+00:22:43.086 --> 00:22:44.976 A:middle
+that will return a promise, so
+
+00:22:44.976 --> 00:22:46.206 A:middle
+you should be prepared to handle
+
+00:22:46.206 --> 00:22:47.856 A:middle
+successes as well as failures.
+
+00:22:48.396 --> 00:22:50.946 A:middle
+So when a user clicks the play
+
+00:22:50.946 --> 00:22:52.286 A:middle
+button, this will kick off a
+
+00:22:52.286 --> 00:22:54.726 A:middle
+request, which will result in a
+
+00:22:54.876 --> 00:22:57.296 A:middle
+prompt asking the user if they
+
+00:22:57.296 --> 00:22:58.146 A:middle
+would like to grant
+
+00:22:58.496 --> 00:23:00.776 A:middle
+video.example access to its
+

@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:55.843 --> 00:43:01.815 align:start position:5% line:-2
+sortedInsertionPoint（of の
+非再帰的な実装を見てください
+
+00:43:02.216 --> 00:43:05.319 align:start position:25% line:-1
+コアアルゴリズムは同じですが
+
+00:43:05.419 --> 00:43:10.190 align:start position:29% line:-2
+再帰的ではなく
+反復的に表現されています
+
+00:43:10.490 --> 00:43:14.862 align:start position:29% line:-2
+まず コレクション全体の
+Sliceを取ります
+
+00:43:15.195 --> 00:43:21.501 align:start position:23% line:-2
+このSlice変数は 各反復の
+コレクションの一部を表します
+
+00:43:21.935 --> 00:43:25.072 align:start position:21% line:-1
+見慣れた分割統治アルゴリズムです
+
+00:43:25.172 --> 00:43:27.141 align:start position:30% line:-1
+Sliceの中央を探し
+
+00:43:27.241 --> 00:43:32.112 align:start position:30% line:-2
+その中央要素に対して
+挿入する値を比較します
+
+00:43:32.613 --> 00:43:38.352 align:start position:23% line:-2
+そして Sliceをスライスし
+探索範囲を絞ります
+
+00:43:39.186 --> 00:43:41.421 align:start position:30% line:-1
+ここで問題に遭遇します
+
+00:43:41.521 --> 00:43:47.327 align:start position:12% line:-2
+SubSequence型のSlice変数に
+代入していますが
+
+00:43:47.761 --> 00:43:51.165 align:start position:14% line:-1
+一方 右部分はSliceのSliceです
+
+00:43:51.265 --> 00:43:57.404 align:start position:7% line:-2
+SubSequenceのSubSequenceで
+まったく異なる型かもしれません
+
+00:43:57.538 --> 00:44:02.242 align:start position:27% line:-2
+型の相違が考慮され
+コンパイラエラーになります
+

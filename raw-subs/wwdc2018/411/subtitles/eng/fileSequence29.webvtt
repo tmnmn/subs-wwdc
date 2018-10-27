@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:00.516 --> 00:29:02.106 A:middle
+SwiftPM could add new commands
+
+00:29:02.106 --> 00:29:03.666 A:middle
+to support all of these needs.
+
+00:29:05.836 --> 00:29:07.196 A:middle
+There's a lot that you can build
+
+00:29:07.196 --> 00:29:09.266 A:middle
+with SwiftPM today, but we also
+
+00:29:09.266 --> 00:29:10.736 A:middle
+want to be able to support more
+
+00:29:10.736 --> 00:29:12.276 A:middle
+complex packages with more
+
+00:29:12.276 --> 00:29:13.486 A:middle
+sophisticated needs.
+
+00:29:14.916 --> 00:29:16.356 A:middle
+The biggest gap we have right
+
+00:29:16.356 --> 00:29:17.906 A:middle
+now, is probably support for
+
+00:29:17.906 --> 00:29:18.646 A:middle
+resources.
+
+00:29:18.836 --> 00:29:20.836 A:middle
+If you have any images, data
+
+00:29:20.836 --> 00:29:22.726 A:middle
+files, or other assets, SwiftPM
+
+00:29:22.726 --> 00:29:24.386 A:middle
+currently provides no way to
+
+00:29:24.386 --> 00:29:25.426 A:middle
+bundle these up you're your
+
+00:29:25.426 --> 00:29:25.966 A:middle
+products.
+
+00:29:27.096 --> 00:29:28.626 A:middle
+The foundation core library,
+
+00:29:28.626 --> 00:29:30.716 A:middle
+actually just added API this
+
+00:29:30.716 --> 00:29:33.276 A:middle
+spring for doing resources in a
+
+00:29:33.276 --> 00:29:35.586 A:middle
+cross-platform manner so SwiftPM
+
+00:29:35.586 --> 00:29:37.316 A:middle
+could adopt this API if we want
+
+00:29:37.316 --> 00:29:38.046 A:middle
+to build this feature.
+
+00:29:39.896 --> 00:29:41.736 A:middle
+We know that some users also
+
+00:29:41.736 --> 00:29:43.496 A:middle
+want support for specifying
+
+00:29:43.496 --> 00:29:45.446 A:middle
+compiler flags, linker flags,
+
+00:29:45.746 --> 00:29:47.026 A:middle
+and other properties that
+
+00:29:47.026 --> 00:29:48.686 A:middle
+SwiftPM doesn't support today.
+
+00:29:48.796 --> 00:29:51.216 A:middle
+It would be really great for us
+
+00:29:51.216 --> 00:29:52.946 A:middle
+to add a robust build settings
+
+00:29:52.946 --> 00:29:55.136 A:middle
+model, potentially including
+
+00:29:55.136 --> 00:29:56.386 A:middle
+things like conditional
+
+00:29:56.386 --> 00:29:58.776 A:middle
+settings, or fine-grain control
+
+00:29:58.776 --> 00:30:00.146 A:middle
+over what parts of the package
+

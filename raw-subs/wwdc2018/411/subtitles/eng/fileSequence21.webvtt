@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.606 --> 00:21:00.606 A:middle
+open source project.
+
+00:21:02.796 --> 00:21:04.806 A:middle
+Developing software in isolation
+
+00:21:04.876 --> 00:21:06.266 A:middle
+with all dependencies explicitly
+
+00:21:06.266 --> 00:21:10.686 A:middle
+declared ensures that even
+
+00:21:10.686 --> 00:21:11.776 A:middle
+packages with complex
+
+00:21:11.776 --> 00:21:13.476 A:middle
+requirements can be reliably
+
+00:21:13.476 --> 00:21:15.036 A:middle
+built and used in different
+
+00:21:15.036 --> 00:21:15.736 A:middle
+environments.
+
+00:21:17.016 --> 00:21:18.376 A:middle
+Instead of installing packages
+
+00:21:18.376 --> 00:21:19.596 A:middle
+globally into the system,
+
+00:21:19.786 --> 00:21:21.506 A:middle
+SwiftPM only allows you to use
+
+00:21:21.506 --> 00:21:23.366 A:middle
+packages that you explicitly
+
+00:21:23.366 --> 00:21:23.956 A:middle
+depend on.
+
+00:21:25.166 --> 00:21:26.176 A:middle
+We also leverage build
+
+00:21:26.176 --> 00:21:29.116 A:middle
+sandboxing so that nothing can
+
+00:21:29.116 --> 00:21:30.526 A:middle
+write to arbitrary locations on
+
+00:21:30.526 --> 00:21:31.786 A:middle
+the file system during the
+
+00:21:31.786 --> 00:21:32.106 A:middle
+build.
+
+00:21:33.546 --> 00:21:36.216 A:middle
+SwiftPM does not allow executing
+
+00:21:36.216 --> 00:21:37.676 A:middle
+arbitrary commands, or shell
+
+00:21:37.676 --> 00:21:39.056 A:middle
+scripts, as part of the build.
+
+00:21:40.246 --> 00:21:41.326 A:middle
+This allows us to fully
+
+00:21:41.326 --> 00:21:44.016 A:middle
+understand your build graph and
+
+00:21:44.396 --> 00:21:46.396 A:middle
+all of its inputs and outputs to
+
+00:21:46.396 --> 00:21:48.516 A:middle
+do fast, as well as correct,
+
+00:21:48.566 --> 00:21:49.366 A:middle
+incremental builds.
+
+00:21:50.166 --> 00:21:52.486 A:middle
+Because we have a view of all
+
+00:21:52.486 --> 00:21:53.326 A:middle
+your dependencies.
+
+00:21:53.946 --> 00:21:56.726 A:middle
+As I showed you in the demo
+
+00:21:56.726 --> 00:21:59.016 A:middle
+before, SwiftPM also supports
+
+00:21:59.046 --> 00:21:59.496 A:middle
+testing.
+

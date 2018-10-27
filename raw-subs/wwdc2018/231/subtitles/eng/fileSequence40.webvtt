@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:02.646 --> 00:40:03.876 A:middle
+So here you could see we have a
+
+00:40:03.876 --> 00:40:05.796 A:middle
+function where we want to start
+
+00:40:05.996 --> 00:40:06.936 A:middle
+the camera stream for our
+
+00:40:06.936 --> 00:40:07.326 A:middle
+accessory.
+
+00:40:07.326 --> 00:40:11.256 A:middle
+Now, we want to be sure to set
+
+00:40:11.256 --> 00:40:13.076 A:middle
+ourselves as the delegate so we
+
+00:40:13.076 --> 00:40:14.106 A:middle
+can get the proper delegate
+
+00:40:14.106 --> 00:40:14.716 A:middle
+callbacks.
+
+00:40:16.896 --> 00:40:18.496 A:middle
+Now, we'll use this start stream
+
+00:40:18.496 --> 00:40:21.796 A:middle
+API to start the stream, and we
+
+00:40:21.796 --> 00:40:23.376 A:middle
+also want to be sure to create a
+
+00:40:23.376 --> 00:40:26.576 A:middle
+camera view and to add that view
+
+00:40:26.916 --> 00:40:27.826 A:middle
+to our view hierarchy.
+
+00:40:28.466 --> 00:40:29.866 A:middle
+This is so we can display that
+
+00:40:29.866 --> 00:40:31.466 A:middle
+camera stream in our app.
+
+00:40:33.976 --> 00:40:36.016 A:middle
+Then, later, we'll get the
+
+00:40:36.016 --> 00:40:36.926 A:middle
+delegate callback.
+
+00:40:37.276 --> 00:40:38.286 A:middle
+Again, this is the
+
+00:40:38.536 --> 00:40:40.036 A:middle
+HMCameraStream ControlDelegate.
+
+00:40:41.716 --> 00:40:42.836 A:middle
+And we'll receive this
+
+00:40:42.946 --> 00:40:45.046 A:middle
+cameraStreamControl
+
+00:40:45.046 --> 00:40:46.326 A:middle
+DidStartStream delegate
+
+00:40:46.326 --> 00:40:46.756 A:middle
+callback.
+
+00:40:48.296 --> 00:40:49.576 A:middle
+And all we need to do there is
+
+00:40:49.576 --> 00:40:51.496 A:middle
+set the camera source to be the
+
+00:40:51.496 --> 00:40:52.116 A:middle
+camera stream.
+
+00:40:52.626 --> 00:40:55.286 A:middle
+Now, this is the end of the
+
+00:40:55.286 --> 00:40:57.686 A:middle
+sample code for today, but
+
+00:40:57.686 --> 00:40:59.096 A:middle
+there's plenty of documentation
+
+00:40:59.266 --> 00:41:01.016 A:middle
+available for these APIs online.
+

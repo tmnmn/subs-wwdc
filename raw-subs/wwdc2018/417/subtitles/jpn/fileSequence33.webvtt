@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:57.778 --> 00:33:00.414 align:start position:12% line:-2
+まず
+MockTimerSchedulerを作り
+
+00:33:00.514 --> 00:33:02.816 align:start position:25% line:-2
+handleAddTimer
+ブロックを設定
+
+00:33:03.383 --> 00:33:08.622 align:start position:27% line:-2
+スケジューラに加えられると
+タイマーの遅延を記録し
+
+00:33:08.722 --> 00:33:12.192 align:start position:34% line:-2
+タイマーを発動して
+遅れをバイパスし
+
+00:33:12.292 --> 00:33:13.794 align:start position:32% line:-1
+ブロックを起動します
+
+00:33:14.928 --> 00:33:19.099 align:start position:7% line:-2
+FeaturedPlaceManagerを生成し
+MockTimerSchedulerを提供
+
+00:33:19.867 --> 00:33:23.337 align:start position:12% line:-2
+最後にscheduleNextPlaceを
+呼んで テストを開始
+
+00:33:23.871 --> 00:33:26.874 align:start position:34% line:-2
+遅延のないテストの
+完成です
+
+00:33:26.974 --> 00:33:31.645 align:start position:30% line:-2
+高速で 時間に依存せず
+信頼性が増しました
+
+00:33:32.312 --> 00:33:37.918 align:start position:27% line:-2
+さらに アサーションを使い
+時間の遅れを確認できます
+
+00:33:38.018 --> 00:33:40.654 align:start position:27% line:-1
+前のテストでは不可能でした
+
+00:33:42.790 --> 00:33:47.561 align:start position:29% line:-2
+このテクニックで
+遅延は完全に取り除けます
+
+00:33:47.995 --> 00:33:51.632 align:start position:27% line:-2
+遅延を含むコードのテストに
+適します
+
+00:33:51.732 --> 00:33:54.802 align:start position:34% line:-2
+しかしテスト全体の
+速度向上には―
+
+00:33:54.902 --> 00:33:58.438 align:start position:27% line:-2
+テストの大部分を直接構造に
+すべきです
+
+00:33:58.539 --> 00:34:01.041 align:start position:29% line:-1
+遅延のモックは要りません
+

@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:55.676 --> 00:23:01.348 align:start position:30% line:-2
+GPUで実行できる場合
+まずはそれを試します
+
+00:23:01.915 --> 00:23:06.420 align:start position:32% line:-2
+できなければCPUに
+切り替えます
+
+00:23:08.021 --> 00:23:09.523 align:start position:32% line:-1
+それがデフォルトです
+
+00:23:10.958 --> 00:23:15.929 align:start position:25% line:-2
+しかしグラフィック表示が多い
+アプリケーションなら
+
+00:23:16.029 --> 00:23:19.933 align:start position:34% line:-2
+GPUはその作業に
+とっておきましょう
+
+00:23:20.033 --> 00:23:25.339 align:start position:27% line:-2
+その場合はCPUを上書きし
+trueに設定します
+
+00:23:25.439 --> 00:23:28.509 align:start position:36% line:-2
+これでCPU上で
+直接処理できます
+
+00:23:35.182 --> 00:23:38.719 align:start position:30% line:-2
+ここまでVisionの
+ベーシックな―
+
+00:23:38.819 --> 00:23:42.289 align:start position:29% line:-2
+インタラクションについて
+説明してきました
+
+00:23:42.589 --> 00:23:46.693 align:start position:29% line:-2
+次はVisionでの
+トラッキングについてです
+
+00:23:48.829 --> 00:23:49.863 align:start position:34% line:-1
+トラッキングとは―
+
+00:23:50.931 --> 00:23:55.936 align:start position:21% line:-2
+フレームのシーケンス内で
+対象のオブジェクトを探すことです
+
+00:23:56.036 --> 00:24:01.208 align:start position:29% line:-2
+通常は最初のフレームで
+オブジェクトを見つけます
+

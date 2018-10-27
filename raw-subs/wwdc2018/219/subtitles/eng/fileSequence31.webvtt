@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.366 --> 00:31:01.666 A:middle
+UIImageView, UIImageView will
+
+00:31:01.666 --> 00:31:04.006 A:middle
+take care to execute that recipe
+
+00:31:04.416 --> 00:31:05.256 A:middle
+on the GPU.
+
+00:31:05.726 --> 00:31:08.286 A:middle
+This is efficient and it keeps
+
+00:31:08.286 --> 00:31:09.606 A:middle
+the CPU free for doing other
+
+00:31:09.606 --> 00:31:10.646 A:middle
+work in your application.
+
+00:31:11.176 --> 00:31:13.686 A:middle
+In order to use it create your
+
+00:31:13.686 --> 00:31:15.736 A:middle
+CIImage as normal, and then use
+
+00:31:15.736 --> 00:31:17.606 A:middle
+the UIImage ciImage initializer.
+
+00:31:19.296 --> 00:31:20.816 A:middle
+There are other advanced
+
+00:31:20.816 --> 00:31:23.066 A:middle
+frameworks for processing and
+
+00:31:23.066 --> 00:31:25.426 A:middle
+rendering graphical content that
+
+00:31:25.426 --> 00:31:27.276 A:middle
+are available on iOS, including
+
+00:31:27.606 --> 00:31:29.796 A:middle
+Metal, Vison, and Accelerate.
+
+00:31:30.696 --> 00:31:32.406 A:middle
+And one of the data types that
+
+00:31:32.406 --> 00:31:33.756 A:middle
+is common among these frameworks
+
+00:31:33.966 --> 00:31:35.186 A:middle
+is CVPixelBuffer.
+
+00:31:35.506 --> 00:31:37.526 A:middle
+And this is a data type that
+
+00:31:37.526 --> 00:31:39.986 A:middle
+represents a buffer that can be
+
+00:31:39.986 --> 00:31:42.436 A:middle
+in use or not in use on the CPU
+
+00:31:42.676 --> 00:31:43.476 A:middle
+or on the GPU.
+
+00:31:44.436 --> 00:31:45.566 A:middle
+When constructing one of these
+
+00:31:45.566 --> 00:31:47.416 A:middle
+pixel buffers make sure to use
+
+00:31:47.416 --> 00:31:48.546 A:middle
+the best initializer.
+
+00:31:48.646 --> 00:31:49.816 A:middle
+The one that's closest to the
+
+00:31:49.816 --> 00:31:51.566 A:middle
+representation you have at hand.
+
+00:31:52.766 --> 00:31:54.696 A:middle
+Don't unwind any of the decoding
+
+00:31:54.696 --> 00:31:54.926 A:middle
+work.
+
+00:31:55.226 --> 00:31:57.006 A:middle
+It's already been done by the
+
+00:31:57.006 --> 00:31:58.836 A:middle
+existing UIImage or CGImage
+
+00:31:59.116 --> 00:32:00.146 A:middle
+representations.
+

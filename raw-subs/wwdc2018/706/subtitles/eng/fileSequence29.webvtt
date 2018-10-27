@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.806 --> 00:29:00.856 A:middle
+FHIR comes into play.
+
+00:29:01.856 --> 00:29:03.356 A:middle
+FHIR gives a way to use
+
+00:29:03.416 --> 00:29:05.066 A:middle
+predefined codes rather than
+
+00:29:05.066 --> 00:29:07.146 A:middle
+natural language to specify what
+
+00:29:07.146 --> 00:29:07.616 A:middle
+things are.
+
+00:29:09.156 --> 00:29:11.106 A:middle
+So after taking a look at the
+
+00:29:11.106 --> 00:29:13.326 A:middle
+FHIR documentation here's the
+
+00:29:13.326 --> 00:29:14.806 A:middle
+algorithm I've come up with to
+
+00:29:14.806 --> 00:29:16.736 A:middle
+identify a chickenpox vaccine.
+
+00:29:18.636 --> 00:29:20.066 A:middle
+First, I'll take the
+
+00:29:20.066 --> 00:29:23.406 A:middle
+immunization records JSON, I'm
+
+00:29:23.406 --> 00:29:25.176 A:middle
+going to deserialize it and pull
+
+00:29:25.176 --> 00:29:27.046 A:middle
+out the vaccination code in a
+
+00:29:27.046 --> 00:29:28.646 A:middle
+system called CVX.
+
+00:29:29.306 --> 00:29:31.006 A:middle
+CVX is a commonly used coding
+
+00:29:31.006 --> 00:29:32.646 A:middle
+system for immunizations, but
+
+00:29:32.646 --> 00:29:33.856 A:middle
+there are many other coding
+
+00:29:33.856 --> 00:29:35.256 A:middle
+systems for different areas of
+
+00:29:35.256 --> 00:29:35.616 A:middle
+medicine.
+
+00:29:36.916 --> 00:29:38.726 A:middle
+Finally, I'm going compare the
+
+00:29:38.806 --> 00:29:40.286 A:middle
+CVX code I found in my
+
+00:29:40.286 --> 00:29:42.486 A:middle
+immunization record to a list of
+
+00:29:42.486 --> 00:29:44.676 A:middle
+vaccines I know induce immunity
+
+00:29:44.676 --> 00:29:45.546 A:middle
+against chickenpox.
+
+00:29:45.916 --> 00:29:47.636 A:middle
+If there's a match I'll show a
+
+00:29:47.636 --> 00:29:49.726 A:middle
+checkmark in my UI next to
+
+00:29:49.726 --> 00:29:50.376 A:middle
+chickenpox.
+
+00:29:50.806 --> 00:29:52.976 A:middle
+So let's talk about the
+
+00:29:52.976 --> 00:29:53.946 A:middle
+immunization record JSON.
+
+00:29:58.046 --> 00:29:59.956 A:middle
+The structure starts with a
+
+00:29:59.956 --> 00:30:01.806 A:middle
+resource type immunization.
+

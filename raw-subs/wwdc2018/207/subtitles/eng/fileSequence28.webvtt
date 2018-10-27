@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.226 --> 00:28:01.036 A:middle
+cookies, that's just how the web
+
+00:28:01.036 --> 00:28:01.556 A:middle
+works, right?
+
+00:28:01.556 --> 00:28:02.796 A:middle
+If a request goes out on the
+
+00:28:02.796 --> 00:28:04.866 A:middle
+wire, cookies are added, and to
+
+00:28:04.866 --> 00:28:07.086 A:middle
+your servers this looks like I
+
+00:28:07.086 --> 00:28:08.416 A:middle
+guess this user wants to send
+
+00:28:08.466 --> 00:28:09.216 A:middle
+this message.
+
+00:28:10.096 --> 00:28:11.916 A:middle
+That could be spam, that could
+
+00:28:11.916 --> 00:28:13.816 A:middle
+be sending links for malicious
+
+00:28:14.116 --> 00:28:14.796 A:middle
+software.
+
+00:28:15.206 --> 00:28:16.626 A:middle
+It could be breaking up with a
+
+00:28:16.626 --> 00:28:18.986 A:middle
+partner-- ah, OK, they won't go
+
+00:28:18.986 --> 00:28:20.526 A:middle
+that far, but malicious
+
+00:28:20.526 --> 00:28:21.606 A:middle
+software, we'll stay there.
+
+00:28:22.296 --> 00:28:25.176 A:middle
+So, you don't want this to
+
+00:28:25.176 --> 00:28:25.726 A:middle
+happen.
+
+00:28:25.936 --> 00:28:30.086 A:middle
+Luckily, you have used same-site
+
+00:28:30.146 --> 00:28:30.726 A:middle
+cookies.
+
+00:28:31.376 --> 00:28:33.006 A:middle
+They will not be sent in the
+
+00:28:33.006 --> 00:28:34.996 A:middle
+embedded case, which means that
+
+00:28:34.996 --> 00:28:37.756 A:middle
+your server will detect I'm
+
+00:28:37.756 --> 00:28:39.516 A:middle
+being embedded here.
+
+00:28:39.826 --> 00:28:42.016 A:middle
+I don't allow the user to send
+
+00:28:42.016 --> 00:28:44.246 A:middle
+messages from an iframe under
+
+00:28:44.246 --> 00:28:45.256 A:middle
+some other page.
+
+00:28:45.626 --> 00:28:47.656 A:middle
+I need to own the UI when I do
+
+00:28:47.656 --> 00:28:49.276 A:middle
+this sensitive thing, such as
+
+00:28:49.276 --> 00:28:51.146 A:middle
+sending messages, I'm just going
+
+00:28:51.146 --> 00:28:52.146 A:middle
+to deny this request.
+
+00:28:53.086 --> 00:28:54.096 A:middle
+This, again, puts you in
+
+00:28:54.096 --> 00:28:54.496 A:middle
+control.
+
+00:28:56.316 --> 00:28:58.326 A:middle
+OK. We have now covered
+
+00:28:58.326 --> 00:28:59.956 A:middle
+cross-origin attacks and looked
+
+00:28:59.956 --> 00:29:01.446 A:middle
+at how some of those security
+

@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:55.282 --> 00:12:00.187 align:start position:27% line:-2
+クールガイは我々が
+クールな気分の時に現れます
+
+00:12:00.621 --> 00:12:03.390 align:start position:25% line:-2
+feelingCoolという
+変数があるはず
+
+00:12:03.790 --> 00:12:07.094 align:start position:30% line:-2
+出ましたね
+ベン 次のステップは？
+
+00:12:07.394 --> 00:12:09.630 align:start position:29% line:-1
+その状態が変わるたびに―
+
+00:12:09.730 --> 00:12:13.133 align:start position:16% line:-2
+setNeedsLayoutを呼び出し
+レイアウトを無効に
+
+00:12:13.534 --> 00:12:17.337 align:start position:27% line:-2
+状態変化のたびに
+必ずこうなるようにすること
+
+00:12:17.437 --> 00:12:21.275 align:start position:25% line:-2
+状態変化はアプリケーションの
+あちこちで起こります
+
+00:12:21.475 --> 00:12:25.712 align:start position:25% line:-2
+レイアウトが必ず無効になるか
+どう確認する？
+
+00:12:25.946 --> 00:12:28.916 align:start position:34% line:-2
+よくぞ聞いてくれた
+名案がある
+
+00:12:29.183 --> 00:12:32.586 align:start position:20% line:-2
+Swiftのプロパティオブザーバと
+いう機能で―
+
+00:12:33.187 --> 00:12:37.357 align:start position:29% line:-2
+プロパティ設定の前か後に
+コードを実行できます
+
+00:12:37.691 --> 00:12:42.262 align:start position:14% line:-2
+didSetプロパティのオブザーバで
+setNeedsLayoutを呼び出せる
+
+00:12:42.462 --> 00:12:46.466 align:start position:30% line:-2
+プロパティオブザーバの
+優れた使い方です
+
+00:12:47.134 --> 00:12:51.438 align:start position:29% line:-2
+これで終わったも同然
+ベン 最後のステップは？
+
+00:12:51.872 --> 00:12:56.543 align:start position:11% line:-2
+この状態を使い
+layoutSubviewsでUIを更新する
+
+00:12:57.211 --> 00:12:58.979 align:start position:38% line:-1
+了解　簡単です
+
+00:12:59.179 --> 00:13:01.582 align:start position:23% line:-2
+layoutSubviewsを
+オーバーライドし―
+

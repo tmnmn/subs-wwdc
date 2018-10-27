@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.296 --> 00:21:00.066 A:middle
+return my level tiles, which of
+
+00:21:00.066 --> 00:21:01.826 A:middle
+course are now UIFocusItems.
+
+00:21:02.286 --> 00:21:04.286 A:middle
+And, I can get a performance win
+
+00:21:04.286 --> 00:21:05.896 A:middle
+here, by only returning the
+
+00:21:05.896 --> 00:21:07.496 A:middle
+tiles these frames intersect the
+
+00:21:07.496 --> 00:21:08.506 A:middle
+path in search rect.
+
+00:21:10.326 --> 00:21:10.576 A:middle
+Yikes.
+
+00:21:11.436 --> 00:21:12.606 A:middle
+Let's take a look and see how
+
+00:21:12.606 --> 00:21:12.976 A:middle
+that works.
+
+00:21:18.096 --> 00:21:18.866 A:middle
+So, now you can see that the
+
+00:21:18.866 --> 00:21:21.276 A:middle
+tiles are focusable, and the
+
+00:21:21.276 --> 00:21:22.536 A:middle
+system even plays a standard
+
+00:21:22.536 --> 00:21:23.846 A:middle
+sound when they become focused.
+
+00:21:24.476 --> 00:21:25.996 A:middle
+I can even move focus in between
+
+00:21:25.996 --> 00:21:27.216 A:middle
+my custom tiles, and the
+
+00:21:27.216 --> 00:21:28.476 A:middle
+standard UI buttons down at the
+
+00:21:28.476 --> 00:21:28.846 A:middle
+bottom.
+
+00:21:29.816 --> 00:21:31.396 A:middle
+There's a problem here, though.
+
+00:21:32.016 --> 00:21:33.536 A:middle
+The tiles extend offscreen.
+
+00:21:34.146 --> 00:21:35.986 A:middle
+If I move focus offscreen, I
+
+00:21:35.986 --> 00:21:37.056 A:middle
+can't see what I'm interacting
+
+00:21:37.056 --> 00:21:37.206 A:middle
+with.
+
+00:21:38.156 --> 00:21:39.326 A:middle
+Of course, what I want is for
+
+00:21:39.326 --> 00:21:40.836 A:middle
+the tiles to move onscreen as
+
+00:21:40.836 --> 00:21:41.616 A:middle
+they become focused.
+
+00:21:42.386 --> 00:21:43.256 A:middle
+So, let's implement that.
+
+00:21:43.256 --> 00:21:47.226 A:middle
+I'm going to extend that
+
+00:21:47.376 --> 00:21:49.706 A:middle
+RenderView again, this time to
+
+00:21:49.706 --> 00:21:50.166 A:middle
+implement
+
+00:21:50.436 --> 00:21:52.286 A:middle
+UIFocusItemScrollableContainer.
+
+00:21:53.086 --> 00:21:54.776 A:middle
+Now, the important thing here is
+
+00:21:54.826 --> 00:21:56.086 A:middle
+to adjust my rendering by the
+
+00:21:56.086 --> 00:21:56.916 A:middle
+contentOffset.
+
+00:21:57.536 --> 00:21:58.726 A:middle
+The focus engine will set my
+
+00:21:58.726 --> 00:22:01.496 A:middle
+contentOffset as focus moves to
+

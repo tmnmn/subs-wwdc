@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.176 --> 00:15:00.716 A:middle
+The generated passwords are 20
+
+00:15:00.716 --> 00:15:01.556 A:middle
+characters long.
+
+00:15:02.496 --> 00:15:05.516 A:middle
+They contain uppercase, digits,
+
+00:15:06.846 --> 00:15:09.036 A:middle
+hyphen, and lowercase
+
+00:15:09.036 --> 00:15:09.566 A:middle
+characters.
+
+00:15:10.756 --> 00:15:12.356 A:middle
+This gives you a strong password
+
+00:15:12.356 --> 00:15:13.926 A:middle
+with more than 71 bits of
+
+00:15:13.926 --> 00:15:14.406 A:middle
+entropy.
+
+00:15:15.636 --> 00:15:17.386 A:middle
+We designed this to be a strong,
+
+00:15:17.386 --> 00:15:18.716 A:middle
+yet compatible with most
+
+00:15:18.716 --> 00:15:19.276 A:middle
+services.
+
+00:15:19.426 --> 00:15:22.526 A:middle
+It is, of course, possible for
+
+00:15:22.526 --> 00:15:24.246 A:middle
+your apps to define their own
+
+00:15:24.246 --> 00:15:25.276 A:middle
+custom password rules.
+
+00:15:26.546 --> 00:15:28.746 A:middle
+As I mentioned before, in most
+
+00:15:28.746 --> 00:15:30.096 A:middle
+cases, you don't need to do this
+
+00:15:30.266 --> 00:15:31.526 A:middle
+because the default format of
+
+00:15:31.526 --> 00:15:32.966 A:middle
+Automatic Strong Passwords
+
+00:15:33.016 --> 00:15:33.896 A:middle
+should be compatible.
+
+00:15:34.616 --> 00:15:36.846 A:middle
+However, if your app's backend
+
+00:15:36.846 --> 00:15:38.556 A:middle
+requires a separate set of rules
+
+00:15:38.556 --> 00:15:40.216 A:middle
+that are not compatible with the
+
+00:15:40.216 --> 00:15:41.586 A:middle
+default format of Automatic
+
+00:15:41.586 --> 00:15:43.136 A:middle
+Strong Passwords, you could
+
+00:15:43.136 --> 00:15:44.196 A:middle
+define your own rules.
+
+00:15:45.396 --> 00:15:47.526 A:middle
+To do so, use the new password
+
+00:15:47.526 --> 00:15:49.496 A:middle
+rules language in iOS 12.
+
+00:15:50.676 --> 00:15:51.936 A:middle
+Following the format of the
+
+00:15:51.936 --> 00:15:53.846 A:middle
+password rules language, create
+
+00:15:53.846 --> 00:15:54.936 A:middle
+a rulesDescriptor.
+
+00:15:55.446 --> 00:15:57.856 A:middle
+Using the rulesDescriptor create
+
+00:15:57.856 --> 00:15:59.046 A:middle
+an instance of
+
+00:15:59.226 --> 00:16:01.506 A:middle
+UITextInputPasswordRules and
+

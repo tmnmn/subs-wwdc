@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:58.746 --> 00:46:00.256 A:middle
+experience is really tailored
+
+00:46:00.256 --> 00:46:00.966 A:middle
+around an image.
+
+00:46:01.116 --> 00:46:03.046 A:middle
+If you have, let's see this
+
+00:46:03.046 --> 00:46:03.826 A:middle
+other example.
+
+00:46:04.546 --> 00:46:05.516 A:middle
+Image tracking is used to
+
+00:46:05.606 --> 00:46:07.266 A:middle
+trigger some content that then
+
+00:46:07.266 --> 00:46:09.326 A:middle
+goes beyond the extent of the
+
+00:46:09.326 --> 00:46:09.496 A:middle
+image.
+
+00:46:09.496 --> 00:46:12.086 A:middle
+In this case, you want to use
+
+00:46:12.086 --> 00:46:13.726 A:middle
+the ARWorldTrackingConfiguration
+
+00:46:13.806 --> 00:46:14.906 A:middle
+as you will need the device
+
+00:46:14.906 --> 00:46:16.506 A:middle
+position to keep track of that
+
+00:46:16.506 --> 00:46:19.856 A:middle
+content outside the image.
+
+00:46:20.076 --> 00:46:21.146 A:middle
+Also, note that the image
+
+00:46:21.246 --> 00:46:23.576 A:middle
+tracking doesn't use the motion
+
+00:46:23.576 --> 00:46:24.676 A:middle
+data, which means it can also be
+
+00:46:24.676 --> 00:46:26.506 A:middle
+used on a bus or an elevator,
+
+00:46:27.076 --> 00:46:28.146 A:middle
+where the motion data don't
+
+00:46:28.146 --> 00:46:29.896 A:middle
+agree with the visual data.
+
+00:46:30.916 --> 00:46:33.036 A:middle
+So, let's see now, how we can do
+
+00:46:33.036 --> 00:46:33.756 A:middle
+this in code.
+
+00:46:35.236 --> 00:46:36.916 A:middle
+You can easily recognize those
+
+00:46:36.946 --> 00:46:37.716 A:middle
+three steps here.
+
+00:46:37.936 --> 00:46:39.836 A:middle
+The first one is to gather all
+
+00:46:39.836 --> 00:46:40.476 A:middle
+the images.
+
+00:46:40.876 --> 00:46:41.796 A:middle
+And there's a convenience
+
+00:46:41.796 --> 00:46:43.396 A:middle
+function for that in the
+
+00:46:43.566 --> 00:46:45.436 A:middle
+ARReferenceImage class that
+
+00:46:45.436 --> 00:46:47.436 A:middle
+gathers all the images that are
+
+00:46:47.436 --> 00:46:48.366 A:middle
+in a particular group.
+
+00:46:48.556 --> 00:46:50.226 A:middle
+In this case, it's named Room1.
+
+00:46:51.896 --> 00:46:53.256 A:middle
+We can then simply set the
+
+00:46:53.256 --> 00:46:55.626 A:middle
+trackingImages property to those
+
+00:46:55.626 --> 00:46:56.306 A:middle
+images in the
+
+00:46:56.306 --> 00:46:58.156 A:middle
+ARImageTrackingConfigurations.
+
+00:46:58.586 --> 00:46:59.516 A:middle
+And run the session.
+

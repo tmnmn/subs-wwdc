@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.979 --> 00:13:02.449 align:start position:30% line:-2
+１つ目は宛先を定義する
+エンドポイント
+
+00:13:02.549 --> 00:13:06.086 align:start position:29% line:-2
+これは以前のIPアドレス
+かもしれませんが
+
+00:13:06.186 --> 00:13:10.023 align:start position:36% line:-2
+通常はホスト名と
+ポートがあります
+
+00:13:10.123 --> 00:13:13.260 align:start position:36% line:-2
+エンドポイントは
+この２つです
+
+00:13:13.393 --> 00:13:16.263 align:start position:27% line:-2
+Bonjourサービスへの
+接続かもしれません
+
+00:13:17.364 --> 00:13:19.366 align:start position:30% line:-1
+２つ目はパラメータです
+
+00:13:19.466 --> 00:13:25.072 align:start position:18% line:-2
+TLS DTLS UDP TCPなど
+どのプロトコルを使うか定義します
+
+00:13:25.339 --> 00:13:28.108 align:start position:29% line:-1
+プロトコルのオプションと
+
+00:13:28.575 --> 00:13:35.048 align:start position:21% line:-2
+接続をWi-Fiだけにするかなど
+接続に使用するパスを定義します
+
+00:13:36.183 --> 00:13:41.455 align:start position:23% line:-2
+設定が終われば
+startを呼び出し処理を開始
+
+00:13:41.555 --> 00:13:44.591 align:start position:25% line:-1
+readyになるのを待ちます
+
+00:13:44.758 --> 00:13:48.228 align:start position:30% line:-2
+TLS接続に必要なのは
+これだけです
+
+00:13:48.862 --> 00:13:51.532 align:start position:25% line:-1
+Swiftではどうでしょう？
+
+00:13:52.699 --> 00:13:56.436 align:start position:29% line:-2
+ネットワークモジュールを
+インポートし―
+
+00:13:57.371 --> 00:14:00.541 align:start position:16% line:-2
+NWConnectionオブジェクトを
+生成します
+

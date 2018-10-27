@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.976 --> 00:04:01.356 A:middle
+Collection even more powerful by
+
+00:04:01.356 --> 00:04:02.426 A:middle
+adding our own extension.
+
+00:04:03.736 --> 00:04:05.026 A:middle
+Collection already provides a
+
+00:04:05.026 --> 00:04:06.236 A:middle
+way to iterate through every
+
+00:04:06.236 --> 00:04:08.786 A:middle
+element, but I want a function
+
+00:04:08.786 --> 00:04:09.646 A:middle
+that will let me iterate through
+
+00:04:09.646 --> 00:04:11.066 A:middle
+every other element, skipping
+
+00:04:11.066 --> 00:04:12.266 A:middle
+some of the values along the way
+
+00:04:13.496 --> 00:04:14.616 A:middle
+and will do this by adding an
+
+00:04:14.616 --> 00:04:15.626 A:middle
+extension to Collection.
+
+00:04:16.036 --> 00:04:16.935 A:middle
+Let's start with the methods
+
+00:04:16.935 --> 00:04:17.375 A:middle
+signature.
+
+00:04:18.136 --> 00:04:19.136 A:middle
+We're going to call our function
+
+00:04:19.266 --> 00:04:20.305 A:middle
+every other, and it's going to
+
+00:04:20.305 --> 00:04:21.555 A:middle
+take a closure that will call on
+
+00:04:21.555 --> 00:04:23.126 A:middle
+each element that we care about.
+
+00:04:24.126 --> 00:04:25.016 A:middle
+We'll get the bounds of our
+
+00:04:25.016 --> 00:04:27.486 A:middle
+iteration, and to find another
+
+00:04:27.486 --> 00:04:29.236 A:middle
+variable, that starts at the
+
+00:04:29.236 --> 00:04:30.326 A:middle
+start, which will mutate along
+
+00:04:30.326 --> 00:04:30.826 A:middle
+as we go.
+
+00:04:32.106 --> 00:04:33.506 A:middle
+We'll call the closure on the
+
+00:04:33.506 --> 00:04:36.016 A:middle
+current element and advance our
+
+00:04:36.016 --> 00:04:37.266 A:middle
+current index to the next one.
+
+00:04:37.866 --> 00:04:39.076 A:middle
+And we may have invalidated our
+
+00:04:39.076 --> 00:04:40.086 A:middle
+index at this point, we may have
+
+00:04:40.086 --> 00:04:40.576 A:middle
+reached the end of the
+
+00:04:40.576 --> 00:04:41.536 A:middle
+collection, so we need to make
+
+00:04:41.536 --> 00:04:43.626 A:middle
+sure that we did that, and if we
+
+00:04:43.626 --> 00:04:44.906 A:middle
+did, we can then advance our
+
+00:04:44.906 --> 00:04:46.716 A:middle
+index one more time and thus
+
+00:04:46.716 --> 00:04:47.886 A:middle
+skip every other element.
+
+00:04:48.326 --> 00:04:49.726 A:middle
+And if we call this we see, if
+
+00:04:49.726 --> 00:04:50.976 A:middle
+we call this on the close range
+
+00:04:51.136 --> 00:04:53.066 A:middle
+from one to ten, we see that we
+
+00:04:53.066 --> 00:04:54.236 A:middle
+skip the even elements.
+
+00:04:54.646 --> 00:04:56.926 A:middle
+And so we see that Collections
+
+00:04:56.926 --> 00:04:58.236 A:middle
+let us describe some really
+
+00:04:58.236 --> 00:05:00.616 A:middle
+powerful behavior, but it turns
+

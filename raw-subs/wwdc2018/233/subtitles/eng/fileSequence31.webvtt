@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:57.976 --> 00:31:00.276 A:middle
+computation, we could still be
+
+00:31:00.276 --> 00:31:01.666 A:middle
+having problems with our
+
+00:31:01.666 --> 00:31:02.486 A:middle
+graphics system.
+
+00:31:04.946 --> 00:31:06.156 A:middle
+Fortunately, there's another
+
+00:31:06.156 --> 00:31:07.346 A:middle
+great tool available here.
+
+00:31:07.936 --> 00:31:11.286 A:middle
+The Core Animation instrument is
+
+00:31:11.286 --> 00:31:12.986 A:middle
+a really powerful way to see
+
+00:31:12.986 --> 00:31:14.306 A:middle
+exactly what your frame rate is
+
+00:31:14.346 --> 00:31:14.656 A:middle
+doing.
+
+00:31:15.296 --> 00:31:16.686 A:middle
+And, also at the same time,
+
+00:31:16.936 --> 00:31:18.636 A:middle
+looking at your GPU utilization.
+
+00:31:20.076 --> 00:31:21.506 A:middle
+It's another really powerful
+
+00:31:21.506 --> 00:31:21.866 A:middle
+tool.
+
+00:31:22.156 --> 00:31:23.276 A:middle
+And, to learn all about how to
+
+00:31:23.276 --> 00:31:24.846 A:middle
+use it, check out Advanced
+
+00:31:24.846 --> 00:31:26.306 A:middle
+Graphics and Animations for iOS
+
+00:31:26.306 --> 00:31:30.636 A:middle
+Apps from WWDC 2014.
+
+00:31:30.746 --> 00:31:31.956 A:middle
+&gt;&gt; Once you've identified that
+
+00:31:31.956 --> 00:31:33.816 A:middle
+your app is graphics-bound,
+
+00:31:34.146 --> 00:31:35.776 A:middle
+we've got some great low-hanging
+
+00:31:35.776 --> 00:31:37.096 A:middle
+fruit for you to investigate.
+
+00:31:38.396 --> 00:31:39.396 A:middle
+Usually, you have a
+
+00:31:39.396 --> 00:31:40.886 A:middle
+graphics-bound app due to
+
+00:31:40.886 --> 00:31:42.986 A:middle
+overuse of one of two things:
+
+00:31:43.696 --> 00:31:45.826 A:middle
+visual effects, or masking and
+
+00:31:45.826 --> 00:31:46.276 A:middle
+clipping.
+
+00:31:47.186 --> 00:31:49.226 A:middle
+Visual effects, like blur and
+
+00:31:49.226 --> 00:31:51.476 A:middle
+vibrancy, are expensive, and so
+
+00:31:51.476 --> 00:31:52.876 A:middle
+you should use them tastefully
+
+00:31:53.056 --> 00:31:53.936 A:middle
+within your apps.
+
+00:31:54.896 --> 00:31:56.766 A:middle
+You should also definitely avoid
+
+00:31:56.906 --> 00:31:58.686 A:middle
+things like blurs on blurs on
+
+00:31:58.686 --> 00:32:00.616 A:middle
+blurs, as this will cause the
+

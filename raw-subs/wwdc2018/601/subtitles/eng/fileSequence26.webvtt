@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.726 --> 00:26:00.556 A:middle
+you need to take care of, which
+
+00:26:00.556 --> 00:26:03.886 A:middle
+is Airplay Screen Mirroring, and
+
+00:26:04.226 --> 00:26:05.386 A:middle
+I would like to show you how you
+
+00:26:05.386 --> 00:26:07.236 A:middle
+could do this using this code
+
+00:26:07.236 --> 00:26:08.956 A:middle
+example for the notification
+
+00:26:08.956 --> 00:26:09.496 A:middle
+handler.
+
+00:26:10.246 --> 00:26:12.796 A:middle
+And basically, in the case of a
+
+00:26:12.796 --> 00:26:14.526 A:middle
+screen mirroring there's always
+
+00:26:14.566 --> 00:26:16.496 A:middle
+more than one screen and this
+
+00:26:16.496 --> 00:26:18.316 A:middle
+array called Screens is going to
+
+00:26:18.316 --> 00:26:20.506 A:middle
+have more than one element, and
+
+00:26:20.786 --> 00:26:22.776 A:middle
+even though that isCaptured is
+
+00:26:22.776 --> 00:26:24.686 A:middle
+going to return yes during the
+
+00:26:24.686 --> 00:26:26.906 A:middle
+screen mirroring session, we
+
+00:26:26.906 --> 00:26:28.506 A:middle
+have this extra check that will
+
+00:26:28.506 --> 00:26:30.386 A:middle
+allow your playback to continue.
+
+00:26:30.896 --> 00:26:36.116 A:middle
+So this is the Live Screen
+
+00:26:36.556 --> 00:26:37.826 A:middle
+Broadcast and how it really
+
+00:26:37.826 --> 00:26:38.316 A:middle
+works.
+
+00:26:38.316 --> 00:26:41.266 A:middle
+And to summarize, ReplayKit
+
+00:26:41.266 --> 00:26:42.966 A:middle
+provides high level API that
+
+00:26:42.966 --> 00:26:44.696 A:middle
+allows your broadcast content of
+
+00:26:44.696 --> 00:26:47.736 A:middle
+just one app or all your
+
+00:26:47.736 --> 00:26:48.716 A:middle
+onscreen activity.
+
+00:26:50.116 --> 00:26:53.416 A:middle
+In iOS 12 we provide you an API
+
+00:26:53.936 --> 00:26:55.466 A:middle
+or a way to initiate the system
+
+00:26:55.466 --> 00:26:57.126 A:middle
+broadcast directly from your
+
+00:26:57.126 --> 00:26:58.306 A:middle
+broadcast application.
+
+00:26:59.756 --> 00:27:01.756 A:middle
+And what you actually need to
+

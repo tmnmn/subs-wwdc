@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:55.686 --> 00:36:00.576 A:middle
+So with persistence, tile, the
+
+00:36:00.706 --> 00:36:02.116 A:middle
+tile shading stage can now write
+
+00:36:02.116 --> 00:36:03.716 A:middle
+both the depth bounds and the
+
+00:36:03.716 --> 00:36:05.086 A:middle
+culled light lists into
+
+00:36:05.086 --> 00:36:06.416 A:middle
+threadgroup memory for later
+
+00:36:06.416 --> 00:36:07.766 A:middle
+draws to use.
+
+00:36:08.716 --> 00:36:09.996 A:middle
+This means that now all our
+
+00:36:09.996 --> 00:36:11.256 A:middle
+intermediate data stays on ship
+
+00:36:11.766 --> 00:36:13.056 A:middle
+and never leaves the GPU.
+
+00:36:13.056 --> 00:36:14.506 A:middle
+Only the final image is stored
+
+00:36:14.506 --> 00:36:15.186 A:middle
+at system memory.
+
+00:36:16.556 --> 00:36:17.876 A:middle
+Minimizing bandwidth to system
+
+00:36:17.876 --> 00:36:19.516 A:middle
+memory is, again, very important
+
+00:36:19.516 --> 00:36:21.316 A:middle
+for your game's performance and
+
+00:36:21.316 --> 00:36:21.596 A:middle
+playtime.
+
+00:36:21.676 --> 00:36:24.546 A:middle
+Now, let's take a look at how
+
+00:36:24.546 --> 00:36:25.616 A:middle
+easy it is to make use of
+
+00:36:25.616 --> 00:36:27.006 A:middle
+persistence in the shading
+
+00:36:27.006 --> 00:36:27.466 A:middle
+language.
+
+00:36:31.336 --> 00:36:33.166 A:middle
+Okay, so the top function here
+
+00:36:33.166 --> 00:36:34.376 A:middle
+is our tile shader, and it's
+
+00:36:34.376 --> 00:36:35.036 A:middle
+going to perform our light
+
+00:36:35.036 --> 00:36:35.426 A:middle
+culling.
+
+00:36:35.726 --> 00:36:37.396 A:middle
+It intersects each light with a
+
+00:36:37.396 --> 00:36:39.276 A:middle
+per-tile frustum to compute an
+
+00:36:39.276 --> 00:36:41.026 A:middle
+active light mask.
+
+00:36:41.876 --> 00:36:43.096 A:middle
+The bottom function is our
+
+00:36:43.096 --> 00:36:44.376 A:middle
+fragment shader that performs
+
+00:36:44.376 --> 00:36:45.206 A:middle
+our forward shading.
+
+00:36:45.696 --> 00:36:46.846 A:middle
+It shades only the lights
+
+00:36:46.846 --> 00:36:48.486 A:middle
+intersecting the tile using that
+
+00:36:48.486 --> 00:36:49.806 A:middle
+active light mask.
+
+00:36:51.456 --> 00:36:53.256 A:middle
+Now, sharing threadgroup memory
+
+00:36:53.256 --> 00:36:54.766 A:middle
+across these functions is
+
+00:36:54.766 --> 00:36:56.116 A:middle
+achieved by using the same type
+
+00:36:56.406 --> 00:36:58.586 A:middle
+and bind point across both
+
+00:36:58.586 --> 00:36:59.116 A:middle
+shaders.
+

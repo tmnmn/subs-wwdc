@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.539 --> 00:09:00.841 align:middle line:-1
+你将从本地设备建立连接
+
+00:09:01.108 --> 00:09:02.009 align:middle line:-1
+到你的服务器
+
+00:09:02.543 --> 00:09:05.479 align:middle line:-1
+或本地网络上的其它对等设备
+
+00:09:07.114 --> 00:09:08.348 align:middle line:-1
+但你可能在想
+
+00:09:08.916 --> 00:09:11.318 align:middle line:-1
+哪种连接适合使用
+
+00:09:11.385 --> 00:09:12.452 align:middle line:-1
+Network.framework呢
+
+00:09:12.653 --> 00:09:13.887 align:middle line:-1
+有什么用例？
+
+00:09:14.521 --> 00:09:20.027 align:middle line:-2
+让我们首先探讨一些可能正在使用
+套接字的app
+
+00:09:20.460 --> 00:09:23.197 align:middle line:-2
+它们若能在以后利用
+Network.framework
+
+00:09:23.263 --> 00:09:24.965 align:middle line:-1
+将会大有裨益
+
+00:09:26.900 --> 00:09:28.669 align:middle line:-1
+我要强调的第一种
+
+00:09:29.136 --> 00:09:30.370 align:middle line:-1
+是游戏app
+
+00:09:30.971 --> 00:09:35.042 align:middle line:-2
+游戏app通常使用UDP
+在两台设备间实时发送
+
+00:09:35.108 --> 00:09:38.412 align:middle line:-1
+关于游戏状态的数据
+
+00:09:39.446 --> 00:09:42.182 align:middle line:-1
+它们非常重视优化延迟
+
+00:09:42.316 --> 00:09:44.985 align:middle line:-2
+并确保没有任何滞后
+或任何被丢弃的东西
+
+00:09:45.953 --> 00:09:47.688 align:middle line:-1
+如果你有这样的app
+
+00:09:48.288 --> 00:09:50.190 align:middle line:-2
+你会爱上
+Network.framework
+
+00:09:50.257 --> 00:09:52.693 align:middle line:-1
+因为它允许你真正优化UDP
+
+00:09:52.893 --> 00:09:56.830 align:middle line:-1
+发送和接收比以往更快
+
+00:09:56.897 --> 00:09:58.765 align:middle line:-1
+以及具有尽可能短的延迟时间
+

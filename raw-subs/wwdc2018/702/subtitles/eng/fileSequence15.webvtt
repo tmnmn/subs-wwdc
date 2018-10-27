@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.046 --> 00:15:00.776 A:middle
+But initiating capture requires
+
+00:15:00.776 --> 00:15:01.726 A:middle
+user authorization.
+
+00:15:03.016 --> 00:15:04.706 A:middle
+And this applies to all devices
+
+00:15:04.706 --> 00:15:05.736 A:middle
+supported by the built-in
+
+00:15:05.736 --> 00:15:06.176 A:middle
+drivers.
+
+00:15:09.096 --> 00:15:13.946 A:middle
+Now your app can query the
+
+00:15:14.216 --> 00:15:15.316 A:middle
+authorization status.
+
+00:15:15.966 --> 00:15:18.526 A:middle
+And this is useful if you'd like
+
+00:15:18.526 --> 00:15:20.086 A:middle
+your app's user experience to
+
+00:15:20.086 --> 00:15:21.386 A:middle
+reflect user's previous
+
+00:15:21.796 --> 00:15:22.276 A:middle
+decisions.
+
+00:15:23.356 --> 00:15:24.906 A:middle
+And this API provided by
+
+00:15:24.906 --> 00:15:27.036 A:middle
+AVFoundation is the same as on
+
+00:15:27.036 --> 00:15:27.226 A:middle
+iOS.
+
+00:15:27.226 --> 00:15:29.956 A:middle
+And what's interesting is it
+
+00:15:29.996 --> 00:15:31.366 A:middle
+doesn't just return a simple
+
+00:15:31.366 --> 00:15:32.596 A:middle
+Boolean yes/no.
+
+00:15:33.456 --> 00:15:34.416 A:middle
+It actually returns an
+
+00:15:34.416 --> 00:15:36.006 A:middle
+enumeration of four possible
+
+00:15:36.006 --> 00:15:36.456 A:middle
+values.
+
+00:15:36.676 --> 00:15:39.196 A:middle
+And I'd like to drill down on
+
+00:15:39.306 --> 00:15:40.576 A:middle
+those because I think these are
+
+00:15:40.576 --> 00:15:41.116 A:middle
+relevant.
+
+00:15:41.836 --> 00:15:44.166 A:middle
+The first one, notDetermined,
+
+00:15:44.166 --> 00:15:45.456 A:middle
+means that the user has not
+
+00:15:45.496 --> 00:15:47.376 A:middle
+previously been consented for
+
+00:15:47.376 --> 00:15:49.016 A:middle
+your app to access the camera or
+
+00:15:49.016 --> 00:15:49.636 A:middle
+microphone.
+
+00:15:51.256 --> 00:15:53.166 A:middle
+So should your app try to access
+
+00:15:53.536 --> 00:15:55.636 A:middle
+that hardware, the operating
+
+00:15:55.636 --> 00:15:56.796 A:middle
+system will display a prompt at
+
+00:15:56.796 --> 00:15:56.976 A:middle
+that time.
+

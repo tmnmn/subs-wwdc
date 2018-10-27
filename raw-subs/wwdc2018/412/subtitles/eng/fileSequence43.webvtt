@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:58.636 --> 00:43:00.226 A:middle
+negative 30 to insert it towards
+
+00:43:00.226 --> 00:43:00.806 A:middle
+the left-hand side.
+
+00:43:01.116 --> 00:43:03.246 A:middle
+So what I want to do is I want
+
+00:43:03.246 --> 00:43:04.576 A:middle
+to try out that fix to invert
+
+00:43:04.576 --> 00:43:05.126 A:middle
+the constant.
+
+00:43:05.126 --> 00:43:06.236 A:middle
+I will make use of the same
+
+00:43:06.236 --> 00:43:07.986 A:middle
+technique that Chris introduced
+
+00:43:07.986 --> 00:43:09.526 A:middle
+earlier by simply applying it
+
+00:43:09.666 --> 00:43:10.286 A:middle
+through LLDB.
+
+00:43:11.086 --> 00:43:13.096 A:middle
+So, with this constraint
+
+00:43:13.096 --> 00:43:19.026 A:middle
+selected, I'll select edit,
+
+00:43:19.286 --> 00:43:19.716 A:middle
+copy.
+
+00:43:20.396 --> 00:43:22.536 A:middle
+And I will bring up the console
+
+00:43:22.536 --> 00:43:24.416 A:middle
+area at the bottom, and what
+
+00:43:24.796 --> 00:43:27.916 A:middle
+this copying gives me is the
+
+00:43:28.236 --> 00:43:28.986 A:middle
+[inaudible] pointer to the
+
+00:43:28.986 --> 00:43:30.246 A:middle
+selected object, and that works
+
+00:43:30.246 --> 00:43:31.876 A:middle
+for all objects that you select
+
+00:43:31.876 --> 00:43:32.996 A:middle
+in the view debugger as well as
+
+00:43:32.996 --> 00:43:33.846 A:middle
+in the memory graph debugger.
+
+00:43:33.846 --> 00:43:35.306 A:middle
+It makes it super convenient to
+
+00:43:35.306 --> 00:43:36.166 A:middle
+use them in the console.
+
+00:43:36.426 --> 00:43:37.206 A:middle
+So let's --
+
+00:43:38.516 --> 00:43:41.616 A:middle
+[ Applause ]
+
+00:43:42.116 --> 00:43:42.366 A:middle
+Thank you.
+
+00:43:43.326 --> 00:43:44.026 A:middle
+Let's print the debug
+
+00:43:44.026 --> 00:43:45.366 A:middle
+description and we can confirm
+
+00:43:45.366 --> 00:43:46.746 A:middle
+that the constant is in fact
+
+00:43:46.966 --> 00:43:47.726 A:middle
+positive 30.
+
+00:43:48.236 --> 00:43:49.596 A:middle
+That's what we saw in the
+
+00:43:49.596 --> 00:43:50.286 A:middle
+inspector as well.
+
+00:43:50.496 --> 00:43:52.236 A:middle
+So let's set the constant to
+
+00:43:52.236 --> 00:43:52.846 A:middle
+negative 30.
+
+00:43:53.226 --> 00:43:54.836 A:middle
+I'll type e, which is the super
+
+00:43:54.836 --> 00:43:57.076 A:middle
+short form of expression by
+
+00:43:57.076 --> 00:43:59.786 A:middle
+casting the pointer and then say
+
+00:43:59.786 --> 00:44:02.776 A:middle
+set constant to negative 30.
+

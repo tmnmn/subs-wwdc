@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:01.026 --> 00:39:02.266 A:middle
+All right, now we come to my
+
+00:39:02.266 --> 00:39:03.126 A:middle
+very favorite topic in the
+
+00:39:03.126 --> 00:39:03.366 A:middle
+world.
+
+00:39:03.836 --> 00:39:05.216 A:middle
+Unsatisfiable Constraints.
+
+00:39:06.226 --> 00:39:09.526 A:middle
+OK, so what are unsatisfiable
+
+00:39:09.526 --> 00:39:10.146 A:middle
+constraints?
+
+00:39:10.226 --> 00:39:11.116 A:middle
+If you haven't run into this
+
+00:39:11.116 --> 00:39:13.216 A:middle
+before, this is what happens
+
+00:39:13.216 --> 00:39:14.856 A:middle
+when you do something like, hey
+
+00:39:15.396 --> 00:39:16.806 A:middle
+this view should be 50 points
+
+00:39:16.806 --> 00:39:18.486 A:middle
+wide, also it should be 200
+
+00:39:18.486 --> 00:39:18.936 A:middle
+points wide.
+
+00:39:19.836 --> 00:39:21.356 A:middle
+Well, that's not really going to
+
+00:39:21.356 --> 00:39:21.606 A:middle
+work.
+
+00:39:21.976 --> 00:39:23.686 A:middle
+These are not actually quantum
+
+00:39:23.686 --> 00:39:24.116 A:middle
+phones.
+
+00:39:25.276 --> 00:39:26.436 A:middle
+You know, I can't speak to the
+
+00:39:26.436 --> 00:39:30.696 A:middle
+future but so the engine has to
+
+00:39:30.696 --> 00:39:31.876 A:middle
+kind of calculate the fact that
+
+00:39:31.876 --> 00:39:33.906 A:middle
+there's no layout available and
+
+00:39:33.906 --> 00:39:35.566 A:middle
+break a constraint in order to
+
+00:39:35.956 --> 00:39:37.386 A:middle
+generate some sort of layout for
+
+00:39:37.386 --> 00:39:37.556 A:middle
+you.
+
+00:39:38.536 --> 00:39:39.626 A:middle
+When it breaks that constraint
+
+00:39:40.246 --> 00:39:42.026 A:middle
+it sends a very detailed log to
+
+00:39:42.386 --> 00:39:43.496 A:middle
+your debugger, possibly you've
+
+00:39:43.496 --> 00:39:46.026 A:middle
+seen it, that says, hey
+
+00:39:46.026 --> 00:39:47.316 A:middle
+unsatisfiable constraints.
+
+00:39:47.636 --> 00:39:48.476 A:middle
+Here's the constraint that I
+
+00:39:48.476 --> 00:39:49.876 A:middle
+broke and here's all the other
+
+00:39:49.876 --> 00:39:51.476 A:middle
+ones that affected, that caused
+
+00:39:51.476 --> 00:39:52.186 A:middle
+me to have to break it.
+
+00:39:53.146 --> 00:39:54.836 A:middle
+So this can sometimes affect
+
+00:39:55.366 --> 00:39:56.856 A:middle
+performance directly and it can
+
+00:39:56.856 --> 00:39:57.986 A:middle
+also mask other issues.
+
+00:39:57.986 --> 00:39:59.186 A:middle
+So it's a good idea to get them
+
+00:39:59.186 --> 00:39:59.596 A:middle
+debugged.
+

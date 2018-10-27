@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:00.036 --> 00:06:02.676 A:middle
+It is, actually, quite simple.
+
+00:06:03.106 --> 00:06:05.016 A:middle
+It only uses the rotation data
+
+00:06:05.016 --> 00:06:07.166 A:middle
+from core motion, which applies
+
+00:06:07.326 --> 00:06:09.146 A:middle
+sensor fusion to the motion
+
+00:06:09.146 --> 00:06:09.986 A:middle
+sensors data.
+
+00:06:11.426 --> 00:06:13.626 A:middle
+As motion data is provided at a
+
+00:06:13.756 --> 00:06:15.696 A:middle
+higher frequency than the camera
+
+00:06:15.696 --> 00:06:17.936 A:middle
+image, Orientation Tracking
+
+00:06:18.206 --> 00:06:20.736 A:middle
+takes the latest motion data
+
+00:06:20.736 --> 00:06:22.616 A:middle
+from commotion, once the camera
+
+00:06:22.616 --> 00:06:23.636 A:middle
+image is available.
+
+00:06:23.776 --> 00:06:25.766 A:middle
+And then, returns both results
+
+00:06:26.086 --> 00:06:27.206 A:middle
+in an ARFrame.
+
+00:06:27.526 --> 00:06:28.066 A:middle
+So, that's it.
+
+00:06:28.126 --> 00:06:28.956 A:middle
+Very simple.
+
+00:06:29.686 --> 00:06:31.726 A:middle
+So, please note that the camera
+
+00:06:31.726 --> 00:06:33.266 A:middle
+feed is not processed in
+
+00:06:33.266 --> 00:06:34.526 A:middle
+Orientation Tracking.
+
+00:06:34.856 --> 00:06:35.956 A:middle
+Meaning there's no computer
+
+00:06:35.956 --> 00:06:37.036 A:middle
+version under the hood here.
+
+00:06:38.286 --> 00:06:40.376 A:middle
+Now, to run Orientation Tracking
+
+00:06:40.986 --> 00:06:43.096 A:middle
+you only need to configure your
+
+00:06:43.286 --> 00:06:45.876 A:middle
+ARSession with an AROrientation
+
+00:06:45.876 --> 00:06:47.256 A:middle
+TrackingConfiguration.
+
+00:06:48.266 --> 00:06:49.686 A:middle
+The results will then be
+
+00:06:49.686 --> 00:06:52.216 A:middle
+returned in an ARCamera object
+
+00:06:52.996 --> 00:06:55.116 A:middle
+provided by the ARFrames.
+
+00:06:55.116 --> 00:06:57.926 A:middle
+Now, an ARCamera object always
+
+00:06:57.926 --> 00:06:59.826 A:middle
+contains the transform, which in
+
+00:06:59.826 --> 00:07:01.106 A:middle
+this case of Orientation
+

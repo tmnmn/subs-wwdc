@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.146 --> 00:26:00.446 A:middle
+the user without launching the
+
+00:26:00.446 --> 00:26:00.566 A:middle
+app.
+
+00:26:01.216 --> 00:26:02.706 A:middle
+Think about the carrot whether
+
+00:26:02.706 --> 00:26:03.986 A:middle
+example from a couple slides
+
+00:26:03.986 --> 00:26:05.496 A:middle
+ago, were you could tell that it
+
+00:26:05.496 --> 00:26:07.666 A:middle
+was 72 degrees and cloudy just
+
+00:26:07.666 --> 00:26:08.676 A:middle
+by looking at the platter.
+
+00:26:08.916 --> 00:26:09.626 A:middle
+You didn't have to tap.
+
+00:26:11.246 --> 00:26:13.586 A:middle
+To help with this case, we added
+
+00:26:13.586 --> 00:26:15.366 A:middle
+a background refresh task called
+
+00:26:15.366 --> 00:26:16.666 A:middle
+WKRelevantShortcut
+
+00:26:16.736 --> 00:26:18.056 A:middle
+RefreshBackgroundTask.
+
+00:26:19.176 --> 00:26:20.986 A:middle
+When you get this task before
+
+00:26:21.076 --> 00:26:22.836 A:middle
+sure to check if your data needs
+
+00:26:22.836 --> 00:26:24.956 A:middle
+to be updated and then supply
+
+00:26:24.956 --> 00:26:25.956 A:middle
+new relevant shortcuts.
+
+00:26:27.416 --> 00:26:29.486 A:middle
+We factor in user engagement
+
+00:26:29.486 --> 00:26:30.986 A:middle
+when scheduling these background
+
+00:26:31.036 --> 00:26:34.256 A:middle
+tasks and glances count as
+
+00:26:34.256 --> 00:26:34.736 A:middle
+engagement.
+
+00:26:38.456 --> 00:26:40.086 A:middle
+If you have an intent-based
+
+00:26:40.086 --> 00:26:41.696 A:middle
+shortcut, your intent might
+
+00:26:41.696 --> 00:26:43.676 A:middle
+update applications when it
+
+00:26:43.676 --> 00:26:45.066 A:middle
+executes in the background.
+
+00:26:46.556 --> 00:26:48.516 A:middle
+Since the intents extension is
+
+00:26:48.646 --> 00:26:50.026 A:middle
+in a separate process from your
+
+00:26:50.026 --> 00:26:51.906 A:middle
+Watch Kit extension, we're now
+
+00:26:51.906 --> 00:26:53.346 A:middle
+supplying a new refresh
+
+00:26:53.376 --> 00:26:54.756 A:middle
+background task called
+
+00:26:54.816 --> 00:26:56.616 A:middle
+WKIntentDidRun
+
+00:26:56.696 --> 00:26:58.856 A:middle
+RefreshBackgroundTask to let
+
+00:26:58.856 --> 00:27:01.386 A:middle
+your main extension run and
+

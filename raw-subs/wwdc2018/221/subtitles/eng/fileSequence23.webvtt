@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.226 --> 00:23:00.846 A:middle
+Our NSTextBlock subclass needs
+
+00:23:00.846 --> 00:23:02.756 A:middle
+to have some padding with some
+
+00:23:02.756 --> 00:23:04.626 A:middle
+extra padding on the top and a
+
+00:23:04.626 --> 00:23:07.346 A:middle
+light gray background.
+
+00:23:07.546 --> 00:23:08.906 A:middle
+We'll override drawBackground
+
+00:23:09.566 --> 00:23:11.346 A:middle
+and use string drawing to draw
+
+00:23:11.346 --> 00:23:12.666 A:middle
+the header Swift Code.
+
+00:23:13.606 --> 00:23:14.836 A:middle
+Now this is actually all we need
+
+00:23:14.836 --> 00:23:16.386 A:middle
+to do to make a text block look
+
+00:23:16.386 --> 00:23:18.886 A:middle
+like a code snippet.
+
+00:23:18.986 --> 00:23:20.216 A:middle
+Now back in our custom text
+
+00:23:20.216 --> 00:23:21.866 A:middle
+storage, we can create an
+
+00:23:21.866 --> 00:23:23.076 A:middle
+instance of our new code block
+
+00:23:24.256 --> 00:23:25.856 A:middle
+instead of using a plain text
+
+00:23:27.156 --> 00:23:27.286 A:middle
+block.
+
+00:23:27.856 --> 00:23:31.476 A:middle
+Now, last but not least, we need
+
+00:23:31.476 --> 00:23:32.896 A:middle
+to tell our text view to use one
+
+00:23:32.896 --> 00:23:34.606 A:middle
+of our custom text storages, so
+
+00:23:34.606 --> 00:23:36.076 A:middle
+we'll replace the text storage
+
+00:23:36.116 --> 00:23:37.096 A:middle
+on the layout manager.
+
+00:23:37.706 --> 00:23:41.076 A:middle
+Now this is turning into a real
+
+00:23:41.076 --> 00:23:42.266 A:middle
+WYSIWYG Markdown editor.
+
+00:23:43.126 --> 00:23:44.366 A:middle
+Now a popular feature of most
+
+00:23:44.366 --> 00:23:45.556 A:middle
+Markdown editor's is a
+
+00:23:45.666 --> 00:23:47.726 A:middle
+side-by-side view with an
+
+00:23:47.726 --> 00:23:49.046 A:middle
+editing version on the left and
+
+00:23:49.046 --> 00:23:50.016 A:middle
+a rendering on the right.
+
+00:23:51.516 --> 00:23:52.996 A:middle
+Now we can do this with two text
+
+00:23:52.996 --> 00:23:54.426 A:middle
+views side-by-side.
+
+00:23:55.936 --> 00:23:57.406 A:middle
+We'll disable editing for the
+
+00:23:57.406 --> 00:23:57.946 A:middle
+one on the right.
+
+00:23:58.866 --> 00:24:00.376 A:middle
+And now we have two text views
+

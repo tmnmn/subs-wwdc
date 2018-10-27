@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:57.896 --> 00:11:01.676 A:middle
+Then we can call loadAPIRequest,
+
+00:11:03.046 --> 00:11:04.156 A:middle
+waiting for the completion block
+
+00:11:04.156 --> 00:11:06.986 A:middle
+to be called, making assertions
+
+00:11:06.986 --> 00:11:08.156 A:middle
+about the parsed response.
+
+00:11:10.776 --> 00:11:12.396 A:middle
+Couple of tests at this layer
+
+00:11:12.396 --> 00:11:14.246 A:middle
+can give us a lot of confidence
+
+00:11:14.516 --> 00:11:15.396 A:middle
+that our code is working
+
+00:11:15.396 --> 00:11:17.246 A:middle
+together well and, also, that
+
+00:11:17.246 --> 00:11:18.406 A:middle
+we're integrating properly with
+
+00:11:18.406 --> 00:11:18.966 A:middle
+the system.
+
+00:11:19.786 --> 00:11:21.176 A:middle
+For example, this test that we
+
+00:11:21.176 --> 00:11:23.416 A:middle
+just saw would have failed if I
+
+00:11:23.416 --> 00:11:24.876 A:middle
+had forgotten to call a resume
+
+00:11:24.906 --> 00:11:25.766 A:middle
+on my data task.
+
+00:11:26.606 --> 00:11:27.476 A:middle
+I'm sure I'm not the only one
+
+00:11:27.476 --> 00:11:29.000 A:middle
+who's made that mistake.
+
+00:11:33.096 --> 00:11:34.976 A:middle
+Finally, it can also be really
+
+00:11:34.976 --> 00:11:36.836 A:middle
+valuable to include some system
+
+00:11:36.836 --> 00:11:38.506 A:middle
+level end-to-end tests.
+
+00:11:39.776 --> 00:11:41.346 A:middle
+Actually test a UI testing can
+
+00:11:41.346 --> 00:11:43.126 A:middle
+be a great tool for this.
+
+00:11:44.236 --> 00:11:45.816 A:middle
+To learn more about UI testing,
+
+00:11:46.296 --> 00:11:47.886 A:middle
+refer to the UI testing in Xcode
+
+00:11:47.886 --> 00:11:50.506 A:middle
+session from WWDC 2015.
+
+00:11:51.146 --> 00:11:55.576 A:middle
+Now, a significant challenge
+
+00:11:56.016 --> 00:11:57.176 A:middle
+that you encounter when you
+
+00:11:57.176 --> 00:11:59.016 A:middle
+start to write true end-to-end
+
+00:11:59.016 --> 00:12:01.036 A:middle
+tests is that when something
+

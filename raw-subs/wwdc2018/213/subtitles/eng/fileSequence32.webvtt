@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.836 --> 00:32:01.896 A:middle
+CPManeuver you will set upcoming
+
+00:32:01.896 --> 00:32:03.726 A:middle
+maneuvers and the system will
+
+00:32:03.726 --> 00:32:05.076 A:middle
+automatically display a primary
+
+00:32:05.076 --> 00:32:05.526 A:middle
+maneuver.
+
+00:32:05.866 --> 00:32:07.306 A:middle
+And if you provide a second
+
+00:32:07.306 --> 00:32:08.476 A:middle
+maneuver it can display a
+
+00:32:08.476 --> 00:32:09.596 A:middle
+secondary maneuver on that
+
+00:32:09.596 --> 00:32:10.126 A:middle
+guidance card.
+
+00:32:11.096 --> 00:32:12.856 A:middle
+You will then use update
+
+00:32:12.856 --> 00:32:14.276 A:middle
+estimates for maneuver to
+
+00:32:14.276 --> 00:32:15.926 A:middle
+continually update what is being
+
+00:32:16.156 --> 00:32:17.436 A:middle
+shown in that guidance card.
+
+00:32:17.436 --> 00:32:19.286 A:middle
+And let your users know when
+
+00:32:19.386 --> 00:32:20.446 A:middle
+their maneuver is approaching.
+
+00:32:21.276 --> 00:32:22.786 A:middle
+And most likely, your app will
+
+00:32:22.786 --> 00:32:24.306 A:middle
+be playing back audio prompts to
+
+00:32:24.306 --> 00:32:25.186 A:middle
+let them know, as well.
+
+00:32:25.986 --> 00:32:27.246 A:middle
+For this, you'll want to make
+
+00:32:27.246 --> 00:32:28.496 A:middle
+sure that your audio session is
+
+00:32:28.496 --> 00:32:29.856 A:middle
+configured appropriately for
+
+00:32:29.856 --> 00:32:30.326 A:middle
+CarPlay.
+
+00:32:31.156 --> 00:32:32.966 A:middle
+We have to remember that when in
+
+00:32:32.966 --> 00:32:34.676 A:middle
+the car your users may be
+
+00:32:34.676 --> 00:32:35.686 A:middle
+listening to an audio source
+
+00:32:35.686 --> 00:32:37.596 A:middle
+from iOS or they may be
+
+00:32:37.596 --> 00:32:38.606 A:middle
+listening to an audio source
+
+00:32:38.606 --> 00:32:40.156 A:middle
+from the car, such as FM radio.
+
+00:32:41.036 --> 00:32:42.246 A:middle
+You want to configure your audio
+
+00:32:42.246 --> 00:32:43.066 A:middle
+session with
+
+00:32:43.066 --> 00:32:45.436 A:middle
+AVAudioSessionModeVoicePrompt as
+
+00:32:45.436 --> 00:32:47.366 A:middle
+this will let the CarPlay system
+
+00:32:47.766 --> 00:32:49.326 A:middle
+know when to appropriately duck
+
+00:32:49.376 --> 00:32:50.766 A:middle
+the audio source, regardless of
+
+00:32:50.766 --> 00:32:51.446 A:middle
+where it's coming from.
+
+00:32:51.776 --> 00:32:52.676 A:middle
+You can, also, configure your
+
+00:32:52.676 --> 00:32:54.496 A:middle
+session with the category
+
+00:32:54.496 --> 00:32:56.186 A:middle
+options duckOthers and
+
+00:32:56.186 --> 00:32:57.436 A:middle
+interruptSpokenAudio
+
+00:32:57.436 --> 00:32:58.126 A:middle
+AndMixWithOthers.
+
+00:32:58.186 --> 00:32:59.216 A:middle
+And this will help ensure that
+
+00:32:59.216 --> 00:33:01.136 A:middle
+your audio plays well with other
+

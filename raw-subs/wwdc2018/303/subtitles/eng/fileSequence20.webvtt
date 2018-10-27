@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.476 --> 00:20:00.756 A:middle
+might be in multiple groups,
+
+00:20:00.876 --> 00:20:01.086 A:middle
+right.
+
+00:20:01.416 --> 00:20:02.546 A:middle
+The way we have this structured,
+
+00:20:03.046 --> 00:20:04.316 A:middle
+the data for John Appleseed is
+
+00:20:04.316 --> 00:20:05.796 A:middle
+only in the response one time,
+
+00:20:05.956 --> 00:20:07.286 A:middle
+no matter how many groups they
+
+00:20:07.286 --> 00:20:08.786 A:middle
+appear in, in the response.
+
+00:20:08.906 --> 00:20:09.286 A:middle
+Make sense?
+
+00:20:09.916 --> 00:20:12.896 A:middle
+Okay. Sehoon is going to come
+
+00:20:12.896 --> 00:20:14.256 A:middle
+back up now and show us some
+
+00:20:14.256 --> 00:20:16.086 A:middle
+more real-world examples with
+
+00:20:16.086 --> 00:20:16.746 A:middle
+relationships.
+
+00:20:16.836 --> 00:20:17.196 A:middle
+Sehoon.
+
+00:20:18.516 --> 00:20:22.976 A:middle
+[ Applause ]
+
+00:20:23.476 --> 00:20:24.046 A:middle
+&gt;&gt; Thanks, Geoff.
+
+00:20:26.336 --> 00:20:28.176 A:middle
+So for this part of the demo
+
+00:20:28.256 --> 00:20:29.666 A:middle
+we'll look at TestFlight and see
+
+00:20:29.666 --> 00:20:30.746 A:middle
+how we can create new beta
+
+00:20:30.746 --> 00:20:32.276 A:middle
+groups and add some external
+
+00:20:32.276 --> 00:20:33.566 A:middle
+testers and we'll see some
+
+00:20:33.566 --> 00:20:35.216 A:middle
+relationship between testers and
+
+00:20:35.216 --> 00:20:35.636 A:middle
+groups.
+
+00:20:35.916 --> 00:20:36.976 A:middle
+So let's go see the demo.
+
+00:20:46.176 --> 00:20:48.116 A:middle
+We'll start by creating a new
+
+00:20:48.116 --> 00:20:49.746 A:middle
+beta group by posting to the
+
+00:20:49.746 --> 00:20:51.296 A:middle
+beta groups endpoint which is
+
+00:20:51.416 --> 00:20:52.806 A:middle
+v1/beta Groups.
+
+00:20:52.916 --> 00:20:55.546 A:middle
+When we're creating a resource,
+
+00:20:55.546 --> 00:20:56.696 A:middle
+we also need to provide the
+
+00:20:56.696 --> 00:20:57.926 A:middle
+payload that looks like this.
+
+00:20:57.986 --> 00:20:59.476 A:middle
+We have the data with the type
+
+00:20:59.476 --> 00:21:00.816 A:middle
+of beta Groups and a set of
+

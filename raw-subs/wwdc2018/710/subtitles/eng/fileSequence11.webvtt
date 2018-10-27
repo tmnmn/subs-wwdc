@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.636 --> 00:11:00.116 A:middle
+Firstly, you can handle this
+
+00:11:00.116 --> 00:11:02.206 A:middle
+response in the AppDelegate that
+
+00:11:02.206 --> 00:11:03.366 A:middle
+is associated with your
+
+00:11:03.366 --> 00:11:05.386 A:middle
+application that implements the
+
+00:11:05.386 --> 00:11:07.036 A:middle
+UNUserNotificationCenter
+
+00:11:07.036 --> 00:11:07.836 A:middle
+Delegate protocol.
+
+00:11:08.626 --> 00:11:09.716 A:middle
+Here, the function
+
+00:11:09.716 --> 00:11:11.206 A:middle
+UserNotificationCenter did
+
+00:11:11.206 --> 00:11:12.906 A:middle
+receive response, includes the
+
+00:11:12.906 --> 00:11:15.496 A:middle
+response object which includes
+
+00:11:15.496 --> 00:11:17.176 A:middle
+information about the request,
+
+00:11:17.516 --> 00:11:18.716 A:middle
+the notification request from
+
+00:11:18.716 --> 00:11:20.046 A:middle
+which the user took this action.
+
+00:11:21.346 --> 00:11:22.916 A:middle
+However, the content extension
+
+00:11:23.176 --> 00:11:24.826 A:middle
+also allows you to intercept
+
+00:11:24.946 --> 00:11:26.946 A:middle
+this action response so that you
+
+00:11:26.946 --> 00:11:28.906 A:middle
+can update your view and make a
+
+00:11:28.906 --> 00:11:30.026 A:middle
+much more interactive and
+
+00:11:30.026 --> 00:11:31.906 A:middle
+dynamic experience for users for
+
+00:11:31.906 --> 00:11:32.806 A:middle
+the content extension.
+
+00:11:33.586 --> 00:11:35.986 A:middle
+So for our sample here, we enter
+
+00:11:35.986 --> 00:11:37.506 A:middle
+the did receive response method
+
+00:11:38.366 --> 00:11:39.416 A:middle
+and checked the action
+
+00:11:39.416 --> 00:11:41.056 A:middle
+identifier for the like action.
+
+00:11:42.006 --> 00:11:44.196 A:middle
+And then we update our UI with
+
+00:11:44.306 --> 00:11:45.956 A:middle
+the new label as well as update
+
+00:11:45.956 --> 00:11:46.886 A:middle
+our application state.
+
+00:11:48.476 --> 00:11:50.146 A:middle
+Finally calling the completion
+
+00:11:50.146 --> 00:11:51.376 A:middle
+block we do not dismiss.
+
+00:11:51.956 --> 00:11:53.266 A:middle
+If you do want to dismiss your
+
+00:11:53.266 --> 00:11:54.476 A:middle
+content extension view here,
+
+00:11:54.696 --> 00:11:56.486 A:middle
+then you can simply change the
+
+00:11:56.486 --> 00:11:57.646 A:middle
+parameter you're passing to the
+
+00:11:57.646 --> 00:12:00.796 A:middle
+completion block to dismiss or
+

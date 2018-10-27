@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.746 --> 00:16:00.216 A:middle
+view we'll call setBounds at
+
+00:16:00.216 --> 00:16:02.076 A:middle
+setCenter on that Subview.
+
+00:16:03.306 --> 00:16:04.606 A:middle
+And that is the entire process.
+
+00:16:06.146 --> 00:16:07.686 A:middle
+So just step back and think for
+
+00:16:07.686 --> 00:16:08.096 A:middle
+a second.
+
+00:16:08.096 --> 00:16:08.996 A:middle
+Like, that is the step-by-step
+
+00:16:08.996 --> 00:16:09.976 A:middle
+process of Layout.
+
+00:16:10.206 --> 00:16:12.716 A:middle
+If you can try to internalize
+
+00:16:12.716 --> 00:16:13.906 A:middle
+that and get a feel for it,
+
+00:16:14.166 --> 00:16:15.236 A:middle
+you're going to have a much,
+
+00:16:15.236 --> 00:16:17.066 A:middle
+much, much better feel for
+
+00:16:17.066 --> 00:16:19.166 A:middle
+performance expectations around
+
+00:16:19.166 --> 00:16:19.586 A:middle
+this stuff.
+
+00:16:20.486 --> 00:16:21.896 A:middle
+In fact, let's see how that's
+
+00:16:21.896 --> 00:16:23.676 A:middle
+going right now, because now
+
+00:16:24.196 --> 00:16:26.206 A:middle
+when we look at this and we look
+
+00:16:26.206 --> 00:16:26.886 A:middle
+at this method that we were
+
+00:16:26.886 --> 00:16:28.416 A:middle
+looking at that where we're
+
+00:16:28.416 --> 00:16:29.506 A:middle
+deactivating constraints and
+
+00:16:29.506 --> 00:16:30.736 A:middle
+we're reactivating constraints,
+
+00:16:31.106 --> 00:16:32.346 A:middle
+think about what we just did and
+
+00:16:32.346 --> 00:16:33.656 A:middle
+think about what the engine is
+
+00:16:33.656 --> 00:16:34.206 A:middle
+going to be doing.
+
+00:16:35.596 --> 00:16:36.626 A:middle
+It's going to look like this.
+
+00:16:40.426 --> 00:16:42.136 A:middle
+Which we call churning [laughs].
+
+00:16:42.556 --> 00:16:45.226 A:middle
+So each operation it's doing is
+
+00:16:45.226 --> 00:16:47.246 A:middle
+not super expensive, but it's
+
+00:16:47.246 --> 00:16:49.576 A:middle
+doing a lot of them and it's
+
+00:16:49.576 --> 00:16:51.086 A:middle
+just completely unnecessary.
+
+00:16:51.086 --> 00:16:52.196 A:middle
+This work is wasted.
+
+00:16:52.726 --> 00:16:54.456 A:middle
+So if you can feel this in your
+
+00:16:54.456 --> 00:16:56.336 A:middle
+heart, if you can really feel
+
+00:16:56.406 --> 00:16:57.636 A:middle
+that this is what is happening
+
+00:16:58.046 --> 00:16:59.236 A:middle
+when you do this, then you're
+
+00:16:59.236 --> 00:17:00.046 A:middle
+going to be in good shape.
+

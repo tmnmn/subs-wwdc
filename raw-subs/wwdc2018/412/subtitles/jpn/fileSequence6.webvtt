@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:55.656 --> 00:06:00.561 align:start position:5% line:-2
+didReachSelectedHeightという
+条件が見えます
+
+00:06:00.661 --> 00:06:03.463 align:start position:32% line:-2
+このプロパティの値を
+確認しましょう
+
+00:06:03.564 --> 00:06:05.632 align:start position:32% line:-2
+デバッグコンソールに
+切り替え―
+
+00:06:05.732 --> 00:06:10.437 align:start position:27% line:-2
+poでプロパティ値を見ると
+trueになっています
+
+00:06:11.038 --> 00:06:15.742 align:start position:30% line:-2
+タップ検出を設定すると
+trueになりますが―
+
+00:06:15.843 --> 00:06:18.545 align:start position:36% line:-2
+falseに変え
+バグを再現します
+
+00:06:18.645 --> 00:06:22.950 align:start position:25% line:-2
+コードを変えて
+falseに設定できますが―
+
+00:06:23.050 --> 00:06:27.955 align:start position:27% line:-2
+デバッグのためだけに
+コードを変えるのは避けたい
+
+00:06:28.055 --> 00:06:31.491 align:start position:27% line:-1
+そこでデバッガを使うのです
+
+00:06:31.725 --> 00:06:35.262 align:start position:23% line:-2
+expressionコマンドを
+使います
+
+00:06:35.362 --> 00:06:39.766 align:start position:0% line:-2
+例えば
+didReachSelectedHeight = false
+
+00:06:39.867 --> 00:06:42.402 align:start position:34% line:-2
+これの評価と実行が
+行われると―
+
+00:06:42.503 --> 00:06:46.373 align:start position:29% line:-2
+プロパティが
+falseに変わりました
+
+00:06:46.473 --> 00:06:51.578 align:start position:23% line:-2
+“Step Over”ボタンで
+falseのブランチに進みます
+
+00:06:51.678 --> 00:06:57.150 align:start position:30% line:-2
+再開すると 飛行士は
+バーに到達せず倒れます
+
+00:06:57.251 --> 00:07:00.954 align:start position:36% line:-2
+一時停止して
+式を入力せずに―
+

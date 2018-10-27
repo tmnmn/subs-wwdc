@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.786 --> 00:02:00.316 A:middle
+However, it's worth mentioning
+
+00:02:00.316 --> 00:02:02.026 A:middle
+again because we are now
+
+00:02:02.026 --> 00:02:03.636 A:middle
+officially deprecating
+
+00:02:03.636 --> 00:02:03.976 A:middle
+UIWebView.
+
+00:02:04.516 --> 00:02:08.996 A:middle
+[ Applause ]
+
+00:02:09.496 --> 00:02:10.806 A:middle
+So, if you're starting a new
+
+00:02:10.806 --> 00:02:12.486 A:middle
+app, or a new project, and would
+
+00:02:12.486 --> 00:02:13.996 A:middle
+like to display web content
+
+00:02:13.996 --> 00:02:16.346 A:middle
+that's not easily put into a
+
+00:02:16.346 --> 00:02:18.426 A:middle
+native view, use the WKWebView.
+
+00:02:18.916 --> 00:02:20.196 A:middle
+And, even if you've used
+
+00:02:20.196 --> 00:02:21.806 A:middle
+UIWebView in the past, switching
+
+00:02:21.806 --> 00:02:22.936 A:middle
+might be easy for you.
+
+00:02:23.516 --> 00:02:24.856 A:middle
+It can definitely save you time
+
+00:02:24.856 --> 00:02:25.916 A:middle
+in development, if you're
+
+00:02:25.916 --> 00:02:27.596 A:middle
+developing apps for both macOS
+
+00:02:27.596 --> 00:02:30.426 A:middle
+and iOS, because WKWebView works
+
+00:02:30.586 --> 00:02:31.796 A:middle
+on both platforms.
+
+00:02:32.216 --> 00:02:34.396 A:middle
+Unlike UIWebView for iOS, and
+
+00:02:34.476 --> 00:02:35.336 A:middle
+WebView for macOS.
+
+00:02:35.336 --> 00:02:37.396 A:middle
+So, you can share a lot of code
+
+00:02:37.396 --> 00:02:38.526 A:middle
+between the two versions.
+
+00:02:39.926 --> 00:02:41.946 A:middle
+WKWebView also runs in a
+
+00:02:41.946 --> 00:02:43.436 A:middle
+completely separate process from
+
+00:02:43.436 --> 00:02:44.646 A:middle
+the rest of your app.
+
+00:02:44.766 --> 00:02:46.936 A:middle
+So, unlike UIWebView, even if
+
+00:02:46.936 --> 00:02:48.746 A:middle
+your web process is compromised,
+
+00:02:49.086 --> 00:02:50.816 A:middle
+it won't compromise your app.
+
+00:02:50.816 --> 00:02:52.386 A:middle
+If your web view has complex
+
+00:02:52.456 --> 00:02:54.576 A:middle
+content, you can't accidentally
+
+00:02:54.576 --> 00:02:55.766 A:middle
+cause your app to stall.
+
+00:02:56.296 --> 00:02:58.626 A:middle
+And, even if WKWebView crashes,
+
+00:02:59.726 --> 00:03:01.326 A:middle
+it's confined to the web view,
+

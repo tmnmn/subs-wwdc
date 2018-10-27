@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.576 --> 00:29:00.506 A:middle
+audience, we are introducing in
+
+00:29:00.566 --> 00:29:03.106 A:middle
+iOS 12 a new API to support such
+
+00:29:03.106 --> 00:29:03.566 A:middle
+flows.
+
+00:29:04.156 --> 00:29:04.916 A:middle
+We call it
+
+00:29:04.916 --> 00:29:06.976 A:middle
+ASWebAuthenticationSession and I
+
+00:29:06.976 --> 00:29:08.086 A:middle
+would like to show you how it
+
+00:29:08.086 --> 00:29:08.476 A:middle
+works.
+
+00:29:09.016 --> 00:29:12.136 A:middle
+Now, here I am back in the Shiny
+
+00:29:12.136 --> 00:29:12.336 A:middle
+app.
+
+00:29:12.916 --> 00:29:14.226 A:middle
+And this time I will choose to
+
+00:29:14.226 --> 00:29:16.696 A:middle
+log in with example.com, a super
+
+00:29:16.696 --> 00:29:17.906 A:middle
+popular social network.
+
+00:29:18.406 --> 00:29:21.566 A:middle
+Now, as soon as I tap the button
+
+00:29:21.726 --> 00:29:23.376 A:middle
+the app under the hood calls in
+
+00:29:23.376 --> 00:29:23.976 A:middle
+to the new
+
+00:29:23.976 --> 00:29:25.716 A:middle
+ASWebAuthenticationSession API.
+
+00:29:26.636 --> 00:29:28.316 A:middle
+Now, one of the ways in which
+
+00:29:28.316 --> 00:29:30.096 A:middle
+ASWebAuthenticationSession makes
+
+00:29:30.096 --> 00:29:32.406 A:middle
+logins faster is by sharing its
+
+00:29:32.406 --> 00:29:33.606 A:middle
+underlying cookie storage with
+
+00:29:33.606 --> 00:29:34.136 A:middle
+Safari.
+
+00:29:35.086 --> 00:29:36.896 A:middle
+Now, of course, before we do any
+
+00:29:36.896 --> 00:29:39.176 A:middle
+of this, iOS asks for explicit
+
+00:29:39.176 --> 00:29:39.886 A:middle
+user consent.
+
+00:29:40.316 --> 00:29:43.806 A:middle
+Upon consenting, the user is
+
+00:29:43.806 --> 00:29:44.926 A:middle
+presented with a secure view
+
+00:29:44.926 --> 00:29:46.796 A:middle
+controller and guided through
+
+00:29:46.796 --> 00:29:48.266 A:middle
+the third party's federated
+
+00:29:48.266 --> 00:29:49.206 A:middle
+authentication flow.
+
+00:29:50.456 --> 00:29:52.576 A:middle
+In this case, I'm already signed
+
+00:29:52.576 --> 00:29:55.356 A:middle
+into example.com in Safari on my
+
+00:29:55.356 --> 00:29:57.046 A:middle
+iPhone, so all I have to do is
+
+00:29:57.046 --> 00:29:57.656 A:middle
+tap Allow.
+
+00:29:57.806 --> 00:29:59.976 A:middle
+There we go.
+

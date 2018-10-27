@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.186 --> 00:26:00.316 A:middle
+you're only halfway there.
+
+00:26:00.976 --> 00:26:02.326 A:middle
+Next you want to really
+
+00:26:02.326 --> 00:26:04.166 A:middle
+understand what each of your
+
+00:26:04.166 --> 00:26:05.526 A:middle
+passes is doing.
+
+00:26:07.006 --> 00:26:08.916 A:middle
+And for this, we're added a new
+
+00:26:08.916 --> 00:26:10.466 A:middle
+tool to the Metal Frame Debugger
+
+00:26:10.466 --> 00:26:10.896 A:middle
+this year.
+
+00:26:11.496 --> 00:26:13.486 A:middle
+It's the Dependency graph.
+
+00:26:14.856 --> 00:26:17.586 A:middle
+The Dependency graph is a story
+
+00:26:17.586 --> 00:26:18.716 A:middle
+of a single frame.
+
+00:26:20.196 --> 00:26:21.866 A:middle
+It's made up of nodes and edges
+
+00:26:22.016 --> 00:26:23.426 A:middle
+and each one of these tell a
+
+00:26:23.426 --> 00:26:24.546 A:middle
+different part of the story.
+
+00:26:25.846 --> 00:26:28.146 A:middle
+Edges represent dependencies
+
+00:26:28.446 --> 00:26:29.486 A:middle
+between passes.
+
+00:26:29.956 --> 00:26:31.186 A:middle
+As you follow them from top to
+
+00:26:31.186 --> 00:26:32.786 A:middle
+bottom, you'll see where each
+
+00:26:32.786 --> 00:26:34.046 A:middle
+pass fits into your rendering
+
+00:26:34.046 --> 00:26:34.516 A:middle
+pipeline.
+
+00:26:34.776 --> 00:26:36.616 A:middle
+And how they work together to
+
+00:26:36.616 --> 00:26:37.446 A:middle
+create your frame.
+
+00:26:39.056 --> 00:26:40.666 A:middle
+Nodes on the other hand are the
+
+00:26:40.666 --> 00:26:43.326 A:middle
+story of a single pass.
+
+00:26:43.876 --> 00:26:45.366 A:middle
+They're made up of three main
+
+00:26:45.366 --> 00:26:46.066 A:middle
+components.
+
+00:26:46.526 --> 00:26:48.966 A:middle
+First, the title element will
+
+00:26:48.966 --> 00:26:49.966 A:middle
+give you the name of the pass.
+
+00:26:50.766 --> 00:26:51.846 A:middle
+Now I really want to emphasize
+
+00:26:51.846 --> 00:26:52.236 A:middle
+this.
+
+00:26:52.706 --> 00:26:53.636 A:middle
+Label everything.
+
+00:26:54.136 --> 00:26:55.266 A:middle
+It'll help you not only in the
+
+00:26:55.266 --> 00:26:56.626 A:middle
+Dependency viewer, but
+
+00:26:56.626 --> 00:26:57.886 A:middle
+throughout our entire suite of
+
+00:26:57.886 --> 00:26:58.356 A:middle
+tools.
+
+00:26:59.296 --> 00:27:01.176 A:middle
+Secondly, it'll allow you to
+

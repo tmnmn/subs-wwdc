@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.039 --> 00:29:02.176 align:middle line:-1
+能够正确渲染广色域内容
+
+00:29:02.242 --> 00:29:03.844 align:middle line:-1
+（屏外绘制）
+
+00:29:03.911 --> 00:29:07.314 align:middle line:-2
+你可以在app中
+使用UIGraphicsImageRenderer
+
+00:29:07.381 --> 00:29:09.183 align:middle line:-1
+渲染到屏幕外的地方
+
+00:29:09.249 --> 00:29:12.886 align:middle line:-2
+然后使用UIImageView
+在屏幕上进行高效显示
+
+00:29:15.088 --> 00:29:17.491 align:middle line:-2
+与我们在CALayer
+后备存储器中
+
+00:29:17.824 --> 00:29:20.494 align:middle line:-1
+引入的优化类似
+
+00:29:20.561 --> 00:29:23.697 align:middle line:-2
+我们也使
+UIGraphicsImageRenderer
+
+00:29:23.764 --> 00:29:26.867 align:middle line:-1
+能够动态增长其图像缓冲区的大小
+
+00:29:26.934 --> 00:29:31.038 align:middle line:-1
+这取决于你在操作块中执行的操作
+
+00:29:33.974 --> 00:29:37.811 align:middle line:-2
+如果你在iOS 12之前的
+操作系统上运行代码
+
+00:29:38.145 --> 00:29:39.746 align:middle line:-2
+你可以使用
+UIGraphicsImageRendererFormat
+
+00:29:39.813 --> 00:29:40.948 align:middle line:-1
+中的
+
+00:29:41.014 --> 00:29:44.384 align:middle line:-2
+prefersExtendedRange属性
+来告诉UIKit
+
+00:29:44.451 --> 00:29:46.954 align:middle line:-1
+你是否计划绘制广色域内容
+
+00:29:50.524 --> 00:29:52.860 align:middle line:-1
+但这里有一个中间地带
+
+00:29:53.393 --> 00:29:57.431 align:middle line:-2
+如果你主要将图像渲染
+到图形图像渲染器中
+
+00:29:58.232 --> 00:30:00.567 align:middle line:-1
+该图像可能使用
+

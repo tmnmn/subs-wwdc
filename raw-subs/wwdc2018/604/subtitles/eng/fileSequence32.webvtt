@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.116 --> 00:32:00.726 A:middle
+using their function names.
+
+00:32:01.906 --> 00:32:03.146 A:middle
+You create a render pipeline
+
+00:32:03.146 --> 00:32:05.316 A:middle
+descriptor object where you set
+
+00:32:05.316 --> 00:32:06.866 A:middle
+these shading functions and also
+
+00:32:06.866 --> 00:32:08.826 A:middle
+specify render target pixel
+
+00:32:08.826 --> 00:32:09.356 A:middle
+formats.
+
+00:32:10.306 --> 00:32:12.336 A:middle
+Finally, you use the device with
+
+00:32:12.336 --> 00:32:13.726 A:middle
+the descriptor object we've set
+
+00:32:13.726 --> 00:32:16.176 A:middle
+up to produce a pipeline state
+
+00:32:16.826 --> 00:32:17.026 A:middle
+object.
+
+00:32:18.136 --> 00:32:19.836 A:middle
+The most significant difference
+
+00:32:19.866 --> 00:32:21.906 A:middle
+between the OpenGL and Metal
+
+00:32:21.936 --> 00:32:25.316 A:middle
+graphics pipelines is that while
+
+00:32:25.316 --> 00:32:26.856 A:middle
+an OpenGL program object
+
+00:32:26.896 --> 00:32:28.196 A:middle
+contains just a vertex and
+
+00:32:28.226 --> 00:32:29.906 A:middle
+fragment shader pair Metal
+
+00:32:29.946 --> 00:32:31.816 A:middle
+pipeline objects also include a
+
+00:32:31.816 --> 00:32:33.536 A:middle
+vertex layout, blend state, and
+
+00:32:33.536 --> 00:32:34.726 A:middle
+render target pixel format.
+
+00:32:35.566 --> 00:32:36.776 A:middle
+So you need to know all of these
+
+00:32:36.816 --> 00:32:38.886 A:middle
+things before you build a
+
+00:32:39.696 --> 00:32:39.896 A:middle
+pipeline.
+
+00:32:40.016 --> 00:32:41.576 A:middle
+Having these extra pieces of
+
+00:32:41.646 --> 00:32:43.166 A:middle
+state in the pipeline enables
+
+00:32:43.166 --> 00:32:44.886 A:middle
+Metal to fully compile shaders
+
+00:32:44.886 --> 00:32:46.746 A:middle
+into GPU machine code upon
+
+00:32:46.816 --> 00:32:47.576 A:middle
+object creation.
+
+00:32:48.116 --> 00:32:49.006 A:middle
+This is something that's not
+
+00:32:49.006 --> 00:32:50.326 A:middle
+possible with OpenGL's program
+
+00:32:50.326 --> 00:32:50.836 A:middle
+objects.
+
+00:32:51.706 --> 00:32:52.796 A:middle
+Now you'll need to build a
+
+00:32:52.796 --> 00:32:54.146 A:middle
+system that allows you to create
+
+00:32:54.146 --> 00:32:55.896 A:middle
+pipelines when you initialize
+
+00:32:55.896 --> 00:32:56.086 A:middle
+your app.
+
+00:32:57.266 --> 00:32:58.236 A:middle
+It helps if you can choose a
+
+00:32:58.236 --> 00:32:59.816 A:middle
+canonical vertex layout and a
+
+00:32:59.816 --> 00:33:01.546 A:middle
+limited set of render targets.
+

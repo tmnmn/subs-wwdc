@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.646 --> 00:12:00.796 A:middle
+completion block to dismiss or
+
+00:12:00.796 --> 00:12:02.586 A:middle
+dismiss and forward, where we
+
+00:12:02.586 --> 00:12:03.896 A:middle
+will forward this response to
+
+00:12:03.896 --> 00:12:05.176 A:middle
+your AppDelegate function as
+
+00:12:05.176 --> 00:12:05.346 A:middle
+well.
+
+00:12:06.406 --> 00:12:07.676 A:middle
+All right, so now that we set
+
+00:12:07.676 --> 00:12:09.396 A:middle
+this up, we can see that when
+
+00:12:09.396 --> 00:12:10.776 A:middle
+the user takes the like action,
+
+00:12:11.136 --> 00:12:13.206 A:middle
+the content extension content
+
+00:12:13.206 --> 00:12:14.276 A:middle
+gets updated right there and
+
+00:12:14.276 --> 00:12:14.446 A:middle
+then.
+
+00:12:14.966 --> 00:12:16.516 A:middle
+So it's a much more interactive
+
+00:12:16.516 --> 00:12:17.946 A:middle
+experience for your user and
+
+00:12:17.946 --> 00:12:18.846 A:middle
+they're getting real-time
+
+00:12:18.846 --> 00:12:19.886 A:middle
+feedback.
+
+00:12:21.116 --> 00:12:22.566 A:middle
+However, if you look at the
+
+00:12:22.626 --> 00:12:23.966 A:middle
+current state of the content
+
+00:12:23.966 --> 00:12:26.576 A:middle
+extension, we see that there is
+
+00:12:26.576 --> 00:12:28.106 A:middle
+some redundant information.
+
+00:12:28.996 --> 00:12:30.526 A:middle
+The user has already taken the
+
+00:12:30.526 --> 00:12:32.136 A:middle
+like action, so having the
+
+00:12:32.136 --> 00:12:33.506 A:middle
+action there doesn't really
+
+00:12:33.506 --> 00:12:34.416 A:middle
+serve a purpose anymore.
+
+00:12:36.236 --> 00:12:38.206 A:middle
+Now notification actions, in
+
+00:12:38.206 --> 00:12:39.416 A:middle
+general, have certain
+
+00:12:39.416 --> 00:12:40.176 A:middle
+limitations.
+
+00:12:41.606 --> 00:12:43.506 A:middle
+They are not very dynamic and
+
+00:12:43.606 --> 00:12:45.316 A:middle
+can't be updated based on the
+
+00:12:45.316 --> 00:12:46.646 A:middle
+context of your content
+
+00:12:46.646 --> 00:12:47.226 A:middle
+extensions.
+
+00:12:48.696 --> 00:12:51.046 A:middle
+Also, these tend to be tied to
+
+00:12:51.046 --> 00:12:52.846 A:middle
+the notification categories that
+
+00:12:52.846 --> 00:12:54.336 A:middle
+you have to define at the time
+
+00:12:54.586 --> 00:12:55.726 A:middle
+of your application setup.
+
+00:12:56.946 --> 00:12:58.526 A:middle
+So we wanted to address these
+
+00:12:58.526 --> 00:13:00.396 A:middle
+issues and we have introduced a
+

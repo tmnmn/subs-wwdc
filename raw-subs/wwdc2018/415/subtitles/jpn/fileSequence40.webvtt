@@ -1,0 +1,73 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.832 --> 00:40:02.870 align:start position:23% line:-2
+パブリックとインターナル両方の
+宣言を含んでいます
+
+00:40:02.970 --> 00:40:05.005 align:start position:25% line:-2
+これで
+インターナルのSwiftを―
+
+00:40:05.105 --> 00:40:07.441 align:start position:18% line:-1
+Objective-Cが使用できます
+
+00:40:08.609 --> 00:40:09.977 align:start position:30% line:-2
+ただし
+フレームワーク用には―
+
+00:40:10.077 --> 00:40:13.213 align:start position:25% line:-2
+ヘッダはパブリックの宣言しか
+提供しません
+
+00:40:13.313 --> 00:40:15.449 align:start position:30% line:-2
+これ自体が
+ビルド結果に含まれる―
+
+00:40:15.549 --> 00:40:18.285 align:start position:25% line:-2
+パブリックインターフェイスの
+一部だからです
+
+00:40:20.521 --> 00:40:24.758 align:start position:18% line:-2
+さて Objective-Cクラスが
+ひも付く先は―
+
+00:40:24.858 --> 00:40:27.594 align:start position:29% line:-2
+Swiftクラスの
+マングル名になっています
+
+00:40:27.694 --> 00:40:30.698 align:start position:30% line:-2
+一部はモジュールの名前
+PetWallです
+
+00:40:31.865 --> 00:40:34.368 align:start position:34% line:-2
+モジュールについて
+少し説明した後―
+
+00:40:34.635 --> 00:40:36.703 align:start position:23% line:-1
+ルイスが この現象を解説します
+
+00:40:36.870 --> 00:40:41.208 align:start position:29% line:-2
+同じ名前で定義すると
+実行時に競合が発生します
+
+00:40:41.308 --> 00:40:44.711 align:start position:36% line:-2
+それを防ぐための
+マングル名です
+
+00:40:46.180 --> 00:40:50.184 align:start position:4% line:-2
+Objective-Cの  attribute  に
+識別子を持たせれば―
+
+00:40:50.284 --> 00:40:53.821 align:start position:30% line:-2
+任意の名前を
+指定することも可能です
+
+00:40:54.154 --> 00:40:59.026 align:start position:27% line:-2
+ただし 競合が起きないよう
+注意してください
+
+00:40:59.893 --> 00:41:05.265 align:start position:25% line:-2
+私自身はPWLと付けることで
+競合を回避しています
+

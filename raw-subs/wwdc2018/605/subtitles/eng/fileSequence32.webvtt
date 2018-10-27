@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.436 --> 00:32:00.626 A:middle
+this very frequently to make
+
+00:32:00.626 --> 00:32:02.046 A:middle
+sure the game remains smooth for
+
+00:32:02.046 --> 00:32:02.946 A:middle
+all participants.
+
+00:32:03.546 --> 00:32:04.926 A:middle
+By using this encoding format,
+
+00:32:05.066 --> 00:32:06.466 A:middle
+we were able to do those physics
+
+00:32:06.466 --> 00:32:09.266 A:middle
+updates at 60 fps, ensuring that
+
+00:32:09.266 --> 00:32:10.416 A:middle
+you get a smooth experience for
+
+00:32:10.416 --> 00:32:12.746 A:middle
+everyone in the game.
+
+00:32:13.456 --> 00:32:15.326 A:middle
+Now, I've talked about this.
+
+00:32:15.326 --> 00:32:16.826 A:middle
+We did some things with codable
+
+00:32:16.826 --> 00:32:17.896 A:middle
+and some things with BitStream
+
+00:32:17.896 --> 00:32:19.606 A:middle
+Codable that, you could have a
+
+00:32:19.606 --> 00:32:20.556 A:middle
+problem there because we're
+
+00:32:20.556 --> 00:32:21.586 A:middle
+encoding things two different
+
+00:32:21.586 --> 00:32:21.886 A:middle
+ways.
+
+00:32:22.306 --> 00:32:23.246 A:middle
+And that means now we need to
+
+00:32:23.246 --> 00:32:24.176 A:middle
+have two different code paths
+
+00:32:24.176 --> 00:32:24.956 A:middle
+through our application.
+
+00:32:26.146 --> 00:32:27.736 A:middle
+Swift helps us out again and
+
+00:32:27.736 --> 00:32:28.476 A:middle
+lets us figure out how to
+
+00:32:28.476 --> 00:32:29.626 A:middle
+combine them.
+
+00:32:30.166 --> 00:32:32.156 A:middle
+We then added constrained
+
+00:32:32.156 --> 00:32:34.416 A:middle
+extensions so that anything that
+
+00:32:34.416 --> 00:32:36.346 A:middle
+is codable in BitStream Codable,
+
+00:32:36.666 --> 00:32:37.646 A:middle
+we provide default
+
+00:32:37.646 --> 00:32:39.346 A:middle
+implementation of the BitStream
+
+00:32:39.346 --> 00:32:39.766 A:middle
+encoding.
+
+00:32:39.766 --> 00:32:42.816 A:middle
+And then we just go ahead and
+
+00:32:42.816 --> 00:32:45.166 A:middle
+use a binary [inaudible] encoder
+
+00:32:45.876 --> 00:32:47.506 A:middle
+to encode the data and stuff it
+
+00:32:47.506 --> 00:32:48.056 A:middle
+into BitStream.
+
+00:32:48.866 --> 00:32:51.576 A:middle
+And then anything, any struct
+
+00:32:51.576 --> 00:32:52.766 A:middle
+that is codable, we just add
+
+00:32:52.766 --> 00:32:53.896 A:middle
+that by marking it BitStream
+
+00:32:53.896 --> 00:32:54.226 A:middle
+Codable.
+
+00:32:54.956 --> 00:32:56.796 A:middle
+Now, this implementation then is
+
+00:32:56.796 --> 00:32:58.596 A:middle
+not as fast and compact as if we
+
+00:32:58.596 --> 00:32:59.936 A:middle
+went forward and made everything
+
+00:32:59.936 --> 00:33:01.156 A:middle
+BitStream Codable directly.
+

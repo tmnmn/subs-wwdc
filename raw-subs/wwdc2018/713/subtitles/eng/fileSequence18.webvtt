@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.606 --> 00:18:01.066 A:middle
+And then the Create ML to train
+
+00:18:01.066 --> 00:18:02.886 A:middle
+this is almost identical.
+
+00:18:03.996 --> 00:18:06.276 A:middle
+You load the training data into
+
+00:18:06.276 --> 00:18:08.346 A:middle
+a data table from the JSON.
+
+00:18:09.896 --> 00:18:12.996 A:middle
+Then you create and train a Word
+
+00:18:12.996 --> 00:18:14.336 A:middle
+Tagger, in this case instead of
+
+00:18:14.336 --> 00:18:16.426 A:middle
+a text classifier, and then you
+
+00:18:16.426 --> 00:18:17.806 A:middle
+write it out to disk.
+
+00:18:18.306 --> 00:18:20.576 A:middle
+Now, there are a number of other
+
+00:18:20.576 --> 00:18:23.026 A:middle
+options and APIs available in
+
+00:18:23.026 --> 00:18:23.626 A:middle
+Create ML.
+
+00:18:23.626 --> 00:18:24.906 A:middle
+I encourage you to, if you
+
+00:18:24.906 --> 00:18:26.026 A:middle
+haven't already, take a look at
+
+00:18:26.026 --> 00:18:27.826 A:middle
+the Create ML session, which
+
+00:18:27.826 --> 00:18:29.696 A:middle
+happened yesterday, and Create
+
+00:18:29.696 --> 00:18:31.306 A:middle
+ML documentation for more
+
+00:18:31.306 --> 00:18:32.236 A:middle
+information on that.
+
+00:18:33.066 --> 00:18:35.086 A:middle
+Now, once you have your model,
+
+00:18:35.276 --> 00:18:36.236 A:middle
+we then go to the inference
+
+00:18:36.236 --> 00:18:36.506 A:middle
+part.
+
+00:18:36.696 --> 00:18:38.406 A:middle
+So you take your model, you drag
+
+00:18:38.406 --> 00:18:39.796 A:middle
+it into your Xcode project.
+
+00:18:40.186 --> 00:18:41.846 A:middle
+Xcode compiles it and includes
+
+00:18:41.846 --> 00:18:43.126 A:middle
+it in your applications
+
+00:18:43.226 --> 00:18:45.156 A:middle
+resources, and then what do you
+
+00:18:45.156 --> 00:18:45.996 A:middle
+do at run time?
+
+00:18:46.686 --> 00:18:49.056 A:middle
+Well, it's a Core ML model.
+
+00:18:49.056 --> 00:18:50.136 A:middle
+You could use it like any other
+
+00:18:50.136 --> 00:18:51.736 A:middle
+Core ML model, but the
+
+00:18:51.736 --> 00:18:53.626 A:middle
+interesting thing is that these
+
+00:18:53.626 --> 00:18:56.216 A:middle
+models are able to work well
+
+00:18:56.596 --> 00:18:58.706 A:middle
+with the Natural Language APIs
+
+00:18:59.356 --> 00:19:01.566 A:middle
+just like our built-in models
+

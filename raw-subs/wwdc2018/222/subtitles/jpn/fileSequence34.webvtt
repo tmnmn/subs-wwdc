@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:55.936 --> 00:34:00.040 align:start position:21% line:-2
+統合された実装は型と
+null化可能性をチェックします
+
+00:34:00.140 --> 00:34:05.846 align:start position:27% line:-2
+しかし 外部ソースの型は
+多くが追加の検証を要します
+
+00:34:06.680 --> 00:34:08.549 align:start position:36% line:-1
+さらに検証します
+
+00:34:09.750 --> 00:34:14.353 align:start position:21% line:-2
+デコーダのinitで上書きすると
+可能になります
+
+00:34:14.455 --> 00:34:17.491 align:start position:21% line:-1
+やはりJSONはレスポンスが早く
+
+00:34:17.591 --> 00:34:22.728 align:start position:27% line:-2
+同名のフィールドで型を作り
+Codable型に変えます
+
+00:34:23.630 --> 00:34:28.469 align:start position:21% line:-2
+すべてCodableなので
+initの実装を得て符号化します
+
+00:34:28.802 --> 00:34:34.341 align:start position:23% line:-2
+プリミティブ値の時と同じ検証を
+行いたいと思います
+
+00:34:34.908 --> 00:34:37.344 align:start position:36% line:-1
+やり方は同じです
+
+00:34:38.478 --> 00:34:43.784 align:start position:27% line:-2
+ペイロードのIDを
+古いコードが復号した場所で
+
+00:34:43.884 --> 00:34:47.387 align:start position:27% line:-1
+デコーダの整数を復号します
+
+00:34:48.422 --> 00:34:51.692 align:start position:21% line:-1
+ペイロードの型が異なったりすると
+
+00:34:51.792 --> 00:34:55.094 align:start position:27% line:-1
+事象を示すエラーを投げます
+
+00:34:56.330 --> 00:35:01.568 align:start position:23% line:-2
+さらに重要なのは
+メソッドのために加えた検証です
+

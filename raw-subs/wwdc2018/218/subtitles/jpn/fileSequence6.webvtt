@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.526 --> 00:06:01.328 align:start position:30% line:-1
+他の例を見てみましょう
+
+00:06:02.095 --> 00:06:03.297 align:start position:36% line:-1
+あるウインドウが
+
+00:06:03.597 --> 00:06:07.367 align:start position:36% line:-2
+ぶら下がるように
+表示されています
+
+00:06:07.868 --> 00:06:12.439 align:start position:27% line:-2
+そのアピアランスを
+ビューとマッチさせるには？
+
+00:06:12.806 --> 00:06:18.145 align:start position:23% line:-2
+先ほどと同じように aquaの
+アピアランスを指定できます
+
+00:06:18.612 --> 00:06:21.481 align:start position:29% line:-1
+でも 今回はビューから―
+
+00:06:21.582 --> 00:06:25.052 align:start position:27% line:-2
+アピアランスを
+継承できるようにしましょう
+
+00:06:25.619 --> 00:06:27.321 align:start position:38% line:-1
+AppKitは
+
+00:06:27.421 --> 00:06:32.993 align:start position:27% line:-2
+あらゆるウインドウに対し
+これを自動で行ってくれます
+
+00:06:33.093 --> 00:06:38.599 align:start position:29% line:-2
+メニュー ポップオーバー
+ツールチップなどです
+
+00:06:39.166 --> 00:06:41.268 align:start position:27% line:-1
+でも この例のような場合は
+
+00:06:41.368 --> 00:06:45.772 align:start position:25% line:-2
+Mojaveの新しいAPIが
+役に立ちます
+
+00:06:46.640 --> 00:06:48.575 align:start position:20% line:-2
+その名も
+Appearance Source
+
+00:06:49.309 --> 00:06:53.747 align:start position:5% line:-2
+NSAppearanceCustomization
+プロトコルに対応していれば
+
+00:06:53.847 --> 00:06:58.185 align:start position:27% line:-2
+どのオブジェクトにも使える
+プロパティです
+
+00:06:58.719 --> 00:07:04.258 align:start position:16% line:-2
+これをappearanceSource
+プロパティに指定すると
+

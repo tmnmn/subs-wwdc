@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.416 --> 00:14:00.776 A:middle
+triggering event like maybe a
+
+00:14:00.776 --> 00:14:02.336 A:middle
+user interface interaction like
+
+00:14:02.336 --> 00:14:04.196 A:middle
+somebody has just swiped to
+
+00:14:04.196 --> 00:14:05.276 A:middle
+update that interface.
+
+00:14:05.816 --> 00:14:07.206 A:middle
+Although, if you're really
+
+00:14:07.206 --> 00:14:08.306 A:middle
+investigating in a performance
+
+00:14:08.336 --> 00:14:09.846 A:middle
+problem, they might be swiping a
+
+00:14:09.846 --> 00:14:11.916 A:middle
+lot so this might be what you
+
+00:14:11.916 --> 00:14:12.436 A:middle
+see instead.
+
+00:14:14.786 --> 00:14:17.136 A:middle
+If you have signpost enabled,
+
+00:14:17.636 --> 00:14:18.686 A:middle
+they're usually on by default,
+
+00:14:19.396 --> 00:14:20.366 A:middle
+but I'd like to talk about
+
+00:14:20.486 --> 00:14:21.786 A:middle
+conditionally turning them on
+
+00:14:21.836 --> 00:14:22.216 A:middle
+and off.
+
+00:14:23.986 --> 00:14:25.546 A:middle
+First I'd like to emphasize that
+
+00:14:25.546 --> 00:14:26.766 A:middle
+we built signpost to be
+
+00:14:26.906 --> 00:14:27.536 A:middle
+lightweight.
+
+00:14:28.066 --> 00:14:29.986 A:middle
+That means we've done a lot of
+
+00:14:29.986 --> 00:14:31.776 A:middle
+work to optimize them at emit
+
+00:14:31.896 --> 00:14:32.146 A:middle
+time.
+
+00:14:32.666 --> 00:14:33.376 A:middle
+We've done this through some
+
+00:14:33.376 --> 00:14:34.796 A:middle
+compiler optimizations that make
+
+00:14:34.796 --> 00:14:36.546 A:middle
+sure that work is done in front
+
+00:14:36.606 --> 00:14:37.436 A:middle
+instead of runtime.
+
+00:14:37.926 --> 00:14:39.416 A:middle
+We've also deferred a lot of our
+
+00:14:39.416 --> 00:14:40.796 A:middle
+work so that they're done on the
+
+00:14:40.796 --> 00:14:41.656 A:middle
+Instruments backend.
+
+00:14:41.946 --> 00:14:43.406 A:middle
+And that means that while
+
+00:14:43.406 --> 00:14:44.376 A:middle
+signposts are being emitted,
+
+00:14:44.376 --> 00:14:45.796 A:middle
+they should take very few system
+
+00:14:45.796 --> 00:14:46.416 A:middle
+resources.
+
+00:14:46.876 --> 00:14:47.896 A:middle
+We've done this because we want
+
+00:14:47.896 --> 00:14:49.456 A:middle
+to minimize the impact to
+
+00:14:49.456 --> 00:14:50.436 A:middle
+whatever your code is running.
+
+00:14:50.916 --> 00:14:52.096 A:middle
+And we've also done it because
+
+00:14:52.096 --> 00:14:53.236 A:middle
+we want to make sure that even
+
+00:14:53.236 --> 00:14:55.076 A:middle
+if you have very small time
+
+00:14:55.076 --> 00:14:56.946 A:middle
+span, you can emit a lot of
+
+00:14:56.946 --> 00:14:57.866 A:middle
+signposts to get some
+
+00:14:57.866 --> 00:14:58.976 A:middle
+fine-grained measurements.
+

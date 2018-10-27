@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:57.026 --> 00:31:00.306 A:middle
+corner edges at one-fourth of
+
+00:31:00.306 --> 00:31:01.066 A:middle
+the resolution.
+
+00:31:03.076 --> 00:31:05.166 A:middle
+Once our expensive rendering
+
+00:31:05.246 --> 00:31:06.976 A:middle
+pass is complete, we will
+
+00:31:06.976 --> 00:31:09.606 A:middle
+perform cheap upscaling pass
+
+00:31:09.606 --> 00:31:11.416 A:middle
+that will stretch those regions
+
+00:31:11.646 --> 00:31:13.276 A:middle
+back to the resolution at which
+
+00:31:13.276 --> 00:31:14.616 A:middle
+they need to be submitted to
+
+00:31:14.616 --> 00:31:15.356 A:middle
+compositor.
+
+00:31:16.386 --> 00:31:18.186 A:middle
+So you are wondering how much
+
+00:31:18.226 --> 00:31:20.166 A:middle
+we've gained by doing that.
+
+00:31:21.316 --> 00:31:23.576 A:middle
+In case of 80 by 80 degree
+
+00:31:23.576 --> 00:31:25.546 A:middle
+central region, we reduced our
+
+00:31:25.546 --> 00:31:27.556 A:middle
+fill rate all the way down to
+
+00:31:27.556 --> 00:31:30.586 A:middle
+491 megapixels per second.
+
+00:31:31.736 --> 00:31:32.936 A:middle
+But you remember that we just
+
+00:31:32.996 --> 00:31:34.666 A:middle
+talked about clipping invisible
+
+00:31:34.666 --> 00:31:36.866 A:middle
+pixels, so let's combine those
+
+00:31:36.946 --> 00:31:38.036 A:middle
+two techniques together.
+
+00:31:40.016 --> 00:31:42.456 A:middle
+By clipping pixels combined with
+
+00:31:42.456 --> 00:31:44.016 A:middle
+multi-resolution shading, you
+
+00:31:44.016 --> 00:31:45.696 A:middle
+can reduce your fill rate even
+
+00:31:45.696 --> 00:31:48.796 A:middle
+further to 456 megapixels per
+
+00:31:48.796 --> 00:31:50.636 A:middle
+second, and that is not a random
+
+00:31:50.636 --> 00:31:50.996 A:middle
+number.
+
+00:31:51.696 --> 00:31:54.196 A:middle
+In fact, that's a default fill
+
+00:31:54.196 --> 00:31:57.456 A:middle
+rate of Vive headset, so by just
+
+00:31:57.456 --> 00:31:59.176 A:middle
+using those two optimization
+
+00:31:59.176 --> 00:32:01.246 A:middle
+techniques, your application can
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.696 --> 00:12:00.836 A:middle
+looks exactly like we need to
+
+00:12:00.836 --> 00:12:01.836 A:middle
+succinctly get the second
+
+00:12:01.836 --> 00:12:02.816 A:middle
+element of our collection.
+
+00:12:03.796 --> 00:12:04.816 A:middle
+So let's go back to our previous
+
+00:12:04.816 --> 00:12:05.806 A:middle
+solution, and see how much more
+
+00:12:05.806 --> 00:12:06.616 A:middle
+expressive we can be with
+
+00:12:06.616 --> 00:12:07.146 A:middle
+slices.
+
+00:12:08.396 --> 00:12:10.536 A:middle
+Remember all that fancy index
+
+00:12:10.536 --> 00:12:11.166 A:middle
+[inaudible] code we had to write
+
+00:12:11.166 --> 00:12:11.516 A:middle
+earlier?
+
+00:12:12.806 --> 00:12:14.166 A:middle
+Well, by using dropfirst, we're
+
+00:12:14.166 --> 00:12:15.326 A:middle
+going to let slices take care of
+
+00:12:15.326 --> 00:12:16.686 A:middle
+all that fancy index bounds
+
+00:12:16.686 --> 00:12:17.386 A:middle
+checking for us.
+
+00:12:17.736 --> 00:12:19.156 A:middle
+And since first returns an
+
+00:12:19.156 --> 00:12:21.606 A:middle
+optional, this will work as
+
+00:12:21.606 --> 00:12:23.556 A:middle
+expected with empty and single
+
+00:12:23.556 --> 00:12:24.486 A:middle
+element collections.
+
+00:12:25.116 --> 00:12:26.206 A:middle
+Let's visualize what's happening
+
+00:12:26.206 --> 00:12:26.376 A:middle
+here.
+
+00:12:27.686 --> 00:12:29.156 A:middle
+We start with an array, and we
+
+00:12:29.156 --> 00:12:30.496 A:middle
+form a slice by dropping the
+
+00:12:30.496 --> 00:12:31.096 A:middle
+first element.
+
+00:12:32.386 --> 00:12:34.906 A:middle
+We then use the first property
+
+00:12:35.696 --> 00:12:37.626 A:middle
+to subscript into the slice,
+
+00:12:37.776 --> 00:12:38.716 A:middle
+retrieving the element from the
+
+00:12:38.716 --> 00:12:39.416 A:middle
+original collection.
+
+00:12:39.536 --> 00:12:40.826 A:middle
+Now I don't know about you, but
+
+00:12:40.826 --> 00:12:42.996 A:middle
+I'd much rather maintain this
+
+00:12:43.616 --> 00:12:44.126 A:middle
+code.
+
+00:12:44.946 --> 00:12:46.026 A:middle
+Now every type is free to
+
+00:12:46.026 --> 00:12:47.446 A:middle
+describe its own slice type, and
+
+00:12:47.446 --> 00:12:48.046 A:middle
+many do.
+
+00:12:48.596 --> 00:12:50.076 A:middle
+For instance, arrays define
+
+00:12:50.486 --> 00:12:51.766 A:middle
+array slices that are especially
+
+00:12:51.766 --> 00:12:52.846 A:middle
+attuned to the most common use
+
+00:12:52.846 --> 00:12:54.446 A:middle
+cases that arrays work with.
+
+00:12:54.976 --> 00:12:57.396 A:middle
+Similarly, string defines a
+
+00:12:57.396 --> 00:12:59.096 A:middle
+substring slice type, and
+
+00:12:59.096 --> 00:13:00.706 A:middle
+substrings, again, are tuned to
+

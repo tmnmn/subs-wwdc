@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.186 --> 00:25:01.496 A:middle
+those styles to that dog is
+
+00:25:01.496 --> 00:25:02.236 A:middle
+something like that.
+
+00:25:02.586 --> 00:25:05.006 A:middle
+And with a style transfer model,
+
+00:25:05.196 --> 00:25:06.956 A:middle
+we can take the same styles and
+
+00:25:06.956 --> 00:25:08.296 A:middle
+apply them to more photos.
+
+00:25:08.646 --> 00:25:10.246 A:middle
+Let's say a cat and another dog.
+
+00:25:10.916 --> 00:25:12.046 A:middle
+And that's the sort of effect we
+
+00:25:12.046 --> 00:25:13.000 A:middle
+would get.
+
+00:25:16.046 --> 00:25:17.566 A:middle
+Here's an example of an app that
+
+00:25:17.566 --> 00:25:19.646 A:middle
+uses style transfer for filters
+
+00:25:19.816 --> 00:25:21.216 A:middle
+on photos that a user would
+
+00:25:21.846 --> 00:25:21.946 A:middle
+take.
+
+00:25:24.556 --> 00:25:26.526 A:middle
+The code to create the style
+
+00:25:26.526 --> 00:25:28.386 A:middle
+transfer model follows the same
+
+00:25:28.516 --> 00:25:30.466 A:middle
+five-step recipe as any other
+
+00:25:30.466 --> 00:25:32.046 A:middle
+high-level task in Turi Create.
+
+00:25:32.296 --> 00:25:33.956 A:middle
+So you can start by importing
+
+00:25:33.956 --> 00:25:36.076 A:middle
+Turi Create, loading data into
+
+00:25:36.076 --> 00:25:38.166 A:middle
+the SFrame format, creating the
+
+00:25:38.166 --> 00:25:39.906 A:middle
+model with a simple high-level
+
+00:25:39.906 --> 00:25:40.176 A:middle
+API.
+
+00:25:41.326 --> 00:25:42.906 A:middle
+Then we make predictions, in
+
+00:25:42.906 --> 00:25:44.166 A:middle
+this case with a function called
+
+00:25:44.166 --> 00:25:46.186 A:middle
+stylize to take an image and
+
+00:25:46.186 --> 00:25:47.536 A:middle
+apply that style filter.
+
+00:25:48.166 --> 00:25:49.746 A:middle
+Finally, we can export it for
+
+00:25:49.746 --> 00:25:51.576 A:middle
+deployment into Core ML format,
+
+00:25:51.576 --> 00:25:52.726 A:middle
+just like any other model in
+
+00:25:52.726 --> 00:25:53.000 A:middle
+Turi Create.
+
+00:25:56.266 --> 00:25:57.506 A:middle
+So let's take a look at another
+
+00:25:57.506 --> 00:25:57.926 A:middle
+demo.
+
+00:25:58.146 --> 00:26:00.106 A:middle
+This time, we're going to build
+

@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.734 --> 00:30:03.003 align:middle line:-1
+因为用户要在单一路线之间切换
+
+00:30:03.136 --> 00:30:05.105 align:middle line:-1
+那么你就有机会更新
+
+00:30:05.172 --> 00:30:06.940 align:middle line:-1
+在窗口中所显示的内容了
+
+00:30:07.608 --> 00:30:11.311 align:middle line:-2
+将会调用使用routeChoice的
+MapTemplate selectedPreviewFor
+
+00:30:11.378 --> 00:30:13.180 align:middle line:-1
+并且你可以修改所显示的内容
+
+00:30:14.248 --> 00:30:18.285 align:middle line:-1
+这是一个了解地图模板
+
+00:30:18.352 --> 00:30:20.254 align:middle line:-2
+如何绘制
+在窗口中所显示的内容的好机会
+
+00:30:21.321 --> 00:30:23.457 align:middle line:-1
+你要确保你所绘制的内容
+
+00:30:23.524 --> 00:30:25.225 align:middle line:-1
+对你的用户可见
+
+00:30:26.126 --> 00:30:29.129 align:middle line:-2
+为此我们需要利用现有的
+safeArea API
+
+00:30:29.196 --> 00:30:30.464 align:middle line:-1
+你可能已经很熟悉它了
+
+00:30:31.298 --> 00:30:34.968 align:middle line:-2
+随着地图模板中的内容变更
+它会更新
+
+00:30:35.035 --> 00:30:39.039 align:middle line:-2
+你窗口中的safeArea插入
+从而让你了解哪里可以进行安全绘制
+
+00:30:39.573 --> 00:30:42.276 align:middle line:-2
+你只需要实施
+safeAreaInsetsDidChange
+
+00:30:42.342 --> 00:30:43.977 align:middle line:-1
+并紧密关注那些插入
+
+00:30:44.044 --> 00:30:46.146 align:middle line:-2
+并确保你的内容
+是在它们内部进行绘制的
+
+00:30:47.748 --> 00:30:49.416 align:middle line:-1
+现在让我们谈谈路线指引
+
+00:30:50.484 --> 00:30:54.621 align:middle line:-2
+与预览相似 你的app可以向
+CarPlay车载框架提供数据
+
+00:30:54.988 --> 00:30:57.257 align:middle line:-1
+并让它绘制路线指引卡片
+
+00:30:57.758 --> 00:31:00.794 align:middle line:-2
+卡片内填充有信息
+比如代表移动方向的图片
+

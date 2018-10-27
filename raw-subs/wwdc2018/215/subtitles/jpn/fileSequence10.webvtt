@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.199 --> 00:10:02.636 align:start position:36% line:-2
+第１節を探すには
+Appに行き―
+
+00:10:03.036 --> 00:10:04.738 align:start position:36% line:-1
+次に本に進みます
+
+00:10:04.838 --> 00:10:08.509 align:start position:27% line:-1
+本の子である第２章を見つけ
+
+00:10:08.809 --> 00:10:11.912 align:start position:29% line:-1
+同様に第１節を見つけます
+
+00:10:12.379 --> 00:10:18.552 align:start position:29% line:-2
+第１節はパスの最後なので
+ここが参照先となります
+
+00:10:20.287 --> 00:10:24.258 align:start position:30% line:-2
+コンテキストの検索法は
+複数あります
+
+00:10:24.658 --> 00:10:28.095 align:start position:25% line:-1
+絶対パスを使って検索する場合
+
+00:10:28.195 --> 00:10:32.933 align:start position:2% line:-1
+matchingIdentifierPathを呼びます
+
+00:10:34.034 --> 00:10:39.540 align:start position:29% line:-2
+完了ブロックはパス内の
+全コンテキストを返します
+
+00:10:39.640 --> 00:10:41.008 align:start position:32% line:-1
+この場合の配列は--
+
+00:10:41.508 --> 00:10:47.014 align:start position:16% line:-1
+App 本 第２章 第１節 となります
+
+00:10:47.915 --> 00:10:51.218 align:start position:36% line:-2
+もし第１節の中に
+第２章がなければ
+
+00:10:51.318 --> 00:10:57.024 align:start position:23% line:-2
+完了ブロック内のその後の配列は
+Appと本になります
+
+00:10:57.858 --> 00:11:02.262 align:start position:23% line:-2
+ここで欠けているコンテキストを
+他のもので補えます
+

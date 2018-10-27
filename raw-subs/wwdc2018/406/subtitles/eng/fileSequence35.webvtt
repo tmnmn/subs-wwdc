@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.096 --> 00:35:00.726 A:middle
+In our next step, we find the
+
+00:35:00.726 --> 00:35:02.956 A:middle
+new middle, 14, and compare it
+
+00:35:02.956 --> 00:35:03.856 A:middle
+against the value we want to
+
+00:35:03.856 --> 00:35:04.246 A:middle
+insert.
+
+00:35:05.196 --> 00:35:07.546 A:middle
+Eleven is less than 14, so the
+
+00:35:07.546 --> 00:35:09.326 A:middle
+insertion point has to come
+
+00:35:09.556 --> 00:35:10.776 A:middle
+before the middle.
+
+00:35:11.246 --> 00:35:12.526 A:middle
+Divide the remaining collection
+
+00:35:12.526 --> 00:35:13.676 A:middle
+in half again.
+
+00:35:14.586 --> 00:35:15.876 A:middle
+Continue dividing collection
+
+00:35:15.876 --> 00:35:16.976 A:middle
+we're looking at in half.
+
+00:35:17.096 --> 00:35:18.306 A:middle
+Until we're pointing at the
+
+00:35:18.306 --> 00:35:19.626 A:middle
+proper insertion point.
+
+00:35:19.966 --> 00:35:20.986 A:middle
+That's our solution.
+
+00:35:22.546 --> 00:35:23.616 A:middle
+Divide-and-conquer algorithms
+
+00:35:23.616 --> 00:35:25.216 A:middle
+like this are fantastic.
+
+00:35:25.556 --> 00:35:27.316 A:middle
+Because they're extremely fast.
+
+00:35:27.806 --> 00:35:30.056 A:middle
+Binary search takes logarithmic
+
+00:35:30.056 --> 00:35:30.486 A:middle
+time.
+
+00:35:30.726 --> 00:35:32.076 A:middle
+Which means that doubling your
+
+00:35:32.076 --> 00:35:33.616 A:middle
+input size doesn't make the
+
+00:35:33.616 --> 00:35:35.426 A:middle
+algorithm run twice as slowly
+
+00:35:35.496 --> 00:35:36.436 A:middle
+like it would for a linear
+
+00:35:36.436 --> 00:35:36.906 A:middle
+algorithm.
+
+00:35:37.416 --> 00:35:38.716 A:middle
+With a logarithmic algorithm
+
+00:35:38.716 --> 00:35:40.646 A:middle
+like binary search, it only has
+
+00:35:40.646 --> 00:35:42.726 A:middle
+to perform one additional step
+
+00:35:43.206 --> 00:35:44.906 A:middle
+to cut the problem size in half
+
+00:35:44.906 --> 00:35:45.336 A:middle
+again.
+
+00:35:45.876 --> 00:35:47.646 A:middle
+So let's turn that into code.
+
+00:35:48.226 --> 00:35:50.146 A:middle
+The first thing we need to do is
+
+00:35:50.146 --> 00:35:51.996 A:middle
+find the index of the middle
+
+00:35:51.996 --> 00:35:52.506 A:middle
+element.
+
+00:35:52.706 --> 00:35:53.566 A:middle
+Which we can do using
+
+00:35:53.566 --> 00:35:55.446 A:middle
+randomAccessCollections index
+
+00:35:55.446 --> 00:35:56.746 A:middle
+offset by a function.
+
+00:35:57.616 --> 00:35:59.526 A:middle
+Next, we check whether our value
+
+00:35:59.526 --> 00:36:01.716 A:middle
+comes before the middle element.
+

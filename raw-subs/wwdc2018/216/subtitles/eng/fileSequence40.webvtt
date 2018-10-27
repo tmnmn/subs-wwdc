@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.096 --> 00:40:00.816 A:middle
+The system suspended our app
+
+00:40:00.816 --> 00:40:01.906 A:middle
+while it was in the background.
+
+00:40:02.716 --> 00:40:04.486 A:middle
+It turns out that at the time,
+
+00:40:04.716 --> 00:40:06.236 A:middle
+our system was under some memory
+
+00:40:06.236 --> 00:40:08.126 A:middle
+pressure, and so the system
+
+00:40:08.586 --> 00:40:09.566 A:middle
+terminated our app.
+
+00:40:10.776 --> 00:40:12.866 A:middle
+When we used the App Switcher to
+
+00:40:12.866 --> 00:40:14.866 A:middle
+switch back to our app, our app
+
+00:40:14.866 --> 00:40:15.546 A:middle
+was relaunched.
+
+00:40:16.246 --> 00:40:18.046 A:middle
+What we failed to do here was
+
+00:40:18.046 --> 00:40:19.176 A:middle
+restore the UI state.
+
+00:40:19.726 --> 00:40:21.196 A:middle
+And, that time was a good time
+
+00:40:21.196 --> 00:40:22.956 A:middle
+to restore the UI state, to
+
+00:40:22.956 --> 00:40:24.386 A:middle
+bring back our customer to where
+
+00:40:24.386 --> 00:40:24.736 A:middle
+they were.
+
+00:40:26.206 --> 00:40:28.116 A:middle
+So, how do we implement state
+
+00:40:28.116 --> 00:40:28.736 A:middle
+restoration?
+
+00:40:29.136 --> 00:40:31.266 A:middle
+A simple and easy way would be
+
+00:40:31.266 --> 00:40:32.686 A:middle
+to persist the URL we've
+
+00:40:32.726 --> 00:40:34.146 A:middle
+received from the Document
+
+00:40:34.146 --> 00:40:35.726 A:middle
+Browser, or the Document Picker,
+
+00:40:36.166 --> 00:40:37.856 A:middle
+and restore it at app relaunch.
+
+00:40:39.246 --> 00:40:40.846 A:middle
+That wouldn't work though, for
+
+00:40:40.846 --> 00:40:41.586 A:middle
+two reasons.
+
+00:40:42.236 --> 00:40:44.856 A:middle
+First, the document that the URL
+
+00:40:44.926 --> 00:40:46.726 A:middle
+points to could have been moved
+
+00:40:46.726 --> 00:40:47.306 A:middle
+or renamed.
+
+00:40:47.586 --> 00:40:48.826 A:middle
+And so, we'd end up with a
+
+00:40:48.826 --> 00:40:50.406 A:middle
+broken link at app relaunch.
+
+00:40:51.266 --> 00:40:53.286 A:middle
+And second, the security scoped
+
+00:40:53.286 --> 00:40:55.436 A:middle
+resource that is attached to our
+
+00:40:55.436 --> 00:40:58.436 A:middle
+URL is not encoded when that URL
+
+00:40:58.436 --> 00:40:59.166 A:middle
+is persistent.
+
+00:40:59.866 --> 00:41:01.446 A:middle
+And so, when we relaunch our
+

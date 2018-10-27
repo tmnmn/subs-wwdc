@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.046 --> 00:04:02.476 A:middle
+The traditional way is to use
+
+00:04:02.476 --> 00:04:03.646 A:middle
+the CI kernel language.
+
+00:04:04.016 --> 00:04:05.396 A:middle
+And in this case, you have a
+
+00:04:05.396 --> 00:04:06.966 A:middle
+string inside your source file;
+
+00:04:06.966 --> 00:04:08.356 A:middle
+either your Swift code or your
+
+00:04:08.356 --> 00:04:09.256 A:middle
+objective C code.
+
+00:04:09.676 --> 00:04:11.726 A:middle
+And at run time you make a call,
+
+00:04:11.726 --> 00:04:13.686 A:middle
+to say, kernel with source.
+
+00:04:14.796 --> 00:04:17.016 A:middle
+And later on, when you create an
+
+00:04:17.016 --> 00:04:18.706 A:middle
+image based on that kernel, you
+
+00:04:18.706 --> 00:04:20.446 A:middle
+can then render that to any type
+
+00:04:20.446 --> 00:04:21.565 A:middle
+of Core Image context, whether
+
+00:04:21.565 --> 00:04:24.156 A:middle
+that context is backed by Metal
+
+00:04:24.556 --> 00:04:25.476 A:middle
+or open GL.
+
+00:04:26.986 --> 00:04:28.066 A:middle
+When it comes time to render,
+
+00:04:28.066 --> 00:04:29.736 A:middle
+however, that source needs to be
+
+00:04:29.736 --> 00:04:30.346 A:middle
+translated.
+
+00:04:30.346 --> 00:04:31.556 A:middle
+It needs to be translated either
+
+00:04:31.556 --> 00:04:34.856 A:middle
+to Metal or GLSL, and that step
+
+00:04:34.856 --> 00:04:35.666 A:middle
+has a cost.
+
+00:04:36.236 --> 00:04:38.006 A:middle
+Eventually then, that code is
+
+00:04:38.216 --> 00:04:40.056 A:middle
+compiled to the GPU instruction
+
+00:04:40.056 --> 00:04:41.426 A:middle
+set and then executed.
+
+00:04:42.036 --> 00:04:45.046 A:middle
+Starting last year in iOS 11, we
+
+00:04:45.046 --> 00:04:46.586 A:middle
+added a new way of writing CI
+
+00:04:46.586 --> 00:04:47.616 A:middle
+kernels, which has some
+
+00:04:47.806 --> 00:04:48.926 A:middle
+significant advantages.
+
+00:04:49.226 --> 00:04:50.896 A:middle
+And that's CI kernels based on
+
+00:04:50.896 --> 00:04:51.986 A:middle
+the Metal shading language.
+
+00:04:52.686 --> 00:04:54.556 A:middle
+In this case, you have your
+
+00:04:54.556 --> 00:04:56.056 A:middle
+source in your project and this
+
+00:04:56.056 --> 00:04:57.826 A:middle
+is -- this source is complied at
+
+00:04:57.826 --> 00:04:59.836 A:middle
+build time rather than at
+
+00:04:59.836 --> 00:05:00.306 A:middle
+runtime.
+

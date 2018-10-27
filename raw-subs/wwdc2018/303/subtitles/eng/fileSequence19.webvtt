@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.006 --> 00:19:00.616 A:middle
+testers relationship in the
+
+00:19:00.616 --> 00:19:02.316 A:middle
+first group, you see this new
+
+00:19:02.316 --> 00:19:03.376 A:middle
+section called data.
+
+00:19:03.376 --> 00:19:06.046 A:middle
+And this has the type and id
+
+00:19:06.086 --> 00:19:07.966 A:middle
+pairs of the testers in this
+
+00:19:07.966 --> 00:19:08.246 A:middle
+group.
+
+00:19:08.786 --> 00:19:09.736 A:middle
+Now if you could see the whole
+
+00:19:09.736 --> 00:19:11.006 A:middle
+response here, you'd see a data
+
+00:19:11.006 --> 00:19:12.706 A:middle
+section like this inside each
+
+00:19:12.706 --> 00:19:14.856 A:middle
+beta testers relationship inside
+
+00:19:14.856 --> 00:19:16.736 A:middle
+each group that's in this array,
+
+00:19:17.376 --> 00:19:17.586 A:middle
+right.
+
+00:19:18.216 --> 00:19:19.616 A:middle
+But this is just the type and
+
+00:19:19.616 --> 00:19:19.806 A:middle
+IDs.
+
+00:19:19.846 --> 00:19:20.606 A:middle
+I'm sure you're wondering where
+
+00:19:20.606 --> 00:19:21.876 A:middle
+the actual tester information
+
+00:19:21.876 --> 00:19:22.066 A:middle
+is.
+
+00:19:22.316 --> 00:19:23.426 A:middle
+And if we scroll all the way
+
+00:19:23.426 --> 00:19:24.646 A:middle
+down to the end of this
+
+00:19:24.646 --> 00:19:26.236 A:middle
+response, we also have a new
+
+00:19:26.236 --> 00:19:27.466 A:middle
+section called include.
+
+00:19:28.156 --> 00:19:29.506 A:middle
+And this is an array of beta
+
+00:19:29.506 --> 00:19:30.986 A:middle
+testers with the full tester
+
+00:19:30.986 --> 00:19:31.646 A:middle
+information.
+
+00:19:32.096 --> 00:19:33.396 A:middle
+More generally the include
+
+00:19:33.536 --> 00:19:35.696 A:middle
+section has a full resource
+
+00:19:35.696 --> 00:19:37.606 A:middle
+representation of every resource
+
+00:19:37.646 --> 00:19:39.636 A:middle
+that you have included by way of
+
+00:19:39.636 --> 00:19:40.456 A:middle
+relationships.
+
+00:19:40.796 --> 00:19:42.616 A:middle
+And then we can match by type
+
+00:19:42.616 --> 00:19:44.706 A:middle
+and id, figure out which testers
+
+00:19:45.006 --> 00:19:46.056 A:middle
+belong to which group.
+
+00:19:46.516 --> 00:19:48.936 A:middle
+Now you might be wondering why
+
+00:19:48.936 --> 00:19:49.586 A:middle
+we do this.
+
+00:19:49.586 --> 00:19:50.876 A:middle
+We have the data section with
+
+00:19:50.876 --> 00:19:52.276 A:middle
+all of our groups and then we
+
+00:19:52.276 --> 00:19:53.436 A:middle
+have the include section with
+
+00:19:53.436 --> 00:19:54.816 A:middle
+all of our included testers.
+
+00:19:55.146 --> 00:19:56.096 A:middle
+And we do this for an important
+
+00:19:56.096 --> 00:19:56.406 A:middle
+reason.
+
+00:19:56.406 --> 00:19:57.576 A:middle
+We have this test on the screen
+
+00:19:57.576 --> 00:19:59.476 A:middle
+John Appleseed and that tester
+
+00:19:59.476 --> 00:20:00.756 A:middle
+might be in multiple groups,
+

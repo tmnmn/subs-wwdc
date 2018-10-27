@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:05.076 --> 00:23:06.336 A:middle
+As you can see, this is a
+
+00:23:06.336 --> 00:23:07.896 A:middle
+different style of presenting
+
+00:23:07.896 --> 00:23:09.506 A:middle
+Quick Look and it works just as
+
+00:23:09.506 --> 00:23:10.976 A:middle
+fine as presenting it modally.
+
+00:23:17.066 --> 00:23:19.226 A:middle
+Okay Quick Look works and now
+
+00:23:19.226 --> 00:23:20.356 A:middle
+the last thing I would like to
+
+00:23:20.356 --> 00:23:22.126 A:middle
+show you is how to use the Quick
+
+00:23:22.126 --> 00:23:23.766 A:middle
+Look delegate in order to get a
+
+00:23:23.766 --> 00:23:25.576 A:middle
+beautiful zoom animation when
+
+00:23:25.576 --> 00:23:28.616 A:middle
+tapping a thumbnail in our grid.
+
+00:23:28.706 --> 00:23:30.456 A:middle
+First, we switch back to the
+
+00:23:30.456 --> 00:23:32.286 A:middle
+modal presentation style which
+
+00:23:32.286 --> 00:23:33.276 A:middle
+is needed for the zoom
+
+00:23:33.276 --> 00:23:33.976 A:middle
+transition to work.
+
+00:23:39.046 --> 00:23:40.286 A:middle
+Then we need to assign a
+
+00:23:40.286 --> 00:23:41.496 A:middle
+delegate to the preview
+
+00:23:41.496 --> 00:23:43.706 A:middle
+controller and in this case, we
+
+00:23:43.706 --> 00:23:44.496 A:middle
+assign self.
+
+00:23:54.046 --> 00:23:55.646 A:middle
+However, self doesn't conform to
+
+00:23:55.646 --> 00:23:57.536 A:middle
+the QLPreviewController delegate
+
+00:23:57.536 --> 00:23:59.506 A:middle
+yet, so let's add it to the list
+
+00:23:59.506 --> 00:23:59.976 A:middle
+of protocols.
+

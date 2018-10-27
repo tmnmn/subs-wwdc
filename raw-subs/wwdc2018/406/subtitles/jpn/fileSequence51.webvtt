@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:56.690 --> 00:51:01.061 align:start position:11% line:-2
+VehicleをDrivableにする準拠を
+１つ書けば―
+
+00:51:01.161 --> 00:51:07.134 align:start position:16% line:-2
+あとから足すものも含め
+Vehicleの全サブクラスに働きます
+
+00:51:07.734 --> 00:51:10.537 align:start position:27% line:-1
+大抵の場合 うまくいきます
+
+00:51:11.171 --> 00:51:16.343 align:start position:27% line:-2
+しかし サブクラスに
+要件を加える場合もあります
+
+00:51:16.610 --> 00:51:21.181 align:start position:23% line:-2
+よくあるのは イニシャライザの
+要件を扱う場合です
+
+00:51:22.082 --> 00:51:28.155 align:start position:16% line:-2
+例えば Decodableプロトコルの
+要件はイニシャライザで―
+
+00:51:28.255 --> 00:51:32.926 align:start position:29% line:-2
+デコーダから 準拠型の
+インスタンスを作成します
+
+00:51:34.228 --> 00:51:38.465 align:start position:27% line:-2
+使うには このプロトコルに
+便宜メソッドを加えます
+
+00:51:38.565 --> 00:51:45.038 align:start position:21% line:-2
+これは静的メソッドdecodeで
+新しいインスタンスを作成します
+
+00:51:45.873 --> 00:51:50.711 align:start position:23% line:-2
+このメソッドの興味深い点は２つ
+第１に―
+
+00:51:50.811 --> 00:51:53.247 align:start position:25% line:-1
+大文字SのSelfを返すこと
+
+00:51:53.347 --> 00:51:58.852 align:start position:29% line:-2
+準拠型で 静的メソッドを
+呼び出すのと同じ型です
+

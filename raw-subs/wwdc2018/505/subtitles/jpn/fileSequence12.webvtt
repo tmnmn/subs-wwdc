@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.618 --> 00:12:01.622 align:start position:32% line:-2
+要素にはアセットの
+レイアウトのヒントや
+
+00:12:01.722 --> 00:12:05.192 align:start position:23% line:-1
+ウェイトやスコアを持っています
+
+00:12:05.292 --> 00:12:11.198 align:start position:27% line:-2
+またアセットは関心領域内に
+重要な領域を持てます
+
+00:12:11.498 --> 00:12:14.434 align:start position:12% line:-1
+ProjectInfoはこのような感じです
+
+00:12:14.535 --> 00:12:20.340 align:start position:4% line:-2
+詳細は昨年の
+What's New in Photos APIsで
+
+00:12:24.444 --> 00:12:29.850 align:start position:21% line:-2
+ProjectInfoは開始時に
+Extensionに渡されます
+
+00:12:30.417 --> 00:12:34.922 align:start position:23% line:-2
+新しいアセットがプロジェクトに
+追加されると
+
+00:12:35.022 --> 00:12:38.292 align:start position:16% line:-1
+ProjectInfoは無効化されます
+
+00:12:38.692 --> 00:12:43.630 align:start position:16% line:-2
+ProjectInfoの無効化の問題を
+解決するには
+
+00:12:43.730 --> 00:12:47.801 align:start position:7% line:-2
+projectExtensionContextの
+新APIを使います
+
+00:12:48.702 --> 00:12:52.840 align:start position:16% line:-2
+プロジェクト作成時に
+ProjectInfoが渡された例です
+
+00:12:52.940 --> 00:12:55.742 align:start position:27% line:-1
+アセットも追加されています
+
+00:12:55.876 --> 00:13:00.380 align:start position:18% line:-2
+updateProjectInfoを
+ProjectInfoで呼び出し
+

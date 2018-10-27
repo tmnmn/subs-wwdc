@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.686 --> 00:04:00.976 A:middle
+directly, but rather subclasses
+
+00:04:00.976 --> 00:04:01.806 A:middle
+of CollectionViewLayout are
+
+00:04:01.806 --> 00:04:02.726 A:middle
+meant to be used.
+
+00:04:04.036 --> 00:04:05.646 A:middle
+Fortunately, we provide one.
+
+00:04:06.556 --> 00:04:08.896 A:middle
+UICollectionViewFlowLayout, and
+
+00:04:08.896 --> 00:04:09.736 A:middle
+you're probably familiar with
+
+00:04:09.736 --> 00:04:10.566 A:middle
+this class if you used
+
+00:04:10.566 --> 00:04:11.376 A:middle
+CollectionView before.
+
+00:04:11.986 --> 00:04:13.736 A:middle
+Now there's a lot of
+
+00:04:13.736 --> 00:04:15.026 A:middle
+customization points on
+
+00:04:15.026 --> 00:04:16.776 A:middle
+CollectionViewLayout including
+
+00:04:16.776 --> 00:04:17.906 A:middle
+some properties that we'll talk
+
+00:04:17.906 --> 00:04:19.666 A:middle
+about in a little bit, but you
+
+00:04:19.666 --> 00:04:21.176 A:middle
+can also customize it using a
+
+00:04:21.176 --> 00:04:23.646 A:middle
+delegate, and we'll talk about
+
+00:04:23.646 --> 00:04:24.616 A:middle
+the CollectionViewDelegate in a
+
+00:04:24.616 --> 00:04:25.346 A:middle
+moment, but
+
+00:04:25.436 --> 00:04:27.656 A:middle
+CollectionViewFlowLayout will
+
+00:04:28.216 --> 00:04:30.156 A:middle
+specify additional things that
+
+00:04:30.156 --> 00:04:31.086 A:middle
+extend that
+
+00:04:31.086 --> 00:04:32.026 A:middle
+CollectionViewDelegate.
+
+00:04:34.496 --> 00:04:35.986 A:middle
+Okay, so what's Flow all about?
+
+00:04:35.986 --> 00:04:37.746 A:middle
+Well it's a line-based layout
+
+00:04:37.746 --> 00:04:39.946 A:middle
+system, and because of this, it
+
+00:04:39.946 --> 00:04:41.796 A:middle
+can cover a wide range of
+
+00:04:41.796 --> 00:04:43.146 A:middle
+different designs that you might
+
+00:04:43.146 --> 00:04:43.666 A:middle
+receive.
+
+00:04:46.436 --> 00:04:47.786 A:middle
+All right, so what does line
+
+00:04:47.786 --> 00:04:48.286 A:middle
+base mean?
+
+00:04:48.286 --> 00:04:49.176 A:middle
+Well let's go through this.
+
+00:04:49.176 --> 00:04:51.406 A:middle
+So the best way to explain what
+
+00:04:51.476 --> 00:04:54.416 A:middle
+a line based system is like is
+
+00:04:54.416 --> 00:04:55.636 A:middle
+to give an example, so let's do
+
+00:04:55.636 --> 00:04:55.856 A:middle
+that.
+
+00:04:56.556 --> 00:04:57.936 A:middle
+Okay. So here we see, we've got
+
+00:04:57.936 --> 00:04:59.486 A:middle
+a vertical scrolling collection
+
+00:04:59.486 --> 00:05:01.396 A:middle
+view, and we're going to mimic
+

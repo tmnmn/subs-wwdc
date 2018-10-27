@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.276 --> 00:16:00.816 A:middle
+actually is a URL, and not just
+
+00:16:00.816 --> 00:16:01.486 A:middle
+a garbage string.
+
+00:16:01.786 --> 00:16:02.846 A:middle
+And again, if anything goes
+
+00:16:02.916 --> 00:16:04.006 A:middle
+wrong, I'll throw an error.
+
+00:16:04.586 --> 00:16:06.806 A:middle
+But, again, I don't want to stop
+
+00:16:06.806 --> 00:16:08.456 A:middle
+there, once I have an actual
+
+00:16:08.456 --> 00:16:09.926 A:middle
+URL, I want to make sure it
+
+00:16:09.926 --> 00:16:11.376 A:middle
+points to my domain and not a
+
+00:16:11.376 --> 00:16:13.016 A:middle
+phishing domain, so I'll keep
+
+00:16:13.016 --> 00:16:15.206 A:middle
+working with that.
+
+00:16:15.406 --> 00:16:16.736 A:middle
+Now, at this point, I can apply
+
+00:16:16.736 --> 00:16:17.886 A:middle
+the same types of validation to
+
+00:16:17.886 --> 00:16:18.716 A:middle
+the other fields here.
+
+00:16:18.966 --> 00:16:20.096 A:middle
+And again, if anything goes
+
+00:16:20.096 --> 00:16:20.936 A:middle
+wrong, I'll throw an error.
+
+00:16:21.466 --> 00:16:22.936 A:middle
+But once I have this function, I
+
+00:16:22.936 --> 00:16:24.686 A:middle
+can apply it to all the product
+
+00:16:24.686 --> 00:16:25.866 A:middle
+listings that I've loaded from
+
+00:16:25.866 --> 00:16:26.256 A:middle
+the payload.
+
+00:16:26.466 --> 00:16:29.436 A:middle
+And again, I'll stop executing
+
+00:16:29.886 --> 00:16:33.716 A:middle
+if anything goes wrong.
+
+00:16:33.916 --> 00:16:35.426 A:middle
+Now, this is how we can work to
+
+00:16:35.426 --> 00:16:36.476 A:middle
+validate primitive data.
+
+00:16:37.256 --> 00:16:38.256 A:middle
+But as we just saw, primitive
+
+00:16:38.256 --> 00:16:39.306 A:middle
+data can be very general.
+
+00:16:40.706 --> 00:16:43.906 A:middle
+A string can be a string, but it
+
+00:16:43.906 --> 00:16:45.416 A:middle
+can also be a date.
+
+00:16:45.756 --> 00:16:48.376 A:middle
+And it can also be a URL.
+
+00:16:50.236 --> 00:16:52.086 A:middle
+Sometimes we care to work with
+
+00:16:52.126 --> 00:16:53.466 A:middle
+data with the semantics that
+
+00:16:53.556 --> 00:16:54.356 A:middle
+matter to us.
+
+00:16:54.796 --> 00:16:55.986 A:middle
+We wanted to make sure that the
+
+00:16:55.986 --> 00:16:57.866 A:middle
+host of that URL was our domain,
+
+00:16:57.866 --> 00:16:59.116 A:middle
+and we can't do that with just a
+
+00:16:59.116 --> 00:16:59.796 A:middle
+regular string.
+

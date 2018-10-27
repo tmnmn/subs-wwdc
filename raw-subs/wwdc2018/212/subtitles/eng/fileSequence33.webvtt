@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.666 --> 00:33:01.416 A:middle
+And these elements are created
+
+00:33:01.416 --> 00:33:03.626 A:middle
+on demand for your annotations.
+
+00:33:03.866 --> 00:33:04.986 A:middle
+So, let's see an example.
+
+00:33:04.986 --> 00:33:07.906 A:middle
+Here, if I wanted to do just
+
+00:33:07.906 --> 00:33:09.876 A:middle
+some color for any pin that
+
+00:33:09.876 --> 00:33:12.746 A:middle
+shows up on my map, then I will
+
+00:33:12.746 --> 00:33:13.906 A:middle
+create an annotation with a
+
+00:33:13.906 --> 00:33:14.786 A:middle
+coordinate [inaudible].
+
+00:33:14.786 --> 00:33:16.496 A:middle
+And a third parameter which is a
+
+00:33:16.496 --> 00:33:18.086 A:middle
+function that we will return a
+
+00:33:18.086 --> 00:33:19.536 A:middle
+DOM Element for that annotation.
+
+00:33:19.966 --> 00:33:21.016 A:middle
+So, in this case, I will use a
+
+00:33:21.016 --> 00:33:21.856 A:middle
+Canvas Element.
+
+00:33:22.356 --> 00:33:23.636 A:middle
+I create a Canvas Element.
+
+00:33:23.636 --> 00:33:24.906 A:middle
+I get .Context.
+
+00:33:24.906 --> 00:33:26.156 A:middle
+I drew a pin image in that
+
+00:33:26.156 --> 00:33:26.656 A:middle
+Canvas.
+
+00:33:27.056 --> 00:33:28.936 A:middle
+I changed the head of the pin to
+
+00:33:28.936 --> 00:33:30.366 A:middle
+the color that I want, and I
+
+00:33:30.366 --> 00:33:31.256 A:middle
+returned to Canvas.
+
+00:33:31.256 --> 00:33:32.966 A:middle
+And this is the Canvas that is
+
+00:33:32.966 --> 00:33:34.376 A:middle
+shown on the map for this
+
+00:33:34.376 --> 00:33:35.116 A:middle
+annotation.
+
+00:33:37.366 --> 00:33:38.826 A:middle
+So, these were the three kinds
+
+00:33:38.826 --> 00:33:39.936 A:middle
+of annotations that you could
+
+00:33:39.936 --> 00:33:40.306 A:middle
+use.
+
+00:33:40.736 --> 00:33:42.336 A:middle
+But sometimes you want to show
+
+00:33:42.336 --> 00:33:44.716 A:middle
+more than just a single location
+
+00:33:44.716 --> 00:33:47.026 A:middle
+or a set of single locations.
+
+00:33:47.156 --> 00:33:48.796 A:middle
+Sometimes you want to call -- to
+
+00:33:48.796 --> 00:33:50.826 A:middle
+show complete areas on your map.
+
+00:33:51.906 --> 00:33:53.616 A:middle
+And to do that, we have overlays
+
+00:33:53.616 --> 00:33:54.976 A:middle
+and we have -- we provide three
+
+00:33:54.976 --> 00:33:56.206 A:middle
+different kinds of overlays.
+
+00:33:56.716 --> 00:33:58.466 A:middle
+And here are some examples of
+
+00:33:58.466 --> 00:33:59.366 A:middle
+how you could use them.
+

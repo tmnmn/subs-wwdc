@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.646 --> 00:14:02.526 A:middle
+in time.
+
+00:14:02.526 --> 00:14:04.976 A:middle
+So, it's important to scan your
+
+00:14:04.976 --> 00:14:07.626 A:middle
+physical space from multiple
+
+00:14:07.666 --> 00:14:09.226 A:middle
+point of views.
+
+00:14:09.256 --> 00:14:11.266 A:middle
+So tracking system can really
+
+00:14:11.266 --> 00:14:12.516 A:middle
+learn about physical structure
+
+00:14:12.516 --> 00:14:13.316 A:middle
+of the environment.
+
+00:14:14.956 --> 00:14:17.996 A:middle
+The environment should be static
+
+00:14:17.996 --> 00:14:19.976 A:middle
+and well textured so we can
+
+00:14:19.976 --> 00:14:22.326 A:middle
+learn, extract more features of
+
+00:14:22.326 --> 00:14:23.936 A:middle
+it and learn more about the
+
+00:14:23.936 --> 00:14:24.376 A:middle
+environment.
+
+00:14:27.596 --> 00:14:30.116 A:middle
+And also, it's important to have
+
+00:14:30.116 --> 00:14:31.986 A:middle
+dense feature points on the map,
+
+00:14:32.296 --> 00:14:34.936 A:middle
+so it can reliably relocalize.
+
+00:14:37.076 --> 00:14:38.716 A:middle
+But you don't have to worry
+
+00:14:38.716 --> 00:14:40.256 A:middle
+about all those points.
+
+00:14:41.676 --> 00:14:43.916 A:middle
+In ARKit, API really makes
+
+00:14:43.976 --> 00:14:46.076 A:middle
+things easier for you by giving
+
+00:14:46.076 --> 00:14:47.776 A:middle
+you WorldMappingStatus on
+
+00:14:47.776 --> 00:14:48.186 A:middle
+ARFrame.
+
+00:14:49.366 --> 00:14:51.516 A:middle
+WorldMappingStatus is updated in
+
+00:14:51.516 --> 00:14:53.856 A:middle
+every ARFrame and can be
+
+00:14:53.856 --> 00:14:55.776 A:middle
+retrieved by WorldMappingStatus
+
+00:14:55.956 --> 00:14:56.376 A:middle
+property.
+
+00:14:56.896 --> 00:14:58.456 A:middle
+So let's see how this works.
+
+00:14:59.106 --> 00:15:02.866 A:middle
+So when we start world tracking,
+

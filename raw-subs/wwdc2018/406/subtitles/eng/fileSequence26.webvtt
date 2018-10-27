@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.516 --> 00:26:00.556 A:middle
+the capabilities of both of
+
+00:26:00.556 --> 00:26:00.886 A:middle
+these.
+
+00:26:02.416 --> 00:26:04.556 A:middle
+Now, when you have a bunch of
+
+00:26:04.556 --> 00:26:06.216 A:middle
+conforming types, and a bunch of
+
+00:26:06.216 --> 00:26:07.986 A:middle
+generic algorithms, you tend to
+
+00:26:07.986 --> 00:26:09.806 A:middle
+get protocol hierarchies
+
+00:26:09.806 --> 00:26:10.196 A:middle
+forming.
+
+00:26:10.666 --> 00:26:12.156 A:middle
+Now, these hierarchies, they
+
+00:26:12.156 --> 00:26:13.046 A:middle
+shouldn't be too big.
+
+00:26:13.176 --> 00:26:14.026 A:middle
+They should not be too
+
+00:26:14.026 --> 00:26:14.956 A:middle
+fine-grained.
+
+00:26:15.926 --> 00:26:17.046 A:middle
+Because you really want a small
+
+00:26:17.046 --> 00:26:18.066 A:middle
+number of protocols that really
+
+00:26:18.066 --> 00:26:19.776 A:middle
+describe the kinds of types that
+
+00:26:19.776 --> 00:26:21.426 A:middle
+show up in the domain, right?
+
+00:26:21.876 --> 00:26:23.766 A:middle
+And now, there's things, things
+
+00:26:23.766 --> 00:26:25.016 A:middle
+that you notice when you do
+
+00:26:25.016 --> 00:26:25.846 A:middle
+build these protocol
+
+00:26:25.846 --> 00:26:26.446 A:middle
+hierarchies.
+
+00:26:26.626 --> 00:26:27.826 A:middle
+So, as you go from the bottom of
+
+00:26:27.826 --> 00:26:29.646 A:middle
+the hierarchy to the top, you're
+
+00:26:29.646 --> 00:26:30.956 A:middle
+going to protocols that have
+
+00:26:30.956 --> 00:26:32.176 A:middle
+fewer requirements.
+
+00:26:32.306 --> 00:26:33.576 A:middle
+And therefore, there are more
+
+00:26:33.576 --> 00:26:35.306 A:middle
+conforming types that can
+
+00:26:35.306 --> 00:26:36.626 A:middle
+implement those requirements.
+
+00:26:37.566 --> 00:26:38.336 A:middle
+Now, on the other hand, as
+
+00:26:38.336 --> 00:26:39.416 A:middle
+you're moving down the
+
+00:26:39.466 --> 00:26:41.666 A:middle
+hierarchy, and combining
+
+00:26:41.666 --> 00:26:42.646 A:middle
+different protocols from the
+
+00:26:42.696 --> 00:26:43.176 A:middle
+hierarchy.
+
+00:26:43.626 --> 00:26:44.746 A:middle
+You get to implement more
+
+00:26:44.746 --> 00:26:46.076 A:middle
+intricate, more specialized
+
+00:26:46.076 --> 00:26:47.676 A:middle
+algorithms that require more
+
+00:26:47.676 --> 00:26:48.686 A:middle
+advanced capabilities.
+
+00:26:48.896 --> 00:26:50.006 A:middle
+But naturally work with fewer
+
+00:26:50.006 --> 00:26:50.836 A:middle
+conforming types.
+
+00:26:54.556 --> 00:26:56.306 A:middle
+Okay. So let's talk about
+
+00:26:56.306 --> 00:26:57.246 A:middle
+conditional conformance.
+
+00:26:57.306 --> 00:26:58.376 A:middle
+This is, of course, a newer
+
+00:26:58.376 --> 00:27:00.396 A:middle
+feature in, in Swift.
+

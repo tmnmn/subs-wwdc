@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.856 --> 00:14:00.636 A:middle
+request object if the
+
+00:14:00.636 --> 00:14:02.586 A:middle
+AVContentKeyRequest cannot
+
+00:14:02.586 --> 00:14:04.386 A:middle
+accept the persistent key as a
+
+00:14:04.386 --> 00:14:04.886 A:middle
+response.
+
+00:14:07.036 --> 00:14:08.126 A:middle
+So, when requesting a
+
+00:14:08.126 --> 00:14:10.226 A:middle
+PersistableContentKeyRequest
+
+00:14:10.306 --> 00:14:11.836 A:middle
+field you should respond with an
+
+00:14:11.836 --> 00:14:13.206 A:middle
+online FairPlay Streaming key
+
+00:14:13.206 --> 00:14:14.236 A:middle
+from your key server.
+
+00:14:16.886 --> 00:14:17.976 A:middle
+If you are using
+
+00:14:17.976 --> 00:14:19.956 A:middle
+AVAssetResourceLoader, before
+
+00:14:19.956 --> 00:14:21.326 A:middle
+responding with a persistent key
+
+00:14:21.326 --> 00:14:23.266 A:middle
+data blob you should check if
+
+00:14:23.266 --> 00:14:24.886 A:middle
+persistent key is listed as one
+
+00:14:24.886 --> 00:14:27.226 A:middle
+of the accepted content types in
+
+00:14:27.226 --> 00:14:28.276 A:middle
+the newly introduced
+
+00:14:28.586 --> 00:14:30.126 A:middle
+allowedContentTypes property.
+
+00:14:31.736 --> 00:14:33.226 A:middle
+So, I hope this provided some
+
+00:14:33.226 --> 00:14:35.346 A:middle
+overview of AVContentKeySession
+
+00:14:35.346 --> 00:14:36.836 A:middle
+and clarified a few questions
+
+00:14:36.836 --> 00:14:37.666 A:middle
+you might have had.
+
+00:14:38.176 --> 00:14:40.276 A:middle
+To summarize, we covered what
+
+00:14:40.276 --> 00:14:41.576 A:middle
+makes AVContentKeySession
+
+00:14:41.576 --> 00:14:42.216 A:middle
+different.
+
+00:14:42.676 --> 00:14:44.856 A:middle
+We saw how this API could be
+
+00:14:44.856 --> 00:14:46.986 A:middle
+used to improve playback startup
+
+00:14:47.286 --> 00:14:48.866 A:middle
+and scale live streaming.
+
+00:14:50.016 --> 00:14:51.166 A:middle
+We spoke a little bit about
+
+00:14:51.166 --> 00:14:52.966 A:middle
+Offline Rentals, what it really
+
+00:14:52.966 --> 00:14:54.826 A:middle
+is, and how to do it the right
+
+00:14:54.826 --> 00:14:55.126 A:middle
+way.
+
+00:14:56.236 --> 00:14:58.336 A:middle
+We, finally, highlighted best
+
+00:14:58.336 --> 00:15:00.116 A:middle
+practices around handling errors
+

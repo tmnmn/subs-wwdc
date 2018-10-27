@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:57.426 --> 00:06:00.786 A:middle
+are based on JSON Web Tokens RFC
+
+00:06:00.786 --> 00:06:04.416 A:middle
+7519, or JWT for short.
+
+00:06:04.996 --> 00:06:06.256 A:middle
+This is an industry standard
+
+00:06:06.256 --> 00:06:07.856 A:middle
+designed to specifically
+
+00:06:08.456 --> 00:06:10.406 A:middle
+transmit authorization claims
+
+00:06:10.406 --> 00:06:11.046 A:middle
+over the web.
+
+00:06:12.186 --> 00:06:14.036 A:middle
+You can find more information on
+
+00:06:14.036 --> 00:06:16.316 A:middle
+this standard at jwt.io.
+
+00:06:17.886 --> 00:06:19.266 A:middle
+There you will also find
+
+00:06:19.266 --> 00:06:21.756 A:middle
+libraries for signing JWT tokens
+
+00:06:21.756 --> 00:06:23.386 A:middle
+in most programming languages.
+
+00:06:25.226 --> 00:06:27.466 A:middle
+All JWT tokens are made of the
+
+00:06:27.466 --> 00:06:28.666 A:middle
+following three parts.
+
+00:06:28.946 --> 00:06:33.216 A:middle
+A header, a payload, and a
+
+00:06:33.216 --> 00:06:36.376 A:middle
+signature separated by periods
+
+00:06:36.376 --> 00:06:38.876 A:middle
+and each Base64 URL encoded,
+
+00:06:39.196 --> 00:06:41.056 A:middle
+making a token which can easily
+
+00:06:41.056 --> 00:06:42.696 A:middle
+be passed to a request header.
+
+00:06:44.806 --> 00:06:46.726 A:middle
+We have two recommended JWT
+
+00:06:46.726 --> 00:06:47.996 A:middle
+configurations for your
+
+00:06:47.996 --> 00:06:50.256 A:middle
+authorization token: short-lived
+
+00:06:50.256 --> 00:06:52.376 A:middle
+tokens and long-lived tokens.
+
+00:06:54.716 --> 00:06:56.006 A:middle
+Let's start with short-lived
+
+00:06:56.006 --> 00:06:56.536 A:middle
+tokens.
+
+00:06:57.076 --> 00:06:58.726 A:middle
+These authorization tokens offer
+
+00:06:58.726 --> 00:07:00.206 A:middle
+the most protection against
+

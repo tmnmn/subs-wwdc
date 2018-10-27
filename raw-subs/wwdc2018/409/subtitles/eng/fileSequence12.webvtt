@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.676 --> 00:12:00.416 A:middle
+provides the performOperation
+
+00:12:00.416 --> 00:12:02.146 A:middle
+method which takes in the
+
+00:12:02.146 --> 00:12:03.616 A:middle
+handler block parameter that
+
+00:12:03.656 --> 00:12:05.726 A:middle
+corresponds to Swift's handler
+
+00:12:05.726 --> 00:12:06.766 A:middle
+closure parameter.
+
+00:12:07.516 --> 00:12:08.736 A:middle
+But just by looking at the
+
+00:12:08.736 --> 00:12:11.406 A:middle
+Objective-C code we have no way
+
+00:12:11.406 --> 00:12:12.786 A:middle
+of knowing whether the handler
+
+00:12:12.786 --> 00:12:14.486 A:middle
+parameter can escape or not.
+
+00:12:15.986 --> 00:12:19.046 A:middle
+Xcode 10 now provides a warning
+
+00:12:19.366 --> 00:12:21.976 A:middle
+that helps us to remember that
+
+00:12:21.976 --> 00:12:23.656 A:middle
+this parameter is actually
+
+00:12:23.926 --> 00:12:24.866 A:middle
+non-escaping.
+
+00:12:25.456 --> 00:12:29.346 A:middle
+To fix this this warning you can
+
+00:12:29.486 --> 00:12:31.196 A:middle
+annotate your block parameter
+
+00:12:31.196 --> 00:12:33.596 A:middle
+with the NS NOESCAPE annotation.
+
+00:12:34.676 --> 00:12:36.056 A:middle
+You should also annotate the
+
+00:12:36.056 --> 00:12:38.416 A:middle
+implementation of the method or
+
+00:12:38.416 --> 00:12:39.456 A:middle
+the parameter in the
+
+00:12:39.456 --> 00:12:40.716 A:middle
+implementation of the method
+
+00:12:40.786 --> 00:12:42.816 A:middle
+with NS NOESCAPE annotation.
+
+00:12:44.246 --> 00:12:46.466 A:middle
+Now the NS NOESCAPE annotation
+
+00:12:46.636 --> 00:12:48.976 A:middle
+is simply a reminder for you the
+
+00:12:48.976 --> 00:12:51.656 A:middle
+programmer to ensure that you
+
+00:12:51.656 --> 00:12:54.516 A:middle
+don't store or call the handler
+
+00:12:54.516 --> 00:12:55.756 A:middle
+block after they perform
+
+00:12:55.756 --> 00:12:57.466 A:middle
+operation method returns.
+
+00:12:58.756 --> 00:13:01.866 A:middle
+So it's there for you to help
+

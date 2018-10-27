@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.565 --> 00:10:01.168 align:start position:29% line:-2
+Safe Areaの中の
+レイアウトマージンは
+
+00:10:01.268 --> 00:10:04.972 align:start position:27% line:-2
+レイアウトに対する
+付加的な余白を示すからです
+
+00:10:05.906 --> 00:10:11.178 align:start position:25% line:-2
+“それがベストではない
+場合もある”とお思いでしょう
+
+00:10:11.378 --> 00:10:14.114 align:start position:27% line:-1
+ですので別の方法もあります
+
+00:10:14.248 --> 00:10:20.487 align:start position:2% line:-2
+insetsLayoutMarginsFromSafe
+Areaをtrueからfalseにすれば
+
+00:10:20.954 --> 00:10:24.491 align:start position:30% line:-2
+レイアウトマージンは
+ビューの範囲に戻ります
+
+00:10:24.591 --> 00:10:28.028 align:start position:14% line:-1
+Safe Areaにカプセル化されません
+
+00:10:28.529 --> 00:10:30.297 align:start position:34% line:-1
+他にできることは？
+
+00:10:30.898 --> 00:10:36.637 align:start position:9% line:-2
+デフォルトではsafeAreaMarginsは
+下位階層に伝播しますが
+
+00:10:37.638 --> 00:10:40.140 align:start position:18% line:-1
+layoutMarginsは違います
+
+00:10:40.240 --> 00:10:44.811 align:start position:21% line:-2
+デフォルトでは全ビュー階層を示す
+Safe Areaを考慮せず
+
+00:10:44.912 --> 00:10:48.982 align:start position:32% line:-2
+独立したレイアウトが
+必要かもしれません
+
+00:10:50.284 --> 00:10:54.188 align:start position:32% line:-2
+しかし伝播が必要なら
+ビューごとに―
+
+00:10:54.521 --> 00:10:59.426 align:start position:7% line:-2
+preservesSuperviewLayout
+Marginsをfalseからtrueにします
+

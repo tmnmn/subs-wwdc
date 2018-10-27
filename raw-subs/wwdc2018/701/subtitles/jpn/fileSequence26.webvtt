@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.157 --> 00:26:00.094 align:start position:30% line:-1
+ではステップに戻ります
+
+00:26:01.128 --> 00:26:05.065 align:start position:34% line:-2
+カメラから
+画像を取り出すには
+
+00:26:06.467 --> 00:26:08.235 align:start position:32% line:-1
+デリゲートを使います
+
+00:26:08.902 --> 00:26:12.573 align:start position:29% line:-2
+カメラから
+CV画像バッファを取得し
+
+00:26:13.340 --> 00:26:15.109 align:start position:30% line:-1
+バッファを手に入れます
+
+00:26:15.843 --> 00:26:19.813 align:start position:34% line:-2
+CPUでアクセスが
+可能か確認します
+
+00:26:19.913 --> 00:26:21.548 align:start position:25% line:-1
+そこにVimageがあります
+
+00:26:22.149 --> 00:26:26.286 align:start position:34% line:-2
+どんなエフェクトを
+かけたあとも
+
+00:26:26.386 --> 00:26:30.324 align:start position:27% line:-2
+バッファのベースアドレスを
+アンロックします
+
+00:26:30.757 --> 00:26:33.727 align:start position:38% line:-2
+これでメモリを
+再利用できます
+
+00:26:36.763 --> 00:26:41.068 align:start position:27% line:-2
+次のステップでは
+出入力バッファを準備します
+
+00:26:43.504 --> 00:26:46.573 align:start position:27% line:-1
+CV画像バッファがあるので
+
+00:26:46.673 --> 00:26:49.409 align:start position:30% line:-1
+情報を取得するだけです
+
+00:26:49.510 --> 00:26:52.079 align:start position:32% line:-1
+高さや長さなどですね
+
+00:26:53.280 --> 00:26:57.084 align:start position:34% line:-2
+これをVimage
+バッファ対象とし
+
+00:26:57.217 --> 00:26:59.720 align:start position:30% line:-1
+ライブラリで使用します
+
+00:26:59.820 --> 00:27:02.389 align:start position:34% line:-2
+輝度とクロミナンス
+チャネルのためです
+

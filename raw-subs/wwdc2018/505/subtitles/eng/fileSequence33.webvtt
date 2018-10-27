@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.056 --> 00:33:00.616 A:middle
+provider, and we're going to
+
+00:33:00.616 --> 00:33:02.476 A:middle
+provide a JPEG image.
+
+00:33:03.346 --> 00:33:05.276 A:middle
+And, we're going to use this
+
+00:33:05.346 --> 00:33:07.236 A:middle
+userInfo property to store the
+
+00:33:07.236 --> 00:33:09.496 A:middle
+snapshotItem, which we're going
+
+00:33:09.496 --> 00:33:10.856 A:middle
+to use later to write out the
+
+00:33:10.856 --> 00:33:11.646 A:middle
+file to disk.
+
+00:33:14.016 --> 00:33:16.416 A:middle
+As a next step, let's conform to
+
+00:33:16.416 --> 00:33:17.976 A:middle
+NSFilePromiseProviderDelegate.
+
+00:33:22.176 --> 00:33:22.966 A:middle
+Just like this.
+
+00:33:24.566 --> 00:33:25.466 A:middle
+Jump back down.
+
+00:33:26.236 --> 00:33:27.246 A:middle
+And, implement the three
+
+00:33:27.246 --> 00:33:28.796 A:middle
+delegate methods you heard about
+
+00:33:28.796 --> 00:33:29.396 A:middle
+just before.
+
+00:33:30.756 --> 00:33:34.186 A:middle
+The first one returns the file
+
+00:33:34.186 --> 00:33:35.256 A:middle
+name.
+
+00:33:36.226 --> 00:33:37.896 A:middle
+For simplicity, we're just
+
+00:33:37.896 --> 00:33:39.176 A:middle
+returning a static file name
+
+00:33:39.176 --> 00:33:39.436 A:middle
+here.
+
+00:33:41.296 --> 00:33:42.976 A:middle
+The second one returns an
+
+00:33:42.976 --> 00:33:43.766 A:middle
+operationQueue.
+
+00:33:44.776 --> 00:33:46.306 A:middle
+And, we happen to have one right
+
+00:33:46.306 --> 00:33:46.566 A:middle
+here.
+
+00:33:47.956 --> 00:33:49.476 A:middle
+And, the third method is
+
+00:33:49.476 --> 00:33:51.676 A:middle
+actually going to write the file
+
+00:33:51.676 --> 00:33:51.976 A:middle
+to disk.
+
+00:33:58.746 --> 00:34:00.116 A:middle
+So, what's happening here, is
+

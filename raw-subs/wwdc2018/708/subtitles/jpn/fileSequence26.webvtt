@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.257 --> 00:26:01.662 align:start position:21% line:-2
+既存のCore ML予測APIに
+“for”でループを配置
+
+00:26:01.762 --> 00:26:05.432 align:start position:30% line:-2
+そして入力をループして
+出力を生成します
+
+00:26:06.900 --> 00:26:11.572 align:start position:29% line:-2
+裏側で何が起こっているか
+詳しく見てみましょう
+
+00:26:12.172 --> 00:26:15.576 align:start position:25% line:-1
+まず各画像の前処理が必要です
+
+00:26:15.676 --> 00:26:18.645 align:start position:30% line:-2
+GPUへのデータ送信も
+もちろん必須です
+
+00:26:19.046 --> 00:26:22.916 align:start position:32% line:-2
+その後 計算し
+出力画像を生成します
+
+00:26:23.016 --> 00:26:28.689 align:start position:20% line:-2
+そしてGPUからデータを取り出して
+Appに返す後処理があります
+
+00:26:29.823 --> 00:26:34.728 align:start position:21% line:-2
+この画像の改善の鍵は
+GPUパイプラインのバブルの除去
+
+00:26:35.863 --> 00:26:38.932 align:start position:29% line:-2
+パフォーマンス向上に
+つながる理由は 主に２つ
+
+00:26:39.032 --> 00:26:43.937 align:start position:23% line:-2
+まずGPUの待機時間がなくなり
+全体の計算時間が短縮
+
+00:26:44.037 --> 00:26:47.574 align:start position:21% line:-1
+次にGPUは継続して作動するため
+
+00:26:47.674 --> 00:26:50.277 align:start position:29% line:-1
+高いパフォーマンスを見せ
+
+00:26:50.377 --> 00:26:54.681 align:start position:27% line:-2
+各出力を
+計算する時間を短縮できます
+
+00:26:55.616 --> 00:26:59.987 align:start position:20% line:-2
+しかしCore MLにはこのような
+心配は要りません
+

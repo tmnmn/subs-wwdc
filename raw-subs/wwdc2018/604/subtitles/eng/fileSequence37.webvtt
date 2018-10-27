@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:57.946 --> 00:37:00.156 A:middle
+Now you will encode commands
+
+00:37:00.156 --> 00:37:01.156 A:middle
+into this command buffer.
+
+00:37:01.156 --> 00:37:03.086 A:middle
+I'll talk more about this
+
+00:37:03.146 --> 00:37:04.616 A:middle
+encoder shortly.
+
+00:37:05.936 --> 00:37:06.936 A:middle
+But when you are finished
+
+00:37:06.936 --> 00:37:08.846 A:middle
+encoding you will call commit
+
+00:37:08.846 --> 00:37:11.446 A:middle
+method so that this command
+
+00:37:11.446 --> 00:37:13.136 A:middle
+buffer will be submitted to GPU
+
+00:37:13.386 --> 00:37:14.366 A:middle
+for its execution.
+
+00:37:14.366 --> 00:37:17.846 A:middle
+Now you have two options for
+
+00:37:17.916 --> 00:37:19.686 A:middle
+what to do while this command
+
+00:37:19.686 --> 00:37:21.806 A:middle
+buffer is being executed on GPU.
+
+00:37:22.316 --> 00:37:25.526 A:middle
+You can wait by calling this
+
+00:37:25.526 --> 00:37:27.436 A:middle
+waitUntilCompleted method which
+
+00:37:27.436 --> 00:37:29.256 A:middle
+is similar to glFinish in
+
+00:37:29.256 --> 00:37:29.956 A:middle
+OpenGL.
+
+00:37:30.896 --> 00:37:33.026 A:middle
+This method will synchronously
+
+00:37:33.026 --> 00:37:35.456 A:middle
+wait and only returns when all
+
+00:37:35.456 --> 00:37:36.636 A:middle
+the commands in the command
+
+00:37:36.636 --> 00:37:38.296 A:middle
+buffer has been executed by the
+
+00:37:38.296 --> 00:37:38.806 A:middle
+GPU.
+
+00:37:40.916 --> 00:37:44.816 A:middle
+Alternatively, before you commit
+
+00:37:44.816 --> 00:37:46.206 A:middle
+this command buffer to GPU you
+
+00:37:46.206 --> 00:37:48.566 A:middle
+can add a completion handler,
+
+00:37:49.406 --> 00:37:51.286 A:middle
+which will be invoked when GPU
+
+00:37:51.286 --> 00:37:52.916 A:middle
+is done executing this command
+
+00:37:52.916 --> 00:37:53.296 A:middle
+buffer.
+
+00:37:53.946 --> 00:37:56.476 A:middle
+This allows CPU and GPU to
+
+00:37:56.476 --> 00:37:57.576 A:middle
+execute in parallel.
+
+00:37:58.456 --> 00:38:00.486 A:middle
+Also this allows us to track and
+

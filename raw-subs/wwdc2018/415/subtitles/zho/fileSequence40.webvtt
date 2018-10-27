@@ -1,0 +1,73 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.899 --> 00:40:02.503 align:middle line:-2
+头文件会包含
+公共和内部两种声明
+
+00:40:03.003 --> 00:40:07.140 align:middle line:-2
+就能在app的Objective-C部分
+使用内部Swift
+
+00:40:08.642 --> 00:40:09.810 align:middle line:-1
+但是对于框架
+
+00:40:10.110 --> 00:40:13.180 align:middle line:-1
+生成的头文件只包含公共声明
+
+00:40:13.380 --> 00:40:15.549 align:middle line:-1
+因为它包含于构建的产品
+
+00:40:15.616 --> 00:40:18.085 align:middle line:-1
+是框架公共接口的一部分
+
+00:40:20.521 --> 00:40:21.355 align:middle line:-1
+右边
+
+00:40:21.421 --> 00:40:24.491 align:middle line:-2
+你看到编译器
+将Objective-C类连接到
+
+00:40:24.892 --> 00:40:27.227 align:middle line:-1
+名字变形的Swift类
+
+00:40:27.728 --> 00:40:30.464 align:middle line:-2
+包含模块名称
+PetWall
+
+00:40:31.865 --> 00:40:34.101 align:middle line:-1
+现在我讲一讲模块
+
+00:40:34.668 --> 00:40:36.436 align:middle line:-2
+之后Louis会讲解
+命名修饰
+
+00:40:36.904 --> 00:40:38.305 align:middle line:-1
+现在大家要知道
+
+00:40:38.505 --> 00:40:41.175 align:middle line:-2
+它能防止
+运行时间里的冲突
+
+00:40:41.375 --> 00:40:44.478 align:middle line:-2
+不让两个模块定义
+同名的类
+
+00:40:46.180 --> 00:40:50.017 align:middle line:0
+你可以让Swift重命名
+Objective-C类
+
+00:40:50.284 --> 00:40:53.520 align:middle line:0
+通过传递识别符
+到objc属性
+
+00:40:54.188 --> 00:40:55.189 align:middle line:0
+如果这样做
+
+00:40:55.389 --> 00:40:58.692 align:middle line:0
+你要保证两个名字不冲突
+
+00:40:59.893 --> 00:41:04.998 align:middle line:0
+我用了PWL前缀
+防止冲突
+

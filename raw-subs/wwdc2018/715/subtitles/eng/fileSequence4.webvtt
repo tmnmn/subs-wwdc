@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.916 --> 00:04:01.346 A:middle
+100 bytes, and the kernel will
+
+00:04:01.346 --> 00:04:02.966 A:middle
+come back and say, I've got 10
+
+00:04:02.966 --> 00:04:03.966 A:middle
+bytes for you, why don't you
+
+00:04:03.966 --> 00:04:04.596 A:middle
+come back later.
+
+00:04:04.996 --> 00:04:05.606 A:middle
+And now you have to build a
+
+00:04:05.606 --> 00:04:06.696 A:middle
+state machine to keep track of
+
+00:04:06.696 --> 00:04:07.916 A:middle
+how many bytes you read versus
+
+00:04:07.916 --> 00:04:08.916 A:middle
+how many bytes you want to read.
+
+00:04:09.306 --> 00:04:10.996 A:middle
+This can be a lot of work, and
+
+00:04:10.996 --> 00:04:12.126 A:middle
+getting it to perform well can
+
+00:04:12.126 --> 00:04:12.986 A:middle
+be a real challenge.
+
+00:04:13.556 --> 00:04:15.986 A:middle
+On top of all of that, you
+
+00:04:16.026 --> 00:04:16.906 A:middle
+really shouldn't be reading and
+
+00:04:16.906 --> 00:04:18.016 A:middle
+writing to sockets directly
+
+00:04:18.125 --> 00:04:18.896 A:middle
+because you should be using
+
+00:04:18.896 --> 00:04:19.995 A:middle
+something like transport layer
+
+00:04:19.995 --> 00:04:21.236 A:middle
+security or TLS.
+
+00:04:24.226 --> 00:04:25.796 A:middle
+Sockets don't support TLS, so
+
+00:04:26.006 --> 00:04:27.266 A:middle
+you're probably using some other
+
+00:04:27.266 --> 00:04:30.836 A:middle
+library that is handling TLS for
+
+00:04:30.836 --> 00:04:31.886 A:middle
+you and reading and writing to
+
+00:04:31.886 --> 00:04:33.256 A:middle
+the sockets on your behalf, or
+
+00:04:33.256 --> 00:04:34.186 A:middle
+you're writing the glue code
+
+00:04:34.186 --> 00:04:35.386 A:middle
+between that library and
+
+00:04:35.386 --> 00:04:36.746 A:middle
+sockets, and you have to figure
+
+00:04:36.746 --> 00:04:37.756 A:middle
+out how to get all this to work
+
+00:04:37.756 --> 00:04:38.766 A:middle
+with all the crazy connection
+
+00:04:38.766 --> 00:04:39.796 A:middle
+logic that you put in ahead of
+
+00:04:39.796 --> 00:04:40.056 A:middle
+time.
+
+00:04:40.386 --> 00:04:42.496 A:middle
+There's a lot here that can be
+
+00:04:42.496 --> 00:04:43.146 A:middle
+really difficult.
+
+00:04:45.096 --> 00:04:47.106 A:middle
+Finally, mobility can be really
+
+00:04:47.106 --> 00:04:48.656 A:middle
+challenges with sockets for a
+
+00:04:48.656 --> 00:04:49.626 A:middle
+variety of reasons.
+
+00:04:50.166 --> 00:04:53.286 A:middle
+I think a lot of this boils down
+
+00:04:53.286 --> 00:04:54.626 A:middle
+to the fact that when sockets
+
+00:04:54.626 --> 00:04:56.966 A:middle
+came out, a lot of the devices
+
+00:04:56.966 --> 00:04:57.876 A:middle
+required more than a single
+
+00:04:57.876 --> 00:04:58.876 A:middle
+person to move them, and they
+
+00:04:58.876 --> 00:04:59.906 A:middle
+were connected with a single
+
+00:04:59.906 --> 00:05:01.436 A:middle
+wire, and they had a static IP
+

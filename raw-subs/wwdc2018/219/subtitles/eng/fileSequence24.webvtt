@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.746 --> 00:24:00.336 A:middle
+this UI.
+
+00:24:01.556 --> 00:24:02.676 A:middle
+The backing store that we're
+
+00:24:02.676 --> 00:24:04.746 A:middle
+using here, the image buffer
+
+00:24:04.746 --> 00:24:06.506 A:middle
+that's attached to the CALayer,
+
+00:24:06.886 --> 00:24:08.216 A:middle
+the size of that is proportional
+
+00:24:08.576 --> 00:24:09.256 A:middle
+to the view that we're
+
+00:24:09.256 --> 00:24:09.826 A:middle
+displaying.
+
+00:24:11.146 --> 00:24:12.266 A:middle
+Now, one new feature and
+
+00:24:12.266 --> 00:24:13.746 A:middle
+optimization that we have in iOS
+
+00:24:13.746 --> 00:24:16.786 A:middle
+12 is that the size of the
+
+00:24:16.786 --> 00:24:18.976 A:middle
+elements in that backing store
+
+00:24:19.406 --> 00:24:21.206 A:middle
+will, actually, grow dynamically
+
+00:24:21.596 --> 00:24:22.456 A:middle
+depending on whether you're
+
+00:24:22.456 --> 00:24:24.006 A:middle
+drawing any color content.
+
+00:24:24.206 --> 00:24:25.596 A:middle
+And whether that color content
+
+00:24:25.596 --> 00:24:27.286 A:middle
+is within or outside of the
+
+00:24:27.286 --> 00:24:28.426 A:middle
+standard color range.
+
+00:24:28.926 --> 00:24:30.356 A:middle
+So, if you're drawing wide color
+
+00:24:30.356 --> 00:24:32.516 A:middle
+content using extended SRGB
+
+00:24:32.516 --> 00:24:34.856 A:middle
+colors, the backing store will,
+
+00:24:34.856 --> 00:24:37.586 A:middle
+actually, be larger than the
+
+00:24:37.586 --> 00:24:38.896 A:middle
+backing store would be if you
+
+00:24:38.896 --> 00:24:41.276 A:middle
+used only colors within the zero
+
+00:24:41.276 --> 00:24:42.036 A:middle
+to one range.
+
+00:24:42.516 --> 00:24:45.766 A:middle
+Now, in previous versions of
+
+00:24:45.766 --> 00:24:47.626 A:middle
+iOS, you could set the contents
+
+00:24:47.626 --> 00:24:49.876 A:middle
+format property on CALayer as a
+
+00:24:49.876 --> 00:24:51.416 A:middle
+hint to Core Animation saying,
+
+00:24:51.416 --> 00:24:52.836 A:middle
+''I know I am not going to need
+
+00:24:53.096 --> 00:24:54.496 A:middle
+to support wide color content in
+
+00:24:54.496 --> 00:24:56.026 A:middle
+this view'', or, ''I know I am
+
+00:24:56.026 --> 00:24:57.136 A:middle
+going to need to support wide
+
+00:24:57.136 --> 00:24:58.256 A:middle
+color content in this view''.
+
+00:24:58.586 --> 00:25:00.206 A:middle
+Now, if you do this, you're
+

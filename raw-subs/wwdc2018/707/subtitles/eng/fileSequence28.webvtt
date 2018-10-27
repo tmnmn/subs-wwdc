@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.886 --> 00:28:01.336 A:middle
+contains information like
+
+00:28:01.336 --> 00:28:04.046 A:middle
+minimum, maximum, average, and
+
+00:28:04.046 --> 00:28:05.876 A:middle
+most recent values for each
+
+00:28:06.726 --> 00:28:06.826 A:middle
+type.
+
+00:28:07.656 --> 00:28:09.716 A:middle
+So I grab the statistics object
+
+00:28:09.756 --> 00:28:12.986 A:middle
+here, and from there, I have a
+
+00:28:12.986 --> 00:28:13.916 A:middle
+method that I already
+
+00:28:13.916 --> 00:28:15.886 A:middle
+implemented that will give me
+
+00:28:15.986 --> 00:28:17.976 A:middle
+the user interface label for
+
+00:28:17.976 --> 00:28:19.556 A:middle
+this particular quantity type.
+
+00:28:20.696 --> 00:28:22.156 A:middle
+And from there, it just update
+
+00:28:22.536 --> 00:28:24.716 A:middle
+my label using the statistics
+
+00:28:24.716 --> 00:28:25.106 A:middle
+object.
+
+00:28:25.776 --> 00:28:29.046 A:middle
+Next, let's make sure that we
+
+00:28:29.046 --> 00:28:30.886 A:middle
+can control the state when the
+
+00:28:30.886 --> 00:28:32.526 A:middle
+user requests it.
+
+00:28:33.216 --> 00:28:35.876 A:middle
+So every time my user will tap
+
+00:28:35.926 --> 00:28:37.376 A:middle
+the Pause button, this method
+
+00:28:37.376 --> 00:28:38.386 A:middle
+here will be called.
+
+00:28:39.066 --> 00:28:40.486 A:middle
+And from there, I simply need to
+
+00:28:40.486 --> 00:28:42.646 A:middle
+call session.pause.
+
+00:28:43.956 --> 00:28:45.716 A:middle
+For resume, it's very similar.
+
+00:28:46.346 --> 00:28:48.626 A:middle
+I'm going to do session.resume.
+
+00:28:49.176 --> 00:28:52.376 A:middle
+And finally, to end the workout,
+
+00:28:53.176 --> 00:28:55.126 A:middle
+we're going to call session.end
+
+00:28:56.006 --> 00:28:58.936 A:middle
+and then builder.endCollection
+
+00:28:59.076 --> 00:29:00.726 A:middle
+and pass the workout's end date.
+

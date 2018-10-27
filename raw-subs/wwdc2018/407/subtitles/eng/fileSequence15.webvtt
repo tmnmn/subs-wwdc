@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:01.016 --> 00:15:02.696 A:middle
+Now, on the main thread, all
+
+00:15:02.696 --> 00:15:03.626 A:middle
+these back traces are going to
+
+00:15:03.626 --> 00:15:04.556 A:middle
+start with the Main function,
+
+00:15:04.556 --> 00:15:05.596 A:middle
+and they're probably going to
+
+00:15:05.596 --> 00:15:06.666 A:middle
+call Application Main, and
+
+00:15:06.796 --> 00:15:08.356 A:middle
+they're going to branch out, all
+
+00:15:08.356 --> 00:15:09.256 A:middle
+through your source code after
+
+00:15:09.256 --> 00:15:09.536 A:middle
+that.
+
+00:15:10.206 --> 00:15:11.896 A:middle
+We can collapse these back
+
+00:15:11.956 --> 00:15:13.266 A:middle
+traces together, and overlay
+
+00:15:13.266 --> 00:15:15.316 A:middle
+them into a prefix tree, so they
+
+00:15:15.316 --> 00:15:16.916 A:middle
+start at Main and work their way
+
+00:15:16.916 --> 00:15:16.983 A:middle
+out.
+
+00:15:17.156 --> 00:15:18.646 A:middle
+And we can bubble up those
+
+00:15:18.646 --> 00:15:19.836 A:middle
+millisecond counters that we
+
+00:15:19.836 --> 00:15:21.386 A:middle
+captured at the top, so that we
+
+00:15:21.386 --> 00:15:23.416 A:middle
+can hierarchically see how much
+
+00:15:23.486 --> 00:15:24.716 A:middle
+time was spent in all the
+
+00:15:24.716 --> 00:15:25.896 A:middle
+different areas of our source
+
+00:15:25.896 --> 00:15:26.126 A:middle
+code.
+
+00:15:26.686 --> 00:15:27.636 A:middle
+And we are going to look at this
+
+00:15:27.636 --> 00:15:29.416 A:middle
+data to try and find redundant
+
+00:15:29.416 --> 00:15:31.066 A:middle
+and unnecessary operations that
+
+00:15:31.066 --> 00:15:32.696 A:middle
+we can make faster, and that is
+
+00:15:32.696 --> 00:15:33.836 A:middle
+our primary method that we are
+
+00:15:33.836 --> 00:15:34.916 A:middle
+going to use to improve the
+
+00:15:34.916 --> 00:15:36.076 A:middle
+performance of our application.
+
+00:15:37.026 --> 00:15:39.316 A:middle
+Now, as you can imagine, we're
+
+00:15:39.316 --> 00:15:40.606 A:middle
+capturing thousands of back
+
+00:15:40.606 --> 00:15:41.456 A:middle
+traces per second.
+
+00:15:41.456 --> 00:15:43.326 A:middle
+There is an overwhelming amount
+
+00:15:43.326 --> 00:15:44.666 A:middle
+of data for you to wade through
+
+00:15:44.666 --> 00:15:45.246 A:middle
+in instruments.
+
+00:15:46.146 --> 00:15:48.356 A:middle
+My primary advice to you is that
+
+00:15:48.356 --> 00:15:49.946 A:middle
+you want to filter this data as
+
+00:15:49.946 --> 00:15:51.596 A:middle
+much as possible so that you can
+
+00:15:51.596 --> 00:15:53.166 A:middle
+see the course grain performance
+
+00:15:53.166 --> 00:15:55.616 A:middle
+leads, and not focus on minutia.
+
+00:15:55.616 --> 00:15:56.376 A:middle
+All right?
+
+00:15:56.376 --> 00:15:57.786 A:middle
+So I want to show you how to
+
+00:15:57.786 --> 00:15:59.046 A:middle
+apply a bunch of powerful
+
+00:15:59.046 --> 00:16:00.086 A:middle
+filters and instruments.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.396 --> 00:27:01.346 A:middle
+protocols to mock interaction
+
+00:27:01.346 --> 00:27:03.096 A:middle
+with an external class and its
+
+00:27:03.096 --> 00:27:03.476 A:middle
+delegate.
+
+00:27:03.476 --> 00:27:05.296 A:middle
+Now, that was a lot of steps.
+
+00:27:05.366 --> 00:27:07.756 A:middle
+So, let's recap what we did.
+
+00:27:08.856 --> 00:27:10.226 A:middle
+First, we defined a new
+
+00:27:10.226 --> 00:27:11.476 A:middle
+protocol, representing the
+
+00:27:11.476 --> 00:27:13.406 A:middle
+interface of the external class.
+
+00:27:14.356 --> 00:27:15.896 A:middle
+This protocol needs to include
+
+00:27:15.896 --> 00:27:17.156 A:middle
+all the methods and properties
+
+00:27:17.276 --> 00:27:18.636 A:middle
+that we use on the external
+
+00:27:18.636 --> 00:27:20.196 A:middle
+class, and, often, their
+
+00:27:20.196 --> 00:27:22.006 A:middle
+declarations can match exactly.
+
+00:27:22.666 --> 00:27:25.746 A:middle
+Next, we created an extension on
+
+00:27:25.746 --> 00:27:27.056 A:middle
+the original external class,
+
+00:27:27.216 --> 00:27:28.326 A:middle
+which declares conformance to
+
+00:27:28.326 --> 00:27:28.836 A:middle
+the protocol.
+
+00:27:30.176 --> 00:27:31.826 A:middle
+Then we replaced all our usage
+
+00:27:31.956 --> 00:27:33.336 A:middle
+of the external class with our
+
+00:27:33.336 --> 00:27:35.516 A:middle
+new protocol, and we added an
+
+00:27:35.516 --> 00:27:36.946 A:middle
+initializer parameter so that we
+
+00:27:36.946 --> 00:27:39.196 A:middle
+could set this type in our
+
+00:27:40.776 --> 00:27:40.946 A:middle
+tests.
+
+00:27:41.096 --> 00:27:42.706 A:middle
+We also talked about how to mock
+
+00:27:42.706 --> 00:27:44.206 A:middle
+a delegate protocol, which is a
+
+00:27:44.206 --> 00:27:45.656 A:middle
+common pattern in the SDKs.
+
+00:27:46.966 --> 00:27:47.856 A:middle
+There were a few more steps
+
+00:27:47.856 --> 00:27:49.076 A:middle
+involved here, but here's what
+
+00:27:49.076 --> 00:27:49.446 A:middle
+we did.
+
+00:27:50.966 --> 00:27:52.486 A:middle
+First, we defined a mock
+
+00:27:52.596 --> 00:27:54.146 A:middle
+delegate protocol with similar
+
+00:27:54.146 --> 00:27:55.366 A:middle
+method signatures as the
+
+00:27:55.366 --> 00:27:56.336 A:middle
+protocol that we're mocking.
+
+00:27:57.136 --> 00:27:58.986 A:middle
+But we replaced the real type
+
+00:27:59.236 --> 00:28:01.146 A:middle
+with our mock protocol type.
+

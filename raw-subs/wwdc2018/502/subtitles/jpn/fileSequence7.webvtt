@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:56.383 --> 00:07:01.321 align:start position:25% line:-2
+オートプレイを使っていて
+事前にレートを設定していれば
+
+00:07:01.455 --> 00:07:05.292 align:start position:16% line:-2
+AVPlayerItemのステータスを
+readyToPlayに設定するか
+
+00:07:05.392 --> 00:07:09.329 align:start position:5% line:-2
+isPlaybackLikelyToKeepUpを
+trueに設定できます
+
+00:07:09.429 --> 00:07:11.298 align:start position:32% line:-2
+これらのプロパティは
+監視可能です
+
+00:07:12.065 --> 00:07:15.435 align:start position:30% line:-2
+これなら再生が始まると
+分かります
+
+00:07:15.569 --> 00:07:19.606 align:start position:34% line:-2
+しかし開始までには
+一瞬の間があります
+
+00:07:19.706 --> 00:07:25.379 align:start position:12% line:-2
+そこでAVPlayerの
+timeControlStatusを使うか
+
+00:07:25.479 --> 00:07:27.581 align:start position:11% line:-2
+AVPlayerItemのtimebaseを
+追跡します
+
+00:07:27.681 --> 00:07:30.117 align:start position:38% line:-2
+通知によって
+それが可能です
+
+00:07:32.085 --> 00:07:35.389 align:start position:25% line:-2
+ストールの回避に
+ヒューリスティックを用いても
+
+00:07:35.489 --> 00:07:38.192 align:start position:27% line:-1
+避けられないこともあります
+
+00:07:38.725 --> 00:07:40.727 align:start position:0% line:-2
+AVPlayerItemPlaybackStalledの
+通知で
+
+00:07:40.828 --> 00:07:44.731 align:start position:36% line:-2
+ストールの発生を
+監視できます
+
+00:07:44.998 --> 00:07:48.135 align:start position:32% line:-1
+発生頻度を測るのです
+
+00:07:48.602 --> 00:07:55.542 align:start position:27% line:-2
+異なる持続時間のストールを
+比較したり集計したりしたい
+
+00:07:55.642 --> 00:07:57.978 align:start position:30% line:-1
+そのために標準化します
+
+00:07:58.212 --> 00:08:03.884 align:start position:30% line:-2
+総視聴時間を監視し
+ストールの割合を計算し
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:01.136 --> 00:03:02.096 A:middle
+And so if you have more text
+
+00:03:02.136 --> 00:03:03.696 A:middle
+than that or if you need these
+
+00:03:03.826 --> 00:03:04.546 A:middle
+selection or scrolling
+
+00:03:04.546 --> 00:03:05.966 A:middle
+capabilities then you should use
+
+00:03:05.966 --> 00:03:07.676 A:middle
+a UITextView with editing
+
+00:03:07.676 --> 00:03:08.116 A:middle
+disabled.
+
+00:03:08.116 --> 00:03:10.286 A:middle
+Now going back to the top.
+
+00:03:10.286 --> 00:03:12.456 A:middle
+If you do need text input, then
+
+00:03:12.456 --> 00:03:13.626 A:middle
+consider whether you need secure
+
+00:03:13.626 --> 00:03:14.186 A:middle
+text entry.
+
+00:03:14.186 --> 00:03:15.336 A:middle
+And this would be like a
+
+00:03:15.336 --> 00:03:16.936 A:middle
+password field where the text is
+
+00:03:16.936 --> 00:03:18.206 A:middle
+obscured and copying is
+
+00:03:18.206 --> 00:03:18.666 A:middle
+disabled.
+
+00:03:19.236 --> 00:03:21.806 A:middle
+And so if you need that, then
+
+00:03:21.806 --> 00:03:23.726 A:middle
+use UITextField because this is
+
+00:03:23.726 --> 00:03:25.076 A:middle
+the only control that supports
+
+00:03:25.246 --> 00:03:26.026 A:middle
+secure text entry.
+
+00:03:26.476 --> 00:03:29.346 A:middle
+Otherwise, think about how much
+
+00:03:29.456 --> 00:03:30.886 A:middle
+text you expect to be entered.
+
+00:03:32.076 --> 00:03:33.016 A:middle
+And if you want something that's
+
+00:03:33.016 --> 00:03:34.466 A:middle
+like a form field input that
+
+00:03:34.466 --> 00:03:36.076 A:middle
+only needs a line, then use
+
+00:03:36.076 --> 00:03:36.836 A:middle
+UITextField.
+
+00:03:37.126 --> 00:03:38.686 A:middle
+And UITextField only supports
+
+00:03:38.766 --> 00:03:41.716 A:middle
+one line of text entry.
+
+00:03:41.936 --> 00:03:42.996 A:middle
+Otherwise, if you need more than
+
+00:03:43.176 --> 00:03:44.556 A:middle
+that, you can use UITextView.
+
+00:03:45.106 --> 00:03:47.976 A:middle
+And so now here's that same
+
+00:03:47.976 --> 00:03:49.206 A:middle
+decision process for AppKit.
+
+00:03:49.206 --> 00:03:51.006 A:middle
+And it's similar to the UIKit
+
+00:03:51.006 --> 00:03:52.286 A:middle
+process but there's a few small
+
+00:03:52.286 --> 00:03:52.656 A:middle
+differences.
+
+00:03:53.406 --> 00:03:55.496 A:middle
+So, again, you're going to start
+
+00:03:55.496 --> 00:03:56.456 A:middle
+by considering whether you need
+
+00:03:56.456 --> 00:03:57.036 A:middle
+text input.
+
+00:03:57.596 --> 00:04:00.196 A:middle
+And AppKit doesn't have a label
+

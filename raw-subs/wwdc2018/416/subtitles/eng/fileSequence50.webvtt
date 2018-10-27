@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.076 --> 00:50:01.076 A:middle
+We want to make sure that iOS
+
+00:50:01.956 --> 00:50:03.496 A:middle
+picks our image formats for us.
+
+00:50:03.746 --> 00:50:06.156 A:middle
+We can save 75% memory from SRGB
+
+00:50:06.156 --> 00:50:08.766 A:middle
+to alpha 8 just by picking the
+
+00:50:08.766 --> 00:50:10.576 A:middle
+or by using the new UIImage
+
+00:50:10.846 --> 00:50:11.996 A:middle
+GraphicsRenderer APIs.
+
+00:50:11.996 --> 00:50:14.316 A:middle
+It's really great for masks and
+
+00:50:14.316 --> 00:50:14.596 A:middle
+text.
+
+00:50:16.376 --> 00:50:18.166 A:middle
+Also, we want to use ImageIO
+
+00:50:18.936 --> 00:50:20.446 A:middle
+when we downsample our images.
+
+00:50:21.176 --> 00:50:22.836 A:middle
+It provides us or prevents a
+
+00:50:22.836 --> 00:50:24.646 A:middle
+memory spike, and it's faster
+
+00:50:24.646 --> 00:50:25.836 A:middle
+than trying to draw a UIImage
+
+00:50:25.836 --> 00:50:26.776 A:middle
+into a smaller context.
+
+00:50:27.176 --> 00:50:30.856 A:middle
+Finally, we want to unload large
+
+00:50:30.856 --> 00:50:32.706 A:middle
+images and resources that are
+
+00:50:32.706 --> 00:50:33.516 A:middle
+not on the screen.
+
+00:50:33.886 --> 00:50:34.886 A:middle
+There's no sense in using that
+
+00:50:34.886 --> 00:50:36.516 A:middle
+memory because the user can't
+
+00:50:36.516 --> 00:50:36.836 A:middle
+see them.
+
+00:50:38.166 --> 00:50:39.936 A:middle
+And even after all of that,
+
+00:50:40.156 --> 00:50:40.896 A:middle
+we're still not done.
+
+00:50:42.006 --> 00:50:44.216 A:middle
+As we just saw, using Memgraphs
+
+00:50:44.326 --> 00:50:45.926 A:middle
+can help us further understand
+
+00:50:46.346 --> 00:50:47.606 A:middle
+what's going on and reduce our
+
+00:50:47.606 --> 00:50:48.306 A:middle
+memory footprint.
+
+00:50:48.686 --> 00:50:49.576 A:middle
+That combined with malloc
+
+00:50:49.576 --> 00:50:50.906 A:middle
+history gives us great insight
+
+00:50:50.906 --> 00:50:52.006 A:middle
+into where our memory's going
+
+00:50:52.006 --> 00:50:52.966 A:middle
+and what it's being used by.
+
+00:50:54.026 --> 00:50:56.046 A:middle
+So what I'd recommend is
+
+00:50:56.046 --> 00:50:58.456 A:middle
+everyone go out, turn on malloc
+
+00:50:58.456 --> 00:51:00.426 A:middle
+history, profile your tool, and
+

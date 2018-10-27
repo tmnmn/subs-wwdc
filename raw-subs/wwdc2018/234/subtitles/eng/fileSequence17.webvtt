@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.536 --> 00:17:00.966 A:middle
+So, what's the one on the right
+
+00:17:01.306 --> 00:17:02.016 A:middle
+doing right?
+
+00:17:02.816 --> 00:17:03.946 A:middle
+It's using passive event
+
+00:17:03.946 --> 00:17:04.366 A:middle
+listeners.
+
+00:17:04.965 --> 00:17:06.675 A:middle
+By default, we enable passive
+
+00:17:06.675 --> 00:17:08.366 A:middle
+event listeners on the document,
+
+00:17:08.366 --> 00:17:10.306 A:middle
+window, and body elements, so
+
+00:17:10.306 --> 00:17:11.675 A:middle
+any touch events on these
+
+00:17:11.675 --> 00:17:13.356 A:middle
+elements indicate to the browser
+
+00:17:13.826 --> 00:17:15.806 A:middle
+to continue scrolling, and not
+
+00:17:15.866 --> 00:17:17.836 A:middle
+be interrupted waiting for the
+
+00:17:17.836 --> 00:17:19.146 A:middle
+event listeners to finish.
+
+00:17:19.806 --> 00:17:21.445 A:middle
+If there are additional elements
+
+00:17:21.445 --> 00:17:22.726 A:middle
+with event listeners that you
+
+00:17:22.726 --> 00:17:24.546 A:middle
+want to make passive, you can
+
+00:17:24.546 --> 00:17:25.935 A:middle
+set the passive property to
+
+00:17:25.935 --> 00:17:27.526 A:middle
+"true" for those event
+
+00:17:27.526 --> 00:17:27.935 A:middle
+listeners.
+
+00:17:28.816 --> 00:17:30.816 A:middle
+Essentially, without preventing
+
+00:17:30.886 --> 00:17:32.576 A:middle
+default event handling, this
+
+00:17:32.576 --> 00:17:34.546 A:middle
+flag tells the browser not to
+
+00:17:34.546 --> 00:17:36.306 A:middle
+wait for event listeners to
+
+00:17:36.306 --> 00:17:37.936 A:middle
+finish, and lets your users
+
+00:17:38.026 --> 00:17:40.226 A:middle
+continue scrolling smoothly.
+
+00:17:40.696 --> 00:17:44.356 A:middle
+Next, we move on to asynchronous
+
+00:17:44.356 --> 00:17:46.546 A:middle
+calls, with async image
+
+00:17:46.546 --> 00:17:47.056 A:middle
+decoding.
+
+00:17:47.786 --> 00:17:49.236 A:middle
+Now, typically, images are
+
+00:17:49.236 --> 00:17:50.456 A:middle
+decoded synchronously.
+
+00:17:50.656 --> 00:17:51.976 A:middle
+So, the main thread is blocked.
+
+00:17:52.506 --> 00:17:54.656 A:middle
+All the images are decoded, and
+
+00:17:54.656 --> 00:17:55.346 A:middle
+then they display.
+
+00:17:56.136 --> 00:17:57.796 A:middle
+By blocking the main thread,
+
+00:17:57.796 --> 00:17:59.486 A:middle
+this blocks user interactions.
+
+00:17:59.906 --> 00:18:01.356 A:middle
+But, with asynchronous decoding,
+

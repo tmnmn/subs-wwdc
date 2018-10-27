@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.226 --> 00:19:02.176 A:middle
+When I want to load that data
+
+00:19:02.176 --> 00:19:03.736 A:middle
+back, well I can do the same
+
+00:19:03.736 --> 00:19:03.996 A:middle
+thing.
+
+00:19:03.996 --> 00:19:06.226 A:middle
+I can get that raw data and then
+
+00:19:06.226 --> 00:19:06.976 A:middle
+pass it along to
+
+00:19:06.976 --> 00:19:08.476 A:middle
+KeyedUnarchiver, to get an
+
+00:19:08.476 --> 00:19:10.786 A:middle
+object back out.
+
+00:19:11.436 --> 00:19:12.506 A:middle
+Now, as we've said, at every
+
+00:19:12.586 --> 00:19:14.046 A:middle
+point here, the data is getting
+
+00:19:14.046 --> 00:19:14.856 A:middle
+more complicated.
+
+00:19:15.346 --> 00:19:16.426 A:middle
+There might be more to validate
+
+00:19:16.426 --> 00:19:17.756 A:middle
+about it before we can trust it,
+
+00:19:17.866 --> 00:19:18.466 A:middle
+just as well.
+
+00:19:18.466 --> 00:19:20.466 A:middle
+So, you might wonder, okay,
+
+00:19:20.466 --> 00:19:21.226 A:middle
+what's the catch here?
+
+00:19:21.776 --> 00:19:22.596 A:middle
+What else is there left to
+
+00:19:22.596 --> 00:19:22.986 A:middle
+validate?
+
+00:19:22.986 --> 00:19:25.486 A:middle
+And this downcast, here is a
+
+00:19:25.486 --> 00:19:25.986 A:middle
+good hint.
+
+00:19:26.646 --> 00:19:29.436 A:middle
+Note that this downcast happens
+
+00:19:29.686 --> 00:19:31.166 A:middle
+after we've unarchived an
+
+00:19:31.166 --> 00:19:31.566 A:middle
+object.
+
+00:19:32.636 --> 00:19:33.866 A:middle
+How could this ever fail?
+
+00:19:35.196 --> 00:19:36.076 A:middle
+It's a good indicator that
+
+00:19:36.076 --> 00:19:37.206 A:middle
+something else might be going on
+
+00:19:37.206 --> 00:19:37.326 A:middle
+here.
+
+00:19:37.676 --> 00:19:40.696 A:middle
+So, let's take a look at that.
+
+00:19:40.696 --> 00:19:41.726 A:middle
+This is an abstract
+
+00:19:41.726 --> 00:19:42.776 A:middle
+representation of what these
+
+00:19:42.776 --> 00:19:44.336 A:middle
+model objects might look like in
+
+00:19:44.336 --> 00:19:44.866 A:middle
+my archive.
+
+00:19:46.246 --> 00:19:47.706 A:middle
+Here we have all the fields that
+
+00:19:47.706 --> 00:19:48.666 A:middle
+we cared about in coding.
+
+00:19:49.106 --> 00:19:50.216 A:middle
+And each of them contains their
+
+00:19:50.216 --> 00:19:51.636 A:middle
+own structure, and substructure,
+
+00:19:51.636 --> 00:19:53.256 A:middle
+and contents, and so on.
+
+00:19:53.796 --> 00:19:55.846 A:middle
+But, interestingly here this
+
+00:19:55.846 --> 00:19:57.766 A:middle
+representation also contains the
+
+00:19:57.766 --> 00:19:59.576 A:middle
+name of the class of this
+
+00:19:59.576 --> 00:19:59.976 A:middle
+object.
+

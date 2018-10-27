@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.836 --> 00:18:00.716 A:middle
+for this class.
+
+00:18:01.076 --> 00:18:02.396 A:middle
+It verifies that it posts a
+
+00:18:02.396 --> 00:18:03.556 A:middle
+notification whenever the
+
+00:18:03.556 --> 00:18:05.116 A:middle
+NotifyAuthChanged method is
+
+00:18:05.116 --> 00:18:07.496 A:middle
+called, and we can see in the
+
+00:18:07.496 --> 00:18:08.926 A:middle
+middle section here that this
+
+00:18:08.926 --> 00:18:10.896 A:middle
+test uses the addObserver method
+
+00:18:10.896 --> 00:18:12.006 A:middle
+to create a block-based
+
+00:18:12.006 --> 00:18:13.546 A:middle
+observer, and then it removes
+
+00:18:13.546 --> 00:18:14.496 A:middle
+that observer inside of the
+
+00:18:14.496 --> 00:18:14.826 A:middle
+block.
+
+00:18:16.106 --> 00:18:17.256 A:middle
+Now, one improvement that I can
+
+00:18:17.256 --> 00:18:18.896 A:middle
+make to this test is to use the
+
+00:18:18.896 --> 00:18:19.396 A:middle
+built-in
+
+00:18:19.506 --> 00:18:22.416 A:middle
+XCTNSNotificationExpectation API
+
+00:18:22.476 --> 00:18:23.936 A:middle
+to handle creating this
+
+00:18:24.056 --> 00:18:25.856 A:middle
+NotificationCenter observer for
+
+00:18:25.856 --> 00:18:26.126 A:middle
+us.
+
+00:18:26.646 --> 00:18:28.666 A:middle
+And this is a nice improvement,
+
+00:18:28.666 --> 00:18:30.336 A:middle
+and it allows us to delete
+
+00:18:30.336 --> 00:18:31.356 A:middle
+several lines of code.
+
+00:18:32.756 --> 00:18:33.896 A:middle
+But it still has the problem we
+
+00:18:33.896 --> 00:18:35.506 A:middle
+saw before of using the default
+
+00:18:35.506 --> 00:18:37.216 A:middle
+NotificationCenter implicitly,
+
+00:18:37.476 --> 00:18:39.966 A:middle
+so let's go fix that.
+
+00:18:40.156 --> 00:18:42.666 A:middle
+Here's our original code, and
+
+00:18:42.666 --> 00:18:43.966 A:middle
+I'll apply the same technique we
+
+00:18:43.966 --> 00:18:45.646 A:middle
+saw earlier of taking a separate
+
+00:18:45.646 --> 00:18:46.856 A:middle
+NotificationCenter in our
+
+00:18:46.856 --> 00:18:49.076 A:middle
+initializer, storing it, and
+
+00:18:49.076 --> 00:18:50.456 A:middle
+using it instead of the default.
+
+00:18:50.546 --> 00:18:55.036 A:middle
+Going back to our test code now,
+
+00:18:56.086 --> 00:18:57.596 A:middle
+I'll modify it to pass a new
+
+00:18:57.596 --> 00:18:58.696 A:middle
+NotificationCenter to our
+
+00:18:58.696 --> 00:19:01.186 A:middle
+subject, but take a look at the
+

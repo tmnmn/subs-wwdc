@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.806 --> 00:06:00.576 A:middle
+font size.
+
+00:06:01.126 --> 00:06:03.216 A:middle
+It's contrast ratio of 2.9 to 1
+
+00:06:03.216 --> 00:06:04.676 A:middle
+is just too low.
+
+00:06:04.676 --> 00:06:09.486 A:middle
+And you can use the built-in
+
+00:06:09.486 --> 00:06:11.106 A:middle
+tool in our accessibility
+
+00:06:11.106 --> 00:06:13.926 A:middle
+inspector in Xcode to show you
+
+00:06:13.926 --> 00:06:15.916 A:middle
+what the contrast ratio between
+
+00:06:16.286 --> 00:06:17.896 A:middle
+a particular color combination
+
+00:06:17.896 --> 00:06:19.856 A:middle
+is and what text sizes that
+
+00:06:19.856 --> 00:06:21.276 A:middle
+color combo passes for.
+
+00:06:21.276 --> 00:06:22.386 A:middle
+And we follow the same
+
+00:06:22.386 --> 00:06:23.456 A:middle
+guidelines that I mentioned
+
+00:06:23.456 --> 00:06:24.386 A:middle
+before in this tool.
+
+00:06:25.496 --> 00:06:27.016 A:middle
+However, even with a ratio that
+
+00:06:27.016 --> 00:06:29.736 A:middle
+exceeds the recommended contrast
+
+00:06:29.736 --> 00:06:32.766 A:middle
+ratio of 4.5 to 1, for people
+
+00:06:32.766 --> 00:06:34.186 A:middle
+with low vision conditions,
+
+00:06:34.676 --> 00:06:35.906 A:middle
+colors that meet the bar can
+
+00:06:35.906 --> 00:06:37.216 A:middle
+still be problematic when it
+
+00:06:37.216 --> 00:06:38.196 A:middle
+comes to legibility.
+
+00:06:39.316 --> 00:06:40.626 A:middle
+So we provide a setting for
+
+00:06:40.626 --> 00:06:42.266 A:middle
+increasing the contrast across
+
+00:06:42.266 --> 00:06:42.826 A:middle
+the system.
+
+00:06:43.536 --> 00:06:45.016 A:middle
+In previous versions of iOS,
+
+00:06:45.386 --> 00:06:46.646 A:middle
+this setting was referred to as
+
+00:06:46.646 --> 00:06:47.616 A:middle
+darken colors.
+
+00:06:47.936 --> 00:06:49.506 A:middle
+So in your code you can use is
+
+00:06:49.506 --> 00:06:51.236 A:middle
+darker system colors enabled to
+
+00:06:51.236 --> 00:06:51.616 A:middle
+check.
+
+00:06:52.136 --> 00:06:52.896 A:middle
+Though if you're using a
+
+00:06:52.896 --> 00:06:54.696 A:middle
+standard UIKit control that you
+
+00:06:54.696 --> 00:06:56.516 A:middle
+set a tint color on, you will
+
+00:06:56.516 --> 00:06:57.786 A:middle
+actually get this work for free.
+
+00:06:59.166 --> 00:07:00.646 A:middle
+On a macOS, you can use
+

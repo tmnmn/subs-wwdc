@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.496 --> 00:20:00.316 A:middle
+exponentially.
+
+00:20:00.686 --> 00:20:03.186 A:middle
+So the more views that you
+
+00:20:03.186 --> 00:20:04.786 A:middle
+added, the surprisingly larger
+
+00:20:04.786 --> 00:20:05.496 A:middle
+cost you would find as you added
+
+00:20:05.546 --> 00:20:05.976 A:middle
+additional ones.
+
+00:20:07.826 --> 00:20:09.146 A:middle
+Now, the team worked really hard
+
+00:20:09.146 --> 00:20:10.396 A:middle
+to identify the source of this
+
+00:20:10.396 --> 00:20:12.796 A:middle
+exponential growth and fixed the
+
+00:20:12.796 --> 00:20:14.436 A:middle
+algorithm so that is no longer
+
+00:20:14.436 --> 00:20:14.826 A:middle
+the case.
+
+00:20:15.386 --> 00:20:17.556 A:middle
+So on iOS 12, these now grow
+
+00:20:17.726 --> 00:20:17.976 A:middle
+linearly.
+
+00:20:18.516 --> 00:20:23.396 A:middle
+[ Applause ]
+
+00:20:23.896 --> 00:20:24.866 A:middle
+And, of course, the team's also
+
+00:20:24.866 --> 00:20:25.956 A:middle
+been working to reduce those
+
+00:20:25.956 --> 00:20:27.586 A:middle
+constant costs for these cases
+
+00:20:27.586 --> 00:20:28.016 A:middle
+as well.
+
+00:20:29.096 --> 00:20:30.096 A:middle
+Now in addition to dependent
+
+00:20:30.096 --> 00:20:31.366 A:middle
+siblings, there's another common
+
+00:20:31.366 --> 00:20:32.506 A:middle
+type of layout that you'll find
+
+00:20:32.506 --> 00:20:34.056 A:middle
+and that's Nested Views, when
+
+00:20:34.056 --> 00:20:35.656 A:middle
+one view is inside of another
+
+00:20:35.726 --> 00:20:36.966 A:middle
+and there's constraints out to
+
+00:20:36.966 --> 00:20:37.706 A:middle
+those outer ones.
+
+00:20:38.136 --> 00:20:39.506 A:middle
+This is obviously also a pretty
+
+00:20:39.586 --> 00:20:41.586 A:middle
+common pattern in your apps and,
+
+00:20:41.586 --> 00:20:42.866 A:middle
+unfortunately, here as well in
+
+00:20:42.956 --> 00:20:44.566 A:middle
+iOS 11, we found some
+
+00:20:44.566 --> 00:20:45.286 A:middle
+exponential growth.
+
+00:20:45.966 --> 00:20:47.456 A:middle
+And again, great news.
+
+00:20:47.456 --> 00:20:48.726 A:middle
+The team has also made this
+
+00:20:48.796 --> 00:20:49.836 A:middle
+linear in iOS 12 as well.
+
+00:20:50.516 --> 00:20:54.546 A:middle
+[ Applause ]
+
+00:20:55.046 --> 00:20:56.566 A:middle
+So there's a number of really
+
+00:20:56.566 --> 00:20:58.226 A:middle
+great improvements across Auto
+
+00:20:58.226 --> 00:21:00.256 A:middle
+Layout in iOS 12 and you'll see
+

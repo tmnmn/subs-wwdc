@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.666 --> 00:18:00.796 A:middle
+versions of these direct
+
+00:18:00.796 --> 00:18:01.456 A:middle
+dependencies.
+
+00:18:02.366 --> 00:18:03.666 A:middle
+For the first one, this is
+
+00:18:03.666 --> 00:18:05.086 A:middle
+straightforward because we
+
+00:18:05.086 --> 00:18:06.536 A:middle
+specified an exact version,
+
+00:18:07.886 --> 00:18:09.336 A:middle
+beginning exactly that tag.
+
+00:18:10.446 --> 00:18:11.886 A:middle
+For the second one, we're using
+
+00:18:11.886 --> 00:18:12.866 A:middle
+the from syntax.
+
+00:18:13.286 --> 00:18:14.986 A:middle
+That means we're getting updates
+
+00:18:14.986 --> 00:18:17.106 A:middle
+to the minor or patch
+
+00:18:17.106 --> 00:18:17.826 A:middle
+components.
+
+00:18:18.356 --> 00:18:21.766 A:middle
+In this case, we're ending up
+
+00:18:21.896 --> 00:18:24.046 A:middle
+with a tag 3.1.4.
+
+00:18:24.596 --> 00:18:28.566 A:middle
+The whole process is recursive.
+
+00:18:29.206 --> 00:18:30.876 A:middle
+So next SwiftPM will look at the
+
+00:18:30.876 --> 00:18:32.546 A:middle
+transitive dependencies of all
+
+00:18:32.546 --> 00:18:33.296 A:middle
+diary points.
+
+00:18:33.726 --> 00:18:34.716 A:middle
+So, PM has no further
+
+00:18:34.716 --> 00:18:36.656 A:middle
+dependencies, so there's nothing
+
+00:18:36.656 --> 00:18:37.146 A:middle
+to do there.
+
+00:18:37.706 --> 00:18:39.686 A:middle
+But a deck of playing cards
+
+00:18:39.796 --> 00:18:41.236 A:middle
+depends on the Fisher-Yates and
+
+00:18:41.236 --> 00:18:42.346 A:middle
+playing card packages.
+
+00:18:42.916 --> 00:18:47.426 A:middle
+Next, SwiftPM has to resolve the
+
+00:18:47.426 --> 00:18:48.776 A:middle
+versions of these packages
+
+00:18:48.776 --> 00:18:49.176 A:middle
+again.
+
+00:18:49.576 --> 00:18:50.976 A:middle
+For the Fisher-Yates package,
+
+00:18:51.066 --> 00:18:52.966 A:middle
+this works the same way as
+
+00:18:52.966 --> 00:18:54.546 A:middle
+before because we are also using
+
+00:18:54.546 --> 00:18:55.576 A:middle
+the from syntax.
+
+00:18:56.666 --> 00:18:57.906 A:middle
+In this case, we're ending up
+
+00:18:57.906 --> 00:18:59.626 A:middle
+with a tag, 2.2.5.
+

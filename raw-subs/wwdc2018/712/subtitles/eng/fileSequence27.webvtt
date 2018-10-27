@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.796 --> 00:27:01.776 A:middle
+We're going to load a folder
+
+00:27:01.776 --> 00:27:03.546 A:middle
+called content into an SFrame
+
+00:27:03.546 --> 00:27:04.146 A:middle
+for that one.
+
+00:27:05.226 --> 00:27:06.786 A:middle
+And then we're ready to go ahead
+
+00:27:06.786 --> 00:27:07.556 A:middle
+and train a model.
+
+00:27:08.386 --> 00:27:10.276 A:middle
+So I'm going to say model equals
+
+00:27:10.846 --> 00:27:13.366 A:middle
+tc.styletransfer.create.
+
+00:27:13.786 --> 00:27:15.986 A:middle
+And I'm going to pass in style
+
+00:27:16.226 --> 00:27:18.886 A:middle
+and content and that's all we
+
+00:27:18.886 --> 00:27:19.116 A:middle
+need.
+
+00:27:19.486 --> 00:27:21.096 A:middle
+But that's going to take a bit
+
+00:27:21.096 --> 00:27:22.446 A:middle
+too long to train for today's
+
+00:27:22.446 --> 00:27:22.806 A:middle
+demo.
+
+00:27:23.276 --> 00:27:24.796 A:middle
+So once again, I'm going to do
+
+00:27:24.796 --> 00:27:25.746 A:middle
+it like a cooking show, and
+
+00:27:25.746 --> 00:27:26.596 A:middle
+we're going to load up one that
+
+00:27:26.596 --> 00:27:27.766 A:middle
+we've had in the oven already.
+
+00:27:28.526 --> 00:27:29.936 A:middle
+I'm going to say model equals
+
+00:27:29.936 --> 00:27:32.426 A:middle
+tc.loadmodel and I'm going to
+
+00:27:32.426 --> 00:27:34.576 A:middle
+load up my already trained style
+
+00:27:34.576 --> 00:27:35.296 A:middle
+transfer model.
+
+00:27:35.826 --> 00:27:38.546 A:middle
+Let's take a look at some of
+
+00:27:38.546 --> 00:27:40.026 A:middle
+these style images to see what
+
+00:27:40.026 --> 00:27:41.306 A:middle
+we should expect this model to
+
+00:27:41.306 --> 00:27:41.876 A:middle
+produce.
+
+00:27:42.876 --> 00:27:45.516 A:middle
+We have a style image col-- we
+
+00:27:45.516 --> 00:27:46.476 A:middle
+have an image column in our
+
+00:27:46.476 --> 00:27:47.336 A:middle
+style SFrame.
+
+00:27:47.746 --> 00:27:49.026 A:middle
+And let's take a look at just
+
+00:27:49.026 --> 00:27:50.336 A:middle
+style number three and see what
+
+00:27:50.336 --> 00:27:50.946 A:middle
+that looks like.
+
+00:27:51.796 --> 00:27:53.486 A:middle
+It-- sort of like a pile of
+
+00:27:53.486 --> 00:27:54.056 A:middle
+firewood.
+
+00:27:54.416 --> 00:27:57.036 A:middle
+And this is pretty stylistic.
+
+00:27:57.266 --> 00:27:57.966 A:middle
+I think this would be
+
+00:27:57.966 --> 00:27:59.626 A:middle
+recognizable if we were to apply
+
+00:27:59.626 --> 00:28:01.326 A:middle
+it as a filter to another image.
+

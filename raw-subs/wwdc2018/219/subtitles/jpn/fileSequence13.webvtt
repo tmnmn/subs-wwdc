@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:56.844 --> 00:13:00.848 align:start position:34% line:-2
+カメラロールを例に
+ご説明しましょう
+
+00:13:02.649 --> 00:13:08.589 align:start position:20% line:-2
+UICollectionViewで
+こんな命令を実行しました
+
+00:13:09.089 --> 00:13:13.527 align:start position:32% line:-2
+先ほど記述した
+ヘルパー機能を使って
+
+00:13:13.727 --> 00:13:18.131 align:start position:32% line:-2
+画面上のセルに合わせ
+画像を縮小します
+
+00:13:19.700 --> 00:13:22.035 align:start position:32% line:-1
+すばらしいでしょう？
+
+00:13:22.135 --> 00:13:26.907 align:start position:34% line:-2
+メモリの使用量を
+大幅に減らせました
+
+00:13:27.374 --> 00:13:30.477 align:start position:27% line:-1
+しかし まだ問題があります
+
+00:13:30.577 --> 00:13:34.481 align:start position:34% line:-2
+スクロールビューで
+起きる現象です
+
+00:13:35.382 --> 00:13:38.652 align:start position:30% line:-2
+スムーズに
+スクロールできない時が
+
+00:13:38.752 --> 00:13:40.721 align:start position:39% line:-1
+ありますよね
+
+00:13:41.188 --> 00:13:43.457 align:start position:32% line:-1
+その原因は こうです
+
+00:13:43.924 --> 00:13:48.795 align:start position:30% line:-2
+スクロール中 CPUは
+ほぼ休止しているか
+
+00:13:49.062 --> 00:13:54.802 align:start position:30% line:-2
+画像処理より優先すべき
+命令を実行しています
+
+00:13:55.502 --> 00:13:57.237 align:start position:34% line:-1
+更新された画像を―
+
+00:13:57.337 --> 00:14:02.576 align:start position:29% line:-2
+ディスプレイがすぐ
+受け取れば問題ありません
+

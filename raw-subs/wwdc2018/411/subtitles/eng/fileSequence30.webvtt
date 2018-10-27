@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.776 --> 00:30:00.146 A:middle
+over what parts of the package
+
+00:30:00.216 --> 00:30:01.526 A:middle
+get which setting values.
+
+00:30:03.636 --> 00:30:04.866 A:middle
+Boris also talked to you earlier
+
+00:30:04.866 --> 00:30:06.786 A:middle
+about SwiftPM build isolation,
+
+00:30:06.786 --> 00:30:08.026 A:middle
+and why it's important.
+
+00:30:09.206 --> 00:30:10.456 A:middle
+We don't let you run arbitrary
+
+00:30:10.456 --> 00:30:11.206 A:middle
+shell scripts.
+
+00:30:11.626 --> 00:30:13.696 A:middle
+But many users may want some
+
+00:30:13.696 --> 00:30:14.906 A:middle
+level of customization for their
+
+00:30:14.906 --> 00:30:16.416 A:middle
+build, either because they want
+
+00:30:16.416 --> 00:30:18.216 A:middle
+to support custom languages, or
+
+00:30:18.216 --> 00:30:19.976 A:middle
+processors, they want to run
+
+00:30:19.976 --> 00:30:21.026 A:middle
+their own documentation
+
+00:30:21.026 --> 00:30:22.686 A:middle
+generator implementor, or they
+
+00:30:22.686 --> 00:30:24.166 A:middle
+have other steps that they need
+
+00:30:24.166 --> 00:30:25.826 A:middle
+to bring to the build process.
+
+00:30:26.776 --> 00:30:27.926 A:middle
+We think that SwiftPM could
+
+00:30:27.926 --> 00:30:29.836 A:middle
+support this safely, possibly
+
+00:30:29.836 --> 00:30:32.196 A:middle
+even through real tools packages
+
+00:30:32.196 --> 00:30:33.506 A:middle
+that bring new tools into your
+
+00:30:33.506 --> 00:30:34.366 A:middle
+build process.
+
+00:30:34.956 --> 00:30:36.226 A:middle
+The important thing we need to
+
+00:30:36.226 --> 00:30:37.746 A:middle
+make sure here, if we do such a
+
+00:30:37.746 --> 00:30:39.706 A:middle
+feature, is that any new tool
+
+00:30:39.706 --> 00:30:40.716 A:middle
+that's brought into the build
+
+00:30:40.716 --> 00:30:42.306 A:middle
+process have to correctly
+
+00:30:42.306 --> 00:30:44.196 A:middle
+declare their input and output
+
+00:30:44.246 --> 00:30:46.166 A:middle
+dependencies, so SwiftPM can
+
+00:30:46.166 --> 00:30:48.286 A:middle
+continue to maintain correct
+
+00:30:48.366 --> 00:30:50.476 A:middle
+incremental, and parallelizable
+
+00:30:50.476 --> 00:30:50.946 A:middle
+builds.
+
+00:30:53.596 --> 00:30:54.876 A:middle
+Finally, I want to talk a little
+
+00:30:54.876 --> 00:30:56.446 A:middle
+bit about some forward-looking
+
+00:30:56.446 --> 00:30:58.306 A:middle
+thoughts on package discovery,
+
+00:30:58.556 --> 00:31:00.406 A:middle
+trust, and management.
+

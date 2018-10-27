@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.236 --> 00:07:00.626 A:middle
+I'd like this to happen every
+
+00:07:00.626 --> 00:07:02.176 A:middle
+time I tap on the astronaut, and
+
+00:07:02.176 --> 00:07:03.696 A:middle
+I don't want to have to pause
+
+00:07:03.696 --> 00:07:04.916 A:middle
+and type this expression each
+
+00:07:04.916 --> 00:07:06.336 A:middle
+time, so what I'm going to do is
+
+00:07:06.336 --> 00:07:08.046 A:middle
+configure this breakpoint to do
+
+00:07:08.046 --> 00:07:08.596 A:middle
+that for me.
+
+00:07:09.336 --> 00:07:10.156 A:middle
+If I right click on the
+
+00:07:10.156 --> 00:07:12.216 A:middle
+breakpoint, I can select edit
+
+00:07:12.216 --> 00:07:13.676 A:middle
+breakpoint and this gives me a
+
+00:07:13.676 --> 00:07:15.616 A:middle
+popover window with some
+
+00:07:15.616 --> 00:07:17.346 A:middle
+configuration to customize how
+
+00:07:17.346 --> 00:07:18.486 A:middle
+the breakpoint behaves.
+
+00:07:18.486 --> 00:07:20.186 A:middle
+I'm going to select the debugger
+
+00:07:20.186 --> 00:07:22.686 A:middle
+command action and enter the
+
+00:07:22.686 --> 00:07:24.366 A:middle
+expression command with the
+
+00:07:24.366 --> 00:07:26.226 A:middle
+command that I used in the debug
+
+00:07:26.226 --> 00:07:28.696 A:middle
+console and make this an
+
+00:07:28.696 --> 00:07:30.016 A:middle
+auto-continuing breakpoint.
+
+00:07:30.326 --> 00:07:31.596 A:middle
+So what we've configured here is
+
+00:07:31.596 --> 00:07:33.066 A:middle
+a breakpoint that once execution
+
+00:07:33.236 --> 00:07:34.136 A:middle
+enters this function, the
+
+00:07:34.136 --> 00:07:35.956 A:middle
+breakpoint will trigger execute
+
+00:07:35.996 --> 00:07:37.216 A:middle
+this command for us to change
+
+00:07:37.216 --> 00:07:38.156 A:middle
+the value of the property and
+
+00:07:38.156 --> 00:07:39.306 A:middle
+then automatically continue.
+
+00:07:40.006 --> 00:07:40.986 A:middle
+So now, every time I tap the
+
+00:07:40.986 --> 00:07:42.556 A:middle
+astronaut, he'll perform this
+
+00:07:42.626 --> 00:07:44.226 A:middle
+unsuccessful jump and fall back
+
+00:07:44.276 --> 00:07:44.506 A:middle
+down.
+
+00:07:45.206 --> 00:07:46.146 A:middle
+Now what's the problem that we
+
+00:07:46.146 --> 00:07:47.136 A:middle
+need to fix?
+
+00:07:47.476 --> 00:07:48.576 A:middle
+The specification said that
+
+00:07:48.576 --> 00:07:49.446 A:middle
+after falling down, the
+
+00:07:49.446 --> 00:07:50.806 A:middle
+astronaut should stand back up
+
+00:07:50.806 --> 00:07:52.486 A:middle
+again, so let's fix that now.
+
+00:07:53.196 --> 00:07:55.486 A:middle
+I'm going to navigate to this
+
+00:07:55.486 --> 00:07:56.976 A:middle
+function update UI for jump
+
+00:07:56.976 --> 00:07:58.576 A:middle
+failed, and we can see this
+
+00:07:58.576 --> 00:08:00.256 A:middle
+function uses UIKit Dynamics to
+

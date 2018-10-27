@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:00.436 --> 00:46:01.886 A:middle
+Now, we also have some goals
+
+00:46:01.886 --> 00:46:02.076 A:middle
+here.
+
+00:46:02.956 --> 00:46:04.096 A:middle
+For the experience we want to
+
+00:46:04.096 --> 00:46:05.356 A:middle
+provide to our users.
+
+00:46:06.426 --> 00:46:07.726 A:middle
+The first one is the same as
+
+00:46:07.726 --> 00:46:08.706 A:middle
+before, we don't want to have
+
+00:46:08.706 --> 00:46:09.436 A:middle
+any spinner.
+
+00:46:09.436 --> 00:46:10.156 A:middle
+We don't want to have
+
+00:46:10.256 --> 00:46:12.586 A:middle
+placeholders, but we also want
+
+00:46:12.586 --> 00:46:13.806 A:middle
+to have smooth animations.
+
+00:46:13.996 --> 00:46:15.576 A:middle
+And by smooth animations, I mean
+
+00:46:15.846 --> 00:46:19.396 A:middle
+60 or 120 frames per second,
+
+00:46:19.446 --> 00:46:20.586 A:middle
+depending on the screen you're
+
+00:46:20.586 --> 00:46:21.686 A:middle
+running on.
+
+00:46:23.266 --> 00:46:24.416 A:middle
+Now, remember the principles
+
+00:46:24.416 --> 00:46:25.356 A:middle
+that we've seen before.
+
+00:46:25.876 --> 00:46:26.966 A:middle
+Well, they are all applicable
+
+00:46:26.966 --> 00:46:27.236 A:middle
+here.
+
+00:46:27.586 --> 00:46:28.926 A:middle
+We want to be lazy and defer the
+
+00:46:28.926 --> 00:46:30.036 A:middle
+work we donate up front.
+
+00:46:30.786 --> 00:46:31.876 A:middle
+We want to be proactive, and
+
+00:46:31.876 --> 00:46:34.316 A:middle
+catch regressions quickly, but
+
+00:46:34.316 --> 00:46:35.956 A:middle
+we also want to be constant in
+
+00:46:35.956 --> 00:46:37.476 A:middle
+our layout passes, and
+
+00:46:37.476 --> 00:46:39.096 A:middle
+regardless of a lot of data that
+
+00:46:39.166 --> 00:46:39.686 A:middle
+we are loading.
+
+00:46:41.566 --> 00:46:42.886 A:middle
+Now, this time, we also want to
+
+00:46:42.886 --> 00:46:44.396 A:middle
+be timely, and we want to
+
+00:46:44.396 --> 00:46:45.526 A:middle
+remember the rendering loop
+
+00:46:45.526 --> 00:46:46.046 A:middle
+cycle.
+
+00:46:47.076 --> 00:46:48.426 A:middle
+And what I mean by that is that
+
+00:46:48.426 --> 00:46:49.676 A:middle
+I want you to remember that we
+
+00:46:49.676 --> 00:46:52.096 A:middle
+only have 8 or 16 milliseconds
+
+00:46:52.096 --> 00:46:53.426 A:middle
+to render that frame, so we need
+
+00:46:53.426 --> 00:46:54.206 A:middle
+to make sure that we are not
+
+00:46:54.256 --> 00:46:55.876 A:middle
+going over that time, otherwise
+
+00:46:55.916 --> 00:46:57.156 A:middle
+we would start dropping frames.
+
+00:46:59.356 --> 00:47:01.486 A:middle
+Now, let's take a step back, and
+

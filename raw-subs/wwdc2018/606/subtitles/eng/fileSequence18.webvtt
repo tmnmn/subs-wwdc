@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.886 --> 00:18:01.876 A:middle
+And finally, remember that we
+
+00:18:01.876 --> 00:18:03.186 A:middle
+can't write the shaded color
+
+00:18:03.186 --> 00:18:04.736 A:middle
+into the image until we know
+
+00:18:04.736 --> 00:18:05.816 A:middle
+whether or not the original
+
+00:18:05.816 --> 00:18:07.106 A:middle
+shading point was in shadow.
+
+00:18:07.886 --> 00:18:09.386 A:middle
+So, we need a way to pass the
+
+00:18:09.386 --> 00:18:10.856 A:middle
+color from the shading kernel
+
+00:18:11.146 --> 00:18:12.806 A:middle
+through the intersector, all the
+
+00:18:12.806 --> 00:18:14.416 A:middle
+way into the final kernel, which
+
+00:18:14.416 --> 00:18:15.346 A:middle
+will update the image.
+
+00:18:16.356 --> 00:18:17.806 A:middle
+To do this, we can customize our
+
+00:18:17.806 --> 00:18:18.366 A:middle
+ray struct.
+
+00:18:20.716 --> 00:18:23.496 A:middle
+So, first we have several
+
+00:18:23.496 --> 00:18:24.726 A:middle
+options for what data we
+
+00:18:24.726 --> 00:18:25.686 A:middle
+actually provide to the
+
+00:18:25.686 --> 00:18:26.316 A:middle
+intersector.
+
+00:18:27.166 --> 00:18:28.626 A:middle
+In this case, we'll use a data
+
+00:18:28.626 --> 00:18:30.026 A:middle
+type which includes minimum and
+
+00:18:30.026 --> 00:18:31.276 A:middle
+maximum distance fields.
+
+00:18:32.416 --> 00:18:33.626 A:middle
+MPS will ignore any
+
+00:18:33.626 --> 00:18:34.996 A:middle
+intersections outside of this
+
+00:18:34.996 --> 00:18:36.356 A:middle
+range, which will prevent our
+
+00:18:36.356 --> 00:18:37.876 A:middle
+shadow rays from overshooting
+
+00:18:37.956 --> 00:18:39.676 A:middle
+the light source.
+
+00:18:40.146 --> 00:18:41.796 A:middle
+Second, if you have
+
+00:18:41.796 --> 00:18:43.256 A:middle
+application-specific data
+
+00:18:43.306 --> 00:18:45.246 A:middle
+associated with your rays you
+
+00:18:45.246 --> 00:18:46.536 A:middle
+can append that data at the end
+
+00:18:46.536 --> 00:18:47.946 A:middle
+of the ray struct and provide a
+
+00:18:47.946 --> 00:18:48.776 A:middle
+rayStride.
+
+00:18:49.766 --> 00:18:51.346 A:middle
+MPS will skip past this data
+
+00:18:51.346 --> 00:18:52.306 A:middle
+when reading from your ray
+
+00:18:52.306 --> 00:18:52.706 A:middle
+buffer.
+
+00:18:53.896 --> 00:18:55.176 A:middle
+In this case, we'll add the
+
+00:18:55.176 --> 00:18:56.466 A:middle
+shade of color to the end of the
+
+00:18:56.466 --> 00:18:58.096 A:middle
+ray, so that we can propagate it
+
+00:18:58.096 --> 00:18:59.546 A:middle
+from the shading kernel through
+
+00:18:59.546 --> 00:19:00.386 A:middle
+to the final kernel.
+

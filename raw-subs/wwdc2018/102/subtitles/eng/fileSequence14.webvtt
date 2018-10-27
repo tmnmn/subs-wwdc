@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.996 --> 00:14:01.816 A:middle
+trace through your code and you
+
+00:14:01.816 --> 00:14:03.786 A:middle
+can also use it to bookend
+
+00:14:03.936 --> 00:14:05.476 A:middle
+critical sections of your
+
+00:14:05.476 --> 00:14:05.986 A:middle
+functions.
+
+00:14:06.586 --> 00:14:08.226 A:middle
+And once you have the data, the
+
+00:14:08.226 --> 00:14:09.986 A:middle
+real power comes in the built-in
+
+00:14:10.306 --> 00:14:11.276 A:middle
+custom instruments
+
+00:14:11.446 --> 00:14:12.266 A:middle
+visualization.
+
+00:14:13.256 --> 00:14:14.756 A:middle
+Now, we have this new Custom
+
+00:14:14.756 --> 00:14:16.656 A:middle
+Instruments support and the best
+
+00:14:16.656 --> 00:14:18.086 A:middle
+way to convey the full power of
+
+00:14:18.086 --> 00:14:19.556 A:middle
+this, I think, is through demo
+
+00:14:19.846 --> 00:14:21.236 A:middle
+so Ken will show us what our
+
+00:14:21.236 --> 00:14:21.886 A:middle
+tools can do.
+
+00:14:21.886 --> 00:14:21.976 A:middle
+Ken?
+
+00:14:22.516 --> 00:14:28.066 A:middle
+[ Applause ]
+
+00:14:28.566 --> 00:14:29.536 A:middle
+&gt;&gt; Thank you, Sebastian.
+
+00:14:30.176 --> 00:14:31.416 A:middle
+So I'm working on my Solar
+
+00:14:31.416 --> 00:14:33.086 A:middle
+System Exploration app here.
+
+00:14:33.656 --> 00:14:35.186 A:middle
+And I've noticed I've got a
+
+00:14:35.186 --> 00:14:36.376 A:middle
+little bit of a performance
+
+00:14:36.416 --> 00:14:36.746 A:middle
+problem.
+
+00:14:36.996 --> 00:14:38.506 A:middle
+So every time the app goes to
+
+00:14:38.506 --> 00:14:39.646 A:middle
+update its data, you know, when
+
+00:14:39.646 --> 00:14:40.846 A:middle
+it launches or when I press
+
+00:14:41.126 --> 00:14:43.106 A:middle
+command R like that, you can see
+
+00:14:43.106 --> 00:14:45.306 A:middle
+the UI, it gets really choppy.
+
+00:14:45.756 --> 00:14:46.576 A:middle
+The planets, they kind of
+
+00:14:46.576 --> 00:14:47.766 A:middle
+stutter as they move around
+
+00:14:47.766 --> 00:14:48.486 A:middle
+their orbits.
+
+00:14:48.936 --> 00:14:49.786 A:middle
+And then once the update
+
+00:14:49.786 --> 00:14:51.586 A:middle
+completes, well, it's pretty
+
+00:14:51.586 --> 00:14:52.006 A:middle
+smooth.
+
+00:14:52.556 --> 00:14:53.556 A:middle
+So I want to figure out what's
+
+00:14:53.556 --> 00:14:54.126 A:middle
+going on here.
+
+00:14:55.166 --> 00:14:56.996 A:middle
+Now back over in my code,
+
+00:14:57.906 --> 00:15:00.426 A:middle
+PlanetUpdateService.swift --
+

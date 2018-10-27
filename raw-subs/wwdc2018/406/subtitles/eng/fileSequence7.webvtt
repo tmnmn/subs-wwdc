@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.126 --> 00:07:01.506 A:middle
+more about the capabilities the
+
+00:07:01.506 --> 00:07:03.646 A:middle
+element needs to have, in order
+
+00:07:03.646 --> 00:07:05.636 A:middle
+to make this method available on
+
+00:07:05.636 --> 00:07:06.356 A:middle
+a buffer.
+
+00:07:07.136 --> 00:07:08.816 A:middle
+Now, the easiest way to do that
+
+00:07:08.816 --> 00:07:10.626 A:middle
+is by constraining the element
+
+00:07:10.626 --> 00:07:12.386 A:middle
+type to be a specific type like
+
+00:07:12.386 --> 00:07:13.856 A:middle
+the Int from our original loop.
+
+00:07:14.676 --> 00:07:18.366 A:middle
+If you take this easy approach
+
+00:07:18.366 --> 00:07:19.396 A:middle
+to get up and running with your
+
+00:07:19.396 --> 00:07:20.656 A:middle
+extension, it's easy to
+
+00:07:20.656 --> 00:07:21.726 A:middle
+generalize it later.
+
+00:07:22.176 --> 00:07:22.926 A:middle
+When you find that you need to
+
+00:07:22.926 --> 00:07:23.676 A:middle
+do something different.
+
+00:07:23.676 --> 00:07:25.296 A:middle
+Like sum up a buffer of doubles,
+
+00:07:25.296 --> 00:07:25.906 A:middle
+or floats.
+
+00:07:26.966 --> 00:07:28.256 A:middle
+Just look at the type that
+
+00:07:28.256 --> 00:07:29.226 A:middle
+you've constrained to.
+
+00:07:29.226 --> 00:07:31.006 A:middle
+Look at the protocols it
+
+00:07:31.006 --> 00:07:31.656 A:middle
+conforms to.
+
+00:07:31.846 --> 00:07:33.116 A:middle
+And follow them up until you get
+
+00:07:33.116 --> 00:07:34.816 A:middle
+the most general protocol that
+
+00:07:34.816 --> 00:07:35.736 A:middle
+gives you everything that you
+
+00:07:35.736 --> 00:07:36.626 A:middle
+need to do your work.
+
+00:07:37.686 --> 00:07:39.206 A:middle
+In this case, the numeric
+
+00:07:39.206 --> 00:07:40.646 A:middle
+protocol, which gives us the two
+
+00:07:40.646 --> 00:07:41.756 A:middle
+things we're relying on here.
+
+00:07:42.486 --> 00:07:44.876 A:middle
+The ability to create a new
+
+00:07:44.876 --> 00:07:46.596 A:middle
+element with a value of zero,
+
+00:07:46.596 --> 00:07:48.096 A:middle
+and the ability to add elements
+
+00:07:48.096 --> 00:07:48.476 A:middle
+to it.
+
+00:07:49.076 --> 00:07:49.876 A:middle
+Which come as part of the
+
+00:07:49.876 --> 00:07:50.676 A:middle
+numeric protocol.
+
+00:07:53.696 --> 00:07:54.776 A:middle
+Now, let's talk about that
+
+00:07:54.776 --> 00:07:56.156 A:middle
+process of factoring out
+
+00:07:56.246 --> 00:07:58.496 A:middle
+protocols from various types.
+
+00:07:59.456 --> 00:08:01.226 A:middle
+So we've been talking about this
+

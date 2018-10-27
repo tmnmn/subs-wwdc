@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.486 --> 00:04:00.176 A:middle
+scenarios.
+
+00:04:00.736 --> 00:04:02.026 A:middle
+And these different scenarios
+
+00:04:02.056 --> 00:04:03.406 A:middle
+change the way that I go about
+
+00:04:03.496 --> 00:04:05.166 A:middle
+testing the code in question to
+
+00:04:05.196 --> 00:04:06.126 A:middle
+reproduce the bugs.
+
+00:04:06.776 --> 00:04:09.046 A:middle
+Sometimes I'm up against a big
+
+00:04:09.096 --> 00:04:10.926 A:middle
+performance regression, right?
+
+00:04:11.006 --> 00:04:12.086 A:middle
+Everything was moving along
+
+00:04:12.086 --> 00:04:14.116 A:middle
+smoothly, then someone checked
+
+00:04:14.116 --> 00:04:15.396 A:middle
+something in on our team, maybe
+
+00:04:15.446 --> 00:04:17.086 A:middle
+it was me, and performance has
+
+00:04:17.086 --> 00:04:18.226 A:middle
+fallen through the floor, and
+
+00:04:18.226 --> 00:04:19.495 A:middle
+now we have to go back and find
+
+00:04:19.495 --> 00:04:21.296 A:middle
+out what caused this regression.
+
+00:04:22.065 --> 00:04:23.246 A:middle
+If this regression is very
+
+00:04:23.246 --> 00:04:25.986 A:middle
+pronounced, or it's in an area
+
+00:04:25.986 --> 00:04:27.186 A:middle
+that I don't think it's likely
+
+00:04:27.186 --> 00:04:28.086 A:middle
+to regress again in the
+
+00:04:28.086 --> 00:04:29.576 A:middle
+immediate future, I may just
+
+00:04:29.676 --> 00:04:31.966 A:middle
+test it with my hands, manually,
+
+00:04:32.086 --> 00:04:33.216 A:middle
+with the profiler attached.
+
+00:04:34.386 --> 00:04:36.116 A:middle
+However, your performance
+
+00:04:36.116 --> 00:04:37.376 A:middle
+victories are going to be
+
+00:04:37.376 --> 00:04:40.056 A:middle
+hard-won battles, and they can
+
+00:04:40.056 --> 00:04:42.126 A:middle
+easily be lost through a slow
+
+00:04:42.126 --> 00:04:43.196 A:middle
+stream of regressions.
+
+00:04:43.986 --> 00:04:45.806 A:middle
+I would encourage all of you to
+
+00:04:45.806 --> 00:04:46.926 A:middle
+write automated performance
+
+00:04:46.926 --> 00:04:48.986 A:middle
+tests to capture your app's
+
+00:04:48.986 --> 00:04:50.356 A:middle
+performance, so that you can
+
+00:04:50.356 --> 00:04:51.836 A:middle
+ensure that it's not regressing
+
+00:04:51.836 --> 00:04:52.316 A:middle
+over time.
+
+00:04:55.256 --> 00:04:56.596 A:middle
+Another scenario I often find
+
+00:04:56.596 --> 00:04:58.726 A:middle
+myself in, is, are applications
+
+00:04:58.726 --> 00:05:00.326 A:middle
+performing the same as it has
+

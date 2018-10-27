@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.416 --> 00:09:02.806 A:middle
+out of stock.
+
+00:09:03.006 --> 00:09:05.376 A:middle
+With that, we have defined our
+
+00:09:05.376 --> 00:09:06.296 A:middle
+intent responses.
+
+00:09:06.756 --> 00:09:08.526 A:middle
+And when you do that, XCode
+
+00:09:08.526 --> 00:09:10.826 A:middle
+automatically cogenerates a
+
+00:09:10.886 --> 00:09:12.886 A:middle
+custom response subclass.
+
+00:09:13.396 --> 00:09:15.006 A:middle
+This subclass has all the
+
+00:09:15.006 --> 00:09:17.336 A:middle
+properties that you defined as
+
+00:09:17.336 --> 00:09:19.066 A:middle
+well as custom constructors for
+
+00:09:19.066 --> 00:09:20.936 A:middle
+your templates, which take all
+
+00:09:20.936 --> 00:09:22.256 A:middle
+the important properties that
+
+00:09:22.256 --> 00:09:23.176 A:middle
+you need to construct that
+
+00:09:23.176 --> 00:09:23.506 A:middle
+template.
+
+00:09:27.116 --> 00:09:29.336 A:middle
+Now the last step that is left
+
+00:09:29.336 --> 00:09:31.576 A:middle
+to do, is to use these responses
+
+00:09:31.646 --> 00:09:32.666 A:middle
+in our Intent Handler.
+
+00:09:34.676 --> 00:09:36.586 A:middle
+Handling a custom intent
+
+00:09:37.006 --> 00:09:39.746 A:middle
+comprises of two steps: confirm
+
+00:09:40.246 --> 00:09:40.746 A:middle
+and handle.
+
+00:09:42.316 --> 00:09:44.906 A:middle
+In confirmation, we are asked
+
+00:09:44.906 --> 00:09:46.836 A:middle
+whether we are ready to handle
+
+00:09:46.836 --> 00:09:48.196 A:middle
+this intent at this time.
+
+00:09:49.306 --> 00:09:51.526 A:middle
+So, we'll first find out whether
+
+00:09:51.526 --> 00:09:53.116 A:middle
+the soup the user has requested
+
+00:09:53.396 --> 00:09:54.806 A:middle
+is in our menu.
+
+00:09:56.286 --> 00:09:57.826 A:middle
+If it is, we'll let the system
+
+00:09:57.826 --> 00:09:59.456 A:middle
+know that we are ready to place
+
+00:09:59.456 --> 00:09:59.796 A:middle
+the order.
+

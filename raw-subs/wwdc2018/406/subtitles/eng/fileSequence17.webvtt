@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.276 --> 00:17:00.356 A:middle
+over, depending on how big it
+
+00:17:00.356 --> 00:17:00.606 A:middle
+gets.
+
+00:17:00.606 --> 00:17:02.696 A:middle
+And, doing that takes time.
+
+00:17:02.926 --> 00:17:04.715 A:middle
+Allocating memory can be fairly
+
+00:17:04.715 --> 00:17:05.256 A:middle
+expensive.
+
+00:17:05.346 --> 00:17:07.996 A:middle
+There is a nice optimization
+
+00:17:07.996 --> 00:17:09.106 A:middle
+trick we can do with this
+
+00:17:09.106 --> 00:17:09.766 A:middle
+implementation.
+
+00:17:10.606 --> 00:17:12.336 A:middle
+We already know exactly how big
+
+00:17:12.636 --> 00:17:13.986 A:middle
+the final array is going to be.
+
+00:17:14.016 --> 00:17:15.396 A:middle
+It's going to be exactly the
+
+00:17:15.396 --> 00:17:16.945 A:middle
+same size as our original
+
+00:17:16.945 --> 00:17:17.425 A:middle
+collection.
+
+00:17:18.445 --> 00:17:20.836 A:middle
+So we could reserve exactly the
+
+00:17:20.836 --> 00:17:22.766 A:middle
+right amount of space in the
+
+00:17:22.766 --> 00:17:24.486 A:middle
+array up front, before we start
+
+00:17:24.486 --> 00:17:26.435 A:middle
+appending to it, which is a nice
+
+00:17:26.435 --> 00:17:26.816 A:middle
+speed-up.
+
+00:17:26.906 --> 00:17:29.106 A:middle
+And to do this, we're calling
+
+00:17:29.196 --> 00:17:29.576 A:middle
+count.
+
+00:17:30.726 --> 00:17:32.466 A:middle
+But, we're calling count here,
+
+00:17:32.466 --> 00:17:34.226 A:middle
+in what's referred to as a
+
+00:17:34.226 --> 00:17:35.466 A:middle
+generic context.
+
+00:17:35.886 --> 00:17:37.976 A:middle
+That is, a context where the
+
+00:17:37.976 --> 00:17:39.266 A:middle
+collection type is completely
+
+00:17:39.266 --> 00:17:40.626 A:middle
+generic, not specific.
+
+00:17:40.626 --> 00:17:41.816 A:middle
+It could be an array, or a
+
+00:17:41.816 --> 00:17:43.296 A:middle
+dictionary, or a link list, or
+
+00:17:43.296 --> 00:17:43.686 A:middle
+anything.
+
+00:17:44.486 --> 00:17:46.286 A:middle
+So, we can't know that it
+
+00:17:46.286 --> 00:17:48.156 A:middle
+necessarily has a better
+
+00:17:48.156 --> 00:17:49.396 A:middle
+implementation of count
+
+00:17:49.396 --> 00:17:50.036 A:middle
+available to it.
+
+00:17:50.236 --> 00:17:51.646 A:middle
+When the compiler compiles this
+
+00:17:51.646 --> 00:17:51.976 A:middle
+code.
+
+00:17:52.726 --> 00:17:55.326 A:middle
+And so, in this case, the
+
+00:17:55.326 --> 00:17:56.376 A:middle
+version of count that's going to
+
+00:17:56.376 --> 00:17:57.966 A:middle
+be called is actually the
+
+00:17:57.966 --> 00:17:59.046 A:middle
+general version of count.
+
+00:17:59.246 --> 00:18:01.086 A:middle
+That works on any collection and
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.456 --> 00:30:02.456 A:middle
+color space that required values
+
+00:30:02.456 --> 00:30:04.786 A:middle
+outside of the range of SRGB.
+
+00:30:05.666 --> 00:30:07.906 A:middle
+But doesn't, actually, require a
+
+00:30:07.906 --> 00:30:09.676 A:middle
+larger element size to store
+
+00:30:09.676 --> 00:30:10.456 A:middle
+that information.
+
+00:30:10.936 --> 00:30:13.776 A:middle
+So, UIImage has a image renderer
+
+00:30:13.776 --> 00:30:15.726 A:middle
+format property that you can use
+
+00:30:15.766 --> 00:30:16.106 A:middle
+to get a
+
+00:30:16.106 --> 00:30:17.986 A:middle
+UIGraphicsImageRendererFormat
+
+00:30:17.986 --> 00:30:19.826 A:middle
+object preconstructed for
+
+00:30:19.826 --> 00:30:21.916 A:middle
+optimal storage of re-rendering
+
+00:30:21.916 --> 00:30:22.436 A:middle
+that image.
+
+00:30:27.046 --> 00:30:27.836 A:middle
+Lastly, we're going to talk a
+
+00:30:27.836 --> 00:30:28.876 A:middle
+little bit about how to
+
+00:30:28.876 --> 00:30:31.276 A:middle
+integrate advanced CPU and GPU
+
+00:30:31.396 --> 00:30:32.726 A:middle
+technologies that we provide in
+
+00:30:32.726 --> 00:30:35.046 A:middle
+iOS into your applications.
+
+00:30:36.416 --> 00:30:38.876 A:middle
+So, if you've got a lot of
+
+00:30:38.876 --> 00:30:40.586 A:middle
+advanced processing to do to
+
+00:30:40.586 --> 00:30:42.416 A:middle
+your images, perhaps, in real
+
+00:30:42.416 --> 00:30:44.786 A:middle
+time, consider using Core Image.
+
+00:30:46.016 --> 00:30:48.426 A:middle
+Core Image is a framework that
+
+00:30:48.426 --> 00:30:49.826 A:middle
+allows you to create a recipe
+
+00:30:49.826 --> 00:30:51.826 A:middle
+for processing an image and
+
+00:30:51.826 --> 00:30:53.966 A:middle
+handle that on the CPU or on the
+
+00:30:53.966 --> 00:30:54.516 A:middle
+GPU.
+
+00:30:55.736 --> 00:30:57.226 A:middle
+If you create a UIImage from a
+
+00:30:57.226 --> 00:30:59.366 A:middle
+CIImage and hand that to
+
+00:30:59.366 --> 00:31:01.666 A:middle
+UIImageView, UIImageView will
+

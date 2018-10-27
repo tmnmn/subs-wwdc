@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:00.286 --> 00:06:02.066 A:middle
+Here, your extension should set
+
+00:06:02.066 --> 00:06:03.526 A:middle
+up its UI for displaying the
+
+00:06:03.526 --> 00:06:05.466 A:middle
+user's credentials, and it can
+
+00:06:05.466 --> 00:06:06.546 A:middle
+use the provided service
+
+00:06:06.546 --> 00:06:08.156 A:middle
+identifiers to prioritize the
+
+00:06:08.156 --> 00:06:09.166 A:middle
+most relevant ones.
+
+00:06:09.926 --> 00:06:11.326 A:middle
+From here, two things can
+
+00:06:11.326 --> 00:06:11.636 A:middle
+happen.
+
+00:06:12.196 --> 00:06:15.286 A:middle
+If the user chooses to dismiss
+
+00:06:15.286 --> 00:06:16.656 A:middle
+your extension, you tell the
+
+00:06:16.656 --> 00:06:18.306 A:middle
+system about this by calling
+
+00:06:18.436 --> 00:06:20.456 A:middle
+Cancel Request With Error on
+
+00:06:20.456 --> 00:06:21.586 A:middle
+your view controller's extension
+
+00:06:21.586 --> 00:06:23.906 A:middle
+context, and AutoFill will
+
+00:06:23.906 --> 00:06:24.886 A:middle
+dismiss your extension.
+
+00:06:28.976 --> 00:06:30.886 A:middle
+Otherwise, if the user selects a
+
+00:06:30.886 --> 00:06:32.086 A:middle
+credential they want to use,
+
+00:06:32.506 --> 00:06:33.976 A:middle
+your extension creates an AS
+
+00:06:33.976 --> 00:06:35.736 A:middle
+password credential object based
+
+00:06:35.736 --> 00:06:37.596 A:middle
+on the user's selection and then
+
+00:06:37.596 --> 00:06:39.286 A:middle
+hands it to AutoFill by calling
+
+00:06:39.286 --> 00:06:40.596 A:middle
+the complete request with
+
+00:06:40.596 --> 00:06:42.106 A:middle
+selected credential method on
+
+00:06:42.106 --> 00:06:43.206 A:middle
+the extension context.
+
+00:06:44.046 --> 00:06:45.526 A:middle
+And AutoFill will use that
+
+00:06:45.526 --> 00:06:47.236 A:middle
+credential to fill the username
+
+00:06:47.316 --> 00:06:49.126 A:middle
+and password in the app.
+
+00:06:51.656 --> 00:06:53.036 A:middle
+There are a few best practices
+
+00:06:53.036 --> 00:06:53.986 A:middle
+the credential list should
+
+00:06:53.986 --> 00:06:55.276 A:middle
+adhere to for the best user
+
+00:06:55.276 --> 00:06:55.926 A:middle
+experience.
+
+00:06:56.946 --> 00:06:58.426 A:middle
+First of all, be sure to include
+
+00:06:58.426 --> 00:06:59.856 A:middle
+a button in your UI to cancel
+
+00:06:59.856 --> 00:07:00.456 A:middle
+the request.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.216 --> 00:33:00.966 A:middle
+The first is bundles, now why
+
+00:33:00.966 --> 00:33:02.166 A:middle
+would I be talking about bundles
+
+00:33:02.166 --> 00:33:03.326 A:middle
+in an asset talk that seems
+
+00:33:03.326 --> 00:33:04.146 A:middle
+rather incongruous?
+
+00:33:04.146 --> 00:33:05.326 A:middle
+Well I'm really trying to
+
+00:33:05.326 --> 00:33:08.696 A:middle
+address large projects.
+
+00:33:09.186 --> 00:33:11.096 A:middle
+So if you have a large project
+
+00:33:11.526 --> 00:33:13.426 A:middle
+where there are perhaps multiple
+
+00:33:13.426 --> 00:33:14.756 A:middle
+frameworks involved, maybe you
+
+00:33:14.756 --> 00:33:16.186 A:middle
+even work with multiple teams.
+
+00:33:17.066 --> 00:33:19.106 A:middle
+Dealing with assets can
+
+00:33:19.106 --> 00:33:20.406 A:middle
+sometimes be a pain if you have
+
+00:33:20.576 --> 00:33:21.776 A:middle
+to pour them all into the main
+
+00:33:21.776 --> 00:33:23.406 A:middle
+app bundle and have to manage
+
+00:33:23.406 --> 00:33:25.086 A:middle
+them all there and make sure
+
+00:33:25.086 --> 00:33:27.946 A:middle
+names don't conflict and
+
+00:33:28.626 --> 00:33:30.026 A:middle
+appropriately sourced to the
+
+00:33:30.026 --> 00:33:30.836 A:middle
+relevant parts of your
+
+00:33:30.836 --> 00:33:31.306 A:middle
+application.
+
+00:33:31.886 --> 00:33:33.136 A:middle
+One of the ways you can solve
+
+00:33:33.136 --> 00:33:34.516 A:middle
+this problem is by building
+
+00:33:34.516 --> 00:33:36.056 A:middle
+those assets into multiple
+
+00:33:36.056 --> 00:33:38.096 A:middle
+bundles because Xcode will
+
+00:33:38.096 --> 00:33:39.536 A:middle
+always generate a unique Asset
+
+00:33:39.536 --> 00:33:40.966 A:middle
+Catalog deployment artifact per
+
+00:33:40.966 --> 00:33:41.816 A:middle
+bundle or target.
+
+00:33:42.626 --> 00:33:43.996 A:middle
+So for example, consider
+
+00:33:43.996 --> 00:33:46.036 A:middle
+creating an artwork only bundle
+
+00:33:46.286 --> 00:33:47.516 A:middle
+as an example and this can be
+
+00:33:47.516 --> 00:33:49.716 A:middle
+for a good reuse strategy for
+
+00:33:49.716 --> 00:33:50.786 A:middle
+example to have a single
+
+00:33:50.786 --> 00:33:52.836 A:middle
+consolidated component that
+
+00:33:52.836 --> 00:33:54.426 A:middle
+contains all your artwork, that
+
+00:33:54.426 --> 00:33:56.826 A:middle
+has a consistent namespace, that
+
+00:33:56.986 --> 00:33:59.456 A:middle
+can provide images to the rest
+
+00:33:59.456 --> 00:34:00.556 A:middle
+-- to the other components of
+

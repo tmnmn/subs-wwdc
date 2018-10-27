@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.436 --> 00:23:01.466 A:middle
+to find and process over 800
+
+00:23:01.466 --> 00:23:03.296 A:middle
+header files for the single
+
+00:23:03.296 --> 00:23:04.106 A:middle
+include statement.
+
+00:23:05.576 --> 00:23:07.406 A:middle
+That's over 9 megabyte of source
+
+00:23:07.406 --> 00:23:10.056 A:middle
+code that has to be parsed and
+
+00:23:10.056 --> 00:23:10.596 A:middle
+verified.
+
+00:23:11.666 --> 00:23:13.706 A:middle
+And that happens for every
+
+00:23:13.706 --> 00:23:14.926 A:middle
+compiler invocation.
+
+00:23:15.556 --> 00:23:17.176 A:middle
+That's a lot of work, and it's
+
+00:23:17.376 --> 00:23:17.886 A:middle
+redundant.
+
+00:23:19.076 --> 00:23:21.976 A:middle
+So can we do better?
+
+00:23:24.066 --> 00:23:25.076 A:middle
+One of the features you might be
+
+00:23:25.076 --> 00:23:26.936 A:middle
+aware of is called precompiled
+
+00:23:26.936 --> 00:23:27.576 A:middle
+header files.
+
+00:23:28.196 --> 00:23:29.816 A:middle
+That's one way to improve this.
+
+00:23:30.596 --> 00:23:31.886 A:middle
+But we have something better.
+
+00:23:31.996 --> 00:23:34.106 A:middle
+A few years back, we introduced
+
+00:23:34.236 --> 00:23:34.866 A:middle
+Clang modules.
+
+00:23:36.366 --> 00:23:38.806 A:middle
+Clang modules allow us to only
+
+00:23:39.006 --> 00:23:40.626 A:middle
+find and parse the headers once
+
+00:23:41.216 --> 00:23:43.306 A:middle
+per framework and then store
+
+00:23:43.306 --> 00:23:45.276 A:middle
+that information on disk so it's
+
+00:23:45.706 --> 00:23:47.256 A:middle
+cached and can be reused.
+
+00:23:48.366 --> 00:23:50.316 A:middle
+This should have improved your
+
+00:23:50.316 --> 00:23:50.776 A:middle
+build times.
+
+00:23:53.946 --> 00:23:55.666 A:middle
+In order to do that, Clang
+
+00:23:55.666 --> 00:23:57.136 A:middle
+modules must have certain
+
+00:23:57.136 --> 00:23:57.716 A:middle
+properties.
+
+00:23:58.386 --> 00:24:00.216 A:middle
+One of them, one of the most
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.716 --> 00:25:01.706 A:middle
+of a navigation controller, the
+
+00:25:01.706 --> 00:25:02.816 A:middle
+scroll view will go ahead and
+
+00:25:02.816 --> 00:25:04.606 A:middle
+adjust its top and bottom
+
+00:25:04.746 --> 00:25:06.986 A:middle
+content inset even if it's not
+
+00:25:06.986 --> 00:25:08.746 A:middle
+vertically scrollable to account
+
+00:25:08.746 --> 00:25:09.946 A:middle
+for top and bottom bars.
+
+00:25:10.406 --> 00:25:11.516 A:middle
+So, even in this case where we
+
+00:25:11.516 --> 00:25:13.326 A:middle
+have a very short article, it
+
+00:25:13.326 --> 00:25:14.286 A:middle
+still means that we're getting
+
+00:25:14.286 --> 00:25:15.146 A:middle
+the right insets.
+
+00:25:15.416 --> 00:25:16.406 A:middle
+And this is generally the
+
+00:25:16.406 --> 00:25:17.396 A:middle
+behavior you're going to want.
+
+00:25:17.396 --> 00:25:18.496 A:middle
+And that's why we have it as the
+
+00:25:18.496 --> 00:25:18.936 A:middle
+default.
+
+00:25:19.466 --> 00:25:20.706 A:middle
+Just one quick heads up though.
+
+00:25:20.706 --> 00:25:21.656 A:middle
+If you are setting the
+
+00:25:21.656 --> 00:25:23.386 A:middle
+deprecated automatically adjust
+
+00:25:23.386 --> 00:25:24.666 A:middle
+scroll view inset property to
+
+00:25:24.666 --> 00:25:27.196 A:middle
+false, that will disable this
+
+00:25:27.196 --> 00:25:27.586 A:middle
+behavior.
+
+00:25:27.586 --> 00:25:28.626 A:middle
+And so it's going to behave
+
+00:25:28.626 --> 00:25:30.936 A:middle
+basically like scrollable axes.
+
+00:25:31.216 --> 00:25:32.526 A:middle
+Alright, that brings us to our
+
+00:25:32.526 --> 00:25:33.506 A:middle
+last behavior.
+
+00:25:33.896 --> 00:25:34.276 A:middle
+Never.
+
+00:25:35.536 --> 00:25:37.506 A:middle
+Now with this one, as you
+
+00:25:37.506 --> 00:25:38.576 A:middle
+expect, that means the scroll
+
+00:25:38.576 --> 00:25:39.956 A:middle
+view is never going to adjust
+
+00:25:39.956 --> 00:25:40.946 A:middle
+its content inset.
+
+00:25:42.116 --> 00:25:44.116 A:middle
+However, that has some side
+
+00:25:44.116 --> 00:25:44.606 A:middle
+effects.
+
+00:25:44.986 --> 00:25:47.016 A:middle
+For one, that means that the
+
+00:25:47.016 --> 00:25:47.936 A:middle
+scroll view will end up
+
+00:25:48.086 --> 00:25:50.206 A:middle
+propagating safe area insets on
+
+00:25:50.336 --> 00:25:51.936 A:middle
+all of its edges just like a
+
+00:25:51.936 --> 00:25:52.616 A:middle
+regular view.
+
+00:25:53.026 --> 00:25:54.376 A:middle
+And as we talked about before,
+
+00:25:54.686 --> 00:25:55.906 A:middle
+that might end up giving you
+
+00:25:55.906 --> 00:25:57.016 A:middle
+some behavior you don't really
+
+00:25:57.016 --> 00:25:57.396 A:middle
+want.
+
+00:25:57.916 --> 00:25:59.486 A:middle
+For example, if you recall your
+
+00:25:59.486 --> 00:26:00.826 A:middle
+layout margins are relative to
+

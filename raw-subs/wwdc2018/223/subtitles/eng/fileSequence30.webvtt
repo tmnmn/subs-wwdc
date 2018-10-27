@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.746 --> 00:30:00.826 A:middle
+So, there's a simple fix for
+
+00:30:00.826 --> 00:30:01.000 A:middle
+this, right?
+
+00:30:04.216 --> 00:30:04.936 A:middle
+Have you done this?
+
+00:30:06.176 --> 00:30:08.106 A:middle
+Don't do this.
+
+00:30:09.546 --> 00:30:11.326 A:middle
+It compiled, but Crusty had
+
+00:30:11.326 --> 00:30:12.586 A:middle
+suddenly stopped dancing, and I
+
+00:30:12.586 --> 00:30:15.156 A:middle
+knew something was wrong.
+
+00:30:15.366 --> 00:30:16.166 A:middle
+"What?" I said.
+
+00:30:16.966 --> 00:30:18.836 A:middle
+"Rookies always do that," said
+
+00:30:18.836 --> 00:30:20.036 A:middle
+Crusty, shaking his head.
+
+00:30:21.566 --> 00:30:23.216 A:middle
+"First, you got that comparison
+
+00:30:23.216 --> 00:30:24.736 A:middle
+with 0, which is going to be
+
+00:30:24.736 --> 00:30:26.056 A:middle
+wrong for array slice.
+
+00:30:26.686 --> 00:30:29.456 A:middle
+So, did you know that array
+
+00:30:29.456 --> 00:30:31.596 A:middle
+slices, their indices don't
+
+00:30:31.596 --> 00:30:32.216 A:middle
+start at 0?
+
+00:30:32.216 --> 00:30:35.696 A:middle
+The indices of all slices start
+
+00:30:35.966 --> 00:30:37.506 A:middle
+with the corresponding index in
+
+00:30:37.506 --> 00:30:38.786 A:middle
+the underlying collection that
+
+00:30:38.786 --> 00:30:40.246 A:middle
+they were sliced from.
+
+00:30:40.796 --> 00:30:42.976 A:middle
+That relationship is critical if
+
+00:30:42.976 --> 00:30:44.126 A:middle
+you want to be able to compose
+
+00:30:44.126 --> 00:30:46.466 A:middle
+generic algorithms using slices,
+
+00:30:47.056 --> 00:30:47.946 A:middle
+so it's really important."
+
+00:30:49.156 --> 00:30:51.946 A:middle
+Well, this problem, I knew to
+
+00:30:51.946 --> 00:30:52.406 A:middle
+fix.
+
+00:30:53.146 --> 00:30:54.126 A:middle
+Just compare it with start
+
+00:30:54.126 --> 00:30:54.516 A:middle
+index.
+
+00:30:55.766 --> 00:30:58.346 A:middle
+But the real problem is "What
+
+00:30:58.346 --> 00:31:00.056 A:middle
+does bringForward have to do
+

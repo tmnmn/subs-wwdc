@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:01.168 --> 00:05:02.603 align:middle line:-1
+我们先从连接开始
+
+00:05:03.370 --> 00:05:06.507 align:middle line:-1
+你如何知道是否连接了外接显示器
+
+00:05:08.075 --> 00:05:10.611 align:middle line:-2
+UIScreen有一个类变量
+即screens
+
+00:05:11.078 --> 00:05:13.480 align:middle line:-1
+其中包含所有已连接的显示器列表
+
+00:05:13.547 --> 00:05:15.849 align:middle line:-1
+包括内置于iPhone的显示设备
+
+00:05:16.884 --> 00:05:19.620 align:middle line:-1
+因此如果这个数组中的元素不止一个
+
+00:05:20.053 --> 00:05:22.656 align:middle line:-1
+你就知道你连接了一个外部显示器
+
+00:05:24.525 --> 00:05:30.097 align:middle line:-2
+此外 由于外部显示器可以
+随意连接和断开
+
+00:05:30.931 --> 00:05:34.601 align:middle line:-2
+UIKit会发布一些通知
+以帮助你了解何时发生这种情况
+
+00:05:35.602 --> 00:05:39.439 align:middle line:-2
+因此你应该监听UIScreen.didConnect
+Notification
+
+00:05:39.506 --> 00:05:41.909 align:middle line:-2
+和UIScreen.didDisconnect
+Notification
+
+00:05:42.276 --> 00:05:44.711 align:middle line:-1
+然后相应地调出或移除你的用户界面
+
+00:05:46.180 --> 00:05:48.782 align:middle line:-1
+Peter 你能告诉我们的开发者
+
+00:05:48.849 --> 00:05:50.417 align:middle line:-1
+设置第二用户界面有多容易吗？
+
+00:05:50.918 --> 00:05:52.519 align:middle line:-1
+Ben 我很乐意
+
+00:05:52.886 --> 00:05:56.557 align:middle line:-2
+让我们看看UIScreen的
+连接回调代码
+
+00:05:57.724 --> 00:06:01.929 align:middle line:-2
+我们在这里将一个局部变量
+设为屏幕数组中的最后一个屏幕
+

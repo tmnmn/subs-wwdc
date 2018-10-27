@@ -1,0 +1,141 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.536 --> 00:25:00.966 A:middle
+And, this is mostly fine, but
+
+00:25:00.966 --> 00:25:02.306 A:middle
+NSView actually gives you a lot
+
+00:25:02.306 --> 00:25:03.636 A:middle
+of functionality you probably
+
+00:25:03.636 --> 00:25:04.796 A:middle
+don't want to have to replicate
+
+00:25:04.796 --> 00:25:05.276 A:middle
+yourself.
+
+00:25:05.836 --> 00:25:08.526 A:middle
+If you use NSView's draw method,
+
+00:25:08.706 --> 00:25:09.886 A:middle
+it'll go ahead and take care of
+
+00:25:09.886 --> 00:25:11.056 A:middle
+things like making sure that the
+
+00:25:11.056 --> 00:25:12.226 A:middle
+appearance works correctly for
+
+00:25:12.226 --> 00:25:13.056 A:middle
+dynamic colors.
+
+00:25:13.336 --> 00:25:14.586 A:middle
+It'll manage the backing store
+
+00:25:14.586 --> 00:25:15.476 A:middle
+resolution for you.
+
+00:25:15.876 --> 00:25:17.156 A:middle
+And, it's really just as simple
+
+00:25:17.156 --> 00:25:18.266 A:middle
+as implementing the layer
+
+00:25:18.266 --> 00:25:18.706 A:middle
+methods.
+
+00:25:18.986 --> 00:25:19.986 A:middle
+So, I really encourage you to
+
+00:25:19.986 --> 00:25:21.166 A:middle
+override drawing at the view
+
+00:25:21.166 --> 00:25:22.206 A:middle
+level instead of the layer
+
+00:25:22.206 --> 00:25:22.516 A:middle
+level.
+
+00:25:23.626 --> 00:25:25.576 A:middle
+Sometimes you'll have cases
+
+00:25:25.916 --> 00:25:27.606 A:middle
+where you were implementing the
+
+00:25:27.606 --> 00:25:29.016 A:middle
+display method of CALayer
+
+00:25:29.016 --> 00:25:30.216 A:middle
+instead, and you're updating
+
+00:25:30.216 --> 00:25:31.486 A:middle
+layer properties directly,
+
+00:25:31.716 --> 00:25:32.486 A:middle
+because maybe it's more
+
+00:25:32.486 --> 00:25:33.706 A:middle
+efficient, or really expresses
+
+00:25:33.706 --> 00:25:34.786 A:middle
+what you're trying to accomplish
+
+00:25:34.786 --> 00:25:35.136 A:middle
+better.
+
+00:25:35.446 --> 00:25:37.426 A:middle
+You can still do that using the
+
+00:25:37.426 --> 00:25:39.196 A:middle
+NSView API by overriding the
+
+00:25:39.196 --> 00:25:40.806 A:middle
+update layer method, and you get
+
+00:25:40.806 --> 00:25:42.106 A:middle
+all the same benefits you do by
+
+00:25:42.106 --> 00:25:43.446 A:middle
+using the NSView draw rect
+
+00:25:43.446 --> 00:25:43.786 A:middle
+method.
+
+00:25:44.556 --> 00:25:46.756 A:middle
+A quirk I want to point out, is
+
+00:25:46.756 --> 00:25:48.026 A:middle
+you can implement both update
+
+00:25:48.026 --> 00:25:49.646 A:middle
+layer, and the draw methods on
+
+00:25:49.686 --> 00:25:50.226 A:middle
+NSView.
+
+00:25:50.846 --> 00:25:52.256 A:middle
+If you do this, when your view
+
+00:25:52.256 --> 00:25:53.576 A:middle
+has a single layer backing it,
+
+00:25:53.576 --> 00:25:54.496 A:middle
+we'll go ahead and use the
+
+00:25:54.496 --> 00:25:55.546 A:middle
+optimal layer version.
+
+00:25:56.006 --> 00:25:57.296 A:middle
+And, if you're being merged with
+
+00:25:57.296 --> 00:25:58.546 A:middle
+other views to save memory,
+
+00:25:58.896 --> 00:25:59.976 A:middle
+we'll go ahead and use the draw
+
+00:25:59.976 --> 00:26:00.536 A:middle
+rect version.
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.396 --> 00:30:01.556 A:middle
+When you wanted to center an
+
+00:30:01.556 --> 00:30:02.876 A:middle
+item in the toolbar, you've
+
+00:30:02.876 --> 00:30:05.226 A:middle
+maybe been tempted to put a
+
+00:30:05.226 --> 00:30:07.236 A:middle
+flexible space on both sides of
+
+00:30:07.236 --> 00:30:07.686 A:middle
+your item.
+
+00:30:07.686 --> 00:30:09.446 A:middle
+And, this works, but it has some
+
+00:30:09.446 --> 00:30:09.926 A:middle
+drawbacks.
+
+00:30:10.076 --> 00:30:11.706 A:middle
+Notably, when you add extra
+
+00:30:11.706 --> 00:30:13.106 A:middle
+items to the toolbar, it'll push
+
+00:30:13.106 --> 00:30:14.246 A:middle
+your item off-center.
+
+00:30:14.946 --> 00:30:16.716 A:middle
+So, NSToolbar now exposes a new
+
+00:30:16.716 --> 00:30:17.456 A:middle
+property, the
+
+00:30:17.516 --> 00:30:18.616 A:middle
+centeredItemIdentifier.
+
+00:30:19.406 --> 00:30:20.596 A:middle
+You can set this to the
+
+00:30:20.596 --> 00:30:21.906 A:middle
+identifier of an item you'd like
+
+00:30:21.906 --> 00:30:23.416 A:middle
+to remain centered, and
+
+00:30:23.456 --> 00:30:24.876 A:middle
+NSToolbar will put it there.
+
+00:30:25.486 --> 00:30:26.736 A:middle
+It should stay there unless
+
+00:30:26.736 --> 00:30:28.376 A:middle
+other Toolbar items actually
+
+00:30:28.376 --> 00:30:29.696 A:middle
+force it to be out of place.
+
+00:30:31.276 --> 00:30:32.326 A:middle
+There's another change here
+
+00:30:32.326 --> 00:30:35.426 A:middle
+worth noting as well, which is
+
+00:30:35.426 --> 00:30:38.616 A:middle
+that auto layout is now used to
+
+00:30:38.616 --> 00:30:40.036 A:middle
+measure toolbar items when the
+
+00:30:40.036 --> 00:30:41.816 A:middle
+minimum and maximum sizes are
+
+00:30:41.816 --> 00:30:42.616 A:middle
+not specified.
+
+00:30:44.846 --> 00:30:46.466 A:middle
+This applies only to apps on the
+
+00:30:46.466 --> 00:30:48.746 A:middle
+10.14 SDK, but it means that you
+
+00:30:48.746 --> 00:30:50.066 A:middle
+can do things like change the
+
+00:30:50.066 --> 00:30:52.046 A:middle
+size of the button, and the
+
+00:30:52.046 --> 00:30:52.976 A:middle
+measurement will happen for you.
+
+00:30:53.516 --> 00:30:59.546 A:middle
+[ Applause ]
+

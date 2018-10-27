@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.716 --> 00:41:00.356 A:middle
+might run into that make you
+
+00:41:00.356 --> 00:41:01.646 A:middle
+feel less than great.
+
+00:41:01.996 --> 00:41:04.326 A:middle
+So, let's start with a detective
+
+00:41:04.326 --> 00:41:04.956 A:middle
+mindset.
+
+00:41:05.896 --> 00:41:07.716 A:middle
+When you're looking at a problem
+
+00:41:07.716 --> 00:41:09.286 A:middle
+in your program, you want to
+
+00:41:09.286 --> 00:41:10.566 A:middle
+make sure to verify your
+
+00:41:10.566 --> 00:41:11.266 A:middle
+assumptions.
+
+00:41:11.656 --> 00:41:13.206 A:middle
+What do you expect your program
+
+00:41:13.206 --> 00:41:13.866 A:middle
+to be doing?
+
+00:41:14.006 --> 00:41:15.356 A:middle
+And then, verify that it's
+
+00:41:15.356 --> 00:41:16.336 A:middle
+actually doing that.
+
+00:41:17.086 --> 00:41:18.686 A:middle
+This can be a great step, when
+
+00:41:18.686 --> 00:41:20.056 A:middle
+you start to debug issues in
+
+00:41:20.056 --> 00:41:20.476 A:middle
+your app.
+
+00:41:21.996 --> 00:41:23.516 A:middle
+Once you're pretty sure which of
+
+00:41:23.516 --> 00:41:24.656 A:middle
+your assumptions is being
+
+00:41:24.656 --> 00:41:27.956 A:middle
+violated, you can start by
+
+00:41:27.956 --> 00:41:29.196 A:middle
+looking for clues.
+
+00:41:30.126 --> 00:41:31.316 A:middle
+You'll use the tools that we'll
+
+00:41:31.316 --> 00:41:33.196 A:middle
+show you during this section to
+
+00:41:33.196 --> 00:41:34.956 A:middle
+poke and prod at your objects
+
+00:41:34.956 --> 00:41:35.676 A:middle
+and structs.
+
+00:41:36.736 --> 00:41:38.126 A:middle
+And then, you're going to want
+
+00:41:38.126 --> 00:41:40.156 A:middle
+to test your hunches, by
+
+00:41:40.156 --> 00:41:42.176 A:middle
+changing state in your app, and
+
+00:41:42.176 --> 00:41:43.256 A:middle
+verifying that you found the
+
+00:41:43.256 --> 00:41:43.656 A:middle
+issue.
+
+00:41:44.816 --> 00:41:46.416 A:middle
+Let's start with a sample bug
+
+00:41:46.576 --> 00:41:47.666 A:middle
+that's a real bug.
+
+00:41:47.726 --> 00:41:50.406 A:middle
+One of the great things that I
+
+00:41:50.406 --> 00:41:51.596 A:middle
+get the privilege of working on
+
+00:41:51.596 --> 00:41:53.466 A:middle
+here at Apple, is the screenshot
+
+00:41:53.466 --> 00:41:53.846 A:middle
+editor.
+
+00:41:54.896 --> 00:41:56.456 A:middle
+Recently, we were debugging an
+
+00:41:56.456 --> 00:41:58.576 A:middle
+issue, where my screenshot pen
+
+00:41:58.576 --> 00:42:00.346 A:middle
+tools were missing, which is
+

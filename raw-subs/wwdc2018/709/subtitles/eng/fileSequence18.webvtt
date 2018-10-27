@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.516 --> 00:18:03.636 A:middle
+[ Applause ]
+
+00:18:04.136 --> 00:18:06.306 A:middle
+So if you notice, all the
+
+00:18:06.306 --> 00:18:07.696 A:middle
+details about, about our
+
+00:18:07.696 --> 00:18:10.196 A:middle
+quantized model are the same as
+
+00:18:10.196 --> 00:18:10.866 A:middle
+the original model.
+
+00:18:11.226 --> 00:18:12.306 A:middle
+It still takes in an image
+
+00:18:12.306 --> 00:18:14.066 A:middle
+input, and it still has two
+
+00:18:14.066 --> 00:18:14.566 A:middle
+outputs.
+
+00:18:15.216 --> 00:18:17.046 A:middle
+Now, if I had an app using this
+
+00:18:17.046 --> 00:18:18.616 A:middle
+model, what I could do as we saw
+
+00:18:18.616 --> 00:18:19.476 A:middle
+in the previous demo.
+
+00:18:20.056 --> 00:18:21.256 A:middle
+Is we could just drag this
+
+00:18:21.256 --> 00:18:22.766 A:middle
+quantized model into our app and
+
+00:18:22.766 --> 00:18:23.876 A:middle
+start using that instead.
+
+00:18:23.876 --> 00:18:25.456 A:middle
+And just like that, we reduce
+
+00:18:25.456 --> 00:18:25.956 A:middle
+the size of our app.
+
+00:18:32.386 --> 00:18:34.036 A:middle
+So that was quantization using
+
+00:18:34.036 --> 00:18:34.906 A:middle
+Core ML Tools.
+
+00:18:38.696 --> 00:18:40.996 A:middle
+To recap, we saw how easy it was
+
+00:18:41.096 --> 00:18:43.246 A:middle
+to use Core ML Tools to quantize
+
+00:18:43.246 --> 00:18:43.676 A:middle
+our model.
+
+00:18:44.356 --> 00:18:46.466 A:middle
+Using a simple API, we provided
+
+00:18:47.406 --> 00:18:49.176 A:middle
+our original model, the number
+
+00:18:49.176 --> 00:18:50.446 A:middle
+of bits we wanted to quantize
+
+00:18:50.446 --> 00:18:51.746 A:middle
+our model to, and the
+
+00:18:51.746 --> 00:18:53.016 A:middle
+quantization algorithm we wanted
+
+00:18:53.016 --> 00:18:53.396 A:middle
+to use.
+
+00:18:54.236 --> 00:18:55.736 A:middle
+We also saw that Core ML Tools
+
+00:18:55.736 --> 00:18:57.736 A:middle
+has utilities which help us to
+
+00:18:57.736 --> 00:18:59.476 A:middle
+compare our quantized model to
+
+00:18:59.476 --> 00:19:01.126 A:middle
+see how it performs against our
+

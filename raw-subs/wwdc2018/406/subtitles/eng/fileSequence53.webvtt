@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:59.836 --> 00:53:02.266 A:middle
+declared inside the Vehicle
+
+00:53:03.176 --> 00:53:04.956 A:middle
+class, in the superclass here.
+
+00:53:06.476 --> 00:53:08.306 A:middle
+So that initializer, it knows
+
+00:53:08.306 --> 00:53:09.746 A:middle
+how to decode all of the state
+
+00:53:09.866 --> 00:53:10.636 A:middle
+of a Vehicle.
+
+00:53:11.186 --> 00:53:12.366 A:middle
+But it knows nothing about the
+
+00:53:12.366 --> 00:53:13.446 A:middle
+Taxi subclass.
+
+00:53:14.396 --> 00:53:15.636 A:middle
+And so, if we were to use this
+
+00:53:15.636 --> 00:53:16.786 A:middle
+initializer directly, we would
+
+00:53:16.786 --> 00:53:18.126 A:middle
+actually have a problem that the
+
+00:53:18.126 --> 00:53:19.656 A:middle
+hourly rate would be completely
+
+00:53:19.656 --> 00:53:21.116 A:middle
+uninitialized, which could lead
+
+00:53:21.116 --> 00:53:22.296 A:middle
+to some rather unfortunate
+
+00:53:22.296 --> 00:53:23.556 A:middle
+misunderstandings when you get
+
+00:53:23.556 --> 00:53:24.316 A:middle
+your bill at the end.
+
+00:53:26.346 --> 00:53:27.476 A:middle
+So, how do we address this?
+
+00:53:27.626 --> 00:53:28.996 A:middle
+Well, it turns out Swift doesn't
+
+00:53:28.996 --> 00:53:30.626 A:middle
+let you get into this problem.
+
+00:53:31.416 --> 00:53:33.006 A:middle
+It's going to diagnose at the
+
+00:53:33.096 --> 00:53:34.426 A:middle
+point where you try to make
+
+00:53:34.426 --> 00:53:36.016 A:middle
+Vehicle conform to the decodable
+
+00:53:36.016 --> 00:53:37.466 A:middle
+protocol that there's actually a
+
+00:53:37.466 --> 00:53:38.776 A:middle
+problem with this initializer.
+
+00:53:38.866 --> 00:53:41.006 A:middle
+It needs to be marked required.
+
+00:53:42.836 --> 00:53:44.966 A:middle
+Now, a required initializer has
+
+00:53:44.966 --> 00:53:46.306 A:middle
+to be implemented in all
+
+00:53:46.306 --> 00:53:47.226 A:middle
+subclasses.
+
+00:53:47.516 --> 00:53:49.306 A:middle
+Not just the direct subclasses,
+
+00:53:49.556 --> 00:53:52.276 A:middle
+but any subclasses of those, any
+
+00:53:52.276 --> 00:53:53.916 A:middle
+future subclasses you don't know
+
+00:53:53.916 --> 00:53:54.426 A:middle
+about now.
+
+00:53:55.846 --> 00:53:57.196 A:middle
+Now by adding that requirement,
+
+00:53:57.516 --> 00:53:59.936 A:middle
+it means that when Taxi inherits
+
+00:53:59.996 --> 00:54:02.186 A:middle
+from Vehicle, it also needs to
+

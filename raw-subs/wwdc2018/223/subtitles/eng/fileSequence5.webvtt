@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.766 --> 00:05:06.266 A:middle
+But if you go backwards, you
+
+00:05:06.266 --> 00:05:07.526 A:middle
+only iterate over the parts of
+
+00:05:07.526 --> 00:05:08.376 A:middle
+the array that you haven't
+
+00:05:08.376 --> 00:05:08.896 A:middle
+changed yet.
+
+00:05:10.056 --> 00:05:10.776 A:middle
+Slick, right?
+
+00:05:11.456 --> 00:05:12.556 A:middle
+And this is the pattern I've
+
+00:05:12.606 --> 00:05:14.916 A:middle
+used ever since because it's
+
+00:05:14.946 --> 00:05:19.476 A:middle
+clean, and it never fails, until
+
+00:05:20.086 --> 00:05:21.736 A:middle
+a few months ago.
+
+00:05:21.736 --> 00:05:24.056 A:middle
+One morning, I had just finished
+
+00:05:24.056 --> 00:05:26.216 A:middle
+my avocado toast, and I was idly
+
+00:05:26.306 --> 00:05:28.376 A:middle
+fooling with my app when I tried
+
+00:05:28.376 --> 00:05:29.986 A:middle
+deleting about half the shapes
+
+00:05:29.986 --> 00:05:31.216 A:middle
+from a really complicated
+
+00:05:31.216 --> 00:05:31.686 A:middle
+canvas.
+
+00:05:33.016 --> 00:05:35.166 A:middle
+My iPad, it froze up for like
+
+00:05:35.526 --> 00:05:36.206 A:middle
+three seconds.
+
+00:05:36.886 --> 00:05:40.586 A:middle
+So, I took a sip of my half caf
+
+00:05:40.626 --> 00:05:42.746 A:middle
+triple shot latte in its bamboo
+
+00:05:43.156 --> 00:05:44.716 A:middle
+thermal commuter cup, and I
+
+00:05:44.716 --> 00:05:45.936 A:middle
+considered my options.
+
+00:05:47.656 --> 00:05:48.526 A:middle
+This was disturbing.
+
+00:05:49.136 --> 00:05:50.006 A:middle
+I mean, it's a pretty
+
+00:05:50.006 --> 00:05:51.716 A:middle
+straightforward operation, and
+
+00:05:51.716 --> 00:05:53.686 A:middle
+my code was so clean, how could
+
+00:05:53.686 --> 00:05:54.286 A:middle
+it be wrong?
+
+00:05:56.176 --> 00:05:58.256 A:middle
+Profiling showed me that the hot
+
+00:05:58.256 --> 00:06:01.156 A:middle
+spot was right here, but beyond
+

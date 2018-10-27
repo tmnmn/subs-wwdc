@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.999 --> 00:35:04.571 align:start position:23% line:-2
+さらに後半の中央要素“14”と
+“11”と比較します
+
+00:35:05.072 --> 00:35:11.044 align:start position:23% line:-2
+“11”は“14”より下なので
+挿入位置は中央より前です
+
+00:35:11.145 --> 00:35:14.014 align:start position:27% line:-1
+これで残りも二分されました
+
+00:35:14.481 --> 00:35:21.288 align:start position:25% line:-2
+正しい挿入位置に当たるまで
+コレクションを二分し続けます
+
+00:35:22.456 --> 00:35:27.594 align:start position:30% line:-2
+分割統治アルゴリズムは
+高速なのが特長です
+
+00:35:27.694 --> 00:35:30.631 align:start position:25% line:-1
+二分探索は対数時間を取ります
+
+00:35:30.731 --> 00:35:37.204 align:start position:21% line:-2
+つまり インプットが倍になっても
+速度は半減しません
+
+00:35:37.304 --> 00:35:43.010 align:start position:30% line:-2
+この対数アルゴリズムは
+１ステップの追加だけで
+
+00:35:43.110 --> 00:35:45.646 align:start position:29% line:-1
+問題サイズを半減できます
+
+00:35:45.779 --> 00:35:48.015 align:start position:30% line:-1
+コードにしてみましょう
+
+00:35:48.115 --> 00:35:52.519 align:start position:25% line:-2
+中央要素のインデックス探しに
+使うのは―
+
+00:35:52.619 --> 00:35:57.057 align:start position:7% line:-2
+関数でオフセットした
+RandomAccessCollectionです
+
+00:35:57.524 --> 00:36:01.762 align:start position:32% line:-2
+次に 値が中央要素の
+前に来るかを確認し
+

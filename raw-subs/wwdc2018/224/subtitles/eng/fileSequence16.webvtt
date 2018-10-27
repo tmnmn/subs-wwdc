@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.466 --> 00:16:00.416 A:middle
+fairly small set of interactions
+
+00:16:00.416 --> 00:16:02.366 A:middle
+that a customer can take, and
+
+00:16:02.366 --> 00:16:04.156 A:middle
+yet, as these happen
+
+00:16:04.156 --> 00:16:06.936 A:middle
+concurrently, it tends towards
+
+00:16:06.936 --> 00:16:07.516 A:middle
+chaos.
+
+00:16:08.306 --> 00:16:11.536 A:middle
+So, we can see that even with
+
+00:16:11.536 --> 00:16:12.936 A:middle
+this small set of actions,
+
+00:16:13.596 --> 00:16:14.806 A:middle
+things that go on concurrently
+
+00:16:14.806 --> 00:16:15.676 A:middle
+could cause a number of
+
+00:16:15.676 --> 00:16:16.756 A:middle
+different state changes in the
+
+00:16:16.756 --> 00:16:18.776 A:middle
+application and the worst thing
+
+00:16:18.776 --> 00:16:20.436 A:middle
+for us is to end up with a user
+
+00:16:20.436 --> 00:16:21.826 A:middle
+experience that looks like this.
+
+00:16:22.696 --> 00:16:23.666 A:middle
+This notion of partial
+
+00:16:23.666 --> 00:16:25.336 A:middle
+completeness doesn't make sense
+
+00:16:25.336 --> 00:16:26.196 A:middle
+to our customers.
+
+00:16:26.196 --> 00:16:27.466 A:middle
+In fact, it doesn't make sense
+
+00:16:27.466 --> 00:16:28.156 A:middle
+to us either.
+
+00:16:29.816 --> 00:16:30.836 A:middle
+Core Data is here to help with
+
+00:16:30.886 --> 00:16:32.676 A:middle
+that with query generations.
+
+00:16:33.066 --> 00:16:33.946 A:middle
+Query generations were
+
+00:16:33.946 --> 00:16:36.556 A:middle
+introduced in 2016 in our What's
+
+00:16:36.556 --> 00:16:37.656 A:middle
+New in Core Data session.
+
+00:16:38.116 --> 00:16:39.076 A:middle
+So, if you're not yet familiar
+
+00:16:39.076 --> 00:16:40.286 A:middle
+with them, I highly recommend
+
+00:16:40.286 --> 00:16:41.516 A:middle
+that you check out that session
+
+00:16:41.516 --> 00:16:42.806 A:middle
+for more information about how
+
+00:16:42.806 --> 00:16:43.356 A:middle
+they work.
+
+00:16:43.996 --> 00:16:45.626 A:middle
+What you do need to know is that
+
+00:16:45.886 --> 00:16:47.506 A:middle
+they require wall journal mode
+
+00:16:47.606 --> 00:16:48.786 A:middle
+and only work with SQLite.
+
+00:16:49.906 --> 00:16:51.746 A:middle
+The goal of query generations is
+
+00:16:51.746 --> 00:16:53.186 A:middle
+to isolate your managed object
+
+00:16:53.186 --> 00:16:54.896 A:middle
+contexts from competing work.
+
+00:16:55.346 --> 00:16:56.406 A:middle
+This could be rights to the
+
+00:16:56.406 --> 00:16:58.566 A:middle
+background or actions that the
+
+00:16:58.566 --> 00:17:00.176 A:middle
+user is taking that you're not
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.736 --> 00:11:02.356 A:middle
+As we can see, this model is 5
+
+00:11:02.356 --> 00:11:03.226 A:middle
+megabytes in size.
+
+00:11:03.616 --> 00:11:05.986 A:middle
+It has a input which is an image
+
+00:11:06.036 --> 00:11:08.456 A:middle
+of 227 by 227 pixels.
+
+00:11:08.676 --> 00:11:09.796 A:middle
+And it has two outputs.
+
+00:11:10.476 --> 00:11:11.776 A:middle
+One of the outputs is the class
+
+00:11:11.906 --> 00:11:13.696 A:middle
+label which is a string, and
+
+00:11:13.696 --> 00:11:15.996 A:middle
+this is the most likely label
+
+00:11:15.996 --> 00:11:17.416 A:middle
+for the, for the input image.
+
+00:11:17.736 --> 00:11:19.386 A:middle
+And the second output is a
+
+00:11:19.386 --> 00:11:20.526 A:middle
+mapping of strings to
+
+00:11:20.526 --> 00:11:23.386 A:middle
+probabilities given that if we
+
+00:11:23.386 --> 00:11:24.756 A:middle
+pass an image, it's going to be
+
+00:11:24.936 --> 00:11:25.976 A:middle
+a list of probabilities of what
+
+00:11:25.976 --> 00:11:26.666 A:middle
+that image may be.
+
+00:11:28.826 --> 00:11:30.126 A:middle
+Now let's start quantizing this
+
+00:11:30.126 --> 00:11:30.486 A:middle
+model.
+
+00:11:30.736 --> 00:11:32.696 A:middle
+So the first thing I want to do
+
+00:11:32.696 --> 00:11:34.066 A:middle
+is I want to get into a Python
+
+00:11:34.066 --> 00:11:34.556 A:middle
+environment.
+
+00:11:34.986 --> 00:11:36.406 A:middle
+Now a Jupyter Notebook is one
+
+00:11:36.406 --> 00:11:37.206 A:middle
+such environment that I'm
+
+00:11:37.206 --> 00:11:37.776 A:middle
+comfortable with.
+
+00:11:38.156 --> 00:11:39.086 A:middle
+So I'm going to go ahead and
+
+00:11:39.086 --> 00:11:39.526 A:middle
+open that up.
+
+00:11:46.696 --> 00:11:49.346 A:middle
+Let's open up a new notebook and
+
+00:11:49.346 --> 00:11:50.496 A:middle
+zoom in on that.
+
+00:11:51.346 --> 00:11:53.476 A:middle
+Alright. So let's start off by
+
+00:11:53.476 --> 00:11:54.926 A:middle
+importing Core ML Tools.
+
+00:11:58.476 --> 00:11:59.536 A:middle
+Let's run that.
+
+00:11:59.536 --> 00:12:01.186 A:middle
+Now the second thing I want to
+

@@ -1,0 +1,43 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.219 --> 00:17:01.722 align:start position:30% line:-1
+そして 在庫のチェック
+
+00:17:06.593 --> 00:17:12.465 align:start position:9% line:-2
+完売なら failureOutOfStockで
+completionハンドラを呼び出します
+
+00:17:18.204 --> 00:17:21.608 align:start position:21% line:-2
+そして
+注文されたオブジェクトをここに…
+
+00:17:25.279 --> 00:17:29.750 align:start position:30% line:-2
+これでエラー用の応答が
+完成しました
+
+00:17:29.917 --> 00:17:31.451 align:start position:39% line:-1
+次は実行です
+
+00:17:32.219 --> 00:17:35.956 align:start position:30% line:-2
+実行とは
+つまりスープの注文です
+
+00:17:36.223 --> 00:17:39.993 align:start position:20% line:-1
+まずIntentから注文を作ります
+
+00:17:41.028 --> 00:17:43.997 align:start position:16% line:-1
+そしてorderManagerで注文し
+
+00:17:44.164 --> 00:17:49.036 align:start position:32% line:-2
+最後に 注文の完了を
+システムに知らせます
+
+00:17:49.436 --> 00:17:54.341 align:start position:25% line:-2
+しかし ここで待ち時間なども
+伝えられるので
+
+00:17:54.508 --> 00:17:58.312 align:start position:27% line:-2
+新たなカスタム応答コードも
+入力しましょう
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.856 --> 00:04:01.066 A:middle
+We'll feed it into that neural
+
+00:04:01.066 --> 00:04:02.186 A:middle
+network to get results for the
+
+00:04:02.186 --> 00:04:03.606 A:middle
+current request, but we will
+
+00:04:03.606 --> 00:04:05.286 A:middle
+also cache that information on
+
+00:04:05.286 --> 00:04:06.266 A:middle
+the request handler object.
+
+00:04:06.706 --> 00:04:07.916 A:middle
+So, the next request, when it
+
+00:04:07.916 --> 00:04:09.366 A:middle
+comes, if it needs to use the
+
+00:04:09.366 --> 00:04:10.946 A:middle
+same format, it's already there,
+
+00:04:11.016 --> 00:04:11.816 A:middle
+and it doesn't need to be
+
+00:04:11.816 --> 00:04:12.356 A:middle
+recomputed.
+
+00:04:13.246 --> 00:04:14.866 A:middle
+We'll also cache results that we
+
+00:04:14.866 --> 00:04:16.386 A:middle
+get from the requests so other
+
+00:04:16.386 --> 00:04:17.296 A:middle
+requests can use it in
+
+00:04:17.296 --> 00:04:18.416 A:middle
+pipelines, and we're going to
+
+00:04:18.416 --> 00:04:20.176 A:middle
+look at pipelines going forward
+
+00:04:20.176 --> 00:04:21.036 A:middle
+in this presentation.
+
+00:04:21.766 --> 00:04:23.636 A:middle
+Let's take a look at the
+
+00:04:23.636 --> 00:04:24.536 A:middle
+Sequence Request Handler.
+
+00:04:25.626 --> 00:04:26.906 A:middle
+Sequence request handler is used
+
+00:04:27.196 --> 00:04:28.366 A:middle
+to process a particular
+
+00:04:28.366 --> 00:04:30.626 A:middle
+operation like tracking in a
+
+00:04:30.626 --> 00:04:31.566 A:middle
+sequence of frames.
+
+00:04:32.506 --> 00:04:34.256 A:middle
+What it does inside, it caches
+
+00:04:34.256 --> 00:04:35.886 A:middle
+the state of that operation from
+
+00:04:35.886 --> 00:04:37.506 A:middle
+frame to frame to frame for the
+
+00:04:37.506 --> 00:04:38.256 A:middle
+entire sequence.
+
+00:04:39.656 --> 00:04:41.106 A:middle
+In Vision, it's used to process
+
+00:04:41.506 --> 00:04:43.016 A:middle
+tracking and image registration
+
+00:04:43.016 --> 00:04:43.476 A:middle
+requests.
+
+00:04:43.866 --> 00:04:45.516 A:middle
+All other requests are processed
+
+00:04:45.516 --> 00:04:46.576 A:middle
+with our Image Request Handler.
+
+00:04:50.856 --> 00:04:52.196 A:middle
+Let's look at the results.
+
+00:04:52.776 --> 00:04:53.996 A:middle
+Results in Vision coming from
+
+00:04:54.146 --> 00:04:54.876 A:middle
+observations.
+
+00:04:55.406 --> 00:04:57.186 A:middle
+Observations is a collection of
+
+00:04:57.236 --> 00:04:59.336 A:middle
+classes derived from
+
+00:04:59.946 --> 00:05:01.026 A:middle
+VNObservation class.
+

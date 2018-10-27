@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.356 --> 00:32:00.276 A:middle
+So here we just saw how quickly
+
+00:32:00.276 --> 00:32:01.386 A:middle
+I was able to bring up a
+
+00:32:01.726 --> 00:32:03.806 A:middle
+UDPClient that could connect to
+
+00:32:03.806 --> 00:32:06.616 A:middle
+a bonjour service, it can send a
+
+00:32:06.616 --> 00:32:08.356 A:middle
+handshake, wait for that to be
+
+00:32:08.356 --> 00:32:10.726 A:middle
+processed, take the video frames
+
+00:32:10.726 --> 00:32:11.956 A:middle
+coming from the camera, and ship
+
+00:32:11.956 --> 00:32:12.806 A:middle
+them across the network.
+
+00:32:14.116 --> 00:32:16.716 A:middle
+The server side brought up a
+
+00:32:16.716 --> 00:32:18.606 A:middle
+bonjour listener.
+
+00:32:19.096 --> 00:32:20.866 A:middle
+It advertised a service, it
+
+00:32:20.866 --> 00:32:22.196 A:middle
+received incoming connections,
+
+00:32:22.436 --> 00:32:23.916 A:middle
+responded to the handshake, and
+
+00:32:23.916 --> 00:32:25.516 A:middle
+sent them all to the display so
+
+00:32:25.516 --> 00:32:26.106 A:middle
+that we could see them.
+
+00:32:27.176 --> 00:32:28.426 A:middle
+And now to take you through
+
+00:32:28.666 --> 00:32:29.846 A:middle
+optimizing that data transfer in
+
+00:32:29.846 --> 00:32:30.896 A:middle
+a little more detail, I'd like
+
+00:32:30.896 --> 00:32:32.126 A:middle
+to invite Tommy back up to the
+
+00:32:32.126 --> 00:32:32.506 A:middle
+stage.
+
+00:32:33.516 --> 00:32:38.416 A:middle
+[ Applause ]
+
+00:32:38.916 --> 00:32:39.726 A:middle
+&gt;&gt; Thank you, Eric.
+
+00:32:40.036 --> 00:32:42.116 A:middle
+It was a really cool demo.
+
+00:32:42.116 --> 00:32:43.386 A:middle
+It's super easy to get this
+
+00:32:43.386 --> 00:32:44.876 A:middle
+going, and so now we've covered
+
+00:32:44.876 --> 00:32:46.406 A:middle
+the basics, and we know how to
+
+00:32:46.736 --> 00:32:48.096 A:middle
+establish connections outbound,
+
+00:32:48.096 --> 00:32:49.106 A:middle
+how to receive connections
+
+00:32:49.106 --> 00:32:52.136 A:middle
+inbound, but the real key part
+
+00:32:52.136 --> 00:32:53.556 A:middle
+of Network.framework that's
+
+00:32:53.556 --> 00:32:54.526 A:middle
+going to be the killer feature
+
+00:32:54.526 --> 00:32:56.346 A:middle
+here is the way that it can
+
+00:32:56.346 --> 00:32:57.846 A:middle
+optimize your performance and
+
+00:32:57.846 --> 00:32:58.926 A:middle
+that we can go beyond what
+
+00:32:58.976 --> 00:33:00.126 A:middle
+sockets was able to do.
+

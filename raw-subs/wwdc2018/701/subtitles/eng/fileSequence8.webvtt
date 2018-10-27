@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.926 --> 00:08:00.676 A:middle
+context DCT execute, and this
+
+00:08:00.676 --> 00:08:02.036 A:middle
+will actually perform the work
+
+00:08:02.036 --> 00:08:02.886 A:middle
+of reconstructing the audio
+
+00:08:02.886 --> 00:08:03.216 A:middle
+signal.
+
+00:08:05.316 --> 00:08:08.356 A:middle
+So what we've shown you is an
+
+00:08:08.356 --> 00:08:09.546 A:middle
+example of how you can remove
+
+00:08:09.546 --> 00:08:11.026 A:middle
+certain types of noise from an
+
+00:08:11.026 --> 00:08:11.966 A:middle
+audio signal using vDSP.
+
+00:08:11.966 --> 00:08:14.436 A:middle
+I want to show you an example of
+
+00:08:14.436 --> 00:08:15.396 A:middle
+how we can remove certain types
+
+00:08:15.396 --> 00:08:17.126 A:middle
+of noise from an image also
+
+00:08:17.126 --> 00:08:17.836 A:middle
+using vDSP.
+
+00:08:18.496 --> 00:08:22.496 A:middle
+In this case, we're going to
+
+00:08:22.566 --> 00:08:23.596 A:middle
+restore an old newspaper
+
+00:08:23.596 --> 00:08:23.966 A:middle
+photograph.
+
+00:08:32.086 --> 00:08:32.816 A:middle
+So what we've done is we've
+
+00:08:32.816 --> 00:08:35.916 A:middle
+taken this image, and we've
+
+00:08:36.275 --> 00:08:38.525 A:middle
+applied a two-tone screen to it.
+
+00:08:39.296 --> 00:08:40.796 A:middle
+So this could represent an old
+
+00:08:40.796 --> 00:08:41.716 A:middle
+newspaper photograph.
+
+00:08:41.916 --> 00:08:42.746 A:middle
+And what we're going to try to
+
+00:08:42.746 --> 00:08:45.236 A:middle
+do is remove this screen.
+
+00:08:45.236 --> 00:08:46.086 A:middle
+We're going to try to remove the
+
+00:08:46.086 --> 00:08:47.456 A:middle
+artifacts that you see.
+
+00:08:48.296 --> 00:08:49.636 A:middle
+Currently, we're in off, so
+
+00:08:49.636 --> 00:08:50.506 A:middle
+we're not doing anything.
+
+00:08:51.126 --> 00:08:52.476 A:middle
+What we're going to do is
+
+00:08:52.476 --> 00:08:53.586 A:middle
+actually take a sample of this
+
+00:08:53.586 --> 00:08:55.196 A:middle
+screen, and we're going to
+
+00:08:55.196 --> 00:08:56.796 A:middle
+create a mask from that sample
+
+00:08:56.796 --> 00:08:58.076 A:middle
+and then apply that to the image
+
+00:08:58.076 --> 00:08:58.796 A:middle
+to try to remove it.
+
+00:08:58.796 --> 00:09:00.576 A:middle
+So let me show you the first
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.666 --> 00:19:01.456 A:middle
+With a customization point, the
+
+00:19:01.456 --> 00:19:03.126 A:middle
+compiler can know that there's
+
+00:19:03.126 --> 00:19:04.286 A:middle
+potentially a better
+
+00:19:04.286 --> 00:19:06.026 A:middle
+implementation of a method or
+
+00:19:06.026 --> 00:19:07.036 A:middle
+property available to it.
+
+00:19:07.296 --> 00:19:09.956 A:middle
+And so, in a generic context, it
+
+00:19:09.956 --> 00:19:11.896 A:middle
+dynamically dispatches to that
+
+00:19:11.896 --> 00:19:13.416 A:middle
+implementation through the
+
+00:19:13.416 --> 00:19:13.926 A:middle
+protocol.
+
+00:19:15.336 --> 00:19:17.406 A:middle
+So now, if you call map on a
+
+00:19:17.406 --> 00:19:18.856 A:middle
+dictionary, even though it's a
+
+00:19:18.856 --> 00:19:19.876 A:middle
+completely generic function.
+
+00:19:20.596 --> 00:19:21.406 A:middle
+You will get the better
+
+00:19:21.406 --> 00:19:22.456 A:middle
+implementation of count.
+
+00:19:24.596 --> 00:19:26.086 A:middle
+Adding customization points like
+
+00:19:26.086 --> 00:19:27.736 A:middle
+this, alongside default
+
+00:19:27.736 --> 00:19:28.756 A:middle
+implementations through
+
+00:19:28.756 --> 00:19:29.286 A:middle
+extensions.
+
+00:19:30.376 --> 00:19:31.516 A:middle
+Is a really powerful way of
+
+00:19:31.516 --> 00:19:32.906 A:middle
+getting the same kind of benefit
+
+00:19:32.976 --> 00:19:34.396 A:middle
+that you can also get with
+
+00:19:34.396 --> 00:19:35.966 A:middle
+classes, implementation
+
+00:19:35.966 --> 00:19:37.086 A:middle
+inheritance, and method
+
+00:19:37.086 --> 00:19:37.626 A:middle
+overwriting.
+
+00:19:38.366 --> 00:19:39.676 A:middle
+But, this technique works on
+
+00:19:39.676 --> 00:19:41.916 A:middle
+structs and enums, as well as
+
+00:19:41.916 --> 00:19:42.326 A:middle
+classes.
+
+00:19:45.356 --> 00:19:47.386 A:middle
+Now, not every method can be
+
+00:19:47.386 --> 00:19:48.476 A:middle
+optimized like this.
+
+00:19:49.026 --> 00:19:51.016 A:middle
+And, customization points have a
+
+00:19:51.016 --> 00:19:53.146 A:middle
+small but non-zero impact on
+
+00:19:53.146 --> 00:19:55.006 A:middle
+your binary size, your compiler
+
+00:19:55.056 --> 00:19:55.996 A:middle
+runtime performance.
+
+00:19:56.406 --> 00:19:57.656 A:middle
+So, it only makes sense to add
+
+00:19:57.656 --> 00:19:59.506 A:middle
+customization points when
+
+00:19:59.506 --> 00:20:00.036 A:middle
+there's definitely an
+

@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:00.896 --> 00:09:03.206 A:middle
+Second target, dealer depends on
+
+00:09:03.206 --> 00:09:04.946 A:middle
+that to provide the command line
+
+00:09:04.946 --> 00:09:06.536 A:middle
+tool that we just run earlier.
+
+00:09:07.096 --> 00:09:10.756 A:middle
+And finally, we also have a test
+
+00:09:10.756 --> 00:09:12.126 A:middle
+target that depends on the two
+
+00:09:12.126 --> 00:09:13.696 A:middle
+other targets and this is where
+
+00:09:13.696 --> 00:09:14.366 A:middle
+we can unit test our
+
+00:09:14.366 --> 00:09:14.956 A:middle
+functionality.
+
+00:09:20.026 --> 00:09:21.436 A:middle
+In our example package, we have
+
+00:09:21.436 --> 00:09:23.206 A:middle
+also configured two products.
+
+00:09:24.646 --> 00:09:26.676 A:middle
+The first is a library product
+
+00:09:27.206 --> 00:09:28.616 A:middle
+corresponding to the libdealer
+
+00:09:28.616 --> 00:09:29.026 A:middle
+target.
+
+00:09:30.066 --> 00:09:31.806 A:middle
+And this provides our
+
+00:09:31.806 --> 00:09:33.736 A:middle
+implementation as a library for
+
+00:09:33.736 --> 00:09:34.746 A:middle
+external consumption.
+
+00:09:35.186 --> 00:09:39.016 A:middle
+Second, we have an executable
+
+00:09:39.016 --> 00:09:41.166 A:middle
+target depending on the dealer
+
+00:09:41.166 --> 00:09:43.916 A:middle
+target which provides an
+
+00:09:43.916 --> 00:09:45.526 A:middle
+executable for command line use.
+
+00:09:50.496 --> 00:09:52.686 A:middle
+To complete this section, I will
+
+00:09:52.686 --> 00:09:53.886 A:middle
+show you how we can use a
+
+00:09:53.886 --> 00:09:55.596 A:middle
+package to add a new feature to
+
+00:09:55.596 --> 00:09:56.306 A:middle
+the example.
+
+00:09:59.836 --> 00:10:01.216 A:middle
+This, we switch to a new
+

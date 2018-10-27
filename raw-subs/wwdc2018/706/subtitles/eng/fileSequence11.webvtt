@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:56.586 --> 00:11:00.766 A:middle
+To configure your project you
+
+00:11:00.766 --> 00:11:02.626 A:middle
+need to add a new health records
+
+00:11:02.626 --> 00:11:04.896 A:middle
+capability in Xcode after
+
+00:11:05.696 --> 00:11:06.976 A:middle
+enabling HealthKit.
+
+00:11:11.186 --> 00:11:13.746 A:middle
+Then you add the new Health
+
+00:11:13.746 --> 00:11:15.326 A:middle
+Records Usage Description
+
+00:11:15.396 --> 00:11:16.586 A:middle
+purpose string to your
+
+00:11:16.586 --> 00:11:17.546 A:middle
+Info.plist.
+
+00:11:20.216 --> 00:11:22.426 A:middle
+Again, this is your opportunity
+
+00:11:22.426 --> 00:11:24.426 A:middle
+to explain to users why you need
+
+00:11:24.426 --> 00:11:26.036 A:middle
+access to this data and what you
+
+00:11:26.036 --> 00:11:27.226 A:middle
+will do with it.
+
+00:11:30.276 --> 00:11:31.836 A:middle
+Having done this, you can
+
+00:11:31.836 --> 00:11:33.096 A:middle
+request authorization.
+
+00:11:34.416 --> 00:11:36.986 A:middle
+Here I define the types I wish
+
+00:11:36.986 --> 00:11:39.036 A:middle
+to access, conditions,
+
+00:11:40.226 --> 00:11:42.976 A:middle
+immunizations, and medications.
+
+00:11:47.086 --> 00:11:48.606 A:middle
+And then you can call request
+
+00:11:48.606 --> 00:11:50.206 A:middle
+authorization on the Health
+
+00:11:50.206 --> 00:11:50.676 A:middle
+Store.
+
+00:11:52.026 --> 00:11:53.806 A:middle
+Being sure to handle any errors
+
+00:11:54.456 --> 00:11:57.066 A:middle
+and after that you're good to
+
+00:11:57.066 --> 00:11:57.496 A:middle
+query.
+
+00:11:58.366 --> 00:12:00.496 A:middle
+You should be aware that in
+

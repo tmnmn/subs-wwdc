@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.516 --> 00:29:02.176 A:middle
+So once you are in the Metal
+
+00:29:02.176 --> 00:29:04.306 A:middle
+frame debugger, going to read by
+
+00:29:04.306 --> 00:29:06.156 A:middle
+performance navigator, you will
+
+00:29:06.156 --> 00:29:07.826 A:middle
+see all your pipeline states
+
+00:29:08.226 --> 00:29:09.976 A:middle
+sorted by the time it takes to
+
+00:29:09.976 --> 00:29:10.666 A:middle
+execute them.
+
+00:29:11.446 --> 00:29:13.806 A:middle
+This is a great place to see all
+
+00:29:13.806 --> 00:29:15.786 A:middle
+your expansive pipelines that we
+
+00:29:15.786 --> 00:29:16.786 A:middle
+are optimizing.
+
+00:29:18.036 --> 00:29:19.766 A:middle
+And here, you also have access
+
+00:29:19.766 --> 00:29:21.366 A:middle
+to your draw-calls, using these
+
+00:29:21.366 --> 00:29:23.016 A:middle
+pipeline states, so that you can
+
+00:29:23.016 --> 00:29:24.836 A:middle
+directly navigate to one and see
+
+00:29:24.836 --> 00:29:25.656 A:middle
+what it is drawing.
+
+00:29:26.166 --> 00:29:29.486 A:middle
+And if you're in iOS or tvOS,
+
+00:29:30.466 --> 00:29:31.806 A:middle
+just going to the Shader Source,
+
+00:29:32.076 --> 00:29:32.966 A:middle
+you'll get the per line
+
+00:29:32.966 --> 00:29:33.976 A:middle
+execution cost.
+
+00:29:34.846 --> 00:29:36.286 A:middle
+This is a great place to see
+
+00:29:36.626 --> 00:29:38.806 A:middle
+where you are spending the most
+
+00:29:38.806 --> 00:29:40.456 A:middle
+time in your shaders, per line
+
+00:29:40.456 --> 00:29:40.966 A:middle
+basis.
+
+00:29:41.996 --> 00:29:44.056 A:middle
+And once you are in your shader
+
+00:29:44.056 --> 00:29:46.046 A:middle
+source, you can just start
+
+00:29:46.046 --> 00:29:48.086 A:middle
+editing your code, and reload to
+
+00:29:48.086 --> 00:29:50.326 A:middle
+see if it makes any difference
+
+00:29:50.796 --> 00:29:51.776 A:middle
+in timing.
+
+00:29:52.816 --> 00:29:54.726 A:middle
+Or you can just get into Shader
+
+00:29:54.726 --> 00:29:55.096 A:middle
+Debugger.
+
+00:29:56.136 --> 00:29:57.736 A:middle
+This is a great workflow if you
+
+00:29:57.736 --> 00:29:58.586 A:middle
+are trying to optimize an
+
+00:29:58.586 --> 00:30:00.676 A:middle
+algorithm or when I just get
+

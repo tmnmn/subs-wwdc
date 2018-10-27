@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.666 --> 00:03:00.126 A:middle
+load that data in.
+
+00:03:00.586 --> 00:03:02.876 A:middle
+So ImageIO provides a low-level
+
+00:03:02.876 --> 00:03:04.286 A:middle
+API that allows you to load
+
+00:03:04.516 --> 00:03:05.466 A:middle
+portrait effects matte.
+
+00:03:05.766 --> 00:03:08.456 A:middle
+So by calling CGImageSourceCopy
+
+00:03:09.156 --> 00:03:10.426 A:middle
+there's a new key it can pass
+
+00:03:10.706 --> 00:03:12.576 A:middle
+kCGImageAuxiliaryData
+
+00:03:12.576 --> 00:03:13.806 A:middle
+TypePortraitEffectsMatte.
+
+00:03:15.186 --> 00:03:16.046 A:middle
+And this call returns a
+
+00:03:16.046 --> 00:03:17.206 A:middle
+dictionary containing three main
+
+00:03:17.206 --> 00:03:18.216 A:middle
+pieces of information.
+
+00:03:18.846 --> 00:03:20.426 A:middle
+The image data itself as a
+
+00:03:20.426 --> 00:03:24.176 A:middle
+CFDataRef, metadata pertaining
+
+00:03:24.176 --> 00:03:25.496 A:middle
+to the buffer itself as a
+
+00:03:25.496 --> 00:03:28.096 A:middle
+CFDictionary, as well as
+
+00:03:28.266 --> 00:03:30.236 A:middle
+metadata pertaining to the
+
+00:03:30.236 --> 00:03:31.146 A:middle
+capture itself.
+
+00:03:33.356 --> 00:03:35.056 A:middle
+AVFoundation also provides a
+
+00:03:35.056 --> 00:03:36.386 A:middle
+higher-level API that sits on
+
+00:03:36.386 --> 00:03:38.186 A:middle
+top of ImageIO that you can use.
+
+00:03:38.986 --> 00:03:40.176 A:middle
+So taking the output from
+
+00:03:40.176 --> 00:03:42.286 A:middle
+CGImageSourceCopy you can feed
+
+00:03:42.286 --> 00:03:43.766 A:middle
+it to the AVPortrait effects
+
+00:03:43.766 --> 00:03:43.976 A:middle
+matte class.
+
+00:03:48.046 --> 00:03:49.656 A:middle
+And what you get out of it is
+
+00:03:49.656 --> 00:03:51.326 A:middle
+very simple it's a CV pixel
+
+00:03:51.326 --> 00:03:53.596 A:middle
+buffer along with pixel format
+
+00:03:53.816 --> 00:03:54.946 A:middle
+type so you can use that CV
+
+00:03:54.946 --> 00:03:56.626 A:middle
+pixel buffer for your further
+
+00:03:56.626 --> 00:03:58.586 A:middle
+processing needs, it's really
+
+00:03:59.006 --> 00:04:00.296 A:middle
+that simple.
+

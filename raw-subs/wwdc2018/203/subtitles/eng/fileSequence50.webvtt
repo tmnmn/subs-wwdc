@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.946 --> 00:50:00.226 A:middle
+here.
+
+00:50:01.456 --> 00:50:02.966 A:middle
+Let me hide the main storyboard
+
+00:50:02.966 --> 00:50:05.446 A:middle
+for a moment.
+
+00:50:05.586 --> 00:50:07.686 A:middle
+We also have a player info
+
+00:50:07.686 --> 00:50:08.366 A:middle
+variable here.
+
+00:50:08.366 --> 00:50:11.046 A:middle
+And we are using that player
+
+00:50:11.046 --> 00:50:13.426 A:middle
+information to set up our views.
+
+00:50:14.876 --> 00:50:16.706 A:middle
+You might be wondering that we
+
+00:50:16.706 --> 00:50:18.166 A:middle
+didn't really send this player
+
+00:50:18.166 --> 00:50:19.356 A:middle
+information anywhere.
+
+00:50:20.246 --> 00:50:21.756 A:middle
+So how do we get all this data?
+
+00:50:23.136 --> 00:50:25.106 A:middle
+We actually need to ask our
+
+00:50:25.106 --> 00:50:27.266 A:middle
+leaderboard about the person
+
+00:50:27.266 --> 00:50:28.166 A:middle
+whose name was tapped.
+
+00:50:29.576 --> 00:50:30.946 A:middle
+So we'll go back in the
+
+00:50:30.946 --> 00:50:32.906 A:middle
+leaderboard scoreboard and
+
+00:50:33.006 --> 00:50:35.266 A:middle
+figure out which person we need
+
+00:50:35.266 --> 00:50:36.936 A:middle
+to display more information
+
+00:50:36.936 --> 00:50:37.336 A:middle
+about.
+
+00:50:38.526 --> 00:50:39.226 A:middle
+I'll jump to the
+
+00:50:39.226 --> 00:50:40.626 A:middle
+leaderboard-view-controller.
+
+00:50:41.876 --> 00:50:44.336 A:middle
+At the bottom of this class, we
+
+00:50:44.336 --> 00:50:46.226 A:middle
+have a method that was written
+
+00:50:46.226 --> 00:50:48.506 A:middle
+for us by Xcode called the
+
+00:50:48.506 --> 00:50:49.916 A:middle
+prepare-for-segue method.
+
+00:50:50.946 --> 00:50:54.476 A:middle
+This gets called while we're
+
+00:50:54.476 --> 00:50:56.146 A:middle
+transitioning between one view
+
+00:50:56.146 --> 00:50:57.946 A:middle
+controller and another.
+
+00:50:58.466 --> 00:51:00.946 A:middle
+It will be called for us as soon
+

@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.999 --> 00:30:03.370 align:start position:29% line:-2
+興味深い
+ネットワーク設定でしょう
+
+00:30:03.470 --> 00:30:08.008 align:start position:30% line:-2
+含まれるプリミティブは
+CNNに続いて
+
+00:30:08.108 --> 00:30:12.412 align:start position:30% line:-2
+LSTM またCNNと
+なっています
+
+00:30:12.513 --> 00:30:14.948 align:start position:34% line:-1
+なぜこんな設定に？
+
+00:30:16.817 --> 00:30:19.820 align:start position:29% line:-1
+入力されたセンサデータは
+
+00:30:20.420 --> 00:30:24.124 align:start position:32% line:-2
+６つのチャネルによる
+1D画像で表されます
+
+00:30:24.224 --> 00:30:29.763 align:start position:23% line:-2
+チャネルの１つが加速度計などの
+数字を読み取ります
+
+00:30:30.564 --> 00:30:33.867 align:start position:32% line:-2
+各1D画像は
+2000ピクセルです
+
+00:30:33.967 --> 00:30:37.438 align:start position:32% line:-2
+これを時間サンプルと
+考えます
+
+00:30:37.638 --> 00:30:41.808 align:start position:30% line:-2
+識別したい行動は
+経時的に起こるからです
+
+00:30:44.545 --> 00:30:48.582 align:start position:27% line:-2
+1D畳み込みプリミティブを
+通じて
+
+00:30:49.116 --> 00:30:54.054 align:start position:29% line:-2
+画像は2000から
+20サンプルに絞られます
+
+00:30:56.023 --> 00:30:58.158 align:start position:32% line:-2
+多数の特徴チャネルを
+使うので
+
+00:30:58.258 --> 00:31:01.628 align:start position:36% line:-2
+データの特徴は
+失われていません
+

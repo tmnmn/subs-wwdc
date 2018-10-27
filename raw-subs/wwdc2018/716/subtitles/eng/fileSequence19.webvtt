@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.946 --> 00:19:01.176 A:middle
+this, so you get some unique
+
+00:19:01.176 --> 00:19:02.226 A:middle
+number to identify this
+
+00:19:02.226 --> 00:19:03.386 A:middle
+particular processing step.
+
+00:19:04.146 --> 00:19:05.326 A:middle
+Then, you get the bounding box
+
+00:19:05.326 --> 00:19:06.476 A:middle
+location, which is the main
+
+00:19:06.476 --> 00:19:08.326 A:middle
+outcome of processing this
+
+00:19:08.326 --> 00:19:08.716 A:middle
+request.
+
+00:19:08.946 --> 00:19:10.616 A:middle
+And the landmarks field is set
+
+00:19:10.616 --> 00:19:11.916 A:middle
+to nil because face detector
+
+00:19:11.916 --> 00:19:12.986 A:middle
+doesn't know anything about
+
+00:19:12.986 --> 00:19:13.496 A:middle
+landmarks.
+
+00:19:14.856 --> 00:19:16.246 A:middle
+What I'm going to do next is I'm
+
+00:19:16.336 --> 00:19:17.526 A:middle
+going to create my landmarks
+
+00:19:17.526 --> 00:19:19.266 A:middle
+request, and then I'm going to
+
+00:19:19.266 --> 00:19:20.096 A:middle
+take the results from the
+
+00:19:20.096 --> 00:19:22.166 A:middle
+previous step and feed it into
+
+00:19:22.166 --> 00:19:23.446 A:middle
+the input object observation
+
+00:19:23.496 --> 00:19:24.556 A:middle
+property of that request.
+
+00:19:25.996 --> 00:19:26.866 A:middle
+Then, I'm going to ask my
+
+00:19:27.066 --> 00:19:28.336 A:middle
+request handler to process it.
+
+00:19:29.306 --> 00:19:30.206 A:middle
+And finally, I'm going to look
+
+00:19:30.206 --> 00:19:30.836 A:middle
+at the results.
+
+00:19:31.726 --> 00:19:33.396 A:middle
+If I run it in the same image, I
+
+00:19:33.396 --> 00:19:35.146 A:middle
+get exactly the same results as
+
+00:19:35.146 --> 00:19:37.786 A:middle
+I would on the previous slide.
+
+00:19:38.726 --> 00:19:39.836 A:middle
+But let's see what happens with
+
+00:19:39.836 --> 00:19:40.486 A:middle
+observations.
+
+00:19:40.996 --> 00:19:41.826 A:middle
+Remember, we said that
+
+00:19:41.826 --> 00:19:43.906 A:middle
+observations are immutable even
+
+00:19:43.906 --> 00:19:45.876 A:middle
+though both face detector and
+
+00:19:45.876 --> 00:19:48.136 A:middle
+face landmarks detector return
+
+00:19:48.136 --> 00:19:50.006 A:middle
+the same type, but we don't
+
+00:19:50.036 --> 00:19:51.766 A:middle
+override the observation that
+
+00:19:51.976 --> 00:19:52.656 A:middle
+was fed in.
+
+00:19:53.296 --> 00:19:54.716 A:middle
+What we do instead, we take the
+
+00:19:54.716 --> 00:19:56.696 A:middle
+first two fields and copy it
+
+00:19:56.696 --> 00:19:58.776 A:middle
+into a new object, and then we
+
+00:19:58.776 --> 00:20:00.326 A:middle
+calculate landmarks and populate
+

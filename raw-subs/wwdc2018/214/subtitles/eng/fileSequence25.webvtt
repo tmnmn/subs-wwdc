@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.586 --> 00:25:00.446 A:middle
+cases, but wouldn't it be great
+
+00:25:00.446 --> 00:25:01.986 A:middle
+if we can show an image of a
+
+00:25:01.986 --> 00:25:02.996 A:middle
+clam chowder for the clam
+
+00:25:02.996 --> 00:25:04.306 A:middle
+chowder case and an image for
+
+00:25:04.306 --> 00:25:05.506 A:middle
+the tomato soup for the tomato
+
+00:25:05.506 --> 00:25:05.916 A:middle
+soup case?
+
+00:25:06.506 --> 00:25:08.676 A:middle
+Sort of like this.
+
+00:25:08.896 --> 00:25:10.506 A:middle
+And for this, we provide two
+
+00:25:10.506 --> 00:25:10.866 A:middle
+APIs.
+
+00:25:11.166 --> 00:25:12.336 A:middle
+One for User Activities and
+
+00:25:12.336 --> 00:25:13.286 A:middle
+another for Intents.
+
+00:25:13.406 --> 00:25:15.806 A:middle
+So, let's take a look.
+
+00:25:16.006 --> 00:25:17.916 A:middle
+So, to set some context, the
+
+00:25:17.916 --> 00:25:19.536 A:middle
+user has just viewed one of
+
+00:25:19.536 --> 00:25:21.626 A:middle
+their past soup orders and we
+
+00:25:21.626 --> 00:25:22.756 A:middle
+want to donate it, so we can
+
+00:25:22.756 --> 00:25:24.626 A:middle
+associate it -- we can associate
+
+00:25:24.626 --> 00:25:25.546 A:middle
+that with a shortcut.
+
+00:25:26.436 --> 00:25:27.606 A:middle
+So, the first thing that we want
+
+00:25:27.606 --> 00:25:29.716 A:middle
+to do is create a CS Searchable
+
+00:25:29.926 --> 00:25:31.546 A:middle
+Item Attribute Set which by the
+
+00:25:31.546 --> 00:25:32.646 A:middle
+way is the same thing that you
+
+00:25:32.646 --> 00:25:33.526 A:middle
+want to use if you want to
+
+00:25:33.526 --> 00:25:35.166 A:middle
+provide a subtitle to your user
+
+00:25:35.166 --> 00:25:36.566 A:middle
+activity, but in this case, I
+
+00:25:36.566 --> 00:25:37.786 A:middle
+want to set an image
+
+00:25:37.786 --> 00:25:38.046 A:middle
+[inaudible].
+
+00:25:38.046 --> 00:25:39.766 A:middle
+First, make an image with
+
+00:25:39.766 --> 00:25:40.526 A:middle
+chowder.
+
+00:25:41.086 --> 00:25:43.076 A:middle
+Get the PNG data out of it and
+
+00:25:43.216 --> 00:25:44.426 A:middle
+set it as the thumbnail data
+
+00:25:44.426 --> 00:25:45.606 A:middle
+property on my Attributes.
+
+00:25:46.236 --> 00:25:47.486 A:middle
+And next, I'm going to take
+
+00:25:47.486 --> 00:25:48.846 A:middle
+those attributes, set it as the
+
+00:25:48.846 --> 00:25:50.226 A:middle
+Content Attribute Set on the
+
+00:25:50.226 --> 00:25:51.876 A:middle
+User Activity, and finally I'm
+
+00:25:51.876 --> 00:25:52.826 A:middle
+going to donate the User
+
+00:25:52.826 --> 00:25:54.186 A:middle
+Activity by setting it as the
+
+00:25:54.186 --> 00:25:55.786 A:middle
+User Activity property on my
+
+00:25:55.786 --> 00:25:56.346 A:middle
+view controller.
+
+00:25:56.766 --> 00:25:59.786 A:middle
+So, let's take a look at how it
+
+00:25:59.786 --> 00:26:00.586 A:middle
+works during Intents.
+

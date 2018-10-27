@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.556 --> 00:22:00.416 A:middle
+dimension, so you can define a
+
+00:22:00.416 --> 00:22:02.036 A:middle
+minimal width and height and the
+
+00:22:02.036 --> 00:22:03.096 A:middle
+maximum width and height.
+
+00:22:03.646 --> 00:22:05.356 A:middle
+And then at inference pick any
+
+00:22:05.356 --> 00:22:06.136 A:middle
+value in between.
+
+00:22:06.766 --> 00:22:08.276 A:middle
+But there is also another way.
+
+00:22:08.576 --> 00:22:10.486 A:middle
+You can enumerate all the shapes
+
+00:22:10.486 --> 00:22:11.326 A:middle
+that you are going to use.
+
+00:22:11.736 --> 00:22:12.936 A:middle
+For example, all different
+
+00:22:12.936 --> 00:22:14.606 A:middle
+aspect ratios, all different
+
+00:22:14.606 --> 00:22:16.536 A:middle
+resolutions, and this is better
+
+00:22:16.536 --> 00:22:17.306 A:middle
+for performance.
+
+00:22:17.586 --> 00:22:19.086 A:middle
+Core ML knows more about your
+
+00:22:19.086 --> 00:22:21.006 A:middle
+use case earlier, so it can --
+
+00:22:21.006 --> 00:22:22.236 A:middle
+it has the opportunities of
+
+00:22:22.236 --> 00:22:24.106 A:middle
+performing more optimizations.
+
+00:22:24.926 --> 00:22:26.496 A:middle
+And it also gives your app a
+
+00:22:26.496 --> 00:22:27.776 A:middle
+smaller tested surface.
+
+00:22:28.286 --> 00:22:30.956 A:middle
+Now which models are flexible?
+
+00:22:30.956 --> 00:22:32.996 A:middle
+Which models can be trained to
+
+00:22:32.996 --> 00:22:34.526 A:middle
+support multiple resolutions?
+
+00:22:35.206 --> 00:22:37.426 A:middle
+Fully convolutional neural
+
+00:22:37.426 --> 00:22:39.746 A:middle
+networks, commonly used for MS
+
+00:22:39.746 --> 00:22:41.636 A:middle
+processing tasks such as style
+
+00:22:41.636 --> 00:22:43.746 A:middle
+transfer, image enhancement,
+
+00:22:43.916 --> 00:22:45.786 A:middle
+super resolution, and so on --
+
+00:22:46.016 --> 00:22:47.716 A:middle
+and some of the architecture.
+
+00:22:48.446 --> 00:22:50.956 A:middle
+Core ML Tools can check if a
+
+00:22:50.956 --> 00:22:52.636 A:middle
+model has this capability for
+
+00:22:52.636 --> 00:22:52.786 A:middle
+you.
+
+00:22:54.236 --> 00:22:55.516 A:middle
+So we still have the number of
+
+00:22:55.516 --> 00:22:57.126 A:middle
+models Core ML uses in flexible
+
+00:22:57.126 --> 00:22:58.606 A:middle
+sizes, and the size of the
+
+00:22:58.606 --> 00:22:59.516 A:middle
+weights can be reduced by
+
+00:22:59.516 --> 00:23:00.246 A:middle
+quantization.
+

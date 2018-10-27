@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.976 --> 00:28:03.136 A:middle
+The second one return an
+
+00:28:03.136 --> 00:28:07.096 A:middle
+operationQueue, and when-- an
+
+00:28:07.096 --> 00:28:08.816 A:middle
+operationQueue where the file,
+
+00:28:08.816 --> 00:28:10.036 A:middle
+it will be written.
+
+00:28:10.996 --> 00:28:12.926 A:middle
+And, we highly recommend that
+
+00:28:12.926 --> 00:28:15.056 A:middle
+you implement this optional
+
+00:28:15.056 --> 00:28:16.556 A:middle
+method, and provide a background
+
+00:28:16.556 --> 00:28:19.426 A:middle
+operationQueue, since otherwise,
+
+00:28:19.426 --> 00:28:21.206 A:middle
+the main queue will be used
+
+00:28:21.206 --> 00:28:21.636 A:middle
+otherwise.
+
+00:28:24.226 --> 00:28:26.636 A:middle
+And, finally, writePromise to
+
+00:28:26.636 --> 00:28:28.816 A:middle
+file is called, asking you to
+
+00:28:28.816 --> 00:28:29.826 A:middle
+write file to disk.
+
+00:28:31.326 --> 00:28:33.066 A:middle
+And, when you are done, remember
+
+00:28:33.066 --> 00:28:34.506 A:middle
+to call the completion handler.
+
+00:28:35.036 --> 00:28:38.876 A:middle
+So, that was receiving file
+
+00:28:38.876 --> 00:28:40.456 A:middle
+promises-- providing file
+
+00:28:40.456 --> 00:28:42.686 A:middle
+promises, and we have covered
+
+00:28:42.686 --> 00:28:45.406 A:middle
+the API to-- that you can use to
+
+00:28:45.406 --> 00:28:47.856 A:middle
+adapt your app to receive and
+
+00:28:47.856 --> 00:28:48.836 A:middle
+provide file promises.
+
+00:28:48.836 --> 00:28:51.006 A:middle
+And now, I'd like to invite
+
+00:28:51.006 --> 00:28:52.826 A:middle
+Joachim on stage to show you all
+
+00:28:52.826 --> 00:28:53.976 A:middle
+of that in a sample app.
+
+00:28:54.336 --> 00:28:54.686 A:middle
+Thank you.
+
+00:28:54.686 --> 00:28:54.866 A:middle
+Joachim?
+
+00:28:55.516 --> 00:28:58.626 A:middle
+[ Applause ]
+
+00:28:59.126 --> 00:28:59.466 A:middle
+&gt;&gt; Thank you.
+

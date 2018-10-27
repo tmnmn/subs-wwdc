@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.986 --> 00:31:00.486 A:middle
+ASWebAuthenticationSession
+
+00:31:00.486 --> 00:31:01.846 A:middle
+offers a straightforward
+
+00:31:01.846 --> 00:31:03.906 A:middle
+block-based API that makes
+
+00:31:03.906 --> 00:31:05.216 A:middle
+adoption super simple.
+
+00:31:06.246 --> 00:31:08.566 A:middle
+So, let's take a look at it.
+
+00:31:08.796 --> 00:31:10.596 A:middle
+Now, let's see how simple it is
+
+00:31:10.656 --> 00:31:11.756 A:middle
+to implement federated
+
+00:31:11.756 --> 00:31:13.116 A:middle
+authentication using
+
+00:31:13.116 --> 00:31:14.706 A:middle
+ASWebAuthenticationSession.
+
+00:31:16.146 --> 00:31:17.496 A:middle
+You're going to start off by
+
+00:31:17.496 --> 00:31:18.546 A:middle
+importing the brand new
+
+00:31:18.546 --> 00:31:19.636 A:middle
+AuthenticationServices
+
+00:31:19.636 --> 00:31:20.046 A:middle
+framework.
+
+00:31:20.556 --> 00:31:23.536 A:middle
+And then, you simply define the
+
+00:31:23.536 --> 00:31:25.646 A:middle
+oauthURL as it's described to
+
+00:31:25.646 --> 00:31:26.846 A:middle
+you by your third-party
+
+00:31:26.846 --> 00:31:27.896 A:middle
+authentication provider.
+
+00:31:29.366 --> 00:31:31.096 A:middle
+Now, following this you will
+
+00:31:31.096 --> 00:31:31.926 A:middle
+create an
+
+00:31:31.926 --> 00:31:33.306 A:middle
+ASWebAuthenticationSession
+
+00:31:33.306 --> 00:31:33.786 A:middle
+object.
+
+00:31:34.176 --> 00:31:36.126 A:middle
+You're passing the oauthURL and
+
+00:31:36.126 --> 00:31:37.386 A:middle
+a callback handler that gets
+
+00:31:37.386 --> 00:31:38.386 A:middle
+involved at the end of the
+
+00:31:38.386 --> 00:31:39.396 A:middle
+authentication session.
+
+00:31:40.126 --> 00:31:42.466 A:middle
+Now, it is crucial that you hold
+
+00:31:42.466 --> 00:31:43.936 A:middle
+onto a strong reference to the
+
+00:31:43.936 --> 00:31:45.296 A:middle
+authentication session object
+
+00:31:45.476 --> 00:31:46.896 A:middle
+while the session is in flight.
+
+00:31:47.376 --> 00:31:49.056 A:middle
+And by doing so, you also have
+
+00:31:49.056 --> 00:31:50.636 A:middle
+the ability to cancel an ongoing
+
+00:31:50.636 --> 00:31:52.836 A:middle
+session should you choose to do
+
+00:31:53.736 --> 00:31:53.826 A:middle
+so.
+
+00:31:54.006 --> 00:31:55.366 A:middle
+Finally, you call the
+
+00:31:55.366 --> 00:31:56.736 A:middle
+nonblocking start method.
+
+00:31:57.486 --> 00:31:59.956 A:middle
+Upon doing so, first iOS will
+
+00:31:59.956 --> 00:32:01.606 A:middle
+ask for user consent to share
+

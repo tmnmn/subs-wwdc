@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.466 --> 00:36:00.716 A:middle
+this case we used the bad
+
+00:36:00.716 --> 00:36:03.056 A:middle
+address of the memory error and
+
+00:36:03.056 --> 00:36:05.006 A:middle
+we used the disassembly of the
+
+00:36:05.006 --> 00:36:06.026 A:middle
+crashing function.
+
+00:36:07.836 --> 00:36:12.506 A:middle
+So memory errors are a wide
+
+00:36:12.506 --> 00:36:14.556 A:middle
+variety of crashes, there are
+
+00:36:14.556 --> 00:36:16.186 A:middle
+many different signatures in
+
+00:36:16.186 --> 00:36:18.076 A:middle
+crash logs that can be caused by
+
+00:36:18.076 --> 00:36:18.986 A:middle
+memory errors.
+
+00:36:19.826 --> 00:36:21.936 A:middle
+Here are some examples for you.
+
+00:36:22.456 --> 00:36:24.476 A:middle
+Crashes in the Objective-C
+
+00:36:24.476 --> 00:36:26.856 A:middle
+message send function or in the
+
+00:36:26.856 --> 00:36:28.486 A:middle
+reference counting machinery or
+
+00:36:28.486 --> 00:36:31.086 A:middle
+deallocation machinery in Swift
+
+00:36:31.086 --> 00:36:32.966 A:middle
+and Objective-C are very
+
+00:36:32.966 --> 00:36:34.966 A:middle
+commonly caused by memory
+
+00:36:34.966 --> 00:36:35.396 A:middle
+errors.
+
+00:36:37.116 --> 00:36:38.866 A:middle
+Another common memory error
+
+00:36:38.866 --> 00:36:40.766 A:middle
+symptom is an unrecognized
+
+00:36:40.766 --> 00:36:42.266 A:middle
+selector exception.
+
+00:36:43.216 --> 00:36:45.126 A:middle
+These are often caused when you
+
+00:36:45.126 --> 00:36:47.656 A:middle
+have an object of some type, a
+
+00:36:47.656 --> 00:36:49.806 A:middle
+code that is using that object,
+
+00:36:50.426 --> 00:36:51.486 A:middle
+and then the object gets
+
+00:36:51.606 --> 00:36:53.586 A:middle
+deallocated and used again.
+
+00:36:54.416 --> 00:36:55.496 A:middle
+But instead of getting the
+
+00:36:55.496 --> 00:36:57.696 A:middle
+malloc free list signature that
+
+00:36:57.696 --> 00:36:59.356 A:middle
+we saw in that previous crash
+
+00:36:59.356 --> 00:37:02.306 A:middle
+log, instead a new object is
+

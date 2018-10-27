@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:00.046 --> 00:22:01.686 A:middle
+So here in finder, I've got my
+
+00:22:01.686 --> 00:22:03.316 A:middle
+breakfastmodel.mlmodel.
+
+00:22:03.316 --> 00:22:05.636 A:middle
+And when I open it in Xcode, I
+
+00:22:05.636 --> 00:22:07.106 A:middle
+can see that it looks just like
+
+00:22:07.106 --> 00:22:08.306 A:middle
+any Core ML model.
+
+00:22:08.896 --> 00:22:12.176 A:middle
+It takes an input image, and as
+
+00:22:12.176 --> 00:22:14.526 A:middle
+output we get confidence and
+
+00:22:14.526 --> 00:22:15.206 A:middle
+coordinates.
+
+00:22:15.616 --> 00:22:16.706 A:middle
+And that's going to tell us the
+
+00:22:16.706 --> 00:22:18.336 A:middle
+predicted bounding box and label
+
+00:22:18.336 --> 00:22:19.436 A:middle
+for the image that we have.
+
+00:22:20.376 --> 00:22:22.206 A:middle
+Now let's switch over to the
+
+00:22:22.246 --> 00:22:23.646 A:middle
+iPhone app where we're going to
+
+00:22:23.646 --> 00:22:24.616 A:middle
+consume this model.
+
+00:22:25.186 --> 00:22:30.306 A:middle
+So here on my iPhone, I've got
+
+00:22:30.306 --> 00:22:31.716 A:middle
+an app called Food Predictor.
+
+00:22:32.356 --> 00:22:33.336 A:middle
+And this is going to use the
+
+00:22:33.336 --> 00:22:34.456 A:middle
+model that we just trained.
+
+00:22:35.356 --> 00:22:36.646 A:middle
+Here I'm going to choose from
+
+00:22:36.646 --> 00:22:37.096 A:middle
+photos.
+
+00:22:37.416 --> 00:22:39.026 A:middle
+And I've got a picture of this
+
+00:22:39.026 --> 00:22:40.036 A:middle
+morning's breakfast.
+
+00:22:40.546 --> 00:22:41.506 A:middle
+This is a pretty typical
+
+00:22:41.506 --> 00:22:42.916 A:middle
+breakfast for me: coffee and a
+
+00:22:42.916 --> 00:22:43.326 A:middle
+banana.
+
+00:22:43.796 --> 00:22:45.546 A:middle
+Well, often I skip the banana.
+
+00:22:46.316 --> 00:22:48.856 A:middle
+But suppose I ate a banana this
+
+00:22:48.856 --> 00:22:49.346 A:middle
+morning.
+
+00:22:50.456 --> 00:22:53.316 A:middle
+We can just tap right on the
+
+00:22:53.316 --> 00:22:53.796 A:middle
+image.
+
+00:22:53.796 --> 00:22:54.976 A:middle
+And because we know the bounding
+
+00:22:54.976 --> 00:22:57.196 A:middle
+box, we can identify the object
+
+00:22:57.196 --> 00:22:58.386 A:middle
+within that bounding box.
+
+00:22:58.386 --> 00:22:59.716 A:middle
+And here we see the model tells
+
+00:22:59.716 --> 00:23:02.296 A:middle
+us this is a banana, and this is
+

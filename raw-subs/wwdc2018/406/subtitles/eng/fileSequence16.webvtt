@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.546 --> 00:16:00.076 A:middle
+types.
+
+00:16:00.856 --> 00:16:03.526 A:middle
+Up until now, this new version
+
+00:16:03.526 --> 00:16:04.976 A:middle
+of count on dictionary is just
+
+00:16:05.066 --> 00:16:05.686 A:middle
+an overload.
+
+00:16:05.686 --> 00:16:07.626 A:middle
+That means that when you have a
+
+00:16:07.626 --> 00:16:09.436 A:middle
+dictionary, and you know it's a
+
+00:16:09.436 --> 00:16:09.866 A:middle
+dictionary.
+
+00:16:10.526 --> 00:16:11.656 A:middle
+You'll get the newer, better
+
+00:16:11.656 --> 00:16:12.446 A:middle
+version of count.
+
+00:16:13.226 --> 00:16:14.326 A:middle
+But, what about calling it
+
+00:16:14.326 --> 00:16:15.886 A:middle
+inside a generic algorithm?
+
+00:16:17.816 --> 00:16:19.806 A:middle
+So supposing we wanted, for
+
+00:16:19.806 --> 00:16:21.206 A:middle
+example, to write a version of
+
+00:16:21.206 --> 00:16:22.486 A:middle
+the standard library's map?
+
+00:16:23.116 --> 00:16:24.086 A:middle
+If you're not already familiar
+
+00:16:24.086 --> 00:16:25.656 A:middle
+with it, it's a really useful
+
+00:16:25.656 --> 00:16:28.186 A:middle
+operation that transforms each
+
+00:16:28.226 --> 00:16:29.476 A:middle
+element in the collection.
+
+00:16:29.526 --> 00:16:30.946 A:middle
+And gives it back to you as a
+
+00:16:30.946 --> 00:16:31.526 A:middle
+new array.
+
+00:16:32.596 --> 00:16:34.216 A:middle
+The implementation's pretty
+
+00:16:34.216 --> 00:16:34.566 A:middle
+simple.
+
+00:16:35.036 --> 00:16:36.686 A:middle
+It just creates a new array,
+
+00:16:37.486 --> 00:16:38.466 A:middle
+moves over the collection,
+
+00:16:39.056 --> 00:16:40.106 A:middle
+transforms each element.
+
+00:16:40.386 --> 00:16:42.846 A:middle
+And then appends it to the
+
+00:16:42.846 --> 00:16:42.913 A:middle
+array.
+
+00:16:42.913 --> 00:16:44.566 A:middle
+Now, as you append elements to
+
+00:16:44.566 --> 00:16:46.606 A:middle
+an array like this, the array
+
+00:16:46.606 --> 00:16:47.846 A:middle
+automatically grows.
+
+00:16:48.626 --> 00:16:50.466 A:middle
+And, as it grows, it needs
+
+00:16:50.466 --> 00:16:52.196 A:middle
+sometimes to re-allocate its
+
+00:16:52.196 --> 00:16:53.116 A:middle
+internal storage.
+
+00:16:53.216 --> 00:16:54.456 A:middle
+In order to make more room to
+
+00:16:54.456 --> 00:16:55.586 A:middle
+accommodate the new elements.
+
+00:16:56.256 --> 00:16:57.586 A:middle
+In a loop like this, it might
+
+00:16:57.586 --> 00:16:59.276 A:middle
+have to do that multiple times
+
+00:16:59.276 --> 00:17:00.356 A:middle
+over, depending on how big it
+

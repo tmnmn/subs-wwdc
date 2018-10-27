@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.756 --> 00:11:00.726 A:middle
+and we always want to make our
+
+00:11:00.726 --> 00:11:01.926 A:middle
+apps look as good as possible.
+
+00:11:01.926 --> 00:11:03.226 A:middle
+So, we're going to spend a lot
+
+00:11:03.226 --> 00:11:04.726 A:middle
+of time building this UI that
+
+00:11:04.726 --> 00:11:06.436 A:middle
+looks great and animations that
+
+00:11:06.436 --> 00:11:07.406 A:middle
+are pleasing to view.
+
+00:11:08.686 --> 00:11:09.406 A:middle
+However, this can have
+
+00:11:09.406 --> 00:11:11.556 A:middle
+unintended side effects, and
+
+00:11:11.816 --> 00:11:12.946 A:middle
+let's look at an example to
+
+00:11:12.946 --> 00:11:13.666 A:middle
+illustrate why.
+
+00:11:14.266 --> 00:11:17.636 A:middle
+If I'm a video player, my goal
+
+00:11:17.636 --> 00:11:19.156 A:middle
+is to let a user watch a video.
+
+00:11:20.056 --> 00:11:20.416 A:middle
+Simple.
+
+00:11:21.116 --> 00:11:22.696 A:middle
+But I could be tempted to add
+
+00:11:22.696 --> 00:11:24.786 A:middle
+new controls and UI above that
+
+00:11:24.786 --> 00:11:26.446 A:middle
+video, let's say, in the form of
+
+00:11:26.516 --> 00:11:28.716 A:middle
+related videos or a scrubber or
+
+00:11:28.716 --> 00:11:29.856 A:middle
+maybe volume controls.
+
+00:11:30.896 --> 00:11:32.076 A:middle
+This allows a greater degree of
+
+00:11:32.076 --> 00:11:34.276 A:middle
+control to the user to use this
+
+00:11:34.276 --> 00:11:35.666 A:middle
+application and enjoy the video
+
+00:11:35.666 --> 00:11:36.756 A:middle
+they're watching.
+
+00:11:37.636 --> 00:11:39.256 A:middle
+This is actually insidiously
+
+00:11:39.256 --> 00:11:41.606 A:middle
+energy inefficient, and let's
+
+00:11:41.606 --> 00:11:42.406 A:middle
+understand why.
+
+00:11:43.506 --> 00:11:45.276 A:middle
+On many of our devices, there's
+
+00:11:45.276 --> 00:11:46.836 A:middle
+a display optimization in place
+
+00:11:47.086 --> 00:11:48.496 A:middle
+that allows for video playback
+
+00:11:48.496 --> 00:11:50.076 A:middle
+to be very energy efficient when
+
+00:11:50.076 --> 00:11:51.456 A:middle
+there is no UI on screen.
+
+00:11:52.276 --> 00:11:53.426 A:middle
+This is something that is not
+
+00:11:53.426 --> 00:11:54.526 A:middle
+immediately clear when you're
+
+00:11:54.526 --> 00:11:55.556 A:middle
+building an application like
+
+00:11:55.556 --> 00:11:55.896 A:middle
+this.
+
+00:11:56.216 --> 00:11:57.516 A:middle
+However, it makes all the
+
+00:11:57.516 --> 00:11:58.116 A:middle
+difference.
+
+00:11:58.556 --> 00:12:01.236 A:middle
+So, a good approach to take
+

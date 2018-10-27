@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.214 --> 00:18:03.817 align:start position:34% line:-2
+では並列テストの
+実行方法を話します
+
+00:18:03.917 --> 00:18:07.087 align:start position:21% line:-1
+まず どのように実行されるのかと
+
+00:18:07.187 --> 00:18:08.922 align:start position:34% line:-1
+ランタイムについて
+
+00:18:10.591 --> 00:18:12.526 align:start position:30% line:-1
+まずユニットテストです
+
+00:18:12.926 --> 00:18:16.697 align:start position:32% line:-2
+まずテストバンドルに
+コンパイルされます
+
+00:18:17.698 --> 00:18:21.235 align:start position:32% line:-2
+ランタイム時に
+テストランナーとして
+
+00:18:21.335 --> 00:18:23.737 align:start position:23% line:-1
+XcodeがAppを起動します
+
+00:18:24.638 --> 00:18:28.475 align:start position:32% line:-2
+ランナーはバンドルを
+ロードして実行します
+
+00:18:29.810 --> 00:18:31.745 align:start position:29% line:-1
+これがユニットテストです
+
+00:18:32.246 --> 00:18:33.747 align:start position:34% line:-1
+次にUIテストです
+
+00:18:34.181 --> 00:18:36.283 align:start position:38% line:-1
+こちらも同様で
+
+00:18:36.383 --> 00:18:39.152 align:start position:32% line:-2
+バンドルに
+コンパイルされますが
+
+00:18:39.253 --> 00:18:42.990 align:start position:27% line:-2
+バンドルがカスタムAppで
+ロードされるので
+
+00:18:43.290 --> 00:18:45.759 align:start position:27% line:-1
+App自体はテストしません
+
+00:18:46.560 --> 00:18:50.931 align:start position:20% line:-2
+その代わり テストが
+Appを起動し 各UIに作用して―
+
+00:18:51.031 --> 00:18:53.700 align:start position:30% line:-1
+自動的に処理を進めます
+
+00:18:55.102 --> 00:18:57.604 align:start position:27% line:-1
+この過程を更に学びたい人は
+
+00:18:57.704 --> 00:19:02.643 align:start position:29% line:-2
+2016年の我々の
+セッションをご覧ください
+

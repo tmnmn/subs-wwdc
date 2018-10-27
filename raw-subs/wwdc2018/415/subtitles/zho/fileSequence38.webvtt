@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.579 --> 00:38:00.380 align:middle line:-2
+对于参数类型
+宠物
+
+00:38:00.747 --> 00:38:02.149 align:middle line:-2
+后跟一个动词
+画
+
+00:38:03.016 --> 00:38:05.853 align:middle line:-1
+同样单词point
+
+00:38:06.186 --> 00:38:08.388 align:middle line:-2
+代表参数类型
+CGPoint
+
+00:38:08.722 --> 00:38:10.257 align:middle line:-1
+后跟介词at
+
+00:38:11.992 --> 00:38:14.094 align:middle line:-1
+Swift删除了这些词
+
+00:38:14.161 --> 00:38:17.664 align:middle line:-2
+只导入函数
+draw at
+
+00:38:19.399 --> 00:38:20.567 align:middle line:-1
+怎么做到的？
+
+00:38:21.068 --> 00:38:23.036 align:middle line:-1
+你可能不知道
+
+00:38:23.804 --> 00:38:28.008 align:middle line:-2
+编译器带有一组
+常用英文动词和介词列表
+
+00:38:29.643 --> 00:38:33.113 align:middle line:-2
+因为它们很难编码
+人类语言太复杂
+
+00:38:33.447 --> 00:38:34.982 align:middle line:0
+有时会缺词
+
+00:38:35.716 --> 00:38:38.719 align:middle line:0
+另外为了
+匹配Swift名字转换
+
+00:38:38.952 --> 00:38:41.255 align:middle line:0
+导入器会重命名函数
+
+00:38:41.455 --> 00:38:44.057 align:middle line:0
+根据词性删除单词
+
+00:38:45.192 --> 00:38:47.895 align:middle line:0
+比如
+动词feed不在列表上
+
+00:38:47.961 --> 00:38:52.266 align:middle line:0
+所以feedPet导入后
+不是我们预想的feed
+
+00:38:53.467 --> 00:38:54.535 align:middle line:0
+这个时候
+
+00:38:54.601 --> 00:38:57.104 align:middle line:0
+可以用注解
+NS_Swift_Name
+
+00:38:57.337 --> 00:39:01.508 align:middle line:0
+让编译器导入
+你要的函数形式
+

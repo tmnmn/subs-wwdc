@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.826 --> 00:15:00.376 A:middle
+areas.
+
+00:15:00.976 --> 00:15:03.646 A:middle
+One, how to reduce the startup
+
+00:15:03.746 --> 00:15:04.036 A:middle
+time.
+
+00:15:05.136 --> 00:15:07.486 A:middle
+Two, how to investigate and
+
+00:15:07.486 --> 00:15:08.346 A:middle
+avoid stalls.
+
+00:15:09.186 --> 00:15:11.736 A:middle
+Three, how to investigate and
+
+00:15:11.736 --> 00:15:12.906 A:middle
+avoid errors.
+
+00:15:13.506 --> 00:15:14.276 A:middle
+Let's get started.
+
+00:15:15.756 --> 00:15:17.616 A:middle
+So what can delay start of
+
+00:15:17.676 --> 00:15:18.166 A:middle
+playback?
+
+00:15:19.006 --> 00:15:20.596 A:middle
+Here is an example of the
+
+00:15:20.596 --> 00:15:23.056 A:middle
+operations from the user clicks
+
+00:15:23.056 --> 00:15:25.186 A:middle
+play until the video start to
+
+00:15:25.186 --> 00:15:25.536 A:middle
+play back.
+
+00:15:27.096 --> 00:15:28.606 A:middle
+The application create every
+
+00:15:28.606 --> 00:15:31.026 A:middle
+asset and start inspection of
+
+00:15:31.026 --> 00:15:33.756 A:middle
+the asset to find out durations
+
+00:15:34.146 --> 00:15:36.646 A:middle
+and awardable media options of
+
+00:15:36.646 --> 00:15:37.226 A:middle
+the asset.
+
+00:15:38.106 --> 00:15:40.016 A:middle
+It takes a few round trip
+
+00:15:40.516 --> 00:15:42.526 A:middle
+between the device and the
+
+00:15:42.526 --> 00:15:44.946 A:middle
+content server to download the
+
+00:15:45.136 --> 00:15:47.096 A:middle
+master playlist and [inaudible]
+
+00:15:47.236 --> 00:15:47.656 A:middle
+playlist.
+
+00:15:48.606 --> 00:15:50.756 A:middle
+After that, the application
+
+00:15:50.756 --> 00:15:53.256 A:middle
+create AV Player and AV Player
+
+00:15:53.256 --> 00:15:53.696 A:middle
+Item.
+
+00:15:54.646 --> 00:15:55.426 A:middle
+Buffering starts.
+
+00:15:56.966 --> 00:15:59.096 A:middle
+Oftentime, buffering is
+
+00:15:59.096 --> 00:16:01.136 A:middle
+interrupted, content is
+

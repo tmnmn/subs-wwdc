@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:00.196 --> 00:38:00.836 A:middle
+operations.
+
+00:38:00.836 --> 00:38:01.926 A:middle
+We have deletions and
+
+00:38:01.926 --> 00:38:02.766 A:middle
+insertions.
+
+00:38:03.146 --> 00:38:04.826 A:middle
+We can process them accordingly.
+
+00:38:05.566 --> 00:38:07.246 A:middle
+First, we'll perform our
+
+00:38:07.246 --> 00:38:08.776 A:middle
+deletions in descending order.
+
+00:38:08.946 --> 00:38:11.516 A:middle
+So we'll do our deletion at
+
+00:38:11.656 --> 00:38:13.756 A:middle
+index 3 first, and will hold
+
+00:38:13.756 --> 00:38:15.546 A:middle
+onto the person from there so we
+
+00:38:15.546 --> 00:38:16.476 A:middle
+can insert them later on.
+
+00:38:17.376 --> 00:38:19.956 A:middle
+And then we'll delete the item
+
+00:38:19.956 --> 00:38:22.876 A:middle
+at index 2.
+
+00:38:23.126 --> 00:38:24.756 A:middle
+Then we'll need to process our
+
+00:38:24.756 --> 00:38:26.366 A:middle
+insertions in ascending order.
+
+00:38:26.526 --> 00:38:27.916 A:middle
+We just have one, so we can just
+
+00:38:27.916 --> 00:38:30.266 A:middle
+go ahead and insert it.
+
+00:38:30.266 --> 00:38:31.586 A:middle
+And finally, we'll ask the
+
+00:38:31.586 --> 00:38:34.296 A:middle
+CollectionView to perform the
+
+00:38:34.296 --> 00:38:35.446 A:middle
+animations that we want.
+
+00:38:35.816 --> 00:38:38.466 A:middle
+Now, note, I'm still calling
+
+00:38:38.466 --> 00:38:39.116 A:middle
+move here.
+
+00:38:39.116 --> 00:38:40.966 A:middle
+I didn't break it down into it's
+
+00:38:40.966 --> 00:38:42.726 A:middle
+component actions because we
+
+00:38:42.726 --> 00:38:43.836 A:middle
+still want the collection view
+
+00:38:44.046 --> 00:38:45.476 A:middle
+to play the right animations,
+
+00:38:45.476 --> 00:38:46.296 A:middle
+and if we've done the right
+
+00:38:46.386 --> 00:38:47.906 A:middle
+thing with our data source, the
+
+00:38:47.906 --> 00:38:49.086 A:middle
+CollectionView will do the right
+
+00:38:49.156 --> 00:38:50.616 A:middle
+think in terms of animations.
+
+00:38:51.376 --> 00:38:51.756 A:middle
+All right.
+
+00:38:51.846 --> 00:38:53.826 A:middle
+Let's go back to the simulator
+
+00:38:53.826 --> 00:38:56.826 A:middle
+and see what our update looks
+
+00:38:56.826 --> 00:38:58.066 A:middle
+like when it works.
+
+00:38:58.936 --> 00:38:59.966 A:middle
+All right.
+

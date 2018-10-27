@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.016 --> 00:08:00.086 A:middle
+kept profiling our apps and we
+
+00:08:00.086 --> 00:08:01.846 A:middle
+actually found another case
+
+00:08:01.846 --> 00:08:02.756 A:middle
+where there was a bit of a
+
+00:08:02.756 --> 00:08:04.236 A:middle
+surprising cause of some dropped
+
+00:08:04.236 --> 00:08:04.676 A:middle
+frames.
+
+00:08:05.336 --> 00:08:07.316 A:middle
+Now what we found was that when
+
+00:08:07.316 --> 00:08:09.096 A:middle
+the device was not under load,
+
+00:08:09.396 --> 00:08:10.276 A:middle
+there was no background
+
+00:08:10.276 --> 00:08:12.016 A:middle
+activity, all we were doing was
+
+00:08:12.016 --> 00:08:13.056 A:middle
+a little bit of scrolling in the
+
+00:08:13.056 --> 00:08:13.726 A:middle
+foreground app.
+
+00:08:14.346 --> 00:08:15.916 A:middle
+Counterintuitively, we could
+
+00:08:15.916 --> 00:08:18.336 A:middle
+actually drop more frames than
+
+00:08:18.336 --> 00:08:19.896 A:middle
+times when there was some small
+
+00:08:19.896 --> 00:08:21.226 A:middle
+amount of light background work
+
+00:08:21.266 --> 00:08:21.766 A:middle
+going on.
+
+00:08:22.396 --> 00:08:23.536 A:middle
+That didn't really make a lot of
+
+00:08:23.536 --> 00:08:23.866 A:middle
+sense.
+
+00:08:24.366 --> 00:08:25.636 A:middle
+And to understand why it was
+
+00:08:25.636 --> 00:08:27.306 A:middle
+happening, we had to drop down a
+
+00:08:27.306 --> 00:08:29.126 A:middle
+level and take a look at the
+
+00:08:29.126 --> 00:08:31.736 A:middle
+behavior of the CPU when it was
+
+00:08:31.736 --> 00:08:33.096 A:middle
+scheduling our workloads.
+
+00:08:33.096 --> 00:08:34.876 A:middle
+So let's take a look at another
+
+00:08:34.876 --> 00:08:35.196 A:middle
+trace.
+
+00:08:36.306 --> 00:08:37.155 A:middle
+Here, we've got the same
+
+00:08:37.155 --> 00:08:37.836 A:middle
+situation.
+
+00:08:38.206 --> 00:08:39.836 A:middle
+Double wide blue bar is causing
+
+00:08:39.836 --> 00:08:42.096 A:middle
+us to drop a frame or rather is
+
+00:08:42.096 --> 00:08:42.746 A:middle
+our dropped frame.
+
+00:08:43.506 --> 00:08:45.326 A:middle
+Now here we can see a graph of
+
+00:08:45.326 --> 00:08:47.086 A:middle
+our CPU's performance over time.
+
+00:08:47.686 --> 00:08:49.176 A:middle
+Now during most of those cheap
+
+00:08:49.256 --> 00:08:50.876 A:middle
+frames, our CPU performance is
+
+00:08:50.876 --> 00:08:52.116 A:middle
+staying pretty low.
+
+00:08:52.366 --> 00:08:53.496 A:middle
+There's no background work going
+
+00:08:53.496 --> 00:08:53.806 A:middle
+on.
+
+00:08:53.806 --> 00:08:55.256 A:middle
+All we're doing is scrolling
+
+00:08:55.256 --> 00:08:56.896 A:middle
+things and that's exactly what
+
+00:08:56.896 --> 00:08:58.416 A:middle
+you would want because when
+
+00:08:58.416 --> 00:08:59.976 A:middle
+we're not doing expensive work
+
+00:08:59.976 --> 00:09:01.556 A:middle
+for scrolling, you want to keep
+

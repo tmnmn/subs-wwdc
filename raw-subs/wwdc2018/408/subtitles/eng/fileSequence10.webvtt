@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.186 --> 00:10:01.476 A:middle
+So we were able to shrink our
+
+00:10:01.476 --> 00:10:03.426 A:middle
+utilities target down because we
+
+00:10:03.426 --> 00:10:05.346 A:middle
+moved that work into Code Gen.
+
+00:10:06.076 --> 00:10:07.426 A:middle
+And since Code Gen has no other
+
+00:10:07.426 --> 00:10:09.336 A:middle
+dependencies, it can move to the
+
+00:10:09.336 --> 00:10:11.176 A:middle
+very front of our build process.
+
+00:10:11.506 --> 00:10:13.056 A:middle
+It can also be built in parallel
+
+00:10:13.346 --> 00:10:14.516 A:middle
+with our Physics target, which
+
+00:10:14.516 --> 00:10:15.686 A:middle
+is the red box on the bottom.
+
+00:10:17.146 --> 00:10:18.756 A:middle
+And lastly, because Shaders no
+
+00:10:18.756 --> 00:10:20.436 A:middle
+longer depends on Utilities, it
+
+00:10:20.436 --> 00:10:21.616 A:middle
+doesn't have to wait for both
+
+00:10:21.616 --> 00:10:24.686 A:middle
+Utilities and the Physics target
+
+00:10:24.936 --> 00:10:25.396 A:middle
+to be built.
+
+00:10:25.686 --> 00:10:26.896 A:middle
+And instead it can be built as
+
+00:10:26.896 --> 00:10:29.046 A:middle
+soon as that Code Gen target is
+
+00:10:30.456 --> 00:10:30.566 A:middle
+done.
+
+00:10:30.766 --> 00:10:31.986 A:middle
+Now, the last dependency I want
+
+00:10:31.986 --> 00:10:33.476 A:middle
+to talk to you about are the
+
+00:10:33.476 --> 00:10:34.926 A:middle
+ones that I call the "Forgotten
+
+00:10:34.926 --> 00:10:35.336 A:middle
+Ones."
+
+00:10:35.826 --> 00:10:37.906 A:middle
+Throughout the evolution or the
+
+00:10:37.906 --> 00:10:40.376 A:middle
+lifecycle of our products and
+
+00:10:40.376 --> 00:10:42.956 A:middle
+our code, we tend to move code
+
+00:10:42.956 --> 00:10:44.106 A:middle
+around and delete things.
+
+00:10:44.106 --> 00:10:45.046 A:middle
+And we get things like dead
+
+00:10:45.096 --> 00:10:45.356 A:middle
+code.
+
+00:10:45.766 --> 00:10:47.056 A:middle
+Well, we get the same thing that
+
+00:10:47.056 --> 00:10:48.326 A:middle
+happens with our dependencies.
+
+00:10:48.706 --> 00:10:49.816 A:middle
+Sometimes we simply forget to
+
+00:10:49.816 --> 00:10:50.376 A:middle
+clean them up.
+
+00:10:51.386 --> 00:10:52.506 A:middle
+And so in these cases, it's
+
+00:10:52.926 --> 00:10:54.306 A:middle
+actually safe to just remove
+
+00:10:54.306 --> 00:10:54.976 A:middle
+that dependency.
+
+00:10:56.456 --> 00:10:58.276 A:middle
+And this last change tightens up
+
+00:10:58.276 --> 00:11:00.396 A:middle
+or build graph even further by
+

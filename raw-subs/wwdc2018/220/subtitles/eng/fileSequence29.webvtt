@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.456 --> 00:29:00.746 A:middle
+to remove and change constraint
+
+00:29:01.776 --> 00:29:05.326 A:middle
+instances and finally sizing for
+
+00:29:05.326 --> 00:29:06.716 A:middle
+UILabel and other text views.
+
+00:29:06.906 --> 00:29:08.286 A:middle
+This one says UILabel because
+
+00:29:08.286 --> 00:29:09.156 A:middle
+that's what's in this app.
+
+00:29:09.956 --> 00:29:11.026 A:middle
+It's also going to track other
+
+00:29:11.026 --> 00:29:12.186 A:middle
+types of text views as well.
+
+00:29:13.786 --> 00:29:16.286 A:middle
+So this was taken with that app
+
+00:29:16.366 --> 00:29:18.556 A:middle
+scrolling, so what do we look at
+
+00:29:18.556 --> 00:29:18.816 A:middle
+here?
+
+00:29:19.206 --> 00:29:21.136 A:middle
+There are several peaks in the
+
+00:29:21.136 --> 00:29:24.236 A:middle
+CPU view but let's zoom in on
+
+00:29:24.236 --> 00:29:25.776 A:middle
+this one because right below it
+
+00:29:25.776 --> 00:29:27.106 A:middle
+I see a big jump in constraint
+
+00:29:27.106 --> 00:29:28.386 A:middle
+churn and that's a little
+
+00:29:28.386 --> 00:29:28.926 A:middle
+concerning.
+
+00:29:29.906 --> 00:29:31.396 A:middle
+So if you highlight this view
+
+00:29:31.526 --> 00:29:32.966 A:middle
+and go down to the detailed view
+
+00:29:33.666 --> 00:29:35.486 A:middle
+in instruments, what you'll see
+
+00:29:35.726 --> 00:29:36.846 A:middle
+is a list of the views that are
+
+00:29:36.846 --> 00:29:38.396 A:middle
+affected by churn by view
+
+00:29:38.396 --> 00:29:38.896 A:middle
+description.
+
+00:29:39.586 --> 00:29:40.556 A:middle
+And we are grouping them by
+
+00:29:40.556 --> 00:29:42.326 A:middle
+Superview so that in an instance
+
+00:29:42.326 --> 00:29:44.576 A:middle
+of say Table View Cells, it's
+
+00:29:44.576 --> 00:29:46.486 A:middle
+easier to see that it's
+
+00:29:46.486 --> 00:29:48.286 A:middle
+happening over and over in a
+
+00:29:48.286 --> 00:29:49.556 A:middle
+specific context and not
+
+00:29:49.556 --> 00:29:50.116 A:middle
+different ones.
+
+00:29:51.016 --> 00:29:52.536 A:middle
+So in this instance we see that
+
+00:29:52.536 --> 00:29:54.586 A:middle
+the avatar view and three labels
+
+00:29:54.966 --> 00:29:55.956 A:middle
+are experiencing churn.
+
+00:29:57.316 --> 00:29:59.646 A:middle
+And since I am the one who ran
+
+00:29:59.646 --> 00:30:01.696 A:middle
+this through the instrument, I
+

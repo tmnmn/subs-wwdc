@@ -1,0 +1,79 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.166 --> 00:25:01.001 align:start position:30% line:-1
+ここで非常に大事なのが
+
+00:25:01.101 --> 00:25:04.404 align:start position:16% line:-2
+com.apple.CoreData.
+ConcurrencyDebugです
+
+00:25:04.505 --> 00:25:07.641 align:start position:23% line:-2
+これはアプリケーションにおける
+キューの例外を捉えます
+
+00:25:07.741 --> 00:25:10.611 align:start position:27% line:-2
+メインとバックグラウンドの
+キューコンテキスト間で
+
+00:25:10.711 --> 00:25:12.880 align:start position:23% line:-1
+オブジェクトを移動させるエリア
+
+00:25:12.980 --> 00:25:14.982 align:start position:27% line:-2
+あるいは管理オブジェクトの
+実際のコンテキストに
+
+00:25:15.082 --> 00:25:17.618 align:start position:30% line:-1
+従わないエリアなどです
+
+00:25:18.619 --> 00:25:21.989 align:start position:18% line:-2
+またSQLiteは興味深い環境変数を
+多く有します
+
+00:25:22.089 --> 00:25:24.057 align:start position:21% line:-1
+それらのスレッドやアサーションは
+
+00:25:24.157 --> 00:25:28.262 align:start position:27% line:-2
+API周辺などにおける
+アプリケーションの正確性に
+
+00:25:28.362 --> 00:25:30.030 align:start position:32% line:-1
+非常に役立つものです
+
+00:25:30.430 --> 00:25:34.067 align:start position:21% line:-2
+自動トレースはバックグラウンドの
+動作を把握するための
+
+00:25:34.167 --> 00:25:36.336 align:start position:29% line:-1
+デバッグログ上の手段です
+
+00:25:36.737 --> 00:25:39.139 align:start position:14% line:-2
+com.apple.Core Data.
+SQLDebugには
+
+00:25:39.239 --> 00:25:40.908 align:start position:32% line:-1
+４つの段階があります
+
+00:25:41.008 --> 00:25:42.743 align:start position:32% line:-1
+１つ目は最も興味深く
+
+00:25:42.843 --> 00:25:45.712 align:start position:30% line:-2
+パフォーマンスヒットは
+最も小さくなります
+
+00:25:45.812 --> 00:25:49.683 align:start position:32% line:-2
+４つ目の段階は
+最も詳細な状態ですが
+
+00:25:49.783 --> 00:25:51.885 align:start position:30% line:-2
+パフォーマンスヒットを
+非常に大きくします
+
+00:25:53.921 --> 00:25:57.524 align:start position:21% line:-2
+SQLデバッグやマルチスレッドの
+アサーションを有効にすると
+
+00:25:57.624 --> 00:25:59.960 align:start position:29% line:-2
+コンソール内に
+ログを見ることができます
+

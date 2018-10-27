@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.946 --> 00:32:01.306 A:middle
+way to help you build a test
+
+00:32:01.306 --> 00:32:02.556 A:middle
+suite that evaluates your
+
+00:32:02.556 --> 00:32:04.016 A:middle
+invariance around your data.
+
+00:32:04.976 --> 00:32:06.386 A:middle
+By building these methods ahead
+
+00:32:06.386 --> 00:32:08.496 A:middle
+of time, as your data changes or
+
+00:32:08.496 --> 00:32:09.876 A:middle
+you become aware of new use
+
+00:32:09.876 --> 00:32:11.626 A:middle
+cases for your application, you
+
+00:32:11.626 --> 00:32:13.486 A:middle
+can iterate on these to build
+
+00:32:13.486 --> 00:32:14.756 A:middle
+new edge cases, build new
+
+00:32:14.756 --> 00:32:15.826 A:middle
+structures for your object
+
+00:32:15.826 --> 00:32:17.946 A:middle
+graph, or evaluate the behavior
+
+00:32:17.946 --> 00:32:19.186 A:middle
+of certain functionality under
+
+00:32:19.186 --> 00:32:21.776 A:middle
+the covers, such as performance.
+
+00:32:22.146 --> 00:32:25.606 A:middle
+This is the unit test scaffold
+
+00:32:25.606 --> 00:32:26.566 A:middle
+that I used to build a
+
+00:32:26.566 --> 00:32:28.046 A:middle
+performance test for the R-tree
+
+00:32:28.046 --> 00:32:28.466 A:middle
+query.
+
+00:32:29.176 --> 00:32:30.496 A:middle
+In just a handful of lines of
+
+00:32:30.496 --> 00:32:32.456 A:middle
+code, we get high confidence on
+
+00:32:32.456 --> 00:32:33.886 A:middle
+the performance of our fetch.
+
+00:32:34.836 --> 00:32:36.286 A:middle
+And these types of tests are
+
+00:32:36.286 --> 00:32:37.466 A:middle
+very informative when you're
+
+00:32:37.466 --> 00:32:38.996 A:middle
+trying to evaluate tradeoffs
+
+00:32:38.996 --> 00:32:40.386 A:middle
+between different features and
+
+00:32:40.386 --> 00:32:44.896 A:middle
+functionality in Core Data.
+
+00:32:45.316 --> 00:32:46.576 A:middle
+These three lines of code
+
+00:32:46.576 --> 00:32:47.936 A:middle
+generate a new managed object
+
+00:32:47.936 --> 00:32:49.976 A:middle
+context and container for us for
+
+00:32:49.976 --> 00:32:50.946 A:middle
+our test to use.
+
+00:32:51.756 --> 00:32:54.206 A:middle
+Now, this is important primarily
+
+00:32:54.206 --> 00:32:55.606 A:middle
+because the setup and teardown
+
+00:32:55.606 --> 00:32:57.786 A:middle
+logic in tests can sometimes
+
+00:32:57.786 --> 00:32:59.066 A:middle
+affect their performance.
+
+00:32:59.696 --> 00:33:01.196 A:middle
+So, you'll need to take care to
+

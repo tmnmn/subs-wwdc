@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.786 --> 00:27:02.089 align:middle line:-1
+我们为亮度和色度信道进行这项操作
+
+00:27:03.524 --> 00:27:05.626 align:middle line:-1
+现在我们需要准备一个输出缓冲区
+
+00:27:06.493 --> 00:27:10.931 align:middle line:-2
+请记住 我们还没有为输出图像
+分配一块内存
+
+00:27:11.164 --> 00:27:12.199 align:middle line:-1
+因此我们需要这样做
+
+00:27:12.799 --> 00:27:16.303 align:middle line:-2
+vImage有一个很方便的函数
+即vImageBuffer_Init
+
+00:27:16.470 --> 00:27:17.437 align:middle line:-1
+可以做到这一点
+
+00:27:18.672 --> 00:27:23.110 align:middle line:-1
+给定其高度 宽度和每像素位数
+
+00:27:23.944 --> 00:27:27.881 align:middle line:-2
+vImageBuffer_Init
+将为你分配一个足够容纳此图像的内存
+
+00:27:27.948 --> 00:27:30.584 align:middle line:-2
+然后也会创建一个
+vImageBuffer对象
+
+00:27:30.651 --> 00:27:33.387 align:middle line:-1
+从而可以被vImage库使用
+
+00:27:35.722 --> 00:27:36.623 align:middle line:-1
+最后一步
+
+00:27:36.857 --> 00:27:40.060 align:middle line:-1
+是将处理后的图像输出到屏幕上
+
+00:27:43.397 --> 00:27:48.202 align:middle line:-2
+正如我之前所说的
+RGB是最佳显示格式
+
+00:27:48.268 --> 00:27:54.041 align:middle line:-2
+所以让我们使用转换函数
+将YCbCr图像转换为RGB图像
+
+00:27:54.308 --> 00:27:58.478 align:middle line:-2
+然后 因为用户界面
+期望的是CGImage对象
+
+00:27:58.679 --> 00:27:59.880 align:middle line:-1
+所以我们必须创建一个
+

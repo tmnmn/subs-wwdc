@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.926 --> 00:36:00.916 A:middle
+input is potentially untrusted.
+
+00:36:02.086 --> 00:36:03.926 A:middle
+When you allow text input, you
+
+00:36:03.926 --> 00:36:05.906 A:middle
+allow copy and paste.
+
+00:36:05.906 --> 00:36:08.206 A:middle
+You don't know what kind of text
+
+00:36:08.206 --> 00:36:08.986 A:middle
+can be pasted in there.
+
+00:36:10.126 --> 00:36:10.926 A:middle
+It could be anything.
+
+00:36:10.926 --> 00:36:12.016 A:middle
+It could be a string with
+
+00:36:12.016 --> 00:36:12.766 A:middle
+malicious character
+
+00:36:12.766 --> 00:36:14.436 A:middle
+combinations, or it could just
+
+00:36:14.436 --> 00:36:15.816 A:middle
+be a string that's really,
+
+00:36:16.126 --> 00:36:19.236 A:middle
+really, really long.
+
+00:36:20.566 --> 00:36:21.796 A:middle
+And even though long strings
+
+00:36:21.796 --> 00:36:23.116 A:middle
+like that may not be malicious
+
+00:36:23.116 --> 00:36:24.336 A:middle
+in themselves, it could cause
+
+00:36:24.336 --> 00:36:25.526 A:middle
+your app to freeze or hang.
+
+00:36:26.296 --> 00:36:27.386 A:middle
+So if you have a text field
+
+00:36:27.676 --> 00:36:29.276 A:middle
+that's intended for one line of
+
+00:36:29.276 --> 00:36:30.816 A:middle
+input and someone pastes the
+
+00:36:30.816 --> 00:36:32.126 A:middle
+entire contents of "War and
+
+00:36:32.126 --> 00:36:33.536 A:middle
+Peace" into it, which is about
+
+00:36:33.856 --> 00:36:35.106 A:middle
+3.1 million characters in
+
+00:36:35.106 --> 00:36:37.576 A:middle
+English, is that reasonable?
+
+00:36:39.636 --> 00:36:41.226 A:middle
+Probably not.
+
+00:36:42.316 --> 00:36:43.916 A:middle
+So this is a great example of a
+
+00:36:43.916 --> 00:36:45.106 A:middle
+case where it makes sense to
+
+00:36:45.106 --> 00:36:46.656 A:middle
+impose your own limits.
+
+00:36:47.926 --> 00:36:49.376 A:middle
+And here are the recommended
+
+00:36:49.376 --> 00:36:50.316 A:middle
+approaches for setting these
+
+00:36:50.316 --> 00:36:50.926 A:middle
+kinds of limits.
+
+00:36:51.766 --> 00:36:52.856 A:middle
+You want to validate the input
+
+00:36:52.926 --> 00:36:54.236 A:middle
+string before it's set on the
+
+00:36:54.236 --> 00:36:54.756 A:middle
+text field.
+
+00:36:55.186 --> 00:36:56.846 A:middle
+And so for UITextFields, you can
+
+00:36:56.846 --> 00:36:57.706 A:middle
+do this by using
+
+00:36:57.986 --> 00:36:59.066 A:middle
+UITextFieldDelegate.
+
+00:36:59.936 --> 00:37:01.356 A:middle
+And for NSTextFields, you should
+

@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:57.644 --> 00:38:00.247 align:start position:21% line:-1
+Appのフィルタ機能を作成します
+
+00:38:00.681 --> 00:38:04.184 align:start position:23% line:-1
+これも確認しておきたいことです
+
+00:38:04.284 --> 00:38:08.021 align:start position:29% line:-2
+しかし既に確認し
+何も見つかりませんでした
+
+00:38:09.223 --> 00:38:13.126 align:start position:29% line:-2
+従ってleaksの出力は
+必要ありませんね
+
+00:38:13.227 --> 00:38:14.995 align:start position:41% line:-1
+残念でした
+
+00:38:15.596 --> 00:38:18.465 align:start position:32% line:-1
+次はどうしましょう？
+
+00:38:19.500 --> 00:38:25.372 align:start position:21% line:-2
+幸いにもジェイムスには
+メモリバックトレースがありました
+
+00:38:25.472 --> 00:38:29.409 align:start position:18% line:-2
+memgraphをキャプチャした際に
+記録したものです
+
+00:38:29.510 --> 00:38:32.546 align:start position:27% line:-1
+従って別のツールを使います
+
+00:38:32.646 --> 00:38:36.717 align:start position:27% line:-2
+それでオブジェクトの
+バックトレースを見ましょう
+
+00:38:36.817 --> 00:38:38.919 align:start position:16% line:-1
+malloc historyを使います
+
+00:38:40.053 --> 00:38:44.024 align:start position:14% line:-1
+まずmemgraphファイルにパスします
+
+00:38:45.859 --> 00:38:50.698 align:start position:16% line:-2
+ヘルプ文書から
+fullStacksフラグにパスします
+
+00:38:50.998 --> 00:38:56.970 align:start position:25% line:-2
+そして人間が読みやすいように
+出力します
+
+00:38:57.071 --> 00:39:01.408 align:start position:29% line:-2
+次に仮想メモリ領域の
+開始アドレスにパスをして
+

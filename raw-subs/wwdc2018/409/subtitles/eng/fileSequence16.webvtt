@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.656 --> 00:16:00.726 A:middle
+finds the bug for you it also
+
+00:16:00.726 --> 00:16:02.416 A:middle
+displays the visualization in
+
+00:16:02.496 --> 00:16:04.336 A:middle
+Xcode of the paths which
+
+00:16:04.386 --> 00:16:04.936 A:middle
+[inaudible] the bug.
+
+00:16:05.636 --> 00:16:07.546 A:middle
+So here nil is added to
+
+00:16:07.636 --> 00:16:09.566 A:middle
+NSMutableArray which can cause a
+
+00:16:09.566 --> 00:16:10.596 A:middle
+crash later on.
+
+00:16:10.636 --> 00:16:12.626 A:middle
+And Static Analyzer shows you
+
+00:16:12.626 --> 00:16:14.566 A:middle
+the path for this crash so you
+
+00:16:14.566 --> 00:16:16.026 A:middle
+can see how the application can
+
+00:16:16.026 --> 00:16:16.516 A:middle
+be fixed.
+
+00:16:17.686 --> 00:16:19.536 A:middle
+And I would like to tell you
+
+00:16:19.536 --> 00:16:20.916 A:middle
+about three of the new
+
+00:16:20.916 --> 00:16:22.166 A:middle
+improvements we have done.
+
+00:16:22.816 --> 00:16:25.346 A:middle
+Firstly, we have a new check for
+
+00:16:25.346 --> 00:16:27.266 A:middle
+detecting Grand Central Dispatch
+
+00:16:27.266 --> 00:16:29.146 A:middle
+anti-patterning, which can cause
+
+00:16:29.146 --> 00:16:30.876 A:middle
+poor performance and hangs of
+
+00:16:30.876 --> 00:16:31.666 A:middle
+your replication.
+
+00:16:32.346 --> 00:16:34.286 A:middle
+Secondly, we have a new check
+
+00:16:34.286 --> 00:16:36.066 A:middle
+for detecting a misuse of
+
+00:16:36.066 --> 00:16:38.146 A:middle
+autoreleasing variables inside
+
+00:16:38.146 --> 00:16:39.866 A:middle
+autorelease pools which can
+
+00:16:39.866 --> 00:16:41.136 A:middle
+cause crashes with [inaudible].
+
+00:16:41.136 --> 00:16:44.876 A:middle
+And finally, we have improved
+
+00:16:44.916 --> 00:16:46.556 A:middle
+performance and visualizations
+
+00:16:46.556 --> 00:16:47.916 A:middle
+for the Clang Static Analyzer.
+
+00:16:49.116 --> 00:16:51.486 A:middle
+So let's start with a new check
+
+00:16:51.486 --> 00:16:52.836 A:middle
+for detecting Grand Central
+
+00:16:52.836 --> 00:16:54.086 A:middle
+Dispatch anti-pattern.
+
+00:16:54.986 --> 00:16:57.226 A:middle
+So many APIs on our platforms
+
+00:16:57.656 --> 00:17:00.076 A:middle
+are asynchronous, but sometimes
+

@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.660 --> 00:36:02.095 align:start position:36% line:-1
+没入感を高めます
+
+00:36:02.496 --> 00:36:04.932 align:start position:32% line:-1
+リアルな風の動きです
+
+00:36:05.065 --> 00:36:08.268 align:start position:27% line:-2
+物理エンジンの
+布シミュレーションではなく
+
+00:36:09.503 --> 00:36:13.240 align:start position:32% line:-2
+GPUとMetalで
+やることにしました
+
+00:36:15.242 --> 00:36:18.345 align:start position:29% line:-2
+まずはSceneKitの
+アセットです
+
+00:36:18.445 --> 00:36:22.616 align:start position:27% line:-2
+Appleロゴを乗せるため
+テクスチャを貼りました
+
+00:36:23.650 --> 00:36:26.587 align:start position:27% line:-1
+次にSwiftクラスを作成
+
+00:36:26.720 --> 00:36:29.056 align:start position:25% line:-2
+Metalのコマンドキューを
+作り
+
+00:36:29.156 --> 00:36:33.427 align:start position:29% line:-2
+風向きなどゲームの状態の
+情報を挿入
+
+00:36:34.495 --> 00:36:37.397 align:start position:30% line:-2
+コンピュートシェーダを
+実行します
+
+00:36:37.764 --> 00:36:40.000 align:start position:27% line:-2
+これはＣの
+レガシーコードから来ていて
+
+00:36:40.100 --> 00:36:45.138 align:start position:27% line:-2
+MetalはモダンC++に
+基づくため変換は簡単でした
+
+00:36:45.772 --> 00:36:49.843 align:start position:30% line:-2
+コンピュートシェーダで
+法線を算出し
+
+00:36:50.077 --> 00:36:54.848 align:start position:32% line:-2
+ポリゴンの数を抑え
+滑らかな旗を見せます
+
+00:36:55.549 --> 00:36:57.551 align:start position:39% line:-1
+上出来ですね
+
+00:36:58.218 --> 00:37:02.956 align:start position:30% line:-2
+各フレームでシェーダが
+位置を更新します
+

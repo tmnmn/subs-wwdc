@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.526 --> 00:02:00.446 A:middle
+options to consider.
+
+00:02:01.376 --> 00:02:03.156 A:middle
+Apple offers several high-level
+
+00:02:03.226 --> 00:02:04.906 A:middle
+frameworks that do rendering,
+
+00:02:05.466 --> 00:02:06.446 A:middle
+different kinds of rendering,
+
+00:02:06.836 --> 00:02:08.846 A:middle
+SpriteKit for 2D games, SceneKit
+
+00:02:08.846 --> 00:02:10.756 A:middle
+for some 3D, Core Image for
+
+00:02:10.756 --> 00:02:11.966 A:middle
+great effects.
+
+00:02:13.526 --> 00:02:15.456 A:middle
+Also, each of the major
+
+00:02:15.566 --> 00:02:17.366 A:middle
+third-party game engines already
+
+00:02:17.366 --> 00:02:19.176 A:middle
+use Metal as their primary
+
+00:02:19.176 --> 00:02:19.596 A:middle
+renderer.
+
+00:02:20.776 --> 00:02:22.886 A:middle
+But you may decide that these
+
+00:02:22.886 --> 00:02:24.426 A:middle
+approaches just aren't for you
+
+00:02:24.756 --> 00:02:25.866 A:middle
+and the path forward is to do it
+
+00:02:25.866 --> 00:02:28.086 A:middle
+yourself in Metal, that's what
+
+00:02:28.086 --> 00:02:30.416 A:middle
+we'll talk about today.
+
+00:02:30.566 --> 00:02:31.746 A:middle
+So let's start out with Metal
+
+00:02:31.746 --> 00:02:33.416 A:middle
+design and some fundamental
+
+00:02:33.416 --> 00:02:33.966 A:middle
+concepts.
+
+00:02:35.536 --> 00:02:37.246 A:middle
+So OpenGL was originally
+
+00:02:37.246 --> 00:02:39.326 A:middle
+designed 25 years ago and its
+
+00:02:39.366 --> 00:02:41.286 A:middle
+core reflects the origins of
+
+00:02:41.286 --> 00:02:42.736 A:middle
+hardware accelerated 3D
+
+00:02:42.736 --> 00:02:43.226 A:middle
+graphics.
+
+00:02:44.696 --> 00:02:46.676 A:middle
+So updates with new versions and
+
+00:02:46.676 --> 00:02:48.266 A:middle
+extensions have really served us
+
+00:02:48.266 --> 00:02:49.766 A:middle
+well by exposing new GPU
+
+00:02:49.836 --> 00:02:51.146 A:middle
+features and performance
+
+00:02:51.146 --> 00:02:51.666 A:middle
+techniques.
+
+00:02:52.806 --> 00:02:54.436 A:middle
+However, there are still some
+
+00:02:54.436 --> 00:02:56.276 A:middle
+fundamental design choices that
+
+00:02:56.276 --> 00:02:58.016 A:middle
+no longer apply to current
+
+00:02:58.016 --> 00:02:58.396 A:middle
+hardware.
+

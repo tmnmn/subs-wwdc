@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.876 --> 00:18:01.556 A:middle
+to automatically set the content
+
+00:18:01.556 --> 00:18:02.856 A:middle
+inset on your scroll view
+
+00:18:03.466 --> 00:18:05.426 A:middle
+whenever it had overlapping bars
+
+00:18:05.426 --> 00:18:07.276 A:middle
+coming from a navigation bar or
+
+00:18:07.276 --> 00:18:07.896 A:middle
+a tool bar.
+
+00:18:08.006 --> 00:18:09.476 A:middle
+And that was whenever your
+
+00:18:09.476 --> 00:18:10.726 A:middle
+scroll view was inside of a view
+
+00:18:10.726 --> 00:18:11.246 A:middle
+controller.
+
+00:18:11.606 --> 00:18:12.846 A:middle
+Which itself was contained
+
+00:18:12.906 --> 00:18:13.816 A:middle
+inside of a navigation
+
+00:18:13.816 --> 00:18:14.136 A:middle
+controller.
+
+00:18:14.726 --> 00:18:16.656 A:middle
+Now this worked pretty well for
+
+00:18:16.656 --> 00:18:17.646 A:middle
+some common cases.
+
+00:18:18.026 --> 00:18:19.566 A:middle
+But if your app had a more
+
+00:18:19.566 --> 00:18:21.876 A:middle
+custom or advanced usage of UI
+
+00:18:21.876 --> 00:18:24.196 A:middle
+scroll view, sometimes having
+
+00:18:24.236 --> 00:18:26.016 A:middle
+your code setting content inset
+
+00:18:26.016 --> 00:18:28.156 A:middle
+and also UIKit setting that same
+
+00:18:28.156 --> 00:18:29.846 A:middle
+content inset property could
+
+00:18:29.846 --> 00:18:30.626 A:middle
+create some challenges.
+
+00:18:31.676 --> 00:18:33.726 A:middle
+And so starting in iOS 11, we
+
+00:18:33.956 --> 00:18:35.526 A:middle
+have a much more explicit and
+
+00:18:35.526 --> 00:18:37.346 A:middle
+powerful way for you to get the
+
+00:18:37.346 --> 00:18:38.946 A:middle
+same automatic behavior.
+
+00:18:39.716 --> 00:18:41.336 A:middle
+And the mechanism for doing this
+
+00:18:41.556 --> 00:18:42.976 A:middle
+is a new property on UI scroll
+
+00:18:42.976 --> 00:18:44.786 A:middle
+view which we'll talk about now
+
+00:18:44.886 --> 00:18:46.586 A:middle
+called adjusted content inset.
+
+00:18:47.996 --> 00:18:50.356 A:middle
+So starting in iOS 11, we
+
+00:18:50.356 --> 00:18:51.546 A:middle
+introduced a new property on UI
+
+00:18:51.546 --> 00:18:52.036 A:middle
+scroll view.
+
+00:18:52.036 --> 00:18:52.766 A:middle
+It's read only.
+
+00:18:52.806 --> 00:18:54.066 A:middle
+It's adjust content inset.
+
+00:18:54.406 --> 00:18:56.506 A:middle
+And this basically describes how
+
+00:18:56.506 --> 00:18:57.776 A:middle
+the scroll view is actually
+
+00:18:57.776 --> 00:18:58.606 A:middle
+going to behave.
+
+00:18:59.716 --> 00:19:00.696 A:middle
+Well you're probably asking
+

@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.285 --> 00:22:01.755 align:middle line:-2
+我们已经看到了如何使用
+UIImage和UIImageView
+
+00:22:02.823 --> 00:22:05.926 align:middle line:-2
+但你的app所做的图形工作
+不止这些
+
+00:22:05.993 --> 00:22:08.862 align:middle line:-1
+有时 app在运行时绘制内容
+
+00:22:12.299 --> 00:22:13.800 align:middle line:-1
+这种情况的例子
+
+00:22:14.268 --> 00:22:17.704 align:middle line:-1
+可以在如Photos app中的
+
+00:22:17.771 --> 00:22:19.506 align:middle line:-1
+编辑视图中看到
+
+00:22:21.275 --> 00:22:27.414 align:middle line:-2
+这个UIButton显示了一个图标
+并且UIButton可以直接使用UIImageView
+
+00:22:28.549 --> 00:22:32.085 align:middle line:-2
+但是UIButton在这里不支持
+这个Live按钮的风格
+
+00:22:32.152 --> 00:22:35.322 align:middle line:-2
+以实现点击
+以启用或禁用Live Photo
+
+00:22:36.223 --> 00:22:38.392 align:middle line:-2
+因此我们自己将不得不
+在这里做一些工作
+
+00:22:39.326 --> 00:22:42.863 align:middle line:-2
+这里一个可能的实现是
+继承UIView
+
+00:22:43.397 --> 00:22:44.765 align:middle line:-1
+并实现draw方法
+
+00:22:45.399 --> 00:22:49.236 align:middle line:-2
+这里的这个实现绘制一个
+黄色的roundRect
+
+00:22:49.469 --> 00:22:51.538 align:middle line:-2
+绘制一些文字
+并在其上绘制一个图像
+
+00:22:53.640 --> 00:22:55.342 align:middle line:-1
+出于若干原因
+
+00:22:56.210 --> 00:22:57.344 align:middle line:-1
+我们并不推荐这种方法
+
+00:22:58.078 --> 00:23:03.417 align:middle line:-2
+我们将这个视图子类与
+UIImageView进行比较
+

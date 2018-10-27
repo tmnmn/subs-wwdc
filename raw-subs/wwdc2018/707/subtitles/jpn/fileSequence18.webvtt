@@ -1,0 +1,48 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:01.682 --> 00:18:04.551 align:start position:29% line:-1
+それぞれの状態間の移行は
+
+00:18:04.751 --> 00:18:09.523 align:start position:29% line:-2
+直接 このようなコールを
+使うだけです
+
+00:18:14.795 --> 00:18:19.833 align:start position:25% line:-2
+こうして
+集めたデータをUIに表示でき
+
+00:18:19.933 --> 00:18:22.803 align:start position:32% line:-2
+ワークアウトの状態を
+管理できます
+
+00:18:23.704 --> 00:18:27.441 align:start position:29% line:-1
+では次に 終了と保存です
+
+00:18:29.676 --> 00:18:34.147 align:start position:18% line:-2
+終了するには まず
+session.endを呼び出します
+
+00:18:34.915 --> 00:18:40.621 align:start position:4% line:-2
+builder.endCollectionも呼び出し
+終了日時を渡します
+
+00:18:41.088 --> 00:18:45.759 align:start position:21% line:-2
+これ以降 ワークアウトのデータは
+収集されません
+
+00:18:46.960 --> 00:18:49.830 align:start position:21% line:-1
+HealthKitに保存するには
+
+00:18:49.930 --> 00:18:53.634 align:start position:11% line:-2
+builder.finishWorkoutを
+呼び出します
+
+00:18:53.867 --> 00:18:58.138 align:start position:30% line:-2
+完了ハンドラに
+オブジェクトが戻ります
+
+00:18:58.238 --> 00:19:02.609 align:start position:29% line:-2
+すでに関連データとともに
+保存された状態です
+

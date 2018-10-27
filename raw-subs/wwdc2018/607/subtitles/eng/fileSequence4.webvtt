@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.526 --> 00:04:00.036 A:middle
+could automatically parallelize
+
+00:04:00.036 --> 00:04:01.346 A:middle
+for you on the GPU.
+
+00:04:02.606 --> 00:04:04.426 A:middle
+So let's set up an example of a
+
+00:04:04.466 --> 00:04:05.726 A:middle
+typical game frame.
+
+00:04:06.816 --> 00:04:08.486 A:middle
+With a classic, single-threaded
+
+00:04:08.486 --> 00:04:10.026 A:middle
+rendering, you'd [inaudible]
+
+00:04:10.156 --> 00:04:13.146 A:middle
+build GPU commands and GPU
+
+00:04:13.146 --> 00:04:14.826 A:middle
+execution order into a single
+
+00:04:14.826 --> 00:04:15.446 A:middle
+command buffer.
+
+00:04:16.446 --> 00:04:17.596 A:middle
+Typically, you're then having to
+
+00:04:17.596 --> 00:04:18.995 A:middle
+fit this into some small
+
+00:04:18.995 --> 00:04:20.266 A:middle
+fraction of your frame time.
+
+00:04:21.016 --> 00:04:22.766 A:middle
+And, of course, you're going to
+
+00:04:22.766 --> 00:04:24.486 A:middle
+have maximum latency because the
+
+00:04:24.486 --> 00:04:26.096 A:middle
+entire command buffer must be
+
+00:04:26.096 --> 00:04:28.036 A:middle
+encoded before the GPU can
+
+00:04:28.036 --> 00:04:29.086 A:middle
+consume it.
+
+00:04:29.436 --> 00:04:30.586 A:middle
+Obviously, there's a better way
+
+00:04:30.586 --> 00:04:32.366 A:middle
+to do this, so what we're going
+
+00:04:32.366 --> 00:04:34.346 A:middle
+to do is we're going to start by
+
+00:04:34.346 --> 00:04:35.976 A:middle
+building in parallelism with the
+
+00:04:36.056 --> 00:04:36.546 A:middle
+CPU.
+
+00:04:37.036 --> 00:04:41.766 A:middle
+Render and compute passes are
+
+00:04:41.766 --> 00:04:43.156 A:middle
+the basic granularity of
+
+00:04:43.156 --> 00:04:44.146 A:middle
+multithread in Metal.
+
+00:04:45.046 --> 00:04:46.376 A:middle
+All you need to do is create
+
+00:04:46.376 --> 00:04:48.616 A:middle
+multiple command buffers and
+
+00:04:48.616 --> 00:04:50.326 A:middle
+start encoding each into
+
+00:04:50.326 --> 00:04:51.536 A:middle
+separate passes on a separate
+
+00:04:51.536 --> 00:04:51.806 A:middle
+thread.
+
+00:04:52.356 --> 00:04:55.226 A:middle
+You can encode them in any order
+
+00:04:55.226 --> 00:04:55.806 A:middle
+you wish.
+
+00:04:56.236 --> 00:04:57.856 A:middle
+The final order of execution is
+
+00:04:57.856 --> 00:04:59.156 A:middle
+determined by the order they're
+
+00:04:59.156 --> 00:05:00.216 A:middle
+added to the command queue.
+

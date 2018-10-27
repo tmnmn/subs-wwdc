@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.513 --> 00:08:01.915 align:middle line:-1
+现在看起来这都是我的错
+
+00:08:02.482 --> 00:08:04.751 align:middle line:-1
+当我实现这个类时
+
+00:08:04.818 --> 00:08:08.088 align:middle line:-2
+我实现了另一个
+名为numberOfSections的委托方法
+
+00:08:08.789 --> 00:08:12.693 align:middle line:-2
+numberOfSections
+的作用是返回头部的数量
+
+00:08:12.893 --> 00:08:15.462 align:middle line:-1
+然而我在这里返回的却是食材的数量
+
+00:08:15.662 --> 00:08:17.464 align:middle line:-1
+而ingredients.count的值为8
+
+00:08:18.332 --> 00:08:20.567 align:middle line:-2
+信不信由你 我有个好方法
+可以解决这个问题
+
+00:08:21.068 --> 00:08:22.970 align:middle line:-1
+我知道我想要返回的是
+
+00:08:23.036 --> 00:08:25.572 align:middle line:-2
+此RecipeSection
+枚举中的实例数
+
+00:08:25.906 --> 00:08:28.075 align:middle line:-1
+并且在Swift 4.2中
+
+00:08:28.141 --> 00:08:31.912 align:middle line:-2
+Swift开源社区
+添加了一些新功能
+
+00:08:31.979 --> 00:08:35.315 align:middle line:-2
+非常感谢 这是一个名为
+CaseIterable的协议
+
+00:08:35.616 --> 00:08:39.486 align:middle line:-2
+若我的RecipeSection
+遵守CaseIterable
+
+00:08:40.254 --> 00:08:42.121 align:middle line:-2
+我可以重新实现
+numberOfSections函数
+
+00:08:42.188 --> 00:08:47.194 align:middle line:-2
+返回该RecipeSection
+枚举中所有实例的计数
+
+00:08:47.461 --> 00:08:51.231 align:middle line:-1
+这样我返回的值就为2
+
+00:08:51.532 --> 00:08:53.634 align:middle line:-1
+我将返回块的准确数量
+
+00:08:53.700 --> 00:08:55.202 align:middle line:-1
+这样就对了
+
+00:08:57.004 --> 00:09:00.707 align:middle line:-2
+现在如果我查看这个
+Chocolate Chip Cookies配方
+

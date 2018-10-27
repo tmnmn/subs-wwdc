@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.106 --> 00:40:01.086 A:middle
+images with a lighter color.
+
+00:40:02.336 --> 00:40:03.646 A:middle
+However, it's kind of
+
+00:40:03.646 --> 00:40:05.016 A:middle
+unfortunate that we're only
+
+00:40:05.016 --> 00:40:06.296 A:middle
+varying the fill color of these
+
+00:40:06.296 --> 00:40:07.806 A:middle
+images but keeping the same
+
+00:40:07.806 --> 00:40:08.136 A:middle
+shape.
+
+00:40:08.806 --> 00:40:10.206 A:middle
+So, there's probably a better
+
+00:40:10.206 --> 00:40:13.016 A:middle
+way, and, in Mojave, there is,
+
+00:40:13.156 --> 00:40:14.936 A:middle
+using this contentTintColor API.
+
+00:40:15.976 --> 00:40:17.826 A:middle
+With this, you can create a
+
+00:40:17.826 --> 00:40:19.566 A:middle
+template image and provide a
+
+00:40:19.566 --> 00:40:21.106 A:middle
+custom tint color to be used
+
+00:40:21.106 --> 00:40:21.946 A:middle
+instead of the default
+
+00:40:21.946 --> 00:40:22.906 A:middle
+appearance sensitive one.
+
+00:40:23.226 --> 00:40:24.666 A:middle
+That will be used as the base
+
+00:40:24.666 --> 00:40:26.476 A:middle
+fill color for any of the places
+
+00:40:26.476 --> 00:40:27.716 A:middle
+that the image appears.
+
+00:40:27.716 --> 00:40:30.416 A:middle
+So, we can set the content tint
+
+00:40:30.416 --> 00:40:32.326 A:middle
+color on an NSImageView to tint
+
+00:40:32.426 --> 00:40:34.786 A:middle
+its image or on an NSButton to
+
+00:40:34.786 --> 00:40:36.316 A:middle
+tint both its boot image and
+
+00:40:36.316 --> 00:40:36.616 A:middle
+title.
+
+00:40:37.766 --> 00:40:39.226 A:middle
+So, let's take a look at
+
+00:40:39.226 --> 00:40:40.026 A:middle
+adopting this.
+
+00:40:40.426 --> 00:40:41.486 A:middle
+The first step here is to
+
+00:40:41.486 --> 00:40:42.976 A:middle
+convert these to simple template
+
+00:40:42.976 --> 00:40:45.026 A:middle
+images and remember to set the
+
+00:40:45.026 --> 00:40:46.896 A:middle
+render mode to be the template
+
+00:40:46.896 --> 00:40:47.306 A:middle
+effect.
+
+00:40:48.496 --> 00:40:49.426 A:middle
+Taking a look at Chameleon
+
+00:40:49.426 --> 00:40:50.816 A:middle
+Wrangler now, we can see that
+
+00:40:50.816 --> 00:40:52.316 A:middle
+these images are now getting the
+
+00:40:52.316 --> 00:40:53.906 A:middle
+default templating effect, which
+
+00:40:53.906 --> 00:40:55.786 A:middle
+looks great in Dark Mode, but
+
+00:40:55.786 --> 00:40:56.896 A:middle
+the next step is going to be
+
+00:40:56.896 --> 00:40:57.926 A:middle
+applying that color.
+
+00:40:58.396 --> 00:41:00.426 A:middle
+So, we could just pull the color
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:01.376 --> 00:13:03.986 A:middle
+If you wish to enforce different
+
+00:13:03.986 --> 00:13:05.306 A:middle
+HDCP levels for different
+
+00:13:05.306 --> 00:13:06.876 A:middle
+radians, you should specify
+
+00:13:06.876 --> 00:13:08.256 A:middle
+different key identifiers for
+
+00:13:08.256 --> 00:13:09.106 A:middle
+those radians.
+
+00:13:09.426 --> 00:13:11.396 A:middle
+And provide appropriate key
+
+00:13:11.396 --> 00:13:12.836 A:middle
+responses from your key server.
+
+00:13:15.576 --> 00:13:17.576 A:middle
+Lastly, you should be careful
+
+00:13:17.576 --> 00:13:19.086 A:middle
+while responding to key loading
+
+00:13:19.086 --> 00:13:20.956 A:middle
+requests with persistent keys
+
+00:13:21.766 --> 00:13:24.036 A:middle
+because persistent keys are tied
+
+00:13:24.036 --> 00:13:24.966 A:middle
+to the device they were
+
+00:13:24.966 --> 00:13:25.836 A:middle
+generated on.
+
+00:13:26.516 --> 00:13:28.966 A:middle
+For example, you should not use
+
+00:13:29.186 --> 00:13:30.606 A:middle
+a persistent key to respond to a
+
+00:13:30.606 --> 00:13:32.546 A:middle
+key loading request from an
+
+00:13:32.546 --> 00:13:33.366 A:middle
+AirPlay session.
+
+00:13:34.866 --> 00:13:36.426 A:middle
+Doing so will result in playback
+
+00:13:36.426 --> 00:13:36.886 A:middle
+failure.
+
+00:13:38.756 --> 00:13:41.406 A:middle
+We made some API changes in iOS
+
+00:13:41.406 --> 00:13:44.126 A:middle
+11.2 to help you avoid and catch
+
+00:13:44.126 --> 00:13:45.956 A:middle
+such issues sooner, rather than
+
+00:13:45.956 --> 00:13:46.346 A:middle
+later.
+
+00:13:46.896 --> 00:13:48.316 A:middle
+Let me walk you through some
+
+00:13:48.316 --> 00:13:49.616 A:middle
+code snippets to explain.
+
+00:13:52.196 --> 00:13:53.076 A:middle
+If you are using
+
+00:13:53.076 --> 00:13:54.406 A:middle
+AVContentKeySession to deliver
+
+00:13:54.406 --> 00:13:56.926 A:middle
+keys, now you won't even be able
+
+00:13:56.926 --> 00:13:58.856 A:middle
+to RequestPersistableContentKey
+
+00:13:58.856 --> 00:14:00.636 A:middle
+request object if the
+

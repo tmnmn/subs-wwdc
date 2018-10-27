@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:56.457 --> 00:21:01.929 align:start position:29% line:-2
+UDPは本来デリバリーを
+保証しないので
+
+00:21:02.029 --> 00:21:07.000 align:start position:27% line:-2
+こちらでデータパケットを
+確実に送るかどうか決めます
+
+00:21:07.568 --> 00:21:11.905 align:start position:9% line:-2
+Multipeer Connectivityの
+リトライに
+
+00:21:12.005 --> 00:21:14.842 align:start position:32% line:-1
+任せることもできます
+
+00:21:15.742 --> 00:21:19.112 align:start position:29% line:-1
+対象が全員でも大丈夫です
+
+00:21:21.615 --> 00:21:25.919 align:start position:32% line:-2
+次にアプリケーション
+プロトコルの作成です
+
+00:21:26.420 --> 00:21:30.090 align:start position:25% line:-2
+SwiftEnumsを使えば
+簡単です
+
+00:21:30.691 --> 00:21:36.597 align:start position:27% line:-2
+各ケースにデータ構造があり
+タイプセーフを保証します
+
+00:21:37.431 --> 00:21:39.700 align:start position:32% line:-1
+具体例をご紹介します
+
+00:21:39.833 --> 00:21:43.003 align:start position:23% line:-2
+この“GameAction”が
+含む情報は
+
+00:21:43.103 --> 00:21:46.673 align:start position:30% line:-2
+ぱちんこをつかむなどの
+動きです
+
+00:21:47.107 --> 00:21:52.079 align:start position:18% line:-2
+“PhysicsSyncData”の
+エンコードについては後ほど
+
+00:21:53.580 --> 00:21:55.449 align:start position:30% line:-1
+Swiftなら簡単です
+
+00:21:55.549 --> 00:22:01.788 align:start position:20% line:-2
+全メンバーが“Codable”なら
+構造体をCodableでマークし
+

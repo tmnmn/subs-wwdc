@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.576 --> 00:31:02.266 A:middle
+And lastly, conform to the
+
+00:31:02.266 --> 00:31:03.976 A:middle
+NSSecureCoding protocol instead
+
+00:31:03.976 --> 00:31:05.536 A:middle
+to indicate to the runtime that
+
+00:31:05.536 --> 00:31:06.506 A:middle
+this is what we intended.
+
+00:31:06.506 --> 00:31:07.846 A:middle
+It really does support secure
+
+00:31:07.846 --> 00:31:08.126 A:middle
+coding.
+
+00:31:08.836 --> 00:31:11.526 A:middle
+And after that, well,
+
+00:31:12.146 --> 00:31:13.006 A:middle
+congratulations.
+
+00:31:13.006 --> 00:31:14.366 A:middle
+We've earned our NSSecureCoding
+
+00:31:14.366 --> 00:31:14.666 A:middle
+badge.
+
+00:31:15.026 --> 00:31:15.876 A:middle
+Physical badge is sold
+
+00:31:15.876 --> 00:31:16.276 A:middle
+separately.
+
+00:31:18.046 --> 00:31:20.606 A:middle
+Now, we think it's so important
+
+00:31:20.606 --> 00:31:21.856 A:middle
+for you to earn your own
+
+00:31:21.856 --> 00:31:23.276 A:middle
+NSSecureCoding badges and use
+
+00:31:23.276 --> 00:31:25.036 A:middle
+them that this year, we've added
+
+00:31:25.086 --> 00:31:26.776 A:middle
+new API and NSKeyedUnarchiver to
+
+00:31:26.776 --> 00:31:28.426 A:middle
+make sure that NSSecureCoding is
+
+00:31:28.426 --> 00:31:29.506 A:middle
+done wherever possible.
+
+00:31:31.276 --> 00:31:32.456 A:middle
+This new initializer and
+
+00:31:32.456 --> 00:31:33.936 A:middle
+convenience methods, turns on
+
+00:31:33.936 --> 00:31:35.746 A:middle
+secure coding by default and
+
+00:31:35.746 --> 00:31:37.126 A:middle
+sets the default decoding
+
+00:31:37.126 --> 00:31:38.516 A:middle
+failure policy to set error in
+
+00:31:38.516 --> 00:31:38.866 A:middle
+return.
+
+00:31:39.346 --> 00:31:40.236 A:middle
+So, unless you change the
+
+00:31:40.236 --> 00:31:41.536 A:middle
+decoding failure policy on your
+
+00:31:41.536 --> 00:31:42.576 A:middle
+own, you don't have to worry
+
+00:31:42.576 --> 00:31:43.736 A:middle
+about exceptions in Swift.
+
+00:31:43.736 --> 00:31:47.316 A:middle
+And indeed, the old initializer
+
+00:31:47.316 --> 00:31:48.776 A:middle
+and convenience methods are
+
+00:31:48.776 --> 00:31:50.186 A:middle
+deprecated in favor of these
+
+00:31:50.186 --> 00:31:50.736 A:middle
+versions.
+
+00:31:50.956 --> 00:31:51.996 A:middle
+So, we really want you to use
+
+00:31:51.996 --> 00:31:52.146 A:middle
+them.
+
+00:31:53.726 --> 00:31:55.106 A:middle
+And similarly, we've introduced
+
+00:31:55.106 --> 00:31:56.066 A:middle
+the same APIs on
+
+00:31:56.096 --> 00:31:58.066 A:middle
+NSKeyedUnarchiver, to make it
+
+00:31:58.066 --> 00:31:58.996 A:middle
+easier for you to turn
+
+00:31:58.996 --> 00:32:00.426 A:middle
+SecureCoding on when archiving.
+

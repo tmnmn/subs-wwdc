@@ -1,0 +1,85 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.453 --> 00:07:01.154 align:middle line:-1
+来处理当前这笔交易
+
+00:07:01.722 --> 00:07:03.490 align:middle line:-1
+回到我们的交易观察者
+
+00:07:03.824 --> 00:07:05.726 align:middle line:-2
+你可以使用主包中的
+appStoreReceiptURL API
+
+00:07:05.792 --> 00:07:09.062 align:middle line:-1
+来访问该二进制收据数据
+
+00:07:09.897 --> 00:07:13.100 align:middle line:-2
+一旦你获取该URL
+你就可以提取出文件系统中该处的
+
+00:07:13.166 --> 00:07:16.737 align:middle line:-2
+二进制数据 接着你可以使用
+base64Encode
+
+00:07:16.803 --> 00:07:19.339 align:middle line:-2
+取出那个receiptData
+会返回一字符串
+
+00:07:19.406 --> 00:07:21.675 align:middle line:-2
+你可以将其发送到
+你自己的服务器进行处理
+
+00:07:21.742 --> 00:07:24.311 align:middle line:-2
+你可能会调用
+currentUser上的
+
+00:07:24.378 --> 00:07:25.579 align:middle line:-1
+一些app内的网络API
+
+00:07:27.114 --> 00:07:29.383 align:middle line:-1
+当你将数据发送到服务器进行处理时
+
+00:07:29.449 --> 00:07:31.552 align:middle line:-1
+显然你首先需要安全地做到这一点
+
+00:07:31.618 --> 00:07:33.854 align:middle line:-1
+你可以将它发送到你的服务器上的
+
+00:07:33.921 --> 00:07:34.922 align:middle line:-1
+/processTransaction端点
+
+00:07:35.422 --> 00:07:37.758 align:middle line:-2
+在此端点中
+你可能包含一个参数userID
+
+00:07:37.824 --> 00:07:40.794 align:middle line:-1
+其与系统中当前用户的账户相关联
+
+00:07:41.795 --> 00:07:43.764 align:middle line:-2
+你可以将此收据数据
+发送至你的服务器
+
+00:07:43.830 --> 00:07:47.134 align:middle line:0
+然后一旦你的服务器收到它
+你就可以建立一个安全连接
+
+00:07:47.201 --> 00:07:49.570 align:middle line:0
+到App Store的
+/verifyReceipt端点
+
+00:07:50.070 --> 00:07:53.006 align:middle line:0
+然后你就可以将收据数据
+发送到App Store了
+
+00:07:53.707 --> 00:07:55.676 align:middle line:0
+在这里你可以包含一个密码字段
+
+00:07:55.742 --> 00:07:58.879 align:middle line:0
+这是你的app
+和App Store间的共享密钥
+
+00:07:58.946 --> 00:08:01.815 align:middle line:0
+你可在App Store Connect中
+对其进行设置并将其存储在你的服务器上
+

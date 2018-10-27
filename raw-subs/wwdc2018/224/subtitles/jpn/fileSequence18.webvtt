@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.513 --> 00:18:00.547 align:start position:34% line:-1
+そうしたデータには
+
+00:18:01.181 --> 00:18:04.351 align:start position:30% line:-2
+インターフェイスに
+現れてほしくありません
+
+00:18:04.451 --> 00:18:08.088 align:start position:23% line:-2
+ユーザに分からないような変更も
+困ります
+
+00:18:08.422 --> 00:18:12.326 align:start position:23% line:-2
+そこでヒストリートラッキングで
+アップデートをフィルタします
+
+00:18:12.859 --> 00:18:15.796 align:start position:16% line:-2
+永続ヒストリートラッキングは
+iOS 11とmacOS 10.13で
+
+00:18:15.896 --> 00:18:17.798 align:start position:32% line:-1
+新しく導入されました
+
+00:18:18.065 --> 00:18:22.703 align:start position:32% line:-2
+昨年のセッションでも
+ご紹介していますので
+
+00:18:22.903 --> 00:18:26.006 align:start position:27% line:-1
+基本的な特徴を知りたい方は
+
+00:18:26.106 --> 00:18:29.977 align:start position:21% line:-1
+そちらをご覧になってみてください
+
+00:18:31.879 --> 00:18:34.214 align:start position:25% line:-1
+永続ヒストリートラッキングは
+
+00:18:34.314 --> 00:18:38.552 align:start position:23% line:-2
+各トランザクションの
+永続レコードを得る上で有効です
+
+00:18:38.652 --> 00:18:41.588 align:start position:29% line:-1
+理由は いくつかあります
+
+00:18:41.688 --> 00:18:44.124 align:start position:30% line:-2
+ただ このセッションで
+考えたいのは
+
+00:18:44.591 --> 00:18:47.494 align:start position:2% line:-1
+NSPersistentHistoryChangeです
+
+00:18:47.661 --> 00:18:52.833 align:start position:11% line:-2
+これはchangedObjectIDと
+updatedPropertiesを与えます
+
+00:18:52.933 --> 00:18:55.369 align:start position:11% line:-2
+また NSPersistentHistory
+Transactionもです
+
+00:18:55.569 --> 00:18:59.439 align:start position:5% line:-2
+これはchangesと
+objectIDNotificationを与えます
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.446 --> 00:27:00.956 A:middle
+going to get your second 30%
+
+00:27:00.956 --> 00:27:03.536 A:middle
+improvement by stacking 10 3%
+
+00:27:03.536 --> 00:27:04.186 A:middle
+improvements.
+
+00:27:05.706 --> 00:27:05.976 A:middle
+Okay?
+
+00:27:07.316 --> 00:27:10.756 A:middle
+Now, I want to go back to the
+
+00:27:10.756 --> 00:27:13.516 A:middle
+slides, and show you some of the
+
+00:27:13.516 --> 00:27:14.766 A:middle
+techniques we typically use to
+
+00:27:14.766 --> 00:27:15.606 A:middle
+make those continued
+
+00:27:15.606 --> 00:27:16.126 A:middle
+improvements.
+
+00:27:21.346 --> 00:27:22.326 A:middle
+Far and away, the thing that
+
+00:27:22.326 --> 00:27:23.896 A:middle
+comes up the most frequently is
+
+00:27:23.896 --> 00:27:25.246 A:middle
+using those same techniques the
+
+00:27:25.246 --> 00:27:26.236 A:middle
+outline view was using.
+
+00:27:26.396 --> 00:27:28.276 A:middle
+Batching and deferring, right?
+
+00:27:28.276 --> 00:27:29.736 A:middle
+You have an API, and when the
+
+00:27:29.736 --> 00:27:31.526 A:middle
+API is called, it has some side
+
+00:27:31.526 --> 00:27:31.836 A:middle
+effect.
+
+00:27:32.196 --> 00:27:33.226 A:middle
+And then you have some code
+
+00:27:33.226 --> 00:27:34.426 A:middle
+calling your API in the loop.
+
+00:27:34.426 --> 00:27:35.396 A:middle
+That's what you're doing-- the
+
+00:27:35.586 --> 00:27:36.536 A:middle
+primary piece of work that is
+
+00:27:36.536 --> 00:27:37.996 A:middle
+being requested, and having a
+
+00:27:37.996 --> 00:27:38.566 A:middle
+side effect.
+
+00:27:39.206 --> 00:27:40.986 A:middle
+Well, if no one was reading the
+
+00:27:40.986 --> 00:27:42.516 A:middle
+result of the side effect, then
+
+00:27:42.516 --> 00:27:43.416 A:middle
+you're doing that work
+
+00:27:43.416 --> 00:27:44.536 A:middle
+redundantly, over and over
+
+00:27:44.536 --> 00:27:44.916 A:middle
+again.
+
+00:27:45.736 --> 00:27:47.016 A:middle
+You can often get a much more
+
+00:27:47.016 --> 00:27:48.696 A:middle
+efficient interface by using a
+
+00:27:48.696 --> 00:27:50.366 A:middle
+batch interface, where a client
+
+00:27:50.366 --> 00:27:52.376 A:middle
+gives you an array or some sort
+
+00:27:52.376 --> 00:27:53.476 A:middle
+of collection of all the work to
+
+00:27:53.476 --> 00:27:54.796 A:middle
+be done, so that you can compute
+
+00:27:54.796 --> 00:27:56.056 A:middle
+that side effect just once.
+
+00:27:57.156 --> 00:27:58.176 A:middle
+Now, sometimes you have many
+
+00:27:58.176 --> 00:27:59.526 A:middle
+clients, right?
+
+00:27:59.526 --> 00:28:00.766 A:middle
+And they can't batch across each
+

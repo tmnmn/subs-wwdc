@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.476 --> 00:33:00.596 A:middle
+And an Info.plist this is just
+
+00:33:00.596 --> 00:33:01.806 A:middle
+like for the preview extension,
+
+00:33:02.356 --> 00:33:03.856 A:middle
+the first thing you will have to
+
+00:33:03.856 --> 00:33:05.266 A:middle
+edit after creating your
+
+00:33:05.266 --> 00:33:05.796 A:middle
+extension.
+
+00:33:10.046 --> 00:33:11.296 A:middle
+As in the Info.plist of the
+
+00:33:11.296 --> 00:33:12.926 A:middle
+preview extensions the
+
+00:33:12.926 --> 00:33:14.096 A:middle
+Info.plist of the thumbnail
+
+00:33:14.096 --> 00:33:15.406 A:middle
+extensions have a
+
+00:33:15.406 --> 00:33:17.326 A:middle
+QLSupportedContentTypes array
+
+00:33:17.936 --> 00:33:19.336 A:middle
+that needs to be filled with the
+
+00:33:19.336 --> 00:33:20.766 A:middle
+content types that your
+
+00:33:20.856 --> 00:33:23.096 A:middle
+extension supports.
+
+00:33:24.096 --> 00:33:26.866 A:middle
+So make sure to include in
+
+00:33:26.866 --> 00:33:29.086 A:middle
+QLSupportedContentTypes all the
+
+00:33:29.086 --> 00:33:30.756 A:middle
+content types for which your
+
+00:33:30.756 --> 00:33:32.076 A:middle
+extension can generate
+
+00:33:32.076 --> 00:33:32.626 A:middle
+thumbnails.
+
+00:33:33.766 --> 00:33:35.646 A:middle
+After setting up your extension
+
+00:33:35.836 --> 00:33:37.466 A:middle
+you will be able to start
+
+00:33:37.466 --> 00:33:38.336 A:middle
+implementing your
+
+00:33:38.476 --> 00:33:40.206 A:middle
+QLThumbnailProvider subclass.
+
+00:33:40.596 --> 00:33:42.506 A:middle
+You have two ways to provide a
+
+00:33:42.506 --> 00:33:44.976 A:middle
+thumbnail for a file.
+
+00:33:45.116 --> 00:33:46.396 A:middle
+You can [inaudible] use it
+
+00:33:46.936 --> 00:33:49.336 A:middle
+CoreGraphics or UIKit
+
+00:33:49.336 --> 00:33:52.266 A:middle
+[inaudible] techniques or you
+
+00:33:52.266 --> 00:33:54.286 A:middle
+can return an image file URL.
+
+00:33:55.536 --> 00:33:59.296 A:middle
+You will have to override the
+
+00:33:59.296 --> 00:34:00.866 A:middle
+provideThumbnail for request
+

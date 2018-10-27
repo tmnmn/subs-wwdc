@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.716 --> 00:29:00.816 A:middle
+actions to talk about how we
+
+00:29:00.816 --> 00:29:03.726 A:middle
+apply BitStream to do this.
+
+00:29:03.866 --> 00:29:05.886 A:middle
+For regular codable, if you're
+
+00:29:05.886 --> 00:29:07.636 A:middle
+doing your own serialization,
+
+00:29:07.636 --> 00:29:09.606 A:middle
+you specify encoding keys for
+
+00:29:09.606 --> 00:29:10.896 A:middle
+enums for the different cases in
+
+00:29:10.896 --> 00:29:11.246 A:middle
+the enum.
+
+00:29:12.106 --> 00:29:13.766 A:middle
+For BitStream, we used integer
+
+00:29:13.766 --> 00:29:15.496 A:middle
+values for this rather than
+
+00:29:15.706 --> 00:29:16.746 A:middle
+string values.
+
+00:29:17.296 --> 00:29:19.926 A:middle
+And then in our encoding method,
+
+00:29:20.426 --> 00:29:22.486 A:middle
+we're able to then append that
+
+00:29:22.486 --> 00:29:24.326 A:middle
+value first followed by the data
+
+00:29:24.326 --> 00:29:26.346 A:middle
+structure associated with that
+
+00:29:26.536 --> 00:29:27.426 A:middle
+case of the enum.
+
+00:29:27.916 --> 00:29:29.416 A:middle
+Now, if you look at this code
+
+00:29:29.416 --> 00:29:30.706 A:middle
+though, there's kind of a pit
+
+00:29:30.706 --> 00:29:31.096 A:middle
+fall here.
+
+00:29:31.836 --> 00:29:33.646 A:middle
+We know that this one has, this
+
+00:29:33.766 --> 00:29:36.466 A:middle
+case has three different cases.
+
+00:29:37.256 --> 00:29:38.746 A:middle
+And so we only need two bits to
+
+00:29:38.746 --> 00:29:39.766 A:middle
+encode it.
+
+00:29:40.376 --> 00:29:42.326 A:middle
+But what happens when we add
+
+00:29:42.506 --> 00:29:44.236 A:middle
+another case, 4 bits with 4
+
+00:29:44.236 --> 00:29:45.366 A:middle
+cases, we'll still find.
+
+00:29:45.806 --> 00:29:47.506 A:middle
+We add that fifth case and now
+
+00:29:47.506 --> 00:29:49.676 A:middle
+we need to go through and change
+
+00:29:49.676 --> 00:29:51.416 A:middle
+that so that every time we do
+
+00:29:51.416 --> 00:29:52.716 A:middle
+this, we're using three bits
+
+00:29:52.716 --> 00:29:53.336 A:middle
+instead of two.
+
+00:29:54.086 --> 00:29:55.486 A:middle
+Now, that's kind of tedious.
+
+00:29:55.486 --> 00:29:56.266 A:middle
+This code's a little bit
+
+00:29:56.266 --> 00:29:58.286 A:middle
+repetitive and, you know,
+
+00:29:58.416 --> 00:29:59.366 A:middle
+there's stuff that could go
+
+00:29:59.366 --> 00:29:59.726 A:middle
+wrong there.
+
+00:29:59.726 --> 00:30:00.996 A:middle
+We really, if we don't remember
+

@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.876 --> 00:24:00.246 A:middle
+First, of course, we have to get
+
+00:24:00.306 --> 00:24:02.186 A:middle
+the image from the camera, and
+
+00:24:03.476 --> 00:24:05.836 A:middle
+then we want to use vImage to
+
+00:24:05.836 --> 00:24:08.746 A:middle
+process, to apply the effect, so
+
+00:24:08.746 --> 00:24:10.436 A:middle
+we have to prepare the input and
+
+00:24:10.436 --> 00:24:12.036 A:middle
+output buffer for vImage.
+
+00:24:13.456 --> 00:24:15.576 A:middle
+Then we actually calling vImage
+
+00:24:15.576 --> 00:24:16.756 A:middle
+functions to apply these
+
+00:24:16.756 --> 00:24:19.936 A:middle
+effects, and we display the
+
+00:24:19.936 --> 00:24:21.186 A:middle
+output to the screen.
+
+00:24:22.046 --> 00:24:25.286 A:middle
+Let me jump ahead and talk about
+
+00:24:25.286 --> 00:24:27.006 A:middle
+how do we apply effects using
+
+00:24:27.006 --> 00:24:27.956 A:middle
+vImage functions.
+
+00:24:29.076 --> 00:24:32.096 A:middle
+The effect I show you is a color
+
+00:24:32.096 --> 00:24:34.306 A:middle
+saturation effect, and here is
+
+00:24:34.306 --> 00:24:35.966 A:middle
+the formula to do color
+
+00:24:35.966 --> 00:24:36.616 A:middle
+saturation.
+
+00:24:37.426 --> 00:24:38.886 A:middle
+Basically, we want to remove the
+
+00:24:38.886 --> 00:24:41.886 A:middle
+bias from the pixel, and using
+
+00:24:41.886 --> 00:24:43.376 A:middle
+multiplication to apply the
+
+00:24:43.376 --> 00:24:46.746 A:middle
+saturation effects, and then we
+
+00:24:46.746 --> 00:24:48.326 A:middle
+put the bias back to the pixel.
+
+00:24:49.686 --> 00:24:51.786 A:middle
+VImage has exactly the function
+
+00:24:51.786 --> 00:24:54.116 A:middle
+to do this operation, which is
+
+00:24:54.496 --> 00:24:55.956 A:middle
+vImage matrix multiply.
+
+00:24:58.246 --> 00:25:00.206 A:middle
+VImage matrix multiply takes the
+

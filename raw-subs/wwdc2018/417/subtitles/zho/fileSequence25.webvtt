@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.933 --> 00:25:03.070 align:middle line:-2
+来回转换到
+CLLocationManagerDelegate
+
+00:25:03.570 --> 00:25:06.240 align:middle line:-2
+稍后我会解释为什么
+我在这里使用强制转换
+
+00:25:08.242 --> 00:25:09.810 align:middle line:-1
+然后在我的类的初始化器中
+
+00:25:09.877 --> 00:25:12.913 align:middle line:-2
+我需要用locationFetcher
+Delegate替换委托属性
+
+00:25:14.915 --> 00:25:17.818 align:middle line:-1
+最后一步是修改原来的扩展
+
+00:25:17.885 --> 00:25:21.655 align:middle line:-2
+以符合新的模拟委托协议
+这部分很容易
+
+00:25:21.722 --> 00:25:25.726 align:middle line:-1
+我需要做的就是替换协议和方法签名
+
+00:25:26.560 --> 00:25:28.629 align:middle line:-1
+但是 我实际上仍然需要遵守旧的
+
+00:25:28.695 --> 00:25:31.965 align:middle line:-2
+CLLocationManagerDelegate
+协议
+
+00:25:32.499 --> 00:25:34.601 align:middle line:-2
+这是因为真正的
+CLLocationManager
+
+00:25:34.668 --> 00:25:37.004 align:middle line:-1
+不知道我的模拟委托协议
+
+00:25:38.272 --> 00:25:40.841 align:middle line:-2
+因此这里的诀窍是
+将符合实际委托协议的
+
+00:25:40.908 --> 00:25:43.076 align:middle line:-1
+扩展添加回来
+
+00:25:43.143 --> 00:25:46.580 align:middle line:-2
+但让它调用上面等效的
+locationFetcher委托方法
+
+00:25:47.981 --> 00:25:50.284 align:middle line:-1
+前面我提到我在委托
+
+00:25:50.350 --> 00:25:51.885 align:middle line:-2
+getter和setter中
+使用了强制转换
+
+00:25:52.419 --> 00:25:55.455 align:middle line:-1
+这是为了确保我的类符合这两种协议
+
+00:25:55.522 --> 00:25:57.824 align:middle line:-1
+我没有忘记其中的一种或另一种
+

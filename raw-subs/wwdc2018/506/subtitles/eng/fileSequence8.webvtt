@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.746 --> 00:08:01.736 A:middle
+that let you show the progress
+
+00:08:01.736 --> 00:08:02.746 A:middle
+through the track that's
+
+00:08:02.746 --> 00:08:04.566 A:middle
+currently playing -- the
+
+00:08:04.566 --> 00:08:05.926 A:middle
+playback duration, the playback
+
+00:08:05.926 --> 00:08:07.166 A:middle
+time, and the playback progress.
+
+00:08:07.656 --> 00:08:10.376 A:middle
+So I'd like to bring up Jae Hess
+
+00:08:10.376 --> 00:08:12.166 A:middle
+to the stage to show you how to
+
+00:08:12.166 --> 00:08:13.866 A:middle
+use the MusicKit JS to build
+
+00:08:13.866 --> 00:08:15.196 A:middle
+that simple player that we just
+
+00:08:15.796 --> 00:08:16.856 A:middle
+talked about.
+
+00:08:17.516 --> 00:08:20.016 A:middle
+[ Applause ]
+
+00:08:20.516 --> 00:08:21.056 A:middle
+&gt;&gt; Thanks, DJ.
+
+00:08:22.806 --> 00:08:24.556 A:middle
+So we're going to get started
+
+00:08:24.556 --> 00:08:27.586 A:middle
+here, and I have a basic HTML
+
+00:08:27.586 --> 00:08:29.106 A:middle
+template on the right side in
+
+00:08:29.156 --> 00:08:30.746 A:middle
+Xcode that's already linked to
+
+00:08:30.746 --> 00:08:32.196 A:middle
+the MusicKit JS library.
+
+00:08:32.466 --> 00:08:34.586 A:middle
+And on the left side, I have a
+
+00:08:34.586 --> 00:08:35.966 A:middle
+Safari window open that's
+
+00:08:35.966 --> 00:08:37.405 A:middle
+running a live reload server.
+
+00:08:37.616 --> 00:08:38.956 A:middle
+This way, any changes I make to
+
+00:08:38.956 --> 00:08:40.486 A:middle
+my markup will be reflected
+
+00:08:40.486 --> 00:08:42.196 A:middle
+directly on the left-hand side.
+
+00:08:42.756 --> 00:08:45.996 A:middle
+To get started with MusicKit JS,
+
+00:08:45.996 --> 00:08:47.626 A:middle
+the first thing we need to do is
+
+00:08:47.626 --> 00:08:49.046 A:middle
+configure it for our use.
+
+00:08:49.426 --> 00:08:51.076 A:middle
+And with declarative markup, we
+
+00:08:51.076 --> 00:08:52.026 A:middle
+have a very simple way to do
+
+00:08:52.026 --> 00:08:53.296 A:middle
+that using meta tags.
+
+00:08:53.816 --> 00:08:58.266 A:middle
+We can specify our application
+
+00:08:58.266 --> 00:09:00.136 A:middle
+name as well as provide our
+

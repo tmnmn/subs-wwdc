@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:57.636 --> 00:30:00.076 A:middle
+packages, and disk images don't
+
+00:30:00.076 --> 00:30:01.446 A:middle
+contain any malicious software,
+
+00:30:02.006 --> 00:30:03.316 A:middle
+the notary service will issue a
+
+00:30:03.316 --> 00:30:05.346 A:middle
+notarization ticket back to your
+
+00:30:05.346 --> 00:30:05.946 A:middle
+application.
+
+00:30:07.036 --> 00:30:08.636 A:middle
+That ticket can be stapled and
+
+00:30:08.636 --> 00:30:09.916 A:middle
+then distributed alongside your
+
+00:30:09.916 --> 00:30:10.516 A:middle
+application.
+
+00:30:10.816 --> 00:30:12.076 A:middle
+And when Gatekeeper launches a
+
+00:30:12.076 --> 00:30:13.176 A:middle
+notarized app for the first
+
+00:30:13.176 --> 00:30:14.776 A:middle
+time, it can verify the
+
+00:30:14.776 --> 00:30:16.376 A:middle
+notarization and provide a new
+
+00:30:16.376 --> 00:30:17.446 A:middle
+first-launch experience.
+
+00:30:18.106 --> 00:30:20.816 A:middle
+Now your development workflow
+
+00:30:20.816 --> 00:30:22.386 A:middle
+prior to distribution is
+
+00:30:22.386 --> 00:30:22.976 A:middle
+completely unchanged.
+
+00:30:27.586 --> 00:30:28.466 A:middle
+Now you may have heard, in the
+
+00:30:28.466 --> 00:30:29.636 A:middle
+State of the Union, that this
+
+00:30:29.636 --> 00:30:30.966 A:middle
+process will be required in the
+
+00:30:30.966 --> 00:30:31.356 A:middle
+future.
+
+00:30:31.826 --> 00:30:33.596 A:middle
+And while that's true, for now
+
+00:30:33.866 --> 00:30:35.096 A:middle
+notarization is completely
+
+00:30:35.096 --> 00:30:36.246 A:middle
+optional while we roll the
+
+00:30:36.246 --> 00:30:37.466 A:middle
+service out and listen to
+
+00:30:37.466 --> 00:30:37.886 A:middle
+feedback.
+
+00:30:40.256 --> 00:30:41.776 A:middle
+Before we move on, I want to
+
+00:30:41.776 --> 00:30:43.386 A:middle
+make one important point.
+
+00:30:43.976 --> 00:30:45.586 A:middle
+This is not an app review.
+
+00:30:46.486 --> 00:30:47.846 A:middle
+The notary service is simply
+
+00:30:47.846 --> 00:30:49.126 A:middle
+performing a set of security
+
+00:30:49.126 --> 00:30:50.586 A:middle
+checks to ensure that your
+
+00:30:50.586 --> 00:30:51.826 A:middle
+content can be distributed
+
+00:30:51.826 --> 00:30:52.346 A:middle
+safely.
+
+00:30:52.926 --> 00:30:56.416 A:middle
+So what does this actually look
+
+00:30:56.416 --> 00:30:57.196 A:middle
+like for your development
+
+00:30:57.196 --> 00:30:57.536 A:middle
+workflow?
+
+00:30:58.406 --> 00:30:59.686 A:middle
+Well here's a high level and
+
+00:30:59.686 --> 00:31:01.176 A:middle
+simplified overview of the
+

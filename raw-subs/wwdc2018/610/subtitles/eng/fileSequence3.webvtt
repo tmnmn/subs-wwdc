@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:56.786 --> 00:03:00.556 A:middle
+So, the first thing you'll do is
+
+00:03:00.556 --> 00:03:01.826 A:middle
+create an ARSession.
+
+00:03:02.496 --> 00:03:04.576 A:middle
+An ARSession is the object that
+
+00:03:04.576 --> 00:03:06.946 A:middle
+handles everything from
+
+00:03:06.946 --> 00:03:09.686 A:middle
+configuring to running the AR
+
+00:03:09.686 --> 00:03:11.226 A:middle
+technologies.
+
+00:03:11.476 --> 00:03:14.226 A:middle
+And also, returning the results
+
+00:03:14.226 --> 00:03:15.696 A:middle
+of the AR technologies.
+
+00:03:16.196 --> 00:03:19.406 A:middle
+You then, have to describe what
+
+00:03:19.496 --> 00:03:20.796 A:middle
+kind of technologies you
+
+00:03:20.856 --> 00:03:21.866 A:middle
+actually want to run.
+
+00:03:22.266 --> 00:03:23.256 A:middle
+Like, what kind of tracking
+
+00:03:23.256 --> 00:03:25.136 A:middle
+technologies and what kind of
+
+00:03:25.136 --> 00:03:26.376 A:middle
+features should be enabled, like
+
+00:03:26.436 --> 00:03:28.096 A:middle
+Plane Detection, for example.
+
+00:03:28.966 --> 00:03:32.506 A:middle
+You'll then, take this specific
+
+00:03:32.506 --> 00:03:35.406 A:middle
+ARConfiguration and call run
+
+00:03:36.256 --> 00:03:39.476 A:middle
+method on your instance of the
+
+00:03:39.476 --> 00:03:40.116 A:middle
+ARSession.
+
+00:03:41.576 --> 00:03:43.206 A:middle
+Then, the ARSession, internally,
+
+00:03:44.306 --> 00:03:47.336 A:middle
+will start configuring an
+
+00:03:47.336 --> 00:03:49.596 A:middle
+AVCaptureSession to start
+
+00:03:50.096 --> 00:03:52.716 A:middle
+receiving the images, as well as
+
+00:03:52.716 --> 00:03:55.096 A:middle
+a call motion manager to begin
+
+00:03:55.096 --> 00:03:56.816 A:middle
+receiving the motion sensor, so,
+
+00:03:57.326 --> 00:03:57.616 A:middle
+data.
+
+00:03:57.616 --> 00:03:58.626 A:middle
+So, this is, basically, the
+
+00:03:58.626 --> 00:04:01.496 A:middle
+built-in input system from your
+

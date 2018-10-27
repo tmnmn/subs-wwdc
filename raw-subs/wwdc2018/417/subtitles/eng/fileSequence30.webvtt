@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:01.046 --> 00:30:02.486 A:middle
+Now, this isn't great, and it
+
+00:30:02.486 --> 00:30:03.876 A:middle
+takes a really long time to run.
+
+00:30:05.026 --> 00:30:06.396 A:middle
+To mitigate this, we could
+
+00:30:06.396 --> 00:30:08.386 A:middle
+expose a property in our code to
+
+00:30:08.386 --> 00:30:09.736 A:middle
+allow us to customize that
+
+00:30:09.736 --> 00:30:10.976 A:middle
+timeout to something shorter,
+
+00:30:10.976 --> 00:30:12.056 A:middle
+like 1 second.
+
+00:30:12.976 --> 00:30:14.476 A:middle
+And here's what that kind of a
+
+00:30:14.476 --> 00:30:16.000 A:middle
+code change might look like.
+
+00:30:20.136 --> 00:30:22.026 A:middle
+Now, with this approach, we can
+
+00:30:22.026 --> 00:30:23.456 A:middle
+reduce the delay in our tests
+
+00:30:23.456 --> 00:30:24.326 A:middle
+down to one second.
+
+00:30:25.406 --> 00:30:26.566 A:middle
+Now, this solution is better
+
+00:30:26.566 --> 00:30:27.566 A:middle
+than the one we had before.
+
+00:30:27.876 --> 00:30:29.166 A:middle
+Our tests will definitely run
+
+00:30:29.166 --> 00:30:31.196 A:middle
+faster, but it still isn't
+
+00:30:31.196 --> 00:30:31.686 A:middle
+ideal.
+
+00:30:32.396 --> 00:30:34.216 A:middle
+Our code still has a delay, it's
+
+00:30:34.216 --> 00:30:34.726 A:middle
+just shorter.
+
+00:30:35.716 --> 00:30:36.996 A:middle
+And the real problem is that the
+
+00:30:36.996 --> 00:30:38.276 A:middle
+code we're testing is still
+
+00:30:38.346 --> 00:30:40.236 A:middle
+timing dependent, which means
+
+00:30:40.236 --> 00:30:41.576 A:middle
+that, as we make the expected
+
+00:30:41.576 --> 00:30:43.316 A:middle
+delay shorter and shorter, our
+
+00:30:43.316 --> 00:30:44.926 A:middle
+tests may become less reliable,
+
+00:30:45.376 --> 00:30:46.356 A:middle
+since they'll be more dependent
+
+00:30:46.356 --> 00:30:47.816 A:middle
+on the CPU to schedule things
+
+00:30:47.816 --> 00:30:48.376 A:middle
+predictably.
+
+00:30:48.556 --> 00:30:50.006 A:middle
+And that's not always going to
+
+00:30:50.006 --> 00:30:50.776 A:middle
+be true, especially for
+
+00:30:50.776 --> 00:30:51.686 A:middle
+asynchronous code.
+
+00:30:52.896 --> 00:30:53.866 A:middle
+So, let's take a look at a
+
+00:30:53.866 --> 00:30:54.606 A:middle
+better approach.
+
+00:30:56.296 --> 00:30:58.466 A:middle
+I recommend first identifying
+
+00:30:58.556 --> 00:30:59.606 A:middle
+the delay mechanism.
+

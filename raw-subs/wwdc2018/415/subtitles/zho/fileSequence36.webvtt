@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:00.227 --> 00:36:02.896 align:middle line:-2
+比如 UIKit
+是Objective-C语言
+
+00:36:06.633 --> 00:36:10.204 align:middle line:0
+Swift与其他语言不一样
+
+00:36:10.270 --> 00:36:14.408 align:middle line:0
+它不需要外部功能接口
+
+00:36:15.809 --> 00:36:17.611 align:middle line:-2
+这里你一般要
+比如
+
+00:36:17.678 --> 00:36:21.915 align:middle line:-2
+编写Swift声明给每个
+Objective-C API
+
+00:36:22.983 --> 00:36:23.817 align:middle line:-1
+但是
+
+00:36:23.884 --> 00:36:28.055 align:middle line:-2
+编译器内置了
+Clang的一大部分
+
+00:36:28.121 --> 00:36:29.756 align:middle line:-1
+用作库
+
+00:36:30.490 --> 00:36:34.361 align:middle line:-2
+这就可以直接导入
+Objective-C框架
+
+00:36:37.164 --> 00:36:39.533 align:middle line:-2
+Objective-C声明
+来自哪里？
+
+00:36:40.300 --> 00:36:44.071 align:middle line:-2
+导入器会查看头文件
+根据目标类型
+
+00:36:45.806 --> 00:36:49.076 align:middle line:-2
+任何目标在导入
+Objective-C框架时
+
+00:36:49.943 --> 00:36:52.412 align:middle line:-2
+导入器在头文件中
+找到声明
+
+00:36:52.479 --> 00:36:55.449 align:middle line:-2
+显示的是
+Clang对此框架的模块映射
+
+00:36:56.950 --> 00:36:59.953 align:middle line:-2
+用Swift和Objective-C
+代码混编的框架
+

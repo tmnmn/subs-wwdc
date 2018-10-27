@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.486 --> 00:06:01.716 A:middle
+overlaps, where it extends
+
+00:06:01.716 --> 00:06:03.146 A:middle
+outside of the safe area of its
+
+00:06:03.206 --> 00:06:03.566 A:middle
+parent.
+
+00:06:04.276 --> 00:06:05.366 A:middle
+And as we move closer to the
+
+00:06:05.366 --> 00:06:07.036 A:middle
+edge there, it continues to
+
+00:06:07.036 --> 00:06:07.446 A:middle
+extend.
+
+00:06:08.666 --> 00:06:09.556 A:middle
+Now what might you expect to
+
+00:06:09.556 --> 00:06:10.816 A:middle
+happen if we move this view
+
+00:06:10.816 --> 00:06:12.186 A:middle
+further off the bottom edge of
+
+00:06:12.186 --> 00:06:12.676 A:middle
+its parent?
+
+00:06:14.636 --> 00:06:16.506 A:middle
+Well, how about that?
+
+00:06:16.506 --> 00:06:18.246 A:middle
+The safe area did not grow any
+
+00:06:18.246 --> 00:06:19.796 A:middle
+further as the view moved
+
+00:06:19.796 --> 00:06:20.776 A:middle
+outside of its parent.
+
+00:06:21.676 --> 00:06:23.426 A:middle
+No matter how far outside of the
+
+00:06:23.426 --> 00:06:24.986 A:middle
+parent that view might go.
+
+00:06:24.986 --> 00:06:26.506 A:middle
+And you might be asking
+
+00:06:26.506 --> 00:06:28.066 A:middle
+yourself, "Why would that, why
+
+00:06:28.066 --> 00:06:28.746 A:middle
+would we do that?
+
+00:06:29.006 --> 00:06:29.946 A:middle
+What's the purpose here?"
+
+00:06:30.906 --> 00:06:32.526 A:middle
+And the answer is animation.
+
+00:06:33.266 --> 00:06:34.546 A:middle
+In this particular case, we're
+
+00:06:34.546 --> 00:06:35.836 A:middle
+moving this subview out of its
+
+00:06:35.886 --> 00:06:36.306 A:middle
+parent.
+
+00:06:36.886 --> 00:06:38.156 A:middle
+We wouldn't want the content to
+
+00:06:38.156 --> 00:06:39.516 A:middle
+stay inside of the safe area
+
+00:06:39.786 --> 00:06:40.746 A:middle
+because then it wouldn't move
+
+00:06:40.846 --> 00:06:41.706 A:middle
+with its own parent.
+
+00:06:42.466 --> 00:06:44.036 A:middle
+And as an example, we can see
+
+00:06:44.036 --> 00:06:44.496 A:middle
+this app.
+
+00:06:45.156 --> 00:06:47.286 A:middle
+Where we're going to pull up a
+
+00:06:47.286 --> 00:06:48.256 A:middle
+view on the bottom.
+
+00:06:49.596 --> 00:06:50.986 A:middle
+If that view had been laid out
+
+00:06:50.986 --> 00:06:51.956 A:middle
+against the safe area of the
+
+00:06:51.956 --> 00:06:54.046 A:middle
+parent, or its parent, and that
+
+00:06:54.046 --> 00:06:56.156 A:middle
+parent's safe area would extend
+
+00:06:56.386 --> 00:06:57.366 A:middle
+the farther it grew off the
+
+00:06:57.366 --> 00:06:59.576 A:middle
+bottom of the screen, then this
+
+00:06:59.576 --> 00:07:02.516 A:middle
+area would have stayed on screen
+

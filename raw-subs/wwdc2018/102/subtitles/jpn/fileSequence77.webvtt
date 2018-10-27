@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+01:16:55.249 --> 01:17:00.187 align:start position:29% line:-2
+光源から出た光線は
+物体に当たって跳ね返り―
+
+01:17:00.287 --> 01:17:04.091 align:start position:34% line:-2
+スクリーンを通って
+目に届きます
+
+01:17:04.191 --> 01:17:09.096 align:start position:29% line:-2
+より高い解像度を目指すと
+もっともっと…
+
+01:17:09.196 --> 01:17:11.632 align:start position:32% line:-1
+もっと光線が必要です
+
+01:17:12.933 --> 01:17:15.836 align:start position:27% line:-1
+求めてる解像度になりました
+
+01:17:15.969 --> 01:17:20.207 align:start position:25% line:-2
+単純な１KBの画像に
+約600万の光線が使われます
+
+01:17:20.741 --> 01:17:25.946 align:start position:29% line:-2
+各光線の生成に最低２つの
+計算を要しています
+
+01:17:26.046 --> 01:17:30.317 align:start position:30% line:-2
+最初に光線が交差する
+特定の三角形を決めて―
+
+01:17:30.417 --> 01:17:35.556 align:start position:27% line:-2
+素材を特定したシェーダーを
+ピクセルに適用させます
+
+01:17:36.156 --> 01:17:39.994 align:start position:30% line:-2
+本来 CPUで
+実行されていましたが―
+
+01:17:40.094 --> 01:17:43.030 align:start position:30% line:-2
+GPUでも
+シェーディングできます
+
+01:17:43.130 --> 01:17:47.167 align:start position:29% line:-2
+光線と三角形の交点が
+CPUのボトルネックで―
+
+01:17:47.268 --> 01:17:50.804 align:start position:30% line:-2
+GPUに効率的に
+移行するのが困難でした
+
+01:17:51.472 --> 01:17:55.075 align:start position:18% line:-2
+Metal Ray-Triangle
+Intersectorが解決します
+
+01:17:55.175 --> 01:17:59.613 align:start position:23% line:-2
+新しいAPIでパフォーマンスが
+最大10倍になったのです
+
+01:17:59.747 --> 01:18:05.819 align:start position:25% line:-2
+iOSとmacOSのGPUに
+最適化されています
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.256 --> 00:21:01.206 A:middle
+ReplayKit provides API function
+
+00:21:01.206 --> 00:21:03.386 A:middle
+called broadcastAnnotatedWith
+
+00:21:03.386 --> 00:21:05.616 A:middle
+ApplicationInfo, and as soon as
+
+00:21:05.616 --> 00:21:08.866 A:middle
+a player starts his game Angry
+
+00:21:08.866 --> 00:21:10.256 A:middle
+Birds sends this example,
+
+00:21:10.926 --> 00:21:12.266 A:middle
+ReplayKit notifies your
+
+00:21:12.266 --> 00:21:14.516 A:middle
+extension that that has happened
+
+00:21:14.846 --> 00:21:16.286 A:middle
+and provides a dictionary with
+
+00:21:16.286 --> 00:21:17.676 A:middle
+details about the app that was
+
+00:21:17.676 --> 00:21:17.996 A:middle
+started.
+
+00:21:18.416 --> 00:21:23.556 A:middle
+And as an example, you can use
+
+00:21:23.556 --> 00:21:25.306 A:middle
+the key defined by ReplayKit
+
+00:21:25.356 --> 00:21:28.366 A:middle
+called RPApplicationInfoBundle
+
+00:21:28.366 --> 00:21:31.146 A:middle
+IdentifierKey and get the bundle
+
+00:21:31.146 --> 00:21:32.936 A:middle
+ID of that game and pass it as a
+
+00:21:32.936 --> 00:21:34.476 A:middle
+metadata to your stream.
+
+00:21:39.976 --> 00:21:41.316 A:middle
+When the user stops the
+
+00:21:41.316 --> 00:21:43.156 A:middle
+broadcast, one way or another,
+
+00:21:44.296 --> 00:21:45.616 A:middle
+ReplayKit is using function
+
+00:21:45.616 --> 00:21:47.936 A:middle
+called broadcastFinished to
+
+00:21:47.936 --> 00:21:49.296 A:middle
+communicate to your extension
+
+00:21:49.296 --> 00:21:50.736 A:middle
+that broadcast session is over
+
+00:21:50.736 --> 00:21:51.676 A:middle
+and there will be no more
+
+00:21:51.676 --> 00:21:53.756 A:middle
+samples delivered to the
+
+00:21:53.756 --> 00:21:54.486 A:middle
+SampleHandler.
+
+00:21:54.486 --> 00:21:57.086 A:middle
+And in this function you would
+
+00:21:57.086 --> 00:21:59.016 A:middle
+probably like to finish
+
+00:21:59.016 --> 00:22:00.986 A:middle
+uploading your buffered video
+

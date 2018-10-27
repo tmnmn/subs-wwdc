@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.616 --> 00:40:02.036 A:middle
+I go ahead and I look at my full
+
+00:40:02.136 --> 00:40:05.956 A:middle
+list of CG image VM regions and
+
+00:40:05.956 --> 00:40:09.066 A:middle
+I collect, I grab the second one
+
+00:40:09.066 --> 00:40:10.156 A:middle
+from the bottom, the next one
+
+00:40:10.156 --> 00:40:11.916 A:middle
+up, and let's look at the
+
+00:40:11.916 --> 00:40:13.176 A:middle
+backtrace for that one.
+
+00:40:15.146 --> 00:40:16.686 A:middle
+And it turns out it's the same
+
+00:40:16.686 --> 00:40:17.326 A:middle
+backtrace.
+
+00:40:17.526 --> 00:40:18.896 A:middle
+So the same code path is
+
+00:40:18.896 --> 00:40:20.056 A:middle
+responsible for that region as
+
+00:40:20.056 --> 00:40:20.496 A:middle
+well.
+
+00:40:20.966 --> 00:40:23.486 A:middle
+And in fact, looking at several
+
+00:40:23.486 --> 00:40:24.976 A:middle
+of those regions, it actually
+
+00:40:24.976 --> 00:40:26.276 A:middle
+uses the same backtrace.
+
+00:40:26.766 --> 00:40:27.886 A:middle
+So now, I have a really good
+
+00:40:27.886 --> 00:40:30.086 A:middle
+idea of what in my application
+
+00:40:30.086 --> 00:40:32.326 A:middle
+is responsible for creating
+
+00:40:32.326 --> 00:40:33.636 A:middle
+these VM regions that are using
+
+00:40:33.636 --> 00:40:34.896 A:middle
+up a whole bunch of the memory
+
+00:40:34.896 --> 00:40:35.776 A:middle
+in my application.
+
+00:40:36.706 --> 00:40:37.836 A:middle
+So what can we do about it?
+
+00:40:38.636 --> 00:40:40.186 A:middle
+Well, let's go back to Xcode,
+
+00:40:40.186 --> 00:40:41.266 A:middle
+and I can go ahead and close the
+
+00:40:41.266 --> 00:40:42.276 A:middle
+Memgraph file.
+
+00:40:43.396 --> 00:40:46.196 A:middle
+And the first thing I want to do
+
+00:40:46.196 --> 00:40:47.386 A:middle
+is let's take a look at the code
+
+00:40:47.386 --> 00:40:47.626 A:middle
+here.
+
+00:40:48.406 --> 00:40:52.536 A:middle
+If I look at my filter, I can
+
+00:40:52.536 --> 00:40:54.436 A:middle
+see right here is the apply
+
+00:40:54.436 --> 00:40:55.926 A:middle
+function, and I can actually see
+
+00:40:55.926 --> 00:40:57.026 A:middle
+right away something jumps out
+
+00:40:57.026 --> 00:40:58.776 A:middle
+at me, which is I'm using the
+
+00:40:58.776 --> 00:41:00.746 A:middle
+UIGraphicsBegin ImageContext
+

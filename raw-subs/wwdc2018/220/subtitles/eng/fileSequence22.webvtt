@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.856 --> 00:22:01.186 A:middle
+So there are some other things
+
+00:22:01.186 --> 00:22:01.546 A:middle
+you can do.
+
+00:22:02.676 --> 00:22:04.046 A:middle
+And let's discuss.
+
+00:22:04.626 --> 00:22:05.946 A:middle
+So you can say that some
+
+00:22:05.946 --> 00:22:07.186 A:middle
+particular view should be at
+
+00:22:07.186 --> 00:22:08.346 A:middle
+least 100 points wide.
+
+00:22:08.466 --> 00:22:09.366 A:middle
+You can use inequalities.
+
+00:22:10.106 --> 00:22:10.806 A:middle
+What does that cost?
+
+00:22:11.736 --> 00:22:12.816 A:middle
+Very, very, very little.
+
+00:22:13.006 --> 00:22:13.876 A:middle
+Compared to just saying it's
+
+00:22:13.876 --> 00:22:15.736 A:middle
+equal to hundred points wide.
+
+00:22:15.736 --> 00:22:17.346 A:middle
+Since we went internals a little
+
+00:22:17.656 --> 00:22:19.166 A:middle
+bit, it's going to coast exactly
+
+00:22:19.166 --> 00:22:19.966 A:middle
+one more variable.
+
+00:22:20.236 --> 00:22:20.636 A:middle
+That's it.
+
+00:22:21.156 --> 00:22:23.936 A:middle
+You can also call set constant.
+
+00:22:24.436 --> 00:22:26.066 A:middle
+The example use case for this is
+
+00:22:26.066 --> 00:22:27.926 A:middle
+something like I have a gesture
+
+00:22:27.926 --> 00:22:29.206 A:middle
+recognizer and I'm kind of
+
+00:22:29.266 --> 00:22:31.396 A:middle
+trying to drag a view around and
+
+00:22:31.396 --> 00:22:32.676 A:middle
+what I'm going to do is every
+
+00:22:32.676 --> 00:22:34.976 A:middle
+time I receive a call from the
+
+00:22:34.976 --> 00:22:36.196 A:middle
+gesture recognizer I'm going to
+
+00:22:36.196 --> 00:22:38.416 A:middle
+take its translation and I'm
+
+00:22:38.416 --> 00:22:39.296 A:middle
+going to pump it into a
+
+00:22:39.296 --> 00:22:41.006 A:middle
+constraint by calling set
+
+00:22:41.006 --> 00:22:43.866 A:middle
+constant on that constraint with
+
+00:22:44.626 --> 00:22:45.896 A:middle
+that translation value.
+
+00:22:46.616 --> 00:22:48.966 A:middle
+OK, what that's going to do is
+
+00:22:48.966 --> 00:22:50.616 A:middle
+we talked about how the engine
+
+00:22:50.616 --> 00:22:51.786 A:middle
+is a dependency tracker.
+
+00:22:52.346 --> 00:22:53.976 A:middle
+This exploits that to the
+
+00:22:53.976 --> 00:22:55.016 A:middle
+maximal degree.
+
+00:22:55.656 --> 00:22:58.016 A:middle
+So that's sort of a very, very,
+
+00:22:58.016 --> 00:23:00.266 A:middle
+very fast one step update of
+

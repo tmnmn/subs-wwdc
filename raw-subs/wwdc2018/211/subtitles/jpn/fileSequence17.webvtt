@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.017 --> 00:17:01.421 align:start position:30% line:-2
+それにはXcodeで
+新しいターゲットを作り
+
+00:17:01.522 --> 00:17:04.258 align:start position:20% line:-2
+Intents Extension
+テンプレートを選びます
+
+00:17:05.659 --> 00:17:09.663 align:start position:29% line:-2
+そしてハンドラを
+プロトコルに対応させます
+
+00:17:09.762 --> 00:17:13.867 align:start position:7% line:-2
+ここでは
+OrderSoupIntentHandlingに
+
+00:17:13.967 --> 00:17:16.236 align:start position:34% line:-1
+合わせて実装します
+
+00:17:16.336 --> 00:17:21.340 align:start position:20% line:-2
+従来のSiriKitと違い
+Resolveメソッドは要りません
+
+00:17:21.441 --> 00:17:27.381 align:start position:21% line:-2
+特別なカスタマイズなしに
+使用可能だからです
+
+00:17:27.481 --> 00:17:31.852 align:start position:23% line:-2
+Intentのプロパティの値が
+全て有効か確認します
+
+00:17:31.952 --> 00:17:35.656 align:start position:30% line:-2
+値が無効で
+処理できない場合は
+
+00:17:35.756 --> 00:17:38.525 align:start position:30% line:-1
+エラーコードを返します
+
+00:17:38.625 --> 00:17:42.829 align:start position:27% line:-2
+処理できる場合
+ショートカットを実行します
+
+00:17:42.930 --> 00:17:45.933 align:start position:27% line:-1
+この場合はスープの注文です
+
+00:17:46.033 --> 00:17:51.805 align:start position:23% line:-2
+Responseオブジェクトに
+注文の結果を返します
+
+00:17:52.839 --> 00:17:56.310 align:start position:29% line:-2
+バックグラウンド実行される
+全てのショートカットは
+
+00:17:56.410 --> 00:17:59.112 align:start position:18% line:-2
+Intents Extensionを
+実装する必要があります
+
+00:17:59.213 --> 00:18:02.983 align:start position:27% line:-2
+そうすることで
+Appを開かずに
+

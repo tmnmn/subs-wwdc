@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:01.526 --> 00:17:02.806 A:middle
+Now, with all the conflicts
+
+00:17:02.806 --> 00:17:04.516 A:middle
+resolved, the pull can continue.
+
+00:17:05.705 --> 00:17:06.935 A:middle
+If this were a merge pull,
+
+00:17:07.566 --> 00:17:08.626 A:middle
+conflicts are all resolved at
+
+00:17:08.626 --> 00:17:09.866 A:middle
+once and the resolution is
+
+00:17:09.866 --> 00:17:11.256 A:middle
+stored in the merge commit.
+
+00:17:12.796 --> 00:17:14.556 A:middle
+If we were doing a pull rebase,
+
+00:17:14.896 --> 00:17:15.955 A:middle
+it is possible to have to
+
+00:17:15.955 --> 00:17:17.425 A:middle
+resolve a set of conflicts
+
+00:17:17.756 --> 00:17:19.226 A:middle
+multiple times as each
+
+00:17:19.226 --> 00:17:21.146 A:middle
+individual commit is replayed on
+
+00:17:21.266 --> 00:17:23.056 A:middle
+top of your coworker's changes.
+
+00:17:23.906 --> 00:17:25.086 A:middle
+The resolution information in
+
+00:17:25.086 --> 00:17:27.296 A:middle
+this case is stored on the
+
+00:17:27.296 --> 00:17:29.576 A:middle
+original commit as if it never
+
+00:17:29.576 --> 00:17:29.976 A:middle
+occurred.
+
+00:17:31.536 --> 00:17:32.656 A:middle
+Now, because conflicts can be a
+
+00:17:32.656 --> 00:17:34.316 A:middle
+bit annoying to resolve, it can
+
+00:17:34.316 --> 00:17:36.206 A:middle
+be very useful to anticipate
+
+00:17:36.206 --> 00:17:37.956 A:middle
+conflicts and avoid having them
+
+00:17:37.956 --> 00:17:39.156 A:middle
+happen in the first place.
+
+00:17:40.496 --> 00:17:41.566 A:middle
+In Xcode Source Control
+
+00:17:41.566 --> 00:17:43.746 A:middle
+Preferences, the Change bar can
+
+00:17:43.916 --> 00:17:45.166 A:middle
+optionally be shown to show
+
+00:17:45.166 --> 00:17:47.416 A:middle
+coworker's changes as they push
+
+00:17:47.416 --> 00:17:47.636 A:middle
+them.
+
+00:17:50.536 --> 00:17:52.806 A:middle
+This makes it easy to tell what
+
+00:17:52.806 --> 00:17:54.406 A:middle
+part of a file is out of date.
+
+00:17:55.046 --> 00:17:56.226 A:middle
+The changes are fetched from the
+
+00:17:56.226 --> 00:17:57.886 A:middle
+server at a 10-minute interval.
+

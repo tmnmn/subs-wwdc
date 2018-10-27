@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:00.376 --> 00:24:01.896 A:middle
+You can return an array of
+
+00:24:01.936 --> 00:24:03.886 A:middle
+custom actions for a given view,
+
+00:24:04.806 --> 00:24:06.726 A:middle
+and then for each action, you
+
+00:24:06.726 --> 00:24:08.356 A:middle
+have a name, which is conveyed
+
+00:24:08.356 --> 00:24:09.626 A:middle
+to the user as what's going to
+
+00:24:09.626 --> 00:24:11.116 A:middle
+happen when they activate that
+
+00:24:11.116 --> 00:24:13.666 A:middle
+action, and a target selector
+
+00:24:13.666 --> 00:24:15.446 A:middle
+relationship, which will execute
+
+00:24:15.446 --> 00:24:17.586 A:middle
+the action in your code.
+
+00:24:17.806 --> 00:24:19.056 A:middle
+So we'll make that whole shelter
+
+00:24:19.056 --> 00:24:20.696 A:middle
+view accessible and add custom
+
+00:24:20.696 --> 00:24:21.626 A:middle
+actions to it for getting the
+
+00:24:21.626 --> 00:24:24.056 A:middle
+location and calling.
+
+00:24:24.456 --> 00:24:25.496 A:middle
+Finally, we have the gallery
+
+00:24:25.496 --> 00:24:25.776 A:middle
+view.
+
+00:24:26.586 --> 00:24:28.186 A:middle
+When Bhavya brought this up, we
+
+00:24:28.186 --> 00:24:29.386 A:middle
+could swipe through all of the
+
+00:24:29.386 --> 00:24:31.936 A:middle
+elements in the background, and
+
+00:24:31.936 --> 00:24:33.746 A:middle
+though this view apps modal,
+
+00:24:34.246 --> 00:24:36.326 A:middle
+that isn't the case, because
+
+00:24:36.326 --> 00:24:37.966 A:middle
+instead of housing this view in
+
+00:24:37.966 --> 00:24:39.336 A:middle
+a view controller and presenting
+
+00:24:39.336 --> 00:24:41.466 A:middle
+it modally, we instead opted to
+
+00:24:41.466 --> 00:24:43.146 A:middle
+just add it on top of a view
+
+00:24:43.146 --> 00:24:43.766 A:middle
+hierarchy.
+
+00:24:44.516 --> 00:24:46.506 A:middle
+And so since the content in the
+
+00:24:46.506 --> 00:24:48.106 A:middle
+background is still visible,
+
+00:24:48.716 --> 00:24:49.786 A:middle
+VoiceOver doesn't know that it
+
+00:24:49.786 --> 00:24:50.516 A:middle
+should exclude it.
+
+00:24:51.966 --> 00:24:52.736 A:middle
+Although everything in the
+
+00:24:52.736 --> 00:24:54.046 A:middle
+gallery is accessible to
+
+00:24:54.046 --> 00:24:56.006 A:middle
+VoiceOver, it gets confusing to
+
+00:24:56.006 --> 00:24:57.996 A:middle
+the user whose lost the context
+
+00:24:57.996 --> 00:24:59.136 A:middle
+of where they are and what
+
+00:24:59.136 --> 00:25:00.566 A:middle
+effect their actions are having.
+

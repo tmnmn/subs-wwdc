@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.586 --> 00:47:00.816 A:middle
+So it doesn't quite make sense
+
+00:47:01.106 --> 00:47:02.416 A:middle
+why this is chewing up so much
+
+00:47:02.466 --> 00:47:02.956 A:middle
+CPU.
+
+00:47:03.886 --> 00:47:04.996 A:middle
+Let's take a look at the
+
+00:47:04.996 --> 00:47:06.456 A:middle
+backtrace to see who is calling
+
+00:47:07.256 --> 00:47:07.346 A:middle
+us.
+
+00:47:07.956 --> 00:47:10.286 A:middle
+We're being called by set next
+
+00:47:10.376 --> 00:47:11.136 A:middle
+update timer.
+
+00:47:12.066 --> 00:47:17.936 A:middle
+So, what is this function doing?
+
+00:47:18.106 --> 00:47:19.716 A:middle
+We see that within set next
+
+00:47:19.716 --> 00:47:21.076 A:middle
+update timer, we're calling in
+
+00:47:21.076 --> 00:47:22.136 A:middle
+to this add new sprite.
+
+00:47:22.526 --> 00:47:25.756 A:middle
+At the end of a function, we're
+
+00:47:25.756 --> 00:47:28.116 A:middle
+calling in to this update timer
+
+00:47:28.606 --> 00:47:30.646 A:middle
+to schedule the next time this
+
+00:47:30.646 --> 00:47:31.416 A:middle
+function is called.
+
+00:47:33.216 --> 00:47:34.866 A:middle
+This timer is set to fire
+
+00:47:34.946 --> 00:47:37.476 A:middle
+sometime between now and next
+
+00:47:37.516 --> 00:47:38.356 A:middle
+update interval.
+
+00:47:40.216 --> 00:47:42.096 A:middle
+Now, next update interval is
+
+00:47:42.096 --> 00:47:44.316 A:middle
+decremented by 1 until it hits
+
+00:47:44.316 --> 00:47:48.186 A:middle
+0, and then it's re-initialized
+
+00:47:48.286 --> 00:47:50.006 A:middle
+according to this line of code
+
+00:47:50.006 --> 00:47:50.326 A:middle
+here.
+
+00:47:52.376 --> 00:47:53.896 A:middle
+Now, here's where the problem
+
+00:47:53.896 --> 00:47:54.086 A:middle
+is.
+
+00:47:55.546 --> 00:47:57.376 A:middle
+Time interval since last update
+
+00:47:57.426 --> 00:47:59.586 A:middle
+date can potentially be
+
+00:47:59.586 --> 00:48:02.226 A:middle
+negative, and we've seen cases
+

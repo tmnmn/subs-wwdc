@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.126 --> 00:35:01.076 A:middle
+And you provide a method to
+
+00:35:01.076 --> 00:35:02.206 A:middle
+compute the prediction on an
+
+00:35:02.206 --> 00:35:02.656 A:middle
+input.
+
+00:35:02.976 --> 00:35:04.626 A:middle
+There is an optional method to
+
+00:35:04.626 --> 00:35:06.146 A:middle
+provide a batch implementation
+
+00:35:06.146 --> 00:35:07.276 A:middle
+if there are opportunities in
+
+00:35:07.276 --> 00:35:08.776 A:middle
+this particular model type to
+
+00:35:08.776 --> 00:35:10.006 A:middle
+have optimizations there.
+
+00:35:10.286 --> 00:35:11.276 A:middle
+And if not, we'll call the
+
+00:35:11.276 --> 00:35:13.126 A:middle
+single prediction in a for loop.
+
+00:35:14.026 --> 00:35:16.046 A:middle
+And using a customized model in
+
+00:35:16.046 --> 00:35:17.316 A:middle
+your app is largely the same
+
+00:35:17.316 --> 00:35:18.696 A:middle
+workflow as any other Core ML
+
+00:35:18.696 --> 00:35:19.066 A:middle
+model.
+
+00:35:19.646 --> 00:35:21.156 A:middle
+In Xcode, a model with
+
+00:35:21.156 --> 00:35:22.936 A:middle
+customized components will have
+
+00:35:22.936 --> 00:35:24.986 A:middle
+a dependency section listing the
+
+00:35:24.986 --> 00:35:26.286 A:middle
+names of the implementations
+
+00:35:26.286 --> 00:35:27.366 A:middle
+needed along with a short
+
+00:35:27.366 --> 00:35:27.956 A:middle
+description.
+
+00:35:28.576 --> 00:35:29.816 A:middle
+Just include these in your app,
+
+00:35:29.936 --> 00:35:30.836 A:middle
+and you are ready to go.
+
+00:35:31.696 --> 00:35:33.616 A:middle
+The prediction API is unchanged,
+
+00:35:33.616 --> 00:35:34.946 A:middle
+whether for single predictions
+
+00:35:34.996 --> 00:35:35.646 A:middle
+or batch.
+
+00:35:37.016 --> 00:35:39.476 A:middle
+So custom layers and custom
+
+00:35:39.476 --> 00:35:41.086 A:middle
+models allow you to use the
+
+00:35:41.086 --> 00:35:42.806 A:middle
+power and simplicity of Core ML
+
+00:35:42.806 --> 00:35:43.896 A:middle
+without sacrificing the
+
+00:35:43.896 --> 00:35:45.676 A:middle
+flexibility needed to keep up
+
+00:35:45.676 --> 00:35:46.886 A:middle
+with the fast-paced area of
+
+00:35:46.886 --> 00:35:47.496 A:middle
+machine learning.
+
+00:35:48.566 --> 00:35:49.896 A:middle
+For new neural network layers,
+
+00:35:50.096 --> 00:35:52.016 A:middle
+custom layers allow you to make
+
+00:35:52.066 --> 00:35:53.566 A:middle
+use of the many optimizations
+
+00:35:53.566 --> 00:35:54.716 A:middle
+already present in the neural
+
+00:35:54.716 --> 00:35:56.176 A:middle
+network inference engine in Core
+
+00:35:56.176 --> 00:35:56.446 A:middle
+ML.
+
+00:35:57.096 --> 00:35:58.956 A:middle
+Custom models are more flexible
+
+00:35:59.816 --> 00:36:01.686 A:middle
+for types and functionality, but
+

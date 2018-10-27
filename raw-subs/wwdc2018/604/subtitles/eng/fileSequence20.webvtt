@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.996 --> 00:20:02.886 A:middle
+The built intermediate
+
+00:20:02.886 --> 00:20:05.286 A:middle
+representation binary is
+
+00:20:05.376 --> 00:20:07.656 A:middle
+archived into a Metal library
+
+00:20:07.656 --> 00:20:07.926 A:middle
+file.
+
+00:20:08.576 --> 00:20:10.376 A:middle
+Xcode will compile all the Metal
+
+00:20:10.376 --> 00:20:11.656 A:middle
+shader source files into a
+
+00:20:11.776 --> 00:20:13.856 A:middle
+default Metal library, placing
+
+00:20:13.856 --> 00:20:16.256 A:middle
+it into your app bundle for
+
+00:20:16.256 --> 00:20:17.276 A:middle
+retrieval at runtime.
+
+00:20:17.936 --> 00:20:20.686 A:middle
+In addition to having Xcode
+
+00:20:20.686 --> 00:20:23.286 A:middle
+built shaders you also can build
+
+00:20:23.286 --> 00:20:24.266 A:middle
+shaders during your app's
+
+00:20:24.266 --> 00:20:24.726 A:middle
+runtime.
+
+00:20:26.126 --> 00:20:27.436 A:middle
+Some OpenGL apps construct
+
+00:20:27.436 --> 00:20:28.446 A:middle
+shaders at runtime by
+
+00:20:28.546 --> 00:20:30.096 A:middle
+concatenating strings or running
+
+00:20:30.096 --> 00:20:31.286 A:middle
+a source code generator of some
+
+00:20:31.286 --> 00:20:31.616 A:middle
+kind.
+
+00:20:32.646 --> 00:20:33.846 A:middle
+For those gathering all of the
+
+00:20:33.846 --> 00:20:35.376 A:middle
+shaders at build time can be a
+
+00:20:35.376 --> 00:20:35.826 A:middle
+challenge.
+
+00:20:36.846 --> 00:20:38.756 A:middle
+But for bring up purposes or if
+
+00:20:38.856 --> 00:20:40.476 A:middle
+built time compilation just
+
+00:20:40.476 --> 00:20:41.486 A:middle
+isn't possible for your app
+
+00:20:41.876 --> 00:20:43.486 A:middle
+Metal is able to compile shaders
+
+00:20:43.486 --> 00:20:45.326 A:middle
+from source at runtime just like
+
+00:20:45.326 --> 00:20:45.836 A:middle
+OpenGL.
+
+00:20:46.386 --> 00:20:49.346 A:middle
+However, there are a number of
+
+00:20:49.346 --> 00:20:50.896 A:middle
+disadvantages to this, most
+
+00:20:50.896 --> 00:20:52.416 A:middle
+obviously you give up on the
+
+00:20:52.416 --> 00:20:53.636 A:middle
+performance savings of keeping
+
+00:20:53.636 --> 00:20:54.986 A:middle
+this work off the user's system.
+
+00:20:56.216 --> 00:20:57.206 A:middle
+You won't see any shader
+
+00:20:57.206 --> 00:20:58.546 A:middle
+compilation errors at built time
+
+00:20:58.546 --> 00:20:59.716 A:middle
+so you'll only find out about
+
+00:20:59.716 --> 00:21:00.776 A:middle
+them when you run your app.
+

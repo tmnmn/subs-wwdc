@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.613 --> 00:08:05.219 align:start position:29% line:-2
+フレーム欠落の驚くべき
+新たな原因を発見しました
+
+00:08:05.319 --> 00:08:09.256 align:start position:36% line:-2
+それはデバイスに
+負荷がない状態で
+
+00:08:09.356 --> 00:08:13.994 align:start position:32% line:-2
+バックでの実行もなく
+スクロールのみでした
+
+00:08:14.328 --> 00:08:17.998 align:start position:29% line:-2
+それでも
+フレーム欠落がありました
+
+00:08:18.098 --> 00:08:22.035 align:start position:29% line:-2
+バックグランド作業時より
+多かったのです
+
+00:08:22.402 --> 00:08:24.238 align:start position:38% line:-1
+意味が分からず
+
+00:08:24.338 --> 00:08:26.273 align:start position:36% line:-1
+原因を探りました
+
+00:08:26.373 --> 00:08:27.841 align:start position:34% line:-1
+レベルを落として―
+
+00:08:27.941 --> 00:08:33.480 align:start position:25% line:-2
+予定されていた
+CPUの動きを観察したのです
+
+00:08:33.847 --> 00:08:35.649 align:start position:29% line:-1
+別のトレースを見ましょう
+
+00:08:36.250 --> 00:08:38.051 align:start position:36% line:-1
+先ほどと同じです
+
+00:08:38.150 --> 00:08:41.321 align:start position:38% line:-2
+幅の広い部分が
+フレームの欠落
+
+00:08:41.421 --> 00:08:42.990 align:start position:38% line:-1
+原因は我々です
+
+00:08:43.457 --> 00:08:47.361 align:start position:25% line:-2
+ここでCPUパフォーマンスの
+時間が分かります
+
+00:08:47.661 --> 00:08:52.065 align:start position:27% line:-2
+低負荷なフレームで
+パフォーマンスが低いのです
+
+00:08:52.366 --> 00:08:57.604 align:start position:29% line:-2
+バックの実行もなく
+スクロールのみだからです
+
+00:08:57.704 --> 00:09:00.941 align:start position:36% line:-2
+高負荷な作業を
+していない時には
+

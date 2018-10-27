@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.396 --> 00:10:03.326 A:middle
+And of course, sharing Metal
+
+00:10:03.326 --> 00:10:05.266 A:middle
+textures between application and
+
+00:10:05.266 --> 00:10:06.806 A:middle
+compositor is not the only use
+
+00:10:06.856 --> 00:10:08.026 A:middle
+case for shareable Metal
+
+00:10:08.066 --> 00:10:08.636 A:middle
+textures.
+
+00:10:09.436 --> 00:10:11.126 A:middle
+So here we have simple example
+
+00:10:11.126 --> 00:10:12.506 A:middle
+of how you can pass Metal
+
+00:10:12.506 --> 00:10:14.156 A:middle
+texture between any two
+
+00:10:14.156 --> 00:10:14.956 A:middle
+processes.
+
+00:10:15.816 --> 00:10:17.526 A:middle
+So we start exactly in the same
+
+00:10:17.526 --> 00:10:17.766 A:middle
+way.
+
+00:10:18.046 --> 00:10:19.326 A:middle
+We create our shareable Metal
+
+00:10:19.326 --> 00:10:23.206 A:middle
+texture, but now from this
+
+00:10:23.286 --> 00:10:25.136 A:middle
+texture, we create special
+
+00:10:25.286 --> 00:10:27.456 A:middle
+shared texture handle that can
+
+00:10:27.456 --> 00:10:29.726 A:middle
+be passed between process spaces
+
+00:10:30.136 --> 00:10:31.176 A:middle
+using cross-process
+
+00:10:31.246 --> 00:10:32.556 A:middle
+communication connection.
+
+00:10:33.236 --> 00:10:36.056 A:middle
+Once this handle is passed to
+
+00:10:36.056 --> 00:10:39.306 A:middle
+other process, it can be used to
+
+00:10:39.306 --> 00:10:41.496 A:middle
+recreate texture object.
+
+00:10:42.346 --> 00:10:44.906 A:middle
+But while doing that, you need
+
+00:10:45.006 --> 00:10:46.936 A:middle
+to remember to recreate your
+
+00:10:47.016 --> 00:10:49.096 A:middle
+texture object on exactly the
+
+00:10:49.096 --> 00:10:51.616 A:middle
+same device as it was originally
+
+00:10:51.666 --> 00:10:53.326 A:middle
+created in other process space,
+
+00:10:53.896 --> 00:10:56.176 A:middle
+as this texture cannot leave
+
+00:10:56.176 --> 00:10:57.666 A:middle
+scope of GPU.
+
+00:10:58.266 --> 00:11:02.476 A:middle
+So now let's get back to our
+

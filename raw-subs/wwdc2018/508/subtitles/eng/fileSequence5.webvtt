@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.146 --> 00:05:00.396 A:middle
+file will look something like
+
+00:05:00.396 --> 00:05:00.856 A:middle
+this.
+
+00:05:01.356 --> 00:05:04.106 A:middle
+As I said before, this key is
+
+00:05:04.106 --> 00:05:05.576 A:middle
+meant to be a secret between you
+
+00:05:05.576 --> 00:05:06.136 A:middle
+and Apple.
+
+00:05:07.066 --> 00:05:08.516 A:middle
+This is the only time you'll be
+
+00:05:08.516 --> 00:05:10.006 A:middle
+able to download your auth key
+
+00:05:10.006 --> 00:05:10.446 A:middle
+file.
+
+00:05:10.906 --> 00:05:12.416 A:middle
+We recommend you quickly save it
+
+00:05:12.416 --> 00:05:13.236 A:middle
+somewhere safe.
+
+00:05:14.296 --> 00:05:16.576 A:middle
+If you ever lose your key or it
+
+00:05:16.576 --> 00:05:18.426 A:middle
+is compromised, you can always
+
+00:05:18.426 --> 00:05:19.816 A:middle
+come back to the Apple Developer
+
+00:05:19.816 --> 00:05:21.436 A:middle
+website to revoke it and create
+
+00:05:21.436 --> 00:05:21.946 A:middle
+a new key.
+
+00:05:25.306 --> 00:05:26.976 A:middle
+You just created a MapKit JS
+
+00:05:26.976 --> 00:05:27.356 A:middle
+key.
+
+00:05:27.386 --> 00:05:29.536 A:middle
+Now we will create authorization
+
+00:05:29.536 --> 00:05:31.246 A:middle
+tokens which can be used to
+
+00:05:31.246 --> 00:05:33.066 A:middle
+authorize MapKit JS over the
+
+00:05:33.066 --> 00:05:33.326 A:middle
+web.
+
+00:05:36.296 --> 00:05:38.246 A:middle
+Tokens are created containing
+
+00:05:38.246 --> 00:05:40.086 A:middle
+your developer credentials and
+
+00:05:40.086 --> 00:05:41.626 A:middle
+are signed with your auth key
+
+00:05:41.626 --> 00:05:42.116 A:middle
+file.
+
+00:05:43.026 --> 00:05:44.586 A:middle
+Claims are added to this token,
+
+00:05:44.776 --> 00:05:46.256 A:middle
+which are used by Apple to
+
+00:05:46.256 --> 00:05:48.386 A:middle
+verify a client's authorization.
+
+00:05:49.846 --> 00:05:51.576 A:middle
+Let's dive deeper into how to
+
+00:05:51.576 --> 00:05:53.406 A:middle
+make authorization tokens.
+
+00:05:55.316 --> 00:05:57.426 A:middle
+MapKit JS authorization tokens
+
+00:05:57.426 --> 00:06:00.786 A:middle
+are based on JSON Web Tokens RFC
+

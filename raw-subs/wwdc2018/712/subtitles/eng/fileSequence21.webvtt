@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.286 --> 00:21:01.226 A:middle
+call model.evaluate and once
+
+00:21:01.226 --> 00:21:02.436 A:middle
+again, I'm going to pass in just
+
+00:21:02.436 --> 00:21:04.186 A:middle
+that whole test data set.
+
+00:21:05.936 --> 00:21:08.096 A:middle
+Here the evaluation function is
+
+00:21:08.096 --> 00:21:09.436 A:middle
+going to run the metric that
+
+00:21:09.436 --> 00:21:11.526 A:middle
+Aaron described, testing whether
+
+00:21:11.526 --> 00:21:12.546 A:middle
+the bounding boxes are
+
+00:21:12.546 --> 00:21:14.556 A:middle
+overlapping at least 50% and
+
+00:21:14.556 --> 00:21:15.586 A:middle
+have a correct label.
+
+00:21:15.586 --> 00:21:17.226 A:middle
+And it's going to give us that
+
+00:21:17.226 --> 00:21:18.756 A:middle
+result across each of the six
+
+00:21:18.756 --> 00:21:19.926 A:middle
+classes that we trained on.
+
+00:21:20.516 --> 00:21:22.036 A:middle
+So here we can see that our
+
+00:21:22.356 --> 00:21:24.096 A:middle
+overlapping bounding boxes with
+
+00:21:24.096 --> 00:21:25.636 A:middle
+the correct label are happening
+
+00:21:25.736 --> 00:21:27.696 A:middle
+about 80% of the time for bagel.
+
+00:21:28.106 --> 00:21:29.946 A:middle
+About 67% of the time for
+
+00:21:29.946 --> 00:21:30.416 A:middle
+banana.
+
+00:21:30.706 --> 00:21:31.276 A:middle
+And so on.
+
+00:21:32.456 --> 00:21:34.016 A:middle
+That's pretty good, so I think
+
+00:21:34.096 --> 00:21:35.616 A:middle
+let's, let's see if this model's
+
+00:21:35.616 --> 00:21:36.966 A:middle
+actually going to work in a real
+
+00:21:36.966 --> 00:21:37.226 A:middle
+app.
+
+00:21:37.866 --> 00:21:39.526 A:middle
+I'm going to go ahead and call
+
+00:21:39.806 --> 00:21:42.366 A:middle
+exportcoreml to create a Core ML
+
+00:21:42.366 --> 00:21:43.806 A:middle
+model from the model we just
+
+00:21:43.806 --> 00:21:44.076 A:middle
+trained.
+
+00:21:44.226 --> 00:21:45.666 A:middle
+And I'm going to call it
+
+00:21:45.666 --> 00:21:47.536 A:middle
+breakfastmodel.mlmodel.
+
+00:21:47.826 --> 00:21:49.036 A:middle
+And then as soon as that's done
+
+00:21:49.036 --> 00:21:50.546 A:middle
+training, I'm going to go ahead
+
+00:21:50.546 --> 00:21:51.656 A:middle
+and open it in finder.
+
+00:21:52.236 --> 00:21:55.206 A:middle
+Or sorry. As soon as that's done
+
+00:21:55.206 --> 00:21:56.000 A:middle
+exporting.
+

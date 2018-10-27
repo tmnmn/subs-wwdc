@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.176 --> 00:43:01.186 A:middle
+And before we commit this
+
+00:43:01.186 --> 00:43:03.066 A:middle
+command buffer to GPU we will
+
+00:43:03.066 --> 00:43:05.156 A:middle
+add a completion handler to this
+
+00:43:05.156 --> 00:43:06.556 A:middle
+command buffer for this frame.
+
+00:43:07.186 --> 00:43:10.066 A:middle
+After adding completion handler
+
+00:43:10.066 --> 00:43:11.166 A:middle
+we will commit this command
+
+00:43:11.166 --> 00:43:12.026 A:middle
+buffer to GPU.
+
+00:43:12.926 --> 00:43:16.036 A:middle
+Now once GPU finishes executing
+
+00:43:16.036 --> 00:43:17.806 A:middle
+this frame our completion
+
+00:43:17.806 --> 00:43:19.846 A:middle
+handler will be invoked which
+
+00:43:19.846 --> 00:43:21.486 A:middle
+will then signal this frame
+
+00:43:21.486 --> 00:43:22.006 A:middle
+semaphore.
+
+00:43:23.766 --> 00:43:26.156 A:middle
+This allows CPU to reuse its
+
+00:43:26.186 --> 00:43:27.986 A:middle
+buffer for new frame encoding.
+
+00:43:28.786 --> 00:43:30.666 A:middle
+So this was a simple triple
+
+00:43:30.666 --> 00:43:32.196 A:middle
+buffer implementation which you
+
+00:43:32.196 --> 00:43:33.846 A:middle
+can adopt for handling any
+
+00:43:33.846 --> 00:43:35.996 A:middle
+dynamic data resource updates.
+
+00:43:36.476 --> 00:43:39.376 A:middle
+Now that we have our command
+
+00:43:39.376 --> 00:43:41.426 A:middle
+buffer and also, we have handled
+
+00:43:41.726 --> 00:43:44.246 A:middle
+our resource updates let's talk
+
+00:43:44.246 --> 00:43:46.136 A:middle
+more about render pass encoders
+
+00:43:46.626 --> 00:43:48.306 A:middle
+which you will use to encode
+
+00:43:48.306 --> 00:43:49.796 A:middle
+your draw calls.
+
+00:43:50.276 --> 00:43:52.496 A:middle
+As Dan mentioned earlier,
+
+00:43:52.496 --> 00:43:56.906 A:middle
+command encoders translate API
+
+00:43:57.146 --> 00:43:59.046 A:middle
+calls into GPU hardware commands
+
+00:43:59.046 --> 00:43:59.926 A:middle
+in a command buffer.
+
+00:43:59.926 --> 00:44:02.936 A:middle
+I will be talking about render
+

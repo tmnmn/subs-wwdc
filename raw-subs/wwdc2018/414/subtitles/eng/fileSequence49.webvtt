@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:58.866 --> 00:49:00.136 A:middle
+So let's look at how it's
+
+00:49:00.136 --> 00:49:01.826 A:middle
+implemented, let's jump to
+
+00:49:01.956 --> 00:49:03.016 A:middle
+storage here which is what we're
+
+00:49:03.016 --> 00:49:04.036 A:middle
+using and let's see if it
+
+00:49:04.036 --> 00:49:06.326 A:middle
+actually is thread safe.
+
+00:49:06.436 --> 00:49:08.466 A:middle
+So here's the source of image
+
+00:49:08.466 --> 00:49:09.656 A:middle
+cache, right here at the top of
+
+00:49:09.656 --> 00:49:11.326 A:middle
+the file and we can immediately
+
+00:49:11.326 --> 00:49:12.196 A:middle
+spot what's wrong.
+
+00:49:12.696 --> 00:49:14.306 A:middle
+This is just a plain Swift
+
+00:49:14.306 --> 00:49:16.196 A:middle
+dictionary so that's not good.
+
+00:49:16.446 --> 00:49:17.886 A:middle
+Swift dictionaries are not
+
+00:49:17.886 --> 00:49:19.156 A:middle
+thread safe by default.
+
+00:49:19.636 --> 00:49:21.586 A:middle
+So if we want to share a mutable
+
+00:49:21.676 --> 00:49:22.866 A:middle
+Swift dictionary between
+
+00:49:22.866 --> 00:49:25.146 A:middle
+multiple threads we have to
+
+00:49:25.146 --> 00:49:26.926 A:middle
+protect it with synchronization,
+
+00:49:27.476 --> 00:49:28.656 A:middle
+which means we have to make sure
+
+00:49:28.656 --> 00:49:30.336 A:middle
+that only one thread accesses it
+
+00:49:30.336 --> 00:49:30.876 A:middle
+at a time.
+
+00:49:31.846 --> 00:49:33.326 A:middle
+So now let's actually work on
+
+00:49:33.326 --> 00:49:34.656 A:middle
+fixing this problem and making
+
+00:49:34.656 --> 00:49:36.876 A:middle
+the class thread safe and I'll
+
+00:49:36.876 --> 00:49:37.806 A:middle
+do that in two steps.
+
+00:49:37.806 --> 00:49:41.186 A:middle
+First, I'll refactor this code a
+
+00:49:41.186 --> 00:49:42.836 A:middle
+little bit so that we have more
+
+00:49:42.836 --> 00:49:44.886 A:middle
+control over storage and then in
+
+00:49:44.886 --> 00:49:46.366 A:middle
+a second step I will use a
+
+00:49:46.366 --> 00:49:47.696 A:middle
+dispatch queue to actually make
+
+00:49:47.696 --> 00:49:48.696 A:middle
+this class thread safe.
+
+00:49:50.006 --> 00:49:52.106 A:middle
+So first of all what I don't
+
+00:49:52.106 --> 00:49:53.506 A:middle
+like here is that storage is
+
+00:49:53.506 --> 00:49:54.916 A:middle
+declared as a public variable.
+
+00:49:55.396 --> 00:49:56.896 A:middle
+That means that potentially any
+
+00:49:56.896 --> 00:49:58.496 A:middle
+code inside my app can be
+
+00:49:58.496 --> 00:49:58.976 A:middle
+accessing it.
+
+00:49:59.566 --> 00:50:01.056 A:middle
+And it will be really hard to
+

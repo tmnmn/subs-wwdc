@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.126 --> 00:28:00.506 A:middle
+If I can bring the lozenges
+
+00:28:00.506 --> 00:28:02.776 A:middle
+forward, it should be possible
+
+00:28:02.776 --> 00:28:04.406 A:middle
+to do something casual with
+
+00:28:04.866 --> 00:28:05.636 A:middle
+[inaudible] in a playground,
+
+00:28:05.986 --> 00:28:08.226 A:middle
+like this, which brings forward
+
+00:28:08.226 --> 00:28:09.796 A:middle
+the number divisible by 3.
+
+00:28:13.276 --> 00:28:14.596 A:middle
+Now, at the other end of the
+
+00:28:14.596 --> 00:28:16.296 A:middle
+spectrum, I should be able to
+
+00:28:16.296 --> 00:28:18.116 A:middle
+throw vast quantities of
+
+00:28:18.116 --> 00:28:19.856 A:middle
+randomly generated test data at
+
+00:28:19.856 --> 00:28:21.256 A:middle
+it and make sure that the
+
+00:28:21.256 --> 00:28:22.386 A:middle
+algorithm scales.
+
+00:28:23.246 --> 00:28:24.696 A:middle
+Neither of those was going to be
+
+00:28:24.696 --> 00:28:26.076 A:middle
+easy as long as the code was
+
+00:28:26.116 --> 00:28:27.906 A:middle
+tied to Canvas and shapes.
+
+00:28:29.146 --> 00:28:31.506 A:middle
+And so, I admitted to Crusty
+
+00:28:32.296 --> 00:28:33.546 A:middle
+that he was right and started
+
+00:28:33.546 --> 00:28:34.846 A:middle
+making this non-generic
+
+00:28:35.616 --> 00:28:37.106 A:middle
+bringForward into a generic one.
+
+00:28:38.436 --> 00:28:40.666 A:middle
+The first step was to decouple
+
+00:28:40.666 --> 00:28:44.896 A:middle
+it from Canvas and move it to
+
+00:28:44.896 --> 00:28:45.696 A:middle
+arrays of shapes.
+
+00:28:47.216 --> 00:28:49.266 A:middle
+Of course, this array is the
+
+00:28:49.266 --> 00:28:50.556 A:middle
+shape, so I had to replace
+
+00:28:50.556 --> 00:28:54.366 A:middle
+shapes with self, and then I
+
+00:28:54.366 --> 00:28:56.866 A:middle
+decoupled it from selection by
+
+00:28:56.866 --> 00:28:58.636 A:middle
+passing a predicate indicating
+
+00:28:58.736 --> 00:29:00.046 A:middle
+whether a given shape should be
+

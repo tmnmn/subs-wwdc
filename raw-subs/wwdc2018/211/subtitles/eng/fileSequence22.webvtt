@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.136 --> 00:22:00.776 A:middle
+toggles, Display Recent
+
+00:22:00.776 --> 00:22:02.616 A:middle
+Shortcuts and Display Donations
+
+00:22:02.666 --> 00:22:03.386 A:middle
+on Lock Screen.
+
+00:22:03.656 --> 00:22:04.386 A:middle
+Let's enable both.
+
+00:22:06.166 --> 00:22:08.236 A:middle
+I can now go back to the home
+
+00:22:08.236 --> 00:22:09.906 A:middle
+screen and pull down to go to
+
+00:22:09.906 --> 00:22:11.416 A:middle
+search, and I see the donation
+
+00:22:11.416 --> 00:22:12.356 A:middle
+that I just did.
+
+00:22:13.356 --> 00:22:13.656 A:middle
+Great.
+
+00:22:14.516 --> 00:22:18.626 A:middle
+[ Applause ]
+
+00:22:19.126 --> 00:22:20.496 A:middle
+I can tap it, and the app is
+
+00:22:20.496 --> 00:22:21.556 A:middle
+launched with that user
+
+00:22:21.556 --> 00:22:23.046 A:middle
+activity, and I'm back to the
+
+00:22:23.046 --> 00:22:24.856 A:middle
+order that I was just donated.
+
+00:22:25.586 --> 00:22:28.846 A:middle
+Great. So, this is pretty good,
+
+00:22:29.216 --> 00:22:30.516 A:middle
+but I think we can do a lot
+
+00:22:30.516 --> 00:22:30.826 A:middle
+more.
+
+00:22:31.316 --> 00:22:33.326 A:middle
+Since the main capability of our
+
+00:22:33.326 --> 00:22:34.856 A:middle
+app is ordering soup, it would
+
+00:22:34.856 --> 00:22:35.846 A:middle
+be great if this could be
+
+00:22:35.846 --> 00:22:37.556 A:middle
+suggested to our users.
+
+00:22:38.016 --> 00:22:39.426 A:middle
+And I want users to be able to
+
+00:22:39.426 --> 00:22:40.776 A:middle
+do that without having to launch
+
+00:22:40.826 --> 00:22:41.086 A:middle
+the app.
+
+00:22:41.626 --> 00:22:43.156 A:middle
+So, I'll implement it using an
+
+00:22:43.316 --> 00:22:43.756 A:middle
+intent.
+
+00:22:44.506 --> 00:22:47.536 A:middle
+There isn't a built-in soup
+
+00:22:47.536 --> 00:22:51.196 A:middle
+order intent, but now in iOS 12,
+
+00:22:51.296 --> 00:22:53.116 A:middle
+I can create a custom intent, so
+
+00:22:53.116 --> 00:22:54.026 A:middle
+I'll do that.
+
+00:22:55.826 --> 00:22:58.076 A:middle
+And to start by creating an
+
+00:22:58.076 --> 00:22:59.896 A:middle
+intent definition file, I'll go
+
+00:22:59.896 --> 00:23:01.606 A:middle
+to File, View.
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.586 --> 00:32:00.854 align:middle line:-1
+只是这个类与之交互的另一个外部类
+
+00:32:01.355 --> 00:32:02.589 align:middle line:-1
+因此我们可以应用
+
+00:32:02.656 --> 00:32:05.292 align:middle line:-2
+我们前面讨论过的
+带有协议的模拟技术
+
+00:32:06.126 --> 00:32:10.464 align:middle line:-2
+为此我们将创建一个小协议
+其中包含这个addTimer方法
+
+00:32:12.099 --> 00:32:14.401 align:middle line:-2
+我调用了该新协议
+TimerScheduler
+
+00:32:14.601 --> 00:32:17.104 align:middle line:-1
+它只有一个addTimer方法
+
+00:32:17.271 --> 00:32:20.040 align:middle line:-2
+它与runLoop API
+的签名相匹配
+
+00:32:22.242 --> 00:32:25.012 align:middle line:-1
+现在回到我的代码中
+
+00:32:25.078 --> 00:32:27.014 align:middle line:-2
+我需用刚刚创建的协议
+替换runLoop
+
+00:32:29.683 --> 00:32:33.520 align:middle line:-2
+在我的测试中我不想使用真正的
+runLoop作为我的TimerScheduler
+
+00:32:33.820 --> 00:32:38.125 align:middle line:-2
+相反我想创建一个模拟调度器
+它将计时器传递给我的测试
+
+00:32:39.660 --> 00:32:43.096 align:middle line:-1
+为此 我将创建一个嵌套在
+
+00:32:43.163 --> 00:32:46.967 align:middle line:-2
+我的单元测试类MockTimerScheduler中的新结构
+它符合TimerScheduler协议
+
+00:32:47.935 --> 00:32:51.471 align:middle line:-2
+它存储一个块 每当被告知要
+添加计时器时 该块就会被调用
+
+00:32:53.907 --> 00:32:56.977 align:middle line:-2
+有了所有的片段
+我就可以写我的最后单元测试了
+
+00:32:57.811 --> 00:33:02.683 align:middle line:-2
+首先我创建一个MockTimerScheduler
+并配置它的handleAddTimer块
+

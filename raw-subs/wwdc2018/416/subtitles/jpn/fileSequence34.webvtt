@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:55.903 --> 00:34:00.507 align:start position:29% line:-2
+ダーティなメモリを
+さらに使用するものもあり
+
+00:34:00.607 --> 00:34:02.576 align:start position:30% line:-1
+圧縮されたメモリもある
+
+00:34:02.676 --> 00:34:06.647 align:start position:25% line:-1
+注目すべきものが分かりました
+
+00:34:06.780 --> 00:34:09.083 align:start position:29% line:-1
+しかし別の方法を使います
+
+00:34:09.183 --> 00:34:13.821 align:start position:32% line:-2
+必須ではないですが
+一般的なルールとして
+
+00:34:14.021 --> 00:34:18.725 align:start position:25% line:-1
+仮想メモリ領域作成が遅れると
+
+00:34:18.824 --> 00:34:21.962 align:start position:27% line:-1
+Appの作動も遅くなります
+
+00:34:22.062 --> 00:34:26.699 align:start position:18% line:-2
+このmemgraphはメモリ使用量の
+上昇中に取得されたので
+
+00:34:26.934 --> 00:34:32.339 align:start position:25% line:-2
+これらの領域は
+メモリの上昇と関連しています
+
+00:34:32.505 --> 00:34:38.445 align:start position:21% line:-2
+最大のダーティや圧縮サイズでなく
+領域の最後から探ってみます
+
+00:34:39.746 --> 00:34:42.716 align:start position:21% line:-1
+最終領域の最初のアドレスを取得し
+
+00:34:43.116 --> 00:34:45.152 align:start position:36% line:-1
+次にすることは？
+
+00:34:45.786 --> 00:34:50.556 align:start position:30% line:-2
+ジェイムスが先に述べた
+ヒープがありますが
+
+00:34:50.757 --> 00:34:55.696 align:start position:29% line:-2
+ただし仮想メモリ領域では
+役に立ちません
+
+00:34:56.330 --> 00:34:59.299 align:start position:29% line:-1
+試したいリークは存在せず
+
+00:34:59.399 --> 00:35:04.538 align:start position:18% line:-2
+Memgraphにも見当たらないので
+leaksは使えません
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:55.516 --> 00:37:01.796 A:middle
+[ Applause ]
+
+00:37:02.296 --> 00:37:02.896 A:middle
+&gt;&gt; Alright.
+
+00:37:02.896 --> 00:37:03.476 A:middle
+Thanks, Julie.
+
+00:37:04.626 --> 00:37:05.976 A:middle
+Pretty cool, huh?
+
+00:37:06.466 --> 00:37:07.856 A:middle
+So that's access and
+
+00:37:07.856 --> 00:37:08.666 A:middle
+authentication.
+
+00:37:08.976 --> 00:37:09.976 A:middle
+And now in the few minutes that
+
+00:37:09.976 --> 00:37:11.046 A:middle
+we have remaining, I want to
+
+00:37:11.046 --> 00:37:12.446 A:middle
+talk about some best practices
+
+00:37:12.446 --> 00:37:13.346 A:middle
+when using the API.
+
+00:37:14.396 --> 00:37:15.576 A:middle
+We're going to start with those
+
+00:37:15.576 --> 00:37:15.956 A:middle
+keys.
+
+00:37:16.146 --> 00:37:17.716 A:middle
+Now as Julie said, those keys
+
+00:37:17.716 --> 00:37:19.496 A:middle
+belong to you and it's your job
+
+00:37:19.496 --> 00:37:20.266 A:middle
+to protect them.
+
+00:37:20.536 --> 00:37:22.176 A:middle
+Anybody who has the keys can
+
+00:37:22.176 --> 00:37:23.066 A:middle
+access your data.
+
+00:37:23.496 --> 00:37:24.806 A:middle
+So ideally, you're going to put
+
+00:37:24.806 --> 00:37:26.116 A:middle
+those keys in some kind of a
+
+00:37:26.116 --> 00:37:27.966 A:middle
+secure key store and your code
+
+00:37:27.966 --> 00:37:29.676 A:middle
+will check them out, use them in
+
+00:37:29.676 --> 00:37:31.126 A:middle
+memory, and never store them
+
+00:37:31.126 --> 00:37:32.696 A:middle
+anywhere, like in a database or
+
+00:37:32.696 --> 00:37:33.306 A:middle
+on disc.
+
+00:37:33.656 --> 00:37:34.946 A:middle
+If you do have to store the keys
+
+00:37:34.946 --> 00:37:36.536 A:middle
+on disc, make sure you check
+
+00:37:36.576 --> 00:37:37.706 A:middle
+your file system permissions
+
+00:37:37.706 --> 00:37:38.536 A:middle
+very carefully.
+
+00:37:39.006 --> 00:37:40.156 A:middle
+And, of course, if you have any
+
+00:37:40.156 --> 00:37:41.506 A:middle
+reason to think a key has been
+
+00:37:41.506 --> 00:37:42.626 A:middle
+compromised in some way,
+
+00:37:42.936 --> 00:37:44.336 A:middle
+immediately log in to App Store
+
+00:37:44.336 --> 00:37:47.256 A:middle
+Connect and revoke that key.
+
+00:37:47.436 --> 00:37:48.306 A:middle
+I also want to talk about the
+
+00:37:48.386 --> 00:37:50.586 A:middle
+tokens that you create from your
+
+00:37:50.586 --> 00:37:51.006 A:middle
+keys.
+
+00:37:51.006 --> 00:37:51.986 A:middle
+Now there's no reason that you
+
+00:37:51.986 --> 00:37:53.186 A:middle
+have to send a different token
+
+00:37:53.186 --> 00:37:54.206 A:middle
+with every request.
+
+00:37:54.426 --> 00:37:55.186 A:middle
+In fact, you'll get better
+
+00:37:55.186 --> 00:37:56.956 A:middle
+performance in your code and on
+
+00:37:56.956 --> 00:37:58.676 A:middle
+our end if you reuse those
+
+00:37:58.676 --> 00:38:00.136 A:middle
+tokens over and over again.
+

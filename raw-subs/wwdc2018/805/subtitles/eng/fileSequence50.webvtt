@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:00.046 --> 00:50:01.896 A:middle
+If you take a look at this
+
+00:50:01.896 --> 00:50:03.246 A:middle
+example, you can see a simple
+
+00:50:03.246 --> 00:50:04.866 A:middle
+sphere, being rendered with flat
+
+00:50:04.866 --> 00:50:05.236 A:middle
+shading.
+
+00:50:06.036 --> 00:50:06.836 A:middle
+What this means, that the
+
+00:50:06.836 --> 00:50:08.196 A:middle
+normals associated with each
+
+00:50:08.196 --> 00:50:09.776 A:middle
+face of the mesh are pointing in
+
+00:50:09.776 --> 00:50:11.556 A:middle
+the exact same direction, as
+
+00:50:11.556 --> 00:50:12.686 A:middle
+seen by the 2D diagram.
+
+00:50:13.586 --> 00:50:15.376 A:middle
+Now, when you -- when light
+
+00:50:15.376 --> 00:50:16.676 A:middle
+reacts to this surface, you'll
+
+00:50:16.676 --> 00:50:18.366 A:middle
+be actually able to notice all
+
+00:50:18.366 --> 00:50:19.936 A:middle
+the different polygons
+
+00:50:19.936 --> 00:50:21.246 A:middle
+comprising this mesh due to
+
+00:50:21.246 --> 00:50:22.856 A:middle
+being evenly lit across each
+
+00:50:22.856 --> 00:50:23.286 A:middle
+face.
+
+00:50:23.776 --> 00:50:25.866 A:middle
+Here, though, we're using the
+
+00:50:25.866 --> 00:50:27.496 A:middle
+exact same model, but leveraging
+
+00:50:27.496 --> 00:50:28.866 A:middle
+a technique called smooth or
+
+00:50:28.866 --> 00:50:29.716 A:middle
+phong shading.
+
+00:50:30.346 --> 00:50:31.756 A:middle
+Notice that the normals are
+
+00:50:31.756 --> 00:50:33.186 A:middle
+actually gradually changing as
+
+00:50:33.186 --> 00:50:34.356 A:middle
+you move across the surface of
+
+00:50:34.356 --> 00:50:34.996 A:middle
+the polygon.
+
+00:50:35.786 --> 00:50:37.736 A:middle
+With the engine calculates the
+
+00:50:37.766 --> 00:50:40.076 A:middle
+reflection off of this model,
+
+00:50:40.076 --> 00:50:41.096 A:middle
+it'll give the impression of a
+
+00:50:41.096 --> 00:50:43.016 A:middle
+smooth, curved surface due to
+
+00:50:43.016 --> 00:50:44.636 A:middle
+the gradual interpolation of
+
+00:50:44.636 --> 00:50:45.296 A:middle
+these normals.
+
+00:50:46.726 --> 00:50:48.206 A:middle
+What's really awesome is that
+
+00:50:48.206 --> 00:50:49.486 A:middle
+these two models have the exact
+
+00:50:49.486 --> 00:50:50.366 A:middle
+same number of polygons
+
+00:50:50.366 --> 00:50:51.146 A:middle
+associated with them.
+
+00:50:51.336 --> 00:50:52.186 A:middle
+But, through this normal
+
+00:50:52.186 --> 00:50:54.016 A:middle
+manipulation, the object will
+
+00:50:54.016 --> 00:50:54.946 A:middle
+seem to have a much more
+
+00:50:54.946 --> 00:50:56.626 A:middle
+smoother and detailed surface,
+
+00:50:56.976 --> 00:50:58.466 A:middle
+without the need to, again, add
+
+00:50:58.466 --> 00:50:59.756 A:middle
+or change any of the geometry
+
+00:50:59.756 --> 00:51:01.036 A:middle
+associated with this mesh.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.896 --> 00:31:02.486 A:middle
+Now, at inference time, what you
+
+00:31:02.486 --> 00:31:04.876 A:middle
+do is you drop the model in your
+
+00:31:05.186 --> 00:31:06.266 A:middle
+app, but that's not it.
+
+00:31:07.216 --> 00:31:09.406 A:middle
+You also have to make sure that
+
+00:31:09.406 --> 00:31:10.386 A:middle
+you write the code for
+
+00:31:10.386 --> 00:31:11.586 A:middle
+tokenization and feature
+
+00:31:11.586 --> 00:31:13.336 A:middle
+extraction that is consistent
+
+00:31:13.336 --> 00:31:14.626 A:middle
+with what happened at training
+
+00:31:15.996 --> 00:31:16.136 A:middle
+time.
+
+00:31:16.596 --> 00:31:17.956 A:middle
+It's a lot of effort because you
+
+00:31:17.956 --> 00:31:19.686 A:middle
+have to think about maximizing
+
+00:31:19.686 --> 00:31:20.836 A:middle
+the fidelity of your model.
+
+00:31:20.836 --> 00:31:22.776 A:middle
+It's absolutely important that
+
+00:31:22.776 --> 00:31:24.086 A:middle
+the tokenization featured
+
+00:31:24.086 --> 00:31:26.066 A:middle
+extraction is identical at both
+
+00:31:26.066 --> 00:31:26.996 A:middle
+training and inference time.
+
+00:31:27.916 --> 00:31:29.486 A:middle
+But now with the use of Natural
+
+00:31:29.486 --> 00:31:30.506 A:middle
+Language, you can completely
+
+00:31:30.506 --> 00:31:31.246 A:middle
+obviate this.
+
+00:31:31.516 --> 00:31:34.096 A:middle
+So if you look at the sequence
+
+00:31:34.096 --> 00:31:35.216 A:middle
+at training time, you have
+
+00:31:35.216 --> 00:31:35.886 A:middle
+training data.
+
+00:31:37.276 --> 00:31:38.526 A:middle
+You just pass it to Create ML
+
+00:31:38.596 --> 00:31:39.506 A:middle
+through the APIs that we've
+
+00:31:39.506 --> 00:31:40.276 A:middle
+discussed so far.
+
+00:31:41.176 --> 00:31:42.916 A:middle
+Create ML calls Natural Language
+
+00:31:42.956 --> 00:31:44.136 A:middle
+under the hood, which does the
+
+00:31:44.136 --> 00:31:45.986 A:middle
+tokenization feature extraction,
+
+00:31:46.356 --> 00:31:47.316 A:middle
+chooses the machine learning
+
+00:31:47.316 --> 00:31:49.456 A:middle
+library, does all the work, and
+
+00:31:49.456 --> 00:31:51.456 A:middle
+returns a model which is a Core
+
+00:31:51.456 --> 00:31:52.866 A:middle
+ML model.
+
+00:31:53.076 --> 00:31:54.366 A:middle
+Now at inference time, what you
+
+00:31:54.366 --> 00:31:56.236 A:middle
+do is you still drop this model
+
+00:31:56.236 --> 00:31:58.876 A:middle
+in your app, but you don't have
+
+00:31:58.876 --> 00:32:00.146 A:middle
+to worry about tokenization
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.996 --> 00:32:00.426 A:middle
+SecureCoding on when archiving.
+
+00:32:00.426 --> 00:32:01.636 A:middle
+And this is equally important
+
+00:32:02.116 --> 00:32:03.386 A:middle
+because it makes sure you can't
+
+00:32:03.386 --> 00:32:05.026 A:middle
+accidentally archive an object
+
+00:32:05.336 --> 00:32:06.336 A:middle
+which doesn't conform to
+
+00:32:06.336 --> 00:32:07.136 A:middle
+NSSecureCoding.
+
+00:32:07.406 --> 00:32:08.616 A:middle
+And you wouldn't later able to
+
+00:32:08.616 --> 00:32:09.096 A:middle
+decode it.
+
+00:32:10.096 --> 00:32:11.786 A:middle
+And again, the old initializer
+
+00:32:11.786 --> 00:32:12.816 A:middle
+and convenience methods are
+
+00:32:12.816 --> 00:32:13.386 A:middle
+deprecated.
+
+00:32:13.896 --> 00:32:14.856 A:middle
+And so, this means that if you
+
+00:32:14.856 --> 00:32:15.996 A:middle
+have old code that looks like
+
+00:32:16.036 --> 00:32:19.026 A:middle
+this, well turn on SecureCoding
+
+00:32:19.026 --> 00:32:19.716 A:middle
+when archiving.
+
+00:32:20.446 --> 00:32:21.716 A:middle
+And switch to the convenience
+
+00:32:21.716 --> 00:32:22.986 A:middle
+methods that allow you to pass
+
+00:32:22.986 --> 00:32:23.946 A:middle
+in that type information
+
+00:32:23.946 --> 00:32:24.346 A:middle
+upfront.
+
+00:32:25.606 --> 00:32:26.826 A:middle
+This way, you can actually make
+
+00:32:26.826 --> 00:32:28.166 A:middle
+use of your SecureCoding badge.
+
+00:32:28.676 --> 00:32:29.486 A:middle
+Make sure you've earned it.
+
+00:32:31.116 --> 00:32:32.636 A:middle
+Now, if you can't yet support
+
+00:32:32.636 --> 00:32:33.956 A:middle
+SecureCoding, because your types
+
+00:32:33.956 --> 00:32:35.876 A:middle
+can't conform, or they,
+
+00:32:35.876 --> 00:32:37.226 A:middle
+themselves depend on types which
+
+00:32:37.226 --> 00:32:38.596 A:middle
+don't yet conform, that's okay.
+
+00:32:38.706 --> 00:32:39.996 A:middle
+You can still use these methods.
+
+00:32:40.756 --> 00:32:42.666 A:middle
+On nCode, simply turn off the
+
+00:32:42.666 --> 00:32:43.756 A:middle
+secure coding requirement.
+
+00:32:44.226 --> 00:32:45.396 A:middle
+And on decode, these
+
+00:32:45.396 --> 00:32:46.666 A:middle
+conveniences always have
+
+00:32:46.666 --> 00:32:47.586 A:middle
+SecureCoding enabled.
+
+00:32:48.836 --> 00:32:50.096 A:middle
+So, instead use the new
+
+00:32:50.096 --> 00:32:51.196 A:middle
+initializer to create a
+
+00:32:51.196 --> 00:32:52.816 A:middle
+KeyedUnarchiver, and then turn
+
+00:32:52.816 --> 00:32:54.476 A:middle
+SecureCoding off, manually.
+
+00:32:55.776 --> 00:32:56.536 A:middle
+This also gives you the
+
+00:32:56.536 --> 00:32:58.026 A:middle
+opportunity to reset the
+
+00:32:58.026 --> 00:32:59.456 A:middle
+decoding failure policy back to
+
+00:32:59.456 --> 00:33:01.586 A:middle
+the old default in case you need
+

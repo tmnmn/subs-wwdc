@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.237 --> 00:09:01.675 align:start position:34% line:-2
+ビルドシステムが
+作る場合もあります
+
+00:09:01.775 --> 00:09:05.078 align:start position:29% line:-2
+コンパイラやリンカー用の
+ルールが―
+
+00:09:05.179 --> 00:09:08.382 align:start position:34% line:-2
+あらかじめ
+備わっているのです
+
+00:09:08.482 --> 00:09:13.854 align:start position:27% line:-2
+ルールに従ってインプットや
+アウトプットが決定されます
+
+00:09:15.389 --> 00:09:19.826 align:start position:25% line:-2
+ターゲットの生成順序を決める
+依存関係もあります
+
+00:09:20.160 --> 00:09:24.631 align:start position:29% line:-2
+別ターゲットのソースの
+並列コンパイルも可能です
+
+00:09:24.731 --> 00:09:26.934 align:start position:30% line:-2
+Xcode 9での
+ターゲットのビルドは―
+
+00:09:27.034 --> 00:09:31.705 align:start position:29% line:-2
+依存する別ターゲットの
+処理完了後のみ可能でした
+
+00:09:32.039 --> 00:09:35.642 align:start position:27% line:-2
+Xcode 10では
+ビルド開始が早くなりました
+
+00:09:35.742 --> 00:09:40.881 align:start position:29% line:-2
+コンパイル開始も早くなり
+並列処理も可能です
+
+00:09:41.081 --> 00:09:43.984 align:start position:30% line:-2
+ただし
+並列処理させたい場合―
+
+00:09:44.084 --> 00:09:48.255 align:start position:20% line:-2
+Run Script Phaseは
+先に終了してください
+
+00:09:49.289 --> 00:09:52.993 align:start position:30% line:-2
+ターゲット関連の依存は
+暗黙の依存関係です
+
+00:09:53.193 --> 00:09:56.864 align:start position:0% line:-2
+例えばLink Binary With Libraryに
+ターゲットを入れた時です
+
+00:09:57.231 --> 00:10:01.468 align:start position:2% line:-2
+Find Implicit Dependenciesを
+有効にしておけば―
+

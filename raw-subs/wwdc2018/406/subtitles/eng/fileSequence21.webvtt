@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.566 --> 00:21:02.136 A:middle
+It describes a set of conforming
+
+00:21:02.136 --> 00:21:03.966 A:middle
+types, and gives you the ability
+
+00:21:03.966 --> 00:21:05.136 A:middle
+to write interesting generic
+
+00:21:05.136 --> 00:21:05.996 A:middle
+algorithms on them.
+
+00:21:06.726 --> 00:21:07.756 A:middle
+But, we don't have to reach very
+
+00:21:07.756 --> 00:21:09.316 A:middle
+far to find other
+
+00:21:09.316 --> 00:21:10.906 A:middle
+collection-like algorithms that
+
+00:21:10.906 --> 00:21:12.896 A:middle
+we cannot implement in terms of
+
+00:21:12.896 --> 00:21:14.186 A:middle
+the collection protocol thus
+
+00:21:14.186 --> 00:21:14.556 A:middle
+far.
+
+00:21:15.226 --> 00:21:16.466 A:middle
+For example, if we want to find
+
+00:21:16.466 --> 00:21:18.416 A:middle
+the index of the last element in
+
+00:21:18.416 --> 00:21:20.026 A:middle
+a collection, that matches some
+
+00:21:20.026 --> 00:21:20.626 A:middle
+predicate.
+
+00:21:20.826 --> 00:21:22.136 A:middle
+The best way to do that would be
+
+00:21:22.136 --> 00:21:23.736 A:middle
+to start at the end, and walk
+
+00:21:23.786 --> 00:21:24.426 A:middle
+backwards.
+
+00:21:25.096 --> 00:21:26.086 A:middle
+Collection protocol doesn't let
+
+00:21:26.086 --> 00:21:26.636 A:middle
+us do that.
+
+00:21:27.916 --> 00:21:29.256 A:middle
+Or say we want to build a
+
+00:21:29.256 --> 00:21:30.616 A:middle
+shuffle operation to randomly
+
+00:21:30.616 --> 00:21:31.716 A:middle
+shuffle around the elements in a
+
+00:21:31.716 --> 00:21:32.246 A:middle
+collection.
+
+00:21:32.856 --> 00:21:34.146 A:middle
+Well, that requires mutation,
+
+00:21:34.146 --> 00:21:35.316 A:middle
+and collection doesn't do that.
+
+00:21:35.716 --> 00:21:37.016 A:middle
+Now it's not that the collection
+
+00:21:37.016 --> 00:21:38.426 A:middle
+protocol is wrong.
+
+00:21:39.876 --> 00:21:41.206 A:middle
+But it's that we need something
+
+00:21:41.206 --> 00:21:42.496 A:middle
+more to describe these
+
+00:21:42.496 --> 00:21:44.246 A:middle
+additional generic algorithms,
+
+00:21:44.636 --> 00:21:45.866 A:middle
+and that is the point of
+
+00:21:45.866 --> 00:21:46.956 A:middle
+protocol inheritance.
+
+00:21:47.376 --> 00:21:47.806 A:middle
+So, here the
+
+00:21:47.806 --> 00:21:49.816 A:middle
+bidirectionalCollection protocol
+
+00:21:50.056 --> 00:21:51.856 A:middle
+inherits from, or is a
+
+00:21:52.426 --> 00:21:52.876 A:middle
+collection.
+
+00:21:53.726 --> 00:21:55.026 A:middle
+What that means is that any type
+
+00:21:55.066 --> 00:21:56.236 A:middle
+that conforms to the
+
+00:21:56.236 --> 00:21:57.866 A:middle
+bidirectionalCollection protocol
+
+00:21:58.376 --> 00:21:59.816 A:middle
+also conforms to collection, and
+
+00:21:59.816 --> 00:22:00.776 A:middle
+you can use those collection
+

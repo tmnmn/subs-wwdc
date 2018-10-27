@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.726 --> 00:11:00.066 A:middle
+role.
+
+00:11:00.696 --> 00:11:01.846 A:middle
+So let's change that so they
+
+00:11:01.846 --> 00:11:02.896 A:middle
+have the developer and the
+
+00:11:02.896 --> 00:11:03.556 A:middle
+marketing role.
+
+00:11:04.676 --> 00:11:05.706 A:middle
+We're changing an existing
+
+00:11:05.706 --> 00:11:06.236 A:middle
+resource.
+
+00:11:06.336 --> 00:11:07.656 A:middle
+So we do a PATCH request.
+
+00:11:08.386 --> 00:11:09.766 A:middle
+The URL this time is the
+
+00:11:09.766 --> 00:11:12.256 A:middle
+resource self link of the user
+
+00:11:12.256 --> 00:11:13.046 A:middle
+we're changing.
+
+00:11:13.746 --> 00:11:14.396 A:middle
+And if you look at the
+
+00:11:14.396 --> 00:11:16.326 A:middle
+attributes, we're only including
+
+00:11:16.776 --> 00:11:17.676 A:middle
+the roles attribute.
+
+00:11:17.846 --> 00:11:19.236 A:middle
+This request says change this
+
+00:11:19.236 --> 00:11:21.016 A:middle
+user so that they have the roles
+
+00:11:21.016 --> 00:11:22.776 A:middle
+of DEVELOPER and MARKETING.
+
+00:11:23.066 --> 00:11:23.796 A:middle
+We didn't want to change
+
+00:11:23.796 --> 00:11:25.066 A:middle
+anything else about the user, so
+
+00:11:25.066 --> 00:11:26.546 A:middle
+we specifically didn't include
+
+00:11:26.856 --> 00:11:27.836 A:middle
+the other attributes.
+
+00:11:28.836 --> 00:11:30.336 A:middle
+If we run this request, again we
+
+00:11:30.336 --> 00:11:32.656 A:middle
+get a successful response and we
+
+00:11:32.656 --> 00:11:33.646 A:middle
+get the full resource
+
+00:11:33.646 --> 00:11:35.646 A:middle
+representation of the resource
+
+00:11:35.766 --> 00:11:36.956 A:middle
+with our changes applied.
+
+00:11:37.586 --> 00:11:39.776 A:middle
+Now the last thing you probably
+
+00:11:39.776 --> 00:11:40.746 A:middle
+want to do with the resource is
+
+00:11:40.746 --> 00:11:41.776 A:middle
+delete it and this is the
+
+00:11:41.776 --> 00:11:43.176 A:middle
+simplest operation of them all.
+
+00:11:43.396 --> 00:11:45.326 A:middle
+We just do a DELETE request to
+
+00:11:45.326 --> 00:11:47.056 A:middle
+the resource self link and we
+
+00:11:47.056 --> 00:11:49.536 A:middle
+get a 204 NO CONTENT response.
+
+00:11:49.856 --> 00:11:51.046 A:middle
+If you're familiar with REST,
+
+00:11:51.046 --> 00:11:52.336 A:middle
+you know that any status code in
+
+00:11:52.336 --> 00:11:54.376 A:middle
+the 200s means success.
+
+00:11:54.886 --> 00:11:56.316 A:middle
+So this is the API telling you
+
+00:11:56.316 --> 00:11:57.806 A:middle
+that the user has successfully
+
+00:11:57.806 --> 00:11:58.556 A:middle
+been deleted.
+
+00:11:58.956 --> 00:12:00.156 A:middle
+And we didn't need to include
+

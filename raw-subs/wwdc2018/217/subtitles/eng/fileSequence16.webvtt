@@ -1,0 +1,144 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.056 --> 00:16:00.086 A:middle
+intent, should be sufficient.
+
+00:16:00.926 --> 00:16:01.816 A:middle
+We also don't really want to
+
+00:16:01.816 --> 00:16:02.726 A:middle
+provide a relevanceProvider
+
+00:16:02.726 --> 00:16:02.976 A:middle
+here.
+
+00:16:03.436 --> 00:16:04.356 A:middle
+Because this is something
+
+00:16:04.356 --> 00:16:05.426 A:middle
+habitual for our users.
+
+00:16:05.666 --> 00:16:06.906 A:middle
+They log these often throughout
+
+00:16:06.906 --> 00:16:07.806 A:middle
+the day, and we can take
+
+00:16:07.806 --> 00:16:09.056 A:middle
+advantage of the Siri face's
+
+00:16:09.056 --> 00:16:10.316 A:middle
+prediction engine to show it
+
+00:16:10.316 --> 00:16:11.716 A:middle
+when it most matters to our
+
+00:16:11.716 --> 00:16:12.196 A:middle
+users.
+
+00:16:12.736 --> 00:16:14.966 A:middle
+And, once we're done creating
+
+00:16:14.966 --> 00:16:16.126 A:middle
+our relevantShortcuts, we're not
+
+00:16:16.126 --> 00:16:16.996 A:middle
+done here actually.
+
+00:16:17.286 --> 00:16:18.356 A:middle
+We need to be able to handle
+
+00:16:18.356 --> 00:16:18.846 A:middle
+them as well.
+
+00:16:19.316 --> 00:16:21.316 A:middle
+And, new in watchOS 5 is a
+
+00:16:21.316 --> 00:16:22.396 A:middle
+method on your
+
+00:16:22.396 --> 00:16:23.896 A:middle
+WKExtensionDelegate called
+
+00:16:23.896 --> 00:16:24.836 A:middle
+handle user shortcut.
+
+00:16:26.246 --> 00:16:27.336 A:middle
+And, our first example, if the
+
+00:16:27.336 --> 00:16:28.946 A:middle
+user taps on that Siri platter,
+
+00:16:28.946 --> 00:16:29.766 A:middle
+our application will be
+
+00:16:29.766 --> 00:16:31.396 A:middle
+launched, and we'll be handed a
+
+00:16:31.396 --> 00:16:32.886 A:middle
+user activity to this method,
+
+00:16:33.186 --> 00:16:34.436 A:middle
+whose activity type matches
+
+00:16:34.526 --> 00:16:35.686 A:middle
+com.myapp.LogMeal.
+
+00:16:36.556 --> 00:16:37.716 A:middle
+At this point, we want to make
+
+00:16:37.716 --> 00:16:38.646 A:middle
+sure we go into the right part
+
+00:16:38.646 --> 00:16:39.396 A:middle
+of our application.
+
+00:16:39.496 --> 00:16:40.486 A:middle
+So, we'll jump up to the
+
+00:16:40.486 --> 00:16:41.916 A:middle
+rootInterfaceController, and
+
+00:16:41.916 --> 00:16:42.456 A:middle
+push on our
+
+00:16:42.456 --> 00:16:43.786 A:middle
+logMealInterfaceController.
+
+00:16:44.446 --> 00:16:45.376 A:middle
+We've got to be sure to pass
+
+00:16:45.376 --> 00:16:46.636 A:middle
+along that context we put into
+
+00:16:46.636 --> 00:16:48.076 A:middle
+our user info dictionary, so we
+
+00:16:48.076 --> 00:16:48.976 A:middle
+know which meal we're about to
+
+00:16:48.976 --> 00:16:49.476 A:middle
+be logging.
+
+00:16:49.476 --> 00:16:52.956 A:middle
+For our second example, the
+
+00:16:52.956 --> 00:16:54.316 A:middle
+common case will be that that
+
+00:16:54.316 --> 00:16:55.716 A:middle
+background-capable intent will
+
+00:16:55.716 --> 00:16:57.006 A:middle
+execute successfully in our
+
+00:16:57.006 --> 00:16:57.796 A:middle
+intents extension.
+
+00:16:58.346 --> 00:16:59.076 A:middle
+But, there are a couple
+
+00:16:59.076 --> 00:17:00.506 A:middle
+instances where our application
+

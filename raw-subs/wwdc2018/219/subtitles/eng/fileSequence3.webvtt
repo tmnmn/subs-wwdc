@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.926 --> 00:03:01.286 A:middle
+And these objects in their roles
+
+00:03:01.286 --> 00:03:02.726 A:middle
+as model and view, have
+
+00:03:02.726 --> 00:03:04.236 A:middle
+traditional responsibilities.
+
+00:03:04.926 --> 00:03:06.736 A:middle
+UIImage is responsible for
+
+00:03:06.736 --> 00:03:07.816 A:middle
+loading image content.
+
+00:03:08.016 --> 00:03:09.856 A:middle
+And UIImageView is responsible
+
+00:03:09.856 --> 00:03:11.586 A:middle
+for displaying it, for rendering
+
+00:03:12.976 --> 00:03:13.066 A:middle
+it.
+
+00:03:13.486 --> 00:03:14.336 A:middle
+Now, we can think of this as a
+
+00:03:14.336 --> 00:03:15.836 A:middle
+simple relationship that we
+
+00:03:15.836 --> 00:03:16.866 A:middle
+establish once.
+
+00:03:17.066 --> 00:03:18.336 A:middle
+It's a one-way relationship.
+
+00:03:19.176 --> 00:03:20.956 A:middle
+Bu the actual story is a little
+
+00:03:20.956 --> 00:03:21.896 A:middle
+bit more complicated.
+
+00:03:23.106 --> 00:03:25.146 A:middle
+In addition to rendering being a
+
+00:03:25.146 --> 00:03:26.476 A:middle
+continuous process, rather than
+
+00:03:26.476 --> 00:03:28.706 A:middle
+a one-time event, there's this
+
+00:03:28.706 --> 00:03:29.706 A:middle
+hidden phase.
+
+00:03:30.026 --> 00:03:31.786 A:middle
+It's really important to
+
+00:03:31.786 --> 00:03:33.096 A:middle
+understand in order to measure
+
+00:03:33.096 --> 00:03:33.826 A:middle
+the performance of your
+
+00:03:33.826 --> 00:03:34.416 A:middle
+application.
+
+00:03:34.516 --> 00:03:35.916 A:middle
+And this phase is called
+
+00:03:35.916 --> 00:03:36.476 A:middle
+decoding.
+
+00:03:37.816 --> 00:03:38.576 A:middle
+But in order to discuss
+
+00:03:38.606 --> 00:03:40.326 A:middle
+decoding, I first need to
+
+00:03:40.326 --> 00:03:41.646 A:middle
+discuss a concept called a
+
+00:03:41.646 --> 00:03:42.016 A:middle
+buffer.
+
+00:03:42.856 --> 00:03:44.976 A:middle
+A buffer is just a contiguous
+
+00:03:44.976 --> 00:03:45.866 A:middle
+region of memory.
+
+00:03:46.386 --> 00:03:47.476 A:middle
+But we tend to use the term
+
+00:03:47.476 --> 00:03:49.036 A:middle
+buffer when we're discussing
+
+00:03:49.036 --> 00:03:50.696 A:middle
+memory that's composed of a
+
+00:03:50.696 --> 00:03:53.196 A:middle
+sequence of elements of the same
+
+00:03:53.196 --> 00:03:55.286 A:middle
+size, usually, of the same
+
+00:03:55.286 --> 00:03:56.446 A:middle
+internal construction.
+
+00:03:57.506 --> 00:03:59.366 A:middle
+And for our purposes, one really
+
+00:03:59.366 --> 00:04:01.266 A:middle
+important kind of buffer is an
+

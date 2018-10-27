@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:57.758 --> 00:31:00.794 align:middle line:-2
+卡片内填充有信息
+比如代表移动方向的图片
+
+00:31:01.161 --> 00:31:03.230 align:middle line:-1
+你离目的地还有多远
+
+00:31:04.198 --> 00:31:06.800 align:middle line:-1
+当然了 还有如何到达目的地的指示
+
+00:31:06.867 --> 00:31:08.802 align:middle line:-1
+比如左拐或继续直行
+
+00:31:11.138 --> 00:31:13.173 align:middle line:-1
+让我们看看你需要了解哪些信息
+
+00:31:13.240 --> 00:31:16.410 align:middle line:-2
+从而在CarPlay车载框架中
+使用路线指引
+
+00:31:19.346 --> 00:31:21.515 align:middle line:-2
+CPMapTemplateDelegate
+和mapTemplate
+
+00:31:21.849 --> 00:31:23.217 align:middle line:-1
+你可以从这两个地方开始
+
+00:31:23.684 --> 00:31:25.986 align:middle line:-2
+首先 当用户从路线预览中
+点击那个开始按钮时
+
+00:31:26.653 --> 00:31:29.423 align:middle line:-2
+会在模板委托中调用使用了
+routeChoice的mapTemplate
+
+00:31:29.489 --> 00:31:30.591 align:middle line:-1
+startedTrip
+
+00:31:31.191 --> 00:31:35.062 align:middle line:-1
+这是你要开始导航到目的地的指示
+
+00:31:35.128 --> 00:31:37.097 align:middle line:-1
+通过用户所选择的路线
+
+00:31:38.232 --> 00:31:41.502 align:middle line:-2
+这也是何时开始在app中
+进行导航的时间
+
+00:31:41.568 --> 00:31:44.304 align:middle line:-2
+亦开始向CarPlay车载框架
+提供路线更新的时间
+
+00:31:45.138 --> 00:31:46.006 align:middle line:-2
+你需要调用
+startNavigationSession
+
+00:31:46.073 --> 00:31:49.209 align:middle line:-1
+在你的地图模板上
+
+00:31:49.576 --> 00:31:52.880 align:middle line:-2
+这将给你提供
+CPNavigationSession实例
+
+00:31:53.547 --> 00:31:56.116 align:middle line:-2
+这就是你要管理
+即将发生的移动方向的地方
+
+00:31:58.218 --> 00:32:00.621 align:middle line:-2
+使用CPNavigationSession
+和CPManeuver
+

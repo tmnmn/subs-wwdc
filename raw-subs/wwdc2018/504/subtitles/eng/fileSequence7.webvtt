@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.496 --> 00:07:00.526 A:middle
+time they raise their wrist,
+
+00:07:00.526 --> 00:07:01.356 A:middle
+would want to see our
+
+00:07:01.356 --> 00:07:02.076 A:middle
+application.
+
+00:07:02.586 --> 00:07:04.476 A:middle
+And because we're extending the
+
+00:07:04.476 --> 00:07:05.946 A:middle
+frontmost timeout, then we're
+
+00:07:05.946 --> 00:07:07.266 A:middle
+getting some additional priority
+
+00:07:07.266 --> 00:07:08.286 A:middle
+by the system for our
+
+00:07:08.356 --> 00:07:09.256 A:middle
+URLSessions.
+
+00:07:09.636 --> 00:07:10.766 A:middle
+And again, I'll talk a little
+
+00:07:10.766 --> 00:07:11.776 A:middle
+bit more about that later.
+
+00:07:12.186 --> 00:07:15.656 A:middle
+And the user can, of course, put
+
+00:07:15.656 --> 00:07:16.926 A:middle
+their wrist down at any point,
+
+00:07:17.176 --> 00:07:18.476 A:middle
+so I want to make sure to use a
+
+00:07:18.476 --> 00:07:19.416 A:middle
+backgroundSession.
+
+00:07:19.826 --> 00:07:21.276 A:middle
+So that way, when my application
+
+00:07:21.276 --> 00:07:22.516 A:middle
+goes into the background, my
+
+00:07:22.516 --> 00:07:23.886 A:middle
+download is still occurring.
+
+00:07:24.566 --> 00:07:26.186 A:middle
+And then, I can just download
+
+00:07:26.186 --> 00:07:27.706 A:middle
+that task and appropriately
+
+00:07:27.906 --> 00:07:28.816 A:middle
+resume it.
+
+00:07:29.686 --> 00:07:30.926 A:middle
+And when you're building an
+
+00:07:30.926 --> 00:07:32.886 A:middle
+experience like this, you want
+
+00:07:32.886 --> 00:07:34.556 A:middle
+to indicate download progress
+
+00:07:34.626 --> 00:07:35.796 A:middle
+and, of course, handle any
+
+00:07:35.796 --> 00:07:36.216 A:middle
+errors.
+
+00:07:36.586 --> 00:07:40.406 A:middle
+So let's look at how to do that.
+
+00:07:40.406 --> 00:07:41.196 A:middle
+So here we are.
+
+00:07:41.196 --> 00:07:41.926 A:middle
+I have my class, my
+
+00:07:41.926 --> 00:07:43.796 A:middle
+DownloadManager, which is my
+
+00:07:44.026 --> 00:07:45.536 A:middle
+SessionTaskDelegate and my
+
+00:07:45.566 --> 00:07:47.176 A:middle
+URLSessionDownload Delegate.
+
+00:07:47.666 --> 00:07:49.886 A:middle
+And in the first function, I can
+
+00:07:49.886 --> 00:07:51.296 A:middle
+actually grab the total bytes
+
+00:07:51.296 --> 00:07:52.646 A:middle
+written and divide it by the
+
+00:07:52.646 --> 00:07:54.076 A:middle
+total bytes expected to write.
+
+00:07:54.356 --> 00:07:55.366 A:middle
+So that way, I can get the
+
+00:07:55.366 --> 00:07:56.676 A:middle
+progress of my particular
+
+00:07:56.676 --> 00:07:58.606 A:middle
+download whenever URLSession
+
+00:07:59.006 --> 00:08:00.796 A:middle
+calls me and gives me that
+

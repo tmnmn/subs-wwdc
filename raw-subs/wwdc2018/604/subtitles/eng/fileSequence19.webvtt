@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.696 --> 00:19:00.856 A:middle
+types in your structure to do
+
+00:19:01.376 --> 00:19:01.546 A:middle
+this.
+
+00:19:01.976 --> 00:19:02.746 A:middle
+You put the structure's
+
+00:19:02.746 --> 00:19:05.106 A:middle
+definition and a header which
+
+00:19:05.106 --> 00:19:06.366 A:middle
+you would include in both your
+
+00:19:06.366 --> 00:19:08.466 A:middle
+application code and Metal
+
+00:19:08.466 --> 00:19:08.796 A:middle
+files.
+
+00:19:09.116 --> 00:19:10.756 A:middle
+This way the data layout used by
+
+00:19:10.756 --> 00:19:12.566 A:middle
+your shaders matches what you've
+
+00:19:12.566 --> 00:19:14.036 A:middle
+set in your code because they're
+
+00:19:14.036 --> 00:19:15.286 A:middle
+using the same types.
+
+00:19:16.686 --> 00:19:18.296 A:middle
+This makes bugs due to layout
+
+00:19:18.296 --> 00:19:19.976 A:middle
+mismatches much less common.
+
+00:19:24.046 --> 00:19:25.556 A:middle
+One of the key ways in which
+
+00:19:25.556 --> 00:19:27.716 A:middle
+Metal achieves its efficiency is
+
+00:19:27.716 --> 00:19:29.976 A:middle
+by doing work earlier and less
+
+00:19:30.026 --> 00:19:30.456 A:middle
+frequently.
+
+00:19:31.376 --> 00:19:33.426 A:middle
+So you'll use Xcode to compile
+
+00:19:33.426 --> 00:19:34.896 A:middle
+Metal shader files when you
+
+00:19:34.896 --> 00:19:35.856 A:middle
+build your application.
+
+00:19:36.986 --> 00:19:38.206 A:middle
+This runs a front-end
+
+00:19:38.206 --> 00:19:39.866 A:middle
+compilation performing string
+
+00:19:39.866 --> 00:19:41.826 A:middle
+parsing, shader analysis, and
+
+00:19:41.826 --> 00:19:43.226 A:middle
+some basic optimizations.
+
+00:19:43.986 --> 00:19:45.526 A:middle
+It converts your code into a
+
+00:19:45.526 --> 00:19:46.796 A:middle
+binary intermediate
+
+00:19:46.796 --> 00:19:48.856 A:middle
+representation that is usable on
+
+00:19:48.856 --> 00:19:49.456 A:middle
+any hardware.
+
+00:19:50.456 --> 00:19:52.566 A:middle
+Actual GPU machine code isn't
+
+00:19:52.566 --> 00:19:54.156 A:middle
+built until your app runs on the
+
+00:19:54.156 --> 00:19:54.976 A:middle
+user's system.
+
+00:19:55.516 --> 00:19:56.726 A:middle
+But this removes half the
+
+00:19:56.726 --> 00:19:58.796 A:middle
+compiled time needed when your
+
+00:19:58.796 --> 00:19:58.976 A:middle
+app runs.
+
+00:19:59.996 --> 00:20:02.886 A:middle
+The built intermediate
+

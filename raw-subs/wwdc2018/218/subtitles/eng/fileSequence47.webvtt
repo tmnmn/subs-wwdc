@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.576 --> 00:47:00.516 A:middle
+appearance it's inheriting.
+
+00:47:00.886 --> 00:47:02.246 A:middle
+So, if it inherits darkAqua,
+
+00:47:02.366 --> 00:47:03.526 A:middle
+it's going to choose vibrantDark
+
+00:47:03.826 --> 00:47:05.176 A:middle
+and if it inherits aqua, it'll
+
+00:47:05.176 --> 00:47:05.916 A:middle
+choose vibrantLight.
+
+00:47:06.146 --> 00:47:08.666 A:middle
+And so the fix for this is easy.
+
+00:47:08.666 --> 00:47:10.186 A:middle
+In Interface builder, you can
+
+00:47:10.186 --> 00:47:11.606 A:middle
+set this to inherited and then
+
+00:47:11.606 --> 00:47:12.666 A:middle
+in code you can set the
+
+00:47:12.666 --> 00:47:14.236 A:middle
+appearance to nil or just delete
+
+00:47:14.236 --> 00:47:14.806 A:middle
+your override.
+
+00:47:15.126 --> 00:47:18.476 A:middle
+Interface-- speaking of
+
+00:47:18.476 --> 00:47:20.086 A:middle
+Interface Builder, Interface
+
+00:47:20.086 --> 00:47:22.016 A:middle
+Builder is a great tool for
+
+00:47:22.016 --> 00:47:23.766 A:middle
+designing and previewing your
+
+00:47:23.766 --> 00:47:24.656 A:middle
+views visually.
+
+00:47:25.206 --> 00:47:27.136 A:middle
+And so, for example, here I have
+
+00:47:27.136 --> 00:47:28.726 A:middle
+a view that is actually a custom
+
+00:47:28.726 --> 00:47:30.596 A:middle
+view using IB designable.
+
+00:47:30.986 --> 00:47:32.086 A:middle
+So, I'm rendering a gradient
+
+00:47:32.086 --> 00:47:33.316 A:middle
+here and I can see it right here
+
+00:47:33.316 --> 00:47:34.026 A:middle
+in the canvas.
+
+00:47:34.326 --> 00:47:35.926 A:middle
+And, by default, my canvas is
+
+00:47:35.926 --> 00:47:37.886 A:middle
+previewing my custom designable
+
+00:47:37.886 --> 00:47:39.496 A:middle
+view using the canvas's
+
+00:47:39.496 --> 00:47:41.426 A:middle
+appearance, in this case dark.
+
+00:47:42.336 --> 00:47:43.596 A:middle
+But down at the bottom, we have
+
+00:47:43.596 --> 00:47:45.306 A:middle
+a new toggle that lets you go
+
+00:47:45.306 --> 00:47:46.646 A:middle
+ahead and set it to the light
+
+00:47:46.646 --> 00:47:47.906 A:middle
+appearance so that you can
+
+00:47:47.906 --> 00:47:48.986 A:middle
+preview the way that your view
+
+00:47:48.986 --> 00:47:50.426 A:middle
+looks in either appearance.
+
+00:47:50.936 --> 00:47:52.936 A:middle
+And thanks to Interface
+
+00:47:52.936 --> 00:47:54.156 A:middle
+Builder's great support for
+
+00:47:54.156 --> 00:47:56.446 A:middle
+asset catalog colors, we can
+
+00:47:56.446 --> 00:47:57.876 A:middle
+actually use our custom asset
+
+00:47:57.876 --> 00:47:59.436 A:middle
+catalog colors, which have dark
+
+00:47:59.436 --> 00:48:01.116 A:middle
+and light variants, and we can
+

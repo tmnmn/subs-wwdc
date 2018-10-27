@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:56.643 --> 00:23:00.581 align:middle line:-2
+而且Photos
+是尊重拖拽的隐私设置的
+
+00:23:00.647 --> 00:23:04.251 align:middle line:-1
+所以如果用户选择保留位置信息
+
+00:23:04.318 --> 00:23:08.488 align:middle line:-2
+Photos就会导出一个
+不包含此元数据的新文件
+
+00:23:09.223 --> 00:23:11.992 align:middle line:-1
+下载和导出文件都要花时间
+
+00:23:12.059 --> 00:23:14.027 align:middle line:-1
+你不应该在主交易中这么做
+
+00:23:14.428 --> 00:23:17.431 align:middle line:-1
+因为这样会阻塞你的app UI
+
+00:23:19.499 --> 00:23:23.403 align:middle line:-2
+为了能实现这一功能
+我们需要一个异步API
+
+00:23:24.471 --> 00:23:29.042 align:middle line:-2
+其实我们有这么一个API
+它叫文件承诺
+
+00:23:30.344 --> 00:23:32.913 align:middle line:-1
+文件承诺是一种承诺
+
+00:23:32.980 --> 00:23:36.617 align:middle line:-2
+某个还没有出现在
+磁盘上的特定类型文件
+
+00:23:36.683 --> 00:23:38.986 align:middle line:-1
+会被写入到一个提供的位置上
+
+00:23:39.620 --> 00:23:43.156 align:middle line:-1
+它还允许发送者在后台写文件
+
+00:23:45.559 --> 00:23:48.428 align:middle line:-1
+有两种与文件承诺进行交互的方式
+
+00:23:48.829 --> 00:23:52.099 align:middle line:-2
+通过NSFilePromiseReceiver
+来接收文件
+
+00:23:52.165 --> 00:23:55.202 align:middle line:-2
+以及通过NSFilePromiseProvider
+来提供文件
+
+00:23:55.936 --> 00:23:59.139 align:middle line:-1
+这两个先进的API在两年前
+
+00:23:59.206 --> 00:24:00.240 align:middle line:-2
+就跟macOS Sierra
+一起推出了
+

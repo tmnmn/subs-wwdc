@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.946 --> 00:15:01.066 A:middle
+I, that, I don't think that's
+
+00:15:01.066 --> 00:15:01.786 A:middle
+really the problem here.
+
+00:15:05.336 --> 00:15:07.046 A:middle
+By default, heap will sort by
+
+00:15:07.046 --> 00:15:07.456 A:middle
+count.
+
+00:15:08.376 --> 00:15:09.786 A:middle
+But instead, what I want to see
+
+00:15:09.936 --> 00:15:11.176 A:middle
+is the largest objects, not the
+
+00:15:11.176 --> 00:15:12.586 A:middle
+most numerous, so passing the
+
+00:15:12.586 --> 00:15:14.086 A:middle
+sortBySize flag to heap will
+
+00:15:14.086 --> 00:15:15.176 A:middle
+cause it to sort by size.
+
+00:15:16.616 --> 00:15:17.606 A:middle
+Here I see a few of these
+
+00:15:17.606 --> 00:15:19.576 A:middle
+enormous NSConcreteData objects.
+
+00:15:19.926 --> 00:15:21.246 A:middle
+I should probably attach this
+
+00:15:21.246 --> 00:15:22.586 A:middle
+output and the Memgraph to a bug
+
+00:15:22.586 --> 00:15:24.726 A:middle
+report, but that's not going far
+
+00:15:24.726 --> 00:15:25.216 A:middle
+enough, really.
+
+00:15:25.216 --> 00:15:25.966 A:middle
+I should figure out where these
+
+00:15:25.966 --> 00:15:26.446 A:middle
+came from.
+
+00:15:27.806 --> 00:15:29.186 A:middle
+First, I need to get the address
+
+00:15:29.186 --> 00:15:30.436 A:middle
+for one of these NSConcreteData
+
+00:15:30.436 --> 00:15:30.896 A:middle
+objects.
+
+00:15:31.606 --> 00:15:33.006 A:middle
+The addresses flag in heap.
+
+00:15:33.396 --> 00:15:34.436 A:middle
+When you pass the addresses flag
+
+00:15:34.436 --> 00:15:35.456 A:middle
+to heap with the name of a
+
+00:15:35.456 --> 00:15:36.656 A:middle
+class, it'll give you an address
+
+00:15:36.656 --> 00:15:38.306 A:middle
+for each instance on the heap.
+
+00:15:39.516 --> 00:15:41.186 A:middle
+So now I have these addresses, I
+
+00:15:41.186 --> 00:15:42.226 A:middle
+can find out where one of these
+
+00:15:42.226 --> 00:15:42.656 A:middle
+came from.
+
+00:15:43.926 --> 00:15:44.866 A:middle
+This is where malloc stack
+
+00:15:44.866 --> 00:15:45.756 A:middle
+logging comes in handy.
+
+00:15:46.526 --> 00:15:47.976 A:middle
+When enabled, the system will
+
+00:15:47.976 --> 00:15:49.196 A:middle
+record a backtrace for each
+
+00:15:49.196 --> 00:15:49.826 A:middle
+allocation.
+
+00:15:50.316 --> 00:15:52.196 A:middle
+These logs get captured up when
+
+00:15:52.196 --> 00:15:53.576 A:middle
+we record a Memgraph, and
+
+00:15:53.576 --> 00:15:54.616 A:middle
+they're used to annotate
+
+00:15:54.616 --> 00:15:55.966 A:middle
+existing output for some of our
+
+00:15:55.966 --> 00:15:56.366 A:middle
+tools.
+
+00:15:57.136 --> 00:15:58.306 A:middle
+You can enable it really easily
+
+00:15:58.306 --> 00:15:59.666 A:middle
+in the scheme editor in the
+
+00:15:59.666 --> 00:16:00.576 A:middle
+diagnostics tab.
+

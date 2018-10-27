@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.056 --> 00:44:00.646 A:middle
+bitmap graphics contexts using
+
+00:44:00.776 --> 00:44:02.036 A:middle
+NSGraphicsContext or
+
+00:44:02.036 --> 00:44:03.326 A:middle
+CGBitmapContext.
+
+00:44:03.876 --> 00:44:04.866 A:middle
+And, depending on what you're
+
+00:44:04.866 --> 00:44:06.546 A:middle
+doing, these might also be great
+
+00:44:06.546 --> 00:44:07.856 A:middle
+candidates for replacing with a
+
+00:44:07.856 --> 00:44:09.066 A:middle
+block-based NSImage.
+
+00:44:09.556 --> 00:44:11.796 A:middle
+Further, if you're using the
+
+00:44:11.796 --> 00:44:13.826 A:middle
+NSView cacheDisplay in Rect
+
+00:44:13.826 --> 00:44:15.676 A:middle
+method to cache your image to a
+
+00:44:15.676 --> 00:44:18.186 A:middle
+bitmap rep, just be aware that
+
+00:44:18.186 --> 00:44:19.356 A:middle
+this method is not going to
+
+00:44:19.356 --> 00:44:20.656 A:middle
+capture some of our more
+
+00:44:21.006 --> 00:44:22.966 A:middle
+advanced rendering techniques
+
+00:44:22.966 --> 00:44:25.356 A:middle
+like materials and blurs and
+
+00:44:25.356 --> 00:44:26.466 A:middle
+it's also just another way that
+
+00:44:26.466 --> 00:44:27.546 A:middle
+you can produce drawing that
+
+00:44:27.546 --> 00:44:28.856 A:middle
+goes stale when the appearance
+
+00:44:28.856 --> 00:44:33.376 A:middle
+changes, so be aware of that.
+
+00:44:33.506 --> 00:44:34.426 A:middle
+Here's another situation that
+
+00:44:34.426 --> 00:44:35.366 A:middle
+you might find yourself running
+
+00:44:35.366 --> 00:44:35.676 A:middle
+into.
+
+00:44:36.996 --> 00:44:37.626 A:middle
+If you have an
+
+00:44:37.626 --> 00:44:38.826 A:middle
+NSAttributedString or
+
+00:44:38.866 --> 00:44:40.416 A:middle
+NSTextStorage and you're
+
+00:44:40.416 --> 00:44:41.806 A:middle
+manipulating those attributes
+
+00:44:42.166 --> 00:44:44.156 A:middle
+manually-- say I am in this
+
+00:44:44.156 --> 00:44:44.926 A:middle
+case, I've just set my
+
+00:44:44.926 --> 00:44:46.086 A:middle
+attributes to just be a
+
+00:44:46.086 --> 00:44:47.226 A:middle
+dictionary with a font in it--
+
+00:44:48.166 --> 00:44:48.816 A:middle
+you might find that this
+
+00:44:48.816 --> 00:44:49.316 A:middle
+happens.
+
+00:44:49.316 --> 00:44:51.496 A:middle
+Your text is drawing black even
+
+00:44:51.496 --> 00:44:52.596 A:middle
+when you switch into Dark Mode
+
+00:44:52.596 --> 00:44:53.526 A:middle
+and what has happened here?
+
+00:44:54.666 --> 00:44:56.286 A:middle
+Well, we're missing a foreground
+
+00:44:56.286 --> 00:44:58.536 A:middle
+color attribute and when the
+
+00:44:58.536 --> 00:45:00.136 A:middle
+text drawing engine encounters a
+

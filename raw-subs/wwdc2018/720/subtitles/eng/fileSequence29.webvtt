@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.086 --> 00:29:00.696 A:middle
+And, instead, let's replace it
+
+00:29:00.696 --> 00:29:01.956 A:middle
+with an NFC dictionary.
+
+00:29:04.236 --> 00:29:06.286 A:middle
+Here, this dictionary contains
+
+00:29:06.286 --> 00:29:07.446 A:middle
+information that we've passed
+
+00:29:07.656 --> 00:29:09.676 A:middle
+from the device to the reader in
+
+00:29:09.676 --> 00:29:11.306 A:middle
+order to identify them when they
+
+00:29:11.306 --> 00:29:12.446 A:middle
+check in.
+
+00:29:13.196 --> 00:29:15.496 A:middle
+Next, let's add location data to
+
+00:29:15.496 --> 00:29:17.026 A:middle
+this pass, so it can become
+
+00:29:17.026 --> 00:29:18.206 A:middle
+relevant on the lock screen.
+
+00:29:20.356 --> 00:29:23.006 A:middle
+Here, we set a latitude, a
+
+00:29:23.006 --> 00:29:25.476 A:middle
+longitude, in this case it's
+
+00:29:25.476 --> 00:29:27.286 A:middle
+Discovery Meadow, and relevant
+
+00:29:27.286 --> 00:29:28.446 A:middle
+text that will be displayed in
+
+00:29:28.446 --> 00:29:29.716 A:middle
+the notification on the lock
+
+00:29:29.776 --> 00:29:29.976 A:middle
+screen.
+
+00:29:32.066 --> 00:29:33.776 A:middle
+Now, let's take a look at the
+
+00:29:33.986 --> 00:29:35.716 A:middle
+Swift application, in order to
+
+00:29:35.716 --> 00:29:37.016 A:middle
+see what changes we can make
+
+00:29:37.016 --> 00:29:37.706 A:middle
+there as well.
+
+00:29:41.256 --> 00:29:42.666 A:middle
+Let's first take a look at this
+
+00:29:42.736 --> 00:29:44.156 A:middle
+presentAddPass method.
+
+00:29:44.836 --> 00:29:47.086 A:middle
+This was called when we tapped
+
+00:29:47.086 --> 00:29:47.976 A:middle
+the Add to Wallet button.
+
+00:29:50.046 --> 00:29:52.176 A:middle
+Here, we got the pass from a
+
+00:29:52.176 --> 00:29:53.276 A:middle
+function we called, called
+
+00:29:53.276 --> 00:29:53.666 A:middle
+eventPass.
+
+00:29:53.666 --> 00:29:56.396 A:middle
+Let's go ahead and replace this
+
+00:29:56.396 --> 00:29:57.686 A:middle
+with our newly modified pass.
+

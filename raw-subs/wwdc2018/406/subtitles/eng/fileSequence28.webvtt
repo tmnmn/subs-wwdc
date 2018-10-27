@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.756 --> 00:28:00.946 A:middle
+has said that the slice is a
+
+00:28:00.946 --> 00:28:01.976 A:middle
+bidirectionalCollection.
+
+00:28:02.636 --> 00:28:05.966 A:middle
+We can fix that.
+
+00:28:05.966 --> 00:28:07.606 A:middle
+Let's extend slice to make it
+
+00:28:07.606 --> 00:28:08.156 A:middle
+conform to the
+
+00:28:08.156 --> 00:28:09.156 A:middle
+bidirectionalCollection
+
+00:28:09.156 --> 00:28:09.596 A:middle
+protocol.
+
+00:28:10.536 --> 00:28:11.676 A:middle
+We need to implement this index
+
+00:28:11.676 --> 00:28:13.026 A:middle
+before operation, which we can
+
+00:28:13.026 --> 00:28:14.486 A:middle
+implement in terms of the
+
+00:28:14.486 --> 00:28:16.176 A:middle
+underlying base collection.
+
+00:28:17.146 --> 00:28:18.086 A:middle
+Except the compiler's going to
+
+00:28:18.086 --> 00:28:18.666 A:middle
+complain here.
+
+00:28:19.736 --> 00:28:21.016 A:middle
+The only thing we knew about
+
+00:28:21.016 --> 00:28:22.676 A:middle
+that base collection is that
+
+00:28:22.676 --> 00:28:23.516 A:middle
+it's a collection.
+
+00:28:23.666 --> 00:28:25.366 A:middle
+It doesn't have an index before
+
+00:28:25.366 --> 00:28:26.286 A:middle
+operation on it.
+
+00:28:27.806 --> 00:28:28.966 A:middle
+We know how to fix this.
+
+00:28:29.516 --> 00:28:31.176 A:middle
+All we need to do is introduce a
+
+00:28:31.176 --> 00:28:32.646 A:middle
+requirement into this extension
+
+00:28:32.646 --> 00:28:33.766 A:middle
+to say that well, base needs to
+
+00:28:33.766 --> 00:28:35.016 A:middle
+be a bidirectionalCollection.
+
+00:28:35.786 --> 00:28:37.186 A:middle
+This is conditional conformance.
+
+00:28:38.146 --> 00:28:40.216 A:middle
+All it is, is extensions that
+
+00:28:40.216 --> 00:28:41.836 A:middle
+declare conformance to a
+
+00:28:41.836 --> 00:28:42.366 A:middle
+protocol.
+
+00:28:42.796 --> 00:28:44.016 A:middle
+And then the constraints under
+
+00:28:44.016 --> 00:28:45.416 A:middle
+which that conformance actually
+
+00:28:45.416 --> 00:28:46.136 A:middle
+makes sense.
+
+00:28:46.966 --> 00:28:48.006 A:middle
+And the wonderful thing about
+
+00:28:48.006 --> 00:28:49.146 A:middle
+conditional conformance, is it
+
+00:28:49.146 --> 00:28:50.326 A:middle
+stacks nicely when you have
+
+00:28:50.326 --> 00:28:51.516 A:middle
+these protocol hierarchies.
+
+00:28:51.836 --> 00:28:54.146 A:middle
+So we can also state that slice
+
+00:28:54.146 --> 00:28:55.656 A:middle
+is a randomAccessCollection.
+
+00:28:56.026 --> 00:28:58.056 A:middle
+When its underlying base type is
+
+00:28:58.056 --> 00:28:59.286 A:middle
+a randomAccessCollection.
+

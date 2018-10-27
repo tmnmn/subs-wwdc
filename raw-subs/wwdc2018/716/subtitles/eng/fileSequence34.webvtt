@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.206 --> 00:34:00.396 A:middle
+we expect them, the single one
+
+00:34:00.396 --> 00:34:02.766 A:middle
+in there as an observation.
+
+00:34:03.806 --> 00:34:04.926 A:middle
+What I'm going to do here, I'm
+
+00:34:04.926 --> 00:34:06.936 A:middle
+going to look at the confidence
+
+00:34:06.936 --> 00:34:08.976 A:middle
+property of my observation, and
+
+00:34:08.976 --> 00:34:10.406 A:middle
+I set an arbitrary threshold to
+
+00:34:10.406 --> 00:34:11.036 A:middle
+0.5.
+
+00:34:12.156 --> 00:34:13.315 A:middle
+So, if it's above the threshold,
+
+00:34:13.596 --> 00:34:15.585 A:middle
+I'm going to paint the bounding
+
+00:34:15.585 --> 00:34:17.616 A:middle
+box with solid line, and if it's
+
+00:34:17.616 --> 00:34:18.846 A:middle
+below the threshold, I'm going
+
+00:34:18.846 --> 00:34:19.866 A:middle
+to paint it with a dashed line.
+
+00:34:19.866 --> 00:34:21.196 A:middle
+So, I have, so I can have an
+
+00:34:21.196 --> 00:34:22.856 A:middle
+indication if something is going
+
+00:34:23.036 --> 00:34:23.255 A:middle
+wrong.
+
+00:34:26.116 --> 00:34:27.616 A:middle
+The rest is simple bookkeeping.
+
+00:34:27.716 --> 00:34:30.216 A:middle
+I'm just going to populate my
+
+00:34:30.216 --> 00:34:32.636 A:middle
+rect structure, and this is the
+
+00:34:32.636 --> 00:34:33.795 A:middle
+last step, which is very
+
+00:34:33.795 --> 00:34:34.966 A:middle
+important where I take the
+
+00:34:34.966 --> 00:34:36.076 A:middle
+observation from the current
+
+00:34:36.076 --> 00:34:38.916 A:middle
+iteration, and I assign it for
+
+00:34:38.916 --> 00:34:39.686 A:middle
+the next iteration.
+
+00:34:43.596 --> 00:34:44.866 A:middle
+I'm going to do it a second
+
+00:34:44.866 --> 00:34:45.136 A:middle
+time.
+
+00:34:46.085 --> 00:34:47.106 A:middle
+I'm going to get to this
+
+00:34:47.106 --> 00:34:47.746 A:middle
+breakpoint.
+
+00:34:49.146 --> 00:34:50.346 A:middle
+Going to display my frame.
+
+00:34:51.946 --> 00:34:53.136 A:middle
+I'm going to sleep for the frame
+
+00:34:53.136 --> 00:34:54.966 A:middle
+rate in seconds time to simulate
+
+00:34:54.966 --> 00:34:55.746 A:middle
+the actual movie.
+
+00:34:56.186 --> 00:34:58.096 A:middle
+And then, before you know it,
+
+00:34:58.296 --> 00:34:59.816 A:middle
+you're in the second iteration
+

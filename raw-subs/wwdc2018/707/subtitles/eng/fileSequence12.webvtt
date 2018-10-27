@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.116 --> 00:12:00.036 A:middle
+workout when the user requests
+
+00:12:00.536 --> 00:12:00.626 A:middle
+it.
+
+00:12:02.956 --> 00:12:05.766 A:middle
+So to collect data, if we want
+
+00:12:05.766 --> 00:12:08.526 A:middle
+to add samples that are relevant
+
+00:12:08.526 --> 00:12:11.096 A:middle
+to the workout, like calories,
+
+00:12:11.096 --> 00:12:14.536 A:middle
+or distance, or heart rate, we
+
+00:12:14.536 --> 00:12:16.606 A:middle
+can do that using a very simple
+
+00:12:16.636 --> 00:12:19.666 A:middle
+call, builder.add, and give it
+
+00:12:19.666 --> 00:12:21.516 A:middle
+an array of HKSamples.
+
+00:12:22.116 --> 00:12:25.656 A:middle
+If we have events that we want
+
+00:12:25.656 --> 00:12:27.606 A:middle
+to add to the workout, it's very
+
+00:12:27.606 --> 00:12:28.036 A:middle
+similar.
+
+00:12:29.126 --> 00:12:30.416 A:middle
+We just call builder
+
+00:12:30.576 --> 00:12:32.046 A:middle
+.addWorkoutEvents.
+
+00:12:33.476 --> 00:12:36.306 A:middle
+For metadata, you guessed it.
+
+00:12:36.856 --> 00:12:38.756 A:middle
+With the dictionary of metadata,
+
+00:12:39.006 --> 00:12:41.376 A:middle
+we just call builder.addMetadata
+
+00:12:41.576 --> 00:12:43.806 A:middle
+and pass the dictionary.
+
+00:12:44.466 --> 00:12:48.526 A:middle
+But on Apple Watch, because the
+
+00:12:48.526 --> 00:12:51.536 A:middle
+device is on your wrist and has
+
+00:12:51.606 --> 00:12:53.796 A:middle
+all this wide range of sensors,
+
+00:12:54.216 --> 00:12:55.976 A:middle
+you can actually generate data
+
+00:12:56.056 --> 00:12:58.776 A:middle
+like calories and distance.
+
+00:12:59.166 --> 00:13:01.026 A:middle
+And wouldn't it be cool if we
+

@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.298 --> 00:35:01.034 align:start position:36% line:-2
+これは並列処理を
+可能にする一方―
+
+00:35:01.135 --> 00:35:04.638 align:start position:30% line:-2
+各ファイルを何度も
+解析する必要があります
+
+00:35:05.272 --> 00:35:08.108 align:start position:30% line:-2
+１つの実装が
+.oを生成するごとに―
+
+00:35:08.208 --> 00:35:12.780 align:start position:29% line:-2
+インターフェイスは何度も
+宣言を参照します
+
+00:35:14.147 --> 00:35:16.984 align:start position:23% line:-2
+Xcode 10では
+オーバーヘッドが軽減されました
+
+00:35:17.451 --> 00:35:20.688 align:start position:36% line:-2
+ファイルは
+グループ化され―
+
+00:35:20.788 --> 00:35:23.424 align:start position:34% line:-2
+可能な限りの処理を
+共有します
+
+00:35:24.591 --> 00:35:27.261 align:start position:29% line:-1
+しかも並列処理も可能です
+
+00:35:27.861 --> 00:35:30.497 align:start position:30% line:-2
+グループ内で
+解析結果を共有すれば―
+
+00:35:31.131 --> 00:35:33.967 align:start position:29% line:-2
+繰り返し行うのは
+グループ間の処理のみです
+
+00:35:34.501 --> 00:35:38.238 align:start position:30% line:-2
+個別コンパイルよりも
+処理が少なくて済みます
+
+00:35:38.338 --> 00:35:42.910 align:start position:29% line:-2
+増分デバッグビルド時間は
+かなり短縮されました
+
+00:35:46.113 --> 00:35:49.950 align:start position:23% line:-2
+Swiftコードが呼び出すのは
+Swiftコードだけでなく―
+
+00:35:50.050 --> 00:35:51.985 align:start position:18% line:-1
+Objective-Cも呼び出します
+
+00:35:53.554 --> 00:35:58.425 align:start position:27% line:-2
+PetWallで確認すると
+その必要性が分かります
+
+00:35:58.525 --> 00:36:03.063 align:start position:21% line:-2
+システムのフレームワークは
+Objective-Cだからです
+

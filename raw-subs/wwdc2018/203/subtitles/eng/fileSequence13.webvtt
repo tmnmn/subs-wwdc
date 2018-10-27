@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.806 --> 00:13:00.146 A:middle
+The next thing we want to do is
+
+00:13:00.146 --> 00:13:01.376 A:middle
+we want to do a little bit of
+
+00:13:01.376 --> 00:13:02.316 A:middle
+set-up for our app.
+
+00:13:02.836 --> 00:13:04.076 A:middle
+And we can do this in a method
+
+00:13:04.076 --> 00:13:04.966 A:middle
+called viewDidLoad.
+
+00:13:05.636 --> 00:13:07.486 A:middle
+And a viewDidLoad is created for
+
+00:13:07.486 --> 00:13:09.126 A:middle
+a view controller at the very
+
+00:13:09.126 --> 00:13:10.206 A:middle
+beginning automatically.
+
+00:13:10.696 --> 00:13:12.496 A:middle
+And in here, what I want to do
+
+00:13:12.496 --> 00:13:13.316 A:middle
+is a bit of setup.
+
+00:13:13.646 --> 00:13:15.776 A:middle
+In this case, I want to hide
+
+00:13:15.816 --> 00:13:16.496 A:middle
+some things.
+
+00:13:16.816 --> 00:13:18.116 A:middle
+The first thing I want to hide
+
+00:13:18.116 --> 00:13:19.166 A:middle
+is that points label.
+
+00:13:19.306 --> 00:13:21.006 A:middle
+I don't want that on the screen
+
+00:13:21.106 --> 00:13:22.386 A:middle
+the very beginning of our game.
+
+00:13:23.346 --> 00:13:25.766 A:middle
+So I'll just type points label
+
+00:13:26.186 --> 00:13:27.716 A:middle
+dot-- hmm.
+
+00:13:28.186 --> 00:13:29.086 A:middle
+How about hide?
+
+00:13:30.126 --> 00:13:32.086 A:middle
+Oh look? Looks like there's a
+
+00:13:32.086 --> 00:13:33.616 A:middle
+property called isHidden.
+
+00:13:33.936 --> 00:13:35.286 A:middle
+And if I hit enter, it'll
+
+00:13:35.316 --> 00:13:37.106 A:middle
+autocomplete into Xcode for me.
+
+00:13:37.866 --> 00:13:40.036 A:middle
+To see what isHidden does, I can
+
+00:13:40.036 --> 00:13:41.376 A:middle
+hold down the option key on my
+
+00:13:41.376 --> 00:13:43.736 A:middle
+keyboard, hover over isHidden
+
+00:13:43.736 --> 00:13:45.226 A:middle
+and click.
+
+00:13:45.446 --> 00:13:46.916 A:middle
+When I do this, I can read a bit
+
+00:13:46.916 --> 00:13:48.746 A:middle
+more about what isHidden is, and
+
+00:13:48.746 --> 00:13:49.506 A:middle
+what I can do with it.
+
+00:13:49.506 --> 00:13:51.576 A:middle
+In this case, I see that it's
+
+00:13:51.576 --> 00:13:52.886 A:middle
+both a getter and a setter.
+
+00:13:53.176 --> 00:13:54.116 A:middle
+Which means that I can set
+
+00:13:54.166 --> 00:13:56.596 A:middle
+isHidden equal to true, and it
+
+00:13:56.596 --> 00:13:57.976 A:middle
+should hide my points label at
+
+00:13:57.976 --> 00:14:00.646 A:middle
+the very beginning of my game.
+

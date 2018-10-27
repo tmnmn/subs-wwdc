@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:55.963 --> 00:20:00.801 align:start position:12% line:-2
+SDKのヘッダ Foundation.hを
+インクルードしています
+
+00:20:01.835 --> 00:20:03.904 align:start position:34% line:-1
+先ほどの手順では―
+
+00:20:04.338 --> 00:20:08.075 align:start position:36% line:-2
+システムヘッダは
+見つけられません
+
+00:20:08.776 --> 00:20:13.747 align:start position:30% line:-2
+ヘッダマップは
+自分のヘッダ用なので―
+
+00:20:13.847 --> 00:20:15.382 align:start position:34% line:-1
+今は必要ありません
+
+00:20:16.016 --> 00:20:19.419 align:start position:32% line:-2
+インクルードのパスを
+見ていきます
+
+00:20:19.853 --> 00:20:23.791 align:start position:30% line:-2
+デフォルト状態なら
+ディレクトリは２つです
+
+00:20:23.891 --> 00:20:26.260 align:start position:18% line:-1
+１つ目は/usr/includeです
+
+00:20:26.427 --> 00:20:29.496 align:start position:0% line:-2
+２つ目は
+/System/Library/Frameworksです
+
+00:20:30.230 --> 00:20:31.798 align:start position:34% line:-1
+１つ目を確認します
+
+00:20:33.400 --> 00:20:35.102 align:start position:32% line:-2
+普通のインクルード
+ディレクトリなので―
+
+00:20:35.202 --> 00:20:38.605 align:start position:36% line:-2
+検索したい対象を
+付けるだけです
+
+00:20:38.705 --> 00:20:41.642 align:start position:5% line:-2
+この場合は
+Foundation/Faoudation.hです
+
+00:20:42.209 --> 00:20:44.845 align:start position:30% line:-1
+ヘッダはないようですね
+
+00:20:45.479 --> 00:20:47.714 align:start position:30% line:-1
+では２つ目を確認します
+
+00:20:48.515 --> 00:20:51.018 align:start position:0% line:-1
+/System/Library/Frameworksです
+
+00:20:52.085 --> 00:20:54.688 align:start position:30% line:-2
+こちらはフレームワーク
+ディレクトリですから―
+
+00:20:54.788 --> 00:20:57.257 align:start position:25% line:-1
+Clangの挙動が異なります
+
+00:20:57.357 --> 00:21:01.762 align:start position:30% line:-2
+まずフレームワーク名を
+特定し―
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.446 --> 00:10:02.126 A:middle
+So, will filter out any products
+
+00:10:02.126 --> 00:10:03.246 A:middle
+that don't contain the music
+
+00:10:03.246 --> 00:10:03.546 A:middle
+tag.
+
+00:10:03.546 --> 00:10:04.676 A:middle
+And here, I have that
+
+00:10:04.676 --> 00:10:05.316 A:middle
+substructure.
+
+00:10:05.316 --> 00:10:06.416 A:middle
+That list of tags, which will
+
+00:10:06.416 --> 00:10:08.256 A:middle
+downcast an array of strings and
+
+00:10:08.256 --> 00:10:11.386 A:middle
+make use of it, right.
+
+00:10:11.596 --> 00:10:14.696 A:middle
+Whoops. Each of those forced
+
+00:10:14.696 --> 00:10:16.176 A:middle
+downcasts, actually contains a
+
+00:10:16.176 --> 00:10:17.146 A:middle
+hidden fatal error.
+
+00:10:18.236 --> 00:10:19.736 A:middle
+If either of those casts fails
+
+00:10:20.046 --> 00:10:21.996 A:middle
+because the API changed or the
+
+00:10:21.996 --> 00:10:23.326 A:middle
+data changed along the way
+
+00:10:23.326 --> 00:10:24.506 A:middle
+before it made into my app,
+
+00:10:24.586 --> 00:10:26.266 A:middle
+again due to data corruption or
+
+00:10:26.266 --> 00:10:28.496 A:middle
+malicious changing, those
+
+00:10:28.496 --> 00:10:29.486 A:middle
+downcasts will fail.
+
+00:10:29.516 --> 00:10:31.566 A:middle
+And when they do fail, they'll
+
+00:10:31.876 --> 00:10:33.136 A:middle
+abort, and they'll crash my app.
+
+00:10:33.206 --> 00:10:34.006 A:middle
+And again, that's a bad
+
+00:10:34.006 --> 00:10:35.226 A:middle
+experience for my customers.
+
+00:10:35.656 --> 00:10:37.526 A:middle
+Let's take a look at how this
+
+00:10:37.526 --> 00:10:37.976 A:middle
+could happen.
+
+00:10:38.986 --> 00:10:40.266 A:middle
+So, here again is that sample
+
+00:10:40.476 --> 00:10:41.336 A:middle
+API response.
+
+00:10:42.166 --> 00:10:43.466 A:middle
+And we'll take a look at the
+
+00:10:43.466 --> 00:10:44.466 A:middle
+list of tags here.
+
+00:10:45.216 --> 00:10:47.616 A:middle
+And say that second tag in there
+
+00:10:48.146 --> 00:10:48.806 A:middle
+is modified.
+
+00:10:49.506 --> 00:10:50.966 A:middle
+Instead of a string, we have a
+
+00:10:50.966 --> 00:10:51.346 A:middle
+number.
+
+00:10:51.636 --> 00:10:52.796 A:middle
+It's maliciously changed by a
+
+00:10:52.796 --> 00:10:54.146 A:middle
+third-party, or maybe again due
+
+00:10:54.146 --> 00:10:55.206 A:middle
+to regular data corruption.
+
+00:10:55.206 --> 00:10:57.666 A:middle
+We can't always tell.
+
+00:10:57.876 --> 00:10:59.836 A:middle
+Downcasting this list of tags
+

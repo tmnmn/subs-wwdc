@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.686 --> 00:16:00.226 A:middle
+So, you have a variety of
+
+00:16:00.226 --> 00:16:01.286 A:middle
+[inaudible] that you can use
+
+00:16:01.286 --> 00:16:02.176 A:middle
+such as Core Image,
+
+00:16:04.416 --> 00:16:05.926 A:middle
+Metal-with-Metal performance
+
+00:16:05.926 --> 00:16:07.886 A:middle
+shaders, as well as VImage if
+
+00:16:07.886 --> 00:16:09.176 A:middle
+you want to stay on the CPU.
+
+00:16:10.456 --> 00:16:12.106 A:middle
+That initial port from prototype
+
+00:16:12.106 --> 00:16:13.886 A:middle
+to production can be quite time
+
+00:16:13.886 --> 00:16:15.086 A:middle
+consuming, and the very first
+
+00:16:15.086 --> 00:16:17.416 A:middle
+render might not exactly look
+
+00:16:17.416 --> 00:16:18.416 A:middle
+like what you're expecting.
+
+00:16:19.406 --> 00:16:21.256 A:middle
+And there is a great variety of
+
+00:16:21.256 --> 00:16:22.476 A:middle
+sources that can contribute to
+
+00:16:22.476 --> 00:16:24.146 A:middle
+these pixel differences, one of
+
+00:16:24.346 --> 00:16:25.756 A:middle
+them being simply the fact that
+
+00:16:25.756 --> 00:16:26.786 A:middle
+the way filters are implemented
+
+00:16:26.786 --> 00:16:28.576 A:middle
+across frameworks can be quite
+
+00:16:28.576 --> 00:16:29.016 A:middle
+different.
+
+00:16:29.216 --> 00:16:30.726 A:middle
+If you take an example here on
+
+00:16:30.726 --> 00:16:32.236 A:middle
+the left-hand side, we have a
+
+00:16:32.236 --> 00:16:33.336 A:middle
+[inaudible] blur that applies
+
+00:16:33.336 --> 00:16:34.866 A:middle
+this nice feathering from
+
+00:16:34.866 --> 00:16:36.116 A:middle
+foreground to background.
+
+00:16:36.526 --> 00:16:37.496 A:middle
+And that's an example of a
+
+00:16:37.496 --> 00:16:40.106 A:middle
+filter that can leverage a grid
+
+00:16:40.106 --> 00:16:41.096 A:middle
+variety of performance
+
+00:16:41.096 --> 00:16:42.586 A:middle
+optimizations under the hood to
+
+00:16:42.586 --> 00:16:43.576 A:middle
+make it much faster.
+
+00:16:44.436 --> 00:16:46.226 A:middle
+All these optimizations can
+
+00:16:46.226 --> 00:16:47.836 A:middle
+introduce numerical errors which
+
+00:16:47.836 --> 00:16:48.916 A:middle
+will propagate in your filter
+
+00:16:48.916 --> 00:16:51.436 A:middle
+stack, thereby potentially
+
+00:16:51.556 --> 00:16:53.286 A:middle
+creating dramatic changes in
+
+00:16:53.286 --> 00:16:54.036 A:middle
+your filter output.
+
+00:16:55.806 --> 00:16:56.906 A:middle
+Another problem that typically
+
+00:16:56.906 --> 00:16:58.026 A:middle
+arises when you're putting your
+
+00:16:58.026 --> 00:16:59.626 A:middle
+code, is that when you're
+
+00:16:59.626 --> 00:17:00.866 A:middle
+prototyping environment, a lot
+

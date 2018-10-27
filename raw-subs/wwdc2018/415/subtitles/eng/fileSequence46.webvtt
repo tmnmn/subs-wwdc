@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.106 --> 00:46:00.606 A:middle
+And this API's available on the
+
+00:46:00.606 --> 00:46:01.196 A:middle
+iOS 11.
+
+00:46:01.686 --> 00:46:03.156 A:middle
+This, that's what it all boils
+
+00:46:03.156 --> 00:46:04.536 A:middle
+down to by the time it gets to
+
+00:46:04.536 --> 00:46:05.106 A:middle
+the linker.
+
+00:46:05.376 --> 00:46:06.626 A:middle
+So the linker can determine what
+
+00:46:06.626 --> 00:46:07.656 A:middle
+symbols are definitely going to
+
+00:46:07.656 --> 00:46:08.856 A:middle
+be there versus what symbols it
+
+00:46:08.856 --> 00:46:11.606 A:middle
+may have to, it may have to deal
+
+00:46:11.606 --> 00:46:12.856 A:middle
+with at runtime.
+
+00:46:14.756 --> 00:46:16.776 A:middle
+Languages can also encode data
+
+00:46:16.776 --> 00:46:18.426 A:middle
+into the symbol by mangling it,
+
+00:46:18.426 --> 00:46:19.786 A:middle
+as Devin mentioned earlier.
+
+00:46:19.786 --> 00:46:25.066 A:middle
+And you'll see that in both C++
+
+00:46:25.506 --> 00:46:27.186 A:middle
+and Swift.
+
+00:46:27.326 --> 00:46:29.346 A:middle
+So we have symbols which are
+
+00:46:29.346 --> 00:46:32.506 A:middle
+these names referring to code
+
+00:46:32.506 --> 00:46:33.136 A:middle
+and data.
+
+00:46:33.476 --> 00:46:35.866 A:middle
+So the compilers generate object
+
+00:46:35.866 --> 00:46:36.076 A:middle
+files.
+
+00:46:36.076 --> 00:46:37.256 A:middle
+And those object files are just
+
+00:46:37.286 --> 00:46:40.996 A:middle
+collections of those code and
+
+00:46:40.996 --> 00:46:41.296 A:middle
+data.
+
+00:46:41.296 --> 00:46:43.956 A:middle
+They are not executable.
+
+00:46:43.956 --> 00:46:45.496 A:middle
+While they are compiled code,
+
+00:46:46.026 --> 00:46:47.436 A:middle
+they aren't finished.
+
+00:46:47.816 --> 00:46:49.446 A:middle
+There are bits missing which is
+
+00:46:49.446 --> 00:46:50.486 A:middle
+what the linker's going to glue
+
+00:46:50.486 --> 00:46:53.946 A:middle
+together and fix up.
+
+00:46:54.226 --> 00:46:55.986 A:middle
+Each fragment in one of those
+
+00:46:55.986 --> 00:46:56.976 A:middle
+files is represented by a
+
+00:46:56.976 --> 00:46:57.336 A:middle
+symbol.
+
+00:46:57.336 --> 00:47:00.956 A:middle
+So for the printf function,
+

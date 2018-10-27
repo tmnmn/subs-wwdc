@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.752 --> 00:37:01.555 align:start position:34% line:-2
+この中にコマンドを
+エンコードします
+
+00:37:01.655 --> 00:37:04.958 align:start position:36% line:-2
+これについては
+のちほど触れます
+
+00:37:05.759 --> 00:37:10.264 align:start position:23% line:-2
+エンコーディングの終了後
+commitメソッドをコールし
+
+00:37:10.464 --> 00:37:14.668 align:start position:27% line:-2
+コマンドバッファは
+GPUに送られ処理されます
+
+00:37:15.903 --> 00:37:19.106 align:start position:30% line:-2
+このコマンドバッファが
+GPU処理されている間
+
+00:37:19.206 --> 00:37:21.875 align:start position:30% line:-1
+２つの選択肢があります
+
+00:37:23.410 --> 00:37:27.414 align:start position:9% line:-2
+OpenGLのglFinishに似た
+waitUntilCompletedメソッドを
+
+00:37:27.514 --> 00:37:30.184 align:start position:30% line:-1
+コールして待機できます
+
+00:37:30.784 --> 00:37:34.988 align:start position:23% line:-2
+この同期的に待機するメソッドは
+コマンドバッファの
+
+00:37:35.088 --> 00:37:39.093 align:start position:23% line:-2
+すべてのコマンドが
+GPU処理されるまで戻りません
+
+00:37:41.061 --> 00:37:46.667 align:start position:27% line:-2
+またこのコマンドバッファを
+GPUにゆだねる前に
+
+00:37:46.767 --> 00:37:50.337 align:start position:23% line:-2
+完了ハンドラを加えることができ
+これはコマンドバッファの
+
+00:37:50.504 --> 00:37:53.540 align:start position:30% line:-2
+GPU処理が終了すると
+呼び出されます
+
+00:37:53.807 --> 00:37:58.011 align:start position:25% line:-2
+これによってCPUとGPUの
+並列処理が可能になります
+
+00:37:58.312 --> 00:38:02.816 align:start position:23% line:-2
+また毎フレームデータが変化する
+共有リソースをトラックして
+

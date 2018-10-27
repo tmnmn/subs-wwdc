@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.166 --> 00:29:00.216 A:middle
+memoryless render target
+
+00:29:00.216 --> 00:29:02.066 A:middle
+feature, saving that memory is
+
+00:29:02.066 --> 00:29:03.066 A:middle
+really, really simple.
+
+00:29:03.616 --> 00:29:04.846 A:middle
+You just create a texture with a
+
+00:29:04.846 --> 00:29:06.776 A:middle
+memoryless flag set, and Metal's
+
+00:29:06.776 --> 00:29:08.246 A:middle
+only going to let you use it as
+
+00:29:08.246 --> 00:29:09.416 A:middle
+an attachment without load or
+
+00:29:09.416 --> 00:29:10.176 A:middle
+store actions.
+
+00:29:10.746 --> 00:29:13.376 A:middle
+So now, let's take a look at how
+
+00:29:13.376 --> 00:29:14.476 A:middle
+easy it is to adopt programmable
+
+00:29:14.476 --> 00:29:15.606 A:middle
+blending in your shaders.
+
+00:29:16.156 --> 00:29:20.056 A:middle
+Okay, so here's what the
+
+00:29:20.056 --> 00:29:21.236 A:middle
+fragment shader of your lighting
+
+00:29:21.236 --> 00:29:22.516 A:middle
+pass would look like with
+
+00:29:22.516 --> 00:29:23.366 A:middle
+programmable blending.
+
+00:29:24.196 --> 00:29:25.786 A:middle
+Programmable blending is enabled
+
+00:29:25.786 --> 00:29:26.856 A:middle
+when you both read and write
+
+00:29:26.856 --> 00:29:27.606 A:middle
+your attachments.
+
+00:29:27.986 --> 00:29:29.526 A:middle
+And in this example, we see that
+
+00:29:29.526 --> 00:29:30.666 A:middle
+the G-buffer attachments are
+
+00:29:30.666 --> 00:29:32.306 A:middle
+both inputs and outputs to our
+
+00:29:32.306 --> 00:29:32.856 A:middle
+functions.
+
+00:29:32.956 --> 00:29:36.826 A:middle
+We first calculate our lighting
+
+00:29:36.826 --> 00:29:38.146 A:middle
+using our G-buffer properties.
+
+00:29:38.856 --> 00:29:39.886 A:middle
+As you can see here, we're
+
+00:29:39.886 --> 00:29:41.006 A:middle
+reading our attachments and
+
+00:29:41.006 --> 00:29:41.866 A:middle
+we're not sampling them as
+
+00:29:41.866 --> 00:29:42.376 A:middle
+textures.
+
+00:29:42.916 --> 00:29:45.676 A:middle
+We then accumulate our lighting
+
+00:29:45.676 --> 00:29:47.186 A:middle
+result back into the G-buffer,
+
+00:29:47.186 --> 00:29:48.126 A:middle
+and, in this step, we're both
+
+00:29:48.126 --> 00:29:49.306 A:middle
+reading and writing our
+
+00:29:49.306 --> 00:29:50.226 A:middle
+accumulation attachments.
+
+00:29:50.616 --> 00:29:52.156 A:middle
+So that's it.
+
+00:29:52.406 --> 00:29:53.946 A:middle
+Programmable blending is really
+
+00:29:53.946 --> 00:29:55.256 A:middle
+that easy, and you should it
+
+00:29:55.256 --> 00:29:56.516 A:middle
+where, whenever you have
+
+00:29:56.516 --> 00:29:58.176 A:middle
+multiple render passes that read
+
+00:29:58.176 --> 00:29:59.356 A:middle
+and write the same attachments.
+

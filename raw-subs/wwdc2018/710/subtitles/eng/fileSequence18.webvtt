@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.536 --> 00:18:01.146 A:middle
+So today the user can launch
+
+00:18:01.146 --> 00:18:03.216 A:middle
+your application if touches were
+
+00:18:03.216 --> 00:18:04.706 A:middle
+not allowed by simply tapping
+
+00:18:04.916 --> 00:18:07.126 A:middle
+the content extension view.
+
+00:18:08.036 --> 00:18:09.786 A:middle
+They could also do so by tapping
+
+00:18:10.046 --> 00:18:12.116 A:middle
+your application icon in the top
+
+00:18:12.596 --> 00:18:14.126 A:middle
+left corner.
+
+00:18:14.226 --> 00:18:15.966 A:middle
+Or you could create a foreground
+
+00:18:15.966 --> 00:18:17.786 A:middle
+action, which then would in turn
+
+00:18:17.786 --> 00:18:19.266 A:middle
+launch the application.
+
+00:18:20.936 --> 00:18:22.926 A:middle
+But what if you wanted to do
+
+00:18:22.926 --> 00:18:24.106 A:middle
+this from your own custom
+
+00:18:24.106 --> 00:18:24.646 A:middle
+control?
+
+00:18:25.986 --> 00:18:27.056 A:middle
+What if you wanted to launch the
+
+00:18:27.056 --> 00:18:28.306 A:middle
+application programmatically?
+
+00:18:29.206 --> 00:18:30.746 A:middle
+To enable this, there is a new
+
+00:18:30.746 --> 00:18:33.136 A:middle
+API on the NSExtensionContext
+
+00:18:33.136 --> 00:18:34.656 A:middle
+called performNotification
+
+00:18:34.656 --> 00:18:36.476 A:middle
+DefaultAction, which would allow
+
+00:18:36.476 --> 00:18:40.936 A:middle
+you to do this now.
+
+00:18:40.936 --> 00:18:42.026 A:middle
+Now, what does the default
+
+00:18:42.026 --> 00:18:42.546 A:middle
+action mean?
+
+00:18:43.156 --> 00:18:45.006 A:middle
+So, as we said, it launches the
+
+00:18:45.006 --> 00:18:47.046 A:middle
+application, but at the same
+
+00:18:47.046 --> 00:18:48.036 A:middle
+time, it calls the
+
+00:18:48.036 --> 00:18:49.776 A:middle
+UserNotificationCenter did
+
+00:18:49.776 --> 00:18:51.826 A:middle
+receive response method in your
+
+00:18:51.826 --> 00:18:52.656 A:middle
+application delegate.
+
+00:18:54.066 --> 00:18:55.416 A:middle
+Now the UNNotificationResponse
+
+00:18:55.416 --> 00:18:56.876 A:middle
+object contains the information
+
+00:18:56.876 --> 00:18:58.316 A:middle
+of the notification from which
+
+00:18:58.316 --> 00:19:00.536 A:middle
+the user came, so you can update
+

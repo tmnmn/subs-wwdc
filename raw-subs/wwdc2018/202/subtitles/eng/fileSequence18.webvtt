@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.686 --> 00:18:00.726 A:middle
+of cases where there were some
+
+00:18:00.726 --> 00:18:02.496 A:middle
+common pitfalls that different
+
+00:18:02.566 --> 00:18:03.546 A:middle
+apps were falling in to.
+
+00:18:04.026 --> 00:18:05.086 A:middle
+So we'll show you some of the
+
+00:18:05.156 --> 00:18:06.406 A:middle
+simple best practices that you
+
+00:18:06.406 --> 00:18:08.376 A:middle
+can follow in order to optimize
+
+00:18:08.376 --> 00:18:09.486 A:middle
+your app layout as well.
+
+00:18:10.796 --> 00:18:11.766 A:middle
+So this morning, though, let's
+
+00:18:11.816 --> 00:18:13.466 A:middle
+look at how Auto Layout is
+
+00:18:13.466 --> 00:18:16.306 A:middle
+faster by default in iOS 12 by
+
+00:18:16.386 --> 00:18:17.976 A:middle
+looking at the asymptotic
+
+00:18:18.016 --> 00:18:20.996 A:middle
+behavior of Auto Layout as we
+
+00:18:20.996 --> 00:18:23.336 A:middle
+add more views in some common
+
+00:18:23.446 --> 00:18:24.296 A:middle
+user scenarios.
+
+00:18:25.646 --> 00:18:26.346 A:middle
+Now, we're looking at the
+
+00:18:26.346 --> 00:18:28.196 A:middle
+asymptotics because we really
+
+00:18:28.196 --> 00:18:29.476 A:middle
+want to look at what happens as
+
+00:18:29.476 --> 00:18:31.056 A:middle
+we dramatically increase the
+
+00:18:31.056 --> 00:18:31.956 A:middle
+number of views.
+
+00:18:32.366 --> 00:18:33.776 A:middle
+This can really make performance
+
+00:18:33.776 --> 00:18:35.486 A:middle
+issues show up quickly when we
+
+00:18:35.486 --> 00:18:37.216 A:middle
+go to a really like absurdly
+
+00:18:37.216 --> 00:18:38.356 A:middle
+large number of views.
+
+00:18:38.866 --> 00:18:39.916 A:middle
+That just helps us see it
+
+00:18:39.916 --> 00:18:40.186 A:middle
+though.
+
+00:18:40.406 --> 00:18:41.776 A:middle
+The optimizations really do
+
+00:18:41.776 --> 00:18:43.316 A:middle
+apply and make things faster
+
+00:18:43.316 --> 00:18:44.906 A:middle
+even for small numbers of views.
+
+00:18:45.366 --> 00:18:46.506 A:middle
+So let's start with a really
+
+00:18:46.506 --> 00:18:48.366 A:middle
+common pattern, the simplest
+
+00:18:48.366 --> 00:18:50.246 A:middle
+case really, Independent Sibling
+
+00:18:50.246 --> 00:18:52.576 A:middle
+Views inside of some container.
+
+00:18:53.006 --> 00:18:54.156 A:middle
+Now, these views are positioned
+
+00:18:54.156 --> 00:18:55.386 A:middle
+with constraints against the
+
+00:18:55.386 --> 00:18:57.596 A:middle
+container or other views but not
+
+00:18:57.596 --> 00:18:58.536 A:middle
+against each other.
+
+00:18:58.666 --> 00:18:59.566 A:middle
+They're independent of one
+
+00:18:59.566 --> 00:18:59.876 A:middle
+another.
+

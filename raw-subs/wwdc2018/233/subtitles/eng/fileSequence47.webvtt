@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.026 --> 00:47:00.566 A:middle
+And, right now one of our labels
+
+00:47:00.566 --> 00:47:01.046 A:middle
+is missing.
+
+00:47:02.276 --> 00:47:03.286 A:middle
+So, we're going to run dump on
+
+00:47:03.286 --> 00:47:05.636 A:middle
+our parent view, and take a look
+
+00:47:05.636 --> 00:47:06.396 A:middle
+at what's going on here.
+
+00:47:07.906 --> 00:47:08.796 A:middle
+So, we've found our missing
+
+00:47:08.796 --> 00:47:09.246 A:middle
+label.
+
+00:47:09.246 --> 00:47:12.046 A:middle
+It is here, but it's -- if we
+
+00:47:12.046 --> 00:47:13.076 A:middle
+bring up and look at the
+
+00:47:13.116 --> 00:47:14.906 A:middle
+imageView that's alongside it,
+
+00:47:15.756 --> 00:47:18.236 A:middle
+we notice that the frame of
+
+00:47:18.236 --> 00:47:19.896 A:middle
+these two things, they both have
+
+00:47:19.896 --> 00:47:20.926 A:middle
+the same origin.
+
+00:47:22.126 --> 00:47:22.916 A:middle
+So, what's likely happening
+
+00:47:22.916 --> 00:47:24.366 A:middle
+here, is that the label is
+
+00:47:24.366 --> 00:47:26.226 A:middle
+obstructed by the imageView.
+
+00:47:27.296 --> 00:47:28.086 A:middle
+So, we need to go and look at
+
+00:47:28.086 --> 00:47:29.826 A:middle
+our layout code again, I think.
+
+00:47:30.576 --> 00:47:34.136 A:middle
+In addition to dump for Swift
+
+00:47:34.136 --> 00:47:36.406 A:middle
+objects, if you still have some
+
+00:47:36.406 --> 00:47:37.816 A:middle
+Objective-C code lying around,
+
+00:47:38.606 --> 00:47:40.306 A:middle
+NSObject also has the
+
+00:47:40.366 --> 00:47:41.546 A:middle
+ivarDescription method.
+
+00:47:42.856 --> 00:47:44.146 A:middle
+This will print all of the
+
+00:47:44.146 --> 00:47:45.676 A:middle
+instance variables of your
+
+00:47:45.676 --> 00:47:46.806 A:middle
+Objective-C objects.
+
+00:47:48.546 --> 00:47:49.986 A:middle
+We have another bug in our
+
+00:47:49.986 --> 00:47:51.716 A:middle
+screenshot's code, where our
+
+00:47:51.716 --> 00:47:53.176 A:middle
+crop handles aren't working for
+
+00:47:53.176 --> 00:47:53.626 A:middle
+some reason.
+
+00:47:54.116 --> 00:47:57.786 A:middle
+If we call ivarDescription on
+
+00:47:57.786 --> 00:47:59.926 A:middle
+our screenshot's view, we can
+
+00:47:59.926 --> 00:48:02.826 A:middle
+see by looking closely, that our
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:59:58.516 --> 01:00:05.856 A:middle
+[ Applause ]
+
+01:00:06.356 --> 01:00:08.296 A:middle
+Now this is far cooler to see if
+
+01:00:08.296 --> 01:00:09.716 A:middle
+you see how it's all done inside
+
+01:00:09.716 --> 01:00:11.726 A:middle
+Xcode and Xcode Playgrounds, so
+
+01:00:11.726 --> 01:00:13.166 A:middle
+I'd like to invite Lizzie up to
+
+01:00:13.166 --> 01:00:14.186 A:middle
+give you a demo of that now.
+
+01:00:14.856 --> 01:00:16.856 A:middle
+[ Applause ]
+
+01:00:17.196 --> 01:00:17.406 A:middle
+Lizzie?
+
+01:00:18.746 --> 01:00:19.276 A:middle
+&gt;&gt; Thank you, John.
+
+01:00:20.196 --> 01:00:21.506 A:middle
+Let's take a look at how to
+
+01:00:21.506 --> 01:00:23.456 A:middle
+create an app to classify
+
+01:00:23.456 --> 01:00:24.936 A:middle
+different types of flowers.
+
+01:00:25.686 --> 01:00:26.986 A:middle
+Now I've started by using a
+
+01:00:27.136 --> 01:00:28.146 A:middle
+state-of-the-art image
+
+01:00:28.146 --> 01:00:29.516 A:middle
+classifier model called
+
+01:00:29.516 --> 01:00:31.726 A:middle
+Inception B3, but there are two
+
+01:00:31.726 --> 01:00:33.076 A:middle
+problems with this approach.
+
+01:00:33.506 --> 01:00:35.486 A:middle
+One, this model is quite large.
+
+01:00:35.486 --> 01:00:37.846 A:middle
+It's taking up 100 megabytes in
+
+01:00:37.846 --> 01:00:39.076 A:middle
+our app.
+
+01:00:39.076 --> 01:00:40.916 A:middle
+And the second is even though
+
+01:00:40.916 --> 01:00:42.986 A:middle
+this model has support for 1000
+
+01:00:43.046 --> 01:00:44.976 A:middle
+classifications, it can't
+
+01:00:45.136 --> 01:00:47.396 A:middle
+correctly classify a rose.
+
+01:00:48.076 --> 01:00:49.826 A:middle
+Now normally what I'd have to do
+
+01:00:49.826 --> 01:00:51.276 A:middle
+is switch to a new development
+
+01:00:51.276 --> 01:00:52.936 A:middle
+environment, download an open
+
+01:00:52.996 --> 01:00:54.466 A:middle
+source machine learning library
+
+01:00:54.466 --> 01:00:56.216 A:middle
+and spend hours training a new
+
+01:00:56.216 --> 01:00:56.586 A:middle
+model.
+
+01:00:57.376 --> 01:00:59.686 A:middle
+But now with the power of Create
+
+01:00:59.796 --> 01:01:02.656 A:middle
+ML, you can do this in minutes
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.476 --> 00:36:01.646 A:middle
+I'm excited to show you tips and
+
+00:36:01.646 --> 00:36:02.976 A:middle
+tricks how to get the most out
+
+00:36:02.976 --> 00:36:03.956 A:middle
+of Xcode's view debugger.
+
+00:36:04.226 --> 00:36:05.406 A:middle
+And we'll also take a look at
+
+00:36:05.406 --> 00:36:07.506 A:middle
+the enhancements we made for
+
+00:36:07.506 --> 00:36:09.266 A:middle
+Xcode 10 to provide a great
+
+00:36:09.266 --> 00:36:10.676 A:middle
+debugging experience when you
+
+00:36:10.676 --> 00:36:12.696 A:middle
+adopt a dark look in macOS
+
+00:36:12.696 --> 00:36:12.763 A:middle
+[inaudible].
+
+00:36:12.763 --> 00:36:16.466 A:middle
+And we'll take a look at this in
+
+00:36:16.466 --> 00:36:16.756 A:middle
+a demo.
+
+00:36:17.696 --> 00:36:19.076 A:middle
+So let me switch to the demo
+
+00:36:19.076 --> 00:36:21.826 A:middle
+machine, and I'll be using the
+
+00:36:21.896 --> 00:36:23.496 A:middle
+same project that Chris has been
+
+00:36:23.496 --> 00:36:24.706 A:middle
+using and you already saw that
+
+00:36:24.706 --> 00:36:26.476 A:middle
+there are two more bugs we have
+
+00:36:26.526 --> 00:36:26.956 A:middle
+to solve.
+
+00:36:27.046 --> 00:36:30.596 A:middle
+However, I'm not going to be
+
+00:36:30.596 --> 00:36:33.036 A:middle
+using the iOS App, I'm going to
+
+00:36:33.036 --> 00:36:33.756 A:middle
+be using the [inaudible].
+
+00:36:34.296 --> 00:36:36.446 A:middle
+So we can see the Mac version of
+
+00:36:36.446 --> 00:36:38.296 A:middle
+our Solar System app here, we
+
+00:36:38.296 --> 00:36:39.316 A:middle
+can see that looks pretty good
+
+00:36:39.316 --> 00:36:41.736 A:middle
+in dark mode but there are two
+
+00:36:41.736 --> 00:36:42.606 A:middle
+bugs that we have to solve
+
+00:36:42.636 --> 00:36:42.856 A:middle
+today.
+
+00:36:43.426 --> 00:36:45.536 A:middle
+First of all, the planet image
+
+00:36:45.536 --> 00:36:46.776 A:middle
+is not centered horizontally
+
+00:36:46.776 --> 00:36:48.586 A:middle
+correctly and that is a very
+
+00:36:48.586 --> 00:36:49.206 A:middle
+obvious bug.
+
+00:36:49.446 --> 00:36:50.376 A:middle
+You can see on the right-hand
+
+00:36:50.376 --> 00:36:52.526 A:middle
+side this Earth image is shifted
+
+00:36:52.526 --> 00:36:54.686 A:middle
+to the right-hand side, so we'll
+
+00:36:54.686 --> 00:36:55.676 A:middle
+take a look at this problem.
+
+00:36:55.946 --> 00:36:57.506 A:middle
+And the second bug is that the
+
+00:36:57.506 --> 00:36:59.666 A:middle
+description in a popover is not
+
+00:36:59.696 --> 00:37:00.996 A:middle
+readable in dark mode.
+

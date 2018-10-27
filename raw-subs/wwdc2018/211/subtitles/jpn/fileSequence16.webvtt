@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:56.757 --> 00:16:02.362 align:start position:29% line:-2
+ユーザがショートカットを
+使う度この操作を行います
+
+00:16:02.462 --> 00:16:07.334 align:start position:32% line:-2
+つまりユーザが
+スープを注文する度に
+
+00:16:07.434 --> 00:16:12.639 align:start position:25% line:-2
+Intentを報告し
+Siriの予測を助けるのです
+
+00:16:14.041 --> 00:16:18.011 align:start position:32% line:-2
+あとは実際に
+処理するだけです
+
+00:16:18.111 --> 00:16:20.948 align:start position:18% line:-1
+NSUserActivityと同様に
+
+00:16:21.048 --> 00:16:25.919 align:start position:14% line:-2
+continueUserActivity
+メソッドを使います
+
+00:16:26.019 --> 00:16:31.725 align:start position:11% line:-2
+IntentはNSUserActivityの
+オブジェクトとして渡され
+
+00:16:31.825 --> 00:16:36.597 align:start position:21% line:-2
+アクティビティタイプは
+Intentのクラス名になります
+
+00:16:36.697 --> 00:16:39.533 align:start position:16% line:-2
+ここでは
+“OrderSoupIntent”です
+
+00:16:40.100 --> 00:16:42.970 align:start position:9% line:-2
+continueUserActivityだけを
+実装すると
+
+00:16:43.070 --> 00:16:45.305 align:start position:27% line:-2
+ショートカットは毎回
+Appを開きます
+
+00:16:45.405 --> 00:16:48.475 align:start position:30% line:-2
+バックグラウンド実行されず
+Siriと連動せず
+
+00:16:48.575 --> 00:16:50.844 align:start position:27% line:-1
+カスタムボイスも使えません
+
+00:16:50.944 --> 00:16:52.913 align:start position:27% line:-1
+Extensionを作ると
+
+00:16:53.013 --> 00:16:56.250 align:start position:29% line:-2
+バックグラウンドで
+ショートカットが使えます
+
+00:16:57.017 --> 00:17:01.421 align:start position:30% line:-2
+それにはXcodeで
+新しいターゲットを作り
+

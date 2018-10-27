@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:58.619 --> 00:42:01.154 align:middle line:-1
+首先我将创建一个配置
+
+00:42:01.221 --> 00:42:04.691 align:middle line:0
+这是一个
+ARImageTrackingConfiguration
+
+00:42:04.758 --> 00:42:06.527 align:middle line:0
+类型的配置
+
+00:42:07.528 --> 00:42:10.230 align:middle line:-1
+我通过使用组名Photos
+
+00:42:10.864 --> 00:42:13.300 align:middle line:-1
+从素材目录中加载了一组跟踪图像
+
+00:42:13.734 --> 00:42:17.838 align:middle line:-2
+其中只包含一张图片
+即我的猫Daisy的照片
+
+00:42:18.939 --> 00:42:19.806 align:middle line:-1
+接下来
+
+00:42:21.408 --> 00:42:22.709 align:middle line:-1
+我通过指定trackingImages属性
+
+00:42:22.776 --> 00:42:25.379 align:middle line:-1
+设置好图像跟踪配置
+
+00:42:26.180 --> 00:42:29.183 align:middle line:-2
+并将maximumNumberOfTrackedImages
+设为1
+
+00:42:30.450 --> 00:42:33.887 align:middle line:-1
+此时 app已经启动了AR会话
+
+00:42:33.954 --> 00:42:36.557 align:middle line:-1
+并在检测到图像时为你提供其图像锚
+
+00:42:36.957 --> 00:42:38.258 align:middle line:-1
+但让我们添加一些内容
+
+00:42:39.026 --> 00:42:40.894 align:middle line:-1
+我将通过在资源面板中
+
+00:42:42.029 --> 00:42:47.768 align:middle line:-2
+载入视频并根据它创建一个
+AVPlayer来加载它
+
+00:42:49.102 --> 00:42:52.072 align:middle line:-1
+现在让我们将它添加到真实图像之上
+
+00:42:55.142 --> 00:42:58.579 align:middle line:-2
+为此我需要检查该锚
+是否是ImageAnchor类型
+
+00:42:59.379 --> 00:43:03.317 align:middle line:-1
+并创建一个与场景中的图像
+

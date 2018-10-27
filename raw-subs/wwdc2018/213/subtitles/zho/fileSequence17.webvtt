@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.186 --> 00:17:00.354 align:middle line:-2
+当我们连接到
+CarPlay车载系统时
+
+00:17:00.420 --> 00:17:03.790 align:middle line:-2
+导航app会打开一个窗口
+用于在汽车显示屏上绘制内容
+
+00:17:04.391 --> 00:17:06.993 align:middle line:-1
+这个窗口就是你的画布
+
+00:17:07.060 --> 00:17:11.298 align:middle line:-2
+用于显示所有漂亮的非交互式地图
+和导航相关内容
+
+00:17:12.266 --> 00:17:16.002 align:middle line:-2
+因为app使用了模板
+iOS会把这些模板
+
+00:17:16.069 --> 00:17:19.039 align:middle line:-2
+转化为一个能在app顶部
+呈现的用户界面
+
+00:17:20.307 --> 00:17:21.541 align:middle line:-1
+让我们看看代码
+
+00:17:21.608 --> 00:17:24.411 align:middle line:-2
+当你的app连接到
+CarPlay车载系统时发生什么
+
+00:17:25.712 --> 00:17:28.782 align:middle line:-2
+你需要注意的第一件事
+就是app的委托
+
+00:17:28.849 --> 00:17:32.219 align:middle line:-2
+要遵守CarPlay车载
+app委托协议
+
+00:17:32.486 --> 00:17:33.787 align:middle line:-1
+CP app委托
+
+00:17:35.122 --> 00:17:37.558 align:middle line:-2
+那个协议中的一个函数是
+在窗口中app
+
+00:17:37.624 --> 00:17:40.093 align:middle line:-2
+didConnectCar
+InterfaceController
+
+00:17:41.161 --> 00:17:44.164 align:middle line:-2
+这个函数会给你的app
+提供两个非常重要的对象
+
+00:17:44.765 --> 00:17:47.801 align:middle line:-2
+第一个是
+CPInterfaceController实例
+
+00:17:48.802 --> 00:17:52.773 align:middle line:-2
+CPInterfaceController
+是你和模板世界的连接以及你的app
+
+00:17:52.840 --> 00:17:55.342 align:middle line:-2
+将用什么来管理
+汽车显示屏上显示什么内容
+
+00:17:56.009 --> 00:17:58.111 align:middle line:-2
+此外 你将会获得
+我刚提到的那个窗口
+
+00:17:58.178 --> 00:18:00.514 align:middle line:-1
+就是你可以绘制全部地图内容的地方
+

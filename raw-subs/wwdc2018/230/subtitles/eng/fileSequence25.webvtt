@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.136 --> 00:25:00.566 A:middle
+effect their actions are having.
+
+00:25:02.176 --> 00:25:03.536 A:middle
+To fix this, we want to override
+
+00:25:03.536 --> 00:25:05.906 A:middle
+accessibility view is modal on
+
+00:25:05.906 --> 00:25:07.356 A:middle
+the presented view, which will
+
+00:25:07.356 --> 00:25:08.656 A:middle
+tell our assistive technology
+
+00:25:08.656 --> 00:25:10.126 A:middle
+that only the elements of that
+
+00:25:10.126 --> 00:25:11.256 A:middle
+view should be accessible right
+
+00:25:11.256 --> 00:25:11.486 A:middle
+now.
+
+00:25:12.756 --> 00:25:14.196 A:middle
+We'll also want to post a
+
+00:25:14.196 --> 00:25:15.476 A:middle
+notification to let the
+
+00:25:15.476 --> 00:25:16.846 A:middle
+assistive technology know that
+
+00:25:16.846 --> 00:25:18.006 A:middle
+our on-screen elements have
+
+00:25:18.006 --> 00:25:19.306 A:middle
+changed and that it should
+
+00:25:19.306 --> 00:25:20.446 A:middle
+attempt to refocus.
+
+00:25:21.746 --> 00:25:23.006 A:middle
+We can use the screen change
+
+00:25:23.006 --> 00:25:24.116 A:middle
+notification to do so.
+
+00:25:24.716 --> 00:25:27.296 A:middle
+I'm going to turn things back
+
+00:25:27.296 --> 00:25:28.886 A:middle
+over to Bhavya now to show you
+
+00:25:28.886 --> 00:25:30.256 A:middle
+how to use all the API we just
+
+00:25:30.256 --> 00:25:31.196 A:middle
+covered to implement our
+
+00:25:31.196 --> 00:25:31.786 A:middle
+solutions.
+
+00:25:32.406 --> 00:25:32.666 A:middle
+Bhavya?
+
+00:25:34.516 --> 00:25:38.546 A:middle
+[ Applause ]
+
+00:25:39.046 --> 00:25:39.476 A:middle
+Thanks Skyler.
+
+00:25:39.856 --> 00:25:41.216 A:middle
+Let's elevate accessibility
+
+00:25:41.216 --> 00:25:42.756 A:middle
+experience of our app from great
+
+00:25:43.166 --> 00:25:43.836 A:middle
+to exceptional.
+
+00:25:44.256 --> 00:25:45.000 A:middle
+I'll jump into Xcode.
+
+00:25:53.226 --> 00:25:54.346 A:middle
+Let's start with enhancing the
+
+00:25:54.346 --> 00:25:55.826 A:middle
+experience of the carousel at
+
+00:25:55.826 --> 00:25:56.136 A:middle
+the top.
+
+00:25:56.726 --> 00:25:58.376 A:middle
+Here, I have a class called Dog
+
+00:25:58.376 --> 00:25:59.906 A:middle
+Carousel Container view which
+
+00:25:59.906 --> 00:26:01.296 A:middle
+houses our collection view of
+

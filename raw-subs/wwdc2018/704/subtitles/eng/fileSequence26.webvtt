@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.816 --> 00:26:01.336 A:middle
+to Buy turned on, so Ask to Buy
+
+00:26:01.336 --> 00:26:02.766 A:middle
+is a feature that allows parents
+
+00:26:02.826 --> 00:26:04.766 A:middle
+to manually approve or decline
+
+00:26:04.766 --> 00:26:05.856 A:middle
+transactions made by their
+
+00:26:05.856 --> 00:26:06.236 A:middle
+children.
+
+00:26:07.596 --> 00:26:09.216 A:middle
+Any user can have Ask to Buy set
+
+00:26:09.216 --> 00:26:11.206 A:middle
+up, but it can happen to any of
+
+00:26:11.206 --> 00:26:12.386 A:middle
+your in-app purchases so it is
+
+00:26:12.386 --> 00:26:13.306 A:middle
+important that you handle this
+
+00:26:13.306 --> 00:26:13.976 A:middle
+case appropriately.
+
+00:26:18.046 --> 00:26:20.436 A:middle
+Speaking of Ask to Buy, if your
+
+00:26:20.436 --> 00:26:21.716 A:middle
+transaction is deferred due to
+
+00:26:21.716 --> 00:26:24.136 A:middle
+Ask to Buy the user will receive
+
+00:26:24.136 --> 00:26:25.206 A:middle
+a message from the App Store
+
+00:26:25.206 --> 00:26:26.306 A:middle
+saying that their parent has
+
+00:26:26.306 --> 00:26:28.406 A:middle
+been notified to approve it.
+
+00:26:29.236 --> 00:26:31.706 A:middle
+If it is approved and then it
+
+00:26:31.706 --> 00:26:32.786 A:middle
+will be returned to your
+
+00:26:33.046 --> 00:26:34.606 A:middle
+Transaction Observer in the
+
+00:26:34.666 --> 00:26:35.296 A:middle
+purchased state.
+
+00:26:35.996 --> 00:26:36.836 A:middle
+You should let the user know
+
+00:26:36.836 --> 00:26:38.316 A:middle
+it's been approved, of course
+
+00:26:38.316 --> 00:26:39.786 A:middle
+deliver the content, and call
+
+00:26:39.786 --> 00:26:40.516 A:middle
+Finish Transaction.
+
+00:26:41.096 --> 00:26:44.396 A:middle
+If it's declined it will be
+
+00:26:44.396 --> 00:26:45.426 A:middle
+returned to your Transaction
+
+00:26:45.426 --> 00:26:46.456 A:middle
+Observer in the failed state.
+
+00:26:46.976 --> 00:26:48.026 A:middle
+So here you should let the user
+
+00:26:48.026 --> 00:26:49.636 A:middle
+know that it was declined and
+
+00:26:49.636 --> 00:26:50.816 A:middle
+then call Finish Transaction to
+
+00:26:50.816 --> 00:26:51.246 A:middle
+finish it up.
+
+00:26:52.206 --> 00:26:55.736 A:middle
+However, if there's no action
+
+00:26:55.736 --> 00:26:58.346 A:middle
+taken within 24 hours then the
+
+00:26:58.346 --> 00:27:02.416 A:middle
+transaction fails silently, this
+

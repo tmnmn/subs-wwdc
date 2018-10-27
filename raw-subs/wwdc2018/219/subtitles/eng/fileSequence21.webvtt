@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.386 --> 00:21:02.686 A:middle
+The asset catalog compiler has,
+
+00:21:02.686 --> 00:21:05.266 A:middle
+actually, already produced a
+
+00:21:05.266 --> 00:21:06.906 A:middle
+pre-rasterized version of that
+
+00:21:06.906 --> 00:21:08.396 A:middle
+image and stored it in the asset
+
+00:21:08.396 --> 00:21:08.936 A:middle
+catalog.
+
+00:21:09.426 --> 00:21:10.766 A:middle
+So, rather than doing the
+
+00:21:10.766 --> 00:21:12.926 A:middle
+complicated math of rasterizing
+
+00:21:12.926 --> 00:21:14.156 A:middle
+your vector artwork into a
+
+00:21:14.156 --> 00:21:17.026 A:middle
+bitmap, we can just decode that
+
+00:21:17.026 --> 00:21:18.276 A:middle
+image that's stored in the asset
+
+00:21:18.276 --> 00:21:21.296 A:middle
+catalog and render it directly
+
+00:21:21.296 --> 00:21:22.106 A:middle
+into the frame buffer.
+
+00:21:24.156 --> 00:21:26.716 A:middle
+If you're planning on rendering
+
+00:21:27.106 --> 00:21:29.576 A:middle
+artwork at a few fixed sizes.
+
+00:21:29.576 --> 00:21:31.056 A:middle
+Maybe, you have a small version
+
+00:21:31.056 --> 00:21:33.206 A:middle
+and a large version of an icon.
+
+00:21:33.816 --> 00:21:35.096 A:middle
+Rather than relying on the
+
+00:21:35.096 --> 00:21:37.136 A:middle
+Preserve Vector Data checkbox,
+
+00:21:37.736 --> 00:21:39.686 A:middle
+create two image assets that
+
+00:21:39.686 --> 00:21:41.506 A:middle
+have the two sizes that you know
+
+00:21:41.506 --> 00:21:42.356 A:middle
+you're going to render your
+
+00:21:42.356 --> 00:21:43.386 A:middle
+image at.
+
+00:21:44.696 --> 00:21:46.826 A:middle
+That will allow the optimization
+
+00:21:47.746 --> 00:21:49.816 A:middle
+to take the CPU hit of
+
+00:21:49.816 --> 00:21:51.176 A:middle
+rasterizing your artwork at
+
+00:21:51.176 --> 00:21:53.536 A:middle
+compile time, rather than every
+
+00:21:53.536 --> 00:21:55.576 A:middle
+time the image is drawn into the
+
+00:21:56.016 --> 00:21:57.926 A:middle
+frame buffer.
+
+00:21:58.266 --> 00:21:59.646 A:middle
+So, we've seen how to work with
+

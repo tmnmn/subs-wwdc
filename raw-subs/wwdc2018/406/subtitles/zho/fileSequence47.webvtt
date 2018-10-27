@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:57.106 --> 00:47:02.076 A:middle
+递归约束和条件一致性都倾向于像这样
+
+00:47:02.076 --> 00:47:05.646 A:middle
+跟踪协议层级结构 并且这些特性相互支持
+
+00:47:05.646 --> 00:47:07.926 A:middle
+这一点特别重要
+
+00:47:07.926 --> 00:47:13.256 A:middle
+因为我们希望子序列 也就是 Self 的切片
+的默认关联类型
+
+00:47:13.256 --> 00:47:14.666 A:middle
+能够适用于集合的每一层级结构
+
+00:47:14.666 --> 00:47:17.356 A:middle
+切片总是一个集合
+
+00:47:18.116 --> 00:47:20.386 A:middle
+当我们继续创建
+bidirectionalCollection 协议时
+
+00:47:20.386 --> 00:47:26.136 A:middle
+那么子序列类型也需要符合
+bidirectionalCollection
+
+00:47:26.996 --> 00:47:29.026 A:middle
+适配式切片与 bidirectionalCollection 的
+条件一致性
+
+00:47:29.026 --> 00:47:34.296 A:middle
+在任何时候都被认为是
+bidirectionalCollection
+
+00:47:34.716 --> 00:47:38.696 A:middle
+满足这一要求
+RandomAccessCollection 也是如此
+
+00:47:38.696 --> 00:47:42.116 A:middle
+子序列获得一个
+randomAccessCollection 需求
+
+00:47:42.116 --> 00:47:47.146 A:middle
+然后切片与 randomAccessCollection
+的条件一致性
+
+00:47:47.146 --> 00:47:49.916 A:middle
+将满足该需求
+也就是 randomAccessCollection 本身
+
+00:47:49.916 --> 00:47:54.836 A:middle
+这种关联类型默认适用于层级结构中的
+
+00:47:54.946 --> 00:47:59.906 A:middle
+每个协议的行为指示了一个优秀的内聚设计
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.696 --> 00:08:00.166 A:middle
+to create two or three in a
+
+00:08:00.696 --> 00:08:00.886 A:middle
+frame.
+
+00:08:01.026 --> 00:08:02.256 A:middle
+But an app doesn't write these
+
+00:08:02.256 --> 00:08:03.606 A:middle
+commands directly to the command
+
+00:08:03.606 --> 00:08:05.216 A:middle
+buffer, instead it creates a
+
+00:08:05.216 --> 00:08:06.586 A:middle
+Metal command encoder.
+
+00:08:07.886 --> 00:08:09.356 A:middle
+The command encoder translates
+
+00:08:09.446 --> 00:08:11.686 A:middle
+API calls into GPU instructions
+
+00:08:11.906 --> 00:08:13.006 A:middle
+and writes them to the command
+
+00:08:13.006 --> 00:08:13.266 A:middle
+buffer.
+
+00:08:14.336 --> 00:08:15.666 A:middle
+After a series of commands have
+
+00:08:15.666 --> 00:08:17.426 A:middle
+been encoded your app will end
+
+00:08:17.426 --> 00:08:18.916 A:middle
+encoding and release the encoder
+
+00:08:18.916 --> 00:08:19.336 A:middle
+object.
+
+00:08:20.536 --> 00:08:21.586 A:middle
+There are actually a couple
+
+00:08:21.586 --> 00:08:22.756 A:middle
+different kind of encoders and
+
+00:08:22.756 --> 00:08:24.146 A:middle
+your app can create new encoders
+
+00:08:24.146 --> 00:08:25.106 A:middle
+from the command buffer to
+
+00:08:25.146 --> 00:08:25.876 A:middle
+encode more commands.
+
+00:08:31.156 --> 00:08:32.616 A:middle
+Now it's important to note that
+
+00:08:32.616 --> 00:08:34.346 A:middle
+up until now on this diagram the
+
+00:08:34.346 --> 00:08:36.186 A:middle
+GPU hasn't done any work.
+
+00:08:37.106 --> 00:08:38.666 A:middle
+Metal has created objects and
+
+00:08:38.666 --> 00:08:40.726 A:middle
+encoded commands all with the
+
+00:08:40.775 --> 00:08:41.145 A:middle
+CPU.
+
+00:08:41.876 --> 00:08:43.166 A:middle
+It's only after your app has
+
+00:08:43.216 --> 00:08:45.356 A:middle
+finished encoding commands and
+
+00:08:45.356 --> 00:08:46.356 A:middle
+committed the command buffer
+
+00:08:47.446 --> 00:08:49.226 A:middle
+that the GPU begins to work and
+
+00:08:49.226 --> 00:08:51.376 A:middle
+executes those commands.
+
+00:08:52.576 --> 00:08:54.566 A:middle
+You can also encode commands to
+
+00:08:54.566 --> 00:08:56.226 A:middle
+multiple command buffers in
+
+00:08:56.266 --> 00:08:57.816 A:middle
+parallel on separate threads.
+
+00:08:58.466 --> 00:09:02.056 A:middle
+Now I've already spoken about
+

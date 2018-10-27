@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.796 --> 00:11:00.016 A:middle
+So the first of model we're
+
+00:11:00.016 --> 00:11:02.366 A:middle
+supporting is a text classifier.
+
+00:11:02.896 --> 00:11:05.376 A:middle
+A text classifier takes a chunk
+
+00:11:05.376 --> 00:11:07.146 A:middle
+of text, maybe it's a sentence
+
+00:11:07.146 --> 00:11:09.126 A:middle
+or a paragraph or an entire
+
+00:11:09.126 --> 00:11:11.226 A:middle
+document, and applies a label to
+
+00:11:11.226 --> 00:11:11.366 A:middle
+it.
+
+00:11:11.786 --> 00:11:13.376 A:middle
+Examples of this in our existing
+
+00:11:13.376 --> 00:11:15.286 A:middle
+APIs are things like language
+
+00:11:15.286 --> 00:11:16.466 A:middle
+identification, script
+
+00:11:16.466 --> 00:11:17.216 A:middle
+identification.
+
+00:11:18.276 --> 00:11:19.436 A:middle
+The second type of model we
+
+00:11:19.436 --> 00:11:21.846 A:middle
+support is a word tagger, and a
+
+00:11:21.846 --> 00:11:23.836 A:middle
+word tagger takes a sentence
+
+00:11:23.886 --> 00:11:25.856 A:middle
+considered as a sequence of
+
+00:11:25.856 --> 00:11:28.196 A:middle
+words, and then applies a label
+
+00:11:28.196 --> 00:11:30.386 A:middle
+to each word in a sentence in
+
+00:11:30.386 --> 00:11:32.366 A:middle
+context, and examples of
+
+00:11:32.366 --> 00:11:34.916 A:middle
+existing APIs are things like
+
+00:11:34.916 --> 00:11:36.576 A:middle
+speech tagging and named entity
+
+00:11:36.576 --> 00:11:37.116 A:middle
+recognition.
+
+00:11:37.636 --> 00:11:39.316 A:middle
+But those are sort of general
+
+00:11:39.396 --> 00:11:42.656 A:middle
+purpose examples of these kinds
+
+00:11:42.656 --> 00:11:43.336 A:middle
+of models.
+
+00:11:44.006 --> 00:11:45.616 A:middle
+You can do a lot more with them
+
+00:11:46.026 --> 00:11:47.236 A:middle
+if you have a special purpose
+
+00:11:47.236 --> 00:11:48.446 A:middle
+model for your specific
+
+00:11:48.446 --> 00:11:49.006 A:middle
+application.
+
+00:11:49.006 --> 00:11:50.036 A:middle
+Let me give you some
+
+00:11:50.036 --> 00:11:51.366 A:middle
+hypothetical examples.
+
+00:11:51.956 --> 00:11:53.576 A:middle
+So, for text classification,
+
+00:11:53.946 --> 00:11:55.556 A:middle
+suppose you're dealing with user
+
+00:11:55.556 --> 00:11:57.066 A:middle
+reviews, and you want to know
+
+00:11:57.066 --> 00:11:59.406 A:middle
+automatically whether a given
+
+00:11:59.406 --> 00:12:02.016 A:middle
+review is a positive review or a
+

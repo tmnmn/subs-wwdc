@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.066 --> 00:28:01.306 A:middle
+It's also important to note that
+
+00:28:01.356 --> 00:28:02.726 A:middle
+the URLSession objects are
+
+00:28:02.726 --> 00:28:04.846 A:middle
+fairly expensive to create and
+
+00:28:04.846 --> 00:28:06.206 A:middle
+have a non-trivial memory
+
+00:28:06.206 --> 00:28:06.676 A:middle
+footprint.
+
+00:28:08.036 --> 00:28:09.776 A:middle
+As we have in the past, we
+
+00:28:09.816 --> 00:28:11.726 A:middle
+continue to advise you to use
+
+00:28:11.726 --> 00:28:13.466 A:middle
+fewer URLSession objects.
+
+00:28:13.986 --> 00:28:17.496 A:middle
+Let's move on to our next topic
+
+00:28:17.496 --> 00:28:19.416 A:middle
+for the day: maximizing
+
+00:28:19.416 --> 00:28:19.796 A:middle
+throughput.
+
+00:28:19.796 --> 00:28:22.596 A:middle
+Coming back to our restaurant
+
+00:28:22.596 --> 00:28:23.156 A:middle
+example.
+
+00:28:23.986 --> 00:28:25.956 A:middle
+The waiter checks up on you and
+
+00:28:25.956 --> 00:28:27.766 A:middle
+you say, "Can I get an order of
+
+00:28:28.196 --> 00:28:30.206 A:middle
+grilled chicken tossed in creamy
+
+00:28:30.206 --> 00:28:32.006 A:middle
+tomato onion gravy made with a
+
+00:28:32.006 --> 00:28:32.646 A:middle
+lot of butter?"
+
+00:28:33.906 --> 00:28:34.846 A:middle
+Now that's a mouthful.
+
+00:28:35.656 --> 00:28:36.596 A:middle
+Wouldn't it be easier if you
+
+00:28:36.596 --> 00:28:38.016 A:middle
+just said, "Can I get butter
+
+00:28:38.016 --> 00:28:38.356 A:middle
+chicken?"
+
+00:28:39.936 --> 00:28:41.556 A:middle
+The idea to maximize throughput
+
+00:28:41.556 --> 00:28:43.216 A:middle
+is the same where you reduce the
+
+00:28:43.216 --> 00:28:44.296 A:middle
+number of bytes that you
+
+00:28:44.296 --> 00:28:45.766 A:middle
+transmit when you want to fetch
+
+00:28:45.816 --> 00:28:46.536 A:middle
+a resource.
+
+00:28:47.306 --> 00:28:48.686 A:middle
+Let's see how your apps can do
+
+00:28:48.686 --> 00:28:49.036 A:middle
+this.
+
+00:28:49.116 --> 00:28:52.796 A:middle
+Let's look at a couple of ways
+
+00:28:52.796 --> 00:28:55.086 A:middle
+to reduce the request size.
+
+00:28:55.956 --> 00:28:58.246 A:middle
+Pay attention to HTTP cookies.
+
+00:28:59.076 --> 00:29:01.646 A:middle
+They are not free and have a
+

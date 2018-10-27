@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.605 --> 00:09:02.276 align:start position:30% line:-2
+各イベントの視聴時間を
+合計します
+
+00:09:02.376 --> 00:09:05.646 align:start position:29% line:-2
+これでセッションの
+総視聴時間が算出されます
+
+00:09:05.879 --> 00:09:10.350 align:start position:29% line:-2
+アクセスログのイベントは
+何を意味するのか
+
+00:09:10.684 --> 00:09:14.788 align:start position:27% line:-2
+AVPlayerItemの
+アクセスログは
+
+00:09:15.289 --> 00:09:18.892 align:start position:34% line:-2
+セッションの履歴を
+提供します
+
+00:09:19.326 --> 00:09:22.996 align:start position:29% line:-2
+もともとはNULLですが
+再生が始まると
+
+00:09:23.130 --> 00:09:26.900 align:start position:14% line:-2
+NewAccessLogEntry通知を
+受け取ります
+
+00:09:27.000 --> 00:09:29.570 align:start position:27% line:-2
+その時点で
+アクセスログができています
+
+00:09:29.770 --> 00:09:34.374 align:start position:29% line:-2
+アクセスログのイベントに
+含まれる情報は
+
+00:09:34.608 --> 00:09:39.179 align:start position:27% line:-1
+現在のURLやビットレート
+
+00:09:39.346 --> 00:09:42.916 align:start position:30% line:-2
+視聴時間や
+ストールの回数などです
+
+00:09:43.217 --> 00:09:49.790 align:start position:27% line:-2
+これらの初期値は慣例により
+負かNULLに設定されます
+
+00:09:50.023 --> 00:09:51.658 align:start position:38% line:-1
+再生が始まると
+
+00:09:51.758 --> 00:09:56.697 align:start position:27% line:-2
+計測データと実際のURLに
+更新されます
+
+00:09:56.964 --> 00:10:01.401 align:start position:36% line:-2
+新しいイベントを
+加える場合は２つ
+

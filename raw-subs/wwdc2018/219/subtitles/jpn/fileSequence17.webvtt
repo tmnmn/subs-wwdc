@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:55.616 --> 00:17:00.854 align:start position:32% line:-2
+CPUが２個だけでは
+一気に処理できません
+
+00:17:00.954 --> 00:17:03.724 align:start position:30% line:-1
+CPUが足りないのです
+
+00:17:04.992 --> 00:17:09.930 align:start position:29% line:-2
+ディスパッチの際
+デッドロックを避けるため
+
+00:17:10.230 --> 00:17:15.335 align:start position:29% line:-2
+GCDが新しいスレッドを
+生成し 処理します
+
+00:17:16.236 --> 00:17:20.307 align:start position:32% line:-2
+CPUはスレッド間を
+行き来しながら
+
+00:17:20.406 --> 00:17:25.612 align:start position:27% line:-2
+OSに命じられている処理を
+徐々に進めます
+
+00:17:25.712 --> 00:17:29.316 align:start position:29% line:-2
+これが
+オーバーヘッドの原因です
+
+00:17:31.351 --> 00:17:35.722 align:start position:29% line:-2
+CPUの画像処理の負荷を
+減らせたら
+
+00:17:35.989 --> 00:17:38.325 align:start position:32% line:-1
+とても助かりますよね
+
+00:17:39.126 --> 00:17:43.497 align:start position:29% line:-2
+去年の講演で
+紹介された技術の出番です
+
+00:17:43.730 --> 00:17:46.600 align:start position:11% line:-2
+Modernizing Grand
+Central Dispatch Usage
+
+00:17:46.700 --> 00:17:50.938 align:start position:32% line:-2
+タスクを同期…　失礼
+順番に並べましょう
+
+00:17:52.940 --> 00:17:57.211 align:start position:32% line:-2
+非同期キューを
+単にディスパッチせず
+
+00:17:58.212 --> 00:18:00.247 align:start position:32% line:-1
+シリアルキューを作成
+

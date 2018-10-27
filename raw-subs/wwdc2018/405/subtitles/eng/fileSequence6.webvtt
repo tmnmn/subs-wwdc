@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.346 --> 00:06:00.806 A:middle
+we've annotated or that gets
+
+00:06:00.806 --> 00:06:02.756 A:middle
+marked up with that os signpost
+
+00:06:02.966 --> 00:06:04.606 A:middle
+begin called and the end point.
+
+00:06:05.026 --> 00:06:07.416 A:middle
+So on our timeline, it just
+
+00:06:07.416 --> 00:06:08.086 A:middle
+looks like this.
+
+00:06:08.086 --> 00:06:09.676 A:middle
+At the beginning of each piece
+
+00:06:09.676 --> 00:06:11.696 A:middle
+of work, we've dropped an os
+
+00:06:11.696 --> 00:06:12.246 A:middle
+signpost.
+
+00:06:12.366 --> 00:06:13.336 A:middle
+At the end of each piece of
+
+00:06:13.336 --> 00:06:14.306 A:middle
+work, we've dropped an os
+
+00:06:14.306 --> 00:06:14.776 A:middle
+signpost.
+
+00:06:15.086 --> 00:06:16.646 A:middle
+And because those string
+
+00:06:16.646 --> 00:06:17.756 A:middle
+literals at the begin and end
+
+00:06:17.756 --> 00:06:19.286 A:middle
+call sites line up with each
+
+00:06:19.286 --> 00:06:20.526 A:middle
+other, we can match those two
+
+00:06:20.526 --> 00:06:20.856 A:middle
+together.
+
+00:06:20.856 --> 00:06:23.266 A:middle
+But what if we're interested in
+
+00:06:23.266 --> 00:06:25.346 A:middle
+also measuring the entire amount
+
+00:06:25.346 --> 00:06:26.836 A:middle
+of time the whole operation,
+
+00:06:26.836 --> 00:06:27.866 A:middle
+that whole refresh took?
+
+00:06:28.526 --> 00:06:31.236 A:middle
+Well, in our code, we're just
+
+00:06:31.236 --> 00:06:32.966 A:middle
+going to add another pair of os
+
+00:06:32.966 --> 00:06:34.646 A:middle
+signpost begin and end calls.
+
+00:06:34.836 --> 00:06:35.346 A:middle
+Pretty simple.
+
+00:06:35.836 --> 00:06:37.196 A:middle
+And this time I've given it a
+
+00:06:37.306 --> 00:06:38.446 A:middle
+different string literal, so a
+
+00:06:38.556 --> 00:06:39.756 A:middle
+different signpost name.
+
+00:06:39.836 --> 00:06:41.616 A:middle
+This time refresh panel to
+
+00:06:41.616 --> 00:06:43.206 A:middle
+indicate that this is a separate
+
+00:06:43.206 --> 00:06:44.486 A:middle
+interval, separate from the one
+
+00:06:44.486 --> 00:06:45.166 A:middle
+inside the loop.
+
+00:06:47.236 --> 00:06:50.536 A:middle
+In our timeline, we're just
+
+00:06:50.536 --> 00:06:51.846 A:middle
+marking two additional
+
+00:06:51.846 --> 00:06:52.656 A:middle
+signposts.
+
+00:06:54.166 --> 00:06:55.606 A:middle
+And that matching string literal
+
+00:06:55.606 --> 00:06:57.296 A:middle
+of refresh panel will let the
+
+00:06:57.296 --> 00:06:58.426 A:middle
+system know that those two
+
+00:06:58.426 --> 00:07:01.156 A:middle
+points are associated with each
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:57.726 --> 00:20:01.206 A:middle
+such as this, then our data will
+
+00:20:01.206 --> 00:20:02.946 A:middle
+appear in the Now Playing app.
+
+00:20:02.946 --> 00:20:04.276 A:middle
+And this is the actual Now
+
+00:20:04.276 --> 00:20:04.816 A:middle
+Playing app.
+
+00:20:05.086 --> 00:20:07.516 A:middle
+And I provided some, a song that
+
+00:20:07.516 --> 00:20:09.476 A:middle
+I was currently listening to in
+
+00:20:09.476 --> 00:20:10.296 A:middle
+my application.
+
+00:20:10.686 --> 00:20:13.866 A:middle
+And when we do this, then, also,
+
+00:20:13.866 --> 00:20:15.196 A:middle
+the Now Playing complication
+
+00:20:15.196 --> 00:20:16.306 A:middle
+will also get updated.
+
+00:20:16.576 --> 00:20:17.726 A:middle
+So in this case, the bottom
+
+00:20:17.726 --> 00:20:18.866 A:middle
+shows the "Lights in the Sky"
+
+00:20:18.866 --> 00:20:19.956 A:middle
+song that I was listening to.
+
+00:20:20.286 --> 00:20:22.786 A:middle
+And then, for media remote
+
+00:20:22.786 --> 00:20:24.246 A:middle
+commands, again, just use the
+
+00:20:24.246 --> 00:20:24.836 A:middle
+MediaPlayer.
+
+00:20:24.836 --> 00:20:25.256 A:middle
+framework.
+
+00:20:25.256 --> 00:20:27.416 A:middle
+And now, in watchOS, you can
+
+00:20:27.416 --> 00:20:28.846 A:middle
+handle those commands however
+
+00:20:28.846 --> 00:20:29.466 A:middle
+you wish.
+
+00:20:31.366 --> 00:20:32.876 A:middle
+So let's look at some code.
+
+00:20:32.876 --> 00:20:34.456 A:middle
+So we just grab our
+
+00:20:34.566 --> 00:20:35.986 A:middle
+MPRemoteCommandCenter.
+
+00:20:36.836 --> 00:20:38.266 A:middle
+And then, instead of doing a
+
+00:20:38.266 --> 00:20:40.046 A:middle
+Next Track, let's talk about how
+
+00:20:40.046 --> 00:20:42.156 A:middle
+we can actually skip forward for
+
+00:20:42.656 --> 00:20:43.546 A:middle
+our user.
+
+00:20:43.666 --> 00:20:44.846 A:middle
+So I have this function.
+
+00:20:44.966 --> 00:20:46.966 A:middle
+It's a enableSkipForwardCommand
+
+00:20:47.396 --> 00:20:48.666 A:middle
+and, just by default, takes in
+
+00:20:48.666 --> 00:20:49.866 A:middle
+15 seconds.
+
+00:20:50.816 --> 00:20:52.646 A:middle
+And I set my preferred intervals
+
+00:20:52.646 --> 00:20:53.836 A:middle
+on my skip forward command.
+
+00:20:53.946 --> 00:20:55.966 A:middle
+And then, I just add a target
+
+00:20:55.966 --> 00:20:57.836 A:middle
+and selector, and then I just
+
+00:20:57.836 --> 00:20:59.636 A:middle
+enable the command within my
+
+00:20:59.636 --> 00:21:00.596 A:middle
+remote command center.
+

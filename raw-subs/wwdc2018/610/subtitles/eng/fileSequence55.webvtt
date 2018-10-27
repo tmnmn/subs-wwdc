@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:59.506 --> 00:55:00.656 A:middle
+This time is in the
+
+00:55:00.656 --> 00:55:01.916 A:middle
+ARReferenceObjects class.
+
+00:55:02.806 --> 00:55:05.136 A:middle
+And to configure your
+
+00:55:05.136 --> 00:55:07.056 A:middle
+ARWorldTracking configuration,
+
+00:55:07.056 --> 00:55:08.516 A:middle
+you simply pass this object to
+
+00:55:08.516 --> 00:55:10.876 A:middle
+the detectionObjects property.
+
+00:55:13.206 --> 00:55:15.566 A:middle
+Once you run the session, again,
+
+00:55:15.566 --> 00:55:17.236 A:middle
+you will find your results.
+
+00:55:18.306 --> 00:55:19.356 A:middle
+And in this case, you want to
+
+00:55:19.356 --> 00:55:21.656 A:middle
+check for the ARObjectAnchor,
+
+00:55:22.386 --> 00:55:23.656 A:middle
+which will give you the position
+
+00:55:23.786 --> 00:55:25.436 A:middle
+and orientation of the object
+
+00:55:25.436 --> 00:55:27.866 A:middle
+with respect to the world.
+
+00:55:28.716 --> 00:55:30.346 A:middle
+And also, the name of the object
+
+00:55:30.346 --> 00:55:33.086 A:middle
+as was given in the asset
+
+00:55:35.016 --> 00:55:35.246 A:middle
+catalog.
+
+00:55:35.246 --> 00:55:36.516 A:middle
+So, you guys may have noticed
+
+00:55:36.706 --> 00:55:38.316 A:middle
+some similarities between the
+
+00:55:38.316 --> 00:55:40.506 A:middle
+object detection and the world
+
+00:55:40.506 --> 00:55:42.726 A:middle
+mapping relocalization.
+
+00:55:43.426 --> 00:55:44.206 A:middle
+But there's also few
+
+00:55:44.206 --> 00:55:44.806 A:middle
+differences.
+
+00:55:44.856 --> 00:55:46.316 A:middle
+So, in the case of the object
+
+00:55:46.316 --> 00:55:48.406 A:middle
+detection we are always giving
+
+00:55:48.746 --> 00:55:50.446 A:middle
+the object position with respect
+
+00:55:50.446 --> 00:55:50.946 A:middle
+to the world.
+
+00:55:51.506 --> 00:55:52.426 A:middle
+While in the world map
+
+00:55:52.426 --> 00:55:53.966 A:middle
+relocalization is the camera
+
+00:55:53.966 --> 00:55:56.066 A:middle
+itself that adjusts to the
+
+00:55:56.066 --> 00:55:56.816 A:middle
+previous world map.
+
+00:55:58.286 --> 00:56:00.306 A:middle
+In addition, you can detect
+

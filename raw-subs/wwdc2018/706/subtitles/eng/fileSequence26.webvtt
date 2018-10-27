@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.136 --> 00:26:00.556 A:middle
+predicates to make it easier for
+
+00:26:00.556 --> 00:26:01.356 A:middle
+you to work with
+
+00:26:01.356 --> 00:26:02.566 A:middle
+HKClinicalRecord.
+
+00:26:03.316 --> 00:26:05.046 A:middle
+We have a predicate to allow you
+
+00:26:05.046 --> 00:26:08.316 A:middle
+to query by resource type, here
+
+00:26:08.396 --> 00:26:10.686 A:middle
+I'm looking for prescription or
+
+00:26:10.686 --> 00:26:12.866 A:middle
+in FHIR a medication order.
+
+00:26:15.216 --> 00:26:16.766 A:middle
+We also have a predicate to
+
+00:26:16.766 --> 00:26:18.716 A:middle
+allow you to uniquely identify
+
+00:26:19.206 --> 00:26:20.946 A:middle
+records by their source,
+
+00:26:21.166 --> 00:26:23.076 A:middle
+resource type and identifier.
+
+00:26:23.716 --> 00:26:25.416 A:middle
+This can be incredibly useful as
+
+00:26:25.416 --> 00:26:27.066 A:middle
+FHIR resources can reference
+
+00:26:27.156 --> 00:26:28.636 A:middle
+other FHIR resources.
+
+00:26:29.046 --> 00:26:30.926 A:middle
+For example, a medication might
+
+00:26:30.926 --> 00:26:32.436 A:middle
+reference the condition that it
+
+00:26:32.486 --> 00:26:32.956 A:middle
+treats.
+
+00:26:37.116 --> 00:26:38.346 A:middle
+Now there are some additional
+
+00:26:38.346 --> 00:26:39.686 A:middle
+considerations you need to be
+
+00:26:39.686 --> 00:26:41.096 A:middle
+aware of when working with FHIR.
+
+00:26:42.726 --> 00:26:44.846 A:middle
+Firstly, FHIR resources may
+
+00:26:44.846 --> 00:26:46.906 A:middle
+contain their own dates.
+
+00:26:47.466 --> 00:26:49.136 A:middle
+For example, prescriptions may
+
+00:26:49.136 --> 00:26:50.606 A:middle
+contain the order data of that
+
+00:26:50.606 --> 00:26:52.766 A:middle
+prescription while a condition
+
+00:26:53.006 --> 00:26:54.766 A:middle
+may contain the onset date,
+
+00:26:54.906 --> 00:26:56.626 A:middle
+abatement date and the date that
+
+00:26:56.626 --> 00:26:57.986 A:middle
+that prescription is first
+
+00:26:57.986 --> 00:26:58.566 A:middle
+observed.
+
+00:26:59.586 --> 00:27:01.016 A:middle
+You should therefore use the
+

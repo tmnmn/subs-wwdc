@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.956 --> 00:22:00.476 A:middle
+is at this point, none of your
+
+00:22:00.476 --> 00:22:01.146 A:middle
+code has run.
+
+00:22:01.706 --> 00:22:03.496 A:middle
+So, it's vital that you
+
+00:22:03.496 --> 00:22:05.396 A:middle
+understand how to optimize this.
+
+00:22:06.306 --> 00:22:07.186 A:middle
+Peter, do you have any great
+
+00:22:07.186 --> 00:22:08.266 A:middle
+advice for our developers?
+
+00:22:08.916 --> 00:22:10.206 A:middle
+&gt;&gt; I'm happy you asked, Ben.
+
+00:22:10.626 --> 00:22:11.886 A:middle
+It's important that you take
+
+00:22:11.886 --> 00:22:14.076 A:middle
+great care when optimizing the
+
+00:22:14.076 --> 00:22:15.366 A:middle
+linking phase of your app's
+
+00:22:15.366 --> 00:22:15.896 A:middle
+launch time.
+
+00:22:16.236 --> 00:22:18.256 A:middle
+Because it takes up such a large
+
+00:22:18.256 --> 00:22:21.326 A:middle
+amount of your launch time.
+
+00:22:21.546 --> 00:22:23.016 A:middle
+My first piece of advice for you
+
+00:22:23.326 --> 00:22:25.066 A:middle
+is to avoid code duplication
+
+00:22:25.156 --> 00:22:26.316 A:middle
+wherever possible.
+
+00:22:26.546 --> 00:22:29.386 A:middle
+If you have redundant functions,
+
+00:22:29.576 --> 00:22:31.846 A:middle
+objects, or structs, remove them
+
+00:22:31.846 --> 00:22:32.376 A:middle
+from your app.
+
+00:22:32.746 --> 00:22:33.976 A:middle
+Don't repeat yourself.
+
+00:22:35.266 --> 00:22:36.716 A:middle
+Next, you're going to want to
+
+00:22:36.716 --> 00:22:38.456 A:middle
+limit your use of third-party
+
+00:22:38.456 --> 00:22:39.156 A:middle
+libraries.
+
+00:22:40.066 --> 00:22:42.056 A:middle
+iOS first-party libraries are
+
+00:22:42.056 --> 00:22:44.536 A:middle
+cached, and may already be in
+
+00:22:44.536 --> 00:22:46.036 A:middle
+active memory if another
+
+00:22:46.036 --> 00:22:47.376 A:middle
+application is using them.
+
+00:22:48.466 --> 00:22:50.006 A:middle
+But, third-party libraries are
+
+00:22:50.006 --> 00:22:50.856 A:middle
+not cached.
+
+00:22:51.256 --> 00:22:52.726 A:middle
+Even if another app is using the
+
+00:22:52.726 --> 00:22:54.326 A:middle
+same version of a library as
+
+00:22:54.326 --> 00:22:56.246 A:middle
+you, we'll still have to pull in
+
+00:22:56.246 --> 00:22:58.026 A:middle
+the framework if your app uses
+
+00:22:58.026 --> 00:22:58.166 A:middle
+it.
+
+00:22:58.386 --> 00:23:00.166 A:middle
+So, you should really limit your
+

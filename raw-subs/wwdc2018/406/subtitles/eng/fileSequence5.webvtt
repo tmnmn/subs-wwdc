@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.146 --> 00:05:00.316 A:middle
+previously using Any.
+
+00:05:03.336 --> 00:05:04.216 A:middle
+And, that means that there's no
+
+00:05:04.216 --> 00:05:05.476 A:middle
+need to do conversions when
+
+00:05:05.476 --> 00:05:06.416 A:middle
+you're getting a type out of the
+
+00:05:06.416 --> 00:05:06.746 A:middle
+buffer.
+
+00:05:06.746 --> 00:05:09.106 A:middle
+And if you make an accidental
+
+00:05:09.296 --> 00:05:10.456 A:middle
+assignment of the wrong kind of
+
+00:05:10.456 --> 00:05:12.086 A:middle
+type, or some issue similar to
+
+00:05:12.086 --> 00:05:12.306 A:middle
+that.
+
+00:05:12.526 --> 00:05:13.566 A:middle
+The compiler will catch you.
+
+00:05:15.216 --> 00:05:17.136 A:middle
+Now, now there's no such type as
+
+00:05:17.136 --> 00:05:19.406 A:middle
+buffer without an associated
+
+00:05:19.406 --> 00:05:20.116 A:middle
+element type.
+
+00:05:20.836 --> 00:05:22.216 A:middle
+If you try to declare a type
+
+00:05:22.216 --> 00:05:23.646 A:middle
+like that, you'll get a
+
+00:05:23.646 --> 00:05:24.326 A:middle
+compilation error.
+
+00:05:26.176 --> 00:05:26.956 A:middle
+You might find that slightly
+
+00:05:26.956 --> 00:05:27.636 A:middle
+surprising.
+
+00:05:27.636 --> 00:05:29.106 A:middle
+Because sometimes you'll see
+
+00:05:29.106 --> 00:05:30.456 A:middle
+that you can declare types like
+
+00:05:30.516 --> 00:05:32.386 A:middle
+buffer without any element type.
+
+00:05:33.206 --> 00:05:33.926 A:middle
+But, that's just because the
+
+00:05:33.926 --> 00:05:35.716 A:middle
+compiler is able to infer what
+
+00:05:35.716 --> 00:05:36.896 A:middle
+the element type ought to be
+
+00:05:37.206 --> 00:05:38.126 A:middle
+from the context.
+
+00:05:38.546 --> 00:05:39.716 A:middle
+In this case, from the literals
+
+00:05:39.716 --> 00:05:40.676 A:middle
+on the right-hand side here.
+
+00:05:41.686 --> 00:05:43.846 A:middle
+The element is still there, it's
+
+00:05:43.846 --> 00:05:44.576 A:middle
+just implicit.
+
+00:05:46.356 --> 00:05:48.046 A:middle
+This knowledge of exactly what
+
+00:05:48.126 --> 00:05:50.506 A:middle
+type a buff-- a type like buffer
+
+00:05:50.506 --> 00:05:52.326 A:middle
+contains is carried all the way
+
+00:05:52.326 --> 00:05:54.276 A:middle
+through both compile and
+
+00:05:54.276 --> 00:05:54.886 A:middle
+runtime.
+
+00:05:55.596 --> 00:05:57.926 A:middle
+And this means that we can
+
+00:05:58.076 --> 00:05:59.576 A:middle
+achieve our goal of holding all
+
+00:05:59.576 --> 00:06:01.266 A:middle
+of the elements in a contiguous
+

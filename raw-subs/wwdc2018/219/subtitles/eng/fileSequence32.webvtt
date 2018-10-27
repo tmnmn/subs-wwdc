@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.116 --> 00:32:00.146 A:middle
+representations.
+
+00:32:01.156 --> 00:32:02.946 A:middle
+And be careful when moving data
+
+00:32:02.946 --> 00:32:04.816 A:middle
+between the CPU and the GPU, so
+
+00:32:04.866 --> 00:32:05.996 A:middle
+that you don't just wind up
+
+00:32:06.046 --> 00:32:07.116 A:middle
+trading off work between the
+
+00:32:07.116 --> 00:32:07.466 A:middle
+two.
+
+00:32:07.506 --> 00:32:08.816 A:middle
+You can, actually, get them to
+
+00:32:08.816 --> 00:32:10.026 A:middle
+execute in parallel.
+
+00:32:11.216 --> 00:32:12.726 A:middle
+Finally, check out the
+
+00:32:12.726 --> 00:32:14.846 A:middle
+Accelerate and simd session for
+
+00:32:14.846 --> 00:32:16.186 A:middle
+information on how to properly
+
+00:32:16.186 --> 00:32:18.116 A:middle
+format your buffers for being
+
+00:32:18.116 --> 00:32:19.636 A:middle
+processed by the Accelerator
+
+00:32:19.636 --> 00:32:20.036 A:middle
+framework.
+
+00:32:20.506 --> 00:32:24.116 A:middle
+So, to summarize a few key
+
+00:32:24.116 --> 00:32:24.736 A:middle
+points.
+
+00:32:25.936 --> 00:32:27.346 A:middle
+Implement prefetch in your table
+
+00:32:27.346 --> 00:32:28.466 A:middle
+views and collection views, so
+
+00:32:28.666 --> 00:32:29.866 A:middle
+that you can get some work done
+
+00:32:29.866 --> 00:32:31.346 A:middle
+in advance and avoid hitching.
+
+00:32:33.116 --> 00:32:34.096 A:middle
+Make sure that you're not
+
+00:32:34.096 --> 00:32:36.356 A:middle
+defeating any optimizations that
+
+00:32:36.356 --> 00:32:38.706 A:middle
+UIKit is providing to reduce the
+
+00:32:38.706 --> 00:32:40.006 A:middle
+size of the backing stores
+
+00:32:40.006 --> 00:32:41.346 A:middle
+associated with your views.
+
+00:32:43.356 --> 00:32:45.096 A:middle
+If you're bundling artwork with
+
+00:32:45.096 --> 00:32:46.976 A:middle
+your applications store it in
+
+00:32:46.976 --> 00:32:47.936 A:middle
+the asset catalog.
+
+00:32:49.126 --> 00:32:50.886 A:middle
+Don't store it in files that are
+
+00:32:50.886 --> 00:32:52.426 A:middle
+associated with your app.
+
+00:32:53.536 --> 00:32:55.036 A:middle
+And finally, if you're rendering
+
+00:32:55.036 --> 00:32:56.256 A:middle
+the same icons at different
+
+00:32:56.256 --> 00:32:58.856 A:middle
+sizes don't over-rely on the
+
+00:32:58.856 --> 00:33:00.466 A:middle
+Preserve Vector Data checkbox.
+

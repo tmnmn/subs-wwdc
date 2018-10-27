@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.666 --> 00:18:01.406 A:middle
+pinpoints in the language that
+
+00:18:01.406 --> 00:18:03.276 A:middle
+came up in the real world and
+
+00:18:03.276 --> 00:18:05.756 A:middle
+you came up with the idea for
+
+00:18:05.756 --> 00:18:07.636 A:middle
+fixing these pinpoints and you
+
+00:18:07.636 --> 00:18:09.246 A:middle
+contributed these improvements
+
+00:18:09.286 --> 00:18:11.126 A:middle
+back to Swift so that everybody
+
+00:18:11.126 --> 00:18:11.766 A:middle
+benefits.
+
+00:18:12.166 --> 00:18:12.516 A:middle
+Thank you.
+
+00:18:14.516 --> 00:18:19.016 A:middle
+[ Applause ]
+
+00:18:19.516 --> 00:18:20.936 A:middle
+So for the first improvement
+
+00:18:21.126 --> 00:18:22.226 A:middle
+we're going to see how to
+
+00:18:22.226 --> 00:18:23.636 A:middle
+eliminate a common source of
+
+00:18:23.636 --> 00:18:25.226 A:middle
+boilerplate when working with
+
+00:18:25.226 --> 00:18:25.486 A:middle
+enum's.
+
+00:18:26.566 --> 00:18:27.896 A:middle
+So let's say I have to find an
+
+00:18:27.896 --> 00:18:28.196 A:middle
+enum.
+
+00:18:28.616 --> 00:18:30.486 A:middle
+And I want to print every
+
+00:18:30.486 --> 00:18:32.096 A:middle
+possible value that this data
+
+00:18:32.096 --> 00:18:32.846 A:middle
+type can have.
+
+00:18:33.376 --> 00:18:36.286 A:middle
+So in Swift 4, I had to define a
+
+00:18:36.286 --> 00:18:38.636 A:middle
+property perhaps with a list of
+
+00:18:39.026 --> 00:18:40.386 A:middle
+all the possible cases.
+
+00:18:41.056 --> 00:18:44.656 A:middle
+And if I add a new case then I
+
+00:18:44.656 --> 00:18:46.016 A:middle
+have to remember to update that
+
+00:18:46.086 --> 00:18:48.376 A:middle
+property, otherwise I just get
+
+00:18:48.376 --> 00:18:49.706 A:middle
+incorrect behavior or runtime.
+
+00:18:50.976 --> 00:18:53.536 A:middle
+And this is just not very good
+
+00:18:53.536 --> 00:18:54.936 A:middle
+because you're repeating
+
+00:18:54.936 --> 00:18:56.406 A:middle
+yourself to the compiler.
+
+00:18:56.986 --> 00:18:59.296 A:middle
+So in Swift 4.2 we've added a
+
+00:18:59.296 --> 00:19:01.966 A:middle
+new CaseIterable protocol and if
+

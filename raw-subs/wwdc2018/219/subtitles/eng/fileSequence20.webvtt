@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.266 --> 00:20:00.386 A:middle
+If you turn on dynamic type to a
+
+00:20:00.386 --> 00:20:01.956 A:middle
+very large size in the
+
+00:20:01.956 --> 00:20:02.976 A:middle
+Accessibility settings.
+
+00:20:03.246 --> 00:20:05.596 A:middle
+And then you tap and hold on an
+
+00:20:05.596 --> 00:20:07.606 A:middle
+item in the tab bar a little HUD
+
+00:20:07.606 --> 00:20:10.286 A:middle
+shows up as a magnified view of
+
+00:20:10.286 --> 00:20:11.886 A:middle
+the item that you're currently
+
+00:20:11.886 --> 00:20:12.786 A:middle
+holding your finger over.
+
+00:20:14.086 --> 00:20:16.056 A:middle
+So, if you want your artwork to
+
+00:20:16.056 --> 00:20:18.086 A:middle
+look good in places like this
+
+00:20:18.756 --> 00:20:19.856 A:middle
+check the Preserve Vector
+
+00:20:19.856 --> 00:20:21.716 A:middle
+Artwork checkbox in.
+
+00:20:21.716 --> 00:20:22.056 A:middle
+I'm sorry.
+
+00:20:22.056 --> 00:20:22.866 A:middle
+The Preserve Vector Data
+
+00:20:22.866 --> 00:20:24.846 A:middle
+checkbox in the image asset
+
+00:20:25.326 --> 00:20:25.886 A:middle
+inspector.
+
+00:20:26.536 --> 00:20:27.786 A:middle
+Now, the way this works is very
+
+00:20:27.786 --> 00:20:29.486 A:middle
+similar to the pipeline we saw
+
+00:20:29.486 --> 00:20:29.936 A:middle
+before.
+
+00:20:29.936 --> 00:20:32.726 A:middle
+Rather than a decode phase, we
+
+00:20:32.726 --> 00:20:34.686 A:middle
+have a rasterize phase that's
+
+00:20:34.686 --> 00:20:35.796 A:middle
+responsible for taking the
+
+00:20:35.796 --> 00:20:38.586 A:middle
+vector data and turning it into
+
+00:20:38.586 --> 00:20:39.976 A:middle
+bitmap data that can be copied
+
+00:20:39.976 --> 00:20:40.786 A:middle
+to the frame buffer.
+
+00:20:45.046 --> 00:20:46.036 A:middle
+Now, if we had to do this for
+
+00:20:46.036 --> 00:20:47.026 A:middle
+all of the vector artwork in
+
+00:20:47.026 --> 00:20:48.786 A:middle
+your application we would be
+
+00:20:49.046 --> 00:20:50.586 A:middle
+consuming a lot more CPU.
+
+00:20:50.856 --> 00:20:52.006 A:middle
+So, there's an optimization we
+
+00:20:52.006 --> 00:20:52.476 A:middle
+make here.
+
+00:20:53.156 --> 00:20:55.096 A:middle
+If you have an image that has
+
+00:20:55.096 --> 00:20:56.456 A:middle
+Preserve Vector Data checked,
+
+00:20:57.266 --> 00:20:58.906 A:middle
+but you render it at the normal
+
+00:20:58.906 --> 00:20:59.386 A:middle
+size.
+
+00:20:59.386 --> 00:21:02.686 A:middle
+The asset catalog compiler has,
+

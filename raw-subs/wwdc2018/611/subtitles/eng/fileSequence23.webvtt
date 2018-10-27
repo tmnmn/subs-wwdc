@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.146 --> 00:23:01.396 A:middle
+encoding brief operation that
+
+00:23:01.396 --> 00:23:03.736 A:middle
+will transfer those results to
+
+00:23:03.736 --> 00:23:05.806 A:middle
+system memory that is visible by
+
+00:23:05.806 --> 00:23:06.676 A:middle
+both GPUs.
+
+00:23:07.426 --> 00:23:08.786 A:middle
+And once this transfer is
+
+00:23:08.786 --> 00:23:12.436 A:middle
+complete, our supporting GPU can
+
+00:23:12.906 --> 00:23:15.216 A:middle
+safely signal our shared event.
+
+00:23:15.866 --> 00:23:18.256 A:middle
+This signal will tell eGPU that
+
+00:23:18.316 --> 00:23:19.846 A:middle
+now it's safe to take those
+
+00:23:19.846 --> 00:23:20.236 A:middle
+results.
+
+00:23:21.496 --> 00:23:23.536 A:middle
+So our rendering thread
+
+00:23:23.536 --> 00:23:24.576 A:middle
+committed this [inaudible]
+
+00:23:24.576 --> 00:23:26.886 A:middle
+common buffer, and supporting
+
+00:23:26.916 --> 00:23:28.946 A:middle
+GPU is already processing its
+
+00:23:28.946 --> 00:23:29.246 A:middle
+work.
+
+00:23:30.016 --> 00:23:32.336 A:middle
+At the same time, we can start
+
+00:23:32.336 --> 00:23:34.086 A:middle
+encoding command buffer for a
+
+00:23:34.166 --> 00:23:36.026 A:middle
+primary GPU that is driving the
+
+00:23:36.076 --> 00:23:36.486 A:middle
+headset.
+
+00:23:37.676 --> 00:23:39.356 A:middle
+In this command buffer, we will
+
+00:23:39.356 --> 00:23:41.626 A:middle
+start by waiting for our shared
+
+00:23:41.626 --> 00:23:43.446 A:middle
+event to be sure that the data
+
+00:23:43.446 --> 00:23:45.516 A:middle
+is in system memory, and once
+
+00:23:45.516 --> 00:23:47.426 A:middle
+it's there, and the shared event
+
+00:23:47.426 --> 00:23:50.066 A:middle
+is signaled, we can perform a
+
+00:23:50.066 --> 00:23:51.306 A:middle
+brief operation that will
+
+00:23:51.306 --> 00:23:52.516 A:middle
+transfer this data through
+
+00:23:52.516 --> 00:23:54.826 A:middle
+Thunderbolt 3 connection, back
+
+00:23:55.096 --> 00:23:57.856 A:middle
+to our [inaudible] GPU and once
+
+00:23:57.956 --> 00:23:59.856 A:middle
+this transfer is complete, it's
+
+00:23:59.856 --> 00:24:01.936 A:middle
+safe to perform pause-dependent
+

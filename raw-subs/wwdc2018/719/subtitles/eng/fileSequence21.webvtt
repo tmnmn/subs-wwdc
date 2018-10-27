@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.546 --> 00:21:00.696 A:middle
+All right.
+
+00:21:00.696 --> 00:21:02.116 A:middle
+So, let's take an example how
+
+00:21:02.116 --> 00:21:03.086 A:middle
+you can apply a filter using
+
+00:21:03.086 --> 00:21:04.326 A:middle
+PyCoreImage, and you'll see just
+
+00:21:04.326 --> 00:21:05.376 A:middle
+how simple and powerful the
+
+00:21:05.566 --> 00:21:06.196 A:middle
+framework is.
+
+00:21:06.526 --> 00:21:07.996 A:middle
+So, the very first thing you
+
+00:21:07.996 --> 00:21:09.466 A:middle
+want to do is import your CIMG
+
+00:21:09.466 --> 00:21:10.726 A:middle
+class from your PyCoreImage
+
+00:21:10.726 --> 00:21:13.086 A:middle
+package, which we can then use
+
+00:21:13.086 --> 00:21:14.126 A:middle
+to load the image from file.
+
+00:21:15.526 --> 00:21:17.766 A:middle
+Note that at this point we don't
+
+00:21:17.766 --> 00:21:18.656 A:middle
+have a pixel buffer.
+
+00:21:19.126 --> 00:21:21.296 A:middle
+Core Image creates recipes for
+
+00:21:21.296 --> 00:21:22.626 A:middle
+images and in [inaudible] the
+
+00:21:22.626 --> 00:21:24.836 A:middle
+recipe is just giving
+
+00:21:24.836 --> 00:21:25.816 A:middle
+instruction to load the image
+
+00:21:25.816 --> 00:21:26.276 A:middle
+from file.
+
+00:21:26.626 --> 00:21:28.546 A:middle
+You can create a more
+
+00:21:28.546 --> 00:21:30.166 A:middle
+complicated graph by applying a
+
+00:21:30.166 --> 00:21:31.686 A:middle
+filter, by just calling the CI
+
+00:21:32.076 --> 00:21:33.716 A:middle
+filter name on it and passing
+
+00:21:33.716 --> 00:21:34.596 A:middle
+the input primaries in this
+
+00:21:34.596 --> 00:21:35.366 A:middle
+case, a radius.
+
+00:21:35.646 --> 00:21:36.726 A:middle
+And we can that we are
+
+00:21:36.726 --> 00:21:37.796 A:middle
+assembling a more complicated
+
+00:21:37.796 --> 00:21:38.226 A:middle
+graph.
+
+00:21:38.226 --> 00:21:40.006 A:middle
+And if we zoom on it, we can see
+
+00:21:40.006 --> 00:21:41.276 A:middle
+that we have out blur processor
+
+00:21:41.426 --> 00:21:41.996 A:middle
+right at the middle.
+
+00:21:43.146 --> 00:21:44.766 A:middle
+If you want to get your pixel
+
+00:21:44.766 --> 00:21:46.066 A:middle
+buffer representation, what you
+
+00:21:46.066 --> 00:21:47.956 A:middle
+can do is call render on your
+
+00:21:47.956 --> 00:21:48.866 A:middle
+CIMG instance.
+
+00:21:48.986 --> 00:21:50.896 A:middle
+And what you get out is a proper
+
+00:21:50.896 --> 00:21:52.000 A:middle
+unit by buffer.
+
+00:21:56.066 --> 00:21:57.206 A:middle
+So, to make that possible, we
+
+00:21:57.206 --> 00:21:57.876 A:middle
+need to make a few
+
+00:21:57.876 --> 00:21:59.666 A:middle
+simplifications on how Core
+
+00:21:59.666 --> 00:22:00.716 A:middle
+Image is called or do a bit of
+

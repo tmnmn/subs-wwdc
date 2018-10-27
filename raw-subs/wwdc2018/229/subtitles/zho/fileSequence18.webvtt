@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.379 --> 00:18:00.914 align:middle line:-1
+我们已经知道他们是熊
+
+00:18:00.981 --> 00:18:02.449 align:middle line:-1
+它们不必再告诉我们
+
+00:18:03.350 --> 00:18:06.119 align:middle line:-2
+所以让我们编写一些代码
+来找到那些愚蠢的冗余熊
+
+00:18:06.286 --> 00:18:08.455 align:middle line:-2
+我们将像刚才一样用惰性过滤器
+执行此操作
+
+00:18:08.689 --> 00:18:09.690 align:middle line:-1
+在这个例子中
+
+00:18:10.824 --> 00:18:14.261 align:middle line:-2
+所生成的惰性过滤器将是一个
+LazyFilterCollection
+
+00:18:14.494 --> 00:18:16.063 align:middle line:-1
+包装的一个字符串数组
+
+00:18:16.697 --> 00:18:17.698 align:middle line:-1
+在我们的闭包中
+
+00:18:17.764 --> 00:18:20.501 align:middle line:-2
+我们将在做断言检查之前
+打印出我们目前
+
+00:18:20.567 --> 00:18:22.069 align:middle line:-1
+正在迭代的那只熊
+
+00:18:22.302 --> 00:18:23.637 align:middle line:-1
+这样做是因为我想
+
+00:18:23.704 --> 00:18:26.273 align:middle line:-2
+更好理解过滤器工作原理
+然后我们将调用first
+
+00:18:26.340 --> 00:18:29.142 align:middle line:-2
+当我们这样做时 执行过程将被交给
+LazyFilterCollection
+
+00:18:30.210 --> 00:18:34.515 align:middle line:-2
+随后LazyFilterCollection
+将调用原始存储
+
+00:18:36.450 --> 00:18:37.985 align:middle line:-2
+这时我们将打印出
+“Grizzly”
+
+00:18:40.621 --> 00:18:43.390 align:middle line:-2
+并检查断言
+在这种情况下结果为false
+
+00:18:43.457 --> 00:18:44.892 align:middle line:-2
+因为“Grizzly”
+不包含“Bear”
+
+00:18:44.958 --> 00:18:46.159 align:middle line:-1
+并移动到下一个“Panda”
+
+00:18:47.294 --> 00:18:48.462 align:middle line:-1
+当我们到达“Panda”时…
+
+00:18:50.764 --> 00:18:53.166 align:middle line:-2
+当我们到达“Panda”时
+我们会再次打印出“Panda”
+
+00:18:53.867 --> 00:18:55.769 align:middle line:-1
+检查它是否包含单词“Bear”
+
+00:18:55.836 --> 00:18:57.304 align:middle line:-1
+并移动到“Spectacled”
+
+00:18:57.938 --> 00:19:01.008 align:middle line:-2
+“Spectacled”被打印
+它也不包含“Bear”一词
+

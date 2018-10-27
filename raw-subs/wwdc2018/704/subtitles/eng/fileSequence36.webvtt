@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:00.506 --> 00:36:01.526 A:middle
+So what does this look like in
+
+00:36:01.526 --> 00:36:01.886 A:middle
+code?
+
+00:36:02.846 --> 00:36:03.606 A:middle
+You simply call
+
+00:36:03.606 --> 00:36:06.416 A:middle
+SKReceiptRefreshRequest, you set
+
+00:36:06.416 --> 00:36:08.526 A:middle
+your purchase queue delegate
+
+00:36:08.726 --> 00:36:09.266 A:middle
+right there on the
+
+00:36:09.266 --> 00:36:10.886 A:middle
+ReceiptRefresh, you call start
+
+00:36:11.186 --> 00:36:12.706 A:middle
+and as that receipt gets updated
+
+00:36:12.966 --> 00:36:14.176 A:middle
+we'll call back and let you know
+
+00:36:14.176 --> 00:36:14.846 A:middle
+when it's down.
+
+00:36:15.376 --> 00:36:19.546 A:middle
+On macOS you can also call exit
+
+00:36:19.546 --> 00:36:23.176 A:middle
+173, that 173 code will tell the
+
+00:36:23.176 --> 00:36:24.486 A:middle
+operating system and tell
+
+00:36:24.486 --> 00:36:27.746 A:middle
+StoreKit to refresh a receipt on
+
+00:36:27.746 --> 00:36:28.156 A:middle
+your behalf.
+
+00:36:29.246 --> 00:36:30.066 A:middle
+There the app will get
+
+00:36:30.066 --> 00:36:31.596 A:middle
+relaunched once a new receipt
+
+00:36:31.596 --> 00:36:32.166 A:middle
+comes down.
+
+00:36:32.696 --> 00:36:36.156 A:middle
+As I mentioned earlier, we're
+
+00:36:36.156 --> 00:36:38.156 A:middle
+now allowing non-subscription
+
+00:36:38.156 --> 00:36:39.736 A:middle
+apps to do free trials and the
+
+00:36:39.736 --> 00:36:41.406 A:middle
+receipt is a great way to
+
+00:36:41.406 --> 00:36:43.446 A:middle
+understand is the user in the
+
+00:36:43.446 --> 00:36:45.146 A:middle
+middle of a free trial or have
+
+00:36:45.146 --> 00:36:47.946 A:middle
+they bought the full unlock
+
+00:36:48.476 --> 00:36:49.656 A:middle
+non-consumable IAP.
+
+00:36:49.656 --> 00:36:53.016 A:middle
+To do this you're going to want
+
+00:36:53.016 --> 00:36:55.776 A:middle
+to look for type 17 within the
+
+00:36:55.776 --> 00:36:56.236 A:middle
+receipt.
+
+00:36:56.556 --> 00:36:58.156 A:middle
+This includes all of your
+
+00:36:58.286 --> 00:37:00.036 A:middle
+subscription consumable and
+

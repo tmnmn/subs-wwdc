@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.426 --> 00:11:02.429 align:start position:27% line:-1
+しかし分けることも可能です
+
+00:11:02.663 --> 00:11:06.867 align:start position:29% line:-2
+別のオブジェクトや
+ソースファイルを使えます
+
+00:11:07.234 --> 00:11:10.671 align:start position:25% line:-1
+このCALL文を幅広く応用し
+
+00:11:10.771 --> 00:11:15.442 align:start position:27% line:-2
+コードにsignpostを
+組み込んでみてください
+
+00:11:17.845 --> 00:11:22.616 align:start position:25% line:-2
+以上がsignpostによる
+時間の計測です
+
+00:11:22.850 --> 00:11:28.322 align:start position:27% line:-2
+今度は signpostに
+付加的な情報を加えるため
+
+00:11:28.422 --> 00:11:32.659 align:start position:29% line:-2
+CALL文にメタデータを
+加えてみます
+
+00:11:34.261 --> 00:11:39.399 align:start position:27% line:-2
+基本のCALL文に
+文字列のパラメータを足すと
+
+00:11:39.733 --> 00:11:43.570 align:start position:32% line:-2
+BEGINとENDに
+情報を追加できます
+
+00:11:44.304 --> 00:11:48.775 align:start position:32% line:-2
+更に文字列は
+OSLog形式なので
+
+00:11:49.476 --> 00:11:53.013 align:start position:21% line:-1
+複数のBEGINとENDにも対応
+
+00:11:53.113 --> 00:11:57.484 align:start position:34% line:-2
+signpostに
+付加情報を渡せます
+
+00:11:57.584 --> 00:12:01.889 align:start position:27% line:-2
+例えば４つの整数を渡すため
+“%d”を使います
+

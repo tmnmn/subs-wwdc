@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.676 --> 00:24:00.336 A:middle
+Static Analyzer, it's a great
+
+00:24:00.336 --> 00:24:01.726 A:middle
+tool to find your bugs before
+
+00:24:01.726 --> 00:24:02.366 A:middle
+users do.
+
+00:24:02.706 --> 00:24:04.996 A:middle
+And now my colleague Ahmed will
+
+00:24:04.996 --> 00:24:06.376 A:middle
+talk about low-level
+
+00:24:06.376 --> 00:24:07.026 A:middle
+improvements.
+
+00:24:07.936 --> 00:24:10.916 A:middle
+&gt;&gt; Thank you George.
+
+00:24:11.016 --> 00:24:13.000 A:middle
+[ Applause ]
+
+00:24:15.046 --> 00:24:16.176 A:middle
+So as Alex and George told you,
+
+00:24:16.176 --> 00:24:18.486 A:middle
+we have lots of warnings and
+
+00:24:18.776 --> 00:24:20.326 A:middle
+Static Analyzer checks in the
+
+00:24:20.326 --> 00:24:22.496 A:middle
+compiler, but you also have the
+
+00:24:22.496 --> 00:24:24.186 A:middle
+sanitizer and all of these tools
+
+00:24:24.186 --> 00:24:25.476 A:middle
+help you find lots of bugs,
+
+00:24:25.576 --> 00:24:26.586 A:middle
+including security bugs.
+
+00:24:27.146 --> 00:24:29.606 A:middle
+So I'm sure you all have lots of
+
+00:24:29.606 --> 00:24:30.866 A:middle
+tests and use all these great
+
+00:24:30.866 --> 00:24:33.766 A:middle
+tools to find all the bugs in
+
+00:24:33.766 --> 00:24:34.366 A:middle
+these tests.
+
+00:24:35.066 --> 00:24:36.126 A:middle
+But for some of the most
+
+00:24:36.126 --> 00:24:38.496 A:middle
+egregious security bugs we want
+
+00:24:38.496 --> 00:24:39.546 A:middle
+to make sure that they don't
+
+00:24:39.546 --> 00:24:41.566 A:middle
+happen in release builds if
+
+00:24:41.566 --> 00:24:43.126 A:middle
+somehow they snuck past all the
+
+00:24:43.126 --> 00:24:43.516 A:middle
+testing.
+
+00:24:44.116 --> 00:24:48.246 A:middle
+So for those we have mitigations
+
+00:24:48.246 --> 00:24:49.516 A:middle
+in the code generator that are
+
+00:24:49.516 --> 00:24:50.856 A:middle
+always emitted even in release
+
+00:24:50.886 --> 00:24:51.216 A:middle
+builds.
+
+00:24:52.146 --> 00:24:54.326 A:middle
+So I'm Ahmed, I work on the code
+
+00:24:54.326 --> 00:24:55.616 A:middle
+generator and today I'm going to
+
+00:24:55.616 --> 00:24:57.486 A:middle
+tell you about a new mitigation
+
+00:24:57.486 --> 00:24:58.316 A:middle
+in Xcode 10.
+
+00:24:58.906 --> 00:25:01.226 A:middle
+So to see how that works we need
+

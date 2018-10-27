@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.416 --> 00:34:00.346 A:middle
+glass, with a slight amount of
+
+00:34:00.456 --> 00:34:01.206 A:middle
+dirt on the screen.
+
+00:34:01.736 --> 00:34:04.606 A:middle
+Here's how it looks in AR Quick
+
+00:34:04.606 --> 00:34:04.816 A:middle
+Look.
+
+00:34:05.826 --> 00:34:06.816 A:middle
+We can see that the light
+
+00:34:06.816 --> 00:34:08.016 A:middle
+reflects on the screen and
+
+00:34:08.016 --> 00:34:09.505 A:middle
+shines off the curved surface,
+
+00:34:09.786 --> 00:34:11.085 A:middle
+and if we turn it to the side,
+
+00:34:11.335 --> 00:34:12.416 A:middle
+we can see the color of the
+
+00:34:12.416 --> 00:34:13.596 A:middle
+screen there as well where the
+
+00:34:13.596 --> 00:34:15.346 A:middle
+glass as some grime to it.
+
+00:34:16.716 --> 00:34:18.255 A:middle
+We achieve this by using this
+
+00:34:18.315 --> 00:34:20.235 A:middle
+kind of texture for our screen.
+
+00:34:20.235 --> 00:34:21.426 A:middle
+It's pretty simple.
+
+00:34:21.505 --> 00:34:22.536 A:middle
+It's just adding that small
+
+00:34:22.536 --> 00:34:23.126 A:middle
+amount of dirt.
+
+00:34:23.686 --> 00:34:24.666 A:middle
+But crucially, it has the
+
+00:34:24.666 --> 00:34:25.866 A:middle
+transparency in its alpha
+
+00:34:25.866 --> 00:34:27.146 A:middle
+channel to indicate that the
+
+00:34:27.146 --> 00:34:28.346 A:middle
+screen is see-through, and we
+
+00:34:28.346 --> 00:34:29.916 A:middle
+can see the main screen behind
+
+00:34:29.916 --> 00:34:29.983 A:middle
+it.
+
+00:34:32.795 --> 00:34:33.906 A:middle
+When you are setting up the
+
+00:34:33.906 --> 00:34:35.775 A:middle
+textures for these individual
+
+00:34:35.775 --> 00:34:36.326 A:middle
+properties.
+
+00:34:36.326 --> 00:34:37.556 A:middle
+These are the formats to use.
+
+00:34:38.485 --> 00:34:41.166 A:middle
+Albedo should RGB, or RBGA, if
+
+00:34:41.166 --> 00:34:41.815 A:middle
+you're also providing
+
+00:34:41.815 --> 00:34:42.476 A:middle
+transparency.
+
+00:34:43.126 --> 00:34:44.646 A:middle
+Normal and emissive should also
+
+00:34:44.646 --> 00:34:45.146 A:middle
+be RGB.
+
+00:34:45.146 --> 00:34:47.496 A:middle
+And metallic roughness and
+
+00:34:47.496 --> 00:34:48.466 A:middle
+ambient occlusion should be
+
+00:34:48.466 --> 00:34:48.876 A:middle
+Greyscale.
+
+00:34:49.426 --> 00:34:51.896 A:middle
+You can use any image format
+
+00:34:51.896 --> 00:34:54.246 A:middle
+supported on iOS, and note that
+
+00:34:54.246 --> 00:34:55.676 A:middle
+these textures should be square.
+
+00:34:55.775 --> 00:34:56.856 A:middle
+They should be powers of 2
+
+00:34:56.856 --> 00:34:57.266 A:middle
+squared.
+
+00:34:57.266 --> 00:35:04.146 A:middle
+So, 2k, 1k, 512 pixels, so on.
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.736 --> 00:07:00.936 A:middle
+And two, if we trust the
+
+00:07:00.936 --> 00:07:03.386 A:middle
+deserializer, we know that the
+
+00:07:03.386 --> 00:07:04.966 A:middle
+run-time objects we get back out
+
+00:07:04.966 --> 00:07:05.806 A:middle
+are going to be valid.
+
+00:07:06.476 --> 00:07:07.746 A:middle
+Again, foundations JSON
+
+00:07:07.746 --> 00:07:08.906 A:middle
+serialization will always give
+
+00:07:08.906 --> 00:07:09.976 A:middle
+you strings and numbers and
+
+00:07:09.976 --> 00:07:11.186 A:middle
+arrays that you can actually
+
+00:07:11.186 --> 00:07:11.436 A:middle
+work with.
+
+00:07:12.156 --> 00:07:13.586 A:middle
+It's individual values that we
+
+00:07:13.586 --> 00:07:14.076 A:middle
+can trust.
+
+00:07:14.596 --> 00:07:16.746 A:middle
+But at this stage, we might
+
+00:07:16.746 --> 00:07:18.796 A:middle
+wonder okay how can we make use
+
+00:07:18.796 --> 00:07:19.826 A:middle
+of this data, or what can we
+
+00:07:19.826 --> 00:07:21.106 A:middle
+trust about it, and what
+
+00:07:21.106 --> 00:07:22.416 A:middle
+validation do we still need to
+
+00:07:23.746 --> 00:07:23.813 A:middle
+do?
+
+00:07:24.736 --> 00:07:26.376 A:middle
+Well, we don't actually know
+
+00:07:26.646 --> 00:07:28.006 A:middle
+much about the contents of this
+
+00:07:28.006 --> 00:07:29.486 A:middle
+data yet until we start looking
+
+00:07:29.486 --> 00:07:29.696 A:middle
+at it.
+
+00:07:29.696 --> 00:07:31.506 A:middle
+And in fact, we might not know
+
+00:07:31.506 --> 00:07:32.706 A:middle
+anything about the structure of
+
+00:07:32.706 --> 00:07:33.966 A:middle
+the data until we start
+
+00:07:33.966 --> 00:07:34.556 A:middle
+inspecting it.
+
+00:07:34.956 --> 00:07:36.066 A:middle
+If you've ever worked with
+
+00:07:36.066 --> 00:07:37.496 A:middle
+dynamic deserialization in this
+
+00:07:37.496 --> 00:07:38.216 A:middle
+way, you'll know that there's a
+
+00:07:38.216 --> 00:07:39.666 A:middle
+lot of downcasting from anys.
+
+00:07:40.466 --> 00:07:41.946 A:middle
+There's no upfront expectation
+
+00:07:41.946 --> 00:07:42.866 A:middle
+what the data can be because
+
+00:07:42.866 --> 00:07:43.796 A:middle
+it's very generalized.
+
+00:07:44.326 --> 00:07:45.396 A:middle
+And so, we'll want to check to
+
+00:07:45.396 --> 00:07:47.256 A:middle
+see what the data contains and
+
+00:07:47.256 --> 00:07:47.906 A:middle
+how we can work with it.
+
+00:07:49.166 --> 00:07:50.586 A:middle
+So, let's motivate this with an
+
+00:07:50.586 --> 00:07:50.966 A:middle
+example.
+
+00:07:51.896 --> 00:07:52.896 A:middle
+I've been working with an app
+
+00:07:52.896 --> 00:07:54.406 A:middle
+lately called Sell My Old Junk,
+
+00:07:54.826 --> 00:07:56.686 A:middle
+which allows me to sell my old
+
+00:07:56.686 --> 00:07:57.946 A:middle
+junk to some friends and family.
+
+00:07:58.396 --> 00:07:59.986 A:middle
+And when one of them opens up my
+

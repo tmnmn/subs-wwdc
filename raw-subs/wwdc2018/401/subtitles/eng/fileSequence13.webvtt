@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.786 --> 00:13:02.116 A:middle
+4.1.
+
+00:13:02.316 --> 00:13:03.276 A:middle
+When an object is created
+
+00:13:03.276 --> 00:13:04.716 A:middle
+there's a +1 reference account
+
+00:13:04.716 --> 00:13:05.896 A:middle
+associated with it.
+
+00:13:05.896 --> 00:13:08.176 A:middle
+What the convention was if the
+
+00:13:08.176 --> 00:13:09.596 A:middle
+object is passed off as an
+
+00:13:09.596 --> 00:13:10.806 A:middle
+argument to another function,
+
+00:13:11.286 --> 00:13:12.406 A:middle
+it's the obligation of that
+
+00:13:12.466 --> 00:13:14.046 A:middle
+function call to release the
+
+00:13:14.046 --> 00:13:14.526 A:middle
+object.
+
+00:13:14.986 --> 00:13:16.626 A:middle
+So it's basically you're passing
+
+00:13:16.626 --> 00:13:18.036 A:middle
+off the responsibility to the
+
+00:13:18.036 --> 00:13:19.406 A:middle
+call to release it.
+
+00:13:20.376 --> 00:13:21.556 A:middle
+This provided some performance
+
+00:13:21.556 --> 00:13:22.926 A:middle
+opportunities to shrink the
+
+00:13:22.926 --> 00:13:25.156 A:middle
+lifetime of some objects to like
+
+00:13:25.156 --> 00:13:26.936 A:middle
+their smallest range of use.
+
+00:13:27.806 --> 00:13:29.976 A:middle
+However, code often looks more
+
+00:13:30.056 --> 00:13:32.076 A:middle
+like this where you're passing
+
+00:13:32.076 --> 00:13:33.886 A:middle
+the object off several times to
+
+00:13:34.276 --> 00:13:35.236 A:middle
+different APIs.
+
+00:13:35.906 --> 00:13:37.096 A:middle
+And because you have this
+
+00:13:37.136 --> 00:13:38.856 A:middle
+calling convention, you still
+
+00:13:38.856 --> 00:13:40.226 A:middle
+have this dance where the
+
+00:13:40.226 --> 00:13:41.316 A:middle
+initial reference count is
+
+00:13:41.366 --> 00:13:42.466 A:middle
+balanced out with the final
+
+00:13:42.516 --> 00:13:43.066 A:middle
+call.
+
+00:13:43.466 --> 00:13:44.666 A:middle
+But the intermediate calls are
+
+00:13:44.666 --> 00:13:45.776 A:middle
+expected to have these extra
+
+00:13:45.776 --> 00:13:48.246 A:middle
+retains and releases because
+
+00:13:48.246 --> 00:13:49.956 A:middle
+that's what a convention is.
+
+00:13:50.876 --> 00:13:52.406 A:middle
+This is really wasteful because
+
+00:13:52.626 --> 00:13:53.886 A:middle
+the object is really just going
+
+00:13:53.886 --> 00:13:55.156 A:middle
+to be alive during the entire
+
+00:13:55.156 --> 00:13:57.106 A:middle
+duration of this function.
+
+00:13:57.816 --> 00:13:59.876 A:middle
+So in Swift 4.2 we changed the
+
+00:13:59.876 --> 00:14:01.396 A:middle
+calling convention so that it
+

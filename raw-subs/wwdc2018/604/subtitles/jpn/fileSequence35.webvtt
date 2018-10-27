@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:56.263 --> 00:35:00.601 align:start position:25% line:-2
+非同期的特性をレンダループで
+明示的に管理します
+
+00:35:00.701 --> 00:35:04.405 align:start position:25% line:-2
+またコマンドバッファを取得し
+GPUコマンドリストと共に
+
+00:35:04.505 --> 00:35:07.407 align:start position:29% line:-1
+それをGPUに供給します
+
+00:35:08.108 --> 00:35:10.811 align:start position:32% line:-2
+このようにリソースを
+アップデートすれば
+
+00:35:10.911 --> 00:35:14.281 align:start position:25% line:-1
+GPUはレンダループの記述を
+
+00:35:14.381 --> 00:35:16.517 align:start position:30% line:-1
+非同期的に読み取ります
+
+00:35:17.417 --> 00:35:19.787 align:start position:34% line:-2
+またレンダコマンド
+エンコーダを作り
+
+00:35:19.887 --> 00:35:21.789 align:start position:30% line:-1
+レンダパスを変換します
+
+00:35:22.823 --> 00:35:26.226 align:start position:29% line:-2
+そしてフレームを
+ディスプレイに提示します
+
+00:35:27.528 --> 00:35:30.731 align:start position:32% line:-2
+さてコマンドバッファ
+オブジェクトです
+
+00:35:32.166 --> 00:35:35.369 align:start position:25% line:-1
+OpenGLからの主な変更は
+
+00:35:35.469 --> 00:35:38.906 align:start position:23% line:-2
+Metalはコマンドバッファを
+明示的に制御できるようになり
+
+00:35:39.006 --> 00:35:41.475 align:start position:29% line:-1
+コマンドバッファを作成し
+
+00:35:41.575 --> 00:35:46.813 align:start position:25% line:-2
+GPUによる処理を自分で
+決められるようになった点です
+
+00:35:47.514 --> 00:35:50.117 align:start position:34% line:-2
+まずフレーム全体を
+レンダリングする―
+
+00:35:50.217 --> 00:35:53.487 align:start position:34% line:-2
+コマンドバッファを
+１つ作成します
+
+00:35:53.787 --> 00:35:56.590 align:start position:29% line:-1
+アプリケーション起動後―
+
+00:35:56.690 --> 00:36:00.094 align:start position:30% line:-2
+GPUにアイドル状態が
+認められた場合
+

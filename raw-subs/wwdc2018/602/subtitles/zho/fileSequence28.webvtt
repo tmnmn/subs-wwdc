@@ -1,0 +1,44 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:57.611 --> 00:28:02.883 align:middle line:-2
+让我们看看ARKit API
+如何让你轻松使用此特性
+
+00:28:07.821 --> 00:28:11.758 align:middle line:-2
+你需要在世界跟踪配置中
+做的所有事情
+
+00:28:12.392 --> 00:28:18.298 align:middle line:-2
+就是将environmentTexturing属性
+设置为.automatic并运行会话
+
+00:28:19.166 --> 00:28:20.667 align:middle line:-1
+就这么简单
+
+00:28:29.643 --> 00:28:33.247 align:middle line:-2
+AR会话将在后台自动运行
+该环境纹理化过程
+
+00:28:33.313 --> 00:28:37.284 align:middle line:-1
+并将环境纹理作为环境探头锚
+
+00:28:37.985 --> 00:28:39.753 align:middle line:-1
+提供给你
+
+00:28:41.188 --> 00:28:45.359 align:middle line:-2
+AREnvironmentProbeAnchor
+是ARAnchor的扩展
+
+00:28:45.425 --> 00:28:49.162 align:middle line:-2
+这意味着它具有六自由度的
+位置和方向变换
+
+00:28:50.998 --> 00:28:54.668 align:middle line:-2
+此外 它有个MTLTexture
+形式的立方体贴图
+
+00:28:58.405 --> 00:29:02.709 align:middle line:-2
+ARKit还为你提供了
+立方体贴图的物理范围
+

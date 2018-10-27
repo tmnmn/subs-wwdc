@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.306 --> 00:18:02.076 A:middle
+So in this demo we saw how we
+
+00:18:02.076 --> 00:18:04.336 A:middle
+started with four models and
+
+00:18:04.336 --> 00:18:06.606 A:middle
+they were huge, in 32-bit -- or
+
+00:18:06.606 --> 00:18:08.716 A:middle
+total app size was 27 megabytes.
+
+00:18:09.426 --> 00:18:10.966 A:middle
+Then we evaluated the quality
+
+00:18:10.966 --> 00:18:12.466 A:middle
+and switched to 4-bit models,
+
+00:18:13.026 --> 00:18:14.406 A:middle
+and the total size of our app
+
+00:18:14.406 --> 00:18:16.526 A:middle
+went down to just 3.4 megabytes.
+
+00:18:16.806 --> 00:18:16.873 A:middle
+Now --
+
+00:18:17.516 --> 00:18:22.646 A:middle
+[ Applause ]
+
+00:18:23.146 --> 00:18:24.646 A:middle
+This doesn't cost us anything in
+
+00:18:24.646 --> 00:18:26.756 A:middle
+terms of quality because all
+
+00:18:26.756 --> 00:18:27.646 A:middle
+these versions -- these
+
+00:18:27.646 --> 00:18:29.456 A:middle
+quantized versions look the
+
+00:18:29.456 --> 00:18:31.626 A:middle
+same, and the quality is still
+
+00:18:31.626 --> 00:18:32.076 A:middle
+amazing.
+
+00:18:32.616 --> 00:18:36.006 A:middle
+We showed how quantization can
+
+00:18:36.006 --> 00:18:37.446 A:middle
+help us reduce the size of an
+
+00:18:37.446 --> 00:18:39.166 A:middle
+app by reducing the size of the
+
+00:18:39.166 --> 00:18:40.796 A:middle
+weight at the very microscopic
+
+00:18:40.796 --> 00:18:41.046 A:middle
+level.
+
+00:18:41.046 --> 00:18:44.356 A:middle
+Now let's see how we can reduce
+
+00:18:44.356 --> 00:18:45.546 A:middle
+the number of models that your
+
+00:18:45.546 --> 00:18:45.976 A:middle
+app needs.
+
+00:18:46.666 --> 00:18:48.866 A:middle
+In the most straightforward
+
+00:18:48.866 --> 00:18:51.446 A:middle
+case, if your app has three
+
+00:18:51.446 --> 00:18:52.936 A:middle
+machine-learning functionalities
+
+00:18:53.306 --> 00:18:54.496 A:middle
+then you need three different
+
+00:18:54.496 --> 00:18:55.536 A:middle
+machine-learning models.
+
+00:18:56.156 --> 00:18:58.206 A:middle
+But in some cases, it is
+
+00:18:58.206 --> 00:19:01.206 A:middle
+possible to have the same model
+

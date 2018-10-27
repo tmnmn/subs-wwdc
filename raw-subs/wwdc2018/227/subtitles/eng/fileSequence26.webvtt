@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.956 --> 00:26:00.066 A:middle
+sort of their natural size and
+
+00:26:00.066 --> 00:26:00.946 A:middle
+don't have to worry about
+
+00:26:01.006 --> 00:26:02.136 A:middle
+pre-optimizing them to be the
+
+00:26:02.136 --> 00:26:03.846 A:middle
+smallest possible things so that
+
+00:26:03.946 --> 00:26:05.966 A:middle
+it's efficiently deployed right.
+
+00:26:06.236 --> 00:26:07.346 A:middle
+That shouldn't be the concern of
+
+00:26:07.346 --> 00:26:08.256 A:middle
+the designer it's actually much
+
+00:26:08.256 --> 00:26:08.996 A:middle
+more meaningful over the
+
+00:26:08.996 --> 00:26:10.876 A:middle
+long-term to put something in
+
+00:26:10.876 --> 00:26:12.196 A:middle
+the source code that's easy to
+
+00:26:12.196 --> 00:26:13.946 A:middle
+look at and obvious what it is
+
+00:26:14.326 --> 00:26:15.836 A:middle
+and let the tools worry about
+
+00:26:15.836 --> 00:26:16.946 A:middle
+these deployment details.
+
+00:26:18.046 --> 00:26:20.066 A:middle
+So in addition to the graphical
+
+00:26:20.066 --> 00:26:21.506 A:middle
+inspector and graphical way of
+
+00:26:21.506 --> 00:26:22.556 A:middle
+identifying the stretchable
+
+00:26:22.556 --> 00:26:24.076 A:middle
+portion there is of course also
+
+00:26:24.076 --> 00:26:25.636 A:middle
+the Show Slicing Inspector which
+
+00:26:25.636 --> 00:26:27.006 A:middle
+where you can have fine control
+
+00:26:27.376 --> 00:26:29.396 A:middle
+over these edge insets and also
+
+00:26:29.786 --> 00:26:31.696 A:middle
+control the behavior of the
+
+00:26:31.696 --> 00:26:33.286 A:middle
+centerpiece when it stretches or
+
+00:26:33.286 --> 00:26:33.846 A:middle
+tiles.
+
+00:26:36.206 --> 00:26:38.106 A:middle
+All this of course adds up to
+
+00:26:38.106 --> 00:26:39.376 A:middle
+keeping the stretching metadata
+
+00:26:39.376 --> 00:26:41.166 A:middle
+close to the artwork which will
+
+00:26:41.166 --> 00:26:42.976 A:middle
+then yield enormous benefits the
+
+00:26:42.976 --> 00:26:44.446 A:middle
+next time, which inevitably
+
+00:26:44.446 --> 00:26:46.026 A:middle
+happens, the designer comes up
+
+00:26:46.026 --> 00:26:47.086 A:middle
+with a new update to your
+
+00:26:47.086 --> 00:26:47.536 A:middle
+design.
+
+00:26:48.196 --> 00:26:49.716 A:middle
+Now you can update everything in
+
+00:26:49.716 --> 00:26:50.866 A:middle
+one place and don't have to
+
+00:26:50.866 --> 00:26:52.286 A:middle
+remember the five or six places
+
+00:26:52.286 --> 00:26:53.406 A:middle
+in code where you might have a
+
+00:26:53.406 --> 00:26:54.736 A:middle
+hang code of the edge insets
+
+00:26:54.776 --> 00:26:57.196 A:middle
+previously, now it's all tied
+
+00:26:57.196 --> 00:26:58.336 A:middle
+together in one place.
+
+00:26:58.706 --> 00:27:00.976 A:middle
+Thank you.
+

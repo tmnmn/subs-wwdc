@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.126 --> 00:20:03.686 A:middle
+So on the top, top left here,
+
+00:20:03.836 --> 00:20:04.276 A:middle
+your left.
+
+00:20:04.766 --> 00:20:06.536 A:middle
+We see that original model is 30
+
+00:20:06.686 --> 00:20:09.306 A:middle
+-- is 32 bits and it's 6.7
+
+00:20:09.306 --> 00:20:10.186 A:middle
+megabytes in size.
+
+00:20:10.326 --> 00:20:12.106 A:middle
+And our 8-bit linearly quantized
+
+00:20:12.106 --> 00:20:14.146 A:middle
+model is only 1.7 megabits in
+
+00:20:14.146 --> 00:20:14.446 A:middle
+size.
+
+00:20:14.776 --> 00:20:16.016 A:middle
+And we see that the performance
+
+00:20:16.486 --> 00:20:18.256 A:middle
+by visual inspection it's good
+
+00:20:18.256 --> 00:20:19.406 A:middle
+enough for my style transfer
+
+00:20:19.406 --> 00:20:19.746 A:middle
+demo.
+
+00:20:20.756 --> 00:20:23.176 A:middle
+Now we can see that even down to
+
+00:20:23.176 --> 00:20:25.016 A:middle
+4 bits, we don't lose out much
+
+00:20:25.016 --> 00:20:25.896 A:middle
+in the way of performance.
+
+00:20:26.636 --> 00:20:27.736 A:middle
+I would even argue that for my
+
+00:20:27.736 --> 00:20:29.256 A:middle
+app at least, the 3 bit will
+
+00:20:29.256 --> 00:20:30.066 A:middle
+work fine as well.
+
+00:20:30.066 --> 00:20:32.946 A:middle
+And we see at 2 bit, we start to
+
+00:20:32.946 --> 00:20:34.886 A:middle
+see a lot of artifacts and this
+
+00:20:34.886 --> 00:20:36.406 A:middle
+may not be the right model for
+
+00:20:37.236 --> 00:20:37.303 A:middle
+us.
+
+00:20:38.906 --> 00:20:40.406 A:middle
+And that was quantization using
+
+00:20:40.406 --> 00:20:41.186 A:middle
+Core ML Tools.
+
+00:20:42.146 --> 00:20:43.056 A:middle
+Now I'm going to hand it back to
+
+00:20:43.056 --> 00:20:44.836 A:middle
+Aseem who's going to talk about
+
+00:20:44.836 --> 00:20:45.596 A:middle
+custom conversion.
+
+00:20:45.596 --> 00:20:45.936 A:middle
+Thank you.
+
+00:20:46.516 --> 00:20:51.846 A:middle
+[ Applause ]
+
+00:20:52.346 --> 00:20:52.976 A:middle
+&gt;&gt; Thank you, Sohaib.
+
+00:20:53.646 --> 00:20:56.136 A:middle
+So I want to talk about a
+
+00:20:56.266 --> 00:20:58.396 A:middle
+feature that is essential to
+
+00:20:58.396 --> 00:20:59.706 A:middle
+keep pace with the machine
+
+00:20:59.706 --> 00:21:00.546 A:middle
+learning research that's
+

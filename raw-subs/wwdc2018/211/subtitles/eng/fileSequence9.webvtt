@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.186 --> 00:09:00.476 A:middle
+Now, the last step is to handle
+
+00:09:00.476 --> 00:09:01.316 A:middle
+your shortcut, once you've
+
+00:09:01.316 --> 00:09:02.526 A:middle
+defined and donated it.
+
+00:09:02.926 --> 00:09:05.186 A:middle
+And every time the user uses an
+
+00:09:05.186 --> 00:09:08.046 A:middle
+NSUserActivity from your app, it
+
+00:09:08.406 --> 00:09:09.406 A:middle
+will be opened in your app.
+
+00:09:09.806 --> 00:09:11.186 A:middle
+And so you need to handle it by
+
+00:09:11.186 --> 00:09:12.696 A:middle
+implementing the app delegate
+
+00:09:12.696 --> 00:09:13.916 A:middle
+method for handling
+
+00:09:13.916 --> 00:09:15.256 A:middle
+NSUserActivity, which is called
+
+00:09:15.256 --> 00:09:16.496 A:middle
+continueUserActivity.
+
+00:09:17.086 --> 00:09:18.036 A:middle
+So, all you have to do is
+
+00:09:18.036 --> 00:09:19.816 A:middle
+implement this method, check if
+
+00:09:19.816 --> 00:09:21.326 A:middle
+the activity type matches the
+
+00:09:21.326 --> 00:09:22.646 A:middle
+one that you registered, and, if
+
+00:09:22.646 --> 00:09:23.926 A:middle
+it does, then you want to
+
+00:09:23.926 --> 00:09:25.396 A:middle
+restore the state of your app to
+
+00:09:25.396 --> 00:09:26.326 A:middle
+what it was when the user
+
+00:09:26.326 --> 00:09:27.296 A:middle
+activity was saved.
+
+00:09:28.706 --> 00:09:30.366 A:middle
+So, that's everything you need
+
+00:09:30.366 --> 00:09:31.706 A:middle
+to do to get Siri to start
+
+00:09:31.706 --> 00:09:33.386 A:middle
+suggesting shortcuts for your
+
+00:09:33.386 --> 00:09:34.836 A:middle
+apps with NSUserActivity.
+
+00:09:37.166 --> 00:09:38.396 A:middle
+Now, let's talk about how to
+
+00:09:38.396 --> 00:09:39.356 A:middle
+expose Shortcuts through
+
+00:09:39.356 --> 00:09:39.806 A:middle
+intents.
+
+00:09:41.016 --> 00:09:42.376 A:middle
+The first step, again, is to
+
+00:09:42.376 --> 00:09:43.346 A:middle
+define your shortcut.
+
+00:09:43.526 --> 00:09:44.906 A:middle
+And so with intents, you'll need
+
+00:09:44.906 --> 00:09:47.116 A:middle
+to start by deciding what type
+
+00:09:47.116 --> 00:09:49.576 A:middle
+of intent you'd like to adopt.
+
+00:09:50.196 --> 00:09:51.936 A:middle
+And, as you know, Siri includes
+
+00:09:51.936 --> 00:09:53.396 A:middle
+many great built-in intents,
+
+00:09:53.616 --> 00:09:55.406 A:middle
+like for messaging, workouts,
+
+00:09:55.536 --> 00:09:56.626 A:middle
+lists, and more.
+
+00:09:57.456 --> 00:09:59.156 A:middle
+And now we're introducing the
+
+00:09:59.156 --> 00:10:00.936 A:middle
+ability to define custom intents
+

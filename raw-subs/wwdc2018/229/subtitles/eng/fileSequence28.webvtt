@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.036 --> 00:28:00.126 A:middle
+variety of cases, and as you
+
+00:28:00.126 --> 00:28:01.656 A:middle
+incrementally add elements, you
+
+00:28:01.656 --> 00:28:03.736 A:middle
+may actually end up over
+
+00:28:03.736 --> 00:28:04.816 A:middle
+allocating the amount of storage
+
+00:28:04.816 --> 00:28:06.706 A:middle
+that you need, but taking care
+
+00:28:06.706 --> 00:28:07.726 A:middle
+that you don't over estimate
+
+00:28:07.726 --> 00:28:09.226 A:middle
+when providing such hints,
+
+00:28:09.446 --> 00:28:10.186 A:middle
+because otherwise you'll find
+
+00:28:10.186 --> 00:28:11.156 A:middle
+yourself in the same exactly
+
+00:28:11.156 --> 00:28:12.116 A:middle
+situation where you're using up
+
+00:28:12.116 --> 00:28:13.366 A:middle
+more storage than you actually
+
+00:28:13.876 --> 00:28:13.966 A:middle
+need.
+
+00:28:14.756 --> 00:28:16.216 A:middle
+And now, I want to move on to my
+
+00:28:16.216 --> 00:28:17.266 A:middle
+final topic for today.
+
+00:28:17.266 --> 00:28:20.196 A:middle
+And that's the wide range of
+
+00:28:20.196 --> 00:28:20.986 A:middle
+collections that become
+
+00:28:20.986 --> 00:28:22.876 A:middle
+available for you when you
+
+00:28:22.876 --> 00:28:24.166 A:middle
+import Foundation and when you
+
+00:28:24.166 --> 00:28:25.756 A:middle
+should consider using them.
+
+00:28:26.456 --> 00:28:28.286 A:middle
+In addition to the standard
+
+00:28:28.286 --> 00:28:29.266 A:middle
+library collections, when you
+
+00:28:29.266 --> 00:28:30.606 A:middle
+import Foundation, you gain
+
+00:28:30.606 --> 00:28:31.546 A:middle
+access to the great
+
+00:28:31.546 --> 00:28:32.806 A:middle
+reference-type collections that
+
+00:28:32.806 --> 00:28:34.216 A:middle
+objective C developers have been
+
+00:28:34.216 --> 00:28:35.076 A:middle
+using for decades.
+
+00:28:35.076 --> 00:28:37.636 A:middle
+And many of these also gain
+
+00:28:37.636 --> 00:28:39.636 A:middle
+conformance in Swift and thus
+
+00:28:39.636 --> 00:28:40.816 A:middle
+behave just the collections that
+
+00:28:40.816 --> 00:28:41.636 A:middle
+we've been talking about.
+
+00:28:42.356 --> 00:28:43.246 A:middle
+That said, there are a couple
+
+00:28:43.246 --> 00:28:44.136 A:middle
+important things to keep in
+
+00:28:44.136 --> 00:28:44.426 A:middle
+mind.
+
+00:28:44.906 --> 00:28:48.046 A:middle
+First thing to keep in mind is
+
+00:28:48.046 --> 00:28:48.676 A:middle
+that these NS [inaudible]
+
+00:28:48.726 --> 00:28:50.376 A:middle
+collections are reference types.
+
+00:28:50.556 --> 00:28:51.616 A:middle
+And this is best examined by
+
+00:28:51.616 --> 00:28:52.696 A:middle
+considering an example.
+
+00:28:53.636 --> 00:28:54.546 A:middle
+We're going to define value
+
+00:28:54.636 --> 00:28:55.596 A:middle
+types and reference types and do
+
+00:28:55.596 --> 00:28:57.196 A:middle
+the same things with them on two
+
+00:28:57.196 --> 00:28:57.476 A:middle
+sides.
+
+00:28:58.406 --> 00:28:59.536 A:middle
+So with our value type, we'll
+
+00:28:59.536 --> 00:29:00.196 A:middle
+call it x.
+

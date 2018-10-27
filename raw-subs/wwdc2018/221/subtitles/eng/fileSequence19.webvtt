@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.926 --> 00:19:00.716 A:middle
+We can see that the text
+
+00:19:00.756 --> 00:19:02.956 A:middle
+container has been resized to
+
+00:19:02.956 --> 00:19:04.386 A:middle
+match the dimensions of a piece
+
+00:19:04.976 --> 00:19:06.056 A:middle
+of paper.
+
+00:19:06.176 --> 00:19:07.696 A:middle
+Now if we scroll down, we can
+
+00:19:07.696 --> 00:19:08.866 A:middle
+see that the text jumps from the
+
+00:19:08.866 --> 00:19:09.946 A:middle
+first page to the second.
+
+00:19:10.886 --> 00:19:12.116 A:middle
+Now the standard configuration
+
+00:19:12.116 --> 00:19:13.266 A:middle
+doesn't really support layout
+
+00:19:13.266 --> 00:19:13.636 A:middle
+like this.
+
+00:19:15.066 --> 00:19:16.626 A:middle
+Sure enough, this layout uses
+
+00:19:16.626 --> 00:19:17.856 A:middle
+two text views and text
+
+00:19:17.856 --> 00:19:18.326 A:middle
+containers.
+
+00:19:19.076 --> 00:19:20.006 A:middle
+Now they're still managed by the
+
+00:19:20.106 --> 00:19:21.276 A:middle
+same layout manager and text
+
+00:19:21.276 --> 00:19:22.626 A:middle
+storage, which allows the text
+
+00:19:22.626 --> 00:19:24.176 A:middle
+to freely jump from one page to
+
+00:19:25.016 --> 00:19:26.566 A:middle
+the next.
+
+00:19:26.776 --> 00:19:27.926 A:middle
+Now if you'd like to see more
+
+00:19:27.926 --> 00:19:29.276 A:middle
+about how TextEdit works, you
+
+00:19:29.276 --> 00:19:31.136 A:middle
+can actually find its source in
+
+00:19:31.136 --> 00:19:32.116 A:middle
+the guides and sample codes
+
+00:19:32.116 --> 00:19:32.546 A:middle
+library.
+
+00:19:32.546 --> 00:19:36.046 A:middle
+So we've picked the right
+
+00:19:36.046 --> 00:19:37.666 A:middle
+controls, we've picked the right
+
+00:19:37.666 --> 00:19:39.716 A:middle
+configuration, but sometimes we
+
+00:19:39.716 --> 00:19:41.016 A:middle
+actually need to hammer on these
+
+00:19:41.096 --> 00:19:42.126 A:middle
+to achieve what we want.
+
+00:19:43.346 --> 00:19:44.386 A:middle
+But how do we decide which
+
+00:19:44.386 --> 00:19:45.076 A:middle
+hammer to use?
+
+00:19:45.806 --> 00:19:49.006 A:middle
+So we're going to try and pick
+
+00:19:49.006 --> 00:19:50.166 A:middle
+the right hammer for the job
+
+00:19:50.306 --> 00:19:51.526 A:middle
+when we go through the steps of
+
+00:19:51.526 --> 00:19:53.146 A:middle
+building a journal app together.
+
+00:19:54.516 --> 00:19:55.876 A:middle
+We'll start by putting today's
+
+00:19:55.946 --> 00:19:57.056 A:middle
+date on to the window.
+
+00:19:58.316 --> 00:19:59.546 A:middle
+Now we don't have UILabels in
+
+00:19:59.546 --> 00:20:01.226 A:middle
+AppKit, but we can make a text
+

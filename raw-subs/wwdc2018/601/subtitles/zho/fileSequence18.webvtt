@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.813 --> 00:18:01.982 align:middle line:-1
+这时候
+
+00:18:02.282 --> 00:18:05.752 align:middle line:-2
+你可以覆盖SampleHandler
+默认的初始设定
+
+00:18:06.587 --> 00:18:08.889 align:middle line:-1
+编写适用于直播的程式
+
+00:18:08.956 --> 00:18:11.558 align:middle line:-1
+不要直接关联媒体样本的处理
+
+00:18:12.659 --> 00:18:16.530 align:middle line:-2
+举例来说
+你可以获取登录信息
+
+00:18:16.697 --> 00:18:20.934 align:middle line:-2
+通过这个密钥串
+并在平台上创建直播环节
+
+00:18:22.069 --> 00:18:23.804 align:middle line:-1
+（直播开始）
+
+00:18:23.871 --> 00:18:25.272 align:middle line:-1
+一旦程序启动
+
+00:18:25.339 --> 00:18:28.275 align:middle line:-2
+且SampleHandler
+实例已经存在
+
+00:18:30.744 --> 00:18:34.381 align:middle line:-1
+扩展得知ReplayKit将提供
+
+00:18:34.448 --> 00:18:39.653 align:middle line:-2
+音视频样本
+通过broadcastStarted函数
+
+00:18:40.721 --> 00:18:45.926 align:middle line:-1
+在此函数中 可以创建媒体引擎
+
+00:18:45.993 --> 00:18:50.130 align:middle line:-1
+或其他活动以接收样本
+
+00:18:50.197 --> 00:18:53.300 align:middle line:-1
+并实时编码 然后上传至服务器
+
+00:18:54.535 --> 00:18:56.303 align:middle line:-1
+（媒体样本处理）
+
+00:18:56.370 --> 00:18:58.205 align:middle line:-1
+直播正在运行的时候
+

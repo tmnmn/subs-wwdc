@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:56.126 --> 00:44:00.786 A:middle
+times 13,000, and the iPhone X
+
+00:44:00.786 --> 00:44:02.766 A:middle
+is a 3X device, so it's 3 times
+
+00:44:02.766 --> 00:44:06.436 A:middle
+the width times 3 times the
+
+00:44:06.436 --> 00:44:09.696 A:middle
+height times 4 bytes per pixel.
+
+00:44:10.506 --> 00:44:13.036 A:middle
+That number looks kind of
+
+00:44:13.036 --> 00:44:13.706 A:middle
+familiar.
+
+00:44:15.876 --> 00:44:17.786 A:middle
+So I'm pretty sure I know
+
+00:44:17.786 --> 00:44:19.306 A:middle
+exactly what's using up my
+
+00:44:19.306 --> 00:44:20.886 A:middle
+7-and-a-half gigabytes of
+
+00:44:20.886 --> 00:44:24.386 A:middle
+memory, and it's not necessarily
+
+00:44:24.386 --> 00:44:25.966 A:middle
+my beginImageContext thing.
+
+00:44:25.966 --> 00:44:27.376 A:middle
+It's the size of this image.
+
+00:44:27.746 --> 00:44:29.186 A:middle
+And there's no reason the image
+
+00:44:29.186 --> 00:44:30.506 A:middle
+needs to be this big.
+
+00:44:30.966 --> 00:44:32.146 A:middle
+What I want to do is scale it
+
+00:44:32.146 --> 00:44:33.826 A:middle
+down so it's the same dimensions
+
+00:44:33.826 --> 00:44:34.666 A:middle
+as my view.
+
+00:44:34.666 --> 00:44:36.086 A:middle
+And that way, it'll take up far
+
+00:44:36.086 --> 00:44:36.826 A:middle
+less memory.
+
+00:44:37.526 --> 00:44:38.766 A:middle
+So if I go back to the image
+
+00:44:38.766 --> 00:44:40.026 A:middle
+loading code that's up here --
+
+00:44:40.136 --> 00:44:41.216 A:middle
+actually, before I do that, I
+
+00:44:41.216 --> 00:44:42.276 A:middle
+want to go ahead and disable
+
+00:44:42.276 --> 00:44:45.146 A:middle
+this break point -- so let's
+
+00:44:45.146 --> 00:44:46.286 A:middle
+take a look at what this does.
+
+00:44:46.286 --> 00:44:46.886 A:middle
+Well, it's pretty
+
+00:44:46.886 --> 00:44:47.666 A:middle
+straightforward.
+
+00:44:47.666 --> 00:44:49.016 A:middle
+It's getting the URL from a
+
+00:44:49.016 --> 00:44:51.176 A:middle
+bundle, it's loading some data
+
+00:44:51.176 --> 00:44:52.796 A:middle
+from that URL and loading it
+
+00:44:52.796 --> 00:44:55.166 A:middle
+into UIImage, then that, then,
+
+00:44:55.346 --> 00:44:56.856 A:middle
+which gets passed to the filter.
+
+00:44:57.406 --> 00:44:58.906 A:middle
+So what I want to do is, before
+
+00:44:58.906 --> 00:45:00.276 A:middle
+I send it to the filter, I want
+

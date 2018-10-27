@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.436 --> 00:35:01.076 A:middle
+Well, it turns out this code is
+
+00:35:01.076 --> 00:35:03.756 A:middle
+actually ambiguous because when
+
+00:35:03.756 --> 00:35:05.866 A:middle
+I access that local variable
+
+00:35:06.136 --> 00:35:08.436 A:middle
+inside the closure, it's already
+
+00:35:08.436 --> 00:35:10.086 A:middle
+being modified by this
+
+00:35:10.086 --> 00:35:11.686 A:middle
+withAppended method, which is a
+
+00:35:11.686 --> 00:35:12.586 A:middle
+mutating method.
+
+00:35:13.306 --> 00:35:16.136 A:middle
+So the ambiguity is that do I
+
+00:35:16.136 --> 00:35:18.466 A:middle
+mean the original value of path
+
+00:35:18.806 --> 00:35:20.556 A:middle
+as it was before I called
+
+00:35:20.556 --> 00:35:22.706 A:middle
+withAppended or do I mean the
+
+00:35:22.706 --> 00:35:24.106 A:middle
+current value that is being
+
+00:35:24.106 --> 00:35:25.926 A:middle
+modified whatever that means.
+
+00:35:26.756 --> 00:35:28.636 A:middle
+Well, in Swift 4 this was a
+
+00:35:28.636 --> 00:35:30.396 A:middle
+compile time error because it
+
+00:35:30.396 --> 00:35:32.226 A:middle
+was an exclusivity violation.
+
+00:35:32.756 --> 00:35:34.716 A:middle
+And one way to address this is
+
+00:35:34.716 --> 00:35:35.976 A:middle
+to resolve the ambiguity by
+
+00:35:35.976 --> 00:35:37.926 A:middle
+telling the complier, hey I
+
+00:35:37.926 --> 00:35:40.496 A:middle
+really want the new value so I'm
+
+00:35:40.496 --> 00:35:41.766 A:middle
+going to just pass it in as a
+
+00:35:41.766 --> 00:35:43.636 A:middle
+parameter to the closure instead
+
+00:35:43.636 --> 00:35:44.986 A:middle
+of capturing it.
+
+00:35:45.586 --> 00:35:47.366 A:middle
+OK, but now look at this
+
+00:35:47.366 --> 00:35:47.936 A:middle
+example.
+
+00:35:48.266 --> 00:35:49.586 A:middle
+So this is almost the same
+
+00:35:49.586 --> 00:35:51.376 A:middle
+function except that it's
+
+00:35:51.376 --> 00:35:53.326 A:middle
+generic, it's prioritized by the
+
+00:35:53.326 --> 00:35:54.646 A:middle
+return type of the closure.
+
+00:35:55.306 --> 00:35:57.436 A:middle
+And in this case we can have the
+
+00:35:57.436 --> 00:35:59.286 A:middle
+same kind of ambiguity by
+
+00:35:59.286 --> 00:36:01.246 A:middle
+accessing the path value from
+

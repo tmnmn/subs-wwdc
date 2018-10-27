@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.556 --> 00:29:01.446 A:middle
+that second upscale and the
+
+00:29:01.446 --> 00:29:02.926 A:middle
+blending is done at low
+
+00:29:02.926 --> 00:29:04.376 A:middle
+resolution which makes a big
+
+00:29:04.376 --> 00:29:04.886 A:middle
+difference.
+
+00:29:06.276 --> 00:29:07.716 A:middle
+So let's deep dive into those
+
+00:29:07.716 --> 00:29:08.086 A:middle
+depths.
+
+00:29:08.626 --> 00:29:10.606 A:middle
+The first thing we need is to
+
+00:29:10.606 --> 00:29:11.856 A:middle
+find the center of the face.
+
+00:29:12.366 --> 00:29:14.406 A:middle
+And in iOS there are actually
+
+00:29:14.646 --> 00:29:16.386 A:middle
+quite a few ways you can get
+
+00:29:16.386 --> 00:29:17.316 A:middle
+face metadata.
+
+00:29:18.296 --> 00:29:19.246 A:middle
+You can use a Core Image
+
+00:29:19.246 --> 00:29:20.706 A:middle
+detector or the Vision
+
+00:29:20.706 --> 00:29:22.796 A:middle
+Framework, but in this case
+
+00:29:22.976 --> 00:29:25.226 A:middle
+since we just need the pixel at
+
+00:29:25.226 --> 00:29:26.366 A:middle
+the center of the face we can
+
+00:29:26.366 --> 00:29:28.586 A:middle
+use AV meta data object type
+
+00:29:28.586 --> 00:29:29.056 A:middle
+face.
+
+00:29:30.426 --> 00:29:32.896 A:middle
+But it gives us the center in
+
+00:29:32.896 --> 00:29:34.236 A:middle
+the coding system of the RGB
+
+00:29:34.236 --> 00:29:36.086 A:middle
+image and we need to map it to
+
+00:29:36.086 --> 00:29:38.196 A:middle
+the depth map which might not be
+
+00:29:38.196 --> 00:29:39.106 A:middle
+in the same resolution.
+
+00:29:41.356 --> 00:29:43.316 A:middle
+Once we have the value of the
+
+00:29:43.316 --> 00:29:45.886 A:middle
+depth of the face we can use it
+
+00:29:45.886 --> 00:29:47.566 A:middle
+plus a margin of characteristic
+
+00:29:47.566 --> 00:29:50.656 A:middle
+25 centimeters to threshold the
+
+00:29:50.656 --> 00:29:52.306 A:middle
+depth map and create a binary
+
+00:29:52.306 --> 00:29:54.076 A:middle
+mask, foreground is one,
+
+00:29:54.476 --> 00:29:55.296 A:middle
+background is zero.
+
+00:29:56.556 --> 00:29:58.456 A:middle
+In fact, we can stop here, we
+
+00:29:58.456 --> 00:30:00.236 A:middle
+can use this binary mask and
+

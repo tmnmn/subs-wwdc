@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:57.558 --> 00:41:00.527 align:start position:14% line:-1
+SubSequence側から出されますが
+
+00:41:00.627 --> 00:41:06.600 align:start position:29% line:-2
+返されるインデックスも
+有効でなければなりません
+
+00:41:06.700 --> 00:41:11.805 align:start position:27% line:-2
+コレクションプロトコルの
+全要件はキャプチャできます
+
+00:41:11.972 --> 00:41:17.844 align:start position:14% line:-2
+第１に コレクションの
+SubSequenceはコレクションです
+
+00:41:17.945 --> 00:41:20.247 align:start position:30% line:-1
+いわゆる再帰的制約です
+
+00:41:20.347 --> 00:41:24.518 align:start position:27% line:-2
+関連型は そのプロトコルに
+準拠するので―
+
+00:41:24.918 --> 00:41:31.058 align:start position:16% line:-2
+SubSequenceのさらなる制約に
+関連型“where句”を使えます
+
+00:41:31.258 --> 00:41:32.960 align:start position:38% line:-1
+その要素型は―
+
+00:41:33.160 --> 00:41:39.133 align:start position:27% line:-2
+元のコレクションの要素型と
+同じでなければなりません
+
+00:41:39.266 --> 00:41:44.538 align:start position:9% line:-2
+故に SubSequence.Elementは
+Elementと同じ制約です
+
+00:41:44.938 --> 00:41:47.741 align:start position:21% line:-1
+インデックス型もまったく同じです
+
+00:41:48.142 --> 00:41:51.378 align:start position:9% line:-2
+sortedInsertionPoint（of
+の実装で―
+
+00:41:51.478 --> 00:41:56.083 align:start position:27% line:-2
+これまで見た全プロパティを
+カバーできます
+
+00:41:56.984 --> 00:42:01.955 align:start position:23% line:-2
+では SubSequenceは
+スライスできますか？
+

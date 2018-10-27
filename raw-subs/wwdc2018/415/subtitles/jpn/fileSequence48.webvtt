@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:58.178 --> 00:48:00.013 align:start position:34% line:-1
+次にTBDファイル
+
+00:48:00.114 --> 00:48:03.350 align:start position:7% line:-2
+つまり
+Text Based Dylib Stubsです
+
+00:48:03.951 --> 00:48:04.751 align:start position:43% line:-1
+ここで―
+
+00:48:05.953 --> 00:48:09.523 align:start position:32% line:-2
+SDKを開発した時の
+話をします
+
+00:48:09.623 --> 00:48:12.125 align:start position:20% line:-2
+MapKitやWebKitといった
+機能と共に―
+
+00:48:12.226 --> 00:48:14.595 align:start position:29% line:-2
+ダイナミックライブラリも
+開発しました
+
+00:48:14.728 --> 00:48:19.533 align:start position:27% line:-2
+しかし サイズが大きく
+全部は組み込めませんでした
+
+00:48:19.900 --> 00:48:23.003 align:start position:32% line:-2
+しかも 実行時にしか
+必要ありません
+
+00:48:23.103 --> 00:48:25.172 align:start position:29% line:-2
+そこでシンボルのボディは
+省略し―
+
+00:48:25.272 --> 00:48:28.942 align:start position:30% line:-2
+シンボル名だけの
+スタブを作成したのです
+
+00:48:29.343 --> 00:48:30.677 align:start position:43% line:-1
+その後―
+
+00:48:30.778 --> 00:48:33.680 align:start position:30% line:-2
+使いやすい言語形式へと
+改良しました
+
+00:48:33.781 --> 00:48:35.516 align:start position:30% line:-1
+現在 TBDの役割は―
+
+00:48:35.682 --> 00:48:39.286 align:start position:34% line:-2
+SDK配信時の
+サイズ削減だけです
+
+00:48:40.120 --> 00:48:43.524 align:start position:29% line:-2
+プロジェクト内にあっても
+気にしないでください
+
+00:48:43.724 --> 00:48:45.292 align:start position:34% line:-2
+シンボルが
+入っているだけです
+
+00:48:46.093 --> 00:48:49.396 align:start position:27% line:-2
+最後は
+スタティックライブラリです
+
+00:48:50.030 --> 00:48:52.232 align:start position:25% line:-1
+スタティックライブラリには―
+
+00:48:52.466 --> 00:48:55.168 align:start position:32% line:-2
+.oファイルばかりが
+入っています
+
+00:48:55.269 --> 00:49:00.641 align:start position:25% line:-2
+arツールやlibtoolで
+ビルドされたものです
+

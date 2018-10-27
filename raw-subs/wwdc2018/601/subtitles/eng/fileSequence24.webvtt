@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.686 --> 00:24:01.736 A:middle
+the broadcastStarted before, and
+
+00:24:01.846 --> 00:24:03.466 A:middle
+here I want to show you how do
+
+00:24:03.466 --> 00:24:04.836 A:middle
+you handle this case when user
+
+00:24:04.836 --> 00:24:05.726 A:middle
+is not logged in.
+
+00:24:06.326 --> 00:24:07.946 A:middle
+So there's a function called
+
+00:24:08.316 --> 00:24:11.416 A:middle
+finishBroadcastWithError, and
+
+00:24:11.416 --> 00:24:13.246 A:middle
+what you need to do is provide
+
+00:24:14.146 --> 00:24:15.746 A:middle
+the user info dictionary with a
+
+00:24:15.746 --> 00:24:18.966 A:middle
+failure reason and ReplayKit is
+
+00:24:18.966 --> 00:24:20.916 A:middle
+going to use that string and
+
+00:24:20.916 --> 00:24:22.346 A:middle
+allow that is shown after the
+
+00:24:22.346 --> 00:24:22.976 A:middle
+session is stopped.
+
+00:24:29.686 --> 00:24:34.246 A:middle
+Okay. This is how you develop
+
+00:24:34.246 --> 00:24:36.906 A:middle
+the broadcast extension, and as
+
+00:24:36.906 --> 00:24:39.076 A:middle
+you see, the process is pretty
+
+00:24:39.076 --> 00:24:39.726 A:middle
+straightforward.
+
+00:24:40.296 --> 00:24:42.736 A:middle
+The application handles the
+
+00:24:42.736 --> 00:24:44.786 A:middle
+broadcast setup and then
+
+00:24:44.786 --> 00:24:45.616 A:middle
+communicates that info to the
+
+00:24:45.616 --> 00:24:45.976 A:middle
+extension.
+
+00:24:50.366 --> 00:24:52.396 A:middle
+And after that the session
+
+00:24:52.396 --> 00:24:53.756 A:middle
+starts and you receive and
+
+00:24:53.756 --> 00:24:56.086 A:middle
+encode the media samples.
+
+00:24:56.876 --> 00:24:58.226 A:middle
+And also, you can get
+
+00:24:58.226 --> 00:24:59.696 A:middle
+information about application on
+
+00:24:59.696 --> 00:25:00.906 A:middle
+the screen so the viewers could
+

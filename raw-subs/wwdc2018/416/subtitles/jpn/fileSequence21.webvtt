@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:01.061 --> 00:21:06.133 align:start position:0% line:-2
+もしUIGraphicsBeginImageContext
+WithOptionsを使っているなら
+
+00:21:06.467 --> 00:21:09.136 align:start position:21% line:-1
+これは初期からあったAPIですが
+
+00:21:09.236 --> 00:21:12.206 align:start position:7% line:-2
+UIGraphicsImageRendererに
+変えてください
+
+00:21:12.306 --> 00:21:14.942 align:start position:30% line:-1
+メモリを抑えられますよ
+
+00:21:15.042 --> 00:21:21.115 align:start position:2% line:-2
+UIGraphicsBeginImageContext
+WithOptionsは１ピクセル４バイト
+
+00:21:21.949 --> 00:21:23.016 align:start position:38% line:-1
+SRGBですね
+
+00:21:23.116 --> 00:21:28.322 align:start position:27% line:-2
+従ってワイドフォーマットも
+アルファ８も使えません
+
+00:21:28.689 --> 00:21:31.458 align:start position:7% line:-2
+UIGraphicsImageRendererの
+APIを使えば
+
+00:21:31.558 --> 00:21:36.830 align:start position:25% line:-2
+APIが自動的に
+最適なフォーマットを選びます
+
+00:21:38.465 --> 00:21:39.533 align:start position:39% line:-1
+これが例です
+
+00:21:39.633 --> 00:21:41.735 align:start position:30% line:-1
+マスク用に円を描きます
+
+00:21:41.902 --> 00:21:46.206 align:start position:12% line:-2
+ハイライトされたdrawing codeを
+処理するのは旧型のAPIですが
+
+00:21:46.306 --> 00:21:50.177 align:start position:21% line:-2
+黒い円を描くのに１ピクセルあたり
+４バイトのフォーマットです
+
+00:21:50.978 --> 00:21:55.282 align:start position:30% line:-2
+新しいAPIに変更して
+同様に実行すると
+
+00:21:55.582 --> 00:21:59.052 align:start position:32% line:-2
+１ピクセルあたり
+１バイトになりました
+
+00:21:59.152 --> 00:22:02.623 align:start position:25% line:-1
+75％のメモリ削減になります
+

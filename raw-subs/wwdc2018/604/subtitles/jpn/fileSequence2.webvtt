@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.886 --> 00:02:00.721 align:start position:27% line:-1
+いくつかの選択肢があります
+
+00:02:01.255 --> 00:02:05.192 align:start position:27% line:-2
+Appleのレンダリング用
+フレームワークは
+
+00:02:05.292 --> 00:02:09.729 align:start position:27% line:-2
+2D用SpriteKitや
+3D用SceneKit
+
+00:02:09.830 --> 00:02:12.399 align:start position:25% line:-2
+エフェクト用
+Core Imageなどです
+
+00:02:13.333 --> 00:02:16.703 align:start position:27% line:-2
+また大手サードパーティーの
+ゲームエンジンに
+
+00:02:16.803 --> 00:02:19.873 align:start position:23% line:-2
+Metalが主要レンダラとして
+既に使われていますが
+
+00:02:20.607 --> 00:02:24.511 align:start position:30% line:-2
+これらの方策はご希望と
+異なるかもしれません
+
+00:02:24.611 --> 00:02:29.216 align:start position:23% line:-2
+本日は皆さんによるMetalの
+活用について解説します
+
+00:02:30.384 --> 00:02:32.319 align:start position:27% line:-1
+ではMetalのデザインと
+
+00:02:32.419 --> 00:02:34.421 align:start position:34% line:-2
+基本コンセプトから
+始めましょう
+
+00:02:35.355 --> 00:02:39.626 align:start position:29% line:-2
+25年前にデザインされた
+OpenGLの中心には
+
+00:02:39.726 --> 00:02:43.664 align:start position:29% line:-2
+ハードウェア高速化3Dの
+源流が反映されています
+
+00:02:44.498 --> 00:02:47.267 align:start position:29% line:-2
+新バージョンや
+拡張によるアップデートは
+
+00:02:47.367 --> 00:02:52.139 align:start position:29% line:-2
+GPUの特性や性能技術を
+浮き彫りにしました
+
+00:02:52.606 --> 00:02:55.843 align:start position:29% line:-1
+しかし基本のデザインには
+
+00:02:55.943 --> 00:02:58.779 align:start position:29% line:-2
+現在のハードウェアに
+そぐわない部分があります
+

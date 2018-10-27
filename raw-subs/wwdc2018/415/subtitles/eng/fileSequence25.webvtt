@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.006 --> 00:25:01.126 A:middle
+That means they have to specify
+
+00:25:01.666 --> 00:25:02.836 A:middle
+all the dependencies.
+
+00:25:03.736 --> 00:25:05.496 A:middle
+Which also has a nice advantage
+
+00:25:05.876 --> 00:25:08.186 A:middle
+for you because it means once
+
+00:25:08.186 --> 00:25:10.846 A:middle
+you import a module, it will
+
+00:25:10.846 --> 00:25:11.636 A:middle
+just work.
+
+00:25:11.636 --> 00:25:12.926 A:middle
+You don't have to worry about
+
+00:25:12.926 --> 00:25:14.016 A:middle
+adding any additional header
+
+00:25:14.016 --> 00:25:16.346 A:middle
+files to make that import work.
+
+00:25:18.956 --> 00:25:22.056 A:middle
+So how do we know or how does
+
+00:25:22.056 --> 00:25:23.996 A:middle
+Clang know it should build a
+
+00:25:23.996 --> 00:25:24.426 A:middle
+module?
+
+00:25:26.046 --> 00:25:27.976 A:middle
+Let's look at a simple example
+
+00:25:27.976 --> 00:25:31.556 A:middle
+here NSString.h. First Clang has
+
+00:25:31.556 --> 00:25:33.126 A:middle
+to find this particular header
+
+00:25:33.566 --> 00:25:34.456 A:middle
+in the framework.
+
+00:25:35.056 --> 00:25:37.936 A:middle
+And we already know how to do
+
+00:25:37.936 --> 00:25:38.116 A:middle
+that.
+
+00:25:38.756 --> 00:25:39.576 A:middle
+And it's the
+
+00:25:39.796 --> 00:25:41.116 A:middle
+Foundation.framework directory.
+
+00:25:42.166 --> 00:25:43.666 A:middle
+Next the Clang compiler will
+
+00:25:43.706 --> 00:25:46.116 A:middle
+look for a modules directory and
+
+00:25:46.116 --> 00:25:47.996 A:middle
+a Module Map relative to the
+
+00:25:47.996 --> 00:25:49.706 A:middle
+header's directory and it's
+
+00:25:49.766 --> 00:25:49.936 A:middle
+there.
+
+00:25:51.606 --> 00:25:52.926 A:middle
+So what is a Module Map?
+
+00:25:53.486 --> 00:25:55.566 A:middle
+A Module Map describes how a
+
+00:25:55.566 --> 00:25:57.406 A:middle
+certain set of header files
+
+00:25:57.796 --> 00:25:59.556 A:middle
+translate onto your module.
+

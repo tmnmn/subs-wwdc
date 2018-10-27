@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.636 --> 00:34:00.226 A:middle
+after the function call.
+
+00:34:00.886 --> 00:34:02.146 A:middle
+So the instruction of the called
+
+00:34:02.146 --> 00:34:04.346 A:middle
+objc release was the previous
+
+00:34:04.346 --> 00:34:05.436 A:middle
+instruction, it's this
+
+00:34:05.436 --> 00:34:05.986 A:middle
+instruction.
+
+00:34:06.916 --> 00:34:09.786 A:middle
+If we read this it's the call of
+
+00:34:09.786 --> 00:34:11.815 A:middle
+objc release which is good,
+
+00:34:11.906 --> 00:34:13.746 A:middle
+that's consistent with what we
+
+00:34:13.746 --> 00:34:15.286 A:middle
+saw in the stack trace in the
+
+00:34:15.286 --> 00:34:16.755 A:middle
+crash log which was a call to
+
+00:34:16.755 --> 00:34:19.295 A:middle
+objc release at this offset.
+
+00:34:20.156 --> 00:34:22.606 A:middle
+And this release function is
+
+00:34:22.606 --> 00:34:24.916 A:middle
+releasing the database property.
+
+00:34:25.646 --> 00:34:28.085 A:middle
+So now we have more detail about
+
+00:34:28.085 --> 00:34:29.146 A:middle
+what our crash is doing.
+
+00:34:29.735 --> 00:34:31.295 A:middle
+We released the username
+
+00:34:31.295 --> 00:34:32.396 A:middle
+property and that was
+
+00:34:32.396 --> 00:34:33.056 A:middle
+successful.
+
+00:34:33.795 --> 00:34:35.596 A:middle
+We have not yet gotten to the
+
+00:34:35.596 --> 00:34:37.366 A:middle
+views property, it might be
+
+00:34:37.366 --> 00:34:38.896 A:middle
+valid, it might be invalid we
+
+00:34:38.896 --> 00:34:39.416 A:middle
+don't know.
+
+00:34:39.866 --> 00:34:41.966 A:middle
+What we do know is we tried to
+
+00:34:41.966 --> 00:34:43.696 A:middle
+release the database property
+
+00:34:44.166 --> 00:34:46.206 A:middle
+and that object looked like it
+
+00:34:46.206 --> 00:34:49.186 A:middle
+was already freed object based
+
+00:34:49.186 --> 00:34:50.676 A:middle
+on the malloc free list pointer
+
+00:34:50.676 --> 00:34:51.156 A:middle
+signature.
+
+00:34:52.315 --> 00:34:53.456 A:middle
+So that gives us a pretty good
+
+00:34:53.456 --> 00:34:55.416 A:middle
+story of what caused this crash.
+
+00:34:56.025 --> 00:34:57.936 A:middle
+We were freeing a login view
+
+00:34:57.936 --> 00:34:59.996 A:middle
+controller object and the
+
+00:34:59.996 --> 00:35:02.026 A:middle
+database property was invalid.
+

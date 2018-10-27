@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.476 --> 00:29:00.106 A:middle
+available.
+
+00:29:00.706 --> 00:29:01.976 A:middle
+And when you're ready to start
+
+00:29:01.976 --> 00:29:03.226 A:middle
+testing out some of these new
+
+00:29:03.226 --> 00:29:05.326 A:middle
+features, you might start by
+
+00:29:05.326 --> 00:29:07.316 A:middle
+sending a simple GET request
+
+00:29:07.316 --> 00:29:10.286 A:middle
+like this; however, if you were
+
+00:29:10.286 --> 00:29:12.556 A:middle
+to simply curl this endpoint or
+
+00:29:12.726 --> 00:29:13.956 A:middle
+type it into your browser,
+
+00:29:14.406 --> 00:29:15.816 A:middle
+you'll end up with a response
+
+00:29:16.066 --> 00:29:17.196 A:middle
+that looks like this.
+
+00:29:18.436 --> 00:29:20.476 A:middle
+So as Geoff mentioned, we're
+
+00:29:20.476 --> 00:29:22.456 A:middle
+still missing one very important
+
+00:29:22.456 --> 00:29:24.076 A:middle
+step stat and that is
+
+00:29:24.406 --> 00:29:25.746 A:middle
+authentication credentials.
+
+00:29:26.306 --> 00:29:29.616 A:middle
+Now this step is necessary for
+
+00:29:29.616 --> 00:29:30.586 A:middle
+two reasons.
+
+00:29:31.506 --> 00:29:33.776 A:middle
+First, authentication
+
+00:29:33.776 --> 00:29:35.526 A:middle
+credentials give context to your
+
+00:29:35.526 --> 00:29:35.776 A:middle
+request.
+
+00:29:36.086 --> 00:29:38.126 A:middle
+After all, you don't want all
+
+00:29:38.296 --> 00:29:38.436 A:middle
+apps.
+
+00:29:38.646 --> 00:29:40.606 A:middle
+You want your app.
+
+00:29:40.606 --> 00:29:42.876 A:middle
+And most importantly, these
+
+00:29:42.876 --> 00:29:45.286 A:middle
+credentials secure the API and
+
+00:29:45.286 --> 00:29:47.406 A:middle
+ensure that no one but you will
+
+00:29:47.406 --> 00:29:48.656 A:middle
+have access to your data.
+
+00:29:49.336 --> 00:29:53.026 A:middle
+So to add these credentials to
+
+00:29:53.026 --> 00:29:54.966 A:middle
+your request, you'll need to
+
+00:29:54.966 --> 00:29:57.196 A:middle
+first create an API Key.
+
+00:29:57.776 --> 00:30:00.136 A:middle
+You'll then use that key to
+

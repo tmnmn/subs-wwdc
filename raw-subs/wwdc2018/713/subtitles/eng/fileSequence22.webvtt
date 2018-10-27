@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.796 --> 00:22:01.596 A:middle
+Well, we have provided built-in
+
+00:22:01.596 --> 00:22:03.156 A:middle
+name identity recognition for
+
+00:22:03.156 --> 00:22:04.666 A:middle
+names of people, places, and
+
+00:22:04.666 --> 00:22:07.406 A:middle
+organizations, but maybe we also
+
+00:22:07.406 --> 00:22:08.426 A:middle
+want to highlight names of
+
+00:22:08.426 --> 00:22:10.016 A:middle
+products, so we could train a
+
+00:22:10.076 --> 00:22:12.366 A:middle
+custom word tagger to identify
+
+00:22:12.366 --> 00:22:14.086 A:middle
+those names for us.
+
+00:22:15.036 --> 00:22:16.726 A:middle
+So let me go over to the demo
+
+00:22:16.726 --> 00:22:17.086 A:middle
+machine.
+
+00:22:20.736 --> 00:22:25.746 A:middle
+And so here's our application as
+
+00:22:25.746 --> 00:22:27.586 A:middle
+it stands before we apply any
+
+00:22:27.856 --> 00:22:29.116 A:middle
+natural language processing.
+
+00:22:29.406 --> 00:22:30.706 A:middle
+As you can see, even just one
+
+00:22:30.706 --> 00:22:32.736 A:middle
+long list of articles on the
+
+00:22:32.736 --> 00:22:35.456 A:middle
+side and a big chunk of text for
+
+00:22:35.456 --> 00:22:36.606 A:middle
+our article on the right.
+
+00:22:36.606 --> 00:22:37.486 A:middle
+Well let's fix that.
+
+00:22:38.716 --> 00:22:42.506 A:middle
+So, let's go into -- so the
+
+00:22:42.506 --> 00:22:44.996 A:middle
+first part of training a model
+
+00:22:45.516 --> 00:22:48.776 A:middle
+is data, and fortunately, I have
+
+00:22:48.776 --> 00:22:49.576 A:middle
+some very hard-working
+
+00:22:49.576 --> 00:22:50.976 A:middle
+colleagues at Apple who have
+
+00:22:50.976 --> 00:22:52.696 A:middle
+collected for me some training
+
+00:22:52.696 --> 00:22:54.446 A:middle
+data to train two models.
+
+00:22:54.776 --> 00:22:57.066 A:middle
+The first model is a text
+
+00:22:57.066 --> 00:22:59.026 A:middle
+classifier that will classify
+
+00:22:59.026 --> 00:23:00.446 A:middle
+articles according to topic.
+

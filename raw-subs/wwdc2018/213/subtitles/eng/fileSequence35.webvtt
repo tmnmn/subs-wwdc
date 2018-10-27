@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.086 --> 00:35:00.566 A:middle
+give you a demo of how we've
+
+00:35:00.566 --> 00:35:01.886 A:middle
+integrated our Country Roads app
+
+00:35:01.886 --> 00:35:03.296 A:middle
+with the CarPlay framework to do
+
+00:35:03.296 --> 00:35:04.726 A:middle
+route preview and turn-by-turn
+
+00:35:04.726 --> 00:35:05.216 A:middle
+guidance.
+
+00:35:05.536 --> 00:35:05.906 A:middle
+Jonathan.
+
+00:35:06.516 --> 00:35:09.500 A:middle
+[ Applause ]
+
+00:35:10.866 --> 00:35:11.296 A:middle
+&gt;&gt; Thanks, Mike.
+
+00:35:12.066 --> 00:35:13.586 A:middle
+Let's take a quick look at some
+
+00:35:13.586 --> 00:35:15.326 A:middle
+code for how your navigation
+
+00:35:15.326 --> 00:35:16.676 A:middle
+apps can provide guidance in
+
+00:35:16.676 --> 00:35:18.596 A:middle
+CarPlay using our sample Country
+
+00:35:18.596 --> 00:35:19.116 A:middle
+Roads app.
+
+00:35:20.306 --> 00:35:21.766 A:middle
+When the user selects a
+
+00:35:21.766 --> 00:35:23.436 A:middle
+destination, we're going to grab
+
+00:35:23.436 --> 00:35:25.116 A:middle
+that placemark and hand the
+
+00:35:25.116 --> 00:35:27.156 A:middle
+current location and destination
+
+00:35:27.356 --> 00:35:28.826 A:middle
+to our navigation engine to
+
+00:35:28.826 --> 00:35:30.246 A:middle
+calculate some route choices.
+
+00:35:30.616 --> 00:35:32.546 A:middle
+For our purposes here, we have
+
+00:35:32.546 --> 00:35:34.256 A:middle
+only a single route choice, but
+
+00:35:34.256 --> 00:35:35.726 A:middle
+your navigation engine can
+
+00:35:35.726 --> 00:35:37.566 A:middle
+provide multiple alternative
+
+00:35:37.566 --> 00:35:38.986 A:middle
+routing options when available.
+
+00:35:39.346 --> 00:35:40.696 A:middle
+Plus, we can include some extra
+
+00:35:40.696 --> 00:35:42.476 A:middle
+details to help the user make an
+
+00:35:42.476 --> 00:35:44.706 A:middle
+informed decision about a route.
+
+00:35:44.786 --> 00:35:46.886 A:middle
+We'll create a CPTrip and call
+
+00:35:46.886 --> 00:35:49.116 A:middle
+showTripPreviews to inform
+
+00:35:49.116 --> 00:35:50.146 A:middle
+CarPlay that we're starting
+
+00:35:50.146 --> 00:35:51.256 A:middle
+navigation guidance.
+
+00:35:51.886 --> 00:35:53.376 A:middle
+Lastly, we'll update the
+
+00:35:53.376 --> 00:35:55.326 A:middle
+estimates to provide our user an
+
+00:35:55.326 --> 00:35:56.496 A:middle
+ETA for this trip.
+
+00:35:57.036 --> 00:35:58.166 A:middle
+Let's take a quick look at how
+
+00:35:58.166 --> 00:35:59.416 A:middle
+we can provide the maneuvers
+
+00:35:59.416 --> 00:36:00.356 A:middle
+that CarPlay needs for
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.536 --> 00:33:01.376 A:middle
+vibrancy to only the leaf views
+
+00:33:01.656 --> 00:33:03.136 A:middle
+that are drawing the content
+
+00:33:03.136 --> 00:33:04.026 A:middle
+that you actually want to have
+
+00:33:04.026 --> 00:33:04.416 A:middle
+vibrant.
+
+00:33:05.476 --> 00:33:06.596 A:middle
+And, if you have views that are
+
+00:33:06.596 --> 00:33:08.186 A:middle
+drawing a mix of content, that
+
+00:33:08.186 --> 00:33:09.296 A:middle
+means that you probably want to
+
+00:33:09.296 --> 00:33:10.656 A:middle
+break your drawing out into
+
+00:33:10.656 --> 00:33:12.596 A:middle
+separate sibling views that you
+
+00:33:12.596 --> 00:33:14.406 A:middle
+can use to apply vibrancy at the
+
+00:33:14.406 --> 00:33:15.606 A:middle
+granularity that you want.
+
+00:33:17.616 --> 00:33:19.016 A:middle
+Further, you should avoid
+
+00:33:19.016 --> 00:33:20.266 A:middle
+overlapping vibrant and
+
+00:33:20.266 --> 00:33:21.346 A:middle
+non-vibrant views.
+
+00:33:22.716 --> 00:33:24.736 A:middle
+If you do this, the blending
+
+00:33:24.736 --> 00:33:26.116 A:middle
+modes can clash and you might
+
+00:33:26.116 --> 00:33:27.336 A:middle
+find that some of your content
+
+00:33:27.336 --> 00:33:28.976 A:middle
+is drawing with a blend mode
+
+00:33:29.116 --> 00:33:31.396 A:middle
+that it didn't expect.
+
+00:33:31.506 --> 00:33:33.306 A:middle
+Further, don't subclass Cocoa
+
+00:33:33.306 --> 00:33:34.696 A:middle
+controls just to override
+
+00:33:34.696 --> 00:33:35.516 A:middle
+allowsVibrancy.
+
+00:33:36.046 --> 00:33:37.146 A:middle
+I mentioned earlier that the
+
+00:33:37.146 --> 00:33:38.476 A:middle
+vibrantLight and vibrantDark
+
+00:33:38.476 --> 00:33:40.156 A:middle
+appearances have been designed
+
+00:33:40.156 --> 00:33:41.786 A:middle
+with control artwork and colors
+
+00:33:41.786 --> 00:33:43.186 A:middle
+that were designed specially for
+
+00:33:43.186 --> 00:33:45.046 A:middle
+the blend mode and if you remove
+
+00:33:45.046 --> 00:33:47.096 A:middle
+that blend mode, the contrast on
+
+00:33:47.096 --> 00:33:48.296 A:middle
+that artwork is not going to be
+
+00:33:48.296 --> 00:33:49.966 A:middle
+what you expected because we're
+
+00:33:49.966 --> 00:33:51.396 A:middle
+using the blend mode to provide
+
+00:33:51.396 --> 00:33:52.636 A:middle
+a lot of that pop against the
+
+00:33:52.636 --> 00:33:54.466 A:middle
+material, so you should only
+
+00:33:54.466 --> 00:33:56.216 A:middle
+override allows vibrancy if
+
+00:33:56.216 --> 00:33:57.286 A:middle
+you're actually overriding
+
+00:33:57.286 --> 00:33:58.646 A:middle
+drawing and you know what
+
+00:33:58.646 --> 00:34:00.066 A:middle
+vibrant blend mode or
+

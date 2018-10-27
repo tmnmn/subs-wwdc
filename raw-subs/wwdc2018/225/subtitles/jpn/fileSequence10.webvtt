@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:57.631 --> 00:10:02.436 align:start position:27% line:-2
+デリゲートとしても設定して
+セル選択を可能にします
+
+00:10:03.170 --> 00:10:07.574 align:start position:27% line:-2
+そして ２つのプロトコルに
+準拠させます
+
+00:10:07.774 --> 00:10:11.411 align:start position:23% line:-1
+まずデータソースに準拠させます
+
+00:10:12.045 --> 00:10:14.948 align:start position:27% line:-1
+２つのメソッドを実装します
+
+00:10:15.048 --> 00:10:20.020 align:start position:23% line:-2
+１つ目は
+セクション内のアイテムの数です
+
+00:10:20.387 --> 00:10:25.292 align:start position:27% line:-2
+people配列にある
+人数やアイテムの数を返して
+
+00:10:25.392 --> 00:10:28.462 align:start position:27% line:-2
+データモデルオブジェクトを
+表示させます
+
+00:10:28.562 --> 00:10:31.899 align:start position:27% line:-1
+２つ目に実装するメソッドは
+
+00:10:31.999 --> 00:10:35.269 align:start position:7% line:-1
+CellForItemAtIndexPathです
+
+00:10:35.369 --> 00:10:38.839 align:start position:11% line:-2
+一意識別子でCollectionViewから
+セルを取り除き
+
+00:10:39.606 --> 00:10:43.877 align:start position:11% line:-2
+people配列のPersonオブジェクトを
+セルに渡します
+
+00:10:43.977 --> 00:10:49.049 align:start position:29% line:-2
+データを実際に表示させて
+セルを戻します
+
+00:10:50.350 --> 00:10:53.987 align:start position:27% line:-2
+最後に
+選択をハンドルできるように
+
+00:10:54.087 --> 00:10:58.892 align:start position:29% line:-2
+デリゲートプロトコルの
+任意メソッドを実装します
+
+00:10:59.226 --> 00:11:03.230 align:start position:2% line:-2
+まず
+DidSelectItemAtIndexPathを追加
+

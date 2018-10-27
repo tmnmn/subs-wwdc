@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:03.726 --> 00:15:07.916 A:middle
+OK. I created a slideshow
+
+00:15:07.916 --> 00:15:11.126 A:middle
+extension, and to show you how
+
+00:15:11.126 --> 00:15:12.786 A:middle
+it looks like, I selected some
+
+00:15:12.786 --> 00:15:15.946 A:middle
+assets in an album, and will
+
+00:15:15.946 --> 00:15:17.706 A:middle
+create a new project with the
+
+00:15:17.706 --> 00:15:18.246 A:middle
+extension.
+
+00:15:19.466 --> 00:15:22.096 A:middle
+The extension has two views, one
+
+00:15:22.096 --> 00:15:23.586 A:middle
+is the overview, which contains
+
+00:15:23.586 --> 00:15:25.086 A:middle
+all assets of the project.
+
+00:15:25.546 --> 00:15:27.546 A:middle
+And, the other is the playback
+
+00:15:27.546 --> 00:15:28.806 A:middle
+modus, which plays the
+
+00:15:28.806 --> 00:15:29.286 A:middle
+slideshow.
+
+00:15:31.416 --> 00:15:32.706 A:middle
+As you might notice, the
+
+00:15:32.706 --> 00:15:34.296 A:middle
+slideshow always zooms into the
+
+00:15:34.296 --> 00:15:36.966 A:middle
+center of the image, which is
+
+00:15:36.996 --> 00:15:37.686 A:middle
+kind of boring.
+
+00:15:38.456 --> 00:15:39.966 A:middle
+And, I want to use regions of
+
+00:15:39.966 --> 00:15:41.406 A:middle
+interest to always zoom into
+
+00:15:41.636 --> 00:15:43.066 A:middle
+interesting regions in the
+
+00:15:43.066 --> 00:15:43.376 A:middle
+photo.
+
+00:15:44.946 --> 00:15:47.566 A:middle
+So, let's switch to Xcode to fix
+
+00:15:49.016 --> 00:15:49.276 A:middle
+that.
+
+00:15:50.256 --> 00:15:51.986 A:middle
+Here in my asset model, I have
+
+00:15:51.986 --> 00:15:53.216 A:middle
+this property,
+
+00:15:53.216 --> 00:15:54.976 A:middle
+preferredZoomRect, and it always
+
+00:15:54.976 --> 00:15:57.126 A:middle
+returns the same rect, which is
+
+00:15:57.376 --> 00:15:58.026 A:middle
+kind of boring.
+
+00:15:58.446 --> 00:15:59.926 A:middle
+So, let's replace it with the
+
+00:15:59.926 --> 00:16:00.356 A:middle
+code.
+

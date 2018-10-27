@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:03.046 --> 00:31:04.586 A:middle
+Here's my Xcode workspace, and
+
+00:31:04.586 --> 00:31:05.886 A:middle
+as you can see, in my
+
+00:31:05.886 --> 00:31:07.426 A:middle
+ResearchKit, I now have ORK
+
+00:31:07.426 --> 00:31:08.336 A:middle
+Parkinson's Study App.
+
+00:31:08.666 --> 00:31:09.776 A:middle
+We have a task list
+
+00:31:09.776 --> 00:31:11.426 A:middle
+viewController, where we'll be
+
+00:31:11.426 --> 00:31:12.796 A:middle
+adding all our Active Tasks and
+
+00:31:12.796 --> 00:31:13.246 A:middle
+questionnaires.
+
+00:31:13.856 --> 00:31:15.376 A:middle
+A graphviewController, where
+
+00:31:15.376 --> 00:31:16.626 A:middle
+we'll be visualizing these
+
+00:31:16.626 --> 00:31:17.696 A:middle
+tremor and dyskinesia symptom
+
+00:31:17.696 --> 00:31:18.186 A:middle
+data points.
+
+00:31:18.706 --> 00:31:20.066 A:middle
+And an assessment manager, where
+
+00:31:20.066 --> 00:31:21.246 A:middle
+we will be implementing the
+
+00:31:21.246 --> 00:31:22.876 A:middle
+movement disorder API.
+
+00:31:23.596 --> 00:31:24.986 A:middle
+When a Parkinson's disease
+
+00:31:25.026 --> 00:31:26.606 A:middle
+patient, or a PD patient visits
+
+00:31:26.606 --> 00:31:28.136 A:middle
+their doctor, they're asked a
+
+00:31:28.136 --> 00:31:29.656 A:middle
+certain set of questions, and
+
+00:31:29.656 --> 00:31:30.876 A:middle
+these questions include
+
+00:31:30.876 --> 00:31:31.996 A:middle
+questions about their activities
+
+00:31:31.996 --> 00:31:33.076 A:middle
+of daily life, something for
+
+00:31:33.076 --> 00:31:34.876 A:middle
+example on a scale of 0 to 10,
+
+00:31:35.096 --> 00:31:36.116 A:middle
+how is your pain level today.
+
+00:31:36.886 --> 00:31:38.086 A:middle
+Or, what kind of non-motor
+
+00:31:38.086 --> 00:31:38.946 A:middle
+symptoms are you feeling?
+
+00:31:38.946 --> 00:31:41.016 A:middle
+We have already added a subset
+
+00:31:41.016 --> 00:31:42.226 A:middle
+of such questions in our app.
+
+00:31:42.876 --> 00:31:44.396 A:middle
+Now, these questionnaires are
+
+00:31:44.396 --> 00:31:45.416 A:middle
+usually followed by seven
+
+00:31:45.416 --> 00:31:46.126 A:middle
+physical tests.
+
+00:31:46.316 --> 00:31:47.636 A:middle
+And one of the physical tests is
+
+00:31:47.666 --> 00:31:48.976 A:middle
+assessing the clarity of speech.
+
+00:31:49.436 --> 00:31:50.876 A:middle
+So, let's go ahead and add the
+
+00:31:50.876 --> 00:31:52.196 A:middle
+speech recognition Active Task.
+
+00:31:53.526 --> 00:31:54.806 A:middle
+In my task list view controller,
+
+00:31:55.616 --> 00:31:57.106 A:middle
+I'll go ahead and add the speech
+
+00:31:57.106 --> 00:31:58.066 A:middle
+recognition Active Task.
+
+00:31:58.676 --> 00:31:59.886 A:middle
+And as you can see, we just
+
+00:31:59.886 --> 00:32:01.426 A:middle
+added an ORK ordered task of
+

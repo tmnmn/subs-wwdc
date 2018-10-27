@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.479 --> 00:33:04.952 align:start position:4% line:-2
+Layer Descriptor Setupの詳細は
+昨年のWWDCで説明されました
+
+00:33:05.052 --> 00:33:10.657 align:start position:25% line:-2
+詳しい情報は当該セッションを
+ご参照ください
+
+00:33:11.091 --> 00:33:12.893 align:start position:36% line:-1
+記述子ができたら
+
+00:33:13.794 --> 00:33:17.931 align:start position:27% line:-2
+次に これで
+LSTMの訓練層を作ります
+
+00:33:19.666 --> 00:33:25.873 align:start position:21% line:-2
+MPSは訓練の重みを埋め込むのに
+指定したデータソースを使います
+
+00:33:26.039 --> 00:33:29.943 align:start position:32% line:-2
+計算済み勾配を保つ
+マトリクスも必要です
+
+00:33:30.677 --> 00:33:33.914 align:start position:30% line:-1
+マトリクスを作るのに―
+
+00:33:34.014 --> 00:33:37.417 align:start position:2% line:-2
+WeightGradientMatrices APIが
+使えます
+
+00:33:37.651 --> 00:33:42.689 align:start position:29% line:-2
+訓練の重みはフォワードと
+勾配のパスで使われ
+
+00:33:42.790 --> 00:33:47.427 align:start position:27% line:-2
+計算済み勾配と共に
+オプティマイザに渡されます
+
+00:33:49.263 --> 00:33:53.767 align:start position:30% line:-2
+LSTMの訓練用の
+入力と出力を準備します
+
+00:33:54.401 --> 00:33:59.673 align:start position:23% line:-2
+これは 入力と出力シーケンスを
+保つマトリクスを作る例です
+
+00:33:59.773 --> 00:34:04.978 align:start position:25% line:-2
+フォワードと勾配のパスに
+各20のマトリクスが必要です
+

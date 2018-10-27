@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.306 --> 00:13:00.746 A:middle
+consistent from the get-go.
+
+00:13:01.216 --> 00:13:03.836 A:middle
+Our frame spends on display more
+
+00:13:03.836 --> 00:13:04.976 A:middle
+time it takes to render.
+
+00:13:05.816 --> 00:13:07.326 A:middle
+Every frame will be consistent.
+
+00:13:08.746 --> 00:13:10.746 A:middle
+The user will see also being
+
+00:13:10.746 --> 00:13:11.336 A:middle
+consistent.
+
+00:13:12.196 --> 00:13:12.866 A:middle
+And that's great.
+
+00:13:13.146 --> 00:13:15.046 A:middle
+Also notice that there's a side
+
+00:13:15.046 --> 00:13:15.476 A:middle
+effect.
+
+00:13:15.916 --> 00:13:17.096 A:middle
+The frame rate will be lowered.
+
+00:13:17.096 --> 00:13:18.356 A:middle
+We went from 40 frames per
+
+00:13:18.356 --> 00:13:20.426 A:middle
+second to 30 frames per second.
+
+00:13:21.056 --> 00:13:22.596 A:middle
+So that also gave us some extra
+
+00:13:22.596 --> 00:13:23.596 A:middle
+frame time to play with.
+
+00:13:25.236 --> 00:13:26.296 A:middle
+So how did we do this?
+
+00:13:27.416 --> 00:13:31.056 A:middle
+How did we fix the-- the frame
+
+00:13:31.056 --> 00:13:31.616 A:middle
+pacing?
+
+00:13:31.816 --> 00:13:34.606 A:middle
+Well, really it's just a couple
+
+00:13:34.606 --> 00:13:35.406 A:middle
+of lines of code.
+
+00:13:36.156 --> 00:13:37.406 A:middle
+We have the same pattern as
+
+00:13:37.406 --> 00:13:37.856 A:middle
+before.
+
+00:13:38.236 --> 00:13:39.176 A:middle
+We rendered the scene.
+
+00:13:39.686 --> 00:13:40.746 A:middle
+We get the next drawable.
+
+00:13:41.266 --> 00:13:42.336 A:middle
+We do the final pass.
+
+00:13:43.086 --> 00:13:45.066 A:middle
+The only difference here is that
+
+00:13:45.066 --> 00:13:47.226 A:middle
+we specify a minimum duration
+
+00:13:47.226 --> 00:13:47.986 A:middle
+for our frame.
+
+00:13:48.516 --> 00:13:50.416 A:middle
+And present it with that minimum
+
+00:13:50.416 --> 00:13:50.916 A:middle
+duration.
+
+00:13:51.646 --> 00:13:52.666 A:middle
+That's all it takes.
+
+00:13:53.486 --> 00:13:54.786 A:middle
+That will allow us to set the
+
+00:13:54.786 --> 00:13:56.576 A:middle
+minimum duration for our frames.
+
+00:13:56.576 --> 00:13:58.056 A:middle
+And they will all be consistent.
+
+00:13:59.426 --> 00:14:00.916 A:middle
+And after doing so, you may be
+

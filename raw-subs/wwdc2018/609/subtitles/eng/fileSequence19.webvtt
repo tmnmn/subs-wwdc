@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.136 --> 00:19:00.946 A:middle
+And then when the purge method
+
+00:19:00.946 --> 00:19:02.406 A:middle
+is called, you can release the
+
+00:19:02.406 --> 00:19:02.656 A:middle
+weights.
+
+00:19:03.706 --> 00:19:05.366 A:middle
+Data source providers are also
+
+00:19:05.366 --> 00:19:06.866 A:middle
+essential for training, and we
+
+00:19:06.866 --> 00:19:08.206 A:middle
+will discuss this later in this
+
+00:19:08.206 --> 00:19:08.526 A:middle
+session.
+
+00:19:11.746 --> 00:19:13.216 A:middle
+So, now that we have a training
+
+00:19:13.216 --> 00:19:14.666 A:middle
+graph and we've prepared our
+
+00:19:14.666 --> 00:19:16.146 A:middle
+inputs and specified weights,
+
+00:19:16.546 --> 00:19:17.976 A:middle
+we're ready to execute the graph
+
+00:19:17.976 --> 00:19:18.566 A:middle
+on the GPU.
+
+00:19:20.486 --> 00:19:21.616 A:middle
+To change the [inaudible] graph
+
+00:19:21.616 --> 00:19:23.396 A:middle
+on the GPU, we first need to do
+
+00:19:23.656 --> 00:19:24.826 A:middle
+the usual Metal setup.
+
+00:19:25.466 --> 00:19:26.846 A:middle
+We need to initialize our
+
+00:19:26.846 --> 00:19:27.686 A:middle
+training graph.
+
+00:19:27.956 --> 00:19:29.516 A:middle
+So, we have prepared our inputs.
+
+00:19:29.766 --> 00:19:31.326 A:middle
+And now, let's train a network
+
+00:19:31.326 --> 00:19:34.836 A:middle
+on the GPU.
+
+00:19:35.206 --> 00:19:36.326 A:middle
+Training is an iterative
+
+00:19:36.326 --> 00:19:36.696 A:middle
+process.
+
+00:19:38.156 --> 00:19:39.466 A:middle
+So, we want to set up a training
+
+00:19:39.466 --> 00:19:39.666 A:middle
+loop.
+
+00:19:40.316 --> 00:19:42.266 A:middle
+And we usually want to execute
+
+00:19:42.266 --> 00:19:43.536 A:middle
+our graph over a number of
+
+00:19:43.536 --> 00:19:44.186 A:middle
+EPOCHS.
+
+00:19:44.856 --> 00:19:46.336 A:middle
+The number of EPOCHS is the
+
+00:19:46.566 --> 00:19:48.606 A:middle
+total number -- is the number of
+
+00:19:48.606 --> 00:19:49.986 A:middle
+times we want to iterate over
+
+00:19:49.986 --> 00:19:51.906 A:middle
+our entire data set.
+
+00:19:51.906 --> 00:19:53.486 A:middle
+And we want there to be multiple
+
+00:19:53.656 --> 00:19:54.886 A:middle
+iterations in each EPOCH.
+
+00:19:55.006 --> 00:19:56.646 A:middle
+So, the number of iterations is
+
+00:19:56.646 --> 00:19:57.966 A:middle
+the total number of images in
+
+00:19:57.966 --> 00:19:59.546 A:middle
+your data set divided by batch
+
+00:19:59.546 --> 00:20:01.216 A:middle
+size, like 32 or 64.
+

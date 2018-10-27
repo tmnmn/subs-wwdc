@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.336 --> 00:33:00.606 A:middle
+reasons that you still need to
+
+00:33:00.706 --> 00:33:01.906 A:middle
+status poll.
+
+00:33:02.936 --> 00:33:05.396 A:middle
+The first is understanding will
+
+00:33:05.396 --> 00:33:07.076 A:middle
+my subscriber churn in the
+
+00:33:07.076 --> 00:33:08.556 A:middle
+subsequent subscription period
+
+00:33:09.576 --> 00:33:11.156 A:middle
+and the second being has my
+
+00:33:11.156 --> 00:33:12.026 A:middle
+subscriber renewed.
+
+00:33:12.576 --> 00:33:16.276 A:middle
+We often get asked when should I
+
+00:33:16.276 --> 00:33:17.736 A:middle
+status poll as a developer, when
+
+00:33:17.736 --> 00:33:18.776 A:middle
+should I try to catch those
+
+00:33:18.776 --> 00:33:20.896 A:middle
+users and see their subscription
+
+00:33:20.896 --> 00:33:21.526 A:middle
+state changes.
+
+00:33:23.276 --> 00:33:24.966 A:middle
+The most effective times that we
+
+00:33:25.036 --> 00:33:27.066 A:middle
+see are doing that status poll
+
+00:33:27.066 --> 00:33:28.416 A:middle
+at the beginning or end of a
+
+00:33:28.486 --> 00:33:29.346 A:middle
+subscription period.
+
+00:33:30.156 --> 00:33:31.646 A:middle
+By deploying this responsibly
+
+00:33:32.396 --> 00:33:33.316 A:middle
+you're most likely going to
+
+00:33:33.346 --> 00:33:35.656 A:middle
+catch most users that may want
+
+00:33:35.656 --> 00:33:37.016 A:middle
+to voluntarily churn from your
+
+00:33:37.016 --> 00:33:37.836 A:middle
+subscription offering.
+
+00:33:40.596 --> 00:33:42.256 A:middle
+But when you status poll you'll
+
+00:33:42.256 --> 00:33:43.456 A:middle
+also get access to some
+
+00:33:43.456 --> 00:33:45.086 A:middle
+additional subscriber status
+
+00:33:45.086 --> 00:33:45.406 A:middle
+fields.
+
+00:33:45.886 --> 00:33:47.906 A:middle
+And you may want to take those
+
+00:33:47.906 --> 00:33:49.886 A:middle
+fields and save the decoded JSON
+
+00:33:49.886 --> 00:33:51.316 A:middle
+response from the verify receipt
+
+00:33:51.346 --> 00:33:53.566 A:middle
+call in the user tables on your
+
+00:33:53.566 --> 00:33:54.086 A:middle
+databases.
+
+00:33:55.496 --> 00:33:57.146 A:middle
+Or alternatively, you can parse
+
+00:33:57.146 --> 00:33:59.456 A:middle
+out specific fields such as the
+
+00:33:59.456 --> 00:34:00.906 A:middle
+Billing Retry Status in order to
+

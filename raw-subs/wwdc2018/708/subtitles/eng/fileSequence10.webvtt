@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.066 --> 00:10:01.966 A:middle
+And for example, we can
+
+00:10:02.436 --> 00:10:04.276 A:middle
+constrain the network to take,
+
+00:10:04.276 --> 00:10:06.156 A:middle
+instead of one of 56 different
+
+00:10:06.156 --> 00:10:08.056 A:middle
+values, for example, just 8.
+
+00:10:08.536 --> 00:10:11.246 A:middle
+And since now we now have only 8
+
+00:10:11.246 --> 00:10:13.926 A:middle
+options, Core ML will need 3-bit
+
+00:10:13.966 --> 00:10:15.966 A:middle
+values per weight to store your
+
+00:10:15.966 --> 00:10:16.306 A:middle
+model.
+
+00:10:17.556 --> 00:10:19.726 A:middle
+There are now some details about
+
+00:10:19.726 --> 00:10:20.806 A:middle
+how we are going to choose these
+
+00:10:20.806 --> 00:10:22.316 A:middle
+values to represent the weights.
+
+00:10:22.786 --> 00:10:24.486 A:middle
+They can be uniformly
+
+00:10:24.516 --> 00:10:26.256 A:middle
+distributed in this range, and
+
+00:10:26.256 --> 00:10:27.576 A:middle
+in this case we have linear
+
+00:10:27.576 --> 00:10:30.276 A:middle
+quantization instead in lookup
+
+00:10:30.356 --> 00:10:33.856 A:middle
+table quantization, we can have
+
+00:10:33.906 --> 00:10:35.356 A:middle
+these values scattered in this
+
+00:10:35.356 --> 00:10:37.146 A:middle
+range in an arbitrary manner.
+
+00:10:37.766 --> 00:10:39.246 A:middle
+So let's see practically how
+
+00:10:39.246 --> 00:10:40.906 A:middle
+quantization can help us reduce
+
+00:10:41.066 --> 00:10:41.826 A:middle
+the size of our model.
+
+00:10:41.826 --> 00:10:43.256 A:middle
+In this example, you are
+
+00:10:43.256 --> 00:10:45.506 A:middle
+focusing on Resnet50, which is a
+
+00:10:45.506 --> 00:10:47.186 A:middle
+common architecture used by many
+
+00:10:47.186 --> 00:10:48.526 A:middle
+applications for many different
+
+00:10:48.526 --> 00:10:48.846 A:middle
+tasks.
+
+00:10:50.056 --> 00:10:52.106 A:middle
+It includes 25 million trained
+
+00:10:52.106 --> 00:10:54.426 A:middle
+parameters and this means that
+
+00:10:54.426 --> 00:10:56.186 A:middle
+you have to use 32-bit floats to
+
+00:10:56.186 --> 00:10:56.916 A:middle
+represent it.
+
+00:10:57.946 --> 00:10:59.386 A:middle
+Then the total model size is
+
+00:10:59.386 --> 00:11:00.616 A:middle
+more than 100 megabytes.
+

@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.326 --> 00:11:04.865 align:start position:29% line:-2
+セッション間で比較できる
+画質の値を得られます
+
+00:11:05.933 --> 00:11:09.369 align:start position:34% line:-2
+これが時間加重指標
+ビットレートです
+
+00:11:09.469 --> 00:11:14.308 align:start position:27% line:-2
+それを計算するのは
+総持続時間と同様に簡単です
+
+00:11:14.975 --> 00:11:19.279 align:start position:25% line:-2
+再びPlayerItemsの
+アクセスログを参照し
+
+00:11:19.379 --> 00:11:21.582 align:start position:27% line:-1
+ログのイベントを反復します
+
+00:11:21.682 --> 00:11:27.387 align:start position:23% line:-2
+先に算出した総視聴時間に対する
+各イベントの時間加重を計算
+
+00:11:27.855 --> 00:11:31.258 align:start position:27% line:-2
+最後に加重ビットレート値に
+合算します
+
+00:11:31.358 --> 00:11:35.829 align:start position:23% line:-2
+プロパティが初期化されていない
+可能性があるので
+
+00:11:35.929 --> 00:11:38.832 align:start position:38% line:-2
+コードを適切に
+チェックします
+
+00:11:41.235 --> 00:11:45.672 align:start position:29% line:-2
+他に追跡すべきイベントは
+再生の失敗です
+
+00:11:45.772 --> 00:11:48.942 align:start position:27% line:-2
+AVPlayerItemの
+ステータスを見ます
+
+00:11:49.476 --> 00:11:54.948 align:start position:25% line:-2
+値がfalseに変われば
+回復不可能なエラーを示します
+
+00:11:55.449 --> 00:11:58.685 align:start position:29% line:-2
+この観察結果を
+KPIに変換する方法は？
+
+00:11:59.553 --> 00:12:02.756 align:start position:30% line:-1
+その１つの方法としては
+

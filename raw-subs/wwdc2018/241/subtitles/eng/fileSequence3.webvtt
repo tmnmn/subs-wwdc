@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.706 --> 00:03:00.176 A:middle
+Accessibility by the system.
+
+00:03:00.546 --> 00:03:03.006 A:middle
+And if they're found
+
+00:03:03.006 --> 00:03:04.436 A:middle
+automatically they're assigned a
+
+00:03:04.436 --> 00:03:07.096 A:middle
+default name but note that only
+
+00:03:07.096 --> 00:03:08.566 A:middle
+interactions in an element
+
+00:03:08.566 --> 00:03:10.016 A:middle
+subtree are automatically
+
+00:03:10.016 --> 00:03:10.696 A:middle
+exposed.
+
+00:03:10.906 --> 00:03:13.356 A:middle
+The UIAccessibilityDragging
+
+00:03:13.356 --> 00:03:15.196 A:middle
+protocol allows you to expose
+
+00:03:15.196 --> 00:03:16.596 A:middle
+exactly the interactions that
+
+00:03:16.596 --> 00:03:18.426 A:middle
+make sense, wherever they may
+
+00:03:18.426 --> 00:03:19.446 A:middle
+actually live in your View
+
+00:03:19.446 --> 00:03:20.006 A:middle
+hierarchy.
+
+00:03:20.956 --> 00:03:22.406 A:middle
+Allows you to specify a great
+
+00:03:22.406 --> 00:03:23.506 A:middle
+name for each one.
+
+00:03:23.506 --> 00:03:26.346 A:middle
+So, you should really consider
+
+00:03:26.346 --> 00:03:27.646 A:middle
+implementing it to provide the
+
+00:03:27.646 --> 00:03:29.166 A:middle
+best experience for someone
+
+00:03:29.166 --> 00:03:30.436 A:middle
+using your application through
+
+00:03:30.436 --> 00:03:31.446 A:middle
+an assistive technology.
+
+00:03:32.816 --> 00:03:35.216 A:middle
+Now, let's look at an example of
+
+00:03:35.216 --> 00:03:36.676 A:middle
+how you can expose drags with
+
+00:03:36.676 --> 00:03:38.046 A:middle
+the UIAccessibilityDragging
+
+00:03:38.536 --> 00:03:40.586 A:middle
+informal protocol.
+
+00:03:41.106 --> 00:03:42.576 A:middle
+Let's say we're building a bar
+
+00:03:42.576 --> 00:03:44.326 A:middle
+graph and we've chosen to draw
+
+00:03:44.326 --> 00:03:46.806 A:middle
+the bars by configuring CALayer
+
+00:03:46.806 --> 00:03:47.366 A:middle
+objects.
+
+00:03:47.366 --> 00:03:49.376 A:middle
+And we're going to try and
+
+00:03:49.376 --> 00:03:51.836 A:middle
+enable dragging of the bars
+
+00:03:51.836 --> 00:03:53.226 A:middle
+themselves, to drag the bar
+
+00:03:53.226 --> 00:03:53.506 A:middle
+data.
+
+00:03:53.996 --> 00:03:56.896 A:middle
+So, here is an example of how
+
+00:03:56.896 --> 00:03:57.536 A:middle
+that might look.
+
+00:03:57.536 --> 00:03:59.216 A:middle
+And again, each of these bars is
+
+00:03:59.216 --> 00:04:00.966 A:middle
+going to be a CALayer object.
+

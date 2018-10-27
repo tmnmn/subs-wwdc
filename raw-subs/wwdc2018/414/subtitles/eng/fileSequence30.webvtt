@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.706 --> 00:30:02.536 A:middle
+And at this point in our story
+
+00:30:02.536 --> 00:30:03.846 A:middle
+we don't know which of these
+
+00:30:03.846 --> 00:30:05.876 A:middle
+objects was the one being
+
+00:30:05.876 --> 00:30:06.926 A:middle
+released, it could've been any
+
+00:30:06.926 --> 00:30:08.316 A:middle
+of them.
+
+00:30:08.476 --> 00:30:10.396 A:middle
+Can we do better, can we work
+
+00:30:10.396 --> 00:30:13.146 A:middle
+out which of those objects was
+
+00:30:13.196 --> 00:30:14.966 A:middle
+the one being released from the
+
+00:30:14.966 --> 00:30:16.486 A:middle
+information in the crash log
+
+00:30:16.876 --> 00:30:18.206 A:middle
+because of course if we can't
+
+00:30:18.206 --> 00:30:19.856 A:middle
+reproduce it in the debugger the
+
+00:30:19.856 --> 00:30:21.306 A:middle
+crash log is all we have to go
+
+00:30:21.306 --> 00:30:21.426 A:middle
+on?
+
+00:30:22.326 --> 00:30:24.686 A:middle
+In this case we can do better.
+
+00:30:25.606 --> 00:30:30.006 A:middle
+We can see a +42 where the file
+
+00:30:30.006 --> 00:30:31.126 A:middle
+and line number would've been.
+
+00:30:31.126 --> 00:30:35.306 A:middle
+And the +42 is our clue because
+
+00:30:35.306 --> 00:30:37.616 A:middle
+the +42 is an offset in the
+
+00:30:37.616 --> 00:30:39.446 A:middle
+assembly code of the function.
+
+00:30:40.266 --> 00:30:41.936 A:middle
+We can disassemble the ivar
+
+00:30:41.936 --> 00:30:43.876 A:middle
+destroyer function, look at the
+
+00:30:43.876 --> 00:30:46.636 A:middle
+code and work out which property
+
+00:30:46.636 --> 00:30:49.206 A:middle
+was being accessed at offset 42.
+
+00:30:50.376 --> 00:30:51.526 A:middle
+So how does that work?
+
+00:30:51.956 --> 00:30:53.926 A:middle
+We go into the debugger, into
+
+00:30:53.926 --> 00:30:55.096 A:middle
+the debugger console.
+
+00:30:55.796 --> 00:30:58.026 A:middle
+We can run lldb at a terminal.
+
+00:30:58.426 --> 00:31:01.336 A:middle
+We can run lldb in the Xcode
+

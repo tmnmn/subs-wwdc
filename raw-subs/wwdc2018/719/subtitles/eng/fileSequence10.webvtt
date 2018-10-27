@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.296 --> 00:10:01.976 A:middle
+But as you can see, the overall
+
+00:10:01.976 --> 00:10:03.366 A:middle
+architecture of the code, the
+
+00:10:03.426 --> 00:10:06.646 A:middle
+flow of the kernel is the same.
+
+00:10:06.806 --> 00:10:07.116 A:middle
+All right.
+
+00:10:07.176 --> 00:10:09.616 A:middle
+Step 2 is to use half-floats.
+
+00:10:10.156 --> 00:10:11.766 A:middle
+Again, this is an example where
+
+00:10:11.766 --> 00:10:13.286 A:middle
+we can get away with just using
+
+00:10:13.286 --> 00:10:14.376 A:middle
+the precision of half-floats
+
+00:10:14.376 --> 00:10:15.376 A:middle
+because we're just working with
+
+00:10:15.376 --> 00:10:17.256 A:middle
+color values, and so again,
+
+00:10:17.256 --> 00:10:18.136 A:middle
+we're going to make again some
+
+00:10:18.296 --> 00:10:19.766 A:middle
+very simple changes to our code.
+
+00:10:20.336 --> 00:10:21.866 A:middle
+Basically, places in our code
+
+00:10:21.866 --> 00:10:24.556 A:middle
+where we were using floating
+
+00:10:24.556 --> 00:10:25.436 A:middle
+point precision, we're going to
+
+00:10:25.436 --> 00:10:26.886 A:middle
+use half-float precision as
+
+00:10:26.886 --> 00:10:27.096 A:middle
+well.
+
+00:10:27.396 --> 00:10:29.246 A:middle
+This means the sampler parameter
+
+00:10:29.246 --> 00:10:30.396 A:middle
+and the destination parameter
+
+00:10:30.596 --> 00:10:32.486 A:middle
+have an underscore H suffix on
+
+00:10:32.486 --> 00:10:34.666 A:middle
+them and any case in their code
+
+00:10:34.666 --> 00:10:36.506 A:middle
+where we're using float 4 now
+
+00:10:36.506 --> 00:10:37.246 A:middle
+becomes half 4.
+
+00:10:38.226 --> 00:10:39.376 A:middle
+So again, this is very simple
+
+00:10:39.376 --> 00:10:40.056 A:middle
+and easy to do.
+
+00:10:40.056 --> 00:10:41.356 A:middle
+Another thing to be aware of is
+
+00:10:41.356 --> 00:10:42.926 A:middle
+if you've got constancy in your
+
+00:10:42.926 --> 00:10:43.926 A:middle
+code, you want to make sure to
+
+00:10:43.926 --> 00:10:45.276 A:middle
+add the H on the end of them,
+
+00:10:45.276 --> 00:10:47.006 A:middle
+like the dividing by 9.0.
+
+00:10:47.596 --> 00:10:49.606 A:middle
+So again these -- this is
+
+00:10:49.606 --> 00:10:50.516 A:middle
+another simple thing.
+
+00:10:51.146 --> 00:10:53.136 A:middle
+The last thing we're going to do
+
+00:10:53.136 --> 00:10:54.226 A:middle
+to get the best performance out
+
+00:10:54.226 --> 00:10:55.916 A:middle
+of this example is to leverage
+
+00:10:55.916 --> 00:10:57.296 A:middle
+group reads and group writes.
+
+00:10:57.446 --> 00:10:58.536 A:middle
+So, let me walk you through the
+
+00:10:58.856 --> 00:10:59.746 A:middle
+code to do this.
+

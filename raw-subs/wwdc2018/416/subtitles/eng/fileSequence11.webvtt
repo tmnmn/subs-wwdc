@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.106 --> 00:11:01.356 A:middle
+What you may not have known is
+
+00:11:01.726 --> 00:11:03.066 A:middle
+that you can use Memgraphs with
+
+00:11:03.066 --> 00:11:04.106 A:middle
+a number of our command-line
+
+00:11:04.106 --> 00:11:04.496 A:middle
+tools.
+
+00:11:06.366 --> 00:11:07.566 A:middle
+First, you need to export a
+
+00:11:07.566 --> 00:11:08.586 A:middle
+Memgraph from Xcode.
+
+00:11:08.956 --> 00:11:09.856 A:middle
+This is really simple.
+
+00:11:10.976 --> 00:11:12.336 A:middle
+You just click the Export
+
+00:11:12.336 --> 00:11:14.006 A:middle
+Memgraph button in the File menu
+
+00:11:14.006 --> 00:11:14.686 A:middle
+and save it out.
+
+00:11:15.336 --> 00:11:18.216 A:middle
+Then, you can pass that Memgraph
+
+00:11:18.256 --> 00:11:19.506 A:middle
+to the command-line tool instead
+
+00:11:19.506 --> 00:11:20.456 A:middle
+of the target [inaudible] and
+
+00:11:20.456 --> 00:11:21.036 A:middle
+you're good to go.
+
+00:11:22.176 --> 00:11:23.796 A:middle
+So I was running my app in Xcode
+
+00:11:23.796 --> 00:11:25.216 A:middle
+10, and I received a memory
+
+00:11:25.216 --> 00:11:25.996 A:middle
+resource exception.
+
+00:11:26.356 --> 00:11:26.986 A:middle
+This isn't cool.
+
+00:11:27.176 --> 00:11:27.976 A:middle
+I should probably take a
+
+00:11:27.976 --> 00:11:29.256 A:middle
+Memgraph and investigate this
+
+00:11:29.256 --> 00:11:29.536 A:middle
+further.
+
+00:11:29.536 --> 00:11:30.536 A:middle
+But what do I do next?
+
+00:11:31.046 --> 00:11:32.526 A:middle
+Well, obviously to the terminal.
+
+00:11:33.176 --> 00:11:35.396 A:middle
+The first tool I often reach for
+
+00:11:35.536 --> 00:11:36.026 A:middle
+is vmmap.
+
+00:11:36.626 --> 00:11:37.486 A:middle
+It gives you a high-level
+
+00:11:37.486 --> 00:11:38.696 A:middle
+breakdown of memory consumption
+
+00:11:38.696 --> 00:11:40.306 A:middle
+in your app by printing the VM
+
+00:11:40.306 --> 00:11:41.496 A:middle
+regions that are allocated to
+
+00:11:41.496 --> 00:11:42.106 A:middle
+the process.
+
+00:11:43.576 --> 00:11:45.256 A:middle
+The summary flag is a great way
+
+00:11:45.256 --> 00:11:45.856 A:middle
+to get started.
+
+00:11:46.716 --> 00:11:49.866 A:middle
+It prints details of the size in
+
+00:11:49.866 --> 00:11:52.946 A:middle
+memory of the region, the amount
+
+00:11:52.946 --> 00:11:55.546 A:middle
+of the region that's dirty, and
+
+00:11:55.546 --> 00:11:56.286 A:middle
+the amount of memory that's
+
+00:11:56.286 --> 00:11:58.026 A:middle
+swapped or compressed in iOS.
+
+00:11:58.196 --> 00:11:59.466 A:middle
+And remember, it's this dirty
+
+00:11:59.466 --> 00:12:00.786 A:middle
+and swap that's really important
+

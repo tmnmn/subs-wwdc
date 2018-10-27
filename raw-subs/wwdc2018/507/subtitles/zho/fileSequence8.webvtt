@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.546 --> 00:08:00.514 align:middle line:-1
+当发生这种情况时
+
+00:08:00.581 --> 00:08:04.651 align:middle line:-1
+数百万用户同时请求密钥
+
+00:08:04.718 --> 00:08:07.588 align:middle line:-1
+导致密钥服务器上的巨大冲动负载
+
+00:08:08.856 --> 00:08:13.560 align:middle line:-2
+当你在请求出现前并在播放列表中
+出现EXT-X-KEY标签之前
+
+00:08:13.627 --> 00:08:15.028 align:middle line:-1
+在一个小时间窗口内
+
+00:08:15.095 --> 00:08:18.298 align:middle line:-1
+分散密钥请求事件
+
+00:08:18.599 --> 00:08:21.969 align:middle line:-2
+基本上 你在对到达
+你的密钥服务器的请求作负载平衡
+
+00:08:24.438 --> 00:08:26.573 align:middle line:0
+我们详细介绍了这个例子
+
+00:08:26.640 --> 00:08:30.677 align:middle line:0
+并在去年HLS演讲期间
+提供了示例代码
+
+00:08:30.744 --> 00:08:32.880 align:middle line:0
+因此 查看
+我们在developer.apple.com
+
+00:08:32.946 --> 00:08:36.517 align:middle line:0
+或WWDC app上录制的片段
+
+00:08:38.818 --> 00:08:43.023 align:middle line:0
+除了允许你管理和传送
+内容解密密钥之外
+
+00:08:43.490 --> 00:08:45.325 align:middle line:0
+另外AVContentKeySession也可以
+
+00:08:45.392 --> 00:08:49.630 align:middle line:0
+作为新的FairPlay Streaming
+内容保护功能的平台
+
+00:08:50.664 --> 00:08:52.900 align:middle line:0
+去年我们发布了一个这样的新功能
+
+00:08:53.967 --> 00:08:55.602 align:middle line:-1
+我们称之为离线出租
+
+00:08:55.669 --> 00:08:57.004 align:middle line:-1
+（什么是离线出租？）
+
+00:08:57.070 --> 00:08:59.573 align:middle line:-2
+离线租赁是一种
+FairPlay Streaming功能
+
+00:08:59.640 --> 00:09:03.177 align:middle line:-1
+它允许你指定两个到期持续时间
+

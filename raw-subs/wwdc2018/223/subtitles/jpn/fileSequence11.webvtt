@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:56.590 --> 00:11:02.563 align:start position:11% line:-2
+“そしてshapes.removeAll…と
+入力”
+
+00:11:03.096 --> 00:11:05.599 align:start position:27% line:-1
+“さあ これで試してみろ”
+
+00:11:06.133 --> 00:11:09.503 align:start position:27% line:-1
+クラスティは席を離れました
+
+00:11:09.603 --> 00:11:13.540 align:start position:23% line:-1
+私にコードを検証させるためです
+
+00:11:14.875 --> 00:11:20.614 align:start position:25% line:-2
+調べてみると コードの問題は
+解決されていました
+
+00:11:21.548 --> 00:11:25.419 align:start position:23% line:-1
+次に 私はクイックヘルプを開き
+
+00:11:25.519 --> 00:11:28.522 align:start position:14% line:-2
+“removeAll(where:)”を
+調べました
+
+00:11:30.157 --> 00:11:35.662 align:start position:20% line:-2
+“remove(at:)”のように
+計算量はコレクションの長さに
+
+00:11:35.762 --> 00:11:37.431 align:start position:36% line:-1
+比例するようです
+
+00:11:37.698 --> 00:11:40.634 align:start position:27% line:-1
+でもループには入れないので
+
+00:11:40.901 --> 00:11:43.704 align:start position:21% line:-1
+これが すべての処理の計算量です
+
+00:11:44.471 --> 00:11:49.042 align:start position:25% line:-2
+これがもたらす
+違いの一部をご紹介しましょう
+
+00:11:50.444 --> 00:11:56.517 align:start position:25% line:-2
+ｎが意味する アルゴリズムの
+実行時間と問題のサイズは
+
+00:11:56.617 --> 00:11:58.318 align:start position:38% line:-1
+線形比例します
+
+00:11:59.286 --> 00:12:02.456 align:start position:27% line:-1
+オレンジはｎの２乗の線です
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.576 --> 00:25:01.076 A:middle
+One example of such workloads
+
+00:25:01.196 --> 00:25:03.456 A:middle
+can be, for example, simulation
+
+00:25:03.456 --> 00:25:05.076 A:middle
+of physically based accurate
+
+00:25:05.076 --> 00:25:07.076 A:middle
+[inaudible] or anything else
+
+00:25:07.766 --> 00:25:11.236 A:middle
+that requires a lot of time to
+
+00:25:11.976 --> 00:25:12.826 A:middle
+be updated.
+
+00:25:13.326 --> 00:25:15.846 A:middle
+Such workload can happen in the
+
+00:25:15.846 --> 00:25:17.316 A:middle
+background, completely
+
+00:25:17.316 --> 00:25:18.846 A:middle
+asynchronously from rendering
+
+00:25:18.846 --> 00:25:20.596 A:middle
+frames, and each time it's
+
+00:25:20.596 --> 00:25:23.336 A:middle
+ready, its results will be sent
+
+00:25:23.456 --> 00:25:24.536 A:middle
+to primary GPU.
+
+00:25:25.316 --> 00:25:27.296 A:middle
+It's marked here with gray color
+
+00:25:27.626 --> 00:25:28.996 A:middle
+to indicate that it's not
+
+00:25:28.996 --> 00:25:31.036 A:middle
+related to any particular frame.
+
+00:25:32.516 --> 00:25:33.616 A:middle
+So, of course there are
+
+00:25:33.616 --> 00:25:36.016 A:middle
+different GPUs with different
+
+00:25:36.066 --> 00:25:38.086 A:middle
+performance characteristics, and
+
+00:25:38.086 --> 00:25:38.976 A:middle
+they will have different
+
+00:25:38.976 --> 00:25:40.146 A:middle
+bandwidth connections.
+
+00:25:40.606 --> 00:25:42.966 A:middle
+And your application will have
+
+00:25:43.086 --> 00:25:44.976 A:middle
+different workloads in a single
+
+00:25:44.976 --> 00:25:47.096 A:middle
+frame with different relations
+
+00:25:47.176 --> 00:25:47.876 A:middle
+between them.
+
+00:25:48.986 --> 00:25:51.676 A:middle
+So you will need to design a way
+
+00:25:51.786 --> 00:25:53.446 A:middle
+to distribute this workload on
+
+00:25:53.446 --> 00:25:56.406 A:middle
+your own, but saying all that,
+
+00:25:56.406 --> 00:25:58.166 A:middle
+it's important to start thinking
+
+00:25:58.166 --> 00:26:00.076 A:middle
+about this GPU workload
+

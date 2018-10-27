@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.516 --> 00:27:02.326 A:middle
+Now we've introduced many
+
+00:27:02.326 --> 00:27:03.536 A:middle
+adaptive APIs to help your apps
+
+00:27:03.616 --> 00:27:05.416 A:middle
+over the years adapt to
+
+00:27:05.416 --> 00:27:06.156 A:middle
+different environments.
+
+00:27:06.656 --> 00:27:08.216 A:middle
+And safe area is really just the
+
+00:27:08.216 --> 00:27:09.006 A:middle
+newest of these.
+
+00:27:09.006 --> 00:27:10.656 A:middle
+So I'm going to review some of
+
+00:27:10.656 --> 00:27:12.196 A:middle
+these concepts and also talk
+
+00:27:12.196 --> 00:27:13.576 A:middle
+about how they work with safe
+
+00:27:13.576 --> 00:27:13.836 A:middle
+area.
+
+00:27:15.456 --> 00:27:16.866 A:middle
+So let's go to the first screen
+
+00:27:16.866 --> 00:27:17.676 A:middle
+of our application.
+
+00:27:18.406 --> 00:27:20.276 A:middle
+And we've got a pretty standard
+
+00:27:20.276 --> 00:27:21.546 A:middle
+setup here with a tab bar
+
+00:27:21.546 --> 00:27:22.596 A:middle
+controller, continuing
+
+00:27:22.596 --> 00:27:23.596 A:middle
+navigation controller,
+
+00:27:23.906 --> 00:27:25.756 A:middle
+containing our content view
+
+00:27:25.786 --> 00:27:26.166 A:middle
+controller.
+
+00:27:27.516 --> 00:27:29.226 A:middle
+Now note that the views of all
+
+00:27:29.286 --> 00:27:30.406 A:middle
+three of these view controllers
+
+00:27:30.656 --> 00:27:31.466 A:middle
+are full screen.
+
+00:27:32.196 --> 00:27:33.836 A:middle
+This is what enables the tab bar
+
+00:27:33.836 --> 00:27:35.236 A:middle
+to extend underneath the home
+
+00:27:35.236 --> 00:27:37.146 A:middle
+indicator, the navigation bar to
+
+00:27:37.146 --> 00:27:38.126 A:middle
+extend underneath the status
+
+00:27:38.126 --> 00:27:40.246 A:middle
+bar, and the content to extend
+
+00:27:40.246 --> 00:27:42.426 A:middle
+and scroll underneath all of it.
+
+00:27:43.416 --> 00:27:44.516 A:middle
+But we need to prevent these
+
+00:27:44.516 --> 00:27:45.626 A:middle
+elements from overlapping.
+
+00:27:45.806 --> 00:27:47.146 A:middle
+So let's see how safe area
+
+00:27:47.206 --> 00:27:49.316 A:middle
+allows these components to do
+
+00:27:50.016 --> 00:27:50.196 A:middle
+that.
+
+00:27:50.356 --> 00:27:51.866 A:middle
+So the safe area insets start by
+
+00:27:51.866 --> 00:27:52.856 A:middle
+flowing through the tab bar
+
+00:27:52.856 --> 00:27:54.836 A:middle
+controller, which only receives
+
+00:27:54.836 --> 00:27:57.076 A:middle
+insets on the home indicator and
+
+00:27:57.076 --> 00:27:58.786 A:middle
+status bar because that's all
+
+00:27:58.786 --> 00:27:59.136 A:middle
+that it sees.
+

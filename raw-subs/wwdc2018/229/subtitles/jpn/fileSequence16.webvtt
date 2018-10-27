@@ -1,0 +1,48 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.394 --> 00:16:04.331 align:start position:23% line:-1
+これには面倒な計算が介在します
+
+00:16:04.698 --> 00:16:08.602 align:start position:29% line:-2
+必要最低限に抑えられれば
+一番いいですね
+
+00:16:10.270 --> 00:16:13.440 align:start position:21% line:-1
+Swiftではlazyを使います
+
+00:16:14.708 --> 00:16:19.780 align:start position:27% line:-2
+先ほどのようにレンジを選び
+lazyにします
+
+00:16:19.880 --> 00:16:25.786 align:start position:21% line:-2
+lazyのコレクションで
+元のコレクションをラップしました
+
+00:16:25.919 --> 00:16:30.791 align:start position:29% line:-2
+そして 演算を実行すると
+またラップするのです
+
+00:16:30.891 --> 00:16:34.228 align:start position:23% line:-1
+これをマップしても できません
+
+00:16:34.328 --> 00:16:38.031 align:start position:34% line:-2
+このクロージャは
+手を加えられません
+
+00:16:38.465 --> 00:16:43.704 align:start position:23% line:-2
+lazyのマップコレクションは
+フィルタしてもラップされるだけ
+
+00:16:43.804 --> 00:16:46.740 align:start position:36% line:-2
+あとで 要求時に
+フィルタされます
+
+00:16:47.774 --> 00:16:51.778 align:start position:9% line:-2
+このLazyFilterCollectionの
+要素は？
+
+00:16:55.482 --> 00:17:00.387 align:start position:7% line:-2
+まず LazyFilterCollectionに
+最初の要素を要求します
+

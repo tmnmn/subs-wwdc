@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.706 --> 00:24:03.911 align:start position:21% line:-2
+Bonjourサービスを
+アドバタイズするリスナーの設定に
+
+00:24:04.011 --> 00:24:06.613 align:start position:16% line:-1
+今回はcamera.udpを使用します
+
+00:24:08.916 --> 00:24:11.485 align:start position:30% line:-1
+新しい接続を受け取ると
+
+00:24:11.585 --> 00:24:15.823 align:start position:9% line:-2
+newConnectionHandlerとして
+提供したブロックへ渡します
+
+00:24:16.356 --> 00:24:20.828 align:start position:25% line:-1
+接続中に選択した設定を実行し
+
+00:24:20.928 --> 00:24:25.265 align:start position:29% line:-2
+開始を知らせるため
+startを呼び出します
+
+00:24:26.733 --> 00:24:31.038 align:start position:32% line:-2
+同様にリスナーも
+startを呼び出し
+
+00:24:31.138 --> 00:24:34.508 align:start position:32% line:-2
+ディスパッチキューを
+指定します
+
+00:24:35.776 --> 00:24:36.877 align:start position:34% line:-1
+これがリスナーです
+
+00:24:36.977 --> 00:24:42.082 align:start position:25% line:-2
+UDPソケット上にリッスンを
+呼び出すのと同等の機能です
+
+00:24:42.816 --> 00:24:46.120 align:start position:25% line:-2
+ただし リッスンは
+UDPソケットでは使えません
+
+00:24:47.354 --> 00:24:49.723 align:start position:20% line:-1
+XcodeでAppを構築しましょう
+
+00:24:50.524 --> 00:24:52.392 align:start position:32% line:-1
+こちらにAppがあり
+
+00:24:52.493 --> 00:24:57.331 align:start position:27% line:-2
+カメラとディスプレイ機能を
+操作するファイルがあります
+
+00:24:57.598 --> 00:25:02.469 align:start position:14% line:-2
+UDPClientクラスと
+UDPServerクラスに注目しましょう
+

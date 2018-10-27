@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.736 --> 00:29:00.046 A:middle
+whether a given shape should be
+
+00:29:00.046 --> 00:29:00.866 A:middle
+brought forward.
+
+00:29:04.716 --> 00:29:06.156 A:middle
+And everything kept compiling.
+
+00:29:07.036 --> 00:29:07.386 A:middle
+Awesome!
+
+00:29:08.266 --> 00:29:10.826 A:middle
+At that point, I was pleased to
+
+00:29:10.826 --> 00:29:12.086 A:middle
+find there were no dependencies
+
+00:29:12.086 --> 00:29:14.266 A:middle
+left on shape, and I could just
+
+00:29:14.426 --> 00:29:15.406 A:middle
+delete the where clause.
+
+00:29:15.956 --> 00:29:18.106 A:middle
+Pretty cool, I thought.
+
+00:29:18.106 --> 00:29:20.106 A:middle
+Now, I can bring forward on any
+
+00:29:20.106 --> 00:29:20.506 A:middle
+array.
+
+00:29:21.636 --> 00:29:23.386 A:middle
+I looked over at Crusty, who had
+
+00:29:23.386 --> 00:29:24.636 A:middle
+been quietly practicing the
+
+00:29:24.676 --> 00:29:26.876 A:middle
+cha-cha-cha in the corner, but
+
+00:29:26.876 --> 00:29:28.586 A:middle
+he didn't seem to think I was
+
+00:29:29.736 --> 00:29:30.000 A:middle
+finished.
+
+00:29:31.316 --> 00:29:32.996 A:middle
+"What does bring forward have to
+
+00:29:32.996 --> 00:29:34.026 A:middle
+do with arrays?"
+
+00:29:34.916 --> 00:29:37.196 A:middle
+he asked.
+
+00:29:37.436 --> 00:29:38.976 A:middle
+"Well, nothing," I sighed and
+
+00:29:38.976 --> 00:29:40.046 A:middle
+started thinking about how to
+
+00:29:40.046 --> 00:29:41.206 A:middle
+remove this dependency.
+
+00:29:42.656 --> 00:29:43.706 A:middle
+Let's see, there's a stable
+
+00:29:43.706 --> 00:29:46.066 A:middle
+partition here, which requires
+
+00:29:46.066 --> 00:29:47.636 A:middle
+mutable collection conformance.
+
+00:29:48.186 --> 00:29:49.416 A:middle
+So, maybe I'll just move it to
+
+00:29:49.416 --> 00:29:52.676 A:middle
+mutable collection.
+
+00:29:53.006 --> 00:29:53.466 A:middle
+Hmm.
+
+00:29:53.896 --> 00:29:56.076 A:middle
+I thought, clearly the index
+
+00:29:56.116 --> 00:29:58.536 A:middle
+type doesn't match Int.
+
+00:29:59.456 --> 00:29:59.746 A:middle
+Okay.
+
+00:29:59.746 --> 00:30:00.826 A:middle
+So, there's a simple fix for
+

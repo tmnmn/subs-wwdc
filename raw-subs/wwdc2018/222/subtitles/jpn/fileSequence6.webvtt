@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.492 --> 00:06:02.963 align:start position:21% line:-1
+原因が何であれ小さな変化があると
+
+00:06:03.063 --> 00:06:07.334 align:start position:21% line:-1
+ブロックや接続に不具合が生じます
+
+00:06:07.534 --> 00:06:12.439 align:start position:29% line:-2
+チェックサムや電子署名が
+無効になるので
+
+00:06:12.539 --> 00:06:17.544 align:start position:29% line:-2
+読み込む前に
+信頼できないと分かります
+
+00:06:19.279 --> 00:06:24.418 align:start position:29% line:-2
+しかし チェックサムが
+常に働くとは限らないので
+
+00:06:24.518 --> 00:06:29.523 align:start position:29% line:-2
+この段階でできるのは
+読んで検証するくらいです
+
+00:06:30.557 --> 00:06:33.594 align:start position:27% line:-1
+次はプリミティブデータです
+
+00:06:34.661 --> 00:06:37.331 align:start position:30% line:-1
+RAWデータから生成し
+
+00:06:37.431 --> 00:06:41.735 align:start position:14% line:-2
+JSONSerializationなどを
+通過させます
+
+00:06:42.769 --> 00:06:47.741 align:start position:29% line:-2
+これで使える文字列と辞書
+数字の配列を得て
+
+00:06:48.008 --> 00:06:50.978 align:start position:30% line:-1
+２つのことが分かります
+
+00:06:52.212 --> 00:06:55.182 align:start position:27% line:-1
+１つ目はデータ形式の適切性
+
+00:06:55.282 --> 00:06:58.585 align:start position:11% line:-2
+XMLはJSONSerializationを
+通りません
+
+00:06:59.620 --> 00:07:02.222 align:start position:23% line:-1
+２つ目はデシリアライザの信頼性
+

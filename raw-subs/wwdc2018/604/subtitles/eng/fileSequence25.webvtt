@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.926 --> 00:25:00.486 A:middle
+to the data, this allows the
+
+00:25:00.486 --> 00:25:01.356 A:middle
+Metal to apply some
+
+00:25:01.356 --> 00:25:03.906 A:middle
+optimizations it would be unable
+
+00:25:03.906 --> 00:25:05.786 A:middle
+to if the CPU also had access to
+
+00:25:05.786 --> 00:25:06.206 A:middle
+that data.
+
+00:25:06.896 --> 00:25:08.776 A:middle
+But only the GPU can directly
+
+00:25:08.886 --> 00:25:10.636 A:middle
+fill the contents of this type
+
+00:25:10.636 --> 00:25:11.096 A:middle
+of texture.
+
+00:25:12.606 --> 00:25:14.016 A:middle
+You can indirectly fill data
+
+00:25:14.206 --> 00:25:15.996 A:middle
+from the CPU using a blit
+
+00:25:15.996 --> 00:25:17.786 A:middle
+encoder to copy from a second
+
+00:25:18.076 --> 00:25:19.526 A:middle
+intermediate resource using
+
+00:25:19.526 --> 00:25:21.026 A:middle
+shared storage.
+
+00:25:22.446 --> 00:25:23.966 A:middle
+On devices with dedicated video
+
+00:25:23.966 --> 00:25:25.656 A:middle
+memory setting the resource to
+
+00:25:25.656 --> 00:25:27.306 A:middle
+use private storage allocates it
+
+00:25:27.306 --> 00:25:28.396 A:middle
+in video memory only.
+
+00:25:30.396 --> 00:25:32.776 A:middle
+Finally, on macOS you can use a
+
+00:25:32.866 --> 00:25:34.056 A:middle
+third storage mode called
+
+00:25:34.056 --> 00:25:34.756 A:middle
+managed storage.
+
+00:25:35.696 --> 00:25:37.796 A:middle
+This allows both the GPU and CPU
+
+00:25:37.826 --> 00:25:39.066 A:middle
+to access the object data.
+
+00:25:39.776 --> 00:25:40.946 A:middle
+And on systems with dedicated
+
+00:25:40.946 --> 00:25:43.226 A:middle
+video memory Metal may create a
+
+00:25:43.226 --> 00:25:44.476 A:middle
+mirrored memory backing for
+
+00:25:44.476 --> 00:25:46.056 A:middle
+efficient access by both
+
+00:25:46.056 --> 00:25:46.696 A:middle
+processors.
+
+00:25:47.926 --> 00:25:49.396 A:middle
+Because of this, explicit calls
+
+00:25:49.396 --> 00:25:51.166 A:middle
+are necessary to ensure data is
+
+00:25:51.236 --> 00:25:53.476 A:middle
+synchronized for GPU and CPU
+
+00:25:53.476 --> 00:25:53.876 A:middle
+access.
+
+00:25:58.126 --> 00:25:59.486 A:middle
+Here's an example of creating a
+
+00:25:59.486 --> 00:26:00.376 A:middle
+texture object.
+

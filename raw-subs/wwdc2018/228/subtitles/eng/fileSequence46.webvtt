@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.246 --> 00:46:00.306 A:middle
+Let's take a look at one more
+
+00:46:00.306 --> 00:46:01.000 A:middle
+bug.
+
+00:46:13.336 --> 00:46:15.016 A:middle
+Here, I can see there's a lot of
+
+00:46:15.056 --> 00:46:17.276 A:middle
+time being spent in set next
+
+00:46:17.276 --> 00:46:19.106 A:middle
+update timer and add new sprite.
+
+00:46:19.816 --> 00:46:20.616 A:middle
+What is this function?
+
+00:46:21.476 --> 00:46:22.326 A:middle
+Let's investigate.
+
+00:46:25.476 --> 00:46:26.786 A:middle
+I'll jump directly into the
+
+00:46:26.786 --> 00:46:27.000 A:middle
+code,
+
+00:46:36.896 --> 00:46:38.456 A:middle
+and I can see that a lot of time
+
+00:46:38.456 --> 00:46:40.766 A:middle
+is being spent in this add new
+
+00:46:40.766 --> 00:46:41.716 A:middle
+sprite function.
+
+00:46:42.676 --> 00:46:42.996 A:middle
+Okay.
+
+00:46:43.266 --> 00:46:44.226 A:middle
+Adding new sprites can be
+
+00:46:44.226 --> 00:46:46.986 A:middle
+expensive, but the question to
+
+00:46:46.986 --> 00:46:49.046 A:middle
+ask ourselves is, is this an
+
+00:46:49.046 --> 00:46:50.126 A:middle
+expected workload?
+
+00:46:51.366 --> 00:46:52.776 A:middle
+And the answer is, in this case,
+
+00:46:53.076 --> 00:46:55.656 A:middle
+not really because we only
+
+00:46:55.656 --> 00:46:57.936 A:middle
+expect to be adding sprites once
+
+00:46:57.966 --> 00:46:58.896 A:middle
+every few seconds.
+
+00:46:59.586 --> 00:47:00.816 A:middle
+So it doesn't quite make sense
+

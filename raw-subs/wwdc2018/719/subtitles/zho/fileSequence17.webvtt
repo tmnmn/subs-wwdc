@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.852 --> 00:17:00.654 align:middle line:-1
+是在原型环境中
+
+00:17:00.721 --> 00:17:02.489 align:middle line:-1
+很多内存管理都是自动发生的
+
+00:17:02.556 --> 00:17:05.526 align:middle line:-1
+因此你不会经常遇到内存压力
+
+00:17:05.592 --> 00:17:08.161 align:middle line:-1
+直到开发的后期
+
+00:17:10.297 --> 00:17:15.736 align:middle line:-1
+当然 另一个需要考虑的主题是性能
+
+00:17:16.369 --> 00:17:18.972 align:middle line:-1
+通常 原型已经在使用CPU代码
+
+00:17:19.205 --> 00:17:23.143 align:middle line:-1
+我们经常高估
+
+00:17:23.210 --> 00:17:25.512 align:middle line:-1
+将CP代码指向GP代码的性能提高
+
+00:17:25.579 --> 00:17:27.681 align:middle line:-1
+以为一切都会变得实时
+
+00:17:28.482 --> 00:17:31.685 align:middle line:-1
+如果我们能够尽早抓住这些问题呢？
+
+00:17:31.752 --> 00:17:34.221 align:middle line:-1
+早到原型设计和工作流程中？
+
+00:17:35.522 --> 00:17:37.424 align:middle line:-1
+我们相信有这个办法
+
+00:17:37.491 --> 00:17:39.426 align:middle line:-1
+它叫PyCoreImage
+
+00:17:39.593 --> 00:17:41.228 align:middle line:-2
+Core Image的
+Python绑定
+
+00:17:42.262 --> 00:17:46.366 align:middle line:-2
+这是结合Core Image的
+高性能生成
+
+00:17:46.800 --> 00:17:50.270 align:middle line:-1
+和Python编程语言的灵活性
+
+00:17:51.038 --> 00:17:52.239 align:middle line:-1
+用Core Image时
+
+00:17:52.306 --> 00:17:55.676 align:middle line:-2
+你还继承了对iOS
+和macOS的支持
+
+00:17:55.976 --> 00:17:58.245 align:middle line:-1
+以及200多个内置过滤器
+
+00:17:58.912 --> 00:18:02.282 align:middle line:-2
+我们来看看
+PyCoreImage的细节
+

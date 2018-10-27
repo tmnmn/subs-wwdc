@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.156 --> 00:31:01.716 A:middle
+In my example, it was a timer,
+
+00:31:01.716 --> 00:31:03.466 A:middle
+but you could also be using the
+
+00:31:03.466 --> 00:31:04.826 A:middle
+asyncAfter API from
+
+00:31:04.826 --> 00:31:05.526 A:middle
+DispatchQueue.
+
+00:31:06.906 --> 00:31:08.256 A:middle
+We want to mock this mechanism
+
+00:31:08.256 --> 00:31:09.676 A:middle
+in our tests so that we can
+
+00:31:09.676 --> 00:31:10.806 A:middle
+invoke the delayed action
+
+00:31:10.806 --> 00:31:12.116 A:middle
+immediately and bypass the
+
+00:31:12.116 --> 00:31:12.406 A:middle
+delay.
+
+00:31:15.756 --> 00:31:17.356 A:middle
+Here's our original code again,
+
+00:31:17.856 --> 00:31:18.966 A:middle
+and let's start by looking at
+
+00:31:18.966 --> 00:31:20.496 A:middle
+what this scheduledTimer method
+
+00:31:20.496 --> 00:31:21.286 A:middle
+actually does.
+
+00:31:22.556 --> 00:31:23.776 A:middle
+The scheduledTimer method
+
+00:31:23.776 --> 00:31:25.586 A:middle
+actually does two things for us.
+
+00:31:26.306 --> 00:31:28.216 A:middle
+It creates a timer, and then it
+
+00:31:28.216 --> 00:31:29.756 A:middle
+adds that timer to the current
+
+00:31:29.756 --> 00:31:30.916 A:middle
+run loop.
+
+00:31:31.196 --> 00:31:32.326 A:middle
+Now, this API can be really
+
+00:31:32.326 --> 00:31:34.116 A:middle
+convenient for creating a timer,
+
+00:31:34.716 --> 00:31:35.526 A:middle
+but it would help us to make
+
+00:31:35.526 --> 00:31:36.816 A:middle
+this code more testable if I
+
+00:31:36.816 --> 00:31:38.016 A:middle
+actually break these two steps
+
+00:31:38.016 --> 00:31:38.386 A:middle
+apart.
+
+00:31:40.316 --> 00:31:41.756 A:middle
+Here, I've transformed the
+
+00:31:41.756 --> 00:31:43.056 A:middle
+previous code from using
+
+00:31:43.056 --> 00:31:45.056 A:middle
+scheduledTimer to instead create
+
+00:31:45.056 --> 00:31:46.906 A:middle
+the timer first and then add it
+
+00:31:46.936 --> 00:31:48.516 A:middle
+to the current runLoop second,
+
+00:31:48.516 --> 00:31:49.556 A:middle
+which I have stored in a new
+
+00:31:49.556 --> 00:31:49.996 A:middle
+property.
+
+00:31:50.626 --> 00:31:52.566 A:middle
+Now, this code is equivalent to
+
+00:31:52.566 --> 00:31:54.826 A:middle
+what we had before, but, once we
+
+00:31:54.826 --> 00:31:56.786 A:middle
+break these two steps apart, we
+
+00:31:56.786 --> 00:31:58.326 A:middle
+can see that runLoop is just
+
+00:31:58.326 --> 00:31:59.816 A:middle
+another external class that this
+
+00:31:59.816 --> 00:32:00.556 A:middle
+class interacts with.
+

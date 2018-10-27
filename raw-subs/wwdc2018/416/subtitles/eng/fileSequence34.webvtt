@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.746 --> 00:34:00.826 A:middle
+use a lot more dirty memory and
+
+00:34:00.826 --> 00:34:02.016 A:middle
+some have a lot more compressed
+
+00:34:02.016 --> 00:34:04.426 A:middle
+memory, so this gives me an idea
+
+00:34:04.426 --> 00:34:05.506 A:middle
+of maybe something I want to
+
+00:34:05.506 --> 00:34:06.126 A:middle
+focus on.
+
+00:34:06.126 --> 00:34:07.626 A:middle
+But I'm actually going to use a
+
+00:34:07.626 --> 00:34:08.786 A:middle
+different strategy here.
+
+00:34:09.216 --> 00:34:10.775 A:middle
+I know that the operating
+
+00:34:10.775 --> 00:34:14.266 A:middle
+system, not necessarily, but as
+
+00:34:14.266 --> 00:34:17.076 A:middle
+a general rule, the later the VM
+
+00:34:17.166 --> 00:34:19.696 A:middle
+region was created, the later in
+
+00:34:19.846 --> 00:34:21.565 A:middle
+my app's life cycle it happened.
+
+00:34:22.136 --> 00:34:23.466 A:middle
+And since this Memgraph was
+
+00:34:23.466 --> 00:34:25.576 A:middle
+taken during this huge spike in
+
+00:34:25.576 --> 00:34:27.596 A:middle
+memory use, chances are these
+
+00:34:27.666 --> 00:34:29.775 A:middle
+later regions are more closely
+
+00:34:29.896 --> 00:34:31.315 A:middle
+tied to whatever caused that
+
+00:34:31.315 --> 00:34:31.775 A:middle
+spike.
+
+00:34:32.426 --> 00:34:33.686 A:middle
+So instead of trying to find the
+
+00:34:33.686 --> 00:34:35.295 A:middle
+one with the biggest dirty and
+
+00:34:35.295 --> 00:34:36.565 A:middle
+compressed size, I'm going to go
+
+00:34:36.565 --> 00:34:37.815 A:middle
+ahead and just start at the end
+
+00:34:37.815 --> 00:34:38.056 A:middle
+here.
+
+00:34:38.676 --> 00:34:40.666 A:middle
+I'm going to grab the beginning
+
+00:34:40.666 --> 00:34:42.406 A:middle
+address of that final region.
+
+00:34:43.166 --> 00:34:44.786 A:middle
+Now, where do I go from here?
+
+00:34:45.366 --> 00:34:47.755 A:middle
+Well, one of the tools that
+
+00:34:47.755 --> 00:34:50.815 A:middle
+James mentioned was heap, but
+
+00:34:50.815 --> 00:34:51.856 A:middle
+that's about objects on the
+
+00:34:51.856 --> 00:34:53.196 A:middle
+heap, and I'm dealing with a
+
+00:34:53.196 --> 00:34:54.766 A:middle
+virtual memory region, so that
+
+00:34:54.766 --> 00:34:56.366 A:middle
+doesn't help.
+
+00:34:56.366 --> 00:34:58.436 A:middle
+Then, there's leaks, but leaks,
+
+00:34:58.436 --> 00:34:59.516 A:middle
+I don't have a leak here.
+
+00:34:59.516 --> 00:35:00.466 A:middle
+I already know from looking at
+

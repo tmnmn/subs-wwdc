@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.366 --> 00:26:00.396 A:middle
+Again, I have to find the model
+
+00:26:00.546 --> 00:26:03.366 A:middle
+in my bundles resources, create
+
+00:26:03.366 --> 00:26:05.536 A:middle
+an NL model for it, and then
+
+00:26:05.536 --> 00:26:07.586 A:middle
+create an NLTagger, and this
+
+00:26:07.736 --> 00:26:09.826 A:middle
+NLTagger I'm specifying two
+
+00:26:09.826 --> 00:26:10.376 A:middle
+schemes.
+
+00:26:10.416 --> 00:26:11.986 A:middle
+The first is the built-in name
+
+00:26:11.986 --> 00:26:14.876 A:middle
+type scheme to do name identity
+
+00:26:14.876 --> 00:26:16.426 A:middle
+recognition, and the second one
+
+00:26:16.426 --> 00:26:18.176 A:middle
+is my custom product tag scheme,
+
+00:26:18.516 --> 00:26:19.486 A:middle
+and they'll both function in
+
+00:26:19.486 --> 00:26:20.576 A:middle
+exactly the same way.
+
+00:26:21.546 --> 00:26:23.006 A:middle
+And then I just have to tell
+
+00:26:23.096 --> 00:26:24.766 A:middle
+that tagger to use my custom
+
+00:26:24.766 --> 00:26:26.866 A:middle
+model for my custom scheme.
+
+00:26:27.716 --> 00:26:29.176 A:middle
+Now if I supported multiple
+
+00:26:29.176 --> 00:26:30.286 A:middle
+languages, I might have more
+
+00:26:30.286 --> 00:26:31.956 A:middle
+than one model in here for this
+
+00:26:31.956 --> 00:26:32.216 A:middle
+scheme.
+
+00:26:32.806 --> 00:26:38.426 A:middle
+And then what I'm going to do is
+
+00:26:38.426 --> 00:26:40.306 A:middle
+highlight text in this article
+
+00:26:40.716 --> 00:26:42.466 A:middle
+that is located, determined to
+
+00:26:42.466 --> 00:26:43.896 A:middle
+be a name of one sort or
+
+00:26:43.896 --> 00:26:44.266 A:middle
+another.
+
+00:26:44.566 --> 00:26:46.586 A:middle
+So I'm going to get a mutable
+
+00:26:46.586 --> 00:26:47.716 A:middle
+attributed string, and I'm going
+
+00:26:47.716 --> 00:26:49.026 A:middle
+to add some attributes to it.
+
+00:26:50.106 --> 00:26:51.996 A:middle
+So I'll take this string of that
+
+00:26:52.206 --> 00:26:53.246 A:middle
+mutable attributed string,
+
+00:26:53.246 --> 00:26:56.196 A:middle
+attach that to my tagger, and
+
+00:26:56.196 --> 00:26:57.496 A:middle
+then I'm going to do a couple of
+
+00:26:57.496 --> 00:26:59.216 A:middle
+enumerations over tags.
+
+00:26:59.676 --> 00:27:01.916 A:middle
+The first one uses the built-in
+

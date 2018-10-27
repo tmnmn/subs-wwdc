@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.976 --> 00:46:01.566 A:middle
+opacity and some line width to
+
+00:46:01.566 --> 00:46:02.756 A:middle
+make sure that the route stands
+
+00:46:02.756 --> 00:46:03.036 A:middle
+out.
+
+00:46:03.436 --> 00:46:05.026 A:middle
+The default color is blue, which
+
+00:46:05.026 --> 00:46:06.736 A:middle
+is fine for the moment, so
+
+00:46:06.736 --> 00:46:07.816 A:middle
+that's what we will use.
+
+00:46:08.556 --> 00:46:10.636 A:middle
+And just like we did a function
+
+00:46:10.636 --> 00:46:12.546 A:middle
+that created annotations on
+
+00:46:12.546 --> 00:46:14.346 A:middle
+demand for citing objects, here
+
+00:46:14.346 --> 00:46:15.936 A:middle
+we'll create overlays on demand
+
+00:46:15.936 --> 00:46:16.546 A:middle
+for routes.
+
+00:46:17.216 --> 00:46:19.126 A:middle
+So, a route that is returned by
+
+00:46:19.126 --> 00:46:22.066 A:middle
+the MapKit JS Direction Service,
+
+00:46:22.546 --> 00:46:24.526 A:middle
+contains a lot of information
+
+00:46:24.526 --> 00:46:27.596 A:middle
+including a path which is a list
+
+00:46:27.596 --> 00:46:29.616 A:middle
+of steps that you can take to go
+
+00:46:29.616 --> 00:46:30.416 A:middle
+from A to B.
+
+00:46:31.016 --> 00:46:32.966 A:middle
+And each list of steps, itself
+
+00:46:32.966 --> 00:46:34.436 A:middle
+contains a list of points.
+
+00:46:35.406 --> 00:46:37.316 A:middle
+And if you remember to create a
+
+00:46:37.316 --> 00:46:38.736 A:middle
+polyline overlay, I want a list
+
+00:46:38.736 --> 00:46:39.156 A:middle
+of points.
+
+00:46:39.516 --> 00:46:40.716 A:middle
+So, now that I have a list of -
+
+00:46:40.716 --> 00:46:42.356 A:middle
+list of points, I will reduce it
+
+00:46:42.356 --> 00:46:44.356 A:middle
+to a single list so that I will
+
+00:46:44.356 --> 00:46:46.546 A:middle
+put all of - the path steps one
+
+00:46:46.546 --> 00:46:47.216 A:middle
+after the other.
+
+00:46:48.046 --> 00:46:49.386 A:middle
+This is the list of points that
+
+00:46:49.386 --> 00:46:51.056 A:middle
+I want to create my polyline
+
+00:46:51.056 --> 00:46:51.546 A:middle
+overlay.
+
+00:46:51.846 --> 00:46:53.416 A:middle
+This is the style that I just
+
+00:46:53.416 --> 00:46:55.616 A:middle
+defined above, that I want my
+
+00:46:55.616 --> 00:46:56.926 A:middle
+overlay to show up as.
+
+00:46:57.616 --> 00:47:00.036 A:middle
+And later, I will let the user
+

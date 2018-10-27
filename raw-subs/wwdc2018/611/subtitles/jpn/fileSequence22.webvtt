@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.752 --> 00:22:02.956 align:start position:32% line:-2
+ヘッドセットを動かす
+プライマリGPUです
+
+00:22:03.357 --> 00:22:09.429 align:start position:21% line:-2
+すでにMacに入っているGPUは
+補助として使います
+
+00:22:10.397 --> 00:22:15.702 align:start position:27% line:-2
+SharedEventで
+両GPUの処理を同期します
+
+00:22:19.106 --> 00:22:21.542 align:start position:25% line:-1
+Eventの初期値は０なので
+
+00:22:21.642 --> 00:22:25.812 align:start position:27% line:-2
+同期カウンタは
+１から始めることが重要です
+
+00:22:26.113 --> 00:22:30.050 align:start position:30% line:-2
+なぜなら 初期化された
+Eventを待つ時
+
+00:22:30.150 --> 00:22:36.256 align:start position:25% line:-2
+カウンタが０だと戻ってしまい
+同期されないからです
+
+00:22:37.758 --> 00:22:40.494 align:start position:25% line:-1
+補助GPUのエンコード処理は
+
+00:22:40.594 --> 00:22:44.198 align:start position:30% line:-2
+レンダリングスレッドで
+すぐ開始されます
+
+00:22:44.431 --> 00:22:50.370 align:start position:29% line:-2
+補助GPU上で発生する
+独立処理のエンコードです
+
+00:22:50.470 --> 00:22:52.506 align:start position:32% line:-1
+この処理が完了すると
+
+00:22:53.106 --> 00:22:56.477 align:start position:25% line:-1
+ローカルメモリに保存されます
+
+00:22:56.777 --> 00:23:00.948 align:start position:27% line:-2
+そのため 続けて
+短い操作をエンコードします
+

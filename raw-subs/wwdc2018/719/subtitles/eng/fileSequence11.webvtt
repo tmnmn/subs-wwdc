@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.276 --> 00:11:02.706 A:middle
+So, again, we want to write a 2
+
+00:11:02.706 --> 00:11:04.196 A:middle
+by 2 group of pixels, and from
+
+00:11:04.196 --> 00:11:06.066 A:middle
+that we need to read from a 4 by
+
+00:11:06.066 --> 00:11:07.186 A:middle
+4 group of pixels.
+
+00:11:07.826 --> 00:11:09.086 A:middle
+So, the first thing we're going
+
+00:11:09.086 --> 00:11:10.406 A:middle
+to do is specify that we want a
+
+00:11:10.406 --> 00:11:11.346 A:middle
+group destination.
+
+00:11:11.346 --> 00:11:13.306 A:middle
+If you look at the function
+
+00:11:13.306 --> 00:11:14.866 A:middle
+declaration, it now has a group
+
+00:11:14.916 --> 00:11:17.286 A:middle
+destination, H datatype.
+
+00:11:18.056 --> 00:11:19.106 A:middle
+Then, we're going to get the
+
+00:11:19.106 --> 00:11:20.246 A:middle
+destination coordinate like we
+
+00:11:20.246 --> 00:11:21.606 A:middle
+had before, and that will point
+
+00:11:21.606 --> 00:11:22.716 A:middle
+to the center of a pixel.
+
+00:11:23.046 --> 00:11:24.676 A:middle
+However, that coordinate
+
+00:11:24.676 --> 00:11:26.246 A:middle
+actually represents the
+
+00:11:26.676 --> 00:11:29.086 A:middle
+coordinate of a group of 2 by 2
+
+00:11:29.086 --> 00:11:29.596 A:middle
+pixels.
+
+00:11:30.766 --> 00:11:32.006 A:middle
+The next thing we're going to do
+
+00:11:32.306 --> 00:11:34.636 A:middle
+in order to fill in this 2 by 2
+
+00:11:34.636 --> 00:11:36.346 A:middle
+group of pixels is do a bunch of
+
+00:11:36.346 --> 00:11:37.196 A:middle
+reads from the image.
+
+00:11:37.726 --> 00:11:40.396 A:middle
+So, the first gather read is
+
+00:11:40.396 --> 00:11:41.976 A:middle
+going to read from a 2 by 2
+
+00:11:41.976 --> 00:11:43.816 A:middle
+group of pixels -- in this case,
+
+00:11:43.816 --> 00:11:45.306 A:middle
+the lower left-hand corner of
+
+00:11:45.306 --> 00:11:46.456 A:middle
+our 16.
+
+00:11:46.456 --> 00:11:48.176 A:middle
+And it's going to return the
+
+00:11:48.176 --> 00:11:51.276 A:middle
+value of the red channel in a
+
+00:11:51.766 --> 00:11:53.596 A:middle
+half-four array.
+
+00:11:54.856 --> 00:11:56.596 A:middle
+The four parameters will be
+
+00:11:56.596 --> 00:11:57.966 A:middle
+stored in this order, which is
+
+00:11:57.966 --> 00:12:01.126 A:middle
+X, Y, Z, W going in a
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.496 --> 00:27:00.996 A:middle
+OpenGL uses a bottom-left origin
+
+00:27:01.306 --> 00:27:02.826 A:middle
+while Metal uses a top-left
+
+00:27:02.826 --> 00:27:03.196 A:middle
+origin.
+
+00:27:03.196 --> 00:27:04.426 A:middle
+So make sure you're aware of the
+
+00:27:04.426 --> 00:27:05.736 A:middle
+difference when loading your
+
+00:27:05.736 --> 00:27:06.266 A:middle
+textures.
+
+00:27:06.686 --> 00:27:09.696 A:middle
+Desktop OpenGL also performs
+
+00:27:09.796 --> 00:27:10.866 A:middle
+conversions when the data
+
+00:27:10.916 --> 00:27:13.376 A:middle
+supplied is in a different
+
+00:27:13.376 --> 00:27:15.016 A:middle
+format than the internal format.
+
+00:27:16.456 --> 00:27:18.106 A:middle
+However Metal similar to OpenGL
+
+00:27:18.206 --> 00:27:20.346 A:middle
+ES does not, so you'll need to
+
+00:27:20.346 --> 00:27:21.406 A:middle
+make sure your assets are
+
+00:27:21.436 --> 00:27:23.436 A:middle
+already in the proper format or
+
+00:27:23.696 --> 00:27:25.146 A:middle
+implement paths to perform
+
+00:27:25.176 --> 00:27:25.696 A:middle
+conversions.
+
+00:27:29.066 --> 00:27:32.316 A:middle
+Let's move on to buffers.
+
+00:27:32.456 --> 00:27:34.266 A:middle
+Metal uses buffers for all
+
+00:27:34.266 --> 00:27:34.976 A:middle
+unstructured data.
+
+00:27:41.456 --> 00:27:42.406 A:middle
+They're really similar to
+
+00:27:42.406 --> 00:27:44.716 A:middle
+OpenGL's vertex, element and
+
+00:27:44.816 --> 00:27:45.646 A:middle
+uniform buffers.
+
+00:27:45.926 --> 00:27:47.076 A:middle
+So if you're already using these
+
+00:27:47.076 --> 00:27:48.456 A:middle
+buffers in OpenGL you'll have an
+
+00:27:48.506 --> 00:27:50.126 A:middle
+easier time with your port.
+
+00:27:51.506 --> 00:27:52.686 A:middle
+Creating a buffer is pretty
+
+00:27:52.686 --> 00:27:54.456 A:middle
+simple with a device you call
+
+00:27:54.516 --> 00:27:55.986 A:middle
+newBufferWithLength specifying
+
+00:27:55.986 --> 00:27:57.146 A:middle
+the size of the buffer you want.
+
+00:27:57.826 --> 00:27:59.626 A:middle
+You also specify a storage mode.
+

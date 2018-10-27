@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.866 --> 00:34:00.356 A:middle
+provide banner notifications
+
+00:34:00.446 --> 00:34:02.276 A:middle
+that will display when the user
+
+00:34:02.276 --> 00:34:03.166 A:middle
+is away from your app.
+
+00:34:03.986 --> 00:34:06.036 A:middle
+And this will work for maneuver
+
+00:34:06.036 --> 00:34:07.966 A:middle
+updates, as well as navigation
+
+00:34:07.966 --> 00:34:08.426 A:middle
+alerts.
+
+00:34:09.656 --> 00:34:11.156 A:middle
+On your map template delegate
+
+00:34:11.156 --> 00:34:12.706 A:middle
+there are three methods you'll
+
+00:34:12.706 --> 00:34:13.366 A:middle
+want to implement.
+
+00:34:14.085 --> 00:34:15.386 A:middle
+The first is mapTemplate,
+
+00:34:15.386 --> 00:34:16.585 A:middle
+ShouldShowNotificationFor
+
+00:34:16.585 --> 00:34:16.996 A:middle
+maneuver.
+
+00:34:17.565 --> 00:34:19.696 A:middle
+When you set a new maneuver and
+
+00:34:19.696 --> 00:34:21.565 A:middle
+your app is backgrounded this
+
+00:34:21.565 --> 00:34:22.456 A:middle
+method will be called.
+
+00:34:22.686 --> 00:34:24.295 A:middle
+And if you return true, the
+
+00:34:24.295 --> 00:34:26.266 A:middle
+system will take that maneuver
+
+00:34:26.266 --> 00:34:27.576 A:middle
+and translate it into a banner
+
+00:34:27.576 --> 00:34:28.176 A:middle
+notification.
+
+00:34:29.366 --> 00:34:30.636 A:middle
+If you're already presenting a
+
+00:34:30.636 --> 00:34:31.666 A:middle
+banner notification for a
+
+00:34:31.666 --> 00:34:32.585 A:middle
+maneuver, and simply are
+
+00:34:32.585 --> 00:34:33.835 A:middle
+updating the travel estimates,
+
+00:34:34.306 --> 00:34:34.985 A:middle
+mapTemplate
+
+00:34:34.985 --> 00:34:36.556 A:middle
+shouldUpdateNotificationFor
+
+00:34:36.556 --> 00:34:38.106 A:middle
+maneuver with travelEstimates
+
+00:34:38.106 --> 00:34:38.636 A:middle
+will be called.
+
+00:34:38.896 --> 00:34:40.025 A:middle
+Allowing you to update the
+
+00:34:40.025 --> 00:34:41.206 A:middle
+content that appears in that
+
+00:34:41.206 --> 00:34:41.576 A:middle
+banner.
+
+00:34:41.996 --> 00:34:43.085 A:middle
+So, instead of rolling a new
+
+00:34:43.085 --> 00:34:45.016 A:middle
+notification, you can simply
+
+00:34:45.016 --> 00:34:46.206 A:middle
+update the contents that are
+
+00:34:46.206 --> 00:34:46.746 A:middle
+already there.
+
+00:34:47.545 --> 00:34:49.946 A:middle
+And for navigation alerts, you
+
+00:34:49.946 --> 00:34:51.025 A:middle
+will have an opportunity to
+
+00:34:51.025 --> 00:34:52.485 A:middle
+display those, as well, using
+
+00:34:52.485 --> 00:34:53.156 A:middle
+mapTemplate
+
+00:34:53.156 --> 00:34:54.696 A:middle
+shouldShowNotificationFor
+
+00:34:54.696 --> 00:34:55.505 A:middle
+navigationAlert.
+
+00:34:56.466 --> 00:34:57.846 A:middle
+With that, I'd like to invite
+
+00:34:57.846 --> 00:34:59.086 A:middle
+Jonathan up one more time to
+
+00:34:59.086 --> 00:35:00.566 A:middle
+give you a demo of how we've
+

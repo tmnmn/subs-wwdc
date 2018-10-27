@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:56.376 --> 00:16:00.056 A:middle
+that's written in C++.
+
+00:16:00.246 --> 00:16:02.806 A:middle
+Over time, our application grew.
+
+00:16:03.016 --> 00:16:06.266 A:middle
+And we start to reorganize it so
+
+00:16:06.266 --> 00:16:07.616 A:middle
+we can find things easier.
+
+00:16:08.166 --> 00:16:10.486 A:middle
+For example, we moved all the
+
+00:16:10.616 --> 00:16:12.036 A:middle
+cat-related files into a
+
+00:16:12.036 --> 00:16:12.606 A:middle
+subfolder.
+
+00:16:13.216 --> 00:16:18.376 A:middle
+We didn't have to change any of
+
+00:16:18.376 --> 00:16:19.876 A:middle
+our implementation files.
+
+00:16:20.676 --> 00:16:22.246 A:middle
+And it still works.
+
+00:16:23.046 --> 00:16:26.866 A:middle
+So it makes you wonder how does
+
+00:16:26.866 --> 00:16:29.206 A:middle
+Clang find your header files?
+
+00:16:29.206 --> 00:16:33.856 A:middle
+Let's look at a simple example.
+
+00:16:34.696 --> 00:16:35.356 A:middle
+This is one of our
+
+00:16:35.356 --> 00:16:38.146 A:middle
+implementation files we use in
+
+00:16:38.146 --> 00:16:40.236 A:middle
+our code and we include our
+
+00:16:40.236 --> 00:16:43.406 A:middle
+header file called cat.h. How
+
+00:16:43.406 --> 00:16:45.836 A:middle
+can we figure out what Clang
+
+00:16:45.836 --> 00:16:46.066 A:middle
+does?
+
+00:16:46.946 --> 00:16:48.466 A:middle
+Once thing you could do is you
+
+00:16:48.466 --> 00:16:51.076 A:middle
+can go into the build logs, look
+
+00:16:51.436 --> 00:16:53.896 A:middle
+what the Xcode build system did
+
+00:16:54.486 --> 00:16:55.996 A:middle
+to compile this particular file.
+
+00:16:55.996 --> 00:16:57.276 A:middle
+And copy and paste that
+
+00:16:57.276 --> 00:16:57.956 A:middle
+invocation.
+
+00:16:59.196 --> 00:17:01.196 A:middle
+You drop it into a terminal and
+

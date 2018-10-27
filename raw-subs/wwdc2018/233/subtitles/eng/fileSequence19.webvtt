@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.136 --> 00:19:00.616 A:middle
+variable changes, we're
+
+00:19:00.616 --> 00:19:02.916 A:middle
+triggering setNeedsLayout, using
+
+00:19:02.916 --> 00:19:03.876 A:middle
+one of Swift's property
+
+00:19:03.876 --> 00:19:04.466 A:middle
+observers.
+
+00:19:06.306 --> 00:19:07.696 A:middle
+Next, inside of our
+
+00:19:07.766 --> 00:19:09.636 A:middle
+panGestureRecognizer callback
+
+00:19:09.636 --> 00:19:11.226 A:middle
+function, we're just going to
+
+00:19:11.226 --> 00:19:12.936 A:middle
+grab the current translation and
+
+00:19:12.936 --> 00:19:15.096 A:middle
+view out of the gesture, and
+
+00:19:15.186 --> 00:19:17.356 A:middle
+associate this gesture to one of
+
+00:19:17.356 --> 00:19:18.016 A:middle
+our cards.
+
+00:19:18.916 --> 00:19:21.776 A:middle
+We'll then increment the offset
+
+00:19:21.916 --> 00:19:23.336 A:middle
+for this card in this
+
+00:19:23.336 --> 00:19:23.916 A:middle
+dictionary.
+
+00:19:25.276 --> 00:19:27.876 A:middle
+And finally, in layoutSubviews,
+
+00:19:28.546 --> 00:19:30.086 A:middle
+we'll make sure to update the
+
+00:19:30.086 --> 00:19:32.676 A:middle
+position of our card views based
+
+00:19:32.676 --> 00:19:34.336 A:middle
+on their offsets from this
+
+00:19:34.336 --> 00:19:34.866 A:middle
+dictionary.
+
+00:19:36.076 --> 00:19:37.926 A:middle
+Notice again how we're not
+
+00:19:37.926 --> 00:19:39.866 A:middle
+really doing anything special,
+
+00:19:40.266 --> 00:19:41.546 A:middle
+other than -- besides the
+
+00:19:41.546 --> 00:19:42.806 A:middle
+traditional layout-driven UI
+
+00:19:42.806 --> 00:19:43.356 A:middle
+case.
+
+00:19:44.196 --> 00:19:45.816 A:middle
+We just have this piece of state
+
+00:19:46.016 --> 00:19:47.296 A:middle
+that happens to be driven by a
+
+00:19:47.296 --> 00:19:49.266 A:middle
+gesture, and we're responding to
+
+00:19:49.266 --> 00:19:50.476 A:middle
+it in layoutSubviews.
+
+00:19:51.616 --> 00:19:53.406 A:middle
+In fact, if you follow this
+
+00:19:53.406 --> 00:19:54.886 A:middle
+pattern throughout your app,
+
+00:19:55.476 --> 00:19:56.496 A:middle
+you'll find that it makes a lot
+
+00:19:56.496 --> 00:19:57.646 A:middle
+of these types of interactions
+
+00:19:57.786 --> 00:19:59.266 A:middle
+much easier to adopt.
+

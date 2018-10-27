@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.516 --> 00:07:01.046 A:middle
+This context is going to
+
+00:07:01.586 --> 00:07:02.576 A:middle
+describe the type of work we're
+
+00:07:02.576 --> 00:07:03.746 A:middle
+going to do as well as give us
+
+00:07:03.746 --> 00:07:04.896 A:middle
+space to perform this work.
+
+00:07:06.396 --> 00:07:08.276 A:middle
+In this case, we're going to use
+
+00:07:08.276 --> 00:07:09.986 A:middle
+a type 2 DCT.
+
+00:07:10.596 --> 00:07:11.476 A:middle
+We're then going to pass this
+
+00:07:11.476 --> 00:07:13.506 A:middle
+context to an execute function.
+
+00:07:16.016 --> 00:07:18.026 A:middle
+This will actually perform the
+
+00:07:18.026 --> 00:07:18.316 A:middle
+work.
+
+00:07:21.466 --> 00:07:22.756 A:middle
+Once we've performed the
+
+00:07:22.756 --> 00:07:23.996 A:middle
+analysis, we want to remove the
+
+00:07:23.996 --> 00:07:24.356 A:middle
+noise.
+
+00:07:24.746 --> 00:07:25.616 A:middle
+This right here is where the
+
+00:07:25.616 --> 00:07:26.296 A:middle
+magic happens.
+
+00:07:27.326 --> 00:07:28.496 A:middle
+This routine is going to
+
+00:07:28.496 --> 00:07:30.396 A:middle
+identify any frequency component
+
+00:07:30.396 --> 00:07:32.516 A:middle
+less than that threshold and
+
+00:07:32.586 --> 00:07:33.256 A:middle
+make it zero.
+
+00:07:33.616 --> 00:07:36.486 A:middle
+It's going to zero it out.
+
+00:07:36.756 --> 00:07:37.736 A:middle
+After we've done that, we want
+
+00:07:37.736 --> 00:07:38.916 A:middle
+to reconstruct the audio signal.
+
+00:07:43.406 --> 00:07:44.156 A:middle
+Again, we're going to need to
+
+00:07:44.156 --> 00:07:45.336 A:middle
+use CreateSetup to create
+
+00:07:45.336 --> 00:07:45.976 A:middle
+context.
+
+00:07:47.456 --> 00:07:49.996 A:middle
+In this case, we're going to use
+
+00:07:49.996 --> 00:07:52.736 A:middle
+a type 3 DCT to reconstruct the
+
+00:07:52.736 --> 00:07:52.976 A:middle
+signal.
+
+00:07:56.436 --> 00:07:58.926 A:middle
+We're then going to pass this
+
+00:07:58.926 --> 00:08:00.676 A:middle
+context DCT execute, and this
+

@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.060 --> 00:11:04.832 align:start position:23% line:-2
+実は コマンドラインツールでも
+memgraphを使えます
+
+00:11:06.300 --> 00:11:08.802 align:start position:18% line:-2
+まずXcodeからmemgraphを
+エクスポートします
+
+00:11:08.902 --> 00:11:10.103 align:start position:34% line:-1
+とてもシンプルです
+
+00:11:10.938 --> 00:11:15.075 align:start position:27% line:-2
+エクスポートボタンを押して
+保存するだけです
+
+00:11:15.309 --> 00:11:16.076 align:start position:45% line:-1
+そして
+
+00:11:16.877 --> 00:11:21.448 align:start position:29% line:-2
+そのmemgraphを
+コマンドラインに移します
+
+00:11:22.182 --> 00:11:26.220 align:start position:18% line:-2
+私がXcode 10でAppを実行し
+例外を受け取ったとして
+
+00:11:26.320 --> 00:11:29.523 align:start position:21% line:-1
+memgraphを使い調査します
+
+00:11:29.623 --> 00:11:30.891 align:start position:38% line:-1
+何をするのか？
+
+00:11:30.991 --> 00:11:32.960 align:start position:32% line:-1
+ターミナルへ行きます
+
+00:11:34.128 --> 00:11:36.463 align:start position:27% line:-1
+使うツールはvmmapです
+
+00:11:36.563 --> 00:11:39.266 align:start position:23% line:-2
+プロセスに割り当てられた
+仮想メモリ領域を表示することで
+
+00:11:39.366 --> 00:11:42.503 align:start position:27% line:-2
+Appのメモリ消費の分析が
+可能になります
+
+00:11:43.871 --> 00:11:46.206 align:start position:21% line:-2
+まずはsummary flagを
+お薦めします
+
+00:11:46.673 --> 00:11:50.978 align:start position:30% line:-2
+領域のメモリのサイズを
+詳細に表示し
+
+00:11:52.713 --> 00:11:54.481 align:start position:32% line:-1
+ダーティな領域も表示
+
+00:11:55.449 --> 00:11:58.151 align:start position:25% line:-1
+圧縮されたメモリ量も示します
+
+00:11:58.252 --> 00:12:01.321 align:start position:32% line:-2
+ダーティやスワップは
+とても重要です
+

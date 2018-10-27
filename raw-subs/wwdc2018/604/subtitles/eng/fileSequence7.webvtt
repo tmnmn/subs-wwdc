@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.846 --> 00:07:01.966 A:middle
+things, it tracks API state, it
+
+00:07:02.166 --> 00:07:03.766 A:middle
+manages OpenGL objects and other
+
+00:07:03.766 --> 00:07:05.246 A:middle
+memory, and translates and
+
+00:07:05.246 --> 00:07:06.506 A:middle
+submits GPU commands.
+
+00:07:07.366 --> 00:07:09.066 A:middle
+Metal splits all of these jobs
+
+00:07:09.066 --> 00:07:10.626 A:middle
+of an OpenGL context into a
+
+00:07:10.626 --> 00:07:12.956 A:middle
+number of smaller objects.
+
+00:07:14.056 --> 00:07:16.336 A:middle
+The first object that creates is
+
+00:07:16.336 --> 00:07:18.616 A:middle
+a Metal device which is an
+
+00:07:18.716 --> 00:07:20.626 A:middle
+abstract representation of a
+
+00:07:20.776 --> 00:07:21.686 A:middle
+physical GPU.
+
+00:07:22.256 --> 00:07:26.286 A:middle
+The device creates objects such
+
+00:07:26.286 --> 00:07:27.646 A:middle
+as textures, buffers and
+
+00:07:27.646 --> 00:07:29.216 A:middle
+pipeline objects which contain
+
+00:07:29.216 --> 00:07:29.906 A:middle
+shaders.
+
+00:07:31.026 --> 00:07:32.886 A:middle
+It also creates a key object
+
+00:07:33.136 --> 00:07:34.636 A:middle
+called a Metal command queue.
+
+00:07:35.196 --> 00:07:37.816 A:middle
+The command queue really only
+
+00:07:37.816 --> 00:07:39.796 A:middle
+has one job, to create a
+
+00:07:39.796 --> 00:07:41.176 A:middle
+sequence of command buffers.
+
+00:07:41.956 --> 00:07:43.506 A:middle
+Here we've created one command
+
+00:07:43.506 --> 00:07:44.856 A:middle
+buffer and a command buffer is
+
+00:07:44.856 --> 00:07:46.706 A:middle
+simply a list of GPU commands
+
+00:07:46.956 --> 00:07:48.956 A:middle
+that your app will fill and send
+
+00:07:48.956 --> 00:07:50.146 A:middle
+to the GPU for execution.
+
+00:07:51.166 --> 00:07:52.836 A:middle
+Typically your app will create a
+
+00:07:52.836 --> 00:07:54.926 A:middle
+single command buffer per frame,
+
+00:07:55.016 --> 00:07:55.866 A:middle
+however, there are some
+
+00:07:55.866 --> 00:07:57.566 A:middle
+situations where it makes sense
+
+00:07:57.696 --> 00:08:00.166 A:middle
+to create two or three in a
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.576 --> 00:23:00.646 A:middle
+we mutated the dictionary.
+
+00:23:01.466 --> 00:23:02.446 A:middle
+It's also worth pointing out
+
+00:23:02.736 --> 00:23:03.726 A:middle
+that this code can crash.
+
+00:23:05.146 --> 00:23:06.186 A:middle
+So how do we go about fixing
+
+00:23:06.186 --> 00:23:06.516 A:middle
+this?
+
+00:23:07.606 --> 00:23:08.926 A:middle
+Well, it turns out it's the same
+
+00:23:08.926 --> 00:23:10.266 A:middle
+exact fix that we used with the
+
+00:23:10.266 --> 00:23:10.496 A:middle
+array.
+
+00:23:11.276 --> 00:23:12.286 A:middle
+We just simply recompute the
+
+00:23:12.286 --> 00:23:13.256 A:middle
+index after we mutate.
+
+00:23:13.696 --> 00:23:15.386 A:middle
+Well, one thing to keep in mind
+
+00:23:15.626 --> 00:23:16.486 A:middle
+that when you're recomputing
+
+00:23:16.486 --> 00:23:17.896 A:middle
+indices this is something that
+
+00:23:17.896 --> 00:23:18.916 A:middle
+can sometimes be expensive.
+
+00:23:18.916 --> 00:23:20.896 A:middle
+Some index search methods take
+
+00:23:20.976 --> 00:23:21.676 A:middle
+linear time.
+
+00:23:22.226 --> 00:23:23.496 A:middle
+And so you want to take care to
+
+00:23:23.496 --> 00:23:24.766 A:middle
+only find the indices that you
+
+00:23:25.206 --> 00:23:25.306 A:middle
+need.
+
+00:23:26.596 --> 00:23:27.936 A:middle
+So here's my advice if you want
+
+00:23:27.936 --> 00:23:28.866 A:middle
+to avoid finding yourself in
+
+00:23:28.866 --> 00:23:30.046 A:middle
+these kinds of situations.
+
+00:23:30.456 --> 00:23:32.196 A:middle
+Remember that mutation almost
+
+00:23:32.196 --> 00:23:33.546 A:middle
+always invalidates your indices.
+
+00:23:33.986 --> 00:23:35.586 A:middle
+You might get away with it
+
+00:23:35.586 --> 00:23:36.986 A:middle
+sometimes, but it's really best
+
+00:23:36.986 --> 00:23:38.066 A:middle
+to just treat this as a hard
+
+00:23:38.066 --> 00:23:38.346 A:middle
+rule.
+
+00:23:38.636 --> 00:23:39.936 A:middle
+You'll be much happier for it.
+
+00:23:40.926 --> 00:23:42.256 A:middle
+Also remember that slices hold
+
+00:23:42.256 --> 00:23:44.136 A:middle
+on to the underlying original
+
+00:23:44.276 --> 00:23:45.416 A:middle
+state of the collection even
+
+00:23:45.416 --> 00:23:46.976 A:middle
+after it was mutated, and
+
+00:23:46.976 --> 00:23:48.586 A:middle
+because of that, really think
+
+00:23:48.586 --> 00:23:50.136 A:middle
+twice about holding onto indices
+
+00:23:50.136 --> 00:23:51.786 A:middle
+or slices when the underlying
+
+00:23:51.786 --> 00:23:52.626 A:middle
+collection is mutable.
+
+00:23:53.776 --> 00:23:54.816 A:middle
+And keep in mind that index
+
+00:23:54.816 --> 00:23:56.556 A:middle
+computation can sometimes take a
+
+00:23:56.556 --> 00:23:57.756 A:middle
+nontrivial amount of time.
+
+00:23:59.246 --> 00:24:00.516 A:middle
+So take care to only calculate
+

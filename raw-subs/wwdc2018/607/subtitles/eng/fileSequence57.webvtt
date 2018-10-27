@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:56:58.676 --> 00:57:00.316 A:middle
+Looking forward to some of the
+
+00:57:00.316 --> 00:57:01.546 A:middle
+work we'd like to do in the
+
+00:57:01.546 --> 00:57:04.066 A:middle
+future with Metal, parallel
+
+00:57:04.066 --> 00:57:04.556 A:middle
+rendering.
+
+00:57:04.556 --> 00:57:06.996 A:middle
+So on macOS, we do support
+
+00:57:07.416 --> 00:57:08.626 A:middle
+creating command buffers in
+
+00:57:08.626 --> 00:57:09.216 A:middle
+parallel.
+
+00:57:09.756 --> 00:57:12.186 A:middle
+On iOS, we'd really need to
+
+00:57:12.186 --> 00:57:13.266 A:middle
+support parallel command
+
+00:57:13.266 --> 00:57:14.256 A:middle
+encoders for this to be
+
+00:57:14.256 --> 00:57:14.876 A:middle
+practical.
+
+00:57:15.176 --> 00:57:16.476 A:middle
+A lot of our drawing ends up
+
+00:57:16.476 --> 00:57:17.646 A:middle
+happening in the main forward
+
+00:57:17.646 --> 00:57:19.376 A:middle
+pass, and so it's important to
+
+00:57:20.176 --> 00:57:21.546 A:middle
+parallelize that.
+
+00:57:22.206 --> 00:57:23.436 A:middle
+I think it would be very
+
+00:57:23.436 --> 00:57:25.076 A:middle
+interesting to sort of see the
+
+00:57:25.076 --> 00:57:27.876 A:middle
+effects of parallel rendering on
+
+00:57:28.006 --> 00:57:30.786 A:middle
+a monolithic, fast core versus
+
+00:57:30.896 --> 00:57:33.156 A:middle
+what we had for parallel command
+
+00:57:33.156 --> 00:57:34.616 A:middle
+encoders on the efficient cores
+
+00:57:34.616 --> 00:57:35.626 A:middle
+on higher-end devices.
+
+00:57:35.946 --> 00:57:36.616 A:middle
+Could be some interesting
+
+00:57:36.616 --> 00:57:38.416 A:middle
+results in terms of battery
+
+00:57:38.416 --> 00:57:38.896 A:middle
+usage.
+
+00:57:40.656 --> 00:57:41.696 A:middle
+Metal heaps.
+
+00:57:41.786 --> 00:57:42.736 A:middle
+So we'd like to replace our
+
+00:57:42.736 --> 00:57:44.276 A:middle
+buffer suballocation with Metal
+
+00:57:44.276 --> 00:57:46.396 A:middle
+heaps -- first, because it'll
+
+00:57:46.396 --> 00:57:47.586 A:middle
+just simply our code, but
+
+00:57:47.586 --> 00:57:49.246 A:middle
+second, because we can also use
+
+00:57:49.246 --> 00:57:50.056 A:middle
+it for textures.
+
+00:57:50.366 --> 00:57:51.576 A:middle
+We still see an occasional hitch
+
+00:57:51.576 --> 00:57:52.746 A:middle
+due to texture streaming because
+
+00:57:52.746 --> 00:57:54.546 A:middle
+we're obviously creating and
+
+00:57:54.546 --> 00:57:55.736 A:middle
+destroying textures on the fly
+
+00:57:55.736 --> 00:57:57.046 A:middle
+as we bring textures in and out
+
+00:57:57.046 --> 00:57:57.586 A:middle
+of memory.
+
+00:57:58.146 --> 00:57:59.946 A:middle
+Being able to use heaps for this
+
+00:57:59.946 --> 00:58:01.516 A:middle
+will get rid of those hitches.
+

@@ -1,0 +1,73 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.934 --> 00:15:02.269 align:start position:32% line:-1
+メインスレッドでは―
+
+00:15:02.369 --> 00:15:04.805 align:start position:14% line:-2
+すべてのバックトレースが
+main functionから始まります
+
+00:15:04.905 --> 00:15:06.640 align:start position:14% line:-1
+application mainを呼んで
+
+00:15:06.740 --> 00:15:09.776 align:start position:21% line:-2
+枝分かれして
+すべてのコードに広がっていきます
+
+00:15:10.110 --> 00:15:12.646 align:start position:29% line:-2
+これらのバックトレースを
+折り畳み―
+
+00:15:12.746 --> 00:15:15.182 align:start position:25% line:-1
+プレフィックス木を展開します
+
+00:15:15.282 --> 00:15:17.384 align:start position:25% line:-1
+メインから広がっていくのです
+
+00:15:17.484 --> 00:15:20.954 align:start position:29% line:-2
+ミリ秒ごとのカウンターを
+最上位で集めるので
+
+00:15:21.054 --> 00:15:26.360 align:start position:23% line:-2
+ソースコード各領域の所要時間を
+階層的に見られます
+
+00:15:26.660 --> 00:15:30.831 align:start position:27% line:-2
+これにより 冗長で不必要な
+オペレーションを見つけ―
+
+00:15:30.931 --> 00:15:32.199 align:start position:36% line:-1
+高速化を図れます
+
+00:15:32.299 --> 00:15:36.270 align:start position:29% line:-2
+アプリケーションの性能を
+向上させる基本手段です
+
+00:15:36.937 --> 00:15:38.572 align:start position:36% line:-1
+ご想像のとおり―
+
+00:15:39.106 --> 00:15:41.742 align:start position:23% line:-1
+毎秒数千回のバックトレースです
+
+00:15:41.842 --> 00:15:45.579 align:start position:27% line:-2
+Instrumentsには
+膨大なデータがあります
+
+00:15:46.046 --> 00:15:48.015 align:start position:36% line:-1
+最も重要なのは―
+
+00:15:48.115 --> 00:15:50.884 align:start position:27% line:-2
+データをできるだけ
+フィルタリングすることです
+
+00:15:50.984 --> 00:15:53.820 align:start position:23% line:-1
+そうすれば 道筋が見えてきます
+
+00:15:53.921 --> 00:15:56.790 align:start position:21% line:-1
+細かい点にとらわれてはいけません
+
+00:15:56.890 --> 00:16:00.427 align:start position:29% line:-2
+ここで 強力なフィルタの
+使い方をご紹介します
+

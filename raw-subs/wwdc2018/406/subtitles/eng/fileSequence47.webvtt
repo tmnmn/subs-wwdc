@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:58.586 --> 00:47:00.436 A:middle
+Both recursive constraints and
+
+00:47:00.436 --> 00:47:02.076 A:middle
+conditional conformance tend to
+
+00:47:02.076 --> 00:47:03.726 A:middle
+track the protocol hierarchy
+
+00:47:03.726 --> 00:47:04.526 A:middle
+like this.
+
+00:47:04.526 --> 00:47:05.646 A:middle
+And the features support each
+
+00:47:05.646 --> 00:47:05.976 A:middle
+other.
+
+00:47:06.236 --> 00:47:07.926 A:middle
+This is particularly important
+
+00:47:07.926 --> 00:47:09.126 A:middle
+because we want the default
+
+00:47:09.126 --> 00:47:10.876 A:middle
+associated type for subsequence,
+
+00:47:11.186 --> 00:47:13.256 A:middle
+the slice of Self, to work at
+
+00:47:13.256 --> 00:47:14.666 A:middle
+every level of the collection
+
+00:47:14.666 --> 00:47:15.176 A:middle
+hierarchy.
+
+00:47:15.676 --> 00:47:17.356 A:middle
+Slice is always a collection.
+
+00:47:18.116 --> 00:47:19.106 A:middle
+When we go ahead and create the
+
+00:47:19.106 --> 00:47:20.386 A:middle
+bidirectionalCollection
+
+00:47:20.386 --> 00:47:20.966 A:middle
+protocol.
+
+00:47:21.336 --> 00:47:22.676 A:middle
+It now requires that the
+
+00:47:22.676 --> 00:47:25.016 A:middle
+subsequence type also conform to
+
+00:47:25.016 --> 00:47:26.136 A:middle
+bidirectionalCollection.
+
+00:47:26.996 --> 00:47:28.476 A:middle
+The slice adapter's conditional
+
+00:47:28.476 --> 00:47:29.026 A:middle
+conformance to
+
+00:47:29.026 --> 00:47:30.746 A:middle
+bidirectionalCollection which
+
+00:47:30.806 --> 00:47:32.976 A:middle
+kicks in anytime itself is known
+
+00:47:32.976 --> 00:47:34.296 A:middle
+to be a bidirectionalCollection.
+
+00:47:34.716 --> 00:47:36.356 A:middle
+Satisfies that requirement.
+
+00:47:36.986 --> 00:47:38.696 A:middle
+RandomAccessCollection works the
+
+00:47:38.696 --> 00:47:39.296 A:middle
+same way.
+
+00:47:39.796 --> 00:47:40.956 A:middle
+Subsequence gains a
+
+00:47:40.956 --> 00:47:42.116 A:middle
+randomAccessCollection
+
+00:47:42.116 --> 00:47:42.876 A:middle
+requirement.
+
+00:47:43.236 --> 00:47:44.446 A:middle
+And slices conditional
+
+00:47:44.446 --> 00:47:45.036 A:middle
+conformance to
+
+00:47:45.036 --> 00:47:47.146 A:middle
+randomAccessCollection satisfies
+
+00:47:47.146 --> 00:47:47.866 A:middle
+that requirement.
+
+00:47:48.246 --> 00:47:49.916 A:middle
+Now itself is known to be a
+
+00:47:49.916 --> 00:47:51.186 A:middle
+randomAccessCollection.
+
+00:47:51.756 --> 00:47:53.236 A:middle
+This behavior where an
+
+00:47:53.236 --> 00:47:54.836 A:middle
+associated type default works
+
+00:47:54.946 --> 00:47:56.376 A:middle
+for every protocol within the
+
+00:47:56.376 --> 00:47:58.726 A:middle
+hierarchy is a good indicator of
+
+00:47:58.726 --> 00:47:59.906 A:middle
+a cohesive design.
+

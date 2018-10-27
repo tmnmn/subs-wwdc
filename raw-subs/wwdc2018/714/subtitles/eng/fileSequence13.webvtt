@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.676 --> 00:13:02.116 A:middle
+You've probably heard cases
+
+00:13:02.366 --> 00:13:05.666 A:middle
+where certificate authorities,
+
+00:13:06.036 --> 00:13:07.026 A:middle
+either through malice or
+
+00:13:07.026 --> 00:13:08.986 A:middle
+incompetence, issue rogue
+
+00:13:08.986 --> 00:13:10.646 A:middle
+certificates to entities that
+
+00:13:10.646 --> 00:13:11.196 A:middle
+they should not.
+
+00:13:12.556 --> 00:13:14.046 A:middle
+The solution to this is
+
+00:13:14.046 --> 00:13:15.546 A:middle
+something called certificate
+
+00:13:15.546 --> 00:13:16.766 A:middle
+transparency logs.
+
+00:13:17.556 --> 00:13:19.426 A:middle
+Every legitimate certificate
+
+00:13:19.426 --> 00:13:22.326 A:middle
+authority now issues a public
+
+00:13:22.926 --> 00:13:24.766 A:middle
+statement of every certificate
+
+00:13:24.766 --> 00:13:25.516 A:middle
+it issues.
+
+00:13:25.596 --> 00:13:27.076 A:middle
+And those are recorded in public
+
+00:13:27.076 --> 00:13:29.296 A:middle
+logs for anybody to inspect.
+
+00:13:30.236 --> 00:13:31.836 A:middle
+And this means that if a rogue
+
+00:13:32.406 --> 00:13:34.436 A:middle
+certificate authority issues a
+
+00:13:34.436 --> 00:13:36.596 A:middle
+bogus certificate, if it
+
+00:13:36.596 --> 00:13:37.786 A:middle
+publishes it, they'll
+
+00:13:37.786 --> 00:13:40.656 A:middle
+immediately get caught.
+
+00:13:40.656 --> 00:13:41.856 A:middle
+And if they don't publish it,
+
+00:13:42.186 --> 00:13:43.486 A:middle
+they'll be caught by the client.
+
+00:13:44.966 --> 00:13:46.596 A:middle
+This is the setup you're
+
+00:13:46.596 --> 00:13:47.966 A:middle
+probably familiar with.
+
+00:13:48.436 --> 00:13:50.356 A:middle
+The new entity here is the log.
+
+00:13:51.186 --> 00:13:52.736 A:middle
+When a certificate authority
+
+00:13:52.936 --> 00:13:54.786 A:middle
+issues a certificate to a
+
+00:13:54.786 --> 00:13:57.616 A:middle
+server, it also records that
+
+00:13:57.616 --> 00:13:59.896 A:middle
+with the log and the log gives
+
+00:13:59.896 --> 00:14:01.776 A:middle
+the server a signed affidavit
+

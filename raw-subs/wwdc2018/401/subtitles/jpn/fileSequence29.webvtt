@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:56.970 --> 00:29:01.875 align:start position:23% line:-2
+iOSとmacOSで利用できる
+Swiftコードがあります
+
+00:29:01.975 --> 00:29:05.379 align:start position:21% line:-1
+iOSでUIkitを使うとします
+
+00:29:05.479 --> 00:29:08.515 align:start position:18% line:-1
+macOSではAppKitを使います
+
+00:29:08.782 --> 00:29:13.854 align:start position:21% line:-2
+まずは“#if”でコンパイル時間
+チェックを書き込み
+
+00:29:13.954 --> 00:29:18.091 align:start position:34% line:-2
+UIkitが使える
+OSをリストします
+
+00:29:18.492 --> 00:29:23.297 align:start position:25% line:-2
+重要なのは
+どのOSで実行するかではなく
+
+00:29:23.397 --> 00:29:25.432 align:start position:27% line:-1
+UIkitのインポートです
+
+00:29:25.532 --> 00:29:30.938 align:start position:21% line:-2
+Swift 4.2では
+importビルド設定命令を加え
+
+00:29:31.572 --> 00:29:33.874 align:start position:30% line:-1
+より使いやすくしました
+
+00:29:33.974 --> 00:29:36.143 align:start position:43% line:-1
+(拍手)
+
+00:29:36.243 --> 00:29:41.014 align:start position:25% line:-2
+Swift 4.2の新機能で
+さらにコードを改善できます
+
+00:29:41.115 --> 00:29:45.119 align:start position:32% line:-2
+例えばAppKitも
+チェックするとします
+
+00:29:45.219 --> 00:29:48.088 align:start position:27% line:-2
+UIkitもAppKitも
+使えないような―
+
+00:29:48.188 --> 00:29:50.257 align:start position:30% line:-1
+例えばLinuxの場合
+
+00:29:50.357 --> 00:29:56.163 align:start position:21% line:-2
+“#error”ビルド命令を使い
+エラーメッセージを作ります
+
+00:29:57.464 --> 00:30:00.767 align:start position:32% line:-2
+この次も
+ボイラープレートです
+

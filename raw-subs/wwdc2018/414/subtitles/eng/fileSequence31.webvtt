@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.426 --> 00:31:01.336 A:middle
+We can run lldb in the Xcode
+
+00:31:01.526 --> 00:31:02.886 A:middle
+debug terminal.
+
+00:31:04.306 --> 00:31:06.996 A:middle
+The debugger has commands to
+
+00:31:07.126 --> 00:31:09.856 A:middle
+import a crash log a little bit
+
+00:31:09.856 --> 00:31:13.396 A:middle
+as if it crashed inside the
+
+00:31:13.396 --> 00:31:14.056 A:middle
+debugger.
+
+00:31:14.626 --> 00:31:16.616 A:middle
+So we run this command to load
+
+00:31:16.896 --> 00:31:18.266 A:middle
+the crash log interpretation
+
+00:31:18.266 --> 00:31:21.026 A:middle
+commands and then we run another
+
+00:31:21.026 --> 00:31:23.756 A:middle
+command to import our crash into
+
+00:31:23.756 --> 00:31:24.356 A:middle
+the debugger.
+
+00:31:25.286 --> 00:31:27.196 A:middle
+So we want three things to make
+
+00:31:27.196 --> 00:31:27.796 A:middle
+this work.
+
+00:31:28.076 --> 00:31:30.346 A:middle
+We want a copy of our crash log
+
+00:31:30.396 --> 00:31:33.176 A:middle
+on the Mac, we also want a copy
+
+00:31:33.176 --> 00:31:36.606 A:middle
+of our app, and a copy of the
+
+00:31:36.606 --> 00:31:38.246 A:middle
+dSYM file that went with the
+
+00:31:38.246 --> 00:31:41.076 A:middle
+app, all of them matching this
+
+00:31:41.076 --> 00:31:43.006 A:middle
+crash log, all the same version
+
+00:31:43.006 --> 00:31:43.566 A:middle
+of our app.
+
+00:31:43.906 --> 00:31:45.646 A:middle
+So this is why we want you to
+
+00:31:45.646 --> 00:31:47.596 A:middle
+keep your app archives.
+
+00:31:48.316 --> 00:31:49.796 A:middle
+If we have all these files on
+
+00:31:49.796 --> 00:31:51.716 A:middle
+the Mac, we run the crash log
+
+00:31:51.716 --> 00:31:54.956 A:middle
+command, lldb uses Spotlight to
+
+00:31:54.956 --> 00:31:56.656 A:middle
+find the matching executable,
+
+00:31:56.816 --> 00:31:58.426 A:middle
+find the matching symbols, and
+
+00:31:58.426 --> 00:31:59.956 A:middle
+load it into the debugger.
+

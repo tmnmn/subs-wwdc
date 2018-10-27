@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.871 --> 00:29:00.841 align:start position:34% line:-2
+エンドポイントが
+加えられる場所は？
+
+00:29:00.941 --> 00:29:04.711 align:start position:29% line:-2
+サーバ型なら
+残りのアプリケーションに
+
+00:29:04.812 --> 00:29:09.049 align:start position:29% line:-2
+初期設定の
+デバイスネームを伝えます
+
+00:29:09.149 --> 00:29:13.053 align:start position:27% line:-2
+それをユーザに
+別の場所で入力させるのです
+
+00:29:19.927 --> 00:29:22.830 align:start position:27% line:-1
+次は接続ハンドラの設定です
+
+00:29:22.930 --> 00:29:26.366 align:start position:29% line:-2
+これは接続を受け取る度に
+呼び出されます
+
+00:29:27.534 --> 00:29:34.174 align:start position:7% line:-2
+そしてconnection.startを呼び出し
+キューに送りましょう
+
+00:29:36.343 --> 00:29:40.647 align:start position:23% line:-2
+ここで残りのアプリケーションに
+接続を伝えると
+
+00:29:40.747 --> 00:29:45.385 align:start position:30% line:-2
+ビデオフレームを
+表示する準備が整います
+
+00:29:46.286 --> 00:29:49.723 align:start position:23% line:-2
+そしてreceiveを呼び出し
+すぐに実行して
+
+00:29:49.823 --> 00:29:53.694 align:start position:27% line:-2
+データを読み取り
+パイプラインに送り出します
+
+00:29:55.562 --> 00:29:57.931 align:start position:29% line:-1
+ここでも更新ハンドラで―
+

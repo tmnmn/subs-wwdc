@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.786 --> 00:12:00.756 A:middle
+combination reduces a lot of
+
+00:12:00.756 --> 00:12:02.246 A:middle
+that redundant work that I
+
+00:12:02.246 --> 00:12:04.136 A:middle
+talked about before that we have
+
+00:12:04.136 --> 00:12:05.986 A:middle
+no made great efforts to
+
+00:12:06.126 --> 00:12:08.336 A:middle
+eliminate or significantly
+
+00:12:08.336 --> 00:12:08.666 A:middle
+reduce.
+
+00:12:10.036 --> 00:12:10.926 A:middle
+The problem with this
+
+00:12:10.926 --> 00:12:12.496 A:middle
+combination is, is it impedes
+
+00:12:12.496 --> 00:12:13.296 A:middle
+incremental builds.
+
+00:12:13.506 --> 00:12:14.716 A:middle
+So anytime you touch a file
+
+00:12:14.716 --> 00:12:16.206 A:middle
+within a target the whole target
+
+00:12:16.206 --> 00:12:16.806 A:middle
+gets rebuilt.
+
+00:12:17.496 --> 00:12:18.836 A:middle
+Now with the improvements in
+
+00:12:18.836 --> 00:12:20.406 A:middle
+Xcode 10 to Debug builds, we
+
+00:12:20.406 --> 00:12:21.936 A:middle
+feel you no longer need to use
+
+00:12:21.986 --> 00:12:24.416 A:middle
+the stopgap measure and we have
+
+00:12:24.416 --> 00:12:25.626 A:middle
+observed that the default
+
+00:12:25.626 --> 00:12:27.316 A:middle
+incremental builds are at least
+
+00:12:27.316 --> 00:12:29.036 A:middle
+as good as this combination or
+
+00:12:29.036 --> 00:12:29.356 A:middle
+better.
+
+00:12:29.356 --> 00:12:30.406 A:middle
+Especially since they support
+
+00:12:30.406 --> 00:12:30.976 A:middle
+incremental builds.
+
+00:12:34.696 --> 00:12:35.826 A:middle
+Let's talk about some important
+
+00:12:35.826 --> 00:12:37.006 A:middle
+under the hood runtime
+
+00:12:37.006 --> 00:12:38.256 A:middle
+optimizations and this is all
+
+00:12:38.256 --> 00:12:39.356 A:middle
+part of that march towards
+
+00:12:39.406 --> 00:12:40.586 A:middle
+binary compatibility.
+
+00:12:43.436 --> 00:12:45.126 A:middle
+Swift uses automatic memory
+
+00:12:45.126 --> 00:12:47.726 A:middle
+management and it uses reference
+
+00:12:47.726 --> 00:12:49.236 A:middle
+counting just like Objective-C
+
+00:12:49.386 --> 00:12:51.026 A:middle
+for managing object instances.
+
+00:12:51.916 --> 00:12:53.526 A:middle
+On this slide I've illustrated
+
+00:12:53.526 --> 00:12:54.786 A:middle
+in comments where the compiler
+
+00:12:54.786 --> 00:12:56.426 A:middle
+inserts, retains, and releases.
+
+00:12:57.516 --> 00:12:58.786 A:middle
+This is how it behaved in Swift
+
+00:12:58.786 --> 00:13:02.116 A:middle
+4.1.
+

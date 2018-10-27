@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.886 --> 00:33:03.536 A:middle
+So AVX-512 is a set of new
+
+00:33:03.536 --> 00:33:05.326 A:middle
+instructions with vector
+
+00:33:05.326 --> 00:33:05.846 A:middle
+registers.
+
+00:33:08.476 --> 00:33:12.106 A:middle
+And these provide benefits over
+
+00:33:12.386 --> 00:33:16.466 A:middle
+X86-64, so in X86-64 we can only
+
+00:33:16.466 --> 00:33:18.546 A:middle
+assume that we have 128-bit
+
+00:33:18.546 --> 00:33:20.536 A:middle
+vectors available, so that's
+
+00:33:20.536 --> 00:33:21.976 A:middle
+guaranteed on any Mac ever
+
+00:33:22.036 --> 00:33:23.836 A:middle
+that's Intel powered.
+
+00:33:25.156 --> 00:33:26.886 A:middle
+Now it happens that any new Mac
+
+00:33:26.886 --> 00:33:28.946 A:middle
+today has more than that, but
+
+00:33:28.946 --> 00:33:30.366 A:middle
+the iMac Pro is the first that
+
+00:33:30.366 --> 00:33:32.836 A:middle
+has 512-bit registers.
+
+00:33:35.456 --> 00:33:37.246 A:middle
+And with the Auto-Vectorizer
+
+00:33:37.246 --> 00:33:39.136 A:middle
+that's enabled in the Xcode
+
+00:33:39.136 --> 00:33:41.826 A:middle
+Clang this is great because it
+
+00:33:41.826 --> 00:33:43.736 A:middle
+means that we can have many more
+
+00:33:43.736 --> 00:33:45.186 A:middle
+elements in the vector.
+
+00:33:46.136 --> 00:33:47.676 A:middle
+So this can greatly improve
+
+00:33:47.676 --> 00:33:48.246 A:middle
+throughputs.
+
+00:33:48.786 --> 00:33:52.346 A:middle
+But there are other benefits
+
+00:33:52.346 --> 00:33:55.826 A:middle
+with AVX-512, so for instance we
+
+00:33:55.916 --> 00:33:58.086 A:middle
+not only have bigger vectors we
+
+00:33:58.086 --> 00:33:59.326 A:middle
+also have more of them.
+
+00:33:59.916 --> 00:34:02.546 A:middle
+So on X86-64 we only have 16 now
+

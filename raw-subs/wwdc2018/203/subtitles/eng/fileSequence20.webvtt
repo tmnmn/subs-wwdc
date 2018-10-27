@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.676 --> 00:20:01.486 A:middle
+that's on screen is a unicorn,
+
+00:20:02.006 --> 00:20:03.216 A:middle
+then the game is over.
+
+00:20:03.586 --> 00:20:05.326 A:middle
+Because the user left a lonely
+
+00:20:05.326 --> 00:20:07.716 A:middle
+unicorn again.
+
+00:20:07.916 --> 00:20:09.806 A:middle
+Otherwise, if they successfully
+
+00:20:09.806 --> 00:20:11.116 A:middle
+avoided the poop and that's
+
+00:20:11.116 --> 00:20:12.796 A:middle
+still onscreen, they get another
+
+00:20:12.796 --> 00:20:13.616 A:middle
+round of our game.
+
+00:20:15.056 --> 00:20:15.826 A:middle
+Now let's talk about what
+
+00:20:15.826 --> 00:20:17.346 A:middle
+happens if they did press one of
+
+00:20:17.346 --> 00:20:18.026 A:middle
+our buttons.
+
+00:20:18.626 --> 00:20:19.636 A:middle
+Well if they pressed the good
+
+00:20:19.636 --> 00:20:20.676 A:middle
+button, we want to give them
+
+00:20:20.676 --> 00:20:21.306 A:middle
+another point.
+
+00:20:21.996 --> 00:20:24.726 A:middle
+We actually want to cancel our
+
+00:20:24.726 --> 00:20:25.176 A:middle
+timer.
+
+00:20:25.176 --> 00:20:26.296 A:middle
+And we're going to do this by
+
+00:20:26.296 --> 00:20:27.716 A:middle
+invalidating it so that it
+
+00:20:27.716 --> 00:20:29.746 A:middle
+doesn't go off, and then we'll
+
+00:20:29.746 --> 00:20:32.936 A:middle
+call another round of our game.
+
+00:20:33.056 --> 00:20:34.176 A:middle
+And if they press the bad
+
+00:20:34.376 --> 00:20:36.176 A:middle
+button, well let's hide that
+
+00:20:36.176 --> 00:20:37.376 A:middle
+button and get it out of the way
+
+00:20:37.376 --> 00:20:38.586 A:middle
+so that they can't interact with
+
+00:20:38.586 --> 00:20:39.046 A:middle
+it again.
+
+00:20:39.636 --> 00:20:41.176 A:middle
+We'll cancel the timer again by
+
+00:20:41.526 --> 00:20:42.756 A:middle
+calling invalidate on it.
+
+00:20:42.756 --> 00:20:45.736 A:middle
+And then call game over which is
+
+00:20:45.736 --> 00:20:46.686 A:middle
+a helpful method that I've
+
+00:20:46.686 --> 00:20:49.946 A:middle
+written to help end the game.
+
+00:20:50.446 --> 00:20:52.016 A:middle
+Okay, let's add this game logic
+
+00:20:52.016 --> 00:20:53.226 A:middle
+into our game.
+
+00:20:54.516 --> 00:20:57.936 A:middle
+Going to go back over to our
+
+00:20:58.036 --> 00:20:58.886 A:middle
+Xcode project.
+
+00:20:58.886 --> 00:21:01.896 A:middle
+And in this case, I don't need
+

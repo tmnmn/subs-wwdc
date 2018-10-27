@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:57.006 --> 00:41:00.216 A:middle
+So, augmentation is on your
+
+00:41:00.216 --> 00:41:01.846 A:middle
+original trend dataset will
+
+00:41:01.846 --> 00:41:03.066 A:middle
+increase yet the number of
+
+00:41:03.066 --> 00:41:04.206 A:middle
+images you have in that dataset
+
+00:41:04.206 --> 00:41:06.306 A:middle
+without needing to gather new
+
+00:41:06.306 --> 00:41:06.806 A:middle
+images.
+
+00:41:07.466 --> 00:41:08.286 A:middle
+You essentially get them for
+
+00:41:08.286 --> 00:41:08.586 A:middle
+free.
+
+00:41:09.046 --> 00:41:10.506 A:middle
+So, there's many operations you
+
+00:41:10.506 --> 00:41:11.176 A:middle
+can carry.
+
+00:41:11.446 --> 00:41:12.696 A:middle
+One of them is just changing its
+
+00:41:12.696 --> 00:41:13.116 A:middle
+appearance.
+
+00:41:13.116 --> 00:41:14.156 A:middle
+For example, the tense, the
+
+00:41:14.156 --> 00:41:15.626 A:middle
+temperature and the white point
+
+00:41:15.626 --> 00:41:16.156 A:middle
+of your image.
+
+00:41:17.236 --> 00:41:18.496 A:middle
+Changing the spectral properties
+
+00:41:18.496 --> 00:41:19.946 A:middle
+of your image by adding noise.
+
+00:41:21.466 --> 00:41:22.606 A:middle
+Or changing the geometry of your
+
+00:41:22.606 --> 00:41:23.806 A:middle
+image by applying transforms.
+
+00:41:25.026 --> 00:41:26.306 A:middle
+Well, it turns out all of these
+
+00:41:26.306 --> 00:41:27.636 A:middle
+are trivial to achieve using
+
+00:41:27.636 --> 00:41:28.146 A:middle
+Core Image.
+
+00:41:28.926 --> 00:41:29.786 A:middle
+Let's take a look at a few
+
+00:41:29.786 --> 00:41:31.476 A:middle
+filters and how you can use them
+
+00:41:31.666 --> 00:41:32.726 A:middle
+for your data augmentation
+
+00:41:32.726 --> 00:41:33.176 A:middle
+purposes.
+
+00:41:34.816 --> 00:41:35.716 A:middle
+So, we have our input image on
+
+00:41:35.716 --> 00:41:36.556 A:middle
+the left-hand side here.
+
+00:41:37.306 --> 00:41:38.606 A:middle
+And we can change the
+
+00:41:38.606 --> 00:41:40.016 A:middle
+temperature and tint using CI
+
+00:41:40.016 --> 00:41:40.716 A:middle
+Temperature and Tint.
+
+00:41:41.806 --> 00:41:43.096 A:middle
+We can adjust the brightness,
+
+00:41:43.186 --> 00:41:44.846 A:middle
+contrast, as well as saturation
+
+00:41:44.846 --> 00:41:47.296 A:middle
+in your images using CI color
+
+00:41:47.296 --> 00:41:47.906 A:middle
+controls.
+
+00:41:49.066 --> 00:41:50.126 A:middle
+Change the frequency spectrum of
+
+00:41:50.126 --> 00:41:51.896 A:middle
+your image using CI dither as
+
+00:41:51.896 --> 00:41:53.006 A:middle
+well as CI GaussianBlur.
+
+00:41:53.566 --> 00:41:56.066 A:middle
+And change the geometry of your
+
+00:41:56.066 --> 00:41:57.736 A:middle
+image using affine transforms.
+
+00:41:58.586 --> 00:42:00.386 A:middle
+Let's take a look at all of this
+

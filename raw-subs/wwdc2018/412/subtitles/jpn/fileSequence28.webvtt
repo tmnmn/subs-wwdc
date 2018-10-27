@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.545 --> 00:28:00.547 align:start position:34% line:-1
+メモリアドレスです
+
+00:28:00.647 --> 00:28:06.386 align:start position:27% line:-2
+ではpoとメモリアドレスを
+使ってみましょう
+
+00:28:06.487 --> 00:28:11.225 align:start position:29% line:-2
+しかしSwiftは数字を
+ポインタとして扱わず
+
+00:28:11.325 --> 00:28:13.093 align:start position:36% line:-1
+うまくいきません
+
+00:28:13.193 --> 00:28:16.864 align:start position:21% line:-2
+そこで再び
+Objective-Cの登場です
+
+00:28:16.964 --> 00:28:20.601 align:start position:30% line:-2
+同じことを
+繰り返せばいいですが―
+
+00:28:20.701 --> 00:28:25.973 align:start position:27% line:-2
+ショートカットして
+簡単なコマンドにしましょう
+
+00:28:26.340 --> 00:28:31.078 align:start position:25% line:-2
+エイリアスコマンドで
+pocコマンドを呼び出します
+
+00:28:31.178 --> 00:28:36.417 align:start position:27% line:-2
+pocでメモリアドレスから
+デバッグの記述を確認します
+
+00:28:36.850 --> 00:28:40.487 align:start position:34% line:-2
+メモリアドレスから
+確認する方法を―
+
+00:28:40.587 --> 00:28:42.289 align:start position:32% line:-1
+もう１つ 紹介します
+
+00:28:42.389 --> 00:28:46.226 align:start position:14% line:-2
+使うのは
+unsafeBitCastという関数です
+
+00:28:46.360 --> 00:28:48.028 align:start position:32% line:-1
+メモリアドレスを与え
+
+00:28:48.128 --> 00:28:53.600 align:start position:14% line:-2
+ScoreboardView.selfに
+変更します
+
+00:28:54.067 --> 00:28:58.672 align:start position:23% line:-2
+unsafeBitCastでも
+記述を確認できました
+
+00:28:59.172 --> 00:29:02.843 align:start position:25% line:-2
+unsafeBitCastは
+型を返すので―
+

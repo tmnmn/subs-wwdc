@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.065 --> 00:15:02.536 align:middle line:-2
+SIGILL信号指的是
+非法指令信号
+
+00:15:03.303 --> 00:15:05.806 align:middle line:-1
+这意味着CPU正在尝试执行
+
+00:15:05.873 --> 00:15:10.143 align:middle line:-1
+由于某种原因不存在或无效的指令
+
+00:15:10.210 --> 00:15:12.012 align:middle line:-1
+这就是这个进程终止的原因
+
+00:15:14.081 --> 00:15:17.684 align:middle line:-1
+我们还可以查看崩溃的线程
+
+00:15:17.751 --> 00:15:20.320 align:middle line:-1
+崩溃时正在运行的代码是什么
+
+00:15:20.821 --> 00:15:25.526 align:middle line:-2
+这里我们在Swift运行时中
+看到fatalErrorMessage函数
+
+00:15:25.893 --> 00:15:29.563 align:middle line:-2
+我们并不清楚
+fatalErrorMessage函数的作用
+
+00:15:30.864 --> 00:15:36.103 align:middle line:-2
+此案例中的错误消息被包含在 “Application
+Specific Information”项中
+
+00:15:36.370 --> 00:15:40.841 align:middle line:-2
+所以我们可以看到当进程退出时
+Swift运行时打印的内容
+
+00:15:45.345 --> 00:15:48.015 align:middle line:-1
+让我们仔细看看这个堆栈跟踪
+
+00:15:48.482 --> 00:15:50.817 align:middle line:-2
+我们看到了
+fatalErrorMessage函数
+
+00:15:51.618 --> 00:15:55.055 align:middle line:-2
+并且是我们代码中的
+一个函数调用了它
+
+00:15:55.122 --> 00:16:00.494 align:middle line:-2
+我们有一个Recipe类
+其image函数被调用
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.916 --> 00:33:01.276 A:middle
+In fact, we can use this to
+
+00:33:01.276 --> 00:33:02.206 A:middle
+clean up other code.
+
+00:33:02.206 --> 00:33:03.466 A:middle
+To say, well, we know what a
+
+00:33:03.466 --> 00:33:04.476 A:middle
+countableRange is.
+
+00:33:04.876 --> 00:33:06.876 A:middle
+It's a range with this extra
+
+00:33:06.876 --> 00:33:09.106 A:middle
+striding capability, so we can
+
+00:33:09.106 --> 00:33:10.616 A:middle
+go extend countableRanges.
+
+00:33:10.916 --> 00:33:12.776 A:middle
+And that is a case in which we
+
+00:33:12.776 --> 00:33:14.466 A:middle
+have randomAccessCollection
+
+00:33:14.466 --> 00:33:14.996 A:middle
+conformance.
+
+00:33:16.446 --> 00:33:17.426 A:middle
+So, we've introduced this in
+
+00:33:17.426 --> 00:33:19.866 A:middle
+Swift 4.2 to help simplify the
+
+00:33:19.866 --> 00:33:20.906 A:middle
+set of types that we're dealing
+
+00:33:20.906 --> 00:33:21.136 A:middle
+with.
+
+00:33:21.136 --> 00:33:22.706 A:middle
+And make the existing core types
+
+00:33:22.706 --> 00:33:24.656 A:middle
+like range more composable and
+
+00:33:24.656 --> 00:33:25.346 A:middle
+more flexible.
+
+00:33:27.756 --> 00:33:28.966 A:middle
+&gt;&gt; Recursive constraints
+
+00:33:28.966 --> 00:33:30.726 A:middle
+describe relationships among
+
+00:33:30.726 --> 00:33:32.316 A:middle
+protocols and their associated
+
+00:33:32.316 --> 00:33:32.756 A:middle
+types.
+
+00:33:33.336 --> 00:33:34.836 A:middle
+This is a topic that we didn't
+
+00:33:34.836 --> 00:33:36.616 A:middle
+cover in the WWDC version of
+
+00:33:36.616 --> 00:33:37.136 A:middle
+this talk.
+
+00:33:37.416 --> 00:33:38.776 A:middle
+But it's an important part of
+
+00:33:38.776 --> 00:33:40.436 A:middle
+the standard library's use of
+
+00:33:40.436 --> 00:33:41.666 A:middle
+Swift's generic system.
+
+00:33:42.216 --> 00:33:43.006 A:middle
+Let's jump right in.
+
+00:33:43.936 --> 00:33:45.556 A:middle
+A recursive constraint is
+
+00:33:45.556 --> 00:33:47.046 A:middle
+nothing more than a constraint
+
+00:33:47.076 --> 00:33:48.856 A:middle
+within a protocol that mentions
+
+00:33:48.886 --> 00:33:50.336 A:middle
+that same protocol.
+
+00:33:51.036 --> 00:33:52.616 A:middle
+Here, collection has an
+
+00:33:52.616 --> 00:33:53.986 A:middle
+associated type named
+
+00:33:53.986 --> 00:33:54.886 A:middle
+subsequence.
+
+00:33:55.196 --> 00:33:57.136 A:middle
+That is itself a collection.
+
+00:33:57.726 --> 00:33:58.786 A:middle
+Why would you need this?
+
+00:33:59.316 --> 00:34:00.886 A:middle
+Well, let's look at a generic
+

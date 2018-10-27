@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.866 --> 00:17:02.046 A:middle
+text and label, and then once
+
+00:17:02.046 --> 00:17:03.536 A:middle
+you have it, one line of code
+
+00:17:03.536 --> 00:17:07.116 A:middle
+writes that model out to disk.
+
+00:17:07.286 --> 00:17:08.675 A:middle
+Now for training a Word Tagger,
+
+00:17:08.776 --> 00:17:09.556 A:middle
+it's very similar.
+
+00:17:09.976 --> 00:17:11.286 A:middle
+The data is just a little more
+
+00:17:11.286 --> 00:17:13.526 A:middle
+complicated because each example
+
+00:17:13.526 --> 00:17:15.076 A:middle
+is not a single piece of text.
+
+00:17:15.306 --> 00:17:18.226 A:middle
+It's a sequence of tokens, and
+
+00:17:18.786 --> 00:17:20.316 A:middle
+the labels are, again, a
+
+00:17:20.316 --> 00:17:21.726 A:middle
+sequence of labels, the same
+
+00:17:21.726 --> 00:17:23.955 A:middle
+number of labels, one label for
+
+00:17:23.955 --> 00:17:24.546 A:middle
+each token.
+
+00:17:24.935 --> 00:17:26.776 A:middle
+So this, for example, is
+
+00:17:26.826 --> 00:17:29.976 A:middle
+training data for a Word Tagger
+
+00:17:29.976 --> 00:17:31.236 A:middle
+that does name identity
+
+00:17:31.236 --> 00:17:34.526 A:middle
+recognition, and each word, each
+
+00:17:34.526 --> 00:17:36.836 A:middle
+token, has a label, either none,
+
+00:17:36.836 --> 00:17:39.696 A:middle
+it's not a name, or org, it's an
+
+00:17:39.696 --> 00:17:42.376 A:middle
+organization name or prod, it's
+
+00:17:42.376 --> 00:17:44.296 A:middle
+product name, or a number of
+
+00:17:44.326 --> 00:17:45.856 A:middle
+different other labels for
+
+00:17:45.856 --> 00:17:47.146 A:middle
+whatever kinds of names you're
+
+00:17:47.146 --> 00:17:47.806 A:middle
+recognizing.
+
+00:17:48.236 --> 00:17:51.016 A:middle
+So each token has a label, and
+
+00:17:51.016 --> 00:17:54.306 A:middle
+each sample consists of one
+
+00:17:54.456 --> 00:17:55.906 A:middle
+sequence of tokens and their
+
+00:17:55.906 --> 00:17:56.986 A:middle
+corresponding labels.
+
+00:17:58.606 --> 00:18:01.066 A:middle
+And then the Create ML to train
+

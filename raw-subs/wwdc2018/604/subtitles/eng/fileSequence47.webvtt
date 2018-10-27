@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.186 --> 00:47:00.806 A:middle
+And here we specify store action
+
+00:47:00.806 --> 00:47:01.236 A:middle
+as store.
+
+00:47:01.806 --> 00:47:03.656 A:middle
+Similarly, you can specify load
+
+00:47:03.656 --> 00:47:05.636 A:middle
+and store action for each of the
+
+00:47:05.636 --> 00:47:07.196 A:middle
+render targets you set in this
+
+00:47:07.196 --> 00:47:08.326 A:middle
+render pass descriptor.
+
+00:47:08.926 --> 00:47:11.936 A:middle
+So that's how we configured our
+
+00:47:11.936 --> 00:47:12.896 A:middle
+render targets.
+
+00:47:12.946 --> 00:47:16.596 A:middle
+Now you can create the encoder
+
+00:47:16.596 --> 00:47:19.076 A:middle
+from this descriptor and we can
+
+00:47:19.076 --> 00:47:20.526 A:middle
+start encoding draw calls.
+
+00:47:21.886 --> 00:47:23.606 A:middle
+But before that I want to show
+
+00:47:23.606 --> 00:47:25.756 A:middle
+you some OpenGL commands and
+
+00:47:25.756 --> 00:47:27.326 A:middle
+they will show you their Metal
+
+00:47:27.326 --> 00:47:28.146 A:middle
+equivalents.
+
+00:47:28.686 --> 00:47:31.976 A:middle
+So this is a typical OpenGL draw
+
+00:47:31.976 --> 00:47:32.626 A:middle
+sequence.
+
+00:47:33.156 --> 00:47:36.526 A:middle
+In this segment first we bind a
+
+00:47:36.526 --> 00:47:38.776 A:middle
+frame buffer which will set all
+
+00:47:38.776 --> 00:47:39.826 A:middle
+the render targets.
+
+00:47:41.096 --> 00:47:42.966 A:middle
+Then we bind our program which
+
+00:47:42.966 --> 00:47:45.056 A:middle
+contains vertex and fragment
+
+00:47:45.536 --> 00:47:45.676 A:middle
+shader.
+
+00:47:46.226 --> 00:47:48.206 A:middle
+And we bind vertex buffer
+
+00:47:48.206 --> 00:47:49.676 A:middle
+containing vertex data.
+
+00:47:50.136 --> 00:47:53.036 A:middle
+And then we bind another buffer
+
+00:47:53.036 --> 00:47:54.576 A:middle
+containing all the uniforms.
+
+00:47:55.416 --> 00:47:57.686 A:middle
+And then we'll set a texture to
+
+00:47:57.686 --> 00:47:58.536 A:middle
+sample from.
+
+00:47:59.776 --> 00:48:00.916 A:middle
+And finally, we draw.
+

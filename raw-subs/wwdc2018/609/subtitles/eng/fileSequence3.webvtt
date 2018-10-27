@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.996 --> 00:03:00.556 A:middle
+This new feature is available on
+
+00:03:00.556 --> 00:03:02.936 A:middle
+devices with an Apple A11 Bionic
+
+00:03:02.936 --> 00:03:03.216 A:middle
+GPU.
+
+00:03:04.446 --> 00:03:06.516 A:middle
+We find that using FP16
+
+00:03:06.546 --> 00:03:07.856 A:middle
+accumulation for inference
+
+00:03:07.856 --> 00:03:09.266 A:middle
+workloads is more than
+
+00:03:09.266 --> 00:03:10.956 A:middle
+sufficient in terms of precision
+
+00:03:11.996 --> 00:03:13.636 A:middle
+for many commonly used neural
+
+00:03:13.636 --> 00:03:14.036 A:middle
+networks.
+
+00:03:15.656 --> 00:03:17.866 A:middle
+FP16 accumulation offers better
+
+00:03:17.866 --> 00:03:19.926 A:middle
+precision and significant power
+
+00:03:19.926 --> 00:03:20.556 A:middle
+benefits.
+
+00:03:20.736 --> 00:03:22.196 A:middle
+So, please take advantage of it
+
+00:03:22.706 --> 00:03:23.926 A:middle
+in your inference workloads.
+
+00:03:25.216 --> 00:03:26.996 A:middle
+And this is an example of how
+
+00:03:26.996 --> 00:03:29.046 A:middle
+you can enable FP16 accumulation
+
+00:03:29.306 --> 00:03:30.536 A:middle
+for a convolution primitive.
+
+00:03:30.996 --> 00:03:31.806 A:middle
+You just need to set the
+
+00:03:31.806 --> 00:03:33.446 A:middle
+accumulatorPrecisionOption
+
+00:03:33.446 --> 00:03:33.906 A:middle
+property.
+
+00:03:36.126 --> 00:03:38.536 A:middle
+And now, let's talk in depth
+
+00:03:38.536 --> 00:03:40.296 A:middle
+about the main topic of this
+
+00:03:40.296 --> 00:03:41.986 A:middle
+session, training neural
+
+00:03:41.986 --> 00:03:42.536 A:middle
+networks.
+
+00:03:43.136 --> 00:03:44.356 A:middle
+And let's start with training
+
+00:03:44.356 --> 00:03:46.476 A:middle
+convolutional neural networks.
+
+00:03:48.316 --> 00:03:50.296 A:middle
+So, here we have a simple,
+
+00:03:50.296 --> 00:03:51.856 A:middle
+handwritten, digit recognition
+
+00:03:51.856 --> 00:03:54.606 A:middle
+network that takes an image of a
+
+00:03:54.606 --> 00:03:57.336 A:middle
+handwritten image as input, and
+
+00:03:57.646 --> 00:03:59.256 A:middle
+assigns it to one of 10 classes,
+
+00:03:59.506 --> 00:04:00.386 A:middle
+from 0 to 9.
+

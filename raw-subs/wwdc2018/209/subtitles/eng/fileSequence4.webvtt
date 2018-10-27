@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:56.516 --> 00:04:01.126 A:middle
+[ Applause ]
+
+00:04:01.626 --> 00:04:02.726 A:middle
+Yes, we had heard from some of
+
+00:04:02.726 --> 00:04:02.916 A:middle
+you.
+
+00:04:04.616 --> 00:04:05.856 A:middle
+So, we believe this appropriate
+
+00:04:05.856 --> 00:04:07.336 A:middle
+for passed-through values, such
+
+00:04:07.336 --> 00:04:08.636 A:middle
+as resource names or
+
+00:04:08.636 --> 00:04:09.396 A:middle
+identifiers.
+
+00:04:09.396 --> 00:04:11.756 A:middle
+Basically, values that are not
+
+00:04:11.756 --> 00:04:13.266 A:middle
+interpreted by the framework but
+
+00:04:13.266 --> 00:04:14.026 A:middle
+are just used in a
+
+00:04:14.026 --> 00:04:14.926 A:middle
+passed-through fashion.
+
+00:04:15.156 --> 00:04:16.886 A:middle
+So, image name, color name,
+
+00:04:16.886 --> 00:04:18.495 A:middle
+window frame autosave names, and
+
+00:04:18.495 --> 00:04:18.875 A:middle
+so on.
+
+00:04:18.875 --> 00:04:19.906 A:middle
+So, these are the types that are
+
+00:04:19.906 --> 00:04:21.136 A:middle
+appropriate for this.
+
+00:04:21.245 --> 00:04:23.386 A:middle
+Now, note that you still have
+
+00:04:23.386 --> 00:04:25.056 A:middle
+the benefits of a specific API
+
+00:04:25.096 --> 00:04:26.446 A:middle
+declaration however with this
+
+00:04:26.446 --> 00:04:27.046 A:middle
+new approach.
+
+00:04:27.386 --> 00:04:28.826 A:middle
+Here's the declaration for
+
+00:04:28.826 --> 00:04:30.146 A:middle
+NSImage named method.
+
+00:04:30.146 --> 00:04:31.226 A:middle
+You'll note that the argument is
+
+00:04:31.226 --> 00:04:33.656 A:middle
+still NSImage.Name, as opposed
+
+00:04:33.656 --> 00:04:34.166 A:middle
+to a string.
+
+00:04:34.166 --> 00:04:35.386 A:middle
+So, we still have that come
+
+00:04:35.386 --> 00:04:35.676 A:middle
+through.
+
+00:04:36.516 --> 00:04:37.526 A:middle
+Now, here's the full list of
+
+00:04:37.526 --> 00:04:37.926 A:middle
+types.
+
+00:04:37.926 --> 00:04:39.086 A:middle
+We did this to NSAppKit.
+
+00:04:39.136 --> 00:04:42.476 A:middle
+Turns out a lot of types could
+
+00:04:42.686 --> 00:04:43.656 A:middle
+benefit from this.
+
+00:04:45.356 --> 00:04:46.746 A:middle
+It's not just this, it's also
+
+00:04:46.746 --> 00:04:47.606 A:middle
+this set as well.
+
+00:04:47.706 --> 00:04:48.906 A:middle
+So, a number of types have
+
+00:04:49.176 --> 00:04:50.236 A:middle
+changed in this fashion.
+
+00:04:52.126 --> 00:04:54.546 A:middle
+So, next, I'm going to talk
+
+00:04:54.546 --> 00:04:55.816 A:middle
+about common prefixes.
+
+00:04:56.376 --> 00:04:57.446 A:middle
+As you've seen in previous
+
+00:04:57.446 --> 00:04:58.576 A:middle
+years, over time, we've been
+
+00:04:58.576 --> 00:05:00.866 A:middle
+switching from common suffixes,
+

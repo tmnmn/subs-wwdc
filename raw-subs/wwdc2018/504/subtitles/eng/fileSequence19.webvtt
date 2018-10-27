@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.386 --> 00:19:00.636 A:middle
+in the cases of any third-party
+
+00:19:00.636 --> 00:19:02.586 A:middle
+apps that embed that Now Playing
+
+00:19:02.586 --> 00:19:02.906 A:middle
+view.
+
+00:19:03.376 --> 00:19:04.796 A:middle
+This will also show up there.
+
+00:19:04.796 --> 00:19:07.366 A:middle
+And then, with the MediaPlayer.
+
+00:19:07.366 --> 00:19:08.326 A:middle
+framework, we just want to
+
+00:19:08.326 --> 00:19:10.386 A:middle
+handle the events, any type of
+
+00:19:10.386 --> 00:19:11.626 A:middle
+media remote commands -- for
+
+00:19:11.626 --> 00:19:13.396 A:middle
+example, a Next Track on
+
+00:19:13.396 --> 00:19:14.526 A:middle
+AirPods, for instance.
+
+00:19:15.576 --> 00:19:16.846 A:middle
+All right, let's jump into some
+
+00:19:16.846 --> 00:19:18.146 A:middle
+code and see how we can provide
+
+00:19:18.146 --> 00:19:19.346 A:middle
+that Now Playing information.
+
+00:19:23.216 --> 00:19:24.776 A:middle
+So here we are.
+
+00:19:24.776 --> 00:19:26.376 A:middle
+We have our MPNowPlaying
+
+00:19:26.376 --> 00:19:26.986 A:middle
+InfoCenter.
+
+00:19:26.986 --> 00:19:28.176 A:middle
+We just want to grab that.
+
+00:19:28.576 --> 00:19:29.386 A:middle
+And then, we set up our
+
+00:19:29.386 --> 00:19:30.406 A:middle
+nowPlayingInfo.
+
+00:19:30.956 --> 00:19:35.046 A:middle
+And then, we have, we want to
+
+00:19:35.046 --> 00:19:36.526 A:middle
+set our artwork, our MPMedia
+
+00:19:36.526 --> 00:19:37.566 A:middle
+ItemArtwork.
+
+00:19:37.866 --> 00:19:39.126 A:middle
+And it's not currently available
+
+00:19:39.126 --> 00:19:40.366 A:middle
+in seed 1, but it's coming in
+
+00:19:40.366 --> 00:19:40.876 A:middle
+seed 2.
+
+00:19:41.456 --> 00:19:43.526 A:middle
+And in this case, the artwork
+
+00:19:43.526 --> 00:19:45.306 A:middle
+that you provide will display on
+
+00:19:45.306 --> 00:19:46.436 A:middle
+the Siri watch face.
+
+00:19:46.956 --> 00:19:50.006 A:middle
+And then, we just set up, in
+
+00:19:50.006 --> 00:19:51.606 A:middle
+this case, our title, album,
+
+00:19:51.606 --> 00:19:53.646 A:middle
+artwork, and then we set it to
+
+00:19:53.646 --> 00:19:55.436 A:middle
+our nowPlaying InfoCenter.
+
+00:19:56.206 --> 00:19:57.726 A:middle
+And then, when we do something
+
+00:19:57.726 --> 00:20:01.206 A:middle
+such as this, then our data will
+

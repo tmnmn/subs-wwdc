@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:56.936 --> 00:21:00.016 A:middle
+someone else, it looks to you as
+
+00:21:00.016 --> 00:21:01.606 A:middle
+if, whoa, the user just went to
+
+00:21:01.606 --> 00:21:03.326 A:middle
+my site, I got my SameSite
+
+00:21:03.326 --> 00:21:04.936 A:middle
+cookie, everything looks fine,
+
+00:21:05.606 --> 00:21:07.676 A:middle
+but the opener maintains a
+
+00:21:07.676 --> 00:21:10.226 A:middle
+handle and kind of owns your
+
+00:21:10.226 --> 00:21:13.176 A:middle
+window and has certain APIs to
+
+00:21:13.176 --> 00:21:15.356 A:middle
+control that window that the
+
+00:21:15.356 --> 00:21:16.996 A:middle
+opener can even navigate your
+
+00:21:16.996 --> 00:21:18.736 A:middle
+window outside of your control.
+
+00:21:20.036 --> 00:21:22.346 A:middle
+And with the new response header
+
+00:21:22.346 --> 00:21:24.356 A:middle
+cross-origin window policy, you
+
+00:21:24.356 --> 00:21:27.076 A:middle
+finally get to say no to this.
+
+00:21:27.576 --> 00:21:30.326 A:middle
+Most sites are not in the
+
+00:21:30.326 --> 00:21:32.136 A:middle
+practice of using this API and
+
+00:21:32.136 --> 00:21:33.446 A:middle
+this kind of communication where
+
+00:21:33.446 --> 00:21:35.076 A:middle
+the opener owns the window.
+
+00:21:35.076 --> 00:21:36.766 A:middle
+Like, it's a very rare thing to
+
+00:21:36.766 --> 00:21:38.926 A:middle
+see on the web, but it's there
+
+00:21:38.926 --> 00:21:39.986 A:middle
+and it works that way by
+
+00:21:39.986 --> 00:21:40.426 A:middle
+default.
+
+00:21:40.886 --> 00:21:42.496 A:middle
+By sending this header, in this
+
+00:21:42.496 --> 00:21:44.966 A:middle
+case deny, you're saying that
+
+00:21:44.966 --> 00:21:47.076 A:middle
+handle should not be there.
+
+00:21:47.766 --> 00:21:49.436 A:middle
+It's OK to open me, but you
+
+00:21:49.436 --> 00:21:50.736 A:middle
+don't get to control me from
+
+00:21:50.736 --> 00:21:51.186 A:middle
+that point.
+
+00:21:51.986 --> 00:21:54.166 A:middle
+There is also a way added in
+
+00:21:54.166 --> 00:21:55.466 A:middle
+this-- I'm not showing it here--
+
+00:21:55.466 --> 00:21:57.066 A:middle
+but you can say allow post
+
+00:21:57.066 --> 00:21:57.616 A:middle
+message.
+
+00:21:58.016 --> 00:21:59.036 A:middle
+You might want to be able to
+
+00:21:59.106 --> 00:22:00.826 A:middle
+talk between these two windows
+

@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.346 --> 00:28:03.650 align:start position:32% line:-2
+これを使えば
+宇宙にも飛び出せます
+
+00:28:03.750 --> 00:28:06.386 align:start position:29% line:-1
+ここでは技術的な話はなし
+
+00:28:10.958 --> 00:28:15.329 align:start position:43% line:-1
+（拍手）
+
+00:28:15.529 --> 00:28:17.197 align:start position:41% line:-1
+作り方は？
+
+00:28:19.066 --> 00:28:22.903 align:start position:30% line:-2
+映像アプリケーションを
+扱う時は
+
+00:28:23.237 --> 00:28:26.573 align:start position:29% line:-1
+フレームベースで考えます
+
+00:28:26.807 --> 00:28:29.643 align:start position:34% line:-1
+まずは顔を認識させ
+
+00:28:30.677 --> 00:28:33.781 align:start position:34% line:-2
+深度マップから
+新しいマスクを作り
+
+00:28:33.881 --> 00:28:37.584 align:start position:27% line:-1
+RGBに結果を反映させます
+
+00:28:37.684 --> 00:28:43.223 align:start position:25% line:-2
+前景マスクをアップスケールし
+背景を少し暗くし
+
+00:28:43.323 --> 00:28:45.859 align:start position:36% line:-1
+両者を合成します
+
+00:28:46.460 --> 00:28:50.998 align:start position:32% line:-2
+その際 面倒なことを
+省略できます
+
+00:28:52.132 --> 00:28:57.304 align:start position:23% line:-2
+背景をロードする際
+RGBのサイズ合わせは一度だけ
+
+00:28:57.404 --> 00:29:00.807 align:start position:36% line:-2
+フレームごとには
+必要ありません
+

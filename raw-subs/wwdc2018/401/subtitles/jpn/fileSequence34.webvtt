@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:55.102 --> 00:34:01.475 align:start position:23% line:-2
+Swift 4にもメモリの
+排他的チェック機能がありました
+
+00:34:01.575 --> 00:34:05.312 align:start position:29% line:-2
+コンパイル時間と
+ランタイムのチェックです
+
+00:34:05.412 --> 00:34:09.149 align:start position:34% line:-2
+特定の動作の実行が
+制限されました
+
+00:34:09.248 --> 00:34:14.521 align:start position:30% line:-2
+同じメモリを使っての
+作業ができませんでした
+
+00:34:14.788 --> 00:34:17.424 align:start position:32% line:-1
+では例をご覧ください
+
+00:34:18.625 --> 00:34:23.597 align:start position:32% line:-2
+OSパスのデータ型を
+実装するコードです
+
+00:34:23.697 --> 00:34:27.367 align:start position:32% line:-2
+パスコンポーネントの
+配列です
+
+00:34:27.534 --> 00:34:29.536 align:start position:20% line:-1
+withAppendedメソッドで
+
+00:34:30.204 --> 00:34:32.639 align:start position:32% line:-1
+配列に要素を加えます
+
+00:34:32.906 --> 00:34:35.476 align:start position:32% line:-1
+クロージャを呼び出し
+
+00:34:35.576 --> 00:34:38.011 align:start position:30% line:-1
+配列から要素を除きます
+
+00:34:38.178 --> 00:34:42.049 align:start position:27% line:-2
+コードはSwift 4でも
+有効です
+
+00:34:42.750 --> 00:34:45.853 align:start position:23% line:-1
+しかし パスのデータ型を見ると
+
+00:34:46.420 --> 00:34:49.857 align:start position:36% line:-2
+パスが局所変数に
+格納されています
+
+00:34:49.956 --> 00:34:52.125 align:start position:20% line:-1
+withAppendedを呼び出し
+
+00:34:52.226 --> 00:34:57.364 align:start position:29% line:-2
+クロージャ内の局所変数を
+再度表示します
+
+00:34:57.464 --> 00:34:59.032 align:start position:38% line:-1
+どこに問題が？
+
+00:34:59.333 --> 00:35:03.070 align:start position:30% line:-2
+コードが
+あいまいになっています
+

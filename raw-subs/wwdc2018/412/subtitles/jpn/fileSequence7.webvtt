@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.251 --> 00:07:00.954 align:start position:36% line:-2
+一時停止して
+式を入力せずに―
+
+00:07:01.054 --> 00:07:05.492 align:start position:30% line:-2
+タップするたびに
+これを再現したいのです
+
+00:07:05.592 --> 00:07:08.962 align:start position:29% line:-2
+そこでブレークポイントを
+設定します
+
+00:07:09.363 --> 00:07:12.900 align:start position:14% line:-2
+右クリックで
+“Edit Breakpoint”を選択
+
+00:07:13.000 --> 00:07:14.935 align:start position:34% line:-1
+ポップオーバーで―
+
+00:07:15.035 --> 00:07:18.772 align:start position:29% line:-2
+ブレークポイントの動作を
+カスタマイズできます
+
+00:07:18.872 --> 00:07:21.408 align:start position:12% line:-1
+“Debugger Command”を選択
+
+00:07:21.508 --> 00:07:27.214 align:start position:16% line:-2
+先ほど使った
+expressionコマンドを入力し―
+
+00:07:27.981 --> 00:07:30.317 align:start position:30% line:-1
+自動で再開するよう設定
+
+00:07:30.417 --> 00:07:35.355 align:start position:29% line:-2
+つまりブレークポイントが
+式を実行させて
+
+00:07:35.455 --> 00:07:39.760 align:start position:29% line:-2
+プロパティの値を変え
+自動的に再開させるのです
+
+00:07:39.960 --> 00:07:44.965 align:start position:29% line:-2
+飛行士をタップするたび
+ジャンプに失敗し倒れます
+
+00:07:45.165 --> 00:07:47.534 align:start position:29% line:-1
+ここで修正すべきなのは？
+
+00:07:47.634 --> 00:07:51.371 align:start position:29% line:-2
+倒れた後に
+立ち上がらねばなりません
+
+00:07:51.471 --> 00:07:52.973 align:start position:38% line:-1
+修正しましょう
+
+00:07:53.607 --> 00:07:57.711 align:start position:7% line:-2
+updateUIForJumpFailedという
+関数に移動
+
+00:07:57.811 --> 00:08:02.850 align:start position:18% line:-2
+UIKit Dynamicsで失敗を
+シミュレートしています
+

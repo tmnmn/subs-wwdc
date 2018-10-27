@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.456 --> 00:26:01.736 A:middle
+You get them just by using Metal
+
+00:26:01.736 --> 00:26:02.306 A:middle
+on iOS.
+
+00:26:03.106 --> 00:26:04.866 A:middle
+But Metal also lets you optimize
+
+00:26:04.866 --> 00:26:06.036 A:middle
+rendering techniques by taking
+
+00:26:06.036 --> 00:26:07.796 A:middle
+explicit control of the A11's
+
+00:26:07.796 --> 00:26:08.596 A:middle
+tile memory.
+
+00:26:09.186 --> 00:26:12.166 A:middle
+Now, during the development of
+
+00:26:12.166 --> 00:26:13.866 A:middle
+the A11 GPU, the hardware and
+
+00:26:13.866 --> 00:26:15.346 A:middle
+software teams at Apple analyzed
+
+00:26:15.346 --> 00:26:16.946 A:middle
+a number of important modern
+
+00:26:16.946 --> 00:26:17.846 A:middle
+rendering techniques.
+
+00:26:18.696 --> 00:26:20.406 A:middle
+We accelerated, we noticed many
+
+00:26:20.406 --> 00:26:22.166 A:middle
+common themes, and we found that
+
+00:26:22.166 --> 00:26:23.476 A:middle
+explicit control of our tile
+
+00:26:23.476 --> 00:26:26.906 A:middle
+memory accelerated all of them.
+
+00:26:27.026 --> 00:26:28.036 A:middle
+We then developed the hardware
+
+00:26:28.036 --> 00:26:29.656 A:middle
+and software features together
+
+00:26:29.656 --> 00:26:30.946 A:middle
+around this idea of explicit
+
+00:26:30.946 --> 00:26:31.416 A:middle
+control.
+
+00:26:32.656 --> 00:26:33.626 A:middle
+So let's talk about these
+
+00:26:34.806 --> 00:26:34.976 A:middle
+features.
+
+00:26:41.656 --> 00:26:42.796 A:middle
+So programmable blending lets
+
+00:26:42.796 --> 00:26:43.676 A:middle
+you write custom blend
+
+00:26:43.676 --> 00:26:44.976 A:middle
+operations in your shaders.
+
+00:26:45.386 --> 00:26:46.686 A:middle
+It's also a powerful tool you
+
+00:26:46.686 --> 00:26:48.146 A:middle
+can use to merge render passes,
+
+00:26:48.406 --> 00:26:49.396 A:middle
+and it's actually made available
+
+00:26:49.396 --> 00:26:51.446 A:middle
+across all iOS GPUs.
+
+00:26:52.136 --> 00:26:53.726 A:middle
+Imageblocks are new for A11.
+
+00:26:53.996 --> 00:26:55.046 A:middle
+They let you maximize your use
+
+00:26:55.046 --> 00:26:56.756 A:middle
+of tile memory by controlling
+
+00:26:56.756 --> 00:26:58.116 A:middle
+pixel layouts directly in the
+
+00:26:58.116 --> 00:26:58.936 A:middle
+shading language.
+
+00:26:59.466 --> 00:27:02.076 A:middle
+And tile shading is our
+

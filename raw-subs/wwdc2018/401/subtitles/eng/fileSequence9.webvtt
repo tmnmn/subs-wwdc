@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.586 --> 00:09:00.506 A:middle
+So let's talk about some
+
+00:09:00.506 --> 00:09:01.446 A:middle
+improvements to the tooling.
+
+00:09:02.536 --> 00:09:04.076 A:middle
+In the State of the Union we
+
+00:09:04.076 --> 00:09:05.006 A:middle
+mentioned that there are some
+
+00:09:05.106 --> 00:09:06.206 A:middle
+significant improvements to
+
+00:09:06.206 --> 00:09:07.416 A:middle
+build improvement for Swift
+
+00:09:07.416 --> 00:09:09.366 A:middle
+projects over Xcode 9.
+
+00:09:10.176 --> 00:09:12.176 A:middle
+And so these numbers are run on
+
+00:09:12.176 --> 00:09:13.516 A:middle
+a 4-Core MacBook Pro i7.
+
+00:09:13.516 --> 00:09:16.946 A:middle
+Let's look a little bit closer
+
+00:09:16.946 --> 00:09:17.416 A:middle
+at one of them.
+
+00:09:18.896 --> 00:09:20.456 A:middle
+This project is a mix and match
+
+00:09:20.456 --> 00:09:21.776 A:middle
+of Objective-C in Swift.
+
+00:09:22.066 --> 00:09:23.406 A:middle
+It started out as an Objective-C
+
+00:09:23.406 --> 00:09:24.666 A:middle
+project and started
+
+00:09:24.666 --> 00:09:25.526 A:middle
+incorporating Swift.
+
+00:09:26.216 --> 00:09:27.786 A:middle
+This is a very common scenario.
+
+00:09:28.756 --> 00:09:29.576 A:middle
+Now what this Build time
+
+00:09:29.576 --> 00:09:32.156 A:middle
+improvement doesn't really
+
+00:09:32.156 --> 00:09:33.826 A:middle
+underscore is how much faster
+
+00:09:33.876 --> 00:09:34.736 A:middle
+building this Swift Code
+
+00:09:34.736 --> 00:09:35.536 A:middle
+actually became.
+
+00:09:36.356 --> 00:09:37.526 A:middle
+So if we just focus on how much
+
+00:09:37.526 --> 00:09:39.826 A:middle
+faster the Swift code built, it
+
+00:09:39.826 --> 00:09:41.146 A:middle
+actually builds three times
+
+00:09:41.226 --> 00:09:42.896 A:middle
+faster than it did before.
+
+00:09:43.386 --> 00:09:44.776 A:middle
+And so that's why the project
+
+00:09:45.046 --> 00:09:47.086 A:middle
+has that more modest 1.6x
+
+00:09:47.186 --> 00:09:47.536 A:middle
+speedup.
+
+00:09:49.656 --> 00:09:51.096 A:middle
+And what you will see is that
+
+00:09:51.096 --> 00:09:52.216 A:middle
+the overall build improvements
+
+00:09:52.216 --> 00:09:53.706 A:middle
+will depend on the nature of
+
+00:09:53.706 --> 00:09:54.766 A:middle
+your project, how much Swift
+
+00:09:54.766 --> 00:09:56.816 A:middle
+code it's using, the number of
+
+00:09:56.816 --> 00:09:58.606 A:middle
+cores on your machine, but we've
+
+00:09:58.766 --> 00:10:00.146 A:middle
+in practice have seen from many
+

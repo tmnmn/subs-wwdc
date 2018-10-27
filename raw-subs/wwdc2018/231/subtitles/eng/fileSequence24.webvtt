@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.876 --> 00:24:00.116 A:middle
+will instantiate an
+
+00:24:00.116 --> 00:24:00.766 A:middle
+HMHomeManager.
+
+00:24:01.376 --> 00:24:04.696 A:middle
+Now, we want to add a home to
+
+00:24:04.696 --> 00:24:06.636 A:middle
+that home manager, so we'll use
+
+00:24:06.636 --> 00:24:08.736 A:middle
+the addHome APIs and specify the
+
+00:24:08.736 --> 00:24:09.596 A:middle
+name of the home.
+
+00:24:10.546 --> 00:24:12.296 A:middle
+Now, we want to be sure to set
+
+00:24:12.296 --> 00:24:13.826 A:middle
+ourselves as the delegate, so
+
+00:24:13.826 --> 00:24:14.616 A:middle
+we'll get the appropriate
+
+00:24:14.616 --> 00:24:15.696 A:middle
+delegate callbacks.
+
+00:24:16.246 --> 00:24:18.226 A:middle
+And finally, if we want to
+
+00:24:18.226 --> 00:24:19.256 A:middle
+configure the users for the
+
+00:24:19.256 --> 00:24:22.256 A:middle
+home, we'll call manageUsers on
+
+00:24:22.296 --> 00:24:22.646 A:middle
+HMHome.
+
+00:24:27.156 --> 00:24:29.166 A:middle
+Now, I mentioned HMZones
+
+00:24:29.166 --> 00:24:30.506 A:middle
+earlier, so let's take a little
+
+00:24:30.506 --> 00:24:31.776 A:middle
+peek at that.
+
+00:24:31.836 --> 00:24:32.786 A:middle
+So this is a way of grouping
+
+00:24:32.786 --> 00:24:35.206 A:middle
+multiple rooms together, like
+
+00:24:35.996 --> 00:24:39.026 A:middle
+upstairs and downstairs, or you
+
+00:24:39.026 --> 00:24:40.426 A:middle
+can group all the bedrooms
+
+00:24:40.426 --> 00:24:41.736 A:middle
+together in a single zone.
+
+00:24:42.256 --> 00:24:44.866 A:middle
+So it has some basic properties
+
+00:24:44.866 --> 00:24:47.166 A:middle
+on it like name and access to
+
+00:24:47.166 --> 00:24:48.936 A:middle
+the rooms, but it also has this
+
+00:24:48.936 --> 00:24:50.316 A:middle
+unique identifier property.
+
+00:24:50.576 --> 00:24:52.326 A:middle
+And this could often be
+
+00:24:52.326 --> 00:24:53.686 A:middle
+overlooked, but this is a way
+
+00:24:53.686 --> 00:24:54.776 A:middle
+that you keep track of which
+
+00:24:54.776 --> 00:24:55.836 A:middle
+zone you're, you care about.
+
+00:24:56.256 --> 00:24:58.026 A:middle
+So when the name changes or the
+
+00:24:58.026 --> 00:24:59.876 A:middle
+rooms change, you still have an
+
+00:24:59.876 --> 00:25:03.956 A:middle
+access to that specific zone.
+

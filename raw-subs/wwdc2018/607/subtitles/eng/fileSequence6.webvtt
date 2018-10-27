@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.826 --> 00:06:01.036 A:middle
+So in cases like this, Metal has
+
+00:06:01.036 --> 00:06:02.726 A:middle
+a dedicated parallel encoder
+
+00:06:02.766 --> 00:06:04.986 A:middle
+that allows you to encode on
+
+00:06:04.986 --> 00:06:06.586 A:middle
+multiple threads without
+
+00:06:06.586 --> 00:06:08.266 A:middle
+explicitly dividing up the
+
+00:06:08.266 --> 00:06:09.646 A:middle
+render pass or the command
+
+00:06:09.646 --> 00:06:10.026 A:middle
+buffer.
+
+00:06:10.686 --> 00:06:12.286 A:middle
+So now, let's look at how simple
+
+00:06:12.286 --> 00:06:13.786 A:middle
+this is in your code.
+
+00:06:14.866 --> 00:06:16.546 A:middle
+It looks a lot like the previous
+
+00:06:16.546 --> 00:06:17.106 A:middle
+example.
+
+00:06:17.776 --> 00:06:18.956 A:middle
+The first thing you're going to
+
+00:06:18.956 --> 00:06:21.066 A:middle
+do is create a parallel encoder.
+
+00:06:21.606 --> 00:06:23.776 A:middle
+And from that, you create any
+
+00:06:23.776 --> 00:06:25.386 A:middle
+number of subordinate encoders.
+
+00:06:25.436 --> 00:06:27.066 A:middle
+And it's important to realize
+
+00:06:27.066 --> 00:06:28.146 A:middle
+that this is actually where you
+
+00:06:28.146 --> 00:06:29.976 A:middle
+define the GPU execution order.
+
+00:06:32.026 --> 00:06:35.356 A:middle
+Next, we're going to create
+
+00:06:35.356 --> 00:06:37.736 A:middle
+separate threads and encode each
+
+00:06:37.776 --> 00:06:39.126 A:middle
+of our G-buffer functions
+
+00:06:39.866 --> 00:06:40.406 A:middle
+separately.
+
+00:06:40.966 --> 00:06:44.956 A:middle
+And finally, we set up a
+
+00:06:44.956 --> 00:06:46.286 A:middle
+notification so that when the
+
+00:06:46.286 --> 00:06:48.726 A:middle
+threads are complete, we call
+
+00:06:48.726 --> 00:06:49.866 A:middle
+end encoding on the parallel
+
+00:06:49.866 --> 00:06:50.296 A:middle
+encoder.
+
+00:06:50.296 --> 00:06:50.926 A:middle
+And that is it.
+
+00:06:51.186 --> 00:06:52.866 A:middle
+That's all you have to do to
+
+00:06:52.866 --> 00:06:54.416 A:middle
+parallelize a render pass.
+
+00:06:54.486 --> 00:06:55.606 A:middle
+It's really fast, and it's
+
+00:06:55.606 --> 00:06:56.206 A:middle
+really easy.
+
+00:06:56.206 --> 00:06:58.126 A:middle
+So now that I've shown you 2
+
+00:06:58.126 --> 00:06:59.886 A:middle
+ways to parallelize on the CPU,
+

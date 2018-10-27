@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.979 --> 00:13:04.117 align:start position:14% line:-2
+SwiftとObjective-Cの間で
+規定があると
+
+00:13:04.218 --> 00:13:07.821 align:start position:23% line:-1
+私たちに気付かせてくれるのです
+
+00:13:10.057 --> 00:13:13.760 align:start position:23% line:-1
+２つ目は低水準コードを扱う人や
+
+00:13:14.161 --> 00:13:17.764 align:start position:27% line:-1
+メモリ内の配置を気にする人
+
+00:13:17.865 --> 00:13:21.034 align:start position:25% line:-1
+そんな人の関心を引くでしょう
+
+00:13:21.735 --> 00:13:23.637 align:start position:32% line:-1
+こちらを見てください
+
+00:13:23.737 --> 00:13:29.009 align:start position:30% line:-2
+Cでは構造体の配置や
+アライメントは厳格です
+
+00:13:29.776 --> 00:13:36.116 align:start position:21% line:-2
+スライドの構造体では
+コンパイラが２行目と３行目の間に
+
+00:13:36.216 --> 00:13:39.620 align:start position:21% line:-1
+２バイトのパディングを挿入します
+
+00:13:40.687 --> 00:13:43.991 align:start position:23% line:-1
+気楽に組みたいと思う人のために
+
+00:13:44.091 --> 00:13:48.629 align:start position:12% line:-2
+コンパイラは
+pragma packディレクティブを提供
+
+00:13:48.729 --> 00:13:52.299 align:start position:32% line:-2
+配置やアライメントを
+調整してくれます
+
+00:13:54.434 --> 00:13:59.473 align:start position:16% line:-2
+この例では
+push, 1ディレクティブを使います
+
+00:13:59.673 --> 00:14:01.909 align:start position:30% line:-1
+既定の配置が解除します
+

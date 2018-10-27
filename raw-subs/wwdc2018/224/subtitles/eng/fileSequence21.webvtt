@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.436 --> 00:21:01.946 A:middle
+set of photos as a favorite or
+
+00:21:02.726 --> 00:21:02.826 A:middle
+not.
+
+00:21:03.596 --> 00:21:05.376 A:middle
+And in just one line of code, we
+
+00:21:05.376 --> 00:21:07.046 A:middle
+can purge or delete a set of
+
+00:21:07.046 --> 00:21:08.416 A:middle
+records from the database using
+
+00:21:08.416 --> 00:21:09.706 A:middle
+a batch delete operation.
+
+00:21:09.976 --> 00:21:12.256 A:middle
+And these operations scale in
+
+00:21:12.256 --> 00:21:13.646 A:middle
+ways that aren't possible by
+
+00:21:13.646 --> 00:21:14.716 A:middle
+faulting the objects into
+
+00:21:14.716 --> 00:21:15.096 A:middle
+memory.
+
+00:21:15.886 --> 00:21:18.116 A:middle
+For example, during a delete, a
+
+00:21:18.116 --> 00:21:19.556 A:middle
+traditional delete by calling
+
+00:21:19.556 --> 00:21:22.306 A:middle
+NSManagedObject.delete will grow
+
+00:21:22.446 --> 00:21:23.776 A:middle
+with the size of the records in
+
+00:21:23.776 --> 00:21:24.836 A:middle
+the database.
+
+00:21:24.906 --> 00:21:26.116 A:middle
+And as you delete objects and
+
+00:21:26.116 --> 00:21:27.336 A:middle
+their memory gets faulted into
+
+00:21:27.336 --> 00:21:29.436 A:middle
+the context, this gets more and
+
+00:21:29.436 --> 00:21:31.136 A:middle
+more expensive the larger your
+
+00:21:31.136 --> 00:21:32.086 A:middle
+database gets.
+
+00:21:32.716 --> 00:21:34.036 A:middle
+But with batch operations, we
+
+00:21:34.036 --> 00:21:36.106 A:middle
+can perform the same mutations
+
+00:21:36.106 --> 00:21:37.196 A:middle
+in just a fraction of the
+
+00:21:37.196 --> 00:21:37.706 A:middle
+memory.
+
+00:21:38.276 --> 00:21:39.716 A:middle
+And this has the curve that we
+
+00:21:39.716 --> 00:21:42.756 A:middle
+want as data increases, where
+
+00:21:42.756 --> 00:21:44.626 A:middle
+the larger the data set is, the
+
+00:21:44.626 --> 00:21:46.976 A:middle
+less memory we use, using up to
+
+00:21:46.976 --> 00:21:48.696 A:middle
+about 7% of the memory of a
+
+00:21:48.696 --> 00:21:50.606 A:middle
+traditional delete at 10 million
+
+00:21:50.606 --> 00:21:51.156 A:middle
+rows.
+
+00:21:52.556 --> 00:21:54.076 A:middle
+So, this is a very powerful way
+
+00:21:54.076 --> 00:21:55.296 A:middle
+to save resources on your
+
+00:21:55.296 --> 00:21:57.066 A:middle
+customer's device.
+
+00:21:57.956 --> 00:21:59.176 A:middle
+But one of the traditional
+
+00:21:59.176 --> 00:22:00.976 A:middle
+problems with batch operations
+

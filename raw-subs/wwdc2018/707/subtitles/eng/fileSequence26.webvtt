@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.586 --> 00:26:00.626 A:middle
+the duration, I'm going to have
+
+00:26:00.676 --> 00:26:02.666 A:middle
+this call in the builder's
+
+00:26:02.756 --> 00:26:07.776 A:middle
+didCollectEvent call as well.
+
+00:26:07.946 --> 00:26:08.916 A:middle
+Now, let's implement this
+
+00:26:08.916 --> 00:26:09.206 A:middle
+method.
+
+00:26:10.596 --> 00:26:13.246 A:middle
+So in my UI, I'm using a
+
+00:26:13.246 --> 00:26:14.826 A:middle
+WatchKit interface timer.
+
+00:26:15.386 --> 00:26:16.586 A:middle
+If you're not familiar with this
+
+00:26:16.586 --> 00:26:19.916 A:middle
+object, this object needs a date
+
+00:26:19.986 --> 00:26:22.166 A:middle
+in the past from which it will
+
+00:26:22.166 --> 00:26:23.186 A:middle
+start counting from.
+
+00:26:23.786 --> 00:26:24.956 A:middle
+So I'm going to go ahead and
+
+00:26:24.956 --> 00:26:27.696 A:middle
+create my date object using the
+
+00:26:27.696 --> 00:26:29.676 A:middle
+builder's elapsedTime property.
+
+00:26:30.726 --> 00:26:31.906 A:middle
+And because I want the date to
+
+00:26:31.906 --> 00:26:33.496 A:middle
+be in the past, I'm going to
+
+00:26:33.796 --> 00:26:35.306 A:middle
+make sure that I have a minus
+
+00:26:35.306 --> 00:26:36.956 A:middle
+sign here.
+
+00:26:37.096 --> 00:26:39.186 A:middle
+Next, I simply dispatch on the
+
+00:26:39.186 --> 00:26:41.476 A:middle
+main queue because I'm doing UI
+
+00:26:41.476 --> 00:26:43.516 A:middle
+work, and then I just set the
+
+00:26:43.516 --> 00:26:46.606 A:middle
+date on the timer.
+
+00:26:46.606 --> 00:26:47.826 A:middle
+I also need to make sure that
+
+00:26:47.826 --> 00:26:50.376 A:middle
+the timer is only running when
+
+00:26:51.046 --> 00:26:53.076 A:middle
+the session is running as well.
+
+00:26:53.726 --> 00:26:54.456 A:middle
+So let's do that.
+
+00:26:55.376 --> 00:26:57.506 A:middle
+First, I grab the session state,
+
+00:26:58.126 --> 00:26:59.916 A:middle
+and then, again, I dispatch on
+
+00:26:59.916 --> 00:27:00.556 A:middle
+the main queue.
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.166 --> 00:14:01.776 A:middle
+and archiving and unarchiving in
+
+00:14:01.776 --> 00:14:03.296 A:middle
+a robust and secure fashion.
+
+00:14:03.396 --> 00:14:05.146 A:middle
+So, I invite you to attend that.
+
+00:14:05.196 --> 00:14:07.716 A:middle
+Thursday morning at 9.
+
+00:14:07.916 --> 00:14:09.566 A:middle
+So, at this point, the rest of
+
+00:14:09.566 --> 00:14:10.756 A:middle
+the talk is going to be about
+
+00:14:10.756 --> 00:14:12.036 A:middle
+the new features in AppKit and
+
+00:14:12.036 --> 00:14:12.876 A:middle
+related areas.
+
+00:14:13.156 --> 00:14:14.466 A:middle
+And, to kick that off I invite
+
+00:14:14.506 --> 00:14:14.976 A:middle
+Chris on stage.
+
+00:14:15.516 --> 00:14:20.966 A:middle
+[ Applause ]
+
+00:14:21.466 --> 00:14:21.986 A:middle
+&gt;&gt; Thanks, Ali.
+
+00:14:22.596 --> 00:14:23.806 A:middle
+So, Dark Mode is one of the most
+
+00:14:23.806 --> 00:14:25.036 A:middle
+exciting new features in macOS
+
+00:14:25.036 --> 00:14:25.946 A:middle
+10.14.
+
+00:14:26.406 --> 00:14:27.386 A:middle
+And, I'm sure you all saw
+
+00:14:27.386 --> 00:14:28.796 A:middle
+yesterday, I bet some of you are
+
+00:14:28.796 --> 00:14:29.656 A:middle
+running it right now.
+
+00:14:29.656 --> 00:14:30.796 A:middle
+But, let's go ahead and take a
+
+00:14:30.796 --> 00:14:31.076 A:middle
+look.
+
+00:14:32.036 --> 00:14:34.666 A:middle
+So, we have these great new sets
+
+00:14:34.666 --> 00:14:35.556 A:middle
+of system artwork.
+
+00:14:36.126 --> 00:14:37.336 A:middle
+It makes our system UI look
+
+00:14:37.336 --> 00:14:37.616 A:middle
+great.
+
+00:14:37.616 --> 00:14:38.676 A:middle
+It makes your application look
+
+00:14:38.676 --> 00:14:38.936 A:middle
+great.
+
+00:14:39.156 --> 00:14:39.996 A:middle
+It's going to make your user
+
+00:14:39.996 --> 00:14:40.836 A:middle
+content look great.
+
+00:14:41.186 --> 00:14:42.436 A:middle
+And, what we all want to know is
+
+00:14:42.436 --> 00:14:44.586 A:middle
+what we need to do to adopt
+
+00:14:45.216 --> 00:14:45.326 A:middle
+this.
+
+00:14:45.526 --> 00:14:47.146 A:middle
+So, the first step is really
+
+00:14:47.146 --> 00:14:47.536 A:middle
+simple.
+
+00:14:47.906 --> 00:14:49.246 A:middle
+We need to relink against the
+
+00:14:49.246 --> 00:14:50.906 A:middle
+macOS 10.14 SDK.
+
+00:14:51.336 --> 00:14:52.146 A:middle
+That's easy enough.
+
+00:14:52.436 --> 00:14:53.496 A:middle
+That might be enough for some of
+
+00:14:53.496 --> 00:14:54.736 A:middle
+us, too, but most of us are
+
+00:14:54.736 --> 00:14:55.836 A:middle
+going to need to do a little bit
+
+00:14:55.836 --> 00:14:57.406 A:middle
+more work to make an app that
+
+00:14:57.406 --> 00:14:57.896 A:middle
+looks great.
+
+00:14:58.676 --> 00:14:59.656 A:middle
+So, the next thing we're going
+
+00:14:59.656 --> 00:15:01.176 A:middle
+to want to do, is we're going to
+

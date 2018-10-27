@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.656 --> 00:01:00.536 A:middle
+application to transfer data
+
+00:01:00.536 --> 00:01:02.366 A:middle
+both within the application and
+
+00:01:02.366 --> 00:01:03.396 A:middle
+between applications.
+
+00:01:04.566 --> 00:01:05.836 A:middle
+Drag and Drop introduced the
+
+00:01:05.836 --> 00:01:07.936 A:middle
+concept of interactions, which
+
+00:01:07.936 --> 00:01:09.246 A:middle
+are hosted by views in your
+
+00:01:09.246 --> 00:01:09.926 A:middle
+application.
+
+00:01:10.606 --> 00:01:12.306 A:middle
+To start a drag from a view, you
+
+00:01:12.306 --> 00:01:14.506 A:middle
+add a UIDrag interaction object
+
+00:01:14.506 --> 00:01:15.686 A:middle
+to it.
+
+00:01:15.886 --> 00:01:17.566 A:middle
+To accept a drop, you add a
+
+00:01:17.566 --> 00:01:18.756 A:middle
+UIDrop interaction.
+
+00:01:19.086 --> 00:01:20.556 A:middle
+If you're not familiar with
+
+00:01:20.556 --> 00:01:22.036 A:middle
+these classes you should watch
+
+00:01:22.036 --> 00:01:23.416 A:middle
+the Introducing Drag and Drop
+
+00:01:23.416 --> 00:01:26.276 A:middle
+session from WWDC2017 for more
+
+00:01:26.276 --> 00:01:27.726 A:middle
+information, and then come back
+
+00:01:27.726 --> 00:01:28.326 A:middle
+to this video.
+
+00:01:30.316 --> 00:01:32.016 A:middle
+Now, let's start to talk about
+
+00:01:32.016 --> 00:01:32.736 A:middle
+accessibility.
+
+00:01:32.796 --> 00:01:34.526 A:middle
+Of course, you want to expose
+
+00:01:34.526 --> 00:01:36.006 A:middle
+the power of your Drag and Drop
+
+00:01:36.006 --> 00:01:37.706 A:middle
+interactions to people using
+
+00:01:37.706 --> 00:01:38.806 A:middle
+your app through an assistive
+
+00:01:38.806 --> 00:01:40.146 A:middle
+technology like Voiceover.
+
+00:01:40.776 --> 00:01:43.146 A:middle
+There are a few accessibility
+
+00:01:43.146 --> 00:01:44.736 A:middle
+problems the accessibility Drag
+
+00:01:44.736 --> 00:01:45.996 A:middle
+and Drop API's were designed to
+
+00:01:45.996 --> 00:01:46.356 A:middle
+solve.
+
+00:01:47.396 --> 00:01:48.696 A:middle
+First, your accessibility
+
+00:01:48.696 --> 00:01:50.046 A:middle
+element might not host
+
+00:01:50.046 --> 00:01:51.226 A:middle
+interactions directly.
+
+00:01:51.706 --> 00:01:53.036 A:middle
+For instance, your accessibility
+
+00:01:53.036 --> 00:01:54.546 A:middle
+element might be a view whose
+
+00:01:54.546 --> 00:01:56.816 A:middle
+subviews host interactions.
+
+00:01:57.516 --> 00:01:59.316 A:middle
+Or your element might descend
+
+00:01:59.316 --> 00:02:00.356 A:middle
+from a view that hosts
+

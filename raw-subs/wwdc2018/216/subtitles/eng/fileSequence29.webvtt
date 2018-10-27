@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.976 --> 00:29:02.136 A:middle
+through, except that it is in
+
+00:29:02.136 --> 00:29:03.606 A:middle
+the imported section instead of
+
+00:29:03.606 --> 00:29:03.946 A:middle
+exported.
+
+00:29:08.046 --> 00:29:09.696 A:middle
+Once you have your type defined,
+
+00:29:10.066 --> 00:29:11.846 A:middle
+you can claim support for it,
+
+00:29:12.256 --> 00:29:14.306 A:middle
+still in your info.plist, or the
+
+00:29:14.306 --> 00:29:14.966 A:middle
+Xcode UI.
+
+00:29:15.596 --> 00:29:19.996 A:middle
+To do this, you specify the type
+
+00:29:19.996 --> 00:29:21.336 A:middle
+identifier that you have
+
+00:29:21.336 --> 00:29:23.586 A:middle
+defined, and the only other
+
+00:29:23.836 --> 00:29:26.176 A:middle
+thing that you need to do is
+
+00:29:26.276 --> 00:29:27.276 A:middle
+define a rank.
+
+00:29:28.016 --> 00:29:30.596 A:middle
+And, this lets iOS know what to
+
+00:29:30.596 --> 00:29:32.476 A:middle
+do when you tap on the file and
+
+00:29:32.526 --> 00:29:34.276 A:middle
+multiple apps can open this
+
+00:29:34.926 --> 00:29:35.026 A:middle
+file.
+
+00:29:36.796 --> 00:29:38.606 A:middle
+For this, you have three
+
+00:29:38.606 --> 00:29:39.046 A:middle
+choices.
+
+00:29:42.316 --> 00:29:44.206 A:middle
+The first is if it is your own
+
+00:29:44.206 --> 00:29:44.646 A:middle
+file type.
+
+00:29:45.716 --> 00:29:46.496 A:middle
+You choose "owner."
+
+00:29:47.026 --> 00:29:48.316 A:middle
+And, to be clear, this should
+
+00:29:48.316 --> 00:29:50.396 A:middle
+only be used if you happen to
+
+00:29:50.396 --> 00:29:51.746 A:middle
+have invented your own file
+
+00:29:52.486 --> 00:29:52.586 A:middle
+type.
+
+00:29:53.896 --> 00:29:56.346 A:middle
+In most cases, you want to use
+
+00:29:56.426 --> 00:30:00.386 A:middle
+"default," if you can edit files
+

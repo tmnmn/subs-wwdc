@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:57.746 --> 00:03:00.026 A:middle
+So a good example of this would
+
+00:03:00.026 --> 00:03:01.266 A:middle
+be a JPEG.
+
+00:03:01.656 --> 00:03:03.036 A:middle
+If I have a JPEG that's, say, 50
+
+00:03:03.036 --> 00:03:05.586 A:middle
+kilobytes of size, when it's
+
+00:03:05.646 --> 00:03:07.416 A:middle
+memory mapped in, that actually
+
+00:03:07.416 --> 00:03:09.746 A:middle
+is mapped into four pages of
+
+00:03:09.746 --> 00:03:10.576 A:middle
+memory, give or take.
+
+00:03:10.976 --> 00:03:12.436 A:middle
+Now, the fourth page is actually
+
+00:03:12.436 --> 00:03:13.936 A:middle
+not completely full, so it can
+
+00:03:13.936 --> 00:03:14.876 A:middle
+be used for other things.
+
+00:03:14.876 --> 00:03:16.446 A:middle
+Memory's a little bit tricky
+
+00:03:16.446 --> 00:03:16.846 A:middle
+like that.
+
+00:03:16.936 --> 00:03:18.376 A:middle
+But those three pages before
+
+00:03:18.456 --> 00:03:21.306 A:middle
+will always be purgeable by the
+
+00:03:21.306 --> 00:03:21.736 A:middle
+system.
+
+00:03:22.056 --> 00:03:26.156 A:middle
+And when we talk about a typical
+
+00:03:26.446 --> 00:03:28.366 A:middle
+app, their footprint and profile
+
+00:03:28.366 --> 00:03:30.146 A:middle
+has a dirty, a compressed, and a
+
+00:03:30.146 --> 00:03:31.166 A:middle
+clean segment of memory.
+
+00:03:32.136 --> 00:03:32.926 A:middle
+Let's break these down.
+
+00:03:34.766 --> 00:03:37.156 A:middle
+So clean memory is data that can
+
+00:03:37.156 --> 00:03:37.826 A:middle
+be paged out.
+
+00:03:38.346 --> 00:03:39.666 A:middle
+Now, these are the memory-mapped
+
+00:03:39.666 --> 00:03:40.676 A:middle
+files we just talked about.
+
+00:03:41.016 --> 00:03:43.216 A:middle
+Could be images, data Blobs,
+
+00:03:43.566 --> 00:03:44.376 A:middle
+training models.
+
+00:03:44.916 --> 00:03:47.126 A:middle
+They can also be frameworks.
+
+00:03:48.546 --> 00:03:50.566 A:middle
+So every framework has a DATA
+
+00:03:50.566 --> 00:03:51.486 A:middle
+CONST section.
+
+00:03:52.506 --> 00:03:53.466 A:middle
+Now, this is typically clean,
+
+00:03:53.466 --> 00:03:54.406 A:middle
+but if you do any runtime
+
+00:03:54.406 --> 00:03:55.726 A:middle
+shenanigans like swizzling, that
+
+00:03:55.726 --> 00:04:00.876 A:middle
+can actually make it dirty.
+

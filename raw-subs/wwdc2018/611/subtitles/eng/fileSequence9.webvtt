@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.426 --> 00:09:01.006 A:middle
+two textures that were backed by
+
+00:09:01.006 --> 00:09:03.256 A:middle
+them can now be replaced with
+
+00:09:03.256 --> 00:09:05.686 A:middle
+single shareable Metal texture
+
+00:09:05.976 --> 00:09:08.246 A:middle
+that is over 2D array type.
+
+00:09:09.236 --> 00:09:11.956 A:middle
+We will then assign this texture
+
+00:09:12.146 --> 00:09:15.136 A:middle
+to both texture descriptors from
+
+00:09:15.176 --> 00:09:19.116 A:middle
+open VRSDK, and change its type
+
+00:09:19.526 --> 00:09:21.416 A:middle
+from IOSurface to Metal.
+
+00:09:21.526 --> 00:09:25.076 A:middle
+After doing these few changes,
+
+00:09:25.836 --> 00:09:27.826 A:middle
+we can submit image for the left
+
+00:09:27.826 --> 00:09:31.606 A:middle
+and right I to the compositor.
+
+00:09:32.346 --> 00:09:34.036 A:middle
+Compositor will now know that
+
+00:09:34.036 --> 00:09:35.666 A:middle
+we've passed shared Metal
+
+00:09:35.666 --> 00:09:37.446 A:middle
+texture with advanced layout,
+
+00:09:37.686 --> 00:09:40.366 A:middle
+instead of IOSurface, and if we
+
+00:09:40.366 --> 00:09:42.526 A:middle
+check, if its type is 2D array
+
+00:09:42.856 --> 00:09:44.596 A:middle
+or 2D multi-sampling array.
+
+00:09:45.246 --> 00:09:47.336 A:middle
+If it is, then compositor will
+
+00:09:47.416 --> 00:09:49.736 A:middle
+automatically assume that image
+
+00:09:49.736 --> 00:09:51.546 A:middle
+for the left i is stored in
+
+00:09:51.546 --> 00:09:54.266 A:middle
+slice 0, and image for right i
+
+00:09:54.266 --> 00:09:55.876 A:middle
+is stored in slice 1.
+
+00:09:56.536 --> 00:09:57.916 A:middle
+So your application doesn't need
+
+00:09:57.966 --> 00:09:59.396 A:middle
+to do anything more about that.
+
+00:09:59.396 --> 00:10:03.326 A:middle
+And of course, sharing Metal
+

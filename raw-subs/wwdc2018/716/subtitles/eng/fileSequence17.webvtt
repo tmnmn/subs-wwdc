@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.526 --> 00:17:00.236 A:middle
+It's both your eyes, eyebrows,
+
+00:17:00.236 --> 00:17:01.726 A:middle
+nose, and mouth location on your
+
+00:17:01.726 --> 00:17:02.016 A:middle
+face.
+
+00:17:02.996 --> 00:17:05.425 A:middle
+Let's first look at how to do it
+
+00:17:05.425 --> 00:17:05.955 A:middle
+implicitly.
+
+00:17:13.675 --> 00:17:14.955 A:middle
+I have a simple [inaudible] a
+
+00:17:14.955 --> 00:17:16.266 A:middle
+bit similar to what we have seen
+
+00:17:16.266 --> 00:17:16.646 A:middle
+already.
+
+00:17:17.195 --> 00:17:18.205 A:middle
+First, I'm going to create my
+
+00:17:18.205 --> 00:17:19.316 A:middle
+face landmarks request.
+
+00:17:20.566 --> 00:17:22.036 A:middle
+Then, I'm going to create my
+
+00:17:22.036 --> 00:17:22.846 A:middle
+image request handler.
+
+00:17:23.836 --> 00:17:25.006 A:middle
+Then, I'm going to process my
+
+00:17:25.006 --> 00:17:25.415 A:middle
+request.
+
+00:17:26.246 --> 00:17:27.256 A:middle
+And finally, I'm going to look
+
+00:17:27.256 --> 00:17:27.836 A:middle
+at the results.
+
+00:17:28.936 --> 00:17:30.136 A:middle
+If I had an image with a single
+
+00:17:30.136 --> 00:17:31.976 A:middle
+face in it, my results would
+
+00:17:31.976 --> 00:17:35.276 A:middle
+look something like this.
+
+00:17:35.406 --> 00:17:35.716 A:middle
+Sorry.
+
+00:17:36.066 --> 00:17:39.076 A:middle
+N is for the sequence, and the
+
+00:17:39.306 --> 00:17:39.836 A:middle
+results.
+
+00:17:40.846 --> 00:17:42.046 A:middle
+So, I get the bounding box of
+
+00:17:42.046 --> 00:17:42.536 A:middle
+the face.
+
+00:17:43.036 --> 00:17:43.866 A:middle
+That's the location for the
+
+00:17:43.866 --> 00:17:46.436 A:middle
+face, and I get the landmarks
+
+00:17:46.686 --> 00:17:47.166 A:middle
+for the face.
+
+00:17:48.576 --> 00:17:49.786 A:middle
+What's important to understand
+
+00:17:49.786 --> 00:17:51.376 A:middle
+here is that when the processing
+
+00:17:51.376 --> 00:17:52.726 A:middle
+of the face landmark request
+
+00:17:52.726 --> 00:17:54.776 A:middle
+starts, face landmarks request
+
+00:17:55.136 --> 00:17:56.906 A:middle
+figures out that faces have not
+
+00:17:56.906 --> 00:17:59.316 A:middle
+been detected yet, and it runs
+
+00:17:59.316 --> 00:18:01.136 A:middle
+on our behalf inside face
+

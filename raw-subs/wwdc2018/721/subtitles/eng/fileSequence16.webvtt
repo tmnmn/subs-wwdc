@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.146 --> 00:16:00.696 A:middle
+Identities and Remove Credential
+
+00:16:00.696 --> 00:16:03.386 A:middle
+Identities methods.
+
+00:16:03.386 --> 00:16:04.916 A:middle
+Otherwise, if the Store hasn't
+
+00:16:04.916 --> 00:16:06.656 A:middle
+been written to yet, perhaps
+
+00:16:06.656 --> 00:16:07.746 A:middle
+because your app was just
+
+00:16:07.786 --> 00:16:08.996 A:middle
+disabled and re-enabled,
+
+00:16:10.026 --> 00:16:11.446 A:middle
+Supports Incremental Updates
+
+00:16:11.446 --> 00:16:12.546 A:middle
+will return false.
+
+00:16:12.736 --> 00:16:13.706 A:middle
+And you should populate the
+
+00:16:13.706 --> 00:16:15.176 A:middle
+Identity Store by providing the
+
+00:16:15.176 --> 00:16:16.176 A:middle
+full list of credential
+
+00:16:16.176 --> 00:16:18.046 A:middle
+identities using the Replace
+
+00:16:18.046 --> 00:16:19.366 A:middle
+Credential Identities With
+
+00:16:19.626 --> 00:16:19.996 A:middle
+method.
+
+00:16:22.306 --> 00:16:23.466 A:middle
+Once your app starts saving
+
+00:16:23.466 --> 00:16:24.626 A:middle
+credential identities to the
+
+00:16:24.626 --> 00:16:26.716 A:middle
+store, AutoFill can start
+
+00:16:26.716 --> 00:16:27.546 A:middle
+suggesting your app's
+
+00:16:27.546 --> 00:16:28.576 A:middle
+credentials in the QuickType
+
+00:16:28.576 --> 00:16:28.776 A:middle
+bar.
+
+00:16:29.916 --> 00:16:31.556 A:middle
+Next, you'll need to add support
+
+00:16:31.556 --> 00:16:32.816 A:middle
+in your extension to provide the
+
+00:16:32.816 --> 00:16:33.976 A:middle
+password when one of these
+
+00:16:33.976 --> 00:16:35.246 A:middle
+credential suggestions is
+
+00:16:35.246 --> 00:16:35.756 A:middle
+selected.
+
+00:16:37.836 --> 00:16:39.846 A:middle
+When this happens, AutoFill will
+
+00:16:39.846 --> 00:16:41.376 A:middle
+first launch your extension and
+
+00:16:41.376 --> 00:16:42.866 A:middle
+ask it for the password without
+
+00:16:42.866 --> 00:16:44.166 A:middle
+presenting your UI on screen.
+
+00:16:44.346 --> 00:16:46.886 A:middle
+When it does this, AutoFill will
+
+00:16:46.886 --> 00:16:48.596 A:middle
+call the Provide Credential
+
+00:16:48.626 --> 00:16:50.306 A:middle
+Without User Interaction For
+
+00:16:50.536 --> 00:16:51.896 A:middle
+method on your view controller,
+
+00:16:52.616 --> 00:16:53.846 A:middle
+providing an AS Password
+
+00:16:53.846 --> 00:16:54.776 A:middle
+Credential Identity,
+
+00:16:55.026 --> 00:16:56.026 A:middle
+representing the credential
+
+00:16:56.026 --> 00:16:56.526 A:middle
+being filled.
+
+00:16:57.136 --> 00:16:59.766 A:middle
+In this method, you will look up
+
+00:16:59.766 --> 00:17:00.956 A:middle
+the associated password
+

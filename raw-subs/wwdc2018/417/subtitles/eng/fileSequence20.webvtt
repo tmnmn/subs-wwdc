@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.376 --> 00:20:00.546 A:middle
+situations where your class is
+
+00:20:00.546 --> 00:20:02.386 A:middle
+talking to another class, either
+
+00:20:02.386 --> 00:20:03.856 A:middle
+elsewhere in your app or
+
+00:20:03.856 --> 00:20:04.936 A:middle
+provided by the SDK.
+
+00:20:05.676 --> 00:20:07.316 A:middle
+And you found it difficult to
+
+00:20:07.316 --> 00:20:09.446 A:middle
+write a test, because it's hard
+
+00:20:09.446 --> 00:20:10.926 A:middle
+or even impossible to create
+
+00:20:10.926 --> 00:20:11.986 A:middle
+that external class.
+
+00:20:12.906 --> 00:20:14.546 A:middle
+This happens a lot, especially
+
+00:20:14.546 --> 00:20:16.076 A:middle
+with APIs that aren't designed
+
+00:20:16.076 --> 00:20:17.996 A:middle
+to be created directly, and it's
+
+00:20:17.996 --> 00:20:19.606 A:middle
+even harder when those APIs have
+
+00:20:19.956 --> 00:20:21.066 A:middle
+delegate methods that you need
+
+00:20:21.986 --> 00:20:22.846 A:middle
+to test.
+
+00:20:22.846 --> 00:20:24.056 A:middle
+I'd like to show how we can use
+
+00:20:24.136 --> 00:20:25.636 A:middle
+protocols to solve this problem
+
+00:20:26.026 --> 00:20:27.536 A:middle
+by mocking interaction with
+
+00:20:27.536 --> 00:20:29.566 A:middle
+external classes but do so
+
+00:20:29.636 --> 00:20:31.246 A:middle
+without making our tests less
+
+00:20:31.246 --> 00:20:31.686 A:middle
+reliable.
+
+00:20:33.856 --> 00:20:35.546 A:middle
+In our app, we have a
+
+00:20:35.686 --> 00:20:37.236 A:middle
+CurrentLocationProvider class
+
+00:20:37.236 --> 00:20:38.736 A:middle
+that uses CoreLocation.
+
+00:20:39.876 --> 00:20:41.546 A:middle
+It creates a CLLocationManager
+
+00:20:41.716 --> 00:20:42.776 A:middle
+and configures it in its
+
+00:20:42.776 --> 00:20:44.876 A:middle
+initializer, setting its desired
+
+00:20:44.876 --> 00:20:46.446 A:middle
+accuracy property and setting
+
+00:20:46.446 --> 00:20:47.356 A:middle
+itself as the delegate.
+
+00:20:47.816 --> 00:20:51.196 A:middle
+Here's the meat of this class.
+
+00:20:51.506 --> 00:20:52.206 A:middle
+It's a method called
+
+00:20:52.206 --> 00:20:53.456 A:middle
+checkCurrentLocation.
+
+00:20:54.196 --> 00:20:55.586 A:middle
+It requests the current location
+
+00:20:55.706 --> 00:20:56.926 A:middle
+and takes a completion block
+
+00:20:56.926 --> 00:20:58.006 A:middle
+that returns whether that
+
+00:20:58.006 --> 00:20:59.506 A:middle
+location is a point of interest.
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.096 --> 00:20:00.266 A:middle
+array containing the string
+
+00:20:00.266 --> 00:20:00.776 A:middle
+gummy bears.
+
+00:20:01.466 --> 00:20:02.646 A:middle
+And if we print the first
+
+00:20:02.646 --> 00:20:03.976 A:middle
+element of that ray, we don't
+
+00:20:03.976 --> 00:20:05.176 A:middle
+need to consult the closure at
+
+00:20:05.176 --> 00:20:06.106 A:middle
+all or the lazy collection at
+
+00:20:06.106 --> 00:20:06.246 A:middle
+all.
+
+00:20:06.246 --> 00:20:07.376 A:middle
+We basically stamped out the
+
+00:20:07.376 --> 00:20:08.986 A:middle
+laziness and now have an eager
+
+00:20:08.986 --> 00:20:09.226 A:middle
+array.
+
+00:20:11.676 --> 00:20:13.156 A:middle
+So when should we be lazy?
+
+00:20:14.156 --> 00:20:15.586 A:middle
+Well, lazy collections are a
+
+00:20:15.586 --> 00:20:16.616 A:middle
+really great way to eliminate
+
+00:20:16.616 --> 00:20:17.896 A:middle
+the overhead of chained maps and
+
+00:20:17.896 --> 00:20:18.406 A:middle
+filters.
+
+00:20:18.686 --> 00:20:19.566 A:middle
+They excel when you find
+
+00:20:19.566 --> 00:20:20.826 A:middle
+yourself only needing part of
+
+00:20:20.826 --> 00:20:21.666 A:middle
+the result of a collection
+
+00:20:21.666 --> 00:20:24.116 A:middle
+calculation, or we should avoid
+
+00:20:24.116 --> 00:20:26.006 A:middle
+using lazy if your closures have
+
+00:20:26.276 --> 00:20:27.726 A:middle
+side effects, and your closures
+
+00:20:27.726 --> 00:20:28.946 A:middle
+should rarely have side effects.
+
+00:20:29.686 --> 00:20:31.406 A:middle
+And be sure to reify back, or I
+
+00:20:31.406 --> 00:20:32.526 A:middle
+should say, be sure to consider
+
+00:20:32.526 --> 00:20:33.856 A:middle
+reifying back into a regular
+
+00:20:33.856 --> 00:20:35.146 A:middle
+collection when you cross API
+
+00:20:35.146 --> 00:20:35.586 A:middle
+boundaries.
+
+00:20:36.196 --> 00:20:37.046 A:middle
+Lazy should often be an
+
+00:20:37.046 --> 00:20:38.026 A:middle
+implementation detail.
+
+00:20:38.546 --> 00:20:40.996 A:middle
+Now up until now, we've been
+
+00:20:40.996 --> 00:20:42.226 A:middle
+able to do a lot of cool things
+
+00:20:42.336 --> 00:20:43.616 A:middle
+with just mutable collections,
+
+00:20:44.926 --> 00:20:46.426 A:middle
+but of course Swift lets us
+
+00:20:46.426 --> 00:20:47.696 A:middle
+mutate our collections as well.
+
+00:20:49.106 --> 00:20:50.036 A:middle
+Let's talk about the two kinds
+
+00:20:50.036 --> 00:20:51.206 A:middle
+of collections that we haven't
+
+00:20:51.206 --> 00:20:52.386 A:middle
+talked about yet.
+
+00:20:52.936 --> 00:20:54.556 A:middle
+The first of these is mutable
+
+00:20:54.556 --> 00:20:54.976 A:middle
+collection.
+
+00:20:56.036 --> 00:20:56.856 A:middle
+This adds a setter to the
+
+00:20:56.856 --> 00:20:58.006 A:middle
+subscript so that you can change
+
+00:20:58.006 --> 00:20:59.316 A:middle
+the contents of a collection but
+
+00:20:59.316 --> 00:20:59.866 A:middle
+not its length.
+

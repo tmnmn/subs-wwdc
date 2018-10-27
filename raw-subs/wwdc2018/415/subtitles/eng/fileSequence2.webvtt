@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.166 --> 00:02:00.986 A:middle
+So let's first understand what
+
+00:02:00.986 --> 00:02:02.726 A:middle
+the build process is and how it
+
+00:02:02.726 --> 00:02:03.916 A:middle
+works when building a typical
+
+00:02:03.916 --> 00:02:05.466 A:middle
+app like PetWall in Xcode.
+
+00:02:05.836 --> 00:02:07.136 A:middle
+You can see here we've got an
+
+00:02:07.136 --> 00:02:08.936 A:middle
+app target, a framework, a bunch
+
+00:02:08.936 --> 00:02:10.175 A:middle
+of different source code files
+
+00:02:10.175 --> 00:02:11.526 A:middle
+in Swift and Objective-C.
+
+00:02:11.896 --> 00:02:13.176 A:middle
+And maybe this looks a bit like
+
+00:02:13.176 --> 00:02:13.786 A:middle
+your own project.
+
+00:02:15.356 --> 00:02:18.036 A:middle
+So when you build an app,
+
+00:02:19.166 --> 00:02:20.116 A:middle
+there's a number of steps
+
+00:02:20.116 --> 00:02:21.586 A:middle
+involved to go from the source
+
+00:02:21.586 --> 00:02:22.956 A:middle
+code and resources in your
+
+00:02:22.956 --> 00:02:24.686 A:middle
+project to the package that
+
+00:02:24.686 --> 00:02:26.086 A:middle
+you're shipping to customers or
+
+00:02:26.136 --> 00:02:27.476 A:middle
+uploading to the App Store for
+
+00:02:27.476 --> 00:02:28.086 A:middle
+distribution.
+
+00:02:28.086 --> 00:02:30.486 A:middle
+You have to compile and link
+
+00:02:30.486 --> 00:02:31.576 A:middle
+source code.
+
+00:02:31.906 --> 00:02:33.916 A:middle
+Copy and process resources like
+
+00:02:33.916 --> 00:02:35.756 A:middle
+headers, asset catalogues and
+
+00:02:35.756 --> 00:02:36.676 A:middle
+storyboards.
+
+00:02:37.276 --> 00:02:39.066 A:middle
+And finally code sign and maybe
+
+00:02:39.066 --> 00:02:40.166 A:middle
+even do some custom work in a
+
+00:02:40.166 --> 00:02:41.776 A:middle
+shell script or a make file like
+
+00:02:41.896 --> 00:02:43.516 A:middle
+building API documentation for
+
+00:02:43.516 --> 00:02:45.706 A:middle
+your framework or running code
+
+00:02:45.706 --> 00:02:47.036 A:middle
+linting and validation tools.
+
+00:02:48.466 --> 00:02:49.996 A:middle
+Now most of these tasks in the
+
+00:02:49.996 --> 00:02:51.396 A:middle
+build process are performed by
+
+00:02:51.396 --> 00:02:52.456 A:middle
+running command line tools.
+
+00:02:52.456 --> 00:02:54.956 A:middle
+Like Clang, LD, AC tool, IB
+
+00:02:54.956 --> 00:02:56.676 A:middle
+tool, Code sign, and so on.
+
+00:02:57.446 --> 00:02:59.036 A:middle
+These tools have to be executed
+
+00:02:59.196 --> 00:03:00.216 A:middle
+with a very specific set of
+

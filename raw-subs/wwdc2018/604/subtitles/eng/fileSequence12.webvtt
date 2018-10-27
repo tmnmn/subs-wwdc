@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.856 --> 00:12:02.226 A:middle
+creation, data contained by
+
+00:12:02.226 --> 00:12:03.976 A:middle
+these objects can be changed.
+
+00:12:04.626 --> 00:12:07.296 A:middle
+Metal can do all the expensive
+
+00:12:07.446 --> 00:12:09.016 A:middle
+setup for an object once when
+
+00:12:09.016 --> 00:12:09.596 A:middle
+it's created.
+
+00:12:10.396 --> 00:12:12.146 A:middle
+OpenGL's mutable model makes it
+
+00:12:12.176 --> 00:12:13.766 A:middle
+completely possible that if your
+
+00:12:13.766 --> 00:12:15.186 A:middle
+app touches a little piece of
+
+00:12:15.186 --> 00:12:18.176 A:middle
+state the recompilation of that
+
+00:12:18.176 --> 00:12:19.206 A:middle
+object may occur.
+
+00:12:19.946 --> 00:12:21.256 A:middle
+And even if your app doesn't
+
+00:12:21.256 --> 00:12:23.846 A:middle
+change an object state OpenGL
+
+00:12:23.846 --> 00:12:25.176 A:middle
+needs to check a hierarchy of
+
+00:12:25.226 --> 00:12:26.856 A:middle
+flags to confirm this before
+
+00:12:26.856 --> 00:12:27.326 A:middle
+drawing.
+
+00:12:28.186 --> 00:12:30.596 A:middle
+So with this immutable model
+
+00:12:30.596 --> 00:12:32.176 A:middle
+Metal never needs to check for
+
+00:12:32.176 --> 00:12:34.106 A:middle
+object state changes make draw
+
+00:12:34.106 --> 00:12:36.016 A:middle
+calls much faster.
+
+00:12:37.556 --> 00:12:39.166 A:middle
+Additionally, objects can be
+
+00:12:39.256 --> 00:12:41.106 A:middle
+efficiently used across threads,
+
+00:12:41.516 --> 00:12:42.756 A:middle
+Metal never needs to lock an
+
+00:12:42.756 --> 00:12:43.746 A:middle
+object to prevent it from
+
+00:12:43.746 --> 00:12:44.996 A:middle
+getting into an invalid state
+
+00:12:45.146 --> 00:12:45.956 A:middle
+from a change on another thread.
+
+00:12:51.306 --> 00:12:52.826 A:middle
+So let's talk about porting.
+
+00:12:52.826 --> 00:12:57.256 A:middle
+Here is the typical phase, here
+
+00:12:57.256 --> 00:12:59.286 A:middle
+are typical phases of a
+
+00:12:59.286 --> 00:13:00.226 A:middle
+rendering application.
+

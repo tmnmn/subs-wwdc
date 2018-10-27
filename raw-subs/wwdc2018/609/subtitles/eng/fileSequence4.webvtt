@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.506 --> 00:04:00.386 A:middle
+from 0 to 9.
+
+00:04:00.386 --> 00:04:02.826 A:middle
+In this example, we are
+
+00:04:02.826 --> 00:04:04.546 A:middle
+correctly classifying this image
+
+00:04:04.826 --> 00:04:06.406 A:middle
+as an image of a digit 7.
+
+00:04:07.086 --> 00:04:11.496 A:middle
+For inference, we initialize our
+
+00:04:11.496 --> 00:04:12.886 A:middle
+network with trained parameters.
+
+00:04:14.086 --> 00:04:15.436 A:middle
+So, in this example, the trained
+
+00:04:15.436 --> 00:04:16.716 A:middle
+parameters add the weights for
+
+00:04:16.716 --> 00:04:18.196 A:middle
+the convolution, and fully
+
+00:04:18.196 --> 00:04:19.106 A:middle
+connected primitives.
+
+00:04:20.426 --> 00:04:21.886 A:middle
+The goal of a training algorithm
+
+00:04:21.926 --> 00:04:23.046 A:middle
+is to compute these trained
+
+00:04:23.046 --> 00:04:24.586 A:middle
+parameters, so the network can
+
+00:04:24.586 --> 00:04:26.706 A:middle
+use them to map inputs to
+
+00:04:26.706 --> 00:04:27.896 A:middle
+correct outputs during
+
+00:04:27.926 --> 00:04:28.416 A:middle
+inference.
+
+00:04:29.076 --> 00:04:31.436 A:middle
+When we start the training
+
+00:04:31.436 --> 00:04:32.796 A:middle
+process, we don't have any
+
+00:04:32.796 --> 00:04:33.106 A:middle
+weights.
+
+00:04:33.496 --> 00:04:34.536 A:middle
+We need to compute them.
+
+00:04:34.786 --> 00:04:37.116 A:middle
+So, the first step is to
+
+00:04:37.246 --> 00:04:38.446 A:middle
+initialize the weights with
+
+00:04:38.446 --> 00:04:39.386 A:middle
+small, random numbers.
+
+00:04:40.026 --> 00:04:41.106 A:middle
+And now we are ready to train
+
+00:04:41.106 --> 00:04:41.676 A:middle
+this network.
+
+00:04:41.946 --> 00:04:43.386 A:middle
+So, let's take a look at all the
+
+00:04:43.436 --> 00:04:44.696 A:middle
+steps involved in a training
+
+00:04:44.696 --> 00:04:45.236 A:middle
+process.
+
+00:04:47.836 --> 00:04:49.146 A:middle
+Training is an iterative
+
+00:04:49.216 --> 00:04:51.006 A:middle
+process, and each iteration of
+
+00:04:51.006 --> 00:04:52.506 A:middle
+training can be divided into
+
+00:04:52.506 --> 00:04:53.056 A:middle
+four steps.
+
+00:04:53.296 --> 00:04:55.256 A:middle
+The first step is the forward
+
+00:04:55.256 --> 00:04:55.376 A:middle
+pass.
+
+00:04:56.026 --> 00:04:57.556 A:middle
+This is when we take an input
+
+00:04:57.696 --> 00:04:59.366 A:middle
+and pass it to our network to
+
+00:04:59.366 --> 00:05:00.296 A:middle
+produce an output.
+

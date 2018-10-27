@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.786 --> 00:14:00.986 A:middle
+display hardware is able to get
+
+00:14:00.986 --> 00:14:02.256 A:middle
+the new frame on time.
+
+00:14:03.146 --> 00:14:04.776 A:middle
+But now, we're about to display
+
+00:14:04.776 --> 00:14:05.776 A:middle
+another row of images.
+
+00:14:06.116 --> 00:14:07.636 A:middle
+And we're about to ask Core
+
+00:14:07.636 --> 00:14:09.476 A:middle
+Graphics to decode those images
+
+00:14:10.386 --> 00:14:11.646 A:middle
+before we hand the cells back to
+
+00:14:11.646 --> 00:14:12.466 A:middle
+UICollectionView.
+
+00:14:13.096 --> 00:14:14.896 A:middle
+And that could take a lot of CPU
+
+00:14:14.896 --> 00:14:15.236 A:middle
+time.
+
+00:14:16.346 --> 00:14:17.456 A:middle
+So much so, that we don't get
+
+00:14:17.456 --> 00:14:19.396 A:middle
+around to re-rendering the frame
+
+00:14:19.396 --> 00:14:19.736 A:middle
+buffer.
+
+00:14:20.716 --> 00:14:21.726 A:middle
+But the display hardware is
+
+00:14:21.726 --> 00:14:22.906 A:middle
+operating on a fixed interval.
+
+00:14:23.846 --> 00:14:25.546 A:middle
+So, from the user's perspective
+
+00:14:26.036 --> 00:14:27.436 A:middle
+the application has just
+
+00:14:28.976 --> 00:14:29.216 A:middle
+stuttered.
+
+00:14:29.306 --> 00:14:30.366 A:middle
+Now, we're done decoding these
+
+00:14:30.366 --> 00:14:31.466 A:middle
+images, we're able to provide
+
+00:14:31.466 --> 00:14:32.436 A:middle
+those cells back to
+
+00:14:32.656 --> 00:14:33.656 A:middle
+UICollectionView.
+
+00:14:34.006 --> 00:14:36.316 A:middle
+And animation continues on, as
+
+00:14:36.316 --> 00:14:36.766 A:middle
+before.
+
+00:14:37.856 --> 00:14:39.126 A:middle
+Just saw a visual hitch, there.
+
+00:14:40.486 --> 00:14:42.196 A:middle
+Now, in addition to the obvious
+
+00:14:42.196 --> 00:14:44.386 A:middle
+responsiveness consequences of
+
+00:14:44.386 --> 00:14:46.766 A:middle
+this behavior, there's a more
+
+00:14:46.766 --> 00:14:48.846 A:middle
+subtle detrimental effect on
+
+00:14:48.846 --> 00:14:49.706 A:middle
+battery life.
+
+00:14:50.366 --> 00:14:52.026 A:middle
+Because iOS is very good at
+
+00:14:52.026 --> 00:14:54.246 A:middle
+managing the power demand on the
+
+00:14:54.246 --> 00:14:56.966 A:middle
+batter when there is a smooth
+
+00:14:57.006 --> 00:14:59.316 A:middle
+constant demand on the CPUs.
+
+00:14:59.646 --> 00:15:00.876 A:middle
+And what we have here are
+

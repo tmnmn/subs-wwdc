@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.346 --> 00:09:00.886 A:middle
+URLProtocol communicates
+
+00:09:00.886 --> 00:09:02.886 A:middle
+progress back to the system via
+
+00:09:02.886 --> 00:09:07.976 A:middle
+the URLProtocolClient protocol.
+
+00:09:08.056 --> 00:09:09.466 A:middle
+We can use this in this way.
+
+00:09:10.886 --> 00:09:12.726 A:middle
+We make a MockURLProtocol class
+
+00:09:12.776 --> 00:09:15.586 A:middle
+in our test bundle, overriding
+
+00:09:15.746 --> 00:09:18.046 A:middle
+canInit request to indicate to
+
+00:09:18.046 --> 00:09:19.336 A:middle
+the system that we're interested
+
+00:09:19.336 --> 00:09:20.756 A:middle
+in any request that it offers
+
+00:09:21.606 --> 00:09:21.706 A:middle
+us.
+
+00:09:23.596 --> 00:09:25.276 A:middle
+Implement canonicalRequest for
+
+00:09:25.276 --> 00:09:27.316 A:middle
+request, but the start loading
+
+00:09:27.316 --> 00:09:28.496 A:middle
+and stop loading method's where
+
+00:09:28.496 --> 00:09:29.786 A:middle
+most of the action happens.
+
+00:09:34.516 --> 00:09:36.126 A:middle
+To give our tests a way to hook
+
+00:09:36.126 --> 00:09:38.216 A:middle
+into this URLProtocol, we'll
+
+00:09:38.216 --> 00:09:39.376 A:middle
+provide a closure property
+
+00:09:39.606 --> 00:09:41.506 A:middle
+requestHandler for the test to
+
+00:09:41.646 --> 00:09:42.000 A:middle
+set.
+
+00:09:44.636 --> 00:09:47.106 A:middle
+When a URLSession task begins,
+
+00:09:47.136 --> 00:09:48.716 A:middle
+the system will instantiate our
+
+00:09:48.746 --> 00:09:51.156 A:middle
+URLProtocol subclass, giving it
+
+00:09:51.156 --> 00:09:53.606 A:middle
+the URLRequest value and a
+
+00:09:53.606 --> 00:09:55.206 A:middle
+URLProtocol client instance.
+
+00:09:56.996 --> 00:09:58.536 A:middle
+Then it'll call our startLoading
+
+00:09:58.536 --> 00:10:00.906 A:middle
+method, where we'll take our
+

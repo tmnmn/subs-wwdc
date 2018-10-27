@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.366 --> 00:27:03.016 A:middle
+begin with os log which is
+
+00:27:03.016 --> 00:27:04.676 A:middle
+coming from signpost.networking.
+
+00:27:04.946 --> 00:27:07.336 A:middle
+Let's take a look at it.
+
+00:27:07.336 --> 00:27:08.916 A:middle
+This log takes our app
+
+00:27:08.916 --> 00:27:11.076 A:middle
+identifier as subsystem and
+
+00:27:11.106 --> 00:27:12.296 A:middle
+networking as category.
+
+00:27:15.046 --> 00:27:16.506 A:middle
+We pass background image name,
+
+00:27:17.286 --> 00:27:18.996 A:middle
+previously created signpost ID
+
+00:27:19.436 --> 00:27:20.886 A:middle
+and message format, which
+
+00:27:20.886 --> 00:27:22.016 A:middle
+includes image name.
+
+00:27:23.956 --> 00:27:25.276 A:middle
+Here, we wrap it in public
+
+00:27:25.276 --> 00:27:27.406 A:middle
+specifier because it's a string
+
+00:27:28.286 --> 00:27:30.056 A:middle
+and caller, which is address of
+
+00:27:30.056 --> 00:27:30.406 A:middle
+a cell.
+
+00:27:31.816 --> 00:27:33.916 A:middle
+Our download could complete in
+
+00:27:33.956 --> 00:27:35.476 A:middle
+two ways, successfully.
+
+00:27:36.106 --> 00:27:39.086 A:middle
+Let's take a look at it now.
+
+00:27:39.166 --> 00:27:40.236 A:middle
+When it completes like that,
+
+00:27:40.756 --> 00:27:42.816 A:middle
+delegate method it's called.
+
+00:27:43.866 --> 00:27:45.636 A:middle
+We create signpost ID just like
+
+00:27:45.636 --> 00:27:48.496 A:middle
+before and call OS signpost end.
+
+00:27:49.546 --> 00:27:52.186 A:middle
+This time we pass status and
+
+00:27:52.186 --> 00:27:52.556 A:middle
+size.
+
+00:27:53.876 --> 00:27:56.956 A:middle
+Value for status is completed.
+
+00:27:58.256 --> 00:28:00.996 A:middle
+And size is set to the image
+

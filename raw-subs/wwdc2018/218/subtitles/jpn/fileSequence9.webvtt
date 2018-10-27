@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.472 --> 00:09:03.177 align:start position:27% line:-2
+CGカラーが静的であれば
+アピアランスは変わりません
+
+00:09:03.677 --> 00:09:07.714 align:start position:32% line:-2
+イニシャライザの中に
+レイヤーを配置すると
+
+00:09:07.848 --> 00:09:11.752 align:start position:27% line:-2
+アピアランスの変化時に
+コードが実行されないのです
+
+00:09:13.020 --> 00:09:17.191 align:start position:34% line:-2
+特定のエリアで
+コードを書くことが
+
+00:09:17.424 --> 00:09:19.459 align:start position:34% line:-1
+問題解決のカギです
+
+00:09:19.560 --> 00:09:23.564 align:start position:12% line:-2
+つまり updateConstraints
+layout draw
+
+00:09:23.664 --> 00:09:26.867 align:start position:20% line:-2
+NSViewの
+updateLayerメソッドです
+
+00:09:27.501 --> 00:09:30.938 align:start position:34% line:-2
+AppKitは
+これらのメソッドを
+
+00:09:31.038 --> 00:09:32.773 align:start position:34% line:-1
+自動で呼び出します
+
+00:09:33.240 --> 00:09:36.777 align:start position:29% line:-2
+もちろん手動で行うことも
+可能です
+
+00:09:36.877 --> 00:09:39.646 align:start position:9% line:-2
+needsUpdateConstraintsや
+needsLayout
+
+00:09:39.746 --> 00:09:43.884 align:start position:18% line:-2
+needsDisplayプロパティも
+AppKitは自動で呼び出します
+
+00:09:46.019 --> 00:09:47.688 align:start position:36% line:-1
+話を戻しましょう
+
+00:09:48.822 --> 00:09:54.261 align:start position:18% line:-2
+initをオーバーライドする代わりに
+updateLayerを実行します
+
+00:09:54.895 --> 00:09:58.365 align:start position:27% line:-2
+NSColorに
+CGカラーを要求することで
+
+00:09:58.465 --> 00:10:01.134 align:start position:32% line:-2
+レイヤーを
+問題なく追加できます
+

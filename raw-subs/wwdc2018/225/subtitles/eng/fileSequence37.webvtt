@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.706 --> 00:37:03.546 A:middle
+batch updates, and here I'm just
+
+00:37:04.506 --> 00:37:06.176 A:middle
+updating my data source, again,
+
+00:37:06.496 --> 00:37:07.966 A:middle
+same as before, and calling
+
+00:37:08.156 --> 00:37:09.216 A:middle
+reload items on the
+
+00:37:09.216 --> 00:37:09.806 A:middle
+CollectionView.
+
+00:37:10.336 --> 00:37:12.496 A:middle
+I'm just performing it in a UI
+
+00:37:12.496 --> 00:37:14.156 A:middle
+view performed without animation
+
+00:37:14.686 --> 00:37:16.376 A:middle
+closure because if you look
+
+00:37:16.376 --> 00:37:18.336 A:middle
+closely at our spec, it's
+
+00:37:18.336 --> 00:37:19.716 A:middle
+actually nonanimated, that
+
+00:37:19.716 --> 00:37:20.436 A:middle
+initial reload.
+
+00:37:22.026 --> 00:37:24.236 A:middle
+Okay. So next up, we have to
+
+00:37:24.236 --> 00:37:25.266 A:middle
+take care of our remaining
+
+00:37:25.266 --> 00:37:27.496 A:middle
+updates, that delete and the
+
+00:37:29.616 --> 00:37:29.716 A:middle
+move.
+
+00:37:29.936 --> 00:37:31.866 A:middle
+And let's reason about them for
+
+00:37:31.866 --> 00:37:32.386 A:middle
+a second.
+
+00:37:32.386 --> 00:37:35.766 A:middle
+We have a delete at index two,
+
+00:37:35.766 --> 00:37:38.176 A:middle
+and then we're moving the item
+
+00:37:38.176 --> 00:37:40.376 A:middle
+at index three to index zero.
+
+00:37:41.386 --> 00:37:43.256 A:middle
+So if we break down our move
+
+00:37:43.256 --> 00:37:44.886 A:middle
+using the guidelines that we
+
+00:37:44.886 --> 00:37:47.146 A:middle
+just learned about, that becomes
+
+00:37:47.146 --> 00:37:50.046 A:middle
+a delete at index 2, a delete at
+
+00:37:50.046 --> 00:37:53.506 A:middle
+index 3, and an insertion of the
+
+00:37:53.506 --> 00:37:56.066 A:middle
+item from index 3 at index 0.
+
+00:37:57.496 --> 00:37:59.576 A:middle
+So now we have two sets of
+

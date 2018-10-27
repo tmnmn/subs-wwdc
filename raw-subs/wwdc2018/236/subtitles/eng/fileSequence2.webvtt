@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.026 --> 00:02:01.876 A:middle
+UIAccessibility API.
+
+00:02:02.076 --> 00:02:03.206 A:middle
+Okay. So let's get to the
+
+00:02:03.206 --> 00:02:03.736 A:middle
+basics.
+
+00:02:04.066 --> 00:02:05.216 A:middle
+First step, create an
+
+00:02:05.216 --> 00:02:06.426 A:middle
+AVSpeechSynthesizer.
+
+00:02:06.816 --> 00:02:07.926 A:middle
+You can use that with this code
+
+00:02:07.926 --> 00:02:08.306 A:middle
+snippet.
+
+00:02:08.735 --> 00:02:10.356 A:middle
+One thing to note is that you
+
+00:02:10.356 --> 00:02:11.276 A:middle
+want to make sure that it's
+
+00:02:11.276 --> 00:02:12.876 A:middle
+retained until speech is done.
+
+00:02:13.486 --> 00:02:14.836 A:middle
+If the synthesizer goes out of
+
+00:02:14.836 --> 00:02:16.786 A:middle
+scope, any synthesis in-flight
+
+00:02:16.786 --> 00:02:17.456 A:middle
+will be canceled.
+
+00:02:18.116 --> 00:02:20.296 A:middle
+Now that we've created a
+
+00:02:20.296 --> 00:02:21.606 A:middle
+synthesis, the next job is to
+
+00:02:21.606 --> 00:02:22.576 A:middle
+create an utterance.
+
+00:02:23.296 --> 00:02:24.566 A:middle
+We can then dispatch that to the
+
+00:02:24.566 --> 00:02:25.236 A:middle
+synthesizer.
+
+00:02:26.416 --> 00:02:28.016 A:middle
+So, in this example, we create
+
+00:02:28.016 --> 00:02:28.926 A:middle
+an utterance with the string
+
+00:02:28.926 --> 00:02:30.816 A:middle
+hello and then we dispatch it
+
+00:02:31.406 --> 00:02:32.406 A:middle
+using the speak method.
+
+00:02:35.186 --> 00:02:36.486 A:middle
+A note about audio sessions.
+
+00:02:36.956 --> 00:02:39.416 A:middle
+So when AVSpeechSynthesis is
+
+00:02:39.416 --> 00:02:41.496 A:middle
+activated using speak, the audio
+
+00:02:41.496 --> 00:02:43.106 A:middle
+session will automatically set
+
+00:02:43.106 --> 00:02:43.546 A:middle
+to active.
+
+00:02:44.526 --> 00:02:45.706 A:middle
+If you want to mix with other
+
+00:02:45.706 --> 00:02:47.256 A:middle
+audio, you can use the
+
+00:02:47.256 --> 00:02:48.966 A:middle
+setCategory with options on your
+
+00:02:48.966 --> 00:02:50.976 A:middle
+shared AVAudioSession mixed with
+
+00:02:50.976 --> 00:02:51.356 A:middle
+others.
+
+00:02:52.086 --> 00:02:53.266 A:middle
+If you wanted to duck other
+
+00:02:53.266 --> 00:02:55.816 A:middle
+audio so that your speech is
+
+00:02:55.936 --> 00:02:57.576 A:middle
+primary but then other audio
+
+00:02:57.576 --> 00:02:59.276 A:middle
+becomes lower in volume, you can
+
+00:02:59.276 --> 00:03:01.086 A:middle
+use the duckOthers option.
+

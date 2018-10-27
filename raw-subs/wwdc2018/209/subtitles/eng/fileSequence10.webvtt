@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.876 --> 00:10:00.066 A:middle
+Well, we actually declared that
+
+00:10:00.066 --> 00:10:02.596 A:middle
+old symbol, as you see here, by
+
+00:10:02.596 --> 00:10:03.496 A:middle
+using this new API TO BE
+
+00:10:03.496 --> 00:10:03.976 A:middle
+DEPRECATED.
+
+00:10:04.046 --> 00:10:06.896 A:middle
+So, we declare it as deprecated,
+
+00:10:07.016 --> 00:10:08.936 A:middle
+as API TO BE DEPRECATED, meaning
+
+00:10:08.936 --> 00:10:11.406 A:middle
+any new attempts to use it will
+
+00:10:11.406 --> 00:10:13.336 A:middle
+get warnings, but existing uses
+
+00:10:13.336 --> 00:10:14.806 A:middle
+will be left alone, because we
+
+00:10:14.806 --> 00:10:15.766 A:middle
+really don't want to disrupt
+
+00:10:16.236 --> 00:10:17.236 A:middle
+uses of the symbol in
+
+00:10:17.236 --> 00:10:21.346 A:middle
+Objective-C source code.
+
+00:10:21.446 --> 00:10:22.576 A:middle
+Now, turns out there was a lot
+
+00:10:22.576 --> 00:10:25.186 A:middle
+of symbols that were waiting for
+
+00:10:25.186 --> 00:10:27.546 A:middle
+this facility, so a lot of API's
+
+00:10:27.666 --> 00:10:29.006 A:middle
+are marked with API TO BE
+
+00:10:29.006 --> 00:10:29.626 A:middle
+DEPRECATED.
+
+00:10:29.966 --> 00:10:31.246 A:middle
+A bunch of these are because we
+
+00:10:31.246 --> 00:10:33.326 A:middle
+did the common suffix to common
+
+00:10:33.426 --> 00:10:35.046 A:middle
+prefix naming, and some of the
+
+00:10:35.046 --> 00:10:36.406 A:middle
+others are symbols that we are
+
+00:10:36.636 --> 00:10:38.156 A:middle
+de-emphasizing deprecating,
+
+00:10:38.636 --> 00:10:39.766 A:middle
+because we're bringing new ones
+
+00:10:39.766 --> 00:10:39.926 A:middle
+in.
+
+00:10:39.926 --> 00:10:40.936 A:middle
+Especially in support of
+
+00:10:40.936 --> 00:10:42.276 A:middle
+features such as Dark Mode,
+
+00:10:42.606 --> 00:10:43.586 A:middle
+which you'll hear about later
+
+00:10:43.586 --> 00:10:43.836 A:middle
+today.
+
+00:10:44.486 --> 00:10:46.996 A:middle
+So, the last topic I want to
+
+00:10:46.996 --> 00:10:48.326 A:middle
+talk about is secure coding.
+
+00:10:49.186 --> 00:10:50.116 A:middle
+As you may be aware, we
+
+00:10:50.116 --> 00:10:53.016 A:middle
+introduced the concept of secure
+
+00:10:53.016 --> 00:10:56.336 A:middle
+coding back in 10.8 and iOS 6.
+
+00:10:56.446 --> 00:10:59.196 A:middle
+It basically allows class-- when
+
+00:10:59.196 --> 00:11:00.366 A:middle
+you are archiving, basically
+

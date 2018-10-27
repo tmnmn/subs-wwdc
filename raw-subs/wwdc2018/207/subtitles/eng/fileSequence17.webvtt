@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.896 --> 00:17:01.886 A:middle
+user's cookies through this API.
+
+00:17:03.316 --> 00:17:05.106 A:middle
+You should not be offering them
+
+00:17:05.106 --> 00:17:06.136 A:middle
+that much power.
+
+00:17:06.246 --> 00:17:07.496 A:middle
+Instead, you should protect your
+
+00:17:07.496 --> 00:17:08.816 A:middle
+cookies, especially your
+
+00:17:08.816 --> 00:17:10.746 A:middle
+authentication cookies that are
+
+00:17:10.746 --> 00:17:12.736 A:middle
+effectively a way to log in as a
+
+00:17:12.736 --> 00:17:15.636 A:middle
+user by marking them Http Only.
+
+00:17:16.455 --> 00:17:18.526 A:middle
+This means that-- this cookie--
+
+00:17:18.526 --> 00:17:19.796 A:middle
+and this is the set cookie
+
+00:17:19.796 --> 00:17:21.036 A:middle
+header you are seeing here where
+
+00:17:21.036 --> 00:17:23.236 A:middle
+we are sending HTTP only, which
+
+00:17:23.236 --> 00:17:25.256 A:middle
+means don't expose this cookie
+
+00:17:25.506 --> 00:17:26.986 A:middle
+in the document.cookie API.
+
+00:17:27.836 --> 00:17:30.136 A:middle
+So, JavaScript can now not see
+
+00:17:30.136 --> 00:17:31.876 A:middle
+this cookie and of course not
+
+00:17:31.936 --> 00:17:33.486 A:middle
+fiddle with it, steal it, or
+
+00:17:33.486 --> 00:17:34.316 A:middle
+manipulate it.
+
+00:17:34.936 --> 00:17:36.126 A:middle
+So, this is something you should
+
+00:17:36.756 --> 00:17:38.016 A:middle
+be doing.
+
+00:17:38.186 --> 00:17:40.376 A:middle
+We also have another thing, new
+
+00:17:40.376 --> 00:17:42.086 A:middle
+technology as of the betas,
+
+00:17:42.416 --> 00:17:43.766 A:middle
+SameSite cookies.
+
+00:17:44.496 --> 00:17:45.916 A:middle
+Again, you are setting this on
+
+00:17:45.916 --> 00:17:47.486 A:middle
+the set cookie header that you--
+
+00:17:47.486 --> 00:17:49.096 A:middle
+when you're setting the cookie
+
+00:17:49.096 --> 00:17:49.696 A:middle
+in the browser.
+
+00:17:50.406 --> 00:17:52.216 A:middle
+See here I've got the same site
+
+00:17:52.216 --> 00:17:54.076 A:middle
+attribute equals strict.
+
+00:17:54.656 --> 00:17:56.356 A:middle
+There's also a lax version of
+
+00:17:56.356 --> 00:17:58.596 A:middle
+this, but what this is basically
+
+00:17:58.596 --> 00:18:00.436 A:middle
+saying is this particular
+

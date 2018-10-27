@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:56.690 --> 00:21:01.228 align:start position:25% line:-2
+OSがシグナルを送った理由も
+ログで見られます
+
+00:21:01.395 --> 00:21:06.366 align:start position:23% line:-2
+“8badf00d”のコードと
+停止の理由が書かれています
+
+00:21:06.500 --> 00:21:09.703 align:start position:29% line:-1
+先ほど言った技術注記に―
+
+00:21:09.803 --> 00:21:12.906 align:start position:18% line:-1
+“8badf00d”の意味があります
+
+00:21:13.106 --> 00:21:15.542 align:start position:34% line:-1
+そしてテキストで―
+
+00:21:15.642 --> 00:21:20.714 align:start position:27% line:-2
+19.95秒の猶予時間を
+使い切ったと書かれています
+
+00:21:21.181 --> 00:21:25.686 align:start position:29% line:-2
+この情報と
+技術注記を合わせて見れば
+
+00:21:25.786 --> 00:21:29.189 align:start position:29% line:-2
+起動に時間が
+かかりすぎたと分かります
+
+00:21:29.323 --> 00:21:32.960 align:start position:29% line:-1
+20秒の間に起動できず―
+
+00:21:33.327 --> 00:21:35.596 align:start position:29% line:-1
+OSがプロセスを停止した
+
+00:21:36.663 --> 00:21:41.101 align:start position:27% line:-2
+下に停止時の
+クラッシュログが出ています
+
+00:21:41.201 --> 00:21:44.938 align:start position:25% line:-2
+これらのコードが
+長くかかった原因かもしれない
+
+00:21:45.038 --> 00:21:47.174 align:start position:30% line:-1
+無限ループになったか―
+
+00:21:47.274 --> 00:21:51.979 align:start position:21% line:-2
+それとも
+ネットワークのI/Oが長かったか
+
+00:21:52.279 --> 00:21:55.249 align:start position:23% line:-1
+あるいは このコードは無実で―
+
+00:21:55.482 --> 00:22:00.854 align:start position:23% line:-2
+もっと前のプロセスが遅いために
+停止した可能性もあります
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.196 --> 00:18:00.706 A:middle
+unicorn was lonely, and they
+
+00:18:00.706 --> 00:18:01.016 A:middle
+lose.
+
+00:18:02.566 --> 00:18:04.466 A:middle
+And if they successfully avoided
+
+00:18:04.466 --> 00:18:06.126 A:middle
+tapping a poop, then they get
+
+00:18:06.126 --> 00:18:07.966 A:middle
+another round of the game.
+
+00:18:08.456 --> 00:18:10.446 A:middle
+Now we also want to say what
+
+00:18:10.446 --> 00:18:11.886 A:middle
+happens if they actually do
+
+00:18:11.886 --> 00:18:13.116 A:middle
+press one of the buttons during
+
+00:18:13.116 --> 00:18:13.496 A:middle
+the game.
+
+00:18:14.636 --> 00:18:16.066 A:middle
+Well if they press the unicorn
+
+00:18:16.066 --> 00:18:18.206 A:middle
+button, we give them another
+
+00:18:18.206 --> 00:18:19.436 A:middle
+round of the game and give them
+
+00:18:19.436 --> 00:18:19.876 A:middle
+a point.
+
+00:18:20.486 --> 00:18:21.806 A:middle
+Otherwise, if they accidentally
+
+00:18:21.806 --> 00:18:24.316 A:middle
+select the poop, then game over.
+
+00:18:25.366 --> 00:18:26.736 A:middle
+Okay. Let's talk about what this
+
+00:18:26.736 --> 00:18:27.496 A:middle
+code looks like.
+
+00:18:28.166 --> 00:18:29.326 A:middle
+We'll start off with the start
+
+00:18:29.426 --> 00:18:29.786 A:middle
+screen.
+
+00:18:29.786 --> 00:18:32.236 A:middle
+Now we're going to break up our
+
+00:18:32.236 --> 00:18:33.656 A:middle
+code into logical blocks.
+
+00:18:33.866 --> 00:18:34.786 A:middle
+And in our case, we're going to
+
+00:18:34.786 --> 00:18:36.056 A:middle
+use methods to do this.
+
+00:18:36.056 --> 00:18:37.856 A:middle
+So that it's not just one long
+
+00:18:37.856 --> 00:18:39.376 A:middle
+file full of lots of code.
+
+00:18:39.516 --> 00:18:41.096 A:middle
+And it's easier for us to look
+
+00:18:41.096 --> 00:18:42.346 A:middle
+at very specific parts.
+
+00:18:43.396 --> 00:18:44.706 A:middle
+The first method we're going to
+
+00:18:44.706 --> 00:18:46.146 A:middle
+write is called start new game
+
+00:18:46.286 --> 00:18:48.006 A:middle
+which we're going to call from
+
+00:18:48.166 --> 00:18:48.676 A:middle
+start pressed.
+
+00:18:49.266 --> 00:18:50.666 A:middle
+This is going to do some setup
+
+00:18:50.696 --> 00:18:52.846 A:middle
+for the beginning of a game
+
+00:18:53.666 --> 00:18:53.766 A:middle
+route.
+
+00:18:55.656 --> 00:18:57.266 A:middle
+The first thing that happens in
+
+00:18:57.266 --> 00:18:58.726 A:middle
+start new game is that we need
+
+00:18:58.726 --> 00:19:00.346 A:middle
+to hide that start-game button
+

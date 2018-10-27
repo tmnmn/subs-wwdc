@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.896 --> 00:18:02.116 A:middle
+looking at, tapping through, but
+
+00:18:02.116 --> 00:18:02.956 A:middle
+not scrolling past.
+
+00:18:04.286 --> 00:18:05.126 A:middle
+When you get one of these
+
+00:18:05.126 --> 00:18:06.716 A:middle
+refresh background tasks, it's
+
+00:18:06.716 --> 00:18:08.366 A:middle
+your opportunity to update the
+
+00:18:08.366 --> 00:18:10.046 A:middle
+data that supplies your relevant
+
+00:18:10.046 --> 00:18:11.596 A:middle
+shortcuts, and give us a fresh
+
+00:18:11.596 --> 00:18:12.576 A:middle
+set of relevant shortcuts.
+
+00:18:13.896 --> 00:18:15.976 A:middle
+And, on a related note, if your
+
+00:18:15.976 --> 00:18:17.136 A:middle
+background-capable intent
+
+00:18:17.136 --> 00:18:18.586 A:middle
+executes, it's inside of your
+
+00:18:18.586 --> 00:18:19.376 A:middle
+intents extension.
+
+00:18:19.846 --> 00:18:20.796 A:middle
+That means that if you update
+
+00:18:20.796 --> 00:18:22.126 A:middle
+your data store, it's possible
+
+00:18:22.126 --> 00:18:22.966 A:middle
+that your UI and your
+
+00:18:23.046 --> 00:18:24.416 A:middle
+application has become stale.
+
+00:18:25.526 --> 00:18:26.796 A:middle
+So, in watchOS 5, we've also
+
+00:18:26.796 --> 00:18:28.416 A:middle
+created the
+
+00:18:28.416 --> 00:18:30.056 A:middle
+WKIntentDidRunRefresh
+
+00:18:30.086 --> 00:18:30.776 A:middle
+BackgroundTask.
+
+00:18:31.126 --> 00:18:32.086 A:middle
+And, we'll hand that to you with
+
+00:18:32.086 --> 00:18:33.606 A:middle
+some runtime when your intents
+
+00:18:33.606 --> 00:18:35.396 A:middle
+extension completes a execution
+
+00:18:35.396 --> 00:18:35.926 A:middle
+of a shortcut.
+
+00:18:37.076 --> 00:18:38.326 A:middle
+That is your opportunity to make
+
+00:18:38.326 --> 00:18:39.646 A:middle
+sure that your UI's up to date,
+
+00:18:40.326 --> 00:18:41.526 A:middle
+perhaps request an updated
+
+00:18:41.526 --> 00:18:43.806 A:middle
+snapshot, or reload, or extend
+
+00:18:43.806 --> 00:18:44.866 A:middle
+your complication timeline.
+
+00:18:45.236 --> 00:18:48.916 A:middle
+So, let's talk about how we can
+
+00:18:48.916 --> 00:18:50.596 A:middle
+take advantage of these API's on
+
+00:18:50.596 --> 00:18:50.926 A:middle
+iOS.
+
+00:18:51.456 --> 00:18:52.746 A:middle
+And, the great news is, with the
+
+00:18:52.746 --> 00:18:53.686 A:middle
+exception of those
+
+00:18:53.686 --> 00:18:55.666 A:middle
+WKRefreshBackgroundTasks, we can
+
+00:18:55.666 --> 00:18:57.646 A:middle
+use all of the same exact API's
+
+00:18:57.876 --> 00:18:58.996 A:middle
+in our iOS application.
+

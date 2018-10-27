@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:58.466 --> 00:51:00.946 A:middle
+It will be called for us as soon
+
+00:51:00.946 --> 00:51:03.346 A:middle
+as we tap on a cell in our
+
+00:51:03.346 --> 00:51:04.506 A:middle
+table-view-controller.
+
+00:51:05.226 --> 00:51:08.296 A:middle
+So in here, I will get more
+
+00:51:08.336 --> 00:51:10.216 A:middle
+information about the player
+
+00:51:10.686 --> 00:51:11.786 A:middle
+based on the rank again.
+
+00:51:11.786 --> 00:51:14.206 A:middle
+And I can figure out the rank
+
+00:51:14.616 --> 00:51:16.866 A:middle
+because there is a property on
+
+00:51:16.866 --> 00:51:18.816 A:middle
+the table view called index path
+
+00:51:19.196 --> 00:51:20.256 A:middle
+for selected row.
+
+00:51:20.256 --> 00:51:23.456 A:middle
+This tells me the row number for
+
+00:51:23.456 --> 00:51:24.946 A:middle
+the cell that was selected.
+
+00:51:25.476 --> 00:51:29.036 A:middle
+We also get a segue parameter in
+
+00:51:29.036 --> 00:51:29.566 A:middle
+this method.
+
+00:51:29.566 --> 00:51:32.706 A:middle
+Remember how segues connect two
+
+00:51:32.706 --> 00:51:33.686 A:middle
+view controllers?
+
+00:51:33.776 --> 00:51:36.286 A:middle
+So the segue's destination
+
+00:51:36.286 --> 00:51:38.686 A:middle
+property will tell me which view
+
+00:51:38.686 --> 00:51:40.146 A:middle
+controller we're navigating
+
+00:51:40.146 --> 00:51:40.666 A:middle
+towards.
+
+00:51:41.956 --> 00:51:44.236 A:middle
+Once we have an instance of the
+
+00:51:44.236 --> 00:51:46.456 A:middle
+details-view-controller which is
+
+00:51:46.456 --> 00:51:47.686 A:middle
+the one we're going towards,
+
+00:51:48.286 --> 00:51:50.496 A:middle
+then we can set the player info
+
+00:51:50.786 --> 00:51:52.206 A:middle
+with the details we have.
+
+00:51:53.776 --> 00:51:55.686 A:middle
+Finally, we are ready to run our
+
+00:51:55.686 --> 00:51:58.426 A:middle
+app one last time and see how
+
+00:51:58.426 --> 00:51:59.686 A:middle
+everything comes together.
+

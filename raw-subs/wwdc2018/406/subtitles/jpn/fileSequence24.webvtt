@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:56.370 --> 00:24:00.340 align:start position:27% line:-2
+でもこれは整数で
+必要なのはインデックスです
+
+00:24:00.440 --> 00:24:04.311 align:start position:14% line:-1
+そこでoffsetByインデックスを使い
+
+00:24:04.411 --> 00:24:09.149 align:start position:25% line:-2
+開始インデックスから
+選んだ位置までジャンプします
+
+00:24:09.983 --> 00:24:14.154 align:start position:29% line:-2
+次に必要な操作は
+２つの要素の入れ替えです
+
+00:24:14.822 --> 00:24:20.494 align:start position:30% line:-2
+シャッフル実装に必要な
+２つの操作があるので―
+
+00:24:20.594 --> 00:24:24.031 align:start position:14% line:-2
+新しいShuffleCollection
+プロトコルです
+
+00:24:26.600 --> 00:24:27.868 align:start position:34% line:-1
+でもやめてください
+
+00:24:27.968 --> 00:24:30.237 align:start position:34% line:-1
+アンチパターンです
+
+00:24:30.571 --> 00:24:33.073 align:start position:25% line:-1
+あるのはアルゴリズム１つです
+
+00:24:33.173 --> 00:24:36.844 align:start position:27% line:-2
+要件を見つけ
+プロトコルに包括しましたが
+
+00:24:36.944 --> 00:24:40.914 align:start position:21% line:-1
+記述したのはアルゴリズム１つです
+
+00:24:41.014 --> 00:24:44.885 align:start position:30% line:-2
+これを行えば
+プロトコルが山ほどでき
+
+00:24:44.985 --> 00:24:48.789 align:start position:29% line:-2
+そこには大した意味もなく
+何も学べません
+
+00:24:49.022 --> 00:24:54.228 align:start position:29% line:-2
+ここで気付くべきは
+明瞭なケイパビリティです
+
+00:24:54.328 --> 00:24:57.765 align:start position:27% line:-1
+ランダムアクセスと変化は―
+
+00:24:57.865 --> 00:25:01.735 align:start position:23% line:-1
+別々のプロトコルに分類できます
+

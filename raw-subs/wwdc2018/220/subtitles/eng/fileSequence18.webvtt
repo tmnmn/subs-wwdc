@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.646 --> 00:18:00.746 A:middle
+so it's just sort of a giant
+
+00:18:00.746 --> 00:18:03.026 A:middle
+ball of mud and performance
+
+00:18:03.026 --> 00:18:04.296 A:middle
+probably sucks.
+
+00:18:05.056 --> 00:18:07.306 A:middle
+OK, but having looked at what
+
+00:18:07.306 --> 00:18:08.936 A:middle
+we've looked at, let's see what
+
+00:18:08.936 --> 00:18:11.086 A:middle
+happens in the common case where
+
+00:18:11.086 --> 00:18:13.136 A:middle
+you don't have this because most
+
+00:18:13.136 --> 00:18:14.006 A:middle
+of the time you don't.
+
+00:18:14.506 --> 00:18:16.476 A:middle
+Most of the time views are only
+
+00:18:16.476 --> 00:18:17.906 A:middle
+constrained to their parent and
+
+00:18:17.906 --> 00:18:18.916 A:middle
+to their siblings.
+
+00:18:19.736 --> 00:18:22.056 A:middle
+What you'll see there is that
+
+00:18:22.056 --> 00:18:23.026 A:middle
+since we have these two
+
+00:18:23.026 --> 00:18:25.586 A:middle
+independent blocks, that will
+
+00:18:25.586 --> 00:18:27.036 A:middle
+give, if you look inside the
+
+00:18:27.036 --> 00:18:28.366 A:middle
+engine it will be two
+
+00:18:28.366 --> 00:18:29.926 A:middle
+independent blocks of equations
+
+00:18:29.926 --> 00:18:31.206 A:middle
+that completely don't interact
+
+00:18:31.206 --> 00:18:32.366 A:middle
+with each other, that don't have
+
+00:18:32.366 --> 00:18:33.636 A:middle
+any overlapping variables.
+
+00:18:34.146 --> 00:18:36.776 A:middle
+What that will do, is that
+
+00:18:36.776 --> 00:18:38.186 A:middle
+because they completely don' t
+
+00:18:38.186 --> 00:18:39.266 A:middle
+overlap, they just don't
+
+00:18:39.266 --> 00:18:39.596 A:middle
+interact.
+
+00:18:39.996 --> 00:18:41.296 A:middle
+And if we have one of these it
+
+00:18:41.296 --> 00:18:43.586 A:middle
+will take some amount of time to
+
+00:18:43.586 --> 00:18:43.966 A:middle
+deal with.
+
+00:18:44.246 --> 00:18:45.536 A:middle
+If we have two of them it will
+
+00:18:45.536 --> 00:18:47.256 A:middle
+just take twice the time because
+
+00:18:47.556 --> 00:18:48.206 A:middle
+they have nothing to do with
+
+00:18:48.206 --> 00:18:48.486 A:middle
+each other.
+
+00:18:49.246 --> 00:18:50.316 A:middle
+Three of them, three times,
+
+00:18:50.546 --> 00:18:52.566 A:middle
+etcetera, the point is you're
+
+00:18:52.626 --> 00:18:54.366 A:middle
+going to see a line.
+
+00:18:54.366 --> 00:18:56.836 A:middle
+You're going to see linear
+
+00:18:56.836 --> 00:18:58.026 A:middle
+performance, which is the best
+
+00:18:58.026 --> 00:18:59.016 A:middle
+you can get.
+
+00:18:59.276 --> 00:19:00.706 A:middle
+That's perfect marks for this
+

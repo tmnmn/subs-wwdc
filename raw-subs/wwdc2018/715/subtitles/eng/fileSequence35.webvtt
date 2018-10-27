@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.456 --> 00:35:00.746 A:middle
+send a ton of data unnecessarily
+
+00:35:00.746 --> 00:35:02.456 A:middle
+into this connection if you want
+
+00:35:02.456 --> 00:35:04.616 A:middle
+a really responsive, live stream
+
+00:35:04.616 --> 00:35:04.966 A:middle
+of data.
+
+00:35:06.226 --> 00:35:08.176 A:middle
+And the key here is that
+
+00:35:08.176 --> 00:35:09.496 A:middle
+callback block that we give you.
+
+00:35:10.336 --> 00:35:12.116 A:middle
+It's called contentProcessed.
+
+00:35:12.766 --> 00:35:15.356 A:middle
+And we'll invoke it whenever the
+
+00:35:15.356 --> 00:35:17.006 A:middle
+network stack consumes your
+
+00:35:17.006 --> 00:35:17.246 A:middle
+data.
+
+00:35:17.666 --> 00:35:18.816 A:middle
+So this doesn't mean that the
+
+00:35:18.816 --> 00:35:20.046 A:middle
+data has necessarily been sent
+
+00:35:20.046 --> 00:35:21.306 A:middle
+out or acknowledged by the other
+
+00:35:21.306 --> 00:35:21.676 A:middle
+side.
+
+00:35:22.146 --> 00:35:23.996 A:middle
+It's exactly equivalent to the
+
+00:35:23.996 --> 00:35:25.696 A:middle
+time in which a blocking socket
+
+00:35:25.696 --> 00:35:27.506 A:middle
+call would return to you, or
+
+00:35:27.536 --> 00:35:29.256 A:middle
+when the nonblocking socket call
+
+00:35:29.256 --> 00:35:30.806 A:middle
+was able to consume all of the
+
+00:35:30.806 --> 00:35:31.656 A:middle
+bytes that you sent.
+
+00:35:32.246 --> 00:35:34.716 A:middle
+And in this completion handler,
+
+00:35:35.176 --> 00:35:36.076 A:middle
+there are two things you can
+
+00:35:36.076 --> 00:35:36.496 A:middle
+check for.
+
+00:35:37.566 --> 00:35:39.126 A:middle
+First, you can check for an
+
+00:35:39.126 --> 00:35:39.396 A:middle
+error.
+
+00:35:39.996 --> 00:35:41.176 A:middle
+If there is an error, that means
+
+00:35:41.176 --> 00:35:42.176 A:middle
+something went wrong while we
+
+00:35:42.176 --> 00:35:43.136 A:middle
+were trying to send your data,
+
+00:35:43.676 --> 00:35:45.536 A:middle
+generally it indicates a overall
+
+00:35:45.536 --> 00:35:46.316 A:middle
+connection failure.
+
+00:35:47.806 --> 00:35:49.746 A:middle
+Then, if there wasn't and error,
+
+00:35:49.986 --> 00:35:52.056 A:middle
+this is the perfect opportunity
+
+00:35:52.236 --> 00:35:53.896 A:middle
+to go and see if there's more
+
+00:35:53.896 --> 00:35:55.606 A:middle
+data from your application to
+
+00:35:55.606 --> 00:35:56.016 A:middle
+generate.
+
+00:35:56.016 --> 00:35:58.026 A:middle
+So if you're generating live
+
+00:35:58.026 --> 00:36:00.426 A:middle
+data frames, go and fetch
+

@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.360 --> 00:11:04.031 align:middle line:-1
+以便访问底层的Swift声明
+
+00:11:04.798 --> 00:11:06.333 align:middle line:-1
+现在让我们更具体地讨论一下
+
+00:11:06.400 --> 00:11:09.636 align:middle line:-1
+如何将Swift的闭包参数
+
+00:11:09.703 --> 00:11:11.438 align:middle line:-1
+导入到Objective-C中
+
+00:11:12.172 --> 00:11:13.841 align:middle line:-1
+现在屏幕上
+
+00:11:14.107 --> 00:11:17.945 align:middle line:-2
+你看到了一个叫Executor的
+Swift协议的例子
+
+00:11:18.712 --> 00:11:22.716 align:middle line:-2
+该协议定义了一个名为
+performOperation的函数成员
+
+00:11:22.883 --> 00:11:25.986 align:middle line:-2
+它接受一个名为
+handler的闭包参数
+
+00:11:27.487 --> 00:11:31.225 align:middle line:0
+现在Swift中闭包参数
+在默认情况下是不转义的
+
+00:11:31.491 --> 00:11:35.362 align:middle line:0
+这意味着在函数返回后
+
+00:11:35.429 --> 00:11:37.097 align:middle line:0
+它们不应该被保留或调用
+
+00:11:38.599 --> 00:11:43.770 align:middle line:0
+现在当符合
+Objective-C时
+
+00:11:43.871 --> 00:11:47.374 align:middle line:0
+程序员很容易忘记这个契约是存在的
+
+00:11:48.175 --> 00:11:51.178 align:middle line:-1
+例如 正如你现在幻灯片上看到的
+
+00:11:51.512 --> 00:11:55.215 align:middle line:-2
+在Objective-C中
+我们有一个调度执行器接口
+
+00:11:55.282 --> 00:11:57.751 align:middle line:-1
+并且符合Executor协议
+
+00:11:58.352 --> 00:12:00.921 align:middle line:-2
+因此它提供了
+performOperation方法
+

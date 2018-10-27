@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:54.408 --> 00:03:00.814 align:start position:21% line:-2
+SteamVRのmacOS対応を
+可能にしました
+
+00:03:02.883 --> 00:03:08.755 align:start position:21% line:-2
+では Metalの新機能を用いて
+masOS Mojaveで
+
+00:03:08.856 --> 00:03:12.159 align:start position:30% line:-2
+VRアプリケーションを
+最適化する方法です
+
+00:03:13.260 --> 00:03:16.530 align:start position:25% line:-2
+アプリケーションと
+VR Compositorの
+
+00:03:16.630 --> 00:03:19.099 align:start position:29% line:-1
+相互関係を見てみましょう
+
+00:03:19.867 --> 00:03:23.937 align:start position:34% line:-2
+まず 左右の画像が
+レンダリングされ
+
+00:03:24.037 --> 00:03:26.607 align:start position:23% line:-2
+2Dマルチサンプルテクスチャと
+なります
+
+00:03:26.740 --> 00:03:31.645 align:start position:18% line:-2
+そしてIOSurfaceテクスチャに
+変換され
+
+00:03:31.745 --> 00:03:34.915 align:start position:25% line:-2
+VR Compositorに
+渡されます
+
+00:03:35.549 --> 00:03:40.187 align:start position:25% line:-2
+VR Compositorが
+最終処理として
+
+00:03:40.287 --> 00:03:44.658 align:start position:29% line:-2
+ゆがみ補正 色収差などの
+操作を行います
+
+00:03:44.858 --> 00:03:47.394 align:start position:25% line:-1
+これを“Warp”と呼びます
+
+00:03:48.328 --> 00:03:50.898 align:start position:27% line:-1
+最終的な画像が生成されたら
+
+00:03:50.998 --> 00:03:54.168 align:start position:34% line:-2
+ヘッドセットに送り
+表示します
+
+00:03:55.202 --> 00:03:58.172 align:start position:30% line:-2
+これでは
+多数の処理が発生します
+
+00:03:58.305 --> 00:04:01.208 align:start position:30% line:-1
+対処法はないでしょうか
+

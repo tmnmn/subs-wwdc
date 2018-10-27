@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.838 --> 00:09:03.377 align:start position:29% line:-2
+あるオペレーションの
+最初と最後を関連付けます
+
+00:09:03.644 --> 00:09:06.980 align:start position:27% line:-2
+これにより
+オペレーションの同時進行や
+
+00:09:07.114 --> 00:09:09.616 align:start position:27% line:-1
+所要時間の差に対応できます
+
+00:09:12.052 --> 00:09:14.988 align:start position:38% line:-2
+実際のコードを
+見てみましょう
+
+00:09:15.589 --> 00:09:21.361 align:start position:29% line:-2
+同期の読み込みを
+非同期の呼び出しにします
+
+00:09:21.828 --> 00:09:24.264 align:start position:34% line:-2
+アセットの取得後に
+開始する―
+
+00:09:24.364 --> 00:09:27.568 align:start position:29% line:-1
+完了ハンドラを追加します
+
+00:09:28.335 --> 00:09:34.308 align:start position:27% line:-2
+全アセットの取得後も同様に
+完了ハンドラを追加します
+
+00:09:34.875 --> 00:09:38.912 align:start position:21% line:-2
+ENDのos signpostを
+完了の前に入れ
+
+00:09:39.112 --> 00:09:43.217 align:start position:30% line:-2
+最後にマッチするように
+設定しました
+
+00:09:45.686 --> 00:09:49.923 align:start position:32% line:-2
+複数のアセット取得が
+同時に進行するため
+
+00:09:50.023 --> 00:09:52.659 align:start position:21% line:-2
+それぞれに
+signpost IDが必要です
+
+00:09:52.759 --> 00:09:56.497 align:start position:30% line:-2
+上の例は
+コンストラクタで生成し
+
+00:09:56.597 --> 00:10:01.001 align:start position:27% line:-2
+下の例は
+オブジェクトで作っています
+

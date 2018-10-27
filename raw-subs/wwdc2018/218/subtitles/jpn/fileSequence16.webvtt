@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.594 --> 00:16:03.163 align:start position:14% line:-2
+viewDidChange
+EffectiveAppearanceを
+
+00:16:03.263 --> 00:16:04.832 align:start position:36% line:-1
+オーバーライドし
+
+00:16:05.799 --> 00:16:08.535 align:start position:14% line:-2
+setNeedsDisplayメソッドを
+使います
+
+00:16:09.102 --> 00:16:10.304 align:start position:38% line:-1
+これをしないと
+
+00:16:10.404 --> 00:16:12.105 align:start position:12% line:-2
+Effective Appearanceが
+変化した際に
+
+00:16:12.206 --> 00:16:15.442 align:start position:30% line:-2
+サブレイヤが
+アップデートされません
+
+00:16:17.878 --> 00:16:19.880 align:start position:29% line:-1
+次にデリゲートを用います
+
+00:16:20.147 --> 00:16:22.816 align:start position:12% line:-2
+ビューの
+Effective Appearanceに
+
+00:16:22.916 --> 00:16:27.754 align:start position:16% line:-2
+Current Appearanceを
+設定します
+
+00:16:29.623 --> 00:16:32.092 align:start position:34% line:-2
+そしてレイヤーを
+アップデートします
+
+00:16:32.192 --> 00:16:35.762 align:start position:7% line:-2
+この時点でCurrent Appearanceを
+設定していないと
+
+00:16:35.996 --> 00:16:38.565 align:start position:30% line:-2
+ビューのアピアランスが
+使われず
+
+00:16:38.665 --> 00:16:40.567 align:start position:36% line:-1
+うまくいきません
+
+00:16:41.768 --> 00:16:45.439 align:start position:20% line:-2
+完了後 Old Current
+Appearanceを元に戻します
+
+00:16:48.609 --> 00:16:51.645 align:start position:32% line:-2
+知っておくべきことは
+他にもあります
+
+00:16:52.579 --> 00:16:56.083 align:start position:30% line:-2
+この２つのコードに
+見覚えはあるでしょうか
+
+00:16:56.183 --> 00:17:00.120 align:start position:30% line:-2
+レイヤーのコンテンツを
+NSImageに設定
+

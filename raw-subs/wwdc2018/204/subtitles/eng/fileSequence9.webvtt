@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.706 --> 00:09:00.776 A:middle
+Now, this may work with no
+
+00:09:00.776 --> 00:09:02.496 A:middle
+changes to your app on iOS12.
+
+00:09:02.576 --> 00:09:04.106 A:middle
+But let's talk about some steps
+
+00:09:04.106 --> 00:09:05.296 A:middle
+you can take to ensure that it
+
+00:09:05.296 --> 00:09:05.736 A:middle
+works.
+
+00:09:06.576 --> 00:09:08.186 A:middle
+First, make sure to tag your
+
+00:09:08.186 --> 00:09:09.546 A:middle
+fields with the username and
+
+00:09:09.546 --> 00:09:11.296 A:middle
+password content types, like,
+
+00:09:11.296 --> 00:09:12.316 A:middle
+with filling passwords.
+
+00:09:13.066 --> 00:09:15.176 A:middle
+Make sure to remove your
+
+00:09:15.176 --> 00:09:16.716 A:middle
+username and password fields
+
+00:09:16.716 --> 00:09:17.936 A:middle
+from the view hierarchy when a
+
+00:09:17.936 --> 00:09:18.866 A:middle
+sign in occurs.
+
+00:09:19.286 --> 00:09:20.886 A:middle
+This way, Autofill can detect
+
+00:09:20.886 --> 00:09:22.146 A:middle
+that a sign in is occurring.
+
+00:09:23.146 --> 00:09:24.496 A:middle
+You could do this by dismissing
+
+00:09:24.496 --> 00:09:25.806 A:middle
+the view controller that your
+
+00:09:25.806 --> 00:09:28.636 A:middle
+sign in fields are in.
+
+00:09:28.846 --> 00:09:30.166 A:middle
+Make sure to only clear the
+
+00:09:30.166 --> 00:09:31.886 A:middle
+username and password fields
+
+00:09:31.886 --> 00:09:33.196 A:middle
+after they've been removed from
+
+00:09:33.196 --> 00:09:34.046 A:middle
+the view hierarchy.
+
+00:09:34.436 --> 00:09:35.876 A:middle
+This way, we can read out the
+
+00:09:35.876 --> 00:09:37.166 A:middle
+data and save it into
+
+00:09:37.166 --> 00:09:37.716 A:middle
+credential.
+
+00:09:37.716 --> 00:09:41.256 A:middle
+Make sure the Autofill saves the
+
+00:09:41.256 --> 00:09:42.236 A:middle
+credential to the correct
+
+00:09:42.236 --> 00:09:42.776 A:middle
+domain.
+
+00:09:43.176 --> 00:09:44.556 A:middle
+You can do this by saving a
+
+00:09:44.556 --> 00:09:45.946 A:middle
+password in your app, and then
+
+00:09:45.946 --> 00:09:47.516 A:middle
+going to Settings to check where
+
+00:09:47.516 --> 00:09:48.636 A:middle
+the credential is saved.
+
+00:09:49.426 --> 00:09:50.786 A:middle
+If you notice that Autofill is
+
+00:09:50.786 --> 00:09:52.126 A:middle
+not saving to the correct
+
+00:09:52.126 --> 00:09:53.926 A:middle
+domain, you can override where
+
+00:09:53.926 --> 00:09:55.336 A:middle
+it's saving using the Web
+
+00:09:55.336 --> 00:09:56.936 A:middle
+credentials associated domain
+
+00:09:56.936 --> 00:09:57.386 A:middle
+service.
+
+00:09:58.746 --> 00:10:00.596 A:middle
+Finally, you may have previously
+

@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.265 --> 00:05:00.300 align:start position:21% line:-1
+ここで別のサブビューを追加します
+
+00:05:01.802 --> 00:05:05.038 align:start position:12% line:-1
+View Controllerも追加します
+
+00:05:05.172 --> 00:05:09.943 align:start position:14% line:-2
+View Controllerには余白を
+追加するプロパティがあるからです
+
+00:05:10.110 --> 00:05:14.982 align:start position:2% line:-2
+additionalSafeAreaInsetsという
+プロパティです
+
+00:05:15.382 --> 00:05:18.652 align:start position:21% line:-1
+これから親の余白を継承してみます
+
+00:05:19.319 --> 00:05:22.723 align:start position:5% line:-2
+additionalSafeAreaInsetsを
+このビューに追加し
+
+00:05:22.923 --> 00:05:27.160 align:start position:16% line:-1
+最終的なSafe Areaを取得します
+
+00:05:28.395 --> 00:05:32.165 align:start position:27% line:-2
+Safe Areaについて
+他に知っておくべきことは？
+
+00:05:32.499 --> 00:05:34.935 align:start position:30% line:-1
+別の例も見てみましょう
+
+00:05:35.035 --> 00:05:39.106 align:start position:14% line:-2
+１つのビューが
+親のSafe Area内に収まっています
+
+00:05:39.273 --> 00:05:43.443 align:start position:12% line:-2
+このビューのSafe Areaは ビューの
+全領域をカプセル化しています
+
+00:05:43.911 --> 00:05:48.015 align:start position:21% line:-2
+１辺に近づけても
+Safe Areaは広がりません
+
+00:05:48.115 --> 00:05:51.218 align:start position:29% line:-2
+親のSafe Areaを
+出ていないからです
+
+00:05:52.119 --> 00:05:58.025 align:start position:16% line:-2
+もう少し動かすと Safe Areaの
+下部の余白が少し大きくなります
+
+00:05:58.125 --> 00:06:03.897 align:start position:21% line:-2
+親のSafe Areaの外に出て
+重なった部分が現れました
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.746 --> 00:17:00.206 A:middle
+UIKitGestureRecognizers, it's
+
+00:17:00.206 --> 00:17:01.386 A:middle
+important to understand the
+
+00:17:01.386 --> 00:17:03.356 A:middle
+difference between discrete and
+
+00:17:03.356 --> 00:17:04.726 A:middle
+continuous gestures.
+
+00:17:06.006 --> 00:17:07.796 A:middle
+Discrete gestures tell you that
+
+00:17:07.796 --> 00:17:08.736 A:middle
+an event happened.
+
+00:17:09.626 --> 00:17:10.826 A:middle
+They start in the Possible
+
+00:17:10.826 --> 00:17:13.026 A:middle
+state, and then they don't pass
+
+00:17:13.026 --> 00:17:14.945 A:middle
+go, they don't collect $200.
+
+00:17:15.096 --> 00:17:16.496 A:middle
+They move immediately into the
+
+00:17:16.496 --> 00:17:17.366 A:middle
+Recognized state.
+
+00:17:18.536 --> 00:17:20.556 A:middle
+These are really useful for fire
+
+00:17:20.556 --> 00:17:21.896 A:middle
+and forget interactions in your
+
+00:17:21.896 --> 00:17:24.366 A:middle
+app, but won't tell you at every
+
+00:17:24.366 --> 00:17:25.925 A:middle
+phase during the interaction.
+
+00:17:26.455 --> 00:17:28.656 A:middle
+&gt;&gt; The other type of gestures
+
+00:17:28.656 --> 00:17:30.116 A:middle
+are continuous gestures.
+
+00:17:30.686 --> 00:17:31.806 A:middle
+These provide a much greater
+
+00:17:31.806 --> 00:17:33.096 A:middle
+level of fidelity to you.
+
+00:17:34.336 --> 00:17:35.586 A:middle
+Like discrete gestures, they
+
+00:17:35.586 --> 00:17:37.036 A:middle
+start out in the Possible state,
+
+00:17:37.816 --> 00:17:38.666 A:middle
+but as they begin to be
+
+00:17:38.666 --> 00:17:40.326 A:middle
+recognized, they move to the
+
+00:17:40.326 --> 00:17:41.096 A:middle
+Began state.
+
+00:17:41.586 --> 00:17:44.236 A:middle
+As they track, they enter the
+
+00:17:44.296 --> 00:17:45.196 A:middle
+Changed state.
+
+00:17:45.716 --> 00:17:46.506 A:middle
+And, at this point you're
+
+00:17:46.506 --> 00:17:48.026 A:middle
+receiving a continuous stream of
+
+00:17:48.026 --> 00:17:49.716 A:middle
+events as the gesture moves
+
+00:17:49.716 --> 00:17:49.976 A:middle
+around.
+
+00:17:51.216 --> 00:17:52.766 A:middle
+Finally, when the gesture is
+
+00:17:53.176 --> 00:17:55.126 A:middle
+complete, it moves to the Ended
+
+00:17:55.126 --> 00:17:55.446 A:middle
+state.
+
+00:17:57.356 --> 00:17:58.976 A:middle
+One of our favorite types of
+
+00:17:58.976 --> 00:18:00.436 A:middle
+continuous gestures is the
+

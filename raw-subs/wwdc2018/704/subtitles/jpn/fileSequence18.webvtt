@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:56.844 --> 00:18:00.214 align:start position:25% line:-1
+Sandbox環境の特徴は？
+
+00:18:01.014 --> 00:18:05.385 align:start position:32% line:-2
+まずテスト環境なので
+課金が発生しません
+
+00:18:05.686 --> 00:18:09.423 align:start position:36% line:-2
+テストでの課金は
+無意味ですから
+
+00:18:10.124 --> 00:18:12.226 align:start position:36% line:-1
+２つ目の特徴です
+
+00:18:12.326 --> 00:18:16.463 align:start position:16% line:-2
+デベロッパは
+App Store Connectで―
+
+00:18:16.630 --> 00:18:20.834 align:start position:29% line:-2
+Sandbox環境用の
+専用アカウントを作ります
+
+00:18:20.934 --> 00:18:24.004 align:start position:27% line:-2
+App内課金アカウントとは
+別です
+
+00:18:25.239 --> 00:18:28.675 align:start position:29% line:-2
+また完全に別の
+バックエンド環境なので―
+
+00:18:28.776 --> 00:18:34.581 align:start position:27% line:-2
+URLはレシート検証時とは
+完全に別のURLになります
+
+00:18:34.681 --> 00:18:36.850 align:start position:34% line:-1
+ここは重要な点です
+
+00:18:36.950 --> 00:18:41.722 align:start position:32% line:-2
+開発テストレシートを
+QAサーバに送り―
+
+00:18:41.822 --> 00:18:46.727 align:start position:12% line:-2
+verifyReceiptエンドポイントに
+渡す場合です
+
+00:18:47.261 --> 00:18:49.396 align:start position:36% line:-1
+後ほど説明します
+
+00:18:50.397 --> 00:18:53.433 align:start position:30% line:-2
+StoreKitには
+テストモードもあります
+
+00:18:53.534 --> 00:18:57.604 align:start position:7% line:-2
+例えば
+SKReceiptRefreshRequestで
+
+00:18:57.704 --> 00:19:01.442 align:start position:30% line:-2
+期限切れレシートを
+取得する引数を使えます
+

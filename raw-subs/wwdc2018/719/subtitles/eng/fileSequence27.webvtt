@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.456 --> 00:27:00.746 A:middle
+kernel, as well as a region of
+
+00:27:00.746 --> 00:27:01.536 A:middle
+interest from which you're
+
+00:27:01.536 --> 00:27:03.796 A:middle
+sampling in the buffer where
+
+00:27:03.796 --> 00:27:05.816 A:middle
+you're sampling from.
+
+00:27:07.356 --> 00:27:09.156 A:middle
+PyCoreImage provides a selection
+
+00:27:09.156 --> 00:27:10.986 A:middle
+of useful APIs that you can use,
+
+00:27:10.986 --> 00:27:12.676 A:middle
+such as a composite operations.
+
+00:27:12.676 --> 00:27:15.116 A:middle
+Here is a source-over as well as
+
+00:27:15.156 --> 00:27:16.466 A:middle
+geometrical operations such as
+
+00:27:16.466 --> 00:27:19.506 A:middle
+translation, scaling, rotation,
+
+00:27:20.386 --> 00:27:21.006 A:middle
+and cropping.
+
+00:27:21.536 --> 00:27:22.406 A:middle
+All right.
+
+00:27:23.536 --> 00:27:25.476 A:middle
+I just want to spend a bit more
+
+00:27:25.476 --> 00:27:28.706 A:middle
+time on the GPU kernels because
+
+00:27:28.706 --> 00:27:29.796 A:middle
+that's an extremely powerful
+
+00:27:29.796 --> 00:27:30.836 A:middle
+feature especially for pro
+
+00:27:30.836 --> 00:27:31.296 A:middle
+typing.
+
+00:27:31.416 --> 00:27:33.696 A:middle
+So what we have here is a string
+
+00:27:33.696 --> 00:27:35.376 A:middle
+containing the code to a GPU
+
+00:27:35.376 --> 00:27:36.196 A:middle
+fragmentor.
+
+00:27:36.606 --> 00:27:38.356 A:middle
+And what we have there is
+
+00:27:38.356 --> 00:27:39.716 A:middle
+essentially a way for you to
+
+00:27:39.716 --> 00:27:41.326 A:middle
+prototype in real time what that
+
+00:27:41.326 --> 00:27:41.916 A:middle
+effect is.
+
+00:27:43.726 --> 00:27:44.926 A:middle
+This is an example of five tap
+
+00:27:44.926 --> 00:27:46.786 A:middle
+Laplacian and we're going to be
+
+00:27:46.786 --> 00:27:47.996 A:middle
+using this for sharpening.
+
+00:27:48.386 --> 00:27:50.166 A:middle
+So, we make five samples in
+
+00:27:50.166 --> 00:27:51.226 A:middle
+neighborhood of each pixel.
+
+00:27:51.896 --> 00:27:53.136 A:middle
+Combine them in a way to compute
+
+00:27:53.136 --> 00:27:54.186 A:middle
+a local derivative, which is
+
+00:27:54.186 --> 00:27:55.726 A:middle
+going to be our detail, and
+
+00:27:55.726 --> 00:27:56.916 A:middle
+we're adding in on -- back on
+
+00:27:56.916 --> 00:27:57.936 A:middle
+top of the center pixel.
+
+00:27:58.486 --> 00:27:59.776 A:middle
+I don't want to focus too much
+
+00:27:59.776 --> 00:28:00.916 A:middle
+on the filter itself, but how to
+

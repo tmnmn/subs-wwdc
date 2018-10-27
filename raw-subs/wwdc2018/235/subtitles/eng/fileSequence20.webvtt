@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:57.886 --> 00:20:00.046 A:middle
+safe area insets on its top edge
+
+00:20:00.526 --> 00:20:02.076 A:middle
+into its adjusted content
+
+00:20:02.076 --> 00:20:02.486 A:middle
+insets.
+
+00:20:02.926 --> 00:20:03.886 A:middle
+And that's because our scroll
+
+00:20:03.886 --> 00:20:05.146 A:middle
+view's vertically scrollable.
+
+00:20:05.766 --> 00:20:07.496 A:middle
+And so what this does is this
+
+00:20:07.546 --> 00:20:08.866 A:middle
+automatically increases the
+
+00:20:08.866 --> 00:20:10.746 A:middle
+scrollable area and makes it so
+
+00:20:10.746 --> 00:20:12.416 A:middle
+content can scroll out from
+
+00:20:12.466 --> 00:20:14.116 A:middle
+underneath anything covering up
+
+00:20:14.416 --> 00:20:16.266 A:middle
+the top edge like a bar or even
+
+00:20:16.266 --> 00:20:17.146 A:middle
+the edge of the display.
+
+00:20:19.176 --> 00:20:20.856 A:middle
+So take a look at an example
+
+00:20:20.856 --> 00:20:22.246 A:middle
+here where we have the same
+
+00:20:22.246 --> 00:20:23.596 A:middle
+scroll view on two different
+
+00:20:23.596 --> 00:20:23.976 A:middle
+devices.
+
+00:20:23.976 --> 00:20:26.186 A:middle
+iPhone 10 on the left, iPhone 8
+
+00:20:26.186 --> 00:20:26.676 A:middle
+on the right.
+
+00:20:27.116 --> 00:20:29.286 A:middle
+And you can see this is a real
+
+00:20:29.286 --> 00:20:31.066 A:middle
+example, the top safe area inset
+
+00:20:31.066 --> 00:20:32.436 A:middle
+is larger on the iPhone 10
+
+00:20:32.856 --> 00:20:34.736 A:middle
+because of the larger status bar
+
+00:20:34.736 --> 00:20:36.036 A:middle
+height and the sensor housing.
+
+00:20:36.636 --> 00:20:37.966 A:middle
+And as a result, the scroll view
+
+00:20:37.966 --> 00:20:39.476 A:middle
+has a larger top inset-- that's
+
+00:20:39.476 --> 00:20:40.846 A:middle
+the gray region that's shaded at
+
+00:20:40.846 --> 00:20:41.366 A:middle
+the top here.
+
+00:20:42.296 --> 00:20:43.816 A:middle
+So this is one way that scroll
+
+00:20:43.816 --> 00:20:45.586 A:middle
+view helps automatically adapt
+
+00:20:45.976 --> 00:20:47.206 A:middle
+to any device that it's running
+
+00:20:47.206 --> 00:20:47.436 A:middle
+on.
+
+00:20:47.996 --> 00:20:49.726 A:middle
+Now let's go back to our diagram
+
+00:20:49.726 --> 00:20:51.566 A:middle
+and talk about something else.
+
+00:20:52.876 --> 00:20:54.016 A:middle
+When we have a scroll view like
+
+00:20:54.016 --> 00:20:55.986 A:middle
+this where we have top safe area
+
+00:20:55.986 --> 00:20:58.206 A:middle
+insets, let's go ahead and add a
+
+00:20:58.206 --> 00:20:59.286 A:middle
+subview to our scroll view.
+
+00:20:59.286 --> 00:21:01.216 A:middle
+And we'll put this right in the
+

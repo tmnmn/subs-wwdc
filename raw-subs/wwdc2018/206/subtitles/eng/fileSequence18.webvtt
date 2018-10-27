@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.906 --> 00:18:01.116 A:middle
+building an app for skating
+
+00:18:01.116 --> 00:18:02.676 A:middle
+workouts, now would be a good
+
+00:18:02.726 --> 00:18:03.596 A:middle
+time to talk about the
+
+00:18:03.596 --> 00:18:04.866 A:middle
+improvements we're making to
+
+00:18:04.866 --> 00:18:06.306 A:middle
+workouts in WatchOS 5.
+
+00:18:07.506 --> 00:18:08.726 A:middle
+We completely rewrote the
+
+00:18:08.726 --> 00:18:10.636 A:middle
+workout API in this release to
+
+00:18:10.636 --> 00:18:12.816 A:middle
+make it simpler, more reliable,
+
+00:18:12.816 --> 00:18:13.776 A:middle
+and more resilient.
+
+00:18:14.466 --> 00:18:16.096 A:middle
+And we've moved the built-in
+
+00:18:16.096 --> 00:18:17.386 A:middle
+workout app to use it.
+
+00:18:18.676 --> 00:18:19.676 A:middle
+We're hoping you'll move your
+
+00:18:19.676 --> 00:18:23.246 A:middle
+fitness apps to it to.
+
+00:18:23.386 --> 00:18:24.956 A:middle
+It's now easier than ever to
+
+00:18:24.956 --> 00:18:26.526 A:middle
+start a workout and collect the
+
+00:18:26.556 --> 00:18:28.116 A:middle
+right data with a new
+
+00:18:28.116 --> 00:18:30.116 A:middle
+initializer from HK workout
+
+00:18:30.336 --> 00:18:33.556 A:middle
+session and the new workout
+
+00:18:33.556 --> 00:18:34.076 A:middle
+builder API.
+
+00:18:34.926 --> 00:18:37.536 A:middle
+You create the workout session,
+
+00:18:38.256 --> 00:18:39.586 A:middle
+get the builder from the session
+
+00:18:40.016 --> 00:18:41.326 A:middle
+and start collecting data.
+
+00:18:42.096 --> 00:18:42.846 A:middle
+It's that simple.
+
+00:18:44.416 --> 00:18:46.476 A:middle
+This is what it looks like in
+
+00:18:47.236 --> 00:18:47.346 A:middle
+code.
+
+00:18:47.556 --> 00:18:48.776 A:middle
+You create and configure the
+
+00:18:48.776 --> 00:18:50.326 A:middle
+session with a health store and
+
+00:18:50.326 --> 00:18:52.186 A:middle
+a workout configuration, which
+
+00:18:52.186 --> 00:18:54.046 A:middle
+includes the activity type.
+
+00:18:54.656 --> 00:18:56.926 A:middle
+Grab the HK live workout builder
+
+00:18:56.926 --> 00:18:57.876 A:middle
+that's associated with the
+
+00:18:57.876 --> 00:19:00.606 A:middle
+session and begin collection.
+

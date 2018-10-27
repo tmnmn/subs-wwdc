@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.936 --> 00:34:00.586 A:middle
+This is not taking advantage of
+
+00:34:00.586 --> 00:34:01.556 A:middle
+any of our performance
+
+00:34:01.556 --> 00:34:02.826 A:middle
+improvements in iOS 12.
+
+00:34:03.826 --> 00:34:05.376 A:middle
+This is just the client code
+
+00:34:06.366 --> 00:34:07.396 A:middle
+doing things more efficiently.
+
+00:34:07.396 --> 00:34:09.626 A:middle
+In iOS12 it also looks great.
+
+00:34:09.626 --> 00:34:13.416 A:middle
+And of course fabulous
+
+00:34:13.416 --> 00:34:14.016 A:middle
+[laughing].
+
+00:34:14.516 --> 00:34:16.556 A:middle
+[ Applause ]
+
+00:34:17.056 --> 00:34:17.446 A:middle
+Yes, it's great.
+
+00:34:20.396 --> 00:34:21.815 A:middle
+So how do we avoid constraint
+
+00:34:21.815 --> 00:34:22.106 A:middle
+churn?
+
+00:34:23.176 --> 00:34:24.545 A:middle
+Well, avoid removing all of your
+
+00:34:24.545 --> 00:34:25.106 A:middle
+constraints.
+
+00:34:25.106 --> 00:34:26.206 A:middle
+That's usually going to put you
+
+00:34:26.206 --> 00:34:27.406 A:middle
+into a situation where you have
+
+00:34:27.406 --> 00:34:29.036 A:middle
+to put a bunch of them back and
+
+00:34:29.036 --> 00:34:30.956 A:middle
+that's going to land you in a
+
+00:34:30.956 --> 00:34:32.596 A:middle
+position where you're relaying
+
+00:34:32.596 --> 00:34:33.626 A:middle
+out frames that don't need to --
+
+00:34:33.626 --> 00:34:34.795 A:middle
+or relaying out views that don't
+
+00:34:34.795 --> 00:34:35.636 A:middle
+need to be laid out again.
+
+00:34:36.866 --> 00:34:38.286 A:middle
+If you have a set of constraints
+
+00:34:38.315 --> 00:34:39.626 A:middle
+that going to be common to all
+
+00:34:39.626 --> 00:34:40.585 A:middle
+of the potential layouts in your
+
+00:34:40.585 --> 00:34:42.556 A:middle
+app, add them one and then leave
+
+00:34:42.556 --> 00:34:43.085 A:middle
+them alone.
+
+00:34:43.156 --> 00:34:44.295 A:middle
+This is a good use for Interface
+
+00:34:44.295 --> 00:34:45.326 A:middle
+Builder and the initial layout
+
+00:34:45.326 --> 00:34:46.916 A:middle
+of your app.
+
+00:34:46.916 --> 00:34:47.786 A:middle
+Changes to the constraints that
+
+00:34:47.786 --> 00:34:48.826 A:middle
+need changing but don't change
+
+00:34:48.826 --> 00:34:49.585 A:middle
+the ones that don't need
+
+00:34:49.585 --> 00:34:49.956 A:middle
+changing.
+
+00:34:50.886 --> 00:34:51.946 A:middle
+Kind of tautological but it
+
+00:34:52.295 --> 00:34:52.755 A:middle
+seems good.
+
+00:34:53.186 --> 00:34:54.606 A:middle
+And then you have a neat trick
+
+00:34:54.606 --> 00:34:56.786 A:middle
+now for hiding views instead of
+
+00:34:56.786 --> 00:34:58.086 A:middle
+removing them when that makes
+
+00:34:58.086 --> 00:34:58.436 A:middle
+sense.
+
+00:34:59.076 --> 00:35:00.096 A:middle
+All right, so that was
+

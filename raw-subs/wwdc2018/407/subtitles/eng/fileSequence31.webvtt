@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.676 --> 00:31:00.096 A:middle
+you're using dictionaries like
+
+00:31:00.096 --> 00:31:01.366 A:middle
+they were objects, then you
+
+00:31:01.366 --> 00:31:02.636 A:middle
+probably know you're doing this,
+
+00:31:02.926 --> 00:31:04.216 A:middle
+if you have a bunch of string
+
+00:31:04.216 --> 00:31:06.166 A:middle
+constants for all the keys, then
+
+00:31:06.166 --> 00:31:07.466 A:middle
+you can get a big improvement to
+
+00:31:07.466 --> 00:31:09.186 A:middle
+code clarity, to code
+
+00:31:09.186 --> 00:31:11.396 A:middle
+completion, to re-factoring, to
+
+00:31:11.396 --> 00:31:12.396 A:middle
+making the validating your
+
+00:31:12.396 --> 00:31:14.046 A:middle
+source code, by using specific
+
+00:31:14.526 --> 00:31:14.966 A:middle
+types.
+
+00:31:15.076 --> 00:31:16.136 A:middle
+It couldn't be easier with
+
+00:31:16.136 --> 00:31:18.066 A:middle
+strucks and swift with their
+
+00:31:18.066 --> 00:31:19.196 A:middle
+implicit initializers and
+
+00:31:19.196 --> 00:31:20.816 A:middle
+conformance to equitable hash.
+
+00:31:21.336 --> 00:31:23.646 A:middle
+And this can just be hands-down
+
+00:31:23.646 --> 00:31:24.586 A:middle
+an improvement to your source
+
+00:31:24.586 --> 00:31:26.206 A:middle
+code, and you'd be surprised at
+
+00:31:26.206 --> 00:31:27.916 A:middle
+how much time you're spending in
+
+00:31:27.916 --> 00:31:29.546 A:middle
+string hashing and string
+
+00:31:29.546 --> 00:31:31.126 A:middle
+equation if you were doing this
+
+00:31:31.126 --> 00:31:32.546 A:middle
+millions of times on lots of
+
+00:31:32.546 --> 00:31:33.316 A:middle
+small objects.
+
+00:31:34.516 --> 00:31:35.736 A:middle
+So with that, I'd like to turn
+
+00:31:35.736 --> 00:31:37.386 A:middle
+it over to Matthew to talk to
+
+00:31:37.386 --> 00:31:38.966 A:middle
+you about how we've applied
+
+00:31:39.056 --> 00:31:40.226 A:middle
+these techniques inside of
+
+00:31:40.226 --> 00:31:40.686 A:middle
+photos.
+
+00:31:42.516 --> 00:31:47.866 A:middle
+[ Applause ]
+
+00:31:48.366 --> 00:31:48.806 A:middle
+&gt;&gt; Thanks Jim.
+
+00:31:49.966 --> 00:31:50.656 A:middle
+Hi everyone.
+
+00:31:50.826 --> 00:31:52.746 A:middle
+I'm Matthew Lucas, an engineer
+
+00:31:52.806 --> 00:31:56.076 A:middle
+in the photos team, and today I
+
+00:31:56.076 --> 00:31:57.536 A:middle
+want to give you some practical
+
+00:31:57.536 --> 00:31:59.316 A:middle
+examples on performance from
+
+00:31:59.316 --> 00:32:00.296 A:middle
+directly from photos.
+

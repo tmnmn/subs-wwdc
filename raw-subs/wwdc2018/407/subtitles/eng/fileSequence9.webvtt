@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.946 --> 00:09:01.056 A:middle
+Another performance test would
+
+00:09:01.056 --> 00:09:02.906 A:middle
+measure correlating, ranking and
+
+00:09:02.906 --> 00:09:04.386 A:middle
+scoring those results, so we
+
+00:09:04.386 --> 00:09:05.406 A:middle
+knew which ones to display to
+
+00:09:05.406 --> 00:09:05.806 A:middle
+the user.
+
+00:09:06.926 --> 00:09:08.896 A:middle
+A third test might take those
+
+00:09:08.926 --> 00:09:10.636 A:middle
+already prepared results, and
+
+00:09:10.636 --> 00:09:11.636 A:middle
+measure putting them into UI
+
+00:09:11.636 --> 00:09:13.156 A:middle
+elements for final display.
+
+00:09:13.156 --> 00:09:15.016 A:middle
+And in covering all three of
+
+00:09:15.016 --> 00:09:16.846 A:middle
+these areas, I would have pretty
+
+00:09:16.846 --> 00:09:17.986 A:middle
+good coverage over the major
+
+00:09:17.986 --> 00:09:20.056 A:middle
+components of code completion in
+
+00:09:20.056 --> 00:09:20.546 A:middle
+the IDE.
+
+00:09:23.136 --> 00:09:24.796 A:middle
+Now, there are some great
+
+00:09:24.886 --> 00:09:26.276 A:middle
+aspects to these performance
+
+00:09:26.276 --> 00:09:26.976 A:middle
+unit tests.
+
+00:09:27.596 --> 00:09:28.326 A:middle
+They're going to be highly
+
+00:09:28.326 --> 00:09:30.026 A:middle
+focused, which means if they
+
+00:09:30.026 --> 00:09:31.276 A:middle
+regress in the future, I'm going
+
+00:09:31.276 --> 00:09:32.706 A:middle
+to have a very good idea on
+
+00:09:32.706 --> 00:09:33.986 A:middle
+where the regression is, because
+
+00:09:34.026 --> 00:09:35.066 A:middle
+the code that is running has
+
+00:09:35.066 --> 00:09:36.086 A:middle
+been scoped so well.
+
+00:09:36.706 --> 00:09:38.976 A:middle
+They are also going to produce
+
+00:09:39.286 --> 00:09:40.626 A:middle
+much more repeatable results
+
+00:09:40.626 --> 00:09:41.336 A:middle
+from run to run.
+
+00:09:41.466 --> 00:09:42.436 A:middle
+They're not going to have a big
+
+00:09:42.436 --> 00:09:44.556 A:middle
+variance in the times that they
+
+00:09:44.556 --> 00:09:45.036 A:middle
+produce.
+
+00:09:45.426 --> 00:09:46.676 A:middle
+Again, because the code is so
+
+00:09:46.676 --> 00:09:47.156 A:middle
+focused.
+
+00:09:48.176 --> 00:09:49.186 A:middle
+Now, let's contrast that to an
+
+00:09:49.186 --> 00:09:50.056 A:middle
+integration test.
+
+00:09:51.076 --> 00:09:52.936 A:middle
+In an integration test, your job
+
+00:09:52.936 --> 00:09:54.796 A:middle
+is to measure the performance of
+
+00:09:54.796 --> 00:09:56.616 A:middle
+your application as your users
+
+00:09:56.616 --> 00:09:57.336 A:middle
+experience it.
+
+00:09:58.326 --> 00:09:59.016 A:middle
+Holistically.
+
+00:09:59.866 --> 00:10:01.506 A:middle
+So, if I was writing code
+

@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.000 --> 00:05:04.204 align:start position:25% line:-2
+ARCオブジェクトポインタを
+アイテム内で保持します
+
+00:05:05.105 --> 00:05:10.744 align:start position:23% line:-2
+このコメントは
+コンパイラが合成するコードです
+
+00:05:11.111 --> 00:05:15.048 align:start position:30% line:-2
+このコードにより
+アイテムが使われる前に
+
+00:05:15.148 --> 00:05:19.086 align:start position:25% line:-1
+料理名と価格は解放されません
+
+00:05:21.288 --> 00:05:25.025 align:start position:21% line:-1
+ここでアイテムがスコープ外となり
+
+00:05:25.259 --> 00:05:27.294 align:start position:32% line:-1
+スタックから外れます
+
+00:05:27.394 --> 00:05:30.731 align:start position:30% line:-2
+そこでコンパイラが
+releaseを合成し
+
+00:05:30.831 --> 00:05:34.868 align:start position:25% line:-2
+ARCオブジェクトポインタを
+解放します
+
+00:05:35.602 --> 00:05:40.874 align:start position:25% line:-2
+これでアイテムの解放時
+料理名と価格はリークしません
+
+00:05:42.876 --> 00:05:47.481 align:start position:21% line:-2
+今まで Objective-Cの
+オブジェクトポインタを
+
+00:05:47.581 --> 00:05:50.517 align:start position:29% line:-1
+MRRで管理していました
+
+00:05:50.984 --> 00:05:54.755 align:start position:21% line:-1
+コードの記述が手間だったのですが
+
+00:05:55.122 --> 00:05:59.326 align:start position:30% line:-2
+ARCならコンパイラが
+助けてくれます
+
+00:05:59.426 --> 00:06:03.030 align:start position:11% line:-1
+自動でretainやreleaseを補います
+

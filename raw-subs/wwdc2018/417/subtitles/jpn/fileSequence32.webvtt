@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:56.550 --> 00:32:01.121 align:start position:29% line:-2
+このクラスがやり取りする
+外部クラスの１つです
+
+00:32:01.288 --> 00:32:05.459 align:start position:29% line:-2
+プロトコルのテクニックで
+モックするのです
+
+00:32:06.126 --> 00:32:10.731 align:start position:21% line:-2
+addTimerメソッドを含んだ
+小プロトコルを作り
+
+00:32:12.032 --> 00:32:14.535 align:start position:23% line:-2
+TimerSchedulerと
+名づけました
+
+00:32:14.635 --> 00:32:17.070 align:start position:25% line:-1
+addTimerメソッドは―
+
+00:32:17.171 --> 00:32:20.340 align:start position:29% line:-2
+runLoop APIの
+シグネチャと適合します
+
+00:32:22.176 --> 00:32:27.181 align:start position:21% line:-2
+このプロトコルをrunLoopと
+置き換えましょう
+
+00:32:29.650 --> 00:32:33.654 align:start position:30% line:-2
+本物のrunLoopを
+使いたくないので
+
+00:32:33.754 --> 00:32:38.292 align:start position:25% line:-2
+タイマーを渡す
+モックスケジューラを作ります
+
+00:32:39.560 --> 00:32:43.030 align:start position:25% line:-2
+TimerScheduler
+プロトコルに準拠する―
+
+00:32:43.130 --> 00:32:47.267 align:start position:12% line:-2
+MockTimerSchedulerという
+新しい構造体を作成
+
+00:32:47.835 --> 00:32:51.705 align:start position:27% line:-2
+タイマーの追加時に呼ばれる
+ブロックを含みます
+
+00:32:53.841 --> 00:32:57.277 align:start position:29% line:-2
+では最終ユニットテストを
+記述します
+
+00:32:57.778 --> 00:33:00.414 align:start position:12% line:-2
+まず
+MockTimerSchedulerを作り
+

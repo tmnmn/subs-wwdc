@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:00.046 --> 00:12:01.936 A:middle
+class that we've put together,
+
+00:12:03.106 --> 00:12:06.536 A:middle
+and let's take a look at what we
+
+00:12:06.536 --> 00:12:07.176 A:middle
+need to do here.
+
+00:12:07.176 --> 00:12:10.236 A:middle
+So I already have a stub
+
+00:12:10.236 --> 00:12:12.376 A:middle
+override of the layouts prepare
+
+00:12:12.456 --> 00:12:12.916 A:middle
+method.
+
+00:12:13.506 --> 00:12:13.686 A:middle
+Now,
+
+00:12:14.076 --> 00:12:15.756 A:middle
+UICollectionViewLayoutsPrepare
+
+00:12:15.756 --> 00:12:17.266 A:middle
+method is called whenever the
+
+00:12:17.266 --> 00:12:19.406 A:middle
+layout is invalidated, and in
+
+00:12:19.406 --> 00:12:19.906 A:middle
+the case of
+
+00:12:19.906 --> 00:12:22.476 A:middle
+UICollectionFlowLayout, our
+
+00:12:22.636 --> 00:12:24.646 A:middle
+layout is invalidated whenever
+
+00:12:24.646 --> 00:12:26.416 A:middle
+the CollectionView's bounds of
+
+00:12:26.416 --> 00:12:27.336 A:middle
+size changes.
+
+00:12:27.336 --> 00:12:29.626 A:middle
+So if our app rotates on a phone
+
+00:12:29.626 --> 00:12:31.956 A:middle
+or if our app is resized on an
+
+00:12:32.076 --> 00:12:32.446 A:middle
+iPad.
+
+00:12:33.996 --> 00:12:35.976 A:middle
+So this is a great place to do
+
+00:12:35.976 --> 00:12:39.366 A:middle
+any customization that takes the
+
+00:12:39.366 --> 00:12:41.026 A:middle
+size of the CollectionView into
+
+00:12:41.026 --> 00:12:41.506 A:middle
+account.
+
+00:12:41.506 --> 00:12:42.986 A:middle
+In our case, we want our cells
+
+00:12:42.986 --> 00:12:45.456 A:middle
+to be some function of the
+
+00:12:45.456 --> 00:12:46.756 A:middle
+CollectionView's width.
+
+00:12:47.266 --> 00:12:48.886 A:middle
+And we can let the
+
+00:12:48.886 --> 00:12:51.236 A:middle
+CollectionView know how big we
+
+00:12:51.236 --> 00:12:53.146 A:middle
+want our items to be by saying
+
+00:12:53.146 --> 00:12:54.436 A:middle
+it's item sized properties.
+
+00:12:54.516 --> 00:12:55.876 A:middle
+So I'm going to go ahead and do
+
+00:12:55.876 --> 00:12:56.296 A:middle
+that here.
+
+00:12:57.426 --> 00:12:58.586 A:middle
+So I'm just going to set my
+
+00:12:58.586 --> 00:13:01.086 A:middle
+CollectionView's item size to a
+

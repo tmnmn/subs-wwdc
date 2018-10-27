@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:00.576 --> 00:38:01.486 A:middle
+And so you want to read that
+
+00:38:01.486 --> 00:38:03.036 A:middle
+header first and then read the
+
+00:38:03.036 --> 00:38:04.646 A:middle
+rest of your content, and maybe
+
+00:38:04.646 --> 00:38:05.686 A:middle
+your content's quite long.
+
+00:38:05.686 --> 00:38:07.506 A:middle
+It's a couple megabytes let's
+
+00:38:07.506 --> 00:38:07.726 A:middle
+say.
+
+00:38:09.066 --> 00:38:10.536 A:middle
+Traditionally with a socket, you
+
+00:38:10.536 --> 00:38:11.886 A:middle
+may try to read 10 bytes.
+
+00:38:12.706 --> 00:38:13.776 A:middle
+You may get 10 bytes, you may
+
+00:38:13.776 --> 00:38:14.336 A:middle
+get less.
+
+00:38:14.476 --> 00:38:15.426 A:middle
+You have to keep reading until
+
+00:38:15.426 --> 00:38:16.836 A:middle
+you get exactly 10 bytes to read
+
+00:38:16.836 --> 00:38:17.206 A:middle
+your header.
+
+00:38:18.096 --> 00:38:19.046 A:middle
+And then you have to read a
+
+00:38:19.206 --> 00:38:21.016 A:middle
+couple megabytes, and you'll
+
+00:38:21.016 --> 00:38:21.976 A:middle
+read some, and you'll get a
+
+00:38:21.976 --> 00:38:22.836 A:middle
+whole bunch of different read
+
+00:38:22.836 --> 00:38:24.076 A:middle
+calls and essentially go back
+
+00:38:24.076 --> 00:38:25.836 A:middle
+and forth between your app and
+
+00:38:25.836 --> 00:38:26.736 A:middle
+the stack.
+
+00:38:28.696 --> 00:38:30.686 A:middle
+With an NWConnection, when you
+
+00:38:30.686 --> 00:38:33.686 A:middle
+call receive, you provide the
+
+00:38:34.166 --> 00:38:35.316 A:middle
+minimum data that you want to
+
+00:38:35.316 --> 00:38:36.806 A:middle
+receive and the maximum data.
+
+00:38:37.676 --> 00:38:38.996 A:middle
+So you could actually specify if
+
+00:38:38.996 --> 00:38:40.426 A:middle
+you want to receive exactly 10
+
+00:38:40.426 --> 00:38:41.326 A:middle
+bytes because that's your
+
+00:38:41.326 --> 00:38:43.256 A:middle
+protocol, you can just say, I
+
+00:38:43.256 --> 00:38:44.646 A:middle
+want a minimum of 10 and a
+
+00:38:44.646 --> 00:38:45.406 A:middle
+maximum of 10.
+
+00:38:45.506 --> 00:38:46.736 A:middle
+Give me exactly 10 bytes.
+
+00:38:47.236 --> 00:38:48.646 A:middle
+And we will only call you back
+
+00:38:49.246 --> 00:38:50.686 A:middle
+when either there was an error
+
+00:38:50.946 --> 00:38:51.856 A:middle
+in reading on the connection
+
+00:38:51.856 --> 00:38:54.276 A:middle
+overall or we read exactly those
+
+00:38:54.276 --> 00:38:54.946 A:middle
+10 bytes.
+
+00:38:55.566 --> 00:38:57.806 A:middle
+Then you can easily just read
+
+00:38:57.806 --> 00:38:59.126 A:middle
+out whatever content you need
+
+00:38:59.126 --> 00:39:00.156 A:middle
+for your header, read out the
+

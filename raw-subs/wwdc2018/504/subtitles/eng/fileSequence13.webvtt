@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:57.846 --> 00:13:00.296 A:middle
+So let's talk about what we have
+
+00:13:00.296 --> 00:13:01.306 A:middle
+now at our disposal.
+
+00:13:02.096 --> 00:13:04.076 A:middle
+Kind of broadened our tool kit.
+
+00:13:07.376 --> 00:13:09.806 A:middle
+And so we have AVFoundation, and
+
+00:13:09.806 --> 00:13:11.026 A:middle
+it doesn't have to be tied to
+
+00:13:11.026 --> 00:13:12.156 A:middle
+any other background mode, and
+
+00:13:12.156 --> 00:13:13.996 A:middle
+we can now use just AVFoundation
+
+00:13:13.996 --> 00:13:15.266 A:middle
+directly in the background.
+
+00:13:16.616 --> 00:13:18.626 A:middle
+We also are exposing the ability
+
+00:13:18.626 --> 00:13:21.586 A:middle
+to allow you to, allow your user
+
+00:13:21.586 --> 00:13:22.776 A:middle
+to pick a different route.
+
+00:13:22.776 --> 00:13:24.256 A:middle
+So maybe some different types of
+
+00:13:24.256 --> 00:13:25.196 A:middle
+Bluetooth headphones.
+
+00:13:26.176 --> 00:13:28.146 A:middle
+And new in watchOS 5, we're also
+
+00:13:28.146 --> 00:13:29.376 A:middle
+exposing the MediaPlayer.
+
+00:13:29.376 --> 00:13:30.636 A:middle
+framework, so you can provide
+
+00:13:30.636 --> 00:13:32.186 A:middle
+some Now Playing information and
+
+00:13:32.186 --> 00:13:34.686 A:middle
+also handle any media remote
+
+00:13:35.736 --> 00:13:36.026 A:middle
+commands.
+
+00:13:36.026 --> 00:13:37.626 A:middle
+And just like our own Music,
+
+00:13:37.626 --> 00:13:39.366 A:middle
+Podcasts, and Radio app, the
+
+00:13:39.366 --> 00:13:41.056 A:middle
+long-form content is restricted
+
+00:13:41.406 --> 00:13:43.516 A:middle
+to Bluetooth routes, which
+
+00:13:43.816 --> 00:13:45.406 A:middle
+really is just a fancy way of
+
+00:13:45.406 --> 00:13:46.776 A:middle
+saying you can't play it through
+
+00:13:47.236 --> 00:13:49.276 A:middle
+the speaker.
+
+00:13:49.446 --> 00:13:50.906 A:middle
+So let's take it step by step
+
+00:13:51.306 --> 00:13:52.836 A:middle
+and talk about how we actually
+
+00:13:52.836 --> 00:13:54.386 A:middle
+get this background long-form
+
+00:13:54.386 --> 00:13:55.206 A:middle
+content to play.
+
+00:13:55.756 --> 00:13:58.366 A:middle
+So the first thing, you add
+
+00:13:58.366 --> 00:13:59.886 A:middle
+audio to your info.plist
+
+00:13:59.886 --> 00:14:00.726 A:middle
+background modes.
+

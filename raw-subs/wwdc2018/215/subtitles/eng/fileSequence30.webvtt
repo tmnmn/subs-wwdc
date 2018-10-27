@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.366 --> 00:30:00.216 A:middle
+So now, that context can start
+
+00:30:00.216 --> 00:30:01.446 A:middle
+recording progress data.
+
+00:30:02.646 --> 00:30:03.876 A:middle
+We can see that my handout
+
+00:30:03.926 --> 00:30:05.616 A:middle
+posted successfully, and I can
+
+00:30:05.616 --> 00:30:06.086 A:middle
+tap on it.
+
+00:30:06.966 --> 00:30:08.276 A:middle
+Here we see the context that
+
+00:30:08.276 --> 00:30:10.026 A:middle
+I've added, and I see my nice,
+
+00:30:10.026 --> 00:30:12.386 A:middle
+app icon is right there next to
+
+00:30:12.386 --> 00:30:13.306 A:middle
+the context name.
+
+00:30:14.006 --> 00:30:15.906 A:middle
+If I tap on the icon, it should
+
+00:30:15.906 --> 00:30:17.636 A:middle
+navigate me straight into the
+
+00:30:17.636 --> 00:30:18.646 A:middle
+addition math quiz.
+
+00:30:19.046 --> 00:30:19.876 A:middle
+So, let's go ahead and tap on
+
+00:30:19.876 --> 00:30:19.976 A:middle
+that.
+
+00:30:21.456 --> 00:30:24.196 A:middle
+Uh-oh. Schoolwork launched our
+
+00:30:24.336 --> 00:30:25.276 A:middle
+app, but this is not the
+
+00:30:25.276 --> 00:30:26.316 A:middle
+addition math quiz.
+
+00:30:27.126 --> 00:30:28.026 A:middle
+Oh, yes. That's right.
+
+00:30:28.146 --> 00:30:28.986 A:middle
+We forgot to add in
+
+00:30:28.986 --> 00:30:29.686 A:middle
+deep-linking.
+
+00:30:29.896 --> 00:30:31.276 A:middle
+So, let's go back to XCode and
+
+00:30:31.276 --> 00:30:31.926 A:middle
+add that in.
+
+00:30:32.536 --> 00:30:33.866 A:middle
+So, I'm going to go back to the
+
+00:30:33.866 --> 00:30:35.616 A:middle
+App Delegate, and let's add in
+
+00:30:35.876 --> 00:30:37.306 A:middle
+that Continue Restoration
+
+00:30:37.306 --> 00:30:37.986 A:middle
+Handler.
+
+00:30:38.226 --> 00:30:41.376 A:middle
+So here, the Continue
+
+00:30:41.376 --> 00:30:43.226 A:middle
+Restoration Handler will process
+
+00:30:43.226 --> 00:30:44.416 A:middle
+some user activity.
+
+00:30:45.336 --> 00:30:46.396 A:middle
+We're just going to grab that
+
+00:30:46.396 --> 00:30:48.166 A:middle
+User Activity and get the
+
+00:30:48.166 --> 00:30:49.556 A:middle
+Context Identifier Path.
+
+00:30:51.156 --> 00:30:52.816 A:middle
+Once we have the Context Path,
+
+00:30:53.436 --> 00:30:54.796 A:middle
+we're going to instantiate our
+
+00:30:54.846 --> 00:30:56.906 A:middle
+own internal quiz model that's
+
+00:30:56.906 --> 00:30:58.736 A:middle
+associated with this context.
+
+00:30:59.936 --> 00:31:01.266 A:middle
+Then, we're going to make sure
+

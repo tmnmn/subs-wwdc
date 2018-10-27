@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.066 --> 00:23:01.256 A:middle
+Let's compare this view subclass
+
+00:23:02.006 --> 00:23:03.366 A:middle
+to our UIImageView.
+
+00:23:03.366 --> 00:23:05.116 A:middle
+Now, as you may already be
+
+00:23:05.116 --> 00:23:07.556 A:middle
+aware, every UIView is,
+
+00:23:07.556 --> 00:23:09.446 A:middle
+actually, backed by a CALayer in
+
+00:23:09.446 --> 00:23:10.546 A:middle
+the Core Animation runtime.
+
+00:23:11.496 --> 00:23:13.426 A:middle
+And for our image view, the
+
+00:23:13.426 --> 00:23:15.416 A:middle
+image view creates the, asks the
+
+00:23:15.416 --> 00:23:17.096 A:middle
+image to create the decoded
+
+00:23:17.096 --> 00:23:17.736 A:middle
+image buffer.
+
+00:23:18.476 --> 00:23:20.366 A:middle
+And then, hands that decoded
+
+00:23:20.366 --> 00:23:23.216 A:middle
+image over to CALayer to use as
+
+00:23:23.216 --> 00:23:24.366 A:middle
+the content of its layer.
+
+00:23:25.556 --> 00:23:27.296 A:middle
+For our custom view that
+
+00:23:27.296 --> 00:23:30.546 A:middle
+overrode draw, it's similar, but
+
+00:23:30.706 --> 00:23:31.476 A:middle
+slightly different.
+
+00:23:31.686 --> 00:23:32.886 A:middle
+The layers responsible for
+
+00:23:32.886 --> 00:23:34.876 A:middle
+creating an image buffer to hold
+
+00:23:34.876 --> 00:23:36.636 A:middle
+the contents of our draw method,
+
+00:23:36.766 --> 00:23:39.586 A:middle
+and then our view, excuses draw
+
+00:23:39.586 --> 00:23:42.176 A:middle
+function and populates the
+
+00:23:42.176 --> 00:23:43.266 A:middle
+contents of that image buffer.
+
+00:23:43.636 --> 00:23:45.116 A:middle
+Which is then, copied into the
+
+00:23:45.116 --> 00:23:47.256 A:middle
+frame buffer as needed by the
+
+00:23:47.256 --> 00:23:47.906 A:middle
+display hardware.
+
+00:23:54.046 --> 00:23:56.116 A:middle
+In order to understand how much
+
+00:23:56.116 --> 00:23:57.376 A:middle
+this is costing us and why we
+
+00:23:57.376 --> 00:23:58.306 A:middle
+should, perhaps, pursue
+
+00:23:58.306 --> 00:23:59.746 A:middle
+alternative ways of implementing
+
+00:23:59.746 --> 00:24:00.336 A:middle
+this UI.
+

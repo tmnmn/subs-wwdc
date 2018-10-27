@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.746 --> 00:19:00.606 A:middle
+somewhere else in the build
+
+00:19:02.956 --> 00:19:03.176 A:middle
+directory.
+
+00:19:03.266 --> 00:19:05.176 A:middle
+Since many people were not aware
+
+00:19:05.176 --> 00:19:06.806 A:middle
+that we use headermaps, you run
+
+00:19:06.906 --> 00:19:08.106 A:middle
+into certain issues.
+
+00:19:08.426 --> 00:19:11.246 A:middle
+A very common one is that we
+
+00:19:11.246 --> 00:19:13.536 A:middle
+forgot to add the header to the
+
+00:19:13.536 --> 00:19:13.996 A:middle
+project.
+
+00:19:14.786 --> 00:19:16.756 A:middle
+It is in the source directory,
+
+00:19:16.916 --> 00:19:18.616 A:middle
+but it is not in the project
+
+00:19:18.616 --> 00:19:19.056 A:middle
+itself.
+
+00:19:19.366 --> 00:19:21.546 A:middle
+So always add your headers to
+
+00:19:21.546 --> 00:19:22.036 A:middle
+the project.
+
+00:19:23.046 --> 00:19:26.756 A:middle
+Another issue is that if you
+
+00:19:26.756 --> 00:19:28.366 A:middle
+have headers with the same name,
+
+00:19:28.646 --> 00:19:29.816 A:middle
+they might shadow each other.
+
+00:19:31.216 --> 00:19:32.966 A:middle
+So always try to use unique
+
+00:19:32.966 --> 00:19:33.846 A:middle
+names for your headers.
+
+00:19:34.806 --> 00:19:36.876 A:middle
+This also applies to system
+
+00:19:36.876 --> 00:19:37.336 A:middle
+headers.
+
+00:19:37.816 --> 00:19:39.306 A:middle
+If you have a local header in
+
+00:19:39.306 --> 00:19:40.816 A:middle
+your project that has the name
+
+00:19:40.816 --> 00:19:42.546 A:middle
+as a system header, it will
+
+00:19:42.546 --> 00:19:44.756 A:middle
+shadow the system header so you
+
+00:19:44.756 --> 00:19:46.116 A:middle
+should try to avoid this.
+
+00:19:47.096 --> 00:19:48.296 A:middle
+Talking about system headers.
+
+00:19:48.706 --> 00:19:52.866 A:middle
+How do we find those?
+
+00:19:53.066 --> 00:19:54.546 A:middle
+Another example from our
+
+00:19:54.546 --> 00:19:54.836 A:middle
+PetWall.
+
+00:19:55.926 --> 00:19:57.576 A:middle
+Here in this case we include
+
+00:19:57.616 --> 00:19:59.536 A:middle
+Foundation.h header file which
+
+00:19:59.536 --> 00:20:00.256 A:middle
+is in our SDK.
+

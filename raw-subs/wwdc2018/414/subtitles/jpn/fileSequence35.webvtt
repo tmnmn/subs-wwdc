@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.867 --> 00:35:02.469 align:start position:27% line:-2
+データベースのプロパティが
+無効でした
+
+00:35:04.405 --> 00:35:07.141 align:start position:25% line:-1
+まだバグは見つかっていません
+
+00:35:07.241 --> 00:35:08.575 align:start position:38% line:-1
+コードは正しく
+
+00:35:08.675 --> 00:35:11.044 align:start position:20% line:-2
+ivar destroyer関数も
+間違っていません
+
+00:35:11.145 --> 00:35:14.214 align:start position:30% line:-1
+何か他のものがおかしい
+
+00:35:14.381 --> 00:35:18.052 align:start position:30% line:-2
+でもクラッシュログから
+絞り込めました
+
+00:35:18.152 --> 00:35:19.586 align:start position:38% line:-1
+何をテストし―
+
+00:35:19.687 --> 00:35:22.422 align:start position:27% line:-1
+どこでバグを再現すべきか？
+
+00:35:22.522 --> 00:35:24.925 align:start position:29% line:-1
+このクラスを見るべきです
+
+00:35:25.025 --> 00:35:27.227 align:start position:25% line:-1
+データベースフィールドを見て
+
+00:35:27.327 --> 00:35:32.866 align:start position:23% line:-2
+データベースオブジェクトを
+使うコードからバグを見つけます
+
+00:35:35.102 --> 00:35:36.770 align:start position:32% line:-1
+ここまで何をしたか？
+
+00:35:37.004 --> 00:35:38.772 align:start position:27% line:-1
+クラッシュログを読みました
+
+00:35:38.872 --> 00:35:40.874 align:start position:29% line:-1
+まずクラッシュの理由です
+
+00:35:40.974 --> 00:35:45.145 align:start position:30% line:-2
+例外タイプを読み
+その意味を理解しました
+
+00:35:45.979 --> 00:35:50.117 align:start position:25% line:-2
+次にクラッシュしたスレッドの
+スタックトレースを調べ
+
+00:35:50.217 --> 00:35:55.489 align:start position:27% line:-2
+何をしていて 何のエラーで
+停止したかを理解しました
+
+00:35:55.989 --> 00:35:59.159 align:start position:29% line:-1
+他の手がかりも探しました
+
+00:35:59.259 --> 00:36:02.830 align:start position:30% line:-2
+今回はメモリエラーの
+問題のあるアドレスです
+

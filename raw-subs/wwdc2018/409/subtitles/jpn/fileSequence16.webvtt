@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.157 --> 00:16:00.060 align:start position:29% line:-1
+バグを発見するだけでなく
+
+00:16:00.160 --> 00:16:05.265 align:start position:30% line:-2
+バグの原因となるパスを
+Xcodeで表示します
+
+00:16:05.532 --> 00:16:10.871 align:start position:16% line:-2
+この例はNSMutableArrayに
+nilがあるためクラッシュします
+
+00:16:11.038 --> 00:16:14.174 align:start position:29% line:-2
+スタティックアナライザが
+そのパスを表示
+
+00:16:14.274 --> 00:16:16.810 align:start position:29% line:-1
+修正の流れを確認できます
+
+00:16:17.978 --> 00:16:22.482 align:start position:29% line:-2
+では３つの新たな改善点を
+紹介します
+
+00:16:22.749 --> 00:16:28.288 align:start position:2% line:-2
+１つ目にGrand Central Dispatchの
+アンチパターンを解析
+
+00:16:28.388 --> 00:16:31.992 align:start position:23% line:-1
+パフォーマンスの劣化を探ります
+
+00:16:32.326 --> 00:16:35.829 align:start position:27% line:-1
+２つ目は自動解放プール内の
+
+00:16:35.929 --> 00:16:39.299 align:start position:25% line:-1
+変数の誤用を検出する機能です
+
+00:16:39.399 --> 00:16:42.202 align:start position:16% line:-1
+use-after-freeを防ぎます
+
+00:16:42.936 --> 00:16:48.275 align:start position:27% line:-2
+３つ目はアナライザの性能と
+表示機能の向上です
+
+00:16:49.376 --> 00:16:54.448 align:start position:25% line:-2
+まずはGCDアンチパターンの
+解析機能を紹介します
+
+00:16:54.848 --> 00:16:59.052 align:start position:27% line:-2
+プラットフォームのAPIは
+大抵 非同期です
+
+00:16:59.153 --> 00:17:04.724 align:start position:27% line:-2
+しかし同期させて
+使いたい状況もあるでしょう
+

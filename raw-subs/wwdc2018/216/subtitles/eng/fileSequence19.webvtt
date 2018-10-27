@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.206 --> 00:19:00.696 A:middle
+picker of the controller.
+
+00:19:01.116 --> 00:19:05.956 A:middle
+So, I can drag an action from my
+
+00:19:06.786 --> 00:19:10.036 A:middle
+button to the source code, and I
+
+00:19:10.036 --> 00:19:11.996 A:middle
+agree to call it Choose Image,
+
+00:19:12.556 --> 00:19:13.976 A:middle
+and [inaudible].
+
+00:19:14.666 --> 00:19:14.986 A:middle
+Connect.
+
+00:19:16.386 --> 00:19:17.546 A:middle
+And, now I have twice my code.
+
+00:19:17.886 --> 00:19:20.406 A:middle
+So, let me display this in a
+
+00:19:21.156 --> 00:19:21.976 A:middle
+bigger window.
+
+00:19:26.076 --> 00:19:27.976 A:middle
+Here I am in my chooseImage
+
+00:19:28.196 --> 00:19:28.556 A:middle
+method.
+
+00:19:28.996 --> 00:19:31.396 A:middle
+I'm going first to create a
+
+00:19:31.486 --> 00:19:32.696 A:middle
+Document Picker controller.
+
+00:19:32.776 --> 00:19:34.826 A:middle
+And, I specify the type of files
+
+00:19:34.826 --> 00:19:36.006 A:middle
+I want my customers to choose.
+
+00:19:36.396 --> 00:19:38.426 A:middle
+So, here this is UTTypeImage,
+
+00:19:38.766 --> 00:19:40.666 A:middle
+and the mode.
+
+00:19:40.966 --> 00:19:42.306 A:middle
+I'm using .import here because I
+
+00:19:42.306 --> 00:19:44.896 A:middle
+want to embed the particle image
+
+00:19:44.896 --> 00:19:45.536 A:middle
+in my document.
+
+00:19:46.236 --> 00:19:48.696 A:middle
+But, in many cases, you will use
+
+00:19:48.696 --> 00:19:49.316 A:middle
+[inaudible] here instead.
+
+00:19:51.536 --> 00:19:54.256 A:middle
+You set your document picker
+
+00:19:54.796 --> 00:19:56.056 A:middle
+delegate, and you present it.
+
+00:19:57.406 --> 00:19:59.986 A:middle
+When the Document Picker gets
+
+00:19:59.986 --> 00:20:02.796 A:middle
+invoked, and the file is chosen,
+

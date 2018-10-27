@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.346 --> 00:25:00.946 A:middle
+highlights in our final color.
+
+00:25:01.536 --> 00:25:03.296 A:middle
+But as I continue iterating
+
+00:25:03.296 --> 00:25:05.106 A:middle
+toward the end of the loop, we
+
+00:25:05.106 --> 00:25:06.626 A:middle
+are actually seeing this, there
+
+00:25:06.626 --> 00:25:07.236 A:middle
+is a pattern.
+
+00:25:07.766 --> 00:25:09.986 A:middle
+So let's investigate why this is
+
+00:25:09.986 --> 00:25:10.506 A:middle
+happening.
+
+00:25:14.116 --> 00:25:15.806 A:middle
+As we see here in the Debugger,
+
+00:25:16.156 --> 00:25:18.176 A:middle
+we can actually see that our
+
+00:25:18.176 --> 00:25:19.116 A:middle
+weight is negative.
+
+00:25:19.626 --> 00:25:21.076 A:middle
+And this is what is causing the
+
+00:25:21.076 --> 00:25:23.206 A:middle
+color to be distracted rather
+
+00:25:23.206 --> 00:25:25.146 A:middle
+than accumulated in our final
+
+00:25:25.146 --> 00:25:25.346 A:middle
+color.
+
+00:25:26.436 --> 00:25:28.286 A:middle
+So now that we have found the
+
+00:25:28.476 --> 00:25:30.056 A:middle
+cause of our issue, let me
+
+00:25:30.056 --> 00:25:31.586 A:middle
+quickly fix this.
+
+00:25:34.616 --> 00:25:36.296 A:middle
+And now, let's check the
+
+00:25:36.296 --> 00:25:38.036 A:middle
+results, just by checking in the
+
+00:25:38.036 --> 00:25:39.716 A:middle
+reload changes button, here in
+
+00:25:39.716 --> 00:25:42.776 A:middle
+the debug bar.
+
+00:25:42.776 --> 00:25:44.946 A:middle
+And as we can see here, now
+
+00:25:45.036 --> 00:25:46.366 A:middle
+there is no more other carriers,
+
+00:25:46.656 --> 00:25:48.496 A:middle
+but let's see it in action, just
+
+00:25:48.496 --> 00:25:49.566 A:middle
+by clicking on the Continue
+
+00:25:49.566 --> 00:25:50.036 A:middle
+button.
+
+00:25:54.556 --> 00:25:56.686 A:middle
+And indeed, now our highlight
+
+00:25:56.686 --> 00:25:57.346 A:middle
+looks correct.
+
+00:25:58.066 --> 00:26:00.146 A:middle
+This is just an example of how
+

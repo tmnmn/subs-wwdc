@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.936 --> 00:41:01.756 A:middle
+ensure that only the visible
+
+00:41:01.756 --> 00:41:02.376 A:middle
+views are loaded.
+
+00:41:02.896 --> 00:41:06.116 A:middle
+It's easy, and we often regress
+
+00:41:06.116 --> 00:41:07.806 A:middle
+on that part, so you should
+
+00:41:07.806 --> 00:41:11.376 A:middle
+really be careful about that.
+
+00:41:12.016 --> 00:41:12.706 A:middle
+So preparing the view
+
+00:41:12.706 --> 00:41:14.106 A:middle
+controllers, we are now aiming
+
+00:41:14.106 --> 00:41:15.696 A:middle
+for 120 milliseconds.
+
+00:41:16.626 --> 00:41:18.376 A:middle
+But preparing view controllers
+
+00:41:18.376 --> 00:41:19.646 A:middle
+implies configuring the data
+
+00:41:19.646 --> 00:41:21.586 A:middle
+sources, and let's look at that
+
+00:41:21.586 --> 00:41:22.216 A:middle
+chunk next.
+
+00:41:25.056 --> 00:41:26.716 A:middle
+So the Moments view is a
+
+00:41:26.716 --> 00:41:27.996 A:middle
+representation of these things,
+
+00:41:27.996 --> 00:41:30.086 A:middle
+events in your life, and the UI
+
+00:41:30.086 --> 00:41:31.376 A:middle
+represents that by having this
+
+00:41:31.426 --> 00:41:32.796 A:middle
+group of photos, and these
+
+00:41:32.866 --> 00:41:33.266 A:middle
+headers.
+
+00:41:34.206 --> 00:41:35.866 A:middle
+In this library, for example, we
+
+00:41:35.866 --> 00:41:38.596 A:middle
+might have 500 moments, and in
+
+00:41:38.596 --> 00:41:40.026 A:middle
+order to build a view, we need
+
+00:41:40.026 --> 00:41:40.766 A:middle
+to load all the moments up
+
+00:41:40.766 --> 00:41:40.976 A:middle
+front.
+
+00:41:43.236 --> 00:41:44.706 A:middle
+But the only thing we need
+
+00:41:44.956 --> 00:41:46.846 A:middle
+really for these moments is only
+
+00:41:46.846 --> 00:41:48.666 A:middle
+the meta data so we can build
+
+00:41:48.666 --> 00:41:48.986 A:middle
+the view.
+
+00:41:49.706 --> 00:41:50.676 A:middle
+We don't need your content.
+
+00:41:51.226 --> 00:41:54.846 A:middle
+So the first thing we do is we
+
+00:41:54.846 --> 00:41:56.366 A:middle
+fire that query, which is super
+
+00:41:56.366 --> 00:41:56.726 A:middle
+fast.
+
+00:41:56.926 --> 00:41:59.356 A:middle
+And then we are only loading the
+
+00:41:59.396 --> 00:42:01.086 A:middle
+content that we need here.
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.196 --> 00:34:00.016 A:middle
+and they would be stored
+
+00:34:00.016 --> 00:34:00.576 A:middle
+separately.
+
+00:34:01.366 --> 00:34:02.766 A:middle
+And so we thought that, wouldn't
+
+00:34:02.766 --> 00:34:03.856 A:middle
+it be great if you could
+
+00:34:03.856 --> 00:34:05.976 A:middle
+actually just have 1 sample that
+
+00:34:05.976 --> 00:34:08.166 A:middle
+tracks that cumulative total but
+
+00:34:08.166 --> 00:34:09.545 A:middle
+is still backed by those
+
+00:34:09.596 --> 00:34:11.356 A:middle
+individual quantities behind it?
+
+00:34:11.416 --> 00:34:13.876 A:middle
+And that's why we've introduced
+
+00:34:13.876 --> 00:34:14.585 A:middle
+HKCumulative
+
+00:34:14.585 --> 00:34:16.456 A:middle
+QuantitySeriesSample, which is a
+
+00:34:16.456 --> 00:34:17.906 A:middle
+brand new sample type that
+
+00:34:17.906 --> 00:34:19.516 A:middle
+allows you to more efficiently
+
+00:34:19.516 --> 00:34:21.106 A:middle
+store high-frequency data, and
+
+00:34:21.666 --> 00:34:23.005 A:middle
+it's great for 2 reasons.
+
+00:34:23.196 --> 00:34:25.116 A:middle
+Number 1, you only have to store
+
+00:34:25.116 --> 00:34:26.775 A:middle
+1 sample that is backed by
+
+00:34:26.775 --> 00:34:28.416 A:middle
+multiple quantities, and so
+
+00:34:28.416 --> 00:34:29.876 A:middle
+you're more efficiently storing
+
+00:34:30.176 --> 00:34:31.556 A:middle
+the high-frequency data that
+
+00:34:31.735 --> 00:34:33.346 A:middle
+comes from things like workouts.
+
+00:34:33.775 --> 00:34:36.076 A:middle
+And number 2, you now have a
+
+00:34:36.076 --> 00:34:38.286 A:middle
+sense of connection between the
+
+00:34:38.286 --> 00:34:39.536 A:middle
+quantities that make up a
+
+00:34:39.536 --> 00:34:40.025 A:middle
+sample.
+
+00:34:40.936 --> 00:34:43.016 A:middle
+So our new quantity series
+
+00:34:43.016 --> 00:34:44.196 A:middle
+sample is a subclass of
+
+00:34:44.196 --> 00:34:45.996 A:middle
+HKQuantitySample, which some of
+
+00:34:45.996 --> 00:34:47.716 A:middle
+you may already be familiar
+
+00:34:47.716 --> 00:34:47.956 A:middle
+with.
+
+00:34:48.246 --> 00:34:49.656 A:middle
+And if you've interacted with
+
+00:34:49.656 --> 00:34:51.426 A:middle
+HKQuantitySample before, our new
+
+00:34:51.426 --> 00:34:53.386 A:middle
+sample type will be very much
+
+00:34:53.436 --> 00:34:53.906 A:middle
+the same.
+
+00:34:55.335 --> 00:34:56.626 A:middle
+So why would you want to use
+
+00:34:56.686 --> 00:34:56.886 A:middle
+this?
+
+00:34:57.836 --> 00:34:59.106 A:middle
+Let's say you're interested in
+
+00:34:59.106 --> 00:35:00.316 A:middle
+data visualization.
+

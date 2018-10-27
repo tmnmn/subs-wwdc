@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.276 --> 00:30:00.606 A:middle
+the type, it's reduced by that
+
+00:30:00.646 --> 00:30:01.996 A:middle
+dot-dot less-than operator.
+
+00:30:02.346 --> 00:30:04.306 A:middle
+It is aptly named the range
+
+00:30:04.306 --> 00:30:04.556 A:middle
+type.
+
+00:30:05.346 --> 00:30:07.096 A:middle
+Again, it's generic over the
+
+00:30:07.096 --> 00:30:08.126 A:middle
+underlying bound type.
+
+00:30:08.126 --> 00:30:09.256 A:middle
+So in this case, we have a range
+
+00:30:09.256 --> 00:30:11.126 A:middle
+of doubles, and it merely stores
+
+00:30:11.126 --> 00:30:12.456 A:middle
+the lower and upper bounds.
+
+00:30:12.646 --> 00:30:13.456 A:middle
+That's fairly simple.
+
+00:30:14.286 --> 00:30:16.806 A:middle
+But, prior to Swift 4.2, you
+
+00:30:16.806 --> 00:30:18.816 A:middle
+would get from an integer range,
+
+00:30:18.876 --> 00:30:20.036 A:middle
+an actually different type.
+
+00:30:20.466 --> 00:30:22.176 A:middle
+This is the countableRange type.
+
+00:30:23.126 --> 00:30:24.466 A:middle
+Now, notice it's structurally
+
+00:30:24.466 --> 00:30:26.056 A:middle
+the same as the range type.
+
+00:30:26.056 --> 00:30:27.236 A:middle
+It has one type parameter.
+
+00:30:27.236 --> 00:30:28.696 A:middle
+It has lower and upperBound.
+
+00:30:29.246 --> 00:30:31.126 A:middle
+But it adds a couple additional
+
+00:30:31.126 --> 00:30:32.686 A:middle
+requirements onto that bound
+
+00:30:32.686 --> 00:30:32.886 A:middle
+type.
+
+00:30:33.286 --> 00:30:34.876 A:middle
+That the bound be stridable,
+
+00:30:35.286 --> 00:30:35.416 A:middle
+right?
+
+00:30:35.416 --> 00:30:36.446 A:middle
+Meaning you can walk through and
+
+00:30:36.446 --> 00:30:37.436 A:middle
+enumerate all the elements.
+
+00:30:37.866 --> 00:30:39.286 A:middle
+Now that's the ability you need
+
+00:30:39.446 --> 00:30:40.056 A:middle
+so that you can make
+
+00:30:40.056 --> 00:30:41.316 A:middle
+countableRange conform to
+
+00:30:41.316 --> 00:30:42.456 A:middle
+randomAccessCollection.
+
+00:30:43.676 --> 00:30:45.136 A:middle
+That enables the forEach, the
+
+00:30:45.136 --> 00:30:46.246 A:middle
+forEach iteration loop, and
+
+00:30:46.246 --> 00:30:46.826 A:middle
+other things.
+
+00:30:48.076 --> 00:30:48.706 A:middle
+But with conditional
+
+00:30:48.706 --> 00:30:49.986 A:middle
+conformance, of course, we can
+
+00:30:49.986 --> 00:30:50.736 A:middle
+do better.
+
+00:30:51.516 --> 00:30:53.836 A:middle
+So let's turn the basic range
+
+00:30:53.836 --> 00:30:57.306 A:middle
+type into a collection, when the
+
+00:30:57.306 --> 00:30:59.086 A:middle
+bound type conforms this-- has
+
+00:30:59.086 --> 00:31:00.586 A:middle
+these extra stridable
+

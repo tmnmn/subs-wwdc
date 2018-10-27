@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.094 --> 00:21:05.132 align:start position:29% line:-2
+これで更に
+GPUの時間を増やせます
+
+00:21:07.634 --> 00:21:11.071 align:start position:30% line:-2
+しかし
+処理を分割するためには
+
+00:21:11.705 --> 00:21:14.641 align:start position:32% line:-1
+必要なことがあります
+
+00:21:14.741 --> 00:21:17.778 align:start position:34% line:-2
+処理を互いに
+同期させることです
+
+00:21:23.016 --> 00:21:28.288 align:start position:25% line:-2
+ここで 新しい
+同期プリミティブを紹介します
+
+00:21:28.722 --> 00:21:32.893 align:start position:29% line:-2
+MTLEventを使えば
+１つのGPUの範囲内で
+
+00:21:32.993 --> 00:21:36.730 align:start position:32% line:-2
+異なるキューの処理を
+同期できます
+
+00:21:37.097 --> 00:21:41.068 align:start position:18% line:-1
+更に MTLSharedEventは
+
+00:21:41.168 --> 00:21:44.771 align:start position:32% line:-2
+異なるGPUの処理を
+同期できます
+
+00:21:44.872 --> 00:21:47.174 align:start position:27% line:-1
+異なるプロセス間も可能です
+
+00:21:49.109 --> 00:21:52.779 align:start position:32% line:-2
+では 単純なコードを
+見てみましょう
+
+00:21:53.447 --> 00:21:58.485 align:start position:23% line:-2
+Thunderbolt 3で
+MacにeGPUを接続しました
+
+00:21:58.752 --> 00:22:02.956 align:start position:32% line:-2
+ヘッドセットを動かす
+プライマリGPUです
+

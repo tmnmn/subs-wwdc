@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.176 --> 00:16:00.646 A:middle
+Again, this topic also will be
+
+00:16:00.646 --> 00:16:02.166 A:middle
+covered in the next session in
+
+00:16:02.166 --> 00:16:03.366 A:middle
+more details.
+
+00:16:06.876 --> 00:16:08.086 A:middle
+Let's look at the request
+
+00:16:08.086 --> 00:16:08.706 A:middle
+pipelines.
+
+00:16:09.786 --> 00:16:10.666 A:middle
+So, what is a pipeline?
+
+00:16:11.736 --> 00:16:13.286 A:middle
+Let's say I have three requests,
+
+00:16:13.286 --> 00:16:14.266 A:middle
+and it happens to be that
+
+00:16:14.266 --> 00:16:16.476 A:middle
+request #1 depends on execution
+
+00:16:16.476 --> 00:16:18.136 A:middle
+of request #2, which in turn
+
+00:16:18.396 --> 00:16:20.226 A:middle
+depends on execution of request
+
+00:16:20.826 --> 00:16:21.936 A:middle
+#3.
+
+00:16:22.126 --> 00:16:23.456 A:middle
+How do we process the sequence
+
+00:16:23.966 --> 00:16:25.456 A:middle
+while the processing is done in
+
+00:16:25.456 --> 00:16:26.246 A:middle
+the opposite order?
+
+00:16:26.806 --> 00:16:27.676 A:middle
+What I'm going to do here,
+
+00:16:27.846 --> 00:16:29.246 A:middle
+first, I'm going to process my
+
+00:16:29.246 --> 00:16:30.106 A:middle
+request #3.
+
+00:16:30.476 --> 00:16:31.456 A:middle
+I'm going to get the results
+
+00:16:31.456 --> 00:16:32.876 A:middle
+from that request and feed it
+
+00:16:32.876 --> 00:16:33.876 A:middle
+into request #2.
+
+00:16:34.086 --> 00:16:35.556 A:middle
+I'm going to do exactly the same
+
+00:16:35.556 --> 00:16:36.516 A:middle
+with request #2.
+
+00:16:36.786 --> 00:16:38.316 A:middle
+And finally, I will process my
+
+00:16:38.316 --> 00:16:39.116 A:middle
+request #1.
+
+00:16:41.296 --> 00:16:43.036 A:middle
+Let's look at the examples of
+
+00:16:43.036 --> 00:16:45.976 A:middle
+how to run request pipeline in
+
+00:16:45.976 --> 00:16:47.636 A:middle
+implicit and explicit order.
+
+00:16:48.326 --> 00:16:49.196 A:middle
+We're going to look at the next
+
+00:16:49.196 --> 00:16:50.426 A:middle
+two slides in these two use
+
+00:16:50.426 --> 00:16:52.126 A:middle
+cases, and we're going to run
+
+00:16:52.126 --> 00:16:53.746 A:middle
+our face landmarks detector.
+
+00:16:54.386 --> 00:16:55.936 A:middle
+As you probably know, landmarks,
+
+00:16:55.996 --> 00:16:58.026 A:middle
+face landmarks are the features
+
+00:16:58.026 --> 00:16:58.526 A:middle
+on the face.
+
+00:16:58.526 --> 00:17:00.236 A:middle
+It's both your eyes, eyebrows,
+

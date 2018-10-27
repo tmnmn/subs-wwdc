@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.636 --> 00:24:02.866 A:middle
+actually have paid for it.
+
+00:24:03.136 --> 00:24:04.656 A:middle
+Also promoted in-app purchases,
+
+00:24:05.086 --> 00:24:06.366 A:middle
+users click on these in the App
+
+00:24:06.366 --> 00:24:07.896 A:middle
+Store and then the transaction
+
+00:24:07.896 --> 00:24:08.936 A:middle
+is handed off to your app.
+
+00:24:09.536 --> 00:24:10.526 A:middle
+So you want to make sure to have
+
+00:24:10.526 --> 00:24:13.496 A:middle
+a smooth transition there.
+
+00:24:13.616 --> 00:24:14.746 A:middle
+Finally, if you set up promo
+
+00:24:14.746 --> 00:24:15.826 A:middle
+codes for your in-app purchases
+
+00:24:15.856 --> 00:24:16.836 A:middle
+these are redeemed from inside
+
+00:24:16.836 --> 00:24:17.656 A:middle
+the App Store and sent to your
+
+00:24:17.656 --> 00:24:17.976 A:middle
+app as well.
+
+00:24:23.286 --> 00:24:24.526 A:middle
+Another question we get all time
+
+00:24:24.526 --> 00:24:25.906 A:middle
+is when should I call Finish
+
+00:24:25.906 --> 00:24:26.496 A:middle
+Transaction.
+
+00:24:27.946 --> 00:24:29.066 A:middle
+Well the general rule is you
+
+00:24:29.066 --> 00:24:30.426 A:middle
+should call Finish Transaction
+
+00:24:30.486 --> 00:24:31.856 A:middle
+after a transaction has
+
+00:24:31.856 --> 00:24:33.746 A:middle
+completed successfully and you
+
+00:24:33.746 --> 00:24:34.796 A:middle
+have downloaded and delivered
+
+00:24:34.796 --> 00:24:37.156 A:middle
+all the content to the user or
+
+00:24:37.156 --> 00:24:38.126 A:middle
+after the transaction has
+
+00:24:38.126 --> 00:24:39.356 A:middle
+computed unsuccessfully.
+
+00:24:40.776 --> 00:24:43.306 A:middle
+To get more specific, let's go
+
+00:24:43.306 --> 00:24:44.266 A:middle
+through all the transaction
+
+00:24:44.266 --> 00:24:46.296 A:middle
+states and talk about how to
+
+00:24:46.296 --> 00:24:47.196 A:middle
+handle them.
+
+00:24:47.896 --> 00:24:50.086 A:middle
+The purchasing state you don't
+
+00:24:50.086 --> 00:24:50.776 A:middle
+need to do anything at the
+
+00:24:50.776 --> 00:24:52.196 A:middle
+moment, just continue to observe
+
+00:24:52.236 --> 00:24:53.556 A:middle
+the payment queue and wait for
+
+00:24:53.556 --> 00:24:54.286 A:middle
+the state to change.
+
+00:24:54.836 --> 00:24:57.526 A:middle
+In the purchased state the
+
+00:24:57.526 --> 00:24:58.686 A:middle
+transaction has completed
+
+00:24:58.686 --> 00:24:59.096 A:middle
+successfully.
+
+00:24:59.096 --> 00:25:00.966 A:middle
+You should download and deliver
+

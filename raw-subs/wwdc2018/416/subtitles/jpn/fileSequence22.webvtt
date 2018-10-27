@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.152 --> 00:22:02.623 align:start position:25% line:-1
+75％のメモリ削減になります
+
+00:22:02.723 --> 00:22:05.492 align:start position:32% line:-1
+すばらしい節約ですね
+
+00:22:08.161 --> 00:22:10.531 align:start position:30% line:-1
+さらなる利点もあります
+
+00:22:10.631 --> 00:22:14.067 align:start position:34% line:-2
+マスクの再利用時
+色の変更が可能です
+
+00:22:14.434 --> 00:22:18.372 align:start position:14% line:-1
+imageviewで複数色に変えられます
+
+00:22:18.472 --> 00:22:21.175 align:start position:25% line:-1
+更なるメモリは必要ありません
+
+00:22:21.275 --> 00:22:23.477 align:start position:34% line:-1
+黒の円だけではなく
+
+00:22:23.577 --> 00:22:28.248 align:start position:27% line:-2
+青や赤や緑の円を描いても
+追加メモリは必要ありません
+
+00:22:32.186 --> 00:22:35.122 align:start position:30% line:-2
+その他の処理と言えば
+ダウンサンプリングです
+
+00:22:35.422 --> 00:22:39.293 align:start position:34% line:-2
+サムネイル用などに
+縮小したい場合
+
+00:22:39.793 --> 00:22:42.896 align:start position:20% line:-1
+UIImageは使いたくありません
+
+00:22:42.996 --> 00:22:45.132 align:start position:27% line:-1
+もしUIImageを使えば
+
+00:22:45.232 --> 00:22:49.169 align:start position:23% line:-2
+座標空間の変更が必要なため
+パフォーマンスが悪くなるうえに
+
+00:22:49.269 --> 00:22:53.106 align:start position:29% line:-2
+メモリ内の画像を
+解凍しなければなりません
+
+00:22:53.574 --> 00:22:56.343 align:start position:16% line:-1
+そこでImageIOフレームワークです
+
+00:22:56.510 --> 00:22:59.079 align:start position:16% line:-1
+ImageIOはダウンサンプルが可能で
+
+00:22:59.179 --> 00:23:04.017 align:start position:25% line:-2
+最終画像にはダーティメモリの
+コストしか必要ないため
+

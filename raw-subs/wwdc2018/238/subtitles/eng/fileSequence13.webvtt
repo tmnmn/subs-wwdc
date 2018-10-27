@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.396 --> 00:13:00.286 A:middle
+this can be setup.
+
+00:13:02.836 --> 00:13:04.286 A:middle
+So let's look at the rules that
+
+00:13:04.476 --> 00:13:06.756 A:middle
+we would use to structure the
+
+00:13:06.756 --> 00:13:08.106 A:middle
+very prototype that we want --
+
+00:13:08.106 --> 00:13:10.036 A:middle
+that we've shown as an example.
+
+00:13:10.536 --> 00:13:11.976 A:middle
+We will start by defining the
+
+00:13:11.976 --> 00:13:13.386 A:middle
+prototype as the lowest common
+
+00:13:13.386 --> 00:13:15.116 A:middle
+denominator of what our user
+
+00:13:15.116 --> 00:13:16.446 A:middle
+interface should look like.
+
+00:13:17.276 --> 00:13:18.916 A:middle
+And in this case, we have an
+
+00:13:18.916 --> 00:13:20.016 A:middle
+image and a title.
+
+00:13:21.716 --> 00:13:23.196 A:middle
+However, you would notice that
+
+00:13:23.196 --> 00:13:25.216 A:middle
+we also have a place holder for
+
+00:13:25.216 --> 00:13:25.896 A:middle
+the progress bar.
+
+00:13:26.566 --> 00:13:28.056 A:middle
+Placeholders are also special
+
+00:13:28.056 --> 00:13:29.426 A:middle
+elements that are invisible to
+
+00:13:29.426 --> 00:13:31.096 A:middle
+the renderer and in this case,
+
+00:13:31.366 --> 00:13:32.876 A:middle
+would be used by the rules as a
+
+00:13:32.876 --> 00:13:34.686 A:middle
+target for replacement when data
+
+00:13:34.686 --> 00:13:35.426 A:middle
+states match.
+
+00:13:36.886 --> 00:13:39.026 A:middle
+Now let's fill in our rules.
+
+00:13:40.136 --> 00:13:41.466 A:middle
+A group of rules that act on
+
+00:13:41.466 --> 00:13:42.466 A:middle
+sibling elements are
+
+00:13:42.466 --> 00:13:43.976 A:middle
+encapsulated in the rules tag.
+
+00:13:47.606 --> 00:13:48.926 A:middle
+Individual rules that match a
+
+00:13:48.926 --> 00:13:51.426 A:middle
+data state are encapsulated as
+
+00:13:51.516 --> 00:13:54.186 A:middle
+specialized elements, and
+
+00:13:54.606 --> 00:13:56.776 A:middle
+specialized elements become
+
+00:13:56.806 --> 00:13:58.576 A:middle
+active when it matches certain
+
+00:13:58.576 --> 00:13:59.166 A:middle
+data states.
+

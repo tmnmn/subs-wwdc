@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:55.375 --> 00:13:00.247 align:start position:14% line:-2
+まず WaitGetPosesを呼び出し
+フレームを開始します
+
+00:13:00.781 --> 00:13:02.482 align:start position:34% line:-1
+Poseを受け取り
+
+00:13:02.916 --> 00:13:07.554 align:start position:23% line:-2
+ヘッドセットのフレームレートに
+同期して実行します
+
+00:13:09.022 --> 00:13:14.094 align:start position:23% line:-2
+Viveも Vive Proも
+リフレッシュレートは90です
+
+00:13:14.328 --> 00:13:19.633 align:start position:25% line:-2
+１フレームの処理時間は
+11.1ミリ秒ということです
+
+00:13:20.067 --> 00:13:25.038 align:start position:29% line:-2
+ちなみに瞬き１回の時間は
+300ミリ秒です
+
+00:13:25.539 --> 00:13:28.976 align:start position:32% line:-2
+この間に50フレーム
+描画します
+
+00:13:30.277 --> 00:13:34.414 align:start position:32% line:-2
+アプリケーションが
+Poseを受け取ると
+
+00:13:34.515 --> 00:13:38.051 align:start position:34% line:-2
+シミュレーションを
+開始できます
+
+00:13:38.685 --> 00:13:42.890 align:start position:29% line:-2
+完了し 全オブジェクトの
+状態が分かれば
+
+00:13:42.990 --> 00:13:47.361 align:start position:29% line:-2
+コマンドバッファの
+エンコードを継続できます
+
+00:13:47.461 --> 00:13:50.631 align:start position:32% line:-2
+これがGPUに送られ
+実行されます
+
+00:13:51.798 --> 00:13:56.770 align:start position:29% line:-2
+GPUで実行され
+両眼の画像が描画されると
+
+00:13:56.870 --> 00:14:03.010 align:start position:20% line:-2
+VR Compositorに送られ
+最終的な後処理が行われます
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.726 --> 00:09:00.336 A:middle
+builder files, for example.
+
+00:09:00.826 --> 00:09:05.206 A:middle
+Next, inside the Localization
+
+00:09:05.206 --> 00:09:07.176 A:middle
+Catalog, we generate a Source
+
+00:09:07.246 --> 00:09:08.976 A:middle
+Contents directory and this is
+
+00:09:08.976 --> 00:09:11.356 A:middle
+mainly provided for context.
+
+00:09:12.156 --> 00:09:14.336 A:middle
+So Source Contents contains
+
+00:09:14.606 --> 00:09:16.336 A:middle
+assets that were used to produce
+
+00:09:16.336 --> 00:09:18.056 A:middle
+the Localized Contents like
+
+00:09:18.156 --> 00:09:19.576 A:middle
+storyboards for example that
+
+00:09:19.576 --> 00:09:20.656 A:middle
+will be helpful for your
+
+00:09:20.656 --> 00:09:23.096 A:middle
+localizers to see how your UI is
+
+00:09:23.096 --> 00:09:24.366 A:middle
+laid out in your development
+
+00:09:24.366 --> 00:09:25.366 A:middle
+language so they can make
+
+00:09:25.366 --> 00:09:27.486 A:middle
+decisions about the length of
+
+00:09:27.486 --> 00:09:28.416 A:middle
+the translations.
+
+00:09:29.366 --> 00:09:30.816 A:middle
+So even if your localized
+
+00:09:30.856 --> 00:09:32.006 A:middle
+strings are coming from your
+
+00:09:32.106 --> 00:09:34.166 A:middle
+source code, we do not generate
+
+00:09:34.466 --> 00:09:36.086 A:middle
+your source code inside the
+
+00:09:36.186 --> 00:09:37.086 A:middle
+Source Contents.
+
+00:09:38.016 --> 00:09:39.676 A:middle
+So those assets that are mainly
+
+00:09:39.676 --> 00:09:41.686 A:middle
+provided for context will be
+
+00:09:41.686 --> 00:09:43.546 A:middle
+also organized into the same
+
+00:09:43.546 --> 00:09:44.956 A:middle
+file system hierarchy are your
+
+00:09:44.956 --> 00:09:46.316 A:middle
+Xcode project inside the
+
+00:09:46.316 --> 00:09:48.616 A:middle
+Localization Catalog and, as I
+
+00:09:48.616 --> 00:09:50.026 A:middle
+mentioned, this is mainly
+
+00:09:50.026 --> 00:09:51.776 A:middle
+provided for context even if
+
+00:09:51.776 --> 00:09:53.566 A:middle
+your localizers go and change
+
+00:09:53.566 --> 00:09:55.956 A:middle
+your source context on import,
+
+00:09:55.956 --> 00:09:58.026 A:middle
+Xcode will just ignore them and
+
+00:09:58.026 --> 00:10:00.246 A:middle
+will not import these resources
+

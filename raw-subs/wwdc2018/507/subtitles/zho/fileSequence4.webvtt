@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.940 --> 00:04:03.810 align:middle line:-2
+并使app对密钥加载时间
+有更多控制
+
+00:04:05.279 --> 00:04:09.183 align:middle line:-2
+AVContentKeySession
+允许app自主地
+
+00:04:09.249 --> 00:04:11.251 align:middle line:-1
+在任何时候启动密钥加载
+
+00:04:12.252 --> 00:04:13.987 align:middle line:-1
+这样就开辟了新的用途
+
+00:04:14.488 --> 00:04:17.124 align:middle line:-1
+允许app优化密钥传递
+
+00:04:17.190 --> 00:04:19.959 align:middle line:-1
+并改进回放体验的多个方面
+
+00:04:22.696 --> 00:04:27.034 align:middle line:-2
+AVContentKeySession
+可以帮助改进播放启动
+
+00:04:28.669 --> 00:04:33.473 align:middle line:-2
+不像过去等待AVFoundation
+按需发送密钥加载请求
+
+00:04:33.974 --> 00:04:38.579 align:middle line:-2
+你可以用AVContentKeySession
+在请求回放后
+
+00:04:38.645 --> 00:04:42.449 align:middle line:-1
+主动加载你基于用户操作
+
+00:04:42.516 --> 00:04:45.185 align:middle line:-1
+预测可能不久将需要的密钥
+
+00:04:46.720 --> 00:04:49.990 align:middle line:-2
+你甚至可以在用户选择
+要播放的内容之前加载
+
+00:04:51.191 --> 00:04:53.894 align:middle line:-1
+我们称其为密钥预载或预热
+
+00:04:55.729 --> 00:04:57.664 align:middle line:-1
+此外 如果你的内容
+
+00:04:57.731 --> 00:05:00.734 align:middle line:-1
+跨越不同弧度使用多个密钥
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.446 --> 00:21:00.086 A:middle
+operating system sent the signal
+
+00:21:00.086 --> 00:21:00.986 A:middle
+in the crash log.
+
+00:21:01.396 --> 00:21:02.656 A:middle
+In this case we have a
+
+00:21:02.826 --> 00:21:04.626 A:middle
+termination reason with a code
+
+00:21:04.676 --> 00:21:05.966 A:middle
+ate bad food.
+
+00:21:06.566 --> 00:21:08.126 A:middle
+If you look in the developer
+
+00:21:08.126 --> 00:21:09.986 A:middle
+technote I mentioned earlier, it
+
+00:21:09.986 --> 00:21:11.976 A:middle
+will describe what ate bad food
+
+00:21:11.976 --> 00:21:12.566 A:middle
+means.
+
+00:21:13.126 --> 00:21:14.186 A:middle
+And we have a textual
+
+00:21:14.186 --> 00:21:16.506 A:middle
+description that says exhausted
+
+00:21:16.506 --> 00:21:18.596 A:middle
+real clock time allowance of
+
+00:21:18.656 --> 00:21:20.506 A:middle
+19.95 seconds.
+
+00:21:20.866 --> 00:21:22.276 A:middle
+So if we combine this
+
+00:21:22.276 --> 00:21:23.936 A:middle
+information with the information
+
+00:21:23.936 --> 00:21:25.416 A:middle
+in the technote it will tell us
+
+00:21:25.836 --> 00:21:28.526 A:middle
+our application took too long to
+
+00:21:28.526 --> 00:21:29.076 A:middle
+launch.
+
+00:21:29.356 --> 00:21:31.546 A:middle
+We had 20 seconds to launch, we
+
+00:21:31.546 --> 00:21:32.966 A:middle
+weren't done in that much time,
+
+00:21:33.386 --> 00:21:34.606 A:middle
+the operating system killed the
+
+00:21:34.606 --> 00:21:35.266 A:middle
+process.
+
+00:21:36.686 --> 00:21:38.916 A:middle
+Below we can see the crash logs
+
+00:21:39.046 --> 00:21:40.716 A:middle
+at the time the process died.
+
+00:21:41.256 --> 00:21:42.826 A:middle
+It's possible that those crash
+
+00:21:42.826 --> 00:21:44.626 A:middle
+logs were the code that took too
+
+00:21:44.626 --> 00:21:45.946 A:middle
+long, maybe were stuck in an
+
+00:21:45.946 --> 00:21:48.426 A:middle
+infinite loop, maybe were stuck
+
+00:21:48.426 --> 00:21:49.896 A:middle
+waiting for network I/O and
+
+00:21:49.896 --> 00:21:51.006 A:middle
+that's why we took too long to
+
+00:21:51.006 --> 00:21:51.506 A:middle
+launch.
+
+00:21:52.296 --> 00:21:54.026 A:middle
+Or on the other hand, maybe this
+
+00:21:54.026 --> 00:21:55.916 A:middle
+code is innocent and there's
+
+00:21:55.916 --> 00:21:57.426 A:middle
+something earlier in the launch
+
+00:21:57.426 --> 00:21:59.076 A:middle
+process that was too slow and
+
+00:21:59.076 --> 00:22:00.466 A:middle
+that's why the process died.
+

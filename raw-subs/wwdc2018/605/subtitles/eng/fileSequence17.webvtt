@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.356 --> 00:17:00.936 A:middle
+top and surface, or they want to
+
+00:17:00.936 --> 00:17:02.576 A:middle
+blow the board up to be the size
+
+00:17:02.576 --> 00:17:03.646 A:middle
+of a basketball court.
+
+00:17:04.106 --> 00:17:07.656 A:middle
+We thought about, you know,
+
+00:17:07.656 --> 00:17:08.646 A:middle
+adding that to our network
+
+00:17:08.646 --> 00:17:10.435 A:middle
+protocol alongside the WorldMap,
+
+00:17:10.826 --> 00:17:11.536 A:middle
+but then we came up with a
+
+00:17:11.536 --> 00:17:12.126 A:middle
+better solution.
+
+00:17:13.415 --> 00:17:15.455 A:middle
+We created a custom subclass of
+
+00:17:15.455 --> 00:17:16.836 A:middle
+ARAnchor that we called board
+
+00:17:16.836 --> 00:17:18.546 A:middle
+anchor and added that
+
+00:17:18.546 --> 00:17:20.165 A:middle
+information to that class, the
+
+00:17:20.165 --> 00:17:20.935 A:middle
+size of the board.
+
+00:17:22.236 --> 00:17:24.796 A:middle
+We then made sure that we
+
+00:17:24.796 --> 00:17:27.026 A:middle
+implemented the NSCoding
+
+00:17:27.026 --> 00:17:28.546 A:middle
+required classes or override
+
+00:17:28.546 --> 00:17:30.546 A:middle
+them to include that information
+
+00:17:30.866 --> 00:17:32.486 A:middle
+when the object is serialized
+
+00:17:32.486 --> 00:17:32.696 A:middle
+out.
+
+00:17:33.376 --> 00:17:35.076 A:middle
+Now, the information is included
+
+00:17:35.076 --> 00:17:36.476 A:middle
+directly within the WorldMap
+
+00:17:36.836 --> 00:17:38.066 A:middle
+when we transfer it over to the
+
+00:17:38.066 --> 00:17:38.776 A:middle
+other device.
+
+00:17:39.146 --> 00:17:40.166 A:middle
+It makes it very easy and
+
+00:17:40.166 --> 00:17:40.766 A:middle
+straightforward.
+
+00:17:42.116 --> 00:17:43.236 A:middle
+One thing to keep in mind, and
+
+00:17:43.236 --> 00:17:44.986 A:middle
+this bit us for a little bit.
+
+00:17:45.476 --> 00:17:47.996 A:middle
+When you use Swift to make a
+
+00:17:47.996 --> 00:17:50.036 A:middle
+subclass like this, when you
+
+00:17:50.036 --> 00:17:52.136 A:middle
+serialize it out, the name of
+
+00:17:52.136 --> 00:17:53.416 A:middle
+the module or the name of your
+
+00:17:53.416 --> 00:17:54.856 A:middle
+application is included in the
+
+00:17:54.856 --> 00:17:55.356 A:middle
+class name.
+
+00:17:56.016 --> 00:17:57.296 A:middle
+This is something to be aware of
+
+00:17:57.336 --> 00:17:58.406 A:middle
+if you're planning to move
+
+00:17:58.406 --> 00:17:59.786 A:middle
+WorldMaps between different
+
+00:17:59.786 --> 00:18:00.556 A:middle
+applications.
+

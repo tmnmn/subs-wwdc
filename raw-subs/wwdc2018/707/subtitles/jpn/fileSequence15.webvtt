@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:55.863 --> 00:15:00.634 align:start position:11% line:-2
+そのつど didCollectDataOf
+collectedTypesが呼び出されます
+
+00:15:00.968 --> 00:15:05.639 align:start position:32% line:-2
+心拍数を知りたいなら
+収集するタイプに―
+
+00:15:05.739 --> 00:15:09.176 align:start position:29% line:-1
+それを含めるようにします
+
+00:15:09.443 --> 00:15:11.612 align:start position:20% line:-2
+そして
+quantityTypeメソッドに
+
+00:15:11.712 --> 00:15:15.749 align:start position:23% line:-1
+statisticsを使います
+
+00:15:15.916 --> 00:15:19.419 align:start position:16% line:-2
+HKStatisticsオブジェクトが
+得られます
+
+00:15:19.586 --> 00:15:22.256 align:start position:27% line:-1
+今回の場合 含まれる情報は
+
+00:15:22.356 --> 00:15:27.294 align:start position:30% line:-2
+心拍数の最小値 最大値
+平均値 最新値など
+
+00:15:27.394 --> 00:15:31.064 align:start position:34% line:-2
+ワークアウト中に
+記録されたものです
+
+00:15:31.965 --> 00:15:34.902 align:start position:29% line:-1
+これでUIを更新できます
+
+00:15:36.570 --> 00:15:40.741 align:start position:23% line:-2
+ワークアウトアプリケーションで
+よくあるのが
+
+00:15:40.841 --> 00:15:43.544 align:start position:30% line:-1
+経過時間のタイマーです
+
+00:15:44.178 --> 00:15:48.715 align:start position:27% line:-2
+ワークアウト開始時に
+タイマーをスタートしますが
+
+00:15:48.916 --> 00:15:50.684 align:start position:34% line:-1
+それでは不十分です
+
+00:15:50.784 --> 00:15:55.556 align:start position:29% line:-2
+中断や再開によって
+経過時間は変わるからです
+
+00:15:56.123 --> 00:15:59.893 align:start position:29% line:-2
+そこで 新たなイベントを
+追加する度に
+

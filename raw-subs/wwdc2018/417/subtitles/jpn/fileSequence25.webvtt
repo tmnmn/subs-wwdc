@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.900 --> 00:25:03.270 align:start position:20% line:-2
+CLLocationManager
+Delegateとの間で変換
+
+00:25:03.537 --> 00:25:06.507 align:start position:34% line:-2
+フォースキャストを
+使う理由は 後ほど
+
+00:25:08.308 --> 00:25:13.180 align:start position:7% line:-2
+デリゲートプロパティは
+locationFetcherDelegateへ
+
+00:25:14.848 --> 00:25:17.651 align:start position:23% line:-1
+最後に元のextensionを
+
+00:25:17.751 --> 00:25:21.622 align:start position:29% line:-2
+新モックデリゲート
+プロトコルに準拠させます
+
+00:25:21.722 --> 00:25:25.959 align:start position:21% line:-2
+プロトコルとメソッドシグネチャを
+置き換えるだけです
+
+00:25:26.527 --> 00:25:32.166 align:start position:11% line:-2
+しかし前のCLLocationManager
+Delegateプロトコルにも準拠
+
+00:25:32.499 --> 00:25:34.668 align:start position:16% line:-2
+本物の
+CLLocationManagerが―
+
+00:25:34.768 --> 00:25:37.337 align:start position:25% line:-2
+モックデリゲートプロトコルを
+知らないからです
+
+00:25:38.172 --> 00:25:43.010 align:start position:20% line:-2
+本物に準拠したextensionを
+戻すのがコツで
+
+00:25:43.110 --> 00:25:46.780 align:start position:16% line:-2
+上の同じlocationFetcher
+デリゲートメソッドを呼ばせます
+
+00:25:47.915 --> 00:25:51.952 align:start position:27% line:-2
+デリゲートゲッタとセッタで
+フォースキャストを使うのは
+
+00:25:52.319 --> 00:25:57.991 align:start position:27% line:-2
+クラスを両方のプロトコルに
+準拠させるためです
+

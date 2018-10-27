@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:01.796 --> 00:13:03.446 A:middle
+If you need to obtain the index
+
+00:13:03.446 --> 00:13:05.236 A:middle
+of the currently previewed item
+
+00:13:05.236 --> 00:13:07.146 A:middle
+in your list of preview items
+
+00:13:07.956 --> 00:13:09.546 A:middle
+remember the user can swipe left
+
+00:13:09.546 --> 00:13:10.696 A:middle
+and right to switch to a
+
+00:13:10.696 --> 00:13:12.766 A:middle
+different one, use the current
+
+00:13:12.766 --> 00:13:14.436 A:middle
+previewItemIndex variable.
+
+00:13:15.646 --> 00:13:17.206 A:middle
+This is both a getter and a
+
+00:13:17.206 --> 00:13:19.486 A:middle
+setter, so if you want Quick
+
+00:13:19.486 --> 00:13:20.986 A:middle
+Look to start with a particular
+
+00:13:20.986 --> 00:13:22.746 A:middle
+item when it's being presented
+
+00:13:22.746 --> 00:13:24.836 A:middle
+set the index to the right
+
+00:13:24.836 --> 00:13:25.256 A:middle
+value.
+
+00:13:25.666 --> 00:13:29.946 A:middle
+Last but not least, preview
+
+00:13:29.946 --> 00:13:31.816 A:middle
+controllers also have a
+
+00:13:31.816 --> 00:13:32.376 A:middle
+delegate.
+
+00:13:33.066 --> 00:13:34.126 A:middle
+Let's take a look at the
+
+00:13:34.126 --> 00:13:35.536 A:middle
+QLPreviewController delegate
+
+00:13:35.536 --> 00:13:35.936 A:middle
+protocol now.
+
+00:13:41.056 --> 00:13:42.506 A:middle
+If you assign a delegate to your
+
+00:13:42.506 --> 00:13:44.366 A:middle
+preview controller you get more
+
+00:13:44.366 --> 00:13:46.046 A:middle
+ways to control how Quick Look
+
+00:13:46.046 --> 00:13:46.626 A:middle
+behaves.
+
+00:13:47.736 --> 00:13:49.226 A:middle
+It also lets you react to Quick
+
+00:13:49.226 --> 00:13:50.496 A:middle
+Look presentation events.
+
+00:13:51.316 --> 00:13:52.836 A:middle
+Note that all of the methods in
+
+00:13:52.836 --> 00:13:54.946 A:middle
+the QLPreviewController delegate
+
+00:13:54.946 --> 00:13:55.616 A:middle
+are optional.
+
+00:13:56.226 --> 00:13:57.636 A:middle
+You don't have to implement them
+
+00:13:57.726 --> 00:13:59.096 A:middle
+and in fact you don't even have
+
+00:13:59.096 --> 00:14:00.556 A:middle
+to assign a delegate at all.
+

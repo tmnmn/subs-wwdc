@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.166 --> 00:13:01.026 A:middle
+And wouldn't it be cool if we
+
+00:13:01.056 --> 00:13:03.106 A:middle
+could have all of this data
+
+00:13:03.876 --> 00:13:05.896 A:middle
+automatically collected by the
+
+00:13:05.896 --> 00:13:06.306 A:middle
+builder?
+
+00:13:07.336 --> 00:13:10.706 A:middle
+Starting with watchOS 5, we now
+
+00:13:10.706 --> 00:13:13.856 A:middle
+have automatic data collection,
+
+00:13:14.246 --> 00:13:15.776 A:middle
+and it all starts with
+
+00:13:15.776 --> 00:13:17.856 A:middle
+HKLiveWorkoutDataSource.
+
+00:13:18.406 --> 00:13:22.086 A:middle
+So the data source will collect
+
+00:13:22.806 --> 00:13:25.346 A:middle
+samples that are relevant to the
+
+00:13:25.346 --> 00:13:27.136 A:middle
+workout currently running.
+
+00:13:29.226 --> 00:13:32.756 A:middle
+You do, however, have the option
+
+00:13:33.316 --> 00:13:34.676 A:middle
+which types you want to collect,
+
+00:13:34.776 --> 00:13:37.996 A:middle
+so you can add or remove types
+
+00:13:37.996 --> 00:13:38.556 A:middle
+as you wish.
+
+00:13:39.266 --> 00:13:40.596 A:middle
+And this is how it works.
+
+00:13:41.456 --> 00:13:43.796 A:middle
+First, we create a data source.
+
+00:13:45.056 --> 00:13:46.896 A:middle
+And here, I pass the healthStore
+
+00:13:47.386 --> 00:13:48.586 A:middle
+as well as the
+
+00:13:48.586 --> 00:13:49.836 A:middle
+workoutConfiguration.
+
+00:13:50.346 --> 00:13:51.246 A:middle
+And since I'm passing the
+
+00:13:51.246 --> 00:13:52.636 A:middle
+configuration that contains
+
+00:13:52.636 --> 00:13:54.696 A:middle
+information about the activity
+
+00:13:54.696 --> 00:13:56.816 A:middle
+type, the data source will be
+
+00:13:56.816 --> 00:13:59.806 A:middle
+able to infer which types should
+
+00:13:59.806 --> 00:14:03.136 A:middle
+be collected for this workout.
+

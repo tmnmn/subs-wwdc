@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:00.926 --> 00:45:02.076 A:middle
+Now let's take a look at
+
+00:45:02.526 --> 00:45:03.816 A:middle
+definition for downloader
+
+00:45:03.816 --> 00:45:04.946 A:middle
+narrative schema.
+
+00:45:10.896 --> 00:45:13.006 A:middle
+This is point schema that
+
+00:45:13.046 --> 00:45:15.026 A:middle
+defines two columns, timestamp
+
+00:45:15.526 --> 00:45:17.216 A:middle
+which tracks the time of logging
+
+00:45:17.216 --> 00:45:19.046 A:middle
+that diagnostic message and
+
+00:45:20.176 --> 00:45:22.156 A:middle
+description that has information
+
+00:45:22.156 --> 00:45:23.666 A:middle
+about what's gone wrong.
+
+00:45:26.116 --> 00:45:28.346 A:middle
+Then, we can create this table
+
+00:45:28.676 --> 00:45:30.086 A:middle
+in our instrument definition.
+
+00:45:30.656 --> 00:45:33.316 A:middle
+We pass downloader narrative
+
+00:45:33.316 --> 00:45:35.456 A:middle
+schema ref and unique
+
+00:45:35.456 --> 00:45:36.206 A:middle
+identifier.
+
+00:45:37.896 --> 00:45:40.006 A:middle
+Then, we could use it in our
+
+00:45:40.136 --> 00:45:42.206 A:middle
+narrative element definition.
+
+00:45:44.556 --> 00:45:46.266 A:middle
+Here, we define narrative.
+
+00:45:46.686 --> 00:45:49.006 A:middle
+We pass table ref for the table
+
+00:45:49.006 --> 00:45:51.466 A:middle
+we previously created, define
+
+00:45:51.546 --> 00:45:53.766 A:middle
+time column, and narrative
+
+00:45:55.616 --> 00:45:55.846 A:middle
+column.
+
+00:45:55.936 --> 00:45:57.876 A:middle
+Now we are ready to define logic
+
+00:45:57.876 --> 00:45:58.756 A:middle
+for our modeler.
+

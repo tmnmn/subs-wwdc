@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:57.331 --> 00:30:00.467 align:start position:18% line:-2
+最後に
+currentPlaceの変化を確認
+
+00:30:00.968 --> 00:30:04.438 align:start position:32% line:-2
+これでは実行に
+かなり時間が要ります
+
+00:30:04.938 --> 00:30:08.141 align:start position:34% line:-2
+そこでコードに
+プロパティを公開し
+
+00:30:08.242 --> 00:30:12.479 align:start position:29% line:-2
+タイムアウトを１秒程度に
+カスタマイズします
+
+00:30:12.880 --> 00:30:16.450 align:start position:34% line:-2
+このようにコードを
+変えるのです
+
+00:30:20.687 --> 00:30:24.758 align:start position:36% line:-2
+この方法で遅延を
+１秒に減らせます
+
+00:30:25.325 --> 00:30:30.197 align:start position:29% line:-2
+先ほどより改善して
+実行が速くなりましたが―
+
+00:30:30.297 --> 00:30:32.232 align:start position:34% line:-1
+まだ理想的ではない
+
+00:30:32.332 --> 00:30:35.302 align:start position:27% line:-1
+短くなっても遅延はあります
+
+00:30:35.669 --> 00:30:39.640 align:start position:32% line:-2
+問題は このコードが
+時間依存的なことで―
+
+00:30:39.740 --> 00:30:45.179 align:start position:27% line:-2
+遅延を短くするほど
+信頼性が損なわれ得るのです
+
+00:30:45.279 --> 00:30:48.582 align:start position:29% line:-2
+スケジュール予測が
+CPUに依存するからです
+
+00:30:48.682 --> 00:30:52.219 align:start position:34% line:-2
+特に非同期コードは
+そうとは限りません
+
+00:30:52.820 --> 00:30:55.155 align:start position:29% line:-1
+よりよい方法を見ましょう
+
+00:30:56.490 --> 00:31:00.027 align:start position:34% line:-2
+まず遅延の仕組みを
+特定すべきです
+

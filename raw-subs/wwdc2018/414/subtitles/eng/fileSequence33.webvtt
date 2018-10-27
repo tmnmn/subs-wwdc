@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:57.476 --> 00:33:00.566 A:middle
+We have this top section which
+
+00:33:00.566 --> 00:33:03.506 A:middle
+is making a function call into a
+
+00:33:03.506 --> 00:33:04.766 A:middle
+reference count releasing
+
+00:33:04.766 --> 00:33:06.446 A:middle
+function and this one is
+
+00:33:06.446 --> 00:33:08.656 A:middle
+releasing our username property.
+
+00:33:10.076 --> 00:33:12.346 A:middle
+The next region is releasing the
+
+00:33:12.346 --> 00:33:13.636 A:middle
+database property.
+
+00:33:14.166 --> 00:33:16.566 A:middle
+And the next region is releasing
+
+00:33:16.566 --> 00:33:17.876 A:middle
+the views property.
+
+00:33:18.966 --> 00:33:21.186 A:middle
+So we don't understand what all
+
+00:33:21.186 --> 00:33:22.766 A:middle
+these instructions mean, but we
+
+00:33:22.766 --> 00:33:24.576 A:middle
+have a general sense of what
+
+00:33:24.626 --> 00:33:26.026 A:middle
+each region in the code is
+
+00:33:26.026 --> 00:33:26.326 A:middle
+doing.
+
+00:33:26.326 --> 00:33:27.826 A:middle
+It's a little bit like having a
+
+00:33:27.826 --> 00:33:30.266 A:middle
+line number associated with the
+
+00:33:30.266 --> 00:33:30.556 A:middle
+code.
+
+00:33:31.756 --> 00:33:33.546 A:middle
+So now we go back to the
+
+00:33:33.546 --> 00:33:35.106 A:middle
+information in our crash log.
+
+00:33:35.516 --> 00:33:37.956 A:middle
+We had the ivar destroyer
+
+00:33:37.956 --> 00:33:41.416 A:middle
+function +42 calling objc
+
+00:33:41.416 --> 00:33:42.026 A:middle
+release.
+
+00:33:43.416 --> 00:33:46.346 A:middle
+So there is instruction at +42,
+
+00:33:47.266 --> 00:33:48.946 A:middle
+but there is one more catch.
+
+00:33:49.496 --> 00:33:51.736 A:middle
+The catch is in a stack trace
+
+00:33:52.126 --> 00:33:54.086 A:middle
+the assembly level offset of
+
+00:33:54.086 --> 00:33:56.436 A:middle
+most stack frames is the return
+
+00:33:56.476 --> 00:33:58.436 A:middle
+address, it is the instruction
+
+00:33:58.636 --> 00:34:00.226 A:middle
+after the function call.
+

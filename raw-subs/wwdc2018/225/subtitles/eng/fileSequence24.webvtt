@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.606 --> 00:24:01.486 A:middle
+of size, our current bounds of
+
+00:24:01.486 --> 00:24:01.856 A:middle
+size.
+
+00:24:03.876 --> 00:24:05.366 A:middle
+After that, we'll implement
+
+00:24:05.366 --> 00:24:06.616 A:middle
+LayoutAttributesForItem
+
+00:24:06.616 --> 00:24:08.846 A:middle
+AtIndexPath where, again, since
+
+00:24:08.846 --> 00:24:09.886 A:middle
+we've prepared all the
+
+00:24:09.886 --> 00:24:10.906 A:middle
+attributes in our Prepare
+
+00:24:10.906 --> 00:24:12.846 A:middle
+method, we can just grab the
+
+00:24:12.846 --> 00:24:14.526 A:middle
+specific attributes that
+
+00:24:14.526 --> 00:24:15.616 A:middle
+correspond to the
+
+00:24:15.786 --> 00:24:17.626 A:middle
+RequestAtIndexPath from our
+
+00:24:17.626 --> 00:24:17.936 A:middle
+array.
+
+00:24:18.116 --> 00:24:20.756 A:middle
+And finally, we're going to
+
+00:24:20.756 --> 00:24:21.236 A:middle
+implement
+
+00:24:22.256 --> 00:24:23.786 A:middle
+LayoutAttributesForElements
+
+00:24:23.786 --> 00:24:24.166 A:middle
+InRect.
+
+00:24:25.316 --> 00:24:26.776 A:middle
+Now this method is called
+
+00:24:26.776 --> 00:24:27.656 A:middle
+periodically by the
+
+00:24:27.656 --> 00:24:29.096 A:middle
+CollectionView with different
+
+00:24:29.096 --> 00:24:31.676 A:middle
+query rects, which may be bigger
+
+00:24:31.676 --> 00:24:32.486 A:middle
+than our CollectionView.
+
+00:24:32.616 --> 00:24:34.136 A:middle
+Our CollectionView is just
+
+00:24:34.136 --> 00:24:36.566 A:middle
+asking for a set of attributes
+
+00:24:36.566 --> 00:24:37.926 A:middle
+that match a certain region.
+
+00:24:38.676 --> 00:24:41.746 A:middle
+It's our job to return an array
+
+00:24:41.896 --> 00:24:44.386 A:middle
+that contains all the attributes
+
+00:24:44.786 --> 00:24:46.266 A:middle
+that correspond to all the items
+
+00:24:46.306 --> 00:24:47.576 A:middle
+that are going to appear within
+
+00:24:47.576 --> 00:24:48.866 A:middle
+that rect in our CollectionView.
+
+00:24:50.296 --> 00:24:52.766 A:middle
+So we can answer that question
+
+00:24:52.846 --> 00:24:54.836 A:middle
+here simply by filtering our
+
+00:24:54.836 --> 00:24:57.616 A:middle
+cached attributes array on the
+
+00:24:57.616 --> 00:25:00.216 A:middle
+frame of the attributes.
+

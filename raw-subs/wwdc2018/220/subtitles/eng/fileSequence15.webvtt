@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.386 --> 00:15:00.716 A:middle
+So let's finish the process.
+
+00:15:02.036 --> 00:15:03.106 A:middle
+What happens for the rest of the
+
+00:15:03.106 --> 00:15:04.516 A:middle
+process is that whenever the
+
+00:15:04.516 --> 00:15:06.506 A:middle
+engine sort of assigns a value
+
+00:15:06.506 --> 00:15:07.816 A:middle
+to one of these variables, it's
+
+00:15:07.816 --> 00:15:09.746 A:middle
+going to inform the view that
+
+00:15:09.746 --> 00:15:11.246 A:middle
+the variable came from and say,
+
+00:15:11.246 --> 00:15:12.036 A:middle
+this thing changed.
+
+00:15:12.496 --> 00:15:14.726 A:middle
+What will the view do in
+
+00:15:14.726 --> 00:15:15.406 A:middle
+response to that?
+
+00:15:16.526 --> 00:15:17.556 A:middle
+Well, if you think about it for
+
+00:15:17.556 --> 00:15:19.646 A:middle
+a minute it will call it
+
+00:15:19.646 --> 00:15:20.956 A:middle
+Superview and say hey,
+
+00:15:20.956 --> 00:15:23.536 A:middle
+setNeedsLayout because it needs
+
+00:15:23.536 --> 00:15:23.816 A:middle
+to move.
+
+00:15:25.226 --> 00:15:27.196 A:middle
+OK, that was all happening as
+
+00:15:27.226 --> 00:15:29.926 A:middle
+part of the update constraints
+
+00:15:29.926 --> 00:15:30.216 A:middle
+phase.
+
+00:15:31.136 --> 00:15:32.106 A:middle
+We now just receive
+
+00:15:32.106 --> 00:15:33.716 A:middle
+setNeedsLayout, so at some point
+
+00:15:33.716 --> 00:15:35.246 A:middle
+it will move on to the layout
+
+00:15:35.246 --> 00:15:35.536 A:middle
+phase.
+
+00:15:36.696 --> 00:15:39.846 A:middle
+Then, OK, so the last piece of
+
+00:15:39.846 --> 00:15:40.846 A:middle
+the puzzle is that we'll
+
+00:15:40.846 --> 00:15:42.236 A:middle
+receive, UIView will receive
+
+00:15:42.236 --> 00:15:45.776 A:middle
+layout Subviews will do is it
+
+00:15:45.776 --> 00:15:47.816 A:middle
+will copy that data from the
+
+00:15:47.816 --> 00:15:49.096 A:middle
+engine into the frame.
+
+00:15:50.336 --> 00:15:52.356 A:middle
+So it will just say engine, what
+
+00:15:52.356 --> 00:15:53.546 A:middle
+are the values for those
+
+00:15:53.546 --> 00:15:53.956 A:middle
+variables?
+
+00:15:54.446 --> 00:15:56.676 A:middle
+Engine will tell it and it will
+
+00:15:56.676 --> 00:15:58.746 A:middle
+just call set Superview of that
+
+00:15:58.746 --> 00:16:00.216 A:middle
+view we'll call setBounds at
+

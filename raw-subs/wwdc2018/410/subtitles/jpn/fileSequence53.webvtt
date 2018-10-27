@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:56.944 --> 00:53:01.682 align:start position:21% line:-2
+インターバルのアップストリームが
+閉じるまでクロックは動かせません
+
+00:53:01.915 --> 00:53:05.786 align:start position:29% line:-2
+長い区間でインターバルが
+できていたら―
+
+00:53:05.886 --> 00:53:08.655 align:start position:36% line:-1
+出力は止まります
+
+00:53:08.889 --> 00:53:12.659 align:start position:30% line:-2
+ユーザが
+レコード停止を押せば―
+
+00:53:12.760 --> 00:53:17.331 align:start position:27% line:-2
+インターバルは閉じ
+元どおりにデータが入ります
+
+00:53:17.498 --> 00:53:19.166 align:start position:30% line:-1
+でも好ましくありません
+
+00:53:19.333 --> 00:53:22.202 align:start position:30% line:-2
+ディベロッパには
+２つの選択肢があります
+
+00:53:22.302 --> 00:53:26.573 align:start position:30% line:-2
+Instrumentに
+制限の要素を追加し―
+
+00:53:26.673 --> 00:53:30.077 align:start position:23% line:-2
+immediate modeで
+サポートを選ぶこと
+
+00:53:30.744 --> 00:53:36.216 align:start position:21% line:-2
+もう１つは先ほどエキスパート
+システムで実演したのと同じように
+
+00:53:36.350 --> 00:53:39.720 align:start position:25% line:-2
+モデラから出力として
+インターバルデータを離す方法
+
+00:53:39.820 --> 00:53:42.356 align:start position:34% line:-2
+私たちは実際
+インターバルよりも
+
+00:53:42.456 --> 00:53:45.058 align:start position:18% line:-2
+os signpost pointの
+イベントを使います
+
+00:53:45.158 --> 00:53:47.161 align:start position:34% line:-1
+簡単に見えますが―
+
+00:53:47.261 --> 00:53:50.330 align:start position:27% line:-2
+immediateモードは
+実装する時に注意が必要です
+
+00:53:51.398 --> 00:53:53.901 align:start position:32% line:-1
+３つ目の重要な点は―
+
+00:53:54.034 --> 00:53:58.706 align:start position:12% line:-2
+大量の入力データを
+ターゲットしたInstrumentを作る時
+
+00:53:58.906 --> 00:54:04.111 align:start position:25% line:-2
+プリレコードタイムが
+５秒モードのものが効率的です
+

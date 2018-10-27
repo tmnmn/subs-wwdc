@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.556 --> 00:12:01.236 A:middle
+So, a good approach to take
+
+00:12:01.236 --> 00:12:02.586 A:middle
+advantage of this optimization
+
+00:12:02.586 --> 00:12:03.966 A:middle
+and counteract this sort of
+
+00:12:03.966 --> 00:12:06.066 A:middle
+energy inefficiency we see is to
+
+00:12:06.806 --> 00:12:09.596 A:middle
+have a simple auto dismissal of
+
+00:12:09.596 --> 00:12:10.556 A:middle
+our UI controls.
+
+00:12:11.076 --> 00:12:13.676 A:middle
+And this could mean that any
+
+00:12:13.676 --> 00:12:15.526 A:middle
+related content that we put on
+
+00:12:15.526 --> 00:12:17.296 A:middle
+the video or in the UI layer
+
+00:12:17.496 --> 00:12:18.786 A:middle
+simply goes away if the user is
+
+00:12:18.786 --> 00:12:19.606 A:middle
+not interacting with it.
+
+00:12:20.776 --> 00:12:22.526 A:middle
+This makes a big difference on
+
+00:12:22.526 --> 00:12:23.546 A:middle
+our energy consumption during
+
+00:12:23.546 --> 00:12:25.466 A:middle
+video playback, as this display
+
+00:12:25.466 --> 00:12:27.006 A:middle
+optimization is critical for
+
+00:12:27.006 --> 00:12:28.166 A:middle
+maintaining quiescent
+
+00:12:28.596 --> 00:12:30.076 A:middle
+energy-efficient playback.
+
+00:12:30.076 --> 00:12:34.586 A:middle
+So, we've talked a lot about the
+
+00:12:34.586 --> 00:12:36.116 A:middle
+foreground, but what about the
+
+00:12:36.116 --> 00:12:36.646 A:middle
+background?
+
+00:12:37.136 --> 00:12:38.316 A:middle
+Many of us who are building
+
+00:12:38.316 --> 00:12:39.396 A:middle
+applications such as music
+
+00:12:39.396 --> 00:12:40.996 A:middle
+players, or maybe even alarm
+
+00:12:40.996 --> 00:12:42.176 A:middle
+clocks, are focused on the
+
+00:12:42.176 --> 00:12:42.706 A:middle
+background.
+
+00:12:43.296 --> 00:12:44.746 A:middle
+Our main experience comes from
+
+00:12:44.746 --> 00:12:46.316 A:middle
+our app running effectively in
+
+00:12:46.316 --> 00:12:46.776 A:middle
+the background.
+
+00:12:48.796 --> 00:12:49.866 A:middle
+Well, when we're in the
+
+00:12:49.866 --> 00:12:51.116 A:middle
+background, we have some things
+
+00:12:51.116 --> 00:12:52.056 A:middle
+that we need to be aware of.
+
+00:12:53.326 --> 00:12:54.416 A:middle
+Likely, our app is going to be
+
+00:12:54.416 --> 00:12:55.646 A:middle
+running in conjunction and
+
+00:12:55.646 --> 00:12:57.196 A:middle
+concurrently with other systems
+
+00:12:57.196 --> 00:12:57.816 A:middle
+on device.
+
+00:12:58.616 --> 00:13:00.466 A:middle
+Let's say I'll be using iMessage
+

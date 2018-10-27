@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.216 --> 00:16:01.256 A:middle
+And that's an awful lot of
+
+00:16:01.256 --> 00:16:02.786 A:middle
+intermediate computation that
+
+00:16:02.786 --> 00:16:03.936 A:middle
+maybe we don't always desire.
+
+00:16:04.546 --> 00:16:05.586 A:middle
+It would be great if there was a
+
+00:16:05.586 --> 00:16:06.636 A:middle
+way just to not do any of it,
+
+00:16:07.066 --> 00:16:08.246 A:middle
+unless it was absolutely needed.
+
+00:16:08.736 --> 00:16:11.316 A:middle
+And Swift's answer for that is
+
+00:16:11.316 --> 00:16:12.616 A:middle
+called being lazy, just like in
+
+00:16:12.616 --> 00:16:12.966 A:middle
+real life.
+
+00:16:14.756 --> 00:16:15.736 A:middle
+We'll start as we did before
+
+00:16:15.736 --> 00:16:18.296 A:middle
+with the range, and then we'll
+
+00:16:18.296 --> 00:16:19.706 A:middle
+tell that range to be lazy.
+
+00:16:19.706 --> 00:16:20.746 A:middle
+And when we do this, what
+
+00:16:20.746 --> 00:16:23.076 A:middle
+happens is we wrap the original
+
+00:16:23.076 --> 00:16:25.026 A:middle
+collection with a lazy
+
+00:16:25.026 --> 00:16:26.586 A:middle
+collection, and when we perform
+
+00:16:26.586 --> 00:16:27.996 A:middle
+operations on this lazy
+
+00:16:27.996 --> 00:16:29.036 A:middle
+collection, what's going to
+
+00:16:29.036 --> 00:16:30.276 A:middle
+happen is we're going to wrap it
+
+00:16:30.276 --> 00:16:30.566 A:middle
+again.
+
+00:16:30.566 --> 00:16:32.176 A:middle
+And so when we wrap the, when we
+
+00:16:32.176 --> 00:16:33.236 A:middle
+call map on it, we actually
+
+00:16:33.536 --> 00:16:34.096 A:middle
+aren't mapping.
+
+00:16:34.346 --> 00:16:35.166 A:middle
+We're not doing anything with
+
+00:16:35.166 --> 00:16:36.156 A:middle
+that closure other than storing
+
+00:16:36.156 --> 00:16:37.306 A:middle
+it for later should we ever need
+
+00:16:37.306 --> 00:16:37.746 A:middle
+to use it.
+
+00:16:38.566 --> 00:16:40.396 A:middle
+Further, if I filter that lazy
+
+00:16:40.396 --> 00:16:41.806 A:middle
+map collection, the filter
+
+00:16:41.806 --> 00:16:43.546 A:middle
+simply wraps the map collection,
+
+00:16:43.806 --> 00:16:44.816 A:middle
+noting that it's going to filter
+
+00:16:44.816 --> 00:16:46.236 A:middle
+later on demand, but not right
+
+00:16:46.236 --> 00:16:46.476 A:middle
+now.
+
+00:16:47.896 --> 00:16:49.426 A:middle
+Now let's go ahead and ask our
+
+00:16:49.426 --> 00:16:50.696 A:middle
+lazy filter collection for it's
+
+00:16:50.696 --> 00:16:51.326 A:middle
+first element.
+
+00:16:55.236 --> 00:16:58.056 A:middle
+When we do this, we'll start by
+
+00:16:58.056 --> 00:16:59.006 A:middle
+asking the lazy filter
+
+00:16:59.006 --> 00:16:59.776 A:middle
+collection for it's first
+
+00:16:59.776 --> 00:17:01.406 A:middle
+element, but the lazy filter
+

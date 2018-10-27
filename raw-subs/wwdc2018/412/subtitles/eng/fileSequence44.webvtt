@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.786 --> 00:44:02.776 A:middle
+set constant to negative 30.
+
+00:44:03.276 --> 00:44:05.006 A:middle
+We have the same problem that
+
+00:44:05.306 --> 00:44:06.736 A:middle
+the path application doesn't
+
+00:44:06.736 --> 00:44:08.066 A:middle
+update that Chris saw earlier,
+
+00:44:08.606 --> 00:44:09.796 A:middle
+so what I'm going to do or what
+
+00:44:09.796 --> 00:44:11.006 A:middle
+I have to do is I have to
+
+00:44:11.356 --> 00:44:13.076 A:middle
+[inaudible] the ca transaction
+
+00:44:13.176 --> 00:44:16.086 A:middle
+to [inaudible] application
+
+00:44:16.456 --> 00:44:18.716 A:middle
+schedule update of its UI.
+
+00:44:18.716 --> 00:44:21.166 A:middle
+I can use the handy command that
+
+00:44:21.166 --> 00:44:24.216 A:middle
+Chris added earlier, so I can
+
+00:44:24.616 --> 00:44:25.526 A:middle
+take the command from here.
+
+00:44:26.246 --> 00:44:27.896 A:middle
+And we can now see that the
+
+00:44:27.926 --> 00:44:29.246 A:middle
+planet image is horizontally
+
+00:44:29.246 --> 00:44:30.866 A:middle
+centered correctly, so inverting
+
+00:44:30.866 --> 00:44:31.696 A:middle
+the constant was the correct
+
+00:44:31.696 --> 00:44:32.066 A:middle
+fix.
+
+00:44:32.466 --> 00:44:34.026 A:middle
+So we were able to confirm this,
+
+00:44:34.426 --> 00:44:35.676 A:middle
+so let's apply this change in
+
+00:44:35.676 --> 00:44:36.126 A:middle
+our code.
+
+00:44:36.696 --> 00:44:39.186 A:middle
+With the constraints selected,
+
+00:44:39.466 --> 00:44:40.236 A:middle
+you can see that on the
+
+00:44:40.236 --> 00:44:42.156 A:middle
+right-hand side I can see this
+
+00:44:42.156 --> 00:44:43.416 A:middle
+back trace here, and that is the
+
+00:44:43.416 --> 00:44:44.836 A:middle
+allocation back trace of the
+
+00:44:44.896 --> 00:44:46.116 A:middle
+constraint and tells me exactly
+
+00:44:46.116 --> 00:44:47.746 A:middle
+in which frame it was allocated.
+
+00:44:48.016 --> 00:44:49.236 A:middle
+So it allows me to jump right to
+
+00:44:49.236 --> 00:44:51.276 A:middle
+the code where I created that
+
+00:44:51.276 --> 00:44:51.796 A:middle
+constraint.
+
+00:44:52.726 --> 00:44:55.076 A:middle
+Now to have this creation back
+
+00:44:55.076 --> 00:44:56.276 A:middle
+traces show up, you have to
+
+00:44:56.276 --> 00:44:58.356 A:middle
+enable mailx backlogging and let
+
+00:44:58.356 --> 00:44:59.906 A:middle
+me show you how you enable that.
+

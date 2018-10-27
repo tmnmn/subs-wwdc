@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.397 --> 00:25:01.201 align:start position:23% line:-1
+これらのGPUをすべて使って―
+
+00:25:01.301 --> 00:25:04.338 align:start position:34% line:-2
+レイトレーシングを
+高速化しましょう
+
+00:25:05.172 --> 00:25:09.576 align:start position:27% line:-2
+そのために検討すべきことが
+３つあります
+
+00:25:10.210 --> 00:25:14.281 align:start position:27% line:-2
+１つ目は
+どのように処理を分散するか
+
+00:25:15.649 --> 00:25:20.587 align:start position:30% line:-2
+２つ目は GPUが
+データを交換する時に―
+
+00:25:20.687 --> 00:25:22.823 align:start position:38% line:-1
+どう対処するか
+
+00:25:23.757 --> 00:25:27.027 align:start position:29% line:-2
+３つ目は
+どのように同期するかです
+
+00:25:27.561 --> 00:25:32.065 align:start position:23% line:-2
+今週 導入する
+Metalイベントを紹介します
+
+00:25:32.633 --> 00:25:33.867 align:start position:39% line:-1
+始めましょう
+
+00:25:35.169 --> 00:25:36.437 align:start position:36% line:-1
+処理の分散には―
+
+00:25:36.537 --> 00:25:39.306 align:start position:34% line:-2
+スプリットフレーム
+レンダリングです
+
+00:25:39.740 --> 00:25:42.910 align:start position:29% line:-1
+まずフレームを領域に分割
+
+00:25:43.010 --> 00:25:48.715 align:start position:25% line:-2
+次に各領域をGPUに割り当て
+並行してレンダリングします
+
+00:25:49.850 --> 00:25:53.954 align:start position:27% line:-2
+各GPUは完全な
+レンダリングパイプラインで
+
+00:25:54.054 --> 00:25:59.092 align:start position:27% line:-2
+レイの生成や
+シェーディングを処理します
+

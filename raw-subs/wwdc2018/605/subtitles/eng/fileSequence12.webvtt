@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.986 --> 00:12:00.446 A:middle
+same place in that world.
+
+00:12:02.576 --> 00:12:03.566 A:middle
+The first step in the
+
+00:12:03.566 --> 00:12:05.036 A:middle
+implementation is getting the
+
+00:12:05.036 --> 00:12:06.386 A:middle
+World Map from the ARSession on
+
+00:12:06.386 --> 00:12:07.236 A:middle
+the first device.
+
+00:12:08.186 --> 00:12:09.786 A:middle
+That's the call to a new API in
+
+00:12:09.876 --> 00:12:11.776 A:middle
+iOS 12 in ARSession,
+
+00:12:11.956 --> 00:12:12.836 A:middle
+getCurrentWorldMap.
+
+00:12:13.376 --> 00:12:15.006 A:middle
+It builds an ARWorldMap object
+
+00:12:15.196 --> 00:12:16.236 A:middle
+from the session's current
+
+00:12:16.236 --> 00:12:17.196 A:middle
+understanding of the world
+
+00:12:17.196 --> 00:12:19.036 A:middle
+around you and then returns it
+
+00:12:19.036 --> 00:12:20.226 A:middle
+in an asynchronous callback.
+
+00:12:20.976 --> 00:12:23.876 A:middle
+We then use NSKeyedArchiver to
+
+00:12:23.876 --> 00:12:25.116 A:middle
+serialize that out to a data
+
+00:12:25.116 --> 00:12:25.666 A:middle
+object.
+
+00:12:26.396 --> 00:12:27.846 A:middle
+You can then save the data or
+
+00:12:27.846 --> 00:12:28.746 A:middle
+send it over the network.
+
+00:12:31.316 --> 00:12:32.906 A:middle
+Once you have that data object,
+
+00:12:33.546 --> 00:12:34.616 A:middle
+you next have to decide how to
+
+00:12:34.616 --> 00:12:35.636 A:middle
+get it from one device to
+
+00:12:35.636 --> 00:12:35.956 A:middle
+another.
+
+00:12:36.456 --> 00:12:38.286 A:middle
+For ad hoc gaming like you saw
+
+00:12:38.376 --> 00:12:40.286 A:middle
+in the videoing, SwiftShot uses
+
+00:12:40.286 --> 00:12:41.086 A:middle
+a peer-to-peer network
+
+00:12:41.086 --> 00:12:42.466 A:middle
+connection which we'll get into
+
+00:12:42.466 --> 00:12:43.436 A:middle
+more detail on shortly.
+
+00:12:43.976 --> 00:12:45.716 A:middle
+When the second device joins the
+
+00:12:45.716 --> 00:12:47.376 A:middle
+network session, the first
+
+00:12:47.376 --> 00:12:48.776 A:middle
+device serialized the WorldMap
+
+00:12:48.776 --> 00:12:50.076 A:middle
+and sent it over the network.
+
+00:12:50.826 --> 00:12:52.126 A:middle
+This is great for casual gaming
+
+00:12:52.126 --> 00:12:53.696 A:middle
+situations, allowing users to
+
+00:12:53.696 --> 00:12:55.346 A:middle
+set up anywhere they can find a
+
+00:12:55.346 --> 00:12:56.756 A:middle
+surface to play on.
+
+00:12:58.536 --> 00:12:59.596 A:middle
+For the gaming tables
+
+00:12:59.596 --> 00:13:00.886 A:middle
+downstairs, we used a different
+

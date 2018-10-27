@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.226 --> 00:15:00.406 A:middle
+be 2.2 megabytes of memory to
+
+00:15:00.406 --> 00:15:00.976 A:middle
+draw a prairie dog.
+
+00:15:02.096 --> 00:15:03.426 A:middle
+That seems like a pretty decent
+
+00:15:03.426 --> 00:15:05.186 A:middle
+amount, but in this case that's
+
+00:15:05.186 --> 00:15:06.586 A:middle
+actually probably memory well
+
+00:15:06.586 --> 00:15:06.966 A:middle
+spent.
+
+00:15:07.216 --> 00:15:08.306 A:middle
+We're actually trying to
+
+00:15:08.306 --> 00:15:10.226 A:middle
+represent this full-fidelity
+
+00:15:10.226 --> 00:15:11.816 A:middle
+image and that's the amount of
+
+00:15:11.816 --> 00:15:13.116 A:middle
+memory that's needed to draw it
+
+00:15:13.116 --> 00:15:13.736 A:middle
+into this buffer.
+
+00:15:14.086 --> 00:15:15.576 A:middle
+So that's probably expected.
+
+00:15:16.376 --> 00:15:17.736 A:middle
+But now let's say that we were
+
+00:15:17.736 --> 00:15:20.266 A:middle
+going to draw a lower-fidelity
+
+00:15:20.266 --> 00:15:21.316 A:middle
+version of our prairie dog,
+
+00:15:21.626 --> 00:15:22.606 A:middle
+maybe something in black and
+
+00:15:22.606 --> 00:15:23.416 A:middle
+white that we were going to
+
+00:15:23.416 --> 00:15:25.186 A:middle
+sketch out with core graphics,
+
+00:15:25.486 --> 00:15:26.556 A:middle
+maybe it was drawn with an Apple
+
+00:15:26.616 --> 00:15:27.666 A:middle
+pencil on an iPad.
+
+00:15:28.196 --> 00:15:29.096 A:middle
+That might look something like
+
+00:15:29.096 --> 00:15:29.456 A:middle
+this.
+
+00:15:30.496 --> 00:15:32.636 A:middle
+So how much memory is our
+
+00:15:32.866 --> 00:15:34.156 A:middle
+low-fidelity prairie dog going
+
+00:15:34.156 --> 00:15:34.606 A:middle
+to use?
+
+00:15:35.506 --> 00:15:37.556 A:middle
+Well, it'll actually use the
+
+00:15:37.556 --> 00:15:38.766 A:middle
+exact same amount of memory.
+
+00:15:39.266 --> 00:15:41.286 A:middle
+Now here, that clearly is not as
+
+00:15:41.286 --> 00:15:42.236 A:middle
+good of a use of memory.
+
+00:15:42.236 --> 00:15:43.306 A:middle
+It's all grayscale.
+
+00:15:43.796 --> 00:15:45.236 A:middle
+All of that deep color
+
+00:15:45.646 --> 00:15:47.436 A:middle
+information is not even being
+
+00:15:47.436 --> 00:15:48.736 A:middle
+used in this image.
+
+00:15:49.196 --> 00:15:50.416 A:middle
+So hopefully we could do much
+
+00:15:50.466 --> 00:15:53.456 A:middle
+better and iOS 12 introduces
+
+00:15:53.456 --> 00:15:54.906 A:middle
+automatic backing store support
+
+00:15:54.906 --> 00:15:57.456 A:middle
+to help make that exactly be the
+
+00:15:57.456 --> 00:15:57.686 A:middle
+case.
+
+00:15:58.766 --> 00:16:00.866 A:middle
+So all of your views now that
+

@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.573 --> 00:19:05.679 align:start position:11% line:-2
+“contentInsetとの違いは何だ？”
+と疑問に思うかもしれません
+
+00:19:05.779 --> 00:19:08.448 align:start position:30% line:-1
+早速 見ていきましょう
+
+00:19:09.149 --> 00:19:14.755 align:start position:11% line:-2
+adjustedContentInsetは
+アプリケーションのcontentInsetと
+
+00:19:14.855 --> 00:19:18.959 align:start position:23% line:-2
+自動でシステムやUIKitから
+与えられる余白を併せたものです
+
+00:19:19.626 --> 00:19:24.731 align:start position:25% line:-2
+これらを別々に認識することで
+状況を判断しやすくなります
+
+00:19:25.299 --> 00:19:30.070 align:start position:27% line:-2
+いつどこでシステムの余白を
+得るのか疑問でしょう
+
+00:19:30.971 --> 00:19:34.775 align:start position:21% line:-2
+最も一般的なケースは
+safeAreaInsetsです
+
+00:19:35.008 --> 00:19:36.677 align:start position:38% line:-1
+見てみましょう
+
+00:19:36.977 --> 00:19:41.782 align:start position:16% line:-2
+ベーシックなダイアグラムに戻し
+safeAreaInsetsを加えます
+
+00:19:42.616 --> 00:19:47.187 align:start position:14% line:-2
+現状では safeAreaInsetsは
+どちらの辺にもありませんが
+
+00:19:47.287 --> 00:19:51.391 align:start position:16% line:-2
+これから上辺に
+safeAreaInsetsを加えます
+
+00:19:52.326 --> 00:19:58.732 align:start position:11% line:-2
+デフォルトではスクロールビューは
+自動でこれらのsafeAreaInsetsを
+
+00:19:58.832 --> 00:20:02.769 align:start position:12% line:-2
+adjustedContentInsetに
+取り込みます
+

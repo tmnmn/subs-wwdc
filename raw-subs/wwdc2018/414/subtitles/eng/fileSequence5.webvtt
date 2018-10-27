@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.076 --> 00:05:00.216 A:middle
+This is very cool if you haven't
+
+00:05:00.216 --> 00:05:01.756 A:middle
+seen it before, we'll see that
+
+00:05:01.756 --> 00:05:02.426 A:middle
+in a bit.
+
+00:05:03.306 --> 00:05:04.456 A:middle
+And in the detailed view of
+
+00:05:04.456 --> 00:05:05.686 A:middle
+course we show you a fully
+
+00:05:05.686 --> 00:05:07.636 A:middle
+symbolicated backtrace with the
+
+00:05:07.636 --> 00:05:08.606 A:middle
+crash point highlighted.
+
+00:05:09.786 --> 00:05:10.496 A:middle
+So now that we have the lay of
+
+00:05:10.496 --> 00:05:12.286 A:middle
+the land let's play with it.
+
+00:05:13.516 --> 00:05:16.866 A:middle
+So I have Xcode open here and
+
+00:05:16.866 --> 00:05:18.096 A:middle
+I'm going to open up the
+
+00:05:18.096 --> 00:05:21.396 A:middle
+Organizer window and you can see
+
+00:05:21.396 --> 00:05:22.716 A:middle
+that I've selected the Crashes
+
+00:05:22.716 --> 00:05:24.096 A:middle
+tab, that's the second tab here
+
+00:05:24.536 --> 00:05:26.276 A:middle
+and I've selected this chocolate
+
+00:05:26.276 --> 00:05:27.516 A:middle
+chip app that Kuba and I are
+
+00:05:27.516 --> 00:05:28.086 A:middle
+working on.
+
+00:05:28.896 --> 00:05:31.516 A:middle
+And I've uploaded this build to
+
+00:05:31.516 --> 00:05:32.916 A:middle
+TestFlight and you can see I'm
+
+00:05:32.916 --> 00:05:35.256 A:middle
+looking at build 5 right now and
+
+00:05:35.256 --> 00:05:36.526 A:middle
+a number of testers are
+
+00:05:36.526 --> 00:05:38.046 A:middle
+reporting crashes, so that's not
+
+00:05:38.046 --> 00:05:38.566 A:middle
+too good.
+
+00:05:38.566 --> 00:05:39.756 A:middle
+But I've worked on a couple of
+
+00:05:39.756 --> 00:05:41.766 A:middle
+these crashes you can see, but
+
+00:05:41.766 --> 00:05:42.996 A:middle
+this first one I haven't worked
+
+00:05:42.996 --> 00:05:44.296 A:middle
+on yet so let's try to resolve
+
+00:05:44.296 --> 00:05:45.246 A:middle
+that.
+
+00:05:45.876 --> 00:05:48.746 A:middle
+So this is affecting 242 devices
+
+00:05:49.036 --> 00:05:50.446 A:middle
+and I can see the backtrace that
+
+00:05:50.446 --> 00:05:51.846 A:middle
+was captured from the time that
+
+00:05:51.846 --> 00:05:53.136 A:middle
+the app crashed and the crash
+
+00:05:53.136 --> 00:05:53.956 A:middle
+point highlighted.
+
+00:05:55.056 --> 00:05:55.976 A:middle
+Now I'm not quite sure what's
+
+00:05:55.976 --> 00:05:58.136 A:middle
+going on yet but I bet if I open
+
+00:05:58.136 --> 00:06:00.216 A:middle
+this crash log in our source
+

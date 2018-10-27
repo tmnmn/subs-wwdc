@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:59.656 --> 00:51:01.406 A:middle
+details that don't seem quite
+
+00:51:01.406 --> 00:51:01.696 A:middle
+right.
+
+00:51:01.696 --> 00:51:04.026 A:middle
+For instance, the text highlight
+
+00:51:04.026 --> 00:51:05.436 A:middle
+color is still getting the dark
+
+00:51:05.436 --> 00:51:07.266 A:middle
+variant of the text highlights,
+
+00:51:07.266 --> 00:51:08.546 A:middle
+as well as the autocorrect
+
+00:51:08.546 --> 00:51:09.846 A:middle
+bubbles have the dark
+
+00:51:09.846 --> 00:51:11.376 A:middle
+appearance, which really clashes
+
+00:51:11.376 --> 00:51:12.396 A:middle
+with the light appearance of our
+
+00:51:12.396 --> 00:51:12.866 A:middle
+document.
+
+00:51:13.986 --> 00:51:15.186 A:middle
+We, basically, want to have
+
+00:51:15.186 --> 00:51:16.776 A:middle
+everything in this area revert
+
+00:51:16.776 --> 00:51:18.646 A:middle
+back to the light appearance,
+
+00:51:19.146 --> 00:51:20.696 A:middle
+and we can do that using
+
+00:51:20.756 --> 00:51:22.066 A:middle
+NSAppearance.
+
+00:51:22.406 --> 00:51:23.636 A:middle
+It turns out that NSAppearance
+
+00:51:23.636 --> 00:51:24.636 A:middle
+is what's been providing the
+
+00:51:24.636 --> 00:51:26.466 A:middle
+magic of having light versus
+
+00:51:26.466 --> 00:51:27.786 A:middle
+dark variance automatically
+
+00:51:27.786 --> 00:51:29.306 A:middle
+switch in Dark Mode this whole
+
+00:51:29.306 --> 00:51:29.646 A:middle
+time.
+
+00:51:30.806 --> 00:51:31.746 A:middle
+You can conceptualize
+
+00:51:31.746 --> 00:51:33.396 A:middle
+NSAppearance as a little bundle
+
+00:51:33.816 --> 00:51:35.526 A:middle
+containing all of the colors,
+
+00:51:35.756 --> 00:51:39.176 A:middle
+materials, images, and control
+
+00:51:39.176 --> 00:51:40.486 A:middle
+artwork that you see across the
+
+00:51:40.486 --> 00:51:41.026 A:middle
+system.
+
+00:51:41.626 --> 00:51:44.176 A:middle
+Now, when your application does
+
+00:51:44.176 --> 00:51:45.586 A:middle
+something like request to draw
+
+00:51:45.586 --> 00:51:47.296 A:middle
+with labelColor, what that does
+
+00:51:47.296 --> 00:51:48.476 A:middle
+is it looks up in the current
+
+00:51:48.476 --> 00:51:50.016 A:middle
+appearance for what the exact
+
+00:51:50.016 --> 00:51:51.166 A:middle
+RGB values should be.
+
+00:51:52.176 --> 00:51:53.526 A:middle
+The same is true for control
+
+00:51:53.526 --> 00:51:54.696 A:middle
+artwork or the different
+
+00:51:54.696 --> 00:51:56.266 A:middle
+material effects.
+
+00:51:56.826 --> 00:51:58.996 A:middle
+Now, what's new in Mojave is the
+
+00:51:58.996 --> 00:52:00.546 A:middle
+dark appearance, which our
+

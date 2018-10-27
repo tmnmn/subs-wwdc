@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:01.261 --> 00:06:02.863 align:start position:38% line:-1
+さらに上げます
+
+00:06:06.200 --> 00:06:08.001 align:start position:34% line:-1
+ノイズが消えました
+
+00:06:10.003 --> 00:06:13.941 align:start position:32% line:-2
+タイムドメインでも
+ノイズは消えています
+
+00:06:14.041 --> 00:06:17.477 align:start position:29% line:-1
+ここで しきい値を外すと
+
+00:06:17.911 --> 00:06:21.415 align:start position:34% line:-2
+元のノイズ入りの
+信号が表示されます
+
+00:06:22.716 --> 00:06:24.084 align:start position:34% line:-1
+やり方を解説します
+
+00:06:29.690 --> 00:06:33.560 align:start position:36% line:-2
+最初にすることは
+信号の解析です
+
+00:06:33.760 --> 00:06:35.195 align:start position:34% line:-1
+スイッチを使います
+
+00:06:36.163 --> 00:06:40.968 align:start position:29% line:-2
+それから周波数成分の
+ノイズを見つけ除去します
+
+00:06:41.869 --> 00:06:45.038 align:start position:30% line:-2
+最後にオーディオ信号を
+再構築します
+
+00:06:45.372 --> 00:06:46.707 align:start position:38% line:-1
+次はコードです
+
+00:06:50.177 --> 00:06:54.147 align:start position:32% line:-2
+使うのはDCT
+離散コサイン変換です
+
+00:06:55.415 --> 00:06:57.751 align:start position:21% line:-2
+DCT CreateSetupが
+見えますね
+
+00:06:59.453 --> 00:07:05.259 align:start position:30% line:-2
+コンテキストでタイプと
+空き容量が分かります
+

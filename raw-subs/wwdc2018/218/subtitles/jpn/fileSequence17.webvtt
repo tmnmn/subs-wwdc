@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:56.183 --> 00:17:00.120 align:start position:30% line:-2
+レイヤーのコンテンツを
+NSImageに設定
+
+00:17:00.487 --> 00:17:04.958 align:start position:4% line:-2
+あるいはlayerContents
+(forContentsScale: scale)で
+
+00:17:05.058 --> 00:17:08.595 align:start position:29% line:-2
+レイヤーコンテンツを
+画像から作る時のものです
+
+00:17:09.762 --> 00:17:11.964 align:start position:34% line:-1
+この時 その画像は
+
+00:17:12.065 --> 00:17:15.669 align:start position:32% line:-2
+アピアランスを
+自動的に継承しません
+
+00:17:17.003 --> 00:17:20.073 align:start position:30% line:-2
+解決法は
+ビューを切り替えること
+
+00:17:20.174 --> 00:17:22.242 align:start position:21% line:-1
+ここではNSImageViewが
+
+00:17:22.342 --> 00:17:27.013 align:start position:29% line:-2
+様々な問題を
+自動的に解決してくれます
+
+00:17:27.381 --> 00:17:29.182 align:start position:34% line:-1
+試してみてください
+
+00:17:30.684 --> 00:17:36.123 align:start position:20% line:-2
+NSImageからCGImageを
+作るという方法もあります
+
+00:17:36.456 --> 00:17:40.594 align:start position:5% line:-2
+それをするには
+cgImage(forProposedRect:や
+
+00:17:40.694 --> 00:17:44.264 align:start position:21% line:-2
+context: hints:が
+必要になります
+
+00:17:44.364 --> 00:17:47.000 align:start position:16% line:-2
+Current Appearanceが
+正しいかどうか
+
+00:17:47.100 --> 00:17:49.536 align:start position:27% line:-1
+注意するようにしてください
+
+00:17:49.636 --> 00:17:52.806 align:start position:21% line:-2
+updateLayerメソッドを
+使うといいでしょう
+
+00:17:54.474 --> 00:17:55.976 align:start position:34% line:-1
+以上がアピアランス
+
+00:17:56.476 --> 00:17:58.178 align:start position:34% line:-1
+次はマテリアルです
+
+00:17:58.679 --> 00:18:01.815 align:start position:29% line:-2
+マテリアルは Macの
+インターフェイスにおける
+

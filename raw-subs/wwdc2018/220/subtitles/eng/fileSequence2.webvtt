@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:02.546 --> 00:02:04.756 A:middle
+Last, if you only ever rely on
+
+00:02:04.756 --> 00:02:06.316 A:middle
+our intuition for performance,
+
+00:02:06.546 --> 00:02:07.706 A:middle
+it's not going to work out very
+
+00:02:07.706 --> 00:02:07.896 A:middle
+well.
+
+00:02:08.286 --> 00:02:10.776 A:middle
+So we will then look -- Kasia
+
+00:02:10.776 --> 00:02:12.376 A:middle
+will take over and we'll analyze
+
+00:02:12.506 --> 00:02:14.686 A:middle
+code and we'll sort of show how
+
+00:02:14.686 --> 00:02:16.696 A:middle
+to merge your intuition with,
+
+00:02:16.916 --> 00:02:17.736 A:middle
+you know, practice.
+
+00:02:18.846 --> 00:02:20.126 A:middle
+But let's get to it.
+
+00:02:20.436 --> 00:02:22.226 A:middle
+So first as is traditional for
+
+00:02:22.226 --> 00:02:23.326 A:middle
+an Apple presentation, we're
+
+00:02:23.326 --> 00:02:23.916 A:middle
+going to look at a bunch of
+
+00:02:23.916 --> 00:02:24.676 A:middle
+numbers and brag.
+
+00:02:25.516 --> 00:02:28.796 A:middle
+[ Laughter ]
+
+00:02:29.296 --> 00:02:31.116 A:middle
+Here we have, what we're looking
+
+00:02:31.116 --> 00:02:32.806 A:middle
+at here is a benchmark.
+
+00:02:33.416 --> 00:02:35.456 A:middle
+So the way we approached this
+
+00:02:35.456 --> 00:02:37.536 A:middle
+work is we went out and looked a
+
+00:02:37.536 --> 00:02:38.816 A:middle
+bunch of third party apps as
+
+00:02:38.816 --> 00:02:40.406 A:middle
+well as our own apps and we
+
+00:02:40.406 --> 00:02:41.906 A:middle
+tried to isolate what we saw
+
+00:02:41.906 --> 00:02:44.646 A:middle
+happening into test cases that
+
+00:02:44.646 --> 00:02:45.476 A:middle
+we could then benchmark.
+
+00:02:45.996 --> 00:02:47.056 A:middle
+So this one here, what we're
+
+00:02:47.056 --> 00:02:49.006 A:middle
+looking at, is UICollectionView
+
+00:02:49.006 --> 00:02:51.486 A:middle
+with self-sizing cells and on
+
+00:02:51.706 --> 00:02:53.236 A:middle
+the whichever side looks bad is
+
+00:02:53.436 --> 00:02:59.136 A:middle
+iOS 11, which hopefully looked
+
+00:02:59.306 --> 00:03:00.086 A:middle
+janky and bad.
+

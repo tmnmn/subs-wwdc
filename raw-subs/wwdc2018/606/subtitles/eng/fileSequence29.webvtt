@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.426 --> 00:29:00.126 A:middle
+different GPU.
+
+00:29:00.566 --> 00:29:03.136 A:middle
+So, here's a quick look at how
+
+00:29:03.136 --> 00:29:03.766 A:middle
+to set this up.
+
+00:29:04.556 --> 00:29:06.266 A:middle
+First, we create our buffer on
+
+00:29:06.266 --> 00:29:07.976 A:middle
+device A, using METAL shared
+
+00:29:07.976 --> 00:29:08.616 A:middle
+storage mode.
+
+00:29:08.896 --> 00:29:11.036 A:middle
+And this allocates system
+
+00:29:11.036 --> 00:29:11.916 A:middle
+memory, internally.
+
+00:29:11.916 --> 00:29:13.786 A:middle
+And we can get appointed to it
+
+00:29:13.896 --> 00:29:15.196 A:middle
+using the .contents method.
+
+00:29:15.736 --> 00:29:19.646 A:middle
+We, then create a buffer on
+
+00:29:19.646 --> 00:29:22.596 A:middle
+device B using the NoCopy API to
+
+00:29:22.596 --> 00:29:23.706 A:middle
+wrap the memory that we just
+
+00:29:23.706 --> 00:29:25.606 A:middle
+allocated to buffer A.
+
+00:29:26.726 --> 00:29:28.096 A:middle
+Now, something to be aware of
+
+00:29:28.146 --> 00:29:30.116 A:middle
+for this API is that the buffer
+
+00:29:30.516 --> 00:29:31.686 A:middle
+needs to be a multiple of page
+
+00:29:31.686 --> 00:29:31.976 A:middle
+size.
+
+00:29:31.976 --> 00:29:33.626 A:middle
+So, you'll need to pad the
+
+00:29:33.626 --> 00:29:34.626 A:middle
+length when you create the
+
+00:29:34.626 --> 00:29:35.186 A:middle
+original buffer.
+
+00:29:35.986 --> 00:29:39.996 A:middle
+So, now that we're able to share
+
+00:29:39.996 --> 00:29:41.686 A:middle
+memory between devices we need
+
+00:29:41.686 --> 00:29:42.966 A:middle
+to think about synchronization.
+
+00:29:43.956 --> 00:29:45.286 A:middle
+Now, to help with this we have
+
+00:29:45.286 --> 00:29:46.746 A:middle
+an example timeline here to help
+
+00:29:46.746 --> 00:29:48.356 A:middle
+us visualize two GPUs running in
+
+00:29:48.356 --> 00:29:48.776 A:middle
+parallel.
+
+00:29:49.206 --> 00:29:51.156 A:middle
+The dark boxes represent command
+
+00:29:51.156 --> 00:29:53.096 A:middle
+buffers and the green boxes
+
+00:29:53.096 --> 00:29:54.046 A:middle
+represent work that we've
+
+00:29:54.046 --> 00:29:55.416 A:middle
+encoded into those command
+
+00:29:55.416 --> 00:29:55.806 A:middle
+buffers.
+
+00:29:56.266 --> 00:29:57.766 A:middle
+For example, using a compute
+
+00:29:57.766 --> 00:29:58.476 A:middle
+command encoder.
+
+00:29:59.466 --> 00:30:01.966 A:middle
+So, the GPU at the top there, is
+

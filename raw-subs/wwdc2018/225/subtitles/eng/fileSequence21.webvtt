@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.156 --> 00:21:00.506 A:middle
+another layout subclass that
+
+00:21:00.506 --> 00:21:01.416 A:middle
+we're going to use for this
+
+00:21:01.416 --> 00:21:03.336 A:middle
+layout, and you might notice
+
+00:21:03.336 --> 00:21:04.426 A:middle
+that it's a subclass of
+
+00:21:04.426 --> 00:21:06.276 A:middle
+UICollectionViewLayout directly,
+
+00:21:06.276 --> 00:21:07.736 A:middle
+not a subclass of
+
+00:21:07.736 --> 00:21:09.906 A:middle
+CollectionViewLayout, and this
+
+00:21:09.906 --> 00:21:11.596 A:middle
+is for the reasons that Steve
+
+00:21:11.636 --> 00:21:13.786 A:middle
+explained to us earlier are
+
+00:21:14.146 --> 00:21:16.006 A:middle
+UICollectionViewLayout doesn't
+
+00:21:16.006 --> 00:21:17.356 A:middle
+really meet the needs of our
+
+00:21:17.356 --> 00:21:19.446 A:middle
+custom mosaic design.
+
+00:21:20.906 --> 00:21:22.076 A:middle
+So the first thing I'm doing
+
+00:21:22.076 --> 00:21:23.626 A:middle
+here is I'm setting up a couple
+
+00:21:23.626 --> 00:21:25.246 A:middle
+of instance variables that I'm
+
+00:21:25.246 --> 00:21:26.646 A:middle
+going to use to hold onto some
+
+00:21:26.646 --> 00:21:28.176 A:middle
+key pieces of information that I
+
+00:21:28.176 --> 00:21:29.366 A:middle
+can refer to later.
+
+00:21:30.706 --> 00:21:32.946 A:middle
+The first of these is a content
+
+00:21:32.946 --> 00:21:34.816 A:middle
+bound CG rect, which I'm going
+
+00:21:34.816 --> 00:21:37.476 A:middle
+to use to keep a representative
+
+00:21:37.516 --> 00:21:39.396 A:middle
+bounds of all the items within
+
+00:21:39.396 --> 00:21:40.226 A:middle
+my CollectionView.
+
+00:21:40.776 --> 00:21:43.366 A:middle
+And the second is a cached
+
+00:21:43.366 --> 00:21:44.636 A:middle
+attributes array, which I'm
+
+00:21:44.636 --> 00:21:46.106 A:middle
+going to use to hold onto my
+
+00:21:46.516 --> 00:21:48.336 A:middle
+layout attributes so I can refer
+
+00:21:48.336 --> 00:21:49.606 A:middle
+to them quickly when performance
+
+00:21:49.606 --> 00:21:50.086 A:middle
+matters.
+
+00:21:51.496 --> 00:21:52.916 A:middle
+So we're going to start out by
+
+00:21:52.916 --> 00:21:54.396 A:middle
+implementing our prepare method
+
+00:21:54.396 --> 00:21:55.836 A:middle
+again for this layout.
+
+00:21:56.846 --> 00:21:59.776 A:middle
+Prepare is the ideal place to do
+
+00:21:59.776 --> 00:22:01.116 A:middle
+the bulk of our layout work
+

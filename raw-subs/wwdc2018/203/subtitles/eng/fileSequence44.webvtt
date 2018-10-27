@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.056 --> 00:44:01.566 A:middle
+demo, I'll just hardcode this to
+
+00:44:01.566 --> 00:44:02.366 A:middle
+my own name.
+
+00:44:02.946 --> 00:44:05.856 A:middle
+Now that we've saved the score,
+
+00:44:05.856 --> 00:44:08.356 A:middle
+we need to write some code to
+
+00:44:08.356 --> 00:44:11.236 A:middle
+actually display the right
+
+00:44:11.576 --> 00:44:13.196 A:middle
+scores and the names on the
+
+00:44:13.196 --> 00:44:13.866 A:middle
+leaderboard.
+
+00:44:14.756 --> 00:44:16.386 A:middle
+So let's go ahead and create
+
+00:44:16.386 --> 00:44:18.956 A:middle
+another class by right-clicking
+
+00:44:19.066 --> 00:44:21.506 A:middle
+on the unicorn's folder and
+
+00:44:21.506 --> 00:44:22.646 A:middle
+going to new file.
+
+00:44:23.806 --> 00:44:25.426 A:middle
+A [inaudible] class again.
+
+00:44:25.946 --> 00:44:28.836 A:middle
+This will be a subclass of the
+
+00:44:28.836 --> 00:44:30.466 A:middle
+UI table-view-controller.
+
+00:44:31.606 --> 00:44:33.656 A:middle
+Remember when we created the
+
+00:44:33.656 --> 00:44:35.266 A:middle
+leaderboard on our storyboard?
+
+00:44:35.616 --> 00:44:37.336 A:middle
+It was a table-view-controller,
+
+00:44:37.696 --> 00:44:40.256 A:middle
+so I use a table-view-controller
+
+00:44:40.256 --> 00:44:42.816 A:middle
+class again to put in some code
+
+00:44:42.916 --> 00:44:44.096 A:middle
+for that leaderboard.
+
+00:44:45.166 --> 00:44:46.626 A:middle
+Let's call it the
+
+00:44:46.626 --> 00:44:48.476 A:middle
+leaderboard-view-controller.
+
+00:44:49.796 --> 00:44:51.636 A:middle
+Hit next. And create.
+
+00:44:56.096 --> 00:44:58.106 A:middle
+This already has some code that
+
+00:44:58.106 --> 00:45:00.036 A:middle
+has been generated for us by
+

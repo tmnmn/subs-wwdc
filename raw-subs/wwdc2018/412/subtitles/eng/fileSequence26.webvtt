@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.676 --> 00:26:01.136 A:middle
+It will snapshot the hierarchy
+
+00:26:01.136 --> 00:26:03.216 A:middle
+and give you a 3D exploded view,
+
+00:26:03.216 --> 00:26:04.446 A:middle
+and you can use that to inspect
+
+00:26:04.536 --> 00:26:05.166 A:middle
+views that way.
+
+00:26:05.676 --> 00:26:06.706 A:middle
+Sebastian's going to talk more
+
+00:26:06.706 --> 00:26:07.806 A:middle
+about that in a few minutes, so
+
+00:26:07.806 --> 00:26:08.816 A:middle
+let me show you an alternative
+
+00:26:08.816 --> 00:26:10.616 A:middle
+way, which is good for simpler
+
+00:26:10.616 --> 00:26:13.126 A:middle
+hierarchies and keeps you in the
+
+00:26:13.126 --> 00:26:13.846 A:middle
+debug console.
+
+00:26:13.976 --> 00:26:15.936 A:middle
+And that's using a debug
+
+00:26:16.006 --> 00:26:17.846 A:middle
+function on UI view called
+
+00:26:17.846 --> 00:26:18.886 A:middle
+recursive description.
+
+00:26:20.296 --> 00:26:21.716 A:middle
+So we should be able to call po
+
+00:26:21.716 --> 00:26:23.726 A:middle
+self.view recursive description.
+
+00:26:24.806 --> 00:26:25.716 A:middle
+However, that doesn't work.
+
+00:26:26.136 --> 00:26:26.816 A:middle
+Why is that?
+
+00:26:27.536 --> 00:26:29.066 A:middle
+Well, recursive description only
+
+00:26:29.066 --> 00:26:30.376 A:middle
+exists for debugging purposes.
+
+00:26:30.506 --> 00:26:31.866 A:middle
+It's not part of the public API
+
+00:26:32.286 --> 00:26:33.656 A:middle
+and so isn't [inaudible] to
+
+00:26:34.386 --> 00:26:35.146 A:middle
+Swift.
+
+00:26:35.546 --> 00:26:37.066 A:middle
+And Swift is a strict language
+
+00:26:37.066 --> 00:26:37.886 A:middle
+and doesn't allow you to call
+
+00:26:37.886 --> 00:26:38.916 A:middle
+functions that haven't been
+
+00:26:38.916 --> 00:26:39.686 A:middle
+strictly defined.
+
+00:26:40.536 --> 00:26:41.366 A:middle
+However, Objective-C [inaudible]
+
+00:26:41.366 --> 00:26:43.426 A:middle
+code can run wild and free in
+
+00:26:43.426 --> 00:26:44.776 A:middle
+Objective-C world and you can
+
+00:26:44.776 --> 00:26:45.416 A:middle
+pretty much do whatever you
+
+00:26:45.416 --> 00:26:45.646 A:middle
+like.
+
+00:26:45.646 --> 00:26:46.746 A:middle
+I mean it's a dynamic language
+
+00:26:46.746 --> 00:26:48.276 A:middle
+so you can call functions like
+
+00:26:48.276 --> 00:26:48.526 A:middle
+this.
+
+00:26:48.846 --> 00:26:51.086 A:middle
+So what we need to do is to tell
+
+00:26:51.086 --> 00:26:52.496 A:middle
+the debugger to evaluate this
+
+00:26:52.496 --> 00:26:54.986 A:middle
+expression in an Objective-C
+
+00:26:55.096 --> 00:26:55.666 A:middle
+syntax.
+
+00:26:55.706 --> 00:26:57.166 A:middle
+And the way to do that is to use
+
+00:26:57.166 --> 00:26:59.146 A:middle
+expression with the option - l
+
+00:26:59.146 --> 00:26:59.726 A:middle
+objc.
+
+00:26:59.726 --> 00:27:02.026 A:middle
+That tells expression that
+

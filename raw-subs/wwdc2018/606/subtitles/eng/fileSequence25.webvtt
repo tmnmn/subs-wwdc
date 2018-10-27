@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.436 --> 00:25:00.646 A:middle
+do is use all of these GPUs
+
+00:25:00.646 --> 00:25:02.356 A:middle
+together to make Ray Tracing go
+
+00:25:02.356 --> 00:25:05.336 A:middle
+as fast as we possibly can.
+
+00:25:05.336 --> 00:25:06.626 A:middle
+So, how are we going to do this?
+
+00:25:06.886 --> 00:25:08.506 A:middle
+Well, there's three things we
+
+00:25:08.506 --> 00:25:09.136 A:middle
+need to think about.
+
+00:25:10.026 --> 00:25:11.956 A:middle
+First of all, how are we going
+
+00:25:11.956 --> 00:25:13.806 A:middle
+to divide up the work between
+
+00:25:15.056 --> 00:25:15.176 A:middle
+GPUs?
+
+00:25:15.786 --> 00:25:18.586 A:middle
+Secondly, at some point the GPUs
+
+00:25:18.586 --> 00:25:19.486 A:middle
+are going to need a way to
+
+00:25:19.486 --> 00:25:20.216 A:middle
+exchange data.
+
+00:25:20.766 --> 00:25:22.066 A:middle
+So, how are we going to deal
+
+00:25:22.066 --> 00:25:23.316 A:middle
+with that?
+
+00:25:23.846 --> 00:25:25.346 A:middle
+And finally, we need a way to
+
+00:25:25.346 --> 00:25:26.596 A:middle
+keep everything synchronized.
+
+00:25:27.046 --> 00:25:28.676 A:middle
+Now, for this, I'll show you how
+
+00:25:28.676 --> 00:25:29.756 A:middle
+to use the new METAL Events
+
+00:25:29.756 --> 00:25:31.056 A:middle
+feature that we're introducing
+
+00:25:31.056 --> 00:25:31.616 A:middle
+here, this week.
+
+00:25:32.706 --> 00:25:33.426 A:middle
+So, let's get started.
+
+00:25:34.146 --> 00:25:36.676 A:middle
+So, to divide up the work we're
+
+00:25:36.676 --> 00:25:37.626 A:middle
+going to use something called
+
+00:25:37.626 --> 00:25:38.816 A:middle
+Split Frame Rendering.
+
+00:25:39.846 --> 00:25:41.756 A:middle
+The idea here is to partition
+
+00:25:41.756 --> 00:25:42.976 A:middle
+our frame into regions.
+
+00:25:43.086 --> 00:25:44.576 A:middle
+And then, we'll assign each of
+
+00:25:44.576 --> 00:25:45.806 A:middle
+these regions to a different
+
+00:25:45.806 --> 00:25:47.386 A:middle
+GPU, so that they can be
+
+00:25:47.386 --> 00:25:48.276 A:middle
+rendered in parallel.
+
+00:25:49.926 --> 00:25:51.696 A:middle
+Now, each GPU will run the full
+
+00:25:51.736 --> 00:25:52.936 A:middle
+rendering pipeline that Sean
+
+00:25:52.936 --> 00:25:53.586 A:middle
+described earlier.
+
+00:25:54.216 --> 00:25:55.426 A:middle
+So, that's everything from
+
+00:25:55.426 --> 00:25:57.156 A:middle
+initial ray generation right
+
+00:25:57.156 --> 00:25:58.336 A:middle
+through to shadow rays and
+
+00:25:58.336 --> 00:25:58.666 A:middle
+shading.
+

@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.238 --> 00:19:03.544 align:start position:12% line:-2
+ここにある“IDE Navigator”の
+コールを見ましょう
+
+00:19:03.710 --> 00:19:05.779 align:start position:29% line:-2
+ビューコントローラを
+インストールしてあります
+
+00:19:05.879 --> 00:19:09.316 align:start position:27% line:-2
+これは 私が熟知している
+Xcodeの内部APIです
+
+00:19:10.184 --> 00:19:14.288 align:start position:34% line:-2
+このトレースの
+左端の部分を見ると
+
+00:19:14.388 --> 00:19:18.358 align:start position:25% line:-2
+1.19秒で返していることが
+分かります
+
+00:19:18.458 --> 00:19:21.862 align:start position:25% line:-2
+記録した時間の
+45パーセントを占めています
+
+00:19:22.062 --> 00:19:26.433 align:start position:30% line:-2
+これは 私の予想を
+はるかに上回る時間です
+
+00:19:27.834 --> 00:19:30.704 align:start position:27% line:-1
+その要因を知るのは困難です
+
+00:19:30.804 --> 00:19:33.974 align:start position:30% line:-2
+この下にすべての経路が
+出ていますが
+
+00:19:34.107 --> 00:19:37.844 align:start position:27% line:-2
+スタックの深さが
+30から40はありそうです
+
+00:19:37.945 --> 00:19:41.048 align:start position:32% line:-2
+ここでどう絞り込むか
+見せましょう
+
+00:19:41.181 --> 00:19:44.952 align:start position:32% line:-2
+最初のやり方は
+呼び出し木に戻ります
+
+00:19:47.154 --> 00:19:48.789 align:start position:27% line:-1
+このポップオーバーを使って
+
+00:19:48.922 --> 00:19:50.757 align:start position:11% line:-2
+“Flattened Recursion”を
+選択します
+
+00:19:51.658 --> 00:19:52.893 align:start position:39% line:-1
+やってみます
+
+00:19:55.229 --> 00:19:58.565 align:start position:29% line:-2
+ここにメソッド呼び出しの
+繰り返しが見えます
+
+00:19:59.299 --> 00:20:01.401 align:start position:30% line:-1
+畳み込んでしまいました
+

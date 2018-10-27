@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.246 --> 00:33:00.536 A:middle
+we can do bend processing.
+
+00:33:00.536 --> 00:33:01.946 A:middle
+For those of you who are filming
+
+00:33:01.946 --> 00:33:03.066 A:middle
+here with slicing images in
+
+00:33:03.066 --> 00:33:04.096 A:middle
+Python, this is exactly what
+
+00:33:04.096 --> 00:33:04.906 A:middle
+we're going to be doing.
+
+00:33:05.276 --> 00:33:07.136 A:middle
+We'll define bands or slices --
+
+00:33:07.246 --> 00:33:08.856 A:middle
+horizontal slices in our image,
+
+00:33:09.196 --> 00:33:10.516 A:middle
+and we'll only be applying
+
+00:33:10.696 --> 00:33:11.616 A:middle
+filters on these.
+
+00:33:12.096 --> 00:33:14.136 A:middle
+Let's take a look at a code
+
+00:33:14.136 --> 00:33:14.486 A:middle
+first.
+
+00:33:14.656 --> 00:33:16.566 A:middle
+This is our add band function
+
+00:33:16.566 --> 00:33:16.896 A:middle
+here.
+
+00:33:17.546 --> 00:33:18.846 A:middle
+And we can see that the very
+
+00:33:18.846 --> 00:33:21.086 A:middle
+bottom of it, we render our
+
+00:33:21.086 --> 00:33:22.296 A:middle
+image in two composites, which
+
+00:33:22.296 --> 00:33:23.666 A:middle
+is an actual NumPy buffer.
+
+00:33:23.666 --> 00:33:24.966 A:middle
+But the right-hand side is a
+
+00:33:24.966 --> 00:33:25.616 A:middle
+CIImage.
+
+00:33:26.576 --> 00:33:27.866 A:middle
+By using slicing like this, we
+
+00:33:27.866 --> 00:33:29.806 A:middle
+forced Core Image to only do a
+
+00:33:29.806 --> 00:33:31.016 A:middle
+render in that band, not in the
+
+00:33:31.016 --> 00:33:33.816 A:middle
+entire image, thereby being much
+
+00:33:33.816 --> 00:33:35.296 A:middle
+more performant.
+
+00:33:35.296 --> 00:33:38.836 A:middle
+So, let's do this and create
+
+00:33:38.836 --> 00:33:40.316 A:middle
+five different bands into our
+
+00:33:40.316 --> 00:33:41.766 A:middle
+image and show the final
+
+00:33:41.766 --> 00:33:42.226 A:middle
+composite.
+
+00:33:44.916 --> 00:33:45.756 A:middle
+Pretty amazing.
+
+00:33:45.756 --> 00:33:48.586 A:middle
+And we've got other labels on
+
+00:33:48.586 --> 00:33:49.946 A:middle
+top as well, which correspond to
+
+00:33:49.946 --> 00:33:51.186 A:middle
+the filters being applied.
+
+00:33:52.026 --> 00:33:53.106 A:middle
+It's really that simple to work
+
+00:33:53.106 --> 00:33:53.806 A:middle
+with PyCoreImage.
+
+00:33:54.636 --> 00:33:54.936 A:middle
+All right.
+
+00:33:55.086 --> 00:33:56.146 A:middle
+And I mentioned performance
+
+00:33:56.146 --> 00:33:57.886 A:middle
+earlier, so let's take a quick
+
+00:33:57.886 --> 00:33:58.316 A:middle
+look at this.
+
+00:33:58.396 --> 00:34:00.216 A:middle
+First thing I want to show you
+

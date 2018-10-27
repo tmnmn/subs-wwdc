@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.296 --> 00:33:00.056 A:middle
+to do other things.
+
+00:33:00.596 --> 00:33:03.976 A:middle
+In terms of machine learning
+
+00:33:03.976 --> 00:33:06.586 A:middle
+algorithms, we support two
+
+00:33:06.586 --> 00:33:07.516 A:middle
+different options.
+
+00:33:07.966 --> 00:33:09.636 A:middle
+We can specify this for text
+
+00:33:09.636 --> 00:33:10.216 A:middle
+classification.
+
+00:33:10.216 --> 00:33:11.416 A:middle
+So for text classification, we
+
+00:33:11.416 --> 00:33:12.486 A:middle
+have two different choices.
+
+00:33:12.966 --> 00:33:14.326 A:middle
+One is maxEnt, which is an
+
+00:33:14.326 --> 00:33:15.506 A:middle
+abbreviation for Maximum
+
+00:33:15.506 --> 00:33:15.956 A:middle
+Entropy.
+
+00:33:16.586 --> 00:33:18.596 A:middle
+In NLP, we call maxEnt is
+
+00:33:18.596 --> 00:33:19.576 A:middle
+essentially a multinomial
+
+00:33:19.576 --> 00:33:20.666 A:middle
+logistic regression model.
+
+00:33:20.906 --> 00:33:22.326 A:middle
+We just call it Maximum Entropy
+
+00:33:22.326 --> 00:33:22.986 A:middle
+in NLP feed.
+
+00:33:23.836 --> 00:33:25.666 A:middle
+The other one is CRF, which is
+
+00:33:25.666 --> 00:33:27.046 A:middle
+an abbreviation for Conditional
+
+00:33:27.046 --> 00:33:27.546 A:middle
+Random Feed.
+
+00:33:28.336 --> 00:33:29.606 A:middle
+The choice of these two
+
+00:33:29.606 --> 00:33:30.916 A:middle
+algorithms really depends upon
+
+00:33:30.916 --> 00:33:31.496 A:middle
+your task.
+
+00:33:31.946 --> 00:33:34.026 A:middle
+So we encourage you to try both
+
+00:33:34.026 --> 00:33:35.426 A:middle
+these options, build the models.
+
+00:33:35.426 --> 00:33:38.556 A:middle
+Now in terms of word tagging,
+
+00:33:38.966 --> 00:33:40.316 A:middle
+that is one default option,
+
+00:33:40.346 --> 00:33:41.386 A:middle
+which is a conditional random
+
+00:33:41.386 --> 00:33:41.626 A:middle
+feed.
+
+00:33:41.996 --> 00:33:43.496 A:middle
+When you instantiate an ML word
+
+00:33:43.566 --> 00:33:46.146 A:middle
+tagger, specify data to it, the
+
+00:33:46.146 --> 00:33:48.176 A:middle
+default model that you get is a
+
+00:33:48.176 --> 00:33:49.096 A:middle
+conditional random feed.
+
+00:33:49.956 --> 00:33:51.686 A:middle
+Now as I mentioned, the choice
+
+00:33:51.686 --> 00:33:52.736 A:middle
+of these algorithms really
+
+00:33:52.736 --> 00:33:54.626 A:middle
+depends on your task, but what
+
+00:33:54.626 --> 00:33:56.626 A:middle
+I'd like to emphasize is sort of
+
+00:33:56.626 --> 00:33:58.196 A:middle
+draw [inaudible] between your
+
+00:33:58.196 --> 00:33:59.536 A:middle
+conventional development
+
+00:33:59.536 --> 00:33:59.996 A:middle
+process.
+

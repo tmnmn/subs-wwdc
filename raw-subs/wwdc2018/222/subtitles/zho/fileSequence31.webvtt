@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:56.790 --> 00:31:00.160 align:middle line:-2
+我们就可以声明
+它是支持安全编码的了
+
+00:31:00.727 --> 00:31:03.897 align:middle line:-2
+最后遵从
+NSSecureCoding协议
+
+00:31:03.964 --> 00:31:06.433 align:middle line:-1
+来表明我们想要运行时间
+
+00:31:06.500 --> 00:31:08.502 align:middle line:-1
+它真的支持安全编码
+
+00:31:10.504 --> 00:31:12.873 align:middle line:-1
+然后 恭喜你
+
+00:31:12.940 --> 00:31:14.942 align:middle line:-2
+我们获得了
+NSSecureCoding徽章
+
+00:31:15.008 --> 00:31:16.543 align:middle line:-1
+实际的徽章是分开卖的
+
+00:31:19.446 --> 00:31:22.749 align:middle line:-2
+我们觉得 获得你自己的
+NSSecureCoding徽章
+
+00:31:22.816 --> 00:31:23.951 align:middle line:-2
+并使用它们
+对你而言是很重要的
+
+00:31:24.017 --> 00:31:26.620 align:middle line:-2
+今年我们添加了新的API
+和NSKeyedUnarchiver
+
+00:31:26.687 --> 00:31:29.656 align:middle line:-2
+保证了NSSecureCoding
+随时可以完成
+
+00:31:30.157 --> 00:31:31.158 align:middle line:-1
+（默认安全的API）
+
+00:31:31.225 --> 00:31:33.493 align:middle line:-1
+这个新的初始化器和便利方法
+
+00:31:33.560 --> 00:31:35.295 align:middle line:-1
+会默认开启安全编码
+
+00:31:35.562 --> 00:31:37.731 align:middle line:-1
+并且将默认解码失败政策设定为
+
+00:31:37.798 --> 00:31:39.199 align:middle line:-1
+在返回时设定错误
+
+00:31:39.266 --> 00:31:41.902 align:middle line:-1
+所以除非你自己更改了解码失败政策
+
+00:31:41.969 --> 00:31:43.937 align:middle line:-1
+你不需要担心Swift中的异常
+
+00:31:45.639 --> 00:31:48.609 align:middle line:-1
+而旧的初始化器和便利方法
+
+00:31:48.675 --> 00:31:50.878 align:middle line:-1
+在新的版本中会设为过期了
+
+00:31:50.944 --> 00:31:52.446 align:middle line:-1
+我们真的想让你使用它们
+
+00:31:53.780 --> 00:31:57.251 align:middle line:-2
+类似地 我们引入了
+与NSKeyedUnarchiver相同的API
+
+00:31:57.484 --> 00:32:00.387 align:middle line:-2
+让你可以更容易地在归档时
+开启SecureCoding
+

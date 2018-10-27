@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.616 --> 00:08:00.666 A:middle
+And what's occurring to me now
+
+00:08:00.666 --> 00:08:02.936 A:middle
+is that this is my fault, when I
+
+00:08:02.936 --> 00:08:05.026 A:middle
+implemented this class I
+
+00:08:05.026 --> 00:08:06.246 A:middle
+implemented another delegate
+
+00:08:06.246 --> 00:08:08.086 A:middle
+method called numberOfSections.
+
+00:08:08.826 --> 00:08:10.696 A:middle
+And numberOfSections is saying
+
+00:08:10.696 --> 00:08:12.326 A:middle
+how many headers it should look
+
+00:08:12.326 --> 00:08:14.036 A:middle
+for and what I'm returning here
+
+00:08:14.036 --> 00:08:15.796 A:middle
+is the number of ingredients and
+
+00:08:15.796 --> 00:08:17.246 A:middle
+the ingredients count is eight.
+
+00:08:18.436 --> 00:08:19.576 A:middle
+But believe it or not I have a
+
+00:08:19.576 --> 00:08:21.216 A:middle
+clever way to solve this.
+
+00:08:21.216 --> 00:08:22.356 A:middle
+I know what I want to be
+
+00:08:22.356 --> 00:08:24.086 A:middle
+returning is the number of cases
+
+00:08:24.086 --> 00:08:26.186 A:middle
+in this recipe section enum and
+
+00:08:26.186 --> 00:08:28.396 A:middle
+I know that in Swift 4.2 some
+
+00:08:28.396 --> 00:08:30.736 A:middle
+new functionality was added by
+
+00:08:30.736 --> 00:08:32.035 A:middle
+the Swift Open Source Community,
+
+00:08:32.035 --> 00:08:33.885 A:middle
+thank you very much, a protocol
+
+00:08:33.885 --> 00:08:35.176 A:middle
+called CaseIterable.
+
+00:08:35.726 --> 00:08:37.236 A:middle
+If I have my recipe section
+
+00:08:37.236 --> 00:08:40.596 A:middle
+conformed to CaseIterable I can
+
+00:08:40.596 --> 00:08:41.655 A:middle
+reimplement this number of
+
+00:08:41.655 --> 00:08:43.956 A:middle
+sections to return the count of
+
+00:08:43.956 --> 00:08:46.266 A:middle
+all the cases in that recipe
+
+00:08:46.266 --> 00:08:47.186 A:middle
+section enum.
+
+00:08:47.586 --> 00:08:49.876 A:middle
+And that way what I'll be
+
+00:08:49.876 --> 00:08:51.876 A:middle
+returning is two, I'll be
+
+00:08:51.876 --> 00:08:53.376 A:middle
+returning the number of accurate
+
+00:08:53.376 --> 00:08:53.956 A:middle
+sections.
+
+00:08:53.956 --> 00:08:55.626 A:middle
+This is going to work out just
+
+00:08:56.756 --> 00:08:56.886 A:middle
+great.
+
+00:08:57.056 --> 00:08:59.226 A:middle
+So now if I check out this
+
+00:08:59.226 --> 00:09:00.986 A:middle
+chocolate chip cookies recipe no
+

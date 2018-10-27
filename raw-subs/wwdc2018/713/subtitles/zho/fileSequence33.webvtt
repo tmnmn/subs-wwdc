@@ -1,0 +1,73 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:56.543 --> 00:33:00.113 align:middle line:0
+这为你的app节省了大量的空间
+以用来做一些其他事情
+
+00:33:02.950 --> 00:33:04.885 align:middle line:-1
+就机器学习算法而言
+
+00:33:05.752 --> 00:33:07.521 align:middle line:-1
+我们支持两种不同的选项
+
+00:33:08.455 --> 00:33:10.090 align:middle line:-1
+我们可为文本分类指定这些选项
+
+00:33:10.157 --> 00:33:12.559 align:middle line:-2
+对于文本分类
+我们有两个不同的选择
+
+00:33:12.960 --> 00:33:16.063 align:middle line:-2
+一个是maxEnt
+它是Maximum Entropy的缩写
+
+00:33:16.563 --> 00:33:20.701 align:middle line:-2
+在NLP中 我们认为maxEnt本质上
+是一个多项式逻辑回归模型
+
+00:33:20.934 --> 00:33:23.036 align:middle line:-2
+我们在NLP领域中直接将其称为
+Maximum Entropy
+
+00:33:23.871 --> 00:33:25.305 align:middle line:-1
+另一个是CRF
+
+00:33:25.372 --> 00:33:27.674 align:middle line:-1
+这是Conditional Random Field的缩写
+
+00:33:28.642 --> 00:33:31.512 align:middle line:-2
+这两种算法的选择实际上
+取决于你的任务类型
+
+00:33:31.912 --> 00:33:35.382 align:middle line:-2
+因此我们鼓励你尝试
+分别用这两个选项来建立模型
+
+00:33:37.184 --> 00:33:38.585 align:middle line:-1
+就单词标记而言
+
+00:33:38.919 --> 00:33:41.688 align:middle line:-1
+Conditional Random Field是默认选项
+
+00:33:41.955 --> 00:33:44.224 align:middle line:-2
+当你实例化一个MLWordTagger
+并为其指定数据时
+
+00:33:44.291 --> 00:33:49.162 align:middle line:-2
+你将使用的默认模型就是
+Conditional Random Field
+
+00:33:50.531 --> 00:33:52.399 align:middle line:-2
+正如我所提到的
+如何选择这些算法
+
+00:33:52.466 --> 00:33:53.734 align:middle line:-1
+实际上取决于你的任务
+
+00:33:54.168 --> 00:33:55.536 align:middle line:-1
+但我想强调一下
+
+00:33:55.602 --> 00:34:00.073 align:middle line:-1
+这与你的传统开发过程有点类似
+

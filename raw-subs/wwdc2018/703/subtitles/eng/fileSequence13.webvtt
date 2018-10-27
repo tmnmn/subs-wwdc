@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.236 --> 00:13:01.696 A:middle
+So we can delete the old model
+
+00:13:01.696 --> 00:13:02.686 A:middle
+that we were using before.
+
+00:13:02.686 --> 00:13:04.786 A:middle
+And in the view controller, we
+
+00:13:04.786 --> 00:13:06.286 A:middle
+can initialize this new one,
+
+00:13:06.986 --> 00:13:07.806 A:middle
+ImageClassifier.
+
+00:13:10.536 --> 00:13:11.676 A:middle
+We can then re-run the app,
+
+00:13:13.146 --> 00:13:17.866 A:middle
+bring up the simulator, and see
+
+00:13:17.866 --> 00:13:18.946 A:middle
+how it does on some of those
+
+00:13:19.026 --> 00:13:19.356 A:middle
+fruits.
+
+00:13:24.026 --> 00:13:25.436 A:middle
+On the raspberry, it can now
+
+00:13:25.436 --> 00:13:27.366 A:middle
+correctly predict it since we
+
+00:13:27.366 --> 00:13:28.806 A:middle
+trained the model to recognize
+
+00:13:29.276 --> 00:13:29.826 A:middle
+raspberries.
+
+00:13:30.686 --> 00:13:31.736 A:middle
+We can even see if it can
+
+00:13:31.736 --> 00:13:32.986 A:middle
+distinguish from strawberries
+
+00:13:33.396 --> 00:13:34.126 A:middle
+and it can now.
+
+00:13:37.956 --> 00:13:39.236 A:middle
+But there are other workflows
+
+00:13:39.286 --> 00:13:39.826 A:middle
+you can use.
+
+00:13:40.636 --> 00:13:41.516 A:middle
+Perhaps you want to do this
+
+00:13:41.606 --> 00:13:43.356 A:middle
+programmatically or perhaps you
+
+00:13:43.356 --> 00:13:44.056 A:middle
+want to automate it.
+
+00:13:45.116 --> 00:13:46.486 A:middle
+We can also walk through how to
+
+00:13:46.486 --> 00:13:48.096 A:middle
+use Create ML to do so.
+
+00:13:48.866 --> 00:13:54.246 A:middle
+So now we can switch to another
+
+00:13:54.296 --> 00:13:57.316 A:middle
+playground and import Create ML.
+
+00:13:57.866 --> 00:13:59.566 A:middle
+Since we'll be using URLs, we
+
+00:13:59.566 --> 00:14:01.386 A:middle
+also can import foundation.
+

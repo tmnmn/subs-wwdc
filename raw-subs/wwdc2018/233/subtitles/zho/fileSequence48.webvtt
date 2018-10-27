@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.613 --> 00:48:02.149 align:middle line:-1
+我们仔细观察可以看到
+
+00:48:02.216 --> 00:48:06.286 align:middle line:-2
+cropEnabled ivar
+目前设置为NO
+
+00:48:07.721 --> 00:48:10.624 align:middle line:-1
+因此我们知道从哪开始研究这个漏洞
+
+00:48:11.825 --> 00:48:12.960 align:middle line:-1
+这很棒
+
+00:48:13.026 --> 00:48:15.762 align:middle line:-2
+使用dump
+和ivarDescription
+
+00:48:15.829 --> 00:48:18.832 align:middle line:-1
+是诊断app问题的好方法
+
+00:48:20.200 --> 00:48:24.738 align:middle line:-2
+我们为你准备的另一个很棒的
+调试技巧和窍门是断点
+
+00:48:25.606 --> 00:48:29.743 align:middle line:-2
+断点可以让你在任意执行状态下
+暂停程序
+
+00:48:30.244 --> 00:48:31.578 align:middle line:-1
+并运行命令
+
+00:48:32.446 --> 00:48:36.683 align:middle line:-2
+并且通过使用
+LLDB命令行或Xcode UI
+
+00:48:37.050 --> 00:48:40.220 align:middle line:-2
+你甚至可以在运行这些断点之前
+添加条件
+
+00:48:40.721 --> 00:48:43.590 align:middle line:-2
+并且设置每次命中断点时
+所要运行的命令
+
+00:48:44.558 --> 00:48:47.694 align:middle line:-1
+断点是调试工作流程的重要组成部分
+
+00:48:48.028 --> 00:48:52.533 align:middle line:-2
+你可以在Xcode中设置的断点中
+使用表达式命令
+
+00:48:52.599 --> 00:48:54.568 align:middle line:-2
+dump
+和ivarDescription
+
+00:48:54.902 --> 00:48:57.504 align:middle line:-1
+我真的鼓励你下次调试app问题时
+
+00:48:57.571 --> 00:48:59.940 align:middle line:-1
+能够使用断点
+

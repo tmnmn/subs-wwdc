@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.160 --> 00:11:03.797 align:start position:16% line:-1
+Utilitiesターゲットのビルドを
+
+00:11:03.897 --> 00:11:08.202 align:start position:32% line:-2
+Code Genの
+直後にできるからです
+
+00:11:11.271 --> 00:11:12.973 align:start position:29% line:-1
+これまで Xcodeでは
+
+00:11:13.507 --> 00:11:16.710 align:start position:29% line:-2
+他に依存するターゲットを
+ビルドする時―
+
+00:11:17.411 --> 00:11:21.482 align:start position:32% line:-2
+依存先のビルドを
+待つ必要がありました
+
+00:11:22.082 --> 00:11:23.984 align:start position:27% line:-1
+Xcode 10の新機能で
+
+00:11:24.084 --> 00:11:28.422 align:start position:29% line:-2
+ビルドの一部を
+並列化することが可能です
+
+00:11:30.057 --> 00:11:33.794 align:start position:34% line:-2
+コンパイルの開始が
+早まります
+
+00:11:34.428 --> 00:11:38.131 align:start position:34% line:-2
+依存関係を含む
+ビルドが完了すれば
+
+00:11:38.232 --> 00:11:40.934 align:start position:30% line:-1
+すぐ始められるからです
+
+00:11:41.635 --> 00:11:44.071 align:start position:27% line:-1
+リンクなども並列化できます
+
+00:11:46.173 --> 00:11:49.910 align:start position:29% line:-2
+Run Scriptは
+ビルドフェーズの１つです
+
+00:11:50.010 --> 00:11:54.148 align:start position:32% line:-2
+このフェーズで
+並列化を利用するには
+
+00:11:54.248 --> 00:11:59.419 align:start position:29% line:-2
+ターゲットが順に
+完了するまで待たされます
+

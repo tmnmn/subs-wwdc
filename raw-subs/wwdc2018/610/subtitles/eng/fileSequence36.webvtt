@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.196 --> 00:36:00.186 A:middle
+automatic device, nearby device
+
+00:36:00.186 --> 00:36:01.856 A:middle
+discovery, and allows efficient
+
+00:36:01.856 --> 00:36:04.356 A:middle
+communication of data between
+
+00:36:04.356 --> 00:36:04.876 A:middle
+devices.
+
+00:36:05.626 --> 00:36:06.996 A:middle
+We also, have an example of how
+
+00:36:06.996 --> 00:36:09.396 A:middle
+to use that in ARKit called
+
+00:36:09.396 --> 00:36:11.036 A:middle
+Creating a Multiuser AR
+
+00:36:11.036 --> 00:36:12.126 A:middle
+Experience that you can check
+
+00:36:12.126 --> 00:36:13.516 A:middle
+out on our developer website.
+
+00:36:14.076 --> 00:36:16.836 A:middle
+On the receiving end of the
+
+00:36:16.836 --> 00:36:18.086 A:middle
+device, once you've got the
+
+00:36:18.086 --> 00:36:20.096 A:middle
+World map let's see how you can
+
+00:36:20.096 --> 00:36:21.046 A:middle
+set up the World Tracking
+
+00:36:21.046 --> 00:36:22.126 A:middle
+configuration to use it.
+
+00:36:22.426 --> 00:36:22.986 A:middle
+Very simple.
+
+00:36:22.986 --> 00:36:24.916 A:middle
+You just set the initial World
+
+00:36:24.916 --> 00:36:27.366 A:middle
+map property to that World map.
+
+00:36:28.266 --> 00:36:29.986 A:middle
+When you run the session, the
+
+00:36:29.986 --> 00:36:31.426 A:middle
+system will try to find that
+
+00:36:31.526 --> 00:36:32.376 A:middle
+previous World map.
+
+00:36:33.636 --> 00:36:35.336 A:middle
+But it may take some time, even
+
+00:36:35.336 --> 00:36:36.366 A:middle
+because the user may not be
+
+00:36:36.366 --> 00:36:37.546 A:middle
+pointing at the same scene as
+
+00:36:37.546 --> 00:36:37.906 A:middle
+before.
+
+00:36:38.756 --> 00:36:39.656 A:middle
+So, how do we know when
+
+00:36:39.656 --> 00:36:40.606 A:middle
+localization happen?
+
+00:36:41.686 --> 00:36:43.776 A:middle
+That information is available in
+
+00:36:43.776 --> 00:36:44.666 A:middle
+the tracking state.
+
+00:36:44.666 --> 00:36:45.896 A:middle
+So, as soon as you start the
+
+00:36:45.896 --> 00:36:47.596 A:middle
+session with the initial World
+
+00:36:47.596 --> 00:36:49.256 A:middle
+map, the tracking state will be
+
+00:36:49.256 --> 00:36:50.326 A:middle
+limited with reason
+
+00:36:50.536 --> 00:36:51.366 A:middle
+Relocalizing.
+
+00:36:51.906 --> 00:36:54.226 A:middle
+Note that you will still get the
+
+00:36:54.226 --> 00:36:55.816 A:middle
+tracking data available here,
+
+00:36:56.176 --> 00:36:58.726 A:middle
+but the world origin will be the
+
+00:36:58.726 --> 00:37:00.376 A:middle
+first camera, just like a new
+

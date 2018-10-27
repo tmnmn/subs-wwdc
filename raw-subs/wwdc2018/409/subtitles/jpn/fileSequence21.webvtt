@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:53.954 --> 00:21:00.394 align:start position:21% line:-2
+自動解放プールの管理を
+少しでも怠るとより難しくなります
+
+00:21:00.661 --> 00:21:05.899 align:start position:21% line:-2
+こちらの関数もoutパラメータの
+エラーを起こします
+
+00:21:06.133 --> 00:21:09.770 align:start position:2% line:-2
+enumerateObjectsUsingBlockを
+呼び出します
+
+00:21:09.870 --> 00:21:12.639 align:start position:29% line:-1
+基盤となる定番のAPIで
+
+00:21:12.739 --> 00:21:15.976 align:start position:23% line:-1
+各要素にブロックを呼び出します
+
+00:21:16.410 --> 00:21:19.346 align:start position:2% line:-2
+しかし実際
+enumerateObjectsUsingBlockは
+
+00:21:19.446 --> 00:21:23.817 align:start position:29% line:-2
+戻り値の自動解放プールに
+呼び出します
+
+00:21:24.017 --> 00:21:26.220 align:start position:34% line:-1
+同じ問題が生じます
+
+00:21:26.320 --> 00:21:32.292 align:start position:23% line:-2
+エラー変数を作り ブロック内の
+値をoutパラメータに書くと
+
+00:21:32.526 --> 00:21:38.465 align:start position:0% line:-2
+enumerateObjectsUsingBlockから
+制御が外れる前に解放されます
+
+00:21:39.533 --> 00:21:42.669 align:start position:27% line:-1
+呼び出し元が値を読み込む時
+
+00:21:42.769 --> 00:21:45.672 align:start position:9% line:-1
+use-after-freeでクラッシュします
+
+00:21:47.941 --> 00:21:51.245 align:start position:21% line:-1
+先ほど紹介したコンパイラの警告は
+
+00:21:51.345 --> 00:21:56.717 align:start position:25% line:-2
+自動解放の明示が無い
+outパラメータに対応します
+
+00:21:56.984 --> 00:22:01.555 align:start position:29% line:-2
+そしてパラメータの
+自動解放の明示を促します
+

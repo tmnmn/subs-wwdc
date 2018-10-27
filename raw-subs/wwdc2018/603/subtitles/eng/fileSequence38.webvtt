@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:00.586 --> 00:38:02.156 A:middle
+And although we want models to
+
+00:38:02.156 --> 00:38:03.986 A:middle
+look great, we also need to
+
+00:38:03.986 --> 00:38:05.866 A:middle
+balance texture size and quality
+
+00:38:05.866 --> 00:38:06.846 A:middle
+against file size.
+
+00:38:07.466 --> 00:38:08.496 A:middle
+If a model is being downloaded
+
+00:38:08.496 --> 00:38:10.056 A:middle
+from a website, we want it to be
+
+00:38:10.056 --> 00:38:11.646 A:middle
+a good size for downloading and
+
+00:38:11.646 --> 00:38:13.376 A:middle
+also for sharing via messages
+
+00:38:13.376 --> 00:38:15.006 A:middle
+and mail and other means.
+
+00:38:17.156 --> 00:38:18.796 A:middle
+So, with all of that in mind,
+
+00:38:19.516 --> 00:38:20.416 A:middle
+how do we make these things?
+
+00:38:21.416 --> 00:38:23.276 A:middle
+Well for this, we have a usdz
+
+00:38:23.276 --> 00:38:24.026 A:middle
+Converter.
+
+00:38:25.286 --> 00:38:26.806 A:middle
+This is a command line tool that
+
+00:38:27.076 --> 00:38:28.976 A:middle
+will convert existing 3D models
+
+00:38:29.136 --> 00:38:30.286 A:middle
+to usdz format.
+
+00:38:31.486 --> 00:38:34.516 A:middle
+It ships inside Xcode 10, and in
+
+00:38:34.516 --> 00:38:36.556 A:middle
+addition to creating usdz files,
+
+00:38:37.206 --> 00:38:38.726 A:middle
+you could also use it to map PBR
+
+00:38:38.726 --> 00:38:40.646 A:middle
+textures to the meshes and
+
+00:38:40.646 --> 00:38:42.176 A:middle
+submeshes inside those existing
+
+00:38:42.176 --> 00:38:42.476 A:middle
+models.
+
+00:38:43.156 --> 00:38:47.226 A:middle
+It's X3 input format, OBJ files,
+
+00:38:47.446 --> 00:38:49.706 A:middle
+Alembic files, and existing USD
+
+00:38:49.706 --> 00:38:52.736 A:middle
+files, either USDA or USDC, the
+
+00:38:52.736 --> 00:38:54.586 A:middle
+ASCII and binary versions of
+
+00:38:55.106 --> 00:38:55.206 A:middle
+USD.
+
+00:38:56.496 --> 00:38:58.456 A:middle
+Before we create one, let's take
+
+00:38:58.456 --> 00:38:59.396 A:middle
+a look at what it is we're going
+
+00:38:59.396 --> 00:38:59.736 A:middle
+to make.
+
+00:38:59.876 --> 00:39:01.586 A:middle
+Let's look inside a usdz file.
+

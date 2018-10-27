@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:00.296 --> 00:34:02.296 A:middle
+[inaudible].
+
+00:34:02.716 --> 00:34:03.876 A:middle
+So what is launch?
+
+00:34:04.046 --> 00:34:04.986 A:middle
+There are three kinds of
+
+00:34:04.986 --> 00:34:05.386 A:middle
+launches.
+
+00:34:06.696 --> 00:34:08.176 A:middle
+The first and more expensive one
+
+00:34:08.176 --> 00:34:09.476 A:middle
+is the find referred as called,
+
+00:34:09.476 --> 00:34:11.406 A:middle
+and it depends the first time
+
+00:34:11.406 --> 00:34:12.335 A:middle
+you are going to relaunch your
+
+00:34:12.335 --> 00:34:13.186 A:middle
+app after it reboots.
+
+00:34:14.346 --> 00:34:15.606 A:middle
+So basically, nothing has been
+
+00:34:15.606 --> 00:34:17.446 A:middle
+cached yet, and it might require
+
+00:34:17.446 --> 00:34:19.096 A:middle
+some bug run processes or some
+
+00:34:19.096 --> 00:34:19.946 A:middle
+libraries to load.
+
+00:34:21.136 --> 00:34:23.116 A:middle
+Now, it also happens when the
+
+00:34:23.206 --> 00:34:24.916 A:middle
+system goes under memory
+
+00:34:24.916 --> 00:34:27.136 A:middle
+pressure and starts reclaiming
+
+00:34:27.735 --> 00:34:29.686 A:middle
+some memory.
+
+00:34:30.045 --> 00:34:31.485 A:middle
+Now, if you kill an app, it
+
+00:34:31.485 --> 00:34:32.906 A:middle
+might not trigger a code launch,
+
+00:34:32.906 --> 00:34:34.606 A:middle
+because the system decides when
+
+00:34:34.606 --> 00:34:38.766 A:middle
+the resources should be paged
+
+00:34:38.766 --> 00:34:38.976 A:middle
+out.
+
+00:34:39.065 --> 00:34:40.466 A:middle
+And when you kill an app, and
+
+00:34:40.466 --> 00:34:41.646 A:middle
+you relaunch it a few second
+
+00:34:41.726 --> 00:34:43.835 A:middle
+later, it's almost guaranteed
+
+00:34:43.835 --> 00:34:45.565 A:middle
+that you'll hit a warm launch.
+
+00:34:46.036 --> 00:34:47.706 A:middle
+And we call it warm, because the
+
+00:34:47.706 --> 00:34:50.386 A:middle
+resources or the dependents are
+
+00:34:50.386 --> 00:34:52.116 A:middle
+still in the cache, so it's
+
+00:34:52.116 --> 00:34:52.996 A:middle
+faster to launch.
+
+00:34:54.525 --> 00:34:56.636 A:middle
+Now, the last type is-- we call
+
+00:34:56.636 --> 00:34:59.026 A:middle
+it hot, and it's basically a
+
+00:34:59.026 --> 00:35:00.926 A:middle
+resume, because it's when your
+

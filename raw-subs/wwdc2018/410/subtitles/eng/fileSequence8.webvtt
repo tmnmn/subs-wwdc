@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.876 --> 00:08:01.496 A:middle
+out now so we can know what
+
+00:08:01.496 --> 00:08:03.026 A:middle
+we're looking at.
+
+00:08:03.026 --> 00:08:04.336 A:middle
+Okay, an example of the schema
+
+00:08:04.336 --> 00:08:05.596 A:middle
+here is tick.
+
+00:08:06.136 --> 00:08:07.106 A:middle
+This is one of schemas that
+
+00:08:07.106 --> 00:08:08.926 A:middle
+comes inside of Instruments and
+
+00:08:08.926 --> 00:08:10.286 A:middle
+it's used to hold a table of
+
+00:08:10.286 --> 00:08:11.666 A:middle
+synthetic clock ticks that we'll
+
+00:08:11.666 --> 00:08:13.676 A:middle
+use later for statistical
+
+00:08:13.676 --> 00:08:15.146 A:middle
+computations in our modelers.
+
+00:08:15.916 --> 00:08:17.076 A:middle
+Now it is very simple.
+
+00:08:17.076 --> 00:08:18.456 A:middle
+It has one column that's defined
+
+00:08:18.456 --> 00:08:19.956 A:middle
+and that's time and it's using
+
+00:08:19.956 --> 00:08:20.626 A:middle
+the engineering type
+
+00:08:20.626 --> 00:08:21.356 A:middle
+sample-time.
+
+00:08:22.196 --> 00:08:24.046 A:middle
+And it also defines an optional
+
+00:08:24.276 --> 00:08:25.606 A:middle
+attribute that can be attached
+
+00:08:25.606 --> 00:08:26.796 A:middle
+to that table instance called
+
+00:08:26.796 --> 00:08:27.346 A:middle
+frequency.
+
+00:08:27.856 --> 00:08:30.066 A:middle
+So if you create a table with a
+
+00:08:30.066 --> 00:08:32.096 A:middle
+frequency equals 10 attribute
+
+00:08:32.096 --> 00:08:34.456 A:middle
+here for our tick schema, then
+
+00:08:34.775 --> 00:08:36.576 A:middle
+the provider of that data knows
+
+00:08:36.576 --> 00:08:38.046 A:middle
+that it needs to fill that table
+
+00:08:38.346 --> 00:08:40.326 A:middle
+with ten timestamps per second,
+
+00:08:40.616 --> 00:08:40.806 A:middle
+right.
+
+00:08:40.806 --> 00:08:41.826 A:middle
+So that's a way to communicate
+
+00:08:41.826 --> 00:08:42.806 A:middle
+what you want filled into the
+
+00:08:42.885 --> 00:08:43.176 A:middle
+table.
+
+00:08:44.586 --> 00:08:45.916 A:middle
+Now with that, I think we have
+
+00:08:46.356 --> 00:08:47.766 A:middle
+enough information to help us
+
+00:08:47.766 --> 00:08:48.366 A:middle
+get started.
+
+00:08:48.856 --> 00:08:50.076 A:middle
+So we're going to show you how
+
+00:08:50.076 --> 00:08:52.256 A:middle
+to create your own Instruments
+
+00:08:52.296 --> 00:08:54.046 A:middle
+package project in Xcode and
+
+00:08:54.046 --> 00:08:54.906 A:middle
+we're going to show you how to
+
+00:08:54.906 --> 00:08:55.876 A:middle
+create your very first
+
+00:08:55.876 --> 00:08:57.316 A:middle
+instrument that graphs these
+
+00:08:57.406 --> 00:08:59.196 A:middle
+ticks and shows these ticks in
+
+00:08:59.196 --> 00:08:59.886 A:middle
+the detail view.
+

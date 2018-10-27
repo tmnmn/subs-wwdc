@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.516 --> 00:11:02.096 A:middle
+that we have in the number of
+
+00:11:02.096 --> 00:11:03.646 A:middle
+preview items in controller
+
+00:11:03.646 --> 00:11:04.086 A:middle
+method.
+
+00:11:04.586 --> 00:11:07.626 A:middle
+And then each URL respectively
+
+00:11:07.796 --> 00:11:10.006 A:middle
+referenced by the index in the
+
+00:11:10.006 --> 00:11:12.216 A:middle
+previewController controller
+
+00:11:12.216 --> 00:11:13.896 A:middle
+previewItemAt index method.
+
+00:11:19.046 --> 00:11:20.866 A:middle
+Okay we've set up our preview
+
+00:11:20.866 --> 00:11:22.426 A:middle
+controller and it knows what
+
+00:11:22.426 --> 00:11:24.336 A:middle
+files to preview, so we are
+
+00:11:24.336 --> 00:11:25.656 A:middle
+ready to actually present the
+
+00:11:25.656 --> 00:11:26.376 A:middle
+view controller.
+
+00:11:27.386 --> 00:11:28.616 A:middle
+There are two ways for doing
+
+00:11:28.616 --> 00:11:28.836 A:middle
+that.
+
+00:11:29.586 --> 00:11:30.766 A:middle
+You can either present the
+
+00:11:30.766 --> 00:11:32.496 A:middle
+preview controller modally on
+
+00:11:32.496 --> 00:11:34.866 A:middle
+top of the current context or
+
+00:11:34.866 --> 00:11:36.456 A:middle
+you push the preview controller
+
+00:11:36.916 --> 00:11:38.626 A:middle
+into a UINavigationController.
+
+00:11:39.726 --> 00:11:41.746 A:middle
+Both ways work great and you
+
+00:11:41.746 --> 00:11:43.646 A:middle
+need to decide what fits best in
+
+00:11:43.646 --> 00:11:44.586 A:middle
+your situation.
+
+00:11:44.586 --> 00:11:47.016 A:middle
+To present it modally you do
+
+00:11:47.016 --> 00:11:48.066 A:middle
+what you do with any view
+
+00:11:48.066 --> 00:11:49.716 A:middle
+controller you call present.
+
+00:11:51.666 --> 00:11:53.296 A:middle
+Here's an example of what a
+
+00:11:53.296 --> 00:11:54.716 A:middle
+modal presentation can look
+
+00:11:54.716 --> 00:11:54.996 A:middle
+like.
+
+00:11:57.176 --> 00:11:58.046 A:middle
+If you have a
+
+00:11:58.046 --> 00:11:59.876 A:middle
+UINavigationController and
+
+00:11:59.876 --> 00:12:01.396 A:middle
+prefer to push the preview
+

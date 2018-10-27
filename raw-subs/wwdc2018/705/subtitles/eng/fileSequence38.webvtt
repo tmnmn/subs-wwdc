@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.066 --> 00:38:00.306 A:middle
+voluntarily chosen to
+
+00:38:00.336 --> 00:38:02.836 A:middle
+unsubscribe and those that have
+
+00:38:02.896 --> 00:38:04.506 A:middle
+involuntarily been unsubscribed
+
+00:38:04.506 --> 00:38:05.436 A:middle
+due to a payment issue or
+
+00:38:05.436 --> 00:38:06.046 A:middle
+billing issue.
+
+00:38:07.056 --> 00:38:09.196 A:middle
+So for that we have the field
+
+00:38:09.226 --> 00:38:11.256 A:middle
+expiration intent in the JSON
+
+00:38:11.256 --> 00:38:11.646 A:middle
+response.
+
+00:38:12.696 --> 00:38:14.436 A:middle
+Now to be clear, this will only
+
+00:38:14.436 --> 00:38:16.266 A:middle
+show up after the subscription
+
+00:38:16.426 --> 00:38:16.926 A:middle
+has lapsed.
+
+00:38:18.016 --> 00:38:19.236 A:middle
+And we really want to focus on
+
+00:38:19.286 --> 00:38:22.146 A:middle
+two key values, the first being
+
+00:38:22.146 --> 00:38:23.826 A:middle
+value one which signifies
+
+00:38:23.866 --> 00:38:26.296 A:middle
+voluntary churn, the second
+
+00:38:27.556 --> 00:38:28.996 A:middle
+signifying involuntary churn
+
+00:38:29.886 --> 00:38:32.896 A:middle
+with a value of two.
+
+00:38:33.146 --> 00:38:34.486 A:middle
+If we flip back to our example
+
+00:38:34.486 --> 00:38:36.106 A:middle
+subscription where our customer
+
+00:38:36.106 --> 00:38:37.906 A:middle
+canceled via AppleCare you can
+
+00:38:37.956 --> 00:38:38.816 A:middle
+see that we've added the
+
+00:38:38.846 --> 00:38:40.496 A:middle
+expiration intent field to the
+
+00:38:40.496 --> 00:38:42.156 A:middle
+receipt response with a value of
+
+00:38:42.156 --> 00:38:42.416 A:middle
+one.
+
+00:38:42.416 --> 00:38:47.496 A:middle
+So what do you do as a developer
+
+00:38:47.496 --> 00:38:48.756 A:middle
+when you see your subscribers in
+
+00:38:48.756 --> 00:38:50.006 A:middle
+this state after they've already
+
+00:38:50.006 --> 00:38:51.686 A:middle
+churned and you've segmented
+
+00:38:51.686 --> 00:38:52.486 A:middle
+between those that have
+
+00:38:52.486 --> 00:38:54.266 A:middle
+voluntarily and involuntarily
+
+00:38:54.266 --> 00:38:54.566 A:middle
+churned?
+
+00:38:55.066 --> 00:38:58.536 A:middle
+Well for voluntary you may want
+
+00:38:58.536 --> 00:39:00.256 A:middle
+to survey those subscribers who
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.816 --> 00:33:00.906 A:middle
+copies in import mode that
+
+00:33:00.906 --> 00:33:03.236 A:middle
+Thomas has described, or if you
+
+00:33:03.296 --> 00:33:04.506 A:middle
+want to edit your document
+
+00:33:04.506 --> 00:33:04.956 A:middle
+directly.
+
+00:33:05.376 --> 00:33:06.816 A:middle
+For this you'd need to invoke
+
+00:33:06.816 --> 00:33:08.076 A:middle
+the Picker in Open Mode.
+
+00:33:09.536 --> 00:33:11.096 A:middle
+In this example, we're in the
+
+00:33:11.096 --> 00:33:13.476 A:middle
+Particles app, and we've created
+
+00:33:13.476 --> 00:33:15.476 A:middle
+and presented a Picker in Open
+
+00:33:15.476 --> 00:33:15.726 A:middle
+Mode.
+
+00:33:16.366 --> 00:33:17.616 A:middle
+We're going to pick an image
+
+00:33:17.616 --> 00:33:19.146 A:middle
+file to change our particle
+
+00:33:19.146 --> 00:33:19.936 A:middle
+system's image.
+
+00:33:21.436 --> 00:33:23.936 A:middle
+Once we've picked a document, we
+
+00:33:23.936 --> 00:33:25.406 A:middle
+receive a callback at one of
+
+00:33:25.436 --> 00:33:26.686 A:middle
+these two delegate methods.
+
+00:33:27.566 --> 00:33:29.616 A:middle
+The first one, if we're picking
+
+00:33:29.616 --> 00:33:32.126 A:middle
+our document in the Browser, or
+
+00:33:32.346 --> 00:33:34.216 A:middle
+the second one if we're picking
+
+00:33:34.216 --> 00:33:35.916 A:middle
+it in the Picker, like our
+
+00:33:35.916 --> 00:33:36.326 A:middle
+example.
+
+00:33:36.326 --> 00:33:40.716 A:middle
+We see the document here, and we
+
+00:33:40.936 --> 00:33:43.466 A:middle
+see actually the Document Picker
+
+00:33:43.466 --> 00:33:46.076 A:middle
+here, serving our app the URL
+
+00:33:46.076 --> 00:33:46.956 A:middle
+that we've just picked.
+
+00:33:48.066 --> 00:33:50.036 A:middle
+If we attempt to access the
+
+00:33:50.036 --> 00:33:52.536 A:middle
+document directly, we risk
+
+00:33:52.536 --> 00:33:53.756 A:middle
+running into a permissions
+
+00:33:53.756 --> 00:33:53.976 A:middle
+error.
+
+00:33:55.356 --> 00:33:57.036 A:middle
+Let's try to understand why this
+
+00:33:57.036 --> 00:33:57.546 A:middle
+could happen.
+
+00:33:58.546 --> 00:34:00.376 A:middle
+As you may know, your apps on
+

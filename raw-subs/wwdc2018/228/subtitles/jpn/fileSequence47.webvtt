@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.453 --> 00:47:03.223 align:start position:30% line:-2
+なぜこんなにも
+CPUを食うのでしょう
+
+00:47:04.258 --> 00:47:06.994 align:start position:23% line:-1
+呼び出し元のバックトレースは？
+
+00:47:08.162 --> 00:47:11.431 align:start position:14% line:-1
+setNextUpdateTimerです
+
+00:47:12.166 --> 00:47:13.734 align:start position:34% line:-1
+この関数の動作は？
+
+00:47:18.005 --> 00:47:22.476 align:start position:12% line:-2
+setNextUpdateTimerの中に
+addNewSpriteがあります
+
+00:47:23.644 --> 00:47:28.415 align:start position:30% line:-2
+この関数を次に呼び出す
+タイミングを設定すべく
+
+00:47:28.515 --> 00:47:31.685 align:start position:14% line:-1
+updateTimerが生成されています
+
+00:47:33.420 --> 00:47:36.423 align:start position:12% line:-2
+このタイマーはnowと
+nextUpdateIntervalの間で
+
+00:47:36.857 --> 00:47:38.625 align:start position:41% line:-1
+作動します
+
+00:47:40.427 --> 00:47:45.065 align:start position:16% line:-2
+nextUpdateIntervalは
+ゼロまでデクリメントされ
+
+00:47:46.133 --> 00:47:50.604 align:start position:30% line:-2
+こちらのコードに従って
+再び初期化されます
+
+00:47:52.539 --> 00:47:54.441 align:start position:36% line:-1
+問題は ここです
+
+00:47:55.509 --> 00:47:57.978 align:start position:20% line:-2
+timeIntervalSince
+lastUpdateDateは
+
+00:47:58.145 --> 00:48:00.414 align:start position:32% line:-1
+負の値かも知れません
+

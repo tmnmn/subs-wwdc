@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:00.046 --> 00:09:02.486 A:middle
+loaded into an SFrame, it's easy
+
+00:09:02.486 --> 00:09:04.446 A:middle
+to visually explore and inspect
+
+00:09:04.446 --> 00:09:05.000 A:middle
+your data.
+
+00:09:08.936 --> 00:09:10.426 A:middle
+Let's zoom in a bit more on
+
+00:09:10.426 --> 00:09:11.796 A:middle
+what's possible with SFrame.
+
+00:09:12.796 --> 00:09:13.946 A:middle
+With our object detector
+
+00:09:13.946 --> 00:09:14.396 A:middle
+example.
+
+00:09:15.446 --> 00:09:17.026 A:middle
+So after we import Turi Create,
+
+00:09:17.426 --> 00:09:18.436 A:middle
+in the case of our object
+
+00:09:18.436 --> 00:09:20.206 A:middle
+detector, we're actually going
+
+00:09:20.276 --> 00:09:21.606 A:middle
+to load two different SFrames.
+
+00:09:22.086 --> 00:09:23.406 A:middle
+The first containing our
+
+00:09:23.406 --> 00:09:25.526 A:middle
+annotations, and the second
+
+00:09:26.036 --> 00:09:27.166 A:middle
+containing our images.
+
+00:09:27.896 --> 00:09:29.556 A:middle
+We have a simple function
+
+00:09:29.556 --> 00:09:31.526 A:middle
+.explore that will allow you to
+
+00:09:31.526 --> 00:09:32.806 A:middle
+visually inspect the data you've
+
+00:09:32.806 --> 00:09:33.276 A:middle
+imported.
+
+00:09:34.276 --> 00:09:35.876 A:middle
+We can do things like access
+
+00:09:35.876 --> 00:09:36.896 A:middle
+specific rows.
+
+00:09:37.386 --> 00:09:38.496 A:middle
+Or columns of our data.
+
+00:09:39.866 --> 00:09:40.976 A:middle
+And of course we can do common
+
+00:09:40.976 --> 00:09:43.266 A:middle
+operations like joining our two
+
+00:09:43.266 --> 00:09:44.286 A:middle
+SFrames into one.
+
+00:09:44.826 --> 00:09:46.546 A:middle
+And saving the resulting SFrame
+
+00:09:46.986 --> 00:09:49.476 A:middle
+for later use or to share with a
+
+00:09:51.176 --> 00:09:51.356 A:middle
+colleague.
+
+00:09:51.486 --> 00:09:52.746 A:middle
+Next we create our model.
+
+00:09:53.146 --> 00:09:54.306 A:middle
+So I mentioned we have this
+
+00:09:54.396 --> 00:09:56.746 A:middle
+simple function .create that
+
+00:09:56.746 --> 00:09:58.126 A:middle
+does all the heavy lifting for
+
+00:09:58.126 --> 00:09:59.236 A:middle
+the creation of the actual
+
+00:09:59.236 --> 00:09:59.576 A:middle
+model.
+

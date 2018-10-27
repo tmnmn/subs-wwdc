@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.776 --> 00:24:00.796 A:middle
+then the glyph text is shown.
+
+00:24:01.556 --> 00:24:03.006 A:middle
+So, now that we know how to
+
+00:24:03.006 --> 00:24:04.746 A:middle
+display marker annotations, we
+
+00:24:04.746 --> 00:24:06.376 A:middle
+can go crazy and put a lot of
+
+00:24:06.376 --> 00:24:07.236 A:middle
+annotations on our map.
+
+00:24:07.686 --> 00:24:08.896 A:middle
+So, this is the result of doing
+
+00:24:08.896 --> 00:24:11.246 A:middle
+searches for cafes and bars in
+
+00:24:11.246 --> 00:24:11.676 A:middle
+Paris.
+
+00:24:11.676 --> 00:24:12.716 A:middle
+And I've styled them slightly
+
+00:24:12.716 --> 00:24:14.416 A:middle
+differently to distinguish them
+
+00:24:14.416 --> 00:24:15.096 A:middle
+from one another.
+
+00:24:15.586 --> 00:24:16.996 A:middle
+But the problem is that there is
+
+00:24:16.996 --> 00:24:19.176 A:middle
+a very dense number of
+
+00:24:19.176 --> 00:24:20.916 A:middle
+annotations in the same area.
+
+00:24:21.486 --> 00:24:23.576 A:middle
+Fortunately, we have two ways in
+
+00:24:23.576 --> 00:24:25.336 A:middle
+MapKit JS to deal with this sort
+
+00:24:25.336 --> 00:24:25.856 A:middle
+of clutter.
+
+00:24:26.466 --> 00:24:27.676 A:middle
+The first one is to set a
+
+00:24:27.676 --> 00:24:29.406 A:middle
+display priority property on
+
+00:24:29.406 --> 00:24:30.096 A:middle
+annotations.
+
+00:24:30.776 --> 00:24:32.226 A:middle
+What this means is that when two
+
+00:24:32.226 --> 00:24:33.466 A:middle
+annotations collide, the
+
+00:24:33.466 --> 00:24:34.596 A:middle
+annotation with the highest
+
+00:24:34.596 --> 00:24:35.866 A:middle
+display property, which is a
+
+00:24:35.866 --> 00:24:39.466 A:middle
+number, will collide out the
+
+00:24:39.466 --> 00:24:40.666 A:middle
+annotation with the lowest
+
+00:24:40.726 --> 00:24:41.596 A:middle
+display priority.
+
+00:24:42.236 --> 00:24:43.936 A:middle
+So, in this case, we can see
+
+00:24:43.936 --> 00:24:45.176 A:middle
+that many annotations have been
+
+00:24:45.176 --> 00:24:45.816 A:middle
+collided out.
+
+00:24:46.006 --> 00:24:47.726 A:middle
+When you zoom in and out, these
+
+00:24:47.726 --> 00:24:49.266 A:middle
+collisions run again, so that
+
+00:24:49.266 --> 00:24:51.066 A:middle
+zooming in for instance, will
+
+00:24:51.156 --> 00:24:52.506 A:middle
+let you discover more
+
+00:24:52.506 --> 00:24:53.046 A:middle
+annotations.
+
+00:24:53.496 --> 00:24:54.376 A:middle
+And when they have the same
+
+00:24:54.376 --> 00:24:56.356 A:middle
+display priority, we will use
+
+00:24:56.356 --> 00:24:57.466 A:middle
+the one that appears at the
+
+00:24:57.466 --> 00:24:59.336 A:middle
+bottom of the screen as the more
+
+00:24:59.636 --> 00:25:01.756 A:middle
+-- as the one with the highest
+

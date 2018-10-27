@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:57.106 --> 00:06:00.276 A:middle
+opting into saner, safer, more
+
+00:06:00.276 --> 00:06:02.346 A:middle
+secure defaults for your web
+
+00:06:02.376 --> 00:06:02.906 A:middle
+content.
+
+00:06:03.286 --> 00:06:05.186 A:middle
+We're locking it down to more or
+
+00:06:05.186 --> 00:06:06.306 A:middle
+less what it should have been
+
+00:06:06.306 --> 00:06:08.446 A:middle
+all along and then you open up
+
+00:06:08.446 --> 00:06:10.096 A:middle
+the specific things you want to
+
+00:06:10.876 --> 00:06:10.946 A:middle
+do.
+
+00:06:11.806 --> 00:06:13.836 A:middle
+So, let's move in and look at
+
+00:06:13.836 --> 00:06:15.376 A:middle
+what are cross-origin loads
+
+00:06:15.376 --> 00:06:15.846 A:middle
+anyway.
+
+00:06:16.186 --> 00:06:17.336 A:middle
+What are we going to lock down?
+
+00:06:18.076 --> 00:06:20.106 A:middle
+Well, web technologies have this
+
+00:06:20.216 --> 00:06:21.956 A:middle
+powerful feature where you can
+
+00:06:22.066 --> 00:06:24.036 A:middle
+weave together content from
+
+00:06:24.096 --> 00:06:25.676 A:middle
+different servers and different
+
+00:06:25.676 --> 00:06:26.266 A:middle
+origins.
+
+00:06:27.126 --> 00:06:28.586 A:middle
+Different domain names, if you
+
+00:06:28.586 --> 00:06:29.036 A:middle
+so will.
+
+00:06:30.056 --> 00:06:32.136 A:middle
+An example of this is images.
+
+00:06:32.746 --> 00:06:34.356 A:middle
+You can load images from any
+
+00:06:34.356 --> 00:06:36.746 A:middle
+server on the web into your web
+
+00:06:36.746 --> 00:06:37.586 A:middle
+content and that's a
+
+00:06:37.586 --> 00:06:38.696 A:middle
+cross-origin load.
+
+00:06:39.546 --> 00:06:41.166 A:middle
+You can also load scripts from
+
+00:06:41.166 --> 00:06:42.066 A:middle
+other servers.
+
+00:06:42.766 --> 00:06:44.696 A:middle
+Interestingly, those scripts
+
+00:06:44.886 --> 00:06:46.556 A:middle
+actually execute with the same
+
+00:06:46.556 --> 00:06:48.746 A:middle
+powers and privileges as your
+
+00:06:48.746 --> 00:06:50.636 A:middle
+own scripts, so you need to be
+
+00:06:50.636 --> 00:06:52.246 A:middle
+really careful what scripts you
+
+00:06:52.246 --> 00:06:53.926 A:middle
+load off of other servers.
+
+00:06:54.356 --> 00:06:56.426 A:middle
+They more or less own your web
+
+00:06:56.426 --> 00:06:56.996 A:middle
+content.
+
+00:06:57.286 --> 00:06:58.406 A:middle
+They are executing with the same
+
+00:06:58.406 --> 00:06:59.136 A:middle
+powers as you.
+

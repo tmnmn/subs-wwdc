@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.536 --> 00:20:00.256 A:middle
+is in our SDK.
+
+00:20:00.296 --> 00:20:03.086 A:middle
+We can do the same thing we did
+
+00:20:03.086 --> 00:20:05.526 A:middle
+before when you were looking for
+
+00:20:05.526 --> 00:20:06.296 A:middle
+our own header files.
+
+00:20:06.416 --> 00:20:07.246 A:middle
+But now we're looking for the
+
+00:20:07.246 --> 00:20:07.786 A:middle
+system header.
+
+00:20:08.866 --> 00:20:11.386 A:middle
+It's just that headermaps are
+
+00:20:11.386 --> 00:20:13.486 A:middle
+only for your own headers.
+
+00:20:13.956 --> 00:20:15.076 A:middle
+So we can ignore them.
+
+00:20:16.086 --> 00:20:17.976 A:middle
+Let's focus on the include path
+
+00:20:18.056 --> 00:20:18.256 A:middle
+[inaudible] matter.
+
+00:20:18.756 --> 00:20:21.716 A:middle
+So at default, we always look in
+
+00:20:21.816 --> 00:20:23.466 A:middle
+two directories in the SDK.
+
+00:20:23.966 --> 00:20:25.746 A:middle
+the first one is user include,
+
+00:20:26.516 --> 00:20:28.616 A:middle
+the second one is system library
+
+00:20:28.616 --> 00:20:29.176 A:middle
+frameworks.
+
+00:20:29.866 --> 00:20:31.346 A:middle
+Let's have a look at the first
+
+00:20:31.346 --> 00:20:31.486 A:middle
+one.
+
+00:20:31.966 --> 00:20:34.276 A:middle
+It's a regular include
+
+00:20:34.376 --> 00:20:35.056 A:middle
+directory.
+
+00:20:35.416 --> 00:20:36.746 A:middle
+So the only thing we have to do
+
+00:20:36.746 --> 00:20:38.426 A:middle
+is we have to append the search
+
+00:20:38.426 --> 00:20:38.726 A:middle
+term.
+
+00:20:38.816 --> 00:20:39.476 A:middle
+In this case,
+
+00:20:39.476 --> 00:20:43.026 A:middle
+Foundation/Foundation.h. And we
+
+00:20:43.026 --> 00:20:44.166 A:middle
+won't find the header because
+
+00:20:44.166 --> 00:20:44.516 A:middle
+it's not there.
+
+00:20:45.556 --> 00:20:46.076 A:middle
+But it's okay.
+
+00:20:46.216 --> 00:20:47.436 A:middle
+Let's try the next entry.
+
+00:20:48.616 --> 00:20:50.126 A:middle
+Let's look into system library
+
+00:20:50.126 --> 00:20:50.746 A:middle
+frameworks.
+
+00:20:52.196 --> 00:20:53.276 A:middle
+This one is a frameworks
+
+00:20:53.326 --> 00:20:55.506 A:middle
+directory that means Clang has
+
+00:20:55.536 --> 00:20:56.746 A:middle
+to behave a little bit
+
+00:20:56.796 --> 00:20:57.216 A:middle
+different.
+
+00:20:57.456 --> 00:21:00.026 A:middle
+First of all, it has to identify
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.926 --> 00:11:01.436 A:middle
+You should use this to answer
+
+00:11:01.436 --> 00:11:02.946 A:middle
+future key loading requests.
+
+00:11:03.386 --> 00:11:05.856 A:middle
+Note that this updated
+
+00:11:05.856 --> 00:11:07.966 A:middle
+persistent key is valid until
+
+00:11:07.966 --> 00:11:10.146 A:middle
+the end of playback duration, 24
+
+00:11:10.146 --> 00:11:11.116 A:middle
+hours from our example.
+
+00:11:13.536 --> 00:11:16.276 A:middle
+So, with that, let's shift gears
+
+00:11:16.276 --> 00:11:17.926 A:middle
+and talk about error handling,
+
+00:11:17.926 --> 00:11:18.246 A:middle
+now.
+
+00:11:19.696 --> 00:11:21.236 A:middle
+Error handling is one of the
+
+00:11:21.236 --> 00:11:23.386 A:middle
+most important topics from the
+
+00:11:23.386 --> 00:11:25.036 A:middle
+perspective of improving
+
+00:11:25.036 --> 00:11:26.256 A:middle
+playback experience.
+
+00:11:27.976 --> 00:11:29.556 A:middle
+Successfully loading keys
+
+00:11:29.596 --> 00:11:31.406 A:middle
+involves a number of steps and
+
+00:11:31.406 --> 00:11:32.996 A:middle
+something is bound to fail at
+
+00:11:32.996 --> 00:11:34.096 A:middle
+some point or another.
+
+00:11:35.116 --> 00:11:36.686 A:middle
+So, when something fails the
+
+00:11:36.686 --> 00:11:38.176 A:middle
+first thing you should do is
+
+00:11:38.176 --> 00:11:39.706 A:middle
+report the failure back to
+
+00:11:39.706 --> 00:11:41.226 A:middle
+AVFoundation using
+
+00:11:41.226 --> 00:11:42.596 A:middle
+AVContentKeyRequest or
+
+00:11:42.596 --> 00:11:44.216 A:middle
+AVAssetResourceLoadingRequest.
+
+00:11:45.546 --> 00:11:47.296 A:middle
+Some errors are fatal and some
+
+00:11:47.296 --> 00:11:47.766 A:middle
+are not.
+
+00:11:48.086 --> 00:11:49.436 A:middle
+You should help platform make
+
+00:11:49.436 --> 00:11:50.146 A:middle
+that decision.
+
+00:11:51.356 --> 00:11:52.976 A:middle
+Another thing you should do is
+
+00:11:52.976 --> 00:11:54.976 A:middle
+monitor error logs and access
+
+00:11:54.976 --> 00:11:56.666 A:middle
+logs, investigate the root
+
+00:11:56.666 --> 00:11:57.006 A:middle
+cause.
+
+00:11:57.006 --> 00:11:58.746 A:middle
+And try to mitigate errors so
+
+00:11:58.746 --> 00:12:00.446 A:middle
+your users can get the best
+

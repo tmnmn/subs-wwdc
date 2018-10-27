@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.976 --> 00:30:03.366 A:middle
+And in fact, when we look at how
+
+00:30:03.366 --> 00:30:04.866 A:middle
+this works on a range of gray
+
+00:30:04.866 --> 00:30:06.236 A:middle
+values-- here we have swatches
+
+00:30:06.236 --> 00:30:08.666 A:middle
+going from 0% to 100% gray, all
+
+00:30:08.666 --> 00:30:09.456 A:middle
+totally opaque.
+
+00:30:10.396 --> 00:30:11.326 A:middle
+When we apply our lightening
+
+00:30:11.326 --> 00:30:12.736 A:middle
+effect, we can see a number of
+
+00:30:12.736 --> 00:30:13.876 A:middle
+interesting things have
+
+00:30:14.436 --> 00:30:14.946 A:middle
+happened.
+
+00:30:15.106 --> 00:30:16.466 A:middle
+Down on the bottom right side,
+
+00:30:16.506 --> 00:30:19.196 A:middle
+we have 100% light, and because
+
+00:30:19.196 --> 00:30:20.626 A:middle
+we have added the lightness of
+
+00:30:20.626 --> 00:30:23.056 A:middle
+white to the content behind, it
+
+00:30:23.186 --> 00:30:24.076 A:middle
+just remains white.
+
+00:30:24.176 --> 00:30:25.346 A:middle
+There is nowhere further to go.
+
+00:30:26.466 --> 00:30:27.516 A:middle
+But on the top left where we
+
+00:30:27.516 --> 00:30:29.726 A:middle
+were drawing black, there was no
+
+00:30:29.726 --> 00:30:31.216 A:middle
+lightness to add, which means
+
+00:30:31.216 --> 00:30:33.076 A:middle
+that it completely disappears.
+
+00:30:33.076 --> 00:30:33.956 A:middle
+In fact, you wouldn't be able to
+
+00:30:33.956 --> 00:30:34.976 A:middle
+see it if I didn't have an
+
+00:30:34.976 --> 00:30:35.516 A:middle
+outline there.
+
+00:30:35.936 --> 00:30:37.716 A:middle
+And in-between we can see that
+
+00:30:37.716 --> 00:30:39.016 A:middle
+we have varying degrees of
+
+00:30:39.016 --> 00:30:40.576 A:middle
+lightening which we can use to
+
+00:30:40.576 --> 00:30:42.126 A:middle
+establish a hierarchy of content
+
+00:30:42.496 --> 00:30:43.296 A:middle
+in our application.
+
+00:30:44.526 --> 00:30:45.696 A:middle
+But where does this effect come
+
+00:30:45.696 --> 00:30:45.976 A:middle
+from?
+
+00:30:47.176 --> 00:30:48.076 A:middle
+Well, it's our old friend
+
+00:30:48.076 --> 00:30:49.266 A:middle
+NSAppearance, it turns out.
+
+00:30:50.356 --> 00:30:52.086 A:middle
+We have two special vibrant
+
+00:30:52.086 --> 00:30:53.216 A:middle
+NSAppearance objects,
+
+00:30:53.546 --> 00:30:56.976 A:middle
+vibrantDark and vibrantLight and
+
+00:30:57.066 --> 00:30:58.676 A:middle
+these are a complete package.
+
+00:30:58.676 --> 00:31:00.086 A:middle
+Not only do they include the
+

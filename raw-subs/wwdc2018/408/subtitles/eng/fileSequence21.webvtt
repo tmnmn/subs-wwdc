@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.126 --> 00:21:01.966 A:middle
+exemplifies a key takeaway for
+
+00:21:01.966 --> 00:21:03.066 A:middle
+both of our sections.
+
+00:21:03.866 --> 00:21:05.206 A:middle
+When a build is taking a long
+
+00:21:05.206 --> 00:21:07.266 A:middle
+time, there's often a key piece
+
+00:21:07.266 --> 00:21:08.556 A:middle
+of information that you can
+
+00:21:08.556 --> 00:21:11.076 A:middle
+provide to Xcode to improve the
+
+00:21:11.076 --> 00:21:11.896 A:middle
+situation.
+
+00:21:13.036 --> 00:21:13.946 A:middle
+And so we're going to look at
+
+00:21:13.946 --> 00:21:16.006 A:middle
+that first in the context of
+
+00:21:16.006 --> 00:21:17.446 A:middle
+complex Swift expressions.
+
+00:21:18.066 --> 00:21:21.546 A:middle
+So here's an example of some
+
+00:21:21.546 --> 00:21:22.836 A:middle
+code from my latest project.
+
+00:21:23.966 --> 00:21:26.406 A:middle
+And the problem with this struct
+
+00:21:26.966 --> 00:21:28.666 A:middle
+is that I use it all over the
+
+00:21:28.666 --> 00:21:29.206 A:middle
+place.
+
+00:21:30.076 --> 00:21:31.496 A:middle
+And it's perfectly fine to have
+
+00:21:31.496 --> 00:21:31.926 A:middle
+a struct.
+
+00:21:32.166 --> 00:21:33.016 A:middle
+It's perfectly fine to have a
+
+00:21:33.016 --> 00:21:34.136 A:middle
+struct with a property.
+
+00:21:34.136 --> 00:21:35.346 A:middle
+And it's fine to have a struct
+
+00:21:35.596 --> 00:21:37.496 A:middle
+with a property with an inferred
+
+00:21:37.496 --> 00:21:37.826 A:middle
+type.
+
+00:21:38.516 --> 00:21:39.696 A:middle
+But the expression that we're
+
+00:21:39.696 --> 00:21:41.806 A:middle
+inferring that type from here is
+
+00:21:41.806 --> 00:21:43.236 A:middle
+a little bit complicated.
+
+00:21:43.416 --> 00:21:44.986 A:middle
+It's not something simple like
+
+00:21:45.256 --> 00:21:47.146 A:middle
+-- Oh, I took out a build from
+
+00:21:47.146 --> 00:21:47.806 A:middle
+my slides.
+
+00:21:48.126 --> 00:21:50.096 A:middle
+So I've given away the answer
+
+00:21:50.096 --> 00:21:50.426 A:middle
+here.
+
+00:21:50.586 --> 00:21:53.316 A:middle
+If this were something like 0.0,
+
+00:21:53.816 --> 00:21:55.506 A:middle
+then this inference of double
+
+00:21:55.506 --> 00:21:56.736 A:middle
+here wouldn't really have been
+
+00:21:56.736 --> 00:21:57.636 A:middle
+necessary.
+
+00:21:58.126 --> 00:21:59.696 A:middle
+But since we've got this big,
+
+00:21:59.696 --> 00:22:01.256 A:middle
+complicated expression involving
+

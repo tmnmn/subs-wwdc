@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.246 --> 00:02:00.656 A:middle
+years now, and we are excited to
+
+00:02:00.656 --> 00:02:01.886 A:middle
+make this to be for the macOS.
+
+00:02:02.466 --> 00:02:04.326 A:middle
+Of course, not that this only
+
+00:02:04.326 --> 00:02:05.266 A:middle
+applies to the system.
+
+00:02:05.266 --> 00:02:06.776 A:middle
+This does not apply - it does
+
+00:02:06.776 --> 00:02:07.876 A:middle
+not apply to your apps.
+
+00:02:08.476 --> 00:02:11.466 A:middle
+However, there still remains a
+
+00:02:11.466 --> 00:02:13.786 A:middle
+few system extension points
+
+00:02:13.876 --> 00:02:15.036 A:middle
+throughout the operating system
+
+00:02:15.376 --> 00:02:16.636 A:middle
+that have not yet made the move
+
+00:02:16.886 --> 00:02:18.046 A:middle
+to the app extensions model.
+
+00:02:19.006 --> 00:02:19.976 A:middle
+And those are technically
+
+00:02:19.976 --> 00:02:21.526 A:middle
+considered to be platform
+
+00:02:21.526 --> 00:02:22.936 A:middle
+binaries; OK, it's the plug-in
+
+00:02:22.936 --> 00:02:23.316 A:middle
+loaders.
+
+00:02:24.126 --> 00:02:25.436 A:middle
+So for those we are going to
+
+00:02:25.436 --> 00:02:26.826 A:middle
+relax that policy, and the
+
+00:02:26.826 --> 00:02:29.176 A:middle
+system will still allow these
+
+00:02:29.176 --> 00:02:32.006 A:middle
+processes to load code that is
+
+00:02:32.006 --> 00:02:34.406 A:middle
+either third-party signed or
+
+00:02:34.406 --> 00:02:35.156 A:middle
+completely unsigned.
+
+00:02:35.686 --> 00:02:38.866 A:middle
+So if you ship any of these
+
+00:02:38.866 --> 00:02:41.186 A:middle
+plug-ins in your app, please
+
+00:02:41.186 --> 00:02:42.606 A:middle
+make sure that you test on the
+
+00:02:42.666 --> 00:02:44.656 A:middle
+developer preview and make sure
+
+00:02:44.656 --> 00:02:45.476 A:middle
+it works properly.
+
+00:02:45.626 --> 00:02:46.526 A:middle
+If not, please let us know.
+
+00:02:47.006 --> 00:02:50.576 A:middle
+Next, I would like to talk about
+
+00:02:50.576 --> 00:02:51.716 A:middle
+UI automation.
+
+00:02:52.156 --> 00:02:54.986 A:middle
+The security model of a macOS,
+
+00:02:55.236 --> 00:02:56.476 A:middle
+especially when it comes to user
+
+00:02:56.476 --> 00:02:58.996 A:middle
+data access, relies on the user
+
+00:02:59.456 --> 00:03:00.876 A:middle
+making security decisions for
+

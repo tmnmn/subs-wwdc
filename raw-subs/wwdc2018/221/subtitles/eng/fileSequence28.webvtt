@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.616 --> 00:28:01.006 A:middle
+initializer with no attribute
+
+00:28:01.006 --> 00:28:01.516 A:middle
+information.
+
+00:28:01.516 --> 00:28:04.046 A:middle
+And when you create a new
+
+00:28:04.046 --> 00:28:05.646 A:middle
+attributed string and you don't
+
+00:28:05.646 --> 00:28:06.526 A:middle
+provide any attribute
+
+00:28:06.526 --> 00:28:08.626 A:middle
+information, that new attributed
+
+00:28:08.626 --> 00:28:09.826 A:middle
+string, we use the default
+
+00:28:09.826 --> 00:28:10.226 A:middle
+attributes.
+
+00:28:11.026 --> 00:28:11.926 A:middle
+And the default font is
+
+00:28:11.926 --> 00:28:13.136 A:middle
+Helvetica 12 point.
+
+00:28:13.686 --> 00:28:15.876 A:middle
+And so to recap what happened,
+
+00:28:16.166 --> 00:28:17.366 A:middle
+we started with this original
+
+00:28:17.366 --> 00:28:19.036 A:middle
+attributed string with the font
+
+00:28:19.036 --> 00:28:20.566 A:middle
+Comic Sans 24 applied to the
+
+00:28:20.566 --> 00:28:21.356 A:middle
+entire range.
+
+00:28:21.866 --> 00:28:24.986 A:middle
+And then we created this new
+
+00:28:24.986 --> 00:28:26.416 A:middle
+attributed string, and it got
+
+00:28:26.416 --> 00:28:27.506 A:middle
+initialized with the default
+
+00:28:27.506 --> 00:28:27.966 A:middle
+attributes.
+
+00:28:28.856 --> 00:28:30.156 A:middle
+And we applied our bold font to
+
+00:28:30.156 --> 00:28:31.226 A:middle
+the word don't on this new
+
+00:28:31.276 --> 00:28:33.016 A:middle
+string, and we ended up with
+
+00:28:33.016 --> 00:28:34.896 A:middle
+this incorrect result here where
+
+00:28:34.896 --> 00:28:36.296 A:middle
+the word don't is in Comic Sans
+
+00:28:36.296 --> 00:28:37.886 A:middle
+bold 24, and the rest of the
+
+00:28:37.886 --> 00:28:39.366 A:middle
+string is in the default font of
+
+00:28:39.366 --> 00:28:40.146 A:middle
+Helvetica 12.
+
+00:28:40.726 --> 00:28:43.916 A:middle
+And so there are two different
+
+00:28:43.916 --> 00:28:44.776 A:middle
+ways that we could do this
+
+00:28:44.776 --> 00:28:46.826 A:middle
+correctly and one way is to
+
+00:28:46.826 --> 00:28:47.916 A:middle
+avoid mixing the plain and
+
+00:28:47.916 --> 00:28:49.086 A:middle
+attributed text altogether.
+
+00:28:50.146 --> 00:28:51.416 A:middle
+So by initializing our new
+
+00:28:51.416 --> 00:28:52.446 A:middle
+attributed string using the
+
+00:28:52.446 --> 00:28:53.676 A:middle
+original one, we're going to
+
+00:28:53.676 --> 00:28:54.816 A:middle
+keep those original attributes.
+
+00:28:55.296 --> 00:28:56.326 A:middle
+And then we can apply our new
+
+00:28:56.326 --> 00:28:57.606 A:middle
+attributes without getting this
+
+00:28:57.606 --> 00:28:58.976 A:middle
+reset effect with the default
+
+00:28:58.976 --> 00:28:59.176 A:middle
+ones.
+
+00:28:59.696 --> 00:29:02.466 A:middle
+But it's not always feasible to
+

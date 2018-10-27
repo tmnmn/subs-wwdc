@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.096 --> 00:25:00.196 A:middle
+So here I have my app.
+
+00:25:00.196 --> 00:25:01.276 A:middle
+It's foreground running.
+
+00:25:01.276 --> 00:25:02.196 A:middle
+I'm looking at it.
+
+00:25:02.526 --> 00:25:04.066 A:middle
+The screen is on, and this app
+
+00:25:04.066 --> 00:25:05.486 A:middle
+is considered active and
+
+00:25:05.486 --> 00:25:06.176 A:middle
+frontmost.
+
+00:25:06.826 --> 00:25:07.766 A:middle
+But then, let's say I put my
+
+00:25:07.766 --> 00:25:08.376 A:middle
+wrist down.
+
+00:25:09.546 --> 00:25:11.246 A:middle
+In that case, the application is
+
+00:25:11.246 --> 00:25:12.646 A:middle
+still considered frontmost
+
+00:25:13.106 --> 00:25:14.396 A:middle
+because if I raise my wrist
+
+00:25:14.396 --> 00:25:15.326 A:middle
+again, I'll see that
+
+00:25:15.326 --> 00:25:15.996 A:middle
+application.
+
+00:25:16.416 --> 00:25:18.356 A:middle
+And in that case, the
+
+00:25:18.356 --> 00:25:19.916 A:middle
+application is just in the
+
+00:25:19.916 --> 00:25:20.506 A:middle
+background.
+
+00:25:24.116 --> 00:25:26.066 A:middle
+So with the frontmost app state,
+
+00:25:26.266 --> 00:25:27.226 A:middle
+we get some enhanced
+
+00:25:27.226 --> 00:25:28.586 A:middle
+capabilities from the system.
+
+00:25:29.116 --> 00:25:32.286 A:middle
+Our background transfers from
+
+00:25:32.406 --> 00:25:33.856 A:middle
+iPhones -- so say we were
+
+00:25:33.856 --> 00:25:35.436 A:middle
+transferring our content from
+
+00:25:35.576 --> 00:25:36.986 A:middle
+iPhone to watch itself, those
+
+00:25:36.986 --> 00:25:39.036 A:middle
+background transfers, when they
+
+00:25:39.036 --> 00:25:40.326 A:middle
+complete, the resumes will
+
+00:25:40.476 --> 00:25:42.266 A:middle
+directly just wake up our app if
+
+00:25:42.266 --> 00:25:43.276 A:middle
+we're in the frontmost app
+
+00:25:43.276 --> 00:25:43.586 A:middle
+state.
+
+00:25:44.486 --> 00:25:45.996 A:middle
+And the same thing in, with our
+
+00:25:45.996 --> 00:25:47.286 A:middle
+URL session resumes.
+
+00:25:47.616 --> 00:25:49.886 A:middle
+So if the URL session, our
+
+00:25:49.886 --> 00:25:51.246 A:middle
+background session before was
+
+00:25:51.246 --> 00:25:53.166 A:middle
+downloading and it completes,
+
+00:25:53.166 --> 00:25:54.396 A:middle
+then our app will automatically
+
+00:25:54.396 --> 00:25:55.926 A:middle
+get waked up and deliver the
+
+00:25:55.926 --> 00:25:56.346 A:middle
+payload.
+
+00:25:56.826 --> 00:26:00.566 A:middle
+And if we're frontmost, we're
+

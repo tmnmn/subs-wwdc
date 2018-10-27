@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:57.945 --> 00:48:01.481 align:start position:21% line:-1
+もう一度 Appを操作しましょう
+
+00:48:03.550 --> 00:48:05.385 align:start position:30% line:-1
+プラスボタンを押すと…
+
+00:48:05.886 --> 00:48:07.921 align:start position:27% line:-1
+Appがすぐに止まりました
+
+00:48:08.021 --> 00:48:09.490 align:start position:39% line:-1
+バグ発見です
+
+00:48:09.590 --> 00:48:12.459 align:start position:30% line:-1
+しかも１回で済みました
+
+00:48:12.559 --> 00:48:16.730 align:start position:20% line:-2
+Thread Sanitizerは
+高確率で再現してくれます
+
+00:48:17.498 --> 00:48:19.566 align:start position:30% line:-1
+バグの詳細を見ましょう
+
+00:48:20.000 --> 00:48:22.770 align:start position:7% line:-1
+Swift Access Raceだと分かります
+
+00:48:23.470 --> 00:48:26.640 align:start position:23% line:-1
+左のデバッグナビゲータを見ると
+
+00:48:26.740 --> 00:48:29.443 align:start position:30% line:-1
+さらに詳細が分かります
+
+00:48:29.543 --> 00:48:33.480 align:start position:27% line:-2
+２つのスレッドが
+２つのアクセスをしています
+
+00:48:33.580 --> 00:48:35.949 align:start position:34% line:-1
+スレッド２と４が―
+
+00:48:36.050 --> 00:48:39.987 align:start position:25% line:-2
+同じメモリに同時に
+アクセスしようとしていますが
+
+00:48:40.087 --> 00:48:41.521 align:start position:34% line:-1
+許可されていません
+
+00:48:42.790 --> 00:48:47.161 align:start position:27% line:-2
+競合している
+この２つのコードを見ると―
+
+00:48:47.261 --> 00:48:50.998 align:start position:34% line:-2
+画像キャッシュに
+アクセスしています
+
+00:48:51.365 --> 00:48:56.336 align:start position:25% line:-2
+このデータは複数のスレッドで
+共有されたデータ構造なので―
+
+00:48:56.470 --> 00:48:58.672 align:start position:32% line:-2
+スレッドデータ構造で
+なくてはなりません
+
+00:48:58.839 --> 00:49:01.341 align:start position:25% line:-1
+どう実行されるか見てましょう
+

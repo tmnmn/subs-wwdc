@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.044 --> 00:23:00.013 align:middle line:-1
+如果我依赖子类 编译器不会通知我
+
+00:23:00.080 --> 00:23:02.482 align:middle line:-1
+我已经开始调用另一个方法
+
+00:23:02.549 --> 00:23:04.685 align:middle line:-1
+这很容易忘记和破坏我的测试
+
+00:23:05.552 --> 00:23:07.321 align:middle line:-1
+因此我不推荐这种方法
+
+00:23:07.387 --> 00:23:11.225 align:middle line:-1
+而我推荐使用协议模拟外部类型
+
+00:23:11.291 --> 00:23:12.960 align:middle line:-1
+我们来看看怎么做
+
+00:23:14.494 --> 00:23:16.129 align:middle line:-1
+这是原始代码
+
+00:23:16.330 --> 00:23:19.032 align:middle line:-1
+第一步是定义一个新协议
+
+00:23:20.300 --> 00:23:22.703 align:middle line:-2
+我已经命名了新协议
+LocationFetcher
+
+00:23:22.936 --> 00:23:25.405 align:middle line:-2
+它包含了我的代码
+从CLLocationManager中
+
+00:23:25.472 --> 00:23:28.075 align:middle line:-1
+使用的方法和属性的确切集合
+
+00:23:28.976 --> 00:23:32.012 align:middle line:-1
+成员名称和类型完全匹配
+
+00:23:32.079 --> 00:23:35.883 align:middle line:-2
+这允许我在
+CLLocationManager上
+
+00:23:35.949 --> 00:23:37.384 align:middle line:-1
+创建一个符合协议的空扩展
+
+00:23:37.451 --> 00:23:39.286 align:middle line:-1
+因为它已经满足了所有要求
+
+00:23:41.321 --> 00:23:44.858 align:middle line:-2
+然后我将LocationManager属性
+重命名为LocationFetcher
+
+00:23:45.092 --> 00:23:47.794 align:middle line:-2
+并将其类型更改为
+LocationFetcher协议
+
+00:23:49.663 --> 00:23:52.599 align:middle line:-2
+我还将向初始化器添加一个
+默认参数值
+
+00:23:52.666 --> 00:23:56.170 align:middle line:-2
+就像我之前所做的那样
+以避免破坏任何现有的app代码
+
+00:23:58.438 --> 00:24:01.708 align:middle line:-2
+我需要对checkCurrentLocation
+方法做一个小的更改
+

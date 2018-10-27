@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.136 --> 00:19:01.906 A:middle
+core custom layout subclass
+
+00:19:01.976 --> 00:19:03.766 A:middle
+items is going to be the Prepare
+
+00:19:03.766 --> 00:19:04.106 A:middle
+method.
+
+00:19:04.106 --> 00:19:05.396 A:middle
+Now Mohammed has already chatted
+
+00:19:05.396 --> 00:19:06.706 A:middle
+about this a little bit.
+
+00:19:06.706 --> 00:19:08.266 A:middle
+This is called every time the
+
+00:19:08.266 --> 00:19:09.346 A:middle
+layout is invalidated.
+
+00:19:09.406 --> 00:19:11.226 A:middle
+So this is a great time to
+
+00:19:11.226 --> 00:19:12.436 A:middle
+compute anything, such as your
+
+00:19:12.436 --> 00:19:13.486 A:middle
+layout attributes you might want
+
+00:19:13.486 --> 00:19:16.206 A:middle
+to cache and also your content
+
+00:19:16.206 --> 00:19:17.496 A:middle
+size, which is going to be asked
+
+00:19:17.496 --> 00:19:18.976 A:middle
+for pretty soon afterwards.
+
+00:19:23.456 --> 00:19:25.326 A:middle
+Okay. So our honorable mention
+
+00:19:25.326 --> 00:19:26.876 A:middle
+APIs, so let's talk about this
+
+00:19:26.876 --> 00:19:27.066 A:middle
+one.
+
+00:19:27.066 --> 00:19:28.316 A:middle
+This is a Should Invalidate
+
+00:19:28.316 --> 00:19:29.856 A:middle
+Layout For Bounds Change.
+
+00:19:30.766 --> 00:19:33.046 A:middle
+So this is called every time the
+
+00:19:33.046 --> 00:19:34.126 A:middle
+bounds in the CollectionView
+
+00:19:34.126 --> 00:19:34.876 A:middle
+changes.
+
+00:19:35.066 --> 00:19:36.366 A:middle
+Okay, so again, it's a
+
+00:19:36.366 --> 00:19:37.926 A:middle
+CollectionView is a UIScrollView
+
+00:19:37.926 --> 00:19:38.566 A:middle
+subclass.
+
+00:19:38.566 --> 00:19:40.676 A:middle
+So what do we mean by a bounds
+
+00:19:40.676 --> 00:19:41.216 A:middle
+change?
+
+00:19:41.216 --> 00:19:43.206 A:middle
+Well, when a ScrollView bounds
+
+00:19:43.206 --> 00:19:45.406 A:middle
+change, the origin can change
+
+00:19:45.406 --> 00:19:47.246 A:middle
+during a scrolling, and also the
+
+00:19:47.246 --> 00:19:48.546 A:middle
+size can change when the
+
+00:19:48.546 --> 00:19:50.366 A:middle
+application size changes or the
+
+00:19:50.366 --> 00:19:51.726 A:middle
+CollectionView size changes.
+
+00:19:51.726 --> 00:19:53.256 A:middle
+So this is going to be called
+
+00:19:53.256 --> 00:19:53.996 A:middle
+during scrolling.
+
+00:19:55.116 --> 00:19:56.996 A:middle
+Hence the oh yeah emoji.
+
+00:19:56.996 --> 00:19:58.196 A:middle
+This is called very often.
+
+00:19:58.196 --> 00:20:00.126 A:middle
+So making the right decision
+

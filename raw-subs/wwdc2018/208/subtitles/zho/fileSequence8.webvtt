@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.611 --> 00:08:00.380 align:middle line:-2
+关于如何在iOS app中
+采用关联域
+
+00:08:00.514 --> 00:08:02.850 align:middle line:-2
+那些步骤对于tvOS app
+同样适用
+
+00:08:04.751 --> 00:08:06.687 align:middle line:-1
+在采用关联域之后
+
+00:08:06.753 --> 00:08:09.590 align:middle line:-2
+用户很可能在Shiny app上
+看到这些
+
+00:08:09.656 --> 00:08:11.992 align:middle line:-1
+在快速输入栏上轻触你的证书之后
+
+00:08:12.192 --> 00:08:13.193 align:middle line:-1
+非常棒
+
+00:08:13.327 --> 00:08:16.463 align:middle line:-2
+用户的用户名和密码已经填写到
+他们的Apple TV上了
+
+00:08:16.530 --> 00:08:18.432 align:middle line:-1
+而不需要键入一个字母
+
+00:08:19.199 --> 00:08:22.269 align:middle line:-1
+但我们真正希望用户看到的是这个
+
+00:08:23.003 --> 00:08:26.006 align:middle line:-1
+能自动登录并查看他们的小狗
+
+00:08:26.340 --> 00:08:28.742 align:middle line:-1
+因为他们已经通过一次轻触登录了
+
+00:08:30.177 --> 00:08:34.381 align:middle line:-2
+你可以通过实施preferredFocus
+Environments API来获得这个行为
+
+00:08:36.383 --> 00:08:39.586 align:middle line:-2
+在填写密码之后
+就发生了一次更新
+
+00:08:39.785 --> 00:08:40.787 align:middle line:-1
+并且密码自动填写
+
+00:08:40.854 --> 00:08:43.056 align:middle line:-1
+将会执行聚焦按钮的行动
+
+00:08:43.123 --> 00:08:44.124 align:middle line:-1
+若有按钮是聚焦状态
+
+00:08:44.558 --> 00:08:48.095 align:middle line:-2
+你应该实施
+preferredFocusEnvironments API
+
+00:08:48.161 --> 00:08:50.797 align:middle line:-1
+以便你可以向聚焦引擎提供登录按钮
+
+00:08:51.164 --> 00:08:53.066 align:middle line:-1
+让我们看看你要如何实施
+
+00:08:54.601 --> 00:08:58.405 align:middle line:-2
+在这里我有一个示例是关于实施
+preferredFocusEnvironments API
+
+00:08:58.472 --> 00:09:01.708 align:middle line:-2
+它会返回UIFocusEnvironment
+对象的一个数组
+

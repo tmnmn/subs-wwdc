@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.646 --> 00:25:02.936 A:middle
+load objects that are signed by
+
+00:25:02.936 --> 00:25:05.016 A:middle
+another team, you can use this
+
+00:25:05.016 --> 00:25:06.496 A:middle
+entitlement to relax that
+
+00:25:06.496 --> 00:25:06.916 A:middle
+policy.
+
+00:25:08.096 --> 00:25:09.496 A:middle
+Note that it still requires you
+
+00:25:09.496 --> 00:25:11.576 A:middle
+to load signed code; it just can
+
+00:25:11.576 --> 00:25:12.766 A:middle
+be signed by other teams.
+
+00:25:13.016 --> 00:25:14.516 A:middle
+If you need the ability to load
+
+00:25:14.936 --> 00:25:16.796 A:middle
+fully unsigned code, you will
+
+00:25:16.796 --> 00:25:18.156 A:middle
+need to use one of the
+
+00:25:18.156 --> 00:25:19.926 A:middle
+entitlements from the previous
+
+00:25:21.656 --> 00:25:21.816 A:middle
+slide.
+
+00:25:21.986 --> 00:25:24.626 A:middle
+Next, debugging: Apps that are
+
+00:25:24.726 --> 00:25:26.326 A:middle
+opting into the new runtime
+
+00:25:26.626 --> 00:25:29.746 A:middle
+cannot be debugged and cannot
+
+00:25:29.746 --> 00:25:30.706 A:middle
+debug other apps.
+
+00:25:31.806 --> 00:25:33.116 A:middle
+If you need the ability to debug
+
+00:25:33.116 --> 00:25:34.346 A:middle
+your app while it's opting into
+
+00:25:34.346 --> 00:25:35.846 A:middle
+the new runtime, you can use the
+
+00:25:35.846 --> 00:25:37.206 A:middle
+get-task-allow entitlement.
+
+00:25:37.706 --> 00:25:39.716 A:middle
+Note that Xcode will
+
+00:25:39.716 --> 00:25:40.736 A:middle
+automatically add this
+
+00:25:40.736 --> 00:25:42.736 A:middle
+entitlement for you when you hit
+
+00:25:42.926 --> 00:25:44.356 A:middle
+Build and Run from Xcode.
+
+00:25:44.356 --> 00:25:45.566 A:middle
+So if you use Xcode as part of
+
+00:25:45.566 --> 00:25:46.936 A:middle
+your local development workflow,
+
+00:25:47.396 --> 00:25:48.126 A:middle
+then you don't need to do
+
+00:25:48.126 --> 00:25:48.486 A:middle
+anything.
+
+00:25:49.076 --> 00:25:50.516 A:middle
+Executable will also make sure
+
+00:25:50.516 --> 00:25:51.966 A:middle
+that the entitlement is properly
+
+00:25:51.966 --> 00:25:53.016 A:middle
+stripped from your signature
+
+00:25:53.016 --> 00:25:54.646 A:middle
+when you do an export for
+
+00:25:54.646 --> 00:25:55.166 A:middle
+distribution.
+
+00:25:55.836 --> 00:25:57.406 A:middle
+If you don't use Xcode, make
+
+00:25:57.406 --> 00:25:58.376 A:middle
+sure you don't ship your app
+
+00:25:58.376 --> 00:25:59.696 A:middle
+with this entitlement unless you
+
+00:25:59.696 --> 00:26:00.686 A:middle
+really need it.
+

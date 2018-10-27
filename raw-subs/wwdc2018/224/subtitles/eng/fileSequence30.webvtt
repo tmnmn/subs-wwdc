@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.986 --> 00:30:00.806 A:middle
+how Core Data works and how it's
+
+00:30:00.806 --> 00:30:01.856 A:middle
+going to help your customers
+
+00:30:01.856 --> 00:30:02.916 A:middle
+have a better experience with
+
+00:30:02.916 --> 00:30:03.716 A:middle
+your application.
+
+00:30:04.266 --> 00:30:05.316 A:middle
+As you saw in the previous
+
+00:30:05.316 --> 00:30:06.916 A:middle
+example, we can verify that our
+
+00:30:06.916 --> 00:30:08.966 A:middle
+R-tree index actually does give
+
+00:30:08.966 --> 00:30:10.456 A:middle
+us a performance benefit even
+
+00:30:10.456 --> 00:30:11.466 A:middle
+though it's using an in-memory
+
+00:30:11.466 --> 00:30:12.186 A:middle
+B-tree sort.
+
+00:30:14.276 --> 00:30:16.136 A:middle
+They also capture your product
+
+00:30:16.136 --> 00:30:17.686 A:middle
+requirements, and this is really
+
+00:30:17.686 --> 00:30:19.456 A:middle
+important to us at Core Data
+
+00:30:19.456 --> 00:30:20.896 A:middle
+because it helps us communicate
+
+00:30:20.896 --> 00:30:22.296 A:middle
+around your expectations.
+
+00:30:22.786 --> 00:30:24.026 A:middle
+With tests, we can see what
+
+00:30:24.026 --> 00:30:25.566 A:middle
+you're doing in code and how you
+
+00:30:25.566 --> 00:30:27.296 A:middle
+expect those lines of code to
+
+00:30:27.296 --> 00:30:28.546 A:middle
+behave for your customers.
+
+00:30:29.686 --> 00:30:30.816 A:middle
+There are some important things
+
+00:30:30.816 --> 00:30:31.976 A:middle
+that you can set up to make this
+
+00:30:31.976 --> 00:30:34.166 A:middle
+easy for yourself, such as a
+
+00:30:34.166 --> 00:30:36.196 A:middle
+base class that generates a
+
+00:30:36.196 --> 00:30:37.236 A:middle
+persistent container.
+
+00:30:38.406 --> 00:30:39.926 A:middle
+This base class on the screen
+
+00:30:39.926 --> 00:30:41.856 A:middle
+happens to use a file URL of
+
+00:30:41.856 --> 00:30:43.426 A:middle
+/dev/null for the persistent
+
+00:30:43.426 --> 00:30:45.316 A:middle
+store and this is a great way of
+
+00:30:45.316 --> 00:30:46.636 A:middle
+making tests that operate on a
+
+00:30:46.636 --> 00:30:48.506 A:middle
+small set of managed objects run
+
+00:30:48.506 --> 00:30:50.446 A:middle
+very, very quickly because
+
+00:30:50.446 --> 00:30:52.076 A:middle
+they'll run entirely in memory.
+
+00:30:52.776 --> 00:30:54.726 A:middle
+When you do this, SQLite
+
+00:30:54.726 --> 00:30:56.306 A:middle
+materializes an in-memory store
+
+00:30:56.306 --> 00:30:57.866 A:middle
+for you that can be very
+
+00:30:57.866 --> 00:30:59.596 A:middle
+efficient, but because it's in
+
+00:30:59.596 --> 00:31:00.756 A:middle
+memory, if you have a lot of
+

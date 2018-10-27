@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.096 --> 00:31:01.016 A:middle
+Now, direct control of your
+
+00:31:01.016 --> 00:31:02.176 A:middle
+pixel layout means that you can
+
+00:31:02.176 --> 00:31:03.666 A:middle
+now change the layout within a
+
+00:31:03.666 --> 00:31:04.186 A:middle
+pass.
+
+00:31:04.796 --> 00:31:06.136 A:middle
+This lets you combine render
+
+00:31:06.136 --> 00:31:07.336 A:middle
+passes to eliminate system
+
+00:31:07.336 --> 00:31:08.796 A:middle
+memory bandwidth in ways that
+
+00:31:08.796 --> 00:31:09.766 A:middle
+just weren't possible with
+
+00:31:09.766 --> 00:31:11.656 A:middle
+programmable blending alone.
+
+00:31:11.656 --> 00:31:12.666 A:middle
+Let's take a look at an example.
+
+00:31:15.156 --> 00:31:16.966 A:middle
+So in our previous example, we
+
+00:31:16.966 --> 00:31:18.056 A:middle
+used programmable blending to
+
+00:31:18.056 --> 00:31:19.476 A:middle
+implement single-pass deferred
+
+00:31:19.476 --> 00:31:19.846 A:middle
+shading.
+
+00:31:20.836 --> 00:31:21.756 A:middle
+You can also implement
+
+00:31:21.756 --> 00:31:22.926 A:middle
+single-pass deferred shading
+
+00:31:22.926 --> 00:31:23.906 A:middle
+using imageblocks.
+
+00:31:25.346 --> 00:31:26.726 A:middle
+Imageblocks only exist in tile
+
+00:31:26.726 --> 00:31:27.816 A:middle
+memory, so there's no render
+
+00:31:27.816 --> 00:31:28.966 A:middle
+pass attachments to deal with.
+
+00:31:29.716 --> 00:31:31.066 A:middle
+Not only is this a more natural
+
+00:31:31.066 --> 00:31:32.406 A:middle
+way to express the algorithm,
+
+00:31:32.716 --> 00:31:34.386 A:middle
+but now you're free to reuse the
+
+00:31:34.386 --> 00:31:35.926 A:middle
+tile memory once you're finished
+
+00:31:35.926 --> 00:31:37.406 A:middle
+reading the G-buffer after your
+
+00:31:37.406 --> 00:31:37.756 A:middle
+lighting.
+
+00:31:38.786 --> 00:31:39.996 A:middle
+So let's go ahead and do that.
+
+00:31:39.996 --> 00:31:41.396 A:middle
+Let's reuse the tile memory to
+
+00:31:41.396 --> 00:31:43.006 A:middle
+add an order-independent
+
+00:31:43.196 --> 00:31:44.856 A:middle
+transparency technique called
+
+00:31:44.896 --> 00:31:46.236 A:middle
+multi-layer alpha blending.
+
+00:31:51.466 --> 00:31:52.816 A:middle
+So multi-layer alpha blending,
+
+00:31:52.816 --> 00:31:55.676 A:middle
+or MLAB, maintains a per-pixel,
+
+00:31:55.676 --> 00:31:57.346 A:middle
+fixed-size array of translucent
+
+00:31:57.346 --> 00:31:57.896 A:middle
+fragments.
+
+00:31:58.556 --> 00:32:00.136 A:middle
+Each incoming fragment is sorted
+

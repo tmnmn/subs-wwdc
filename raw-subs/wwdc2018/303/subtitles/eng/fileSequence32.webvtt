@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.196 --> 00:32:00.956 A:middle
+Once you have your private key
+
+00:32:00.956 --> 00:32:03.026 A:middle
+file, you'll be ready to start
+
+00:32:03.026 --> 00:32:04.836 A:middle
+generating JSON web tokens.
+
+00:32:05.896 --> 00:32:07.166 A:middle
+Now each of these tokens will
+
+00:32:07.166 --> 00:32:08.916 A:middle
+need to contain a few pieces of
+
+00:32:08.916 --> 00:32:09.676 A:middle
+information.
+
+00:32:10.906 --> 00:32:12.246 A:middle
+First, you'll need to add your
+
+00:32:12.246 --> 00:32:14.246 A:middle
+Issuer ID, that's your account
+
+00:32:14.326 --> 00:32:17.156 A:middle
+identifier, and this ID can be
+
+00:32:17.156 --> 00:32:18.896 A:middle
+found at the top of that new
+
+00:32:18.946 --> 00:32:19.416 A:middle
+page.
+
+00:32:20.946 --> 00:32:22.726 A:middle
+You'll also need to find or
+
+00:32:22.726 --> 00:32:24.176 A:middle
+you'll also need to add the ID
+
+00:32:24.176 --> 00:32:25.086 A:middle
+of your key.
+
+00:32:25.786 --> 00:32:28.596 A:middle
+This ID can also be found on
+
+00:32:28.596 --> 00:32:31.526 A:middle
+this new page and it is specific
+
+00:32:31.526 --> 00:32:33.246 A:middle
+to the key that you'll be using.
+
+00:32:33.786 --> 00:32:37.836 A:middle
+Now each token will also need an
+
+00:32:37.836 --> 00:32:39.126 A:middle
+expiration timestamp.
+
+00:32:39.466 --> 00:32:41.886 A:middle
+As I mentioned before, your keys
+
+00:32:41.886 --> 00:32:44.236 A:middle
+do not expire but these tokens
+
+00:32:44.236 --> 00:32:45.816 A:middle
+can only be used for up to 20
+
+00:32:45.816 --> 00:32:46.036 A:middle
+minutes.
+
+00:32:46.036 --> 00:32:49.056 A:middle
+And the last two pieces of
+
+00:32:49.056 --> 00:32:51.166 A:middle
+information are simply constant.
+
+00:32:51.846 --> 00:32:54.106 A:middle
+By that, I mean they will remain
+
+00:32:54.106 --> 00:32:56.576 A:middle
+the same across all tokens and
+
+00:32:56.696 --> 00:32:58.706 A:middle
+for all App Store Connect APIs,
+
+00:32:59.186 --> 00:33:00.906 A:middle
+the first is the Audience for
+

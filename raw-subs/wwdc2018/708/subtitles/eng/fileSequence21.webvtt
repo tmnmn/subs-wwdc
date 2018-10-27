@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.726 --> 00:21:01.356 A:middle
+size -- besides the fact that
+
+00:21:01.356 --> 00:21:02.516 A:middle
+the network has been trained to
+
+00:21:02.516 --> 00:21:03.736 A:middle
+support any resolution.
+
+00:21:04.526 --> 00:21:05.186 A:middle
+Not anymore.
+
+00:21:05.586 --> 00:21:06.866 A:middle
+We are introducing flexible
+
+00:21:06.866 --> 00:21:07.246 A:middle
+shapes.
+
+00:21:07.816 --> 00:21:09.036 A:middle
+And with flexible shapes, you
+
+00:21:09.036 --> 00:21:10.526 A:middle
+have -- if you have -- you can
+
+00:21:10.526 --> 00:21:12.286 A:middle
+have the single model to process
+
+00:21:12.286 --> 00:21:13.776 A:middle
+more resolutions and many more
+
+00:21:13.776 --> 00:21:14.426 A:middle
+resolutions.
+
+00:21:14.806 --> 00:21:15.926 A:middle
+So now in Xcode --
+
+00:21:16.516 --> 00:21:20.886 A:middle
+[ Applause ]
+
+00:21:21.386 --> 00:21:23.416 A:middle
+-- in Xcode you are going to see
+
+00:21:24.366 --> 00:21:26.016 A:middle
+that this -- the input is still
+
+00:21:26.016 --> 00:21:27.986 A:middle
+an image, but the size of the
+
+00:21:27.986 --> 00:21:29.746 A:middle
+full resolution, the model also
+
+00:21:29.746 --> 00:21:31.896 A:middle
+accepts flexible resolutions.
+
+00:21:32.066 --> 00:21:33.806 A:middle
+In this simple example, SD and
+
+00:21:34.106 --> 00:21:34.173 A:middle
+HD.
+
+00:21:34.173 --> 00:21:37.566 A:middle
+This means that now you have to
+
+00:21:37.566 --> 00:21:38.786 A:middle
+ship a single model.
+
+00:21:38.786 --> 00:21:41.426 A:middle
+You don't have to have any
+
+00:21:41.426 --> 00:21:42.266 A:middle
+redundant code.
+
+00:21:43.316 --> 00:21:44.316 A:middle
+And if you need to switch
+
+00:21:44.316 --> 00:21:45.726 A:middle
+between standard definition and
+
+00:21:45.726 --> 00:21:46.906 A:middle
+high definition, you can do it
+
+00:21:46.906 --> 00:21:48.386 A:middle
+much faster because we don't
+
+00:21:48.386 --> 00:21:49.456 A:middle
+need to reload the model from
+
+00:21:49.456 --> 00:21:50.876 A:middle
+scratch; we just need to resize
+
+00:21:51.496 --> 00:21:51.566 A:middle
+it.
+
+00:21:52.236 --> 00:21:54.186 A:middle
+You have two options to specify
+
+00:21:54.186 --> 00:21:55.716 A:middle
+the flexibility of the model.
+
+00:21:57.026 --> 00:21:58.556 A:middle
+You can define a range for its
+
+00:21:58.556 --> 00:22:00.416 A:middle
+dimension, so you can define a
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.936 --> 00:33:01.156 A:middle
+BitStream Codable directly.
+
+00:33:01.876 --> 00:33:02.976 A:middle
+But we discovered we didn't need
+
+00:33:02.976 --> 00:33:04.206 A:middle
+to do that for every object in
+
+00:33:04.206 --> 00:33:05.746 A:middle
+the game, only the most frequent
+
+00:33:05.746 --> 00:33:06.306 A:middle
+messages.
+
+00:33:06.906 --> 00:33:08.396 A:middle
+This let us really move quickly
+
+00:33:08.396 --> 00:33:10.586 A:middle
+and keep better rna on the game.
+
+00:33:11.716 --> 00:33:13.216 A:middle
+So, that's how we did the
+
+00:33:13.216 --> 00:33:13.936 A:middle
+physics.
+
+00:33:14.266 --> 00:33:15.606 A:middle
+Next I want to talk about how we
+
+00:33:15.696 --> 00:33:16.686 A:middle
+dealt with the assets on the
+
+00:33:16.686 --> 00:33:17.576 A:middle
+game levels and this is the
+
+00:33:17.576 --> 00:33:18.586 A:middle
+question that a lot of people
+
+00:33:18.586 --> 00:33:19.916 A:middle
+asked us downstairs.
+
+00:33:20.646 --> 00:33:23.016 A:middle
+You know, the assets include the
+
+00:33:23.016 --> 00:33:24.576 A:middle
+3D modules, the textures, the
+
+00:33:24.576 --> 00:33:25.696 A:middle
+animations and so forth.
+
+00:33:26.136 --> 00:33:27.356 A:middle
+So, we have some text angle
+
+00:33:27.356 --> 00:33:28.876 A:middle
+artists here in Apple and they
+
+00:33:28.876 --> 00:33:30.246 A:middle
+used some commercial tools to
+
+00:33:30.246 --> 00:33:31.546 A:middle
+build the visuals for the games.
+
+00:33:31.546 --> 00:33:32.886 A:middle
+The blocks, the catapults and so
+
+00:33:32.886 --> 00:33:33.236 A:middle
+forth.
+
+00:33:34.086 --> 00:33:36.416 A:middle
+They then exported those assets
+
+00:33:36.416 --> 00:33:37.926 A:middle
+in the common DAE file format.
+
+00:33:38.286 --> 00:33:39.156 A:middle
+We're looking forward to the
+
+00:33:39.156 --> 00:33:40.876 A:middle
+commercial tools supporting USDZ
+
+00:33:41.276 --> 00:33:42.096 A:middle
+but for this game they weren't
+
+00:33:42.096 --> 00:33:42.626 A:middle
+quite there yet.
+
+00:33:43.126 --> 00:33:45.616 A:middle
+We then built a command line
+
+00:33:45.616 --> 00:33:47.576 A:middle
+tool in Swift that converts the
+
+00:33:47.576 --> 00:33:49.986 A:middle
+object from DAE into SceneKit
+
+00:33:49.986 --> 00:33:52.196 A:middle
+files using the SceneKit API.
+
+00:33:53.166 --> 00:33:54.346 A:middle
+Because SceneKit provides the
+
+00:33:54.346 --> 00:33:56.856 A:middle
+same APIs on both iOS and macOS,
+
+00:33:57.336 --> 00:33:58.976 A:middle
+we're able to run this tool as
+
+00:33:58.976 --> 00:34:00.306 A:middle
+part of our build process on
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:02.046 --> 00:42:04.296 A:middle
+So, here we are in the
+
+00:42:04.366 --> 00:42:07.266 A:middle
+simulator, running the Particles
+
+00:42:07.266 --> 00:42:08.736 A:middle
+app as seen previously.
+
+00:42:10.286 --> 00:42:11.556 A:middle
+And, what we're going to do is
+
+00:42:11.556 --> 00:42:12.506 A:middle
+just take our app to the
+
+00:42:12.506 --> 00:42:13.056 A:middle
+background.
+
+00:42:13.546 --> 00:42:14.606 A:middle
+And now, we are going to
+
+00:42:14.606 --> 00:42:15.966 A:middle
+simulate the fact that the
+
+00:42:15.966 --> 00:42:17.596 A:middle
+system is killing our app, by
+
+00:42:17.636 --> 00:42:18.976 A:middle
+killing it in Xcode.
+
+00:42:23.056 --> 00:42:25.596 A:middle
+If we launch our app again, we
+
+00:42:25.596 --> 00:42:26.886 A:middle
+see that we jump back to the
+
+00:42:26.886 --> 00:42:27.336 A:middle
+browser.
+
+00:42:28.086 --> 00:42:29.276 A:middle
+So, now what we're going to do
+
+00:42:29.276 --> 00:42:31.646 A:middle
+is implement state preservation
+
+00:42:31.686 --> 00:42:33.336 A:middle
+and restoration, to be able to
+
+00:42:33.336 --> 00:42:34.456 A:middle
+jump back to where we were.
+
+00:42:35.776 --> 00:42:37.536 A:middle
+So, I'll move to Xcode.
+
+00:42:38.086 --> 00:42:39.716 A:middle
+First of all, in our app
+
+00:42:39.716 --> 00:42:41.096 A:middle
+delegate, we'll declare to our
+
+00:42:41.096 --> 00:42:42.546 A:middle
+app that we're interested in
+
+00:42:42.546 --> 00:42:44.056 A:middle
+state preservation, and then
+
+00:42:44.056 --> 00:42:44.706 A:middle
+restoration.
+
+00:42:45.206 --> 00:42:48.936 A:middle
+And, to do that we first return
+
+00:42:48.936 --> 00:42:49.946 A:middle
+"true" in application
+
+00:42:49.946 --> 00:42:51.746 A:middle
+shouldSaveApplicationState.
+
+00:42:52.466 --> 00:42:53.706 A:middle
+And also, return "true" in
+
+00:42:53.706 --> 00:42:54.306 A:middle
+application
+
+00:42:54.306 --> 00:42:55.896 A:middle
+shouldRestoreApplicationState.
+
+00:42:57.716 --> 00:42:59.536 A:middle
+Second, we'll go to our
+
+00:42:59.536 --> 00:43:01.406 A:middle
+storyboard, and give our
+

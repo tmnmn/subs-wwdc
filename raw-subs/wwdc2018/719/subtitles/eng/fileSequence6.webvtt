@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.516 --> 00:06:03.246 A:middle
+[ Applause ]
+
+00:06:03.746 --> 00:06:05.056 A:middle
+So, with that in mind I want to
+
+00:06:05.056 --> 00:06:06.896 A:middle
+talk about a few other things
+
+00:06:06.896 --> 00:06:09.046 A:middle
+that we've added to our kernel
+
+00:06:09.046 --> 00:06:09.456 A:middle
+language.
+
+00:06:09.516 --> 00:06:10.716 A:middle
+For one thing, we have added
+
+00:06:10.716 --> 00:06:11.686 A:middle
+half float support.
+
+00:06:12.226 --> 00:06:15.046 A:middle
+There are a lot of cases when
+
+00:06:15.046 --> 00:06:17.756 A:middle
+your CI kernel can be perfectly
+
+00:06:18.256 --> 00:06:19.676 A:middle
+happy with the precision that
+
+00:06:19.676 --> 00:06:20.486 A:middle
+half float gives you.
+
+00:06:20.896 --> 00:06:22.346 A:middle
+If you're working with RGB color
+
+00:06:22.346 --> 00:06:23.916 A:middle
+values, half float precision is
+
+00:06:23.916 --> 00:06:24.656 A:middle
+more than adequate.
+
+00:06:25.036 --> 00:06:26.746 A:middle
+The advantage of using half
+
+00:06:26.746 --> 00:06:27.686 A:middle
+floats in your kernel is it
+
+00:06:27.686 --> 00:06:29.526 A:middle
+allows operations to run faster,
+
+00:06:29.526 --> 00:06:31.736 A:middle
+especially on A11 devices like
+
+00:06:31.806 --> 00:06:32.506 A:middle
+the iPhone 10.
+
+00:06:33.466 --> 00:06:34.786 A:middle
+Another advantage of using half
+
+00:06:34.786 --> 00:06:36.286 A:middle
+floats in your kernels is it
+
+00:06:36.286 --> 00:06:37.866 A:middle
+allows for smaller registers,
+
+00:06:37.866 --> 00:06:38.936 A:middle
+which increases the amount of
+
+00:06:38.936 --> 00:06:40.376 A:middle
+utilization of the GPU, which
+
+00:06:40.376 --> 00:06:41.556 A:middle
+also helps performance.
+
+00:06:42.456 --> 00:06:43.466 A:middle
+Another great feature we've
+
+00:06:43.466 --> 00:06:44.566 A:middle
+added to the kernel language
+
+00:06:44.566 --> 00:06:46.386 A:middle
+this year is adding support for
+
+00:06:46.386 --> 00:06:47.046 A:middle
+group reads.
+
+00:06:47.366 --> 00:06:48.406 A:middle
+This gives your shader the
+
+00:06:48.406 --> 00:06:49.636 A:middle
+ability to do four
+
+00:06:49.766 --> 00:06:51.166 A:middle
+single-channel reads from an
+
+00:06:51.166 --> 00:06:53.626 A:middle
+input image with only one
+
+00:06:53.626 --> 00:06:55.026 A:middle
+instruction, so this really can
+
+00:06:55.026 --> 00:06:55.236 A:middle
+help.
+
+00:06:56.636 --> 00:06:58.526 A:middle
+And as a complement to that, we
+
+00:06:58.526 --> 00:06:59.836 A:middle
+also have the ability to write
+
+00:06:59.886 --> 00:07:00.746 A:middle
+groups of pixels.
+

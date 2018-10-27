@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.936 --> 00:16:01.486 A:middle
+It provides the focusItem with a
+
+00:16:01.486 --> 00:16:03.206 A:middle
+movement hint that contains raw
+
+00:16:03.206 --> 00:16:04.806 A:middle
+values you can use to create an
+
+00:16:04.806 --> 00:16:06.706 A:middle
+effect that indicates what
+
+00:16:06.706 --> 00:16:08.376 A:middle
+direction focus is about to move
+
+00:16:08.376 --> 00:16:08.566 A:middle
+in.
+
+00:16:09.746 --> 00:16:11.066 A:middle
+Finally, you will need to
+
+00:16:11.066 --> 00:16:11.856 A:middle
+provide a frame.
+
+00:16:12.256 --> 00:16:14.006 A:middle
+As I said before, this frame
+
+00:16:14.006 --> 00:16:15.246 A:middle
+must be expressed in the
+
+00:16:15.246 --> 00:16:16.606 A:middle
+coordinateSpace of the
+
+00:16:16.606 --> 00:16:18.536 A:middle
+containing focusItemContainer.
+
+00:16:18.856 --> 00:16:21.456 A:middle
+For example, UIView expresses
+
+00:16:21.496 --> 00:16:23.526 A:middle
+its frame in the coordinateSpace
+
+00:16:23.636 --> 00:16:25.866 A:middle
+of its superview, which is also
+
+00:16:25.866 --> 00:16:26.816 A:middle
+its containing
+
+00:16:26.926 --> 00:16:27.996 A:middle
+focusItemContainer.
+
+00:16:29.296 --> 00:16:31.336 A:middle
+Now, let's take a closer look at
+
+00:16:31.336 --> 00:16:33.006 A:middle
+the focusMovementHint object.
+
+00:16:34.186 --> 00:16:35.956 A:middle
+Movement direction is a vector,
+
+00:16:36.196 --> 00:16:37.736 A:middle
+whose values range between
+
+00:16:37.736 --> 00:16:40.306 A:middle
+negative 1, negative 1 and 1,1
+
+00:16:40.636 --> 00:16:42.606 A:middle
+representing how close focus is
+
+00:16:42.606 --> 00:16:43.956 A:middle
+to moving in a particular
+
+00:16:43.956 --> 00:16:44.586 A:middle
+direction.
+
+00:16:45.426 --> 00:16:47.676 A:middle
+This value is tied to the path a
+
+00:16:47.676 --> 00:16:49.276 A:middle
+user's finger creates on the
+
+00:16:49.276 --> 00:16:50.716 A:middle
+touch surface of the Siri
+
+00:16:50.716 --> 00:16:51.056 A:middle
+remote.
+
+00:16:52.456 --> 00:16:54.546 A:middle
+Perspective, rotation, and
+
+00:16:54.546 --> 00:16:56.686 A:middle
+translation are all values you
+
+00:16:56.686 --> 00:16:59.006 A:middle
+can use to match tvOS's native
+
+00:16:59.006 --> 00:17:00.106 A:middle
+interaction hinting.
+

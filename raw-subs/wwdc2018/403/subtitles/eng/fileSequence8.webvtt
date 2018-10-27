@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.446 --> 00:08:01.196 A:middle
+Now the test finished so let's
+
+00:08:01.196 --> 00:08:02.296 A:middle
+look at the results.
+
+00:08:02.296 --> 00:08:03.906 A:middle
+We'll go to the report navigator
+
+00:08:04.936 --> 00:08:06.486 A:middle
+and to the latest coverage
+
+00:08:06.486 --> 00:08:07.016 A:middle
+reports.
+
+00:08:08.476 --> 00:08:11.566 A:middle
+Here, I can see that I have the
+
+00:08:11.696 --> 00:08:14.306 A:middle
+-- both targets, the Mac app and
+
+00:08:14.306 --> 00:08:15.106 A:middle
+also the framework.
+
+00:08:15.966 --> 00:08:18.606 A:middle
+Now the Mac app only serves as a
+
+00:08:18.606 --> 00:08:20.826 A:middle
+container for running tests, so
+
+00:08:20.826 --> 00:08:22.066 A:middle
+I'm not really concerned about
+
+00:08:22.066 --> 00:08:23.316 A:middle
+its low code coverage.
+
+00:08:23.656 --> 00:08:25.146 A:middle
+In fact, I would actually not
+
+00:08:25.146 --> 00:08:26.836 A:middle
+want to see it in this report at
+
+00:08:26.836 --> 00:08:27.226 A:middle
+all.
+
+00:08:27.736 --> 00:08:30.316 A:middle
+So, I can do that by editing the
+
+00:08:30.316 --> 00:08:31.006 A:middle
+scheme again.
+
+00:08:31.546 --> 00:08:37.056 A:middle
+And in the test action, here --
+
+00:08:37.056 --> 00:08:38.285 A:middle
+instead of gathering coverage
+
+00:08:38.285 --> 00:08:40.686 A:middle
+for all targets, I'll change to
+
+00:08:40.686 --> 00:08:41.666 A:middle
+just some targets.
+
+00:08:42.946 --> 00:08:44.906 A:middle
+This gives me a hard cover list
+
+00:08:44.906 --> 00:08:47.476 A:middle
+and I will add just the target
+
+00:08:47.476 --> 00:08:48.836 A:middle
+that I'm interested in, which is
+
+00:08:48.836 --> 00:08:49.366 A:middle
+the framework.
+
+00:08:53.496 --> 00:08:56.186 A:middle
+Now I will rerun my tests and
+
+00:08:59.206 --> 00:09:01.176 A:middle
+look at the updated coverage
+

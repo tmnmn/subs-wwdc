@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.886 --> 00:29:01.626 A:middle
+First, I'll import our shared
+
+00:29:01.626 --> 00:29:02.866 A:middle
+framework, SoupKit [laughs].
+
+00:29:03.956 --> 00:29:08.316 A:middle
+Since we're going to handle the
+
+00:29:08.316 --> 00:29:10.086 A:middle
+OrderSoupIntent, this intent
+
+00:29:10.086 --> 00:29:11.766 A:middle
+handler needs to conform to the
+
+00:29:11.766 --> 00:29:12.996 A:middle
+OrderSoupIntentHandling
+
+00:29:12.996 --> 00:29:13.606 A:middle
+protocol.
+
+00:29:15.136 --> 00:29:17.756 A:middle
+This was generated as part of
+
+00:29:18.406 --> 00:29:19.356 A:middle
+our intent.
+
+00:29:21.276 --> 00:29:23.466 A:middle
+This protocol has one required
+
+00:29:23.466 --> 00:29:25.826 A:middle
+method, the handle method.
+
+00:29:25.826 --> 00:29:28.226 A:middle
+Let's implement it.
+
+00:29:28.876 --> 00:29:31.456 A:middle
+In the handle method, I get an
+
+00:29:31.456 --> 00:29:31.926 A:middle
+intent.
+
+00:29:32.746 --> 00:29:33.926 A:middle
+I create an order from that
+
+00:29:33.926 --> 00:29:36.186 A:middle
+intent, and, if that succeeds, I
+
+00:29:36.186 --> 00:29:38.226 A:middle
+place the order, and I call the
+
+00:29:38.226 --> 00:29:39.416 A:middle
+completion with an intent
+
+00:29:39.416 --> 00:29:40.916 A:middle
+response with a success code.
+
+00:29:41.706 --> 00:29:43.186 A:middle
+If I'm unable to create an order
+
+00:29:43.416 --> 00:29:45.016 A:middle
+from the intent, I call
+
+00:29:45.016 --> 00:29:46.096 A:middle
+completion with an intent
+
+00:29:46.096 --> 00:29:47.326 A:middle
+response with a failure code.
+
+00:29:47.816 --> 00:29:49.566 A:middle
+And that's it.
+
+00:29:49.566 --> 00:29:50.946 A:middle
+I've just added support for a
+
+00:29:50.946 --> 00:29:53.016 A:middle
+new intent in my app.
+
+00:29:53.016 --> 00:29:53.686 A:middle
+Let's try it out.
+

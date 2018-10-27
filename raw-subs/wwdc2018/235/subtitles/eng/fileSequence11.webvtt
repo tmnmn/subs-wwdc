@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.326 --> 00:11:01.466 A:middle
+And we'll go ahead and line up
+
+00:11:01.516 --> 00:11:03.196 A:middle
+those margins that are smaller
+
+00:11:03.696 --> 00:11:05.356 A:middle
+than the parents in order to
+
+00:11:05.356 --> 00:11:06.556 A:middle
+make sure that everything lines
+
+00:11:06.556 --> 00:11:08.336 A:middle
+up naturally between a child and
+
+00:11:08.336 --> 00:11:08.986 A:middle
+its parent view.
+
+00:11:11.056 --> 00:11:12.996 A:middle
+Now in years past, you've
+
+00:11:12.996 --> 00:11:15.026 A:middle
+probably also tried to change
+
+00:11:15.026 --> 00:11:16.456 A:middle
+layout margins of your view
+
+00:11:16.456 --> 00:11:17.346 A:middle
+controller views.
+
+00:11:18.196 --> 00:11:19.926 A:middle
+And if you look at what we do by
+
+00:11:19.926 --> 00:11:20.506 A:middle
+default.
+
+00:11:21.326 --> 00:11:23.366 A:middle
+That this margin that you'll see
+
+00:11:23.416 --> 00:11:24.186 A:middle
+against that view.
+
+00:11:25.166 --> 00:11:27.376 A:middle
+Now we additionally added a
+
+00:11:27.376 --> 00:11:29.976 A:middle
+property last year called system
+
+00:11:29.976 --> 00:11:32.276 A:middle
+minimum layout margins and these
+
+00:11:32.276 --> 00:11:33.986 A:middle
+margins are the minimum margins
+
+00:11:34.026 --> 00:11:36.336 A:middle
+that we've combined against any
+
+00:11:36.336 --> 00:11:38.596 A:middle
+margins you provide now to
+
+00:11:38.596 --> 00:11:39.676 A:middle
+create the final margin.
+
+00:11:40.226 --> 00:11:41.296 A:middle
+So if you wanted to add to the
+
+00:11:41.296 --> 00:11:42.796 A:middle
+top and bottom of this, you can
+
+00:11:42.796 --> 00:11:44.516 A:middle
+do that without disturbing the
+
+00:11:44.516 --> 00:11:45.776 A:middle
+left and right margins that
+
+00:11:45.776 --> 00:11:46.546 A:middle
+UIKit provides.
+
+00:11:47.536 --> 00:11:48.836 A:middle
+But again, you might want a
+
+00:11:48.836 --> 00:11:49.776 A:middle
+little bit more control.
+
+00:11:49.826 --> 00:11:51.606 A:middle
+And so there's another property
+
+00:11:52.786 --> 00:11:54.766 A:middle
+called view respects system
+
+00:11:54.766 --> 00:11:55.876 A:middle
+minimum layout margins.
+
+00:11:56.786 --> 00:11:58.776 A:middle
+If you want your margins to be
+
+00:11:58.776 --> 00:11:59.786 A:middle
+completely underneath your
+
+00:11:59.786 --> 00:12:02.756 A:middle
+control, flip this to false, and
+

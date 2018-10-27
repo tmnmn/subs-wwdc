@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.296 --> 00:06:00.126 A:middle
+build and run this package.
+
+00:06:00.466 --> 00:06:03.066 A:middle
+This compiles the package, links
+
+00:06:03.066 --> 00:06:05.056 A:middle
+executable, and we see
+
+00:06:05.056 --> 00:06:06.266 A:middle
+helloworld is the output.
+
+00:06:06.766 --> 00:06:09.366 A:middle
+Next, I'm going to switch to
+
+00:06:09.366 --> 00:06:10.766 A:middle
+another terminal window, where
+
+00:06:10.766 --> 00:06:12.076 A:middle
+I've prepared a more complex
+
+00:06:12.136 --> 00:06:12.566 A:middle
+package.
+
+00:06:12.706 --> 00:06:13.656 A:middle
+We will use this in the
+
+00:06:13.656 --> 00:06:16.926 A:middle
+following to discuss the basic
+
+00:06:17.116 --> 00:06:18.276 A:middle
+concepts of SwiftPM.
+
+00:06:19.026 --> 00:06:22.106 A:middle
+But, first, let's also just run
+
+00:06:22.106 --> 00:06:23.346 A:middle
+it to see what it does.
+
+00:06:24.236 --> 00:06:25.986 A:middle
+So, you can see, it outputs
+
+00:06:25.986 --> 00:06:27.546 A:middle
+randomly generated playing cards
+
+00:06:27.986 --> 00:06:28.666 A:middle
+to the terminal.
+
+00:06:35.076 --> 00:06:36.666 A:middle
+Now, we can switch back to the
+
+00:06:36.666 --> 00:06:39.816 A:middle
+slides to talk about SwiftPM's
+
+00:06:39.866 --> 00:06:40.816 A:middle
+basic concepts.
+
+00:06:47.436 --> 00:06:49.186 A:middle
+A package consists of three
+
+00:06:49.186 --> 00:06:51.006 A:middle
+major parts; dependencies,
+
+00:06:52.576 --> 00:06:57.206 A:middle
+targets and products.
+
+00:06:57.736 --> 00:06:59.666 A:middle
+And we'll look into each of
+
+00:06:59.666 --> 00:07:01.356 A:middle
+these in more detail in the
+

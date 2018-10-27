@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.356 --> 00:14:00.546 A:middle
+with application analytics.
+
+00:14:01.886 --> 00:14:02.886 A:middle
+It's likely that when you're
+
+00:14:02.886 --> 00:14:04.046 A:middle
+collecting these analytics
+
+00:14:04.396 --> 00:14:04.986 A:middle
+you'll be sending them
+
+00:14:04.986 --> 00:14:06.416 A:middle
+immediately because this is a
+
+00:14:06.416 --> 00:14:07.756 A:middle
+very robust solution, and it
+
+00:14:07.756 --> 00:14:09.266 A:middle
+allows you to build a dataset
+
+00:14:09.686 --> 00:14:10.606 A:middle
+that is protected against
+
+00:14:10.606 --> 00:14:11.726 A:middle
+crashes in your application.
+
+00:14:12.986 --> 00:14:14.466 A:middle
+Well, doing that may not be very
+
+00:14:14.466 --> 00:14:15.286 A:middle
+energy efficient.
+
+00:14:15.956 --> 00:14:17.196 A:middle
+If we were to send our analytics
+
+00:14:17.196 --> 00:14:18.056 A:middle
+every time we went into the
+
+00:14:18.056 --> 00:14:19.826 A:middle
+background, we would risk
+
+00:14:19.826 --> 00:14:20.876 A:middle
+overusing our networking
+
+00:14:20.876 --> 00:14:21.236 A:middle
+hardware.
+
+00:14:21.726 --> 00:14:23.836 A:middle
+And here's how that looks like
+
+00:14:23.836 --> 00:14:24.866 A:middle
+when we take a look at the power
+
+00:14:24.866 --> 00:14:25.566 A:middle
+over time curve.
+
+00:14:26.566 --> 00:14:27.376 A:middle
+Every time we enter the
+
+00:14:27.376 --> 00:14:28.896 A:middle
+background, we would spin up
+
+00:14:28.896 --> 00:14:30.526 A:middle
+networking resources to send
+
+00:14:30.526 --> 00:14:31.516 A:middle
+these analytics, and then we
+
+00:14:31.516 --> 00:14:32.606 A:middle
+would come down and go idle
+
+00:14:32.606 --> 00:14:32.856 A:middle
+again.
+
+00:14:34.106 --> 00:14:35.176 A:middle
+This may not look like a lot
+
+00:14:35.406 --> 00:14:36.886 A:middle
+with just three on this graph,
+
+00:14:37.346 --> 00:14:38.356 A:middle
+but you can imagine if your
+
+00:14:38.356 --> 00:14:39.516 A:middle
+application is experiencing
+
+00:14:39.516 --> 00:14:41.216 A:middle
+heavy usage, this adds up over
+
+00:14:41.216 --> 00:14:41.526 A:middle
+time.
+
+00:14:43.816 --> 00:14:45.186 A:middle
+The right way to do this is
+
+00:14:45.226 --> 00:14:48.246 A:middle
+super straightforward, and it's
+
+00:14:48.246 --> 00:14:49.586 A:middle
+simply to send these in deferred
+
+00:14:49.586 --> 00:14:50.166 A:middle
+batches.
+
+00:14:50.216 --> 00:14:52.226 A:middle
+We have a lot of APIs that
+
+00:14:52.226 --> 00:14:54.056 A:middle
+support this coalescing
+
+00:14:54.056 --> 00:14:55.346 A:middle
+principle, and one of the
+
+00:14:55.346 --> 00:14:56.836 A:middle
+biggest ones is NSURLSession.
+
+00:14:57.896 --> 00:14:59.156 A:middle
+Using NSURLSession with a
+
+00:14:59.156 --> 00:15:00.836 A:middle
+discretionary property and a
+

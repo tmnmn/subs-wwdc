@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.256 --> 00:35:00.676 A:middle
+And we're going much faster than
+
+00:35:00.676 --> 00:35:01.426 A:middle
+we were, previously.
+
+00:35:03.396 --> 00:35:05.626 A:middle
+So, the scene here has
+
+00:35:05.626 --> 00:35:06.606 A:middle
+approximately one million
+
+00:35:06.606 --> 00:35:07.266 A:middle
+triangles.
+
+00:35:07.266 --> 00:35:08.716 A:middle
+And we're now going to switch to
+
+00:35:09.026 --> 00:35:09.816 A:middle
+an outside view.
+
+00:35:09.816 --> 00:35:11.166 A:middle
+It's the same Amazon Lumberyard
+
+00:35:11.166 --> 00:35:13.016 A:middle
+scene but we're outside, now.
+
+00:35:13.336 --> 00:35:14.666 A:middle
+And this scene has approximately
+
+00:35:14.666 --> 00:35:16.306 A:middle
+3 million triangles.
+
+00:35:17.516 --> 00:35:19.516 A:middle
+And I have another GPU sitting
+
+00:35:19.516 --> 00:35:19.706 A:middle
+here.
+
+00:35:19.706 --> 00:35:20.696 A:middle
+So, we'll turn that one on, too.
+
+00:35:21.046 --> 00:35:24.016 A:middle
+And, this time, it's a Vega 64.
+
+00:35:24.356 --> 00:35:26.026 A:middle
+So, you see the Vega grabbing a
+
+00:35:26.116 --> 00:35:27.036 A:middle
+big chunk of the work, there.
+
+00:35:28.266 --> 00:35:30.006 A:middle
+And what's interesting about
+
+00:35:30.006 --> 00:35:31.296 A:middle
+this configuration is we have
+
+00:35:31.296 --> 00:35:32.766 A:middle
+three very different GPUs
+
+00:35:32.766 --> 00:35:33.396 A:middle
+working together.
+
+00:35:33.716 --> 00:35:34.966 A:middle
+They're different architectures
+
+00:35:35.576 --> 00:35:36.376 A:middle
+and they're very different
+
+00:35:36.376 --> 00:35:37.046 A:middle
+performance, too.
+
+00:35:37.046 --> 00:35:38.056 A:middle
+But they're all working together
+
+00:35:38.056 --> 00:35:39.416 A:middle
+to help produce this great
+
+00:35:39.886 --> 00:35:40.000 A:middle
+image.
+
+00:35:43.516 --> 00:35:48.500 A:middle
+[ Applause ]
+
+00:35:51.046 --> 00:35:52.666 A:middle
+So, today we introduced the
+
+00:35:52.666 --> 00:35:54.606 A:middle
+MPSRayIntersector, a new API
+
+00:35:54.606 --> 00:35:56.066 A:middle
+that you can use to accelerate
+
+00:35:56.066 --> 00:35:57.636 A:middle
+ray triangle intersections on
+
+00:35:57.636 --> 00:35:58.156 A:middle
+the GPU.
+
+00:35:58.276 --> 00:36:01.346 A:middle
+As you saw from my demos, it's
+

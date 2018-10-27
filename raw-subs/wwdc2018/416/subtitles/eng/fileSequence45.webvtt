@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.906 --> 00:45:00.276 A:middle
+I send it to the filter, I want
+
+00:45:00.276 --> 00:45:01.746 A:middle
+to scale down the image.
+
+00:45:02.096 --> 00:45:03.846 A:middle
+However, I remember what Kyle
+
+00:45:03.846 --> 00:45:04.226 A:middle
+said.
+
+00:45:04.536 --> 00:45:05.656 A:middle
+I don't want to do the scaling
+
+00:45:05.656 --> 00:45:07.406 A:middle
+on UIImage because it still ends
+
+00:45:07.406 --> 00:45:08.816 A:middle
+up just loading that whole image
+
+00:45:08.816 --> 00:45:10.266 A:middle
+into memory anyway, which is
+
+00:45:10.266 --> 00:45:11.396 A:middle
+what I'm trying to avoid.
+
+00:45:11.906 --> 00:45:13.876 A:middle
+So I'm going to go ahead and
+
+00:45:13.986 --> 00:45:15.826 A:middle
+let's collapse this function.
+
+00:45:16.106 --> 00:45:17.556 A:middle
+And I'm going to replace it with
+
+00:45:17.676 --> 00:45:19.946 A:middle
+the code Kyle suggested.
+
+00:45:20.496 --> 00:45:23.386 A:middle
+Okay, so let's take a look at
+
+00:45:23.386 --> 00:45:24.656 A:middle
+what this code is doing.
+
+00:45:25.886 --> 00:45:28.696 A:middle
+So here again, we're getting the
+
+00:45:28.996 --> 00:45:31.286 A:middle
+image from the bundle, but now,
+
+00:45:31.286 --> 00:45:33.206 A:middle
+this time -- just a little
+
+00:45:33.206 --> 00:45:35.376 A:middle
+lighter -- I'm calling
+
+00:45:35.746 --> 00:45:38.066 A:middle
+CGImageSource CreateWithURL to
+
+00:45:38.066 --> 00:45:39.796 A:middle
+get a reference to the image and
+
+00:45:39.796 --> 00:45:41.016 A:middle
+then passing that to
+
+00:45:41.096 --> 00:45:43.066 A:middle
+CGImageSource CreateThumbnail
+
+00:45:43.066 --> 00:45:43.816 A:middle
+AtIndex.
+
+00:45:44.156 --> 00:45:45.906 A:middle
+So now, I can scale the image to
+
+00:45:45.906 --> 00:45:47.526 A:middle
+the size I want without having
+
+00:45:47.526 --> 00:45:48.636 A:middle
+to load the whole thing into
+
+00:45:48.636 --> 00:45:49.026 A:middle
+memory.
+
+00:45:49.656 --> 00:45:51.366 A:middle
+Let's give this a shot and see
+
+00:45:51.366 --> 00:45:52.506 A:middle
+if it makes a difference.
+
+00:45:52.626 --> 00:45:53.506 A:middle
+I'm going to go ahead and
+
+00:45:53.506 --> 00:45:56.866 A:middle
+rebuild and wait for it to
+
+00:45:56.866 --> 00:45:58.176 A:middle
+launch on the application.
+
+00:45:59.486 --> 00:46:02.356 A:middle
+And then, once it's there -- oh,
+

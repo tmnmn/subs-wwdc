@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.286 --> 00:26:01.416 A:middle
+appropriate HTTP response status
+
+00:26:01.976 --> 00:26:03.256 A:middle
+indicating what went wrong,
+
+00:26:03.356 --> 00:26:04.866 A:middle
+usually something in the 400s.
+
+00:26:05.166 --> 00:26:06.286 A:middle
+And this is often all you really
+
+00:26:06.286 --> 00:26:06.596 A:middle
+need.
+
+00:26:06.596 --> 00:26:08.256 A:middle
+Most REST client libraries have
+
+00:26:08.256 --> 00:26:10.136 A:middle
+a Did Succeed or it Is Success
+
+00:26:10.136 --> 00:26:11.716 A:middle
+function and you can call that
+
+00:26:11.716 --> 00:26:13.096 A:middle
+and it will correctly tell you
+
+00:26:13.096 --> 00:26:14.806 A:middle
+if the request was successful or
+
+00:26:14.806 --> 00:26:15.016 A:middle
+not.
+
+00:26:15.516 --> 00:26:16.656 A:middle
+But if you want to know more
+
+00:26:16.656 --> 00:26:18.036 A:middle
+about what went wrong, you can
+
+00:26:18.036 --> 00:26:19.416 A:middle
+look down into the response.
+
+00:26:19.956 --> 00:26:21.416 A:middle
+When a request fails, instead of
+
+00:26:21.416 --> 00:26:22.756 A:middle
+that data property we've been
+
+00:26:22.756 --> 00:26:24.246 A:middle
+seeing all along, we'll give you
+
+00:26:24.246 --> 00:26:25.316 A:middle
+an error's property.
+
+00:26:25.546 --> 00:26:26.856 A:middle
+This is an array of error
+
+00:26:26.856 --> 00:26:27.376 A:middle
+objects.
+
+00:26:27.746 --> 00:26:28.876 A:middle
+But there can be multiple of
+
+00:26:28.876 --> 00:26:30.706 A:middle
+them, each one representing some
+
+00:26:30.706 --> 00:26:31.986 A:middle
+problem with the request you
+
+00:26:31.986 --> 00:26:32.326 A:middle
+sent.
+
+00:26:33.456 --> 00:26:35.206 A:middle
+They have an id that uniquely
+
+00:26:35.206 --> 00:26:36.786 A:middle
+identifies this particular error
+
+00:26:37.246 --> 00:26:38.456 A:middle
+of this particular response.
+
+00:26:38.726 --> 00:26:40.586 A:middle
+You might log this away and if
+
+00:26:40.586 --> 00:26:41.416 A:middle
+you think there's a problem on
+
+00:26:41.416 --> 00:26:42.446 A:middle
+our end, send it to us.
+
+00:26:42.446 --> 00:26:43.706 A:middle
+It'll help us track it down.
+
+00:26:44.486 --> 00:26:46.336 A:middle
+More useful for you is the title
+
+00:26:46.336 --> 00:26:46.986 A:middle
+and detail.
+
+00:26:47.496 --> 00:26:48.606 A:middle
+These together give you an
+
+00:26:48.606 --> 00:26:50.556 A:middle
+English language explanation of
+
+00:26:50.556 --> 00:26:51.266 A:middle
+what went wrong.
+
+00:26:51.536 --> 00:26:52.716 A:middle
+From the title here, I can see
+
+00:26:52.716 --> 00:26:53.596 A:middle
+that I have something wrong with
+
+00:26:53.596 --> 00:26:54.366 A:middle
+my parameters.
+
+00:26:54.916 --> 00:26:56.766 A:middle
+And from the detail, it tells me
+
+00:26:56.766 --> 00:26:58.106 A:middle
+that I'm filtering by email and
+
+00:26:58.106 --> 00:26:59.556 A:middle
+right away I see that I spelled
+
+00:26:59.556 --> 00:27:00.716 A:middle
+email incorrectly.
+

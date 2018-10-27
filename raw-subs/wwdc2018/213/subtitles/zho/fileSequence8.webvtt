@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.346 --> 00:08:01.782 align:middle line:-2
+现在如果你已将
+立即播放元数据设置为
+
+00:08:01.849 --> 00:08:03.483 align:middle line:-1
+控制中心或锁定屏幕
+
+00:08:03.550 --> 00:08:06.253 align:middle line:-2
+或你正在现有的音频app中
+开发此功能
+
+00:08:06.520 --> 00:08:08.555 align:middle line:-1
+那么你一定已经很熟悉这两个API
+
+00:08:10.090 --> 00:08:12.659 align:middle line:-2
+MPNowPlayingInfo
+中心允许你
+
+00:08:12.726 --> 00:08:17.331 align:middle line:-2
+填充立即播放元数据及其它元素
+比如标题和专辑名称等等
+
+00:08:17.397 --> 00:08:20.334 align:middle line:-2
+在CarPlay车载系统的
+立即播放屏幕上
+
+00:08:20.400 --> 00:08:23.737 align:middle line:-2
+以及控制中心和锁定屏幕
+如果你已经这么做了
+
+00:08:24.438 --> 00:08:28.175 align:middle line:-2
+MPRemoteCommandCenter
+允许你的app响应远程命令事件
+
+00:08:28.509 --> 00:08:31.111 align:middle line:-1
+比如播放命令、下一曲等等
+
+00:08:32.111 --> 00:08:35.716 align:middle line:-2
+我们希望让CarPlay车载app
+拥有流畅的立即播放体验
+
+00:08:35.782 --> 00:08:37.751 align:middle line:-2
+现在让我们看看
+这些如何在代码中实现
+
+00:08:39.086 --> 00:08:40.419 align:middle line:-1
+当打开Srirocka后
+
+00:08:40.486 --> 00:08:42.188 align:middle line:-1
+我要把Srirocka当个例子
+
+00:08:42.556 --> 00:08:45.559 align:middle line:-2
+这是支持CarPlay车载
+音频app所需要的最少操作
+
+00:08:45.993 --> 00:08:48.629 align:middle line:-2
+Srirocka会提供一个数据源
+和一个委托
+
+00:08:49.029 --> 00:08:52.833 align:middle line:-2
+给MPPlayableContentManager
+因此Srirocka可以提供信息
+
+00:08:52.900 --> 00:08:56.236 align:middle line:-2
+到CarPlay车载显示屏
+并在绝对必要时做出响应
+
+00:08:57.437 --> 00:09:02.509 align:middle line:-2
+接下来我会设置NowPlayingInfoCenter
+并让MPNowPlayingInfoCenter了解
+

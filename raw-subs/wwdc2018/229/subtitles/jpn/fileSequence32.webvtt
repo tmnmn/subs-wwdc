@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:55.649 --> 00:32:00.487 align:start position:12% line:-1
+NSViewはSwiftに変換されないため
+
+00:32:00.587 --> 00:32:04.191 align:start position:23% line:-2
+NSViewのNSArrayは
+遅延変換となります
+
+00:32:04.324 --> 00:32:08.462 align:start position:30% line:-2
+最初のアクセスまで
+ブリッジ変換されません
+
+00:32:10.731 --> 00:32:16.603 align:start position:21% line:-2
+NSDictionaryのキーが
+NSStringなら先行です
+
+00:32:17.337 --> 00:32:21.608 align:start position:25% line:-2
+文字列はSwiftで
+値型として認識されるからです
+
+00:32:22.242 --> 00:32:27.681 align:start position:23% line:-2
+ブリッジ変換を理解したところで
+最も重要なことは
+
+00:32:28.015 --> 00:32:33.554 align:start position:25% line:-2
+アプリケーションに悪影響が
+ある際に使うべきという点です
+
+00:32:35.856 --> 00:32:38.458 align:start position:16% line:-2
+Instrumentsの
+Time Profilerなどを使う時
+
+00:32:38.559 --> 00:32:44.364 align:start position:21% line:-2
+言語間のどこで
+コードが交わるかに注意しましょう
+
+00:32:44.898 --> 00:32:47.434 align:start position:25% line:-1
+ブリッジがあっても大丈夫です
+
+00:32:47.534 --> 00:32:51.939 align:start position:27% line:-2
+問題は bridgeを含む
+自分が書いていないコードで
+
+00:32:52.039 --> 00:32:55.409 align:start position:23% line:-1
+膨大な時間を要している場合です
+
+00:32:56.443 --> 00:32:57.978 align:start position:38% line:-1
+例で説明します
+
+00:32:58.779 --> 00:33:01.448 align:start position:34% line:-1
+童話の原稿があって
+

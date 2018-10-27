@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.946 --> 00:26:01.286 A:middle
+about and putting that intuition
+
+00:26:01.286 --> 00:26:02.006 A:middle
+into practice.
+
+00:26:02.336 --> 00:26:03.926 A:middle
+So please enjoy.
+
+00:26:04.516 --> 00:26:11.546 A:middle
+[ Applause ]
+
+00:26:12.046 --> 00:26:12.846 A:middle
+&gt;&gt; Ok let me get to my slide
+
+00:26:12.846 --> 00:26:13.096 A:middle
+here.
+
+00:26:14.056 --> 00:26:14.586 A:middle
+Thank you, Ken.
+
+00:26:14.946 --> 00:26:15.696 A:middle
+Hi everybody.
+
+00:26:15.956 --> 00:26:17.246 A:middle
+My name is Kasia Wawer.
+
+00:26:17.796 --> 00:26:18.896 A:middle
+I am a member of the iOS
+
+00:26:18.896 --> 00:26:20.886 A:middle
+Keyboards Team and we use Auto
+
+00:26:20.886 --> 00:26:22.106 A:middle
+Layout and we love it.
+
+00:26:22.646 --> 00:26:24.006 A:middle
+So I get to talk to all of you
+
+00:26:24.006 --> 00:26:24.916 A:middle
+about building efficient
+
+00:26:24.916 --> 00:26:25.206 A:middle
+layouts.
+
+00:26:26.286 --> 00:26:27.056 A:middle
+All right, let's go back to
+
+00:26:27.056 --> 00:26:28.376 A:middle
+Constraint Churn real quick
+
+00:26:28.376 --> 00:26:28.586 A:middle
+here.
+
+00:26:29.116 --> 00:26:30.396 A:middle
+Constraint churn as we heard
+
+00:26:30.396 --> 00:26:31.876 A:middle
+happens when you change your
+
+00:26:31.876 --> 00:26:33.726 A:middle
+constraints but the actual views
+
+00:26:33.726 --> 00:26:35.396 A:middle
+don't need to move so you're
+
+00:26:35.396 --> 00:26:36.816 A:middle
+sending extra work to the engine
+
+00:26:37.276 --> 00:26:38.456 A:middle
+and enough of that can affect
+
+00:26:38.456 --> 00:26:39.106 A:middle
+your performance.
+
+00:26:39.106 --> 00:26:40.776 A:middle
+So you tend to want to avoid it.
+
+00:26:41.636 --> 00:26:43.646 A:middle
+So let's talk about how you
+
+00:26:43.646 --> 00:26:45.746 A:middle
+might run into this problem and
+
+00:26:45.746 --> 00:26:46.556 A:middle
+how you might get out of it.
+
+00:26:46.556 --> 00:26:48.386 A:middle
+So we're going to work with a
+
+00:26:48.386 --> 00:26:49.056 A:middle
+spec here.
+
+00:26:49.286 --> 00:26:50.586 A:middle
+This is for a social media type
+
+00:26:50.586 --> 00:26:50.866 A:middle
+app.
+
+00:26:51.586 --> 00:26:52.526 A:middle
+There's an avatar view that
+
+00:26:52.526 --> 00:26:53.566 A:middle
+shows you who is sharing.
+
+00:26:53.566 --> 00:26:56.336 A:middle
+There's a title, a date, and a
+
+00:26:56.336 --> 00:26:59.206 A:middle
+log entry view and for that
+
+00:26:59.206 --> 00:27:00.186 A:middle
+you're going to need some
+

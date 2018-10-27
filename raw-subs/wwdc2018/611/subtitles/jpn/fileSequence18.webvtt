@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.712 --> 00:18:03.183 align:start position:30% line:-2
+この時点で
+かなり よい見本ですが
+
+00:18:03.484 --> 00:18:05.752 align:start position:34% line:-1
+もっと改善できます
+
+00:18:07.087 --> 00:18:11.291 align:start position:29% line:-2
+レンダリングスレッドには
+まだ待ち時間があります
+
+00:18:11.391 --> 00:18:17.397 align:start position:23% line:-2
+Poseを受け取るまで
+エンコードを待っている状態です
+
+00:18:17.498 --> 00:18:21.869 align:start position:27% line:-2
+しかしPoseを
+必要としない処理もあります
+
+00:18:23.003 --> 00:18:26.507 align:start position:27% line:-1
+もっと詳しく見てみましょう
+
+00:18:28.408 --> 00:18:33.247 align:start position:30% line:-2
+各フレームで実行される
+処理のリストです
+
+00:18:33.947 --> 00:18:36.383 align:start position:34% line:-2
+一部はスクリーンで
+発生します
+
+00:18:36.483 --> 00:18:41.088 align:start position:29% line:-2
+Poseの情報を
+必要とするものもあります
+
+00:18:41.388 --> 00:18:44.391 align:start position:21% line:-1
+これをPose依存処理と呼びます
+
+00:18:44.992 --> 00:18:48.362 align:start position:27% line:-1
+一方で 一般的な処理もあり
+
+00:18:48.462 --> 00:18:52.366 align:start position:32% line:-2
+Poseの情報なしで
+すぐ実行できます
+
+00:18:53.000 --> 00:18:56.136 align:start position:29% line:-1
+これを独立処理と呼びます
+
+00:18:57.638 --> 00:19:03.343 align:start position:27% line:-2
+先ほど アプリケーションは
+Poseを待っていましたが
+

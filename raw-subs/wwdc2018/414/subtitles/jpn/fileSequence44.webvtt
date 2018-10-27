@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.606 --> 00:44:01.375 align:start position:32% line:-1
+この後 お見せします
+
+00:44:01.475 --> 00:44:04.244 align:start position:27% line:-1
+その前にログを読みましょう
+
+00:44:05.312 --> 00:44:08.215 align:start position:23% line:-1
+スレッドのスタック全体を見ます
+
+00:44:08.315 --> 00:44:09.817 align:start position:32% line:-1
+このボタンを押すと―
+
+00:44:09.917 --> 00:44:12.286 align:start position:27% line:-1
+他のスレッドが表示されます
+
+00:44:12.986 --> 00:44:15.856 align:start position:34% line:-1
+上のほうを見ると―
+
+00:44:15.956 --> 00:44:20.627 align:start position:23% line:-2
+free関数が停止を
+呼び出していることが分かります
+
+00:44:20.761 --> 00:44:23.664 align:start position:25% line:-1
+ヒープの破損だという示唆です
+
+00:44:25.265 --> 00:44:27.468 align:start position:29% line:-1
+他のスレッドも見ましょう
+
+00:44:27.568 --> 00:44:29.236 align:start position:34% line:-1
+スレッド５を見ると
+
+00:44:29.636 --> 00:44:33.740 align:start position:23% line:-2
+LazyImageView内で
+やはりコードを実行しています
+
+00:44:35.108 --> 00:44:38.178 align:start position:27% line:-1
+別のクラッシュも見ましょう
+
+00:44:39.213 --> 00:44:42.182 align:start position:27% line:-1
+どのログでも共通しています
+
+00:44:42.316 --> 00:44:47.221 align:start position:21% line:-2
+あるスレッドが
+free関数の停止でヒープ破損し
+
+00:44:47.321 --> 00:44:52.526 align:start position:21% line:-2
+別のスレッドが
+コードの似た箇所で処理しています
+
+00:44:52.626 --> 00:44:55.729 align:start position:16% line:-1
+やはりLazyImageView内です
+
+00:44:55.929 --> 00:44:58.031 align:start position:32% line:-1
+偶然ではないでしょう
+
+00:44:58.132 --> 00:45:00.768 align:start position:21% line:-1
+マルチスレッドバグだと思われます
+

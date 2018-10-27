@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.266 --> 00:29:00.856 A:middle
+can tell where our user is in
+
+00:29:00.856 --> 00:29:01.606 A:middle
+the application.
+
+00:29:02.626 --> 00:29:04.466 A:middle
+Now you could certainly do this
+
+00:29:04.466 --> 00:29:07.246 A:middle
+with a signpost, but you'd have
+
+00:29:07.296 --> 00:29:08.526 A:middle
+to drag in the os signpost
+
+00:29:08.526 --> 00:29:10.366 A:middle
+instrument and record all of the
+
+00:29:10.366 --> 00:29:11.556 A:middle
+signpost activity on the
+
+00:29:11.556 --> 00:29:12.146 A:middle
+application.
+
+00:29:12.146 --> 00:29:14.316 A:middle
+And it sort of dilutes how
+
+00:29:14.316 --> 00:29:16.456 A:middle
+important these user navigation
+
+00:29:16.456 --> 00:29:17.086 A:middle
+events are.
+
+00:29:17.756 --> 00:29:19.386 A:middle
+So what we allow you to do is
+
+00:29:19.386 --> 00:29:20.826 A:middle
+promote them to what are called
+
+00:29:20.936 --> 00:29:21.796 A:middle
+points of interest.
+
+00:29:22.566 --> 00:29:23.746 A:middle
+Now if I go to our code for the
+
+00:29:23.746 --> 00:29:26.636 A:middle
+detail controller and we look at
+
+00:29:26.636 --> 00:29:28.406 A:middle
+our viewDidAppear method, you
+
+00:29:28.406 --> 00:29:31.006 A:middle
+can see that I'm posting -- I'm
+
+00:29:31.006 --> 00:29:32.426 A:middle
+creating an os signpost event
+
+00:29:33.076 --> 00:29:34.296 A:middle
+saying that a detail appeared
+
+00:29:34.696 --> 00:29:36.136 A:middle
+and with the name of the detail.
+
+00:29:37.186 --> 00:29:38.206 A:middle
+Now this is sent to a special
+
+00:29:38.206 --> 00:29:39.486 A:middle
+log handle that we've created
+
+00:29:39.486 --> 00:29:40.516 A:middle
+called points of interest.
+
+00:29:40.986 --> 00:29:42.116 A:middle
+And the way that you create that
+
+00:29:42.556 --> 00:29:43.836 A:middle
+is by creating a log handle with
+
+00:29:43.946 --> 00:29:46.166 A:middle
+your subsystem identifier and
+
+00:29:46.256 --> 00:29:47.976 A:middle
+the systems points of interest
+
+00:29:47.976 --> 00:29:48.466 A:middle
+category.
+
+00:29:48.666 --> 00:29:49.946 A:middle
+So this is a special category
+
+00:29:49.946 --> 00:29:50.886 A:middle
+that Instruments will be looking
+
+00:29:50.886 --> 00:29:51.196 A:middle
+for.
+
+00:29:51.656 --> 00:29:52.896 A:middle
+And when it sees points here,
+
+00:29:53.246 --> 00:29:55.746 A:middle
+it'll place them into the points
+
+00:29:55.786 --> 00:29:57.196 A:middle
+of interest instrument.
+
+00:29:57.336 --> 00:29:59.856 A:middle
+So if we come back here and take
+
+00:29:59.856 --> 00:30:01.636 A:middle
+a time profile, you can see that
+

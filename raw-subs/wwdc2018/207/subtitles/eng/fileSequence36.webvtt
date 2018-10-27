@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.986 --> 00:36:00.866 A:middle
+So, what have you done?
+
+00:36:01.306 --> 00:36:02.616 A:middle
+You have deployed content
+
+00:36:02.616 --> 00:36:04.706 A:middle
+security policy and you've
+
+00:36:05.016 --> 00:36:07.746 A:middle
+specified from where you allow
+
+00:36:07.746 --> 00:36:10.316 A:middle
+frames and please don't allow
+
+00:36:10.316 --> 00:36:11.176 A:middle
+evil.example.
+
+00:36:12.386 --> 00:36:14.466 A:middle
+This is how you protect
+
+00:36:14.466 --> 00:36:16.666 A:middle
+accidentally getting a frame in
+
+00:36:16.666 --> 00:36:19.116 A:middle
+your process from evil.example.
+
+00:36:20.176 --> 00:36:22.286 A:middle
+So, the reverse.
+
+00:36:22.496 --> 00:36:24.796 A:middle
+Can evil.example pull your web
+
+00:36:24.796 --> 00:36:26.996 A:middle
+content into the evil process?
+
+00:36:27.876 --> 00:36:28.396 A:middle
+Of course.
+
+00:36:29.186 --> 00:36:30.446 A:middle
+So, how do you protect against
+
+00:36:30.446 --> 00:36:30.736 A:middle
+that?
+
+00:36:31.546 --> 00:36:32.646 A:middle
+We are back at the content
+
+00:36:32.646 --> 00:36:34.396 A:middle
+security policy and now we see
+
+00:36:34.606 --> 00:36:35.846 A:middle
+frame ancestors.
+
+00:36:36.016 --> 00:36:37.326 A:middle
+And this is what I referred to
+
+00:36:37.566 --> 00:36:38.896 A:middle
+earlier with a slightly
+
+00:36:38.896 --> 00:36:39.686 A:middle
+different flavor.
+
+00:36:40.086 --> 00:36:41.916 A:middle
+You can actually say none and
+
+00:36:41.916 --> 00:36:44.736 A:middle
+this means never iframe me.
+
+00:36:45.546 --> 00:36:47.206 A:middle
+This content should never be in
+
+00:36:47.206 --> 00:36:48.486 A:middle
+an iframe from someone else.
+
+00:36:49.006 --> 00:36:49.896 A:middle
+This is my content.
+
+00:36:50.256 --> 00:36:51.896 A:middle
+Only I get to render this thing.
+
+00:36:52.636 --> 00:36:54.756 A:middle
+So, this-- if you place this,
+
+00:36:55.236 --> 00:36:57.986 A:middle
+that-- the evil.example page
+
+00:36:57.986 --> 00:37:00.616 A:middle
+cannot pull in your content in
+

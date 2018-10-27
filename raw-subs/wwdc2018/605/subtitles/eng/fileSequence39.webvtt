@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.496 --> 00:39:01.496 A:middle
+some audio feedback as to
+
+00:39:01.496 --> 00:39:02.486 A:middle
+whether or not they're within
+
+00:39:02.486 --> 00:39:03.646 A:middle
+range of the slingshot and
+
+00:39:03.646 --> 00:39:04.616 A:middle
+whether or not they've grabbed
+
+00:39:04.616 --> 00:39:04.846 A:middle
+that.
+
+00:39:04.846 --> 00:39:05.976 A:middle
+And those are the little beeps
+
+00:39:05.976 --> 00:39:06.716 A:middle
+you heard at the start.
+
+00:39:07.456 --> 00:39:08.906 A:middle
+Because those are UI feedback
+
+00:39:08.906 --> 00:39:11.056 A:middle
+for the users, those sounds only
+
+00:39:11.056 --> 00:39:12.466 A:middle
+come out of the device that the
+
+00:39:12.466 --> 00:39:13.896 A:middle
+user is using to interact with
+
+00:39:13.896 --> 00:39:14.466 A:middle
+the slingshot.
+
+00:39:14.936 --> 00:39:16.406 A:middle
+However, we also want everybody
+
+00:39:16.406 --> 00:39:18.466 A:middle
+else in the game to know what's
+
+00:39:18.466 --> 00:39:19.576 A:middle
+going on with the slingshot,
+
+00:39:19.576 --> 00:39:20.586 A:middle
+whether someone else is pulling
+
+00:39:20.586 --> 00:39:21.646 A:middle
+something or something like
+
+00:39:21.646 --> 00:39:21.886 A:middle
+that.
+
+00:39:22.076 --> 00:39:22.946 A:middle
+But we want one of those to be
+
+00:39:22.946 --> 00:39:23.416 A:middle
+quieter.
+
+00:39:23.856 --> 00:39:25.896 A:middle
+So, we use positional audio so
+
+00:39:25.896 --> 00:39:27.176 A:middle
+that if my opponent across the
+
+00:39:27.176 --> 00:39:27.916 A:middle
+table is pulling their
+
+00:39:27.916 --> 00:39:29.556 A:middle
+slingshot, I still hear that
+
+00:39:29.556 --> 00:39:30.766 A:middle
+sound from my device but it's
+
+00:39:30.766 --> 00:39:32.296 A:middle
+quieter and positioned correctly
+
+00:39:32.296 --> 00:39:32.666 A:middle
+in the world.
+
+00:39:34.926 --> 00:39:36.526 A:middle
+For colliding blocks, we took a
+
+00:39:37.046 --> 00:39:38.176 A:middle
+similar approach but slightly
+
+00:39:38.176 --> 00:39:38.526 A:middle
+different.
+
+00:39:39.146 --> 00:39:40.886 A:middle
+We really wanted a cacophonous
+
+00:39:41.076 --> 00:39:41.496 A:middle
+effect.
+
+00:39:41.996 --> 00:39:45.066 A:middle
+And the blocks are generally not
+
+00:39:45.066 --> 00:39:46.936 A:middle
+near any one player so again,
+
+00:39:47.006 --> 00:39:48.416 A:middle
+using the positional support
+
+00:39:48.596 --> 00:39:50.356 A:middle
+from SceneKit really made this
+
+00:39:50.396 --> 00:39:50.946 A:middle
+sound great.
+
+00:39:52.106 --> 00:39:53.156 A:middle
+Each device makes sounds
+
+00:39:53.156 --> 00:39:55.256 A:middle
+separately without worrying
+
+00:39:55.256 --> 00:39:56.386 A:middle
+about synchronizing across
+
+00:39:56.386 --> 00:39:57.926 A:middle
+devices because we want it to be
+
+00:39:58.036 --> 00:39:59.386 A:middle
+cacophonous, blocks smashing
+
+00:39:59.386 --> 00:39:59.656 A:middle
+about.
+

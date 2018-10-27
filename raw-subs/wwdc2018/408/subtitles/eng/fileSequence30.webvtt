@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:02.406 --> 00:30:04.146 A:middle
+This per-file dependency basis
+
+00:30:04.146 --> 00:30:06.006 A:middle
+happens within a module, which
+
+00:30:06.006 --> 00:30:08.386 A:middle
+is where Swift declarations are
+
+00:30:08.386 --> 00:30:09.606 A:middle
+implicitly visible to one
+
+00:30:09.606 --> 00:30:10.026 A:middle
+another.
+
+00:30:10.876 --> 00:30:11.666 A:middle
+When you're dealing with
+
+00:30:11.666 --> 00:30:13.756 A:middle
+cross-module dependencies via
+
+00:30:13.756 --> 00:30:15.006 A:middle
+your imports or your bridging
+
+00:30:15.006 --> 00:30:16.736 A:middle
+header, these are dependencies
+
+00:30:16.736 --> 00:30:17.846 A:middle
+on the entire target.
+
+00:30:18.386 --> 00:30:21.836 A:middle
+So this is all good information
+
+00:30:21.836 --> 00:30:24.266 A:middle
+about Swift dependencies, and
+
+00:30:24.266 --> 00:30:25.546 A:middle
+Swift targets.
+
+00:30:25.856 --> 00:30:27.336 A:middle
+But I know a lot of you out here
+
+00:30:27.546 --> 00:30:29.256 A:middle
+have mixed Objective-C and Swift
+
+00:30:29.256 --> 00:30:29.766 A:middle
+targets.
+
+00:30:29.976 --> 00:30:31.336 A:middle
+And so the last section is going
+
+00:30:31.336 --> 00:30:33.276 A:middle
+to be focused on that, on how to
+
+00:30:33.276 --> 00:30:34.696 A:middle
+reduce the interface between the
+
+00:30:34.696 --> 00:30:36.306 A:middle
+Swift and the Objective-C code
+
+00:30:36.726 --> 00:30:37.756 A:middle
+in a mixed-source app.
+
+00:30:38.976 --> 00:30:40.506 A:middle
+And to do this, we're going to
+
+00:30:40.506 --> 00:30:42.236 A:middle
+have to talk about the parts of
+
+00:30:42.236 --> 00:30:42.966 A:middle
+a mixed-source app.
+
+00:30:44.096 --> 00:30:44.996 A:middle
+And this diagram's going to get
+
+00:30:44.996 --> 00:30:46.286 A:middle
+a little complicated, so bear
+
+00:30:46.286 --> 00:30:46.796 A:middle
+with me.
+
+00:30:46.796 --> 00:30:48.356 A:middle
+And if you're watching on video,
+
+00:30:48.406 --> 00:30:49.216 A:middle
+you may need to pause and
+
+00:30:49.216 --> 00:30:49.626 A:middle
+restart.
+
+00:30:50.386 --> 00:30:51.106 A:middle
+Feel free.
+
+00:30:52.406 --> 00:30:54.306 A:middle
+We start off with the headers
+
+00:30:54.676 --> 00:30:56.256 A:middle
+that describe your Objective-C
+
+00:30:56.256 --> 00:30:56.926 A:middle
+interface.
+
+00:30:57.646 --> 00:30:58.756 A:middle
+This is the parts of your app
+
+00:30:58.796 --> 00:31:00.136 A:middle
+that are written in Objective-C
+

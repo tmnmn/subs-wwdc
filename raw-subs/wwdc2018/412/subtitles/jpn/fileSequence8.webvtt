@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.811 --> 00:08:02.850 align:start position:18% line:-2
+UIKit Dynamicsで失敗を
+シミュレートしています
+
+00:08:02.950 --> 00:08:06.153 align:start position:14% line:-2
+まずUIDynamicAnimatorを
+作成し
+
+00:08:06.253 --> 00:08:09.323 align:start position:34% line:-2
+関数で動作を追加し
+物理効果を作成
+
+00:08:09.423 --> 00:08:12.926 align:start position:9% line:-2
+dynamicAnimatorDidPause
+デリゲートコールバックで
+
+00:08:13.026 --> 00:08:17.064 align:start position:34% line:-2
+飛行士は向きを変え
+中央に戻るはずです
+
+00:08:17.364 --> 00:08:19.666 align:start position:30% line:-1
+下にスクロールすると―
+
+00:08:19.766 --> 00:08:22.836 align:start position:29% line:-2
+デリゲートコールバックが
+実装されてます
+
+00:08:22.970 --> 00:08:26.106 align:start position:30% line:-2
+しかし ここは
+デリゲートが未設定です
+
+00:08:26.373 --> 00:08:31.512 align:start position:29% line:-2
+ここにコードを追加すれば
+問題を修正できるでしょう
+
+00:08:31.612 --> 00:08:35.982 align:start position:27% line:-2
+再コンパイルと再実行を行い
+修正を検証しますが―
+
+00:08:36.082 --> 00:08:38.652 align:start position:32% line:-2
+このサイクルを
+ショートカットしたい
+
+00:08:38.751 --> 00:08:42.222 align:start position:29% line:-2
+そこでブレークポイントで
+変更を挿入し
+
+00:08:42.322 --> 00:08:46.527 align:start position:27% line:-2
+素早く便利に修正する方法を
+お見せします
+
+00:08:46.627 --> 00:08:50.964 align:start position:27% line:-2
+ブレークポイントを作るため
+ダブルクリックで―
+
+00:08:51.098 --> 00:08:53.367 align:start position:32% line:-2
+エディタウインドウを
+開きます
+
+00:08:53.467 --> 00:08:57.037 align:start position:16% line:-1
+再びDebugger Commandで
+
+00:08:57.137 --> 00:09:01.141 align:start position:32% line:-2
+問題を修正するための
+コード行を入力します
+

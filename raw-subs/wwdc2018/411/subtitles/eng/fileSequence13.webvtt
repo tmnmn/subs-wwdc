@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.926 --> 00:13:00.716 A:middle
+package manifest.
+
+00:13:01.426 --> 00:13:04.136 A:middle
+And this also allows you to use
+
+00:13:04.136 --> 00:13:05.376 A:middle
+a programming language you're
+
+00:13:05.376 --> 00:13:06.346 A:middle
+already familiar with.
+
+00:13:06.956 --> 00:13:11.346 A:middle
+For the rest of the section, I
+
+00:13:11.346 --> 00:13:12.436 A:middle
+will take you on a journey
+
+00:13:12.436 --> 00:13:13.726 A:middle
+through the different steps you
+
+00:13:13.726 --> 00:13:15.046 A:middle
+will encounter when creating
+
+00:13:15.046 --> 00:13:16.136 A:middle
+your own Swift packages.
+
+00:13:16.766 --> 00:13:18.736 A:middle
+We will start with
+
+00:13:18.736 --> 00:13:19.576 A:middle
+configuration.
+
+00:13:23.096 --> 00:13:25.126 A:middle
+As we saw earlier, SwiftPM's
+
+00:13:25.126 --> 00:13:26.796 A:middle
+manifest is based on Swift.
+
+00:13:27.336 --> 00:13:28.906 A:middle
+Using Swift makes it easy to
+
+00:13:28.906 --> 00:13:31.116 A:middle
+understand because there is no
+
+00:13:31.116 --> 00:13:32.136 A:middle
+new language to learn.
+
+00:13:32.736 --> 00:13:34.646 A:middle
+We follow Swift's API design
+
+00:13:34.646 --> 00:13:36.876 A:middle
+guidelines to make it even more
+
+00:13:36.876 --> 00:13:37.416 A:middle
+familiar.
+
+00:13:38.216 --> 00:13:40.216 A:middle
+And, it allows us to take
+
+00:13:40.216 --> 00:13:42.216 A:middle
+advantage of existing tooling
+
+00:13:42.276 --> 00:13:47.086 A:middle
+written for Swift, but when
+
+00:13:47.086 --> 00:13:48.586 A:middle
+writing your own manifest, you
+
+00:13:48.586 --> 00:13:50.076 A:middle
+should still prefer declarative
+
+00:13:50.076 --> 00:13:51.946 A:middle
+syntax and avoid side effects.
+
+00:13:53.236 --> 00:13:54.586 A:middle
+Because SwiftPM makes no
+
+00:13:54.586 --> 00:13:56.766 A:middle
+guarantees about when or how
+
+00:13:56.766 --> 00:13:58.746 A:middle
+often your source code is being
+
+00:13:58.746 --> 00:13:59.406 A:middle
+evaluated.
+

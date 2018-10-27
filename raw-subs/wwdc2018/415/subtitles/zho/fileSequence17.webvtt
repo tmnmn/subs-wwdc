@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.119 --> 00:17:02.956 align:middle line:-2
+打开命令窗口
+输入-v选项
+
+00:17:03.790 --> 00:17:05.492 align:middle line:-1
+-v代表显示
+
+00:17:05.858 --> 00:17:08.795 align:middle line:-1
+然后Clang会返回很多信息
+
+00:17:09.396 --> 00:17:12.165 align:middle line:-1
+我们只要关注一个
+
+00:17:12.598 --> 00:17:13.567 align:middle line:-1
+搜索路径
+
+00:17:15.202 --> 00:17:16.537 align:middle line:-1
+我说搜索路径
+
+00:17:17.069 --> 00:17:19.806 align:middle line:-1
+大家想到的可能是
+
+00:17:20.107 --> 00:17:23.710 align:middle line:-1
+指向源代码的搜索路径
+
+00:17:24.877 --> 00:17:26.713 align:middle line:-1
+不是这样的
+
+00:17:27.347 --> 00:17:28.182 align:middle line:-1
+相反
+
+00:17:28.615 --> 00:17:30.684 align:middle line:-2
+你会看到这个
+headermaps
+
+00:17:30.751 --> 00:17:32.252 align:middle line:-1
+（寻找猫咪）
+
+00:17:32.319 --> 00:17:36.356 align:middle line:-2
+Headermaps
+由Xcode构建系统创建
+
+00:17:36.690 --> 00:17:39.493 align:middle line:-1
+说明头文件的位置
+
+00:17:40.494 --> 00:17:41.595 align:middle line:-1
+仔细看下
+
+00:17:41.662 --> 00:17:45.599 align:middle line:-2
+这是最重要的两个
+headermap文件
+
+00:17:47.868 --> 00:17:50.637 align:middle line:-1
+前两行只是
+
+00:17:51.605 --> 00:17:53.874 align:middle line:-1
+插入了框架名称
+
+00:17:54.808 --> 00:17:55.742 align:middle line:-1
+给头文件
+
+00:17:56.210 --> 00:17:59.112 align:middle line:-2
+这两个头文件
+原来是公共文件
+

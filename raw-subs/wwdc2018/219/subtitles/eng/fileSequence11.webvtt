@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.276 --> 00:11:00.366 A:middle
+file at this URL.
+
+00:11:01.746 --> 00:11:03.546 A:middle
+Don't go ahead and decode this
+
+00:11:03.546 --> 00:11:04.476 A:middle
+image immediately.
+
+00:11:04.586 --> 00:11:05.716 A:middle
+Just create an object that
+
+00:11:05.716 --> 00:11:06.236 A:middle
+represents.
+
+00:11:06.236 --> 00:11:07.676 A:middle
+We're going to need information
+
+00:11:07.676 --> 00:11:08.636 A:middle
+from this URL.
+
+00:11:09.146 --> 00:11:12.336 A:middle
+Then, we're going to calculate
+
+00:11:12.916 --> 00:11:14.076 A:middle
+on the horizontal and vertical
+
+00:11:14.076 --> 00:11:14.676 A:middle
+axis.
+
+00:11:14.976 --> 00:11:16.166 A:middle
+Based on the scale that we're
+
+00:11:16.166 --> 00:11:18.116 A:middle
+going and point size we're going
+
+00:11:18.116 --> 00:11:20.356 A:middle
+to render at, which is the
+
+00:11:20.356 --> 00:11:21.756 A:middle
+larger dimension in pixels.
+
+00:11:22.656 --> 00:11:24.806 A:middle
+Calculate that information, and
+
+00:11:24.806 --> 00:11:25.706 A:middle
+then create an options
+
+00:11:25.706 --> 00:11:27.386 A:middle
+dictionary for our thumbnail.
+
+00:11:28.286 --> 00:11:29.186 A:middle
+There are a couple of options
+
+00:11:29.186 --> 00:11:29.806 A:middle
+listed here.
+
+00:11:30.116 --> 00:11:30.646 A:middle
+You can look in the
+
+00:11:30.646 --> 00:11:32.246 A:middle
+documentation for exactly what
+
+00:11:32.246 --> 00:11:32.886 A:middle
+these options do.
+
+00:11:32.886 --> 00:11:34.856 A:middle
+But the very important one is
+
+00:11:34.856 --> 00:11:37.026 A:middle
+this CacheImmediately option.
+
+00:11:37.546 --> 00:11:39.936 A:middle
+By passing this option here,
+
+00:11:40.246 --> 00:11:41.946 A:middle
+we're telling Core Graphics that
+
+00:11:42.126 --> 00:11:43.456 A:middle
+when I ask you to create the
+
+00:11:43.456 --> 00:11:45.376 A:middle
+thumbnail that's the exact
+
+00:11:45.376 --> 00:11:47.126 A:middle
+moment you should create the
+
+00:11:47.126 --> 00:11:48.446 A:middle
+decoded image buffer for me.
+
+00:11:49.626 --> 00:11:51.186 A:middle
+So, we have exact control over
+
+00:11:51.186 --> 00:11:52.616 A:middle
+when we take that CPU hit for
+
+00:11:52.616 --> 00:11:53.076 A:middle
+decoding.
+
+00:11:55.516 --> 00:11:57.746 A:middle
+Then, we create the thumbnail,
+
+00:11:57.746 --> 00:11:59.856 A:middle
+which is a CGImage, that we get
+
+00:11:59.856 --> 00:12:00.166 A:middle
+back.
+

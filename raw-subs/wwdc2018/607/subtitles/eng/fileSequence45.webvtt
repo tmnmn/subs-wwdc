@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.936 --> 00:45:01.456 A:middle
+LODs from meshes that will never
+
+00:45:01.456 --> 00:45:03.016 A:middle
+display so we can fit in memory
+
+00:45:03.466 --> 00:45:06.096 A:middle
+or changing the number of
+
+00:45:06.096 --> 00:45:08.866 A:middle
+characters that we animate at a
+
+00:45:08.866 --> 00:45:10.226 A:middle
+particular quality level in
+
+00:45:10.226 --> 00:45:11.696 A:middle
+order to reduce CPU costs.
+
+00:45:12.736 --> 00:45:14.776 A:middle
+Within iOS, we also defined 3
+
+00:45:14.776 --> 00:45:17.116 A:middle
+buckets for scalability -- low,
+
+00:45:17.116 --> 00:45:19.056 A:middle
+mid, and high -- and these were
+
+00:45:19.056 --> 00:45:20.136 A:middle
+generally correlated with the
+
+00:45:20.136 --> 00:45:21.736 A:middle
+different generations of
+
+00:45:21.806 --> 00:45:24.116 A:middle
+iPhones, so iPhone 6s on the low
+
+00:45:24.116 --> 00:45:26.046 A:middle
+end, iPhone 7 was our mid-range
+
+00:45:26.046 --> 00:45:27.806 A:middle
+target, and the iPhone 8 and
+
+00:45:27.806 --> 00:45:31.366 A:middle
+iPhone X on the high end.
+
+00:45:31.366 --> 00:45:34.226 A:middle
+Resolution was obviously the
+
+00:45:34.226 --> 00:45:36.356 A:middle
+simplest and best scalability
+
+00:45:36.516 --> 00:45:37.446 A:middle
+option that we had.
+
+00:45:37.786 --> 00:45:38.836 A:middle
+We ended up tuning this per
+
+00:45:38.836 --> 00:45:39.266 A:middle
+device.
+
+00:45:39.766 --> 00:45:41.186 A:middle
+We preferred to use backbuffer
+
+00:45:41.186 --> 00:45:42.456 A:middle
+resolution where possible --
+
+00:45:42.456 --> 00:45:43.836 A:middle
+this is what the UI renders at
+
+00:45:44.346 --> 00:45:45.996 A:middle
+-- because if we do this, then
+
+00:45:45.996 --> 00:45:47.676 A:middle
+we don't have to pay a separate
+
+00:45:47.676 --> 00:45:48.726 A:middle
+upsampling cost.
+
+00:45:49.196 --> 00:45:50.746 A:middle
+However, we do support rendering
+
+00:45:50.786 --> 00:45:52.736 A:middle
+3D resolution at a lower
+
+00:45:52.736 --> 00:45:54.566 A:middle
+resolution, and we do so in some
+
+00:45:54.566 --> 00:45:56.826 A:middle
+cases where we needed a crisp UI
+
+00:45:56.826 --> 00:45:58.886 A:middle
+but had to reduce 3D render
+
+00:45:58.886 --> 00:46:00.746 A:middle
+resolution lower than that in
+

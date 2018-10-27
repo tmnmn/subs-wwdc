@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.996 --> 00:54:02.186 A:middle
+from Vehicle, it also needs to
+
+00:54:02.186 --> 00:54:05.086 A:middle
+introduce an initializer with
+
+00:54:05.086 --> 00:54:05.806 A:middle
+the same name.
+
+00:54:06.616 --> 00:54:07.966 A:middle
+Now, this is important because
+
+00:54:07.966 --> 00:54:09.566 A:middle
+this initializer's responsible
+
+00:54:09.786 --> 00:54:11.556 A:middle
+for decoding the hourly rate.
+
+00:54:11.556 --> 00:54:12.696 A:middle
+And then chaining up to the
+
+00:54:12.696 --> 00:54:14.846 A:middle
+superclass initializer to decode
+
+00:54:15.046 --> 00:54:16.886 A:middle
+the rest of the Vehicle type.
+
+00:54:18.746 --> 00:54:21.006 A:middle
+Okay. Now, if you're reading
+
+00:54:21.006 --> 00:54:22.756 A:middle
+those red boxes really quickly,
+
+00:54:22.916 --> 00:54:23.776 A:middle
+you may have noticed the
+
+00:54:23.776 --> 00:54:26.006 A:middle
+subphrase non-final.
+
+00:54:26.836 --> 00:54:28.886 A:middle
+So, by definition, final classes
+
+00:54:29.056 --> 00:54:30.456 A:middle
+have no subclasses.
+
+00:54:30.456 --> 00:54:32.106 A:middle
+So, it essentially exempts them
+
+00:54:32.106 --> 00:54:33.866 A:middle
+from being substituted later on.
+
+00:54:35.046 --> 00:54:37.486 A:middle
+That means that there's no sense
+
+00:54:37.486 --> 00:54:39.056 A:middle
+in having a required initializer
+
+00:54:39.056 --> 00:54:40.136 A:middle
+because you know there are no
+
+00:54:40.136 --> 00:54:40.886 A:middle
+subclasses.
+
+00:54:41.046 --> 00:54:42.516 A:middle
+And so final classes are in a
+
+00:54:42.516 --> 00:54:43.896 A:middle
+sense a little easier to work
+
+00:54:43.896 --> 00:54:44.776 A:middle
+with when dealing with things
+
+00:54:44.776 --> 00:54:45.806 A:middle
+like decodable or other
+
+00:54:45.806 --> 00:54:47.136 A:middle
+initializer requirements.
+
+00:54:47.486 --> 00:54:48.446 A:middle
+Because they're exempt from
+
+00:54:48.446 --> 00:54:49.776 A:middle
+these rules of having required
+
+00:54:49.776 --> 00:54:50.666 A:middle
+initializers.
+
+00:54:51.406 --> 00:54:53.766 A:middle
+So when you're using classes,
+
+00:54:53.766 --> 00:54:54.826 A:middle
+for reference semantics,
+
+00:54:56.026 --> 00:54:57.936 A:middle
+consider using final when you no
+
+00:54:57.936 --> 00:54:59.316 A:middle
+longer need to customize your
+
+00:54:59.316 --> 00:55:01.236 A:middle
+class through the inheritance
+

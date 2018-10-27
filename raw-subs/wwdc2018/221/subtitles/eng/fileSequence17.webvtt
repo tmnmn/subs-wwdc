@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.066 --> 00:17:00.456 A:middle
+So this will allow the bounds of
+
+00:17:00.456 --> 00:17:02.466 A:middle
+our text view to resize to fit
+
+00:17:03.256 --> 00:17:05.296 A:middle
+the text.
+
+00:17:05.455 --> 00:17:07.465 A:middle
+Last but not least, this white
+
+00:17:07.496 --> 00:17:09.056 A:middle
+background really needs to go,
+
+00:17:09.906 --> 00:17:10.826 A:middle
+so we're going to set it to
+
+00:17:10.826 --> 00:17:11.506 A:middle
+transparent.
+
+00:17:12.675 --> 00:17:13.886 A:middle
+Now Interface Builder made it
+
+00:17:13.886 --> 00:17:15.205 A:middle
+really easy to customize this
+
+00:17:15.246 --> 00:17:16.695 A:middle
+text view but just like our
+
+00:17:16.695 --> 00:17:18.596 A:middle
+labels before, we can set all
+
+00:17:18.596 --> 00:17:19.076 A:middle
+this in code.
+
+00:17:20.026 --> 00:17:21.586 A:middle
+So here in Swift, we can set the
+
+00:17:21.586 --> 00:17:23.036 A:middle
+text and the formatting
+
+00:17:23.036 --> 00:17:24.606 A:middle
+properties dynamically at
+
+00:17:24.606 --> 00:17:24.906 A:middle
+runtime.
+
+00:17:26.386 --> 00:17:27.506 A:middle
+So we looked at Apple News to
+
+00:17:27.506 --> 00:17:28.546 A:middle
+pick the right control, but now
+
+00:17:29.396 --> 00:17:30.196 A:middle
+we're going to look at a
+
+00:17:30.196 --> 00:17:32.096 A:middle
+different app that we're all
+
+00:17:32.096 --> 00:17:33.216 A:middle
+familiar with to choose the
+
+00:17:33.216 --> 00:17:36.036 A:middle
+right configuration and that's
+
+00:17:36.336 --> 00:17:36.786 A:middle
+TextEdit.
+
+00:17:37.516 --> 00:17:39.476 A:middle
+Now TextEdit is an app on macOS
+
+00:17:40.286 --> 00:17:42.136 A:middle
+that handles display and editing
+
+00:17:42.196 --> 00:17:43.406 A:middle
+of rich text content.
+
+00:17:44.946 --> 00:17:46.156 A:middle
+Now what most people don't know
+
+00:17:46.346 --> 00:17:48.396 A:middle
+is that TextEdit is actually a
+
+00:17:48.396 --> 00:17:49.656 A:middle
+really thin wrapper around
+
+00:17:49.876 --> 00:17:50.526 A:middle
+NSTextView.
+
+00:17:51.826 --> 00:17:52.906 A:middle
+So I want to take a moment to
+
+00:17:52.906 --> 00:17:54.646 A:middle
+marvel at just how much we get
+
+00:17:54.646 --> 00:17:56.436 A:middle
+for free with TextKit.
+
+00:17:57.006 --> 00:17:59.156 A:middle
+So this is the inspector bar,
+
+00:17:59.526 --> 00:18:00.956 A:middle
+and we get this for free just by
+

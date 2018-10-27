@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.026 --> 00:06:00.456 A:middle
+Now let's look at a different
+
+00:06:00.456 --> 00:06:01.046 A:middle
+sort of an API.
+
+00:06:01.046 --> 00:06:02.206 A:middle
+I mean language identification
+
+00:06:02.206 --> 00:06:03.586 A:middle
+and tokenization are good, but
+
+00:06:03.586 --> 00:06:05.406 A:middle
+we would also like to use auto
+
+00:06:05.406 --> 00:06:06.636 A:middle
+speech tagging, named entity
+
+00:06:06.636 --> 00:06:07.746 A:middle
+recognition, and so on.
+
+00:06:08.066 --> 00:06:09.616 A:middle
+So let me illustrate how to use
+
+00:06:09.616 --> 00:06:10.936 A:middle
+named entity recognition API
+
+00:06:11.356 --> 00:06:14.106 A:middle
+again with the hypothetical app.
+
+00:06:14.346 --> 00:06:15.276 A:middle
+So here's an app.
+
+00:06:15.506 --> 00:06:17.026 A:middle
+It's a news recommendation app.
+
+00:06:17.646 --> 00:06:18.906 A:middle
+So as part of this app, your
+
+00:06:18.906 --> 00:06:20.576 A:middle
+user has been going and reading
+
+00:06:20.576 --> 00:06:21.906 A:middle
+a lot of things about the royal
+
+00:06:21.906 --> 00:06:23.206 A:middle
+wedding, so a really curious
+
+00:06:23.206 --> 00:06:23.456 A:middle
+user.
+
+00:06:23.456 --> 00:06:24.326 A:middle
+They want to find everything
+
+00:06:24.326 --> 00:06:25.076 A:middle
+about the royal wedding.
+
+00:06:25.466 --> 00:06:26.806 A:middle
+So they've perused a lot of
+
+00:06:26.806 --> 00:06:28.886 A:middle
+pages in your app, and then they
+
+00:06:28.886 --> 00:06:30.556 A:middle
+go on to the search bar, and
+
+00:06:30.556 --> 00:06:31.556 A:middle
+they type Harry.
+
+00:06:32.276 --> 00:06:34.406 A:middle
+And what they see is completely
+
+00:06:34.686 --> 00:06:35.756 A:middle
+things that are not pertinent to
+
+00:06:35.756 --> 00:06:37.026 A:middle
+what they've been looking for.
+
+00:06:37.286 --> 00:06:38.686 A:middle
+You get Harry Potter and so on
+
+00:06:38.686 --> 00:06:39.246 A:middle
+and so forth.
+
+00:06:39.616 --> 00:06:42.376 A:middle
+What you'd like to see is Prince
+
+00:06:42.376 --> 00:06:44.036 A:middle
+Harry, something related to the
+
+00:06:44.116 --> 00:06:44.716 A:middle
+royal wedding.
+
+00:06:45.296 --> 00:06:46.656 A:middle
+So now you can overcome this
+
+00:06:46.656 --> 00:06:48.436 A:middle
+issue in your app by using the
+
+00:06:48.436 --> 00:06:50.056 A:middle
+name entity recognition API.
+
+00:06:51.376 --> 00:06:52.776 A:middle
+Again, as I mentioned, the
+
+00:06:52.776 --> 00:06:54.346 A:middle
+syntax here is very familiar.
+
+00:06:54.586 --> 00:06:56.006 A:middle
+Those of you who have been used
+
+00:06:56.006 --> 00:06:57.506 A:middle
+to using NSLinguisticTagger,
+
+00:06:57.776 --> 00:06:58.836 A:middle
+they should look familiar and
+
+00:06:58.836 --> 00:07:00.276 A:middle
+feel familiar, but it's much
+

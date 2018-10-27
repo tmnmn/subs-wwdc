@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:57.538 --> 00:14:00.107 align:middle line:-2
+我说的是基础级别的通知
+即NSNotification
+
+00:14:00.174 --> 00:14:02.576 align:middle line:-1
+和Objective-C
+
+00:14:03.377 --> 00:14:07.114 align:middle line:-2
+是的 有时我们需要测试
+一个主题是否观察到一个通知
+
+00:14:07.281 --> 00:14:10.617 align:middle line:-2
+而另一些时候我们需要测试
+一个主题是否发布了一个通知
+
+00:14:11.451 --> 00:14:14.588 align:middle line:-1
+通知是一种一对多的通信机制
+
+00:14:14.788 --> 00:14:17.824 align:middle line:-1
+这意味着在发布单个通知时
+
+00:14:17.891 --> 00:14:20.694 align:middle line:-2
+它可能会通过
+你的app发送给多个收件人
+
+00:14:20.928 --> 00:14:24.131 align:middle line:-2
+甚至是你的app进程运行的
+框架代码中
+
+00:14:24.198 --> 00:14:28.001 align:middle line:-1
+因此正因为这一点 我们必须始终
+
+00:14:28.068 --> 00:14:33.540 align:middle line:-2
+以独立的方式测试通知
+以避免意外的副作用
+
+00:14:33.607 --> 00:14:37.044 align:middle line:-1
+因为这可能导致不稳定不可靠的测试
+
+00:14:37.578 --> 00:14:40.280 align:middle line:-2
+让我们看一个
+有这个问题的代码的例子
+
+00:14:41.348 --> 00:14:43.750 align:middle line:-2
+在这里有 Brian和我
+正在构建的app
+
+00:14:43.817 --> 00:14:45.552 align:middle line:-2
+的PointsOfInterest
+TableViewController
+
+00:14:46.119 --> 00:14:49.590 align:middle line:-1
+表视图中显示了附近有趣地点的列表
+
+00:14:49.723 --> 00:14:52.526 align:middle line:-1
+每当app的位置授权发生变化时
+
+00:14:52.593 --> 00:14:54.228 align:middle line:-1
+它可能需要重新加载数据
+
+00:14:54.695 --> 00:14:57.464 align:middle line:-2
+因此它从app的
+CurrentLocationProvider类中
+
+00:14:57.531 --> 00:15:00.167 align:middle line:-2
+观察到一个名为
+AuthChanged的通知
+

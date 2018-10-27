@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.906 --> 00:34:00.526 A:middle
+operation, that's not even
+
+00:34:00.526 --> 00:34:01.586 A:middle
+accounting for the processing
+
+00:34:01.586 --> 00:34:02.896 A:middle
+required to fill in these
+
+00:34:02.896 --> 00:34:03.726 A:middle
+resources with data.
+
+00:34:04.946 --> 00:34:06.076 A:middle
+However, once you've created
+
+00:34:06.076 --> 00:34:07.866 A:middle
+these objects using them in your
+
+00:34:07.866 --> 00:34:09.646 A:middle
+render loop requires very little
+
+00:34:09.746 --> 00:34:11.045 A:middle
+CPU over [inaudible] since so
+
+00:34:11.045 --> 00:34:12.966 A:middle
+much is done up front.
+
+00:34:14.176 --> 00:34:15.485 A:middle
+With that I'd like to hand it
+
+00:34:15.485 --> 00:34:16.716 A:middle
+over to Sukanya who will talk
+
+00:34:16.716 --> 00:34:17.735 A:middle
+about porting your render loop.
+
+00:34:18.516 --> 00:34:22.545 A:middle
+[ Applause ]
+
+00:34:23.045 --> 00:34:24.065 A:middle
+&gt;&gt; Good evening everyone, I am
+
+00:34:24.065 --> 00:34:25.886 A:middle
+Sukanya Sudugu, GPU software
+
+00:34:25.886 --> 00:34:26.856 A:middle
+engineer at Apple.
+
+00:34:27.646 --> 00:34:29.696 A:middle
+I am super excited to share some
+
+00:34:29.696 --> 00:34:31.496 A:middle
+of our porting experience with
+
+00:34:31.496 --> 00:34:32.976 A:middle
+you, so let's continue porting.
+
+00:34:35.876 --> 00:34:37.096 A:middle
+Dan already talked about
+
+00:34:37.096 --> 00:34:39.496 A:middle
+application setup, so by now you
+
+00:34:39.496 --> 00:34:40.795 A:middle
+would have built all your
+
+00:34:40.795 --> 00:34:43.596 A:middle
+shaders and also created all
+
+00:34:43.596 --> 00:34:45.216 A:middle
+persistent objects needed for
+
+00:34:45.216 --> 00:34:46.275 A:middle
+frame generation.
+
+00:34:47.196 --> 00:34:48.656 A:middle
+So now let's dive into your
+
+00:34:48.656 --> 00:34:50.795 A:middle
+application's render loop which
+
+00:34:50.795 --> 00:34:52.516 A:middle
+is the code that runs for every
+
+00:34:52.516 --> 00:34:52.926 A:middle
+frame.
+
+00:34:53.186 --> 00:34:55.996 A:middle
+With Metal you will explicitly
+
+00:34:55.996 --> 00:34:57.616 A:middle
+manage the asynchronous nature
+
+00:34:57.616 --> 00:34:59.556 A:middle
+of GPU's execution in your
+
+00:34:59.556 --> 00:35:00.196 A:middle
+render loop.
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.936 --> 00:26:00.446 A:middle
+transform it into a point cloud
+
+00:26:00.876 --> 00:26:03.046 A:middle
+and re-project it to the
+
+00:26:03.046 --> 00:26:06.306 A:middle
+perspective of the RGB image so
+
+00:26:06.306 --> 00:26:07.756 A:middle
+the depth stream is already
+
+00:26:07.756 --> 00:26:10.076 A:middle
+registered on the video stream
+
+00:26:10.076 --> 00:26:13.556 A:middle
+for you and you get RGBD data.
+
+00:26:14.146 --> 00:26:15.916 A:middle
+Now, thank you.
+
+00:26:16.496 --> 00:26:18.346 A:middle
+Yeah, it's pretty cool.
+
+00:26:20.066 --> 00:26:21.526 A:middle
+Now these types of operations
+
+00:26:21.626 --> 00:26:23.456 A:middle
+are best done in metal graphic
+
+00:26:23.456 --> 00:26:23.906 A:middle
+shaders.
+
+00:26:24.226 --> 00:26:25.476 A:middle
+And you can download the code
+
+00:26:25.476 --> 00:26:27.066 A:middle
+for TrueDepth Streamer and you
+
+00:26:27.066 --> 00:26:28.666 A:middle
+want to focus on two areas.
+
+00:26:29.196 --> 00:26:32.286 A:middle
+In the vertex shader we control
+
+00:26:32.286 --> 00:26:33.296 A:middle
+the location of the points,
+
+00:26:33.486 --> 00:26:34.976 A:middle
+we'll start with the depth map
+
+00:26:35.126 --> 00:26:36.696 A:middle
+and transform it to real-world
+
+00:26:36.696 --> 00:26:37.986 A:middle
+coordinates or X, Y, Z.
+
+00:26:39.186 --> 00:26:40.796 A:middle
+Then we can multiply it with a
+
+00:26:40.796 --> 00:26:43.006 A:middle
+view matrix to change the point
+
+00:26:43.006 --> 00:26:43.706 A:middle
+of view to the scene.
+
+00:26:44.336 --> 00:26:49.066 A:middle
+In the fragment shader we get
+
+00:26:49.066 --> 00:26:51.766 A:middle
+the output of the vertex, but we
+
+00:26:51.766 --> 00:26:53.866 A:middle
+have to see if it's a real value
+
+00:26:54.096 --> 00:26:55.186 A:middle
+or a hole in the depth map.
+
+00:26:56.026 --> 00:26:57.476 A:middle
+If it's a hole and it's marked
+
+00:26:57.476 --> 00:26:59.766 A:middle
+as zero we don't know its depth
+
+00:26:59.766 --> 00:27:01.516 A:middle
+so we cannot transform it to X,
+

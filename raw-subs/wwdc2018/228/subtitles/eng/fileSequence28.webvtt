@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.596 --> 00:28:01.156 A:middle
+So, now, I'm going to go ahead
+
+00:28:01.156 --> 00:28:02.636 A:middle
+and inject a bug and try to see
+
+00:28:02.636 --> 00:28:04.826 A:middle
+how we can see a bug when we use
+
+00:28:04.826 --> 00:28:06.076 A:middle
+Xcode energy gauges.
+
+00:28:06.806 --> 00:28:08.796 A:middle
+Bug1 is a simple bug that you
+
+00:28:08.796 --> 00:28:09.976 A:middle
+can see on the bottom left here
+
+00:28:10.146 --> 00:28:11.506 A:middle
+that will essentially cause a
+
+00:28:11.566 --> 00:28:12.866 A:middle
+CPU spin in the background.
+
+00:28:13.276 --> 00:28:14.406 A:middle
+This is a case that many of us
+
+00:28:14.406 --> 00:28:15.906 A:middle
+might face in regular and real
+
+00:28:15.906 --> 00:28:16.616 A:middle
+world development.
+
+00:28:17.246 --> 00:28:18.596 A:middle
+I'm going to go ahead and inject
+
+00:28:18.596 --> 00:28:19.066 A:middle
+this bug.
+
+00:28:19.066 --> 00:28:21.966 A:middle
+And now that I've injected it,
+
+00:28:21.966 --> 00:28:23.186 A:middle
+I'm going to background Energy
+
+00:28:23.186 --> 00:28:25.216 A:middle
+Game, and as you can see in the
+
+00:28:25.216 --> 00:28:26.886 A:middle
+Energy Gauge's UI, we transfer
+
+00:28:26.886 --> 00:28:27.456 A:middle
+to the background.
+
+00:28:28.536 --> 00:28:29.686 A:middle
+We do a little bit of networking
+
+00:28:29.686 --> 00:28:30.876 A:middle
+because I moved that networking
+
+00:28:30.876 --> 00:28:31.836 A:middle
+call to the background.
+
+00:28:32.686 --> 00:28:33.866 A:middle
+But now, we also see that our
+
+00:28:33.866 --> 00:28:35.396 A:middle
+CPU is going wild.
+
+00:28:35.906 --> 00:28:38.356 A:middle
+So, this is the power of the
+
+00:28:38.356 --> 00:28:38.926 A:middle
+gauges.
+
+00:28:39.006 --> 00:28:40.136 A:middle
+We've now, we know that we're
+
+00:28:40.136 --> 00:28:41.366 A:middle
+injecting a bug, but we can see
+
+00:28:41.366 --> 00:28:42.836 A:middle
+that bug directly in the gauges.
+
+00:28:44.036 --> 00:28:45.106 A:middle
+So, now, to find the root cause,
+
+00:28:45.106 --> 00:28:46.326 A:middle
+I'm going to go ahead and jump
+
+00:28:46.326 --> 00:28:47.386 A:middle
+into the Time Profiler and
+
+00:28:47.386 --> 00:28:48.586 A:middle
+transfer my debug session, as we
+
+00:28:48.616 --> 00:28:49.000 A:middle
+discussed before.
+
+00:28:53.656 --> 00:28:55.256 A:middle
+So, now, I transferred my debug
+
+00:28:55.256 --> 00:28:56.266 A:middle
+session, and it will begin
+
+00:28:56.266 --> 00:28:57.196 A:middle
+running automatically.
+
+00:28:57.706 --> 00:29:00.976 A:middle
+And as you see, the weighted
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:57.456 --> 00:21:00.026 A:middle
+First of all, it has to identify
+
+00:21:00.506 --> 00:21:02.466 A:middle
+what is the framework and check
+
+00:21:02.466 --> 00:21:03.676 A:middle
+if the framework exists.
+
+00:21:04.146 --> 00:21:07.826 A:middle
+After that, it has to look in
+
+00:21:07.826 --> 00:21:09.336 A:middle
+the headers directory for the
+
+00:21:09.336 --> 00:21:09.806 A:middle
+header file.
+
+00:21:10.666 --> 00:21:12.376 A:middle
+This case, it finds it so it's
+
+00:21:12.376 --> 00:21:12.646 A:middle
+fine.
+
+00:21:13.736 --> 00:21:16.046 A:middle
+But what happens if we don't
+
+00:21:16.046 --> 00:21:16.656 A:middle
+find the header?
+
+00:21:17.066 --> 00:21:18.886 A:middle
+For example, we have a bogus
+
+00:21:18.886 --> 00:21:20.126 A:middle
+header that doesn't exist.
+
+00:21:21.726 --> 00:21:23.366 A:middle
+It obviously fails to find it in
+
+00:21:23.366 --> 00:21:24.256 A:middle
+the headers directory.
+
+00:21:24.846 --> 00:21:27.306 A:middle
+But the next, it will also look
+
+00:21:27.306 --> 00:21:28.296 A:middle
+in the private headers
+
+00:21:28.336 --> 00:21:28.836 A:middle
+directory.
+
+00:21:30.316 --> 00:21:32.676 A:middle
+Apple doesn't ship any private
+
+00:21:32.676 --> 00:21:34.736 A:middle
+headers in its SDK.
+
+00:21:35.046 --> 00:21:36.776 A:middle
+but your project, your
+
+00:21:36.776 --> 00:21:38.586 A:middle
+frameworks might have public and
+
+00:21:38.586 --> 00:21:39.206 A:middle
+private headers.
+
+00:21:39.826 --> 00:21:41.046 A:middle
+So we always will look there
+
+00:21:41.166 --> 00:21:41.396 A:middle
+too.
+
+00:21:42.476 --> 00:21:44.696 A:middle
+Since it's a bogus header, it's
+
+00:21:45.506 --> 00:21:46.666 A:middle
+not there either.
+
+00:21:46.756 --> 00:21:48.786 A:middle
+Interesting now, we actually
+
+00:21:48.786 --> 00:21:49.846 A:middle
+will abort the search now.
+
+00:21:50.446 --> 00:21:51.886 A:middle
+We will not keep searching in
+
+00:21:51.946 --> 00:21:52.996 A:middle
+other search directories.
+
+00:21:53.496 --> 00:21:56.026 A:middle
+The reason is we already found
+
+00:21:56.536 --> 00:21:57.716 A:middle
+the head-- we already found the
+
+00:21:57.716 --> 00:21:58.176 A:middle
+framework.
+
+00:21:59.076 --> 00:22:00.506 A:middle
+Once you find the framework, we
+

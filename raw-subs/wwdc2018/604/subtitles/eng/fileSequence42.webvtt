@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:58.286 --> 00:42:01.006 A:middle
+And we also need a
+
+00:42:01.006 --> 00:42:02.616 A:middle
+frameBoundarySemaphore which is
+
+00:42:02.616 --> 00:42:04.466 A:middle
+initialized to start value as 3.
+
+00:42:05.096 --> 00:42:06.906 A:middle
+So this says semaphore will be
+
+00:42:06.906 --> 00:42:09.276 A:middle
+signaled at each frame boundary,
+
+00:42:09.576 --> 00:42:11.246 A:middle
+that is when GPU finishes
+
+00:42:11.246 --> 00:42:14.046 A:middle
+executing a frame allowing the
+
+00:42:14.046 --> 00:42:17.466 A:middle
+CPU to reuse its buffer.
+
+00:42:17.466 --> 00:42:19.826 A:middle
+Also initialize buffer index to
+
+00:42:19.826 --> 00:42:22.706 A:middle
+point to the current frame's
+
+00:42:23.336 --> 00:42:23.466 A:middle
+buffer.
+
+00:42:23.806 --> 00:42:26.386 A:middle
+And in our render loop before we
+
+00:42:26.386 --> 00:42:28.006 A:middle
+write to a buffer we need to
+
+00:42:28.006 --> 00:42:30.006 A:middle
+first ensure that its
+
+00:42:30.006 --> 00:42:31.276 A:middle
+corresponding frame has
+
+00:42:31.326 --> 00:42:33.176 A:middle
+completed its execution on the
+
+00:42:33.376 --> 00:42:33.926 A:middle
+GPU.
+
+00:42:34.366 --> 00:42:35.836 A:middle
+So at the beginning of the frame
+
+00:42:36.236 --> 00:42:37.386 A:middle
+we wait on our
+
+00:42:37.386 --> 00:42:38.656 A:middle
+frameBoundarySemaphore.
+
+00:42:39.696 --> 00:42:41.386 A:middle
+Once the semaphore is signaled
+
+00:42:41.506 --> 00:42:42.786 A:middle
+indicating that the current
+
+00:42:42.786 --> 00:42:44.166 A:middle
+frame has completed its
+
+00:42:44.166 --> 00:42:46.126 A:middle
+execution on GPU now it's safe
+
+00:42:47.536 --> 00:42:50.846 A:middle
+to grab its buffer and reuse for
+
+00:42:50.846 --> 00:42:51.716 A:middle
+new frame data.
+
+00:42:52.406 --> 00:42:55.426 A:middle
+And we will now encode some
+
+00:42:55.426 --> 00:42:57.846 A:middle
+commands to bind this buffer to
+
+00:42:58.886 --> 00:42:59.176 A:middle
+GPU.
+
+00:42:59.176 --> 00:43:01.186 A:middle
+And before we commit this
+

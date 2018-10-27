@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.716 --> 00:05:00.986 A:middle
+cool.
+
+00:05:00.986 --> 00:05:01.996 A:middle
+iOS doesn't have a traditional
+
+00:05:01.996 --> 00:05:03.066 A:middle
+disk swap system.
+
+00:05:03.946 --> 00:05:05.976 A:middle
+Instead, it uses a memory
+
+00:05:05.976 --> 00:05:06.446 A:middle
+compressor.
+
+00:05:06.626 --> 00:05:07.926 A:middle
+This was introduced in iOS 7.
+
+00:05:08.626 --> 00:05:10.606 A:middle
+Now, a memory compressor or the
+
+00:05:10.606 --> 00:05:12.526 A:middle
+memory compressor will take
+
+00:05:12.526 --> 00:05:13.776 A:middle
+unaccessed pages and squeeze
+
+00:05:13.776 --> 00:05:14.946 A:middle
+them down, which can actually
+
+00:05:14.946 --> 00:05:15.656 A:middle
+create more space.
+
+00:05:16.366 --> 00:05:17.586 A:middle
+But on access, the compressor
+
+00:05:17.586 --> 00:05:19.226 A:middle
+will then decompress them so the
+
+00:05:19.516 --> 00:05:20.266 A:middle
+memory can be read.
+
+00:05:20.936 --> 00:05:22.076 A:middle
+Let's look at an example.
+
+00:05:23.296 --> 00:05:24.526 A:middle
+Say I have a dictionary that I'm
+
+00:05:24.526 --> 00:05:25.316 A:middle
+using for caching.
+
+00:05:25.876 --> 00:05:27.336 A:middle
+Now, it uses up three pages of
+
+00:05:27.336 --> 00:05:29.796 A:middle
+memory right now, but if I
+
+00:05:29.796 --> 00:05:31.266 A:middle
+haven't accessed this in a while
+
+00:05:31.266 --> 00:05:32.436 A:middle
+and it needs to, the system
+
+00:05:32.436 --> 00:05:33.366 A:middle
+needs some space, it can
+
+00:05:33.366 --> 00:05:34.836 A:middle
+actually squeeze it down into
+
+00:05:34.836 --> 00:05:35.436 A:middle
+one page.
+
+00:05:35.896 --> 00:05:38.156 A:middle
+Now, this is now compressed, but
+
+00:05:38.716 --> 00:05:40.806 A:middle
+I'm actually saving space or
+
+00:05:40.806 --> 00:05:42.246 A:middle
+I've got two extra pages.
+
+00:05:42.896 --> 00:05:44.056 A:middle
+So if, some point in the future,
+
+00:05:44.056 --> 00:05:45.786 A:middle
+I access it, it will grow back.
+
+00:05:46.456 --> 00:05:47.876 A:middle
+So let's talk about memory
+
+00:05:47.876 --> 00:05:48.696 A:middle
+warnings for a second.
+
+00:05:49.446 --> 00:05:51.586 A:middle
+The app is not always the cause
+
+00:05:51.946 --> 00:05:52.876 A:middle
+of a memory warning.
+
+00:05:53.736 --> 00:05:54.736 A:middle
+So if you're on a low-memory
+
+00:05:54.736 --> 00:05:57.196 A:middle
+device and you get a phone call,
+
+00:05:57.256 --> 00:05:58.156 A:middle
+that could trigger a memory
+
+00:05:58.156 --> 00:05:59.036 A:middle
+warning, and you're out.
+
+00:05:59.126 --> 00:06:00.586 A:middle
+So don't necessarily assume that
+

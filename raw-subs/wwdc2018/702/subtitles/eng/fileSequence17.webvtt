@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.346 --> 00:17:00.116 A:middle
+right time because the user has
+
+00:17:00.116 --> 00:17:02.126 A:middle
+the most context to understand
+
+00:17:02.126 --> 00:17:03.866 A:middle
+why your app is accessing the
+
+00:17:03.866 --> 00:17:04.205 A:middle
+hardware.
+
+00:17:04.746 --> 00:17:07.356 A:middle
+But there are times where your
+
+00:17:07.356 --> 00:17:09.156 A:middle
+app might want more control over
+
+00:17:09.156 --> 00:17:10.046 A:middle
+the timing of those
+
+00:17:10.046 --> 00:17:11.036 A:middle
+authorization prompts.
+
+00:17:11.526 --> 00:17:13.286 A:middle
+For example, if your app opens a
+
+00:17:13.286 --> 00:17:14.846 A:middle
+new window, and in that window
+
+00:17:14.846 --> 00:17:16.986 A:middle
+displays frames from the camera
+
+00:17:17.195 --> 00:17:19.435 A:middle
+or a visualization of the audio
+
+00:17:19.606 --> 00:17:21.566 A:middle
+from the microphone, you might
+
+00:17:21.566 --> 00:17:22.726 A:middle
+want to avoid displaying an
+
+00:17:22.726 --> 00:17:24.046 A:middle
+empty window if the user
+
+00:17:24.046 --> 00:17:26.306 A:middle
+declines authorization -- in
+
+00:17:26.306 --> 00:17:27.445 A:middle
+which case it's better to prompt
+
+00:17:27.726 --> 00:17:28.976 A:middle
+before opening the window.
+
+00:17:29.946 --> 00:17:32.146 A:middle
+So AVFoundation provides this
+
+00:17:32.146 --> 00:17:35.146 A:middle
+API so that you can preflight
+
+00:17:35.146 --> 00:17:36.036 A:middle
+that authorization.
+
+00:17:36.596 --> 00:17:39.416 A:middle
+And I'd like to call out that
+
+00:17:39.416 --> 00:17:40.656 A:middle
+this API is actually
+
+00:17:40.656 --> 00:17:41.136 A:middle
+asynchronous.
+
+00:17:41.416 --> 00:17:43.816 A:middle
+It takes a block with - that is
+
+00:17:43.876 --> 00:17:46.366 A:middle
+called with a Boolean value of
+
+00:17:46.366 --> 00:17:47.956 A:middle
+whether your app has access or
+
+00:17:47.956 --> 00:17:48.236 A:middle
+not.
+
+00:17:48.276 --> 00:17:49.066 A:middle
+So this is a little bit
+
+00:17:49.066 --> 00:17:50.046 A:middle
+different than the enumeration
+
+00:17:50.046 --> 00:17:50.736 A:middle
+that we just saw.
+
+00:17:52.216 --> 00:17:53.526 A:middle
+That block may be invoked
+
+00:17:53.636 --> 00:17:55.236 A:middle
+immediately when you make - when
+
+00:17:55.236 --> 00:17:56.456 A:middle
+your app makes this call.
+
+00:17:56.656 --> 00:17:57.606 A:middle
+For example, if the user has
+
+00:17:57.686 --> 00:17:59.756 A:middle
+previously already consented or
+
+00:17:59.756 --> 00:18:01.766 A:middle
+denied access, the operating
+

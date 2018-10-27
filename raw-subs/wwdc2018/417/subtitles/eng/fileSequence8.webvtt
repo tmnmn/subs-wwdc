@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.526 --> 00:08:00.256 A:middle
+URL loading system provides a
+
+00:08:00.256 --> 00:08:03.976 A:middle
+great hook for doing this.
+
+00:08:04.206 --> 00:08:06.406 A:middle
+URLSession provides a high level
+
+00:08:06.406 --> 00:08:07.956 A:middle
+API for apps to use to perform
+
+00:08:07.956 --> 00:08:08.946 A:middle
+network requests.
+
+00:08:10.206 --> 00:08:11.416 A:middle
+[Inaudible] objects like
+
+00:08:11.416 --> 00:08:12.836 A:middle
+URLSession data tests that
+
+00:08:12.836 --> 00:08:14.356 A:middle
+represent an inflight request.
+
+00:08:14.696 --> 00:08:17.086 A:middle
+Behind the scenes though,
+
+00:08:17.556 --> 00:08:18.936 A:middle
+there's another lower-level API
+
+00:08:19.446 --> 00:08:22.256 A:middle
+URLProtocol which performs the
+
+00:08:22.256 --> 00:08:23.436 A:middle
+underlying work of opening
+
+00:08:23.436 --> 00:08:25.266 A:middle
+network connection, writing the
+
+00:08:25.266 --> 00:08:26.826 A:middle
+request, and reading back a
+
+00:08:26.826 --> 00:08:27.466 A:middle
+response.
+
+00:08:29.486 --> 00:08:31.196 A:middle
+URLProtocol is designed to be
+
+00:08:31.196 --> 00:08:32.916 A:middle
+subclassed giving an
+
+00:08:32.916 --> 00:08:34.905 A:middle
+extensibility point for the URL
+
+00:08:34.905 --> 00:08:35.596 A:middle
+loading system.
+
+00:08:38.956 --> 00:08:40.716 A:middle
+Foundation provides built-in
+
+00:08:40.716 --> 00:08:43.226 A:middle
+protocols subclasses for common
+
+00:08:43.226 --> 00:08:44.145 A:middle
+protocols like HTTPS.
+
+00:08:44.145 --> 00:08:47.036 A:middle
+But we can override these in our
+
+00:08:47.036 --> 00:08:48.416 A:middle
+tests by providing a mock
+
+00:08:48.486 --> 00:08:50.456 A:middle
+protocol that lets us make
+
+00:08:50.456 --> 00:08:52.076 A:middle
+assertions about requests that
+
+00:08:52.076 --> 00:08:54.756 A:middle
+are coming out and provide mock
+
+00:08:54.756 --> 00:08:55.426 A:middle
+responses.
+
+00:08:59.346 --> 00:09:00.886 A:middle
+URLProtocol communicates
+

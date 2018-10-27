@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.056 --> 00:15:00.306 A:middle
+won't contain any credential
+
+00:15:00.306 --> 00:15:01.736 A:middle
+identities since it wasn't
+
+00:15:01.736 --> 00:15:02.596 A:middle
+included in the backup.
+
+00:15:02.596 --> 00:15:04.546 A:middle
+Your app should be able to
+
+00:15:04.546 --> 00:15:06.516 A:middle
+handle these cases, and AS
+
+00:15:06.596 --> 00:15:08.316 A:middle
+Credential Identity Store can
+
+00:15:08.316 --> 00:15:09.576 A:middle
+help you detect these cases, so
+
+00:15:09.706 --> 00:15:10.726 A:middle
+you can take the appropriate
+
+00:15:10.726 --> 00:15:12.006 A:middle
+action when you need to update
+
+00:15:12.006 --> 00:15:12.376 A:middle
+the store.
+
+00:15:15.776 --> 00:15:17.336 A:middle
+You can use the Get State method
+
+00:15:17.446 --> 00:15:18.666 A:middle
+to ask the system about the
+
+00:15:18.666 --> 00:15:20.006 A:middle
+state of your app's Credential
+
+00:15:20.006 --> 00:15:21.846 A:middle
+Identity Store, return it as an
+
+00:15:21.846 --> 00:15:23.356 A:middle
+AS Credential Identity Store
+
+00:15:23.356 --> 00:15:24.176 A:middle
+State Object.
+
+00:15:25.876 --> 00:15:27.566 A:middle
+The first thing it tells you is
+
+00:15:27.566 --> 00:15:28.926 A:middle
+whether or not the user has your
+
+00:15:28.926 --> 00:15:30.016 A:middle
+app extension enabled.
+
+00:15:30.726 --> 00:15:31.816 A:middle
+You should check this before
+
+00:15:31.816 --> 00:15:32.686 A:middle
+attempting to update the
+
+00:15:32.686 --> 00:15:33.746 A:middle
+credential identity store.
+
+00:15:34.256 --> 00:15:35.606 A:middle
+If your extension is disabled,
+
+00:15:35.736 --> 00:15:36.816 A:middle
+there is no point in trying to
+
+00:15:36.816 --> 00:15:38.136 A:middle
+save or remove credential
+
+00:15:38.136 --> 00:15:38.716 A:middle
+identities.
+
+00:15:42.116 --> 00:15:44.306 A:middle
+The State also has a Supports
+
+00:15:44.306 --> 00:15:45.606 A:middle
+Incremental Updates Property,
+
+00:15:46.026 --> 00:15:47.136 A:middle
+which you can use to determine
+
+00:15:47.136 --> 00:15:48.626 A:middle
+if the Identity Store is intact
+
+00:15:48.626 --> 00:15:49.576 A:middle
+since the last time you've
+
+00:15:49.576 --> 00:15:51.636 A:middle
+updated it.
+
+00:15:51.636 --> 00:15:52.746 A:middle
+If you previously saved any
+
+00:15:52.746 --> 00:15:53.756 A:middle
+credential identities to the
+
+00:15:53.756 --> 00:15:55.826 A:middle
+store, this will return true,
+
+00:15:56.436 --> 00:15:57.646 A:middle
+indicating you should use the
+
+00:15:57.646 --> 00:15:59.146 A:middle
+incremental Save Credential
+
+00:15:59.146 --> 00:16:00.696 A:middle
+Identities and Remove Credential
+

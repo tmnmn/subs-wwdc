@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.556 --> 00:16:01.446 A:middle
+Now, if you adopt this
+
+00:16:01.446 --> 00:16:03.706 A:middle
+technique, in the simplest way,
+
+00:16:04.516 --> 00:16:05.876 A:middle
+you could come up with a version
+
+00:16:05.876 --> 00:16:07.556 A:middle
+that isn't compatible with older
+
+00:16:07.556 --> 00:16:08.086 A:middle
+browsers.
+
+00:16:08.726 --> 00:16:10.086 A:middle
+Older browsers don't support
+
+00:16:10.086 --> 00:16:11.286 A:middle
+MP4s and image elements.
+
+00:16:11.646 --> 00:16:13.916 A:middle
+Luckily, using existing
+
+00:16:13.916 --> 00:16:16.216 A:middle
+technology, you can specify a
+
+00:16:16.376 --> 00:16:18.536 A:middle
+fallback image to display if the
+
+00:16:18.536 --> 00:16:19.466 A:middle
+MP4 doesn't work.
+
+00:16:19.986 --> 00:16:22.636 A:middle
+Now, listen up, because now
+
+00:16:22.716 --> 00:16:25.876 A:middle
+we're going to move on to event
+
+00:16:26.276 --> 00:16:26.926 A:middle
+listeners.
+
+00:16:27.306 --> 00:16:29.606 A:middle
+Yes? No. Another feature that
+
+00:16:29.606 --> 00:16:31.476 A:middle
+has some great defaults, and
+
+00:16:31.476 --> 00:16:33.016 A:middle
+some customizability in special
+
+00:16:33.016 --> 00:16:33.466 A:middle
+cases.
+
+00:16:34.556 --> 00:16:36.286 A:middle
+When any user tries to navigate
+
+00:16:36.286 --> 00:16:37.536 A:middle
+a web page with a touch screen,
+
+00:16:37.696 --> 00:16:39.096 A:middle
+they're going to need to scroll.
+
+00:16:39.096 --> 00:16:40.976 A:middle
+And, for every touch to scroll,
+
+00:16:41.206 --> 00:16:42.896 A:middle
+a touch event listener can fire,
+
+00:16:43.596 --> 00:16:45.506 A:middle
+which can interrupt scrolling
+
+00:16:45.506 --> 00:16:47.726 A:middle
+and cause it to jump a little.
+
+00:16:48.576 --> 00:16:49.476 A:middle
+Take a look at these two
+
+00:16:49.476 --> 00:16:49.966 A:middle
+examples.
+
+00:16:50.726 --> 00:16:52.896 A:middle
+Now, the one on the left is
+
+00:16:52.946 --> 00:16:55.546 A:middle
+interrupted much more than the
+
+00:16:55.546 --> 00:16:56.156 A:middle
+one on the right.
+
+00:16:56.536 --> 00:16:57.606 A:middle
+I mean, it's barely moving.
+
+00:16:58.536 --> 00:17:00.966 A:middle
+So, what's the one on the right
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.326 --> 00:41:00.586 A:middle
+This is a key that you can use
+
+00:41:00.586 --> 00:41:01.956 A:middle
+to give yourself time to really
+
+00:41:01.956 --> 00:41:03.506 A:middle
+build a great polished update
+
+00:41:03.506 --> 00:41:05.146 A:middle
+for supporting Dark Mode.
+
+00:41:07.876 --> 00:41:09.576 A:middle
+Finally, some tips and tricks.
+
+00:41:11.416 --> 00:41:13.126 A:middle
+First of all, when you're
+
+00:41:13.126 --> 00:41:15.196 A:middle
+updating your application, one
+
+00:41:15.196 --> 00:41:16.016 A:middle
+of the greatest things that you
+
+00:41:16.016 --> 00:41:17.866 A:middle
+can do is just audit your use of
+
+00:41:17.906 --> 00:41:20.366 A:middle
+NSColor just by searching
+
+00:41:20.366 --> 00:41:21.066 A:middle
+through your code base and
+
+00:41:21.066 --> 00:41:22.606 A:middle
+seeing where you're using it.
+
+00:41:23.156 --> 00:41:24.066 A:middle
+And you're going to find a
+
+00:41:24.066 --> 00:41:25.866 A:middle
+couple situations that you can
+
+00:41:25.866 --> 00:41:27.756 A:middle
+use to upgrade to make your Dark
+
+00:41:27.756 --> 00:41:28.786 A:middle
+Mode experience a lot better.
+
+00:41:28.786 --> 00:41:30.536 A:middle
+And so, for example here, we can
+
+00:41:30.536 --> 00:41:31.856 A:middle
+find places where we're using
+
+00:41:31.856 --> 00:41:33.016 A:middle
+named colors that are not
+
+00:41:33.046 --> 00:41:34.886 A:middle
+dynamic and also colors that
+
+00:41:34.886 --> 00:41:36.126 A:middle
+have hardcoded components.
+
+00:41:36.386 --> 00:41:37.556 A:middle
+And when we encounter these
+
+00:41:37.586 --> 00:41:39.756 A:middle
+kinds of situations, we can look
+
+00:41:39.756 --> 00:41:41.446 A:middle
+at these and decide one of two
+
+00:41:41.446 --> 00:41:41.956 A:middle
+things.
+
+00:41:42.456 --> 00:41:44.876 A:middle
+One, maybe there is a built-in
+
+00:41:44.876 --> 00:41:46.226 A:middle
+system color that describes what
+
+00:41:46.226 --> 00:41:47.746 A:middle
+I'm going for and is fully
+
+00:41:47.746 --> 00:41:48.976 A:middle
+dynamic for the appearance.
+
+00:41:49.376 --> 00:41:51.596 A:middle
+Or, two, this is a custom color
+
+00:41:51.596 --> 00:41:53.006 A:middle
+that I think is really important
+
+00:41:53.006 --> 00:41:53.936 A:middle
+to be specific to my
+
+00:41:53.936 --> 00:41:54.576 A:middle
+application.
+
+00:41:55.286 --> 00:41:56.496 A:middle
+And so the first case is pretty
+
+00:41:56.496 --> 00:41:57.066 A:middle
+straightforward.
+
+00:41:57.066 --> 00:41:58.236 A:middle
+We were using black color for
+
+00:41:58.236 --> 00:41:59.526 A:middle
+this label and we can just
+
+00:41:59.526 --> 00:42:00.696 A:middle
+switch that to labelColor and
+

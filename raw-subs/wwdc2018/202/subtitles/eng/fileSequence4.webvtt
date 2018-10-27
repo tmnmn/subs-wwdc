@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.816 --> 00:04:01.216 A:middle
+large amount of the time because
+
+00:04:01.216 --> 00:04:03.036 A:middle
+we'll also be doing things like
+
+00:04:03.036 --> 00:04:04.426 A:middle
+drawing text.
+
+00:04:05.536 --> 00:04:07.196 A:middle
+So overall, there's a lot of
+
+00:04:07.196 --> 00:04:08.506 A:middle
+work that has to happen across
+
+00:04:08.646 --> 00:04:11.436 A:middle
+this whole piece of code and it
+
+00:04:11.436 --> 00:04:12.826 A:middle
+has to happen in a really short
+
+00:04:12.826 --> 00:04:13.696 A:middle
+period of time.
+
+00:04:14.126 --> 00:04:15.656 A:middle
+On our 60-hertz devices, you
+
+00:04:15.656 --> 00:04:17.565 A:middle
+have 16 milliseconds to complete
+
+00:04:17.565 --> 00:04:19.046 A:middle
+all this work in order to make
+
+00:04:19.046 --> 00:04:20.726 A:middle
+sure you don't drop any frames,
+
+00:04:20.726 --> 00:04:22.296 A:middle
+and maintain smooth scrolling.
+
+00:04:23.056 --> 00:04:25.346 A:middle
+On our 12-hertz iPads, on the
+
+00:04:25.346 --> 00:04:27.836 A:middle
+iPad Pro, you have only 8
+
+00:04:27.836 --> 00:04:29.256 A:middle
+milliseconds to complete all of
+
+00:04:29.256 --> 00:04:29.696 A:middle
+that work.
+
+00:04:30.166 --> 00:04:31.736 A:middle
+So, it really needs to be done
+
+00:04:31.816 --> 00:04:32.956 A:middle
+as quickly as possible.
+
+00:04:34.226 --> 00:04:36.126 A:middle
+Now, to help with that, in iOS
+
+00:04:36.326 --> 00:04:37.796 A:middle
+10, we introduced a cell
+
+00:04:37.836 --> 00:04:40.096 A:middle
+prefetching API and the idea
+
+00:04:40.096 --> 00:04:42.186 A:middle
+with the prefetch API is to take
+
+00:04:42.256 --> 00:04:43.906 A:middle
+some of this work, populating
+
+00:04:43.906 --> 00:04:45.756 A:middle
+your cell with model data, and
+
+00:04:45.826 --> 00:04:47.086 A:middle
+pull it out of this critical
+
+00:04:47.086 --> 00:04:48.746 A:middle
+section that's happening on
+
+00:04:48.746 --> 00:04:50.916 A:middle
+demand in that short window, do
+
+00:04:50.916 --> 00:04:52.646 A:middle
+it earlier, and do it on a
+
+00:04:52.646 --> 00:04:53.796 A:middle
+background thread so it can
+
+00:04:53.796 --> 00:04:55.386 A:middle
+happen asynchronously with some
+
+00:04:55.386 --> 00:04:57.036 A:middle
+of the other work, in particular
+
+00:04:57.036 --> 00:04:58.656 A:middle
+those cheaper scrolling frames
+
+00:04:58.656 --> 00:04:59.286 A:middle
+we talked about.
+

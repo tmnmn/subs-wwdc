@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:57.106 --> 00:21:01.756 A:middle
+Let me locate our trouble zone
+
+00:21:01.756 --> 00:21:04.056 A:middle
+cell, is here.
+
+00:21:04.336 --> 00:21:04.486 A:middle
+Okay.
+
+00:21:05.556 --> 00:21:08.926 A:middle
+Zooming in a little bit.
+
+00:21:09.536 --> 00:21:12.486 A:middle
+When I select the Traveler label
+
+00:21:12.486 --> 00:21:14.596 A:middle
+and the stepper I can see that
+
+00:21:14.596 --> 00:21:15.906 A:middle
+there's no constraint on them.
+
+00:21:16.186 --> 00:21:16.876 A:middle
+That's not good.
+
+00:21:17.726 --> 00:21:19.236 A:middle
+And of course, Xcode has a
+
+00:21:19.236 --> 00:21:20.006 A:middle
+warning for that.
+
+00:21:21.266 --> 00:21:22.906 A:middle
+So, one way to resolve the issue
+
+00:21:22.906 --> 00:21:24.196 A:middle
+is to add a leading space
+
+00:21:24.196 --> 00:21:26.086 A:middle
+constraint for the Travelers and
+
+00:21:26.086 --> 00:21:27.526 A:middle
+a trailing space constraint for
+
+00:21:27.526 --> 00:21:28.046 A:middle
+the stepper.
+
+00:21:28.896 --> 00:21:30.266 A:middle
+Leading and Trailing will
+
+00:21:30.266 --> 00:21:32.246 A:middle
+translate to right and left for
+
+00:21:32.246 --> 00:21:33.156 A:middle
+right to left languages.
+
+00:21:34.186 --> 00:21:35.896 A:middle
+However, here I'm going to show
+
+00:21:35.896 --> 00:21:37.866 A:middle
+you an even simpler way, which
+
+00:21:37.866 --> 00:21:40.086 A:middle
+is to use UIStackView, a
+
+00:21:40.086 --> 00:21:41.656 A:middle
+high-level container view that
+
+00:21:41.656 --> 00:21:43.246 A:middle
+uses Auto Layout under the hood.
+
+00:21:44.076 --> 00:21:45.876 A:middle
+By using Stack View I can get
+
+00:21:45.876 --> 00:21:47.286 A:middle
+right to left support for free.
+
+00:21:47.746 --> 00:21:49.786 A:middle
+Let me select the two views.
+
+00:21:50.836 --> 00:21:53.566 A:middle
+And click the Embed down here at
+
+00:21:53.566 --> 00:21:54.796 A:middle
+the bottom right corner.
+
+00:21:56.276 --> 00:21:58.876 A:middle
+Select Stack View.
+
+00:21:59.116 --> 00:22:00.516 A:middle
+Now, my two views are inside
+

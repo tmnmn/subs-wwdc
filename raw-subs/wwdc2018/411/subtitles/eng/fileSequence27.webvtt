@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.166 --> 00:27:00.536 A:middle
+SwiftPM to support this,
+
+00:27:00.876 --> 00:27:03.196 A:middle
+probably by using libSyntax.
+
+00:27:04.056 --> 00:27:05.926 A:middle
+libSyntax is a library being
+
+00:27:05.926 --> 00:27:07.296 A:middle
+developed in the Swift open
+
+00:27:07.296 --> 00:27:08.856 A:middle
+source project that makes it
+
+00:27:08.856 --> 00:27:11.256 A:middle
+easier for you to understand and
+
+00:27:11.256 --> 00:27:13.536 A:middle
+manipulate Swift syntax from
+
+00:27:13.536 --> 00:27:14.336 A:middle
+other tools.
+
+00:27:15.476 --> 00:27:17.546 A:middle
+Boris told you earlier that you
+
+00:27:17.546 --> 00:27:19.556 A:middle
+should prefer declarative syntax
+
+00:27:19.636 --> 00:27:21.236 A:middle
+for your package.swift manifest,
+
+00:27:21.526 --> 00:27:22.986 A:middle
+and this is another reason why.
+
+00:27:22.986 --> 00:27:25.006 A:middle
+That will make it much easier
+
+00:27:25.006 --> 00:27:26.526 A:middle
+for SwiftPM to understand your
+
+00:27:26.526 --> 00:27:28.076 A:middle
+manifest, so that it can make
+
+00:27:28.076 --> 00:27:29.706 A:middle
+automatic changes, such as
+
+00:27:29.706 --> 00:27:31.106 A:middle
+adding new dependencies or
+
+00:27:31.106 --> 00:27:32.486 A:middle
+targets as shown here.
+
+00:27:32.996 --> 00:27:36.286 A:middle
+So, there's a lot of room for
+
+00:27:36.286 --> 00:27:37.906 A:middle
+SwiftPM also to add new
+
+00:27:37.906 --> 00:27:39.016 A:middle
+functionality to help you
+
+00:27:39.016 --> 00:27:40.176 A:middle
+publish new versions of your
+
+00:27:40.176 --> 00:27:41.876 A:middle
+packages and deploy their
+
+00:27:41.876 --> 00:27:42.596 A:middle
+products.
+
+00:27:43.916 --> 00:27:45.776 A:middle
+Today, when you want to publish
+
+00:27:45.776 --> 00:27:46.996 A:middle
+a new version of your package,
+
+00:27:47.346 --> 00:27:49.056 A:middle
+you tag it manually with git.
+
+00:27:49.056 --> 00:27:51.286 A:middle
+And if you want to inspect your
+
+00:27:51.286 --> 00:27:52.976 A:middle
+published tags, you use git
+
+00:27:52.976 --> 00:27:54.096 A:middle
+directly for that as well.
+
+00:27:55.356 --> 00:27:56.986 A:middle
+We could add new functionality
+
+00:27:57.146 --> 00:27:58.956 A:middle
+to automate this process and
+
+00:27:58.956 --> 00:28:00.786 A:middle
+perform additional housekeeping,
+

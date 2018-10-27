@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.633 --> 00:05:02.202 align:start position:23% line:-1
+Build Actionの中に
+
+00:05:02.936 --> 00:05:05.205 align:start position:18% line:-1
+Build Optionsがあります
+
+00:05:05.339 --> 00:05:07.007 align:start position:38% line:-1
+項目は２つです
+
+00:05:07.107 --> 00:05:09.276 align:start position:14% line:-1
+“Parallelize Build”と
+
+00:05:09.443 --> 00:05:11.879 align:start position:0% line:-2
+“Find Implicit Dependencies”
+です
+
+00:05:12.379 --> 00:05:14.515 align:start position:36% line:-1
+前者を選択します
+
+00:05:14.615 --> 00:05:18.619 align:start position:25% line:-2
+Xcodeが依存関係の情報を
+利用して
+
+00:05:18.752 --> 00:05:21.755 align:start position:32% line:-2
+ターゲットの並列化を
+試みます
+
+00:05:23.223 --> 00:05:27.427 align:start position:30% line:-2
+では 依存関係の構成を
+見てみましょう
+
+00:05:28.228 --> 00:05:30.364 align:start position:27% line:-2
+ビルドフェーズのエディタで
+見られます
+
+00:05:30.631 --> 00:05:34.868 align:start position:29% line:-2
+プロジェクトナビゲータを
+開いて
+
+00:05:34.968 --> 00:05:36.470 align:start position:34% line:-1
+プロジェクトを選択
+
+00:05:36.570 --> 00:05:40.240 align:start position:30% line:-2
+ここでは
+ゲームプロジェクトです
+
+00:05:41.341 --> 00:05:44.111 align:start position:16% line:-1
+次にBuild Phasesをクリック
+
+00:05:45.179 --> 00:05:49.049 align:start position:27% line:-2
+ゲームターゲットのところを
+見てください
+
+00:05:49.149 --> 00:05:51.885 align:start position:30% line:-1
+依存関係を確認できます
+
+00:05:52.019 --> 00:05:57.357 align:start position:2% line:-2
+Link Binary With Librariesに
+注目してください
+
+00:05:57.758 --> 00:05:59.193 align:start position:36% line:-1
+このフェーズでは
+
+00:05:59.293 --> 00:06:03.897 align:start position:29% line:-2
+ターゲットとリンクさせる
+アイテムを定義します
+

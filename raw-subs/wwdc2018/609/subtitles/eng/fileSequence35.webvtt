@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.616 --> 00:35:00.966 A:middle
+it easy to convert between
+
+00:35:00.966 --> 00:35:02.006 A:middle
+images and matrices.
+
+00:35:02.836 --> 00:35:06.166 A:middle
+So, in order to copy an image to
+
+00:35:06.166 --> 00:35:07.406 A:middle
+a matrix, you need to use the
+
+00:35:07.406 --> 00:35:09.546 A:middle
+MPI's Image Copy to Matrix
+
+00:35:09.746 --> 00:35:10.056 A:middle
+Kernel.
+
+00:35:10.256 --> 00:35:11.456 A:middle
+So, this is how you can create
+
+00:35:11.456 --> 00:35:13.206 A:middle
+one, and this is how you can
+
+00:35:13.206 --> 00:35:15.746 A:middle
+encode one on a batch of images.
+
+00:35:17.186 --> 00:35:19.506 A:middle
+Here, each row in a destination
+
+00:35:19.506 --> 00:35:21.586 A:middle
+matrix, will contain one source
+
+00:35:21.586 --> 00:35:21.926 A:middle
+image.
+
+00:35:23.026 --> 00:35:25.036 A:middle
+And to copy from a matrix to an
+
+00:35:25.036 --> 00:35:27.066 A:middle
+image, you need to use the MPS
+
+00:35:27.486 --> 00:35:29.216 A:middle
+Matrix Copy to Image Kernel.
+
+00:35:29.306 --> 00:35:30.676 A:middle
+This is how you can create one
+
+00:35:30.996 --> 00:35:32.476 A:middle
+and this is how you encode one
+
+00:35:32.476 --> 00:35:33.166 A:middle
+to the GPU.
+
+00:35:34.456 --> 00:35:37.586 A:middle
+So, we just showed you how to
+
+00:35:37.586 --> 00:35:40.376 A:middle
+train CNNs and RNNs using MPS.
+
+00:35:41.886 --> 00:35:43.656 A:middle
+We also showed you a demo of
+
+00:35:43.716 --> 00:35:45.226 A:middle
+Turi Create which is now powered
+
+00:35:45.226 --> 00:35:45.646 A:middle
+by MPS.
+
+00:35:45.646 --> 00:35:47.526 A:middle
+And now it's time for one more
+
+00:35:47.526 --> 00:35:47.806 A:middle
+demo.
+
+00:35:49.576 --> 00:35:51.276 A:middle
+We have been working with Google
+
+00:35:51.276 --> 00:35:52.376 A:middle
+to add support to the Metal
+
+00:35:52.376 --> 00:35:54.236 A:middle
+Performance Shaders Framework to
+
+00:35:54.236 --> 00:35:58.086 A:middle
+TensorFlow to accelerate machine
+
+00:35:58.086 --> 00:35:59.716 A:middle
+learning on macOS, and we would
+
+00:35:59.716 --> 00:36:00.966 A:middle
+love to show you a demo of that
+

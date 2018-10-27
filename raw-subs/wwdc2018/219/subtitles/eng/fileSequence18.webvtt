@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:01.166 --> 00:18:02.646 A:middle
+And inside of our implementation
+
+00:18:02.696 --> 00:18:05.436 A:middle
+of the prefetch method we're
+
+00:18:05.436 --> 00:18:06.906 A:middle
+going to asynchronously dispatch
+
+00:18:06.906 --> 00:18:07.416 A:middle
+to that queue.
+
+00:18:07.416 --> 00:18:09.216 A:middle
+Now, it does mean that an
+
+00:18:09.216 --> 00:18:10.876 A:middle
+individual image might not start
+
+00:18:10.876 --> 00:18:12.316 A:middle
+making progress until later than
+
+00:18:12.316 --> 00:18:12.776 A:middle
+before.
+
+00:18:13.576 --> 00:18:15.006 A:middle
+But it also means that the CPU
+
+00:18:15.006 --> 00:18:16.356 A:middle
+is going to spend less time
+
+00:18:17.086 --> 00:18:18.506 A:middle
+switching between bits of work
+
+00:18:18.506 --> 00:18:21.356 A:middle
+that it can do.
+
+00:18:21.496 --> 00:18:22.376 A:middle
+Now, these images that we're
+
+00:18:22.376 --> 00:18:23.316 A:middle
+displaying can come from a
+
+00:18:23.316 --> 00:18:24.326 A:middle
+number of places.
+
+00:18:25.086 --> 00:18:26.416 A:middle
+They might come with our
+
+00:18:26.416 --> 00:18:28.706 A:middle
+application, in which case they
+
+00:18:28.706 --> 00:18:29.686 A:middle
+might be stored in an image
+
+00:18:29.686 --> 00:18:30.126 A:middle
+asset.
+
+00:18:30.566 --> 00:18:31.456 A:middle
+Or they might be stored in a
+
+00:18:31.456 --> 00:18:32.776 A:middle
+file instead of our application
+
+00:18:32.776 --> 00:18:33.146 A:middle
+wrapper.
+
+00:18:33.746 --> 00:18:34.696 A:middle
+Or they could come from the
+
+00:18:34.696 --> 00:18:35.146 A:middle
+network.
+
+00:18:35.936 --> 00:18:37.586 A:middle
+Or they could be in a document
+
+00:18:37.766 --> 00:18:39.436 A:middle
+that's stored in the application
+
+00:18:39.486 --> 00:18:40.446 A:middle
+documents directory.
+
+00:18:40.726 --> 00:18:42.646 A:middle
+They could be stored in a cache.
+
+00:18:43.666 --> 00:18:45.086 A:middle
+But for artwork that comes with
+
+00:18:45.086 --> 00:18:47.506 A:middle
+your application, we strongly
+
+00:18:47.506 --> 00:18:49.416 A:middle
+encourage you to use image
+
+00:18:49.416 --> 00:18:49.986 A:middle
+assets.
+
+00:18:50.916 --> 00:18:52.016 A:middle
+And there are a number of
+
+00:18:52.016 --> 00:18:52.736 A:middle
+reasons why.
+
+00:18:54.526 --> 00:18:56.436 A:middle
+Image assets are optimized for
+
+00:18:56.436 --> 00:18:57.836 A:middle
+name based and trait-based
+
+00:18:57.836 --> 00:18:58.226 A:middle
+lookup.
+
+00:18:58.606 --> 00:19:00.006 A:middle
+It's faster to look up an image
+

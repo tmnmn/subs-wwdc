@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.086 --> 00:20:01.206 A:middle
+setup, avoid redoing the setup
+
+00:20:01.206 --> 00:20:02.676 A:middle
+in the view load method of your
+
+00:20:02.676 --> 00:20:04.016 A:middle
+view controller, and tearing it
+
+00:20:04.016 --> 00:20:04.596 A:middle
+down later.
+
+00:20:05.416 --> 00:20:06.836 A:middle
+The system may reuse your app
+
+00:20:06.836 --> 00:20:08.446 A:middle
+extensions process if the user
+
+00:20:08.446 --> 00:20:09.806 A:middle
+sequentially signs into multiple
+
+00:20:09.806 --> 00:20:11.386 A:middle
+services using your extension.
+
+00:20:12.686 --> 00:20:13.886 A:middle
+Consider using a singleton
+
+00:20:13.886 --> 00:20:15.766 A:middle
+pattern, so any work done in one
+
+00:20:15.766 --> 00:20:17.596 A:middle
+invocation of your extension can
+
+00:20:17.596 --> 00:20:19.276 A:middle
+be reused the next time if it
+
+00:20:19.276 --> 00:20:20.296 A:middle
+doesn't need to be repeated.
+
+00:20:20.836 --> 00:20:24.836 A:middle
+And that wraps up how you can
+
+00:20:24.836 --> 00:20:26.096 A:middle
+display credentials from your
+
+00:20:26.096 --> 00:20:29.206 A:middle
+app in the QuickType bar.
+
+00:20:29.376 --> 00:20:31.056 A:middle
+Finally, I'll discuss one more
+
+00:20:31.056 --> 00:20:32.726 A:middle
+API your extension may find
+
+00:20:32.726 --> 00:20:33.056 A:middle
+useful.
+
+00:20:34.106 --> 00:20:35.426 A:middle
+When the user enables your app
+
+00:20:35.426 --> 00:20:37.006 A:middle
+extension for Password AutoFill,
+
+00:20:37.276 --> 00:20:38.296 A:middle
+you may have some setup that
+
+00:20:38.296 --> 00:20:39.796 A:middle
+needs to be done before the user
+
+00:20:39.796 --> 00:20:41.096 A:middle
+can get the best experience.
+
+00:20:41.676 --> 00:20:43.186 A:middle
+For starters, if you support
+
+00:20:43.186 --> 00:20:44.046 A:middle
+showing credentials in the
+
+00:20:44.046 --> 00:20:45.726 A:middle
+QuickType bar, your app or
+
+00:20:45.726 --> 00:20:47.026 A:middle
+extension will need to provide
+
+00:20:47.026 --> 00:20:48.126 A:middle
+its credential identities to
+
+00:20:48.126 --> 00:20:49.086 A:middle
+AutoFill first.
+
+00:20:50.116 --> 00:20:51.166 A:middle
+But it may also be useful to
+
+00:20:51.166 --> 00:20:52.296 A:middle
+show other settings at this
+
+00:20:52.296 --> 00:20:54.226 A:middle
+point, perhaps to offer the user
+
+00:20:54.226 --> 00:20:55.416 A:middle
+the ability to sign in to an
+
+00:20:55.416 --> 00:20:56.736 A:middle
+online service to retrieve the
+
+00:20:56.736 --> 00:20:58.016 A:middle
+passwords if they haven't
+
+00:20:58.016 --> 00:20:58.396 A:middle
+already.
+

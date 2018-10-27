@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+01:18:59.016 --> 01:19:01.016 A:middle
+And for context, that requires
+
+01:19:01.016 --> 01:19:03.206 A:middle
+performing over 6 billion
+
+01:19:03.206 --> 01:19:04.066 A:middle
+intersection tests.
+
+01:19:04.736 --> 01:19:05.676 A:middle
+And as you can see, we need
+
+01:19:05.676 --> 01:19:08.916 A:middle
+about 12 seconds to do that on
+
+01:19:08.916 --> 01:19:09.566 A:middle
+the CPU.
+
+01:19:09.626 --> 01:19:12.556 A:middle
+So let's compare that to using
+
+01:19:12.556 --> 01:19:14.286 A:middle
+the new ray -- the new Metal
+
+01:19:14.286 --> 01:19:15.796 A:middle
+Ray-Triangle Intersector on the
+
+01:19:15.796 --> 01:19:17.506 A:middle
+built-in GPU in the iMac Pro.
+
+01:19:17.686 --> 01:19:19.816 A:middle
+And you can immediately see that
+
+01:19:19.816 --> 01:19:21.546 A:middle
+it's much faster, and we only
+
+01:19:21.546 --> 01:19:23.926 A:middle
+need about 1.3 seconds to do the
+
+01:19:23.926 --> 01:19:24.606 A:middle
+same amount of work.
+
+01:19:24.986 --> 01:19:26.106 A:middle
+It's so good, I'm going to do it
+
+01:19:26.106 --> 01:19:26.256 A:middle
+again.
+
+01:19:26.256 --> 01:19:26.646 A:middle
+Here we go.
+
+01:19:28.436 --> 01:19:29.266 A:middle
+And it's done.
+
+01:19:30.046 --> 01:19:32.306 A:middle
+So getting an almost 10-times
+
+01:19:32.336 --> 01:19:33.886 A:middle
+performance increase is
+
+01:19:33.886 --> 01:19:34.836 A:middle
+fantastic.
+
+01:19:35.356 --> 01:19:36.336 A:middle
+But of course, we didn't just
+
+01:19:36.336 --> 01:19:36.816 A:middle
+stop there.
+
+01:19:36.816 --> 01:19:39.296 A:middle
+As Jeremy noted, ray tracing is
+
+01:19:39.296 --> 01:19:40.916 A:middle
+well-suited for parallelization
+
+01:19:40.916 --> 01:19:43.336 A:middle
+across multiple GPUs, so I can
+
+01:19:43.336 --> 01:19:44.976 A:middle
+enable an external GPU that I
+
+01:19:44.976 --> 01:19:46.556 A:middle
+previously attached to this iMac
+
+01:19:46.626 --> 01:19:49.556 A:middle
+Pro and get the render time cut
+
+01:19:49.556 --> 01:19:50.006 A:middle
+in half.
+
+01:19:50.176 --> 01:19:52.316 A:middle
+So you'll note the green line
+
+01:19:52.316 --> 01:19:53.676 A:middle
+that we've added to help
+
+01:19:53.796 --> 01:19:55.106 A:middle
+visualize how we're splitting
+
+01:19:55.106 --> 01:19:56.326 A:middle
+this workload across the two
+
+01:19:56.326 --> 01:19:59.026 A:middle
+GPUs, with each GPU rendering
+
+01:19:59.026 --> 01:20:00.776 A:middle
+half the frame in this case.
+

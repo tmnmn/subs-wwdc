@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.567 --> 00:15:04.037 align:start position:29% line:-2
+このような
+シングルスレッドの例では
+
+00:15:04.471 --> 00:15:06.707 align:start position:30% line:-2
+GPUのアイドル状態が
+長いです
+
+00:15:07.741 --> 00:15:10.043 align:start position:29% line:-1
+これをどうにかしましょう
+
+00:15:12.146 --> 00:15:15.516 align:start position:36% line:-2
+マルチスレッドに
+切り替えます
+
+00:15:15.616 --> 00:15:19.853 align:start position:34% line:-2
+視覚環境の
+シミュレーションと
+
+00:15:19.953 --> 00:15:23.056 align:start position:29% line:-2
+GPU操作のエンコードを
+分けました
+
+00:15:23.390 --> 00:15:27.661 align:start position:27% line:-2
+エンコードは別のスレッドで
+発生します
+
+00:15:28.695 --> 00:15:31.698 align:start position:29% line:-1
+こうして分けたことにより
+
+00:15:31.798 --> 00:15:35.269 align:start position:27% line:-1
+シミュレーションと並行して
+
+00:15:36.036 --> 00:15:39.740 align:start position:21% line:-1
+前フレームのエンコードができます
+
+00:15:40.574 --> 00:15:44.945 align:start position:32% line:-2
+つまり エンコードの
+開始時期が変わり
+
+00:15:45.045 --> 00:15:49.016 align:start position:32% line:-2
+Poseを受け取って
+すぐに開始されます
+
+00:15:49.116 --> 00:15:54.221 align:start position:25% line:-2
+アプリケーションが
+エンコードに使える時間が増え
+
+00:15:54.321 --> 00:15:57.658 align:start position:27% line:-1
+GPUの処理時間も増えます
+
+00:15:57.758 --> 00:16:01.461 align:start position:25% line:-1
+その結果 見た目が向上します
+

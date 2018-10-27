@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:57.616 --> 00:47:00.036 A:middle
+And later, I will let the user
+
+00:47:00.036 --> 00:47:01.846 A:middle
+select this overlay to see more
+
+00:47:01.846 --> 00:47:02.336 A:middle
+information.
+
+00:47:02.336 --> 00:47:04.156 A:middle
+So, I will keep around all of
+
+00:47:04.156 --> 00:47:05.976 A:middle
+the route object, in the Data
+
+00:47:05.976 --> 00:47:07.646 A:middle
+Properties so that I can display
+
+00:47:07.896 --> 00:47:09.546 A:middle
+the distance of the estimated
+
+00:47:09.546 --> 00:47:10.146 A:middle
+travel time.
+
+00:47:11.906 --> 00:47:12.956 A:middle
+I know how to draw these
+
+00:47:12.956 --> 00:47:14.836 A:middle
+overlays, so now I know - I need
+
+00:47:14.836 --> 00:47:16.646 A:middle
+to request them from the
+
+00:47:16.646 --> 00:47:17.206 A:middle
+service.
+
+00:47:17.956 --> 00:47:19.456 A:middle
+So, here we go.
+
+00:47:21.376 --> 00:47:23.006 A:middle
+This is a little bit longer but
+
+00:47:23.006 --> 00:47:23.646 A:middle
+not so bad.
+
+00:47:24.126 --> 00:47:25.386 A:middle
+I first need to create a
+
+00:47:25.386 --> 00:47:26.846 A:middle
+directions object.
+
+00:47:26.846 --> 00:47:28.796 A:middle
+I will just use the current
+
+00:47:28.796 --> 00:47:30.566 A:middle
+language for the directions.
+
+00:47:30.566 --> 00:47:31.606 A:middle
+So, the default is fine.
+
+00:47:32.786 --> 00:47:34.576 A:middle
+So now, when I'm requesting a
+
+00:47:34.576 --> 00:47:36.836 A:middle
+route to a specific annotation
+
+00:47:36.836 --> 00:47:38.736 A:middle
+or rather, routes to a specific
+
+00:47:38.736 --> 00:47:40.956 A:middle
+annotation, I will clean up my
+
+00:47:40.956 --> 00:47:42.446 A:middle
+map first because maybe I've
+
+00:47:42.636 --> 00:47:44.386 A:middle
+shown routes to a different
+
+00:47:44.386 --> 00:47:45.496 A:middle
+place before.
+
+00:47:45.496 --> 00:47:47.356 A:middle
+So, if I query the other list
+
+00:47:47.356 --> 00:47:49.416 A:middle
+property of my map, it tells me
+
+00:47:49.416 --> 00:47:51.306 A:middle
+which overlays are currently
+
+00:47:51.446 --> 00:47:52.796 A:middle
+added to the map, and I can
+
+00:47:52.796 --> 00:47:54.316 A:middle
+remove them by using the Remove
+
+00:47:54.316 --> 00:47:55.206 A:middle
+Overlays Method.
+
+00:47:55.206 --> 00:47:57.266 A:middle
+So, now I have a clean map, and
+
+00:47:57.266 --> 00:47:59.206 A:middle
+I can display new routes.
+
+00:47:59.956 --> 00:48:01.796 A:middle
+I'm building my request for the
+

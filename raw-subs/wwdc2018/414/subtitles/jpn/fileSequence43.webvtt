@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:56.610 --> 00:43:02.683 align:start position:21% line:-2
+だから よく似たコードや
+アドレスでクラッシュが見られます
+
+00:43:02.783 --> 00:43:07.588 align:start position:20% line:-2
+そして同じバグでも
+Xcodeではクラッシュポイントが
+
+00:43:07.854 --> 00:43:11.158 align:start position:23% line:-1
+別だと判断されることもあります
+
+00:43:12.025 --> 00:43:15.496 align:start position:27% line:-2
+クラッシュしたスレッドが
+原因ではない場合もあります
+
+00:43:15.596 --> 00:43:20.300 align:start position:21% line:-2
+だからログで
+他のスレッドも見ることが重要です
+
+00:43:20.734 --> 00:43:24.271 align:start position:25% line:-1
+ではバグの例を見てみましょう
+
+00:43:24.371 --> 00:43:27.541 align:start position:20% line:-2
+Xcodeに含まれるツール
+Thread Sanitizerで
+
+00:43:27.641 --> 00:43:30.778 align:start position:29% line:-1
+診断する方法を紹介します
+
+00:43:38.919 --> 00:43:41.421 align:start position:27% line:-1
+クッキーレシピのAppで―
+
+00:43:41.521 --> 00:43:46.326 align:start position:23% line:-2
+ユーザから入手した
+クラッシュログを見てみましょう
+
+00:43:46.994 --> 00:43:50.864 align:start position:25% line:-2
+この２つ目のクラッシュログに
+注目しましょう
+
+00:43:52.065 --> 00:43:57.604 align:start position:14% line:-2
+これを見ると LazyImageView
+クラスに何か問題があるようです
+
+00:43:57.704 --> 00:43:59.506 align:start position:32% line:-1
+私が書いたクラスです
+
+00:43:59.606 --> 00:44:01.375 align:start position:32% line:-1
+この後 お見せします
+

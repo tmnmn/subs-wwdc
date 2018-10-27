@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.260 --> 00:26:05.265 align:start position:29% line:-2
+すべてのGPUで
+処理が終われば取り出し―
+
+00:26:05.666 --> 00:26:09.203 align:start position:29% line:-1
+領域全体をコピーして合成
+
+00:26:10.470 --> 00:26:15.542 align:start position:21% line:-2
+合成では 領域をつなげて
+１つのフレームバッファに入れます
+
+00:26:15.943 --> 00:26:19.046 align:start position:32% line:-2
+あるいは 以前の
+レンダリング結果と―
+
+00:26:19.146 --> 00:26:21.715 align:start position:27% line:-1
+合わせてノイズを除去します
+
+00:26:23.484 --> 00:26:29.156 align:start position:23% line:-2
+レンダリング前に必ず
+各GPUにシーンをコピーします
+
+00:26:30.057 --> 00:26:35.696 align:start position:27% line:-2
+頂点バッファやテクスチャは
+全GPUに複製してください
+
+00:26:36.463 --> 00:26:40.067 align:start position:21% line:-1
+ショーンが紹介した加速構造もです
+
+00:26:42.402 --> 00:26:44.638 align:start position:32% line:-1
+加速構造については―
+
+00:26:44.738 --> 00:26:49.209 align:start position:29% line:-2
+各GPUでゼロから
+作成するのは避けたいです
+
+00:26:49.510 --> 00:26:51.111 align:start position:32% line:-1
+そこで追加したのが―
+
+00:26:51.211 --> 00:26:57.217 align:start position:21% line:-2
+既存の加速構造を
+各GPUにコピーできるAPIです
+
+00:26:58.085 --> 00:27:00.854 align:start position:25% line:-1
+このコピーは非再帰的なので―
+

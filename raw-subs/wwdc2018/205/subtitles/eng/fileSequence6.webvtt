@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.416 --> 00:06:00.636 A:middle
+As you can see, we have worked
+
+00:06:00.636 --> 00:06:03.486 A:middle
+very hard to update the overall
+
+00:06:03.486 --> 00:06:05.316 A:middle
+look and feel of ResearchKit UI
+
+00:06:05.316 --> 00:06:07.766 A:middle
+to closely resemble the latest
+
+00:06:07.766 --> 00:06:09.036 A:middle
+iOS style guidelines.
+
+00:06:09.706 --> 00:06:11.006 A:middle
+Let's take a closer look.
+
+00:06:13.296 --> 00:06:15.086 A:middle
+We've moved the progress label
+
+00:06:15.086 --> 00:06:15.916 A:middle
+from the center of the
+
+00:06:15.916 --> 00:06:17.396 A:middle
+navigation bar to the right side
+
+00:06:17.396 --> 00:06:18.646 A:middle
+and applied some styling.
+
+00:06:19.226 --> 00:06:21.266 A:middle
+This allows us to leverage the
+
+00:06:21.266 --> 00:06:23.506 A:middle
+large titles feature in nav bars
+
+00:06:23.816 --> 00:06:25.516 A:middle
+and apply it to all of our step
+
+00:06:25.576 --> 00:06:26.036 A:middle
+titles.
+
+00:06:26.986 --> 00:06:28.446 A:middle
+Now, to keep the consistent
+
+00:06:28.446 --> 00:06:30.426 A:middle
+styling, we are also adding a
+
+00:06:30.426 --> 00:06:32.506 A:middle
+new card view in order to
+
+00:06:32.506 --> 00:06:34.076 A:middle
+improve the overall user
+
+00:06:34.076 --> 00:06:35.916 A:middle
+experience for those who are
+
+00:06:35.916 --> 00:06:37.816 A:middle
+answering multiple questions and
+
+00:06:37.816 --> 00:06:39.896 A:middle
+surveys, as it now provides a
+
+00:06:39.936 --> 00:06:41.366 A:middle
+clear break in action that
+
+00:06:41.366 --> 00:06:42.796 A:middle
+you're requested to perform.
+
+00:06:43.296 --> 00:06:46.316 A:middle
+Now, this card view is applied
+
+00:06:46.316 --> 00:06:48.866 A:middle
+by default to all our steps and
+
+00:06:48.866 --> 00:06:49.336 A:middle
+forms.
+
+00:06:49.536 --> 00:06:50.946 A:middle
+But we are also exposing a
+
+00:06:50.946 --> 00:06:52.676 A:middle
+Boolean property that you can
+
+00:06:52.676 --> 00:06:53.996 A:middle
+set to falls for backwards
+
+00:06:53.996 --> 00:06:54.886 A:middle
+compatibility.
+
+00:06:55.646 --> 00:06:57.646 A:middle
+And finally, we are also adding
+
+00:06:57.696 --> 00:06:59.706 A:middle
+a footer container view, to
+
+00:06:59.706 --> 00:07:01.396 A:middle
+improve the navigation flow.
+

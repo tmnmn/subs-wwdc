@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.316 --> 00:08:00.566 A:middle
+Right? It should a little bit
+
+00:08:00.566 --> 00:08:01.946 A:middle
+clear here that this test is
+
+00:08:02.036 --> 00:08:03.686 A:middle
+testing way too many components.
+
+00:08:04.056 --> 00:08:05.096 A:middle
+It's testing our Game.
+
+00:08:05.516 --> 00:08:06.596 A:middle
+It's testing our Shaders.
+
+00:08:07.236 --> 00:08:08.606 A:middle
+And it's testing our Utilities.
+
+00:08:10.056 --> 00:08:11.866 A:middle
+Now in this case, it'd be better
+
+00:08:11.866 --> 00:08:13.426 A:middle
+to simply break up our tests so
+
+00:08:13.426 --> 00:08:14.366 A:middle
+that it's testing each
+
+00:08:14.366 --> 00:08:15.356 A:middle
+individual component.
+
+00:08:15.356 --> 00:08:17.586 A:middle
+And we're going to see by doing
+
+00:08:17.586 --> 00:08:18.686 A:middle
+this, we're going to introduce
+
+00:08:18.686 --> 00:08:20.416 A:middle
+our first bit of parallelism
+
+00:08:20.466 --> 00:08:21.766 A:middle
+into our build process.
+
+00:08:23.306 --> 00:08:25.246 A:middle
+Right? Our test target, which
+
+00:08:25.246 --> 00:08:26.676 A:middle
+was built in all three can now
+
+00:08:26.736 --> 00:08:27.926 A:middle
+build just the component that
+
+00:08:27.926 --> 00:08:28.956 A:middle
+it's looking for in the Game
+
+00:08:28.956 --> 00:08:29.466 A:middle
+tests.
+
+00:08:30.436 --> 00:08:31.896 A:middle
+And then our Shaders tests and
+
+00:08:31.896 --> 00:08:33.816 A:middle
+our Utilities tests can be moved
+
+00:08:33.816 --> 00:08:34.996 A:middle
+to be built in parallel with our
+
+00:08:34.996 --> 00:08:35.775 A:middle
+other targets.
+
+00:08:36.066 --> 00:08:37.236 A:middle
+And they can be built as soon as
+
+00:08:37.236 --> 00:08:38.395 A:middle
+their respective components are
+
+00:08:38.395 --> 00:08:40.456 A:middle
+done, Shaders and Utilities.
+
+00:08:42.285 --> 00:08:44.626 A:middle
+Now, the next type of dependency
+
+00:08:44.626 --> 00:08:46.696 A:middle
+I want to look at is the
+
+00:08:46.696 --> 00:08:48.526 A:middle
+dependency that I call the "Nosy
+
+00:08:48.526 --> 00:08:49.126 A:middle
+Neighbors."
+
+00:08:49.706 --> 00:08:51.596 A:middle
+This is the dependency that
+
+00:08:51.596 --> 00:08:53.426 A:middle
+needs to exist.
+
+00:08:53.586 --> 00:08:54.806 A:middle
+It's look at another target.
+
+00:08:55.136 --> 00:08:56.636 A:middle
+But it only needs a little bit
+
+00:08:56.636 --> 00:08:57.226 A:middle
+of that target.
+
+00:08:57.946 --> 00:08:59.276 A:middle
+But instead it's getting
+
+00:08:59.276 --> 00:09:00.146 A:middle
+everything that's in that
+

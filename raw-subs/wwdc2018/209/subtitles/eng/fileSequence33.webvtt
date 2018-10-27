@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.456 --> 00:33:01.686 A:middle
+macOS 10.13.4, or if you're not
+
+00:33:01.686 --> 00:33:03.306 A:middle
+using merged cells, you can
+
+00:33:03.306 --> 00:33:04.256 A:middle
+actually go all the way back to
+
+00:33:04.336 --> 00:33:05.016 A:middle
+10.12.
+
+00:33:05.556 --> 00:33:07.616 A:middle
+So, if you need to deploy your
+
+00:33:07.616 --> 00:33:08.696 A:middle
+app to an older version of
+
+00:33:08.696 --> 00:33:10.776 A:middle
+macOS, there's still no reason
+
+00:33:10.776 --> 00:33:12.176 A:middle
+to wait to use this great new
+
+00:33:12.176 --> 00:33:12.796 A:middle
+functionality.
+
+00:33:15.186 --> 00:33:17.076 A:middle
+The next topic I'd like to cover
+
+00:33:17.126 --> 00:33:18.826 A:middle
+is some changes to NSTextView.
+
+00:33:20.176 --> 00:33:21.286 A:middle
+First off,there's a few new
+
+00:33:21.286 --> 00:33:22.046 A:middle
+factory methods.
+
+00:33:22.756 --> 00:33:24.466 A:middle
+The first one here, fieldEditor
+
+00:33:24.896 --> 00:33:27.756 A:middle
+configures a textView to act as
+
+00:33:27.756 --> 00:33:29.156 A:middle
+the fieldEditor for an
+
+00:33:29.216 --> 00:33:29.816 A:middle
+NSTextField.
+
+00:33:29.936 --> 00:33:32.716 A:middle
+These all provide a much easier
+
+00:33:32.716 --> 00:33:34.276 A:middle
+way to configure textViews for
+
+00:33:34.276 --> 00:33:35.226 A:middle
+common use cases.
+
+00:33:36.256 --> 00:33:38.666 A:middle
+The latter three provide
+
+00:33:38.746 --> 00:33:39.806 A:middle
+textViews wrapped in
+
+00:33:39.806 --> 00:33:40.366 A:middle
+scrollViews.
+
+00:33:40.946 --> 00:33:42.296 A:middle
+This is by far the most common
+
+00:33:42.296 --> 00:33:44.266 A:middle
+use case for a textView, but if
+
+00:33:44.266 --> 00:33:45.156 A:middle
+you have to do additional
+
+00:33:45.156 --> 00:33:46.406 A:middle
+configuration on the textView,
+
+00:33:46.406 --> 00:33:47.786 A:middle
+it's important to remember to
+
+00:33:47.786 --> 00:33:49.526 A:middle
+look at the scrollView's
+
+00:33:49.576 --> 00:33:50.146 A:middle
+documentView.
+
+00:33:51.426 --> 00:33:52.756 A:middle
+These are also available through
+
+00:33:52.756 --> 00:33:53.526 A:middle
+Interface Builder.
+
+00:33:53.526 --> 00:33:54.566 A:middle
+So, again, there's no need to
+
+00:33:54.566 --> 00:33:55.816 A:middle
+fall back to the programmatic
+
+00:33:55.816 --> 00:33:56.436 A:middle
+API here.
+
+00:33:57.366 --> 00:33:58.246 A:middle
+So, let's see what they look
+
+00:33:58.246 --> 00:33:58.446 A:middle
+like.
+
+00:33:59.356 --> 00:34:00.776 A:middle
+Here's a sample window that
+

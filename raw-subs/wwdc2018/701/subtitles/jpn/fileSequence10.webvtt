@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:55.262 --> 00:10:00.300 align:start position:27% line:-2
+画像とサンプルに
+高速フーリエ変換を施します
+
+00:10:01.168 --> 00:10:05.505 align:start position:27% line:-2
+サンプルからマスクを作成し
+画像に適用させ
+
+00:10:07.341 --> 00:10:10.477 align:start position:36% line:-2
+オリジナル画像を
+再構築します
+
+00:10:10.677 --> 00:10:12.446 align:start position:38% line:-1
+次にコードです
+
+00:10:14.948 --> 00:10:16.250 align:start position:36% line:-1
+FFTを使います
+
+00:10:18.418 --> 00:10:21.855 align:start position:32% line:-2
+パワー２なので
+ログ２を呼び出します
+
+00:10:22.856 --> 00:10:25.626 align:start position:30% line:-2
+画像のサイズは
+1024×1024です
+
+00:10:28.662 --> 00:10:32.399 align:start position:25% line:-2
+これをfft2d zropに
+落とします
+
+00:10:32.900 --> 00:10:35.602 align:start position:30% line:-1
+opは“置き違い”です
+
+00:10:35.702 --> 00:10:39.072 align:start position:34% line:-2
+このため仮の
+スペースを作ります
+
+00:10:41.542 --> 00:10:47.781 align:start position:29% line:-2
+複雑な数列構造を２つの
+列に分けて保管するのです
+
+00:10:48.182 --> 00:10:51.618 align:start position:27% line:-1
+実際の成分と架空の成分です
+
+00:10:52.753 --> 00:10:54.621 align:start position:36% line:-1
+方向も指示します
+
+00:10:54.788 --> 00:10:56.723 align:start position:29% line:-1
+今回はforwardです
+

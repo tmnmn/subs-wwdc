@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.986 --> 00:19:01.776 A:middle
+Similarly, the thumbnail image
+
+00:19:01.776 --> 00:19:03.976 A:middle
+is also not displayed, and the
+
+00:19:03.976 --> 00:19:05.146 A:middle
+user cannot access the pass
+
+00:19:05.146 --> 00:19:05.476 A:middle
+details.
+
+00:19:07.536 --> 00:19:09.316 A:middle
+So, but we know sometimes
+
+00:19:09.316 --> 00:19:10.606 A:middle
+there's information that's
+
+00:19:10.646 --> 00:19:11.856 A:middle
+difficult to put all on the
+
+00:19:11.856 --> 00:19:12.556 A:middle
+front of pass.
+
+00:19:13.096 --> 00:19:14.006 A:middle
+And so, today we want to make
+
+00:19:14.006 --> 00:19:15.036 A:middle
+things a little bit easier for
+
+00:19:15.036 --> 00:19:16.986 A:middle
+you by adding additional row
+
+00:19:16.986 --> 00:19:17.416 A:middle
+support.
+
+00:19:18.336 --> 00:19:20.426 A:middle
+Let me show you that in action
+
+00:19:21.306 --> 00:19:21.456 A:middle
+first.
+
+00:19:21.616 --> 00:19:23.506 A:middle
+Here we see a new third row
+
+00:19:23.506 --> 00:19:24.346 A:middle
+enabled, showing the section and
+
+00:19:24.346 --> 00:19:24.906 A:middle
+the start number.
+
+00:19:27.216 --> 00:19:28.966 A:middle
+Now, that's a great way to layer
+
+00:19:29.056 --> 00:19:30.526 A:middle
+additional content, when your
+
+00:19:30.526 --> 00:19:31.896 A:middle
+existing information is already
+
+00:19:31.896 --> 00:19:32.526 A:middle
+a little bit long.
+
+00:19:33.666 --> 00:19:34.776 A:middle
+And, this is really easy to add
+
+00:19:34.776 --> 00:19:35.416 A:middle
+to your passes.
+
+00:19:35.636 --> 00:19:36.566 A:middle
+Let me show you how to do it
+
+00:19:36.566 --> 00:19:36.936 A:middle
+with a pass JSON.
+
+00:19:39.516 --> 00:19:41.216 A:middle
+Here we see the new row key be
+
+00:19:41.216 --> 00:19:43.696 A:middle
+using the auxiliaryFields, by
+
+00:19:43.696 --> 00:19:45.046 A:middle
+setting a 0 or a 1.
+
+00:19:45.706 --> 00:19:46.816 A:middle
+You can indicate that the field
+
+00:19:46.816 --> 00:19:47.796 A:middle
+should be split over the two
+
+00:19:47.796 --> 00:19:48.966 A:middle
+locations on the front of pass.
+
+00:19:54.046 --> 00:19:55.176 A:middle
+"Row" can only be used in the
+
+00:19:55.176 --> 00:19:57.336 A:middle
+auxiliary fields, and only for
+
+00:19:57.336 --> 00:19:58.666 A:middle
+event ticket-type passes.
+
+00:19:59.486 --> 00:20:01.106 A:middle
+We support values of 0 and 1,
+

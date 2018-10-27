@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.676 --> 00:22:01.536 A:middle
+this ability to synthesize the
+
+00:22:01.536 --> 00:22:02.926 A:middle
+implementation of equality.
+
+00:22:03.386 --> 00:22:04.966 A:middle
+If you emit the implementation
+
+00:22:05.186 --> 00:22:06.326 A:middle
+than the compiler will fill it
+
+00:22:06.326 --> 00:22:08.046 A:middle
+in for you as long as all those
+
+00:22:08.046 --> 00:22:09.556 A:middle
+stored properties are themselves
+
+00:22:09.556 --> 00:22:10.036 A:middle
+Equatable.
+
+00:22:11.076 --> 00:22:12.626 A:middle
+This also works for Hashable.
+
+00:22:13.996 --> 00:22:15.726 A:middle
+Now what about generic types?
+
+00:22:16.266 --> 00:22:17.986 A:middle
+So here I have a data type whose
+
+00:22:17.986 --> 00:22:19.556 A:middle
+values are either instances of
+
+00:22:19.556 --> 00:22:21.706 A:middle
+the left type or instances of
+
+00:22:21.706 --> 00:22:22.316 A:middle
+the right type.
+
+00:22:22.936 --> 00:22:24.586 A:middle
+And I might now want to make
+
+00:22:24.586 --> 00:22:26.216 A:middle
+left and right constrained to
+
+00:22:26.216 --> 00:22:27.776 A:middle
+Equatable because again, I want
+
+00:22:27.776 --> 00:22:28.876 A:middle
+to be able to use this either
+
+00:22:28.876 --> 00:22:31.046 A:middle
+type with functions, errors, and
+
+00:22:31.046 --> 00:22:32.446 A:middle
+other non Equatable types.
+
+00:22:32.916 --> 00:22:34.326 A:middle
+But certainly I can define a
+
+00:22:34.326 --> 00:22:36.226 A:middle
+conditional conformance so that
+
+00:22:36.226 --> 00:22:37.506 A:middle
+if left and right are both
+
+00:22:37.506 --> 00:22:39.146 A:middle
+Equatable then either is
+
+00:22:39.146 --> 00:22:39.726 A:middle
+Equatable.
+
+00:22:40.116 --> 00:22:41.386 A:middle
+But I can do even better than
+
+00:22:41.386 --> 00:22:41.696 A:middle
+this.
+
+00:22:42.166 --> 00:22:43.666 A:middle
+Notice how the implementation of
+
+00:22:43.666 --> 00:22:45.576 A:middle
+equality here there's only
+
+00:22:45.576 --> 00:22:47.206 A:middle
+really one obviously correct way
+
+00:22:47.206 --> 00:22:47.616 A:middle
+to do it.
+
+00:22:47.946 --> 00:22:49.186 A:middle
+You have to check that both
+
+00:22:49.186 --> 00:22:51.416 A:middle
+values have the same case and if
+
+00:22:51.416 --> 00:22:53.286 A:middle
+they do you check their payloads
+
+00:22:53.286 --> 00:22:53.996 A:middle
+for equality.
+
+00:22:54.776 --> 00:22:56.396 A:middle
+So you might guess, well the
+
+00:22:56.396 --> 00:22:57.426 A:middle
+compiler should be able to
+
+00:22:57.426 --> 00:22:58.926 A:middle
+synthesize this for you and it
+
+00:22:58.926 --> 00:23:00.256 A:middle
+can in Swift 4.2.
+

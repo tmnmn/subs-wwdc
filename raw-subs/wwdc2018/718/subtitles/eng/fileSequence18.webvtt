@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.326 --> 00:18:00.736 A:middle
+only time that a user gets to
+
+00:18:00.736 --> 00:18:02.846 A:middle
+understand how their data is
+
+00:18:02.846 --> 00:18:03.666 A:middle
+being used.
+
+00:18:04.386 --> 00:18:05.616 A:middle
+You can do this in a privacy
+
+00:18:05.616 --> 00:18:07.086 A:middle
+policy, which is required for
+
+00:18:07.086 --> 00:18:08.746 A:middle
+apps in the App Store, or
+
+00:18:08.746 --> 00:18:09.876 A:middle
+throughout your app you can
+
+00:18:09.876 --> 00:18:11.506 A:middle
+provide links and documentation
+
+00:18:11.676 --> 00:18:13.606 A:middle
+to help users understand how
+
+00:18:13.606 --> 00:18:14.676 A:middle
+their data is being used.
+
+00:18:16.296 --> 00:18:18.356 A:middle
+Now this is all broader guidance
+
+00:18:18.616 --> 00:18:21.026 A:middle
+around these kinds of APIs, but
+
+00:18:21.026 --> 00:18:22.206 A:middle
+there's a few specific ones I
+
+00:18:22.206 --> 00:18:23.786 A:middle
+want to highlight with changes
+
+00:18:23.786 --> 00:18:24.276 A:middle
+this year.
+
+00:18:24.766 --> 00:18:26.706 A:middle
+The first is for WiFi network
+
+00:18:26.706 --> 00:18:27.406 A:middle
+information.
+
+00:18:27.926 --> 00:18:29.546 A:middle
+If your app uses see and copy
+
+00:18:29.546 --> 00:18:30.946 A:middle
+current network info, you're
+
+00:18:31.276 --> 00:18:32.236 A:middle
+going to need to add an
+
+00:18:32.236 --> 00:18:33.046 A:middle
+entitlement,
+
+00:18:33.046 --> 00:18:35.566 A:middle
+AccessWiFiInformation in Xcode.
+
+00:18:36.616 --> 00:18:37.996 A:middle
+This is a capability that you
+
+00:18:37.996 --> 00:18:39.076 A:middle
+can enable for your app.
+
+00:18:39.736 --> 00:18:41.666 A:middle
+For example, if your app is
+
+00:18:41.666 --> 00:18:42.746 A:middle
+communicating with a hardware
+
+00:18:42.746 --> 00:18:44.236 A:middle
+accessory and needs to verify if
+
+00:18:44.236 --> 00:18:46.066 A:middle
+they're on the same network, you
+
+00:18:46.066 --> 00:18:46.746 A:middle
+would need this.
+
+00:18:47.296 --> 00:18:48.246 A:middle
+If you're not doing that use
+
+00:18:48.246 --> 00:18:49.576 A:middle
+case, you don't need to worry
+
+00:18:49.576 --> 00:18:50.196 A:middle
+about this.
+
+00:18:50.196 --> 00:18:51.536 A:middle
+This is only if it's necessary
+
+00:18:51.536 --> 00:18:52.606 A:middle
+for the functionality of your
+
+00:18:52.606 --> 00:18:52.856 A:middle
+app.
+
+00:18:53.296 --> 00:18:55.386 A:middle
+You may have also heard about
+
+00:18:55.386 --> 00:18:56.746 A:middle
+our new Health Records API.
+
+00:18:57.726 --> 00:18:59.096 A:middle
+Because we know that developers
+
+00:18:59.096 --> 00:19:00.686 A:middle
+have a lot of great ideas around
+

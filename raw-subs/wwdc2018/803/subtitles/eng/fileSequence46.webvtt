@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:03.176 --> 00:46:05.306 A:middle
+So, this idea of projecting
+
+00:46:05.306 --> 00:46:08.346 A:middle
+momentum is incredibly useful.
+
+00:46:08.766 --> 00:46:10.406 A:middle
+And, we think its super
+
+00:46:10.406 --> 00:46:10.806 A:middle
+important.
+
+00:46:10.806 --> 00:46:12.136 A:middle
+I'd like to share some code for
+
+00:46:12.136 --> 00:46:13.536 A:middle
+doing this with you, so that you
+
+00:46:13.536 --> 00:46:16.196 A:middle
+can do this in your own apps.
+
+00:46:16.336 --> 00:46:17.596 A:middle
+So, this function will take a
+
+00:46:17.596 --> 00:46:19.366 A:middle
+velocity like the PIP's position
+
+00:46:19.366 --> 00:46:22.086 A:middle
+velocity, and deceleration rate,
+
+00:46:22.956 --> 00:46:24.966 A:middle
+and it'll give you the value
+
+00:46:24.996 --> 00:46:26.086 A:middle
+that you could use as an
+
+00:46:26.336 --> 00:46:28.206 A:middle
+endpoint for dynamic behavior.
+
+00:46:29.076 --> 00:46:29.876 A:middle
+It's pretty simple.
+
+00:46:30.556 --> 00:46:33.056 A:middle
+If we look at my FaceTime
+
+00:46:33.056 --> 00:46:35.606 A:middle
+example of the pan gesture
+
+00:46:35.606 --> 00:46:38.556 A:middle
+ending code, you can see that
+
+00:46:38.556 --> 00:46:39.186 A:middle
+I'm just using the
+
+00:46:39.186 --> 00:46:41.326 A:middle
+UIScrollView.DecelerationRate.
+
+00:46:41.506 --> 00:46:43.106 A:middle
+So, we're leaning on that
+
+00:46:43.106 --> 00:46:44.556 A:middle
+familiarity people have with
+
+00:46:44.556 --> 00:46:46.186 A:middle
+scrolling and how far content
+
+00:46:46.186 --> 00:46:47.106 A:middle
+will go when scrolled.
+
+00:46:48.256 --> 00:46:50.966 A:middle
+And, I'm using that with my
+
+00:46:51.176 --> 00:46:51.846 A:middle
+projection.
+
+00:46:52.226 --> 00:46:53.536 A:middle
+So, I take the velocity of the
+
+00:46:53.606 --> 00:46:55.546 A:middle
+PIP and the deceleration rate,
+
+00:46:55.546 --> 00:46:57.376 A:middle
+and I create that imaginary PIP
+
+00:46:57.416 --> 00:46:57.976 A:middle
+position.
+
+00:46:58.546 --> 00:47:01.336 A:middle
+And, it's this imaginary,
+

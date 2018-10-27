@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:05.636 --> 00:21:07.266 A:middle
+Next, I'm going to add a search
+
+00:21:07.266 --> 00:21:07.656 A:middle
+handler.
+
+00:21:07.906 --> 00:21:09.566 A:middle
+This is straight JavaScript.
+
+00:21:09.686 --> 00:21:10.966 A:middle
+It's not specific to MusicKit
+
+00:21:10.966 --> 00:21:12.056 A:middle
+JS, but I did want to walk
+
+00:21:12.056 --> 00:21:13.286 A:middle
+through that when the user
+
+00:21:13.286 --> 00:21:15.066 A:middle
+presses Enter on the search box
+
+00:21:15.366 --> 00:21:16.696 A:middle
+is when we're going to fire our
+
+00:21:17.086 --> 00:21:18.506 A:middle
+callback to do the search.
+
+00:21:19.046 --> 00:21:23.036 A:middle
+And we can implement that by
+
+00:21:23.036 --> 00:21:24.936 A:middle
+using the search method off of
+
+00:21:24.936 --> 00:21:26.496 A:middle
+MusicKit's API property.
+
+00:21:27.816 --> 00:21:29.286 A:middle
+This will perform the search
+
+00:21:29.286 --> 00:21:30.796 A:middle
+against the Apple Music API, and
+
+00:21:31.026 --> 00:21:32.976 A:middle
+we can specify any query
+
+00:21:32.976 --> 00:21:34.736 A:middle
+parameters that the Apple Music
+
+00:21:34.736 --> 00:21:38.186 A:middle
+API accepts with a configuration
+
+00:21:38.186 --> 00:21:38.516 A:middle
+object.
+
+00:21:39.286 --> 00:21:40.376 A:middle
+So we can specify we want to
+
+00:21:40.376 --> 00:21:41.436 A:middle
+search, we want to limit the
+
+00:21:41.436 --> 00:21:43.436 A:middle
+search to playlists and that we
+
+00:21:43.436 --> 00:21:44.796 A:middle
+want our results to be limited
+
+00:21:44.796 --> 00:21:45.786 A:middle
+to 8.
+
+00:21:46.856 --> 00:21:48.546 A:middle
+We have our custom templating,
+
+00:21:49.796 --> 00:21:51.356 A:middle
+but I want to highlight these 3
+
+00:21:51.356 --> 00:21:53.186 A:middle
+lines, which is where we tell
+
+00:21:53.186 --> 00:21:55.966 A:middle
+our MusicKit instance to take
+
+00:21:55.966 --> 00:21:57.256 A:middle
+the artwork that the user has
+
+00:21:57.256 --> 00:21:59.016 A:middle
+clicked on, and we want to set
+
+00:21:59.016 --> 00:22:00.286 A:middle
+the playback queue to that
+

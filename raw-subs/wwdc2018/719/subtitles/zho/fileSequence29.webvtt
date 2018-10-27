@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:01.808 --> 00:29:02.876 align:middle line:-1
+好 在演示期间
+
+00:29:02.943 --> 00:29:04.811 align:middle line:-2
+我将用
+Jupiter Notebook
+
+00:29:05.112 --> 00:29:08.682 align:middle line:-2
+这是一个基于浏览器的
+实时Python解释器
+
+00:29:09.449 --> 00:29:11.585 align:middle line:-1
+你将看到的所有结果
+
+00:29:11.652 --> 00:29:14.755 align:middle line:-2
+都是用后端的
+Core Image实时生成的
+
+00:29:14.821 --> 00:29:16.356 align:middle line:-1
+而不是预先计算过
+
+00:29:16.423 --> 00:29:17.658 align:middle line:-1
+这一切都是现场完成的
+
+00:29:18.292 --> 00:29:19.927 align:middle line:-1
+我想在这里做的第一件事
+
+00:29:19.993 --> 00:29:23.530 align:middle line:-1
+导入我们将要用的实用程序类
+
+00:29:23.730 --> 00:29:25.632 align:middle line:-1
+这里最重要的是CIMG类
+
+00:29:25.699 --> 00:29:27.034 align:middle line:-1
+用于我的PyCoreImage包
+
+00:29:27.968 --> 00:29:29.336 align:middle line:-1
+然后我们只需一些设置代码
+
+00:29:29.403 --> 00:29:32.306 align:middle line:-1
+以便我们可视化该笔记本中的图像
+
+00:29:32.906 --> 00:29:33.774 align:middle line:-1
+我们开始
+
+00:29:35.342 --> 00:29:37.911 align:middle line:-1
+第一是如何加载图像
+
+00:29:38.512 --> 00:29:39.813 align:middle line:-1
+在此用fromFile
+
+00:29:40.214 --> 00:29:45.619 align:middle line:-2
+我们看到我的对象类型是
+PyCoreImage CIMG
+
+00:29:46.053 --> 00:29:47.387 align:middle line:-1
+我们可以看到它后面的支持
+
+00:29:47.454 --> 00:29:50.691 align:middle line:-2
+是一个正确的
+Core Image对象
+
+00:29:51.558 --> 00:29:54.661 align:middle line:-2
+我们可以对图像进行生成并
+用Matplotlib
+
+00:29:56.697 --> 00:29:59.833 align:middle line:-1
+查看实际的像素表示
+

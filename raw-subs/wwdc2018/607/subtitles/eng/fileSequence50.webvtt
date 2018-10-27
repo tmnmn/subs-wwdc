@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.746 --> 00:50:00.206 A:middle
+session.
+
+00:50:01.976 --> 00:50:03.726 A:middle
+Going to talk a little bit about
+
+00:50:03.726 --> 00:50:04.896 A:middle
+metal specifically.
+
+00:50:05.716 --> 00:50:09.006 A:middle
+So we, on most devices, we have
+
+00:50:09.006 --> 00:50:11.786 A:middle
+2 cores, right, and so the way
+
+00:50:11.786 --> 00:50:13.626 A:middle
+we utilize that is we have a
+
+00:50:14.206 --> 00:50:14.966 A:middle
+traditional game
+
+00:50:14.966 --> 00:50:16.196 A:middle
+thread/rendering thread split.
+
+00:50:16.576 --> 00:50:17.676 A:middle
+On the game thread, we're doing
+
+00:50:17.676 --> 00:50:19.086 A:middle
+networking, simulation,
+
+00:50:19.086 --> 00:50:20.746 A:middle
+animation, physics, and so on.
+
+00:50:21.316 --> 00:50:22.546 A:middle
+The rendering thread does all of
+
+00:50:22.546 --> 00:50:24.576 A:middle
+scene traversal, culling, and
+
+00:50:24.576 --> 00:50:25.796 A:middle
+issues all of the Metal API
+
+00:50:25.796 --> 00:50:26.316 A:middle
+calls.
+
+00:50:26.646 --> 00:50:29.316 A:middle
+We also have an async thread.
+
+00:50:29.626 --> 00:50:31.026 A:middle
+Mostly, it's handling streaming
+
+00:50:31.026 --> 00:50:32.796 A:middle
+tasks -- texture streaming as
+
+00:50:32.796 --> 00:50:34.386 A:middle
+well as level streaming.
+
+00:50:36.006 --> 00:50:37.726 A:middle
+On newer devices where we have 2
+
+00:50:37.726 --> 00:50:39.996 A:middle
+fast and 4 efficient cores, we
+
+00:50:39.996 --> 00:50:41.456 A:middle
+add 3 more task threads and
+
+00:50:41.456 --> 00:50:42.656 A:middle
+enable some of the parallel
+
+00:50:42.656 --> 00:50:44.186 A:middle
+algorithms available in Unreal.
+
+00:50:44.796 --> 00:50:47.476 A:middle
+So we take animation, put it,
+
+00:50:47.476 --> 00:50:48.526 A:middle
+simulate it over on multiple
+
+00:50:48.526 --> 00:50:51.126 A:middle
+frames, CPU particles, physics,
+
+00:50:51.126 --> 00:50:53.926 A:middle
+and so on, scene culling, a
+
+00:50:53.926 --> 00:50:55.056 A:middle
+couple other tasks.
+
+00:50:57.376 --> 00:50:59.166 A:middle
+I mentioned draw calls earlier.
+
+00:50:59.296 --> 00:51:00.916 A:middle
+Draw calls were our main
+

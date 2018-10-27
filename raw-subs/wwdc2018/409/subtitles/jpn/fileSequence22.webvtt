@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:56.984 --> 00:22:01.555 align:start position:29% line:-2
+そしてパラメータの
+自動解放の明示を促します
+
+00:22:02.055 --> 00:22:05.192 align:start position:25% line:-1
+このような問題に対処するため
+
+00:22:05.492 --> 00:22:11.265 align:start position:12% line:-2
+Xcode 10にはClangスタティック
+アナライザを導入しました
+
+00:22:11.832 --> 00:22:14.101 align:start position:32% line:-1
+自動解放プールの中に
+
+00:22:15.102 --> 00:22:20.407 align:start position:20% line:-2
+ブロックを呼び出したAPIを判断し
+警告を出します
+
+00:22:23.544 --> 00:22:25.846 align:start position:30% line:-1
+問題を修正していきます
+
+00:22:26.180 --> 00:22:30.717 align:start position:27% line:-2
+手順は強力なローカル変数を
+導入するだけ
+
+00:22:30.984 --> 00:22:33.554 align:start position:36% line:-1
+ブロック内の値を
+
+00:22:33.654 --> 00:22:37.324 align:start position:23% line:-1
+そのローカル変数に書き込みます
+
+00:22:37.624 --> 00:22:42.729 align:start position:27% line:-2
+制御がブロックから外れると
+outパラメータにコピー
+
+00:22:42.829 --> 00:22:45.332 align:start position:25% line:-1
+自動解放プール内ではないので
+
+00:22:45.432 --> 00:22:48.469 align:start position:12% line:-1
+autoreleasingの変数は安全です
+
+00:22:53.140 --> 00:22:58.912 align:start position:30% line:-2
+最後に向上した性能と
+表示方法をお伝えします
+
+00:22:59.546 --> 00:23:01.448 align:start position:32% line:-1
+Xcode 10では
+

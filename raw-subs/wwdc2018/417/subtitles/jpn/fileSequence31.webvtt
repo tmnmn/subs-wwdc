@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:56.490 --> 00:31:00.027 align:start position:34% line:-2
+まず遅延の仕組みを
+特定すべきです
+
+00:31:00.127 --> 00:31:01.929 align:start position:32% line:-1
+私の例ではタイマーで
+
+00:31:02.029 --> 00:31:06.133 align:start position:11% line:-2
+DispatchQueueからの
+asyncAfter APIの場合もあります
+
+00:31:06.833 --> 00:31:09.136 align:start position:30% line:-1
+この仕組みをモックして
+
+00:31:09.236 --> 00:31:13.040 align:start position:25% line:-2
+直ちに遅延アクションを実行し
+遅れをバイパスします
+
+00:31:15.943 --> 00:31:17.678 align:start position:34% line:-1
+再び元のコードです
+
+00:31:17.778 --> 00:31:21.849 align:start position:16% line:-2
+scheduledTimerメソッドの
+動きを確認しましょう
+
+00:31:22.516 --> 00:31:26.086 align:start position:27% line:-2
+このメソッドは２つのことを
+行います
+
+00:31:26.253 --> 00:31:27.821 align:start position:34% line:-1
+タイマーの生成と―
+
+00:31:27.921 --> 00:31:30.591 align:start position:32% line:-2
+現在の実行ループへの
+追加です
+
+00:31:31.125 --> 00:31:34.595 align:start position:32% line:-2
+タイマーの生成に
+便利なAPIですが―
+
+00:31:34.695 --> 00:31:38.966 align:start position:27% line:-2
+２つを分ければ
+よりテストしやすくなります
+
+00:31:40.500 --> 00:31:44.037 align:start position:20% line:-2
+scheduledTimerを使う
+先ほどのコードを変更し
+
+00:31:44.138 --> 00:31:46.206 align:start position:34% line:-1
+まずタイマーを作成
+
+00:31:46.306 --> 00:31:50.544 align:start position:27% line:-2
+次に新プロパティに保存した
+runLoopを追加
+
+00:31:51.512 --> 00:31:54.081 align:start position:32% line:-1
+コードは前と同等です
+
+00:31:54.181 --> 00:31:56.450 align:start position:34% line:-2
+２つを分ければ
+runLoopは―
+
+00:31:56.550 --> 00:32:01.121 align:start position:29% line:-2
+このクラスがやり取りする
+外部クラスの１つです
+

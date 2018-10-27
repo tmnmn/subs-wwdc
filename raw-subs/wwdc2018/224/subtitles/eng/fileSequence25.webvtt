@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.416 --> 00:25:00.746 A:middle
+the big one you should always
+
+00:25:00.746 --> 00:25:02.566 A:middle
+run with is com.apple.Core
+
+00:25:02.566 --> 00:25:04.066 A:middle
+Data.ConcurrencyDebug.
+
+00:25:04.616 --> 00:25:06.266 A:middle
+And this will catch any queue
+
+00:25:06.266 --> 00:25:07.746 A:middle
+exceptions in your applications,
+
+00:25:07.746 --> 00:25:09.396 A:middle
+so areas that you may be
+
+00:25:09.396 --> 00:25:10.766 A:middle
+transferring objects between
+
+00:25:10.766 --> 00:25:11.926 A:middle
+main and background queue
+
+00:25:11.926 --> 00:25:14.066 A:middle
+contexts or areas that you may
+
+00:25:14.066 --> 00:25:15.566 A:middle
+not be obeying a managed
+
+00:25:15.566 --> 00:25:18.666 A:middle
+object's actual context.
+
+00:25:18.746 --> 00:25:20.466 A:middle
+SQLite also has a number of
+
+00:25:20.466 --> 00:25:21.506 A:middle
+interesting environment
+
+00:25:21.506 --> 00:25:23.206 A:middle
+variables, so their threading
+
+00:25:23.206 --> 00:25:24.756 A:middle
+and file assertions are a great
+
+00:25:24.756 --> 00:25:25.836 A:middle
+way to ensure you have
+
+00:25:25.836 --> 00:25:27.286 A:middle
+correctness in your application
+
+00:25:27.286 --> 00:25:29.016 A:middle
+around their API as well as the
+
+00:25:29.016 --> 00:25:29.746 A:middle
+file system.
+
+00:25:30.576 --> 00:25:32.386 A:middle
+And auto tracing is a great way
+
+00:25:32.386 --> 00:25:33.496 A:middle
+for you to see what's going on
+
+00:25:33.496 --> 00:25:34.826 A:middle
+under the covers, an additional
+
+00:25:34.826 --> 00:25:36.046 A:middle
+tour on debug logging.
+
+00:25:36.856 --> 00:25:39.646 A:middle
+com.apple.Core Data.SQLDebug has
+
+00:25:39.646 --> 00:25:40.676 A:middle
+four levels.
+
+00:25:41.106 --> 00:25:43.206 A:middle
+The first level is the most
+
+00:25:43.206 --> 00:25:44.636 A:middle
+interesting and the least of a
+
+00:25:44.636 --> 00:25:45.466 A:middle
+performance hit.
+
+00:25:45.466 --> 00:25:47.826 A:middle
+The fourth level is the most
+
+00:25:47.826 --> 00:25:49.126 A:middle
+verbose, but does cause
+
+00:25:49.126 --> 00:25:51.006 A:middle
+significant performance hit when
+
+00:25:51.006 --> 00:25:53.726 A:middle
+you run with it.
+
+00:25:53.996 --> 00:25:55.696 A:middle
+When you enable SQL debugging
+
+00:25:55.806 --> 00:25:57.146 A:middle
+and our multi-threading
+
+00:25:57.146 --> 00:25:58.476 A:middle
+assertions, you'll see a couple
+
+00:25:58.506 --> 00:26:00.456 A:middle
+of logs in the console and these
+

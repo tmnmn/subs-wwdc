@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.747 --> 00:13:03.283 align:middle line:-1
+属性设置
+
+00:13:03.350 --> 00:13:04.818 align:middle line:-1
+应当在界面修正之后
+
+00:13:04.885 --> 00:13:07.821 align:middle line:-1
+与代码样本唯一的区别是
+
+00:13:07.888 --> 00:13:10.591 align:middle line:-1
+你需要替换字符串
+
+00:13:10.657 --> 00:13:13.260 align:middle line:-2
+com.your-app.
+broadcast.extension
+
+00:13:13.627 --> 00:13:15.362 align:middle line:-1
+这是扩展的捆绑ID
+
+00:13:17.965 --> 00:13:21.535 align:middle line:-1
+这张图表中 我想要强调
+
+00:13:23.237 --> 00:13:25.839 align:middle line:-1
+在app中创建的选择器界面
+
+00:13:26.440 --> 00:13:29.576 align:middle line:-2
+这个界面只是快捷键
+可以跳转到
+
+00:13:29.776 --> 00:13:31.778 align:middle line:-1
+选择器的系统界面
+
+00:13:32.145 --> 00:13:35.415 align:middle line:-1
+控制中心也可打开
+
+00:13:36.750 --> 00:13:39.953 align:middle line:-1
+选择器本身属于系统
+
+00:13:40.020 --> 00:13:45.192 align:middle line:-1
+app不占有直播的任何部分
+
+00:13:45.259 --> 00:13:50.631 align:middle line:-2
+因此也不可通过编程
+开始或停止系统播放
+
+00:13:53.333 --> 00:13:54.635 align:middle line:-2
+（开发REPLAYKIT 2
+播放扩展）
+
+00:13:54.701 --> 00:13:58.839 align:middle line:-2
+那么你要做的是
+将iOS系统播放加入app
+
+00:13:59.406 --> 00:14:02.142 align:middle line:-1
+新的API十分简单
+

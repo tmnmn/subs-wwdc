@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:58.856 --> 00:51:00.196 A:middle
+file does not appear in there
+
+00:51:00.196 --> 00:51:00.756 A:middle
+anywhere.
+
+00:51:01.176 --> 00:51:02.816 A:middle
+The reason is, that's a static.
+
+00:51:02.816 --> 00:51:03.836 A:middle
+And those of you who are
+
+00:51:03.836 --> 00:51:04.836 A:middle
+familiar with C, that means it's
+
+00:51:04.836 --> 00:51:06.166 A:middle
+a nonexported name.
+
+00:51:06.166 --> 00:51:07.386 A:middle
+Nobody else can refer to it.
+
+00:51:07.386 --> 00:51:08.806 A:middle
+Since nobody else can refer to
+
+00:51:08.806 --> 00:51:10.016 A:middle
+it, we don't need it.
+
+00:51:10.016 --> 00:51:10.856 A:middle
+It's not included.
+
+00:51:14.326 --> 00:51:17.286 A:middle
+And then we see Cat purr becomes
+
+00:51:17.286 --> 00:51:19.536 A:middle
+an actual symbol: dash, open
+
+00:51:19.536 --> 00:51:20.976 A:middle
+bracket, Cat purr, close
+
+00:51:20.976 --> 00:51:22.746 A:middle
+bracket.
+
+00:51:23.596 --> 00:51:24.686 A:middle
+Pretty much what you'd expect.
+
+00:51:24.686 --> 00:51:27.946 A:middle
+And then we see we actually have
+
+00:51:27.946 --> 00:51:29.446 A:middle
+to get this variable we're going
+
+00:51:29.446 --> 00:51:30.746 A:middle
+to pass into playSound.
+
+00:51:30.746 --> 00:51:32.196 A:middle
+And you'll note there are two
+
+00:51:32.196 --> 00:51:33.556 A:middle
+instructions referring to that.
+
+00:51:33.556 --> 00:51:36.476 A:middle
+And that's because we don't know
+
+00:51:36.476 --> 00:51:38.206 A:middle
+where this string is going to
+
+00:51:38.206 --> 00:51:39.406 A:middle
+end up in the final executable.
+
+00:51:39.406 --> 00:51:40.866 A:middle
+We don't have a concrete address
+
+00:51:40.866 --> 00:51:41.386 A:middle
+for it.
+
+00:51:41.616 --> 00:51:43.646 A:middle
+But we know that on RM64 which
+
+00:51:43.646 --> 00:51:45.046 A:middle
+is what this assembly is, it
+
+00:51:45.586 --> 00:51:46.386 A:middle
+could take at most two
+
+00:51:46.386 --> 00:51:46.936 A:middle
+instructions.
+
+00:51:46.936 --> 00:51:48.116 A:middle
+So the compiler leaves us with
+
+00:51:48.116 --> 00:51:48.866 A:middle
+two instructions.
+
+00:51:49.126 --> 00:51:50.426 A:middle
+And it leaves the symbolic
+
+00:51:50.426 --> 00:51:52.636 A:middle
+offset, the symbolic values page
+
+00:51:52.636 --> 00:51:53.986 A:middle
+and page off that the linker
+
+00:51:53.986 --> 00:51:55.176 A:middle
+will come in and fix up later.
+
+00:51:56.206 --> 00:51:59.406 A:middle
+Finally, now that we've loaded
+
+00:51:59.406 --> 00:52:03.096 A:middle
+that string into x0, we can call
+

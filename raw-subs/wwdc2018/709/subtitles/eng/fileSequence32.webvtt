@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.756 --> 00:32:00.266 A:middle
+custom description here.
+
+00:32:01.546 --> 00:32:03.186 A:middle
+Okay. Let me go back to slides.
+
+00:32:04.516 --> 00:32:09.896 A:middle
+[ Applause ]
+
+00:32:10.396 --> 00:32:12.466 A:middle
+So what we just saw was with a
+
+00:32:12.466 --> 00:32:15.126 A:middle
+few simple lines, we could
+
+00:32:15.156 --> 00:32:16.386 A:middle
+exhibit a convert a function to
+
+00:32:16.546 --> 00:32:17.246 A:middle
+Core ML.
+
+00:32:17.246 --> 00:32:19.496 A:middle
+And the process is pretty much
+
+00:32:19.526 --> 00:32:21.266 A:middle
+the same if you are using the
+
+00:32:21.266 --> 00:32:23.566 A:middle
+TensorFlow converter or the ONNX
+
+00:32:23.566 --> 00:32:23.956 A:middle
+converter.
+
+00:32:25.266 --> 00:32:26.596 A:middle
+So we have our model here on the
+
+00:32:26.596 --> 00:32:27.176 A:middle
+left-hand side.
+
+00:32:27.616 --> 00:32:29.286 A:middle
+The custom layer model with the
+
+00:32:29.286 --> 00:32:29.856 A:middle
+parameters.
+
+00:32:30.496 --> 00:32:31.646 A:middle
+Now when you drag and drop this
+
+00:32:31.646 --> 00:32:33.966 A:middle
+model into Xcode, you will need
+
+00:32:33.966 --> 00:32:35.336 A:middle
+to provide the implementation of
+
+00:32:35.426 --> 00:32:36.456 A:middle
+the class.
+
+00:32:36.456 --> 00:32:38.186 A:middle
+In a file say, for example,
+
+00:32:38.186 --> 00:32:38.476 A:middle
+[inaudible].
+
+00:32:38.476 --> 00:32:39.536 A:middle
+And this is how it would look
+
+00:32:39.536 --> 00:32:39.726 A:middle
+like.
+
+00:32:40.206 --> 00:32:41.646 A:middle
+So you have your class, so
+
+00:32:42.006 --> 00:32:44.986 A:middle
+you'll have the initializer
+
+00:32:45.246 --> 00:32:45.706 A:middle
+function.
+
+00:32:45.996 --> 00:32:47.456 A:middle
+So this would be just
+
+00:32:47.456 --> 00:32:49.106 A:middle
+initializing any parameters that
+
+00:32:49.106 --> 00:32:50.116 A:middle
+we had in the model.
+
+00:32:50.486 --> 00:32:52.636 A:middle
+And then the main function in
+
+00:32:52.636 --> 00:32:55.906 A:middle
+this class would be evaluate.
+
+00:32:56.846 --> 00:32:58.996 A:middle
+This is where the actual
+
+00:32:59.266 --> 00:33:00.706 A:middle
+implementation of whatever
+

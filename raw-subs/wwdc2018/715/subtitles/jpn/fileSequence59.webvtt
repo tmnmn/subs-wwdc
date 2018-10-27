@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:58:57.938 --> 00:59:01.008 align:start position:30% line:-1
+さらにCFソケットや―
+
+00:59:01.108 --> 00:59:04.111 align:start position:9% line:-2
+CFStreamCreatePairWithも
+避けていただきたいです
+
+00:59:04.645 --> 00:59:10.317 align:start position:25% line:-2
+これらは接続の確立や
+ユーザ空間ネットワーキングを
+
+00:59:10.651 --> 00:59:12.786 align:start position:32% line:-1
+うまく活用できません
+
+00:59:12.886 --> 00:59:18.225 align:start position:11% line:-2
+しかし Network.frameworkと
+URLセッションなら
+
+00:59:18.325 --> 00:59:23.096 align:start position:29% line:-2
+接続性とパフォーマンスを
+向上させられます
+
+00:59:24.331 --> 00:59:27.334 align:start position:16% line:-2
+他にも避けてほしい
+Foundation APIがあります
+
+00:59:27.768 --> 00:59:33.240 align:start position:12% line:-2
+NSStream NSNetService
+NSSocketのいずれかを使用するより
+
+00:59:33.340 --> 00:59:36.877 align:start position:20% line:-2
+Network.framworkか
+URLセッションへ移行してください
+
+00:59:37.578 --> 00:59:39.947 align:start position:9% line:-1
+SCNetworkReachabilityでは
+
+00:59:40.480 --> 00:59:43.417 align:start position:11% line:-2
+WaitforConnectivityの方が
+良いモデルです
+
+00:59:43.517 --> 00:59:45.752 align:start position:32% line:-1
+こちらをお勧めします
+
+00:59:46.053 --> 00:59:50.357 align:start position:5% line:-2
+そして WaitforConnectivityより
+良い解決策が
+
+00:59:50.457 --> 00:59:52.426 align:start position:23% line:-1
+NWPathMoniterです
+
+00:59:53.360 --> 00:59:57.798 align:start position:30% line:-2
+次は使ってほしいものに
+焦点を当てます
+
+00:59:58.632 --> 01:00:04.538 align:start position:16% line:-2
+推奨するAPIはURLセッションと
+Network.frameworkです
+

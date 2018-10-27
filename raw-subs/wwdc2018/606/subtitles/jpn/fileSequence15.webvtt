@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.832 --> 00:15:01.735 align:start position:29% line:-1
+まず交点を計算しましょう
+
+00:15:03.103 --> 00:15:06.573 align:start position:23% line:-1
+レイは始点と方向で定義されます
+
+00:15:09.343 --> 00:15:13.080 align:start position:27% line:-2
+これが
+交差判定の結果の構造体です
+
+00:15:13.447 --> 00:15:15.148 align:start position:32% line:-1
+distanceに―
+
+00:15:15.249 --> 00:15:20.754 align:start position:29% line:-2
+レイの始点から交点までの
+距離が示されます
+
+00:15:20.988 --> 00:15:24.458 align:start position:36% line:-2
+交差がない場合は
+負となります
+
+00:15:26.426 --> 00:15:29.496 align:start position:23% line:-2
+primitiveIndexは
+交差した三角形を示し
+
+00:15:30.230 --> 00:15:33.800 align:start position:27% line:-2
+最終フィールドは
+頂点属性の補間に使用します
+
+00:15:35.035 --> 00:15:39.206 align:start position:30% line:-2
+ここには UとVという
+重心座標が入り
+
+00:15:39.306 --> 00:15:44.545 align:start position:32% line:-2
+三角形の頂点に対する
+交点の位置を示します
+
+00:15:45.412 --> 00:15:49.016 align:start position:34% line:-2
+３つ目の重心座標は
+合計の１から―
+
+00:15:49.116 --> 00:15:54.021 align:start position:29% line:-2
+先ほどの２つの座標を引き
+Wを算出します
+
+00:15:55.422 --> 00:16:01.628 align:start position:25% line:-2
+三角形の各頂点で
+頂点属性が定義されていれば―
+

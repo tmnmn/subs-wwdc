@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.396 --> 00:18:02.376 A:middle
+It's represented by multiple
+
+00:18:02.376 --> 00:18:03.676 A:middle
+vectors, and it's going to go
+
+00:18:03.676 --> 00:18:04.286 A:middle
+through a series of eight
+
+00:18:04.286 --> 00:18:04.886 A:middle
+rotations.
+
+00:18:05.486 --> 00:18:06.546 A:middle
+On the left, we're going to
+
+00:18:06.546 --> 00:18:07.766 A:middle
+trace those rotations using
+
+00:18:07.836 --> 00:18:09.166 A:middle
+Slerp, and on the right we're
+
+00:18:09.166 --> 00:18:09.996 A:middle
+going to use Spline.
+
+00:18:10.316 --> 00:18:11.406 A:middle
+So let me show you what Slerp
+
+00:18:11.406 --> 00:18:11.836 A:middle
+looks like.
+
+00:18:20.066 --> 00:18:20.676 A:middle
+And you can see because it's a
+
+00:18:20.676 --> 00:18:21.826 A:middle
+linear interpolation, every
+
+00:18:21.826 --> 00:18:23.306 A:middle
+single time it changes direction
+
+00:18:23.356 --> 00:18:24.616 A:middle
+you get these sharp corners.
+
+00:18:25.346 --> 00:18:26.576 A:middle
+Whereas if we look at Spline --
+
+00:18:35.156 --> 00:18:35.846 A:middle
+Because it's aware of the
+
+00:18:35.846 --> 00:18:37.446 A:middle
+previous and next rotation as
+
+00:18:37.446 --> 00:18:38.426 A:middle
+well, you end up with these
+
+00:18:38.426 --> 00:18:39.146 A:middle
+rounded corners.
+
+00:18:39.736 --> 00:18:40.506 A:middle
+So let's see that again.
+
+00:18:52.726 --> 00:18:53.466 A:middle
+So now I went through all those
+
+00:18:53.466 --> 00:18:55.846 A:middle
+topics pretty quickly, so as a
+
+00:18:55.846 --> 00:18:58.866 A:middle
+quick recap, we started by
+
+00:18:58.866 --> 00:19:00.566 A:middle
+taking a look at vDSP, and we
+

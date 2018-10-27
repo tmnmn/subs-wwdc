@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:57.036 --> 00:30:00.326 A:middle
+Now, modern CPUs learn over time
+
+00:30:00.326 --> 00:30:02.156 A:middle
+if they see the same code path
+
+00:30:02.156 --> 00:30:05.346 A:middle
+over and over again that, hey, x
+
+00:30:05.346 --> 00:30:06.696 A:middle
+is always in bound.
+
+00:30:07.356 --> 00:30:09.126 A:middle
+It's always OK to load this
+
+00:30:09.126 --> 00:30:09.496 A:middle
+array.
+
+00:30:10.406 --> 00:30:11.586 A:middle
+Why don't I go ahead and
+
+00:30:11.586 --> 00:30:14.516 A:middle
+speculatively do that, before I
+
+00:30:14.516 --> 00:30:15.986 A:middle
+know whether it's OK or not?
+
+00:30:16.686 --> 00:30:17.816 A:middle
+And this is how it works.
+
+00:30:18.356 --> 00:30:20.496 A:middle
+It does this code-- takes this
+
+00:30:20.496 --> 00:30:22.946 A:middle
+code path speculatively, loads
+
+00:30:22.946 --> 00:30:25.066 A:middle
+that data, and then when the
+
+00:30:25.066 --> 00:30:26.676 A:middle
+final answer comes in, in this
+
+00:30:26.676 --> 00:30:28.896 A:middle
+case, oops, no, this is one of
+
+00:30:28.896 --> 00:30:30.536 A:middle
+the rare cases where x was not
+
+00:30:30.536 --> 00:30:31.606 A:middle
+OK, you shouldn't have been
+
+00:30:31.606 --> 00:30:33.886 A:middle
+loading that data, it backs it
+
+00:30:33.886 --> 00:30:36.906 A:middle
+out and takes the right code
+
+00:30:37.756 --> 00:30:37.896 A:middle
+path.
+
+00:30:38.066 --> 00:30:39.116 A:middle
+How is this OK?
+
+00:30:39.466 --> 00:30:41.116 A:middle
+Well, it's OK because the
+
+00:30:41.116 --> 00:30:42.626 A:middle
+speculative path is not
+
+00:30:42.676 --> 00:30:43.056 A:middle
+committed.
+
+00:30:43.056 --> 00:30:45.566 A:middle
+It is only done in advance so
+
+00:30:45.566 --> 00:30:46.806 A:middle
+that we can take advantage of,
+
+00:30:46.806 --> 00:30:48.896 A:middle
+oh, I'm already done with all of
+
+00:30:48.896 --> 00:30:50.786 A:middle
+that work when the final answer
+
+00:30:50.786 --> 00:30:52.086 A:middle
+to the original question comes
+
+00:30:52.086 --> 00:30:52.226 A:middle
+in.
+
+00:30:52.796 --> 00:30:53.866 A:middle
+And that's speculative
+
+00:30:53.866 --> 00:30:54.546 A:middle
+execution.
+
+00:30:55.626 --> 00:30:57.186 A:middle
+How can this be turned into an
+
+00:30:57.186 --> 00:30:57.666 A:middle
+attack?
+
+00:30:58.056 --> 00:31:00.876 A:middle
+It turns out that cache effects
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.576 --> 00:40:01.086 A:middle
+and we want to avoid the complex
+
+00:40:01.086 --> 00:40:04.006 A:middle
+query as much as possible as
+
+00:40:04.636 --> 00:40:04.876 A:middle
+well.
+
+00:40:05.276 --> 00:40:06.986 A:middle
+And we sometimes we understand
+
+00:40:06.986 --> 00:40:08.646 A:middle
+that we need this, and for these
+
+00:40:08.686 --> 00:40:10.676 A:middle
+cases, we are setting up some
+
+00:40:10.676 --> 00:40:12.016 A:middle
+indexes, so that we can speed
+
+00:40:12.016 --> 00:40:12.276 A:middle
+them up.
+
+00:40:15.676 --> 00:40:17.396 A:middle
+Now we are aiming for, at most,
+
+00:40:17.396 --> 00:40:19.546 A:middle
+30 milliseconds spent in that
+
+00:40:19.546 --> 00:40:20.406 A:middle
+initialization.
+
+00:40:21.286 --> 00:40:22.526 A:middle
+So next, let's look at how we
+
+00:40:22.526 --> 00:40:23.246 A:middle
+are preparing our view
+
+00:40:23.246 --> 00:40:23.826 A:middle
+controllers.
+
+00:40:25.106 --> 00:40:25.986 A:middle
+So we have four tabs
+
+00:40:25.986 --> 00:40:27.796 A:middle
+representing the main features
+
+00:40:27.906 --> 00:40:29.486 A:middle
+of the app.
+
+00:40:29.656 --> 00:40:30.966 A:middle
+And so the first thing that we
+
+00:40:30.966 --> 00:40:32.826 A:middle
+need to be careful of is we want
+
+00:40:32.826 --> 00:40:33.926 A:middle
+to minimize the work that is
+
+00:40:33.926 --> 00:40:35.756 A:middle
+being done in the initialization
+
+00:40:35.756 --> 00:40:37.306 A:middle
+of these three non-visible ones,
+
+00:40:37.746 --> 00:40:39.896 A:middle
+and the rule that we are trying
+
+00:40:39.896 --> 00:40:41.516 A:middle
+to follow here is to do as
+
+00:40:41.566 --> 00:40:42.906 A:middle
+little work as possible in the
+
+00:40:42.906 --> 00:40:43.666 A:middle
+initializers.
+
+00:40:44.396 --> 00:40:45.436 A:middle
+We really want to do the bare
+
+00:40:45.436 --> 00:40:47.246 A:middle
+minimum, and note all the data
+
+00:40:47.246 --> 00:40:47.946 A:middle
+in the view that loads.
+
+00:40:50.486 --> 00:40:52.716 A:middle
+This also allows us to
+
+00:40:52.786 --> 00:40:54.646 A:middle
+initialize our controllers in
+
+00:40:54.706 --> 00:40:56.446 A:middle
+constant time.
+
+00:40:58.206 --> 00:40:59.936 A:middle
+Now, lastly, we also want to
+
+00:40:59.936 --> 00:41:01.756 A:middle
+ensure that only the visible
+

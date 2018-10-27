@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:57.231 --> 00:10:00.267 align:start position:32% line:-2
+アプリケーションとの
+互換性も向上し
+
+00:10:00.367 --> 00:10:04.872 align:start position:27% line:-2
+ユーザの操作を予測し
+CarPlayに表示します
+
+00:10:05.639 --> 00:10:09.576 align:start position:29% line:-2
+これでアプリケーションが
+進化しますね
+
+00:10:09.676 --> 00:10:13.180 align:start position:27% line:-2
+私たちが検討したのは
+reloadDataの実装
+
+00:10:13.280 --> 00:10:18.652 align:start position:30% line:-2
+データをリロードして
+最適化してくれるのです
+
+00:10:19.119 --> 00:10:24.291 align:start position:18% line:-2
+実際 reloadDataを使うのは
+限られた時だけでした
+
+00:10:24.658 --> 00:10:29.630 align:start position:16% line:-2
+reloadDataはCarPlayの
+階層を脱構築し
+
+00:10:29.730 --> 00:10:32.733 align:start position:30% line:-1
+すべてを構築し直します
+
+00:10:32.833 --> 00:10:36.570 align:start position:34% line:-2
+これは費用のかかる
+オペレーションです
+
+00:10:37.704 --> 00:10:40.607 align:start position:29% line:-1
+コンテンツの更新だけなら
+
+00:10:40.707 --> 00:10:44.578 align:start position:7% line:-2
+beginUpdatesとendUpdatesが
+使えます
+
+00:10:44.678 --> 00:10:47.347 align:start position:32% line:-1
+問題なく処理できます
+
+00:10:48.282 --> 00:10:51.585 align:start position:7% line:-1
+beginUpdatesとendUpdatesは
+
+00:10:51.685 --> 00:10:55.255 align:start position:32% line:-2
+データとの
+非同期動作を行います
+
+00:10:55.355 --> 00:11:01.261 align:start position:30% line:-2
+内部データは別の場所に
+格納しておいてください
+

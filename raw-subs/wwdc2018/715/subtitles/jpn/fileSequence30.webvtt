@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.901 --> 00:30:05.372 align:start position:27% line:-2
+ready状態か確立失敗か
+確認します
+
+00:30:07.441 --> 00:30:14.014 align:start position:12% line:-2
+そしてlistner.startを呼び出し
+キューに送ります
+
+00:30:15.649 --> 00:30:20.954 align:start position:27% line:-2
+次に ネットワークの情報を
+読み取り 受信機能を実行
+
+00:30:24.858 --> 00:30:29.296 align:start position:9% line:-2
+そしてconnection.receiveから
+完了ハンドラへ送ります
+
+00:30:29.530 --> 00:30:33.567 align:start position:32% line:-2
+データが入ってくる際
+接続されていなければ
+
+00:30:33.834 --> 00:30:38.806 align:start position:27% line:-2
+クライアントが送信を始めた
+ハンドシェイクでしょう
+
+00:30:40.140 --> 00:30:45.145 align:start position:18% line:-2
+単にconnection.sendで
+同じコンテンツを送り戻せば
+
+00:30:45.245 --> 00:30:47.181 align:start position:38% line:-2
+クライアントに
+エコーされます
+
+00:30:47.548 --> 00:30:52.019 align:start position:34% line:-2
+そして全ての後続の
+コールバック上で
+
+00:30:52.119 --> 00:30:56.523 align:start position:29% line:-2
+残りのアプリケーションに
+受信を伝えます
+
+00:30:56.623 --> 00:31:00.360 align:start position:23% line:-2
+フレームはパイプラインに送られ
+画面で確認可能です
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.946 --> 00:25:00.676 A:middle
+calculation.
+
+00:25:01.296 --> 00:25:02.626 A:middle
+And we can dispatch different
+
+00:25:02.626 --> 00:25:03.836 A:middle
+parts of the computation to
+
+00:25:03.836 --> 00:25:04.976 A:middle
+different pieces of hardware
+
+00:25:04.976 --> 00:25:06.526 A:middle
+dynamically depending on the
+
+00:25:06.526 --> 00:25:08.256 A:middle
+model, the device state, and
+
+00:25:08.256 --> 00:25:08.986 A:middle
+other factors.
+
+00:25:10.156 --> 00:25:12.736 A:middle
+We can also find opportunities
+
+00:25:12.736 --> 00:25:14.406 A:middle
+to fuse layers in the network,
+
+00:25:14.406 --> 00:25:15.836 A:middle
+resulting in fewer overall
+
+00:25:15.836 --> 00:25:17.156 A:middle
+computations being needed.
+
+00:25:18.206 --> 00:25:20.336 A:middle
+We are able to optimize here
+
+00:25:20.336 --> 00:25:21.916 A:middle
+because we know what's going on.
+
+00:25:22.206 --> 00:25:23.196 A:middle
+We know the details of the
+
+00:25:23.196 --> 00:25:24.736 A:middle
+model; they are contained in the
+
+00:25:24.736 --> 00:25:26.216 A:middle
+MLModel file that you provided
+
+00:25:26.216 --> 00:25:26.576 A:middle
+to us.
+
+00:25:27.016 --> 00:25:28.126 A:middle
+And we know the details of the
+
+00:25:28.126 --> 00:25:30.036 A:middle
+inference engine and the device
+
+00:25:30.176 --> 00:25:32.316 A:middle
+because we designed them.
+
+00:25:32.316 --> 00:25:33.716 A:middle
+We can take care of all of these
+
+00:25:33.716 --> 00:25:35.856 A:middle
+optimizations for you, and you
+
+00:25:35.856 --> 00:25:37.376 A:middle
+can focus on delivering the best
+
+00:25:37.376 --> 00:25:38.656 A:middle
+user experience in your app.
+
+00:25:39.086 --> 00:25:41.586 A:middle
+But what about your workload?
+
+00:25:42.436 --> 00:25:44.136 A:middle
+What about, in particular, if
+
+00:25:44.136 --> 00:25:45.286 A:middle
+you need to make multiple
+
+00:25:45.286 --> 00:25:45.986 A:middle
+predictions?
+
+00:25:47.196 --> 00:25:48.406 A:middle
+If Core ML doesn't know about
+
+00:25:48.406 --> 00:25:50.186 A:middle
+it, then Core ML can't optimize
+
+00:25:50.186 --> 00:25:50.486 A:middle
+for it.
+
+00:25:51.486 --> 00:25:53.096 A:middle
+So in the past, if you had a
+
+00:25:53.096 --> 00:25:55.886 A:middle
+workload like this, you needed
+
+00:25:55.886 --> 00:25:57.356 A:middle
+to do something like this: a
+
+00:25:57.356 --> 00:25:58.926 A:middle
+simple for loop wrapped around a
+
+00:25:58.926 --> 00:26:00.436 A:middle
+call to the existing Core ML
+

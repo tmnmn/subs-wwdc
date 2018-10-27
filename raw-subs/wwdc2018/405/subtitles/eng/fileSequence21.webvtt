@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.206 --> 00:21:00.456 A:middle
+the image that we are
+
+00:21:00.606 --> 00:21:01.016 A:middle
+downloading.
+
+00:21:01.636 --> 00:21:02.476 A:middle
+So then we'll start our
+
+00:21:02.476 --> 00:21:04.556 A:middle
+download, and we'll set our
+
+00:21:04.796 --> 00:21:06.526 A:middle
+property to track that.
+
+00:21:06.526 --> 00:21:07.226 A:middle
+We have it currently
+
+00:21:07.366 --> 00:21:08.096 A:middle
+runningDownloader.
+
+00:21:09.196 --> 00:21:10.406 A:middle
+Now when that finishes, we'll
+
+00:21:10.406 --> 00:21:11.906 A:middle
+get this didReceiveImage
+
+00:21:11.986 --> 00:21:12.736 A:middle
+callback here.
+
+00:21:13.126 --> 00:21:15.266 A:middle
+And we'll set our image view to
+
+00:21:15.266 --> 00:21:16.266 A:middle
+the image that we received.
+
+00:21:17.376 --> 00:21:19.086 A:middle
+And we'll call end on the
+
+00:21:19.086 --> 00:21:19.686 A:middle
+signpost.
+
+00:21:19.926 --> 00:21:21.316 A:middle
+And we'll use the exact same log
+
+00:21:21.316 --> 00:21:23.266 A:middle
+handle, the same name, the same
+
+00:21:23.266 --> 00:21:25.666 A:middle
+signpost ID but this time we're
+
+00:21:25.666 --> 00:21:27.686 A:middle
+going to attach some end
+
+00:21:27.686 --> 00:21:29.286 A:middle
+metadata to say finished with
+
+00:21:29.286 --> 00:21:29.846 A:middle
+size.
+
+00:21:30.726 --> 00:21:32.686 A:middle
+And you'll notice here that
+
+00:21:33.296 --> 00:21:35.896 A:middle
+we've annotated this particular
+
+00:21:35.896 --> 00:21:37.526 A:middle
+parameter with Xcode colon
+
+00:21:37.526 --> 00:21:38.406 A:middle
+size-in-bytes.
+
+00:21:38.406 --> 00:21:40.056 A:middle
+And what this does is it tells
+
+00:21:40.336 --> 00:21:42.276 A:middle
+Xcode and Instruments that this
+
+00:21:42.276 --> 00:21:43.676 A:middle
+argument should be treated as a
+
+00:21:43.676 --> 00:21:45.566 A:middle
+size-in-bytes for both display
+
+00:21:45.716 --> 00:21:46.536 A:middle
+and analysis.
+
+00:21:47.756 --> 00:21:48.756 A:middle
+Now these are called engineering
+
+00:21:48.756 --> 00:21:49.166 A:middle
+types.
+
+00:21:49.166 --> 00:21:50.336 A:middle
+And they can be read about in
+
+00:21:50.336 --> 00:21:51.656 A:middle
+the Instruments developer help
+
+00:21:51.656 --> 00:21:52.986 A:middle
+guide which is under the help
+
+00:21:52.986 --> 00:21:54.206 A:middle
+menu in Instruments.
+
+00:21:54.956 --> 00:21:57.676 A:middle
+Now once we've completed our
+
+00:21:57.676 --> 00:21:59.026 A:middle
+downloading, we can set that
+
+00:21:59.026 --> 00:21:59.556 A:middle
+back to nil.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.286 --> 00:06:00.976 A:middle
+neural network model which has
+
+00:06:01.106 --> 00:06:03.336 A:middle
+32-bit float weight parameters.
+
+00:06:03.766 --> 00:06:05.276 A:middle
+And we use Core ML Tools to
+
+00:06:05.276 --> 00:06:07.136 A:middle
+quantize the weights for this
+
+00:06:07.136 --> 00:06:07.466 A:middle
+model.
+
+00:06:08.126 --> 00:06:09.556 A:middle
+The resulting model is smaller
+
+00:06:09.556 --> 00:06:10.026 A:middle
+in size.
+
+00:06:10.836 --> 00:06:12.346 A:middle
+Now size reduction of the model
+
+00:06:12.346 --> 00:06:13.606 A:middle
+is directly dependent on the
+
+00:06:13.606 --> 00:06:15.296 A:middle
+number of bits we quantize our
+
+00:06:15.296 --> 00:06:15.886 A:middle
+model to.
+
+00:06:17.836 --> 00:06:19.316 A:middle
+Now, many of us may be wondering
+
+00:06:19.466 --> 00:06:21.046 A:middle
+what exactly is quantization?
+
+00:06:21.336 --> 00:06:22.616 A:middle
+And how can it reduce the size
+
+00:06:22.616 --> 00:06:23.116 A:middle
+of my models?
+
+00:06:24.036 --> 00:06:25.786 A:middle
+Let's step back and take a peek
+
+00:06:25.786 --> 00:06:26.246 A:middle
+under the hood.
+
+00:06:30.386 --> 00:06:31.986 A:middle
+Neural networks are composed of
+
+00:06:31.986 --> 00:06:32.336 A:middle
+layers.
+
+00:06:32.786 --> 00:06:33.906 A:middle
+And these layers can be thought
+
+00:06:33.906 --> 00:06:35.336 A:middle
+of as mathematical functions.
+
+00:06:35.776 --> 00:06:37.356 A:middle
+And these mathematical functions
+
+00:06:37.466 --> 00:06:38.876 A:middle
+have parameters called weights.
+
+00:06:39.076 --> 00:06:41.116 A:middle
+And these weights are usually
+
+00:06:41.116 --> 00:06:42.716 A:middle
+stored as 32-bit floats.
+
+00:06:43.426 --> 00:06:45.886 A:middle
+Now in our previous session, we
+
+00:06:45.886 --> 00:06:47.206 A:middle
+took a look at ResNet50.
+
+00:06:47.636 --> 00:06:49.036 A:middle
+A popular machine-learning model
+
+00:06:49.036 --> 00:06:50.116 A:middle
+which is used for image
+
+00:06:50.116 --> 00:06:51.536 A:middle
+classification amongst other
+
+00:06:51.536 --> 00:06:51.816 A:middle
+things.
+
+00:06:52.476 --> 00:06:53.576 A:middle
+Now this particular model has
+
+00:06:53.576 --> 00:06:55.696 A:middle
+over 25 million weight
+
+00:06:55.696 --> 00:06:56.286 A:middle
+parameters.
+
+00:06:56.636 --> 00:06:58.286 A:middle
+So you can imagine, if you could
+
+00:06:58.286 --> 00:07:00.206 A:middle
+somehow represent these param --
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.656 --> 00:21:00.326 A:middle
+And what happens when I expand
+
+00:21:00.326 --> 00:21:01.126 A:middle
+this group?
+
+00:21:03.276 --> 00:21:04.906 A:middle
+What happens is that there are
+
+00:21:04.906 --> 00:21:05.976 A:middle
+only three external
+
+00:21:05.976 --> 00:21:07.366 A:middle
+notifications in the group.
+
+00:21:07.826 --> 00:21:10.106 A:middle
+Not seven like the summary said.
+
+00:21:10.366 --> 00:21:11.796 A:middle
+And in previous examples, the
+
+00:21:11.796 --> 00:21:13.816 A:middle
+number in the summary matched
+
+00:21:14.076 --> 00:21:15.886 A:middle
+the number of notifications that
+
+00:21:15.886 --> 00:21:18.206 A:middle
+were contained in the group.
+
+00:21:18.396 --> 00:21:19.556 A:middle
+So what is happening here?
+
+00:21:20.936 --> 00:21:23.386 A:middle
+Well, since Podcasts does these
+
+00:21:23.386 --> 00:21:25.176 A:middle
+bundling on notification and
+
+00:21:25.176 --> 00:21:26.886 A:middle
+they try to limit the number of
+
+00:21:26.886 --> 00:21:28.196 A:middle
+notifications they send.
+
+00:21:28.716 --> 00:21:30.706 A:middle
+When a show releases multiple
+
+00:21:30.706 --> 00:21:32.106 A:middle
+episodes at the same time.
+
+00:21:32.576 --> 00:21:33.716 A:middle
+They have these notifications
+
+00:21:33.716 --> 00:21:35.566 A:middle
+that say, "Two new episodes are
+
+00:21:35.566 --> 00:21:36.796 A:middle
+available, three new episodes
+
+00:21:36.796 --> 00:21:37.246 A:middle
+are available."
+
+00:21:38.286 --> 00:21:41.426 A:middle
+And if you sum the number, the
+
+00:21:41.426 --> 00:21:42.866 A:middle
+number of episodes in the bottom
+
+00:21:42.866 --> 00:21:44.146 A:middle
+three notifications, there were
+
+00:21:44.466 --> 00:21:45.696 A:middle
+the ones that accounted for the
+
+00:21:45.696 --> 00:21:47.006 A:middle
+summary, you can see that the
+
+00:21:47.006 --> 00:21:47.846 A:middle
+total is seven.
+
+00:21:48.966 --> 00:21:51.106 A:middle
+So let's see how the API for
+
+00:21:51.106 --> 00:21:51.786 A:middle
+this works.
+
+00:21:52.376 --> 00:21:55.146 A:middle
+It's just another property on
+
+00:21:55.146 --> 00:21:56.796 A:middle
+the notification content and
+
+00:21:56.796 --> 00:21:58.246 A:middle
+it's called summary argument
+
+00:21:58.296 --> 00:21:58.656 A:middle
+count.
+

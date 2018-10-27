@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.066 --> 00:36:00.706 A:middle
+implement a preview and a
+
+00:36:00.706 --> 00:36:01.606 A:middle
+thumbnail extension.
+
+00:36:02.826 --> 00:36:04.526 A:middle
+We already have an existing
+
+00:36:04.526 --> 00:36:06.546 A:middle
+project containing the extension
+
+00:36:06.546 --> 00:36:06.926 A:middle
+setup.
+
+00:36:07.956 --> 00:36:09.516 A:middle
+We are going to use these as a
+
+00:36:09.516 --> 00:36:11.036 A:middle
+starting point and add the two
+
+00:36:11.036 --> 00:36:11.736 A:middle
+extensions.
+
+00:36:12.556 --> 00:36:14.266 A:middle
+As mentioned previously we need
+
+00:36:14.266 --> 00:36:16.326 A:middle
+the Info.plist of our extensions
+
+00:36:16.326 --> 00:36:17.936 A:middle
+to be configured so that the
+
+00:36:17.936 --> 00:36:19.436 A:middle
+system knows we are able to
+
+00:36:19.436 --> 00:36:21.196 A:middle
+provide previews and thumbnails
+
+00:36:21.196 --> 00:36:22.316 A:middle
+for particles files.
+
+00:36:23.476 --> 00:36:25.786 A:middle
+So Particles app defines its own
+
+00:36:25.786 --> 00:36:28.236 A:middle
+file format in the exported UTIs
+
+00:36:28.236 --> 00:36:29.576 A:middle
+section of the application
+
+00:36:29.576 --> 00:36:30.076 A:middle
+target.
+
+00:36:30.936 --> 00:36:32.246 A:middle
+We need to configure the
+
+00:36:32.246 --> 00:36:34.256 A:middle
+extensions to use that UTI in
+
+00:36:34.256 --> 00:36:35.156 A:middle
+the Info.plist.
+
+00:36:35.336 --> 00:36:38.676 A:middle
+As you can see the
+
+00:36:38.676 --> 00:36:40.186 A:middle
+QLSupportedContentTypes of the
+
+00:36:40.186 --> 00:36:41.376 A:middle
+Info.plist of the preview
+
+00:36:41.376 --> 00:36:43.346 A:middle
+extension does contain the
+
+00:36:43.346 --> 00:36:44.756 A:middle
+identifier of the UTI of the
+
+00:36:44.756 --> 00:36:45.746 A:middle
+particles file format.
+
+00:36:46.226 --> 00:36:49.606 A:middle
+And this is also the case of the
+
+00:36:49.606 --> 00:36:50.886 A:middle
+Info.plist of the thumbnail
+
+00:36:50.886 --> 00:36:51.446 A:middle
+extension.
+
+00:36:51.966 --> 00:36:54.256 A:middle
+So the only thing left to do is
+
+00:36:54.526 --> 00:36:55.586 A:middle
+to actually implement these
+
+00:36:55.586 --> 00:36:56.226 A:middle
+extensions.
+
+00:36:56.766 --> 00:36:57.716 A:middle
+Let's start with the preview
+
+00:36:57.716 --> 00:36:58.226 A:middle
+extension.
+
+00:36:59.276 --> 00:37:02.296 A:middle
+As mentioned in the presentation
+

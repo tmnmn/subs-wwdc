@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:01.889 --> 00:17:05.425 align:start position:21% line:-2
+JavaScriptによる変更は
+KVOが監視するので
+
+00:17:05.526 --> 00:17:08.628 align:start position:23% line:-1
+いつ変更されたかを把握できます
+
+00:17:09.730 --> 00:17:14.166 align:start position:14% line:-1
+更に TVPlayerはプレイリスト順に
+
+00:17:14.268 --> 00:17:18.505 align:start position:29% line:-1
+メディアを連続再生します
+
+00:17:20.874 --> 00:17:25.646 align:start position:9% line:-2
+TVApplicationController
+DelegateによるTVPlayerの要求に
+
+00:17:25.746 --> 00:17:30.851 align:start position:25% line:-2
+インスタンスを返し
+再生パイプラインへ参加します
+
+00:17:33.954 --> 00:17:39.526 align:start position:23% line:-2
+次はユーザインターフェイス上の
+再生表示についてです
+
+00:17:39.626 --> 00:17:45.232 align:start position:25% line:-2
+再生はフルスクリーンか
+埋め込み画面で随時行われます
+
+00:17:45.666 --> 00:17:48.769 align:start position:29% line:-2
+ユーザインターフェイスの
+仕様も様々です
+
+00:17:50.070 --> 00:17:52.339 align:start position:29% line:-1
+TVMLKitは再生の際
+
+00:17:52.439 --> 00:17:55.976 align:start position:12% line:-2
+TVInterfaceFactoryで
+View Controllerを要求します
+
+00:17:56.210 --> 00:18:02.149 align:start position:23% line:-2
+そして 再生用のリファレンスを
+TVPlayerへ渡します
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.846 --> 00:32:00.106 A:middle
+But that's less interesting for
+
+00:32:00.106 --> 00:32:01.596 A:middle
+this part of the talk.
+
+00:32:02.316 --> 00:32:03.486 A:middle
+So, I'll step through that from
+
+00:32:03.486 --> 00:32:04.626 A:middle
+left to right again.
+
+00:32:05.836 --> 00:32:07.746 A:middle
+We have the Objective-C headers.
+
+00:32:08.996 --> 00:32:10.706 A:middle
+The bridging header for getting
+
+00:32:10.706 --> 00:32:11.766 A:middle
+some of that information into
+
+00:32:11.766 --> 00:32:12.176 A:middle
+Swift.
+
+00:32:13.296 --> 00:32:14.906 A:middle
+Your Swift implementation files.
+
+00:32:15.976 --> 00:32:17.556 A:middle
+A generated header for
+
+00:32:17.556 --> 00:32:19.076 A:middle
+presenting that information back
+
+00:32:19.076 --> 00:32:20.176 A:middle
+to Objective-C.
+
+00:32:20.686 --> 00:32:21.966 A:middle
+And then finally, your
+
+00:32:21.966 --> 00:32:23.426 A:middle
+Objective-C implementation
+
+00:32:23.426 --> 00:32:24.036 A:middle
+files.
+
+00:32:24.506 --> 00:32:28.536 A:middle
+And in a diagram like this, all
+
+00:32:28.536 --> 00:32:30.456 A:middle
+of these arrows represent
+
+00:32:30.456 --> 00:32:31.396 A:middle
+dependencies.
+
+00:32:31.476 --> 00:32:32.876 A:middle
+Not dependencies on a target
+
+00:32:32.876 --> 00:32:34.966 A:middle
+level, but within on a
+
+00:32:35.186 --> 00:32:36.996 A:middle
+file-by-file level within a
+
+00:32:36.996 --> 00:32:37.516 A:middle
+target.
+
+00:32:38.336 --> 00:32:40.216 A:middle
+And so, what we want to do is
+
+00:32:40.216 --> 00:32:41.556 A:middle
+focus on the generated header
+
+00:32:41.556 --> 00:32:43.046 A:middle
+and the bridging header, because
+
+00:32:43.046 --> 00:32:44.546 A:middle
+if we can shrink the content in
+
+00:32:44.546 --> 00:32:46.916 A:middle
+these headers, then we know that
+
+00:32:46.916 --> 00:32:48.326 A:middle
+there's fewer chances for things
+
+00:32:48.326 --> 00:32:49.056 A:middle
+to change.
+
+00:32:49.366 --> 00:32:51.096 A:middle
+And therefore, less need to
+
+00:32:51.096 --> 00:32:51.596 A:middle
+rebuild.
+
+00:32:52.206 --> 00:32:54.116 A:middle
+So let's take a look.
+
+00:32:54.916 --> 00:32:56.486 A:middle
+For the generated header, your
+
+00:32:56.486 --> 00:32:57.906 A:middle
+strongest tool is going to be
+
+00:32:57.906 --> 00:32:58.866 A:middle
+the private key word.
+
+00:32:59.486 --> 00:33:01.086 A:middle
+So in this example, I have a
+

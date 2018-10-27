@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.356 --> 00:28:00.036 A:middle
+used to be.
+
+00:28:01.356 --> 00:28:03.836 A:middle
+With one slight twist, it does
+
+00:28:03.836 --> 00:28:05.146 A:middle
+not write a pointer into that
+
+00:28:05.146 --> 00:28:07.536 A:middle
+field it writes a rotated
+
+00:28:07.676 --> 00:28:08.986 A:middle
+pointer into that field.
+
+00:28:09.586 --> 00:28:10.956 A:middle
+It wants to make sure that the
+
+00:28:10.956 --> 00:28:13.506 A:middle
+value written there is not a
+
+00:28:13.506 --> 00:28:16.016 A:middle
+valid memory address precisely
+
+00:28:16.016 --> 00:28:17.786 A:middle
+so that bad use of the object
+
+00:28:18.016 --> 00:28:18.756 A:middle
+will crash.
+
+00:28:19.986 --> 00:28:22.366 A:middle
+So when objc release goes to
+
+00:28:22.366 --> 00:28:24.366 A:middle
+read the isa field it instead
+
+00:28:24.416 --> 00:28:26.246 A:middle
+gets a rotated free list
+
+00:28:26.246 --> 00:28:26.736 A:middle
+pointer.
+
+00:28:27.396 --> 00:28:29.056 A:middle
+When it dreferences the rotated
+
+00:28:29.056 --> 00:28:30.926 A:middle
+free list pointer it crashes.
+
+00:28:31.926 --> 00:28:33.296 A:middle
+The memory allocator did that
+
+00:28:33.296 --> 00:28:34.986 A:middle
+for us, it deliberately rotated
+
+00:28:34.986 --> 00:28:36.716 A:middle
+that pointer to make sure we
+
+00:28:36.716 --> 00:28:38.166 A:middle
+would crash if we tried to use
+
+00:28:38.166 --> 00:28:38.616 A:middle
+it again.
+
+00:28:39.836 --> 00:28:42.146 A:middle
+So that is the signature we see
+
+00:28:42.146 --> 00:28:43.196 A:middle
+in this crash log.
+
+00:28:43.606 --> 00:28:45.716 A:middle
+We had the invalid address field
+
+00:28:46.056 --> 00:28:48.536 A:middle
+looks like a pointer in the
+
+00:28:48.536 --> 00:28:50.686 A:middle
+malloc region but rotated the
+
+00:28:50.686 --> 00:28:52.626 A:middle
+same way that malloc rotates its
+
+00:28:52.626 --> 00:28:53.566 A:middle
+free list pointers.
+
+00:28:54.186 --> 00:28:56.076 A:middle
+So that's a strong sign that
+
+00:28:56.976 --> 00:28:58.706 A:middle
+whatever object we are trying to
+
+00:28:58.706 --> 00:29:00.056 A:middle
+release at this point in the
+

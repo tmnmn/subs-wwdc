@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.239 --> 00:09:03.844 align:start position:30% line:-2
+構造体を処理する関数の
+呼び出し間で統一
+
+00:09:03.977 --> 00:09:08.248 align:start position:27% line:-2
+構造体はARCオブジェクト
+ポインタを持ちます
+
+00:09:08.682 --> 00:09:12.986 align:start position:14% line:-1
+Xcode 10ではABIを変えることで
+
+00:09:13.220 --> 00:09:17.491 align:start position:20% line:-2
+Objective-C++の関数を
+対応させています
+
+00:09:17.825 --> 00:09:21.395 align:start position:25% line:-2
+ARCオブジェクトポインタを
+持つ構造体を
+
+00:09:21.495 --> 00:09:24.198 align:start position:32% line:-1
+値で処理する関数です
+
+00:09:24.398 --> 00:09:28.702 align:start position:25% line:-2
+コンストラクタや
+デストラクタなどは対象外です
+
+00:09:30.037 --> 00:09:33.774 align:start position:25% line:-1
+この調整で対象となるコードが
+
+00:09:33.874 --> 00:09:36.910 align:start position:27% line:-1
+あいまいな人もいるでしょう
+
+00:09:37.010 --> 00:09:39.813 align:start position:25% line:-1
+Xcodeのリリースノートで
+
+00:09:39.913 --> 00:09:45.352 align:start position:29% line:-2
+ABIの調整による影響を
+詳しく説明しています
+
+00:09:48.956 --> 00:09:54.761 align:start position:21% line:-2
+ARCオブジェクトポインタを持つ
+C構造体の注意点として
+
+00:09:55.629 --> 00:09:57.564 align:start position:29% line:-1
+Swiftは対応しません
+
+00:09:57.664 --> 00:10:02.803 align:start position:21% line:-2
+SwiftではARCオブジェクト
+ポインタを持つ構造体は
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.976 --> 00:19:00.836 A:middle
+could restructure your
+
+00:19:00.836 --> 00:19:02.586 A:middle
+application to use continuations
+
+00:19:02.586 --> 00:19:04.176 A:middle
+in stat and just calls the
+
+00:19:04.176 --> 00:19:05.586 A:middle
+required function inside the
+
+00:19:05.586 --> 00:19:06.176 A:middle
+callback.
+
+00:19:08.876 --> 00:19:10.706 A:middle
+So this check is not enabled by
+
+00:19:10.706 --> 00:19:12.516 A:middle
+default but we encourage you to
+
+00:19:12.516 --> 00:19:14.576 A:middle
+enable it in build settings in
+
+00:19:14.576 --> 00:19:16.276 A:middle
+order to make sure no such
+
+00:19:16.316 --> 00:19:17.256 A:middle
+problem securing your
+
+00:19:17.256 --> 00:19:18.956 A:middle
+application and it runs as fast
+
+00:19:18.956 --> 00:19:19.526 A:middle
+as possible.
+
+00:19:19.526 --> 00:19:23.076 A:middle
+Now let's talk about the second
+
+00:19:23.076 --> 00:19:24.746 A:middle
+check for detecting the
+
+00:19:24.746 --> 00:19:25.976 A:middle
+autoreleasing variables
+
+00:19:25.976 --> 00:19:27.646 A:middle
+outliving the lifetime of the
+
+00:19:27.646 --> 00:19:28.566 A:middle
+autorelease pool.
+
+00:19:29.166 --> 00:19:32.336 A:middle
+So the autoreleasing qualifier
+
+00:19:32.626 --> 00:19:34.526 A:middle
+specifies that the value has to
+
+00:19:34.526 --> 00:19:36.356 A:middle
+be released once the control
+
+00:19:36.356 --> 00:19:37.886 A:middle
+exits the autorelease pool.
+
+00:19:38.606 --> 00:19:41.156 A:middle
+So here we have an example where
+
+00:19:41.216 --> 00:19:42.786 A:middle
+we create an error variable
+
+00:19:43.076 --> 00:19:44.956 A:middle
+inside the autorelease pool and
+
+00:19:44.956 --> 00:19:46.326 A:middle
+once the control is outside of
+
+00:19:46.326 --> 00:19:47.596 A:middle
+the autorelease pool the
+
+00:19:47.596 --> 00:19:49.336 A:middle
+variable is released and
+
+00:19:49.336 --> 00:19:50.456 A:middle
+subsequently destroyed.
+
+00:19:51.176 --> 00:19:53.516 A:middle
+And autoreleasing pools are a
+
+00:19:53.516 --> 00:19:55.556 A:middle
+useful feature of Objective-C to
+
+00:19:55.556 --> 00:19:56.976 A:middle
+help contain the big memory
+
+00:19:56.976 --> 00:19:58.586 A:middle
+footprint of your applications
+
+00:19:58.586 --> 00:19:59.986 A:middle
+and to ensure that thumbprints
+
+00:19:59.986 --> 00:20:00.946 A:middle
+are destroyed where necessary.
+

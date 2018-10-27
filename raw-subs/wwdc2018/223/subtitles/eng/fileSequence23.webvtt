@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.776 --> 00:23:00.766 A:middle
+the Quick Help for stable
+
+00:23:00.806 --> 00:23:04.196 A:middle
+partition, and I saw that it had
+
+00:23:04.416 --> 00:23:06.046 A:middle
+(n log n) complexity.
+
+00:23:06.606 --> 00:23:09.356 A:middle
+So, for a way to think about (n
+
+00:23:09.356 --> 00:23:11.506 A:middle
+log n) take a look at log n.
+
+00:23:12.096 --> 00:23:15.236 A:middle
+It starts to level off really
+
+00:23:15.236 --> 00:23:17.246 A:middle
+quickly, and the bigger it gets,
+
+00:23:17.496 --> 00:23:19.856 A:middle
+the slower it grows, and the
+
+00:23:19.886 --> 00:23:21.246 A:middle
+closer it comes to being a
+
+00:23:21.246 --> 00:23:21.716 A:middle
+constant.
+
+00:23:22.526 --> 00:23:24.136 A:middle
+So, when you multiply that by n,
+
+00:23:24.136 --> 00:23:27.366 A:middle
+you get something that doesn't
+
+00:23:27.566 --> 00:23:29.376 A:middle
+scale quite as well as order n
+
+00:23:29.876 --> 00:23:31.466 A:middle
+but that gets closer and closer
+
+00:23:31.466 --> 00:23:32.946 A:middle
+to linear as it grows.
+
+00:23:34.146 --> 00:23:36.696 A:middle
+So, order n login is rightly
+
+00:23:36.696 --> 00:23:38.556 A:middle
+often treated as being almost
+
+00:23:38.556 --> 00:23:40.066 A:middle
+the same as order n.
+
+00:23:40.896 --> 00:23:42.296 A:middle
+I was pretty happy with that.
+
+00:23:43.056 --> 00:23:44.326 A:middle
+So, we moved on to bring
+
+00:23:44.326 --> 00:23:44.696 A:middle
+forward.
+
+00:23:45.246 --> 00:23:49.646 A:middle
+Now, as we said earlier, bring
+
+00:23:49.726 --> 00:23:51.626 A:middle
+forward bumps the front most
+
+00:23:51.626 --> 00:23:53.006 A:middle
+selected shape forward by one
+
+00:23:53.006 --> 00:23:55.296 A:middle
+position and gathers the other
+
+00:23:55.296 --> 00:23:56.576 A:middle
+selected shapes behind it.
+
+00:23:57.876 --> 00:24:00.156 A:middle
+But Crusty didn't like that way
+

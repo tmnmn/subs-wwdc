@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.639 --> 00:04:00.941 align:start position:32% line:-1
+時間を削減できました
+
+00:04:02.910 --> 00:04:08.015 align:start position:29% line:-2
+では 並列化というものが
+これほど有効なら
+
+00:04:08.248 --> 00:04:13.353 align:start position:32% line:-2
+この図のように 全部
+同時にしてみては？
+
+00:04:14.054 --> 00:04:19.059 align:start position:30% line:-2
+まず エラーが出るのが
+関の山でしょう
+
+00:04:19.159 --> 00:04:24.364 align:start position:29% line:-2
+依存関係の情報が
+重要な要素となるからです
+
+00:04:24.765 --> 00:04:26.300 align:start position:36% line:-1
+このようにすると
+
+00:04:26.600 --> 00:04:31.271 align:start position:29% line:-2
+依存関係を無視して
+ビルドすることになります
+
+00:04:31.371 --> 00:04:33.173 align:start position:36% line:-1
+うまくいきません
+
+00:04:34.141 --> 00:04:35.576 align:start position:32% line:-1
+では どうしましょう
+
+00:04:35.809 --> 00:04:39.580 align:start position:34% line:-2
+ビルドの並列化で
+時間を短縮するには
+
+00:04:39.680 --> 00:04:43.817 align:start position:27% line:-1
+どうすればよいのでしょうか
+
+00:04:44.351 --> 00:04:46.453 align:start position:34% line:-1
+Xcodeは本来―
+
+00:04:46.553 --> 00:04:51.358 align:start position:27% line:-2
+ビルド並列化ができるように
+設定されています
+
+00:04:51.458 --> 00:04:53.460 align:start position:27% line:-1
+スキームエディタを使います
+
+00:04:53.794 --> 00:04:56.597 align:start position:14% line:-1
+まず Scheme Chooserを開き
+
+00:04:57.197 --> 00:04:58.699 align:start position:25% line:-1
+Edit Schemeを選択
+
+00:04:59.633 --> 00:05:02.202 align:start position:23% line:-1
+Build Actionの中に
+

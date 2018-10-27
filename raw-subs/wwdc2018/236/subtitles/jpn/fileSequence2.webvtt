@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:01.989 --> 00:02:03.891 align:start position:38% line:-1
+まずは基本です
+
+00:02:03.991 --> 00:02:08.562 align:start position:14% line:-2
+AVSpeechSynthesizerの
+オブジェクトを作成します
+
+00:02:08.662 --> 00:02:13.167 align:start position:30% line:-2
+発話が終わるまで
+これを保持してください
+
+00:02:13.433 --> 00:02:17.704 align:start position:30% line:-2
+割り当てが解除されると
+合成は中止となります
+
+00:02:19.506 --> 00:02:22.876 align:start position:29% line:-2
+次は音声合成用テキストを
+作成し
+
+00:02:23.310 --> 00:02:25.512 align:start position:29% line:-1
+シンセサイザーへ送ります
+
+00:02:26.346 --> 00:02:29.583 align:start position:25% line:-2
+ここでは“Hello”という
+テキストを
+
+00:02:29.716 --> 00:02:32.786 align:start position:23% line:-1
+speakメソッドで送信します
+
+00:02:35.088 --> 00:02:40.861 align:start position:12% line:-2
+AVSpeechSynthesisの動作中
+オーディオセッションは
+
+00:02:40.961 --> 00:02:43.931 align:start position:30% line:-1
+自動的に有効になります
+
+00:02:44.498 --> 00:02:48.435 align:start position:34% line:-2
+他の音声も
+同時再生させるには
+
+00:02:48.535 --> 00:02:51.672 align:start position:20% line:-1
+mixWithOthersとします
+
+00:02:51.972 --> 00:02:53.707 align:start position:36% line:-1
+読み上げを優先し
+
+00:02:53.807 --> 00:02:58.846 align:start position:30% line:-2
+他の音声の音量を下げて
+同時再生するには
+
+00:02:58.946 --> 00:03:01.381 align:start position:25% line:-1
+duckOthersとします
+

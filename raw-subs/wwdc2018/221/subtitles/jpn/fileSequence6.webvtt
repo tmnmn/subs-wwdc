@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:01.361 --> 00:06:05.399 align:start position:16% line:-2
+ビルトインのコントロールを使い
+TextKitで何ができるか学びました
+
+00:06:05.499 --> 00:06:08.001 align:start position:29% line:-1
+機能以上のことをする場合
+
+00:06:08.101 --> 00:06:11.738 align:start position:21% line:-2
+テキストスタック内で適切な
+カスタマイズポイントを見つけます
+
+00:06:12.306 --> 00:06:13.507 align:start position:36% line:-1
+TextKitは
+
+00:06:13.607 --> 00:06:17.144 align:start position:23% line:-2
+モデル/ビュー/コントローラの
+設計パターンがベースです
+
+00:06:18.378 --> 00:06:22.749 align:start position:29% line:-2
+NBCに直接対応する
+３フェーズに分けられます
+
+00:06:22.850 --> 00:06:25.586 align:start position:36% line:-2
+ストレージ 表示
+レイアウトです
+
+00:06:25.919 --> 00:06:28.722 align:start position:25% line:-2
+各フェーズの
+TextKitオブジェクトを
+
+00:06:28.822 --> 00:06:30.123 align:start position:36% line:-1
+見ていきましょう
+
+00:06:31.024 --> 00:06:33.927 align:start position:29% line:-2
+まずは モデルに対応する
+ストレージです
+
+00:06:35.429 --> 00:06:38.332 align:start position:25% line:-2
+NSTextStorageは
+文字列データと属性を保持
+
+00:06:38.632 --> 00:06:40.901 align:start position:32% line:-2
+可変属性付き文字列の
+サブクラスなので
+
+00:06:41.001 --> 00:06:45.272 align:start position:30% line:-2
+属性付き文字列と同様に
+作業できます
+
+00:06:46.006 --> 00:06:51.712 align:start position:27% line:-2
+あとでテキストストレージの
+カスタマイズ法を紹介します
+
+00:06:53.947 --> 00:06:58.051 align:start position:12% line:-2
+NSTextContainerはテキストの
+配置領域の形状をモデル化
+
+00:06:58.619 --> 00:07:03.757 align:start position:27% line:-2
+デフォルトでは長方形ですが
+フローや形は変えられます
+

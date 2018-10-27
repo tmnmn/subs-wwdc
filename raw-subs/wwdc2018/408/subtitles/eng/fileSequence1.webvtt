@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:00.996 --> 00:01:02.696 A:middle
+So today, when we talk about
+
+00:01:02.696 --> 00:01:04.036 A:middle
+building faster in Xcode, we're
+
+00:01:04.646 --> 00:01:05.856 A:middle
+going to be looking at it in two
+
+00:01:05.856 --> 00:01:06.786 A:middle
+different perspectives.
+
+00:01:07.356 --> 00:01:10.166 A:middle
+The first is going to be around
+
+00:01:10.166 --> 00:01:12.056 A:middle
+increasing your overall build
+
+00:01:12.056 --> 00:01:12.636 A:middle
+efficiency.
+
+00:01:12.636 --> 00:01:15.356 A:middle
+And the second, it'll be about
+
+00:01:15.356 --> 00:01:16.696 A:middle
+reducing the amount of work that
+
+00:01:16.696 --> 00:01:18.306 A:middle
+you do on your builds, and
+
+00:01:18.306 --> 00:01:19.656 A:middle
+especially your incremental
+
+00:01:19.656 --> 00:01:20.116 A:middle
+builds.
+
+00:01:21.756 --> 00:01:22.966 A:middle
+Now, I'm going to be walking you
+
+00:01:22.966 --> 00:01:23.556 A:middle
+through some of the
+
+00:01:23.556 --> 00:01:25.326 A:middle
+project-level items, including
+
+00:01:25.326 --> 00:01:26.626 A:middle
+how to parallelize your build
+
+00:01:26.696 --> 00:01:27.296 A:middle
+process.
+
+00:01:27.846 --> 00:01:29.146 A:middle
+How to declare and configure
+
+00:01:29.146 --> 00:01:30.506 A:middle
+your run script phases.
+
+00:01:31.256 --> 00:01:32.306 A:middle
+And I'll be walking you through
+
+00:01:32.606 --> 00:01:34.266 A:middle
+some new functionality in Xcode
+
+00:01:34.266 --> 00:01:34.596 A:middle
+10
+
+00:01:34.916 --> 00:01:36.016 A:middle
+around measuring your build
+
+00:01:38.256 --> 00:01:38.386 A:middle
+times.
+
+00:01:38.566 --> 00:01:39.446 A:middle
+Now, Jordan is going to be
+
+00:01:39.446 --> 00:01:40.556 A:middle
+walking us through some of the
+
+00:01:40.626 --> 00:01:41.716 A:middle
+source-level improvements that
+
+00:01:41.716 --> 00:01:43.056 A:middle
+we can make to our projects,
+
+00:01:43.516 --> 00:01:44.636 A:middle
+including understanding our
+
+00:01:44.636 --> 00:01:45.756 A:middle
+dependence using Swift.
+
+00:01:46.486 --> 00:01:47.926 A:middle
+Dealing with complex expressions
+
+00:01:47.926 --> 00:01:48.486 A:middle
+in Swift.
+
+00:01:49.436 --> 00:01:50.416 A:middle
+And how to limit your
+
+00:01:50.416 --> 00:01:52.436 A:middle
+Objective-C to Swift interfaces.
+
+00:01:54.016 --> 00:01:55.126 A:middle
+So let's talk about
+
+00:01:55.126 --> 00:01:56.056 A:middle
+parallelizing your build.
+
+00:01:56.676 --> 00:01:58.816 A:middle
+Now, Xcode configures your
+
+00:01:58.816 --> 00:02:00.086 A:middle
+projects through the use of
+

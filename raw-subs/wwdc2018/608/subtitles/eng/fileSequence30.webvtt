@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.586 --> 00:30:00.676 A:middle
+algorithm or when I just get
+
+00:30:00.676 --> 00:30:02.166 A:middle
+through this control flow, and
+
+00:30:02.166 --> 00:30:04.046 A:middle
+when I understand whether you
+
+00:30:05.676 --> 00:30:06.196 A:middle
+can.
+
+00:30:06.196 --> 00:30:08.906 A:middle
+So Shader Profiler helps you a
+
+00:30:08.906 --> 00:30:10.596 A:middle
+lot trying to optimize your
+
+00:30:10.596 --> 00:30:13.336 A:middle
+shaders, but we made this even
+
+00:30:13.336 --> 00:30:17.330 A:middle
+better for A11.
+
+00:30:18.096 --> 00:30:19.286 A:middle
+Now, A11 [inaudible] being the
+
+00:30:19.606 --> 00:30:21.366 A:middle
+completely [inaudible] design
+
+00:30:21.366 --> 00:30:23.486 A:middle
+GPU, now we have hardware
+
+00:30:23.486 --> 00:30:24.826 A:middle
+support to give you even more
+
+00:30:24.826 --> 00:30:26.366 A:middle
+insight in what your shaders are
+
+00:30:27.696 --> 00:30:27.816 A:middle
+doing.
+
+00:30:28.046 --> 00:30:30.126 A:middle
+Now with A11, you get this
+
+00:30:30.126 --> 00:30:32.596 A:middle
+chart, per line, showing you the
+
+00:30:32.686 --> 00:30:34.196 A:middle
+cost breakdown of the executed
+
+00:30:34.196 --> 00:30:34.496 A:middle
+line.
+
+00:30:35.096 --> 00:30:37.106 A:middle
+So Shader consists different
+
+00:30:37.106 --> 00:30:39.706 A:middle
+execution units, and if you are
+
+00:30:39.706 --> 00:30:41.526 A:middle
+using one of them heavily, you
+
+00:30:41.526 --> 00:30:42.716 A:middle
+might be bottlenecked by that.
+
+00:30:43.936 --> 00:30:46.096 A:middle
+So seeing ALU and memory
+
+00:30:46.096 --> 00:30:48.456 A:middle
+breakdown gives you visibility
+
+00:30:48.926 --> 00:30:50.776 A:middle
+into like time spent in
+
+00:30:50.776 --> 00:30:51.996 A:middle
+different execution units.
+
+00:30:53.516 --> 00:30:55.196 A:middle
+We did a lot of work for how
+
+00:30:55.196 --> 00:30:56.516 A:middle
+precision instructions to be
+
+00:30:56.516 --> 00:30:57.876 A:middle
+much more efficient in A11.
+
+00:30:58.366 --> 00:31:00.136 A:middle
+So using health, overflows,
+

@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.278 --> 00:28:00.881 align:start position:20% line:-1
+isaフィールドがあった場所にです
+
+00:28:01.315 --> 00:28:05.485 align:start position:29% line:-2
+ただし
+通常のポインタではなく―
+
+00:28:05.586 --> 00:28:09.423 align:start position:23% line:-1
+回転したポインタを書き込みます
+
+00:28:09.523 --> 00:28:15.195 align:start position:25% line:-2
+書かれた値を 無効な
+メモリアドレスにするためです
+
+00:28:15.295 --> 00:28:18.999 align:start position:23% line:-1
+誤用するとクラッシュするように
+
+00:28:20.200 --> 00:28:23.570 align:start position:27% line:-2
+objc releaseが
+isaフィールドを読むと
+
+00:28:23.670 --> 00:28:27.274 align:start position:14% line:-1
+回転したfree listポインタを獲得
+
+00:28:27.374 --> 00:28:31.278 align:start position:32% line:-2
+それを間接参照すると
+クラッシュします
+
+00:28:32.012 --> 00:28:33.447 align:start position:34% line:-1
+メモリアロケータが
+
+00:28:33.547 --> 00:28:39.086 align:start position:27% line:-2
+ポインタを回転することで
+使えなくしてくれたわけです
+
+00:28:40.087 --> 00:28:43.457 align:start position:30% line:-2
+それがクラッシュログで
+見えるシグネチャです
+
+00:28:43.557 --> 00:28:49.463 align:start position:20% line:-2
+無効なアドレスは
+mallocのポインタに似てますが
+
+00:28:49.563 --> 00:28:53.967 align:start position:25% line:-2
+free listポインタと
+同じように回転しています
+
+00:28:54.067 --> 00:28:56.637 align:start position:29% line:-1
+つまり ここで起きたのは
+
+00:28:56.937 --> 00:29:02.643 align:start position:23% line:-2
+解放しようとしたオブジェクトは
+すでに解放されていたという―
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:58.456 --> 00:42:00.696 A:middle
+First, I will create a
+
+00:42:00.696 --> 00:42:03.176 A:middle
+configuration, which will be a
+
+00:42:03.176 --> 00:42:04.166 A:middle
+configuration of type
+
+00:42:04.756 --> 00:42:06.406 A:middle
+ARImageTrackingConfiguration.
+
+00:42:07.426 --> 00:42:08.976 A:middle
+I load a set of tracking images
+
+00:42:08.976 --> 00:42:11.426 A:middle
+from the asset catalog by using
+
+00:42:11.556 --> 00:42:13.176 A:middle
+the group name photos.
+
+00:42:13.836 --> 00:42:15.086 A:middle
+This will contain only one
+
+00:42:15.086 --> 00:42:17.146 A:middle
+image, which is the photo of my
+
+00:42:17.146 --> 00:42:17.736 A:middle
+cat, Daisy.
+
+00:42:18.936 --> 00:42:22.066 A:middle
+Next, I set up the configuration
+
+00:42:22.066 --> 00:42:23.616 A:middle
+image tracking by specifying the
+
+00:42:23.616 --> 00:42:25.486 A:middle
+tracking images property here,
+
+00:42:26.236 --> 00:42:28.106 A:middle
+and I specify the max number of
+
+00:42:28.156 --> 00:42:30.066 A:middle
+tracked images that we want.
+
+00:42:30.446 --> 00:42:31.556 A:middle
+At this point, the app will
+
+00:42:31.556 --> 00:42:34.126 A:middle
+already start an AR session and
+
+00:42:34.126 --> 00:42:35.356 A:middle
+provide you with image anchors
+
+00:42:35.466 --> 00:42:36.596 A:middle
+once an image has been detected.
+
+00:42:37.096 --> 00:42:38.106 A:middle
+But let's add some content.
+
+00:42:38.936 --> 00:42:40.716 A:middle
+I will load the video
+
+00:42:41.916 --> 00:42:45.586 A:middle
+by trading a AV player from the
+
+00:42:46.106 --> 00:42:47.046 A:middle
+video by loading it from the
+
+00:42:47.046 --> 00:42:47.656 A:middle
+resource panel.
+
+00:42:49.136 --> 00:42:51.016 A:middle
+Now let's add it on top of the
+
+00:42:51.016 --> 00:42:52.016 A:middle
+real image.
+
+00:42:52.586 --> 00:42:56.296 A:middle
+So for this, I'm checking
+
+00:42:56.296 --> 00:42:57.636 A:middle
+whether the anchor is of type
+
+00:42:57.686 --> 00:43:00.616 A:middle
+image anchor, and I create an
+

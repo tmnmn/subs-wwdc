@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.906 --> 00:06:00.446 A:middle
+that the QuickType bar appears
+
+00:06:00.446 --> 00:06:01.286 A:middle
+for your text fields.
+
+00:06:02.726 --> 00:06:03.976 A:middle
+Next, you want to make sure that
+
+00:06:03.976 --> 00:06:05.366 A:middle
+your app's credentials are
+
+00:06:05.366 --> 00:06:06.746 A:middle
+suggested on the QuickType bar.
+
+00:06:07.726 --> 00:06:10.326 A:middle
+And lastly, you want to enable a
+
+00:06:10.326 --> 00:06:12.126 A:middle
+one-tap sign in experience.
+
+00:06:12.756 --> 00:06:13.886 A:middle
+Now, let's look at how to do
+
+00:06:13.886 --> 00:06:14.716 A:middle
+this in more detail.
+
+00:06:16.486 --> 00:06:17.666 A:middle
+To ensure the QuickType bar
+
+00:06:17.666 --> 00:06:19.186 A:middle
+appears for your text fields,
+
+00:06:19.616 --> 00:06:20.466 A:middle
+you want to adopt
+
+00:06:20.616 --> 00:06:22.156 A:middle
+UITextContentTypes.
+
+00:06:22.716 --> 00:06:24.906 A:middle
+tvOS will automatically try to
+
+00:06:24.906 --> 00:06:26.256 A:middle
+detect username and password
+
+00:06:26.256 --> 00:06:27.746 A:middle
+fields, and you can help this
+
+00:06:27.796 --> 00:06:29.646 A:middle
+process by explicitly marking
+
+00:06:29.646 --> 00:06:30.416 A:middle
+your text fields.
+
+00:06:31.386 --> 00:06:32.556 A:middle
+This is as easy as setting a
+
+00:06:32.666 --> 00:06:33.836 A:middle
+single property on those text
+
+00:06:33.836 --> 00:06:34.116 A:middle
+fields.
+
+00:06:34.756 --> 00:06:36.576 A:middle
+Simply set, for your username
+
+00:06:36.576 --> 00:06:37.556 A:middle
+text fields, it's
+
+00:06:37.736 --> 00:06:39.556 A:middle
+textContentType to .username,
+
+00:06:39.926 --> 00:06:41.316 A:middle
+and similarly for your password
+
+00:06:41.316 --> 00:06:42.296 A:middle
+field, you'll set its
+
+00:06:42.296 --> 00:06:43.986 A:middle
+textContentType to .password.
+
+00:06:44.626 --> 00:06:45.836 A:middle
+Very simple, and this can be
+
+00:06:45.836 --> 00:06:46.976 A:middle
+done in Interface Builder as
+
+00:06:46.976 --> 00:06:47.216 A:middle
+well.
+
+00:06:48.576 --> 00:06:49.876 A:middle
+So, after adopting the
+
+00:06:49.876 --> 00:06:51.536 A:middle
+textContentTypes, here's what
+
+00:06:51.536 --> 00:06:52.756 A:middle
+viewers would likely see in that
+
+00:06:52.756 --> 00:06:53.606 A:middle
+continuity keyboard
+
+00:06:53.606 --> 00:06:54.266 A:middle
+notification.
+
+00:06:54.426 --> 00:06:55.826 A:middle
+And, this is good, because it
+
+00:06:55.826 --> 00:06:57.236 A:middle
+gives users access to their
+
+00:06:57.236 --> 00:06:57.816 A:middle
+passwords.
+
+00:06:58.586 --> 00:07:00.036 A:middle
+But, it's behind that key icon.
+

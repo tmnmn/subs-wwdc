@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.436 --> 00:28:01.656 A:middle
+Now this is often called
+
+00:28:01.656 --> 00:28:02.376 A:middle
+windowed mode.
+
+00:28:03.206 --> 00:28:04.736 A:middle
+And what it tells the operating
+
+00:28:04.736 --> 00:28:05.416 A:middle
+system and the recording
+
+00:28:05.416 --> 00:28:07.416 A:middle
+technology is that we don't need
+
+00:28:07.416 --> 00:28:08.306 A:middle
+every single event.
+
+00:28:08.306 --> 00:28:09.386 A:middle
+We just want the last five
+
+00:28:09.386 --> 00:28:10.046 A:middle
+seconds worth.
+
+00:28:10.366 --> 00:28:11.786 A:middle
+And when you do that,
+
+00:28:11.786 --> 00:28:12.946 A:middle
+Instruments will step out of the
+
+00:28:12.946 --> 00:28:14.066 A:middle
+way and let the operating system
+
+00:28:14.066 --> 00:28:15.416 A:middle
+do what it does.
+
+00:28:15.836 --> 00:28:16.966 A:middle
+Now this is a very common mode.
+
+00:28:16.966 --> 00:28:18.296 A:middle
+We use this in system trace.
+
+00:28:18.296 --> 00:28:19.976 A:middle
+We use this in metal system
+
+00:28:19.976 --> 00:28:20.906 A:middle
+trace and the new game
+
+00:28:20.906 --> 00:28:21.806 A:middle
+performance template.
+
+00:28:22.276 --> 00:28:23.736 A:middle
+And so it's a very common way to
+
+00:28:23.736 --> 00:28:25.136 A:middle
+look for stutters and hangs in
+
+00:28:25.136 --> 00:28:25.776 A:middle
+your application.
+
+00:28:25.846 --> 00:28:26.646 A:middle
+All right.
+
+00:28:27.256 --> 00:28:30.916 A:middle
+So that is our os signpost
+
+00:28:30.996 --> 00:28:31.426 A:middle
+instrument.
+
+00:28:32.756 --> 00:28:34.416 A:middle
+Now let's talk about points of
+
+00:28:34.416 --> 00:28:34.756 A:middle
+interest.
+
+00:28:36.046 --> 00:28:38.216 A:middle
+Now if we come back to our
+
+00:28:38.326 --> 00:28:39.476 A:middle
+Trailblazer application here,
+
+00:28:40.216 --> 00:28:43.176 A:middle
+you notice that when I tap on a
+
+00:28:43.176 --> 00:28:45.166 A:middle
+trail, it pushes a detail.
+
+00:28:46.026 --> 00:28:47.326 A:middle
+If I go back and tap on a
+
+00:28:47.326 --> 00:28:48.676 A:middle
+different trail, it'll push a
+
+00:28:48.676 --> 00:28:49.316 A:middle
+different detail.
+
+00:28:50.476 --> 00:28:53.186 A:middle
+Now it would be great if we
+
+00:28:53.326 --> 00:28:55.026 A:middle
+could track every time these
+
+00:28:55.026 --> 00:28:56.516 A:middle
+detail views come forward
+
+00:28:56.896 --> 00:28:57.986 A:middle
+because then we can tell what
+
+00:28:57.986 --> 00:28:59.266 A:middle
+our user is trying to do, and we
+
+00:28:59.266 --> 00:29:00.856 A:middle
+can tell where our user is in
+

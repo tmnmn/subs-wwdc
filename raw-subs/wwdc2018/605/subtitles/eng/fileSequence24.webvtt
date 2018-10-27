@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.856 --> 00:24:00.436 A:middle
+information about every object
+
+00:24:00.436 --> 00:24:02.246 A:middle
+in the game, only those objects
+
+00:24:02.246 --> 00:24:03.156 A:middle
+that are relevant to the
+
+00:24:03.156 --> 00:24:04.606 A:middle
+gameplay such as the box,
+
+00:24:04.606 --> 00:24:06.066 A:middle
+projectile and catapult.
+
+00:24:06.666 --> 00:24:09.216 A:middle
+Things like simulating the
+
+00:24:09.216 --> 00:24:10.286 A:middle
+swinging of the rope and the
+
+00:24:10.286 --> 00:24:13.136 A:middle
+sling, particles and so forth,
+
+00:24:13.656 --> 00:24:15.446 A:middle
+those are just done locally on
+
+00:24:15.446 --> 00:24:16.726 A:middle
+each device since it's not
+
+00:24:16.726 --> 00:24:18.166 A:middle
+critical to the game that they
+
+00:24:18.166 --> 00:24:19.166 A:middle
+be in the same place on every
+
+00:24:19.166 --> 00:24:19.646 A:middle
+device.
+
+00:24:20.526 --> 00:24:24.886 A:middle
+Now, one of the things that we
+
+00:24:24.886 --> 00:24:26.016 A:middle
+discovered was when we were
+
+00:24:26.016 --> 00:24:28.366 A:middle
+doing this was that the physics
+
+00:24:28.366 --> 00:24:29.336 A:middle
+engine responded very
+
+00:24:29.336 --> 00:24:30.466 A:middle
+differently depending on the
+
+00:24:30.466 --> 00:24:31.616 A:middle
+scale of the objects.
+
+00:24:32.246 --> 00:24:33.966 A:middle
+And so the physics simulation
+
+00:24:33.966 --> 00:24:35.466 A:middle
+thinks the objects are about 10
+
+00:24:35.466 --> 00:24:36.876 A:middle
+times the size as you would see
+
+00:24:36.876 --> 00:24:37.676 A:middle
+them in the real world.
+
+00:24:38.316 --> 00:24:39.386 A:middle
+We found that gave the best
+
+00:24:39.466 --> 00:24:41.756 A:middle
+gameplay experience and the best
+
+00:24:41.756 --> 00:24:42.336 A:middle
+performance.
+
+00:24:42.936 --> 00:24:44.516 A:middle
+We had to tweak some of the laws
+
+00:24:44.516 --> 00:24:45.766 A:middle
+of physics to make that look
+
+00:24:45.766 --> 00:24:47.216 A:middle
+right but, you know, when you're
+
+00:24:47.216 --> 00:24:48.616 A:middle
+building a game, if it looks
+
+00:24:48.616 --> 00:24:49.966 A:middle
+right and feels right and it's
+
+00:24:49.966 --> 00:24:53.616 A:middle
+fun, then it is right.
+
+00:24:53.856 --> 00:24:55.426 A:middle
+Now, to share that physics state
+
+00:24:55.586 --> 00:24:56.546 A:middle
+and make sure everything looked
+
+00:24:56.546 --> 00:24:57.996 A:middle
+right, we need to share four
+
+00:24:57.996 --> 00:24:59.056 A:middle
+pieces of information.
+
+00:24:59.646 --> 00:25:00.336 A:middle
+The position.
+

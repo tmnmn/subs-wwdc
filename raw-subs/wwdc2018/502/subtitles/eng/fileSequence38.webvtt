@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.976 --> 00:38:02.126 A:middle
+thumbnail image, you need to
+
+00:38:02.126 --> 00:38:04.316 A:middle
+give us an I-frame playlist, and
+
+00:38:04.356 --> 00:38:06.226 A:middle
+the I-frame playlist is also
+
+00:38:06.506 --> 00:38:09.166 A:middle
+what allows us to provide images
+
+00:38:09.206 --> 00:38:10.646 A:middle
+in fast forward and reverse
+
+00:38:10.646 --> 00:38:13.156 A:middle
+playback on your iPad or your
+
+00:38:13.156 --> 00:38:13.526 A:middle
+iPhone.
+
+00:38:14.046 --> 00:38:15.616 A:middle
+Now in order to talk about
+
+00:38:15.616 --> 00:38:17.526 A:middle
+I-frame playlist, we first need
+
+00:38:17.616 --> 00:38:18.986 A:middle
+to talk just for a moment about
+
+00:38:18.986 --> 00:38:19.716 A:middle
+normal video.
+
+00:38:20.516 --> 00:38:22.286 A:middle
+Now, here's a way of visualizing
+
+00:38:22.866 --> 00:38:24.406 A:middle
+regular video segments in HLS.
+
+00:38:25.076 --> 00:38:26.796 A:middle
+Each segment has content for a
+
+00:38:26.796 --> 00:38:28.136 A:middle
+number of frames, so it has a
+
+00:38:28.136 --> 00:38:30.266 A:middle
+duration in frames, and it has a
+
+00:38:30.266 --> 00:38:31.776 A:middle
+particular average bitrate, and
+
+00:38:31.776 --> 00:38:34.346 A:middle
+that bitrate varies from segment
+
+00:38:34.866 --> 00:38:36.176 A:middle
+to segment.
+
+00:38:36.516 --> 00:38:38.586 A:middle
+Now, because of compression
+
+00:38:38.586 --> 00:38:40.096 A:middle
+techniques, most frames in a
+
+00:38:40.096 --> 00:38:41.326 A:middle
+video can only be decoded
+
+00:38:41.326 --> 00:38:42.756 A:middle
+relative to other frames.
+
+00:38:43.676 --> 00:38:45.436 A:middle
+But I-frames, the I stands for
+
+00:38:45.436 --> 00:38:47.056 A:middle
+intercoded frames, these are
+
+00:38:47.056 --> 00:38:48.536 A:middle
+frames that are independently
+
+00:38:48.536 --> 00:38:49.876 A:middle
+decodable, and they're the base
+
+00:38:49.876 --> 00:38:51.056 A:middle
+frames that allow everything
+
+00:38:51.056 --> 00:38:52.126 A:middle
+else to be decoded.
+
+00:38:52.996 --> 00:38:54.846 A:middle
+Now, as I've shown you here, you
+
+00:38:54.846 --> 00:38:56.716 A:middle
+might have more than one I-frame
+
+00:38:56.716 --> 00:38:58.696 A:middle
+in a single segment, and the
+
+00:38:58.696 --> 00:39:02.836 A:middle
+I-frames need not be in a, occur
+

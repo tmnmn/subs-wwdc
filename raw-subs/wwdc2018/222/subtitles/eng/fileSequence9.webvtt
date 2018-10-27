@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.806 --> 00:09:01.026 A:middle
+other forms of data that we
+
+00:09:01.026 --> 00:09:01.676 A:middle
+might care to look at.
+
+00:09:02.136 --> 00:09:04.376 A:middle
+For instance, URLs and dates.
+
+00:09:05.116 --> 00:09:06.736 A:middle
+So, let's make use of this data.
+
+00:09:07.856 --> 00:09:09.876 A:middle
+In my app, I can fetch that data
+
+00:09:09.876 --> 00:09:11.156 A:middle
+from the network say with URL
+
+00:09:11.156 --> 00:09:12.776 A:middle
+session, and wherever possible
+
+00:09:12.776 --> 00:09:13.716 A:middle
+I'll validate the length.
+
+00:09:13.716 --> 00:09:15.026 A:middle
+Maybe my server can produce a
+
+00:09:15.056 --> 00:09:16.136 A:middle
+checksum that I can validate.
+
+00:09:16.196 --> 00:09:17.416 A:middle
+Or a cryptographic signature.
+
+00:09:17.986 --> 00:09:21.236 A:middle
+Once I've done that, I can take
+
+00:09:21.266 --> 00:09:22.906 A:middle
+the data and pass it off JSON
+
+00:09:22.906 --> 00:09:23.586 A:middle
+serialization.
+
+00:09:24.626 --> 00:09:26.286 A:middle
+If deserializing the data fails,
+
+00:09:26.546 --> 00:09:27.816 A:middle
+JSON serialization will throw an
+
+00:09:27.816 --> 00:09:28.086 A:middle
+error.
+
+00:09:28.196 --> 00:09:29.316 A:middle
+Will check and then catch and
+
+00:09:29.316 --> 00:09:29.616 A:middle
+handle.
+
+00:09:30.026 --> 00:09:31.216 A:middle
+May display dialogue to my
+
+00:09:31.216 --> 00:09:31.726 A:middle
+customers.
+
+00:09:32.936 --> 00:09:34.876 A:middle
+Again, in our purlins of the
+
+00:09:34.876 --> 00:09:36.536 A:middle
+day, we've just taken raw data
+
+00:09:37.076 --> 00:09:38.116 A:middle
+and carried along it the
+
+00:09:38.116 --> 00:09:39.486 A:middle
+abstraction spectrum to
+
+00:09:39.486 --> 00:09:40.056 A:middle
+primitive data.
+
+00:09:40.746 --> 00:09:41.786 A:middle
+And if anything went wrong, we
+
+00:09:41.786 --> 00:09:42.696 A:middle
+can handle that failure.
+
+00:09:44.016 --> 00:09:45.576 A:middle
+So, now we need to make use of
+
+00:09:45.576 --> 00:09:45.936 A:middle
+this data.
+
+00:09:46.106 --> 00:09:47.026 A:middle
+How can we consume it?
+
+00:09:47.786 --> 00:09:49.856 A:middle
+Well, JSON is an any variable
+
+00:09:49.856 --> 00:09:51.246 A:middle
+that contains the actual values.
+
+00:09:52.006 --> 00:09:53.586 A:middle
+So, I can downcast it to the
+
+00:09:53.586 --> 00:09:54.566 A:middle
+array of dictionaries that I
+
+00:09:54.566 --> 00:09:55.306 A:middle
+expect it to be.
+
+00:09:56.556 --> 00:09:57.866 A:middle
+Now, this part of my app cares
+
+00:09:57.866 --> 00:09:58.956 A:middle
+only about product listings that
+
+00:09:58.956 --> 00:09:59.706 A:middle
+are related to music.
+

@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:56.336 --> 00:39:00.741 align:start position:29% line:-2
+イメージの検出だけでなく
+追跡もできます
+
+00:39:02.209 --> 00:39:05.546 align:start position:0% line:-2
+ARImageTrackingConfigurationは
+新しい構成です
+
+00:39:05.646 --> 00:39:08.315 align:start position:25% line:-2
+単独でイメージトラッキングを
+行います
+
+00:39:08.916 --> 00:39:11.251 align:start position:29% line:-2
+ワールドトラッキングから
+独立し
+
+00:39:11.351 --> 00:39:15.823 align:start position:23% line:-2
+トラッキング時に
+モーションセンサーを用いません
+
+00:39:16.056 --> 00:39:17.124 align:start position:45% line:-1
+つまり
+
+00:39:17.458 --> 00:39:22.663 align:start position:27% line:-2
+イメージの特定を始める前に
+初期化されることがなく
+
+00:39:23.096 --> 00:39:26.433 align:start position:32% line:-2
+エレベータや列車など
+地面が動く時に
+
+00:39:26.533 --> 00:39:30.470 align:start position:27% line:-2
+ワールドトラッキングが
+失敗した場合でも機能します
+
+00:39:31.338 --> 00:39:33.040 align:start position:39% line:-1
+こういう場合
+
+00:39:33.140 --> 00:39:36.610 align:start position:29% line:-2
+ARKitは全フレームの
+位置と向きを
+
+00:39:36.710 --> 00:39:38.345 align:start position:30% line:-1
+１秒60フレームで推定
+
+00:39:39.246 --> 00:39:42.816 align:start position:30% line:-2
+これは４行のシンプルな
+コードで実行できます
+
+00:39:43.884 --> 00:39:49.223 align:start position:0% line:-2
+ARImageTrackingConfiguration
+を作成し
+
+00:39:49.323 --> 00:39:52.826 align:start position:32% line:-2
+追跡したいイメージを
+指定します
+
+00:39:52.993 --> 00:39:57.464 align:start position:32% line:-2
+ここではネコとイヌ
+鳥の写真を指定します
+
+00:39:59.433 --> 00:40:02.770 align:start position:29% line:-2
+イメージを
+いくつ追跡したいかを設定
+

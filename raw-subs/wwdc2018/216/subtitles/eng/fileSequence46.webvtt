@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:00.856 --> 00:46:03.106 A:middle
+What this means is as soon as we
+
+00:46:03.106 --> 00:46:04.726 A:middle
+tap on our app icon in the Share
+
+00:46:04.726 --> 00:46:06.456 A:middle
+sheet, the system will make a
+
+00:46:06.456 --> 00:46:09.096 A:middle
+copy of this document, and serve
+
+00:46:09.096 --> 00:46:10.986 A:middle
+this copy to our app.
+
+00:46:10.986 --> 00:46:12.596 A:middle
+And, practically this means that
+
+00:46:12.596 --> 00:46:14.326 A:middle
+the customer would start editing
+
+00:46:14.326 --> 00:46:15.616 A:middle
+a copy of the document.
+
+00:46:17.096 --> 00:46:19.056 A:middle
+To allow your customers to open
+
+00:46:19.056 --> 00:46:20.816 A:middle
+and edit the original document
+
+00:46:21.756 --> 00:46:23.696 A:middle
+that we wish to access in your
+
+00:46:23.696 --> 00:46:26.206 A:middle
+app, you need to adopt an iOS
+
+00:46:26.206 --> 00:46:28.106 A:middle
+feature called Open in Place.
+
+00:46:28.636 --> 00:46:32.066 A:middle
+If you do adopt Open in Place,
+
+00:46:32.456 --> 00:46:34.276 A:middle
+you see the "Open in" your app
+
+00:46:34.536 --> 00:46:35.856 A:middle
+in the Share sheet, instead of
+
+00:46:35.856 --> 00:46:38.576 A:middle
+the previous "Copy to."
+
+00:46:38.826 --> 00:46:40.676 A:middle
+Adopting Open in Place is very
+
+00:46:40.676 --> 00:46:41.076 A:middle
+simple.
+
+00:46:41.816 --> 00:46:43.676 A:middle
+If you use the document-based
+
+00:46:43.676 --> 00:46:45.586 A:middle
+app Xcode template, you'll get
+
+00:46:45.586 --> 00:46:47.656 A:middle
+this behavior for free, as Open
+
+00:46:47.656 --> 00:46:49.286 A:middle
+in Place is already enabled by
+
+00:46:49.286 --> 00:46:49.856 A:middle
+default there.
+
+00:46:50.876 --> 00:46:52.676 A:middle
+Otherwise, you'll need to add
+
+00:46:52.756 --> 00:46:52.966 A:middle
+the
+
+00:46:52.966 --> 00:46:55.026 A:middle
+LSSupportsOpeningDocumentInPlace
+
+00:46:55.026 --> 00:46:57.756 A:middle
+to your info.plist.
+
+00:46:57.756 --> 00:46:58.806 A:middle
+Once you've declared to the
+
+00:46:58.806 --> 00:47:00.956 A:middle
+system that your app handles
+

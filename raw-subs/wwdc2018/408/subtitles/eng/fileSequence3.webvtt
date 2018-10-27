@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.226 --> 00:03:01.696 A:middle
+Now, let's take a look at what
+
+00:03:01.696 --> 00:03:02.966 A:middle
+this looks like on a timeline
+
+00:03:02.966 --> 00:03:03.246 A:middle
+graph.
+
+00:03:03.306 --> 00:03:08.086 A:middle
+So as we can see, each of these
+
+00:03:08.086 --> 00:03:09.486 A:middle
+targets are building in in
+
+00:03:09.486 --> 00:03:10.876 A:middle
+order, sequentially.
+
+00:03:11.396 --> 00:03:12.796 A:middle
+And they each have to wait until
+
+00:03:12.796 --> 00:03:13.946 A:middle
+the previous target is done
+
+00:03:13.946 --> 00:03:14.386 A:middle
+building.
+
+00:03:14.786 --> 00:03:16.366 A:middle
+Now, there's nothing wrong with
+
+00:03:16.366 --> 00:03:17.946 A:middle
+this build timeline, per se.
+
+00:03:18.356 --> 00:03:20.436 A:middle
+But it does represent a waste of
+
+00:03:20.436 --> 00:03:22.026 A:middle
+potential hardware utilization,
+
+00:03:22.376 --> 00:03:23.146 A:middle
+especially if you have a
+
+00:03:23.146 --> 00:03:24.326 A:middle
+multi-core or a mini-core
+
+00:03:24.326 --> 00:03:25.846 A:middle
+machine like an iMac Pro.
+
+00:03:26.726 --> 00:03:28.356 A:middle
+And what that means to you is a
+
+00:03:28.356 --> 00:03:29.616 A:middle
+waste of time as a developer.
+
+00:03:30.346 --> 00:03:32.416 A:middle
+So instead, we want to move to
+
+00:03:32.416 --> 00:03:34.466 A:middle
+something that looks more like
+
+00:03:37.476 --> 00:03:37.576 A:middle
+this.
+
+00:03:37.786 --> 00:03:38.846 A:middle
+Now, there's a couple things --
+
+00:03:38.846 --> 00:03:39.876 A:middle
+or a few things I want to note
+
+00:03:39.876 --> 00:03:40.456 A:middle
+about this.
+
+00:03:40.926 --> 00:03:42.726 A:middle
+First, the amount of work that
+
+00:03:42.726 --> 00:03:43.936 A:middle
+we actually did in building our
+
+00:03:43.936 --> 00:03:45.286 A:middle
+project, it did not change.
+
+00:03:46.696 --> 00:03:48.806 A:middle
+However, the time to build did
+
+00:03:48.806 --> 00:03:49.456 A:middle
+decrease.
+
+00:03:50.126 --> 00:03:51.396 A:middle
+And in this case, it actually
+
+00:03:51.396 --> 00:03:52.426 A:middle
+decreased by a fairly
+
+00:03:52.426 --> 00:03:53.486 A:middle
+significant margin.
+
+00:03:53.946 --> 00:03:56.196 A:middle
+And we were able to decrease our
+
+00:03:56.196 --> 00:03:57.666 A:middle
+build time by making better
+
+00:03:57.726 --> 00:03:59.466 A:middle
+utilization of the hardware that
+
+00:03:59.466 --> 00:04:02.736 A:middle
+we have available to us.
+

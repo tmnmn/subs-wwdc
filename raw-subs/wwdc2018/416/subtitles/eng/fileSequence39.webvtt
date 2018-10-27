@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.556 --> 00:39:00.156 A:middle
+the starting memory address of
+
+00:39:00.156 --> 00:39:01.096 A:middle
+my VM region.
+
+00:39:01.806 --> 00:39:02.856 A:middle
+Let's see what this looks like.
+
+00:39:04.036 --> 00:39:05.386 A:middle
+Well, this actually is not that
+
+00:39:05.386 --> 00:39:06.566 A:middle
+big of a backtrace, and I can
+
+00:39:06.566 --> 00:39:09.066 A:middle
+see actually my code appears on,
+
+00:39:09.066 --> 00:39:10.126 A:middle
+here on several lines.
+
+00:39:10.576 --> 00:39:12.676 A:middle
+Lines 6 through 9 actually come
+
+00:39:12.676 --> 00:39:14.106 A:middle
+straight from my application
+
+00:39:14.106 --> 00:39:16.066 A:middle
+code, and I can see here on line
+
+00:39:16.066 --> 00:39:19.046 A:middle
+6 that my NoirFilter apply
+
+00:39:19.046 --> 00:39:21.186 A:middle
+function is what is responsible
+
+00:39:21.186 --> 00:39:23.376 A:middle
+for creating this particular VM
+
+00:39:23.726 --> 00:39:24.486 A:middle
+region.
+
+00:39:24.996 --> 00:39:27.626 A:middle
+So that's pretty good smoking
+
+00:39:27.626 --> 00:39:28.826 A:middle
+gun as to where I want to look
+
+00:39:28.826 --> 00:39:30.576 A:middle
+in my app for who's creating all
+
+00:39:30.576 --> 00:39:31.216 A:middle
+this memory.
+
+00:39:31.746 --> 00:39:33.566 A:middle
+And in fact, if we go back to
+
+00:39:33.566 --> 00:39:34.806 A:middle
+the Memgraph file, I can
+
+00:39:34.806 --> 00:39:36.586 A:middle
+actually see that's the same
+
+00:39:36.586 --> 00:39:38.296 A:middle
+backtrace that appears in Xcode
+
+00:39:38.296 --> 00:39:38.626 A:middle
+here.
+
+00:39:39.186 --> 00:39:40.446 A:middle
+You can actually see right here
+
+00:39:40.446 --> 00:39:42.076 A:middle
+is also the NoirFilter apply
+
+00:39:42.076 --> 00:39:42.526 A:middle
+method.
+
+00:39:42.886 --> 00:39:44.046 A:middle
+We don't get the nice
+
+00:39:44.046 --> 00:39:45.646 A:middle
+highlighting you normally see in
+
+00:39:45.646 --> 00:39:47.176 A:middle
+the backtrace view here because
+
+00:39:47.176 --> 00:39:48.286 A:middle
+we're not debugging a live
+
+00:39:48.286 --> 00:39:48.796 A:middle
+process.
+
+00:39:48.796 --> 00:39:50.116 A:middle
+We're loading a Memgraph file.
+
+00:39:50.526 --> 00:39:51.686 A:middle
+But you can see it's the exact
+
+00:39:51.686 --> 00:39:52.796 A:middle
+same output as we get from
+
+00:39:52.796 --> 00:39:53.566 A:middle
+malloc history.
+
+00:39:53.926 --> 00:39:57.786 A:middle
+And in fact, to just kind of a
+
+00:39:57.986 --> 00:39:59.616 A:middle
+confirm things even further, if
+
+00:39:59.616 --> 00:40:02.036 A:middle
+I go ahead and I look at my full
+

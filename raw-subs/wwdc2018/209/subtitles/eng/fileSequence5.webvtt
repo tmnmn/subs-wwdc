@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.576 --> 00:05:00.866 A:middle
+switching from common suffixes,
+
+00:05:00.866 --> 00:05:02.436 A:middle
+which is what we used to to many
+
+00:05:02.436 --> 00:05:04.066 A:middle
+years ago, to common prefixes in
+
+00:05:04.066 --> 00:05:04.796 A:middle
+Objective-C.
+
+00:05:05.186 --> 00:05:07.466 A:middle
+Using common prefixes enables
+
+00:05:07.466 --> 00:05:08.936 A:middle
+names to group together, and
+
+00:05:08.936 --> 00:05:10.446 A:middle
+become more easily discoverable,
+
+00:05:10.686 --> 00:05:12.266 A:middle
+and come across better in Swift.
+
+00:05:13.586 --> 00:05:16.776 A:middle
+So, let's look at an example.
+
+00:05:16.846 --> 00:05:18.996 A:middle
+Here is NSLineJoinStyle as it
+
+00:05:18.996 --> 00:05:21.156 A:middle
+appears in the 10.13 SDK.
+
+00:05:21.156 --> 00:05:22.996 A:middle
+And, here is how it appears in
+
+00:05:22.996 --> 00:05:23.866 A:middle
+10.14.
+
+00:05:24.226 --> 00:05:25.866 A:middle
+You'll note that enumeration
+
+00:05:25.866 --> 00:05:26.786 A:middle
+values such as
+
+00:05:26.826 --> 00:05:28.516 A:middle
+MiterLineJoinStyle now have
+
+00:05:28.546 --> 00:05:30.316 A:middle
+become LineJoinStyleMiter.
+
+00:05:30.936 --> 00:05:32.486 A:middle
+So, a common prefix.
+
+00:05:33.116 --> 00:05:34.936 A:middle
+The Swift exposure changes from
+
+00:05:35.436 --> 00:05:37.986 A:middle
+miterLineJoinStyle to just
+
+00:05:38.176 --> 00:05:38.606 A:middle
+miter.
+
+00:05:38.886 --> 00:05:40.616 A:middle
+So, it's-- you know, you don't
+
+00:05:40.616 --> 00:05:41.756 A:middle
+have to repeat the type any
+
+00:05:41.756 --> 00:05:43.076 A:middle
+more; it's pretty obvious in the
+
+00:05:43.076 --> 00:05:44.506 A:middle
+call site, so much cleaner.
+
+00:05:44.846 --> 00:05:46.506 A:middle
+And, so good it deserves a happy
+
+00:05:46.506 --> 00:05:46.936 A:middle
+emoji.
+
+00:05:47.151 --> 00:05:49.151 A:middle
+[ Scattered Applause ]
+
+00:05:49.286 --> 00:05:49.876 A:middle
+Thank you.
+
+00:05:51.186 --> 00:05:53.246 A:middle
+And, we did this to a number of
+
+00:05:53.246 --> 00:05:54.366 A:middle
+other types that we had not
+
+00:05:54.756 --> 00:05:56.396 A:middle
+done, applied this change to,
+
+00:05:56.396 --> 00:05:57.956 A:middle
+and here is that list of types.
+

@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:00.220 --> 00:02:01.588 align:middle line:-1
+也被称为CKC
+
+00:02:02.489 --> 00:02:06.426 align:middle line:-2
+最后 该app将CKC
+返回给AVFoundation
+
+00:02:06.593 --> 00:02:09.729 align:middle line:-1
+以便它可以开始解密和播放
+
+00:02:11.265 --> 00:02:15.569 align:middle line:-2
+直到最近 app还在使用通用的
+AVFoundation API
+
+00:02:15.636 --> 00:02:17.204 align:middle line:-1
+称为AVAssetResourceLoader
+
+00:02:17.571 --> 00:02:19.339 align:middle line:-1
+来提供内容解密密钥
+
+00:02:20.941 --> 00:02:24.711 align:middle line:-2
+去年我们推出了
+新的AVFoundation类
+
+00:02:24.912 --> 00:02:26.547 align:middle line:-1
+称为AVContentKeySession
+
+00:02:26.613 --> 00:02:29.983 align:middle line:-1
+它是专门针对内容解密密钥设计的
+
+00:02:31.785 --> 00:02:35.022 align:middle line:-2
+AVContentKeySession
+有两个目标
+
+00:02:35.822 --> 00:02:38.592 align:middle line:-1
+一是简化密钥加载过程
+
+00:02:38.926 --> 00:02:41.028 align:middle line:-1
+并在内容解密密钥的生命周期内
+
+00:02:41.094 --> 00:02:43.697 align:middle line:-1
+为app提供更好的控制
+
+00:02:44.498 --> 00:02:48.869 align:middle line:-1
+二是为新的内容保护功能建一个平台
+
+00:02:51.338 --> 00:02:54.208 align:middle line:-2
+AVContentKeySession
+至今非常出色
+
+00:02:54.541 --> 00:02:57.611 align:middle line:-2
+在我们的平台上传递的大部分
+FairPlay Streaming密钥
+
+00:02:57.978 --> 00:03:01.682 align:middle line:-1
+是通过AVContentKeySession传递的
+

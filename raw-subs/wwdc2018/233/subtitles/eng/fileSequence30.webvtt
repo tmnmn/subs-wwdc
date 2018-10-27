@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.636 --> 00:30:00.606 A:middle
+update your UI and handle user
+
+00:30:00.606 --> 00:30:00.946 A:middle
+input.
+
+00:30:01.046 --> 00:30:04.136 A:middle
+Ben, what kind of work can we
+
+00:30:04.136 --> 00:30:05.156 A:middle
+push off the main queue?
+
+00:30:06.186 --> 00:30:06.956 A:middle
+&gt;&gt; Well, there's some usual
+
+00:30:06.956 --> 00:30:08.086 A:middle
+stuff that you might expect,
+
+00:30:08.736 --> 00:30:10.696 A:middle
+like network and file system
+
+00:30:10.696 --> 00:30:11.216 A:middle
+access.
+
+00:30:11.566 --> 00:30:12.606 A:middle
+These should never be running on
+
+00:30:12.606 --> 00:30:13.156 A:middle
+the main thread.
+
+00:30:13.456 --> 00:30:15.116 A:middle
+But, maybe some other stuff that
+
+00:30:15.116 --> 00:30:16.836 A:middle
+you might not expect, like image
+
+00:30:16.836 --> 00:30:17.866 A:middle
+drawing and text sizing.
+
+00:30:18.996 --> 00:30:20.916 A:middle
+UIGraphicsImageRenderer, and its
+
+00:30:20.916 --> 00:30:22.826 A:middle
+distributed string, both have
+
+00:30:22.976 --> 00:30:24.456 A:middle
+functions available that are
+
+00:30:24.456 --> 00:30:25.606 A:middle
+safe to use on a background
+
+00:30:25.606 --> 00:30:27.216 A:middle
+thread, that might just help you
+
+00:30:27.216 --> 00:30:29.546 A:middle
+move some of that complex
+
+00:30:29.576 --> 00:30:31.236 A:middle
+computation off of your main
+
+00:30:31.236 --> 00:30:31.506 A:middle
+queue.
+
+00:30:32.776 --> 00:30:34.406 A:middle
+&gt;&gt; Wow, Ben, those are great
+
+00:30:34.406 --> 00:30:34.756 A:middle
+tips.
+
+00:30:34.756 --> 00:30:35.946 A:middle
+I never would have thought to do
+
+00:30:35.946 --> 00:30:37.376 A:middle
+that off of the main queue.
+
+00:30:38.246 --> 00:30:40.396 A:middle
+So, let's say I've run the Time
+
+00:30:40.396 --> 00:30:40.996 A:middle
+Profiler.
+
+00:30:41.316 --> 00:30:42.896 A:middle
+I've used prefetching, just like
+
+00:30:42.896 --> 00:30:44.046 A:middle
+those guys told me to.
+
+00:30:44.226 --> 00:30:45.466 A:middle
+And, I've pushed as much work as
+
+00:30:45.466 --> 00:30:46.836 A:middle
+possible off of the main queue,
+
+00:30:47.816 --> 00:30:49.296 A:middle
+but my app is still slow.
+
+00:30:50.016 --> 00:30:51.516 A:middle
+Surely this isn't my problem,
+
+00:30:51.516 --> 00:30:51.986 A:middle
+right Ben?
+
+00:30:53.056 --> 00:30:54.226 A:middle
+&gt;&gt; Well, Peter, we may not be
+
+00:30:54.226 --> 00:30:55.576 A:middle
+out of the woods just yet.
+
+00:30:56.416 --> 00:30:57.976 A:middle
+While we may have optimized our
+
+00:30:57.976 --> 00:31:00.276 A:middle
+computation, we could still be
+

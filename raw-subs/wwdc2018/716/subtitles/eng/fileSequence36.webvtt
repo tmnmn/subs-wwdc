@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.966 --> 00:36:00.466 A:middle
+one-to-one.
+
+00:36:03.396 --> 00:36:04.656 A:middle
+We also saw that there are two
+
+00:36:04.656 --> 00:36:05.506 A:middle
+types of trackers.
+
+00:36:05.806 --> 00:36:06.916 A:middle
+One is the general purpose
+
+00:36:06.916 --> 00:36:08.396 A:middle
+tracker, and another one is
+
+00:36:08.396 --> 00:36:10.216 A:middle
+rectangular object tracker.
+
+00:36:12.396 --> 00:36:13.576 A:middle
+We also learned that there are
+
+00:36:13.576 --> 00:36:15.636 A:middle
+two algorithms for each tracker
+
+00:36:15.636 --> 00:36:15.906 A:middle
+type.
+
+00:36:16.356 --> 00:36:18.116 A:middle
+There is fast and accurate, and
+
+00:36:18.116 --> 00:36:20.366 A:middle
+this represents the tradeoff
+
+00:36:20.366 --> 00:36:21.646 A:middle
+between speed and accuracy.
+
+00:36:21.966 --> 00:36:24.766 A:middle
+And last but not least, we
+
+00:36:24.866 --> 00:36:25.946 A:middle
+looked at how to use a
+
+00:36:25.946 --> 00:36:28.116 A:middle
+confidence level property to
+
+00:36:28.116 --> 00:36:29.586 A:middle
+judge whether we should or
+
+00:36:29.586 --> 00:36:30.716 A:middle
+should not trust our results.
+
+00:36:34.516 --> 00:36:35.796 A:middle
+What are the limits of
+
+00:36:35.796 --> 00:36:37.046 A:middle
+implementing tracking sequence
+
+00:36:37.046 --> 00:36:37.446 A:middle
+in Vision?
+
+00:36:38.006 --> 00:36:42.406 A:middle
+First, let's talk about number
+
+00:36:42.496 --> 00:36:43.646 A:middle
+of trackers.
+
+00:36:45.136 --> 00:36:46.866 A:middle
+How many objects can you track
+
+00:36:46.866 --> 00:36:47.546 A:middle
+simultaneously?
+
+00:36:48.446 --> 00:36:49.796 A:middle
+Well, in Vision we have a limit
+
+00:36:50.066 --> 00:36:53.186 A:middle
+that is set to 16 trackers for
+
+00:36:53.186 --> 00:36:53.666 A:middle
+each type.
+
+00:36:54.006 --> 00:36:55.346 A:middle
+So, you can have 16 general
+
+00:36:55.346 --> 00:36:57.446 A:middle
+purpose object trackers and 16
+
+00:36:58.076 --> 00:36:59.206 A:middle
+rectangular object trackers.
+

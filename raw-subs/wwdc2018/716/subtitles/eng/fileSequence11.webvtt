@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.806 --> 00:11:00.256 A:middle
+Then, I'm going to start my
+
+00:11:00.256 --> 00:11:01.056 A:middle
+tracking signals.
+
+00:11:01.786 --> 00:11:03.486 A:middle
+In this example, I'm going to
+
+00:11:03.486 --> 00:11:04.676 A:middle
+track my object for five
+
+00:11:04.676 --> 00:11:05.626 A:middle
+consecutive frames.
+
+00:11:06.896 --> 00:11:07.876 A:middle
+Let's look how the sequence
+
+00:11:07.876 --> 00:11:08.236 A:middle
+works.
+
+00:11:08.826 --> 00:11:10.636 A:middle
+First, I have a frame feeder
+
+00:11:10.636 --> 00:11:11.946 A:middle
+object, which in your case could
+
+00:11:11.946 --> 00:11:13.206 A:middle
+be like camera feed, for
+
+00:11:13.206 --> 00:11:13.566 A:middle
+example.
+
+00:11:14.326 --> 00:11:15.546 A:middle
+This is where I get my frames.
+
+00:11:15.546 --> 00:11:18.416 A:middle
+I get my frame, I create my
+
+00:11:18.416 --> 00:11:19.666 A:middle
+request object, passing the
+
+00:11:19.666 --> 00:11:21.456 A:middle
+detected object observation as a
+
+00:11:21.456 --> 00:11:23.886 A:middle
+parameter with its initializer.
+
+00:11:24.326 --> 00:11:25.706 A:middle
+And that's something that I just
+
+00:11:25.706 --> 00:11:26.876 A:middle
+created before the loop started.
+
+00:11:27.496 --> 00:11:29.596 A:middle
+Then, I'm going to ask my
+
+00:11:29.596 --> 00:11:31.296 A:middle
+request handler to process
+
+00:11:31.296 --> 00:11:31.666 A:middle
+request.
+
+00:11:32.296 --> 00:11:34.396 A:middle
+I'm going to look at the
+
+00:11:34.396 --> 00:11:35.646 A:middle
+results, and this is the place
+
+00:11:35.646 --> 00:11:37.166 A:middle
+where I should be analyzing
+
+00:11:37.166 --> 00:11:38.376 A:middle
+results and doing something with
+
+00:11:38.376 --> 00:11:38.626 A:middle
+them.
+
+00:11:39.246 --> 00:11:41.766 A:middle
+And the last step, which is very
+
+00:11:41.766 --> 00:11:43.426 A:middle
+important, what I'm doing here,
+
+00:11:43.776 --> 00:11:44.956 A:middle
+I'm taking the results from the
+
+00:11:44.956 --> 00:11:46.196 A:middle
+current iteration, and I'm
+
+00:11:46.236 --> 00:11:47.376 A:middle
+passing it to the next
+
+00:11:47.376 --> 00:11:48.026 A:middle
+iteration.
+
+00:11:48.356 --> 00:11:49.426 A:middle
+So, when the next iteration
+
+00:11:49.426 --> 00:11:50.846 A:middle
+request is created, I want to
+
+00:11:50.846 --> 00:11:51.846 A:middle
+see those results inside.
+
+00:11:51.846 --> 00:11:53.456 A:middle
+If I were to want it in a
+
+00:11:53.606 --> 00:11:54.786 A:middle
+sequence of five frames, my
+
+00:11:54.786 --> 00:11:55.756 A:middle
+results would look something
+
+00:11:55.756 --> 00:11:55.976 A:middle
+like this.
+

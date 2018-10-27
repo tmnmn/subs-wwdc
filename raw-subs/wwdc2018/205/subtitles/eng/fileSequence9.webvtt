@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.896 --> 00:09:02.036 A:middle
+step, the developer receives a
+
+00:09:02.036 --> 00:09:03.876 A:middle
+delegate call back with an ORK
+
+00:09:03.876 --> 00:09:04.936 A:middle
+resolved object.
+
+00:09:05.546 --> 00:09:06.786 A:middle
+Now, this object consists of a
+
+00:09:06.786 --> 00:09:08.196 A:middle
+variety of data points, which
+
+00:09:08.196 --> 00:09:09.686 A:middle
+include things like user
+
+00:09:09.686 --> 00:09:11.896 A:middle
+responses, timing information
+
+00:09:12.056 --> 00:09:13.856 A:middle
+and data recorded from different
+
+00:09:13.856 --> 00:09:15.846 A:middle
+sources like Accelerometer,
+
+00:09:15.846 --> 00:09:18.066 A:middle
+Gyroscope, healthcare data, and
+
+00:09:18.066 --> 00:09:19.226 A:middle
+even from your microphone.
+
+00:09:20.216 --> 00:09:21.926 A:middle
+And this year, we are also
+
+00:09:21.926 --> 00:09:23.436 A:middle
+adding support for health
+
+00:09:23.436 --> 00:09:23.926 A:middle
+records.
+
+00:09:24.906 --> 00:09:26.416 A:middle
+Now, let's take a look at how
+
+00:09:26.416 --> 00:09:27.876 A:middle
+you can utilize this in your
+
+00:09:27.876 --> 00:09:28.136 A:middle
+app.
+
+00:09:28.826 --> 00:09:30.436 A:middle
+Now, your objective here is to
+
+00:09:30.436 --> 00:09:32.546 A:middle
+create a recorder configuration
+
+00:09:32.766 --> 00:09:34.556 A:middle
+that can query health clinical
+
+00:09:34.556 --> 00:09:35.326 A:middle
+data types.
+
+00:09:35.636 --> 00:09:37.066 A:middle
+And you need to provide us with
+
+00:09:37.136 --> 00:09:38.426 A:middle
+two important parameters.
+
+00:09:38.756 --> 00:09:41.706 A:middle
+First is of HKClinicalType, and
+
+00:09:41.706 --> 00:09:43.866 A:middle
+a second is an optional of type
+
+00:09:43.926 --> 00:09:45.536 A:middle
+HKFIRResourceType.
+
+00:09:46.386 --> 00:09:47.746 A:middle
+And once you have created this
+
+00:09:47.746 --> 00:09:49.406 A:middle
+record of configuration, you
+
+00:09:49.406 --> 00:09:50.486 A:middle
+attach it to the step.
+
+00:09:51.206 --> 00:09:53.446 A:middle
+So, now when the user is about
+
+00:09:53.446 --> 00:09:55.106 A:middle
+to perform the task, they will
+
+00:09:55.106 --> 00:09:57.286 A:middle
+be prompted with HealthKits new
+
+00:09:57.286 --> 00:09:58.336 A:middle
+authorization UI.
+
+00:09:59.116 --> 00:10:00.986 A:middle
+And only if they grant access
+

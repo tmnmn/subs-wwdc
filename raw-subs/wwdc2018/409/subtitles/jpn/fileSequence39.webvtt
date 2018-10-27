@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:56.703 --> 00:39:00.340 align:start position:32% line:-2
+別のスレッドが
+アクセスしたとします
+
+00:39:02.676 --> 00:39:07.047 align:start position:25% line:-2
+両スレッドが
+変数へのアクセスを試みますが
+
+00:39:07.581 --> 00:39:10.784 align:start position:25% line:-1
+独占的なアクセスになりません
+
+00:39:12.152 --> 00:39:16.056 align:start position:27% line:-2
+そのため
+どちらもアクセス失敗となり
+
+00:39:16.523 --> 00:39:19.693 align:start position:29% line:-1
+成功するまで繰り返します
+
+00:39:21.995 --> 00:39:24.131 align:start position:30% line:-1
+これは性能に影響します
+
+00:39:25.933 --> 00:39:31.271 align:start position:20% line:-2
+A11のCPUアーキテクチャである
+ARMv8.1なら
+
+00:39:31.371 --> 00:39:34.074 align:start position:27% line:-1
+１つのステップで処理します
+
+00:39:34.341 --> 00:39:37.010 align:start position:29% line:-1
+飛躍的な改善も見込めます
+
+00:39:38.412 --> 00:39:41.348 align:start position:30% line:-1
+これは各関数の特殊化や
+
+00:39:41.448 --> 00:39:46.253 align:start position:29% line:-2
+ターゲットを示すコードを
+特殊化してくれます
+
+00:39:47.154 --> 00:39:52.459 align:start position:14% line:-2
+C11かC++11のAtomicsのみに
+非常に有効です
+
+00:39:52.993 --> 00:39:55.963 align:start position:21% line:-1
+GCDやPThreadといった―
+
+00:39:56.063 --> 00:39:59.833 align:start position:32% line:-2
+高水準なライブラリが
+手軽に使えます
+

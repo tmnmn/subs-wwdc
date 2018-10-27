@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.826 --> 00:21:00.486 A:middle
+is Unavailable.
+
+00:21:01.916 --> 00:21:03.086 A:middle
+Now that you have all this
+
+00:21:03.086 --> 00:21:03.996 A:middle
+information you're ready to
+
+00:21:03.996 --> 00:21:05.026 A:middle
+build some awesome shortcuts
+
+00:21:05.026 --> 00:21:05.976 A:middle
+from both the watch and the
+
+00:21:05.976 --> 00:21:06.276 A:middle
+phone.
+
+00:21:06.616 --> 00:21:07.516 A:middle
+So, I'd like to hand things over
+
+00:21:07.516 --> 00:21:08.766 A:middle
+to Josh to talk a little bit
+
+00:21:08.766 --> 00:21:09.476 A:middle
+more about our prediction
+
+00:21:09.476 --> 00:21:09.766 A:middle
+engine.
+
+00:21:09.766 --> 00:21:09.966 A:middle
+Thank you.
+
+00:21:10.516 --> 00:21:17.416 A:middle
+[ Applause ]
+
+00:21:17.916 --> 00:21:18.406 A:middle
+&gt;&gt; Thank you, Paul.
+
+00:21:19.686 --> 00:21:20.166 A:middle
+Good morning.
+
+00:21:20.686 --> 00:21:22.176 A:middle
+My name is Josh, and I am an
+
+00:21:22.176 --> 00:21:23.516 A:middle
+engineer on the watchOS team.
+
+00:21:23.816 --> 00:21:25.236 A:middle
+And, we're really excited to see
+
+00:21:25.236 --> 00:21:26.536 A:middle
+the kinds of relevant shortcuts
+
+00:21:26.536 --> 00:21:28.156 A:middle
+that you can surface on the Siri
+
+00:21:28.156 --> 00:21:28.766 A:middle
+watch face.
+
+00:21:29.256 --> 00:21:31.186 A:middle
+So, Paul just walked you through
+
+00:21:31.186 --> 00:21:32.616 A:middle
+some of the API's and different
+
+00:21:32.616 --> 00:21:34.456 A:middle
+ways that you can provide your
+
+00:21:34.456 --> 00:21:35.416 A:middle
+relevant shortcuts to the
+
+00:21:35.416 --> 00:21:35.866 A:middle
+system.
+
+00:21:36.576 --> 00:21:37.916 A:middle
+Now, I want to talk about how
+
+00:21:37.916 --> 00:21:38.926 A:middle
+the system predicts your
+
+00:21:38.926 --> 00:21:40.336 A:middle
+relevant shortcuts, and the
+
+00:21:40.336 --> 00:21:42.166 A:middle
+things that you can do to ensure
+
+00:21:42.166 --> 00:21:43.946 A:middle
+the system surfaces your content
+
+00:21:44.056 --> 00:21:45.046 A:middle
+when it's most appropriate to
+
+00:21:45.046 --> 00:21:45.426 A:middle
+the user.
+
+00:21:48.096 --> 00:21:49.136 A:middle
+It's like Paul talked about
+
+00:21:49.136 --> 00:21:50.946 A:middle
+earlier, content on the Siri
+
+00:21:50.946 --> 00:21:52.116 A:middle
+watch face is ordered by
+
+00:21:52.116 --> 00:21:53.316 A:middle
+relevance to the user.
+
+00:21:53.936 --> 00:21:55.586 A:middle
+At a wrist raise, we want to be
+
+00:21:55.586 --> 00:21:57.196 A:middle
+surfacing the content the user
+
+00:21:57.196 --> 00:21:58.366 A:middle
+cares about most.
+
+00:21:58.666 --> 00:21:59.506 A:middle
+Whether that be based on the
+
+00:21:59.506 --> 00:22:01.726 A:middle
+current time, location, or other
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.906 --> 00:18:01.356 A:middle
+But, with asynchronous decoding,
+
+00:18:01.356 --> 00:18:02.546 A:middle
+the operations happen in
+
+00:18:02.546 --> 00:18:04.476 A:middle
+parallel, and on a separate
+
+00:18:04.536 --> 00:18:05.626 A:middle
+thread, which means the
+
+00:18:05.666 --> 00:18:07.726 A:middle
+interactions aren't blocked.
+
+00:18:08.236 --> 00:18:09.856 A:middle
+And now, new this year, async
+
+00:18:09.946 --> 00:18:12.276 A:middle
+image decoding happens by
+
+00:18:12.276 --> 00:18:14.226 A:middle
+default on the first page load,
+
+00:18:15.136 --> 00:18:16.906 A:middle
+which can cover most cases for
+
+00:18:16.906 --> 00:18:17.476 A:middle
+web content.
+
+00:18:17.796 --> 00:18:20.286 A:middle
+However we know that some of you
+
+00:18:20.286 --> 00:18:21.576 A:middle
+may have special cases.
+
+00:18:21.656 --> 00:18:24.426 A:middle
+Say, you have a tiled map on
+
+00:18:24.426 --> 00:18:26.216 A:middle
+your webpage that loads after
+
+00:18:26.216 --> 00:18:27.356 A:middle
+the initial page load.
+
+00:18:27.586 --> 00:18:28.986 A:middle
+And, if it has lots of images,
+
+00:18:28.986 --> 00:18:31.706 A:middle
+some of the tiles may be delayed
+
+00:18:32.096 --> 00:18:32.796 A:middle
+in their display.
+
+00:18:33.356 --> 00:18:35.716 A:middle
+Or, maybe you have a carousel of
+
+00:18:35.716 --> 00:18:37.016 A:middle
+images in your app that you want
+
+00:18:37.016 --> 00:18:38.516 A:middle
+to fade into each other, but
+
+00:18:38.516 --> 00:18:40.086 A:middle
+when you try to advance the
+
+00:18:40.186 --> 00:18:41.726 A:middle
+slides, if the images are
+
+00:18:41.726 --> 00:18:43.296 A:middle
+decoded synchronously, they
+
+00:18:43.296 --> 00:18:44.886 A:middle
+might not be ready for display.
+
+00:18:45.436 --> 00:18:49.336 A:middle
+And, they abruptly switch.
+
+00:18:50.816 --> 00:18:53.216 A:middle
+But, on the right, asynchronous
+
+00:18:53.216 --> 00:18:54.776 A:middle
+decoding gives you a smoother
+
+00:18:54.886 --> 00:18:55.246 A:middle
+fade.
+
+00:18:55.296 --> 00:18:58.656 A:middle
+Now, if you want to fall into
+
+00:18:58.776 --> 00:18:59.916 A:middle
+one of these special dynamic
+
+00:18:59.916 --> 00:19:01.176 A:middle
+cases, you have two options.
+

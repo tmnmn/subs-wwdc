@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.896 --> 00:20:03.256 A:middle
+Now what's left is mainly the AV
+
+00:20:03.306 --> 00:20:05.906 A:middle
+Player Item buffering time and
+
+00:20:05.906 --> 00:20:08.576 A:middle
+the communication time from AV
+
+00:20:08.576 --> 00:20:10.286 A:middle
+Player and your application.
+
+00:20:11.356 --> 00:20:14.686 A:middle
+Oftentime, app may be able to
+
+00:20:14.906 --> 00:20:18.266 A:middle
+avoid buffering, such as due to
+
+00:20:19.176 --> 00:20:19.846 A:middle
+[inaudible] or due to media
+
+00:20:19.846 --> 00:20:20.346 A:middle
+options.
+
+00:20:20.906 --> 00:20:24.036 A:middle
+We can even try to reduce the
+
+00:20:24.036 --> 00:20:26.736 A:middle
+round trip time between the
+
+00:20:26.736 --> 00:20:28.136 A:middle
+player and the application.
+
+00:20:29.186 --> 00:20:30.946 A:middle
+Thus the startup is further
+
+00:20:30.946 --> 00:20:31.646 A:middle
+reduced.
+
+00:20:33.056 --> 00:20:33.806 A:middle
+Let's take a look.
+
+00:20:34.386 --> 00:20:38.386 A:middle
+When you create AV Player Item,
+
+00:20:38.996 --> 00:20:42.246 A:middle
+if you know where your user is
+
+00:20:42.246 --> 00:20:44.016 A:middle
+intending to start the playback,
+
+00:20:45.056 --> 00:20:46.716 A:middle
+set the current time on player
+
+00:20:46.716 --> 00:20:47.176 A:middle
+item.
+
+00:20:47.846 --> 00:20:49.106 A:middle
+If you know what are the media
+
+00:20:49.106 --> 00:20:51.476 A:middle
+options such as which language
+
+00:20:51.476 --> 00:20:53.966 A:middle
+to download for playback, set
+
+00:20:53.966 --> 00:20:56.956 A:middle
+that as well before you set the
+
+00:20:56.956 --> 00:20:58.906 A:middle
+AV Player item onto the player.
+
+00:20:59.806 --> 00:21:01.456 A:middle
+Same with the AV plyer.
+

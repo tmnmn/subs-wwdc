@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.076 --> 00:20:01.136 A:middle
+makes sense for our sample app.
+
+00:20:01.136 --> 00:20:03.286 A:middle
+After we do that, we'll discuss
+
+00:20:03.406 --> 00:20:05.396 A:middle
+what type of student generated
+
+00:20:05.446 --> 00:20:07.276 A:middle
+activity data, might also make
+
+00:20:07.316 --> 00:20:07.596 A:middle
+sense.
+
+00:20:08.906 --> 00:20:10.206 A:middle
+We'll make sure that we support
+
+00:20:10.236 --> 00:20:10.966 A:middle
+deep-linking.
+
+00:20:11.506 --> 00:20:12.726 A:middle
+Now, there's two ways to do
+
+00:20:12.726 --> 00:20:12.956 A:middle
+this.
+
+00:20:13.696 --> 00:20:15.106 A:middle
+The first way is to use
+
+00:20:15.106 --> 00:20:15.946 A:middle
+universal links.
+
+00:20:16.836 --> 00:20:18.556 A:middle
+So, if you already adopted
+
+00:20:18.556 --> 00:20:19.996 A:middle
+universal links within your
+
+00:20:19.996 --> 00:20:21.806 A:middle
+applications, you can simply
+
+00:20:21.806 --> 00:20:23.576 A:middle
+just set the universal link
+
+00:20:23.616 --> 00:20:25.326 A:middle
+property that lives on CLS
+
+00:20:25.496 --> 00:20:25.926 A:middle
+Context.
+
+00:20:27.556 --> 00:20:29.746 A:middle
+Now, our sample app does not
+
+00:20:29.746 --> 00:20:31.486 A:middle
+support universal links, so I'm
+
+00:20:31.486 --> 00:20:32.486 A:middle
+going to show you the second
+
+00:20:32.486 --> 00:20:34.476 A:middle
+approach, which is to use NS
+
+00:20:34.656 --> 00:20:36.186 A:middle
+User Activities Continue
+
+00:20:36.186 --> 00:20:37.146 A:middle
+Restoration Handler.
+
+00:20:38.586 --> 00:20:40.156 A:middle
+Then we'll make sure that we
+
+00:20:40.156 --> 00:20:42.386 A:middle
+test our implementation using
+
+00:20:42.806 --> 00:20:44.426 A:middle
+Developer Mode and the
+
+00:20:44.476 --> 00:20:46.206 A:middle
+Schoolwork app.
+
+00:20:46.546 --> 00:20:47.896 A:middle
+So, now let's talk about what
+
+00:20:48.006 --> 00:20:49.826 A:middle
+type of context structure might
+
+00:20:49.826 --> 00:20:51.836 A:middle
+make sense for this app.
+
+00:20:51.836 --> 00:20:53.486 A:middle
+As a first approach, we might
+
+00:20:53.486 --> 00:20:56.546 A:middle
+decide to do a one-to-one map of
+
+00:20:56.546 --> 00:20:58.526 A:middle
+RUI to a Context Tree.
+
+00:20:59.176 --> 00:21:00.906 A:middle
+And if we did that, we would end
+

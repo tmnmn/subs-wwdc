@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:57.251 --> 00:42:01.088 align:middle line:-2
+即我的截屏笔工具丢失了
+这非常糟糕
+
+00:42:03.156 --> 00:42:06.293 align:middle line:-2
+Ben 有什么工具可以用来
+帮助诊断这个问题吗？
+
+00:42:07.160 --> 00:42:08.095 align:middle line:-1
+当然有
+
+00:42:08.495 --> 00:42:11.398 align:middle line:-2
+Xcode中
+有一个内置的视图调试器
+
+00:42:12.432 --> 00:42:15.569 align:middle line:-2
+只需单击底部工具栏中的此图标
+即可启动它
+
+00:42:16.503 --> 00:42:19.206 align:middle line:-1
+Xcode会向你展示
+
+00:42:19.273 --> 00:42:21.108 align:middle line:-1
+整个视图层次结构的3D表示
+
+00:42:22.709 --> 00:42:25.846 align:middle line:-2
+正如你在这里看到的
+我们的铅笔控件仍然在那里
+
+00:42:26.313 --> 00:42:29.550 align:middle line:-1
+但是它们被前面的全屏视图遮挡了
+
+00:42:30.551 --> 00:42:32.653 align:middle line:-2
+因此我们需查看
+我们构建这个UI的位置
+
+00:42:32.719 --> 00:42:35.189 align:middle line:-2
+检查顺序出了什么问题
+我这样认为 Peter
+
+00:42:35.956 --> 00:42:36.857 align:middle line:-1
+这很好
+
+00:42:36.924 --> 00:42:38.225 align:middle line:-1
+Xcode视图调试器
+
+00:42:38.292 --> 00:42:41.795 align:middle line:-1
+是调试app中视图问题的绝佳工具
+
+00:42:42.863 --> 00:42:45.966 align:middle line:-2
+还有更多工具可以用来
+帮助解决这个问题
+
+00:42:48.035 --> 00:42:50.270 align:middle line:-1
+UIView recursiveDescription
+
+00:42:50.671 --> 00:42:52.539 align:middle line:-1
+UIView _parentDescription
+
+00:42:53.006 --> 00:42:56.276 align:middle line:-2
+以及类方法UIViewController
+_printHierarchy
+
+00:42:56.710 --> 00:43:00.948 align:middle line:-2
+是用于在app中调试视图
+和视图控制器问题的绝佳工具
+

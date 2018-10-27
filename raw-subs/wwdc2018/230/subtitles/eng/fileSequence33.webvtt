@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.986 --> 00:33:03.876 A:middle
+And that's it for the dog stats
+
+00:33:03.876 --> 00:33:04.056 A:middle
+view.
+
+00:33:05.336 --> 00:33:06.876 A:middle
+Next, let's work on adding some
+
+00:33:06.876 --> 00:33:08.426 A:middle
+context to the call and open
+
+00:33:08.426 --> 00:33:09.436 A:middle
+location buttons.
+
+00:33:10.056 --> 00:33:12.546 A:middle
+I'll head over to the shelter
+
+00:33:12.546 --> 00:33:14.906 A:middle
+info view where I have a
+
+00:33:14.906 --> 00:33:16.016 A:middle
+reference to the name of my
+
+00:33:16.016 --> 00:33:18.416 A:middle
+shelter, the map button, and the
+
+00:33:18.416 --> 00:33:18.916 A:middle
+call button.
+
+00:33:20.966 --> 00:33:22.236 A:middle
+We'd like the actions of both of
+
+00:33:22.236 --> 00:33:24.166 A:middle
+these buttons to be custom
+
+00:33:24.166 --> 00:33:25.316 A:middle
+actions on their containing
+
+00:33:25.316 --> 00:33:27.246 A:middle
+view, and to achieve this, we
+
+00:33:27.246 --> 00:33:28.486 A:middle
+can start by exposing that
+
+00:33:28.486 --> 00:33:29.246 A:middle
+containing view as an
+
+00:33:29.246 --> 00:33:30.216 A:middle
+accessibility element.
+
+00:33:34.016 --> 00:33:35.566 A:middle
+Let's go ahead and give this a
+
+00:33:35.566 --> 00:33:36.756 A:middle
+descriptive label, which would
+
+00:33:36.756 --> 00:33:38.000 A:middle
+be the name of the shelter.
+
+00:33:42.686 --> 00:33:43.876 A:middle
+&gt;&gt; Finally, let's override
+
+00:33:43.876 --> 00:33:45.436 A:middle
+accessibility custom actions.
+
+00:33:50.056 --> 00:33:51.296 A:middle
+Within this function, we'll
+
+00:33:51.296 --> 00:33:53.536 A:middle
+create two custom actions, the
+
+00:33:53.536 --> 00:33:55.516 A:middle
+map action and the call action.
+
+00:33:56.456 --> 00:33:58.276 A:middle
+VoiceOver will describe these as
+
+00:33:58.336 --> 00:33:59.936 A:middle
+open address in maps and call,
+

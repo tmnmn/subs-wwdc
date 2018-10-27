@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.336 --> 00:10:01.326 A:middle
+quantization, how do I construct
+
+00:10:01.326 --> 00:10:02.036 A:middle
+my lookup table?
+
+00:10:03.076 --> 00:10:04.426 A:middle
+I'm here to tell you that you
+
+00:10:04.426 --> 00:10:05.946 A:middle
+don't have to worry about any of
+
+00:10:05.986 --> 00:10:06.236 A:middle
+that.
+
+00:10:06.986 --> 00:10:08.536 A:middle
+All you do is decide on the
+
+00:10:08.536 --> 00:10:09.546 A:middle
+number of bits you want to
+
+00:10:09.546 --> 00:10:10.596 A:middle
+quantize your model to.
+
+00:10:10.876 --> 00:10:11.926 A:middle
+And decide on the algorithm you
+
+00:10:11.926 --> 00:10:13.706 A:middle
+want to use, and let Core ML
+
+00:10:13.706 --> 00:10:15.166 A:middle
+Tools do the rest.
+
+00:10:16.106 --> 00:10:16.576 A:middle
+In fact --
+
+00:10:17.516 --> 00:10:22.216 A:middle
+[ Applause ]
+
+00:10:22.716 --> 00:10:24.756 A:middle
+In fact, it's so simple to take
+
+00:10:24.756 --> 00:10:26.186 A:middle
+a Core ML neural network model.
+
+00:10:26.286 --> 00:10:27.036 A:middle
+And quantize it.
+
+00:10:27.446 --> 00:10:29.116 A:middle
+Then we can do it in a few lines
+
+00:10:29.116 --> 00:10:29.806 A:middle
+of Python code.
+
+00:10:29.996 --> 00:10:31.286 A:middle
+But why stand here and talk
+
+00:10:31.286 --> 00:10:32.396 A:middle
+about it when we can show you a
+
+00:10:32.396 --> 00:10:32.676 A:middle
+demo?
+
+00:10:40.406 --> 00:10:42.296 A:middle
+So for the purposes of this
+
+00:10:42.296 --> 00:10:44.346 A:middle
+demo, I'm going to need a neural
+
+00:10:44.346 --> 00:10:45.596 A:middle
+network in the Core ML model
+
+00:10:45.596 --> 00:10:46.026 A:middle
+format.
+
+00:10:46.706 --> 00:10:47.846 A:middle
+Now, as my colleague Aseem
+
+00:10:47.846 --> 00:10:49.376 A:middle
+mentioned, a great place to find
+
+00:10:49.376 --> 00:10:50.686 A:middle
+these models is on the Core ML
+
+00:10:50.686 --> 00:10:51.716 A:middle
+machine learning home page.
+
+00:10:52.056 --> 00:10:52.896 A:middle
+And I've gone ahead and
+
+00:10:52.896 --> 00:10:54.016 A:middle
+downloaded one of the models
+
+00:10:54.106 --> 00:10:54.846 A:middle
+from that page.
+
+00:10:55.306 --> 00:10:56.706 A:middle
+So this model's called
+
+00:10:56.706 --> 00:10:57.176 A:middle
+SqueezeNet.
+
+00:10:57.176 --> 00:10:58.146 A:middle
+And let's go ahead and open it
+
+00:10:58.146 --> 00:10:58.296 A:middle
+up.
+
+00:10:59.736 --> 00:11:02.356 A:middle
+As we can see, this model is 5
+

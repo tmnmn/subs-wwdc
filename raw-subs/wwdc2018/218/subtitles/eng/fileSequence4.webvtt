@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.046 --> 00:04:02.056 A:middle
+So, here's our beautiful
+
+00:04:02.356 --> 00:04:03.786 A:middle
+Chameleon Wrangler app that
+
+00:04:03.896 --> 00:04:06.916 A:middle
+Rachel and Taylor created in the
+
+00:04:06.916 --> 00:04:08.646 A:middle
+intro session and you can see
+
+00:04:08.776 --> 00:04:10.096 A:middle
+once we linked it on the macOS
+
+00:04:10.096 --> 00:04:13.046 A:middle
+10.14 SDK, AppKit went ahead and
+
+00:04:13.106 --> 00:04:14.506 A:middle
+automatically gave it the
+
+00:04:14.506 --> 00:04:15.526 A:middle
+darkAqua appearance.
+
+00:04:16.676 --> 00:04:18.196 A:middle
+Now, that's great, but what if
+
+00:04:18.196 --> 00:04:19.315 A:middle
+we want to change the
+
+00:04:19.315 --> 00:04:20.005 A:middle
+appearance?
+
+00:04:20.296 --> 00:04:22.106 A:middle
+For example, what if we wanted
+
+00:04:22.676 --> 00:04:25.266 A:middle
+to change the appearance of this
+
+00:04:25.266 --> 00:04:25.986 A:middle
+notes view?
+
+00:04:26.736 --> 00:04:29.136 A:middle
+We might think that in the dark
+
+00:04:29.136 --> 00:04:30.946 A:middle
+appearance we still might want
+
+00:04:30.946 --> 00:04:32.636 A:middle
+the notes view to appear light.
+
+00:04:33.856 --> 00:04:35.626 A:middle
+Well, you can do that using
+
+00:04:35.626 --> 00:04:37.146 A:middle
+something called
+
+00:04:37.146 --> 00:04:38.786 A:middle
+NSAppearanceCustomization.
+
+00:04:39.626 --> 00:04:41.026 A:middle
+Now, this is a protocol, but
+
+00:04:41.026 --> 00:04:42.386 A:middle
+it's not a protocol you have to
+
+00:04:42.386 --> 00:04:43.616 A:middle
+go off and adopt in your
+
+00:04:43.616 --> 00:04:44.376 A:middle
+applications.
+
+00:04:45.266 --> 00:04:47.486 A:middle
+It's already adopted by NSView
+
+00:04:47.786 --> 00:04:50.226 A:middle
+and NSWindow and, in Mojave,
+
+00:04:50.226 --> 00:04:52.116 A:middle
+NSApplication conforms as well.
+
+00:04:53.086 --> 00:04:54.556 A:middle
+It's a pretty simple protocol.
+
+00:04:54.706 --> 00:04:55.956 A:middle
+It just adds two properties.
+
+00:04:56.466 --> 00:04:58.946 A:middle
+First property is appearance and
+
+00:04:58.946 --> 00:05:00.336 A:middle
+this is where you can override
+

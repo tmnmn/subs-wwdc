@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.696 --> 00:25:00.906 A:middle
+the screen so the viewers could
+
+00:25:01.276 --> 00:25:03.726 A:middle
+find your broadcast.
+
+00:25:05.016 --> 00:25:06.896 A:middle
+And so just one more point I
+
+00:25:06.896 --> 00:25:08.476 A:middle
+would like to discuss today.
+
+00:25:10.136 --> 00:25:12.726 A:middle
+This is protecting content of
+
+00:25:12.726 --> 00:25:13.546 A:middle
+your applications.
+
+00:25:14.816 --> 00:25:17.116 A:middle
+So your app may display some
+
+00:25:17.286 --> 00:25:18.736 A:middle
+content that you don't want to
+
+00:25:18.736 --> 00:25:21.526 A:middle
+be captured in screen recording
+
+00:25:21.646 --> 00:25:23.076 A:middle
+or live broadcasts.
+
+00:25:24.186 --> 00:25:26.436 A:middle
+That applies to both audio and
+
+00:25:26.436 --> 00:25:28.296 A:middle
+visual content.
+
+00:25:29.716 --> 00:25:31.616 A:middle
+There's an API that you can use
+
+00:25:31.616 --> 00:25:33.796 A:middle
+to tell if your content is being
+
+00:25:33.796 --> 00:25:35.926 A:middle
+captured and that API is
+
+00:25:35.926 --> 00:25:38.926 A:middle
+provided UIKit framework and I'm
+
+00:25:38.926 --> 00:25:40.476 A:middle
+talking about the property of
+
+00:25:40.506 --> 00:25:42.706 A:middle
+UIScreen called Captured.
+
+00:25:43.096 --> 00:25:45.496 A:middle
+So you can register to receive
+
+00:25:45.496 --> 00:25:47.416 A:middle
+notifications whenever the value
+
+00:25:47.416 --> 00:25:50.056 A:middle
+of this property is changed and
+
+00:25:50.226 --> 00:25:52.166 A:middle
+stop your audio playback or hide
+
+00:25:52.166 --> 00:25:54.796 A:middle
+the visual content when
+
+00:25:54.796 --> 00:25:55.606 A:middle
+recording starts.
+
+00:25:56.796 --> 00:25:58.726 A:middle
+There's also a special case that
+
+00:25:58.726 --> 00:26:00.556 A:middle
+you need to take care of, which
+

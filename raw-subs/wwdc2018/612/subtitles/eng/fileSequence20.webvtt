@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.176 --> 00:20:00.866 A:middle
+work of the CPUs so we can run
+
+00:20:00.866 --> 00:20:01.316 A:middle
+instead.
+
+00:20:02.616 --> 00:20:04.316 A:middle
+The user does not see the
+
+00:20:04.316 --> 00:20:04.826 A:middle
+stutter.
+
+00:20:05.436 --> 00:20:07.656 A:middle
+Your game can run at 30 solid
+
+00:20:07.656 --> 00:20:09.766 A:middle
+frames per second, even though
+
+00:20:09.766 --> 00:20:11.216 A:middle
+the system is under heavy load.
+
+00:20:11.976 --> 00:20:13.646 A:middle
+That is technically awesome, and
+
+00:20:13.646 --> 00:20:14.586 A:middle
+that's what this is all about.
+
+00:20:15.176 --> 00:20:16.386 A:middle
+So let's see how we make this
+
+00:20:16.386 --> 00:20:19.006 A:middle
+happen with a little bit of
+
+00:20:19.756 --> 00:20:19.866 A:middle
+code.
+
+00:20:20.076 --> 00:20:21.946 A:middle
+And it literally is a little bit
+
+00:20:21.946 --> 00:20:22.326 A:middle
+of code.
+
+00:20:22.556 --> 00:20:23.766 A:middle
+It is only like a couple lines.
+
+00:20:24.826 --> 00:20:27.386 A:middle
+In this case, it's just about
+
+00:20:27.416 --> 00:20:28.396 A:middle
+configuring the pthread
+
+00:20:28.396 --> 00:20:30.616 A:middle
+attributes before we can create
+
+00:20:30.616 --> 00:20:31.116 A:middle
+the pthread.
+
+00:20:32.266 --> 00:20:33.826 A:middle
+We need to opt out of quality of
+
+00:20:33.826 --> 00:20:36.716 A:middle
+service, set the priority to 45.
+
+00:20:38.086 --> 00:20:38.576 A:middle
+And that's it.
+
+00:20:38.676 --> 00:20:39.966 A:middle
+We can create the pthread with
+
+00:20:39.966 --> 00:20:41.586 A:middle
+those attributes, and it will
+
+00:20:41.586 --> 00:20:42.366 A:middle
+work just fine.
+
+00:20:43.206 --> 00:20:44.836 A:middle
+It is simple and technically
+
+00:20:44.836 --> 00:20:45.236 A:middle
+awesome.
+
+00:20:45.786 --> 00:20:49.906 A:middle
+What's not so simple though is
+
+00:20:49.906 --> 00:20:51.256 A:middle
+the next issue on our list.
+
+00:20:52.636 --> 00:20:54.106 A:middle
+That about dealing with multiple
+
+00:20:54.106 --> 00:20:55.456 A:middle
+thermal states.
+
+00:20:56.036 --> 00:20:57.766 A:middle
+The message is very clear.
+
+00:20:59.166 --> 00:21:00.896 A:middle
+Design for sustained performance
+

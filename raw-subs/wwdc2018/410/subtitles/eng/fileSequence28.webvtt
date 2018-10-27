@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.256 --> 00:28:00.996 A:middle
+And size is set to the image
+
+00:28:01.656 --> 00:28:01.786 A:middle
+size.
+
+00:28:02.236 --> 00:28:04.456 A:middle
+Next let's take a look at our
+
+00:28:04.456 --> 00:28:06.166 A:middle
+prepare for use overwrite.
+
+00:28:06.766 --> 00:28:09.546 A:middle
+When there's running downloader
+
+00:28:09.546 --> 00:28:11.116 A:middle
+in progress, we cancel it.
+
+00:28:12.126 --> 00:28:14.076 A:middle
+We create signpost ID and call
+
+00:28:14.076 --> 00:28:16.006 A:middle
+our signpost end with the same
+
+00:28:16.006 --> 00:28:18.016 A:middle
+format string but now value is
+
+00:28:18.016 --> 00:28:20.496 A:middle
+canceled and size is zero
+
+00:28:20.496 --> 00:28:21.896 A:middle
+because download didn't succeed.
+
+00:28:22.406 --> 00:28:25.446 A:middle
+Let's take a look at our os
+
+00:28:25.446 --> 00:28:26.786 A:middle
+signpost interval schema
+
+00:28:26.786 --> 00:28:28.326 A:middle
+definition and how we captured
+
+00:28:28.376 --> 00:28:30.386 A:middle
+those signpost end package.
+
+00:28:32.456 --> 00:28:34.456 A:middle
+We define our signpost interval
+
+00:28:34.456 --> 00:28:36.306 A:middle
+schema with unique identifier
+
+00:28:36.306 --> 00:28:36.936 A:middle
+and title.
+
+00:28:37.686 --> 00:28:40.306 A:middle
+Then we define our subsystem and
+
+00:28:40.306 --> 00:28:41.856 A:middle
+category, which corresponds to
+
+00:28:41.856 --> 00:28:43.326 A:middle
+the one that we passed when
+
+00:28:43.326 --> 00:28:44.596 A:middle
+creating os log handle.
+
+00:28:46.816 --> 00:28:49.346 A:middle
+We create name element, which
+
+00:28:49.346 --> 00:28:50.846 A:middle
+corresponds to the one that we
+
+00:28:50.846 --> 00:28:53.646 A:middle
+passed in os signpost call and
+
+00:28:54.016 --> 00:28:56.156 A:middle
+start pattern and end pattern.
+
+00:28:56.736 --> 00:28:58.496 A:middle
+These both correspond to the one
+
+00:28:58.656 --> 00:29:00.296 A:middle
+that we passed in os signpost
+

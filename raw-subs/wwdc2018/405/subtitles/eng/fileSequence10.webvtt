@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.776 --> 00:10:00.666 A:middle
+worked on, the element.
+
+00:10:01.116 --> 00:10:03.436 A:middle
+And then I simply pass those
+
+00:10:03.436 --> 00:10:06.226 A:middle
+signpost IDs into the call sites
+
+00:10:06.676 --> 00:10:07.126 A:middle
+and we're done.
+
+00:10:07.876 --> 00:10:10.706 A:middle
+You can think of signpost as
+
+00:10:10.706 --> 00:10:12.146 A:middle
+being organized as a kind of
+
+00:10:12.146 --> 00:10:13.846 A:middle
+classification or hierarchy.
+
+00:10:14.336 --> 00:10:14.566 A:middle
+Right.
+
+00:10:15.066 --> 00:10:16.616 A:middle
+All these operations are related
+
+00:10:16.616 --> 00:10:17.936 A:middle
+together by the log handle
+
+00:10:18.036 --> 00:10:19.396 A:middle
+meaning that log category.
+
+00:10:20.106 --> 00:10:21.456 A:middle
+And then for each operation that
+
+00:10:21.456 --> 00:10:22.706 A:middle
+we're interested in, we've given
+
+00:10:22.706 --> 00:10:23.616 A:middle
+it a signpost name.
+
+00:10:25.096 --> 00:10:26.786 A:middle
+Then because those signposts
+
+00:10:26.986 --> 00:10:28.256 A:middle
+could overlap with each other,
+
+00:10:28.256 --> 00:10:29.626 A:middle
+we've given them that signpost
+
+00:10:29.626 --> 00:10:32.016 A:middle
+ID that tells the system that
+
+00:10:32.016 --> 00:10:34.656 A:middle
+that's a specific instance of
+
+00:10:34.656 --> 00:10:35.136 A:middle
+that interval.
+
+00:10:36.596 --> 00:10:39.396 A:middle
+This interface was built
+
+00:10:39.666 --> 00:10:42.836 A:middle
+specifically to be flexible so
+
+00:10:42.836 --> 00:10:44.196 A:middle
+you control all the arguments
+
+00:10:44.196 --> 00:10:45.996 A:middle
+into your begin site and your
+
+00:10:45.996 --> 00:10:46.416 A:middle
+end site.
+
+00:10:46.416 --> 00:10:47.956 A:middle
+You control that signpost name,
+
+00:10:47.956 --> 00:10:49.466 A:middle
+the log handle you give it, and
+
+00:10:50.616 --> 00:10:51.036 A:middle
+the ID.
+
+00:10:51.036 --> 00:10:52.276 A:middle
+We've done this because as long
+
+00:10:52.276 --> 00:10:53.966 A:middle
+as you can give the same
+
+00:10:54.126 --> 00:10:55.656 A:middle
+arguments at the begin site and
+
+00:10:55.656 --> 00:10:57.406 A:middle
+the end site, those two
+
+00:10:57.406 --> 00:10:58.756 A:middle
+signposts will get matched with
+
+00:10:58.756 --> 00:10:59.126 A:middle
+each other.
+
+00:10:59.526 --> 00:11:00.576 A:middle
+That means your begin and end
+

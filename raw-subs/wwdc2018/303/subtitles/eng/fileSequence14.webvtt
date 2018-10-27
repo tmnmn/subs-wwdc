@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.376 --> 00:14:01.376 A:middle
+sending DELETE request to self
+
+00:14:01.376 --> 00:14:02.276 A:middle
+link of this user.
+
+00:14:03.416 --> 00:14:05.496 A:middle
+So we'll replace GET with
+
+00:14:05.496 --> 00:14:05.886 A:middle
+DELETE.
+
+00:14:07.116 --> 00:14:08.526 A:middle
+And this should remove the user
+
+00:14:08.526 --> 00:14:09.386 A:middle
+with the matching ID.
+
+00:14:09.996 --> 00:14:14.816 A:middle
+And we get a 204, which means
+
+00:14:14.816 --> 00:14:16.326 A:middle
+the deletion was successful and
+
+00:14:16.356 --> 00:14:18.056 A:middle
+NO CONTENT since the content of
+
+00:14:18.056 --> 00:14:19.636 A:middle
+user is no longer available.
+
+00:14:20.276 --> 00:14:21.786 A:middle
+Finally, let's confirm that the
+
+00:14:21.786 --> 00:14:23.376 A:middle
+user is indeed removed by
+
+00:14:23.376 --> 00:14:24.756 A:middle
+sending GET request to the self
+
+00:14:24.756 --> 00:14:25.536 A:middle
+link once again.
+
+00:14:25.536 --> 00:14:29.306 A:middle
+And now we get 404 NOT FOUND and
+
+00:14:29.306 --> 00:14:30.926 A:middle
+it looks like the user is indeed
+
+00:14:30.926 --> 00:14:31.286 A:middle
+removed.
+
+00:14:31.826 --> 00:14:35.926 A:middle
+So in this demo, we saw how to
+
+00:14:35.926 --> 00:14:37.616 A:middle
+get collections of user, how to
+
+00:14:37.616 --> 00:14:40.116 A:middle
+find instance of user, how to
+
+00:14:40.116 --> 00:14:41.936 A:middle
+search user by applying filter,
+
+00:14:42.416 --> 00:14:43.886 A:middle
+and how to remove user by
+
+00:14:44.096 --> 00:14:44.956 A:middle
+sending DELETE request.
+
+00:14:45.796 --> 00:14:47.136 A:middle
+And this concludes the demo on
+
+00:14:47.136 --> 00:14:48.226 A:middle
+how to use App Source Connect
+
+00:14:48.226 --> 00:14:49.986 A:middle
+API with the users resource.
+
+00:14:50.456 --> 00:14:51.626 A:middle
+And I'll give the stage back to
+
+00:14:51.626 --> 00:14:51.796 A:middle
+Geoff.
+
+00:14:51.796 --> 00:14:51.976 A:middle
+Thank you.
+
+00:14:52.516 --> 00:14:58.746 A:middle
+[ Applause ]
+
+00:14:59.246 --> 00:15:02.296 A:middle
+&gt;&gt; Thanks, Sehoon.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.186 --> 00:12:00.616 A:middle
+a policy for your page, like
+
+00:12:00.616 --> 00:12:02.596 A:middle
+what should be allowed here, and
+
+00:12:02.626 --> 00:12:03.876 A:middle
+I actually think of it as an
+
+00:12:03.946 --> 00:12:05.176 A:middle
+architecture policy.
+
+00:12:05.176 --> 00:12:06.856 A:middle
+If you're a software engineer,
+
+00:12:07.336 --> 00:12:08.286 A:middle
+you want to keep track of your
+
+00:12:08.286 --> 00:12:09.326 A:middle
+dependencies.
+
+00:12:09.326 --> 00:12:10.736 A:middle
+What am I allowed to do here?
+
+00:12:10.736 --> 00:12:12.306 A:middle
+Who-- what can I load and what
+
+00:12:12.346 --> 00:12:13.106 A:middle
+can't I load?
+
+00:12:14.586 --> 00:12:16.576 A:middle
+So, this is again an HTTP
+
+00:12:16.576 --> 00:12:17.766 A:middle
+response header.
+
+00:12:18.116 --> 00:12:19.386 A:middle
+So, when you're sending out a
+
+00:12:19.446 --> 00:12:21.636 A:middle
+page from your server, you add
+
+00:12:21.726 --> 00:12:23.356 A:middle
+this header to the response,
+
+00:12:23.356 --> 00:12:24.936 A:middle
+saying, hey, I'm going to run
+
+00:12:24.936 --> 00:12:26.496 A:middle
+with a content security policy.
+
+00:12:26.826 --> 00:12:28.376 A:middle
+I'm going to be in control of
+
+00:12:28.376 --> 00:12:29.736 A:middle
+the content on my page.
+
+00:12:30.626 --> 00:12:32.476 A:middle
+Then you start out by saying the
+
+00:12:32.626 --> 00:12:35.286 A:middle
+default source for loading any
+
+00:12:35.286 --> 00:12:36.856 A:middle
+kind of content from remote
+
+00:12:36.856 --> 00:12:38.956 A:middle
+servers is myself.
+
+00:12:39.476 --> 00:12:41.796 A:middle
+Only load from my server by
+
+00:12:41.796 --> 00:12:42.306 A:middle
+default.
+
+00:12:42.976 --> 00:12:44.466 A:middle
+Now you've locked it down
+
+00:12:44.466 --> 00:12:46.866 A:middle
+completely and if there is any
+
+00:12:46.866 --> 00:12:48.456 A:middle
+kind of content load in the page
+
+00:12:48.456 --> 00:12:49.956 A:middle
+trying to pull something in from
+
+00:12:49.956 --> 00:12:51.816 A:middle
+a server that's not yours, it
+
+00:12:51.816 --> 00:12:53.576 A:middle
+will just be denied because
+
+00:12:53.576 --> 00:12:56.136 A:middle
+WebKit will deny that because it
+
+00:12:56.136 --> 00:12:58.146 A:middle
+doesn't match the policy you've
+
+00:12:58.146 --> 00:12:58.426 A:middle
+set.
+
+00:12:59.716 --> 00:13:00.636 A:middle
+And, as you see, I made a
+

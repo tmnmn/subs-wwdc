@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.876 --> 00:10:01.596 A:middle
+inside of the safe area because
+
+00:10:01.596 --> 00:10:02.556 A:middle
+they represent additional
+
+00:10:02.556 --> 00:10:04.076 A:middle
+padding against the layout that
+
+00:10:04.076 --> 00:10:04.616 A:middle
+you want to do.
+
+00:10:05.996 --> 00:10:08.566 A:middle
+But we thought to ourselves,
+
+00:10:09.006 --> 00:10:10.036 A:middle
+"Hey, some people may not
+
+00:10:10.036 --> 00:10:10.856 A:middle
+actually want this."
+
+00:10:11.436 --> 00:10:12.696 A:middle
+And so we made it very easy for
+
+00:10:12.696 --> 00:10:13.746 A:middle
+you to flip this default.
+
+00:10:14.276 --> 00:10:15.616 A:middle
+And so if you just change the
+
+00:10:15.616 --> 00:10:17.386 A:middle
+insets layout margins from safe
+
+00:10:17.386 --> 00:10:19.536 A:middle
+area property from true to
+
+00:10:19.536 --> 00:10:22.056 A:middle
+false, then we'll go ahead and
+
+00:10:22.056 --> 00:10:23.386 A:middle
+move layout margins back to the
+
+00:10:23.386 --> 00:10:24.136 A:middle
+bounds of the view.
+
+00:10:24.606 --> 00:10:26.216 A:middle
+As a [inaudible] instead of
+
+00:10:26.216 --> 00:10:27.656 A:middle
+being encapsulated inside.
+
+00:10:28.626 --> 00:10:29.366 A:middle
+So what else can you do with
+
+00:10:29.366 --> 00:10:29.926 A:middle
+layout margins?
+
+00:10:30.976 --> 00:10:33.006 A:middle
+Well, we already saw that by
+
+00:10:33.006 --> 00:10:34.936 A:middle
+default, safe area margins
+
+00:10:35.006 --> 00:10:36.276 A:middle
+propagate down the hierarchy.
+
+00:10:36.806 --> 00:10:39.346 A:middle
+But with layout margins, they go
+
+00:10:39.346 --> 00:10:39.926 A:middle
+by default.
+
+00:10:40.326 --> 00:10:41.626 A:middle
+Because by default, your layout
+
+00:10:41.626 --> 00:10:42.716 A:middle
+probably wants to be fairly
+
+00:10:42.716 --> 00:10:43.966 A:middle
+independent with margins as
+
+00:10:43.966 --> 00:10:45.136 A:middle
+opposed to safe area, which
+
+00:10:45.136 --> 00:10:47.286 A:middle
+represents a concept that really
+
+00:10:47.286 --> 00:10:48.086 A:middle
+is for the entire view
+
+00:10:48.086 --> 00:10:48.616 A:middle
+hierarchy.
+
+00:10:50.076 --> 00:10:51.416 A:middle
+But if you want to have
+
+00:10:51.416 --> 00:10:52.786 A:middle
+propagation, you can flip this
+
+00:10:52.786 --> 00:10:55.136 A:middle
+on view by view by changing
+
+00:10:55.136 --> 00:10:56.336 A:middle
+preserve super view layout
+
+00:10:56.336 --> 00:10:59.086 A:middle
+margins from false to true.
+
+00:10:59.326 --> 00:11:01.466 A:middle
+And we'll go ahead and line up
+

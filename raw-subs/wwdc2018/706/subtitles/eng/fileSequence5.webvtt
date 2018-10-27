@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:01.416 --> 00:05:02.746 A:middle
+If you're not familiar with
+
+00:05:02.746 --> 00:05:04.206 A:middle
+working with samples in
+
+00:05:04.206 --> 00:05:06.376 A:middle
+HealthKit we have a number of
+
+00:05:06.376 --> 00:05:08.006 A:middle
+talks that cover this topic and
+
+00:05:08.166 --> 00:05:10.236 A:middle
+I'll provide details of these at
+
+00:05:10.236 --> 00:05:11.026 A:middle
+the end.
+
+00:05:12.656 --> 00:05:14.636 A:middle
+There are a few key properties
+
+00:05:14.636 --> 00:05:16.066 A:middle
+you'll be working with on
+
+00:05:16.066 --> 00:05:17.426 A:middle
+HKClinicalRecord.
+
+00:05:18.016 --> 00:05:21.476 A:middle
+The clinical type, we looked at
+
+00:05:21.476 --> 00:05:23.466 A:middle
+this earlier and this allows you
+
+00:05:23.466 --> 00:05:25.996 A:middle
+to determine the type of a given
+
+00:05:26.196 --> 00:05:26.726 A:middle
+record.
+
+00:05:27.536 --> 00:05:29.936 A:middle
+I want to know that a health
+
+00:05:29.936 --> 00:05:31.146 A:middle
+record is for example an
+
+00:05:31.146 --> 00:05:31.936 A:middle
+immunization.
+
+00:05:32.426 --> 00:05:36.866 A:middle
+We provide a display name which
+
+00:05:36.866 --> 00:05:38.566 A:middle
+is a string that we use when
+
+00:05:38.566 --> 00:05:40.496 A:middle
+showing that health record to
+
+00:05:40.496 --> 00:05:41.446 A:middle
+users in Health.
+
+00:05:42.226 --> 00:05:43.976 A:middle
+It's selected from the FHIR
+
+00:05:43.976 --> 00:05:45.466 A:middle
+resource and it's your
+
+00:05:45.466 --> 00:05:47.006 A:middle
+opportunity to tie back your
+
+00:05:47.006 --> 00:05:48.876 A:middle
+app's experience to something
+
+00:05:48.876 --> 00:05:50.086 A:middle
+users are familiar with.
+
+00:05:52.696 --> 00:05:54.616 A:middle
+You can see in this lab result
+
+00:05:55.576 --> 00:05:56.556 A:middle
+that there are a number of
+
+00:05:56.556 --> 00:05:58.776 A:middle
+alternative representations and
+
+00:05:58.776 --> 00:06:02.296 A:middle
+names, including a coding in the
+

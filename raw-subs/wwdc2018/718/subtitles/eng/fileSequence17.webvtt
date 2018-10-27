@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.056 --> 00:17:01.396 A:middle
+specific, provide an example.
+
+00:17:01.916 --> 00:17:04.326 A:middle
+Some additional guidelines to
+
+00:17:04.326 --> 00:17:05.276 A:middle
+remember when you're working
+
+00:17:05.276 --> 00:17:06.736 A:middle
+with protected resources on a
+
+00:17:06.736 --> 00:17:07.266 A:middle
+device.
+
+00:17:08.076 --> 00:17:09.596 A:middle
+Access should not be required
+
+00:17:09.596 --> 00:17:10.915 A:middle
+for your app to function.
+
+00:17:11.596 --> 00:17:12.715 A:middle
+Again, this can lead to
+
+00:17:12.715 --> 00:17:14.556 A:middle
+rejections in the app review
+
+00:17:14.556 --> 00:17:15.326 A:middle
+process.
+
+00:17:16.435 --> 00:17:17.856 A:middle
+Your app should have graceful
+
+00:17:17.856 --> 00:17:19.925 A:middle
+fallback mechanisms so that even
+
+00:17:19.925 --> 00:17:21.465 A:middle
+if a user declines access, it
+
+00:17:21.465 --> 00:17:22.465 A:middle
+still functions.
+
+00:17:23.056 --> 00:17:24.356 A:middle
+For example, with that transit
+
+00:17:24.356 --> 00:17:26.266 A:middle
+app, if the user denies location
+
+00:17:26.266 --> 00:17:27.906 A:middle
+access, you can have a field
+
+00:17:27.906 --> 00:17:29.026 A:middle
+where they can enter location
+
+00:17:29.026 --> 00:17:30.786 A:middle
+manually and use that instead.
+
+00:17:31.986 --> 00:17:33.586 A:middle
+Again, you want to verify the
+
+00:17:33.586 --> 00:17:35.176 A:middle
+authorization status of your app
+
+00:17:35.316 --> 00:17:37.046 A:middle
+whenever it needs this data to
+
+00:17:37.046 --> 00:17:38.776 A:middle
+make sure that the user still is
+
+00:17:38.776 --> 00:17:41.106 A:middle
+getting access, and stay aware
+
+00:17:41.106 --> 00:17:43.006 A:middle
+of third-part STKs.
+
+00:17:43.566 --> 00:17:45.136 A:middle
+Again, requesting access should
+
+00:17:45.136 --> 00:17:46.546 A:middle
+only be for the use cases of
+
+00:17:46.546 --> 00:17:48.336 A:middle
+your app, and if you're
+
+00:17:48.336 --> 00:17:49.656 A:middle
+including libraries that change
+
+00:17:49.656 --> 00:17:50.726 A:middle
+that or tell you to set purpose
+
+00:17:50.726 --> 00:17:52.226 A:middle
+strings, you should probably
+
+00:17:52.226 --> 00:17:53.686 A:middle
+look for a different solution or
+
+00:17:53.686 --> 00:17:55.026 A:middle
+update your code.
+
+00:17:55.566 --> 00:17:56.886 A:middle
+Finally, you want to provide
+
+00:17:56.886 --> 00:17:58.106 A:middle
+ongoing transparency.
+
+00:17:58.106 --> 00:17:59.326 A:middle
+Again, this should not be the
+
+00:17:59.326 --> 00:18:00.736 A:middle
+only time that a user gets to
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.086 --> 00:16:03.266 A:middle
+Next, we're going to look at
+
+00:16:03.366 --> 00:16:04.646 A:middle
+dependencies and versioning.
+
+00:16:07.916 --> 00:16:10.006 A:middle
+To make sure your packages can
+
+00:16:10.006 --> 00:16:12.116 A:middle
+benefit from bug fixes without
+
+00:16:12.116 --> 00:16:14.136 A:middle
+constant churn, Swift packages
+
+00:16:14.356 --> 00:16:15.856 A:middle
+should adhere to semantic
+
+00:16:15.856 --> 00:16:16.306 A:middle
+versioning.
+
+00:16:17.606 --> 00:16:19.186 A:middle
+This is a commonly used standard
+
+00:16:19.346 --> 00:16:20.656 A:middle
+which assign specific semantic
+
+00:16:20.656 --> 00:16:22.246 A:middle
+meaning to each of a version
+
+00:16:22.246 --> 00:16:23.246 A:middle
+number's components.
+
+00:16:25.376 --> 00:16:27.236 A:middle
+The major version signifies
+
+00:16:27.276 --> 00:16:29.996 A:middle
+breaking changes which required
+
+00:16:30.146 --> 00:16:31.936 A:middle
+clients to update their code.
+
+00:16:33.196 --> 00:16:34.756 A:middle
+Examples for the changes could
+
+00:16:34.756 --> 00:16:36.516 A:middle
+be deleting an existing type,
+
+00:16:36.996 --> 00:16:38.566 A:middle
+deleting a message, or changing
+
+00:16:38.566 --> 00:16:39.236 A:middle
+its signature.
+
+00:16:40.166 --> 00:16:42.066 A:middle
+But they also include backwards
+
+00:16:42.066 --> 00:16:45.296 A:middle
+incompatible bug fixes, or major
+
+00:16:45.296 --> 00:16:48.366 A:middle
+changes to the behavior of
+
+00:16:48.366 --> 00:16:50.066 A:middle
+existing API.
+
+00:16:50.896 --> 00:16:52.406 A:middle
+The minor version should be
+
+00:16:52.406 --> 00:16:53.946 A:middle
+updated if functionality is
+
+00:16:53.946 --> 00:16:55.646 A:middle
+added in a backwards compatible
+
+00:16:55.646 --> 00:16:56.006 A:middle
+manner.
+
+00:16:57.046 --> 00:16:58.456 A:middle
+Examples for this is adding a
+
+00:16:58.456 --> 00:17:00.106 A:middle
+new method or type.
+

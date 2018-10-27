@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.746 --> 00:08:02.950 align:start position:18% line:-1
+iOS 11のCore MLの場合は
+
+00:08:03.450 --> 00:08:08.288 align:start position:23% line:-2
+浮動小数点数を用い
+32ビットで格納されていました
+
+00:08:09.923 --> 00:08:11.625 align:start position:32% line:-1
+iOS 11.2では
+
+00:08:11.959 --> 00:08:16.463 align:start position:30% line:-2
+フィードバックをもとに
+16ビットになりました
+
+00:08:16.697 --> 00:08:22.002 align:start position:25% line:-2
+同じ精度で必要なストレージは
+半分になりました
+
+00:08:22.202 --> 00:08:25.305 align:start position:25% line:-1
+今年 新たに導入を試みたのは
+
+00:08:25.572 --> 00:08:27.841 align:start position:29% line:-1
+量子化(quantized)されたウェイトです
+
+00:08:28.542 --> 00:08:33.947 align:start position:18% line:-2
+量子化の末に
+32や16という制限はなくなりました
+
+00:08:34.114 --> 00:08:38.318 align:start position:27% line:-2
+ニューラルネットワークは
+８ビットや４ビットも可能で
+
+00:08:38.519 --> 00:08:41.121 align:start position:29% line:-1
+１ビットまで下げられます
+
+00:08:42.155 --> 00:08:45.626 align:start position:27% line:-1
+それでは量子化を見ましょう
+
+00:08:46.293 --> 00:08:50.330 align:start position:23% line:-2
+ニューラルネットワークに
+ウェイトのサブセットがあります
+
+00:08:50.531 --> 00:08:55.002 align:start position:29% line:-2
+ウェイトは連続した範囲で
+任意の値を取ります
+
+00:08:55.536 --> 00:09:00.941 align:start position:27% line:-2
+単一のウェイトが
+どのような値でも持てるのです
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.406 --> 00:07:02.336 A:middle
+Now, this target actually exists
+
+00:07:02.336 --> 00:07:03.256 A:middle
+in a different project.
+
+00:07:03.846 --> 00:07:05.626 A:middle
+And if you would like to make a
+
+00:07:05.626 --> 00:07:06.826 A:middle
+reference to that project you
+
+00:07:06.826 --> 00:07:08.376 A:middle
+can do so by dragging the
+
+00:07:08.376 --> 00:07:10.266 A:middle
+project as a child of the
+
+00:07:10.266 --> 00:07:11.346 A:middle
+current project you're working
+
+00:07:11.346 --> 00:07:11.526 A:middle
+in.
+
+00:07:11.526 --> 00:07:13.776 A:middle
+So I want to walk through the
+
+00:07:13.776 --> 00:07:14.806 A:middle
+rest of the dependencies of our
+
+00:07:14.806 --> 00:07:15.276 A:middle
+project.
+
+00:07:16.576 --> 00:07:17.916 A:middle
+Our Shaders target has a
+
+00:07:17.916 --> 00:07:19.196 A:middle
+dependency on our Utilities
+
+00:07:19.196 --> 00:07:19.506 A:middle
+target.
+
+00:07:20.886 --> 00:07:22.196 A:middle
+Our Utilities target has a
+
+00:07:22.196 --> 00:07:23.806 A:middle
+dependency on our Physics
+
+00:07:23.806 --> 00:07:24.106 A:middle
+target.
+
+00:07:25.146 --> 00:07:27.206 A:middle
+And lastly, our Tests have a
+
+00:07:27.206 --> 00:07:30.516 A:middle
+dependency on our Shaders and
+
+00:07:30.516 --> 00:07:31.676 A:middle
+our Utilities targets.
+
+00:07:32.616 --> 00:07:33.206 A:middle
+So now that we have an
+
+00:07:33.206 --> 00:07:34.296 A:middle
+understanding of the
+
+00:07:34.296 --> 00:07:35.806 A:middle
+configuration of our project,
+
+00:07:35.806 --> 00:07:37.266 A:middle
+let's look at the steps that are
+
+00:07:37.266 --> 00:07:38.996 A:middle
+necessary to turn this
+
+00:07:38.996 --> 00:07:41.106 A:middle
+serialized build process into
+
+00:07:41.446 --> 00:07:43.106 A:middle
+one that we can build more in
+
+00:07:43.106 --> 00:07:43.556 A:middle
+parallel.
+
+00:07:44.136 --> 00:07:45.286 A:middle
+And we're going to start by
+
+00:07:45.286 --> 00:07:46.136 A:middle
+looking at our test
+
+00:07:46.136 --> 00:07:46.746 A:middle
+dependencies.
+
+00:07:48.876 --> 00:07:50.566 A:middle
+Now, I've broken down the
+
+00:07:50.566 --> 00:07:51.556 A:middle
+dependencies into three
+
+00:07:51.556 --> 00:07:52.366 A:middle
+different classes of
+
+00:07:52.366 --> 00:07:53.556 A:middle
+dependencies that I want to talk
+
+00:07:53.556 --> 00:07:53.896 A:middle
+about.
+
+00:07:54.466 --> 00:07:55.866 A:middle
+This first dependency is the
+
+00:07:55.866 --> 00:07:57.366 A:middle
+dependency that I call the "Do
+
+00:07:57.366 --> 00:07:58.646 A:middle
+Everything" dependency.
+
+00:07:59.316 --> 00:08:00.566 A:middle
+Right? It should a little bit
+

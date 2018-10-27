@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.456 --> 00:03:00.876 A:middle
+making security decisions for
+
+00:03:00.876 --> 00:03:02.346 A:middle
+their self - for themselves.
+
+00:03:03.146 --> 00:03:04.726 A:middle
+We deliberately captured those
+
+00:03:04.726 --> 00:03:07.556 A:middle
+decisions, either via the user
+
+00:03:07.556 --> 00:03:09.536 A:middle
+intent using the mechanisms like
+
+00:03:09.536 --> 00:03:11.206 A:middle
+the open/save dialogs or
+
+00:03:11.206 --> 00:03:13.606 A:middle
+drag-and-drop operations -- or
+
+00:03:13.996 --> 00:03:15.946 A:middle
+by a user consent, with more
+
+00:03:15.946 --> 00:03:18.176 A:middle
+explicit authorization dialogs
+
+00:03:18.556 --> 00:03:20.246 A:middle
+or asking the user to make
+
+00:03:20.586 --> 00:03:22.296 A:middle
+security configuration changes
+
+00:03:22.366 --> 00:03:23.336 A:middle
+in System Preferences.
+
+00:03:23.756 --> 00:03:26.886 A:middle
+As such, it's critical for the
+
+00:03:26.886 --> 00:03:28.386 A:middle
+operating system to be able to
+
+00:03:28.386 --> 00:03:30.456 A:middle
+differentiate between the user
+
+00:03:30.706 --> 00:03:32.696 A:middle
+actually making these decisions
+
+00:03:33.646 --> 00:03:35.976 A:middle
+and software driving the UI on
+
+00:03:35.976 --> 00:03:36.416 A:middle
+their behalf.
+
+00:03:36.856 --> 00:03:39.346 A:middle
+In the past we have made a few
+
+00:03:39.426 --> 00:03:41.186 A:middle
+targeted enhancements to some of
+
+00:03:41.186 --> 00:03:43.176 A:middle
+the system authorization dialogs
+
+00:03:43.176 --> 00:03:43.996 A:middle
+to make sure that they can
+
+00:03:43.996 --> 00:03:46.446 A:middle
+detect and block these synthetic
+
+00:03:46.446 --> 00:03:46.856 A:middle
+events.
+
+00:03:47.926 --> 00:03:49.386 A:middle
+But these decision points have
+
+00:03:49.386 --> 00:03:51.456 A:middle
+become so pervasive across the
+
+00:03:51.456 --> 00:03:53.396 A:middle
+OS that we need a better model.
+
+00:03:53.916 --> 00:03:58.076 A:middle
+In macOS Mojave, the system will
+
+00:03:58.136 --> 00:04:00.216 A:middle
+only allow UI events to be
+

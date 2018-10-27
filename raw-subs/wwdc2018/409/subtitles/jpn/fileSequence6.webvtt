@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.426 --> 00:06:03.030 align:start position:11% line:-1
+自動でretainやreleaseを補います
+
+00:06:03.597 --> 00:06:06.600 align:start position:25% line:-1
+とても使いやすいコンパイラで
+
+00:06:06.900 --> 00:06:11.238 align:start position:27% line:-2
+スタック上の変数のメモリを
+適切に管理します
+
+00:06:11.772 --> 00:06:14.775 align:start position:30% line:-1
+また別の構造体の領域や
+
+00:06:14.875 --> 00:06:18.879 align:start position:23% line:-2
+Object-Cクラスの
+インスタンス変数にも対応します
+
+00:06:19.646 --> 00:06:23.684 align:start position:20% line:-2
+しかしARCオブジェクトポインタを
+適用するには
+
+00:06:23.784 --> 00:06:26.920 align:start position:25% line:-1
+多少 操作する場所があります
+
+00:06:27.788 --> 00:06:29.790 align:start position:36% line:-1
+それはヒープです
+
+00:06:30.557 --> 00:06:32.025 align:start position:36% line:-1
+構造体に戻ります
+
+00:06:32.125 --> 00:06:36.430 align:start position:27% line:-2
+ヒープにメニューアイテムを
+割り当てます
+
+00:06:36.763 --> 00:06:42.269 align:start position:18% line:-2
+Objective-Cを適用するなら
+NSArrayを使いますが
+
+00:06:42.503 --> 00:06:45.639 align:start position:16% line:-1
+今回はmallocとfreeを使います
+
+00:06:46.139 --> 00:06:49.343 align:start position:29% line:-1
+このコードの問題点は２つ
+
+00:06:49.977 --> 00:06:54.748 align:start position:27% line:-2
+１つ目はメモリの割り当て時
+０に初期化されず
+
+00:06:55.082 --> 00:06:58.385 align:start position:29% line:-1
+ポインタが無効化されます
+
+00:06:58.619 --> 00:07:03.590 align:start position:29% line:-2
+そのためプログラム実行時
+予想外の動作をします
+

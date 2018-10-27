@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.146 --> 00:15:01.656 A:middle
+UIView provides itself as a
+
+00:15:01.656 --> 00:15:02.546 A:middle
+coordinateSpace.
+
+00:15:03.026 --> 00:15:04.256 A:middle
+If your container is more
+
+00:15:04.256 --> 00:15:05.626 A:middle
+abstract, you may return an
+
+00:15:05.626 --> 00:15:07.676 A:middle
+existing coordinateSpace or
+
+00:15:07.676 --> 00:15:08.516 A:middle
+implement your own.
+
+00:15:09.926 --> 00:15:11.466 A:middle
+Next, you will need to implement
+
+00:15:11.466 --> 00:15:12.626 A:middle
+focusItems in rect.
+
+00:15:13.126 --> 00:15:14.686 A:middle
+This method must return any
+
+00:15:14.686 --> 00:15:16.496 A:middle
+contained focusItems whose
+
+00:15:16.596 --> 00:15:17.806 A:middle
+frames intersect with the
+
+00:15:17.806 --> 00:15:18.566 A:middle
+provided rect.
+
+00:15:19.126 --> 00:15:20.626 A:middle
+Note that the rect passed to
+
+00:15:20.626 --> 00:15:22.276 A:middle
+this method is expressed in the
+
+00:15:22.276 --> 00:15:23.306 A:middle
+coordinateSpace of the
+
+00:15:23.306 --> 00:15:25.756 A:middle
+container, and the frames of
+
+00:15:25.756 --> 00:15:27.506 A:middle
+each focusItem you return from
+
+00:15:27.506 --> 00:15:29.166 A:middle
+this method must also be
+
+00:15:29.166 --> 00:15:30.006 A:middle
+expressed in that
+
+00:15:30.006 --> 00:15:30.976 A:middle
+coordinateSpace.
+
+00:15:33.206 --> 00:15:35.126 A:middle
+Next, let's implement a custom
+
+00:15:35.126 --> 00:15:35.806 A:middle
+FocusItem.
+
+00:15:36.916 --> 00:15:38.246 A:middle
+Remember that this protocol
+
+00:15:38.246 --> 00:15:39.826 A:middle
+inherits from FocusEnvironment,
+
+00:15:39.826 --> 00:15:40.986 A:middle
+so you will need to implement
+
+00:15:40.986 --> 00:15:42.296 A:middle
+all of those methods as well.
+
+00:15:43.526 --> 00:15:45.196 A:middle
+In order for the focus engine to
+
+00:15:45.196 --> 00:15:47.216 A:middle
+move focus onto your item, it
+
+00:15:47.216 --> 00:15:48.586 A:middle
+must return "true" from
+
+00:15:48.586 --> 00:15:49.726 A:middle
+canBecomeFocused.
+
+00:15:51.066 --> 00:15:52.896 A:middle
+DidHintFocusMovement is an
+
+00:15:52.946 --> 00:15:54.606 A:middle
+optional method that is called
+
+00:15:54.606 --> 00:15:55.966 A:middle
+whenever the user moves their
+
+00:15:55.966 --> 00:15:57.606 A:middle
+finger on the touch surface of
+
+00:15:57.606 --> 00:15:58.406 A:middle
+the Siri remote.
+
+00:15:58.936 --> 00:16:01.486 A:middle
+It provides the focusItem with a
+

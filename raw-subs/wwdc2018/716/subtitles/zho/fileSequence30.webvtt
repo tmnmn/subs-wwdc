@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:01.168 --> 00:30:04.705 align:middle line:-2
+我启动了Xcode
+并将我的iPhone连接上它
+
+00:30:04.771 --> 00:30:07.941 align:middle line:-2
+它上面运行了
+我们刚看到的同一个app
+
+00:30:09.343 --> 00:30:10.978 align:middle line:-1
+我将在调试器中运行它
+
+00:30:16.583 --> 00:30:17.885 align:middle line:-1
+我要选择对象
+
+00:30:19.219 --> 00:30:20.821 align:middle line:-1
+我选择什么并不重要
+
+00:30:20.888 --> 00:30:22.623 align:middle line:-1
+因为我们只想查看序列
+
+00:30:23.323 --> 00:30:24.358 align:middle line:-1
+然后运行它
+
+00:30:26.727 --> 00:30:29.329 align:middle line:-1
+我在这里有一个断点
+
+00:30:29.396 --> 00:30:31.965 align:middle line:-1
+它在performTracking函数中中断
+
+00:30:32.032 --> 00:30:34.301 align:middle line:-1
+这是此app中最重要的函数
+
+00:30:34.601 --> 00:30:36.837 align:middle line:-1
+这是实现实际序列的函数
+
+00:30:38.438 --> 00:30:39.706 align:middle line:-1
+让我们看看这里做了什么
+
+00:30:40.340 --> 00:30:43.544 align:middle line:-2
+首先 我们创建了一个
+videoReader
+
+00:30:44.011 --> 00:30:46.780 align:middle line:-2
+然后我们读取第一帧
+并丢弃该帧
+
+00:30:46.847 --> 00:30:48.949 align:middle line:-1
+因为该帧用于选择对象
+
+00:30:50.284 --> 00:30:51.818 align:middle line:-1
+这里是取消标志
+
+00:30:52.753 --> 00:30:56.390 align:middle line:-2
+然后我将初始化
+inputObservations集合
+
+00:30:56.456 --> 00:30:58.425 align:middle line:-1
+记住我们在幻灯片中看到的例子
+

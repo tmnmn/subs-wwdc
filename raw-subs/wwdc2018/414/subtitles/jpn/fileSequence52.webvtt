@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:57.518 --> 00:52:00.788 align:start position:18% line:-1
+コードをqueue.syncに移すと
+
+00:52:00.888 --> 00:52:04.024 align:start position:23% line:-2
+ディスパッチキューの一部として
+実行されます
+
+00:52:04.324 --> 00:52:06.593 align:start position:29% line:-1
+これでスレッドセーフです
+
+00:52:06.693 --> 00:52:10.264 align:start position:27% line:-2
+ストレージに
+アクセスするコードは常に―
+
+00:52:10.364 --> 00:52:13.400 align:start position:23% line:-2
+シリアルディスパッチキュー内で
+実行されます
+
+00:52:13.500 --> 00:52:18.205 align:start position:25% line:-2
+一度に１つずつ実行されるので
+スレッドセーフです
+
+00:52:18.305 --> 00:52:22.943 align:start position:27% line:-2
+セッタのみに 同期を
+使いたくなるかもしれません
+
+00:52:23.043 --> 00:52:25.446 align:start position:32% line:-1
+ストレージを修正し―
+
+00:52:25.546 --> 00:52:28.115 align:start position:27% line:-1
+こうしてゲッタでは避けます
+
+00:52:28.515 --> 00:52:29.349 align:start position:39% line:-1
+でもダメです
+
+00:52:29.449 --> 00:52:32.453 align:start position:25% line:-1
+これでもメモリ破損は起きます
+
+00:52:32.553 --> 00:52:37.257 align:start position:23% line:-2
+このバージョンを
+シミュレータで試してみましょう
+
+00:52:37.357 --> 00:52:41.428 align:start position:27% line:-2
+Sanitizerは
+バグを発見できるでしょうか
+
+00:52:43.497 --> 00:52:45.132 align:start position:36% line:-1
+やはりできますね
+
+00:52:45.232 --> 00:52:49.870 align:start position:25% line:-2
+ゲッタとセッタの両方を
+同期で守らなくてはなりません
+
+00:52:49.970 --> 00:52:53.307 align:start position:20% line:-1
+最後にもう一度 Appを実行します
+
+00:52:53.407 --> 00:52:56.910 align:start position:27% line:-1
+レシピを追加してみましょう
+
+00:52:57.077 --> 00:52:58.779 align:start position:27% line:-1
+コントローラは正常にロード
+
+00:52:58.879 --> 00:53:02.716 align:start position:25% line:-2
+クラスはスレッドセーフなので
+警告も出ません
+

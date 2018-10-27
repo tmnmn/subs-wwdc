@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.198 --> 00:10:01.335 align:start position:29% line:-2
+まだなら
+その制約を１度設定します
+
+00:10:01.668 --> 00:10:03.971 align:start position:30% line:-1
+これでうまく機能します
+
+00:10:04.071 --> 00:10:05.539 align:start position:36% line:-1
+繰り返しますが―
+
+00:10:05.639 --> 00:10:09.643 align:start position:21% line:-2
+これがクライアントコードにおける
+一番の問題です
+
+00:10:09.743 --> 00:10:12.346 align:start position:29% line:-2
+不必要に
+制約を外したり戻すことを
+
+00:10:12.746 --> 00:10:15.048 align:start position:30% line:-1
+“衝突”と呼んでいます
+
+00:10:16.049 --> 00:10:17.618 align:start position:41% line:-1
+いいですね
+
+00:10:18.018 --> 00:10:19.786 align:start position:38% line:-1
+先に進む前に―
+
+00:10:19.887 --> 00:10:23.290 align:start position:23% line:-2
+Render Loopについて
+もう少し話します
+
+00:10:24.525 --> 00:10:27.728 align:start position:27% line:-1
+不必要な作業を避けたい時に
+
+00:10:27.828 --> 00:10:31.465 align:start position:18% line:-1
+Render Loopは大変便利です
+
+00:10:32.032 --> 00:10:33.467 align:start position:32% line:-1
+一方 危険もあります
+
+00:10:33.567 --> 00:10:37.371 align:start position:32% line:-2
+頻繁に走っているので
+注意が必要です
+
+00:10:38.305 --> 00:10:42.276 align:start position:27% line:-1
+このようなコードを書く時は
+
+00:10:42.409 --> 00:10:44.511 align:start position:32% line:-1
+慎重さが求められます
+
+00:10:44.611 --> 00:10:47.614 align:start position:23% line:-1
+また 回数を最小限にすべきです
+
+00:10:47.714 --> 00:10:50.984 align:start position:27% line:-1
+失敗するのが明らかですから
+
+00:10:53.253 --> 00:10:56.690 align:start position:27% line:-1
+次のように考えてみましょう
+
+00:10:56.790 --> 00:10:58.358 align:start position:30% line:-1
+“一度でできないか？”
+
+00:10:58.458 --> 00:11:01.128 align:start position:16% line:-2
+“updateConstraintsに
+置かない方法はないか？”
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.066 --> 00:30:02.626 A:middle
+And with just two taps I've gone
+
+00:30:02.626 --> 00:30:03.816 A:middle
+through a full federated
+
+00:30:03.816 --> 00:30:04.816 A:middle
+authentication flow with a
+
+00:30:04.936 --> 00:30:05.896 A:middle
+third-party service.
+
+00:30:06.976 --> 00:30:08.736 A:middle
+So, in the past you may have
+
+00:30:08.736 --> 00:30:10.376 A:middle
+used one of the other iOS
+
+00:30:10.456 --> 00:30:11.886 A:middle
+platform technologies to
+
+00:30:11.886 --> 00:30:12.896 A:middle
+implement federated
+
+00:30:12.896 --> 00:30:14.066 A:middle
+authentication inside of your
+
+00:30:14.066 --> 00:30:14.426 A:middle
+apps.
+
+00:30:15.786 --> 00:30:17.226 A:middle
+Starting with iOS 12,
+
+00:30:17.586 --> 00:30:19.146 A:middle
+ASWebAuthenticationSession is
+
+00:30:19.146 --> 00:30:21.156 A:middle
+the go-to way to implement such
+
+00:30:21.156 --> 00:30:21.606 A:middle
+flows.
+
+00:30:22.126 --> 00:30:24.246 A:middle
+As we mentioned, already,
+
+00:30:24.886 --> 00:30:26.566 A:middle
+ASWebAuthenticationSession makes
+
+00:30:26.566 --> 00:30:28.606 A:middle
+login flows faster by sharing
+
+00:30:28.606 --> 00:30:30.036 A:middle
+its underlying cookie storage
+
+00:30:30.036 --> 00:30:31.986 A:middle
+with Safari upon explicit user
+
+00:30:31.986 --> 00:30:32.426 A:middle
+consent.
+
+00:30:33.236 --> 00:30:34.636 A:middle
+Now, what this means is that
+
+00:30:34.636 --> 00:30:36.216 A:middle
+depending on the implementation
+
+00:30:36.216 --> 00:30:37.606 A:middle
+of the federated authentication
+
+00:30:37.606 --> 00:30:38.856 A:middle
+flow by the third party.
+
+00:30:39.066 --> 00:30:40.626 A:middle
+If your user is already signed
+
+00:30:40.626 --> 00:30:42.376 A:middle
+into that service in Safari on
+
+00:30:42.376 --> 00:30:43.966 A:middle
+their device, they may not even
+
+00:30:43.966 --> 00:30:45.156 A:middle
+have to see a login form, at
+
+00:30:45.156 --> 00:30:45.406 A:middle
+all.
+
+00:30:47.046 --> 00:30:48.486 A:middle
+If they do have to see a login
+
+00:30:48.486 --> 00:30:50.576 A:middle
+form ASWebAuthenticationSession
+
+00:30:50.576 --> 00:30:52.466 A:middle
+supports Password Autofill and
+
+00:30:52.466 --> 00:30:54.146 A:middle
+Security Code Autofill to make
+
+00:30:54.146 --> 00:30:55.616 A:middle
+the experience as painless as
+
+00:30:55.616 --> 00:30:56.046 A:middle
+possible.
+
+00:30:57.506 --> 00:30:58.736 A:middle
+And for you developers,
+
+00:30:58.986 --> 00:31:00.486 A:middle
+ASWebAuthenticationSession
+

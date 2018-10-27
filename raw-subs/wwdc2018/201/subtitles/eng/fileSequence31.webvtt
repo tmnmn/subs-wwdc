@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:01.266 --> 00:31:02.726 A:middle
+And the key concept that I want
+
+00:31:02.726 --> 00:31:03.976 A:middle
+to introduce you to, here, is
+
+00:31:03.976 --> 00:31:05.286 A:middle
+called a Cascade List.
+
+00:31:05.856 --> 00:31:08.746 A:middle
+So, a Cascade List says if I'm
+
+00:31:08.746 --> 00:31:11.326 A:middle
+looking to render this Chinese
+
+00:31:11.766 --> 00:31:14.086 A:middle
+character and this first font
+
+00:31:14.086 --> 00:31:15.796 A:middle
+doesn't have it, what font
+
+00:31:15.796 --> 00:31:17.396 A:middle
+should I use after this to look
+
+00:31:17.396 --> 00:31:18.166 A:middle
+for this character?
+
+00:31:18.556 --> 00:31:19.666 A:middle
+Now, if you don't specify a
+
+00:31:19.666 --> 00:31:20.876 A:middle
+Cascade List you're going to get
+
+00:31:20.876 --> 00:31:21.606 A:middle
+the system font.
+
+00:31:22.066 --> 00:31:23.376 A:middle
+But if you do have a Cascade
+
+00:31:23.376 --> 00:31:24.646 A:middle
+List, then you can specify other
+
+00:31:24.646 --> 00:31:26.426 A:middle
+fonts to try before falling back
+
+00:31:26.646 --> 00:31:27.446 A:middle
+to the system font.
+
+00:31:28.426 --> 00:31:29.526 A:middle
+So, in this case, we create a
+
+00:31:29.526 --> 00:31:30.586 A:middle
+Cascade List with a font
+
+00:31:30.586 --> 00:31:32.096 A:middle
+descriptor for our font for
+
+00:31:32.096 --> 00:31:34.046 A:middle
+Chinese that we hand-picked.
+
+00:31:34.836 --> 00:31:36.306 A:middle
+Now, if your app supports
+
+00:31:36.306 --> 00:31:37.316 A:middle
+multiple scripts you add
+
+00:31:37.316 --> 00:31:39.036 A:middle
+multiple things here and that's
+
+00:31:39.286 --> 00:31:40.516 A:middle
+as simple as it works.
+
+00:31:41.616 --> 00:31:43.056 A:middle
+And once you've got a Cascade
+
+00:31:43.056 --> 00:31:44.046 A:middle
+List you create a new font
+
+00:31:44.046 --> 00:31:44.556 A:middle
+descriptor.
+
+00:31:44.556 --> 00:31:45.656 A:middle
+And then, you create a new font.
+
+00:31:45.896 --> 00:31:46.566 A:middle
+Pretty straightforward.
+
+00:31:47.156 --> 00:31:50.136 A:middle
+And also, make sure that if your
+
+00:31:50.136 --> 00:31:51.846 A:middle
+app used dynamic type, which it
+
+00:31:51.846 --> 00:31:54.506 A:middle
+really should, then your font
+
+00:31:54.506 --> 00:31:55.706 A:middle
+should adjust to that, as well.
+
+00:31:55.706 --> 00:31:57.066 A:middle
+And again, that's as simple as
+
+00:31:57.066 --> 00:31:57.736 A:middle
+an API call.
+
+00:31:59.466 --> 00:32:00.286 A:middle
+Let's see some examples.
+

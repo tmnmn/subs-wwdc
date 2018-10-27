@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.846 --> 00:25:02.176 A:middle
+developer settings, and when you
+
+00:25:02.176 --> 00:25:03.566 A:middle
+start running it, you can use
+
+00:25:03.566 --> 00:25:04.656 A:middle
+your phone as you normally would
+
+00:25:04.656 --> 00:25:05.686 A:middle
+and use your application as you
+
+00:25:05.686 --> 00:25:06.956 A:middle
+might expect for any number of
+
+00:25:06.956 --> 00:25:07.536 A:middle
+use cases.
+
+00:25:08.256 --> 00:25:09.106 A:middle
+And then, afterwards, when
+
+00:25:09.106 --> 00:25:10.126 A:middle
+you're finished, you can stop
+
+00:25:10.126 --> 00:25:11.136 A:middle
+the recording directly from the
+
+00:25:11.136 --> 00:25:12.926 A:middle
+developer tools and jump into
+
+00:25:12.926 --> 00:25:14.106 A:middle
+Instruments and upload that
+
+00:25:14.106 --> 00:25:14.526 A:middle
+trace.
+
+00:25:15.116 --> 00:25:16.396 A:middle
+This is really useful for
+
+00:25:16.396 --> 00:25:17.386 A:middle
+understanding if there are any
+
+00:25:17.386 --> 00:25:18.436 A:middle
+environmental problems that
+
+00:25:18.436 --> 00:25:19.576 A:middle
+you're having that might be
+
+00:25:19.576 --> 00:25:20.416 A:middle
+impacting your energy
+
+00:25:20.416 --> 00:25:20.866 A:middle
+consumption.
+
+00:25:20.866 --> 00:25:23.966 A:middle
+Now, we've talked about the
+
+00:25:23.966 --> 00:25:25.016 A:middle
+tools; we've talked about the
+
+00:25:25.016 --> 00:25:27.256 A:middle
+concepts; now, I want to do a
+
+00:25:27.256 --> 00:25:29.916 A:middle
+demo and work through an example
+
+00:25:29.916 --> 00:25:31.026 A:middle
+about how we can actually use
+
+00:25:31.026 --> 00:25:32.896 A:middle
+these in tandem and solve energy
+
+00:25:32.896 --> 00:25:33.616 A:middle
+problems and make our app more
+
+00:25:33.616 --> 00:25:34.000 A:middle
+energy efficient.
+
+00:25:39.206 --> 00:25:40.816 A:middle
+So, today, we've prepared a
+
+00:25:40.816 --> 00:25:42.496 A:middle
+simple game called Energy Game,
+
+00:25:42.816 --> 00:25:44.646 A:middle
+which draws sprites onscreen and
+
+00:25:44.646 --> 00:25:46.436 A:middle
+allows the application to inject
+
+00:25:46.436 --> 00:25:47.376 A:middle
+a number of bugs.
+
+00:25:47.936 --> 00:25:49.136 A:middle
+It's a very simple application
+
+00:25:49.136 --> 00:25:50.116 A:middle
+that we've built, and it only
+
+00:25:50.116 --> 00:25:51.176 A:middle
+has an app delegate in a View
+
+00:25:51.176 --> 00:25:52.466 A:middle
+Controller, but the primary
+
+00:25:52.466 --> 00:25:53.866 A:middle
+purpose is to show you how to
+
+00:25:53.866 --> 00:25:56.276 A:middle
+use our tools rapidly to iterate
+
+00:25:56.376 --> 00:25:56.996 A:middle
+through your code.
+
+00:25:57.496 --> 00:25:59.676 A:middle
+So, I'm going to go ahead and
+
+00:25:59.676 --> 00:26:01.136 A:middle
+build Energy Game here through
+

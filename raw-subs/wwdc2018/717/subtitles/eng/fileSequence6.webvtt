@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.806 --> 00:06:00.316 A:middle
+Now, how about Vision?
+
+00:06:01.806 --> 00:06:03.116 A:middle
+It's less than a megabyte in
+
+00:06:03.116 --> 00:06:03.726 A:middle
+most cases.
+
+00:06:04.356 --> 00:06:07.506 A:middle
+The other thing of course why we
+
+00:06:07.506 --> 00:06:08.406 A:middle
+believe that this is a good
+
+00:06:08.406 --> 00:06:10.586 A:middle
+choice for use, it's already
+
+00:06:10.586 --> 00:06:11.276 A:middle
+optimized.
+
+00:06:11.706 --> 00:06:13.116 A:middle
+And we know a few things about
+
+00:06:13.116 --> 00:06:15.546 A:middle
+our hardware or GPUs and CPUS
+
+00:06:15.546 --> 00:06:18.746 A:middle
+and we really optimized a lot on
+
+00:06:18.746 --> 00:06:20.026 A:middle
+that model so that it performs
+
+00:06:20.026 --> 00:06:21.296 A:middle
+best on our devices.
+
+00:06:21.906 --> 00:06:25.246 A:middle
+So, how do we train [inaudible]?
+
+00:06:27.036 --> 00:06:28.206 A:middle
+We start with some labeled
+
+00:06:28.206 --> 00:06:30.106 A:middle
+images, and bring them into
+
+00:06:30.106 --> 00:06:32.566 A:middle
+Create ML, and Create ML knows
+
+00:06:32.566 --> 00:06:33.876 A:middle
+how to extract [inaudible]
+
+00:06:33.876 --> 00:06:35.216 A:middle
+Vision Feature Print.
+
+00:06:36.636 --> 00:06:38.776 A:middle
+It trains our classifier and
+
+00:06:38.776 --> 00:06:40.506 A:middle
+that classifier is all what
+
+00:06:40.506 --> 00:06:41.616 A:middle
+[inaudible] will go into our
+
+00:06:41.616 --> 00:06:42.386 A:middle
+Core ML model.
+
+00:06:42.546 --> 00:06:43.786 A:middle
+That's why it is so small.
+
+00:06:43.786 --> 00:06:46.136 A:middle
+Now, when it comes time that I
+
+00:06:46.136 --> 00:06:47.676 A:middle
+actually want to analyze an
+
+00:06:47.676 --> 00:06:50.416 A:middle
+image, all I have to do is use
+
+00:06:50.416 --> 00:06:53.336 A:middle
+my image and model, and now in
+
+00:06:53.336 --> 00:06:56.036 A:middle
+Vision or in Core ML, it knows
+
+00:06:56.036 --> 00:06:57.166 A:middle
+another [inaudible] again how to
+
+00:06:57.166 --> 00:06:58.276 A:middle
+train -- sorry.
+
+00:06:58.426 --> 00:06:59.036 A:middle
+Not train.
+
+00:06:59.036 --> 00:07:00.936 A:middle
+In this case, use our Vision
+

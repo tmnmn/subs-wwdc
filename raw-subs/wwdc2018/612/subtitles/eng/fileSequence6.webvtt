@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:56.696 --> 00:06:00.916 A:middle
+That was a short but a quite
+
+00:06:00.916 --> 00:06:02.366 A:middle
+wide introduction to the tools.
+
+00:06:02.366 --> 00:06:03.606 A:middle
+So it's about time we move to
+
+00:06:03.606 --> 00:06:05.436 A:middle
+the actual performance issues.
+
+00:06:06.136 --> 00:06:07.896 A:middle
+The first one will be around
+
+00:06:07.896 --> 00:06:08.706 A:middle
+frame pacing.
+
+00:06:09.246 --> 00:06:12.016 A:middle
+And let's visualize it first.
+
+00:06:12.816 --> 00:06:14.626 A:middle
+For this we used the modified
+
+00:06:14.626 --> 00:06:15.746 A:middle
+version of the Fox [inaudible]
+
+00:06:15.746 --> 00:06:16.456 A:middle
+demo.
+
+00:06:16.766 --> 00:06:18.376 A:middle
+That will help us illustrate the
+
+00:06:18.376 --> 00:06:19.196 A:middle
+issue better.
+
+00:06:20.416 --> 00:06:23.536 A:middle
+Can you guess which game renders
+
+00:06:23.536 --> 00:06:24.006 A:middle
+faster?
+
+00:06:27.036 --> 00:06:30.166 A:middle
+Well, some of you may not have
+
+00:06:30.236 --> 00:06:30.686 A:middle
+guessed it.
+
+00:06:31.526 --> 00:06:33.606 A:middle
+The game on the left is trying
+
+00:06:33.606 --> 00:06:34.876 A:middle
+to render at 60 frames per
+
+00:06:34.876 --> 00:06:35.506 A:middle
+second.
+
+00:06:36.026 --> 00:06:38.426 A:middle
+But it can only achieve 40, so
+
+00:06:38.426 --> 00:06:40.066 A:middle
+it's inconsistent, and it seems
+
+00:06:40.106 --> 00:06:40.506 A:middle
+jittery.
+
+00:06:41.016 --> 00:06:42.056 A:middle
+The game on the right on the
+
+00:06:42.056 --> 00:06:44.136 A:middle
+other hand is targeting 30
+
+00:06:44.136 --> 00:06:45.856 A:middle
+frames per second, which can
+
+00:06:45.856 --> 00:06:47.176 A:middle
+consistently be achieved.
+
+00:06:47.936 --> 00:06:49.066 A:middle
+That's why it looks smoother.
+
+00:06:49.626 --> 00:06:52.186 A:middle
+But that's a bit
+
+00:06:52.956 --> 00:06:53.856 A:middle
+counterintuitive.
+
+00:06:54.156 --> 00:06:56.416 A:middle
+How, how come the game that
+
+00:06:56.416 --> 00:06:58.836 A:middle
+renders faster doesn't look
+
+00:06:58.836 --> 00:06:59.306 A:middle
+smoother?
+

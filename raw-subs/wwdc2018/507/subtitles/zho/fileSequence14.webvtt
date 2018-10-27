@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.140 --> 00:14:04.878 align:middle line:-2
+如果AVContentKeyRequest
+无法接受持久性密钥作为响应
+
+00:14:07.047 --> 00:14:10.250 align:middle line:-2
+因此 请求 PersistableContent
+KeyRequest字段时
+
+00:14:10.317 --> 00:14:14.354 align:middle line:-2
+你的密钥服务器上的在线
+FairPlayStreaming进行响应
+
+00:14:16.890 --> 00:14:19.026 align:middle line:-1
+如果你使用AVAssetResourceLoader
+
+00:14:19.593 --> 00:14:21.995 align:middle line:-2
+然后用持久性密钥数据blob
+进行响应
+
+00:14:22.062 --> 00:14:23.030 align:middle line:-1
+你应该检查
+
+00:14:23.096 --> 00:14:27.167 align:middle line:-2
+新引入的
+allowedContentTypes属性中
+
+00:14:27.234 --> 00:14:30.137 align:middle line:-2
+持久性密钥是否被列
+为接受的内容类型之一
+
+00:14:31.738 --> 00:14:35.275 align:middle line:-2
+我希望我们提供了
+AVContentKeySession的一些概述
+
+00:14:35.342 --> 00:14:37.778 align:middle line:-1
+并澄清了几个你可能遇到的一些问题
+
+00:14:38.178 --> 00:14:42.216 align:middle line:-2
+总结一下 我们介绍了
+AVContentKeySession的不同之处
+
+00:14:42.683 --> 00:14:46.987 align:middle line:-2
+我们看到了如何使用
+此API来改善回放启动
+
+00:14:47.287 --> 00:14:48.856 align:middle line:-1
+并扩展直播
+
+00:14:50.023 --> 00:14:52.192 align:middle line:-1
+我们谈了一点离线租赁
+
+00:14:52.259 --> 00:14:55.128 align:middle line:-1
+它究竟是什么以及如何以正确地使用
+
+00:14:56.230 --> 00:15:00.033 align:middle line:-1
+我们最后强调了错误处理的最佳实践
+

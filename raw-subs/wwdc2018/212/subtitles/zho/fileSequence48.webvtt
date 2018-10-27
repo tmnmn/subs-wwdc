@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.880 --> 00:48:02.049 align:middle line:-1
+我正在构建请求
+
+00:48:02.115 --> 00:48:05.452 align:middle line:0
+对于origin 我将这个位置硬编码进去
+即“McEnery Convention Center”
+
+00:48:05.853 --> 00:48:10.591 align:middle line:-1
+我也可以设置坐标
+
+00:48:10.657 --> 00:48:12.359 align:middle line:-1
+但这样更方便
+
+00:48:12.693 --> 00:48:15.529 align:middle line:0
+对于destination
+我将使用坐标 因为我有这些数据
+
+00:48:15.596 --> 00:48:18.966 align:middle line:0
+它们是作为参数给出的注释的坐标
+
+00:48:20.000 --> 00:48:27.007 align:middle line:0
+我想展示几条可能的路线
+
+00:48:27.140 --> 00:48:30.644 align:middle line:-2
+所以我要确保requestAlternateRoutes属性
+被设置为true
+
+00:48:32.446 --> 00:48:34.381 align:middle line:-1
+现在我的请求已经构建完毕
+
+00:48:35.148 --> 00:48:36.183 align:middle line:-1
+我可在directions服务上
+
+00:48:36.250 --> 00:48:39.419 align:middle line:-1
+调用route方法执行它
+
+00:48:42.723 --> 00:48:45.325 align:middle line:-1
+当你做这样的查询时可能会出错
+
+00:48:45.392 --> 00:48:48.262 align:middle line:-1
+所以我们必须确保当错误发生时
+
+00:48:48.328 --> 00:48:49.363 align:middle line:-1
+我们可以处理错误
+
+00:48:49.463 --> 00:48:51.665 align:middle line:-1
+在这个例子中 我会回退到
+
+00:48:51.732 --> 00:48:55.502 align:middle line:-2
+显示我创建的默认路线
+它只是一条直线
+
+00:48:55.569 --> 00:48:58.172 align:middle line:-2
+所以如果我们看到一条直线
+我们就知道发生了错误
+

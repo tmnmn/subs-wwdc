@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:57.116 --> 00:32:00.046 A:middle
+the builder will be recovered in
+
+00:32:00.046 --> 00:32:01.826 A:middle
+their previous state, so you
+
+00:32:01.826 --> 00:32:04.166 A:middle
+should not call startActivity or
+
+00:32:04.166 --> 00:32:07.736 A:middle
+beginCollection on the builder.
+
+00:32:07.876 --> 00:32:09.706 A:middle
+If you are using a data source
+
+00:32:09.816 --> 00:32:12.046 A:middle
+to automatically collect data,
+
+00:32:12.516 --> 00:32:14.056 A:middle
+you do need to set it up again,
+
+00:32:14.636 --> 00:32:18.586 A:middle
+and this is how it works.
+
+00:32:18.746 --> 00:32:20.736 A:middle
+If your app is relaunched after
+
+00:32:20.736 --> 00:32:23.386 A:middle
+a crash, we will be calling the
+
+00:32:23.386 --> 00:32:25.166 A:middle
+WatchKit extension delegate
+
+00:32:25.166 --> 00:32:27.136 A:middle
+method, handleActive
+
+00:32:27.136 --> 00:32:27.936 A:middle
+WorkoutRecovery.
+
+00:32:29.036 --> 00:32:30.806 A:middle
+From there, you simply need to
+
+00:32:31.096 --> 00:32:33.876 A:middle
+create a healthStore object and
+
+00:32:33.876 --> 00:32:37.456 A:middle
+then call recoverActive Workout
+
+00:32:37.456 --> 00:32:39.896 A:middle
+Session, and you will get back a
+
+00:32:39.896 --> 00:32:41.496 A:middle
+session in the completion
+
+00:32:41.496 --> 00:32:41.836 A:middle
+handler.
+
+00:32:42.876 --> 00:32:43.576 A:middle
+It's that simple.
+
+00:32:44.206 --> 00:32:49.066 A:middle
+So this is our new workout API.
+
+00:32:49.276 --> 00:32:52.606 A:middle
+It makes it easier than ever to
+
+00:32:52.606 --> 00:32:54.136 A:middle
+build great workout apps.
+
+00:32:54.996 --> 00:32:57.246 A:middle
+We also have a new Quantity
+
+00:32:57.246 --> 00:32:57.956 A:middle
+series API.
+
+00:32:58.616 --> 00:33:00.156 A:middle
+And for that, I'd like to hand
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.136 --> 00:13:00.106 A:middle
+consistent results every time so
+
+00:13:00.106 --> 00:13:01.176 A:middle
+that you can spend less time
+
+00:13:01.176 --> 00:13:02.326 A:middle
+building and more time
+
+00:13:02.526 --> 00:13:03.156 A:middle
+developing.
+
+00:13:04.286 --> 00:13:05.386 A:middle
+For more information on how to
+
+00:13:05.386 --> 00:13:06.436 A:middle
+speed up your builds and make
+
+00:13:06.436 --> 00:13:07.516 A:middle
+the most of all those cores in
+
+00:13:07.516 --> 00:13:09.186 A:middle
+your shiny new iMac Pro, we'd
+
+00:13:09.186 --> 00:13:10.196 A:middle
+recommend that you check out
+
+00:13:10.196 --> 00:13:11.536 A:middle
+Building Faster in Xcode
+
+00:13:11.536 --> 00:13:11.966 A:middle
+Session.
+
+00:13:12.346 --> 00:13:13.836 A:middle
+And with that, I'm going to hand
+
+00:13:13.836 --> 00:13:14.966 A:middle
+it over to Jurgen, who's going
+
+00:13:14.966 --> 00:13:16.246 A:middle
+to take you into the realm of
+
+00:13:16.246 --> 00:13:16.806 A:middle
+the compiler.
+
+00:13:17.516 --> 00:13:22.836 A:middle
+[ Applause ]
+
+00:13:23.336 --> 00:13:23.776 A:middle
+&gt;&gt; Thank you, Jake.
+
+00:13:24.726 --> 00:13:27.206 A:middle
+And now we're going to talk
+
+00:13:27.206 --> 00:13:28.666 A:middle
+about what happens behind the
+
+00:13:28.666 --> 00:13:31.216 A:middle
+scenes when Xcode build system
+
+00:13:31.296 --> 00:13:32.466 A:middle
+invokes the Clang compiler.
+
+00:13:33.976 --> 00:13:34.896 A:middle
+Hello, everyone.
+
+00:13:35.286 --> 00:13:36.956 A:middle
+My name is Jurgen, and I'm a
+
+00:13:36.956 --> 00:13:38.446 A:middle
+Compiler Engineer on a Clang
+
+00:13:38.446 --> 00:13:39.016 A:middle
+Frontend Team.
+
+00:13:40.096 --> 00:13:41.356 A:middle
+Today I'm going to talk about
+
+00:13:41.356 --> 00:13:43.256 A:middle
+two features you might not know
+
+00:13:43.256 --> 00:13:43.496 A:middle
+about.
+
+00:13:44.366 --> 00:13:45.966 A:middle
+The first feature is called
+
+00:13:46.136 --> 00:13:48.366 A:middle
+header maps and how we use them
+
+00:13:48.406 --> 00:13:50.446 A:middle
+to communicate information from
+
+00:13:50.446 --> 00:13:52.116 A:middle
+the Xcode build system to the
+
+00:13:52.116 --> 00:13:52.756 A:middle
+Clang compiler.
+
+00:13:54.146 --> 00:13:55.496 A:middle
+The second feature is called
+
+00:13:55.836 --> 00:13:57.856 A:middle
+Clang modules and how we use
+
+00:13:57.856 --> 00:14:00.956 A:middle
+them to speed up your builds.
+

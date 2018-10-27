@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.436 --> 00:38:00.956 A:middle
+is graphics classes.
+
+00:38:00.956 --> 00:38:02.826 A:middle
+Now these actually correspond to
+
+00:38:02.826 --> 00:38:03.586 A:middle
+two things.
+
+00:38:04.056 --> 00:38:06.536 A:middle
+One, they correspond to Metal
+
+00:38:06.536 --> 00:38:08.176 A:middle
+feature family sets, which if
+
+00:38:08.176 --> 00:38:09.066 A:middle
+you're a Metal programmer you
+
+00:38:09.066 --> 00:38:10.056 A:middle
+may be familiar with, this is
+
+00:38:10.056 --> 00:38:11.326 A:middle
+the GPU family concept.
+
+00:38:11.886 --> 00:38:13.116 A:middle
+But they actually correspond
+
+00:38:13.116 --> 00:38:15.096 A:middle
+also exactly with a particular
+
+00:38:15.396 --> 00:38:17.216 A:middle
+processor revision in your
+
+00:38:17.216 --> 00:38:17.656 A:middle
+device.
+
+00:38:18.326 --> 00:38:20.506 A:middle
+So Metal 1 corresponds to Apple
+
+00:38:20.616 --> 00:38:22.766 A:middle
+A7 all the way through Metal 4
+
+00:38:22.766 --> 00:38:24.236 A:middle
+which is the Apple A11
+
+00:38:24.236 --> 00:38:24.806 A:middle
+processor.
+
+00:38:25.376 --> 00:38:27.536 A:middle
+And we allow you to catalog and
+
+00:38:27.536 --> 00:38:29.526 A:middle
+route assets to each of these
+
+00:38:29.526 --> 00:38:31.506 A:middle
+particular graphics classes.
+
+00:38:33.006 --> 00:38:34.356 A:middle
+That can be pretty powerful by
+
+00:38:34.356 --> 00:38:36.186 A:middle
+itself either one of those, but
+
+00:38:36.336 --> 00:38:38.046 A:middle
+where it gets really interesting
+
+00:38:38.046 --> 00:38:40.756 A:middle
+is when you can combine these
+
+00:38:40.756 --> 00:38:42.436 A:middle
+two traits together to form a
+
+00:38:42.436 --> 00:38:44.416 A:middle
+full capability matrix that you
+
+00:38:44.416 --> 00:38:46.346 A:middle
+can really finally calibrate how
+
+00:38:46.346 --> 00:38:47.906 A:middle
+you want to adapt your assets to
+
+00:38:48.176 --> 00:38:49.616 A:middle
+this hardware landscape.
+
+00:38:52.086 --> 00:38:53.146 A:middle
+Now how does this work?
+
+00:38:54.036 --> 00:38:56.326 A:middle
+I'd like to explain this to you
+
+00:38:56.326 --> 00:38:57.566 A:middle
+by walking through a simple
+
+00:38:57.566 --> 00:38:58.886 A:middle
+example and this is really key
+
+00:38:58.886 --> 00:39:00.206 A:middle
+to understand how we do things,
+

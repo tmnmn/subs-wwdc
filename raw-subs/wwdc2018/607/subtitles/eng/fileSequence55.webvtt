@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:58.656 --> 00:55:00.606 A:middle
+dynamically, when you have a lot
+
+00:55:00.606 --> 00:55:02.746 A:middle
+of movable objects, some of this
+
+00:55:02.866 --> 00:55:05.026 A:middle
+just isn't possible to avoid.
+
+00:55:05.646 --> 00:55:09.636 A:middle
+So what we did for buffers is we
+
+00:55:09.806 --> 00:55:11.276 A:middle
+just used buffer suballocation
+
+00:55:11.276 --> 00:55:12.446 A:middle
+-- basically, a bend allocation
+
+00:55:12.446 --> 00:55:13.006 A:middle
+strategy.
+
+00:55:13.346 --> 00:55:14.476 A:middle
+Upfront, we allocate a big
+
+00:55:14.476 --> 00:55:15.996 A:middle
+buffer, and then we suballocate
+
+00:55:16.606 --> 00:55:19.146 A:middle
+small chunks back to the engine
+
+00:55:19.146 --> 00:55:20.906 A:middle
+to avoid asking Metal for new
+
+00:55:20.906 --> 00:55:22.776 A:middle
+buffers all the time.
+
+00:55:23.056 --> 00:55:24.446 A:middle
+And this ended up helping a lot.
+
+00:55:25.976 --> 00:55:27.636 A:middle
+We also leveraged programmable
+
+00:55:27.636 --> 00:55:30.186 A:middle
+blending to reduce the number of
+
+00:55:30.186 --> 00:55:31.906 A:middle
+resolves and restores and the
+
+00:55:31.906 --> 00:55:33.446 A:middle
+amount of memory bandwidth we
+
+00:55:33.446 --> 00:55:33.786 A:middle
+use.
+
+00:55:34.356 --> 00:55:36.596 A:middle
+Specifically, the main use case
+
+00:55:36.596 --> 00:55:38.536 A:middle
+we have for this is anywhere we
+
+00:55:38.536 --> 00:55:40.336 A:middle
+need access to scene depth, so
+
+00:55:40.336 --> 00:55:41.416 A:middle
+things like soft particle
+
+00:55:41.416 --> 00:55:43.286 A:middle
+blending or projected decals.
+
+00:55:43.286 --> 00:55:45.036 A:middle
+What we do is during the forward
+
+00:55:45.036 --> 00:55:46.586 A:middle
+pass, we write our linear depth
+
+00:55:46.586 --> 00:55:47.546 A:middle
+to the alpha channel.
+
+00:55:47.946 --> 00:55:49.126 A:middle
+And then, during our decal and
+
+00:55:49.126 --> 00:55:50.546 A:middle
+translucent passes, all we need
+
+00:55:50.546 --> 00:55:52.246 A:middle
+to do is use programmable
+
+00:55:52.246 --> 00:55:53.266 A:middle
+blending to read that alpha
+
+00:55:53.266 --> 00:55:55.146 A:middle
+channel back, and we can use
+
+00:55:55.146 --> 00:55:57.796 A:middle
+depth without having ever had to
+
+00:55:57.916 --> 00:55:59.846 A:middle
+resolve the depth buffer to main
+
+00:55:59.846 --> 00:56:00.186 A:middle
+memory.
+

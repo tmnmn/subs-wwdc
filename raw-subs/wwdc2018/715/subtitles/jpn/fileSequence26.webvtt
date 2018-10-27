@@ -1,0 +1,48 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:55.956 --> 00:26:01.695 align:start position:12% line:-2
+sendInitialFrameを呼び出し
+１分以内に実行
+
+00:26:02.596 --> 00:26:05.766 align:start position:32% line:-2
+他のハンドシェイクは
+ありません
+
+00:26:05.866 --> 00:26:10.704 align:start position:29% line:-2
+そのためビデオフレームを
+ネットワークに落とす前に
+
+00:26:10.804 --> 00:26:16.109 align:start position:30% line:-2
+別のデバイスに送信し
+エコーバックを待ちます
+
+00:26:19.413 --> 00:26:24.651 align:start position:23% line:-2
+そして自分の接続上で
+startを呼び出してください
+
+00:26:26.120 --> 00:26:27.955 align:start position:30% line:-1
+最初のフレーム送信です
+
+00:26:32.359 --> 00:26:37.264 align:start position:18% line:-2
+ここは“hello”というリテラルで
+データオブジェクトを作成
+
+00:26:38.031 --> 00:26:41.835 align:start position:14% line:-2
+connection.sendを呼び出し
+データオブジェクトを
+
+00:26:41.935 --> 00:26:44.872 align:start position:27% line:-1
+コンテンツとして提供します
+
+00:26:45.772 --> 00:26:51.278 align:start position:25% line:-2
+提供される完了ハンドラで
+送信中のエラーを確認できます
+
+00:26:53.080 --> 00:26:55.749 align:start position:29% line:-1
+エコーバックが欲しいので
+
+00:26:55.849 --> 00:27:00.854 align:start position:5% line:-2
+データを読み込むための
+connection.receiveを呼び出します
+

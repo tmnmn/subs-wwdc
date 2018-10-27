@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.946 --> 00:08:01.815 align:middle line:0
+你可在App Store Connect中
+对其进行设置并将其存储在你的服务器上
+
+00:08:01.882 --> 00:08:03.050 align:middle line:0
+（验证一笔交易）
+
+00:08:03.116 --> 00:08:06.053 align:middle line:0
+当你将此收据数据发送到
+/verifyReceipt端点时
+
+00:08:06.119 --> 00:08:07.654 align:middle line:0
+/verifyReceipt端点
+将返回
+
+00:08:07.721 --> 00:08:09.990 align:middle line:0
+一个类似这样的JSON载荷
+
+00:08:11.792 --> 00:08:13.994 align:middle line:0
+当你验证交易的真实性时
+
+00:08:14.061 --> 00:08:16.864 align:middle line:0
+首先检查的是这个status字段
+
+00:08:17.164 --> 00:08:18.665 align:middle line:0
+它能够表明Apple
+
+00:08:18.732 --> 00:08:21.201 align:middle line:0
+的确签发了这个文档
+
+00:08:21.635 --> 00:08:24.171 align:middle line:0
+一旦你确认了
+这个status字段为0
+
+00:08:24.238 --> 00:08:27.708 align:middle line:0
+你就可以检查此载荷的
+receipt部分的内容
+
+00:08:27.941 --> 00:08:29.943 align:middle line:0
+这是你发送给
+/verifyReceipt端点的
+
+00:08:30.010 --> 00:08:32.346 align:middle line:0
+二进制数据的解码版本
+
+00:08:32.412 --> 00:08:35.582 align:middle line:0
+因此你可在此做些事
+如验证此收据中bundle_id
+
+00:08:35.649 --> 00:08:38.251 align:middle line:0
+是否与你的app的包ID相匹配
+
+00:08:39.019 --> 00:08:41.522 align:middle line:0
+然后你可以检查in_app数组
+
+00:08:41.722 --> 00:08:45.092 align:middle line:0
+它包含此app中该用户的交易列表
+
+00:08:45.726 --> 00:08:48.495 align:middle line:0
+你还可以验证该收据的
+product_id
+
+00:08:48.996 --> 00:08:51.632 align:middle line:0
+是否与你app中的该字段相匹配
+
+00:08:52.499 --> 00:08:54.067 align:middle line:0
+假设这些都匹配
+
+00:08:54.434 --> 00:08:56.670 align:middle line:0
+你就可以决定此收据能够
+
+00:08:56.737 --> 00:08:59.072 align:middle line:0
+赋予这个特定的用户
+使用你的订阅产品的权利
+
+00:08:59.139 --> 00:09:01.375 align:middle line:0
+现在你已准备好继续进行第三步
+

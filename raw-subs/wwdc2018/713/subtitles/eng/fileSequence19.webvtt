@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.356 --> 00:19:01.566 A:middle
+just like our built-in models
+
+00:19:01.566 --> 00:19:02.826 A:middle
+that provide the existing
+
+00:19:02.826 --> 00:19:04.956 A:middle
+functionality for NLP.
+
+00:19:06.666 --> 00:19:09.696 A:middle
+So what will happen is data
+
+00:19:09.696 --> 00:19:10.306 A:middle
+comes in.
+
+00:19:11.296 --> 00:19:12.976 A:middle
+You pass it to Natural Language,
+
+00:19:14.126 --> 00:19:16.226 A:middle
+which will use that model and do
+
+00:19:16.226 --> 00:19:18.936 A:middle
+everything necessary to get all
+
+00:19:18.936 --> 00:19:20.806 A:middle
+of the labels out and then pass
+
+00:19:20.856 --> 00:19:22.706 A:middle
+back either a label, single
+
+00:19:22.706 --> 00:19:24.196 A:middle
+label for a classifier or a
+
+00:19:24.196 --> 00:19:27.106 A:middle
+sequence of labels for a tagger.
+
+00:19:27.656 --> 00:19:32.316 A:middle
+And so how do you do this in
+
+00:19:32.316 --> 00:19:33.296 A:middle
+Natural Language API?
+
+00:19:34.326 --> 00:19:36.176 A:middle
+First thing you have to do is
+
+00:19:36.176 --> 00:19:38.366 A:middle
+just locate that model in your
+
+00:19:38.366 --> 00:19:40.296 A:middle
+application's resources, and
+
+00:19:40.296 --> 00:19:41.636 A:middle
+then you create an instance of a
+
+00:19:41.636 --> 00:19:43.406 A:middle
+class in Natural Language called
+
+00:19:43.456 --> 00:19:45.626 A:middle
+ML Model from it.
+
+00:19:46.026 --> 00:19:48.026 A:middle
+And then, well, the simplest
+
+00:19:48.026 --> 00:19:49.036 A:middle
+thing you can do with it, at
+
+00:19:49.076 --> 00:19:51.396 A:middle
+least for a classifier, is just
+
+00:19:51.396 --> 00:19:52.976 A:middle
+pass it in a chunk of text and
+
+00:19:52.976 --> 00:19:53.756 A:middle
+get a label out.
+
+00:19:54.696 --> 00:19:55.886 A:middle
+But the more interesting thing
+
+00:19:55.936 --> 00:19:59.116 A:middle
+is that you can use these models
+
+00:19:59.116 --> 00:20:02.226 A:middle
+with NLTagger in exactly the
+

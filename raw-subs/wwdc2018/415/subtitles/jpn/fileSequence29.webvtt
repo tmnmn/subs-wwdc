@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.604 --> 00:29:02.409 align:start position:29% line:-2
+引数の変更は できるだけ
+避けた方がいいですね
+
+00:29:05.112 --> 00:29:09.783 align:start position:29% line:-2
+システムフレームワークの
+モジュールの話でしたが―
+
+00:29:10.317 --> 00:29:14.988 align:start position:30% line:-2
+自分のフレームワークで
+同じことをするには？
+
+00:29:16.924 --> 00:29:21.361 align:start position:34% line:-2
+サンプルのCatで
+確認しましょう
+
+00:29:23.363 --> 00:29:25.632 align:start position:29% line:-1
+再びヘッダマップを使い―
+
+00:29:25.966 --> 00:29:30.204 align:start position:32% line:-2
+ソースディレクトリへ
+行きます
+
+00:29:31.805 --> 00:29:34.608 align:start position:30% line:-1
+ここで問題が発覚します
+
+00:29:35.409 --> 00:29:37.277 align:start position:29% line:-2
+モジュールディレクトリが
+ありません
+
+00:29:38.111 --> 00:29:40.247 align:start position:23% line:-1
+フレームワークらしくないですね
+
+00:29:41.215 --> 00:29:45.018 align:start position:30% line:-2
+Clangも
+対処に困ってしまいます
+
+00:29:45.419 --> 00:29:48.789 align:start position:27% line:-1
+解決手段をご紹介しましょう
+
+00:29:49.289 --> 00:29:52.025 align:start position:29% line:-2
+Clangの
+仮想ファイルシステムです
+
+00:29:52.526 --> 00:29:56.196 align:start position:32% line:-2
+仮想フレームワークを
+作成するものです
+
+00:29:56.797 --> 00:29:59.533 align:start position:30% line:-2
+Clangは ここで
+モジュールを作成します
+
+00:29:59.867 --> 00:30:00.534 align:start position:43% line:-1
+ただし―
+

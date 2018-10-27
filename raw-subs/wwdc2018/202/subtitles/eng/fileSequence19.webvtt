@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.636 --> 00:19:02.846 A:middle
+Now in iOS 11, the cost of these
+
+00:19:02.846 --> 00:19:04.446 A:middle
+independent siblings, as you
+
+00:19:04.446 --> 00:19:06.246 A:middle
+continue to add more, grew
+
+00:19:06.246 --> 00:19:06.816 A:middle
+linearly.
+
+00:19:07.526 --> 00:19:08.996 A:middle
+So that's actually pretty great.
+
+00:19:08.996 --> 00:19:10.536 A:middle
+That's exactly what you'd expect
+
+00:19:10.536 --> 00:19:11.906 A:middle
+for a situation like this.
+
+00:19:12.306 --> 00:19:13.706 A:middle
+Basically, what we're saying is
+
+00:19:13.706 --> 00:19:15.116 A:middle
+that there's a fixed constant
+
+00:19:15.116 --> 00:19:17.046 A:middle
+cost for each additional new
+
+00:19:17.046 --> 00:19:18.326 A:middle
+view that you added into your
+
+00:19:18.326 --> 00:19:19.876 A:middle
+hierarchy that was positioned
+
+00:19:19.876 --> 00:19:20.926 A:middle
+independent of those other
+
+00:19:20.926 --> 00:19:21.336 A:middle
+views.
+
+00:19:22.516 --> 00:19:23.406 A:middle
+Now because that was already
+
+00:19:23.506 --> 00:19:24.896 A:middle
+growing with the exponentials
+
+00:19:24.896 --> 00:19:26.746 A:middle
+that we expected, that remains
+
+00:19:26.746 --> 00:19:28.976 A:middle
+the case in iOS 12; however, the
+
+00:19:29.096 --> 00:19:30.966 A:middle
+team has worked really hard to
+
+00:19:30.966 --> 00:19:33.386 A:middle
+reduce that constant cost to
+
+00:19:33.386 --> 00:19:34.956 A:middle
+make additional views as cheap
+
+00:19:35.146 --> 00:19:36.076 A:middle
+to add as possible.
+
+00:19:37.376 --> 00:19:38.326 A:middle
+So let's look at a more
+
+00:19:38.326 --> 00:19:39.596 A:middle
+interesting example next.
+
+00:19:39.986 --> 00:19:41.156 A:middle
+And in this case, we're going to
+
+00:19:41.156 --> 00:19:42.236 A:middle
+take a look at Dependent
+
+00:19:42.236 --> 00:19:42.846 A:middle
+Siblings.
+
+00:19:43.326 --> 00:19:44.406 A:middle
+So this is the case where you
+
+00:19:44.406 --> 00:19:46.826 A:middle
+have multiple child views and
+
+00:19:46.826 --> 00:19:47.676 A:middle
+they're now, they have
+
+00:19:47.726 --> 00:19:49.296 A:middle
+constraints between each other.
+
+00:19:49.296 --> 00:19:51.146 A:middle
+So their layout is dependent on
+
+00:19:51.146 --> 00:19:51.616 A:middle
+one another.
+
+00:19:52.666 --> 00:19:54.536 A:middle
+Now, unfortunately, in iOS 11,
+
+00:19:54.896 --> 00:19:56.226 A:middle
+you'll find that the asymptotics
+
+00:19:56.226 --> 00:19:58.206 A:middle
+here weren't quite as nice.
+
+00:19:58.206 --> 00:19:59.416 A:middle
+In fact, it was growing
+
+00:19:59.496 --> 00:20:00.316 A:middle
+exponentially.
+

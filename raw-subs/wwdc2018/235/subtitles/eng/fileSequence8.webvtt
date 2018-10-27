@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.546 --> 00:08:01.666 A:middle
+that's shown in the view list to
+
+00:08:02.376 --> 00:08:03.966 A:middle
+build your constraints against
+
+00:08:03.966 --> 00:08:04.596 A:middle
+the safe area.
+
+00:08:04.916 --> 00:08:07.956 A:middle
+And so a safe area is explained.
+
+00:08:08.346 --> 00:08:09.506 A:middle
+Let's talk a little bit about
+
+00:08:09.506 --> 00:08:10.000 A:middle
+layout margins.
+
+00:08:13.356 --> 00:08:17.356 A:middle
+So layout margins are padding.
+
+00:08:18.026 --> 00:08:19.036 A:middle
+They're a property that, in
+
+00:08:19.036 --> 00:08:20.556 A:middle
+general, you have full control
+
+00:08:20.556 --> 00:08:24.056 A:middle
+over and allows you to specify a
+
+00:08:24.056 --> 00:08:25.306 A:middle
+space from the edges of the
+
+00:08:25.306 --> 00:08:25.536 A:middle
+view.
+
+00:08:26.826 --> 00:08:28.116 A:middle
+Just like with safe areas,
+
+00:08:28.376 --> 00:08:30.196 A:middle
+they're represented by a UI edge
+
+00:08:30.196 --> 00:08:31.686 A:middle
+insets property, this time
+
+00:08:31.686 --> 00:08:32.866 A:middle
+called layout margins.
+
+00:08:33.996 --> 00:08:36.596 A:middle
+Now last year, we also added
+
+00:08:37.256 --> 00:08:38.486 A:middle
+directional layout margins.
+
+00:08:39.216 --> 00:08:40.866 A:middle
+These differ from layout margins
+
+00:08:41.126 --> 00:08:42.885 A:middle
+in that layout margins use a UI
+
+00:08:42.946 --> 00:08:45.496 A:middle
+Edge Insets value while
+
+00:08:45.496 --> 00:08:47.116 A:middle
+directional layout margins uses
+
+00:08:47.116 --> 00:08:48.626 A:middle
+an NS directional edge insets.
+
+00:08:48.626 --> 00:08:50.376 A:middle
+And the primary difference
+
+00:08:50.376 --> 00:08:52.016 A:middle
+between those two structures is
+
+00:08:52.016 --> 00:08:53.576 A:middle
+that directional insets use
+
+00:08:53.576 --> 00:08:54.986 A:middle
+leading and trailing instead of
+
+00:08:54.986 --> 00:08:56.846 A:middle
+left and right, which makes it
+
+00:08:56.846 --> 00:08:58.316 A:middle
+really easy for you to create
+
+00:08:58.476 --> 00:09:01.316 A:middle
+layout margins that adapt to RTL
+

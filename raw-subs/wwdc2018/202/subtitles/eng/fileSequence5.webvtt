@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.586 --> 00:05:02.296 A:middle
+Now adopting this is really
+
+00:05:02.296 --> 00:05:02.676 A:middle
+easy.
+
+00:05:03.076 --> 00:05:04.736 A:middle
+It's just a UI Table View Data
+
+00:05:04.736 --> 00:05:06.976 A:middle
+Source Prefetching protocol and
+
+00:05:06.976 --> 00:05:08.786 A:middle
+it only has two methods, only
+
+00:05:08.786 --> 00:05:09.766 A:middle
+one of which is actually
+
+00:05:09.766 --> 00:05:10.346 A:middle
+required.
+
+00:05:10.916 --> 00:05:12.196 A:middle
+And the idea here is to move
+
+00:05:12.236 --> 00:05:13.536 A:middle
+some of that expensive work of
+
+00:05:13.536 --> 00:05:14.956 A:middle
+loading things from files or
+
+00:05:14.956 --> 00:05:17.626 A:middle
+reading your database into here
+
+00:05:17.626 --> 00:05:18.766 A:middle
+so that you don't have to do it
+
+00:05:18.766 --> 00:05:19.416 A:middle
+on demand.
+
+00:05:19.636 --> 00:05:21.436 A:middle
+You data is already prepared
+
+00:05:21.596 --> 00:05:22.736 A:middle
+when the cell is needed for
+
+00:05:22.736 --> 00:05:22.956 A:middle
+display.
+
+00:05:23.126 --> 00:05:28.346 A:middle
+So this in most cases can be a
+
+00:05:28.406 --> 00:05:31.346 A:middle
+really big win although while we
+
+00:05:31.346 --> 00:05:32.606 A:middle
+were looking at some of our own
+
+00:05:32.606 --> 00:05:34.546 A:middle
+apps in iOS 12, we actually
+
+00:05:34.546 --> 00:05:36.456 A:middle
+noticed a case where this was
+
+00:05:36.516 --> 00:05:38.006 A:middle
+causing an issue instead of
+
+00:05:38.006 --> 00:05:38.546 A:middle
+helping us.
+
+00:05:39.146 --> 00:05:40.236 A:middle
+So let's take a look at what
+
+00:05:40.236 --> 00:05:42.846 A:middle
+that looked like.
+
+00:05:43.126 --> 00:05:45.476 A:middle
+Now here's an example of a trace
+
+00:05:45.476 --> 00:05:47.156 A:middle
+that we took while scrolling on
+
+00:05:47.156 --> 00:05:48.236 A:middle
+an iPhone 6 Plus.
+
+00:05:49.176 --> 00:05:50.986 A:middle
+The vertical bars across the
+
+00:05:51.046 --> 00:05:53.166 A:middle
+top, those represent frames that
+
+00:05:53.166 --> 00:05:54.166 A:middle
+we want to display.
+
+00:05:55.006 --> 00:05:56.506 A:middle
+The alternating light and dark
+
+00:05:56.586 --> 00:05:58.246 A:middle
+blue colors represent frames
+
+00:05:58.246 --> 00:05:59.896 A:middle
+that we did swap to the display
+
+00:05:59.936 --> 00:06:01.096 A:middle
+as they were changing.
+

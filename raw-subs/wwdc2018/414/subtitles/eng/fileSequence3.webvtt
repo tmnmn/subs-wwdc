@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.596 --> 00:03:01.946 A:middle
+and eventually we get to this
+
+00:03:02.036 --> 00:03:04.756 A:middle
+point where we hit a point where
+
+00:03:04.756 --> 00:03:05.926 A:middle
+in your code where the only
+
+00:03:05.926 --> 00:03:07.236 A:middle
+option is to crash, something
+
+00:03:07.236 --> 00:03:08.006 A:middle
+has gone wrong.
+
+00:03:09.036 --> 00:03:10.516 A:middle
+And ultimately the debugger
+
+00:03:10.516 --> 00:03:12.126 A:middle
+receives a signal that this app
+
+00:03:12.126 --> 00:03:14.986 A:middle
+is about to crash and pauses the
+
+00:03:16.026 --> 00:03:16.106 A:middle
+app.
+
+00:03:16.366 --> 00:03:18.326 A:middle
+Now sometimes you're not always
+
+00:03:18.326 --> 00:03:19.686 A:middle
+conveniently attached with the
+
+00:03:19.686 --> 00:03:20.886 A:middle
+debugger like we are here.
+
+00:03:21.996 --> 00:03:23.006 A:middle
+When you're not attached with
+
+00:03:23.006 --> 00:03:24.736 A:middle
+the debugger the operating
+
+00:03:24.736 --> 00:03:25.846 A:middle
+system will capture this
+
+00:03:25.906 --> 00:03:28.666 A:middle
+backtrace in plaintext and save
+
+00:03:28.666 --> 00:03:29.976 A:middle
+it out to disk in a human
+
+00:03:29.976 --> 00:03:31.056 A:middle
+readable crash log.
+
+00:03:31.666 --> 00:03:34.906 A:middle
+Now the truth is one a release
+
+00:03:34.906 --> 00:03:36.226 A:middle
+build of your app crashes the
+
+00:03:36.226 --> 00:03:37.476 A:middle
+log doesn't actually look this
+
+00:03:37.546 --> 00:03:37.996 A:middle
+pretty.
+
+00:03:38.466 --> 00:03:39.726 A:middle
+What's actually written out is a
+
+00:03:39.726 --> 00:03:41.266 A:middle
+list of binary names and
+
+00:03:41.266 --> 00:03:41.636 A:middle
+addresses.
+
+00:03:41.636 --> 00:03:43.266 A:middle
+This is a snippet from a
+
+00:03:43.266 --> 00:03:44.626 A:middle
+unsymbolicated crash log.
+
+00:03:46.106 --> 00:03:47.566 A:middle
+Now thankfully Xcode takes care
+
+00:03:47.566 --> 00:03:49.146 A:middle
+of symbolicating crash logs so
+
+00:03:49.146 --> 00:03:50.256 A:middle
+that what you'll see are those
+
+00:03:50.506 --> 00:03:51.846 A:middle
+pretty function names, file
+
+00:03:51.846 --> 00:03:53.386 A:middle
+names and line numbers that
+
+00:03:53.386 --> 00:03:54.006 A:middle
+you're familiar with.
+
+00:03:54.626 --> 00:03:58.946 A:middle
+So there are a number of ways to
+
+00:03:58.946 --> 00:04:00.256 A:middle
+access these crash logs.
+

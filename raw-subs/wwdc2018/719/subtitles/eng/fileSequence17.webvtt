@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.626 --> 00:17:00.866 A:middle
+prototyping environment, a lot
+
+00:17:00.866 --> 00:17:01.736 A:middle
+of the memory management is
+
+00:17:01.736 --> 00:17:02.586 A:middle
+taken care of for you.
+
+00:17:02.586 --> 00:17:04.266 A:middle
+So, you don't often run into
+
+00:17:04.266 --> 00:17:05.606 A:middle
+issues of memory pressure and
+
+00:17:05.606 --> 00:17:07.366 A:middle
+memory consumption until it's
+
+00:17:07.366 --> 00:17:09.626 A:middle
+pretty late in the game.
+
+00:17:10.376 --> 00:17:11.886 A:middle
+Another topic, of course, that's
+
+00:17:11.886 --> 00:17:15.016 A:middle
+important to consider is
+
+00:17:15.016 --> 00:17:16.076 A:middle
+performance.
+
+00:17:16.165 --> 00:17:17.886 A:middle
+Oftentimes, the prototypes are
+
+00:17:17.886 --> 00:17:19.796 A:middle
+already using CPU code, and we
+
+00:17:19.796 --> 00:17:21.455 A:middle
+over - sometimes-- we often
+
+00:17:21.455 --> 00:17:22.695 A:middle
+over-estimate the amount of
+
+00:17:22.695 --> 00:17:23.896 A:middle
+performance we can get from
+
+00:17:23.896 --> 00:17:25.536 A:middle
+pointing our CP Code to GP Code,
+
+00:17:25.536 --> 00:17:26.306 A:middle
+thinking that everything is
+
+00:17:26.306 --> 00:17:27.106 A:middle
+going to get real-time.
+
+00:17:27.746 --> 00:17:30.616 A:middle
+So, what if we could catch these
+
+00:17:30.616 --> 00:17:33.106 A:middle
+concerns way, way earlier on in
+
+00:17:33.106 --> 00:17:34.146 A:middle
+our prototyping and workflow?
+
+00:17:35.116 --> 00:17:36.356 A:middle
+Well, we believe we have a
+
+00:17:36.356 --> 00:17:37.086 A:middle
+solution for you.
+
+00:17:37.606 --> 00:17:39.476 A:middle
+And it's called PyCoreImage.
+
+00:17:39.536 --> 00:17:41.136 A:middle
+Python bindings for Core Image.
+
+00:17:42.386 --> 00:17:43.526 A:middle
+So, this is combining the
+
+00:17:43.526 --> 00:17:45.636 A:middle
+high-performance rendering of
+
+00:17:45.636 --> 00:17:48.066 A:middle
+Core Image with the flexibility
+
+00:17:48.216 --> 00:17:49.136 A:middle
+of the Python programming
+
+00:17:49.136 --> 00:17:50.256 A:middle
+language together.
+
+00:17:51.166 --> 00:17:52.366 A:middle
+And by using Core Image, you
+
+00:17:52.366 --> 00:17:54.066 A:middle
+also inherit its support for
+
+00:17:54.066 --> 00:17:56.466 A:middle
+both iOS and Mac OS along with
+
+00:17:56.526 --> 00:17:58.106 A:middle
+more than 200 built-in filters.
+
+00:17:58.536 --> 00:18:00.626 A:middle
+Let's take a look at what's
+

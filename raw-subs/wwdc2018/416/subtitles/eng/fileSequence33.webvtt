@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.936 --> 00:33:00.366 A:middle
+Well, I went looking through the
+
+00:33:00.366 --> 00:33:02.286 A:middle
+documentation from vmmap, and I
+
+00:33:02.286 --> 00:33:03.746 A:middle
+noticed it has this verbose
+
+00:33:03.746 --> 00:33:05.786 A:middle
+flag, which, as the name
+
+00:33:05.786 --> 00:33:07.526 A:middle
+implies, outputs a lot more
+
+00:33:07.696 --> 00:33:08.506 A:middle
+information.
+
+00:33:08.806 --> 00:33:10.256 A:middle
+And I wonder what that can tell
+
+00:33:10.256 --> 00:33:10.446 A:middle
+me.
+
+00:33:11.486 --> 00:33:12.676 A:middle
+So let's go ahead and pass
+
+00:33:12.706 --> 00:33:16.186 A:middle
+verbose and the Memgraph file.
+
+00:33:17.536 --> 00:33:21.266 A:middle
+And again, I only care about CG
+
+00:33:22.306 --> 00:33:24.226 A:middle
+image regions, so I want to use
+
+00:33:24.226 --> 00:33:25.946 A:middle
+grep to filter to just those.
+
+00:33:26.886 --> 00:33:28.396 A:middle
+Oh, now I see there's actually a
+
+00:33:28.396 --> 00:33:29.616 A:middle
+lot more regions.
+
+00:33:30.156 --> 00:33:31.116 A:middle
+What's going on here?
+
+00:33:31.826 --> 00:33:33.576 A:middle
+Well, it turns out that vmmap,
+
+00:33:33.576 --> 00:33:35.166 A:middle
+by default, if it finds
+
+00:33:35.256 --> 00:33:37.686 A:middle
+contiguous regions, it collapses
+
+00:33:37.686 --> 00:33:38.466 A:middle
+them together.
+
+00:33:38.856 --> 00:33:39.896 A:middle
+And in fact, if you look
+
+00:33:39.896 --> 00:33:41.276 A:middle
+starting on the second line
+
+00:33:41.276 --> 00:33:43.346 A:middle
+here, the end address of this
+
+00:33:43.346 --> 00:33:44.596 A:middle
+region is the same as the
+
+00:33:44.596 --> 00:33:46.106 A:middle
+starting address of this one.
+
+00:33:46.426 --> 00:33:47.756 A:middle
+And that pattern continues all
+
+00:33:47.756 --> 00:33:48.496 A:middle
+the way down.
+
+00:33:48.966 --> 00:33:51.076 A:middle
+So vmmap, by default, collapses
+
+00:33:51.076 --> 00:33:52.426 A:middle
+those into a single region.
+
+00:33:52.886 --> 00:33:54.086 A:middle
+But looking at the details here,
+
+00:33:54.086 --> 00:33:54.976 A:middle
+I can see there are actually
+
+00:33:54.976 --> 00:33:55.776 A:middle
+some differences.
+
+00:33:55.836 --> 00:33:57.746 A:middle
+And in particular, some of these
+
+00:33:57.746 --> 00:34:00.826 A:middle
+use a lot more dirty memory and
+

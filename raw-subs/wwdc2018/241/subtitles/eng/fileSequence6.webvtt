@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.326 --> 00:06:00.616 A:middle
+properties mentioned earlier.
+
+00:06:01.136 --> 00:06:03.186 A:middle
+The two properties in the
+
+00:06:03.186 --> 00:06:04.966 A:middle
+protocol are accessibilityDrag
+
+00:06:04.966 --> 00:06:05.916 A:middle
+SourceDescriptors and
+
+00:06:05.916 --> 00:06:06.816 A:middle
+accessibilityDrop
+
+00:06:06.816 --> 00:06:07.686 A:middle
+PointDescriptors.
+
+00:06:09.536 --> 00:06:11.276 A:middle
+DragSourceDescriptors is used to
+
+00:06:11.276 --> 00:06:13.056 A:middle
+expose drag sources that are
+
+00:06:13.056 --> 00:06:14.416 A:middle
+logically associated with an
+
+00:06:14.416 --> 00:06:16.736 A:middle
+element and DropPointDescriptors
+
+00:06:16.846 --> 00:06:18.966 A:middle
+exposes places to drop that are
+
+00:06:18.966 --> 00:06:20.066 A:middle
+logically associated with this
+
+00:06:20.066 --> 00:06:20.516 A:middle
+element.
+
+00:06:21.146 --> 00:06:22.506 A:middle
+These are the properties you use
+
+00:06:22.506 --> 00:06:23.956 A:middle
+to describe to Accessibility
+
+00:06:24.026 --> 00:06:25.646 A:middle
+what can be dragged from and
+
+00:06:25.646 --> 00:06:27.396 A:middle
+dropped into a given element.
+
+00:06:28.556 --> 00:06:30.496 A:middle
+One important point to be aware
+
+00:06:30.496 --> 00:06:31.856 A:middle
+of is that the descriptors must
+
+00:06:31.856 --> 00:06:33.336 A:middle
+reference the View that actually
+
+00:06:33.336 --> 00:06:34.406 A:middle
+has the interaction.
+
+00:06:34.796 --> 00:06:36.216 A:middle
+So, for instance, you shouldn't
+
+00:06:36.216 --> 00:06:37.676 A:middle
+reference a point in your window
+
+00:06:37.676 --> 00:06:38.966 A:middle
+that happens to be within the
+
+00:06:38.966 --> 00:06:40.326 A:middle
+View that hosts the interaction.
+
+00:06:40.486 --> 00:06:41.646 A:middle
+You should specify that view
+
+00:06:41.646 --> 00:06:42.156 A:middle
+itself.
+
+00:06:44.336 --> 00:06:46.206 A:middle
+So, pulling it together; to
+
+00:06:46.206 --> 00:06:47.816 A:middle
+expose a single drag from some
+
+00:06:47.816 --> 00:06:49.036 A:middle
+element doesn't take that much
+
+00:06:49.036 --> 00:06:49.496 A:middle
+code, at all.
+
+00:06:49.776 --> 00:06:51.056 A:middle
+You make a Descriptor that
+
+00:06:51.056 --> 00:06:52.336 A:middle
+specifies that drag by
+
+00:06:52.336 --> 00:06:53.826 A:middle
+specifying a point in the View
+
+00:06:53.826 --> 00:06:55.046 A:middle
+that hosts the interaction and
+
+00:06:55.046 --> 00:06:55.576 A:middle
+giving it a name.
+
+00:06:55.576 --> 00:06:57.166 A:middle
+And then, you set the
+
+00:06:57.166 --> 00:06:58.056 A:middle
+accessibilityDrag
+
+00:06:58.056 --> 00:06:59.736 A:middle
+SourceDescriptors property
+
+00:06:59.736 --> 00:07:00.976 A:middle
+element to an array that
+

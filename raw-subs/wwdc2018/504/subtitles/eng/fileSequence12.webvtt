@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.346 --> 00:12:00.116 A:middle
+belt type approach where you
+
+00:12:00.116 --> 00:12:01.726 A:middle
+have some items, you just want
+
+00:12:01.726 --> 00:12:02.896 A:middle
+to hand it over to the system,
+
+00:12:02.896 --> 00:12:03.916 A:middle
+and the system will play it on
+
+00:12:03.916 --> 00:12:04.426 A:middle
+your behalf.
+
+00:12:05.006 --> 00:12:06.936 A:middle
+And that's exactly what
+
+00:12:06.936 --> 00:12:08.736 A:middle
+WKAudioFileQueuePlayer is for.
+
+00:12:09.086 --> 00:12:12.006 A:middle
+And there's also AVFoundation at
+
+00:12:12.006 --> 00:12:12.696 A:middle
+our disposal.
+
+00:12:16.386 --> 00:12:19.136 A:middle
+So there's AVAudioPlayer and
+
+00:12:19.136 --> 00:12:19.866 A:middle
+AVAudioEngine.
+
+00:12:20.396 --> 00:12:22.966 A:middle
+And prior to watchOS 5, it was
+
+00:12:22.966 --> 00:12:24.396 A:middle
+tied to the workout background
+
+00:12:24.396 --> 00:12:26.486 A:middle
+mode, or when your application
+
+00:12:26.486 --> 00:12:28.196 A:middle
+was foreground and screen on.
+
+00:12:29.406 --> 00:12:31.736 A:middle
+For example, Nike Run Club app
+
+00:12:31.796 --> 00:12:33.086 A:middle
+actually did this exact thing,
+
+00:12:33.086 --> 00:12:34.346 A:middle
+where you're in the middle of a
+
+00:12:34.346 --> 00:12:36.346 A:middle
+run, you want some mindfulness,
+
+00:12:36.686 --> 00:12:39.026 A:middle
+you can play some guided
+
+00:12:39.026 --> 00:12:40.586 A:middle
+meditation with Headspace.
+
+00:12:41.956 --> 00:12:44.546 A:middle
+And prior to watchOS 5,
+
+00:12:44.546 --> 00:12:46.406 A:middle
+background playback was, with
+
+00:12:46.406 --> 00:12:47.756 A:middle
+AVFoundation, was really only
+
+00:12:47.756 --> 00:12:48.936 A:middle
+possible for these types of
+
+00:12:48.936 --> 00:12:49.666 A:middle
+workout apps.
+
+00:12:50.166 --> 00:12:52.666 A:middle
+But new in watchOS 5, there's a
+
+00:12:52.666 --> 00:12:54.296 A:middle
+brand-new audio playback
+
+00:12:54.456 --> 00:12:55.746 A:middle
+background mode, which I'm
+
+00:12:55.746 --> 00:12:56.716 A:middle
+really thrilled for.
+
+00:12:57.846 --> 00:13:00.296 A:middle
+So let's talk about what we have
+

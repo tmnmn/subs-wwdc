@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.496 --> 00:35:00.726 A:middle
+device, we can also guide the
+
+00:35:00.726 --> 00:35:01.956 A:middle
+user to better localization
+
+00:35:01.956 --> 00:35:02.346 A:middle
+process.
+
+00:35:03.116 --> 00:35:04.856 A:middle
+So, when we are, again, in the
+
+00:35:04.856 --> 00:35:06.776 A:middle
+acquisition device, when we are
+
+00:35:06.776 --> 00:35:08.196 A:middle
+in the map state we can take a
+
+00:35:08.196 --> 00:35:10.296 A:middle
+picture of the scene and then,
+
+00:35:10.396 --> 00:35:11.496 A:middle
+ship that together with the
+
+00:35:11.496 --> 00:35:11.946 A:middle
+World map.
+
+00:35:11.986 --> 00:35:13.596 A:middle
+And on the receiving end we can
+
+00:35:13.596 --> 00:35:16.026 A:middle
+ask the user find this view to
+
+00:35:16.026 --> 00:35:17.766 A:middle
+start your shared experience.
+
+00:35:18.386 --> 00:35:20.946 A:middle
+That was how to acquire the
+
+00:35:20.946 --> 00:35:21.336 A:middle
+World map.
+
+00:35:21.506 --> 00:35:22.876 A:middle
+Now, let's see how you can share
+
+00:35:22.876 --> 00:35:24.666 A:middle
+the World map.
+
+00:35:24.966 --> 00:35:26.366 A:middle
+First, you can get the World map
+
+00:35:26.366 --> 00:35:27.386 A:middle
+by simply calling the
+
+00:35:27.496 --> 00:35:29.926 A:middle
+getCurrentWorldMap method in the
+
+00:35:29.926 --> 00:35:30.536 A:middle
+ARSession.
+
+00:35:30.896 --> 00:35:32.596 A:middle
+And this will give you the World
+
+00:35:33.186 --> 00:35:33.286 A:middle
+map.
+
+00:35:34.376 --> 00:35:37.156 A:middle
+The World map is a serializable
+
+00:35:37.156 --> 00:35:37.476 A:middle
+class.
+
+00:35:37.566 --> 00:35:38.856 A:middle
+So, then we can simply use
+
+00:35:38.956 --> 00:35:40.576 A:middle
+NSKeyedArchiver utility to
+
+00:35:40.576 --> 00:35:42.106 A:middle
+serialize it to a binary stream
+
+00:35:42.106 --> 00:35:44.446 A:middle
+of data, which then, you can
+
+00:35:44.446 --> 00:35:46.276 A:middle
+either save to disk in case of a
+
+00:35:46.276 --> 00:35:48.086 A:middle
+single user persistent
+
+00:35:48.166 --> 00:35:48.946 A:middle
+application.
+
+00:35:49.706 --> 00:35:52.126 A:middle
+Or you can share it across
+
+00:35:52.156 --> 00:35:52.636 A:middle
+devices.
+
+00:35:52.906 --> 00:35:54.626 A:middle
+And for that, you can use the
+
+00:35:54.626 --> 00:35:56.176 A:middle
+MultiPeerConnectivity framework,
+
+00:35:56.936 --> 00:35:58.196 A:middle
+which has great feature like
+
+00:35:58.196 --> 00:36:00.186 A:middle
+automatic device, nearby device
+

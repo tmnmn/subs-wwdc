@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.176 --> 00:21:00.906 A:middle
+And if we did that, we would end
+
+00:21:00.906 --> 00:21:02.226 A:middle
+up with a structure that looks
+
+00:21:02.226 --> 00:21:02.936 A:middle
+something like this.
+
+00:21:03.916 --> 00:21:06.006 A:middle
+At the top level, we have our
+
+00:21:06.006 --> 00:21:07.636 A:middle
+main app context, which is our
+
+00:21:07.636 --> 00:21:08.796 A:middle
+Quizzler app.
+
+00:21:09.246 --> 00:21:11.256 A:middle
+Beneath that, we have our
+
+00:21:11.256 --> 00:21:12.776 A:middle
+Addition Context and a
+
+00:21:12.776 --> 00:21:13.986 A:middle
+Multiplication Context.
+
+00:21:14.656 --> 00:21:15.966 A:middle
+And then beneath each one of
+
+00:21:15.966 --> 00:21:17.886 A:middle
+those, we have the Scoreboard
+
+00:21:17.886 --> 00:21:20.316 A:middle
+Context and then the actual Quiz
+
+00:21:20.316 --> 00:21:20.866 A:middle
+Context.
+
+00:21:21.866 --> 00:21:24.846 A:middle
+Now, Pavel told us that a
+
+00:21:24.846 --> 00:21:26.836 A:middle
+context is a part of our
+
+00:21:26.836 --> 00:21:29.156 A:middle
+application that a teacher will
+
+00:21:29.156 --> 00:21:30.376 A:middle
+assign to their students.
+
+00:21:31.246 --> 00:21:32.406 A:middle
+So, if we keep that in mind,
+
+00:21:32.716 --> 00:21:33.986 A:middle
+let's first talk about the
+
+00:21:33.986 --> 00:21:34.926 A:middle
+Scoreboard Context.
+
+00:21:36.146 --> 00:21:39.376 A:middle
+Well, what is the Scoreboard
+
+00:21:39.376 --> 00:21:39.876 A:middle
+Context?
+
+00:21:40.476 --> 00:21:42.016 A:middle
+It's all the users' high scores.
+
+00:21:42.916 --> 00:21:44.726 A:middle
+Now, does that really make sense
+
+00:21:45.076 --> 00:21:46.846 A:middle
+for a teacher to assign to their
+
+00:21:46.846 --> 00:21:47.426 A:middle
+students?
+
+00:21:48.756 --> 00:21:49.766 A:middle
+Not really.
+
+00:21:50.066 --> 00:21:51.416 A:middle
+So, we're going to go ahead and
+
+00:21:51.416 --> 00:21:52.566 A:middle
+remove that.
+
+00:21:53.056 --> 00:21:54.296 A:middle
+Now, we're left with a structure
+
+00:21:54.436 --> 00:21:55.416 A:middle
+that looks something like this.
+
+00:21:56.646 --> 00:21:58.636 A:middle
+So, next let's focus on the
+
+00:21:58.636 --> 00:21:59.566 A:middle
+Addition Context.
+

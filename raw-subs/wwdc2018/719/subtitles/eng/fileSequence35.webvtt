@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.536 --> 00:35:00.986 A:middle
+kernels inline and execute them
+
+00:35:00.986 --> 00:35:02.476 A:middle
+on the fly and modify them on
+
+00:35:02.476 --> 00:35:02.836 A:middle
+the fly.
+
+00:35:02.916 --> 00:35:04.000 A:middle
+So, let's take a look at that.
+
+00:35:09.046 --> 00:35:09.216 A:middle
+All right.
+
+00:35:09.786 --> 00:35:11.406 A:middle
+So, the first thing I want to
+
+00:35:11.406 --> 00:35:12.736 A:middle
+show is how to use color
+
+00:35:12.736 --> 00:35:13.206 A:middle
+kernels.
+
+00:35:13.356 --> 00:35:14.956 A:middle
+So, color kernels are kernels
+
+00:35:14.956 --> 00:35:16.626 A:middle
+that only take a pixel in and
+
+00:35:16.626 --> 00:35:18.796 A:middle
+spit a pixel out and don't make
+
+00:35:18.796 --> 00:35:20.466 A:middle
+any other samples around that
+
+00:35:20.466 --> 00:35:20.856 A:middle
+pixel.
+
+00:35:21.186 --> 00:35:22.866 A:middle
+So, here's our input image and
+
+00:35:22.866 --> 00:35:23.576 A:middle
+here's our kernel.
+
+00:35:23.826 --> 00:35:25.346 A:middle
+So what we actually get in is a
+
+00:35:25.346 --> 00:35:27.566 A:middle
+color and we turn a color out.
+
+00:35:27.716 --> 00:35:30.506 A:middle
+So, let's take a look at this
+
+00:35:30.506 --> 00:35:31.076 A:middle
+effect here.
+
+00:35:31.076 --> 00:35:32.566 A:middle
+I'm going to be swapping my red
+
+00:35:32.566 --> 00:35:34.246 A:middle
+and blue channels with my blue
+
+00:35:34.246 --> 00:35:35.356 A:middle
+and red channels and we'll be
+
+00:35:35.356 --> 00:35:36.006 A:middle
+inverting them.
+
+00:35:36.826 --> 00:35:38.226 A:middle
+Not a terribly exciting effect,
+
+00:35:38.226 --> 00:35:39.376 A:middle
+but what I want to show you is
+
+00:35:39.376 --> 00:35:41.476 A:middle
+that I can do things like, start
+
+00:35:42.676 --> 00:35:44.396 A:middle
+typing away, and say, maybe I
+
+00:35:44.396 --> 00:35:45.966 A:middle
+want to scale my red channel by
+
+00:35:45.966 --> 00:35:49.226 A:middle
+my blue channel and I want to
+
+00:35:49.226 --> 00:35:50.366 A:middle
+just play with the amount of
+
+00:35:50.366 --> 00:35:51.756 A:middle
+scaling I'm playing here, so we
+
+00:35:51.756 --> 00:35:54.716 A:middle
+can go from .25 to pretty high
+
+00:35:54.716 --> 00:35:56.946 A:middle
+values if we want to and
+
+00:35:56.946 --> 00:35:57.916 A:middle
+generate interesting effects
+
+00:35:57.916 --> 00:35:58.116 A:middle
+here.
+
+00:35:58.726 --> 00:36:00.336 A:middle
+It's extremely powerful, and
+

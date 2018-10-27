@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.976 --> 00:09:01.556 A:middle
+for scrolling, you want to keep
+
+00:09:01.606 --> 00:09:04.196 A:middle
+the CPU as low as possible to
+
+00:09:04.196 --> 00:09:05.186 A:middle
+preserve battery life.
+
+00:09:05.526 --> 00:09:06.246 A:middle
+So that was great.
+
+00:09:07.006 --> 00:09:08.566 A:middle
+What wasn't great is that it
+
+00:09:08.646 --> 00:09:10.176 A:middle
+took a little bit of time before
+
+00:09:10.176 --> 00:09:11.226 A:middle
+it could ramp up.
+
+00:09:11.426 --> 00:09:12.716 A:middle
+You heard about this yesterday
+
+00:09:12.816 --> 00:09:14.566 A:middle
+in the keynote.
+
+00:09:14.726 --> 00:09:17.396 A:middle
+Now when it did finally ramp up,
+
+00:09:17.396 --> 00:09:18.876 A:middle
+it was already too late to have
+
+00:09:18.876 --> 00:09:20.126 A:middle
+completed the work to load the
+
+00:09:20.126 --> 00:09:21.606 A:middle
+cell that we needed to display
+
+00:09:21.676 --> 00:09:23.326 A:middle
+and so we ended up missing that
+
+00:09:23.376 --> 00:09:24.016 A:middle
+frame again.
+
+00:09:24.806 --> 00:09:26.446 A:middle
+Now because we own the full
+
+00:09:26.446 --> 00:09:27.616 A:middle
+software stack from top to
+
+00:09:27.616 --> 00:09:29.976 A:middle
+bottom, in iOS 12 we took all
+
+00:09:29.976 --> 00:09:31.316 A:middle
+the information we have in the
+
+00:09:31.436 --> 00:09:33.606 A:middle
+high-level UIKit framework about
+
+00:09:33.676 --> 00:09:34.916 A:middle
+what scrolling is happening and
+
+00:09:34.916 --> 00:09:36.446 A:middle
+when these critical sections are
+
+00:09:36.446 --> 00:09:38.016 A:middle
+occurring and pass that
+
+00:09:38.016 --> 00:09:39.706 A:middle
+information all the way down to
+
+00:09:39.706 --> 00:09:41.296 A:middle
+the low-level CPU performance
+
+00:09:41.326 --> 00:09:42.996 A:middle
+controller so that it can now
+
+00:09:43.116 --> 00:09:45.116 A:middle
+much more intelligently reason
+
+00:09:45.336 --> 00:09:46.546 A:middle
+about the work that's happening
+
+00:09:46.756 --> 00:09:48.176 A:middle
+and predict both when these
+
+00:09:48.236 --> 00:09:50.346 A:middle
+bursts will occur and how much
+
+00:09:50.346 --> 00:09:51.926 A:middle
+CPU performance will be required
+
+00:09:52.006 --> 00:09:53.626 A:middle
+to meet the deadline for the
+
+00:09:53.626 --> 00:09:55.066 A:middle
+historical demand that your app
+
+00:09:55.066 --> 00:09:55.596 A:middle
+has had.
+
+00:09:56.486 --> 00:09:58.136 A:middle
+So once that change happens,
+
+00:09:58.716 --> 00:10:00.346 A:middle
+where the load starts right
+

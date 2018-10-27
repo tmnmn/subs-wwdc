@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:01.536 --> 00:17:03.026 A:middle
+Similarly, a dictionary can
+
+00:17:03.026 --> 00:17:04.846 A:middle
+represent a model like a listing
+
+00:17:04.846 --> 00:17:06.616 A:middle
+here, or it can represent
+
+00:17:06.616 --> 00:17:07.976 A:middle
+arbitrary customer data that we
+
+00:17:07.976 --> 00:17:08.746 A:middle
+know nothing about.
+
+00:17:10.136 --> 00:17:11.366 A:middle
+Instead of performing the same
+
+00:17:11.366 --> 00:17:12.726 A:middle
+validations everywhere to make
+
+00:17:12.726 --> 00:17:13.896 A:middle
+sure all the fields that we care
+
+00:17:13.896 --> 00:17:15.665 A:middle
+about are there, isn't it nicer
+
+00:17:15.665 --> 00:17:16.476 A:middle
+to work with our own model
+
+00:17:16.476 --> 00:17:18.386 A:middle
+types, where that guarantee is
+
+00:17:18.386 --> 00:17:19.016 A:middle
+always present?
+
+00:17:19.556 --> 00:17:23.326 A:middle
+It is. And in our case, we want
+
+00:17:23.326 --> 00:17:24.665 A:middle
+to work with structured data
+
+00:17:24.705 --> 00:17:25.776 A:middle
+wherever possible.
+
+00:17:25.876 --> 00:17:27.165 A:middle
+We can use primitive date as a
+
+00:17:27.165 --> 00:17:28.356 A:middle
+building block to get there.
+
+00:17:28.356 --> 00:17:29.516 A:middle
+But we want to work with that
+
+00:17:29.516 --> 00:17:30.046 A:middle
+form of data.
+
+00:17:31.286 --> 00:17:32.116 A:middle
+So, let's take a look at how we
+
+00:17:32.116 --> 00:17:35.506 A:middle
+can do that.
+
+00:17:35.506 --> 00:17:37.366 A:middle
+Elsewhere in my app, I have a
+
+00:17:37.366 --> 00:17:38.836 A:middle
+purchase type, which does just
+
+00:17:38.836 --> 00:17:39.166 A:middle
+this.
+
+00:17:40.556 --> 00:17:41.436 A:middle
+When a customer makes a
+
+00:17:41.436 --> 00:17:43.416 A:middle
+purchase, I store that data to
+
+00:17:43.416 --> 00:17:44.866 A:middle
+disc, so that later, when they
+
+00:17:44.866 --> 00:17:46.016 A:middle
+open the app, even if they're
+
+00:17:46.016 --> 00:17:47.176 A:middle
+not connected to the network,
+
+00:17:47.496 --> 00:17:48.426 A:middle
+they can view their purchase
+
+00:17:48.426 --> 00:17:48.796 A:middle
+history.
+
+00:17:50.096 --> 00:17:51.576 A:middle
+Each purchase keeps track of the
+
+00:17:51.576 --> 00:17:52.446 A:middle
+product listing it was
+
+00:17:52.446 --> 00:17:54.846 A:middle
+associated with, and when the
+
+00:17:54.846 --> 00:17:55.946 A:middle
+purchase was made, and a
+
+00:17:55.946 --> 00:17:56.386 A:middle
+receipt.
+
+00:17:57.366 --> 00:17:59.476 A:middle
+I can save it to disc in this
+
+00:17:59.476 --> 00:18:01.496 A:middle
+way using NS coding and NS key
+

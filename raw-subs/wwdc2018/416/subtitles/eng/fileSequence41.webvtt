@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.776 --> 00:41:00.746 A:middle
+UIGraphicsBegin ImageContext
+
+00:41:00.746 --> 00:41:02.886 A:middle
+WithOptions and the
+
+00:41:02.886 --> 00:41:04.866 A:middle
+UIGraphicsEnd ImageContext,
+
+00:41:04.866 --> 00:41:06.086 A:middle
+which I remember Kyle said you
+
+00:41:06.086 --> 00:41:06.846 A:middle
+shouldn't be using.
+
+00:41:06.846 --> 00:41:08.126 A:middle
+There's a better API to use in
+
+00:41:08.126 --> 00:41:08.986 A:middle
+those circumstances.
+
+00:41:09.346 --> 00:41:10.946 A:middle
+So that's something I definitely
+
+00:41:10.946 --> 00:41:12.386 A:middle
+want to come back to, but the
+
+00:41:12.386 --> 00:41:13.606 A:middle
+first thing I need is I need
+
+00:41:13.606 --> 00:41:14.576 A:middle
+some kind of baseline.
+
+00:41:14.576 --> 00:41:15.716 A:middle
+I need to get an idea of how
+
+00:41:15.716 --> 00:41:17.736 A:middle
+much memory my app is using so I
+
+00:41:17.736 --> 00:41:18.886 A:middle
+can make sure my changes are
+
+00:41:18.886 --> 00:41:19.826 A:middle
+making a difference.
+
+00:41:20.496 --> 00:41:21.726 A:middle
+So I'm going to go ahead and run
+
+00:41:21.726 --> 00:41:24.566 A:middle
+the application, and I'm going
+
+00:41:24.566 --> 00:41:26.786 A:middle
+to go to the debug navigator and
+
+00:41:26.786 --> 00:41:28.456 A:middle
+look at the memory report.
+
+00:41:28.626 --> 00:41:30.896 A:middle
+So now, I can see the memory my
+
+00:41:30.896 --> 00:41:32.566 A:middle
+app is using as I run it.
+
+00:41:33.366 --> 00:41:35.946 A:middle
+Now, I really like this image of
+
+00:41:35.946 --> 00:41:37.266 A:middle
+Saturn's north pole.
+
+00:41:37.836 --> 00:41:39.766 A:middle
+It's this weird hexagon shape,
+
+00:41:39.836 --> 00:41:41.346 A:middle
+which is both kind of cool and a
+
+00:41:41.346 --> 00:41:42.356 A:middle
+little freaky.
+
+00:41:42.816 --> 00:41:44.326 A:middle
+So let's take a look at that,
+
+00:41:44.326 --> 00:41:45.996 A:middle
+and let's apply the filter and
+
+00:41:45.996 --> 00:41:46.716 A:middle
+see what we get.
+
+00:41:47.706 --> 00:41:51.336 A:middle
+So 1 gig, 3 gigs, 4 gigs, 6
+
+00:41:51.336 --> 00:41:52.576 A:middle
+gigs, 7 gigs.
+
+00:41:53.156 --> 00:41:54.706 A:middle
+This is bad.
+
+00:41:54.856 --> 00:41:58.636 A:middle
+And actually, this actually
+
+00:41:58.636 --> 00:41:59.846 A:middle
+brings up a good point, which is
+
+00:41:59.946 --> 00:42:01.466 A:middle
+this would not fly on a device
+

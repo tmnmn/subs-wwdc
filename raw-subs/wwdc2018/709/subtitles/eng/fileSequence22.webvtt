@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.826 --> 00:22:00.596 A:middle
+your app.
+
+00:22:00.866 --> 00:22:02.496 A:middle
+So let's take a look at model
+
+00:22:02.496 --> 00:22:02.956 A:middle
+conversion.
+
+00:22:03.756 --> 00:22:05.396 A:middle
+So if you have used one of our
+
+00:22:05.396 --> 00:22:06.916 A:middle
+converters, or even if you have
+
+00:22:06.916 --> 00:22:08.996 A:middle
+not, it's a really simple API.
+
+00:22:08.996 --> 00:22:10.276 A:middle
+It's just a call to one
+
+00:22:10.276 --> 00:22:10.706 A:middle
+function.
+
+00:22:11.146 --> 00:22:14.096 A:middle
+This is how it looks for the
+
+00:22:14.166 --> 00:22:15.076 A:middle
+Keras converter.
+
+00:22:15.466 --> 00:22:17.536 A:middle
+And it's very similar for say
+
+00:22:17.656 --> 00:22:19.396 A:middle
+the ONNX converter or the
+
+00:22:19.396 --> 00:22:21.416 A:middle
+TensorFlow converter.
+
+00:22:21.776 --> 00:22:22.976 A:middle
+Now when you call this function,
+
+00:22:23.406 --> 00:22:25.626 A:middle
+mostly everything goes right.
+
+00:22:26.006 --> 00:22:27.656 A:middle
+But sometimes you might get an
+
+00:22:27.776 --> 00:22:29.156 A:middle
+error message like this.
+
+00:22:30.496 --> 00:22:32.826 A:middle
+It might say, "Hey, unsupported
+
+00:22:32.826 --> 00:22:34.146 A:middle
+operation of such-and-such
+
+00:22:34.146 --> 00:22:34.366 A:middle
+kind."
+
+00:22:35.086 --> 00:22:37.546 A:middle
+Now if that happens to you, you
+
+00:22:37.586 --> 00:22:39.286 A:middle
+only need to do a little bit
+
+00:22:39.286 --> 00:22:40.886 A:middle
+more to get past this error.
+
+00:22:41.666 --> 00:22:43.576 A:middle
+More specifically, such an error
+
+00:22:43.576 --> 00:22:44.896 A:middle
+message is an indication that
+
+00:22:44.896 --> 00:22:47.166 A:middle
+you should be using a custom
+
+00:22:47.166 --> 00:22:47.346 A:middle
+layer.
+
+00:22:48.976 --> 00:22:50.556 A:middle
+And before I show you what is
+
+00:22:50.556 --> 00:22:51.946 A:middle
+the little bit of extra effort
+
+00:22:51.946 --> 00:22:53.016 A:middle
+that you need to do to convert,
+
+00:22:53.016 --> 00:22:55.816 A:middle
+let's look at a few examples
+
+00:22:55.816 --> 00:22:57.156 A:middle
+where you would need to use a
+
+00:22:57.156 --> 00:22:57.656 A:middle
+custom layer.
+

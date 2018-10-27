@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.676 --> 00:23:02.736 A:middle
+endpoint, which is v1/beta
+
+00:23:02.936 --> 00:23:03.616 A:middle
+testers.
+
+00:23:04.976 --> 00:23:06.746 A:middle
+And we'll also need to provide
+
+00:23:06.746 --> 00:23:08.086 A:middle
+the payload that looks like
+
+00:23:08.086 --> 00:23:08.286 A:middle
+this.
+
+00:23:08.286 --> 00:23:10.996 A:middle
+It has a type of beta testers
+
+00:23:11.126 --> 00:23:12.136 A:middle
+and a set of attribute.
+
+00:23:12.326 --> 00:23:13.906 A:middle
+So we'll create tester that's
+
+00:23:13.906 --> 00:23:16.396 A:middle
+called Kate Bell and this also
+
+00:23:16.396 --> 00:23:18.736 A:middle
+has a relationship to the beta
+
+00:23:18.736 --> 00:23:20.266 A:middle
+Groups and this will create Beta
+
+00:23:20.266 --> 00:23:22.046 A:middle
+Tester and also assign to the
+
+00:23:22.046 --> 00:23:23.226 A:middle
+beta Group at the same time.
+
+00:23:24.086 --> 00:23:25.246 A:middle
+So if you paste the id of the
+
+00:23:25.246 --> 00:23:27.396 A:middle
+beta Group we just created, this
+
+00:23:27.396 --> 00:23:29.396 A:middle
+will assign the tester to the
+
+00:23:29.396 --> 00:23:30.056 A:middle
+WWDC Group.
+
+00:23:30.056 --> 00:23:33.666 A:middle
+And we get a 201 CREATED
+
+00:23:33.666 --> 00:23:35.076 A:middle
+response and it looks like the
+
+00:23:35.076 --> 00:23:36.746 A:middle
+tester is created and also
+
+00:23:36.746 --> 00:23:37.586 A:middle
+assigned to the group at the
+
+00:23:37.586 --> 00:23:38.156 A:middle
+same time.
+
+00:23:39.086 --> 00:23:40.526 A:middle
+While we're here, let's add one
+
+00:23:40.526 --> 00:23:42.366 A:middle
+more tester and all we need to
+
+00:23:42.366 --> 00:23:43.786 A:middle
+do is simply replace this
+
+00:23:43.786 --> 00:23:45.646 A:middle
+attribute portion with a
+
+00:23:45.646 --> 00:23:48.436 A:middle
+different person's name and this
+
+00:23:48.436 --> 00:23:50.216 A:middle
+will create John Appleseed to
+
+00:23:50.416 --> 00:23:52.926 A:middle
+the same group.
+
+00:23:54.626 --> 00:23:56.916 A:middle
+And again, we get a 201 CREATED
+
+00:23:56.916 --> 00:23:57.456 A:middle
+response.
+
+00:23:58.196 --> 00:23:59.766 A:middle
+So we just added two testers to
+
+00:23:59.766 --> 00:24:01.796 A:middle
+the group and now let's confirm
+

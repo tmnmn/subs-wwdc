@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:57.716 --> 00:20:00.186 A:middle
+operations, remove(at:) and
+
+00:20:00.186 --> 00:20:02.756 A:middle
+insert(at:), which makes this,
+
+00:20:03.246 --> 00:20:04.786 A:middle
+you guessed it, n squared.
+
+00:20:06.246 --> 00:20:08.526 A:middle
+In fact, that same problem
+
+00:20:08.526 --> 00:20:10.076 A:middle
+showed up in every one of my
+
+00:20:10.076 --> 00:20:11.076 A:middle
+other four commands.
+
+00:20:12.516 --> 00:20:14.046 A:middle
+All of the implementations here
+
+00:20:14.386 --> 00:20:16.196 A:middle
+loop over an array, performing
+
+00:20:16.196 --> 00:20:17.936 A:middle
+insertions and removals, which
+
+00:20:17.936 --> 00:20:19.126 A:middle
+means they're all quadratic.
+
+00:20:19.626 --> 00:20:23.096 A:middle
+Now, I was kind of discouraged
+
+00:20:23.096 --> 00:20:24.996 A:middle
+at this point, so I asked Crusty
+
+00:20:24.996 --> 00:20:26.106 A:middle
+if he'd look at them with me.
+
+00:20:27.406 --> 00:20:29.106 A:middle
+He said, "Can't stay too late,"
+
+00:20:29.186 --> 00:20:31.156 A:middle
+he said, "I got my ballroom
+
+00:20:31.156 --> 00:20:33.096 A:middle
+dancing tonight, but I guess we
+
+00:20:33.226 --> 00:20:34.546 A:middle
+better get a move on."
+
+00:20:35.306 --> 00:20:37.486 A:middle
+So, I pulled up bringToFront,
+
+00:20:38.686 --> 00:20:40.946 A:middle
+and Crusty's first question was,
+
+00:20:42.156 --> 00:20:44.546 A:middle
+"What does it actually do?"
+
+00:20:45.846 --> 00:20:47.566 A:middle
+"Well," I said, "there's a while
+
+00:20:47.566 --> 00:20:49.426 A:middle
+loop and j tracks the insertion
+
+00:20:49.426 --> 00:20:51.266 A:middle
+point and i tracks the element
+
+00:20:51.266 --> 00:20:51.906 A:middle
+we're looking at."
+
+00:20:52.226 --> 00:20:54.216 A:middle
+"In words, not in codes," said
+
+00:20:54.246 --> 00:20:54.666 A:middle
+Crusty.
+
+00:20:55.706 --> 00:20:57.126 A:middle
+"Describe it."
+
+00:20:58.146 --> 00:20:59.286 A:middle
+"Okay. Let's see.
+
+00:20:59.776 --> 00:21:01.616 A:middle
+It moves the selected shapes to
+

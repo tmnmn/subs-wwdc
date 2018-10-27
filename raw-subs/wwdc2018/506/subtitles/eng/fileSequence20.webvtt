@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.706 --> 00:20:02.846 A:middle
+And we'll notice that our markup
+
+00:20:02.846 --> 00:20:04.446 A:middle
+looks a little weird on the
+
+00:20:04.446 --> 00:20:05.346 A:middle
+left-hand side.
+
+00:20:05.856 --> 00:20:06.926 A:middle
+We got a couple of buttons that
+
+00:20:06.926 --> 00:20:09.486 A:middle
+are magically floating, and the
+
+00:20:09.486 --> 00:20:10.826 A:middle
+artwork is obviously empty.
+
+00:20:11.396 --> 00:20:15.106 A:middle
+And this is because MusicKit JS
+
+00:20:15.176 --> 00:20:16.756 A:middle
+assumes that if you're
+
+00:20:16.756 --> 00:20:18.456 A:middle
+configuring it with the meta
+
+00:20:18.456 --> 00:20:20.066 A:middle
+tags, that you want declarative
+
+00:20:20.066 --> 00:20:20.886 A:middle
+markup enabled.
+
+00:20:21.246 --> 00:20:22.256 A:middle
+When you don't provide that
+
+00:20:22.256 --> 00:20:24.156 A:middle
+configuration, it assumes you're
+
+00:20:24.156 --> 00:20:25.776 A:middle
+running JavaScript and you don't
+
+00:20:25.776 --> 00:20:26.756 A:middle
+want declarative markup.
+
+00:20:26.786 --> 00:20:28.856 A:middle
+But we provide a hook for you to
+
+00:20:28.856 --> 00:20:30.146 A:middle
+re-enable that with JavaScript.
+
+00:20:30.616 --> 00:20:35.486 A:middle
+We can configure MusicKit JS by
+
+00:20:35.486 --> 00:20:36.956 A:middle
+listening to the MusicKit loaded
+
+00:20:36.956 --> 00:20:37.946 A:middle
+event that's fired on the
+
+00:20:37.946 --> 00:20:38.456 A:middle
+document.
+
+00:20:38.976 --> 00:20:40.646 A:middle
+This lets us know that MusicKit
+
+00:20:40.646 --> 00:20:42.016 A:middle
+JS is ready to be used and
+
+00:20:42.016 --> 00:20:43.716 A:middle
+configured and playback can
+
+00:20:43.716 --> 00:20:44.076 A:middle
+happen.
+
+00:20:44.576 --> 00:20:46.926 A:middle
+We can configure our application
+
+00:20:46.926 --> 00:20:48.166 A:middle
+name just like we did with the
+
+00:20:48.166 --> 00:20:49.986 A:middle
+meta tags, but we now have an
+
+00:20:49.986 --> 00:20:50.806 A:middle
+attribute that says
+
+00:20:50.806 --> 00:20:52.226 A:middle
+declarativeMarkup that we can
+
+00:20:52.226 --> 00:20:54.756 A:middle
+set to true, which lets MusicKit
+
+00:20:54.756 --> 00:20:55.916 A:middle
+JS know that we're running in a
+
+00:20:55.916 --> 00:20:57.276 A:middle
+mixed mode and we want those
+
+00:20:57.276 --> 00:20:58.526 A:middle
+declarative markup features to
+
+00:20:58.526 --> 00:21:00.000 A:middle
+be enabled.
+

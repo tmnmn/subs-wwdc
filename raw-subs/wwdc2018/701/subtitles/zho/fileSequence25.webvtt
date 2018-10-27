@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.265 --> 00:25:01.068 align:middle line:-2
+vImageMatrixMultiply
+需要一个preBias参数
+
+00:25:01.301 --> 00:25:04.805 align:middle line:-2
+在这个例子中为-128
+以消除偏差
+
+00:25:06.106 --> 00:25:09.243 align:middle line:-1
+由于饱和度是浮点数
+
+00:25:09.309 --> 00:25:11.111 align:middle line:-1
+而图像是一个整数
+
+00:25:11.745 --> 00:25:16.016 align:middle line:-2
+我们希望先将此饱和度值
+转换为定点格式
+
+00:25:16.283 --> 00:25:21.388 align:middle line:-2
+我们选择Q12作为定点格式
+因此令divisor值为0x1000
+
+00:25:22.756 --> 00:25:25.859 align:middle line:-2
+再是postBias参数
+其值为128乘以divisor
+
+00:25:25.926 --> 00:25:27.995 align:middle line:-1
+以此将偏差放回像素
+
+00:25:30.430 --> 00:25:32.799 align:middle line:-1
+矩阵本身非常简单
+
+00:25:33.033 --> 00:25:37.337 align:middle line:-2
+我们所要做的
+只是对CbCr信道进行缩放
+
+00:25:37.471 --> 00:25:39.606 align:middle line:-1
+所以矩阵本身就是一个缩放器
+
+00:25:39.806 --> 00:25:44.044 align:middle line:-1
+将CbCr信道与该缩放器相乘
+
+00:25:45.546 --> 00:25:49.249 align:middle line:-2
+有了所需的所有信息
+调用vImageMatrixMultiply
+
+00:25:49.883 --> 00:25:52.920 align:middle line:-1
+只需一行代码 一个函数调用
+
+00:25:53.120 --> 00:25:55.522 align:middle line:-1
+你就可以实现这个饱和效果
+
+00:25:57.157 --> 00:25:59.826 align:middle line:-1
+现在让我们回到需要采取的其他步骤
+

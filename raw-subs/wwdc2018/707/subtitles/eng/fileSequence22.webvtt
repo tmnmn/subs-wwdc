@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.336 --> 00:22:00.026 A:middle
+So let's do that.
+
+00:22:01.436 --> 00:22:03.136 A:middle
+And of course, we need to make
+
+00:22:03.136 --> 00:22:04.806 A:middle
+sure that we always ask for
+
+00:22:04.806 --> 00:22:06.476 A:middle
+authorization when we need it.
+
+00:22:07.216 --> 00:22:09.516 A:middle
+In my case here, I want to do
+
+00:22:09.516 --> 00:22:11.586 A:middle
+that every time the user is
+
+00:22:11.586 --> 00:22:14.196 A:middle
+presented with this UI so that I
+
+00:22:14.196 --> 00:22:15.416 A:middle
+can make sure that I have the
+
+00:22:15.416 --> 00:22:17.346 A:middle
+authorization before starting a
+
+00:22:17.346 --> 00:22:17.736 A:middle
+workout.
+
+00:22:19.076 --> 00:22:20.896 A:middle
+So this view here is backed by
+
+00:22:20.896 --> 00:22:24.006 A:middle
+my workoutStartView Watchkit
+
+00:22:24.006 --> 00:22:25.746 A:middle
+interface controller, and I'm
+
+00:22:25.746 --> 00:22:27.506 A:middle
+going to go ahead and implement
+
+00:22:28.046 --> 00:22:29.726 A:middle
+the authorization in the
+
+00:22:29.726 --> 00:22:31.506 A:middle
+didAppear method.
+
+00:22:33.636 --> 00:22:36.156 A:middle
+So first, my typesToShare here
+
+00:22:36.156 --> 00:22:37.746 A:middle
+is workout because I want to be
+
+00:22:37.746 --> 00:22:39.616 A:middle
+able to save a workout at the
+
+00:22:39.616 --> 00:22:39.846 A:middle
+end.
+
+00:22:42.376 --> 00:22:44.296 A:middle
+Next, I would like to read
+
+00:22:44.486 --> 00:22:47.206 A:middle
+heartRate, activeEnergyBurned,
+
+00:22:47.846 --> 00:22:48.726 A:middle
+as well as
+
+00:22:48.906 --> 00:22:50.106 A:middle
+distanceWalkingRunning.
+
+00:22:50.626 --> 00:22:53.256 A:middle
+Once I have my typesToShare and
+
+00:22:53.256 --> 00:22:55.836 A:middle
+typesToRead, I just need to call
+
+00:22:56.216 --> 00:22:57.966 A:middle
+requestAuthorization on the
+
+00:22:57.966 --> 00:23:01.796 A:middle
+healthStore and pass the types.
+

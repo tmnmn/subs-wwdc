@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.856 --> 00:35:00.966 A:middle
+We can use the
+
+00:35:00.966 --> 00:35:02.366 A:middle
+requiredUserInfoKeys.
+
+00:35:03.486 --> 00:35:05.046 A:middle
+RequiredUserInfoKeys is an
+
+00:35:05.046 --> 00:35:06.706 A:middle
+existing property of a user
+
+00:35:06.706 --> 00:35:07.236 A:middle
+activity.
+
+00:35:07.876 --> 00:35:09.406 A:middle
+It represents the minimal amount
+
+00:35:09.406 --> 00:35:11.066 A:middle
+of information that is necessary
+
+00:35:11.066 --> 00:35:12.866 A:middle
+to restore the app to the state
+
+00:35:12.866 --> 00:35:13.806 A:middle
+that the user activity
+
+00:35:13.806 --> 00:35:14.336 A:middle
+represents.
+
+00:35:14.336 --> 00:35:17.366 A:middle
+And for suggestions it will be
+
+00:35:17.366 --> 00:35:19.216 A:middle
+used to determine which keys of
+
+00:35:19.216 --> 00:35:21.026 A:middle
+the user info dictionary will be
+
+00:35:21.026 --> 00:35:22.986 A:middle
+used to compare when looking for
+
+00:35:22.986 --> 00:35:23.466 A:middle
+patterns.
+
+00:35:24.476 --> 00:35:25.856 A:middle
+Let's apply this to a previous
+
+00:35:25.856 --> 00:35:26.326 A:middle
+example.
+
+00:35:27.916 --> 00:35:29.166 A:middle
+Now we specify that
+
+00:35:29.166 --> 00:35:31.246 A:middle
+requiredUserInfoKeys are soup
+
+00:35:31.436 --> 00:35:32.176 A:middle
+and quantity.
+
+00:35:32.726 --> 00:35:34.076 A:middle
+Again, we donate the user
+
+00:35:34.076 --> 00:35:36.026 A:middle
+activity where the soup is
+
+00:35:36.026 --> 00:35:38.066 A:middle
+tomato, the quantity is 1, and
+
+00:35:38.066 --> 00:35:39.226 A:middle
+the scroll position is 79
+
+00:35:39.226 --> 00:35:39.606 A:middle
+points.
+
+00:35:39.856 --> 00:35:41.246 A:middle
+But now the scroll position will
+
+00:35:41.246 --> 00:35:41.816 A:middle
+be ignored.
+
+00:35:42.986 --> 00:35:43.946 A:middle
+Next, we donate something
+
+00:35:43.946 --> 00:35:45.556 A:middle
+similar, and, again, the scroll
+
+00:35:45.556 --> 00:35:46.326 A:middle
+position is ignored.
+
+00:35:47.166 --> 00:35:49.546 A:middle
+We keep doing this, and, at some
+
+00:35:49.546 --> 00:35:51.426 A:middle
+point, Siri will try suggestion
+
+00:35:51.426 --> 00:35:51.656 A:middle
+again.
+
+00:35:53.046 --> 00:35:54.546 A:middle
+Now, I will look back and try to
+
+00:35:54.546 --> 00:35:55.666 A:middle
+find a pattern of equal user
+
+00:35:55.666 --> 00:35:56.196 A:middle
+activities.
+
+00:35:56.196 --> 00:35:57.226 A:middle
+And since it's no longer
+
+00:35:57.226 --> 00:35:59.166 A:middle
+considering the scroll position,
+
+00:35:59.306 --> 00:36:01.616 A:middle
+it might be able to say, "An
+

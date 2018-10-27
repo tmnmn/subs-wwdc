@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:56.296 --> 00:30:01.301 align:start position:21% line:-2
+参照型では 単純に配列を１つにし
+パンダを入れます
+
+00:30:03.303 --> 00:30:09.042 align:start position:12% line:-2
+FoundationをSwiftで使う際の
+２つ目の注意点は
+
+00:30:09.476 --> 00:30:14.915 align:start position:21% line:-2
+Objective-CのAPIは
+値型として現れることです
+
+00:30:15.015 --> 00:30:20.454 align:start position:29% line:-2
+おかげで両方の言語で
+コードがうまく機能します
+
+00:30:20.954 --> 00:30:25.292 align:start position:29% line:-2
+実装方法が異なる
+２言語間で機能できるのは
+
+00:30:26.393 --> 00:30:29.163 align:start position:27% line:-1
+ブリッジ機能があるからです
+
+00:30:29.496 --> 00:30:33.033 align:start position:25% line:-2
+２つの異なるランタイム表現を
+変換します
+
+00:30:33.133 --> 00:30:35.969 align:start position:14% line:-1
+SwiftとObjective-Cとでは
+
+00:30:36.270 --> 00:30:41.542 align:start position:29% line:-2
+コンパイラもランタイムも
+異なりますからね
+
+00:30:42.342 --> 00:30:46.346 align:start position:29% line:-2
+ブリッジ変換は最適化され
+高速ですが―
+
+00:30:46.447 --> 00:30:49.750 align:start position:29% line:-1
+必ず その代償があります
+
+00:30:50.884 --> 00:30:52.386 align:start position:38% line:-1
+見てみましょう
+
+00:30:52.820 --> 00:30:56.523 align:start position:21% line:-1
+まず同等のストレージを確保します
+
+00:30:56.623 --> 00:31:00.961 align:start position:27% line:-2
+１言語で“n”であれば
+もう１つでも“n”にします
+

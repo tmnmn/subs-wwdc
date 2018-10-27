@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.796 --> 00:07:02.606 A:middle
+tasks on the graph.
+
+00:07:02.786 --> 00:07:03.916 A:middle
+Depending on the changes you've
+
+00:07:03.916 --> 00:07:05.496 A:middle
+made to your project since the
+
+00:07:05.496 --> 00:07:06.276 A:middle
+previous build.
+
+00:07:07.166 --> 00:07:08.806 A:middle
+We refer to this as an
+
+00:07:08.806 --> 00:07:10.306 A:middle
+incremental build and having
+
+00:07:10.336 --> 00:07:11.826 A:middle
+accurate dependency information
+
+00:07:12.036 --> 00:07:13.306 A:middle
+is very important in order for
+
+00:07:13.306 --> 00:07:14.636 A:middle
+incremental builds to work
+
+00:07:14.636 --> 00:07:15.976 A:middle
+correctly and efficiently.
+
+00:07:15.976 --> 00:07:19.306 A:middle
+Now we talked about how changes
+
+00:07:19.306 --> 00:07:20.476 A:middle
+affect the build system, and how
+
+00:07:20.476 --> 00:07:21.356 A:middle
+they relate to incremental
+
+00:07:21.356 --> 00:07:21.736 A:middle
+builds.
+
+00:07:22.146 --> 00:07:23.396 A:middle
+So how does the build system
+
+00:07:23.396 --> 00:07:24.576 A:middle
+actually detect changes?
+
+00:07:24.946 --> 00:07:27.466 A:middle
+Each task in the build process
+
+00:07:27.466 --> 00:07:29.366 A:middle
+has an associate signature which
+
+00:07:29.366 --> 00:07:30.506 A:middle
+is the sort of hash that's
+
+00:07:30.506 --> 00:07:31.406 A:middle
+computed from various
+
+00:07:31.406 --> 00:07:32.756 A:middle
+information related to that
+
+00:07:33.556 --> 00:07:33.686 A:middle
+task.
+
+00:07:34.516 --> 00:07:36.086 A:middle
+This information includes the
+
+00:07:36.086 --> 00:07:37.796 A:middle
+stat infor of the task's inputs
+
+00:07:37.796 --> 00:07:39.416 A:middle
+like file paths and modification
+
+00:07:39.416 --> 00:07:40.136 A:middle
+time stamps.
+
+00:07:40.576 --> 00:07:42.066 A:middle
+The command line indication used
+
+00:07:42.066 --> 00:07:43.556 A:middle
+to actually perform the command.
+
+00:07:43.656 --> 00:07:45.516 A:middle
+And other task-specific metadata
+
+00:07:45.516 --> 00:07:46.466 A:middle
+such as the version of the
+
+00:07:46.466 --> 00:07:47.776 A:middle
+compiler that's being used.
+
+00:07:49.296 --> 00:07:50.716 A:middle
+The build system keeps track of
+
+00:07:50.716 --> 00:07:52.486 A:middle
+the signatures of tasks in both
+
+00:07:52.486 --> 00:07:53.556 A:middle
+the current and the previous
+
+00:07:53.556 --> 00:07:53.876 A:middle
+build.
+
+00:07:54.126 --> 00:07:55.266 A:middle
+So that it knows whether to
+
+00:07:55.266 --> 00:07:56.976 A:middle
+rerun a task each time a build
+
+00:07:56.976 --> 00:07:57.696 A:middle
+is performed.
+
+00:07:59.106 --> 00:08:00.236 A:middle
+If the signature of any given
+

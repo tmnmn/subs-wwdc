@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:56.497 --> 00:30:00.567 align:start position:23% line:-2
+ユーザ名と
+データベースとビューの配列です
+
+00:30:00.734 --> 00:30:06.106 align:start position:25% line:-2
+現時点では どれが
+解放されていたか分かりません
+
+00:30:06.206 --> 00:30:07.574 align:start position:36% line:-1
+どれもあり得ます
+
+00:30:08.408 --> 00:30:09.643 align:start position:41% line:-1
+まだ何か？
+
+00:30:09.743 --> 00:30:12.312 align:start position:27% line:-1
+クラッシュログの情報から―
+
+00:30:12.412 --> 00:30:16.717 align:start position:27% line:-2
+解放されていた
+オブジェクトは分かるのか？
+
+00:30:16.817 --> 00:30:21.922 align:start position:27% line:-2
+デバッガで再現できないなら
+ログだけが頼りです
+
+00:30:22.523 --> 00:30:25.092 align:start position:29% line:-1
+この場合 まだ分かります
+
+00:30:25.526 --> 00:30:31.498 align:start position:25% line:-2
+ファイル名と行番号の箇所に
+“+ 42”と書かれています
+
+00:30:31.865 --> 00:30:34.868 align:start position:23% line:-1
+この“+ 42”が手がかりです
+
+00:30:34.968 --> 00:30:39.873 align:start position:21% line:-2
+“+ 42”はその関数の
+アセンブリコードのオフセットです
+
+00:30:40.207 --> 00:30:44.678 align:start position:20% line:-2
+ivar destroyer関数を
+逆アセンブルし コードを見れば
+
+00:30:44.778 --> 00:30:49.650 align:start position:20% line:-2
+オフセット“42”でアクセスされた
+プロパティが分かります
+
+00:30:50.484 --> 00:30:51.785 align:start position:39% line:-1
+どうやるか？
+
+00:30:51.885 --> 00:30:55.422 align:start position:25% line:-1
+デバッガコンソールを使います
+
+00:30:55.722 --> 00:30:58.292 align:start position:21% line:-1
+ターミナルでLLDBを実行します
+
+00:30:58.392 --> 00:31:03.397 align:start position:21% line:-2
+Xcodeのデバッグターミナルで
+LLDBを実行します
+

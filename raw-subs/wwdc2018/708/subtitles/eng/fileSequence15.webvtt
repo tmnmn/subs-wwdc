@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.446 --> 00:15:01.056 A:middle
+Part 2 that is going to cover
+
+00:15:01.056 --> 00:15:02.766 A:middle
+quantization with Core ML Tools
+
+00:15:02.766 --> 00:15:02.976 A:middle
+in detail.
+
+00:15:04.126 --> 00:15:05.396 A:middle
+So I want to focus first on the
+
+00:15:05.396 --> 00:15:07.856 A:middle
+Glass style and see how the
+
+00:15:07.856 --> 00:15:09.416 A:middle
+different quantization versions
+
+00:15:09.696 --> 00:15:10.746 A:middle
+work for these styles.
+
+00:15:11.836 --> 00:15:13.646 A:middle
+So all I have to do is drag
+
+00:15:13.646 --> 00:15:15.076 A:middle
+these new models inside the
+
+00:15:15.076 --> 00:15:17.756 A:middle
+Xcode project, and rerun the
+
+00:15:17.876 --> 00:15:17.943 A:middle
+app.
+
+00:15:18.046 --> 00:15:19.976 A:middle
+And then we are going to see how
+
+00:15:19.976 --> 00:15:20.806 A:middle
+these models behave.
+
+00:15:21.296 --> 00:15:23.986 A:middle
+First we can see that the size
+
+00:15:23.986 --> 00:15:25.856 A:middle
+has been greatly reduced.
+
+00:15:25.856 --> 00:15:27.906 A:middle
+For example, the 8-bit version
+
+00:15:27.906 --> 00:15:29.906 A:middle
+already from 6 or 7 megabytes
+
+00:15:29.906 --> 00:15:30.976 A:middle
+went down to just 1.7.
+
+00:15:31.516 --> 00:15:36.576 A:middle
+[ Applause ]
+
+00:15:37.076 --> 00:15:39.226 A:middle
+In 4-bit, we can save even more,
+
+00:15:39.226 --> 00:15:40.876 A:middle
+and now the model is less than 1
+
+00:15:40.876 --> 00:15:41.336 A:middle
+megabyte.
+
+00:15:41.936 --> 00:15:43.286 A:middle
+In 3-bit, it is -- that's even
+
+00:15:43.286 --> 00:15:44.956 A:middle
+smaller, at 49 kilobytes.
+
+00:15:44.956 --> 00:15:45.946 A:middle
+And so on.
+
+00:15:47.106 --> 00:15:49.326 A:middle
+Now let's go back to the app.
+
+00:15:50.826 --> 00:15:52.616 A:middle
+Let's make this same image for
+
+00:15:52.616 --> 00:15:54.486 A:middle
+reference and apply the Glass
+
+00:15:54.536 --> 00:15:56.276 A:middle
+style in the original version.
+
+00:15:57.136 --> 00:15:58.266 A:middle
+Still looks as before.
+
+00:15:59.016 --> 00:16:00.676 A:middle
+Now we can compare it with the
+

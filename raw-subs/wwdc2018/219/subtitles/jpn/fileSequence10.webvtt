@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:56.063 --> 00:10:02.636 align:start position:29% line:-2
+この手法では縮小の工程で
+サムネイルを作ります
+
+00:10:03.270 --> 00:10:06.773 align:start position:34% line:-2
+イメージバッファが
+小さくなるので
+
+00:10:07.541 --> 00:10:11.278 align:start position:29% line:-1
+メモリの使用量も減ります
+
+00:10:12.613 --> 00:10:16.083 align:start position:36% line:-2
+画像ソースで
+サムネイルを作り
+
+00:10:16.350 --> 00:10:19.953 align:start position:30% line:-2
+イメージバッファを
+UIImageにして―
+
+00:10:20.053 --> 00:10:22.823 align:start position:29% line:-1
+画像ビューに割り当てます
+
+00:10:23.423 --> 00:10:26.760 align:start position:27% line:-1
+データバッファは不要になり
+
+00:10:26.994 --> 00:10:31.498 align:start position:30% line:-2
+メモリフットプリントも
+かなり小さくなります
+
+00:10:31.598 --> 00:10:35.636 align:start position:34% line:-2
+重要なコードを数行
+ご紹介しましょう
+
+00:10:35.736 --> 00:10:39.907 align:start position:27% line:-2
+CGImageSource
+オブジェクトを―
+
+00:10:40.374 --> 00:10:42.976 align:start position:30% line:-1
+作るところから始めます
+
+00:10:44.178 --> 00:10:47.714 align:start position:14% line:-1
+CGImageSourceCreateは
+
+00:10:47.815 --> 00:10:51.952 align:start position:23% line:-2
+shouldCacheフラグを
+渡します
+
+00:10:52.052 --> 00:10:56.790 align:start position:27% line:-2
+Core Graphics
+フレームワークに
+
+00:10:57.424 --> 00:11:00.661 align:start position:27% line:-1
+オブジェクトを生成させます
+

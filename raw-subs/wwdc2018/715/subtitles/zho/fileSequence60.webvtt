@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:59:59.633 --> 01:00:02.002 align:middle line:-1
+我们平台上的网络首选API
+
+01:00:02.069 --> 01:00:04.571 align:middle line:-2
+是URLSession
+和Network.framework
+
+01:00:04.705 --> 01:00:07.641 align:middle line:-2
+URLSession
+主要针对HTTP
+
+01:00:07.708 --> 01:00:11.411 align:middle line:-1
+但流任务提供了非常简单的
+
+01:00:11.478 --> 01:00:12.813 align:middle line:-1
+TCP和TLS连接
+
+01:00:13.881 --> 01:00:15.449 align:middle line:-1
+如果你需要更先进的东西
+
+01:00:15.749 --> 01:00:17.417 align:middle line:-2
+Network.framework
+为你提供了
+
+01:00:17.484 --> 01:00:20.954 align:middle line:-2
+对TCP、TLS
+UDP、DTLS的更好支持
+
+01:00:21.088 --> 01:00:23.123 align:middle line:-1
+它处理监听入站连接
+
+01:00:23.190 --> 01:00:24.691 align:middle line:-1
+以及出站连接
+
+01:00:24.758 --> 01:00:27.794 align:middle line:-2
+并且我们用PathMonitor
+来处理一些移动性问题
+
+01:00:29.530 --> 01:00:31.965 align:middle line:-1
+下一步 我们真的希望看到你采用
+
+01:00:32.499 --> 01:00:34.668 align:middle line:-2
+Network.framework
+和URLSession
+
+01:00:35.002 --> 01:00:37.771 align:middle line:-1
+你的客户将会赞赏
+
+01:00:38.172 --> 01:00:40.440 align:middle line:-1
+你建立的连接有多么可靠
+
+01:00:40.674 --> 01:00:42.209 align:middle line:-1
+并赞赏更好的性能所带来的
+
+01:00:42.276 --> 01:00:43.343 align:middle line:-1
+更长的电池续航时间
+
+01:00:45.145 --> 01:00:47.047 align:middle line:-1
+当你做这些事时 请关注于
+
+01:00:48.215 --> 01:00:49.850 align:middle line:-1
+你如何处理发送和接收
+
+01:00:49.917 --> 01:00:51.618 align:middle line:-1
+来真正优化其性能
+
+01:00:52.052 --> 01:00:54.388 align:middle line:-1
+并多花些时间来获得
+
+01:00:54.454 --> 01:00:57.324 align:middle line:-1
+对可行性和更优路径变化的支持
+
+01:00:57.391 --> 01:00:58.992 align:middle line:-1
+它对于提供无缝的网络体验
+
+01:00:59.059 --> 01:01:01.128 align:middle line:-1
+至关重要
+

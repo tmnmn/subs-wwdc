@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.106 --> 00:07:01.396 A:middle
+This will result in a noisy
+
+00:07:01.396 --> 00:07:03.366 A:middle
+image but we can average the
+
+00:07:03.366 --> 00:07:04.826 A:middle
+results together over multiple
+
+00:07:04.826 --> 00:07:05.316 A:middle
+frames.
+
+00:07:06.256 --> 00:07:07.446 A:middle
+Each frame will, also, generate
+
+00:07:07.446 --> 00:07:09.386 A:middle
+its own set of primary rays, so
+
+00:07:09.386 --> 00:07:10.616 A:middle
+this, also, gives us the
+
+00:07:10.616 --> 00:07:12.046 A:middle
+opportunity to implement camera
+
+00:07:12.046 --> 00:07:13.446 A:middle
+effects such as depth of field
+
+00:07:13.446 --> 00:07:14.176 A:middle
+and motion blur.
+
+00:07:14.686 --> 00:07:17.536 A:middle
+So, let's translate this all
+
+00:07:17.536 --> 00:07:18.346 A:middle
+into a diagram.
+
+00:07:19.446 --> 00:07:21.286 A:middle
+First, we'll generate primary
+
+00:07:21.286 --> 00:07:21.616 A:middle
+rays.
+
+00:07:22.346 --> 00:07:23.476 A:middle
+Then, we'll find the
+
+00:07:23.476 --> 00:07:24.686 A:middle
+intersections with the scene.
+
+00:07:25.316 --> 00:07:27.606 A:middle
+Then, we'll compute shading at
+
+00:07:27.606 --> 00:07:28.676 A:middle
+the intersection points.
+
+00:07:28.946 --> 00:07:30.086 A:middle
+And remember, that this is an
+
+00:07:30.086 --> 00:07:31.546 A:middle
+iterative process, which will
+
+00:07:31.546 --> 00:07:33.046 A:middle
+generate additional shadow and
+
+00:07:33.046 --> 00:07:34.616 A:middle
+secondary rays, which will be
+
+00:07:34.616 --> 00:07:35.566 A:middle
+intersected with the scene,
+
+00:07:35.566 --> 00:07:36.006 A:middle
+again.
+
+00:07:36.036 --> 00:07:37.946 A:middle
+And finally, we'll write the
+
+00:07:37.946 --> 00:07:39.366 A:middle
+shaded color into our image.
+
+00:07:40.986 --> 00:07:42.036 A:middle
+So, this is describing a
+
+00:07:42.066 --> 00:07:43.126 A:middle
+rendering application.
+
+00:07:43.456 --> 00:07:44.746 A:middle
+But a significant fraction of
+
+00:07:44.746 --> 00:07:46.526 A:middle
+the time is, actually, spent on
+
+00:07:46.526 --> 00:07:47.606 A:middle
+ray triangle intersection
+
+00:07:47.606 --> 00:07:48.126 A:middle
+testing.
+
+00:07:49.446 --> 00:07:50.556 A:middle
+This means that the performance
+
+00:07:50.556 --> 00:07:52.306 A:middle
+of the intersector has a huge
+
+00:07:52.306 --> 00:07:53.826 A:middle
+impact on the overall rendering
+
+00:07:53.826 --> 00:07:55.246 A:middle
+performance, even though, it has
+
+00:07:55.246 --> 00:07:56.376 A:middle
+nothing to do with the actual
+
+00:07:56.376 --> 00:07:57.336 A:middle
+lighting and shading.
+
+00:07:58.496 --> 00:08:00.066 A:middle
+This core intersection problem
+

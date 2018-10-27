@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.126 --> 00:26:00.116 A:middle
+Trackers are usually lightweight
+
+00:26:00.116 --> 00:26:01.706 A:middle
+algorithms, while detectors
+
+00:26:01.946 --> 00:26:03.586 A:middle
+usually run your [inaudible],
+
+00:26:03.676 --> 00:26:04.416 A:middle
+which is much longer.
+
+00:26:05.136 --> 00:26:07.146 A:middle
+In addition, if you need to
+
+00:26:07.146 --> 00:26:08.976 A:middle
+display your tracking
+
+00:26:08.976 --> 00:26:10.306 A:middle
+information on a graphical user
+
+00:26:10.306 --> 00:26:11.716 A:middle
+interface, you may find that
+
+00:26:11.976 --> 00:26:13.356 A:middle
+trackers are smoother and not as
+
+00:26:13.386 --> 00:26:14.000 A:middle
+jittery.
+
+00:26:17.366 --> 00:26:18.416 A:middle
+Remember, in one of the first
+
+00:26:18.416 --> 00:26:19.746 A:middle
+slides, I asked you to remember
+
+00:26:21.386 --> 00:26:24.476 A:middle
+these three terms, what, how,
+
+00:26:24.476 --> 00:26:25.016 A:middle
+and results.
+
+00:26:25.976 --> 00:26:28.206 A:middle
+Let's see how this maps into the
+
+00:26:28.206 --> 00:26:30.000 A:middle
+track and use case.
+
+00:26:31.046 --> 00:26:33.646 A:middle
+First, request.
+
+00:26:34.456 --> 00:26:36.156 A:middle
+So, in Vision, we have two types
+
+00:26:36.156 --> 00:26:37.736 A:middle
+of requests for tracking.
+
+00:26:38.226 --> 00:26:39.236 A:middle
+There is a general purpose
+
+00:26:39.236 --> 00:26:40.786 A:middle
+object tracker, and there is a
+
+00:26:40.786 --> 00:26:41.936 A:middle
+rectangular object tracker.
+
+00:26:43.046 --> 00:26:43.576 A:middle
+How?
+
+00:26:44.686 --> 00:26:45.556 A:middle
+As you should have guessed by
+
+00:26:45.556 --> 00:26:46.696 A:middle
+now, we're going to use our
+
+00:26:47.046 --> 00:26:49.836 A:middle
+sequence request handler.
+
+00:26:49.866 --> 00:26:50.386 A:middle
+Results.
+
+00:26:51.716 --> 00:26:52.556 A:middle
+There are two types that are
+
+00:26:52.556 --> 00:26:53.196 A:middle
+important here.
+
+00:26:53.306 --> 00:26:54.366 A:middle
+There is a detected object
+
+00:26:54.366 --> 00:26:55.766 A:middle
+observation, which has an
+
+00:26:55.766 --> 00:26:56.826 A:middle
+important property in it,
+
+00:26:57.096 --> 00:26:58.346 A:middle
+bounding box, which tells you
+
+00:26:58.346 --> 00:27:00.396 A:middle
+where the object is located, and
+

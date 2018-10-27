@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.746 --> 00:37:00.256 A:middle
+The first part is being spent in
+
+00:37:00.256 --> 00:37:02.156 A:middle
+DYD, this is the loader that is
+
+00:37:02.156 --> 00:37:03.466 A:middle
+going to load and link all of
+
+00:37:03.466 --> 00:37:05.416 A:middle
+your dependent libraries, but
+
+00:37:05.416 --> 00:37:06.436 A:middle
+it's also going to run your
+
+00:37:06.436 --> 00:37:07.576 A:middle
+static initializers.
+
+00:37:08.766 --> 00:37:10.316 A:middle
+And your control over that part
+
+00:37:10.426 --> 00:37:11.476 A:middle
+is limited, but it's not
+
+00:37:11.476 --> 00:37:11.886 A:middle
+impossible.
+
+00:37:12.576 --> 00:37:14.886 A:middle
+I would encourage you to watch
+
+00:37:14.886 --> 00:37:17.166 A:middle
+the DYD session from last year
+
+00:37:18.196 --> 00:37:21.496 A:middle
+in order to get more details on
+
+00:37:21.496 --> 00:37:21.896 A:middle
+that part.
+
+00:37:23.566 --> 00:37:25.686 A:middle
+Now DYD is also calling Main in
+
+00:37:25.686 --> 00:37:27.486 A:middle
+your object table, which leads
+
+00:37:27.486 --> 00:37:28.716 A:middle
+us to the second part here,
+
+00:37:29.106 --> 00:37:30.356 A:middle
+where you have lots of control
+
+00:37:30.356 --> 00:37:32.236 A:middle
+over, and this part, you need to
+
+00:37:32.236 --> 00:37:34.016 A:middle
+make sure that it stays under
+
+00:37:34.016 --> 00:37:35.056 A:middle
+500 milliseconds.
+
+00:37:35.976 --> 00:37:37.376 A:middle
+Now, the first [inaudible] pass
+
+00:37:37.376 --> 00:37:38.386 A:middle
+that is being scheduled right
+
+00:37:38.386 --> 00:37:39.786 A:middle
+after the Did Finish launching
+
+00:37:40.276 --> 00:37:41.286 A:middle
+will mark the end of your
+
+00:37:41.286 --> 00:37:42.796 A:middle
+launch, and this is basically
+
+00:37:42.796 --> 00:37:43.946 A:middle
+when your app should be usable.
+
+00:37:46.016 --> 00:37:47.556 A:middle
+There are a few principles that
+
+00:37:47.606 --> 00:37:49.116 A:middle
+we will be referring to during
+
+00:37:49.116 --> 00:37:51.056 A:middle
+this session, and these are
+
+00:37:51.056 --> 00:37:52.316 A:middle
+really the common pillars of the
+
+00:37:52.316 --> 00:37:53.456 A:middle
+performance work that we
+
+00:37:53.456 --> 00:37:53.846 A:middle
+achieved.
+
+00:37:55.116 --> 00:37:56.976 A:middle
+The first one is that we want to
+
+00:37:56.976 --> 00:37:59.566 A:middle
+be lazy and defer the work that
+
+00:37:59.616 --> 00:38:00.876 A:middle
+we don't need.
+

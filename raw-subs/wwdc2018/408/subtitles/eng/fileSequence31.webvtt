@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.796 --> 00:31:00.136 A:middle
+that are written in Objective-C
+
+00:31:00.296 --> 00:31:01.496 A:middle
+that you may want to expose to
+
+00:31:01.496 --> 00:31:01.896 A:middle
+Swift.
+
+00:31:02.376 --> 00:31:03.966 A:middle
+Or perhaps you're just declaring
+
+00:31:03.966 --> 00:31:05.656 A:middle
+headers for other Objective-C
+
+00:31:05.656 --> 00:31:07.046 A:middle
+parts of your app.
+
+00:31:08.246 --> 00:31:09.416 A:middle
+Then we have the bridging
+
+00:31:09.416 --> 00:31:09.796 A:middle
+header.
+
+00:31:10.236 --> 00:31:11.696 A:middle
+This is the header that collects
+
+00:31:11.696 --> 00:31:13.416 A:middle
+all of the information that you
+
+00:31:13.416 --> 00:31:15.566 A:middle
+want to expose to the Swift part
+
+00:31:15.566 --> 00:31:16.886 A:middle
+of your app.
+
+00:31:17.766 --> 00:31:19.656 A:middle
+This is a build setting in Xcode
+
+00:31:19.786 --> 00:31:21.076 A:middle
+that controls which header is
+
+00:31:21.076 --> 00:31:21.616 A:middle
+used.
+
+00:31:21.836 --> 00:31:23.756 A:middle
+And once it's set, the Swift
+
+00:31:23.756 --> 00:31:25.846 A:middle
+compiler will know to expose
+
+00:31:25.846 --> 00:31:27.906 A:middle
+those Objective-C interfaces to
+
+00:31:27.906 --> 00:31:28.736 A:middle
+your Swift code.
+
+00:31:30.216 --> 00:31:32.196 A:middle
+The Swift compiler will then
+
+00:31:32.196 --> 00:31:34.616 A:middle
+produce a generated header,
+
+00:31:35.036 --> 00:31:36.266 A:middle
+which does the same thing in
+
+00:31:36.266 --> 00:31:36.796 A:middle
+reverse.
+
+00:31:37.246 --> 00:31:39.026 A:middle
+It describes which parts of your
+
+00:31:39.026 --> 00:31:41.526 A:middle
+Swift code will be exposed to
+
+00:31:41.526 --> 00:31:42.496 A:middle
+Objective-C.
+
+00:31:43.796 --> 00:31:45.656 A:middle
+That can then be used in your
+
+00:31:45.656 --> 00:31:47.046 A:middle
+Objective-C implementation
+
+00:31:47.046 --> 00:31:49.976 A:middle
+files, which probably also use
+
+00:31:49.976 --> 00:31:50.926 A:middle
+some of those headers from the
+
+00:31:50.926 --> 00:31:51.436 A:middle
+first step.
+
+00:31:51.956 --> 00:31:53.896 A:middle
+And then of course, you might
+
+00:31:53.896 --> 00:31:55.946 A:middle
+have Objective-C code that is
+
+00:31:55.946 --> 00:31:57.566 A:middle
+not dependent on any of the
+
+00:31:57.566 --> 00:31:58.246 A:middle
+Swift code.
+
+00:31:58.846 --> 00:32:00.106 A:middle
+But that's less interesting for
+

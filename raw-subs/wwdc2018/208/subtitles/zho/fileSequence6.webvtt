@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:00.027 --> 00:06:01.495 align:middle line:-1
+用于填写文本字段
+
+00:06:02.729 --> 00:06:05.199 align:middle line:-1
+接下来你要确保app的证书
+
+00:06:05.265 --> 00:06:06.834 align:middle line:-1
+由快速输入栏进行了建议
+
+00:06:07.701 --> 00:06:08.535 align:middle line:-1
+最后
+
+00:06:09.469 --> 00:06:12.206 align:middle line:-2
+你要在体验中
+启用一次轻触即可登录功能
+
+00:06:12.639 --> 00:06:14.875 align:middle line:-1
+现在让我们更具体地看看该如何实现
+
+00:06:16.476 --> 00:06:19.279 align:middle line:-2
+要确保用于文本字段输入的
+快速输入栏的出现
+
+00:06:19.580 --> 00:06:22.216 align:middle line:-1
+你要采用UITextContentTypes
+
+00:06:23.217 --> 00:06:26.854 align:middle line:-2
+tvOS将会自动尝试检测
+用户名和密码字段
+
+00:06:26.920 --> 00:06:30.424 align:middle line:-1
+你可以通过明确标记文本字段来实现
+
+00:06:31.325 --> 00:06:34.261 align:middle line:0
+这跟在这些文本字段上
+设置单一属性一样简单
+
+00:06:34.695 --> 00:06:39.533 align:middle line:0
+简单地设置你的用户名文本字段
+把textContentType设置为.username
+
+00:06:39.867 --> 00:06:41.568 align:middle line:0
+密码字段也一样
+
+00:06:41.635 --> 00:06:44.071 align:middle line:0
+你要把textContentType
+设置为.password
+
+00:06:44.638 --> 00:06:47.441 align:middle line:-2
+非常简单 这也可以在
+Interface Builder中实现
+
+00:06:48.909 --> 00:06:51.144 align:middle line:-1
+采用textContentTypes之后
+
+00:06:51.211 --> 00:06:54.414 align:middle line:-2
+这是浏览者很可能会在那个
+连续性键盘通知中看到的东西
+
+00:06:54.648 --> 00:06:55.516 align:middle line:-1
+这很棒
+
+00:06:55.582 --> 00:06:57.985 align:middle line:-1
+因为它给用户提供了他们密码的权限
+
+00:06:58.552 --> 00:07:00.087 align:middle line:-1
+但它却隐藏在那个钥匙图标背后
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.306 --> 00:03:00.086 A:middle
+janky and bad.
+
+00:03:00.266 --> 00:03:02.946 A:middle
+And on iOS 12 it's perfect.
+
+00:03:03.216 --> 00:03:04.116 A:middle
+It's hitting full frame rate.
+
+00:03:05.096 --> 00:03:07.086 A:middle
+So that's just one of the cases
+
+00:03:07.086 --> 00:03:07.586 A:middle
+we looked at.
+
+00:03:07.896 --> 00:03:10.296 A:middle
+Here are some more, just another
+
+00:03:10.296 --> 00:03:10.846 A:middle
+sampling.
+
+00:03:10.846 --> 00:03:11.806 A:middle
+We have a lot.
+
+00:03:12.526 --> 00:03:14.186 A:middle
+These ones are all time.
+
+00:03:14.766 --> 00:03:16.446 A:middle
+So what you're looking at is
+
+00:03:16.446 --> 00:03:18.176 A:middle
+that the gray bars are iOS 11.
+
+00:03:18.346 --> 00:03:19.666 A:middle
+How much time it took on iOS 11
+
+00:03:20.016 --> 00:03:21.506 A:middle
+and the blue are iOS12.
+
+00:03:22.936 --> 00:03:24.236 A:middle
+So what you take from this is
+
+00:03:24.236 --> 00:03:25.516 A:middle
+that we found a lot of places
+
+00:03:25.516 --> 00:03:26.496 A:middle
+where we could make things
+
+00:03:26.706 --> 00:03:27.476 A:middle
+really a lot better.
+
+00:03:28.076 --> 00:03:31.306 A:middle
+And that will only improve your
+
+00:03:31.306 --> 00:03:31.546 A:middle
+apps.
+
+00:03:31.676 --> 00:03:32.646 A:middle
+That will make things quite a
+
+00:03:32.856 --> 00:03:35.616 A:middle
+bit better for you I hope.
+
+00:03:35.616 --> 00:03:36.896 A:middle
+This is going all the way up and
+
+00:03:36.896 --> 00:03:37.466 A:middle
+down the stack.
+
+00:03:37.766 --> 00:03:39.336 A:middle
+So some of it is in the real
+
+00:03:39.336 --> 00:03:41.156 A:middle
+guts that affect just absolutely
+
+00:03:41.156 --> 00:03:41.676 A:middle
+everything.
+
+00:03:42.166 --> 00:03:44.106 A:middle
+Some of it's moving into UI
+
+00:03:44.106 --> 00:03:44.366 A:middle
+kits.
+
+00:03:44.366 --> 00:03:45.486 A:middle
+Some of it's up in the client
+
+00:03:45.486 --> 00:03:47.846 A:middle
+layer so for in how people use
+
+00:03:47.846 --> 00:03:48.326 A:middle
+Auto Layout.
+
+00:03:48.716 --> 00:03:49.766 A:middle
+So if you look at for example
+
+00:03:49.766 --> 00:03:51.246 A:middle
+that UICollectionView benchmark
+
+00:03:51.606 --> 00:03:52.776 A:middle
+that we were looking at that's
+
+00:03:52.776 --> 00:03:53.536 A:middle
+all of those.
+
+00:03:54.016 --> 00:03:55.846 A:middle
+It does include stuff that's in
+
+00:03:55.846 --> 00:03:57.386 A:middle
+the real guts but it also
+
+00:03:57.446 --> 00:03:58.856 A:middle
+includes a lot of really
+
+00:03:58.856 --> 00:04:00.236 A:middle
+important changes in just how
+

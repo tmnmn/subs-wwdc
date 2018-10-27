@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.816 --> 00:08:01.536 A:middle
+by matching the origin header
+
+00:08:01.536 --> 00:08:01.946 A:middle
+string.
+
+00:08:03.026 --> 00:08:04.506 A:middle
+Though this claim is optional,
+
+00:08:04.646 --> 00:08:06.436 A:middle
+we recommend it be used for all
+
+00:08:06.436 --> 00:08:08.316 A:middle
+authorization tokens, especially
+
+00:08:08.316 --> 00:08:08.926 A:middle
+in production.
+
+00:08:10.506 --> 00:08:12.806 A:middle
+Second, the auth key file
+
+00:08:12.806 --> 00:08:14.546 A:middle
+contents which you downloaded
+
+00:08:14.546 --> 00:08:15.056 A:middle
+earlier.
+
+00:08:15.726 --> 00:08:17.756 A:middle
+This full file including white
+
+00:08:17.756 --> 00:08:19.696 A:middle
+space, header, and footer,
+
+00:08:20.046 --> 00:08:21.296 A:middle
+should be used to sign this
+
+00:08:21.296 --> 00:08:21.776 A:middle
+token.
+
+00:08:22.406 --> 00:08:24.516 A:middle
+See the documentation for your
+
+00:08:24.516 --> 00:08:26.526 A:middle
+JWT signing library for
+
+00:08:26.526 --> 00:08:27.816 A:middle
+instructions specific to your
+
+00:08:27.816 --> 00:08:28.686 A:middle
+programming language.
+
+00:08:29.986 --> 00:08:32.275 A:middle
+Finally, the header section of
+
+00:08:32.275 --> 00:08:35.535 A:middle
+the JWT token will contain a KID
+
+00:08:35.535 --> 00:08:38.035 A:middle
+claim, which is your MapKit JS
+
+00:08:38.035 --> 00:08:38.606 A:middle
+key ID.
+
+00:08:38.606 --> 00:08:40.876 A:middle
+Note that this is not the same
+
+00:08:40.876 --> 00:08:42.236 A:middle
+as your maps identifier.
+
+00:08:42.486 --> 00:08:45.836 A:middle
+A TYP claim, which should be the
+
+00:08:45.836 --> 00:08:48.806 A:middle
+string JWT to identify this is a
+
+00:08:48.806 --> 00:08:51.936 A:middle
+JWT-style token, and an ALG
+
+00:08:51.936 --> 00:08:53.856 A:middle
+claim, which is the hashing
+
+00:08:53.856 --> 00:08:54.926 A:middle
+algorithm to use.
+
+00:08:55.566 --> 00:09:00.306 A:middle
+This must be set to ES256, which
+

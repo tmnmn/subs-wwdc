@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.296 --> 00:18:00.566 A:middle
+already help you to see there is
+
+00:18:00.566 --> 00:18:01.486 A:middle
+something wrong here.
+
+00:18:02.446 --> 00:18:04.556 A:middle
+It is highlighted in orange, and
+
+00:18:04.946 --> 00:18:06.326 A:middle
+it's already telling us that the
+
+00:18:06.326 --> 00:18:07.956 A:middle
+thread has been preempted for
+
+00:18:07.956 --> 00:18:09.796 A:middle
+192 milliseconds.
+
+00:18:10.596 --> 00:18:11.676 A:middle
+So that's the actual problem
+
+00:18:11.676 --> 00:18:11.906 A:middle
+here.
+
+00:18:11.906 --> 00:18:13.576 A:middle
+A render thread is not running.
+
+00:18:13.946 --> 00:18:15.016 A:middle
+Something preempted it.
+
+00:18:16.346 --> 00:18:18.436 A:middle
+If you want to know more, you
+
+00:18:18.436 --> 00:18:19.816 A:middle
+can expand information at the
+
+00:18:19.816 --> 00:18:21.166 A:middle
+bottom, which will contain also
+
+00:18:21.166 --> 00:18:22.196 A:middle
+the thread narrative.
+
+00:18:23.616 --> 00:18:26.586 A:middle
+And by clicking at the preempted
+
+00:18:26.656 --> 00:18:29.926 A:middle
+thread, you will see here an
+
+00:18:29.926 --> 00:18:31.416 A:middle
+explanation of what's going on.
+
+00:18:31.706 --> 00:18:33.806 A:middle
+In this case, your render thread
+
+00:18:33.806 --> 00:18:35.606 A:middle
+was preempted at priority 26,
+
+00:18:36.046 --> 00:18:37.076 A:middle
+which is very low.
+
+00:18:37.076 --> 00:18:38.516 A:middle
+It's below background priority
+
+00:18:39.536 --> 00:18:40.516 A:middle
+because the App Store was
+
+00:18:40.516 --> 00:18:41.036 A:middle
+updating.
+
+00:18:42.186 --> 00:18:43.346 A:middle
+So that's something we do not
+
+00:18:43.346 --> 00:18:43.676 A:middle
+want.
+
+00:18:44.096 --> 00:18:46.196 A:middle
+We want to tell the system that
+
+00:18:46.266 --> 00:18:48.406 A:middle
+to our user, our game is more
+
+00:18:48.406 --> 00:18:49.416 A:middle
+important than an App Store
+
+00:18:49.416 --> 00:18:50.756 A:middle
+update at that particular
+
+00:18:50.756 --> 00:18:51.216 A:middle
+moment.
+
+00:18:51.856 --> 00:18:52.956 A:middle
+So let's go back to the slides
+
+00:18:52.956 --> 00:18:54.000 A:middle
+and see how can we do that?
+

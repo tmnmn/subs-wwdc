@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:55.816 --> 00:27:00.053 align:start position:25% line:-2
+有効なmallocアドレスが
+回転したと思われます
+
+00:27:01.388 --> 00:27:05.058 align:start position:23% line:-2
+以上が メモリアロケータからの
+ヒントです
+
+00:27:05.159 --> 00:27:07.127 align:start position:34% line:-1
+理由を見せましょう
+
+00:27:07.494 --> 00:27:11.064 align:start position:27% line:-2
+こちらは
+有効だったオブジェクトです
+
+00:27:11.498 --> 00:27:17.171 align:start position:25% line:-2
+isaフィールドから始まり
+isaがクラスを指しています
+
+00:27:17.271 --> 00:27:22.743 align:start position:20% line:-2
+Obcjective-Cや
+Swiftのオブジェクトも同じです
+
+00:27:23.076 --> 00:27:25.913 align:start position:12% line:-1
+objc release関数は何をするか？
+
+00:27:26.146 --> 00:27:28.482 align:start position:29% line:-1
+isaフィールドを読み―
+
+00:27:28.582 --> 00:27:34.254 align:start position:23% line:-2
+isaフィールドを間接参照し
+クラスオブジェクトを獲得します
+
+00:27:35.122 --> 00:27:38.826 align:start position:23% line:-1
+通常なら これでうまくいきます
+
+00:27:39.326 --> 00:27:42.896 align:start position:21% line:-1
+でもオブジェクトが解放済みなら？
+
+00:27:44.298 --> 00:27:47.401 align:start position:29% line:-2
+free関数が
+削除したオブジェクトは―
+
+00:27:48.402 --> 00:27:53.006 align:start position:27% line:-2
+他の削除済みオブジェクトの
+リストに入り―
+
+00:27:53.173 --> 00:27:58.145 align:start position:14% line:-2
+次のオブジェクトに向け
+free listポインタを書き込みます
+
+00:27:58.278 --> 00:28:00.881 align:start position:20% line:-1
+isaフィールドがあった場所にです
+

@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:55.876 --> 00:33:01.381 align:start position:11% line:-2
+decodingFailurePolicyは
+必要ならデフォルトに戻せます
+
+00:33:02.883 --> 00:33:06.520 align:start position:25% line:-2
+Unarchiverがあれば
+復号ができます
+
+00:33:08.889 --> 00:33:10.591 align:start position:34% line:-1
+Swiftを使えば
+
+00:33:10.691 --> 00:33:16.430 align:start position:18% line:-2
+NSSecureCoding以外でも
+モデル型を変換できます
+
+00:33:17.631 --> 00:33:22.269 align:start position:16% line:-2
+昨年はSwift 4で
+Codableプロトコルを紹介しました
+
+00:33:22.870 --> 00:33:27.541 align:start position:16% line:-2
+NSSecureCodingで下された
+設計の決定を
+
+00:33:27.641 --> 00:33:30.177 align:start position:20% line:-1
+Codableは初日から示しました
+
+00:33:31.011 --> 00:33:34.915 align:start position:16% line:-1
+Codableは型の情報を書かないので
+
+00:33:35.015 --> 00:33:37.017 align:start position:34% line:-1
+何も信頼できません
+
+00:33:37.117 --> 00:33:42.189 align:start position:27% line:-2
+復号したい静的な型の情報を
+先に要求することで
+
+00:33:42.289 --> 00:33:44.792 align:start position:30% line:-1
+この種の攻撃を防げます
+
+00:33:46.260 --> 00:33:50.998 align:start position:21% line:-2
+フィールドの中が
+すべてCodableな型があると
+
+00:33:51.098 --> 00:33:55.302 align:start position:29% line:-2
+initの実装を統合して
+要求を符号化します
+
+00:33:55.936 --> 00:34:00.040 align:start position:21% line:-2
+統合された実装は型と
+null化可能性をチェックします
+

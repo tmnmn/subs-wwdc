@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:59.346 --> 00:56:01.756 A:middle
+Multipath TCP because whenever
+
+00:56:01.756 --> 00:56:02.856 A:middle
+we change a network, we'll
+
+00:56:02.856 --> 00:56:05.136 A:middle
+automatically move for you, your
+
+00:56:05.196 --> 00:56:06.686 A:middle
+connection is only not viable
+
+00:56:06.686 --> 00:56:07.966 A:middle
+when you have no network
+
+00:56:07.966 --> 00:56:13.176 A:middle
+available to you at all.
+
+00:56:13.396 --> 00:56:15.856 A:middle
+So between waiting for
+
+00:56:15.856 --> 00:56:19.056 A:middle
+connectivity, viability, better
+
+00:56:19.566 --> 00:56:21.956 A:middle
+path, MPTCP, we really hope that
+
+00:56:22.026 --> 00:56:23.356 A:middle
+all of the use cases in your
+
+00:56:23.356 --> 00:56:25.996 A:middle
+apps for using tools like SC
+
+00:56:25.996 --> 00:56:27.836 A:middle
+Network Reachability to check
+
+00:56:28.196 --> 00:56:30.096 A:middle
+network changes manually have
+
+00:56:30.136 --> 00:56:30.886 A:middle
+been replaced.
+
+00:56:31.626 --> 00:56:33.606 A:middle
+However, we do recognize that
+
+00:56:33.606 --> 00:56:35.386 A:middle
+there are some scenarios in
+
+00:56:35.386 --> 00:56:36.656 A:middle
+which you still want to know
+
+00:56:37.156 --> 00:56:38.266 A:middle
+what's the available network,
+
+00:56:38.366 --> 00:56:39.406 A:middle
+when does it change.
+
+00:56:40.796 --> 00:56:42.146 A:middle
+For that Network.framework
+
+00:56:42.206 --> 00:56:44.766 A:middle
+offers a new API called the
+
+00:56:44.766 --> 00:56:46.346 A:middle
+NWPathMonitor.
+
+00:56:47.776 --> 00:56:50.136 A:middle
+So the Path Monitor instead of
+
+00:56:50.136 --> 00:56:51.676 A:middle
+watching the reachability and
+
+00:56:51.676 --> 00:56:52.396 A:middle
+trying to predict the
+
+00:56:52.396 --> 00:56:53.996 A:middle
+reachability of a given host
+
+00:56:54.506 --> 00:56:55.786 A:middle
+simply lets you know what is the
+
+00:56:55.786 --> 00:56:57.326 A:middle
+current state of the interfaces
+
+00:56:57.746 --> 00:56:59.226 A:middle
+on your device and when do they
+
+00:56:59.226 --> 00:56:59.766 A:middle
+change.
+

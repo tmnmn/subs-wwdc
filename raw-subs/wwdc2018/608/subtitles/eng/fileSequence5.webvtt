@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.506 --> 00:05:00.496 A:middle
+drawing the tree, and as you can
+
+00:05:00.496 --> 00:05:03.236 A:middle
+see, some of the vertices of the
+
+00:05:03.236 --> 00:05:05.876 A:middle
+triangle is off screen, causing
+
+00:05:05.876 --> 00:05:06.956 A:middle
+this triangle to get skewed.
+
+00:05:07.916 --> 00:05:09.246 A:middle
+Just using the geometry viewer,
+
+00:05:09.596 --> 00:05:10.676 A:middle
+you can click on the visibly
+
+00:05:10.676 --> 00:05:11.296 A:middle
+wrong triangle.
+
+00:05:12.076 --> 00:05:13.966 A:middle
+And just using the viewer below,
+
+00:05:14.396 --> 00:05:17.466 A:middle
+you can see all the data that
+
+00:05:17.596 --> 00:05:20.516 A:middle
+these vertices are taking in and
+
+00:05:20.516 --> 00:05:21.096 A:middle
+outputting.
+
+00:05:24.796 --> 00:05:27.906 A:middle
+And in our second case, I'm on
+
+00:05:27.906 --> 00:05:29.736 A:middle
+the same draw [inaudible] but
+
+00:05:29.736 --> 00:05:31.386 A:middle
+this time, the tree is
+
+00:05:31.386 --> 00:05:33.386 A:middle
+completely missing.
+
+00:05:33.386 --> 00:05:34.636 A:middle
+Just using the geometry viewer
+
+00:05:34.776 --> 00:05:38.456 A:middle
+and the free fly camera, you can
+
+00:05:38.586 --> 00:05:40.426 A:middle
+see that the tree is drawn
+
+00:05:40.426 --> 00:05:41.596 A:middle
+completely outside of the
+
+00:05:41.596 --> 00:05:42.086 A:middle
+Frustum.
+
+00:05:43.536 --> 00:05:45.006 A:middle
+So it makes sense that it is not
+
+00:05:45.006 --> 00:05:45.816 A:middle
+rendered on screen.
+
+00:05:46.716 --> 00:05:48.526 A:middle
+So it is really easy to use
+
+00:05:48.526 --> 00:05:50.706 A:middle
+geometry viewer to detect cases
+
+00:05:50.706 --> 00:05:53.416 A:middle
+like this, and on to our last
+
+00:05:54.526 --> 00:05:56.296 A:middle
+case, sometimes it's not even
+
+00:05:56.296 --> 00:05:57.946 A:middle
+possible to form triangles to
+
+00:05:58.176 --> 00:05:59.156 A:middle
+visualize in 3D.
+
+00:05:59.726 --> 00:06:01.576 A:middle
+And these are tricky to debug.
+

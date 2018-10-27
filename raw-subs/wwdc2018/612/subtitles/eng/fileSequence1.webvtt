@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.826 --> 00:01:01.136 A:middle
+So this is going to be the main
+
+00:01:01.136 --> 00:01:01.846 A:middle
+topic today.
+
+00:01:02.326 --> 00:01:03.696 A:middle
+Develop Awesome Games.
+
+00:01:05.066 --> 00:01:06.686 A:middle
+But I will only be providing
+
+00:01:06.686 --> 00:01:07.846 A:middle
+technical directions here.
+
+00:01:07.996 --> 00:01:09.026 A:middle
+So we'll [inaudible].
+
+00:01:10.116 --> 00:01:13.516 A:middle
+Before we begin, please let me
+
+00:01:13.516 --> 00:01:14.916 A:middle
+thank our friends at Croteam.
+
+00:01:15.376 --> 00:01:16.766 A:middle
+They are the developers behind
+
+00:01:16.766 --> 00:01:18.476 A:middle
+The Talos Principle, which is a
+
+00:01:18.476 --> 00:01:19.576 A:middle
+really awesome game.
+
+00:01:19.926 --> 00:01:21.016 A:middle
+You will see it featured in
+
+00:01:21.016 --> 00:01:22.256 A:middle
+these slides and in two of the
+
+00:01:22.256 --> 00:01:22.696 A:middle
+demos.
+
+00:01:23.476 --> 00:01:26.176 A:middle
+Notice that it has stunning
+
+00:01:26.176 --> 00:01:28.336 A:middle
+visuals but it does really not
+
+00:01:28.386 --> 00:01:29.696 A:middle
+compromise in performance.
+
+00:01:30.096 --> 00:01:30.996 A:middle
+And that's what this is all
+
+00:01:30.996 --> 00:01:31.266 A:middle
+about.
+
+00:01:32.166 --> 00:01:33.566 A:middle
+So let's do a quick run through
+
+00:01:33.566 --> 00:01:35.186 A:middle
+of the agenda.
+
+00:01:35.246 --> 00:01:37.736 A:middle
+I'll start with an introduction
+
+00:01:37.736 --> 00:01:38.306 A:middle
+to the tools.
+
+00:01:38.946 --> 00:01:39.986 A:middle
+This is a very good place to
+
+00:01:39.986 --> 00:01:40.376 A:middle
+start.
+
+00:01:40.916 --> 00:01:42.526 A:middle
+And then we'll talk about the
+
+00:01:42.526 --> 00:01:43.816 A:middle
+actual performance issues.
+
+00:01:44.416 --> 00:01:46.086 A:middle
+Around frame pacing, thread
+
+00:01:46.146 --> 00:01:48.366 A:middle
+priorities, thermal states, and
+
+00:01:48.596 --> 00:01:49.966 A:middle
+unnecessary GPU work.
+
+00:01:51.166 --> 00:01:52.376 A:middle
+Even though all these issues
+
+00:01:52.376 --> 00:01:54.716 A:middle
+seem unrelated, they will
+
+00:01:54.716 --> 00:01:55.916 A:middle
+compound and aggravate each
+
+00:01:55.916 --> 00:01:56.236 A:middle
+other.
+
+00:01:56.546 --> 00:01:57.956 A:middle
+So it's important to tackle them
+
+00:01:57.956 --> 00:01:58.146 A:middle
+all.
+
+00:01:58.686 --> 00:02:00.976 A:middle
+Let's start with the tools.
+

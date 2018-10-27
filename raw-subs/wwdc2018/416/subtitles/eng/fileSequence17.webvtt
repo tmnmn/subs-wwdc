@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.916 --> 00:17:00.926 A:middle
+large an instance is?
+
+00:17:02.376 --> 00:17:03.366 A:middle
+If malloc stack logging was
+
+00:17:03.366 --> 00:17:05.046 A:middle
+enabled when you record, when
+
+00:17:05.046 --> 00:17:06.185 A:middle
+you, when your process was
+
+00:17:06.185 --> 00:17:08.175 A:middle
+started, malloc history can help
+
+00:17:08.175 --> 00:17:09.146 A:middle
+you find the backtrace for that
+
+00:17:09.146 --> 00:17:09.455 A:middle
+object.
+
+00:17:10.896 --> 00:17:11.646 A:middle
+If you just want to see what
+
+00:17:11.646 --> 00:17:12.896 A:middle
+references an object in memory,
+
+00:17:13.486 --> 00:17:15.576 A:middle
+you can use leaks and a bunch of
+
+00:17:15.576 --> 00:17:16.766 A:middle
+options that it has in the
+
+00:17:16.766 --> 00:17:17.715 A:middle
+[inaudible] page to help you
+
+00:17:17.715 --> 00:17:17.915 A:middle
+there.
+
+00:17:17.915 --> 00:17:20.366 A:middle
+And finally, if you just want to
+
+00:17:20.366 --> 00:17:21.435 A:middle
+see how large a region or an
+
+00:17:21.435 --> 00:17:23.296 A:middle
+instance is, vmmap and heap are
+
+00:17:23.296 --> 00:17:24.056 A:middle
+the go-to tools.
+
+00:17:24.626 --> 00:17:26.006 A:middle
+As a jumping off point, I'd
+
+00:17:26.006 --> 00:17:27.376 A:middle
+recommend just running vmmap
+
+00:17:27.376 --> 00:17:29.126 A:middle
+with the summary flag against a
+
+00:17:29.126 --> 00:17:30.436 A:middle
+Memgraph taken of your process
+
+00:17:30.626 --> 00:17:31.746 A:middle
+and then follow the thread down
+
+00:17:33.776 --> 00:17:34.096 A:middle
+there.
+
+00:17:34.096 --> 00:17:34.916 A:middle
+Now, I'd like to hand back to
+
+00:17:34.916 --> 00:17:36.286 A:middle
+Kyle, who's going to talk about
+
+00:17:36.436 --> 00:17:37.736 A:middle
+what can be some of the largest
+
+00:17:37.736 --> 00:17:39.446 A:middle
+objects in iOS apps, and that's
+
+00:17:39.446 --> 00:17:39.936 A:middle
+images.
+
+00:17:40.646 --> 00:17:40.856 A:middle
+Kyle?
+
+00:17:42.516 --> 00:17:45.856 A:middle
+[ Applause ]
+
+00:17:46.356 --> 00:17:46.916 A:middle
+&gt;&gt; Thanks, James.
+
+00:17:47.916 --> 00:17:49.486 A:middle
+So images.
+
+00:17:50.306 --> 00:17:51.586 A:middle
+The most important thing about
+
+00:17:51.586 --> 00:17:54.296 A:middle
+images to remember is that the
+
+00:17:54.296 --> 00:17:55.506 A:middle
+memory use is related to the
+
+00:17:55.506 --> 00:17:57.916 A:middle
+dimensions of the image, not its
+
+00:17:57.916 --> 00:17:58.536 A:middle
+file size.
+
+00:17:59.696 --> 00:18:01.846 A:middle
+As an example, I have this
+

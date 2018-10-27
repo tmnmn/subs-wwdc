@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:55.869 --> 00:24:01.275 align:start position:25% line:-2
+しかし通知を確認する際などに
+ホームスクリーンに戻ります
+
+00:24:01.942 --> 00:24:03.977 align:start position:32% line:-1
+画像はメモリの中です
+
+00:24:04.545 --> 00:24:10.317 align:start position:21% line:-2
+今までの経験から“表示されない
+大きなリソースはアンロード”です
+
+00:24:12.719 --> 00:24:13.821 align:start position:34% line:-1
+方法は２つあります
+
+00:24:13.921 --> 00:24:15.122 align:start position:18% line:-1
+まずはApp lifecycleです
+
+00:24:15.222 --> 00:24:21.128 align:start position:21% line:-2
+バックグラウンドでも
+フォアグラウンドでも使用できます
+
+00:24:21.628 --> 00:24:27.601 align:start position:7% line:-2
+UIViewControllerに準拠しておらず
+オンスクリーンでの適用です
+
+00:24:27.701 --> 00:24:30.938 align:start position:9% line:-1
+UIViewControllerのメソッドは―
+
+00:24:31.405 --> 00:24:34.308 align:start position:7% line:-1
+複数view controllersがありますが
+
+00:24:34.408 --> 00:24:36.477 align:start position:30% line:-2
+スクリーンに
+表示されるのは１枚です
+
+00:24:36.643 --> 00:24:39.613 align:start position:12% line:-2
+viewWillAppearや
+viewDidDisappearを活用して
+
+00:24:39.713 --> 00:24:43.150 align:start position:30% line:-2
+メモリフットプリントを
+小さくできます
+
+00:24:43.984 --> 00:24:45.319 align:start position:39% line:-1
+これが例です
+
+00:24:46.153 --> 00:24:50.090 align:start position:27% line:-2
+バックグラウンドにある
+Appに通知をセットします
+
+00:24:50.190 --> 00:24:53.026 align:start position:23% line:-2
+この場合は
+画像のアンロードをセットします
+
+00:24:53.794 --> 00:24:56.697 align:start position:21% line:-2
+Appがフォアグラウンドに来ると
+通知されます
+
+00:24:57.531 --> 00:24:59.199 align:start position:32% line:-1
+画像をリロードしても
+
+00:24:59.299 --> 00:25:04.238 align:start position:21% line:-2
+バックグラウンドではメモリを
+セーブでき 忠実性も維持できます
+

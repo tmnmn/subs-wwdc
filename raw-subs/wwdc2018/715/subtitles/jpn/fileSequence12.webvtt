@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.217 --> 00:12:00.354 align:start position:30% line:-1
+993番ポートに接続し
+
+00:12:00.654 --> 00:12:03.991 align:start position:29% line:-1
+TLSとTCPを使います
+
+00:12:05.058 --> 00:12:07.761 align:start position:32% line:-1
+通常のソケットなら―
+
+00:12:08.362 --> 00:12:10.197 align:start position:34% line:-1
+こう始まるでしょう
+
+00:12:10.397 --> 00:12:14.935 align:start position:20% line:-2
+ホスト名を取得し DNS APIを
+呼び出し ホスト名を解決
+
+00:12:15.035 --> 00:12:16.870 align:start position:16% line:-1
+例えばgetaddrinfoだとします
+
+00:12:17.237 --> 00:12:21.875 align:start position:29% line:-2
+１つ以上のアドレスから
+どれに接続するか決めます
+
+00:12:22.442 --> 00:12:25.679 align:start position:29% line:-2
+最適なアドレスファミリで
+ソケットを呼び
+
+00:12:26.313 --> 00:12:28.916 align:start position:36% line:-1
+オプションを設定
+
+00:12:29.016 --> 00:12:33.253 align:start position:25% line:-2
+ソケットを
+非ブロッキングにする場合は―
+
+00:12:34.555 --> 00:12:39.326 align:start position:21% line:-2
+TCPを開始し
+書き込み可能なイベントを待ちます
+
+00:12:39.927 --> 00:12:44.698 align:start position:30% line:-2
+以上はTLSを使う前で
+多くの手間がかかります
+
+00:12:46.366 --> 00:12:48.535 align:start position:18% line:-2
+Network.frameworkの
+場合は？
+
+00:12:48.635 --> 00:12:53.307 align:start position:29% line:-2
+もっとシンプルな使い方が
+できるといいですね
+
+00:12:53.674 --> 00:12:56.477 align:start position:29% line:-2
+まずは接続オブジェクトの
+生成です
+
+00:12:56.577 --> 00:12:58.879 align:start position:27% line:-1
+２つのことに基づいています
+
+00:12:58.979 --> 00:13:02.449 align:start position:30% line:-2
+１つ目は宛先を定義する
+エンドポイント
+

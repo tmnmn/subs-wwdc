@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:56.884 --> 00:32:00.254 align:start position:32% line:-2
+よく使うオブジェクト
+200個なら
+
+00:32:00.354 --> 00:32:03.323 align:start position:29% line:-1
+円滑なプレイを左右します
+
+00:32:03.457 --> 00:32:04.925 align:start position:32% line:-1
+このフォーマットなら
+
+00:32:05.025 --> 00:32:08.562 align:start position:34% line:-2
+60fpsで物理の
+情報を更新し
+
+00:32:08.695 --> 00:32:11.398 align:start position:32% line:-1
+全員が円滑に遊べます
+
+00:32:13.367 --> 00:32:18.605 align:start position:21% line:-2
+さて使ったのはCodableと
+BitStreamCodable
+
+00:32:18.806 --> 00:32:22.142 align:start position:36% line:-2
+異なる方法には
+問題がつきもので
+
+00:32:22.242 --> 00:32:25.345 align:start position:29% line:-1
+コードパスも２つ必要です
+
+00:32:26.079 --> 00:32:29.216 align:start position:34% line:-2
+Swiftで
+組み合わせましょう
+
+00:32:30.083 --> 00:32:36.523 align:start position:18% line:-2
+限定的な拡張を加えて
+BitStreamCodable内の
+
+00:32:36.623 --> 00:32:39.993 align:start position:18% line:-2
+CodableにBitStreamの
+エンコードを実装
+
+00:32:40.394 --> 00:32:43.063 align:start position:32% line:-1
+それからバイナリで…
+
+00:32:44.598 --> 00:32:48.435 align:start position:25% line:-2
+エンコードし
+BitStreamに入れます
+
+00:32:49.570 --> 00:32:54.541 align:start position:14% line:-2
+Codableの構造体は
+BitStreamCodableでマーク
+
+00:32:54.842 --> 00:33:01.515 align:start position:16% line:-2
+BitStreamCodableだけの
+時ほど速く小さくないですが
+

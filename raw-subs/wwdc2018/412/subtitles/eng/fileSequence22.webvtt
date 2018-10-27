@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:00.376 --> 00:22:01.536 A:middle
+So we can see here that there is
+
+00:22:01.536 --> 00:22:02.636 A:middle
+a max attempts property, and
+
+00:22:02.636 --> 00:22:04.636 A:middle
+it's correctly set to 10, so it
+
+00:22:04.636 --> 00:22:06.126 A:middle
+looks like there's perhaps a
+
+00:22:06.126 --> 00:22:07.716 A:middle
+logic error where, after
+
+00:22:07.716 --> 00:22:08.876 A:middle
+attempts is incremented, it's
+
+00:22:08.876 --> 00:22:10.476 A:middle
+not successfully determining
+
+00:22:10.476 --> 00:22:11.926 A:middle
+that it's past the maximum.
+
+00:22:12.296 --> 00:22:13.406 A:middle
+So I'd like to find the code
+
+00:22:13.406 --> 00:22:14.616 A:middle
+that's modifying attempts to see
+
+00:22:14.616 --> 00:22:15.646 A:middle
+what the logic looks like.
+
+00:22:15.776 --> 00:22:17.646 A:middle
+I'm going to open the variables
+
+00:22:17.646 --> 00:22:19.046 A:middle
+view and expand the view
+
+00:22:19.046 --> 00:22:20.016 A:middle
+controller to see all its
+
+00:22:20.016 --> 00:22:20.886 A:middle
+properties and down at the
+
+00:22:20.886 --> 00:22:22.056 A:middle
+bottom, I'm going to use the
+
+00:22:22.136 --> 00:22:24.796 A:middle
+filter to enter GamePlay to find
+
+00:22:24.796 --> 00:22:25.296 A:middle
+that property.
+
+00:22:25.746 --> 00:22:27.286 A:middle
+Expand its properties and then
+
+00:22:27.286 --> 00:22:28.586 A:middle
+I'm going to select the attempts
+
+00:22:28.616 --> 00:22:28.956 A:middle
+property.
+
+00:22:29.516 --> 00:22:31.566 A:middle
+And down here, I'm going to open
+
+00:22:31.566 --> 00:22:33.786 A:middle
+the contextual menu and select
+
+00:22:34.086 --> 00:22:34.956 A:middle
+watch attempts.
+
+00:22:36.276 --> 00:22:37.716 A:middle
+Now what this does is creates
+
+00:22:37.716 --> 00:22:39.026 A:middle
+what's called a watchpoint.
+
+00:22:39.656 --> 00:22:40.876 A:middle
+In the breakpoint navigator,
+
+00:22:40.916 --> 00:22:42.116 A:middle
+below all the breakpoints,
+
+00:22:42.406 --> 00:22:43.586 A:middle
+you'll see there's a new group
+
+00:22:43.586 --> 00:22:44.926 A:middle
+called watchpoints, and we have
+
+00:22:44.926 --> 00:22:46.366 A:middle
+one watchpoint for attempts.
+
+00:22:46.706 --> 00:22:48.156 A:middle
+And a watchpoint is like a
+
+00:22:48.156 --> 00:22:49.546 A:middle
+breakpoint, but it pauses the
+
+00:22:49.546 --> 00:22:50.826 A:middle
+debugger the next time the value
+
+00:22:50.826 --> 00:22:52.966 A:middle
+of that variable is changed, so
+
+00:22:52.966 --> 00:22:54.126 A:middle
+we can remove this property
+
+00:22:54.126 --> 00:22:55.226 A:middle
+breakpoint because we no longer
+
+00:22:55.226 --> 00:22:56.766 A:middle
+need it and press continue.
+
+00:22:57.186 --> 00:22:58.456 A:middle
+And now we've paused at this
+
+00:22:58.456 --> 00:22:59.886 A:middle
+watchpoint, and we found the
+
+00:22:59.886 --> 00:23:00.796 A:middle
+code that's modifying the
+

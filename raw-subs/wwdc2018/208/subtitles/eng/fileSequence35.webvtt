@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.756 --> 00:35:01.006 A:middle
+the prompt text, let the user
+
+00:35:01.006 --> 00:35:02.296 A:middle
+know that it was an invalid
+
+00:35:02.296 --> 00:35:03.296 A:middle
+passcode, and we're going to
+
+00:35:03.296 --> 00:35:05.076 A:middle
+call the clearEntry animated
+
+00:35:05.076 --> 00:35:05.486 A:middle
+true.
+
+00:35:05.866 --> 00:35:08.086 A:middle
+What this will do is clear out
+
+00:35:08.086 --> 00:35:09.576 A:middle
+all the digits, and shake the
+
+00:35:09.576 --> 00:35:10.736 A:middle
+digit view to let the user know
+
+00:35:10.736 --> 00:35:11.586 A:middle
+that something went wrong.
+
+00:35:11.946 --> 00:35:13.296 A:middle
+And then, finally, we're going
+
+00:35:13.296 --> 00:35:14.396 A:middle
+to present the viewController.
+
+00:35:14.706 --> 00:35:15.606 A:middle
+And, since this is just a
+
+00:35:15.606 --> 00:35:16.806 A:middle
+viewController, we can use
+
+00:35:16.806 --> 00:35:18.916 A:middle
+custom presentation styles.
+
+00:35:19.296 --> 00:35:20.306 A:middle
+So here we're going to use the
+
+00:35:20.306 --> 00:35:22.396 A:middle
+blurOverFullScreen, which was
+
+00:35:22.396 --> 00:35:23.986 A:middle
+introduced in tvOS last year.
+
+00:35:25.556 --> 00:35:26.576 A:middle
+Let's run this and see how it
+
+00:35:26.576 --> 00:35:26.846 A:middle
+works.
+
+00:35:26.846 --> 00:35:29.556 A:middle
+So, I'm going to select my
+
+00:35:29.556 --> 00:35:29.916 A:middle
+movie.
+
+00:35:30.336 --> 00:35:31.506 A:middle
+And, we see we get the
+
+00:35:31.506 --> 00:35:33.096 A:middle
+blurOverFullScreen animation,
+
+00:35:33.096 --> 00:35:34.466 A:middle
+and we get prompted to enter our
+
+00:35:34.466 --> 00:35:35.046 A:middle
+passcode.
+
+00:35:35.436 --> 00:35:36.786 A:middle
+Now, we know that it's all 1's
+
+00:35:36.816 --> 00:35:38.136 A:middle
+right now, so let's see what
+
+00:35:38.136 --> 00:35:39.566 A:middle
+happens if I enter all 2's.
+
+00:35:39.566 --> 00:35:41.576 A:middle
+We see that we get a nice shake
+
+00:35:41.576 --> 00:35:42.886 A:middle
+animation, and we update the
+
+00:35:42.886 --> 00:35:43.346 A:middle
+text.
+
+00:35:44.226 --> 00:35:45.926 A:middle
+Now, we go enter all 1's.
+
+00:35:47.006 --> 00:35:47.916 A:middle
+We know that's the correct
+
+00:35:47.916 --> 00:35:49.166 A:middle
+passcode, so we dismiss the
+
+00:35:49.166 --> 00:35:50.236 A:middle
+viewController and we can play
+
+00:35:50.236 --> 00:35:50.766 A:middle
+our content.
+
+00:35:50.906 --> 00:35:54.736 A:middle
+Now, if the user wants to use--
+
+00:35:54.736 --> 00:35:56.476 A:middle
+they most likely want to use
+
+00:35:56.476 --> 00:35:57.626 A:middle
+their own passcode, so what
+
+00:35:57.626 --> 00:35:58.506 A:middle
+we're going to do is we're going
+
+00:35:58.506 --> 00:35:59.566 A:middle
+to take this settings button
+
+00:35:59.566 --> 00:36:00.846 A:middle
+here, and we're going to allow
+

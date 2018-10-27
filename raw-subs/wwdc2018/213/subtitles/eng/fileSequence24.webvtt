@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.916 --> 00:24:01.776 A:middle
+The first thing we're going to
+
+00:24:01.776 --> 00:24:04.096 A:middle
+need to do is take that array of
+
+00:24:04.096 --> 00:24:05.686 A:middle
+our own search results and
+
+00:24:05.736 --> 00:24:07.126 A:middle
+translate them into an array of
+
+00:24:07.266 --> 00:24:08.806 A:middle
+CPListItems.
+
+00:24:09.356 --> 00:24:10.576 A:middle
+So, we'll do that by using some
+
+00:24:10.576 --> 00:24:11.986 A:middle
+of the properties on our search
+
+00:24:11.986 --> 00:24:13.156 A:middle
+result class.
+
+00:24:14.276 --> 00:24:16.116 A:middle
+We will then initialize a new
+
+00:24:16.266 --> 00:24:19.396 A:middle
+CPListTemplate with one section
+
+00:24:19.396 --> 00:24:21.676 A:middle
+of those items, assign a title
+
+00:24:21.676 --> 00:24:23.406 A:middle
+of Parks, and also, assign a
+
+00:24:23.406 --> 00:24:24.806 A:middle
+delegate to manage interaction
+
+00:24:24.806 --> 00:24:25.336 A:middle
+from the user.
+
+00:24:26.236 --> 00:24:27.376 A:middle
+We, again, use the interface
+
+00:24:27.376 --> 00:24:28.906 A:middle
+controller to push our new
+
+00:24:28.906 --> 00:24:30.246 A:middle
+template onto the car screen.
+
+00:24:31.496 --> 00:24:32.816 A:middle
+When the user interacts with an
+
+00:24:32.816 --> 00:24:36.256 A:middle
+item on the screen listTemplate
+
+00:24:36.256 --> 00:24:37.826 A:middle
+didSelect item completion
+
+00:24:37.826 --> 00:24:39.186 A:middle
+handler will be called on your
+
+00:24:39.186 --> 00:24:40.126 A:middle
+list template delegate.
+
+00:24:41.566 --> 00:24:43.136 A:middle
+There are a few other items
+
+00:24:43.136 --> 00:24:44.086 A:middle
+available in the CarPlay
+
+00:24:44.086 --> 00:24:45.096 A:middle
+framework that I'd like to go
+
+00:24:45.096 --> 00:24:45.706 A:middle
+over, briefly.
+
+00:24:47.156 --> 00:24:49.326 A:middle
+The first is a great example of
+
+00:24:49.326 --> 00:24:51.646 A:middle
+how complex CarPlay can be and
+
+00:24:51.646 --> 00:24:52.826 A:middle
+how the CarPlay framework helps
+
+00:24:52.826 --> 00:24:54.446 A:middle
+you not have to worry about
+
+00:24:54.476 --> 00:24:54.686 A:middle
+that.
+
+00:24:55.036 --> 00:24:56.516 A:middle
+What we're looking at, right
+
+00:24:56.516 --> 00:24:58.456 A:middle
+now, is the search template
+
+00:24:58.456 --> 00:24:59.246 A:middle
+available in the CarPlay
+
+00:24:59.246 --> 00:25:00.596 A:middle
+framework presenting a
+

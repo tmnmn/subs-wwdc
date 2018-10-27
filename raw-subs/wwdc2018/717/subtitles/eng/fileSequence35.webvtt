@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.166 --> 00:35:00.306 A:middle
+zero, to 1,1, in the upper right
+
+00:35:00.336 --> 00:35:00.626 A:middle
+corner.
+
+00:35:02.406 --> 00:35:04.016 A:middle
+Now what you see here is to that
+
+00:35:04.116 --> 00:35:05.896 A:middle
+performed face and landmark
+
+00:35:05.896 --> 00:35:06.916 A:middle
+detection request.
+
+00:35:07.326 --> 00:35:09.036 A:middle
+And you will see that I get the
+
+00:35:09.036 --> 00:35:10.496 A:middle
+bounding box for my face, and
+
+00:35:10.496 --> 00:35:11.956 A:middle
+the landmarks are actually
+
+00:35:11.956 --> 00:35:14.196 A:middle
+reported in relative coordinates
+
+00:35:14.236 --> 00:35:17.106 A:middle
+to that bounding box.
+
+00:35:17.296 --> 00:35:18.526 A:middle
+If you need to go back into the
+
+00:35:18.526 --> 00:35:19.996 A:middle
+image coordinate space, we have
+
+00:35:20.096 --> 00:35:22.006 A:middle
+utility functions and VNUtils
+
+00:35:22.006 --> 00:35:22.946 A:middle
+like the VN Image [inaudible]
+
+00:35:22.946 --> 00:35:25.476 A:middle
+from normalized way to convert
+
+00:35:25.606 --> 00:35:28.006 A:middle
+back and forth between those
+
+00:35:29.676 --> 00:35:30.056 A:middle
+coordinates.
+
+00:35:31.416 --> 00:35:32.336 A:middle
+Next, let's talk about
+
+00:35:32.336 --> 00:35:33.156 A:middle
+confidence scores.
+
+00:35:33.156 --> 00:35:34.376 A:middle
+We touched a little bit on this
+
+00:35:34.426 --> 00:35:36.076 A:middle
+already during our robot shot
+
+00:35:36.076 --> 00:35:36.626 A:middle
+example.
+
+00:35:36.626 --> 00:35:40.186 A:middle
+A lot of our algorithms can
+
+00:35:40.186 --> 00:35:42.006 A:middle
+express how confident they are
+
+00:35:42.006 --> 00:35:42.796 A:middle
+in their results.
+
+00:35:43.746 --> 00:35:46.436 A:middle
+And that is kind of an important
+
+00:35:46.436 --> 00:35:47.886 A:middle
+part to know when I want to
+
+00:35:48.226 --> 00:35:49.706 A:middle
+analyze later on what I get out
+
+00:35:49.706 --> 00:35:50.446 A:middle
+of these results.
+
+00:35:50.536 --> 00:35:51.716 A:middle
+So, if I have a low confidence
+
+00:35:51.716 --> 00:35:53.216 A:middle
+of zero, or do I have a high
+
+00:35:53.216 --> 00:35:56.566 A:middle
+confidence of 1?
+
+00:35:57.576 --> 00:36:02.676 A:middle
+Clicker. Here we go.
+

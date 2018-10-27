@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:00.316 --> 00:22:02.006 A:middle
+is that CoreLocation requires
+
+00:22:02.006 --> 00:22:04.046 A:middle
+user authorization, and that
+
+00:22:04.046 --> 00:22:05.376 A:middle
+shows a permission dialog on the
+
+00:22:05.376 --> 00:22:06.846 A:middle
+device if it hasn't been granted
+
+00:22:06.846 --> 00:22:07.186 A:middle
+before.
+
+00:22:08.396 --> 00:22:10.016 A:middle
+This causes our tests to rely on
+
+00:22:10.016 --> 00:22:10.656 A:middle
+device state.
+
+00:22:10.656 --> 00:22:12.196 A:middle
+It makes them harder to maintain
+
+00:22:12.196 --> 00:22:13.636 A:middle
+and, ultimately, more likely to
+
+00:22:13.636 --> 00:22:13.976 A:middle
+fail.
+
+00:22:13.976 --> 00:22:16.826 A:middle
+So, if you've had this problem
+
+00:22:16.826 --> 00:22:19.136 A:middle
+in the past, you may have
+
+00:22:19.136 --> 00:22:20.496 A:middle
+considered subclassing the
+
+00:22:20.496 --> 00:22:22.476 A:middle
+external class and overriding
+
+00:22:22.476 --> 00:22:24.776 A:middle
+any methods that you call on it.
+
+00:22:24.856 --> 00:22:26.416 A:middle
+For example, we could try
+
+00:22:26.416 --> 00:22:28.496 A:middle
+subclassing CLLocationManager
+
+00:22:28.496 --> 00:22:29.996 A:middle
+here and overriding the
+
+00:22:29.996 --> 00:22:31.176 A:middle
+RequestLocation method.
+
+00:22:32.116 --> 00:22:34.016 A:middle
+And that may work at first, but
+
+00:22:34.016 --> 00:22:34.496 A:middle
+it's risky.
+
+00:22:35.626 --> 00:22:37.256 A:middle
+Some classes from the SDK aren't
+
+00:22:37.256 --> 00:22:38.766 A:middle
+designed to be subclassed and
+
+00:22:38.766 --> 00:22:39.566 A:middle
+may behave differently.
+
+00:22:40.706 --> 00:22:42.036 A:middle
+Plus, we still have to call the
+
+00:22:42.036 --> 00:22:43.496 A:middle
+superclass' initializer, and
+
+00:22:43.706 --> 00:22:44.746 A:middle
+that's not code that we can
+
+00:22:44.746 --> 00:22:45.166 A:middle
+override.
+
+00:22:46.296 --> 00:22:47.956 A:middle
+But the main problem is that, if
+
+00:22:47.956 --> 00:22:49.656 A:middle
+I ever modify my code to call
+
+00:22:49.656 --> 00:22:50.446 A:middle
+another method on
+
+00:22:50.546 --> 00:22:52.666 A:middle
+CLLocationManager, I'll have to
+
+00:22:52.666 --> 00:22:54.226 A:middle
+remember to override that method
+
+00:22:54.226 --> 00:22:55.956 A:middle
+on my testing subclass as well.
+
+00:22:57.086 --> 00:22:58.686 A:middle
+If I rely on subclassing, the
+
+00:22:58.686 --> 00:23:00.246 A:middle
+compiler won't notify me that
+

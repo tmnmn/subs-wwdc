@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.246 --> 00:23:00.906 A:middle
+server using core animation
+
+00:23:00.906 --> 00:23:01.376 A:middle
+layers.
+
+00:23:02.106 --> 00:23:03.326 A:middle
+And, a lot of you who do
+
+00:23:03.326 --> 00:23:04.456 A:middle
+development on iOS are going to
+
+00:23:04.456 --> 00:23:05.476 A:middle
+think this sounds really
+
+00:23:05.476 --> 00:23:06.156 A:middle
+familiar to me.
+
+00:23:06.156 --> 00:23:07.476 A:middle
+But, let's take a look at what
+
+00:23:07.476 --> 00:23:08.416 A:middle
+actually goes on here.
+
+00:23:09.186 --> 00:23:11.256 A:middle
+So, if we have a tree of views
+
+00:23:11.256 --> 00:23:12.596 A:middle
+like this, in UIKit, the
+
+00:23:12.626 --> 00:23:13.936 A:middle
+relationship between views and
+
+00:23:13.936 --> 00:23:14.966 A:middle
+layers is really simple.
+
+00:23:15.306 --> 00:23:16.716 A:middle
+Every view gets exactly one
+
+00:23:16.716 --> 00:23:17.076 A:middle
+layer.
+
+00:23:17.516 --> 00:23:18.506 A:middle
+And, the parent/child
+
+00:23:18.506 --> 00:23:20.196 A:middle
+relationship between views is
+
+00:23:20.196 --> 00:23:21.676 A:middle
+mirrored in the layer tree also.
+
+00:23:22.686 --> 00:23:24.446 A:middle
+But in AppKit, we create the
+
+00:23:24.446 --> 00:23:26.696 A:middle
+layer tree as a process of-- or
+
+00:23:26.696 --> 00:23:28.106 A:middle
+as a side effect of processing
+
+00:23:28.416 --> 00:23:29.156 A:middle
+the view hierarchy.
+
+00:23:29.986 --> 00:23:31.856 A:middle
+So, we can wind up in cases
+
+00:23:31.856 --> 00:23:33.246 A:middle
+where we might decide to take
+
+00:23:33.246 --> 00:23:34.836 A:middle
+many views, and use a single
+
+00:23:34.836 --> 00:23:35.436 A:middle
+layer for that.
+
+00:23:35.806 --> 00:23:37.166 A:middle
+And, that's great because it can
+
+00:23:37.166 --> 00:23:38.036 A:middle
+reduce system memory
+
+00:23:38.036 --> 00:23:39.786 A:middle
+consumption, and GPU memory
+
+00:23:39.786 --> 00:23:41.736 A:middle
+consumption, and also gives the
+
+00:23:41.736 --> 00:23:43.276 A:middle
+window server a little less load
+
+00:23:43.276 --> 00:23:44.416 A:middle
+to process when it's rendering
+
+00:23:44.416 --> 00:23:44.946 A:middle
+the screen.
+
+00:23:45.456 --> 00:23:46.896 A:middle
+Something I really want to point
+
+00:23:46.896 --> 00:23:48.126 A:middle
+out here, though, is that this
+
+00:23:48.126 --> 00:23:49.276 A:middle
+is dynamic based on the
+
+00:23:49.276 --> 00:23:50.256 A:middle
+configuration of the view
+
+00:23:50.256 --> 00:23:51.276 A:middle
+hierarchy.
+
+00:23:51.376 --> 00:23:52.646 A:middle
+So, it can change moment to
+
+00:23:52.646 --> 00:23:52.966 A:middle
+moment.
+
+00:23:53.306 --> 00:23:55.196 A:middle
+So, you really can't rely on
+
+00:23:55.196 --> 00:23:56.506 A:middle
+having this fixed parent/child
+
+00:23:56.506 --> 00:23:58.006 A:middle
+relationship between views and
+
+00:23:58.006 --> 00:23:58.946 A:middle
+layers like you might on iOS.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.426 --> 00:21:01.836 A:middle
+So, notice that we're calling
+
+00:21:01.836 --> 00:21:03.456 A:middle
+the request location method on
+
+00:21:03.516 --> 00:21:04.716 A:middle
+CLLocationManager, here.
+
+00:21:04.716 --> 00:21:07.666 A:middle
+When we call this, it'll attempt
+
+00:21:07.666 --> 00:21:09.396 A:middle
+to get the current location and
+
+00:21:09.396 --> 00:21:10.556 A:middle
+eventually call a delegate
+
+00:21:10.556 --> 00:21:11.536 A:middle
+method on our class.
+
+00:21:12.156 --> 00:21:14.106 A:middle
+So, let's go look at that
+
+00:21:14.776 --> 00:21:15.186 A:middle
+delegate method.
+
+00:21:15.366 --> 00:21:16.946 A:middle
+We use an extension to conform
+
+00:21:16.946 --> 00:21:18.756 A:middle
+to the CLLocationManagerDelegate
+
+00:21:18.756 --> 00:21:20.256 A:middle
+protocol here, and we call a
+
+00:21:20.256 --> 00:21:21.416 A:middle
+stored completion block.
+
+00:21:22.486 --> 00:21:23.966 A:middle
+Okay, so let's try writing a
+
+00:21:23.966 --> 00:21:26.636 A:middle
+unit test for this class.
+
+00:21:26.806 --> 00:21:27.766 A:middle
+Here's one that I tried to
+
+00:21:27.766 --> 00:21:29.016 A:middle
+write, and, if we read through
+
+00:21:29.016 --> 00:21:30.886 A:middle
+it, we can see that it starts by
+
+00:21:30.886 --> 00:21:31.616 A:middle
+creating a
+
+00:21:31.616 --> 00:21:33.776 A:middle
+CurrentLocationProvider and
+
+00:21:33.776 --> 00:21:35.486 A:middle
+checks that the desired accuracy
+
+00:21:35.486 --> 00:21:37.006 A:middle
+and whether the delegate is set.
+
+00:21:37.506 --> 00:21:38.166 A:middle
+So far, so good.
+
+00:21:39.206 --> 00:21:40.466 A:middle
+But then things get tricky.
+
+00:21:41.356 --> 00:21:42.276 A:middle
+We want to check the
+
+00:21:42.276 --> 00:21:43.686 A:middle
+checkCurrentLocation method,
+
+00:21:44.136 --> 00:21:45.066 A:middle
+since that's where our main
+
+00:21:45.066 --> 00:21:47.036 A:middle
+logic lives, but we have a
+
+00:21:47.036 --> 00:21:47.466 A:middle
+problem.
+
+00:21:48.236 --> 00:21:49.656 A:middle
+We don't have a way to know when
+
+00:21:49.656 --> 00:21:51.136 A:middle
+the request location method is
+
+00:21:51.136 --> 00:21:52.976 A:middle
+called, since that's a method on
+
+00:21:53.076 --> 00:21:55.456 A:middle
+CLLocationManager and not part
+
+00:21:56.276 --> 00:21:57.396 A:middle
+our code.
+
+00:21:57.606 --> 00:21:58.486 A:middle
+Another problem that we're
+
+00:21:58.486 --> 00:21:59.856 A:middle
+likely to encounter in this test
+

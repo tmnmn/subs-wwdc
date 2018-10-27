@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.856 --> 00:24:00.436 A:middle
+WWDC 2014.
+
+00:24:03.036 --> 00:24:05.246 A:middle
+Finally, you can use Safari if
+
+00:24:05.246 --> 00:24:06.046 A:middle
+you need to debug your
+
+00:24:06.046 --> 00:24:07.386 A:middle
+credential provider extension
+
+00:24:07.576 --> 00:24:08.456 A:middle
+while testing filling
+
+00:24:08.456 --> 00:24:09.096 A:middle
+credentials.
+
+00:24:10.396 --> 00:24:12.416 A:middle
+To do this, first activate the
+
+00:24:12.416 --> 00:24:13.966 A:middle
+extension scheme, select a
+
+00:24:13.966 --> 00:24:15.476 A:middle
+target, and select Run.
+
+00:24:17.556 --> 00:24:19.526 A:middle
+When you do this, Xcode will ask
+
+00:24:19.526 --> 00:24:20.896 A:middle
+you to choose an app to host the
+
+00:24:20.896 --> 00:24:21.476 A:middle
+extension.
+
+00:24:22.136 --> 00:24:23.886 A:middle
+Choose Safari from the list, and
+
+00:24:23.886 --> 00:24:25.266 A:middle
+click the Run button.
+
+00:24:26.766 --> 00:24:28.386 A:middle
+Safari will then open, and you
+
+00:24:28.386 --> 00:24:29.946 A:middle
+can navigate to a sign-in page
+
+00:24:29.946 --> 00:24:30.926 A:middle
+where you want to test your
+
+00:24:30.926 --> 00:24:31.496 A:middle
+extension.
+
+00:24:32.376 --> 00:24:33.496 A:middle
+When you open your credential
+
+00:24:33.496 --> 00:24:34.936 A:middle
+list, or select a credential
+
+00:24:34.936 --> 00:24:36.416 A:middle
+from the QuickType bar, your
+
+00:24:36.546 --> 00:24:38.076 A:middle
+extension will be launched, and
+
+00:24:38.076 --> 00:24:39.376 A:middle
+Xcode will attach the debugger
+
+00:24:39.376 --> 00:24:40.916 A:middle
+to it, so you can begin your
+
+00:24:40.916 --> 00:24:41.576 A:middle
+debug session.
+
+00:24:44.506 --> 00:24:46.106 A:middle
+For debugging your extension in
+
+00:24:46.106 --> 00:24:48.316 A:middle
+the other cases, use the Attach
+
+00:24:48.316 --> 00:24:50.436 A:middle
+to Process Item in Xcode's debug
+
+00:24:50.436 --> 00:24:51.806 A:middle
+menu to start attaching the
+
+00:24:51.806 --> 00:24:52.206 A:middle
+debugger.
+
+00:24:53.426 --> 00:24:54.626 A:middle
+You can then manually open
+
+00:24:54.626 --> 00:24:55.676 A:middle
+Settings to enable your
+
+00:24:55.676 --> 00:24:56.746 A:middle
+extension if you want to test
+
+00:24:56.746 --> 00:24:58.806 A:middle
+the settings UI, or you can open
+
+00:24:58.806 --> 00:25:00.326 A:middle
+any app's login screen if you'd
+

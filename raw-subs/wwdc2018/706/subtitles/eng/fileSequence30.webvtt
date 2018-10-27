@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.956 --> 00:30:01.806 A:middle
+resource type immunization.
+
+00:30:02.316 --> 00:30:05.966 A:middle
+There's a vaccine code object
+
+00:30:07.356 --> 00:30:08.996 A:middle
+and contained therein is an
+
+00:30:08.996 --> 00:30:09.986 A:middle
+array of codings.
+
+00:30:10.506 --> 00:30:12.566 A:middle
+There may be multiple codings,
+
+00:30:13.556 --> 00:30:16.556 A:middle
+so I need to search by system to
+
+00:30:16.556 --> 00:30:17.526 A:middle
+find CVX.
+
+00:30:18.186 --> 00:30:19.616 A:middle
+In this example, the first
+
+00:30:19.616 --> 00:30:23.186 A:middle
+system is NDC so I move until I
+
+00:30:23.186 --> 00:30:24.076 A:middle
+see CVX.
+
+00:30:25.086 --> 00:30:27.026 A:middle
+With that in hand I look at the
+
+00:30:27.026 --> 00:30:29.906 A:middle
+code and I look it up and I see
+
+00:30:29.906 --> 00:30:30.916 A:middle
+that I have MMRV.
+
+00:30:31.476 --> 00:30:34.886 A:middle
+So that's the structure of these
+
+00:30:34.886 --> 00:30:36.176 A:middle
+immunization records JSON.
+
+00:30:37.026 --> 00:30:38.906 A:middle
+Now it's time to implement.
+
+00:30:39.856 --> 00:30:41.646 A:middle
+So here we are back in my
+
+00:30:41.646 --> 00:30:42.956 A:middle
+immunizations view controller.
+
+00:30:43.676 --> 00:30:44.796 A:middle
+I've done some work ahead of
+
+00:30:44.796 --> 00:30:47.156 A:middle
+time to implement the UI of the
+
+00:30:47.156 --> 00:30:50.766 A:middle
+checklist and I instantiate it
+
+00:30:51.046 --> 00:30:52.596 A:middle
+with a showChecklist property.
+
+00:30:52.596 --> 00:30:57.076 A:middle
+Now it's time to populate my
+
+00:30:57.076 --> 00:30:57.826 A:middle
+checklist with data.
+
+00:30:59.226 --> 00:31:00.856 A:middle
+Here I am in the query for
+

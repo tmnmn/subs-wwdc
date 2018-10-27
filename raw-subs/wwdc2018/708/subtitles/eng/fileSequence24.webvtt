@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.316 --> 00:24:01.186 A:middle
+app, it takes an image of an
+
+00:24:01.186 --> 00:24:02.776 A:middle
+input and simply returns the
+
+00:24:02.776 --> 00:24:03.806 A:middle
+stylized image.
+
+00:24:04.346 --> 00:24:05.736 A:middle
+And there are two key components
+
+00:24:05.736 --> 00:24:06.976 A:middle
+that go into making this happen:
+
+00:24:07.416 --> 00:24:09.896 A:middle
+first, the MLModel file, which
+
+00:24:09.896 --> 00:24:11.366 A:middle
+stores the particular parameters
+
+00:24:11.366 --> 00:24:13.686 A:middle
+needed to apply this style; and
+
+00:24:13.686 --> 00:24:15.626 A:middle
+second, the inference engine,
+
+00:24:15.766 --> 00:24:17.546 A:middle
+which takes in the MLModel and
+
+00:24:17.546 --> 00:24:18.746 A:middle
+the image and performs the
+
+00:24:18.746 --> 00:24:20.096 A:middle
+calculations necessary to
+
+00:24:20.166 --> 00:24:20.886 A:middle
+produce the result.
+
+00:24:21.886 --> 00:24:23.006 A:middle
+So let's peek under the hood of
+
+00:24:23.006 --> 00:24:24.286 A:middle
+this inference engine and see
+
+00:24:24.286 --> 00:24:25.416 A:middle
+how we leverage Apple's
+
+00:24:25.416 --> 00:24:27.146 A:middle
+technology to perform this style
+
+00:24:27.146 --> 00:24:28.416 A:middle
+transfer efficiently.
+
+00:24:30.156 --> 00:24:31.606 A:middle
+This model is an example of a
+
+00:24:31.606 --> 00:24:33.126 A:middle
+neural network, which consists
+
+00:24:33.126 --> 00:24:34.466 A:middle
+of a series of mathematical
+
+00:24:34.466 --> 00:24:35.866 A:middle
+operations called layers.
+
+00:24:36.406 --> 00:24:37.566 A:middle
+Each layer applies some
+
+00:24:37.566 --> 00:24:39.026 A:middle
+transformation to the image,
+
+00:24:39.026 --> 00:24:40.376 A:middle
+finally resulting in the
+
+00:24:40.376 --> 00:24:41.566 A:middle
+stylized output.
+
+00:24:41.996 --> 00:24:43.996 A:middle
+The model stores weights for
+
+00:24:43.996 --> 00:24:45.506 A:middle
+each layer which determine the
+
+00:24:45.556 --> 00:24:47.086 A:middle
+particular transformation and
+
+00:24:47.086 --> 00:24:48.106 A:middle
+the style that we are going to
+
+00:24:48.106 --> 00:24:48.496 A:middle
+apply.
+
+00:24:49.576 --> 00:24:50.696 A:middle
+The Core ML neural network
+
+00:24:50.696 --> 00:24:52.366 A:middle
+inference engine has highly
+
+00:24:52.366 --> 00:24:53.866 A:middle
+optimized implementations for
+
+00:24:53.866 --> 00:24:54.776 A:middle
+each of these layers.
+
+00:24:55.176 --> 00:24:57.236 A:middle
+On the GPU, we use MTL shaders.
+
+00:24:57.466 --> 00:24:58.686 A:middle
+On the CPU we can use
+
+00:24:58.686 --> 00:24:59.946 A:middle
+Accelerate, the proficient
+
+00:24:59.946 --> 00:25:00.676 A:middle
+calculation.
+

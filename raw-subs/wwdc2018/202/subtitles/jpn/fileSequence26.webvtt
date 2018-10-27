@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.991 --> 00:26:01.061 align:start position:27% line:-1
+変換を行う必要がありません
+
+00:26:01.261 --> 00:26:05.065 align:start position:34% line:-2
+内部の型により
+直接入力ができます
+
+00:26:05.165 --> 00:26:07.067 align:start position:34% line:-2
+デバッグ用に
+プリントする場合や
+
+00:26:07.167 --> 00:26:09.036 align:start position:30% line:-1
+ログ記録を取る場合には
+
+00:26:09.136 --> 00:26:12.406 align:start position:29% line:-2
+print関数に直接
+当てはめればいいだけです
+
+00:26:12.940 --> 00:26:15.676 align:start position:32% line:-1
+既に存在するコードは
+
+00:26:15.776 --> 00:26:19.479 align:start position:32% line:-2
+古い文字列変換関数を
+使っており
+
+00:26:19.580 --> 00:26:23.050 align:start position:36% line:-2
+今後のためには
+互換性が必要です
+
+00:26:23.350 --> 00:26:28.388 align:start position:23% line:-2
+実際に我々はリネームをして
+NSCoderに移動させました
+
+00:26:28.489 --> 00:26:33.961 align:start position:27% line:-2
+これでこのメソッドの役目が
+強調されることになり
+
+00:26:34.094 --> 00:26:36.230 align:start position:29% line:-1
+自然にフィットしたのです
+
+00:26:37.898 --> 00:26:43.036 align:start position:20% line:-2
+これらはSwift 4.2における
+iOS 12 SDK向上の―
+
+00:26:44.371 --> 00:26:48.308 align:start position:32% line:-2
+数件の例にすぎず
+改善は他にもあります
+
+00:26:49.443 --> 00:26:53.814 align:start position:18% line:-2
+次はエンコードとデコード
+NSSecureCodingの話です
+
+00:26:55.115 --> 00:27:00.654 align:start position:20% line:-2
+iOS 12のAPIはデフォルトで
+セキュアな状態です
+

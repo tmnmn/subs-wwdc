@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.696 --> 00:28:01.006 A:middle
+going backwards except I'll make
+
+00:28:01.006 --> 00:28:02.206 A:middle
+sure that my index won't become
+
+00:28:02.206 --> 00:28:04.566 A:middle
+negative, and then I'll ask my
+
+00:28:04.566 --> 00:28:05.446 A:middle
+collection view to scroll
+
+00:28:05.446 --> 00:28:06.706 A:middle
+backwards by one index.
+
+00:28:08.386 --> 00:28:09.276 A:middle
+Let's go ahead and make use of
+
+00:28:09.276 --> 00:28:10.366 A:middle
+this function in our increment
+
+00:28:10.366 --> 00:28:11.000 A:middle
+function.
+
+00:28:16.196 --> 00:28:17.416 A:middle
+I'll pass in true to indicate
+
+00:28:17.416 --> 00:28:18.506 A:middle
+that I want to scroll forwards.
+
+00:28:19.916 --> 00:28:21.446 A:middle
+And similarly, I can implement
+
+00:28:21.446 --> 00:28:24.406 A:middle
+accessibility decrement, the
+
+00:28:25.136 --> 00:28:26.786 A:middle
+only difference being that I'll
+
+00:28:26.786 --> 00:28:28.296 A:middle
+pass in false since I want to
+
+00:28:28.296 --> 00:28:28.996 A:middle
+scroll backwards.
+
+00:28:29.726 --> 00:28:30.676 A:middle
+And that's it for the carousel
+
+00:28:30.676 --> 00:28:31.576 A:middle
+accessibility element.
+
+00:28:32.416 --> 00:28:33.276 A:middle
+Let's scroll back up to our
+
+00:28:33.276 --> 00:28:34.000 A:middle
+container view.
+
+00:28:38.346 --> 00:28:40.006 A:middle
+Here, we need to expose the
+
+00:28:40.006 --> 00:28:41.436 A:middle
+carousel accessibility element,
+
+00:28:41.726 --> 00:28:43.156 A:middle
+and to do that, we can override
+
+00:28:43.156 --> 00:28:44.000 A:middle
+accessibility elements.
+
+00:28:50.216 --> 00:28:52.076 A:middle
+Within this function, I'll get a
+
+00:28:52.076 --> 00:28:53.286 A:middle
+reference to my current dog and
+
+00:28:53.286 --> 00:28:54.876 A:middle
+make sure it's valid before I go
+
+00:28:54.876 --> 00:28:55.996 A:middle
+ahead and create my elements.
+
+00:28:56.626 --> 00:28:58.576 A:middle
+Let's start by instantiating the
+
+00:28:58.576 --> 00:29:00.000 A:middle
+carousel accessibility element.
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.879 --> 00:33:01.915 align:start position:32% line:-2
+vmmapについての
+書類を見たところ
+
+00:33:02.015 --> 00:33:04.551 align:start position:20% line:-1
+verboseフラグに気づきました
+
+00:33:04.651 --> 00:33:08.755 align:start position:27% line:-2
+このverboseフラグは
+多くの情報を出力します
+
+00:33:08.856 --> 00:33:10.824 align:start position:30% line:-1
+何が分かるでしょうか？
+
+00:33:11.425 --> 00:33:16.396 align:start position:20% line:-2
+verboseとmemgraphを
+実行してみましょう
+
+00:33:17.831 --> 00:33:23.370 align:start position:20% line:-2
+再度言いますが
+私が注視するのはCG画像の領域のみ
+
+00:33:23.470 --> 00:33:26.306 align:start position:21% line:-1
+グレップを使いフィルタをかけます
+
+00:33:26.840 --> 00:33:30.043 align:start position:30% line:-1
+多くの領域が現れました
+
+00:33:30.144 --> 00:33:31.678 align:start position:36% line:-1
+どうでしょうか？
+
+00:33:31.778 --> 00:33:34.281 align:start position:25% line:-1
+さてvmmapは初期設定で―
+
+00:33:34.381 --> 00:33:38.752 align:start position:29% line:-2
+連続した領域が見つかると
+一緒に折り畳みます
+
+00:33:38.852 --> 00:33:41.755 align:start position:27% line:-1
+２ライン目を見てみましょう
+
+00:33:41.855 --> 00:33:46.293 align:start position:23% line:-2
+この領域の
+終了と開始のアドレスが同じです
+
+00:33:46.393 --> 00:33:48.796 align:start position:23% line:-1
+同じパターンが続いているので―
+
+00:33:48.896 --> 00:33:52.733 align:start position:32% line:-2
+vmmapがそれらを
+単一の領域に変えます
+
+00:33:52.900 --> 00:33:55.802 align:start position:25% line:-1
+いくつかの違いにも気づきます
+
+00:33:55.903 --> 00:34:00.507 align:start position:29% line:-2
+ダーティなメモリを
+さらに使用するものもあり
+

@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.207 --> 00:19:03.710 align:start position:27% line:-2
+ReplayKitが音声と
+映像サンプルを提供し
+
+00:19:04.044 --> 00:19:08.282 align:start position:21% line:-2
+Extensionがエンコードと
+皆さんが使用する―
+
+00:19:08.382 --> 00:19:11.118 align:start position:32% line:-2
+それぞれのサービスに
+アップロードします
+
+00:19:12.886 --> 00:19:16.156 align:start position:25% line:-2
+ReplayKitが提供する
+サンプルは３種類です
+
+00:19:18.258 --> 00:19:20.828 align:start position:27% line:-1
+画面からキャプチャした映像
+
+00:19:21.228 --> 00:19:23.964 align:start position:30% line:-1
+アプリケーションの音声
+
+00:19:24.064 --> 00:19:28.068 align:start position:30% line:-2
+そしてマイクから
+キャプチャした音声です
+
+00:19:28.302 --> 00:19:32.873 align:start position:23% line:-2
+それらをExtensionが
+エンコードしアップロードします
+
+00:19:35.509 --> 00:19:40.047 align:start position:18% line:-2
+Extensionに送られるすべてを
+処理している関数が―
+
+00:19:40.581 --> 00:19:42.749 align:start position:12% line:-1
+processSampleBufferです
+
+00:19:42.983 --> 00:19:49.022 align:start position:12% line:-2
+これは CMSampleBufferという
+単一関数を受け取ります
+
+00:19:49.723 --> 00:19:53.460 align:start position:27% line:-2
+必要なのはメディアの
+エンコードとアップロードで
+
+00:19:53.594 --> 00:19:58.932 align:start position:14% line:-2
+ここでは Video Toolboxでの
+エンコード方法を示します
+
+00:19:59.733 --> 00:20:02.903 align:start position:12% line:-1
+Video Toolboxをお薦めするのは
+

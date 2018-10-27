@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:56.830 --> 00:30:01.502 align:start position:9% line:-2
+iOSではStorageModeSharedで
+テクスチャとバッファを作ります
+
+00:30:02.135 --> 00:30:05.305 align:start position:7% line:-2
+macOSではテクスチャに
+StorageModeSharedは使えませんが
+
+00:30:05.405 --> 00:30:08.675 align:start position:12% line:-2
+StorageModeManagedにより
+画像データへのアクセスが容易に
+
+00:30:08.776 --> 00:30:11.311 align:start position:32% line:-2
+ただプライベート
+ストレージが最適です
+
+00:30:15.349 --> 00:30:20.254 align:start position:23% line:-2
+macOSでバッファに使う場合
+注意が必要です
+
+00:30:20.354 --> 00:30:22.289 align:start position:30% line:-1
+CPU GPUの両方―
+
+00:30:22.389 --> 00:30:28.161 align:start position:23% line:-2
+またはGPUのみがアクセスする
+データが混在していると
+
+00:30:28.262 --> 00:30:34.368 align:start position:23% line:-2
+別々のメモリプールに分けるのが
+困難になるかもしれません
+
+00:30:36.470 --> 00:30:40.040 align:start position:30% line:-2
+テクスチャとバッファを
+直接作成する方法に続き
+
+00:30:40.140 --> 00:30:44.111 align:start position:12% line:-2
+common file formatsから
+簡単にテクスチャやバッファを
+
+00:30:44.211 --> 00:30:46.880 align:start position:25% line:-2
+作成できるMetalKitを
+解説します
+
+00:30:46.980 --> 00:30:50.784 align:start position:23% line:-2
+テクスチャロードクラスや
+Model I/Oでロードした
+
+00:30:50.884 --> 00:30:54.288 align:start position:23% line:-2
+Metalバッファを裏付けた
+メッシュ作成機能などがあります
+
+00:30:57.624 --> 00:31:01.662 align:start position:23% line:-2
+まずこれらを含む
+レンダパイプラインオブジェクト
+

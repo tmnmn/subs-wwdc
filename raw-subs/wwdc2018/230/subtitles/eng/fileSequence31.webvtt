@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.856 --> 00:31:00.456 A:middle
+I can use this same concept to
+
+00:31:00.456 --> 00:31:02.216 A:middle
+help me group the information
+
+00:31:02.476 --> 00:31:03.926 A:middle
+for the stats view together and
+
+00:31:04.266 --> 00:31:08.296 A:middle
+to add context.
+
+00:31:08.296 --> 00:31:09.686 A:middle
+I'll head over to the doc stats
+
+00:31:09.686 --> 00:31:10.866 A:middle
+view where all of these stats
+
+00:31:11.066 --> 00:31:14.706 A:middle
+are laid out.
+
+00:31:14.956 --> 00:31:16.236 A:middle
+I'll start by overriding the
+
+00:31:16.236 --> 00:31:17.706 A:middle
+accessibility elements to create
+
+00:31:17.706 --> 00:31:18.000 A:middle
+my elements.
+
+00:31:25.216 --> 00:31:26.456 A:middle
+I want to cache the elements I
+
+00:31:26.456 --> 00:31:27.756 A:middle
+create from this function so
+
+00:31:27.756 --> 00:31:28.896 A:middle
+that I don't have to recompute
+
+00:31:28.896 --> 00:31:30.046 A:middle
+them every single time I make
+
+00:31:30.096 --> 00:31:30.326 A:middle
+them.
+
+00:31:30.916 --> 00:31:32.126 A:middle
+To do that, I can create a
+
+00:31:32.126 --> 00:31:33.206 A:middle
+private property called
+
+00:31:33.206 --> 00:31:34.146 A:middle
+underscore accessibility
+
+00:31:34.146 --> 00:31:35.466 A:middle
+elements, which will act as that
+
+00:31:35.466 --> 00:31:36.906 A:middle
+cache and store these elements.
+
+00:31:37.466 --> 00:31:39.436 A:middle
+Let's get into my function.
+
+00:31:42.616 --> 00:31:44.576 A:middle
+First, I'll see if my cache is
+
+00:31:44.576 --> 00:31:46.246 A:middle
+empty, and if so, I'll go ahead
+
+00:31:46.246 --> 00:31:47.326 A:middle
+and populate my elements.
+
+00:31:48.816 --> 00:31:50.156 A:middle
+I'll iterate over all my title
+
+00:31:50.156 --> 00:31:52.116 A:middle
+labels, and I'll get a reference
+
+00:31:52.386 --> 00:31:54.076 A:middle
+to the title label, which would
+
+00:31:54.076 --> 00:31:56.256 A:middle
+be something like breed, and
+
+00:31:56.256 --> 00:31:57.696 A:middle
+it's corresponding value, which
+
+00:31:57.856 --> 00:31:58.866 A:middle
+would be something like
+
+00:31:59.096 --> 00:31:59.566 A:middle
+Labrador.
+

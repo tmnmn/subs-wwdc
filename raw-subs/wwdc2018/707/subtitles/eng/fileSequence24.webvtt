@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.746 --> 00:24:01.426 A:middle
+all the workoutConfiguration
+
+00:24:01.426 --> 00:24:03.726 A:middle
+object that contains information
+
+00:24:03.726 --> 00:24:04.496 A:middle
+about the workout.
+
+00:24:05.046 --> 00:24:06.326 A:middle
+In this instance here, it's a
+
+00:24:06.326 --> 00:24:07.046 A:middle
+running workout.
+
+00:24:07.796 --> 00:24:09.496 A:middle
+And from there, I can go ahead
+
+00:24:09.966 --> 00:24:11.046 A:middle
+and set up my workout.
+
+00:24:12.096 --> 00:24:13.666 A:middle
+So this view here is backed by
+
+00:24:13.666 --> 00:24:16.476 A:middle
+my workout session, WatchKit
+
+00:24:16.476 --> 00:24:18.276 A:middle
+interface controller, and I'm
+
+00:24:18.276 --> 00:24:20.066 A:middle
+going to go do the setup in the
+
+00:24:20.066 --> 00:24:20.866 A:middle
+awake method.
+
+00:24:21.586 --> 00:24:24.196 A:middle
+So first, I'm going to create
+
+00:24:24.196 --> 00:24:26.296 A:middle
+the HKWorkoutSession as well as
+
+00:24:26.296 --> 00:24:27.836 A:middle
+the HKLiveWorkoutBuilder.
+
+00:24:29.996 --> 00:24:32.756 A:middle
+So we create the session using
+
+00:24:33.106 --> 00:24:35.556 A:middle
+its initializer, and we pass the
+
+00:24:35.556 --> 00:24:36.936 A:middle
+workout configuration to it.
+
+00:24:37.836 --> 00:24:39.756 A:middle
+From there, we simply retrieve
+
+00:24:40.536 --> 00:24:43.406 A:middle
+the builder directly from the
+
+00:24:44.056 --> 00:24:44.276 A:middle
+session.
+
+00:24:44.386 --> 00:24:46.766 A:middle
+Creating a session might fail if
+
+00:24:46.766 --> 00:24:48.156 A:middle
+the workout configuration is
+
+00:24:48.156 --> 00:24:50.646 A:middle
+invalid, so that's why I wrap my
+
+00:24:50.706 --> 00:24:52.806 A:middle
+code here in a do-catch block
+
+00:24:53.276 --> 00:24:55.356 A:middle
+and dismiss if I have any
+
+00:24:55.356 --> 00:24:55.896 A:middle
+failures.
+
+00:24:56.366 --> 00:25:00.156 A:middle
+Next, let's set up the session
+

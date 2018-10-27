@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:06.096 --> 00:11:08.026 A:middle
+So, moving on from code
+
+00:11:08.026 --> 00:11:10.536 A:middle
+coverage, let's talk about some
+
+00:11:10.536 --> 00:11:11.986 A:middle
+new features in Xcode 10.
+
+00:11:13.056 --> 00:11:14.576 A:middle
+First, we'll see how we can now
+
+00:11:14.576 --> 00:11:18.236 A:middle
+better select and order our
+
+00:11:19.016 --> 00:11:19.346 A:middle
+tests.
+
+00:11:19.346 --> 00:11:20.886 A:middle
+Now why is this important?
+
+00:11:20.946 --> 00:11:23.636 A:middle
+Well, not all the tests in your
+
+00:11:23.836 --> 00:11:26.216 A:middle
+suite serve the same purpose.
+
+00:11:26.656 --> 00:11:28.796 A:middle
+You might want to run all 1000
+
+00:11:28.796 --> 00:11:30.556 A:middle
+of your quick running unit tests
+
+00:11:30.676 --> 00:11:32.436 A:middle
+before every single commit but
+
+00:11:32.436 --> 00:11:34.426 A:middle
+only run your 10 long-running UI
+
+00:11:34.426 --> 00:11:35.786 A:middle
+tests at night.
+
+00:11:36.796 --> 00:11:38.096 A:middle
+And you can achieve this today
+
+00:11:38.096 --> 00:11:40.076 A:middle
+by disabling specific tests in
+
+00:11:40.076 --> 00:11:40.586 A:middle
+your scheme.
+
+00:11:42.196 --> 00:11:44.686 A:middle
+The scheme encodes the list of
+
+00:11:44.686 --> 00:11:47.066 A:middle
+disabled tests so that XE test
+
+00:11:47.066 --> 00:11:48.966 A:middle
+knows which tests to skip.
+
+00:11:49.896 --> 00:11:51.376 A:middle
+And this has an interesting side
+
+00:11:51.376 --> 00:11:51.706 A:middle
+effect.
+
+00:11:52.306 --> 00:11:54.096 A:middle
+Whenever you write a new test,
+
+00:11:54.146 --> 00:11:55.736 A:middle
+it's automatically added to all
+
+00:11:55.736 --> 00:11:57.036 A:middle
+the schemes that contain the
+
+00:11:57.036 --> 00:11:58.436 A:middle
+corresponding test targets.
+
+00:11:59.226 --> 00:12:00.126 A:middle
+But if that's not what you
+

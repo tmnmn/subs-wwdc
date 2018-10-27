@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.816 --> 00:04:01.806 A:middle
+artifacts such as keys, and then
+
+00:04:01.806 --> 00:04:03.026 A:middle
+continue to download media
+
+00:04:03.026 --> 00:04:05.216 A:middle
+segments until the buffer level
+
+00:04:05.216 --> 00:04:06.596 A:middle
+is sufficient for playback.
+
+00:04:07.106 --> 00:04:10.446 A:middle
+When that happens, the AV Player
+
+00:04:10.446 --> 00:04:11.916 A:middle
+item will communicate a
+
+00:04:11.916 --> 00:04:14.516 A:middle
+prediction of playability by
+
+00:04:14.516 --> 00:04:16.176 A:middle
+setting the is playback likely
+
+00:04:16.176 --> 00:04:17.766 A:middle
+to keep up property to true.
+
+00:04:18.406 --> 00:04:20.466 A:middle
+If you've preset the AV Player
+
+00:04:20.546 --> 00:04:22.125 A:middle
+Rate to 1, so you're using the
+
+00:04:22.125 --> 00:04:24.026 A:middle
+Autoplay feature of a AV Player,
+
+00:04:24.026 --> 00:04:26.426 A:middle
+the player will go ahead and
+
+00:04:26.426 --> 00:04:27.886 A:middle
+start playback immediately.
+
+00:04:28.476 --> 00:04:29.946 A:middle
+We call this Time Interval
+
+00:04:29.946 --> 00:04:30.786 A:middle
+Startup Time.
+
+00:04:31.666 --> 00:04:33.426 A:middle
+From this point on, the wall
+
+00:04:33.426 --> 00:04:35.516 A:middle
+clock, also known as real time,
+
+00:04:35.866 --> 00:04:37.516 A:middle
+and the player item time base
+
+00:04:37.516 --> 00:04:39.076 A:middle
+will advance at the same speed,
+
+00:04:39.436 --> 00:04:41.396 A:middle
+with one condition, which is
+
+00:04:41.396 --> 00:04:43.786 A:middle
+that content must arrive at an
+
+00:04:43.786 --> 00:04:46.056 A:middle
+equivalent or faster rate than
+
+00:04:46.056 --> 00:04:47.296 A:middle
+that which AV Player is
+
+00:04:47.296 --> 00:04:47.926 A:middle
+consuming.
+
+00:04:48.586 --> 00:04:49.916 A:middle
+If that's not the case, AV
+
+00:04:49.966 --> 00:04:52.036 A:middle
+Player will try and switch down
+
+00:04:52.036 --> 00:04:53.336 A:middle
+to the 1 megabit here.
+
+00:04:53.766 --> 00:04:55.426 A:middle
+If network still cannot keep up
+
+00:04:55.426 --> 00:04:57.446 A:middle
+with real time at 1 megabit,
+
+00:04:57.726 --> 00:04:59.276 A:middle
+well the buffer will eventually
+
+00:04:59.276 --> 00:05:01.566 A:middle
+run dry, and AV Player has no
+

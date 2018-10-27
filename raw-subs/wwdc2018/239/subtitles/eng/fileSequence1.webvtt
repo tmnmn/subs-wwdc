@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:01.656 --> 00:01:02.926 A:middle
+When tapping links in mail or
+
+00:01:02.926 --> 00:01:04.836 A:middle
+messages, we'd previously direct
+
+00:01:04.836 --> 00:01:06.396 A:middle
+the user to iPhone in order to
+
+00:01:06.396 --> 00:01:07.336 A:middle
+view the web page.
+
+00:01:07.936 --> 00:01:10.196 A:middle
+Also new in watchOS 5, the user
+
+00:01:10.196 --> 00:01:11.746 A:middle
+can now tap links to view and
+
+00:01:11.746 --> 00:01:12.996 A:middle
+interact with the web page
+
+00:01:12.996 --> 00:01:14.396 A:middle
+directly on Apple Watch.
+
+00:01:18.866 --> 00:01:20.226 A:middle
+In this session, we'll explore
+
+00:01:20.226 --> 00:01:21.736 A:middle
+the techniques WebKit uses to
+
+00:01:21.736 --> 00:01:23.206 A:middle
+adapt existing content to
+
+00:01:23.206 --> 00:01:25.266 A:middle
+watchOS and introduce a new
+
+00:01:25.266 --> 00:01:26.506 A:middle
+mechanism you can use to
+
+00:01:26.506 --> 00:01:28.016 A:middle
+optimize your content for
+
+00:01:28.016 --> 00:01:29.296 A:middle
+display on Apple Watch.
+
+00:01:29.696 --> 00:01:31.206 A:middle
+We'll also cover some other
+
+00:01:31.206 --> 00:01:32.486 A:middle
+important details you need to
+
+00:01:32.486 --> 00:01:34.126 A:middle
+know to ensure that users
+
+00:01:34.126 --> 00:01:35.316 A:middle
+viewing and interacting with
+
+00:01:35.316 --> 00:01:36.656 A:middle
+your content will have a great
+
+00:01:36.656 --> 00:01:37.436 A:middle
+experience.
+
+00:01:38.296 --> 00:01:41.446 A:middle
+I'd like to start by discussing
+
+00:01:41.446 --> 00:01:43.176 A:middle
+how WebKit works on Apple Watch.
+
+00:01:45.126 --> 00:01:47.066 A:middle
+Out of the box, WebKit supports
+
+00:01:47.066 --> 00:01:48.126 A:middle
+the gestures you're already
+
+00:01:48.126 --> 00:01:48.836 A:middle
+familiar with.
+
+00:01:50.356 --> 00:01:51.816 A:middle
+Turning the digital crown
+
+00:01:51.816 --> 00:01:53.406 A:middle
+scrolls vertically and you can
+
+00:01:53.406 --> 00:01:54.696 A:middle
+also drag your finger on the
+
+00:01:54.696 --> 00:01:56.026 A:middle
+screen to scroll the page.
+
+00:01:59.996 --> 00:02:01.566 A:middle
+Double tapping zooms into the
+

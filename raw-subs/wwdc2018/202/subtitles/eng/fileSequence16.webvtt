@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.766 --> 00:16:00.866 A:middle
+So all of your views now that
+
+00:16:00.866 --> 00:16:02.176 A:middle
+implement draw Rect will have
+
+00:16:02.296 --> 00:16:04.826 A:middle
+their backing stores defined by
+
+00:16:04.826 --> 00:16:06.126 A:middle
+the depth of the content being
+
+00:16:06.126 --> 00:16:06.986 A:middle
+drawn into them.
+
+00:16:07.376 --> 00:16:08.366 A:middle
+So in this case where we're
+
+00:16:08.366 --> 00:16:09.796 A:middle
+using Core Graphics to sketch
+
+00:16:09.796 --> 00:16:11.906 A:middle
+out only grayscale content will
+
+00:16:11.906 --> 00:16:13.396 A:middle
+actually automatically use an
+
+00:16:13.486 --> 00:16:15.186 A:middle
+8-bit per pixel backing store
+
+00:16:15.366 --> 00:16:17.156 A:middle
+instead of a 64-bit per pixel
+
+00:16:17.156 --> 00:16:17.436 A:middle
+one.
+
+00:16:17.946 --> 00:16:19.466 A:middle
+This reduces the memory demand
+
+00:16:19.466 --> 00:16:21.226 A:middle
+for that drawn view by an order
+
+00:16:21.226 --> 00:16:23.896 A:middle
+of magnitude down to 275
+
+00:16:24.146 --> 00:16:26.216 A:middle
+kilobytes from 2.2 megabytes.
+
+00:16:26.216 --> 00:16:28.806 A:middle
+That's a really big improvement
+
+00:16:28.806 --> 00:16:29.956 A:middle
+across many different
+
+00:16:29.956 --> 00:16:30.746 A:middle
+applications, both yours and
+
+00:16:30.816 --> 00:16:30.966 A:middle
+ours.
+
+00:16:31.516 --> 00:16:36.356 A:middle
+[ Applause ]
+
+00:16:36.856 --> 00:16:38.266 A:middle
+So Automatic Backing Stores are
+
+00:16:38.266 --> 00:16:40.206 A:middle
+enabled by default for all apps
+
+00:16:40.266 --> 00:16:41.646 A:middle
+built with the iOS 12 SDK.
+
+00:16:42.586 --> 00:16:44.806 A:middle
+All implementations of draw Rect
+
+00:16:44.806 --> 00:16:46.316 A:middle
+on UIView will have this happen
+
+00:16:46.396 --> 00:16:48.476 A:middle
+automatically as well as all
+
+00:16:48.476 --> 00:16:49.856 A:middle
+content that you draw with UI
+
+00:16:49.856 --> 00:16:51.406 A:middle
+Graphics Image Renderer into
+
+00:16:51.406 --> 00:16:52.316 A:middle
+offscreen bitmaps.
+
+00:16:53.156 --> 00:16:54.436 A:middle
+Now in the case of UI Graphics
+
+00:16:54.436 --> 00:16:55.856 A:middle
+Image Renderer, we don't
+
+00:16:55.856 --> 00:16:57.496 A:middle
+necessarily know what you're
+
+00:16:57.596 --> 00:16:58.896 A:middle
+planning on doing with the image
+
+00:16:58.896 --> 00:17:00.086 A:middle
+that you get out at the end.
+

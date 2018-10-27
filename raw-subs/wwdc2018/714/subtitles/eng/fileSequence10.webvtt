@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.246 --> 00:10:02.296 A:middle
+that many developers use
+
+00:10:02.446 --> 00:10:04.426 A:middle
+SCNetworkReachability as a
+
+00:10:04.556 --> 00:10:05.326 A:middle
+preflight check.
+
+00:10:06.396 --> 00:10:07.686 A:middle
+They want to predict the future.
+
+00:10:07.916 --> 00:10:09.076 A:middle
+They want to know whether the
+
+00:10:09.076 --> 00:10:10.936 A:middle
+next network operation they do
+
+00:10:10.936 --> 00:10:12.096 A:middle
+will succeed or fail.
+
+00:10:12.626 --> 00:10:14.956 A:middle
+And, unfortunately, predicting
+
+00:10:14.956 --> 00:10:16.116 A:middle
+the future is always a hard
+
+00:10:16.116 --> 00:10:16.666 A:middle
+thing to do.
+
+00:10:17.216 --> 00:10:18.786 A:middle
+You may have connectivity now
+
+00:10:19.476 --> 00:10:20.966 A:middle
+but two seconds from now the
+
+00:10:21.026 --> 00:10:22.366 A:middle
+user has walked out of the
+
+00:10:22.366 --> 00:10:23.696 A:middle
+building and you've lost the
+
+00:10:23.696 --> 00:10:24.496 A:middle
+Wi-Fi signal.
+
+00:10:24.886 --> 00:10:27.656 A:middle
+So there is no way to guarantee
+
+00:10:27.656 --> 00:10:29.026 A:middle
+whether a future operation will
+
+00:10:29.026 --> 00:10:29.566 A:middle
+succeed.
+
+00:10:30.486 --> 00:10:32.356 A:middle
+And we see this pattern where
+
+00:10:32.356 --> 00:10:32.826 A:middle
+they check.
+
+00:10:33.166 --> 00:10:34.326 A:middle
+The preflight says yes.
+
+00:10:34.406 --> 00:10:35.006 A:middle
+They try it.
+
+00:10:35.056 --> 00:10:35.686 A:middle
+They fail.
+
+00:10:36.126 --> 00:10:36.836 A:middle
+They go back.
+
+00:10:36.836 --> 00:10:37.716 A:middle
+They check again.
+
+00:10:38.526 --> 00:10:41.016 A:middle
+This also is a lot of work, a
+
+00:10:41.016 --> 00:10:42.546 A:middle
+lot of [inaudible], a lot of
+
+00:10:42.546 --> 00:10:44.026 A:middle
+difficult things to get right
+
+00:10:44.606 --> 00:10:46.426 A:middle
+including networks with proxies.
+
+00:10:47.606 --> 00:10:48.776 A:middle
+We can handle that for you.
+
+00:10:50.506 --> 00:10:53.746 A:middle
+The better way to do this is
+
+00:10:53.746 --> 00:10:56.006 A:middle
+just make a connection using the
+
+00:10:56.006 --> 00:10:58.616 A:middle
+waitsForConnectivity option.
+
+00:10:58.816 --> 00:11:00.326 A:middle
+You can learn more about that
+

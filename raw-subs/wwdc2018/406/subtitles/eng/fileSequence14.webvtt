@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.766 --> 00:14:01.556 A:middle
+And it's going to get really
+
+00:14:01.556 --> 00:14:02.736 A:middle
+irritating, if we have to
+
+00:14:02.736 --> 00:14:04.276 A:middle
+always, on every extension we
+
+00:14:04.276 --> 00:14:06.696 A:middle
+write, put this constraint on
+
+00:14:06.696 --> 00:14:06.886 A:middle
+there.
+
+00:14:06.886 --> 00:14:07.666 A:middle
+Because we're nearly always
+
+00:14:07.666 --> 00:14:08.396 A:middle
+going to need to be able to
+
+00:14:08.396 --> 00:14:09.396 A:middle
+compare two indexes.
+
+00:14:10.316 --> 00:14:11.296 A:middle
+Instead, it's probably better
+
+00:14:11.296 --> 00:14:13.556 A:middle
+expressed as a requirement of
+
+00:14:13.556 --> 00:14:14.196 A:middle
+the protocol.
+
+00:14:14.196 --> 00:14:17.816 A:middle
+As a constraint on our
+
+00:14:17.816 --> 00:14:19.016 A:middle
+index-associated type.
+
+00:14:20.386 --> 00:14:21.406 A:middle
+Putting this constraint on the
+
+00:14:21.406 --> 00:14:23.246 A:middle
+protocol means that all types
+
+00:14:23.246 --> 00:14:24.226 A:middle
+that conform to the protocol
+
+00:14:24.226 --> 00:14:26.266 A:middle
+need to supply an equatable type
+
+00:14:26.266 --> 00:14:27.036 A:middle
+for their index.
+
+00:14:28.626 --> 00:14:30.026 A:middle
+That way you don't have to
+
+00:14:30.076 --> 00:14:31.426 A:middle
+specify it every time you write
+
+00:14:31.426 --> 00:14:32.046 A:middle
+the extension.
+
+00:14:33.476 --> 00:14:35.806 A:middle
+This is another example of
+
+00:14:35.806 --> 00:14:36.936 A:middle
+negotiating the protocol
+
+00:14:36.936 --> 00:14:37.386 A:middle
+contract.
+
+00:14:38.806 --> 00:14:39.946 A:middle
+Users of the protocol had a
+
+00:14:39.946 --> 00:14:41.306 A:middle
+requirement that they really
+
+00:14:41.306 --> 00:14:42.406 A:middle
+needed to be able to compare
+
+00:14:42.406 --> 00:14:42.926 A:middle
+indexes.
+
+00:14:43.666 --> 00:14:45.876 A:middle
+And, conforming types, they did
+
+00:14:45.876 --> 00:14:47.226 A:middle
+a check that they can reasonably
+
+00:14:47.226 --> 00:14:48.186 A:middle
+accommodate that without giving
+
+00:14:48.186 --> 00:14:49.566 A:middle
+up too much flexibility.
+
+00:14:50.726 --> 00:14:52.116 A:middle
+In this case, they definitely
+
+00:14:52.116 --> 00:14:52.506 A:middle
+can.
+
+00:14:53.556 --> 00:14:54.976 A:middle
+Ints, the data, and array are
+
+00:14:54.976 --> 00:14:56.236 A:middle
+using are already equatable.
+
+00:14:56.296 --> 00:14:57.986 A:middle
+And, with Swift 4.2's new
+
+00:14:57.986 --> 00:14:59.646 A:middle
+automatic synthesis of equatable
+
+00:14:59.646 --> 00:15:00.316 A:middle
+conformance.
+

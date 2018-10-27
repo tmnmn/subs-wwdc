@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.046 --> 00:22:00.366 A:middle
+that it was using to extend its
+
+00:22:00.366 --> 00:22:02.176 A:middle
+scrollable area, it would almost
+
+00:22:02.176 --> 00:22:03.626 A:middle
+be like double accounting for
+
+00:22:03.626 --> 00:22:05.316 A:middle
+those same insets in two
+
+00:22:05.316 --> 00:22:06.006 A:middle
+different places.
+
+00:22:06.646 --> 00:22:08.576 A:middle
+And so as a result, the subviews
+
+00:22:08.576 --> 00:22:10.036 A:middle
+on the scrollable axis are kind
+
+00:22:10.036 --> 00:22:12.256 A:middle
+of completely unaware that there
+
+00:22:12.256 --> 00:22:13.896 A:middle
+are safe area insets on the
+
+00:22:13.896 --> 00:22:15.066 A:middle
+edges that the scroll view is
+
+00:22:15.066 --> 00:22:16.276 A:middle
+absorbing them into its adjusted
+
+00:22:16.276 --> 00:22:16.906 A:middle
+content inset.
+
+00:22:18.026 --> 00:22:19.356 A:middle
+So now that we understand how
+
+00:22:19.356 --> 00:22:20.616 A:middle
+scroll views work together with
+
+00:22:20.616 --> 00:22:22.356 A:middle
+safe areas, let's cover the
+
+00:22:22.356 --> 00:22:23.686 A:middle
+options that we've exposed to
+
+00:22:23.686 --> 00:22:24.836 A:middle
+let you control this behavior.
+
+00:22:26.636 --> 00:22:27.846 A:middle
+The mechanism that you have to
+
+00:22:27.846 --> 00:22:29.216 A:middle
+do this is a property on UI
+
+00:22:29.216 --> 00:22:30.786 A:middle
+scroll view called content inset
+
+00:22:30.786 --> 00:22:31.596 A:middle
+adjusted behavior.
+
+00:22:32.096 --> 00:22:33.886 A:middle
+And it also is available on
+
+00:22:33.886 --> 00:22:35.426 A:middle
+interface builder as you can see
+
+00:22:35.426 --> 00:22:35.616 A:middle
+here.
+
+00:22:36.656 --> 00:22:38.106 A:middle
+Now the default value for this
+
+00:22:38.106 --> 00:22:38.826 A:middle
+is automatic.
+
+00:22:39.326 --> 00:22:41.356 A:middle
+And most of the time, if not all
+
+00:22:41.356 --> 00:22:42.676 A:middle
+the time, you're really going to
+
+00:22:42.676 --> 00:22:43.886 A:middle
+want to leave this at its
+
+00:22:43.886 --> 00:22:44.526 A:middle
+default value.
+
+00:22:45.246 --> 00:22:46.256 A:middle
+But we want to walk through the
+
+00:22:46.256 --> 00:22:47.786 A:middle
+options so that you understand
+
+00:22:48.236 --> 00:22:49.736 A:middle
+what they do and know that
+
+00:22:49.736 --> 00:22:50.306 A:middle
+they're available.
+
+00:22:50.636 --> 00:22:51.596 A:middle
+And so you can make the right
+
+00:22:51.596 --> 00:22:52.616 A:middle
+choice in your apps.
+
+00:22:53.456 --> 00:22:54.356 A:middle
+So we'll start with the first
+
+00:22:55.576 --> 00:22:55.666 A:middle
+one.
+
+00:22:56.046 --> 00:22:57.806 A:middle
+The first one is the always
+
+00:22:57.856 --> 00:22:58.276 A:middle
+behavior.
+
+00:22:58.516 --> 00:22:59.666 A:middle
+This is pretty straightforward
+
+00:22:59.666 --> 00:23:00.446 A:middle
+as you might expect.
+

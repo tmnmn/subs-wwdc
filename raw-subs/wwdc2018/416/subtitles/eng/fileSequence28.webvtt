@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.266 --> 00:28:03.496 A:middle
+And I have a couple go-to tricks
+
+00:28:04.286 --> 00:28:06.686 A:middle
+that I use when working with a
+
+00:28:06.686 --> 00:28:08.216 A:middle
+Memgraph file or go-to
+
+00:28:08.216 --> 00:28:08.946 A:middle
+strategies.
+
+00:28:09.426 --> 00:28:10.756 A:middle
+And the first -- actually, let
+
+00:28:10.856 --> 00:28:12.636 A:middle
+me bring this up a little bit --
+
+00:28:13.076 --> 00:28:14.846 A:middle
+is to look for leaks.
+
+00:28:15.406 --> 00:28:18.286 A:middle
+So if I go down to the Filter
+
+00:28:18.286 --> 00:28:19.846 A:middle
+toolbar and click on the leaks
+
+00:28:19.846 --> 00:28:22.106 A:middle
+filter, that'll show me just any
+
+00:28:22.106 --> 00:28:23.386 A:middle
+leaks that are in my Memgraph
+
+00:28:23.386 --> 00:28:23.736 A:middle
+file.
+
+00:28:24.666 --> 00:28:27.076 A:middle
+Turns out this Memgraph file has
+
+00:28:27.076 --> 00:28:27.746 A:middle
+no leaks.
+
+00:28:27.986 --> 00:28:29.526 A:middle
+Well, that's both kind of good
+
+00:28:29.526 --> 00:28:30.656 A:middle
+news and bad news.
+
+00:28:31.136 --> 00:28:32.136 A:middle
+It's great that there are no
+
+00:28:32.136 --> 00:28:33.516 A:middle
+leaks, but now I have to figure
+
+00:28:33.516 --> 00:28:34.826 A:middle
+out what's actually going on
+
+00:28:34.826 --> 00:28:35.046 A:middle
+here.
+
+00:28:35.906 --> 00:28:37.746 A:middle
+The other thing that Memgraph is
+
+00:28:37.746 --> 00:28:40.046 A:middle
+really good for is showing me
+
+00:28:40.046 --> 00:28:41.926 A:middle
+how many instances of an object
+
+00:28:41.926 --> 00:28:43.036 A:middle
+are in memory and if there's
+
+00:28:43.036 --> 00:28:44.226 A:middle
+more than I expect.
+
+00:28:44.876 --> 00:28:46.166 A:middle
+But if I look at this Memgraph,
+
+00:28:46.166 --> 00:28:47.476 A:middle
+I can see if I actually just
+
+00:28:47.476 --> 00:28:49.136 A:middle
+focus specifically on the
+
+00:28:49.136 --> 00:28:52.146 A:middle
+objects from my code, there's
+
+00:28:52.146 --> 00:28:53.966 A:middle
+only 5 in memory, and there's
+
+00:28:53.966 --> 00:28:55.156 A:middle
+actually only 1 of each of
+
+00:28:55.156 --> 00:28:55.526 A:middle
+these.
+
+00:28:56.136 --> 00:28:57.266 A:middle
+If there were, you know,
+
+00:28:57.266 --> 00:28:59.066 A:middle
+multiple root view controllers,
+
+00:28:59.336 --> 00:29:01.586 A:middle
+or multiple noir filters, or
+

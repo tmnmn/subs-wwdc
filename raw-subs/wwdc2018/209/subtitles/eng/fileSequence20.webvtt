@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.116 --> 00:20:01.226 A:middle
+a number of new accent colors
+
+00:20:01.226 --> 00:20:01.976 A:middle
+for users to select.
+
+00:20:02.096 --> 00:20:03.336 A:middle
+And, all of these look
+
+00:20:03.336 --> 00:20:04.056 A:middle
+absolutely great.
+
+00:20:04.876 --> 00:20:06.256 A:middle
+But, if you're making your own
+
+00:20:06.256 --> 00:20:07.536 A:middle
+UI elements-- I'll pause for
+
+00:20:07.536 --> 00:20:07.946 A:middle
+applause.
+
+00:20:08.516 --> 00:20:12.806 A:middle
+[ Applause ]
+
+00:20:13.306 --> 00:20:14.256 A:middle
+Thank you, accent colors.
+
+00:20:14.906 --> 00:20:16.146 A:middle
+Anyway, if you're making your
+
+00:20:16.146 --> 00:20:17.156 A:middle
+own UI elements, you might be
+
+00:20:17.156 --> 00:20:18.286 A:middle
+trying to make this motif
+
+00:20:18.286 --> 00:20:19.426 A:middle
+yourself, and incorporate that
+
+00:20:19.426 --> 00:20:20.196 A:middle
+splash of color.
+
+00:20:20.516 --> 00:20:21.856 A:middle
+So, if you've done that in the
+
+00:20:21.856 --> 00:20:23.366 A:middle
+past, you've probably been using
+
+00:20:23.366 --> 00:20:25.266 A:middle
+the NSColor.currentControlTint
+
+00:20:25.266 --> 00:20:26.296 A:middle
+method, which returns this
+
+00:20:26.296 --> 00:20:27.546 A:middle
+enumeration saying whether the
+
+00:20:27.546 --> 00:20:28.796 A:middle
+system's running in aqua or
+
+00:20:28.796 --> 00:20:29.476 A:middle
+graphite mode.
+
+00:20:29.886 --> 00:20:31.256 A:middle
+So, we have way more colors than
+
+00:20:31.256 --> 00:20:31.666 A:middle
+that now.
+
+00:20:31.896 --> 00:20:32.976 A:middle
+That enumeration's not going to
+
+00:20:32.976 --> 00:20:33.616 A:middle
+do the job.
+
+00:20:34.046 --> 00:20:36.386 A:middle
+So, in macOS 10.14, we'd urge
+
+00:20:36.386 --> 00:20:37.776 A:middle
+you to instead, switch to the
+
+00:20:37.776 --> 00:20:39.736 A:middle
+controlAccentColor method on
+
+00:20:39.776 --> 00:20:40.316 A:middle
+NSColor.
+
+00:20:41.416 --> 00:20:44.066 A:middle
+So, NSColor doesn't stop helping
+
+00:20:44.066 --> 00:20:45.196 A:middle
+you with accent colors.
+
+00:20:45.456 --> 00:20:46.436 A:middle
+There's a number of other things
+
+00:20:46.436 --> 00:20:46.836 A:middle
+it does.
+
+00:20:47.386 --> 00:20:48.686 A:middle
+If you're making a UI element,
+
+00:20:48.906 --> 00:20:50.116 A:middle
+one of the common features
+
+00:20:50.116 --> 00:20:51.556 A:middle
+you're going to want to do is
+
+00:20:51.646 --> 00:20:52.946 A:middle
+adjusting the color of that UI
+
+00:20:53.016 --> 00:20:54.176 A:middle
+element to reflect user
+
+00:20:54.176 --> 00:20:54.956 A:middle
+interaction with it.
+
+00:20:55.416 --> 00:20:56.956 A:middle
+So, NSColor introduces a new
+
+00:20:56.956 --> 00:20:58.716 A:middle
+method called .withSystemEffect.
+
+00:20:59.336 --> 00:21:00.396 A:middle
+And, we've defined a number of
+

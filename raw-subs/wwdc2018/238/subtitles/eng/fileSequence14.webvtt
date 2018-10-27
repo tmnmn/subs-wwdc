@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.396 --> 00:14:01.696 A:middle
+And the way that that's matched
+
+00:14:01.826 --> 00:14:03.766 A:middle
+is based on a query in the state
+
+00:14:03.766 --> 00:14:04.526 A:middle
+attribute itself.
+
+00:14:07.266 --> 00:14:09.186 A:middle
+When data state matches, the
+
+00:14:09.186 --> 00:14:10.876 A:middle
+children of the special element
+
+00:14:10.876 --> 00:14:12.696 A:middle
+-- specialized element are the
+
+00:14:12.696 --> 00:14:14.346 A:middle
+list of operations that act on
+
+00:14:14.346 --> 00:14:16.146 A:middle
+the sibling elements of rules.
+
+00:14:16.556 --> 00:14:18.606 A:middle
+In this case, we want the
+
+00:14:18.606 --> 00:14:19.996 A:middle
+placeholder to be replaced with
+
+00:14:19.996 --> 00:14:21.456 A:middle
+an overlay element and its
+
+00:14:21.456 --> 00:14:21.846 A:middle
+children.
+
+00:14:25.956 --> 00:14:27.666 A:middle
+TVMLKit matches the elements to
+
+00:14:27.666 --> 00:14:29.106 A:middle
+be replaced by looking at the
+
+00:14:29.106 --> 00:14:30.936 A:middle
+tag attribute on any element.
+
+00:14:31.676 --> 00:14:33.456 A:middle
+It effectively does replacement
+
+00:14:33.676 --> 00:14:35.356 A:middle
+by first matching on that tag
+
+00:14:35.776 --> 00:14:37.046 A:middle
+and then comparing the element
+
+00:14:37.046 --> 00:14:37.256 A:middle
+name.
+
+00:14:38.146 --> 00:14:39.236 A:middle
+If the element name is
+
+00:14:39.236 --> 00:14:40.726 A:middle
+different, it would replace that
+
+00:14:40.726 --> 00:14:42.786 A:middle
+element hole and in this case,
+
+00:14:43.086 --> 00:14:44.776 A:middle
+placeholder becomes an overlay.
+
+00:14:45.736 --> 00:14:47.236 A:middle
+However, if the element name
+
+00:14:47.236 --> 00:14:49.046 A:middle
+matches, whatever that's new
+
+00:14:49.386 --> 00:14:50.576 A:middle
+would be appended to what's
+
+00:14:50.576 --> 00:14:51.476 A:middle
+already existing.
+
+00:14:53.426 --> 00:14:55.586 A:middle
+And so we have a single template
+
+00:14:55.586 --> 00:14:56.986 A:middle
+with rules that will generate
+
+00:14:56.986 --> 00:14:58.806 A:middle
+two different output based on
+
+00:14:58.806 --> 00:14:59.946 A:middle
+the state of the data that's
+
+00:14:59.946 --> 00:15:00.416 A:middle
+provided.
+

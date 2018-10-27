@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.866 --> 00:20:02.169 align:start position:11% line:-1
+またChangeObserverを登録すると
+
+00:20:02.269 --> 00:20:07.574 align:start position:18% line:-2
+変更が通知され
+ProjectInfoが更新されます
+
+00:20:10.410 --> 00:20:13.146 align:start position:29% line:-1
+重要なことが２つあります
+
+00:20:13.313 --> 00:20:15.649 align:start position:32% line:-1
+アセットやアルバムは
+
+00:20:15.749 --> 00:20:20.687 align:start position:18% line:-2
+PhotosからExtensionに
+コピーすることはできます
+
+00:20:20.821 --> 00:20:26.560 align:start position:21% line:-2
+しかしテキストなどを
+ペーストしたい場合もあるでしょう
+
+00:20:26.660 --> 00:20:31.565 align:start position:11% line:-2
+その場合 ExtensionやPhotosは
+ペーストのタイミングを
+
+00:20:31.665 --> 00:20:33.300 align:start position:34% line:-1
+知る必要があります
+
+00:20:33.567 --> 00:20:35.969 align:start position:12% line:-1
+validateMenuItemを実装して
+
+00:20:36.603 --> 00:20:43.177 align:start position:21% line:-2
+Extensionがコンテンツを
+受け付けるか確認してください
+
+00:20:43.277 --> 00:20:47.381 align:start position:21% line:-2
+return falseなら
+Photosとして対応してみます
+
+00:20:47.481 --> 00:20:52.753 align:start position:23% line:-2
+逆にreturn trueなら
+ペーストが可能です
+
+00:20:54.021 --> 00:20:56.290 align:start position:23% line:-1
+ドラッグ＆ドロップでも同じです
+
+00:20:56.623 --> 00:21:02.396 align:start position:20% line:-2
+PhotosではPhotoKitの
+オブジェクトをドラッグできますが
+

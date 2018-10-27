@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.136 --> 00:15:00.396 A:middle
+location we're interested in and
+
+00:15:00.396 --> 00:15:01.206 A:middle
+then continues.
+
+00:15:01.486 --> 00:15:02.896 A:middle
+So then we'll only hit that set
+
+00:15:02.896 --> 00:15:04.756 A:middle
+text breakpoint after flowing
+
+00:15:04.756 --> 00:15:05.546 A:middle
+through this function.
+
+00:15:06.196 --> 00:15:07.496 A:middle
+So let's press continue, and we
+
+00:15:07.496 --> 00:15:08.696 A:middle
+see that the jump animation
+
+00:15:08.736 --> 00:15:11.046 A:middle
+completes in the simulator, and
+
+00:15:11.046 --> 00:15:12.636 A:middle
+now we hit the breakpoint on UI
+
+00:15:12.636 --> 00:15:13.576 A:middle
+label set text.
+
+00:15:14.066 --> 00:15:15.396 A:middle
+So now we can have a look at the
+
+00:15:15.396 --> 00:15:17.376 A:middle
+receiver of that message by
+
+00:15:17.666 --> 00:15:18.906 A:middle
+using po dollar arg one.
+
+00:15:18.906 --> 00:15:20.526 A:middle
+And we see that is indeed a
+
+00:15:20.526 --> 00:15:22.486 A:middle
+different UI label instance with
+
+00:15:22.486 --> 00:15:23.966 A:middle
+a value of zero, so that's
+
+00:15:24.046 --> 00:15:25.236 A:middle
+likely to be one of these at the
+
+00:15:25.236 --> 00:15:25.776 A:middle
+top.
+
+00:15:25.976 --> 00:15:26.766 A:middle
+So we think we've found the
+
+00:15:26.766 --> 00:15:28.286 A:middle
+right object, so let's have a
+
+00:15:28.286 --> 00:15:29.166 A:middle
+look at the code that's
+
+00:15:29.166 --> 00:15:30.546 A:middle
+modifying this label's value.
+
+00:15:31.156 --> 00:15:32.596 A:middle
+We can do that in the debug
+
+00:15:32.596 --> 00:15:34.046 A:middle
+navigator by selecting the next
+
+00:15:34.046 --> 00:15:34.876 A:middle
+frame up in the stack.
+
+00:15:34.996 --> 00:15:36.286 A:middle
+And now we've found the code
+
+00:15:36.286 --> 00:15:37.346 A:middle
+that's modifying the label
+
+00:15:37.346 --> 00:15:37.676 A:middle
+value.
+
+00:15:38.186 --> 00:15:39.696 A:middle
+It's currently passing in a
+
+00:15:39.696 --> 00:15:41.646 A:middle
+string of zero using the label
+
+00:15:41.646 --> 00:15:43.276 A:middle
+text variable, and looking up,
+
+00:15:43.276 --> 00:15:44.816 A:middle
+we can see that label text is
+
+00:15:44.966 --> 00:15:46.156 A:middle
+always set to the label's
+
+00:15:46.156 --> 00:15:47.196 A:middle
+current value, so that's not
+
+00:15:47.196 --> 00:15:47.856 A:middle
+going to change.
+
+00:15:48.336 --> 00:15:49.846 A:middle
+It looks like value text is the
+
+00:15:49.846 --> 00:15:51.826 A:middle
+variable that contains the new
+
+00:15:51.826 --> 00:15:53.736 A:middle
+value, so probably just a typo;
+
+00:15:53.736 --> 00:15:54.446 A:middle
+let's fix that.
+
+00:15:55.606 --> 00:15:57.000 A:middle
+Let's make it value text.
+

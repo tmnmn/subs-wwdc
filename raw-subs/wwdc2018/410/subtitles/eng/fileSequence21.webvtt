@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.396 --> 00:21:00.976 A:middle
+about how that process works.
+
+00:21:02.786 --> 00:21:04.226 A:middle
+The first step before you can
+
+00:21:04.226 --> 00:21:06.996 A:middle
+press Record is the Analysis
+
+00:21:06.996 --> 00:21:08.416 A:middle
+Core will be taking the tables
+
+00:21:08.416 --> 00:21:09.796 A:middle
+that are created within it and
+
+00:21:09.796 --> 00:21:11.006 A:middle
+it'll be mapping it and
+
+00:21:11.006 --> 00:21:12.576 A:middle
+allocating storage for it in the
+
+00:21:12.576 --> 00:21:12.916 A:middle
+core.
+
+00:21:13.756 --> 00:21:15.236 A:middle
+Now if a table has the exact
+
+00:21:15.236 --> 00:21:16.516 A:middle
+same schema and the exact same
+
+00:21:16.516 --> 00:21:17.796 A:middle
+attributes, then by definition
+
+00:21:17.796 --> 00:21:19.686 A:middle
+it's the exact same data, so
+
+00:21:19.686 --> 00:21:21.126 A:middle
+it's going to map to the exact
+
+00:21:21.166 --> 00:21:21.696 A:middle
+same store.
+
+00:21:23.116 --> 00:21:24.956 A:middle
+Now for each store, the second
+
+00:21:24.956 --> 00:21:26.406 A:middle
+step is to try to find a
+
+00:21:26.406 --> 00:21:27.386 A:middle
+provider for the data.
+
+00:21:27.776 --> 00:21:29.056 A:middle
+Now sometimes we can record that
+
+00:21:29.056 --> 00:21:30.196 A:middle
+directly from the target through
+
+00:21:30.196 --> 00:21:32.196 A:middle
+the data stream and sometimes we
+
+00:21:32.196 --> 00:21:33.346 A:middle
+have to synthesize the data
+
+00:21:33.486 --> 00:21:34.246 A:middle
+using a modeler.
+
+00:21:35.296 --> 00:21:36.876 A:middle
+Now modelers can require their
+
+00:21:36.876 --> 00:21:38.556 A:middle
+own inputs and those inputs can
+
+00:21:38.556 --> 00:21:40.356 A:middle
+be the outputs of other modelers
+
+00:21:40.396 --> 00:21:41.596 A:middle
+or they can be recorded directly
+
+00:21:41.596 --> 00:21:42.926 A:middle
+from the data stream and that's
+
+00:21:42.926 --> 00:21:44.186 A:middle
+how we synthesize the rest of
+
+00:21:44.186 --> 00:21:45.476 A:middle
+the data that we don't know how
+
+00:21:45.476 --> 00:21:46.366 A:middle
+to directly record.
+
+00:21:47.476 --> 00:21:49.516 A:middle
+Now once we've got data sources
+
+00:21:49.516 --> 00:21:51.546 A:middle
+for all of the stores in the
+
+00:21:51.686 --> 00:21:53.786 A:middle
+Analysis Core, that's what's
+
+00:21:53.786 --> 00:21:54.866 A:middle
+called the binding solution.
+
+00:21:55.026 --> 00:21:56.026 A:middle
+And so the third step is to
+
+00:21:56.026 --> 00:21:57.356 A:middle
+optimize the binding solution.
+
+00:21:57.546 --> 00:21:58.806 A:middle
+And here you see Instruments is
+
+00:21:58.806 --> 00:21:59.966 A:middle
+visualizing its own binding
+
+00:21:59.966 --> 00:22:01.546 A:middle
+solution for what we call the
+

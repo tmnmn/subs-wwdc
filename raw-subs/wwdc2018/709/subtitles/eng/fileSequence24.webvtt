@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:01.196 --> 00:24:03.526 A:middle
+Now I came across this research
+
+00:24:03.526 --> 00:24:04.946 A:middle
+paper recently.
+
+00:24:05.056 --> 00:24:06.486 A:middle
+It's called Spatial Transformer
+
+00:24:06.486 --> 00:24:06.976 A:middle
+Network.
+
+00:24:07.576 --> 00:24:09.236 A:middle
+And what it does is this.
+
+00:24:09.886 --> 00:24:12.746 A:middle
+So it inserts a neural network
+
+00:24:12.946 --> 00:24:15.036 A:middle
+after the digit that tries to
+
+00:24:15.036 --> 00:24:16.516 A:middle
+localize the digit.
+
+00:24:17.326 --> 00:24:18.856 A:middle
+And then it feeds it through a
+
+00:24:18.856 --> 00:24:21.156 A:middle
+grid sampler layer which renders
+
+00:24:21.156 --> 00:24:22.786 A:middle
+the digit again, but this time
+
+00:24:23.066 --> 00:24:25.026 A:middle
+it has already focused on the
+
+00:24:25.026 --> 00:24:25.276 A:middle
+digit.
+
+00:24:25.596 --> 00:24:26.686 A:middle
+And then you pass it through
+
+00:24:26.686 --> 00:24:29.516 A:middle
+your old classify method.
+
+00:24:29.516 --> 00:24:31.626 A:middle
+Now we don't need to worry about
+
+00:24:31.626 --> 00:24:32.416 A:middle
+the details here.
+
+00:24:32.416 --> 00:24:33.716 A:middle
+But the point to note is that
+
+00:24:33.756 --> 00:24:35.946 A:middle
+the portion in green is what
+
+00:24:35.946 --> 00:24:36.986 A:middle
+Core ML supports.
+
+00:24:37.136 --> 00:24:38.906 A:middle
+And the portion in red, which is
+
+00:24:38.906 --> 00:24:41.456 A:middle
+this new grid sampler layer, is
+
+00:24:41.456 --> 00:24:42.846 A:middle
+this new experimental layer that
+
+00:24:42.846 --> 00:24:43.746 A:middle
+Core ML does not support.
+
+00:24:44.136 --> 00:24:45.596 A:middle
+So I want to take an example of
+
+00:24:45.716 --> 00:24:47.826 A:middle
+this particular model and show
+
+00:24:47.826 --> 00:24:49.896 A:middle
+you how you would convert it
+
+00:24:50.116 --> 00:24:51.316 A:middle
+using Core ML Tools.
+
+00:24:51.566 --> 00:24:53.336 A:middle
+So let's go to demo.
+

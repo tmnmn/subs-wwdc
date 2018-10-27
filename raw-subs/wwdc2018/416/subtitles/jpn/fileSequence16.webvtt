@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.090 --> 00:16:00.961 align:start position:14% line:-1
+diagnosticsタブで設定可能です
+
+00:16:01.428 --> 00:16:05.065 align:start position:7% line:-1
+私のお薦めはLive Allocationsです
+
+00:16:06.633 --> 00:16:10.537 align:start position:11% line:-2
+memgraphはmallocスタックログに
+キャプチャされました
+
+00:16:10.804 --> 00:16:13.073 align:start position:25% line:-1
+次は配置のバックトレースです
+
+00:16:13.173 --> 00:16:15.242 align:start position:14% line:-1
+使うのはmalloc historyです
+
+00:16:15.509 --> 00:16:17.644 align:start position:20% line:-2
+memgraphに
+malloc historyをパス
+
+00:16:17.744 --> 00:16:19.580 align:start position:32% line:-2
+さらにインスタンスの
+アドレスをパス
+
+00:16:19.680 --> 00:16:21.982 align:start position:30% line:-2
+バックトレースがあれば
+表示されます
+
+00:16:24.051 --> 00:16:27.387 align:start position:18% line:-2
+これはNSConcreteDataの
+アドレスの１つです
+
+00:16:27.487 --> 00:16:29.189 align:start position:14% line:-1
+malloc historyにパスすると
+
+00:16:30.090 --> 00:16:31.358 align:start position:27% line:-1
+バックトレースがありました
+
+00:16:31.525 --> 00:16:36.830 align:start position:12% line:-2
+NoirFilter.applyメソッドが
+巨大なNSデータを生成しています
+
+00:16:37.097 --> 00:16:42.002 align:start position:25% line:-2
+これはバグレポートに添付して
+誰かに見てもらいます
+
+00:16:43.403 --> 00:16:48.375 align:start position:25% line:-2
+以上はAppの動作を調査する
+ほんの一部の方法です
+
+00:16:48.609 --> 00:16:51.445 align:start position:21% line:-1
+メモリ問題の対処に使うツールは？
+
+00:16:52.045 --> 00:16:53.947 align:start position:36% line:-1
+３つ考えられます
+
+00:16:54.248 --> 00:16:55.983 align:start position:25% line:-1
+オブジェクトの生成を見る場合
+
+00:16:56.083 --> 00:16:58.919 align:start position:25% line:-2
+オブジェクトに関連するものを
+見る場合
+
+00:16:59.019 --> 00:17:01.355 align:start position:30% line:-1
+単にサイズを見たい場合
+

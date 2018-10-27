@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.906 --> 00:20:01.676 A:middle
+triangle we hit, we can end the
+
+00:20:01.676 --> 00:20:03.086 A:middle
+intersection search as soon as
+
+00:20:03.086 --> 00:20:03.976 A:middle
+we hit any triangle.
+
+00:20:04.736 --> 00:20:06.466 A:middle
+This is, typically, much faster
+
+00:20:06.466 --> 00:20:07.546 A:middle
+than searching for the closest
+
+00:20:07.546 --> 00:20:08.206 A:middle
+intersection.
+
+00:20:09.186 --> 00:20:10.926 A:middle
+MPS has a special mode for this,
+
+00:20:11.056 --> 00:20:12.786 A:middle
+which we can turn on by passing
+
+00:20:12.786 --> 00:20:14.906 A:middle
+the any intersectionType instead
+
+00:20:15.676 --> 00:20:17.936 A:middle
+of nearest.
+
+00:20:18.406 --> 00:20:19.936 A:middle
+Finally, we can launch our last
+
+00:20:19.936 --> 00:20:21.386 A:middle
+kernel, which will add the color
+
+00:20:21.386 --> 00:20:23.756 A:middle
+to the image.
+
+00:20:24.236 --> 00:20:25.886 A:middle
+Each thread will read in one
+
+00:20:25.886 --> 00:20:27.906 A:middle
+shadow ray and the corresponding
+
+00:20:27.906 --> 00:20:28.756 A:middle
+intersection data.
+
+00:20:29.896 --> 00:20:31.526 A:middle
+If the intersection distance was
+
+00:20:31.566 --> 00:20:33.216 A:middle
+positive, then the original
+
+00:20:33.216 --> 00:20:34.286 A:middle
+intersection point was in
+
+00:20:34.286 --> 00:20:34.796 A:middle
+shadow.
+
+00:20:35.156 --> 00:20:36.456 A:middle
+So, there's nothing more to do.
+
+00:20:37.576 --> 00:20:38.616 A:middle
+Otherwise, the intersection
+
+00:20:38.616 --> 00:20:39.766 A:middle
+point wasn't in shadow.
+
+00:20:40.716 --> 00:20:42.396 A:middle
+So, we should read in the ray
+
+00:20:42.396 --> 00:20:43.896 A:middle
+color and write it into the
+
+00:20:43.896 --> 00:20:44.546 A:middle
+output image.
+
+00:20:45.456 --> 00:20:46.936 A:middle
+And that's all we need to do to
+
+00:20:46.936 --> 00:20:48.096 A:middle
+add shadows to our image.
+
+00:20:48.716 --> 00:20:52.016 A:middle
+We can see that each shaded
+
+00:20:52.056 --> 00:20:53.476 A:middle
+point is now checking whether or
+
+00:20:53.476 --> 00:20:54.826 A:middle
+not the light source is visible
+
+00:20:54.826 --> 00:20:56.136 A:middle
+before adding the lighting to
+
+00:20:56.136 --> 00:20:56.616 A:middle
+the image.
+
+00:20:57.626 --> 00:20:59.056 A:middle
+Because we're using a ray tracer
+
+00:20:59.686 --> 00:21:01.026 A:middle
+we can, also, randomly sample
+

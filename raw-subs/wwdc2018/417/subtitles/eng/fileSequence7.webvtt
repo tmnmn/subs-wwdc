@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.716 --> 00:07:00.966 A:middle
+APIRequest protocol with methods
+
+00:07:01.016 --> 00:07:02.326 A:middle
+matching the signature of the
+
+00:07:02.326 --> 00:07:03.326 A:middle
+methods from the request type
+
+00:07:03.326 --> 00:07:04.036 A:middle
+that we just saw.
+
+00:07:04.186 --> 00:07:06.536 A:middle
+And this is used by an
+
+00:07:06.536 --> 00:07:08.156 A:middle
+APIRequestLoader class.
+
+00:07:09.576 --> 00:07:10.666 A:middle
+That's initialized with a
+
+00:07:10.666 --> 00:07:13.536 A:middle
+request type and a urlSession
+
+00:07:16.656 --> 00:07:16.906 A:middle
+instance.
+
+00:07:17.546 --> 00:07:19.546 A:middle
+This class has a loadAPIRequest
+
+00:07:19.546 --> 00:07:21.586 A:middle
+method which uses that
+
+00:07:21.586 --> 00:07:23.526 A:middle
+apiRequest value to generate a
+
+00:07:23.526 --> 00:07:24.316 A:middle
+URL request.
+
+00:07:25.446 --> 00:07:27.106 A:middle
+Feed that into the urlSession,
+
+00:07:27.456 --> 00:07:29.566 A:middle
+and then use the apiRequest
+
+00:07:29.566 --> 00:07:30.966 A:middle
+again to parse in your response.
+
+00:07:30.966 --> 00:07:36.316 A:middle
+Now, we can continue write unit
+
+00:07:36.316 --> 00:07:38.256 A:middle
+test for this method, but right
+
+00:07:38.256 --> 00:07:39.356 A:middle
+now I actually want to move up
+
+00:07:39.436 --> 00:07:41.026 A:middle
+the pyramid and look at a
+
+00:07:41.026 --> 00:07:42.876 A:middle
+midlevel integration test that
+
+00:07:42.876 --> 00:07:44.006 A:middle
+covers several pieces of this
+
+00:07:44.006 --> 00:07:44.496 A:middle
+data flow.
+
+00:07:46.756 --> 00:07:48.226 A:middle
+Another thing that I really want
+
+00:07:48.346 --> 00:07:50.446 A:middle
+to also be able to test at this
+
+00:07:50.446 --> 00:07:52.326 A:middle
+layer of my suite is that my
+
+00:07:52.326 --> 00:07:54.296 A:middle
+interaction with the URLSession
+
+00:07:54.296 --> 00:07:55.746 A:middle
+APIs is correct.
+
+00:07:56.756 --> 00:07:58.526 A:middle
+It turns out that the foundation
+
+00:07:58.526 --> 00:08:00.256 A:middle
+URL loading system provides a
+

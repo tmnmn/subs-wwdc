@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.606 --> 00:07:02.386 A:middle
+whose size is equal to the size
+
+00:07:02.386 --> 00:07:03.976 A:middle
+of the image that is contained
+
+00:07:03.976 --> 00:07:04.706 A:middle
+in the data buffer.
+
+00:07:04.746 --> 00:07:06.936 A:middle
+And perform an operation called
+
+00:07:06.936 --> 00:07:09.876 A:middle
+decoding that will convert the
+
+00:07:10.306 --> 00:07:12.396 A:middle
+JPEG or PNG or other encoded
+
+00:07:12.396 --> 00:07:15.776 A:middle
+image data into per pixel image
+
+00:07:15.806 --> 00:07:16.436 A:middle
+information.
+
+00:07:17.056 --> 00:07:18.436 A:middle
+And then, depending on the
+
+00:07:18.436 --> 00:07:19.876 A:middle
+content mode of our image view.
+
+00:07:20.766 --> 00:07:22.266 A:middle
+When UIKit asks the image view
+
+00:07:22.266 --> 00:07:25.546 A:middle
+to render it will copy and scale
+
+00:07:26.096 --> 00:07:27.626 A:middle
+the image data from the image
+
+00:07:27.626 --> 00:07:29.326 A:middle
+buffer as it copies it into the
+
+00:07:29.326 --> 00:07:29.896 A:middle
+frame buffer.
+
+00:07:30.396 --> 00:07:34.986 A:middle
+Now, that decoding phase can be
+
+00:07:35.096 --> 00:07:37.166 A:middle
+CPU intensive, particularly, for
+
+00:07:37.166 --> 00:07:37.976 A:middle
+large images.
+
+00:07:38.426 --> 00:07:40.316 A:middle
+So, rather than do that work
+
+00:07:40.316 --> 00:07:42.176 A:middle
+every time UIKit asks the image
+
+00:07:42.176 --> 00:07:44.726 A:middle
+view to render, UIImage will
+
+00:07:44.726 --> 00:07:46.606 A:middle
+hang onto that image buffer, so
+
+00:07:46.826 --> 00:07:48.056 A:middle
+that it only does that work
+
+00:07:48.056 --> 00:07:48.506 A:middle
+once.
+
+00:07:49.476 --> 00:07:51.096 A:middle
+Consequently, your application,
+
+00:07:51.456 --> 00:07:52.536 A:middle
+for every image that gets
+
+00:07:52.536 --> 00:07:54.556 A:middle
+decoded, could have a persistent
+
+00:07:54.556 --> 00:07:56.086 A:middle
+and large memory allocation
+
+00:07:56.086 --> 00:07:56.606 A:middle
+hanging out.
+
+00:07:57.416 --> 00:07:59.236 A:middle
+And this allocation, as I
+
+00:07:59.236 --> 00:08:00.446 A:middle
+mentioned earlier, is
+

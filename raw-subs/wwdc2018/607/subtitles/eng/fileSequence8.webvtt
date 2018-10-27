@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.936 --> 00:08:00.166 A:middle
+and async compute for free on
+
+00:08:00.166 --> 00:08:00.786 A:middle
+the GPU.
+
+00:08:01.256 --> 00:08:02.436 A:middle
+It's free because Metal doesn't
+
+00:08:02.436 --> 00:08:03.446 A:middle
+require you to do anything
+
+00:08:03.446 --> 00:08:04.486 A:middle
+special on your part.
+
+00:08:04.486 --> 00:08:07.366 A:middle
+So I think we all love getting
+
+00:08:07.366 --> 00:08:09.096 A:middle
+free optimizations on the GPU,
+
+00:08:09.726 --> 00:08:10.896 A:middle
+but sometimes you as a
+
+00:08:10.896 --> 00:08:13.346 A:middle
+developer, you may need to dive
+
+00:08:13.346 --> 00:08:14.136 A:middle
+a little bit deeper.
+
+00:08:14.786 --> 00:08:16.506 A:middle
+For the most critical parts of
+
+00:08:16.506 --> 00:08:18.286 A:middle
+your code, Metal allows you to
+
+00:08:18.316 --> 00:08:20.006 A:middle
+incrementally dive deeper with
+
+00:08:20.006 --> 00:08:20.646 A:middle
+more control.
+
+00:08:21.126 --> 00:08:23.546 A:middle
+For example, you could disable
+
+00:08:23.546 --> 00:08:25.056 A:middle
+automatic reference counting and
+
+00:08:25.056 --> 00:08:27.006 A:middle
+do it yourself to save on CPU
+
+00:08:27.006 --> 00:08:27.286 A:middle
+time.
+
+00:08:28.116 --> 00:08:30.266 A:middle
+You could also use Metal heaps
+
+00:08:30.626 --> 00:08:32.395 A:middle
+to tightly control allocations
+
+00:08:32.626 --> 00:08:33.466 A:middle
+really cheaply.
+
+00:08:33.956 --> 00:08:36.616 A:middle
+And Metal heaps are complemented
+
+00:08:36.616 --> 00:08:39.025 A:middle
+by fences and events, which
+
+00:08:39.025 --> 00:08:41.126 A:middle
+allow you to explicitly control
+
+00:08:41.126 --> 00:08:42.316 A:middle
+the GPU parallelism.
+
+00:08:44.376 --> 00:08:46.736 A:middle
+Many of your games are using a
+
+00:08:46.736 --> 00:08:48.316 A:middle
+lot of resources, which can be
+
+00:08:48.316 --> 00:08:48.906 A:middle
+costly.
+
+00:08:49.476 --> 00:08:51.526 A:middle
+Allocations require a round trip
+
+00:08:51.526 --> 00:08:54.076 A:middle
+to the OS, which has to map and
+
+00:08:54.076 --> 00:08:55.536 A:middle
+initialize memory on each
+
+00:08:55.576 --> 00:08:56.096 A:middle
+request.
+
+00:08:56.876 --> 00:08:58.066 A:middle
+If your game uses temporary
+
+00:08:58.066 --> 00:08:59.606 A:middle
+render targets, these
+
+00:08:59.606 --> 00:09:00.796 A:middle
+allocations can happen in the
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.836 --> 00:12:03.416 A:middle
+layout hints, and also weights
+
+00:12:03.416 --> 00:12:05.046 A:middle
+and scores for the assets.
+
+00:12:05.366 --> 00:12:06.706 A:middle
+And, assets can contain
+
+00:12:07.176 --> 00:12:09.776 A:middle
+important regions in the asset's
+
+00:12:09.776 --> 00:12:10.786 A:middle
+regions of interest.
+
+00:12:10.936 --> 00:12:13.096 A:middle
+This is just a quick reminder
+
+00:12:13.096 --> 00:12:14.306 A:middle
+what the projectInfo looks like.
+
+00:12:14.596 --> 00:12:15.676 A:middle
+If you want to know more about
+
+00:12:15.676 --> 00:12:16.976 A:middle
+the projectInfo, I highly
+
+00:12:16.976 --> 00:12:18.376 A:middle
+recommend last year's session,
+
+00:12:18.646 --> 00:12:19.976 A:middle
+What's New in Photos API.
+
+00:12:24.556 --> 00:12:26.556 A:middle
+The projectInfo is handed to
+
+00:12:26.556 --> 00:12:29.056 A:middle
+your extension during begin
+
+00:12:29.056 --> 00:12:29.506 A:middle
+project.
+
+00:12:30.496 --> 00:12:33.976 A:middle
+And, whenever the user adds new
+
+00:12:33.976 --> 00:12:35.176 A:middle
+assets to the project, the
+
+00:12:35.176 --> 00:12:36.456 A:middle
+projectInfo will be outdated,
+
+00:12:36.456 --> 00:12:37.946 A:middle
+because it's a static object.
+
+00:12:38.756 --> 00:12:40.056 A:middle
+And, we want to solve the
+
+00:12:40.056 --> 00:12:41.446 A:middle
+problem by introducing new API
+
+00:12:41.446 --> 00:12:43.406 A:middle
+on the projectExtensionsContext
+
+00:12:43.806 --> 00:12:45.906 A:middle
+to get updated project info,
+
+00:12:46.266 --> 00:12:47.196 A:middle
+with the current state of the
+
+00:12:47.196 --> 00:12:47.726 A:middle
+project.
+
+00:12:48.216 --> 00:12:49.886 A:middle
+Let's take this as an example.
+
+00:12:49.886 --> 00:12:51.586 A:middle
+We handed you this projectInfo
+
+00:12:51.586 --> 00:12:53.296 A:middle
+during project creation, and
+
+00:12:53.296 --> 00:12:54.646 A:middle
+then the user added some more
+
+00:12:54.646 --> 00:12:55.656 A:middle
+assets to the project.
+
+00:12:55.976 --> 00:12:57.286 A:middle
+You can then call the
+
+00:12:57.286 --> 00:12:59.156 A:middle
+updatedProjectInfo method, with
+
+00:12:59.216 --> 00:13:01.226 A:middle
+this projectInfo, and we will
+

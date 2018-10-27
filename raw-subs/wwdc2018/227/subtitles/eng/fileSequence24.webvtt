@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.746 --> 00:24:00.426 A:middle
+reassemble these in the final
+
+00:24:00.426 --> 00:24:02.126 A:middle
+design size using a draw 3 or a
+
+00:24:02.126 --> 00:24:03.786 A:middle
+nine-part API for example.
+
+00:24:04.886 --> 00:24:07.046 A:middle
+Now this works fine and has been
+
+00:24:07.046 --> 00:24:08.066 A:middle
+a tried and true practice for
+
+00:24:08.066 --> 00:24:09.976 A:middle
+many years, but it does have a
+
+00:24:09.976 --> 00:24:10.586 A:middle
+downside.
+
+00:24:10.986 --> 00:24:12.616 A:middle
+Reassembling those images at a
+
+00:24:12.616 --> 00:24:13.996 A:middle
+final size is a pretty CPU
+
+00:24:13.996 --> 00:24:16.096 A:middle
+intensive task and it can be a
+
+00:24:16.096 --> 00:24:17.996 A:middle
+bit complex and inefficient and
+
+00:24:17.996 --> 00:24:21.176 A:middle
+it's not really a good fit for
+
+00:24:21.176 --> 00:24:23.306 A:middle
+modern GPU UI pipeline like core
+
+00:24:23.306 --> 00:24:24.126 A:middle
+animation.
+
+00:24:25.946 --> 00:24:26.926 A:middle
+What's a better approach?
+
+00:24:27.706 --> 00:24:29.156 A:middle
+A better approach is to take a
+
+00:24:29.216 --> 00:24:31.556 A:middle
+single image and just provide
+
+00:24:31.556 --> 00:24:33.666 A:middle
+the stretching metadata for it
+
+00:24:33.666 --> 00:24:34.716 A:middle
+that identifies what the
+
+00:24:34.716 --> 00:24:35.916 A:middle
+stretchable portion is.
+
+00:24:36.996 --> 00:24:38.426 A:middle
+And that really enables the most
+
+00:24:38.426 --> 00:24:40.226 A:middle
+optimal smooth GPU animation of
+
+00:24:40.226 --> 00:24:41.286 A:middle
+that resizable image.
+
+00:24:42.006 --> 00:24:44.026 A:middle
+And I'm happy to tell you that
+
+00:24:44.026 --> 00:24:45.716 A:middle
+Asset Catalogs makes this really
+
+00:24:45.716 --> 00:24:48.256 A:middle
+easy to do and it's called the
+
+00:24:48.256 --> 00:24:49.306 A:middle
+Show Slicing editor.
+
+00:24:50.636 --> 00:24:51.896 A:middle
+It's really easy to work with,
+
+00:24:52.186 --> 00:24:53.576 A:middle
+you just click the Start Slicing
+
+00:24:53.576 --> 00:24:55.646 A:middle
+button and then you start
+
+00:24:55.646 --> 00:24:57.836 A:middle
+manipulating the dividing lines
+
+00:24:57.836 --> 00:24:59.126 A:middle
+here which actually lets you
+
+00:24:59.126 --> 00:25:00.456 A:middle
+identify the stretchable
+

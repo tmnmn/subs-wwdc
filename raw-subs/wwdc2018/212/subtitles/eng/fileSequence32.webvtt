@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.326 --> 00:32:01.056 A:middle
+images to represent your
+
+00:32:01.056 --> 00:32:02.026 A:middle
+annotations instead.
+
+00:32:02.306 --> 00:32:03.266 A:middle
+So, in this case, I have the
+
+00:32:03.266 --> 00:32:05.666 A:middle
+small sticker look to mark
+
+00:32:05.666 --> 00:32:06.986 A:middle
+places where -- which I have
+
+00:32:06.986 --> 00:32:07.946 A:middle
+visited recently.
+
+00:32:09.066 --> 00:32:11.206 A:middle
+So, I can use a raster image for
+
+00:32:11.206 --> 00:32:12.056 A:middle
+these annotations.
+
+00:32:12.346 --> 00:32:13.946 A:middle
+The title and subtitle are shown
+
+00:32:13.946 --> 00:32:15.306 A:middle
+in a callout bubble, just like
+
+00:32:15.306 --> 00:32:16.616 A:middle
+in Server-Side Rendering for
+
+00:32:16.616 --> 00:32:17.536 A:middle
+marker annotations.
+
+00:32:17.846 --> 00:32:18.886 A:middle
+And to create an image
+
+00:32:18.886 --> 00:32:20.706 A:middle
+annotation, this is very similar
+
+00:32:20.706 --> 00:32:23.096 A:middle
+to a marker annotation, but with
+
+00:32:23.096 --> 00:32:24.466 A:middle
+the additional property that
+
+00:32:24.466 --> 00:32:25.706 A:middle
+much be provided which is the
+
+00:32:25.706 --> 00:32:26.986 A:middle
+URL for the images.
+
+00:32:27.316 --> 00:32:28.246 A:middle
+And here, you can see two
+
+00:32:28.246 --> 00:32:29.826 A:middle
+different URLs for two different
+
+00:32:29.826 --> 00:32:30.556 A:middle
+pixel ratios.
+
+00:32:32.466 --> 00:32:34.836 A:middle
+Another way that I could
+
+00:32:34.836 --> 00:32:36.236 A:middle
+represent a notation is using
+
+00:32:36.236 --> 00:32:37.726 A:middle
+the classic pin example.
+
+00:32:38.226 --> 00:32:40.786 A:middle
+And pins usually come up in many
+
+00:32:40.786 --> 00:32:41.486 A:middle
+different colors.
+
+00:32:41.696 --> 00:32:42.776 A:middle
+And the problem is that if I
+
+00:32:42.776 --> 00:32:44.416 A:middle
+want to provide a lot of
+
+00:32:44.416 --> 00:32:45.646 A:middle
+different colors, I will need to
+
+00:32:45.646 --> 00:32:46.706 A:middle
+provide a lot of different
+
+00:32:46.706 --> 00:32:47.206 A:middle
+images.
+
+00:32:47.666 --> 00:32:49.006 A:middle
+And this can quickly become
+
+00:32:49.046 --> 00:32:49.686 A:middle
+unmanageable.
+
+00:32:49.686 --> 00:32:51.696 A:middle
+So instead, what I can do is I
+
+00:32:51.696 --> 00:32:53.096 A:middle
+can use a custom annotation.
+
+00:32:53.096 --> 00:32:54.386 A:middle
+And in this case, instead of an
+
+00:32:54.386 --> 00:32:56.366 A:middle
+image, I will use any DOM
+
+00:32:56.366 --> 00:32:57.666 A:middle
+Element to represent my
+
+00:32:57.666 --> 00:32:58.266 A:middle
+annotation.
+
+00:32:59.666 --> 00:33:01.416 A:middle
+And these elements are created
+

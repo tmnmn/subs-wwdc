@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:56.029 --> 00:05:00.267 align:start position:27% line:-2
+ストアディスクリプションが
+デフォルトで備わっています
+
+00:05:01.034 --> 00:05:03.804 align:start position:29% line:-2
+それは結構ですが
+新しいフレームワークと―
+
+00:05:03.904 --> 00:05:07.508 align:start position:23% line:-2
+アプリケーションの融合し過ぎは
+避けたいですね
+
+00:05:08.275 --> 00:05:12.346 align:start position:32% line:-2
+モデルを見つけるのが
+容易になったところで
+
+00:05:12.446 --> 00:05:14.414 align:start position:27% line:-1
+この点も改善してみましょう
+
+00:05:17.050 --> 00:05:19.686 align:start position:21% line:-1
+ストアの場所を強制的に変えるには
+
+00:05:19.786 --> 00:05:21.788 align:start position:0% line:-2
+persistentStoreDescriptionsの
+中のURLを
+
+00:05:21.889 --> 00:05:24.925 align:start position:23% line:-1
+直接 書き換えればいいでしょう
+
+00:05:25.459 --> 00:05:29.596 align:start position:11% line:-2
+ただし今回は
+NSPersistentContainerが
+
+00:05:29.696 --> 00:05:32.966 align:start position:21% line:-2
+永続ストアのディスクリプションを
+作成する際に
+
+00:05:33.066 --> 00:05:37.337 align:start position:7% line:-2
+defaultDirectoryURLメソッドを
+呼び出します
+
+00:05:37.437 --> 00:05:38.972 align:start position:29% line:-1
+オーバーライドもされます
+
+00:05:39.373 --> 00:05:41.575 align:start position:9% line:-2
+appendingPathComponentも
+有効です
+
+00:05:41.675 --> 00:05:45.345 align:start position:32% line:-2
+ストアを別々の場所に
+とどめておくための
+
+00:05:45.445 --> 00:05:50.050 align:start position:23% line:-2
+キャッシュやスタック用に
+コンテナを構成する手もあります
+
+00:05:51.985 --> 00:05:55.322 align:start position:16% line:-2
+ここで アプリケーションや
+View Controllerについて
+
+00:05:55.422 --> 00:05:58.025 align:start position:30% line:-1
+実際に見ていきましょう
+
+00:05:59.059 --> 00:06:01.929 align:start position:20% line:-2
+あることに特化した
+View Controllerです
+

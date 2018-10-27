@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.076 --> 00:30:00.236 A:middle
+That's our definition for os
+
+00:30:00.236 --> 00:30:00.976 A:middle
+signpost interval schema.
+
+00:30:01.106 --> 00:30:03.376 A:middle
+Now let's take a look at table
+
+00:30:03.376 --> 00:30:04.066 A:middle
+creation.
+
+00:30:05.796 --> 00:30:07.696 A:middle
+For schema ref, we pass
+
+00:30:08.096 --> 00:30:10.456 A:middle
+identifier of our os signpost
+
+00:30:10.456 --> 00:30:12.616 A:middle
+interval schema and create
+
+00:30:12.616 --> 00:30:13.846 A:middle
+unique identifier for this
+
+00:30:13.846 --> 00:30:14.686 A:middle
+specific table.
+
+00:30:15.906 --> 00:30:17.736 A:middle
+Then, we can reference it in our
+
+00:30:17.736 --> 00:30:18.876 A:middle
+UI definitions.
+
+00:30:20.296 --> 00:30:22.346 A:middle
+For graph, we create a single
+
+00:30:22.346 --> 00:30:22.676 A:middle
+lane.
+
+00:30:23.796 --> 00:30:26.036 A:middle
+It takes our table and this time
+
+00:30:26.036 --> 00:30:27.706 A:middle
+it graphs by using the plot
+
+00:30:27.706 --> 00:30:28.056 A:middle
+template.
+
+00:30:28.796 --> 00:30:30.586 A:middle
+Plot template is dynamic way of
+
+00:30:30.586 --> 00:30:31.476 A:middle
+creating graphs.
+
+00:30:32.146 --> 00:30:35.446 A:middle
+It looks at the table, at the
+
+00:30:35.446 --> 00:30:37.386 A:middle
+column that was passed in
+
+00:30:37.386 --> 00:30:40.126 A:middle
+instance by element and for each
+
+00:30:40.226 --> 00:30:41.966 A:middle
+unique value of this column, it
+
+00:30:42.006 --> 00:30:44.436 A:middle
+creates plot.
+
+00:30:44.606 --> 00:30:46.436 A:middle
+Label format element allows us
+
+00:30:46.486 --> 00:30:49.606 A:middle
+to create format title for this
+
+00:30:49.606 --> 00:30:49.966 A:middle
+plot.
+
+00:30:50.336 --> 00:30:52.426 A:middle
+Here it's img column and the
+
+00:30:52.426 --> 00:30:53.956 A:middle
+value from image name column.
+
+00:30:54.516 --> 00:30:57.166 A:middle
+We pass image name as a value of
+
+00:30:57.166 --> 00:30:57.656 A:middle
+our plot.
+
+00:30:58.766 --> 00:31:00.156 A:middle
+Each of our planes will be
+

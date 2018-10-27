@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.266 --> 00:11:02.476 A:middle
+So now let's get back to our
+
+00:11:02.716 --> 00:11:05.196 A:middle
+pipeline and see what will
+
+00:11:05.196 --> 00:11:05.576 A:middle
+change.
+
+00:11:05.606 --> 00:11:07.806 A:middle
+Application can now replace
+
+00:11:07.806 --> 00:11:10.466 A:middle
+those separate IOSurfaces with
+
+00:11:10.466 --> 00:11:13.096 A:middle
+one 2D array texture, storing
+
+00:11:13.096 --> 00:11:14.256 A:middle
+the image for both i's.
+
+00:11:15.346 --> 00:11:17.406 A:middle
+This allows further optimization
+
+00:11:18.026 --> 00:11:20.166 A:middle
+as original 2D multi-sample
+
+00:11:20.166 --> 00:11:21.876 A:middle
+array texture can be now
+
+00:11:21.876 --> 00:11:24.236 A:middle
+resolved in one pass as well to
+
+00:11:24.606 --> 00:11:25.906 A:middle
+just create it shareable through
+
+00:11:25.906 --> 00:11:26.736 A:middle
+the array texture.
+
+00:11:27.706 --> 00:11:28.716 A:middle
+But that's not everything.
+
+00:11:29.486 --> 00:11:30.786 A:middle
+Let's look at the compositor.
+
+00:11:32.286 --> 00:11:33.196 A:middle
+Once we have simplified
+
+00:11:33.196 --> 00:11:35.006 A:middle
+rendering parts on application
+
+00:11:35.006 --> 00:11:36.596 A:middle
+site, there is nothing
+
+00:11:36.716 --> 00:11:38.176 A:middle
+preventing compositor from
+
+00:11:38.406 --> 00:11:39.726 A:middle
+benefiting from those new
+
+00:11:39.726 --> 00:11:40.596 A:middle
+features as well.
+
+00:11:41.246 --> 00:11:45.056 A:middle
+So compositor can now use those
+
+00:11:45.126 --> 00:11:47.826 A:middle
+incoming 2D array textures and
+
+00:11:47.826 --> 00:11:50.086 A:middle
+perform work for both i's in
+
+00:11:50.086 --> 00:11:51.576 A:middle
+single render pass as well.
+
+00:11:51.736 --> 00:11:54.836 A:middle
+And as you can see, we've just
+
+00:11:54.836 --> 00:11:56.396 A:middle
+simplified the whole pipeline.
+
+00:11:57.816 --> 00:11:59.246 A:middle
+So let's do recap of what we've
+
+00:11:59.246 --> 00:11:59.766 A:middle
+just learned.
+

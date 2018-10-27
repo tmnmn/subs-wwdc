@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.926 --> 00:05:00.366 A:middle
+directory.
+
+00:05:00.796 --> 00:05:02.056 A:middle
+That was great when our model
+
+00:05:02.056 --> 00:05:04.066 A:middle
+code was part of the app, but we
+
+00:05:04.066 --> 00:05:04.876 A:middle
+should try to keep our new
+
+00:05:04.876 --> 00:05:06.116 A:middle
+frameworks files from mingling
+
+00:05:06.116 --> 00:05:07.286 A:middle
+too much with the apps.
+
+00:05:08.376 --> 00:05:09.566 A:middle
+Since we already subclassed
+
+00:05:09.566 --> 00:05:10.976 A:middle
+NSPersistentContainer to make
+
+00:05:10.976 --> 00:05:12.706 A:middle
+finding the model easier, let's
+
+00:05:12.706 --> 00:05:14.086 A:middle
+build on that to improve this.
+
+00:05:16.476 --> 00:05:18.456 A:middle
+The brute force way to change a
+
+00:05:18.456 --> 00:05:20.786 A:middle
+store's location is to directly
+
+00:05:20.786 --> 00:05:22.156 A:middle
+modify the URL in the
+
+00:05:22.156 --> 00:05:23.446 A:middle
+persistentStoreDescription
+
+00:05:23.446 --> 00:05:24.586 A:middle
+before loading the store.
+
+00:05:25.556 --> 00:05:26.716 A:middle
+Sometimes that's what you want
+
+00:05:26.716 --> 00:05:27.826 A:middle
+and we could use that pattern
+
+00:05:27.826 --> 00:05:29.406 A:middle
+here, but we don't have to
+
+00:05:29.716 --> 00:05:31.516 A:middle
+because NSPersistentContainer
+
+00:05:31.516 --> 00:05:33.996 A:middle
+calls its own default directory
+
+00:05:33.996 --> 00:05:35.816 A:middle
+URL method when creating
+
+00:05:35.816 --> 00:05:37.086 A:middle
+persistent store descriptions.
+
+00:05:37.286 --> 00:05:38.626 A:middle
+And it's made to be overridden.
+
+00:05:39.166 --> 00:05:40.516 A:middle
+In this case, we can just append
+
+00:05:40.516 --> 00:05:42.066 A:middle
+a path component, but this is
+
+00:05:42.066 --> 00:05:43.076 A:middle
+also a good way to set up
+
+00:05:43.076 --> 00:05:45.776 A:middle
+containers for caches or other
+
+00:05:45.776 --> 00:05:46.826 A:middle
+kinds of stacks that need to
+
+00:05:46.826 --> 00:05:47.926 A:middle
+keep their stores in different
+
+00:05:47.926 --> 00:05:49.756 A:middle
+locations, like your tasks.
+
+00:05:50.306 --> 00:05:53.046 A:middle
+So, now that we've got our Core
+
+00:05:53.046 --> 00:05:54.256 A:middle
+Data stock all figured out,
+
+00:05:54.386 --> 00:05:55.686 A:middle
+let's have a look at our app and
+
+00:05:55.686 --> 00:05:57.116 A:middle
+some of the view controllers
+
+00:05:57.116 --> 00:05:57.706 A:middle
+that we've written.
+
+00:05:58.376 --> 00:05:59.926 A:middle
+It looks like we've got some
+
+00:05:59.926 --> 00:06:00.896 A:middle
+pretty specialized view
+

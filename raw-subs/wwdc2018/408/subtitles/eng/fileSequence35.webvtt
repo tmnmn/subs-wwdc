@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.316 --> 00:35:01.076 A:middle
+To Current Swift Syntax.
+
+00:35:02.496 --> 00:35:04.126 A:middle
+However, when you do this
+
+00:35:04.396 --> 00:35:06.906 A:middle
+migration, you may have actually
+
+00:35:06.906 --> 00:35:09.936 A:middle
+selected to keep the Swift 3
+
+00:35:09.936 --> 00:35:11.446 A:middle
+compatibility mode for a
+
+00:35:11.446 --> 00:35:12.576 A:middle
+particular build setting.
+
+00:35:12.696 --> 00:35:14.776 A:middle
+And that's the Swift 3 @objc
+
+00:35:14.776 --> 00:35:15.406 A:middle
+imprints.
+
+00:35:16.196 --> 00:35:17.086 A:middle
+This is an option when you
+
+00:35:17.086 --> 00:35:19.316 A:middle
+migrate to Swift 4 to keep on a
+
+00:35:19.316 --> 00:35:22.176 A:middle
+rule from Swift 3 which exposes
+
+00:35:22.176 --> 00:35:23.686 A:middle
+internal methods and properties
+
+00:35:23.736 --> 00:35:26.416 A:middle
+to Objective-C automatically on
+
+00:35:26.416 --> 00:35:30.096 A:middle
+any subclass of NS Object.
+
+00:35:30.236 --> 00:35:31.626 A:middle
+Now, if you are writing in Swift
+
+00:35:31.666 --> 00:35:33.416 A:middle
+3, you may be relying on this
+
+00:35:33.416 --> 00:35:33.846 A:middle
+feature.
+
+00:35:34.196 --> 00:35:35.936 A:middle
+But there's a lot of cases where
+
+00:35:36.086 --> 00:35:37.626 A:middle
+you were not actually depending
+
+00:35:37.626 --> 00:35:38.806 A:middle
+on this in any way.
+
+00:35:39.446 --> 00:35:40.586 A:middle
+Not in the runtime sense.
+
+00:35:40.746 --> 00:35:42.226 A:middle
+And definitely not at compile
+
+00:35:42.226 --> 00:35:42.616 A:middle
+time.
+
+00:35:43.666 --> 00:35:45.466 A:middle
+So, once you get to the point
+
+00:35:45.816 --> 00:35:47.256 A:middle
+where you've explicitly marked
+
+00:35:47.256 --> 00:35:48.176 A:middle
+all of your Objective-C
+
+00:35:48.176 --> 00:35:51.506 A:middle
+dependencies as either @objc or
+
+00:35:52.016 --> 00:35:54.116 A:middle
+IBOutlet, IBAction, whatever, as
+
+00:35:54.116 --> 00:35:56.096 A:middle
+appropriate, then you can also
+
+00:35:56.096 --> 00:35:57.826 A:middle
+select this build setting and
+
+00:35:57.826 --> 00:35:59.186 A:middle
+hit Delete to get it back to the
+
+00:35:59.186 --> 00:36:01.176 A:middle
+default mode where the OB-C
+

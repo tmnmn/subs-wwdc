@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.446 --> 00:13:00.906 A:middle
+transforming values from one to
+
+00:13:01.026 --> 00:13:01.526 A:middle
+another.
+
+00:13:02.076 --> 00:13:03.466 A:middle
+These two valueTransformers
+
+00:13:03.466 --> 00:13:05.416 A:middle
+here-- unarchiveFromData and
+
+00:13:05.416 --> 00:13:07.806 A:middle
+keyedUnarchivedFromData-- the
+
+00:13:07.806 --> 00:13:09.436 A:middle
+first one does unkeyed
+
+00:13:09.436 --> 00:13:10.426 A:middle
+archiving, the second one does
+
+00:13:10.426 --> 00:13:11.366 A:middle
+keyed archiving, but not
+
+00:13:11.366 --> 00:13:11.966 A:middle
+securely.
+
+00:13:12.436 --> 00:13:14.506 A:middle
+And so, these are now not
+
+00:13:14.756 --> 00:13:16.026 A:middle
+working in the way we like, so
+
+00:13:16.026 --> 00:13:17.396 A:middle
+we're deprecating these two.
+
+00:13:17.396 --> 00:13:18.616 A:middle
+And, replacing them with this
+
+00:13:18.616 --> 00:13:19.696 A:middle
+new secure Unarchive
+
+00:13:19.696 --> 00:13:21.156 A:middle
+FromDataTransformerName, which
+
+00:13:21.156 --> 00:13:22.526 A:middle
+will do the unarchiving
+
+00:13:22.526 --> 00:13:23.086 A:middle
+securely.
+
+00:13:23.316 --> 00:13:24.476 A:middle
+So, we urge you to switch to
+
+00:13:24.476 --> 00:13:25.386 A:middle
+this one as well.
+
+00:13:25.716 --> 00:13:28.696 A:middle
+Now, on the secure coding front,
+
+00:13:28.696 --> 00:13:29.666 A:middle
+we've also gone ahead and
+
+00:13:29.666 --> 00:13:30.806 A:middle
+adopted secure coding in a
+
+00:13:30.806 --> 00:13:32.036 A:middle
+number of AppKit classes that
+
+00:13:32.036 --> 00:13:32.716 A:middle
+didn't do it yet.
+
+00:13:33.646 --> 00:13:35.536 A:middle
+Note here, NSAppearance, which
+
+00:13:36.106 --> 00:13:38.186 A:middle
+is a recent, relatively recent
+
+00:13:38.186 --> 00:13:39.156 A:middle
+class that is increasingly
+
+00:13:39.156 --> 00:13:40.566 A:middle
+becoming your friend, as you'll
+
+00:13:40.566 --> 00:13:42.106 A:middle
+see in later talks about Dark
+
+00:13:42.106 --> 00:13:43.476 A:middle
+Mode and other features we've
+
+00:13:43.476 --> 00:13:44.246 A:middle
+added in AppKit.
+
+00:13:44.906 --> 00:13:46.246 A:middle
+We've also added secure coding
+
+00:13:46.246 --> 00:13:47.716 A:middle
+to a few foundation API's that
+
+00:13:47.746 --> 00:13:48.356 A:middle
+did not have it.
+
+00:13:48.756 --> 00:13:49.946 A:middle
+And, here is that list.
+
+00:13:51.136 --> 00:13:52.296 A:middle
+Now, one more note on secure
+
+00:13:52.296 --> 00:13:52.686 A:middle
+coding.
+
+00:13:53.016 --> 00:13:54.756 A:middle
+We have a talk Thursday morning,
+
+00:13:55.856 --> 00:13:58.196 A:middle
+"Data You Can Trust," where
+
+00:13:58.196 --> 00:13:59.666 A:middle
+we'll talk about doing coding
+

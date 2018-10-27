@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:57.766 --> 00:14:00.446 A:middle
+So, to prevent issues like this,
+
+00:14:00.706 --> 00:14:02.436 A:middle
+your tests should always
+
+00:14:02.436 --> 00:14:04.026 A:middle
+correctly set up and tear down
+
+00:14:04.026 --> 00:14:04.696 A:middle
+their own state.
+
+00:14:06.016 --> 00:14:07.546 A:middle
+Not only will they be more
+
+00:14:07.546 --> 00:14:09.376 A:middle
+reliable, but it will also make
+
+00:14:09.376 --> 00:14:10.876 A:middle
+it possible for your tests to
+
+00:14:10.876 --> 00:14:12.246 A:middle
+run independently of all the
+
+00:14:12.246 --> 00:14:14.396 A:middle
+other ones and this can be
+
+00:14:14.396 --> 00:14:15.386 A:middle
+really beneficial during
+
+00:14:15.386 --> 00:14:16.616 A:middle
+development and debugging.
+
+00:14:17.186 --> 00:14:19.846 A:middle
+So, to help you ensure that
+
+00:14:19.846 --> 00:14:21.146 A:middle
+there are no unintentional
+
+00:14:21.146 --> 00:14:22.736 A:middle
+dependencies between your tests,
+
+00:14:23.306 --> 00:14:25.056 A:middle
+in Xcode 10, we're introducing
+
+00:14:25.056 --> 00:14:27.406 A:middle
+the new test randomization mode.
+
+00:14:27.996 --> 00:14:30.136 A:middle
+If you turn it on, your tests
+
+00:14:30.136 --> 00:14:31.886 A:middle
+will be randomly shuffled before
+
+00:14:31.886 --> 00:14:32.846 A:middle
+every time they're run.
+
+00:14:33.396 --> 00:14:35.856 A:middle
+And if your tests still pass
+
+00:14:36.016 --> 00:14:37.636 A:middle
+with this mode on, you can be
+
+00:14:37.636 --> 00:14:38.756 A:middle
+more confident that they are
+
+00:14:38.756 --> 00:14:39.726 A:middle
+really robust and
+
+00:14:39.726 --> 00:14:40.426 A:middle
+self-contained.
+
+00:14:42.376 --> 00:14:44.166 A:middle
+Randomization mode can be
+
+00:14:44.166 --> 00:14:45.896 A:middle
+enabled in the scheme editor,
+
+00:14:45.896 --> 00:14:46.986 A:middle
+just like the other features
+
+00:14:46.986 --> 00:14:47.766 A:middle
+we've seen today.
+
+00:14:48.386 --> 00:14:51.326 A:middle
+So, these are the new test
+
+00:14:51.326 --> 00:14:53.126 A:middle
+selection and ordering features
+
+00:14:53.196 --> 00:14:55.676 A:middle
+in Xcode 10.
+
+00:14:55.886 --> 00:14:57.206 A:middle
+Now I'm really excited about
+
+00:14:57.206 --> 00:14:57.936 A:middle
+what comes next.
+
+00:14:59.426 --> 00:15:00.686 A:middle
+To tell you all about the new
+

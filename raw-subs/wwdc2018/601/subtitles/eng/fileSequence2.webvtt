@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:02.286 --> 00:02:03.436 A:middle
+In this session today I'm going
+
+00:02:03.436 --> 00:02:05.726 A:middle
+to talk about the live broadcast
+
+00:02:05.726 --> 00:02:07.246 A:middle
+functionality of ReplayKit and
+
+00:02:07.576 --> 00:02:08.826 A:middle
+we're going to start with
+
+00:02:08.886 --> 00:02:10.666 A:middle
+overview and talk about
+
+00:02:10.726 --> 00:02:12.546 A:middle
+[inaudible] broadcast and iOS
+
+00:02:12.546 --> 00:02:14.936 A:middle
+system broadcast, and then we
+
+00:02:14.936 --> 00:02:16.666 A:middle
+are going to talk about the new
+
+00:02:16.666 --> 00:02:18.826 A:middle
+API called System Broadcast
+
+00:02:18.826 --> 00:02:19.216 A:middle
+Picker.
+
+00:02:19.746 --> 00:02:22.136 A:middle
+Now, this is an API that allows
+
+00:02:22.136 --> 00:02:23.856 A:middle
+you to initiate the broadcast
+
+00:02:24.116 --> 00:02:25.496 A:middle
+directly from your broadcast
+
+00:02:25.496 --> 00:02:26.246 A:middle
+application.
+
+00:02:28.356 --> 00:02:29.576 A:middle
+After that we're going to
+
+00:02:29.776 --> 00:02:31.526 A:middle
+discuss how you can actually
+
+00:02:31.526 --> 00:02:32.936 A:middle
+implement the broadcast
+
+00:02:32.936 --> 00:02:34.456 A:middle
+extensions and how that would
+
+00:02:34.456 --> 00:02:36.906 A:middle
+work for you with the new API
+
+00:02:39.016 --> 00:02:39.126 A:middle
+that [inaudible].
+
+00:02:39.336 --> 00:02:40.796 A:middle
+Also, we're going to talk about
+
+00:02:40.796 --> 00:02:43.606 A:middle
+the protecting of the content of
+
+00:02:43.606 --> 00:02:44.666 A:middle
+your applications from being
+
+00:02:44.666 --> 00:02:44.976 A:middle
+captured.
+
+00:02:48.316 --> 00:02:50.336 A:middle
+So let's start with overview of
+
+00:02:50.336 --> 00:02:51.156 A:middle
+the live broadcast.
+
+00:02:53.916 --> 00:02:56.816 A:middle
+As I said, ReplayKit allows you
+
+00:02:56.816 --> 00:02:58.556 A:middle
+to broadcast your app screen,
+
+00:02:58.556 --> 00:03:00.216 A:middle
+audio and audio content to
+

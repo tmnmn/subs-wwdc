@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.506 --> 00:20:00.036 A:middle
+there's definitely an
+
+00:20:00.036 --> 00:20:01.306 A:middle
+opportunity for customization.
+
+00:20:02.256 --> 00:20:03.596 A:middle
+For example, in the map
+
+00:20:03.596 --> 00:20:05.006 A:middle
+operation that we just wrote.
+
+00:20:05.446 --> 00:20:06.826 A:middle
+There's no reasonable way in
+
+00:20:06.826 --> 00:20:08.026 A:middle
+which any different kind of
+
+00:20:08.026 --> 00:20:09.496 A:middle
+collection could actually
+
+00:20:09.496 --> 00:20:11.436 A:middle
+provide a better implementation.
+
+00:20:12.046 --> 00:20:13.216 A:middle
+And so, it doesn't make sense to
+
+00:20:13.216 --> 00:20:14.636 A:middle
+add it as a customization point.
+
+00:20:14.996 --> 00:20:16.376 A:middle
+It can just stay as an
+
+00:20:16.376 --> 00:20:16.926 A:middle
+extension.
+
+00:20:18.396 --> 00:20:19.756 A:middle
+So, we've created this
+
+00:20:19.756 --> 00:20:20.966 A:middle
+collection type, and it's
+
+00:20:20.966 --> 00:20:21.976 A:middle
+actually pretty fully-featured
+
+00:20:21.976 --> 00:20:22.166 A:middle
+now.
+
+00:20:22.166 --> 00:20:23.016 A:middle
+It has lots of different
+
+00:20:23.696 --> 00:20:24.926 A:middle
+conforming types possible.
+
+00:20:25.236 --> 00:20:26.456 A:middle
+And various different useful
+
+00:20:26.456 --> 00:20:28.356 A:middle
+algorithms you can write for it.
+
+00:20:28.616 --> 00:20:30.016 A:middle
+But, sometimes you need more
+
+00:20:30.016 --> 00:20:31.696 A:middle
+than just a single protocol in
+
+00:20:31.696 --> 00:20:33.116 A:middle
+order to categorize your family
+
+00:20:33.116 --> 00:20:33.696 A:middle
+of types.
+
+00:20:34.646 --> 00:20:36.356 A:middle
+You need protocol inheritance.
+
+00:20:36.656 --> 00:20:37.726 A:middle
+And, to talk to you more about
+
+00:20:37.726 --> 00:20:38.936 A:middle
+that, here's Doug.
+
+00:20:40.516 --> 00:20:45.586 A:middle
+[ Applause ]
+
+00:20:46.086 --> 00:20:46.706 A:middle
+&gt;&gt; Thank you, Ben.
+
+00:20:47.936 --> 00:20:49.846 A:middle
+So, protocol inheritance has
+
+00:20:49.896 --> 00:20:50.976 A:middle
+been around since the beginning
+
+00:20:50.976 --> 00:20:51.396 A:middle
+of Swift.
+
+00:20:52.336 --> 00:20:53.766 A:middle
+And, to think about where we
+
+00:20:53.766 --> 00:20:54.956 A:middle
+need protocol inheritance.
+
+00:20:55.026 --> 00:20:56.446 A:middle
+Let's go look at this collection
+
+00:20:56.446 --> 00:20:57.206 A:middle
+protocol that we've been
+
+00:20:57.206 --> 00:20:57.596 A:middle
+building.
+
+00:20:58.276 --> 00:20:59.126 A:middle
+It's a nice protocol.
+
+00:20:59.126 --> 00:20:59.906 A:middle
+It's well-designed.
+

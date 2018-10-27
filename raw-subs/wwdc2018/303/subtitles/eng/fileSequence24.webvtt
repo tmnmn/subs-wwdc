@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.766 --> 00:24:01.796 A:middle
+the group and now let's confirm
+
+00:24:01.796 --> 00:24:03.476 A:middle
+that these two testers are
+
+00:24:03.476 --> 00:24:04.636 A:middle
+indeed inside the group by
+
+00:24:04.736 --> 00:24:07.246 A:middle
+sending GET request to the
+
+00:24:07.246 --> 00:24:09.576 A:middle
+related link between beta Groups
+
+00:24:09.636 --> 00:24:10.546 A:middle
+and beta testers.
+
+00:24:11.856 --> 00:24:14.536 A:middle
+So this link, /the id of the
+
+00:24:14.536 --> 00:24:17.966 A:middle
+group/betaTesters, this will
+
+00:24:18.006 --> 00:24:19.916 A:middle
+return all the beta Tester that
+
+00:24:19.916 --> 00:24:21.206 A:middle
+are assigned to the beta Groups
+
+00:24:21.336 --> 00:24:23.516 A:middle
+with the specified id.
+
+00:24:24.576 --> 00:24:26.166 A:middle
+And as you can see, we have John
+
+00:24:26.166 --> 00:24:28.076 A:middle
+Appleseed that's added earlier.
+
+00:24:29.256 --> 00:24:30.756 A:middle
+And this response we have a lot
+
+00:24:30.756 --> 00:24:32.926 A:middle
+of information including list of
+
+00:24:32.926 --> 00:24:33.886 A:middle
+attribute as well as
+
+00:24:33.886 --> 00:24:34.756 A:middle
+relationship.
+
+00:24:34.886 --> 00:24:36.556 A:middle
+But what if you only care about
+
+00:24:36.556 --> 00:24:37.856 A:middle
+maybe the email of the tester?
+
+00:24:38.896 --> 00:24:40.446 A:middle
+We can trim down the response by
+
+00:24:40.446 --> 00:24:41.786 A:middle
+applying the special parameter
+
+00:24:41.786 --> 00:24:43.516 A:middle
+called fields and this will
+
+00:24:43.516 --> 00:24:45.046 A:middle
+allow us to trim down the body
+
+00:24:45.186 --> 00:24:46.796 A:middle
+and only look at what we would
+
+00:24:46.796 --> 00:24:48.316 A:middle
+like to see.
+
+00:24:48.416 --> 00:24:51.046 A:middle
+If you do fields of beta testers
+
+00:24:52.316 --> 00:24:56.196 A:middle
+equals email, as you can see now
+
+00:24:56.196 --> 00:24:57.606 A:middle
+the response only contains the
+
+00:24:57.606 --> 00:24:59.086 A:middle
+email of the user and nothing
+
+00:24:59.086 --> 00:24:59.326 A:middle
+else.
+

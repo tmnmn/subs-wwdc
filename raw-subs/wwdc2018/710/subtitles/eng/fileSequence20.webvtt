@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.676 --> 00:20:01.126 A:middle
+which would in turn dismiss the
+
+00:20:01.126 --> 00:20:02.086 A:middle
+content extension view.
+
+00:20:02.736 --> 00:20:04.056 A:middle
+Which you can set up, as we saw
+
+00:20:04.056 --> 00:20:05.706 A:middle
+before, by passing dismiss to
+
+00:20:05.706 --> 00:20:06.456 A:middle
+the completion block.
+
+00:20:08.456 --> 00:20:10.476 A:middle
+But again, what if we want to
+
+00:20:10.476 --> 00:20:12.326 A:middle
+dismiss the view through our own
+
+00:20:12.326 --> 00:20:14.006 A:middle
+custom buttons, and we want to
+
+00:20:14.006 --> 00:20:15.006 A:middle
+do this programmatically?
+
+00:20:15.436 --> 00:20:16.986 A:middle
+Say that when the user taps the
+
+00:20:16.986 --> 00:20:18.146 A:middle
+Like button, then the view
+
+00:20:18.146 --> 00:20:19.646 A:middle
+dismisses because we feel the
+
+00:20:19.646 --> 00:20:21.276 A:middle
+user's done interacting with the
+
+00:20:21.276 --> 00:20:22.046 A:middle
+content extension.
+
+00:20:23.436 --> 00:20:25.266 A:middle
+To enable this as well, there's
+
+00:20:25.266 --> 00:20:26.616 A:middle
+a new API called
+
+00:20:26.616 --> 00:20:27.826 A:middle
+dismissNotificationContent
+
+00:20:27.826 --> 00:20:29.306 A:middle
+Extension that's on the
+
+00:20:29.306 --> 00:20:30.446 A:middle
+NSExtensionContext.
+
+00:20:32.896 --> 00:20:35.046 A:middle
+We go back to how we set up our
+
+00:20:35.046 --> 00:20:36.556 A:middle
+Like button, and now this time,
+
+00:20:36.986 --> 00:20:39.836 A:middle
+we also call the new function
+
+00:20:39.966 --> 00:20:41.376 A:middle
+that we added for dismissing the
+
+00:20:41.376 --> 00:20:42.866 A:middle
+content extension view.
+
+00:20:44.676 --> 00:20:46.816 A:middle
+And once we set this up, now
+
+00:20:46.816 --> 00:20:47.816 A:middle
+when the user takes the like
+
+00:20:47.816 --> 00:20:49.526 A:middle
+action, the view of the content
+
+00:20:49.526 --> 00:20:52.776 A:middle
+extension gets dismissed.
+
+00:20:52.826 --> 00:20:53.986 A:middle
+Now one thing to note here.
+
+00:20:53.986 --> 00:20:56.156 A:middle
+That calling this method does
+
+00:20:56.156 --> 00:20:57.746 A:middle
+not withdraw the notification
+
+00:20:57.876 --> 00:20:59.146 A:middle
+that was posted to the user.
+
+00:20:59.836 --> 00:21:01.816 A:middle
+If you want to do that then use
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.686 --> 00:25:01.226 A:middle
+And it compiles in a quick,
+
+00:25:01.296 --> 00:25:02.596 A:middle
+reasonable amount of time.
+
+00:25:03.106 --> 00:25:06.336 A:middle
+Now, the last example I'm going
+
+00:25:06.336 --> 00:25:07.856 A:middle
+to show in this section is
+
+00:25:07.856 --> 00:25:09.236 A:middle
+something that won't apply quite
+
+00:25:09.236 --> 00:25:10.786 A:middle
+as broadly as the previous two.
+
+00:25:11.396 --> 00:25:13.256 A:middle
+It's about this type Any Object.
+
+00:25:14.766 --> 00:25:17.516 A:middle
+Now, Any Object is a convenient
+
+00:25:17.516 --> 00:25:20.026 A:middle
+type that describes any class
+
+00:25:20.026 --> 00:25:20.646 A:middle
+instance.
+
+00:25:20.736 --> 00:25:22.226 A:middle
+So not a struct or an enum.
+
+00:25:22.326 --> 00:25:23.416 A:middle
+Definitely a class.
+
+00:25:23.526 --> 00:25:24.666 A:middle
+But we don't know which one.
+
+00:25:25.726 --> 00:25:27.076 A:middle
+But it also has an additional
+
+00:25:27.076 --> 00:25:28.736 A:middle
+feature carried over from
+
+00:25:28.736 --> 00:25:30.376 A:middle
+Objective-C's ID type.
+
+00:25:31.206 --> 00:25:33.146 A:middle
+And that's this method call
+
+00:25:33.146 --> 00:25:33.886 A:middle
+syntax.
+
+00:25:34.106 --> 00:25:36.066 A:middle
+If you try to call a method or
+
+00:25:36.066 --> 00:25:38.096 A:middle
+access a property on a value of
+
+00:25:38.156 --> 00:25:40.936 A:middle
+type Any Object, Swift will
+
+00:25:40.936 --> 00:25:42.816 A:middle
+allow you to do so, as long as
+
+00:25:42.816 --> 00:25:45.146 A:middle
+that method is visible somewhere
+
+00:25:45.146 --> 00:25:47.106 A:middle
+in your project and exposed to
+
+00:25:47.106 --> 00:25:48.416 A:middle
+the Objective-C runtime.
+
+00:25:49.416 --> 00:25:50.956 A:middle
+However, this does come at a
+
+00:25:50.956 --> 00:25:51.576 A:middle
+cost.
+
+00:25:52.346 --> 00:25:53.976 A:middle
+Because the compiler doesn't
+
+00:25:53.976 --> 00:25:55.306 A:middle
+know which method you're going
+
+00:25:55.306 --> 00:25:57.616 A:middle
+to call, it has to go search out
+
+00:25:57.616 --> 00:25:59.516 A:middle
+any possible implementations
+
+00:25:59.756 --> 00:26:00.986 A:middle
+throughout your project and the
+

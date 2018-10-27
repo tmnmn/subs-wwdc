@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.346 --> 00:19:00.406 A:middle
+keep the Credential Identity
+
+00:19:00.406 --> 00:19:02.226 A:middle
+Store up to date, and in sync
+
+00:19:02.226 --> 00:19:03.156 A:middle
+with the credentials your app
+
+00:19:03.156 --> 00:19:03.756 A:middle
+knows about.
+
+00:19:04.856 --> 00:19:06.276 A:middle
+If the store becomes out of sync
+
+00:19:06.276 --> 00:19:07.996 A:middle
+with your app's data, the user
+
+00:19:07.996 --> 00:19:09.166 A:middle
+might not see newly added
+
+00:19:09.166 --> 00:19:10.156 A:middle
+credentials on the QuickType
+
+00:19:10.156 --> 00:19:12.166 A:middle
+bar, or may continue to see
+
+00:19:12.166 --> 00:19:13.436 A:middle
+credentials on the QuickType bar
+
+00:19:13.606 --> 00:19:14.816 A:middle
+even after they've been deleted
+
+00:19:14.816 --> 00:19:15.286 A:middle
+from your app.
+
+00:19:16.686 --> 00:19:18.046 A:middle
+You should take advantage of AS
+
+00:19:18.046 --> 00:19:19.416 A:middle
+Credential Identity Store's
+
+00:19:19.616 --> 00:19:21.186 A:middle
+incremental update APIs.
+
+00:19:21.906 --> 00:19:23.346 A:middle
+Replacing the entire list of
+
+00:19:23.346 --> 00:19:25.266 A:middle
+credential identities every time
+
+00:19:25.266 --> 00:19:26.986 A:middle
+any credential has changed, may
+
+00:19:26.986 --> 00:19:28.286 A:middle
+become expensive the more
+
+00:19:28.286 --> 00:19:29.466 A:middle
+credential identities you need
+
+00:19:29.466 --> 00:19:29.966 A:middle
+to update.
+
+00:19:31.016 --> 00:19:32.506 A:middle
+It's better for performance to
+
+00:19:32.506 --> 00:19:33.666 A:middle
+incrementally save new
+
+00:19:33.666 --> 00:19:35.396 A:middle
+credential identities or remove
+
+00:19:35.396 --> 00:19:36.986 A:middle
+deleted ones as those changes
+
+00:19:36.986 --> 00:19:39.076 A:middle
+are made, rather than re-writing
+
+00:19:39.076 --> 00:19:39.866 A:middle
+the entire store.
+
+00:19:42.316 --> 00:19:43.916 A:middle
+Keep in mind, when your
+
+00:19:43.916 --> 00:19:45.266 A:middle
+extension is being called, the
+
+00:19:45.336 --> 00:19:46.496 A:middle
+user is in the middle of using
+
+00:19:46.496 --> 00:19:47.106 A:middle
+another app.
+
+00:19:47.816 --> 00:19:49.046 A:middle
+Keep the interactions and your
+
+00:19:49.046 --> 00:19:50.886 A:middle
+UI to a minimum, and only
+
+00:19:50.886 --> 00:19:52.306 A:middle
+include what the user needs in
+
+00:19:52.306 --> 00:19:53.546 A:middle
+order to user their passwords.
+
+00:19:56.496 --> 00:19:57.666 A:middle
+If loading your password
+
+00:19:57.666 --> 00:19:59.086 A:middle
+database involves expensive
+
+00:19:59.086 --> 00:20:01.206 A:middle
+setup, avoid redoing the setup
+

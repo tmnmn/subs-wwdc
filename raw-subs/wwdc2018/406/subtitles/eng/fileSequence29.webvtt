@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:00.486 --> 00:29:01.456 A:middle
+Now, notice that I've written
+
+00:29:01.556 --> 00:29:02.806 A:middle
+two different extensions here.
+
+00:29:03.806 --> 00:29:05.086 A:middle
+Now, it's generally good Swift
+
+00:29:05.086 --> 00:29:05.546 A:middle
+style.
+
+00:29:06.066 --> 00:29:07.026 A:middle
+Write an extension, have it
+
+00:29:07.026 --> 00:29:08.616 A:middle
+conform to one protocol, so you
+
+00:29:08.616 --> 00:29:10.066 A:middle
+know what that extension is for,
+
+00:29:10.066 --> 00:29:10.966 A:middle
+you know its meaning.
+
+00:29:11.466 --> 00:29:13.546 A:middle
+It's particularly important with
+
+00:29:13.796 --> 00:29:15.106 A:middle
+conditional requirements,
+
+00:29:15.456 --> 00:29:17.526 A:middle
+conformances, because you have
+
+00:29:17.586 --> 00:29:19.006 A:middle
+different requirements on these
+
+00:29:19.006 --> 00:29:19.796 A:middle
+extensions.
+
+00:29:20.376 --> 00:29:22.036 A:middle
+And, this allows for
+
+00:29:22.036 --> 00:29:22.836 A:middle
+composability.
+
+00:29:22.896 --> 00:29:24.436 A:middle
+Whatever the underlying base
+
+00:29:24.466 --> 00:29:26.316 A:middle
+collection can do, the slice
+
+00:29:26.316 --> 00:29:27.326 A:middle
+type can also do.
+
+00:29:28.796 --> 00:29:31.346 A:middle
+So let's look at another
+
+00:29:31.346 --> 00:29:32.326 A:middle
+application of conditional
+
+00:29:32.326 --> 00:29:33.556 A:middle
+conformance, also in the
+
+00:29:33.556 --> 00:29:34.866 A:middle
+standard library, and these are
+
+00:29:34.866 --> 00:29:35.366 A:middle
+ranges.
+
+00:29:35.526 --> 00:29:36.646 A:middle
+So, ranges have been around
+
+00:29:36.856 --> 00:29:37.666 A:middle
+forever in Swift.
+
+00:29:37.666 --> 00:29:38.806 A:middle
+And, you can form a range with,
+
+00:29:38.896 --> 00:29:40.156 A:middle
+for example, these dot-dot less
+
+00:29:40.156 --> 00:29:40.936 A:middle
+than operations.
+
+00:29:41.426 --> 00:29:43.106 A:middle
+And so you can form ranges of
+
+00:29:43.106 --> 00:29:44.506 A:middle
+doubles, you can form ranges of
+
+00:29:44.506 --> 00:29:45.346 A:middle
+integers.
+
+00:29:45.946 --> 00:29:47.086 A:middle
+But some ranges are more
+
+00:29:47.086 --> 00:29:48.156 A:middle
+powerful than others.
+
+00:29:48.416 --> 00:29:49.786 A:middle
+So, you can iterate over the
+
+00:29:49.786 --> 00:29:52.316 A:middle
+elements in a range of integers.
+
+00:29:52.926 --> 00:29:53.876 A:middle
+Well, why can you do that?
+
+00:29:53.876 --> 00:29:55.066 A:middle
+It was because an intRange
+
+00:29:55.576 --> 00:29:56.806 A:middle
+conforms to collection.
+
+00:29:58.266 --> 00:29:59.276 A:middle
+Now, if you're actually look at
+
+00:29:59.276 --> 00:30:00.606 A:middle
+the type, it's reduced by that
+

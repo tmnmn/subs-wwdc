@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.166 --> 00:14:01.686 A:middle
+known as NSNotification and
+
+00:14:01.686 --> 00:14:02.366 A:middle
+Objective-C.
+
+00:14:03.386 --> 00:14:04.926 A:middle
+So, sometimes we need to test
+
+00:14:04.926 --> 00:14:06.206 A:middle
+that a subject observes a
+
+00:14:06.206 --> 00:14:08.196 A:middle
+notification, while other times
+
+00:14:08.196 --> 00:14:09.356 A:middle
+we need to test that a subject
+
+00:14:09.406 --> 00:14:10.426 A:middle
+posts a notification.
+
+00:14:11.506 --> 00:14:13.326 A:middle
+Notifications are a one-to-many
+
+00:14:13.326 --> 00:14:14.936 A:middle
+communication mechanism, and
+
+00:14:14.936 --> 00:14:16.176 A:middle
+that means that when a single
+
+00:14:16.176 --> 00:14:18.216 A:middle
+notification is posted, it may
+
+00:14:18.216 --> 00:14:19.786 A:middle
+be sent to multiple recipients
+
+00:14:19.816 --> 00:14:21.516 A:middle
+throughout your app or even in
+
+00:14:21.516 --> 00:14:22.796 A:middle
+the framework code running in
+
+00:14:22.796 --> 00:14:23.766 A:middle
+your app's process.
+
+00:14:24.416 --> 00:14:25.726 A:middle
+So, because of this, it's
+
+00:14:25.726 --> 00:14:27.186 A:middle
+important that we always test
+
+00:14:27.366 --> 00:14:28.936 A:middle
+notifications in an isolated
+
+00:14:28.936 --> 00:14:32.996 A:middle
+fashion to avoid unintended side
+
+00:14:32.996 --> 00:14:34.566 A:middle
+effects, since that can lead to
+
+00:14:35.296 --> 00:14:36.786 A:middle
+flaky, unreliable tests.
+
+00:14:37.416 --> 00:14:38.766 A:middle
+So, let's look at an example of
+
+00:14:38.766 --> 00:14:39.966 A:middle
+some code that has this problem.
+
+00:14:41.356 --> 00:14:42.036 A:middle
+Here, I have the
+
+00:14:42.156 --> 00:14:42.856 A:middle
+PointsOfInterest
+
+00:14:42.856 --> 00:14:44.286 A:middle
+TableViewController from the app
+
+00:14:44.406 --> 00:14:45.286 A:middle
+Brian and I are building.
+
+00:14:46.186 --> 00:14:48.016 A:middle
+It shows a list of nearby places
+
+00:14:48.016 --> 00:14:50.026 A:middle
+of interest in a table view, and
+
+00:14:50.026 --> 00:14:51.246 A:middle
+whenever the app's location
+
+00:14:51.246 --> 00:14:52.986 A:middle
+authorization changes, it may
+
+00:14:52.986 --> 00:14:53.996 A:middle
+need to reload its data.
+
+00:14:54.486 --> 00:14:56.196 A:middle
+So, it observes a notification
+
+00:14:56.196 --> 00:14:57.896 A:middle
+called authChanged from our
+
+00:14:57.896 --> 00:14:59.536 A:middle
+app's CurrentLocationProvider
+
+00:14:59.536 --> 00:14:59.976 A:middle
+class.
+

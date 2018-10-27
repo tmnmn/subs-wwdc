@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:02.156 --> 00:03:03.836 A:middle
+Each level in the Playground
+
+00:03:03.836 --> 00:03:05.466 A:middle
+book hierarchy also contains a
+
+00:03:05.466 --> 00:03:07.376 A:middle
+property list file for metadata
+
+00:03:07.376 --> 00:03:09.496 A:middle
+that Swift Playground uses to
+
+00:03:09.496 --> 00:03:10.536 A:middle
+configure the structure of the
+
+00:03:10.536 --> 00:03:12.196 A:middle
+book and to construct the table
+
+00:03:12.196 --> 00:03:12.946 A:middle
+of contents.
+
+00:03:13.536 --> 00:03:16.286 A:middle
+And finally, in addition to the
+
+00:03:16.286 --> 00:03:17.676 A:middle
+content that is shown to your
+
+00:03:17.676 --> 00:03:19.636 A:middle
+learner in a page, Playground
+
+00:03:19.636 --> 00:03:21.076 A:middle
+books may contain additional
+
+00:03:21.076 --> 00:03:22.816 A:middle
+Swift files called auxiliary
+
+00:03:22.816 --> 00:03:23.356 A:middle
+sources.
+
+00:03:24.526 --> 00:03:26.416 A:middle
+And these are stored in folders
+
+00:03:26.416 --> 00:03:27.446 A:middle
+names Sources.
+
+00:03:28.276 --> 00:03:29.856 A:middle
+Auxiliary sources allow you to
+
+00:03:29.856 --> 00:03:31.566 A:middle
+provide additional Swift code
+
+00:03:31.826 --> 00:03:33.646 A:middle
+like classes or helper functions
+
+00:03:33.826 --> 00:03:34.866 A:middle
+that can be used throughout the
+
+00:03:34.866 --> 00:03:36.906 A:middle
+pages in your Playground book.
+
+00:03:37.776 --> 00:03:39.706 A:middle
+You can use auxiliary source
+
+00:03:39.706 --> 00:03:41.406 A:middle
+files to achieve many different
+
+00:03:41.406 --> 00:03:41.916 A:middle
+tasks.
+
+00:03:42.186 --> 00:03:43.916 A:middle
+And by utilizing these sources,
+
+00:03:44.186 --> 00:03:45.476 A:middle
+you can greatly simplify the
+
+00:03:45.476 --> 00:03:46.746 A:middle
+code that you need to write in
+
+00:03:47.046 --> 00:03:49.906 A:middle
+each page in your book.
+
+00:03:50.396 --> 00:03:51.616 A:middle
+Let's look at an example of
+
+00:03:51.616 --> 00:03:53.016 A:middle
+using auxiliary sources to
+
+00:03:53.016 --> 00:03:54.556 A:middle
+simplify communicating with the
+
+00:03:54.556 --> 00:03:55.186 A:middle
+live view.
+
+00:03:55.746 --> 00:03:59.766 A:middle
+You can send values to the live
+
+00:03:59.766 --> 00:04:01.736 A:middle
+view by calling the send method
+

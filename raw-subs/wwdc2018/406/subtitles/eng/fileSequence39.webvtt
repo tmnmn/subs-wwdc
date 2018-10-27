@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.806 --> 00:39:00.736 A:middle
+any conforming type that doesn't
+
+00:39:00.736 --> 00:39:02.626 A:middle
+provide its own subsequence
+
+00:39:02.626 --> 00:39:02.946 A:middle
+type.
+
+00:39:04.106 --> 00:39:05.576 A:middle
+This pairs well with the
+
+00:39:05.576 --> 00:39:06.896 A:middle
+implementation of the slicing
+
+00:39:06.896 --> 00:39:08.446 A:middle
+subscript we started with
+
+00:39:08.446 --> 00:39:09.066 A:middle
+earlier.
+
+00:39:09.566 --> 00:39:11.246 A:middle
+Written in extension on the
+
+00:39:11.246 --> 00:39:12.326 A:middle
+collection protocol.
+
+00:39:12.756 --> 00:39:14.476 A:middle
+And it can act as a default
+
+00:39:14.476 --> 00:39:16.336 A:middle
+implementation, providing the
+
+00:39:16.336 --> 00:39:17.896 A:middle
+slicing subscript operation that
+
+00:39:17.896 --> 00:39:18.946 A:middle
+returns a slice.
+
+00:39:19.886 --> 00:39:21.736 A:middle
+We can even go one step further
+
+00:39:21.946 --> 00:39:23.986 A:middle
+and limit the applicability of
+
+00:39:23.986 --> 00:39:25.426 A:middle
+our default slicing subscript
+
+00:39:25.426 --> 00:39:27.506 A:middle
+implementation to those cases
+
+00:39:27.606 --> 00:39:29.046 A:middle
+where we picked the default
+
+00:39:29.046 --> 00:39:30.306 A:middle
+subsequence type.
+
+00:39:30.996 --> 00:39:32.706 A:middle
+So this pattern prevents the
+
+00:39:32.706 --> 00:39:34.546 A:middle
+default implementation from
+
+00:39:34.546 --> 00:39:36.706 A:middle
+showing up as an overload on
+
+00:39:36.706 --> 00:39:38.016 A:middle
+collection types that have
+
+00:39:38.016 --> 00:39:39.486 A:middle
+customized their subsequence.
+
+00:39:39.486 --> 00:39:41.256 A:middle
+Like string and range.
+
+00:39:41.806 --> 00:39:42.776 A:middle
+So this is all great for
+
+00:39:42.776 --> 00:39:43.666 A:middle
+conforming types.
+
+00:39:43.916 --> 00:39:45.766 A:middle
+They get slicing for free, or
+
+00:39:45.766 --> 00:39:46.946 A:middle
+they can customize it if they
+
+00:39:46.946 --> 00:39:47.446 A:middle
+want to.
+
+00:39:48.606 --> 00:39:49.896 A:middle
+But remember our goal here.
+
+00:39:50.256 --> 00:39:51.526 A:middle
+We're trying to write our
+
+00:39:51.526 --> 00:39:52.926 A:middle
+divide-and-conquer algorithms
+
+00:39:52.926 --> 00:39:54.416 A:middle
+against the collection protocol.
+
+00:39:55.016 --> 00:39:57.146 A:middle
+So we have to answer one really
+
+00:39:57.146 --> 00:39:58.116 A:middle
+important question.
+
+00:39:58.706 --> 00:40:00.596 A:middle
+What does subsequence do?
+

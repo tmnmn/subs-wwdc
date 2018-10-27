@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.952 --> 00:22:03.156 align:start position:29% line:-2
+次はフレームワークの
+ディレクトリで検索します
+
+00:22:03.423 --> 00:22:05.792 align:start position:29% line:-2
+それでも見つからなければ
+検索終了です
+
+00:22:07.928 --> 00:22:11.331 align:start position:25% line:-2
+ヘッダのインポートと
+プリプロセスが終わってから―
+
+00:22:11.632 --> 00:22:14.935 align:start position:29% line:-2
+実装ファイルを見る方法を
+紹介します
+
+00:22:15.135 --> 00:22:17.070 align:start position:30% line:-1
+Xcodeで確認します
+
+00:22:17.204 --> 00:22:22.443 align:start position:25% line:-2
+プリプロセス済みの
+実装ファイルを出力しましょう
+
+00:22:24.878 --> 00:22:27.347 align:start position:30% line:-1
+たくさん表示されました
+
+00:22:28.549 --> 00:22:30.851 align:start position:30% line:-1
+どのくらい あるのか？
+
+00:22:32.819 --> 00:22:35.055 align:start position:34% line:-1
+分かりやすい例です
+
+00:22:35.889 --> 00:22:38.425 align:start position:25% line:-1
+Foundation.hは―
+
+00:22:38.759 --> 00:22:42.396 align:start position:34% line:-2
+このシステムの
+基本的なヘッダです
+
+00:22:42.629 --> 00:22:45.732 align:start position:30% line:-2
+そのため
+直接あるいは間接的に―
+
+00:22:45.833 --> 00:22:49.169 align:start position:27% line:-2
+他のヘッダに
+インポートされやすいのです
+
+00:22:49.436 --> 00:22:54.675 align:start position:27% line:-2
+コンパイラの呼び出しごとに
+かなりの確率で参照されます
+
+00:22:55.709 --> 00:22:57.177 align:start position:32% line:-1
+すると どうなるか？
+
+00:22:57.778 --> 00:23:02.149 align:start position:21% line:-2
+一度のインクルードで
+約800個ものヘッダファイルを―
+

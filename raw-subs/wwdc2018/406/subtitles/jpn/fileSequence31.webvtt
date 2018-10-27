@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:56.823 --> 00:31:01.195 align:start position:18% line:-2
+バウンド型には
+Strideableの要件があります
+
+00:31:01.662 --> 00:31:03.964 align:start position:27% line:-1
+シンプルな準拠の適用ですが
+
+00:31:04.064 --> 00:31:09.603 align:start position:25% line:-2
+良い型パラメータと合わせると
+パワフルになります
+
+00:31:10.737 --> 00:31:15.209 align:start position:5% line:-2
+今 RandomAccessCollectionに
+準拠しようとしていますが
+
+00:31:15.375 --> 00:31:19.646 align:start position:5% line:-2
+BidirectionalCollectionにも
+コレクションにも触れていません
+
+00:31:20.247 --> 00:31:22.616 align:start position:25% line:-1
+無条件準拠ならこれでOKです
+
+00:31:22.950 --> 00:31:25.619 align:start position:7% line:-2
+RandomAccessCollectionへの
+準拠の宣言は―
+
+00:31:25.719 --> 00:31:29.423 align:start position:21% line:-2
+それが継承する
+全プロトコルへの準拠を暗示します
+
+00:31:29.523 --> 00:31:32.292 align:start position:5% line:-2
+この場合 コレクションと
+BidirectionalCollectionです
+
+00:31:32.659 --> 00:31:35.929 align:start position:23% line:-1
+でも条件付き準拠ならエラーです
+
+00:31:36.530 --> 00:31:38.499 align:start position:27% line:-1
+Sliceの例を思い出せば
+
+00:31:38.599 --> 00:31:44.605 align:start position:30% line:-2
+様々な階層に対して
+異なる制約が必要でした
+
+00:31:44.705 --> 00:31:47.508 align:start position:27% line:-1
+各コレクションに対してです
+
+00:31:47.674 --> 00:31:49.643 align:start position:32% line:-1
+それでコンパイラは―
+
+00:31:49.743 --> 00:31:55.115 align:start position:29% line:-2
+条件付き準拠に合う制約を
+強制しているのです
+
+00:31:55.816 --> 00:31:59.453 align:start position:30% line:-2
+今回は 全階層にわたり
+同じ制約です
+
+00:31:59.553 --> 00:32:03.090 align:start position:4% line:-2
+明示的に コレクションと
+BidirectionalCollectionと書け
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.346 --> 00:17:00.756 A:middle
+unsubscribed involuntarily?
+
+00:17:01.516 --> 00:17:01.936 A:middle
+Not at all.
+
+00:17:03.226 --> 00:17:04.445 A:middle
+When reacting to billing issues
+
+00:17:04.445 --> 00:17:05.606 A:middle
+like this you can do three
+
+00:17:05.685 --> 00:17:06.476 A:middle
+simple steps.
+
+00:17:06.476 --> 00:17:08.136 A:middle
+Firstly, you can observe that
+
+00:17:08.136 --> 00:17:09.296 A:middle
+there's been no renewal
+
+00:17:09.296 --> 00:17:10.796 A:middle
+transaction for this particular
+
+00:17:10.796 --> 00:17:12.455 A:middle
+user, their subscription has now
+
+00:17:12.455 --> 00:17:12.796 A:middle
+lapsed.
+
+00:17:13.816 --> 00:17:15.766 A:middle
+Secondly, you can direct that
+
+00:17:15.766 --> 00:17:17.256 A:middle
+particular user to go and update
+
+00:17:17.256 --> 00:17:18.546 A:middle
+their billing info.
+
+00:17:19.925 --> 00:17:21.955 A:middle
+And then the third step, when a
+
+00:17:21.955 --> 00:17:23.546 A:middle
+renewal transaction occurs
+
+00:17:23.876 --> 00:17:25.526 A:middle
+unblock that user immediately
+
+00:17:25.756 --> 00:17:26.516 A:middle
+after it happens.
+
+00:17:27.286 --> 00:17:28.376 A:middle
+Now, steps one and two are
+
+00:17:28.826 --> 00:17:29.826 A:middle
+pretty straightforward using the
+
+00:17:29.826 --> 00:17:30.996 A:middle
+status polling techniques that
+
+00:17:30.996 --> 00:17:32.286 A:middle
+we just went through, but step
+
+00:17:32.286 --> 00:17:34.006 A:middle
+number three here uses a feature
+
+00:17:34.006 --> 00:17:35.086 A:middle
+that we actually launched last
+
+00:17:35.086 --> 00:17:36.566 A:middle
+year server-to-server
+
+00:17:36.566 --> 00:17:37.406 A:middle
+notifications.
+
+00:17:38.426 --> 00:17:39.526 A:middle
+Let's walk through this example,
+
+00:17:39.526 --> 00:17:40.976 A:middle
+let's say that one subscription
+
+00:17:40.976 --> 00:17:42.496 A:middle
+period the App Store has an
+
+00:17:42.496 --> 00:17:43.966 A:middle
+error when trying to charge this
+
+00:17:43.966 --> 00:17:44.696 A:middle
+user's credit card.
+
+00:17:45.356 --> 00:17:47.696 A:middle
+And then you find out about the
+
+00:17:47.696 --> 00:17:48.706 A:middle
+fact that there is no new
+
+00:17:48.806 --> 00:17:49.886 A:middle
+renewal transaction for this
+
+00:17:49.886 --> 00:17:50.936 A:middle
+user through a status poll.
+
+00:17:52.136 --> 00:17:53.786 A:middle
+Your server correctly makes the
+
+00:17:54.326 --> 00:17:55.416 A:middle
+calculation that this user is
+
+00:17:55.416 --> 00:17:56.866 A:middle
+not a subscriber anymore and so
+
+00:17:56.866 --> 00:17:57.916 A:middle
+when the user comes along to
+
+00:17:57.916 --> 00:17:59.046 A:middle
+access your service through the
+
+00:17:59.046 --> 00:18:00.396 A:middle
+website you give them some
+

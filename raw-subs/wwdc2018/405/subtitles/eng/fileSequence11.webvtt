@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.526 --> 00:11:00.576 A:middle
+That means your begin and end
+
+00:11:00.576 --> 00:11:01.586 A:middle
+sites can be in separate
+
+00:11:01.586 --> 00:11:02.096 A:middle
+functions.
+
+00:11:02.736 --> 00:11:03.816 A:middle
+They can be associated with
+
+00:11:03.816 --> 00:11:04.776 A:middle
+separate objects.
+
+00:11:04.816 --> 00:11:05.946 A:middle
+They may even live in separate
+
+00:11:05.946 --> 00:11:06.646 A:middle
+source files.
+
+00:11:07.356 --> 00:11:08.746 A:middle
+We've done this because we want
+
+00:11:08.746 --> 00:11:09.986 A:middle
+you to be able to adopt it into
+
+00:11:09.986 --> 00:11:10.556 A:middle
+your code base.
+
+00:11:10.856 --> 00:11:12.366 A:middle
+And so whatever entry and exit
+
+00:11:12.366 --> 00:11:14.576 A:middle
+conventions you have, you can
+
+00:11:14.626 --> 00:11:17.726 A:middle
+use these calls.
+
+00:11:17.876 --> 00:11:20.886 A:middle
+So that's how to measure
+
+00:11:20.886 --> 00:11:22.366 A:middle
+intervals with signposts.
+
+00:11:22.906 --> 00:11:24.516 A:middle
+You may want to convey some
+
+00:11:24.516 --> 00:11:25.716 A:middle
+additional information, some
+
+00:11:25.716 --> 00:11:26.916 A:middle
+additional performance relevant
+
+00:11:26.916 --> 00:11:27.926 A:middle
+information along with your
+
+00:11:27.926 --> 00:11:28.496 A:middle
+signposts.
+
+00:11:28.496 --> 00:11:30.396 A:middle
+And for that, we have a way to
+
+00:11:30.396 --> 00:11:32.306 A:middle
+add metadata to signpost calls.
+
+00:11:33.526 --> 00:11:35.486 A:middle
+So here's your basic signpost
+
+00:11:35.516 --> 00:11:35.796 A:middle
+call.
+
+00:11:36.106 --> 00:11:37.256 A:middle
+To that, we can add an
+
+00:11:37.256 --> 00:11:38.576 A:middle
+additional string literal
+
+00:11:38.576 --> 00:11:39.056 A:middle
+parameter.
+
+00:11:39.796 --> 00:11:40.846 A:middle
+This allows you to add some
+
+00:11:40.846 --> 00:11:42.626 A:middle
+context to your begin and end
+
+00:11:42.626 --> 00:11:43.316 A:middle
+call sites.
+
+00:11:44.366 --> 00:11:46.016 A:middle
+Perhaps you have multiple begin
+
+00:11:46.206 --> 00:11:47.896 A:middle
+and exit points for a particular
+
+00:11:47.896 --> 00:11:50.416 A:middle
+operation, but the string
+
+00:11:50.416 --> 00:11:52.476 A:middle
+literal is also an OSLog format
+
+00:11:52.476 --> 00:11:52.756 A:middle
+string.
+
+00:11:53.226 --> 00:11:54.756 A:middle
+And that means I can use it to
+
+00:11:54.756 --> 00:11:56.746 A:middle
+pass additional data into the
+
+00:11:56.746 --> 00:11:57.406 A:middle
+signpost.
+
+00:11:57.686 --> 00:11:59.226 A:middle
+So here, for example, I've used
+
+00:11:59.226 --> 00:12:01.096 A:middle
+that %d to pass in four
+

@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.666 --> 00:16:00.576 A:middle
+diagnostics tab.
+
+00:16:01.426 --> 00:16:02.576 A:middle
+I'd recommend using the live
+
+00:16:02.576 --> 00:16:03.696 A:middle
+allocations option if you're
+
+00:16:03.696 --> 00:16:06.726 A:middle
+going to use it with a Memgraph.
+
+00:16:06.726 --> 00:16:08.986 A:middle
+So my malloc's, my Memgraph was
+
+00:16:08.986 --> 00:16:09.846 A:middle
+captured in malloc stack
+
+00:16:09.846 --> 00:16:10.196 A:middle
+logging.
+
+00:16:10.866 --> 00:16:12.296 A:middle
+Now, to find the backtrace for
+
+00:16:12.296 --> 00:16:12.926 A:middle
+the allocation.
+
+00:16:13.226 --> 00:16:14.116 A:middle
+This is where malloc history
+
+00:16:14.116 --> 00:16:14.776 A:middle
+comes in helpful.
+
+00:16:15.566 --> 00:16:16.946 A:middle
+You just pass malloc history,
+
+00:16:17.136 --> 00:16:18.576 A:middle
+the Memgraph, and an address for
+
+00:16:18.576 --> 00:16:19.886 A:middle
+an instance in memory, and, if
+
+00:16:19.886 --> 00:16:20.876 A:middle
+there was a backtrace captured
+
+00:16:20.876 --> 00:16:24.016 A:middle
+for it, it'll give it to you.
+
+00:16:24.136 --> 00:16:25.276 A:middle
+So here I've taken the address
+
+00:16:25.276 --> 00:16:26.296 A:middle
+for one of those really big
+
+00:16:26.296 --> 00:16:27.276 A:middle
+NSConcreteDatas.
+
+00:16:27.496 --> 00:16:28.376 A:middle
+I've passed it to malloc
+
+00:16:28.376 --> 00:16:30.456 A:middle
+history, and I've got a
+
+00:16:30.456 --> 00:16:31.026 A:middle
+backtrace.
+
+00:16:31.486 --> 00:16:32.646 A:middle
+And, interestingly, it looks
+
+00:16:32.646 --> 00:16:34.166 A:middle
+like my NoirFilter's apply
+
+00:16:34.166 --> 00:16:35.256 A:middle
+method here is creating that
+
+00:16:35.356 --> 00:16:36.376 A:middle
+huge NS data.
+
+00:16:37.126 --> 00:16:38.526 A:middle
+I should probably attach this
+
+00:16:38.526 --> 00:16:40.186 A:middle
+and the Memgraph to a bug report
+
+00:16:40.186 --> 00:16:42.466 A:middle
+and get someone else to look at
+
+00:16:43.126 --> 00:16:43.206 A:middle
+it.
+
+00:16:43.476 --> 00:16:44.696 A:middle
+These are just a few of the ways
+
+00:16:44.696 --> 00:16:46.756 A:middle
+you can deeply investigate the
+
+00:16:46.756 --> 00:16:48.216 A:middle
+behavior of your app.
+
+00:16:48.626 --> 00:16:49.526 A:middle
+So when faced with a memory
+
+00:16:49.526 --> 00:16:51.086 A:middle
+problem, which tool do you pick?
+
+00:16:52.096 --> 00:16:53.176 A:middle
+Well, there are 3 ways to think
+
+00:16:53.176 --> 00:16:53.676 A:middle
+about this.
+
+00:16:53.956 --> 00:16:55.196 A:middle
+Do you want to see object
+
+00:16:55.196 --> 00:16:55.656 A:middle
+creation?
+
+00:16:55.656 --> 00:16:56.956 A:middle
+Do you want to see what
+
+00:16:56.956 --> 00:16:58.296 A:middle
+references an object or address
+
+00:16:58.296 --> 00:16:58.696 A:middle
+in memory?
+
+00:16:59.056 --> 00:16:59.916 A:middle
+Or do you just want to see how
+
+00:16:59.916 --> 00:17:00.926 A:middle
+large an instance is?
+

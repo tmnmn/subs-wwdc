@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.416 --> 00:19:01.156 A:middle
+results.
+
+00:19:01.246 --> 00:19:02.956 A:middle
+Another way to quickly set a
+
+00:19:02.956 --> 00:19:04.566 A:middle
+region on your map that is very
+
+00:19:04.566 --> 00:19:05.976 A:middle
+convenient, is a method called
+
+00:19:05.976 --> 00:19:06.736 A:middle
+Show Items.
+
+00:19:07.106 --> 00:19:08.836 A:middle
+We will see now how to add
+
+00:19:08.836 --> 00:19:10.266 A:middle
+annotations and overlays on your
+
+00:19:10.266 --> 00:19:11.916 A:middle
+map, and by calling Show Items,
+
+00:19:11.916 --> 00:19:13.706 A:middle
+we will make sure that we have a
+
+00:19:13.706 --> 00:19:15.646 A:middle
+region that encloses these items
+
+00:19:15.646 --> 00:19:17.076 A:middle
+so that they are all visible to
+
+00:19:17.076 --> 00:19:17.536 A:middle
+your user.
+
+00:19:18.796 --> 00:19:21.066 A:middle
+I will note that region changes
+
+00:19:21.066 --> 00:19:23.226 A:middle
+may be animated, so that you can
+
+00:19:23.336 --> 00:19:24.646 A:middle
+provide a nice animation.
+
+00:19:24.896 --> 00:19:26.236 A:middle
+Or you can set the region
+
+00:19:26.236 --> 00:19:26.776 A:middle
+instantly.
+
+00:19:28.256 --> 00:19:31.666 A:middle
+Because these things, changing
+
+00:19:31.666 --> 00:19:33.676 A:middle
+the regions, changing the
+
+00:19:33.676 --> 00:19:35.296 A:middle
+center, etcetera, can be done
+
+00:19:35.296 --> 00:19:37.206 A:middle
+from your code but can also be
+
+00:19:37.206 --> 00:19:38.776 A:middle
+done by the user as a result of
+
+00:19:38.776 --> 00:19:40.686 A:middle
+interactions you want to be able
+
+00:19:40.686 --> 00:19:42.636 A:middle
+to react to these interactions.
+
+00:19:43.086 --> 00:19:44.586 A:middle
+And we -- and the Map Object
+
+00:19:45.706 --> 00:19:48.496 A:middle
+allows you to listen to user
+
+00:19:48.496 --> 00:19:50.616 A:middle
+events such as region changes,
+
+00:19:50.616 --> 00:19:51.856 A:middle
+when they begin, when they end,
+
+00:19:52.326 --> 00:19:53.886 A:middle
+since they can be animated.
+
+00:19:54.186 --> 00:19:55.926 A:middle
+And also, when gestures such as
+
+00:19:55.926 --> 00:19:57.676 A:middle
+coding, zooming, rotations begin
+
+00:19:57.676 --> 00:19:58.116 A:middle
+and end.
+
+00:19:58.526 --> 00:20:00.986 A:middle
+We follow the model of DOM Event
+

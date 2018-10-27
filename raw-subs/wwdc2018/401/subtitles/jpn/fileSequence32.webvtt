@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:57.918 --> 00:32:00.320 align:start position:30% line:-1
+２つ目の例を見ましょう
+
+00:32:00.921 --> 00:32:04.858 align:start position:30% line:-2
+ここで１つ目の関数は…
+間違えました
+
+00:32:04.958 --> 00:32:07.294 align:start position:30% line:-1
+２つ目の関数は整数です
+
+00:32:07.394 --> 00:32:11.865 align:start position:30% line:-2
+従って １つ目の結果で
+２つ目を呼び出しても
+
+00:32:12.132 --> 00:32:16.403 align:start position:20% line:-2
+整数のあるべき所に
+Optional整数値を渡せません
+
+00:32:16.503 --> 00:32:19.439 align:start position:34% line:-2
+コンパイラが
+強制アンラップして
+
+00:32:19.706 --> 00:32:23.744 align:start position:34% line:-2
+整数同士になるので
+問題ありません
+
+00:32:24.845 --> 00:32:29.883 align:start position:5% line:-2
+このメンタルモデルでImplicitly
+Unwrapped Optionalが説明できます
+
+00:32:30.217 --> 00:32:35.989 align:start position:27% line:-2
+しかし最近までモデルが
+機能しない例外もありました
+
+00:32:36.223 --> 00:32:42.029 align:start position:7% line:-2
+別の型のImplicitly Unwrapped
+Optionalは使えないからです
+
+00:32:42.329 --> 00:32:44.631 align:start position:23% line:-1
+Swift 4.2でも同じです
+
+00:32:44.731 --> 00:32:48.635 align:start position:7% line:-2
+Implicitly Unwrapped整数値の
+配列は置けません
+
+00:32:49.236 --> 00:32:53.774 align:start position:29% line:-2
+しかしSwift 4で
+こんなケースがありました
+
+00:32:53.874 --> 00:32:59.213 align:start position:5% line:-2
+Implicitly Unwrapped整数値でも
+型エイリアスを定義でき
+
+00:32:59.313 --> 00:33:02.115 align:start position:27% line:-1
+配列を作ることができました
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.816 --> 00:01:01.186 A:middle
+A few years ago we introduced a
+
+00:01:01.186 --> 00:01:02.616 A:middle
+feature called Systemic Security
+
+00:01:02.616 --> 00:01:04.426 A:middle
+Protection to macOS with the
+
+00:01:04.426 --> 00:01:06.406 A:middle
+goal to increase the protection
+
+00:01:06.706 --> 00:01:08.566 A:middle
+of the operating system by
+
+00:01:08.566 --> 00:01:10.536 A:middle
+making it so that platform
+
+00:01:10.536 --> 00:01:12.366 A:middle
+binaries are protected from
+
+00:01:12.366 --> 00:01:14.806 A:middle
+modification both on disk and at
+
+00:01:15.356 --> 00:01:15.536 A:middle
+runtime.
+
+00:01:16.276 --> 00:01:17.936 A:middle
+This year we are taking it one
+
+00:01:17.936 --> 00:01:20.066 A:middle
+step further by enforcing
+
+00:01:20.066 --> 00:01:21.066 A:middle
+additional code-sending
+
+00:01:21.066 --> 00:01:22.306 A:middle
+requirements on platform
+
+00:01:22.306 --> 00:01:22.726 A:middle
+binaries.
+
+00:01:24.036 --> 00:01:26.866 A:middle
+The system will now enforce the
+
+00:01:27.076 --> 00:01:29.356 A:middle
+validity of code signatures
+
+00:01:29.446 --> 00:01:31.016 A:middle
+throughout the lifetime of
+
+00:01:31.016 --> 00:01:32.766 A:middle
+system processes and will
+
+00:01:32.766 --> 00:01:34.726 A:middle
+automatically abort any process
+
+00:01:35.036 --> 00:01:36.236 A:middle
+that deviates from its code
+
+00:01:36.236 --> 00:01:38.656 A:middle
+signature or that attempts to
+
+00:01:38.656 --> 00:01:40.846 A:middle
+execute any code that is not
+
+00:01:40.846 --> 00:01:41.786 A:middle
+properly signed by Apple.
+
+00:01:42.886 --> 00:01:44.956 A:middle
+In addition to that, the system
+
+00:01:44.956 --> 00:01:47.936 A:middle
+will monitor it - the dynamic
+
+00:01:48.046 --> 00:01:50.136 A:middle
+loading of any libraries,
+
+00:01:50.236 --> 00:01:51.856 A:middle
+frameworks, and plug-ins and
+
+00:01:51.856 --> 00:01:53.566 A:middle
+enforce that - those objects
+
+00:01:53.886 --> 00:01:55.226 A:middle
+also be signed by Apple.
+
+00:01:55.696 --> 00:01:57.826 A:middle
+It's a mechanism that has been
+
+00:01:57.826 --> 00:01:59.246 A:middle
+enforced on iOS for several
+
+00:01:59.246 --> 00:02:00.656 A:middle
+years now, and we are excited to
+

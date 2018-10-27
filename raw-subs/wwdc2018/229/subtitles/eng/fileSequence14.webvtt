@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.096 --> 00:14:00.526 A:middle
+extension, producing the slice,
+
+00:14:00.976 --> 00:14:01.986 A:middle
+and then to try to get rid of
+
+00:14:01.986 --> 00:14:03.326 A:middle
+that original storage of eight
+
+00:14:03.386 --> 00:14:05.006 A:middle
+numbers, I go ahead and assign
+
+00:14:05.006 --> 00:14:06.026 A:middle
+that array to an empty array.
+
+00:14:06.546 --> 00:14:08.786 A:middle
+Our first clue that something
+
+00:14:09.296 --> 00:14:11.096 A:middle
+interesting is happening occurs
+
+00:14:11.096 --> 00:14:12.246 A:middle
+when we ask our slice for its
+
+00:14:12.246 --> 00:14:12.816 A:middle
+first element.
+
+00:14:13.536 --> 00:14:14.636 A:middle
+We're somehow able to return
+
+00:14:14.636 --> 00:14:16.576 A:middle
+one, even though we threw away
+
+00:14:16.576 --> 00:14:18.876 A:middle
+the storage for the original
+
+00:14:18.876 --> 00:14:19.086 A:middle
+array.
+
+00:14:19.596 --> 00:14:20.906 A:middle
+Either there was a copy or
+
+00:14:20.906 --> 00:14:22.336 A:middle
+something magical is going on.
+
+00:14:23.356 --> 00:14:25.946 A:middle
+And so if we wanted to eliminate
+
+00:14:25.946 --> 00:14:27.566 A:middle
+that buffer though, and oh the
+
+00:14:27.566 --> 00:14:28.646 A:middle
+magic that's actually going on
+
+00:14:28.646 --> 00:14:29.466 A:middle
+is that we're holding onto the
+
+00:14:29.466 --> 00:14:29.796 A:middle
+buffer.
+
+00:14:30.166 --> 00:14:31.196 A:middle
+And so if we wanted to eliminate
+
+00:14:31.196 --> 00:14:32.196 A:middle
+that, what we could do is we
+
+00:14:32.196 --> 00:14:34.136 A:middle
+could form an actual copy of the
+
+00:14:34.136 --> 00:14:36.166 A:middle
+array from the slice, and then
+
+00:14:36.166 --> 00:14:37.826 A:middle
+if we set that slice to an empty
+
+00:14:37.826 --> 00:14:39.666 A:middle
+array itself, that copy would
+
+00:14:39.666 --> 00:14:40.306 A:middle
+still be valid.
+
+00:14:41.466 --> 00:14:42.346 A:middle
+Let's visualize what just
+
+00:14:42.346 --> 00:14:42.606 A:middle
+happened.
+
+00:14:43.106 --> 00:14:44.546 A:middle
+We started with an array.
+
+00:14:45.096 --> 00:14:46.346 A:middle
+We then formed a slice on the
+
+00:14:46.346 --> 00:14:47.886 A:middle
+first half of that array.
+
+00:14:49.576 --> 00:14:52.146 A:middle
+We then created a copy of that,
+
+00:14:52.506 --> 00:14:53.586 A:middle
+setting the array to be empty
+
+00:14:53.906 --> 00:14:54.816 A:middle
+and setting that slice to be
+
+00:14:54.816 --> 00:14:55.176 A:middle
+empty.
+
+00:14:55.176 --> 00:14:57.936 A:middle
+And only after we did that did
+
+00:14:57.936 --> 00:14:59.046 A:middle
+the underlying storage go away.
+
+00:14:59.046 --> 00:15:02.716 A:middle
+So in this matter, slices sort
+

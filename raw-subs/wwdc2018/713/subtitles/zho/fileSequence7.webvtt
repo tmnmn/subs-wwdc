@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.751 --> 00:07:00.487 align:middle line:-2
+应该觉得这看起来感觉很熟悉
+但是它更容易
+
+00:07:00.554 --> 00:07:01.788 align:middle line:-1
+记忆和使用
+
+00:07:02.656 --> 00:07:03.957 align:middle line:-2
+你导入
+NaturalLanguage
+
+00:07:04.892 --> 00:07:07.127 align:middle line:-2
+你现在创建一个
+NLTagger的实例
+
+00:07:07.694 --> 00:07:10.030 align:middle line:-2
+并指定scheme类型
+为nameType
+
+00:07:10.898 --> 00:07:12.199 align:middle line:-1
+若你想添加词性标注功能
+
+00:07:12.266 --> 00:07:14.868 align:middle line:-2
+你需要指定该scheme类型
+为lexical类
+
+00:07:16.036 --> 00:07:18.539 align:middle line:-1
+你再次指定要处理的字符串
+
+00:07:19.439 --> 00:07:21.141 align:middle line:-1
+在这个例子中
+
+00:07:21.208 --> 00:07:24.611 align:middle line:-1
+你将语言设置为英语
+
+00:07:25.379 --> 00:07:26.747 align:middle line:-1
+如果你不熟悉
+
+00:07:26.813 --> 00:07:28.982 align:middle line:-1
+或者你不确定语言是什么
+
+00:07:29.149 --> 00:07:32.252 align:middle line:-2
+Natural Language
+会使用语言识别API
+
+00:07:32.319 --> 00:07:34.922 align:middle line:-1
+在底层自动识别该语言种类
+
+00:07:36.190 --> 00:07:40.561 align:middle line:0
+最后 你在刚创建的对象上
+调用tags方法
+
+00:07:40.794 --> 00:07:44.131 align:middle line:0
+将unit参数设为word
+并将scheme参数设为nameType
+
+00:07:44.998 --> 00:07:48.669 align:middle line:0
+你得到的输出是这里的人名
+
+00:07:48.735 --> 00:07:51.538 align:middle line:0
+哈里王子和梅格汉马克尔
+以及地点为温莎
+
+00:07:51.805 --> 00:07:54.241 align:middle line:0
+现在 如果用户返回到搜索栏
+
+00:07:54.741 --> 00:07:57.811 align:middle line:-1
+基于用户浏览的内容信息
+
+00:07:57.878 --> 00:08:00.914 align:middle line:-1
+你可以显著提高app中的搜索体验
+

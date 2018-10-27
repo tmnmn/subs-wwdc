@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.276 --> 00:03:01.086 A:middle
+use the duckOthers option.
+
+00:03:02.506 --> 00:03:04.436 A:middle
+Another note is that the audio
+
+00:03:04.436 --> 00:03:05.706 A:middle
+session will not be set to
+
+00:03:05.706 --> 00:03:07.436 A:middle
+inactive after speech is done.
+
+00:03:07.926 --> 00:03:10.146 A:middle
+That's because it's a shared
+
+00:03:10.146 --> 00:03:12.026 A:middle
+session only so that if there is
+
+00:03:12.026 --> 00:03:13.436 A:middle
+any other audio playing at the
+
+00:03:13.436 --> 00:03:14.756 A:middle
+same time, we would not want to
+
+00:03:14.756 --> 00:03:15.336 A:middle
+stop that.
+
+00:03:15.726 --> 00:03:17.576 A:middle
+So if you want to set the audio
+
+00:03:17.576 --> 00:03:18.826 A:middle
+session to inactive, you would
+
+00:03:18.826 --> 00:03:19.566 A:middle
+do that yourself.
+
+00:03:20.766 --> 00:03:23.386 A:middle
+There are some callback methods
+
+00:03:23.386 --> 00:03:24.736 A:middle
+available in AVSpeechSynthesis
+
+00:03:24.736 --> 00:03:26.386 A:middle
+that will help inform about the
+
+00:03:26.386 --> 00:03:27.716 A:middle
+life cycle of an utterance.
+
+00:03:28.566 --> 00:03:30.036 A:middle
+These are optional methods in
+
+00:03:30.036 --> 00:03:31.016 A:middle
+the synthesizer delegate
+
+00:03:31.016 --> 00:03:31.516 A:middle
+protocol.
+
+00:03:32.116 --> 00:03:33.656 A:middle
+For example, you can know when
+
+00:03:33.656 --> 00:03:36.116 A:middle
+speech starts, speech finishes,
+
+00:03:36.606 --> 00:03:37.946 A:middle
+even the character ranges that
+
+00:03:37.946 --> 00:03:38.746 A:middle
+will be spoken.
+
+00:03:39.406 --> 00:03:40.506 A:middle
+You can also know when speech is
+
+00:03:40.506 --> 00:03:41.676 A:middle
+paused or continued.
+
+00:03:43.146 --> 00:03:45.426 A:middle
+So an example of this in code
+
+00:03:45.426 --> 00:03:47.226 A:middle
+snippet form, you can set your
+
+00:03:47.226 --> 00:03:49.036 A:middle
+synthesizer delegate to an
+
+00:03:49.036 --> 00:03:50.586 A:middle
+object and then implement these
+
+00:03:50.586 --> 00:03:51.926 A:middle
+methods, for example the
+
+00:03:51.926 --> 00:03:53.506 A:middle
+didStart in which case you'll
+
+00:03:53.506 --> 00:03:55.886 A:middle
+get the utterance back, the
+
+00:03:55.886 --> 00:03:58.586 A:middle
+didFinish which will do the
+
+00:03:58.586 --> 00:03:59.976 A:middle
+appropriate thing, and then the
+
+00:03:59.976 --> 00:04:01.736 A:middle
+willSpeakRangeOfSpeechString
+

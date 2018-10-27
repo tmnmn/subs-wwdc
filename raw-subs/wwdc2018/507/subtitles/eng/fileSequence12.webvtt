@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.746 --> 00:12:00.446 A:middle
+your users can get the best
+
+00:12:00.446 --> 00:12:01.696 A:middle
+experience they deserve on our
+
+00:12:01.696 --> 00:12:02.436 A:middle
+platforms.
+
+00:12:04.516 --> 00:12:05.576 A:middle
+If you haven't already, you
+
+00:12:05.576 --> 00:12:07.376 A:middle
+should also check out one of our
+
+00:12:07.376 --> 00:12:08.836 A:middle
+recorded sessions from last year
+
+00:12:08.836 --> 00:12:10.306 A:middle
+to learn more about error
+
+00:12:10.306 --> 00:12:11.356 A:middle
+handling, in general.
+
+00:12:14.876 --> 00:12:16.486 A:middle
+Over the years we've seen
+
+00:12:16.486 --> 00:12:17.746 A:middle
+developers fall into a few
+
+00:12:17.746 --> 00:12:18.906 A:middle
+pitfalls around FairPlay
+
+00:12:18.906 --> 00:12:19.916 A:middle
+Streaming key delivery.
+
+00:12:20.916 --> 00:12:23.126 A:middle
+We have seen apps that hold on
+
+00:12:23.126 --> 00:12:24.706 A:middle
+to key responses for too long.
+
+00:12:24.706 --> 00:12:27.616 A:middle
+When AVFoundation sends you a
+
+00:12:27.616 --> 00:12:29.226 A:middle
+key loading request you should
+
+00:12:29.226 --> 00:12:31.186 A:middle
+provide a response as soon as
+
+00:12:31.186 --> 00:12:31.656 A:middle
+possible.
+
+00:12:32.676 --> 00:12:34.456 A:middle
+Delays in key delivery could
+
+00:12:34.456 --> 00:12:36.486 A:middle
+result in playback timing out.
+
+00:12:37.116 --> 00:12:38.696 A:middle
+By the way, you should be able
+
+00:12:38.696 --> 00:12:40.956 A:middle
+to identify and debug timeouts
+
+00:12:41.246 --> 00:12:43.206 A:middle
+by surveying your playerItems
+
+00:12:43.206 --> 00:12:44.046 A:middle
+accessLogs.
+
+00:12:46.416 --> 00:12:48.506 A:middle
+Another pitfall is around HDCP
+
+00:12:48.506 --> 00:12:49.256 A:middle
+enforcement.
+
+00:12:50.266 --> 00:12:51.876 A:middle
+It is important to keep in mind
+
+00:12:52.076 --> 00:12:54.146 A:middle
+that HDCP requirement for your
+
+00:12:54.206 --> 00:12:56.576 A:middle
+assets is signaled inside
+
+00:12:56.576 --> 00:12:58.756 A:middle
+encrypted key response from your
+
+00:12:58.756 --> 00:12:59.416 A:middle
+key server.
+

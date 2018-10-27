@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.946 --> 00:03:02.576 A:middle
+If your elementary is collapsed,
+
+00:03:03.036 --> 00:03:05.156 A:middle
+Web Inspector will expand it to
+
+00:03:05.156 --> 00:03:06.876 A:middle
+the exact element and highlight
+
+00:03:06.876 --> 00:03:07.016 A:middle
+it.
+
+00:03:09.596 --> 00:03:11.966 A:middle
+To use Web Inspector, either
+
+00:03:11.966 --> 00:03:13.636 A:middle
+download the latest version of
+
+00:03:13.636 --> 00:03:15.616 A:middle
+macOS and install it, or use
+
+00:03:15.616 --> 00:03:16.966 A:middle
+Safari technology preview.
+
+00:03:17.796 --> 00:03:19.176 A:middle
+More information about how to
+
+00:03:19.176 --> 00:03:21.406 A:middle
+use Web Inspector can be seen in
+
+00:03:21.406 --> 00:03:23.296 A:middle
+our talk given last year using
+
+00:03:23.296 --> 00:03:24.876 A:middle
+Web Inspector with tvOS apps.
+
+00:03:28.516 --> 00:03:30.256 A:middle
+With that, let's talk about data
+
+00:03:30.256 --> 00:03:30.636 A:middle
+binding.
+
+00:03:33.696 --> 00:03:35.176 A:middle
+And before we jump into the new
+
+00:03:35.176 --> 00:03:36.646 A:middle
+features of data binding itself,
+
+00:03:36.766 --> 00:03:37.976 A:middle
+let me give you an overview of
+
+00:03:37.976 --> 00:03:38.566 A:middle
+what it is.
+
+00:03:39.236 --> 00:03:40.576 A:middle
+Data binding helps you easily
+
+00:03:40.576 --> 00:03:42.746 A:middle
+transform your data to user
+
+00:03:42.746 --> 00:03:44.346 A:middle
+interface elements through
+
+00:03:44.346 --> 00:03:45.766 A:middle
+expressions in your template
+
+00:03:45.766 --> 00:03:46.166 A:middle
+markup.
+
+00:03:47.356 --> 00:03:48.876 A:middle
+This is really good because it
+
+00:03:48.876 --> 00:03:50.706 A:middle
+allows you to decouple your data
+
+00:03:50.906 --> 00:03:52.066 A:middle
+and your lot -- and your layout
+
+00:03:52.066 --> 00:03:53.796 A:middle
+logic as well as your
+
+00:03:53.796 --> 00:03:55.116 A:middle
+application logic itself.
+
+00:03:57.526 --> 00:03:58.776 A:middle
+Because of this, data bound
+
+00:03:58.776 --> 00:04:00.126 A:middle
+templates can reduce the amount
+

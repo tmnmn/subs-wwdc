@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:01.036 --> 00:06:02.546 A:middle
+Additionally, the most commonly
+
+00:06:02.546 --> 00:06:03.836 A:middle
+used objects like textures,
+
+00:06:03.936 --> 00:06:05.936 A:middle
+buffers and shaders can safely
+
+00:06:05.936 --> 00:06:07.346 A:middle
+and efficiently be used across
+
+00:06:07.406 --> 00:06:07.726 A:middle
+threads.
+
+00:06:08.526 --> 00:06:10.156 A:middle
+Metal does not need to perform
+
+00:06:10.326 --> 00:06:11.776 A:middle
+any expensive internal logging
+
+00:06:11.776 --> 00:06:13.306 A:middle
+operations to prevent these
+
+00:06:13.306 --> 00:06:14.546 A:middle
+objects from getting into some
+
+00:06:14.546 --> 00:06:15.456 A:middle
+invalid state.
+
+00:06:17.516 --> 00:06:19.616 A:middle
+Finally, the execution model
+
+00:06:19.616 --> 00:06:21.036 A:middle
+reflects what really goes on
+
+00:06:21.076 --> 00:06:22.696 A:middle
+between software and the GPU.
+
+00:06:23.266 --> 00:06:24.926 A:middle
+Many of the implicit operations
+
+00:06:25.046 --> 00:06:26.406 A:middle
+performed by OpenGL are
+
+00:06:26.406 --> 00:06:28.116 A:middle
+explicitly performed by an
+
+00:06:28.116 --> 00:06:29.886 A:middle
+application using Metal.
+
+00:06:30.636 --> 00:06:31.836 A:middle
+This allows you to make
+
+00:06:31.836 --> 00:06:33.666 A:middle
+intelligent decisions as to when
+
+00:06:33.666 --> 00:06:35.966 A:middle
+and how your app uses the GPU.
+
+00:06:36.946 --> 00:06:37.966 A:middle
+It also means there's less
+
+00:06:37.966 --> 00:06:39.036 A:middle
+software between your
+
+00:06:39.036 --> 00:06:40.586 A:middle
+application and the GPU.
+
+00:06:41.216 --> 00:06:43.286 A:middle
+Most Metal calls go directly to
+
+00:06:43.286 --> 00:06:45.096 A:middle
+the GPU driver and that driver
+
+00:06:45.096 --> 00:06:46.726 A:middle
+also needs to do less processing
+
+00:06:46.726 --> 00:06:48.746 A:middle
+to translate from API calls to
+
+00:06:48.746 --> 00:06:49.526 A:middle
+GPU commands.
+
+00:06:51.216 --> 00:06:52.216 A:middle
+So let's dive in and see how
+
+00:06:52.216 --> 00:06:52.636 A:middle
+this works.
+
+00:06:53.256 --> 00:06:56.466 A:middle
+All GL calls are performed on an
+
+00:06:56.466 --> 00:06:57.506 A:middle
+OpenGL context.
+
+00:06:57.916 --> 00:06:59.846 A:middle
+The context does a ton of
+
+00:06:59.846 --> 00:07:01.966 A:middle
+things, it tracks API state, it
+

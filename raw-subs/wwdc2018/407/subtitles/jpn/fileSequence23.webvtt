@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.812 --> 00:23:02.249 align:start position:25% line:-2
+NSOutlineViewは
+最適化できません
+
+00:23:03.016 --> 00:23:06.019 align:start position:27% line:-1
+この状況の打開策があります
+
+00:23:06.253 --> 00:23:09.523 align:start position:29% line:-2
+システムフレームワークに
+時間がかかる理由
+
+00:23:10.490 --> 00:23:12.893 align:start position:32% line:-2
+それは データ作業を
+行っているためです
+
+00:23:13.260 --> 00:23:17.831 align:start position:25% line:-2
+このメソッドを
+何千や何百万回も呼んでいます
+
+00:23:18.265 --> 00:23:22.636 align:start position:25% line:-2
+あるいは コードを
+呼び戻しているかもしれません
+
+00:23:22.836 --> 00:23:23.937 align:start position:39% line:-1
+重要なのは―
+
+00:23:24.037 --> 00:23:27.508 align:start position:30% line:-2
+フレームワークの動きを
+読むことです
+
+00:23:27.608 --> 00:23:29.376 align:start position:23% line:-2
+Instrumentsの階層を
+展開することで
+
+00:23:29.476 --> 00:23:31.979 align:start position:21% line:-1
+呼び出している機能が分かるのです
+
+00:23:32.079 --> 00:23:35.015 align:start position:27% line:-1
+これこそバグ修正の方法です
+
+00:23:37.084 --> 00:23:40.187 align:start position:23% line:-2
+トレースをアウトラインビューに
+展開すると―
+
+00:23:40.654 --> 00:23:43.357 align:start position:23% line:-2
+２つのメソッドを呼んでいるのが
+分かります
+
+00:23:44.925 --> 00:23:48.729 align:start position:0% line:-2
+“Batch expand items with
+item entries expand children”
+
+00:23:48.829 --> 00:23:50.998 align:start position:2% line:-1
+“Do work after end updates”
+
+00:23:51.765 --> 00:23:53.867 align:start position:30% line:-1
+これらをまとめることで
+
+00:23:53.967 --> 00:23:56.570 align:start position:27% line:-1
+効率アップが実現しそうです
+
+00:23:56.770 --> 00:23:59.439 align:start position:30% line:-2
+ご想像のとおり
+アウトラインビューは―
+

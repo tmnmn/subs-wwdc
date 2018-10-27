@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.996 --> 00:20:00.726 A:middle
+it's passed in the image name
+
+00:20:01.016 --> 00:20:01.856 A:middle
+that should be downloaded.
+
+00:20:02.506 --> 00:20:03.666 A:middle
+Now we have a download helper
+
+00:20:04.256 --> 00:20:05.896 A:middle
+class here that we create an
+
+00:20:05.896 --> 00:20:07.386 A:middle
+instance of an pass in the name
+
+00:20:07.386 --> 00:20:08.546 A:middle
+and set ourself as the delegate
+
+00:20:08.546 --> 00:20:09.626 A:middle
+so it'll call us back when it's
+
+00:20:09.656 --> 00:20:10.136 A:middle
+downloaded.
+
+00:20:10.136 --> 00:20:13.486 A:middle
+And in this case, since the
+
+00:20:13.486 --> 00:20:15.386 A:middle
+downloader represents the
+
+00:20:15.566 --> 00:20:16.816 A:middle
+concurrent activity that's going
+
+00:20:16.816 --> 00:20:19.016 A:middle
+on, this asynchronous work, it's
+
+00:20:19.016 --> 00:20:20.836 A:middle
+a great basis for a signpost ID.
+
+00:20:21.046 --> 00:20:22.046 A:middle
+So we're going to create our
+
+00:20:22.046 --> 00:20:24.656 A:middle
+signpost ID using our downloader
+
+00:20:24.756 --> 00:20:25.156 A:middle
+object.
+
+00:20:26.606 --> 00:20:27.746 A:middle
+Now to start our signposts,
+
+00:20:27.746 --> 00:20:28.926 A:middle
+we're going to do an os signpost
+
+00:20:28.926 --> 00:20:29.356 A:middle
+begin.
+
+00:20:29.656 --> 00:20:30.886 A:middle
+And we're going to send it to
+
+00:20:30.886 --> 00:20:32.836 A:middle
+our networking log handle so
+
+00:20:32.876 --> 00:20:34.606 A:middle
+take a real quick look at our
+
+00:20:34.606 --> 00:20:35.616 A:middle
+networking log handle.
+
+00:20:35.926 --> 00:20:37.516 A:middle
+You see we're using our
+
+00:20:37.516 --> 00:20:39.446 A:middle
+Trailblazer bundle ID and a
+
+00:20:39.446 --> 00:20:40.906 A:middle
+category of networking.
+
+00:20:41.606 --> 00:20:45.786 A:middle
+Now we're going to pass an image
+
+00:20:45.786 --> 00:20:47.896 A:middle
+or, sorry, a signpost name of
+
+00:20:47.896 --> 00:20:49.086 A:middle
+background image so that way we
+
+00:20:49.086 --> 00:20:50.216 A:middle
+can see all of our background
+
+00:20:50.216 --> 00:20:51.106 A:middle
+image downloads.
+
+00:20:51.106 --> 00:20:52.936 A:middle
+And it will pass that signpost
+
+00:20:52.936 --> 00:20:53.756 A:middle
+ID that we created.
+
+00:20:53.816 --> 00:20:56.356 A:middle
+And we'll attach some metadata
+
+00:20:56.356 --> 00:20:59.206 A:middle
+to begin to convey the name of
+
+00:20:59.206 --> 00:21:00.456 A:middle
+the image that we are
+

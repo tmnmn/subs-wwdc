@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.236 --> 00:06:00.296 A:middle
+and last we're calling
+
+00:06:00.296 --> 00:06:02.356 A:middle
+super.updateConstraints was an
+
+00:06:02.356 --> 00:06:04.256 A:middle
+important thing to do because
+
+00:06:04.586 --> 00:06:06.556 A:middle
+the UIView level implementation
+
+00:06:06.556 --> 00:06:08.976 A:middle
+that this method does do work.
+
+00:06:09.166 --> 00:06:10.966 A:middle
+OK, that's the basic structure
+
+00:06:11.436 --> 00:06:14.256 A:middle
+of what it's doing and it does
+
+00:06:14.256 --> 00:06:15.306 A:middle
+work, it's functions.
+
+00:06:15.906 --> 00:06:18.676 A:middle
+But let's talk about what it's
+
+00:06:18.676 --> 00:06:20.136 A:middle
+doing more concretely now so
+
+00:06:20.136 --> 00:06:20.806 A:middle
+that we can understand the
+
+00:06:20.806 --> 00:06:21.276 A:middle
+performance.
+
+00:06:22.016 --> 00:06:23.116 A:middle
+So the first thing to understand
+
+00:06:23.116 --> 00:06:24.736 A:middle
+is what exactly is
+
+00:06:24.856 --> 00:06:26.336 A:middle
+updateConstraints, this method
+
+00:06:26.336 --> 00:06:26.906 A:middle
+we're overriding.
+
+00:06:28.316 --> 00:06:30.166 A:middle
+Well, it's one component of the
+
+00:06:30.166 --> 00:06:30.646 A:middle
+Render Loop.
+
+00:06:31.636 --> 00:06:33.266 A:middle
+The Render Loop is the process
+
+00:06:33.506 --> 00:06:35.446 A:middle
+that runs potentially at 120
+
+00:06:35.446 --> 00:06:36.476 A:middle
+times every second.
+
+00:06:37.216 --> 00:06:38.976 A:middle
+That makes sure that all the
+
+00:06:38.976 --> 00:06:40.346 A:middle
+content is ready to go for each
+
+00:06:40.346 --> 00:06:40.656 A:middle
+frame.
+
+00:06:41.656 --> 00:06:43.786 A:middle
+OK, so it consists of three
+
+00:06:43.786 --> 00:06:45.066 A:middle
+phases -- Update Constraints,
+
+00:06:45.066 --> 00:06:46.386 A:middle
+Layout, and Display.
+
+00:06:47.096 --> 00:06:49.246 A:middle
+First every view that needs it
+
+00:06:49.246 --> 00:06:50.916 A:middle
+will receive updateConstraints.
+
+00:06:51.306 --> 00:06:53.306 A:middle
+And that runs from the leaf most
+
+00:06:53.306 --> 00:06:55.096 A:middle
+views up to the view hierarchy
+
+00:06:55.096 --> 00:06:55.786 A:middle
+towards the window.
+
+00:06:56.656 --> 00:06:58.676 A:middle
+Next, every view receives layout
+
+00:06:58.676 --> 00:06:59.086 A:middle
+sub views.
+
+00:06:59.366 --> 00:07:00.616 A:middle
+This runs the opposite direction
+

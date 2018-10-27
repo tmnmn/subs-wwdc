@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.678 --> 00:08:01.248 align:middle line:-2
+这也是主app上下文作为属性
+暴露出来的地方
+
+00:08:02.015 --> 00:08:06.887 align:middle line:-2
+Data Store跟踪系统中的
+所有的修改对象
+
+00:08:07.988 --> 00:08:09.890 align:middle line:-1
+所以如果你想保存这些对象
+
+00:08:09.957 --> 00:08:15.462 align:middle line:-2
+你可以调用
+CLSDataStore.save(completion:)
+
+00:08:18.632 --> 00:08:19.566 align:middle line:-1
+我还想提一下
+
+00:08:19.633 --> 00:08:22.469 align:middle line:-1
+一个Data Store共享实例
+
+00:08:22.536 --> 00:08:24.037 align:middle line:-1
+你可以与之交互
+
+00:08:25.339 --> 00:08:29.243 align:middle line:-1
+接下来我们讨论一下上下文
+
+00:08:30.944 --> 00:08:35.182 align:middle line:-1
+我们看到上下文是一个树层次结构
+
+00:08:35.849 --> 00:08:39.285 align:middle line:-1
+Marin稍后会讨论上下文的细节
+
+00:08:39.352 --> 00:08:43.222 align:middle line:-2
+如何使用它们
+并提及一些关于它们的有趣属性
+
+00:08:43.524 --> 00:08:46.793 align:middle line:-1
+但我想专注于上下文身份
+
+00:08:48.328 --> 00:08:52.733 align:middle line:-2
+ClassKit中上下文的身份
+包含两样东西
+
+00:08:53.500 --> 00:08:55.569 align:middle line:-1
+第一个是identifier属性
+
+00:08:56.904 --> 00:08:58.839 align:middle line:-1
+identifier属性允许你
+
+00:08:58.906 --> 00:09:02.843 align:middle line:-1
+在兄弟节点中唯一识别上下文
+

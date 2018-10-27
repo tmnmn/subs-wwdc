@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.466 --> 00:14:00.156 A:middle
+Like GLSL there are built-in
+
+00:14:00.156 --> 00:14:02.796 A:middle
+vector and matrix types, and
+
+00:14:02.796 --> 00:14:04.176 A:middle
+numerous built-in functions and
+
+00:14:04.176 --> 00:14:05.856 A:middle
+operators commonly used for
+
+00:14:05.856 --> 00:14:06.436 A:middle
+graphics.
+
+00:14:06.486 --> 00:14:09.236 A:middle
+And there are classes to specify
+
+00:14:09.316 --> 00:14:11.006 A:middle
+sampler state and operate on
+
+00:14:11.006 --> 00:14:11.426 A:middle
+textures.
+
+00:14:12.966 --> 00:14:13.986 A:middle
+The best way to describe the
+
+00:14:13.986 --> 00:14:15.166 A:middle
+language is just to show you.
+
+00:14:15.396 --> 00:14:17.166 A:middle
+So here is a vertex and fragment
+
+00:14:17.166 --> 00:14:17.846 A:middle
+shader pair.
+
+00:14:19.336 --> 00:14:20.966 A:middle
+The vertex keyword at the
+
+00:14:20.966 --> 00:14:22.516 A:middle
+function at the top specifies
+
+00:14:22.586 --> 00:14:24.196 A:middle
+that that function is a vertex
+
+00:14:24.196 --> 00:14:25.886 A:middle
+shader, likewise for the
+
+00:14:25.886 --> 00:14:27.496 A:middle
+fragment keyword for the
+
+00:14:27.496 --> 00:14:28.306 A:middle
+function at the bottom.
+
+00:14:29.706 --> 00:14:31.366 A:middle
+Note that they have custom names
+
+00:14:31.426 --> 00:14:33.226 A:middle
+unlike GLSL where every shader
+
+00:14:33.266 --> 00:14:34.116 A:middle
+is just called main.
+
+00:14:34.756 --> 00:14:35.726 A:middle
+This is important because it
+
+00:14:35.726 --> 00:14:37.166 A:middle
+allows you to build large
+
+00:14:37.166 --> 00:14:38.976 A:middle
+libraries of unique shaders
+
+00:14:39.206 --> 00:14:40.966 A:middle
+using names to indicate what
+
+00:14:41.026 --> 00:14:41.506 A:middle
+they do.
+
+00:14:41.936 --> 00:14:44.446 A:middle
+Anything passed from your
+
+00:14:44.446 --> 00:14:46.176 A:middle
+application is an argument to
+
+00:14:46.176 --> 00:14:47.266 A:middle
+one of these shaders.
+
+00:14:48.026 --> 00:14:49.316 A:middle
+There aren't any loose variables
+
+00:14:49.316 --> 00:14:50.486 A:middle
+outside of functions as there
+
+00:14:50.486 --> 00:14:51.416 A:middle
+are with GLSL.
+
+00:14:52.486 --> 00:14:53.786 A:middle
+As you can see, there are these
+
+00:14:53.846 --> 00:14:55.216 A:middle
+bracketed symbols next to each
+
+00:14:55.216 --> 00:14:55.646 A:middle
+parameter.
+
+00:14:56.226 --> 00:14:58.136 A:middle
+These are attribute specifiers
+
+00:14:58.386 --> 00:14:59.946 A:middle
+which extend upon the C++
+
+00:14:59.946 --> 00:15:01.656 A:middle
+language to indicate special
+

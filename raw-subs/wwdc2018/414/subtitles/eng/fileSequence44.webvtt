@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.836 --> 00:44:00.996 A:middle
+look at it in just a second.
+
+00:44:01.516 --> 00:44:02.706 A:middle
+But let's try to understand more
+
+00:44:02.706 --> 00:44:03.836 A:middle
+from the crash logs first.
+
+00:44:03.916 --> 00:44:07.116 A:middle
+Let's look at the entire stack
+
+00:44:07.116 --> 00:44:08.466 A:middle
+of this thread which I can do by
+
+00:44:08.466 --> 00:44:09.606 A:middle
+clicking this button right here
+
+00:44:09.966 --> 00:44:11.296 A:middle
+that also shows all other
+
+00:44:11.296 --> 00:44:11.636 A:middle
+threads.
+
+00:44:13.026 --> 00:44:14.906 A:middle
+And if we focus at the top most
+
+00:44:14.906 --> 00:44:16.566 A:middle
+frames here we'll see that
+
+00:44:16.566 --> 00:44:18.246 A:middle
+what's really going on is that
+
+00:44:18.246 --> 00:44:19.776 A:middle
+the free function is calling
+
+00:44:19.776 --> 00:44:21.556 A:middle
+abort which indicates a heap
+
+00:44:21.556 --> 00:44:22.966 A:middle
+corruption, a type of memory
+
+00:44:22.966 --> 00:44:23.166 A:middle
+error.
+
+00:44:23.166 --> 00:44:26.396 A:middle
+If we look at the stack traces
+
+00:44:26.396 --> 00:44:27.756 A:middle
+of some other threads, like
+
+00:44:27.756 --> 00:44:30.076 A:middle
+thread 5 here, we'll see that
+
+00:44:30.076 --> 00:44:31.856 A:middle
+it's executing also some code
+
+00:44:31.946 --> 00:44:33.256 A:middle
+inside LazyImageView.
+
+00:44:33.256 --> 00:44:36.786 A:middle
+Let's look at another crash in
+
+00:44:36.786 --> 00:44:39.606 A:middle
+this group of crashes and we'll
+
+00:44:39.606 --> 00:44:41.016 A:middle
+see that this a common theme in
+
+00:44:41.016 --> 00:44:41.906 A:middle
+all these crash logs.
+
+00:44:42.376 --> 00:44:44.226 A:middle
+One thread is reporting a heap
+
+00:44:44.226 --> 00:44:45.506 A:middle
+corruption when the free
+
+00:44:45.506 --> 00:44:47.666 A:middle
+function is calling abort and a
+
+00:44:47.666 --> 00:44:50.246 A:middle
+secondary thread is processing
+
+00:44:50.886 --> 00:44:52.476 A:middle
+in a very related part of the
+
+00:44:52.476 --> 00:44:53.516 A:middle
+code, actually in the same
+
+00:44:53.516 --> 00:44:55.026 A:middle
+class, inside LazyImageView
+
+00:44:55.026 --> 00:44:55.366 A:middle
+again.
+
+00:44:55.996 --> 00:44:57.156 A:middle
+That's most likely not a
+
+00:44:57.156 --> 00:44:59.166 A:middle
+coincidence, I highly suspect
+
+00:44:59.166 --> 00:45:00.136 A:middle
+that this is a multithreading
+

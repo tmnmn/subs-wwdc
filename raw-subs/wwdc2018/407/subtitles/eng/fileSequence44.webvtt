@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:57.256 --> 00:44:00.316 A:middle
+network or the database, and
+
+00:44:00.316 --> 00:44:01.666 A:middle
+literally first our design was
+
+00:44:01.666 --> 00:44:03.616 A:middle
+to not show it during launch.
+
+00:44:04.086 --> 00:44:05.806 A:middle
+To prioritize all the images
+
+00:44:05.806 --> 00:44:06.636 A:middle
+that we are seeing here.
+
+00:44:06.906 --> 00:44:08.366 A:middle
+We wanted to show as much images
+
+00:44:08.366 --> 00:44:08.946 A:middle
+as possible.
+
+00:44:09.366 --> 00:44:10.356 A:middle
+So that may be simpler.
+
+00:44:11.456 --> 00:44:12.936 A:middle
+We are now only scheduling that
+
+00:44:12.996 --> 00:44:14.596 A:middle
+work post-launch, and we cache
+
+00:44:14.596 --> 00:44:16.216 A:middle
+to process information for
+
+00:44:16.216 --> 00:44:18.756 A:middle
+raising later.
+
+00:44:20.686 --> 00:44:21.716 A:middle
+Now, if we would have had the
+
+00:44:21.716 --> 00:44:22.936 A:middle
+requirement of displaying this
+
+00:44:22.936 --> 00:44:24.606 A:middle
+information, one approach could
+
+00:44:24.606 --> 00:44:25.786 A:middle
+have been to leverage the
+
+00:44:25.786 --> 00:44:27.176 A:middle
+register background at refresh
+
+00:44:27.176 --> 00:44:29.506 A:middle
+API from UA kit, that will
+
+00:44:29.506 --> 00:44:31.036 A:middle
+proactively clear your app so
+
+00:44:31.086 --> 00:44:32.376 A:middle
+that you can start preparing
+
+00:44:32.376 --> 00:44:33.856 A:middle
+some content when the user is
+
+00:44:33.856 --> 00:44:35.446 A:middle
+going to launch your app.
+
+00:44:37.156 --> 00:44:38.836 A:middle
+So now, that part has gone from
+
+00:44:38.836 --> 00:44:40.726 A:middle
+launch, and that saves us 400
+
+00:44:40.726 --> 00:44:42.066 A:middle
+milliseconds of CPU time.
+
+00:44:43.486 --> 00:44:45.276 A:middle
+If we look at the updated
+
+00:44:45.276 --> 00:44:47.046 A:middle
+breakdown here, we can see that
+
+00:44:47.046 --> 00:44:48.866 A:middle
+we now have only 450
+
+00:44:48.866 --> 00:44:50.216 A:middle
+milliseconds worth of work.
+
+00:44:50.896 --> 00:44:53.776 A:middle
+We are now fitting into that 500
+
+00:44:53.836 --> 00:44:55.866 A:middle
+millisecond time window, and
+
+00:44:55.866 --> 00:44:58.006 A:middle
+regardless of how things can be
+
+00:44:58.006 --> 00:44:59.486 A:middle
+represented concurrently here,
+
+00:44:59.486 --> 00:45:00.816 A:middle
+the most important part of that
+

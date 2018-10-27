@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:56.924 --> 00:21:00.027 align:start position:34% line:-2
+入力を開始すると
+単語数が変化します
+
+00:21:02.062 --> 00:21:04.364 align:start position:36% line:-2
+テキストの一部を
+強調する場合―
+
+00:21:04.998 --> 00:21:08.936 align:start position:27% line:-2
+ショートカットやメニューで
+太字などの書式を適用
+
+00:21:10.704 --> 00:21:14.541 align:start position:25% line:-2
+最新のテキストフォーマットも
+使いたいですよね
+
+00:21:14.641 --> 00:21:18.712 align:start position:27% line:-2
+Markdownのように
+制御文字で書式を指定したい
+
+00:21:19.046 --> 00:21:23.750 align:start position:23% line:-2
+前後にアスタリスクを挿入したら
+太字にするには
+
+00:21:24.184 --> 00:21:26.053 align:start position:27% line:-1
+どのハンマーを使うべきか？
+
+00:21:28.222 --> 00:21:32.493 align:start position:27% line:-2
+変更がいつどこで生じたかを
+知る必要がありますが
+
+00:21:32.593 --> 00:21:36.163 align:start position:34% line:-2
+通知される情報では
+不十分です
+
+00:21:37.297 --> 00:21:38.866 align:start position:30% line:-1
+大きなハンマーを使用し
+
+00:21:38.966 --> 00:21:41.135 align:start position:11% line:-2
+NSTextStorageDelegateを
+実装します
+
+00:21:41.768 --> 00:21:44.605 align:start position:9% line:-2
+具体的には
+didProcessEditingメソッドです
+
+00:21:44.938 --> 00:21:48.242 align:start position:27% line:-2
+既存のものから
+太字のフォントを新たに作り
+
+00:21:48.809 --> 00:21:52.913 align:start position:32% line:-2
+テキストストレージに
+それを直接追加します
+
+00:21:54.047 --> 00:21:57.918 align:start position:32% line:-2
+最後のアスタリスクで
+太字になりました
+

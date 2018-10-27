@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.776 --> 00:26:00.676 A:middle
+sendInitialFrame, which we'll
+
+00:26:00.676 --> 00:26:02.616 A:middle
+implement in a minute.
+
+00:26:02.726 --> 00:26:04.466 A:middle
+Because we're using UDP and
+
+00:26:04.466 --> 00:26:05.526 A:middle
+there's no other handshake,
+
+00:26:05.996 --> 00:26:07.216 A:middle
+we're going to take some data
+
+00:26:07.566 --> 00:26:08.556 A:middle
+and send it across to the
+
+00:26:08.556 --> 00:26:11.066 A:middle
+network to the other device and
+
+00:26:11.066 --> 00:26:12.226 A:middle
+wait for it to be echoed back
+
+00:26:12.586 --> 00:26:13.926 A:middle
+before we start generating lots
+
+00:26:13.926 --> 00:26:15.266 A:middle
+of video frames and dumping them
+
+00:26:15.266 --> 00:26:15.766 A:middle
+on the network.
+
+00:26:19.176 --> 00:26:20.886 A:middle
+We need to remember to call
+
+00:26:20.886 --> 00:26:22.576 A:middle
+start on our connection, and we
+
+00:26:22.576 --> 00:26:23.466 A:middle
+provide the queue that we
+
+00:26:23.466 --> 00:26:26.026 A:middle
+created up above.
+
+00:26:26.236 --> 00:26:27.296 A:middle
+Let's implement send initial
+
+00:26:27.296 --> 00:26:27.576 A:middle
+frame.
+
+00:26:32.156 --> 00:26:33.346 A:middle
+Here we're going to take the
+
+00:26:33.346 --> 00:26:35.876 A:middle
+literal bytes hello and create a
+
+00:26:35.876 --> 00:26:38.156 A:middle
+data object using them.
+
+00:26:38.156 --> 00:26:39.746 A:middle
+To send content on a connection,
+
+00:26:40.206 --> 00:26:42.216 A:middle
+we can call connection.send and
+
+00:26:42.216 --> 00:26:44.056 A:middle
+provide that data object as the
+
+00:26:44.056 --> 00:26:44.496 A:middle
+content.
+
+00:26:45.876 --> 00:26:47.396 A:middle
+We provide a completion handler
+
+00:26:47.646 --> 00:26:48.886 A:middle
+in which we can check for any
+
+00:26:48.886 --> 00:26:49.986 A:middle
+errors that may have been
+
+00:26:49.986 --> 00:26:50.906 A:middle
+encountered while sending.
+
+00:26:51.416 --> 00:26:54.396 A:middle
+Since we expect this content to
+
+00:26:54.396 --> 00:26:56.066 A:middle
+be immediately echoed back, we
+
+00:26:56.066 --> 00:26:57.316 A:middle
+turn right around and call
+
+00:26:57.316 --> 00:26:59.056 A:middle
+connection.receive to read the
+
+00:26:59.056 --> 00:27:00.126 A:middle
+incoming data off of the
+

@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.692 --> 00:06:03.897 align:start position:21% line:-2
+Metalは この場合に特化した
+並列符号化により
+
+00:06:04.331 --> 00:06:10.337 align:start position:27% line:-2
+コマンドバッファも使用して
+複数のスレッドで処理します
+
+00:06:11.004 --> 00:06:13.473 align:start position:29% line:-1
+こちらもコードは簡単です
+
+00:06:15.309 --> 00:06:17.411 align:start position:30% line:-1
+大きな変化はありません
+
+00:06:17.678 --> 00:06:21.381 align:start position:29% line:-2
+まず 複数のエンコーダを
+準備します
+
+00:06:21.782 --> 00:06:25.519 align:start position:29% line:-2
+ここで下位のエンコーダを
+多数 作成します
+
+00:06:25.619 --> 00:06:30.324 align:start position:27% line:-2
+GPUの実行命令を定義する
+場所になります
+
+00:06:32.292 --> 00:06:36.663 align:start position:30% line:-2
+次に 別々のスレッドを
+作成してから
+
+00:06:36.763 --> 00:06:40.767 align:start position:32% line:-2
+Ｇバッファを
+それぞれ符号化します
+
+00:06:41.902 --> 00:06:47.674 align:start position:29% line:-2
+スレッドが終了したら
+通知が出るように設定して
+
+00:06:48.141 --> 00:06:51.011 align:start position:32% line:-2
+エンコーダの
+符号化を終わらせます
+
+00:06:51.111 --> 00:06:54.281 align:start position:27% line:-2
+これで レンダリングパスの
+並列化が実現します
+
+00:06:54.381 --> 00:06:56.550 align:start position:32% line:-1
+高速かつシンプルです
+
+00:06:57.084 --> 00:07:00.220 align:start position:29% line:-1
+CPUの並列化は以上です
+

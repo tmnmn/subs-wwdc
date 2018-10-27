@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.306 --> 00:10:00.816 A:middle
+The set of commands encoded into
+
+00:10:00.816 --> 00:10:01.966 A:middle
+a Render Command Encoder is
+
+00:10:02.006 --> 00:10:03.686 A:middle
+often referred to as a Render
+
+00:10:03.686 --> 00:10:03.836 A:middle
+Pass.
+
+00:10:05.406 --> 00:10:06.576 A:middle
+In a Render Pass you set up
+
+00:10:06.576 --> 00:10:08.016 A:middle
+render objects for the graphics
+
+00:10:08.016 --> 00:10:10.236 A:middle
+pipeline and issue draw commands
+
+00:10:10.676 --> 00:10:11.586 A:middle
+with those objects.
+
+00:10:12.226 --> 00:10:13.726 A:middle
+This includes operations similar
+
+00:10:13.726 --> 00:10:15.946 A:middle
+to glDrawArrays and
+
+00:10:15.946 --> 00:10:18.696 A:middle
+glDrawElements and other OpenGL
+
+00:10:18.816 --> 00:10:19.566 A:middle
+draw commands.
+
+00:10:21.006 --> 00:10:22.416 A:middle
+Each Render Command Encoder is
+
+00:10:22.416 --> 00:10:24.156 A:middle
+strongly associated with a set
+
+00:10:24.306 --> 00:10:25.126 A:middle
+of render targets.
+
+00:10:26.976 --> 00:10:28.806 A:middle
+And the render target is simply
+
+00:10:28.806 --> 00:10:30.306 A:middle
+a texture that can be drawn to.
+
+00:10:30.846 --> 00:10:32.636 A:middle
+This includes color, depth and
+
+00:10:32.666 --> 00:10:34.166 A:middle
+stencil textures, as well as
+
+00:10:34.166 --> 00:10:35.356 A:middle
+multi-sample textures.
+
+00:10:36.436 --> 00:10:37.606 A:middle
+You specify a set of render
+
+00:10:37.606 --> 00:10:38.976 A:middle
+targets when you create a render
+
+00:10:38.976 --> 00:10:40.686 A:middle
+command encoder from a command
+
+00:10:42.196 --> 00:10:42.336 A:middle
+buffer.
+
+00:10:42.516 --> 00:10:43.906 A:middle
+And all draw commands are
+
+00:10:43.906 --> 00:10:45.596 A:middle
+directed to these targets for
+
+00:10:45.596 --> 00:10:47.036 A:middle
+the lifetime of the encoder.
+
+00:10:48.506 --> 00:10:49.826 A:middle
+To direct commands to a new set
+
+00:10:49.826 --> 00:10:51.396 A:middle
+of targets you end encoding with
+
+00:10:51.396 --> 00:10:52.886 A:middle
+a current render command encoder
+
+00:10:53.116 --> 00:10:55.536 A:middle
+and create a new encoder with
+
+00:10:55.536 --> 00:10:56.256 A:middle
+new targets.
+
+00:10:57.216 --> 00:10:58.836 A:middle
+This creates a very clear
+
+00:10:58.836 --> 00:11:01.076 A:middle
+delineation between commands
+

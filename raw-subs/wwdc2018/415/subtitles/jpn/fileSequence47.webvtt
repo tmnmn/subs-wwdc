@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:58.318 --> 00:47:00.921 align:start position:25% line:-1
+例えば printf関数も―
+
+00:47:01.321 --> 00:47:03.323 align:start position:36% line:-2
+シンボル付きの
+コードになります
+
+00:47:03.424 --> 00:47:08.028 align:start position:23% line:-2
+これから見るPetKitの
+どの関数でも同じことが起きます
+
+00:47:09.830 --> 00:47:14.935 align:start position:23% line:-2
+フラグメントが未定義シンボルを
+参照する場合もあります
+
+00:47:15.702 --> 00:47:20.808 align:start position:25% line:-2
+未定義の.oファイルの関数を
+参照する場合は―
+
+00:47:20.908 --> 00:47:24.144 align:start position:21% line:-2
+リンカーが未定義シンボルを見つけ
+リンクします
+
+00:47:26.280 --> 00:47:30.484 align:start position:27% line:-2
+.oファイルはコンパイルの
+アウトプットでしたね
+
+00:47:30.584 --> 00:47:32.052 align:start position:32% line:-1
+では ライブラリは？
+
+00:47:32.553 --> 00:47:34.822 align:start position:32% line:-2
+シンボルを
+定義するファイルで―
+
+00:47:34.922 --> 00:47:37.791 align:start position:32% line:-2
+ターゲットの一部では
+ありません
+
+00:47:38.425 --> 00:47:41.228 align:start position:27% line:-2
+まずは
+ダイナミックライブラリです
+
+00:47:41.595 --> 00:47:44.031 align:start position:23% line:-1
+これはMach-Oファイルで―
+
+00:47:44.131 --> 00:47:48.869 align:start position:27% line:-2
+実行可能ファイルが使用する
+フラグメントが入っています
+
+00:47:49.436 --> 00:47:52.473 align:start position:27% line:-2
+これは
+私たちのシステムの一部です
+
+00:47:52.573 --> 00:47:56.343 align:start position:25% line:-2
+他のフレームワークを
+併用している人もいるでしょう
+
+00:47:58.178 --> 00:48:00.013 align:start position:34% line:-1
+次にTBDファイル
+

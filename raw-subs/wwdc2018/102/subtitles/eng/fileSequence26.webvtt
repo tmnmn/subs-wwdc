@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.376 --> 00:26:01.746 A:middle
+great Mac apps.
+
+00:26:01.746 --> 00:26:03.396 A:middle
+Of course, AppKit is our primary
+
+00:26:03.396 --> 00:26:04.846 A:middle
+native framework and it takes
+
+00:26:04.846 --> 00:26:06.846 A:middle
+full advantage of all the Mac
+
+00:26:06.846 --> 00:26:07.596 A:middle
+has to offer.
+
+00:26:07.936 --> 00:26:09.156 A:middle
+And in no way are we
+
+00:26:09.156 --> 00:26:11.066 A:middle
+de-emphasizing that.
+
+00:26:11.066 --> 00:26:12.286 A:middle
+However, we note that a lot of
+
+00:26:12.286 --> 00:26:14.186 A:middle
+you have iOS apps and you don't
+
+00:26:14.186 --> 00:26:15.396 A:middle
+have a native Mac experience.
+
+00:26:15.396 --> 00:26:17.306 A:middle
+And for these cases, we want you
+
+00:26:17.306 --> 00:26:18.476 A:middle
+to -- we want to give you an
+
+00:26:18.476 --> 00:26:20.436 A:middle
+easy way to bring your apps to
+
+00:26:20.436 --> 00:26:21.226 A:middle
+the Mac as well.
+
+00:26:22.346 --> 00:26:24.206 A:middle
+So how are we doing this?
+
+00:26:25.216 --> 00:26:27.016 A:middle
+These UIKit apps are running in
+
+00:26:27.016 --> 00:26:28.576 A:middle
+a native environment on top of a
+
+00:26:28.576 --> 00:26:29.026 A:middle
+native stack.
+
+00:26:29.196 --> 00:26:30.856 A:middle
+And if you look closely, you'll
+
+00:26:30.856 --> 00:26:32.446 A:middle
+see that the stack below the
+
+00:26:32.446 --> 00:26:34.206 A:middle
+UIKit app has a lot in common
+
+00:26:34.206 --> 00:26:35.416 A:middle
+with the stack below the AppKit
+
+00:26:35.536 --> 00:26:35.976 A:middle
+app.
+
+00:26:35.976 --> 00:26:37.616 A:middle
+In fact, these environments were
+
+00:26:37.616 --> 00:26:39.336 A:middle
+built on a common foundation
+
+00:26:39.596 --> 00:26:40.816 A:middle
+which in some cases has drifted
+
+00:26:40.816 --> 00:26:41.676 A:middle
+apart over time.
+
+00:26:42.826 --> 00:26:44.696 A:middle
+So we're taking this opportunity
+
+00:26:44.846 --> 00:26:46.466 A:middle
+to rationalize the substrate
+
+00:26:47.136 --> 00:26:48.546 A:middle
+which is great news for you
+
+00:26:48.546 --> 00:26:49.886 A:middle
+developers independent of this
+
+00:26:49.886 --> 00:26:51.186 A:middle
+technology because it makes it
+
+00:26:51.186 --> 00:26:52.556 A:middle
+easier for you to write portable
+
+00:26:52.556 --> 00:26:52.836 A:middle
+code.
+
+00:26:53.466 --> 00:26:56.336 A:middle
+These apps get all the typical
+
+00:26:56.336 --> 00:26:59.026 A:middle
+Mac features and I'd like to
+
+00:26:59.026 --> 00:26:59.976 A:middle
+show that to you now.
+

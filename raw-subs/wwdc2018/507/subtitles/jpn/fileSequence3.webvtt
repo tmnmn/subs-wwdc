@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:57.978 --> 00:03:02.115 align:start position:11% line:-2
+AVContentKeySessionからの
+ものです
+
+00:03:03.383 --> 00:03:08.121 align:start position:27% line:-2
+APIはキー配信を
+最適化する上で役立ちました
+
+00:03:08.889 --> 00:03:12.426 align:start position:30% line:-1
+具体的に解説する前に―
+
+00:03:12.526 --> 00:03:16.163 align:start position:14% line:-2
+AVContentKeySessionの
+違いを見てみましょう
+
+00:03:17.631 --> 00:03:21.535 align:start position:11% line:-2
+AVAssetResourceLoaderを
+使用する時―
+
+00:03:21.635 --> 00:03:24.905 align:start position:29% line:-1
+キーをロードできるのは―
+
+00:03:25.005 --> 00:03:28.108 align:start position:32% line:-2
+オンデマンドで要求を
+送信する場合のみです
+
+00:03:28.842 --> 00:03:33.046 align:start position:25% line:-2
+これが発生するのは
+再生リストをダウンロードし―
+
+00:03:33.146 --> 00:03:35.749 align:start position:32% line:-2
+コンテンツの暗号化が
+確認された時です
+
+00:03:36.216 --> 00:03:41.722 align:start position:25% line:-2
+さらに再生中は いつでも
+キーロード要求を送信できます
+
+00:03:41.855 --> 00:03:44.191 align:start position:30% line:-1
+例えば 再生の途中で―
+
+00:03:44.291 --> 00:03:48.462 align:start position:25% line:-2
+別のキーを使用するラジアンに
+スイッチされた場合は―
+
+00:03:48.562 --> 00:03:51.698 align:start position:30% line:-2
+新しいキーロード要求を
+送信します
+
+00:03:52.399 --> 00:03:55.569 align:start position:30% line:-2
+基本的には
+そのモデルを変更します
+
+00:03:56.136 --> 00:03:59.773 align:start position:27% line:-2
+媒体のロードから切り離すか
+または再生して―
+
+00:03:59.873 --> 00:04:04.411 align:start position:23% line:-2
+キーロードのタイミングに対する
+コントロールを強化します
+

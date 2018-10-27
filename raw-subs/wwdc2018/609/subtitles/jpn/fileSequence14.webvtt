@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:57.404 --> 00:14:01.608 align:start position:34% line:-2
+グラフに渡す入力を
+見ていきましょう
+
+00:14:02.442 --> 00:14:07.548 align:start position:29% line:-2
+まず GPUにグラフの
+エンコードを呼び出します
+
+00:14:08.849 --> 00:14:12.920 align:start position:32% line:-2
+訓練では１枚ずつ
+画像を送ることはなく
+
+00:14:13.020 --> 00:14:16.323 align:start position:29% line:-2
+画像のグループかバッチを
+使います
+
+00:14:16.423 --> 00:14:19.893 align:start position:32% line:-2
+グラフへの入力は
+画像のバッチなので―
+
+00:14:20.761 --> 00:14:23.564 align:start position:34% line:-1
+画像の各バッチには
+
+00:14:23.664 --> 00:14:27.701 align:start position:29% line:-2
+損失計算のため
+対応するラベルが必要です
+
+00:14:29.670 --> 00:14:34.007 align:start position:32% line:-2
+ラベルはグラフに
+ステートとして渡され
+
+00:14:34.141 --> 00:14:38.312 align:start position:30% line:-2
+エンコードのコールが
+ステートを受け入れます
+
+00:14:38.645 --> 00:14:41.682 align:start position:32% line:-2
+バッチとステートとは
+何でしょうか
+
+00:14:41.782 --> 00:14:43.884 align:start position:29% line:-1
+まずバッチから説明します
+
+00:14:44.418 --> 00:14:48.021 align:start position:34% line:-2
+バッチとは画像や
+ステートの配列です
+
+00:14:48.121 --> 00:14:51.458 align:start position:29% line:-2
+今年から訓練のサポートに
+加えました
+
+00:14:51.959 --> 00:14:57.965 align:start position:0% line:-2
+新しい２つのMPSタイプは
+MPSImageBatchとMPSStateBatchです
+
+00:14:58.432 --> 00:15:02.970 align:start position:23% line:-2
+今回はAPIを使って既存の
+Metal Textureから
+

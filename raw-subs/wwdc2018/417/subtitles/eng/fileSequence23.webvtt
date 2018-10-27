@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.686 --> 00:23:00.246 A:middle
+compiler won't notify me that
+
+00:23:00.246 --> 00:23:01.836 A:middle
+I've started calling another
+
+00:23:01.836 --> 00:23:03.466 A:middle
+method, and it's easy to forget
+
+00:23:03.466 --> 00:23:04.446 A:middle
+and break my tests.
+
+00:23:05.536 --> 00:23:06.666 A:middle
+So, I don't recommend this
+
+00:23:06.666 --> 00:23:09.116 A:middle
+method, and instead to mock
+
+00:23:09.116 --> 00:23:10.866 A:middle
+external types using protocols.
+
+00:23:11.556 --> 00:23:13.416 A:middle
+So, let's walk through how to do
+
+00:23:14.256 --> 00:23:14.366 A:middle
+that.
+
+00:23:14.566 --> 00:23:16.446 A:middle
+Here's the original code, and
+
+00:23:16.446 --> 00:23:18.196 A:middle
+the first step is to define a
+
+00:23:18.196 --> 00:23:18.766 A:middle
+new protocol.
+
+00:23:19.376 --> 00:23:21.396 A:middle
+I've named my new protocol
+
+00:23:21.396 --> 00:23:23.586 A:middle
+LocationFetcher, and it includes
+
+00:23:23.586 --> 00:23:25.076 A:middle
+the exact set of methods and
+
+00:23:25.076 --> 00:23:26.686 A:middle
+properties that my code uses
+
+00:23:26.686 --> 00:23:27.816 A:middle
+from CLLocationManager.
+
+00:23:29.036 --> 00:23:31.236 A:middle
+The member names and types match
+
+00:23:31.236 --> 00:23:32.976 A:middle
+exactly, and that allows me to
+
+00:23:32.976 --> 00:23:34.826 A:middle
+create an empty extension on
+
+00:23:34.976 --> 00:23:36.556 A:middle
+CLLocationManager that conforms
+
+00:23:36.556 --> 00:23:37.746 A:middle
+to the protocol, since it
+
+00:23:37.746 --> 00:23:38.456 A:middle
+already meets all the
+
+00:23:38.456 --> 00:23:39.096 A:middle
+requirements.
+
+00:23:41.056 --> 00:23:42.266 A:middle
+I'll then rename the
+
+00:23:42.266 --> 00:23:43.796 A:middle
+LocationManager property to
+
+00:23:43.796 --> 00:23:45.556 A:middle
+LocationFetcher, and I'll change
+
+00:23:45.556 --> 00:23:47.086 A:middle
+its type to the LocationFetcher
+
+00:23:47.086 --> 00:23:47.496 A:middle
+protocol.
+
+00:23:49.416 --> 00:23:51.056 A:middle
+I'll also add a default
+
+00:23:51.056 --> 00:23:51.956 A:middle
+parameter value to the
+
+00:23:51.956 --> 00:23:53.236 A:middle
+initializer, just like I did
+
+00:23:53.236 --> 00:23:54.946 A:middle
+earlier, to avoid breaking any
+
+00:23:54.946 --> 00:23:56.446 A:middle
+existing app code.
+
+00:23:58.176 --> 00:23:59.956 A:middle
+I need to make one small change
+
+00:23:59.956 --> 00:24:01.146 A:middle
+to the checkCurrentLocation
+

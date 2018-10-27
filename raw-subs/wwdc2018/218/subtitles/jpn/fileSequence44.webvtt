@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:57.804 --> 00:44:00.140 align:start position:16% line:-2
+NSGraphicsContextや
+CGBitmapContextを使った
+
+00:44:00.240 --> 00:44:03.610 align:start position:30% line:-2
+カスタムグラフィックが
+あります
+
+00:44:03.744 --> 00:44:06.914 align:start position:21% line:-2
+これも
+ブロックベースのNSImageで
+
+00:44:07.014 --> 00:44:09.449 align:start position:34% line:-1
+置き換えが可能です
+
+00:44:10.450 --> 00:44:14.455 align:start position:14% line:-2
+RectでNSView
+cacheDisplayを使っている場合
+
+00:44:14.555 --> 00:44:16.590 align:start position:38% line:-1
+注意が必要です
+
+00:44:16.857 --> 00:44:20.794 align:start position:29% line:-2
+Rectは マテリアルや
+ぼかしなどの
+
+00:44:20.894 --> 00:44:24.631 align:start position:30% line:-2
+上級レンダリング技法を
+キャプチャーしません
+
+00:44:24.998 --> 00:44:30.704 align:start position:27% line:-2
+さらにアピアランスの変化で
+古くなるので要注意です
+
+00:44:33.407 --> 00:44:36.043 align:start position:32% line:-1
+他の問題も説明します
+
+00:44:36.910 --> 00:44:39.947 align:start position:16% line:-2
+NSAttributedStringや
+NSTextStorageで
+
+00:44:40.047 --> 00:44:43.116 align:start position:36% line:-2
+手動で属性を
+操作する場合です
+
+00:44:43.283 --> 00:44:47.521 align:start position:25% line:-2
+属性をDictionaryに
+設定しました
+
+00:44:48.055 --> 00:44:49.656 align:start position:38% line:-1
+結果がこれです
+
+00:44:49.857 --> 00:44:53.861 align:start position:36% line:-2
+ダークモードでも
+文字が暗い理由は
+
+00:44:54.561 --> 00:44:57.331 align:start position:32% line:-2
+フォアグラウンドの
+カラー属性のせいです
+
+00:44:57.664 --> 00:45:01.635 align:start position:7% line:-2
+テキストエンジンが
+NSAttributedStringに直面すると
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.306 --> 00:36:01.616 A:middle
+it might be able to say, "An
+
+00:36:01.616 --> 00:36:03.736 A:middle
+NSUserActivity with soup tomato
+
+00:36:03.986 --> 00:36:05.546 A:middle
+and quantity 1 is a good
+
+00:36:05.546 --> 00:36:07.056 A:middle
+suggestion for this user."
+
+00:36:08.096 --> 00:36:10.456 A:middle
+So, as you just saw, it's really
+
+00:36:10.456 --> 00:36:11.796 A:middle
+important to specify the right
+
+00:36:11.846 --> 00:36:13.606 A:middle
+set of keys as being required.
+
+00:36:13.606 --> 00:36:14.946 A:middle
+Otherwise, your users might not
+
+00:36:14.946 --> 00:36:16.306 A:middle
+get any suggestions at all.
+
+00:36:17.076 --> 00:36:18.696 A:middle
+So, that's how it worked for
+
+00:36:18.696 --> 00:36:19.476 A:middle
+user activity.
+
+00:36:20.826 --> 00:36:23.006 A:middle
+Intents work similarly but offer
+
+00:36:23.006 --> 00:36:24.416 A:middle
+you a lot more flexibility.
+
+00:36:25.386 --> 00:36:29.086 A:middle
+The main signal for intents are
+
+00:36:29.086 --> 00:36:30.046 A:middle
+the shortcut types that you
+
+00:36:30.046 --> 00:36:30.456 A:middle
+define.
+
+00:36:31.866 --> 00:36:33.766 A:middle
+Each shortcut type defines a
+
+00:36:33.766 --> 00:36:35.166 A:middle
+combination of parameters that
+
+00:36:35.166 --> 00:36:36.306 A:middle
+is valid for suggestion.
+
+00:36:36.966 --> 00:36:39.036 A:middle
+It's similar to the
+
+00:36:39.276 --> 00:36:40.556 A:middle
+requiredUserInfoKeys, but
+
+00:36:40.556 --> 00:36:41.896 A:middle
+instead of having just one set,
+
+00:36:42.076 --> 00:36:43.056 A:middle
+you can define multiple.
+
+00:36:43.666 --> 00:36:46.286 A:middle
+Let's apply this to our Soup
+
+00:36:46.286 --> 00:36:48.466 A:middle
+Chef app.
+
+00:36:48.466 --> 00:36:49.526 A:middle
+Earlier, I defined an
+
+00:36:49.526 --> 00:36:51.046 A:middle
+OrderSoupIntent with three
+
+00:36:51.046 --> 00:36:53.246 A:middle
+parameters, soup, quantity, and
+
+00:36:53.246 --> 00:36:53.676 A:middle
+options.
+
+00:36:54.026 --> 00:36:55.566 A:middle
+At the time, I only defined a
+
+00:36:55.566 --> 00:36:56.606 A:middle
+single shortcut type that
+
+00:36:56.606 --> 00:36:57.426 A:middle
+combined all of these
+
+00:36:57.466 --> 00:36:59.536 A:middle
+parameters, but, ideally, you
+
+00:36:59.536 --> 00:37:00.906 A:middle
+would define more shortcut
+

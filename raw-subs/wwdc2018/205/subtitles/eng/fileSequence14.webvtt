@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.086 --> 00:14:01.886 A:middle
+Now, when the user completes
+
+00:14:01.886 --> 00:14:03.106 A:middle
+this task as part of the
+
+00:14:03.106 --> 00:14:05.166 A:middle
+delegate call-back, the ORK
+
+00:14:05.166 --> 00:14:06.636 A:middle
+result object will be returned
+
+00:14:06.636 --> 00:14:06.966 A:middle
+to you.
+
+00:14:07.456 --> 00:14:08.906 A:middle
+Let's take a look at what that
+
+00:14:08.906 --> 00:14:10.306 A:middle
+object looks like for this
+
+00:14:10.306 --> 00:14:11.926 A:middle
+particular task.
+
+00:14:12.076 --> 00:14:13.386 A:middle
+So, at the top level you get a
+
+00:14:13.386 --> 00:14:14.726 A:middle
+variety of information that
+
+00:14:14.726 --> 00:14:16.086 A:middle
+includes things like output
+
+00:14:16.086 --> 00:14:18.326 A:middle
+volume, and also includes an
+
+00:14:18.326 --> 00:14:19.916 A:middle
+array of sample objects.
+
+00:14:20.436 --> 00:14:22.036 A:middle
+These objects in turn
+
+00:14:22.076 --> 00:14:23.416 A:middle
+encapsulate things like
+
+00:14:23.446 --> 00:14:24.946 A:middle
+channels, which refers to
+
+00:14:24.946 --> 00:14:26.366 A:middle
+whether the tone was being
+
+00:14:26.366 --> 00:14:27.766 A:middle
+played in the left or right
+
+00:14:27.766 --> 00:14:29.956 A:middle
+channel to the user, as well as
+
+00:14:29.996 --> 00:14:31.166 A:middle
+the threshold value, as
+
+00:14:31.166 --> 00:14:31.936 A:middle
+determined by the
+
+00:14:31.936 --> 00:14:33.176 A:middle
+Hughson-Westlake Method.
+
+00:14:33.796 --> 00:14:35.466 A:middle
+This also consists of an array
+
+00:14:35.466 --> 00:14:36.666 A:middle
+of unit objects.
+
+00:14:37.266 --> 00:14:38.936 A:middle
+And the unit objects in turn,
+
+00:14:39.026 --> 00:14:40.886 A:middle
+provide details like the dBHl
+
+00:14:40.886 --> 00:14:42.916 A:middle
+value at which that particular
+
+00:14:42.916 --> 00:14:44.426 A:middle
+tone was being played, and a
+
+00:14:44.426 --> 00:14:46.006 A:middle
+variety of timestamps, which
+
+00:14:46.006 --> 00:14:48.576 A:middle
+also includes when exactly did
+
+00:14:48.576 --> 00:14:49.886 A:middle
+the user tap the button.
+
+00:14:51.036 --> 00:14:52.996 A:middle
+So, now let's move on to our
+
+00:14:52.996 --> 00:14:54.686 A:middle
+next task that falls under the
+
+00:14:54.686 --> 00:14:55.716 A:middle
+hearing category.
+
+00:14:56.396 --> 00:14:58.686 A:middle
+We are adding an environment SPL
+
+00:14:58.686 --> 00:14:59.166 A:middle
+meter.
+

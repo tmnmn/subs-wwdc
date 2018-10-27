@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.066 --> 00:40:00.856 A:middle
+header will include both public
+
+00:40:00.856 --> 00:40:02.476 A:middle
+and internal declarations.
+
+00:40:03.056 --> 00:40:04.516 A:middle
+This allows you to use internal
+
+00:40:04.516 --> 00:40:06.416 A:middle
+Swift from the Objective-C parts
+
+00:40:06.456 --> 00:40:07.626 A:middle
+of your app.
+
+00:40:08.416 --> 00:40:10.296 A:middle
+For frameworks, however, the
+
+00:40:10.296 --> 00:40:11.846 A:middle
+generated header provides only
+
+00:40:11.846 --> 00:40:13.126 A:middle
+public declarations.
+
+00:40:13.456 --> 00:40:14.736 A:middle
+Since it's included in your
+
+00:40:14.736 --> 00:40:16.386 A:middle
+build products and it's part of
+
+00:40:16.386 --> 00:40:17.316 A:middle
+the framework's public
+
+00:40:17.316 --> 00:40:17.986 A:middle
+interface.
+
+00:40:18.516 --> 00:40:22.286 A:middle
+On the right, you can see that
+
+00:40:22.286 --> 00:40:23.426 A:middle
+the compiler ties the
+
+00:40:23.426 --> 00:40:25.646 A:middle
+Objective-C class to the mangled
+
+00:40:25.646 --> 00:40:27.956 A:middle
+name of the Swift class which
+
+00:40:27.956 --> 00:40:29.336 A:middle
+includes the name of the module,
+
+00:40:29.806 --> 00:40:30.276 A:middle
+PetWall.
+
+00:40:30.896 --> 00:40:33.066 A:middle
+Now I'm going to tell you about
+
+00:40:33.066 --> 00:40:35.346 A:middle
+modules in a bit, and Louis will
+
+00:40:35.346 --> 00:40:36.426 A:middle
+tell you about mangling.
+
+00:40:36.966 --> 00:40:38.316 A:middle
+But for now, the thing to know
+
+00:40:38.646 --> 00:40:40.296 A:middle
+is that this prevents a conflict
+
+00:40:40.296 --> 00:40:41.786 A:middle
+in the runtime when the two
+
+00:40:41.786 --> 00:40:43.736 A:middle
+modules define a class with the
+
+00:40:43.736 --> 00:40:44.416 A:middle
+same name.
+
+00:40:44.926 --> 00:40:47.646 A:middle
+You can tell Swift to use a
+
+00:40:47.646 --> 00:40:49.176 A:middle
+different name for the class in
+
+00:40:49.176 --> 00:40:51.066 A:middle
+Objective-C by passing an
+
+00:40:51.066 --> 00:40:53.476 A:middle
+identifier to the obc attribute.
+
+00:40:54.266 --> 00:40:55.746 A:middle
+But if you do this, you're
+
+00:40:55.746 --> 00:40:57.436 A:middle
+responsible for making sure the
+
+00:40:57.436 --> 00:40:58.586 A:middle
+names don't conflict.
+
+00:40:59.966 --> 00:41:02.776 A:middle
+Here I've used the PWL prefix so
+

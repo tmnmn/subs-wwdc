@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.216 --> 00:13:00.856 A:middle
+specific to Health Records.
+
+00:13:01.516 --> 00:13:05.996 A:middle
+We have a new API Get Request
+
+00:13:06.036 --> 00:13:08.016 A:middle
+Status for Authorization, which
+
+00:13:08.016 --> 00:13:09.696 A:middle
+allows you to determine if we
+
+00:13:09.696 --> 00:13:11.486 A:middle
+would present a permission sheet
+
+00:13:11.616 --> 00:13:12.306 A:middle
+to the user.
+
+00:13:14.356 --> 00:13:17.246 A:middle
+This gives you an opportunity to
+
+00:13:18.186 --> 00:13:19.926 A:middle
+determine whether your user will
+
+00:13:19.926 --> 00:13:21.566 A:middle
+need to see the authorization
+
+00:13:21.566 --> 00:13:23.676 A:middle
+sheet and optionally present a
+
+00:13:23.676 --> 00:13:26.116 A:middle
+UI to provide them with more
+
+00:13:26.116 --> 00:13:27.866 A:middle
+context prior to authorization.
+
+00:13:31.136 --> 00:13:33.636 A:middle
+To do this you call Get Request
+
+00:13:33.676 --> 00:13:35.356 A:middle
+Status for Authorization on the
+
+00:13:35.356 --> 00:13:38.436 A:middle
+Health Store, handle any errors,
+
+00:13:39.036 --> 00:13:42.576 A:middle
+and if the request status is
+
+00:13:42.576 --> 00:13:44.396 A:middle
+should request you can
+
+00:13:44.396 --> 00:13:47.016 A:middle
+optionally present that UI prior
+
+00:13:47.106 --> 00:13:47.976 A:middle
+to requesting authorization.
+
+00:13:52.416 --> 00:13:54.456 A:middle
+Now there may also be some types
+
+00:13:54.456 --> 00:13:56.006 A:middle
+of data that your app requires
+
+00:13:56.006 --> 00:13:58.526 A:middle
+access to, to provide a safe
+
+00:13:58.576 --> 00:14:01.366 A:middle
+experience or perhaps if you
+

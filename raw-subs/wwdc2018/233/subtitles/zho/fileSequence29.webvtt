@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.705 --> 00:29:01.508 align:middle line:-2
+内置于Instruments中的
+Time Profiler
+
+00:29:01.575 --> 00:29:02.976 align:middle line:-1
+是此目的的终极工具
+
+00:29:03.844 --> 00:29:07.181 align:middle line:-1
+它可以为你提供
+
+00:29:07.247 --> 00:29:09.449 align:middle line:-1
+执行每个代码行所需的CPU时间
+
+00:29:10.150 --> 00:29:13.387 align:middle line:-2
+这是一个非常强大的工具
+我们鼓励你去看看
+
+00:29:13.453 --> 00:29:17.691 align:middle line:-2
+在2016年WWDC中的演讲
+“使用Instrument中的Time Profiler”
+
+00:29:18.926 --> 00:29:21.161 align:middle line:-2
+一旦你使用
+Time Profiler工具
+
+00:29:21.228 --> 00:29:22.896 align:middle line:-1
+发现了这些热点
+
+00:29:23.297 --> 00:29:25.966 align:middle line:-1
+我们为你提供了一些很棒的优化技巧
+
+00:29:27.234 --> 00:29:31.572 align:middle line:-2
+首先是使用UICollectionView
+和UITableView预取
+
+00:29:32.239 --> 00:29:35.943 align:middle line:-2
+这些API会告诉你用户何时
+针对某些单元格进行滚动
+
+00:29:36.009 --> 00:29:40.781 align:middle line:-1
+并且为你提供预加载该数据的机会
+
+00:29:41.615 --> 00:29:45.586 align:middle line:-2
+2016年有两位非常英俊的主持人
+就此发表了精彩的演讲
+
+00:29:45.652 --> 00:29:47.721 align:middle line:-1
+我非常鼓励你观看它
+
+00:29:49.489 --> 00:29:53.894 align:middle line:-2
+我给你的下一个技巧是
+将尽可能多的工作
+
+00:29:53.961 --> 00:29:56.930 align:middle line:-1
+移出主队列并放入后台队列
+
+00:29:57.231 --> 00:30:01.668 align:middle line:-2
+腾出主队列以便更新UI
+并处理用户输入
+

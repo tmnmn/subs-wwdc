@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:56.043 --> 00:18:00.147 align:start position:32% line:-2
+プロトコルに合致する
+クラスを実装します
+
+00:18:00.247 --> 00:18:02.449 align:start position:23% line:-1
+MyWeightsと呼びますね
+
+00:18:04.618 --> 00:18:08.455 align:start position:29% line:-2
+データソースプロバイダは
+非常に有用です
+
+00:18:08.555 --> 00:18:12.826 align:start position:27% line:-2
+例えば ネットワークに
+大量の畳み込みノードがあり
+
+00:18:13.160 --> 00:18:16.730 align:start position:34% line:-2
+重みの全体サイズが
+大きい時があります
+
+00:18:16.830 --> 00:18:22.336 align:start position:27% line:-2
+そんな時は 一度に重みを
+メモリに入れたくありません
+
+00:18:22.636 --> 00:18:26.907 align:start position:30% line:-2
+メモリフットプリントは
+低く抑えたいのです
+
+00:18:27.374 --> 00:18:29.810 align:start position:29% line:-1
+データソースプロバイダは
+
+00:18:29.910 --> 00:18:34.882 align:start position:21% line:-2
+Just-In-Timeロードと
+パージを行います
+
+00:18:35.582 --> 00:18:39.953 align:start position:27% line:-2
+そのため １つのカーネルに
+重みをロードし
+
+00:18:40.053 --> 00:18:43.690 align:start position:30% line:-2
+次の畳み込みカーネルに
+移る前にパージできます
+
+00:18:46.193 --> 00:18:48.729 align:start position:20% line:-1
+これがMyWeightsの実装です
+
+00:18:49.363 --> 00:18:52.466 align:start position:32% line:-1
+初期化メソッドを使い
+
+00:18:52.566 --> 00:18:56.003 align:start position:25% line:-1
+メモリに取り込み 準備します
+
+00:18:56.103 --> 00:18:58.939 align:start position:32% line:-2
+グラフがロード機能を
+呼び出した後は
+
+00:18:59.039 --> 00:19:03.043 align:start position:27% line:-2
+パージメソッドが呼び出され
+重みを解放できます
+

@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.267 --> 00:05:05.572 align:start position:30% line:-2
+たった15行のコードで
+以上のことができました
+
+00:05:05.739 --> 00:05:08.408 align:start position:20% line:-2
+SwiftとFoundationの
+おかげです
+
+00:05:09.443 --> 00:05:12.079 align:start position:29% line:-2
+しかし
+１つのメソッドにすると―
+
+00:05:12.179 --> 00:05:16.984 align:start position:29% line:-2
+コードのテストしやすさと
+保守性が問題になります
+
+00:05:20.888 --> 00:05:23.390 align:start position:27% line:-1
+ピラミッドの最下部を見ると
+
+00:05:23.490 --> 00:05:28.996 align:start position:27% line:-2
+各フローのユニットテストを
+記述することが重要です
+
+00:05:30.831 --> 00:05:35.269 align:start position:30% line:-2
+まずリクエスト準備と
+応答の解析についてです
+
+00:05:38.739 --> 00:05:41.375 align:start position:30% line:-2
+テストしやすいコードに
+するために―
+
+00:05:41.842 --> 00:05:44.478 align:start position:20% line:-2
+View Controllerから
+取り出して
+
+00:05:45.512 --> 00:05:49.583 align:start position:5% line:-2
+PointsOfInterestRequest型に
+２つのメソッドを作成
+
+00:05:50.517 --> 00:05:56.056 align:start position:29% line:-2
+２つの分離メソッドが
+それぞれ 値を入力として
+
+00:05:56.223 --> 00:06:00.394 align:start position:30% line:-2
+副作用なしで
+出力値に変換するのです
+

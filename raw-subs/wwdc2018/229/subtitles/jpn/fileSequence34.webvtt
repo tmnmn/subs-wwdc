@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:00.674 --> 00:34:04.411 align:start position:34% line:-2
+文字列を複数回
+変換していたのです
+
+00:34:04.511 --> 00:34:08.014 align:start position:20% line:-2
+AttributedStringは
+Objective-Cのもので
+
+00:34:08.114 --> 00:34:12.652 align:start position:27% line:-2
+NSStringを文字列に
+変換していたのです
+
+00:34:13.719 --> 00:34:16.822 align:start position:27% line:-2
+これを
+最初のレンジを計算する時と
+
+00:34:16.924 --> 00:34:19.525 align:start position:25% line:-2
+NSRangeに変換する時の
+２度やっています
+
+00:34:20.694 --> 00:34:25.232 align:start position:29% line:-2
+これをループしたら
+かなりの時間を費やします
+
+00:34:25.466 --> 00:34:27.301 align:start position:32% line:-1
+なぜこれが起こるか？
+
+00:34:27.501 --> 00:34:31.405 align:start position:16% line:-2
+Swift側で
+text.stringを呼び出しますが
+
+00:34:31.705 --> 00:34:34.875 align:start position:4% line:-2
+NSMutableAttributedStringの
+実行はObjective-C側です
+
+00:34:34.975 --> 00:34:39.478 align:start position:30% line:-2
+オリジナルの実装を
+確認しないといけません
+
+00:34:40.681 --> 00:34:43.016 align:start position:20% line:-1
+オリジナルがNSStringを返し
+
+00:34:43.283 --> 00:34:47.187 align:start position:29% line:-2
+これは参照型なので
+ブリッジが必要になります
+
+00:34:47.521 --> 00:34:52.059 align:start position:29% line:-2
+クラスタごと 文字ごとに
+変換します
+
+00:34:52.793 --> 00:34:58.398 align:start position:29% line:-2
+戻り型でもパラメータでも
+ブリッジ変換が発生します
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:55.923 --> 00:26:00.694 align:start position:27% line:-2
+他のビューもある場合は
+drawRectを用います
+
+00:26:00.794 --> 00:26:04.765 align:start position:36% line:-2
+両方使用した方が
+いいわけです
+
+00:26:05.332 --> 00:26:10.404 align:start position:23% line:-2
+CGやAppKitのAPIでも
+表現しきれないなら
+
+00:26:10.504 --> 00:26:15.342 align:start position:20% line:-2
+wantsUpdateLayerを
+上書きします
+
+00:26:15.442 --> 00:26:20.414 align:start position:21% line:-2
+それで“true”と返ってきたら
+レイヤを明示にします
+
+00:26:22.916 --> 00:26:27.788 align:start position:11% line:-2
+AppKitとCore Animationの
+別の便利な利用法です
+
+00:26:27.888 --> 00:26:33.093 align:start position:23% line:-2
+NSViewsの基本的な用語で
+インターフェイスを設定します
+
+00:26:33.260 --> 00:26:36.663 align:start position:20% line:-2
+NSImageViewとNSBox
+NSTextFieldです
+
+00:26:36.763 --> 00:26:39.700 align:start position:29% line:-2
+複雑なインターフェイスの
+設定には最適で
+
+00:26:39.800 --> 00:26:44.338 align:start position:27% line:-2
+表示にどんな技術を使っても
+正確に起動します
+
+00:26:45.539 --> 00:26:48.141 align:start position:16% line:-1
+Layer Backingの変更点です
+
+00:26:48.242 --> 00:26:51.812 align:start position:21% line:-2
+これはmacOS 10.14では
+もう使えません
+
+00:26:51.912 --> 00:26:54.448 align:start position:20% line:-2
+NSViewのlockFocusと
+unlockFocusを使う場合
+
+00:26:54.548 --> 00:26:57.985 align:start position:34% line:-2
+直接ウインドウに
+アクセスする場合は
+
+00:26:58.085 --> 00:27:02.689 align:start position:25% line:-2
+NSViewをサブクラスにし
+drawRectを実行します
+

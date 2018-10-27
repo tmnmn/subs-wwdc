@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.956 --> 00:13:01.566 A:middle
+responses without having to deal
+
+00:13:01.566 --> 00:13:02.736 A:middle
+with the complications of
+
+00:13:02.866 --> 00:13:04.326 A:middle
+testing your UI at the same
+
+00:13:04.916 --> 00:13:05.000 A:middle
+time.
+
+00:13:10.396 --> 00:13:12.596 A:middle
+So, to wrap up, we've seen an
+
+00:13:12.596 --> 00:13:14.476 A:middle
+example of breaking code into
+
+00:13:14.476 --> 00:13:16.306 A:middle
+smaller, independent pieces to
+
+00:13:16.306 --> 00:13:17.566 A:middle
+facilitate unit testing.
+
+00:13:18.156 --> 00:13:21.506 A:middle
+We've seen how URLProtocol can
+
+00:13:21.506 --> 00:13:23.426 A:middle
+be used as a tool for mocking
+
+00:13:23.426 --> 00:13:24.386 A:middle
+network requests,
+
+00:13:24.646 --> 00:13:27.426 A:middle
+and we've discussed how the
+
+00:13:27.426 --> 00:13:29.046 A:middle
+power of the pyramid can be used
+
+00:13:29.306 --> 00:13:30.336 A:middle
+to help us structure a
+
+00:13:30.336 --> 00:13:32.006 A:middle
+well-balanced test suite that'll
+
+00:13:32.006 --> 00:13:33.156 A:middle
+give us good confidence in our
+
+00:13:33.946 --> 00:13:34.046 A:middle
+code.
+
+00:13:35.186 --> 00:13:36.656 A:middle
+Now, I want to call Stuart to
+
+00:13:36.656 --> 00:13:38.176 A:middle
+the stage to talk about some
+
+00:13:38.236 --> 00:13:38.886 A:middle
+more techniques.
+
+00:13:40.516 --> 00:13:42.696 A:middle
+[ Applause ]
+
+00:13:43.196 --> 00:13:43.386 A:middle
+&gt;&gt; Thanks.
+
+00:13:46.616 --> 00:13:47.286 A:middle
+Thanks, Brian.
+
+00:13:48.186 --> 00:13:49.626 A:middle
+So, the first area I'd like to
+
+00:13:49.626 --> 00:13:51.016 A:middle
+talk about is some best
+
+00:13:51.056 --> 00:13:52.226 A:middle
+practices for testing
+
+00:13:52.226 --> 00:13:53.066 A:middle
+notifications.
+
+00:13:54.776 --> 00:13:57.036 A:middle
+And to clarify, by notification
+
+00:13:57.036 --> 00:13:58.276 A:middle
+here, I'm talking about
+
+00:13:58.426 --> 00:13:59.916 A:middle
+foundation-level notifications
+

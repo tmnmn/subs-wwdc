@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.386 --> 00:05:00.866 A:middle
+The CarPlay framework provides a
+
+00:05:00.866 --> 00:05:03.406 A:middle
+fixed set of UI templates that
+
+00:05:03.406 --> 00:05:04.916 A:middle
+iOS renders on the car screen.
+
+00:05:05.736 --> 00:05:07.476 A:middle
+Your app decides how to create
+
+00:05:07.476 --> 00:05:08.766 A:middle
+and configure these templates
+
+00:05:08.996 --> 00:05:10.406 A:middle
+and what actions to take in
+
+00:05:10.406 --> 00:05:12.186 A:middle
+response to the user interacting
+
+00:05:12.186 --> 00:05:13.366 A:middle
+with your app's templates.
+
+00:05:13.786 --> 00:05:15.186 A:middle
+We'll hear much more about the
+
+00:05:15.186 --> 00:05:16.256 A:middle
+CarPlay framework, soon.
+
+00:05:16.806 --> 00:05:19.336 A:middle
+Back to our CarPlay app
+
+00:05:19.336 --> 00:05:20.886 A:middle
+categories, today we'll be
+
+00:05:20.886 --> 00:05:22.156 A:middle
+focusing on two of these
+
+00:05:22.156 --> 00:05:23.896 A:middle
+categories; audio and
+
+00:05:23.896 --> 00:05:24.626 A:middle
+navigation.
+
+00:05:24.986 --> 00:05:26.246 A:middle
+Let's start with audio apps.
+
+00:05:26.416 --> 00:05:26.806 A:middle
+Albert.
+
+00:05:28.516 --> 00:05:32.500 A:middle
+[ Applause ]
+
+00:05:33.506 --> 00:05:34.076 A:middle
+&gt;&gt; Thanks, Jonathan.
+
+00:05:35.256 --> 00:05:36.936 A:middle
+I'm super stoked to talk to you
+
+00:05:36.936 --> 00:05:38.666 A:middle
+all today about CarPlay audio
+
+00:05:38.666 --> 00:05:38.996 A:middle
+apps.
+
+00:05:39.176 --> 00:05:40.466 A:middle
+We're going to go through a
+
+00:05:40.466 --> 00:05:41.856 A:middle
+brief overview of how to get
+
+00:05:41.856 --> 00:05:43.006 A:middle
+your audio app set up for
+
+00:05:43.006 --> 00:05:43.496 A:middle
+CarPlay.
+
+00:05:44.136 --> 00:05:45.506 A:middle
+Some performance improvements
+
+00:05:45.506 --> 00:05:47.166 A:middle
+and optimizations we've made for
+
+00:05:47.166 --> 00:05:49.716 A:middle
+iOS 12, and some best practices
+
+00:05:49.716 --> 00:05:50.136 A:middle
+to make.
+
+00:05:50.136 --> 00:05:51.456 A:middle
+And some common scenarios to
+
+00:05:51.456 --> 00:05:53.066 A:middle
+account for when developing your
+
+00:05:53.066 --> 00:05:55.676 A:middle
+audio app for CarPlay.
+
+00:05:55.776 --> 00:05:58.206 A:middle
+Now, driving and audio go hand
+
+00:05:58.206 --> 00:05:58.696 A:middle
+in hand.
+
+00:05:58.856 --> 00:06:00.486 A:middle
+It's very clear that when you're
+

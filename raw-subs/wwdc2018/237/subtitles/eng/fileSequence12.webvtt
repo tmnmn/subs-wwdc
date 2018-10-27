@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.876 --> 00:12:01.396 A:middle
+prefer to push the preview
+
+00:12:01.396 --> 00:12:03.386 A:middle
+controller instead you use
+
+00:12:03.386 --> 00:12:03.976 A:middle
+pushViewController.
+
+00:12:08.146 --> 00:12:08.976 A:middle
+This is what it looks like.
+
+00:12:16.046 --> 00:12:17.286 A:middle
+The QLPreviewController class
+
+00:12:17.286 --> 00:12:18.866 A:middle
+provides a few more methods that
+
+00:12:18.866 --> 00:12:19.906 A:middle
+I would like to highlight.
+
+00:12:20.956 --> 00:12:22.826 A:middle
+First, if you want to know if
+
+00:12:22.826 --> 00:12:24.296 A:middle
+Quick Look is capable of
+
+00:12:24.366 --> 00:12:25.986 A:middle
+previewing a certain document
+
+00:12:26.706 --> 00:12:28.756 A:middle
+use the canPreview item class
+
+00:12:28.756 --> 00:12:32.026 A:middle
+method, this will return true if
+
+00:12:32.026 --> 00:12:33.726 A:middle
+the document matches any of the
+
+00:12:33.726 --> 00:12:36.376 A:middle
+supported default file types or
+
+00:12:36.376 --> 00:12:37.756 A:middle
+if there is a preview extension
+
+00:12:37.756 --> 00:12:39.226 A:middle
+available that can handle the
+
+00:12:39.226 --> 00:12:39.666 A:middle
+file.
+
+00:12:41.856 --> 00:12:43.766 A:middle
+The data source we've already
+
+00:12:43.766 --> 00:12:44.216 A:middle
+covered.
+
+00:12:46.816 --> 00:12:49.216 A:middle
+Reload data reloads the list of
+
+00:12:49.216 --> 00:12:50.356 A:middle
+documents your preview
+
+00:12:50.356 --> 00:12:51.556 A:middle
+controller should present.
+
+00:12:52.236 --> 00:12:54.406 A:middle
+If this list ever changes while
+
+00:12:54.406 --> 00:12:55.486 A:middle
+the preview controller is
+
+00:12:55.486 --> 00:12:57.626 A:middle
+currently presented use this
+
+00:12:57.626 --> 00:12:59.236 A:middle
+method to trigger a reload.
+

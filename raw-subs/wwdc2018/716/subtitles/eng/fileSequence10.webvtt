@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.136 --> 00:10:01.076 A:middle
+So, what I get back?
+
+00:10:01.076 --> 00:10:02.626 A:middle
+I get back a face observation
+
+00:10:02.626 --> 00:10:04.116 A:middle
+object, and the one of the more
+
+00:10:04.116 --> 00:10:05.496 A:middle
+important fields in that object
+
+00:10:05.496 --> 00:10:06.576 A:middle
+is the bounding box where the
+
+00:10:06.576 --> 00:10:07.336 A:middle
+face is located.
+
+00:10:09.116 --> 00:10:10.836 A:middle
+Let's take a look at this slide
+
+00:10:10.836 --> 00:10:11.156 A:middle
+again.
+
+00:10:11.156 --> 00:10:12.976 A:middle
+The first three lines is pretty
+
+00:10:12.976 --> 00:10:14.446 A:middle
+much all you need to find all
+
+00:10:14.446 --> 00:10:15.426 A:middle
+the faces in the image.
+
+00:10:15.636 --> 00:10:16.296 A:middle
+Isn't that cool?
+
+00:10:18.516 --> 00:10:22.306 A:middle
+[ Applause ]
+
+00:10:22.806 --> 00:10:23.656 A:middle
+Let's now take a look at the
+
+00:10:23.656 --> 00:10:25.246 A:middle
+Sequence Request Handler.
+
+00:10:27.636 --> 00:10:28.956 A:middle
+Well, sequence request handler,
+
+00:10:28.956 --> 00:10:29.846 A:middle
+as you remember, is used to
+
+00:10:29.846 --> 00:10:31.726 A:middle
+process a particular operation
+
+00:10:31.726 --> 00:10:33.566 A:middle
+like tracking on a sequence of
+
+00:10:33.566 --> 00:10:34.006 A:middle
+frames.
+
+00:10:35.486 --> 00:10:36.646 A:middle
+Let's look at code sample, and
+
+00:10:36.646 --> 00:10:38.406 A:middle
+this code sample is pretty much
+
+00:10:38.406 --> 00:10:40.646 A:middle
+the simplest tracking sequence
+
+00:10:40.646 --> 00:10:42.246 A:middle
+we can imagine with Vision API.
+
+00:10:43.556 --> 00:10:45.056 A:middle
+First, I'm going to create my
+
+00:10:45.226 --> 00:10:46.096 A:middle
+Sequence Request Handler.
+
+00:10:47.416 --> 00:10:49.116 A:middle
+Then, I need to specify which
+
+00:10:49.116 --> 00:10:50.436 A:middle
+object I want to track, and I'm
+
+00:10:50.436 --> 00:10:52.126 A:middle
+going to do that by creating a
+
+00:10:52.126 --> 00:10:53.926 A:middle
+detected object observation,
+
+00:10:53.926 --> 00:10:55.536 A:middle
+which gets us a parameter
+
+00:10:55.876 --> 00:10:57.496 A:middle
+location, a bounding box.
+
+00:10:58.806 --> 00:11:00.256 A:middle
+Then, I'm going to start my
+

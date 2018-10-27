@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.132 --> 00:45:00.768 align:start position:21% line:-1
+マルチスレッドバグだと思われます
+
+00:45:01.969 --> 00:45:05.072 align:start position:11% line:-1
+LazyImageViewクラスを見ましょう
+
+00:45:05.172 --> 00:45:11.044 align:start position:27% line:-2
+ボタンを押してコードに飛び
+プロジェクトで開きます
+
+00:45:11.812 --> 00:45:14.748 align:start position:12% line:-1
+LazyImageViewのソースが出ます
+
+00:45:15.282 --> 00:45:17.551 align:start position:16% line:-1
+UIImageViewのサブクラスです
+
+00:45:17.651 --> 00:45:22.656 align:start position:23% line:-2
+イメージを遅延させ
+非同期的にロードする機能がある
+
+00:45:22.756 --> 00:45:25.692 align:start position:34% line:-2
+イニシャライザに
+ロジックがあります
+
+00:45:25.792 --> 00:45:29.630 align:start position:27% line:-2
+バックグラウンドのキューに
+ジョブを割り当てて―
+
+00:45:29.730 --> 00:45:32.699 align:start position:27% line:-2
+バックグラウンドスレッドに
+画像を作成します
+
+00:45:32.800 --> 00:45:38.405 align:start position:25% line:-2
+終わればメインキューに戻し
+スクリーンに画像を表示します
+
+00:45:39.406 --> 00:45:42.342 align:start position:29% line:-2
+クラッシュログは
+このコードを示しています
+
+00:45:42.543 --> 00:45:45.579 align:start position:29% line:-2
+画像キャッシュに
+アクセスしている箇所です
+
+00:45:45.679 --> 00:45:51.185 align:start position:25% line:-2
+不必要に同じ画像を何度も
+作成しないようにするためです
+
+00:45:51.285 --> 00:45:54.655 align:start position:21% line:-1
+ここにバグがあるのかもしれません
+
+00:45:54.888 --> 00:45:56.123 align:start position:38% line:-1
+確認しましょう
+
+00:45:56.223 --> 00:46:00.761 align:start position:25% line:-2
+シミュレータでAppを実行し
+クラッシュを再現しましょう
+

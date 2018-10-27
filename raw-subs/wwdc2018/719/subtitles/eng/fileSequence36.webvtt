@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.726 --> 00:36:00.336 A:middle
+It's extremely powerful, and
+
+00:36:00.336 --> 00:36:01.646 A:middle
+this all [inaudible] time so you
+
+00:36:01.646 --> 00:36:02.756 A:middle
+can really fine-tune your
+
+00:36:02.756 --> 00:36:03.926 A:middle
+filters this way and make sure
+
+00:36:03.926 --> 00:36:05.626 A:middle
+you achieve the effect that
+
+00:36:05.626 --> 00:36:06.276 A:middle
+you're looking for.
+
+00:36:06.476 --> 00:36:09.716 A:middle
+Let's take a look at a more
+
+00:36:09.716 --> 00:36:11.436 A:middle
+complicated kernel here.
+
+00:36:11.436 --> 00:36:12.406 A:middle
+So, we'll look at a general
+
+00:36:12.406 --> 00:36:14.626 A:middle
+kernel, which is a bit like the
+
+00:36:14.626 --> 00:36:15.086 A:middle
+[inaudible] I showed you
+
+00:36:15.086 --> 00:36:16.456 A:middle
+earlier, which is a kernel that
+
+00:36:16.456 --> 00:36:17.506 A:middle
+makes additional taps in the
+
+00:36:17.506 --> 00:36:18.536 A:middle
+neighborhood of each pixel.
+
+00:36:19.516 --> 00:36:20.856 A:middle
+So start with an image from
+
+00:36:20.856 --> 00:36:21.826 A:middle
+file, which is the same image we
+
+00:36:21.826 --> 00:36:24.116 A:middle
+saw earlier, and we have our
+
+00:36:24.116 --> 00:36:25.236 A:middle
+kernel code here.
+
+00:36:25.346 --> 00:36:26.456 A:middle
+Without going into the detail,
+
+00:36:26.456 --> 00:36:27.576 A:middle
+this is a bilateral filter,
+
+00:36:27.576 --> 00:36:29.186 A:middle
+which is an edge over blurring
+
+00:36:29.186 --> 00:36:29.646 A:middle
+filter.
+
+00:36:30.006 --> 00:36:32.816 A:middle
+So let's just get the code in
+
+00:36:33.286 --> 00:36:39.016 A:middle
+and use apply kernel with some
+
+00:36:39.016 --> 00:36:41.376 A:middle
+parameters that will allow us to
+
+00:36:41.376 --> 00:36:42.396 A:middle
+get this very nice effect.
+
+00:36:42.396 --> 00:36:43.236 A:middle
+And what we did here,
+
+00:36:43.236 --> 00:36:46.156 A:middle
+essentially, is clipped the
+
+00:36:46.156 --> 00:36:47.686 A:middle
+non-redundant high frequencies
+
+00:36:47.736 --> 00:36:48.286 A:middle
+in the image.
+
+00:36:48.286 --> 00:36:50.326 A:middle
+And if we take a look -- let's
+
+00:36:50.326 --> 00:36:51.136 A:middle
+take a look at this a bit more
+
+00:36:51.136 --> 00:36:51.566 A:middle
+closely.
+
+00:36:52.156 --> 00:36:54.096 A:middle
+Look at a crop here.
+
+00:36:54.096 --> 00:36:55.776 A:middle
+We can see how the strong edges
+
+00:36:55.776 --> 00:36:57.456 A:middle
+are still there, but the fine
+
+00:36:57.456 --> 00:36:58.626 A:middle
+frequencies that are not
+
+00:36:58.626 --> 00:36:59.746 A:middle
+redundant were washed away.
+

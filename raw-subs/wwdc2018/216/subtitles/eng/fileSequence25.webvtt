@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.536 --> 00:25:01.406 A:middle
+Well, types form a tree, which
+
+00:25:01.406 --> 00:25:02.946 A:middle
+we call the [inaudible] tree,
+
+00:25:03.906 --> 00:25:08.276 A:middle
+and you can think of it like a
+
+00:25:08.276 --> 00:25:09.196 A:middle
+[inaudible], like Swift.
+
+00:25:10.546 --> 00:25:13.856 A:middle
+For example, JPEG images and
+
+00:25:14.256 --> 00:25:17.006 A:middle
+HEIF images are both kinds of
+
+00:25:17.156 --> 00:25:17.556 A:middle
+images.
+
+00:25:18.626 --> 00:25:21.116 A:middle
+And, .image conforms to our root
+
+00:25:21.116 --> 00:25:23.536 A:middle
+type for user-created, or
+
+00:25:23.536 --> 00:25:26.156 A:middle
+user-visible, documents, which
+
+00:25:26.156 --> 00:25:29.976 A:middle
+is called public.content.
+
+00:25:30.076 --> 00:25:31.416 A:middle
+Now, public.content has other
+
+00:25:31.416 --> 00:25:33.366 A:middle
+children, like, for example,
+
+00:25:33.366 --> 00:25:34.166 A:middle
+public.spreadsheet.
+
+00:25:35.996 --> 00:25:38.666 A:middle
+You can find this list of types
+
+00:25:38.786 --> 00:25:41.566 A:middle
+in the documentation I pointed
+
+00:25:42.256 --> 00:25:42.586 A:middle
+to earlier.
+
+00:25:42.586 --> 00:25:43.776 A:middle
+Now, we need to find a spot in
+
+00:25:43.776 --> 00:25:44.866 A:middle
+this tree for my type,
+
+00:25:45.136 --> 00:25:45.706 A:middle
+Particles.
+
+00:25:46.956 --> 00:25:49.186 A:middle
+Since the particle system is not
+
+00:25:49.296 --> 00:25:51.916 A:middle
+a common file category, there is
+
+00:25:51.916 --> 00:25:53.516 A:middle
+no [inaudible] category for me.
+
+00:25:54.076 --> 00:25:55.736 A:middle
+So, I can't just make it conform
+
+00:25:55.736 --> 00:25:58.786 A:middle
+to public.content directly.
+
+00:25:58.876 --> 00:26:00.226 A:middle
+And, I need to conform to
+

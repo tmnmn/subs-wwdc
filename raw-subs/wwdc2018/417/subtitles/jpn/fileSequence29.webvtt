@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.873 --> 00:29:03.777 align:start position:30% line:-2
+原因はコードの非同期や
+タイマーの使用でしょう
+
+00:29:04.411 --> 00:29:08.081 align:start position:30% line:-2
+遅延したアクションには
+注意が要りますし
+
+00:29:08.182 --> 00:29:11.385 align:start position:38% line:-2
+すべての速度が
+落ちかねません
+
+00:29:11.752 --> 00:29:17.624 align:start position:29% line:-2
+必要ではない遅延を
+避ける方法をご紹介します
+
+00:29:19.159 --> 00:29:23.130 align:start position:30% line:-2
+例えば我々がビルド中の
+アプリケーションでは
+
+00:29:23.230 --> 00:29:27.434 align:start position:34% line:-2
+メインUIの下部に
+注目地点を表示
+
+00:29:27.534 --> 00:29:33.073 align:start position:25% line:-2
+10秒ごとに入れ替わりながら
+近くの上位地点を表示します
+
+00:29:33.474 --> 00:29:39.112 align:start position:25% line:-2
+いくつかの選択肢の中から
+Timer APIを使います
+
+00:29:40.881 --> 00:29:43.617 align:start position:34% line:-2
+このクラスの
+ユニットテストです
+
+00:29:44.017 --> 00:29:46.420 align:start position:12% line:-2
+FeaturedPlaceManagerを
+生成し
+
+00:29:46.520 --> 00:29:51.125 align:start position:11% line:-2
+scheduleNextPlaceメソッドを
+呼び出すまで 現在地を保存
+
+00:29:51.492 --> 00:29:56.763 align:start position:30% line:-2
+実行ループは11秒間で
+１秒は猶予時間です
+
+00:29:57.331 --> 00:30:00.467 align:start position:18% line:-2
+最後に
+currentPlaceの変化を確認
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:00.496 --> 00:06:01.376 A:middle
+Next, I want to talk about
+
+00:06:01.376 --> 00:06:02.506 A:middle
+formalized protocols.
+
+00:06:03.446 --> 00:06:04.966 A:middle
+In the olden days, we used to
+
+00:06:04.966 --> 00:06:06.936 A:middle
+use informal protocols, which
+
+00:06:06.936 --> 00:06:08.176 A:middle
+are basically categories on
+
+00:06:08.246 --> 00:06:09.556 A:middle
+NSObject to group related
+
+00:06:09.596 --> 00:06:10.356 A:middle
+methods together.
+
+00:06:10.966 --> 00:06:11.906 A:middle
+And, since then, we added
+
+00:06:11.906 --> 00:06:13.056 A:middle
+features such as optional
+
+00:06:13.056 --> 00:06:14.846 A:middle
+methods on protocols and so on,
+
+00:06:14.846 --> 00:06:15.626 A:middle
+and we've been switching to
+
+00:06:15.626 --> 00:06:17.096 A:middle
+formal protocols where possible.
+
+00:06:17.716 --> 00:06:19.336 A:middle
+And, I'll show you an example of
+
+00:06:19.336 --> 00:06:20.996 A:middle
+one of the ones we did this
+
+00:06:20.996 --> 00:06:21.476 A:middle
+release.
+
+00:06:23.156 --> 00:06:24.056 A:middle
+Here is the method
+
+00:06:24.116 --> 00:06:26.106 A:middle
+validateMenuItem, and it used to
+
+00:06:26.106 --> 00:06:28.826 A:middle
+be an informal protocol, a
+
+00:06:28.826 --> 00:06:31.026 A:middle
+categorization object in 10.13.
+
+00:06:31.346 --> 00:06:32.526 A:middle
+Now, it's a formal protocol,
+
+00:06:32.526 --> 00:06:34.376 A:middle
+called NSMenuItemValidation,
+
+00:06:34.376 --> 00:06:35.216 A:middle
+with .method in it.
+
+00:06:35.706 --> 00:06:37.336 A:middle
+The Swift exposure changes from
+
+00:06:37.336 --> 00:06:39.866 A:middle
+an extension NSObject to a
+
+00:06:39.866 --> 00:06:41.016 A:middle
+formal protocol, of course.
+
+00:06:41.016 --> 00:06:42.886 A:middle
+NSMenuItemValidation in Swift
+
+00:06:42.886 --> 00:06:43.566 A:middle
+4.2.
+
+00:06:43.936 --> 00:06:44.986 A:middle
+Of course, the benefits here are
+
+00:06:44.986 --> 00:06:46.846 A:middle
+that objects that do menu item
+
+00:06:46.846 --> 00:06:48.416 A:middle
+validation now have a way to
+
+00:06:48.596 --> 00:06:49.956 A:middle
+formally declare that they do
+
+00:06:49.956 --> 00:06:51.036 A:middle
+that by conforming to this
+
+00:06:51.036 --> 00:06:51.506 A:middle
+protocol.
+
+00:06:52.096 --> 00:06:53.426 A:middle
+Again, we like this so much, we
+
+00:06:53.426 --> 00:06:54.526 A:middle
+did it across a bunch of other
+
+00:06:54.526 --> 00:06:55.246 A:middle
+API's.
+
+00:06:55.806 --> 00:06:57.656 A:middle
+So, here's the full list of
+
+00:06:57.656 --> 00:06:59.146 A:middle
+formal protocols we added in
+
+00:06:59.146 --> 00:06:59.586 A:middle
+AppKit.
+

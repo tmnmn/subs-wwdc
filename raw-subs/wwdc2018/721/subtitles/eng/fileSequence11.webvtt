@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.036 --> 00:11:00.336 A:middle
+suggest the credential on.
+
+00:11:01.496 --> 00:11:03.086 A:middle
+The username of the credential,
+
+00:11:03.626 --> 00:11:06.646 A:middle
+and optional record identifier
+
+00:11:06.646 --> 00:11:07.906 A:middle
+string that you can use to
+
+00:11:07.906 --> 00:11:09.086 A:middle
+correlate this identity to a
+
+00:11:09.086 --> 00:11:10.176 A:middle
+record in your app's own
+
+00:11:10.176 --> 00:11:13.446 A:middle
+database, and a rank parameter.
+
+00:11:14.336 --> 00:11:15.776 A:middle
+If the user has more credentials
+
+00:11:15.776 --> 00:11:17.166 A:middle
+for a particular service than
+
+00:11:17.166 --> 00:11:19.006 A:middle
+the QuickType bar can show, you
+
+00:11:19.006 --> 00:11:20.196 A:middle
+can use the rank parameter to
+
+00:11:20.196 --> 00:11:21.156 A:middle
+mark certain credential
+
+00:11:21.156 --> 00:11:22.626 A:middle
+identities as higher or lower
+
+00:11:22.626 --> 00:11:23.206 A:middle
+priority.
+
+00:11:24.436 --> 00:11:25.556 A:middle
+Credential identities having a
+
+00:11:25.656 --> 00:11:26.826 A:middle
+higher rank value will be
+
+00:11:26.826 --> 00:11:27.956 A:middle
+ordered before credential
+
+00:11:27.956 --> 00:11:29.466 A:middle
+identities with lower ranks.
+
+00:11:32.476 --> 00:11:34.316 A:middle
+These credential identities get
+
+00:11:34.316 --> 00:11:35.696 A:middle
+saved to the Credential Identity
+
+00:11:35.696 --> 00:11:37.426 A:middle
+Store, which is the database
+
+00:11:37.426 --> 00:11:38.896 A:middle
+inside your app's container that
+
+00:11:38.896 --> 00:11:40.606 A:middle
+you can modify using the AS
+
+00:11:40.606 --> 00:11:42.296 A:middle
+Credential Identity Store class.
+
+00:11:43.356 --> 00:11:44.846 A:middle
+AutoFill suggests credentials to
+
+00:11:44.846 --> 00:11:46.276 A:middle
+the user by searching through
+
+00:11:46.276 --> 00:11:47.456 A:middle
+your app's Credential Identity
+
+00:11:47.456 --> 00:11:47.736 A:middle
+Store.
+
+00:11:48.316 --> 00:11:51.836 A:middle
+The Credential Identity Store is
+
+00:11:51.836 --> 00:11:53.196 A:middle
+secured with complete unless
+
+00:11:53.196 --> 00:11:55.026 A:middle
+open data protection, so no
+
+00:11:55.026 --> 00:11:56.446 A:middle
+operations can start while the
+
+00:11:56.446 --> 00:11:57.266 A:middle
+device is locked.
+
+00:11:58.246 --> 00:11:59.416 A:middle
+The system never syncs the
+
+00:11:59.416 --> 00:12:00.616 A:middle
+Credential Identity Store to the
+

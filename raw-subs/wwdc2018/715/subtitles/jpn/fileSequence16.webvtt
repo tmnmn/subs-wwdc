@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.360 --> 00:16:04.531 align:start position:27% line:-2
+startを呼び出した時の
+説明をしましょう
+
+00:16:05.466 --> 00:16:09.503 align:start position:20% line:-2
+これは簡単なステートマシン
+NWConnectionの内部です
+
+00:16:09.603 --> 00:16:12.239 align:start position:30% line:-2
+セットアップの状態から
+startを呼び出すと
+
+00:16:12.339 --> 00:16:15.008 align:start position:32% line:-1
+準備の状態に移ります
+
+00:16:16.276 --> 00:16:18.545 align:start position:38% line:-1
+準備の状態は―
+
+00:16:18.645 --> 00:16:22.950 align:start position:27% line:-2
+ただ接続を
+呼び出す以上のことをします
+
+00:16:23.584 --> 00:16:29.756 align:start position:25% line:-2
+TCPソケットはサーバに
+SYNパケットを送るだけです
+
+00:16:30.757 --> 00:16:36.530 align:start position:7% line:-2
+NWConnectionでstartを呼び出すと
+多くの処理をします
+
+00:16:37.497 --> 00:16:42.636 align:start position:25% line:-2
+そして ネットワークを評価し
+最速で接続するのです
+
+00:16:42.736 --> 00:16:44.771 align:start position:30% line:-1
+さらに掘り下げましょう
+
+00:16:44.972 --> 00:16:48.709 align:start position:21% line:-2
+Smart Connection
+Establishmentです
+
+00:16:49.910 --> 00:16:55.382 align:start position:27% line:-2
+startを呼び出す時は
+まずエンドポイントを取得し
+
+00:16:55.749 --> 00:16:59.286 align:start position:29% line:-2
+利用可能な
+ネットワークを評価します
+
+00:16:59.753 --> 00:17:02.656 align:start position:30% line:-2
+この場合はWi-Fiと
+モバイルデータ通信です
+

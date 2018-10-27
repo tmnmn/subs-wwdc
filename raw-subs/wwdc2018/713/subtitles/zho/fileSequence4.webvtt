@@ -1,0 +1,73 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.106 --> 00:04:01.241 align:middle line:-1
+当你的app收到中文信息时
+
+00:04:01.542 --> 00:04:03.043 align:middle line:-1
+它根本不知道如何处理它
+
+00:04:04.077 --> 00:04:06.747 align:middle line:-2
+我们如何使用Natural Language
+来克服这个问题呢？
+
+00:04:08.348 --> 00:04:11.652 align:middle line:-2
+我们可以通过对两个不同API的
+简单调用来完成此操作
+
+00:04:12.219 --> 00:04:13.887 align:middle line:-1
+首先是语言识别
+
+00:04:15.088 --> 00:04:16.456 align:middle line:-1
+使用新的Natural Language框架
+
+00:04:16.523 --> 00:04:18.725 align:middle line:-1
+首先你要导入NaturalLanguage
+
+00:04:19.793 --> 00:04:23.197 align:middle line:-2
+你创建一个
+NLLanguageRecognizer类的实例
+
+00:04:24.431 --> 00:04:26.433 align:middle line:-1
+你附上你想要处理的字符串
+
+00:04:27.201 --> 00:04:29.636 align:middle line:-2
+你只需调用
+dominantLanguage API
+
+00:04:30.404 --> 00:04:33.373 align:middle line:-1
+现在这将根据字符串的语言
+
+00:04:34.074 --> 00:04:35.742 align:middle line:-1
+返回最可能的语言类别
+
+00:04:36.777 --> 00:04:39.479 align:middle line:0
+这里的输出是简体中文
+
+00:04:40.480 --> 00:04:43.150 align:middle line:0
+现在在Natural Language中
+我们也支持一个新的API
+
+00:04:43.483 --> 00:04:45.219 align:middle line:0
+有些情况下你想知道
+
+00:04:45.285 --> 00:04:47.988 align:middle line:0
+特定字符串的较优猜测
+
+00:04:48.622 --> 00:04:50.958 align:middle line:0
+所以你想知道最可能的语言是哪些
+
+00:04:51.024 --> 00:04:52.759 align:middle line:0
+及其相关概率
+
+00:04:53.160 --> 00:04:56.230 align:middle line:0
+你可以设想
+在几个不同的app中使用它
+
+00:04:56.296 --> 00:04:59.366 align:middle line:0
+这些app中包含多语言信息
+所以你需要
+
+00:04:59.433 --> 00:05:01.435 align:middle line:0
+为这些可能的语言留有余地
+

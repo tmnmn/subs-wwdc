@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.056 --> 00:31:00.876 A:middle
+It turns out that cache effects
+
+00:31:01.056 --> 00:31:02.496 A:middle
+that are a result of the
+
+00:31:02.496 --> 00:31:04.936 A:middle
+speculative execution can be
+
+00:31:04.936 --> 00:31:07.756 A:middle
+monitored by malicious code and
+
+00:31:07.756 --> 00:31:10.036 A:middle
+then they can leak that data
+
+00:31:10.036 --> 00:31:11.996 A:middle
+read that was never supposed to
+
+00:31:11.996 --> 00:31:12.416 A:middle
+happen.
+
+00:31:13.026 --> 00:31:14.606 A:middle
+It was out of bounds, that load
+
+00:31:14.606 --> 00:31:16.456 A:middle
+should have not happened, but it
+
+00:31:16.456 --> 00:31:18.996 A:middle
+effects caches and by measuring
+
+00:31:18.996 --> 00:31:21.116 A:middle
+caches the-- an attacker can
+
+00:31:21.116 --> 00:31:22.826 A:middle
+leak that data that was not
+
+00:31:22.826 --> 00:31:23.866 A:middle
+supposed to be loaded.
+
+00:31:25.086 --> 00:31:26.806 A:middle
+OK. How does this map to web
+
+00:31:26.876 --> 00:31:27.396 A:middle
+content?
+
+00:31:28.046 --> 00:31:29.986 A:middle
+Remember the same-origin policy?
+
+00:31:30.476 --> 00:31:31.636 A:middle
+This thing that has been
+
+00:31:31.636 --> 00:31:34.476 A:middle
+protecting us for 20 years that
+
+00:31:34.476 --> 00:31:36.676 A:middle
+makes sure that the main frame
+
+00:31:36.676 --> 00:31:37.996 A:middle
+from one origin cannot reach
+
+00:31:38.026 --> 00:31:39.756 A:middle
+into and read the bytes of some
+
+00:31:39.756 --> 00:31:41.496 A:middle
+other frame, maybe your embedded
+
+00:31:41.496 --> 00:31:41.916 A:middle
+content.
+
+00:31:43.206 --> 00:31:44.496 A:middle
+With speculative execution
+
+00:31:44.496 --> 00:31:46.416 A:middle
+attacks, we can no longer rely
+
+00:31:46.416 --> 00:31:47.656 A:middle
+on the same-origin policy.
+
+00:31:48.766 --> 00:31:50.196 A:middle
+There is now an ability-- if you
+
+00:31:50.196 --> 00:31:51.576 A:middle
+can run scripts and you're in
+
+00:31:51.576 --> 00:31:53.696 A:middle
+the same process, the same web
+
+00:31:53.696 --> 00:31:55.676 A:middle
+content process as some other
+
+00:31:55.676 --> 00:31:57.916 A:middle
+content, you can read that
+
+00:31:57.916 --> 00:31:59.336 A:middle
+content through speculative
+
+00:31:59.336 --> 00:32:00.276 A:middle
+execution attacks.
+

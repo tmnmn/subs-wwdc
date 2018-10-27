@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.626 --> 00:05:00.496 A:middle
+But, I highly recommend seeing
+
+00:05:00.496 --> 00:05:01.836 A:middle
+those other talks for full
+
+00:05:02.436 --> 00:05:02.646 A:middle
+details.
+
+00:05:03.216 --> 00:05:04.766 A:middle
+Now, let's go over a couple of
+
+00:05:04.766 --> 00:05:06.346 A:middle
+examples of how shortcuts will
+
+00:05:06.346 --> 00:05:07.666 A:middle
+execute when requested from a
+
+00:05:07.666 --> 00:05:09.316 A:middle
+watch app.
+
+00:05:09.626 --> 00:05:12.016 A:middle
+User generates their shortcut
+
+00:05:12.016 --> 00:05:13.806 A:middle
+request by tapping on the Siri
+
+00:05:13.806 --> 00:05:15.056 A:middle
+watch face, or by saying a key
+
+00:05:15.056 --> 00:05:16.996 A:middle
+voice phrase to Siri, and the
+
+00:05:16.996 --> 00:05:18.206 A:middle
+watch receives that request.
+
+00:05:18.546 --> 00:05:19.816 A:middle
+It'll examine it and determine,
+
+00:05:19.876 --> 00:05:20.836 A:middle
+is there an application that's
+
+00:05:20.836 --> 00:05:21.886 A:middle
+installed that can handle the
+
+00:05:21.886 --> 00:05:22.336 A:middle
+shortcut?
+
+00:05:22.916 --> 00:05:24.306 A:middle
+And, in this example, yes, there
+
+00:05:24.306 --> 00:05:25.226 A:middle
+is one that's installed.
+
+00:05:25.626 --> 00:05:27.116 A:middle
+So, we're going to dispatch that
+
+00:05:27.116 --> 00:05:28.056 A:middle
+shortcut to the appropriate
+
+00:05:28.056 --> 00:05:28.656 A:middle
+application.
+
+00:05:29.496 --> 00:05:31.086 A:middle
+If your shortcut is implemented
+
+00:05:31.086 --> 00:05:32.346 A:middle
+by an intent that can handle
+
+00:05:32.346 --> 00:05:34.276 A:middle
+background execution, the
+
+00:05:34.276 --> 00:05:35.856 A:middle
+application's intent execution
+
+00:05:36.066 --> 00:05:36.876 A:middle
+will run that shortcut.
+
+00:05:37.486 --> 00:05:38.606 A:middle
+But, if instead your shortcut is
+
+00:05:38.606 --> 00:05:40.086 A:middle
+built off of a NSUserActivity,
+
+00:05:40.276 --> 00:05:41.206 A:middle
+or an intent that can't run in
+
+00:05:41.206 --> 00:05:42.616 A:middle
+the background, the application
+
+00:05:42.616 --> 00:05:43.836 A:middle
+itself will be launched to
+
+00:05:43.836 --> 00:05:44.546 A:middle
+handle the shortcut.
+
+00:05:45.586 --> 00:05:46.936 A:middle
+When the shortcut execution is
+
+00:05:46.936 --> 00:05:48.006 A:middle
+complete, a result will be
+
+00:05:48.006 --> 00:05:49.246 A:middle
+generated, and then handed back
+
+00:05:49.246 --> 00:05:49.666 A:middle
+to the user.
+
+00:05:50.856 --> 00:05:51.746 A:middle
+Now, let's take a look at
+
+00:05:51.746 --> 00:05:52.396 A:middle
+another example.
+
+00:05:53.036 --> 00:05:54.556 A:middle
+In this case our user taps on
+
+00:05:54.556 --> 00:05:55.556 A:middle
+the Siri watch face, or says a
+
+00:05:55.556 --> 00:05:57.056 A:middle
+key phrase to Siri to generate
+
+00:05:57.056 --> 00:05:58.416 A:middle
+the shortcut request.
+
+00:05:58.636 --> 00:06:00.216 A:middle
+And, the watch will examine it.
+

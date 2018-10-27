@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.136 --> 00:04:00.216 A:middle
+only allow UI events to be
+
+00:04:00.216 --> 00:04:02.326 A:middle
+dispatched by processes that the
+
+00:04:02.326 --> 00:04:04.176 A:middle
+user has specifically configured
+
+00:04:05.066 --> 00:04:06.836 A:middle
+to control the UI on their
+
+00:04:06.836 --> 00:04:09.186 A:middle
+behalf and effectively
+
+00:04:09.546 --> 00:04:10.226 A:middle
+impersonate them.
+
+00:04:11.226 --> 00:04:13.456 A:middle
+This configuration is made in
+
+00:04:13.456 --> 00:04:14.976 A:middle
+the Security and Privacy Press
+
+00:04:14.976 --> 00:04:17.026 A:middle
+pane in the System Preferences.
+
+00:04:17.266 --> 00:04:19.005 A:middle
+And it's currently co-located
+
+00:04:19.196 --> 00:04:20.466 A:middle
+with the existing accessing to
+
+00:04:20.466 --> 00:04:21.466 A:middle
+the key list.
+
+00:04:23.516 --> 00:04:25.256 A:middle
+This is the list of APIs that
+
+00:04:25.526 --> 00:04:26.916 A:middle
+will be impacted moving forward.
+
+00:04:27.356 --> 00:04:28.416 A:middle
+They mostly fall under two
+
+00:04:28.416 --> 00:04:29.106 A:middle
+categories.
+
+00:04:29.616 --> 00:04:31.546 A:middle
+First, the kidlet [phonetic]
+
+00:04:31.706 --> 00:04:34.346 A:middle
+Layer: IOHIDPostEvent and the
+
+00:04:34.346 --> 00:04:37.026 A:middle
+IOHIDSetMouseLocation; and then
+
+00:04:37.076 --> 00:04:38.786 A:middle
+second, at the CG Layer.
+
+00:04:39.406 --> 00:04:41.316 A:middle
+If you attempt to post any CG
+
+00:04:41.316 --> 00:04:44.376 A:middle
+event or if you create any CG
+
+00:04:44.376 --> 00:04:46.526 A:middle
+event tab, we are now providing
+
+00:04:46.526 --> 00:04:48.126 A:middle
+the Listen Only option --
+
+00:04:48.986 --> 00:04:50.196 A:middle
+effectively creating what we
+
+00:04:50.196 --> 00:04:51.276 A:middle
+call a modifying tab.
+
+00:04:51.276 --> 00:04:52.756 A:middle
+And the user will have to
+
+00:04:52.756 --> 00:04:53.976 A:middle
+approve those processes as well.
+
+00:04:54.956 --> 00:05:01.146 A:middle
+And then next, we put a lot of
+

@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.686 --> 00:32:03.924 align:middle line:-2
+因为这导致GPU在高速模式下工作
+从而拖慢你的app
+
+00:32:05.058 --> 00:32:09.263 align:middle line:-1
+此外 你应该尽可能避免遮罩和剪裁
+
+00:32:09.963 --> 00:32:13.834 align:middle line:-2
+如果你可以在视图顶部
+放置不透明内容
+
+00:32:14.101 --> 00:32:17.271 align:middle line:-1
+即可达到相同的视觉效果
+
+00:32:17.804 --> 00:32:19.439 align:middle line:-1
+那么我鼓励你这样做
+
+00:32:19.506 --> 00:32:24.444 align:middle line:-2
+而不是使用UIViewer CALayer的
+遮罩视图或遮罩属性
+
+00:32:25.445 --> 00:32:28.715 align:middle line:-1
+这就是我们如何优化平滑滚动的性能
+
+00:32:29.383 --> 00:32:31.251 align:middle line:-2
+确保在你的app上
+运行Time Profiler
+
+00:32:31.318 --> 00:32:33.854 align:middle line:-2
+和Core Animation
+Instruments
+
+00:32:35.022 --> 00:32:39.092 align:middle line:-2
+使用预取并尽可能多地
+从主队列中移出工作
+
+00:32:40.527 --> 00:32:45.098 align:middle line:-1
+并节制地使用视觉效果和遮罩及剪裁
+
+00:32:45.899 --> 00:32:51.705 align:middle line:-2
+有关分析的更多信息 请查看
+2015年WWDC中的精彩演讲
+
+00:32:51.939 --> 00:32:52.773 align:middle line:0
+谢谢
+
+00:32:52.840 --> 00:32:56.643 align:middle line:0
+（保持连贯性）
+
+00:32:56.710 --> 00:32:57.811 align:middle line:0
+连贯性
+
+00:32:57.878 --> 00:33:01.215 align:middle line:-2
+是Apple平台上
+最神奇的体验之一
+

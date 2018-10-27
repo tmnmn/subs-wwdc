@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.286 --> 00:32:02.656 align:middle line:-2
+当你把自己的内容
+作为TVLockupView时
+
+00:32:03.257 --> 00:32:07.327 align:middle line:-2
+你可以利用
+TVLockupViewComponent协议
+
+00:32:08.662 --> 00:32:10.731 align:middle line:-2
+无论何时TVLockupView
+状态发生变更时
+
+00:32:11.131 --> 00:32:15.035 align:middle line:-2
+它会调用updateAppearance
+forLockupViewState方法
+
+00:32:15.102 --> 00:32:17.070 align:middle line:-1
+在实施了它的全部子视图上
+
+00:32:18.405 --> 00:32:21.608 align:middle line:-1
+这是更新子视图行为的好机会
+
+00:32:21.942 --> 00:32:24.811 align:middle line:-1
+或根据状态自定义是否显示
+
+00:32:28.282 --> 00:32:29.850 align:middle line:-1
+你可使用TVLockupView
+
+00:32:30.083 --> 00:32:33.120 align:middle line:-1
+创建你自己的小工具 响应聚焦交互
+
+00:32:33.720 --> 00:32:37.724 align:middle line:-1
+或进一步自定义四个特定目的子类
+
+00:32:37.791 --> 00:32:38.792 align:middle line:-1
+我们刚刚讨论过的
+
+00:32:40.894 --> 00:32:43.130 align:middle line:-2
+这就是TVLockupView
+及其子类
+
+00:32:45.165 --> 00:32:48.268 align:middle line:-2
+最后你可能会回调
+并看到诸如这样的东西
+
+00:32:49.937 --> 00:32:51.004 align:middle line:-1
+很简单
+
+00:32:51.071 --> 00:32:54.408 align:middle line:-1
+但它的简单恰恰伪装了
+
+00:32:54.474 --> 00:32:55.509 align:middle line:-1
+在屏幕上实施何等困难
+
+00:32:57.778 --> 00:33:00.147 align:middle line:-1
+TVUIKit把这个过程变简单了
+

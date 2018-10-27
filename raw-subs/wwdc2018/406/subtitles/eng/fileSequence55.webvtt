@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:59.316 --> 00:55:01.236 A:middle
+class through the inheritance
+
+00:55:01.236 --> 00:55:01.856 A:middle
+mechanism.
+
+00:55:02.266 --> 00:55:03.866 A:middle
+Now, this doesn't mean that you
+
+00:55:04.246 --> 00:55:05.336 A:middle
+can't customize your class
+
+00:55:05.336 --> 00:55:05.676 A:middle
+later.
+
+00:55:05.856 --> 00:55:07.046 A:middle
+You can still write an extension
+
+00:55:07.046 --> 00:55:07.316 A:middle
+on it.
+
+00:55:07.626 --> 00:55:08.796 A:middle
+The same way you can extend a
+
+00:55:08.796 --> 00:55:09.776 A:middle
+struct or an enum.
+
+00:55:10.626 --> 00:55:11.976 A:middle
+You can also add conformances to
+
+00:55:11.976 --> 00:55:13.066 A:middle
+it, to get more dynamic
+
+00:55:13.066 --> 00:55:13.626 A:middle
+dispatch.
+
+00:55:14.996 --> 00:55:16.226 A:middle
+But final can simplify the
+
+00:55:16.226 --> 00:55:17.156 A:middle
+interaction with the generic
+
+00:55:17.156 --> 00:55:18.576 A:middle
+system, and also unlock
+
+00:55:18.576 --> 00:55:19.886 A:middle
+optimization opportunities for
+
+00:55:19.886 --> 00:55:20.836 A:middle
+the compiler in runtime.
+
+00:55:24.396 --> 00:55:25.286 A:middle
+So we've talked a bit about
+
+00:55:25.286 --> 00:55:26.196 A:middle
+Swift generics today.
+
+00:55:26.486 --> 00:55:27.966 A:middle
+The idea behind Swift generics
+
+00:55:27.966 --> 00:55:29.706 A:middle
+is to provide the ability to
+
+00:55:29.706 --> 00:55:31.606 A:middle
+reuse code while maintaining
+
+00:55:31.606 --> 00:55:32.856 A:middle
+static type information.
+
+00:55:33.176 --> 00:55:34.256 A:middle
+To make it easier to write
+
+00:55:34.296 --> 00:55:36.076 A:middle
+correct programs, and compile
+
+00:55:36.076 --> 00:55:37.006 A:middle
+those down into efficient,
+
+00:55:37.086 --> 00:55:38.976 A:middle
+efficiently executing programs.
+
+00:55:39.726 --> 00:55:41.266 A:middle
+When you're designing protocols,
+
+00:55:41.666 --> 00:55:43.826 A:middle
+let this push and pull between
+
+00:55:43.826 --> 00:55:45.036 A:middle
+the generic algorithms you want
+
+00:55:45.036 --> 00:55:46.246 A:middle
+to write against a protocol.
+
+00:55:46.246 --> 00:55:48.046 A:middle
+And the conforming types that
+
+00:55:48.046 --> 00:55:49.466 A:middle
+need to implement that protocol
+
+00:55:49.736 --> 00:55:51.576 A:middle
+guide your design to meaningful
+
+00:55:51.576 --> 00:55:52.506 A:middle
+extractions.
+
+00:55:53.636 --> 00:55:55.266 A:middle
+Introduce protocol inheritance
+
+00:55:55.516 --> 00:55:56.706 A:middle
+when you need some more
+
+00:55:56.706 --> 00:55:58.256 A:middle
+specialized capabilities to
+
+00:55:58.256 --> 00:55:59.996 A:middle
+implement new generic algorithms
+

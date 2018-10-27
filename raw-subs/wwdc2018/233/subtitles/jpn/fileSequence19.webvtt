@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.271 --> 00:19:00.240 align:start position:29% line:-2
+そして やはり
+この変数が変わるたびに―
+
+00:19:00.340 --> 00:19:04.645 align:start position:12% line:-2
+プロパティオブザーバで
+setNeedsLayoutを呼び出します
+
+00:19:06.146 --> 00:19:10.217 align:start position:11% line:-2
+次はpanGestureRecognizer
+コールバック関数内で―
+
+00:19:10.517 --> 00:19:14.421 align:start position:29% line:-2
+現在の変換とビューを
+ジェスチャから取り出し―
+
+00:19:14.655 --> 00:19:18.225 align:start position:32% line:-2
+このジェスチャを
+カードと関連づけます
+
+00:19:18.792 --> 00:19:24.131 align:start position:21% line:-2
+次に そのカードのオフセットを
+この辞書内でインクリメントします
+
+00:19:25.399 --> 00:19:28.101 align:start position:16% line:-1
+最後にlayoutSubviewsで―
+
+00:19:28.435 --> 00:19:32.072 align:start position:30% line:-2
+カードのビューの位置を
+更新するようにします
+
+00:19:32.172 --> 00:19:35.075 align:start position:25% line:-1
+この辞書のオフセットを基盤に
+
+00:19:36.310 --> 00:19:39.980 align:start position:32% line:-2
+特別なことは
+何もしていないのです
+
+00:19:40.080 --> 00:19:43.550 align:start position:25% line:-2
+従来のレイアウト駆動型UIの
+ケースだけ
+
+00:19:44.084 --> 00:19:47.854 align:start position:32% line:-2
+ジェスチャが駆動する
+状態に対して―
+
+00:19:47.955 --> 00:19:50.657 align:start position:23% line:-2
+layoutSubviewsで
+応答するだけ
+
+00:19:51.525 --> 00:19:55.195 align:start position:30% line:-2
+アプリケーション全体で
+このパターンに従えば―
+
+00:19:55.295 --> 00:19:59.466 align:start position:29% line:-2
+こういう操作の組み込みが
+とても簡単になります
+

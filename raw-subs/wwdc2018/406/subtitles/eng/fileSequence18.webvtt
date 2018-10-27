@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.246 --> 00:18:01.086 A:middle
+That works on any collection and
+
+00:18:01.086 --> 00:18:02.256 A:middle
+iterates over the entire
+
+00:18:02.256 --> 00:18:02.766 A:middle
+collection.
+
+00:18:03.466 --> 00:18:04.536 A:middle
+If you called map on a
+
+00:18:04.536 --> 00:18:06.496 A:middle
+dictionary, it wouldn't call the
+
+00:18:06.496 --> 00:18:07.436 A:middle
+better version of count that
+
+00:18:07.436 --> 00:18:08.606 A:middle
+we've just written yet.
+
+00:18:11.156 --> 00:18:13.316 A:middle
+In order for customized method
+
+00:18:13.316 --> 00:18:15.386 A:middle
+or property like this to be
+
+00:18:15.386 --> 00:18:17.526 A:middle
+called in a gen-- in a generic
+
+00:18:17.526 --> 00:18:18.066 A:middle
+context.
+
+00:18:18.476 --> 00:18:19.886 A:middle
+It needs to be declared as a
+
+00:18:19.886 --> 00:18:21.446 A:middle
+requirement on the protocol
+
+00:18:21.446 --> 00:18:22.026 A:middle
+itself.
+
+00:18:22.516 --> 00:18:24.256 A:middle
+We've established that there's
+
+00:18:24.256 --> 00:18:26.166 A:middle
+definitely a way in which
+
+00:18:26.166 --> 00:18:27.576 A:middle
+certain collections could
+
+00:18:27.576 --> 00:18:28.826 A:middle
+provide an optimized version of
+
+00:18:28.826 --> 00:18:30.806 A:middle
+count, so it makes sense to add
+
+00:18:30.806 --> 00:18:32.566 A:middle
+it as a requirement on the
+
+00:18:32.566 --> 00:18:33.086 A:middle
+protocol.
+
+00:18:34.446 --> 00:18:36.396 A:middle
+Now, even though we've made it a
+
+00:18:36.396 --> 00:18:40.036 A:middle
+requirement to implement it, all
+
+00:18:40.036 --> 00:18:41.346 A:middle
+collections don't have to
+
+00:18:41.346 --> 00:18:42.066 A:middle
+provide their own
+
+00:18:42.066 --> 00:18:42.716 A:middle
+implementation.
+
+00:18:42.926 --> 00:18:44.086 A:middle
+Because we've already provided
+
+00:18:44.086 --> 00:18:45.976 A:middle
+one via our extension that will
+
+00:18:45.976 --> 00:18:47.076 A:middle
+work on any collection.
+
+00:18:48.306 --> 00:18:49.776 A:middle
+Adding a requirement to the
+
+00:18:49.776 --> 00:18:51.856 A:middle
+protocol, and alongside it
+
+00:18:51.856 --> 00:18:53.516 A:middle
+adding a default implementation
+
+00:18:53.736 --> 00:18:55.576 A:middle
+via an extension is what we
+
+00:18:55.576 --> 00:18:57.706 A:middle
+refer to as a customization
+
+00:18:57.706 --> 00:18:57.996 A:middle
+point.
+
+00:18:58.666 --> 00:19:01.456 A:middle
+With a customization point, the
+

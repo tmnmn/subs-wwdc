@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:59.846 --> 00:49:01.456 A:middle
+commands we will indicate this
+
+00:49:01.456 --> 00:49:03.396 A:middle
+to Metal by calling endEncoding
+
+00:49:03.396 --> 00:49:05.376 A:middle
+on the encoder object.
+
+00:49:06.196 --> 00:49:07.916 A:middle
+So this was a simple example of
+
+00:49:07.916 --> 00:49:09.406 A:middle
+a metal render pass.
+
+00:49:09.926 --> 00:49:12.926 A:middle
+Now that we have a complete
+
+00:49:12.926 --> 00:49:14.696 A:middle
+render pass let's see how to get
+
+00:49:14.696 --> 00:49:16.286 A:middle
+these renderings onto the
+
+00:49:16.286 --> 00:49:16.806 A:middle
+display.
+
+00:49:17.336 --> 00:49:21.526 A:middle
+With OpenGL you present your
+
+00:49:21.526 --> 00:49:23.156 A:middle
+rendered frame onto the screen
+
+00:49:23.436 --> 00:49:25.336 A:middle
+but you don't explicitly manage
+
+00:49:25.336 --> 00:49:27.996 A:middle
+the system's render buffers also
+
+00:49:27.996 --> 00:49:29.006 A:middle
+known as drawables.
+
+00:49:30.336 --> 00:49:32.126 A:middle
+But with Metal to get your
+
+00:49:32.126 --> 00:49:34.476 A:middle
+content displayed on the screen
+
+00:49:34.906 --> 00:49:36.186 A:middle
+first you need to obtain the
+
+00:49:36.186 --> 00:49:37.516 A:middle
+special textures called
+
+00:49:37.516 --> 00:49:39.116 A:middle
+drawables from the system.
+
+00:49:39.746 --> 00:49:41.676 A:middle
+So you can use a MetalKit view
+
+00:49:41.816 --> 00:49:42.756 A:middle
+which will provide you a
+
+00:49:42.756 --> 00:49:44.846 A:middle
+drawable texture for each frame.
+
+00:49:45.426 --> 00:49:46.886 A:middle
+And once you obtain this
+
+00:49:46.886 --> 00:49:49.276 A:middle
+drawable you can encode render
+
+00:49:49.276 --> 00:49:51.226 A:middle
+passes and render to these
+
+00:49:51.226 --> 00:49:53.096 A:middle
+drawables just like you would
+
+00:49:53.096 --> 00:49:54.586 A:middle
+render to any other texture.
+
+00:49:55.126 --> 00:49:57.766 A:middle
+However, unlike other textures
+
+00:49:57.766 --> 00:49:59.236 A:middle
+now you can present this
+
+00:49:59.236 --> 00:49:59.976 A:middle
+drawable to your view.
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.676 --> 00:12:01.006 A:middle
+feature called auto-link which
+
+00:12:01.006 --> 00:12:02.126 A:middle
+can be enabled using the link
+
+00:12:02.126 --> 00:12:03.526 A:middle
+frameworks automatically build
+
+00:12:03.526 --> 00:12:03.866 A:middle
+setting.
+
+00:12:04.586 --> 00:12:05.826 A:middle
+This setting allows the compiler
+
+00:12:05.826 --> 00:12:06.846 A:middle
+to automatically link to the
+
+00:12:06.846 --> 00:12:08.206 A:middle
+frameworks corresponding to any
+
+00:12:08.206 --> 00:12:09.746 A:middle
+modules you import without
+
+00:12:09.746 --> 00:12:11.016 A:middle
+having to explicitly link them
+
+00:12:11.366 --> 00:12:12.496 A:middle
+in your link library's build
+
+00:12:12.496 --> 00:12:12.816 A:middle
+phase.
+
+00:12:13.396 --> 00:12:14.616 A:middle
+However, it's important to note
+
+00:12:14.616 --> 00:12:15.666 A:middle
+that auto-link does not
+
+00:12:15.726 --> 00:12:17.236 A:middle
+establish dependency on that
+
+00:12:17.236 --> 00:12:18.346 A:middle
+framework at the build system
+
+00:12:18.346 --> 00:12:18.616 A:middle
+level.
+
+00:12:18.946 --> 00:12:20.186 A:middle
+So it won't guarantee that the
+
+00:12:20.186 --> 00:12:21.746 A:middle
+target you depend on is actually
+
+00:12:21.746 --> 00:12:23.306 A:middle
+built before you try to link
+
+00:12:23.306 --> 00:12:24.386 A:middle
+against it.
+
+00:12:25.016 --> 00:12:26.716 A:middle
+So you should rely on this
+
+00:12:26.716 --> 00:12:28.286 A:middle
+feature only for frameworks from
+
+00:12:28.286 --> 00:12:29.436 A:middle
+the platform STK.
+
+00:12:29.436 --> 00:12:31.326 A:middle
+Like Foundation and UIKit since
+
+00:12:31.326 --> 00:12:32.706 A:middle
+we know those will already exist
+
+00:12:32.816 --> 00:12:34.136 A:middle
+before the build even starts.
+
+00:12:34.636 --> 00:12:35.546 A:middle
+For targets in your own
+
+00:12:35.546 --> 00:12:36.976 A:middle
+projects, make sure to add
+
+00:12:36.976 --> 00:12:38.416 A:middle
+explicit library dependencies.
+
+00:12:40.196 --> 00:12:41.566 A:middle
+You might also need to create
+
+00:12:41.566 --> 00:12:42.926 A:middle
+project references by dragging
+
+00:12:42.926 --> 00:12:44.066 A:middle
+and dropping another Xcode
+
+00:12:44.066 --> 00:12:45.506 A:middle
+project into your project's file
+
+00:12:45.506 --> 00:12:47.546 A:middle
+navigator in order to reveal the
+
+00:12:47.546 --> 00:12:48.926 A:middle
+targets of other projects you
+
+00:12:48.926 --> 00:12:49.406 A:middle
+depend on.
+
+00:12:49.996 --> 00:12:53.376 A:middle
+In conclusion, with accurate
+
+00:12:53.376 --> 00:12:54.676 A:middle
+dependency information, the
+
+00:12:54.676 --> 00:12:55.646 A:middle
+build system can better
+
+00:12:55.646 --> 00:12:56.936 A:middle
+parallelize your builds, and
+
+00:12:57.046 --> 00:12:58.136 A:middle
+help ensure that you get
+
+00:12:58.136 --> 00:13:00.106 A:middle
+consistent results every time so
+

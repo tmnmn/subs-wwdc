@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.156 --> 00:08:00.876 A:middle
+Here's an example.
+
+00:08:00.876 --> 00:08:02.736 A:middle
+Let's say I wanted this custom
+
+00:08:02.736 --> 00:08:04.956 A:middle
+header view here to use a
+
+00:08:04.956 --> 00:08:07.176 A:middle
+different color in light and
+
+00:08:07.176 --> 00:08:07.956 A:middle
+dark appearance.
+
+00:08:09.246 --> 00:08:11.136 A:middle
+Now, we already know in Xcode 10
+
+00:08:11.426 --> 00:08:13.366 A:middle
+I can go into the asset catalog
+
+00:08:13.366 --> 00:08:15.656 A:middle
+editor and specify specific
+
+00:08:15.656 --> 00:08:17.566 A:middle
+color assets for light and dark.
+
+00:08:18.266 --> 00:08:21.036 A:middle
+But then how do I use that in my
+
+00:08:21.036 --> 00:08:21.676 A:middle
+custom view?
+
+00:08:22.886 --> 00:08:24.866 A:middle
+Well, here's one way that seems
+
+00:08:24.866 --> 00:08:26.916 A:middle
+tempting but won't work and I'll
+
+00:08:26.916 --> 00:08:27.486 A:middle
+show you why.
+
+00:08:28.516 --> 00:08:30.156 A:middle
+First, we'll add an NSColor
+
+00:08:30.156 --> 00:08:31.196 A:middle
+property to our view.
+
+00:08:32.535 --> 00:08:34.916 A:middle
+And in init, we'll use that
+
+00:08:34.916 --> 00:08:37.736 A:middle
+color to populate our layer.
+
+00:08:38.216 --> 00:08:41.606 A:middle
+And if the color changes, we'll
+
+00:08:41.606 --> 00:08:42.846 A:middle
+go ahead and update our layer
+
+00:08:42.846 --> 00:08:43.316 A:middle
+there too.
+
+00:08:44.646 --> 00:08:45.546 A:middle
+Let's try that out.
+
+00:08:46.936 --> 00:08:48.356 A:middle
+OK. It looks pretty good in
+
+00:08:48.356 --> 00:08:51.666 A:middle
+light, but if we switch to dark,
+
+00:08:51.666 --> 00:08:52.726 A:middle
+we can see our color didn't
+
+00:08:52.726 --> 00:08:53.786 A:middle
+actually change.
+
+00:08:55.016 --> 00:08:56.316 A:middle
+And that's because even though
+
+00:08:56.316 --> 00:08:59.016 A:middle
+our NSColor is dynamic, the CG
+
+00:08:59.016 --> 00:09:00.496 A:middle
+color that we get from it is
+

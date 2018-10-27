@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:00.087 --> 00:52:03.590 align:start position:21% line:-1
+第２に どのように実装するかです
+
+00:52:03.690 --> 00:52:06.393 align:start position:29% line:-1
+上のイニシャライザを呼び
+
+00:52:06.493 --> 00:52:13.200 align:start position:16% line:-2
+適当なDecodable型の 真っ新の
+インスタンスを作成して返します
+
+00:52:14.701 --> 00:52:15.669 align:start position:39% line:-1
+いいでしょう
+
+00:52:16.003 --> 00:52:18.772 align:start position:25% line:-2
+これでVehicle型を
+Decodableにできます
+
+00:52:19.439 --> 00:52:23.177 align:start position:32% line:-2
+そして置換原則を
+適用する際の期待は―
+
+00:52:23.277 --> 00:52:29.583 align:start position:23% line:-2
+Vehicleのサブクラスでも
+新規APIが使用できることです
+
+00:52:29.683 --> 00:52:33.120 align:start position:29% line:-2
+つまり Taxiで
+ｄecodeを呼び出すと
+
+00:52:33.354 --> 00:52:39.426 align:start position:21% line:-2
+VehicleのでなくTaxiの
+インスタンスが返されるのです
+
+00:52:40.661 --> 00:52:42.262 align:start position:38% line:-1
+その仕組みは？
+
+00:52:43.030 --> 00:52:47.701 align:start position:21% line:-2
+TaxiのHourlyRateを
+見てみましょう
+
+00:52:47.801 --> 00:52:50.504 align:start position:14% line:-2
+“Taxi.decode(from:”を
+呼び出すと
+
+00:52:51.038 --> 00:52:54.942 align:start position:30% line:-2
+イニシャライザの要件を
+確認します
+
+00:52:55.042 --> 00:52:57.644 align:start position:32% line:-1
+実際に呼び出せるのは
+
+00:52:57.744 --> 00:53:03.684 align:start position:20% line:-2
+Vehicleクラス内で宣言された
+イニシャライザだけです
+

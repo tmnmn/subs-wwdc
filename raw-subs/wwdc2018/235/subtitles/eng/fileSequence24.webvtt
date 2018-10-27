@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:00.026 --> 00:24:01.476 A:middle
+if you set the always bounce
+
+00:24:01.476 --> 00:24:02.876 A:middle
+horizontal or always bounce
+
+00:24:02.876 --> 00:24:04.176 A:middle
+vertical properties to true,
+
+00:24:04.856 --> 00:24:06.286 A:middle
+then the scroll view considers
+
+00:24:06.286 --> 00:24:07.396 A:middle
+that axis scrollable.
+
+00:24:07.696 --> 00:24:08.656 A:middle
+And it will go ahead and
+
+00:24:08.656 --> 00:24:10.146 A:middle
+incorporate in the system inset
+
+00:24:10.146 --> 00:24:11.556 A:middle
+into its adjusted content inset.
+
+00:24:12.006 --> 00:24:13.246 A:middle
+So in this example right behind
+
+00:24:13.246 --> 00:24:14.936 A:middle
+me we have a long article that's
+
+00:24:14.936 --> 00:24:15.506 A:middle
+scrollable.
+
+00:24:15.576 --> 00:24:16.516 A:middle
+And so we're getting those
+
+00:24:16.516 --> 00:24:17.956 A:middle
+automatic insets incorporated.
+
+00:24:18.476 --> 00:24:19.376 A:middle
+But what if we had a shorter
+
+00:24:19.376 --> 00:24:19.706 A:middle
+article?
+
+00:24:19.906 --> 00:24:20.386 A:middle
+Let's take a look.
+
+00:24:21.416 --> 00:24:21.716 A:middle
+Okay.
+
+00:24:21.816 --> 00:24:22.766 A:middle
+Here's a shorter article.
+
+00:24:23.456 --> 00:24:24.546 A:middle
+What's going on here?
+
+00:24:24.596 --> 00:24:25.586 A:middle
+Let's take a look under the nav
+
+00:24:25.586 --> 00:24:26.806 A:middle
+bar and see what's going on.
+
+00:24:26.936 --> 00:24:27.126 A:middle
+Ah.
+
+00:24:28.066 --> 00:24:29.286 A:middle
+Looks like we've lost our system
+
+00:24:29.286 --> 00:24:30.186 A:middle
+inset because it's not
+
+00:24:30.186 --> 00:24:31.086 A:middle
+scrollable anymore.
+
+00:24:31.186 --> 00:24:32.506 A:middle
+So our title's stuck all the way
+
+00:24:32.506 --> 00:24:33.676 A:middle
+up underneath the status bar.
+
+00:24:34.366 --> 00:24:35.476 A:middle
+So let's put back the nav bar
+
+00:24:36.306 --> 00:24:37.696 A:middle
+and talk about how we fix this.
+
+00:24:37.966 --> 00:24:39.296 A:middle
+Well, one way could be you could
+
+00:24:39.296 --> 00:24:40.826 A:middle
+set always bounce vertical on
+
+00:24:40.826 --> 00:24:41.666 A:middle
+this scroll view if that's the
+
+00:24:41.666 --> 00:24:42.456 A:middle
+behavior you want.
+
+00:24:42.696 --> 00:24:43.916 A:middle
+That will make the scroll view
+
+00:24:43.916 --> 00:24:45.036 A:middle
+always vertically scrollable.
+
+00:24:45.836 --> 00:24:47.376 A:middle
+Or we'll get to our next
+
+00:24:47.376 --> 00:24:48.716 A:middle
+behavior, which is automatic.
+
+00:24:49.626 --> 00:24:51.286 A:middle
+And so automatic works basically
+
+00:24:51.286 --> 00:24:53.026 A:middle
+the same as scrollable axes,
+
+00:24:53.026 --> 00:24:53.956 A:middle
+which we just talked about.
+
+00:24:54.456 --> 00:24:55.766 A:middle
+But it has one additional
+
+00:24:55.836 --> 00:24:58.046 A:middle
+behavior as part of it that is
+
+00:24:58.386 --> 00:24:59.716 A:middle
+when the scroll view is inside
+
+00:24:59.716 --> 00:25:01.706 A:middle
+of a navigation controller, the
+

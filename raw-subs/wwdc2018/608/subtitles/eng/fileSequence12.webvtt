@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.566 --> 00:12:01.726 A:middle
+navigate through the navigator,
+
+00:12:02.056 --> 00:12:03.406 A:middle
+its position in the source code
+
+00:12:03.406 --> 00:12:04.226 A:middle
+is highlighted.
+
+00:12:04.796 --> 00:12:06.056 A:middle
+And this works in both
+
+00:12:06.056 --> 00:12:06.756 A:middle
+directions.
+
+00:12:07.056 --> 00:12:08.556 A:middle
+You can select one line in your
+
+00:12:08.556 --> 00:12:10.136 A:middle
+source code and its position in
+
+00:12:10.136 --> 00:12:11.336 A:middle
+the Debug Navigator will be
+
+00:12:11.336 --> 00:12:11.876 A:middle
+selected.
+
+00:12:12.396 --> 00:12:15.466 A:middle
+And at any point, you have
+
+00:12:15.466 --> 00:12:17.096 A:middle
+access to all the variables that
+
+00:12:17.096 --> 00:12:18.686 A:middle
+are alive in a scope by just
+
+00:12:18.686 --> 00:12:20.216 A:middle
+taking the variables view, here
+
+00:12:20.216 --> 00:12:20.836 A:middle
+at the bottom.
+
+00:12:20.836 --> 00:12:24.806 A:middle
+So now that we are more familiar
+
+00:12:24.806 --> 00:12:26.096 A:middle
+with the Shader Debugger, let's
+
+00:12:26.216 --> 00:12:27.276 A:middle
+debug our issue.
+
+00:12:30.436 --> 00:12:32.686 A:middle
+The water is calculated by
+
+00:12:32.716 --> 00:12:34.356 A:middle
+generating a displacement vector
+
+00:12:34.446 --> 00:12:36.056 A:middle
+that is later added to our final
+
+00:12:36.056 --> 00:12:36.676 A:middle
+position.
+
+00:12:37.566 --> 00:12:38.826 A:middle
+So let's get more information
+
+00:12:38.826 --> 00:12:39.986 A:middle
+about this displacement vector
+
+00:12:39.986 --> 00:12:41.776 A:middle
+just by opening this detail
+
+00:12:42.266 --> 00:12:42.366 A:middle
+view.
+
+00:12:46.536 --> 00:12:48.616 A:middle
+As we can see here in the detail
+
+00:12:48.856 --> 00:12:51.206 A:middle
+view, the right coordinate for
+
+00:12:51.206 --> 00:12:52.576 A:middle
+the vertex that we are debugging
+
+00:12:52.686 --> 00:12:54.116 A:middle
+is a big, negative number,
+
+00:12:54.416 --> 00:12:55.816 A:middle
+compared to its more positive
+
+00:12:55.816 --> 00:12:57.386 A:middle
+one in the other vertices that
+
+00:12:57.386 --> 00:12:57.976 A:middle
+were correct.
+
+00:12:58.256 --> 00:13:00.416 A:middle
+Then the issue must be in how we
+

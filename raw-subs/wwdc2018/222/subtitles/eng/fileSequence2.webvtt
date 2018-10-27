@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.186 --> 00:02:00.236 A:middle
+And specifically, we're going to
+
+00:02:00.236 --> 00:02:02.026 A:middle
+be talking about how to build
+
+00:02:02.026 --> 00:02:03.886 A:middle
+trust in data, by making sure of
+
+00:02:03.886 --> 00:02:04.406 A:middle
+two things.
+
+00:02:05.796 --> 00:02:07.026 A:middle
+One, that the data that we're
+
+00:02:07.026 --> 00:02:08.166 A:middle
+going to be using, hasn't been
+
+00:02:08.166 --> 00:02:10.726 A:middle
+modified from underneath us, and
+
+00:02:10.726 --> 00:02:12.266 A:middle
+two that it contains what we
+
+00:02:12.266 --> 00:02:14.236 A:middle
+expect it to in the format and
+
+00:02:14.236 --> 00:02:15.066 A:middle
+structure that we want.
+
+00:02:16.676 --> 00:02:19.266 A:middle
+So, we'll do just that by taking
+
+00:02:19.266 --> 00:02:20.816 A:middle
+a look at the lifecycle of our
+
+00:02:20.816 --> 00:02:22.786 A:middle
+data, and what we can validate
+
+00:02:22.786 --> 00:02:24.526 A:middle
+about that data at every stage
+
+00:02:24.526 --> 00:02:25.146 A:middle
+in the lifecycle.
+
+00:02:26.726 --> 00:02:28.836 A:middle
+Then, we'll see what sort of
+
+00:02:28.836 --> 00:02:30.286 A:middle
+type-level validation we can
+
+00:02:30.286 --> 00:02:31.606 A:middle
+apply with the NS Secure coding
+
+00:02:31.606 --> 00:02:32.016 A:middle
+protocol.
+
+00:02:32.096 --> 00:02:33.986 A:middle
+And then apply those same
+
+00:02:33.986 --> 00:02:35.626 A:middle
+concepts to codable types.
+
+00:02:37.116 --> 00:02:40.256 A:middle
+Let's get started.
+
+00:02:40.366 --> 00:02:41.536 A:middle
+In order to talk about data,
+
+00:02:41.656 --> 00:02:42.576 A:middle
+we're going to want to build a
+
+00:02:42.576 --> 00:02:44.426 A:middle
+mental model of the forms that
+
+00:02:44.426 --> 00:02:46.426 A:middle
+data can take within our app.
+
+00:02:47.566 --> 00:02:49.626 A:middle
+At the most basic level, data
+
+00:02:49.626 --> 00:02:51.786 A:middle
+makes its way into our app as a
+
+00:02:51.786 --> 00:02:52.756 A:middle
+stream of bites.
+
+00:02:54.336 --> 00:02:55.396 A:middle
+There's not much we can tell
+
+00:02:55.396 --> 00:02:56.426 A:middle
+about this data at this stage
+
+00:02:56.426 --> 00:02:58.156 A:middle
+without looking at it, but this
+
+00:02:58.156 --> 00:03:00.976 A:middle
+we'll call raw data.
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.116 --> 00:39:01.716 A:middle
+being loaded by evil.example and
+
+00:39:01.716 --> 00:39:02.906 A:middle
+we'll do that block in the
+
+00:39:02.906 --> 00:39:03.866 A:middle
+network process.
+
+00:39:04.186 --> 00:39:06.336 A:middle
+Again, giving you that process
+
+00:39:06.336 --> 00:39:08.406 A:middle
+separation so that a speculative
+
+00:39:08.406 --> 00:39:09.946 A:middle
+execution attack cannot read
+
+00:39:09.946 --> 00:39:10.676 A:middle
+your bytes.
+
+00:39:12.686 --> 00:39:14.976 A:middle
+OK. We have the final attack
+
+00:39:14.976 --> 00:39:16.366 A:middle
+category to have a look at and
+
+00:39:16.366 --> 00:39:17.466 A:middle
+this is a pretty brief one.
+
+00:39:17.836 --> 00:39:19.246 A:middle
+Window control attacks.
+
+00:39:20.216 --> 00:39:21.906 A:middle
+So, we're going to look
+
+00:39:21.906 --> 00:39:23.626 A:middle
+malicious window navigation,
+
+00:39:23.786 --> 00:39:24.896 A:middle
+sometimes referred to as
+
+00:39:24.936 --> 00:39:26.466 A:middle
+tabnapping, and then the
+
+00:39:26.466 --> 00:39:26.806 A:middle
+defense.
+
+00:39:28.446 --> 00:39:29.466 A:middle
+Again, we're back here at
+
+00:39:29.466 --> 00:39:31.486 A:middle
+evil.example and instead of
+
+00:39:31.486 --> 00:39:33.506 A:middle
+embedding your content, thus the
+
+00:39:33.506 --> 00:39:36.106 A:middle
+window.open opens your content
+
+00:39:36.106 --> 00:39:37.876 A:middle
+in a new window and you don't
+
+00:39:37.876 --> 00:39:38.416 A:middle
+get to know.
+
+00:39:38.416 --> 00:39:39.986 A:middle
+You don't get to decide, yeah,
+
+00:39:39.986 --> 00:39:41.876 A:middle
+OK, someone opened my web page.
+
+00:39:42.066 --> 00:39:44.136 A:middle
+And the SameSite cookie may be
+
+00:39:44.136 --> 00:39:44.826 A:middle
+sent here.
+
+00:39:44.826 --> 00:39:46.086 A:middle
+You might think everything's
+
+00:39:46.086 --> 00:39:49.376 A:middle
+good, but evil.example could
+
+00:39:49.376 --> 00:39:52.416 A:middle
+wait until your user loses focus
+
+00:39:52.416 --> 00:39:54.856 A:middle
+of that page of yours and then
+
+00:39:54.856 --> 00:39:57.786 A:middle
+use the handle to navigate it to
+
+00:39:57.786 --> 00:40:00.516 A:middle
+a fraud page that looks like
+

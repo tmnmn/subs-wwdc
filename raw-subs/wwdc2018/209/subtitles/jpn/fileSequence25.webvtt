@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.433 --> 00:25:02.836 align:start position:32% line:-2
+NSViewには
+様々な機能があるので
+
+00:25:02.936 --> 00:25:05.572 align:start position:30% line:-2
+そちらを
+使った方がいいでしょう
+
+00:25:06.840 --> 00:25:08.509 align:start position:29% line:-1
+NSViewを使う場合は
+
+00:25:08.609 --> 00:25:13.146 align:start position:27% line:-2
+ダイナミックカラーの反映も
+管理してくれます
+
+00:25:13.247 --> 00:25:15.682 align:start position:34% line:-2
+バッキングストアの
+解像度も管理します
+
+00:25:15.782 --> 00:25:18.752 align:start position:30% line:-2
+レイヤメソッドと同様に
+簡単なので
+
+00:25:18.852 --> 00:25:22.956 align:start position:27% line:-2
+ビューレベルでの
+描画の上書きをお勧めします
+
+00:25:24.625 --> 00:25:29.296 align:start position:30% line:-2
+CALayerを使って
+レイヤプロパティを
+
+00:25:29.396 --> 00:25:31.465 align:start position:30% line:-1
+更新することもあります
+
+00:25:31.565 --> 00:25:35.435 align:start position:34% line:-2
+その方が効果的で
+作業も早いからです
+
+00:25:35.536 --> 00:25:40.240 align:start position:32% line:-2
+NSViewを使って
+レイヤに上書きすれば
+
+00:25:40.340 --> 00:25:44.177 align:start position:32% line:-2
+drawRectでも
+同じ効果が得られます
+
+00:25:45.045 --> 00:25:50.617 align:start position:29% line:-2
+レイヤとNSView
+両方の手法が使えるのです
+
+00:25:50.717 --> 00:25:55.823 align:start position:27% line:-2
+レイヤにビューが１つの場合
+レイヤのメソッドを使い
+
+00:25:55.923 --> 00:26:00.694 align:start position:27% line:-2
+他のビューもある場合は
+drawRectを用います
+

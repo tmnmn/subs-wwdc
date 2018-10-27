@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.972 --> 00:09:04.311 align:start position:25% line:-2
+制約を無効にしてから
+新しい設定を再度有効にします
+
+00:09:05.345 --> 00:09:07.548 align:start position:16% line:-2
+これは layoutSubviewsと
+似ています
+
+00:09:07.648 --> 00:09:12.753 align:start position:12% line:-2
+そこで まったく同じコードを
+layoutSubviewsで書くとします
+
+00:09:12.853 --> 00:09:19.326 align:start position:9% line:-2
+それは毎回 layoutSubviewsを呼び
+サブビューを壊し―
+
+00:09:19.660 --> 00:09:22.629 align:start position:23% line:-2
+作り直して再度追加しているのと
+同じです
+
+00:09:23.330 --> 00:09:27.301 align:start position:34% line:-2
+皆さんの多くが
+こう感じるでしょう
+
+00:09:27.401 --> 00:09:29.136 align:start position:27% line:-1
+“よい性能は期待できない”
+
+00:09:30.671 --> 00:09:33.407 align:start position:38% line:-1
+そのとおりです
+
+00:09:33.507 --> 00:09:37.911 align:start position:7% line:-2
+それは“updateConstraints”にも
+当てはまります
+
+00:09:38.011 --> 00:09:41.348 align:start position:23% line:-1
+制約を外したら作業が増えました
+
+00:09:42.349 --> 00:09:43.617 align:start position:34% line:-1
+どう修正しますか？
+
+00:09:43.750 --> 00:09:46.353 align:start position:34% line:-1
+先ほど言ったように
+
+00:09:46.453 --> 00:09:50.924 align:start position:23% line:-2
+同じことを２度やらないためには
+作業の延期です
+
+00:09:51.391 --> 00:09:55.329 align:start position:30% line:-2
+その作業を
+すでに行っているなら―
+
+00:09:55.529 --> 00:09:58.098 align:start position:30% line:-1
+もう何もしないことです
+
+00:09:58.198 --> 00:10:01.335 align:start position:29% line:-2
+まだなら
+その制約を１度設定します
+

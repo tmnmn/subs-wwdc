@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.816 --> 00:36:01.976 A:middle
+you might want to consider
+
+00:36:02.146 --> 00:36:03.396 A:middle
+splitting your frame across
+
+00:36:03.396 --> 00:36:04.606 A:middle
+multiple command buffers.
+
+00:36:05.006 --> 00:36:08.086 A:middle
+And then the GPU can get started
+
+00:36:08.086 --> 00:36:09.796 A:middle
+executing one command buffer
+
+00:36:10.086 --> 00:36:11.486 A:middle
+while CPU is encoding the
+
+00:36:11.486 --> 00:36:11.886 A:middle
+others.
+
+00:36:13.346 --> 00:36:15.106 A:middle
+Alternatively, splitting your
+
+00:36:15.106 --> 00:36:17.386 A:middle
+frame encoding across multiple
+
+00:36:17.386 --> 00:36:19.136 A:middle
+threads requires you to create
+
+00:36:19.136 --> 00:36:20.436 A:middle
+one command buffer per thread.
+
+00:36:20.436 --> 00:36:23.196 A:middle
+But keep in mind that there is
+
+00:36:23.196 --> 00:36:25.056 A:middle
+some additional CPU cost
+
+00:36:25.056 --> 00:36:26.666 A:middle
+associated with each command
+
+00:36:26.666 --> 00:36:27.056 A:middle
+buffer.
+
+00:36:27.496 --> 00:36:29.446 A:middle
+So you should be using as few as
+
+00:36:29.516 --> 00:36:30.066 A:middle
+possible.
+
+00:36:32.216 --> 00:36:34.306 A:middle
+Metal also provides an API to
+
+00:36:34.356 --> 00:36:36.436 A:middle
+register a completion callback,
+
+00:36:37.136 --> 00:36:38.846 A:middle
+which will be involved when GPU
+
+00:36:38.846 --> 00:36:41.006 A:middle
+completes executing this command
+
+00:36:41.006 --> 00:36:41.386 A:middle
+buffer.
+
+00:36:41.986 --> 00:36:43.686 A:middle
+So let me show you all these
+
+00:36:43.686 --> 00:36:44.766 A:middle
+APIs in action.
+
+00:36:45.216 --> 00:36:48.316 A:middle
+So you will have created command
+
+00:36:48.316 --> 00:36:49.516 A:middle
+queue in your application
+
+00:36:49.516 --> 00:36:50.856 A:middle
+initialization method.
+
+00:36:51.356 --> 00:36:53.246 A:middle
+Now in render loop you will use
+
+00:36:53.246 --> 00:36:55.676 A:middle
+it to obtain command buffer by
+
+00:36:55.676 --> 00:36:56.876 A:middle
+calling its command buffer
+
+00:36:56.876 --> 00:36:57.386 A:middle
+method.
+
+00:36:57.946 --> 00:37:00.156 A:middle
+Now you will encode commands
+

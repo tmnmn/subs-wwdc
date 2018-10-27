@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.186 --> 00:36:01.176 A:middle
+default mode where the OB-C
+
+00:36:01.176 --> 00:36:02.866 A:middle
+attribute will only be inferred
+
+00:36:03.566 --> 00:36:05.316 A:middle
+for methods and properties that
+
+00:36:05.316 --> 00:36:08.176 A:middle
+satisfy protocol requirements or
+
+00:36:08.176 --> 00:36:09.716 A:middle
+those that override methods that
+
+00:36:09.716 --> 00:36:10.806 A:middle
+come from Objective-C.
+
+00:36:11.306 --> 00:36:14.576 A:middle
+So we've talked a lot about the
+
+00:36:14.576 --> 00:36:15.856 A:middle
+generated header and what you
+
+00:36:15.856 --> 00:36:17.026 A:middle
+can do to your Swift code.
+
+00:36:17.416 --> 00:36:19.306 A:middle
+But you have Objective-C code as
+
+00:36:19.306 --> 00:36:19.816 A:middle
+well.
+
+00:36:20.066 --> 00:36:21.386 A:middle
+And the Objective-C code,
+
+00:36:21.386 --> 00:36:23.596 A:middle
+likewise, causes rebuilds.
+
+00:36:24.656 --> 00:36:25.846 A:middle
+And so a bridging header looks
+
+00:36:25.846 --> 00:36:27.186 A:middle
+something like this, usually.
+
+00:36:27.186 --> 00:36:28.556 A:middle
+It's got a bunch of other
+
+00:36:28.556 --> 00:36:29.996 A:middle
+headers in the project that
+
+00:36:29.996 --> 00:36:30.976 A:middle
+you're trying to expose to
+
+00:36:30.976 --> 00:36:31.386 A:middle
+Swift.
+
+00:36:32.616 --> 00:36:34.016 A:middle
+And we can zoom in on one of
+
+00:36:34.016 --> 00:36:34.886 A:middle
+these headers here, the
+
+00:36:34.886 --> 00:36:37.436 A:middle
+MyViewController header and see
+
+00:36:37.436 --> 00:36:38.716 A:middle
+that it's a perfectly normal
+
+00:36:38.716 --> 00:36:39.526 A:middle
+declaration of a view
+
+00:36:39.526 --> 00:36:40.086 A:middle
+controller.
+
+00:36:40.616 --> 00:36:42.476 A:middle
+But also that it itself includes
+
+00:36:42.476 --> 00:36:43.196 A:middle
+another header.
+
+00:36:44.376 --> 00:36:46.006 A:middle
+What that means is that if any
+
+00:36:46.006 --> 00:36:48.126 A:middle
+of these headers change, the
+
+00:36:48.126 --> 00:36:49.886 A:middle
+Swift code in your target has to
+
+00:36:49.886 --> 00:36:51.866 A:middle
+be recompiled because it might
+
+00:36:51.866 --> 00:36:52.856 A:middle
+depend on something that
+
+00:36:52.856 --> 00:36:53.356 A:middle
+changed.
+
+00:36:54.616 --> 00:36:56.206 A:middle
+This is suboptimal.
+
+00:36:56.466 --> 00:36:59.886 A:middle
+And now we can notice that in
+
+00:36:59.886 --> 00:37:01.656 A:middle
+this example, the only reason
+

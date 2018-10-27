@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.616 --> 00:11:01.376 A:middle
+that a learner can create and
+
+00:11:01.376 --> 00:11:03.546 A:middle
+manipulate core image filters in
+
+00:11:03.546 --> 00:11:04.916 A:middle
+the Source Editor and these
+
+00:11:04.916 --> 00:11:06.426 A:middle
+filters will be sent over to the
+
+00:11:06.426 --> 00:11:08.556 A:middle
+live view and applied on top of
+
+00:11:08.556 --> 00:11:09.926 A:middle
+live camera output for them to
+
+00:11:09.926 --> 00:11:11.076 A:middle
+see what those filters look
+
+00:11:11.076 --> 00:11:11.336 A:middle
+like.
+
+00:11:12.346 --> 00:11:13.956 A:middle
+Here we are looking at the
+
+00:11:13.956 --> 00:11:15.756 A:middle
+LiveViewController.Swift folder
+
+00:11:16.776 --> 00:11:18.566 A:middle
+and I've implemented one of the
+
+00:11:18.566 --> 00:11:19.846 A:middle
+methods that came in the
+
+00:11:19.846 --> 00:11:22.016 A:middle
+template and below that I've
+
+00:11:22.056 --> 00:11:23.386 A:middle
+added the rest of the code that
+
+00:11:23.386 --> 00:11:24.896 A:middle
+I need to display the live
+
+00:11:24.896 --> 00:11:26.856 A:middle
+camera output in the live view.
+
+00:11:27.866 --> 00:11:29.436 A:middle
+As I mentioned, I also want to
+
+00:11:29.436 --> 00:11:31.766 A:middle
+apply core image filters on top
+
+00:11:31.766 --> 00:11:33.366 A:middle
+of each frame of the live camera
+
+00:11:33.366 --> 00:11:35.396 A:middle
+output, so I've added a few more
+
+00:11:35.396 --> 00:11:37.376 A:middle
+files in my book level sources
+
+00:11:37.606 --> 00:11:38.946 A:middle
+and implemented a filter
+
+00:11:38.946 --> 00:11:40.226 A:middle
+renderer for applying this
+
+00:11:40.226 --> 00:11:42.126 A:middle
+filter on top of the live camera
+
+00:11:42.126 --> 00:11:42.546 A:middle
+output.
+
+00:11:43.406 --> 00:11:45.226 A:middle
+So now if I select the
+
+00:11:45.226 --> 00:11:47.966 A:middle
+LiveViewTestApp Target, I can
+
+00:11:47.966 --> 00:11:50.776 A:middle
+actually run this code and see
+
+00:11:50.776 --> 00:11:52.116 A:middle
+what my live view will look
+
+00:11:52.116 --> 00:11:52.366 A:middle
+like.
+
+00:11:53.296 --> 00:11:54.986 A:middle
+And I've configured this app to
+
+00:11:54.986 --> 00:11:56.296 A:middle
+show the live view in a
+
+00:11:56.296 --> 00:11:57.356 A:middle
+side-by-side mode.
+
+00:11:59.086 --> 00:12:00.396 A:middle
+So where we can see what the
+

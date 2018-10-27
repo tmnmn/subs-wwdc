@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:56.937 --> 00:29:02.643 align:start position:23% line:-2
+解放しようとしたオブジェクトは
+すでに解放されていたという―
+
+00:29:02.743 --> 00:29:04.945 align:start position:34% line:-1
+メモリエラーでした
+
+00:29:06.113 --> 00:29:09.416 align:start position:29% line:-1
+以上が詳しく見た内容です
+
+00:29:09.516 --> 00:29:13.387 align:start position:23% line:-2
+オブジェクトが解放され
+ivarを処分しようとしたら―
+
+00:29:13.487 --> 00:29:16.857 align:start position:23% line:-1
+ivarの１つが解放済みでした
+
+00:29:16.957 --> 00:29:19.026 align:start position:36% line:-1
+そしてクラッシュ
+
+00:29:19.459 --> 00:29:21.161 align:start position:39% line:-1
+さらに何か？
+
+00:29:21.562 --> 00:29:26.934 align:start position:27% line:-2
+解放しようとしていた
+オブジェクトは分かるのか？
+
+00:29:27.601 --> 00:29:33.240 align:start position:20% line:-2
+通常ならobjc releaseを
+呼び出した関数がヒントになります
+
+00:29:33.440 --> 00:29:36.410 align:start position:14% line:-1
+ただivar destroyer関数は―
+
+00:29:36.510 --> 00:29:39.713 align:start position:25% line:-1
+コンパイラが生成した関数です
+
+00:29:39.813 --> 00:29:42.449 align:start position:29% line:-1
+我々が書いたものではない
+
+00:29:42.549 --> 00:29:47.521 align:start position:27% line:-2
+つまりクラッシュ関連の
+ファイル名や行番号がなく―
+
+00:29:47.621 --> 00:29:52.726 align:start position:27% line:-2
+当時 どのプロパティが
+解放されてたか分かりません
+
+00:29:53.260 --> 00:29:54.394 align:start position:36% line:-1
+これはクラスです
+
+00:29:54.495 --> 00:29:56.396 align:start position:29% line:-1
+プロパティが３つあります
+
+00:29:56.497 --> 00:30:00.567 align:start position:23% line:-2
+ユーザ名と
+データベースとビューの配列です
+

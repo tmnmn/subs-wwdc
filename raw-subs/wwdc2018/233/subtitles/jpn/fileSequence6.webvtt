@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:57.658 --> 00:06:02.129 align:start position:27% line:-2
+screens配列の最後に
+ローカル変数を設定します
+
+00:06:02.429 --> 00:06:04.431 align:start position:32% line:-1
+外付けと分かるのは―
+
+00:06:04.531 --> 00:06:08.035 align:start position:11% line:-2
+didConnectNotification
+コールバック内だから
+
+00:06:08.502 --> 00:06:12.973 align:start position:21% line:-2
+次に このディスプレイに表示する
+UIウインドウを生成し
+
+00:06:13.173 --> 00:06:17.044 align:start position:27% line:-2
+画面プロパティを
+screenに割り当てます
+
+00:06:17.144 --> 00:06:20.180 align:start position:30% line:-2
+次は このウインドウを
+設定したことを確認
+
+00:06:20.314 --> 00:06:22.015 align:start position:29% line:-1
+関数に組み込みましたが―
+
+00:06:22.115 --> 00:06:26.453 align:start position:18% line:-2
+ルートViewControllerを
+ウインドウに貼り付けるだけ
+
+00:06:26.553 --> 00:06:29.456 align:start position:34% line:-2
+内蔵ディスプレイと
+同じ方法です
+
+00:06:29.790 --> 00:06:35.496 align:start position:23% line:-2
+最後に このウインドウが
+外付け画面に表示されるよう設定
+
+00:06:36.129 --> 00:06:37.564 align:start position:38% line:-1
+以上が接続です
+
+00:06:37.664 --> 00:06:40.667 align:start position:38% line:-2
+次は切断ですが
+もっと簡単です
+
+00:06:41.168 --> 00:06:45.939 align:start position:5% line:-2
+これはUIScreen.didDisconnect
+Notificationハンドラの中身
+
+00:06:46.039 --> 00:06:48.742 align:start position:34% line:-2
+ウインドウを
+非表示にしてから―
+
+00:06:48.842 --> 00:06:52.346 align:start position:30% line:-2
+ローカル参照を削除し
+リソースを解放するだけ
+
+00:06:52.446 --> 00:06:56.850 align:start position:32% line:-2
+以上がディスプレイの
+接続と切断の実装です
+
+00:06:57.050 --> 00:06:58.952 align:start position:34% line:-1
+本当に簡単だったね
+

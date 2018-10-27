@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.676 --> 00:13:00.136 A:middle
+files.
+
+00:13:00.836 --> 00:13:02.286 A:middle
+Now, these are very important
+
+00:13:02.286 --> 00:13:03.536 A:middle
+for your run script phase.
+
+00:13:03.896 --> 00:13:05.356 A:middle
+As this is one of the key pieces
+
+00:13:05.356 --> 00:13:07.126 A:middle
+of information that the Xcode
+
+00:13:07.126 --> 00:13:08.386 A:middle
+Build System will use to
+
+00:13:08.386 --> 00:13:09.606 A:middle
+determine if your run scripts
+
+00:13:09.606 --> 00:13:12.146 A:middle
+should actually run or not.
+
+00:13:12.146 --> 00:13:13.946 A:middle
+So this should include any file
+
+00:13:13.946 --> 00:13:15.986 A:middle
+that your run script phase, the
+
+00:13:16.026 --> 00:13:17.426 A:middle
+script content, is actually
+
+00:13:17.426 --> 00:13:18.986 A:middle
+going to read or look at during
+
+00:13:18.986 --> 00:13:19.646 A:middle
+its process.
+
+00:13:21.096 --> 00:13:23.306 A:middle
+Now, some of you may have a lot
+
+00:13:23.876 --> 00:13:25.316 A:middle
+of inputs into your run script
+
+00:13:25.316 --> 00:13:25.676 A:middle
+phase.
+
+00:13:25.816 --> 00:13:27.086 A:middle
+And so this task might seem a
+
+00:13:27.086 --> 00:13:27.906 A:middle
+little bit daunting.
+
+00:13:28.506 --> 00:13:31.046 A:middle
+And so new in Xcode 10 we have
+
+00:13:31.046 --> 00:13:32.666 A:middle
+the ability for you -- or we've
+
+00:13:32.666 --> 00:13:33.776 A:middle
+provided you the ability to
+
+00:13:33.776 --> 00:13:34.966 A:middle
+maintain this list in an
+
+00:13:34.966 --> 00:13:37.426 A:middle
+external file, something we call
+
+00:13:37.426 --> 00:13:38.236 A:middle
+a File List.
+
+00:13:39.626 --> 00:13:41.056 A:middle
+Now, a file list is a simple
+
+00:13:41.256 --> 00:13:42.996 A:middle
+text file that has all of its
+
+00:13:42.996 --> 00:13:44.826 A:middle
+inputs listed on its own line.
+
+00:13:46.226 --> 00:13:47.246 A:middle
+You get access to all of the
+
+00:13:47.246 --> 00:13:48.866 A:middle
+same build settings that were
+
+00:13:48.866 --> 00:13:49.946 A:middle
+available to you throughout the
+
+00:13:49.946 --> 00:13:51.026 A:middle
+context of your run script
+
+00:13:51.026 --> 00:13:51.456 A:middle
+phase.
+
+00:13:52.656 --> 00:13:53.806 A:middle
+The important thing to note
+
+00:13:53.806 --> 00:13:54.796 A:middle
+here, though, is that these
+
+00:13:54.796 --> 00:13:56.376 A:middle
+files cannot be modified or
+
+00:13:56.376 --> 00:13:57.606 A:middle
+generated throughout your build
+
+00:13:57.646 --> 00:13:58.306 A:middle
+process.
+
+00:13:58.766 --> 00:14:00.796 A:middle
+They are read when your build
+

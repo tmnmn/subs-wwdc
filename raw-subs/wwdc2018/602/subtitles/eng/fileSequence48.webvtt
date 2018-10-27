@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:58.506 --> 00:48:00.736 A:middle
+plane estimation in which we use
+
+00:48:00.776 --> 00:48:02.186 A:middle
+accumulated scene information to
+
+00:48:02.516 --> 00:48:03.566 A:middle
+estimate the position of a
+
+00:48:03.566 --> 00:48:05.106 A:middle
+horizontal or vertical plane.
+
+00:48:06.046 --> 00:48:07.556 A:middle
+In this case, we use this
+
+00:48:08.326 --> 00:48:11.606 A:middle
+information to gather
+
+00:48:11.606 --> 00:48:13.286 A:middle
+information about the 3D object.
+
+00:48:13.776 --> 00:48:17.556 A:middle
+In order to specify which area
+
+00:48:17.556 --> 00:48:19.086 A:middle
+to look for the object, I just
+
+00:48:19.086 --> 00:48:21.326 A:middle
+specify a transform and extend
+
+00:48:21.366 --> 00:48:21.986 A:middle
+in the center.
+
+00:48:22.796 --> 00:48:24.036 A:middle
+This is essentially a bounding
+
+00:48:24.036 --> 00:48:25.746 A:middle
+box around the object just to
+
+00:48:25.846 --> 00:48:29.696 A:middle
+define where it is in the scene.
+
+00:48:29.876 --> 00:48:31.266 A:middle
+Extracted objects are fully
+
+00:48:31.266 --> 00:48:33.126 A:middle
+supported by Xcode's asset
+
+00:48:33.126 --> 00:48:34.736 A:middle
+catalog, so it makes it really
+
+00:48:34.736 --> 00:48:38.486 A:middle
+easy to port them to a new app
+
+00:48:38.556 --> 00:48:40.756 A:middle
+and reuse them as many times as
+
+00:48:40.756 --> 00:48:41.116 A:middle
+you want.
+
+00:48:42.606 --> 00:48:43.986 A:middle
+And for scanning, we added a new
+
+00:48:43.986 --> 00:48:45.266 A:middle
+configuration, the
+
+00:48:45.266 --> 00:48:46.696 A:middle
+ARObjectScanningConfiguration.
+
+00:48:48.156 --> 00:48:49.896 A:middle
+But you do not need to go ahead
+
+00:48:49.896 --> 00:48:51.246 A:middle
+and implement your own scanning
+
+00:48:51.246 --> 00:48:53.826 A:middle
+app as the full sample code is
+
+00:48:53.826 --> 00:48:55.386 A:middle
+available for full-featured
+
+00:48:55.486 --> 00:48:57.616 A:middle
+scanning app called Scanning and
+
+00:48:57.616 --> 00:48:58.746 A:middle
+Detecting 3D Objects.
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.526 --> 00:35:01.416 A:middle
+because it's a really beautiful
+
+00:35:01.416 --> 00:35:02.486 A:middle
+and instructive algorithm.
+
+00:35:03.766 --> 00:35:05.196 A:middle
+The public method gets the
+
+00:35:05.196 --> 00:35:06.846 A:middle
+collections count and passes it
+
+00:35:06.846 --> 00:35:10.506 A:middle
+on to this helper, which uses a
+
+00:35:10.506 --> 00:35:11.776 A:middle
+divide and conquer strategy.
+
+00:35:13.056 --> 00:35:15.136 A:middle
+So, first, it takes care of the
+
+00:35:15.136 --> 00:35:17.276 A:middle
+base cases when the count is
+
+00:35:17.276 --> 00:35:18.436 A:middle
+less than 2, we're done.
+
+00:35:18.966 --> 00:35:19.916 A:middle
+We just need to figure out
+
+00:35:20.396 --> 00:35:21.656 A:middle
+whether the partition point is
+
+00:35:21.656 --> 00:35:23.046 A:middle
+at the beginning or at the end
+
+00:35:23.046 --> 00:35:26.016 A:middle
+of the collection.
+
+00:35:26.116 --> 00:35:28.496 A:middle
+Next, we divide the collection
+
+00:35:28.546 --> 00:35:29.416 A:middle
+in two.
+
+00:35:31.136 --> 00:35:33.696 A:middle
+Now, at this point, you have to
+
+00:35:33.746 --> 00:35:35.136 A:middle
+temporarily take it on faith
+
+00:35:35.136 --> 00:35:37.146 A:middle
+that the algorithm works because
+
+00:35:37.146 --> 00:35:38.346 A:middle
+we're going to stable partition
+
+00:35:38.346 --> 00:35:41.056 A:middle
+the left half and the right
+
+00:35:41.056 --> 00:35:41.446 A:middle
+half.
+
+00:35:42.136 --> 00:35:46.766 A:middle
+Now, if you take a look at these
+
+00:35:46.766 --> 00:35:49.166 A:middle
+two ends, you can see that
+
+00:35:49.166 --> 00:35:50.746 A:middle
+everything is exactly in the
+
+00:35:50.746 --> 00:35:54.556 A:middle
+right place, but this center
+
+00:35:54.556 --> 00:35:56.516 A:middle
+section has two parts that need
+
+00:35:56.516 --> 00:35:57.316 A:middle
+to be exchanged.
+
+00:35:58.806 --> 00:36:01.016 A:middle
+Now, they won't always have the
+

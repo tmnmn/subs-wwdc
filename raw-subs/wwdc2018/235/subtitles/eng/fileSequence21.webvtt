@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.286 --> 00:21:01.216 A:middle
+And we'll put this right in the
+
+00:21:01.216 --> 00:21:01.836 A:middle
+content area.
+
+00:21:01.836 --> 00:21:03.426 A:middle
+And so right now this-- this
+
+00:21:03.426 --> 00:21:05.296 A:middle
+subview is sitting fully inside
+
+00:21:05.296 --> 00:21:06.566 A:middle
+of the safe area in the scroll
+
+00:21:06.566 --> 00:21:06.756 A:middle
+view.
+
+00:21:07.726 --> 00:21:09.446 A:middle
+But what if we start to scroll
+
+00:21:09.446 --> 00:21:11.036 A:middle
+the scroll view down which will
+
+00:21:11.036 --> 00:21:12.026 A:middle
+move that content up?
+
+00:21:12.736 --> 00:21:14.936 A:middle
+Just like this so that part of
+
+00:21:14.936 --> 00:21:16.206 A:middle
+that subview is now sitting
+
+00:21:16.286 --> 00:21:18.206 A:middle
+outside of the scroll view safe
+
+00:21:18.206 --> 00:21:18.476 A:middle
+area?
+
+00:21:19.636 --> 00:21:21.106 A:middle
+Based on the safe area inset
+
+00:21:21.106 --> 00:21:22.546 A:middle
+propagation that David just
+
+00:21:22.546 --> 00:21:24.106 A:middle
+talked to you about, you might
+
+00:21:24.106 --> 00:21:25.456 A:middle
+be thinking, okay, that means
+
+00:21:25.456 --> 00:21:26.576 A:middle
+the subview is going to start
+
+00:21:26.616 --> 00:21:28.726 A:middle
+seeing its own top edge safe
+
+00:21:28.726 --> 00:21:29.356 A:middle
+area inset.
+
+00:21:30.496 --> 00:21:31.276 A:middle
+That's actually not what
+
+00:21:31.276 --> 00:21:31.676 A:middle
+happens.
+
+00:21:32.726 --> 00:21:34.386 A:middle
+The reason why is because when a
+
+00:21:34.386 --> 00:21:36.746 A:middle
+scroll view absorbs safe area
+
+00:21:36.746 --> 00:21:38.966 A:middle
+insets into its adjusted content
+
+00:21:38.966 --> 00:21:40.966 A:middle
+inset, it will no longer
+
+00:21:41.156 --> 00:21:43.316 A:middle
+propagate those same insets down
+
+00:21:43.316 --> 00:21:44.646 A:middle
+to its subviews on that same
+
+00:21:44.646 --> 00:21:45.016 A:middle
+edge.
+
+00:21:46.336 --> 00:21:47.236 A:middle
+This is really important.
+
+00:21:48.276 --> 00:21:50.316 A:middle
+Scroll views use scrolling to
+
+00:21:50.316 --> 00:21:52.306 A:middle
+move content around and move it
+
+00:21:52.306 --> 00:21:53.496 A:middle
+out into the safe area.
+
+00:21:54.516 --> 00:21:56.636 A:middle
+And if a scroll view were to
+
+00:21:56.986 --> 00:21:59.046 A:middle
+also propagate safe area insets
+
+00:21:59.046 --> 00:22:00.366 A:middle
+that it was using to extend its
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:57.126 --> 00:49:00.596 A:middle
+this demonstration to not lower
+
+00:49:00.596 --> 00:49:01.546 A:middle
+the quality when we hit
+
+00:49:01.576 --> 00:49:03.106 A:middle
+contention or when we couldn't
+
+00:49:03.146 --> 00:49:04.786 A:middle
+send packets fast enough or to
+
+00:49:04.786 --> 00:49:06.526 A:middle
+not drop anything but just to
+
+00:49:06.526 --> 00:49:07.676 A:middle
+slow down if we had to.
+
+00:49:08.236 --> 00:49:09.116 A:middle
+Now this is probably not what
+
+00:49:09.116 --> 00:49:10.226 A:middle
+your app would do in real life,
+
+00:49:10.226 --> 00:49:11.906 A:middle
+but it highlights exactly the
+
+00:49:11.906 --> 00:49:13.916 A:middle
+difference in the performance
+
+00:49:13.916 --> 00:49:15.536 A:middle
+between these two stacks.
+
+00:49:16.156 --> 00:49:16.936 A:middle
+So let's see it right now.
+
+00:49:22.046 --> 00:49:23.176 A:middle
+So there's exactly the same
+
+00:49:23.176 --> 00:49:25.466 A:middle
+data, exactly the same frames
+
+00:49:25.466 --> 00:49:26.666 A:middle
+being sent over as fast as they
+
+00:49:26.666 --> 00:49:28.656 A:middle
+possibly can, across this
+
+00:49:28.656 --> 00:49:32.446 A:middle
+network, and we see the one on
+
+00:49:32.446 --> 00:49:33.836 A:middle
+the right is pretty easily
+
+00:49:33.836 --> 00:49:35.176 A:middle
+outstripping the one on the
+
+00:49:35.516 --> 00:49:35.646 A:middle
+left.
+
+00:49:36.766 --> 00:49:38.436 A:middle
+And in fact, if you look at the
+
+00:49:38.436 --> 00:49:40.306 A:middle
+difference, it's 30 percent less
+
+00:49:40.306 --> 00:49:41.776 A:middle
+overhead that we're viewing on
+
+00:49:41.776 --> 00:49:43.066 A:middle
+the receiver side only.
+
+00:49:44.236 --> 00:49:45.616 A:middle
+And this is due to the huge
+
+00:49:45.616 --> 00:49:47.806 A:middle
+difference that we see in the
+
+00:49:47.806 --> 00:49:50.016 A:middle
+CPU percentage that it takes to
+
+00:49:50.016 --> 00:49:51.746 A:middle
+send and receive UDP packets
+
+00:49:52.336 --> 00:49:53.536 A:middle
+when you compare sockets and
+
+00:49:53.536 --> 00:49:54.496 A:middle
+user space networking.
+
+00:49:55.186 --> 00:49:56.306 A:middle
+Now, of course this is just one
+
+00:49:56.306 --> 00:49:56.746 A:middle
+example.
+
+00:49:56.836 --> 00:49:58.396 A:middle
+This is not going to be what
+
+00:49:58.586 --> 00:49:59.666 A:middle
+every app is going to be like,
+
+00:49:59.666 --> 00:50:00.276 A:middle
+because you're going to be
+

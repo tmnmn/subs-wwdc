@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.046 --> 00:08:00.156 A:middle
+So it's essential that you
+
+00:08:00.156 --> 00:08:02.426 A:middle
+understand how your users are
+
+00:08:02.426 --> 00:08:03.316 A:middle
+going to use the product, so
+
+00:08:03.506 --> 00:08:04.696 A:middle
+that you can optimize for the
+
+00:08:04.726 --> 00:08:05.536 A:middle
+right cases.
+
+00:08:07.956 --> 00:08:09.696 A:middle
+Now, in all of these cases, I
+
+00:08:09.696 --> 00:08:11.206 A:middle
+need to do some form of testing,
+
+00:08:11.686 --> 00:08:13.066 A:middle
+whether it's manual, or
+
+00:08:13.066 --> 00:08:13.556 A:middle
+automated.
+
+00:08:16.246 --> 00:08:17.556 A:middle
+I want to share with you two
+
+00:08:17.556 --> 00:08:18.886 A:middle
+types of performance tests that
+
+00:08:18.886 --> 00:08:20.196 A:middle
+I will typically write to
+
+00:08:20.196 --> 00:08:21.516 A:middle
+measure the performance of
+
+00:08:22.026 --> 00:08:22.186 A:middle
+Xcode.
+
+00:08:23.436 --> 00:08:25.436 A:middle
+We will either do unit tests, or
+
+00:08:25.436 --> 00:08:26.376 A:middle
+integration tests.
+
+00:08:26.956 --> 00:08:28.176 A:middle
+Let's compare and contrast them.
+
+00:08:29.376 --> 00:08:31.306 A:middle
+In a performance unit test, it's
+
+00:08:31.306 --> 00:08:33.616 A:middle
+your goal to isolate some
+
+00:08:33.616 --> 00:08:35.096 A:middle
+feature of your application and
+
+00:08:35.096 --> 00:08:36.356 A:middle
+measure it all by itself.
+
+00:08:36.966 --> 00:08:37.726 A:middle
+You might mock out its
+
+00:08:37.756 --> 00:08:39.236 A:middle
+dependencies, and you might
+
+00:08:39.236 --> 00:08:41.126 A:middle
+launch it in a context where it
+
+00:08:41.126 --> 00:08:42.736 A:middle
+has been isolated.
+
+00:08:43.496 --> 00:08:45.666 A:middle
+If I were to write performance
+
+00:08:45.666 --> 00:08:47.266 A:middle
+unit tests for Xcode's code
+
+00:08:47.266 --> 00:08:48.676 A:middle
+completion, I might write a
+
+00:08:48.676 --> 00:08:50.406 A:middle
+series of three small tests.
+
+00:08:51.076 --> 00:08:52.896 A:middle
+One of these tests would measure
+
+00:08:53.256 --> 00:08:54.616 A:middle
+talking to the compiler and
+
+00:08:54.616 --> 00:08:56.426 A:middle
+getting the raw results, the raw
+
+00:08:56.426 --> 00:08:57.266 A:middle
+set of code completion
+
+00:08:57.266 --> 00:08:57.876 A:middle
+candidates back.
+
+00:08:58.946 --> 00:09:01.056 A:middle
+Another performance test would
+

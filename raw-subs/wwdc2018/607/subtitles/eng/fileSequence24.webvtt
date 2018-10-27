@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:02.606 --> 00:24:03.796 A:middle
+Now, Metal is designed to take
+
+00:24:03.796 --> 00:24:05.036 A:middle
+advantage of the TBDR
+
+00:24:05.036 --> 00:24:06.636 A:middle
+architecture automatically
+
+00:24:06.636 --> 00:24:08.796 A:middle
+within each render pass, load
+
+00:24:08.796 --> 00:24:10.636 A:middle
+and store actions, make explicit
+
+00:24:10.636 --> 00:24:11.936 A:middle
+how render pass attachments move
+
+00:24:11.996 --> 00:24:13.226 A:middle
+in and out of tile memory.
+
+00:24:16.386 --> 00:24:18.266 A:middle
+But the A11 GPU takes the TBDR
+
+00:24:18.266 --> 00:24:19.706 A:middle
+architecture even further.
+
+00:24:20.306 --> 00:24:21.656 A:middle
+We added new capabilities to our
+
+00:24:21.656 --> 00:24:23.046 A:middle
+tile memory and added an
+
+00:24:23.046 --> 00:24:24.656 A:middle
+entirely new programmable stage.
+
+00:24:25.556 --> 00:24:27.456 A:middle
+This opens up new optimization
+
+00:24:27.456 --> 00:24:28.826 A:middle
+opportunities critical to
+
+00:24:28.826 --> 00:24:30.056 A:middle
+advanced rendering techniques,
+
+00:24:30.456 --> 00:24:31.706 A:middle
+such as deferred shading,
+
+00:24:32.246 --> 00:24:33.546 A:middle
+order-independent transparency,
+
+00:24:34.086 --> 00:24:35.726 A:middle
+tiled forward shading, and
+
+00:24:35.726 --> 00:24:36.426 A:middle
+particle rendering.
+
+00:24:37.676 --> 00:24:39.096 A:middle
+So let's start by taking a look
+
+00:24:39.096 --> 00:24:40.346 A:middle
+at the architecture of the A11
+
+00:24:40.346 --> 00:24:40.796 A:middle
+GPU.
+
+00:24:44.066 --> 00:24:44.356 A:middle
+All right.
+
+00:24:44.826 --> 00:24:46.236 A:middle
+So on the left, we have a block
+
+00:24:46.236 --> 00:24:47.846 A:middle
+representation of the A11 GPU.
+
+00:24:47.956 --> 00:24:49.246 A:middle
+And on the right, we have system
+
+00:24:49.246 --> 00:24:49.586 A:middle
+memory.
+
+00:24:51.486 --> 00:24:53.736 A:middle
+Now, the A11 GPU first processes
+
+00:24:53.736 --> 00:24:54.866 A:middle
+all the geometry of a render
+
+00:24:54.866 --> 00:24:56.596 A:middle
+pass in the vertex stage.
+
+00:24:57.096 --> 00:24:58.646 A:middle
+It transforms and bends your
+
+00:24:58.646 --> 00:25:00.136 A:middle
+geometry into screen-aligned,
+

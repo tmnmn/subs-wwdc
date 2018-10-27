@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.800 --> 00:30:05.372 align:start position:27% line:-2
+メモリは有限ですから
+スタックに割り当て続ければ
+
+00:30:05.472 --> 00:30:09.343 align:start position:32% line:-2
+ヒープなどの別領域に
+達してしまいます
+
+00:30:10.777 --> 00:30:13.580 align:start position:25% line:-1
+するとクラッシュを起こします
+
+00:30:13.680 --> 00:30:17.618 align:start position:30% line:-2
+mallocなどで
+確保していても無駄です
+
+00:30:20.521 --> 00:30:24.391 align:start position:16% line:-1
+先ほどのstrcpyの例にならうように
+
+00:30:24.491 --> 00:30:28.262 align:start position:23% line:-1
+１バイトずつ書いていきましょう
+
+00:30:30.030 --> 00:30:33.167 align:start position:38% line:-1
+“H　e　l”
+
+00:30:33.600 --> 00:30:38.839 align:start position:23% line:-2
+CPU 生成したコード OSは
+問題ないと判断します
+
+00:30:39.006 --> 00:30:43.143 align:start position:32% line:-2
+すでに有効なページを
+使っているからです
+
+00:30:44.778 --> 00:30:51.185 align:start position:21% line:-2
+しかしローカルなスタックではない
+ヒープ上では問題です
+
+00:30:51.485 --> 00:30:54.988 align:start position:30% line:-2
+コードを書く時
+オーバーライドするのは
+
+00:30:55.189 --> 00:30:59.626 align:start position:29% line:-2
+Boolean値など
+関連性のない情報にします
+

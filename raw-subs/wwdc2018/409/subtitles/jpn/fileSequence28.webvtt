@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.378 --> 00:28:04.051 align:start position:27% line:-2
+returnの上のコードで
+カナリーが有効か確認します
+
+00:28:06.120 --> 00:28:09.923 align:start position:32% line:-2
+最初にカナリーを
+オーバーライドします
+
+00:28:11.391 --> 00:28:17.197 align:start position:21% line:-2
+返す前にカナリーで確認が入るため
+処理が停止します
+
+00:28:17.564 --> 00:28:23.170 align:start position:23% line:-2
+悪用できる脆弱性が
+信頼性の高いクラッシュに変わり
+
+00:28:23.337 --> 00:28:25.272 align:start position:34% line:-1
+攻撃者には不利です
+
+00:28:26.640 --> 00:28:28.842 align:start position:14% line:-1
+これがStack Protectorです
+
+00:28:32.780 --> 00:28:37.684 align:start position:27% line:-2
+バッファのオーバーフローを
+検出してくれます
+
+00:28:38.418 --> 00:28:41.855 align:start position:29% line:-2
+Xcodeはデフォルトで
+実装しています
+
+00:28:44.324 --> 00:28:49.229 align:start position:27% line:-2
+次はさらに厄介なケースへの
+軽減措置です
+
+00:28:50.664 --> 00:28:54.535 align:start position:32% line:-2
+関数は先ほどと同じ
+dlogを使いますが
+
+00:28:55.002 --> 00:28:58.205 align:start position:29% line:-1
+可変長配列になっています
+
+00:28:59.072 --> 00:29:01.842 align:start position:27% line:-1
+パラメータにはlenを使用
+

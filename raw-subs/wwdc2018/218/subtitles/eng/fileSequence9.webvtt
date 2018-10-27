@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.016 --> 00:09:00.496 A:middle
+color that we get from it is
+
+00:09:00.496 --> 00:09:00.906 A:middle
+static.
+
+00:09:00.906 --> 00:09:02.146 A:middle
+It won't change for the
+
+00:09:02.146 --> 00:09:02.816 A:middle
+appearance.
+
+00:09:03.806 --> 00:09:05.666 A:middle
+And, since we configured our
+
+00:09:05.666 --> 00:09:08.076 A:middle
+layer in our initializer, we
+
+00:09:08.076 --> 00:09:09.206 A:middle
+didn't get a chance to run any
+
+00:09:09.206 --> 00:09:10.916 A:middle
+code when the appearance
+
+00:09:10.916 --> 00:09:11.396 A:middle
+changed.
+
+00:09:11.946 --> 00:09:14.616 A:middle
+Now, the key takeaway from this
+
+00:09:14.616 --> 00:09:15.686 A:middle
+is you need to do your
+
+00:09:15.846 --> 00:09:17.766 A:middle
+appearance sensitive work in
+
+00:09:17.886 --> 00:09:19.086 A:middle
+specific areas.
+
+00:09:19.666 --> 00:09:21.576 A:middle
+Specifically, the update
+
+00:09:21.576 --> 00:09:23.936 A:middle
+constraints, layout, draw, and
+
+00:09:23.986 --> 00:09:26.336 A:middle
+update layer methods of NSView.
+
+00:09:27.616 --> 00:09:29.406 A:middle
+Now, AppKit will automatically
+
+00:09:29.486 --> 00:09:30.956 A:middle
+call these methods as needed
+
+00:09:31.196 --> 00:09:32.446 A:middle
+when the appearance changes.
+
+00:09:32.996 --> 00:09:34.246 A:middle
+And if you need to trigger them
+
+00:09:34.246 --> 00:09:35.746 A:middle
+manually, of course you can
+
+00:09:35.846 --> 00:09:36.586 A:middle
+always use the
+
+00:09:36.966 --> 00:09:38.296 A:middle
+needsUpdateConstraints,
+
+00:09:38.596 --> 00:09:39.926 A:middle
+needsLayout, and
+
+00:09:39.926 --> 00:09:42.026 A:middle
+needsDisplayProperties and
+
+00:09:42.026 --> 00:09:44.306 A:middle
+AppKit will automatically call
+
+00:09:45.696 --> 00:09:45.806 A:middle
+them.
+
+00:09:46.146 --> 00:09:46.896 A:middle
+So, let's go back to our
+
+00:09:46.896 --> 00:09:47.296 A:middle
+example.
+
+00:09:48.616 --> 00:09:50.196 A:middle
+Instead of overriding init,
+
+00:09:50.856 --> 00:09:53.666 A:middle
+we'll implement updateLayer and
+
+00:09:53.666 --> 00:09:56.726 A:middle
+there we can go ahead and safely
+
+00:09:57.056 --> 00:09:59.346 A:middle
+populate our layer by asking our
+
+00:09:59.346 --> 00:10:00.796 A:middle
+NSColor for a CG color.
+

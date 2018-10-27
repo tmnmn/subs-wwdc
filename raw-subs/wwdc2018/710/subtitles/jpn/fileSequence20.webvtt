@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.566 --> 00:20:02.302 align:start position:32% line:-2
+ビューを閉じることも
+できます
+
+00:20:02.669 --> 00:20:07.007 align:start position:20% line:-2
+completionブロックに
+dismissを渡せば設定できます
+
+00:20:08.642 --> 00:20:13.213 align:start position:29% line:-2
+独自のカスタムボタンで
+ビューを閉じたい場合は？
+
+00:20:13.313 --> 00:20:15.215 align:start position:34% line:-1
+しかもプログラムで
+
+00:20:15.315 --> 00:20:18.685 align:start position:25% line:-2
+例えばユーザが“Like”を
+タップすると閉じる
+
+00:20:18.786 --> 00:20:22.523 align:start position:18% line:-2
+コンテンツExtentionの操作を
+終えたという解釈です
+
+00:20:23.624 --> 00:20:26.093 align:start position:25% line:-1
+これを可能にするのも新API
+
+00:20:26.193 --> 00:20:28.462 align:start position:14% line:-1
+NSExtensionContextの―
+
+00:20:28.562 --> 00:20:30.898 align:start position:16% line:-2
+dismissNotification
+ContentExtension
+
+00:20:33.066 --> 00:20:36.770 align:start position:25% line:-2
+Likeボタンの設定の仕方に
+戻りますが 今度は―
+
+00:20:36.870 --> 00:20:40.574 align:start position:20% line:-2
+コンテンツExtensonビューを
+閉じるために追加した―
+
+00:20:40.674 --> 00:20:42.643 align:start position:29% line:-1
+新しい関数も呼び出します
+
+00:20:44.978 --> 00:20:48.382 align:start position:21% line:-2
+これでユーザが
+Likeアクションを実行すると―
+
+00:20:48.482 --> 00:20:50.984 align:start position:18% line:-2
+コンテンツExtensionビューが
+閉じます
+
+00:20:52.686 --> 00:20:55.656 align:start position:25% line:-2
+１つ注意なのが
+このメソッドを呼び出しても―
+
+00:20:55.756 --> 00:20:59.193 align:start position:32% line:-2
+ユーザに送った通知は
+取り消されません
+
+00:20:59.726 --> 00:21:02.896 align:start position:30% line:-2
+取り消したい場合
+既存のAPIを使います
+

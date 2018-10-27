@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.725 --> 00:06:04.498 align:start position:7% line:-2
+JSON Web Tokens RFC 7519
+略してJWTに基づいています
+
+00:06:04.865 --> 00:06:08.969 align:start position:25% line:-2
+これはウェブ上の
+認証クレーム送信に特化した―
+
+00:06:09.069 --> 00:06:11.238 align:start position:30% line:-1
+業界標準になっています
+
+00:06:12.072 --> 00:06:16.476 align:start position:20% line:-1
+詳細は jwt.ioをご覧ください
+
+00:06:17.778 --> 00:06:23.717 align:start position:20% line:-2
+大半のプログラム言語を網羅する
+JWTトークン署名用のライブラリも
+
+00:06:25.085 --> 00:06:28.889 align:start position:29% line:-2
+全てのJWTトークンは
+以下の３部分からなります
+
+00:06:29.356 --> 00:06:34.127 align:start position:34% line:-2
+ヘッダ ペイロード
+そして署名です
+
+00:06:34.928 --> 00:06:38.999 align:start position:21% line:-2
+ピリオドで区切られ
+Base64 URLでエンコード
+
+00:06:39.099 --> 00:06:43.337 align:start position:27% line:-2
+要求ヘッダに容易にパスされ
+トークンを作成します
+
+00:06:44.738 --> 00:06:49.376 align:start position:23% line:-2
+認証トークンの推奨JWT構成が
+２つあります
+
+00:06:49.476 --> 00:06:52.579 align:start position:23% line:-1
+短期トークンと長期トークンです
+
+00:06:54.648 --> 00:06:56.717 align:start position:25% line:-1
+短期トークンから始めましょう
+
+00:06:56.950 --> 00:07:01.021 align:start position:30% line:-2
+このタイプは不正に対し
+最大の保護を提供し
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.866 --> 00:35:00.166 A:middle
+my own validation that I added
+
+00:35:00.166 --> 00:35:01.186 A:middle
+in that validate method.
+
+00:35:01.926 --> 00:35:03.406 A:middle
+Here, I want to make sure I keep
+
+00:35:03.406 --> 00:35:04.816 A:middle
+performing that same validation
+
+00:35:04.816 --> 00:35:06.336 A:middle
+to make sure the ID is valid.
+
+00:35:06.546 --> 00:35:07.336 A:middle
+And here, I can use a
+
+00:35:07.336 --> 00:35:08.616 A:middle
+convenience method to throw a
+
+00:35:08.616 --> 00:35:10.096 A:middle
+meaningful error that indicates
+
+00:35:10.976 --> 00:35:12.946 A:middle
+what happened.
+
+00:35:13.476 --> 00:35:14.866 A:middle
+Now, later in that validate
+
+00:35:14.866 --> 00:35:16.316 A:middle
+function I might've pulled that
+
+00:35:16.316 --> 00:35:18.026 A:middle
+creation date out as a string
+
+00:35:18.026 --> 00:35:19.616 A:middle
+and then had to pass it along to
+
+00:35:19.616 --> 00:35:22.586 A:middle
+a date formatter to get a valid
+
+00:35:22.586 --> 00:35:25.186 A:middle
+date back out.
+
+00:35:25.396 --> 00:35:26.836 A:middle
+Here, because we can use JSON
+
+00:35:26.836 --> 00:35:29.156 A:middle
+decoder, we can simply decode a
+
+00:35:29.156 --> 00:35:30.336 A:middle
+date directly, we don't have to
+
+00:35:30.336 --> 00:35:31.416 A:middle
+worry about that type
+
+00:35:31.446 --> 00:35:31.926 A:middle
+conversion.
+
+00:35:32.766 --> 00:35:34.266 A:middle
+We can use JSON decoders date
+
+00:35:34.296 --> 00:35:36.556 A:middle
+decoding policy to indicate what
+
+00:35:36.556 --> 00:35:37.816 A:middle
+sort of conversion can happen
+
+00:35:37.816 --> 00:35:37.936 A:middle
+here.
+
+00:35:38.186 --> 00:35:40.386 A:middle
+And this is nice because this
+
+00:35:40.386 --> 00:35:41.636 A:middle
+conversion became a one-liner.
+
+00:35:42.796 --> 00:35:44.626 A:middle
+And, the other decode call is
+
+00:35:44.626 --> 00:35:46.156 A:middle
+also a one-liner, which makes it
+
+00:35:46.156 --> 00:35:47.496 A:middle
+easy for me to focus on the
+
+00:35:47.496 --> 00:35:48.946 A:middle
+types of validation that I care
+
+00:35:49.536 --> 00:35:49.726 A:middle
+about.
+
+00:35:51.056 --> 00:35:52.706 A:middle
+Now, later on in the validate
+
+00:35:52.706 --> 00:35:53.786 A:middle
+function, I might have also
+
+00:35:53.786 --> 00:35:55.316 A:middle
+pulled out that substructure of
+
+00:35:55.316 --> 00:35:57.126 A:middle
+tags out as an array of strings,
+
+00:35:57.336 --> 00:35:58.876 A:middle
+and later had to map those
+
+00:35:58.876 --> 00:36:00.496 A:middle
+strings to my own type, maybe
+

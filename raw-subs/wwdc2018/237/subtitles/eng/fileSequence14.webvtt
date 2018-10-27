@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.096 --> 00:14:00.556 A:middle
+to assign a delegate at all.
+
+00:14:02.376 --> 00:14:04.076 A:middle
+The protocol hosts a bunch of
+
+00:14:04.076 --> 00:14:05.506 A:middle
+methods you can implement.
+
+00:14:06.306 --> 00:14:07.986 A:middle
+The first two methods lets you
+
+00:14:07.986 --> 00:14:09.566 A:middle
+react to the event that Quick
+
+00:14:09.566 --> 00:14:11.086 A:middle
+Look is about to be dismissed by
+
+00:14:11.086 --> 00:14:13.246 A:middle
+the user and also that the
+
+00:14:13.246 --> 00:14:13.976 A:middle
+dismissing is now complete.
+
+00:14:18.046 --> 00:14:19.036 A:middle
+You might want to use these
+
+00:14:19.036 --> 00:14:20.636 A:middle
+methods to update the view
+
+00:14:20.636 --> 00:14:22.126 A:middle
+controller that is presenting
+
+00:14:22.126 --> 00:14:22.976 A:middle
+Quick Look right now.
+
+00:14:27.176 --> 00:14:29.456 A:middle
+Next, the preview controller
+
+00:14:29.456 --> 00:14:31.856 A:middle
+should open URL for item method
+
+00:14:32.386 --> 00:14:34.026 A:middle
+allows you to prevent Quick Look
+
+00:14:34.026 --> 00:14:35.966 A:middle
+to follow a link contained in
+
+00:14:35.966 --> 00:14:37.136 A:middle
+previewed documents.
+
+00:14:38.006 --> 00:14:39.846 A:middle
+With this method you can for
+
+00:14:39.846 --> 00:14:41.736 A:middle
+example prevent the user from
+
+00:14:41.736 --> 00:14:43.806 A:middle
+leaving your app when tapping a
+
+00:14:43.806 --> 00:14:45.886 A:middle
+URL or a phone number contained
+
+00:14:45.886 --> 00:14:46.206 A:middle
+in a PDF.
+
+00:14:46.206 --> 00:14:51.086 A:middle
+And last but not least, as
+
+00:14:51.086 --> 00:14:52.246 A:middle
+promised before the
+
+00:14:52.246 --> 00:14:53.936 A:middle
+QLPreviewController delegate
+
+00:14:53.936 --> 00:14:56.356 A:middle
+protocol also provides API to
+
+00:14:56.476 --> 00:14:58.896 A:middle
+get a smooth zoom animation when
+
+00:14:58.896 --> 00:15:00.106 A:middle
+Quick Look is presented and
+

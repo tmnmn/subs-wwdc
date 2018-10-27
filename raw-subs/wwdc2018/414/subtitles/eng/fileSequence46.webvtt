@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.496 --> 00:46:00.336 A:middle
+reproduce this crash.
+
+00:46:00.656 --> 00:46:02.496 A:middle
+And let me close the crash log
+
+00:46:02.496 --> 00:46:03.076 A:middle
+session first.
+
+00:46:03.076 --> 00:46:05.616 A:middle
+All right, so this is our
+
+00:46:05.616 --> 00:46:07.386 A:middle
+cookies recipe again and you'll
+
+00:46:07.386 --> 00:46:09.256 A:middle
+notice that if I try to add a
+
+00:46:09.256 --> 00:46:11.256 A:middle
+new recipe by clicking this +
+
+00:46:11.256 --> 00:46:14.076 A:middle
+button right here we get asked
+
+00:46:14.246 --> 00:46:16.166 A:middle
+to select an image for our new
+
+00:46:16.166 --> 00:46:16.536 A:middle
+recipe.
+
+00:46:17.266 --> 00:46:18.876 A:middle
+So this controller which is on
+
+00:46:18.876 --> 00:46:20.726 A:middle
+the screen right now displays
+
+00:46:20.786 --> 00:46:22.186 A:middle
+all these images using
+
+00:46:22.186 --> 00:46:23.046 A:middle
+LazyImageView.
+
+00:46:23.566 --> 00:46:25.346 A:middle
+So just showing it up on the
+
+00:46:25.346 --> 00:46:27.146 A:middle
+screen and scrolling through the
+
+00:46:27.146 --> 00:46:29.216 A:middle
+content already exercises all of
+
+00:46:29.216 --> 00:46:31.296 A:middle
+the code inside LazyImageView,
+
+00:46:31.506 --> 00:46:32.606 A:middle
+but I don't see any crashes.
+
+00:46:33.546 --> 00:46:34.766 A:middle
+Unfortunately, it's a very
+
+00:46:34.766 --> 00:46:35.666 A:middle
+common problem with
+
+00:46:35.666 --> 00:46:37.196 A:middle
+multithreading bugs, they are
+
+00:46:37.196 --> 00:46:38.566 A:middle
+notoriously hard to reproduce.
+
+00:46:38.566 --> 00:46:40.886 A:middle
+So even when you repeatedly test
+
+00:46:41.016 --> 00:46:43.016 A:middle
+the code that has such a bug you
+
+00:46:43.016 --> 00:46:44.326 A:middle
+might not actually see a crush.
+
+00:46:45.126 --> 00:46:46.706 A:middle
+Let's try actually doing that,
+
+00:46:46.706 --> 00:46:48.706 A:middle
+let's try closing and opening
+
+00:46:48.706 --> 00:46:50.476 A:middle
+this controller a couple times
+
+00:46:50.476 --> 00:46:51.646 A:middle
+and let's see if maybe
+
+00:46:51.646 --> 00:46:53.426 A:middle
+eventually we will be lucky and
+
+00:46:53.746 --> 00:46:54.816 A:middle
+we will be able to trigger this
+
+00:46:54.816 --> 00:46:54.956 A:middle
+crash.
+

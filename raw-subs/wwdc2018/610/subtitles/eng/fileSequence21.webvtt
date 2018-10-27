@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.406 --> 00:21:00.846 A:middle
+the lower left, gets worse when
+
+00:21:00.846 --> 00:21:03.926 A:middle
+the camera is covered while we
+
+00:21:03.926 --> 00:21:05.576 A:middle
+are still moving and exploring
+
+00:21:05.576 --> 00:21:06.296 A:middle
+the environment.
+
+00:21:07.796 --> 00:21:09.596 A:middle
+It also shows how it returns
+
+00:21:09.596 --> 00:21:11.336 A:middle
+back to normal after the camera
+
+00:21:11.336 --> 00:21:12.496 A:middle
+view is uncovered.
+
+00:21:14.036 --> 00:21:16.066 A:middle
+Now, ARKit simplifies its
+
+00:21:16.066 --> 00:21:18.586 A:middle
+information for you by providing
+
+00:21:18.586 --> 00:21:19.596 A:middle
+a tracking state.
+
+00:21:20.466 --> 00:21:22.186 A:middle
+And the tracking state can have
+
+00:21:22.316 --> 00:21:23.426 A:middle
+three different values.
+
+00:21:23.426 --> 00:21:26.776 A:middle
+It can be normal, which is the
+
+00:21:26.856 --> 00:21:29.676 A:middle
+healthy state and is the case in
+
+00:21:29.676 --> 00:21:30.546 A:middle
+most of the time.
+
+00:21:30.546 --> 00:21:31.566 A:middle
+It's the case in most of the
+
+00:21:31.566 --> 00:21:31.956 A:middle
+times.
+
+00:21:32.506 --> 00:21:34.096 A:middle
+And it can also be limited,
+
+00:21:34.236 --> 00:21:35.396 A:middle
+which is whenever tracking
+
+00:21:35.396 --> 00:21:36.426 A:middle
+performs poorly.
+
+00:21:37.486 --> 00:21:40.116 A:middle
+If that's the case, then the
+
+00:21:40.116 --> 00:21:42.056 A:middle
+limited state will also come
+
+00:21:42.056 --> 00:21:43.786 A:middle
+along with the reason, like
+
+00:21:43.946 --> 00:21:45.406 A:middle
+insufficient features or
+
+00:21:45.406 --> 00:21:47.766 A:middle
+excessive motion or being
+
+00:21:47.806 --> 00:21:49.606 A:middle
+currently in the initialization
+
+00:21:49.606 --> 00:21:49.966 A:middle
+phase.
+
+00:21:50.716 --> 00:21:53.496 A:middle
+It can also be not available,
+
+00:21:53.496 --> 00:21:55.256 A:middle
+which means that tracking did
+
+00:21:55.256 --> 00:21:56.086 A:middle
+not start yet.
+
+00:21:57.116 --> 00:21:58.826 A:middle
+Now, whenever the tracking state
+
+00:21:58.916 --> 00:22:01.146 A:middle
+changes, a delegate is called.
+

@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.552 --> 00:22:01.722 align:start position:27% line:-2
+テクスチャ バッファなどの
+オブジェクト作成を担います
+
+00:22:02.589 --> 00:22:07.528 align:start position:29% line:-2
+iOSはGPU１個で
+デバイスも1つ限りですが
+
+00:22:07.628 --> 00:22:11.131 align:start position:27% line:-2
+macOSでは
+内臓GPUと独立型GPU―
+
+00:22:11.231 --> 00:22:16.370 align:start position:25% line:-2
+マルチeGPUまで考慮すると
+マルチデバイスも可能です
+
+00:22:17.037 --> 00:22:18.806 align:start position:30% line:-1
+通常既定デバイスだけで
+
+00:22:18.906 --> 00:22:21.575 align:start position:29% line:-2
+大半のアプリケーションは
+間に合います
+
+00:22:21.675 --> 00:22:24.545 align:start position:29% line:-2
+あるシステムを
+コールするだけで簡単です
+
+00:22:24.645 --> 00:22:28.115 align:start position:23% line:-2
+MTLCreateSystem
+DefaultDeviceです
+
+00:22:29.817 --> 00:22:34.421 align:start position:29% line:-2
+デバイスではまず
+コマンドキューを作ります
+
+00:22:35.789 --> 00:22:38.325 align:start position:32% line:-2
+コマンドバッファを
+入手するためキューは
+
+00:22:38.425 --> 00:22:40.460 align:start position:27% line:-2
+アプリケーション
+レンダループで使われますが
+
+00:22:40.561 --> 00:22:44.231 align:start position:30% line:-2
+コマンドキューは
+初期化時に作りましょう
+
+00:22:44.832 --> 00:22:47.968 align:start position:34% line:-2
+通常キューは
+ひとつで十分ですが
+
+00:22:48.068 --> 00:22:52.539 align:start position:29% line:-2
+並列タスクを実行する場合
+マルチキューが必要です
+
+00:22:53.040 --> 00:22:55.075 align:start position:30% line:-2
+作成したデバイスによる
+キューの作成も簡単で
+
+00:22:55.175 --> 00:22:58.278 align:start position:21% line:-2
+newCommandQueueを
+コールするだけです
+
+00:22:58.612 --> 00:23:02.716 align:start position:29% line:-2
+これでコマンドバッファを
+入手できるようになります
+

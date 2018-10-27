@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.816 --> 00:03:01.106 A:middle
+LLDB engineer, as they would
+
+00:03:01.106 --> 00:03:02.336 A:middle
+love to see your projects.
+
+00:03:02.866 --> 00:03:06.596 A:middle
+Now I'd like to move on to
+
+00:03:06.596 --> 00:03:08.256 A:middle
+telling you about some of my
+
+00:03:08.366 --> 00:03:09.736 A:middle
+favorite debugging tips and
+
+00:03:09.736 --> 00:03:11.476 A:middle
+tricks that I like to use to
+
+00:03:11.476 --> 00:03:12.856 A:middle
+enhance my debugging webflow.
+
+00:03:13.456 --> 00:03:14.346 A:middle
+In fact, I'm not just going to
+
+00:03:14.346 --> 00:03:15.626 A:middle
+tell you about it, I'd like to
+
+00:03:15.626 --> 00:03:18.626 A:middle
+show you with a demo.
+
+00:03:19.508 --> 00:03:21.508 A:middle
+[ Applause ]
+
+00:03:26.116 --> 00:03:27.656 A:middle
+Now the project we'll be using
+
+00:03:27.656 --> 00:03:29.396 A:middle
+today is an iOS app called Solar
+
+00:03:29.396 --> 00:03:29.816 A:middle
+System.
+
+00:03:30.006 --> 00:03:31.046 A:middle
+And you may have seen Solar
+
+00:03:31.046 --> 00:03:33.136 A:middle
+System appear in such keynotes
+
+00:03:33.136 --> 00:03:34.746 A:middle
+as the Keynote and State of the
+
+00:03:34.746 --> 00:03:35.176 A:middle
+Union.
+
+00:03:35.246 --> 00:03:36.916 A:middle
+We're going to be debugging an
+
+00:03:36.916 --> 00:03:38.696 A:middle
+area of the Solar System called
+
+00:03:38.696 --> 00:03:39.356 A:middle
+Moon Jumper.
+
+00:03:40.426 --> 00:03:41.526 A:middle
+Moon Jumper allows the user to
+
+00:03:41.526 --> 00:03:42.916 A:middle
+hold a phone in the hand and
+
+00:03:42.916 --> 00:03:43.646 A:middle
+jump in the air.
+
+00:03:44.456 --> 00:03:45.686 A:middle
+The app measures the force of
+
+00:03:45.686 --> 00:03:46.986 A:middle
+your jump and then translates
+
+00:03:46.986 --> 00:03:49.006 A:middle
+that to moon gravity and shows
+
+00:03:49.006 --> 00:03:50.276 A:middle
+you a visual representation of
+
+00:03:50.276 --> 00:03:51.266 A:middle
+how high you would have jumped
+
+00:03:51.296 --> 00:03:52.246 A:middle
+if you were standing on the
+
+00:03:52.246 --> 00:03:52.546 A:middle
+moon.
+
+00:03:53.466 --> 00:03:55.306 A:middle
+You can set a bar to choose a
+
+00:03:55.306 --> 00:03:56.796 A:middle
+limit, so you can try and
+
+00:03:56.796 --> 00:03:58.046 A:middle
+challenge yourself to jump as
+
+00:03:58.046 --> 00:03:59.336 A:middle
+high as the bar, in terms of
+
+00:03:59.336 --> 00:03:59.916 A:middle
+moon gravity.
+

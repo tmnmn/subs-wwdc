@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:57.406 --> 00:28:00.206 A:middle
+April 26th, however, they
+
+00:28:00.206 --> 00:28:01.266 A:middle
+encountered a billing issue.
+
+00:28:02.506 --> 00:28:04.196 A:middle
+So in order to let you know that
+
+00:28:04.196 --> 00:28:06.126 A:middle
+Apple is actively attempting to
+
+00:28:06.126 --> 00:28:07.756 A:middle
+collect funds from that user via
+
+00:28:07.756 --> 00:28:10.066 A:middle
+the Billing Retry service we are
+
+00:28:10.066 --> 00:28:11.166 A:middle
+going to surface a field in the
+
+00:28:11.166 --> 00:28:14.346 A:middle
+JSON response aptly titled is in
+
+00:28:14.346 --> 00:28:15.346 A:middle
+billing retry period.
+
+00:28:16.046 --> 00:28:18.226 A:middle
+A value of one signifying that
+
+00:28:18.226 --> 00:28:19.316 A:middle
+we're attempting to collect
+
+00:28:19.316 --> 00:28:20.756 A:middle
+funds for that subscriber.
+
+00:28:21.436 --> 00:28:24.576 A:middle
+If we go back to our example of
+
+00:28:24.576 --> 00:28:25.836 A:middle
+subscription you can see that
+
+00:28:25.836 --> 00:28:27.126 A:middle
+this has been added to JSON
+
+00:28:27.126 --> 00:28:27.576 A:middle
+response.
+
+00:28:27.576 --> 00:28:29.716 A:middle
+And when you see this in
+
+00:28:29.716 --> 00:28:30.986 A:middle
+conjunction with the expires
+
+00:28:30.986 --> 00:28:32.946 A:middle
+date this is your signal as a
+
+00:28:32.946 --> 00:28:34.826 A:middle
+developer to implement what we
+
+00:28:34.826 --> 00:28:37.206 A:middle
+call a grace period.
+
+00:28:37.306 --> 00:28:38.416 A:middle
+You may ask yourself what is a
+
+00:28:38.416 --> 00:28:38.976 A:middle
+grace period.
+
+00:28:42.416 --> 00:28:44.116 A:middle
+A grace period is free
+
+00:28:44.176 --> 00:28:46.016 A:middle
+subscription access while in a
+
+00:28:46.016 --> 00:28:47.756 A:middle
+billing retry state, however
+
+00:28:47.906 --> 00:28:49.456 A:middle
+it's before you have lost that
+
+00:28:49.456 --> 00:28:50.586 A:middle
+subscriber, before they've
+
+00:28:50.586 --> 00:28:51.386 A:middle
+churned out.
+
+00:28:52.066 --> 00:28:53.426 A:middle
+The goal of the grace period is
+
+00:28:53.426 --> 00:28:54.486 A:middle
+to improve recovery.
+
+00:28:54.486 --> 00:28:56.826 A:middle
+So let's take a look at how we
+
+00:28:56.826 --> 00:28:58.176 A:middle
+can do that leveraging some of
+
+00:28:58.176 --> 00:28:59.286 A:middle
+the information in the receipt
+
+00:28:59.286 --> 00:28:59.676 A:middle
+response.
+

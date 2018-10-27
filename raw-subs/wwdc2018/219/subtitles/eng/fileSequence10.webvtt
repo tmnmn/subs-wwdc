@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.596 --> 00:10:01.106 A:middle
+shrinking operation into an
+
+00:10:01.106 --> 00:10:02.166 A:middle
+object called the thumbnail.
+
+00:10:03.046 --> 00:10:04.986 A:middle
+And we're going to wind up with
+
+00:10:04.986 --> 00:10:08.486 A:middle
+a lower total memory usage,
+
+00:10:08.656 --> 00:10:09.586 A:middle
+because we're going to have a
+
+00:10:09.586 --> 00:10:11.166 A:middle
+smaller decoded image buffer.
+
+00:10:12.286 --> 00:10:14.596 A:middle
+So, we set up an image source,
+
+00:10:14.746 --> 00:10:16.656 A:middle
+create a thumbnail, and then
+
+00:10:16.656 --> 00:10:18.446 A:middle
+capture that decoded image
+
+00:10:18.446 --> 00:10:19.796 A:middle
+buffer into UIImage.
+
+00:10:19.946 --> 00:10:22.026 A:middle
+And assign that UIImage to our
+
+00:10:22.026 --> 00:10:22.476 A:middle
+image view.
+
+00:10:22.976 --> 00:10:24.606 A:middle
+And then, we can discard the
+
+00:10:24.606 --> 00:10:25.726 A:middle
+original data buffer that
+
+00:10:25.726 --> 00:10:26.646 A:middle
+contained our image.
+
+00:10:26.916 --> 00:10:28.176 A:middle
+And we're left with a much
+
+00:10:28.256 --> 00:10:29.726 A:middle
+smaller long-term memory
+
+00:10:29.726 --> 00:10:31.086 A:middle
+footprint for our application.
+
+00:10:31.646 --> 00:10:33.236 A:middle
+The code to do that has a few
+
+00:10:33.236 --> 00:10:33.546 A:middle
+steps.
+
+00:10:33.546 --> 00:10:34.636 A:middle
+So, I'm going to walk you
+
+00:10:34.636 --> 00:10:34.966 A:middle
+through them.
+
+00:10:34.966 --> 00:10:36.926 A:middle
+I'm not going to do extremely
+
+00:10:36.926 --> 00:10:37.896 A:middle
+low-level detail.
+
+00:10:37.896 --> 00:10:39.076 A:middle
+But I'll highlight the important
+
+00:10:39.076 --> 00:10:39.446 A:middle
+bits.
+
+00:10:40.316 --> 00:10:41.336 A:middle
+First, we're going to create a
+
+00:10:41.336 --> 00:10:42.556 A:middle
+CGImageSource object.
+
+00:10:43.206 --> 00:10:46.426 A:middle
+And CGImageSourceCreate can take
+
+00:10:46.426 --> 00:10:47.786 A:middle
+an option dictionary.
+
+00:10:47.786 --> 00:10:48.786 A:middle
+And the important option we're
+
+00:10:48.786 --> 00:10:50.346 A:middle
+going to pass here, is this
+
+00:10:50.466 --> 00:10:51.666 A:middle
+ShouldCache flag.
+
+00:10:52.076 --> 00:10:53.596 A:middle
+And this tells the Core Graphics
+
+00:10:53.596 --> 00:10:54.986 A:middle
+framework that we're just
+
+00:10:54.986 --> 00:10:56.696 A:middle
+creating an object to represent
+
+00:10:57.386 --> 00:10:59.276 A:middle
+the information stored in the
+
+00:10:59.276 --> 00:11:00.366 A:middle
+file at this URL.
+

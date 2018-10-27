@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.116 --> 00:29:00.566 A:middle
+shorten the overall execution
+
+00:29:00.566 --> 00:29:00.876 A:middle
+time.
+
+00:29:02.306 --> 00:29:03.256 A:middle
+Now don't feel like you need to
+
+00:29:03.256 --> 00:29:04.936 A:middle
+go and take all of your classes
+
+00:29:04.936 --> 00:29:06.116 A:middle
+and divide them up.
+
+00:29:06.456 --> 00:29:08.026 A:middle
+That shouldn't be necessary but
+
+00:29:08.026 --> 00:29:09.346 A:middle
+if you notice a bottleneck like
+
+00:29:09.346 --> 00:29:13.716 A:middle
+this, this is something to try.
+
+00:29:13.946 --> 00:29:16.726 A:middle
+Next, put performance tests into
+
+00:29:16.726 --> 00:29:18.246 A:middle
+their own bundle with
+
+00:29:18.246 --> 00:29:19.726 A:middle
+parallelization disabled.
+
+00:29:20.716 --> 00:29:22.226 A:middle
+This may seem counterintuitive,
+
+00:29:22.416 --> 00:29:24.046 A:middle
+but performance tests are very
+
+00:29:24.046 --> 00:29:27.096 A:middle
+sensitive to system activity so
+
+00:29:27.096 --> 00:29:28.336 A:middle
+if you run them in parallel with
+
+00:29:28.336 --> 00:29:30.046 A:middle
+each other, they'll likely fail
+
+00:29:30.046 --> 00:29:31.026 A:middle
+to meet their baselines.
+
+00:29:31.716 --> 00:29:35.056 A:middle
+And finally, understand which
+
+00:29:35.096 --> 00:29:36.576 A:middle
+tests are not safe for
+
+00:29:36.576 --> 00:29:37.376 A:middle
+parallelization.
+
+00:29:38.556 --> 00:29:40.046 A:middle
+Most tests will be fine when you
+
+00:29:40.046 --> 00:29:41.906 A:middle
+run them in parallel, but if
+
+00:29:41.906 --> 00:29:43.286 A:middle
+your tests access a shared
+
+00:29:43.286 --> 00:29:45.166 A:middle
+system resource, like a file or
+
+00:29:45.166 --> 00:29:46.976 A:middle
+a database, you may need to
+
+00:29:46.976 --> 00:29:48.086 A:middle
+introduce explicit
+
+00:29:48.086 --> 00:29:49.726 A:middle
+synchronization to allow them to
+
+00:29:49.726 --> 00:29:50.526 A:middle
+run concurrently.
+
+00:29:51.866 --> 00:29:53.556 A:middle
+Speaking of testing tips and
+
+00:29:53.556 --> 00:29:54.876 A:middle
+tricks, if you'd like to learn
+
+00:29:54.876 --> 00:29:56.466 A:middle
+more about how to test your
+
+00:29:56.556 --> 00:29:58.366 A:middle
+code, I'd encourage you to check
+
+00:29:58.366 --> 00:30:00.126 A:middle
+out our session on Friday hosted
+

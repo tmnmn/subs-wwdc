@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.936 --> 00:07:00.406 A:middle
+enjoy a lower memory footprint.
+
+00:07:00.906 --> 00:07:02.456 A:middle
+Using less memory is better for
+
+00:07:02.456 --> 00:07:04.176 A:middle
+the performance of your app and
+
+00:07:04.176 --> 00:07:05.446 A:middle
+great for the system in general.
+
+00:07:06.286 --> 00:07:08.046 A:middle
+So let's see how we can
+
+00:07:08.046 --> 00:07:09.616 A:middle
+decompose the size of a Core ML
+
+00:07:09.616 --> 00:07:11.026 A:middle
+app into factors to better
+
+00:07:11.026 --> 00:07:11.886 A:middle
+tackle this problem.
+
+00:07:13.386 --> 00:07:14.276 A:middle
+First, there is the number of
+
+00:07:14.276 --> 00:07:14.666 A:middle
+models.
+
+00:07:14.906 --> 00:07:16.046 A:middle
+This depends on how many
+
+00:07:16.716 --> 00:07:18.006 A:middle
+machine-learning functionalities
+
+00:07:18.006 --> 00:07:18.536 A:middle
+your app has.
+
+00:07:19.286 --> 00:07:20.186 A:middle
+Then there is the number of
+
+00:07:20.266 --> 00:07:20.576 A:middle
+weights.
+
+00:07:21.466 --> 00:07:23.156 A:middle
+The number of weights depends on
+
+00:07:23.156 --> 00:07:24.166 A:middle
+the architecture that you have
+
+00:07:24.166 --> 00:07:24.926 A:middle
+chosen to solve your
+
+00:07:24.926 --> 00:07:25.816 A:middle
+machine-learning problem.
+
+00:07:26.446 --> 00:07:29.026 A:middle
+As Michael was mentioning, the
+
+00:07:29.026 --> 00:07:30.216 A:middle
+number of weight -- the weights
+
+00:07:30.416 --> 00:07:31.336 A:middle
+are the place in which the
+
+00:07:31.336 --> 00:07:33.236 A:middle
+machine-learning model stores
+
+00:07:33.236 --> 00:07:34.796 A:middle
+the information that it has been
+
+00:07:34.796 --> 00:07:35.666 A:middle
+learning during training.
+
+00:07:36.336 --> 00:07:38.036 A:middle
+So it is -- if it has been
+
+00:07:38.036 --> 00:07:39.826 A:middle
+trained to do a complex task,
+
+00:07:39.966 --> 00:07:41.556 A:middle
+it's not uncommon to see a model
+
+00:07:41.556 --> 00:07:43.366 A:middle
+requiring tens of millions of
+
+00:07:43.416 --> 00:07:43.696 A:middle
+weights.
+
+00:07:45.216 --> 00:07:46.736 A:middle
+Finally, there is the size of
+
+00:07:46.776 --> 00:07:47.196 A:middle
+the weight.
+
+00:07:47.386 --> 00:07:48.456 A:middle
+How are we storing these
+
+00:07:48.886 --> 00:07:50.086 A:middle
+parameters that we are learning
+
+00:07:50.086 --> 00:07:50.666 A:middle
+during training?
+
+00:07:51.796 --> 00:07:52.846 A:middle
+Let's focus on this factor
+
+00:07:52.846 --> 00:07:53.166 A:middle
+first.
+
+00:07:54.466 --> 00:07:55.776 A:middle
+For neural networks, we have
+
+00:07:55.776 --> 00:07:57.346 A:middle
+several options to represent and
+
+00:07:57.346 --> 00:07:57.976 A:middle
+store the weights.
+
+00:07:59.476 --> 00:08:00.966 A:middle
+And the first, really, is of
+

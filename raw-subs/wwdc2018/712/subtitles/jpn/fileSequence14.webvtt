@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.239 --> 00:14:02.776 align:start position:30% line:-2
+これでスクリプトで
+tcとして実行されます
+
+00:14:03.477 --> 00:14:05.679 align:start position:32% line:-1
+さて 最初のタスクは
+
+00:14:06.380 --> 00:14:07.981 align:start position:34% line:-1
+データのロードです
+
+00:14:10.951 --> 00:14:13.654 align:start position:25% line:-1
+SFrameの形式で行います
+
+00:14:14.087 --> 00:14:18.358 align:start position:4% line:-2
+“images = tc.load images”と
+入れたら
+
+00:14:18.458 --> 00:14:21.929 align:start position:34% line:-2
+先ほどのフォルダ名
+“data”を入力
+
+00:14:24.965 --> 00:14:29.503 align:start position:21% line:-2
+Turi Createはデータを
+参照し視覚化します
+
+00:14:29.837 --> 00:14:34.942 align:start position:30% line:-2
+SFrameの形式で
+できたか確認してみます
+
+00:14:35.075 --> 00:14:37.010 align:start position:23% line:-1
+“.explore”を使います
+
+00:14:37.344 --> 00:14:39.880 align:start position:27% line:-1
+するとウインドウが開きます
+
+00:14:39.980 --> 00:14:42.950 align:start position:30% line:-2
+SFrameにカラムが
+２つありますね
+
+00:14:43.050 --> 00:14:47.321 align:start position:34% line:-2
+１つはディスク上の
+画像への相対パス
+
+00:14:47.421 --> 00:14:51.859 align:start position:32% line:-2
+もう１つは
+画像のコンテンツです
+
+00:14:51.959 --> 00:14:54.194 align:start position:29% line:-1
+食べ物の画像が見えますね
+
+00:14:54.561 --> 00:14:57.831 align:start position:32% line:-2
+画像は正しく
+ロードされたようです
+
+00:14:59.766 --> 00:15:05.339 align:start position:29% line:-2
+今度はアノテーションを
+SFrame形式でロード
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.856 --> 00:03:02.326 A:middle
+The OpenGL pipeline was
+
+00:03:02.326 --> 00:03:03.826 A:middle
+originally an entirely fixed
+
+00:03:03.826 --> 00:03:05.746 A:middle
+function and although today
+
+00:03:05.746 --> 00:03:07.526 A:middle
+OpenGL supports a programmable
+
+00:03:07.526 --> 00:03:09.726 A:middle
+pipeline it doesn't neatly match
+
+00:03:09.786 --> 00:03:12.826 A:middle
+that of modern GPUs.
+
+00:03:13.036 --> 00:03:15.356 A:middle
+Also, asynchronous processing is
+
+00:03:15.356 --> 00:03:16.726 A:middle
+not a core feature of the API,
+
+00:03:17.476 --> 00:03:18.436 A:middle
+there are a number of features
+
+00:03:18.436 --> 00:03:19.576 A:middle
+which allude to the fact that
+
+00:03:19.576 --> 00:03:20.656 A:middle
+the GPU works in parallel with
+
+00:03:20.656 --> 00:03:22.076 A:middle
+your app but much of this is
+
+00:03:22.076 --> 00:03:22.586 A:middle
+implicit.
+
+00:03:23.046 --> 00:03:26.586 A:middle
+And 25 years ago only the most
+
+00:03:26.586 --> 00:03:27.766 A:middle
+expensive workstations and
+
+00:03:27.766 --> 00:03:29.186 A:middle
+servers had multiple cores.
+
+00:03:29.676 --> 00:03:30.956 A:middle
+So designing an efficient
+
+00:03:30.956 --> 00:03:32.716 A:middle
+multithreading model wasn't a
+
+00:03:32.716 --> 00:03:33.216 A:middle
+priority.
+
+00:03:33.216 --> 00:03:37.516 A:middle
+So back in 2014, it was clear to
+
+00:03:37.516 --> 00:03:39.116 A:middle
+us that a new application
+
+00:03:39.116 --> 00:03:40.286 A:middle
+interface for the GPU was
+
+00:03:40.286 --> 00:03:40.836 A:middle
+necessary.
+
+00:03:41.696 --> 00:03:42.856 A:middle
+Obviously, we needed an
+
+00:03:42.856 --> 00:03:44.176 A:middle
+interface that could efficiently
+
+00:03:44.176 --> 00:03:45.406 A:middle
+harness the GPU's power.
+
+00:03:46.576 --> 00:03:48.076 A:middle
+To do that the app needed the
+
+00:03:48.076 --> 00:03:49.826 A:middle
+CPU out of the way so the GPU
+
+00:03:49.826 --> 00:03:51.946 A:middle
+could do its thing.
+
+00:03:52.146 --> 00:03:53.836 A:middle
+But when an app needs the CPU
+
+00:03:53.836 --> 00:03:54.976 A:middle
+for rendering it needs to be
+
+00:03:54.976 --> 00:03:56.466 A:middle
+able to use all of the CPU,
+
+00:03:56.906 --> 00:03:58.176 A:middle
+including its multiple cores.
+
+00:03:59.626 --> 00:04:01.146 A:middle
+If the interface needed to be
+

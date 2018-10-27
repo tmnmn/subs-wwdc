@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.096 --> 00:25:00.966 A:middle
+You should download and deliver
+
+00:25:00.966 --> 00:25:02.106 A:middle
+all of the content to the user
+
+00:25:02.376 --> 00:25:03.076 A:middle
+and then call Finish
+
+00:25:03.076 --> 00:25:03.626 A:middle
+Transaction.
+
+00:25:04.166 --> 00:25:07.416 A:middle
+In the failed state the
+
+00:25:07.416 --> 00:25:08.536 A:middle
+transaction has completed
+
+00:25:08.606 --> 00:25:09.326 A:middle
+unsuccessfully.
+
+00:25:09.326 --> 00:25:11.216 A:middle
+You should inspect the error and
+
+00:25:11.216 --> 00:25:12.706 A:middle
+handle it appropriately, maybe
+
+00:25:12.706 --> 00:25:13.746 A:middle
+update your UI, record
+
+00:25:13.746 --> 00:25:14.666 A:middle
+analytics, whatever you need to
+
+00:25:14.666 --> 00:25:16.366 A:middle
+do, and then you should call
+
+00:25:16.366 --> 00:25:17.156 A:middle
+Finish Transaction.
+
+00:25:17.356 --> 00:25:19.196 A:middle
+And it's also important to note
+
+00:25:19.196 --> 00:25:22.106 A:middle
+here that transactions come back
+
+00:25:22.106 --> 00:25:23.286 A:middle
+in the failed state if the user
+
+00:25:23.316 --> 00:25:23.896 A:middle
+cancels them.
+
+00:25:24.546 --> 00:25:25.886 A:middle
+So it's very important that you
+
+00:25:25.886 --> 00:25:26.926 A:middle
+do inspect the error and make
+
+00:25:26.926 --> 00:25:28.096 A:middle
+sure it's not the canceled error
+
+00:25:28.296 --> 00:25:29.176 A:middle
+because you shouldn't show any
+
+00:25:29.176 --> 00:25:30.046 A:middle
+UI in that case.
+
+00:25:30.046 --> 00:25:31.206 A:middle
+You know the user just canceled
+
+00:25:31.206 --> 00:25:32.216 A:middle
+they don't need to know that it
+
+00:25:32.246 --> 00:25:32.456 A:middle
+failed.
+
+00:25:35.556 --> 00:25:37.086 A:middle
+The restored state, this is very
+
+00:25:37.086 --> 00:25:38.336 A:middle
+similar to the purchased state.
+
+00:25:38.586 --> 00:25:40.286 A:middle
+It indicates the transaction has
+
+00:25:40.286 --> 00:25:41.796 A:middle
+completed successfully, so again
+
+00:25:41.796 --> 00:25:42.856 A:middle
+you should download and deliver
+
+00:25:42.856 --> 00:25:43.976 A:middle
+all of the content to the user
+
+00:25:44.156 --> 00:25:45.346 A:middle
+and then you should call Finish
+
+00:25:45.346 --> 00:25:45.876 A:middle
+Transaction.
+
+00:25:48.356 --> 00:25:49.786 A:middle
+Finally, the deferred state,
+
+00:25:50.616 --> 00:25:51.566 A:middle
+this is similar to the
+
+00:25:51.566 --> 00:25:53.676 A:middle
+purchasing state except it means
+
+00:25:53.676 --> 00:25:54.806 A:middle
+that the transaction is waiting
+
+00:25:54.806 --> 00:25:55.886 A:middle
+on some outside action to
+
+00:25:55.886 --> 00:25:56.346 A:middle
+continue.
+
+00:25:57.346 --> 00:25:58.726 A:middle
+For example, if a user has Ask
+
+00:25:58.816 --> 00:26:01.336 A:middle
+to Buy turned on, so Ask to Buy
+

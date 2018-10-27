@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.039 --> 00:19:03.043 align:start position:27% line:-2
+パージメソッドが呼び出され
+重みを解放できます
+
+00:19:03.577 --> 00:19:06.447 align:start position:29% line:-2
+訓練に必須の
+データソースプロバイダは
+
+00:19:06.547 --> 00:19:08.782 align:start position:32% line:-1
+後ほど詳細に扱います
+
+00:19:11.852 --> 00:19:16.290 align:start position:29% line:-2
+訓練グラフを作り
+入力と重みが準備できると
+
+00:19:16.390 --> 00:19:18.892 align:start position:25% line:-1
+GPUでグラフを実行できます
+
+00:19:20.360 --> 00:19:25.065 align:start position:21% line:-2
+GPU上でのグラフ変更は
+Metal Setupで行います
+
+00:19:25.299 --> 00:19:29.570 align:start position:30% line:-2
+訓練グラフを初期化し
+入力の用意ができました
+
+00:19:29.670 --> 00:19:32.306 align:start position:34% line:-1
+訓練を始めましょう
+
+00:19:35.042 --> 00:19:39.980 align:start position:29% line:-2
+訓練は反復プロセスのため
+訓練ループを設定します
+
+00:19:40.514 --> 00:19:44.484 align:start position:32% line:-2
+設定したエポック数分
+実行されます
+
+00:19:44.751 --> 00:19:46.286 align:start position:38% line:-1
+エポック数とは
+
+00:19:46.386 --> 00:19:51.258 align:start position:30% line:-2
+データセット全体で
+反復したい数のことです
+
+00:19:51.692 --> 00:19:54.728 align:start position:34% line:-2
+各エポックで
+複数の反復とします
+
+00:19:54.862 --> 00:19:58.499 align:start position:29% line:-2
+反復回数はデータセットの
+画像総数を
+
+00:19:58.599 --> 00:20:01.502 align:start position:32% line:-2
+32か64のバッチで
+割ったものです
+

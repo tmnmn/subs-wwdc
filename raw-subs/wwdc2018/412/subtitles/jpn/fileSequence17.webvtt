@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.451 --> 00:17:02.623 align:start position:9% line:-2
+didReachSelectedHeightは
+変更しません
+
+00:17:02.723 --> 00:17:05.626 align:start position:36% line:-2
+タップすると
+うまくジャンプし
+
+00:17:05.726 --> 00:17:09.762 align:start position:27% line:-2
+どのラベルも更新されたので
+修正成功です
+
+00:17:11.265 --> 00:17:13.467 align:start position:29% line:-1
+バグにチェックを入れます
+
+00:17:14.101 --> 00:17:17.738 align:start position:30% line:-2
+次のバグは
+ゲーム終了に関してです
+
+00:17:18.806 --> 00:17:22.075 align:start position:34% line:-2
+10回の挑戦で
+ゲームは終わります
+
+00:17:22.175 --> 00:17:27.481 align:start position:29% line:-2
+目的の状態を再現するため
+タップして待つ方法では―
+
+00:17:27.580 --> 00:17:33.387 align:start position:27% line:-2
+時間がかかるうえに 何度も
+繰り返す必要があります
+
+00:17:33.487 --> 00:17:36.657 align:start position:32% line:-2
+アニメーションを
+スキップする方法を―
+
+00:17:36.823 --> 00:17:38.225 align:start position:36% line:-1
+お見せしましょう
+
+00:17:38.826 --> 00:17:42.496 align:start position:5% line:-2
+updateUIForJumpSucceededに
+移動します
+
+00:17:42.896 --> 00:17:46.166 align:start position:34% line:-2
+この関数は
+色を変更した後に―
+
+00:17:46.266 --> 00:17:49.036 align:start position:0% line:-2
+jumpAstronaut(animated: true)を
+呼び出します
+
+00:17:49.136 --> 00:17:52.072 align:start position:25% line:-1
+これをfalseにしましょう
+
+00:17:52.172 --> 00:17:57.878 align:start position:23% line:-2
+今回も デバッグのために
+コードを変えるのは避けたいので
+
+00:17:57.978 --> 00:18:02.015 align:start position:27% line:-2
+代わりにブレークポイントを
+この行に設定します
+

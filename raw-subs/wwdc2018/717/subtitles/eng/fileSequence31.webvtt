@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.536 --> 00:31:00.346 A:middle
+So, we made this possible
+
+00:31:00.736 --> 00:31:02.826 A:middle
+through a new API and that is
+
+00:31:02.826 --> 00:31:04.376 A:middle
+our VN Recognized Object
+
+00:31:04.376 --> 00:31:04.986 A:middle
+Observation.
+
+00:31:06.486 --> 00:31:08.896 A:middle
+It comes automatically when we
+
+00:31:08.986 --> 00:31:11.336 A:middle
+perform a Core ML model request,
+
+00:31:11.476 --> 00:31:13.776 A:middle
+and if that model is actually
+
+00:31:13.776 --> 00:31:16.586 A:middle
+using an object detector as a
+
+00:31:16.586 --> 00:31:17.086 A:middle
+space.
+
+00:31:18.666 --> 00:31:22.486 A:middle
+Like in this example, it is
+
+00:31:22.486 --> 00:31:23.786 A:middle
+based on the YOLO based models.
+
+00:31:23.966 --> 00:31:25.236 A:middle
+Now, you might say, "Well, I
+
+00:31:25.236 --> 00:31:26.896 A:middle
+could have already run YOLO like
+
+00:31:26.896 --> 00:31:27.306 A:middle
+last year.
+
+00:31:27.306 --> 00:31:28.376 A:middle
+There were a bunch of articles
+
+00:31:28.376 --> 00:31:29.106 A:middle
+that I saw on the web."
+
+00:31:29.896 --> 00:31:31.206 A:middle
+But look at how much code they
+
+00:31:31.206 --> 00:31:33.056 A:middle
+actually had to write to take
+
+00:31:33.056 --> 00:31:34.776 A:middle
+the output of this model, to
+
+00:31:34.776 --> 00:31:35.936 A:middle
+then put it into something that
+
+00:31:35.936 --> 00:31:36.526 A:middle
+you can use.
+
+00:31:36.666 --> 00:31:38.086 A:middle
+And here, we only had a few
+
+00:31:38.086 --> 00:31:38.696 A:middle
+lines of code.
+
+00:31:38.816 --> 00:31:40.346 A:middle
+So, it makes YOLO models really,
+
+00:31:40.346 --> 00:31:41.256 A:middle
+really easy to use now.
+
+00:31:41.256 --> 00:31:43.336 A:middle
+Let's go once more over this in
+
+00:31:43.336 --> 00:31:43.746 A:middle
+the code.
+
+00:31:44.316 --> 00:31:45.536 A:middle
+So, I create my model.
+
+00:31:46.336 --> 00:31:47.426 A:middle
+From the model, I create my
+
+00:31:47.426 --> 00:31:48.006 A:middle
+request.
+
+00:31:48.986 --> 00:31:51.196 A:middle
+And in my completion handler, I
+
+00:31:51.196 --> 00:31:52.606 A:middle
+can simply look at the area of
+
+00:31:52.606 --> 00:31:54.066 A:middle
+objects, because we saw we can
+
+00:31:54.066 --> 00:31:55.366 A:middle
+get multiple objects back.
+
+00:31:55.996 --> 00:31:57.396 A:middle
+I get my labels from that, my
+
+00:31:57.396 --> 00:31:59.546 A:middle
+bounding box, and I can show my
+
+00:31:59.546 --> 00:32:00.286 A:middle
+Breakfast Finder.
+

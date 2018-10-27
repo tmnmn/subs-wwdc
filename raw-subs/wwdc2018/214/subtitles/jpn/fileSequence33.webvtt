@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:55.809 --> 00:33:00.347 align:start position:27% line:-2
+Siriのショートカットを
+使ってもらいたいですよね
+
+00:33:00.447 --> 00:33:04.218 align:start position:30% line:-2
+アプリケーション内で
+ショートカットを出せば
+
+00:33:04.318 --> 00:33:08.121 align:start position:29% line:-2
+ユーザは すぐに
+ショートカットを作れます
+
+00:33:09.089 --> 00:33:12.125 align:start position:27% line:-1
+例えば スープを注文したら
+
+00:33:12.626 --> 00:33:16.563 align:start position:30% line:-2
+そのショートカットを
+Siriに追加できます
+
+00:33:18.298 --> 00:33:20.534 align:start position:21% line:-1
+“Siriに追加”をタップすると
+
+00:33:20.968 --> 00:33:23.604 align:start position:25% line:-1
+システムUIが表示されます 
+
+00:33:23.704 --> 00:33:27.808 align:start position:30% line:-2
+これを使えば
+Siriに追加できます
+
+00:33:28.876 --> 00:33:31.111 align:start position:23% line:-1
+この時のAPIを見てみましょう
+
+00:33:32.212 --> 00:33:36.783 align:start position:16% line:-2
+ここでも userActivityから
+INShortcutを作成
+
+00:33:37.017 --> 00:33:42.422 align:start position:7% line:-2
+そして INUIAddVoiceShortcut
+ViewControllerを作り
+
+00:33:42.723 --> 00:33:45.125 align:start position:29% line:-1
+デリゲートを設定して表示
+
+00:33:45.592 --> 00:33:47.261 align:start position:30% line:-1
+Intentも同じです
+
+00:33:47.427 --> 00:33:52.833 align:start position:21% line:-2
+userActivityではなく
+Intentを使い
+
+00:33:53.033 --> 00:33:57.070 align:start position:20% line:-2
+viewControllerを作り
+デリゲートを設定して表示
+
+00:33:57.604 --> 00:34:03.143 align:start position:30% line:-2
+こうすると ユーザには
+この画面が表示されます
+

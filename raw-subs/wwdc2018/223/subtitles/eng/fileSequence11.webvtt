@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:57.046 --> 00:11:00.676 A:middle
+Now, shapes.removeallwhere the
+
+00:11:00.676 --> 00:11:02.186 A:middle
+shape is selected.
+
+00:11:03.146 --> 00:11:03.326 A:middle
+Hmm.
+
+00:11:04.026 --> 00:11:05.236 A:middle
+Try that on for size."
+
+00:11:06.216 --> 00:11:07.756 A:middle
+Now, Crusty headed off to wash
+
+00:11:07.756 --> 00:11:08.856 A:middle
+out the pitcher of his coffee
+
+00:11:08.856 --> 00:11:11.066 A:middle
+maker, leaving me to figure out
+
+00:11:11.066 --> 00:11:12.816 A:middle
+what had just happened in my
+
+00:11:13.666 --> 00:11:13.766 A:middle
+code.
+
+00:11:14.736 --> 00:11:17.756 A:middle
+First, I checked, and I found
+
+00:11:17.756 --> 00:11:18.936 A:middle
+that the performance problem was
+
+00:11:18.996 --> 00:11:19.286 A:middle
+fixed.
+
+00:11:19.856 --> 00:11:20.226 A:middle
+Nice.
+
+00:11:21.536 --> 00:11:22.886 A:middle
+And I didn't want another earful
+
+00:11:22.886 --> 00:11:24.226 A:middle
+from Crusty about looking at the
+
+00:11:24.226 --> 00:11:26.626 A:middle
+documentation, so I popped up
+
+00:11:26.626 --> 00:11:28.126 A:middle
+Quick Help for removeAll(where:
+
+00:11:28.676 --> 00:11:32.856 A:middle
+and I saw that its complexity
+
+00:11:32.856 --> 00:11:34.266 A:middle
+scales proportionally to the
+
+00:11:34.266 --> 00:11:36.176 A:middle
+length of the collection just
+
+00:11:36.176 --> 00:11:36.806 A:middle
+like removeAt.
+
+00:11:37.796 --> 00:11:39.656 A:middle
+But since I didn't have to put
+
+00:11:39.656 --> 00:11:41.576 A:middle
+it in a loop, that became the
+
+00:11:41.576 --> 00:11:42.836 A:middle
+complexity of my whole
+
+00:11:42.836 --> 00:11:43.376 A:middle
+operation.
+
+00:11:44.576 --> 00:11:46.776 A:middle
+Now, I want to give you some
+
+00:11:46.776 --> 00:11:48.026 A:middle
+intuition for the kind of
+
+00:11:48.106 --> 00:11:50.106 A:middle
+difference this makes.
+
+00:11:50.566 --> 00:11:52.476 A:middle
+What are n means that the time
+
+00:11:52.476 --> 00:11:54.216 A:middle
+the algorithm runs scales
+
+00:11:54.566 --> 00:11:56.166 A:middle
+linearly with the problem size.
+
+00:11:56.696 --> 00:11:57.936 A:middle
+The graph is a straight line.
+
+00:11:59.396 --> 00:12:00.826 A:middle
+Now, the orange line is the
+

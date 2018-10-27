@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.476 --> 00:27:00.276 A:middle
+call the donate method when
+
+00:27:00.276 --> 00:27:01.456 A:middle
+users perform this particular
+
+00:27:01.456 --> 00:27:01.916 A:middle
+interaction.
+
+00:27:02.496 --> 00:27:05.556 A:middle
+The other thing to look out for,
+
+00:27:05.886 --> 00:27:07.526 A:middle
+is this primary shortcut type
+
+00:27:07.526 --> 00:27:09.466 A:middle
+for when we're making watchOS
+
+00:27:09.466 --> 00:27:09.936 A:middle
+predictions.
+
+00:27:10.036 --> 00:27:11.906 A:middle
+And so, let's take a look at
+
+00:27:12.616 --> 00:27:12.716 A:middle
+this.
+
+00:27:13.396 --> 00:27:15.216 A:middle
+Inside of the Xcode intents
+
+00:27:15.216 --> 00:27:16.466 A:middle
+editor, you'll notice that
+
+00:27:16.466 --> 00:27:18.326 A:middle
+there's a field to select the
+
+00:27:18.326 --> 00:27:19.446 A:middle
+primary shortcut type.
+
+00:27:20.276 --> 00:27:21.666 A:middle
+So, this allows you to indicate
+
+00:27:21.666 --> 00:27:22.676 A:middle
+to the system, like, kind of,
+
+00:27:22.676 --> 00:27:24.296 A:middle
+the most critical use cases for
+
+00:27:24.296 --> 00:27:24.646 A:middle
+your app.
+
+00:27:25.106 --> 00:27:26.616 A:middle
+And so, let's talk more about
+
+00:27:26.616 --> 00:27:29.366 A:middle
+what that means.
+
+00:27:30.456 --> 00:27:31.786 A:middle
+So, by indicating the primary
+
+00:27:31.786 --> 00:27:33.086 A:middle
+shortcut type, you're, kind of,
+
+00:27:33.086 --> 00:27:34.696 A:middle
+telling the system what are the
+
+00:27:34.696 --> 00:27:36.206 A:middle
+use cases that you think your
+
+00:27:36.206 --> 00:27:37.426 A:middle
+users care about most.
+
+00:27:37.426 --> 00:27:38.906 A:middle
+And, this helps us expedite our
+
+00:27:38.906 --> 00:27:39.766 A:middle
+learning process.
+
+00:27:41.366 --> 00:27:42.616 A:middle
+You can indicate one of these
+
+00:27:42.686 --> 00:27:43.866 A:middle
+per intent that you've defined.
+
+00:27:45.616 --> 00:27:46.986 A:middle
+And, for the best performance,
+
+00:27:47.246 --> 00:27:48.846 A:middle
+the parameter combination, the
+
+00:27:48.846 --> 00:27:50.436 A:middle
+selection, have a subset of the
+
+00:27:50.436 --> 00:27:51.526 A:middle
+parameters that you're providing
+
+00:27:51.526 --> 00:27:52.536 A:middle
+in your relevant shortcuts.
+
+00:27:52.776 --> 00:27:53.786 A:middle
+And, we'll walk through a couple
+
+00:27:53.786 --> 00:27:54.796 A:middle
+of examples to try to better
+
+00:27:54.796 --> 00:27:58.066 A:middle
+understand what that means.
+
+00:27:58.476 --> 00:27:59.746 A:middle
+But, by giving this information
+
+00:27:59.746 --> 00:28:01.436 A:middle
+to the system, we can much more
+

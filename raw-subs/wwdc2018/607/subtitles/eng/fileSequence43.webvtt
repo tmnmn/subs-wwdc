@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:58.836 --> 00:43:00.306 A:middle
+hide behind it, we need to
+
+00:43:00.306 --> 00:43:02.666 A:middle
+render it.
+
+00:43:02.936 --> 00:43:04.906 A:middle
+So want to talk a little bit
+
+00:43:04.906 --> 00:43:05.906 A:middle
+about Metal.
+
+00:43:05.906 --> 00:43:07.306 A:middle
+Metal is really important in
+
+00:43:07.306 --> 00:43:09.946 A:middle
+terms of allowing us to ship the
+
+00:43:09.946 --> 00:43:12.086 A:middle
+game as fast as we did and at
+
+00:43:12.116 --> 00:43:13.396 A:middle
+the quality that we were able to
+
+00:43:13.396 --> 00:43:13.816 A:middle
+achieve.
+
+00:43:14.486 --> 00:43:15.876 A:middle
+Draw call performance was key to
+
+00:43:15.876 --> 00:43:17.626 A:middle
+this because, again, we have a
+
+00:43:17.626 --> 00:43:20.776 A:middle
+really complicated scene and we
+
+00:43:20.776 --> 00:43:22.066 A:middle
+need the performance to render
+
+00:43:22.066 --> 00:43:23.406 A:middle
+it, and Metal gave us that
+
+00:43:23.446 --> 00:43:24.116 A:middle
+performance.
+
+00:43:24.696 --> 00:43:26.196 A:middle
+Metal also gave us access to a
+
+00:43:26.196 --> 00:43:27.386 A:middle
+number of hardware features,
+
+00:43:27.386 --> 00:43:28.636 A:middle
+such as programmable blending,
+
+00:43:28.636 --> 00:43:30.486 A:middle
+that we used to get important
+
+00:43:30.486 --> 00:43:31.566 A:middle
+GPU performance back.
+
+00:43:32.286 --> 00:43:33.546 A:middle
+It also has a feature set that
+
+00:43:33.546 --> 00:43:34.866 A:middle
+allowed us to use all of the
+
+00:43:34.866 --> 00:43:36.316 A:middle
+rendering techniques we need to
+
+00:43:36.316 --> 00:43:38.506 A:middle
+bring Fortnite to iOS.
+
+00:43:38.856 --> 00:43:40.236 A:middle
+In terms of rendering features,
+
+00:43:40.676 --> 00:43:42.056 A:middle
+we use a movable directional
+
+00:43:42.056 --> 00:43:43.446 A:middle
+light for the sun with cascaded
+
+00:43:43.446 --> 00:43:44.226 A:middle
+shadow maps.
+
+00:43:44.226 --> 00:43:45.386 A:middle
+We have a movable skylight
+
+00:43:45.386 --> 00:43:46.356 A:middle
+because the sky changes
+
+00:43:46.356 --> 00:43:47.016 A:middle
+throughout the day.
+
+00:43:47.786 --> 00:43:49.176 A:middle
+We use physically-based
+
+00:43:49.176 --> 00:43:49.936 A:middle
+materials.
+
+00:43:51.436 --> 00:43:52.936 A:middle
+We render in HDR and have a
+
+00:43:52.936 --> 00:43:54.306 A:middle
+tone-mapping pass at the end.
+
+00:43:55.476 --> 00:43:57.286 A:middle
+We allow particle simulation on
+
+00:43:57.286 --> 00:43:58.036 A:middle
+the GPU.
+
+00:43:58.076 --> 00:43:59.456 A:middle
+And we also support all of our
+
+00:43:59.456 --> 00:44:00.806 A:middle
+artist-authored materials.
+

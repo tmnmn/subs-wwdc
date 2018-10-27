@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:58.796 --> 00:53:00.196 A:middle
+forward until all those
+
+00:53:00.196 --> 00:53:01.516 A:middle
+intervals upstream have closed.
+
+00:53:02.076 --> 00:53:03.086 A:middle
+So if you have some intervals
+
+00:53:03.086 --> 00:53:04.856 A:middle
+that have a long run, what
+
+00:53:04.856 --> 00:53:06.636 A:middle
+you'll notice is that the output
+
+00:53:06.636 --> 00:53:08.276 A:middle
+of your modeler appears to stop.
+
+00:53:08.986 --> 00:53:11.336 A:middle
+And when the user hits the stop
+
+00:53:11.626 --> 00:53:13.506 A:middle
+recording button, well then all
+
+00:53:13.556 --> 00:53:14.516 A:middle
+open intervals close and
+
+00:53:14.516 --> 00:53:15.836 A:middle
+everything processes as normal
+
+00:53:15.976 --> 00:53:17.136 A:middle
+and the data fills in.
+
+00:53:17.606 --> 00:53:18.536 A:middle
+But that's not a great user
+
+00:53:18.536 --> 00:53:19.036 A:middle
+experience.
+
+00:53:19.416 --> 00:53:21.676 A:middle
+So if you hit that, you have one
+
+00:53:21.676 --> 00:53:22.396 A:middle
+of two options.
+
+00:53:22.396 --> 00:53:24.686 A:middle
+The first one is to opt your
+
+00:53:24.686 --> 00:53:26.066 A:middle
+instruments out of immediate
+
+00:53:26.066 --> 00:53:27.376 A:middle
+mode support and you can do that
+
+00:53:27.376 --> 00:53:28.846 A:middle
+by adding a limitation element
+
+00:53:28.916 --> 00:53:31.396 A:middle
+to your instrument and the
+
+00:53:31.396 --> 00:53:34.096 A:middle
+second is to move off the
+
+00:53:34.096 --> 00:53:35.746 A:middle
+interval data as input to your
+
+00:53:35.746 --> 00:53:38.136 A:middle
+modeler, just like we did in our
+
+00:53:38.136 --> 00:53:39.246 A:middle
+demonstration here for our
+
+00:53:39.246 --> 00:53:39.856 A:middle
+expert system.
+
+00:53:39.856 --> 00:53:41.316 A:middle
+We were actually using the os
+
+00:53:41.316 --> 00:53:42.746 A:middle
+signpost point events rather
+
+00:53:42.746 --> 00:53:44.176 A:middle
+than using the intervals.
+
+00:53:45.316 --> 00:53:47.156 A:middle
+So I know we make it look easy
+
+00:53:47.326 --> 00:53:49.086 A:middle
+but immediate mode is a little
+
+00:53:49.086 --> 00:53:50.046 A:middle
+tricky to implement.
+
+00:53:50.436 --> 00:53:53.386 A:middle
+And then third, one of the
+
+00:53:53.386 --> 00:53:55.056 A:middle
+things that's really important
+
+00:53:55.056 --> 00:53:56.256 A:middle
+if you're creating instruments
+
+00:53:56.256 --> 00:53:57.046 A:middle
+that are going to be targeting
+
+00:53:57.046 --> 00:53:59.156 A:middle
+high volumes of input data is
+
+00:53:59.156 --> 00:54:00.646 A:middle
+that the last five-second
+

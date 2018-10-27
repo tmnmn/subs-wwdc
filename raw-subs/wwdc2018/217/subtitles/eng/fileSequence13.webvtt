@@ -1,0 +1,144 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.856 --> 00:13:00.126 A:middle
+curve, allowing more content to
+
+00:13:00.126 --> 00:13:01.046 A:middle
+appear on the top of the watch
+
+00:13:01.046 --> 00:13:01.366 A:middle
+face.
+
+00:13:01.706 --> 00:13:02.466 A:middle
+And, if you give us this
+
+00:13:02.466 --> 00:13:04.076 A:middle
+optional endDate, we'll adjust
+
+00:13:04.076 --> 00:13:05.316 A:middle
+that curve to accommodate.
+
+00:13:05.856 --> 00:13:08.806 A:middle
+If your content instead is more
+
+00:13:08.806 --> 00:13:10.086 A:middle
+relevant to a given location,
+
+00:13:10.086 --> 00:13:10.706 A:middle
+you can use the
+
+00:13:10.816 --> 00:13:12.076 A:middle
+INLocationRelevanceProvider.
+
+00:13:13.086 --> 00:13:14.916 A:middle
+It takes a CLRegion as its main
+
+00:13:14.916 --> 00:13:16.246 A:middle
+parameter when you create an
+
+00:13:16.246 --> 00:13:16.956 A:middle
+instance of this.
+
+00:13:17.116 --> 00:13:18.296 A:middle
+As the user gets closer and
+
+00:13:18.296 --> 00:13:19.686 A:middle
+closer to that region, the
+
+00:13:19.686 --> 00:13:20.666 A:middle
+relevance output of this
+
+00:13:20.666 --> 00:13:21.936 A:middle
+relevanceProvider gets higher
+
+00:13:21.936 --> 00:13:22.306 A:middle
+and higher.
+
+00:13:23.686 --> 00:13:24.956 A:middle
+Now, you don't always have a
+
+00:13:24.956 --> 00:13:26.246 A:middle
+specific time of day, or
+
+00:13:26.246 --> 00:13:27.506 A:middle
+location in mind, for where your
+
+00:13:27.506 --> 00:13:29.946 A:middle
+content should be relevant.
+
+00:13:30.296 --> 00:13:31.866 A:middle
+User's schedules, their favorite
+
+00:13:31.866 --> 00:13:33.676 A:middle
+locations vary all over the
+
+00:13:33.676 --> 00:13:34.636 A:middle
+place, and you don't want to
+
+00:13:34.636 --> 00:13:35.796 A:middle
+have to get in the business of
+
+00:13:35.796 --> 00:13:36.546 A:middle
+tracking all of this.
+
+00:13:36.736 --> 00:13:38.126 A:middle
+So, you can take advantage of
+
+00:13:38.126 --> 00:13:39.596 A:middle
+the Siri face's smarts, and use
+
+00:13:39.596 --> 00:13:39.676 A:middle
+an
+
+00:13:39.836 --> 00:13:41.226 A:middle
+INDailyRoutineRelevanceProvider,
+
+00:13:41.496 --> 00:13:42.646 A:middle
+where we have situations for
+
+00:13:42.646 --> 00:13:43.856 A:middle
+both time of days that might be
+
+00:13:43.856 --> 00:13:45.116 A:middle
+favorite for your users, and
+
+00:13:45.116 --> 00:13:45.596 A:middle
+location.
+
+00:13:46.196 --> 00:13:47.256 A:middle
+For instance, if you have some
+
+00:13:47.256 --> 00:13:48.516 A:middle
+content you want to show as a
+
+00:13:48.516 --> 00:13:49.846 A:middle
+daily forecast when your user
+
+00:13:49.846 --> 00:13:51.296 A:middle
+wakes up, you don't want to have
+
+00:13:51.296 --> 00:13:52.176 A:middle
+to know if they wake up at 5
+
+00:13:52.176 --> 00:13:52.896 A:middle
+A.M. or 10 A.M.
+
+00:13:53.206 --> 00:13:53.956 A:middle
+You should just give us the
+
+00:13:53.956 --> 00:13:54.816 A:middle
+morning situation.
+
+00:13:55.736 --> 00:13:57.066 A:middle
+And, if you've got a workout you
+
+00:13:57.066 --> 00:13:58.116 A:middle
+want to suggest that requires
+
+00:13:58.116 --> 00:13:59.426 A:middle
+some gym equipment, you can pass
+
+00:13:59.426 --> 00:14:00.426 A:middle
+us the gym situation.
+

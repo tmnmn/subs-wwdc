@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.426 --> 00:34:01.096 A:middle
+Session later this week.
+
+00:34:01.576 --> 00:34:04.286 A:middle
+Now, our final API enhancement
+
+00:34:04.286 --> 00:34:05.826 A:middle
+topic is actually a bit of a
+
+00:34:05.826 --> 00:34:07.616 A:middle
+review but now with a little bit
+
+00:34:07.616 --> 00:34:08.366 A:middle
+more context.
+
+00:34:09.505 --> 00:34:11.356 A:middle
+So in iOS 11, we introduced Safe
+
+00:34:11.356 --> 00:34:12.176 A:middle
+Area insets.
+
+00:34:12.766 --> 00:34:14.666 A:middle
+Safe Area insets are a really
+
+00:34:14.775 --> 00:34:16.716 A:middle
+great way to make sure that your
+
+00:34:16.716 --> 00:34:19.446 A:middle
+content is avoiding any overlap
+
+00:34:19.596 --> 00:34:21.525 A:middle
+from other parts of the user
+
+00:34:21.525 --> 00:34:23.376 A:middle
+interface such as bars on the
+
+00:34:23.446 --> 00:34:24.576 A:middle
+top and bottom of the screen.
+
+00:34:25.906 --> 00:34:27.755 A:middle
+This is really great on iPhones
+
+00:34:27.755 --> 00:34:28.726 A:middle
+where bars are pretty
+
+00:34:28.726 --> 00:34:30.886 A:middle
+straightforward, but it's really
+
+00:34:30.976 --> 00:34:31.936 A:middle
+powerful as well.
+
+00:34:32.565 --> 00:34:34.005 A:middle
+Safe Area insets give you that
+
+00:34:34.076 --> 00:34:35.426 A:middle
+safe area coordinate in the
+
+00:34:35.426 --> 00:34:37.596 A:middle
+local coordinate space of any
+
+00:34:37.596 --> 00:34:39.795 A:middle
+view in your application, so it
+
+00:34:39.795 --> 00:34:41.266 A:middle
+scales even the much more
+
+00:34:41.266 --> 00:34:43.646 A:middle
+complex interfaces, things like
+
+00:34:43.646 --> 00:34:45.466 A:middle
+iPad Split View which has
+
+00:34:45.755 --> 00:34:48.346 A:middle
+different height bars on the
+
+00:34:48.346 --> 00:34:49.706 A:middle
+master and detail side of the
+
+00:34:49.706 --> 00:34:50.186 A:middle
+Split View.
+
+00:34:50.735 --> 00:34:54.116 A:middle
+The Safe Area insets in any view
+
+00:34:54.116 --> 00:34:55.326 A:middle
+underneath these bars will be
+
+00:34:55.326 --> 00:34:56.426 A:middle
+appropriate for the amount that
+
+00:34:56.426 --> 00:34:58.086 A:middle
+they're overlapped by the bar on
+
+00:34:58.126 --> 00:34:59.156 A:middle
+their side of the split.
+

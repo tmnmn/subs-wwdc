@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:00.440 --> 00:09:04.778 align:start position:30% line:-2
+違いは要素が
+セクション上にないこと
+
+00:09:04.945 --> 00:09:07.347 align:start position:29% line:-2
+子要素のバインディングは
+要素を問いません
+
+00:09:10.083 --> 00:09:14.988 align:start position:25% line:-2
+すべての子要素を生成するのに
+適していますが
+
+00:09:15.455 --> 00:09:19.293 align:start position:30% line:-2
+一部を生成したい場合も
+あるでしょう
+
+00:09:19.793 --> 00:09:23.730 align:start position:21% line:-2
+ストリーミングアプリケーションを
+例に考えます
+
+00:09:24.064 --> 00:09:29.002 align:start position:16% line:-2
+nowPlayingMenuItemは
+メニューバーの必須アイテムですが
+
+00:09:29.369 --> 00:09:34.241 align:start position:21% line:-2
+バックグラウンドで再生中の時のみ
+表示されます
+
+00:09:36.610 --> 00:09:40.547 align:start position:21% line:-2
+しかし menuBarItemの
+バインドは必要です
+
+00:09:40.881 --> 00:09:44.618 align:start position:21% line:-1
+そのため データを動作中か否かで
+
+00:09:44.718 --> 00:09:47.387 align:start position:30% line:-1
+区分する必要があります
+
+00:09:47.554 --> 00:09:49.957 align:start position:21% line:-1
+ここでfragmentが使えます
+
+00:09:51.859 --> 00:09:53.293 align:start position:30% line:-1
+fragmentとは？
+
+00:09:54.294 --> 00:09:57.898 align:start position:23% line:-1
+レンダラに見えない非表示要素で
+
+00:09:58.098 --> 00:10:00.400 align:start position:30% line:-1
+DOMの構成を助けます
+

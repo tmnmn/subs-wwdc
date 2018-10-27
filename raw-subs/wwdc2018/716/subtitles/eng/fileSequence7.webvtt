@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.896 --> 00:07:01.186 A:middle
+to work with by specifying
+
+00:07:01.186 --> 00:07:02.256 A:middle
+revision property of the
+
+00:07:02.256 --> 00:07:02.696 A:middle
+request.
+
+00:07:04.066 --> 00:07:04.966 A:middle
+So, that's the explicit
+
+00:07:04.966 --> 00:07:05.376 A:middle
+behavior.
+
+00:07:05.866 --> 00:07:06.936 A:middle
+But we also have a default
+
+00:07:06.936 --> 00:07:07.376 A:middle
+behavior.
+
+00:07:07.876 --> 00:07:09.156 A:middle
+If you create a request object,
+
+00:07:09.336 --> 00:07:10.566 A:middle
+and you don't tell us anything
+
+00:07:10.566 --> 00:07:12.326 A:middle
+at all, and you start processing
+
+00:07:12.326 --> 00:07:13.556 A:middle
+that request, here's what's
+
+00:07:13.556 --> 00:07:14.916 A:middle
+going to happen.
+
+00:07:14.916 --> 00:07:17.076 A:middle
+By default, you're getting the
+
+00:07:17.076 --> 00:07:18.956 A:middle
+latest revision of the request
+
+00:07:19.376 --> 00:07:20.436 A:middle
+that your app is linked
+
+00:07:20.436 --> 00:07:22.516 A:middle
+against-- of the SDK that your
+
+00:07:22.516 --> 00:07:23.596 A:middle
+app is linked against.
+
+00:07:23.986 --> 00:07:25.376 A:middle
+This is important to understand,
+
+00:07:25.376 --> 00:07:26.276 A:middle
+and I'll give you an example.
+
+00:07:27.116 --> 00:07:28.386 A:middle
+Let's say your app is linked
+
+00:07:28.386 --> 00:07:29.546 A:middle
+against there's the SDK from the
+
+00:07:29.546 --> 00:07:30.056 A:middle
+last year.
+
+00:07:30.696 --> 00:07:32.306 A:middle
+Last year, we had only single
+
+00:07:32.306 --> 00:07:32.746 A:middle
+detector.
+
+00:07:33.316 --> 00:07:34.406 A:middle
+So, this is the detector you're
+
+00:07:34.406 --> 00:07:36.436 A:middle
+going to get, even if you take
+
+00:07:36.436 --> 00:07:37.506 A:middle
+that app and without a
+
+00:07:37.506 --> 00:07:38.676 A:middle
+compilation, run it on the
+
+00:07:38.676 --> 00:07:39.366 A:middle
+current OS.
+
+00:07:40.586 --> 00:07:42.456 A:middle
+If, on the other hand, you
+
+00:07:42.456 --> 00:07:44.026 A:middle
+recompile your app with the
+
+00:07:44.026 --> 00:07:45.756 A:middle
+current SDK without changing a
+
+00:07:45.756 --> 00:07:47.466 A:middle
+single line or coordinate, and
+
+00:07:47.466 --> 00:07:48.806 A:middle
+you run it on the current OS,
+
+00:07:48.926 --> 00:07:49.986 A:middle
+you're going to get by default
+
+00:07:49.986 --> 00:07:51.436 A:middle
+revision #2 because this is the
+
+00:07:51.436 --> 00:07:54.716 A:middle
+way this from the current SDK.
+
+00:07:54.946 --> 00:07:56.016 A:middle
+We highly recommend you to
+
+00:07:56.016 --> 00:07:57.646 A:middle
+future-proof your apps, but
+
+00:07:57.646 --> 00:07:58.906 A:middle
+again it's exclusive to Vision.
+
+00:07:59.436 --> 00:08:01.246 A:middle
+What you get is, first, you get
+

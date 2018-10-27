@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.396 --> 00:12:00.826 A:middle
+Now, the orange line is the
+
+00:12:00.826 --> 00:12:02.076 A:middle
+shape of order n squared.
+
+00:12:03.356 --> 00:12:04.846 A:middle
+As you can see, a linear
+
+00:12:04.846 --> 00:12:06.406 A:middle
+algorithm may do worse on a
+
+00:12:06.406 --> 00:12:07.956 A:middle
+small problem, but it's
+
+00:12:07.956 --> 00:12:09.596 A:middle
+eventually faster than a
+
+00:12:09.596 --> 00:12:10.606 A:middle
+quadratic algorithm.
+
+00:12:11.926 --> 00:12:13.716 A:middle
+The cool thing is though, it
+
+00:12:13.716 --> 00:12:15.546 A:middle
+doesn't matter how expensive you
+
+00:12:15.546 --> 00:12:16.856 A:middle
+make the steps of the linear
+
+00:12:16.856 --> 00:12:19.226 A:middle
+algorithm, if you keep looking
+
+00:12:19.226 --> 00:12:22.456 A:middle
+at larger problem sizes, you'll
+
+00:12:22.566 --> 00:12:24.736 A:middle
+always find one where the linear
+
+00:12:24.736 --> 00:12:27.206 A:middle
+algorithm wins and continues to
+
+00:12:27.206 --> 00:12:28.206 A:middle
+win forever.
+
+00:12:29.346 --> 00:12:30.506 A:middle
+So, we're talking about
+
+00:12:30.506 --> 00:12:32.356 A:middle
+scalability, not absolute
+
+00:12:32.406 --> 00:12:33.000 A:middle
+performance.
+
+00:12:36.436 --> 00:12:40.346 A:middle
+Well, my scalability problem was
+
+00:12:40.346 --> 00:12:42.316 A:middle
+fixed, but I really wanted to
+
+00:12:42.316 --> 00:12:44.196 A:middle
+see how the standard library had
+
+00:12:44.196 --> 00:12:46.256 A:middle
+improved on my backward deletion
+
+00:12:46.256 --> 00:12:46.616 A:middle
+scheme.
+
+00:12:47.886 --> 00:12:49.586 A:middle
+Crusty reminded me that Swift is
+
+00:12:49.586 --> 00:12:50.986 A:middle
+open source, so I could pull it
+
+00:12:50.986 --> 00:12:53.006 A:middle
+up on what he calls "the hipster
+
+00:12:53.006 --> 00:12:53.426 A:middle
+web."
+
+00:12:53.816 --> 00:12:54.786 A:middle
+But the rest of us know as
+
+00:12:54.786 --> 00:12:55.500 A:middle
+GitHub.
+
+00:12:59.266 --> 00:13:00.776 A:middle
+Now, the first thing I noticed
+

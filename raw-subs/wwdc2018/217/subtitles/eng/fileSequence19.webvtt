@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.056 --> 00:19:01.086 A:middle
+The relevant shortcuts we
+
+00:19:01.086 --> 00:19:02.656 A:middle
+provide in our iOS app will be
+
+00:19:02.656 --> 00:19:03.716 A:middle
+periodically synced from the
+
+00:19:03.716 --> 00:19:04.426 A:middle
+phone to the watch.
+
+00:19:04.496 --> 00:19:05.896 A:middle
+And, merged in with local,
+
+00:19:05.896 --> 00:19:06.766 A:middle
+relevant shortcuts for
+
+00:19:06.766 --> 00:19:08.256 A:middle
+consideration to be displayed on
+
+00:19:08.256 --> 00:19:08.866 A:middle
+the watch face.
+
+00:19:09.916 --> 00:19:10.976 A:middle
+You have all of the same UI
+
+00:19:10.976 --> 00:19:12.656 A:middle
+customization options available.
+
+00:19:12.996 --> 00:19:14.286 A:middle
+The only difference is if your
+
+00:19:14.286 --> 00:19:15.446 A:middle
+relevant shortcut will execute
+
+00:19:15.446 --> 00:19:16.726 A:middle
+back on the phone, we'll show
+
+00:19:16.726 --> 00:19:18.096 A:middle
+your iOS application's icon
+
+00:19:18.096 --> 00:19:18.896 A:middle
+instead of your watchOS
+
+00:19:18.896 --> 00:19:19.706 A:middle
+applications icon.
+
+00:19:20.556 --> 00:19:23.146 A:middle
+And now that we can be showing
+
+00:19:23.146 --> 00:19:24.146 A:middle
+relevant shortcuts that will
+
+00:19:24.146 --> 00:19:25.026 A:middle
+execute on the phone or the
+
+00:19:25.026 --> 00:19:26.276 A:middle
+watch, let's talk about where
+
+00:19:26.276 --> 00:19:27.156 A:middle
+they will execute when the user
+
+00:19:27.156 --> 00:19:28.316 A:middle
+taps on them.
+
+00:19:29.596 --> 00:19:31.246 A:middle
+If a relevant shortcut can be
+
+00:19:31.246 --> 00:19:32.406 A:middle
+handled by an application that's
+
+00:19:32.406 --> 00:19:33.796 A:middle
+installed locally on your watch,
+
+00:19:34.056 --> 00:19:35.046 A:middle
+regardless of where it came
+
+00:19:35.046 --> 00:19:36.916 A:middle
+from, we're going to execute it
+
+00:19:36.956 --> 00:19:38.166 A:middle
+in the watchOS application.
+
+00:19:38.836 --> 00:19:40.116 A:middle
+That gives the user the best
+
+00:19:40.116 --> 00:19:41.296 A:middle
+experience and the lowest
+
+00:19:41.296 --> 00:19:41.726 A:middle
+latency.
+
+00:19:43.056 --> 00:19:44.386 A:middle
+You can ensure that your watchOS
+
+00:19:44.386 --> 00:19:45.956 A:middle
+application supports execution
+
+00:19:45.956 --> 00:19:47.336 A:middle
+of a shortcut by making sure the
+
+00:19:47.336 --> 00:19:48.986 A:middle
+user activity's activityType is
+
+00:19:48.986 --> 00:19:50.516 A:middle
+in your info.plist,
+
+00:19:50.516 --> 00:19:51.766 A:middle
+NSUserActivityTyped array.
+
+00:19:52.616 --> 00:19:53.816 A:middle
+Or, if it's an intent, that your
+
+00:19:53.816 --> 00:19:55.156 A:middle
+intent is listed in your intents
+
+00:19:55.156 --> 00:19:55.656 A:middle
+extension.
+
+00:19:56.226 --> 00:19:58.736 A:middle
+If instead there is no
+
+00:19:58.736 --> 00:19:59.826 A:middle
+application installed that can
+
+00:19:59.826 --> 00:20:01.956 A:middle
+handle your shortcut, except on
+

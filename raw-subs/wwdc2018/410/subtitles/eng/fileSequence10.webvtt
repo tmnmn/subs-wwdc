@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.536 --> 00:10:01.626 A:middle
+Xcode has created project with
+
+00:10:01.776 --> 00:10:03.656 A:middle
+package target and one file,
+
+00:10:04.406 --> 00:10:05.706 A:middle
+package definition.
+
+00:10:06.246 --> 00:10:09.286 A:middle
+Let's look in to it.
+
+00:10:10.176 --> 00:10:11.996 A:middle
+Packages are described in
+
+00:10:11.996 --> 00:10:13.406 A:middle
+XML-based syntax.
+
+00:10:13.816 --> 00:10:15.626 A:middle
+At the beginning, each package
+
+00:10:15.626 --> 00:10:18.506 A:middle
+contains identifier, title, and
+
+00:10:18.506 --> 00:10:18.846 A:middle
+owner.
+
+00:10:19.406 --> 00:10:21.146 A:middle
+These fields will be visible
+
+00:10:21.146 --> 00:10:22.436 A:middle
+when someone attempts to install
+
+00:10:22.436 --> 00:10:23.076 A:middle
+your package.
+
+00:10:24.876 --> 00:10:26.466 A:middle
+Usually, you would start by
+
+00:10:26.466 --> 00:10:29.736 A:middle
+defining your own schema and
+
+00:10:29.736 --> 00:10:31.546 A:middle
+optionally modeler but because
+
+00:10:31.756 --> 00:10:32.776 A:middle
+here we are going to be using
+
+00:10:32.816 --> 00:10:34.776 A:middle
+predefined tick schema, let's
+
+00:10:34.776 --> 00:10:36.576 A:middle
+remove these guides.
+
+00:10:38.876 --> 00:10:41.416 A:middle
+To import tick schema from base
+
+00:10:41.416 --> 00:10:43.176 A:middle
+package, all you need to do is
+
+00:10:43.206 --> 00:10:44.926 A:middle
+to specify import schema element
+
+00:10:45.586 --> 00:10:48.596 A:middle
+and first name of the schema,
+
+00:10:48.836 --> 00:10:48.976 A:middle
+tick.
+
+00:10:53.696 --> 00:10:55.546 A:middle
+Now it's ready to be used by our
+
+00:10:55.546 --> 00:10:56.156 A:middle
+Instrument.
+
+00:10:58.516 --> 00:11:00.636 A:middle
+To make defining more complex
+

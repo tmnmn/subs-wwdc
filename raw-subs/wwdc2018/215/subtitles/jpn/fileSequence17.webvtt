@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.018 --> 00:17:02.456 align:start position:7% line:-2
+additionalActivityItemsの
+追加も同様です
+
+00:17:02.623 --> 00:17:05.925 align:start position:9% line:-2
+ここでは
+CLSQuantityItemを作成しています
+
+00:17:06.026 --> 00:17:09.530 align:start position:25% line:-1
+タイトルは“Hints”です
+
+00:17:10.230 --> 00:17:13.300 align:start position:25% line:-1
+作成したアイテムを渡した後―
+
+00:17:13.400 --> 00:17:19.071 align:start position:5% line:-2
+addAdditionalActivityItem
+をコールします
+
+00:17:19.172 --> 00:17:23.242 align:start position:30% line:-2
+これでアクティビティに
+ひも付きます
+
+00:17:23.977 --> 00:17:28.448 align:start position:18% line:-2
+Activity Itemを扱う際の
+注意点があります
+
+00:17:29.182 --> 00:17:34.621 align:start position:9% line:-2
+まず primaryActivityItemの
+サブクラス統一です
+
+00:17:35.522 --> 00:17:40.928 align:start position:25% line:-2
+教師が２人の生徒に
+同じ課題を出す場合を考えます
+
+00:17:41.395 --> 00:17:47.267 align:start position:14% line:-2
+primaryActivityItemを
+生徒ＡではScoreItemに設定し
+
+00:17:47.901 --> 00:17:52.639 align:start position:21% line:-2
+生徒ＢではBinaryItemに
+設定したとします
+
+00:17:52.940 --> 00:17:58.445 align:start position:29% line:-2
+これだと教師への報告時に
+データを統合できません
+
+00:17:58.779 --> 00:18:04.318 align:start position:12% line:-2
+ScoreItemとBinaryItemは
+互換性がありません
+

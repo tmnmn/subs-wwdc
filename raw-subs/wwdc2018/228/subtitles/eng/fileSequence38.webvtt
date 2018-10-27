@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.606 --> 00:38:01.986 A:middle
+1 and Method 2 were active.
+
+00:38:03.796 --> 00:38:05.726 A:middle
+The second backtrace shows that
+
+00:38:05.726 --> 00:38:09.236 A:middle
+main Method 3 and Method 4 were
+
+00:38:10.226 --> 00:38:11.756 A:middle
+active and so on.
+
+00:38:17.566 --> 00:38:19.186 A:middle
+Now, we can try to combine these
+
+00:38:19.226 --> 00:38:21.196 A:middle
+backtraces together to form an
+
+00:38:21.196 --> 00:38:22.216 A:middle
+overall picture.
+
+00:38:23.026 --> 00:38:24.746 A:middle
+What we see here is a weight
+
+00:38:24.746 --> 00:38:26.946 A:middle
+call graph, and this weighted
+
+00:38:27.036 --> 00:38:28.396 A:middle
+call graph is really useful.
+
+00:38:29.426 --> 00:38:31.036 A:middle
+Here, we can see that main was
+
+00:38:31.076 --> 00:38:32.496 A:middle
+present in six out of the six
+
+00:38:32.496 --> 00:38:33.826 A:middle
+samples that we collected,
+
+00:38:35.046 --> 00:38:36.426 A:middle
+meaning that main was running
+
+00:38:36.426 --> 00:38:38.816 A:middle
+100% of the time.
+
+00:38:39.026 --> 00:38:40.976 A:middle
+Of that, we see that Method 1
+
+00:38:41.136 --> 00:38:43.936 A:middle
+had five samples whereas Method
+
+00:38:43.996 --> 00:38:45.556 A:middle
+3 had only one sample.
+
+00:38:45.986 --> 00:38:48.986 A:middle
+And within Method 1, we see that
+
+00:38:48.986 --> 00:38:51.426 A:middle
+Method 2 and Method 3 had three
+
+00:38:51.656 --> 00:38:52.696 A:middle
+samples and one sample
+
+00:38:52.696 --> 00:38:53.376 A:middle
+respectively.
+
+00:38:54.566 --> 00:38:56.016 A:middle
+So, this gives us an overall
+
+00:38:56.016 --> 00:38:58.416 A:middle
+picture of where the code was
+
+00:38:58.446 --> 00:39:00.346 A:middle
+being executed and how much time
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.506 --> 00:26:00.456 A:middle
+of logs in the console and these
+
+00:26:00.456 --> 00:26:01.356 A:middle
+are the indication that the
+
+00:26:01.356 --> 00:26:02.526 A:middle
+assertions are enabled and
+
+00:26:02.526 --> 00:26:03.366 A:middle
+running correctly.
+
+00:26:04.636 --> 00:26:06.076 A:middle
+With our SQL debugging on,
+
+00:26:06.076 --> 00:26:07.456 A:middle
+you'll be able to see things
+
+00:26:07.456 --> 00:26:08.656 A:middle
+like select statements for our
+
+00:26:08.656 --> 00:26:10.156 A:middle
+fetch requests as well as how
+
+00:26:10.156 --> 00:26:10.866 A:middle
+long they took.
+
+00:26:11.706 --> 00:26:13.016 A:middle
+And, if you're set to level
+
+00:26:13.016 --> 00:26:14.766 A:middle
+four, you'll even get explain,
+
+00:26:15.026 --> 00:26:16.056 A:middle
+which will show you the query
+
+00:26:16.056 --> 00:26:17.836 A:middle
+plan for a given select
+
+00:26:18.186 --> 00:26:19.016 A:middle
+statement.
+
+00:26:19.586 --> 00:26:20.936 A:middle
+And here we can see that our
+
+00:26:20.936 --> 00:26:23.786 A:middle
+table view is selected via table
+
+00:26:23.786 --> 00:26:25.856 A:middle
+scan and then using a temporary
+
+00:26:25.856 --> 00:26:27.866 A:middle
+B-tree in memory for the order
+
+00:26:27.866 --> 00:26:29.646 A:middle
+by, which is on the timestamp.
+
+00:26:30.536 --> 00:26:31.876 A:middle
+This is a potential performance
+
+00:26:31.876 --> 00:26:33.766 A:middle
+problem and as you're running
+
+00:26:33.766 --> 00:26:35.006 A:middle
+your application you can use
+
+00:26:35.006 --> 00:26:37.116 A:middle
+messages like this to see where
+
+00:26:37.116 --> 00:26:38.506 A:middle
+you may be doing more work than
+
+00:26:38.506 --> 00:26:39.086 A:middle
+you need to.
+
+00:26:40.346 --> 00:26:41.496 A:middle
+So, how would we fix this?
+
+00:26:42.946 --> 00:26:45.816 A:middle
+Well, turns out SQLite 3 can
+
+00:26:45.816 --> 00:26:46.776 A:middle
+actually tell us.
+
+00:26:47.476 --> 00:26:49.166 A:middle
+If we open a database and hand
+
+00:26:49.166 --> 00:26:50.696 A:middle
+it the select query from our SQL
+
+00:26:50.696 --> 00:26:52.926 A:middle
+logs, we can enable a mode
+
+00:26:52.926 --> 00:26:54.616 A:middle
+called Expert, which will
+
+00:26:54.616 --> 00:26:56.396 A:middle
+analyze the query and give us
+
+00:26:56.436 --> 00:26:58.616 A:middle
+the ideal solution of optimizing
+
+00:26:58.616 --> 00:27:00.366 A:middle
+it by creating a covering index.
+

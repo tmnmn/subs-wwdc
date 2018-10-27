@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.076 --> 00:40:01.266 A:middle
+So this is clearly a race
+
+00:40:01.266 --> 00:40:03.236 A:middle
+condition and the results are
+
+00:40:03.236 --> 00:40:03.806 A:middle
+undefined.
+
+00:40:03.806 --> 00:40:06.826 A:middle
+There are a few potential fixes
+
+00:40:07.356 --> 00:40:09.066 A:middle
+which you can implement in your
+
+00:40:09.066 --> 00:40:09.806 A:middle
+application.
+
+00:40:10.396 --> 00:40:13.386 A:middle
+The simplest is to call the
+
+00:40:13.386 --> 00:40:14.396 A:middle
+command buffer's
+
+00:40:14.396 --> 00:40:16.736 A:middle
+waitUntilCompleted method after
+
+00:40:16.736 --> 00:40:17.306 A:middle
+every frame.
+
+00:40:18.516 --> 00:40:22.556 A:middle
+But this waits for the GPU to
+
+00:40:22.556 --> 00:40:24.246 A:middle
+finish reading before you
+
+00:40:24.246 --> 00:40:25.706 A:middle
+override this buffer for the
+
+00:40:25.706 --> 00:40:26.296 A:middle
+next frame.
+
+00:40:27.096 --> 00:40:30.936 A:middle
+But as you can see, here this is
+
+00:40:30.936 --> 00:40:32.866 A:middle
+a very poor utilization of both
+
+00:40:33.036 --> 00:40:35.606 A:middle
+CPU and GPU, so this is not
+
+00:40:35.606 --> 00:40:37.376 A:middle
+something you want to do in your
+
+00:40:37.466 --> 00:40:38.166 A:middle
+shipping code.
+
+00:40:38.936 --> 00:40:40.756 A:middle
+But it is very useful to get
+
+00:40:40.756 --> 00:40:42.426 A:middle
+your Metal application up and
+
+00:40:42.426 --> 00:40:42.856 A:middle
+running.
+
+00:40:43.746 --> 00:40:45.976 A:middle
+And even to detect that if your
+
+00:40:45.976 --> 00:40:47.766 A:middle
+application really indeed has
+
+00:40:47.766 --> 00:40:49.716 A:middle
+these kind of data conflicts.
+
+00:40:51.756 --> 00:40:54.366 A:middle
+The efficient way to synchronize
+
+00:40:54.366 --> 00:40:55.926 A:middle
+your resource updates is to use
+
+00:40:55.926 --> 00:40:56.826 A:middle
+multiple buffers.
+
+00:40:57.546 --> 00:40:58.906 A:middle
+So in this case we will use
+
+00:40:58.956 --> 00:41:00.526 A:middle
+three buffers to triple buffer
+

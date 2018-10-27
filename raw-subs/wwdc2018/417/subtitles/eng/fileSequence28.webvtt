@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.236 --> 00:28:01.146 A:middle
+with our mock protocol type.
+
+00:28:01.756 --> 00:28:03.296 A:middle
+Then, in our original mock
+
+00:28:03.296 --> 00:28:04.616 A:middle
+protocol, we renamed the
+
+00:28:04.616 --> 00:28:06.256 A:middle
+delegate property, and we
+
+00:28:06.256 --> 00:28:07.046 A:middle
+implemented that renamed
+
+00:28:07.086 --> 00:28:08.136 A:middle
+property on our extension.
+
+00:28:09.566 --> 00:28:12.076 A:middle
+So, although this approach may
+
+00:28:12.076 --> 00:28:13.306 A:middle
+require more code than an
+
+00:28:13.306 --> 00:28:14.846 A:middle
+alternative like subclassing,
+
+00:28:15.546 --> 00:28:17.156 A:middle
+it'll be more reliable and less
+
+00:28:17.156 --> 00:28:18.496 A:middle
+likely to break as I expand my
+
+00:28:18.496 --> 00:28:21.006 A:middle
+code over time, since this way
+
+00:28:21.006 --> 00:28:22.326 A:middle
+the compiler will enforce that
+
+00:28:22.436 --> 00:28:24.526 A:middle
+any new methods I call for my
+
+00:28:24.526 --> 00:28:26.246 A:middle
+code must be included in these
+
+00:28:26.246 --> 00:28:27.000 A:middle
+new protocols.
+
+00:28:32.006 --> 00:28:33.836 A:middle
+So, finally, I'd like to talk
+
+00:28:33.836 --> 00:28:35.516 A:middle
+about test execution speed.
+
+00:28:35.956 --> 00:28:39.436 A:middle
+When your tests take a long time
+
+00:28:39.436 --> 00:28:41.206 A:middle
+to run, you're less likely to
+
+00:28:41.206 --> 00:28:42.916 A:middle
+run them during development, or
+
+00:28:42.916 --> 00:28:44.116 A:middle
+you might be tempted to skip the
+
+00:28:44.116 --> 00:28:45.036 A:middle
+longest running ones.
+
+00:28:45.486 --> 00:28:47.616 A:middle
+Our test suite helps us catch
+
+00:28:47.616 --> 00:28:49.166 A:middle
+issues early, when fixing
+
+00:28:49.166 --> 00:28:50.286 A:middle
+regression is easiest.
+
+00:28:50.736 --> 00:28:51.516 A:middle
+So, we want to make sure our
+
+00:28:51.516 --> 00:28:53.036 A:middle
+tests always run as fast as
+
+00:28:53.036 --> 00:28:53.526 A:middle
+possible.
+
+00:28:54.196 --> 00:28:55.826 A:middle
+Now, you might have encountered
+
+00:28:55.826 --> 00:28:57.176 A:middle
+times in the past when you
+
+00:28:57.176 --> 00:28:58.626 A:middle
+needed to artificially wait or
+
+00:28:58.626 --> 00:29:00.406 A:middle
+sleep in your tests, because the
+

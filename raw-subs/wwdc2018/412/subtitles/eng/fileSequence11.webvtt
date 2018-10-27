@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.046 --> 00:11:01.626 A:middle
+that, and here we can enter any
+
+00:11:02.306 --> 00:11:04.226 A:middle
+function or method name such as
+
+00:11:04.226 --> 00:11:06.706 A:middle
+UI labels, set text, which we'll
+
+00:11:06.706 --> 00:11:09.066 A:middle
+need in this case, and we enter
+
+00:11:09.066 --> 00:11:10.966 A:middle
+it in Objective-C format because
+
+00:11:11.016 --> 00:11:12.306 A:middle
+UIKit is in Objective-C
+
+00:11:12.306 --> 00:11:12.806 A:middle
+framework.
+
+00:11:13.546 --> 00:11:14.456 A:middle
+The thing to point out, if I
+
+00:11:14.456 --> 00:11:16.516 A:middle
+dismiss that, is that below the
+
+00:11:16.786 --> 00:11:18.906 A:middle
+breakpoint, there is a
+
+00:11:18.906 --> 00:11:20.586 A:middle
+[inaudible] added and this is
+
+00:11:20.586 --> 00:11:21.506 A:middle
+the feedback from the debugger
+
+00:11:21.506 --> 00:11:22.696 A:middle
+to tell us that it was able to
+
+00:11:22.696 --> 00:11:24.176 A:middle
+resolve this breakpoint to one
+
+00:11:24.176 --> 00:11:25.586 A:middle
+location in UIKit, Core.
+
+00:11:26.136 --> 00:11:27.336 A:middle
+Some symbols may result in
+
+00:11:27.336 --> 00:11:28.466 A:middle
+multiple locations, and you
+
+00:11:28.466 --> 00:11:29.306 A:middle
+would see them all here.
+
+00:11:29.546 --> 00:11:30.786 A:middle
+And if you saw no [inaudible]
+
+00:11:30.786 --> 00:11:32.216 A:middle
+entries, that would indicate
+
+00:11:32.256 --> 00:11:33.886 A:middle
+that the debugger wasn't able to
+
+00:11:33.886 --> 00:11:35.176 A:middle
+resolve your breakpoint, so it
+
+00:11:35.176 --> 00:11:35.606 A:middle
+wouldn't hit.
+
+00:11:36.396 --> 00:11:38.216 A:middle
+So with that in place, I'm going
+
+00:11:38.216 --> 00:11:40.476 A:middle
+to tap the astronaut again, and
+
+00:11:40.476 --> 00:11:41.726 A:middle
+now we see that we've hit the
+
+00:11:41.726 --> 00:11:43.416 A:middle
+breakpoint in UI label set text.
+
+00:11:43.876 --> 00:11:45.216 A:middle
+Now we don't have the source
+
+00:11:45.216 --> 00:11:46.926 A:middle
+code for UIKit, of course, so
+
+00:11:46.926 --> 00:11:48.166 A:middle
+we're looking at assembly code,
+
+00:11:48.586 --> 00:11:49.716 A:middle
+but there's no need to remain in
+
+00:11:49.716 --> 00:11:50.876 A:middle
+the dark even if you're in
+
+00:11:50.876 --> 00:11:53.256 A:middle
+assembly code of one of the
+
+00:11:53.256 --> 00:11:54.116 A:middle
+system frameworks.
+
+00:11:54.426 --> 00:11:56.186 A:middle
+We can inspect the arguments
+
+00:11:56.226 --> 00:11:57.196 A:middle
+passed into a function.
+
+00:11:57.196 --> 00:11:58.556 A:middle
+You just need to know the
+
+00:11:58.556 --> 00:11:59.586 A:middle
+calling convention for the
+
+00:11:59.586 --> 00:12:00.446 A:middle
+architecture, and you can
+

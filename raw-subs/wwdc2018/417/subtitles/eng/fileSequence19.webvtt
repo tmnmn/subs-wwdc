@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.696 --> 00:19:01.186 A:middle
+subject, but take a look at the
+
+00:19:01.186 --> 00:19:02.146 A:middle
+expectation now.
+
+00:19:03.366 --> 00:19:04.586 A:middle
+When our tests are expecting to
+
+00:19:04.586 --> 00:19:06.196 A:middle
+receive a notification to a
+
+00:19:06.196 --> 00:19:08.436 A:middle
+specific center, we can pass the
+
+00:19:08.436 --> 00:19:10.156 A:middle
+NotificationCenter parameter to
+
+00:19:10.156 --> 00:19:10.956 A:middle
+the initializer of the
+
+00:19:10.956 --> 00:19:11.656 A:middle
+expectation.
+
+00:19:13.426 --> 00:19:15.576 A:middle
+I'd also like to point out that
+
+00:19:15.576 --> 00:19:18.086 A:middle
+the timeout of this expectation
+
+00:19:18.086 --> 00:19:19.736 A:middle
+is 0, and that's because we
+
+00:19:19.736 --> 00:19:21.006 A:middle
+actually expect it to already
+
+00:19:21.006 --> 00:19:22.306 A:middle
+have been fulfilled by the time
+
+00:19:22.306 --> 00:19:22.806 A:middle
+we wait on it.
+
+00:19:23.896 --> 00:19:25.216 A:middle
+That's because the notification
+
+00:19:25.216 --> 00:19:26.446 A:middle
+should have already been posted
+
+00:19:26.526 --> 00:19:27.236 A:middle
+by the time the
+
+00:19:27.236 --> 00:19:28.616 A:middle
+NotifyAuthChanged method
+
+00:19:28.616 --> 00:19:29.216 A:middle
+returns.
+
+00:19:30.356 --> 00:19:31.946 A:middle
+So, using this pair of
+
+00:19:31.946 --> 00:19:32.846 A:middle
+techniques for testing
+
+00:19:32.846 --> 00:19:34.746 A:middle
+notifications we can ensure that
+
+00:19:34.746 --> 00:19:35.756 A:middle
+our tests remained fully
+
+00:19:35.756 --> 00:19:37.856 A:middle
+isolated, and we've made the
+
+00:19:37.856 --> 00:19:39.426 A:middle
+change without needing to modify
+
+00:19:39.426 --> 00:19:40.616 A:middle
+an existing code in our app,
+
+00:19:40.956 --> 00:19:42.346 A:middle
+since we specified that default
+
+00:19:42.416 --> 00:19:46.976 A:middle
+parameter value.
+
+00:19:47.926 --> 00:19:49.216 A:middle
+So, next, I'd like to talk about
+
+00:19:49.216 --> 00:19:50.456 A:middle
+a frequent challenge when
+
+00:19:50.456 --> 00:19:52.466 A:middle
+writing unit tests, interacting
+
+00:19:52.466 --> 00:19:53.666 A:middle
+with external classes.
+
+00:19:55.566 --> 00:19:57.036 A:middle
+So, while developing your app,
+
+00:19:57.386 --> 00:19:58.376 A:middle
+you've probably run into
+
+00:19:58.376 --> 00:20:00.546 A:middle
+situations where your class is
+

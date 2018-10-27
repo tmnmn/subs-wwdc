@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.656 --> 00:19:00.476 A:middle
+So what we do is we create a
+
+00:19:00.476 --> 00:19:02.736 A:middle
+different summary format that
+
+00:19:02.736 --> 00:19:06.206 A:middle
+contains a numerical string-- a
+
+00:19:06.206 --> 00:19:07.986 A:middle
+numerical placeholder and a
+
+00:19:07.986 --> 00:19:08.966 A:middle
+string placeholder.
+
+00:19:09.286 --> 00:19:11.196 A:middle
+As you see here, number, more
+
+00:19:11.196 --> 00:19:13.176 A:middle
+messages from a string.
+
+00:19:13.786 --> 00:19:15.926 A:middle
+And we will replace the second
+
+00:19:15.926 --> 00:19:17.486 A:middle
+placeholder with a list of names
+
+00:19:17.876 --> 00:19:19.246 A:middle
+that are in the notifications.
+
+00:19:20.856 --> 00:19:22.736 A:middle
+Still set the summary format in
+
+00:19:22.736 --> 00:19:23.376 A:middle
+the category.
+
+00:19:24.126 --> 00:19:25.936 A:middle
+And then we have to collect
+
+00:19:25.936 --> 00:19:26.636 A:middle
+these names.
+
+00:19:28.376 --> 00:19:30.306 A:middle
+To send these names, you set
+
+00:19:30.366 --> 00:19:33.076 A:middle
+them in the notification content
+
+00:19:33.136 --> 00:19:33.566 A:middle
+again.
+
+00:19:33.706 --> 00:19:35.216 A:middle
+Because each notification can be
+
+00:19:35.216 --> 00:19:36.716 A:middle
+sent by a different person.
+
+00:19:36.716 --> 00:19:40.396 A:middle
+And they can be different names.
+
+00:19:40.576 --> 00:19:42.466 A:middle
+So we will collect all of those
+
+00:19:42.466 --> 00:19:44.976 A:middle
+names, build them up in a string
+
+00:19:44.976 --> 00:19:48.726 A:middle
+and replace them in the summary.
+
+00:19:49.046 --> 00:19:50.956 A:middle
+Oh, this is the push payload of
+
+00:19:51.006 --> 00:19:52.786 A:middle
+course also supports summary
+
+00:19:52.786 --> 00:19:53.356 A:middle
+arguments.
+
+00:19:53.866 --> 00:19:56.226 A:middle
+And this is how the summary
+
+00:19:56.396 --> 00:19:58.496 A:middle
+looks after we collected all the
+
+00:19:58.496 --> 00:20:00.306 A:middle
+names and formatted them in the
+

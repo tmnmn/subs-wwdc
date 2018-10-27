@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.746 --> 00:10:00.056 A:middle
+DOM.
+
+00:10:01.366 --> 00:10:02.796 A:middle
+But what's special about
+
+00:10:02.796 --> 00:10:04.666 A:middle
+fragments are that its children
+
+00:10:04.756 --> 00:10:05.346 A:middle
+are visible.
+
+00:10:08.176 --> 00:10:10.586 A:middle
+And because it is an element and
+
+00:10:10.586 --> 00:10:12.086 A:middle
+children binding works with any
+
+00:10:12.086 --> 00:10:14.526 A:middle
+element, the fragments itself
+
+00:10:14.526 --> 00:10:15.816 A:middle
+works with children binding.
+
+00:10:18.576 --> 00:10:19.926 A:middle
+So let's go back to our data in
+
+00:10:19.926 --> 00:10:21.486 A:middle
+the final form we want and we
+
+00:10:21.486 --> 00:10:22.696 A:middle
+have something like this.
+
+00:10:23.126 --> 00:10:24.626 A:middle
+You have the menu bar items.
+
+00:10:25.436 --> 00:10:27.046 A:middle
+Nice to encapsulate in a
+
+00:10:27.046 --> 00:10:29.336 A:middle
+fragment and this is great
+
+00:10:29.336 --> 00:10:30.406 A:middle
+because it allows us to do
+
+00:10:30.406 --> 00:10:31.676 A:middle
+children binding like so.
+
+00:10:34.806 --> 00:10:36.896 A:middle
+Now all we have done is moved
+
+00:10:36.896 --> 00:10:38.456 A:middle
+the data around [inaudible] into
+
+00:10:38.456 --> 00:10:39.986 A:middle
+fragment while keeping the menu
+
+00:10:39.986 --> 00:10:41.766 A:middle
+bar intact with the now playing
+
+00:10:41.766 --> 00:10:42.356 A:middle
+menu item.
+
+00:10:42.656 --> 00:10:44.336 A:middle
+And because the renderer only
+
+00:10:44.336 --> 00:10:45.756 A:middle
+sees the children of the
+
+00:10:45.756 --> 00:10:48.076 A:middle
+fragment, this still renders as
+
+00:10:48.076 --> 00:10:49.536 A:middle
+a properly formed menu bar.
+
+00:10:52.576 --> 00:10:53.946 A:middle
+On the very subject of data
+
+00:10:53.946 --> 00:10:56.416 A:middle
+itself, that you can use to map
+
+00:10:56.536 --> 00:10:58.496 A:middle
+to user interface elements, this
+
+00:10:58.496 --> 00:11:00.376 A:middle
+is another likely scenario where
+

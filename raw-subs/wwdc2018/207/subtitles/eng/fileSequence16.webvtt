@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.426 --> 00:16:00.476 A:middle
+really are magic in that we use
+
+00:16:00.476 --> 00:16:01.666 A:middle
+them for so many things.
+
+00:16:02.286 --> 00:16:03.746 A:middle
+And perhaps the most sensitive
+
+00:16:03.746 --> 00:16:05.636 A:middle
+thing is they authenticate
+
+00:16:05.636 --> 00:16:06.126 A:middle
+users.
+
+00:16:06.126 --> 00:16:08.196 A:middle
+Once you have logged in with
+
+00:16:08.196 --> 00:16:09.266 A:middle
+your credentials, you get a
+
+00:16:09.266 --> 00:16:11.296 A:middle
+cookie that holds your session
+
+00:16:11.666 --> 00:16:13.806 A:middle
+and that cookie, if it's moved
+
+00:16:13.806 --> 00:16:15.476 A:middle
+or its stolen and moved to
+
+00:16:15.476 --> 00:16:17.366 A:middle
+another browser engine in many
+
+00:16:17.366 --> 00:16:19.446 A:middle
+cases can impersonate that user.
+
+00:16:19.886 --> 00:16:21.096 A:middle
+So, you really need to protect
+
+00:16:21.096 --> 00:16:21.636 A:middle
+your cookies.
+
+00:16:22.156 --> 00:16:23.686 A:middle
+As I already mentioned, you
+
+00:16:23.686 --> 00:16:25.376 A:middle
+should mark them all secure so
+
+00:16:25.376 --> 00:16:26.796 A:middle
+that they never leak in plain
+
+00:16:26.796 --> 00:16:27.706 A:middle
+text requests.
+
+00:16:28.216 --> 00:16:29.396 A:middle
+But there are more things to do,
+
+00:16:29.396 --> 00:16:29.636 A:middle
+right?
+
+00:16:30.576 --> 00:16:33.776 A:middle
+So, looking at Http Only
+
+00:16:33.776 --> 00:16:34.436 A:middle
+cookies.
+
+00:16:34.706 --> 00:16:36.736 A:middle
+This is fairly old technology.
+
+00:16:37.316 --> 00:16:38.936 A:middle
+I would guess this has been
+
+00:16:38.936 --> 00:16:40.466 A:middle
+around for at least 15 years,
+
+00:16:40.466 --> 00:16:42.496 A:middle
+the ability to say HTTP only.
+
+00:16:42.696 --> 00:16:45.376 A:middle
+You might be familiar with the
+
+00:16:45.376 --> 00:16:47.236 A:middle
+web API document.cookie.
+
+00:16:47.876 --> 00:16:50.146 A:middle
+This is a way for JavaScript to
+
+00:16:50.496 --> 00:16:51.826 A:middle
+read and write cookies.
+
+00:16:53.016 --> 00:16:55.206 A:middle
+JavaScript is powerful.
+
+00:16:55.336 --> 00:16:56.606 A:middle
+And, as I mentioned, if you load
+
+00:16:56.606 --> 00:16:57.976 A:middle
+JavaScript from other servers,
+
+00:16:58.026 --> 00:16:59.896 A:middle
+they have access to all of your
+
+00:16:59.896 --> 00:17:01.886 A:middle
+user's cookies through this API.
+

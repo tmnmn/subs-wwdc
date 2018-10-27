@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.356 --> 00:16:00.296 A:middle
+triangle, then the interpolated
+
+00:16:00.296 --> 00:16:03.346 A:middle
+vertex attribute is just the sum
+
+00:16:03.346 --> 00:16:05.466 A:middle
+of the attributes at each vertex
+
+00:16:05.696 --> 00:16:06.876 A:middle
+weighted by the barycentric
+
+00:16:06.876 --> 00:16:07.396 A:middle
+coordinates.
+
+00:16:07.956 --> 00:16:09.766 A:middle
+For example, if we have a color
+
+00:16:09.766 --> 00:16:11.466 A:middle
+defined at each vertex, then the
+
+00:16:11.466 --> 00:16:13.226 A:middle
+interpolated color is just the
+
+00:16:13.226 --> 00:16:14.526 A:middle
+weighted sum of the colors at
+
+00:16:14.526 --> 00:16:15.176 A:middle
+each vertex.
+
+00:16:15.846 --> 00:16:19.366 A:middle
+So, at this point we've created
+
+00:16:19.366 --> 00:16:21.296 A:middle
+a ray intersector and an
+
+00:16:21.296 --> 00:16:22.396 A:middle
+acceleration structure.
+
+00:16:23.616 --> 00:16:25.226 A:middle
+We then, generated primary rays
+
+00:16:25.756 --> 00:16:26.846 A:middle
+and found the intersections with
+
+00:16:26.876 --> 00:16:27.356 A:middle
+the scene.
+
+00:16:28.336 --> 00:16:29.456 A:middle
+We computed shading at the
+
+00:16:29.456 --> 00:16:30.736 A:middle
+intersection points, and then
+
+00:16:30.736 --> 00:16:32.156 A:middle
+wrote the shaded color into our
+
+00:16:32.156 --> 00:16:32.536 A:middle
+image.
+
+00:16:33.026 --> 00:16:33.736 A:middle
+So, let's take a look at the
+
+00:16:33.736 --> 00:16:34.176 A:middle
+image.
+
+00:16:34.736 --> 00:16:37.156 A:middle
+We can see the geometry
+
+00:16:37.156 --> 00:16:38.506 A:middle
+represented by the acceleration
+
+00:16:38.506 --> 00:16:39.906 A:middle
+structure, as well as the
+
+00:16:39.906 --> 00:16:41.486 A:middle
+interpolated vertex colors and
+
+00:16:41.486 --> 00:16:42.586 A:middle
+lighting we just computed.
+
+00:16:43.596 --> 00:16:44.736 A:middle
+Now that we have an image on
+
+00:16:44.736 --> 00:16:46.186 A:middle
+screen we're ready to add some
+
+00:16:46.186 --> 00:16:46.926 A:middle
+additional effects.
+
+00:16:48.406 --> 00:16:49.796 A:middle
+So, we'll start by adding
+
+00:16:49.796 --> 00:16:50.896 A:middle
+shadows to our image.
+
+00:16:51.516 --> 00:16:55.376 A:middle
+To do this, we need to check if
+
+00:16:55.376 --> 00:16:57.406 A:middle
+the light can actually reach the
+
+00:16:57.406 --> 00:16:59.126 A:middle
+shading point before adding it
+
+00:16:59.126 --> 00:16:59.746 A:middle
+to the image.
+

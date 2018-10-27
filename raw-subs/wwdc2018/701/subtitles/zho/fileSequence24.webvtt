@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.938 --> 00:24:01.642 align:middle line:-1
+首先 我们当然必须从相机获取图像
+
+00:24:03.710 --> 00:24:08.515 align:middle line:-2
+然后我们要使用
+vImage来应用效果
+
+00:24:08.582 --> 00:24:12.252 align:middle line:-2
+因此我们必须为vImage的
+输入和输出准备缓冲区
+
+00:24:13.687 --> 00:24:17.591 align:middle line:-2
+然后我们实际调用vImage函数
+来应用这些效果
+
+00:24:18.859 --> 00:24:21.328 align:middle line:-1
+并将输出显示在屏幕上
+
+00:24:22.596 --> 00:24:23.697 align:middle line:-1
+我们先来讨论
+
+00:24:24.531 --> 00:24:27.968 align:middle line:-2
+如何使用vImage函数
+来应用效果
+
+00:24:30.671 --> 00:24:33.140 align:middle line:-1
+我向你展示的是一种色彩饱和效果
+
+00:24:33.207 --> 00:24:36.610 align:middle line:-1
+这是计算色彩饱和效果的公式
+
+00:24:37.110 --> 00:24:40.080 align:middle line:-1
+我们想要消除像素的偏差
+
+00:24:40.781 --> 00:24:44.751 align:middle line:-1
+并使用乘法来应用饱和效果
+
+00:24:45.552 --> 00:24:48.388 align:middle line:-1
+然后我们再将偏差放回像素
+
+00:24:49.623 --> 00:24:53.126 align:middle line:-1
+VImage具有完成此操作的函数
+
+00:24:53.594 --> 00:24:56.129 align:middle line:-1
+即vImageMatrixMultiply
+
+00:24:58.265 --> 00:25:01.068 align:middle line:-2
+vImageMatrixMultiply
+需要一个preBias参数
+

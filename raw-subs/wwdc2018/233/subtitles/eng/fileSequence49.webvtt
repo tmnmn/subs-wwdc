@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:00.296 --> 00:49:00.386 A:middle
+app.
+
+00:49:01.296 --> 00:49:02.846 A:middle
+But, sometimes we don't have an
+
+00:49:02.846 --> 00:49:03.736 A:middle
+issue with views or
+
+00:49:03.736 --> 00:49:04.706 A:middle
+viewControllers.
+
+00:49:05.316 --> 00:49:06.656 A:middle
+We don't have an issue with
+
+00:49:06.656 --> 00:49:09.126 A:middle
+state, instead we have a really
+
+00:49:09.126 --> 00:49:11.036 A:middle
+hairy memory management issue.
+
+00:49:12.246 --> 00:49:13.626 A:middle
+Ben, are there any tools we can
+
+00:49:13.626 --> 00:49:14.316 A:middle
+use for this?
+
+00:49:15.416 --> 00:49:16.196 A:middle
+&gt;&gt; Well, I'm glad you asked
+
+00:49:16.196 --> 00:49:17.826 A:middle
+Peter, because yes, there is
+
+00:49:17.826 --> 00:49:19.456 A:middle
+another great tool built into
+
+00:49:19.456 --> 00:49:19.886 A:middle
+Xcode.
+
+00:49:20.486 --> 00:49:21.746 A:middle
+The Xcode memory debugger.
+
+00:49:22.346 --> 00:49:24.776 A:middle
+This tool will help you
+
+00:49:24.776 --> 00:49:26.396 A:middle
+visualize exactly how your
+
+00:49:26.396 --> 00:49:27.806 A:middle
+application is using memory.
+
+00:49:29.296 --> 00:49:30.796 A:middle
+Peter and I were debugging an
+
+00:49:30.796 --> 00:49:31.666 A:middle
+issue the other day, where we
+
+00:49:31.666 --> 00:49:32.916 A:middle
+had a leaking viewController.
+
+00:49:33.816 --> 00:49:35.046 A:middle
+And, we could see that here that
+
+00:49:35.046 --> 00:49:36.516 A:middle
+it's being held onto by a block.
+
+00:49:37.846 --> 00:49:39.106 A:middle
+By enabling Malloc stack
+
+00:49:39.106 --> 00:49:40.616 A:middle
+logging, we were able to see the
+
+00:49:40.616 --> 00:49:42.966 A:middle
+full backtrace of exactly when
+
+00:49:42.966 --> 00:49:44.066 A:middle
+this block was allocated.
+
+00:49:44.626 --> 00:49:47.486 A:middle
+By zooming in, we can see that
+
+00:49:47.486 --> 00:49:49.026 A:middle
+this block was actually created
+
+00:49:49.266 --> 00:49:50.356 A:middle
+by that viewController.
+
+00:49:51.406 --> 00:49:52.666 A:middle
+And so, that block is holding
+
+00:49:52.666 --> 00:49:53.696 A:middle
+onto that viewController.
+
+00:49:54.116 --> 00:49:55.246 A:middle
+But that viewController is also
+
+00:49:55.246 --> 00:49:56.076 A:middle
+holding onto the block.
+
+00:49:57.236 --> 00:49:58.316 A:middle
+And, there's our retain cycle.
+
+00:49:59.616 --> 00:49:59.976 A:middle
+&gt;&gt; Wow.
+

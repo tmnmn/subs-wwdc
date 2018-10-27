@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:56.390 --> 00:21:02.029 align:start position:29% line:-2
+想定外のクラスを割り当て
+初期化して呼び起こします
+
+00:21:02.796 --> 00:21:04.364 align:start position:39% line:-1
+その影響は？
+
+00:21:06.033 --> 00:21:08.702 align:start position:29% line:-2
+先ほどの
+条件付きダウンキャストが
+
+00:21:08.802 --> 00:21:12.639 align:start position:23% line:-1
+想定外のクラスを避けてくれます
+
+00:21:12.739 --> 00:21:15.776 align:start position:27% line:-1
+想定した型のみ使えるのです
+
+00:21:15.876 --> 00:21:18.345 align:start position:21% line:-1
+ダウンキャストが失敗なら失敗です
+
+00:21:20.714 --> 00:21:24.484 align:start position:29% line:-2
+復号はアプリケーションに
+影響を与えます
+
+00:21:24.585 --> 00:21:28.522 align:start position:32% line:-2
+allocメソッドは
+大域状態を変えます
+
+00:21:28.622 --> 00:21:31.959 align:start position:16% line:-1
+Singletonを割り当てるでしょう
+
+00:21:33.393 --> 00:21:37.764 align:start position:32% line:-2
+オブジェクトを投げて
+失敗すると衝撃が続き
+
+00:21:37.865 --> 00:21:40.334 align:start position:32% line:-1
+誤作動につながります
+
+00:21:40.434 --> 00:21:45.806 align:start position:27% line:-2
+悪影響を与えるアーカイブが
+構築される可能性も
+
+00:21:46.640 --> 00:21:49.209 align:start position:30% line:-1
+これを防ぐ検証方法は？
+
+00:21:50.177 --> 00:21:52.913 align:start position:16% line:-1
+NSSecureCodingの出番です
+
+00:21:53.781 --> 00:21:57.551 align:start position:21% line:-2
+これはNSCodingを継承する
+プロトコルで
+
+00:21:57.851 --> 00:22:01.655 align:start position:29% line:-2
+この種の攻撃を防ぐ目的で
+作られました
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.476 --> 00:19:01.126 A:middle
+see how it performs against our
+
+00:19:01.126 --> 00:19:01.696 A:middle
+original model.
+
+00:19:03.516 --> 00:19:05.986 A:middle
+Now as we saw in the demo, there
+
+00:19:05.986 --> 00:19:07.766 A:middle
+is a loss of accuracy associated
+
+00:19:07.766 --> 00:19:08.876 A:middle
+with quantizing our model.
+
+00:19:09.846 --> 00:19:12.056 A:middle
+And this loss of accuracy is
+
+00:19:12.056 --> 00:19:13.756 A:middle
+highly model and data dependent.
+
+00:19:14.636 --> 00:19:17.236 A:middle
+Some models work well or perform
+
+00:19:17.236 --> 00:19:18.076 A:middle
+better than others after
+
+00:19:18.076 --> 00:19:18.746 A:middle
+quantization.
+
+00:19:19.006 --> 00:19:20.446 A:middle
+As a general rule of thumb
+
+00:19:20.566 --> 00:19:22.006 A:middle
+again, the lower the number of
+
+00:19:22.006 --> 00:19:23.696 A:middle
+bits we quantize our model to
+
+00:19:24.376 --> 00:19:25.426 A:middle
+the more of a precision hit we
+
+00:19:25.426 --> 00:19:25.676 A:middle
+take.
+
+00:19:26.596 --> 00:19:28.226 A:middle
+Now in the demo we saw that we
+
+00:19:28.436 --> 00:19:30.256 A:middle
+were able to use Core ML Tools
+
+00:19:30.446 --> 00:19:31.806 A:middle
+to compare our quantized model
+
+00:19:31.806 --> 00:19:33.326 A:middle
+and the original model using our
+
+00:19:33.326 --> 00:19:34.586 A:middle
+Top 1 Agreement metric.
+
+00:19:35.466 --> 00:19:37.596 A:middle
+But you have to figure out what
+
+00:19:37.596 --> 00:19:38.756 A:middle
+the relevant metric for your
+
+00:19:38.756 --> 00:19:40.386 A:middle
+model and your use case is and
+
+00:19:40.386 --> 00:19:41.796 A:middle
+validate that your quantize
+
+00:19:41.796 --> 00:19:42.866 A:middle
+model is acceptable.
+
+00:19:44.026 --> 00:19:45.796 A:middle
+Now in a previous session, we
+
+00:19:45.796 --> 00:19:47.136 A:middle
+took a look at a style transfer
+
+00:19:47.136 --> 00:19:47.426 A:middle
+demo.
+
+00:19:48.226 --> 00:19:50.096 A:middle
+And this network took in an
+
+00:19:50.126 --> 00:19:52.566 A:middle
+input image, and the output for
+
+00:19:52.566 --> 00:19:54.106 A:middle
+this network was a stylized
+
+00:19:54.106 --> 00:19:54.496 A:middle
+image.
+
+00:19:55.506 --> 00:19:56.566 A:middle
+Let's take a look at how this
+
+00:19:56.736 --> 00:19:57.826 A:middle
+model performs at different
+
+00:19:57.826 --> 00:19:58.886 A:middle
+levels of quantization.
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.906 --> 00:25:01.226 A:middle
+So to see how that works we need
+
+00:25:01.226 --> 00:25:02.536 A:middle
+to understand how the stack
+
+00:25:02.536 --> 00:25:02.936 A:middle
+works.
+
+00:25:03.546 --> 00:25:06.896 A:middle
+So here I have a simple C
+
+00:25:06.896 --> 00:25:09.706 A:middle
+function called dlog and I use
+
+00:25:09.706 --> 00:25:11.196 A:middle
+it to print a string that I'm
+
+00:25:11.196 --> 00:25:13.666 A:middle
+passed into a dlog bug.
+
+00:25:14.496 --> 00:25:16.306 A:middle
+So in this case it's called with
+
+00:25:16.306 --> 00:25:17.286 A:middle
+a string hello.
+
+00:25:17.376 --> 00:25:20.016 A:middle
+And the way this works is we
+
+00:25:20.016 --> 00:25:22.646 A:middle
+need to allocate some memory to
+
+00:25:22.646 --> 00:25:23.976 A:middle
+keep track of this call.
+
+00:25:25.816 --> 00:25:27.766 A:middle
+So we allocate that into a
+
+00:25:27.766 --> 00:25:28.936 A:middle
+region called the stack.
+
+00:25:29.776 --> 00:25:31.946 A:middle
+So the stack grows down towards
+
+00:25:31.946 --> 00:25:33.146 A:middle
+the null pointer or address
+
+00:25:33.146 --> 00:25:33.436 A:middle
+zero.
+
+00:25:34.066 --> 00:25:37.746 A:middle
+So when we do our dlog hello
+
+00:25:37.746 --> 00:25:39.586 A:middle
+call this allocates what's
+
+00:25:39.586 --> 00:25:41.566 A:middle
+called the stack frame and the
+
+00:25:41.566 --> 00:25:43.166 A:middle
+stack frame contains things like
+
+00:25:43.166 --> 00:25:44.626 A:middle
+the return address so that we
+
+00:25:44.626 --> 00:25:46.486 A:middle
+know to go back to main.
+
+00:25:47.306 --> 00:25:48.746 A:middle
+But it also contains other
+
+00:25:48.746 --> 00:25:50.286 A:middle
+things like parameters and local
+
+00:25:50.286 --> 00:25:50.876 A:middle
+variables.
+
+00:25:51.746 --> 00:25:53.686 A:middle
+So for instance if I have a log
+
+00:25:53.686 --> 00:25:55.076 A:middle
+file [inaudible] local variable
+
+00:25:56.106 --> 00:25:57.606 A:middle
+that lives in the stack frame.
+
+00:25:58.206 --> 00:26:01.846 A:middle
+So now if I try to make another
+

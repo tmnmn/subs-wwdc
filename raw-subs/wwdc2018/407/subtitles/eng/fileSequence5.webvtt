@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.726 --> 00:05:00.326 A:middle
+performing the same as it has
+
+00:05:00.326 --> 00:05:01.246 A:middle
+been for a long time?
+
+00:05:01.656 --> 00:05:03.356 A:middle
+Maybe it is running at 45 frames
+
+00:05:03.356 --> 00:05:04.666 A:middle
+a second in some drawing test,
+
+00:05:05.156 --> 00:05:06.826 A:middle
+but we expect it to run at 60.
+
+00:05:06.826 --> 00:05:07.886 A:middle
+It needs to be improved
+
+00:05:07.886 --> 00:05:09.426 A:middle
+marginally, and we have reason
+
+00:05:09.426 --> 00:05:10.986 A:middle
+to believe through our previous
+
+00:05:10.986 --> 00:05:12.736 A:middle
+performance work that we can get
+
+00:05:12.736 --> 00:05:14.126 A:middle
+there through spot fixes and
+
+00:05:14.126 --> 00:05:15.546 A:middle
+incremental changes.
+
+00:05:16.326 --> 00:05:17.726 A:middle
+Now, in this type of scenario, I
+
+00:05:17.726 --> 00:05:19.186 A:middle
+probably also have automated
+
+00:05:19.186 --> 00:05:20.876 A:middle
+tests already in play, because I
+
+00:05:20.876 --> 00:05:22.216 A:middle
+understand my performance over
+
+00:05:24.796 --> 00:05:24.896 A:middle
+time.
+
+00:05:25.106 --> 00:05:26.856 A:middle
+And a third scenario, our
+
+00:05:26.856 --> 00:05:28.176 A:middle
+application is just suffering
+
+00:05:28.176 --> 00:05:29.336 A:middle
+from a poor design and
+
+00:05:29.446 --> 00:05:30.666 A:middle
+performance is orders of
+
+00:05:30.666 --> 00:05:32.036 A:middle
+magnitude worse than it should
+
+00:05:32.036 --> 00:05:32.226 A:middle
+be.
+
+00:05:33.516 --> 00:05:34.726 A:middle
+We know that we can't improve it
+
+00:05:34.726 --> 00:05:36.626 A:middle
+with simple spot fixes, because
+
+00:05:36.626 --> 00:05:37.666 A:middle
+we've tried them in the past,
+
+00:05:37.906 --> 00:05:39.356 A:middle
+and we are still stuck here with
+
+00:05:39.606 --> 00:05:41.416 A:middle
+a very sub-par performance.
+
+00:05:42.006 --> 00:05:43.856 A:middle
+In a situation like this, you'd
+
+00:05:43.856 --> 00:05:45.096 A:middle
+want to do a total performance
+
+00:05:45.096 --> 00:05:45.986 A:middle
+overhaul, where you are
+
+00:05:45.986 --> 00:05:47.446 A:middle
+redesigning some core part of
+
+00:05:47.446 --> 00:05:48.716 A:middle
+the feature, or the algorithms
+
+00:05:48.716 --> 00:05:50.516 A:middle
+in question, so that performance
+
+00:05:50.786 --> 00:05:51.916 A:middle
+is a primary constraint.
+
+00:05:52.456 --> 00:05:53.746 A:middle
+And definitely in these cases,
+
+00:05:53.906 --> 00:05:55.216 A:middle
+you would have performance tests
+
+00:05:55.536 --> 00:05:56.686 A:middle
+to measure that you're actually
+
+00:05:56.686 --> 00:05:57.626 A:middle
+hitting your performance
+
+00:05:57.626 --> 00:05:58.136 A:middle
+targets.
+
+00:05:59.246 --> 00:06:00.856 A:middle
+Now, it is important that you
+

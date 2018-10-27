@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.206 --> 00:26:01.846 A:middle
+So now if I try to make another
+
+00:26:01.846 --> 00:26:03.796 A:middle
+function call to this dlog file
+
+00:26:03.796 --> 00:26:06.636 A:middle
+function that in turn will
+
+00:26:06.636 --> 00:26:07.846 A:middle
+allocate its own stack frame.
+
+00:26:08.226 --> 00:26:11.226 A:middle
+And when it's done it's going to
+
+00:26:11.226 --> 00:26:12.856 A:middle
+deallocate the stack frame and
+
+00:26:12.856 --> 00:26:14.056 A:middle
+return back to the caller.
+
+00:26:14.666 --> 00:26:18.766 A:middle
+So now let's look at this stack
+
+00:26:18.766 --> 00:26:20.006 A:middle
+frame in more details.
+
+00:26:21.256 --> 00:26:23.046 A:middle
+So let's say I change my
+
+00:26:23.046 --> 00:26:25.436 A:middle
+function to have a local buffer,
+
+00:26:25.436 --> 00:26:27.336 A:middle
+so it's a 4 bytes character
+
+00:26:27.916 --> 00:26:28.006 A:middle
+array.
+
+00:26:29.556 --> 00:26:31.136 A:middle
+And I'm trying to prepare my
+
+00:26:31.136 --> 00:26:34.166 A:middle
+debug string by first doing a
+
+00:26:34.166 --> 00:26:35.466 A:middle
+strcpy of the string that I'm
+
+00:26:35.466 --> 00:26:38.466 A:middle
+passed into that buffer.
+
+00:26:38.596 --> 00:26:40.696 A:middle
+So this does the obvious copy by
+
+00:26:40.916 --> 00:26:44.546 A:middle
+[inaudible], so it does H-E-L-L.
+
+00:26:44.546 --> 00:26:47.496 A:middle
+But then there's a problem at
+
+00:26:47.496 --> 00:26:48.866 A:middle
+this point we already wrote 4
+
+00:26:48.866 --> 00:26:50.786 A:middle
+bytes and that we already
+
+00:26:50.786 --> 00:26:52.766 A:middle
+exhausted all 4 bytes available
+
+00:26:52.766 --> 00:26:53.276 A:middle
+in our buffer.
+
+00:26:54.206 --> 00:26:56.066 A:middle
+So if we keep going which is
+
+00:26:56.066 --> 00:26:57.876 A:middle
+what strcpy will do then we're
+
+00:26:57.876 --> 00:26:59.276 A:middle
+going to override the return
+
+00:26:59.276 --> 00:27:01.536 A:middle
+address and this is a big
+

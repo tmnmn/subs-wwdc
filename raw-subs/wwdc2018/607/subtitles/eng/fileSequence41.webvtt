@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.526 --> 00:41:00.126 A:middle
+Metal to apply the results to
+
+00:41:00.126 --> 00:41:01.136 A:middle
+all samples of the pixel.
+
+00:41:01.986 --> 00:41:03.876 A:middle
+And since all samples now share
+
+00:41:03.876 --> 00:41:05.486 A:middle
+the same value, the later
+
+00:41:05.486 --> 00:41:06.426 A:middle
+particle draws are going to
+
+00:41:06.426 --> 00:41:08.276 A:middle
+blend per pixel rather than per
+
+00:41:08.276 --> 00:41:08.646 A:middle
+sample.
+
+00:41:11.096 --> 00:41:12.696 A:middle
+So that's it for sample coverage
+
+00:41:12.696 --> 00:41:13.056 A:middle
+control.
+
+00:41:15.736 --> 00:41:18.216 A:middle
+Now, optimizing for Apple GPUs
+
+00:41:18.216 --> 00:41:19.306 A:middle
+is really important for
+
+00:41:19.306 --> 00:41:20.556 A:middle
+maximizing your game's
+
+00:41:20.586 --> 00:41:21.926 A:middle
+performance and extending its
+
+00:41:21.966 --> 00:41:23.806 A:middle
+playtime, but there's a lot more
+
+00:41:23.806 --> 00:41:25.236 A:middle
+work that goes into shipping a
+
+00:41:25.236 --> 00:41:27.036 A:middle
+tile in iOS, especially one
+
+00:41:27.036 --> 00:41:27.946 A:middle
+that's originally designed for
+
+00:41:27.946 --> 00:41:28.986 A:middle
+desktops and consoles.
+
+00:41:29.476 --> 00:41:31.266 A:middle
+To talk about that now and to
+
+00:41:31.266 --> 00:41:32.456 A:middle
+put into practice what we just
+
+00:41:32.456 --> 00:41:34.036 A:middle
+discussed, I'd like to bring on
+
+00:41:34.036 --> 00:41:35.716 A:middle
+Nick Penwarden from Epic Games.
+
+00:41:36.146 --> 00:41:36.386 A:middle
+Nick?
+
+00:41:38.516 --> 00:41:40.566 A:middle
+[ Applause ]
+
+00:41:41.066 --> 00:41:41.736 A:middle
+&gt;&gt; Thank you, Michael.
+
+00:41:42.876 --> 00:41:44.086 A:middle
+So, yeah. I'd like to talk a
+
+00:41:44.086 --> 00:41:46.236 A:middle
+little bit about how we took a
+
+00:41:46.236 --> 00:41:47.906 A:middle
+game that was originally made
+
+00:41:47.986 --> 00:41:50.786 A:middle
+for desktop and console
+
+00:41:50.786 --> 00:41:52.826 A:middle
+platforms and brought it to iOS
+
+00:41:52.826 --> 00:41:53.326 A:middle
+using Metal.
+
+00:41:53.906 --> 00:41:56.126 A:middle
+So some of the technical
+
+00:41:56.126 --> 00:41:57.206 A:middle
+challenges we faced.
+
+00:41:57.206 --> 00:42:00.556 A:middle
+The Battle Royale map is 1 map.
+

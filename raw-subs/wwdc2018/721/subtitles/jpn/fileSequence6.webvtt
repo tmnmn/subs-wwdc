@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:00.194 --> 00:06:04.765 align:start position:14% line:-2
+ここでExtensionはUIを設定して
+ユーザのクレデンシャルを表示し
+
+00:06:04.865 --> 00:06:09.436 align:start position:21% line:-2
+提供されたサービス識別子を使って
+関連性の高いものを優先します
+
+00:06:09.870 --> 00:06:12.005 align:start position:29% line:-1
+この後の展開は２通りです
+
+00:06:13.874 --> 00:06:16.076 align:start position:20% line:-1
+Extensionを閉じる場合は―
+
+00:06:16.176 --> 00:06:22.182 align:start position:7% line:-2
+cancelRequest(withErrorを
+呼び出します
+
+00:06:23.050 --> 00:06:25.486 align:start position:20% line:-1
+するとExtensionが閉じます
+
+00:06:29.189 --> 00:06:32.292 align:start position:29% line:-2
+ユーザがクレデンシャルを
+選ぶ場合は―
+
+00:06:32.392 --> 00:06:37.097 align:start position:4% line:-2
+選択に基づいてExtensionが
+ASPasswordCredentialを作成します
+
+00:06:37.197 --> 00:06:40.234 align:start position:18% line:-2
+そしてExtension上で選択した
+クレデンシャルメソッドを使用して
+
+00:06:40.334 --> 00:06:43.604 align:start position:21% line:-2
+リクエストを呼び出し自動入力用に
+クレデンシャルを渡します
+
+00:06:44.471 --> 00:06:46.139 align:start position:29% line:-1
+自動入力ではそれを使用し
+
+00:06:46.240 --> 00:06:48.876 align:start position:25% line:-2
+ユーザ名とパスワードを
+アプリケーションに入力します
+
+00:06:51.845 --> 00:06:56.383 align:start position:25% line:-2
+この機能を生かすための
+ペストプラクティスをいくつか
+
+00:06:56.884 --> 00:07:00.854 align:start position:27% line:-2
+まず UIにリクエストの
+取り消しボタンを含めること
+

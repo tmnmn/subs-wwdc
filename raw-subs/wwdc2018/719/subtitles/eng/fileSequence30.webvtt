@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.236 --> 00:30:04.226 A:middle
+This is our input image, and now
+
+00:30:04.226 --> 00:30:05.386 A:middle
+I want to apply a filter on it,
+
+00:30:05.546 --> 00:30:07.136 A:middle
+so let's take a look at the 200
+
+00:30:07.136 --> 00:30:08.306 A:middle
+plus filters that are supported
+
+00:30:08.306 --> 00:30:09.000 A:middle
+in Core Image.
+
+00:30:13.116 --> 00:30:14.456 A:middle
+Let's say that I'm interested in
+
+00:30:14.456 --> 00:30:16.176 A:middle
+applying GaussianBlur here, and
+
+00:30:16.176 --> 00:30:16.946 A:middle
+I'd like to know which
+
+00:30:16.946 --> 00:30:18.306 A:middle
+parameters are supported by that
+
+00:30:18.306 --> 00:30:19.386 A:middle
+filter, so I'm going to call
+
+00:30:19.386 --> 00:30:21.856 A:middle
+inputs on my CIMG class, and I
+
+00:30:21.856 --> 00:30:23.926 A:middle
+see that it supports input image
+
+00:30:24.206 --> 00:30:25.356 A:middle
+-- I shouldn't be surprised --
+
+00:30:25.356 --> 00:30:26.566 A:middle
+as well as an input radius.
+
+00:30:26.986 --> 00:30:28.356 A:middle
+So, I'm going to do just that
+
+00:30:28.356 --> 00:30:28.666 A:middle
+here.
+
+00:30:29.886 --> 00:30:30.696 A:middle
+Take my input image.
+
+00:30:31.486 --> 00:30:32.786 A:middle
+Apply GaussianBlur filter on it
+
+00:30:32.946 --> 00:30:34.726 A:middle
+with a radius of 100 pixels, and
+
+00:30:35.236 --> 00:30:36.176 A:middle
+then show the two images
+
+00:30:36.176 --> 00:30:36.786 A:middle
+side-by-side.
+
+00:30:38.756 --> 00:30:41.596 A:middle
+So, pretty easy, right?
+
+00:30:42.176 --> 00:30:42.526 A:middle
+Okay.
+
+00:30:43.226 --> 00:30:45.116 A:middle
+Let's keep going.
+
+00:30:45.166 --> 00:30:46.026 A:middle
+Like I mentioned earlier, you
+
+00:30:46.026 --> 00:30:47.326 A:middle
+can generate procedural images
+
+00:30:47.326 --> 00:30:48.076 A:middle
+using Core Image.
+
+00:30:48.266 --> 00:30:49.506 A:middle
+So, we'll take a look at Core
+
+00:30:49.506 --> 00:30:50.636 A:middle
+Image generators.
+
+00:30:51.626 --> 00:30:52.956 A:middle
+And the first thing we do here
+
+00:30:52.956 --> 00:30:54.536 A:middle
+is we call from generator --
+
+00:30:54.536 --> 00:30:55.736 A:middle
+specify the name of our
+
+00:30:55.736 --> 00:30:56.186 A:middle
+generator.
+
+00:30:56.286 --> 00:30:58.756 A:middle
+In this case, CIQR code and pass
+
+00:30:58.756 --> 00:31:00.916 A:middle
+them in the message that we're
+

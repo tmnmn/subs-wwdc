@@ -1,0 +1,40 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:56.790 --> 00:31:01.328 align:middle line:-2
+这个是所支持的类的列表
+而我们只有NSURL
+
+00:31:01.528 --> 00:31:05.365 align:middle line:-1
+所以我们要在第一个索引那里添加
+
+00:31:06.066 --> 00:31:11.205 align:middle line:-1
+NSFilePromiseReceiver
+
+00:31:15.375 --> 00:31:19.580 align:middle line:-2
+在这里的枚举方法中
+我们要添加一个新的case
+
+00:31:26.954 --> 00:31:30.457 align:middle line:-1
+来接收所承诺的文件
+
+00:31:30.524 --> 00:31:32.326 align:middle line:-1
+如果我们刚刚通过拖拽得到了一个
+
+00:31:32.526 --> 00:31:36.463 align:middle line:-2
+文件的URL
+我们可以对其调用刚才调用过的
+
+00:31:36.530 --> 00:31:39.800 align:middle line:-1
+相同的方法
+
+00:31:40.734 --> 00:31:42.202 align:middle line:-1
+让我们看看这样行不行
+
+00:31:48.208 --> 00:31:49.743 align:middle line:-1
+这就是我们的简单app
+
+00:31:50.377 --> 00:31:55.782 align:middle line:-2
+让我们回到Safari
+将这个图片拖拽到窗口中
+

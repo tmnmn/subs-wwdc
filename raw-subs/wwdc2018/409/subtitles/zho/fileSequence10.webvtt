@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.967 --> 00:10:02.669 align:middle line:-2
+Swift中
+ARC对象指针字段的结构
+
+00:10:03.203 --> 00:10:07.040 align:middle line:-2
+你只会得到一个编译错误
+因为找不到该结构
+
+00:10:07.107 --> 00:10:10.344 align:middle line:-2
+（对于某些函数的ABI更改
+通过值传递或返回结构）
+
+00:10:10.410 --> 00:10:13.814 align:middle line:-2
+（Swift不支持使用
+ARC对象指针字段导入结构）
+
+00:10:13.881 --> 00:10:19.019 align:middle line:-2
+除了像支持ARC对指针字段的
+新特性之外
+
+00:10:19.453 --> 00:10:24.358 align:middle line:-2
+Xcode 10
+还附带了许多新的编译器诊断
+
+00:10:24.825 --> 00:10:28.061 align:middle line:-2
+在Xcode 10中
+我们实际上有超过100个新的警告
+
+00:10:28.762 --> 00:10:30.797 align:middle line:-1
+今天我想谈谈其中的两个
+
+00:10:30.864 --> 00:10:31.965 align:middle line:-1
+（Xcode 10中的新诊断）
+
+00:10:32.032 --> 00:10:34.902 align:middle line:-2
+第一个警告可能对那些混合了
+Swift和Objective-C代码
+
+00:10:35.602 --> 00:10:39.072 align:middle line:-1
+的人感兴趣
+
+00:10:39.840 --> 00:10:44.444 align:middle line:-2
+因如你所知Swift代码
+可以导入Objective-C
+
+00:10:45.312 --> 00:10:50.017 align:middle line:-2
+Xcode允许你
+通过生成一个使用
+
+00:10:50.217 --> 00:10:54.855 align:middle line:-2
+Objective-C声明描述
+Swift接口的头文件来实现这点
+
+00:10:54.922 --> 00:10:56.456 align:middle line:-2
+（SWIFT和
+OBJECTIVE-C互操作性）
+
+00:10:56.523 --> 00:10:59.860 align:middle line:-2
+你可以将这个头文件导入到你自己的
+Objective-C代码中
+

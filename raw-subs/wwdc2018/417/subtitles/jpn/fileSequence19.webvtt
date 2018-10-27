@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.274 --> 00:19:02.709 align:start position:23% line:-2
+しかしExpectationに
+ご注目を
+
+00:19:03.343 --> 00:19:07.514 align:start position:32% line:-2
+Centerで
+通知を受け取るなら―
+
+00:19:07.614 --> 00:19:09.950 align:start position:18% line:-2
+NotificationCenter
+パラメータを
+
+00:19:10.050 --> 00:19:12.186 align:start position:29% line:-2
+Expectationの
+イニシャライザに渡せます
+
+00:19:13.687 --> 00:19:18.826 align:start position:25% line:-2
+またExpectationの
+タイムアウトが“０”なのは
+
+00:19:18.926 --> 00:19:23.330 align:start position:29% line:-2
+待つ前に実行されることを
+期待しているからです
+
+00:19:23.831 --> 00:19:26.400 align:start position:20% line:-2
+notifyAuthChanged
+メソッドが戻る前に―
+
+00:19:26.500 --> 00:19:29.770 align:start position:29% line:-2
+通知は
+送信されるべきだからです
+
+00:19:30.671 --> 00:19:33.941 align:start position:29% line:-2
+この２つの
+テストテクニックを使って
+
+00:19:34.041 --> 00:19:36.844 align:start position:29% line:-1
+テストを分離させられます
+
+00:19:36.944 --> 00:19:40.747 align:start position:27% line:-2
+デフォルトのパラメータ値を
+指定したので―
+
+00:19:40.848 --> 00:19:43.817 align:start position:34% line:-2
+既存のコードを
+修正せずに済みます
+
+00:19:47.788 --> 00:19:51.658 align:start position:30% line:-2
+ユニットテスト記述に
+伴う問題をお話しします
+
+00:19:51.758 --> 00:19:54.194 align:start position:27% line:-1
+外部クラスとのやり取りです
+
+00:19:55.863 --> 00:19:59.099 align:start position:27% line:-2
+アプリケーションの開発中に
+クラスが―
+
+00:19:59.199 --> 00:20:05.472 align:start position:25% line:-2
+アプリケーション内やSDKの
+別のクラスとやり取りします
+

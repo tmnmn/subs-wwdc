@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.006 --> 00:04:00.296 A:middle
+that simple.
+
+00:04:01.106 --> 00:04:02.676 A:middle
+AVFoundation also supports
+
+00:04:02.676 --> 00:04:04.236 A:middle
+portrait matte delivery at
+
+00:04:04.236 --> 00:04:04.966 A:middle
+capture time.
+
+00:04:05.516 --> 00:04:07.176 A:middle
+So starting with your typical
+
+00:04:07.176 --> 00:04:08.956 A:middle
+AVFoundation setup with your
+
+00:04:08.956 --> 00:04:11.296 A:middle
+AVCaptureInput, device, as well
+
+00:04:11.296 --> 00:04:12.126 A:middle
+as capture session.
+
+00:04:12.706 --> 00:04:14.386 A:middle
+The first thing you want to do
+
+00:04:14.386 --> 00:04:15.436 A:middle
+is make sure that your
+
+00:04:15.436 --> 00:04:16.495 A:middle
+environment supports the
+
+00:04:16.495 --> 00:04:17.736 A:middle
+delivery of the portrait effects
+
+00:04:17.736 --> 00:04:17.986 A:middle
+matte.
+
+00:04:18.206 --> 00:04:20.286 A:middle
+To do this you'll be checking
+
+00:04:20.286 --> 00:04:21.636 A:middle
+for is that data delivery
+
+00:04:21.636 --> 00:04:23.036 A:middle
+supported, as well as is
+
+00:04:23.036 --> 00:04:24.176 A:middle
+portrait effects matte delivery
+
+00:04:24.176 --> 00:04:24.596 A:middle
+supported.
+
+00:04:25.136 --> 00:04:26.406 A:middle
+The reason we have the two there
+
+00:04:26.506 --> 00:04:27.636 A:middle
+both depth and portrait effects
+
+00:04:27.636 --> 00:04:28.496 A:middle
+matte is that they come
+
+00:04:28.496 --> 00:04:29.046 A:middle
+together.
+
+00:04:29.636 --> 00:04:31.286 A:middle
+You can either opt in to get
+
+00:04:31.286 --> 00:04:32.976 A:middle
+only the depth data, but
+
+00:04:32.976 --> 00:04:34.026 A:middle
+whenever you want the portrait
+
+00:04:34.026 --> 00:04:35.516 A:middle
+effects matte you also need to
+
+00:04:35.516 --> 00:04:36.716 A:middle
+activate the depth data
+
+00:04:36.716 --> 00:04:37.216 A:middle
+delivery.
+
+00:04:38.126 --> 00:04:39.786 A:middle
+And to activate or to opt in for
+
+00:04:39.786 --> 00:04:41.606 A:middle
+that delivery make sure to
+
+00:04:41.606 --> 00:04:42.336 A:middle
+modify your
+
+00:04:42.336 --> 00:04:44.146 A:middle
+AVCapturePhotoSettings and set
+
+00:04:44.146 --> 00:04:45.336 A:middle
+the isPortraitEffects
+
+00:04:45.336 --> 00:04:46.906 A:middle
+MatteDelivery enabled, as well
+
+00:04:46.906 --> 00:04:48.806 A:middle
+as isDepthDataDeliveryEnabled to
+
+00:04:49.756 --> 00:04:49.846 A:middle
+true.
+
+00:04:50.806 --> 00:04:52.266 A:middle
+Then the capture time your
+
+00:04:52.706 --> 00:04:53.776 A:middle
+ddiFinishProcessingPhoto
+
+00:04:53.776 --> 00:04:55.086 A:middle
+callback will give you the
+
+00:04:55.086 --> 00:04:57.346 A:middle
+portrait effects matte.
+
+00:04:57.346 --> 00:04:59.316 A:middle
+It's really that simple.
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:59.946 --> 00:42:01.466 A:middle
+this would not fly on a device
+
+00:42:01.466 --> 00:42:02.006 A:middle
+at all.
+
+00:42:02.336 --> 00:42:03.186 A:middle
+So when you're running in the
+
+00:42:03.186 --> 00:42:04.586 A:middle
+simulator, you have to remember
+
+00:42:04.586 --> 00:42:06.036 A:middle
+that it's useful for debugging
+
+00:42:06.036 --> 00:42:07.226 A:middle
+and testing changes, but you
+
+00:42:07.226 --> 00:42:08.706 A:middle
+need to validate all that stuff
+
+00:42:08.706 --> 00:42:09.796 A:middle
+on devices as well.
+
+00:42:09.796 --> 00:42:11.206 A:middle
+But the other thing that's nice
+
+00:42:11.206 --> 00:42:13.116 A:middle
+is the simulator is never going
+
+00:42:13.116 --> 00:42:13.976 A:middle
+to run out of memory.
+
+00:42:14.276 --> 00:42:15.616 A:middle
+So if I have a case where my app
+
+00:42:15.616 --> 00:42:16.736 A:middle
+is getting shut down on a
+
+00:42:16.736 --> 00:42:18.116 A:middle
+device, maybe try it in the
+
+00:42:18.116 --> 00:42:18.876 A:middle
+simulator.
+
+00:42:19.106 --> 00:42:20.296 A:middle
+I could see what's, you know, I
+
+00:42:20.296 --> 00:42:21.836 A:middle
+can wait for a really big
+
+00:42:21.836 --> 00:42:23.476 A:middle
+allocation, not get shut down,
+
+00:42:23.476 --> 00:42:24.616 A:middle
+and then investigate it from
+
+00:42:24.616 --> 00:42:24.946 A:middle
+there.
+
+00:42:25.666 --> 00:42:26.716 A:middle
+And one thing I would like to
+
+00:42:26.716 --> 00:42:28.786 A:middle
+point out is actually we do show
+
+00:42:28.786 --> 00:42:30.526 A:middle
+you the high-water mark over
+
+00:42:31.046 --> 00:42:31.336 A:middle
+here.
+
+00:42:31.336 --> 00:42:33.786 A:middle
+And in this case, I'm up to 7.7
+
+00:42:33.786 --> 00:42:34.406 A:middle
+gigabytes.
+
+00:42:35.226 --> 00:42:35.816 A:middle
+It's terrible.
+
+00:42:36.636 --> 00:42:38.616 A:middle
+So let's see what we can do
+
+00:42:38.616 --> 00:42:39.126 A:middle
+about that.
+
+00:42:39.226 --> 00:42:42.286 A:middle
+I'm going to go back to my apply
+
+00:42:43.176 --> 00:42:43.706 A:middle
+function.
+
+00:42:44.326 --> 00:42:46.386 A:middle
+And now, you know, I do want to
+
+00:42:46.386 --> 00:42:47.026 A:middle
+come back to this
+
+00:42:47.026 --> 00:42:48.396 A:middle
+beginImageContext WithOptions
+
+00:42:48.396 --> 00:42:50.086 A:middle
+thing, but thinking back to what
+
+00:42:50.086 --> 00:42:52.046 A:middle
+Kyle said, when you're dealing
+
+00:42:52.046 --> 00:42:54.296 A:middle
+with images, what's the most
+
+00:42:54.296 --> 00:42:55.466 A:middle
+important thing in terms of
+
+00:42:55.466 --> 00:42:56.236 A:middle
+memory use?
+
+00:42:56.696 --> 00:42:58.986 A:middle
+It's the image size, so let's
+
+00:42:58.986 --> 00:43:00.236 A:middle
+take a look at what that looks
+

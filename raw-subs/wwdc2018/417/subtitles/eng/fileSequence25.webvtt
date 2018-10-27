@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.456 --> 00:25:00.846 A:middle
+casting to convert back and
+
+00:25:00.846 --> 00:25:01.266 A:middle
+forth to
+
+00:25:01.266 --> 00:25:03.776 A:middle
+CLLocationManagerDelegate, and
+
+00:25:03.776 --> 00:25:04.826 A:middle
+I'll explain why I'm using force
+
+00:25:04.826 --> 00:25:08.146 A:middle
+casting here in just a second.
+
+00:25:08.266 --> 00:25:09.996 A:middle
+Then in my class' initializer, I
+
+00:25:09.996 --> 00:25:10.936 A:middle
+need to replace the delegate
+
+00:25:10.936 --> 00:25:11.596 A:middle
+property with
+
+00:25:11.596 --> 00:25:12.666 A:middle
+locationFetcherDelegate.
+
+00:25:13.156 --> 00:25:16.466 A:middle
+And the last step is to change
+
+00:25:16.466 --> 00:25:18.176 A:middle
+the original extension to
+
+00:25:18.176 --> 00:25:19.626 A:middle
+conform to the new mock delegate
+
+00:25:19.626 --> 00:25:21.556 A:middle
+protocol, and that part's easy--
+
+00:25:21.766 --> 00:25:23.156 A:middle
+all I need to do is replace the
+
+00:25:23.156 --> 00:25:24.976 A:middle
+protocol and the method
+
+00:25:24.976 --> 00:25:25.396 A:middle
+signature.
+
+00:25:26.576 --> 00:25:28.206 A:middle
+But I actually still need to
+
+00:25:28.206 --> 00:25:29.236 A:middle
+conform to the old
+
+00:25:29.376 --> 00:25:30.856 A:middle
+CLLocationManagerDelegate
+
+00:25:30.856 --> 00:25:33.086 A:middle
+protocol too, and that's because
+
+00:25:33.176 --> 00:25:34.656 A:middle
+the real CLLocationManager
+
+00:25:34.656 --> 00:25:35.996 A:middle
+doesn't know about my mock
+
+00:25:35.996 --> 00:25:36.716 A:middle
+delegate protocol.
+
+00:25:38.266 --> 00:25:39.796 A:middle
+So, the trick here is to add
+
+00:25:39.796 --> 00:25:41.106 A:middle
+back the extension which
+
+00:25:41.106 --> 00:25:42.376 A:middle
+conforms to the real delegate
+
+00:25:42.376 --> 00:25:43.926 A:middle
+protocol but have it call the
+
+00:25:43.926 --> 00:25:45.276 A:middle
+equivalent locationFetcher
+
+00:25:45.276 --> 00:25:46.326 A:middle
+delegate method above.
+
+00:25:47.716 --> 00:25:49.296 A:middle
+And earlier, I mentioned that I
+
+00:25:49.296 --> 00:25:50.516 A:middle
+used force casting in the
+
+00:25:50.516 --> 00:25:52.016 A:middle
+delegate getter and setter, and
+
+00:25:52.466 --> 00:25:53.756 A:middle
+that's to ensure that my class
+
+00:25:53.756 --> 00:25:54.846 A:middle
+conforms to both of these
+
+00:25:54.846 --> 00:25:56.166 A:middle
+protocols and that I haven't
+
+00:25:56.166 --> 00:26:01.336 A:middle
+forgotten one or the other.
+

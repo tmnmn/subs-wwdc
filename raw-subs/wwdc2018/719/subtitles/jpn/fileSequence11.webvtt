@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:57.291 --> 00:11:00.027 align:start position:30% line:-1
+コードを見てみましょう
+
+00:11:00.627 --> 00:11:03.630 align:start position:27% line:-2
+２ｘ２のピクセルグループを
+書き込み
+
+00:11:03.730 --> 00:11:07.434 align:start position:27% line:-2
+４ｘ４のピクセルグループを
+読み込みます
+
+00:11:08.035 --> 00:11:12.840 align:start position:25% line:-2
+グループデスティネーションと
+明記します
+
+00:11:12.940 --> 00:11:17.711 align:start position:9% line:-2
+“group::destination h”と
+ありますね
+
+00:11:18.345 --> 00:11:22.816 align:start position:27% line:-2
+そしてデスティネーションの
+座標を得ます
+
+00:11:22.916 --> 00:11:29.823 align:start position:21% line:-2
+実際には２ｘ２の
+ピクセルグループの座標を示します
+
+00:11:30.624 --> 00:11:37.431 align:start position:27% line:-2
+ピクセルを埋めるために
+画像から多くを読み込みます
+
+00:11:37.898 --> 00:11:43.003 align:start position:25% line:-2
+最初の読み込みは
+２ｘ２のピクセルグループから
+
+00:11:43.103 --> 00:11:46.707 align:start position:25% line:-2
+ここでは
+16ピクセルの左下端からです
+
+00:11:47.007 --> 00:11:53.947 align:start position:27% line:-2
+これは赤のチャネルの値を
+half4の配列で戻します
+
+00:11:54.715 --> 00:12:00.087 align:start position:30% line:-2
+４つのパラメータが
+x y z wの順番で
+

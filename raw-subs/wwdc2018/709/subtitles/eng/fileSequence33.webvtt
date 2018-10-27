@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.266 --> 00:33:00.706 A:middle
+implementation of whatever
+
+00:33:00.706 --> 00:33:01.876 A:middle
+mathematical function the layer
+
+00:33:01.876 --> 00:33:03.396 A:middle
+is supposed to perform will go
+
+00:33:03.596 --> 00:33:04.376 A:middle
+here, in here.
+
+00:33:04.806 --> 00:33:05.976 A:middle
+And then there's one more
+
+00:33:05.976 --> 00:33:07.266 A:middle
+function called output shape or
+
+00:33:07.266 --> 00:33:07.946 A:middle
+input shapes.
+
+00:33:08.136 --> 00:33:10.036 A:middle
+This just specifies the size of
+
+00:33:10.036 --> 00:33:11.496 A:middle
+the output area that the layer
+
+00:33:11.496 --> 00:33:12.106 A:middle
+produces.
+
+00:33:12.556 --> 00:33:14.906 A:middle
+This helps Core ML in allocating
+
+00:33:14.906 --> 00:33:17.116 A:middle
+the buffer size at load time so
+
+00:33:17.116 --> 00:33:18.726 A:middle
+that your app is more efficient
+
+00:33:19.076 --> 00:33:19.646 A:middle
+at runtime.
+
+00:33:21.966 --> 00:33:24.256 A:middle
+So we just saw how you would
+
+00:33:24.326 --> 00:33:26.136 A:middle
+tackle a new layer in a neural
+
+00:33:26.136 --> 00:33:26.516 A:middle
+network.
+
+00:33:26.826 --> 00:33:29.446 A:middle
+There's a very similar concept
+
+00:33:29.506 --> 00:33:30.556 A:middle
+to a custom layer, and it's
+
+00:33:30.556 --> 00:33:32.336 A:middle
+called custom model.
+
+00:33:32.336 --> 00:33:35.426 A:middle
+It has the same idea, but it's
+
+00:33:35.426 --> 00:33:36.766 A:middle
+sort of more generic.
+
+00:33:37.226 --> 00:33:39.966 A:middle
+So with a custom model, you can
+
+00:33:39.966 --> 00:33:41.546 A:middle
+deal with any sort of network.
+
+00:33:41.806 --> 00:33:43.696 A:middle
+It need not be a neural -- it
+
+00:33:43.726 --> 00:33:44.856 A:middle
+need not be a neural network.
+
+00:33:45.306 --> 00:33:46.876 A:middle
+And basically gives you just
+
+00:33:46.876 --> 00:33:48.646 A:middle
+more flexibility overall.
+
+00:33:50.156 --> 00:33:51.796 A:middle
+So let me summarize the session.
+
+00:33:52.356 --> 00:33:57.026 A:middle
+We saw how much more rich is
+
+00:33:57.076 --> 00:33:58.656 A:middle
+this ecosystem around Core ML
+
+00:33:58.656 --> 00:34:00.116 A:middle
+Tools and that's great for you
+

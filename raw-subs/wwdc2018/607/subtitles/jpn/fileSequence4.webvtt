@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:55.802 --> 00:04:01.708 align:start position:29% line:-2
+MetalによるGPUの
+自動並列化を紹介します
+
+00:04:02.976 --> 00:04:06.113 align:start position:32% line:-2
+ゲームの描画の流れを
+見てみましょう
+
+00:04:06.713 --> 00:04:09.283 align:start position:30% line:-2
+シングルスレッドによる
+レンダリングでは
+
+00:04:09.750 --> 00:04:15.789 align:start position:25% line:-2
+１つのコマンドバッファに
+GPUへの実行命令を入れます
+
+00:04:16.356 --> 00:04:20.560 align:start position:29% line:-2
+通常は それをフレームの
+一部に収めます
+
+00:04:21.128 --> 00:04:26.800 align:start position:27% line:-2
+GPUがバッファを使うには
+符号化する必要があるため
+
+00:04:26.900 --> 00:04:29.169 align:start position:30% line:-1
+遅延時間が長くなります
+
+00:04:29.369 --> 00:04:31.572 align:start position:32% line:-1
+改善の余地があります
+
+00:04:31.672 --> 00:04:36.877 align:start position:27% line:-2
+そこで提案するのが
+CPUを用いた並列処理です
+
+00:04:39.980 --> 00:04:44.484 align:start position:30% line:-2
+Metalの基本要素は
+描画とパス計算です
+
+00:04:44.952 --> 00:04:48.188 align:start position:29% line:-2
+複数のコマンドバッファを
+用意して
+
+00:04:48.388 --> 00:04:52.159 align:start position:34% line:-2
+別々のスレッドで
+符号化するだけです
+
+00:04:53.961 --> 00:04:56.063 align:start position:32% line:-1
+処理の順序は自由です
+
+00:04:56.163 --> 00:05:00.501 align:start position:32% line:-2
+最後に追加した命令は
+最後に実行されます
+

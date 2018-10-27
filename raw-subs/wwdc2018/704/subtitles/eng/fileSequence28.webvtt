@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.756 --> 00:28:02.416 A:middle
+Finally, if you're using Receipt
+
+00:28:02.416 --> 00:28:05.006 A:middle
+Verification you should always
+
+00:28:05.006 --> 00:28:06.496 A:middle
+make sure to do this before
+
+00:28:06.496 --> 00:28:07.586 A:middle
+calling Finish Transaction as
+
+00:28:07.586 --> 00:28:07.816 A:middle
+well.
+
+00:28:08.806 --> 00:28:09.996 A:middle
+This is especially important for
+
+00:28:09.996 --> 00:28:11.306 A:middle
+consumable in-app purchases
+
+00:28:11.306 --> 00:28:12.756 A:middle
+because consumable in-app
+
+00:28:12.756 --> 00:28:14.286 A:middle
+purchases only appear in receipt
+
+00:28:14.556 --> 00:28:15.936 A:middle
+as long as they're unfinished.
+
+00:28:16.736 --> 00:28:17.516 A:middle
+Once you do call Finish
+
+00:28:17.516 --> 00:28:18.856 A:middle
+Transaction they will no longer
+
+00:28:18.946 --> 00:28:19.986 A:middle
+appear in their seats and you
+
+00:28:19.986 --> 00:28:21.016 A:middle
+won't be able to validate them.
+
+00:28:21.316 --> 00:28:22.686 A:middle
+So if you're using Receipt
+
+00:28:22.686 --> 00:28:24.416 A:middle
+Verification make sure that it's
+
+00:28:24.416 --> 00:28:26.046 A:middle
+a real Apple signed transaction
+
+00:28:26.046 --> 00:28:27.976 A:middle
+the user paid for, always do
+
+00:28:27.976 --> 00:28:29.016 A:middle
+this before calling Finish
+
+00:28:29.016 --> 00:28:29.556 A:middle
+Transaction.
+
+00:28:29.686 --> 00:28:32.916 A:middle
+I'd like to hand it back to Dana
+
+00:28:32.916 --> 00:28:34.036 A:middle
+to discuss some tips for
+
+00:28:34.036 --> 00:28:34.696 A:middle
+managing the receipt.
+
+00:28:36.516 --> 00:28:39.546 A:middle
+[ Applause ]
+
+00:28:40.046 --> 00:28:41.306 A:middle
+&gt;&gt; Thanks again Ross.
+
+00:28:43.496 --> 00:28:44.836 A:middle
+So what is the receipt?
+
+00:28:46.006 --> 00:28:46.846 A:middle
+It's a lot like its name
+
+00:28:46.846 --> 00:28:49.016 A:middle
+implies, it is a record of your
+
+00:28:49.016 --> 00:28:50.336 A:middle
+app in in-app purchases.
+
+00:28:50.336 --> 00:28:51.476 A:middle
+It's a lot like the piece of
+
+00:28:51.476 --> 00:28:53.216 A:middle
+paper you get when you buy some
+
+00:28:53.216 --> 00:28:54.006 A:middle
+retail good.
+
+00:28:54.556 --> 00:28:57.716 A:middle
+It's stored on the device, it's
+
+00:28:57.716 --> 00:28:59.096 A:middle
+a file, it's a file that we
+
+00:28:59.096 --> 00:29:00.676 A:middle
+actually get from the App Store.
+

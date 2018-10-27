@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.976 --> 00:29:01.506 A:middle
+这个功能已经在 iOS 上
+
+00:29:01.506 --> 00:29:02.806 A:middle
+使用一段时间了
+
+00:29:02.806 --> 00:29:04.846 A:middle
+这次 macOS Mojave 我们将把这个功能
+
+00:29:04.846 --> 00:29:05.316 A:middle
+带给 Mac
+
+00:29:07.646 --> 00:29:09.546 A:middle
+这个功能也能使用户更好地
+
+00:29:09.546 --> 00:29:10.676 A:middle
+控制通知
+
+00:29:11.226 --> 00:29:12.126 A:middle
+而且这还意味着
+
+00:29:12.126 --> 00:29:13.246 A:middle
+你的 App 也可以像在 iOS 上一样
+
+00:29:13.296 --> 00:29:14.986 A:middle
+与这些通知协同工作
+
+00:29:15.676 --> 00:29:17.576 A:middle
+它们将会使用 userNotificationCenter 的
+
+00:29:17.576 --> 00:29:18.666 A:middle
+NSApplication 方法
+
+00:29:18.886 --> 00:29:20.486 A:middle
+registerForRemoteNotifications
+
+00:29:21.176 --> 00:29:25.536 A:middle
+以及 requestAuthorization 方法
+
+00:29:27.306 --> 00:29:28.676 A:middle
+作为工作的一部分
+
+00:29:28.676 --> 00:29:30.406 A:middle
+我们也会弃用一些已经存在的
+
+00:29:30.806 --> 00:29:32.786 A:middle
+用户通知相关的 API
+
+00:29:32.826 --> 00:29:34.956 A:middle
+尤其是在 NSApplication
+
+00:29:35.316 --> 00:29:36.126 A:middle
+我们将弃用
+
+00:29:36.126 --> 00:29:37.296 A:middle
+remoteNotificationType
+
+00:29:37.386 --> 00:29:39.416 A:middle
+OptionSet 和
+
+00:29:39.656 --> 00:29:41.776 A:middle
+registerForRemoteNotifications 方法 以及
+
+00:29:41.776 --> 00:29:44.576 A:middle
+enabledRemoteNotificationTypes 性能
+
+00:29:45.326 --> 00:29:46.686 A:middle
+我们也会弃用所有的
+
+00:29:46.686 --> 00:29:47.846 A:middle
+NSUserNotification
+
+00:29:49.256 --> 00:29:50.716 A:middle
+那么既然你要使用 SDK 重新建立
+
+00:29:50.876 --> 00:29:54.256 A:middle
+你最好升级用户通知框架
+
+00:29:56.586 --> 00:29:59.356 A:middle
+接下来 我想讲一讲 NSToolbar
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.556 --> 00:40:00.816 A:middle
+I tell the configuration how
+
+00:40:00.816 --> 00:40:02.426 A:middle
+many images I'd like to track.
+
+00:40:03.016 --> 00:40:04.236 A:middle
+In this case, I specified this
+
+00:40:04.276 --> 00:40:04.816 A:middle
+to be 2.
+
+00:40:05.576 --> 00:40:08.126 A:middle
+In my use case, I imagined only
+
+00:40:08.126 --> 00:40:10.676 A:middle
+2 images will interact but not 3
+
+00:40:10.676 --> 00:40:11.496 A:middle
+at the same time.
+
+00:40:12.526 --> 00:40:14.116 A:middle
+Note that if I'm tracking 2
+
+00:40:14.226 --> 00:40:16.076 A:middle
+images and a third comes into
+
+00:40:16.246 --> 00:40:19.076 A:middle
+its view, it won't be tracked,
+
+00:40:19.076 --> 00:40:20.856 A:middle
+but it will still get a
+
+00:40:20.856 --> 00:40:21.666 A:middle
+detection update.
+
+00:40:23.096 --> 00:40:24.266 A:middle
+And then I use this
+
+00:40:24.266 --> 00:40:26.016 A:middle
+configuration to run my session.
+
+00:40:26.596 --> 00:40:28.926 A:middle
+And as I mentioned earlier, you
+
+00:40:29.146 --> 00:40:30.906 A:middle
+can also do this using world
+
+00:40:30.906 --> 00:40:32.796 A:middle
+tracking by simply switching out
+
+00:40:33.136 --> 00:40:33.786 A:middle
+these two lines.
+
+00:40:34.596 --> 00:40:36.216 A:middle
+The only difference between
+
+00:40:36.216 --> 00:40:38.266 A:middle
+image detection and tracking is
+
+00:40:38.266 --> 00:40:39.466 A:middle
+the maximum number of tracking
+
+00:40:39.466 --> 00:40:39.946 A:middle
+images.
+
+00:40:40.786 --> 00:40:44.616 A:middle
+So if you have an app that uses
+
+00:40:44.616 --> 00:40:46.066 A:middle
+image detection, you could
+
+00:40:46.066 --> 00:40:47.856 A:middle
+simply add this, recompile, and
+
+00:40:47.856 --> 00:40:49.686 A:middle
+your app may use tracking.
+
+00:40:51.026 --> 00:40:52.866 A:middle
+So in order to show you how easy
+
+00:40:52.866 --> 00:40:54.376 A:middle
+this really is, let's do a demo
+
+00:40:54.486 --> 00:40:55.046 A:middle
+in Xcode.
+
+00:40:56.676 --> 00:41:02.236 A:middle
+[ Applause ]
+

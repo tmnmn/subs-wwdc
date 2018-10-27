@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.686 --> 00:31:01.176 A:middle
+simplified overview of the
+
+00:31:01.176 --> 00:31:02.126 A:middle
+development process.
+
+00:31:03.486 --> 00:31:05.236 A:middle
+Over on the left, a developer
+
+00:31:05.236 --> 00:31:07.036 A:middle
+iterates on an application local
+
+00:31:07.036 --> 00:31:08.556 A:middle
+to their system building
+
+00:31:08.556 --> 00:31:10.806 A:middle
+features, debugging, and signing
+
+00:31:10.806 --> 00:31:11.666 A:middle
+with their Mac Developer
+
+00:31:11.666 --> 00:31:12.126 A:middle
+certificate.
+
+00:31:13.226 --> 00:31:14.446 A:middle
+When the application is ready
+
+00:31:14.446 --> 00:31:17.016 A:middle
+for release, it's signed with
+
+00:31:17.016 --> 00:31:18.246 A:middle
+the Developer ID certificate,
+
+00:31:18.246 --> 00:31:19.836 A:middle
+and a final test task can be
+
+00:31:19.836 --> 00:31:20.256 A:middle
+performed.
+
+00:31:21.396 --> 00:31:23.196 A:middle
+After that, the content can be
+
+00:31:23.196 --> 00:31:24.656 A:middle
+distributed directly to users --
+
+00:31:24.896 --> 00:31:26.336 A:middle
+who can run it -- or Gatekeeper
+
+00:31:26.336 --> 00:31:27.356 A:middle
+can verify that it wasn't
+
+00:31:27.356 --> 00:31:29.066 A:middle
+tampered with; and the user gets
+
+00:31:29.066 --> 00:31:29.896 A:middle
+to run your application.
+
+00:31:30.846 --> 00:31:32.136 A:middle
+For this app to be notarized,
+
+00:31:32.386 --> 00:31:33.696 A:middle
+only one additional step is
+
+00:31:33.696 --> 00:31:34.146 A:middle
+required.
+
+00:31:35.616 --> 00:31:37.036 A:middle
+You continue to develop locally,
+
+00:31:37.306 --> 00:31:38.116 A:middle
+just like before.
+
+00:31:39.166 --> 00:31:40.156 A:middle
+And once you sign it with your
+
+00:31:40.156 --> 00:31:42.666 A:middle
+Develop ID certificate, a copy
+
+00:31:42.666 --> 00:31:43.696 A:middle
+can be uploaded to the Apple
+
+00:31:43.696 --> 00:31:44.486 A:middle
+notary service.
+
+00:31:45.256 --> 00:31:46.416 A:middle
+Assuming that the Developer ID
+
+00:31:46.416 --> 00:31:47.736 A:middle
+content doesn't contain anything
+
+00:31:47.736 --> 00:31:50.036 A:middle
+malicious, a ticket will be
+
+00:31:50.036 --> 00:31:51.496 A:middle
+issued back that can be attached
+
+00:31:51.786 --> 00:31:53.466 A:middle
+to the content through a process
+
+00:31:53.466 --> 00:31:54.406 A:middle
+we call stapling.
+
+00:31:54.936 --> 00:31:58.786 A:middle
+And then the stapled content can
+
+00:31:58.786 --> 00:32:00.206 A:middle
+be distributed just like before.
+

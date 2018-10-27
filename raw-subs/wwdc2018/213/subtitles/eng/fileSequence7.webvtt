@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.826 --> 00:07:00.196 A:middle
+screen sizes, and so on.
+
+00:07:00.566 --> 00:07:02.426 A:middle
+So, your audio app just needs to
+
+00:07:02.426 --> 00:07:04.036 A:middle
+be able to display information
+
+00:07:04.416 --> 00:07:05.766 A:middle
+onto the CarPlay display and
+
+00:07:05.766 --> 00:07:06.916 A:middle
+provide the best content.
+
+00:07:07.546 --> 00:07:09.076 A:middle
+This is, usually, done by using
+
+00:07:09.076 --> 00:07:10.956 A:middle
+a table view or tabs, depending
+
+00:07:10.956 --> 00:07:12.216 A:middle
+on how you want to present your
+
+00:07:12.216 --> 00:07:12.566 A:middle
+data.
+
+00:07:13.826 --> 00:07:14.676 A:middle
+You'll need to focus on
+
+00:07:14.676 --> 00:07:15.546 A:middle
+delivering the appropriate
+
+00:07:15.546 --> 00:07:16.916 A:middle
+content to a CarPlay user.
+
+00:07:17.226 --> 00:07:18.636 A:middle
+And if you're already developing
+
+00:07:18.636 --> 00:07:20.516 A:middle
+an audio app, it uses existing
+
+00:07:20.516 --> 00:07:21.906 A:middle
+APIs you may be already familiar
+
+00:07:21.906 --> 00:07:22.136 A:middle
+with.
+
+00:07:22.836 --> 00:07:24.916 A:middle
+So, let's take a look at this in
+
+00:07:26.036 --> 00:07:26.226 A:middle
+detail.
+
+00:07:26.356 --> 00:07:27.726 A:middle
+So, these are the three APIs
+
+00:07:27.726 --> 00:07:28.966 A:middle
+that you'll need to know to
+
+00:07:28.966 --> 00:07:30.606 A:middle
+launch your app in CarPlay.
+
+00:07:31.576 --> 00:07:32.626 A:middle
+If you want to learn more about
+
+00:07:32.626 --> 00:07:34.366 A:middle
+this in detail, we had a session
+
+00:07:34.366 --> 00:07:35.476 A:middle
+last year that goes through the
+
+00:07:35.476 --> 00:07:36.956 A:middle
+details of each single API.
+
+00:07:36.956 --> 00:07:38.146 A:middle
+But I'll go through a brief
+
+00:07:38.146 --> 00:07:39.346 A:middle
+summary of every single one of
+
+00:07:39.346 --> 00:07:39.636 A:middle
+these.
+
+00:07:40.736 --> 00:07:42.036 A:middle
+To browse your content on the
+
+00:07:42.036 --> 00:07:43.496 A:middle
+CarPlay display, you'll need to
+
+00:07:43.496 --> 00:07:44.936 A:middle
+use MPPlayableContent.
+
+00:07:45.456 --> 00:07:47.366 A:middle
+MPPlayableContent has a data
+
+00:07:47.366 --> 00:07:48.946 A:middle
+source and a delegate, so that
+
+00:07:48.946 --> 00:07:50.226 A:middle
+you or your audio app can
+
+00:07:50.226 --> 00:07:51.826 A:middle
+populate your app's information
+
+00:07:51.826 --> 00:07:53.056 A:middle
+onto the CarPlay display.
+
+00:07:53.486 --> 00:07:55.086 A:middle
+As well as a delegate to receive
+
+00:07:55.086 --> 00:07:56.426 A:middle
+callbacks whenever the user
+
+00:07:56.426 --> 00:07:57.586 A:middle
+selects something on the CarPlay
+
+00:07:57.586 --> 00:07:58.046 A:middle
+display.
+
+00:07:59.436 --> 00:08:00.996 A:middle
+Now, if you already set Now
+

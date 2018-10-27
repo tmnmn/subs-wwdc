@@ -1,0 +1,141 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.826 --> 00:20:01.956 A:middle
+handle your shortcut, except on
+
+00:20:01.956 --> 00:20:03.316 A:middle
+iOS, we'll execute it back on
+
+00:20:03.316 --> 00:20:04.366 A:middle
+the phone, even if your phone
+
+00:20:04.366 --> 00:20:05.786 A:middle
+isn't near the user.
+
+00:20:06.916 --> 00:20:08.556 A:middle
+Now, because we can be executing
+
+00:20:08.556 --> 00:20:09.846 A:middle
+content back on the phone, we
+
+00:20:09.846 --> 00:20:10.766 A:middle
+want to make sure that users
+
+00:20:10.766 --> 00:20:12.116 A:middle
+don't tap on a platter, and then
+
+00:20:12.116 --> 00:20:13.266 A:middle
+are immediately told to go find
+
+00:20:13.266 --> 00:20:13.676 A:middle
+their phone.
+
+00:20:13.676 --> 00:20:15.286 A:middle
+So, we have a couple of rules
+
+00:20:15.286 --> 00:20:16.536 A:middle
+about the type of shortcuts that
+
+00:20:16.536 --> 00:20:17.536 A:middle
+will execute back on the phone
+
+00:20:17.536 --> 00:20:18.516 A:middle
+that we're willing to surface.
+
+00:20:19.276 --> 00:20:21.126 A:middle
+Requirements are that they're
+
+00:20:21.126 --> 00:20:21.756 A:middle
+intent-based.
+
+00:20:22.386 --> 00:20:23.166 A:middle
+They handle background
+
+00:20:23.166 --> 00:20:23.796 A:middle
+execution.
+
+00:20:24.236 --> 00:20:25.316 A:middle
+And, they don't require access
+
+00:20:25.316 --> 00:20:26.076 A:middle
+to protected data.
+
+00:20:26.246 --> 00:20:27.266 A:middle
+And, that's the data that you
+
+00:20:27.266 --> 00:20:28.826 A:middle
+keep encrypted when the phone is
+
+00:20:28.826 --> 00:20:29.116 A:middle
+locked.
+
+00:20:30.446 --> 00:20:31.496 A:middle
+The way you can ensure that your
+
+00:20:31.496 --> 00:20:33.316 A:middle
+content meets these requirements
+
+00:20:33.316 --> 00:20:34.256 A:middle
+is by taking a look at the
+
+00:20:34.256 --> 00:20:35.276 A:middle
+parameter combination in your
+
+00:20:35.276 --> 00:20:36.916 A:middle
+custom intent, and ensuring that
+
+00:20:37.186 --> 00:20:38.126 A:middle
+background execution is
+
+00:20:38.126 --> 00:20:38.576 A:middle
+supported.
+
+00:20:39.056 --> 00:20:40.796 A:middle
+And, looking at your overall
+
+00:20:40.876 --> 00:20:42.246 A:middle
+custom intent and seeing if you
+
+00:20:42.246 --> 00:20:43.576 A:middle
+have any authentication
+
+00:20:43.576 --> 00:20:44.466 A:middle
+restrictions you've applied.
+
+00:20:45.406 --> 00:20:46.306 A:middle
+There are three options here,
+
+00:20:46.306 --> 00:20:47.336 A:middle
+and we support the first two.
+
+00:20:47.786 --> 00:20:48.636 A:middle
+The first one is that there are
+
+00:20:48.636 --> 00:20:49.316 A:middle
+no restrictions.
+
+00:20:49.936 --> 00:20:51.626 A:middle
+The second one says that you are
+
+00:20:51.626 --> 00:20:52.786 A:middle
+restricted while the device is
+
+00:20:52.786 --> 00:20:53.926 A:middle
+locked, which means that at
+
+00:20:53.926 --> 00:20:54.886 A:middle
+least the watch has to be
+
+00:20:54.886 --> 00:20:55.956 A:middle
+unlocked for us to execute.
+
+00:20:56.306 --> 00:20:58.276 A:middle
+And the final one is Restricted
+
+00:20:58.276 --> 00:20:59.826 A:middle
+While Locked, or Protected Data
+
+00:20:59.826 --> 00:21:00.486 A:middle
+is Unavailable.
+

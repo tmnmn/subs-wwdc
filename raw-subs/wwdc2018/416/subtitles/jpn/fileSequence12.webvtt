@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.252 --> 00:12:01.321 align:start position:32% line:-2
+ダーティやスワップは
+とても重要です
+
+00:12:01.922 --> 00:12:07.427 align:start position:21% line:-2
+ただスワップサイズは
+圧縮される前のサイズだということ
+
+00:12:07.528 --> 00:12:09.263 align:start position:30% line:-1
+圧縮サイズとは違います
+
+00:12:10.197 --> 00:12:13.400 align:start position:29% line:-1
+より詳細な情報を望む場合
+
+00:12:13.500 --> 00:12:17.771 align:start position:14% line:-2
+memgraphに対しvmmapを実行し
+コンテンツを取得してください
+
+00:12:17.871 --> 00:12:21.108 align:start position:23% line:-1
+すると実行可能コードのような―
+
+00:12:21.208 --> 00:12:23.177 align:start position:21% line:-1
+書き込み不可能な領域が判明します
+
+00:12:24.144 --> 00:12:27.147 align:start position:23% line:-2
+これでインスタンスなどの
+書き込み可能な領域も判明します
+
+00:12:27.247 --> 00:12:29.149 align:start position:32% line:-1
+ヒープがある場所です
+
+00:12:30.684 --> 00:12:36.256 align:start position:21% line:-2
+すべてのツールがコマンドライン
+ユーティリティでうまく機能します
+
+00:12:36.456 --> 00:12:39.827 align:start position:27% line:-2
+先日VM Trackerで
+私のAppを分析したところ
+
+00:12:39.927 --> 00:12:42.930 align:start position:21% line:-1
+ダーティメモリが増加していました
+
+00:12:43.063 --> 00:12:44.331 align:start position:25% line:-1
+そこでmemgraphを使い
+
+00:12:44.832 --> 00:12:47.100 align:start position:25% line:-1
+ダーティデータの原因となる―
+
+00:12:47.201 --> 00:12:50.704 align:start position:30% line:-2
+フレームワークや
+ライブラリを探しました
+
+00:12:52.206 --> 00:12:55.676 align:start position:27% line:-2
+その時のmemgraphに
+実行したvmmapです
+
+00:12:56.243 --> 00:12:58.712 align:start position:29% line:-1
+ページフラグを使いました
+
+00:12:58.812 --> 00:13:02.850 align:start position:30% line:-2
+バイト数の代わりに
+ページ数で表示されます
+

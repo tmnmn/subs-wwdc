@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.606 --> 00:02:01.716 A:middle
+console-level game in the palm
+
+00:02:01.716 --> 00:02:02.326 A:middle
+of your hand.
+
+00:02:02.976 --> 00:02:04.746 A:middle
+This is a truly amazing feat,
+
+00:02:05.496 --> 00:02:06.956 A:middle
+but this also leaves us with
+
+00:02:06.956 --> 00:02:09.336 A:middle
+even more challenges, like how
+
+00:02:09.336 --> 00:02:11.456 A:middle
+to balance battery life with a
+
+00:02:11.456 --> 00:02:12.326 A:middle
+great frame rate.
+
+00:02:12.896 --> 00:02:14.686 A:middle
+So now, let's look at how Metal
+
+00:02:14.906 --> 00:02:16.316 A:middle
+can help you solve these
+
+00:02:16.316 --> 00:02:17.056 A:middle
+challenges.
+
+00:02:18.656 --> 00:02:21.076 A:middle
+Today, I'm going to show you how
+
+00:02:21.076 --> 00:02:22.996 A:middle
+to harness parallelism on both
+
+00:02:22.996 --> 00:02:25.806 A:middle
+the CPU and the GPU to draw more
+
+00:02:25.806 --> 00:02:26.756 A:middle
+complex scenes.
+
+00:02:29.466 --> 00:02:31.386 A:middle
+We'll also talk about ways to
+
+00:02:31.386 --> 00:02:33.456 A:middle
+maximize performance using more
+
+00:02:33.456 --> 00:02:35.306 A:middle
+explicit control with heaps,
+
+00:02:35.596 --> 00:02:36.946 A:middle
+fences, and events.
+
+00:02:37.386 --> 00:02:41.116 A:middle
+And then, I'm going to show you
+
+00:02:41.116 --> 00:02:43.366 A:middle
+how to build GPU-driven
+
+00:02:43.366 --> 00:02:44.816 A:middle
+pipelines using our latest
+
+00:02:44.816 --> 00:02:46.656 A:middle
+features, argument buffers and
+
+00:02:46.656 --> 00:02:47.896 A:middle
+indirect command buffers.
+
+00:02:48.306 --> 00:02:49.656 A:middle
+Now, while all these API
+
+00:02:49.656 --> 00:02:51.606 A:middle
+improvements are key, it's
+
+00:02:51.606 --> 00:02:53.446 A:middle
+equally important to understand
+
+00:02:53.446 --> 00:02:54.776 A:middle
+the underlying hardware they run
+
+00:02:54.776 --> 00:02:55.026 A:middle
+on.
+
+00:02:55.866 --> 00:02:57.776 A:middle
+So the next section, my
+
+00:02:57.776 --> 00:02:59.226 A:middle
+colleague Michael is going to
+
+00:02:59.226 --> 00:03:01.126 A:middle
+show you how to optimize for the
+

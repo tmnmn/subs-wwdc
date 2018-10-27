@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.560 --> 00:11:02.396 align:start position:34% line:-2
+アプリケーションで
+使ってみましょう
+
+00:11:03.363 --> 00:11:05.632 align:start position:36% line:-1
+３段階に分けます
+
+00:11:05.732 --> 00:11:08.068 align:start position:27% line:-1
+まずプライマリレイを生成し
+
+00:11:08.168 --> 00:11:11.538 align:start position:32% line:-2
+交点を求めて
+シェーディングを計算
+
+00:11:11.905 --> 00:11:17.077 align:start position:32% line:-2
+ラスタ化と同じですが
+次の段階があります
+
+00:11:18.145 --> 00:11:19.880 align:start position:39% line:-1
+次に影を生成
+
+00:11:19.980 --> 00:11:24.852 align:start position:25% line:-2
+MPSがシャドウレイを支援し
+速度が上がります
+
+00:11:26.086 --> 00:11:30.791 align:start position:27% line:-2
+最後にセカンダリレイで
+光の跳ね返りをシミュレート
+
+00:11:31.291 --> 00:11:33.627 align:start position:29% line:-1
+ラスタ化では困難ですが―
+
+00:11:33.727 --> 00:11:37.064 align:start position:32% line:-2
+レイトレーシングでは
+簡単な拡張機能です
+
+00:11:38.599 --> 00:11:40.334 align:start position:25% line:-1
+まず プライマリレイですが―
+
+00:11:41.568 --> 00:11:43.637 align:start position:30% line:-1
+次の５つの処理をします
+
+00:11:44.271 --> 00:11:47.107 align:start position:32% line:-1
+インターセクタを生成
+
+00:11:48.442 --> 00:11:51.612 align:start position:23% line:-1
+頂点バッファから加速構造を作成
+
+00:11:53.380 --> 00:11:57.151 align:start position:30% line:-2
+プライマリレイを生成し
+レイバッファに格納
+
+00:11:58.652 --> 00:12:03.357 align:start position:30% line:-2
+インターセクタで
+レイと物体の交差を判定
+

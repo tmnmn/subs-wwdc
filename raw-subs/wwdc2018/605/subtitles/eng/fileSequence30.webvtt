@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.726 --> 00:30:00.996 A:middle
+We really, if we don't remember
+
+00:30:00.996 --> 00:30:01.866 A:middle
+this, we're just going to end up
+
+00:30:01.866 --> 00:30:02.576 A:middle
+in a bad place.
+
+00:30:03.836 --> 00:30:05.706 A:middle
+So, we took a look at this and
+
+00:30:05.706 --> 00:30:07.116 A:middle
+figured out that there was a way
+
+00:30:07.116 --> 00:30:10.896 A:middle
+that Swift can help us do this.
+
+00:30:11.096 --> 00:30:12.406 A:middle
+So, we used a new feature in
+
+00:30:12.406 --> 00:30:14.956 A:middle
+Swift 4.2, which is case
+
+00:30:14.956 --> 00:30:15.386 A:middle
+iterable.
+
+00:30:16.336 --> 00:30:19.386 A:middle
+We added that protocol
+
+00:30:19.816 --> 00:30:21.606 A:middle
+compliance to our enum type.
+
+00:30:22.536 --> 00:30:24.696 A:middle
+When you do that, Swift adds a
+
+00:30:24.696 --> 00:30:26.596 A:middle
+new static member of the type
+
+00:30:26.886 --> 00:30:28.336 A:middle
+called all cases, containing
+
+00:30:28.336 --> 00:30:29.856 A:middle
+each of the cases in the enum.
+
+00:30:30.676 --> 00:30:32.216 A:middle
+That lets us automatically get a
+
+00:30:32.216 --> 00:30:33.826 A:middle
+count of the number of cases.
+
+00:30:34.976 --> 00:30:36.436 A:middle
+We then added another extension,
+
+00:30:36.816 --> 00:30:37.706 A:middle
+this time on the raw
+
+00:30:37.706 --> 00:30:39.426 A:middle
+representable type which all
+
+00:30:39.426 --> 00:30:41.146 A:middle
+enums with number types like
+
+00:30:41.146 --> 00:30:42.466 A:middle
+that conform to.
+
+00:30:43.106 --> 00:30:44.726 A:middle
+Where it's case iterable and
+
+00:30:44.726 --> 00:30:45.736 A:middle
+where that number is affixed
+
+00:30:45.736 --> 00:30:46.256 A:middle
+with integer.
+
+00:30:47.036 --> 00:30:47.876 A:middle
+And to this, we get to
+
+00:30:47.876 --> 00:30:49.616 A:middle
+automatically take those number
+
+00:30:49.616 --> 00:30:51.176 A:middle
+of cases and figure out how many
+
+00:30:51.176 --> 00:30:53.246 A:middle
+bits it takes to represent all
+
+00:30:53.246 --> 00:30:56.176 A:middle
+those cases on the wire.
+
+00:30:56.376 --> 00:30:58.386 A:middle
+Lastly, we added a generic
+
+00:30:58.386 --> 00:31:00.606 A:middle
+method on the writable BitStream
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.446 --> 00:31:00.526 A:middle
+&gt;&gt; Ah, I like the way you think.
+
+00:31:00.676 --> 00:31:01.426 A:middle
+All right, let's switch back
+
+00:31:01.426 --> 00:31:03.256 A:middle
+over to slides real quick, and
+
+00:31:03.256 --> 00:31:04.426 A:middle
+let's see if we can save our
+
+00:31:04.876 --> 00:31:06.736 A:middle
+totally cool update animation.
+
+00:31:07.846 --> 00:31:08.736 A:middle
+You've seen this before.
+
+00:31:08.876 --> 00:31:09.246 A:middle
+All right.
+
+00:31:09.246 --> 00:31:11.286 A:middle
+So first of all, let's dig into
+
+00:31:11.286 --> 00:31:12.596 A:middle
+this debug exception and see
+
+00:31:12.596 --> 00:31:14.446 A:middle
+what it's trying to tell us.
+
+00:31:14.446 --> 00:31:14.706 A:middle
+All right.
+
+00:31:15.566 --> 00:31:16.436 A:middle
+So it's saying here we're
+
+00:31:16.436 --> 00:31:18.276 A:middle
+attempting to perform a delete
+
+00:31:18.576 --> 00:31:20.716 A:middle
+and a move from the same index
+
+00:31:20.716 --> 00:31:21.766 A:middle
+path, 0-3.
+
+00:31:21.766 --> 00:31:22.756 A:middle
+So if I remember right, that was
+
+00:31:22.756 --> 00:31:23.656 A:middle
+the fourth item.
+
+00:31:23.656 --> 00:31:24.826 A:middle
+We did a reload and a move on
+
+00:31:24.826 --> 00:31:25.046 A:middle
+that.
+
+00:31:25.046 --> 00:31:27.806 A:middle
+We didn't delete it, we deleted
+
+00:31:27.806 --> 00:31:29.386 A:middle
+the third item, 0-2, right.
+
+00:31:30.186 --> 00:31:31.306 A:middle
+&gt;&gt; I don't remember deleting
+
+00:31:31.306 --> 00:31:31.396 A:middle
+them.
+
+00:31:31.396 --> 00:31:32.786 A:middle
+&gt;&gt; So, yeah, what's up with
+
+00:31:32.786 --> 00:31:33.026 A:middle
+that?
+
+00:31:33.026 --> 00:31:34.326 A:middle
+All right, but before we do
+
+00:31:34.326 --> 00:31:36.876 A:middle
+this, let's go back and take a
+
+00:31:36.876 --> 00:31:38.146 A:middle
+peek at the PerformBatchUpdates
+
+00:31:38.146 --> 00:31:39.826 A:middle
+API and talk about some
+
+00:31:40.126 --> 00:31:41.196 A:middle
+high-level principles.
+
+00:31:41.196 --> 00:31:41.456 A:middle
+All right.
+
+00:31:41.456 --> 00:31:43.496 A:middle
+So as Mohammed mentioned earlier
+
+00:31:43.496 --> 00:31:45.356 A:middle
+when he introduced this API, the
+
+00:31:45.356 --> 00:31:47.156 A:middle
+purpose of this API is that we
+
+00:31:47.156 --> 00:31:48.826 A:middle
+can commit multiple updates at
+
+00:31:48.826 --> 00:31:50.486 A:middle
+the same time and have anything
+
+00:31:50.486 --> 00:31:51.786 A:middle
+animate together and get that
+
+00:31:51.786 --> 00:31:53.526 A:middle
+great experience.
+
+00:31:54.296 --> 00:31:55.646 A:middle
+And as he also mentioned, it's
+
+00:31:55.646 --> 00:31:57.556 A:middle
+super important to perform your
+
+00:31:57.606 --> 00:31:59.516 A:middle
+data source updates alongside
+
+00:31:59.516 --> 00:32:00.466 A:middle
+your CollectionView updates
+

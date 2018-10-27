@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:00.496 --> 00:01:02.476 A:middle
+So let's start with the key
+
+00:01:03.136 --> 00:01:03.496 A:middle
+concepts.
+
+00:01:03.496 --> 00:01:04.346 A:middle
+Now to make sure we're on the
+
+00:01:04.385 --> 00:01:05.726 A:middle
+same page, we're going to start
+
+00:01:05.726 --> 00:01:06.496 A:middle
+at the very beginning.
+
+00:01:07.526 --> 00:01:08.616 A:middle
+What is TextKit?
+
+00:01:09.126 --> 00:01:12.016 A:middle
+And your first instinct might be
+
+00:01:12.296 --> 00:01:13.626 A:middle
+to open a shiny new playground
+
+00:01:13.626 --> 00:01:15.276 A:middle
+in Xcode and type import
+
+00:01:15.426 --> 00:01:17.716 A:middle
+TextKit, except if you've ever
+
+00:01:17.716 --> 00:01:19.116 A:middle
+actually tried this, you found
+
+00:01:19.116 --> 00:01:19.796 A:middle
+that it doesn't work.
+
+00:01:20.216 --> 00:01:23.236 A:middle
+And that's because TextKit is a
+
+00:01:23.236 --> 00:01:24.456 A:middle
+little different than other
+
+00:01:24.456 --> 00:01:25.406 A:middle
+frameworks you might have used.
+
+00:01:26.306 --> 00:01:27.116 A:middle
+You don't have to import
+
+00:01:27.116 --> 00:01:28.336 A:middle
+anything special to use it.
+
+00:01:29.376 --> 00:01:30.776 A:middle
+The text controls in UIKit and
+
+00:01:30.776 --> 00:01:32.866 A:middle
+AppKit are built on top of
+
+00:01:32.866 --> 00:01:33.246 A:middle
+TextKit.
+
+00:01:33.806 --> 00:01:34.946 A:middle
+And so if you've ever used a
+
+00:01:34.946 --> 00:01:37.026 A:middle
+label, the text field, or a text
+
+00:01:37.066 --> 00:01:38.426 A:middle
+view, you've actually used
+
+00:01:38.426 --> 00:01:38.846 A:middle
+TextKit.
+
+00:01:39.846 --> 00:01:40.796 A:middle
+And TextKit pulls together
+
+00:01:40.796 --> 00:01:42.386 A:middle
+powerful underlying technologies
+
+00:01:42.596 --> 00:01:44.146 A:middle
+such as Core Text, Core Graphics
+
+00:01:44.296 --> 00:01:46.036 A:middle
+and Foundation to make it simple
+
+00:01:46.036 --> 00:01:47.306 A:middle
+and seamless for your apps to
+
+00:01:47.306 --> 00:01:47.756 A:middle
+show text.
+
+00:01:49.176 --> 00:01:50.396 A:middle
+And every time you use one of
+
+00:01:50.396 --> 00:01:51.806 A:middle
+these built-in controls, you're
+
+00:01:51.806 --> 00:01:53.416 A:middle
+using the power of TextKit to
+
+00:01:53.416 --> 00:01:55.156 A:middle
+show or edit text in a fully,
+
+00:01:55.156 --> 00:01:56.826 A:middle
+internationalized, localizable
+
+00:01:56.826 --> 00:01:58.186 A:middle
+manner without having to
+
+00:01:58.186 --> 00:01:59.426 A:middle
+directly use these underlying
+
+00:01:59.426 --> 00:02:01.086 A:middle
+technologies or understand the
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.846 --> 00:43:01.496 A:middle
+insertion point of algorithm.
+
+00:43:02.096 --> 00:43:03.066 A:middle
+We're going to walk through it.
+
+00:43:03.066 --> 00:43:04.356 A:middle
+Because the core algorithm is
+
+00:43:04.356 --> 00:43:05.056 A:middle
+the same.
+
+00:43:05.406 --> 00:43:07.256 A:middle
+But it's expressed iteratively
+
+00:43:07.256 --> 00:43:09.086 A:middle
+with this while loop rather than
+
+00:43:09.086 --> 00:43:09.816 A:middle
+recursively.
+
+00:43:10.536 --> 00:43:11.626 A:middle
+So the first thing we're going
+
+00:43:11.626 --> 00:43:13.366 A:middle
+to do is take a slice of the
+
+00:43:13.366 --> 00:43:14.546 A:middle
+whole collection.
+
+00:43:15.306 --> 00:43:17.446 A:middle
+This slice variable is going to
+
+00:43:17.446 --> 00:43:18.546 A:middle
+represent the part of the
+
+00:43:18.546 --> 00:43:19.846 A:middle
+collection that we're looking at
+
+00:43:19.996 --> 00:43:21.196 A:middle
+in each iteration.
+
+00:43:21.986 --> 00:43:23.316 A:middle
+And now we see the familiar
+
+00:43:23.316 --> 00:43:24.726 A:middle
+divide-and-conquer pattern.
+
+00:43:25.226 --> 00:43:26.766 A:middle
+Find the middle of the slice.
+
+00:43:27.206 --> 00:43:29.066 A:middle
+And then compare the value to
+
+00:43:29.066 --> 00:43:30.686 A:middle
+insert against the middle
+
+00:43:30.686 --> 00:43:31.836 A:middle
+element in the slice.
+
+00:43:32.616 --> 00:43:34.536 A:middle
+We then narrow the search base
+
+00:43:34.846 --> 00:43:37.046 A:middle
+by slicing the slice before we
+
+00:43:37.046 --> 00:43:37.986 A:middle
+go in loop again.
+
+00:43:39.286 --> 00:43:41.246 A:middle
+However, here we have a problem.
+
+00:43:41.556 --> 00:43:43.416 A:middle
+We're performing an assignment
+
+00:43:43.696 --> 00:43:45.146 A:middle
+to the slice variable.
+
+00:43:45.396 --> 00:43:46.566 A:middle
+Which is of the subsequence
+
+00:43:46.566 --> 00:43:46.876 A:middle
+type.
+
+00:43:47.866 --> 00:43:48.576 A:middle
+On the other hand, the
+
+00:43:48.576 --> 00:43:50.526 A:middle
+right-hand side is a slice of a
+
+00:43:50.526 --> 00:43:51.126 A:middle
+slice.
+
+00:43:51.286 --> 00:43:52.646 A:middle
+And as we talked about before,
+
+00:43:53.006 --> 00:43:54.146 A:middle
+this is a subsequence of the
+
+00:43:54.146 --> 00:43:55.856 A:middle
+subsequence and could be a
+
+00:43:55.856 --> 00:43:57.216 A:middle
+completely different type.
+
+00:43:57.636 --> 00:43:58.556 A:middle
+So we're going to get a compiler
+
+00:43:58.556 --> 00:43:59.956 A:middle
+error telling us that these two
+
+00:43:59.956 --> 00:44:01.496 A:middle
+types are not necessarily the
+

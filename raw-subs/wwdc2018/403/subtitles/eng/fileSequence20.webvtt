@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.536 --> 00:20:01.476 A:middle
+instead of distributing
+
+00:20:01.476 --> 00:20:03.016 A:middle
+individual test methods to the
+
+00:20:03.016 --> 00:20:03.446 A:middle
+runners.
+
+00:20:04.626 --> 00:20:05.716 A:middle
+There are a couple reasons for
+
+00:20:05.716 --> 00:20:06.216 A:middle
+this.
+
+00:20:07.206 --> 00:20:09.126 A:middle
+First, there may be hidden
+
+00:20:09.126 --> 00:20:10.596 A:middle
+dependencies between the tests
+
+00:20:10.716 --> 00:20:12.356 A:middle
+in a class, like Honza talked
+
+00:20:12.356 --> 00:20:12.956 A:middle
+about earlier.
+
+00:20:13.886 --> 00:20:15.446 A:middle
+If Xcode were to take the tests
+
+00:20:15.446 --> 00:20:17.476 A:middle
+in a class and distribute them
+
+00:20:17.476 --> 00:20:19.196 A:middle
+to different runners, it could
+
+00:20:19.196 --> 00:20:20.536 A:middle
+lead to hard to diagnose test
+
+00:20:20.536 --> 00:20:21.166 A:middle
+failures.
+
+00:20:21.606 --> 00:20:25.296 A:middle
+Second, each test class has a
+
+00:20:25.916 --> 00:20:27.606 A:middle
+class level set up and tear down
+
+00:20:27.736 --> 00:20:29.416 A:middle
+method, which may perform
+
+00:20:29.416 --> 00:20:30.516 A:middle
+expensive computation.
+
+00:20:31.516 --> 00:20:32.906 A:middle
+By limiting the tests in a class
+
+00:20:33.336 --> 00:20:35.616 A:middle
+to a single runner, XE tests
+
+00:20:35.646 --> 00:20:37.336 A:middle
+only has to invoke these methods
+
+00:20:37.336 --> 00:20:39.166 A:middle
+once, which can save precious
+
+00:20:39.166 --> 00:20:39.456 A:middle
+time.
+
+00:20:40.086 --> 00:20:43.806 A:middle
+Now I'd like to talk about some
+
+00:20:43.806 --> 00:20:45.756 A:middle
+specifics to parallel testing on
+
+00:20:45.756 --> 00:20:46.496 A:middle
+the simulator.
+
+00:20:48.076 --> 00:20:49.596 A:middle
+When you run tests in parallel
+
+00:20:49.596 --> 00:20:51.856 A:middle
+on the simulator, Xcode starts
+
+00:20:51.856 --> 00:20:53.066 A:middle
+by taking the simulator that
+
+00:20:53.066 --> 00:20:55.236 A:middle
+you've selected and creating
+
+00:20:55.236 --> 00:20:57.086 A:middle
+multiple distinct copies or
+
+00:20:57.086 --> 00:20:57.716 A:middle
+clones of it.
+
+00:20:58.956 --> 00:21:00.666 A:middle
+These clones are identical to
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.596 --> 00:16:00.606 A:middle
+data while at rest.
+
+00:16:01.376 --> 00:16:03.496 A:middle
+I'll talk next about how we did
+
+00:16:03.496 --> 00:16:05.246 A:middle
+the networking for encryption,
+
+00:16:05.546 --> 00:16:06.526 A:middle
+on the networking.
+
+00:16:07.066 --> 00:16:10.496 A:middle
+Now, in addition to setting up
+
+00:16:10.496 --> 00:16:12.616 A:middle
+shared coordinate space for
+
+00:16:12.616 --> 00:16:14.006 A:middle
+SwiftShot, we needed to tell the
+
+00:16:14.006 --> 00:16:15.416 A:middle
+other device where the user has
+
+00:16:15.416 --> 00:16:16.716 A:middle
+chosen to locate the board.
+
+00:16:17.236 --> 00:16:19.266 A:middle
+We use an ARAnchor to do this.
+
+00:16:19.676 --> 00:16:21.666 A:middle
+When you create an ARAnchor, you
+
+00:16:21.666 --> 00:16:23.536 A:middle
+provide a name as well as
+
+00:16:23.536 --> 00:16:24.736 A:middle
+position and rotation
+
+00:16:24.736 --> 00:16:26.386 A:middle
+information as a 4 x 4
+
+00:16:26.386 --> 00:16:26.836 A:middle
+transform.
+
+00:16:27.306 --> 00:16:30.236 A:middle
+ARKit can then include the
+
+00:16:30.236 --> 00:16:32.176 A:middle
+Anchor in the ARWorldMap we
+
+00:16:32.176 --> 00:16:34.386 A:middle
+generate and serialize out, and
+
+00:16:34.386 --> 00:16:35.476 A:middle
+then, so we can transfer that
+
+00:16:35.476 --> 00:16:36.936 A:middle
+board information to the other
+
+00:16:36.936 --> 00:16:37.496 A:middle
+device.
+
+00:16:38.106 --> 00:16:40.906 A:middle
+Now, the system ARAnchor class
+
+00:16:40.906 --> 00:16:42.576 A:middle
+just has the name and the
+
+00:16:42.576 --> 00:16:43.836 A:middle
+orientation we created.
+
+00:16:44.196 --> 00:16:45.656 A:middle
+We can look up the anchor that
+
+00:16:45.656 --> 00:16:46.846 A:middle
+we're interested in by name on
+
+00:16:46.846 --> 00:16:47.406 A:middle
+the other side.
+
+00:16:48.036 --> 00:16:49.286 A:middle
+For our application though, we
+
+00:16:49.286 --> 00:16:50.596 A:middle
+need to include some additional
+
+00:16:50.596 --> 00:16:51.946 A:middle
+information for the other
+
+00:16:51.946 --> 00:16:53.946 A:middle
+device, and that's the size that
+
+00:16:53.996 --> 00:16:55.976 A:middle
+the user chose for that board,
+
+00:16:56.306 --> 00:16:57.456 A:middle
+deciding whether they're playing
+
+00:16:57.456 --> 00:16:59.356 A:middle
+on a, you know, a small table
+
+00:16:59.356 --> 00:17:00.936 A:middle
+top and surface, or they want to
+

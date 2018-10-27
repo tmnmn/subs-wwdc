@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.476 --> 00:14:00.566 A:middle
+collections, WOFF 2 and TrueType
+
+00:14:00.566 --> 00:14:01.046 A:middle
+collections.
+
+00:14:01.656 --> 00:14:03.496 A:middle
+Bundling related fonts together
+
+00:14:03.496 --> 00:14:05.076 A:middle
+inside a single collection file
+
+00:14:05.316 --> 00:14:07.076 A:middle
+can eliminate duplicated tables
+
+00:14:07.076 --> 00:14:08.796 A:middle
+for character maps.
+
+00:14:08.796 --> 00:14:10.746 A:middle
+For example, one of our built-in
+
+00:14:10.746 --> 00:14:13.626 A:middle
+fonts, PingFang has an 84%
+
+00:14:13.626 --> 00:14:15.286 A:middle
+reduction of file size from
+
+00:14:15.286 --> 00:14:16.046 A:middle
+using a collection.
+
+00:14:16.846 --> 00:14:17.826 A:middle
+Font collections can
+
+00:14:17.826 --> 00:14:19.736 A:middle
+substantially reduce the size of
+
+00:14:19.736 --> 00:14:21.136 A:middle
+your font files, because the
+
+00:14:21.136 --> 00:14:23.296 A:middle
+fonts share a table for the same
+
+00:14:23.296 --> 00:14:23.956 A:middle
+character set.
+
+00:14:24.536 --> 00:14:27.226 A:middle
+Now, this next feature,
+
+00:14:27.226 --> 00:14:29.776 A:middle
+font-display, requires no change
+
+00:14:29.956 --> 00:14:30.826 A:middle
+for most developers.
+
+00:14:31.126 --> 00:14:32.826 A:middle
+Essentially if you have web
+
+00:14:32.826 --> 00:14:34.746 A:middle
+content that uses custom fonts,
+
+00:14:35.146 --> 00:14:36.576 A:middle
+if they don't display for your
+
+00:14:36.576 --> 00:14:38.496 A:middle
+user for whatever reason, by
+
+00:14:38.496 --> 00:14:40.116 A:middle
+default we leave a blank
+
+00:14:40.276 --> 00:14:42.076 A:middle
+placeholder for the text for up
+
+00:14:42.156 --> 00:14:44.386 A:middle
+to three seconds, before your
+
+00:14:44.386 --> 00:14:46.206 A:middle
+font displays, to maintain the
+
+00:14:46.206 --> 00:14:47.866 A:middle
+position of all the content on
+
+00:14:47.866 --> 00:14:48.376 A:middle
+the screen.
+
+00:14:48.826 --> 00:14:51.166 A:middle
+But, if this default behavior
+
+00:14:51.166 --> 00:14:52.686 A:middle
+isn't quite right for you, and
+
+00:14:52.686 --> 00:14:54.006 A:middle
+you want to have more control
+
+00:14:54.006 --> 00:14:55.616 A:middle
+over what happens instead of
+
+00:14:55.616 --> 00:14:57.446 A:middle
+those three seconds, you can use
+
+00:14:57.446 --> 00:14:59.136 A:middle
+the font-display descriptor.
+
+00:14:59.806 --> 00:15:01.066 A:middle
+Using different values, you can
+

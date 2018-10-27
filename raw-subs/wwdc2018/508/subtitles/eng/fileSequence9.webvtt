@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:55.566 --> 00:09:00.306 A:middle
+This must be set to ES256, which
+
+00:09:00.306 --> 00:09:02.276 A:middle
+when passed to your JWT signing
+
+00:09:02.276 --> 00:09:05.326 A:middle
+library will output a JWT token
+
+00:09:05.656 --> 00:09:07.756 A:middle
+ready to be used by MapKit JS.
+
+00:09:08.656 --> 00:09:09.996 A:middle
+Since short-lived tokens may
+
+00:09:09.996 --> 00:09:11.706 A:middle
+expire before your user is done
+
+00:09:11.706 --> 00:09:13.336 A:middle
+with their session, your server
+
+00:09:13.336 --> 00:09:14.926 A:middle
+will need to provide an endpoint
+
+00:09:14.926 --> 00:09:16.916 A:middle
+for MapKit JS which will respond
+
+00:09:16.916 --> 00:09:18.316 A:middle
+to requests to new tokens.
+
+00:09:18.936 --> 00:09:20.426 A:middle
+Later, I'll show you how to make
+
+00:09:20.426 --> 00:09:21.906 A:middle
+MapKit JS aware of your
+
+00:09:21.906 --> 00:09:23.856 A:middle
+endpoint, but for now, here's an
+
+00:09:23.856 --> 00:09:25.286 A:middle
+example of an endpoint that I've
+
+00:09:25.286 --> 00:09:27.326 A:middle
+created as an express JS route.
+
+00:09:28.556 --> 00:09:30.546 A:middle
+This route simply returns a new
+
+00:09:30.546 --> 00:09:32.626 A:middle
+access token set to expire in
+
+00:09:32.626 --> 00:09:35.496 A:middle
+1800 seconds or 30 minutes every
+
+00:09:35.496 --> 00:09:36.256 A:middle
+time it's called.
+
+00:09:36.946 --> 00:09:38.326 A:middle
+Regardless of your token's
+
+00:09:38.326 --> 00:09:40.976 A:middle
+expiry, MapKit JS will call this
+
+00:09:40.976 --> 00:09:42.456 A:middle
+endpoint any time it needs to
+
+00:09:42.456 --> 00:09:44.176 A:middle
+authorize throughout a user's
+
+00:09:44.176 --> 00:09:44.966 A:middle
+active session.
+
+00:09:46.786 --> 00:09:48.236 A:middle
+Since your endpoint needs to
+
+00:09:48.236 --> 00:09:49.896 A:middle
+return a new token every time
+
+00:09:49.896 --> 00:09:51.566 A:middle
+it's called, you'll need to let
+
+00:09:51.566 --> 00:09:53.166 A:middle
+browsers know not to cache.
+
+00:09:53.876 --> 00:09:55.426 A:middle
+You can do this by setting cache
+
+00:09:55.426 --> 00:09:56.316 A:middle
+control headers.
+
+00:09:57.856 --> 00:09:59.506 A:middle
+If set up correctly, you should
+
+00:09:59.506 --> 00:10:00.556 A:middle
+have a route on your server
+

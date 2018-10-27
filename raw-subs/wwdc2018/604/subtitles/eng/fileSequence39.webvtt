@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.756 --> 00:39:01.546 A:middle
+optimal synchronization strategy
+
+00:39:01.546 --> 00:39:02.566 A:middle
+which suits best for your
+
+00:39:02.566 --> 00:39:03.376 A:middle
+applications.
+
+00:39:04.256 --> 00:39:06.966 A:middle
+So in most cases, best approach
+
+00:39:07.026 --> 00:39:08.686 A:middle
+is to multi-buffer your shared
+
+00:39:08.686 --> 00:39:11.706 A:middle
+resources so that CPU and GPU
+
+00:39:11.706 --> 00:39:13.286 A:middle
+are never trying to access the
+
+00:39:13.286 --> 00:39:15.136 A:middle
+same buffer simultaneously.
+
+00:39:17.436 --> 00:39:19.916 A:middle
+So let's see an example, you
+
+00:39:19.916 --> 00:39:22.126 A:middle
+have an OpenGL application and
+
+00:39:22.126 --> 00:39:24.676 A:middle
+you just ported it to Metal and
+
+00:39:24.736 --> 00:39:26.296 A:middle
+it is using single buffer for
+
+00:39:26.296 --> 00:39:28.956 A:middle
+these dynamic data updates and
+
+00:39:28.956 --> 00:39:30.386 A:middle
+you did not implement any
+
+00:39:30.386 --> 00:39:32.766 A:middle
+synchronization method yet in
+
+00:39:32.766 --> 00:39:34.306 A:middle
+your application, then here's
+
+00:39:34.306 --> 00:39:36.356 A:middle
+what will happen.
+
+00:39:36.906 --> 00:39:38.316 A:middle
+Your application will write to
+
+00:39:38.316 --> 00:39:39.956 A:middle
+that buffer while generating
+
+00:39:39.956 --> 00:39:41.866 A:middle
+commands for the first frame and
+
+00:39:41.866 --> 00:39:43.336 A:middle
+then submits this command buffer
+
+00:39:43.336 --> 00:39:45.426 A:middle
+to GPU.
+
+00:39:45.426 --> 00:39:47.406 A:middle
+Then GPU when it is executing
+
+00:39:47.406 --> 00:39:48.876 A:middle
+this command buffer will try to
+
+00:39:48.876 --> 00:39:49.896 A:middle
+read from this buffer.
+
+00:39:50.436 --> 00:39:53.796 A:middle
+And while you're updating the
+
+00:39:53.796 --> 00:39:55.446 A:middle
+same buffer for the next frame
+
+00:39:55.686 --> 00:39:57.486 A:middle
+GPU is still reading from this
+
+00:39:57.486 --> 00:39:57.816 A:middle
+buffer.
+
+00:39:58.076 --> 00:40:01.266 A:middle
+So this is clearly a race
+

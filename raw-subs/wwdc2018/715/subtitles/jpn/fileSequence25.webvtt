@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.598 --> 00:25:02.469 align:start position:14% line:-2
+UDPClientクラスと
+UDPServerクラスに注目しましょう
+
+00:25:03.270 --> 00:25:09.443 align:start position:20% line:-2
+UDPClientはフレームを送る
+接続を作成します
+
+00:25:10.144 --> 00:25:13.614 align:start position:29% line:-1
+サーバはそれらを受け取り
+
+00:25:13.747 --> 00:25:19.019 align:start position:27% line:-2
+データを読み取り画面に送る
+リスナーを作成します
+
+00:25:19.620 --> 00:25:20.888 align:start position:29% line:-1
+クライアントから始めます
+
+00:25:22.422 --> 00:25:25.792 align:start position:32% line:-2
+イニシャライザが
+ネームを取り込みます
+
+00:25:25.893 --> 00:25:30.130 align:start position:21% line:-2
+ネームとはBonjour名を表す
+文字列です
+
+00:25:31.565 --> 00:25:35.636 align:start position:20% line:-2
+NWConnectionを呼び出し
+エンドポイントを通過させて
+
+00:25:35.736 --> 00:25:37.671 align:start position:36% line:-1
+接続を作成します
+
+00:25:38.005 --> 00:25:42.342 align:start position:23% line:-2
+名前と種類は
+camera.udpを使います
+
+00:25:43.644 --> 00:25:46.180 align:start position:34% line:-2
+UDPパラメータも
+通過しました
+
+00:25:47.748 --> 00:25:50.884 align:start position:34% line:-2
+ready状態か
+確立失敗の状態か―
+
+00:25:52.252 --> 00:25:55.355 align:start position:36% line:-2
+ハンドラを使って
+確認できます
+
+00:25:55.956 --> 00:26:01.695 align:start position:12% line:-2
+sendInitialFrameを呼び出し
+１分以内に実行
+

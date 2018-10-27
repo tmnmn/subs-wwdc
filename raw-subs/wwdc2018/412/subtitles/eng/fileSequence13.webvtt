@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.316 --> 00:13:00.216 A:middle
+one of the frameworks.
+
+00:13:00.896 --> 00:13:02.206 A:middle
+But like I said, this wasn't the
+
+00:13:02.206 --> 00:13:03.306 A:middle
+object or the label we're
+
+00:13:03.306 --> 00:13:04.346 A:middle
+interested in, so let's press
+
+00:13:04.346 --> 00:13:05.806 A:middle
+continue, and now we've hit the
+
+00:13:05.806 --> 00:13:06.526 A:middle
+breakpoint again.
+
+00:13:06.526 --> 00:13:08.746 A:middle
+So we can inspect dollar arg one
+
+00:13:08.746 --> 00:13:11.046 A:middle
+to see what the receiver is, and
+
+00:13:11.046 --> 00:13:12.276 A:middle
+it looks like it's the same
+
+00:13:12.396 --> 00:13:13.916 A:middle
+height label with zero feet now.
+
+00:13:14.296 --> 00:13:15.276 A:middle
+And I can see the problem with
+
+00:13:15.276 --> 00:13:15.916 A:middle
+my strategy.
+
+00:13:16.886 --> 00:13:18.306 A:middle
+While the astronaut is jumping,
+
+00:13:18.726 --> 00:13:19.956 A:middle
+the code is updating the height
+
+00:13:19.956 --> 00:13:22.806 A:middle
+label in real time, so the
+
+00:13:23.056 --> 00:13:24.376 A:middle
+breakpoint is going to hit on
+
+00:13:24.376 --> 00:13:26.246 A:middle
+this object quite frequently,
+
+00:13:26.246 --> 00:13:27.466 A:middle
+and it's going to take us a long
+
+00:13:27.466 --> 00:13:27.686 A:middle
+time.
+
+00:13:27.686 --> 00:13:28.776 A:middle
+It'll be very difficult to hit a
+
+00:13:28.776 --> 00:13:31.116 A:middle
+breakpoint on UI label set text
+
+00:13:31.116 --> 00:13:31.986 A:middle
+for the attempts label.
+
+00:13:32.386 --> 00:13:33.986 A:middle
+So what I think I should do is
+
+00:13:33.986 --> 00:13:35.876 A:middle
+only set this symbolic
+
+00:13:35.876 --> 00:13:37.206 A:middle
+breakpoint after the jump
+
+00:13:37.206 --> 00:13:39.196 A:middle
+animation has completed, so let
+
+00:13:39.196 --> 00:13:40.206 A:middle
+me show you a way to do that.
+
+00:13:40.206 --> 00:13:41.736 A:middle
+I'm going to switch to the
+
+00:13:41.736 --> 00:13:42.716 A:middle
+breakpoint navigator.
+
+00:13:43.116 --> 00:13:44.216 A:middle
+And if I double-click on the
+
+00:13:44.216 --> 00:13:45.456 A:middle
+indicator for the symbolic
+
+00:13:45.456 --> 00:13:47.036 A:middle
+breakpoint, we can bring the
+
+00:13:47.036 --> 00:13:48.746 A:middle
+editor back up and we can use
+
+00:13:48.746 --> 00:13:49.736 A:middle
+this condition field.
+
+00:13:50.026 --> 00:13:51.236 A:middle
+We can enter an expression here
+
+00:13:51.236 --> 00:13:52.906 A:middle
+that returns true or false, and
+
+00:13:52.906 --> 00:13:54.216 A:middle
+the breakpoint will only trigger
+
+00:13:54.216 --> 00:13:55.436 A:middle
+if that expression evaluates to
+
+00:13:55.436 --> 00:13:55.886 A:middle
+true.
+
+00:13:56.226 --> 00:13:57.716 A:middle
+So if we had a property such as
+
+00:13:57.716 --> 00:13:59.656 A:middle
+jump animation in progress, we
+
+00:13:59.656 --> 00:14:01.066 A:middle
+could edit an expression to test
+

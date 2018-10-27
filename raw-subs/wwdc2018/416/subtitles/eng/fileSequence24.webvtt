@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.706 --> 00:24:00.376 A:middle
+notification or go to a
+
+00:24:00.376 --> 00:24:01.316 A:middle
+different app.
+
+00:24:01.986 --> 00:24:03.586 A:middle
+That image is still in memory.
+
+00:24:04.626 --> 00:24:06.806 A:middle
+So as a good rule of thumb, we
+
+00:24:06.806 --> 00:24:08.486 A:middle
+recommend unloading large
+
+00:24:08.486 --> 00:24:09.826 A:middle
+resources you cannot see.
+
+00:24:10.276 --> 00:24:13.756 A:middle
+There are 2 ways to do this.
+
+00:24:13.986 --> 00:24:15.246 A:middle
+The first is the app life cycle.
+
+00:24:15.296 --> 00:24:16.466 A:middle
+So if you background your app or
+
+00:24:16.466 --> 00:24:17.656 A:middle
+foreground it, the app life
+
+00:24:17.656 --> 00:24:19.976 A:middle
+cycle events are great to, are a
+
+00:24:19.976 --> 00:24:20.736 A:middle
+great way to know.
+
+00:24:21.686 --> 00:24:22.926 A:middle
+Now, this applies to mostly the
+
+00:24:22.926 --> 00:24:24.486 A:middle
+on-screen views because those
+
+00:24:24.536 --> 00:24:25.316 A:middle
+don't conform to the
+
+00:24:25.316 --> 00:24:26.796 A:middle
+UIViewController appearance life
+
+00:24:26.796 --> 00:24:27.106 A:middle
+cycle.
+
+00:24:27.756 --> 00:24:28.886 A:middle
+UIViewController methods are
+
+00:24:28.886 --> 00:24:30.576 A:middle
+great for, like, tab controllers
+
+00:24:31.476 --> 00:24:32.526 A:middle
+or navigation controllers
+
+00:24:32.526 --> 00:24:33.306 A:middle
+because you're going to have
+
+00:24:33.306 --> 00:24:34.446 A:middle
+multiple view controllers, but
+
+00:24:34.446 --> 00:24:35.676 A:middle
+only 1 of them is on screen at
+
+00:24:35.676 --> 00:24:36.066 A:middle
+once.
+
+00:24:36.716 --> 00:24:37.486 A:middle
+So if you leverage like the
+
+00:24:37.486 --> 00:24:38.296 A:middle
+viewWillAppear and
+
+00:24:38.296 --> 00:24:39.946 A:middle
+viewDidDisappear code or
+
+00:24:40.176 --> 00:24:41.516 A:middle
+callbacks, you can keep your
+
+00:24:41.726 --> 00:24:42.766 A:middle
+memory footprint smaller.
+
+00:24:44.036 --> 00:24:46.476 A:middle
+Now, as an example, if I
+
+00:24:46.476 --> 00:24:48.246 A:middle
+register for the notifications
+
+00:24:48.246 --> 00:24:49.466 A:middle
+for the application entering the
+
+00:24:49.566 --> 00:24:50.916 A:middle
+background, I can unload my
+
+00:24:50.916 --> 00:24:52.296 A:middle
+large assets -- in this case,
+
+00:24:52.296 --> 00:24:52.726 A:middle
+images.
+
+00:24:53.826 --> 00:24:54.696 A:middle
+When the app comes back to the
+
+00:24:54.696 --> 00:24:56.016 A:middle
+foreground, I get a notification
+
+00:24:56.016 --> 00:24:56.786 A:middle
+for that.
+
+00:24:57.556 --> 00:24:59.686 A:middle
+If I reload my images there, I'm
+
+00:24:59.856 --> 00:25:00.746 A:middle
+saving memory when in the
+

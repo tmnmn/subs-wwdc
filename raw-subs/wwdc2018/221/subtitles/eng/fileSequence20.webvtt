@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.546 --> 00:20:01.226 A:middle
+AppKit, but we can make a text
+
+00:20:01.226 --> 00:20:02.476 A:middle
+field behave like a label.
+
+00:20:03.716 --> 00:20:05.396 A:middle
+All we need to do is disable
+
+00:20:05.396 --> 00:20:05.766 A:middle
+editing.
+
+00:20:06.366 --> 00:20:09.116 A:middle
+Now for the journal entry part
+
+00:20:09.116 --> 00:20:10.246 A:middle
+of the window, we're going to
+
+00:20:10.246 --> 00:20:10.976 A:middle
+use a text view.
+
+00:20:12.206 --> 00:20:13.676 A:middle
+So in the inspector, we can make
+
+00:20:13.676 --> 00:20:14.706 A:middle
+sure that the text view is
+
+00:20:14.706 --> 00:20:16.916 A:middle
+editable and selectable and
+
+00:20:16.916 --> 00:20:18.596 A:middle
+supports rich text and undo.
+
+00:20:18.596 --> 00:20:21.916 A:middle
+We're going to add a couple of
+
+00:20:21.916 --> 00:20:23.006 A:middle
+text fields to the bottom of the
+
+00:20:23.006 --> 00:20:24.056 A:middle
+window as well so that we can
+
+00:20:24.056 --> 00:20:25.266 A:middle
+show how many words have been
+
+00:20:25.266 --> 00:20:25.566 A:middle
+written.
+
+00:20:26.166 --> 00:20:29.746 A:middle
+Now when we run our app, we want
+
+00:20:29.746 --> 00:20:30.766 A:middle
+the word count at the bottom to
+
+00:20:30.766 --> 00:20:32.836 A:middle
+change, so let's find the right
+
+00:20:32.886 --> 00:20:33.676 A:middle
+hammer for this job.
+
+00:20:33.676 --> 00:20:36.446 A:middle
+Now we can either conform to a
+
+00:20:36.446 --> 00:20:38.416 A:middle
+delegate, handle a notification
+
+00:20:38.836 --> 00:20:39.266 A:middle
+or subclass.
+
+00:20:39.266 --> 00:20:41.796 A:middle
+But in this case, we're going to
+
+00:20:41.796 --> 00:20:42.636 A:middle
+use a small hammer.
+
+00:20:42.916 --> 00:20:43.756 A:middle
+And we're going to listen for a
+
+00:20:43.756 --> 00:20:45.226 A:middle
+notification from text storage.
+
+00:20:46.726 --> 00:20:47.886 A:middle
+Now we can get the number of
+
+00:20:47.886 --> 00:20:49.496 A:middle
+words from the text storage.
+
+00:20:50.686 --> 00:20:51.246 A:middle
+And when we hear the
+
+00:20:51.246 --> 00:20:52.886 A:middle
+notification, we can update the
+
+00:20:52.886 --> 00:20:54.556 A:middle
+string value property of our
+
+00:20:54.556 --> 00:20:55.026 A:middle
+text field.
+
+00:20:55.586 --> 00:20:58.726 A:middle
+And when we start typing, we can
+
+00:20:58.756 --> 00:20:59.726 A:middle
+see the word count change.
+

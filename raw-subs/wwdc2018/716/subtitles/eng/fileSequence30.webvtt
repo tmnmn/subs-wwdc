@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:01.236 --> 00:30:02.426 A:middle
+So, I have the Xcode running,
+
+00:30:02.706 --> 00:30:03.626 A:middle
+and I have my headphones
+
+00:30:03.626 --> 00:30:05.546 A:middle
+connected to it, which is
+
+00:30:05.546 --> 00:30:07.516 A:middle
+running the same app as we just
+
+00:30:07.516 --> 00:30:07.696 A:middle
+saw.
+
+00:30:08.356 --> 00:30:10.356 A:middle
+I'm going to run it in the
+
+00:30:10.356 --> 00:30:11.000 A:middle
+debugger,
+
+00:30:16.656 --> 00:30:18.446 A:middle
+going to select my objects, and
+
+00:30:19.006 --> 00:30:20.896 A:middle
+it's not important what I select
+
+00:30:20.896 --> 00:30:21.846 A:middle
+because we just want to look at
+
+00:30:21.846 --> 00:30:22.416 A:middle
+the sequence.
+
+00:30:23.396 --> 00:30:26.676 A:middle
+And I'm going to run it.
+
+00:30:26.806 --> 00:30:29.096 A:middle
+So, I have a breakpoint set up
+
+00:30:29.096 --> 00:30:30.256 A:middle
+here and it breaks in the
+
+00:30:30.256 --> 00:30:32.226 A:middle
+perform tracking function, which
+
+00:30:32.226 --> 00:30:33.536 A:middle
+is the most important function
+
+00:30:33.536 --> 00:30:34.056 A:middle
+of this app.
+
+00:30:34.746 --> 00:30:35.596 A:middle
+That's the function that
+
+00:30:35.596 --> 00:30:36.826 A:middle
+implements the actual sequence.
+
+00:30:37.396 --> 00:30:39.716 A:middle
+Let's see what we do here.
+
+00:30:40.466 --> 00:30:42.986 A:middle
+First, we're creating our video
+
+00:30:42.986 --> 00:30:43.236 A:middle
+reader.
+
+00:30:44.086 --> 00:30:45.216 A:middle
+Then, we are reading first
+
+00:30:45.216 --> 00:30:46.596 A:middle
+frame, and we're discarding that
+
+00:30:46.596 --> 00:30:47.836 A:middle
+frame because that frame was
+
+00:30:47.836 --> 00:30:48.916 A:middle
+used to select the objects.
+
+00:30:50.396 --> 00:30:51.436 A:middle
+There's the cancellation flag
+
+00:30:51.436 --> 00:30:51.676 A:middle
+here.
+
+00:30:52.466 --> 00:30:54.256 A:middle
+Then, I'm going to initialize
+
+00:30:54.256 --> 00:30:55.686 A:middle
+the collection of my input
+
+00:30:55.686 --> 00:30:56.406 A:middle
+observations.
+
+00:30:56.526 --> 00:30:57.716 A:middle
+Remember, as we saw an example
+
+00:30:57.716 --> 00:30:58.206 A:middle
+in the slides.
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.876 --> 00:27:00.306 A:middle
+automatically grant you access
+
+00:27:00.356 --> 00:27:00.746 A:middle
+to the data.
+
+00:27:01.356 --> 00:27:02.726 A:middle
+The user is still in control of
+
+00:27:02.726 --> 00:27:03.416 A:middle
+the final decision.
+
+00:27:03.966 --> 00:27:07.276 A:middle
+So how do we enable this?
+
+00:27:07.396 --> 00:27:09.966 A:middle
+Well, from Xcode you can go into
+
+00:27:09.966 --> 00:27:12.296 A:middle
+Target setting in the
+
+00:27:12.296 --> 00:27:14.006 A:middle
+Tap-ability tab.
+
+00:27:15.096 --> 00:27:16.426 A:middle
+There you will find a new hard
+
+00:27:16.426 --> 00:27:18.566 A:middle
+and Runtime section, which you
+
+00:27:18.566 --> 00:27:18.976 A:middle
+can enable.
+
+00:27:20.266 --> 00:27:21.136 A:middle
+We have checkboxes for every
+
+00:27:21.136 --> 00:27:22.346 A:middle
+single of the entitlements that
+
+00:27:22.346 --> 00:27:22.976 A:middle
+are previously described.
+
+00:27:29.686 --> 00:27:31.306 A:middle
+And then a few more comportable
+
+00:27:31.306 --> 00:27:32.606 A:middle
+[phonetic] using the using the
+
+00:27:32.606 --> 00:27:34.486 A:middle
+Command Line interface, then we
+
+00:27:34.486 --> 00:27:36.576 A:middle
+can use the new runtime option
+
+00:27:37.016 --> 00:27:37.936 A:middle
+in the codesign command.
+
+00:27:38.506 --> 00:27:40.966 A:middle
+And in order for you to validate
+
+00:27:40.966 --> 00:27:42.146 A:middle
+that you have properly enrolled
+
+00:27:42.456 --> 00:27:43.766 A:middle
+and opted into this new runtime,
+
+00:27:43.866 --> 00:27:44.806 A:middle
+you can use the dash-dash
+
+00:27:44.836 --> 00:27:45.566 A:middle
+display option.
+
+00:27:46.096 --> 00:27:48.066 A:middle
+And here, the things to look for
+
+00:27:48.066 --> 00:27:51.566 A:middle
+are the runtime flag as well as
+
+00:27:52.436 --> 00:27:52.976 A:middle
+the runtime version.
+
+00:27:57.266 --> 00:27:57.546 A:middle
+All right.
+
+00:27:57.856 --> 00:27:58.726 A:middle
+Now let's look at the final
+
+00:27:58.726 --> 00:28:00.376 A:middle
+piece of that puzzle and talk
+

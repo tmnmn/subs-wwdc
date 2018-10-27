@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.796 --> 00:26:01.296 A:middle
+zoom in closely, you'll see that
+
+00:26:01.296 --> 00:26:02.696 A:middle
+the bubbles are not getting that
+
+00:26:02.746 --> 00:26:04.166 A:middle
+desktop-tinting effect that we
+
+00:26:04.166 --> 00:26:04.476 A:middle
+want.
+
+00:26:04.476 --> 00:26:05.676 A:middle
+It's just a plain gray.
+
+00:26:07.096 --> 00:26:07.986 A:middle
+So, what went wrong?
+
+00:26:09.376 --> 00:26:11.766 A:middle
+Well, this effect is provided by
+
+00:26:11.766 --> 00:26:13.136 A:middle
+the Quartz window server like a
+
+00:26:13.136 --> 00:26:14.376 A:middle
+lot of our other material
+
+00:26:14.376 --> 00:26:14.876 A:middle
+effects.
+
+00:26:15.746 --> 00:26:16.876 A:middle
+And what this means is it
+
+00:26:16.976 --> 00:26:19.216 A:middle
+updates asynchronously from your
+
+00:26:19.216 --> 00:26:20.856 A:middle
+application and this is great
+
+00:26:20.906 --> 00:26:23.706 A:middle
+for performance, but it also
+
+00:26:23.706 --> 00:26:25.516 A:middle
+means that you can't directly
+
+00:26:25.516 --> 00:26:27.396 A:middle
+draw with that color or get it's
+
+00:26:27.396 --> 00:26:28.476 A:middle
+RGB values.
+
+00:26:29.916 --> 00:26:31.676 A:middle
+Instead, you can use the
+
+00:26:31.676 --> 00:26:33.546 A:middle
+maskImage property of
+
+00:26:33.546 --> 00:26:35.156 A:middle
+VisualEffectView to do something
+
+00:26:35.196 --> 00:26:35.806 A:middle
+very similar.
+
+00:26:37.106 --> 00:26:40.276 A:middle
+maskImage is an optional NSImage
+
+00:26:40.596 --> 00:26:43.336 A:middle
+on VisualEffectView that
+
+00:26:44.026 --> 00:26:45.696 A:middle
+VisualEffectView will use to
+
+00:26:45.696 --> 00:26:47.706 A:middle
+mask its material, the material
+
+00:26:47.706 --> 00:26:48.386 A:middle
+that it shows.
+
+00:26:49.646 --> 00:26:50.996 A:middle
+And in addition to using
+
+00:26:50.996 --> 00:26:53.126 A:middle
+standard art-based images, you
+
+00:26:53.126 --> 00:26:54.866 A:middle
+can use drawing handler images
+
+00:26:55.006 --> 00:26:56.506 A:middle
+to simulate drawing with the
+
+00:26:56.506 --> 00:26:56.996 A:middle
+material.
+
+00:26:56.996 --> 00:26:59.356 A:middle
+Let me show you an example.
+

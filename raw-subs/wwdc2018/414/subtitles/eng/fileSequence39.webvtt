@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.826 --> 00:39:01.016 A:middle
+that can contain useful
+
+00:39:01.016 --> 00:39:03.116 A:middle
+information and clues for
+
+00:39:03.116 --> 00:39:04.326 A:middle
+helping you puzzle out what the
+
+00:39:04.326 --> 00:39:05.386 A:middle
+process was doing.
+
+00:39:06.006 --> 00:39:07.856 A:middle
+Perhaps the other threads show
+
+00:39:08.276 --> 00:39:10.266 A:middle
+more details about where in the
+
+00:39:10.266 --> 00:39:11.666 A:middle
+application it was running,
+
+00:39:11.766 --> 00:39:13.196 A:middle
+maybe it was performing network
+
+00:39:13.256 --> 00:39:14.716 A:middle
+code and that's visible on one
+
+00:39:14.716 --> 00:39:16.556 A:middle
+of the other stack traces.
+
+00:39:17.136 --> 00:39:18.086 A:middle
+Or perhaps there's a
+
+00:39:18.086 --> 00:39:20.416 A:middle
+multithreading error and the
+
+00:39:20.416 --> 00:39:22.346 A:middle
+other threads may provide clues
+
+00:39:22.346 --> 00:39:25.116 A:middle
+as to what the thread race was.
+
+00:39:26.796 --> 00:39:28.916 A:middle
+You should also look at more
+
+00:39:28.916 --> 00:39:31.006 A:middle
+than one crash log for a
+
+00:39:31.006 --> 00:39:32.816 A:middle
+particular crash cause.
+
+00:39:33.676 --> 00:39:35.676 A:middle
+The Xcode Organizer helpfully
+
+00:39:35.676 --> 00:39:37.866 A:middle
+groups your crashes based on
+
+00:39:37.866 --> 00:39:39.466 A:middle
+where in the code they crashed.
+
+00:39:40.346 --> 00:39:43.506 A:middle
+And sometimes there will be
+
+00:39:43.506 --> 00:39:45.636 A:middle
+multiple crashes at a same crash
+
+00:39:45.706 --> 00:39:47.826 A:middle
+point, but some of the logs will
+
+00:39:47.826 --> 00:39:49.726 A:middle
+contain more information than
+
+00:39:49.806 --> 00:39:50.416 A:middle
+others.
+
+00:39:50.756 --> 00:39:52.386 A:middle
+For example, the malloc free
+
+00:39:52.386 --> 00:39:54.286 A:middle
+list signature that we just saw
+
+00:39:54.796 --> 00:39:56.666 A:middle
+that might appear in some crash
+
+00:39:56.666 --> 00:39:57.976 A:middle
+logs but not in others.
+
+00:39:58.176 --> 00:40:00.436 A:middle
+So it is useful to browse
+

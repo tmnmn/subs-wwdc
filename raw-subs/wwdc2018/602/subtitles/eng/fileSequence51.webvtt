@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:57.666 --> 00:51:00.016 A:middle
+raw feature points found within
+
+00:51:00.016 --> 00:51:02.236 A:middle
+the area when you performed your
+
+00:51:02.326 --> 00:51:02.486 A:middle
+scan.
+
+00:51:05.386 --> 00:51:06.686 A:middle
+So this was object detection.
+
+00:51:07.256 --> 00:51:08.896 A:middle
+Keep in mind, before detection
+
+00:51:08.896 --> 00:51:10.616 A:middle
+object, you need to scan them,
+
+00:51:10.616 --> 00:51:11.956 A:middle
+but there is the full source
+
+00:51:11.956 --> 00:51:13.196 A:middle
+code available for you to
+
+00:51:13.196 --> 00:51:16.286 A:middle
+download it right now.
+
+00:51:16.406 --> 00:51:18.926 A:middle
+So let's talk next about face
+
+00:51:18.926 --> 00:51:19.266 A:middle
+tracking.
+
+00:51:24.546 --> 00:51:26.296 A:middle
+When we released the iPhone X
+
+00:51:26.296 --> 00:51:28.166 A:middle
+last year, we added robust face
+
+00:51:28.166 --> 00:51:29.776 A:middle
+detection and tracking to ARKit.
+
+00:51:30.746 --> 00:51:32.276 A:middle
+Here, ARKit estimates the
+
+00:51:32.276 --> 00:51:33.816 A:middle
+position and orientation of a
+
+00:51:33.876 --> 00:51:36.186 A:middle
+face for every frame at 60
+
+00:51:36.186 --> 00:51:37.006 A:middle
+frames per second.
+
+00:51:37.826 --> 00:51:39.586 A:middle
+Here we can use the, this pose
+
+00:51:39.586 --> 00:51:41.576 A:middle
+can be used to augment a user's
+
+00:51:41.576 --> 00:51:44.206 A:middle
+face by adding masks, hats, or
+
+00:51:44.206 --> 00:51:45.746 A:middle
+replace the full texture of a
+
+00:51:46.776 --> 00:51:46.906 A:middle
+face.
+
+00:51:47.816 --> 00:51:48.956 A:middle
+ARKit also provides you with a
+
+00:51:48.956 --> 00:51:50.536 A:middle
+fitted triangle mesh coming to
+
+00:51:50.536 --> 00:51:52.016 A:middle
+form of the ARFaceGeometry.
+
+00:51:52.566 --> 00:51:56.136 A:middle
+This type, the ARFaceGeometry,
+
+00:51:56.136 --> 00:51:57.636 A:middle
+contains all the information
+
+00:51:57.636 --> 00:51:59.326 A:middle
+needed to render this facial
+
+00:51:59.326 --> 00:52:01.916 A:middle
+mesh, and it comes in the form
+

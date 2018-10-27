@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:01.161 --> 00:06:02.963 align:start position:34% line:-1
+極めてシンプルです
+
+00:06:03.130 --> 00:06:06.433 align:start position:29% line:-1
+回転データだけを使用して
+
+00:06:06.533 --> 00:06:10.337 align:start position:32% line:-2
+モーションセンサーの
+データに適用します
+
+00:06:11.338 --> 00:06:16.410 align:start position:27% line:-2
+動作データは カメラの
+画像よりも早く提供されます
+
+00:06:16.577 --> 00:06:19.580 align:start position:36% line:-2
+そのため 画像が
+有効になってから
+
+00:06:19.680 --> 00:06:23.584 align:start position:34% line:-2
+最新の動作データを
+取得します
+
+00:06:23.684 --> 00:06:27.321 align:start position:32% line:-2
+そして 双方の結果を
+返します
+
+00:06:27.421 --> 00:06:29.256 align:start position:39% line:-1
+これだけです
+
+00:06:29.590 --> 00:06:34.661 align:start position:29% line:-2
+カメラフィードは
+位置特定で処理されません
+
+00:06:34.761 --> 00:06:37.397 align:start position:30% line:-2
+コンピュータビジョンが
+ないのです
+
+00:06:38.232 --> 00:06:42.636 align:start position:36% line:-2
+位置特定処理を
+実行するためには
+
+00:06:42.736 --> 00:06:47.508 align:start position:30% line:-2
+ARSessionを
+構成する必要があります
+
+00:06:48.208 --> 00:06:52.779 align:start position:23% line:-2
+処理結果は
+ARFrameから提供された―
+
+00:06:53.580 --> 00:06:55.782 align:start position:27% line:-1
+ARCameraに返ります
+
+00:06:56.316 --> 00:06:59.319 align:start position:14% line:-1
+ARCameraのtransformには
+
+00:06:59.419 --> 00:07:04.057 align:start position:27% line:-2
+位置特定においては
+回転データのみが含まれます
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.286 --> 00:09:00.546 A:middle
+a couple of points about the
+
+00:09:01.126 --> 00:09:01.866 A:middle
+code samples in this
+
+00:09:01.866 --> 00:09:02.506 A:middle
+presentation.
+
+00:09:03.376 --> 00:09:04.956 A:middle
+The error handling is not a good
+
+00:09:04.956 --> 00:09:06.136 A:middle
+example how errors should be
+
+00:09:06.136 --> 00:09:06.526 A:middle
+handled.
+
+00:09:06.526 --> 00:09:07.796 A:middle
+I use a short version of try,
+
+00:09:07.876 --> 00:09:09.026 A:middle
+and I use [inaudible].
+
+00:09:09.746 --> 00:09:11.136 A:middle
+This is just to simplify the
+
+00:09:11.136 --> 00:09:11.686 A:middle
+examples.
+
+00:09:11.996 --> 00:09:12.906 A:middle
+When you code your apps, you
+
+00:09:12.906 --> 00:09:14.356 A:middle
+probably should use guards to
+
+00:09:14.356 --> 00:09:15.526 A:middle
+protect against unwanted
+
+00:09:15.526 --> 00:09:15.946 A:middle
+behavior.
+
+00:09:17.186 --> 00:09:20.086 A:middle
+I also use Image URL when I
+
+00:09:20.256 --> 00:09:22.346 A:middle
+create my image request handler
+
+00:09:22.346 --> 00:09:24.416 A:middle
+objects, and that is just a
+
+00:09:24.416 --> 00:09:26.716 A:middle
+place on the SSD where the file
+
+00:09:26.716 --> 00:09:27.236 A:middle
+is located.
+
+00:09:28.516 --> 00:09:29.416 A:middle
+Now, let's look at example.
+
+00:09:30.746 --> 00:09:32.046 A:middle
+First, I'm going to create my
+
+00:09:32.206 --> 00:09:34.346 A:middle
+detect faces request object.
+
+00:09:35.136 --> 00:09:36.476 A:middle
+Then, I'm going to create my
+
+00:09:36.476 --> 00:09:38.036 A:middle
+image request handler passing
+
+00:09:38.036 --> 00:09:40.036 A:middle
+the image URL with the file of
+
+00:09:40.036 --> 00:09:41.866 A:middle
+the image where the faces should
+
+00:09:41.866 --> 00:09:42.336 A:middle
+be located.
+
+00:09:43.246 --> 00:09:44.526 A:middle
+Then, I'm going to ask my
+
+00:09:44.526 --> 00:09:45.716 A:middle
+request handler to process my
+
+00:09:45.716 --> 00:09:46.186 A:middle
+request.
+
+00:09:46.706 --> 00:09:47.796 A:middle
+And finally, I'm going to look
+
+00:09:47.796 --> 00:09:48.500 A:middle
+at the results.
+
+00:09:50.046 --> 00:09:50.506 A:middle
+Very simple.
+
+00:09:51.016 --> 00:09:52.276 A:middle
+If I had an image with a single
+
+00:09:52.276 --> 00:09:54.036 A:middle
+face in it, my results would
+
+00:09:54.036 --> 00:09:55.330 A:middle
+look something like this.
+

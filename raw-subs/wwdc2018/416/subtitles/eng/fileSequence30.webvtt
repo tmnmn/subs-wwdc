@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.036 --> 00:30:01.636 A:middle
+vmmap with the summary flag.
+
+00:30:02.846 --> 00:30:04.196 A:middle
+So let me give that a try, and
+
+00:30:04.386 --> 00:30:06.816 A:middle
+let me pass in my Memgraph file.
+
+00:30:06.886 --> 00:30:10.286 A:middle
+And let's take a look at this
+
+00:30:10.286 --> 00:30:10.696 A:middle
+output.
+
+00:30:11.756 --> 00:30:13.016 A:middle
+So now, what should I be looking
+
+00:30:13.016 --> 00:30:13.706 A:middle
+for in here?
+
+00:30:14.476 --> 00:30:15.716 A:middle
+Now, in general, I'm looking for
+
+00:30:15.716 --> 00:30:16.776 A:middle
+really big numbers.
+
+00:30:16.776 --> 00:30:17.846 A:middle
+I'm trying to figure out what's
+
+00:30:17.846 --> 00:30:19.196 A:middle
+using all this memory, and the
+
+00:30:19.196 --> 00:30:20.656 A:middle
+bigger numbers mean more memory
+
+00:30:20.656 --> 00:30:20.946 A:middle
+use.
+
+00:30:21.566 --> 00:30:23.566 A:middle
+Now, there's a number of columns
+
+00:30:23.566 --> 00:30:25.876 A:middle
+here, and, you know, some of
+
+00:30:25.876 --> 00:30:26.776 A:middle
+them are more important than
+
+00:30:26.776 --> 00:30:27.196 A:middle
+others.
+
+00:30:27.806 --> 00:30:30.166 A:middle
+First of all, virtual size, I
+
+00:30:30.166 --> 00:30:32.226 A:middle
+mean, virtual means not real.
+
+00:30:32.516 --> 00:30:34.126 A:middle
+I can almost practically ignore
+
+00:30:34.126 --> 00:30:34.846 A:middle
+this column.
+
+00:30:34.916 --> 00:30:36.246 A:middle
+It's memory that the app has
+
+00:30:36.246 --> 00:30:37.566 A:middle
+requested but isn't necessarily
+
+00:30:37.566 --> 00:30:38.056 A:middle
+using.
+
+00:30:38.736 --> 00:30:40.356 A:middle
+Dirty sounds like something I
+
+00:30:40.356 --> 00:30:42.036 A:middle
+definitely don't want in my app.
+
+00:30:42.546 --> 00:30:44.466 A:middle
+I'd much rather my app be clean
+
+00:30:44.466 --> 00:30:45.896 A:middle
+than dirty, so that's probably
+
+00:30:45.896 --> 00:30:46.916 A:middle
+something I want smaller.
+
+00:30:47.356 --> 00:30:48.416 A:middle
+And then, swapped, which,
+
+00:30:48.446 --> 00:30:49.456 A:middle
+because this is iOS, is
+
+00:30:49.456 --> 00:30:52.316 A:middle
+compressed, remembering back to
+
+00:30:52.316 --> 00:30:55.156 A:middle
+both Kyle and James pointed out
+
+00:30:55.236 --> 00:30:57.386 A:middle
+that it's the dirty size plus
+
+00:30:57.386 --> 00:30:59.606 A:middle
+the compressed size that the
+
+00:30:59.606 --> 00:31:00.816 A:middle
+operating system uses to
+

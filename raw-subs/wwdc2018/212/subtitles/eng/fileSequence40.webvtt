@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.106 --> 00:40:00.056 A:middle
+optionally provide at Gets User
+
+00:40:00.056 --> 00:40:01.086 A:middle
+Location parameter.
+
+00:40:01.696 --> 00:40:02.946 A:middle
+This will allow you to provide
+
+00:40:02.946 --> 00:40:04.886 A:middle
+more context to the geocoder.
+
+00:40:05.376 --> 00:40:06.776 A:middle
+This is useful in the case where
+
+00:40:06.776 --> 00:40:08.346 A:middle
+there are places with the same
+
+00:40:08.346 --> 00:40:09.876 A:middle
+name in multiple locations.
+
+00:40:10.476 --> 00:40:12.206 A:middle
+For example, if you're using the
+
+00:40:12.206 --> 00:40:14.236 A:middle
+geocoder here, you'll be most
+
+00:40:14.316 --> 00:40:15.916 A:middle
+likely to return Brisbane,
+
+00:40:15.916 --> 00:40:17.446 A:middle
+California instead of Brisbane,
+
+00:40:17.446 --> 00:40:17.926 A:middle
+Australia.
+
+00:40:19.456 --> 00:40:21.446 A:middle
+Next, you build the requests.
+
+00:40:21.756 --> 00:40:22.576 A:middle
+Here, we're using this
+
+00:40:22.576 --> 00:40:23.426 A:middle
+convention center.
+
+00:40:23.976 --> 00:40:26.236 A:middle
+And then you can handle the
+
+00:40:26.236 --> 00:40:26.866 A:middle
+response.
+
+00:40:27.596 --> 00:40:28.976 A:middle
+As we mentioned before, the
+
+00:40:28.976 --> 00:40:30.816 A:middle
+geocoder can easily be used to
+
+00:40:30.816 --> 00:40:32.416 A:middle
+place marker annotations.
+
+00:40:32.646 --> 00:40:33.986 A:middle
+So, here we're adding a marker
+
+00:40:33.986 --> 00:40:34.826 A:middle
+annotation to the map.
+
+00:40:35.496 --> 00:40:39.376 A:middle
+And then here we have an example
+
+00:40:39.376 --> 00:40:41.066 A:middle
+of the reverse lookup where we
+
+00:40:41.066 --> 00:40:42.446 A:middle
+have a coordinate, and we want
+
+00:40:42.446 --> 00:40:43.436 A:middle
+to find the address for the
+
+00:40:43.436 --> 00:40:43.856 A:middle
+place.
+
+00:40:44.276 --> 00:40:47.226 A:middle
+So, that's the geocoder.
+
+00:40:47.856 --> 00:40:50.856 A:middle
+Next up we have service context.
+
+00:40:51.256 --> 00:40:52.426 A:middle
+So, as I mentioned before, you
+
+00:40:52.426 --> 00:40:54.326 A:middle
+can provide a Gets User Location
+
+00:40:54.326 --> 00:40:55.816 A:middle
+parameter, but you can also
+
+00:40:55.816 --> 00:40:57.716 A:middle
+provide coordinate and region to
+
+00:40:57.716 --> 00:40:58.186 A:middle
+search.
+
+00:40:58.876 --> 00:41:00.196 A:middle
+This is useful to provide the
+

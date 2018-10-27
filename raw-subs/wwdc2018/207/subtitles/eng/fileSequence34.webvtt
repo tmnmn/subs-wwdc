@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.346 --> 00:34:00.796 A:middle
+same web content process and
+
+00:34:00.796 --> 00:34:02.516 A:middle
+doing the speculation thing to
+
+00:34:02.516 --> 00:34:04.386 A:middle
+try to read things that the
+
+00:34:04.386 --> 00:34:06.246 A:middle
+attacker wasn't supposed to be
+
+00:34:06.246 --> 00:34:07.136 A:middle
+able to read.
+
+00:34:07.136 --> 00:34:08.496 A:middle
+Well, if you have separated
+
+00:34:08.496 --> 00:34:09.956 A:middle
+things into different processes,
+
+00:34:10.696 --> 00:34:12.036 A:middle
+this attack doesn't work, right?
+
+00:34:12.636 --> 00:34:13.956 A:middle
+You cannot do speculative
+
+00:34:14.025 --> 00:34:16.196 A:middle
+execution attacks across process
+
+00:34:16.196 --> 00:34:18.286 A:middle
+boundaries, so this is already a
+
+00:34:18.286 --> 00:34:20.626 A:middle
+defense here and of course
+
+00:34:20.626 --> 00:34:22.686 A:middle
+that's super important that the
+
+00:34:22.686 --> 00:34:24.886 A:middle
+web content process cannot reach
+
+00:34:24.916 --> 00:34:26.666 A:middle
+into the network process and do
+
+00:34:26.666 --> 00:34:28.096 A:middle
+speculative execution attacks
+
+00:34:28.096 --> 00:34:28.396 A:middle
+there.
+
+00:34:30.056 --> 00:34:32.076 A:middle
+But if you are still using
+
+00:34:32.076 --> 00:34:34.396 A:middle
+UIWebView, which, by the way, we
+
+00:34:34.396 --> 00:34:36.196 A:middle
+are deprecating as of the betas,
+
+00:34:37.306 --> 00:34:39.275 A:middle
+you're not in a very good place.
+
+00:34:40.485 --> 00:34:42.436 A:middle
+Now, if you have evil.example
+
+00:34:43.206 --> 00:34:44.686 A:middle
+and you have your web content
+
+00:34:45.315 --> 00:34:46.686 A:middle
+and you've got the network stack
+
+00:34:47.496 --> 00:34:48.826 A:middle
+and then you put this all in
+
+00:34:48.826 --> 00:34:51.946 A:middle
+your app, from the view of a
+
+00:34:51.946 --> 00:34:53.596 A:middle
+speculative execution attack,
+
+00:34:54.315 --> 00:34:55.505 A:middle
+this all blends together.
+
+00:34:56.306 --> 00:34:58.346 A:middle
+It's all the same process space.
+
+00:34:59.026 --> 00:35:00.666 A:middle
+There are no guards for
+

@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.172 --> 00:29:02.843 align:start position:25% line:-2
+unsafeBitCastは
+型を返すので―
+
+00:29:02.943 --> 00:29:06.747 align:start position:27% line:-1
+.frameなどが使えます
+
+00:29:06.847 --> 00:29:10.884 align:start position:30% line:-2
+今回は中央位置を調べて
+修正しましょう
+
+00:29:10.984 --> 00:29:12.753 align:start position:34% line:-1
+300に修正します
+
+00:29:12.853 --> 00:29:15.622 align:start position:29% line:-1
+300に変更されましたね
+
+00:29:15.722 --> 00:29:19.560 align:start position:30% line:-2
+しかしシミュレータでは
+変わっていません
+
+00:29:19.660 --> 00:29:20.694 align:start position:38% line:-1
+停止中なので―
+
+00:29:20.794 --> 00:29:25.499 align:start position:29% line:-2
+画面のフレームバッファに
+変更が適用されないのです
+
+00:29:25.632 --> 00:29:28.001 align:start position:36% line:-2
+アニメーションを
+変えるため―
+
+00:29:28.101 --> 00:29:32.005 align:start position:9% line:-2
+“expression
+CATransaction.flush”と入力
+
+00:29:33.140 --> 00:29:36.376 align:start position:29% line:-2
+画面のフレームバッファが
+更新されます
+
+00:29:36.477 --> 00:29:41.982 align:start position:43% line:-1
+(拍手)
+
+00:29:42.115 --> 00:29:45.519 align:start position:32% line:-2
+この２行で
+新しい位置を修正して
+
+00:29:45.619 --> 00:29:47.955 align:start position:32% line:-1
+フラッシュを続けます
+
+00:29:48.055 --> 00:29:53.160 align:start position:29% line:-2
+とても便利なので
+１つのコマンドにしました
+
+00:29:53.260 --> 00:29:55.929 align:start position:30% line:-1
+その方法をお見せします
+
+00:29:56.263 --> 00:29:59.399 align:start position:21% line:-1
+Pythonのファイルを開きます
+
+00:29:59.933 --> 00:30:01.668 align:start position:32% line:-1
+なぜPythonか？
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.376 --> 00:27:00.396 A:middle
+feature in, in Swift.
+
+00:27:00.646 --> 00:27:02.216 A:middle
+And, let's start by looking at
+
+00:27:02.216 --> 00:27:02.946 A:middle
+slices again.
+
+00:27:03.516 --> 00:27:04.796 A:middle
+So for any collection that you
+
+00:27:04.796 --> 00:27:07.276 A:middle
+have, you can form a slice of
+
+00:27:07.276 --> 00:27:09.136 A:middle
+that collection by subscripting
+
+00:27:09.356 --> 00:27:12.236 A:middle
+with a particular range of
+
+00:27:12.236 --> 00:27:12.856 A:middle
+indices.
+
+00:27:13.326 --> 00:27:14.696 A:middle
+And, that slice is essentially a
+
+00:27:14.696 --> 00:27:16.256 A:middle
+view into some part of the
+
+00:27:16.256 --> 00:27:16.796 A:middle
+collection.
+
+00:27:17.986 --> 00:27:20.366 A:middle
+Now these are default type that
+
+00:27:20.366 --> 00:27:21.366 A:middle
+you get from slicing a
+
+00:27:21.366 --> 00:27:23.696 A:middle
+collection, is called slice.
+
+00:27:24.486 --> 00:27:26.146 A:middle
+And slice is a generic adaptor
+
+00:27:26.146 --> 00:27:26.376 A:middle
+type.
+
+00:27:27.366 --> 00:27:30.066 A:middle
+So it is parameterized on a base
+
+00:27:30.106 --> 00:27:32.016 A:middle
+collection type, and it is
+
+00:27:32.016 --> 00:27:33.216 A:middle
+itself a collection.
+
+00:27:33.936 --> 00:27:36.466 A:middle
+So our expectation on a slice is
+
+00:27:36.466 --> 00:27:37.636 A:middle
+that you can do anything to a
+
+00:27:37.636 --> 00:27:38.676 A:middle
+slice that you can do to the
+
+00:27:38.676 --> 00:27:39.826 A:middle
+underlying collection.
+
+00:27:40.146 --> 00:27:41.266 A:middle
+It's a reasonable thing to want.
+
+00:27:41.966 --> 00:27:43.636 A:middle
+And so, certainly we can go and
+
+00:27:43.636 --> 00:27:44.496 A:middle
+use the forward search
+
+00:27:44.496 --> 00:27:46.376 A:middle
+operations like indexwhere, to
+
+00:27:46.376 --> 00:27:47.406 A:middle
+go find something matching a
+
+00:27:47.406 --> 00:27:47.786 A:middle
+predicate.
+
+00:27:47.786 --> 00:27:49.226 A:middle
+And that works on the collection
+
+00:27:49.326 --> 00:27:50.226 A:middle
+and any slice of that
+
+00:27:50.226 --> 00:27:50.696 A:middle
+collection.
+
+00:27:51.576 --> 00:27:52.676 A:middle
+So, we'd like to do the same
+
+00:27:52.676 --> 00:27:54.506 A:middle
+thing with backwards search, but
+
+00:27:54.506 --> 00:27:55.456 A:middle
+here we're going to run into a
+
+00:27:55.456 --> 00:27:55.886 A:middle
+problem.
+
+00:27:55.886 --> 00:27:57.096 A:middle
+So even if the buffer is a
+
+00:27:57.276 --> 00:27:59.756 A:middle
+bidirectionalCollection, nothing
+
+00:27:59.756 --> 00:28:00.946 A:middle
+has said that the slice is a
+

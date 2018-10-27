@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.026 --> 00:36:00.426 A:middle
+data frames, go and fetch
+
+00:36:00.426 --> 00:36:01.336 A:middle
+another frame from the video
+
+00:36:01.336 --> 00:36:02.546 A:middle
+stream, because now is the time
+
+00:36:02.546 --> 00:36:03.646 A:middle
+when you can actually enqueue
+
+00:36:03.646 --> 00:36:04.616 A:middle
+the next packets.
+
+00:36:05.046 --> 00:36:06.976 A:middle
+This allows you to pace all of
+
+00:36:06.976 --> 00:36:07.596 A:middle
+your data out.
+
+00:36:08.706 --> 00:36:10.116 A:middle
+And so as you see here, we
+
+00:36:10.116 --> 00:36:12.586 A:middle
+essentially form a loop of using
+
+00:36:12.586 --> 00:36:13.966 A:middle
+this asynchronous send callback
+
+00:36:14.366 --> 00:36:17.006 A:middle
+to continue to drain data out of
+
+00:36:17.006 --> 00:36:18.526 A:middle
+our connection and handle it
+
+00:36:18.676 --> 00:36:19.656 A:middle
+really elegantly.
+
+00:36:22.256 --> 00:36:23.816 A:middle
+The other thing I want to point
+
+00:36:23.816 --> 00:36:25.816 A:middle
+out about sending is the trick
+
+00:36:25.816 --> 00:36:27.156 A:middle
+that Eric showed earlier that's
+
+00:36:27.216 --> 00:36:29.406 A:middle
+great for UDP applications that
+
+00:36:29.406 --> 00:36:31.396 A:middle
+are sending multiple datagrams
+
+00:36:31.726 --> 00:36:32.546 A:middle
+all at one time.
+
+00:36:33.626 --> 00:36:35.116 A:middle
+So if you have a whole bunch of
+
+00:36:35.116 --> 00:36:36.396 A:middle
+little tiny pieces of data that
+
+00:36:36.396 --> 00:36:37.566 A:middle
+you need to send out or
+
+00:36:37.566 --> 00:36:39.036 A:middle
+essentially individual packets,
+
+00:36:40.206 --> 00:36:41.596 A:middle
+you can use something that we've
+
+00:36:41.596 --> 00:36:43.276 A:middle
+added called connection.batch.
+
+00:36:43.636 --> 00:36:46.046 A:middle
+So a UDP socket previously could
+
+00:36:46.046 --> 00:36:47.916 A:middle
+only send one packet at a time,
+
+00:36:48.606 --> 00:36:49.626 A:middle
+and this could be very
+
+00:36:49.626 --> 00:36:51.006 A:middle
+inefficient because if I have to
+
+00:36:51.006 --> 00:36:52.906 A:middle
+send a hundred UDP packets,
+
+00:36:53.196 --> 00:36:54.506 A:middle
+these are each a different
+
+00:36:54.506 --> 00:36:56.196 A:middle
+system call, a different copy,
+
+00:36:56.196 --> 00:36:57.446 A:middle
+and a context switch down into
+
+00:36:57.446 --> 00:36:57.886 A:middle
+the kernel.
+
+00:36:59.226 --> 00:37:01.206 A:middle
+But if you call batch within
+

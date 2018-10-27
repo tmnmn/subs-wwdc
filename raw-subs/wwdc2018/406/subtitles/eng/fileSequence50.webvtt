@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:58.396 --> 00:50:00.026 A:middle
+it's also really powerful.
+
+00:50:00.586 --> 00:50:01.646 A:middle
+If you think about it.
+
+00:50:02.026 --> 00:50:03.346 A:middle
+And at any point in your program
+
+00:50:03.346 --> 00:50:04.546 A:middle
+think well, what happens if I
+
+00:50:04.546 --> 00:50:05.906 A:middle
+get a different subclass, maybe
+
+00:50:05.906 --> 00:50:07.086 A:middle
+a subclass I haven't thought
+
+00:50:07.086 --> 00:50:07.616 A:middle
+about here.
+
+00:50:09.086 --> 00:50:11.786 A:middle
+So, getting back to generics,
+
+00:50:12.756 --> 00:50:14.386 A:middle
+what are our expectations when
+
+00:50:14.386 --> 00:50:15.906 A:middle
+applying Liskov substitution
+
+00:50:15.906 --> 00:50:18.326 A:middle
+principle to the generic system?
+
+00:50:18.976 --> 00:50:19.996 A:middle
+Well, maybe we add a new
+
+00:50:20.066 --> 00:50:21.126 A:middle
+protocol, Drivable.
+
+00:50:21.426 --> 00:50:24.296 A:middle
+Whatever. And extend Vehicle to
+
+00:50:24.296 --> 00:50:25.146 A:middle
+make it Drivable.
+
+00:50:25.496 --> 00:50:26.786 A:middle
+What do we expect to happen?
+
+00:50:26.786 --> 00:50:29.066 A:middle
+Well, we expect that you can use
+
+00:50:29.066 --> 00:50:30.286 A:middle
+that protocol, conformance of
+
+00:50:30.286 --> 00:50:32.436 A:middle
+Vehicle to Drivable, for some of
+
+00:50:32.436 --> 00:50:33.626 A:middle
+its subclasses as well.
+
+00:50:34.616 --> 00:50:36.866 A:middle
+Say, you add a simple generic
+
+00:50:36.866 --> 00:50:38.316 A:middle
+algorithm to the Drivable
+
+00:50:38.316 --> 00:50:39.176 A:middle
+protocol to go for a
+
+00:50:39.176 --> 00:50:39.966 A:middle
+sundayDrive.
+
+00:50:40.386 --> 00:50:41.646 A:middle
+Well, now you should be able to
+
+00:50:41.646 --> 00:50:44.476 A:middle
+use that API on a PoliceCar,
+
+00:50:44.956 --> 00:50:46.116 A:middle
+even if that might not be the
+
+00:50:46.116 --> 00:50:46.716 A:middle
+best idea.
+
+00:50:48.346 --> 00:50:50.636 A:middle
+So, the protocol conformance
+
+00:50:50.636 --> 00:50:52.096 A:middle
+here is effectively being
+
+00:50:52.306 --> 00:50:53.846 A:middle
+inherited by subclasses.
+
+00:50:54.876 --> 00:50:55.906 A:middle
+And this puts a constraint on
+
+00:50:55.906 --> 00:50:56.566 A:middle
+the conformance.
+
+00:50:56.826 --> 00:50:58.206 A:middle
+The one conformance that you
+
+00:50:58.206 --> 00:50:59.446 A:middle
+write, the thing that makes
+
+00:50:59.866 --> 00:51:00.976 A:middle
+Vehicle Drivable.
+

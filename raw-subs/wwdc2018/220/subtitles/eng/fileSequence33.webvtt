@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.206 --> 00:33:00.226 A:middle
+I'm always dealing with an array
+
+00:33:00.226 --> 00:33:00.846 A:middle
+of constraints.
+
+00:33:01.856 --> 00:33:02.666 A:middle
+Your mileage may vary though.
+
+00:33:03.526 --> 00:33:06.406 A:middle
+So the nice thing about this is
+
+00:33:06.406 --> 00:33:08.286 A:middle
+that if you are tracking your
+
+00:33:08.286 --> 00:33:09.766 A:middle
+constraints properly like this
+
+00:33:10.186 --> 00:33:11.716 A:middle
+and you know that you want to
+
+00:33:11.716 --> 00:33:13.276 A:middle
+add this image view live in
+
+00:33:13.276 --> 00:33:15.056 A:middle
+front of the user, you can
+
+00:33:15.056 --> 00:33:15.876 A:middle
+deactivate these
+
+00:33:15.876 --> 00:33:17.426 A:middle
+noImageConstraints, activate the
+
+00:33:17.426 --> 00:33:18.966 A:middle
+ImageConstraints and call Layout
+
+00:33:18.966 --> 00:33:20.326 A:middle
+in needed inside a View
+
+00:33:20.326 --> 00:33:22.026 A:middle
+Animation block and it's going
+
+00:33:22.026 --> 00:33:23.146 A:middle
+to animate nicely into your
+
+00:33:23.146 --> 00:33:23.416 A:middle
+view.
+
+00:33:24.126 --> 00:33:25.036 A:middle
+If you tried to do this with
+
+00:33:25.036 --> 00:33:25.996 A:middle
+deactivating all of your
+
+00:33:25.996 --> 00:33:26.886 A:middle
+constraints and putting them
+
+00:33:26.886 --> 00:33:29.236 A:middle
+back in, it would look very
+
+00:33:29.236 --> 00:33:29.796 A:middle
+interesting.
+
+00:33:29.986 --> 00:33:30.756 A:middle
+Let's say it that way.
+
+00:33:31.696 --> 00:33:33.006 A:middle
+All right, so now that we've
+
+00:33:33.006 --> 00:33:34.296 A:middle
+debugged this and we're working
+
+00:33:34.296 --> 00:33:35.266 A:middle
+with groups of constraints
+
+00:33:35.266 --> 00:33:36.536 A:middle
+instead of throwing everything
+
+00:33:36.536 --> 00:33:38.026 A:middle
+at it, let's look at what it
+
+00:33:38.026 --> 00:33:38.646 A:middle
+will look like.
+
+00:33:38.706 --> 00:33:39.376 A:middle
+This is what it looked like
+
+00:33:39.376 --> 00:33:40.566 A:middle
+originally just to remind you.
+
+00:33:41.706 --> 00:33:44.906 A:middle
+Let's scroll to the top.
+
+00:33:44.906 --> 00:33:45.216 A:middle
+It's very bad.
+
+00:33:45.216 --> 00:33:46.256 A:middle
+And this is what it looks like
+
+00:33:46.256 --> 00:33:48.876 A:middle
+after we've debugged it.
+
+00:33:48.966 --> 00:33:50.136 A:middle
+And that is much smoother.
+
+00:33:50.776 --> 00:33:51.676 A:middle
+Thank you.
+
+00:33:52.031 --> 00:33:54.031 A:middle
+[ Applause ]
+
+00:33:54.046 --> 00:33:54.986 A:middle
+But wait there's more!
+
+00:33:55.596 --> 00:33:57.206 A:middle
+I actually took this video on
+
+00:33:57.306 --> 00:33:57.936 A:middle
+iOS 11.
+
+00:33:57.936 --> 00:34:00.586 A:middle
+This is not taking advantage of
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.966 --> 00:15:01.736 A:middle
+So, let's take a look at how we
+
+00:15:01.736 --> 00:15:03.216 A:middle
+can start doing that.
+
+00:15:03.656 --> 00:15:04.726 A:middle
+Here, I've started writing a
+
+00:15:04.726 --> 00:15:05.836 A:middle
+function which will take one
+
+00:15:05.836 --> 00:15:07.106 A:middle
+such listing and start
+
+00:15:07.106 --> 00:15:08.366 A:middle
+validating all of the contents.
+
+00:15:09.476 --> 00:15:10.836 A:middle
+So, I'll take a listing, and
+
+00:15:10.836 --> 00:15:12.056 A:middle
+I'll start pulling out the
+
+00:15:12.056 --> 00:15:12.666 A:middle
+product ID.
+
+00:15:13.386 --> 00:15:15.436 A:middle
+And we've learned here not to
+
+00:15:15.436 --> 00:15:17.136 A:middle
+forcibly downcast this ID to an
+
+00:15:17.166 --> 00:15:18.836 A:middle
+Int, but conditionally downcast.
+
+00:15:19.166 --> 00:15:20.766 A:middle
+And if the cast fails the guard
+
+00:15:20.766 --> 00:15:21.876 A:middle
+will fail and will throw an
+
+00:15:21.876 --> 00:15:22.126 A:middle
+error.
+
+00:15:22.216 --> 00:15:24.676 A:middle
+Now I don't want to stop there,
+
+00:15:24.676 --> 00:15:25.746 A:middle
+I want to perform the range
+
+00:15:25.746 --> 00:15:27.266 A:middle
+validation that ensures that
+
+00:15:27.266 --> 00:15:28.626 A:middle
+product ID is also valid.
+
+00:15:28.626 --> 00:15:30.066 A:middle
+That it's positive and not too
+
+00:15:30.066 --> 00:15:30.466 A:middle
+large.
+
+00:15:30.606 --> 00:15:31.616 A:middle
+And again, if something goes
+
+00:15:31.616 --> 00:15:36.386 A:middle
+wrong, I'll throw an error.
+
+00:15:37.006 --> 00:15:38.636 A:middle
+Now, later on I might care to
+
+00:15:38.636 --> 00:15:39.706 A:middle
+check out that URL.
+
+00:15:39.766 --> 00:15:41.466 A:middle
+And again, I'll downcast it to a
+
+00:15:41.466 --> 00:15:42.916 A:middle
+string, instead of forcibly
+
+00:15:42.916 --> 00:15:43.466 A:middle
+downcast.
+
+00:15:44.236 --> 00:15:45.436 A:middle
+And here, I can check the link.
+
+00:15:45.626 --> 00:15:46.836 A:middle
+In this case, I know my server
+
+00:15:46.836 --> 00:15:48.276 A:middle
+will never produce URLs that are
+
+00:15:48.276 --> 00:15:48.806 A:middle
+too long.
+
+00:15:49.156 --> 00:15:50.966 A:middle
+So, if I find a really long URL,
+
+00:15:50.966 --> 00:15:52.296 A:middle
+I'll know that it's invalid.
+
+00:15:54.096 --> 00:15:55.726 A:middle
+Once I've validated that, I can
+
+00:15:55.726 --> 00:15:57.206 A:middle
+send it off to the URL type to
+
+00:15:57.206 --> 00:15:58.376 A:middle
+perform that domain-specific
+
+00:15:58.376 --> 00:15:59.276 A:middle
+validation to make sure it
+
+00:15:59.276 --> 00:16:00.816 A:middle
+actually is a URL, and not just
+

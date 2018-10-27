@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.486 --> 00:15:01.106 A:middle
+your view, even if it's
+
+00:15:01.106 --> 00:15:02.946 A:middle
+mid-animation, when doing
+
+00:15:02.946 --> 00:15:03.576 A:middle
+animation.
+
+00:15:04.256 --> 00:15:06.116 A:middle
+And so, this lets us do these
+
+00:15:06.116 --> 00:15:07.926 A:middle
+really wonderful, interruptible
+
+00:15:07.926 --> 00:15:09.156 A:middle
+interactive animations.
+
+00:15:09.906 --> 00:15:11.636 A:middle
+Let's look at an example in our
+
+00:15:11.636 --> 00:15:13.266 A:middle
+macOS The Gathering trading card
+
+00:15:13.266 --> 00:15:15.166 A:middle
+game app.
+
+00:15:15.416 --> 00:15:17.036 A:middle
+So, here we've got a variable
+
+00:15:17.036 --> 00:15:18.846 A:middle
+that tracks what cards are in
+
+00:15:18.846 --> 00:15:19.406 A:middle
+our deck.
+
+00:15:19.946 --> 00:15:21.386 A:middle
+And, using those Swift property
+
+00:15:21.386 --> 00:15:22.406 A:middle
+observers we talked about
+
+00:15:22.406 --> 00:15:24.236 A:middle
+earlier, we're dirtying the
+
+00:15:24.236 --> 00:15:25.666 A:middle
+layout system every time this
+
+00:15:25.666 --> 00:15:27.066 A:middle
+changes by calling
+
+00:15:27.066 --> 00:15:27.896 A:middle
+setNeedsLayout.
+
+00:15:28.346 --> 00:15:32.326 A:middle
+Next, when we want to put a card
+
+00:15:32.326 --> 00:15:34.106 A:middle
+in the deck, all we have to do
+
+00:15:34.456 --> 00:15:36.346 A:middle
+is add that card to this array,
+
+00:15:36.616 --> 00:15:38.746 A:middle
+which will dirty our layout, and
+
+00:15:38.746 --> 00:15:40.546 A:middle
+then inside of an animation
+
+00:15:40.546 --> 00:15:41.546 A:middle
+block, using this
+
+00:15:41.546 --> 00:15:43.746 A:middle
+beginFromCurrentState option, we
+
+00:15:43.746 --> 00:15:45.276 A:middle
+call layoutIfNeeded.
+
+00:15:46.146 --> 00:15:47.816 A:middle
+This will trigger a call to our
+
+00:15:47.816 --> 00:15:49.576 A:middle
+code in layoutSubviews, which
+
+00:15:49.576 --> 00:15:50.746 A:middle
+will move all of our views
+
+00:15:50.746 --> 00:15:52.606 A:middle
+around, play the appropriate
+
+00:15:52.606 --> 00:15:54.056 A:middle
+animation state transitions.
+
+00:15:54.316 --> 00:15:55.836 A:middle
+And, what's really excellent
+
+00:15:55.836 --> 00:15:57.056 A:middle
+about this, that I really want
+
+00:15:57.056 --> 00:15:58.746 A:middle
+to highlight here, is notice how
+
+00:15:58.746 --> 00:16:00.516 A:middle
+we didn't add any special case
+

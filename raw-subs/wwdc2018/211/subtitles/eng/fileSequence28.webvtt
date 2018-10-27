@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.216 --> 00:28:02.966 A:middle
+File, View, Target and select
+
+00:28:02.966 --> 00:28:04.446 A:middle
+the Intents Extension target.
+
+00:28:05.676 --> 00:28:06.496 A:middle
+I'll give it a name,
+
+00:28:06.656 --> 00:28:09.826 A:middle
+SoupChefIntents, and I click
+
+00:28:09.826 --> 00:28:10.286 A:middle
+Finish.
+
+00:28:11.256 --> 00:28:14.956 A:middle
+Since I've added a new target
+
+00:28:14.956 --> 00:28:17.316 A:middle
+where I'll use the intents, I
+
+00:28:17.316 --> 00:28:18.166 A:middle
+need to make sure that the
+
+00:28:18.166 --> 00:28:19.316 A:middle
+intent definition file is
+
+00:28:19.316 --> 00:28:20.386 A:middle
+included in that target.
+
+00:28:20.746 --> 00:28:21.906 A:middle
+So, I go back to the intent
+
+00:28:21.906 --> 00:28:23.956 A:middle
+definition file and add it to
+
+00:28:24.036 --> 00:28:25.156 A:middle
+that target.
+
+00:28:25.716 --> 00:28:27.196 A:middle
+Again, I don't want to generate
+
+00:28:27.196 --> 00:28:28.226 A:middle
+code in that target, so, in the
+
+00:28:28.226 --> 00:28:29.656 A:middle
+dropdown, I'll select No
+
+00:28:29.656 --> 00:28:33.726 A:middle
+generated classes.
+
+00:28:34.616 --> 00:28:36.976 A:middle
+I also want the extension to
+
+00:28:36.976 --> 00:28:38.406 A:middle
+have access to the same data as
+
+00:28:38.406 --> 00:28:40.066 A:middle
+the app, so I'll add it to the
+
+00:28:40.066 --> 00:28:40.766 A:middle
+same app group.
+
+00:28:41.646 --> 00:28:43.316 A:middle
+In the Project Settings, I
+
+00:28:43.316 --> 00:28:47.276 A:middle
+select the intents target and in
+
+00:28:47.546 --> 00:28:49.146 A:middle
+the capability step, I'll add it
+
+00:28:49.316 --> 00:28:52.286 A:middle
+to the same app group.
+
+00:28:52.486 --> 00:28:53.886 A:middle
+Great. Now, we're ready to
+
+00:28:53.886 --> 00:28:55.226 A:middle
+implement the intent handler
+
+00:28:55.346 --> 00:28:56.556 A:middle
+that was created with this
+
+00:28:56.556 --> 00:28:56.916 A:middle
+target.
+
+00:28:59.886 --> 00:29:01.626 A:middle
+First, I'll import our shared
+

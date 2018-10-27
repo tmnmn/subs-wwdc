@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.513 --> 00:13:03.650 align:start position:23% line:-1
+量子化後のビット数を８ビットに
+
+00:13:04.685 --> 00:13:08.755 align:start position:29% line:-2
+量子化アルゴリズムは
+linearを指定します
+
+00:13:10.257 --> 00:13:14.995 align:start position:29% line:-2
+ニューラルネットワークの
+すべてのレイヤに対して
+
+00:13:15.095 --> 00:13:19.099 align:start position:32% line:-2
+反復処理が行われて
+量子化が終了しました
+
+00:13:20.467 --> 00:13:23.437 align:start position:30% line:-1
+量子化することによって
+
+00:13:23.537 --> 00:13:27.541 align:start position:30% line:-2
+モデルの精度が落ちると
+述べましたね
+
+00:13:27.908 --> 00:13:31.578 align:start position:34% line:-2
+元のモデルとの差は
+どの程度でしょう
+
+00:13:32.212 --> 00:13:36.250 align:start position:36% line:-2
+それを確かめる
+最も簡単な方法は
+
+00:13:36.350 --> 00:13:40.154 align:start position:34% line:-2
+まず 元のモデルの
+データを推論します
+
+00:13:40.587 --> 00:13:44.291 align:start position:27% line:-2
+そして 量子化後のモデルの
+同じデータと
+
+00:13:44.391 --> 00:13:48.762 align:start position:25% line:-1
+比較して一致率を求めるのです
+
+00:13:49.029 --> 00:13:51.431 align:start position:25% line:-2
+Core ML Toolsの
+機能を使います
+
+00:13:51.532 --> 00:13:55.869 align:start position:14% line:-1
+compare modelsと入力します
+
+00:13:56.203 --> 00:13:58.238 align:start position:30% line:-1
+精度の高い元のモデルと
+
+00:13:58.505 --> 00:14:01.275 align:start position:27% line:-1
+量子化後のモデルを渡します
+

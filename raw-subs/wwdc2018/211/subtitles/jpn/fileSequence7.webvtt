@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.888 --> 00:07:04.691 align:start position:27% line:-2
+しかしShortcutsの
+長所を有効利用するには
+
+00:07:04.791 --> 00:07:06.493 align:start position:27% line:-1
+Intentを使いましょう
+
+00:07:06.593 --> 00:07:09.496 align:start position:34% line:-2
+Appを
+起動せずに使え
+
+00:07:10.030 --> 00:07:14.401 align:start position:27% line:-2
+カスタマイズした音声と
+UIも入れられ
+
+00:07:15.202 --> 00:07:18.138 align:start position:36% line:-2
+後ほどウィレムが
+説明しますが
+
+00:07:18.238 --> 00:07:20.774 align:start position:29% line:-1
+パラメータ予測もできます
+
+00:07:21.642 --> 00:07:24.044 align:start position:36% line:-1
+どちらの方法かを決定したら
+
+00:07:24.144 --> 00:07:27.748 align:start position:34% line:-2
+あとは実際に
+実装してみましょう
+
+00:07:29.783 --> 00:07:32.719 align:start position:18% line:-2
+まずはNSUserActivityを
+使ったショートカットです
+
+00:07:32.853 --> 00:07:36.723 align:start position:29% line:-2
+初めは
+ショートカットの定義です
+
+00:07:36.823 --> 00:07:42.162 align:start position:23% line:-2
+Appの
+Info.plistファイルで
+
+00:07:42.262 --> 00:07:45.032 align:start position:30% line:-2
+UserActivityTypeを
+登録します
+
+00:07:46.333 --> 00:07:50.170 align:start position:32% line:-2
+次にショートカットを
+報告します
+
+00:07:50.270 --> 00:07:53.240 align:start position:27% line:-2
+対象Appに対し
+常に
+
+00:07:53.340 --> 00:07:58.245 align:start position:14% line:-2
+NSUserActivityオブジェクト
+を準備しておきます
+
+00:07:59.146 --> 00:08:01.448 align:start position:32% line:-1
+ここで重要なフラグが
+

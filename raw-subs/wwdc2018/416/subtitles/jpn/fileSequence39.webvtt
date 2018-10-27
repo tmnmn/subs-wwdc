@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:57.071 --> 00:39:01.408 align:start position:29% line:-2
+次に仮想メモリ領域の
+開始アドレスにパスをして
+
+00:39:01.775 --> 00:39:03.277 align:start position:39% line:-1
+様子を見ます
+
+00:39:03.977 --> 00:39:10.417 align:start position:21% line:-2
+バックトレースは大きくないので
+コードがラインに表示されています
+
+00:39:10.517 --> 00:39:14.388 align:start position:30% line:-2
+ライン６から９は
+私のAppのコードです
+
+00:39:14.488 --> 00:39:16.823 align:start position:34% line:-1
+ライン６にあるのは
+
+00:39:16.924 --> 00:39:19.660 align:start position:16% line:-1
+NoirFilter apply関数で
+
+00:39:19.760 --> 00:39:24.798 align:start position:27% line:-2
+特定の仮想メモリ領域作成の
+元になっています
+
+00:39:24.898 --> 00:39:31.572 align:start position:23% line:-2
+私のAppでどの部分がメモリを
+使用しているかが分かる証拠です
+
+00:39:31.805 --> 00:39:34.441 align:start position:21% line:-1
+Memgraphファイルに戻ると
+
+00:39:34.541 --> 00:39:38.879 align:start position:21% line:-2
+Xcodeと同じバックトレースが
+見て取れます
+
+00:39:39.146 --> 00:39:42.983 align:start position:12% line:-2
+NoirFilter applyメソッドも
+あります
+
+00:39:43.183 --> 00:39:48.655 align:start position:25% line:-2
+実際にデバッグしていないので
+ハイライトは見られません
+
+00:39:48.755 --> 00:39:50.390 align:start position:27% line:-2
+memgraphファイルを
+読み込んでいるので
+
+00:39:50.490 --> 00:39:53.927 align:start position:23% line:-2
+malloc historyと
+同じ出力ですね
+
+00:39:54.294 --> 00:39:59.299 align:start position:30% line:-2
+そして実際に
+さらに確認をしてみると
+
+00:39:59.399 --> 00:40:05.772 align:start position:23% line:-2
+仮想メモリ領域の
+CG画像のフルリストがあります
+

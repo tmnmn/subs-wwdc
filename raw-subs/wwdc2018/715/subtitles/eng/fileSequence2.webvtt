@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.216 --> 00:02:00.266 A:middle
+can be really difficult with
+
+00:02:00.266 --> 00:02:00.806 A:middle
+sockets.
+
+00:02:01.356 --> 00:02:03.186 A:middle
+For starters, sockets connect to
+
+00:02:03.186 --> 00:02:05.556 A:middle
+addresses, so you have to, most
+
+00:02:05.556 --> 00:02:06.436 A:middle
+of the time you have a host
+
+00:02:06.436 --> 00:02:07.606 A:middle
+name, so you're going to have to
+
+00:02:07.606 --> 00:02:08.866 A:middle
+resolve that host name to an
+
+00:02:08.866 --> 00:02:10.455 A:middle
+address.
+
+00:02:10.616 --> 00:02:11.926 A:middle
+When you do that, you often end
+
+00:02:11.926 --> 00:02:13.286 A:middle
+up with way more than one
+
+00:02:13.286 --> 00:02:13.826 A:middle
+address.
+
+00:02:13.826 --> 00:02:15.536 A:middle
+You'll have some IPv4 addresses,
+
+00:02:15.816 --> 00:02:18.396 A:middle
+some IPv6 addresses, and now
+
+00:02:18.396 --> 00:02:19.476 A:middle
+you've got this challenge, which
+
+00:02:19.516 --> 00:02:20.376 A:middle
+address should you try and
+
+00:02:20.376 --> 00:02:21.746 A:middle
+connect to, in what order?
+
+00:02:22.076 --> 00:02:23.086 A:middle
+How long do you wait before you
+
+00:02:23.086 --> 00:02:23.856 A:middle
+try the next one?
+
+00:02:24.336 --> 00:02:25.776 A:middle
+You can spend years trying to
+
+00:02:25.776 --> 00:02:26.426 A:middle
+perfect this.
+
+00:02:26.806 --> 00:02:29.606 A:middle
+I know because we have.
+
+00:02:30.266 --> 00:02:31.546 A:middle
+Once you get past the dual stack
+
+00:02:31.806 --> 00:02:33.536 A:middle
+host problems, you run into a
+
+00:02:33.536 --> 00:02:35.016 A:middle
+whole bunch of other issues.
+
+00:02:35.466 --> 00:02:36.746 A:middle
+There are some networks that use
+
+00:02:36.746 --> 00:02:38.146 A:middle
+something called Proxy Automatic
+
+00:02:38.146 --> 00:02:39.296 A:middle
+Configuration or PAC.
+
+00:02:40.116 --> 00:02:41.266 A:middle
+On these networks, there's a
+
+00:02:41.266 --> 00:02:42.946 A:middle
+JavaScript that you get, and you
+
+00:02:42.946 --> 00:02:44.256 A:middle
+have to pass a URL into the
+
+00:02:44.256 --> 00:02:45.846 A:middle
+JavaScript, and the JavaScript
+
+00:02:45.846 --> 00:02:47.376 A:middle
+runs and spits out an answer
+
+00:02:47.706 --> 00:02:49.646 A:middle
+that says either you can go
+
+00:02:49.646 --> 00:02:51.226 A:middle
+direct or you have to use this
+
+00:02:51.226 --> 00:02:52.876 A:middle
+SOCKS proxy over here or that
+
+00:02:52.876 --> 00:02:54.466 A:middle
+HTTP connect proxy over there.
+
+00:02:54.946 --> 00:02:56.196 A:middle
+And now your app has to support
+
+00:02:56.196 --> 00:02:58.176 A:middle
+SOCKS proxies and HTTP connect
+
+00:02:58.306 --> 00:03:00.016 A:middle
+proxies, and this can be really
+

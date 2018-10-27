@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.486 --> 00:15:01.106 A:middle
+But those are really hard for us
+
+00:15:01.106 --> 00:15:02.476 A:middle
+to capture as engineers.
+
+00:15:03.256 --> 00:15:04.326 A:middle
+So, we translate them into
+
+00:15:04.326 --> 00:15:06.186 A:middle
+engineering metrics, things like
+
+00:15:06.296 --> 00:15:08.276 A:middle
+peak memory consumption, how
+
+00:15:08.276 --> 00:15:09.836 A:middle
+much battery drains during a
+
+00:15:09.836 --> 00:15:12.056 A:middle
+given task or how much CPU time
+
+00:15:12.436 --> 00:15:13.896 A:middle
+is burned during a given task.
+
+00:15:14.316 --> 00:15:16.206 A:middle
+And, finally, how much IO we do
+
+00:15:16.816 --> 00:15:17.906 A:middle
+during a given task.
+
+00:15:18.806 --> 00:15:19.656 A:middle
+To make this a little more
+
+00:15:19.656 --> 00:15:20.886 A:middle
+concrete, we'll use this
+
+00:15:20.886 --> 00:15:21.626 A:middle
+application.
+
+00:15:22.286 --> 00:15:23.236 A:middle
+Some of you may remember the
+
+00:15:23.236 --> 00:15:24.736 A:middle
+history demo application that
+
+00:15:24.836 --> 00:15:26.886 A:middle
+was introduced last year at WWDC
+
+00:15:27.306 --> 00:15:28.536 A:middle
+and I've modified it for the
+
+00:15:28.536 --> 00:15:29.676 A:middle
+purposes of this talk.
+
+00:15:30.506 --> 00:15:32.156 A:middle
+There are a few actions here
+
+00:15:32.156 --> 00:15:33.466 A:middle
+that a customer can take while
+
+00:15:33.466 --> 00:15:34.526 A:middle
+using our application.
+
+00:15:35.036 --> 00:15:36.676 A:middle
+The first is they can add a
+
+00:15:36.676 --> 00:15:38.826 A:middle
+single post to our database by
+
+00:15:38.826 --> 00:15:39.746 A:middle
+hitting the + button.
+
+00:15:40.786 --> 00:15:42.256 A:middle
+They can also download any
+
+00:15:42.256 --> 00:15:44.546 A:middle
+pending data from the server by
+
+00:15:44.546 --> 00:15:45.406 A:middle
+tapping Download.
+
+00:15:50.716 --> 00:15:52.796 A:middle
+And, finally, for anything that
+
+00:15:52.796 --> 00:15:53.966 A:middle
+hasn't yet been uploaded to a
+
+00:15:53.966 --> 00:15:55.636 A:middle
+server, they can tap Post All.
+
+00:15:56.596 --> 00:15:58.466 A:middle
+Now, this application has a
+
+00:15:58.466 --> 00:16:00.416 A:middle
+fairly small set of interactions
+

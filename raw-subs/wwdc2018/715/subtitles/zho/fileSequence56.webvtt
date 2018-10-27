@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:58.392 --> 00:56:00.260 align:middle line:-1
+与多路径TCP略有不同
+
+00:56:01.028 --> 00:56:04.331 align:middle line:-2
+因为每当我们更改网络时
+我们都会自动为你迁移
+
+00:56:04.865 --> 00:56:06.633 align:middle line:-1
+你的连接
+
+00:56:06.700 --> 00:56:09.403 align:middle line:-2
+只有在你完全没有可用的网络时
+才是不可用的
+
+00:56:13.273 --> 00:56:16.777 align:middle line:-1
+因此在等待连接之间
+
+00:56:17.845 --> 00:56:20.647 align:middle line:-1
+可用性 更优路径 MPTCP
+
+00:56:21.014 --> 00:56:23.884 align:middle line:-1
+我们真的希望你的app中
+
+00:56:24.084 --> 00:56:27.087 align:middle line:-2
+所有这些使用
+SCNetworkReachability
+
+00:56:27.254 --> 00:56:29.456 align:middle line:-1
+来手动检查网络更改的用例
+
+00:56:29.823 --> 00:56:30.991 align:middle line:-1
+都能被替换掉
+
+00:56:31.491 --> 00:56:32.993 align:middle line:-1
+然而我们的确意识到了
+
+00:56:33.360 --> 00:56:36.663 align:middle line:-1
+在有些情况下你仍然想知道
+
+00:56:37.164 --> 00:56:39.466 align:middle line:-2
+有哪些可用的网络
+以及它什么时候改变
+
+00:56:40.667 --> 00:56:46.440 align:middle line:-2
+为此Network.framework提供了
+一个新的名为NWPathMonitor的API
+
+00:56:47.641 --> 00:56:48.909 align:middle line:-1
+这个PathMonitor
+
+00:56:49.209 --> 00:56:51.378 align:middle line:-1
+并不监视可达性
+
+00:56:51.445 --> 00:56:54.181 align:middle line:-1
+或尝试预测给定主机的可达性
+
+00:56:54.414 --> 00:56:55.315 align:middle line:-1
+而只是让你知道
+
+00:56:55.382 --> 00:56:57.484 align:middle line:-1
+你的设备上接口的当前状态是什么
+
+00:56:57.651 --> 00:56:59.820 align:middle line:-1
+以及它们何时改变
+

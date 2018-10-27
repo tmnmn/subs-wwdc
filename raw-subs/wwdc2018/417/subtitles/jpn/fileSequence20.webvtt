@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.199 --> 00:20:05.472 align:start position:25% line:-2
+アプリケーション内やSDKの
+別のクラスとやり取りします
+
+00:20:05.572 --> 00:20:08.575 align:start position:29% line:-2
+外部クラスを作成するのは
+難しいため―
+
+00:20:08.675 --> 00:20:12.513 align:start position:30% line:-2
+テストの記述も困難だと
+分かりますね
+
+00:20:12.846 --> 00:20:17.618 align:start position:25% line:-2
+直接 作成されないAPIだと
+特によく起こります
+
+00:20:17.718 --> 00:20:21.989 align:start position:27% line:-2
+デリゲートメソッドがあれば
+さらに困難です
+
+00:20:22.823 --> 00:20:25.826 align:start position:34% line:-2
+プロトコルを使って
+解決しましょう
+
+00:20:25.926 --> 00:20:28.829 align:start position:29% line:-2
+外部クラスとのやり取りを
+モックし
+
+00:20:28.929 --> 00:20:32.332 align:start position:36% line:-2
+テストの信頼性は
+損ないません
+
+00:20:34.067 --> 00:20:39.172 align:start position:2% line:-2
+CurrentLocationProviderクラスで
+CoreLocationを使っています
+
+00:20:39.807 --> 00:20:43.710 align:start position:18% line:-2
+CLLocationManagerを
+イニシャライザに構成し
+
+00:20:43.811 --> 00:20:47.915 align:start position:34% line:-2
+自身をデリゲートと
+設定しています
+
+00:20:49.983 --> 00:20:53.954 align:start position:9% line:-2
+checkCurrentLocationという
+メソッドです
+
+00:20:54.087 --> 00:20:56.990 align:start position:32% line:-2
+現在地をリクエストし
+完了ブロックで―
+
+00:20:57.090 --> 00:20:59.960 align:start position:29% line:-1
+スポットかどうか返します
+

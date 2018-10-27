@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.246 --> 00:14:00.116 A:middle
+Good afternoon everyone.
+
+00:14:00.666 --> 00:14:01.496 A:middle
+It's great to be here.
+
+00:14:01.626 --> 00:14:03.036 A:middle
+My name is Emmanuel, I'm an
+
+00:14:03.036 --> 00:14:04.116 A:middle
+engineer on a Core Image team.
+
+00:14:05.436 --> 00:14:07.036 A:middle
+So, during the next half of this
+
+00:14:07.036 --> 00:14:08.766 A:middle
+session, we'll shift our focus
+
+00:14:08.766 --> 00:14:10.206 A:middle
+away from the Core Image Engine
+
+00:14:10.356 --> 00:14:12.946 A:middle
+and explore novel ways to
+
+00:14:12.946 --> 00:14:14.066 A:middle
+prototype using Core Image.
+
+00:14:14.916 --> 00:14:17.266 A:middle
+We'll also see how we can
+
+00:14:17.266 --> 00:14:18.206 A:middle
+leverage Core Image in your
+
+00:14:18.206 --> 00:14:19.286 A:middle
+machine learning applications.
+
+00:14:19.876 --> 00:14:20.806 A:middle
+So let's get started.
+
+00:14:21.226 --> 00:14:23.356 A:middle
+Since I want to talk about
+
+00:14:23.356 --> 00:14:24.966 A:middle
+prototyping, let's take a look
+
+00:14:25.076 --> 00:14:27.076 A:middle
+at the lifecycle of an image
+
+00:14:27.076 --> 00:14:27.816 A:middle
+processing filter.
+
+00:14:30.256 --> 00:14:33.136 A:middle
+So, let's say that we are trying
+
+00:14:33.136 --> 00:14:34.696 A:middle
+to come up with a foreground to
+
+00:14:34.696 --> 00:14:35.676 A:middle
+background segmentation.
+
+00:14:35.836 --> 00:14:38.506 A:middle
+And here, what this means
+
+00:14:38.506 --> 00:14:39.546 A:middle
+precisely is that we'd like to
+
+00:14:39.546 --> 00:14:41.076 A:middle
+get a mask which is 1.0 in the
+
+00:14:41.076 --> 00:14:43.076 A:middle
+foreground; 0.0 in the
+
+00:14:43.076 --> 00:14:44.596 A:middle
+background and has continuous
+
+00:14:44.596 --> 00:14:45.426 A:middle
+values in between.
+
+00:14:46.116 --> 00:14:48.256 A:middle
+The difficulty in implementing
+
+00:14:48.256 --> 00:14:49.986 A:middle
+such a filter heavily depends on
+
+00:14:49.986 --> 00:14:51.056 A:middle
+the nature of data you have
+
+00:14:51.056 --> 00:14:51.576 A:middle
+available.
+
+00:14:51.706 --> 00:14:54.466 A:middle
+So, for example, if you have an
+
+00:14:54.466 --> 00:14:56.006 A:middle
+additional depth buffer,
+
+00:14:56.406 --> 00:14:58.926 A:middle
+alongside your RGB image, things
+
+00:14:58.926 --> 00:15:00.246 A:middle
+can become easier.
+

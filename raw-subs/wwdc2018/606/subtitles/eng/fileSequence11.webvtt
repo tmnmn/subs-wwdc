@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.276 --> 00:11:00.646 A:middle
+So, let's see how we can use
+
+00:11:00.646 --> 00:11:01.486 A:middle
+this to build a real
+
+00:11:01.486 --> 00:11:02.026 A:middle
+application.
+
+00:11:03.426 --> 00:11:04.736 A:middle
+We'll break this app into three
+
+00:11:04.736 --> 00:11:05.286 A:middle
+stages.
+
+00:11:05.656 --> 00:11:07.396 A:middle
+First, we'll generate primary
+
+00:11:07.396 --> 00:11:09.186 A:middle
+rays, find the intersections
+
+00:11:09.186 --> 00:11:10.556 A:middle
+with the scene, and compute
+
+00:11:10.556 --> 00:11:11.126 A:middle
+shading.
+
+00:11:11.996 --> 00:11:13.006 A:middle
+This will be equivalent to what
+
+00:11:13.006 --> 00:11:13.836 A:middle
+we could have done with the
+
+00:11:13.836 --> 00:11:15.626 A:middle
+rasterizer, but we'll take it
+
+00:11:15.626 --> 00:11:16.616 A:middle
+further in the next steps.
+
+00:11:17.336 --> 00:11:19.426 A:middle
+So next, we'll add shadows.
+
+00:11:20.046 --> 00:11:21.436 A:middle
+MPS has special support for
+
+00:11:21.436 --> 00:11:23.156 A:middle
+shadow rays, which can make this
+
+00:11:23.156 --> 00:11:24.426 A:middle
+application even faster.
+
+00:11:24.576 --> 00:11:27.626 A:middle
+And finally, we'll simulate
+
+00:11:27.626 --> 00:11:29.076 A:middle
+light bouncing around the scene
+
+00:11:29.306 --> 00:11:30.406 A:middle
+using secondary rays.
+
+00:11:31.426 --> 00:11:32.616 A:middle
+This would be very difficult to
+
+00:11:32.616 --> 00:11:33.806 A:middle
+do with the rasterizer, but
+
+00:11:33.806 --> 00:11:34.916 A:middle
+we'll see that it's, actually, a
+
+00:11:34.916 --> 00:11:36.036 A:middle
+straightforward extension with
+
+00:11:36.036 --> 00:11:36.476 A:middle
+Ray Tracing.
+
+00:11:37.226 --> 00:11:39.906 A:middle
+So, let's start with primary
+
+00:11:41.276 --> 00:11:41.396 A:middle
+rays.
+
+00:11:41.686 --> 00:11:42.706 A:middle
+There are five things that we
+
+00:11:42.706 --> 00:11:43.186 A:middle
+need to do.
+
+00:11:44.156 --> 00:11:45.726 A:middle
+First, we'll create a ray
+
+00:11:45.726 --> 00:11:46.756 A:middle
+triangle intersector.
+
+00:11:48.076 --> 00:11:49.096 A:middle
+Then, we'll create an
+
+00:11:49.096 --> 00:11:50.376 A:middle
+acceleration structure from our
+
+00:11:50.376 --> 00:11:51.186 A:middle
+vertex buffer.
+
+00:11:51.646 --> 00:11:54.766 A:middle
+Next, we'll generate primary
+
+00:11:54.766 --> 00:11:56.276 A:middle
+rays and write them into our ray
+
+00:11:56.276 --> 00:11:56.716 A:middle
+buffer.
+
+00:11:58.706 --> 00:11:59.406 A:middle
+We'll then, find the
+
+00:11:59.406 --> 00:12:01.156 A:middle
+intersections between those rays
+

@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.339 --> 00:24:01.942 align:middle line:-1
+这意味着你需要
+
+00:24:02.142 --> 00:24:05.112 align:middle line:-1
+从UI app激活方法中尽快返回
+
+00:24:05.579 --> 00:24:07.080 align:middle line:-1
+即WillFinishLaunching
+
+00:24:07.147 --> 00:24:09.783 align:middle line:-2
+didFinishLaunching
+和didBecomeActive
+
+00:24:10.184 --> 00:24:13.220 align:middle line:-2
+因为UIKit只有
+在你从这些函数返回之后
+
+00:24:13.287 --> 00:24:15.689 align:middle line:-1
+才将你的app标记为活跃状态
+
+00:24:17.024 --> 00:24:21.295 align:middle line:-1
+接下来 你需要在app启动期间
+
+00:24:21.361 --> 00:24:22.930 align:middle line:-1
+避免任何文件系统写入
+
+00:24:23.530 --> 00:24:25.999 align:middle line:-2
+因为它们是阻塞的
+并需要进行系统调用
+
+00:24:26.834 --> 00:24:30.204 align:middle line:-1
+同样的 你也需要在app启动期间
+
+00:24:30.270 --> 00:24:32.306 align:middle line:-1
+避免执行非常大的读取操作
+
+00:24:33.006 --> 00:24:35.075 align:middle line:-1
+相反 你应该只读入
+
+00:24:35.142 --> 00:24:38.011 align:middle line:-1
+你现在绝对需要的数据
+
+00:24:39.046 --> 00:24:42.616 align:middle line:-1
+最后我建议你检查数据库的健康状况
+
+00:24:42.683 --> 00:24:44.585 align:middle line:-1
+保持整洁总是一个好主意
+
+00:24:45.452 --> 00:24:47.721 align:middle line:-2
+如果你使用的是
+像Core Data这样的库
+
+00:24:48.222 --> 00:24:52.326 align:middle line:-1
+考虑优化你的模式以使其尽可能快
+
+00:24:52.826 --> 00:24:56.797 align:middle line:-2
+而如果你使用SQLite
+或类似技术来实现自己的解决方案
+
+00:24:57.064 --> 00:25:00.434 align:middle line:-1
+考虑定期清空数据库
+

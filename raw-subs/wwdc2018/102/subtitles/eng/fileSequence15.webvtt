@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:57.906 --> 00:15:00.426 A:middle
+PlanetUpdateService.swift --
+
+00:15:00.426 --> 00:15:02.106 A:middle
+this is the file that handles
+
+00:15:02.106 --> 00:15:03.056 A:middle
+that planetary update.
+
+00:15:03.056 --> 00:15:05.096 A:middle
+So I want to add some logs, some
+
+00:15:05.176 --> 00:15:06.926 A:middle
+signposts to help me understand
+
+00:15:06.926 --> 00:15:08.266 A:middle
+what's going on in my code.
+
+00:15:08.266 --> 00:15:10.696 A:middle
+So I'm going to start by adding
+
+00:15:10.746 --> 00:15:11.506 A:middle
+a log handle.
+
+00:15:11.676 --> 00:15:13.566 A:middle
+So I'm going to use the new
+
+00:15:13.566 --> 00:15:17.296 A:middle
+pointsOfInterest category.
+
+00:15:17.396 --> 00:15:19.536 A:middle
+Now this is a special new
+
+00:15:19.536 --> 00:15:20.166 A:middle
+category.
+
+00:15:20.676 --> 00:15:22.276 A:middle
+Anything that I log with it is
+
+00:15:22.346 --> 00:15:23.636 A:middle
+automatically going to show up
+
+00:15:23.636 --> 00:15:24.846 A:middle
+right inside instruments.
+
+00:15:25.426 --> 00:15:27.256 A:middle
+Now, the first thing I want to
+
+00:15:27.256 --> 00:15:29.956 A:middle
+see is when we kick off this
+
+00:15:30.036 --> 00:15:30.596 A:middle
+update.
+
+00:15:30.596 --> 00:15:32.276 A:middle
+And that happens in this method.
+
+00:15:32.276 --> 00:15:33.756 A:middle
+So I'm going to add my first log
+
+00:15:33.756 --> 00:15:34.906 A:middle
+statement here.
+
+00:15:34.906 --> 00:15:36.186 A:middle
+I'm going to say requesting
+
+00:15:36.186 --> 00:15:37.846 A:middle
+planet data so that we could see
+
+00:15:37.846 --> 00:15:38.176 A:middle
+that.
+
+00:15:39.296 --> 00:15:40.656 A:middle
+And then what I really want to
+
+00:15:40.656 --> 00:15:43.156 A:middle
+know is how long is it taking to
+
+00:15:43.156 --> 00:15:45.706 A:middle
+process and parse all the data
+
+00:15:45.776 --> 00:15:46.666 A:middle
+that I'm doing here?
+
+00:15:47.476 --> 00:15:49.646 A:middle
+So right here is where that
+
+00:15:49.646 --> 00:15:50.336 A:middle
+happens.
+
+00:15:50.796 --> 00:15:52.476 A:middle
+And to help me visualize this,
+
+00:15:52.476 --> 00:15:53.196 A:middle
+I'm going to add a couple of
+
+00:15:53.196 --> 00:15:53.906 A:middle
+signposts.
+
+00:15:54.476 --> 00:15:55.866 A:middle
+So the first signpost is going
+
+00:15:56.666 --> 00:15:58.946 A:middle
+to be a begin-type signpost
+
+00:15:58.946 --> 00:16:00.666 A:middle
+here, just before I start doing
+

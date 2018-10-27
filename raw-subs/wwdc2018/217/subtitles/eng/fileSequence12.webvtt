@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:01.116 --> 00:12:02.676 A:middle
+Relevance providers are your way
+
+00:12:02.676 --> 00:12:04.146 A:middle
+to give us a hint as to when we
+
+00:12:04.146 --> 00:12:05.116 A:middle
+should show your content.
+
+00:12:06.436 --> 00:12:07.366 A:middle
+They really let us know how we
+
+00:12:07.366 --> 00:12:08.686 A:middle
+should incorporate inputs like
+
+00:12:08.716 --> 00:12:09.966 A:middle
+the time of day, the user's
+
+00:12:09.966 --> 00:12:11.536 A:middle
+location, or their routine, when
+
+00:12:11.536 --> 00:12:12.506 A:middle
+calculating relevance.
+
+00:12:13.186 --> 00:12:14.166 A:middle
+And, in fact, you can give more
+
+00:12:14.166 --> 00:12:15.366 A:middle
+than one relevance provider on a
+
+00:12:15.366 --> 00:12:16.266 A:middle
+given relevance shortcut.
+
+00:12:16.306 --> 00:12:17.526 A:middle
+And, we're going to take the
+
+00:12:17.526 --> 00:12:18.686 A:middle
+inner section of their output.
+
+00:12:19.016 --> 00:12:20.076 A:middle
+So, if you give us a relevance
+
+00:12:20.076 --> 00:12:21.286 A:middle
+provider that says a certain
+
+00:12:21.286 --> 00:12:22.296 A:middle
+time of day's very important.
+
+00:12:22.296 --> 00:12:23.336 A:middle
+And, another one that says a
+
+00:12:23.336 --> 00:12:24.606 A:middle
+specific location's important,
+
+00:12:25.116 --> 00:12:26.256 A:middle
+you'll get high relevance output
+
+00:12:26.356 --> 00:12:28.136 A:middle
+when both it is that time of day
+
+00:12:28.206 --> 00:12:29.296 A:middle
+and the user is at that
+
+00:12:29.296 --> 00:12:29.806 A:middle
+location.
+
+00:12:30.586 --> 00:12:31.866 A:middle
+If instead you want the union of
+
+00:12:31.866 --> 00:12:32.816 A:middle
+these relevance providers,
+
+00:12:32.816 --> 00:12:33.756 A:middle
+you're going to want to provide
+
+00:12:33.906 --> 00:12:35.356 A:middle
+two separate relevance
+
+00:12:35.356 --> 00:12:36.356 A:middle
+shortcuts, each one with a
+
+00:12:36.356 --> 00:12:37.246 A:middle
+different relevance provider.
+
+00:12:37.746 --> 00:12:39.716 A:middle
+So, let's take a look at the
+
+00:12:39.716 --> 00:12:40.586 A:middle
+options we have available.
+
+00:12:41.416 --> 00:12:42.246 A:middle
+The first one is
+
+00:12:42.436 --> 00:12:44.726 A:middle
+INDateRelevanceProvider, which
+
+00:12:44.726 --> 00:12:45.656 A:middle
+has a required startDate
+
+00:12:45.656 --> 00:12:46.876 A:middle
+parameter, and an optional
+
+00:12:46.876 --> 00:12:47.536 A:middle
+endDate parameter.
+
+00:12:48.546 --> 00:12:49.516 A:middle
+When you create an instance of
+
+00:12:49.516 --> 00:12:50.986 A:middle
+this relevance provider, the
+
+00:12:50.986 --> 00:12:52.416 A:middle
+closer time of day gets to the
+
+00:12:52.536 --> 00:12:53.676 A:middle
+start that you've provided, the
+
+00:12:53.676 --> 00:12:54.866 A:middle
+higher the relevance output of
+
+00:12:54.866 --> 00:12:55.346 A:middle
+the provider.
+
+00:12:56.226 --> 00:12:57.596 A:middle
+After that time of day passes,
+
+00:12:57.836 --> 00:12:58.856 A:middle
+the relevance will fall off on a
+
+00:12:58.856 --> 00:13:00.126 A:middle
+curve, allowing more content to
+

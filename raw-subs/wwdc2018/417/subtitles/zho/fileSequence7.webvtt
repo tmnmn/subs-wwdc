@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.985 --> 00:07:00.220 align:middle line:-1
+并使用与我们刚才看到的
+
+00:07:00.287 --> 00:07:02.055 align:middle line:-1
+请求类型匹配方法签名的方法
+
+00:07:02.122 --> 00:07:04.291 align:middle line:-1
+创建了APIRequest协议
+
+00:07:05.526 --> 00:07:08.362 align:middle line:-2
+这是被请求类型初始化的
+APIRequestLoader
+
+00:07:09.530 --> 00:07:13.901 align:middle line:-2
+和urlSession实例类
+来使用的
+
+00:07:17.504 --> 00:07:20.174 align:middle line:-2
+这个类有一个
+loadAPIRequest方法
+
+00:07:20.674 --> 00:07:24.478 align:middle line:-2
+它使用该apiRequest值
+来生成一个URL请求
+
+00:07:25.412 --> 00:07:27.314 align:middle line:-1
+将其输入到urlSession中
+
+00:07:28.415 --> 00:07:31.151 align:middle line:-2
+然后再用apiRequest
+在你的响应中进行解析
+
+00:07:34.721 --> 00:07:37.491 align:middle line:-2
+现在我们可以继续为这个方法
+编写单元测试
+
+00:07:37.925 --> 00:07:40.194 align:middle line:-2
+但是现在我实际上想要向上
+移动金字塔
+
+00:07:40.527 --> 00:07:42.629 align:middle line:-1
+并查看一个中级集成测试
+
+00:07:42.696 --> 00:07:44.898 align:middle line:-1
+它涵盖了这个数据流的几个部分
+
+00:07:47.000 --> 00:07:49.903 align:middle line:-2
+在套件的这一层我还能够进行的
+另一个测试是
+
+00:07:49.970 --> 00:07:53.106 align:middle line:-1
+我与URLSession API
+
+00:07:53.173 --> 00:07:55.375 align:middle line:-1
+的交互是正确的
+
+00:07:57.010 --> 00:07:59.847 align:middle line:-2
+事实证明
+foundation URL加载
+
+00:07:59.913 --> 00:08:01.682 align:middle line:-1
+系统为实现这点提供了很大的帮助
+

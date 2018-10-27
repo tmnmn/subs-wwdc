@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.876 --> 00:38:01.846 A:middle
+and usable we call our helper
+
+00:38:01.846 --> 00:38:03.496 A:middle
+method that will displace a
+
+00:38:03.496 --> 00:38:04.566 A:middle
+particleViewController.
+
+00:38:05.696 --> 00:38:08.206 A:middle
+Finally, we may not forget to
+
+00:38:08.206 --> 00:38:09.606 A:middle
+close the completion handler to
+
+00:38:09.606 --> 00:38:11.796 A:middle
+notify Quick Look that our view
+
+00:38:11.796 --> 00:38:13.186 A:middle
+controller is loaded and ready
+
+00:38:13.186 --> 00:38:13.976 A:middle
+to appear on screen.
+
+00:38:15.306 --> 00:38:17.226 A:middle
+Our preview extension is now
+
+00:38:17.226 --> 00:38:17.606 A:middle
+ready.
+
+00:38:18.376 --> 00:38:19.446 A:middle
+Let's implement the thumbnail
+
+00:38:19.446 --> 00:38:19.986 A:middle
+extension.
+
+00:38:21.586 --> 00:38:24.466 A:middle
+All we have to do here is to
+
+00:38:24.466 --> 00:38:26.086 A:middle
+implement the provideThumbnail
+
+00:38:26.086 --> 00:38:27.456 A:middle
+for request handler method.
+
+00:38:28.776 --> 00:38:30.546 A:middle
+So request provides several
+
+00:38:30.546 --> 00:38:32.016 A:middle
+properties that you need to
+
+00:38:32.016 --> 00:38:33.256 A:middle
+consider when rendering a
+
+00:38:33.256 --> 00:38:33.686 A:middle
+thumbnail.
+
+00:38:35.886 --> 00:38:37.696 A:middle
+In this example we will make use
+
+00:38:37.696 --> 00:38:39.886 A:middle
+of the file URL as the maximum
+
+00:38:39.886 --> 00:38:40.726 A:middle
+size of the thumbnail.
+
+00:38:41.966 --> 00:38:43.926 A:middle
+Note that there are also a scale
+
+00:38:43.926 --> 00:38:45.826 A:middle
+and minimum size properties, but
+
+00:38:45.926 --> 00:38:47.056 A:middle
+in the case of our particle
+
+00:38:47.056 --> 00:38:48.316 A:middle
+system we don't use them.
+
+00:38:49.716 --> 00:38:51.496 A:middle
+We then create a drawing block
+
+00:38:51.826 --> 00:38:52.896 A:middle
+that we are going to provide
+
+00:38:52.896 --> 00:38:54.386 A:middle
+later [inaudible] completion
+
+00:38:54.386 --> 00:38:54.676 A:middle
+block.
+
+00:38:56.596 --> 00:38:58.836 A:middle
+In this case, we call the helper
+
+00:38:58.836 --> 00:39:00.476 A:middle
+method that will take care of
+

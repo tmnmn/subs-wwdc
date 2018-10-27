@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.826 --> 00:10:01.916 A:middle
+And that script tag is going to
+
+00:10:01.966 --> 00:10:03.926 A:middle
+just contain the URL to fetch
+
+00:10:03.926 --> 00:10:04.666 A:middle
+that script, right?
+
+00:10:05.446 --> 00:10:06.536 A:middle
+As I mentioned, you're now
+
+00:10:06.536 --> 00:10:09.686 A:middle
+relying on that CDN to provide
+
+00:10:09.686 --> 00:10:10.956 A:middle
+you with the right script that's
+
+00:10:10.956 --> 00:10:12.546 A:middle
+going to make your web content
+
+00:10:12.546 --> 00:10:13.806 A:middle
+work the way it's supposed to.
+
+00:10:14.846 --> 00:10:16.346 A:middle
+But actually, if they decide to,
+
+00:10:16.346 --> 00:10:17.966 A:middle
+you know, bump the version or if
+
+00:10:17.966 --> 00:10:19.066 A:middle
+something goes wrong on that
+
+00:10:19.066 --> 00:10:20.296 A:middle
+server, they're serving you--
+
+00:10:20.296 --> 00:10:21.256 A:middle
+they're sending you the wrong
+
+00:10:21.256 --> 00:10:23.606 A:middle
+script, your web content may be
+
+00:10:23.606 --> 00:10:24.016 A:middle
+crippled.
+
+00:10:24.646 --> 00:10:25.896 A:middle
+It may-- something may go wrong.
+
+00:10:25.896 --> 00:10:26.986 A:middle
+It might not work the way it's
+
+00:10:26.986 --> 00:10:27.576 A:middle
+supposed to.
+
+00:10:28.026 --> 00:10:29.646 A:middle
+You know what script you're
+
+00:10:29.646 --> 00:10:31.626 A:middle
+expecting, but what you're
+
+00:10:31.626 --> 00:10:32.716 A:middle
+sending out when you're just
+
+00:10:32.716 --> 00:10:34.186 A:middle
+sending a script tag like this--
+
+00:10:35.006 --> 00:10:36.756 A:middle
+looking like this-- is just
+
+00:10:36.756 --> 00:10:39.436 A:middle
+telling the browser whatever you
+
+00:10:39.436 --> 00:10:42.176 A:middle
+get back in JavaScript, execute
+
+00:10:42.176 --> 00:10:42.336 A:middle
+it.
+
+00:10:43.036 --> 00:10:45.056 A:middle
+A much better way is to say, no,
+
+00:10:45.376 --> 00:10:46.526 A:middle
+I want to make sure it's the
+
+00:10:46.526 --> 00:10:47.986 A:middle
+script I expect.
+
+00:10:48.546 --> 00:10:49.996 A:middle
+And-- but you can use the
+
+00:10:49.996 --> 00:10:51.976 A:middle
+integrity attribute in your
+
+00:10:51.976 --> 00:10:52.766 A:middle
+script tags.
+
+00:10:53.366 --> 00:10:54.916 A:middle
+In there you provide a check
+
+00:10:54.916 --> 00:10:56.496 A:middle
+sum, in this case with the
+
+00:10:56.496 --> 00:10:59.466 A:middle
+algorithm sha256, saying this is
+
+00:10:59.466 --> 00:11:01.316 A:middle
+the check sum of the script I
+

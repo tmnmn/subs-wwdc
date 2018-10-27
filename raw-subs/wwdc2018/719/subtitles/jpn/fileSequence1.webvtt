@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.159 --> 00:01:02.529 align:start position:32% line:-2
+機械学習の
+アプリケーションでの
+
+00:01:02.629 --> 00:01:05.933 align:start position:30% line:-2
+Core Imageの
+活用法も紹介します
+
+00:01:07.568 --> 00:01:11.538 align:start position:25% line:-2
+APIによる
+パフォーマンス向上については
+
+00:01:11.638 --> 00:01:15.475 align:start position:36% line:-2
+主に２つの領域に
+取り組みました
+
+00:01:15.576 --> 00:01:21.715 align:start position:21% line:-2
+１つは 中間バッファ挿入のための
+コントロールの追加
+
+00:01:21.982 --> 00:01:27.955 align:start position:25% line:-2
+２つ目は CIカーネル言語の
+新機能の追加です
+
+00:01:28.055 --> 00:01:31.658 align:start position:30% line:-2
+まずは
+中間バッファのお話です
+
+00:01:33.193 --> 00:01:38.131 align:start position:29% line:-2
+Core Imageでは
+フィルタのシーケンスを
+
+00:01:38.232 --> 00:01:40.033 align:start position:32% line:-1
+簡単につなげられます
+
+00:01:40.133 --> 00:01:43.871 align:start position:32% line:-2
+フィルタは１つ以上の
+カーネルから成ります
+
+00:01:43.971 --> 00:01:49.209 align:start position:29% line:-2
+Core Imageでは
+カーネルを連結させて
+
+00:01:49.309 --> 00:01:52.012 align:start position:34% line:-2
+中間バッファの数を
+最小限にします
+
+00:01:52.112 --> 00:01:56.817 align:start position:21% line:-2
+多くの場合
+それでパフォーマンスが向上します
+
+00:01:57.484 --> 00:02:03.524 align:start position:23% line:-2
+しかし できるだけ
+連結を避けたいケースもあります
+

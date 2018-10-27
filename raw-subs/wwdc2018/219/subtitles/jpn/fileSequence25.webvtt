@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.966 --> 00:25:03.270 align:start position:23% line:-2
+しかし これは
+iOS 12で導入した最適化を
+
+00:25:03.370 --> 00:25:05.272 align:start position:39% line:-1
+無効にします
+
+00:25:05.372 --> 00:25:08.709 align:start position:25% line:-2
+layerWillDrawを
+チェックして
+
+00:25:08.809 --> 00:25:14.581 align:start position:27% line:-2
+iOS 12の最適化を
+無効にしないよう ご注意を
+
+00:25:17.684 --> 00:25:21.388 align:start position:34% line:-2
+バッキングストアに
+情報を伝えるより
+
+00:25:21.488 --> 00:25:23.757 align:start position:34% line:-1
+いい方法があります
+
+00:25:23.857 --> 00:25:27.895 align:start position:34% line:-2
+バッキングストアの
+量も減ります
+
+00:25:27.995 --> 00:25:32.466 align:start position:32% line:-2
+サブビューに
+リファクタリングして
+
+00:25:33.000 --> 00:25:36.837 align:start position:30% line:-2
+draw機能の上書きを
+削除します
+
+00:25:38.238 --> 00:25:42.042 align:start position:32% line:-2
+メモリのコピー画像が
+不要になり
+
+00:25:42.843 --> 00:25:47.848 align:start position:21% line:-2
+UIViewの最適化プロパティを
+使えます
+
+00:25:50.851 --> 00:25:56.457 align:start position:25% line:-2
+drawメソッドの上書きには
+バッキングストアが必須です
+
+00:25:57.391 --> 00:26:01.662 align:start position:30% line:-2
+上書きしなくても
+プロパティは機能します
+

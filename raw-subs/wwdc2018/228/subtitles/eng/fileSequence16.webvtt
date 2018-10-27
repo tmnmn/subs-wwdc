@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.636 --> 00:16:00.546 A:middle
+UIKit, or VOIP and PushKit.
+
+00:16:00.996 --> 00:16:04.766 A:middle
+And these APIs have ways for you
+
+00:16:04.766 --> 00:16:06.036 A:middle
+as an app developer to indicate
+
+00:16:06.266 --> 00:16:07.376 A:middle
+that you no longer need to run
+
+00:16:07.376 --> 00:16:10.956 A:middle
+in the background.
+
+00:16:11.076 --> 00:16:12.706 A:middle
+So, it stands to reason that as
+
+00:16:12.706 --> 00:16:13.626 A:middle
+an app developer, if you're
+
+00:16:13.626 --> 00:16:14.586 A:middle
+using any of these background
+
+00:16:14.586 --> 00:16:16.536 A:middle
+modes, you would call these
+
+00:16:16.596 --> 00:16:17.786 A:middle
+completion handlers, let's say,
+
+00:16:18.226 --> 00:16:18.976 A:middle
+to let the system know you're
+
+00:16:18.976 --> 00:16:19.236 A:middle
+done.
+
+00:16:19.866 --> 00:16:21.536 A:middle
+Well, that doesn't always
+
+00:16:21.536 --> 00:16:23.346 A:middle
+happen, and in a lot of cases,
+
+00:16:23.846 --> 00:16:25.906 A:middle
+we might actually forget or not
+
+00:16:25.906 --> 00:16:26.936 A:middle
+want to end our task.
+
+00:16:27.916 --> 00:16:29.276 A:middle
+So, we let our tasks expire.
+
+00:16:30.576 --> 00:16:32.316 A:middle
+There's a great energy impact to
+
+00:16:32.316 --> 00:16:35.606 A:middle
+this, and it's really something
+
+00:16:35.606 --> 00:16:37.456 A:middle
+that people don't necessarily
+
+00:16:37.456 --> 00:16:38.506 A:middle
+see when they're developing
+
+00:16:38.506 --> 00:16:39.126 A:middle
+their application.
+
+00:16:40.246 --> 00:16:41.436 A:middle
+Let me demonstrate why this is
+
+00:16:41.436 --> 00:16:42.506 A:middle
+energy inefficient with the
+
+00:16:42.506 --> 00:16:43.286 A:middle
+power over time curve.
+
+00:16:44.746 --> 00:16:45.916 A:middle
+You could imagine if you enter
+
+00:16:45.916 --> 00:16:47.086 A:middle
+the background for any reason
+
+00:16:47.086 --> 00:16:48.746 A:middle
+and your task starts, you finish
+
+00:16:48.746 --> 00:16:49.736 A:middle
+some time afterwards.
+
+00:16:50.436 --> 00:16:52.576 A:middle
+Then, if we let our task expire,
+
+00:16:52.726 --> 00:16:54.466 A:middle
+as we've said, we enter this
+
+00:16:54.466 --> 00:16:55.806 A:middle
+sort of idle phase where you're
+
+00:16:55.806 --> 00:16:57.326 A:middle
+consuming energy and our app is
+
+00:16:57.326 --> 00:16:58.306 A:middle
+running in the background for
+
+00:16:58.306 --> 00:17:00.206 A:middle
+whatever reason we've asked our
+

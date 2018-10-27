@@ -1,0 +1,138 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.146 --> 00:25:01.226 A:middle
+Let's navigate back and put
+
+00:25:01.226 --> 00:25:02.796 A:middle
+breakpoint in the jump function.
+
+00:25:03.136 --> 00:25:04.686 A:middle
+What we need to do is first find
+
+00:25:04.686 --> 00:25:06.126 A:middle
+a reference to a view that we
+
+00:25:06.126 --> 00:25:07.796 A:middle
+can play around with, so I'm
+
+00:25:07.796 --> 00:25:09.466 A:middle
+going to clear everything and
+
+00:25:09.466 --> 00:25:10.946 A:middle
+open that up and start a new
+
+00:25:10.976 --> 00:25:11.216 A:middle
+jump.
+
+00:25:11.216 --> 00:25:12.446 A:middle
+So we're paused in the debugger
+
+00:25:13.006 --> 00:25:14.656 A:middle
+in this jump function within the
+
+00:25:14.656 --> 00:25:15.336 A:middle
+view controller.
+
+00:25:16.016 --> 00:25:17.666 A:middle
+So if you have of course a
+
+00:25:17.666 --> 00:25:18.906 A:middle
+property or an outlet for a
+
+00:25:18.906 --> 00:25:19.686 A:middle
+view, then that's a good
+
+00:25:19.686 --> 00:25:20.176 A:middle
+reference.
+
+00:25:20.446 --> 00:25:21.596 A:middle
+But if you don't, then you need
+
+00:25:21.596 --> 00:25:22.536 A:middle
+to get the memory address of a
+
+00:25:22.536 --> 00:25:22.756 A:middle
+view.
+
+00:25:22.756 --> 00:25:24.176 A:middle
+So let me show you some ways to
+
+00:25:24.176 --> 00:25:25.286 A:middle
+find the memory address and how
+
+00:25:25.286 --> 00:25:26.946 A:middle
+to manipulate a view only by
+
+00:25:26.946 --> 00:25:27.636 A:middle
+memory address.
+
+00:25:28.206 --> 00:25:30.396 A:middle
+Well, like we said before, the
+
+00:25:30.396 --> 00:25:31.686 A:middle
+debug description contains a
+
+00:25:31.686 --> 00:25:32.616 A:middle
+custom description.
+
+00:25:32.986 --> 00:25:33.826 A:middle
+So looking at the view
+
+00:25:33.826 --> 00:25:35.036 A:middle
+controller's view, we can see
+
+00:25:35.036 --> 00:25:36.386 A:middle
+the default debug description
+
+00:25:36.386 --> 00:25:38.426 A:middle
+for a UI view has the class of
+
+00:25:38.426 --> 00:25:39.476 A:middle
+the view and then the memory
+
+00:25:39.476 --> 00:25:39.906 A:middle
+address.
+
+00:25:40.216 --> 00:25:41.606 A:middle
+So one way is to just get the
+
+00:25:41.606 --> 00:25:44.676 A:middle
+debug description for objects.
+
+00:25:45.176 --> 00:25:46.476 A:middle
+So that's easy to get it for
+
+00:25:46.476 --> 00:25:47.686 A:middle
+this one because there's a
+
+00:25:47.686 --> 00:25:48.456 A:middle
+property for it.
+
+00:25:48.746 --> 00:25:50.306 A:middle
+But how about all of the views
+
+00:25:50.346 --> 00:25:51.976 A:middle
+below this view controller's
+
+00:25:51.976 --> 00:25:52.166 A:middle
+view?
+
+00:25:52.806 --> 00:25:53.506 A:middle
+Well, we need to look at the
+
+00:25:53.506 --> 00:25:55.256 A:middle
+view hierarchy and one way to do
+
+00:25:55.256 --> 00:25:57.126 A:middle
+that is to use this button here,
+
+00:25:57.126 --> 00:25:59.136 A:middle
+which invokes Xcode's visual
+
+00:25:59.136 --> 00:25:59.606 A:middle
+view debugger.
+
+00:25:59.676 --> 00:26:01.136 A:middle
+It will snapshot the hierarchy
+

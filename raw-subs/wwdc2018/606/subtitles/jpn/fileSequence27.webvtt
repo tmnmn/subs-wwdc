@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.085 --> 00:27:00.854 align:start position:25% line:-1
+このコピーは非再帰的なので―
+
+00:27:00.954 --> 00:27:07.027 align:start position:25% line:-2
+加速構造にアタッチした頂点と
+インデックスのバッファなどは
+
+00:27:07.327 --> 00:27:09.029 align:start position:34% line:-1
+別々にコピーして―
+
+00:27:09.129 --> 00:27:12.766 align:start position:30% line:-2
+先ほど作った加速構造に
+アタッチします
+
+00:27:16.036 --> 00:27:20.574 align:start position:29% line:-2
+これで すべてのGPUに
+データを複製しました
+
+00:27:21.909 --> 00:27:24.778 align:start position:27% line:-1
+マルチGPUにしましたが―
+
+00:27:24.878 --> 00:27:29.650 align:start position:29% line:-2
+この部分のパイプラインは
+ほぼ変わりありません
+
+00:27:30.117 --> 00:27:32.686 align:start position:29% line:-1
+ただしマルチGPUでは―
+
+00:27:32.786 --> 00:27:38.058 align:start position:29% line:-2
+各GPUが処理する画面に
+再生成してはなりません
+
+00:27:38.425 --> 00:27:40.027 align:start position:36% line:-1
+その他は同じです
+
+00:27:40.828 --> 00:27:46.300 align:start position:29% line:-2
+次は マルチGPUで
+最も気をつけたい段階で―
+
+00:27:46.533 --> 00:27:48.902 align:start position:36% line:-1
+最終的な合成です
+
+00:27:51.305 --> 00:27:57.377 align:start position:21% line:-2
+各GPUはプライベートバッファに
+レンダリングするのがベストです
+
+00:27:58.011 --> 00:27:59.780 align:start position:32% line:-1
+レンダリング後には―
+
+00:27:59.880 --> 00:28:04.117 align:start position:30% line:-2
+合成に使うGPUに
+バッファをコピーします
+

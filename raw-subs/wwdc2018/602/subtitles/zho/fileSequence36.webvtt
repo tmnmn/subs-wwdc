@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.960 --> 00:36:02.229 align:middle line:-2
+我们首先加载一组
+ReferenceImage
+
+00:36:02.296 --> 00:36:04.565 align:middle line:-1
+其可以来自文件或素材目录
+
+00:36:05.732 --> 00:36:08.335 align:middle line:-2
+加载完这组
+ReferenceImage后
+
+00:36:08.669 --> 00:36:13.507 align:middle line:-2
+我通过它指定
+其detectionImages属性
+
+00:36:13.574 --> 00:36:17.277 align:middle line:-2
+来将会话设为
+WorldTrackingConfiguration类型
+
+00:36:17.344 --> 00:36:19.213 align:middle line:-1
+或通过指定trackingImages属性
+
+00:36:19.279 --> 00:36:21.081 align:middle line:-2
+将其设为ARImageTracking
+Configuration类型
+
+00:36:22.349 --> 00:36:27.054 align:middle line:-1
+完成配置后 我用它来运行我的会话
+
+00:36:28.355 --> 00:36:31.291 align:middle line:-1
+和往常一样 一旦会话开始运行
+
+00:36:31.358 --> 00:36:33.727 align:middle line:-2
+我会在每次更新时
+获得一个ARFrame
+
+00:36:34.428 --> 00:36:39.032 align:middle line:-2
+一旦检测到图像
+这个ARFrame将包含一个
+
+00:36:39.099 --> 00:36:41.034 align:middle line:-2
+ARImageAnchor类型
+的对象
+
+00:36:42.436 --> 00:36:45.138 align:middle line:-2
+这个ARImageAnchor
+是一个可跟踪的对象
+
+00:36:45.205 --> 00:36:48.242 align:middle line:-2
+我可以通过遵守
+ARTrackable协议看到它
+
+00:36:48.709 --> 00:36:52.613 align:middle line:-2
+其中有一个
+布尔值变量isTracked
+
+00:36:53.113 --> 00:36:56.550 align:middle line:-1
+它可以通知你图像的跟踪状态
+
+00:36:56.850 --> 00:36:59.419 align:middle line:-2
+如果对象已跟踪则为true
+否则为false
+

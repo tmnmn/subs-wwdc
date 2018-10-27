@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.726 --> 00:09:00.326 A:middle
+information comes from knowledge
+
+00:09:00.366 --> 00:09:01.396 A:middle
+built into the build system.
+
+00:09:01.876 --> 00:09:02.836 A:middle
+The build system ships with
+
+00:09:02.876 --> 00:09:04.346 A:middle
+rules for the compiler, the
+
+00:09:04.346 --> 00:09:06.336 A:middle
+linker, the asset catalogue and
+
+00:09:06.336 --> 00:09:08.046 A:middle
+story board processors and so
+
+00:09:08.046 --> 00:09:08.186 A:middle
+on.
+
+00:09:08.496 --> 00:09:09.966 A:middle
+And these rules define what kind
+
+00:09:09.966 --> 00:09:11.376 A:middle
+of files are accepted as inputs
+
+00:09:11.746 --> 00:09:13.016 A:middle
+as well as what outputs are
+
+00:09:13.016 --> 00:09:13.576 A:middle
+produced.
+
+00:09:15.176 --> 00:09:17.186 A:middle
+There's also target dependencies
+
+00:09:17.256 --> 00:09:18.226 A:middle
+which roughly determine the
+
+00:09:18.226 --> 00:09:19.186 A:middle
+order in which targets are
+
+00:09:19.186 --> 00:09:19.466 A:middle
+built.
+
+00:09:20.246 --> 00:09:21.696 A:middle
+And in some cases, the build
+
+00:09:21.696 --> 00:09:23.066 A:middle
+system can compile sources of
+
+00:09:23.066 --> 00:09:24.276 A:middle
+different targets and parallel.
+
+00:09:24.836 --> 00:09:26.046 A:middle
+Previously in Xcode, when a
+
+00:09:26.046 --> 00:09:27.626 A:middle
+target was built, it required
+
+00:09:27.626 --> 00:09:28.816 A:middle
+the compilation of the entire
+
+00:09:28.816 --> 00:09:30.246 A:middle
+dependent target to be completed
+
+00:09:30.446 --> 00:09:31.406 A:middle
+before it could start.
+
+00:09:32.136 --> 00:09:33.726 A:middle
+In Xcode X's new build system,
+
+00:09:33.986 --> 00:09:34.966 A:middle
+targets can start building
+
+00:09:34.966 --> 00:09:35.346 A:middle
+sooner.
+
+00:09:35.876 --> 00:09:36.906 A:middle
+This means that your compile
+
+00:09:36.906 --> 00:09:38.336 A:middle
+sources phase can start earlier
+
+00:09:38.336 --> 00:09:39.036 A:middle
+providing your some
+
+00:09:39.036 --> 00:09:40.536 A:middle
+parallelization for free.
+
+00:09:41.166 --> 00:09:42.196 A:middle
+However, note that if you're
+
+00:09:42.196 --> 00:09:43.416 A:middle
+making use of any run script
+
+00:09:43.416 --> 00:09:45.026 A:middle
+phases, those script phases will
+
+00:09:45.026 --> 00:09:46.216 A:middle
+need to complete before this
+
+00:09:46.216 --> 00:09:48.446 A:middle
+parallelization can take effect.
+
+00:09:49.056 --> 00:09:50.496 A:middle
+Somewhat related to target
+
+00:09:50.496 --> 00:09:51.956 A:middle
+dependencies are implicit
+
+00:09:51.956 --> 00:09:52.556 A:middle
+dependencies.
+
+00:09:53.296 --> 00:09:54.416 A:middle
+For example, if you list a
+
+00:09:54.416 --> 00:09:55.826 A:middle
+target in your link library with
+
+00:09:55.826 --> 00:09:57.586 A:middle
+binaries build phase and
+
+00:09:57.586 --> 00:09:58.736 A:middle
+implicit dependencies are
+
+00:09:58.736 --> 00:09:59.856 A:middle
+enabled in the scheme editor,
+

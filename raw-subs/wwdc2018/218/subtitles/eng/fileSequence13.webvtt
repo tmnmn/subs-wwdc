@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.056 --> 00:13:01.676 A:middle
+But you can go even further.
+
+00:13:02.606 --> 00:13:04.496 A:middle
+In Xcode 10, if you check this
+
+00:13:04.616 --> 00:13:06.216 A:middle
+high contrast checkbox in the
+
+00:13:06.216 --> 00:13:08.576 A:middle
+asset catalog editor, it'll
+
+00:13:08.576 --> 00:13:10.876 A:middle
+allow you to specify color and
+
+00:13:10.876 --> 00:13:13.136 A:middle
+image assets specifically for
+
+00:13:13.296 --> 00:13:15.766 A:middle
+the high contrast versions of
+
+00:13:15.766 --> 00:13:16.486 A:middle
+the appearances.
+
+00:13:17.076 --> 00:13:20.166 A:middle
+Now, you can also use those
+
+00:13:20.166 --> 00:13:21.656 A:middle
+appearance names in code.
+
+00:13:21.656 --> 00:13:24.676 A:middle
+You might be temped to think,
+
+00:13:24.736 --> 00:13:26.286 A:middle
+well, great, I'll just pass them
+
+00:13:26.286 --> 00:13:27.716 A:middle
+to NSAppearance themed and I'll
+
+00:13:27.716 --> 00:13:29.156 A:middle
+get the NSAppearance object and
+
+00:13:29.156 --> 00:13:31.296 A:middle
+I'll do something with that, but
+
+00:13:31.296 --> 00:13:31.836 A:middle
+that won't work.
+
+00:13:32.876 --> 00:13:34.036 A:middle
+Those appearances are only
+
+00:13:34.036 --> 00:13:35.126 A:middle
+available through system
+
+00:13:35.126 --> 00:13:35.706 A:middle
+preferences.
+
+00:13:36.396 --> 00:13:39.236 A:middle
+But what you can do is pass them
+
+00:13:39.236 --> 00:13:41.296 A:middle
+to bestMatch(from:) just like we
+
+00:13:41.296 --> 00:13:42.846 A:middle
+did before for Dark Mode to
+
+00:13:42.846 --> 00:13:44.816 A:middle
+implement custom programmatic
+
+00:13:44.816 --> 00:13:45.246 A:middle
+behavior.
+
+00:13:48.166 --> 00:13:48.276 A:middle
+OK.
+
+00:13:48.516 --> 00:13:49.706 A:middle
+Let's talk for a minute about
+
+00:13:49.706 --> 00:13:50.476 A:middle
+sublayers.
+
+00:13:51.256 --> 00:13:52.316 A:middle
+I know a lot of you out there
+
+00:13:52.506 --> 00:13:54.646 A:middle
+have views that manage their own
+
+00:13:54.646 --> 00:13:56.736 A:middle
+sublayers and there are
+
+00:13:56.736 --> 00:13:58.146 A:middle
+important things to be aware of
+
+00:13:58.656 --> 00:13:59.866 A:middle
+for Dark Mode.
+

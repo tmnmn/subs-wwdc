@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.286 --> 00:36:01.246 A:middle
+accessing the path value from
+
+00:36:01.246 --> 00:36:02.166 A:middle
+inside the closure.
+
+00:36:02.496 --> 00:36:04.766 A:middle
+But previously Swift 4 did not
+
+00:36:04.766 --> 00:36:06.556 A:middle
+catch this error at compile
+
+00:36:06.616 --> 00:36:06.866 A:middle
+time.
+
+00:36:08.286 --> 00:36:10.436 A:middle
+In Swift 4.2 we've improved the
+
+00:36:10.436 --> 00:36:12.526 A:middle
+static exclusivity checking to
+
+00:36:12.526 --> 00:36:14.446 A:middle
+catch ambiguities like this in
+
+00:36:14.446 --> 00:36:15.256 A:middle
+more cases.
+
+00:36:16.386 --> 00:36:18.546 A:middle
+And in addition to improving --
+
+00:36:19.146 --> 00:36:20.526 A:middle
+OK, and you can also fix the
+
+00:36:20.526 --> 00:36:22.236 A:middle
+ambiguity in the same way by
+
+00:36:22.236 --> 00:36:23.566 A:middle
+passing it as a parameter to the
+
+00:36:23.566 --> 00:36:24.026 A:middle
+closure.
+
+00:36:24.576 --> 00:36:26.876 A:middle
+In addition to improving the
+
+00:36:26.876 --> 00:36:28.986 A:middle
+static checks, we've also added
+
+00:36:28.986 --> 00:36:30.796 A:middle
+the ability to use the runtime
+
+00:36:30.796 --> 00:36:32.456 A:middle
+exclusivity checks and release
+
+00:36:32.456 --> 00:36:32.906 A:middle
+builds.
+
+00:36:33.336 --> 00:36:35.166 A:middle
+And this has some overhead but
+
+00:36:35.166 --> 00:36:36.606 A:middle
+if your app is not performance
+
+00:36:36.606 --> 00:36:38.096 A:middle
+critical, we encourage you to
+
+00:36:38.096 --> 00:36:39.746 A:middle
+try this out and leave it on all
+
+00:36:39.746 --> 00:36:40.216 A:middle
+the time.
+
+00:36:40.686 --> 00:36:42.386 A:middle
+In the future, we will get the
+
+00:36:42.386 --> 00:36:44.236 A:middle
+overhead of these dynamic checks
+
+00:36:44.306 --> 00:36:46.276 A:middle
+down to the point where we can
+
+00:36:46.276 --> 00:36:48.126 A:middle
+leave this enabled all the time
+
+00:36:48.186 --> 00:36:49.226 A:middle
+and it will give you an extra
+
+00:36:49.226 --> 00:36:50.846 A:middle
+level of protection just like
+
+00:36:50.896 --> 00:36:53.296 A:middle
+array bounce checking or integer
+
+00:36:53.296 --> 00:36:54.596 A:middle
+overflow checking today.
+
+00:36:55.166 --> 00:36:58.316 A:middle
+And there's a lot more in Swift
+
+00:36:58.316 --> 00:37:00.426 A:middle
+4.2 that I didn't talk about
+

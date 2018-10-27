@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.516 --> 00:11:00.636 A:middle
+To make defining more complex
+
+00:11:00.636 --> 00:11:02.736 A:middle
+elements easier for you, we've
+
+00:11:02.736 --> 00:11:04.046 A:middle
+deployed a number of snippets in
+
+00:11:04.046 --> 00:11:04.466 A:middle
+Xcode.
+
+00:11:05.296 --> 00:11:07.206 A:middle
+To use them, just start writing
+
+00:11:07.206 --> 00:11:09.146 A:middle
+your element name, like
+
+00:11:09.146 --> 00:11:11.436 A:middle
+instrument, and hit Return.
+
+00:11:11.436 --> 00:11:14.256 A:middle
+You need to fill out your unique
+
+00:11:14.256 --> 00:11:15.976 A:middle
+identifier for Instrument
+
+00:11:20.706 --> 00:11:22.946 A:middle
+and a few properties that later
+
+00:11:22.946 --> 00:11:23.976 A:middle
+appear in Instruments Library.
+
+00:11:29.626 --> 00:11:31.216 A:middle
+It will be Instrument drawing
+
+00:11:31.326 --> 00:11:34.946 A:middle
+ticks every 10 milliseconds.
+
+00:11:39.306 --> 00:11:41.186 A:middle
+Now it's time to create a table
+
+00:11:41.186 --> 00:11:42.696 A:middle
+that will be instantiated when
+
+00:11:42.696 --> 00:11:44.416 A:middle
+this instrument is dropped from
+
+00:11:44.546 --> 00:11:46.456 A:middle
+library to a trace document.
+
+00:11:47.956 --> 00:11:49.346 A:middle
+Table identifier has to be
+
+00:11:49.346 --> 00:11:50.936 A:middle
+unique within this instrument
+
+00:11:50.936 --> 00:11:51.536 A:middle
+definition.
+
+00:11:52.446 --> 00:11:56.116 A:middle
+Let's call it tick table.
+
+00:11:56.226 --> 00:11:57.786 A:middle
+In schema-ref, we need to
+
+00:11:57.786 --> 00:11:58.966 A:middle
+reference schema that we
+
+00:11:58.966 --> 00:12:03.816 A:middle
+previously imported, tick.
+

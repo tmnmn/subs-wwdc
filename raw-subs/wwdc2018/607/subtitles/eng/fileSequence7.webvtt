@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.836 --> 00:07:01.986 A:middle
+now let's see how Metal can
+
+00:07:01.986 --> 00:07:02.766 A:middle
+parallelize for you
+
+00:07:02.766 --> 00:07:04.366 A:middle
+automatically on the GPU.
+
+00:07:04.946 --> 00:07:07.316 A:middle
+So let's look at the frame
+
+00:07:07.316 --> 00:07:10.176 A:middle
+example from the beginning and
+
+00:07:10.176 --> 00:07:11.916 A:middle
+see how the GPU executes the
+
+00:07:11.916 --> 00:07:12.316 A:middle
+frame.
+
+00:07:13.296 --> 00:07:14.546 A:middle
+Based on the capabilities of
+
+00:07:14.546 --> 00:07:17.006 A:middle
+your platform, Metal can extract
+
+00:07:17.006 --> 00:07:19.376 A:middle
+parallelism automatically by
+
+00:07:19.376 --> 00:07:20.326 A:middle
+analyzing your data
+
+00:07:20.326 --> 00:07:20.956 A:middle
+dependencies.
+
+00:07:21.576 --> 00:07:22.746 A:middle
+Let's look at just 2 of these
+
+00:07:22.746 --> 00:07:23.376 A:middle
+dependencies.
+
+00:07:24.726 --> 00:07:26.436 A:middle
+So in this example, the particle
+
+00:07:26.436 --> 00:07:28.416 A:middle
+simulation writes data, which is
+
+00:07:28.416 --> 00:07:30.116 A:middle
+later used by the effects pass
+
+00:07:30.316 --> 00:07:31.456 A:middle
+to render the particles.
+
+00:07:32.816 --> 00:07:35.586 A:middle
+Similarly, the G-buffer pass
+
+00:07:36.106 --> 00:07:37.796 A:middle
+generates geometry, which is
+
+00:07:37.796 --> 00:07:38.916 A:middle
+later used by the deferred
+
+00:07:38.916 --> 00:07:41.096 A:middle
+shading pass to compute material
+
+00:07:43.096 --> 00:07:43.256 A:middle
+lighting.
+
+00:07:43.486 --> 00:07:45.216 A:middle
+All this information allows
+
+00:07:45.216 --> 00:07:46.686 A:middle
+Metal to automatically and
+
+00:07:46.686 --> 00:07:49.276 A:middle
+cheaply identify entire passes
+
+00:07:49.816 --> 00:07:51.236 A:middle
+that can run in parallel, such
+
+00:07:51.236 --> 00:07:52.416 A:middle
+as using async compute.
+
+00:07:55.616 --> 00:07:57.896 A:middle
+So you can achieve parallelism
+
+00:07:57.936 --> 00:08:00.166 A:middle
+and async compute for free on
+

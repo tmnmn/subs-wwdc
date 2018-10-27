@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.886 --> 00:13:01.376 A:middle
+due to somebody trying to cause
+
+00:13:01.376 --> 00:13:02.986 A:middle
+overflow in my app.
+
+00:13:03.586 --> 00:13:04.426 A:middle
+This is something you need to
+
+00:13:04.426 --> 00:13:05.066 A:middle
+watch out for.
+
+00:13:07.026 --> 00:13:08.526 A:middle
+Now similar to range validation
+
+00:13:08.526 --> 00:13:09.486 A:middle
+is length validation.
+
+00:13:10.146 --> 00:13:12.176 A:middle
+Again, every product listing has
+
+00:13:12.176 --> 00:13:12.786 A:middle
+a description.
+
+00:13:12.786 --> 00:13:14.466 A:middle
+Does it make sense for that
+
+00:13:14.466 --> 00:13:15.496 A:middle
+description to be empty?
+
+00:13:16.876 --> 00:13:18.096 A:middle
+Well, in my case, I know that
+
+00:13:18.096 --> 00:13:19.456 A:middle
+anytime I upload a product
+
+00:13:19.456 --> 00:13:21.456 A:middle
+listing, I'm always going to put
+
+00:13:21.456 --> 00:13:22.206 A:middle
+a description in there.
+
+00:13:22.206 --> 00:13:23.456 A:middle
+So, in my case, no it doesn't
+
+00:13:23.456 --> 00:13:26.266 A:middle
+make sense for it to be empty.
+
+00:13:26.326 --> 00:13:27.556 A:middle
+But even if it's not empty, does
+
+00:13:27.556 --> 00:13:28.496 A:middle
+it make sense for it to be the
+
+00:13:28.496 --> 00:13:29.706 A:middle
+full length and contents of
+
+00:13:29.706 --> 00:13:30.516 A:middle
+"Romeo and Juliet?"
+
+00:13:31.286 --> 00:13:32.786 A:middle
+Also no, it doesn't make sense.
+
+00:13:32.786 --> 00:13:34.326 A:middle
+Something here's gone wrong and
+
+00:13:34.326 --> 00:13:37.596 A:middle
+I need to look for that.
+
+00:13:38.056 --> 00:13:39.166 A:middle
+Now, there's additional forms of
+
+00:13:39.166 --> 00:13:40.166 A:middle
+validation that we really do
+
+00:13:40.166 --> 00:13:40.806 A:middle
+care about here.
+
+00:13:40.966 --> 00:13:42.286 A:middle
+Even if all of these fields are
+
+00:13:42.286 --> 00:13:44.366 A:middle
+right type, nullability, and fit
+
+00:13:44.366 --> 00:13:45.286 A:middle
+within the range and length that
+
+00:13:45.286 --> 00:13:47.266 A:middle
+we expect, their values and
+
+00:13:47.266 --> 00:13:48.596 A:middle
+contents are also equally
+
+00:13:48.596 --> 00:13:48.986 A:middle
+important.
+
+00:13:50.136 --> 00:13:51.836 A:middle
+Every product listing has a URL
+
+00:13:51.836 --> 00:13:53.096 A:middle
+that I can send a customer to
+
+00:13:53.096 --> 00:13:54.346 A:middle
+see more information about that
+
+00:13:54.346 --> 00:13:54.986 A:middle
+product listing.
+
+00:13:56.036 --> 00:13:57.306 A:middle
+This comes to me as a string,
+
+00:13:57.866 --> 00:13:59.376 A:middle
+but it actually has to contain a
+
+00:13:59.376 --> 00:13:59.596 A:middle
+URL.
+
+00:13:59.596 --> 00:14:00.966 A:middle
+Does it make sense for it to be
+

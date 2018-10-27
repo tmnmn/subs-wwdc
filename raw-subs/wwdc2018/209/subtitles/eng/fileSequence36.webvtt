@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.336 --> 00:36:00.436 A:middle
+text like this, and the
+
+00:36:00.436 --> 00:36:02.506 A:middle
+insertion point is in the
+
+00:36:02.506 --> 00:36:04.156 A:middle
+lighter portion at the end, and
+
+00:36:04.156 --> 00:36:06.496 A:middle
+we run the same code; this is
+
+00:36:06.496 --> 00:36:06.966 A:middle
+the result.
+
+00:36:07.896 --> 00:36:09.746 A:middle
+The style attributes come from
+
+00:36:09.746 --> 00:36:10.896 A:middle
+the lighter portion at the end.
+
+00:36:12.486 --> 00:36:14.036 A:middle
+So, for this reason, you may
+
+00:36:14.036 --> 00:36:15.316 A:middle
+find that you need to set the
+
+00:36:15.316 --> 00:36:16.896 A:middle
+selective range for the range
+
+00:36:16.896 --> 00:36:18.136 A:middle
+you're about to replace before
+
+00:36:18.136 --> 00:36:18.606 A:middle
+you call
+
+00:36:18.606 --> 00:36:19.956 A:middle
+performValidatedReplacement.
+
+00:36:22.896 --> 00:36:24.416 A:middle
+If you do that, this is the
+
+00:36:24.416 --> 00:36:25.216 A:middle
+result that you get.
+
+00:36:27.336 --> 00:36:28.966 A:middle
+So, the next topic I'd like to
+
+00:36:28.966 --> 00:36:30.436 A:middle
+cover very briefly, is
+
+00:36:30.466 --> 00:36:31.406 A:middle
+continuity camera.
+
+00:36:31.856 --> 00:36:33.346 A:middle
+This is another fantastic
+
+00:36:33.446 --> 00:36:35.376 A:middle
+feature in macOS Mojave.
+
+00:36:36.196 --> 00:36:37.216 A:middle
+And, if you're just using the
+
+00:36:37.216 --> 00:36:38.746 A:middle
+standard framework classes like
+
+00:36:38.746 --> 00:36:40.196 A:middle
+NSTextView, there's nothing
+
+00:36:40.196 --> 00:36:41.746 A:middle
+special you need to do in order
+
+00:36:41.746 --> 00:36:42.766 A:middle
+to take advantage of it.
+
+00:36:42.806 --> 00:36:43.606 A:middle
+So, framework will handle
+
+00:36:43.606 --> 00:36:44.336 A:middle
+everything for you.
+
+00:36:45.016 --> 00:36:45.996 A:middle
+But, if you have a more
+
+00:36:45.996 --> 00:36:49.136 A:middle
+application-specific need for
+
+00:36:49.306 --> 00:36:50.536 A:middle
+this, it is possible to use it
+
+00:36:50.536 --> 00:36:51.186 A:middle
+more directly.
+
+00:36:51.336 --> 00:36:52.296 A:middle
+And then, it's important to
+
+00:36:52.296 --> 00:36:53.806 A:middle
+understand that it's implemented
+
+00:36:53.806 --> 00:36:55.766 A:middle
+using the existing services
+
+00:36:55.766 --> 00:36:56.066 A:middle
+API's.
+
+00:36:56.726 --> 00:36:58.236 A:middle
+So, all you need to do is tell a
+
+00:36:58.236 --> 00:36:59.756 A:middle
+framework that your responder
+
+00:36:59.756 --> 00:37:01.306 A:middle
+class is able to handle image
+

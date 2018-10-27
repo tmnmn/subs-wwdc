@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.656 --> 00:29:00.656 A:middle
+Well, the Time Profiler, built
+
+00:29:00.656 --> 00:29:01.816 A:middle
+into Instruments, is the
+
+00:29:01.816 --> 00:29:02.796 A:middle
+ultimate tool for this.
+
+00:29:04.036 --> 00:29:05.586 A:middle
+It can give you down to the line
+
+00:29:05.916 --> 00:29:07.686 A:middle
+measurements for just how much
+
+00:29:07.796 --> 00:29:09.366 A:middle
+CPU time your code is using.
+
+00:29:10.236 --> 00:29:12.226 A:middle
+It's a really powerful tool, and
+
+00:29:12.226 --> 00:29:13.336 A:middle
+we encourage you to go and check
+
+00:29:13.336 --> 00:29:14.876 A:middle
+out Using the Time Profiler in
+
+00:29:14.876 --> 00:29:17.556 A:middle
+Instruments from WWDC 2016.
+
+00:29:18.936 --> 00:29:20.176 A:middle
+&gt;&gt; So, once you've identified
+
+00:29:20.176 --> 00:29:21.956 A:middle
+these hot spots, using the Time
+
+00:29:21.956 --> 00:29:23.916 A:middle
+Profiler tool, we've got some
+
+00:29:23.916 --> 00:29:25.716 A:middle
+great tips for you to optimize
+
+00:29:25.716 --> 00:29:25.896 A:middle
+them.
+
+00:29:27.306 --> 00:29:28.476 A:middle
+The first is to use
+
+00:29:28.476 --> 00:29:30.686 A:middle
+UICollectionView and UITableView
+
+00:29:30.686 --> 00:29:31.496 A:middle
+prefetching.
+
+00:29:32.296 --> 00:29:33.656 A:middle
+These are pieces of API that
+
+00:29:33.656 --> 00:29:35.456 A:middle
+will tell you while the user is
+
+00:29:35.456 --> 00:29:36.976 A:middle
+scrolling towards particular
+
+00:29:36.976 --> 00:29:38.816 A:middle
+cells, and can give you an
+
+00:29:38.816 --> 00:29:40.386 A:middle
+opportunity to preload that
+
+00:29:40.386 --> 00:29:40.696 A:middle
+data.
+
+00:29:41.676 --> 00:29:43.396 A:middle
+There was a wonderful talk given
+
+00:29:43.396 --> 00:29:45.096 A:middle
+by two very handsome presenters
+
+00:29:45.096 --> 00:29:47.136 A:middle
+on this in 2016 that I encourage
+
+00:29:47.136 --> 00:29:47.636 A:middle
+you to watch.
+
+00:29:49.216 --> 00:29:51.146 A:middle
+The next tip that I have for
+
+00:29:51.146 --> 00:29:53.226 A:middle
+you, is to push as much work as
+
+00:29:53.226 --> 00:29:55.226 A:middle
+possible off of the main queue
+
+00:29:55.436 --> 00:29:56.876 A:middle
+and onto background queues,
+
+00:29:57.166 --> 00:29:58.446 A:middle
+freeing up the main queue to
+
+00:29:58.636 --> 00:30:00.606 A:middle
+update your UI and handle user
+

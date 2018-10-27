@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.816 --> 00:13:01.226 A:middle
+those intervals, you may want to
+
+00:13:01.226 --> 00:13:03.496 A:middle
+add individual points in time.
+
+00:13:04.156 --> 00:13:06.236 A:middle
+That is, in addition to the
+
+00:13:06.236 --> 00:13:08.246 A:middle
+begin signpost and the end
+
+00:13:08.246 --> 00:13:09.356 A:middle
+signpost, you may have a
+
+00:13:09.356 --> 00:13:10.726 A:middle
+signpost that's not tethered to
+
+00:13:10.786 --> 00:13:12.646 A:middle
+a particular time interval but
+
+00:13:12.646 --> 00:13:14.406 A:middle
+rather just some fixed moment.
+
+00:13:14.636 --> 00:13:16.596 A:middle
+And for that, we have an os
+
+00:13:16.596 --> 00:13:17.946 A:middle
+signpost with the event type.
+
+00:13:18.886 --> 00:13:20.136 A:middle
+The os signpost with the event
+
+00:13:20.136 --> 00:13:21.926 A:middle
+type call looks just like the
+
+00:13:21.926 --> 00:13:23.676 A:middle
+same as the begin and end, this
+
+00:13:23.676 --> 00:13:24.966 A:middle
+time with the event type.
+
+00:13:25.706 --> 00:13:27.376 A:middle
+And it marks a single point in
+
+00:13:27.376 --> 00:13:27.706 A:middle
+time.
+
+00:13:28.656 --> 00:13:29.806 A:middle
+You could use this within the
+
+00:13:29.806 --> 00:13:32.186 A:middle
+context of an interval or maybe
+
+00:13:32.186 --> 00:13:33.266 A:middle
+because you want to track
+
+00:13:33.266 --> 00:13:34.506 A:middle
+something that's independent of
+
+00:13:34.506 --> 00:13:35.606 A:middle
+an interval like a user
+
+00:13:35.606 --> 00:13:36.176 A:middle
+interaction.
+
+00:13:36.966 --> 00:13:39.436 A:middle
+So for that fetch asset interval
+
+00:13:39.436 --> 00:13:41.066 A:middle
+we're talking about, maybe you
+
+00:13:41.066 --> 00:13:42.206 A:middle
+want to know when you've
+
+00:13:42.206 --> 00:13:43.556 A:middle
+connected to the service that
+
+00:13:43.596 --> 00:13:44.616 A:middle
+provides that asset.
+
+00:13:45.066 --> 00:13:45.906 A:middle
+Or maybe you want to know when
+
+00:13:45.906 --> 00:13:47.336 A:middle
+you've received a few bytes of
+
+00:13:47.336 --> 00:13:47.466 A:middle
+it.
+
+00:13:48.416 --> 00:13:49.636 A:middle
+You can use this to update the
+
+00:13:49.636 --> 00:13:51.056 A:middle
+status or progress of a
+
+00:13:51.056 --> 00:13:52.556 A:middle
+particular interval many times
+
+00:13:52.596 --> 00:13:54.706 A:middle
+throughout that time of that
+
+00:13:54.706 --> 00:13:54.986 A:middle
+interval.
+
+00:13:56.426 --> 00:13:58.416 A:middle
+Or you might be tracking maybe a
+
+00:13:58.416 --> 00:14:00.776 A:middle
+triggering event like maybe a
+

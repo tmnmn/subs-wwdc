@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.566 --> 00:16:00.606 A:middle
+can construct the lookup table
+
+00:16:00.806 --> 00:16:02.046 A:middle
+for our weights.
+
+00:16:02.546 --> 00:16:04.116 A:middle
+And what we're doing over here
+
+00:16:04.116 --> 00:16:05.866 A:middle
+is that we're iterating over all
+
+00:16:05.866 --> 00:16:06.556 A:middle
+the layers in the neural
+
+00:16:06.556 --> 00:16:06.916 A:middle
+network.
+
+00:16:07.306 --> 00:16:08.496 A:middle
+And we're quantizing and we're
+
+00:16:08.496 --> 00:16:09.586 A:middle
+figuring out the lookup table
+
+00:16:09.936 --> 00:16:11.426 A:middle
+for that particular layer.
+
+00:16:12.226 --> 00:16:14.626 A:middle
+Now, if you're an expert and you
+
+00:16:14.626 --> 00:16:15.836 A:middle
+know that your model, you know
+
+00:16:15.836 --> 00:16:17.586 A:middle
+your model architecture and you
+
+00:16:17.586 --> 00:16:18.826 A:middle
+know that k-means is not the
+
+00:16:18.826 --> 00:16:20.426 A:middle
+algorithm for you, you have the
+
+00:16:20.426 --> 00:16:22.456 A:middle
+flexibility of passing in your
+
+00:16:22.456 --> 00:16:24.996 A:middle
+own custom function instead of
+
+00:16:24.996 --> 00:16:26.456 A:middle
+this algorithm and the utility
+
+00:16:26.456 --> 00:16:28.076 A:middle
+will use your custom function to
+
+00:16:28.076 --> 00:16:29.126 A:middle
+actually construct the lookup
+
+00:16:29.126 --> 00:16:29.436 A:middle
+table.
+
+00:16:30.866 --> 00:16:32.686 A:middle
+So we finished quantizing this
+
+00:16:32.686 --> 00:16:34.036 A:middle
+model again using the lookup
+
+00:16:34.036 --> 00:16:34.646 A:middle
+table approach.
+
+00:16:35.066 --> 00:16:36.596 A:middle
+And now let's see how well this
+
+00:16:36.596 --> 00:16:38.006 A:middle
+model compares with our original
+
+00:16:38.006 --> 00:16:38.306 A:middle
+model.
+
+00:16:38.626 --> 00:16:40.016 A:middle
+So once again we call our
+
+00:16:40.016 --> 00:16:41.286 A:middle
+compare model's API.
+
+00:16:42.276 --> 00:16:43.766 A:middle
+We pass in our original model
+
+00:16:43.766 --> 00:16:46.036 A:middle
+and we pass in our lookup table
+
+00:16:46.036 --> 00:16:46.366 A:middle
+model.
+
+00:16:47.036 --> 00:16:51.036 A:middle
+And again we pass in our sample
+
+00:16:51.036 --> 00:16:51.656 A:middle
+data folder.
+
+00:16:52.266 --> 00:16:56.406 A:middle
+Again, we run inference over all
+
+00:16:56.406 --> 00:16:58.616 A:middle
+the images using both the
+
+00:16:59.596 --> 00:17:00.866 A:middle
+original model and the quantized
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.376 --> 00:17:01.286 A:middle
+So, a coordinate region is made
+
+00:17:01.286 --> 00:17:02.756 A:middle
+up of a center, which is
+
+00:17:02.756 --> 00:17:04.465 A:middle
+represented by these dots at the
+
+00:17:04.465 --> 00:17:06.506 A:middle
+center of the map, as well as a
+
+00:17:06.506 --> 00:17:07.876 A:middle
+latitude and longitude span.
+
+00:17:07.876 --> 00:17:09.226 A:middle
+So here, I have represented the
+
+00:17:09.226 --> 00:17:12.076 A:middle
+region as this dotted box.
+
+00:17:12.986 --> 00:17:14.896 A:middle
+But we will not that the map --
+
+00:17:15.016 --> 00:17:16.076 A:middle
+the region that is set
+
+00:17:16.076 --> 00:17:18.246 A:middle
+ultimately on your map, will be
+
+00:17:18.246 --> 00:17:19.626 A:middle
+bigger than the region that you
+
+00:17:19.626 --> 00:17:21.006 A:middle
+asked for because we need to
+
+00:17:21.006 --> 00:17:22.846 A:middle
+make sure that it fits entirely
+
+00:17:22.846 --> 00:17:25.006 A:middle
+within the bounds that you have
+
+00:17:25.006 --> 00:17:25.786 A:middle
+set for your map.
+
+00:17:26.076 --> 00:17:27.496 A:middle
+So, in this case, I need to add
+
+00:17:27.496 --> 00:17:29.926 A:middle
+some padding, north and south of
+
+00:17:29.926 --> 00:17:31.666 A:middle
+the region to be able to show
+
+00:17:31.666 --> 00:17:33.456 A:middle
+the -- all of the region that
+
+00:17:33.456 --> 00:17:34.496 A:middle
+was specified.
+
+00:17:34.806 --> 00:17:37.606 A:middle
+So, in terms of putting the
+
+00:17:37.796 --> 00:17:39.856 A:middle
+MapKit JS framework -- the
+
+00:17:40.186 --> 00:17:42.346 A:middle
+center is set to a MapKit
+
+00:17:42.346 --> 00:17:43.746 A:middle
+coordinator object which is a
+
+00:17:43.746 --> 00:17:45.126 A:middle
+latitude and longitude pair.
+
+00:17:45.916 --> 00:17:47.966 A:middle
+In the Coordinate Region, to set
+
+00:17:47.966 --> 00:17:50.156 A:middle
+the region of the map, is an
+
+00:17:50.156 --> 00:17:52.006 A:middle
+object that contains two member,
+
+00:17:52.126 --> 00:17:53.376 A:middle
+a center which is also a
+
+00:17:53.376 --> 00:17:55.486 A:middle
+coordinate and a coordinate span
+
+00:17:55.486 --> 00:17:57.076 A:middle
+which is a latitude delta and a
+
+00:17:57.076 --> 00:18:01.496 A:middle
+longitude delta there.
+

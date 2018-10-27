@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.793 --> 00:26:01.395 align:middle line:-2
+UIView中的一些属性
+仍然可以工作
+
+00:26:01.795 --> 00:26:04.731 align:middle line:-1
+例如设置UIView的背景颜色
+
+00:26:04.798 --> 00:26:09.102 align:middle line:-2
+并不需要创建后备存储器
+除非你使用的是图案颜色
+
+00:26:09.503 --> 00:26:11.305 align:middle line:-1
+因此我建议不要在UIView中
+
+00:26:11.371 --> 00:26:13.440 align:middle line:-1
+使用具有背景颜色属性的图案颜色
+
+00:26:15.142 --> 00:26:17.244 align:middle line:-2
+而应该创建
+一个UIImageView
+
+00:26:17.811 --> 00:26:22.115 align:middle line:-2
+将你的图像分配到该图像视图并使用
+UIImageView中的函数
+
+00:26:22.616 --> 00:26:24.651 align:middle line:-1
+恰当地设置平铺参数
+
+00:26:27.921 --> 00:26:31.058 align:middle line:-1
+当我们想要剪切圆角矩形的角时
+
+00:26:32.226 --> 00:26:34.995 align:middle line:-2
+我们希望使用CALayer的
+cornerRadius属性
+
+00:26:35.829 --> 00:26:39.900 align:middle line:-2
+因为Core Animation
+能够渲染削角
+
+00:26:40.167 --> 00:26:42.436 align:middle line:-1
+而不需要额外的内存分配
+
+00:26:43.437 --> 00:26:46.139 align:middle line:-2
+如果我们改用更强大的
+maskView
+
+00:26:46.206 --> 00:26:47.574 align:middle line:-1
+或maskLayer属性
+
+00:26:48.308 --> 00:26:51.411 align:middle line:-2
+我们最终需要额外分配
+内存来存储该mask
+
+00:26:53.680 --> 00:26:57.618 align:middle line:-1
+如果你有更复杂透明区域的背景
+
+00:26:58.151 --> 00:27:00.687 align:middle line:-2
+并且不能通过cornerRadius属性
+进行设置
+

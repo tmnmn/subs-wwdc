@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.653 --> 00:32:02.289 align:middle line:-2
+订购当天汤的快捷方式
+那会更好
+
+00:32:02.356 --> 00:32:05.259 align:middle line:-2
+尽管他们最近没有订汤
+也从未订过汤
+
+00:32:05.325 --> 00:32:08.362 align:middle line:-2
+因为根据过往经验
+用户看起来很喜欢它
+
+00:32:08.428 --> 00:32:11.298 align:middle line:-2
+因为既美味
+又有特价
+
+00:32:11.698 --> 00:32:14.368 align:middle line:-2
+好 我们来看看
+通过该API如何去做
+
+00:32:16.036 --> 00:32:20.207 align:middle line:-2
+对于Intent 你在Intent中
+创建一个INShortcut
+
+00:32:20.474 --> 00:32:23.777 align:middle line:-2
+好 对于userActivity
+你同样在其中创建一个INShortcut
+
+00:32:24.378 --> 00:32:26.280 align:middle line:-1
+我要把它打包成一个建议列表
+
+00:32:26.346 --> 00:32:31.251 align:middle line:-2
+然后传值给INVoiceShortcutCenters的
+setShortcutSuggestions方法
+
+00:32:32.152 --> 00:32:33.120 align:middle line:-1
+做好之后
+
+00:32:33.187 --> 00:32:38.125 align:middle line:-2
+你同时一起会看到我的推荐
+和其他所有系统推荐
+
+00:32:38.792 --> 00:32:41.128 align:middle line:-2
+顺便要说
+这一系列推荐
+
+00:32:41.195 --> 00:32:44.765 align:middle line:-2
+会同样显示在快捷方式app中
+你就能利用你的快捷方式
+
+00:32:44.831 --> 00:32:46.099 align:middle line:-1
+创建自定义快捷方式
+
+00:32:49.803 --> 00:32:54.741 align:middle line:-2
+好 既然我们做所有这些工作
+就是为了给大家的用户提供
+
+00:32:54.808 --> 00:32:57.644 align:middle line:-2
+优质的语音体验 我们想确保
+用户知道
+
+00:32:57.711 --> 00:33:00.480 align:middle line:-2
+他们能够添加快捷方式
+并通过Siri使用
+

@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.465 --> 00:10:01.134 align:start position:32% line:-2
+レイヤーを
+問題なく追加できます
+
+00:10:02.002 --> 00:10:06.240 align:start position:27% line:-2
+色が変わったら レイヤーを
+アップデートする代わりに
+
+00:10:06.406 --> 00:10:09.276 align:start position:18% line:-2
+needsDisplayプロパティを
+trueに設定します
+
+00:10:09.409 --> 00:10:13.180 align:start position:16% line:-2
+AppKitがupdateLayerを
+呼び出してくれます
+
+00:10:14.214 --> 00:10:15.415 align:start position:38% line:-1
+見てみましょう
+
+00:10:16.383 --> 00:10:18.051 align:start position:36% line:-1
+ライトは問題なし
+
+00:10:20.020 --> 00:10:24.424 align:start position:29% line:-2
+ダークにすると ちゃんと
+色が変わっていますね
+
+00:10:26.326 --> 00:10:29.096 align:start position:32% line:-2
+もう少し
+難易度を上げましょう
+
+00:10:29.196 --> 00:10:33.033 align:start position:30% line:-2
+動的な色や画像だけでは
+表せないことです
+
+00:10:33.634 --> 00:10:36.336 align:start position:27% line:-1
+例えば クロエの顔の背景を
+
+00:10:36.436 --> 00:10:41.008 align:start position:29% line:-2
+薄く光らせるには
+どうすればいいでしょう？
+
+00:10:41.108 --> 00:10:44.044 align:start position:30% line:-2
+ダークモードにおいての
+話です
+
+00:10:44.878 --> 00:10:48.615 align:start position:25% line:-2
+この場合も
+Mojaveの新しいAPIで
+
+00:10:48.849 --> 00:10:52.986 align:start position:27% line:-2
+ビューのアピアランスに
+マッチさせることができます
+
+00:10:53.954 --> 00:10:57.858 align:start position:25% line:-2
+まず layoutメソッドを
+オーバーライドし
+
+00:10:58.492 --> 00:11:03.063 align:start position:0% line:-2
+switch文でeffectiveAppearance.
+bestMatch(from:を使います
+

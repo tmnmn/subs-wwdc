@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.237 --> 00:34:00.707 align:start position:29% line:-1
+関数呼び出し後の命令です
+
+00:34:00.974 --> 00:34:04.845 align:start position:11% line:-2
+呼び出されたobjc releaseの命令は
+１つ前の命令
+
+00:34:04.945 --> 00:34:06.447 align:start position:39% line:-1
+この命令です
+
+00:34:07.381 --> 00:34:11.784 align:start position:16% line:-2
+読むと objc releaseなので
+問題ありません
+
+00:34:11.885 --> 00:34:15.755 align:start position:25% line:-2
+スタックトレースで見たものと
+つじつまが合う
+
+00:34:15.856 --> 00:34:19.760 align:start position:11% line:-2
+このオフセットでのobjc releaseの
+呼び出しでした
+
+00:34:20.094 --> 00:34:23.330 align:start position:30% line:-2
+そして この解放関数は
+データベースの―
+
+00:34:23.429 --> 00:34:25.364 align:start position:27% line:-1
+プロパティを解放しています
+
+00:34:25.866 --> 00:34:29.570 align:start position:21% line:-1
+クラッシュの詳細が見えてきました
+
+00:34:29.670 --> 00:34:33.639 align:start position:25% line:-2
+ユーザ名のプロパティの解放は
+成功しました
+
+00:34:33.739 --> 00:34:36.543 align:start position:27% line:-2
+まだビューのプロパティには
+行ってません
+
+00:34:36.643 --> 00:34:39.746 align:start position:27% line:-1
+無効か有効かは分かりません
+
+00:34:39.847 --> 00:34:45.786 align:start position:23% line:-2
+分かったのは データベースの
+プロパティを解放しようとしたが
+
+00:34:45.886 --> 00:34:51.458 align:start position:25% line:-2
+そのオブジェクトが解放済みの
+オブジェクトだったことです
+
+00:34:52.226 --> 00:34:55.629 align:start position:25% line:-1
+これでかなり分かってきました
+
+00:34:56.096 --> 00:34:59.767 align:start position:16% line:-2
+LoginViewController
+オブジェクトを解放していたら
+
+00:34:59.867 --> 00:35:02.469 align:start position:27% line:-2
+データベースのプロパティが
+無効でした
+

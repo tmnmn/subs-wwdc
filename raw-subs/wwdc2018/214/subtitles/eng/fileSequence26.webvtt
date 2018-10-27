@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.786 --> 00:26:00.586 A:middle
+works during Intents.
+
+00:26:01.556 --> 00:26:02.936 A:middle
+For Intents, I'm actually able
+
+00:26:02.936 --> 00:26:04.366 A:middle
+to set multiple images.
+
+00:26:04.606 --> 00:26:06.256 A:middle
+One for each parameter that is
+
+00:26:06.286 --> 00:26:07.166 A:middle
+defined as an intent.
+
+00:26:08.046 --> 00:26:10.386 A:middle
+So, I'm going to set an image of
+
+00:26:10.386 --> 00:26:11.556 A:middle
+a chowder for the parameter
+
+00:26:11.556 --> 00:26:13.506 A:middle
+named "Soup," and an image of an
+
+00:26:13.506 --> 00:26:14.916 A:middle
+office for the parameter named
+
+00:26:14.916 --> 00:26:15.816 A:middle
+"Delivery Location."
+
+00:26:16.236 --> 00:26:17.496 A:middle
+And once I have that, I'm going
+
+00:26:17.496 --> 00:26:18.856 A:middle
+to create an IN Interaction out
+
+00:26:18.856 --> 00:26:20.726 A:middle
+of it and donate it.
+
+00:26:21.396 --> 00:26:22.706 A:middle
+So, at this point, you might be
+
+00:26:22.706 --> 00:26:24.676 A:middle
+wondering, "If I have a shortcut
+
+00:26:24.676 --> 00:26:25.876 A:middle
+that is based on a shortcut type
+
+00:26:25.876 --> 00:26:27.526 A:middle
+that contains multiple
+
+00:26:27.526 --> 00:26:29.406 A:middle
+parameters that have images, how
+
+00:26:29.406 --> 00:26:31.026 A:middle
+do I know which image gets
+
+00:26:31.026 --> 00:26:31.396 A:middle
+used?"
+
+00:26:31.886 --> 00:26:34.066 A:middle
+For that, we're going to go to
+
+00:26:34.066 --> 00:26:35.416 A:middle
+our Intent Definition File.
+
+00:26:35.976 --> 00:26:38.036 A:middle
+And in particular, the
+
+00:26:38.036 --> 00:26:38.966 A:middle
+Parameters Section.
+
+00:26:39.856 --> 00:26:40.906 A:middle
+So, in the Parameters Section,
+
+00:26:40.906 --> 00:26:42.186 A:middle
+we want to make sure that these
+
+00:26:42.186 --> 00:26:43.546 A:middle
+parameters, at least the ones
+
+00:26:43.546 --> 00:26:44.906 A:middle
+with images are ordered from
+
+00:26:45.136 --> 00:26:47.146 A:middle
+least specific to most specific.
+
+00:26:47.606 --> 00:26:48.876 A:middle
+So, in my case, I care more
+
+00:26:48.876 --> 00:26:50.396 A:middle
+about the soup image than the
+
+00:26:50.396 --> 00:26:51.926 A:middle
+delivery location.
+
+00:26:51.926 --> 00:26:52.646 A:middle
+So, I'm going to make sure the
+
+00:26:52.646 --> 00:26:54.266 A:middle
+soup comes below delivery
+
+00:26:54.266 --> 00:26:54.806 A:middle
+location.
+
+00:26:55.326 --> 00:26:57.886 A:middle
+And once I do that, my list of
+
+00:26:57.886 --> 00:26:59.176 A:middle
+shortcuts might look like this.
+

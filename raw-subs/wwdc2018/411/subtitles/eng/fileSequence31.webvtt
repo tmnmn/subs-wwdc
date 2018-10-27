@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.556 --> 00:31:00.406 A:middle
+trust, and management.
+
+00:31:00.906 --> 00:31:04.026 A:middle
+Git itself supports, the
+
+00:31:04.026 --> 00:31:05.226 A:middle
+protocols that get supports,
+
+00:31:05.546 --> 00:31:07.116 A:middle
+provides security mechanisms
+
+00:31:07.116 --> 00:31:08.786 A:middle
+like TLS to make sure that
+
+00:31:08.786 --> 00:31:10.056 A:middle
+you're actually talking to the
+
+00:31:10.056 --> 00:31:11.446 A:middle
+remote repository that you think
+
+00:31:11.446 --> 00:31:11.826 A:middle
+you are.
+
+00:31:12.356 --> 00:31:14.036 A:middle
+But a malicious actor could
+
+00:31:14.036 --> 00:31:15.496 A:middle
+still compromise remote
+
+00:31:15.496 --> 00:31:17.296 A:middle
+repository and put malicious
+
+00:31:17.326 --> 00:31:18.876 A:middle
+content in.
+
+00:31:19.166 --> 00:31:20.186 A:middle
+This is actually something
+
+00:31:20.186 --> 00:31:21.536 A:middle
+anytime you're using third-party
+
+00:31:21.536 --> 00:31:22.996 A:middle
+code, you should be aware of
+
+00:31:22.996 --> 00:31:24.006 A:middle
+these sorts of risks.
+
+00:31:24.376 --> 00:31:25.706 A:middle
+But the Swift Package Manager
+
+00:31:25.856 --> 00:31:27.776 A:middle
+provides a great opportunity for
+
+00:31:27.776 --> 00:31:29.686 A:middle
+us to build security features to
+
+00:31:29.686 --> 00:31:30.996 A:middle
+make sure that you're actually
+
+00:31:30.996 --> 00:31:32.366 A:middle
+getting the package content that
+
+00:31:32.366 --> 00:31:33.016 A:middle
+you expected.
+
+00:31:35.456 --> 00:31:37.546 A:middle
+SwiftPM also prevents your
+
+00:31:37.546 --> 00:31:39.026 A:middle
+package.swift manifest
+
+00:31:39.026 --> 00:31:41.206 A:middle
+evaluation in your build from
+
+00:31:41.206 --> 00:31:42.876 A:middle
+escaping and writing things out
+
+00:31:42.876 --> 00:31:44.266 A:middle
+into your file system or
+
+00:31:44.266 --> 00:31:45.316 A:middle
+accessing the network.
+
+00:31:45.756 --> 00:31:47.686 A:middle
+We're using macOS' sandboxing
+
+00:31:47.686 --> 00:31:49.066 A:middle
+technology for this today.
+
+00:31:49.066 --> 00:31:49.786 A:middle
+And it's great.
+
+00:31:50.096 --> 00:31:51.166 A:middle
+But we'd like to bring this kind
+
+00:31:51.166 --> 00:31:52.666 A:middle
+of security to other platforms
+
+00:31:52.666 --> 00:31:53.126 A:middle
+as well.
+
+00:31:55.596 --> 00:31:56.966 A:middle
+Many users may want to be able
+
+00:31:56.966 --> 00:31:58.566 A:middle
+to fork their packages easily,
+
+00:31:58.916 --> 00:32:00.346 A:middle
+either because they want to make
+

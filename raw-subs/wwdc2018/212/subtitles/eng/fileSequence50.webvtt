@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.406 --> 00:50:01.506 A:middle
+been selected, the request has
+
+00:50:01.506 --> 00:50:01.946 A:middle
+been made.
+
+00:50:02.026 --> 00:50:04.516 A:middle
+I see that I have three
+
+00:50:04.516 --> 00:50:05.236 A:middle
+different results.
+
+00:50:05.236 --> 00:50:06.976 A:middle
+So, they share a part of the
+
+00:50:06.976 --> 00:50:08.266 A:middle
+route, but then they diverge in
+
+00:50:08.266 --> 00:50:08.636 A:middle
+the end.
+
+00:50:09.336 --> 00:50:11.586 A:middle
+And they start from our current
+
+00:50:11.586 --> 00:50:13.166 A:middle
+location, the convention center.
+
+00:50:13.616 --> 00:50:14.726 A:middle
+So, I think this is right.
+
+00:50:14.926 --> 00:50:17.376 A:middle
+Yes, that looks right.
+
+00:50:17.376 --> 00:50:19.636 A:middle
+I have got three results.
+
+00:50:19.966 --> 00:50:21.566 A:middle
+So now, I might be interested in
+
+00:50:21.566 --> 00:50:23.886 A:middle
+knowing more about what's the
+
+00:50:23.886 --> 00:50:25.166 A:middle
+difference in travel time or
+
+00:50:25.166 --> 00:50:25.626 A:middle
+distance.
+
+00:50:25.996 --> 00:50:27.096 A:middle
+So, I can use selection to do
+
+00:50:27.096 --> 00:50:27.356 A:middle
+that.
+
+00:50:27.356 --> 00:50:28.936 A:middle
+But if I select a route, the
+
+00:50:28.936 --> 00:50:31.106 A:middle
+only thing that happens is that
+
+00:50:31.106 --> 00:50:32.416 A:middle
+my annotation has been
+
+00:50:32.416 --> 00:50:34.216 A:middle
+deselected because there is only
+
+00:50:34.216 --> 00:50:35.276 A:middle
+one selection at a time.
+
+00:50:35.666 --> 00:50:37.006 A:middle
+The problem here is that there
+
+00:50:37.006 --> 00:50:40.436 A:middle
+is no default behavior for
+
+00:50:40.436 --> 00:50:41.526 A:middle
+overlays being selected.
+
+00:50:41.926 --> 00:50:43.546 A:middle
+So, let's implement our own.
+
+00:50:43.876 --> 00:50:44.976 A:middle
+What we will do is we will
+
+00:50:44.976 --> 00:50:46.326 A:middle
+highlight these overlays and
+
+00:50:46.326 --> 00:50:47.746 A:middle
+then display their information
+
+00:50:47.796 --> 00:50:48.626 A:middle
+on the side bar.
+
+00:50:49.726 --> 00:50:51.186 A:middle
+So, in order to highlight these
+
+00:50:51.186 --> 00:50:53.656 A:middle
+overlays, I will create a new
+
+00:50:53.656 --> 00:50:56.816 A:middle
+style for highlighting overlays.
+
+00:50:56.816 --> 00:50:59.026 A:middle
+So, let's put it here, along
+
+00:50:59.026 --> 00:51:00.036 A:middle
+with my old style.
+

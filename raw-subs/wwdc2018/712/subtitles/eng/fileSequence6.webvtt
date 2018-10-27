@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.156 --> 00:06:00.786 A:middle
+We begin by importing Turi
+
+00:06:00.786 --> 00:06:01.236 A:middle
+Create.
+
+00:06:02.526 --> 00:06:04.796 A:middle
+We proceed to load our data into
+
+00:06:04.796 --> 00:06:06.046 A:middle
+a data structure called an
+
+00:06:06.046 --> 00:06:06.466 A:middle
+SFrame.
+
+00:06:06.816 --> 00:06:07.796 A:middle
+And we'll go into a bit more
+
+00:06:07.796 --> 00:06:09.156 A:middle
+detail on the SFrame data
+
+00:06:09.156 --> 00:06:10.006 A:middle
+structure shortly.
+
+00:06:10.486 --> 00:06:13.106 A:middle
+We'll proceed to create our
+
+00:06:13.106 --> 00:06:14.736 A:middle
+model with a simple function,
+
+00:06:14.816 --> 00:06:15.446 A:middle
+.create.
+
+00:06:15.966 --> 00:06:18.116 A:middle
+This, this function extracts
+
+00:06:18.116 --> 00:06:19.336 A:middle
+away the complicated machine
+
+00:06:19.336 --> 00:06:22.066 A:middle
+learning behind the scenes.
+
+00:06:22.956 --> 00:06:24.966 A:middle
+We proceed to evaluate our model
+
+00:06:24.966 --> 00:06:25.956 A:middle
+with the simple function
+
+00:06:26.176 --> 00:06:26.916 A:middle
+.evaluate.
+
+00:06:27.476 --> 00:06:30.266 A:middle
+And finally we can export the
+
+00:06:30.266 --> 00:06:32.586 A:middle
+resulting model to Core ML's
+
+00:06:32.626 --> 00:06:34.396 A:middle
+ML-model format to be easily
+
+00:06:34.396 --> 00:06:36.686 A:middle
+dragged and dropped into Xcode.
+
+00:06:37.356 --> 00:06:39.226 A:middle
+Now I mentioned that this same
+
+00:06:39.226 --> 00:06:41.166 A:middle
+five-step template applies to
+
+00:06:41.166 --> 00:06:42.866 A:middle
+all the different tasks within
+
+00:06:42.866 --> 00:06:43.506 A:middle
+Turi Create.
+
+00:06:44.296 --> 00:06:45.146 A:middle
+So whether you're working on
+
+00:06:45.146 --> 00:06:47.186 A:middle
+object detection, image
+
+00:06:47.186 --> 00:06:49.716 A:middle
+classification or activity
+
+00:06:49.716 --> 00:06:51.896 A:middle
+classification, the same code
+
+00:06:51.896 --> 00:06:52.806 A:middle
+template applies.
+
+00:06:52.806 --> 00:06:56.826 A:middle
+For our first demo today, we're
+
+00:06:57.066 --> 00:06:58.016 A:middle
+going to walk through a
+
+00:06:58.016 --> 00:06:59.846 A:middle
+calorie-counting app that uses
+
+00:06:59.846 --> 00:07:01.196 A:middle
+an object detection model.
+

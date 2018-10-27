@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.906 --> 00:14:03.556 A:middle
+remove this fixated layout and
+
+00:14:03.556 --> 00:14:05.346 A:middle
+to ensure that our structure is
+
+00:14:05.436 --> 00:14:05.956 A:middle
+tightly packed.
+
+00:14:07.436 --> 00:14:08.766 A:middle
+This can be useful when
+
+00:14:09.446 --> 00:14:11.146 A:middle
+serializing your structures or
+
+00:14:11.146 --> 00:14:12.296 A:middle
+when transferring your
+
+00:14:12.296 --> 00:14:13.576 A:middle
+structures over the network.
+
+00:14:14.836 --> 00:14:16.976 A:middle
+Now pragma pack is typically
+
+00:14:16.976 --> 00:14:19.036 A:middle
+used with a push and a pop
+
+00:14:19.136 --> 00:14:21.386 A:middle
+directive, but it can be easy
+
+00:14:21.386 --> 00:14:23.526 A:middle
+for the programmer to forget to
+
+00:14:23.526 --> 00:14:25.416 A:middle
+insert the pop into the code.
+
+00:14:27.246 --> 00:14:29.346 A:middle
+Xcode 10 will now warn about
+
+00:14:29.376 --> 00:14:31.526 A:middle
+code that doesn't have a
+
+00:14:31.526 --> 00:14:33.526 A:middle
+corresponding pragma pack pop
+
+00:14:33.526 --> 00:14:36.036 A:middle
+directive and to point you to
+
+00:14:36.036 --> 00:14:37.516 A:middle
+the location of the push.
+
+00:14:38.146 --> 00:14:41.426 A:middle
+So to fix this warning you
+
+00:14:41.426 --> 00:14:42.866 A:middle
+should take a look at the
+
+00:14:42.866 --> 00:14:44.586 A:middle
+location of your push directive
+
+00:14:45.156 --> 00:14:47.716 A:middle
+and insert the pop directive at
+
+00:14:47.716 --> 00:14:49.706 A:middle
+the corresponding location in
+
+00:14:49.706 --> 00:14:50.376 A:middle
+your code.
+
+00:14:51.806 --> 00:14:53.426 A:middle
+So in our case we can insert the
+
+00:14:53.426 --> 00:14:55.296 A:middle
+pop directly after the packed
+
+00:14:55.376 --> 00:14:55.836 A:middle
+structure.
+
+00:14:57.186 --> 00:15:00.986 A:middle
+Once we do that the new layout
+

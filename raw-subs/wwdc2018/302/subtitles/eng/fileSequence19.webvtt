@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.846 --> 00:19:00.426 A:middle
+MDM solution can populate the UI
+
+00:19:00.426 --> 00:19:01.516 A:middle
+presented to the admin.
+
+00:19:01.856 --> 00:19:07.376 A:middle
+It's in the MDM protocol guide.
+
+00:19:07.586 --> 00:19:09.126 A:middle
+Alright. And, that brings us to
+
+00:19:09.126 --> 00:19:10.416 A:middle
+the end of our common section.
+
+00:19:10.416 --> 00:19:11.496 A:middle
+And now, I'd like to talk about
+
+00:19:11.496 --> 00:19:12.936 A:middle
+some iOS-specific changes.
+
+00:19:13.646 --> 00:19:14.806 A:middle
+Again, starting with security.
+
+00:19:15.466 --> 00:19:17.206 A:middle
+Now, some of you may have heard
+
+00:19:17.206 --> 00:19:18.986 A:middle
+about this change that we
+
+00:19:19.276 --> 00:19:21.356 A:middle
+started to make in iOS 11.3, and
+
+00:19:21.356 --> 00:19:24.056 A:middle
+now it's back in 11.4.1, and iOS
+
+00:19:24.056 --> 00:19:24.376 A:middle
+12.
+
+00:19:24.976 --> 00:19:25.836 A:middle
+And, of course, we wanted to
+
+00:19:25.836 --> 00:19:27.096 A:middle
+make this manageable as well,
+
+00:19:27.646 --> 00:19:29.296 A:middle
+beyond the switch that's in the
+
+00:19:29.296 --> 00:19:30.916 A:middle
+UI in iOS 12.
+
+00:19:31.636 --> 00:19:33.206 A:middle
+So, there's a new restriction
+
+00:19:33.206 --> 00:19:34.616 A:middle
+that allows you to control this
+
+00:19:34.616 --> 00:19:35.946 A:middle
+feature, and whether USB
+
+00:19:35.946 --> 00:19:37.226 A:middle
+accessories can still connect
+
+00:19:37.226 --> 00:19:38.496 A:middle
+devices if they're locked.
+
+00:19:39.836 --> 00:19:41.316 A:middle
+And, of course, Configurator
+
+00:19:41.316 --> 00:19:42.996 A:middle
+kind of relies on devices being
+
+00:19:42.996 --> 00:19:44.856 A:middle
+able to connect via USB, so we
+
+00:19:44.856 --> 00:19:46.056 A:middle
+have implemented a special
+
+00:19:46.056 --> 00:19:47.486 A:middle
+behavior for those devices.
+
+00:19:48.016 --> 00:19:49.216 A:middle
+When Configurator prepares a
+
+00:19:49.216 --> 00:19:51.596 A:middle
+device to supervise it, but not
+
+00:19:51.596 --> 00:19:53.346 A:middle
+enroll it in MDM, it will
+
+00:19:53.346 --> 00:19:54.976 A:middle
+automatically install a profile
+
+00:19:55.516 --> 00:19:56.776 A:middle
+that installs this restriction,
+
+00:19:56.776 --> 00:19:58.566 A:middle
+and allows those devices to
+
+00:19:58.566 --> 00:20:00.386 A:middle
+continue connecting to the Mac
+

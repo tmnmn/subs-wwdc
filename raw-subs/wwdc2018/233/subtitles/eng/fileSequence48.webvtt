@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.926 --> 00:48:02.826 A:middle
+see by looking closely, that our
+
+00:48:02.826 --> 00:48:06.156 A:middle
+cropEnabled ivar is currently
+
+00:48:06.776 --> 00:48:07.686 A:middle
+set to no.
+
+00:48:07.766 --> 00:48:09.156 A:middle
+So, we have a good place to
+
+00:48:09.306 --> 00:48:10.536 A:middle
+start investigating this bug.
+
+00:48:11.876 --> 00:48:12.596 A:middle
+&gt;&gt; That's great.
+
+00:48:13.296 --> 00:48:15.756 A:middle
+Using dump and ivarDescription
+
+00:48:15.876 --> 00:48:17.436 A:middle
+are great ways to diagnose
+
+00:48:17.466 --> 00:48:20.016 A:middle
+problems with your app.
+
+00:48:20.246 --> 00:48:22.226 A:middle
+Another wonderful debugging tip
+
+00:48:22.226 --> 00:48:23.426 A:middle
+and trick that we have for you
+
+00:48:23.726 --> 00:48:24.726 A:middle
+is breakpoints.
+
+00:48:25.726 --> 00:48:27.366 A:middle
+Breakpoints let you pause the
+
+00:48:27.366 --> 00:48:28.966 A:middle
+program at arbitrary states of
+
+00:48:28.966 --> 00:48:31.526 A:middle
+execution, and run commands.
+
+00:48:32.546 --> 00:48:34.916 A:middle
+And, using the LLDB command
+
+00:48:34.916 --> 00:48:37.396 A:middle
+line, or the Xcode UI, you can
+
+00:48:37.396 --> 00:48:39.296 A:middle
+even add conditions before these
+
+00:48:39.296 --> 00:48:40.976 A:middle
+breakpoints are run, and
+
+00:48:40.976 --> 00:48:42.586 A:middle
+commands to run every time the
+
+00:48:42.586 --> 00:48:43.486 A:middle
+breakpoint is hit.
+
+00:48:44.676 --> 00:48:46.086 A:middle
+Breakpoints are an essential
+
+00:48:46.086 --> 00:48:47.586 A:middle
+part of your debugging workflow.
+
+00:48:48.126 --> 00:48:49.476 A:middle
+And, you can use the expression
+
+00:48:49.476 --> 00:48:51.246 A:middle
+command, and dump, and
+
+00:48:51.246 --> 00:48:52.956 A:middle
+ivarDescription, with the
+
+00:48:52.956 --> 00:48:54.136 A:middle
+breakpoints that you set up in
+
+00:48:54.136 --> 00:48:54.496 A:middle
+Xcode.
+
+00:48:54.956 --> 00:48:56.736 A:middle
+I really encourage you to use
+
+00:48:56.736 --> 00:48:58.166 A:middle
+breakpoints next time you're
+
+00:48:58.166 --> 00:48:59.586 A:middle
+debugging an issue with your
+

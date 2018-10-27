@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.496 --> 00:05:01.826 A:middle
+So the first step is for the
+
+00:05:01.826 --> 00:05:02.826 A:middle
+build system to take the build
+
+00:05:02.826 --> 00:05:04.546 A:middle
+description, your Xcode project
+
+00:05:04.546 --> 00:05:04.906 A:middle
+file.
+
+00:05:05.316 --> 00:05:07.256 A:middle
+Parse it, take into account all
+
+00:05:07.256 --> 00:05:09.096 A:middle
+the files in your project, your
+
+00:05:09.156 --> 00:05:10.326 A:middle
+targets and the dependency
+
+00:05:10.326 --> 00:05:11.216 A:middle
+relationships.
+
+00:05:11.216 --> 00:05:13.276 A:middle
+Your build settings, and turn it
+
+00:05:13.276 --> 00:05:14.326 A:middle
+into a tree-like structure
+
+00:05:14.326 --> 00:05:15.646 A:middle
+called a directed graph.
+
+00:05:16.306 --> 00:05:17.516 A:middle
+And this represents all the
+
+00:05:17.516 --> 00:05:19.136 A:middle
+dependencies between the input
+
+00:05:19.136 --> 00:05:20.536 A:middle
+and output files in your project
+
+00:05:20.976 --> 00:05:22.216 A:middle
+and the tasks that will be
+
+00:05:22.216 --> 00:05:23.886 A:middle
+executed to process them.
+
+00:05:24.316 --> 00:05:27.856 A:middle
+Next the low-level execution
+
+00:05:27.856 --> 00:05:29.356 A:middle
+engine processes this graph,
+
+00:05:29.706 --> 00:05:30.946 A:middle
+looks at the dependency
+
+00:05:30.946 --> 00:05:32.756 A:middle
+specifications and figures out
+
+00:05:32.806 --> 00:05:34.136 A:middle
+which tasks to execute.
+
+00:05:34.676 --> 00:05:35.756 A:middle
+The sequence or order in which
+
+00:05:35.756 --> 00:05:37.676 A:middle
+they must be run and which tasks
+
+00:05:37.756 --> 00:05:39.416 A:middle
+can be run in parallel.
+
+00:05:39.416 --> 00:05:41.406 A:middle
+Then proceeds to execute them.
+
+00:05:42.266 --> 00:05:43.746 A:middle
+And by the way, our low-level
+
+00:05:43.746 --> 00:05:44.956 A:middle
+build execution engine for the
+
+00:05:44.956 --> 00:05:45.936 A:middle
+new build system is called
+
+00:05:45.936 --> 00:05:46.436 A:middle
+llbuild.
+
+00:05:46.436 --> 00:05:47.566 A:middle
+And it's open source and
+
+00:05:47.566 --> 00:05:48.396 A:middle
+developed on GitHub.
+
+00:05:48.766 --> 00:05:49.606 A:middle
+If you're interested in build
+
+00:05:49.606 --> 00:05:50.996 A:middle
+systems development, feel free
+
+00:05:50.996 --> 00:05:52.086 A:middle
+to check it out and see how it
+
+00:05:52.086 --> 00:05:52.446 A:middle
+works.
+
+00:05:52.906 --> 00:05:53.806 A:middle
+We'll have a link to this and
+
+00:05:53.806 --> 00:05:54.966 A:middle
+other open source components
+
+00:05:54.966 --> 00:05:56.316 A:middle
+related to the build process at
+
+00:05:56.316 --> 00:05:56.986 A:middle
+the end of the talk.
+
+00:05:57.856 --> 00:05:59.856 A:middle
+Okay, let's talk about
+
+00:05:59.856 --> 00:06:00.936 A:middle
+discovered dependencies.
+

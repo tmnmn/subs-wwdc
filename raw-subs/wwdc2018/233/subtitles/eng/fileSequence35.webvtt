@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.186 --> 00:35:01.006 A:middle
+account all show that Handoff is
+
+00:35:01.006 --> 00:35:01.476 A:middle
+available.
+
+00:35:02.586 --> 00:35:04.106 A:middle
+On the Mac, you'll see an icon
+
+00:35:04.346 --> 00:35:06.516 A:middle
+down in the Dock.
+
+00:35:06.746 --> 00:35:08.706 A:middle
+When you click on this Mail
+
+00:35:08.706 --> 00:35:10.216 A:middle
+icon, the activity will be
+
+00:35:10.216 --> 00:35:13.366 A:middle
+transferred over to the Mac, and
+
+00:35:13.366 --> 00:35:14.906 A:middle
+Mail can launch and continue
+
+00:35:14.906 --> 00:35:15.956 A:middle
+exactly where you left off.
+
+00:35:18.416 --> 00:35:19.686 A:middle
+So, let's look at the code
+
+00:35:19.686 --> 00:35:21.926 A:middle
+necessary to set this up.
+
+00:35:24.416 --> 00:35:26.236 A:middle
+On the originating device, you
+
+00:35:26.236 --> 00:35:27.386 A:middle
+start by creating your
+
+00:35:27.426 --> 00:35:29.076 A:middle
+NSUserActivity with a given
+
+00:35:29.166 --> 00:35:29.356 A:middle
+type.
+
+00:35:30.536 --> 00:35:31.546 A:middle
+And, this type represents the
+
+00:35:31.546 --> 00:35:33.456 A:middle
+kind of activity that your user
+
+00:35:33.456 --> 00:35:34.366 A:middle
+is currently doing.
+
+00:35:34.906 --> 00:35:37.906 A:middle
+You then set a title, and set
+
+00:35:37.906 --> 00:35:39.636 A:middle
+isEligibleForHandoff to true.
+
+00:35:40.996 --> 00:35:42.186 A:middle
+And you then want to populate
+
+00:35:42.186 --> 00:35:43.606 A:middle
+your userInfo dictionary.
+
+00:35:44.576 --> 00:35:45.636 A:middle
+And, you need to fill this with
+
+00:35:45.686 --> 00:35:47.736 A:middle
+all the information necessary to
+
+00:35:47.736 --> 00:35:48.996 A:middle
+be able to continue the
+
+00:35:48.996 --> 00:35:49.636 A:middle
+activity.
+
+00:35:50.806 --> 00:35:52.356 A:middle
+In this case, our example is a
+
+00:35:52.356 --> 00:35:53.876 A:middle
+video, and we're including a
+
+00:35:53.876 --> 00:35:55.766 A:middle
+video ID, and a current play
+
+00:35:55.836 --> 00:35:55.976 A:middle
+time.
+
+00:35:58.266 --> 00:35:59.966 A:middle
+Finally, you'll want to set this
+
+00:35:59.966 --> 00:36:00.816 A:middle
+activity to your
+

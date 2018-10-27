@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:57.611 --> 00:18:00.147 align:middle line:-1
+我们最喜欢的连续手势之一
+
+00:18:00.214 --> 00:18:02.082 align:middle line:-1
+是UIPanGestureRecognizer
+
+00:18:02.749 --> 00:18:05.085 align:middle line:-1
+而且有两个很棒的函数
+
+00:18:05.152 --> 00:18:06.820 align:middle line:-1
+可以帮助你充分利用它
+
+00:18:08.121 --> 00:18:11.558 align:middle line:-2
+translationInView
+会告诉你 相对于你的视图
+
+00:18:11.625 --> 00:18:12.926 align:middle line:-1
+你的手势跟踪的位置
+
+00:18:14.194 --> 00:18:17.931 align:middle line:-2
+而velocityInView
+会告诉你手势的移动速度
+
+00:18:18.365 --> 00:18:22.169 align:middle line:-1
+这对于在手势和后续动画之间
+
+00:18:22.236 --> 00:18:23.770 align:middle line:-1
+切换速度非常有用
+
+00:18:25.472 --> 00:18:29.743 align:middle line:-2
+若想了解如何使用它们构建
+真正优秀的手势交互
+
+00:18:29.810 --> 00:18:32.880 align:middle line:-1
+请查看2014年WWDC中的演讲
+
+00:18:32.946 --> 00:18:34.848 align:middle line:-1
+构建可中断和响应式交互
+
+00:18:36.250 --> 00:18:39.453 align:middle line:-2
+我也喜欢
+UIPanGestureRecognizer
+
+00:18:39.520 --> 00:18:40.787 align:middle line:-1
+我们用它构建了
+
+00:18:40.854 --> 00:18:43.590 align:middle line:-1
+你之前看到的卡片拖动行为
+
+00:18:44.391 --> 00:18:47.327 align:middle line:-2
+让我们看看我们是如何
+使用布局驱动UI做到这一点的
+
+00:18:49.263 --> 00:18:53.700 align:middle line:-2
+我们这里也有一个局部变量
+用于跟踪已被应用手势的
+
+00:18:53.767 --> 00:18:56.703 align:middle line:-1
+每张卡片的偏移量
+
+00:18:57.337 --> 00:19:00.374 align:middle line:-1
+注意每当此变量发生变化时
+

@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.966 --> 00:18:01.296 A:middle
+implementation of the
+
+00:18:01.296 --> 00:18:03.506 A:middle
+UICollectionViewDataSource
+
+00:18:03.506 --> 00:18:03.976 A:middle
+protocol.
+
+00:18:12.106 --> 00:18:13.896 A:middle
+Here we return the number of
+
+00:18:13.896 --> 00:18:15.696 A:middle
+documents we have just gathered
+
+00:18:16.096 --> 00:18:17.896 A:middle
+and then create a cell for each
+
+00:18:17.896 --> 00:18:19.316 A:middle
+of the documents with a
+
+00:18:19.316 --> 00:18:20.896 A:middle
+thumbnail as the image of the
+
+00:18:20.896 --> 00:18:22.076 A:middle
+cell respectively.
+
+00:18:22.526 --> 00:18:25.756 A:middle
+And that's pretty much the core
+
+00:18:25.756 --> 00:18:27.166 A:middle
+of the application so far.
+
+00:18:28.266 --> 00:18:29.736 A:middle
+Now let's add what we've talked
+
+00:18:29.736 --> 00:18:30.476 A:middle
+about before.
+
+00:18:31.216 --> 00:18:32.786 A:middle
+When tapping a cell we would
+
+00:18:32.786 --> 00:18:34.246 A:middle
+like to show Quick Look with the
+
+00:18:34.246 --> 00:18:35.146 A:middle
+right document.
+
+00:18:36.286 --> 00:18:37.886 A:middle
+We've already made sure that we
+
+00:18:37.886 --> 00:18:39.196 A:middle
+have a method that is called
+
+00:18:39.196 --> 00:18:40.856 A:middle
+when the user has just tapped a
+
+00:18:40.856 --> 00:18:40.966 A:middle
+cell.
+
+00:18:47.056 --> 00:18:48.676 A:middle
+To show Quick Look we create a
+
+00:18:48.676 --> 00:18:50.896 A:middle
+new QLPreviewController in here
+
+00:18:51.286 --> 00:18:51.976 A:middle
+and configure it.
+

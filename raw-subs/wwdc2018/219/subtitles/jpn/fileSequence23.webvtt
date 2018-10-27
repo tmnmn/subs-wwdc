@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.045 --> 00:23:03.750 align:start position:21% line:-2
+ビューのサブクラスと
+UIImageViewを比べます
+
+00:23:04.318 --> 00:23:07.287 align:start position:29% line:-1
+UIViewを支えるのは
+
+00:23:07.387 --> 00:23:11.058 align:start position:23% line:-2
+Core Animationの
+CALayerです
+
+00:23:11.725 --> 00:23:13.227 align:start position:38% line:-1
+画像ビューは―
+
+00:23:13.327 --> 00:23:18.165 align:start position:29% line:-2
+デコードした
+イメージバッファを要求し
+
+00:23:19.066 --> 00:23:24.705 align:start position:27% line:-2
+それをCALayerに渡し
+レイヤとして使います
+
+00:23:26.173 --> 00:23:28.442 align:start position:30% line:-1
+しかし サブクラスは―
+
+00:23:29.776 --> 00:23:31.578 align:start position:39% line:-1
+少し違います
+
+00:23:31.678 --> 00:23:36.817 align:start position:27% line:-2
+レイヤがdrawメソッドの
+イメージバッファを作り
+
+00:23:37.317 --> 00:23:43.524 align:start position:27% line:-2
+サブクラスがdraw機能で
+コンテンツを上書きします
+
+00:23:43.624 --> 00:23:48.295 align:start position:27% line:-2
+その後 フレームバッファに
+コピーするのです
+
+00:23:55.068 --> 00:24:00.574 align:start position:27% line:-2
+この処理は負担が大きいので
+別の方法がよいでしょう
+

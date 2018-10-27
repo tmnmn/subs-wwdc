@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:01.296 --> 00:10:02.276 A:middle
+We're then going to create a
+
+00:10:02.276 --> 00:10:04.516 A:middle
+mask from that sample and apply
+
+00:10:04.626 --> 00:10:06.956 A:middle
+it to the image.
+
+00:10:07.436 --> 00:10:08.336 A:middle
+Once we've done that, we're
+
+00:10:08.336 --> 00:10:09.576 A:middle
+going to reconstruct the
+
+00:10:09.576 --> 00:10:10.176 A:middle
+original image.
+
+00:10:10.516 --> 00:10:11.826 A:middle
+So let me walk you through some
+
+00:10:11.826 --> 00:10:11.976 A:middle
+code.
+
+00:10:14.736 --> 00:10:18.396 A:middle
+We're going to do an FFT.
+
+00:10:18.516 --> 00:10:19.306 A:middle
+This means it needs to be a
+
+00:10:19.306 --> 00:10:19.936 A:middle
+power of 2.
+
+00:10:20.306 --> 00:10:21.236 A:middle
+That's why you see the log2
+
+00:10:21.236 --> 00:10:21.496 A:middle
+call.
+
+00:10:21.496 --> 00:10:24.796 A:middle
+The 1024 x 1024 is the size of
+
+00:10:24.796 --> 00:10:25.226 A:middle
+the image.
+
+00:10:28.646 --> 00:10:30.106 A:middle
+We're then going to pass it to
+
+00:10:30.106 --> 00:10:30.846 A:middle
+fft2d zrop.
+
+00:10:31.226 --> 00:10:32.076 A:middle
+This is quite a mouthful.
+
+00:10:32.506 --> 00:10:33.976 A:middle
+The important part here is the
+
+00:10:33.976 --> 00:10:35.616 A:middle
+op stands for out of place.
+
+00:10:35.616 --> 00:10:36.746 A:middle
+So we're going to have to create
+
+00:10:36.746 --> 00:10:38.346 A:middle
+some temporary space just for
+
+00:10:38.346 --> 00:10:38.756 A:middle
+the result.
+
+00:10:39.256 --> 00:10:42.876 A:middle
+We're going to store in this
+
+00:10:42.876 --> 00:10:44.346 A:middle
+complex structure, and
+
+00:10:44.486 --> 00:10:45.226 A:middle
+effectively this says we're
+
+00:10:45.226 --> 00:10:46.176 A:middle
+going to store the complex
+
+00:10:46.176 --> 00:10:48.526 A:middle
+number in two arrays with the
+
+00:10:48.526 --> 00:10:49.926 A:middle
+real component in one array and
+
+00:10:49.956 --> 00:10:51.366 A:middle
+the imaginary component in the
+
+00:10:51.686 --> 00:10:51.866 A:middle
+second.
+
+00:10:52.856 --> 00:10:53.816 A:middle
+We also need to specify a
+
+00:10:53.816 --> 00:10:54.296 A:middle
+direction.
+
+00:10:54.746 --> 00:10:55.596 A:middle
+In this case we're going to do a
+
+00:10:55.596 --> 00:10:56.406 A:middle
+forward FFT.
+

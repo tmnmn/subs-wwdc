@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:00.526 --> 00:09:01.616 A:middle
+The only difference is that the
+
+00:09:01.616 --> 00:09:03.186 A:middle
+element is expressed on
+
+00:09:03.416 --> 00:09:04.416 A:middle
+[inaudible] section.
+
+00:09:05.036 --> 00:09:06.546 A:middle
+Children binding works with any
+
+00:09:06.716 --> 00:09:07.066 A:middle
+element.
+
+00:09:10.166 --> 00:09:11.636 A:middle
+Now this works really well as
+
+00:09:11.636 --> 00:09:13.196 A:middle
+long as you want to generate all
+
+00:09:13.196 --> 00:09:14.716 A:middle
+the child elements itself.
+
+00:09:15.456 --> 00:09:16.656 A:middle
+There might be cases where you
+
+00:09:16.656 --> 00:09:18.326 A:middle
+want to only generate some of
+
+00:09:18.326 --> 00:09:19.016 A:middle
+those children.
+
+00:09:19.146 --> 00:09:20.996 A:middle
+Take, for example, an auto
+
+00:09:20.996 --> 00:09:22.886 A:middle
+streaming app with a now playing
+
+00:09:22.886 --> 00:09:23.476 A:middle
+menu item.
+
+00:09:24.186 --> 00:09:25.406 A:middle
+The now playing menu item is a
+
+00:09:25.406 --> 00:09:27.386 A:middle
+special menu item that should
+
+00:09:27.386 --> 00:09:29.686 A:middle
+always be in the menu bar but
+
+00:09:29.686 --> 00:09:32.016 A:middle
+would only appear if background
+
+00:09:32.016 --> 00:09:33.896 A:middle
+audio is currently playing.
+
+00:09:36.716 --> 00:09:38.376 A:middle
+However in this case, we still
+
+00:09:38.376 --> 00:09:39.556 A:middle
+want the menu bar items to be
+
+00:09:39.556 --> 00:09:40.186 A:middle
+data bound.
+
+00:09:40.986 --> 00:09:42.996 A:middle
+In order for this work, we need
+
+00:09:42.996 --> 00:09:44.386 A:middle
+to compartmentalize the data
+
+00:09:44.386 --> 00:09:46.326 A:middle
+driven and non-data driven parts
+
+00:09:46.326 --> 00:09:47.006 A:middle
+of the menu bar.
+
+00:09:47.626 --> 00:09:49.136 A:middle
+And that's where fragments comes
+
+00:09:49.136 --> 00:09:51.776 A:middle
+into play.
+
+00:09:51.966 --> 00:09:52.946 A:middle
+So what are fragments?
+
+00:09:54.376 --> 00:09:56.066 A:middle
+Fragments are invisible elements
+
+00:09:56.216 --> 00:09:57.436 A:middle
+that the renderer doesn't see
+
+00:09:58.216 --> 00:09:59.746 A:middle
+and it helps you organize your
+
+00:09:59.746 --> 00:10:00.056 A:middle
+DOM.
+

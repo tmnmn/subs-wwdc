@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.526 --> 00:23:00.646 A:middle
+expression in its body, then the
+
+00:23:00.646 --> 00:23:02.026 A:middle
+compiler will use that
+
+00:23:02.026 --> 00:23:03.986 A:middle
+expression to help determine the
+
+00:23:03.986 --> 00:23:04.976 A:middle
+type of the closure.
+
+00:23:05.786 --> 00:23:06.926 A:middle
+Sometimes this is really
+
+00:23:06.926 --> 00:23:07.506 A:middle
+convenient.
+
+00:23:08.086 --> 00:23:10.126 A:middle
+Other times it can lead to code
+
+00:23:10.126 --> 00:23:10.976 A:middle
+like this.
+
+00:23:12.506 --> 00:23:13.916 A:middle
+That's pretty ugly.
+
+00:23:13.916 --> 00:23:14.846 A:middle
+I don't think I'm going to get
+
+00:23:14.846 --> 00:23:16.046 A:middle
+past code review with that one.
+
+00:23:17.276 --> 00:23:18.796 A:middle
+We've got some nested turnery
+
+00:23:18.796 --> 00:23:20.876 A:middle
+operators and some explicit
+
+00:23:20.876 --> 00:23:22.316 A:middle
+comparisons against nil.
+
+00:23:22.406 --> 00:23:23.886 A:middle
+And then a force and wrap to go
+
+00:23:23.886 --> 00:23:24.636 A:middle
+with it.
+
+00:23:24.636 --> 00:23:26.046 A:middle
+I don't really think this is
+
+00:23:26.046 --> 00:23:26.676 A:middle
+going to fly.
+
+00:23:27.316 --> 00:23:28.686 A:middle
+And it's got another problem,
+
+00:23:28.686 --> 00:23:29.086 A:middle
+too.
+
+00:23:29.626 --> 00:23:31.136 A:middle
+Because this expression is
+
+00:23:31.136 --> 00:23:32.976 A:middle
+getting so large, with so many
+
+00:23:32.976 --> 00:23:35.316 A:middle
+independent pieces, the Swift
+
+00:23:35.316 --> 00:23:36.996 A:middle
+compiler will report that it's
+
+00:23:36.996 --> 00:23:38.656 A:middle
+not able to compile this in a
+
+00:23:38.656 --> 00:23:39.906 A:middle
+reasonable amount of time.
+
+00:23:40.966 --> 00:23:42.186 A:middle
+Now, this is the ultimate in
+
+00:23:42.186 --> 00:23:43.646 A:middle
+slow builds when even the
+
+00:23:43.646 --> 00:23:44.646 A:middle
+compiler gives up.
+
+00:23:45.776 --> 00:23:46.826 A:middle
+And really, it's telling me
+
+00:23:46.826 --> 00:23:48.046 A:middle
+something about this code.
+
+00:23:48.876 --> 00:23:50.906 A:middle
+So, my first option here would
+
+00:23:50.906 --> 00:23:52.026 A:middle
+be to do the same thing as the
+
+00:23:52.026 --> 00:23:53.786 A:middle
+previous example and provide
+
+00:23:53.786 --> 00:23:54.806 A:middle
+additional types.
+
+00:23:55.186 --> 00:23:56.586 A:middle
+With a closure, you can do that
+
+00:23:56.586 --> 00:23:57.906 A:middle
+just before the In Key word.
+
+00:23:59.156 --> 00:24:01.446 A:middle
+But, this may not be the best
+

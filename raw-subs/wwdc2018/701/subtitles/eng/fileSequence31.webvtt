@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.836 --> 00:31:03.036 A:middle
+call vImageRotate and given the
+
+00:31:03.036 --> 00:31:05.006 A:middle
+angle of rotation, it will do
+
+00:31:05.006 --> 00:31:06.726 A:middle
+counterclockwise or clockwise to
+
+00:31:06.726 --> 00:31:07.956 A:middle
+better align your images.
+
+00:31:09.276 --> 00:31:11.766 A:middle
+For the blur effect, we use
+
+00:31:11.846 --> 00:31:12.536 A:middle
+TentConvolve.
+
+00:31:13.676 --> 00:31:15.066 A:middle
+The blur effect is controlled by
+
+00:31:15.066 --> 00:31:15.976 A:middle
+the size of the kernel.
+
+00:31:16.446 --> 00:31:18.086 A:middle
+The larger the kernel, the more
+
+00:31:18.086 --> 00:31:19.746 A:middle
+blur you'll get.
+
+00:31:20.916 --> 00:31:22.996 A:middle
+Dither effect is basically
+
+00:31:22.996 --> 00:31:25.276 A:middle
+converting an 8-bit image into a
+
+00:31:25.276 --> 00:31:26.116 A:middle
+1-bit image.
+
+00:31:26.306 --> 00:31:27.446 A:middle
+At the same time, you can
+
+00:31:27.446 --> 00:31:29.146 A:middle
+specify a dithering algorithm.
+
+00:31:29.736 --> 00:31:30.886 A:middle
+In this case, we used the
+
+00:31:30.966 --> 00:31:32.526 A:middle
+Atkinson dithering algorithm.
+
+00:31:33.016 --> 00:31:37.646 A:middle
+Color quantization, we used the
+
+00:31:37.646 --> 00:31:39.706 A:middle
+quantization level to create a
+
+00:31:39.706 --> 00:31:41.536 A:middle
+lookup table for the RGB
+
+00:31:41.536 --> 00:31:43.976 A:middle
+channel, and we call
+
+00:31:44.076 --> 00:31:46.596 A:middle
+vImageTableLookUp to apply this
+
+00:31:46.596 --> 00:31:48.806 A:middle
+table lookup to RGB channels to
+
+00:31:48.966 --> 00:31:50.476 A:middle
+limit the number of colors on
+
+00:31:50.476 --> 00:31:50.816 A:middle
+the screen.
+
+00:31:52.106 --> 00:31:55.606 A:middle
+Those are the four additional
+
+00:31:55.606 --> 00:31:56.796 A:middle
+effects I wanted to show you,
+
+00:31:57.106 --> 00:31:59.416 A:middle
+and I think now is a good time
+
+00:31:59.416 --> 00:32:00.986 A:middle
+to move onto the next topic.
+

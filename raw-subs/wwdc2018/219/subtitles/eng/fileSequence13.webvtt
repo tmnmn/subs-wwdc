@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.446 --> 00:13:02.606 A:middle
+For example, the Camera Roll.
+
+00:13:02.666 --> 00:13:03.936 A:middle
+You might implement such a view
+
+00:13:04.136 --> 00:13:05.326 A:middle
+using UICollectionView.
+
+00:13:05.576 --> 00:13:06.986 A:middle
+So, here we've implemented cell
+
+00:13:06.986 --> 00:13:08.326 A:middle
+for item at indexPath.
+
+00:13:08.396 --> 00:13:10.426 A:middle
+And we're using our helper
+
+00:13:10.506 --> 00:13:11.666 A:middle
+function that we wrote earlier
+
+00:13:11.946 --> 00:13:13.916 A:middle
+to downsample the images to the
+
+00:13:13.916 --> 00:13:14.826 A:middle
+size that they're going to be
+
+00:13:14.826 --> 00:13:16.676 A:middle
+displayed at when the cell is
+
+00:13:16.676 --> 00:13:18.126 A:middle
+actually put on the screen.
+
+00:13:19.416 --> 00:13:21.376 A:middle
+So, you think this is a pretty
+
+00:13:21.376 --> 00:13:22.196 A:middle
+good thing to do, right?
+
+00:13:22.196 --> 00:13:23.736 A:middle
+Like rather than having these
+
+00:13:23.736 --> 00:13:24.856 A:middle
+large allocations hanging
+
+00:13:24.856 --> 00:13:26.056 A:middle
+around, we're reducing our
+
+00:13:26.056 --> 00:13:26.846 A:middle
+memory usage.
+
+00:13:27.416 --> 00:13:29.306 A:middle
+Unfortunately, that doesn't save
+
+00:13:29.306 --> 00:13:30.776 A:middle
+us from another problem that's
+
+00:13:30.776 --> 00:13:32.846 A:middle
+common in scrollable views like
+
+00:13:32.846 --> 00:13:33.986 A:middle
+table views and collection
+
+00:13:33.986 --> 00:13:34.206 A:middle
+views.
+
+00:13:35.196 --> 00:13:36.836 A:middle
+It's a, probably seen this
+
+00:13:36.836 --> 00:13:37.176 A:middle
+before.
+
+00:13:37.176 --> 00:13:37.706 A:middle
+You scroll through an
+
+00:13:37.706 --> 00:13:39.246 A:middle
+application and it starts
+
+00:13:39.246 --> 00:13:40.606 A:middle
+hitching as you scroll.
+
+00:13:41.186 --> 00:13:44.276 A:middle
+What's happening here is that as
+
+00:13:44.276 --> 00:13:46.726 A:middle
+we're scrolling the CPU is
+
+00:13:46.726 --> 00:13:49.546 A:middle
+relatively idle, or the work
+
+00:13:49.546 --> 00:13:50.996 A:middle
+that it does can be done before
+
+00:13:50.996 --> 00:13:52.376 A:middle
+the display hardware needs the
+
+00:13:52.376 --> 00:13:54.716 A:middle
+next copy of the frame buffer.
+
+00:13:55.576 --> 00:13:57.886 A:middle
+So, we see fluid motion as the
+
+00:13:58.196 --> 00:13:59.786 A:middle
+frame buffer is updated and the
+
+00:13:59.786 --> 00:14:00.986 A:middle
+display hardware is able to get
+

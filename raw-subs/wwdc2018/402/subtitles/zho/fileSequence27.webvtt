@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:01.121 --> 00:27:02.356 align:middle line:-1
+尽管这仍然是文本
+
+00:27:03.156 --> 00:27:06.627 align:middle line:-1
+有时 仅文本还不够
+
+00:27:06.693 --> 00:27:10.497 align:middle line:-1
+你想返回一些图形 也许是图片
+
+00:27:13.033 --> 00:27:15.269 align:middle line:-1
+控制你返回格式的方式
+
+00:27:16.303 --> 00:27:19.239 align:middle line:-2
+是通过实现Custom Playground
+Display Convertible达到的
+
+00:27:20.073 --> 00:27:26.513 align:middle line:-2
+这是在Xcode 9.3和Swift 4.1中
+引入的新协议
+
+00:27:27.247 --> 00:27:30.350 align:middle line:-2
+它取代了Custom Playground
+Quick Lookable
+
+00:27:30.684 --> 00:27:32.753 align:middle line:-1
+这在同一版本中已被弃用
+
+00:27:34.721 --> 00:27:37.157 align:middle line:-1
+现在我们来看看一致性
+
+00:27:40.060 --> 00:27:44.998 align:middle line:-2
+你可以在这里看到
+一致性要求只涉及返回一个属性
+
+00:27:45.065 --> 00:27:46.033 align:middle line:-1
+playgroundDescription
+
+00:27:46.533 --> 00:27:48.802 align:middle line:-1
+playgroundDescription的类型为Any
+
+00:27:49.303 --> 00:27:54.675 align:middle line:-2
+这意味着你可以返回任何
+你认为最能描述你的值的东西
+
+00:27:56.510 --> 00:28:00.881 align:middle line:-1
+现在 某些类型已经有了专门的表述
+

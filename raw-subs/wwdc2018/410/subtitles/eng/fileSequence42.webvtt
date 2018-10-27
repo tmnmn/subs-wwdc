@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:59.896 --> 00:42:00.456 A:middle
+you're in the middle of the
+
+00:42:00.456 --> 00:42:01.916 A:middle
+reasoning process in modeler
+
+00:42:02.246 --> 00:42:03.566 A:middle
+because all the rules in modeler
+
+00:42:03.566 --> 00:42:05.246 A:middle
+have to execute before any of
+
+00:42:05.246 --> 00:42:06.966 A:middle
+the rules in recorder can
+
+00:42:06.966 --> 00:42:07.746 A:middle
+actually execute.
+
+00:42:08.686 --> 00:42:10.736 A:middle
+Now I mentioned the term before
+
+00:42:10.736 --> 00:42:12.296 A:middle
+logical support.
+
+00:42:12.776 --> 00:42:14.556 A:middle
+What logical support is usually
+
+00:42:14.776 --> 00:42:17.066 A:middle
+tied to what are called peer
+
+00:42:17.066 --> 00:42:18.586 A:middle
+inference rules and those are
+
+00:42:18.586 --> 00:42:20.336 A:middle
+rules that you say, well, if A
+
+00:42:20.336 --> 00:42:21.736 A:middle
+and B, then C.
+
+00:42:22.156 --> 00:42:23.756 A:middle
+Right. So by adding logical
+
+00:42:23.756 --> 00:42:25.286 A:middle
+support to your production, what
+
+00:42:25.286 --> 00:42:29.646 A:middle
+you're saying is if A and B are
+
+00:42:29.646 --> 00:42:30.786 A:middle
+no longer present in working
+
+00:42:30.786 --> 00:42:32.126 A:middle
+memory, then C should
+
+00:42:32.126 --> 00:42:33.606 A:middle
+automatically be retracted.
+
+00:42:33.656 --> 00:42:35.726 A:middle
+So what we're saying is C is
+
+00:42:35.726 --> 00:42:37.016 A:middle
+logically supported by the
+
+00:42:37.016 --> 00:42:38.326 A:middle
+existence of A and B.
+
+00:42:38.806 --> 00:42:40.346 A:middle
+Now this is important because it
+
+00:42:40.346 --> 00:42:41.606 A:middle
+limits working memory bloat
+
+00:42:41.606 --> 00:42:43.156 A:middle
+which helps with resource
+
+00:42:43.156 --> 00:42:44.436 A:middle
+consumption but it's also
+
+00:42:44.436 --> 00:42:46.096 A:middle
+important to remove facts from
+
+00:42:46.096 --> 00:42:47.356 A:middle
+working memory that are no
+
+00:42:47.356 --> 00:42:48.076 A:middle
+longer valid.
+
+00:42:48.326 --> 00:42:49.486 A:middle
+And if A and B are no longer
+
+00:42:49.486 --> 00:42:50.966 A:middle
+valid, then you should really
+
+00:42:50.966 --> 00:42:51.526 A:middle
+remove C.
+
+00:42:52.076 --> 00:42:54.596 A:middle
+So to add logical support to
+
+00:42:54.826 --> 00:42:57.606 A:middle
+your production, your rule here,
+
+00:42:57.906 --> 00:42:59.826 A:middle
+you just wrap the pattern with
+
+00:42:59.866 --> 00:43:01.226 A:middle
+the keyword logical and then
+

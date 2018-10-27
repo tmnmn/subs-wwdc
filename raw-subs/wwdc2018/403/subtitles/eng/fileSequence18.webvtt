@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.746 --> 00:18:01.636 A:middle
+Now in order to tell you about
+
+00:18:01.636 --> 00:18:03.076 A:middle
+how Xcode runs your tests in
+
+00:18:03.076 --> 00:18:04.836 A:middle
+parallel, we first have to talk
+
+00:18:04.836 --> 00:18:06.606 A:middle
+about how your tests execute at
+
+00:18:06.606 --> 00:18:10.646 A:middle
+all, what happens at runtime.
+
+00:18:10.706 --> 00:18:12.866 A:middle
+Let's start with unit tests.
+
+00:18:13.036 --> 00:18:14.996 A:middle
+Your unit tests get compiled
+
+00:18:15.046 --> 00:18:16.366 A:middle
+into a test bundle.
+
+00:18:17.606 --> 00:18:20.066 A:middle
+At runtime, Xcode launches an
+
+00:18:20.066 --> 00:18:21.636 A:middle
+instance of your app which
+
+00:18:21.636 --> 00:18:23.126 A:middle
+serves as a test runner.
+
+00:18:24.416 --> 00:18:26.726 A:middle
+The runner loads the test bundle
+
+00:18:26.726 --> 00:18:29.786 A:middle
+and executes all of its tests,
+
+00:18:29.896 --> 00:18:30.936 A:middle
+so that's how unit tests
+
+00:18:30.936 --> 00:18:31.466 A:middle
+execute.
+
+00:18:32.386 --> 00:18:33.156 A:middle
+What about UI tests?
+
+00:18:33.976 --> 00:18:35.416 A:middle
+For UI, tests the story is
+
+00:18:35.456 --> 00:18:35.916 A:middle
+similar.
+
+00:18:36.516 --> 00:18:37.866 A:middle
+Your tests still get compiled
+
+00:18:37.866 --> 00:18:40.186 A:middle
+into a bundle, but the bundle is
+
+00:18:40.186 --> 00:18:41.786 A:middle
+loaded by a custom app that
+
+00:18:41.786 --> 00:18:42.736 A:middle
+Xcode creates.
+
+00:18:43.386 --> 00:18:45.126 A:middle
+Your app no longer runs the
+
+00:18:45.126 --> 00:18:45.456 A:middle
+tests.
+
+00:18:46.636 --> 00:18:48.846 A:middle
+Instead, the tests automate your
+
+00:18:48.846 --> 00:18:51.296 A:middle
+app by launching it and
+
+00:18:51.296 --> 00:18:52.736 A:middle
+interacting with different parts
+
+00:18:52.736 --> 00:18:53.106 A:middle
+of its UI.
+
+00:18:55.186 --> 00:18:56.196 A:middle
+If you'd like to learn more
+
+00:18:56.196 --> 00:18:57.926 A:middle
+about this process, I'd
+
+00:18:57.926 --> 00:18:58.786 A:middle
+encourage you to check out our
+
+00:18:58.786 --> 00:19:01.106 A:middle
+session from 2016, where we go
+

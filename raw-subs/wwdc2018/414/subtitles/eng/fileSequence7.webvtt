@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.636 --> 00:07:00.776 A:middle
+So it must be that that section
+
+00:07:00.776 --> 00:07:01.996 A:middle
+number is not zero or one.
+
+00:07:02.856 --> 00:07:03.636 A:middle
+So I think I have a better
+
+00:07:03.636 --> 00:07:04.726 A:middle
+understanding of what's going
+
+00:07:04.726 --> 00:07:06.516 A:middle
+on, but let's try to reproduce
+
+00:07:06.516 --> 00:07:08.036 A:middle
+this issue in the app and see if
+
+00:07:08.036 --> 00:07:08.736 A:middle
+we can learn more.
+
+00:07:09.226 --> 00:07:11.606 A:middle
+So I've hit play.
+
+00:07:11.756 --> 00:07:13.386 A:middle
+And Chocolate Chip is a recipe
+
+00:07:13.386 --> 00:07:14.656 A:middle
+app I store all of my favorite
+
+00:07:14.656 --> 00:07:17.246 A:middle
+recipes and I've been testing
+
+00:07:17.246 --> 00:07:18.586 A:middle
+with this whipped cream recipe
+
+00:07:19.126 --> 00:07:19.996 A:middle
+and you can see everything's
+
+00:07:20.036 --> 00:07:21.386 A:middle
+fine, I can see my list of
+
+00:07:21.386 --> 00:07:22.866 A:middle
+ingredients, my list of steps.
+
+00:07:22.866 --> 00:07:23.796 A:middle
+These are the two recipe
+
+00:07:23.796 --> 00:07:25.376 A:middle
+sections, that's ingredients
+
+00:07:25.376 --> 00:07:26.886 A:middle
+that's section zero and steps
+
+00:07:26.886 --> 00:07:27.686 A:middle
+that's section one.
+
+00:07:28.636 --> 00:07:30.696 A:middle
+And if I click on another recipe
+
+00:07:30.696 --> 00:07:33.456 A:middle
+we've hit a crash and what I can
+
+00:07:33.546 --> 00:07:35.056 A:middle
+see is that we're stopped on the
+
+00:07:35.056 --> 00:07:37.296 A:middle
+same fatal error and the
+
+00:07:37.296 --> 00:07:39.016 A:middle
+backtrace looks very similar to
+
+00:07:39.016 --> 00:07:40.206 A:middle
+the crash log that we've been
+
+00:07:40.206 --> 00:07:40.716 A:middle
+looking at.
+
+00:07:40.716 --> 00:07:41.926 A:middle
+So that's a very good sign that
+
+00:07:41.926 --> 00:07:43.026 A:middle
+we're looking at the same issue.
+
+00:07:43.486 --> 00:07:44.676 A:middle
+So I'm going to clear this crash
+
+00:07:44.676 --> 00:07:47.416 A:middle
+log by hitting delete and let's
+
+00:07:47.416 --> 00:07:49.096 A:middle
+look at this debug session.
+
+00:07:50.136 --> 00:07:52.006 A:middle
+So in this fatal error I can see
+
+00:07:52.006 --> 00:07:53.626 A:middle
+that the message is nicely
+
+00:07:53.626 --> 00:07:55.166 A:middle
+printing out that the section
+
+00:07:55.166 --> 00:07:55.886 A:middle
+number is eight.
+
+00:07:56.126 --> 00:07:56.936 A:middle
+So that's the reason we're
+
+00:07:56.936 --> 00:07:58.456 A:middle
+crashing it's not zero or one.
+
+00:07:59.616 --> 00:08:00.666 A:middle
+And what's occurring to me now
+

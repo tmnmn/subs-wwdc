@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:57.197 --> 00:30:02.770 align:start position:27% line:-2
+それにうっかりして
+ひどい結果になりかねません
+
+00:30:03.737 --> 00:30:08.976 align:start position:25% line:-2
+そこでSwiftが手助けする
+方法を考えました
+
+00:30:11.044 --> 00:30:15.749 align:start position:21% line:-2
+Swift 4.2の新機能
+“CaseIterable”です
+
+00:30:16.250 --> 00:30:22.089 align:start position:32% line:-2
+このプロトコル準拠を
+列挙型に追加しました
+
+00:30:22.422 --> 00:30:27.828 align:start position:18% line:-2
+追加される“allCases”という
+静的メンバーは
+
+00:30:27.928 --> 00:30:30.130 align:start position:34% line:-1
+各ケースを含みます
+
+00:30:30.597 --> 00:30:34.168 align:start position:36% line:-2
+これでケース数を
+自動取得します
+
+00:30:34.935 --> 00:30:38.672 align:start position:14% line:-2
+“RawRepresentable”にも
+Extentionを追加
+
+00:30:38.772 --> 00:30:44.344 align:start position:27% line:-2
+全列挙型が準拠し
+CaseIterableで
+
+00:30:44.444 --> 00:30:46.613 align:start position:32% line:-1
+整数値になっています
+
+00:30:47.014 --> 00:30:50.017 align:start position:30% line:-1
+ケース数を自動で取得し
+
+00:30:50.117 --> 00:30:54.588 align:start position:32% line:-2
+全ケースで必要な
+ビット数を算出します
+
+00:30:56.290 --> 00:31:01.061 align:start position:12% line:-2
+“WritableBitStream”では
+ジェネリックメソッドを加え
+

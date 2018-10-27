@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:01.006 --> 00:37:01.896 A:middle
+&gt;&gt; If you've got more
+
+00:37:01.896 --> 00:37:03.376 A:middle
+information than can fit in a
+
+00:37:03.376 --> 00:37:05.206 A:middle
+userInfo dictionary, there's
+
+00:37:05.206 --> 00:37:07.006 A:middle
+great feature of NSUserActivity
+
+00:37:07.006 --> 00:37:08.506 A:middle
+that you can use, called
+
+00:37:08.506 --> 00:37:10.006 A:middle
+continuation streams.
+
+00:37:10.776 --> 00:37:12.366 A:middle
+All you have to do is set the
+
+00:37:12.366 --> 00:37:14.126 A:middle
+supportsContinuationStreams
+
+00:37:14.126 --> 00:37:15.356 A:middle
+property to true.
+
+00:37:16.276 --> 00:37:18.706 A:middle
+Then, on the continuing device,
+
+00:37:19.206 --> 00:37:19.836 A:middle
+you'll call the
+
+00:37:19.836 --> 00:37:22.986 A:middle
+getContinuationStreams method on
+
+00:37:22.986 --> 00:37:24.836 A:middle
+the NSUserActivity, which will
+
+00:37:24.836 --> 00:37:26.466 A:middle
+provide you with an input and an
+
+00:37:26.466 --> 00:37:27.386 A:middle
+output stream.
+
+00:37:28.506 --> 00:37:30.196 A:middle
+Back on the originating device,
+
+00:37:30.796 --> 00:37:32.586 A:middle
+the NSUserActivity's delegate
+
+00:37:32.586 --> 00:37:33.846 A:middle
+will receive a callback
+
+00:37:34.076 --> 00:37:35.586 A:middle
+providing it with input and
+
+00:37:35.586 --> 00:37:36.836 A:middle
+output streams as well.
+
+00:37:37.856 --> 00:37:39.526 A:middle
+And, through these channels, you
+
+00:37:39.526 --> 00:37:40.556 A:middle
+can do bi-directional
+
+00:37:40.556 --> 00:37:42.276 A:middle
+communication between the
+
+00:37:42.276 --> 00:37:44.076 A:middle
+originating and the continuing
+
+00:37:44.076 --> 00:37:44.566 A:middle
+device.
+
+00:37:45.236 --> 00:37:46.006 A:middle
+But, you're going to want to
+
+00:37:46.006 --> 00:37:47.906 A:middle
+finish this as fast as possible,
+
+00:37:47.906 --> 00:37:49.736 A:middle
+because the user may be moving
+
+00:37:49.736 --> 00:37:51.286 A:middle
+the devices apart to leave.
+
+00:37:52.536 --> 00:37:54.276 A:middle
+For more about streams, check
+
+00:37:54.276 --> 00:37:55.886 A:middle
+out the Stream Programming Guide
+
+00:37:55.886 --> 00:37:57.376 A:middle
+on developer.apple.com.
+
+00:37:57.896 --> 00:38:00.176 A:middle
+&gt;&gt; Now, this is great for moving
+

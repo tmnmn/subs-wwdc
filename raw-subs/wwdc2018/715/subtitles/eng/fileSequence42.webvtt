@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:00.066 --> 00:42:01.336 A:middle
+We don't want it to get in the
+
+00:42:01.336 --> 00:42:03.456 A:middle
+way of user interactive data.
+
+00:42:04.066 --> 00:42:05.126 A:middle
+So we really encourage you if
+
+00:42:05.126 --> 00:42:06.506 A:middle
+you have background transfers,
+
+00:42:06.866 --> 00:42:08.256 A:middle
+mark them as a background
+
+00:42:08.256 --> 00:42:09.666 A:middle
+service class.
+
+00:42:10.476 --> 00:42:12.646 A:middle
+But you can also mark service
+
+00:42:12.646 --> 00:42:14.806 A:middle
+class on a per packet basis for
+
+00:42:14.806 --> 00:42:16.026 A:middle
+those UDP connections.
+
+00:42:16.996 --> 00:42:17.786 A:middle
+Let's say that you have a
+
+00:42:17.786 --> 00:42:19.886 A:middle
+connection in which you have
+
+00:42:20.006 --> 00:42:22.476 A:middle
+both voice and signaling data on
+
+00:42:22.476 --> 00:42:23.886 A:middle
+the same UDP flow.
+
+00:42:24.996 --> 00:42:26.526 A:middle
+In this case, you can create
+
+00:42:26.826 --> 00:42:28.666 A:middle
+that same IP metadata object
+
+00:42:28.666 --> 00:42:30.836 A:middle
+that we introduced before, mark
+
+00:42:30.836 --> 00:42:32.266 A:middle
+your service class now instead
+
+00:42:32.266 --> 00:42:34.846 A:middle
+of the ECN flags, attach it to a
+
+00:42:34.846 --> 00:42:36.206 A:middle
+context, and send it out.
+
+00:42:36.296 --> 00:42:37.476 A:middle
+And now you're marking the
+
+00:42:37.476 --> 00:42:39.526 A:middle
+priority on a per-packet basis.
+
+00:42:40.036 --> 00:42:43.866 A:middle
+The other way that you can
+
+00:42:43.866 --> 00:42:46.306 A:middle
+optimize your connections is to
+
+00:42:46.306 --> 00:42:47.746 A:middle
+reduce the number of round trips
+
+00:42:47.746 --> 00:42:49.226 A:middle
+that it takes to establish them.
+
+00:42:50.216 --> 00:42:51.396 A:middle
+So here I want to highlight two
+
+00:42:51.396 --> 00:42:52.316 A:middle
+approaches to do this.
+
+00:42:53.196 --> 00:42:55.376 A:middle
+One is enabling fast open on
+
+00:42:55.376 --> 00:42:56.046 A:middle
+your connections.
+
+00:42:56.756 --> 00:42:59.046 A:middle
+So TCP fast open allows you to
+
+00:42:59.166 --> 00:43:02.056 A:middle
+send initial data in the first
+

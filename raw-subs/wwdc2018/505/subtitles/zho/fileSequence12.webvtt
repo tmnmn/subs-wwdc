@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.551 --> 00:12:01.688 align:middle line:-1
+元素有着基本的布局暗示
+
+00:12:01.755 --> 00:12:05.259 align:middle line:-1
+还有资源的权重和分数
+
+00:12:05.325 --> 00:12:10.898 align:middle line:-2
+而且资源中还包含了资源的
+意向区域中的重要区域
+
+00:12:11.532 --> 00:12:14.368 align:middle line:-2
+这就是对于projectInfo
+的一个大概介绍
+
+00:12:14.434 --> 00:12:16.436 align:middle line:-2
+欲了解
+projectInfo更多内容
+
+00:12:16.503 --> 00:12:20.274 align:middle line:-2
+我强烈建议你们看下去年的演讲
+“Photos API新特性”
+
+00:12:24.511 --> 00:12:29.783 align:middle line:-2
+projectInfo在项目
+开始时就在你的扩展中
+
+00:12:30.450 --> 00:12:34.988 align:middle line:-1
+每当用户将新的资源加入到项目中时
+
+00:12:35.055 --> 00:12:38.158 align:middle line:-2
+projectInfo就会过期
+因为它是个静态对象
+
+00:12:38.725 --> 00:12:41.628 align:middle line:-2
+我们想引入新的API
+来解决这个问题
+
+00:12:41.695 --> 00:12:43.697 align:middle line:-2
+新的API位于
+projectExtensionsContext
+
+00:12:43.764 --> 00:12:46.200 align:middle line:-1
+它会用来获取更新的项目信息
+
+00:12:46.266 --> 00:12:47.935 align:middle line:-1
+以及项目当前的状态
+
+00:12:48.635 --> 00:12:49.770 align:middle line:-1
+让我们以此为例
+
+00:12:49.837 --> 00:12:52.706 align:middle line:-2
+我们会在项目创建时
+将projectInfo给你
+
+00:12:53.040 --> 00:12:55.876 align:middle line:-2
+然后用户就可以向项目
+加入更多的资源
+
+00:12:55.943 --> 00:12:58.846 align:middle line:-2
+你可以调用
+updatedProjectInfo
+
+00:12:58.912 --> 00:13:02.950 align:middle line:-2
+还有projectInfo
+我们会更新所有现有的分区
+

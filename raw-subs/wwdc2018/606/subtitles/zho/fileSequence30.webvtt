@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.033 --> 00:30:03.036 align:middle line:0
+因此 上方GPU将进行渲染
+
+00:30:03.470 --> 00:30:06.273 align:middle line:0
+渲染完成之后
+它将完成的区域
+
+00:30:06.340 --> 00:30:08.408 align:middle line:0
+Blit进入前面所述的共享缓冲区
+
+00:30:09.910 --> 00:30:11.078 align:middle line:0
+在此过程中
+
+00:30:11.678 --> 00:30:13.714 align:middle line:0
+GPU B也在进行渲染
+
+00:30:15.082 --> 00:30:17.584 align:middle line:0
+我们将使用这个GPU进行合成
+
+00:30:18.118 --> 00:30:19.019 align:middle line:0
+因此在某一时间点
+
+00:30:19.086 --> 00:30:22.356 align:middle line:0
+它将需要GPU A生成的缓冲区
+
+00:30:23.357 --> 00:30:24.992 align:middle line:0
+这里可看到 有一个问题
+
+00:30:25.893 --> 00:30:28.228 align:middle line:0
+这个区域没有同步化
+
+00:30:28.996 --> 00:30:32.099 align:middle line:0
+因此 在GPU完成写入缓冲区之前
+
+00:30:32.165 --> 00:30:34.368 align:middle line:0
+不能阻止GPU B读取缓冲区
+
+00:30:35.669 --> 00:30:38.105 align:middle line:0
+要处理该问题
+可使用Metal Events
+
+00:30:39.106 --> 00:30:41.008 align:middle line:0
+利用Metal Events
+
+00:30:41.074 --> 00:30:42.276 align:middle line:0
+我们在指令缓冲区中
+插入一个等待指令
+
+00:30:43.043 --> 00:30:45.712 align:middle line:0
+当GPU执行时
+它会遇到等待指令
+
+00:30:45.879 --> 00:30:47.447 align:middle line:0
+然后就会停止
+
+00:30:48.782 --> 00:30:51.818 align:middle line:0
+它等待的是
+其他GPU的信号
+
+00:30:53.620 --> 00:30:55.022 align:middle line:0
+收到信号之后
+
+00:30:55.389 --> 00:30:58.058 align:middle line:0
+我们就知道GPU A
+已经完成缓冲区写入
+
+00:30:58.125 --> 00:31:00.494 align:middle line:0
+现在GPU B可以访问缓冲区
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.196 --> 00:26:01.476 A:middle
+also got this grid sampler layer
+
+00:26:01.646 --> 00:26:02.436 A:middle
+Python script.
+
+00:26:03.206 --> 00:26:04.936 A:middle
+Now this grid sampler layer that
+
+00:26:04.936 --> 00:26:07.086 A:middle
+I'm talking about, it's also not
+
+00:26:07.086 --> 00:26:08.676 A:middle
+supported on Keras natively.
+
+00:26:09.326 --> 00:26:11.376 A:middle
+So the implementation that I got
+
+00:26:11.376 --> 00:26:13.666 A:middle
+online used that Keras custom
+
+00:26:13.666 --> 00:26:15.666 A:middle
+layer to implement the layer.
+
+00:26:16.376 --> 00:26:18.496 A:middle
+So as you can see, the concept
+
+00:26:18.496 --> 00:26:20.046 A:middle
+of customization is not unique
+
+00:26:20.046 --> 00:26:20.606 A:middle
+to Core ML.
+
+00:26:20.806 --> 00:26:22.986 A:middle
+In fact, it's very common in
+
+00:26:22.986 --> 00:26:23.816 A:middle
+most machine learning
+
+00:26:23.816 --> 00:26:24.416 A:middle
+frameworks.
+
+00:26:24.756 --> 00:26:26.556 A:middle
+This is how people experiment in
+
+00:26:26.556 --> 00:26:27.086 A:middle
+new layers.
+
+00:26:27.966 --> 00:26:29.956 A:middle
+Okay, so so far, I just have a
+
+00:26:30.006 --> 00:26:30.636 A:middle
+Keras model.
+
+00:26:30.826 --> 00:26:32.306 A:middle
+And now I want to focus on how
+
+00:26:32.306 --> 00:26:33.666 A:middle
+can I get a Core ML model?
+
+00:26:34.406 --> 00:26:40.716 A:middle
+So I'll open -- there, let me
+
+00:26:40.716 --> 00:26:42.506 A:middle
+launch a new Python notebook.
+
+00:26:43.766 --> 00:26:46.176 A:middle
+So I'll start by importing this
+
+00:26:46.226 --> 00:26:47.526 A:middle
+Keras model into my Python
+
+00:26:47.526 --> 00:26:48.086 A:middle
+environment.
+
+00:26:49.396 --> 00:26:53.576 A:middle
+Okay? So I import Keras, I
+
+00:26:53.576 --> 00:26:56.676 A:middle
+import the, the custom layer
+
+00:26:56.676 --> 00:26:57.976 A:middle
+that we have in Keras.
+
+00:26:58.316 --> 00:27:00.366 A:middle
+And now I will load the model in
+

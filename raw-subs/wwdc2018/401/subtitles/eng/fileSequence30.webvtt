@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.376 --> 00:30:00.416 A:middle
+source of boilerplate.
+
+00:30:01.616 --> 00:30:03.126 A:middle
+So if I want to compile
+
+00:30:03.126 --> 00:30:05.066 A:middle
+something conditionally when I'm
+
+00:30:05.066 --> 00:30:06.476 A:middle
+in the simulator environment,
+
+00:30:06.776 --> 00:30:09.266 A:middle
+then today in Swift 4 I have to
+
+00:30:09.266 --> 00:30:11.546 A:middle
+copy and paste this ugly thing
+
+00:30:11.546 --> 00:30:12.686 A:middle
+everywhere I want to perform
+
+00:30:12.686 --> 00:30:13.176 A:middle
+that check.
+
+00:30:14.056 --> 00:30:16.456 A:middle
+In Swift 4.2 you can use the new
+
+00:30:16.456 --> 00:30:18.596 A:middle
+hasTargetEnvironment condition,
+
+00:30:18.906 --> 00:30:21.216 A:middle
+to again better state your
+
+00:30:21.216 --> 00:30:23.006 A:middle
+intent and just explicitly ask
+
+00:30:23.006 --> 00:30:25.026 A:middle
+the compiler, am I compiling for
+
+00:30:25.026 --> 00:30:26.106 A:middle
+the simulator or not?
+
+00:30:26.876 --> 00:30:28.826 A:middle
+And while we're at it, let's
+
+00:30:28.826 --> 00:30:30.566 A:middle
+replace that FIXME with a
+
+00:30:30.656 --> 00:30:32.036 A:middle
+#warning build directive to
+
+00:30:32.076 --> 00:30:33.986 A:middle
+produce a message or compile
+
+00:30:34.046 --> 00:30:35.856 A:middle
+time so that I don't forget to
+
+00:30:35.856 --> 00:30:38.126 A:middle
+fix my FIXME.
+
+00:30:38.126 --> 00:30:40.916 A:middle
+OK, so that about wraps up all
+
+00:30:40.916 --> 00:30:42.306 A:middle
+the features that I'm going to
+
+00:30:42.306 --> 00:30:43.516 A:middle
+discuss today, but I have a
+
+00:30:43.516 --> 00:30:44.656 A:middle
+couple more things to talk
+
+00:30:44.656 --> 00:30:44.936 A:middle
+about.
+
+00:30:46.026 --> 00:30:47.646 A:middle
+Let's unwrap, Implicitly
+
+00:30:47.646 --> 00:30:48.586 A:middle
+Unwrapped Optionals.
+
+00:30:48.806 --> 00:30:49.646 A:middle
+That's a horrible pun.
+
+00:30:50.296 --> 00:30:52.986 A:middle
+OK, so Implicitly Unwrapped
+
+00:30:52.986 --> 00:30:54.326 A:middle
+Optionals can be a little bit
+
+00:30:54.326 --> 00:30:57.686 A:middle
+confusing and let's first review
+
+00:30:57.686 --> 00:30:59.246 A:middle
+the mental model for Implicitly
+
+00:30:59.246 --> 00:31:00.196 A:middle
+Unwrapped Optionals.
+

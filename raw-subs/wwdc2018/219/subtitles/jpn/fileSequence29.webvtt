@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.070 --> 00:29:02.443 align:start position:27% line:-2
+前者だけが広色域を
+正しくレンダリングできます
+
+00:29:03.977 --> 00:29:09.049 align:start position:27% line:-2
+前者でオフスクリーン
+バッファにレンダリングして
+
+00:29:09.283 --> 00:29:13.220 align:start position:29% line:-2
+UIImageViewで
+画面に表示します
+
+00:29:15.055 --> 00:29:20.427 align:start position:27% line:-2
+先ほどのバッキングストアの
+最適化と同様に
+
+00:29:20.694 --> 00:29:26.033 align:start position:7% line:-2
+UIGraphicsImageRendererも
+ダイナミックに―
+
+00:29:26.133 --> 00:29:31.238 align:start position:34% line:-2
+イメージバッファの
+サイズを拡大します
+
+00:29:33.974 --> 00:29:37.911 align:start position:27% line:-2
+iOS 12より前のOSで
+実行するなら
+
+00:29:38.178 --> 00:29:43.150 align:start position:12% line:-1
+prefersExtendedRangeで
+
+00:29:43.517 --> 00:29:47.287 align:start position:23% line:-1
+広色域かをUIKitに伝えます
+
+00:29:50.490 --> 00:29:53.060 align:start position:30% line:-1
+しかし 迷うところです
+
+00:29:53.393 --> 00:29:57.564 align:start position:36% line:-2
+最初 レンダラに
+画像を生成すると
+
+00:29:58.198 --> 00:30:00.534 align:start position:34% line:-1
+その画像が使う色は
+

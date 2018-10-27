@@ -1,0 +1,77 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.039 --> 00:19:00.440 align:middle line:-1
+双向桥实现的
+
+00:19:00.741 --> 00:19:03.310 align:middle line:-2
+特别是在Coco app
+开发的环境下
+
+00:19:03.377 --> 00:19:06.847 align:middle line:-2
+但从那以后扩展到
+支持大多数Apple框架
+
+00:19:09.383 --> 00:19:12.085 align:middle line:-1
+PyObjC的调用语法非常简单
+
+00:19:12.152 --> 00:19:15.489 align:middle line:-2
+获取现有Objective C代码
+并用_代替:
+
+00:19:15.789 --> 00:19:17.157 align:middle line:-1
+还有一些细节
+
+00:19:17.224 --> 00:19:20.227 align:middle line:-2
+如果你想了解更多
+建议查看API
+
+00:19:20.994 --> 00:19:23.830 align:middle line:-1
+我们以CIVector类为例
+
+00:19:24.331 --> 00:19:25.832 align:middle line:-2
+这里有一些
+Objective C代码
+
+00:19:25.899 --> 00:19:27.534 align:middle line:-1
+我们创建CIVector的实例
+
+00:19:27.601 --> 00:19:28.735 align:middle line:-1
+调用CIVector
+
+00:19:29.703 --> 00:19:31.905 align:middle line:-1
+带X、Y、Z、W的向量
+
+00:19:32.840 --> 00:19:34.374 align:middle line:-1
+我们来看看PyObjC代码
+
+00:19:34.675 --> 00:19:36.577 align:middle line:0
+这非常相似
+我们从Quartz伞包
+
+00:19:36.643 --> 00:19:38.178 align:middle line:0
+导入CIVector
+
+00:19:39.046 --> 00:19:42.349 align:middle line:0
+我们可以直接调用带X、Y、Z、W
+的向量和CIVector类
+
+00:19:44.218 --> 00:19:45.786 align:middle line:0
+你要注意的是这些代码
+
+00:19:45.853 --> 00:19:47.454 align:middle line:0
+并不完全像Python一样
+
+00:19:47.921 --> 00:19:50.324 align:middle line:0
+我们将在几分钟内谈这个问题
+
+00:19:53.227 --> 00:19:55.896 align:middle line:-2
+现在我们来看看
+PyCoreImage的类图
+
+00:19:56.230 --> 00:19:58.365 align:middle line:-1
+生成后端用Core Image
+
+00:19:58.432 --> 00:20:00.400 align:middle line:-1
+Core Image非常接近硬件
+

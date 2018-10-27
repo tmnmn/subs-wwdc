@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.616 --> 00:08:00.886 A:middle
+you probably want to use
+
+00:08:00.886 --> 00:08:04.506 A:middle
+UAImageView, AVPlayer, WKWebView
+
+00:08:04.576 --> 00:08:06.086 A:middle
+or other kind of views instead.
+
+00:08:08.816 --> 00:08:10.316 A:middle
+Also note that it's not
+
+00:08:10.316 --> 00:08:12.436 A:middle
+supported to customize the view
+
+00:08:12.436 --> 00:08:13.856 A:middle
+hierarchy of Quick Look.
+
+00:08:14.416 --> 00:08:16.316 A:middle
+Please don't try to add views on
+
+00:08:16.316 --> 00:08:17.696 A:middle
+top of the previews the
+
+00:08:17.696 --> 00:08:20.036 A:middle
+navigational toolbar, this is
+
+00:08:20.036 --> 00:08:20.976 A:middle
+simply not supported.
+
+00:08:26.166 --> 00:08:27.826 A:middle
+So now that we've introduced
+
+00:08:27.826 --> 00:08:29.596 A:middle
+Quick Look, let's take a look at
+
+00:08:29.596 --> 00:08:31.286 A:middle
+how to actually make use of our
+
+00:08:31.286 --> 00:08:31.976 A:middle
+APIs.
+
+00:08:37.275 --> 00:08:38.655 A:middle
+If you want to present documents
+
+00:08:38.655 --> 00:08:40.966 A:middle
+to the user as a first step you
+
+00:08:40.966 --> 00:08:42.166 A:middle
+instantiate a new
+
+00:08:42.166 --> 00:08:44.296 A:middle
+QLPreviewController which is
+
+00:08:44.296 --> 00:08:46.186 A:middle
+basically a UIViewController.
+
+00:08:48.176 --> 00:08:49.726 A:middle
+Next, in order to tell the
+
+00:08:49.726 --> 00:08:50.886 A:middle
+preview controller which
+
+00:08:50.886 --> 00:08:53.006 A:middle
+documents to preview, you need
+
+00:08:53.006 --> 00:08:54.726 A:middle
+to assign a data source to it.
+
+00:08:55.676 --> 00:08:57.156 A:middle
+The data source is an object
+
+00:08:57.156 --> 00:08:58.046 A:middle
+that conforms to the
+
+00:08:58.046 --> 00:08:59.986 A:middle
+QLPreviewController data source
+
+00:08:59.986 --> 00:09:00.426 A:middle
+protocol.
+

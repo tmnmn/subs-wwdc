@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.639 --> 00:14:00.274 align:middle line:-1
+getCurrentWorldMap
+
+00:14:02.442 --> 00:14:06.213 align:middle line:-1
+从多个不同视角扫描你的物理空间
+
+00:14:06.747 --> 00:14:08.482 align:middle line:-1
+非常重要
+
+00:14:08.549 --> 00:14:11.385 align:middle line:-1
+这样跟踪系统才可以真正理解
+
+00:14:11.451 --> 00:14:13.587 align:middle line:-1
+周围环境的物理结构
+
+00:14:16.290 --> 00:14:21.428 align:middle line:-2
+环境应该是静态的并且纹理清晰
+以便我们可以提取它的更多特征
+
+00:14:21.495 --> 00:14:24.464 align:middle line:-1
+并了解有关环境的更多信息
+
+00:14:27.835 --> 00:14:32.039 align:middle line:-1
+而且在映射上有密集的特征点很重要
+
+00:14:32.206 --> 00:14:35.075 align:middle line:-1
+这样它就可以可靠地重定位
+
+00:14:37.344 --> 00:14:40.480 align:middle line:-1
+但你不必担心所有这些问题
+
+00:14:41.582 --> 00:14:45.552 align:middle line:0
+在ARKit中 其API通过向你提供
+ARFrame上的WorldMappingStatus
+
+00:14:45.619 --> 00:14:48.422 align:middle line:0
+来大大简化你的工作
+
+00:14:49.323 --> 00:14:54.194 align:middle line:-2
+WorldMappingStatus在每个
+ARFrame中进行更新
+
+00:14:54.261 --> 00:14:56.463 align:middle line:-2
+并且可以通过
+WorldMappingStatus属性获取
+
+00:14:57.064 --> 00:14:58.599 align:middle line:-1
+让我们看看这是如何工作的
+

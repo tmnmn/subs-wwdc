@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.706 --> 00:54:00.956 A:middle
+Flashlight button on the iPhone
+
+00:54:00.956 --> 00:54:03.296 A:middle
+10, the size of button changes
+
+00:54:03.626 --> 00:54:04.666 A:middle
+based on the pressure of my
+
+00:54:04.666 --> 00:54:05.176 A:middle
+touch.
+
+00:54:05.786 --> 00:54:06.426 A:middle
+And, this gives me a
+
+00:54:06.426 --> 00:54:07.846 A:middle
+confirmation of my action.
+
+00:54:08.136 --> 00:54:09.376 A:middle
+It shows me the system is
+
+00:54:09.376 --> 00:54:11.206 A:middle
+responding to my gesture, but it
+
+00:54:11.206 --> 00:54:12.946 A:middle
+also teaches me that pressing
+
+00:54:12.946 --> 00:54:14.706 A:middle
+harder will eventually turn on
+
+00:54:14.706 --> 00:54:15.306 A:middle
+the flashlight.
+
+00:54:15.736 --> 00:54:18.246 A:middle
+Another good example of
+
+00:54:18.246 --> 00:54:19.966 A:middle
+continuous feedback, is the
+
+00:54:19.966 --> 00:54:21.446 A:middle
+focus engine on the Apple TV.
+
+00:54:22.466 --> 00:54:23.606 A:middle
+So, the movements on the Siri
+
+00:54:23.606 --> 00:54:25.146 A:middle
+remote are continuously
+
+00:54:25.146 --> 00:54:26.486 A:middle
+represented on the screen.
+
+00:54:26.956 --> 00:54:28.596 A:middle
+And, they show me the item that
+
+00:54:28.596 --> 00:54:30.456 A:middle
+is currently selected, the
+
+00:54:30.456 --> 00:54:31.736 A:middle
+moment the selection is going to
+
+00:54:31.736 --> 00:54:33.666 A:middle
+change, and the direction the
+
+00:54:33.666 --> 00:54:37.516 A:middle
+selection is going to go.
+
+00:54:37.736 --> 00:54:39.286 A:middle
+So, having our UI respond during
+
+00:54:39.286 --> 00:54:41.176 A:middle
+the gesture is critical to
+
+00:54:41.176 --> 00:54:42.496 A:middle
+create a fluid experience.
+
+00:54:42.886 --> 00:54:44.416 A:middle
+For that reason, when
+
+00:54:44.416 --> 00:54:46.146 A:middle
+implementing your gestures, you
+
+00:54:46.146 --> 00:54:47.566 A:middle
+should avoid methods that are
+
+00:54:47.566 --> 00:54:48.906 A:middle
+only detected at the end of the
+
+00:54:48.906 --> 00:54:49.986 A:middle
+gesture, like
+
+00:54:49.986 --> 00:54:51.566 A:middle
+UISwipeGestureRecognizer.
+
+00:54:52.236 --> 00:54:53.586 A:middle
+And, use ones like the actual
+
+00:54:53.586 --> 00:54:54.876 A:middle
+touches, or other
+
+00:54:54.926 --> 00:54:56.916 A:middle
+gestureRecognizers that provide
+
+00:54:56.916 --> 00:54:58.306 A:middle
+all possible information about
+
+00:54:58.306 --> 00:54:59.466 A:middle
+the gesture.
+

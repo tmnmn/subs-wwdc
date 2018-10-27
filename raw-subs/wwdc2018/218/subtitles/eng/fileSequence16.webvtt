@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.416 --> 00:16:02.066 A:middle
+I'll override this new
+
+00:16:02.266 --> 00:16:03.206 A:middle
+viewDidChange
+
+00:16:03.206 --> 00:16:05.966 A:middle
+EffectiveAppearance method and
+
+00:16:05.966 --> 00:16:07.416 A:middle
+I'll set my sublayer
+
+00:16:07.416 --> 00:16:08.176 A:middle
+needsDisplay.
+
+00:16:08.986 --> 00:16:10.626 A:middle
+Now, if I didn't do this, my
+
+00:16:10.626 --> 00:16:12.586 A:middle
+sublayer wouldn't update when my
+
+00:16:12.586 --> 00:16:13.626 A:middle
+view's effective appearance
+
+00:16:13.626 --> 00:16:14.066 A:middle
+changed.
+
+00:16:14.156 --> 00:16:15.106 A:middle
+It would just stay the same.
+
+00:16:15.136 --> 00:16:19.096 A:middle
+And then in my layer delegate
+
+00:16:19.096 --> 00:16:21.106 A:middle
+routine, I'll save off the
+
+00:16:21.106 --> 00:16:22.996 A:middle
+current appearance for later and
+
+00:16:22.996 --> 00:16:24.546 A:middle
+then I'll go ahead and set the
+
+00:16:24.546 --> 00:16:26.286 A:middle
+current appearance to my view's
+
+00:16:26.336 --> 00:16:27.376 A:middle
+effective appearance.
+
+00:16:27.906 --> 00:16:31.276 A:middle
+Then I can go ahead and update
+
+00:16:31.276 --> 00:16:31.706 A:middle
+my layer.
+
+00:16:32.316 --> 00:16:34.306 A:middle
+Now, if I hadn't set the current
+
+00:16:34.306 --> 00:16:36.316 A:middle
+appearance before this, this
+
+00:16:36.316 --> 00:16:38.016 A:middle
+code wouldn't be using my view's
+
+00:16:38.016 --> 00:16:39.456 A:middle
+appearance and so it would end
+
+00:16:39.456 --> 00:16:40.346 A:middle
+up looking wrong.
+
+00:16:41.556 --> 00:16:42.956 A:middle
+Finally, when I'm done, I'll
+
+00:16:42.956 --> 00:16:44.626 A:middle
+just restore the old current
+
+00:16:44.626 --> 00:16:45.136 A:middle
+appearance.
+
+00:16:48.726 --> 00:16:49.826 A:middle
+Here's another thing to be aware
+
+00:16:49.826 --> 00:16:51.676 A:middle
+of if you're managing layers.
+
+00:16:52.686 --> 00:16:54.036 A:middle
+You might have code that looks
+
+00:16:54.256 --> 00:16:55.696 A:middle
+like one of these two examples.
+
+00:16:56.296 --> 00:16:57.506 A:middle
+Either you're setting the
+
+00:16:57.506 --> 00:16:59.306 A:middle
+contents of a layer to an
+
+00:16:59.306 --> 00:17:01.896 A:middle
+NSImage or you're using the
+

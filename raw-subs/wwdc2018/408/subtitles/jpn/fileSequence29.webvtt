@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:56.970 --> 00:29:00.240 align:start position:16% line:-1
+しかし Utilitiesのファイルは
+
+00:29:00.340 --> 00:29:01.742 align:start position:30% line:-1
+再コンパイルされません
+
+00:29:02.176 --> 00:29:05.512 align:start position:34% line:-2
+ターゲットは分かれ
+依存関係にあります
+
+00:29:05.612 --> 00:29:10.617 align:start position:27% line:-2
+２組のファイル間には
+目に見える関係はありません
+
+00:29:12.553 --> 00:29:17.057 align:start position:25% line:-2
+同様に Utilitiesの
+ファイルを変更すると
+
+00:29:17.157 --> 00:29:19.459 align:start position:30% line:-1
+再コンパイルが必要です
+
+00:29:19.560 --> 00:29:22.596 align:start position:34% line:-2
+それに依存する
+他のファイルもです
+
+00:29:23.096 --> 00:29:26.033 align:start position:30% line:-2
+しかし この依存関係は
+粗いものです
+
+00:29:26.166 --> 00:29:31.438 align:start position:21% line:-2
+そのため Xcodeはゲーム内の
+すべてを再コンパイルします
+
+00:29:31.538 --> 00:29:35.242 align:start position:34% line:-2
+関数本体だけの
+変更でない限りです
+
+00:29:36.877 --> 00:29:38.479 align:start position:41% line:-1
+繰り返すと
+
+00:29:38.879 --> 00:29:41.048 align:start position:30% line:-1
+コンパイラは保守的です
+
+00:29:41.148 --> 00:29:44.251 align:start position:34% line:-2
+影響がないと
+人間には分かっても
+
+00:29:44.351 --> 00:29:47.221 align:start position:29% line:-1
+コンパイラは分かりません
+
+00:29:47.688 --> 00:29:52.760 align:start position:30% line:-2
+コンパイラに分かるのは
+関数本体の変更です
+
+00:29:52.860 --> 00:29:55.729 align:start position:29% line:-1
+他のファイルに影響がなく
+
+00:29:55.829 --> 00:29:59.833 align:start position:30% line:-2
+再コンパイルは不要だと
+知っています
+

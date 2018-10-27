@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:55.729 --> 00:15:00.200 align:start position:30% line:-2
+これはUIkitに
+アニメーション中でも―
+
+00:15:00.300 --> 00:15:03.770 align:start position:25% line:-2
+ビューの現在の画面上の位置を
+取るよう命じます
+
+00:15:04.171 --> 00:15:09.343 align:start position:23% line:-2
+これにより 割り込み可能な
+対話型アニメーションができます
+
+00:15:09.710 --> 00:15:13.914 align:start position:34% line:-2
+デッキビルダの例を
+見てみましょう
+
+00:15:15.249 --> 00:15:19.520 align:start position:25% line:-2
+デッキにどんなカードがあるか
+追跡する変数があります
+
+00:15:19.720 --> 00:15:23.156 align:start position:25% line:-2
+Swiftの
+プロパティオブザーバを使い―
+
+00:15:23.257 --> 00:15:26.159 align:start position:14% line:-2
+変化のたびに
+setNeedsLayoutを呼び出し―
+
+00:15:26.260 --> 00:15:28.095 align:start position:34% line:-1
+レイアウトを無効に
+
+00:15:29.830 --> 00:15:33.000 align:start position:30% line:-2
+次に カードを
+デッキに置きたい時は―
+
+00:15:33.100 --> 00:15:38.238 align:start position:21% line:-2
+レイアウトを無効にするこの配列に
+そのカードを追加するだけ
+
+00:15:38.338 --> 00:15:43.210 align:start position:5% line:-2
+次に animationブロックの中で
+beginFromCurrentStateを使い―
+
+00:15:43.310 --> 00:15:45.546 align:start position:23% line:-2
+layoutIfNeededを
+呼び出します
+
+00:15:46.013 --> 00:15:49.116 align:start position:16% line:-2
+これがlayoutSubviews内の
+コードを呼び出し―
+
+00:15:49.216 --> 00:15:51.151 align:start position:36% line:-2
+すべてのビューを
+動かして―
+
+00:15:51.251 --> 00:15:54.221 align:start position:30% line:-2
+適切なアニメーションの
+状態遷移を再生します
+
+00:15:54.521 --> 00:15:57.891 align:start position:32% line:-2
+そして私が強調したい
+優れた点は―
+
+00:15:57.991 --> 00:16:01.695 align:start position:32% line:-2
+特別なケースを
+追加しなくていいこと
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.876 --> 00:27:01.446 A:middle
+because they are different
+
+00:27:01.446 --> 00:27:03.866 A:middle
+between platforms and they have
+
+00:27:03.866 --> 00:27:04.876 A:middle
+different names, different
+
+00:27:04.876 --> 00:27:06.586 A:middle
+behavior, so you have to use
+
+00:27:06.666 --> 00:27:08.156 A:middle
+build configuration checks.
+
+00:27:08.566 --> 00:27:10.486 A:middle
+But also they're quite low level
+
+00:27:10.486 --> 00:27:12.806 A:middle
+and these common operations that
+
+00:27:12.806 --> 00:27:14.156 A:middle
+are not quite so obvious to
+
+00:27:14.156 --> 00:27:14.566 A:middle
+implement.
+
+00:27:15.316 --> 00:27:16.886 A:middle
+For example, if I want to get a
+
+00:27:16.886 --> 00:27:19.016 A:middle
+random number between 1 and 6,
+
+00:27:19.406 --> 00:27:21.446 A:middle
+then I might think to just call
+
+00:27:21.446 --> 00:27:23.716 A:middle
+this Darwin arc4random function
+
+00:27:23.826 --> 00:27:25.366 A:middle
+and then calculate the remainder
+
+00:27:25.366 --> 00:27:26.556 A:middle
+of dividing by 6.
+
+00:27:26.836 --> 00:27:27.916 A:middle
+But that actually gives you a
+
+00:27:27.916 --> 00:27:29.476 A:middle
+result that is not uniformly
+
+00:27:29.476 --> 00:27:31.566 A:middle
+distributed between 1 and 6.
+
+00:27:32.346 --> 00:27:35.386 A:middle
+So in Swift 4.2 we've added a
+
+00:27:35.386 --> 00:27:37.236 A:middle
+new set of APIs to make this
+
+00:27:37.236 --> 00:27:38.086 A:middle
+kind of thing easier.
+
+00:27:39.146 --> 00:27:41.186 A:middle
+First of all, all the numeric
+
+00:27:41.186 --> 00:27:43.296 A:middle
+types now define a random method
+
+00:27:43.486 --> 00:27:45.576 A:middle
+that takes a range and returns a
+
+00:27:45.576 --> 00:27:47.326 A:middle
+number uniformly distributed in
+
+00:27:47.326 --> 00:27:47.986 A:middle
+that range.
+
+00:27:48.196 --> 00:27:49.816 A:middle
+This uses the correct algorithm
+
+00:27:49.816 --> 00:27:51.316 A:middle
+and it even works for floats.
+
+00:27:52.516 --> 00:27:58.596 A:middle
+[ Applause ]
+
+00:27:59.096 --> 00:28:00.676 A:middle
+For higher level code we've
+

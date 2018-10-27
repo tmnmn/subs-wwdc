@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.393 --> 00:21:02.196 align:start position:29% line:-1
+サブクラスを入力しました
+
+00:21:02.296 --> 00:21:06.133 align:start position:4% line:-1
+UICollectionViewLayoutの直下で
+
+00:21:06.233 --> 00:21:09.536 align:start position:2% line:-2
+UICollectionViewFlowLayoutの
+下ではありません
+
+00:21:09.636 --> 00:21:13.207 align:start position:29% line:-2
+その理由は
+スティーブが説明しました
+
+00:21:13.307 --> 00:21:16.844 align:start position:2% line:-2
+UICollectionViewFlowLayoutは
+カスタムモザイクを
+
+00:21:16.944 --> 00:21:19.813 align:start position:30% line:-1
+サポートしないからです
+
+00:21:20.814 --> 00:21:24.818 align:start position:23% line:-1
+まずインスタンス変数を設定して
+
+00:21:24.918 --> 00:21:29.790 align:start position:30% line:-2
+後で重要な情報を
+参照できるようにします
+
+00:21:30.624 --> 00:21:36.363 align:start position:21% line:-2
+１つ目は
+コンテンツ境界のCGRectです
+
+00:21:36.463 --> 00:21:40.734 align:start position:21% line:-2
+CollectionView内の
+アイテムの境界を示します
+
+00:21:41.702 --> 00:21:46.273 align:start position:25% line:-2
+２つ目は
+キャッシュ済みの属性配列です
+
+00:21:46.373 --> 00:21:50.277 align:start position:30% line:-2
+後でレイアウト属性を
+参照することができます
+
+00:21:51.745 --> 00:21:56.316 align:start position:20% line:-2
+ではレイアウトに
+prepareメソッドを実装します
+
+00:21:57.050 --> 00:22:01.088 align:start position:25% line:-2
+レイアウト作業に
+prepareが使われるのは
+

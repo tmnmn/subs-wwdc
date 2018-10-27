@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.816 --> 00:22:00.776 A:middle
+you can use those collection
+
+00:22:00.776 --> 00:22:01.426 A:middle
+algorithms.
+
+00:22:02.186 --> 00:22:03.596 A:middle
+But bidirectionalCollection adds
+
+00:22:03.596 --> 00:22:04.976 A:middle
+this additional requirement, of
+
+00:22:05.016 --> 00:22:07.226 A:middle
+being able to step backwards in
+
+00:22:07.226 --> 00:22:07.836 A:middle
+the collection.
+
+00:22:08.276 --> 00:22:09.866 A:middle
+An important thing to note is
+
+00:22:10.006 --> 00:22:11.216 A:middle
+not every collection can
+
+00:22:11.216 --> 00:22:12.386 A:middle
+actually implement this
+
+00:22:12.436 --> 00:22:13.636 A:middle
+particular requirement.
+
+00:22:13.976 --> 00:22:15.476 A:middle
+Think of a singlyLinkedList,
+
+00:22:15.476 --> 00:22:16.936 A:middle
+where you only have these
+
+00:22:17.496 --> 00:22:18.826 A:middle
+pointers hopping from one
+
+00:22:18.826 --> 00:22:19.856 A:middle
+location to the next.
+
+00:22:20.156 --> 00:22:21.486 A:middle
+There's no efficient way to walk
+
+00:22:21.486 --> 00:22:22.786 A:middle
+backward through this sequence,
+
+00:22:22.926 --> 00:22:24.346 A:middle
+so it cannot be a
+
+00:22:24.346 --> 00:22:25.406 A:middle
+bidirectionalCollection.
+
+00:22:25.776 --> 00:22:26.566 A:middle
+So, once we've introduced
+
+00:22:26.566 --> 00:22:28.046 A:middle
+inheritance, you've restricted
+
+00:22:28.046 --> 00:22:29.356 A:middle
+the set of conforming types.
+
+00:22:29.916 --> 00:22:32.096 A:middle
+But you've allowed yourself to
+
+00:22:32.306 --> 00:22:33.346 A:middle
+implement more interesting
+
+00:22:33.346 --> 00:22:34.006 A:middle
+algorithms.
+
+00:22:34.246 --> 00:22:35.456 A:middle
+So, here's the code behind this
+
+00:22:35.566 --> 00:22:37.136 A:middle
+last index where operation.
+
+00:22:37.356 --> 00:22:37.976 A:middle
+It's fairly simple.
+
+00:22:37.976 --> 00:22:39.876 A:middle
+We're just walking backwards
+
+00:22:39.876 --> 00:22:41.496 A:middle
+through the collection, using
+
+00:22:41.496 --> 00:22:43.276 A:middle
+this new requirement from the
+
+00:22:43.276 --> 00:22:44.166 A:middle
+bidirectionalCollection
+
+00:22:44.166 --> 00:22:44.576 A:middle
+protocol.
+
+00:22:46.606 --> 00:22:47.996 A:middle
+Let's look at a more interesting
+
+00:22:47.996 --> 00:22:48.516 A:middle
+algorithm.
+
+00:22:48.826 --> 00:22:50.346 A:middle
+So here's a shuffle operation.
+
+00:22:50.516 --> 00:22:51.756 A:middle
+So, it was introduced for, for
+
+00:22:51.756 --> 00:22:53.526 A:middle
+collections in Swift 4.2.
+
+00:22:53.666 --> 00:22:54.506 A:middle
+You don't have to implement it
+
+00:22:54.506 --> 00:22:55.646 A:middle
+yourself, but we're going to
+
+00:22:55.646 --> 00:22:56.816 A:middle
+look at the algorithm itself to
+
+00:22:56.816 --> 00:22:58.306 A:middle
+see what kinds of requirements
+
+00:22:58.306 --> 00:23:00.136 A:middle
+it introduces to figure out how
+

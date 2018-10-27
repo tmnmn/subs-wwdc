@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.246 --> 00:31:00.196 A:middle
+Unwrapped Optionals.
+
+00:31:00.196 --> 00:31:01.266 A:middle
+How do I think about them?
+
+00:31:01.966 --> 00:31:04.426 A:middle
+Well, so since Swift 3 they're
+
+00:31:04.426 --> 00:31:06.326 A:middle
+not the type of an expression.
+
+00:31:06.816 --> 00:31:08.006 A:middle
+Don't think of it as a type.
+
+00:31:08.446 --> 00:31:09.856 A:middle
+Instead, think of Implicitly
+
+00:31:09.856 --> 00:31:11.256 A:middle
+Unwrapped Optionals as an
+
+00:31:11.256 --> 00:31:13.096 A:middle
+attribute of a declaration.
+
+00:31:13.996 --> 00:31:15.756 A:middle
+And what the compiler does when
+
+00:31:15.756 --> 00:31:17.526 A:middle
+you reference such a declaration
+
+00:31:17.846 --> 00:31:19.186 A:middle
+is it will first try to type
+
+00:31:19.186 --> 00:31:21.536 A:middle
+check it as a plain optional and
+
+00:31:21.536 --> 00:31:23.006 A:middle
+then if that doesn't make sense
+
+00:31:23.006 --> 00:31:24.556 A:middle
+in the context where it's used,
+
+00:31:24.746 --> 00:31:26.916 A:middle
+it goes ahead and unwraps it and
+
+00:31:26.916 --> 00:31:28.096 A:middle
+then type checks it as the
+
+00:31:28.096 --> 00:31:28.876 A:middle
+underlined type.
+
+00:31:30.296 --> 00:31:31.746 A:middle
+So let's look at an example of
+
+00:31:31.746 --> 00:31:32.506 A:middle
+the first case.
+
+00:31:33.236 --> 00:31:34.886 A:middle
+So here I have two functions,
+
+00:31:34.966 --> 00:31:36.596 A:middle
+the first of which produces and
+
+00:31:36.596 --> 00:31:37.906 A:middle
+implicitly unwrapped optional
+
+00:31:37.906 --> 00:31:39.656 A:middle
+integer and the second of which
+
+00:31:39.656 --> 00:31:41.226 A:middle
+takes a value of any type.
+
+00:31:41.836 --> 00:31:43.306 A:middle
+And I'm going to call the second
+
+00:31:43.306 --> 00:31:44.516 A:middle
+function with the result of the
+
+00:31:44.516 --> 00:31:45.256 A:middle
+first function.
+
+00:31:45.916 --> 00:31:47.966 A:middle
+Now in this case I can store an
+
+00:31:47.966 --> 00:31:50.506 A:middle
+optional Int inside of an Any
+
+00:31:50.856 --> 00:31:52.696 A:middle
+and so no forced unwrapping is
+
+00:31:52.696 --> 00:31:53.206 A:middle
+performed.
+
+00:31:53.466 --> 00:31:55.456 A:middle
+The value simply becomes a plain
+
+00:31:55.456 --> 00:31:55.896 A:middle
+optional.
+
+00:31:55.896 --> 00:31:59.156 A:middle
+Let's look at an example of the
+
+00:31:59.156 --> 00:31:59.966 A:middle
+second case now.
+

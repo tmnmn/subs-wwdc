@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:54.715 --> 00:12:00.087 align:start position:30% line:-2
+４つのパラメータが
+x y z wの順番で
+
+00:12:00.187 --> 00:12:02.523 align:start position:29% line:-1
+反時計周りに収められます
+
+00:12:02.623 --> 00:12:09.096 align:start position:23% line:-2
+これはMetalにおける集積の
+オペレーションと同じ方向です
+
+00:12:10.364 --> 00:12:15.936 align:start position:25% line:-2
+このプロセスを
+別の３グループで繰り返します
+
+00:12:16.036 --> 00:12:20.307 align:start position:25% line:-1
+グループ２ ３ ４と続けます
+
+00:12:20.641 --> 00:12:25.979 align:start position:29% line:-2
+次は どの値を
+どこに収めるかが問題です
+
+00:12:26.079 --> 00:12:32.019 align:start position:27% line:-2
+まず３ｘ３のサブグループの
+適切なチャネルを取得して
+
+00:12:32.486 --> 00:12:34.154 align:start position:39% line:-1
+平均化します
+
+00:12:34.421 --> 00:12:39.193 align:start position:23% line:-2
+それらのチャネルを
+変数result1に格納します
+
+00:12:39.560 --> 00:12:43.997 align:start position:32% line:-2
+このプロセスを
+４つの結果ピクセル―
+
+00:12:44.464 --> 00:12:47.034 align:start position:18% line:-1
+r1 r2 r3 r4で繰り返します
+
+00:12:47.467 --> 00:12:54.107 align:start position:21% line:-2
+最後は“dest.write”で
+４ピクセルを一括処理します
+
+00:12:54.241 --> 00:13:00.581 align:start position:25% line:-2
+CIカーネルでの値を
+カーネルから戻す手法とは違い
+

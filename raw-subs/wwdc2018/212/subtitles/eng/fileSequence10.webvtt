@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.446 --> 00:10:01.436 A:middle
+very good candidate for that.
+
+00:10:01.436 --> 00:10:02.936 A:middle
+I give it an ID so that I can
+
+00:10:02.936 --> 00:10:03.976 A:middle
+refer back to it easily.
+
+00:10:04.066 --> 00:10:06.546 A:middle
+And one thing that is very
+
+00:10:06.546 --> 00:10:08.946 A:middle
+important is to set its size,
+
+00:10:09.306 --> 00:10:10.516 A:middle
+because the map doesn't have a
+
+00:10:10.516 --> 00:10:12.716 A:middle
+size of its own, so it will just
+
+00:10:12.716 --> 00:10:14.736 A:middle
+use the size of the elements
+
+00:10:14.736 --> 00:10:15.676 A:middle
+that it is part of.
+
+00:10:16.296 --> 00:10:17.916 A:middle
+So, if you have a development
+
+00:10:18.346 --> 00:10:20.276 A:middle
+that I represented here with a
+
+00:10:20.276 --> 00:10:22.066 A:middle
+gray background, a map will be
+
+00:10:22.066 --> 00:10:24.156 A:middle
+shown inside that element.
+
+00:10:24.156 --> 00:10:26.086 A:middle
+If your element size changes,
+
+00:10:26.086 --> 00:10:27.426 A:middle
+then your map size will change
+
+00:10:27.426 --> 00:10:27.736 A:middle
+as well.
+
+00:10:28.326 --> 00:10:31.776 A:middle
+So, I have set up an element for
+
+00:10:31.776 --> 00:10:32.256 A:middle
+my map.
+
+00:10:32.696 --> 00:10:34.686 A:middle
+The next step is to initialize
+
+00:10:34.686 --> 00:10:35.606 A:middle
+MapKit JS.
+
+00:10:35.606 --> 00:10:37.576 A:middle
+So, we just saw that you need a
+
+00:10:37.576 --> 00:10:39.806 A:middle
+key to be able to use MapKit JS,
+
+00:10:39.976 --> 00:10:42.136 A:middle
+and in initializing MapKit, you
+
+00:10:43.216 --> 00:10:46.746 A:middle
+get your authorization callback
+
+00:10:46.746 --> 00:10:49.646 A:middle
+so that you will be able to use
+
+00:10:49.646 --> 00:10:51.546 A:middle
+the services that MapKit JS
+
+00:10:51.546 --> 00:10:52.006 A:middle
+provides.
+
+00:10:52.006 --> 00:10:54.346 A:middle
+And most importantly, to show
+
+00:10:54.346 --> 00:10:56.696 A:middle
+the actual map on your websites.
+
+00:10:57.356 --> 00:10:59.546 A:middle
+And the last point is to create
+
+00:10:59.546 --> 00:11:02.386 A:middle
+a map object, here using the Map
+

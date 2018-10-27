@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.096 --> 00:19:00.656 A:middle
+And that'll just take a few
+
+00:19:00.656 --> 00:19:01.136 A:middle
+seconds.
+
+00:19:01.996 --> 00:19:04.306 A:middle
+And then we're going to inspect.
+
+00:19:04.516 --> 00:19:05.556 A:middle
+I'm just going to pick a random
+
+00:19:05.556 --> 00:19:06.346 A:middle
+prediction here.
+
+00:19:06.626 --> 00:19:08.856 A:middle
+Let's say index two.
+
+00:19:09.606 --> 00:19:11.676 A:middle
+Here we can see the JSON object
+
+00:19:11.676 --> 00:19:13.346 A:middle
+that was predicted in just the
+
+00:19:13.346 --> 00:19:14.966 A:middle
+same format that the training
+
+00:19:14.966 --> 00:19:16.106 A:middle
+data is provided in.
+
+00:19:16.446 --> 00:19:18.316 A:middle
+So here we have coordinates,
+
+00:19:18.486 --> 00:19:19.776 A:middle
+height, width, x and y.
+
+00:19:20.056 --> 00:19:21.196 A:middle
+And a label, banana.
+
+00:19:21.796 --> 00:19:23.116 A:middle
+And we get a confidence score
+
+00:19:23.116 --> 00:19:23.816 A:middle
+from the model.
+
+00:19:23.966 --> 00:19:25.876 A:middle
+In this case about .87.
+
+00:19:26.886 --> 00:19:28.466 A:middle
+This is a little bit hard for me
+
+00:19:28.466 --> 00:19:29.976 A:middle
+as a human to interpret though.
+
+00:19:30.436 --> 00:19:32.516 A:middle
+I can't really tell if this
+
+00:19:32.516 --> 00:19:33.786 A:middle
+image is really supposed to be a
+
+00:19:33.786 --> 00:19:35.446 A:middle
+banana or whether these
+
+00:19:35.446 --> 00:19:36.866 A:middle
+coordinates are where the banana
+
+00:19:36.866 --> 00:19:38.526 A:middle
+would appear in that image.
+
+00:19:39.686 --> 00:19:41.526 A:middle
+Turi Create produces a function
+
+00:19:41.706 --> 00:19:42.996 A:middle
+to take the predicted bounding
+
+00:19:42.996 --> 00:19:44.476 A:middle
+boxes or the ground-truth
+
+00:19:44.476 --> 00:19:46.036 A:middle
+bounding boxes and draw them
+
+00:19:46.066 --> 00:19:47.096 A:middle
+right onto the images.
+
+00:19:47.576 --> 00:19:48.836 A:middle
+So let's go and do that.
+
+00:19:49.516 --> 00:19:50.976 A:middle
+I'm going to create a new column
+
+00:19:51.046 --> 00:19:52.846 A:middle
+in my test SFrame called
+
+00:19:52.906 --> 00:19:53.856 A:middle
+predicted image.
+
+00:19:54.936 --> 00:19:56.926 A:middle
+And I'm going to assign it the
+
+00:19:56.926 --> 00:19:58.906 A:middle
+output of the object detector
+
+00:19:58.906 --> 00:20:00.406 A:middle
+utility called draw bounding
+

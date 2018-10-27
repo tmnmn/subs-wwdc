@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.056 --> 00:07:01.136 A:middle
+You'll notice things like color
+
+00:07:01.136 --> 00:07:02.486 A:middle
+changing, font changing,
+
+00:07:02.646 --> 00:07:04.846 A:middle
+NSEditor, NSEditorRegistration
+
+00:07:05.176 --> 00:07:06.476 A:middle
+combines the bindings-related
+
+00:07:06.516 --> 00:07:07.816 A:middle
+methods, and so on.
+
+00:07:07.816 --> 00:07:09.236 A:middle
+So, it's a good list of new,
+
+00:07:09.236 --> 00:07:10.306 A:middle
+formal protocols.
+
+00:07:12.016 --> 00:07:13.066 A:middle
+Next, I want to talk about
+
+00:07:13.066 --> 00:07:14.876 A:middle
+direct instance variable access.
+
+00:07:15.826 --> 00:07:19.716 A:middle
+Now, most-- in our API's almost
+
+00:07:19.716 --> 00:07:21.096 A:middle
+all of the instance variables
+
+00:07:21.196 --> 00:07:22.136 A:middle
+are private.
+
+00:07:22.586 --> 00:07:24.346 A:middle
+And, we've said so, but in a way
+
+00:07:24.736 --> 00:07:25.826 A:middle
+that they have been declared,
+
+00:07:25.826 --> 00:07:27.156 A:middle
+especially in some older AppKit
+
+00:07:27.186 --> 00:07:29.466 A:middle
+classes, subclasses were allowed
+
+00:07:29.556 --> 00:07:31.256 A:middle
+to touch the instance variables,
+
+00:07:31.526 --> 00:07:32.896 A:middle
+directly access those instance
+
+00:07:32.896 --> 00:07:33.216 A:middle
+variables.
+
+00:07:33.716 --> 00:07:34.816 A:middle
+Now, some of you may not even be
+
+00:07:34.816 --> 00:07:36.286 A:middle
+aware of this, so please don't
+
+00:07:36.286 --> 00:07:37.356 A:middle
+go ahead and start using them,
+
+00:07:37.706 --> 00:07:39.576 A:middle
+because this is probably an old
+
+00:07:39.576 --> 00:07:40.956 A:middle
+code, code I'm sure you didn't
+
+00:07:40.956 --> 00:07:42.656 A:middle
+write, but maybe inherited, that
+
+00:07:42.656 --> 00:07:43.956 A:middle
+may be using instance variables
+
+00:07:43.956 --> 00:07:44.316 A:middle
+directly.
+
+00:07:44.766 --> 00:07:46.306 A:middle
+So, for now, we are going to be
+
+00:07:46.306 --> 00:07:47.666 A:middle
+frowning upon this practice a
+
+00:07:47.666 --> 00:07:49.656 A:middle
+bit more vigorously by
+
+00:07:50.006 --> 00:07:50.656 A:middle
+deprecating it.
+
+00:07:51.166 --> 00:07:52.446 A:middle
+Now, you'll be-- code that
+
+00:07:52.446 --> 00:07:53.756 A:middle
+accesses instance variables
+
+00:07:53.756 --> 00:07:55.436 A:middle
+directly will get a warning, and
+
+00:07:55.436 --> 00:07:57.106 A:middle
+our intent is to break this in
+
+00:07:57.106 --> 00:07:57.896 A:middle
+future updates.
+
+00:07:57.896 --> 00:07:59.446 A:middle
+So, as you get the chance,
+
+00:07:59.486 --> 00:08:00.596 A:middle
+please go ahead and clean these
+

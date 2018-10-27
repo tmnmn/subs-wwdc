@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:00.036 --> 00:02:02.016 A:middle
+So, in order to train a model to
+
+00:02:02.016 --> 00:02:03.896 A:middle
+recognize cats, we need to feed
+
+00:02:03.896 --> 00:02:05.586 A:middle
+it a large number of labeled
+
+00:02:05.586 --> 00:02:06.476 A:middle
+images of cats.
+
+00:02:07.116 --> 00:02:09.156 A:middle
+And same for the rabbits and all
+
+00:02:09.156 --> 00:02:10.446 A:middle
+of the other animals you want
+
+00:02:10.446 --> 00:02:11.416 A:middle
+your model to be able to
+
+00:02:11.416 --> 00:02:11.936 A:middle
+recognize.
+
+00:02:12.436 --> 00:02:15.606 A:middle
+Training is a computationally
+
+00:02:15.606 --> 00:02:17.396 A:middle
+expensive and time-consuming,
+
+00:02:17.466 --> 00:02:18.406 A:middle
+iterative process.
+
+00:02:19.456 --> 00:02:20.806 A:middle
+The result of training are
+
+00:02:20.806 --> 00:02:21.766 A:middle
+trained parameters.
+
+00:02:23.956 --> 00:02:25.786 A:middle
+The trained parameters are
+
+00:02:25.786 --> 00:02:27.236 A:middle
+required for the next phase, the
+
+00:02:27.236 --> 00:02:27.966 A:middle
+inference phase.
+
+00:02:28.746 --> 00:02:30.396 A:middle
+This is when your model is
+
+00:02:30.396 --> 00:02:31.836 A:middle
+presented with a new image, that
+
+00:02:31.836 --> 00:02:33.286 A:middle
+is never seen before, and it
+
+00:02:33.286 --> 00:02:34.846 A:middle
+needs to classify it based on
+
+00:02:34.846 --> 00:02:35.746 A:middle
+the trained parameters.
+
+00:02:36.266 --> 00:02:36.836 A:middle
+This is a cat.
+
+00:02:38.336 --> 00:02:40.266 A:middle
+We now provide GPU acceleration
+
+00:02:40.516 --> 00:02:41.976 A:middle
+for both the training and
+
+00:02:41.976 --> 00:02:42.826 A:middle
+inference phases.
+
+00:02:43.466 --> 00:02:46.896 A:middle
+But before I talk about
+
+00:02:46.896 --> 00:02:48.336 A:middle
+training, let me tell you about
+
+00:02:48.336 --> 00:02:49.886 A:middle
+some enhancements to CNN
+
+00:02:49.886 --> 00:02:51.106 A:middle
+Inference we've added this year.
+
+00:02:51.976 --> 00:02:53.566 A:middle
+We now have support for FP16
+
+00:02:53.626 --> 00:02:56.116 A:middle
+accumulation for the convolution
+
+00:02:56.116 --> 00:02:57.536 A:middle
+and convolution transpose
+
+00:02:57.536 --> 00:02:57.966 A:middle
+primitives.
+
+00:02:58.996 --> 00:03:00.556 A:middle
+This new feature is available on
+

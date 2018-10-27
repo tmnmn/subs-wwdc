@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.206 --> 00:24:04.545 align:start position:29% line:-2
+同じ内容でも 右側は
+少し違う外観にしたいので
+
+00:24:05.579 --> 00:24:11.251 align:start position:27% line:-2
+テキストストレージは１つで
+それ以外は２つ持たせます
+
+00:24:14.121 --> 00:24:19.359 align:start position:29% line:-2
+右のテキストストレージを
+左のものに置き換えます
+
+00:24:20.527 --> 00:24:22.162 align:start position:36% line:-1
+結果を見ましょう
+
+00:24:23.564 --> 00:24:29.002 align:start position:27% line:-2
+左側に文字を追加すると
+右側にもすぐに表示されます
+
+00:24:29.670 --> 00:24:34.141 align:start position:20% line:-2
+通常は右側にMarkdown文字は
+表示されません
+
+00:24:34.241 --> 00:24:37.010 align:start position:27% line:-2
+しかしテキストストレージを
+共有しているので
+
+00:24:37.578 --> 00:24:40.914 align:start position:29% line:-2
+レイアウトプロセス中に
+文字を隠す必要があります
+
+00:24:43.116 --> 00:24:46.687 align:start position:30% line:-2
+これには１つの方法しか
+ありません
+
+00:24:47.554 --> 00:24:53.160 align:start position:5% line:-2
+shouldGenerateGlyphsメソッドを
+NSLayoutManagerデリゲートに実装
+
+00:24:53.627 --> 00:24:56.897 align:start position:27% line:-2
+これでグリフ生成プロセスに
+介入できます
+
+00:24:58.131 --> 00:25:00.934 align:start position:29% line:-1
+配置対象のグリフを取得し
+

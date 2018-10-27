@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:56.856 --> 00:15:00.816 A:middle
+exception, the SIGILL signal was
+
+00:15:00.816 --> 00:15:02.536 A:middle
+the illegal instruction signal.
+
+00:15:03.306 --> 00:15:05.396 A:middle
+That means the CPU was trying to
+
+00:15:05.396 --> 00:15:07.276 A:middle
+execute an instruction that does
+
+00:15:07.276 --> 00:15:09.546 A:middle
+not exist or is invalid for some
+
+00:15:09.546 --> 00:15:10.916 A:middle
+reason and that's why the
+
+00:15:10.916 --> 00:15:12.026 A:middle
+process died.
+
+00:15:12.546 --> 00:15:16.636 A:middle
+We can also look at the thread
+
+00:15:16.746 --> 00:15:18.946 A:middle
+that crashed, what code was
+
+00:15:18.946 --> 00:15:19.806 A:middle
+running at the time of the
+
+00:15:19.806 --> 00:15:20.196 A:middle
+crash.
+
+00:15:20.816 --> 00:15:22.966 A:middle
+Here we see the fatal error
+
+00:15:22.966 --> 00:15:25.076 A:middle
+message function in the Swift
+
+00:15:25.886 --> 00:15:26.426 A:middle
+runtime.
+
+00:15:26.426 --> 00:15:28.256 A:middle
+No guesses as to what the fatal
+
+00:15:28.256 --> 00:15:29.556 A:middle
+error message function does.
+
+00:15:30.876 --> 00:15:33.046 A:middle
+The error message in this case
+
+00:15:33.046 --> 00:15:33.986 A:middle
+is included in the
+
+00:15:33.986 --> 00:15:35.206 A:middle
+application-specific
+
+00:15:35.206 --> 00:15:37.696 A:middle
+information, so we can see what
+
+00:15:37.696 --> 00:15:39.726 A:middle
+the Swift runtime printed as the
+
+00:15:39.726 --> 00:15:40.836 A:middle
+process exited.
+
+00:15:45.356 --> 00:15:46.536 A:middle
+So let's take a closer look at
+
+00:15:46.536 --> 00:15:48.476 A:middle
+that stack trace.
+
+00:15:48.476 --> 00:15:50.276 A:middle
+We saw the fatal error message
+
+00:15:50.276 --> 00:15:53.806 A:middle
+function and that was called by
+
+00:15:53.966 --> 00:15:55.316 A:middle
+a function in our code.
+
+00:15:55.396 --> 00:15:57.736 A:middle
+We have a recipe class, an image
+
+00:15:57.736 --> 00:16:01.356 A:middle
+function being called and that
+

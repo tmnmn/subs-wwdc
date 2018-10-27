@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.436 --> 00:15:02.096 A:middle
+As you can see, in case of the
+
+00:15:02.096 --> 00:15:04.966 A:middle
+single-threaded application, GPU
+
+00:15:04.966 --> 00:15:06.446 A:middle
+is idle most of the time.
+
+00:15:07.826 --> 00:15:08.816 A:middle
+So let's see if we can do
+
+00:15:08.816 --> 00:15:10.346 A:middle
+anything about that.
+
+00:15:11.776 --> 00:15:13.606 A:middle
+We are now switching to
+
+00:15:13.606 --> 00:15:15.216 A:middle
+multi-threaded application,
+
+00:15:15.716 --> 00:15:17.746 A:middle
+which separates simulation of
+
+00:15:17.776 --> 00:15:20.416 A:middle
+its visual environment from
+
+00:15:20.446 --> 00:15:22.656 A:middle
+encoding operations to the GPU.
+
+00:15:23.496 --> 00:15:24.996 A:middle
+Encoding of those operations
+
+00:15:24.996 --> 00:15:26.596 A:middle
+will now happen on separate
+
+00:15:26.596 --> 00:15:27.356 A:middle
+rendering threads.
+
+00:15:28.796 --> 00:15:29.766 A:middle
+Because we've separated
+
+00:15:29.866 --> 00:15:31.216 A:middle
+simulation from encoding,
+
+00:15:31.766 --> 00:15:33.596 A:middle
+simulation for our frame can
+
+00:15:33.696 --> 00:15:36.786 A:middle
+happen in parallel to previous
+
+00:15:36.786 --> 00:15:38.636 A:middle
+frame encoding of GPU
+
+00:15:38.636 --> 00:15:39.336 A:middle
+operations.
+
+00:15:40.636 --> 00:15:43.316 A:middle
+This means that encoding is now
+
+00:15:43.316 --> 00:15:45.746 A:middle
+shifted area in time, and starts
+
+00:15:45.796 --> 00:15:47.596 A:middle
+immediately after we receive
+
+00:15:47.706 --> 00:15:48.656 A:middle
+predicted pauses.
+
+00:15:49.216 --> 00:15:50.846 A:middle
+This means that your application
+
+00:15:50.846 --> 00:15:52.436 A:middle
+will now have more time to
+
+00:15:52.436 --> 00:15:54.736 A:middle
+encode the GPU [inaudible] and
+
+00:15:54.736 --> 00:15:56.666 A:middle
+GPU will have more time to
+
+00:15:56.746 --> 00:15:57.406 A:middle
+process it.
+
+00:15:57.406 --> 00:15:59.166 A:middle
+So, as a result, your
+
+00:15:59.166 --> 00:16:00.436 A:middle
+application can have better
+

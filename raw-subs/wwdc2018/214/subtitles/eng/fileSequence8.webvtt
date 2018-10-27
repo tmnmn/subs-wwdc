@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.186 --> 00:08:00.036 A:middle
+Towards that goal, the next step
+
+00:08:00.826 --> 00:08:05.436 A:middle
+is to declare the response
+
+00:08:05.486 --> 00:08:07.316 A:middle
+properties that you will use in
+
+00:08:07.316 --> 00:08:08.566 A:middle
+your templates to provide
+
+00:08:08.566 --> 00:08:11.116 A:middle
+information at run time.
+
+00:08:11.446 --> 00:08:12.476 A:middle
+So, if you go over to the
+
+00:08:12.476 --> 00:08:15.026 A:middle
+Properties Section, I'm going to
+
+00:08:15.026 --> 00:08:16.896 A:middle
+add a Wait Time and a Soup
+
+00:08:16.896 --> 00:08:17.366 A:middle
+Property.
+
+00:08:17.626 --> 00:08:21.466 A:middle
+With that in place, the only
+
+00:08:21.466 --> 00:08:22.396 A:middle
+thing left to do in our
+
+00:08:22.396 --> 00:08:24.146 A:middle
+definition of custom responses
+
+00:08:25.206 --> 00:08:26.556 A:middle
+is to define the template.
+
+00:08:26.956 --> 00:08:28.966 A:middle
+The template is what is spoken
+
+00:08:28.966 --> 00:08:29.736 A:middle
+out by Siri.
+
+00:08:31.036 --> 00:08:32.895 A:middle
+So, when we look at the template
+
+00:08:32.946 --> 00:08:34.446 A:middle
+section of our Intent Definition
+
+00:08:34.446 --> 00:08:37.236 A:middle
+File, now I'm going to add my
+
+00:08:37.236 --> 00:08:38.135 A:middle
+success template.
+
+00:08:38.785 --> 00:08:40.506 A:middle
+Not just that.
+
+00:08:41.316 --> 00:08:42.576 A:middle
+Our store is getting a little
+
+00:08:42.576 --> 00:08:43.976 A:middle
+popular and we tend to run out
+
+00:08:43.976 --> 00:08:44.826 A:middle
+of soup these days.
+
+00:08:45.156 --> 00:08:47.096 A:middle
+So, it will be great if instead
+
+00:08:47.096 --> 00:08:48.566 A:middle
+of just throwing a random error,
+
+00:08:48.836 --> 00:08:50.266 A:middle
+I can let the users know that
+
+00:08:50.266 --> 00:08:51.166 A:middle
+the soup is out of stock.
+
+00:08:51.826 --> 00:08:54.386 A:middle
+So, I will add another response
+
+00:08:54.386 --> 00:08:55.946 A:middle
+code called, "Failure Out of
+
+00:08:55.946 --> 00:08:57.916 A:middle
+Stock," with a template that
+
+00:08:57.916 --> 00:08:59.416 A:middle
+communicates that the soup is
+
+00:08:59.416 --> 00:09:02.806 A:middle
+out of stock.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.956 --> 00:14:00.406 A:middle
+object.
+
+00:14:00.756 --> 00:14:02.966 A:middle
+So an NWConnection in either
+
+00:14:02.966 --> 00:14:05.596 A:middle
+Swift or in C is the fundamental
+
+00:14:05.596 --> 00:14:06.876 A:middle
+object for reading and writing
+
+00:14:06.876 --> 00:14:07.126 A:middle
+data.
+
+00:14:08.516 --> 00:14:09.316 A:middle
+In this case, we have a
+
+00:14:09.316 --> 00:14:10.886 A:middle
+convenience that initializes
+
+00:14:10.886 --> 00:14:12.526 A:middle
+your endpoint with a host in the
+
+00:14:12.526 --> 00:14:14.946 A:middle
+port, so I give it my hostname,
+
+00:14:14.946 --> 00:14:17.526 A:middle
+male.example.com, and the port.
+
+00:14:17.526 --> 00:14:18.606 A:middle
+And in this case, it's a
+
+00:14:18.606 --> 00:14:19.726 A:middle
+well-known port.
+
+00:14:20.146 --> 00:14:20.906 A:middle
+It's imaps.
+
+00:14:21.086 --> 00:14:22.866 A:middle
+So I can just put that in Swift
+
+00:14:23.156 --> 00:14:24.866 A:middle
+very easy, but I could also put
+
+00:14:24.866 --> 00:14:27.026 A:middle
+any other numeric literal there.
+
+00:14:27.496 --> 00:14:29.726 A:middle
+And then to define what
+
+00:14:29.766 --> 00:14:31.346 A:middle
+protocols I want to use, I pass
+
+00:14:31.386 --> 00:14:33.706 A:middle
+parameters, and since this is a
+
+00:14:33.736 --> 00:14:35.176 A:middle
+client connection, I only want
+
+00:14:35.306 --> 00:14:36.906 A:middle
+default, TLS, and TCP
+
+00:14:36.906 --> 00:14:37.476 A:middle
+parameters.
+
+00:14:38.176 --> 00:14:39.176 A:middle
+It can be as simple as just
+
+00:14:39.176 --> 00:14:41.466 A:middle
+writing dot TLS, and now I have
+
+00:14:41.466 --> 00:14:42.846 A:middle
+a fully-fledged TLS connection.
+
+00:14:44.936 --> 00:14:46.336 A:middle
+The next thing I do is I said
+
+00:14:46.426 --> 00:14:48.046 A:middle
+estate update handler to handle
+
+00:14:48.046 --> 00:14:49.616 A:middle
+all the transitions that my
+
+00:14:49.616 --> 00:14:50.586 A:middle
+connection might go through.
+
+00:14:51.686 --> 00:14:52.696 A:middle
+The first state and the most
+
+00:14:52.696 --> 00:14:53.586 A:middle
+important one that you want to
+
+00:14:53.586 --> 00:14:55.236 A:middle
+handle is the ready state.
+
+00:14:55.916 --> 00:14:57.736 A:middle
+Ready means that your app is
+
+00:14:57.736 --> 00:14:59.346 A:middle
+ready to read and write data on
+
+00:14:59.346 --> 00:15:00.616 A:middle
+this connection, it's totally
+

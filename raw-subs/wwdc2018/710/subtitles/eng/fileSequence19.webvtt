@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.316 --> 00:19:00.536 A:middle
+the user came, so you can update
+
+00:19:00.536 --> 00:19:02.476 A:middle
+your application state based on
+
+00:19:02.686 --> 00:19:03.416 A:middle
+the notification.
+
+00:19:04.696 --> 00:19:06.256 A:middle
+And the identifier that's passed
+
+00:19:06.256 --> 00:19:07.336 A:middle
+here is the
+
+00:19:07.336 --> 00:19:08.766 A:middle
+UNNotificationDefault
+
+00:19:08.766 --> 00:19:09.746 A:middle
+ActionIdentifier.
+
+00:19:10.246 --> 00:19:12.846 A:middle
+So going back to our sample,
+
+00:19:12.956 --> 00:19:14.316 A:middle
+let's see how we can set this
+
+00:19:14.316 --> 00:19:15.806 A:middle
+custom control up.
+
+00:19:17.096 --> 00:19:19.226 A:middle
+Now again, we create our own UI
+
+00:19:19.226 --> 00:19:21.626 A:middle
+button for the all comments and
+
+00:19:22.656 --> 00:19:25.736 A:middle
+then tie it up with our own
+
+00:19:25.736 --> 00:19:26.386 A:middle
+private function.
+
+00:19:27.496 --> 00:19:28.796 A:middle
+And in that function, we're
+
+00:19:28.796 --> 00:19:29.546 A:middle
+simply calling
+
+00:19:29.546 --> 00:19:30.456 A:middle
+PerformNotification
+
+00:19:30.456 --> 00:19:31.036 A:middle
+DefaultAction.
+
+00:19:31.826 --> 00:19:33.576 A:middle
+So by simply doing that, you get
+
+00:19:33.576 --> 00:19:35.186 A:middle
+this functionality to call this
+
+00:19:35.186 --> 00:19:36.446 A:middle
+method programmatically from
+
+00:19:36.446 --> 00:19:37.586 A:middle
+anywhere in your content
+
+00:19:37.586 --> 00:19:40.526 A:middle
+extension code.
+
+00:19:40.726 --> 00:19:42.136 A:middle
+So that was launching the
+
+00:19:42.136 --> 00:19:42.676 A:middle
+application.
+
+00:19:43.476 --> 00:19:44.556 A:middle
+What about dismissing the
+
+00:19:44.556 --> 00:19:48.336 A:middle
+content extension view?
+
+00:19:48.546 --> 00:19:49.926 A:middle
+Again, let's take a look at how
+
+00:19:49.926 --> 00:19:51.046 A:middle
+the user can do that today.
+
+00:19:51.636 --> 00:19:52.866 A:middle
+They can do that by tapping the
+
+00:19:52.866 --> 00:19:54.566 A:middle
+Dismiss Button in the top right
+
+00:19:55.896 --> 00:19:57.846 A:middle
+corner, or you can create your
+
+00:19:57.846 --> 00:19:59.346 A:middle
+own custom notification action,
+
+00:19:59.676 --> 00:20:01.126 A:middle
+which would in turn dismiss the
+

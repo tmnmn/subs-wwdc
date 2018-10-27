@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.756 --> 00:04:00.576 A:middle
+it and it's put there by the App
+
+00:04:00.576 --> 00:04:00.846 A:middle
+Store.
+
+00:04:02.376 --> 00:04:04.216 A:middle
+We also sign this document using
+
+00:04:04.436 --> 00:04:05.376 A:middle
+certificates so that you can
+
+00:04:05.376 --> 00:04:06.866 A:middle
+check to make sure that it is an
+
+00:04:06.866 --> 00:04:07.836 A:middle
+authentic document that's
+
+00:04:08.226 --> 00:04:09.356 A:middle
+actually issued by Apple.
+
+00:04:10.576 --> 00:04:12.096 A:middle
+And finally, the document is for
+
+00:04:12.096 --> 00:04:13.976 A:middle
+your app on that device only.
+
+00:04:14.166 --> 00:04:14.946 A:middle
+So if you've worked with
+
+00:04:14.946 --> 00:04:16.586 A:middle
+subscriptions before you'll
+
+00:04:16.586 --> 00:04:18.096 A:middle
+notice that maybe one user with
+
+00:04:18.096 --> 00:04:20.366 A:middle
+multiple devices has receipts
+
+00:04:20.366 --> 00:04:21.346 A:middle
+that look slightly different on
+
+00:04:21.346 --> 00:04:21.946 A:middle
+each device.
+
+00:04:21.946 --> 00:04:24.836 A:middle
+When it comes to actually
+
+00:04:24.836 --> 00:04:26.276 A:middle
+verifying this transaction that
+
+00:04:26.276 --> 00:04:27.636 A:middle
+your app's been told about the
+
+00:04:27.636 --> 00:04:28.506 A:middle
+first step that you need to do
+
+00:04:28.506 --> 00:04:29.556 A:middle
+is to actually verify that the
+
+00:04:29.616 --> 00:04:30.916 A:middle
+document in question, the App
+
+00:04:30.916 --> 00:04:32.106 A:middle
+Store receipt, is authentic.
+
+00:04:32.476 --> 00:04:33.106 A:middle
+So how do you do that?
+
+00:04:33.656 --> 00:04:36.206 A:middle
+You can do this in two ways.
+
+00:04:36.206 --> 00:04:37.406 A:middle
+Firstly, you can use on-device
+
+00:04:37.406 --> 00:04:39.296 A:middle
+validation and this is where
+
+00:04:39.536 --> 00:04:40.806 A:middle
+directly on the user's device
+
+00:04:40.806 --> 00:04:41.846 A:middle
+you can use a series of checks
+
+00:04:41.916 --> 00:04:43.556 A:middle
+to check the certificates used
+
+00:04:43.556 --> 00:04:45.216 A:middle
+to sign this app and verify that
+
+00:04:45.216 --> 00:04:45.766 A:middle
+it's authentic.
+
+00:04:46.286 --> 00:04:47.536 A:middle
+Or you can use the technique
+
+00:04:47.536 --> 00:04:48.296 A:middle
+called server-to-server
+
+00:04:48.296 --> 00:04:48.836 A:middle
+validation.
+
+00:04:49.746 --> 00:04:50.776 A:middle
+This second technique is where
+
+00:04:50.776 --> 00:04:52.486 A:middle
+you take that binary encoded
+
+00:04:52.486 --> 00:04:54.276 A:middle
+receipt data, send it up to your
+
+00:04:54.276 --> 00:04:55.676 A:middle
+own server, and then from your
+
+00:04:55.676 --> 00:04:57.066 A:middle
+server over to the App Store for
+
+00:04:57.106 --> 00:04:57.606 A:middle
+processing.
+
+00:04:57.606 --> 00:04:59.066 A:middle
+And the App Store will actually
+
+00:04:59.066 --> 00:05:00.196 A:middle
+do those checks for you.
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.756 --> 00:31:00.916 A:middle
+them in the message that we're
+
+00:31:00.916 --> 00:31:01.506 A:middle
+trying to encode.
+
+00:31:02.446 --> 00:31:03.556 A:middle
+Here it is in real time, so I
+
+00:31:03.556 --> 00:31:06.306 A:middle
+can do changes to that message
+
+00:31:06.306 --> 00:31:08.546 A:middle
+and see how that affects the QR
+
+00:31:08.546 --> 00:31:09.456 A:middle
+code that's being generated.
+
+00:31:11.536 --> 00:31:13.076 A:middle
+Core Image also has support for
+
+00:31:13.076 --> 00:31:14.326 A:middle
+labeling your images, so you can
+
+00:31:14.326 --> 00:31:15.716 A:middle
+use a CI text image generator to
+
+00:31:15.716 --> 00:31:16.066 A:middle
+do that.
+
+00:31:16.576 --> 00:31:18.026 A:middle
+So, here's the example here.
+
+00:31:18.916 --> 00:31:21.746 A:middle
+WWDC and using the SFLO font.
+
+00:31:22.446 --> 00:31:24.456 A:middle
+All right, let's keep going.
+
+00:31:25.536 --> 00:31:26.846 A:middle
+As I mentioned, we support
+
+00:31:26.846 --> 00:31:27.966 A:middle
+interoperability with a -- to
+
+00:31:28.046 --> 00:31:29.906 A:middle
+and from NumPy, so this is the
+
+00:31:29.906 --> 00:31:30.696 A:middle
+first thing we're going to do
+
+00:31:30.696 --> 00:31:30.926 A:middle
+here.
+
+00:31:32.206 --> 00:31:32.966 A:middle
+We're going to start with an
+
+00:31:32.966 --> 00:31:34.916 A:middle
+image and apply some interesting
+
+00:31:34.916 --> 00:31:35.986 A:middle
+and non-trivial affect to it.
+
+00:31:35.986 --> 00:31:37.066 A:middle
+In this case, a vortex
+
+00:31:37.066 --> 00:31:37.546 A:middle
+distortion.
+
+00:31:38.716 --> 00:31:40.896 A:middle
+Next thing we'll do is, we'll
+
+00:31:40.896 --> 00:31:45.496 A:middle
+render that buffer getting NumPy
+
+00:31:45.496 --> 00:31:46.316 A:middle
+area out of it.
+
+00:31:46.316 --> 00:31:47.936 A:middle
+You can see its type here as
+
+00:31:47.936 --> 00:31:50.226 A:middle
+well as its shape, its depth,
+
+00:31:50.616 --> 00:31:52.656 A:middle
+and a few statistics on it.
+
+00:31:52.656 --> 00:31:54.616 A:middle
+It's minimum, median value as
+
+00:31:54.616 --> 00:31:55.796 A:middle
+well as its maximum value.
+
+00:31:56.396 --> 00:31:59.766 A:middle
+We can also go the other way
+
+00:31:59.766 --> 00:32:01.596 A:middle
+around and go from NumPy to Core
+

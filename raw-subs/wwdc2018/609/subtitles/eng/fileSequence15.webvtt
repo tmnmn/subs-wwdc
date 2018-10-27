@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.266 --> 00:15:00.106 A:middle
+So, here's an example of how you
+
+00:15:00.106 --> 00:15:01.966 A:middle
+can create a single image, using
+
+00:15:01.966 --> 00:15:02.696 A:middle
+our API.
+
+00:15:04.136 --> 00:15:05.536 A:middle
+So, here we're creating one from
+
+00:15:05.536 --> 00:15:06.736 A:middle
+an existing Metal texture.
+
+00:15:07.306 --> 00:15:09.646 A:middle
+And this is an example of how
+
+00:15:09.646 --> 00:15:11.206 A:middle
+you can create a batch of
+
+00:15:11.206 --> 00:15:13.676 A:middle
+images, using our API and append
+
+00:15:13.676 --> 00:15:15.116 A:middle
+a new image to the batch, so you
+
+00:15:15.116 --> 00:15:18.566 A:middle
+can pass it to the graph.
+
+00:15:18.566 --> 00:15:20.316 A:middle
+And now, what are state objects?
+
+00:15:20.426 --> 00:15:23.976 A:middle
+An MPS state is an opaque data
+
+00:15:23.976 --> 00:15:24.446 A:middle
+container.
+
+00:15:24.446 --> 00:15:27.356 A:middle
+In training, it's frequently
+
+00:15:27.356 --> 00:15:29.366 A:middle
+used to capture a state of a
+
+00:15:29.366 --> 00:15:32.366 A:middle
+forward node, when it's called.
+
+00:15:32.916 --> 00:15:35.206 A:middle
+And so, it can later be used by
+
+00:15:35.206 --> 00:15:35.996 A:middle
+the gradient node.
+
+00:15:37.106 --> 00:15:39.036 A:middle
+So, the graph manages all of the
+
+00:15:39.036 --> 00:15:39.776 A:middle
+state objects.
+
+00:15:39.776 --> 00:15:41.056 A:middle
+So, as a developer, you
+
+00:15:41.056 --> 00:15:42.286 A:middle
+generally don't need to worry
+
+00:15:42.286 --> 00:15:42.996 A:middle
+about states.
+
+00:15:43.306 --> 00:15:44.366 A:middle
+But it's nice to know how they
+
+00:15:44.366 --> 00:15:44.716 A:middle
+work.
+
+00:15:44.876 --> 00:15:46.196 A:middle
+So, let's use a specific
+
+00:15:46.196 --> 00:15:46.686 A:middle
+example.
+
+00:15:48.776 --> 00:15:50.116 A:middle
+So, let's go back to our
+
+00:15:50.116 --> 00:15:51.476 A:middle
+handwritten digit recognition
+
+00:15:51.476 --> 00:15:51.876 A:middle
+network.
+
+00:15:52.886 --> 00:15:55.096 A:middle
+And take a look specifically at
+
+00:15:55.096 --> 00:15:56.416 A:middle
+the drop-out and drop-out
+
+00:15:56.416 --> 00:15:57.956 A:middle
+gradient nodes.
+

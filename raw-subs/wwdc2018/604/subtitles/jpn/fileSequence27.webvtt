@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.285 --> 00:27:02.923 align:start position:23% line:-2
+OpenGLは左下原点で
+Metalは左上原点を使います
+
+00:27:03.023 --> 00:27:06.660 align:start position:32% line:-2
+テクスチャロード時に
+注意が必要です
+
+00:27:07.628 --> 00:27:11.432 align:start position:25% line:-2
+デスクトップ型OpenGLは
+内部フォーマットとは
+
+00:27:11.532 --> 00:27:15.435 align:start position:27% line:-2
+異なるデータを供給されると
+変換を実施します
+
+00:27:16.270 --> 00:27:19.506 align:start position:27% line:-2
+Metalは変換しないので
+アセットのフォーマットの
+
+00:27:19.606 --> 00:27:22.843 align:start position:32% line:-1
+適合性を確認するか―
+
+00:27:22.943 --> 00:27:26.013 align:start position:32% line:-1
+変換パスを導入します
+
+00:27:28.882 --> 00:27:30.517 align:start position:34% line:-1
+バッファに移ります
+
+00:27:32.252 --> 00:27:35.789 align:start position:25% line:-2
+Metalは非構造化データの
+すべてにバッファを使います
+
+00:27:41.261 --> 00:27:45.599 align:start position:21% line:-2
+OpenGLの頂点 エレメント
+ユニフォームバッファと似ています
+
+00:27:45.699 --> 00:27:50.470 align:start position:30% line:-2
+これらを使っているなら
+移植は容易です
+
+00:27:51.305 --> 00:27:55.309 align:start position:7% line:-2
+デバイスで
+newBufferWithLengthをコールし
+
+00:27:55.409 --> 00:27:57.444 align:start position:34% line:-2
+サイズを指定すると
+バッファができます
+
+00:27:57.644 --> 00:28:00.013 align:start position:34% line:-2
+ストレージモードも
+指定します
+

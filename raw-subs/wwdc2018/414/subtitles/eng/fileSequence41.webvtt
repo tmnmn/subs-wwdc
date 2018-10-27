@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.896 --> 00:41:00.546 A:middle
+Address Sanitizer and the
+
+00:41:00.546 --> 00:41:02.576 A:middle
+Zombies instrument to try and
+
+00:41:02.576 --> 00:41:03.726 A:middle
+reproduce the crash.
+
+00:41:04.116 --> 00:41:05.976 A:middle
+Because even though we did a
+
+00:41:05.976 --> 00:41:07.636 A:middle
+good job with the malloc free
+
+00:41:07.636 --> 00:41:09.936 A:middle
+list crash log of narrowing down
+
+00:41:09.936 --> 00:41:11.996 A:middle
+what happened it's a lot easier
+
+00:41:11.996 --> 00:41:13.636 A:middle
+to debug crashes when they occur
+
+00:41:13.716 --> 00:41:16.456 A:middle
+in a debugger, in a test with
+
+00:41:16.456 --> 00:41:18.396 A:middle
+Sanitization error messages
+
+00:41:18.396 --> 00:41:19.546 A:middle
+telling you what went on.
+
+00:41:20.066 --> 00:41:23.106 A:middle
+So a moment ago I mentioned
+
+00:41:23.106 --> 00:41:24.586 A:middle
+looking up multiple stack
+
+00:41:24.586 --> 00:41:26.826 A:middle
+traces, multiple thread stacks
+
+00:41:27.066 --> 00:41:28.286 A:middle
+in order to diagnose
+
+00:41:28.286 --> 00:41:29.516 A:middle
+multithreading errors.
+
+00:41:30.066 --> 00:41:32.616 A:middle
+And to talk more about debugging
+
+00:41:32.616 --> 00:41:34.156 A:middle
+multithreading errors let me
+
+00:41:34.156 --> 00:41:34.976 A:middle
+introduce Kuba.
+
+00:41:35.516 --> 00:41:40.696 A:middle
+[ Applause ]
+
+00:41:41.196 --> 00:41:41.466 A:middle
+&gt;&gt; Thank you.
+
+00:41:43.646 --> 00:41:44.076 A:middle
+Thank you.
+
+00:41:45.236 --> 00:41:47.356 A:middle
+As Greg mentioned, some memory
+
+00:41:47.356 --> 00:41:49.036 A:middle
+corruptions can be caused by
+
+00:41:49.036 --> 00:41:50.126 A:middle
+multithreading issues.
+
+00:41:51.146 --> 00:41:52.906 A:middle
+Multithreading bugs are often
+
+00:41:52.906 --> 00:41:54.496 A:middle
+one of the hardest types of bugs
+
+00:41:54.646 --> 00:41:56.436 A:middle
+to diagnose and reproduce.
+
+00:41:57.236 --> 00:41:58.436 A:middle
+They get especially hard to
+
+00:41:58.436 --> 00:41:59.866 A:middle
+reproduce because they only
+
+00:41:59.866 --> 00:42:01.296 A:middle
+cause crashes once in a while,
+

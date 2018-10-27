@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:00.806 --> 00:39:02.176 A:middle
+And we can use this to perform
+
+00:39:02.216 --> 00:39:04.566 A:middle
+custom resolves in place and in
+
+00:39:04.566 --> 00:39:05.406 A:middle
+fast tile memory.
+
+00:39:06.186 --> 00:39:07.466 A:middle
+Now, to see why this is useful,
+
+00:39:07.696 --> 00:39:08.516 A:middle
+let's take a look at a
+
+00:39:08.516 --> 00:39:10.316 A:middle
+multi-sampled scene that also
+
+00:39:10.316 --> 00:39:11.166 A:middle
+renders particles.
+
+00:39:14.196 --> 00:39:15.766 A:middle
+Now, particles are transparent,
+
+00:39:15.766 --> 00:39:17.356 A:middle
+so we blend them after rendering
+
+00:39:17.356 --> 00:39:18.646 A:middle
+our opaque scene geometry.
+
+00:39:19.306 --> 00:39:20.706 A:middle
+But particle rendering doesn't
+
+00:39:20.706 --> 00:39:21.886 A:middle
+benefit from multi-sampling
+
+00:39:21.886 --> 00:39:22.806 A:middle
+because it doesn't really have
+
+00:39:22.806 --> 00:39:23.716 A:middle
+any visible edges.
+
+00:39:24.766 --> 00:39:26.236 A:middle
+So to avoid the extra cost of
+
+00:39:26.236 --> 00:39:27.496 A:middle
+blending per sample for no good
+
+00:39:27.496 --> 00:39:29.256 A:middle
+reason, a game would render
+
+00:39:29.256 --> 00:39:30.236 A:middle
+using 2 passes.
+
+00:39:30.956 --> 00:39:32.546 A:middle
+In the first pass, your opaque
+
+00:39:32.546 --> 00:39:33.956 A:middle
+scene geometry is rendered using
+
+00:39:33.956 --> 00:39:35.156 A:middle
+multi-sampling to reduce
+
+00:39:35.156 --> 00:39:35.756 A:middle
+aliasing.
+
+00:39:36.666 --> 00:39:37.536 A:middle
+And then, you're going to
+
+00:39:37.536 --> 00:39:38.696 A:middle
+resolve your color and depth to
+
+00:39:38.696 --> 00:39:40.036 A:middle
+system memory, and we're
+
+00:39:40.036 --> 00:39:41.506 A:middle
+resolving depth because
+
+00:39:41.506 --> 00:39:42.846 A:middle
+particles can later be included.
+
+00:39:43.916 --> 00:39:45.696 A:middle
+Then in the second pass, the
+
+00:39:45.696 --> 00:39:47.496 A:middle
+resolve color and depth are used
+
+00:39:47.636 --> 00:39:48.626 A:middle
+in rendering the particles
+
+00:39:48.626 --> 00:39:49.576 A:middle
+without multi-sampling.
+
+00:39:51.256 --> 00:39:52.466 A:middle
+Now, as you probably guessed by
+
+00:39:52.466 --> 00:39:54.326 A:middle
+now, our goal is to eliminate
+
+00:39:54.326 --> 00:39:55.396 A:middle
+the intermediate system memory
+
+00:39:55.396 --> 00:39:56.876 A:middle
+traffic using tile shading to
+
+00:39:56.876 --> 00:39:58.646 A:middle
+combine these 2 passes.
+

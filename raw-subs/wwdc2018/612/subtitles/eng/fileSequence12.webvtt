@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.516 --> 00:12:00.956 A:middle
+We've just seen the problem, how
+
+00:12:00.956 --> 00:12:02.216 A:middle
+it occurs in the real world.
+
+00:12:02.336 --> 00:12:03.926 A:middle
+The pattern is basically the
+
+00:12:03.926 --> 00:12:04.296 A:middle
+same.
+
+00:12:04.796 --> 00:12:07.026 A:middle
+So how do we go about fixing it?
+
+00:12:07.636 --> 00:12:09.596 A:middle
+The best practice here is to
+
+00:12:09.596 --> 00:12:10.976 A:middle
+target the frame rate your game
+
+00:12:10.976 --> 00:12:11.516 A:middle
+can achieve.
+
+00:12:12.226 --> 00:12:13.966 A:middle
+So at the minimum frame duration
+
+00:12:14.466 --> 00:12:15.866 A:middle
+there is longer than the time it
+
+00:12:15.866 --> 00:12:16.696 A:middle
+takes to render.
+
+00:12:18.006 --> 00:12:19.586 A:middle
+For that, there's a bunch of
+
+00:12:19.586 --> 00:12:20.696 A:middle
+APIs that can help you.
+
+00:12:21.326 --> 00:12:23.016 A:middle
+For example, MT Drawable
+
+00:12:23.016 --> 00:12:25.096 A:middle
+addPresentedHandler will give
+
+00:12:25.096 --> 00:12:26.746 A:middle
+you a call back once that
+
+00:12:26.746 --> 00:12:27.786 A:middle
+drawable is presented.
+
+00:12:27.786 --> 00:12:29.206 A:middle
+So you can identify micro
+
+00:12:29.206 --> 00:12:30.956 A:middle
+stuttering as it is happening.
+
+00:12:31.936 --> 00:12:33.916 A:middle
+The other two APIs will help you
+
+00:12:33.916 --> 00:12:35.436 A:middle
+to actually fix the problem.
+
+00:12:35.876 --> 00:12:36.816 A:middle
+They will allow you to
+
+00:12:36.816 --> 00:12:38.406 A:middle
+explicitly control the frame
+
+00:12:38.406 --> 00:12:39.816 A:middle
+rating-- the frame pacing.
+
+00:12:40.496 --> 00:12:41.776 A:middle
+In this case we have present
+
+00:12:41.776 --> 00:12:43.836 A:middle
+afterMinimumDuration and present
+
+00:12:43.946 --> 00:12:44.246 A:middle
+atTime.
+
+00:12:45.236 --> 00:12:46.396 A:middle
+What we want to do here?
+
+00:12:46.966 --> 00:12:48.496 A:middle
+We set the minimum duration for
+
+00:12:48.496 --> 00:12:50.436 A:middle
+our frame longer than it takes
+
+00:12:50.436 --> 00:12:50.826 A:middle
+to render.
+
+00:12:51.946 --> 00:12:53.256 A:middle
+And we'll do just that.
+
+00:12:53.256 --> 00:12:55.796 A:middle
+Let's see how that looks.
+
+00:12:56.036 --> 00:12:57.276 A:middle
+Notice that when we start
+
+00:12:57.276 --> 00:12:59.306 A:middle
+rendering, we are already
+
+00:12:59.306 --> 00:13:00.746 A:middle
+consistent from the get-go.
+

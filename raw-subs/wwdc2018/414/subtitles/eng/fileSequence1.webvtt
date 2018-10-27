@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.336 --> 00:01:00.256 A:middle
+In particular I'm going to cover
+
+00:01:00.256 --> 00:01:02.496 A:middle
+the fundamentals of crashes, why
+
+00:01:02.496 --> 00:01:03.736 A:middle
+do they happen, what do they
+
+00:01:03.736 --> 00:01:04.226 A:middle
+look like.
+
+00:01:05.816 --> 00:01:07.326 A:middle
+Then I'm going to show you some
+
+00:01:07.326 --> 00:01:08.646 A:middle
+of the tools that we have to
+
+00:01:08.646 --> 00:01:10.226 A:middle
+access crash logs when they're
+
+00:01:10.226 --> 00:01:11.026 A:middle
+occurring in the wild.
+
+00:01:12.496 --> 00:01:13.666 A:middle
+Then Greg is going to come up
+
+00:01:13.996 --> 00:01:15.876 A:middle
+and give you some more detail on
+
+00:01:16.006 --> 00:01:17.246 A:middle
+how to read the content of a
+
+00:01:17.246 --> 00:01:18.186 A:middle
+crash log.
+
+00:01:18.996 --> 00:01:21.026 A:middle
+And then he's going to go in
+
+00:01:21.026 --> 00:01:22.476 A:middle
+depth in how to read a tricky
+
+00:01:22.476 --> 00:01:24.036 A:middle
+memory issue with a crash log.
+
+00:01:24.036 --> 00:01:26.686 A:middle
+And then Kuba will show you how
+
+00:01:26.686 --> 00:01:28.426 A:middle
+to catch threading races early,
+
+00:01:28.426 --> 00:01:29.446 A:middle
+these threading races lead to
+
+00:01:29.446 --> 00:01:31.446 A:middle
+crashes, and these crashes are
+
+00:01:31.446 --> 00:01:33.866 A:middle
+very hard to reproduce.
+
+00:01:33.866 --> 00:01:35.856 A:middle
+So first we should define it,
+
+00:01:36.536 --> 00:01:37.316 A:middle
+what is a crash?
+
+00:01:38.836 --> 00:01:41.206 A:middle
+A crash is a sudden termination
+
+00:01:41.256 --> 00:01:43.406 A:middle
+of your app when it attempts to
+
+00:01:43.406 --> 00:01:44.596 A:middle
+do something that is not
+
+00:01:44.596 --> 00:01:44.986 A:middle
+allowed.
+
+00:01:44.986 --> 00:01:47.296 A:middle
+So what's not allowed?
+
+00:01:47.796 --> 00:01:49.386 A:middle
+Well, sometimes it's impossible
+
+00:01:49.386 --> 00:01:51.626 A:middle
+for the CPU to execute code, the
+
+00:01:51.626 --> 00:01:53.086 A:middle
+CPU won't divide by zero.
+
+00:01:54.126 --> 00:01:55.726 A:middle
+Or sometimes it's the operating
+
+00:01:55.726 --> 00:01:56.976 A:middle
+system that's enforcing some
+
+00:01:57.026 --> 00:01:57.516 A:middle
+policy.
+
+00:01:59.066 --> 00:02:00.216 A:middle
+The operating system will
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.556 --> 00:04:03.616 A:middle
+You can customize the included
+
+00:04:03.616 --> 00:04:05.756 A:middle
+targets in this scheme's test
+
+00:04:05.756 --> 00:04:07.566 A:middle
+action under options.
+
+00:04:08.746 --> 00:04:10.386 A:middle
+This means that it can continue
+
+00:04:10.386 --> 00:04:12.446 A:middle
+to include all targets in code
+
+00:04:12.446 --> 00:04:14.346 A:middle
+coverage or only hand pick some
+
+00:04:14.346 --> 00:04:14.826 A:middle
+of them.
+
+00:04:17.266 --> 00:04:19.125 A:middle
+Now in the name of more powerful
+
+00:04:19.125 --> 00:04:20.726 A:middle
+workflows, we created a new
+
+00:04:20.726 --> 00:04:22.366 A:middle
+command-line tool called xccov.
+
+00:04:22.916 --> 00:04:25.936 A:middle
+It can be integrated into
+
+00:04:25.936 --> 00:04:27.876 A:middle
+automation scripts easily, as it
+
+00:04:27.876 --> 00:04:29.786 A:middle
+produces both human readable and
+
+00:04:29.786 --> 00:04:31.196 A:middle
+machine parseable outputs.
+
+00:04:32.326 --> 00:04:33.776 A:middle
+And at the high level, it gives
+
+00:04:33.776 --> 00:04:36.156 A:middle
+you detailed view of your
+
+00:04:36.156 --> 00:04:36.836 A:middle
+coverage data.
+
+00:04:37.656 --> 00:04:38.746 A:middle
+So, I've mentioned the code
+
+00:04:38.786 --> 00:04:40.166 A:middle
+coverage data a couple of times,
+
+00:04:40.596 --> 00:04:41.846 A:middle
+let's look at how it looks under
+
+00:04:41.976 --> 00:04:42.866 A:middle
+the hood.
+
+00:04:43.616 --> 00:04:45.526 A:middle
+When tests are run with code
+
+00:04:45.526 --> 00:04:47.476 A:middle
+coverage enabled, Xcode
+
+00:04:47.476 --> 00:04:48.786 A:middle
+generates two files.
+
+00:04:49.296 --> 00:04:52.166 A:middle
+First is the coverage report, or
+
+00:04:52.166 --> 00:04:53.976 A:middle
+the xccovreport file extension,
+
+00:04:54.236 --> 00:04:55.646 A:middle
+and that contains the line --
+
+00:04:56.646 --> 00:04:58.766 A:middle
+line coverage percentages for
+
+00:04:58.766 --> 00:05:00.976 A:middle
+each target, source file, and
+

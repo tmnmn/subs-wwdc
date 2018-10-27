@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.725 --> 00:36:03.964 align:start position:29% line:-2
+なお この例のように
+長さは一定とは限りません
+
+00:36:04.832 --> 00:36:08.135 align:start position:27% line:-2
+交換にも
+幸いアルゴリズムがあります
+
+00:36:08.802 --> 00:36:11.004 align:start position:27% line:-1
+それは“rotate”です
+
+00:36:14.741 --> 00:36:18.512 align:start position:16% line:-1
+“rotate”には詳しく触れませんが
+
+00:36:18.612 --> 00:36:23.817 align:start position:18% line:-2
+“stablePartition”と
+同じファイルで 実装が見られます
+
+00:36:25.819 --> 00:36:27.554 align:start position:36% line:-1
+話を戻しましょう
+
+00:36:28.088 --> 00:36:29.957 align:start position:41% line:-1
+こちらは―
+
+00:36:31.759 --> 00:36:36.096 align:start position:21% line:-1
+図形リストへのドラッグの実装です
+
+00:36:36.196 --> 00:36:39.833 align:start position:25% line:-1
+複雑でバグも少なくありません
+
+00:36:40.234 --> 00:36:43.637 align:start position:30% line:-2
+戦略は 一時バッファを
+割り当て―
+
+00:36:44.771 --> 00:36:48.542 align:start position:23% line:-1
+挿入点の前の図形をループします
+
+00:36:48.642 --> 00:36:51.879 align:start position:30% line:-2
+選択した図形を抽出して
+挿入点を調整
+
+00:36:52.379 --> 00:36:55.249 align:start position:27% line:-1
+残りの図形を別々にループし
+
+00:36:55.349 --> 00:36:58.986 align:start position:21% line:-1
+その後 選択したものを抽出します
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.656 --> 00:03:00.716 A:middle
+You can think of it as a set of
+
+00:03:00.716 --> 00:03:02.566 A:middle
+properties you can use to define
+
+00:03:02.566 --> 00:03:03.866 A:middle
+these items that are displayed.
+
+00:03:03.896 --> 00:03:06.206 A:middle
+You can even customize these by
+
+00:03:06.206 --> 00:03:07.886 A:middle
+printing your own subclasses of
+
+00:03:07.886 --> 00:03:08.826 A:middle
+UICollectionView layout
+
+00:03:08.826 --> 00:03:10.676 A:middle
+attributes and include these in
+
+00:03:10.676 --> 00:03:11.546 A:middle
+your designs.
+
+00:03:12.876 --> 00:03:14.996 A:middle
+Okay. So as the user is
+
+00:03:14.996 --> 00:03:16.496 A:middle
+scrolling through the content on
+
+00:03:16.496 --> 00:03:18.646 A:middle
+screen, the layout is considered
+
+00:03:18.646 --> 00:03:19.636 A:middle
+to be immutable.
+
+00:03:20.266 --> 00:03:22.186 A:middle
+Now if you need to change this,
+
+00:03:22.186 --> 00:03:23.716 A:middle
+like for example you're going to
+
+00:03:23.716 --> 00:03:24.916 A:middle
+change the appearance of the
+
+00:03:24.916 --> 00:03:26.616 A:middle
+layout, you would use the
+
+00:03:26.616 --> 00:03:28.116 A:middle
+invalidation mechanism, which
+
+00:03:28.116 --> 00:03:29.256 A:middle
+Mohammed will walk us through in
+
+00:03:29.256 --> 00:03:31.526 A:middle
+a little bit.
+
+00:03:31.526 --> 00:03:33.936 A:middle
+Okay. Now, one great thing about
+
+00:03:33.996 --> 00:03:35.066 A:middle
+layout being a separate
+
+00:03:35.066 --> 00:03:37.226 A:middle
+abstraction is we can transition
+
+00:03:37.226 --> 00:03:38.306 A:middle
+from one layout to another
+
+00:03:38.306 --> 00:03:40.616 A:middle
+layout and get a great animated
+
+00:03:40.616 --> 00:03:42.026 A:middle
+effect when you move between
+
+00:03:42.026 --> 00:03:44.526 A:middle
+layouts, and layout A doesn't
+
+00:03:44.526 --> 00:03:46.156 A:middle
+need to know anything about
+
+00:03:46.446 --> 00:03:47.076 A:middle
+layout B.
+
+00:03:47.286 --> 00:03:48.056 A:middle
+They just declare what the
+
+00:03:48.056 --> 00:03:49.526 A:middle
+layout is going to be, and the
+
+00:03:49.526 --> 00:03:50.396 A:middle
+transitions occur.
+
+00:03:51.986 --> 00:03:54.926 A:middle
+Okay. So CollectionViewLayout is
+
+00:03:54.926 --> 00:03:56.656 A:middle
+an abstract class, and as such,
+
+00:03:56.656 --> 00:03:58.686 A:middle
+it's not meant to be used
+
+00:03:58.686 --> 00:04:00.976 A:middle
+directly, but rather subclasses
+

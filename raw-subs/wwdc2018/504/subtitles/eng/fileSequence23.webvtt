@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:00.056 --> 00:23:01.406 A:middle
+So as long as the user is
+
+00:23:01.406 --> 00:23:02.726 A:middle
+listening to content on iPhone,
+
+00:23:02.986 --> 00:23:04.736 A:middle
+then our app will stay
+
+00:23:04.736 --> 00:23:06.076 A:middle
+frontmost, unless the user
+
+00:23:06.076 --> 00:23:07.296 A:middle
+decides to navigate away.
+
+00:23:08.556 --> 00:23:11.196 A:middle
+And new in watchOS 5 is we're
+
+00:23:11.196 --> 00:23:12.756 A:middle
+exposing a Now Playing session
+
+00:23:12.756 --> 00:23:14.816 A:middle
+API where you're going to know
+
+00:23:14.816 --> 00:23:16.236 A:middle
+when you're launched for this
+
+00:23:16.236 --> 00:23:17.756 A:middle
+Now Playing session on iPhone,
+
+00:23:18.156 --> 00:23:19.496 A:middle
+and so you can take your user
+
+00:23:19.496 --> 00:23:21.106 A:middle
+directly to the appropriate
+
+00:23:21.106 --> 00:23:21.396 A:middle
+view.
+
+00:23:21.906 --> 00:23:24.026 A:middle
+And to do this, you're going to
+
+00:23:24.026 --> 00:23:25.486 A:middle
+use the handleRemoteNow
+
+00:23:25.486 --> 00:23:27.216 A:middle
+PlayingActivity on your
+
+00:23:27.216 --> 00:23:28.326 A:middle
+WKExtension Delegate.
+
+00:23:30.026 --> 00:23:31.636 A:middle
+So let's take a look at some
+
+00:23:31.636 --> 00:23:33.086 A:middle
+code and see how we could use
+
+00:23:35.796 --> 00:23:35.896 A:middle
+this.
+
+00:23:36.086 --> 00:23:36.976 A:middle
+So here we are.
+
+00:23:36.976 --> 00:23:38.196 A:middle
+I have my extension delegate,
+
+00:23:39.176 --> 00:23:40.406 A:middle
+and then I can implement my
+
+00:23:40.406 --> 00:23:42.316 A:middle
+handleRemoteNow PlayingActivity.
+
+00:23:43.216 --> 00:23:44.286 A:middle
+And the first thing I want to
+
+00:23:44.286 --> 00:23:46.216 A:middle
+check is, where is my user at
+
+00:23:46.216 --> 00:23:46.846 A:middle
+that time?
+
+00:23:47.476 --> 00:23:50.256 A:middle
+So I can just grab the visible
+
+00:23:50.256 --> 00:23:51.926 A:middle
+interface controller, I can
+
+00:23:51.926 --> 00:23:54.016 A:middle
+check where my user is, and if
+
+00:23:54.016 --> 00:23:55.856 A:middle
+the user already is at my Now
+
+00:23:55.856 --> 00:23:57.576 A:middle
+Playing UI, that's great.
+
+00:23:57.776 --> 00:23:58.746 A:middle
+Let's leave them right there.
+
+00:23:59.896 --> 00:24:01.116 A:middle
+But in the case they're not, we
+

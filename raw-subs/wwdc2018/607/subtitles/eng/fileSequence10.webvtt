@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.476 --> 00:10:02.006 A:middle
+With heaps, you deallocate and
+
+00:10:02.006 --> 00:10:04.436 A:middle
+reallocate without any costly
+
+00:10:04.436 --> 00:10:06.226 A:middle
+round trip to the OS.
+
+00:10:08.156 --> 00:10:09.846 A:middle
+Finally, heaps also let you
+
+00:10:09.846 --> 00:10:11.776 A:middle
+alias different memory resources
+
+00:10:11.776 --> 00:10:12.406 A:middle
+with each other.
+
+00:10:14.086 --> 00:10:15.376 A:middle
+This is really helpful if your
+
+00:10:15.376 --> 00:10:16.916 A:middle
+game frame has a lot of
+
+00:10:16.916 --> 00:10:18.166 A:middle
+temporary render targets.
+
+00:10:18.686 --> 00:10:19.846 A:middle
+There's no reason for these to
+
+00:10:19.846 --> 00:10:21.276 A:middle
+occupy a different memory all
+
+00:10:21.276 --> 00:10:23.696 A:middle
+the time, so you could alias and
+
+00:10:23.696 --> 00:10:25.546 A:middle
+save hundreds of megabytes.
+
+00:10:26.236 --> 00:10:28.376 A:middle
+Now, the faster allocations in
+
+00:10:28.376 --> 00:10:30.666 A:middle
+aliasing are great, but it's not
+
+00:10:30.666 --> 00:10:31.996 A:middle
+entirely free when it comes to
+
+00:10:31.996 --> 00:10:32.946 A:middle
+dependency tracking.
+
+00:10:33.466 --> 00:10:34.536 A:middle
+Let's return to our frame
+
+00:10:34.536 --> 00:10:35.546 A:middle
+example for a better
+
+00:10:35.546 --> 00:10:36.306 A:middle
+explanation.
+
+00:10:38.356 --> 00:10:40.786 A:middle
+With heaps, Metal no longer sees
+
+00:10:40.786 --> 00:10:42.556 A:middle
+individual resources, so
+
+00:10:42.556 --> 00:10:43.346 A:middle
+therefore, it can't
+
+00:10:43.586 --> 00:10:44.956 A:middle
+automatically identify the read
+
+00:10:44.956 --> 00:10:46.236 A:middle
+and write dependencies between
+
+00:10:46.236 --> 00:10:48.366 A:middle
+passes, such as the G-buffer and
+
+00:10:48.366 --> 00:10:49.516 A:middle
+deferred shading pass in our
+
+00:10:49.516 --> 00:10:49.946 A:middle
+example.
+
+00:10:51.056 --> 00:10:53.516 A:middle
+So you have to use fences to
+
+00:10:53.516 --> 00:10:55.076 A:middle
+explicitly signal which pass
+
+00:10:55.136 --> 00:10:57.276 A:middle
+produces data and which pass
+
+00:10:57.386 --> 00:10:58.286 A:middle
+consumes the data.
+
+00:10:58.906 --> 00:11:00.856 A:middle
+So in this example, the G-buffer
+

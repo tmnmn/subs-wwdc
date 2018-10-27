@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.306 --> 00:17:01.896 A:middle
+NSImage or you're using the
+
+00:17:01.896 --> 00:17:04.226 A:middle
+layer contents for content scale
+
+00:17:04.226 --> 00:17:06.636 A:middle
+API to create layer contents
+
+00:17:06.715 --> 00:17:08.246 A:middle
+from an image for your layer.
+
+00:17:09.876 --> 00:17:11.276 A:middle
+If you have code like this, you
+
+00:17:11.276 --> 00:17:12.726 A:middle
+should know that the image will
+
+00:17:12.726 --> 00:17:14.626 A:middle
+not automatically inherit the
+
+00:17:14.626 --> 00:17:15.326 A:middle
+appearance.
+
+00:17:15.856 --> 00:17:19.256 A:middle
+As before, the best fix is to
+
+00:17:19.256 --> 00:17:20.286 A:middle
+switch to views.
+
+00:17:20.286 --> 00:17:21.935 A:middle
+In this case, NSImageView.
+
+00:17:22.286 --> 00:17:23.776 A:middle
+NSImageView will take care of
+
+00:17:23.776 --> 00:17:25.266 A:middle
+this detail as well as a bunch
+
+00:17:25.266 --> 00:17:28.046 A:middle
+of others automatically, so do
+
+00:17:28.046 --> 00:17:30.576 A:middle
+that if you can.
+
+00:17:30.766 --> 00:17:32.676 A:middle
+Otherwise, you'll need to create
+
+00:17:32.676 --> 00:17:35.266 A:middle
+a CGImage from your NSImage for
+
+00:17:35.266 --> 00:17:35.786 A:middle
+your layer.
+
+00:17:36.466 --> 00:17:37.776 A:middle
+And you'll do that using the
+
+00:17:37.776 --> 00:17:40.166 A:middle
+cgImage(forProposedRect:,
+
+00:17:40.786 --> 00:17:43.886 A:middle
+context:, hints: API on NSImage.
+
+00:17:44.496 --> 00:17:46.056 A:middle
+And you'll have to be careful to
+
+00:17:46.186 --> 00:17:47.506 A:middle
+do this at a point where the
+
+00:17:47.776 --> 00:17:49.536 A:middle
+current appearance is correct.
+
+00:17:49.776 --> 00:17:51.406 A:middle
+So, a good place to do it is in
+
+00:17:51.406 --> 00:17:52.486 A:middle
+your updateLayer method.
+
+00:17:52.766 --> 00:17:55.596 A:middle
+All right, so that's appearance.
+
+00:17:56.486 --> 00:17:57.856 A:middle
+Now let's talk about materials.
+
+00:17:57.946 --> 00:18:00.046 A:middle
+Now, you've probably heard that
+

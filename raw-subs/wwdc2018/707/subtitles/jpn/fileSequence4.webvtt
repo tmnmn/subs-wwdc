@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.772 --> 00:04:00.140 align:start position:34% line:-1
+少し微妙な問題です
+
+00:04:00.240 --> 00:04:04.278 align:start position:32% line:-2
+ユーザが 位置情報や
+プライバシーの設定を
+
+00:04:04.378 --> 00:04:06.280 align:start position:34% line:-1
+初期化したとします
+
+00:04:06.380 --> 00:04:12.786 align:start position:27% line:-2
+必ず それを尊重することが
+デベロッパとしての責任です
+
+00:04:13.020 --> 00:04:21.461 align:start position:14% line:-2
+権限の状態を反映するHealthKitを
+真実の情報源とするのが最善策です
+
+00:04:21.562 --> 00:04:24.565 align:start position:29% line:-1
+決してキャッシュに残さず
+
+00:04:24.665 --> 00:04:29.436 align:start position:18% line:-2
+アクセス可能なデータを
+常にHealthKitに尋ねましょう
+
+00:04:30.103 --> 00:04:33.941 align:start position:30% line:-2
+この考え方を
+３つのルールにしました
+
+00:04:34.508 --> 00:04:37.477 align:start position:27% line:-1
+プライバシーと権限を考慮し
+
+00:04:37.578 --> 00:04:42.716 align:start position:25% line:-2
+必要なことだけを 必要な時に
+そのつど尋ねること
+
+00:04:44.218 --> 00:04:47.487 align:start position:32% line:-1
+コードもシンプルです
+
+00:04:47.621 --> 00:04:50.657 align:start position:23% line:-2
+ワークアウトアプリケーションを
+例にして
+
+00:04:50.757 --> 00:04:54.094 align:start position:27% line:-2
+プライバシーと権限の処理を
+行ってみます
+
+00:04:54.228 --> 00:05:00.501 align:start position:27% line:-2
+まずワークアウトのタイプを
+共有するということを
+

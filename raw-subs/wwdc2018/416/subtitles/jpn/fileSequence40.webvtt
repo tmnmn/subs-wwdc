@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.399 --> 00:40:05.772 align:start position:23% line:-2
+仮想メモリ領域の
+CG画像のフルリストがあります
+
+00:40:05.873 --> 00:40:10.711 align:start position:23% line:-2
+下から２番目の行をクリックして
+移動させます
+
+00:40:10.811 --> 00:40:13.514 align:start position:27% line:-1
+バックトレースを見ましょう
+
+00:40:15.482 --> 00:40:17.351 align:start position:29% line:-1
+同じバックトレースですね
+
+00:40:17.451 --> 00:40:20.721 align:start position:32% line:-2
+同じコードパスが
+その領域にもあります
+
+00:40:20.988 --> 00:40:24.191 align:start position:25% line:-1
+いくつかの領域を見てみると―
+
+00:40:24.291 --> 00:40:26.727 align:start position:27% line:-1
+バックトレースは同じでした
+
+00:40:26.827 --> 00:40:31.665 align:start position:25% line:-2
+さて これで
+アプリケーションのどの部分が
+
+00:40:31.765 --> 00:40:36.236 align:start position:23% line:-2
+仮想メモリ領域を作成する原因と
+なるのかが分かりました
+
+00:40:36.603 --> 00:40:38.505 align:start position:34% line:-1
+どうしましょうか？
+
+00:40:38.605 --> 00:40:42.643 align:start position:20% line:-2
+Xcodeに戻り
+memgraphファイルを閉じます
+
+00:40:43.377 --> 00:40:48.082 align:start position:30% line:-2
+私が最初にしたいことは
+このコードの中の―
+
+00:40:48.348 --> 00:40:50.784 align:start position:36% line:-1
+フィルタを見ると
+
+00:40:52.219 --> 00:40:54.955 align:start position:20% line:-1
+apply関数があるのが分かります
+
+00:40:55.055 --> 00:40:57.391 align:start position:25% line:-1
+さらに何かが表示されています
+
+00:40:57.491 --> 00:41:01.962 align:start position:14% line:-2
+UIGraphicsBeginImage
+ContextWithOptionsや―
+

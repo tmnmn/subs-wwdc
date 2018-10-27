@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.536 --> 00:45:00.136 A:middle
+text drawing engine encounters a
+
+00:45:00.136 --> 00:45:01.956 A:middle
+range of attributed strings that
+
+00:45:02.006 --> 00:45:02.956 A:middle
+doesn't have a foreground
+
+00:45:02.956 --> 00:45:04.956 A:middle
+attribute, it defaults to black.
+
+00:45:04.956 --> 00:45:06.596 A:middle
+And this is what it has always
+
+00:45:06.596 --> 00:45:08.006 A:middle
+defaulted to and it's going to
+
+00:45:08.006 --> 00:45:09.296 A:middle
+continue to be the default for
+
+00:45:09.296 --> 00:45:10.016 A:middle
+compatibility.
+
+00:45:11.036 --> 00:45:12.596 A:middle
+So, one way to fix this is to
+
+00:45:12.596 --> 00:45:13.586 A:middle
+set a foreground color
+
+00:45:13.586 --> 00:45:15.726 A:middle
+explicitly to one of our dynamic
+
+00:45:15.726 --> 00:45:17.436 A:middle
+system colors, and that's going
+
+00:45:17.436 --> 00:45:18.236 A:middle
+to do what you expect.
+
+00:45:19.616 --> 00:45:21.596 A:middle
+But a better alternative is that
+
+00:45:21.596 --> 00:45:22.596 A:middle
+if you're doing manual
+
+00:45:22.596 --> 00:45:24.196 A:middle
+attributed string drawing, you
+
+00:45:24.196 --> 00:45:25.776 A:middle
+should switch to a Cocoa
+
+00:45:25.776 --> 00:45:27.256 A:middle
+control, like an NSTextField,
+
+00:45:27.536 --> 00:45:28.426 A:middle
+which does this for you
+
+00:45:28.426 --> 00:45:30.876 A:middle
+automatically, or, if you're
+
+00:45:30.876 --> 00:45:32.386 A:middle
+manipulating the storage of a
+
+00:45:32.386 --> 00:45:36.376 A:middle
+textView, we have new API called
+
+00:45:36.376 --> 00:45:38.256 A:middle
+performValidatedReplacement on
+
+00:45:38.256 --> 00:45:40.256 A:middle
+textView that does a nice thing
+
+00:45:40.256 --> 00:45:40.636 A:middle
+for you.
+
+00:45:40.966 --> 00:45:42.846 A:middle
+If you go ahead and replace a
+
+00:45:43.026 --> 00:45:45.336 A:middle
+string with an attributed string
+
+00:45:45.336 --> 00:45:47.976 A:middle
+in your textView, it will fill
+
+00:45:47.976 --> 00:45:50.336 A:middle
+in any missing attributes with
+
+00:45:50.406 --> 00:45:51.456 A:middle
+the typing attributes from the
+
+00:45:51.456 --> 00:45:54.666 A:middle
+textView, so that way you can go
+
+00:45:54.666 --> 00:45:55.776 A:middle
+ahead and specify your new
+
+00:45:55.776 --> 00:45:56.936 A:middle
+attributed string without having
+
+00:45:57.036 --> 00:45:58.776 A:middle
+to manually merge all your
+
+00:45:58.776 --> 00:46:00.000 A:middle
+attributes together.
+

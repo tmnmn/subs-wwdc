@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:59.866 --> 00:51:00.976 A:middle
+Vehicle Drivable.
+
+00:51:01.266 --> 00:51:02.956 A:middle
+Has to work for all of the
+
+00:51:02.956 --> 00:51:05.146 A:middle
+subclasses of Vehicle now and
+
+00:51:05.186 --> 00:51:06.416 A:middle
+anyone that comes up with it
+
+00:51:06.416 --> 00:51:06.766 A:middle
+later.
+
+00:51:07.886 --> 00:51:09.916 A:middle
+Most of the time, that just
+
+00:51:09.916 --> 00:51:10.276 A:middle
+works.
+
+00:51:11.256 --> 00:51:12.586 A:middle
+However, there are some cases
+
+00:51:12.586 --> 00:51:13.976 A:middle
+where this actually adds new
+
+00:51:13.976 --> 00:51:16.086 A:middle
+requirements on the subclasses.
+
+00:51:16.726 --> 00:51:19.096 A:middle
+The most common one is when
+
+00:51:19.096 --> 00:51:20.266 A:middle
+dealing with initializer
+
+00:51:20.266 --> 00:51:20.996 A:middle
+requirements.
+
+00:51:22.216 --> 00:51:22.886 A:middle
+So, if you've looked at the
+
+00:51:22.886 --> 00:51:25.316 A:middle
+decodable protocol, it has one
+
+00:51:25.316 --> 00:51:26.286 A:middle
+interesting requirement.
+
+00:51:26.286 --> 00:51:27.606 A:middle
+Which is the initializer
+
+00:51:27.606 --> 00:51:29.596 A:middle
+requirement to create a new
+
+00:51:29.596 --> 00:51:31.036 A:middle
+instance of the conforming type
+
+00:51:31.616 --> 00:51:32.606 A:middle
+from a decoder.
+
+00:51:33.236 --> 00:51:35.156 A:middle
+How do we use this?
+
+00:51:35.506 --> 00:51:36.756 A:middle
+Well, let's go add a convenience
+
+00:51:36.756 --> 00:51:37.746 A:middle
+method to the decodable
+
+00:51:37.746 --> 00:51:38.246 A:middle
+protocol.
+
+00:51:38.716 --> 00:51:40.366 A:middle
+It's a static method decode that
+
+00:51:40.516 --> 00:51:41.646 A:middle
+creates a new instance from a
+
+00:51:41.646 --> 00:51:43.086 A:middle
+decoder, essentially a wrapper
+
+00:51:43.086 --> 00:51:44.166 A:middle
+for the initializer, making it
+
+00:51:44.166 --> 00:51:44.766 A:middle
+easier to use.
+
+00:51:45.976 --> 00:51:47.606 A:middle
+And, there's two interesting
+
+00:51:47.606 --> 00:51:49.376 A:middle
+things to notice about this
+
+00:51:49.376 --> 00:51:50.516 A:middle
+particular method.
+
+00:51:50.856 --> 00:51:52.776 A:middle
+First, is it returns Self with a
+
+00:51:52.776 --> 00:51:53.456 A:middle
+capital S.
+
+00:51:53.456 --> 00:51:54.736 A:middle
+Remember this is the conforming
+
+00:51:54.766 --> 00:51:55.036 A:middle
+type.
+
+00:51:55.436 --> 00:51:56.856 A:middle
+It's the same type that you're
+
+00:51:56.856 --> 00:51:58.526 A:middle
+calling the static method on.
+

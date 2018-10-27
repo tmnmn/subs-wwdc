@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.906 --> 00:14:00.686 A:middle
+In addition to vector and matrix
+
+00:14:00.686 --> 00:14:03.696 A:middle
+objects and allowing you to
+
+00:14:03.696 --> 00:14:06.016 A:middle
+perform arithmetic operations on
+
+00:14:06.016 --> 00:14:06.636 A:middle
+these objects.
+
+00:14:07.236 --> 00:14:09.896 A:middle
+It has extensions.
+
+00:14:09.896 --> 00:14:11.886 A:middle
+So for instance, dot products
+
+00:14:12.766 --> 00:14:13.826 A:middle
+and clamp.
+
+00:14:14.286 --> 00:14:15.176 A:middle
+It also has support for the
+
+00:14:15.176 --> 00:14:16.346 A:middle
+transcendental functions, so for
+
+00:14:16.346 --> 00:14:20.096 A:middle
+instance sine and cosine as well
+
+00:14:20.096 --> 00:14:20.816 A:middle
+as quaternions.
+
+00:14:21.536 --> 00:14:23.116 A:middle
+Quaternions are very useful for
+
+00:14:23.116 --> 00:14:24.416 A:middle
+representing rotations in three
+
+00:14:24.416 --> 00:14:25.996 A:middle
+dimensions, and I actually want
+
+00:14:25.996 --> 00:14:27.076 A:middle
+to talk a little bit more about
+
+00:14:27.116 --> 00:14:27.346 A:middle
+those.
+
+00:14:27.346 --> 00:14:30.836 A:middle
+So I'm going to walk you through
+
+00:14:30.946 --> 00:14:31.856 A:middle
+a coding example.
+
+00:14:32.376 --> 00:14:34.666 A:middle
+There's quite a bit to unpack
+
+00:14:34.666 --> 00:14:34.836 A:middle
+here.
+
+00:14:35.416 --> 00:14:36.566 A:middle
+So we're going to start on the
+
+00:14:36.566 --> 00:14:36.826 A:middle
+right.
+
+00:14:37.596 --> 00:14:38.416 A:middle
+We have a unit sphere.
+
+00:14:38.486 --> 00:14:39.696 A:middle
+That's what this gray sphere is.
+
+00:14:39.956 --> 00:14:41.526 A:middle
+And you'll notice this red dot.
+
+00:14:42.136 --> 00:14:44.206 A:middle
+And that's actually the tip of
+
+00:14:44.206 --> 00:14:44.686 A:middle
+this vector.
+
+00:14:45.976 --> 00:14:47.576 A:middle
+We've declared a simd float3
+
+00:14:47.576 --> 00:14:47.986 A:middle
+vector.
+
+00:14:48.166 --> 00:14:49.656 A:middle
+We've set the x and y components
+
+00:14:49.656 --> 00:14:51.576 A:middle
+to 0 and the z component to 1.
+
+00:14:52.176 --> 00:14:53.156 A:middle
+So it's coming out at us.
+
+00:14:53.656 --> 00:14:55.696 A:middle
+And that red dot is represented
+
+00:14:55.696 --> 00:14:56.946 A:middle
+by the tip of that vector.
+
+00:14:58.926 --> 00:14:59.796 A:middle
+We're now going to perform a
+
+00:14:59.796 --> 00:15:01.406 A:middle
+rotation on this vector using a
+

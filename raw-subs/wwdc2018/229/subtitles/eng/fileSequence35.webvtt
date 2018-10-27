@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:01.246 --> 00:35:02.336 A:middle
+So now that we know those
+
+00:35:02.456 --> 00:35:04.706 A:middle
+details, we can make, now we can
+
+00:35:04.706 --> 00:35:06.176 A:middle
+actually make this a little bit
+
+00:35:06.176 --> 00:35:06.366 A:middle
+better.
+
+00:35:06.466 --> 00:35:07.526 A:middle
+Let's just bridge once.
+
+00:35:07.836 --> 00:35:11.116 A:middle
+And let's remeasure our code and
+
+00:35:11.116 --> 00:35:12.256 A:middle
+see that indeed we've improved
+
+00:35:12.256 --> 00:35:13.126 A:middle
+our performance by half.
+
+00:35:13.696 --> 00:35:14.996 A:middle
+But it turns out this year we
+
+00:35:14.996 --> 00:35:15.676 A:middle
+can do a little better.
+
+00:35:16.676 --> 00:35:18.286 A:middle
+Oh, and also, now we're not
+
+00:35:18.286 --> 00:35:19.076 A:middle
+bridging where we do that.
+
+00:35:19.546 --> 00:35:20.626 A:middle
+But this year we can do a little
+
+00:35:20.626 --> 00:35:21.036 A:middle
+bit better.
+
+00:35:21.616 --> 00:35:23.126 A:middle
+This year, if we actually
+
+00:35:23.266 --> 00:35:24.256 A:middle
+[inaudible] to an NSString when
+
+00:35:24.256 --> 00:35:25.436 A:middle
+we ask for the text.string's
+
+00:35:25.466 --> 00:35:26.356 A:middle
+property, when we get the
+
+00:35:26.356 --> 00:35:28.246 A:middle
+variable out, no bridging is
+
+00:35:28.246 --> 00:35:29.176 A:middle
+actually going to occur.
+
+00:35:30.656 --> 00:35:32.486 A:middle
+And further, by doing so, now
+
+00:35:32.486 --> 00:35:35.216 A:middle
+that string is an NSString, when
+
+00:35:35.216 --> 00:35:36.356 A:middle
+we call the range of property,
+
+00:35:36.436 --> 00:35:37.406 A:middle
+we're actually going to get an
+
+00:35:37.406 --> 00:35:39.996 A:middle
+NSRange out of it automatically.
+
+00:35:39.996 --> 00:35:40.956 A:middle
+We won't need to do any of the
+
+00:35:40.956 --> 00:35:42.116 A:middle
+range conversion between Swift
+
+00:35:42.116 --> 00:35:44.896 A:middle
+native types and the NS ranges,
+
+00:35:44.896 --> 00:35:46.466 A:middle
+which is pretty excellent.
+
+00:35:46.646 --> 00:35:47.526 A:middle
+So let's measure this code and
+
+00:35:47.526 --> 00:35:48.966 A:middle
+see how it is, and sure enough,
+
+00:35:49.206 --> 00:35:49.936 A:middle
+this looks pretty good.
+
+00:35:50.156 --> 00:35:51.226 A:middle
+Much, much faster than the, you
+
+00:35:51.226 --> 00:35:52.816 A:middle
+know, almost 800 milliseconds
+
+00:35:52.816 --> 00:35:53.516 A:middle
+that we were consuming
+
+00:35:53.516 --> 00:35:54.126 A:middle
+previously.
+
+00:35:54.346 --> 00:35:56.396 A:middle
+However, I do want to point out
+
+00:35:56.396 --> 00:35:57.366 A:middle
+that we're still bridging here.
+
+00:35:57.656 --> 00:35:58.896 A:middle
+And it's a teeny, tiny bridge,
+
+00:35:59.616 --> 00:36:00.346 A:middle
+but we're still bridging.
+

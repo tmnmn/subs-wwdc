@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.526 --> 00:27:00.476 A:middle
+And the fan service has
+
+00:27:00.476 --> 00:27:02.296 A:middle
+characteristics like power,
+
+00:27:02.586 --> 00:27:04.176 A:middle
+rotation speed, and rotation
+
+00:27:04.176 --> 00:27:04.676 A:middle
+direction.
+
+00:27:05.156 --> 00:27:07.606 A:middle
+Now, some of these
+
+00:27:07.606 --> 00:27:08.906 A:middle
+characteristics are optional.
+
+00:27:09.736 --> 00:27:11.206 A:middle
+As you can imagine, not all
+
+00:27:11.206 --> 00:27:12.836 A:middle
+lights support saturation and
+
+00:27:12.836 --> 00:27:13.146 A:middle
+color.
+
+00:27:13.726 --> 00:27:17.116 A:middle
+But the HomeKit APIs expose
+
+00:27:17.116 --> 00:27:19.306 A:middle
+these as a way to elevate these
+
+00:27:19.306 --> 00:27:20.446 A:middle
+services to your user.
+
+00:27:21.756 --> 00:27:22.746 A:middle
+So we look back.
+
+00:27:22.746 --> 00:27:25.936 A:middle
+We have the ceiling fan fixture,
+
+00:27:25.936 --> 00:27:27.206 A:middle
+which is the HMAccessory.
+
+00:27:27.776 --> 00:27:31.166 A:middle
+We have the light service and
+
+00:27:31.166 --> 00:27:32.576 A:middle
+the fan service, which are the
+
+00:27:32.576 --> 00:27:33.366 A:middle
+HMServices.
+
+00:27:34.476 --> 00:27:35.896 A:middle
+And we have the corresponding
+
+00:27:35.896 --> 00:27:37.316 A:middle
+characteristics, which are the
+
+00:27:37.316 --> 00:27:38.336 A:middle
+HMCharacteristics.
+
+00:27:38.916 --> 00:27:43.086 A:middle
+So we look, if you look at the
+
+00:27:43.086 --> 00:27:45.866 A:middle
+API for some of this, you could
+
+00:27:45.866 --> 00:27:48.326 A:middle
+see we have HMAccessory, and
+
+00:27:48.326 --> 00:27:49.506 A:middle
+this allows you to learn about
+
+00:27:49.506 --> 00:27:50.206 A:middle
+the accessory that you're
+
+00:27:50.206 --> 00:27:50.726 A:middle
+controlling.
+
+00:27:51.666 --> 00:27:53.966 A:middle
+So this exposes properties like
+
+00:27:53.966 --> 00:27:57.116 A:middle
+the name, the list of services
+
+00:27:57.116 --> 00:28:00.386 A:middle
+it supports, and the firmware
+

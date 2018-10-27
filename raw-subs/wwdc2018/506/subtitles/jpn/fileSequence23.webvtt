@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.578 --> 00:23:01.949 align:start position:23% line:-2
+先ほどと同じサーチを実行すると
+カタログ検索結果とともに
+
+00:23:02.049 --> 00:23:06.186 align:start position:18% line:-2
+iCloudミュージックライブラリも
+表示されます
+
+00:23:07.588 --> 00:23:09.122 align:start position:36% line:-1
+クリックすると―
+
+00:23:10.257 --> 00:23:13.293 align:start position:25% line:-2
+クラウドライブラリアイテムが
+再生されます
+
+00:23:13.594 --> 00:23:17.998 align:start position:43% line:-1
+(音楽)
+
+00:23:18.499 --> 00:23:22.236 align:start position:27% line:-2
+「再生中」スクリーンまたは
+下部情報欄を見ると
+
+00:23:22.336 --> 00:23:28.141 align:start position:23% line:-2
+楽曲の進行を示すインジケータが
+欠落しているのがわかります
+
+00:23:29.309 --> 00:23:31.211 align:start position:20% line:-1
+MusicKit JSが供給する―
+
+00:23:31.311 --> 00:23:35.349 align:start position:2% line:-2
+“playbackProgressDidChange”
+イベントを待機することにより
+
+00:23:35.449 --> 00:23:37.518 align:start position:25% line:-1
+そのような機能を加えられます
+
+00:23:42.289 --> 00:23:44.992 align:start position:20% line:-2
+MusicKitインスタンスに対し
+イベントリスナーを加えて
+
+00:23:45.292 --> 00:23:48.462 align:start position:2% line:-2
+“playbackProgressDidChange”
+を待機させ イベントが生じると
+
+00:23:48.595 --> 00:23:50.964 align:start position:34% line:-2
+カスタムレンダラが
+進行をレンダします
+
+00:23:54.635 --> 00:23:56.803 align:start position:29% line:-1
+またAリストを検索します
+
+00:23:58.238 --> 00:24:02.609 align:start position:21% line:-2
+今度は楽曲を再生すると
+カスタム進行バーがレンダされます
+

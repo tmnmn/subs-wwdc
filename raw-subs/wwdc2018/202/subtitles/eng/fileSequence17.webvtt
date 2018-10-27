@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.896 --> 00:17:00.086 A:middle
+that you get out at the end.
+
+00:17:00.606 --> 00:17:02.516 A:middle
+So in cases where you actually
+
+00:17:02.516 --> 00:17:03.866 A:middle
+know that the automatic behavior
+
+00:17:03.866 --> 00:17:05.675 A:middle
+is not what you want, from Image
+
+00:17:05.675 --> 00:17:07.146 A:middle
+Renderer, you can specify the
+
+00:17:07.146 --> 00:17:09.106 A:middle
+specific backing store style
+
+00:17:09.106 --> 00:17:10.636 A:middle
+that you want, for example using
+
+00:17:10.636 --> 00:17:12.386 A:middle
+the new Range API to specify
+
+00:17:12.715 --> 00:17:13.915 A:middle
+specifically that you want an
+
+00:17:13.915 --> 00:17:15.306 A:middle
+extended-range image.
+
+00:17:15.866 --> 00:17:17.626 A:middle
+Now you can learn all about this
+
+00:17:18.006 --> 00:17:20.306 A:middle
+and many more techniques around
+
+00:17:20.306 --> 00:17:22.205 A:middle
+UI Image in the Images and
+
+00:17:22.205 --> 00:17:23.796 A:middle
+Graphics Best Practices Session
+
+00:17:23.796 --> 00:17:24.455 A:middle
+later this week.
+
+00:17:24.915 --> 00:17:27.205 A:middle
+So that's our second top for
+
+00:17:27.205 --> 00:17:27.656 A:middle
+performance.
+
+00:17:28.425 --> 00:17:30.266 A:middle
+Next, let's move on to Auto
+
+00:17:30.266 --> 00:17:30.636 A:middle
+Layout.
+
+00:17:31.756 --> 00:17:34.766 A:middle
+Now Auto Layout in iOS 10 has
+
+00:17:34.986 --> 00:17:36.386 A:middle
+some really great improvements.
+
+00:17:36.866 --> 00:17:37.946 A:middle
+The team has been working
+
+00:17:37.946 --> 00:17:40.076 A:middle
+incredibly hard to optimize Auto
+
+00:17:40.076 --> 00:17:41.586 A:middle
+Layout for your apps as much as
+
+00:17:41.626 --> 00:17:42.076 A:middle
+possible.
+
+00:17:42.676 --> 00:17:44.726 A:middle
+So you'll find that Auto Layout
+
+00:17:44.726 --> 00:17:46.856 A:middle
+is now faster by default in iOS
+
+00:17:46.856 --> 00:17:47.146 A:middle
+12.
+
+00:17:47.556 --> 00:17:48.306 A:middle
+We'll talk about a number of
+
+00:17:48.306 --> 00:17:49.096 A:middle
+ways that's the case.
+
+00:17:49.996 --> 00:17:52.016 A:middle
+But while they were profiling
+
+00:17:52.016 --> 00:17:53.406 A:middle
+and optimizing Auto Layout, they
+
+00:17:53.406 --> 00:17:54.866 A:middle
+also were looking across the
+
+00:17:54.946 --> 00:17:56.476 A:middle
+system at many of our own apps
+
+00:17:56.476 --> 00:17:57.896 A:middle
+and how they were using Auto
+
+00:17:57.896 --> 00:17:59.686 A:middle
+Layout and they found a number
+
+00:17:59.686 --> 00:18:00.726 A:middle
+of cases where there were some
+

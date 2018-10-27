@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.026 --> 00:17:00.626 A:middle
+in jump because we don't want to
+
+00:17:00.626 --> 00:17:02.016 A:middle
+modify did reach selected height
+
+00:17:02.016 --> 00:17:02.396 A:middle
+anymore.
+
+00:17:02.666 --> 00:17:03.496 A:middle
+And now, when I tap the
+
+00:17:03.496 --> 00:17:04.536 A:middle
+astronaut, he performs a
+
+00:17:04.536 --> 00:17:06.296 A:middle
+successful jump, and we can see
+
+00:17:06.296 --> 00:17:07.376 A:middle
+that all the labels update
+
+00:17:07.376 --> 00:17:08.766 A:middle
+properly, so that bug looks
+
+00:17:08.766 --> 00:17:09.836 A:middle
+great to me.
+
+00:17:10.955 --> 00:17:12.866 A:middle
+So let's return and check that
+
+00:17:12.866 --> 00:17:13.175 A:middle
+one off.
+
+00:17:14.185 --> 00:17:14.556 A:middle
+All right.
+
+00:17:14.646 --> 00:17:16.215 A:middle
+The next bug is a problem with
+
+00:17:16.215 --> 00:17:17.256 A:middle
+the end-of-game state.
+
+00:17:17.576 --> 00:17:19.876 A:middle
+So the game is meant to end
+
+00:17:19.876 --> 00:17:21.096 A:middle
+after 10 attempts, so I could
+
+00:17:21.096 --> 00:17:22.606 A:middle
+tap the astronaut, wait for the
+
+00:17:22.606 --> 00:17:24.096 A:middle
+animations to play out, and
+
+00:17:24.096 --> 00:17:25.586 A:middle
+progress through the game to get
+
+00:17:25.586 --> 00:17:26.576 A:middle
+through that state to try and
+
+00:17:26.576 --> 00:17:27.185 A:middle
+reproduce it.
+
+00:17:27.626 --> 00:17:28.676 A:middle
+But the animations take some
+
+00:17:28.676 --> 00:17:30.316 A:middle
+time, and I may need to do this
+
+00:17:30.316 --> 00:17:32.316 A:middle
+numerous times while I test and
+
+00:17:32.316 --> 00:17:34.336 A:middle
+verify my fixes, so I'd like to
+
+00:17:34.576 --> 00:17:36.156 A:middle
+skip all the jump animations.
+
+00:17:36.546 --> 00:17:37.796 A:middle
+So let me show you how I'll do
+
+00:17:37.796 --> 00:17:37.906 A:middle
+that.
+
+00:17:37.906 --> 00:17:40.556 A:middle
+I'm going to navigate to update
+
+00:17:40.596 --> 00:17:43.006 A:middle
+UI for jump succeeded, and we
+
+00:17:43.006 --> 00:17:45.596 A:middle
+can see this function modifies
+
+00:17:45.596 --> 00:17:47.316 A:middle
+some colors and then calls jump
+
+00:17:47.376 --> 00:17:48.596 A:middle
+astronaut animated true.
+
+00:17:48.666 --> 00:17:50.066 A:middle
+So it looks like I just need to
+
+00:17:50.066 --> 00:17:51.286 A:middle
+call jump astronaut animated
+
+00:17:51.286 --> 00:17:51.736 A:middle
+false.
+
+00:17:52.166 --> 00:17:53.026 A:middle
+I could change the code and
+
+00:17:53.026 --> 00:17:54.106 A:middle
+recompile, but like I said
+
+00:17:54.106 --> 00:17:55.546 A:middle
+before, I don't like to change
+
+00:17:55.546 --> 00:17:56.826 A:middle
+my code for debugging purposes
+
+00:17:56.826 --> 00:17:58.446 A:middle
+if I can avoid it, so let me
+
+00:17:58.446 --> 00:17:59.386 A:middle
+show you the technique I'll use
+
+00:17:59.386 --> 00:17:59.766 A:middle
+instead.
+

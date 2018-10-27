@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.976 --> 00:18:02.146 A:middle
+If you access an array and your
+
+00:18:02.146 --> 00:18:04.156 A:middle
+index is out-of-bounds the Swift
+
+00:18:04.156 --> 00:18:06.096 A:middle
+runtime will fail, interim check
+
+00:18:06.096 --> 00:18:07.866 A:middle
+it will fail a precondition and
+
+00:18:07.866 --> 00:18:08.826 A:middle
+halt the process.
+
+00:18:10.076 --> 00:18:12.126 A:middle
+Swift arithmetic overflow also
+
+00:18:12.126 --> 00:18:14.106 A:middle
+contains assertions, if you're
+
+00:18:14.206 --> 00:18:15.866 A:middle
+adding two numbers together and
+
+00:18:15.866 --> 00:18:17.256 A:middle
+the result is too large for an
+
+00:18:17.256 --> 00:18:18.826 A:middle
+integer variable there is a
+
+00:18:18.826 --> 00:18:20.256 A:middle
+precondition for that, the
+
+00:18:20.256 --> 00:18:22.396 A:middle
+process will halt.
+
+00:18:22.906 --> 00:18:24.416 A:middle
+Uncaught exceptions are
+
+00:18:24.416 --> 00:18:25.936 A:middle
+frequently caused by
+
+00:18:26.586 --> 00:18:28.026 A:middle
+preconditions in the code.
+
+00:18:28.706 --> 00:18:30.216 A:middle
+There are many error checks
+
+00:18:30.216 --> 00:18:32.386 A:middle
+where if the precondition fails
+
+00:18:32.386 --> 00:18:34.446 A:middle
+it will throw an exception and
+
+00:18:34.446 --> 00:18:36.036 A:middle
+if the exception is not caught
+
+00:18:36.586 --> 00:18:38.046 A:middle
+the uncaught exception will
+
+00:18:38.046 --> 00:18:39.506 A:middle
+cause a crash log.
+
+00:18:39.706 --> 00:18:41.926 A:middle
+And of course you can write
+
+00:18:42.256 --> 00:18:43.886 A:middle
+assertions and preconditions in
+
+00:18:43.886 --> 00:18:46.336 A:middle
+your own code if you have errors
+
+00:18:46.576 --> 00:18:47.696 A:middle
+that you want to crash the
+
+00:18:47.696 --> 00:18:49.736 A:middle
+process and generate a crash log
+
+00:18:49.736 --> 00:18:50.556 A:middle
+in response.
+
+00:18:52.986 --> 00:18:54.716 A:middle
+Another example of a crash log
+
+00:18:54.756 --> 00:18:57.046 A:middle
+is a case where the operating
+
+00:18:57.046 --> 00:18:59.416 A:middle
+system kills your process from
+
+00:18:59.446 --> 00:19:00.146 A:middle
+the outside.
+

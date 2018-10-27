@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:56.890 --> 00:06:00.327 align:start position:34% line:-2
+しかし方法は明確で
+制約はないです
+
+00:06:00.894 --> 00:06:05.098 align:start position:27% line:-2
+テクスチャ バッファ
+シェーダなどもスレッド間で
+
+00:06:05.199 --> 00:06:08.302 align:start position:27% line:-1
+安全に効率的に使用できます
+
+00:06:08.402 --> 00:06:12.372 align:start position:27% line:-2
+またMetalは無効状態を
+回避するための
+
+00:06:12.472 --> 00:06:15.876 align:start position:30% line:-2
+高価な内部ロック構成を
+必要としません
+
+00:06:17.678 --> 00:06:23.016 align:start position:25% line:-2
+処理モデルがソフトと
+GPUの関係を反映しています
+
+00:06:23.116 --> 00:06:26.019 align:start position:27% line:-1
+OpenGLの隠れた動作は
+
+00:06:26.119 --> 00:06:29.523 align:start position:23% line:-1
+Metalでは明示的になります
+
+00:06:30.791 --> 00:06:34.728 align:start position:25% line:-1
+これによりGPU活用に関して
+
+00:06:34.828 --> 00:06:36.363 align:start position:32% line:-1
+懸命な判断が下せます
+
+00:06:36.797 --> 00:06:40.901 align:start position:25% line:-2
+アプリケーションとGPU間の
+ソフトも減ります
+
+00:06:41.068 --> 00:06:44.171 align:start position:25% line:-2
+Metalコールを直接受ける
+GPUドライバですが
+
+00:06:44.271 --> 00:06:48.408 align:start position:25% line:-2
+APIコールの
+GPUコマンドへの変換処理も
+
+00:06:48.509 --> 00:06:49.843 align:start position:34% line:-1
+少ない方がよいです
+
+00:06:51.011 --> 00:06:53.146 align:start position:38% line:-1
+順に見ましょう
+
+00:06:54.081 --> 00:06:57.651 align:start position:20% line:-1
+GLコールはすべてOpenGLです
+
+00:06:57.751 --> 00:07:00.254 align:start position:30% line:-1
+コンテキストで実行され
+

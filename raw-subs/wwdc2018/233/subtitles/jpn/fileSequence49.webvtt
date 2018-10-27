@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:54.902 --> 00:49:00.073 align:start position:25% line:-2
+次のデバッグでは
+ぜひブレークポイントの使用を
+
+00:49:01.441 --> 00:49:04.912 align:start position:20% line:-2
+しかし時にはビューや
+View Controllerや―
+
+00:49:05.245 --> 00:49:07.448 align:start position:32% line:-1
+状態の問題ではなく―
+
+00:49:07.948 --> 00:49:11.285 align:start position:34% line:-2
+メモリ管理の
+問題だったりします
+
+00:49:12.219 --> 00:49:14.521 align:start position:27% line:-1
+これに使えるツールはある？
+
+00:49:15.322 --> 00:49:17.357 align:start position:34% line:-2
+よくぞ聞いてくれた
+あるとも
+
+00:49:17.458 --> 00:49:22.062 align:start position:21% line:-2
+Xcode内蔵のすばらしいツール
+メモリデバッガです
+
+00:49:23.464 --> 00:49:28.102 align:start position:25% line:-2
+アプリケーションの
+メモリの使い方を可視化します
+
+00:49:29.469 --> 00:49:33.240 align:start position:9% line:-2
+リークしているView Controllerを
+先日 デバッグしました
+
+00:49:33.740 --> 00:49:36.810 align:start position:29% line:-2
+ブロックが保持していたと
+ここで分かりました
+
+00:49:37.678 --> 00:49:39.646 align:start position:12% line:-2
+Malloc stack loggingを
+有効にして―
+
+00:49:39.747 --> 00:49:44.318 align:start position:23% line:-2
+ブロックがいつ割り当てられたか
+バックトレースを確認できた
+
+00:49:45.886 --> 00:49:50.591 align:start position:11% line:-2
+このView Controllerが生成した
+ブロックでした
+
+00:49:51.225 --> 00:49:56.296 align:start position:11% line:-2
+つまり このView Controllerも
+このブロックを保持しています
+
+00:49:57.064 --> 00:49:58.599 align:start position:39% line:-1
+循環参照です
+
+00:49:59.533 --> 00:50:00.467 align:start position:41% line:-1
+すばらしい
+

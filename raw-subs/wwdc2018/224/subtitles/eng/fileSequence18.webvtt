@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.556 --> 00:18:02.046 A:middle
+In this case, we don't want that
+
+00:18:02.046 --> 00:18:03.406 A:middle
+data to manifest in the user
+
+00:18:03.406 --> 00:18:05.716 A:middle
+interface or cause changes to it
+
+00:18:05.716 --> 00:18:06.776 A:middle
+because none of the change will
+
+00:18:06.776 --> 00:18:07.996 A:middle
+be visible to the user.
+
+00:18:08.526 --> 00:18:09.876 A:middle
+So, we can actually filter out
+
+00:18:09.876 --> 00:18:11.516 A:middle
+these updates by using history
+
+00:18:11.516 --> 00:18:11.976 A:middle
+tracking.
+
+00:18:12.786 --> 00:18:14.276 A:middle
+Persistent history tracking was
+
+00:18:14.276 --> 00:18:17.456 A:middle
+new in iOS 11 and macOS 10.13.
+
+00:18:18.206 --> 00:18:19.996 A:middle
+We introduced it in our session,
+
+00:18:19.996 --> 00:18:22.036 A:middle
+What's New in Core Data, last
+
+00:18:22.116 --> 00:18:23.526 A:middle
+year at WWDC, and for more
+
+00:18:23.526 --> 00:18:24.866 A:middle
+information about how it works
+
+00:18:24.866 --> 00:18:26.626 A:middle
+and what the underlying features
+
+00:18:26.626 --> 00:18:27.866 A:middle
+are of it, you can use that
+
+00:18:28.516 --> 00:18:29.566 A:middle
+session as a reference.
+
+00:18:31.966 --> 00:18:33.406 A:middle
+Persistent history tracking is a
+
+00:18:33.406 --> 00:18:35.526 A:middle
+great way to get a persistent
+
+00:18:35.526 --> 00:18:37.086 A:middle
+record of each transaction that
+
+00:18:37.086 --> 00:18:38.926 A:middle
+connects to the database and
+
+00:18:38.926 --> 00:18:40.026 A:middle
+this is useful to us for a
+
+00:18:40.026 --> 00:18:41.186 A:middle
+couple of different reasons.
+
+00:18:41.756 --> 00:18:43.506 A:middle
+For the purposes of this talk,
+
+00:18:43.506 --> 00:18:45.626 A:middle
+though, we'll be considering
+
+00:18:45.796 --> 00:18:47.926 A:middle
+NSPersistentHistoryChange, which
+
+00:18:48.576 --> 00:18:51.276 A:middle
+gives us a changedObjectID and a
+
+00:18:51.276 --> 00:18:52.546 A:middle
+set of updatedProperties.
+
+00:18:53.036 --> 00:18:53.176 A:middle
+And
+
+00:18:53.296 --> 00:18:55.036 A:middle
+NSPersistentHistoryTransaction
+
+00:18:55.686 --> 00:18:57.246 A:middle
+which gives us a set of changes
+
+00:18:57.426 --> 00:18:59.136 A:middle
+and an objectIDNotification.
+

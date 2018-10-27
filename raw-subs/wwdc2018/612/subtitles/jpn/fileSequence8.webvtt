@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.445 --> 00:08:01.782 align:start position:27% line:-1
+目標は毎秒60フレームです
+
+00:08:03.350 --> 00:08:07.554 align:start position:29% line:-2
+マイクロスタッタリングの
+原因は他にもあります
+
+00:08:08.689 --> 00:08:11.925 align:start position:36% line:-2
+フレームレートを
+低くはしていても
+
+00:08:12.359 --> 00:08:18.799 align:start position:21% line:-2
+usleepを使っているゲームが
+数多くありました
+
+00:08:19.333 --> 00:08:23.637 align:start position:29% line:-2
+これはiOSでは
+非常によくない習慣なので
+
+00:08:23.804 --> 00:08:28.575 align:start position:32% line:-2
+後ほど修正する方法を
+お話ししましょう
+
+00:08:29.376 --> 00:08:34.414 align:start position:29% line:-2
+マイクロスタッタリングが
+発生する時―
+
+00:08:34.515 --> 00:08:38.519 align:start position:29% line:-2
+システム内で
+何が起きているのでしょう
+
+00:08:39.052 --> 00:08:43.289 align:start position:30% line:-2
+全てのコンポーネントの
+タイムラインを見ます
+
+00:08:43.957 --> 00:08:47.461 align:start position:29% line:-2
+通常どおり
+レンダリングを開始すると
+
+00:08:47.728 --> 00:08:51.398 align:start position:36% line:-2
+３つのバッファが
+確認できます
+
+00:08:51.498 --> 00:08:56.069 align:start position:29% line:-2
+全てのdrawableは
+文字と色で表されています
+
+00:08:56.670 --> 00:08:58.805 align:start position:36% line:-1
+前提を説明します
+
+00:08:59.006 --> 00:09:01.074 align:start position:30% line:-1
+Ｂのレンダリング時間は
+

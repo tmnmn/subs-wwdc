@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.456 --> 00:07:01.966 A:middle
+Well, this issue's known as
+
+00:07:01.966 --> 00:07:04.206 A:middle
+micro stuttering or inconsistent
+
+00:07:04.206 --> 00:07:04.756 A:middle
+frame pace.
+
+00:07:06.166 --> 00:07:08.896 A:middle
+It occurs when the frame time is
+
+00:07:08.896 --> 00:07:10.206 A:middle
+higher than the display refresh
+
+00:07:10.206 --> 00:07:10.646 A:middle
+interval.
+
+00:07:11.356 --> 00:07:14.096 A:middle
+For example, our game may take
+
+00:07:14.276 --> 00:07:16.726 A:middle
+25 milliseconds to render or 40
+
+00:07:16.726 --> 00:07:17.606 A:middle
+frames per second.
+
+00:07:18.056 --> 00:07:19.796 A:middle
+And the display may refresh at
+
+00:07:19.866 --> 00:07:22.646 A:middle
+16.6 millisecond or 60 frames
+
+00:07:22.646 --> 00:07:23.226 A:middle
+per second.
+
+00:07:23.616 --> 00:07:24.726 A:middle
+Same as the video we've just
+
+00:07:24.776 --> 00:07:25.026 A:middle
+seen.
+
+00:07:25.536 --> 00:07:26.976 A:middle
+These will create some visual
+
+00:07:26.976 --> 00:07:27.896 A:middle
+inconsistencies.
+
+00:07:29.316 --> 00:07:31.166 A:middle
+So how did we get there?
+
+00:07:31.796 --> 00:07:34.146 A:middle
+What have we done to be in this
+
+00:07:34.396 --> 00:07:35.126 A:middle
+situation?
+
+00:07:35.866 --> 00:07:38.716 A:middle
+Well, we didn't do much really,
+
+00:07:38.716 --> 00:07:39.746 A:middle
+and that's kind of the whole
+
+00:07:39.746 --> 00:07:40.506 A:middle
+point of this.
+
+00:07:41.796 --> 00:07:43.786 A:middle
+After rendering the frame, we
+
+00:07:43.786 --> 00:07:45.046 A:middle
+requested the next drawable from
+
+00:07:45.046 --> 00:07:46.006 A:middle
+the display link.
+
+00:07:46.236 --> 00:07:47.126 A:middle
+And as soon as we got the
+
+00:07:47.126 --> 00:07:49.006 A:middle
+drawable, we finished the final
+
+00:07:49.006 --> 00:07:50.506 A:middle
+pass and presented it right
+
+00:07:50.506 --> 00:07:50.876 A:middle
+away.
+
+00:07:51.496 --> 00:07:54.216 A:middle
+We explicitly told the system to
+
+00:07:54.216 --> 00:07:55.876 A:middle
+present that drawable as soon as
+
+00:07:55.926 --> 00:07:57.656 A:middle
+possible, at the next refresh
+
+00:07:57.656 --> 00:07:58.096 A:middle
+interval.
+
+00:07:58.516 --> 00:08:00.376 A:middle
+After all, we are targeting 60
+

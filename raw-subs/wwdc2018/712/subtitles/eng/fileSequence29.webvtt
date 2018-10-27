@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.046 --> 00:29:02.306 A:middle
+She always looks like that.
+
+00:29:02.306 --> 00:29:04.546 A:middle
+And we're going to go ahead and
+
+00:29:04.546 --> 00:29:06.096 A:middle
+stylize that image using the
+
+00:29:06.096 --> 00:29:07.036 A:middle
+model that we just trained.
+
+00:29:08.516 --> 00:29:10.526 A:middle
+So I'm going to say stylized
+
+00:29:10.526 --> 00:29:13.236 A:middle
+image equals model.stylize.
+
+00:29:13.956 --> 00:29:15.876 A:middle
+And in this case, the function
+
+00:29:15.876 --> 00:29:17.486 A:middle
+is called stylize because the
+
+00:29:17.486 --> 00:29:19.386 A:middle
+model is specific to the task of
+
+00:29:19.386 --> 00:29:20.186 A:middle
+style transfer.
+
+00:29:20.416 --> 00:29:22.806 A:middle
+And we're going to pass in that
+
+00:29:22.806 --> 00:29:23.606 A:middle
+sample image.
+
+00:29:23.956 --> 00:29:25.416 A:middle
+And I'm going to say style
+
+00:29:25.416 --> 00:29:27.206 A:middle
+equals three because that's the
+
+00:29:27.206 --> 00:29:28.956 A:middle
+style that we picked earlier
+
+00:29:28.956 --> 00:29:30.146 A:middle
+that looks like firewood here.
+
+00:29:32.116 --> 00:29:33.956 A:middle
+So let's see what that stylized
+
+00:29:33.956 --> 00:29:34.656 A:middle
+image looks like.
+
+00:29:35.196 --> 00:29:38.646 A:middle
+I can call .show on that, and
+
+00:29:38.646 --> 00:29:39.976 A:middle
+here is my cat looking like a
+
+00:29:39.976 --> 00:29:40.746 A:middle
+pile of firewood.
+
+00:29:41.516 --> 00:29:46.426 A:middle
+[ Applause ]
+
+00:29:46.926 --> 00:29:48.376 A:middle
+Let's make sure this works on
+
+00:29:48.376 --> 00:29:49.256 A:middle
+other styles, too.
+
+00:29:49.946 --> 00:29:52.336 A:middle
+I'm going to go ahead and make a
+
+00:29:52.336 --> 00:29:58.496 A:middle
+stylized image out of that
+
+00:29:58.496 --> 00:29:59.256 A:middle
+sample image.
+
+00:29:59.576 --> 00:30:02.276 A:middle
+And I'm going to specify a style
+

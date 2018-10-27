@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.807 --> 00:24:03.010 align:start position:27% line:-1
+また例外タイプから始めます
+
+00:24:03.377 --> 00:24:09.883 align:start position:0% line:-1
+“EXC BAD ACCESS (SIGSEGV)”です
+
+00:24:10.184 --> 00:24:13.520 align:start position:25% line:-1
+メモリエラーによくある形です
+
+00:24:13.654 --> 00:24:16.290 align:start position:14% line:-1
+EXC BAD ACCESSの意味は２つ
+
+00:24:16.390 --> 00:24:20.594 align:start position:30% line:-2
+読み取り専用のメモリに
+書き込んだか
+
+00:24:20.794 --> 00:24:24.198 align:start position:34% line:-2
+存在しないメモリを
+読み込んだかです
+
+00:24:24.298 --> 00:24:28.936 align:start position:14% line:-2
+この２つの場合
+EXC BAD ACCESSで停止します
+
+00:24:29.770 --> 00:24:34.942 align:start position:25% line:-2
+これはクラッシュ時に
+アクセスしていたアドレスです
+
+00:24:36.577 --> 00:24:38.278 align:start position:25% line:-1
+スタックトレースも見ましょう
+
+00:24:38.378 --> 00:24:41.648 align:start position:23% line:-2
+この関数が
+アクセスエラーを起こしています
+
+00:24:41.815 --> 00:24:44.518 align:start position:16% line:-1
+これはobjc release関数で―
+
+00:24:44.618 --> 00:24:50.757 align:start position:7% line:-2
+Objective-CとSwiftオブジェクトの
+参照カウントの実行の一部です
+
+00:24:50.858 --> 00:24:56.029 align:start position:29% line:-2
+これもやはり
+メモリエラーを匂わせます
+
+00:24:57.397 --> 00:25:00.801 align:start position:11% line:-1
+では objc releaseは何が原因か？
+

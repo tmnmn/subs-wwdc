@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:02.046 --> 00:17:03.616 A:middle
+Changes that JavaScript makes to
+
+00:17:03.616 --> 00:17:05.306 A:middle
+the player are KVO observable.
+
+00:17:05.496 --> 00:17:06.656 A:middle
+So you know when things are
+
+00:17:06.656 --> 00:17:07.695 A:middle
+changed by your JavaScript
+
+00:17:07.695 --> 00:17:08.306 A:middle
+developers.
+
+00:17:09.705 --> 00:17:11.526 A:middle
+Finally the TVPlayer object
+
+00:17:11.806 --> 00:17:13.506 A:middle
+plays media in a sequential
+
+00:17:13.506 --> 00:17:15.546 A:middle
+fashion from the very first
+
+00:17:15.546 --> 00:17:16.746 A:middle
+[inaudible] item all the way to
+
+00:17:16.746 --> 00:17:17.976 A:middle
+the very last in its playlist.
+
+00:17:20.945 --> 00:17:22.175 A:middle
+Whenever a player is needed,
+
+00:17:22.576 --> 00:17:24.256 A:middle
+TVApplicationControllerDelegate
+
+00:17:24.256 --> 00:17:25.945 A:middle
+will ask for a TVPlayer and you
+
+00:17:25.945 --> 00:17:27.506 A:middle
+will have to return an instance
+
+00:17:27.566 --> 00:17:29.646 A:middle
+in order to participate in the
+
+00:17:29.646 --> 00:17:30.496 A:middle
+Playback Pipeline.
+
+00:17:34.076 --> 00:17:35.066 A:middle
+The next step of the Playback
+
+00:17:35.066 --> 00:17:36.406 A:middle
+Pipeline is to actually show
+
+00:17:36.406 --> 00:17:37.826 A:middle
+Playback on the screen itself in
+
+00:17:37.826 --> 00:17:39.236 A:middle
+the form of a user interface.
+
+00:17:39.736 --> 00:17:42.066 A:middle
+This can happen anytime whether
+
+00:17:42.066 --> 00:17:44.116 A:middle
+it's full screen playback or
+
+00:17:44.116 --> 00:17:44.936 A:middle
+embedded playback.
+
+00:17:45.426 --> 00:17:47.016 A:middle
+It is entirely up to you to
+
+00:17:47.016 --> 00:17:48.406 A:middle
+create your own user interface.
+
+00:17:49.186 --> 00:17:51.826 A:middle
+When TVMLKit needs a user
+
+00:17:51.826 --> 00:17:53.646 A:middle
+interfact, the TVInterface
+
+00:17:53.646 --> 00:17:54.316 A:middle
+[inaudible] will ask its
+
+00:17:54.316 --> 00:17:55.616 A:middle
+delegate for a view controller.
+
+00:17:56.246 --> 00:17:58.046 A:middle
+It will also pass it a reference
+
+00:17:58.046 --> 00:18:00.336 A:middle
+to TVPlayer that is responsible
+

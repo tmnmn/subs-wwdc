@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:00.814 --> 00:08:03.884 align:start position:29% line:-2
+直接コマンドバッファに
+コマンドを書くのではなく
+
+00:08:03.984 --> 00:08:06.987 align:start position:23% line:-2
+Metalコマンドエンコーダが
+作成されます
+
+00:08:07.721 --> 00:08:11.658 align:start position:27% line:-2
+エンコーダはAPIコールを
+GPU指示命令へと変換し
+
+00:08:11.758 --> 00:08:13.727 align:start position:34% line:-2
+コマンドバッファに
+書き込みます
+
+00:08:14.194 --> 00:08:16.497 align:start position:34% line:-2
+エンコーディングが
+終了すると
+
+00:08:16.597 --> 00:08:19.833 align:start position:30% line:-2
+アプリケーションは
+オブジェクトを放ちます
+
+00:08:20.667 --> 00:08:23.904 align:start position:30% line:-2
+また新しいエンコーダが
+作成されることによって
+
+00:08:24.004 --> 00:08:27.241 align:start position:27% line:-2
+さらに多くのコマンドの
+エンコードが可能になります
+
+00:08:30.644 --> 00:08:32.145 align:start position:41% line:-1
+重要なのは
+
+00:08:32.246 --> 00:08:36.750 align:start position:34% line:-2
+これまでGPUは
+働いていない点です
+
+00:08:36.917 --> 00:08:39.720 align:start position:32% line:-2
+オブジェクトも
+コマンドエンコードも
+
+00:08:39.820 --> 00:08:41.554 align:start position:25% line:-1
+すべてCPUで作成しています
+
+00:08:41.688 --> 00:08:44.725 align:start position:30% line:-1
+エンコーディングなどが
+
+00:08:45.025 --> 00:08:46.693 align:start position:38% line:-1
+終了してから―
+
+00:08:47.227 --> 00:08:51.198 align:start position:30% line:-2
+GPUはコマンド処理を
+開始するのです
+
+00:08:52.933 --> 00:08:55.702 align:start position:34% line:-1
+複数のバッファへの
+
+00:08:55.802 --> 00:08:58.238 align:start position:29% line:-1
+並列エンコードも可能です
+

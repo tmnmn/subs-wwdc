@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.236 --> 00:05:00.616 A:middle
+powerful behavior, but it turns
+
+00:05:00.616 --> 00:05:02.216 A:middle
+out collections aren't alone.
+
+00:05:02.296 --> 00:05:03.136 A:middle
+In fact, Collection is not the
+
+00:05:03.136 --> 00:05:04.086 A:middle
+only protocol that we have.
+
+00:05:04.086 --> 00:05:05.526 A:middle
+In Swift, we have access to a
+
+00:05:05.636 --> 00:05:07.286 A:middle
+rich hierarchy of collection
+
+00:05:07.286 --> 00:05:08.356 A:middle
+protocols, each greatly
+
+00:05:08.356 --> 00:05:09.286 A:middle
+improving on the kinds of
+
+00:05:09.286 --> 00:05:10.276 A:middle
+assumptions that we can make
+
+00:05:10.276 --> 00:05:11.076 A:middle
+about our types.
+
+00:05:11.706 --> 00:05:12.576 A:middle
+Let's go ahead and talk about a
+
+00:05:12.576 --> 00:05:13.226 A:middle
+couple of these.
+
+00:05:13.546 --> 00:05:15.896 A:middle
+We've already established that
+
+00:05:15.896 --> 00:05:17.356 A:middle
+Collection lets you go forward
+
+00:05:17.356 --> 00:05:19.866 A:middle
+from a given index, but there
+
+00:05:19.866 --> 00:05:20.886 A:middle
+are also bidirectional
+
+00:05:20.886 --> 00:05:22.406 A:middle
+collections, which let you go in
+
+00:05:22.406 --> 00:05:24.826 A:middle
+the other direction.
+
+00:05:24.896 --> 00:05:26.086 A:middle
+Now, of course, bidirectional
+
+00:05:26.086 --> 00:05:27.196 A:middle
+collections are collections
+
+00:05:27.246 --> 00:05:28.636 A:middle
+themselves, and so we can still
+
+00:05:28.636 --> 00:05:29.726 A:middle
+iterate forward as well.
+
+00:05:31.336 --> 00:05:32.836 A:middle
+The next most flexible form of
+
+00:05:32.836 --> 00:05:34.086 A:middle
+collection is what's known as a
+
+00:05:34.086 --> 00:05:35.506 A:middle
+random access collection, and
+
+00:05:35.506 --> 00:05:36.926 A:middle
+with these, these add the
+
+00:05:36.926 --> 00:05:38.266 A:middle
+requirement that it would be
+
+00:05:38.266 --> 00:05:40.386 A:middle
+constant time to compute, or
+
+00:05:40.386 --> 00:05:41.646 A:middle
+compute another index from
+
+00:05:41.646 --> 00:05:42.606 A:middle
+another or to compute the
+
+00:05:42.606 --> 00:05:43.886 A:middle
+distance between two indexes.
+
+00:05:44.456 --> 00:05:45.856 A:middle
+The compiler cannot enforce
+
+00:05:45.926 --> 00:05:47.486 A:middle
+this, and so when you conform to
+
+00:05:47.486 --> 00:05:48.466 A:middle
+random acts as a collection,
+
+00:05:48.646 --> 00:05:49.756 A:middle
+you're making a promise.
+
+00:05:49.996 --> 00:05:51.796 A:middle
+But if you satisfy this promise,
+
+00:05:51.796 --> 00:05:52.516 A:middle
+if you can deliver on this
+
+00:05:52.516 --> 00:05:53.806 A:middle
+promise, the protocol gives you
+
+00:05:53.806 --> 00:05:55.386 A:middle
+the power to access any index in
+
+00:05:55.386 --> 00:05:57.186 A:middle
+the collection in constant time.
+
+00:05:57.966 --> 00:05:59.046 A:middle
+And of course, random access
+
+00:05:59.046 --> 00:06:00.426 A:middle
+collections remain collections,
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:01.356 --> 00:09:02.746 A:middle
+When the user selects one of the
+
+00:09:02.746 --> 00:09:05.106 A:middle
+suggestions, AutoFill launches
+
+00:09:05.106 --> 00:09:06.496 A:middle
+your app extension to ask it for
+
+00:09:06.496 --> 00:09:07.846 A:middle
+the full credential, including
+
+00:09:07.846 --> 00:09:08.346 A:middle
+the password.
+
+00:09:08.836 --> 00:09:11.516 A:middle
+It will tell your extension
+
+00:09:11.596 --> 00:09:12.736 A:middle
+which credential identity the
+
+00:09:12.736 --> 00:09:16.216 A:middle
+user chose, then your extension
+
+00:09:16.216 --> 00:09:17.556 A:middle
+looks up the password belonging
+
+00:09:17.556 --> 00:09:18.926 A:middle
+to the selected credential in
+
+00:09:18.926 --> 00:09:20.316 A:middle
+your app's password database.
+
+00:09:21.256 --> 00:09:22.736 A:middle
+At this point, the extension has
+
+00:09:22.736 --> 00:09:24.426 A:middle
+the option to present its own UI
+
+00:09:24.546 --> 00:09:25.806 A:middle
+before returning the password.
+
+00:09:26.726 --> 00:09:27.826 A:middle
+This is useful for password
+
+00:09:27.826 --> 00:09:29.246 A:middle
+manager apps that ask the user
+
+00:09:29.246 --> 00:09:31.126 A:middle
+to enter a master password, or
+
+00:09:31.126 --> 00:09:32.016 A:middle
+perform another type of
+
+00:09:32.016 --> 00:09:34.266 A:middle
+authentication specific to the
+
+00:09:36.556 --> 00:09:36.626 A:middle
+app.
+
+00:09:36.886 --> 00:09:37.976 A:middle
+Once your extension has the
+
+00:09:37.976 --> 00:09:39.906 A:middle
+password, it packages it in an
+
+00:09:39.906 --> 00:09:41.536 A:middle
+AS password credential and hands
+
+00:09:41.536 --> 00:09:42.796 A:middle
+it to AutoFill by completing the
+
+00:09:42.796 --> 00:09:43.736 A:middle
+extension request.
+
+00:09:44.226 --> 00:09:47.426 A:middle
+If the extension didn't show its
+
+00:09:47.426 --> 00:09:49.476 A:middle
+own UI, AutoFill will perform
+
+00:09:49.476 --> 00:09:50.826 A:middle
+appropriate authentication for
+
+00:09:50.826 --> 00:09:51.296 A:middle
+the user.
+
+00:09:52.116 --> 00:09:53.346 A:middle
+Depending on the device and the
+
+00:09:53.346 --> 00:09:55.116 A:middle
+user's preference, this may be
+
+00:09:55.116 --> 00:09:57.356 A:middle
+Face ID, Touch ID, Device
+
+00:09:57.356 --> 00:09:58.666 A:middle
+Passcode, or None.
+
+00:09:59.236 --> 00:10:02.726 A:middle
+If that authentication is
+

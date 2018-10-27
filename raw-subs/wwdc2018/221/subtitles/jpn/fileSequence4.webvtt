@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.939 --> 00:04:00.707 align:start position:32% line:-2
+ラベルコントロールが
+ないので
+
+00:04:00.807 --> 00:04:02.676 align:start position:32% line:-1
+テキスト表示するには
+
+00:04:03.076 --> 00:04:07.347 align:start position:18% line:-2
+NSTextFieldで編集と選択を
+無効化して ラベルの動作を実現
+
+00:04:09.449 --> 00:04:14.154 align:start position:29% line:-2
+次に安全なテキスト入力の
+必要性を検討します
+
+00:04:14.555 --> 00:04:17.057 align:start position:14% line:-2
+必要なら
+NSSecureTextFieldを使用
+
+00:04:18.257 --> 00:04:21.894 align:start position:27% line:-1
+不要なら テキストの量は？
+
+00:04:23.497 --> 00:04:27.234 align:start position:25% line:-2
+NSTextViewは大量の
+テキストに適しているので
+
+00:04:27.334 --> 00:04:30.103 align:start position:21% line:-1
+量が多いならNSTextView
+
+00:04:31.438 --> 00:04:33.607 align:start position:18% line:-1
+少ないならNSTextFieldです
+
+00:04:33.874 --> 00:04:38.512 align:start position:29% line:-2
+UIKitの場合と異なり
+複数行も扱えますが
+
+00:04:39.012 --> 00:04:40.914 align:start position:34% line:-1
+短い文字列用なので
+
+00:04:41.014 --> 00:04:44.318 align:start position:20% line:-2
+量が多いなら
+NSTextViewを使うべきです
+
+00:04:45.853 --> 00:04:48.255 align:start position:34% line:-2
+TextKitに
+慣れている皆さんは
+
+00:04:48.488 --> 00:04:52.159 align:start position:25% line:-2
+フローチャートに文字列描画が
+ないことに気づくでしょう
+
+00:04:53.026 --> 00:04:55.295 align:start position:29% line:-1
+文字列描画を使用するには
+
+00:04:55.395 --> 00:04:58.098 align:start position:16% line:-2
+NSStringまたは
+NSAttributedStringの
+
+00:04:58.198 --> 00:05:00.434 align:start position:36% line:-2
+描画メソッドを
+直接呼び出します
+

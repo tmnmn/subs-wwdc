@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.686 --> 00:32:00.616 A:middle
+blurs, as this will cause the
+
+00:32:00.616 --> 00:32:02.576 A:middle
+GPU to work in overdrive,
+
+00:32:02.726 --> 00:32:03.746 A:middle
+slowing down your app.
+
+00:32:04.756 --> 00:32:07.196 A:middle
+Also, you should avoid masking
+
+00:32:07.196 --> 00:32:09.116 A:middle
+and clipping wherever possible.
+
+00:32:10.056 --> 00:32:11.926 A:middle
+Instead, if you can achieve the
+
+00:32:11.926 --> 00:32:14.636 A:middle
+same visual appearance by just
+
+00:32:14.636 --> 00:32:16.576 A:middle
+placing opaque content on top of
+
+00:32:16.576 --> 00:32:18.186 A:middle
+your views, then I would
+
+00:32:18.186 --> 00:32:19.286 A:middle
+encourage you to too that,
+
+00:32:19.536 --> 00:32:20.706 A:middle
+instead of using the masked
+
+00:32:20.706 --> 00:32:23.126 A:middle
+view, or masked property of
+
+00:32:23.166 --> 00:32:24.406 A:middle
+UIViewer CA Layer.
+
+00:32:25.496 --> 00:32:27.046 A:middle
+So, that's how we can optimize
+
+00:32:27.206 --> 00:32:28.756 A:middle
+smooth scrolling performance.
+
+00:32:29.366 --> 00:32:30.656 A:middle
+Make sure to run the Time
+
+00:32:30.656 --> 00:32:32.216 A:middle
+Profiler, and Core Animation
+
+00:32:32.216 --> 00:32:33.786 A:middle
+instruments on your apps.
+
+00:32:35.066 --> 00:32:36.756 A:middle
+Use prefetching, and push as
+
+00:32:36.756 --> 00:32:38.326 A:middle
+much work as possible off of the
+
+00:32:38.326 --> 00:32:38.986 A:middle
+main queue.
+
+00:32:39.526 --> 00:32:42.866 A:middle
+And, try to use visual effects,
+
+00:32:42.866 --> 00:32:44.086 A:middle
+and masking and clipping
+
+00:32:44.366 --> 00:32:45.046 A:middle
+sparingly.
+
+00:32:46.006 --> 00:32:47.766 A:middle
+For even more information about
+
+00:32:47.766 --> 00:32:49.656 A:middle
+profiling, check out this great
+
+00:32:49.656 --> 00:32:51.726 A:middle
+talk from WWDC 2015.
+
+00:32:51.726 --> 00:32:51.956 A:middle
+Thank you.
+
+00:32:52.516 --> 00:32:56.306 A:middle
+[ Applause ]
+
+00:32:56.806 --> 00:32:58.446 A:middle
+&gt;&gt; Continuity is one of the most
+
+00:32:58.446 --> 00:33:00.486 A:middle
+magical experiences across Apple
+

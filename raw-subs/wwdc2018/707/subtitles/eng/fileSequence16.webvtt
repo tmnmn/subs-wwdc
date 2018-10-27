@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.486 --> 00:16:00.436 A:middle
+added to the builder, the
+
+00:16:00.436 --> 00:16:01.756 A:middle
+builder's delegate method
+
+00:16:02.226 --> 00:16:04.806 A:middle
+workoutBuilderDid CollectEvents
+
+00:16:04.806 --> 00:16:05.436 A:middle
+will be called.
+
+00:16:05.846 --> 00:16:08.186 A:middle
+And from here, you can simply
+
+00:16:08.186 --> 00:16:10.326 A:middle
+use the builder's elapsedTime
+
+00:16:10.326 --> 00:16:12.386 A:middle
+property, which will give you
+
+00:16:12.736 --> 00:16:14.546 A:middle
+the current elapsed time for the
+
+00:16:14.546 --> 00:16:14.986 A:middle
+workout.
+
+00:16:16.166 --> 00:16:19.536 A:middle
+It's that easy.
+
+00:16:19.736 --> 00:16:21.616 A:middle
+Next, let's see how we can
+
+00:16:21.616 --> 00:16:22.846 A:middle
+control the state of the
+
+00:16:22.846 --> 00:16:23.296 A:middle
+workout.
+
+00:16:24.916 --> 00:16:28.396 A:middle
+So first, I'd like to talk about
+
+00:16:28.506 --> 00:16:30.566 A:middle
+all of the different states that
+
+00:16:30.566 --> 00:16:32.136 A:middle
+the workout session can be in.
+
+00:16:32.746 --> 00:16:34.976 A:middle
+And the first one is Not
+
+00:16:34.976 --> 00:16:35.456 A:middle
+Started.
+
+00:16:36.366 --> 00:16:37.576 A:middle
+So here, the workout has not
+
+00:16:37.576 --> 00:16:41.356 A:middle
+started yet, and we're not yet,
+
+00:16:41.796 --> 00:16:44.056 A:middle
+the user is not performing the
+
+00:16:44.056 --> 00:16:44.496 A:middle
+workout.
+
+00:16:44.496 --> 00:16:47.136 A:middle
+So after that, we'll be moving
+
+00:16:47.456 --> 00:16:48.746 A:middle
+to the Prepared state.
+
+00:16:49.246 --> 00:16:52.146 A:middle
+And so the Prepared state will
+
+00:16:52.676 --> 00:16:54.506 A:middle
+put the system in Session Mode,
+
+00:16:54.916 --> 00:16:56.386 A:middle
+which means that your
+
+00:16:56.386 --> 00:16:58.026 A:middle
+application will have background
+
+00:16:58.026 --> 00:17:00.056 A:middle
+running, the sensors will also
+

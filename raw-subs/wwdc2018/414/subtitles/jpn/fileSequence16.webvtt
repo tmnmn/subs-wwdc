@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:55.389 --> 00:16:00.727 align:start position:23% line:-2
+“レシピ”というクラスの
+image関数が呼び出されます
+
+00:16:00.961 --> 00:16:05.799 align:start position:23% line:-2
+その関数のエラーでフェイタル
+エラーメッセージが呼び出された
+
+00:16:07.000 --> 00:16:11.205 align:start position:27% line:-2
+これはシンボル化されて
+全デバッグ情報があるため―
+
+00:16:11.305 --> 00:16:15.976 align:start position:27% line:-2
+コード内にクラッシュの
+ファイルと行番号があります
+
+00:16:16.777 --> 00:16:18.412 align:start position:30% line:-1
+その行を見てみましょう
+
+00:16:18.579 --> 00:16:20.180 align:start position:30% line:-1
+プロジェクトを開きます
+
+00:16:20.280 --> 00:16:22.749 align:start position:12% line:-1
+これは RecipeImage.swift
+
+00:16:22.983 --> 00:16:26.053 align:start position:29% line:-2
+26行目がクラッシュ時に
+マークされた行です
+
+00:16:26.653 --> 00:16:29.089 align:start position:27% line:-1
+Swiftに慣れた方なら―
+
+00:16:29.189 --> 00:16:33.193 align:start position:23% line:-2
+この行が クラッシュの原因だと
+見当がつくでしょう
+
+00:16:33.894 --> 00:16:37.197 align:start position:23% line:-1
+強制アンラップ演算子があります
+
+00:16:37.731 --> 00:16:41.435 align:start position:16% line:-2
+それから関数
+UIImageコンストラクタがあります
+
+00:16:41.535 --> 00:16:43.070 align:start position:30% line:-1
+オプション値を返します
+
+00:16:43.504 --> 00:16:45.472 align:start position:23% line:-1
+オプション値が“nil”なら―
+
+00:16:45.572 --> 00:16:49.576 align:start position:30% line:-2
+強制アンラップ演算子が
+プロセスを停止し
+
+00:16:49.676 --> 00:16:52.746 align:start position:29% line:-2
+クラッシュログを生成して
+終了させます
+
+00:16:53.747 --> 00:16:57.050 align:start position:25% line:-1
+そしてApp固有の情報には―
+
+00:16:57.151 --> 00:17:03.023 align:start position:21% line:-2
+Swiftランタイムが表示した
+エラーメッセージが含まれています
+

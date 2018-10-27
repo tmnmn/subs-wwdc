@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:57.136 --> 00:02:01.356 A:middle
+Now up to iOS 11, all new
+
+00:02:01.356 --> 00:02:02.586 A:middle
+incoming notifications for the
+
+00:02:02.586 --> 00:02:04.426 A:middle
+users were inserted in a
+
+00:02:04.426 --> 00:02:05.816 A:middle
+chronological order in the
+
+00:02:05.816 --> 00:02:06.756 A:middle
+notification list.
+
+00:02:07.276 --> 00:02:08.735 A:middle
+So these would be interspersed
+
+00:02:08.735 --> 00:02:10.376 A:middle
+across multiple applications,
+
+00:02:10.705 --> 00:02:12.006 A:middle
+and it would be hard for the
+
+00:02:12.006 --> 00:02:13.886 A:middle
+user to find a certain
+
+00:02:13.886 --> 00:02:15.656 A:middle
+notification or triage multiple
+
+00:02:15.656 --> 00:02:16.746 A:middle
+notifications together.
+
+00:02:17.796 --> 00:02:20.346 A:middle
+So starting in iOS 12, we've
+
+00:02:20.346 --> 00:02:22.216 A:middle
+decided to improve this by
+
+00:02:22.216 --> 00:02:23.676 A:middle
+introducing notification
+
+00:02:23.676 --> 00:02:25.696 A:middle
+grouping, so now, as you can see
+
+00:02:25.696 --> 00:02:27.586 A:middle
+here, all notifications across
+
+00:02:27.586 --> 00:02:29.076 A:middle
+different applications get
+
+00:02:29.076 --> 00:02:30.526 A:middle
+grouped into their unique
+
+00:02:30.526 --> 00:02:31.036 A:middle
+groups.
+
+00:02:32.056 --> 00:02:33.616 A:middle
+Let's take a deeper look at how
+
+00:02:33.616 --> 00:02:34.866 A:middle
+grouped notifications works.
+
+00:02:36.016 --> 00:02:38.426 A:middle
+Now all these notifications will
+
+00:02:38.426 --> 00:02:39.856 A:middle
+be automatically grouped, so
+
+00:02:39.856 --> 00:02:41.586 A:middle
+there's nothing explicit that
+
+00:02:41.716 --> 00:02:43.626 A:middle
+you need to do to start using
+
+00:02:43.706 --> 00:02:44.996 A:middle
+notification grouping.
+
+00:02:45.406 --> 00:02:47.016 A:middle
+However, if you do want to have
+
+00:02:47.136 --> 00:02:49.426 A:middle
+your own custom groups then you
+
+00:02:49.426 --> 00:02:51.176 A:middle
+can use the thread identifier,
+
+00:02:51.556 --> 00:02:53.566 A:middle
+which is an existing property on
+
+00:02:53.746 --> 00:02:55.556 A:middle
+the UN notification content
+
+00:02:55.556 --> 00:02:55.996 A:middle
+object.
+
+00:02:57.646 --> 00:02:59.096 A:middle
+So some of you might already be
+
+00:02:59.096 --> 00:03:01.276 A:middle
+using the thread identifier and
+

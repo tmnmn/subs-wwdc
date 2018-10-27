@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:01.256 --> 00:05:02.566 A:middle
+Let's start with connectivity.
+
+00:05:03.506 --> 00:05:05.146 A:middle
+How do you know if you have an
+
+00:05:05.146 --> 00:05:06.446 A:middle
+external display connected?
+
+00:05:07.836 --> 00:05:10.236 A:middle
+UIScreen has a class variable,
+
+00:05:10.236 --> 00:05:12.076 A:middle
+screens, which contains a list
+
+00:05:12.076 --> 00:05:13.576 A:middle
+of all the connected displays,
+
+00:05:13.576 --> 00:05:15.226 A:middle
+including the device, built into
+
+00:05:15.226 --> 00:05:15.506 A:middle
+the iPhone.
+
+00:05:15.556 --> 00:05:18.256 A:middle
+So, if there's more than one
+
+00:05:18.376 --> 00:05:20.596 A:middle
+element in this array, you know
+
+00:05:20.596 --> 00:05:21.946 A:middle
+you have an external display
+
+00:05:21.946 --> 00:05:22.526 A:middle
+connected.
+
+00:05:24.296 --> 00:05:26.446 A:middle
+Additionally, because the
+
+00:05:26.446 --> 00:05:27.556 A:middle
+external display can be
+
+00:05:27.556 --> 00:05:29.366 A:middle
+connected and disconnected at
+
+00:05:29.486 --> 00:05:31.986 A:middle
+will, UIKit will post
+
+00:05:31.986 --> 00:05:33.666 A:middle
+notifications to help you know
+
+00:05:33.666 --> 00:05:34.476 A:middle
+when this happens.
+
+00:05:34.476 --> 00:05:36.576 A:middle
+So, you should listen for the
+
+00:05:36.576 --> 00:05:37.356 A:middle
+UIScreen
+
+00:05:37.616 --> 00:05:39.676 A:middle
+.didConnectNotification, and the
+
+00:05:39.676 --> 00:05:40.296 A:middle
+UIScreen
+
+00:05:40.296 --> 00:05:41.846 A:middle
+.didDisconnectNotifications.
+
+00:05:42.446 --> 00:05:43.976 A:middle
+And, bring up and tear down your
+
+00:05:43.976 --> 00:05:44.566 A:middle
+UI accordingly.
+
+00:05:46.216 --> 00:05:47.346 A:middle
+Peter, can you show our
+
+00:05:47.346 --> 00:05:48.836 A:middle
+developers just how easy it is
+
+00:05:48.836 --> 00:05:49.856 A:middle
+to set up a second user
+
+00:05:49.856 --> 00:05:50.286 A:middle
+interface?
+
+00:05:50.856 --> 00:05:52.416 A:middle
+&gt;&gt; Ben, I'd be happy to.
+
+00:05:52.836 --> 00:05:54.476 A:middle
+Let's jump into our code for our
+
+00:05:54.476 --> 00:05:56.466 A:middle
+UIScreen connection callback.
+
+00:05:57.776 --> 00:05:59.626 A:middle
+Here, we'll set a local variable
+
+00:05:59.786 --> 00:06:01.086 A:middle
+to the last screen in the
+

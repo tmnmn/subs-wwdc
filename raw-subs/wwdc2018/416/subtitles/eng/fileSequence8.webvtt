@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.506 --> 00:08:01.346 A:middle
+So you won't be able to use as
+
+00:08:01.346 --> 00:08:02.556 A:middle
+much memory on a 1-gigabyte
+
+00:08:02.556 --> 00:08:03.946 A:middle
+device as you would on a
+
+00:08:03.946 --> 00:08:04.906 A:middle
+4-gigabyte device.
+
+00:08:05.456 --> 00:08:10.286 A:middle
+Now, there's also extensions.
+
+00:08:10.636 --> 00:08:11.896 A:middle
+Extensions have a much lower
+
+00:08:11.896 --> 00:08:13.726 A:middle
+footprint, so you really need to
+
+00:08:13.726 --> 00:08:15.076 A:middle
+be even more mindful about that
+
+00:08:15.076 --> 00:08:16.426 A:middle
+when you are using an extension.
+
+00:08:17.696 --> 00:08:19.836 A:middle
+When you exceed the footprint,
+
+00:08:19.836 --> 00:08:21.356 A:middle
+you will get a exception.
+
+00:08:22.146 --> 00:08:24.356 A:middle
+Now, these exceptions are the
+
+00:08:24.356 --> 00:08:26.196 A:middle
+EXC RESOURCE EXCEPTION.
+
+00:08:27.366 --> 00:08:30.066 A:middle
+So what I'd like to do now is
+
+00:08:30.066 --> 00:08:31.616 A:middle
+invite up James to talk about
+
+00:08:31.616 --> 00:08:32.405 A:middle
+how we can profile our
+
+00:08:32.405 --> 00:08:32.765 A:middle
+footprint.
+
+00:08:34.515 --> 00:08:36.775 A:middle
+[ Applause ]
+
+00:08:37.275 --> 00:08:37.686 A:middle
+Thanks, James.
+
+00:08:38.236 --> 00:08:38.616 A:middle
+&gt;&gt; Thank you.
+
+00:08:40.655 --> 00:08:41.066 A:middle
+Thanks, Kyle.
+
+00:08:41.256 --> 00:08:42.035 A:middle
+All right.
+
+00:08:42.226 --> 00:08:42.736 A:middle
+I'm James.
+
+00:08:42.736 --> 00:08:43.876 A:middle
+I'm a software engineer here at
+
+00:08:43.876 --> 00:08:44.155 A:middle
+Apple.
+
+00:08:44.456 --> 00:08:45.706 A:middle
+And I'd like to introduce some
+
+00:08:45.706 --> 00:08:46.816 A:middle
+of the more advanced tools we
+
+00:08:46.816 --> 00:08:47.886 A:middle
+have for profiling and
+
+00:08:47.886 --> 00:08:49.026 A:middle
+investigating your application's
+
+00:08:49.026 --> 00:08:49.406 A:middle
+footprint.
+
+00:08:51.456 --> 00:08:52.346 A:middle
+You're all probably already
+
+00:08:52.346 --> 00:08:53.546 A:middle
+familiar with the Xcode memory
+
+00:08:53.546 --> 00:08:53.906 A:middle
+gauge.
+
+00:08:54.436 --> 00:08:55.596 A:middle
+It shows up right here in the
+
+00:08:55.596 --> 00:08:57.036 A:middle
+debug navigator, and it's a
+
+00:08:57.166 --> 00:08:59.086 A:middle
+great way for quickly seeing the
+
+00:08:59.086 --> 00:09:00.546 A:middle
+memory footprint of your app.
+

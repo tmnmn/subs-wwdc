@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:00.120 --> 00:22:05.726 align:start position:27% line:-2
+それではコードスニペットを
+挿入するとどうなるか？
+
+00:22:06.427 --> 00:22:08.395 align:start position:23% line:-1
+Markdownでは こうです
+
+00:22:09.196 --> 00:22:13.133 align:start position:21% line:-2
+最後のバッククォートを追加したら
+コードブロックのように
+
+00:22:13.934 --> 00:22:16.737 align:start position:30% line:-1
+背景とヘッダを付けたい
+
+00:22:17.538 --> 00:22:22.443 align:start position:25% line:-2
+これは複雑で
+２つの大型ハンマーが必要です
+
+00:22:23.377 --> 00:22:25.812 align:start position:18% line:-2
+まずは
+サブクラスNSTextStorage
+
+00:22:26.480 --> 00:22:29.249 align:start position:25% line:-2
+NSTextStorageの
+サブクラス化には
+
+00:22:29.349 --> 00:22:31.084 align:start position:29% line:-1
+４つのメソッドが必要です
+
+00:22:31.185 --> 00:22:33.921 align:start position:27% line:-2
+可変文字列の
+プライベートインスタンスを
+
+00:22:34.021 --> 00:22:35.189 align:start position:38% line:-1
+操作しましょう
+
+00:22:36.957 --> 00:22:39.459 align:start position:11% line:-1
+replaceCharactersメソッドで
+
+00:22:39.793 --> 00:22:43.263 align:start position:18% line:-2
+段落スタイルに
+NSTextBlockを追加できます
+
+00:22:45.165 --> 00:22:46.833 align:start position:32% line:-1
+そして段落スタイルを
+
+00:22:46.934 --> 00:22:49.937 align:start position:29% line:-2
+コードブロックの範囲で
+テキストストレージに追加
+
+00:22:50.337 --> 00:22:54.341 align:start position:25% line:-2
+NSTextBlock自体は
+カスタム描画を行わないので
+
+00:22:54.441 --> 00:22:56.510 align:start position:23% line:-1
+サブクラスにする必要があります
+
+00:22:58.145 --> 00:23:04.218 align:start position:18% line:-2
+NSTextBlockサブクラスでは
+いくつかのパディングが必要です
+

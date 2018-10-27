@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:02.046 --> 00:29:02.216 A:middle
+All right.
+
+00:29:02.216 --> 00:29:03.086 A:middle
+So, during that demo I'll be
+
+00:29:03.086 --> 00:29:05.656 A:middle
+using Jupiter Notebook, which is
+
+00:29:05.656 --> 00:29:08.176 A:middle
+a browser-based real-time Python
+
+00:29:08.176 --> 00:29:08.696 A:middle
+interpreter.
+
+00:29:09.546 --> 00:29:10.916 A:middle
+So, all the results you're going
+
+00:29:10.916 --> 00:29:12.876 A:middle
+to be seeing are rendered in
+
+00:29:12.876 --> 00:29:14.286 A:middle
+real-time using Core Image in
+
+00:29:14.286 --> 00:29:14.896 A:middle
+the backend.
+
+00:29:14.896 --> 00:29:15.936 A:middle
+So, none of this has been
+
+00:29:15.936 --> 00:29:17.076 A:middle
+pre-computed; this is all done
+
+00:29:17.076 --> 00:29:17.396 A:middle
+live.
+
+00:29:17.886 --> 00:29:19.286 A:middle
+So, the very first thing I want
+
+00:29:19.286 --> 00:29:22.086 A:middle
+to do here is import the utility
+
+00:29:22.176 --> 00:29:23.286 A:middle
+classes we're going to be using,
+
+00:29:23.286 --> 00:29:24.666 A:middle
+the most important one being the
+
+00:29:24.666 --> 00:29:25.996 A:middle
+CIMG class here for my
+
+00:29:25.996 --> 00:29:27.066 A:middle
+PyCoreImage package.
+
+00:29:28.136 --> 00:29:28.836 A:middle
+Then, we just have a bit of
+
+00:29:28.836 --> 00:29:29.916 A:middle
+setup code so that we can
+
+00:29:29.916 --> 00:29:31.676 A:middle
+actually visualize images in
+
+00:29:31.676 --> 00:29:32.286 A:middle
+that notebook.
+
+00:29:32.996 --> 00:29:33.636 A:middle
+Let's get started.
+
+00:29:34.676 --> 00:29:36.456 A:middle
+First thing I want to show you
+
+00:29:36.456 --> 00:29:37.876 A:middle
+is how to load images in.
+
+00:29:38.266 --> 00:29:40.576 A:middle
+So, using from file here, we see
+
+00:29:40.576 --> 00:29:43.526 A:middle
+that the type of my object is a
+
+00:29:43.526 --> 00:29:45.016 A:middle
+PyCoreImage CIMG.
+
+00:29:45.016 --> 00:29:47.246 A:middle
+And we can see that it's backed
+
+00:29:47.506 --> 00:29:49.106 A:middle
+by an actually proper Core Image
+
+00:29:49.526 --> 00:29:50.606 A:middle
+object in the back.
+
+00:29:51.626 --> 00:29:53.706 A:middle
+We can do a render on our image
+
+00:29:53.976 --> 00:29:55.876 A:middle
+and have a look, I would -- its
+
+00:29:55.876 --> 00:29:58.406 A:middle
+actual pixel representation
+
+00:29:58.406 --> 00:29:59.156 A:middle
+using Matte [inaudible] lib
+
+00:29:59.156 --> 00:29:59.396 A:middle
+here.
+

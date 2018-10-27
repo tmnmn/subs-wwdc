@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:59.636 --> 00:49:00.516 A:middle
+subclasses.
+
+00:49:00.986 --> 00:49:02.926 A:middle
+So if I were to extend Vehicle
+
+00:49:02.926 --> 00:49:04.376 A:middle
+with a new method, to go let it
+
+00:49:04.376 --> 00:49:07.066 A:middle
+drive, I fully expect that I can
+
+00:49:07.166 --> 00:49:08.736 A:middle
+call that method on one of my
+
+00:49:08.736 --> 00:49:10.086 A:middle
+subclasses, Taxi.
+
+00:49:11.016 --> 00:49:13.746 A:middle
+So, this is a fundamental aspect
+
+00:49:13.816 --> 00:49:15.426 A:middle
+of object-oriented programming.
+
+00:49:15.756 --> 00:49:17.356 A:middle
+And, Barbara Liskov, actually
+
+00:49:17.356 --> 00:49:18.836 A:middle
+described this really well in a
+
+00:49:18.836 --> 00:49:20.106 A:middle
+lecture back in the '80s.
+
+00:49:20.846 --> 00:49:21.726 A:middle
+Since then, we've referred to
+
+00:49:21.726 --> 00:49:23.656 A:middle
+this as the Liskov substitution
+
+00:49:23.656 --> 00:49:24.156 A:middle
+principle.
+
+00:49:24.516 --> 00:49:25.856 A:middle
+And, the idea's actually fairly
+
+00:49:25.856 --> 00:49:26.286 A:middle
+simple.
+
+00:49:26.886 --> 00:49:28.986 A:middle
+So, if you have someplace in
+
+00:49:28.986 --> 00:49:30.906 A:middle
+your program that refers to a
+
+00:49:30.906 --> 00:49:34.246 A:middle
+supertype, or superclass, like
+
+00:49:34.376 --> 00:49:34.796 A:middle
+Vehicle.
+
+00:49:35.956 --> 00:49:37.316 A:middle
+You should be able to take an
+
+00:49:37.316 --> 00:49:39.056 A:middle
+instance of any of its subtypes,
+
+00:49:39.056 --> 00:49:41.896 A:middle
+or subclasses, like Taxi or
+
+00:49:41.896 --> 00:49:44.346 A:middle
+PoliceCar, and use that instead.
+
+00:49:44.806 --> 00:49:45.966 A:middle
+And the program should still
+
+00:49:45.966 --> 00:49:47.436 A:middle
+continue to type check and run
+
+00:49:47.436 --> 00:49:47.996 A:middle
+correctly.
+
+00:49:48.746 --> 00:49:50.046 A:middle
+So, the substitution here is an
+
+00:49:50.046 --> 00:49:51.226 A:middle
+instance of a subclass should be
+
+00:49:51.226 --> 00:49:52.356 A:middle
+able to go in anywhere that the
+
+00:49:52.356 --> 00:49:53.756 A:middle
+superclass was expected and
+
+00:49:53.756 --> 00:49:54.156 A:middle
+tested.
+
+00:49:54.156 --> 00:49:56.476 A:middle
+And, this is a really simple
+
+00:49:56.476 --> 00:49:56.896 A:middle
+principle.
+
+00:49:56.896 --> 00:49:58.396 A:middle
+We've all internalized it, but
+
+00:49:58.396 --> 00:50:00.026 A:middle
+it's also really powerful.
+

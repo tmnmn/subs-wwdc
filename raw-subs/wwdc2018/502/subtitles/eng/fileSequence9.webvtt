@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.316 --> 00:09:02.156 A:middle
+sum up each events duration
+
+00:09:02.156 --> 00:09:02.456 A:middle
+watch.
+
+00:09:02.456 --> 00:09:03.056 A:middle
+And there you have it.
+
+00:09:03.056 --> 00:09:04.466 A:middle
+We computed a total duration
+
+00:09:04.466 --> 00:09:05.406 A:middle
+watch for a session.
+
+00:09:05.936 --> 00:09:07.416 A:middle
+And now you may be wondering,
+
+00:09:07.416 --> 00:09:08.576 A:middle
+well what is this event?
+
+00:09:08.576 --> 00:09:09.946 A:middle
+What is an event in the access
+
+00:09:09.946 --> 00:09:10.456 A:middle
+log mean?
+
+00:09:10.726 --> 00:09:12.206 A:middle
+Well, for that let's look at how
+
+00:09:12.206 --> 00:09:14.486 A:middle
+AV Player Item Access Log works.
+
+00:09:15.306 --> 00:09:16.976 A:middle
+So the AV Player Item Access Log
+
+00:09:16.976 --> 00:09:18.356 A:middle
+provides a history of your
+
+00:09:18.356 --> 00:09:18.876 A:middle
+session.
+
+00:09:19.476 --> 00:09:21.196 A:middle
+It is initially null, but as
+
+00:09:21.196 --> 00:09:23.476 A:middle
+playback occurs, you're going to
+
+00:09:23.476 --> 00:09:25.476 A:middle
+receive an AV Player Item New
+
+00:09:25.476 --> 00:09:27.086 A:middle
+Access Log Entry notification,
+
+00:09:27.086 --> 00:09:28.746 A:middle
+and by that time, you'll have an
+
+00:09:28.746 --> 00:09:29.396 A:middle
+Access Log.
+
+00:09:29.916 --> 00:09:30.946 A:middle
+You'll see that events in the
+
+00:09:30.946 --> 00:09:33.136 A:middle
+Access Log contain information
+
+00:09:33.856 --> 00:09:36.426 A:middle
+on various areas such as the
+
+00:09:36.426 --> 00:09:38.436 A:middle
+current variant URL, the current
+
+00:09:38.436 --> 00:09:41.326 A:middle
+bitrate, duration watch, number
+
+00:09:41.326 --> 00:09:42.466 A:middle
+of stalls, and so on.
+
+00:09:43.296 --> 00:09:45.636 A:middle
+These values are initially by
+
+00:09:45.636 --> 00:09:47.076 A:middle
+convention initialized to a
+
+00:09:47.786 --> 00:09:49.326 A:middle
+negative value or null.
+
+00:09:49.906 --> 00:09:52.316 A:middle
+As playback occurs, they are
+
+00:09:52.316 --> 00:09:53.706 A:middle
+updated with actual measurement
+
+00:09:53.706 --> 00:09:55.756 A:middle
+data and the actual variant URL
+
+00:09:55.756 --> 00:09:56.406 A:middle
+that you're playing.
+
+00:09:56.406 --> 00:09:59.016 A:middle
+There are two cases in which we
+
+00:09:59.016 --> 00:10:00.576 A:middle
+will add new events to the
+

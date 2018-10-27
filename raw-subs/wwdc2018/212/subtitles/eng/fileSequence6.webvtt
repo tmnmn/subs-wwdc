@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.856 --> 00:06:01.676 A:middle
+subtitle will appear, but it
+
+00:06:01.676 --> 00:06:03.566 A:middle
+would overlap that label that is
+
+00:06:03.566 --> 00:06:04.166 A:middle
+beneath it.
+
+00:06:04.886 --> 00:06:06.636 A:middle
+So, with Client-Side Rendering,
+
+00:06:06.686 --> 00:06:08.086 A:middle
+and full control over the
+
+00:06:08.086 --> 00:06:09.996 A:middle
+labels, we can just collide that
+
+00:06:09.996 --> 00:06:11.976 A:middle
+label out and remove it so that
+
+00:06:11.976 --> 00:06:14.056 A:middle
+the labels on the map never
+
+00:06:14.056 --> 00:06:15.736 A:middle
+overlap the text for your
+
+00:06:15.736 --> 00:06:16.546 A:middle
+annotations.
+
+00:06:17.516 --> 00:06:20.276 A:middle
+And even as users are zooming in
+
+00:06:20.276 --> 00:06:22.106 A:middle
+and out, and the map labels are
+
+00:06:22.106 --> 00:06:24.016 A:middle
+changing all over the place, the
+
+00:06:24.016 --> 00:06:25.666 A:middle
+map labels are never going to
+
+00:06:25.666 --> 00:06:27.406 A:middle
+overlap your annotation labels.
+
+00:06:28.156 --> 00:06:29.936 A:middle
+In fact, if you have a draggable
+
+00:06:29.936 --> 00:06:31.286 A:middle
+annotation and the user is
+
+00:06:31.286 --> 00:06:33.036 A:middle
+picking it up and moving it all
+
+00:06:33.036 --> 00:06:35.716 A:middle
+over the map, labels are never
+
+00:06:35.716 --> 00:06:37.726 A:middle
+going to overlap your annotation
+
+00:06:37.726 --> 00:06:38.216 A:middle
+labels.
+
+00:06:38.896 --> 00:06:41.166 A:middle
+So, this is one of the rendering
+
+00:06:41.166 --> 00:06:42.596 A:middle
+modes, Client-Side Rendering.
+
+00:06:43.096 --> 00:06:45.026 A:middle
+But web code can run anywhere,
+
+00:06:45.506 --> 00:06:47.066 A:middle
+and not all devices are created
+
+00:06:47.066 --> 00:06:47.546 A:middle
+equal.
+
+00:06:48.466 --> 00:06:51.616 A:middle
+So, for those times when your
+
+00:06:51.616 --> 00:06:53.046 A:middle
+users may be running on a low
+
+00:06:53.046 --> 00:06:54.646 A:middle
+performance configuration, maybe
+
+00:06:54.646 --> 00:06:56.856 A:middle
+an old device, we have a
+
+00:06:56.856 --> 00:06:58.076 A:middle
+different mode that we call
+
+00:06:58.076 --> 00:06:59.276 A:middle
+Labels Only Client-Side
+
+00:06:59.276 --> 00:06:59.766 A:middle
+Rendering.
+

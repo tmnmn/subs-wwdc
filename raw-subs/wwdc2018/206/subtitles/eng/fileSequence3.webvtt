@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.536 --> 00:03:01.116 A:middle
+And you might already be
+
+00:03:01.116 --> 00:03:02.816 A:middle
+specifying a thread ID and the
+
+00:03:02.816 --> 00:03:04.116 A:middle
+push notifications that get
+
+00:03:04.116 --> 00:03:05.806 A:middle
+forwarded from iOS to the Watch.
+
+00:03:07.576 --> 00:03:09.856 A:middle
+In WatchOS 5, this will cause
+
+00:03:09.856 --> 00:03:11.166 A:middle
+notifications to be grouped
+
+00:03:11.166 --> 00:03:12.666 A:middle
+automatically in Notification
+
+00:03:12.666 --> 00:03:13.806 A:middle
+Center as you saw in the
+
+00:03:13.806 --> 00:03:14.456 A:middle
+previous slide.
+
+00:03:15.706 --> 00:03:17.906 A:middle
+Specifying a category and thread
+
+00:03:17.906 --> 00:03:19.356 A:middle
+ID also opens up another
+
+00:03:19.356 --> 00:03:20.086 A:middle
+possibility.
+
+00:03:20.606 --> 00:03:23.406 A:middle
+Getting the same behavior as the
+
+00:03:23.406 --> 00:03:25.306 A:middle
+built-in messages app, where new
+
+00:03:25.306 --> 00:03:26.726 A:middle
+notifications with the same
+
+00:03:26.726 --> 00:03:28.046 A:middle
+thread ID that come in when the
+
+00:03:28.046 --> 00:03:29.706 A:middle
+original one is still on screen
+
+00:03:30.146 --> 00:03:31.586 A:middle
+are appended to the existing
+
+00:03:31.586 --> 00:03:32.036 A:middle
+interface.
+
+00:03:33.406 --> 00:03:34.776 A:middle
+We made this kind of grouping
+
+00:03:34.776 --> 00:03:36.646 A:middle
+behavior optional to give you a
+
+00:03:36.646 --> 00:03:37.986 A:middle
+chance to handle being called
+
+00:03:37.986 --> 00:03:39.446 A:middle
+multiple times for the same
+
+00:03:39.446 --> 00:03:40.556 A:middle
+notification interface
+
+00:03:40.556 --> 00:03:40.976 A:middle
+controller.
+
+00:03:43.736 --> 00:03:45.466 A:middle
+To opt into this behavior,
+
+00:03:45.606 --> 00:03:46.896 A:middle
+select your notifications
+
+00:03:46.976 --> 00:03:48.666 A:middle
+category in the interface
+
+00:03:48.666 --> 00:03:51.116 A:middle
+storyboard for your Watch app.
+
+00:03:51.206 --> 00:03:52.446 A:middle
+And check the handle's grouping
+
+00:03:52.446 --> 00:03:54.316 A:middle
+box in the attributes inspector.
+
+00:03:55.586 --> 00:03:57.186 A:middle
+If the original notification is
+
+00:03:57.186 --> 00:03:58.566 A:middle
+on screen when additional
+
+00:03:58.566 --> 00:04:00.306 A:middle
+notifications that have a
+

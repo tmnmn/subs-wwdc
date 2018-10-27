@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.156 --> 00:03:00.616 A:middle
+determine which users are
+
+00:03:00.616 --> 00:03:01.676 A:middle
+eligible for the introductory
+
+00:03:01.676 --> 00:03:02.156 A:middle
+prices.
+
+00:03:03.836 --> 00:03:06.296 A:middle
+For example, here's what it
+
+00:03:06.296 --> 00:03:07.696 A:middle
+looks like in the App Store when
+
+00:03:07.696 --> 00:03:08.996 A:middle
+you set up an introductory price
+
+00:03:08.996 --> 00:03:10.456 A:middle
+on a promoted in-app purchase.
+
+00:03:11.306 --> 00:03:12.796 A:middle
+You can see that it clearly
+
+00:03:12.796 --> 00:03:14.646 A:middle
+naturally lays out the terms of
+
+00:03:14.646 --> 00:03:15.726 A:middle
+the subscription to the user,
+
+00:03:16.426 --> 00:03:18.586 A:middle
+the first year for 19.99, then
+
+00:03:18.586 --> 00:03:21.006 A:middle
+39.99 for each year after that.
+
+00:03:21.556 --> 00:03:23.016 A:middle
+This is also a great benefit of
+
+00:03:23.016 --> 00:03:24.106 A:middle
+promoting your in-app purchases
+
+00:03:24.106 --> 00:03:25.236 A:middle
+that have introductory prices.
+
+00:03:25.596 --> 00:03:26.716 A:middle
+Users can see the discount
+
+00:03:26.716 --> 00:03:27.696 A:middle
+before they even install your
+
+00:03:27.886 --> 00:03:28.486 A:middle
+app.
+
+00:03:29.596 --> 00:03:30.696 A:middle
+Today I'm going to go over these
+
+00:03:30.696 --> 00:03:32.336 A:middle
+new APIs with you and look at a
+
+00:03:32.336 --> 00:03:33.386 A:middle
+couple ways you may want to set
+
+00:03:33.386 --> 00:03:36.616 A:middle
+up your introductory prices.
+
+00:03:37.856 --> 00:03:40.026 A:middle
+First, there's a new property on
+
+00:03:40.126 --> 00:03:41.496 A:middle
+SKProduct which is called
+
+00:03:41.496 --> 00:03:42.016 A:middle
+fittingly enough
+
+00:03:42.656 --> 00:03:43.476 A:middle
+introductoryPrice.
+
+00:03:44.116 --> 00:03:45.456 A:middle
+This is a new class that's
+
+00:03:45.456 --> 00:03:46.676 A:middle
+called SKProductDiscount.
+
+00:03:47.656 --> 00:03:48.566 A:middle
+This class contains all the
+
+00:03:48.566 --> 00:03:49.776 A:middle
+information about introductory
+
+00:03:49.776 --> 00:03:50.426 A:middle
+price you've set up.
+
+00:03:50.486 --> 00:03:52.406 A:middle
+And as you can see it's an
+
+00:03:52.406 --> 00:03:53.776 A:middle
+optional property that's because
+
+00:03:53.776 --> 00:03:55.226 A:middle
+only subscriptions can have
+
+00:03:55.226 --> 00:03:56.996 A:middle
+introductory prices and not all
+
+00:03:56.996 --> 00:03:59.226 A:middle
+subscriptions will have them.
+
+00:03:59.316 --> 00:04:00.286 A:middle
+So let's dive into
+

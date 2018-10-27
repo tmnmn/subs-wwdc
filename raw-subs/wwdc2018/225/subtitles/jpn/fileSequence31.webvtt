@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.359 --> 00:31:00.527 align:start position:38% line:-1
+分かってくれた
+
+00:31:00.627 --> 00:31:02.596 align:start position:34% line:-1
+ではスライドに戻り
+
+00:31:02.996 --> 00:31:07.100 align:start position:30% line:-2
+アニメーションを
+救えるか見てみましょう
+
+00:31:07.734 --> 00:31:08.802 align:start position:34% line:-1
+これは前に見ました
+
+00:31:08.902 --> 00:31:09.970 align:start position:46% line:-1
+では
+
+00:31:10.270 --> 00:31:15.175 align:start position:32% line:-2
+このデバッグ例外が
+示すものを見てみます
+
+00:31:15.475 --> 00:31:18.579 align:start position:23% line:-1
+indexPathの0-3から
+
+00:31:18.679 --> 00:31:21.582 align:start position:30% line:-1
+削除と移動を試みました
+
+00:31:21.682 --> 00:31:25.519 align:start position:29% line:-2
+４番目のアイテムを
+リロードして移動しました
+
+00:31:26.487 --> 00:31:29.823 align:start position:25% line:-2
+４番でなく
+３番目の0-2を削除したはず
+
+00:31:30.057 --> 00:31:31.091 align:start position:43% line:-1
+そうだね
+
+00:31:31.191 --> 00:31:33.560 align:start position:38% line:-1
+何かおかしいな
+
+00:31:33.660 --> 00:31:38.799 align:start position:11% line:-2
+まずperformBatchUpdatesの
+APIを確認して
+
+00:31:38.899 --> 00:31:42.202 align:start position:29% line:-2
+ハイレベルな原則について
+お話しします
+
+00:31:42.302 --> 00:31:45.105 align:start position:27% line:-1
+このAPIを使用する目的は
+
+00:31:45.205 --> 00:31:49.710 align:start position:23% line:-1
+同時に複数の更新を行うことです
+
+00:31:49.810 --> 00:31:54.181 align:start position:25% line:-2
+そして全てに
+アニメーションを演出させます
+
+00:31:54.281 --> 00:31:58.619 align:start position:14% line:-1
+CollectionViewの更新と共に
+
+00:31:58.719 --> 00:32:02.923 align:start position:32% line:-2
+データソースの更新を
+必ず行ってください
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.036 --> 00:16:01.656 A:middle
+SFrame with three columns.
+
+00:16:02.216 --> 00:16:03.766 A:middle
+It joined on that path column.
+
+00:16:04.016 --> 00:16:05.956 A:middle
+So for each image with a path,
+
+00:16:06.206 --> 00:16:07.766 A:middle
+it combined the annotations for
+
+00:16:07.766 --> 00:16:08.246 A:middle
+that path.
+
+00:16:09.006 --> 00:16:10.566 A:middle
+And so now for each image, we
+
+00:16:10.566 --> 00:16:11.806 A:middle
+have annotations available.
+
+00:16:12.656 --> 00:16:13.486 A:middle
+Now we're ready to train a
+
+00:16:13.486 --> 00:16:13.786 A:middle
+model.
+
+00:16:14.386 --> 00:16:17.936 A:middle
+So I'm going to create a new
+
+00:16:17.936 --> 00:16:20.396 A:middle
+section here called train a
+
+00:16:20.396 --> 00:16:20.716 A:middle
+model.
+
+00:16:23.406 --> 00:16:26.006 A:middle
+And that's just one line of code
+
+00:16:26.006 --> 00:16:26.276 A:middle
+here.
+
+00:16:26.276 --> 00:16:28.096 A:middle
+I'm going to say model equals
+
+00:16:28.426 --> 00:16:30.606 A:middle
+TC.objectdetector.create.
+
+00:16:30.936 --> 00:16:31.896 A:middle
+And this is our simple
+
+00:16:31.896 --> 00:16:33.636 A:middle
+task-focused API for object
+
+00:16:33.636 --> 00:16:35.166 A:middle
+detection that expects data in
+
+00:16:35.166 --> 00:16:35.696 A:middle
+this format.
+
+00:16:36.476 --> 00:16:37.906 A:middle
+I'm going to pass in that data
+
+00:16:37.906 --> 00:16:39.226 A:middle
+SFrame that I just created.
+
+00:16:39.686 --> 00:16:41.126 A:middle
+And for the purposes of today's
+
+00:16:41.126 --> 00:16:42.816 A:middle
+demo, I'm going to pass another
+
+00:16:42.816 --> 00:16:44.686 A:middle
+parameter called max iterations
+
+00:16:45.136 --> 00:16:46.706 A:middle
+and normally you wouldn't need
+
+00:16:46.706 --> 00:16:48.046 A:middle
+to pass this parameter because
+
+00:16:48.086 --> 00:16:49.366 A:middle
+Turi Create will pick the
+
+00:16:49.366 --> 00:16:50.846 A:middle
+correct number of iterations for
+
+00:16:50.846 --> 00:16:51.076 A:middle
+you.
+
+00:16:51.226 --> 00:16:52.206 A:middle
+Based on the data that you
+
+00:16:52.206 --> 00:16:52.676 A:middle
+provide.
+
+00:16:53.456 --> 00:16:54.916 A:middle
+In this case, I'm going to say
+
+00:16:54.916 --> 00:16:56.876 A:middle
+max iterations equals one just
+
+00:16:56.876 --> 00:16:58.216 A:middle
+to give an example of what
+
+00:16:58.216 --> 00:16:59.076 A:middle
+training would look like.
+
+00:16:59.886 --> 00:17:01.216 A:middle
+And the reason this is going to
+

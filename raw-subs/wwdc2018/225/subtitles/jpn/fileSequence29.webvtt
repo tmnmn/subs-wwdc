@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:00.407 --> 00:29:02.643 align:start position:29% line:-1
+モハメドがシミュレータで
+
+00:29:02.743 --> 00:29:05.412 align:start position:34% line:-1
+やり方を説明します
+
+00:29:06.113 --> 00:29:07.281 align:start position:39% line:-1
+では始めます
+
+00:29:08.515 --> 00:29:13.620 align:start position:27% line:-2
+複数の更新アニメーションを
+同時に行っています
+
+00:29:13.954 --> 00:29:19.092 align:start position:20% line:-2
+UICollectionViewと
+UITableViewが提供する―
+
+00:29:19.193 --> 00:29:21.728 align:start position:7% line:-2
+performBatchUpdatesのAPIが
+使えます
+
+00:29:21.828 --> 00:29:25.866 align:start position:25% line:-1
+これで更新とアニメーションが
+
+00:29:25.966 --> 00:29:30.137 align:start position:25% line:-1
+同時に実行されるようにします
+
+00:29:30.470 --> 00:29:35.676 align:start position:14% line:-2
+performBatchUpdatesを
+呼び出します
+
+00:29:35.776 --> 00:29:38.278 align:start position:11% line:-1
+データソースとCollectionViewの
+
+00:29:38.378 --> 00:29:41.048 align:start position:27% line:-1
+両方の更新をここで行います
+
+00:29:41.148 --> 00:29:45.819 align:start position:21% line:-1
+これは更新が矛盾を生まないように
+
+00:29:45.919 --> 00:29:50.190 align:start position:23% line:-1
+同期させる最善の方法と言えます
+
+00:29:50.757 --> 00:29:54.962 align:start position:30% line:-2
+初めに データソースの
+最後のアイテムを
+
+00:29:55.062 --> 00:29:57.464 align:start position:32% line:-1
+更新したいと思います
+
+00:29:57.564 --> 00:30:02.102 align:start position:29% line:-2
+下から２番目を削除し
+最後を１番上に持ってきて
+

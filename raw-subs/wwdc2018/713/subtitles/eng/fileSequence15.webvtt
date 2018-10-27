@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.336 --> 00:15:01.246 A:middle
+in your app when you incorporate
+
+00:15:01.486 --> 00:15:03.036 A:middle
+that model into your application
+
+00:15:03.486 --> 00:15:05.406 A:middle
+at run time when it encounters
+
+00:15:05.406 --> 00:15:06.956 A:middle
+some piece of data from the
+
+00:15:06.956 --> 00:15:08.986 A:middle
+user, and then it analyzes that
+
+00:15:08.986 --> 00:15:09.976 A:middle
+data and predicts the
+
+00:15:09.976 --> 00:15:11.346 A:middle
+appropriate labels for it.
+
+00:15:11.806 --> 00:15:13.396 A:middle
+So let's see how these phases
+
+00:15:13.396 --> 00:15:13.676 A:middle
+work.
+
+00:15:14.936 --> 00:15:16.246 A:middle
+So let's start with training,
+
+00:15:17.076 --> 00:15:18.366 A:middle
+and training always starts with
+
+00:15:18.426 --> 00:15:18.786 A:middle
+data.
+
+00:15:19.406 --> 00:15:22.056 A:middle
+You take your training data, and
+
+00:15:22.056 --> 00:15:23.856 A:middle
+then you feed it in to in this
+
+00:15:23.856 --> 00:15:26.956 A:middle
+case Create ML in a playground
+
+00:15:26.956 --> 00:15:29.236 A:middle
+let us say or a script
+
+00:15:30.286 --> 00:15:30.986 A:middle
+[inaudible] as you may have seen
+
+00:15:30.986 --> 00:15:32.066 A:middle
+in the Create ML session.
+
+00:15:32.616 --> 00:15:34.606 A:middle
+Create ML calls the Natural
+
+00:15:34.606 --> 00:15:35.446 A:middle
+Language framework under the
+
+00:15:35.446 --> 00:15:38.196 A:middle
+hood to do the training, and
+
+00:15:38.196 --> 00:15:40.806 A:middle
+what comes out is a core ML
+
+00:15:40.806 --> 00:15:43.726 A:middle
+model that's optimized for use
+
+00:15:43.766 --> 00:15:44.586 A:middle
+on device.
+
+00:15:45.956 --> 00:15:47.616 A:middle
+So let's look at what this data
+
+00:15:47.616 --> 00:15:49.416 A:middle
+might look like.
+
+00:15:49.786 --> 00:15:51.396 A:middle
+So Create ML supports a number
+
+00:15:51.396 --> 00:15:52.856 A:middle
+of different data formats.
+
+00:15:53.276 --> 00:15:55.376 A:middle
+Right here we're showing our
+
+00:15:55.376 --> 00:15:57.666 A:middle
+data in JSON because JSON makes
+
+00:15:57.666 --> 00:16:00.946 A:middle
+things perfectly clear, and this
+

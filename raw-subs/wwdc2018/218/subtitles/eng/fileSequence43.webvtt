@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:00.736 --> 00:43:02.206 A:middle
+And the problem with this is
+
+00:43:02.206 --> 00:43:03.816 A:middle
+that once we've used lockFocus,
+
+00:43:04.196 --> 00:43:05.656 A:middle
+we lose a lot of the semantics.
+
+00:43:05.856 --> 00:43:07.116 A:middle
+We just have a single bitmap
+
+00:43:07.116 --> 00:43:07.906 A:middle
+representation.
+
+00:43:08.466 --> 00:43:10.496 A:middle
+And so if the appearance changes
+
+00:43:10.756 --> 00:43:12.086 A:middle
+or if many other conditions
+
+00:43:12.086 --> 00:43:13.106 A:middle
+change, including say the
+
+00:43:13.106 --> 00:43:14.436 A:middle
+backing scale factor because
+
+00:43:14.436 --> 00:43:15.606 A:middle
+you've moved your window from a
+
+00:43:15.606 --> 00:43:16.966 A:middle
+Retina display to a non-Retina
+
+00:43:16.966 --> 00:43:18.926 A:middle
+display, suddenly this drawing
+
+00:43:18.926 --> 00:43:19.706 A:middle
+is going to be stale.
+
+00:43:20.846 --> 00:43:22.106 A:middle
+So, a better solution is to use
+
+00:43:22.106 --> 00:43:24.596 A:middle
+the block-based image-- image
+
+00:43:24.866 --> 00:43:27.386 A:middle
+initializer, NSImage size
+
+00:43:27.586 --> 00:43:28.796 A:middle
+flipped drawing handler.
+
+00:43:29.656 --> 00:43:31.516 A:middle
+And we can just do the exact
+
+00:43:31.516 --> 00:43:32.516 A:middle
+same drawing that we were doing
+
+00:43:32.516 --> 00:43:34.036 A:middle
+before, but inside of this
+
+00:43:34.086 --> 00:43:34.426 A:middle
+block.
+
+00:43:34.716 --> 00:43:36.286 A:middle
+And when you assign this kind of
+
+00:43:36.286 --> 00:43:38.286 A:middle
+image to an NSImageView, you're
+
+00:43:38.286 --> 00:43:39.466 A:middle
+automatically going to have this
+
+00:43:39.466 --> 00:43:41.796 A:middle
+block rerun when the appearance
+
+00:43:41.796 --> 00:43:43.636 A:middle
+changes, scale factor changes,
+
+00:43:43.666 --> 00:43:45.036 A:middle
+color gamut changes-- anything
+
+00:43:45.036 --> 00:43:45.946 A:middle
+changes, essentially.
+
+00:43:46.706 --> 00:43:48.006 A:middle
+And so that's great news because
+
+00:43:48.006 --> 00:43:49.816 A:middle
+if our, say, badge fill color is
+
+00:43:49.816 --> 00:43:51.336 A:middle
+a dynamic color, it's going to
+
+00:43:51.336 --> 00:43:52.296 A:middle
+always resolve against the
+
+00:43:52.296 --> 00:43:53.196 A:middle
+correct appearance.
+
+00:43:54.696 --> 00:43:55.906 A:middle
+There are a couple of other ways
+
+00:43:55.906 --> 00:43:56.546 A:middle
+that you might be doing
+
+00:43:56.546 --> 00:43:57.206 A:middle
+offscreen drawing.
+
+00:43:57.906 --> 00:43:59.056 A:middle
+You might be making custom
+
+00:43:59.056 --> 00:44:00.646 A:middle
+bitmap graphics contexts using
+

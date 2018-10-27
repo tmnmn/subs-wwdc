@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.386 --> 00:06:00.656 A:middle
+on-demand key loading request if
+
+00:06:00.656 --> 00:06:01.966 A:middle
+the playback route changes, for
+
+00:06:01.966 --> 00:06:02.526 A:middle
+instance.
+
+00:06:03.736 --> 00:06:05.836 A:middle
+Keep in mind that the user could
+
+00:06:05.836 --> 00:06:07.596 A:middle
+decide to AirPlay the content to
+
+00:06:07.596 --> 00:06:10.356 A:middle
+an Apple TV or plug in a
+
+00:06:10.356 --> 00:06:11.856 A:middle
+Lightning to Digital AV adapter.
+
+00:06:12.326 --> 00:06:14.546 A:middle
+And in these cases, we need new
+
+00:06:14.836 --> 00:06:16.016 A:middle
+keys for decryption.
+
+00:06:17.856 --> 00:06:20.116 A:middle
+So, the app should always be
+
+00:06:20.116 --> 00:06:22.776 A:middle
+prepared to answer on-demand key
+
+00:06:22.776 --> 00:06:24.656 A:middle
+loading requests, even when it
+
+00:06:24.656 --> 00:06:25.606 A:middle
+preloads keys.
+
+00:06:28.636 --> 00:06:30.226 A:middle
+Here's another frequently asked
+
+00:06:30.226 --> 00:06:31.386 A:middle
+question around this topic.
+
+00:06:32.086 --> 00:06:33.776 A:middle
+How could the app preload all
+
+00:06:33.776 --> 00:06:36.206 A:middle
+keys that might be required
+
+00:06:36.206 --> 00:06:37.026 A:middle
+during playback?
+
+00:06:38.336 --> 00:06:40.366 A:middle
+Well, in order to preload a key,
+
+00:06:40.686 --> 00:06:42.046 A:middle
+you need the corresponding key
+
+00:06:42.046 --> 00:06:42.746 A:middle
+identifier.
+
+00:06:43.286 --> 00:06:45.266 A:middle
+The one that's specified in
+
+00:06:45.266 --> 00:06:46.766 A:middle
+EXT-X-KEY tag in the HLS
+
+00:06:46.766 --> 00:06:47.676 A:middle
+playlist.
+
+00:06:49.236 --> 00:06:51.436 A:middle
+We recommend that you obtain all
+
+00:06:51.436 --> 00:06:54.286 A:middle
+key identifiers and asset
+
+00:06:54.576 --> 00:06:55.806 A:middle
+[inaudible] from your server in
+
+00:06:55.806 --> 00:06:56.846 A:middle
+an out-of-band fashion.
+
+00:06:58.196 --> 00:07:00.626 A:middle
+Another option is to include all
+

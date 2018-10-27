@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.116 --> 00:17:00.986 A:middle
+Then, I'm going to check if it's
+
+00:17:00.986 --> 00:17:01.466 A:middle
+available.
+
+00:17:06.656 --> 00:17:09.086 A:middle
+If it isn't, I'm going to call
+
+00:17:09.086 --> 00:17:10.646 A:middle
+the Completion Handler with our
+
+00:17:10.646 --> 00:17:12.076 A:middle
+new Failure, Out of Stock Error.
+
+00:17:18.096 --> 00:17:20.175 A:middle
+And provided the soup object
+
+00:17:20.175 --> 00:17:21.126 A:middle
+that the user requested.
+
+00:17:25.215 --> 00:17:27.526 A:middle
+Alright, so we have provided the
+
+00:17:27.566 --> 00:17:29.006 A:middle
+custom error code here in
+
+00:17:29.006 --> 00:17:29.546 A:middle
+completion.
+
+00:17:30.116 --> 00:17:31.206 A:middle
+Let's take a look at Handle.
+
+00:17:32.416 --> 00:17:34.926 A:middle
+Handling this intent means
+
+00:17:34.926 --> 00:17:35.736 A:middle
+ordering our soup.
+
+00:17:36.346 --> 00:17:38.146 A:middle
+So first, we build the Order
+
+00:17:38.146 --> 00:17:39.586 A:middle
+Object from Intent.
+
+00:17:41.006 --> 00:17:42.976 A:middle
+Then we place the order, using
+
+00:17:42.976 --> 00:17:43.736 A:middle
+our order manager.
+
+00:17:44.356 --> 00:17:47.166 A:middle
+And finally, let the system know
+
+00:17:47.606 --> 00:17:48.626 A:middle
+that the order was successful.
+
+00:17:49.556 --> 00:17:50.976 A:middle
+But this is our chance to
+
+00:17:50.976 --> 00:17:52.766 A:middle
+provide users with more helpful
+
+00:17:52.766 --> 00:17:54.206 A:middle
+information like wait time.
+
+00:17:54.656 --> 00:17:55.776 A:middle
+So, let's call the Completion
+
+00:17:55.776 --> 00:17:57.316 A:middle
+Handler with our New Custom
+
+00:17:57.316 --> 00:17:58.466 A:middle
+Response Code.
+

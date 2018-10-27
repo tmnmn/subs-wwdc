@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.586 --> 00:12:00.446 A:middle
+architecture, and you can
+
+00:12:00.446 --> 00:12:02.106 A:middle
+inspect the registers to see the
+
+00:12:02.106 --> 00:12:02.596 A:middle
+arguments.
+
+00:12:03.056 --> 00:12:04.086 A:middle
+Well, I'll admit I never
+
+00:12:04.086 --> 00:12:06.486 A:middle
+remember what those registers
+
+00:12:06.486 --> 00:12:08.116 A:middle
+are but thankfully, I don't have
+
+00:12:08.166 --> 00:12:09.866 A:middle
+to because the debugger provides
+
+00:12:09.866 --> 00:12:10.786 A:middle
+pseudo-registers.
+
+00:12:11.426 --> 00:12:13.896 A:middle
+Dollar arg one is translated to
+
+00:12:13.896 --> 00:12:14.856 A:middle
+the register that holds the
+
+00:12:14.856 --> 00:12:15.606 A:middle
+first argument.
+
+00:12:15.956 --> 00:12:16.986 A:middle
+So in this case, we can have a
+
+00:12:16.986 --> 00:12:18.276 A:middle
+look at the receiver of that
+
+00:12:18.276 --> 00:12:19.956 A:middle
+Objective-C message, which is a
+
+00:12:19.956 --> 00:12:21.056 A:middle
+UI label instance.
+
+00:12:22.056 --> 00:12:23.356 A:middle
+Now we see that it has a value
+
+00:12:23.356 --> 00:12:25.916 A:middle
+of 17 feet, and that indicates
+
+00:12:25.916 --> 00:12:26.886 A:middle
+to me that it's this height
+
+00:12:26.886 --> 00:12:28.496 A:middle
+label here, so it's not the
+
+00:12:28.496 --> 00:12:29.746 A:middle
+label we're interested in, but
+
+00:12:29.746 --> 00:12:30.556 A:middle
+while we're here, let's look at
+
+00:12:30.556 --> 00:12:31.386 A:middle
+the other arguments.
+
+00:12:32.186 --> 00:12:32.976 A:middle
+If you're familiar with
+
+00:12:32.976 --> 00:12:34.576 A:middle
+Objective-C message send, you
+
+00:12:34.576 --> 00:12:35.636 A:middle
+may remember that the second
+
+00:12:35.636 --> 00:12:36.876 A:middle
+argument should be the selector.
+
+00:12:37.656 --> 00:12:38.576 A:middle
+We don't see that here but
+
+00:12:38.576 --> 00:12:39.956 A:middle
+that's because LLDB doesn't
+
+00:12:39.956 --> 00:12:41.116 A:middle
+implicitly know the types of
+
+00:12:41.476 --> 00:12:42.156 A:middle
+these arguments.
+
+00:12:42.156 --> 00:12:43.306 A:middle
+So in some cases, we need to
+
+00:12:43.306 --> 00:12:44.836 A:middle
+typecast it and now we see the
+
+00:12:44.836 --> 00:12:45.966 A:middle
+selector for this message.
+
+00:12:46.376 --> 00:12:48.226 A:middle
+Now the third argument is the
+
+00:12:48.226 --> 00:12:50.516 A:middle
+first parameter passed into the
+
+00:12:50.516 --> 00:12:50.906 A:middle
+method.
+
+00:12:50.986 --> 00:12:52.846 A:middle
+In other words, it's the string
+
+00:12:52.846 --> 00:12:53.906 A:middle
+passed into the set text.
+
+00:12:54.206 --> 00:12:55.516 A:middle
+So this is a great convenience
+
+00:12:55.516 --> 00:12:56.896 A:middle
+for inspecting the arguments, if
+
+00:12:56.896 --> 00:12:59.316 A:middle
+you're in an assembly frame for
+
+00:12:59.316 --> 00:13:00.216 A:middle
+one of the frameworks.
+

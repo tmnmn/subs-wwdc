@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:01.836 --> 00:21:01.936 A:middle
+this.
+
+00:21:02.136 --> 00:21:03.796 A:middle
+First, let's look at some issues
+
+00:21:03.796 --> 00:21:05.446 A:middle
+with HTTP/1.1.
+
+00:21:06.896 --> 00:21:07.846 A:middle
+Your app wants to fetch a
+
+00:21:07.846 --> 00:21:10.486 A:middle
+resource, you can create a
+
+00:21:10.486 --> 00:21:13.196 A:middle
+URLSession task and call resume.
+
+00:21:14.146 --> 00:21:16.626 A:middle
+URLSession will create a new
+
+00:21:16.626 --> 00:21:17.976 A:middle
+connection for you, which
+
+00:21:17.976 --> 00:21:21.136 A:middle
+involves DNS, TCP and TLS.
+
+00:21:22.626 --> 00:21:23.826 A:middle
+Once the connection to the
+
+00:21:23.826 --> 00:21:25.606 A:middle
+server is established, we will
+
+00:21:25.606 --> 00:21:26.656 A:middle
+send out your request.
+
+00:21:27.256 --> 00:21:30.046 A:middle
+We will then wait to get a
+
+00:21:30.046 --> 00:21:32.446 A:middle
+response from the server.
+
+00:21:32.656 --> 00:21:34.176 A:middle
+This is the network idle time
+
+00:21:34.356 --> 00:21:35.666 A:middle
+when your app is not doing any
+
+00:21:35.666 --> 00:21:37.096 A:middle
+kind of networking, waiting to
+
+00:21:37.096 --> 00:21:40.486 A:middle
+get a response from the server.
+
+00:21:40.596 --> 00:21:42.616 A:middle
+Once we get a response, we will
+
+00:21:42.616 --> 00:21:44.376 A:middle
+call your completion block or
+
+00:21:44.376 --> 00:21:46.156 A:middle
+message your delegate indicating
+
+00:21:46.156 --> 00:21:47.366 A:middle
+that the load has finished.
+
+00:21:47.946 --> 00:21:50.446 A:middle
+Let's suppose in the middle of
+
+00:21:50.446 --> 00:21:51.676 A:middle
+this load your app wants to
+
+00:21:51.676 --> 00:21:53.086 A:middle
+fetch another resource from the
+
+00:21:53.086 --> 00:21:53.756 A:middle
+same server.
+
+00:21:54.376 --> 00:21:56.346 A:middle
+You can create another
+
+00:21:56.406 --> 00:21:58.776 A:middle
+URLSession task called resume
+
+00:21:59.346 --> 00:22:01.766 A:middle
+and URLSession will create a new
+

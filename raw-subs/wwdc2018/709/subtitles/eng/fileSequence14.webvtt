@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.796 --> 00:14:01.136 A:middle
+which we had just quantized.
+
+00:14:01.956 --> 00:14:03.126 A:middle
+And because this model is a
+
+00:14:03.126 --> 00:14:05.976 A:middle
+simple image classifier which it
+
+00:14:05.976 --> 00:14:07.386 A:middle
+only has one image inputs.
+
+00:14:08.136 --> 00:14:09.026 A:middle
+We, we have a convenience
+
+00:14:09.026 --> 00:14:09.426 A:middle
+utility.
+
+00:14:09.426 --> 00:14:11.296 A:middle
+So we can just pass in a folder
+
+00:14:11.296 --> 00:14:12.766 A:middle
+containing sample data images.
+
+00:14:13.146 --> 00:14:14.746 A:middle
+Now on my desktop here, I have a
+
+00:14:14.746 --> 00:14:16.216 A:middle
+folder with a set of images
+
+00:14:16.216 --> 00:14:17.156 A:middle
+which are relevant for my
+
+00:14:17.156 --> 00:14:17.816 A:middle
+application.
+
+00:14:18.146 --> 00:14:18.966 A:middle
+So I'm going to go ahead and
+
+00:14:18.966 --> 00:14:22.186 A:middle
+pass a path to this folder as my
+
+00:14:22.186 --> 00:14:22.816 A:middle
+[inaudible] parameter.
+
+00:14:28.066 --> 00:14:29.776 A:middle
+Great. So now we see we're
+
+00:14:29.776 --> 00:14:31.306 A:middle
+analyzing all the images in that
+
+00:14:31.306 --> 00:14:31.736 A:middle
+folder.
+
+00:14:31.766 --> 00:14:33.796 A:middle
+We're running inference on the,
+
+00:14:33.796 --> 00:14:35.546 A:middle
+we're using full prediction or
+
+00:14:35.546 --> 00:14:36.486 A:middle
+full precision model.
+
+00:14:36.576 --> 00:14:37.676 A:middle
+And we're running inference on
+
+00:14:37.676 --> 00:14:38.606 A:middle
+our quantized model.
+
+00:14:38.636 --> 00:14:39.616 A:middle
+And we're comparing our two
+
+00:14:39.616 --> 00:14:40.176 A:middle
+predictions.
+
+00:14:41.436 --> 00:14:42.376 A:middle
+So we seem to have finished
+
+00:14:42.376 --> 00:14:42.616 A:middle
+that.
+
+00:14:42.616 --> 00:14:45.066 A:middle
+And you can see our Top 1
+
+00:14:45.066 --> 00:14:46.946 A:middle
+Agreement is 94.8%.
+
+00:14:47.766 --> 00:14:50.186 A:middle
+Not bad. Now what does this Top
+
+00:14:50.186 --> 00:14:50.996 A:middle
+1 Agreement mean?
+
+00:14:51.586 --> 00:14:52.996 A:middle
+This means that when I pass in
+
+00:14:52.996 --> 00:14:55.896 A:middle
+my original model, that image of
+
+00:14:55.896 --> 00:14:57.546 A:middle
+a dog for example, and it
+
+00:14:57.546 --> 00:14:58.576 A:middle
+predicted that this image was a
+
+00:14:58.576 --> 00:14:58.916 A:middle
+dog.
+
+00:14:59.226 --> 00:15:00.766 A:middle
+My quantized model did the same.
+

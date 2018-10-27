@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.840 --> 00:14:04.278 align:start position:25% line:-2
+クラッシュ時に動いていた
+スレッドのバックトレースです
+
+00:14:04.444 --> 00:14:07.114 align:start position:25% line:-1
+１つがクラッシュスレッドで―
+
+00:14:07.414 --> 00:14:12.486 align:start position:25% line:-2
+その他に動いていたスレッドも
+表示されます
+
+00:14:13.820 --> 00:14:16.823 align:start position:27% line:-1
+その下は低レベルの情報です
+
+00:14:16.924 --> 00:14:20.861 align:start position:29% line:-2
+クラッシュしたスレッドの
+レジスタ状態と―
+
+00:14:21.261 --> 00:14:24.865 align:start position:27% line:-2
+ロードされた
+バイナリイメージがあります
+
+00:14:25.265 --> 00:14:29.903 align:start position:29% line:-2
+これは実行可能なAppと
+他のライブラリです
+
+00:14:30.270 --> 00:14:33.474 align:start position:27% line:-2
+Xcodeは
+これをシンボル化に使います
+
+00:14:33.574 --> 00:14:40.080 align:start position:27% line:-2
+シンボルやファイルや
+行番号の情報を得るためです
+
+00:14:41.081 --> 00:14:43.383 align:start position:32% line:-2
+これがクラッシュログ
+ファイルの中身です
+
+00:14:43.984 --> 00:14:47.654 align:start position:27% line:-2
+では どうデバッグするか？
+読み方は？
+
+00:14:48.422 --> 00:14:51.058 align:start position:27% line:-1
+まずはクラッシュの理由から
+
+00:14:51.158 --> 00:14:52.860 align:start position:38% line:-1
+例外タイプです
+
+00:14:53.093 --> 00:14:57.931 align:start position:11% line:-2
+この場合は
+EXC BAD INSTRUCTIONですね
+
+00:14:58.031 --> 00:15:02.836 align:start position:18% line:-1
+SIGILLは不正命令のシグナルです
+

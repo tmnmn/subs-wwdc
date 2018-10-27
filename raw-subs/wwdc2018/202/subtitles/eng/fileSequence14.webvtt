@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.686 --> 00:14:00.036 A:middle
+these larger requests or just
+
+00:14:00.036 --> 00:14:01.376 A:middle
+reduce those overall peak
+
+00:14:01.376 --> 00:14:03.376 A:middle
+demands can actually have both a
+
+00:14:03.496 --> 00:14:05.186 A:middle
+big impact on the performance of
+
+00:14:05.186 --> 00:14:07.236 A:middle
+your app while you're using it
+
+00:14:07.236 --> 00:14:08.816 A:middle
+and also improve the customer
+
+00:14:08.816 --> 00:14:10.366 A:middle
+experience across other apps
+
+00:14:10.426 --> 00:14:10.716 A:middle
+later.
+
+00:14:12.716 --> 00:14:14.006 A:middle
+So there's many ways that you
+
+00:14:14.006 --> 00:14:16.186 A:middle
+can reduce the total memory
+
+00:14:16.186 --> 00:14:17.806 A:middle
+usage of your apps and starting
+
+00:14:17.806 --> 00:14:19.146 A:middle
+with a profile and instruments
+
+00:14:19.146 --> 00:14:20.326 A:middle
+is a great way to look at that.
+
+00:14:20.746 --> 00:14:21.886 A:middle
+But for this morning, we're just
+
+00:14:21.886 --> 00:14:23.496 A:middle
+going to take a look at one new
+
+00:14:23.496 --> 00:14:25.306 A:middle
+technique that iOS 12 brings
+
+00:14:25.306 --> 00:14:26.666 A:middle
+along that helps reduce the
+
+00:14:26.666 --> 00:14:29.216 A:middle
+memory usage of your apps and
+
+00:14:29.216 --> 00:14:30.786 A:middle
+that's Automatic Backing Stores.
+
+00:14:31.856 --> 00:14:32.966 A:middle
+So let's say we want to draw
+
+00:14:32.966 --> 00:14:34.616 A:middle
+this lazy prairie dog in
+
+00:14:34.656 --> 00:14:36.356 A:middle
+portrait mode on an iPhone X.
+
+00:14:37.266 --> 00:14:38.826 A:middle
+Now, how big is that going to
+
+00:14:38.826 --> 00:14:38.893 A:middle
+be?
+
+00:14:39.436 --> 00:14:41.666 A:middle
+Portrait mode on iPhone X, 375
+
+00:14:41.736 --> 00:14:43.376 A:middle
+points wide and, to preserve our
+
+00:14:43.376 --> 00:14:45.346 A:middle
+aspect ratio, it'll be 250
+
+00:14:45.346 --> 00:14:46.176 A:middle
+points tall.
+
+00:14:46.706 --> 00:14:48.646 A:middle
+So how much memory will that
+
+00:14:48.646 --> 00:14:48.896 A:middle
+use?
+
+00:14:49.536 --> 00:14:54.956 A:middle
+Well, 375 by 250 at 3x, with 64
+
+00:14:54.956 --> 00:14:56.346 A:middle
+bits per pixel because this is a
+
+00:14:56.346 --> 00:14:58.226 A:middle
+deep color device, is going to
+
+00:14:58.226 --> 00:15:00.406 A:middle
+be 2.2 megabytes of memory to
+

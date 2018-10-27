@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.076 --> 00:29:00.136 A:middle
+That can be displayed far off at
+
+00:29:00.206 --> 00:29:01.576 A:middle
+some point in the future based
+
+00:29:01.576 --> 00:29:02.776 A:middle
+on the user's actions.
+
+00:29:04.246 --> 00:29:07.106 A:middle
+So we have a new API that
+
+00:29:07.106 --> 00:29:09.316 A:middle
+creates a deferred localizable
+
+00:29:09.316 --> 00:29:12.516 A:middle
+string that will be localized at
+
+00:29:12.516 --> 00:29:13.946 A:middle
+the point where the string is
+
+00:29:13.946 --> 00:29:15.306 A:middle
+presented to the user.
+
+00:29:16.006 --> 00:29:19.376 A:middle
+And this is necessary because
+
+00:29:19.446 --> 00:29:21.226 A:middle
+donating an intent to the system
+
+00:29:21.226 --> 00:29:23.136 A:middle
+is really telling the system,
+
+00:29:23.216 --> 00:29:25.026 A:middle
+hey, the user performed some
+
+00:29:25.026 --> 00:29:27.696 A:middle
+action in my application that
+
+00:29:27.696 --> 00:29:29.886 A:middle
+you might want to offer them
+
+00:29:29.886 --> 00:29:31.896 A:middle
+again at some other point.
+
+00:29:33.026 --> 00:29:35.506 A:middle
+And, fortunately, this API is
+
+00:29:35.506 --> 00:29:37.346 A:middle
+extremely simple to use.
+
+00:29:37.746 --> 00:29:39.976 A:middle
+It's just one call added to NS
+
+00:29:39.976 --> 00:29:42.396 A:middle
+String that you can use to wrap
+
+00:29:42.436 --> 00:29:43.776 A:middle
+the string that you're going to
+
+00:29:43.776 --> 00:29:45.856 A:middle
+assign to that intent you
+
+00:29:45.856 --> 00:29:49.366 A:middle
+created in code.
+
+00:29:50.056 --> 00:29:52.786 A:middle
+So let's talk quickly about what
+
+00:29:52.786 --> 00:29:53.376 A:middle
+we've seen.
+
+00:29:54.146 --> 00:29:56.216 A:middle
+We've seen that Xcode combines
+
+00:29:56.216 --> 00:29:58.076 A:middle
+your shortcut types with the
+
+00:29:58.246 --> 00:30:00.126 A:middle
+enumerations that you've defined
+

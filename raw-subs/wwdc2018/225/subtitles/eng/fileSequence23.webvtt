@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.786 --> 00:23:00.576 A:middle
+We're going to put them in our
+
+00:23:00.576 --> 00:23:01.936 A:middle
+cached attributes array so we
+
+00:23:01.936 --> 00:23:03.536 A:middle
+can grab them quickly later on.
+
+00:23:04.086 --> 00:23:06.486 A:middle
+And the second is, we're going
+
+00:23:06.486 --> 00:23:08.406 A:middle
+to union their frame with our
+
+00:23:08.406 --> 00:23:10.426 A:middle
+content bounds rect so that our
+
+00:23:10.426 --> 00:23:11.726 A:middle
+content bounds are kept up to
+
+00:23:11.726 --> 00:23:11.996 A:middle
+date.
+
+00:23:13.896 --> 00:23:15.266 A:middle
+So now that our prepare is up
+
+00:23:15.266 --> 00:23:16.366 A:middle
+and running, we need to
+
+00:23:16.366 --> 00:23:18.546 A:middle
+implement the remaining methods
+
+00:23:18.546 --> 00:23:20.206 A:middle
+in our layout that we need to
+
+00:23:20.406 --> 00:23:21.536 A:middle
+get everything working.
+
+00:23:22.416 --> 00:23:25.686 A:middle
+So the first of these is
+
+00:23:25.686 --> 00:23:27.186 A:middle
+CollectionView Content Size
+
+00:23:27.596 --> 00:23:29.036 A:middle
+where if we had done our job
+
+00:23:29.036 --> 00:23:30.986 A:middle
+right in Prepare, we can just
+
+00:23:30.986 --> 00:23:32.466 A:middle
+return our Content Bounds as
+
+00:23:32.466 --> 00:23:33.006 A:middle
+size.
+
+00:23:35.556 --> 00:23:37.286 A:middle
+Next is should invalidate layout
+
+00:23:37.286 --> 00:23:38.306 A:middle
+for bounds change.
+
+00:23:39.576 --> 00:23:40.876 A:middle
+Now since our layout doesn't
+
+00:23:40.876 --> 00:23:43.036 A:middle
+have any elements that require
+
+00:23:43.036 --> 00:23:44.946 A:middle
+us to invalidate while we're
+
+00:23:44.946 --> 00:23:47.486 A:middle
+scrolling, so no floating
+
+00:23:47.486 --> 00:23:48.966 A:middle
+headers, no floating footers or
+
+00:23:48.966 --> 00:23:49.566 A:middle
+anything like that.
+
+00:23:50.106 --> 00:23:50.916 A:middle
+We only really want to
+
+00:23:50.916 --> 00:23:51.896 A:middle
+invalidate when our
+
+00:23:51.896 --> 00:23:53.706 A:middle
+CollectionView's bounds of size
+
+00:23:53.706 --> 00:23:54.276 A:middle
+changes.
+
+00:23:54.706 --> 00:23:56.276 A:middle
+So we'll just return true if our
+
+00:23:56.276 --> 00:23:58.076 A:middle
+new bounds of size is not equal
+
+00:23:58.076 --> 00:23:59.606 A:middle
+to our CollectionView's bounds
+
+00:23:59.606 --> 00:24:01.486 A:middle
+of size, our current bounds of
+

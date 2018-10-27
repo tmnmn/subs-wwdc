@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.766 --> 00:32:01.576 A:middle
+our code that gets called when a
+
+00:32:01.616 --> 00:32:03.366 A:middle
+quiz first starts.
+
+00:32:04.136 --> 00:32:06.616 A:middle
+So, here, we said that we wanted
+
+00:32:06.766 --> 00:32:11.526 A:middle
+to start the timer for our quiz.
+
+00:32:12.176 --> 00:32:14.816 A:middle
+So, what we're going to do is
+
+00:32:14.816 --> 00:32:16.186 A:middle
+we're going to issue a query to
+
+00:32:16.446 --> 00:32:18.566 A:middle
+our CLS Data Source Shared
+
+00:32:18.566 --> 00:32:18.896 A:middle
+Instance.
+
+00:32:18.896 --> 00:32:21.176 A:middle
+And then we're going to query in
+
+00:32:21.286 --> 00:32:23.826 A:middle
+our main app context for all of
+
+00:32:23.826 --> 00:32:26.046 A:middle
+the descendants, that match the
+
+00:32:26.046 --> 00:32:28.116 A:middle
+identifier path that's
+
+00:32:28.116 --> 00:32:29.466 A:middle
+associated with this quiz.
+
+00:32:30.586 --> 00:32:32.166 A:middle
+This will return an optional
+
+00:32:32.166 --> 00:32:32.656 A:middle
+context.
+
+00:32:33.786 --> 00:32:34.536 A:middle
+We're going to grab that
+
+00:32:34.616 --> 00:32:36.646 A:middle
+context, make sure that we
+
+00:32:36.646 --> 00:32:38.006 A:middle
+called the Become Active, and
+
+00:32:38.656 --> 00:32:40.436 A:middle
+then we're going to instantiate
+
+00:32:40.436 --> 00:32:42.726 A:middle
+a new instance of CLS activity.
+
+00:32:43.176 --> 00:32:44.896 A:middle
+And that's because when this
+
+00:32:45.376 --> 00:32:47.716 A:middle
+part of our code gets run, we
+
+00:32:47.716 --> 00:32:49.066 A:middle
+know that the student is taking
+
+00:32:49.066 --> 00:32:50.306 A:middle
+a new attempt at the quiz.
+
+00:32:51.226 --> 00:32:52.686 A:middle
+Then we're just going to cash
+
+00:32:52.726 --> 00:32:54.326 A:middle
+that activity and a property
+
+00:32:54.326 --> 00:32:55.866 A:middle
+that we have defined.
+
+00:32:56.676 --> 00:32:58.866 A:middle
+Then, we call Start on Activity
+
+00:32:59.056 --> 00:32:59.936 A:middle
+to start our timer.
+

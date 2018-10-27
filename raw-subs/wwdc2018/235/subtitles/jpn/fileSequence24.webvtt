@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.239 --> 00:24:01.942 align:start position:9% line:-1
+alwaysBounceHorizontalや
+
+00:24:02.009 --> 00:24:04.511 align:start position:12% line:-2
+alwaysBounceVerticalを
+trueにしたりする時です
+
+00:24:04.745 --> 00:24:07.514 align:start position:27% line:-2
+このような時に
+スクロール可能な軸を考慮し
+
+00:24:07.614 --> 00:24:11.785 align:start position:12% line:-2
+adjustedContentInsetに
+システムの余白を取り込みます
+
+00:24:11.885 --> 00:24:15.055 align:start position:25% line:-2
+後ろの例では
+長い記事がスクロールできます
+
+00:24:15.489 --> 00:24:18.292 align:start position:23% line:-1
+自動で余白が取り込まれたのです
+
+00:24:18.392 --> 00:24:20.861 align:start position:29% line:-1
+短い記事も見てみましょう
+
+00:24:21.328 --> 00:24:23.163 align:start position:32% line:-1
+こちらが短い記事です
+
+00:24:23.363 --> 00:24:26.733 align:start position:29% line:-2
+ナビゲーションバーの下を
+見てみましょう
+
+00:24:26.833 --> 00:24:27.534 align:start position:45% line:-1
+おっと
+
+00:24:27.968 --> 00:24:30.971 align:start position:30% line:-2
+スクロールできないため
+システムの余白を失い―
+
+00:24:31.071 --> 00:24:34.074 align:start position:32% line:-2
+記事タイトルが
+バーの下に隠れました
+
+00:24:34.274 --> 00:24:37.811 align:start position:34% line:-2
+それでは解決方法を
+ご紹介しましょう
+
+00:24:37.911 --> 00:24:42.683 align:start position:12% line:-2
+alwaysBounceVerticalを
+設定するのも ひとつの手でしょう
+
+00:24:42.783 --> 00:24:45.652 align:start position:21% line:-1
+常に縦スクロールが可能になります
+
+00:24:45.752 --> 00:24:49.189 align:start position:14% line:-1
+またはautomaticの挙動も使えます
+
+00:24:49.556 --> 00:24:54.261 align:start position:16% line:-2
+先ほどのscrollableAxesと
+似た働きをしますが
+
+00:24:54.361 --> 00:24:58.198 align:start position:21% line:-1
+さらに別の挙動も可能となるのです
+
+00:24:58.298 --> 00:25:02.503 align:start position:7% line:-2
+Navigation Controllerの中に
+スクロールビューが含まれる場合
+

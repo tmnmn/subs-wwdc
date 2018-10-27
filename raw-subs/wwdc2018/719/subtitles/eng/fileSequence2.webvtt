@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.796 --> 00:02:00.776 A:middle
+scenarios where you don't want
+
+00:02:01.386 --> 00:02:02.766 A:middle
+to concatenate as much as
+
+00:02:02.766 --> 00:02:03.226 A:middle
+possible.
+
+00:02:03.496 --> 00:02:05.216 A:middle
+For example, your application
+
+00:02:05.216 --> 00:02:06.886 A:middle
+might have an expensive filter
+
+00:02:06.886 --> 00:02:08.476 A:middle
+early on in the filter chain.
+
+00:02:08.675 --> 00:02:10.876 A:middle
+And the user of your application
+
+00:02:10.876 --> 00:02:12.376 A:middle
+at a given moment in time might
+
+00:02:12.376 --> 00:02:13.486 A:middle
+be adjusting a filter that
+
+00:02:13.486 --> 00:02:15.146 A:middle
+follows it in the graph.
+
+00:02:15.206 --> 00:02:16.786 A:middle
+And this is a classic situation
+
+00:02:16.786 --> 00:02:18.076 A:middle
+where it's a good idea to have
+
+00:02:18.076 --> 00:02:20.216 A:middle
+an intermediate buffer at a
+
+00:02:20.216 --> 00:02:22.116 A:middle
+location like this in between.
+
+00:02:22.916 --> 00:02:24.546 A:middle
+The idea is that by having an
+
+00:02:24.546 --> 00:02:26.346 A:middle
+intermediate buffer here, the
+
+00:02:26.346 --> 00:02:28.186 A:middle
+cost of the expensive filter
+
+00:02:28.506 --> 00:02:30.126 A:middle
+does not have to be paid for
+
+00:02:30.126 --> 00:02:32.726 A:middle
+again when you adjust a
+
+00:02:32.726 --> 00:02:33.566 A:middle
+secondary filter.
+
+00:02:33.976 --> 00:02:35.426 A:middle
+So, how do you do this in your
+
+00:02:35.426 --> 00:02:36.036 A:middle
+application?
+
+00:02:36.036 --> 00:02:38.006 A:middle
+We have a new API, very aptly
+
+00:02:38.006 --> 00:02:39.846 A:middle
+named, inserting intermediate.
+
+00:02:40.466 --> 00:02:42.486 A:middle
+So, let's talk about how this
+
+00:02:42.486 --> 00:02:43.756 A:middle
+affects our results.
+
+00:02:43.756 --> 00:02:44.736 A:middle
+What we do is instead of
+
+00:02:44.736 --> 00:02:45.896 A:middle
+concatenating as much as
+
+00:02:45.896 --> 00:02:47.616 A:middle
+possible, we will respect that
+
+00:02:47.886 --> 00:02:49.516 A:middle
+location of the intermediate and
+
+00:02:49.516 --> 00:02:51.436 A:middle
+concatenate as much as possible
+
+00:02:51.436 --> 00:02:51.746 A:middle
+around it.
+
+00:02:52.956 --> 00:02:54.246 A:middle
+Some notes on this.
+
+00:02:54.246 --> 00:02:55.966 A:middle
+One thing to keep in mind, is
+
+00:02:55.966 --> 00:02:57.846 A:middle
+that by default, Core Image
+
+00:02:57.846 --> 00:02:59.496 A:middle
+cashes all intermediate buffers
+
+00:02:59.496 --> 00:03:01.126 A:middle
+so that the assumption is that a
+

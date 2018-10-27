@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.056 --> 00:38:01.096 A:middle
+For example, if you free an
+
+00:38:01.096 --> 00:38:03.676 A:middle
+object twice in a row the malloc
+
+00:38:03.676 --> 00:38:04.946 A:middle
+allocator can sometimes
+
+00:38:04.946 --> 00:38:06.816 A:middle
+recognize that as a double free
+
+00:38:07.136 --> 00:38:08.396 A:middle
+and immediately halt the
+
+00:38:08.396 --> 00:38:09.106 A:middle
+process.
+
+00:38:11.136 --> 00:38:13.006 A:middle
+So let me give you some final
+
+00:38:13.006 --> 00:38:15.656 A:middle
+tips for analyzing crash logs in
+
+00:38:15.656 --> 00:38:17.446 A:middle
+general and analyzing memory
+
+00:38:17.446 --> 00:38:18.486 A:middle
+errors in particular.
+
+00:38:20.756 --> 00:38:22.186 A:middle
+In the crash we just looked at
+
+00:38:22.186 --> 00:38:23.286 A:middle
+we spent most of our time
+
+00:38:23.286 --> 00:38:24.286 A:middle
+looking at the code that
+
+00:38:24.366 --> 00:38:26.266 A:middle
+crashed, the specific lines of
+
+00:38:26.266 --> 00:38:27.646 A:middle
+code that crashed, and the
+
+00:38:27.646 --> 00:38:28.736 A:middle
+thread that crashed.
+
+00:38:29.296 --> 00:38:31.006 A:middle
+It is important to look at the
+
+00:38:31.006 --> 00:38:33.636 A:middle
+other code in your process
+
+00:38:33.636 --> 00:38:35.006 A:middle
+related to the code that
+
+00:38:35.006 --> 00:38:35.536 A:middle
+crashed.
+
+00:38:35.656 --> 00:38:39.016 A:middle
+For example, in this crash the
+
+00:38:39.016 --> 00:38:40.736 A:middle
+ivar destroyer function is not
+
+00:38:40.786 --> 00:38:42.046 A:middle
+wrong, that's not where the bug
+
+00:38:42.166 --> 00:38:42.636 A:middle
+is.
+
+00:38:42.936 --> 00:38:45.246 A:middle
+The bug is somewhere else, some
+
+00:38:45.246 --> 00:38:47.376 A:middle
+other code is incorrect.
+
+00:38:49.286 --> 00:38:50.286 A:middle
+You should also look at the
+
+00:38:50.286 --> 00:38:52.696 A:middle
+stack traces in the crash log
+
+00:38:52.966 --> 00:38:54.846 A:middle
+other than the crashed thread.
+
+00:38:55.586 --> 00:38:58.046 A:middle
+The crash log contains all the
+
+00:38:58.046 --> 00:38:59.826 A:middle
+stack traces in the process and
+
+00:38:59.826 --> 00:39:01.016 A:middle
+that can contain useful
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.606 --> 00:19:01.576 A:middle
+smooth, spatially and temporally
+
+00:19:01.776 --> 00:19:03.536 A:middle
+and the holes are filled from
+
+00:19:03.536 --> 00:19:04.356 A:middle
+the RGB image.
+
+00:19:05.466 --> 00:19:07.256 A:middle
+This is especially useful for
+
+00:19:07.256 --> 00:19:08.616 A:middle
+photography and segmentation
+
+00:19:08.616 --> 00:19:10.206 A:middle
+applications because you know
+
+00:19:10.446 --> 00:19:12.386 A:middle
+every time you query a pixel you
+
+00:19:12.386 --> 00:19:13.216 A:middle
+get the depth's value.
+
+00:19:13.776 --> 00:19:17.376 A:middle
+In TrueDepth Streamer you can
+
+00:19:17.376 --> 00:19:19.566 A:middle
+switch to the filter stream and
+
+00:19:19.566 --> 00:19:21.876 A:middle
+see that it is smoother and the
+
+00:19:21.876 --> 00:19:22.586 A:middle
+holes are filled.
+
+00:19:23.126 --> 00:19:27.526 A:middle
+So this is great, but it is not
+
+00:19:27.526 --> 00:19:29.246 A:middle
+applicable to 100% of the use
+
+00:19:29.246 --> 00:19:29.636 A:middle
+cases.
+
+00:19:30.226 --> 00:19:31.676 A:middle
+If you're working with point
+
+00:19:31.676 --> 00:19:34.606 A:middle
+clouds or any type of real-world
+
+00:19:34.836 --> 00:19:36.256 A:middle
+measurements you're better off
+
+00:19:36.256 --> 00:19:38.366 A:middle
+staying with the raw data which
+
+00:19:38.366 --> 00:19:39.806 A:middle
+holds the highest fidelity.
+
+00:19:40.846 --> 00:19:42.726 A:middle
+If you do you will have holes,
+
+00:19:42.906 --> 00:19:44.496 A:middle
+you will have pixels marked as
+
+00:19:44.496 --> 00:19:46.866 A:middle
+zero, it does not mean that they
+
+00:19:46.866 --> 00:19:48.396 A:middle
+are the distance of zero meters
+
+00:19:48.396 --> 00:19:50.356 A:middle
+from the camera it just means we
+
+00:19:50.356 --> 00:19:52.296 A:middle
+have no information about them.
+
+00:19:53.336 --> 00:19:54.946 A:middle
+Therefore, you should watch out
+
+00:19:55.116 --> 00:19:56.506 A:middle
+for operations like averaging
+
+00:19:56.506 --> 00:19:57.606 A:middle
+and downsampling because you
+
+00:19:57.606 --> 00:19:59.386 A:middle
+don't want to mix those real
+
+00:19:59.386 --> 00:20:00.976 A:middle
+values with those zeros.
+

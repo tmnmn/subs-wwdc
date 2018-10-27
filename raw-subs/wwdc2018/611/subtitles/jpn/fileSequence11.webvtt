@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.494 --> 00:11:03.597 align:start position:32% line:-2
+では パイプラインに
+戻りましょう
+
+00:11:04.331 --> 00:11:05.966 align:start position:32% line:-1
+どう変わるでしょう？
+
+00:11:06.233 --> 00:11:10.103 align:start position:27% line:-2
+アプリケーションでは
+２つのIOSurfaceが
+
+00:11:10.204 --> 00:11:14.675 align:start position:27% line:-2
+１つの2D配列テクスチャに
+入れ替わりました
+
+00:11:15.275 --> 00:11:17.811 align:start position:27% line:-1
+これで大幅に最適化できます
+
+00:11:17.911 --> 00:11:22.182 align:start position:34% line:-2
+2Dマルチサンプル
+配列テクスチャは
+
+00:11:22.282 --> 00:11:27.254 align:start position:27% line:-2
+ワンパスで共有テクスチャに
+変換されます
+
+00:11:27.588 --> 00:11:31.124 align:start position:14% line:-1
+Compositorに注目してみましょう
+
+00:11:32.159 --> 00:11:35.762 align:start position:32% line:-2
+アプリケーション側の
+簡便化により
+
+00:11:35.863 --> 00:11:40.901 align:start position:21% line:-2
+Compositor側も新機能を
+存分に活用できます
+
+00:11:41.201 --> 00:11:47.474 align:start position:25% line:-2
+Compositorは
+渡された2D配列テクスチャを
+
+00:11:47.574 --> 00:11:51.945 align:start position:29% line:-2
+１回のレンダリングパスで
+両眼に使えます
+
+00:11:53.247 --> 00:11:56.817 align:start position:34% line:-2
+パイプライン全体が
+簡略化されました
+
+00:11:57.684 --> 00:12:00.120 align:start position:34% line:-1
+おさらいしましょう
+

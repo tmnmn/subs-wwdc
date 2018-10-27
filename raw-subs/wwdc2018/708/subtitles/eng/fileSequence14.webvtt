@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:02.336 --> 00:14:02.706 A:middle
+Oils,
+
+00:14:04.506 --> 00:14:04.956 A:middle
+and Waves.
+
+00:14:07.076 --> 00:14:08.746 A:middle
+Let's see how this app has been
+
+00:14:08.746 --> 00:14:09.516 A:middle
+built in Xcode.
+
+00:14:10.966 --> 00:14:13.296 A:middle
+This app uses Core ML and Vision
+
+00:14:13.396 --> 00:14:15.406 A:middle
+API to perform this stylization.
+
+00:14:16.226 --> 00:14:17.786 A:middle
+And as we can see, we have four
+
+00:14:17.786 --> 00:14:19.586 A:middle
+Core ML models here bundled in
+
+00:14:19.586 --> 00:14:21.436 A:middle
+Xcode; City, Glass, Oils, and
+
+00:14:21.436 --> 00:14:22.706 A:middle
+Waves, the same ones we are
+
+00:14:22.706 --> 00:14:23.406 A:middle
+seeing in the app.
+
+00:14:23.406 --> 00:14:25.796 A:middle
+And we can see -- we can inspect
+
+00:14:25.796 --> 00:14:26.336 A:middle
+this model.
+
+00:14:26.766 --> 00:14:27.976 A:middle
+These are seen as quantized
+
+00:14:27.976 --> 00:14:29.166 A:middle
+model, so each one of these
+
+00:14:29.166 --> 00:14:31.246 A:middle
+models is 6.7 megabytes of this
+
+00:14:31.246 --> 00:14:31.876 A:middle
+space on disk.
+
+00:14:33.096 --> 00:14:34.266 A:middle
+We see that the models take an
+
+00:14:34.266 --> 00:14:35.226 A:middle
+input image of a certain
+
+00:14:35.226 --> 00:14:37.706 A:middle
+resolution and produce an image
+
+00:14:37.706 --> 00:14:39.176 A:middle
+called Stylized of the same
+
+00:14:39.176 --> 00:14:39.716 A:middle
+resolution.
+
+00:14:41.016 --> 00:14:43.106 A:middle
+Now we want to investigate how
+
+00:14:43.106 --> 00:14:44.736 A:middle
+much storage space and memory
+
+00:14:44.736 --> 00:14:46.366 A:middle
+space we can use by -- we can
+
+00:14:46.366 --> 00:14:47.796 A:middle
+save by switching to quantized,
+
+00:14:47.796 --> 00:14:48.096 A:middle
+models.
+
+00:14:48.096 --> 00:14:49.716 A:middle
+So I have been playing with Core
+
+00:14:49.716 --> 00:14:52.656 A:middle
+ML Tools and obtained quantizer
+
+00:14:52.656 --> 00:14:55.236 A:middle
+presentation for these models.
+
+00:14:56.216 --> 00:14:57.486 A:middle
+And for a tutorial about how to
+
+00:14:57.486 --> 00:14:59.446 A:middle
+obtain these models, stay for
+
+00:14:59.446 --> 00:15:01.056 A:middle
+Part 2 that is going to cover
+

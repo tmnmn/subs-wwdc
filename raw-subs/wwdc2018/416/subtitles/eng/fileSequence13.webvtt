@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.866 --> 00:13:00.206 A:middle
+This means that vmmap will print
+
+00:13:00.206 --> 00:13:01.496 A:middle
+out the number of pages instead
+
+00:13:01.496 --> 00:13:02.376 A:middle
+of just raw bytes.
+
+00:13:02.866 --> 00:13:06.796 A:middle
+I then piped that into grep,
+
+00:13:06.886 --> 00:13:08.206 A:middle
+where I'm searching for a dylib,
+
+00:13:08.206 --> 00:13:09.456 A:middle
+so I need dynamic library here.
+
+00:13:11.046 --> 00:13:12.166 A:middle
+And then, finally, I pipe that
+
+00:13:12.166 --> 00:13:13.536 A:middle
+into a super simple awk script
+
+00:13:14.116 --> 00:13:15.816 A:middle
+to sum up the dirty column and
+
+00:13:15.816 --> 00:13:16.826 A:middle
+then print it out as the number
+
+00:13:16.826 --> 00:13:17.886 A:middle
+of dirty pages at the end.
+
+00:13:19.386 --> 00:13:20.556 A:middle
+I think this is super cool, and
+
+00:13:20.556 --> 00:13:22.286 A:middle
+I use it all the time.
+
+00:13:22.286 --> 00:13:23.676 A:middle
+It allows you to compose really
+
+00:13:23.676 --> 00:13:25.096 A:middle
+powerful debugging workflows for
+
+00:13:25.096 --> 00:13:26.216 A:middle
+you and your teams.
+
+00:13:26.656 --> 00:13:30.466 A:middle
+Another command-line utility
+
+00:13:30.466 --> 00:13:31.686 A:middle
+that macOS developers might be
+
+00:13:31.686 --> 00:13:33.066 A:middle
+familiar with already is leaks.
+
+00:13:33.836 --> 00:13:35.306 A:middle
+It tracks objects in the heap
+
+00:13:35.696 --> 00:13:36.906 A:middle
+that aren't rooted anywhere at
+
+00:13:36.906 --> 00:13:37.396 A:middle
+runtime.
+
+00:13:37.726 --> 00:13:38.586 A:middle
+So remember, if you see an
+
+00:13:38.586 --> 00:13:39.816 A:middle
+object in leaks, it's dirty
+
+00:13:39.816 --> 00:13:41.466 A:middle
+memory that you can never free.
+
+00:13:41.846 --> 00:13:44.266 A:middle
+Let's look at a leak in the
+
+00:13:44.266 --> 00:13:44.866 A:middle
+memory debugger.
+
+00:13:46.176 --> 00:13:48.176 A:middle
+Here I've got 3 objects, all
+
+00:13:48.176 --> 00:13:49.356 A:middle
+holding strong references to
+
+00:13:49.356 --> 00:13:50.546 A:middle
+each other, creating a classic
+
+00:13:50.546 --> 00:13:51.166 A:middle
+retain cycle.
+
+00:13:51.876 --> 00:13:53.766 A:middle
+So let's look at the same leak
+
+00:13:54.216 --> 00:13:56.446 A:middle
+in the leaks tool.
+
+00:13:56.646 --> 00:13:57.686 A:middle
+This year, leaks has been
+
+00:13:57.686 --> 00:13:59.676 A:middle
+updated to not only show the
+
+00:13:59.676 --> 00:14:02.936 A:middle
+leaked objects, but also the
+

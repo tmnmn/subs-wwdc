@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.906 --> 00:24:00.546 A:middle
+So you don't need to learn all
+
+00:24:00.546 --> 00:24:01.196 A:middle
+the rules.
+
+00:24:01.196 --> 00:24:02.576 A:middle
+And you don't need to know all
+
+00:24:02.576 --> 00:24:03.596 A:middle
+the languages that you're going
+
+00:24:03.596 --> 00:24:04.696 A:middle
+to translate your app to.
+
+00:24:05.886 --> 00:24:08.576 A:middle
+And it's very simple to adopt
+
+00:24:08.576 --> 00:24:11.296 A:middle
+and translate each string to
+
+00:24:11.296 --> 00:24:12.696 A:middle
+have the correct plural form.
+
+00:24:18.376 --> 00:24:20.116 A:middle
+The first thing that we need to
+
+00:24:20.506 --> 00:24:24.776 A:middle
+do to adopt this 'fix our
+
+00:24:24.776 --> 00:24:26.826 A:middle
+problem with plurals' is to
+
+00:24:26.826 --> 00:24:28.876 A:middle
+replace the literal string that
+
+00:24:28.876 --> 00:24:30.656 A:middle
+we use for the summary format,
+
+00:24:31.026 --> 00:24:32.566 A:middle
+with a localized string.
+
+00:24:32.986 --> 00:24:36.256 A:middle
+And remember here that you need
+
+00:24:36.256 --> 00:24:38.066 A:middle
+to use our special notification
+
+00:24:38.106 --> 00:24:39.836 A:middle
+API for localized strings,
+
+00:24:40.596 --> 00:24:43.536 A:middle
+because we need to store these
+
+00:24:43.536 --> 00:24:44.946 A:middle
+localized string and set it
+
+00:24:44.946 --> 00:24:45.556 A:middle
+aside.
+
+00:24:46.146 --> 00:24:48.136 A:middle
+Because in the case that the
+
+00:24:48.136 --> 00:24:49.916 A:middle
+language of the system changes
+
+00:24:50.546 --> 00:24:51.056 A:middle
+later.
+
+00:24:51.366 --> 00:24:52.746 A:middle
+If you send notifications, we
+
+00:24:52.746 --> 00:24:53.846 A:middle
+send them with the correct
+
+00:24:53.846 --> 00:24:56.166 A:middle
+localization after the system
+
+00:24:56.166 --> 00:24:57.196 A:middle
+localization change.
+
+00:24:59.716 --> 00:25:01.906 A:middle
+So after you set a localized
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.026 --> 00:33:01.376 A:middle
+can be a flight, a cruise, a
+
+00:33:01.376 --> 00:33:03.146 A:middle
+vacation package, or an
+
+00:33:03.146 --> 00:33:03.956 A:middle
+expedition.
+
+00:33:05.136 --> 00:33:06.776 A:middle
+Now if our user follows through
+
+00:33:06.776 --> 00:33:08.186 A:middle
+with a suggestion and books
+
+00:33:08.186 --> 00:33:09.636 A:middle
+another trip, we need to give
+
+00:33:09.636 --> 00:33:10.916 A:middle
+them some kind of feedback.
+
+00:33:11.446 --> 00:33:13.196 A:middle
+So for that we have a response
+
+00:33:13.376 --> 00:33:15.226 A:middle
+and there's just a success or a
+
+00:33:15.226 --> 00:33:17.226 A:middle
+failure message as to whether we
+
+00:33:17.226 --> 00:33:18.616 A:middle
+could book their trip.
+
+00:33:19.196 --> 00:33:20.446 A:middle
+And this is likewise a
+
+00:33:20.446 --> 00:33:22.156 A:middle
+combination of parameters.
+
+00:33:22.726 --> 00:33:25.276 A:middle
+Now, of course, since we have
+
+00:33:25.276 --> 00:33:27.226 A:middle
+user facing strings, we need to
+
+00:33:27.226 --> 00:33:28.036 A:middle
+localize them.
+
+00:33:28.316 --> 00:33:28.956 A:middle
+So let's do that.
+
+00:33:29.686 --> 00:33:31.786 A:middle
+Just like I did for the image, I
+
+00:33:31.786 --> 00:33:33.756 A:middle
+just go to the right here, click
+
+00:33:33.756 --> 00:33:34.316 A:middle
+Localize.
+
+00:33:35.286 --> 00:33:36.986 A:middle
+Now intent definition files are
+
+00:33:36.986 --> 00:33:38.126 A:middle
+going to be like interface
+
+00:33:38.196 --> 00:33:39.796 A:middle
+builder files where we have one
+
+00:33:39.796 --> 00:33:41.766 A:middle
+intent definition and all of our
+
+00:33:41.766 --> 00:33:43.686 A:middle
+translations in strings files.
+
+00:33:43.786 --> 00:33:45.456 A:middle
+So I want to put it in base.
+
+00:33:46.626 --> 00:33:47.576 A:middle
+Click Localize.
+
+00:33:48.396 --> 00:33:50.746 A:middle
+Okay. And I want to check
+
+00:33:51.216 --> 00:33:51.676 A:middle
+French.
+
+00:33:52.766 --> 00:33:54.476 A:middle
+Okay, so at this point, Xcode
+
+00:33:54.476 --> 00:33:56.846 A:middle
+has created a strings file for
+
+00:33:56.846 --> 00:33:58.416 A:middle
+the French translations to be
+
+00:33:58.416 --> 00:33:58.916 A:middle
+put in.
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.506 --> 00:13:00.406 A:middle
+Well, we'll make that big
+
+00:13:00.406 --> 00:13:02.826 A:middle
+request and now that is more
+
+00:13:02.826 --> 00:13:04.556 A:middle
+memory that is currently easily
+
+00:13:04.556 --> 00:13:05.916 A:middle
+readily available to the system.
+
+00:13:06.176 --> 00:13:07.596 A:middle
+So it won't be able to satisfy
+
+00:13:07.596 --> 00:13:09.156 A:middle
+it immediately and we'll have to
+
+00:13:09.156 --> 00:13:10.566 A:middle
+go find that memory from
+
+00:13:10.636 --> 00:13:11.216 A:middle
+somewhere else.
+
+00:13:12.206 --> 00:13:13.596 A:middle
+And, in fact, the most likely
+
+00:13:13.596 --> 00:13:15.436 A:middle
+place to come from is from other
+
+00:13:15.436 --> 00:13:17.966 A:middle
+applications or things on the
+
+00:13:18.536 --> 00:13:18.756 A:middle
+system.
+
+00:13:18.876 --> 00:13:20.156 A:middle
+Now, that might not worry you
+
+00:13:20.156 --> 00:13:21.106 A:middle
+too much because you're trying
+
+00:13:21.106 --> 00:13:22.106 A:middle
+to get the memory for your app
+
+00:13:22.106 --> 00:13:23.386 A:middle
+right now, so you're not so
+
+00:13:23.386 --> 00:13:24.376 A:middle
+worried about what's happening
+
+00:13:24.376 --> 00:13:24.906 A:middle
+elsewhere.
+
+00:13:25.536 --> 00:13:28.076 A:middle
+But, of course, this will have
+
+00:13:28.076 --> 00:13:29.356 A:middle
+an impact on something else
+
+00:13:29.436 --> 00:13:30.696 A:middle
+later that your customers will
+
+00:13:30.696 --> 00:13:32.066 A:middle
+be expecting will be working,
+
+00:13:32.636 --> 00:13:33.906 A:middle
+but more importantly to you
+
+00:13:33.906 --> 00:13:35.496 A:middle
+right now, it will have an
+
+00:13:35.496 --> 00:13:37.146 A:middle
+impact on your app as well
+
+00:13:37.146 --> 00:13:39.106 A:middle
+because the system has to do
+
+00:13:39.106 --> 00:13:40.906 A:middle
+work to go get this memory for
+
+00:13:40.906 --> 00:13:41.126 A:middle
+you.
+
+00:13:41.366 --> 00:13:42.666 A:middle
+The fact that it's not readily
+
+00:13:42.666 --> 00:13:44.776 A:middle
+available means that the kernel
+
+00:13:44.776 --> 00:13:46.936 A:middle
+has to go find it and perform
+
+00:13:46.936 --> 00:13:49.446 A:middle
+operations on the CPU in order
+
+00:13:49.446 --> 00:13:50.216 A:middle
+to make it available.
+
+00:13:50.726 --> 00:13:51.856 A:middle
+And that time it's spending
+
+00:13:51.856 --> 00:13:53.386 A:middle
+getting that memory for you is
+
+00:13:53.416 --> 00:13:54.796 A:middle
+time that could be better spent
+
+00:13:54.796 --> 00:13:56.086 A:middle
+doing whatever your app does
+
+00:13:56.156 --> 00:13:56.466 A:middle
+best.
+
+00:13:57.126 --> 00:13:58.656 A:middle
+So finding ways to either chunk
+
+00:13:58.686 --> 00:14:00.036 A:middle
+these larger requests or just
+

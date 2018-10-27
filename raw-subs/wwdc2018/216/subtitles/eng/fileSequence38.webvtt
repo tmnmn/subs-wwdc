@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.546 --> 00:38:00.506 A:middle
+your app to instruct the system
+
+00:38:00.586 --> 00:38:02.576 A:middle
+to download this document if
+
+00:38:02.576 --> 00:38:03.886 A:middle
+it's not available locally.
+
+00:38:04.146 --> 00:38:05.856 A:middle
+Because as you may know, a lot
+
+00:38:05.856 --> 00:38:07.306 A:middle
+of these documents could be in
+
+00:38:07.306 --> 00:38:08.606 A:middle
+the cloud, and not on the
+
+00:38:08.606 --> 00:38:09.136 A:middle
+device.
+
+00:38:10.896 --> 00:38:12.566 A:middle
+So, you might find yourself
+
+00:38:12.566 --> 00:38:14.496 A:middle
+writing a lot of boilerplate and
+
+00:38:14.496 --> 00:38:16.056 A:middle
+error-prone code to handle
+
+00:38:16.056 --> 00:38:17.896 A:middle
+sandboxing, to handle file
+
+00:38:17.896 --> 00:38:18.756 A:middle
+coordination.
+
+00:38:19.846 --> 00:38:21.556 A:middle
+If you're simply interested in
+
+00:38:21.976 --> 00:38:23.456 A:middle
+displaying and editing your
+
+00:38:23.456 --> 00:38:25.456 A:middle
+documents, the solution is much
+
+00:38:25.456 --> 00:38:25.936 A:middle
+simpler.
+
+00:38:26.176 --> 00:38:27.986 A:middle
+And, on iOS, it comes in the
+
+00:38:27.986 --> 00:38:29.376 A:middle
+form of UIDocument.
+
+00:38:30.346 --> 00:38:32.006 A:middle
+UIDocument has been available
+
+00:38:32.006 --> 00:38:32.956 A:middle
+since iOS 5.
+
+00:38:33.946 --> 00:38:36.016 A:middle
+It is the recommended way for
+
+00:38:36.016 --> 00:38:37.576 A:middle
+your app to display and edit
+
+00:38:37.576 --> 00:38:38.246 A:middle
+documents.
+
+00:38:39.256 --> 00:38:40.946 A:middle
+It handles sandboxing for you,
+
+00:38:41.256 --> 00:38:42.666 A:middle
+so there's no need to make the
+
+00:38:42.666 --> 00:38:44.466 A:middle
+start- and stopAccessing calls.
+
+00:38:45.336 --> 00:38:46.696 A:middle
+And, it handles file
+
+00:38:46.696 --> 00:38:47.736 A:middle
+coordination for you.
+
+00:38:47.986 --> 00:38:49.246 A:middle
+So, there's no need for you to
+
+00:38:49.286 --> 00:38:50.896 A:middle
+manually coordinate access to
+
+00:38:50.896 --> 00:38:51.706 A:middle
+these documents.
+
+00:38:53.256 --> 00:38:55.646 A:middle
+For more information on file
+
+00:38:55.646 --> 00:38:58.186 A:middle
+coordination and UIDocument, we
+
+00:38:58.186 --> 00:38:59.386 A:middle
+invite you to check out the
+
+00:38:59.386 --> 00:39:02.176 A:middle
+"Building Document-Based Apps"
+

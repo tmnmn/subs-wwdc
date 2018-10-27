@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:01.496 --> 00:28:03.216 A:middle
+The detected planes are returned
+
+00:28:03.216 --> 00:28:05.006 A:middle
+as an ARPlaneAnchor.
+
+00:28:05.936 --> 00:28:07.996 A:middle
+An ARPlaneAnchor is a subclass
+
+00:28:07.996 --> 00:28:08.946 A:middle
+of an ARAnchor.
+
+00:28:10.106 --> 00:28:11.696 A:middle
+Each ARAnchor provides a
+
+00:28:11.876 --> 00:28:14.476 A:middle
+transform containing the
+
+00:28:14.476 --> 00:28:16.326 A:middle
+information where the anchor is
+
+00:28:16.606 --> 00:28:17.566 A:middle
+in your World map.
+
+00:28:18.126 --> 00:28:20.216 A:middle
+Now, a plane anchor,
+
+00:28:20.216 --> 00:28:21.436 A:middle
+specifically, also has
+
+00:28:21.436 --> 00:28:24.026 A:middle
+information about the geometry
+
+00:28:24.026 --> 00:28:25.886 A:middle
+of the surface of the plane,
+
+00:28:26.816 --> 00:28:27.856 A:middle
+which is represented in two
+
+00:28:27.856 --> 00:28:28.976 A:middle
+alternative ways.
+
+00:28:29.316 --> 00:28:31.256 A:middle
+Either like a bounding box with
+
+00:28:31.256 --> 00:28:35.096 A:middle
+a center and an extent, or as a
+
+00:28:35.096 --> 00:28:37.306 A:middle
+3D mesh describing the shape of
+
+00:28:37.356 --> 00:28:39.336 A:middle
+the convex hull of the detected
+
+00:28:39.386 --> 00:28:41.306 A:middle
+plane and its geometry property.
+
+00:28:42.636 --> 00:28:44.646 A:middle
+To get notified about detected
+
+00:28:44.736 --> 00:28:48.266 A:middle
+planes, delegates are going to
+
+00:28:48.266 --> 00:28:51.266 A:middle
+be called whenever planes are
+
+00:28:51.266 --> 00:28:53.676 A:middle
+added, updated, or removed.
+
+00:28:54.656 --> 00:28:57.086 A:middle
+This will then allow you to use
+
+00:28:57.086 --> 00:28:59.566 A:middle
+those planes, as well as react
+
+00:28:59.686 --> 00:29:01.486 A:middle
+to any updates.
+

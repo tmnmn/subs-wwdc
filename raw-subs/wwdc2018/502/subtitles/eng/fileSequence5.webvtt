@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.276 --> 00:05:01.566 A:middle
+run dry, and AV Player has no
+
+00:05:01.566 --> 00:05:03.006 A:middle
+choice here, it needs to stop
+
+00:05:03.006 --> 00:05:04.526 A:middle
+playback, event which we call a
+
+00:05:04.526 --> 00:05:04.926 A:middle
+stall.
+
+00:05:05.816 --> 00:05:07.246 A:middle
+The player will remain in this
+
+00:05:07.246 --> 00:05:09.196 A:middle
+state not only until data starts
+
+00:05:09.196 --> 00:05:10.776 A:middle
+flowing again, but up until
+
+00:05:10.776 --> 00:05:11.996 A:middle
+there's a sufficient level of
+
+00:05:11.996 --> 00:05:13.796 A:middle
+buffer for the player item to
+
+00:05:13.796 --> 00:05:15.346 A:middle
+trigger another positive
+
+00:05:15.416 --> 00:05:16.516 A:middle
+playability prediction.
+
+00:05:17.286 --> 00:05:18.596 A:middle
+After that, playback can
+
+00:05:18.596 --> 00:05:19.576 A:middle
+continue normally.
+
+00:05:20.666 --> 00:05:22.166 A:middle
+Now let's discuss about
+
+00:05:22.456 --> 00:05:24.176 A:middle
+quantifying the user experience
+
+00:05:24.176 --> 00:05:25.116 A:middle
+for such a session.
+
+00:05:26.216 --> 00:05:27.926 A:middle
+We do that by defining a set of
+
+00:05:27.926 --> 00:05:29.526 A:middle
+Key Performance Indicators or
+
+00:05:29.526 --> 00:05:30.396 A:middle
+KPIs.
+
+00:05:31.056 --> 00:05:32.596 A:middle
+We picked five of them that we
+
+00:05:32.596 --> 00:05:34.166 A:middle
+believe are most representative
+
+00:05:34.196 --> 00:05:35.556 A:middle
+for HTP Light Streaming.
+
+00:05:36.946 --> 00:05:38.776 A:middle
+One question you may ask is how
+
+00:05:38.776 --> 00:05:40.436 A:middle
+much time do my users spend
+
+00:05:40.836 --> 00:05:42.996 A:middle
+waiting for playback to start.
+
+00:05:42.996 --> 00:05:44.256 A:middle
+Is it one second?
+
+00:05:44.256 --> 00:05:46.646 A:middle
+Is it five seconds or maybe 30
+
+00:05:46.646 --> 00:05:47.166 A:middle
+seconds?
+
+00:05:47.486 --> 00:05:49.036 A:middle
+This is an essential point in
+
+00:05:49.036 --> 00:05:50.486 A:middle
+terms of user experience.
+
+00:05:51.336 --> 00:05:53.906 A:middle
+Further, playback stalls, like
+
+00:05:53.906 --> 00:05:55.616 A:middle
+the one we just saw, they are
+
+00:05:55.616 --> 00:05:56.966 A:middle
+disruptive to the user.
+
+00:05:57.076 --> 00:05:59.156 A:middle
+We care both about how often
+
+00:05:59.156 --> 00:06:00.936 A:middle
+they occur, but maybe more
+

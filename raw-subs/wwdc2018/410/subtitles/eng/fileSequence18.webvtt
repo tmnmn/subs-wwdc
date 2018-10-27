@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.606 --> 00:18:00.926 A:middle
+contents of the data, you can
+
+00:18:00.926 --> 00:18:01.866 A:middle
+define what's called a plot
+
+00:18:01.986 --> 00:18:02.326 A:middle
+template.
+
+00:18:02.996 --> 00:18:04.666 A:middle
+Now a plot template is defined
+
+00:18:04.666 --> 00:18:06.316 A:middle
+very similarly to a plot except
+
+00:18:06.316 --> 00:18:07.406 A:middle
+there's an extra element in
+
+00:18:07.406 --> 00:18:08.936 A:middle
+there that allows you to choose
+
+00:18:08.936 --> 00:18:10.536 A:middle
+a column in the table and it
+
+00:18:10.536 --> 00:18:12.276 A:middle
+will create a separate row for
+
+00:18:12.276 --> 00:18:13.566 A:middle
+each unique value in that
+
+00:18:13.566 --> 00:18:13.956 A:middle
+column.
+
+00:18:16.016 --> 00:18:17.046 A:middle
+Now if you're looking for just
+
+00:18:17.046 --> 00:18:18.456 A:middle
+spikes or periods of activity,
+
+00:18:18.576 --> 00:18:19.126 A:middle
+we have what's called a
+
+00:18:19.126 --> 00:18:21.016 A:middle
+histogram and what you can do is
+
+00:18:21.016 --> 00:18:22.846 A:middle
+break the timeline over certain
+
+00:18:22.846 --> 00:18:24.066 A:middle
+size buckets, let's say 100
+
+00:18:24.066 --> 00:18:25.566 A:middle
+milliseconds, and then use
+
+00:18:25.566 --> 00:18:27.176 A:middle
+functions like count or sum or
+
+00:18:27.176 --> 00:18:29.996 A:middle
+min or max to sort of drive up
+
+00:18:29.996 --> 00:18:31.186 A:middle
+the magnitude of those buckets
+
+00:18:31.416 --> 00:18:32.976 A:middle
+as the different points or
+
+00:18:32.976 --> 00:18:33.946 A:middle
+intervals are intersecting.
+
+00:18:33.946 --> 00:18:36.066 A:middle
+So it's a great way to look for
+
+00:18:36.536 --> 00:18:38.136 A:middle
+spikes in activity such as here
+
+00:18:38.136 --> 00:18:39.046 A:middle
+in the System Trace where we're
+
+00:18:39.046 --> 00:18:40.216 A:middle
+looking for spikes of activity
+
+00:18:40.216 --> 00:18:41.746 A:middle
+in context switches or virtual
+
+00:18:41.746 --> 00:18:42.086 A:middle
+memory.
+
+00:18:42.486 --> 00:18:45.126 A:middle
+Now let's talk about details.
+
+00:18:45.156 --> 00:18:46.926 A:middle
+Details are on the lower half of
+
+00:18:46.926 --> 00:18:47.396 A:middle
+the UI.
+
+00:18:48.486 --> 00:18:49.376 A:middle
+And you've already seen the
+
+00:18:49.376 --> 00:18:50.626 A:middle
+first one, which is the List.
+
+00:18:50.846 --> 00:18:52.266 A:middle
+That's very simple mapping
+
+00:18:52.266 --> 00:18:53.666 A:middle
+between the Table and Analysis
+
+00:18:53.666 --> 00:18:56.896 A:middle
+Core and a table view in the UI.
+
+00:18:56.896 --> 00:19:00.066 A:middle
+We also have aggregations.
+

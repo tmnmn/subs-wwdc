@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.736 --> 00:12:02.856 A:middle
+Well, one way to do it is to
+
+00:12:03.026 --> 00:12:04.636 A:middle
+look at the percentage of failed
+
+00:12:04.636 --> 00:12:06.526 A:middle
+sessions with respect to total
+
+00:12:06.526 --> 00:12:07.436 A:middle
+sessions, but there might be
+
+00:12:07.436 --> 00:12:08.206 A:middle
+other ways to do it.
+
+00:12:08.856 --> 00:12:10.636 A:middle
+One thing I want to stress here
+
+00:12:10.636 --> 00:12:12.596 A:middle
+is that not all errors in your
+
+00:12:12.596 --> 00:12:14.246 A:middle
+stream may be fatal.
+
+00:12:14.376 --> 00:12:16.316 A:middle
+Some may impact media quality
+
+00:12:16.536 --> 00:12:18.066 A:middle
+while some might not even be
+
+00:12:18.066 --> 00:12:19.386 A:middle
+perceivable by the user.
+
+00:12:19.676 --> 00:12:21.046 A:middle
+But nonetheless, if there are
+
+00:12:21.046 --> 00:12:23.806 A:middle
+errors, they convey that there
+
+00:12:23.806 --> 00:12:25.656 A:middle
+is an issue with your stream.
+
+00:12:25.876 --> 00:12:29.286 A:middle
+So how do I get more insights on
+
+00:12:29.286 --> 00:12:30.176 A:middle
+the stream, right, what
+
+00:12:30.176 --> 00:12:30.626 A:middle
+happened?
+
+00:12:31.176 --> 00:12:32.986 A:middle
+And the answer is from the
+
+00:12:32.986 --> 00:12:34.586 A:middle
+Player Item Error Log.
+
+00:12:35.436 --> 00:12:37.046 A:middle
+The AV Player Item Error Log.
+
+00:12:37.156 --> 00:12:38.756 A:middle
+The Error Log conveys failures
+
+00:12:38.756 --> 00:12:40.186 A:middle
+with varying degrees of user
+
+00:12:40.186 --> 00:12:40.636 A:middle
+impact.
+
+00:12:41.136 --> 00:12:43.626 A:middle
+It works in a similar fashion as
+
+00:12:43.836 --> 00:12:45.446 A:middle
+the Access Log except that
+
+00:12:45.446 --> 00:12:47.426 A:middle
+events represent error rather
+
+00:12:47.426 --> 00:12:48.806 A:middle
+than player access states.
+
+00:12:49.936 --> 00:12:52.766 A:middle
+They cover various areas, such
+
+00:12:52.766 --> 00:12:54.586 A:middle
+as delivery issues, network
+
+00:12:54.586 --> 00:12:56.416 A:middle
+issues, content authoring
+
+00:12:56.416 --> 00:12:57.476 A:middle
+errors, and so on.
+
+00:12:57.666 --> 00:12:59.476 A:middle
+For instance, they can give you
+
+00:12:59.476 --> 00:13:01.076 A:middle
+an insight on why a stall
+

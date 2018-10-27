@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.906 --> 00:39:02.536 A:middle
+the same cache line.
+
+00:39:02.776 --> 00:39:04.366 A:middle
+So both are going to try to have
+
+00:39:04.366 --> 00:39:05.876 A:middle
+exclusive access over this
+
+00:39:06.126 --> 00:39:08.616 A:middle
+variable and that is not
+
+00:39:08.616 --> 00:39:09.846 A:middle
+possible, that's what it means
+
+00:39:09.886 --> 00:39:12.196 A:middle
+to be exclusive.
+
+00:39:12.246 --> 00:39:14.346 A:middle
+So both of them are going to
+
+00:39:14.346 --> 00:39:16.636 A:middle
+fail their exclusive access and
+
+00:39:16.636 --> 00:39:17.726 A:middle
+they're going to have to try
+
+00:39:17.726 --> 00:39:18.656 A:middle
+again until one of them
+
+00:39:18.656 --> 00:39:19.146 A:middle
+succeeds.
+
+00:39:19.796 --> 00:39:23.086 A:middle
+And this is not ideal for
+
+00:39:23.086 --> 00:39:23.706 A:middle
+performance.
+
+00:39:24.286 --> 00:39:27.896 A:middle
+So in ARM v8.1 which is the
+
+00:39:28.536 --> 00:39:31.546 A:middle
+architecture in the A10 CPU we
+
+00:39:31.546 --> 00:39:32.636 A:middle
+have new instructions that do
+
+00:39:32.636 --> 00:39:34.626 A:middle
+this all in a single step and in
+
+00:39:34.626 --> 00:39:35.756 A:middle
+some cases, that can greatly
+
+00:39:35.756 --> 00:39:36.566 A:middle
+improve performance.
+
+00:39:37.126 --> 00:39:39.676 A:middle
+So again, this is something that
+
+00:39:39.676 --> 00:39:41.216 A:middle
+you can specialize code for
+
+00:39:41.526 --> 00:39:43.796 A:middle
+using the per function
+
+00:39:43.796 --> 00:39:45.426 A:middle
+specialization or for entire
+
+00:39:45.426 --> 00:39:45.996 A:middle
+targets.
+
+00:39:46.246 --> 00:39:48.086 A:middle
+And this is something that's
+
+00:39:48.086 --> 00:39:49.606 A:middle
+only really useful when you have
+
+00:39:49.606 --> 00:39:52.106 A:middle
+your own C11 or C++ 11 atomics.
+
+00:39:53.086 --> 00:39:54.486 A:middle
+So in general, it's much easier
+
+00:39:54.486 --> 00:39:55.736 A:middle
+to use the higher-level
+
+00:39:56.146 --> 00:39:58.376 A:middle
+libraries like GCD or PThread or
+
+00:39:58.376 --> 00:39:58.976 A:middle
+os unfair lock, etcetera.
+
+00:39:59.106 --> 00:40:02.096 A:middle
+So these are already tweaked for
+

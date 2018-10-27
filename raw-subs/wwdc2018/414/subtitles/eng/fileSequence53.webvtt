@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:59.866 --> 00:53:01.206 A:middle
+warnings because the class is
+
+00:53:01.206 --> 00:53:02.806 A:middle
+now correctly thread safe.
+
+00:53:02.846 --> 00:53:04.126 A:middle
+So I can actually go back to our
+
+00:53:04.126 --> 00:53:06.476 A:middle
+Organizer window and mark this
+
+00:53:07.576 --> 00:53:08.756 A:middle
+crash as resolved because we
+
+00:53:08.756 --> 00:53:10.486 A:middle
+have found, identified, and
+
+00:53:10.486 --> 00:53:10.976 A:middle
+fixed this bug.
+
+00:53:11.516 --> 00:53:18.500 A:middle
+[ Applause ]
+
+00:53:21.286 --> 00:53:23.446 A:middle
+All right so what we've just
+
+00:53:23.446 --> 00:53:25.426 A:middle
+seen is that I've started with a
+
+00:53:25.426 --> 00:53:27.256 A:middle
+set of crash logs that all have
+
+00:53:27.256 --> 00:53:28.746 A:middle
+symptoms of a multithreading
+
+00:53:28.746 --> 00:53:28.946 A:middle
+bug.
+
+00:53:29.436 --> 00:53:30.596 A:middle
+And then I've used this tool
+
+00:53:30.636 --> 00:53:32.056 A:middle
+called Thread Sanitizer to
+
+00:53:32.056 --> 00:53:34.186 A:middle
+identify and eventually fix this
+
+00:53:34.186 --> 00:53:34.436 A:middle
+bug.
+
+00:53:35.576 --> 00:53:36.756 A:middle
+Thread Sanitizer not only
+
+00:53:36.756 --> 00:53:38.406 A:middle
+detects multithreading issues,
+
+00:53:38.456 --> 00:53:40.626 A:middle
+but it also makes them reproduce
+
+00:53:40.626 --> 00:53:41.626 A:middle
+much more reliably.
+
+00:53:42.276 --> 00:53:43.866 A:middle
+Notice that in the demo I didn't
+
+00:53:43.866 --> 00:53:45.356 A:middle
+have to invoke the controller
+
+00:53:45.356 --> 00:53:46.256 A:middle
+multiple times.
+
+00:53:47.436 --> 00:53:49.386 A:middle
+This tool works on macOS and in
+
+00:53:49.386 --> 00:53:51.846 A:middle
+the Simulator, but just like all
+
+00:53:51.846 --> 00:53:53.446 A:middle
+other runtime diagnostic tools
+
+00:53:53.506 --> 00:53:56.176 A:middle
+it only finds bugs in codes that
+
+00:53:56.176 --> 00:53:57.786 A:middle
+you exercise by actually running
+
+00:53:57.786 --> 00:53:57.906 A:middle
+it.
+
+00:53:58.536 --> 00:54:00.126 A:middle
+So you should keep that in mind
+

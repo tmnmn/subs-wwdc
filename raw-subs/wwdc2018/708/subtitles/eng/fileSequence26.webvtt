@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.926 --> 00:26:00.436 A:middle
+call to the existing Core ML
+
+00:26:00.436 --> 00:26:01.246 A:middle
+prediction API.
+
+00:26:01.246 --> 00:26:03.416 A:middle
+So you'd loop over some array of
+
+00:26:03.416 --> 00:26:04.766 A:middle
+inputs and produce an array of
+
+00:26:04.766 --> 00:26:05.336 A:middle
+outputs.
+
+00:26:05.716 --> 00:26:08.166 A:middle
+Let's take a closer look at what
+
+00:26:08.166 --> 00:26:10.216 A:middle
+happens under the hood when this
+
+00:26:10.216 --> 00:26:11.206 A:middle
+-- when we are doing this.
+
+00:26:12.146 --> 00:26:13.636 A:middle
+For each image, we will need to
+
+00:26:13.636 --> 00:26:15.096 A:middle
+do some kind of preprocessing
+
+00:26:15.096 --> 00:26:15.366 A:middle
+work.
+
+00:26:15.686 --> 00:26:16.876 A:middle
+If nothing else, we need to send
+
+00:26:16.876 --> 00:26:18.216 A:middle
+the data down to the GPU.
+
+00:26:19.066 --> 00:26:20.316 A:middle
+Once we have done that, we can
+
+00:26:20.316 --> 00:26:21.976 A:middle
+do the calculation and produce
+
+00:26:21.976 --> 00:26:22.816 A:middle
+the output image.
+
+00:26:23.046 --> 00:26:23.526 A:middle
+But then there is a
+
+00:26:23.526 --> 00:26:25.546 A:middle
+postprocessing step in which we
+
+00:26:25.546 --> 00:26:26.736 A:middle
+need to retrieve the data from
+
+00:26:26.736 --> 00:26:28.046 A:middle
+the GPU and return it to your
+
+00:26:28.046 --> 00:26:28.296 A:middle
+app.
+
+00:26:29.816 --> 00:26:31.176 A:middle
+The key to improving this
+
+00:26:31.176 --> 00:26:32.716 A:middle
+picture is to eliminate the
+
+00:26:32.716 --> 00:26:34.526 A:middle
+bubbles in the GPU pipeline.
+
+00:26:35.896 --> 00:26:36.876 A:middle
+This results in greater
+
+00:26:36.876 --> 00:26:38.136 A:middle
+performance for two major
+
+00:26:38.136 --> 00:26:38.726 A:middle
+reasons.
+
+00:26:38.926 --> 00:26:40.696 A:middle
+First, since there is no time
+
+00:26:40.696 --> 00:26:42.306 A:middle
+when the GPU is idle the overall
+
+00:26:42.306 --> 00:26:43.516 A:middle
+compute time is reduced.
+
+00:26:44.066 --> 00:26:45.996 A:middle
+And second, because the GPU is
+
+00:26:45.996 --> 00:26:47.856 A:middle
+kept working continuously, it's
+
+00:26:47.856 --> 00:26:49.006 A:middle
+able to operate in a higher
+
+00:26:49.006 --> 00:26:51.036 A:middle
+performance state and reduce the
+
+00:26:51.036 --> 00:26:52.886 A:middle
+time necessary to compute each
+
+00:26:52.886 --> 00:26:54.146 A:middle
+particular output.
+
+00:26:55.616 --> 00:26:56.596 A:middle
+But so much of the appeal in
+
+00:26:56.596 --> 00:26:57.806 A:middle
+Core ML is that you don't have
+
+00:26:57.806 --> 00:26:59.236 A:middle
+to worry about any details like
+
+00:26:59.236 --> 00:26:59.706 A:middle
+this at all.
+

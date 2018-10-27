@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:57.191 --> 00:01:01.261 align:middle line:-2
+最后谈谈FairPlay Streaming
+密钥传递的一些常见陷阱
+
+00:01:01.528 --> 00:01:05.065 align:middle line:-1
+并随时回答一些来自开发人员的
+
+00:01:05.132 --> 00:01:06.633 align:middle line:-1
+常见问题
+
+00:01:07.768 --> 00:01:09.469 align:middle line:-1
+我们开始吧
+
+00:01:09.536 --> 00:01:10.737 align:middle line:-1
+（FairPlay Streaming概述）
+
+00:01:10.804 --> 00:01:13.707 align:middle line:-2
+FairPlay Streaming
+于2015年推出
+
+00:01:13.774 --> 00:01:17.211 align:middle line:-2
+来帮助保护传送到
+我们平台的HLS流
+
+00:01:18.212 --> 00:01:21.882 align:middle line:-2
+FairPlay Streaming
+规范指定了一组步骤
+
+00:01:22.182 --> 00:01:26.887 align:middle line:-2
+app需要遵循这些步骤
+以安全传送内容解密密钥
+
+00:01:26.954 --> 00:01:30.657 align:middle line:-2
+从而使平台可以对加密的
+媒体解密和播放
+
+00:01:32.626 --> 00:01:34.962 align:middle line:-1
+在传递FairPlay Streaming密钥时
+
+00:01:35.028 --> 00:01:40.067 align:middle line:-2
+你的app充当平台
+与你的密钥服务器之间的联络人
+
+00:01:41.168 --> 00:01:44.104 align:middle line:-2
+当它收到来自AVFoundation的
+按需密钥加载请求时
+
+00:01:44.371 --> 00:01:49.476 align:middle line:-1
+它的响应是发出加密密钥请求
+
+00:01:49.810 --> 00:01:51.745 align:middle line:-1
+也被称为SPC
+
+00:01:52.145 --> 00:01:55.215 align:middle line:-1
+SPC然后被发送到密钥服务器
+
+00:01:55.816 --> 00:01:59.987 align:middle line:-2
+密钥服务器用加密密钥
+响应回应这一请求
+

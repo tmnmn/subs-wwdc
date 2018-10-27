@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.660 --> 00:06:03.864 align:start position:30% line:-2
+通常 画像サイズなどの
+メタデータが
+
+00:06:03.964 --> 00:06:06.800 align:start position:30% line:-1
+先頭に格納されています
+
+00:06:07.901 --> 00:06:10.070 align:start position:34% line:-1
+その次が画像データ
+
+00:06:10.170 --> 00:06:14.741 align:start position:32% line:-2
+エンコードされた
+JPEGやPNGです
+
+00:06:16.176 --> 00:06:19.446 align:start position:34% line:-2
+つまりメタデータの
+次のバイトには
+
+00:06:19.613 --> 00:06:23.784 align:start position:32% line:-2
+ピクセルの情報は直接
+記述されていません
+
+00:06:26.954 --> 00:06:30.390 align:start position:32% line:-2
+このパイプラインを
+詳しく見てみましょう
+
+00:06:31.091 --> 00:06:35.662 align:start position:34% line:-2
+フレームバッファの
+レンダリング領域を
+
+00:06:35.963 --> 00:06:38.432 align:start position:29% line:-1
+ハイライトして示しました
+
+00:06:38.832 --> 00:06:41.168 align:start position:29% line:-1
+UIImageをビューへ
+
+00:06:42.302 --> 00:06:48.542 align:start position:27% line:-2
+画像ファイルを表示するのは
+データバッファですが
+
+00:06:49.343 --> 00:06:54.615 align:start position:27% line:-2
+ピクセルの情報を持つ
+フレームバッファも必要です
+
+00:06:55.382 --> 00:07:00.053 align:start position:30% line:-2
+そこでUIImageは
+イメージバッファを
+

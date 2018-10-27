@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.876 --> 00:35:01.206 A:middle
+that I'd like to talk about is a
+
+00:35:01.206 --> 00:35:03.176 A:middle
+new method for modifying the
+
+00:35:03.256 --> 00:35:03.486 A:middle
+text,
+
+00:35:04.176 --> 00:35:05.686 A:middle
+PerformValidatedReplacement.
+
+00:35:06.276 --> 00:35:07.916 A:middle
+The idea behind this method is
+
+00:35:07.966 --> 00:35:09.186 A:middle
+that it gives you a very easy
+
+00:35:09.186 --> 00:35:10.866 A:middle
+way to manipulate the text in
+
+00:35:10.866 --> 00:35:12.936 A:middle
+the textView, and it gives you
+
+00:35:12.936 --> 00:35:14.516 A:middle
+behavior as if the user had
+
+00:35:14.516 --> 00:35:15.876 A:middle
+performed the change themselves.
+
+00:35:16.916 --> 00:35:17.936 A:middle
+So, it performs all the
+
+00:35:17.936 --> 00:35:19.656 A:middle
+appropriate delegate methods, as
+
+00:35:19.656 --> 00:35:20.286 A:middle
+you'd expect.
+
+00:35:20.696 --> 00:35:21.936 A:middle
+But, the really interesting part
+
+00:35:21.936 --> 00:35:23.716 A:middle
+is that any attributes that are
+
+00:35:23.716 --> 00:35:25.336 A:middle
+not specified on the input
+
+00:35:25.336 --> 00:35:27.196 A:middle
+string are automatically filled
+
+00:35:27.196 --> 00:35:28.506 A:middle
+in using the textView's
+
+00:35:28.616 --> 00:35:29.296 A:middle
+typingAttributes.
+
+00:35:30.466 --> 00:35:31.976 A:middle
+So, let me give you an example.
+
+00:35:32.506 --> 00:35:33.856 A:middle
+Here's a window with some rich
+
+00:35:33.856 --> 00:35:35.216 A:middle
+text in it, and a little snippet
+
+00:35:35.216 --> 00:35:36.196 A:middle
+of code that calls
+
+00:35:36.266 --> 00:35:38.346 A:middle
+performValidatedReplacement to
+
+00:35:38.346 --> 00:35:39.886 A:middle
+insert the word "Developers" in
+
+00:35:39.886 --> 00:35:40.196 A:middle
+the middle.
+
+00:35:41.266 --> 00:35:42.996 A:middle
+If we run this, this is what we
+
+00:35:42.996 --> 00:35:43.256 A:middle
+get.
+
+00:35:43.256 --> 00:35:45.226 A:middle
+The word appears and it matches
+
+00:35:45.226 --> 00:35:46.346 A:middle
+the style of the surrounding
+
+00:35:46.406 --> 00:35:48.126 A:middle
+text, and we didn't have to
+
+00:35:48.126 --> 00:35:49.436 A:middle
+specify any attributes.
+
+00:35:50.246 --> 00:35:51.896 A:middle
+There's a subtlety here to be
+
+00:35:51.896 --> 00:35:52.576 A:middle
+aware of, though.
+
+00:35:52.646 --> 00:35:55.236 A:middle
+And, that's because the fallback
+
+00:35:55.236 --> 00:35:56.376 A:middle
+attributes come from the
+
+00:35:56.446 --> 00:35:57.316 A:middle
+typingAttributes.
+
+00:35:57.426 --> 00:35:59.226 A:middle
+So, if you start with some rich
+
+00:35:59.336 --> 00:36:00.436 A:middle
+text like this, and the
+

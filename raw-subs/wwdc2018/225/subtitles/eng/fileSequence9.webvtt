@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.896 --> 00:09:00.216 A:middle
+with a flow layout, I'm actually
+
+00:09:00.216 --> 00:09:01.036 A:middle
+going to subclass
+
+00:09:01.036 --> 00:09:02.566 A:middle
+CollectionViewFlowLayout because
+
+00:09:02.566 --> 00:09:03.346 A:middle
+we're going to do a little bit
+
+00:09:03.346 --> 00:09:04.576 A:middle
+of extra customization.
+
+00:09:04.756 --> 00:09:06.596 A:middle
+So I'm going to start out by
+
+00:09:07.646 --> 00:09:10.436 A:middle
+creating an instance of my
+
+00:09:10.436 --> 00:09:12.066 A:middle
+ColumnFlowLayout class, which
+
+00:09:12.066 --> 00:09:12.916 A:middle
+I've already prepared.
+
+00:09:13.756 --> 00:09:15.276 A:middle
+I'm going to use that instance
+
+00:09:15.276 --> 00:09:17.276 A:middle
+to create my CollectionView.
+
+00:09:17.276 --> 00:09:18.946 A:middle
+I'm going to take that
+
+00:09:18.946 --> 00:09:19.956 A:middle
+CollectionView, and I'm going to
+
+00:09:19.956 --> 00:09:21.576 A:middle
+set some view properties, like
+
+00:09:21.576 --> 00:09:23.356 A:middle
+auto resizing mask, background
+
+00:09:23.356 --> 00:09:25.356 A:middle
+color, and since it's the
+
+00:09:25.356 --> 00:09:26.876 A:middle
+ScrollView, I can set some of
+
+00:09:26.876 --> 00:09:28.066 A:middle
+it's ScrollView properties as
+
+00:09:28.066 --> 00:09:28.296 A:middle
+well.
+
+00:09:28.296 --> 00:09:29.406 A:middle
+This is all just to get it to
+
+00:09:29.406 --> 00:09:31.126 A:middle
+look and feel the way I want it
+
+00:09:31.276 --> 00:09:33.086 A:middle
+to look in our app.
+
+00:09:33.426 --> 00:09:34.786 A:middle
+After adding the CollectionView
+
+00:09:34.786 --> 00:09:36.596 A:middle
+to my view hierarchy, I'm going
+
+00:09:36.596 --> 00:09:38.816 A:middle
+to register my PersonCell class
+
+00:09:38.816 --> 00:09:40.706 A:middle
+using its unique identifier with
+
+00:09:40.706 --> 00:09:42.536 A:middle
+CollectionView so we can get our
+
+00:09:42.536 --> 00:09:45.126 A:middle
+cell design to app.
+
+00:09:45.126 --> 00:09:46.696 A:middle
+And then I'm going to set the
+
+00:09:46.696 --> 00:09:47.866 A:middle
+view controller as the
+
+00:09:47.866 --> 00:09:49.586 A:middle
+CollectionView's data source so
+
+00:09:49.586 --> 00:09:51.186 A:middle
+we can give it some information
+
+00:09:51.186 --> 00:09:52.496 A:middle
+about how many cells it's going
+
+00:09:52.496 --> 00:09:54.616 A:middle
+to display and what sort of data
+
+00:09:54.616 --> 00:09:55.556 A:middle
+it's going to display in it's
+
+00:09:55.556 --> 00:09:56.146 A:middle
+cells.
+
+00:09:56.516 --> 00:09:59.346 A:middle
+And then I'm going to set it as
+
+00:09:59.346 --> 00:10:00.956 A:middle
+it's delegate as well, so we can
+

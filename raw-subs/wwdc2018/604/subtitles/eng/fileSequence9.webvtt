@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.466 --> 00:09:02.056 A:middle
+Now I've already spoken about
+
+00:09:02.056 --> 00:09:03.876 A:middle
+how the command queue produces a
+
+00:09:03.876 --> 00:09:06.276 A:middle
+sequence of command buffers and
+
+00:09:06.276 --> 00:09:07.606 A:middle
+that you create a command
+
+00:09:07.606 --> 00:09:09.286 A:middle
+encoder from a command buffer.
+
+00:09:10.196 --> 00:09:11.216 A:middle
+Let's take a closer look at
+
+00:09:11.216 --> 00:09:13.096 A:middle
+these encoder objects used to
+
+00:09:13.096 --> 00:09:14.466 A:middle
+write to our command buffers.
+
+00:09:15.726 --> 00:09:17.036 A:middle
+There are three main types.
+
+00:09:18.096 --> 00:09:18.986 A:middle
+There's the Render Command
+
+00:09:18.986 --> 00:09:20.606 A:middle
+Encoder whose commands resemble
+
+00:09:20.606 --> 00:09:22.266 A:middle
+that of an OpenGL command string
+
+00:09:22.356 --> 00:09:23.776 A:middle
+where you set state, bind
+
+00:09:23.776 --> 00:09:25.316 A:middle
+objects, and issue draw calls.
+
+00:09:26.446 --> 00:09:27.736 A:middle
+There's the Blit Command Encoder
+
+00:09:27.906 --> 00:09:29.306 A:middle
+with which you can issue texture
+
+00:09:29.306 --> 00:09:31.246 A:middle
+and buffer copy operations.
+
+00:09:31.576 --> 00:09:32.786 A:middle
+You can also use it to generate
+
+00:09:32.786 --> 00:09:34.526 A:middle
+Mipmap for textures and transfer
+
+00:09:34.566 --> 00:09:36.156 A:middle
+pixel data from buffers similar
+
+00:09:36.156 --> 00:09:38.076 A:middle
+to how glReadPixels operates
+
+00:09:38.076 --> 00:09:39.656 A:middle
+with OpenGL's pixel buffer
+
+00:09:39.656 --> 00:09:40.266 A:middle
+objects.
+
+00:09:40.806 --> 00:09:43.496 A:middle
+And then there's the Compute
+
+00:09:43.756 --> 00:09:46.076 A:middle
+Command Encoder which allows you
+
+00:09:46.076 --> 00:09:48.466 A:middle
+to dispatch commute kernels.
+
+00:09:49.316 --> 00:09:50.826 A:middle
+The Render Command Encoder is
+
+00:09:50.826 --> 00:09:51.746 A:middle
+probably the encoder you'll
+
+00:09:51.746 --> 00:09:53.356 A:middle
+become most familiar with as
+
+00:09:53.356 --> 00:09:54.346 A:middle
+it's responsible for the
+
+00:09:54.346 --> 00:09:56.206 A:middle
+majority of operations that a
+
+00:09:56.206 --> 00:09:57.976 A:middle
+graphic centric app needs.
+
+00:09:59.306 --> 00:10:00.816 A:middle
+The set of commands encoded into
+

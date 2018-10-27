@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.556 --> 00:09:00.936 A:middle
+collections have two elements.
+
+00:09:02.216 --> 00:09:05.806 A:middle
+So, let's try writing this by
+
+00:09:05.806 --> 00:09:06.496 A:middle
+subscripting 1.
+
+00:09:06.846 --> 00:09:08.636 A:middle
+But here our zero-based indexing
+
+00:09:08.636 --> 00:09:09.596 A:middle
+instincts are going to lead us
+
+00:09:09.596 --> 00:09:11.056 A:middle
+astray, and then we'll be caught
+
+00:09:11.056 --> 00:09:12.716 A:middle
+by the compiler again.
+
+00:09:13.596 --> 00:09:14.906 A:middle
+We want this code to work with
+
+00:09:14.906 --> 00:09:16.366 A:middle
+every collection, and not all
+
+00:09:16.366 --> 00:09:17.636 A:middle
+collections use integers to
+
+00:09:17.636 --> 00:09:18.156 A:middle
+index.
+
+00:09:18.636 --> 00:09:19.946 A:middle
+So let's try a different
+
+00:09:19.946 --> 00:09:20.336 A:middle
+approach.
+
+00:09:21.226 --> 00:09:22.456 A:middle
+What I really want is one
+
+00:09:22.456 --> 00:09:24.526 A:middle
+greater than the start index.
+
+00:09:25.396 --> 00:09:26.806 A:middle
+But lucky here, the compiler
+
+00:09:26.806 --> 00:09:27.886 A:middle
+will catch this as well.
+
+00:09:29.126 --> 00:09:30.956 A:middle
+You can't add 1 to an arbitrary
+
+00:09:30.956 --> 00:09:31.496 A:middle
+index type.
+
+00:09:31.666 --> 00:09:32.826 A:middle
+Index types are supposed to be
+
+00:09:32.826 --> 00:09:34.056 A:middle
+opaque or can be opaque.
+
+00:09:34.056 --> 00:09:36.496 A:middle
+And what we really need to be
+
+00:09:36.496 --> 00:09:37.836 A:middle
+doing here is we need to be
+
+00:09:37.836 --> 00:09:38.826 A:middle
+using the API provided by the
+
+00:09:38.826 --> 00:09:40.126 A:middle
+collection protocol to do this.
+
+00:09:40.126 --> 00:09:41.456 A:middle
+So let's go ahead and do this.
+
+00:09:42.746 --> 00:09:44.626 A:middle
+I commented out a sketch of the
+
+00:09:44.626 --> 00:09:45.436 A:middle
+things that we're going to need
+
+00:09:45.436 --> 00:09:46.216 A:middle
+to do to find the second
+
+00:09:46.216 --> 00:09:46.596 A:middle
+element.
+
+00:09:47.246 --> 00:09:48.066 A:middle
+The very first thing that we
+
+00:09:48.066 --> 00:09:48.966 A:middle
+need to do is we need to check
+
+00:09:48.966 --> 00:09:49.866 A:middle
+to see if the collection is
+
+00:09:49.906 --> 00:09:50.226 A:middle
+empty.
+
+00:09:51.076 --> 00:09:52.056 A:middle
+Collections are empty when their
+
+00:09:52.056 --> 00:09:53.236 A:middle
+start index is exactly
+
+00:09:53.236 --> 00:09:54.616 A:middle
+equivalent to their end index.
+
+00:09:54.906 --> 00:09:56.106 A:middle
+So let's check for that and
+
+00:09:56.106 --> 00:09:57.796 A:middle
+return nil, because such a
+
+00:09:57.796 --> 00:10:00.536 A:middle
+collection doesn't have a second
+

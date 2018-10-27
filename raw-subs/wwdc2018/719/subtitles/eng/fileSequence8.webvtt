@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.116 --> 00:08:01.866 A:middle
+write a 2 by 2 group of pixels
+
+00:08:01.866 --> 00:08:02.906 A:middle
+in one evocation.
+
+00:08:03.506 --> 00:08:05.426 A:middle
+Now, of course this 2 by 2 group
+
+00:08:05.426 --> 00:08:06.556 A:middle
+is a little bit bigger, so
+
+00:08:06.556 --> 00:08:08.486 A:middle
+instead of a 3 by 3, we need to
+
+00:08:08.486 --> 00:08:11.186 A:middle
+have a 4 by 4 set of pixels read
+
+00:08:11.186 --> 00:08:12.346 A:middle
+in order to be able to write
+
+00:08:12.416 --> 00:08:13.696 A:middle
+those four pixels.
+
+00:08:14.456 --> 00:08:16.126 A:middle
+But, if you do the math, you'll
+
+00:08:16.126 --> 00:08:17.776 A:middle
+see that that means we have 16
+
+00:08:17.876 --> 00:08:19.406 A:middle
+pixels read for 4 pixels
+
+00:08:19.406 --> 00:08:19.706 A:middle
+written.
+
+00:08:19.786 --> 00:08:21.146 A:middle
+So, already we're seeing an
+
+00:08:21.146 --> 00:08:22.806 A:middle
+advantage here.
+
+00:08:23.676 --> 00:08:26.606 A:middle
+The other feature we have is the
+
+00:08:26.606 --> 00:08:28.656 A:middle
+ability to do gathers.
+
+00:08:29.156 --> 00:08:31.506 A:middle
+In this example, we're reading a
+
+00:08:31.506 --> 00:08:33.426 A:middle
+4 by 4 or 16 pixels.
+
+00:08:33.706 --> 00:08:35.366 A:middle
+And with this feature, we can do
+
+00:08:35.366 --> 00:08:37.895 A:middle
+these 16 pixels red with just
+
+00:08:37.895 --> 00:08:38.836 A:middle
+four instructions.
+
+00:08:39.506 --> 00:08:40.936 A:middle
+So again, if you look at the
+
+00:08:40.936 --> 00:08:42.025 A:middle
+math on this, this means we're
+
+00:08:42.025 --> 00:08:43.626 A:middle
+doing just 4 group reads for
+
+00:08:43.626 --> 00:08:44.886 A:middle
+every 4 pixels written.
+
+00:08:44.886 --> 00:08:46.886 A:middle
+And this can really help the
+
+00:08:46.996 --> 00:08:47.646 A:middle
+performance.
+
+00:08:47.826 --> 00:08:48.596 A:middle
+Let me walk you through the
+
+00:08:48.596 --> 00:08:50.466 A:middle
+process of this on actual kernel
+
+00:08:50.466 --> 00:08:50.656 A:middle
+code.
+
+00:08:52.026 --> 00:08:54.736 A:middle
+So, here's an example of a
+
+00:08:54.736 --> 00:08:56.186 A:middle
+simple convolution like the one
+
+00:08:56.186 --> 00:08:56.946 A:middle
+I described.
+
+00:08:57.596 --> 00:08:58.886 A:middle
+Here, what we're doing is making
+
+00:08:58.886 --> 00:09:01.236 A:middle
+9 samples from the input image
+

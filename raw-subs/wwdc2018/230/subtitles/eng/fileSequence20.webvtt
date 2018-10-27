@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:57.266 --> 00:20:00.286 A:middle
+&gt;&gt; VoiceOver off.
+
+00:20:01.206 --> 00:20:02.076 A:middle
+&gt;&gt; So we found a couple of
+
+00:20:02.076 --> 00:20:02.576 A:middle
+issues here.
+
+00:20:03.836 --> 00:20:05.086 A:middle
+These issues don't completely
+
+00:20:05.086 --> 00:20:07.086 A:middle
+render our app unusable, but
+
+00:20:07.086 --> 00:20:08.516 A:middle
+they do place unnecessary
+
+00:20:08.516 --> 00:20:09.816 A:middle
+cognitive load on the user.
+
+00:20:10.946 --> 00:20:12.226 A:middle
+Remember, our goal here is to
+
+00:20:12.226 --> 00:20:13.376 A:middle
+create an exceptional
+
+00:20:13.586 --> 00:20:14.796 A:middle
+accessibility experience.
+
+00:20:15.576 --> 00:20:16.756 A:middle
+I'd like to invite Skyler back
+
+00:20:16.756 --> 00:20:18.306 A:middle
+to the stage now to talk about
+
+00:20:18.306 --> 00:20:19.356 A:middle
+how we can elevate our
+
+00:20:19.356 --> 00:20:20.866 A:middle
+experience for Exceptional Dogs
+
+00:20:21.196 --> 00:20:22.176 A:middle
+to be exceptional.
+
+00:20:23.516 --> 00:20:28.236 A:middle
+[ Applause ]
+
+00:20:28.736 --> 00:20:30.066 A:middle
+&gt;&gt; So we found some issues with
+
+00:20:30.066 --> 00:20:30.486 A:middle
+our app.
+
+00:20:31.216 --> 00:20:32.316 A:middle
+So let's take a look at some of
+
+00:20:32.316 --> 00:20:33.666 A:middle
+our accessibility API that we
+
+00:20:33.666 --> 00:20:35.016 A:middle
+can leverage to resolve them.
+
+00:20:36.246 --> 00:20:37.906 A:middle
+From Bhavya's audit, we found
+
+00:20:37.906 --> 00:20:39.276 A:middle
+some issues with our carousel.
+
+00:20:40.056 --> 00:20:41.196 A:middle
+We could get to the favorite and
+
+00:20:41.196 --> 00:20:42.846 A:middle
+gallery buttons but only after
+
+00:20:42.846 --> 00:20:43.976 A:middle
+reaching the end of the list
+
+00:20:43.976 --> 00:20:45.096 A:middle
+instead of for each individual
+
+00:20:45.096 --> 00:20:45.446 A:middle
+dog.
+
+00:20:45.826 --> 00:20:47.386 A:middle
+As well, we couldn't get to that
+
+00:20:47.386 --> 00:20:49.196 A:middle
+display data below for the dog
+
+00:20:49.196 --> 00:20:50.076 A:middle
+until reaching the end of the
+
+00:20:50.076 --> 00:20:50.536 A:middle
+list.
+
+00:20:51.516 --> 00:20:53.256 A:middle
+We need the actions and data for
+
+00:20:53.256 --> 00:20:54.306 A:middle
+each dog to be quickly
+
+00:20:54.306 --> 00:20:54.806 A:middle
+reachable.
+
+00:20:55.926 --> 00:20:58.246 A:middle
+So what we can do is use UI
+
+00:20:58.246 --> 00:21:00.056 A:middle
+accessibility element to create
+

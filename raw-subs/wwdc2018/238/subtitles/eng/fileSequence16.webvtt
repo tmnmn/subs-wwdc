@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:01.156 --> 00:16:03.016 A:middle
+These have close analogues to
+
+00:16:03.016 --> 00:16:04.486 A:middle
+our JavaScript APIs.
+
+00:16:04.626 --> 00:16:06.256 A:middle
+So that would be less confusion
+
+00:16:06.406 --> 00:16:07.696 A:middle
+in talking to your JavaScript
+
+00:16:07.696 --> 00:16:08.276 A:middle
+developers.
+
+00:16:09.556 --> 00:16:11.856 A:middle
+And finally there's a limited
+
+00:16:11.856 --> 00:16:13.066 A:middle
+JavaScript Bridge that's
+
+00:16:13.066 --> 00:16:13.736 A:middle
+exposed.
+
+00:16:13.736 --> 00:16:15.206 A:middle
+It allows communications between
+
+00:16:15.336 --> 00:16:17.456 A:middle
+your native code and JavaScript
+
+00:16:17.456 --> 00:16:17.866 A:middle
+itself.
+
+00:16:20.536 --> 00:16:23.916 A:middle
+Let's talk about TVPlayer and
+
+00:16:23.916 --> 00:16:25.736 A:middle
+that's the base where you can
+
+00:16:25.736 --> 00:16:26.926 A:middle
+get your customized playback
+
+00:16:26.926 --> 00:16:27.766 A:middle
+experience working.
+
+00:16:28.996 --> 00:16:32.466 A:middle
+TVPlayer is a public AVPlayer
+
+00:16:32.466 --> 00:16:33.886 A:middle
+adaptor to the Playback
+
+00:16:33.886 --> 00:16:34.336 A:middle
+Pipeline.
+
+00:16:35.396 --> 00:16:36.916 A:middle
+What this means is that TVPlayer
+
+00:16:36.916 --> 00:16:38.506 A:middle
+effectively translates regular
+
+00:16:38.506 --> 00:16:40.506 A:middle
+AVPlayer callbacks into what
+
+00:16:40.506 --> 00:16:41.746 A:middle
+JavaScript expects.
+
+00:16:45.316 --> 00:16:47.306 A:middle
+TVPlayer is also the object that
+
+00:16:47.306 --> 00:16:48.726 A:middle
+you can use to dispatch custom
+
+00:16:48.726 --> 00:16:51.276 A:middle
+events to JavaScript and by
+
+00:16:51.276 --> 00:16:52.526 A:middle
+default, it already handles
+
+00:16:52.576 --> 00:16:54.806 A:middle
+everything that AVPlayer has as
+
+00:16:54.806 --> 00:16:55.536 A:middle
+playback events.
+
+00:16:55.656 --> 00:16:57.586 A:middle
+So anything extra is on you to
+
+00:16:57.586 --> 00:16:57.976 A:middle
+dispatch.
+

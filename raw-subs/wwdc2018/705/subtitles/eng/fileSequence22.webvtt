@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.736 --> 00:22:01.356 A:middle
+The is trial period field and
+
+00:22:01.516 --> 00:22:03.466 A:middle
+the is in intro offer period
+
+00:22:03.726 --> 00:22:03.976 A:middle
+field.
+
+00:22:04.556 --> 00:22:05.826 A:middle
+If either of these fields are
+
+00:22:05.826 --> 00:22:07.556 A:middle
+true that's an indication that
+
+00:22:07.606 --> 00:22:09.446 A:middle
+an introductory offer or a free
+
+00:22:09.446 --> 00:22:10.576 A:middle
+trial was used for this
+
+00:22:10.616 --> 00:22:11.626 A:middle
+particular transaction.
+
+00:22:12.536 --> 00:22:13.686 A:middle
+And if it was you should keep
+
+00:22:13.686 --> 00:22:15.506 A:middle
+track of the product ID in
+
+00:22:15.506 --> 00:22:17.436 A:middle
+question against this current
+
+00:22:17.436 --> 00:22:17.646 A:middle
+user.
+
+00:22:17.646 --> 00:22:18.806 A:middle
+You might store them in a field
+
+00:22:18.806 --> 00:22:20.566 A:middle
+called consumedProductDiscounts.
+
+00:22:21.676 --> 00:22:23.106 A:middle
+Now if you're keeping track of
+
+00:22:23.106 --> 00:22:24.756 A:middle
+which products were used with
+
+00:22:24.756 --> 00:22:26.216 A:middle
+introductory offers, when it
+
+00:22:26.216 --> 00:22:27.856 A:middle
+comes time to render the price
+
+00:22:27.856 --> 00:22:29.416 A:middle
+of some new subscription product
+
+00:22:29.416 --> 00:22:30.986 A:middle
+that you want to show your user
+
+00:22:31.916 --> 00:22:32.816 A:middle
+this is how you can do it.
+
+00:22:33.136 --> 00:22:34.266 A:middle
+You can take those consumed
+
+00:22:34.316 --> 00:22:36.156 A:middle
+product discounts saved against
+
+00:22:36.156 --> 00:22:38.136 A:middle
+the current user and execute an
+
+00:22:38.136 --> 00:22:39.426 A:middle
+SKProductsRequest with them.
+
+00:22:39.926 --> 00:22:41.046 A:middle
+And the reason why is that the
+
+00:22:41.096 --> 00:22:42.676 A:middle
+response from SKProductRequest
+
+00:22:42.676 --> 00:22:44.386 A:middle
+now in iOS 12 includes the
+
+00:22:44.386 --> 00:22:46.476 A:middle
+subscription group identifier so
+
+00:22:46.476 --> 00:22:47.536 A:middle
+you know which subscription
+
+00:22:47.536 --> 00:22:48.866 A:middle
+group this particular product is
+
+00:22:48.896 --> 00:22:49.136 A:middle
+from.
+
+00:22:49.986 --> 00:22:51.406 A:middle
+And now armed with this
+
+00:22:51.406 --> 00:22:52.586 A:middle
+subscription group identifier
+
+00:22:52.586 --> 00:22:54.096 A:middle
+you can keep track of that in a
+
+00:22:54.166 --> 00:22:56.516 A:middle
+set of consumed group discounts
+
+00:22:56.676 --> 00:22:57.556 A:middle
+for this particular user.
+
+00:22:57.826 --> 00:22:59.016 A:middle
+So you know which subscription
+
+00:22:59.016 --> 00:23:01.056 A:middle
+groups this user has used offers
+

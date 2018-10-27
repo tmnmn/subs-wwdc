@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.646 --> 00:25:00.336 A:middle
+The position.
+
+00:25:01.956 --> 00:25:03.026 A:middle
+The velocity.
+
+00:25:04.356 --> 00:25:05.856 A:middle
+The angular velocity.
+
+00:25:05.856 --> 00:25:07.486 A:middle
+And the orientation.
+
+00:25:07.936 --> 00:25:09.566 A:middle
+That's a lot of information
+
+00:25:09.566 --> 00:25:10.666 A:middle
+about every object in the game,
+
+00:25:11.056 --> 00:25:12.846 A:middle
+so it was vital that we minimize
+
+00:25:12.846 --> 00:25:13.886 A:middle
+the number of bits actually
+
+00:25:13.886 --> 00:25:14.256 A:middle
+used.
+
+00:25:15.006 --> 00:25:16.266 A:middle
+I'll walk you through that using
+
+00:25:16.266 --> 00:25:18.946 A:middle
+position as an example.
+
+00:25:18.946 --> 00:25:20.556 A:middle
+SceneKit represents position as
+
+00:25:20.556 --> 00:25:21.926 A:middle
+a vector of three floating point
+
+00:25:21.926 --> 00:25:22.406 A:middle
+values.
+
+00:25:22.766 --> 00:25:24.996 A:middle
+This is the native format and
+
+00:25:24.996 --> 00:25:26.646 A:middle
+gives the best performance for
+
+00:25:26.646 --> 00:25:27.896 A:middle
+calculations at run time.
+
+00:25:28.346 --> 00:25:31.416 A:middle
+However, there are really more
+
+00:25:31.416 --> 00:25:33.416 A:middle
+bits than necessary to specify
+
+00:25:33.416 --> 00:25:34.366 A:middle
+the object's location.
+
+00:25:35.226 --> 00:25:37.256 A:middle
+A 30-bit float has 8-bits of
+
+00:25:37.256 --> 00:25:38.686 A:middle
+exponent and 23 bits of
+
+00:25:38.686 --> 00:25:39.256 A:middle
+mantissa.
+
+00:25:39.366 --> 00:25:41.386 A:middle
+For a range of plus or minus 10
+
+00:25:41.386 --> 00:25:42.656 A:middle
+to the 38th meters.
+
+00:25:42.976 --> 00:25:44.566 A:middle
+It's way more than we need for
+
+00:25:44.566 --> 00:25:47.166 A:middle
+this game.
+
+00:25:47.366 --> 00:25:48.506 A:middle
+So, because the physics
+
+00:25:48.506 --> 00:25:50.026 A:middle
+simulation thinks our table is
+
+00:25:50.126 --> 00:25:52.486 A:middle
+28 meters long, we said you
+
+00:25:52.486 --> 00:25:54.006 A:middle
+know, 80 meters is going to give
+
+00:25:54.006 --> 00:25:55.506 A:middle
+us plenty of buffer space around
+
+00:25:55.506 --> 00:25:56.506 A:middle
+that on either side.
+
+00:25:57.816 --> 00:25:59.876 A:middle
+When we're coding that then,
+

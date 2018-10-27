@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.296 --> 00:16:03.076 A:middle
+The consequences of this are
+
+00:16:03.076 --> 00:16:04.526 A:middle
+that your application is more
+
+00:16:04.526 --> 00:16:07.056 A:middle
+responsive and the device has a
+
+00:16:07.056 --> 00:16:07.956 A:middle
+longer battery life.
+
+00:16:08.466 --> 00:16:10.816 A:middle
+So, to put this in action here,
+
+00:16:11.476 --> 00:16:13.626 A:middle
+we've got a implementation of
+
+00:16:13.626 --> 00:16:15.086 A:middle
+the prefetch method on our data
+
+00:16:15.086 --> 00:16:15.516 A:middle
+source.
+
+00:16:16.496 --> 00:16:17.436 A:middle
+And it's going to call our
+
+00:16:17.436 --> 00:16:19.726 A:middle
+helper function to produce a
+
+00:16:19.986 --> 00:16:23.086 A:middle
+downsampled version of the image
+
+00:16:23.086 --> 00:16:24.096 A:middle
+that we're about to display in
+
+00:16:24.096 --> 00:16:25.396 A:middle
+this CollectionView cell.
+
+00:16:25.826 --> 00:16:28.926 A:middle
+And it does this by dispatching
+
+00:16:28.926 --> 00:16:30.916 A:middle
+work to one of the global
+
+00:16:30.916 --> 00:16:31.856 A:middle
+asynchronous queues.
+
+00:16:33.706 --> 00:16:34.006 A:middle
+Great.
+
+00:16:34.006 --> 00:16:34.716 A:middle
+Our work is happening in the
+
+00:16:34.716 --> 00:16:35.166 A:middle
+background.
+
+00:16:35.266 --> 00:16:36.466 A:middle
+This is what we wanted to do.
+
+00:16:37.506 --> 00:16:39.786 A:middle
+But there is a potential flaw
+
+00:16:39.786 --> 00:16:40.056 A:middle
+here.
+
+00:16:40.516 --> 00:16:42.486 A:middle
+And it's a phenomenon that we
+
+00:16:42.486 --> 00:16:43.616 A:middle
+like to call thread explosion.
+
+00:16:44.296 --> 00:16:46.046 A:middle
+And this is what happens when we
+
+00:16:46.046 --> 00:16:47.656 A:middle
+ask the system to do more work
+
+00:16:47.886 --> 00:16:50.486 A:middle
+than there are CPUs available to
+
+00:16:50.846 --> 00:16:51.376 A:middle
+do it.
+
+00:16:51.436 --> 00:16:52.326 A:middle
+If we're going to display a
+
+00:16:52.326 --> 00:16:54.246 A:middle
+whole number of images, like 6-8
+
+00:16:54.246 --> 00:16:55.836 A:middle
+images at a time, but we're
+
+00:16:55.836 --> 00:16:56.956 A:middle
+running on a device that only
+
+00:16:57.016 --> 00:16:59.746 A:middle
+has 2 CPUs, we can't do all of
+
+00:16:59.746 --> 00:17:00.966 A:middle
+that work at once.
+

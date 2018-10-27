@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.766 --> 00:10:00.146 A:middle
+in practice have seen from many
+
+00:10:00.146 --> 00:10:01.476 A:middle
+projects it's a 2x speedup.
+
+00:10:02.416 --> 00:10:04.366 A:middle
+And the win comes from observing
+
+00:10:04.366 --> 00:10:06.326 A:middle
+that because within a Swift
+
+00:10:06.326 --> 00:10:08.286 A:middle
+target you have cross-file
+
+00:10:08.286 --> 00:10:09.846 A:middle
+visibility, right, that's one of
+
+00:10:09.846 --> 00:10:10.896 A:middle
+the great features of Swift
+
+00:10:10.896 --> 00:10:11.626 A:middle
+where you don't need header
+
+00:10:11.696 --> 00:10:11.946 A:middle
+files.
+
+00:10:12.606 --> 00:10:13.976 A:middle
+There was a lot of redundant
+
+00:10:13.976 --> 00:10:15.586 A:middle
+work being done by the compiler.
+
+00:10:15.586 --> 00:10:17.056 A:middle
+And what we've done is we've
+
+00:10:17.056 --> 00:10:18.346 A:middle
+retooled the compilation
+
+00:10:18.346 --> 00:10:20.136 A:middle
+pipeline to reduce a lot of this
+
+00:10:20.136 --> 00:10:21.626 A:middle
+redundant work and make better
+
+00:10:21.626 --> 00:10:22.516 A:middle
+use of the cores on your
+
+00:10:22.516 --> 00:10:22.936 A:middle
+machine.
+
+00:10:23.096 --> 00:10:23.996 A:middle
+And that's where these speedups
+
+00:10:24.076 --> 00:10:24.466 A:middle
+come from.
+
+00:10:25.206 --> 00:10:26.116 A:middle
+If you're interested in more
+
+00:10:26.116 --> 00:10:27.616 A:middle
+details there's these two great
+
+00:10:27.616 --> 00:10:28.886 A:middle
+talks later this week that dive
+
+00:10:28.886 --> 00:10:30.346 A:middle
+into how the build process works
+
+00:10:30.396 --> 00:10:31.846 A:middle
+under the book including more
+
+00:10:31.846 --> 00:10:32.906 A:middle
+details about where this
+
+00:10:32.946 --> 00:10:34.146 A:middle
+performance win comes from.
+
+00:10:36.356 --> 00:10:37.906 A:middle
+Now this big win comes from
+
+00:10:38.606 --> 00:10:40.526 A:middle
+debug builds.
+
+00:10:41.566 --> 00:10:44.776 A:middle
+I want to focus on how this is
+
+00:10:44.776 --> 00:10:47.336 A:middle
+surfacing in the Xcode build
+
+00:10:47.396 --> 00:10:47.846 A:middle
+settings.
+
+00:10:48.746 --> 00:10:49.926 A:middle
+Recently we separated out
+
+00:10:49.926 --> 00:10:51.386 A:middle
+compilation mode from
+
+00:10:51.386 --> 00:10:52.506 A:middle
+optimization level.
+
+00:10:53.206 --> 00:10:55.286 A:middle
+Compilation mode is how your
+
+00:10:55.286 --> 00:10:56.726 A:middle
+project builds.
+
+00:10:57.256 --> 00:10:58.566 A:middle
+So for release builds the
+
+00:10:58.566 --> 00:10:59.566 A:middle
+default is whole module
+
+00:10:59.566 --> 00:11:01.446 A:middle
+compilation that means all the
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:00.486 --> 00:40:02.206 A:middle
+Again, we use a custom Midi
+
+00:40:02.206 --> 00:40:03.676 A:middle
+instrument to take a small
+
+00:40:03.676 --> 00:40:04.996 A:middle
+number of sounds and vary them.
+
+00:40:05.376 --> 00:40:06.636 A:middle
+In this case, varying the attack
+
+00:40:06.636 --> 00:40:08.226 A:middle
+rate based on the strength of
+
+00:40:08.226 --> 00:40:09.636 A:middle
+the collision impulse coming
+
+00:40:09.636 --> 00:40:10.656 A:middle
+from the SceneKit physics
+
+00:40:10.656 --> 00:40:10.886 A:middle
+engine.
+
+00:40:13.316 --> 00:40:15.086 A:middle
+These sounds again are localized
+
+00:40:15.086 --> 00:40:16.386 A:middle
+in 3D coordinates based on the
+
+00:40:16.386 --> 00:40:17.806 A:middle
+device's position in the scene.
+
+00:40:17.976 --> 00:40:19.176 A:middle
+So, collisions in the far end of
+
+00:40:19.176 --> 00:40:20.586 A:middle
+the table are quieter than those
+
+00:40:20.586 --> 00:40:20.996 A:middle
+at your end.
+
+00:40:21.616 --> 00:40:24.000 A:middle
+Let's take a listen to this.
+
+00:40:25.516 --> 00:40:37.886 A:middle
+[ Sound effects ]
+
+00:40:38.386 --> 00:40:39.136 A:middle
+One more shot.
+
+00:40:39.676 --> 00:40:41.116 A:middle
+There we go.
+
+00:40:42.496 --> 00:40:42.676 A:middle
+Right.
+
+00:40:43.266 --> 00:40:47.366 A:middle
+So we wanted to share one more
+
+00:40:47.366 --> 00:40:48.426 A:middle
+little trick that we discovered
+
+00:40:48.426 --> 00:40:50.836 A:middle
+as we were working on this.
+
+00:40:50.836 --> 00:40:51.956 A:middle
+In the process of setting up the
+
+00:40:51.956 --> 00:40:53.206 A:middle
+sounds, we discovered that we
+
+00:40:53.206 --> 00:40:54.686 A:middle
+needed to have a script run at
+
+00:40:54.686 --> 00:40:56.376 A:middle
+RunTime to do some file name
+
+00:40:56.376 --> 00:40:57.746 A:middle
+path conversions on the property
+
+00:40:57.746 --> 00:40:59.246 A:middle
+list for the DAU preset.
+
+00:40:59.926 --> 00:41:01.076 A:middle
+We found that we're able to
+

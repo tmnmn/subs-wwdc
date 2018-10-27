@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.046 --> 00:44:00.336 A:middle
+in the Xcode build process.
+
+00:44:00.706 --> 00:44:02.906 A:middle
+So let's get to it.
+
+00:44:03.166 --> 00:44:04.636 A:middle
+So first off I want to go over
+
+00:44:04.636 --> 00:44:05.666 A:middle
+what we're going to talk about.
+
+00:44:06.746 --> 00:44:07.996 A:middle
+We're going to talk about what a
+
+00:44:07.996 --> 00:44:08.786 A:middle
+linker is.
+
+00:44:09.646 --> 00:44:10.526 A:middle
+We're going to talk about the
+
+00:44:10.526 --> 00:44:11.626 A:middle
+input that it takes which are
+
+00:44:11.626 --> 00:44:13.236 A:middle
+dylibs and object files and what
+
+00:44:13.236 --> 00:44:13.776 A:middle
+they are.
+
+00:44:13.776 --> 00:44:15.476 A:middle
+And we're also going to talk
+
+00:44:15.476 --> 00:44:17.276 A:middle
+about symbols which are what
+
+00:44:17.276 --> 00:44:17.936 A:middle
+those contain.
+
+00:44:18.996 --> 00:44:20.646 A:middle
+So at the end of this, I'm going
+
+00:44:20.646 --> 00:44:21.486 A:middle
+to tie this together with an
+
+00:44:21.486 --> 00:44:22.746 A:middle
+act-- with an example because
+
+00:44:22.746 --> 00:44:24.716 A:middle
+this is pretty dense stuff.
+
+00:44:25.206 --> 00:44:26.356 A:middle
+So if it seems a little
+
+00:44:26.356 --> 00:44:27.116 A:middle
+confusing.
+
+00:44:27.566 --> 00:44:28.906 A:middle
+Hold on, and hopefully we'll
+
+00:44:28.906 --> 00:44:31.386 A:middle
+make it clearer.
+
+00:44:31.506 --> 00:44:33.616 A:middle
+So what is the linker?
+
+00:44:33.616 --> 00:44:34.636 A:middle
+It's like I said, it's one of
+
+00:44:34.636 --> 00:44:36.756 A:middle
+the final processes in the
+
+00:44:36.756 --> 00:44:37.076 A:middle
+build.
+
+00:44:37.076 --> 00:44:39.746 A:middle
+And what we do is we combine all
+
+00:44:39.746 --> 00:44:42.486 A:middle
+of these .o files that have been
+
+00:44:42.486 --> 00:44:44.376 A:middle
+built by the two compilers into
+
+00:44:44.376 --> 00:44:45.666 A:middle
+an executable.
+
+00:44:47.146 --> 00:44:49.076 A:middle
+All it does is move and patch
+
+00:44:49.156 --> 00:44:49.406 A:middle
+code.
+
+00:44:49.406 --> 00:44:50.816 A:middle
+It cannot create code, and this
+
+00:44:50.816 --> 00:44:52.486 A:middle
+is important and I will show
+
+00:44:52.486 --> 00:44:54.486 A:middle
+that in the example.
+
+00:44:55.416 --> 00:44:56.996 A:middle
+But we take these two kinds of
+
+00:44:56.996 --> 00:44:57.876 A:middle
+input files.
+
+00:44:58.326 --> 00:45:00.306 A:middle
+The first one being dylibs or
+

@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:57.911 --> 00:13:01.548 align:middle line:-2
+并从FocusSystem外
+获取当前的焦点项
+
+00:13:02.349 --> 00:13:06.787 align:middle line:-2
+接下来我们引入了一个叫做
+UIFocusItemContainer的新协议
+
+00:13:07.254 --> 00:13:10.224 align:middle line:-1
+它向焦点项提供几何情境
+
+00:13:11.225 --> 00:13:14.528 align:middle line:-2
+FocusItemContainer
+由FocusEnvironment所有
+
+00:13:14.862 --> 00:13:18.365 align:middle line:-1
+并可以在特定区域定位焦点项
+
+00:13:18.432 --> 00:13:21.969 align:middle line:-1
+允许聚焦引擎聚焦到最佳候选项上
+
+00:13:23.537 --> 00:13:26.740 align:middle line:-2
+接下来我们有
+FocusItemContainer的特殊类型
+
+00:13:26.807 --> 00:13:28.842 align:middle line:-1
+叫做FocusItemScrollableContainer
+
+00:13:29.076 --> 00:13:32.079 align:middle line:-1
+它会对添加对内容的自动滚动支持
+
+00:13:32.145 --> 00:13:33.547 align:middle line:-1
+随着焦点的移动
+
+00:13:34.481 --> 00:13:38.852 align:middle line:-2
+最后我们现在提供附带移动暗示的
+FocusItems
+
+00:13:39.086 --> 00:13:42.856 align:middle line:-2
+它包含你可以用于
+创建视觉效果的原始值
+
+00:13:43.090 --> 00:13:46.360 align:middle line:-1
+那会建议即将向哪个方向移动焦点
+
+00:13:47.261 --> 00:13:49.229 align:middle line:-1
+现在让我们具体了解一下
+
+00:13:49.296 --> 00:13:52.466 align:middle line:-1
+我们该如何让我们的类遵循这些协议
+
+00:13:53.233 --> 00:13:56.236 align:middle line:-2
+让我们从实施自定义
+FocusEnvironment开始
+
+00:13:56.803 --> 00:13:59.840 align:middle line:-1
+为了让聚焦引擎找到你的环境
+

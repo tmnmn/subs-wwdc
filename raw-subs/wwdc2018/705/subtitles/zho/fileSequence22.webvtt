@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.686 --> 00:22:04.057 align:middle line:-2
+is_trial_period字段
+和is_in_intro_offer_period字段
+
+00:22:04.525 --> 00:22:06.226 align:middle line:-1
+如果这些字段中的任何一个为真
+
+00:22:06.560 --> 00:22:08.829 align:middle line:-1
+这就表明这笔交易
+
+00:22:09.096 --> 00:22:11.732 align:middle line:-1
+是一个推介价位或免费试用的交易
+
+00:22:12.533 --> 00:22:16.103 align:middle line:0
+如果是这样
+你应该记录它的
+
+00:22:16.403 --> 00:22:17.504 align:middle line:0
+针对当前用户的
+product_id
+
+00:22:17.571 --> 00:22:20.541 align:middle line:0
+你可以将它们存储在名为
+consumedProductDiscounts的字段中
+
+00:22:21.642 --> 00:22:24.278 align:middle line:0
+现在 如果你正在跟踪
+
+00:22:24.578 --> 00:22:27.781 align:middle line:0
+哪些产品被用来提供推介优惠
+当你需要向用户显示一些
+
+00:22:27.848 --> 00:22:31.151 align:middle line:0
+新的订阅产品的价格时
+
+00:22:31.852 --> 00:22:33.020 align:middle line:-1
+你可以这样做
+
+00:22:33.086 --> 00:22:35.155 align:middle line:-2
+你可以获取
+currentUser的
+
+00:22:35.222 --> 00:22:36.823 align:middle line:-1
+consumedProductDiscounts
+
+00:22:37.357 --> 00:22:39.393 align:middle line:-2
+在它们上面执行
+SKProductsRequest函数
+
+00:22:39.927 --> 00:22:43.730 align:middle line:0
+现在iOS 12中
+SKProductRequest的response
+
+00:22:43.964 --> 00:22:46.099 align:middle line:0
+包含subscriptionGroupIdentifier
+属性的原因是
+
+00:22:46.366 --> 00:22:49.403 align:middle line:0
+以便于你知道这个特定产品
+来自哪个订阅组
+
+00:22:49.937 --> 00:22:52.472 align:middle line:0
+现在有了这个
+subscriptionGroupIdentifier
+
+00:22:52.539 --> 00:22:56.577 align:middle line:0
+你就可以在该用户的一组
+consumedGroupDiscounts中
+
+00:22:56.643 --> 00:22:57.678 align:middle line:0
+跟踪该消息
+
+00:22:57.744 --> 00:23:01.348 align:middle line:0
+你知道这个用户使用过哪个订阅组
+

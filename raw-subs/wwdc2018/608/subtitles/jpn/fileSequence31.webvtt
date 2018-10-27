@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.292 --> 00:31:03.664 align:start position:21% line:-2
+floatでなくhalfを使えば
+GPUバジェットは変わるはず
+
+00:31:05.566 --> 00:31:09.970 align:start position:29% line:-2
+可視化できる
+もう１つの領域は同期です
+
+00:31:10.237 --> 00:31:12.573 align:start position:34% line:-1
+これが重要なのは―
+
+00:31:12.673 --> 00:31:17.644 align:start position:27% line:-2
+シェーダが同期を待たず
+フル稼働してほしいからです
+
+00:31:18.846 --> 00:31:22.750 align:start position:23% line:-2
+シェーダコードで
+テクスチャやバッファを読んだり
+
+00:31:22.850 --> 00:31:28.622 align:start position:21% line:-2
+アトミックやバリアを使うと
+同期に時間を要するかもしれません
+
+00:31:29.890 --> 00:31:33.227 align:start position:29% line:-2
+だから我々は
+シェーダからコールする―
+
+00:31:33.327 --> 00:31:36.663 align:start position:29% line:-2
+インライン関数のコストを
+可視化しました
+
+00:31:37.297 --> 00:31:43.337 align:start position:29% line:-2
+最も高い関数を処理して
+最適化することができます
+
+00:31:43.504 --> 00:31:48.242 align:start position:43% line:-1
+(拍手)
+
+00:31:48.842 --> 00:31:52.880 align:start position:21% line:-2
+AppleのA11 bionic
+チップは―
+
+00:31:52.980 --> 00:31:56.016 align:start position:30% line:-2
+最高のプロファイリング
+データを提供します
+
+00:31:56.283 --> 00:32:00.087 align:start position:29% line:-2
+今年 インライン関数でも
+導入したのは―
+

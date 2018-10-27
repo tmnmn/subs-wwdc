@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:57.426 --> 00:01:00.016 A:middle
+reliability fixes in Xcode 10.
+
+00:01:00.996 --> 00:01:02.626 A:middle
+The -- thank you.
+
+00:01:04.516 --> 00:01:08.066 A:middle
+[ Applause ]
+
+00:01:08.566 --> 00:01:09.936 A:middle
+The compiler and debugger teams
+
+00:01:09.936 --> 00:01:11.146 A:middle
+have been able to smooth over
+
+00:01:11.146 --> 00:01:12.666 A:middle
+many of the rough edges that
+
+00:01:12.666 --> 00:01:14.056 A:middle
+were causing Swift debugging
+
+00:01:14.056 --> 00:01:14.496 A:middle
+headaches.
+
+00:01:14.726 --> 00:01:15.756 A:middle
+I'd like to tell you about a
+
+00:01:15.756 --> 00:01:17.096 A:middle
+couple of them.
+
+00:01:17.566 --> 00:01:19.266 A:middle
+In some cases, usually with more
+
+00:01:19.266 --> 00:01:20.506 A:middle
+complex projects or build
+
+00:01:20.506 --> 00:01:22.466 A:middle
+configurations, attempts to po
+
+00:01:22.466 --> 00:01:23.566 A:middle
+an object or evaluate an
+
+00:01:23.566 --> 00:01:25.236 A:middle
+expression in the console may
+
+00:01:25.646 --> 00:01:27.466 A:middle
+have failed with an error such
+
+00:01:27.466 --> 00:01:27.986 A:middle
+as this.
+
+00:01:28.186 --> 00:01:30.306 A:middle
+The AST context that this error
+
+00:01:30.306 --> 00:01:32.266 A:middle
+refers to is an expression
+
+00:01:32.266 --> 00:01:34.196 A:middle
+context that LLDB needs to
+
+00:01:34.196 --> 00:01:35.456 A:middle
+reconstruct the state of the
+
+00:01:35.456 --> 00:01:36.716 A:middle
+compiler from when it built your
+
+00:01:36.716 --> 00:01:37.216 A:middle
+project.
+
+00:01:37.656 --> 00:01:39.086 A:middle
+And, in some cases, such as if
+
+00:01:39.086 --> 00:01:40.686 A:middle
+there are module conflicts, the
+
+00:01:40.906 --> 00:01:42.446 A:middle
+expression context cannot be
+
+00:01:42.446 --> 00:01:44.196 A:middle
+reliably reconstructed, and your
+
+00:01:44.196 --> 00:01:45.316 A:middle
+expression would fail.
+
+00:01:46.386 --> 00:01:47.956 A:middle
+In Xcode 10, LLDB have
+
+00:01:47.956 --> 00:01:49.486 A:middle
+implemented a fallback mechanism
+
+00:01:49.486 --> 00:01:50.576 A:middle
+for when this problem case
+
+00:01:50.576 --> 00:01:51.086 A:middle
+occurs.
+
+00:01:51.366 --> 00:01:52.836 A:middle
+So if it can't reconstruct the
+
+00:01:52.836 --> 00:01:54.496 A:middle
+context, it will fall back to
+
+00:01:54.496 --> 00:01:56.476 A:middle
+creating a simpler context for
+
+00:01:56.476 --> 00:01:58.146 A:middle
+the current frame and use that
+
+00:01:58.146 --> 00:01:59.406 A:middle
+to evaluate your expression.
+

@@ -1,0 +1,80 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:57.518 --> 00:22:01.154 align:middle line:-2
+聚焦引擎会随焦点移动
+设置contentOffset
+
+00:22:01.421 --> 00:22:03.390 align:middle line:-1
+以便保证当前的焦点项显示在屏幕上
+
+00:22:04.291 --> 00:22:05.692 align:middle line:-1
+因为这是一个UIView
+
+00:22:05.993 --> 00:22:08.328 align:middle line:-2
+我还要通过
+bounds.origin更新
+
+00:22:08.562 --> 00:22:11.498 align:middle line:-2
+以便coordinateSpace
+转换继续准确无误地工作
+
+00:22:15.035 --> 00:22:16.069 align:middle line:-1
+看到它是如何实现的了吧？
+
+00:22:18.639 --> 00:22:21.942 align:middle line:0
+那么你可以看到当我聚焦某方格时
+它会在屏幕上移动
+
+00:22:22.543 --> 00:22:23.544 align:middle line:0
+如果我继续
+
+00:22:23.944 --> 00:22:26.914 align:middle line:0
+我会得到一个漂亮、流畅的滚动
+并拥有同样的动量…
+
+00:22:27.214 --> 00:22:28.048 align:middle line:0
+谢谢
+
+00:22:28.282 --> 00:22:30.984 align:middle line:0
+带有同样动量和动画的
+漂亮、流畅的滚动
+
+00:22:31.251 --> 00:22:32.619 align:middle line:0
+就好像这是一个
+UIScrollView
+
+00:22:34.154 --> 00:22:36.790 align:middle line:-2
+看起来非常棒
+但我认为我们可以做得更好
+
+00:22:37.291 --> 00:22:40.527 align:middle line:-2
+我真正想要的是当这些方格
+成为焦点时 它们会活跃起来
+
+00:22:40.827 --> 00:22:42.162 align:middle line:-1
+就像系统元素一样
+
+00:22:43.630 --> 00:22:44.831 align:middle line:-1
+让我们实际操作一下
+
+00:22:46.333 --> 00:22:47.835 align:middle line:-1
+我要返回到LevelTile
+
+00:22:48.435 --> 00:22:50.737 align:middle line:-1
+我要试试一个可选方法
+
+00:22:51.271 --> 00:22:52.506 align:middle line:-1
+didHintFocusMovement
+
+00:22:53.941 --> 00:22:56.476 align:middle line:-1
+我要把建议的视角、旋转
+
+00:22:56.677 --> 00:22:59.346 align:middle line:-2
+和转换值
+从UIFocusMovementHint中取出来
+
+00:22:59.680 --> 00:23:01.849 align:middle line:-2
+并在我渲染FocusTile时
+app它们
+

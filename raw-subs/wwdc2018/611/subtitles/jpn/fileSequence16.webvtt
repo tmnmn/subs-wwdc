@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.758 --> 00:16:01.461 align:start position:25% line:-1
+その結果 見た目が向上します
+
+00:16:02.763 --> 00:16:04.665 align:start position:30% line:-1
+ただし注意点があります
+
+00:16:05.332 --> 00:16:09.636 align:start position:29% line:-2
+シミュレーションが
+１フレーム前に起こるため
+
+00:16:10.037 --> 00:16:13.740 align:start position:21% line:-1
+予測されたPoseも別途必要です
+
+00:16:14.041 --> 00:16:18.645 align:start position:32% line:-2
+このセットでは
+56ミリ秒先を予測し
+
+00:16:18.745 --> 00:16:22.249 align:start position:30% line:-2
+レンダリングスレッドの
+予測セットを
+
+00:16:22.349 --> 00:16:25.552 align:start position:36% line:-2
+光子放出の瞬間に
+合致させています
+
+00:16:27.054 --> 00:16:30.023 align:start position:32% line:-2
+CPUに関しては
+これで問題ありません
+
+00:16:30.123 --> 00:16:35.729 align:start position:27% line:-2
+アプリケーションが うまく
+作業を分布させています
+
+00:16:36.129 --> 00:16:37.898 align:start position:32% line:-1
+GPUはどうでしょう
+
+00:16:40.200 --> 00:16:44.838 align:start position:30% line:-2
+このアプリケーションの
+例を見てください
+
+00:16:45.038 --> 00:16:48.642 align:start position:25% line:-1
+フレーム全体のGPUの処理を
+
+00:16:48.742 --> 00:16:52.045 align:start position:29% line:-2
+１つのコマンドバッファに
+エンコードしています
+
+00:16:52.679 --> 00:16:57.651 align:start position:27% line:-2
+コマンドバッファの完了まで
+GPUはアイドル状態です
+
+00:16:58.719 --> 00:17:03.757 align:start position:27% line:-2
+しかしCPUがエンコードに
+要する時間は
+

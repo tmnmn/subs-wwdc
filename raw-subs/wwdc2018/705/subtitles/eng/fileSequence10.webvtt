@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.096 --> 00:10:02.496 A:middle
+But once you've saved these two
+
+00:10:02.496 --> 00:10:04.036 A:middle
+bits of information against this
+
+00:10:04.136 --> 00:10:05.136 A:middle
+current user on your server
+
+00:10:05.426 --> 00:10:06.146 A:middle
+you're ready to go ahead with
+
+00:10:06.146 --> 00:10:07.636 A:middle
+the last step, which is to tell
+
+00:10:07.636 --> 00:10:09.276 A:middle
+the device that this transaction
+
+00:10:09.276 --> 00:10:10.066 A:middle
+has actually passed your
+
+00:10:10.066 --> 00:10:11.146 A:middle
+verification checks.
+
+00:10:11.946 --> 00:10:13.016 A:middle
+And then when your device gets
+
+00:10:13.046 --> 00:10:14.756 A:middle
+this callback it can call Finish
+
+00:10:14.756 --> 00:10:16.256 A:middle
+Transaction back down in your
+
+00:10:16.256 --> 00:10:17.146 A:middle
+Transaction Observer.
+
+00:10:18.276 --> 00:10:19.456 A:middle
+This is a really important step
+
+00:10:19.456 --> 00:10:20.106 A:middle
+because finishing the
+
+00:10:20.106 --> 00:10:21.146 A:middle
+transactional will actually
+
+00:10:21.146 --> 00:10:22.606 A:middle
+clear it out of your payment
+
+00:10:22.606 --> 00:10:22.866 A:middle
+queue.
+
+00:10:22.866 --> 00:10:23.816 A:middle
+And if you don't call Finish
+
+00:10:23.816 --> 00:10:25.626 A:middle
+Transaction it might reappear
+
+00:10:25.626 --> 00:10:26.516 A:middle
+there the next time the app
+
+00:10:26.756 --> 00:10:27.876 A:middle
+launches for processing.
+
+00:10:27.946 --> 00:10:28.886 A:middle
+So make sure you finish every
+
+00:10:28.886 --> 00:10:31.506 A:middle
+transaction that begins in
+
+00:10:32.516 --> 00:10:32.756 A:middle
+StoreKit.
+
+00:10:32.856 --> 00:10:33.396 A:middle
+Once you've finished the
+
+00:10:33.396 --> 00:10:35.136 A:middle
+transaction you've got an
+
+00:10:35.136 --> 00:10:36.236 A:middle
+updated subscription state in
+
+00:10:36.236 --> 00:10:37.226 A:middle
+your server, the user is now
+
+00:10:37.336 --> 00:10:38.896 A:middle
+free to enjoy that subscription
+
+00:10:38.896 --> 00:10:40.136 A:middle
+period on your service.
+
+00:10:43.176 --> 00:10:44.106 A:middle
+Now let's take another look at
+
+00:10:44.106 --> 00:10:45.486 A:middle
+that user table I mentioned that
+
+00:10:45.486 --> 00:10:46.506 A:middle
+you're storing on your server.
+
+00:10:47.846 --> 00:10:48.966 A:middle
+Each user who purchases a
+
+00:10:48.966 --> 00:10:50.396 A:middle
+subscription using this setup
+
+00:10:50.396 --> 00:10:51.556 A:middle
+will be assigned a unique
+
+00:10:51.726 --> 00:10:53.286 A:middle
+original transaction ID, that's
+
+00:10:53.286 --> 00:10:55.046 A:middle
+that field that you saved from
+
+00:10:55.046 --> 00:10:56.216 A:middle
+the transaction response.
+
+00:10:56.896 --> 00:10:58.186 A:middle
+And this identifier essentially
+
+00:10:58.186 --> 00:10:59.716 A:middle
+becomes that user's subscription
+
+00:10:59.946 --> 00:11:00.106 A:middle
+ID.
+

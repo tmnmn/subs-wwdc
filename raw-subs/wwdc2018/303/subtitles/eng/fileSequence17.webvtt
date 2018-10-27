@@ -1,0 +1,138 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.526 --> 00:17:00.036 A:middle
+and its related beta testers.
+
+00:17:00.306 --> 00:17:00.966 A:middle
+And this is where the
+
+00:17:00.966 --> 00:17:02.766 A:middle
+relationship self link comes in.
+
+00:17:03.486 --> 00:17:04.296 A:middle
+It looks like this.
+
+00:17:04.415 --> 00:17:05.976 A:middle
+We do a POST request to the
+
+00:17:05.976 --> 00:17:07.236 A:middle
+relationship self link.
+
+00:17:07.465 --> 00:17:09.016 A:middle
+And if you look at the data
+
+00:17:09.016 --> 00:17:10.326 A:middle
+we're sending, it's these type
+
+00:17:10.326 --> 00:17:12.556 A:middle
+and id pairs of the two testers
+
+00:17:12.556 --> 00:17:13.705 A:middle
+in this case that we want to add
+
+00:17:13.705 --> 00:17:14.356 A:middle
+to this group.
+
+00:17:14.796 --> 00:17:16.236 A:middle
+So this request says take these
+
+00:17:16.236 --> 00:17:17.756 A:middle
+two testers and put them into
+
+00:17:17.756 --> 00:17:18.286 A:middle
+this group.
+
+00:17:18.376 --> 00:17:19.296 A:middle
+We don't have to include more
+
+00:17:19.296 --> 00:17:20.415 A:middle
+tester information because the
+
+00:17:20.415 --> 00:17:21.406 A:middle
+testers are already in
+
+00:17:21.406 --> 00:17:21.896 A:middle
+TestFlight.
+
+00:17:22.496 --> 00:17:25.096 A:middle
+If we run it, we get a 204 NO
+
+00:17:25.096 --> 00:17:26.236 A:middle
+CONTENT response again.
+
+00:17:26.496 --> 00:17:27.685 A:middle
+That's the API telling you that
+
+00:17:27.685 --> 00:17:28.786 A:middle
+the testers have been added to
+
+00:17:28.786 --> 00:17:29.186 A:middle
+the group.
+
+00:17:30.266 --> 00:17:31.106 A:middle
+I'm sure some of you are
+
+00:17:31.106 --> 00:17:32.036 A:middle
+wondering "What if I want to
+
+00:17:32.036 --> 00:17:33.266 A:middle
+take testers out of the group
+
+00:17:33.266 --> 00:17:33.726 A:middle
+instead?"
+
+00:17:33.726 --> 00:17:34.986 A:middle
+And the answer is you do it in
+
+00:17:34.986 --> 00:17:35.916 A:middle
+exactly the same way.
+
+00:17:35.916 --> 00:17:36.926 A:middle
+It's the same URL.
+
+00:17:37.296 --> 00:17:38.486 A:middle
+It's the same data format.
+
+00:17:38.786 --> 00:17:39.716 A:middle
+You'll just use the DELETE
+
+00:17:39.716 --> 00:17:41.126 A:middle
+method instead of the POST
+
+00:17:41.126 --> 00:17:41.496 A:middle
+method.
+
+00:17:41.496 --> 00:17:44.486 A:middle
+Now let's take a look at Beta
+
+00:17:44.486 --> 00:17:46.256 A:middle
+Groups again and look at that
+
+00:17:46.336 --> 00:17:46.926 A:middle
+second link.
+
+00:17:47.896 --> 00:17:50.716 A:middle
+This is what we call the related
+
+00:17:50.716 --> 00:17:50.956 A:middle
+link.
+
+00:17:51.546 --> 00:17:53.186 A:middle
+This URL represents the actual
+
+00:17:53.186 --> 00:17:54.836 A:middle
+related data, in this case the
+
+00:17:54.836 --> 00:17:56.076 A:middle
+testers in this group.
+
+00:17:56.076 --> 00:17:58.246 A:middle
+If we go and get this data, we
+
+00:17:58.246 --> 00:17:59.266 A:middle
+get back an array of beta
+
+00:17:59.266 --> 00:17:59.816 A:middle
+testers.
+

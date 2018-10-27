@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:58.656 --> 00:42:00.196 A:middle
+to its super view and it does so
+
+00:42:00.196 --> 00:42:02.176 A:middle
+with a constant of 30, so that
+
+00:42:02.176 --> 00:42:02.666 A:middle
+makes sense.
+
+00:42:03.366 --> 00:42:04.536 A:middle
+And then the trailing constraint
+
+00:42:04.536 --> 00:42:07.916 A:middle
+here aligns the trailing edge of
+
+00:42:07.916 --> 00:42:09.256 A:middle
+the planet globe view with the
+
+00:42:09.256 --> 00:42:10.546 A:middle
+trailing edge of the super view,
+
+00:42:10.956 --> 00:42:11.956 A:middle
+and it also does so with a
+
+00:42:12.096 --> 00:42:12.846 A:middle
+constant of 30.
+
+00:42:13.426 --> 00:42:14.156 A:middle
+Now the fact that this
+
+00:42:14.156 --> 00:42:15.686 A:middle
+constraint doesn't attach to
+
+00:42:15.686 --> 00:42:16.796 A:middle
+anything on the right-hand side
+
+00:42:16.796 --> 00:42:17.866 A:middle
+is a little bit suspicious and
+
+00:42:17.866 --> 00:42:19.016 A:middle
+makes me wonder if we see the
+
+00:42:19.016 --> 00:42:19.716 A:middle
+whole picture here.
+
+00:42:20.206 --> 00:42:21.306 A:middle
+In such a situation, it's
+
+00:42:21.306 --> 00:42:22.426 A:middle
+usually a good idea to see if
+
+00:42:22.426 --> 00:42:23.326 A:middle
+there's any content that's
+
+00:42:23.326 --> 00:42:24.396 A:middle
+currently being clipped that we
+
+00:42:24.396 --> 00:42:25.336 A:middle
+don't see by default.
+
+00:42:26.006 --> 00:42:27.456 A:middle
+And you can do so using this
+
+00:42:27.496 --> 00:42:28.776 A:middle
+button down here to show clip
+
+00:42:28.826 --> 00:42:29.316 A:middle
+content.
+
+00:42:29.706 --> 00:42:30.916 A:middle
+Now, when I enable this
+
+00:42:30.916 --> 00:42:32.186 A:middle
+functionality, you can see that
+
+00:42:32.186 --> 00:42:33.296 A:middle
+the planet globe view actually
+
+00:42:33.326 --> 00:42:34.816 A:middle
+extends past the window bounds
+
+00:42:34.816 --> 00:42:36.436 A:middle
+towards the right-hand side, and
+
+00:42:36.436 --> 00:42:38.026 A:middle
+now the horizontal centering
+
+00:42:38.516 --> 00:42:39.876 A:middle
+constraint makes sense again
+
+00:42:39.876 --> 00:42:40.926 A:middle
+since it actually correctly
+
+00:42:40.926 --> 00:42:42.946 A:middle
+centers it in the super view.
+
+00:42:43.316 --> 00:42:44.916 A:middle
+However, the super view just
+
+00:42:44.916 --> 00:42:46.176 A:middle
+extends past the window.
+
+00:42:46.326 --> 00:42:48.166 A:middle
+This is a very common issue if
+
+00:42:48.166 --> 00:42:49.186 A:middle
+you set up your constraints in
+
+00:42:49.186 --> 00:42:50.216 A:middle
+code, where you accidentally
+
+00:42:50.216 --> 00:42:51.696 A:middle
+swap first and second item and
+
+00:42:51.696 --> 00:42:52.826 A:middle
+thereby get the layout direction
+
+00:42:52.826 --> 00:42:53.106 A:middle
+wrong.
+
+00:42:53.506 --> 00:42:54.906 A:middle
+Or you accidentally invert the
+
+00:42:54.906 --> 00:42:57.166 A:middle
+constant, and in this case, we
+
+00:42:57.166 --> 00:42:58.636 A:middle
+used 30 instead of using
+
+00:42:58.636 --> 00:43:00.226 A:middle
+negative 30 to insert it towards
+

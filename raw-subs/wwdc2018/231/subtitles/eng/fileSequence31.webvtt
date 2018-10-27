@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.756 --> 00:31:00.126 A:middle
+So if we look at some sample
+
+00:31:00.126 --> 00:31:01.616 A:middle
+code on how we would add an
+
+00:31:01.616 --> 00:31:03.226 A:middle
+accessory to the home, you just
+
+00:31:03.726 --> 00:31:05.336 A:middle
+need to call addAnd
+
+00:31:05.336 --> 00:31:07.006 A:middle
+SetupAccessories on the home
+
+00:31:07.006 --> 00:31:08.936 A:middle
+object, and HomeKit takes care
+
+00:31:08.936 --> 00:31:11.326 A:middle
+of the rest.
+
+00:31:11.876 --> 00:31:13.866 A:middle
+Now, I mentioned scenes earlier,
+
+00:31:14.416 --> 00:31:15.536 A:middle
+but it's a pretty powerful
+
+00:31:15.536 --> 00:31:17.126 A:middle
+concept, so I want to go a bit
+
+00:31:17.126 --> 00:31:17.466 A:middle
+deeper.
+
+00:31:18.746 --> 00:31:19.806 A:middle
+Now, this is how you can
+
+00:31:19.806 --> 00:31:21.136 A:middle
+integrate different types of
+
+00:31:21.136 --> 00:31:22.886 A:middle
+accessories together to help
+
+00:31:22.886 --> 00:31:24.336 A:middle
+provide a cohesive experience.
+
+00:31:24.866 --> 00:31:28.746 A:middle
+We have some suggested scenes,
+
+00:31:29.616 --> 00:31:30.906 A:middle
+but we also allow full
+
+00:31:30.906 --> 00:31:32.656 A:middle
+customization by the user.
+
+00:31:37.156 --> 00:31:37.886 A:middle
+Now, one of the great things
+
+00:31:37.886 --> 00:31:39.556 A:middle
+about scenes is that Siri
+
+00:31:39.556 --> 00:31:41.156 A:middle
+understands what scenes are.
+
+00:31:41.296 --> 00:31:44.026 A:middle
+And so speaking the name to Siri
+
+00:31:44.026 --> 00:31:46.076 A:middle
+execute, speaking the name of a
+
+00:31:46.076 --> 00:31:47.646 A:middle
+scene to Siri will execute the
+
+00:31:47.646 --> 00:31:48.356 A:middle
+scene directly.
+
+00:31:48.616 --> 00:31:53.266 A:middle
+Now, we don't call them scenes
+
+00:31:53.266 --> 00:31:53.776 A:middle
+in HomeKit.
+
+00:31:54.486 --> 00:31:56.276 A:middle
+We call them HMActionSets.
+
+00:31:57.286 --> 00:31:58.316 A:middle
+So if you want to create an
+
+00:31:58.316 --> 00:31:59.826 A:middle
+HMActionSet -- for example,
+
+00:31:59.956 --> 00:32:02.366 A:middle
+arriving home -- you'll need to
+

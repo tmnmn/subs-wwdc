@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.696 --> 00:32:00.876 A:middle
+color and it's going to wash it
+
+00:32:00.876 --> 00:32:01.846 A:middle
+out in a way that is not
+
+00:32:01.846 --> 00:32:02.366 A:middle
+desirable.
+
+00:32:03.376 --> 00:32:04.456 A:middle
+I'll show you an example of that
+
+00:32:04.456 --> 00:32:04.726 A:middle
+later.
+
+00:32:06.866 --> 00:32:08.836 A:middle
+So, revisiting our application,
+
+00:32:09.236 --> 00:32:11.496 A:middle
+we can go ahead and override
+
+00:32:11.496 --> 00:32:13.066 A:middle
+allowsVibrancy on our view and
+
+00:32:13.066 --> 00:32:14.116 A:middle
+in this case we're going to just
+
+00:32:14.116 --> 00:32:15.826 A:middle
+set it on the view that contains
+
+00:32:15.826 --> 00:32:18.256 A:middle
+our entire meter in the entire
+
+00:32:18.256 --> 00:32:18.806 A:middle
+popover.
+
+00:32:19.246 --> 00:32:20.136 A:middle
+And let's see what that looks
+
+00:32:20.136 --> 00:32:20.326 A:middle
+like.
+
+00:32:21.896 --> 00:32:23.796 A:middle
+Well, our slider looks pretty
+
+00:32:23.796 --> 00:32:24.106 A:middle
+good.
+
+00:32:24.106 --> 00:32:25.946 A:middle
+It's exactly what we expected.
+
+00:32:25.946 --> 00:32:27.326 A:middle
+But what happened to the faces?
+
+00:32:28.016 --> 00:32:28.756 A:middle
+They're all washed out.
+
+00:32:30.146 --> 00:32:32.286 A:middle
+And what happened here is that
+
+00:32:32.286 --> 00:32:34.336 A:middle
+when we set allowsVibrancy on
+
+00:32:34.336 --> 00:32:36.946 A:middle
+the overall meter view, not only
+
+00:32:36.946 --> 00:32:37.726 A:middle
+are we getting the vibrant
+
+00:32:37.726 --> 00:32:39.636 A:middle
+blending on that view, but also
+
+00:32:39.716 --> 00:32:41.056 A:middle
+both of these subviews.
+
+00:32:42.216 --> 00:32:43.086 A:middle
+And the fix here is pretty
+
+00:32:43.086 --> 00:32:43.456 A:middle
+simple.
+
+00:32:44.016 --> 00:32:45.646 A:middle
+If we localize our definition of
+
+00:32:45.646 --> 00:32:47.266 A:middle
+allowsVibrancy to just the part
+
+00:32:47.266 --> 00:32:49.086 A:middle
+that's drawing the slider, we
+
+00:32:49.086 --> 00:32:50.386 A:middle
+get exactly what we expected.
+
+00:32:50.806 --> 00:32:52.146 A:middle
+Our slider is drawing vibrantly
+
+00:32:52.556 --> 00:32:53.786 A:middle
+and the colors in our face
+
+00:32:53.836 --> 00:32:55.296 A:middle
+buttons look exactly the way
+
+00:32:55.296 --> 00:32:55.846 A:middle
+that we wanted.
+
+00:32:57.366 --> 00:32:58.286 A:middle
+When you're drawing vibrantly,
+
+00:32:58.286 --> 00:32:59.536 A:middle
+typically you'd want to apply
+
+00:32:59.536 --> 00:33:01.376 A:middle
+vibrancy to only the leaf views
+

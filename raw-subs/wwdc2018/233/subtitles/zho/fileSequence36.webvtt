@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.225 --> 00:36:00.460 align:middle line:-1
+最后 你需要将此活动设置为
+
+00:36:00.527 --> 00:36:03.030 align:middle line:-2
+viewController的
+userActivity属性
+
+00:36:03.997 --> 00:36:06.266 align:middle line:-2
+每当显示该
+viewController时
+
+00:36:06.333 --> 00:36:08.235 align:middle line:-1
+这都会使它成为当前活动
+
+00:36:09.503 --> 00:36:11.738 align:middle line:-2
+这就是你需要在源设备上
+做的所有事情
+
+00:36:12.940 --> 00:36:17.077 align:middle line:-2
+在后续设备上
+首先 你的app需要声明
+
+00:36:17.144 --> 00:36:19.446 align:middle line:-1
+它能够支持你创建的该活动类型
+
+00:36:20.113 --> 00:36:23.851 align:middle line:-2
+然后你需要实现两个
+UIApplicationDelegate回调
+
+00:36:24.651 --> 00:36:27.754 align:middle line:-2
+第一个是application(_:willContinue
+UserActivityWithType:)
+
+00:36:28.055 --> 00:36:31.758 align:middle line:-1
+只要你点击或点按图标以启动接力
+
+00:36:31.825 --> 00:36:33.260 align:middle line:-1
+就会调用此函数
+
+00:36:34.428 --> 00:36:37.698 align:middle line:-2
+此时 我们还没有准备好
+NSUserActivity对象
+
+00:36:38.365 --> 00:36:41.101 align:middle line:-1
+但你知道将要继续的活动类型
+
+00:36:41.435 --> 00:36:43.403 align:middle line:-1
+因此你就可以先开始准备UI了
+
+00:36:44.705 --> 00:36:46.573 align:middle line:-1
+很快 你将收到
+
+00:36:46.640 --> 00:36:49.176 align:middle line:-2
+application(_:continue:
+:restorationHandler:)
+
+00:36:49.843 --> 00:36:53.280 align:middle line:-2
+其将包含完全重建的
+NSUserActivity对象
+
+00:36:54.681 --> 00:36:58.685 align:middle line:-1
+此后你就可以设置好并在该设备上
+
+00:36:58.752 --> 00:36:59.820 align:middle line:-1
+继续原先的体验了
+

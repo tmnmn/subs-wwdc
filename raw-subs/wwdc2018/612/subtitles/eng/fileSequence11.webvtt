@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.716 --> 00:11:02.796 A:middle
+some hints in the display track.
+
+00:11:02.866 --> 00:11:04.486 A:middle
+We [inaudible] and these are the
+
+00:11:04.576 --> 00:11:05.216 A:middle
+hints here.
+
+00:11:06.016 --> 00:11:07.276 A:middle
+They will show you when a
+
+00:11:07.276 --> 00:11:09.036 A:middle
+surface has been displayed for
+
+00:11:09.476 --> 00:11:11.556 A:middle
+longer than we would expect on a
+
+00:11:11.556 --> 00:11:12.326 A:middle
+normal rendering.
+
+00:11:13.166 --> 00:11:14.386 A:middle
+So maybe this is a great place
+
+00:11:14.416 --> 00:11:15.326 A:middle
+to start looking at it.
+
+00:11:15.326 --> 00:11:16.876 A:middle
+There's some clusters of them.
+
+00:11:17.226 --> 00:11:18.316 A:middle
+So let's zoom into one.
+
+00:11:19.196 --> 00:11:20.756 A:middle
+To zoom, we will hold the option
+
+00:11:20.756 --> 00:11:22.916 A:middle
+key and just drag the pointer to
+
+00:11:22.916 --> 00:11:24.196 A:middle
+the region of interest.
+
+00:11:24.676 --> 00:11:27.056 A:middle
+And in this case, if we keep
+
+00:11:27.056 --> 00:11:28.426 A:middle
+looking at the display track,
+
+00:11:29.306 --> 00:11:30.696 A:middle
+it's kind of evident already
+
+00:11:30.696 --> 00:11:32.066 A:middle
+that we are micro stuttering.
+
+00:11:32.066 --> 00:11:33.786 A:middle
+We can see that every display
+
+00:11:34.526 --> 00:11:35.746 A:middle
+has a different timing.
+
+00:11:36.446 --> 00:11:37.786 A:middle
+So in this case for example, we
+
+00:11:37.786 --> 00:11:43.136 A:middle
+have 50, 33, 16, back to 50, and
+
+00:11:43.136 --> 00:11:43.916 A:middle
+back to 33.
+
+00:11:44.526 --> 00:11:46.826 A:middle
+So when we see this pattern in
+
+00:11:46.826 --> 00:11:48.266 A:middle
+an instruments capture, it means
+
+00:11:48.266 --> 00:11:50.036 A:middle
+that we are micro stuttering and
+
+00:11:50.096 --> 00:11:50.976 A:middle
+we should correct it.
+
+00:11:51.876 --> 00:11:52.696 A:middle
+So let's just do that.
+
+00:11:53.196 --> 00:11:53.986 A:middle
+Back to the slides.
+
+00:11:58.206 --> 00:11:58.546 A:middle
+Okay.
+
+00:11:59.516 --> 00:12:00.956 A:middle
+We've just seen the problem, how
+

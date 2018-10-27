@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:55.796 --> 00:15:01.668 align:start position:23% line:-2
+readyはデータの読み書きが
+できる状態を指します
+
+00:15:01.768 --> 00:15:06.707 align:start position:21% line:-2
+TCPとTLSの場合は
+ハンドシェイクの完了も意味します
+
+00:15:08.308 --> 00:15:11.645 align:start position:32% line:-2
+waiting状態の
+説明をしましょう
+
+00:15:11.745 --> 00:15:16.450 align:start position:7% line:-2
+昨年 waitsForConnectivityを
+紹介しましたが
+
+00:15:16.550 --> 00:15:20.287 align:start position:9% line:-2
+NWConnectionのwaiting状態は
+それと同じものです
+
+00:15:20.387 --> 00:15:22.656 align:start position:29% line:-1
+標準でオンになっています
+
+00:15:22.756 --> 00:15:26.693 align:start position:29% line:-2
+接続を生成し始め
+ネットワークがない場合は
+
+00:15:26.793 --> 00:15:30.564 align:start position:34% line:-2
+利用可能になるまで
+待ってくれます
+
+00:15:30.664 --> 00:15:33.133 align:start position:23% line:-1
+reasonコードも使えますが
+
+00:15:33.233 --> 00:15:37.037 align:start position:27% line:-2
+ネットワークが移行するまで
+待つだけです
+
+00:15:37.404 --> 00:15:40.741 align:start position:29% line:-2
+モビリティはこのAPIに
+必要不可欠です
+
+00:15:41.808 --> 00:15:43.977 align:start position:34% line:-1
+エラーも通知します
+
+00:15:44.077 --> 00:15:49.383 align:start position:27% line:-2
+TLSの失敗などは失敗した
+イベントとして通知されます
+
+00:15:50.484 --> 00:15:53.620 align:start position:32% line:-2
+セットアップ後
+startを呼び出し
+
+00:15:53.720 --> 00:15:58.692 align:start position:23% line:-2
+コールバックを受け取るための
+ディスパッチキューを指定します
+

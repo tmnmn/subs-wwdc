@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.796 --> 00:15:01.406 A:middle
+rotation on this vector using a
+
+00:15:01.406 --> 00:15:01.896 A:middle
+quaternion.
+
+00:15:03.136 --> 00:15:04.836 A:middle
+Technically, we're rotating the
+
+00:15:04.836 --> 00:15:06.176 A:middle
+entire scene, but for purposes
+
+00:15:06.176 --> 00:15:07.066 A:middle
+of illustration, we're going to
+
+00:15:07.066 --> 00:15:08.256 A:middle
+say we're rotating this vector.
+
+00:15:10.066 --> 00:15:11.116 A:middle
+When using a quaternion for
+
+00:15:11.116 --> 00:15:12.896 A:middle
+rotations, you need to specify
+
+00:15:12.896 --> 00:15:14.406 A:middle
+an axis and angle of rotation.
+
+00:15:14.666 --> 00:15:16.716 A:middle
+Or to put it another way, what
+
+00:15:17.006 --> 00:15:18.386 A:middle
+are you rotating about and by
+
+00:15:18.386 --> 00:15:18.956 A:middle
+how much.
+
+00:15:19.696 --> 00:15:21.126 A:middle
+So we're going to rotate about
+
+00:15:21.126 --> 00:15:22.506 A:middle
+the x axis, and we're going to
+
+00:15:22.506 --> 00:15:26.426 A:middle
+rotate pi over 3 radians up.
+
+00:15:27.706 --> 00:15:28.736 A:middle
+You apply the rotation by
+
+00:15:28.736 --> 00:15:30.046 A:middle
+calling the simd act function.
+
+00:15:31.476 --> 00:15:33.256 A:middle
+This applies the action of the
+
+00:15:33.256 --> 00:15:34.326 A:middle
+quaternion on that vector and
+
+00:15:34.326 --> 00:15:35.646 A:middle
+returns a rotated vector.
+
+00:15:36.106 --> 00:15:37.786 A:middle
+So let's take a look at that
+
+00:15:37.786 --> 00:15:37.946 A:middle
+now.
+
+00:15:47.256 --> 00:15:48.566 A:middle
+So normally you're not
+
+00:15:48.566 --> 00:15:49.846 A:middle
+interested in rotating along a
+
+00:15:49.846 --> 00:15:50.626 A:middle
+single axis.
+
+00:15:50.676 --> 00:15:51.856 A:middle
+You usually want to rotate along
+
+00:15:51.856 --> 00:15:54.906 A:middle
+multiple axes, and if you're
+
+00:15:54.906 --> 00:15:55.856 A:middle
+already familiar with rotation
+
+00:15:55.856 --> 00:15:56.996 A:middle
+matrices, this is going to seem
+
+00:15:56.996 --> 00:15:57.566 A:middle
+very natural.
+

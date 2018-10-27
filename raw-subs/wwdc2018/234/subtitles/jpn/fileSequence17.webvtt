@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.418 --> 00:17:02.422 align:start position:25% line:-1
+では右は何が違うのでしょうか
+
+00:17:02.689 --> 00:17:04.858 align:start position:7% line:-1
+Passive Event Listenerです
+
+00:17:04.958 --> 00:17:09.863 align:start position:16% line:-2
+これは documentやwindow
+bodyの要素で有効になります
+
+00:17:09.963 --> 00:17:15.135 align:start position:30% line:-2
+そしてタッチイベントが
+ブラウザに指示します
+
+00:17:15.234 --> 00:17:19.573 align:start position:29% line:-2
+“妨害を受けず
+スクロールを続行せよ”と
+
+00:17:19.673 --> 00:17:24.044 align:start position:16% line:-1
+追加要素をPassiveにしたい場合は
+
+00:17:24.144 --> 00:17:28.549 align:start position:27% line:-2
+Passiveプロパティを
+Trueに指定します
+
+00:17:28.715 --> 00:17:32.152 align:start position:27% line:-1
+このフラグの指示によって―
+
+00:17:32.252 --> 00:17:36.723 align:start position:23% line:-2
+ブラウザはイベント処理の完了を
+待ちません
+
+00:17:36.823 --> 00:17:40.794 align:start position:30% line:-2
+これで滑らかに
+スクロールできるのです
+
+00:17:42.729 --> 00:17:47.501 align:start position:9% line:-2
+次はAsync Image Decodingの
+非同期呼び出しです
+
+00:17:47.668 --> 00:17:50.370 align:start position:21% line:-1
+通常 画像のデコードは同期的です
+
+00:17:50.470 --> 00:17:52.272 align:start position:27% line:-1
+メインスレッドをブロックし
+
+00:17:52.372 --> 00:17:55.809 align:start position:29% line:-2
+すべての画像を読み込んで
+表示します
+
+00:17:56.109 --> 00:17:59.680 align:start position:29% line:-2
+これではユーザとの対話も
+遮断されます
+
+00:17:59.780 --> 00:18:04.885 align:start position:27% line:-2
+しかし非同期デコードなら
+スレッドを並行処理するので
+

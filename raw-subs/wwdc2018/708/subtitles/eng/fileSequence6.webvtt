@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.926 --> 00:06:01.216 A:middle
+more features to your app, your
+
+00:06:01.216 --> 00:06:02.806 A:middle
+app size might simply become out
+
+00:06:02.806 --> 00:06:03.286 A:middle
+of control.
+
+00:06:04.696 --> 00:06:05.756 A:middle
+So that's the first thing that
+
+00:06:05.756 --> 00:06:06.666 A:middle
+you can do about it.
+
+00:06:06.976 --> 00:06:08.736 A:middle
+And if these machine-learning
+
+00:06:08.736 --> 00:06:10.076 A:middle
+models are supporting other
+
+00:06:10.116 --> 00:06:11.946 A:middle
+features to your app, you can
+
+00:06:11.946 --> 00:06:13.506 A:middle
+keep them outside your initial
+
+00:06:13.506 --> 00:06:13.956 A:middle
+bundle.
+
+00:06:13.956 --> 00:06:17.196 A:middle
+And then as the user uses the
+
+00:06:17.196 --> 00:06:18.666 A:middle
+other features, you can download
+
+00:06:18.666 --> 00:06:20.546 A:middle
+them on demand, compile them on
+
+00:06:20.546 --> 00:06:21.036 A:middle
+device.
+
+00:06:21.796 --> 00:06:23.036 A:middle
+So this -- in this case, this
+
+00:06:23.036 --> 00:06:24.356 A:middle
+user is happy in the beginning
+
+00:06:24.356 --> 00:06:26.166 A:middle
+because the installation size is
+
+00:06:26.166 --> 00:06:26.746 A:middle
+unchanged.
+
+00:06:27.246 --> 00:06:28.956 A:middle
+But since the user downloads and
+
+00:06:28.956 --> 00:06:30.106 A:middle
+uses all the current Core ML
+
+00:06:30.106 --> 00:06:32.156 A:middle
+functionality in your app, at
+
+00:06:32.156 --> 00:06:33.406 A:middle
+the end of the day the size of
+
+00:06:33.406 --> 00:06:34.786 A:middle
+the -- of your app is still
+
+00:06:34.786 --> 00:06:35.046 A:middle
+large.
+
+00:06:36.216 --> 00:06:38.096 A:middle
+So wouldn't it be better if,
+
+00:06:38.096 --> 00:06:40.766 A:middle
+instead, we could tackle this
+
+00:06:40.806 --> 00:06:43.646 A:middle
+problem by reducing the size of
+
+00:06:43.646 --> 00:06:44.616 A:middle
+the models itself?
+
+00:06:46.016 --> 00:06:47.496 A:middle
+This would give us a smaller
+
+00:06:47.496 --> 00:06:48.886 A:middle
+bundle in case we ship the
+
+00:06:48.886 --> 00:06:51.716 A:middle
+models inside the app, faster
+
+00:06:51.716 --> 00:06:54.026 A:middle
+and smaller downloads if instead
+
+00:06:54.026 --> 00:06:55.346 A:middle
+of shipping the models in the
+
+00:06:55.346 --> 00:06:56.206 A:middle
+app we download them.
+
+00:06:56.206 --> 00:06:58.936 A:middle
+And in any case, your app will
+
+00:06:58.936 --> 00:07:00.406 A:middle
+enjoy a lower memory footprint.
+

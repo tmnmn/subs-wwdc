@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.414 --> 00:03:05.686 align:start position:5% line:-2
+Image I/OはPortrait Matteに
+適したAPIです
+
+00:03:06.153 --> 00:03:10.490 align:start position:18% line:-2
+CGImageSourceCopyを
+呼び出すと
+
+00:03:10.591 --> 00:03:14.294 align:start position:4% line:-2
+kCGImageAuxiliaryDataType
+PortraitEffectsMatteキーが出ます
+
+00:03:15.062 --> 00:03:18.565 align:start position:27% line:-2
+これで情報を３つ含む
+ディクショナリが返されます
+
+00:03:19.132 --> 00:03:21.702 align:start position:23% line:-1
+画像データCFDataRefと
+
+00:03:23.103 --> 00:03:26.673 align:start position:29% line:-2
+バッファのあるメタデータ
+CFDictionary
+
+00:03:27.040 --> 00:03:31.478 align:start position:27% line:-2
+もう１つはキャプチャを含む
+メタデータです
+
+00:03:33.180 --> 00:03:38.485 align:start position:20% line:-2
+AVFoundationは
+Image I/OのあるAPIです
+
+00:03:38.852 --> 00:03:41.655 align:start position:12% line:-1
+画像をCGImageSouceCopyから
+
+00:03:41.755 --> 00:03:44.758 align:start position:9% line:-2
+AVPortraitEffectsMatteに
+フィードし
+
+00:03:47.928 --> 00:03:53.934 align:start position:23% line:-2
+ピクセルのフォーマットタイプと
+CVピクセルバッファを得たら
+
+00:03:54.034 --> 00:03:58.972 align:start position:32% line:-2
+このバッファを使って
+加工が行えます
+

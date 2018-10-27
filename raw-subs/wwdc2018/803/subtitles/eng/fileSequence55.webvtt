@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:00.586 --> 00:55:01.846 A:middle
+So, not just the position, but
+
+00:55:01.846 --> 00:55:03.996 A:middle
+also the velocity, the pressure,
+
+00:55:04.266 --> 00:55:07.886 A:middle
+the size of the touch.
+
+00:55:08.096 --> 00:55:10.106 A:middle
+In most situations though, your
+
+00:55:10.106 --> 00:55:12.006 A:middle
+interfaces must respond to more
+
+00:55:12.006 --> 00:55:12.856 A:middle
+than one gesture.
+
+00:55:13.586 --> 00:55:14.836 A:middle
+As you keep adding features to
+
+00:55:14.836 --> 00:55:16.766 A:middle
+your apps, the complexity and
+
+00:55:16.766 --> 00:55:18.446 A:middle
+number of gestures increases,
+
+00:55:19.216 --> 00:55:19.296 A:middle
+too.
+
+00:55:19.836 --> 00:55:21.976 A:middle
+For instance, almost all UIs
+
+00:55:21.976 --> 00:55:23.476 A:middle
+that use a scroll view will have
+
+00:55:23.476 --> 00:55:25.196 A:middle
+other gestures like taps and
+
+00:55:25.196 --> 00:55:26.626 A:middle
+swipes competing with each
+
+00:55:26.626 --> 00:55:26.996 A:middle
+other.
+
+00:55:27.476 --> 00:55:29.116 A:middle
+Like in this example, I can
+
+00:55:29.116 --> 00:55:30.846 A:middle
+scroll the list of Contacts, or
+
+00:55:30.846 --> 00:55:32.306 A:middle
+freely touch on one of them to
+
+00:55:32.306 --> 00:55:33.486 A:middle
+preview it.
+
+00:55:34.996 --> 00:55:36.846 A:middle
+So, if we had to wait for the
+
+00:55:36.846 --> 00:55:39.006 A:middle
+final gesture, before we show
+
+00:55:39.006 --> 00:55:40.676 A:middle
+any feedback, we would have to
+
+00:55:40.676 --> 00:55:41.656 A:middle
+introduce a delay.
+
+00:55:42.276 --> 00:55:43.566 A:middle
+And, during that wait, the
+
+00:55:43.566 --> 00:55:44.566 A:middle
+interface wouldn't feel
+
+00:55:44.566 --> 00:55:45.236 A:middle
+responsive.
+
+00:55:45.726 --> 00:55:48.306 A:middle
+For that reason, we should
+
+00:55:48.306 --> 00:55:49.896 A:middle
+detect all possible gestures
+
+00:55:50.146 --> 00:55:50.996 A:middle
+from the beginning of the
+
+00:55:50.996 --> 00:55:51.536 A:middle
+action.
+
+00:55:52.106 --> 00:55:53.456 A:middle
+And, once we are confident of
+
+00:55:53.456 --> 00:55:55.286 A:middle
+the intention, cancel all the
+
+00:55:55.286 --> 00:55:55.976 A:middle
+other gestures.
+
+00:55:58.556 --> 00:55:59.856 A:middle
+So, if we go back to our
+
+00:55:59.856 --> 00:56:01.756 A:middle
+example, I start pressing that
+

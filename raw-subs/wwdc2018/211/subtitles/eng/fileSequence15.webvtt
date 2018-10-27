@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:01.046 --> 00:15:02.676 A:middle
+Your intent definition file
+
+00:15:02.676 --> 00:15:04.276 A:middle
+should be included in every
+
+00:15:04.276 --> 00:15:05.976 A:middle
+target in which your intent is
+
+00:15:05.976 --> 00:15:07.496 A:middle
+used, so you should check the
+
+00:15:07.496 --> 00:15:10.096 A:middle
+box under Target Membership.
+
+00:15:10.506 --> 00:15:11.806 A:middle
+But you'll want to make sure
+
+00:15:11.806 --> 00:15:13.066 A:middle
+that if you have a framework,
+
+00:15:13.316 --> 00:15:15.096 A:middle
+you don't do code generation in
+
+00:15:15.096 --> 00:15:16.086 A:middle
+multiple targets that are
+
+00:15:16.086 --> 00:15:16.986 A:middle
+included from each other.
+
+00:15:17.126 --> 00:15:19.546 A:middle
+So, if you have a framework, set
+
+00:15:19.546 --> 00:15:21.886 A:middle
+the target membership to only
+
+00:15:22.066 --> 00:15:23.516 A:middle
+generate intent classes for that
+
+00:15:23.586 --> 00:15:25.036 A:middle
+framework by choosing intent
+
+00:15:25.036 --> 00:15:26.866 A:middle
+classes and choosing no
+
+00:15:26.866 --> 00:15:28.426 A:middle
+generated classes for every
+
+00:15:28.426 --> 00:15:29.036 A:middle
+other target.
+
+00:15:29.636 --> 00:15:31.496 A:middle
+But if you don't have any
+
+00:15:31.576 --> 00:15:32.596 A:middle
+frameworks in your app because
+
+00:15:32.596 --> 00:15:33.896 A:middle
+you haven't separated your app
+
+00:15:33.896 --> 00:15:35.786 A:middle
+into frameworks yet, you should
+
+00:15:35.786 --> 00:15:37.326 A:middle
+check the target for every
+
+00:15:37.426 --> 00:15:38.486 A:middle
+single target.
+
+00:15:39.326 --> 00:15:41.796 A:middle
+And that's how you define custom
+
+00:15:41.796 --> 00:15:42.926 A:middle
+intents in Xcode.
+
+00:15:44.296 --> 00:15:45.436 A:middle
+Once you've defined your custom
+
+00:15:45.436 --> 00:15:46.776 A:middle
+intent, it's really easy to
+
+00:15:46.776 --> 00:15:47.296 A:middle
+donate it.
+
+00:15:47.906 --> 00:15:48.886 A:middle
+All you have to do is
+
+00:15:48.886 --> 00:15:50.646 A:middle
+instantiate your intent object
+
+00:15:51.166 --> 00:15:52.856 A:middle
+and then populate its parameters
+
+00:15:52.956 --> 00:15:54.606 A:middle
+and create and donate an
+
+00:15:54.766 --> 00:15:55.936 A:middle
+INInteraction object.
+
+00:15:56.816 --> 00:15:58.826 A:middle
+Make sure to do this every time
+
+00:15:58.866 --> 00:16:00.596 A:middle
+the user performs the equivalent
+

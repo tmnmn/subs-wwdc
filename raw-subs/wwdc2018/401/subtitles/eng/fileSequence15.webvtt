@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.986 --> 00:15:00.516 A:middle
+strings.
+
+00:15:03.396 --> 00:15:05.096 A:middle
+Finally before I hand it off to
+
+00:15:05.156 --> 00:15:06.126 A:middle
+Slava we'll talk about the
+
+00:15:06.126 --> 00:15:07.086 A:middle
+language improvements.
+
+00:15:07.086 --> 00:15:08.576 A:middle
+I want to talk a little bit more
+
+00:15:08.576 --> 00:15:10.216 A:middle
+about the efforts to reduce code
+
+00:15:10.216 --> 00:15:10.636 A:middle
+size.
+
+00:15:12.176 --> 00:15:13.146 A:middle
+I talked a little bit about that
+
+00:15:13.146 --> 00:15:14.586 A:middle
+calling convention change, which
+
+00:15:14.586 --> 00:15:15.826 A:middle
+reduces code size.
+
+00:15:15.826 --> 00:15:17.546 A:middle
+But we've also introduced a new
+
+00:15:17.546 --> 00:15:19.936 A:middle
+optimization level, Optimize for
+
+00:15:19.936 --> 00:15:20.256 A:middle
+Size.
+
+00:15:21.466 --> 00:15:22.366 A:middle
+This can be useful for
+
+00:15:22.366 --> 00:15:23.986 A:middle
+applications that care very much
+
+00:15:24.056 --> 00:15:25.966 A:middle
+about app size limits such as
+
+00:15:25.966 --> 00:15:27.216 A:middle
+from cellular over the air
+
+00:15:27.216 --> 00:15:28.056 A:middle
+download limits.
+
+00:15:29.146 --> 00:15:30.626 A:middle
+Swift is a very powerful
+
+00:15:30.696 --> 00:15:33.656 A:middle
+language with static knowledge
+
+00:15:33.656 --> 00:15:34.846 A:middle
+about what your program does.
+
+00:15:35.306 --> 00:15:36.306 A:middle
+And so compiler has many
+
+00:15:36.306 --> 00:15:38.626 A:middle
+opportunities to do performance
+
+00:15:38.626 --> 00:15:40.016 A:middle
+optimizations such as function
+
+00:15:40.016 --> 00:15:41.596 A:middle
+call inlining, speculative
+
+00:15:41.596 --> 00:15:43.126 A:middle
+devirtualization, which trade
+
+00:15:43.126 --> 00:15:44.326 A:middle
+off a little bit of code size
+
+00:15:44.326 --> 00:15:45.846 A:middle
+for more performance, but
+
+00:15:45.846 --> 00:15:46.936 A:middle
+sometimes that more performance
+
+00:15:47.226 --> 00:15:49.346 A:middle
+isn't really needed in practice.
+
+00:15:49.956 --> 00:15:51.726 A:middle
+This is the result of applying
+
+00:15:51.786 --> 00:15:52.846 A:middle
+Osize to the Swift Source
+
+00:15:52.846 --> 00:15:54.466 A:middle
+Compatibility Suite, which
+
+00:15:54.466 --> 00:15:55.546 A:middle
+contains an assortment of
+
+00:15:55.546 --> 00:15:57.446 A:middle
+projects from GitHub, frameworks
+
+00:15:57.446 --> 00:15:58.266 A:middle
+and applications.
+
+00:15:59.156 --> 00:16:00.176 A:middle
+And what you'll see is a wide
+

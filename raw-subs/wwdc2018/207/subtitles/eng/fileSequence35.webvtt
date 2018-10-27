@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.026 --> 00:35:00.666 A:middle
+There are no guards for
+
+00:35:00.666 --> 00:35:02.896 A:middle
+speculative execution attack in
+
+00:35:02.896 --> 00:35:03.506 A:middle
+this scenario.
+
+00:35:04.286 --> 00:35:05.846 A:middle
+You need to get off of
+
+00:35:05.846 --> 00:35:06.666 A:middle
+UIWebView.
+
+00:35:07.466 --> 00:35:10.376 A:middle
+If you move to WKWebView, you'll
+
+00:35:10.376 --> 00:35:12.696 A:middle
+instead get this.
+
+00:35:12.896 --> 00:35:15.096 A:middle
+Out of process, separated,
+
+00:35:15.656 --> 00:35:16.856 A:middle
+badness happening in the
+
+00:35:16.856 --> 00:35:18.676 A:middle
+evil.example content process
+
+00:35:18.796 --> 00:35:19.856 A:middle
+cannot affect the rest.
+
+00:35:21.266 --> 00:35:23.306 A:middle
+OK. We've moved to WKWebView.
+
+00:35:23.656 --> 00:35:24.726 A:middle
+Let's look at how content
+
+00:35:24.726 --> 00:35:26.996 A:middle
+security policy can help you.
+
+00:35:27.406 --> 00:35:28.626 A:middle
+You might have an embedded
+
+00:35:28.626 --> 00:35:29.976 A:middle
+social widget from
+
+00:35:29.976 --> 00:35:33.166 A:middle
+social.example, but then you
+
+00:35:33.166 --> 00:35:34.696 A:middle
+might have an injection attack,
+
+00:35:34.696 --> 00:35:36.086 A:middle
+maybe it's the messaging thing
+
+00:35:36.086 --> 00:35:37.376 A:middle
+again where someone can send
+
+00:35:37.376 --> 00:35:38.716 A:middle
+markup in a message and you
+
+00:35:38.946 --> 00:35:40.546 A:middle
+accidentally render it and they
+
+00:35:40.546 --> 00:35:41.606 A:middle
+pull in an iframe from
+
+00:35:41.606 --> 00:35:42.516 A:middle
+evil.example.
+
+00:35:43.376 --> 00:35:45.816 A:middle
+Well, you may also have an ad
+
+00:35:45.816 --> 00:35:47.426 A:middle
+there that you want to have
+
+00:35:47.426 --> 00:35:48.676 A:middle
+there and then the ad network
+
+00:35:48.676 --> 00:35:50.286 A:middle
+gets compromised and redirects
+
+00:35:50.286 --> 00:35:51.626 A:middle
+to evil.example and then pulls
+
+00:35:51.626 --> 00:35:52.246 A:middle
+in an iframe.
+
+00:35:52.646 --> 00:35:53.996 A:middle
+And, remember, you never want to
+
+00:35:53.996 --> 00:35:55.426 A:middle
+be in a web content process
+
+00:35:55.786 --> 00:35:57.946 A:middle
+together with a frame from
+
+00:35:57.946 --> 00:35:58.876 A:middle
+evil.example.
+
+00:35:59.986 --> 00:36:00.866 A:middle
+So, what have you done?
+

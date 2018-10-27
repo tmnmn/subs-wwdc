@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.756 --> 00:26:00.986 A:middle
+throughout your project and the
+
+00:26:00.986 --> 00:26:03.516 A:middle
+frameworks you import and assume
+
+00:26:03.516 --> 00:26:04.576 A:middle
+that they might be the one
+
+00:26:04.576 --> 00:26:05.746 A:middle
+that's going to be used.
+
+00:26:06.756 --> 00:26:08.316 A:middle
+It has to do this because if
+
+00:26:08.316 --> 00:26:09.706 A:middle
+none of them match, it needs to
+
+00:26:09.706 --> 00:26:10.776 A:middle
+present you with an error.
+
+00:26:12.586 --> 00:26:14.966 A:middle
+So instead, we can do something
+
+00:26:14.966 --> 00:26:16.706 A:middle
+much better and much more,
+
+00:26:16.706 --> 00:26:18.616 A:middle
+again, declarative of our
+
+00:26:18.616 --> 00:26:19.106 A:middle
+intent.
+
+00:26:19.626 --> 00:26:21.096 A:middle
+We can define a protocol.
+
+00:26:21.866 --> 00:26:22.696 A:middle
+Now, this can be done in the
+
+00:26:22.696 --> 00:26:24.876 A:middle
+same file, or a different file,
+
+00:26:25.426 --> 00:26:27.236 A:middle
+but the important part is that
+
+00:26:27.236 --> 00:26:28.616 A:middle
+once we change this delegate
+
+00:26:28.616 --> 00:26:30.546 A:middle
+property to use our protocol
+
+00:26:30.626 --> 00:26:32.756 A:middle
+instead of Any Object, the
+
+00:26:32.756 --> 00:26:34.806 A:middle
+compiler knows exactly which
+
+00:26:34.806 --> 00:26:35.826 A:middle
+method it's calling.
+
+00:26:37.186 --> 00:26:38.276 A:middle
+And now you also have the
+
+00:26:38.276 --> 00:26:39.546 A:middle
+opportunity for all of your
+
+00:26:39.546 --> 00:26:41.846 A:middle
+implementing types to be checked
+
+00:26:42.026 --> 00:26:43.336 A:middle
+that they implement the method
+
+00:26:43.386 --> 00:26:43.866 A:middle
+correctly.
+
+00:26:46.496 --> 00:26:48.186 A:middle
+So, we've talked about several
+
+00:26:48.186 --> 00:26:50.576 A:middle
+techniques here for decreasing
+
+00:26:50.576 --> 00:26:51.856 A:middle
+the amount of work the compiler
+
+00:26:51.856 --> 00:26:53.816 A:middle
+does once it's already decided
+
+00:26:53.816 --> 00:26:55.136 A:middle
+to recompile a file.
+
+00:26:56.106 --> 00:26:58.486 A:middle
+But what about not recompiling
+
+00:26:58.486 --> 00:26:59.556 A:middle
+the file at all?
+
+00:26:59.956 --> 00:27:01.696 A:middle
+What makes the compiler choose
+

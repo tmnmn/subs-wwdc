@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:56.570 --> 00:19:01.441 align:middle line:-1
+就像是我们自己的
+
+00:19:01.508 --> 00:19:05.279 align:middle line:-1
+提供了NLP功能的内置模型一样
+
+00:19:06.613 --> 00:19:07.447 align:middle line:-1
+所以…
+
+00:19:08.115 --> 00:19:10.384 align:middle line:-1
+数据将进来
+
+00:19:11.251 --> 00:19:15.856 align:middle line:0
+你将它传递给Natural Language
+其将使用该模型执行必要的工作
+
+00:19:15.923 --> 00:19:19.993 align:middle line:0
+来找出所有的标签
+
+00:19:20.060 --> 00:19:23.830 align:middle line:0
+然后为一个分类器传回单个标签
+
+00:19:23.897 --> 00:19:27.167 align:middle line:0
+或为一个标记器传回一个标签序列
+
+00:19:30.370 --> 00:19:33.740 align:middle line:-2
+你如何在Natural Language API中
+做到这一点呢？
+
+00:19:34.341 --> 00:19:37.945 align:middle line:-1
+你首先需要做的是
+
+00:19:38.011 --> 00:19:41.348 align:middle line:-2
+在app资源中找到该模型
+然后使用它创建
+
+00:19:41.415 --> 00:19:44.852 align:middle line:-2
+Natural Language中的一个类
+NLModel的实例
+
+00:19:45.986 --> 00:19:48.822 align:middle line:-1
+然后 你可以用它做的最简单的事
+
+00:19:48.889 --> 00:19:53.861 align:middle line:-2
+至少对于一个分类器来说 就是向它
+输入一个文本块并且获取一个标签
+
+00:19:54.695 --> 00:19:59.066 align:middle line:-1
+但更有趣的是你可以
+
+00:19:59.132 --> 00:20:00.434 align:middle line:-1
+在NLTagger中使用这些模型
+

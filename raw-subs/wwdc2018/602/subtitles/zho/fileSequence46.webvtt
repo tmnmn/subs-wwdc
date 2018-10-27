@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.526 --> 00:46:01.728 align:middle line:-1
+以用它们来设置我的
+
+00:46:01.962 --> 00:46:04.298 align:middle line:-2
+ARWorldTrackingConfiguration
+类型的配置
+
+00:46:05.699 --> 00:46:10.504 align:middle line:-1
+设置好配置后 使用它运行会话
+
+00:46:11.271 --> 00:46:14.341 align:middle line:-1
+就像图像检测一样 AR会话运行后
+
+00:46:14.408 --> 00:46:16.243 align:middle line:-2
+每次更新
+我都会得到一个ARFrame
+
+00:46:16.310 --> 00:46:17.678 align:middle line:-1
+在这种情况下
+
+00:46:18.579 --> 00:46:21.148 align:middle line:-1
+一旦在场景中检测到一个对象
+
+00:46:21.215 --> 00:46:26.553 align:middle line:-2
+ARFrame中就会出现
+一个ARObjectAnchor
+
+00:46:28.789 --> 00:46:32.659 align:middle line:-2
+该AR对象
+是ARAnchor的简单子类
+
+00:46:33.093 --> 00:46:35.696 align:middle line:-1
+所以它有个transform变量
+
+00:46:35.762 --> 00:46:40.667 align:middle line:-2
+代表其六自由度位置和方向
+且它通过ARReferenceObject类型的引用
+
+00:46:40.734 --> 00:46:44.805 align:middle line:-1
+来告诉我它检测到了哪些对象
+
+00:46:46.206 --> 00:46:52.279 align:middle line:-1
+只需三行简单代码就可以实现这点
+
+00:46:52.980 --> 00:46:53.947 align:middle line:-1
+我创建了一个
+
+00:46:54.014 --> 00:46:56.416 align:middle line:-2
+ARWorldTrackingConfiguration
+类型的配置
+
+00:46:56.717 --> 00:46:59.953 align:middle line:-1
+并指定一组我想要检测的对象
+

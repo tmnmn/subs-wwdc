@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.916 --> 00:19:00.116 A:middle
+But it's only risky because the
+
+00:19:00.116 --> 00:19:01.456 A:middle
+debugger allows you to move the
+
+00:19:01.456 --> 00:19:02.416 A:middle
+instruction point wherever you
+
+00:19:02.416 --> 00:19:02.736 A:middle
+like.
+
+00:19:02.736 --> 00:19:04.266 A:middle
+It does not care, but it cannot
+
+00:19:04.266 --> 00:19:05.766 A:middle
+guarantee that the application's
+
+00:19:05.766 --> 00:19:06.876 A:middle
+state will remain intact.
+
+00:19:07.186 --> 00:19:08.326 A:middle
+So you could, for example, cause
+
+00:19:08.326 --> 00:19:10.096 A:middle
+memory management issues if you
+
+00:19:10.096 --> 00:19:11.376 A:middle
+end up referencing an object
+
+00:19:11.376 --> 00:19:12.146 A:middle
+that has not yet been
+
+00:19:12.146 --> 00:19:13.926 A:middle
+initialized or over-releasing an
+
+00:19:13.926 --> 00:19:14.756 A:middle
+object, for example.
+
+00:19:15.316 --> 00:19:16.826 A:middle
+But we've all been to the
+
+00:19:16.826 --> 00:19:17.956 A:middle
+advanced debugging session now,
+
+00:19:17.956 --> 00:19:18.766 A:middle
+so we know what we're doing.
+
+00:19:18.766 --> 00:19:19.826 A:middle
+So let's press the blue button.
+
+00:19:21.416 --> 00:19:21.916 A:middle
+All right.
+
+00:19:21.916 --> 00:19:23.076 A:middle
+So we've skipped over that line,
+
+00:19:23.076 --> 00:19:24.336 A:middle
+and now in the console, we can
+
+00:19:24.336 --> 00:19:25.726 A:middle
+use expression and call jump
+
+00:19:25.726 --> 00:19:26.986 A:middle
+astronaut animated false.
+
+00:19:28.816 --> 00:19:30.316 A:middle
+And now we press continue to see
+
+00:19:30.316 --> 00:19:32.956 A:middle
+if all this worked, and indeed,
+
+00:19:33.376 --> 00:19:34.516 A:middle
+the game state updated, and we
+
+00:19:34.516 --> 00:19:35.826 A:middle
+skipped all the jump animations.
+
+00:19:36.896 --> 00:19:38.436 A:middle
+So I'd like that to happen every
+
+00:19:38.436 --> 00:19:40.256 A:middle
+time I tap the astronaut, so I'm
+
+00:19:40.256 --> 00:19:41.186 A:middle
+going to configure this
+
+00:19:41.186 --> 00:19:42.446 A:middle
+breakpoint here to do that for
+
+00:19:42.446 --> 00:19:42.606 A:middle
+me.
+
+00:19:43.756 --> 00:19:45.156 A:middle
+So first, we need a debugger
+
+00:19:45.156 --> 00:19:47.556 A:middle
+action that skips over one line,
+
+00:19:47.716 --> 00:19:48.856 A:middle
+and the command for that is
+
+00:19:48.886 --> 00:19:49.536 A:middle
+thread jump.
+
+00:19:50.126 --> 00:19:51.426 A:middle
+And I give it the option by one,
+
+00:19:51.426 --> 00:19:52.916 A:middle
+and this tells the debugger to
+
+00:19:53.156 --> 00:19:55.486 A:middle
+jump over one line of code for
+
+00:19:55.486 --> 00:19:55.976 A:middle
+the current thread.
+
+00:19:56.216 --> 00:19:58.976 A:middle
+And then we just need to call
+
+00:19:58.976 --> 00:20:00.096 A:middle
+our expression and we can do
+

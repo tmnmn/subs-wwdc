@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.525 --> 00:11:01.828 align:start position:23% line:-2
+まずはAppDelegateで
+これは―
+
+00:11:01.929 --> 00:11:04.898 align:start position:7% line:-2
+UNUserNotificationCenter
+デリゲートプロトコルを―
+
+00:11:04.998 --> 00:11:08.268 align:start position:27% line:-2
+実装したアプリケーションに
+関連づけられています
+
+00:11:08.368 --> 00:11:14.608 align:start position:5% line:-2
+関数userNotificationCenterの
+didReceiveレスポンスに―
+
+00:11:14.708 --> 00:11:17.277 align:start position:30% line:-2
+ユーザが
+アクションを実行した―
+
+00:11:17.377 --> 00:11:20.480 align:start position:30% line:-2
+通知リクエストの情報を
+組み込みます
+
+00:11:21.315 --> 00:11:26.019 align:start position:29% line:-2
+しかし このレスポンスに
+インターセプトして―
+
+00:11:26.119 --> 00:11:28.255 align:start position:36% line:-1
+ビューを更新し―
+
+00:11:28.355 --> 00:11:33.026 align:start position:29% line:-2
+より対話的で動的な
+ユーザ体験を実現できます
+
+00:11:33.460 --> 00:11:37.865 align:start position:14% line:-2
+didReceiveレスポンスメソッドを
+入力し―
+
+00:11:38.265 --> 00:11:41.368 align:start position:27% line:-2
+likeの
+アクション識別子をチェック
+
+00:11:42.069 --> 00:11:44.905 align:start position:32% line:-2
+そしてUIを
+新しいラベルで更新し
+
+00:11:45.005 --> 00:11:47.341 align:start position:30% line:-2
+アプリケーション状態も
+更新します
+
+00:11:48.642 --> 00:11:51.712 align:start position:12% line:-2
+doNotDismissの
+completionブロックを呼び出します
+
+00:11:51.812 --> 00:11:54.581 align:start position:18% line:-2
+コンテンツExtensionビューを
+閉じたければ―
+
+00:11:54.681 --> 00:11:59.620 align:start position:20% line:-2
+completionブロックに渡す
+パラメータをdismissに
+

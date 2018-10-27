@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.466 --> 00:05:00.116 A:middle
+this rendering.
+
+00:05:02.166 --> 00:05:03.966 A:middle
+Today, we introduce new texture
+
+00:05:04.056 --> 00:05:06.026 A:middle
+types to the multi-sample
+
+00:05:06.026 --> 00:05:07.396 A:middle
+already textured.
+
+00:05:08.366 --> 00:05:10.726 A:middle
+This texture type has all the
+
+00:05:10.726 --> 00:05:13.166 A:middle
+benefits of previously mentioned
+
+00:05:13.266 --> 00:05:14.666 A:middle
+types without any of the
+
+00:05:14.736 --> 00:05:15.336 A:middle
+drawbacks.
+
+00:05:15.476 --> 00:05:17.806 A:middle
+Thanks to that it is now
+
+00:05:17.806 --> 00:05:19.606 A:middle
+possible to separate from each
+
+00:05:19.606 --> 00:05:22.516 A:middle
+other rendering space, which
+
+00:05:22.516 --> 00:05:24.696 A:middle
+simplifies the post-processing
+
+00:05:24.696 --> 00:05:28.286 A:middle
+effects, views count, so that
+
+00:05:28.286 --> 00:05:30.016 A:middle
+application can fall back easily
+
+00:05:30.016 --> 00:05:33.536 A:middle
+to monoscope rendering and
+
+00:05:33.536 --> 00:05:35.406 A:middle
+control over anti-aliasing mode.
+
+00:05:36.436 --> 00:05:38.786 A:middle
+As a result, application can now
+
+00:05:38.786 --> 00:05:40.956 A:middle
+have single rendering files that
+
+00:05:40.956 --> 00:05:43.456 A:middle
+can be easily adopted to any
+
+00:05:43.556 --> 00:05:46.056 A:middle
+situation, and most important,
+
+00:05:46.056 --> 00:05:48.206 A:middle
+that can be rendered with single
+
+00:05:48.206 --> 00:05:50.736 A:middle
+draw and render pass in each
+
+00:05:50.736 --> 00:05:51.056 A:middle
+case.
+
+00:05:53.936 --> 00:05:55.686 A:middle
+So here we see code snippet for
+
+00:05:55.686 --> 00:05:57.916 A:middle
+creation of mentioned 2D multi
+
+00:05:57.916 --> 00:05:59.126 A:middle
+sample [inaudible] texture.
+

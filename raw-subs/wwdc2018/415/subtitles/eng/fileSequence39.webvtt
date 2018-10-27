@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.416 --> 00:39:01.966 A:middle
+method exactly as you want.
+
+00:39:06.146 --> 00:39:07.326 A:middle
+Now if you want to check to see
+
+00:39:07.326 --> 00:39:08.636 A:middle
+how your Objective-C header will
+
+00:39:08.636 --> 00:39:10.586 A:middle
+be imported into Swift, you can
+
+00:39:10.586 --> 00:39:12.276 A:middle
+always go to Xcode's related
+
+00:39:12.276 --> 00:39:13.066 A:middle
+items popup.
+
+00:39:13.546 --> 00:39:14.646 A:middle
+This is in the upper left-hand
+
+00:39:14.646 --> 00:39:15.906 A:middle
+corner of the source editor.
+
+00:39:16.606 --> 00:39:17.756 A:middle
+If you select generated
+
+00:39:17.756 --> 00:39:19.916 A:middle
+interfaces, it will show you how
+
+00:39:19.916 --> 00:39:21.506 A:middle
+the interface will look in
+
+00:39:21.506 --> 00:39:23.346 A:middle
+different versions of Swift.
+
+00:39:25.216 --> 00:39:26.696 A:middle
+So that's how Swift imports
+
+00:39:26.696 --> 00:39:27.446 A:middle
+Objective-C.
+
+00:39:28.366 --> 00:39:29.056 A:middle
+But what about the other
+
+00:39:29.056 --> 00:39:29.526 A:middle
+direction?
+
+00:39:30.246 --> 00:39:32.146 A:middle
+How does Objective-C import
+
+00:39:32.146 --> 00:39:33.486 A:middle
+Swift?
+
+00:39:35.076 --> 00:39:36.626 A:middle
+The answer is that Swift
+
+00:39:36.736 --> 00:39:38.426 A:middle
+generates a header that you can
+
+00:39:38.426 --> 00:39:39.096 A:middle
+pound import.
+
+00:39:39.986 --> 00:39:41.626 A:middle
+This allows you to write classes
+
+00:39:41.626 --> 00:39:43.636 A:middle
+in Swift and call them from
+
+00:39:43.636 --> 00:39:44.366 A:middle
+Objective-C.
+
+00:39:45.696 --> 00:39:46.726 A:middle
+Let's see how this works.
+
+00:39:47.206 --> 00:39:49.746 A:middle
+The compiler will generate
+
+00:39:49.746 --> 00:39:51.536 A:middle
+Objective-C declarations for
+
+00:39:51.536 --> 00:39:53.766 A:middle
+Swift classes extending NSObject
+
+00:39:54.156 --> 00:39:56.566 A:middle
+and methods marked at obc.
+
+00:39:57.156 --> 00:39:59.066 A:middle
+For apps in unit tests, the
+
+00:39:59.066 --> 00:40:00.856 A:middle
+header will include both public
+

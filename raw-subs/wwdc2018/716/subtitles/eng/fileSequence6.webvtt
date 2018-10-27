@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.996 --> 00:06:01.256 A:middle
+and orientation is not a problem
+
+00:06:01.256 --> 00:06:01.556 A:middle
+anymore.
+
+00:06:01.556 --> 00:06:04.516 A:middle
+Let's look a little bit more
+
+00:06:04.516 --> 00:06:04.966 A:middle
+into details.
+
+00:06:05.136 --> 00:06:06.096 A:middle
+Thank you.
+
+00:06:07.176 --> 00:06:09.500 A:middle
+[ Applause ]
+
+00:06:15.186 --> 00:06:17.976 A:middle
+So, first, our new face detector
+
+00:06:18.356 --> 00:06:20.226 A:middle
+uses the same API as from last
+
+00:06:20.226 --> 00:06:20.456 A:middle
+year.
+
+00:06:20.836 --> 00:06:22.196 A:middle
+The only difference is if you
+
+00:06:22.196 --> 00:06:23.426 A:middle
+want to specify revision, you
+
+00:06:23.426 --> 00:06:24.636 A:middle
+need to overwrite a revision
+
+00:06:24.636 --> 00:06:26.236 A:middle
+property of that request and set
+
+00:06:26.236 --> 00:06:28.056 A:middle
+it explicitly to User Vision #2.
+
+00:06:28.496 --> 00:06:29.196 A:middle
+Again, I'll talk about the
+
+00:06:29.196 --> 00:06:30.336 A:middle
+reasons right on the next slide.
+
+00:06:31.556 --> 00:06:33.466 A:middle
+We're also introducing two new
+
+00:06:33.466 --> 00:06:34.116 A:middle
+properties.
+
+00:06:34.566 --> 00:06:36.516 A:middle
+One is roll, which is when the
+
+00:06:36.516 --> 00:06:38.126 A:middle
+head rotates like this, and the
+
+00:06:38.126 --> 00:06:39.856 A:middle
+other one is yaw, which when the
+
+00:06:39.856 --> 00:06:41.500 A:middle
+head rotates around the neck.
+
+00:06:45.116 --> 00:06:45.676 A:middle
+Revisions.
+
+00:06:46.616 --> 00:06:47.676 A:middle
+What happens with Vision where
+
+00:06:47.676 --> 00:06:48.696 A:middle
+when we need to introducing a
+
+00:06:48.696 --> 00:06:50.156 A:middle
+new algorithm, we don't
+
+00:06:50.156 --> 00:06:51.246 A:middle
+deprecate the old one right
+
+00:06:51.246 --> 00:06:51.516 A:middle
+away.
+
+00:06:52.146 --> 00:06:53.486 A:middle
+Instead, we're going to keep for
+
+00:06:53.486 --> 00:06:55.026 A:middle
+some time both revisions or,
+
+00:06:55.026 --> 00:06:56.396 A:middle
+maybe going forward, even more,
+
+00:06:56.956 --> 00:06:57.696 A:middle
+simultaneously.
+
+00:06:58.496 --> 00:06:59.896 A:middle
+You tell us which one you want
+
+00:06:59.896 --> 00:07:01.186 A:middle
+to work with by specifying
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.046 --> 00:37:00.846 A:middle
+text inside of it.
+
+00:37:00.946 --> 00:37:02.306 A:middle
+For instance, the constraints
+
+00:37:02.306 --> 00:37:03.156 A:middle
+are always going to make it
+
+00:37:03.156 --> 00:37:04.316 A:middle
+larger than the amount of text
+
+00:37:04.316 --> 00:37:04.706 A:middle
+you have.
+
+00:37:05.546 --> 00:37:06.586 A:middle
+Then you can go ahead and return
+
+00:37:06.586 --> 00:37:07.996 A:middle
+no intrinsic metric for the
+
+00:37:07.996 --> 00:37:09.716 A:middle
+width and height in intrinsic
+
+00:37:09.716 --> 00:37:10.446 A:middle
+content size.
+
+00:37:11.146 --> 00:37:12.206 A:middle
+And what this will do is tell
+
+00:37:12.206 --> 00:37:13.486 A:middle
+the parent, hey I already have
+
+00:37:13.486 --> 00:37:15.206 A:middle
+my size, don't bother to do the
+
+00:37:15.276 --> 00:37:15.846 A:middle
+text measurement.
+
+00:37:16.826 --> 00:37:18.226 A:middle
+So obviously this only works if
+
+00:37:18.226 --> 00:37:19.096 A:middle
+you're not trying to detect
+
+00:37:19.096 --> 00:37:21.826 A:middle
+measurement yourself, but it can
+
+00:37:21.826 --> 00:37:23.136 A:middle
+help some apps improve their
+
+00:37:23.136 --> 00:37:23.646 A:middle
+performance.
+
+00:37:23.646 --> 00:37:24.886 A:middle
+So I wanted you to know that
+
+00:37:24.886 --> 00:37:26.016 A:middle
+this little trick exists.
+
+00:37:26.766 --> 00:37:27.766 A:middle
+And we can't talk about
+
+00:37:27.766 --> 00:37:29.116 A:middle
+intrinsic content size without
+
+00:37:29.116 --> 00:37:30.566 A:middle
+talking about system layout size
+
+00:37:30.566 --> 00:37:33.326 A:middle
+fitting size because people
+
+00:37:33.326 --> 00:37:35.666 A:middle
+often conflate the two even
+
+00:37:35.666 --> 00:37:36.196 A:middle
+though they're kind of
+
+00:37:36.196 --> 00:37:37.846 A:middle
+opposites, so that's kind of
+
+00:37:37.846 --> 00:37:39.376 A:middle
+unfortunate.
+
+00:37:39.376 --> 00:37:41.456 A:middle
+Intrinsic content size is a way
+
+00:37:41.456 --> 00:37:42.446 A:middle
+that you communicate size
+
+00:37:42.446 --> 00:37:43.866 A:middle
+information to be put into the
+
+00:37:43.866 --> 00:37:44.226 A:middle
+engine.
+
+00:37:45.206 --> 00:37:46.796 A:middle
+System Layout Size Fitting Size
+
+00:37:47.156 --> 00:37:48.206 A:middle
+is a way that you get sizing
+
+00:37:48.206 --> 00:37:49.456 A:middle
+information back out of the
+
+00:37:49.456 --> 00:37:49.826 A:middle
+engine.
+
+00:37:50.356 --> 00:37:51.276 A:middle
+They're actually kind of
+
+00:37:51.816 --> 00:37:52.486 A:middle
+opposites.
+
+00:37:52.486 --> 00:37:54.696 A:middle
+So this is used in sort of mixed
+
+00:37:54.696 --> 00:37:56.086 A:middle
+layouts where there's some
+
+00:37:56.086 --> 00:37:57.136 A:middle
+reason that you need frame
+
+00:37:57.136 --> 00:37:58.816 A:middle
+information from a view that
+
+00:37:58.816 --> 00:38:00.236 A:middle
+manages its subviews using Auto
+

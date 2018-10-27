@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:55.616 --> 00:17:00.153 align:middle line:-2
+是你可以用来匹配
+tvOS的嵌入交互暗示的值
+
+00:17:01.021 --> 00:17:02.556 align:middle line:-1
+并且interactionTransform
+
+00:17:02.623 --> 00:17:06.359 align:middle line:-2
+把这三个值结合到了
+一个单一的3D变换中
+
+00:17:08.262 --> 00:17:10.897 align:middle line:-2
+接下来让我们看看如何实施
+自定义
+
+00:17:10.964 --> 00:17:13.367 align:middle line:-1
+FocusItemScrollableContainer
+
+00:17:13.767 --> 00:17:16.470 align:middle line:-2
+这是FocusItemContainer的一个
+特殊类型
+
+00:17:16.770 --> 00:17:18.605 align:middle line:-1
+通过变换为这个协议
+
+00:17:18.839 --> 00:17:22.509 align:middle line:-2
+你的容器会向聚焦引擎
+表明它支持滚动
+
+00:17:22.809 --> 00:17:26.079 align:middle line:-2
+比如UIScrollView
+变换为这个协议
+
+00:17:26.980 --> 00:17:29.449 align:middle line:-1
+它提供三种额外的属性
+
+00:17:29.750 --> 00:17:33.053 align:middle line:-1
+可以让聚焦引擎管理它的滚动行为
+
+00:17:33.420 --> 00:17:36.190 align:middle line:-2
+首先我们有
+contentOffset
+
+00:17:36.456 --> 00:17:38.458 align:middle line:-1
+它是一个读/写属性
+
+00:17:38.525 --> 00:17:41.195 align:middle line:-1
+表示容器已经滚动了多远
+
+00:17:41.595 --> 00:17:46.733 align:middle line:-2
+聚焦引擎会随着焦点的移动
+自动设置这个属性
+
+00:17:46.800 --> 00:17:50.070 align:middle line:-1
+以便在屏幕上显示当前焦点项
+
+00:17:51.071 --> 00:17:53.140 align:middle line:-1
+其次我们有contentSize
+
+00:17:53.273 --> 00:17:57.911 align:middle line:-1
+表示可滚动内容的完整尺寸
+
+00:17:58.345 --> 00:18:01.081 align:middle line:-1
+第三我们有visibleSize
+

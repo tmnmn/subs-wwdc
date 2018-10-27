@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.996 --> 00:36:01.586 A:middle
+First, we make the
+
+00:36:01.586 --> 00:36:03.716 A:middle
+startAccessing call on that URL,
+
+00:36:04.256 --> 00:36:05.706 A:middle
+and so we can start interacting
+
+00:36:05.706 --> 00:36:06.376 A:middle
+with that document.
+
+00:36:07.386 --> 00:36:09.036 A:middle
+And, you notice in the defer
+
+00:36:09.036 --> 00:36:10.856 A:middle
+block, we make the stopAccessing
+
+00:36:10.856 --> 00:36:12.416 A:middle
+call once we're done using the
+
+00:36:12.416 --> 00:36:12.886 A:middle
+document.
+
+00:36:14.546 --> 00:36:16.576 A:middle
+You notice that these calls are
+
+00:36:16.576 --> 00:36:19.476 A:middle
+balanced, and that we only call
+
+00:36:19.476 --> 00:36:21.946 A:middle
+stopAccessing if startAccessing
+
+00:36:21.946 --> 00:36:25.116 A:middle
+returns "true."
+
+00:36:25.336 --> 00:36:27.166 A:middle
+We keep resource access time as
+
+00:36:27.166 --> 00:36:29.426 A:middle
+small as possible, because when
+
+00:36:29.426 --> 00:36:30.826 A:middle
+we make this startAccessing
+
+00:36:30.826 --> 00:36:33.196 A:middle
+call, we consume limited system
+
+00:36:33.196 --> 00:36:34.916 A:middle
+resources, reserved just for
+
+00:36:34.916 --> 00:36:35.266 A:middle
+your app.
+
+00:36:35.806 --> 00:36:37.276 A:middle
+And so, we need to relinquish
+
+00:36:37.276 --> 00:36:39.136 A:middle
+these resources once we're done
+
+00:36:39.136 --> 00:36:40.696 A:middle
+using that document to make sure
+
+00:36:40.696 --> 00:36:43.066 A:middle
+that we can access additional
+
+00:36:43.066 --> 00:36:45.496 A:middle
+documents within our process.
+
+00:36:47.376 --> 00:36:49.116 A:middle
+If you know for sure that this
+
+00:36:49.116 --> 00:36:50.906 A:middle
+document exists inside of your
+
+00:36:50.906 --> 00:36:52.626 A:middle
+app container, you do not need
+
+00:36:52.626 --> 00:36:53.436 A:middle
+to make these calls.
+
+00:36:54.206 --> 00:36:56.376 A:middle
+But, in case of doubt, make
+
+00:36:56.376 --> 00:36:57.036 A:middle
+these calls.
+
+00:36:57.736 --> 00:36:59.196 A:middle
+If they're not actually needed,
+
+00:36:59.366 --> 00:37:01.126 A:middle
+they'll simply be a no-op.
+

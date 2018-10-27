@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.211 --> 00:08:00.547 align:start position:32% line:-2
+テクスチャの作り方を
+見てみましょう
+
+00:08:02.549 --> 00:08:08.055 align:start position:27% line:-2
+複雑なテクスチャも
+共有できるようになったので
+
+00:08:08.155 --> 00:08:13.260 align:start position:21% line:-2
+VR Compositorに渡す
+2D配列テクスチャを作ります
+
+00:08:14.194 --> 00:08:19.733 align:start position:29% line:-2
+これには ご覧のような
+新たなメソッドを用います
+
+00:08:20.767 --> 00:08:25.906 align:start position:20% line:-2
+storageModeは 忘れずに
+Privateにしましょう
+
+00:08:26.006 --> 00:08:31.178 align:start position:23% line:-2
+テクスチャを作成したGPUのみ
+アクセス可能です
+
+00:08:33.780 --> 00:08:37.683 align:start position:30% line:-2
+このコードスニペットを
+見てください
+
+00:08:37.784 --> 00:08:43.490 align:start position:20% line:-2
+以前は このように
+IOSurfaceを送っていました
+
+00:08:44.091 --> 00:08:49.129 align:start position:25% line:-2
+Metalテクスチャの使用に
+切り替えるためには
+
+00:08:50.030 --> 00:08:53.867 align:start position:32% line:-2
+どんな変更を加えるか
+見ていきます
+
+00:08:54.868 --> 00:08:57.871 align:start position:27% line:-2
+２つのIOSurfaceは
+もう不要です
+
+00:08:58.739 --> 00:09:01.475 align:start position:29% line:-2
+IOSurface対応の
+テクスチャは
+

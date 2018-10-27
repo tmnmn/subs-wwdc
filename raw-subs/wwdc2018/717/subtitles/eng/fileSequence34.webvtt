@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.906 --> 00:34:00.096 A:middle
+and if you pass an URL into
+
+00:34:00.096 --> 00:34:03.176 A:middle
+Vision as our input, Vision is
+
+00:34:03.176 --> 00:34:04.306 A:middle
+actually going to do all that
+
+00:34:04.306 --> 00:34:05.446 A:middle
+work basically for you and
+
+00:34:05.446 --> 00:34:06.456 A:middle
+actually read this EXIF
+
+00:34:06.456 --> 00:34:07.786 A:middle
+information from the file.
+
+00:34:09.246 --> 00:34:10.746 A:middle
+But like when -- as we showed in
+
+00:34:10.746 --> 00:34:12.496 A:middle
+the demos earlier, if I use my
+
+00:34:12.496 --> 00:34:14.335 A:middle
+live capture feed, I need to
+
+00:34:14.335 --> 00:34:15.585 A:middle
+actually pass this information
+
+00:34:15.585 --> 00:34:15.775 A:middle
+in.
+
+00:34:16.335 --> 00:34:17.996 A:middle
+So, I have to look at what does
+
+00:34:17.996 --> 00:34:20.036 A:middle
+my orientation from my UI device
+
+00:34:20.096 --> 00:34:22.286 A:middle
+current orientation and convert
+
+00:34:22.286 --> 00:34:23.456 A:middle
+this [inaudible] to CG Image
+
+00:34:23.516 --> 00:34:24.666 A:middle
+Property Orientation because we
+
+00:34:24.666 --> 00:34:26.126 A:middle
+need it in the form of an EXIF
+
+00:34:26.126 --> 00:34:26.755 A:middle
+orientation.
+
+00:34:27.356 --> 00:34:30.536 A:middle
+Next, let's talk a little bit
+
+00:34:30.536 --> 00:34:31.946 A:middle
+about our coordinate system.
+
+00:34:33.485 --> 00:34:35.295 A:middle
+For Vision, the origin is always
+
+00:34:35.295 --> 00:34:37.706 A:middle
+in the lower, left corner.
+
+00:34:37.806 --> 00:34:40.206 A:middle
+And all processing is done in
+
+00:34:40.206 --> 00:34:41.646 A:middle
+the up right -- if the image
+
+00:34:41.646 --> 00:34:42.996 A:middle
+would be in an upright position,
+
+00:34:43.446 --> 00:34:44.585 A:middle
+hence the orientation is
+
+00:34:44.585 --> 00:34:45.106 A:middle
+important.
+
+00:34:47.266 --> 00:34:48.576 A:middle
+All our processing is really
+
+00:34:48.576 --> 00:34:49.996 A:middle
+done in a normalized coordinate
+
+00:34:49.996 --> 00:34:52.266 A:middle
+space, except the registration
+
+00:34:52.266 --> 00:34:52.996 A:middle
+where we actually need to know
+
+00:34:52.996 --> 00:34:54.216 A:middle
+how many pixels [inaudible].
+
+00:34:54.896 --> 00:34:56.406 A:middle
+So, normalized coordinates means
+
+00:34:56.856 --> 00:34:58.166 A:middle
+our coordinates go from zero,
+
+00:34:58.166 --> 00:35:00.306 A:middle
+zero, to 1,1, in the upper right
+

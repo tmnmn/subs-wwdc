@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.686 --> 00:11:00.256 A:middle
+I will never gain that type of
+
+00:11:00.256 --> 00:11:01.946 A:middle
+knowledge with a highly focused
+
+00:11:01.946 --> 00:11:02.546 A:middle
+unit test.
+
+00:11:02.546 --> 00:11:04.366 A:middle
+So if I can get everyone here to
+
+00:11:04.366 --> 00:11:05.606 A:middle
+take two things away from this
+
+00:11:05.606 --> 00:11:07.476 A:middle
+presentation, the second one
+
+00:11:07.746 --> 00:11:08.866 A:middle
+should be that your performance
+
+00:11:08.866 --> 00:11:10.936 A:middle
+investigations should absolutely
+
+00:11:10.936 --> 00:11:12.506 A:middle
+start with these wide
+
+00:11:12.506 --> 00:11:14.226 A:middle
+integration tests that measure
+
+00:11:14.226 --> 00:11:15.846 A:middle
+how the users experience your
+
+00:11:15.846 --> 00:11:16.406 A:middle
+application.
+
+00:11:18.026 --> 00:11:19.296 A:middle
+So I'm talking about testing,
+
+00:11:19.626 --> 00:11:21.026 A:middle
+measuring and profiling.
+
+00:11:21.456 --> 00:11:22.346 A:middle
+And right now, I'd like to
+
+00:11:22.346 --> 00:11:24.166 A:middle
+introduce you to profiling in
+
+00:11:24.216 --> 00:11:25.546 A:middle
+Xcode with instruments.
+
+00:11:25.786 --> 00:11:26.646 A:middle
+Let's head over to the demo
+
+00:11:26.646 --> 00:11:27.166 A:middle
+machine.
+
+00:11:35.056 --> 00:11:35.926 A:middle
+Today we are going to be looking
+
+00:11:35.926 --> 00:11:37.146 A:middle
+at a performance problem that we
+
+00:11:37.146 --> 00:11:39.186 A:middle
+fixed between Xcode 9 and Xcode
+
+00:11:39.186 --> 00:11:39.516 A:middle
+10.
+
+00:11:39.516 --> 00:11:41.216 A:middle
+I want to show it to you.
+
+00:11:41.696 --> 00:11:44.436 A:middle
+I'm going to launch Xcode 9, and
+
+00:11:44.436 --> 00:11:45.286 A:middle
+open our solar system
+
+00:11:45.286 --> 00:11:45.856 A:middle
+application.
+
+00:11:47.056 --> 00:11:47.766 A:middle
+Now the problem that we are
+
+00:11:47.766 --> 00:11:48.836 A:middle
+going to be looking at is
+
+00:11:48.836 --> 00:11:49.796 A:middle
+creating tabs.
+
+00:11:50.456 --> 00:11:51.486 A:middle
+I'm going to just press
+
+00:11:51.486 --> 00:11:52.956 A:middle
+Command-T quickly a couple of
+
+00:11:52.956 --> 00:11:54.996 A:middle
+times, and as you can see, the
+
+00:11:54.996 --> 00:11:56.896 A:middle
+whole screen flashes black, and
+
+00:11:56.896 --> 00:11:58.166 A:middle
+it takes several seconds to
+
+00:11:58.166 --> 00:11:58.996 A:middle
+create those tabs.
+
+00:11:59.626 --> 00:12:01.116 A:middle
+That definitely doesn't meet my
+

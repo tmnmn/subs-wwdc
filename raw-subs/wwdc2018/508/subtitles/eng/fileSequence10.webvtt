@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.506 --> 00:10:00.556 A:middle
+have a route on your server
+
+00:10:00.556 --> 00:10:02.126 A:middle
+which returns a token looking
+
+00:10:02.126 --> 00:10:03.076 A:middle
+something like this.
+
+00:10:05.576 --> 00:10:06.956 A:middle
+A long-lived token is different.
+
+00:10:07.556 --> 00:10:09.096 A:middle
+Its expiry is set much further
+
+00:10:09.096 --> 00:10:09.336 A:middle
+out.
+
+00:10:09.926 --> 00:10:11.536 A:middle
+You can use the same token for
+
+00:10:11.536 --> 00:10:12.956 A:middle
+many requests over a longer
+
+00:10:12.956 --> 00:10:13.696 A:middle
+period of time.
+
+00:10:14.446 --> 00:10:15.876 A:middle
+This type of token doesn't
+
+00:10:15.876 --> 00:10:18.126 A:middle
+require a server since the token
+
+00:10:18.126 --> 00:10:19.936 A:middle
+is not likely to expire during a
+
+00:10:19.936 --> 00:10:20.776 A:middle
+user's session.
+
+00:10:21.396 --> 00:10:23.866 A:middle
+For that reason, it can be
+
+00:10:23.866 --> 00:10:25.886 A:middle
+easily used on static websites
+
+00:10:25.886 --> 00:10:27.146 A:middle
+or in development environments.
+
+00:10:28.006 --> 00:10:29.846 A:middle
+You can sync expiration and
+
+00:10:29.846 --> 00:10:31.916 A:middle
+renewal of this token with your
+
+00:10:31.916 --> 00:10:32.756 A:middle
+release cycle.
+
+00:10:33.276 --> 00:10:34.776 A:middle
+We strongly recommend that you
+
+00:10:34.776 --> 00:10:36.236 A:middle
+attach an origin claim to
+
+00:10:36.236 --> 00:10:37.246 A:middle
+long-lived tokens.
+
+00:10:37.666 --> 00:10:38.676 A:middle
+Let's see how this is done.
+
+00:10:38.676 --> 00:10:42.246 A:middle
+In this example, we set
+
+00:10:42.246 --> 00:10:43.946 A:middle
+long-lived tokens to expire in
+
+00:10:43.946 --> 00:10:44.656 A:middle
+six months.
+
+00:10:45.356 --> 00:10:47.216 A:middle
+As I said before, you can tailor
+
+00:10:47.216 --> 00:10:48.326 A:middle
+this to your application's
+
+00:10:48.326 --> 00:10:48.746 A:middle
+needs.
+
+00:10:49.366 --> 00:10:51.006 A:middle
+For example, if your team has a
+
+00:10:51.006 --> 00:10:53.246 A:middle
+two-week release cycle, you can
+
+00:10:53.246 --> 00:10:54.966 A:middle
+set your expectation to sync
+
+00:10:54.966 --> 00:10:57.186 A:middle
+with that or even add a couple
+
+00:10:57.186 --> 00:10:58.166 A:middle
+weeks as a buffer.
+
+00:10:59.626 --> 00:11:02.246 A:middle
+Setting the origin claim is
+

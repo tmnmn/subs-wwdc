@@ -1,0 +1,82 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.206 --> 00:29:01.141 align:start position:34% line:-1
+双方向の関係性です
+
+00:29:01.241 --> 00:29:04.578 align:start position:23% line:-2
+ビューが少なければ
+より細かいキャッシュが得られ―
+
+00:29:04.678 --> 00:29:06.513 align:start position:27% line:-1
+パフォーマンスも向上します
+
+00:29:07.181 --> 00:29:10.250 align:start position:23% line:-1
+通常はビューの数を調整できます
+
+00:29:10.350 --> 00:29:12.886 align:start position:27% line:-2
+パフォーマンスに
+大きな影響を与えるためです
+
+00:29:12.986 --> 00:29:15.522 align:start position:29% line:-2
+ビューが少ないことが
+常にベストではありません
+
+00:29:15.622 --> 00:29:19.459 align:start position:23% line:-2
+さもないと 巨大なビュー１つで
+すべてをやることになります
+
+00:29:21.161 --> 00:29:23.197 align:start position:23% line:-1
+もう１つ よく使うテクニックに
+
+00:29:23.297 --> 00:29:25.132 align:start position:21% line:-2
+“ダイレクトオブザベーション”が
+あります
+
+00:29:25.265 --> 00:29:27.768 align:start position:27% line:-1
+ソースコードの２つの領域が
+
+00:29:27.868 --> 00:29:30.104 align:start position:27% line:-2
+緩やかに連動していることが
+よくあります
+
+00:29:30.204 --> 00:29:32.406 align:start position:27% line:-1
+一方が他方を分かっていて―
+
+00:29:32.506 --> 00:29:36.276 align:start position:29% line:-2
+間接的な方法によって
+互いに交信しているのです
+
+00:29:36.376 --> 00:29:39.379 align:start position:14% line:-2
+使用しているのは
+NSNotificationCenter
+
+00:29:39.580 --> 00:29:41.315 align:start position:30% line:-2
+あとは ブロック単位の
+コールバック
+
+00:29:41.415 --> 00:29:43.884 align:start position:25% line:-1
+“委譲”や“キー値監視”です
+
+00:29:44.918 --> 00:29:48.322 align:start position:29% line:-2
+いくつかのモデルコードを
+目にすることがあります
+
+00:29:48.422 --> 00:29:52.092 align:start position:23% line:-2
+ループに入って変更されるたびに
+そのループに入っていき―
+
+00:29:52.192 --> 00:29:55.195 align:start position:14% line:-2
+“KVO Notifications”を
+数多く出しています
+
+00:29:55.295 --> 00:29:57.431 align:start position:29% line:-1
+もちろん直接は見えません
+
+00:29:57.531 --> 00:29:59.299 align:start position:25% line:-1
+しかし コントローラの中では
+
+00:29:59.399 --> 00:30:02.870 align:start position:29% line:-2
+モデルコードの変更に
+必死に応答しているのです
+

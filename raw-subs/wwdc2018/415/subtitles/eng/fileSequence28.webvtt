@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.586 --> 00:28:00.256 A:middle
+that module.
+
+00:28:00.896 --> 00:28:03.896 A:middle
+All those modules are
+
+00:28:04.036 --> 00:28:05.566 A:middle
+[inaudible] to disk into
+
+00:28:05.566 --> 00:28:06.916 A:middle
+something called a module cache.
+
+00:28:07.466 --> 00:28:12.166 A:middle
+As I mentioned, the command line
+
+00:28:12.166 --> 00:28:14.076 A:middle
+arguments are passed on when you
+
+00:28:14.196 --> 00:28:15.006 A:middle
+create that module.
+
+00:28:15.806 --> 00:28:18.536 A:middle
+That means, that means those
+
+00:28:18.536 --> 00:28:21.236 A:middle
+arguments can affect the content
+
+00:28:21.236 --> 00:28:21.936 A:middle
+of your module.
+
+00:28:22.806 --> 00:28:25.336 A:middle
+As a result, we have to hash all
+
+00:28:25.336 --> 00:28:27.816 A:middle
+those arguments and store the
+
+00:28:27.816 --> 00:28:29.036 A:middle
+modules we created for this
+
+00:28:29.036 --> 00:28:30.536 A:middle
+particular compiler invocation
+
+00:28:30.886 --> 00:28:33.406 A:middle
+in a directory matching that
+
+00:28:34.296 --> 00:28:34.456 A:middle
+hash.
+
+00:28:34.616 --> 00:28:36.366 A:middle
+If you change the compiler
+
+00:28:36.366 --> 00:28:37.796 A:middle
+arguments for different
+
+00:28:37.796 --> 00:28:39.906 A:middle
+limitation file, for example
+
+00:28:40.116 --> 00:28:43.196 A:middle
+you'd say enable cat, that is a
+
+00:28:43.196 --> 00:28:45.586 A:middle
+different hash and that requires
+
+00:28:45.966 --> 00:28:48.026 A:middle
+Clang to rebuild all the
+
+00:28:48.026 --> 00:28:50.156 A:middle
+module's inputs into that
+
+00:28:50.156 --> 00:28:52.146 A:middle
+directory matching that hash.
+
+00:28:53.366 --> 00:28:55.246 A:middle
+So in order to get the maximum
+
+00:28:55.246 --> 00:28:57.216 A:middle
+reuse out of the module cache,
+
+00:28:57.716 --> 00:29:00.026 A:middle
+you should try to keep the
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:00.876 --> 00:32:02.856 A:middle
+Here, the first function now
+
+00:32:02.856 --> 00:32:05.486 A:middle
+produces -- sorry, the second
+
+00:32:05.486 --> 00:32:07.086 A:middle
+function now takes an integer.
+
+00:32:07.516 --> 00:32:09.066 A:middle
+So when I call the second
+
+00:32:09.066 --> 00:32:10.646 A:middle
+function with the result of the
+
+00:32:10.706 --> 00:32:13.006 A:middle
+first function then I cannot
+
+00:32:13.086 --> 00:32:14.986 A:middle
+pass an optional Int where an
+
+00:32:14.986 --> 00:32:16.126 A:middle
+Int was expected.
+
+00:32:16.596 --> 00:32:18.246 A:middle
+So the compiler has to insert a
+
+00:32:18.246 --> 00:32:21.296 A:middle
+force unwrap and then it all
+
+00:32:21.296 --> 00:32:22.656 A:middle
+works because now I have an Int
+
+00:32:22.836 --> 00:32:26.266 A:middle
+and an Int And this mental model
+
+00:32:26.346 --> 00:32:27.626 A:middle
+makes Implicitly Unwrapped
+
+00:32:27.626 --> 00:32:29.176 A:middle
+Optionals very easy to reason
+
+00:32:29.176 --> 00:32:29.506 A:middle
+about.
+
+00:32:30.206 --> 00:32:32.566 A:middle
+But until recently the compiler
+
+00:32:32.776 --> 00:32:34.166 A:middle
+had some edge cases where it did
+
+00:32:34.166 --> 00:32:35.636 A:middle
+not always follow this model.
+
+00:32:36.316 --> 00:32:38.956 A:middle
+So recall that you cannot have
+
+00:32:38.956 --> 00:32:40.386 A:middle
+an implicitly unwrapped optional
+
+00:32:40.386 --> 00:32:41.696 A:middle
+that is part of another type.
+
+00:32:42.416 --> 00:32:43.706 A:middle
+And this is still the case in
+
+00:32:43.706 --> 00:32:44.646 A:middle
+Swift 4.2.
+
+00:32:44.816 --> 00:32:46.616 A:middle
+I cannot have an array of
+
+00:32:46.676 --> 00:32:48.296 A:middle
+implicitly unwrapped Int's.
+
+00:32:49.136 --> 00:32:51.566 A:middle
+However, in Swift 4 previously,
+
+00:32:51.876 --> 00:32:53.136 A:middle
+there is some edge cases like
+
+00:32:53.186 --> 00:32:53.536 A:middle
+this.
+
+00:32:53.536 --> 00:32:55.606 A:middle
+I could define a type alias
+
+00:32:55.796 --> 00:32:57.596 A:middle
+where the underlying type was
+
+00:32:57.776 --> 00:32:59.606 A:middle
+implicitly unwrapped Int and
+
+00:32:59.606 --> 00:33:00.956 A:middle
+then I could make an array of
+

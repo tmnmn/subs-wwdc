@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.646 --> 00:15:00.876 A:middle
+And what we have here are
+
+00:15:00.876 --> 00:15:01.596 A:middle
+spikes.
+
+00:15:01.596 --> 00:15:03.486 A:middle
+As new rows are about to come
+
+00:15:03.486 --> 00:15:04.906 A:middle
+into view on the scroll view,
+
+00:15:05.966 --> 00:15:07.886 A:middle
+we're spiking the CPU usage.
+
+00:15:08.046 --> 00:15:09.566 A:middle
+And then, returning back down to
+
+00:15:09.566 --> 00:15:10.316 A:middle
+a low level.
+
+00:15:10.746 --> 00:15:13.456 A:middle
+So, there are two techniques we
+
+00:15:13.456 --> 00:15:16.336 A:middle
+can use to smooth out our CPU
+
+00:15:16.396 --> 00:15:16.806 A:middle
+usage.
+
+00:15:17.566 --> 00:15:18.846 A:middle
+The first one is prefetching.
+
+00:15:19.766 --> 00:15:21.876 A:middle
+And if you want to know a whole
+
+00:15:21.876 --> 00:15:24.036 A:middle
+lot about prefetching check out
+
+00:15:24.146 --> 00:15:25.096 A:middle
+the A Tour of CollectionView
+
+00:15:25.096 --> 00:15:26.856 A:middle
+Talk from this year's WWDC.
+
+00:15:27.466 --> 00:15:29.096 A:middle
+But the general ideas here, is
+
+00:15:29.096 --> 00:15:30.856 A:middle
+that prefetching allows
+
+00:15:30.856 --> 00:15:32.396 A:middle
+CollectionView to inform our
+
+00:15:32.396 --> 00:15:34.616 A:middle
+data source that it doesn't need
+
+00:15:34.616 --> 00:15:36.726 A:middle
+a cell right now, but it will in
+
+00:15:36.726 --> 00:15:37.696 A:middle
+the very near future.
+
+00:15:37.976 --> 00:15:39.106 A:middle
+So, if you have any work to do,
+
+00:15:39.416 --> 00:15:40.556 A:middle
+maybe, you can get a head start.
+
+00:15:40.976 --> 00:15:42.836 A:middle
+That allows us spread out CPU
+
+00:15:42.836 --> 00:15:44.006 A:middle
+usage out over time.
+
+00:15:45.276 --> 00:15:46.476 A:middle
+So, we've reduced the maximum
+
+00:15:46.476 --> 00:15:47.836 A:middle
+size of the CPU usage.
+
+00:15:48.236 --> 00:15:51.436 A:middle
+Another technique we can use is
+
+00:15:51.436 --> 00:15:52.106 A:middle
+performing work in the
+
+00:15:52.106 --> 00:15:52.646 A:middle
+background.
+
+00:15:53.286 --> 00:15:54.156 A:middle
+So, now that we've spread out
+
+00:15:54.156 --> 00:15:55.686 A:middle
+work over time we can, also,
+
+00:15:55.686 --> 00:15:57.206 A:middle
+spread it out over available
+
+00:15:57.206 --> 00:15:57.786 A:middle
+CPUs.
+
+00:15:58.296 --> 00:16:03.076 A:middle
+The consequences of this are
+

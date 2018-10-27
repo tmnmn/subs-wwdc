@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.586 --> 00:48:02.226 A:middle
+negative, and we've seen cases
+
+00:48:02.226 --> 00:48:03.926 A:middle
+of this happening, especially
+
+00:48:03.926 --> 00:48:05.786 A:middle
+when users try to game the
+
+00:48:05.786 --> 00:48:06.296 A:middle
+system.
+
+00:48:07.116 --> 00:48:08.276 A:middle
+Maybe they're playing a game,
+
+00:48:09.556 --> 00:48:10.606 A:middle
+and they want to reset the
+
+00:48:10.606 --> 00:48:11.036 A:middle
+clock.
+
+00:48:11.816 --> 00:48:13.296 A:middle
+Maybe they want some extra lives
+
+00:48:13.296 --> 00:48:14.966 A:middle
+or some extra chances, so they
+
+00:48:14.966 --> 00:48:16.606 A:middle
+go into System Settings and
+
+00:48:16.606 --> 00:48:18.056 A:middle
+change the clock to 24 hours
+
+00:48:18.056 --> 00:48:18.346 A:middle
+ago.
+
+00:48:19.496 --> 00:48:21.896 A:middle
+Well, in this case, this causes
+
+00:48:21.896 --> 00:48:23.136 A:middle
+next update interval to be
+
+00:48:23.136 --> 00:48:25.996 A:middle
+negative, and when we schedule a
+
+00:48:25.996 --> 00:48:27.816 A:middle
+timer for a time that is
+
+00:48:27.816 --> 00:48:29.936 A:middle
+sometime in the past, that timer
+
+00:48:29.936 --> 00:48:32.056 A:middle
+will fire immediately and then
+
+00:48:32.056 --> 00:48:33.836 A:middle
+call itself again and again.
+
+00:48:35.036 --> 00:48:36.476 A:middle
+So, we effectively have an
+
+00:48:36.476 --> 00:48:39.516 A:middle
+infinite loop here.
+
+00:48:39.686 --> 00:48:41.136 A:middle
+Fortunately, this is really easy
+
+00:48:41.136 --> 00:48:41.576 A:middle
+to fix.
+
+00:48:42.356 --> 00:48:44.116 A:middle
+We just go into this function
+
+00:48:44.116 --> 00:48:46.786 A:middle
+here and change this to less
+
+00:48:46.786 --> 00:48:49.026 A:middle
+than or equal to 0 so that even
+
+00:48:49.066 --> 00:48:50.496 A:middle
+if next update interval is
+
+00:48:50.496 --> 00:48:52.326 A:middle
+negative, we can break out of
+
+00:48:52.326 --> 00:48:52.686 A:middle
+the loop.
+
+00:48:53.136 --> 00:48:55.866 A:middle
+Now, this is a really great
+
+00:48:55.936 --> 00:48:58.576 A:middle
+example of an energy issue that
+
+00:48:58.576 --> 00:49:00.626 A:middle
+is really difficult to catch
+

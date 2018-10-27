@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.436 --> 00:14:01.136 A:middle
+There's a new API and it is
+
+00:14:01.256 --> 00:14:03.406 A:middle
+fairly simple and you could
+
+00:14:03.406 --> 00:14:04.616 A:middle
+really be done adopting it
+
+00:14:05.016 --> 00:14:06.146 A:middle
+before leaving this session.
+
+00:14:06.636 --> 00:14:09.696 A:middle
+And next we are going to walk
+
+00:14:09.696 --> 00:14:11.096 A:middle
+through the process for the
+
+00:14:11.096 --> 00:14:12.636 A:middle
+broadcast extension developers
+
+00:14:13.196 --> 00:14:15.266 A:middle
+and discuss how you can actually
+
+00:14:15.266 --> 00:14:16.586 A:middle
+implement the broadcast
+
+00:14:16.586 --> 00:14:18.786 A:middle
+extension and how things would
+
+00:14:18.786 --> 00:14:20.496 A:middle
+work for you if your app
+
+00:14:20.496 --> 00:14:22.696 A:middle
+provides both the extension and
+
+00:14:22.696 --> 00:14:23.576 A:middle
+the broadcast picker.
+
+00:14:25.576 --> 00:14:26.966 A:middle
+So let me come back to that
+
+00:14:26.966 --> 00:14:27.536 A:middle
+diagram.
+
+00:14:27.536 --> 00:14:28.796 A:middle
+We are sort of moving to the
+
+00:14:28.976 --> 00:14:31.306 A:middle
+broadcast extension site now and
+
+00:14:31.836 --> 00:14:32.966 A:middle
+we want to show you the path
+
+00:14:32.966 --> 00:14:33.976 A:middle
+assuming the system broadcast.
+
+00:14:39.766 --> 00:14:41.006 A:middle
+Let's start with talking about
+
+00:14:41.006 --> 00:14:42.966 A:middle
+the broadcast application and
+
+00:14:43.516 --> 00:14:45.656 A:middle
+the broadcast extension and what
+
+00:14:45.656 --> 00:14:48.726 A:middle
+each of them needs to do during
+
+00:14:48.726 --> 00:14:50.796 A:middle
+the system broadcast session.
+
+00:14:52.916 --> 00:14:54.796 A:middle
+So you install the broadcast
+
+00:14:54.796 --> 00:14:56.376 A:middle
+extension along with the
+
+00:14:56.796 --> 00:14:58.496 A:middle
+application that contains it.
+
+00:14:58.666 --> 00:15:00.246 A:middle
+So if you install Facebook, you
+

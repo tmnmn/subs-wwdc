@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.716 --> 00:09:01.636 A:middle
+UIFocusEnvironment objects.
+
+00:09:02.996 --> 00:09:04.666 A:middle
+First, we'll try to grab text
+
+00:09:04.666 --> 00:09:05.766 A:middle
+out of our username and password
+
+00:09:05.766 --> 00:09:06.106 A:middle
+fields.
+
+00:09:06.526 --> 00:09:07.606 A:middle
+And, if we can, we'll just
+
+00:09:07.606 --> 00:09:08.806 A:middle
+return that login button to the
+
+00:09:08.806 --> 00:09:09.476 A:middle
+focus engine.
+
+00:09:10.426 --> 00:09:11.486 A:middle
+If we weren't able to grab any
+
+00:09:11.486 --> 00:09:12.956 A:middle
+text, that just means the user
+
+00:09:12.956 --> 00:09:14.186 A:middle
+hasn't entered any yet.
+
+00:09:14.376 --> 00:09:16.036 A:middle
+So, we'll return the username
+
+00:09:16.036 --> 00:09:17.306 A:middle
+text field to be focused.
+
+00:09:18.136 --> 00:09:18.736 A:middle
+Super simple.
+
+00:09:20.766 --> 00:09:21.656 A:middle
+So, let's recap some of the
+
+00:09:21.656 --> 00:09:23.056 A:middle
+major takeaways of Password
+
+00:09:23.056 --> 00:09:23.566 A:middle
+AutoFill.
+
+00:09:25.296 --> 00:09:27.856 A:middle
+For customers, Password AutoFill
+
+00:09:27.856 --> 00:09:29.406 A:middle
+reduces the friction within your
+
+00:09:29.406 --> 00:09:32.006 A:middle
+app by enabling a one-tap sign
+
+00:09:32.006 --> 00:09:32.986 A:middle
+in experience.
+
+00:09:33.666 --> 00:09:35.316 A:middle
+If any adoption is needed on
+
+00:09:35.316 --> 00:09:37.266 A:middle
+your part for developers, this
+
+00:09:37.266 --> 00:09:38.076 A:middle
+is super simple.
+
+00:09:39.236 --> 00:09:41.296 A:middle
+You simply have to just adopt
+
+00:09:41.476 --> 00:09:44.876 A:middle
+UITextContentTypes, adopt
+
+00:09:44.876 --> 00:09:46.376 A:middle
+Associated Domains so that your
+
+00:09:46.376 --> 00:09:47.886 A:middle
+apps credentials are surfaced to
+
+00:09:47.886 --> 00:09:48.646 A:middle
+the QuickType bar.
+
+00:09:50.086 --> 00:09:51.436 A:middle
+And, lastly, implement
+
+00:09:51.476 --> 00:09:53.116 A:middle
+preferredFocusEnvironments to
+
+00:09:53.116 --> 00:09:55.006 A:middle
+enable that one-tap sign in
+
+00:09:55.006 --> 00:09:55.696 A:middle
+experience.
+
+00:09:56.736 --> 00:09:57.916 A:middle
+And that's Password AutoFill for
+
+00:09:57.916 --> 00:09:58.536 A:middle
+tvOS.
+
+00:09:59.066 --> 00:10:00.436 A:middle
+We cannot wait for you and your
+

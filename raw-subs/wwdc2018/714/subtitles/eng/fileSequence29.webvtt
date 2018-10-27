@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.076 --> 00:29:01.646 A:middle
+They are not free and have a
+
+00:29:01.646 --> 00:29:03.216 A:middle
+non-trivial cost in storing and
+
+00:29:03.216 --> 00:29:03.846 A:middle
+looking them up.
+
+00:29:05.256 --> 00:29:06.836 A:middle
+Cookies are attached to all the
+
+00:29:06.836 --> 00:29:08.676 A:middle
+requests that match the domain
+
+00:29:08.676 --> 00:29:09.946 A:middle
+and path attribute.
+
+00:29:10.506 --> 00:29:11.856 A:middle
+And it can quickly increase your
+
+00:29:11.856 --> 00:29:12.636 A:middle
+request size.
+
+00:29:13.996 --> 00:29:15.946 A:middle
+Please use the domain and path
+
+00:29:15.946 --> 00:29:17.966 A:middle
+attribute wisely to make sure
+
+00:29:17.966 --> 00:29:19.826 A:middle
+cookies required by the servers
+
+00:29:19.896 --> 00:29:21.306 A:middle
+are attached to your requests.
+
+00:29:22.526 --> 00:29:23.756 A:middle
+Use of smaller cookies when
+
+00:29:23.756 --> 00:29:25.336 A:middle
+possible, and delete these
+
+00:29:25.336 --> 00:29:26.606 A:middle
+cookies when you no longer need
+
+00:29:26.606 --> 00:29:26.846 A:middle
+them.
+
+00:29:28.226 --> 00:29:29.896 A:middle
+Try to save some state on the
+
+00:29:29.896 --> 00:29:31.686 A:middle
+server so you can reduce the
+
+00:29:31.686 --> 00:29:33.246 A:middle
+number of client-side cookies.
+
+00:29:33.716 --> 00:29:36.856 A:middle
+Also consider moving to HTTP/2
+
+00:29:37.326 --> 00:29:38.766 A:middle
+to get benefits of header
+
+00:29:38.766 --> 00:29:39.356 A:middle
+compression.
+
+00:29:39.906 --> 00:29:42.476 A:middle
+Let's talk a little more about
+
+00:29:42.476 --> 00:29:43.176 A:middle
+compression.
+
+00:29:43.706 --> 00:29:48.646 A:middle
+HTTP compression, also known as
+
+00:29:48.646 --> 00:29:51.126 A:middle
+content and coding, is simply
+
+00:29:51.176 --> 00:29:53.026 A:middle
+compressing the data that is
+
+00:29:53.026 --> 00:29:54.616 A:middle
+shuttled between the client and
+
+00:29:54.726 --> 00:29:56.096 A:middle
+the server.
+
+00:29:56.096 --> 00:29:57.666 A:middle
+This allows us to better utilize
+
+00:29:57.696 --> 00:29:58.276 A:middle
+the bandwidth.
+
+00:29:59.706 --> 00:30:02.046 A:middle
+The algorithms that URLSession
+

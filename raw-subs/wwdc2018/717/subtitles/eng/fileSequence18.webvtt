@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.746 --> 00:18:00.406 A:middle
+And since this can be a longer
+
+00:18:00.406 --> 00:18:01.716 A:middle
+running task, I'm actually going
+
+00:18:01.716 --> 00:18:03.086 A:middle
+to run this on a separate queue.
+
+00:18:03.566 --> 00:18:06.926 A:middle
+Alright, here's some code that I
+
+00:18:06.926 --> 00:18:09.046 A:middle
+actually just used to open.
+
+00:18:09.096 --> 00:18:10.646 A:middle
+This is actually like the little
+
+00:18:10.646 --> 00:18:11.296 A:middle
+panel that we saw.
+
+00:18:11.546 --> 00:18:12.636 A:middle
+But the important part is
+
+00:18:12.636 --> 00:18:13.806 A:middle
+actually, "So, how do I setup my
+
+00:18:13.806 --> 00:18:14.216 A:middle
+Vision task?"
+
+00:18:14.216 --> 00:18:16.266 A:middle
+So, I'm going to do two tasks.
+
+00:18:16.266 --> 00:18:17.716 A:middle
+I'm going to do a barcode
+
+00:18:17.716 --> 00:18:19.546 A:middle
+request and I'm going to do my
+
+00:18:19.546 --> 00:18:20.816 A:middle
+classification request.
+
+00:18:21.346 --> 00:18:22.916 A:middle
+So, I set up my barcode request.
+
+00:18:23.946 --> 00:18:25.596 A:middle
+And in my completion handler, I
+
+00:18:25.596 --> 00:18:27.176 A:middle
+simple look at, "Do I get
+
+00:18:27.176 --> 00:18:29.376 A:middle
+something back?"
+
+00:18:29.616 --> 00:18:31.176 A:middle
+and also just since I'm only
+
+00:18:31.176 --> 00:18:32.756 A:middle
+expecting one barcode, I only
+
+00:18:32.756 --> 00:18:34.036 A:middle
+look at the very first one.
+
+00:18:35.086 --> 00:18:35.936 A:middle
+Can I decode it?
+
+00:18:36.106 --> 00:18:37.296 A:middle
+If I get a string out of it, I
+
+00:18:37.296 --> 00:18:38.596 A:middle
+use that actually to look up --
+
+00:18:38.636 --> 00:18:39.616 A:middle
+that's actually how it worked
+
+00:18:39.616 --> 00:18:40.866 A:middle
+with my barcodes to see then --
+
+00:18:40.966 --> 00:18:42.146 A:middle
+oh, yes, that is my training
+
+00:18:42.146 --> 00:18:42.213 A:middle
+[inaudible].
+
+00:18:42.213 --> 00:18:44.786 A:middle
+Alright, so I add that as one of
+
+00:18:44.816 --> 00:18:46.906 A:middle
+the requests that I want to run.
+
+00:18:47.496 --> 00:18:48.596 A:middle
+Now, I'm setting up my
+
+00:18:48.596 --> 00:18:49.466 A:middle
+classification.
+
+00:18:50.036 --> 00:18:51.006 A:middle
+So, in this case, what I've
+
+00:18:51.076 --> 00:18:53.586 A:middle
+done, I used my classifier and
+
+00:18:53.586 --> 00:18:55.196 A:middle
+I'm loading simply this from my
+
+00:18:55.776 --> 00:18:58.906 A:middle
+bundle and create my model from
+
+00:18:58.906 --> 00:18:59.136 A:middle
+there.
+
+00:18:59.416 --> 00:19:00.566 A:middle
+Now, I'm not using the code
+

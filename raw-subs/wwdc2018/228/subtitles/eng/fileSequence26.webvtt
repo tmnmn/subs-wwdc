@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.676 --> 00:26:01.136 A:middle
+build Energy Game here through
+
+00:26:01.136 --> 00:26:03.406 A:middle
+the Xcode UI and let it run.
+
+00:26:04.136 --> 00:26:05.976 A:middle
+Then, you'll see on the right
+
+00:26:05.976 --> 00:26:07.956 A:middle
+side that all it really does is
+
+00:26:07.956 --> 00:26:08.736 A:middle
+draw a little little battery
+
+00:26:08.736 --> 00:26:10.126 A:middle
+sprite at a random time.
+
+00:26:10.746 --> 00:26:11.226 A:middle
+There it is.
+
+00:26:11.706 --> 00:26:12.246 A:middle
+Very simple.
+
+00:26:13.016 --> 00:26:15.266 A:middle
+If I jump straight into the
+
+00:26:15.266 --> 00:26:16.716 A:middle
+Xcode debugger and jump to
+
+00:26:16.716 --> 00:26:18.756 A:middle
+energy impact, now, I can see my
+
+00:26:18.756 --> 00:26:19.286 A:middle
+gauges.
+
+00:26:19.796 --> 00:26:22.226 A:middle
+And so this is the UI that we
+
+00:26:22.226 --> 00:26:22.976 A:middle
+just talked about.
+
+00:26:23.366 --> 00:26:25.336 A:middle
+It's the same three areas that
+
+00:26:25.336 --> 00:26:26.946 A:middle
+we discussed, and you could see
+
+00:26:26.946 --> 00:26:28.556 A:middle
+right now that all my app is
+
+00:26:28.556 --> 00:26:30.086 A:middle
+doing that we've designed it to
+
+00:26:30.086 --> 00:26:32.656 A:middle
+do is just placed some sprites
+
+00:26:32.656 --> 00:26:33.126 A:middle
+onscreen.
+
+00:26:33.926 --> 00:26:35.056 A:middle
+But you notice that I'm doing
+
+00:26:35.056 --> 00:26:36.346 A:middle
+networking, and my overhead
+
+00:26:36.346 --> 00:26:38.486 A:middle
+seems to be high for simply no
+
+00:26:38.486 --> 00:26:38.836 A:middle
+reason.
+
+00:26:39.526 --> 00:26:40.806 A:middle
+Well, this is because we're also
+
+00:26:40.806 --> 00:26:42.556 A:middle
+doing a little bit of networking
+
+00:26:42.556 --> 00:26:43.886 A:middle
+and uploading the spike count
+
+00:26:44.056 --> 00:26:45.376 A:middle
+every time a new spike is drawn
+
+00:26:45.376 --> 00:26:45.846 A:middle
+onscreen.
+
+00:26:46.766 --> 00:26:48.036 A:middle
+And so, through the Xcode energy
+
+00:26:48.036 --> 00:26:49.406 A:middle
+gauges, you can actually see the
+
+00:26:49.406 --> 00:26:50.866 A:middle
+impact of doing that.
+
+00:26:51.576 --> 00:26:53.796 A:middle
+So, I'm going to go ahead and
+
+00:26:53.796 --> 00:26:55.666 A:middle
+stop this now and jump into my
+
+00:26:55.666 --> 00:26:57.346 A:middle
+code to understand where this is
+
+00:26:57.346 --> 00:26:57.796 A:middle
+coming from.
+
+00:26:58.296 --> 00:27:00.656 A:middle
+So, if I go to my View
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.206 --> 00:28:02.776 A:middle
+There is a convenience function
+
+00:28:02.776 --> 00:28:03.296 A:middle
+in vImage.
+
+00:28:03.356 --> 00:28:06.606 A:middle
+vImageCreatesCGImage FromBuffer
+
+00:28:07.566 --> 00:28:09.606 A:middle
+that helps you to create a
+
+00:28:09.606 --> 00:28:11.286 A:middle
+cgImage based on the buffer you
+
+00:28:11.286 --> 00:28:12.596 A:middle
+already have in vImage.
+
+00:28:13.896 --> 00:28:15.566 A:middle
+One thing to note is that we're
+
+00:28:15.566 --> 00:28:17.706 A:middle
+not actually copying the large
+
+00:28:17.706 --> 00:28:19.636 A:middle
+data buffer in the image from
+
+00:28:19.636 --> 00:28:20.726 A:middle
+one place to another.
+
+00:28:21.206 --> 00:28:23.426 A:middle
+We're simply creating a cgImage
+
+00:28:23.426 --> 00:28:25.956 A:middle
+object that adds a container to
+
+00:28:25.956 --> 00:28:27.306 A:middle
+this image buffer.
+
+00:28:28.216 --> 00:28:29.876 A:middle
+So we are only filling in the
+
+00:28:29.876 --> 00:28:31.716 A:middle
+information that cgImage needs,
+
+00:28:31.716 --> 00:28:33.576 A:middle
+create a cgImage objects,
+
+00:28:33.716 --> 00:28:35.966 A:middle
+instead of copying data around.
+
+00:28:36.556 --> 00:28:39.136 A:middle
+Once we have that, we can send
+
+00:28:39.136 --> 00:28:41.456 A:middle
+the cgImage object to the image
+
+00:28:41.456 --> 00:28:43.616 A:middle
+view, and it will be displayed
+
+00:28:43.706 --> 00:28:44.406 A:middle
+on the screen.
+
+00:28:45.016 --> 00:28:45.796 A:middle
+So it's that simple.
+
+00:28:46.286 --> 00:28:48.146 A:middle
+Four steps and you can create
+
+00:28:48.146 --> 00:28:50.626 A:middle
+your own effects, we show you
+
+00:28:50.626 --> 00:28:51.656 A:middle
+the saturation effects.
+
+00:28:52.026 --> 00:28:54.736 A:middle
+Now, there are other effects we
+
+00:28:54.736 --> 00:28:56.166 A:middle
+can do with vImage.
+
+00:28:56.816 --> 00:28:59.116 A:middle
+We can do a rotation, like I
+
+00:28:59.116 --> 00:29:00.716 A:middle
+said before, rotate the image
+

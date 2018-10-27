@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.306 --> 00:03:00.016 A:middle
+proxies, and this can be really
+
+00:03:00.016 --> 00:03:01.046 A:middle
+difficult to do well.
+
+00:03:01.876 --> 00:03:03.066 A:middle
+And the most difficult thing is
+
+00:03:03.286 --> 00:03:04.256 A:middle
+that you may not have one of
+
+00:03:04.256 --> 00:03:05.386 A:middle
+these networks to test on, so
+
+00:03:05.766 --> 00:03:06.936 A:middle
+you may get a bug report from
+
+00:03:07.066 --> 00:03:08.926 A:middle
+one of your customers, and they
+
+00:03:09.146 --> 00:03:10.296 A:middle
+may complain that it's not
+
+00:03:10.296 --> 00:03:11.066 A:middle
+working well on their
+
+00:03:11.066 --> 00:03:11.656 A:middle
+environment.
+
+00:03:12.096 --> 00:03:13.236 A:middle
+And you may want to add code to
+
+00:03:13.236 --> 00:03:16.016 A:middle
+fix the problem, but that once
+
+00:03:16.016 --> 00:03:17.036 A:middle
+you've got it in there, you
+
+00:03:17.036 --> 00:03:17.896 A:middle
+really don't have a good way to
+
+00:03:17.896 --> 00:03:18.336 A:middle
+test it.
+
+00:03:18.336 --> 00:03:19.266 A:middle
+You have to end up building the
+
+00:03:19.266 --> 00:03:20.706 A:middle
+whole environment to reproduce
+
+00:03:20.706 --> 00:03:21.856 A:middle
+the same environment they have.
+
+00:03:22.616 --> 00:03:23.726 A:middle
+It can be a real challenge.
+
+00:03:24.716 --> 00:03:26.436 A:middle
+So connecting with sockets is
+
+00:03:26.436 --> 00:03:26.926 A:middle
+really hard.
+
+00:03:28.336 --> 00:03:30.056 A:middle
+The second thing that becomes
+
+00:03:30.056 --> 00:03:31.486 A:middle
+challenges with sockets is data
+
+00:03:31.486 --> 00:03:32.206 A:middle
+transfers.
+
+00:03:33.056 --> 00:03:34.256 A:middle
+There's a lot of reasons that
+
+00:03:34.256 --> 00:03:35.486 A:middle
+transferring data with sockets
+
+00:03:35.486 --> 00:03:36.416 A:middle
+can be really difficult.
+
+00:03:36.936 --> 00:03:39.896 A:middle
+The primary problem is the read
+
+00:03:39.896 --> 00:03:42.736 A:middle
+and write model itself.
+
+00:03:42.736 --> 00:03:43.626 A:middle
+If you're using blocking
+
+00:03:43.626 --> 00:03:45.846 A:middle
+sockets, it pretty simple, but
+
+00:03:45.846 --> 00:03:47.306 A:middle
+you're tying up a thread, and
+
+00:03:47.306 --> 00:03:48.896 A:middle
+it's really not a great idea to
+
+00:03:48.896 --> 00:03:49.976 A:middle
+be tying up a thread while
+
+00:03:49.976 --> 00:03:50.946 A:middle
+you're waiting to read or write
+
+00:03:50.976 --> 00:03:51.196 A:middle
+data.
+
+00:03:52.206 --> 00:03:53.476 A:middle
+You can switch to nonblocking,
+
+00:03:53.816 --> 00:03:54.706 A:middle
+but then you end up with a whole
+
+00:03:54.706 --> 00:03:55.876 A:middle
+lot of other challenges that you
+
+00:03:55.876 --> 00:03:56.366 A:middle
+run into.
+
+00:03:57.456 --> 00:03:58.596 A:middle
+When you're using nonblocking,
+
+00:03:58.736 --> 00:03:59.916 A:middle
+you may tell the kernel I'd like
+
+00:03:59.916 --> 00:04:01.346 A:middle
+100 bytes, and the kernel will
+

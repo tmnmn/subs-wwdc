@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:57.976 --> 00:35:00.176 A:middle
+Zip files, installer packages,
+
+00:35:00.376 --> 00:35:01.136 A:middle
+and disk images.
+
+00:35:02.156 --> 00:35:03.006 A:middle
+So if you have a bare
+
+00:35:03.006 --> 00:35:04.556 A:middle
+application, you'll need to zip
+
+00:35:04.556 --> 00:35:05.806 A:middle
+it up prior to uploading to the
+
+00:35:05.806 --> 00:35:06.566 A:middle
+notary service.
+
+00:35:07.396 --> 00:35:08.416 A:middle
+The tool for working with the
+
+00:35:08.416 --> 00:35:09.936 A:middle
+notary service is altool.
+
+00:35:10.816 --> 00:35:12.116 A:middle
+Here you can see a command line
+
+00:35:12.116 --> 00:35:13.866 A:middle
+indication sending the Watch
+
+00:35:13.866 --> 00:35:15.316 A:middle
+Grass Grow image up for
+
+00:35:15.316 --> 00:35:16.026 A:middle
+notarization.
+
+00:35:17.186 --> 00:35:18.546 A:middle
+Note that altool does require
+
+00:35:18.546 --> 00:35:20.206 A:middle
+authentication, but you can pass
+
+00:35:20.206 --> 00:35:20.966 A:middle
+in your credentials via
+
+00:35:20.966 --> 00:35:22.496 A:middle
+Environment Variables or the key
+
+00:35:22.496 --> 00:35:22.756 A:middle
+chain.
+
+00:35:24.076 --> 00:35:25.966 A:middle
+Once upload is complete, you'll
+
+00:35:25.966 --> 00:35:27.486 A:middle
+get a UUID that can be used to
+
+00:35:27.486 --> 00:35:28.816 A:middle
+monitor status of processing.
+
+00:35:29.346 --> 00:35:31.616 A:middle
+But you can also turn back and
+
+00:35:31.616 --> 00:35:33.276 A:middle
+pass the altool to check on the
+
+00:35:33.276 --> 00:35:34.456 A:middle
+status of your notarization.
+
+00:35:35.936 --> 00:35:37.426 A:middle
+Here we see another command line
+
+00:35:37.426 --> 00:35:39.166 A:middle
+indication of altool to just
+
+00:35:39.166 --> 00:35:39.866 A:middle
+check the status of
+
+00:35:39.866 --> 00:35:40.506 A:middle
+notarization.
+
+00:35:40.586 --> 00:35:42.896 A:middle
+And then you can see here that
+
+00:35:42.896 --> 00:35:44.676 A:middle
+notarization was complete, was
+
+00:35:44.676 --> 00:35:45.266 A:middle
+successful.
+
+00:35:45.756 --> 00:35:47.316 A:middle
+And importantly, there is a log
+
+00:35:47.316 --> 00:35:48.726 A:middle
+file that comes back from the
+
+00:35:48.726 --> 00:35:49.806 A:middle
+notarization service.
+
+00:35:50.266 --> 00:35:51.536 A:middle
+This is a great place to check
+
+00:35:51.536 --> 00:35:54.136 A:middle
+for any warnings, or it tells
+
+00:35:54.136 --> 00:35:55.626 A:middle
+you exactly what was included in
+
+00:35:55.626 --> 00:35:56.646 A:middle
+your notarization ticket.
+
+00:35:56.936 --> 00:35:57.906 A:middle
+So you can make sure that
+
+00:35:57.906 --> 00:35:59.316 A:middle
+everything in your package was
+
+00:35:59.316 --> 00:36:00.196 A:middle
+notarized properly.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.346 --> 00:07:00.726 A:middle
+rate, the player's rate in
+
+00:07:00.726 --> 00:07:02.716 A:middle
+advance, you can use the AV
+
+00:07:02.716 --> 00:07:04.506 A:middle
+Player item status changing to
+
+00:07:04.506 --> 00:07:06.606 A:middle
+ready to play or the AV Player
+
+00:07:06.606 --> 00:07:08.536 A:middle
+item is playback likely to keep
+
+00:07:08.536 --> 00:07:09.516 A:middle
+out changing to true.
+
+00:07:09.516 --> 00:07:11.026 A:middle
+These are observable properties.
+
+00:07:12.176 --> 00:07:13.836 A:middle
+When that happens, you know that
+
+00:07:13.886 --> 00:07:15.876 A:middle
+playback is about to start, but
+
+00:07:15.876 --> 00:07:16.916 A:middle
+there might be a few
+
+00:07:17.076 --> 00:07:18.716 A:middle
+milliseconds before playback
+
+00:07:18.716 --> 00:07:19.616 A:middle
+actually starts.
+
+00:07:19.876 --> 00:07:21.346 A:middle
+So what we recommend is to
+
+00:07:21.346 --> 00:07:23.766 A:middle
+either use the AV Player time
+
+00:07:23.766 --> 00:07:25.056 A:middle
+control status changing to
+
+00:07:25.056 --> 00:07:26.836 A:middle
+playing or to track the player
+
+00:07:26.836 --> 00:07:28.376 A:middle
+item time base, and there's a
+
+00:07:28.376 --> 00:07:29.696 A:middle
+notification that allows you to
+
+00:07:29.696 --> 00:07:30.086 A:middle
+do that.
+
+00:07:30.596 --> 00:07:34.526 A:middle
+AV Player relies on heuristics
+
+00:07:34.526 --> 00:07:36.696 A:middle
+to avoid stalls, but we know it,
+
+00:07:36.696 --> 00:07:38.026 A:middle
+sometimes they're unavoidable.
+
+00:07:38.846 --> 00:07:40.946 A:middle
+You can monitor as stalls occur
+
+00:07:40.946 --> 00:07:42.556 A:middle
+by registering to the AV Player
+
+00:07:42.556 --> 00:07:43.946 A:middle
+item playback stall
+
+00:07:43.946 --> 00:07:44.736 A:middle
+notification.
+
+00:07:45.136 --> 00:07:46.816 A:middle
+The suggestion here is to count
+
+00:07:46.876 --> 00:07:48.126 A:middle
+the occurrence of stalls.
+
+00:07:48.736 --> 00:07:49.776 A:middle
+Of course, if you want to
+
+00:07:49.776 --> 00:07:52.346 A:middle
+compare and aggregate stall
+
+00:07:52.346 --> 00:07:54.466 A:middle
+behavior across sessions of
+
+00:07:54.466 --> 00:07:56.016 A:middle
+different duration, then you
+
+00:07:56.016 --> 00:07:57.096 A:middle
+need to normalize this.
+
+00:07:57.096 --> 00:07:57.826 A:middle
+How do you do that?
+
+00:07:58.296 --> 00:08:00.056 A:middle
+Well, we recommend that you use
+

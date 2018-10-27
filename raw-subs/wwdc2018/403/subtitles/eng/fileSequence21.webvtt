@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.956 --> 00:21:00.666 A:middle
+These clones are identical to
+
+00:21:00.666 --> 00:21:02.256 A:middle
+the original simulator at the
+
+00:21:02.256 --> 00:21:03.406 A:middle
+time that they're created.
+
+00:21:04.776 --> 00:21:06.286 A:middle
+And Xcode will automatically
+
+00:21:06.286 --> 00:21:07.906 A:middle
+create and delete these clones,
+
+00:21:07.906 --> 00:21:08.726 A:middle
+as necessary.
+
+00:21:10.036 --> 00:21:11.376 A:middle
+After cloning the simulator
+
+00:21:11.376 --> 00:21:13.306 A:middle
+several times, Xcode then
+
+00:21:13.306 --> 00:21:15.206 A:middle
+launches a test runner on each
+
+00:21:15.206 --> 00:21:16.956 A:middle
+clone and that runner then
+
+00:21:16.956 --> 00:21:18.986 A:middle
+begins executing a test class,
+
+00:21:19.446 --> 00:21:20.476 A:middle
+like we talked about earlier.
+
+00:21:20.476 --> 00:21:23.676 A:middle
+Now the fact that your tests
+
+00:21:24.356 --> 00:21:25.666 A:middle
+execute on different clones of
+
+00:21:25.666 --> 00:21:26.976 A:middle
+the simulator has some
+
+00:21:26.976 --> 00:21:28.266 A:middle
+implications that you should be
+
+00:21:28.266 --> 00:21:29.546 A:middle
+aware of.
+
+00:21:30.516 --> 00:21:33.466 A:middle
+First, the original simulator is
+
+00:21:33.466 --> 00:21:34.936 A:middle
+not used during testing.
+
+00:21:35.906 --> 00:21:37.416 A:middle
+Instead, it serves as a sort of
+
+00:21:37.416 --> 00:21:38.416 A:middle
+template simulator.
+
+00:21:39.176 --> 00:21:40.266 A:middle
+You can configure it with the
+
+00:21:40.266 --> 00:21:41.576 A:middle
+settings and the content that
+
+00:21:41.576 --> 00:21:43.576 A:middle
+you want and then that content
+
+00:21:43.576 --> 00:21:44.956 A:middle
+gets copied over to the clones
+
+00:21:44.956 --> 00:21:45.726 A:middle
+when they're created.
+
+00:21:46.266 --> 00:21:49.266 A:middle
+Next, there will be multiple
+
+00:21:49.266 --> 00:21:51.596 A:middle
+copies of your app, one per
+
+00:21:51.596 --> 00:21:54.216 A:middle
+clone, and each copy has its own
+
+00:21:54.216 --> 00:21:54.896 A:middle
+data container.
+
+00:21:56.056 --> 00:21:57.006 A:middle
+This means that if you have a
+
+00:21:57.006 --> 00:21:59.136 A:middle
+test class that modifies files
+
+00:21:59.136 --> 00:22:01.216 A:middle
+on disk, you can't expect those
+

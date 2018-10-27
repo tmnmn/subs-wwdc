@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.096 --> 00:28:00.676 A:middle
+For higher level code we've
+
+00:28:00.676 --> 00:28:03.076 A:middle
+added a random element method to
+
+00:28:03.076 --> 00:28:04.196 A:middle
+the collection protocol.
+
+00:28:04.786 --> 00:28:07.026 A:middle
+And just like min and max this
+
+00:28:07.026 --> 00:28:08.636 A:middle
+returns an optional so that if
+
+00:28:08.636 --> 00:28:10.376 A:middle
+you pass in an empty collection
+
+00:28:10.526 --> 00:28:11.506 A:middle
+you get back no.
+
+00:28:12.596 --> 00:28:14.326 A:middle
+And finally there's a shuffled
+
+00:28:14.326 --> 00:28:17.116 A:middle
+method on collection where this
+
+00:28:17.116 --> 00:28:18.926 A:middle
+gives you an array with a random
+
+00:28:18.926 --> 00:28:20.876 A:middle
+permutation of the elements of
+
+00:28:20.876 --> 00:28:21.616 A:middle
+that collection.
+
+00:28:22.146 --> 00:28:25.216 A:middle
+And we think the default Random
+
+00:28:25.216 --> 00:28:26.636 A:middle
+Number Generator is a good
+
+00:28:26.636 --> 00:28:27.996 A:middle
+choice for most apps.
+
+00:28:28.296 --> 00:28:29.816 A:middle
+But you can also implement your
+
+00:28:29.816 --> 00:28:29.883 A:middle
+own.
+
+00:28:30.676 --> 00:28:31.836 A:middle
+So there's a random number
+
+00:28:31.836 --> 00:28:34.206 A:middle
+generator protocol and once you
+
+00:28:34.206 --> 00:28:35.606 A:middle
+write a type that conforms to
+
+00:28:35.606 --> 00:28:37.826 A:middle
+this protocol you can pass it to
+
+00:28:37.826 --> 00:28:39.326 A:middle
+all these APIs that I talked
+
+00:28:39.326 --> 00:28:40.846 A:middle
+about which have an additional
+
+00:28:40.846 --> 00:28:43.416 A:middle
+overload with a using parameter
+
+00:28:43.576 --> 00:28:44.706 A:middle
+that takes a random number
+
+00:28:44.706 --> 00:28:45.236 A:middle
+generator.
+
+00:28:46.746 --> 00:28:49.456 A:middle
+OK, so we saw these build
+
+00:28:49.456 --> 00:28:51.446 A:middle
+configuration checks earlier.
+
+00:28:51.526 --> 00:28:54.346 A:middle
+Let's talk some more about them.
+
+00:28:54.566 --> 00:28:55.896 A:middle
+Well, this is a pretty common
+
+00:28:55.896 --> 00:28:56.806 A:middle
+pattern in Swift.
+
+00:28:57.026 --> 00:28:58.356 A:middle
+You have a little piece of Swift
+
+00:28:58.356 --> 00:29:00.796 A:middle
+code that is shared between iOS
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.746 --> 00:03:00.956 A:middle
+techniques tend to produce
+
+00:03:00.956 --> 00:03:02.346 A:middle
+uniformly soft shadows.
+
+00:03:03.286 --> 00:03:05.376 A:middle
+With the Ray Tracer we can
+
+00:03:05.376 --> 00:03:06.646 A:middle
+directly compute whether or not
+
+00:03:06.646 --> 00:03:08.306 A:middle
+a point if in shadow.
+
+00:03:08.856 --> 00:03:09.766 A:middle
+So, we can produce clean
+
+00:03:09.766 --> 00:03:11.756 A:middle
+shadows, including realistic
+
+00:03:11.756 --> 00:03:13.246 A:middle
+transitions from hard to soft
+
+00:03:13.246 --> 00:03:14.996 A:middle
+shadows as the distance between
+
+00:03:14.996 --> 00:03:15.946 A:middle
+objects increases.
+
+00:03:16.506 --> 00:03:19.546 A:middle
+One final example is global
+
+00:03:19.546 --> 00:03:20.736 A:middle
+elimination.
+
+00:03:22.216 --> 00:03:23.526 A:middle
+This simulates light bouncing of
+
+00:03:23.526 --> 00:03:24.806 A:middle
+off surfaces in the scene.
+
+00:03:25.606 --> 00:03:27.526 A:middle
+Global elimination can be very
+
+00:03:27.526 --> 00:03:28.586 A:middle
+difficult to model with the
+
+00:03:28.586 --> 00:03:29.256 A:middle
+rasterizer.
+
+00:03:29.536 --> 00:03:30.946 A:middle
+But it's actually modeled quite
+
+00:03:30.946 --> 00:03:32.306 A:middle
+naturally with the Ray Tracer.
+
+00:03:33.026 --> 00:03:34.716 A:middle
+In fact, many games and real
+
+00:03:34.716 --> 00:03:36.146 A:middle
+time applications that include a
+
+00:03:36.146 --> 00:03:37.566 A:middle
+global elimination component,
+
+00:03:38.026 --> 00:03:39.596 A:middle
+actually, precompute it using a
+
+00:03:39.596 --> 00:03:41.446 A:middle
+Ray Tracer and store the result
+
+00:03:41.446 --> 00:03:42.306 A:middle
+into textures.
+
+00:03:42.606 --> 00:03:43.816 A:middle
+Which are then mapped back onto
+
+00:03:43.856 --> 00:03:45.076 A:middle
+the geometry at run time.
+
+00:03:45.656 --> 00:03:48.746 A:middle
+Of course, there are many other
+
+00:03:48.746 --> 00:03:49.796 A:middle
+effects that we can simulate
+
+00:03:49.796 --> 00:03:51.216 A:middle
+with the Ray Tracer, such as
+
+00:03:51.216 --> 00:03:53.176 A:middle
+ambient occlusion, refraction,
+
+00:03:53.316 --> 00:03:54.576 A:middle
+and area light sources.
+
+00:03:54.956 --> 00:03:56.576 A:middle
+As well as camera effects, such
+
+00:03:56.576 --> 00:03:57.836 A:middle
+as depth of field and motion
+
+00:03:57.836 --> 00:03:58.076 A:middle
+blur.
+
+00:03:59.606 --> 00:04:00.616 A:middle
+This makes Ray Tracing the
+

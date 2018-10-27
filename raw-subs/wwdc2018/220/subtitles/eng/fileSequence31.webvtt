@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.516 --> 00:31:01.156 A:middle
+So here you can use, you know,
+
+00:31:01.156 --> 00:31:03.366 A:middle
+this neat little feature called
+
+00:31:03.566 --> 00:31:04.816 A:middle
+setHidden, maybe you've heard of
+
+00:31:05.456 --> 00:31:05.536 A:middle
+it.
+
+00:31:05.656 --> 00:31:07.936 A:middle
+And because it's not affecting
+
+00:31:07.936 --> 00:31:09.686 A:middle
+any of the views around it, it's
+
+00:31:09.686 --> 00:31:10.626 A:middle
+just going to disappear, it's
+
+00:31:10.626 --> 00:31:11.866 A:middle
+constraints stay in place and
+
+00:31:11.866 --> 00:31:13.656 A:middle
+this is a very, very, very cheap
+
+00:31:14.136 --> 00:31:15.846 A:middle
+way to hide and show views,
+
+00:31:16.416 --> 00:31:17.476 A:middle
+rather than removing them from
+
+00:31:17.476 --> 00:31:18.036 A:middle
+the hierarchy.
+
+00:31:18.986 --> 00:31:19.736 A:middle
+So that's fine.
+
+00:31:20.246 --> 00:31:21.156 A:middle
+But this is a really simple
+
+00:31:21.156 --> 00:31:21.556 A:middle
+example.
+
+00:31:21.556 --> 00:31:22.546 A:middle
+What about the image view?
+
+00:31:23.016 --> 00:31:24.606 A:middle
+All right, so for the image
+
+00:31:24.606 --> 00:31:25.806 A:middle
+view, again we might we might
+
+00:31:25.806 --> 00:31:26.686 A:middle
+want to try removing all
+
+00:31:26.686 --> 00:31:28.176 A:middle
+constraints and then adding back
+
+00:31:28.626 --> 00:31:30.206 A:middle
+the ones we already had plus the
+
+00:31:30.206 --> 00:31:30.896 A:middle
+image view ones.
+
+00:31:31.816 --> 00:31:33.526 A:middle
+And again, everything is landing
+
+00:31:33.526 --> 00:31:34.446 A:middle
+in the same place so we're
+
+00:31:34.446 --> 00:31:35.356 A:middle
+experiencing churn.
+
+00:31:36.566 --> 00:31:37.776 A:middle
+Well, in a situation like this
+
+00:31:38.156 --> 00:31:39.326 A:middle
+how I want you to think about it
+
+00:31:39.326 --> 00:31:40.696 A:middle
+is to look at groups of
+
+00:31:40.696 --> 00:31:41.176 A:middle
+constraints.
+
+00:31:41.896 --> 00:31:43.446 A:middle
+So let's start with this group
+
+00:31:43.446 --> 00:31:44.366 A:middle
+that I'm highlighting here in
+
+00:31:44.366 --> 00:31:44.716 A:middle
+green.
+
+00:31:45.756 --> 00:31:48.256 A:middle
+These constraints stay the same
+
+00:31:48.446 --> 00:31:49.476 A:middle
+in every one of our layouts.
+
+00:31:50.466 --> 00:31:51.386 A:middle
+Once we're doing the hide and
+
+00:31:51.386 --> 00:31:53.286 A:middle
+show on the sharing view that
+
+00:31:53.286 --> 00:31:54.196 A:middle
+doesn't need to change, the
+
+00:31:54.196 --> 00:31:56.356 A:middle
+avatar view never moves, and the
+
+00:31:56.356 --> 00:31:59.006 A:middle
+labels never move other than the
+
+00:31:59.006 --> 00:32:00.346 A:middle
+log entry label being able to
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.656 --> 00:18:01.986 A:middle
+Well, if you imagine a rectangle
+
+00:18:01.986 --> 00:18:03.546 A:middle
+that encompassed all the content
+
+00:18:03.546 --> 00:18:04.646 A:middle
+that the layout is going to
+
+00:18:04.646 --> 00:18:06.196 A:middle
+define for your CollectionView,
+
+00:18:06.626 --> 00:18:09.406 A:middle
+we want the size of that.
+
+00:18:09.406 --> 00:18:11.596 A:middle
+Okay, so that's CollectionView
+
+00:18:11.596 --> 00:18:12.436 A:middle
+Content Size.
+
+00:18:13.556 --> 00:18:15.326 A:middle
+Next up we have two methods that
+
+00:18:15.326 --> 00:18:17.176 A:middle
+are in the business of providing
+
+00:18:17.176 --> 00:18:18.246 A:middle
+layout attributes.
+
+00:18:19.376 --> 00:18:20.516 A:middle
+The first one is
+
+00:18:20.516 --> 00:18:21.826 A:middle
+LayoutAttributesForElements (in
+
+00:18:21.826 --> 00:18:22.116 A:middle
+Rect).
+
+00:18:23.186 --> 00:18:24.606 A:middle
+Now this is called periodically
+
+00:18:24.606 --> 00:18:25.996 A:middle
+by CollectionView when it needs
+
+00:18:25.996 --> 00:18:26.856 A:middle
+to know what is needed to
+
+00:18:26.856 --> 00:18:28.336 A:middle
+display on screen as the user
+
+00:18:28.336 --> 00:18:29.696 A:middle
+scrolls through your content or
+
+00:18:29.696 --> 00:18:30.916 A:middle
+displays for the first time.
+
+00:18:31.906 --> 00:18:33.516 A:middle
+So this query is by a geometric
+
+00:18:33.516 --> 00:18:33.966 A:middle
+region.
+
+00:18:35.686 --> 00:18:38.166 A:middle
+Okay. It's companion API,
+
+00:18:38.276 --> 00:18:39.596 A:middle
+LayoutAttributesForItem
+
+00:18:39.596 --> 00:18:42.046 A:middle
+AtIndexPath, as you can imagine,
+
+00:18:42.046 --> 00:18:43.096 A:middle
+it's just looking for a single
+
+00:18:43.096 --> 00:18:43.366 A:middle
+item.
+
+00:18:43.496 --> 00:18:44.876 A:middle
+Give me the attributes for that.
+
+00:18:45.876 --> 00:18:47.416 A:middle
+Okay, so we're going to see more
+
+00:18:47.416 --> 00:18:48.446 A:middle
+when Mohammed walks us through
+
+00:18:48.446 --> 00:18:50.116 A:middle
+this, but for these two APIs,
+
+00:18:50.116 --> 00:18:51.326 A:middle
+it's important to note that
+
+00:18:51.326 --> 00:18:52.936 A:middle
+performance matters.
+
+00:18:57.136 --> 00:18:58.956 A:middle
+Okay, so the fourth of our four
+
+00:18:59.136 --> 00:19:01.906 A:middle
+core custom layout subclass
+

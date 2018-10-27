@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.056 --> 00:09:01.556 A:middle
+Rendering to drawable V takes
+
+00:09:01.556 --> 00:09:03.506 A:middle
+longer than one display refresh
+
+00:09:03.506 --> 00:09:05.026 A:middle
+interval, which is the time
+
+00:09:05.026 --> 00:09:05.926 A:middle
+between vsyncs.
+
+00:09:06.396 --> 00:09:09.236 A:middle
+In this case, could be 25
+
+00:09:09.236 --> 00:09:11.096 A:middle
+millisecond to render to V and
+
+00:09:11.096 --> 00:09:13.036 A:middle
+16.6 millisecond in between
+
+00:09:13.036 --> 00:09:14.216 A:middle
+display refresh intervals.
+
+00:09:15.936 --> 00:09:18.546 A:middle
+So since that is the premise,
+
+00:09:18.596 --> 00:09:20.976 A:middle
+this means that we will need to
+
+00:09:20.976 --> 00:09:22.376 A:middle
+[inaudible] on the display for
+
+00:09:22.376 --> 00:09:24.426 A:middle
+the next interval to give time
+
+00:09:24.526 --> 00:09:25.606 A:middle
+so we can finish.
+
+00:09:26.826 --> 00:09:27.766 A:middle
+And we will do so.
+
+00:09:27.996 --> 00:09:29.496 A:middle
+And that during that interval,
+
+00:09:29.876 --> 00:09:31.856 A:middle
+we will actually B, B will
+
+00:09:31.856 --> 00:09:32.816 A:middle
+actually finish.
+
+00:09:33.676 --> 00:09:35.046 A:middle
+And we will be ready to present
+
+00:09:35.046 --> 00:09:37.896 A:middle
+it but notice that we have just
+
+00:09:37.956 --> 00:09:38.996 A:middle
+hid the issue here.
+
+00:09:39.726 --> 00:09:41.456 A:middle
+During this interval, we have
+
+00:09:41.456 --> 00:09:43.046 A:middle
+also finished rendering to C.
+
+00:09:43.746 --> 00:09:44.856 A:middle
+And we are ready to present it
+
+00:09:44.856 --> 00:09:45.406 A:middle
+right away.
+
+00:09:46.686 --> 00:09:47.736 A:middle
+So we will [inaudible] an
+
+00:09:47.856 --> 00:09:50.066 A:middle
+inconsistent frame pacing from
+
+00:09:50.066 --> 00:09:50.996 A:middle
+that moment onward.
+
+00:09:51.696 --> 00:09:52.996 A:middle
+We are stuck in this pattern.
+
+00:09:53.556 --> 00:09:54.856 A:middle
+Every other frame will be
+
+00:09:54.856 --> 00:09:55.596 A:middle
+inconsistent.
+
+00:09:56.386 --> 00:09:57.876 A:middle
+And the user will see micro
+
+00:09:57.876 --> 00:09:58.446 A:middle
+stuttering.
+

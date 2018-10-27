@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.466 --> 00:30:01.966 A:middle
+So, the GPU at the top there, is
+
+00:30:01.966 --> 00:30:02.786 A:middle
+going to do some rendering.
+
+00:30:03.416 --> 00:30:05.046 A:middle
+And when it's finished, it'll
+
+00:30:05.046 --> 00:30:06.616 A:middle
+Blit its completed region into
+
+00:30:06.616 --> 00:30:07.546 A:middle
+the shared buffers that we were
+
+00:30:07.546 --> 00:30:08.826 A:middle
+just talking about.
+
+00:30:09.626 --> 00:30:12.486 A:middle
+Now, while that's going on GPU B
+
+00:30:12.486 --> 00:30:13.626 A:middle
+is, also, doing some rendering.
+
+00:30:15.096 --> 00:30:16.326 A:middle
+Now, this is the GPU that we're
+
+00:30:16.326 --> 00:30:17.476 A:middle
+going to use for composition.
+
+00:30:18.146 --> 00:30:19.716 A:middle
+So, at some point it's going to
+
+00:30:19.716 --> 00:30:20.866 A:middle
+need the buffer that was
+
+00:30:20.866 --> 00:30:21.886 A:middle
+produced by GPU A.
+
+00:30:21.886 --> 00:30:23.876 A:middle
+Now, we can see here that we
+
+00:30:23.876 --> 00:30:24.676 A:middle
+have a problem.
+
+00:30:25.466 --> 00:30:27.396 A:middle
+There's no synchronization in
+
+00:30:27.396 --> 00:30:28.036 A:middle
+this area, here.
+
+00:30:28.306 --> 00:30:30.196 A:middle
+So, there's nothing to prevent
+
+00:30:30.196 --> 00:30:31.616 A:middle
+GPU B from trying to read the
+
+00:30:31.676 --> 00:30:33.496 A:middle
+buffer before GPU A has finished
+
+00:30:33.496 --> 00:30:34.006 A:middle
+writing to it.
+
+00:30:35.696 --> 00:30:37.046 A:middle
+Now, to deal with this we can
+
+00:30:37.046 --> 00:30:37.846 A:middle
+use METAL Events.
+
+00:30:39.116 --> 00:30:40.426 A:middle
+With METAL Events, we'll insert
+
+00:30:40.506 --> 00:30:41.956 A:middle
+a wait into the command buffer.
+
+00:30:43.066 --> 00:30:44.576 A:middle
+So, while the GPU is executing,
+
+00:30:44.646 --> 00:30:46.116 A:middle
+it'll reach the wait, and then
+
+00:30:46.116 --> 00:30:47.186 A:middle
+it's just going to stop.
+
+00:30:47.186 --> 00:30:50.096 A:middle
+And what it's waiting for is a
+
+00:30:50.096 --> 00:30:51.526 A:middle
+signal from the other GPU.
+
+00:30:51.976 --> 00:30:55.516 A:middle
+Once that signal is received we
+
+00:30:55.516 --> 00:30:56.936 A:middle
+know that GPU A has finished
+
+00:30:56.936 --> 00:30:58.376 A:middle
+writing to the buffer and it's
+
+00:30:58.376 --> 00:31:00.766 A:middle
+now safe for GPU B to access it.
+

@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.546 --> 00:28:02.016 A:middle
+In fact, this application can
+
+00:28:02.016 --> 00:28:04.116 A:middle
+even put you in space where
+
+00:28:04.116 --> 00:28:05.876 A:middle
+nobody can hear you stream.
+
+00:28:11.516 --> 00:28:15.616 A:middle
+[ Applause ]
+
+00:28:16.116 --> 00:28:19.036 A:middle
+So how do we create that?
+
+00:28:19.256 --> 00:28:21.586 A:middle
+Anytime we're dealing with a
+
+00:28:21.586 --> 00:28:23.706 A:middle
+video application there's other
+
+00:28:23.706 --> 00:28:25.476 A:middle
+things that are going on a per
+
+00:28:25.476 --> 00:28:28.456 A:middle
+frame basis, in this case we
+
+00:28:28.456 --> 00:28:31.696 A:middle
+have to detect a face, create a
+
+00:28:31.696 --> 00:28:33.316 A:middle
+brand-new mask from the depth
+
+00:28:33.316 --> 00:28:36.056 A:middle
+map, smooth and upscale it to
+
+00:28:36.056 --> 00:28:37.286 A:middle
+the RGB resolution.
+
+00:28:37.736 --> 00:28:39.246 A:middle
+And then we take this foreground
+
+00:28:39.246 --> 00:28:41.536 A:middle
+mask and upscale it again to the
+
+00:28:41.536 --> 00:28:42.636 A:middle
+low-light background image.
+
+00:28:43.446 --> 00:28:44.616 A:middle
+And then we can blend or
+
+00:28:44.646 --> 00:28:46.876 A:middle
+[inaudible] them, but there's
+
+00:28:46.876 --> 00:28:49.336 A:middle
+something we can do to reduce
+
+00:28:49.416 --> 00:28:50.416 A:middle
+some of the complexity.
+
+00:28:51.976 --> 00:28:54.466 A:middle
+If anytime we load a background
+
+00:28:54.466 --> 00:28:56.306 A:middle
+image we resize it to the RGB
+
+00:28:56.306 --> 00:28:57.756 A:middle
+resolution just once not
+
+00:28:57.756 --> 00:28:59.556 A:middle
+per-frame, then we don't need
+
+00:28:59.556 --> 00:29:01.446 A:middle
+that second upscale and the
+

@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:55.362 --> 00:20:01.635 align:start position:21% line:-2
+大容量メモリのアプリケーションの
+処理を手軽にしてくれます
+
+00:20:02.970 --> 00:20:06.540 align:start position:25% line:-2
+しかし
+予期せぬクラッシュも起きます
+
+00:20:07.040 --> 00:20:09.543 align:start position:29% line:-1
+全く想定できないでしょう
+
+00:20:09.643 --> 00:20:14.848 align:start position:18% line:-2
+autoreleasingの修飾子で
+明示していないからです
+
+00:20:15.015 --> 00:20:18.719 align:start position:18% line:-1
+今回 妥当性関数にoutパラメータの
+
+00:20:18.952 --> 00:20:21.989 align:start position:21% line:-1
+NSErrorを組み込んでいます
+
+00:20:22.256 --> 00:20:27.728 align:start position:25% line:-2
+outパラメータは
+ARCにより自動解放されます
+
+00:20:28.028 --> 00:20:33.066 align:start position:25% line:-2
+今回 自動解放プールに
+outパラメータを登録します
+
+00:20:35.269 --> 00:20:39.439 align:start position:32% line:-2
+関数が終了した後
+エラー変数の値が解放
+
+00:20:39.807 --> 00:20:43.744 align:start position:30% line:-2
+呼び出し元が
+値を読み込もうとすると
+
+00:20:43.844 --> 00:20:47.181 align:start position:9% line:-1
+use-after-freeでクラッシュします
+
+00:20:50.818 --> 00:20:53.821 align:start position:25% line:-1
+先ほどは検出困難な例でしたが
+
+00:20:53.954 --> 00:21:00.394 align:start position:21% line:-2
+自動解放プールの管理を
+少しでも怠るとより難しくなります
+

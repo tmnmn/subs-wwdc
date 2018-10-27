@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.506 --> 00:38:00.836 A:middle
+So, this automatically protects
+
+00:38:00.836 --> 00:38:02.596 A:middle
+the cookies against speculative
+
+00:38:02.596 --> 00:38:03.486 A:middle
+execution attacks.
+
+00:38:04.866 --> 00:38:06.406 A:middle
+SameSite cookies.
+
+00:38:06.576 --> 00:38:07.786 A:middle
+This is basically giving your
+
+00:38:07.786 --> 00:38:09.646 A:middle
+server control of the embedded
+
+00:38:09.696 --> 00:38:10.176 A:middle
+case.
+
+00:38:10.556 --> 00:38:12.306 A:middle
+Again, evil.example has decide
+
+00:38:12.306 --> 00:38:14.006 A:middle
+to try to pull off a speculative
+
+00:38:14.046 --> 00:38:15.266 A:middle
+execution attack against your
+
+00:38:15.266 --> 00:38:15.756 A:middle
+content.
+
+00:38:16.656 --> 00:38:17.936 A:middle
+Loaded an iframe with your
+
+00:38:17.936 --> 00:38:20.306 A:middle
+content, but the SameSite cookie
+
+00:38:20.306 --> 00:38:22.446 A:middle
+doesn't get sent, so your server
+
+00:38:22.446 --> 00:38:23.556 A:middle
+will know that, hey, I'm being
+
+00:38:23.556 --> 00:38:24.966 A:middle
+embedded here.
+
+00:38:24.966 --> 00:38:25.856 A:middle
+I'm not going to allow this.
+
+00:38:25.886 --> 00:38:27.696 A:middle
+So, you're going to deny this
+
+00:38:27.696 --> 00:38:28.706 A:middle
+whole resource load.
+
+00:38:29.196 --> 00:38:29.896 A:middle
+Server side.
+
+00:38:31.396 --> 00:38:33.016 A:middle
+And that way not end up in
+
+00:38:33.016 --> 00:38:34.796 A:middle
+evil.example's process.
+
+00:38:35.656 --> 00:38:37.786 A:middle
+Finally, to fight these attacks,
+
+00:38:38.016 --> 00:38:40.516 A:middle
+cross-origin resource policy.
+
+00:38:41.446 --> 00:38:42.806 A:middle
+Now, this was the new header I
+
+00:38:42.806 --> 00:38:44.026 A:middle
+told you about where you can
+
+00:38:44.316 --> 00:38:46.476 A:middle
+tell the web browser engine
+
+00:38:46.476 --> 00:38:48.626 A:middle
+that, hey, images, scripts, and
+
+00:38:48.626 --> 00:38:49.786 A:middle
+other things from my server,
+
+00:38:50.226 --> 00:38:51.736 A:middle
+only I get to load them.
+
+00:38:52.276 --> 00:38:53.576 A:middle
+So, if you say-- send this
+
+00:38:53.576 --> 00:38:55.226 A:middle
+header for your images and your
+
+00:38:55.226 --> 00:38:57.446 A:middle
+scripts on your server, we will
+
+00:38:57.446 --> 00:38:59.116 A:middle
+make sure to block them from
+
+00:38:59.116 --> 00:39:01.716 A:middle
+being loaded by evil.example and
+

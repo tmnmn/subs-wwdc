@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.266 --> 00:02:00.036 A:middle
+password manager.
+
+00:02:00.876 --> 00:02:02.146 A:middle
+This UI is provided by an
+
+00:02:02.146 --> 00:02:03.296 A:middle
+extension bundled with the
+
+00:02:03.296 --> 00:02:04.146 A:middle
+password manager app.
+
+00:02:04.146 --> 00:02:06.656 A:middle
+When a credential is selected,
+
+00:02:06.976 --> 00:02:07.986 A:middle
+the extension hands it back to
+
+00:02:07.986 --> 00:02:10.515 A:middle
+AutoFill, and the username and
+
+00:02:10.515 --> 00:02:11.686 A:middle
+password are filled in the app.
+
+00:02:12.326 --> 00:02:15.126 A:middle
+Of course, this also works with
+
+00:02:15.126 --> 00:02:16.356 A:middle
+the QuickType bar suggestions as
+
+00:02:16.356 --> 00:02:16.626 A:middle
+well.
+
+00:02:17.186 --> 00:02:18.386 A:middle
+AutoFill can now surface the
+
+00:02:18.386 --> 00:02:19.796 A:middle
+best credentials as defined by
+
+00:02:19.796 --> 00:02:21.396 A:middle
+the app, so they're accessible
+
+00:02:21.646 --> 00:02:22.416 A:middle
+with just one tap.
+
+00:02:23.956 --> 00:02:25.486 A:middle
+When using these credentials,
+
+00:02:25.606 --> 00:02:27.016 A:middle
+the app extension can optionally
+
+00:02:27.016 --> 00:02:28.596 A:middle
+show its own UI to authenticate
+
+00:02:28.596 --> 00:02:29.666 A:middle
+the user before filling the
+
+00:02:29.666 --> 00:02:30.106 A:middle
+credential.
+
+00:02:33.116 --> 00:02:34.796 A:middle
+This integration makes logging
+
+00:02:34.796 --> 00:02:36.506 A:middle
+into apps even easier for users
+
+00:02:36.506 --> 00:02:38.076 A:middle
+of password manager apps, as
+
+00:02:38.076 --> 00:02:39.066 A:middle
+they no longer need to switch
+
+00:02:39.066 --> 00:02:40.436 A:middle
+apps to copy their credentials.
+
+00:02:41.846 --> 00:02:43.216 A:middle
+It also makes Password AutoFill
+
+00:02:43.216 --> 00:02:44.426 A:middle
+available in more apps.
+
+00:02:44.836 --> 00:02:46.346 A:middle
+Any app that supports AutoFill
+
+00:02:46.346 --> 00:02:47.826 A:middle
+from iCloud Keychain will now
+
+00:02:47.826 --> 00:02:49.336 A:middle
+work with Password Manager apps,
+
+00:02:49.336 --> 00:02:50.346 A:middle
+without any additional work.
+
+00:02:50.826 --> 00:02:54.726 A:middle
+With that overview, let's dive
+
+00:02:54.726 --> 00:02:55.926 A:middle
+into how you can implement these
+
+00:02:55.926 --> 00:02:57.336 A:middle
+capabilities in your password
+
+00:02:57.336 --> 00:02:57.926 A:middle
+manager app.
+
+00:02:58.576 --> 00:02:59.666 A:middle
+There are four main steps I'll
+
+00:02:59.666 --> 00:02:59.946 A:middle
+cover.
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.496 --> 00:04:00.286 A:middle
+you unless your tests happen to
+
+00:04:00.286 --> 00:04:02.716 A:middle
+exercise it.
+
+00:04:02.946 --> 00:04:04.416 A:middle
+But if we're lucky enough to
+
+00:04:04.416 --> 00:04:06.496 A:middle
+notice it, we press ahead and we
+
+00:04:06.496 --> 00:04:08.826 A:middle
+fix the implementation again by
+
+00:04:08.826 --> 00:04:10.026 A:middle
+guarding the increment in an
+
+00:04:10.026 --> 00:04:10.586 A:middle
+else block.
+
+00:04:11.226 --> 00:04:13.596 A:middle
+So, are we done now?
+
+00:04:13.596 --> 00:04:16.476 A:middle
+Are we sure this one is correct?
+
+00:04:17.706 --> 00:04:19.906 A:middle
+I think I can prove to myself
+
+00:04:19.995 --> 00:04:20.755 A:middle
+that it works.
+
+00:04:21.875 --> 00:04:24.106 A:middle
+Anyway, having gone through this
+
+00:04:24.106 --> 00:04:25.356 A:middle
+ordeal, what do we do?
+
+00:04:25.746 --> 00:04:27.336 A:middle
+Well, of course, we lock this
+
+00:04:27.336 --> 00:04:28.696 A:middle
+nine-line pattern into our
+
+00:04:28.696 --> 00:04:30.506 A:middle
+brains so we can trot it out
+
+00:04:30.506 --> 00:04:32.056 A:middle
+whenever we have to delete
+
+00:04:32.056 --> 00:04:32.456 A:middle
+something.
+
+00:04:33.026 --> 00:04:35.666 A:middle
+Now, I'm sure many of you have
+
+00:04:35.666 --> 00:04:36.676 A:middle
+been holding yourselves back
+
+00:04:36.676 --> 00:04:38.566 A:middle
+from screaming at me because
+
+00:04:38.656 --> 00:04:40.506 A:middle
+that there's a much more elegant
+
+00:04:40.506 --> 00:04:41.906 A:middle
+way to do it.
+
+00:04:41.906 --> 00:04:43.206 A:middle
+I still remember the day I
+
+00:04:43.206 --> 00:04:44.686 A:middle
+discovered this trick for myself
+
+00:04:45.106 --> 00:04:46.666 A:middle
+because once you find it, you
+
+00:04:46.666 --> 00:04:48.126 A:middle
+never do this nine-line dance
+
+00:04:48.126 --> 00:04:48.456 A:middle
+again.
+
+00:04:49.406 --> 00:04:51.496 A:middle
+The iteration limit and the
+
+00:04:51.556 --> 00:04:52.786 A:middle
+index of the next item to
+
+00:04:52.786 --> 00:04:54.956 A:middle
+examine kept shifting under our
+
+00:04:54.956 --> 00:04:56.866 A:middle
+feet because remove(at: i)
+
+00:04:57.746 --> 00:04:59.426 A:middle
+changes parts of the array after
+
+00:04:59.426 --> 00:04:59.696 A:middle
+i.
+

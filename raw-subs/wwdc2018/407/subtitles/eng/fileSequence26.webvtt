@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.496 --> 00:26:00.956 A:middle
+going to go into the trace, and
+
+00:26:00.956 --> 00:26:02.406 A:middle
+find something so obvious and
+
+00:26:02.406 --> 00:26:03.996 A:middle
+easy to fix, that is responsible
+
+00:26:03.996 --> 00:26:05.156 A:middle
+for 50% of the sample.
+
+00:26:05.916 --> 00:26:08.456 A:middle
+Right? In fact, there is not
+
+00:26:08.456 --> 00:26:09.896 A:middle
+going to be any other huge lead
+
+00:26:09.896 --> 00:26:10.806 A:middle
+sitting there waiting for me.
+
+00:26:11.686 --> 00:26:12.746 A:middle
+Instead, what I'm going to need
+
+00:26:12.746 --> 00:26:14.626 A:middle
+to do is go through that whole
+
+00:26:14.626 --> 00:26:15.656 A:middle
+sample, with those course
+
+00:26:15.656 --> 00:26:17.616 A:middle
+filters applied, so I'm only
+
+00:26:17.616 --> 00:26:18.696 A:middle
+looking at operations that take
+
+00:26:18.696 --> 00:26:20.286 A:middle
+about 1% of the time or more,
+
+00:26:20.286 --> 00:26:21.816 A:middle
+and I'm going to look for every
+
+00:26:21.816 --> 00:26:23.436 A:middle
+single thing that I see that I
+
+00:26:23.436 --> 00:26:24.836 A:middle
+think I can come up with some
+
+00:26:24.836 --> 00:26:25.986 A:middle
+mechanism for making a little
+
+00:26:25.986 --> 00:26:26.536 A:middle
+bit faster.
+
+00:26:28.056 --> 00:26:29.016 A:middle
+I'm going to note them all down
+
+00:26:29.016 --> 00:26:30.496 A:middle
+on a piece of paper or in a text
+
+00:26:30.496 --> 00:26:32.216 A:middle
+document or something, and then
+
+00:26:32.216 --> 00:26:33.436 A:middle
+I'm going to start solving them.
+
+00:26:33.746 --> 00:26:34.736 A:middle
+Now, I need to pick an order to
+
+00:26:34.736 --> 00:26:35.656 A:middle
+solve them in, right?
+
+00:26:35.656 --> 00:26:37.326 A:middle
+Because sometimes the fifth
+
+00:26:37.326 --> 00:26:38.716 A:middle
+thing on the list, fixing it
+
+00:26:38.716 --> 00:26:40.016 A:middle
+with an obsolete, whatever fix
+
+00:26:40.016 --> 00:26:40.816 A:middle
+you would do for the second
+
+00:26:40.816 --> 00:26:42.516 A:middle
+thing on the list, and it feels
+
+00:26:42.516 --> 00:26:43.646 A:middle
+bad to do them in the wrong
+
+00:26:43.646 --> 00:26:44.516 A:middle
+order, such that you did
+
+00:26:44.516 --> 00:26:45.536 A:middle
+redundant work, because that's
+
+00:26:45.586 --> 00:26:46.456 A:middle
+the whole thing we're trying to
+
+00:26:46.456 --> 00:26:47.506 A:middle
+remove in the first place, is
+
+00:26:47.506 --> 00:26:48.116 A:middle
+redundant work.
+
+00:26:48.746 --> 00:26:50.476 A:middle
+But it's very hard to predict
+
+00:26:50.476 --> 00:26:51.376 A:middle
+how these things are all going
+
+00:26:51.376 --> 00:26:51.826 A:middle
+to play out.
+
+00:26:52.066 --> 00:26:53.316 A:middle
+And you often can't know until
+
+00:26:53.316 --> 00:26:54.316 A:middle
+you've already done the work.
+
+00:26:54.746 --> 00:26:57.746 A:middle
+So do not let this stop you from
+
+00:26:57.746 --> 00:26:59.446 A:middle
+getting started, because you're
+
+00:26:59.446 --> 00:27:00.956 A:middle
+going to get your second 30%
+

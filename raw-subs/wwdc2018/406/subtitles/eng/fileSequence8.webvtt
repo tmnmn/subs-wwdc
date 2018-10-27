@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.456 --> 00:08:01.226 A:middle
+So we've been talking about this
+
+00:08:01.226 --> 00:08:03.366 A:middle
+buffer type, and we can make it
+
+00:08:03.366 --> 00:08:04.336 A:middle
+generic across different
+
+00:08:04.336 --> 00:08:04.856 A:middle
+elements.
+
+00:08:04.856 --> 00:08:06.176 A:middle
+But what about writing generic
+
+00:08:06.176 --> 00:08:07.936 A:middle
+code that's generic in a
+
+00:08:07.936 --> 00:08:08.596 A:middle
+different direction?
+
+00:08:09.156 --> 00:08:10.356 A:middle
+Or writing code that works on
+
+00:08:10.356 --> 00:08:11.236 A:middle
+any different kind of
+
+00:08:11.236 --> 00:08:11.716 A:middle
+collection?
+
+00:08:13.236 --> 00:08:14.946 A:middle
+Such as an array that's very
+
+00:08:14.946 --> 00:08:16.136 A:middle
+similar to our buffer type.
+
+00:08:16.886 --> 00:08:18.766 A:middle
+But also more varied types, like
+
+00:08:18.906 --> 00:08:20.506 A:middle
+a dictionary that's a collection
+
+00:08:20.506 --> 00:08:23.226 A:middle
+of key value pairs.
+
+00:08:23.226 --> 00:08:24.806 A:middle
+Or maybe types that aren't
+
+00:08:24.806 --> 00:08:25.766 A:middle
+generic or are the different
+
+00:08:25.766 --> 00:08:27.656 A:middle
+element types, like data or
+
+00:08:27.656 --> 00:08:29.086 A:middle
+string that returns specific
+
+00:08:29.086 --> 00:08:29.746 A:middle
+element types.
+
+00:08:30.286 --> 00:08:33.256 A:middle
+We want to create a protocol
+
+00:08:33.256 --> 00:08:34.876 A:middle
+that captures all of their
+
+00:08:34.876 --> 00:08:36.025 A:middle
+common capabilities.
+
+00:08:36.635 --> 00:08:38.466 A:middle
+We're going to create a, a cut
+
+00:08:38.525 --> 00:08:40.236 A:middle
+down, simplified version of the
+
+00:08:40.236 --> 00:08:41.236 A:middle
+standard library's own
+
+00:08:41.236 --> 00:08:41.976 A:middle
+collection protocol.
+
+00:08:45.126 --> 00:08:46.926 A:middle
+So notice that we considered a
+
+00:08:46.926 --> 00:08:49.266 A:middle
+varied number of concrete types
+
+00:08:49.266 --> 00:08:49.906 A:middle
+first.
+
+00:08:49.906 --> 00:08:51.806 A:middle
+And now, we're thinking about a
+
+00:08:51.806 --> 00:08:53.546 A:middle
+kind of protocol that could join
+
+00:08:53.546 --> 00:08:54.076 A:middle
+them all together.
+
+00:08:54.196 --> 00:08:55.656 A:middle
+And, it's important to think of
+
+00:08:55.656 --> 00:08:56.966 A:middle
+things as this way around.
+
+00:08:57.226 --> 00:08:58.726 A:middle
+To start with some concrete
+
+00:08:58.726 --> 00:09:00.566 A:middle
+types, and then try and unify
+

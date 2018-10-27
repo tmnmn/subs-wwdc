@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:56.770 --> 00:19:01.241 align:start position:30% line:-2
+こうしたケースでは
+２つの対処法があります
+
+00:19:01.341 --> 00:19:06.547 align:start position:23% line:-2
+１つはimg要素に
+decoding属性を追加する
+
+00:19:06.647 --> 00:19:09.583 align:start position:12% line:-1
+もう１つはJavaScript APIの―
+
+00:19:09.683 --> 00:19:14.154 align:start position:9% line:-2
+HTMLImageElement.decode
+メソッドを使います
+
+00:19:14.254 --> 00:19:17.624 align:start position:25% line:-1
+これがpromiseを返し―
+
+00:19:17.724 --> 00:19:21.228 align:start position:27% line:-2
+DOMへの追加タイミングを
+知らせます
+
+00:19:22.496 --> 00:19:25.399 align:start position:25% line:-1
+そして非同期呼び出しの継続は
+
+00:19:25.499 --> 00:19:28.035 align:start position:18% line:-1
+Beacon APIをサポートします
+
+00:19:28.168 --> 00:19:34.274 align:start position:25% line:-2
+通常はunloadイベントに
+データを送ろうとした場合―
+
+00:19:34.374 --> 00:19:37.611 align:start position:23% line:-1
+非同期リクエストは無視されます
+
+00:19:37.711 --> 00:19:42.349 align:start position:29% line:-2
+そのため読み込みの遅い
+同期リクエストを使います
+
+00:19:42.683 --> 00:19:45.419 align:start position:16% line:-1
+でも今はBeacon APIがあります
+
+00:19:45.519 --> 00:19:51.225 align:start position:25% line:-2
+Safariが起動していれば
+データをサーバに送るだけです
+
+00:19:51.325 --> 00:19:54.061 align:start position:34% line:-1
+間違いなく届きます
+
+00:19:56.063 --> 00:20:01.368 align:start position:27% line:-2
+たくさん話しましたが
+実際に機能を見たいですよね
+

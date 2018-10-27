@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:56.643 --> 00:43:04.618 align:start position:7% line:-2
+TCP Fast OpenはSYNパケットの中に
+初期データを送信してくれます
+
+00:43:04.718 --> 00:43:09.123 align:start position:27% line:-2
+そのため ハンドシェイクを
+待つ必要がありません
+
+00:43:10.357 --> 00:43:14.661 align:start position:27% line:-2
+まずはアプリケーションから
+接続に対し
+
+00:43:14.761 --> 00:43:20.033 align:start position:27% line:-2
+初期データを提供することを
+取り決めておきます
+
+00:43:20.601 --> 00:43:24.605 align:start position:23% line:-2
+そのために ファストオープンの
+許可をマークし
+
+00:43:24.872 --> 00:43:26.740 align:start position:36% line:-1
+接続を作成します
+
+00:43:27.307 --> 00:43:34.014 align:start position:23% line:-2
+するとstartを呼び出す前に
+初期データを送受信できます
+
+00:43:35.315 --> 00:43:41.555 align:start position:20% line:-2
+データはIdempotentという
+マーカーに置き換えられました
+
+00:43:41.655 --> 00:43:47.661 align:start position:14% line:-2
+Idempotentはデータを再送しても
+安全であることを意味します
+
+00:43:47.761 --> 00:43:50.898 align:start position:27% line:-2
+初期データが再送されるため
+影響がないのです
+
+00:43:52.966 --> 00:43:59.006 align:start position:18% line:-2
+startを呼び出して接続を立ち上げ
+初期データを使って
+
+00:43:59.106 --> 00:44:03.811 align:start position:23% line:-2
+TCP Fast Open内に
+送信できるか試します
+

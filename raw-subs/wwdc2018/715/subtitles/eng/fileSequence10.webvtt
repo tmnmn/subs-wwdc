@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.946 --> 00:10:02.306 A:middle
+Another type of app that would
+
+00:10:02.306 --> 00:10:03.586 A:middle
+take a lot of advantage from
+
+00:10:03.586 --> 00:10:05.046 A:middle
+Network.framework is
+
+00:10:05.046 --> 00:10:06.396 A:middle
+live-streaming apps.
+
+00:10:06.746 --> 00:10:08.616 A:middle
+So live streaming often will use
+
+00:10:08.906 --> 00:10:11.776 A:middle
+a combination of UDP and TCP in
+
+00:10:11.896 --> 00:10:14.286 A:middle
+their apps, but the key point
+
+00:10:14.286 --> 00:10:15.986 A:middle
+here is that it's generating
+
+00:10:15.986 --> 00:10:17.276 A:middle
+data on the fly.
+
+00:10:17.276 --> 00:10:19.606 A:middle
+If you have new video frames or
+
+00:10:19.606 --> 00:10:21.426 A:middle
+audio frames, you need to make
+
+00:10:21.426 --> 00:10:22.906 A:middle
+sure that those are paced well
+
+00:10:22.906 --> 00:10:24.336 A:middle
+and you're not incurring a lot
+
+00:10:24.336 --> 00:10:26.866 A:middle
+of buffering on the device or on
+
+00:10:26.866 --> 00:10:27.366 A:middle
+the network.
+
+00:10:28.486 --> 00:10:30.786 A:middle
+The asynchronous model for
+
+00:10:30.786 --> 00:10:32.166 A:middle
+reading and writing in
+
+00:10:32.166 --> 00:10:33.326 A:middle
+Network.framework is going to be
+
+00:10:33.326 --> 00:10:34.936 A:middle
+perfect for making sure you
+
+00:10:34.936 --> 00:10:35.956 A:middle
+reduce that buffering.
+
+00:10:36.476 --> 00:10:39.246 A:middle
+And the last case I want to
+
+00:10:39.246 --> 00:10:41.396 A:middle
+highlight are mail and messaging
+
+00:10:41.396 --> 00:10:41.876 A:middle
+apps.
+
+00:10:43.086 --> 00:10:44.336 A:middle
+So these are going to be using a
+
+00:10:44.336 --> 00:10:46.006 A:middle
+lot more traditional protocols,
+
+00:10:46.036 --> 00:10:48.026 A:middle
+just TLS over TCP.
+
+00:10:49.016 --> 00:10:50.376 A:middle
+However, it's really critical
+
+00:10:50.376 --> 00:10:51.676 A:middle
+for apps like this to handle
+
+00:10:51.676 --> 00:10:52.846 A:middle
+network transitions really
+
+00:10:52.846 --> 00:10:53.416 A:middle
+gracefully.
+
+00:10:55.446 --> 00:10:56.436 A:middle
+Oftentimes if you have a
+
+00:10:56.436 --> 00:10:57.906 A:middle
+messaging app, your user is
+
+00:10:57.906 --> 00:10:59.306 A:middle
+going to be using your app as
+
+00:10:59.306 --> 00:11:00.066 A:middle
+they're walking out of the
+

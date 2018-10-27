@@ -1,0 +1,77 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.406 --> 00:14:01.675 align:start position:23% line:-1
+ウインドウのこの部分に注目して
+
+00:14:01.775 --> 00:14:03.610 align:start position:29% line:-1
+トラックしたいと思います
+
+00:14:03.710 --> 00:14:05.979 align:start position:25% line:-1
+ウインドウを少し小さくします
+
+00:14:06.079 --> 00:14:08.048 align:start position:38% line:-1
+まだ見えますね
+
+00:14:08.148 --> 00:14:11.685 align:start position:29% line:-2
+先ほど問題のあった
+タブをいくつか作成します
+
+00:14:12.986 --> 00:14:16.089 align:start position:27% line:-1
+ここのグラフが変わりました
+
+00:14:16.190 --> 00:14:17.691 align:start position:36% line:-1
+ここで停止して―
+
+00:14:18.425 --> 00:14:19.960 align:start position:21% line:-1
+Instrumentsに戻ります
+
+00:14:21.628 --> 00:14:23.330 align:start position:32% line:-1
+何が起きたでしょう？
+
+00:14:23.797 --> 00:14:25.566 align:start position:25% line:-1
+プロファイラが走っている間―
+
+00:14:25.999 --> 00:14:28.435 align:start position:27% line:-2
+デバッガのように
+プロセスを追跡していました
+
+00:14:28.602 --> 00:14:31.738 align:start position:27% line:-1
+毎秒数千回 止まっています
+
+00:14:32.072 --> 00:14:35.008 align:start position:27% line:-2
+それが止まるたびに
+バックトレースを収集します
+
+00:14:35.108 --> 00:14:36.376 align:start position:34% line:-1
+念のため言いますが
+
+00:14:36.477 --> 00:14:40.714 align:start position:25% line:-2
+バックトレースはプログラムが
+たどった経路を記述しています
+
+00:14:40.814 --> 00:14:43.550 align:start position:25% line:-2
+例えば functionCの
+６行目にいるなら―
+
+00:14:43.650 --> 00:14:46.019 align:start position:27% line:-2
+メインがAを呼び Bを呼び
+そしてCを呼んだからです
+
+00:14:46.119 --> 00:14:48.455 align:start position:21% line:-2
+そして 経路は
+“メイン A B C”となります
+
+00:14:48.922 --> 00:14:52.025 align:start position:23% line:-2
+Instrumentsが
+その１つを選んでこう記述します
+
+00:14:52.125 --> 00:14:55.062 align:start position:14% line:-1
+“functionCで１ミリ秒費やした”
+
+00:14:55.362 --> 00:14:57.898 align:start position:27% line:-1
+それがサンプリングの間隔で
+
+00:14:57.998 --> 00:14:59.867 align:start position:25% line:-1
+ミリ秒ごとに記録するからです
+

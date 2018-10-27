@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.426 --> 00:17:00.016 A:middle
+the consumer of the JSON object
+
+00:17:00.276 --> 00:17:01.826 A:middle
+what value your content should
+
+00:17:01.826 --> 00:17:02.806 A:middle
+have for each key.
+
+00:17:03.376 --> 00:17:04.376 A:middle
+So for example in our
+
+00:17:04.376 --> 00:17:07.076 A:middle
+subscription the key title has
+
+00:17:07.076 --> 00:17:09.756 A:middle
+the value, WWDC Photo Filters.
+
+00:17:10.435 --> 00:17:14.266 A:middle
+The Playground Feed Format is in
+
+00:17:14.266 --> 00:17:14.915 A:middle
+two parts.
+
+00:17:15.465 --> 00:17:16.786 A:middle
+One part to determine some of
+
+00:17:16.786 --> 00:17:18.266 A:middle
+the overarching characteristics
+
+00:17:18.266 --> 00:17:19.976 A:middle
+of your subscription and then
+
+00:17:19.976 --> 00:17:21.685 A:middle
+one part the documents to tell
+
+00:17:21.685 --> 00:17:23.136 A:middle
+us about teach of the documents
+
+00:17:23.136 --> 00:17:24.116 A:middle
+within your subscription.
+
+00:17:25.415 --> 00:17:26.896 A:middle
+So let's take a look at the
+
+00:17:26.896 --> 00:17:28.136 A:middle
+Playground feed format that
+
+00:17:28.136 --> 00:17:29.366 A:middle
+you'll use when creating your
+
+00:17:29.366 --> 00:17:30.016 A:middle
+subscription.
+
+00:17:30.576 --> 00:17:34.426 A:middle
+Our first key is Title.
+
+00:17:35.206 --> 00:17:36.546 A:middle
+This value should be a string,
+
+00:17:36.746 --> 00:17:38.106 A:middle
+the title of you subscription.
+
+00:17:38.856 --> 00:17:39.766 A:middle
+Here's what it should look like
+
+00:17:39.766 --> 00:17:41.096 A:middle
+in JSON and here's where the
+
+00:17:41.096 --> 00:17:42.696 A:middle
+title shows up in your app
+
+00:17:42.826 --> 00:17:44.276 A:middle
+within your subscription cell
+
+00:17:44.546 --> 00:17:46.076 A:middle
+within Swift Playgrounds.
+
+00:17:47.616 --> 00:17:49.246 A:middle
+The next key is the name of the
+
+00:17:49.286 --> 00:17:50.556 A:middle
+publisher, and that's you.
+
+00:17:51.566 --> 00:17:53.036 A:middle
+This keys value should also be a
+
+00:17:53.036 --> 00:17:54.586 A:middle
+string and it will be the name
+
+00:17:54.586 --> 00:17:55.536 A:middle
+of the publisher of the
+
+00:17:55.536 --> 00:17:56.156 A:middle
+subscription.
+
+00:17:56.506 --> 00:17:57.916 A:middle
+It will show on the detailed
+
+00:17:57.916 --> 00:17:59.416 A:middle
+view of each of the documents
+
+00:17:59.416 --> 00:18:01.000 A:middle
+within your subscription.
+

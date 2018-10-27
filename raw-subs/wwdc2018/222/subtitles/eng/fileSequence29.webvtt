@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.926 --> 00:29:01.116 A:middle
+Let's distill this down into a
+
+00:29:01.116 --> 00:29:02.326 A:middle
+checklist to see how we can
+
+00:29:02.326 --> 00:29:03.826 A:middle
+adopt NSSecureCoding on our own
+
+00:29:03.826 --> 00:29:04.206 A:middle
+types.
+
+00:29:05.406 --> 00:29:06.726 A:middle
+We'll start by converting all
+
+00:29:06.726 --> 00:29:08.516 A:middle
+decode object for key calls to
+
+00:29:08.516 --> 00:29:09.466 A:middle
+the variant which allows us to
+
+00:29:09.466 --> 00:29:10.906 A:middle
+pass in that type information up
+
+00:29:10.906 --> 00:29:11.196 A:middle
+front.
+
+00:29:11.196 --> 00:29:13.516 A:middle
+And then, if something goes
+
+00:29:13.516 --> 00:29:14.846 A:middle
+wrong instead of just returning
+
+00:29:14.846 --> 00:29:16.176 A:middle
+nil, let's failWithError to
+
+00:29:16.176 --> 00:29:17.006 A:middle
+indicate what happened.
+
+00:29:17.736 --> 00:29:19.466 A:middle
+And lastly, this is a great
+
+00:29:19.466 --> 00:29:21.006 A:middle
+opportunity to audit for further
+
+00:29:21.006 --> 00:29:22.356 A:middle
+points of failure, where we
+
+00:29:22.356 --> 00:29:23.576 A:middle
+weren't performing validation
+
+00:29:23.576 --> 00:29:23.916 A:middle
+before.
+
+00:29:24.826 --> 00:29:26.506 A:middle
+So, let's do just that.
+
+00:29:27.036 --> 00:29:29.076 A:middle
+So, here again is a decode call
+
+00:29:29.186 --> 00:29:30.026 A:middle
+to decode a listing.
+
+00:29:30.426 --> 00:29:31.366 A:middle
+And you'll notice that if we
+
+00:29:31.426 --> 00:29:32.946 A:middle
+pass in that type information up
+
+00:29:32.946 --> 00:29:34.746 A:middle
+front, the conditional downcast
+
+00:29:34.746 --> 00:29:35.496 A:middle
+later can go away.
+
+00:29:36.926 --> 00:29:38.056 A:middle
+There's a generic overload of
+
+00:29:38.056 --> 00:29:39.626 A:middle
+this method, which when given
+
+00:29:39.626 --> 00:29:40.946 A:middle
+the type information statically
+
+00:29:41.176 --> 00:29:42.776 A:middle
+causes you to not have to
+
+00:29:42.776 --> 00:29:44.066 A:middle
+conditionally downcast anymore.
+
+00:29:44.146 --> 00:29:45.376 A:middle
+You'll always get an object of
+
+00:29:45.376 --> 00:29:47.316 A:middle
+that class.
+
+00:29:47.586 --> 00:29:49.416 A:middle
+Now, again, as we said, instead
+
+00:29:49.416 --> 00:29:50.756 A:middle
+of returning nil on failure, we
+
+00:29:50.756 --> 00:29:51.986 A:middle
+want to fail meaningfully.
+
+00:29:52.536 --> 00:29:53.876 A:middle
+So, here we can fail with an
+
+00:29:53.876 --> 00:29:55.536 A:middle
+error to indicate what went
+
+00:29:55.536 --> 00:29:56.086 A:middle
+wrong and where.
+
+00:29:56.086 --> 00:29:58.656 A:middle
+And in this case, we can use one
+
+00:29:58.656 --> 00:29:59.676 A:middle
+of the conveniences on
+
+00:29:59.676 --> 00:30:01.126 A:middle
+CocoaError to return a
+

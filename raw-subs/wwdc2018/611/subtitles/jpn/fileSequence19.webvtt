@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.638 --> 00:19:03.343 align:start position:27% line:-2
+先ほど アプリケーションは
+Poseを待っていましたが
+
+00:19:03.510 --> 00:19:06.280 align:start position:29% line:-1
+この処理を半分に分けると
+
+00:19:07.247 --> 00:19:10.918 align:start position:34% line:-2
+独立処理を すぐ
+エンコードできます
+
+00:19:11.018 --> 00:19:15.455 align:start position:27% line:-2
+その後 Pose依存処理の
+エンコードを待ちます
+
+00:19:17.491 --> 00:19:21.662 align:start position:32% line:-2
+このスライドでは
+独立処理と依存処理を
+
+00:19:21.762 --> 00:19:23.630 align:start position:34% line:-1
+すでに分けています
+
+00:19:24.398 --> 00:19:28.268 align:start position:29% line:-2
+独立処理をエンコードする
+コマンドバッファは
+
+00:19:28.368 --> 00:19:33.440 align:start position:30% line:-2
+Pose依存処理よりも
+濃い色で示しています
+
+00:19:34.241 --> 00:19:38.011 align:start position:29% line:-2
+独立処理は
+すぐエンコードできるので
+
+00:19:38.145 --> 00:19:43.617 align:start position:23% line:-2
+このように 前フレームの直後に
+エンコードします
+
+00:19:44.651 --> 00:19:48.388 align:start position:32% line:-2
+これでCPUの時間を
+増やせます
+
+00:19:48.589 --> 00:19:52.226 align:start position:25% line:-1
+すでに このGPUの処理が―
+
+00:19:52.326 --> 00:19:57.130 align:start position:30% line:-2
+実行を待っていることが
+重要な点です
+
+00:19:57.698 --> 00:20:00.434 align:start position:27% line:-1
+アイドルタイムはありません
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.006 --> 00:26:00.676 A:middle
+the same physical surface are
+
+00:26:00.676 --> 00:26:02.876 A:middle
+detected, like in this part now,
+
+00:26:02.876 --> 00:26:04.636 A:middle
+the green and the purple one,
+
+00:26:05.226 --> 00:26:06.726 A:middle
+then they will be merged once
+
+00:26:06.726 --> 00:26:07.926 A:middle
+they start overlapping.
+
+00:26:08.596 --> 00:26:11.356 A:middle
+If horizontal and vertical
+
+00:26:11.356 --> 00:26:13.026 A:middle
+planes intersect they are
+
+00:26:13.026 --> 00:26:14.366 A:middle
+clipped at the line of
+
+00:26:14.366 --> 00:26:15.666 A:middle
+intersection, which is actually
+
+00:26:15.666 --> 00:26:18.156 A:middle
+a new feature in ARKit 2.
+
+00:26:19.876 --> 00:26:21.776 A:middle
+Plane Detection is designed to
+
+00:26:21.776 --> 00:26:24.686 A:middle
+have very little overhead as it
+
+00:26:24.766 --> 00:26:27.166 A:middle
+repurposes the mapped 3D points
+
+00:26:27.166 --> 00:26:28.296 A:middle
+from the World Tracking.
+
+00:26:29.086 --> 00:26:31.166 A:middle
+And then it fits planes into
+
+00:26:31.166 --> 00:26:33.386 A:middle
+those point clouds and over time
+
+00:26:33.696 --> 00:26:36.346 A:middle
+continuously aggregates more and
+
+00:26:36.346 --> 00:26:38.326 A:middle
+more points and merge the planes
+
+00:26:38.606 --> 00:26:40.286 A:middle
+that start to overlap.
+
+00:26:40.936 --> 00:26:42.516 A:middle
+Therefore, it takes some time
+
+00:26:42.516 --> 00:26:44.156 A:middle
+until the first planes are
+
+00:26:44.156 --> 00:26:44.806 A:middle
+detected.
+
+00:26:46.096 --> 00:26:47.276 A:middle
+What does that mean for you?
+
+00:26:48.856 --> 00:26:50.726 A:middle
+If your app is started, there
+
+00:26:50.726 --> 00:26:53.036 A:middle
+might not directly be planes to
+
+00:26:53.036 --> 00:26:55.516 A:middle
+place objects on or to interact
+
+00:26:55.626 --> 00:26:55.846 A:middle
+with.
+
+00:26:57.266 --> 00:26:58.786 A:middle
+If the detection of a plane is
+
+00:26:58.876 --> 00:27:01.496 A:middle
+mandatory for your experience,
+

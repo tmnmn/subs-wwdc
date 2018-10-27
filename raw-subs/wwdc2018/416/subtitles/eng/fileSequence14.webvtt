@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.676 --> 00:14:02.936 A:middle
+leaked objects, but also the
+
+00:14:02.936 --> 00:14:05.186 A:middle
+retain cycles that they belong
+
+00:14:05.186 --> 00:14:05.396 A:middle
+to.
+
+00:14:05.396 --> 00:14:07.126 A:middle
+And if malloc stack logging was
+
+00:14:07.126 --> 00:14:08.856 A:middle
+enabled on the process, we'll
+
+00:14:08.856 --> 00:14:10.666 A:middle
+even give you a backtrace for
+
+00:14:11.786 --> 00:14:14.146 A:middle
+the root node.
+
+00:14:14.416 --> 00:14:15.796 A:middle
+One question I often ask myself
+
+00:14:15.906 --> 00:14:17.276 A:middle
+is, where's all my memory going?
+
+00:14:18.096 --> 00:14:19.606 A:middle
+I've looked in vmmap, and I see
+
+00:14:19.606 --> 00:14:20.716 A:middle
+the heap is really large, but
+
+00:14:20.966 --> 00:14:22.006 A:middle
+what do I do about it next?
+
+00:14:22.626 --> 00:14:24.426 A:middle
+Well, the heap tool provides all
+
+00:14:24.426 --> 00:14:25.366 A:middle
+sorts of information about
+
+00:14:25.366 --> 00:14:26.326 A:middle
+object allocations in the
+
+00:14:26.326 --> 00:14:26.836 A:middle
+process heap.
+
+00:14:27.046 --> 00:14:28.616 A:middle
+It helps you track down really
+
+00:14:28.616 --> 00:14:30.216 A:middle
+large allocations or just lots
+
+00:14:30.216 --> 00:14:32.086 A:middle
+of the same kind of object.
+
+00:14:34.036 --> 00:14:36.236 A:middle
+So here I've got a Memgraph that
+
+00:14:36.236 --> 00:14:37.516 A:middle
+I took when Xcode caught a
+
+00:14:37.516 --> 00:14:39.336 A:middle
+memory resource exception, and I
+
+00:14:39.336 --> 00:14:40.366 A:middle
+want to investigate the heap.
+
+00:14:40.906 --> 00:14:42.136 A:middle
+So I've passed it to heap, which
+
+00:14:42.136 --> 00:14:43.416 A:middle
+is giving me information about
+
+00:14:43.926 --> 00:14:45.186 A:middle
+the class name for each of those
+
+00:14:45.186 --> 00:14:49.696 A:middle
+objects, the number of them, and
+
+00:14:49.696 --> 00:14:50.546 A:middle
+some information about their
+
+00:14:50.546 --> 00:14:52.366 A:middle
+average size and the total size
+
+00:14:52.366 --> 00:14:54.976 A:middle
+for that class of object.
+
+00:14:54.976 --> 00:14:56.446 A:middle
+So here I kind of see, like,
+
+00:14:56.656 --> 00:14:58.156 A:middle
+not, lots and lots of small
+
+00:14:58.156 --> 00:14:58.976 A:middle
+objects, but I don't think
+
+00:14:58.976 --> 00:14:59.676 A:middle
+that's the problem.
+
+00:14:59.946 --> 00:15:01.066 A:middle
+I, that, I don't think that's
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.106 --> 00:24:00.366 A:middle
+section; however, it is really
+
+00:24:00.366 --> 00:24:01.336 A:middle
+important that you be able to
+
+00:24:01.336 --> 00:24:02.856 A:middle
+define your own schemas and we
+
+00:24:02.856 --> 00:24:04.826 A:middle
+have a new os signpost API this
+
+00:24:04.826 --> 00:24:06.696 A:middle
+year, which is a great way to
+
+00:24:06.696 --> 00:24:07.736 A:middle
+get data into Instruments.
+
+00:24:08.596 --> 00:24:10.206 A:middle
+So we've created a little bit of
+
+00:24:10.206 --> 00:24:10.756 A:middle
+a shortcut.
+
+00:24:12.056 --> 00:24:13.236 A:middle
+Inside your package, you can
+
+00:24:13.236 --> 00:24:14.246 A:middle
+define what's called an os
+
+00:24:14.246 --> 00:24:16.346 A:middle
+signpost interval schema and
+
+00:24:16.346 --> 00:24:17.616 A:middle
+what that does is both define
+
+00:24:17.616 --> 00:24:20.046 A:middle
+schema and also give us enough
+
+00:24:20.046 --> 00:24:22.006 A:middle
+instructions to be able to
+
+00:24:22.106 --> 00:24:23.446 A:middle
+generate a modeler on your
+
+00:24:23.446 --> 00:24:23.616 A:middle
+behalf.
+
+00:24:24.226 --> 00:24:25.686 A:middle
+Now inside there, you can
+
+00:24:25.686 --> 00:24:26.776 A:middle
+capture the data that you
+
+00:24:26.776 --> 00:24:28.856 A:middle
+recorded in the metadata of your
+
+00:24:28.856 --> 00:24:31.926 A:middle
+os signpost calls and you can
+
+00:24:31.926 --> 00:24:33.986 A:middle
+use that captured metadata and
+
+00:24:33.986 --> 00:24:35.776 A:middle
+expressions to define how we
+
+00:24:35.776 --> 00:24:38.026 A:middle
+should fill out the columns of
+
+00:24:38.236 --> 00:24:38.796 A:middle
+your schema.
+
+00:24:39.816 --> 00:24:41.716 A:middle
+So we'll look at a really simple
+
+00:24:41.716 --> 00:24:42.196 A:middle
+example.
+
+00:24:43.136 --> 00:24:44.556 A:middle
+Let's say we're going to do JSON
+
+00:24:44.556 --> 00:24:46.776 A:middle
+decoding and we have a signpost
+
+00:24:47.026 --> 00:24:48.156 A:middle
+that we mark the beginning of
+
+00:24:48.156 --> 00:24:50.726 A:middle
+that decoding activity and the
+
+00:24:50.726 --> 00:24:52.186 A:middle
+end of that decoding activity.
+
+00:24:52.746 --> 00:24:54.276 A:middle
+And in the beginning, we'll also
+
+00:24:54.276 --> 00:24:55.936 A:middle
+capture some metadata to
+
+00:24:55.936 --> 00:24:57.676 A:middle
+indicate the size of the JSON
+
+00:24:57.676 --> 00:24:59.046 A:middle
+object that we're about to try
+
+00:24:59.046 --> 00:24:59.526 A:middle
+to parse.
+

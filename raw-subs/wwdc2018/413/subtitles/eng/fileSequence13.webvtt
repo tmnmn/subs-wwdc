@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.356 --> 00:13:00.256 A:middle
+breakpoint right before this
+
+00:13:00.256 --> 00:13:01.136 A:middle
+method returns.
+
+00:13:01.526 --> 00:13:03.426 A:middle
+And since each frame of the live
+
+00:13:03.506 --> 00:13:04.926 A:middle
+camera output is getting a
+
+00:13:04.926 --> 00:13:06.536 A:middle
+filter applied on top of it, we
+
+00:13:06.536 --> 00:13:07.806 A:middle
+should hit this breakpoint right
+
+00:13:07.806 --> 00:13:09.026 A:middle
+away because this method is
+
+00:13:09.026 --> 00:13:09.956 A:middle
+constantly called.
+
+00:13:10.886 --> 00:13:12.616 A:middle
+OK great. So we've hit the break
+
+00:13:12.676 --> 00:13:15.106 A:middle
+point and now I can inspect any
+
+00:13:15.106 --> 00:13:16.466 A:middle
+of my variables here using the
+
+00:13:16.466 --> 00:13:17.346 A:middle
+debug console.
+
+00:13:17.606 --> 00:13:19.456 A:middle
+So specifically I want too look
+
+00:13:19.456 --> 00:13:21.766 A:middle
+at the size of the source image
+
+00:13:22.326 --> 00:13:26.166 A:middle
+and the size of the filtered
+
+00:13:26.166 --> 00:13:28.976 A:middle
+image and see how those differ.
+
+00:13:32.056 --> 00:13:34.096 A:middle
+OK, so as we can see the size of
+
+00:13:34.096 --> 00:13:35.796 A:middle
+the filtered image is larger
+
+00:13:35.796 --> 00:13:36.816 A:middle
+than the size of the source
+
+00:13:36.816 --> 00:13:37.306 A:middle
+image.
+
+00:13:37.896 --> 00:13:40.066 A:middle
+And on line 59 I'm rendering the
+
+00:13:40.066 --> 00:13:42.826 A:middle
+filtered image to the size of
+
+00:13:42.826 --> 00:13:44.396 A:middle
+the filtered image, but really
+
+00:13:44.396 --> 00:13:45.676 A:middle
+what I wanted was the size of
+
+00:13:45.676 --> 00:13:46.436 A:middle
+the source image.
+
+00:13:46.436 --> 00:13:47.576 A:middle
+So I'm going to fix that.
+
+00:13:48.586 --> 00:13:50.636 A:middle
+Disable the breakpoint and run
+
+00:13:51.256 --> 00:13:52.976 A:middle
+it again.
+
+00:13:53.346 --> 00:13:54.406 A:middle
+Let's head back over to the
+
+00:13:54.406 --> 00:13:54.806 A:middle
+iPad.
+
+00:13:58.196 --> 00:13:59.706 A:middle
+And let's have Grace take the
+
+00:13:59.706 --> 00:14:00.986 A:middle
+same steps as before.
+

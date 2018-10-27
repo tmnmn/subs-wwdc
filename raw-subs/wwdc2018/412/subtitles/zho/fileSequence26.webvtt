@@ -1,0 +1,83 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.927 --> 00:26:03.130 align:middle line:-2
+它将为层次结构拍摄快照
+并为你提供3D分解视图
+
+00:26:03.197 --> 00:26:05.232 align:middle line:-1
+你可以用它来检查视图
+
+00:26:05.666 --> 00:26:07.568 align:middle line:-2
+Sebastian稍后
+会详细讨论这个问题
+
+00:26:07.634 --> 00:26:09.169 align:middle line:-1
+所以我们来看看另一种方式
+
+00:26:09.236 --> 00:26:11.338 align:middle line:-1
+这对于更简单的层次结构很有用
+
+00:26:11.738 --> 00:26:13.907 align:middle line:-1
+并且只需在调试控制台中操作
+
+00:26:14.708 --> 00:26:18.812 align:middle line:-2
+这就是使用UIView上的调试函数
+recursiveDescription
+
+00:26:20.214 --> 00:26:23.717 align:middle line:-2
+我们应该可以调用 po self.view.
+.recursiveDescription()
+
+00:26:24.751 --> 00:26:25.853 align:middle line:-1
+但这行不通
+
+00:26:25.986 --> 00:26:26.820 align:middle line:-1
+为什么呢？
+
+00:26:27.521 --> 00:26:30.257 align:middle line:-2
+recursiveDescription
+仅用于调试目的
+
+00:26:30.457 --> 00:26:33.894 align:middle line:-2
+它不是公共API的一部分
+因此也不会被Swift扫描
+
+00:26:34.328 --> 00:26:35.162 align:middle line:-1
+所以…
+
+00:26:35.462 --> 00:26:38.165 align:middle line:-2
+Swift是一种严格的语言
+不允许你调用
+
+00:26:38.232 --> 00:26:39.733 align:middle line:-1
+尚未严格定义的函数
+
+00:26:40.434 --> 00:26:41.935 align:middle line:-1
+然而Objective-C不同
+
+00:26:42.102 --> 00:26:44.304 align:middle line:-2
+在Objective-C世界中
+代码可以自由放纵的运行
+
+00:26:44.438 --> 00:26:45.639 align:middle line:-1
+你可以做任何你想做的事
+
+00:26:45.706 --> 00:26:48.509 align:middle line:-2
+我的意思是它是一种动态语言
+所以你可以调用这样的函数
+
+00:26:49.142 --> 00:26:50.277 align:middle line:-1
+所以我们要做的
+
+00:26:50.410 --> 00:26:53.146 align:middle line:0
+是告诉调试器使用
+Objective-C语法
+
+00:26:53.213 --> 00:26:55.516 align:middle line:0
+来评估这个表达式
+
+00:26:55.949 --> 00:27:00.087 align:middle line:0
+实现这点的方法是
+使用expression命令和选项参数-l objc
+

@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.260 --> 00:21:06.467 align:start position:20% line:-2
+次はPyCoreImageを使って
+フィルタを採用する例です
+
+00:21:07.201 --> 00:21:11.472 align:start position:14% line:-2
+cimgクラスをPyCoreImageの
+パッケージからインポートします
+
+00:21:12.039 --> 00:21:14.341 align:start position:34% line:-2
+ファイルから画像を
+ロードするためです
+
+00:21:15.375 --> 00:21:18.912 align:start position:23% line:-2
+この時点では
+ピクセルのバッファがありません
+
+00:21:19.012 --> 00:21:23.851 align:start position:20% line:-2
+Core Imageが画像のための
+レシピを作成し
+
+00:21:24.117 --> 00:21:26.553 align:start position:29% line:-1
+ロードする指示を出します
+
+00:21:27.754 --> 00:21:32.960 align:start position:27% line:-2
+CIフィルタを呼び出して
+入力プライマリを送りますが
+
+00:21:33.060 --> 00:21:35.596 align:start position:20% line:-1
+このケースではradiusとします
+
+00:21:35.696 --> 00:21:37.965 align:start position:27% line:-1
+更に複雑なグラフを作ります
+
+00:21:38.065 --> 00:21:42.302 align:start position:25% line:-2
+ズームすると
+ぼかしのプロセッサが見えます
+
+00:21:43.637 --> 00:21:48.809 align:start position:27% line:-2
+cimgインスタンスで
+レンダリングをコールすると
+
+00:21:48.909 --> 00:21:52.246 align:start position:27% line:-2
+バッファで適切なユニットを
+取得できます
+
+00:21:55.749 --> 00:22:02.189 align:start position:23% line:-2
+そのためには簡素化した
+コード設定を行う必要があります
+

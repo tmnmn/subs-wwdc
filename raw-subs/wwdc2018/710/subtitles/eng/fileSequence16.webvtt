@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:58.906 --> 00:16:00.706 A:middle
+And I'm happy to announce that
+
+00:16:00.836 --> 00:16:01.846 A:middle
+we're taking away this
+
+00:16:01.846 --> 00:16:03.126 A:middle
+restriction with iOS 12.
+
+00:16:04.516 --> 00:16:07.546 A:middle
+[ Applause ]
+
+00:16:08.046 --> 00:16:09.636 A:middle
+So now your content extensions
+
+00:16:09.636 --> 00:16:11.826 A:middle
+have the option of opting in to
+
+00:16:11.826 --> 00:16:13.456 A:middle
+receiving user interaction
+
+00:16:13.456 --> 00:16:16.286 A:middle
+[inaudible] touches, and setting
+
+00:16:16.286 --> 00:16:17.786 A:middle
+this up, it's fairly trivial.
+
+00:16:18.046 --> 00:16:20.096 A:middle
+All you have to do is add a new
+
+00:16:20.096 --> 00:16:22.446 A:middle
+key value option to your
+
+00:16:22.446 --> 00:16:23.326 A:middle
+info.plist file.
+
+00:16:23.766 --> 00:16:26.556 A:middle
+And the key that we've added is
+
+00:16:26.556 --> 00:16:29.446 A:middle
+the UNNotificationExtensionUser
+
+00:16:29.446 --> 00:16:30.386 A:middle
+InteractionEnabled.
+
+00:16:32.586 --> 00:16:34.436 A:middle
+So going back to our sample,
+
+00:16:34.696 --> 00:16:36.576 A:middle
+what if we want to remove the
+
+00:16:36.576 --> 00:16:38.416 A:middle
+like action from a notification
+
+00:16:38.416 --> 00:16:40.556 A:middle
+action and make it a UI
+
+00:16:40.556 --> 00:16:42.626 A:middle
+interaction touch that's part of
+
+00:16:42.626 --> 00:16:43.326 A:middle
+the view itself?
+
+00:16:44.316 --> 00:16:45.506 A:middle
+So once we've configured our
+
+00:16:45.506 --> 00:16:48.376 A:middle
+info.plist file, we can go back
+
+00:16:48.376 --> 00:16:49.776 A:middle
+to our content extension view
+
+00:16:50.126 --> 00:16:51.976 A:middle
+and create our own custom button
+
+00:16:51.976 --> 00:16:53.366 A:middle
+to handle the like gesture.
+
+00:16:54.716 --> 00:16:56.396 A:middle
+We add a target for our own
+
+00:16:56.396 --> 00:16:59.806 A:middle
+private method and inside that
+
+00:16:59.806 --> 00:17:02.016 A:middle
+function, we update the UI as
+

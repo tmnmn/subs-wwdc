@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.926 --> 00:41:01.076 A:middle
+We found that we're able to
+
+00:41:01.076 --> 00:41:03.056 A:middle
+build that tool using Swift but
+
+00:41:03.056 --> 00:41:04.336 A:middle
+set it up as a command line
+
+00:41:04.336 --> 00:41:04.596 A:middle
+tool.
+
+00:41:05.196 --> 00:41:06.706 A:middle
+Do you notice at the top of
+
+00:41:06.706 --> 00:41:07.996 A:middle
+this, the traditional Unix
+
+00:41:07.996 --> 00:41:09.566 A:middle
+shebang-style statement at the
+
+00:41:09.566 --> 00:41:10.266 A:middle
+top of the script.
+
+00:41:10.706 --> 00:41:13.156 A:middle
+That tells your shell to fire up
+
+00:41:13.156 --> 00:41:15.436 A:middle
+Swift to run this.
+
+00:41:15.536 --> 00:41:17.076 A:middle
+By doing this, we can then treat
+
+00:41:17.076 --> 00:41:18.526 A:middle
+Swift as a scripting language.
+
+00:41:19.976 --> 00:41:21.226 A:middle
+You can develop one of these by
+
+00:41:21.226 --> 00:41:23.316 A:middle
+using a Swift playground to work
+
+00:41:23.316 --> 00:41:24.726 A:middle
+with your code interactively and
+
+00:41:24.726 --> 00:41:25.696 A:middle
+make sure that you've gotten it
+
+00:41:25.696 --> 00:41:25.866 A:middle
+right.
+
+00:41:26.966 --> 00:41:28.556 A:middle
+Once it's ready, just save it
+
+00:41:28.556 --> 00:41:30.286 A:middle
+out to a file, add the shebang
+
+00:41:30.286 --> 00:41:31.906 A:middle
+line to the top and make the
+
+00:41:31.906 --> 00:41:33.886 A:middle
+file executable in the file
+
+00:41:33.886 --> 00:41:34.236 A:middle
+system.
+
+00:41:35.246 --> 00:41:36.546 A:middle
+Now you've got a command line
+
+00:41:36.546 --> 00:41:38.736 A:middle
+tool that you can use either,
+
+00:41:38.736 --> 00:41:39.496 A:middle
+you know, outside the
+
+00:41:39.496 --> 00:41:41.876 A:middle
+application or in Xcode using a
+
+00:41:41.876 --> 00:41:42.666 A:middle
+RunScript phase.
+
+00:41:43.486 --> 00:41:45.866 A:middle
+It's very easy and it really
+
+00:41:45.866 --> 00:41:47.216 A:middle
+gives you access to all the
+
+00:41:47.216 --> 00:41:48.056 A:middle
+system frameworks.
+
+00:41:48.316 --> 00:41:49.456 A:middle
+In this case, we're able to edit
+
+00:41:49.456 --> 00:41:50.386 A:middle
+the P list directly.
+
+00:41:51.036 --> 00:41:52.076 A:middle
+It's a really great technique
+
+00:41:52.076 --> 00:41:53.586 A:middle
+and we hope that you'll be able
+
+00:41:53.586 --> 00:41:54.986 A:middle
+to take advantage of it.
+
+00:41:57.116 --> 00:41:59.016 A:middle
+So, today I hope you've seen how
+
+00:41:59.096 --> 00:42:00.226 A:middle
+AR provides really new
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.886 --> 00:14:00.726 A:middle
+background modes.
+
+00:14:01.166 --> 00:14:04.366 A:middle
+And then, you just appropriately
+
+00:14:04.366 --> 00:14:05.656 A:middle
+set up your session, and you're
+
+00:14:05.656 --> 00:14:06.806 A:middle
+going to want to tell the system
+
+00:14:06.806 --> 00:14:07.696 A:middle
+that you want to play this
+
+00:14:07.696 --> 00:14:09.136 A:middle
+long-form content in the
+
+00:14:09.136 --> 00:14:09.646 A:middle
+background.
+
+00:14:09.956 --> 00:14:13.456 A:middle
+You want to allow your user to
+
+00:14:13.696 --> 00:14:14.736 A:middle
+select a different route.
+
+00:14:14.986 --> 00:14:16.976 A:middle
+And then, you're just going to
+
+00:14:16.976 --> 00:14:18.416 A:middle
+want to call play and
+
+00:14:18.666 --> 00:14:19.656 A:middle
+appropriately handle the
+
+00:14:19.656 --> 00:14:20.916 A:middle
+playback when the user's in the
+
+00:14:20.916 --> 00:14:23.006 A:middle
+middle of that playback session.
+
+00:14:23.866 --> 00:14:25.606 A:middle
+So let's break that more, break
+
+00:14:25.606 --> 00:14:28.266 A:middle
+that down more a little bit.
+
+00:14:29.196 --> 00:14:30.956 A:middle
+And so in Xcode in the Project
+
+00:14:30.956 --> 00:14:32.486 A:middle
+Settings, in the Capabilities
+
+00:14:32.486 --> 00:14:34.696 A:middle
+tab, you just flip the switch
+
+00:14:34.696 --> 00:14:35.876 A:middle
+for Background Mode, you check
+
+00:14:35.876 --> 00:14:37.396 A:middle
+off Audio, and you're good to go
+
+00:14:37.396 --> 00:14:38.206 A:middle
+to the next step.
+
+00:14:38.576 --> 00:14:42.056 A:middle
+And so to set up your session,
+
+00:14:42.236 --> 00:14:43.186 A:middle
+you're going to want to set your
+
+00:14:43.186 --> 00:14:45.126 A:middle
+routeSharingPolicy to longform
+
+00:14:45.346 --> 00:14:46.626 A:middle
+on your AVAudioSession.
+
+00:14:46.726 --> 00:14:49.026 A:middle
+And then, you call the new
+
+00:14:49.026 --> 00:14:50.886 A:middle
+activate withOptions completion
+
+00:14:51.646 --> 00:14:53.726 A:middle
+method on AVAudioSession.
+
+00:14:53.936 --> 00:14:55.276 A:middle
+And then, once it completes,
+
+00:14:55.276 --> 00:14:56.216 A:middle
+you're going to call play.
+
+00:14:57.276 --> 00:14:58.946 A:middle
+And in between when you first
+
+00:14:58.946 --> 00:15:01.106 A:middle
+call the activate function and
+

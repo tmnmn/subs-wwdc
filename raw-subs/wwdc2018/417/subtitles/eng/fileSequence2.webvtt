@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.856 --> 00:02:00.326 A:middle
+app to load its data from a
+
+00:02:00.326 --> 00:02:01.196 A:middle
+remote web server.
+
+00:02:02.506 --> 00:02:03.646 A:middle
+Here are some things that we
+
+00:02:03.646 --> 00:02:05.446 A:middle
+found useful when writing tests
+
+00:02:05.446 --> 00:02:06.236 A:middle
+for networking code.
+
+00:02:06.706 --> 00:02:10.856 A:middle
+But first, quick, a recap from
+
+00:02:10.856 --> 00:02:11.326 A:middle
+last year.
+
+00:02:12.376 --> 00:02:15.176 A:middle
+At WWDC 2017's Engineering
+
+00:02:15.176 --> 00:02:17.196 A:middle
+Testability session, we
+
+00:02:17.196 --> 00:02:19.546 A:middle
+discussed the pyramid model as a
+
+00:02:19.546 --> 00:02:20.906 A:middle
+guide to how to structure a test
+
+00:02:20.906 --> 00:02:23.676 A:middle
+suite, balancing thoroughness,
+
+00:02:23.676 --> 00:02:25.716 A:middle
+understandability, and execution
+
+00:02:25.716 --> 00:02:26.026 A:middle
+speed.
+
+00:02:28.376 --> 00:02:30.876 A:middle
+In summary, an ideal test suite
+
+00:02:31.016 --> 00:02:32.406 A:middle
+tends to be composed of a large
+
+00:02:32.436 --> 00:02:34.056 A:middle
+percentage of focused unit
+
+00:02:34.056 --> 00:02:36.006 A:middle
+tests, exercising individual
+
+00:02:36.006 --> 00:02:38.246 A:middle
+classes and methods in your app.
+
+00:02:39.416 --> 00:02:41.206 A:middle
+These are characterized by being
+
+00:02:41.266 --> 00:02:43.726 A:middle
+simple to read, producing clear
+
+00:02:43.726 --> 00:02:45.246 A:middle
+failure messages when we detect
+
+00:02:45.246 --> 00:02:47.826 A:middle
+a problem, and by running very
+
+00:02:47.826 --> 00:02:49.796 A:middle
+quickly, often in the order of
+
+00:02:49.796 --> 00:02:51.236 A:middle
+hundreds or thousands of tests
+
+00:02:51.286 --> 00:02:51.686 A:middle
+per minute.
+
+00:02:54.456 --> 00:02:55.976 A:middle
+These are complemented by a
+
+00:02:55.976 --> 00:02:58.056 A:middle
+smaller number of medium-sized
+
+00:02:58.056 --> 00:03:00.676 A:middle
+integration tests that targeted
+

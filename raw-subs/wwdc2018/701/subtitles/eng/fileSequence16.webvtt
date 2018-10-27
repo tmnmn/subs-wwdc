@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.186 --> 00:16:01.376 A:middle
+Like rotation matrices, you can
+
+00:16:01.376 --> 00:16:02.426 A:middle
+combine the rotations using
+
+00:16:02.426 --> 00:16:03.826 A:middle
+multiplication, and also like
+
+00:16:03.826 --> 00:16:04.876 A:middle
+rotation matrices, the
+
+00:16:04.876 --> 00:16:05.826 A:middle
+multiplication is not
+
+00:16:05.866 --> 00:16:06.406 A:middle
+commutative.
+
+00:16:06.936 --> 00:16:08.406 A:middle
+So this means if you change the
+
+00:16:08.406 --> 00:16:09.366 A:middle
+order of the operands, you will
+
+00:16:09.476 --> 00:16:10.206 A:middle
+change the order of the
+
+00:16:10.206 --> 00:16:10.706 A:middle
+rotations.
+
+00:16:11.846 --> 00:16:14.406 A:middle
+So effectively what we're going
+
+00:16:14.406 --> 00:16:15.766 A:middle
+to do here is rotate pi over 3
+
+00:16:15.766 --> 00:16:17.996 A:middle
+radians up, and then pi over 3
+
+00:16:17.996 --> 00:16:18.826 A:middle
+radians to the right.
+
+00:16:19.016 --> 00:16:19.906 A:middle
+And we're going to combine that
+
+00:16:19.906 --> 00:16:20.916 A:middle
+into a single rotation.
+
+00:16:26.136 --> 00:16:27.766 A:middle
+Some of the more interesting
+
+00:16:27.766 --> 00:16:28.876 A:middle
+things you can actually do with
+
+00:16:28.876 --> 00:16:30.136 A:middle
+quaternions and simd is
+
+00:16:30.136 --> 00:16:31.756 A:middle
+interpolation, and we support
+
+00:16:31.756 --> 00:16:33.186 A:middle
+two types of interpolation.
+
+00:16:34.936 --> 00:16:35.876 A:middle
+The first is Slerp.
+
+00:16:36.516 --> 00:16:39.106 A:middle
+It stands for Spherical Linear
+
+00:16:39.106 --> 00:16:42.326 A:middle
+Interpolation, and there are
+
+00:16:42.326 --> 00:16:44.206 A:middle
+actually two variants of it.
+
+00:16:45.476 --> 00:16:48.926 A:middle
+We have simd slerp, which will
+
+00:16:48.926 --> 00:16:49.886 A:middle
+find the shortest arc between
+
+00:16:49.886 --> 00:16:51.266 A:middle
+these two points, in this case
+
+00:16:51.306 --> 00:16:52.296 A:middle
+between the blue and the green,
+
+00:16:53.276 --> 00:16:55.096 A:middle
+and we have simd slerp longest,
+
+00:16:55.096 --> 00:16:56.196 A:middle
+which will find the longest arc.
+
+00:16:56.196 --> 00:16:57.156 A:middle
+So you'll actually see it go
+
+00:16:57.156 --> 00:16:57.976 A:middle
+behind the unit sphere.
+

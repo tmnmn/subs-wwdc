@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.565 --> 00:15:01.268 align:start position:29% line:-1
+右側で舞台裏をのぞけます
+
+00:15:02.202 --> 00:15:03.837 align:start position:34% line:-1
+スクロールビューは
+
+00:15:03.937 --> 00:15:08.442 align:start position:18% line:-2
+スクロール位置を示すために
+contentOffsetを使います
+
+00:15:09.243 --> 00:15:12.880 align:start position:20% line:-2
+現在の位置は一番上なので
+contentOffsetは0です
+
+00:15:12.980 --> 00:15:17.818 align:start position:23% line:-2
+コンテンツとスクロールビューの
+上辺がそろっています
+
+00:15:18.819 --> 00:15:23.090 align:start position:29% line:-2
+では スクロールビューを
+一番下まで下げ
+
+00:15:23.190 --> 00:15:25.859 align:start position:29% line:-1
+コンテンツを上げましょう
+
+00:15:26.226 --> 00:15:33.000 align:start position:9% line:-2
+ご覧のとおり 下辺まで下がると
+contentOffsetは100に増えました
+
+00:15:33.100 --> 00:15:36.103 align:start position:29% line:-2
+これはスクロールビューの
+上辺が―
+
+00:15:36.203 --> 00:15:39.706 align:start position:25% line:-2
+コンテンツの上辺より
+100pt低いということです
+
+00:15:40.407 --> 00:15:45.946 align:start position:16% line:-2
+contentOffsetを0にすると
+スクロールビューは上に戻ります
+
+00:15:46.280 --> 00:15:47.648 align:start position:38% line:-1
+最初の形ですね
+
+00:15:48.582 --> 00:15:52.119 align:start position:21% line:-1
+これがスクロールビューの基本です
+
+00:15:52.286 --> 00:15:54.988 align:start position:34% line:-2
+次は 非常に大事な
+コンセプトである―
+
+00:15:55.088 --> 00:15:58.492 align:start position:30% line:-2
+スクロール可能な領域の
+拡大についてです
+
+00:15:58.592 --> 00:16:01.662 align:start position:23% line:-2
+contentInsetという
+プロパティを使います
+

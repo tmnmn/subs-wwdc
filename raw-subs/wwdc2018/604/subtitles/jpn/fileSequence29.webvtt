@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.071 --> 00:29:01.475 align:start position:29% line:-2
+４バイトコンポーネントが
+３つで12バイトです
+
+00:29:01.775 --> 00:29:05.078 align:start position:27% line:-2
+しかしシェーディング言語は
+float型３が
+
+00:29:05.179 --> 00:29:10.050 align:start position:27% line:-2
+16バイト消費すると解釈し
+問題が発生します
+
+00:29:10.150 --> 00:29:14.454 align:start position:25% line:-2
+これはCPU GPUの使用を
+最適化するために
+
+00:29:14.555 --> 00:29:17.157 align:start position:29% line:-2
+より厳密なアライメントが
+採用されているためです
+
+00:29:17.791 --> 00:29:21.562 align:start position:29% line:-2
+３×３のマトリクスでも
+よく同様の問題が生じます
+
+00:29:22.129 --> 00:29:27.034 align:start position:32% line:-2
+隙のないデータを
+パックするのであれば
+
+00:29:27.768 --> 00:29:30.971 align:start position:23% line:-2
+Metalシェーディング言語に
+パックタイプがあります
+
+00:29:31.071 --> 00:29:35.175 align:start position:23% line:-1
+パックデータをバッファ内へ移し
+
+00:29:35.275 --> 00:29:39.813 align:start position:25% line:-2
+データ遂行前にパックデータを
+レギュラーベクタへ―
+
+00:29:39.913 --> 00:29:42.649 align:start position:30% line:-1
+渡さなければなりません
+
+00:29:43.517 --> 00:29:46.420 align:start position:27% line:-1
+アプリケーション構築時には
+
+00:29:46.720 --> 00:29:50.724 align:start position:25% line:-2
+最も便利なストレージモードを
+勧めます
+
+00:29:51.225 --> 00:29:56.263 align:start position:32% line:-2
+リソースへより簡単に
+アクセスできます
+
+00:29:56.830 --> 00:30:01.502 align:start position:9% line:-2
+iOSではStorageModeSharedで
+テクスチャとバッファを作ります
+

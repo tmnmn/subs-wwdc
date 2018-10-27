@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.196 --> 00:17:01.196 A:middle
+You drop it into a terminal and
+
+00:17:01.546 --> 00:17:02.816 A:middle
+add the -v option.
+
+00:17:03.796 --> 00:17:05.205 A:middle
+Dash-v is symbol for verbose.
+
+00:17:05.935 --> 00:17:07.266 A:middle
+And then Clang will tell you
+
+00:17:07.476 --> 00:17:08.576 A:middle
+lots of information.
+
+00:17:09.476 --> 00:17:11.036 A:middle
+But let's just concentrate on
+
+00:17:11.036 --> 00:17:12.986 A:middle
+the one that matter which is the
+
+00:17:14.016 --> 00:17:15.226 A:middle
+search paths.
+
+00:17:15.276 --> 00:17:17.846 A:middle
+I say search paths and many of
+
+00:17:17.945 --> 00:17:19.836 A:middle
+you might expect to see now here
+
+00:17:20.106 --> 00:17:22.526 A:middle
+search paths that point back to
+
+00:17:22.526 --> 00:17:24.346 A:middle
+your source code.
+
+00:17:24.965 --> 00:17:26.646 A:middle
+But it's not how this works.
+
+00:17:27.415 --> 00:17:29.546 A:middle
+Instead you will see something
+
+00:17:29.546 --> 00:17:30.476 A:middle
+called headermaps.
+
+00:17:32.116 --> 00:17:34.426 A:middle
+Headermaps are used [inaudible]
+
+00:17:34.806 --> 00:17:36.856 A:middle
+by the Xcode build system to
+
+00:17:36.856 --> 00:17:38.656 A:middle
+communicate where those header
+
+00:17:38.656 --> 00:17:39.566 A:middle
+files are.
+
+00:17:40.546 --> 00:17:41.646 A:middle
+So let's have a look at those.
+
+00:17:41.646 --> 00:17:42.846 A:middle
+Let's have a look the most
+
+00:17:42.846 --> 00:17:44.626 A:middle
+important two file-- headermap
+
+00:17:44.626 --> 00:17:46.086 A:middle
+files we care about.
+
+00:17:47.656 --> 00:17:50.946 A:middle
+The first two entries simply
+
+00:17:51.686 --> 00:17:55.066 A:middle
+append the framework name to
+
+00:17:55.066 --> 00:17:55.586 A:middle
+your header.
+
+00:17:56.286 --> 00:17:57.126 A:middle
+Those two headers in the
+
+00:17:57.126 --> 00:17:58.916 A:middle
+beginning are public headers.
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.246 --> 00:25:00.206 A:middle
+VImage matrix multiply takes the
+
+00:25:00.206 --> 00:25:03.476 A:middle
+preBias, in this case minus 128,
+
+00:25:03.766 --> 00:25:06.786 A:middle
+to remove the bias, and because
+
+00:25:06.786 --> 00:25:08.276 A:middle
+the saturation is [inaudible]
+
+00:25:08.276 --> 00:25:10.466 A:middle
+point and the image is an
+
+00:25:10.466 --> 00:25:13.046 A:middle
+integer, we want to convert this
+
+00:25:13.046 --> 00:25:14.746 A:middle
+saturation value first into
+
+00:25:14.746 --> 00:25:15.806 A:middle
+fixed point format.
+
+00:25:16.366 --> 00:25:18.256 A:middle
+We chose Q12 as the fixed point
+
+00:25:18.256 --> 00:25:20.026 A:middle
+format, hence a divisor of
+
+00:25:20.026 --> 00:25:21.236 A:middle
+0x100.
+
+00:25:21.776 --> 00:25:24.086 A:middle
+And then we have the postBias
+
+00:25:24.086 --> 00:25:26.336 A:middle
+128 times the divisor, just to
+
+00:25:26.336 --> 00:25:27.796 A:middle
+put the bias back to the pixel.
+
+00:25:28.336 --> 00:25:32.036 A:middle
+And the matrix itself is really,
+
+00:25:32.036 --> 00:25:32.626 A:middle
+really simple.
+
+00:25:33.136 --> 00:25:35.006 A:middle
+All we want to do is just doing
+
+00:25:35.006 --> 00:25:37.246 A:middle
+a scaling of CbCr channel.
+
+00:25:37.546 --> 00:25:39.016 A:middle
+So the matrix itself is just a
+
+00:25:39.016 --> 00:25:42.026 A:middle
+scaler, want to multiply CbCr
+
+00:25:42.026 --> 00:25:43.966 A:middle
+channel with this scaler.
+
+00:25:44.836 --> 00:25:47.126 A:middle
+We have all the information, so
+
+00:25:47.126 --> 00:25:49.026 A:middle
+let's call vImageMatrixMultiply,
+
+00:25:49.906 --> 00:25:51.906 A:middle
+and with just one line of code,
+
+00:25:51.906 --> 00:25:53.606 A:middle
+one function call, you can
+
+00:25:53.666 --> 00:25:56.126 A:middle
+achieve the saturation effect.
+
+00:25:56.906 --> 00:25:58.616 A:middle
+Now let me come back to other
+
+00:25:58.616 --> 00:25:59.746 A:middle
+steps that we need to take.
+

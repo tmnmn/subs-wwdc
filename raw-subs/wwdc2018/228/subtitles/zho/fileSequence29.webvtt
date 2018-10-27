@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.940 --> 00:29:03.677 align:middle line:-2
+如你所见
+权重调用图稍候开始增加
+
+00:29:07.214 --> 00:29:09.283 align:middle line:-1
+这里能看到发布线程
+
+00:29:09.349 --> 00:29:10.717 align:middle line:-1
+消耗最多的CPU时间
+
+00:29:11.051 --> 00:29:12.352 align:middle line:-1
+我们深入一点看
+
+00:29:15.422 --> 00:29:19.059 align:middle line:-2
+我们看到在叫做
+appdelegate.compute的地方结束
+
+00:29:20.194 --> 00:29:23.497 align:middle line:-1
+我们回到app 试着理解那是什么
+
+00:29:29.837 --> 00:29:31.205 align:middle line:-1
+演示的目的
+
+00:29:32.206 --> 00:29:33.841 align:middle line:-1
+耗能游戏进入后台时
+
+00:29:33.907 --> 00:29:35.475 align:middle line:-2
+我们调用叫做
+computation的东西
+
+00:29:36.877 --> 00:29:39.913 align:middle line:-2
+Computation
+是个可怕的函数
+
+00:29:41.415 --> 00:29:45.853 align:middle line:-2
+当注入漏洞1时 其基本在
+while true死循环里
+
+00:29:46.286 --> 00:29:47.654 align:middle line:-1
+疯狂运转
+
+00:29:48.021 --> 00:29:50.090 align:middle line:-1
+演示目的很简单
+
+00:29:50.157 --> 00:29:53.060 align:middle line:-1
+但是用能耗表和时间分析器
+
+00:29:53.126 --> 00:29:55.629 align:middle line:-1
+能直接定位问题发生的位置
+
+00:29:56.530 --> 00:29:59.199 align:middle line:-2
+能看到
+while true循环是不好的
+

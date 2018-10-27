@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.366 --> 00:09:00.336 A:middle
+So let's try this.
+
+00:09:00.466 --> 00:09:01.626 A:middle
+Let's say we want to add a new
+
+00:09:01.626 --> 00:09:03.086 A:middle
+user to your team.
+
+00:09:03.836 --> 00:09:04.656 A:middle
+Now a quick aside.
+
+00:09:04.786 --> 00:09:06.466 A:middle
+We can't add the user directly.
+
+00:09:06.806 --> 00:09:08.156 A:middle
+Just like in App Store Connect
+
+00:09:08.156 --> 00:09:09.706 A:middle
+itself, you have to invite the
+
+00:09:09.706 --> 00:09:11.476 A:middle
+user to your team and then they
+
+00:09:11.476 --> 00:09:12.986 A:middle
+can accept that invitation.
+
+00:09:13.246 --> 00:09:15.596 A:middle
+So we're going to create a user
+
+00:09:15.596 --> 00:09:17.066 A:middle
+invitation resource.
+
+00:09:17.696 --> 00:09:18.546 A:middle
+It looks like this.
+
+00:09:18.796 --> 00:09:20.016 A:middle
+We do a POST because we're
+
+00:09:20.016 --> 00:09:20.546 A:middle
+creating.
+
+00:09:21.236 --> 00:09:22.726 A:middle
+And the URL is the user
+
+00:09:22.726 --> 00:09:24.296 A:middle
+Invitations resource URL.
+
+00:09:24.296 --> 00:09:26.046 A:middle
+And then we have to send in the
+
+00:09:26.046 --> 00:09:27.846 A:middle
+data for this user.
+
+00:09:28.246 --> 00:09:29.796 A:middle
+Now this data looks a lot like
+
+00:09:29.796 --> 00:09:31.396 A:middle
+what you've seen when we fetched
+
+00:09:31.396 --> 00:09:32.606 A:middle
+users before.
+
+00:09:32.736 --> 00:09:33.686 A:middle
+But there's one important
+
+00:09:33.686 --> 00:09:34.666 A:middle
+difference I want to point out.
+
+00:09:35.296 --> 00:09:37.546 A:middle
+We have a type user Invitations
+
+00:09:38.016 --> 00:09:38.846 A:middle
+but we don't have an ID.
+
+00:09:39.946 --> 00:09:41.316 A:middle
+Now Apple will assign an ID to
+
+00:09:41.386 --> 00:09:42.946 A:middle
+every resource you create for
+
+00:09:42.946 --> 00:09:43.176 A:middle
+you.
+
+00:09:43.176 --> 00:09:44.806 A:middle
+So you don't include that in the
+
+00:09:44.806 --> 00:09:45.256 A:middle
+POST.
+
+00:09:45.876 --> 00:09:47.066 A:middle
+We've also left off links
+
+00:09:47.196 --> 00:09:48.246 A:middle
+because they're not required for
+
+00:09:48.246 --> 00:09:48.736 A:middle
+creation.
+
+00:09:48.736 --> 00:09:50.336 A:middle
+And we've left off relationships
+
+00:09:50.376 --> 00:09:51.606 A:middle
+because they're not relevant in
+
+00:09:51.606 --> 00:09:52.516 A:middle
+this particular case.
+
+00:09:53.216 --> 00:09:54.856 A:middle
+If we run this request, we get a
+
+00:09:54.856 --> 00:09:55.476 A:middle
+response.
+
+00:09:56.116 --> 00:09:58.346 A:middle
+In particular, this is a 201
+
+00:09:58.566 --> 00:09:59.756 A:middle
+CREATED response.
+

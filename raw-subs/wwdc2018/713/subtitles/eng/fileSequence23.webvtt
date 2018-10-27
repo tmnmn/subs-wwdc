@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.026 --> 00:23:00.446 A:middle
+articles according to topic.
+
+00:23:00.856 --> 00:23:01.896 A:middle
+So this is some of what the
+
+00:23:01.896 --> 00:23:03.136 A:middle
+training data looks like.
+
+00:23:03.716 --> 00:23:05.466 A:middle
+Each training example is a chunk
+
+00:23:05.466 --> 00:23:07.106 A:middle
+of text and the appropriate
+
+00:23:07.106 --> 00:23:10.386 A:middle
+label by topic, entertainment,
+
+00:23:10.386 --> 00:23:12.016 A:middle
+politics, sports, and so on and
+
+00:23:12.016 --> 00:23:13.026 A:middle
+so forth.
+
+00:23:15.196 --> 00:23:18.436 A:middle
+And I also have some training
+
+00:23:18.436 --> 00:23:21.486 A:middle
+data to train a word tagger that
+
+00:23:21.486 --> 00:23:25.136 A:middle
+will recognize product names in
+
+00:23:25.136 --> 00:23:25.836 A:middle
+sentences.
+
+00:23:26.256 --> 00:23:27.766 A:middle
+So this training data is pretty
+
+00:23:27.766 --> 00:23:28.106 A:middle
+simple.
+
+00:23:28.666 --> 00:23:31.486 A:middle
+Each example consists of a
+
+00:23:31.486 --> 00:23:32.736 A:middle
+sentence considered as a
+
+00:23:32.736 --> 00:23:34.326 A:middle
+sequence of tokens and then a
+
+00:23:34.326 --> 00:23:35.936 A:middle
+sequence of labels, and each
+
+00:23:35.936 --> 00:23:38.456 A:middle
+label is either none, it's not a
+
+00:23:38.456 --> 00:23:40.716 A:middle
+product name, or prod, it is a
+
+00:23:40.716 --> 00:23:43.436 A:middle
+product name.
+
+00:23:43.696 --> 00:23:46.066 A:middle
+So, let's try to train with
+
+00:23:46.106 --> 00:23:46.436 A:middle
+these.
+
+00:23:47.186 --> 00:23:50.406 A:middle
+So first thing I want to do is
+
+00:23:50.926 --> 00:23:52.726 A:middle
+bring up a playground that I
+
+00:23:52.726 --> 00:23:55.786 A:middle
+have using Create ML, and this
+
+00:23:55.826 --> 00:23:58.576 A:middle
+playground will just load.
+
+00:23:58.646 --> 00:24:00.826 A:middle
+In this case, this is my product
+

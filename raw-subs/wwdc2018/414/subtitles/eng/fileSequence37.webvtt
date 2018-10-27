@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.356 --> 00:37:02.306 A:middle
+log, instead a new object is
+
+00:37:02.306 --> 00:37:04.636 A:middle
+allocated at the same address
+
+00:37:04.636 --> 00:37:06.106 A:middle
+where the old object used to be.
+
+00:37:06.906 --> 00:37:09.196 A:middle
+So when the code tries to use
+
+00:37:09.196 --> 00:37:11.176 A:middle
+the old object, call a function
+
+00:37:11.176 --> 00:37:13.046 A:middle
+on the old object, we have a
+
+00:37:13.146 --> 00:37:14.966 A:middle
+different object of a different
+
+00:37:14.966 --> 00:37:17.656 A:middle
+type at that same address and it
+
+00:37:17.656 --> 00:37:19.206 A:middle
+doesn't recognize that function
+
+00:37:19.206 --> 00:37:20.516 A:middle
+at all and we get an
+
+00:37:20.516 --> 00:37:22.326 A:middle
+unrecognized selector exception.
+
+00:37:24.636 --> 00:37:27.046 A:middle
+One other common symptom of
+
+00:37:27.046 --> 00:37:30.006 A:middle
+memory errors is an abort inside
+
+00:37:30.006 --> 00:37:31.696 A:middle
+the memory allocator itself,
+
+00:37:31.726 --> 00:37:33.226 A:middle
+inside the malloc and free
+
+00:37:33.226 --> 00:37:33.796 A:middle
+functions.
+
+00:37:33.796 --> 00:37:35.976 A:middle
+This is an example of a
+
+00:37:35.976 --> 00:37:37.966 A:middle
+precondition like we saw
+
+00:37:37.966 --> 00:37:39.456 A:middle
+earlier, this is a precondition
+
+00:37:39.566 --> 00:37:41.366 A:middle
+inside the memory allocator.
+
+00:37:42.016 --> 00:37:44.206 A:middle
+It may be identifying cases
+
+00:37:44.206 --> 00:37:47.776 A:middle
+where the heap data structure of
+
+00:37:47.776 --> 00:37:49.616 A:middle
+the malloc memory itself has
+
+00:37:49.616 --> 00:37:51.366 A:middle
+been corrupted by a memory error
+
+00:37:51.606 --> 00:37:52.826 A:middle
+and it halts the process and
+
+00:37:52.826 --> 00:37:53.546 A:middle
+response.
+
+00:37:54.106 --> 00:37:56.426 A:middle
+Or it may be detecting incorrect
+
+00:37:56.426 --> 00:37:59.056 A:middle
+use of the malloc APIs.
+
+00:37:59.056 --> 00:38:01.096 A:middle
+For example, if you free an
+

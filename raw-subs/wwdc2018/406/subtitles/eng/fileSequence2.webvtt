@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.796 --> 00:02:01.026 A:middle
+important part of Swift?
+
+00:02:01.836 --> 00:02:03.236 A:middle
+Well one way of seeing their
+
+00:02:03.236 --> 00:02:05.486 A:middle
+impact is by designing a simple
+
+00:02:05.486 --> 00:02:06.606 A:middle
+collection, like type.
+
+00:02:08.205 --> 00:02:09.666 A:middle
+We'll call it buffer, and it's
+
+00:02:09.666 --> 00:02:10.536 A:middle
+going to be similar to the
+
+00:02:10.536 --> 00:02:11.816 A:middle
+standard library's array type.
+
+00:02:12.876 --> 00:02:14.586 A:middle
+Now, the simplest possible API
+
+00:02:14.586 --> 00:02:15.856 A:middle
+for the reading part of a buffer
+
+00:02:15.856 --> 00:02:17.276 A:middle
+might include a count of the
+
+00:02:17.276 --> 00:02:18.096 A:middle
+number of elements.
+
+00:02:18.366 --> 00:02:20.046 A:middle
+And a way to fetch each element
+
+00:02:20.046 --> 00:02:21.026 A:middle
+to the given position in the
+
+00:02:21.026 --> 00:02:21.516 A:middle
+index.
+
+00:02:22.086 --> 00:02:23.376 A:middle
+But, what do we make of that
+
+00:02:23.376 --> 00:02:24.016 A:middle
+return type?
+
+00:02:24.916 --> 00:02:26.336 A:middle
+Now, if we didn't have generics,
+
+00:02:26.336 --> 00:02:28.136 A:middle
+we'd have to make it some kind
+
+00:02:28.136 --> 00:02:29.126 A:middle
+of type that could represent
+
+00:02:29.126 --> 00:02:30.556 A:middle
+anything that we'd want to put
+
+00:02:30.556 --> 00:02:31.376 A:middle
+inside the buffer.
+
+00:02:32.096 --> 00:02:33.966 A:middle
+You can call that type ID or
+
+00:02:33.966 --> 00:02:35.226 A:middle
+object or void star.
+
+00:02:35.506 --> 00:02:38.006 A:middle
+In Swift we call it Any, which
+
+00:02:38.006 --> 00:02:39.566 A:middle
+is a type that can stand in for
+
+00:02:39.566 --> 00:02:40.936 A:middle
+any different kind of type in
+
+00:02:40.936 --> 00:02:41.306 A:middle
+Swift.
+
+00:02:44.006 --> 00:02:45.106 A:middle
+So if you wanted to handle
+
+00:02:45.106 --> 00:02:45.996 A:middle
+anything in the buffer, you
+
+00:02:45.996 --> 00:02:47.356 A:middle
+could have subscript return an
+
+00:02:47.356 --> 00:02:47.706 A:middle
+Any.
+
+00:02:48.086 --> 00:02:49.496 A:middle
+But, of course, you probably
+
+00:02:49.496 --> 00:02:50.466 A:middle
+know that that leads to a really
+
+00:02:50.466 --> 00:02:51.906 A:middle
+unpleasant user experience.
+
+00:02:52.136 --> 00:02:53.186 A:middle
+At some point, you've got to get
+
+00:02:53.186 --> 00:02:55.086 A:middle
+out that type from inside the
+
+00:02:55.086 --> 00:02:55.566 A:middle
+box.
+
+00:02:56.076 --> 00:02:57.906 A:middle
+In order to actually use it.
+

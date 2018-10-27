@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.476 --> 00:18:01.496 A:middle
+way using NS coding and NS key
+
+00:18:01.496 --> 00:18:02.076 A:middle
+to archiver.
+
+00:18:02.106 --> 00:18:03.026 A:middle
+And I'll archive it.
+
+00:18:04.076 --> 00:18:05.876 A:middle
+But as we saw, when we unarchive
+
+00:18:05.876 --> 00:18:07.506 A:middle
+data, and we handle raw and
+
+00:18:07.506 --> 00:18:09.106 A:middle
+primitive data, we want to
+
+00:18:09.106 --> 00:18:09.566 A:middle
+validate it.
+
+00:18:10.746 --> 00:18:12.036 A:middle
+So, let's do that by taking a
+
+00:18:12.036 --> 00:18:13.186 A:middle
+look at how doing it with coder
+
+00:18:13.246 --> 00:18:13.756 A:middle
+here could work.
+
+00:18:14.276 --> 00:18:15.416 A:middle
+If you've ever written in a note
+
+00:18:15.416 --> 00:18:16.306 A:middle
+with coder, this might look
+
+00:18:16.306 --> 00:18:16.956 A:middle
+familiar to you.
+
+00:18:17.746 --> 00:18:19.396 A:middle
+We'll start by decoding the
+
+00:18:19.396 --> 00:18:20.206 A:middle
+product listing.
+
+00:18:20.426 --> 00:18:21.296 A:middle
+And again, we've learned to
+
+00:18:21.296 --> 00:18:23.086 A:middle
+conditionally downcast, instead
+
+00:18:23.086 --> 00:18:24.216 A:middle
+of forcibly downcasting.
+
+00:18:25.106 --> 00:18:26.346 A:middle
+And if something goes wrong,
+
+00:18:26.396 --> 00:18:27.446 A:middle
+well this is a fail-able
+
+00:18:27.446 --> 00:18:28.746 A:middle
+initializer, we'll simply return
+
+00:18:28.746 --> 00:18:29.306 A:middle
+nil, right?
+
+00:18:30.686 --> 00:18:32.526 A:middle
+if decoding succeeds, I'll
+
+00:18:32.526 --> 00:18:33.996 A:middle
+assign this to my property, and
+
+00:18:34.246 --> 00:18:34.836 A:middle
+I'll keep going.
+
+00:18:35.686 --> 00:18:36.766 A:middle
+I'll do the same thing with the
+
+00:18:36.766 --> 00:18:37.696 A:middle
+purchase data, and again,
+
+00:18:37.746 --> 00:18:38.886 A:middle
+conditionally downcast to a
+
+00:18:38.886 --> 00:18:39.176 A:middle
+date.
+
+00:18:39.286 --> 00:18:40.456 A:middle
+If something goes wrong, I'll
+
+00:18:40.516 --> 00:18:41.776 A:middle
+fail, and so on.
+
+00:18:41.776 --> 00:18:43.216 A:middle
+And repeat this for each of the
+
+00:18:43.216 --> 00:18:44.546 A:middle
+fields in my type.
+
+00:18:45.396 --> 00:18:47.056 A:middle
+When I want to save one of these
+
+00:18:47.096 --> 00:18:49.116 A:middle
+purchases to the history, well I
+
+00:18:49.116 --> 00:18:50.136 A:middle
+have a function, which does
+
+00:18:50.136 --> 00:18:50.516 A:middle
+this.
+
+00:18:50.906 --> 00:18:53.806 A:middle
+It archives a purchase to binary
+
+00:18:53.806 --> 00:18:54.086 A:middle
+data.
+
+00:18:54.226 --> 00:18:56.556 A:middle
+And then, I can save it out to
+
+00:18:56.556 --> 00:18:57.956 A:middle
+disc, or shrill that data off
+
+00:18:57.956 --> 00:18:59.106 A:middle
+into database or similar.
+
+00:18:59.226 --> 00:19:02.176 A:middle
+When I want to load that data
+

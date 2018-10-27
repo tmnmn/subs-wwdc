@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.726 --> 00:07:00.206 A:middle
+the most protection against
+
+00:07:00.206 --> 00:07:02.186 A:middle
+misuse by ensuring that
+
+00:07:02.186 --> 00:07:03.966 A:middle
+authorization tokens can't be
+
+00:07:03.966 --> 00:07:05.896 A:middle
+used for long if copied from
+
+00:07:05.896 --> 00:07:06.596 A:middle
+your source code.
+
+00:07:07.836 --> 00:07:09.196 A:middle
+This approach requires that you
+
+00:07:09.196 --> 00:07:11.026 A:middle
+provide a server endpoint to
+
+00:07:11.026 --> 00:07:13.126 A:middle
+respond to requests for MapKit
+
+00:07:13.126 --> 00:07:14.946 A:middle
+JS for new authorization tokens.
+
+00:07:15.716 --> 00:07:17.776 A:middle
+MapKit will refresh from this
+
+00:07:17.776 --> 00:07:19.436 A:middle
+endpoint any time it needs to
+
+00:07:19.436 --> 00:07:21.196 A:middle
+authorize throughout a user's
+
+00:07:21.196 --> 00:07:21.706 A:middle
+session.
+
+00:07:23.376 --> 00:07:25.766 A:middle
+First, the payload must contain
+
+00:07:25.916 --> 00:07:28.676 A:middle
+an ISS claim, which is your
+
+00:07:28.676 --> 00:07:30.476 A:middle
+Apple Developer Program ID.
+
+00:07:30.476 --> 00:07:34.066 A:middle
+You can find your Team ID in the
+
+00:07:34.066 --> 00:07:35.716 A:middle
+account section of the Apple
+
+00:07:35.716 --> 00:07:36.726 A:middle
+Developer website.
+
+00:07:36.996 --> 00:07:40.696 A:middle
+An IAT claim, which is when this
+
+00:07:40.696 --> 00:07:42.796 A:middle
+authorization token was issued
+
+00:07:42.796 --> 00:07:43.586 A:middle
+in seconds.
+
+00:07:43.826 --> 00:07:47.146 A:middle
+An EXP claim, which is when this
+
+00:07:47.146 --> 00:07:48.846 A:middle
+authorization token is meant to
+
+00:07:48.846 --> 00:07:50.166 A:middle
+expire in seconds.
+
+00:07:50.976 --> 00:07:52.536 A:middle
+For short-lived tokens, we
+
+00:07:52.536 --> 00:07:53.736 A:middle
+recommend 30 minutes.
+
+00:07:54.196 --> 00:07:56.516 A:middle
+And, finally, a claim of origin.
+
+00:07:57.156 --> 00:07:59.526 A:middle
+This can restrict browser access
+
+00:07:59.816 --> 00:08:01.536 A:middle
+by matching the origin header
+

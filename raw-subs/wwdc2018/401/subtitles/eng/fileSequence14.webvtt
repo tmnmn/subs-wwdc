@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.876 --> 00:14:01.396 A:middle
+calling convention so that it
+
+00:14:01.396 --> 00:14:02.606 A:middle
+was no longer the callee's
+
+00:14:02.606 --> 00:14:04.296 A:middle
+obligation to release the
+
+00:14:04.296 --> 00:14:04.806 A:middle
+object.
+
+00:14:05.206 --> 00:14:06.526 A:middle
+This means all these retains and
+
+00:14:06.526 --> 00:14:10.366 A:middle
+releases go away, which is a
+
+00:14:10.606 --> 00:14:12.066 A:middle
+significant reduction in
+
+00:14:12.066 --> 00:14:13.016 A:middle
+retained release traffic.
+
+00:14:13.936 --> 00:14:15.076 A:middle
+This has two implications.
+
+00:14:15.546 --> 00:14:16.916 A:middle
+It's both a code size win
+
+00:14:16.986 --> 00:14:19.026 A:middle
+because those calls are gone and
+
+00:14:19.026 --> 00:14:20.336 A:middle
+it has a runtime improvement.
+
+00:14:21.776 --> 00:14:24.746 A:middle
+Another important optimization
+
+00:14:24.746 --> 00:14:25.746 A:middle
+we did was to string.
+
+00:14:26.186 --> 00:14:28.506 A:middle
+And Swift 4.2 string is now 16
+
+00:14:28.506 --> 00:14:29.746 A:middle
+bytes big where it as previously
+
+00:14:29.746 --> 00:14:30.316 A:middle
+24.
+
+00:14:30.756 --> 00:14:31.976 A:middle
+We feel this is a good tradeoff
+
+00:14:31.976 --> 00:14:33.266 A:middle
+between memory usage and
+
+00:14:33.266 --> 00:14:33.936 A:middle
+performance.
+
+00:14:35.346 --> 00:14:37.356 A:middle
+It's also, however, still large
+
+00:14:37.356 --> 00:14:38.936 A:middle
+enough to do an important small
+
+00:14:38.936 --> 00:14:40.026 A:middle
+string optimization.
+
+00:14:40.706 --> 00:14:42.746 A:middle
+If the string fits within 15
+
+00:14:42.746 --> 00:14:45.226 A:middle
+bytes then the actual string is
+
+00:14:45.226 --> 00:14:46.636 A:middle
+represented directly in the
+
+00:14:46.636 --> 00:14:48.246 A:middle
+string type without going to the
+
+00:14:48.246 --> 00:14:49.306 A:middle
+heap to allocate a separate
+
+00:14:49.306 --> 00:14:50.806 A:middle
+buffer to represent the string.
+
+00:14:51.436 --> 00:14:53.456 A:middle
+This is obviously also a memory
+
+00:14:53.456 --> 00:14:55.066 A:middle
+win and a performance win.
+
+00:14:55.716 --> 00:14:56.546 A:middle
+This is as similar to an
+
+00:14:56.546 --> 00:14:57.866 A:middle
+optimization that exists within
+
+00:14:57.866 --> 00:14:58.286 A:middle
+a string.
+
+00:14:58.586 --> 00:14:59.986 A:middle
+We can actually represent larger
+
+00:14:59.986 --> 00:15:00.516 A:middle
+strings.
+

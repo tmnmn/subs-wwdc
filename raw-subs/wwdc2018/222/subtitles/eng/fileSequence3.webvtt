@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.156 --> 00:03:00.976 A:middle
+we'll call raw data.
+
+00:03:01.646 --> 00:03:03.416 A:middle
+Now, to get working with that
+
+00:03:03.416 --> 00:03:04.466 A:middle
+data, we need to make sure it
+
+00:03:04.536 --> 00:03:06.276 A:middle
+conforms to that known format or
+
+00:03:06.276 --> 00:03:06.756 A:middle
+structure.
+
+00:03:07.406 --> 00:03:08.946 A:middle
+And in this case, each of those
+
+00:03:08.946 --> 00:03:10.906 A:middle
+code points correspond into a
+
+00:03:11.006 --> 00:03:13.426 A:middle
+UTF code point, and sorry, one
+
+00:03:13.426 --> 00:03:14.186 A:middle
+moment, let me make that a
+
+00:03:14.186 --> 00:03:14.876 A:middle
+little bit more readable.
+
+00:03:15.416 --> 00:03:16.496 A:middle
+It looks like this is JSON.
+
+00:03:17.036 --> 00:03:18.946 A:middle
+And so, once we've made sure
+
+00:03:18.946 --> 00:03:20.336 A:middle
+that that data conforms to some
+
+00:03:20.336 --> 00:03:21.266 A:middle
+format that we want to work
+
+00:03:21.266 --> 00:03:23.106 A:middle
+with, we'll call this formatted
+
+00:03:24.506 --> 00:03:24.626 A:middle
+data.
+
+00:03:24.976 --> 00:03:26.536 A:middle
+Now, formatted data, on its own
+
+00:03:26.896 --> 00:03:28.176 A:middle
+doesn't mean much, until we
+
+00:03:28.286 --> 00:03:29.836 A:middle
+create primitive values out of
+
+00:03:29.836 --> 00:03:31.366 A:middle
+it, strings, and arrays, and
+
+00:03:31.366 --> 00:03:32.676 A:middle
+dictionaries that we can then
+
+00:03:32.676 --> 00:03:34.246 A:middle
+use as building blocks for
+
+00:03:34.246 --> 00:03:35.036 A:middle
+further algorithms.
+
+00:03:35.556 --> 00:03:36.816 A:middle
+So, this we'll call our
+
+00:03:36.816 --> 00:03:38.076 A:middle
+primitive data.
+
+00:03:39.086 --> 00:03:40.696 A:middle
+Now, there's building blocks we
+
+00:03:40.696 --> 00:03:41.876 A:middle
+most often want to work with,
+
+00:03:41.946 --> 00:03:43.566 A:middle
+not as just primitive values,
+
+00:03:43.936 --> 00:03:45.296 A:middle
+but as our own model types.
+
+00:03:46.546 --> 00:03:47.996 A:middle
+So, once we do that, we'll make
+
+00:03:48.056 --> 00:03:49.456 A:middle
+use of this as we're going to
+
+00:03:49.456 --> 00:03:51.376 A:middle
+call, structure data.
+
+00:03:52.016 --> 00:03:54.166 A:middle
+Now, these forms of data in our
+
+00:03:54.316 --> 00:03:56.876 A:middle
+apps, form an abstraction
+
+00:03:57.346 --> 00:03:57.826 A:middle
+timeline.
+
+00:03:59.076 --> 00:04:00.826 A:middle
+Raw data is the least abstract
+

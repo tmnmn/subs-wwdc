@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.226 --> 00:12:01.096 A:middle
+that %d to pass in four
+
+00:12:01.096 --> 00:12:01.556 A:middle
+integers.
+
+00:12:02.806 --> 00:12:04.846 A:middle
+But because it's an OSLog format
+
+00:12:04.846 --> 00:12:06.986 A:middle
+string, I can also use it to
+
+00:12:06.986 --> 00:12:08.316 A:middle
+pass many arguments of different
+
+00:12:08.316 --> 00:12:08.626 A:middle
+types.
+
+00:12:08.786 --> 00:12:09.766 A:middle
+So here I've passed in some
+
+00:12:09.766 --> 00:12:10.796 A:middle
+floating-point numbers.
+
+00:12:10.916 --> 00:12:12.266 A:middle
+And I've even used the format
+
+00:12:12.266 --> 00:12:14.726 A:middle
+specifier to tell the system how
+
+00:12:14.726 --> 00:12:15.736 A:middle
+much precision I want.
+
+00:12:16.246 --> 00:12:19.396 A:middle
+You can pass dynamic strings in
+
+00:12:19.396 --> 00:12:20.446 A:middle
+with the string literal
+
+00:12:20.446 --> 00:12:20.926 A:middle
+formatter.
+
+00:12:21.746 --> 00:12:23.086 A:middle
+And that'll let us pass in
+
+00:12:23.086 --> 00:12:24.186 A:middle
+information that comes from a
+
+00:12:24.186 --> 00:12:25.656 A:middle
+function call or comes from a
+
+00:12:25.656 --> 00:12:26.596 A:middle
+user entered piece of
+
+00:12:26.596 --> 00:12:27.186 A:middle
+information.
+
+00:12:28.046 --> 00:12:30.036 A:middle
+And we reference that format
+
+00:12:30.036 --> 00:12:31.756 A:middle
+string literal with a fixed
+
+00:12:31.756 --> 00:12:33.516 A:middle
+amount of storage which means
+
+00:12:33.516 --> 00:12:34.906 A:middle
+that you can feel free to make
+
+00:12:34.906 --> 00:12:36.746 A:middle
+it as long and as human readable
+
+00:12:36.746 --> 00:12:37.136 A:middle
+as you like.
+
+00:12:39.136 --> 00:12:41.356 A:middle
+This human readable string is
+
+00:12:41.356 --> 00:12:42.346 A:middle
+the same one that will be
+
+00:12:42.346 --> 00:12:43.656 A:middle
+rendered up in the Instruments.
+
+00:12:44.046 --> 00:12:45.246 A:middle
+So you can feel free to give it
+
+00:12:45.246 --> 00:12:45.986 A:middle
+some context.
+
+00:12:45.986 --> 00:12:47.106 A:middle
+I've given it here for the
+
+00:12:47.106 --> 00:12:48.006 A:middle
+various arguments.
+
+00:12:48.446 --> 00:12:49.866 A:middle
+And Instruments will be able to
+
+00:12:49.866 --> 00:12:51.146 A:middle
+show that full rendered string,
+
+00:12:51.576 --> 00:12:53.146 A:middle
+or it still has programmatic
+
+00:12:53.146 --> 00:12:54.806 A:middle
+access to the data that's
+
+00:12:55.296 --> 00:12:55.486 A:middle
+attached.
+
+00:12:57.756 --> 00:12:59.816 A:middle
+In addition to metadata for
+
+00:12:59.816 --> 00:13:01.226 A:middle
+those intervals, you may want to
+

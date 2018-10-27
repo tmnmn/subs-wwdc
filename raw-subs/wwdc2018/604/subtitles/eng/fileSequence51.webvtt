@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:58.986 --> 00:51:00.946 A:middle
+So now once GPU is done
+
+00:51:00.946 --> 00:51:02.586 A:middle
+executing this frame you should
+
+00:51:02.586 --> 00:51:04.116 A:middle
+see your frame on the display.
+
+00:51:04.646 --> 00:51:07.606 A:middle
+So that was our quick tour to
+
+00:51:07.606 --> 00:51:09.286 A:middle
+get your renderings onto the
+
+00:51:09.286 --> 00:51:10.596 A:middle
+display with Metal.
+
+00:51:11.156 --> 00:51:13.856 A:middle
+But I have a few more tips to
+
+00:51:13.856 --> 00:51:14.166 A:middle
+share.
+
+00:51:15.366 --> 00:51:17.296 A:middle
+It is possible to port one
+
+00:51:17.966 --> 00:51:19.596 A:middle
+render pass at a time into
+
+00:51:19.596 --> 00:51:19.936 A:middle
+Metal.
+
+00:51:19.936 --> 00:51:21.436 A:middle
+The IOSurface and CVPixelBuffer
+
+00:51:21.436 --> 00:51:25.696 A:middle
+APIs can be used to create a
+
+00:51:25.726 --> 00:51:27.596 A:middle
+texture which can be shared
+
+00:51:27.596 --> 00:51:29.266 A:middle
+between OpenGL and Metal.
+
+00:51:30.376 --> 00:51:32.586 A:middle
+This will allow you to render to
+
+00:51:32.586 --> 00:51:34.596 A:middle
+a texture in OpenGL and then
+
+00:51:34.596 --> 00:51:36.746 A:middle
+read from it in Metal or vice
+
+00:51:36.746 --> 00:51:36.926 A:middle
+versa.
+
+00:51:36.926 --> 00:51:39.876 A:middle
+So some of the applications can
+
+00:51:39.876 --> 00:51:41.616 A:middle
+leverage this to port
+
+00:51:41.616 --> 00:51:43.476 A:middle
+incrementally, especially with
+
+00:51:43.756 --> 00:51:45.076 A:middle
+plugin architectures which are
+
+00:51:45.076 --> 00:51:46.466 A:middle
+built around OpenGL.
+
+00:51:47.206 --> 00:51:49.546 A:middle
+So there is a sample code linked
+
+00:51:49.686 --> 00:51:51.796 A:middle
+to this session showing exactly
+
+00:51:51.796 --> 00:51:52.846 A:middle
+on how to do this.
+
+00:51:55.416 --> 00:51:56.796 A:middle
+Now that you have a Metal
+
+00:51:56.796 --> 00:51:58.806 A:middle
+application you can adopt all
+
+00:51:58.806 --> 00:51:59.906 A:middle
+new Metal features.
+

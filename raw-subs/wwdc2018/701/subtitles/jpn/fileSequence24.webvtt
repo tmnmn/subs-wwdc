@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.871 --> 00:24:01.842 align:start position:36% line:-2
+まずはカメラで
+画像を撮影します
+
+00:24:03.677 --> 00:24:08.448 align:start position:25% line:-2
+次にVimageを使うための
+準備として
+
+00:24:08.549 --> 00:24:12.352 align:start position:27% line:-1
+出入力バッファを用意します
+
+00:24:13.687 --> 00:24:17.558 align:start position:32% line:-2
+Vimageの機能で
+エフェクトをかけ
+
+00:24:18.859 --> 00:24:21.495 align:start position:30% line:-1
+スクリーンに出力します
+
+00:24:22.596 --> 00:24:28.268 align:start position:27% line:-2
+先にVimageを使った
+エフェクトの話をしましょう
+
+00:24:30.704 --> 00:24:33.106 align:start position:36% line:-2
+サチュレーション
+エフェクトは
+
+00:24:33.207 --> 00:24:36.910 align:start position:29% line:-1
+こちらの方程式を使います
+
+00:24:37.344 --> 00:24:40.347 align:start position:30% line:-2
+基本的には
+画素からバイアスを外し
+
+00:24:40.781 --> 00:24:44.985 align:start position:32% line:-2
+掛け算を使って
+エフェクトをかけます
+
+00:24:45.519 --> 00:24:48.655 align:start position:29% line:-1
+そしてバイアスを戻します
+
+00:24:49.656 --> 00:24:53.293 align:start position:32% line:-2
+Vimageは
+この作業を行うのです
+
+00:24:53.627 --> 00:24:56.296 align:start position:12% line:-2
+vImageMatrixMultiplyと
+いいます
+
+00:24:58.332 --> 00:25:01.168 align:start position:30% line:-2
+まずは
+プリバイアスを取り出し
+

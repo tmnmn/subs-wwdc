@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.496 --> 00:06:02.166 A:middle
+Passwords in the iCloud Keychain
+
+00:06:02.166 --> 00:06:03.896 A:middle
+Password Manager are stored
+
+00:06:03.896 --> 00:06:05.256 A:middle
+based on domains on the Web.
+
+00:06:05.456 --> 00:06:06.526 A:middle
+Like Apple.com.
+
+00:06:07.356 --> 00:06:08.696 A:middle
+Thus, it's important to have an
+
+00:06:08.696 --> 00:06:11.106 A:middle
+association between your app and
+
+00:06:11.466 --> 00:06:12.466 A:middle
+the domain on the Web.
+
+00:06:13.456 --> 00:06:14.536 A:middle
+This way, we're able to
+
+00:06:14.536 --> 00:06:16.516 A:middle
+confidently surface credentials
+
+00:06:16.516 --> 00:06:17.516 A:middle
+on the QuickType bar.
+
+00:06:18.346 --> 00:06:19.196 A:middle
+You already have this
+
+00:06:19.196 --> 00:06:20.686 A:middle
+association if you've adopted
+
+00:06:20.736 --> 00:06:22.396 A:middle
+Universal Links or Handoff.
+
+00:06:23.116 --> 00:06:25.346 A:middle
+The process of adding this
+
+00:06:25.346 --> 00:06:26.916 A:middle
+association is pretty simple.
+
+00:06:27.236 --> 00:06:28.686 A:middle
+You'll have a small change to
+
+00:06:28.686 --> 00:06:30.986 A:middle
+your apps Entitlements file and
+
+00:06:30.986 --> 00:06:32.346 A:middle
+you'll serve a file from your
+
+00:06:32.346 --> 00:06:33.186 A:middle
+domain on the Web.
+
+00:06:34.246 --> 00:06:35.786 A:middle
+If you'd like to see an in-depth
+
+00:06:35.786 --> 00:06:37.746 A:middle
+look at how to set this up, see
+
+00:06:37.746 --> 00:06:39.286 A:middle
+Introducing Password Autofill
+
+00:06:39.286 --> 00:06:41.716 A:middle
+for Apps from WWDC 2017.
+
+00:06:42.276 --> 00:06:45.426 A:middle
+It's important to always tag
+
+00:06:45.426 --> 00:06:46.876 A:middle
+your fields with text content
+
+00:06:46.876 --> 00:06:48.296 A:middle
+type, so that Autofill can be
+
+00:06:48.296 --> 00:06:49.566 A:middle
+offered at the right place.
+
+00:06:50.426 --> 00:06:51.886 A:middle
+Tag your username fields with
+
+00:06:51.886 --> 00:06:53.226 A:middle
+the username content type.
+
+00:06:54.366 --> 00:06:55.916 A:middle
+Tag fields where users are going
+
+00:06:55.916 --> 00:06:58.276 A:middle
+to be filling, or passwords for
+
+00:06:58.276 --> 00:06:59.796 A:middle
+existing accounts with a
+
+00:06:59.796 --> 00:07:00.986 A:middle
+password content type.
+

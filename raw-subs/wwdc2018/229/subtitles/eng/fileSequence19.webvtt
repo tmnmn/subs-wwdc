@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.996 --> 00:19:00.006 A:middle
+Spectacle gets printed, also
+
+00:19:00.006 --> 00:19:00.996 A:middle
+doesn't contain the word bear,
+
+00:19:01.146 --> 00:19:02.346 A:middle
+and we advance finally to gummy
+
+00:19:02.346 --> 00:19:04.936 A:middle
+bears, which mercifully has the
+
+00:19:04.936 --> 00:19:07.046 A:middle
+word bear in it, and which the
+
+00:19:07.046 --> 00:19:08.316 A:middle
+lazy filter collection can now
+
+00:19:08.346 --> 00:19:10.666 A:middle
+return to its caller.
+
+00:19:12.046 --> 00:19:12.976 A:middle
+Now what would happen if we
+
+00:19:12.976 --> 00:19:14.106 A:middle
+called first again?
+
+00:19:15.196 --> 00:19:18.476 A:middle
+Well, it's the same story.
+
+00:19:18.906 --> 00:19:19.896 A:middle
+We ask the lazy filter
+
+00:19:19.896 --> 00:19:21.536 A:middle
+collection, which defers to the
+
+00:19:21.536 --> 00:19:22.676 A:middle
+underlying collection, which
+
+00:19:22.676 --> 00:19:23.926 A:middle
+repeats that calculation,
+
+00:19:24.796 --> 00:19:25.836 A:middle
+returning it to its caller.
+
+00:19:26.066 --> 00:19:29.046 A:middle
+Now this might not typically be
+
+00:19:29.046 --> 00:19:30.626 A:middle
+what you want, and so if you
+
+00:19:30.626 --> 00:19:31.506 A:middle
+find yourself needing to
+
+00:19:31.506 --> 00:19:32.586 A:middle
+repeatedly ask the lazy
+
+00:19:32.586 --> 00:19:33.576 A:middle
+collection to calculate its
+
+00:19:33.576 --> 00:19:35.066 A:middle
+result, there's a way to make
+
+00:19:35.066 --> 00:19:35.976 A:middle
+sure that that happens just
+
+00:19:35.976 --> 00:19:36.356 A:middle
+once.
+
+00:19:36.876 --> 00:19:38.836 A:middle
+We can ensure that the lazy
+
+00:19:38.836 --> 00:19:40.176 A:middle
+collection is iterated exactly
+
+00:19:40.176 --> 00:19:42.116 A:middle
+once by creating a new nonlazy
+
+00:19:42.176 --> 00:19:44.466 A:middle
+collection from the lazy, and
+
+00:19:44.466 --> 00:19:46.156 A:middle
+when you do this, it will still
+
+00:19:46.156 --> 00:19:47.306 A:middle
+defer to the lazy collection,
+
+00:19:47.786 --> 00:19:48.586 A:middle
+but now the iteration will
+
+00:19:48.586 --> 00:19:50.466 A:middle
+proceed through the entirety of
+
+00:19:50.466 --> 00:19:51.686 A:middle
+your underlying collection,
+
+00:19:53.536 --> 00:19:55.116 A:middle
+producing essentially, you know,
+
+00:19:55.116 --> 00:19:56.706 A:middle
+the nonlazy version of that lazy
+
+00:19:56.706 --> 00:19:57.376 A:middle
+calculation.
+
+00:19:57.446 --> 00:19:59.096 A:middle
+And so in this case, we get an
+
+00:19:59.096 --> 00:20:00.266 A:middle
+array containing the string
+

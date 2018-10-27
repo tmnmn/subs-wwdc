@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:59.566 --> 00:50:01.056 A:middle
+And it will be really hard to
+
+00:50:01.056 --> 00:50:02.246 A:middle
+make sure that all the code in
+
+00:50:02.246 --> 00:50:04.466 A:middle
+my app does it correctly, so
+
+00:50:04.466 --> 00:50:06.316 A:middle
+let's change it to private
+
+00:50:06.316 --> 00:50:06.686 A:middle
+instead.
+
+00:50:07.116 --> 00:50:09.536 A:middle
+And let me introduce a different
+
+00:50:09.536 --> 00:50:11.726 A:middle
+way of accessing image cache and
+
+00:50:11.726 --> 00:50:13.536 A:middle
+I'll do that by introducing a
+
+00:50:13.536 --> 00:50:14.076 A:middle
+subscript.
+
+00:50:15.206 --> 00:50:16.806 A:middle
+That means that users of image
+
+00:50:16.806 --> 00:50:19.056 A:middle
+cache can use brackets to load
+
+00:50:19.056 --> 00:50:20.236 A:middle
+and store data from the cache.
+
+00:50:21.596 --> 00:50:24.546 A:middle
+So subscripting needs a getter,
+
+00:50:25.846 --> 00:50:27.086 A:middle
+like this one and a setter.
+
+00:50:28.446 --> 00:50:30.016 A:middle
+And for now let's just implement
+
+00:50:30.016 --> 00:50:31.986 A:middle
+these by directly accessing the
+
+00:50:31.986 --> 00:50:32.896 A:middle
+underlying storage.
+
+00:50:34.586 --> 00:50:36.206 A:middle
+And to make the rest of this
+
+00:50:36.456 --> 00:50:37.936 A:middle
+file actually build I need to
+
+00:50:37.936 --> 00:50:39.976 A:middle
+update the users, so instead of
+
+00:50:40.456 --> 00:50:41.876 A:middle
+accessing the storage property
+
+00:50:42.056 --> 00:50:43.646 A:middle
+we should be using brackets and
+
+00:50:43.646 --> 00:50:45.526 A:middle
+index into image cache directly
+
+00:50:46.226 --> 00:50:47.216 A:middle
+like this.
+
+00:50:47.436 --> 00:50:49.886 A:middle
+So if I hit Build Now you'll see
+
+00:50:49.886 --> 00:50:52.176 A:middle
+that the code will compile fine
+
+00:50:52.176 --> 00:50:53.586 A:middle
+now, but I didn't really fix any
+
+00:50:53.586 --> 00:50:54.176 A:middle
+bugs yet.
+
+00:50:55.006 --> 00:50:56.716 A:middle
+But I did achieve something, I
+
+00:50:56.716 --> 00:50:59.276 A:middle
+now have direct control over all
+
+00:50:59.276 --> 00:51:00.476 A:middle
+the code that can access
+

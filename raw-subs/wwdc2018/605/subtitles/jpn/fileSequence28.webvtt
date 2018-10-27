@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.111 --> 00:28:01.048 align:start position:27% line:-1
+プロトコルも２つ作りました
+
+00:28:01.148 --> 00:28:04.184 align:start position:12% line:-2
+“BitStreamEncodable”と
+“BitStreamDecodable”
+
+00:28:04.585 --> 00:28:06.753 align:start position:11% line:-1
+合わせて“BitStreamCodable”
+
+00:28:07.354 --> 00:28:11.959 align:start position:29% line:-2
+これでシリアライズする
+全オブジェクトをマークし
+
+00:28:12.059 --> 00:28:13.660 align:start position:39% line:-1
+実装しました
+
+00:28:14.027 --> 00:28:17.798 align:start position:32% line:-2
+データオブジェクトと
+システム内の
+
+00:28:17.898 --> 00:28:22.736 align:start position:30% line:-2
+SIMDの浮動小数点
+ベクトルなども含みます
+
+00:28:25.172 --> 00:28:28.141 align:start position:36% line:-1
+浮動小数の圧縮は
+
+00:28:28.475 --> 00:28:33.580 align:start position:32% line:-2
+最小および最大範囲と
+指定のビット数で設定
+
+00:28:35.082 --> 00:28:36.884 align:start position:38% line:-1
+値をクランプし
+
+00:28:36.984 --> 00:28:41.955 align:start position:27% line:-2
+指定のビット数で
+エンコード用の整数値に変換
+
+00:28:42.790 --> 00:28:46.126 align:start position:36% line:-2
+各オブジェクトに
+これを適用します
+
+00:28:46.560 --> 00:28:51.665 align:start position:30% line:-2
+追加ビットを使って
+動きの更新状況を把握し
+
+00:28:51.999 --> 00:28:55.035 align:start position:36% line:-2
+動きがなければ
+情報は再送しない
+
+00:28:57.204 --> 00:29:02.376 align:start position:23% line:-2
+アクションの列挙型には
+BitStreamを用いました
+

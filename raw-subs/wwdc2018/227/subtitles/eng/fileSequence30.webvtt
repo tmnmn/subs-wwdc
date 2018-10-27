@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.376 --> 00:30:00.426 A:middle
+Well what are some techniques
+
+00:30:00.426 --> 00:30:01.736 A:middle
+that can be used to address
+
+00:30:01.736 --> 00:30:01.976 A:middle
+this?
+
+00:30:03.816 --> 00:30:06.106 A:middle
+One common design technique is
+
+00:30:06.106 --> 00:30:07.396 A:middle
+to turn on point boundary
+
+00:30:07.396 --> 00:30:08.796 A:middle
+snapping in your vector design
+
+00:30:08.796 --> 00:30:11.806 A:middle
+tool, set up a grid at one-point
+
+00:30:11.806 --> 00:30:13.496 A:middle
+intervals and turn on snapping
+
+00:30:13.496 --> 00:30:15.106 A:middle
+so that when you adjust your
+
+00:30:15.106 --> 00:30:16.496 A:middle
+shape or your control points
+
+00:30:16.496 --> 00:30:17.366 A:middle
+that you know that they can
+
+00:30:17.366 --> 00:30:18.876 A:middle
+snap, when they snap to a
+
+00:30:18.876 --> 00:30:19.726 A:middle
+boundary you know that that's
+
+00:30:19.726 --> 00:30:23.416 A:middle
+going to be a pixel boundary and
+
+00:30:23.416 --> 00:30:23.916 A:middle
+that's great.
+
+00:30:24.836 --> 00:30:26.506 A:middle
+But there's still some cases
+
+00:30:26.506 --> 00:30:27.866 A:middle
+that you might have with a
+
+00:30:27.866 --> 00:30:29.626 A:middle
+design where some of the edges
+
+00:30:29.626 --> 00:30:31.476 A:middle
+are still perhaps landing
+
+00:30:31.606 --> 00:30:34.596 A:middle
+somewhere in between one and two
+
+00:30:34.596 --> 00:30:35.546 A:middle
+and you're not sure, but you'd
+
+00:30:35.546 --> 00:30:37.086 A:middle
+really like to know, especially
+
+00:30:37.086 --> 00:30:38.476 A:middle
+on a retina 2x device what's
+
+00:30:38.476 --> 00:30:39.876 A:middle
+going to happen there and can I
+
+00:30:39.876 --> 00:30:42.216 A:middle
+optimize further for the actual
+
+00:30:42.216 --> 00:30:42.846 A:middle
+display density.
+
+00:30:43.466 --> 00:30:44.976 A:middle
+Well what you can do is you can
+
+00:30:44.976 --> 00:30:46.456 A:middle
+actually use a 2x grid, make
+
+00:30:46.456 --> 00:30:48.206 A:middle
+your asset twice as nominally
+
+00:30:48.206 --> 00:30:49.636 A:middle
+big in your vector design tool
+
+00:30:50.126 --> 00:30:52.216 A:middle
+and make that grid now be a
+
+00:30:52.216 --> 00:30:54.566 A:middle
+one-pixel grid where every two
+
+00:30:54.566 --> 00:30:56.206 A:middle
+points, every two units is going
+
+00:30:56.206 --> 00:30:57.416 A:middle
+to be one point for retina.
+
+00:30:58.676 --> 00:31:01.066 A:middle
+And then adjust your assets and
+

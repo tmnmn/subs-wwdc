@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.961 --> 00:26:01.962 align:middle line:-1
+具体讲下
+
+00:26:04.264 --> 00:26:06.066 align:middle line:-1
+模块映射很简单
+
+00:26:06.133 --> 00:26:08.502 align:middle line:-2
+这是Foundation的
+整个模块映射
+
+00:26:08.569 --> 00:26:09.403 align:middle line:-1
+就这些
+
+00:26:10.437 --> 00:26:11.805 align:middle line:-1
+显然它描述了
+
+00:26:11.939 --> 00:26:14.074 align:middle line:-2
+模块的名称
+就是Foundation
+
+00:26:14.875 --> 00:26:19.813 align:middle line:-2
+它还说明了
+哪个头文件属于该模块
+
+00:26:20.614 --> 00:26:23.617 align:middle line:-1
+这里只有一个头文件
+
+00:26:23.684 --> 00:26:25.052 align:middle line:-1
+Foundation.h
+
+00:26:25.752 --> 00:26:28.922 align:middle line:-2
+但这个头文件很特殊
+这是umbrella header
+
+00:26:28.989 --> 00:26:31.792 align:middle line:-2
+用特殊关键词
+umbrella标出
+
+00:26:32.426 --> 00:26:33.260 align:middle line:-1
+这是说…
+
+00:26:33.493 --> 00:26:36.830 align:middle line:-2
+Clang要查找
+这个特殊的头文件
+
+00:26:37.164 --> 00:26:41.034 align:middle line:-2
+来确定NSString.h
+是不是模块的一部分
+
+00:26:42.269 --> 00:26:43.704 align:middle line:-1
+耶 找到了！
+
+00:26:44.271 --> 00:26:45.105 align:middle line:-1
+好了
+
+00:26:45.172 --> 00:26:46.940 align:middle line:-1
+我们已经确定
+
+00:26:47.007 --> 00:26:50.010 align:middle line:-2
+NSString.h是
+foundation模块的一部分
+
+00:26:50.577 --> 00:26:54.181 align:middle line:-1
+Clang可以升级文本输入
+
+00:26:54.248 --> 00:26:55.649 align:middle line:-1
+到模块输入
+
+00:26:56.283 --> 00:26:59.152 align:middle line:-2
+为此我们要创建
+foundation模块
+

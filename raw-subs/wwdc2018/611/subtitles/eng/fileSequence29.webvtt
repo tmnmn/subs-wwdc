@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.746 --> 00:29:00.896 A:middle
+So, the simplest way to reduce
+
+00:29:00.896 --> 00:29:03.836 A:middle
+our fill rate is to prevent our
+
+00:29:03.836 --> 00:29:05.426 A:middle
+application from rendering those
+
+00:29:05.486 --> 00:29:07.066 A:middle
+pixels that won't be visible
+
+00:29:07.066 --> 00:29:09.616 A:middle
+anyway, and you can do that
+
+00:29:09.616 --> 00:29:12.176 A:middle
+easily by using SteamVR Stencil
+
+00:29:12.176 --> 00:29:12.946 A:middle
+Mask.
+
+00:29:14.416 --> 00:29:18.836 A:middle
+So we've just saved 20% of our
+
+00:29:18.836 --> 00:29:20.406 A:middle
+fill rate by applying this
+
+00:29:20.406 --> 00:29:22.626 A:middle
+simple mask, and reduce our Vive
+
+00:29:22.966 --> 00:29:26.806 A:middle
+Pro fill rate to 620 megapixels.
+
+00:29:29.286 --> 00:29:32.236 A:middle
+Now, we will analyze implication
+
+00:29:32.276 --> 00:29:33.776 A:middle
+of this lens distortion
+
+00:29:33.776 --> 00:29:35.326 A:middle
+correction in more detail.
+
+00:29:36.336 --> 00:29:40.836 A:middle
+We will divide our field of view
+
+00:29:40.836 --> 00:29:42.936 A:middle
+into nine sections.
+
+00:29:43.886 --> 00:29:45.986 A:middle
+Central section has field of
+
+00:29:45.986 --> 00:29:48.396 A:middle
+view of 80 degrees horizontally
+
+00:29:48.456 --> 00:29:51.276 A:middle
+by 80 degrees vertically, and we
+
+00:29:51.276 --> 00:29:53.206 A:middle
+have surrounding sections on the
+
+00:29:53.266 --> 00:29:54.396 A:middle
+edges and corners.
+
+00:29:55.306 --> 00:29:57.596 A:middle
+We've color tinted them to
+
+00:29:57.596 --> 00:29:58.956 A:middle
+better visualize the
+
+00:29:58.956 --> 00:30:00.726 A:middle
+contribution to final image.
+

@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.680 --> 00:18:01.181 align:middle line:-1
+我们要将变化观察者
+
+00:18:01.248 --> 00:18:02.449 align:middle line:-1
+加到
+
+00:18:02.883 --> 00:18:05.919 align:middle line:-1
+下面这里
+
+00:18:09.323 --> 00:18:11.725 align:middle line:-2
+我们实现了
+photoLibraryDidChange
+
+00:18:12.693 --> 00:18:14.094 align:middle line:-1
+PhotoLibraryDidChange
+
+00:18:14.161 --> 00:18:17.397 align:middle line:-2
+会在照片库中有内容
+发生变化的时候被调用
+
+00:18:18.098 --> 00:18:22.603 align:middle line:-2
+我们会以方法参数的形式
+获得changeInstance
+
+00:18:23.537 --> 00:18:25.472 align:middle line:-2
+我们可以请求
+changeInstance
+
+00:18:25.539 --> 00:18:28.475 align:middle line:-2
+获得我们感兴趣的
+changeDetails的一个对象
+
+00:18:28.842 --> 00:18:33.146 align:middle line:-2
+我们对项目中
+fetchAllAssets的变化感兴趣
+
+00:18:33.213 --> 00:18:35.082 align:middle line:-2
+所以我们要传入
+fetchResult
+
+00:18:35.716 --> 00:18:38.785 align:middle line:-2
+如果返回了
+changeDetails
+
+00:18:38.852 --> 00:18:45.325 align:middle line:-2
+我们会利用fetchResultsAfterChanges
+来更新本地缓存的结果
+
+00:18:45.559 --> 00:18:49.630 align:middle line:-2
+并获得projectExtensionContext
+以及调用updatedProjectInfo
+
+00:18:50.631 --> 00:18:52.733 align:middle line:-1
+传入我们的项目信息
+
+00:18:53.634 --> 00:18:56.336 align:middle line:-2
+在updatedProjectInfo
+被返回给我们之后
+
+00:18:56.403 --> 00:18:58.372 align:middle line:-1
+我们可以调用相同的设置代码
+
+00:18:58.438 --> 00:19:01.175 align:middle line:-1
+但是你可以实现更复杂的功能
+

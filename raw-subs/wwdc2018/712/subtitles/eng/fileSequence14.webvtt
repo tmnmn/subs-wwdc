@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:56.396 --> 00:14:00.376 A:middle
+And that we way we can refer to
+
+00:14:00.376 --> 00:14:01.946 A:middle
+it as TC throughout the rest of
+
+00:14:01.946 --> 00:14:02.416 A:middle
+the script.
+
+00:14:03.576 --> 00:14:05.326 A:middle
+Now, the first task we want to
+
+00:14:06.166 --> 00:14:07.336 A:middle
+do is load data.
+
+00:14:07.916 --> 00:14:12.086 A:middle
+And we're going to load it up
+
+00:14:12.086 --> 00:14:13.356 A:middle
+into SFrame format.
+
+00:14:14.256 --> 00:14:15.846 A:middle
+So first we can say images
+
+00:14:15.846 --> 00:14:18.046 A:middle
+equals TC.loadimages.
+
+00:14:18.536 --> 00:14:19.386 A:middle
+And we're going to give it that
+
+00:14:19.386 --> 00:14:21.216 A:middle
+folder day that I just showed in
+
+00:14:21.216 --> 00:14:21.616 A:middle
+Finder.
+
+00:14:22.166 --> 00:14:26.476 A:middle
+And Turi Create provides
+
+00:14:26.476 --> 00:14:28.206 A:middle
+utilities to interactively
+
+00:14:28.206 --> 00:14:29.766 A:middle
+explore and visualize our data.
+
+00:14:30.006 --> 00:14:31.346 A:middle
+So let's make sure those images
+
+00:14:31.346 --> 00:14:32.866 A:middle
+loaded correctly and we got the
+
+00:14:32.866 --> 00:14:34.016 A:middle
+resulting SFrame that we
+
+00:14:34.016 --> 00:14:34.496 A:middle
+expected.
+
+00:14:35.216 --> 00:14:36.696 A:middle
+I'm just going to call .explore,
+
+00:14:37.456 --> 00:14:38.826 A:middle
+and this is going to open up a
+
+00:14:38.826 --> 00:14:40.346 A:middle
+visualization window where we
+
+00:14:40.346 --> 00:14:41.976 A:middle
+can see that we have two columns
+
+00:14:41.976 --> 00:14:42.696 A:middle
+in our SFrame.
+
+00:14:43.166 --> 00:14:44.746 A:middle
+The first is called path, and
+
+00:14:44.746 --> 00:14:46.256 A:middle
+it's the relative path to that
+
+00:14:46.256 --> 00:14:47.106 A:middle
+image on disk.
+
+00:14:47.536 --> 00:14:48.816 A:middle
+And the second column is called
+
+00:14:48.816 --> 00:14:49.296 A:middle
+image.
+
+00:14:49.566 --> 00:14:50.876 A:middle
+And that's actually the contents
+
+00:14:50.876 --> 00:14:51.866 A:middle
+of the image itself.
+
+00:14:52.096 --> 00:14:53.166 A:middle
+And we can see our breakfast
+
+00:14:53.206 --> 00:14:53.906 A:middle
+foods right here.
+
+00:14:54.676 --> 00:14:55.586 A:middle
+It looks like these loaded
+
+00:14:55.586 --> 00:14:56.956 A:middle
+correctly, so I'm going to
+
+00:14:56.956 --> 00:14:57.356 A:middle
+proceed.
+
+00:14:57.906 --> 00:15:01.026 A:middle
+Back in Jupyter notebook.
+

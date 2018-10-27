@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.216 --> 00:30:00.756 A:middle
+We simply put the panda in the
+
+00:30:00.756 --> 00:30:00.946 A:middle
+array.
+
+00:30:01.576 --> 00:30:04.006 A:middle
+There's a second thing that you
+
+00:30:04.006 --> 00:30:05.306 A:middle
+need to keep in mind when
+
+00:30:05.306 --> 00:30:07.466 A:middle
+working with the foundation
+
+00:30:07.466 --> 00:30:08.586 A:middle
+collections in Swift.
+
+00:30:08.816 --> 00:30:11.696 A:middle
+And that is, all objective-C
+
+00:30:11.696 --> 00:30:13.416 A:middle
+APIs in Swift appear as Swift
+
+00:30:13.546 --> 00:30:14.616 A:middle
+native value types.
+
+00:30:14.926 --> 00:30:15.856 A:middle
+And this is actually really
+
+00:30:15.856 --> 00:30:16.986 A:middle
+wonderful because it let's code
+
+00:30:16.986 --> 00:30:18.706 A:middle
+in each language speak naturally
+
+00:30:18.706 --> 00:30:19.596 A:middle
+with the types that they work
+
+00:30:19.596 --> 00:30:19.926 A:middle
+with best.
+
+00:30:21.046 --> 00:30:21.846 A:middle
+But how can this work?
+
+00:30:22.216 --> 00:30:22.946 A:middle
+The two languages have
+
+00:30:22.946 --> 00:30:23.526 A:middle
+completely different
+
+00:30:23.526 --> 00:30:24.426 A:middle
+implementations for these
+
+00:30:24.426 --> 00:30:24.866 A:middle
+collections.
+
+00:30:25.976 --> 00:30:27.986 A:middle
+And the reason why it works is
+
+00:30:27.986 --> 00:30:28.886 A:middle
+something known as bridging.
+
+00:30:29.566 --> 00:30:30.526 A:middle
+Bridging is how we convert
+
+00:30:30.526 --> 00:30:31.416 A:middle
+between the two different
+
+00:30:31.776 --> 00:30:33.266 A:middle
+runtime representations, and
+
+00:30:33.266 --> 00:30:33.886 A:middle
+this is something that's
+
+00:30:33.926 --> 00:30:35.036 A:middle
+necessary because Swift and
+
+00:30:35.036 --> 00:30:36.736 A:middle
+objective-C, I'm sure you've
+
+00:30:36.736 --> 00:30:37.946 A:middle
+noticed, are very different
+
+00:30:37.946 --> 00:30:39.686 A:middle
+languages with very different
+
+00:30:39.686 --> 00:30:41.236 A:middle
+compile and runtime features.
+
+00:30:42.326 --> 00:30:43.436 A:middle
+And while we've optimized
+
+00:30:43.436 --> 00:30:44.976 A:middle
+bridging to be as fast as it can
+
+00:30:44.976 --> 00:30:46.186 A:middle
+be, it's not free.
+
+00:30:46.546 --> 00:30:48.146 A:middle
+There will always be a cost when
+
+00:30:48.146 --> 00:30:48.886 A:middle
+bridging between the two
+
+00:30:48.886 --> 00:30:49.466 A:middle
+languages.
+
+00:30:50.656 --> 00:30:52.066 A:middle
+So what happens when we bridge?
+
+00:30:52.836 --> 00:30:54.206 A:middle
+Well, when we bridge between the
+
+00:30:54.206 --> 00:30:55.606 A:middle
+language, we have dispersed set
+
+00:30:55.606 --> 00:30:57.166 A:middle
+up new storage, equivalent
+
+00:30:57.166 --> 00:30:58.376 A:middle
+storage, so if you're taking n
+
+00:30:58.376 --> 00:30:59.246 A:middle
+things in one language, you'll
+
+00:30:59.246 --> 00:31:00.806 A:middle
+take up n space in the next one.
+

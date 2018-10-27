@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:57.010 --> 00:33:02.716 align:middle line:0
+我们要创建一个文件供应器
+并且我们要提供一个JPEG图片
+
+00:33:03.317 --> 00:33:08.455 align:middle line:0
+我们会用这个userInfo属性
+来储存snapshotItem
+
+00:33:08.856 --> 00:33:11.892 align:middle line:0
+我们后面会用它来将文件写到磁盘上
+
+00:33:13.894 --> 00:33:18.699 align:middle line:0
+然后我们要遵从
+NSFilePromiseProviderDelegate
+
+00:33:22.169 --> 00:33:23.470 align:middle line:-1
+就像是这样
+
+00:33:24.538 --> 00:33:25.706 align:middle line:-1
+回到下面
+
+00:33:26.139 --> 00:33:29.610 align:middle line:0
+实现你刚才听到的三个代理方法
+
+00:33:32.179 --> 00:33:34.715 align:middle line:-1
+第一个会返回文件名
+
+00:33:36.450 --> 00:33:39.753 align:middle line:-2
+为了简单
+我们这里只返回了一个静态文件名
+
+00:33:41.255 --> 00:33:43.857 align:middle line:-2
+第二个代理会返回
+operationQueue
+
+00:33:44.758 --> 00:33:46.860 align:middle line:-1
+我们这里正好有一个
+
+00:33:47.895 --> 00:33:52.399 align:middle line:-1
+第三个代理要将文件写入到磁盘中
+
+00:33:58.739 --> 00:34:00.073 align:middle line:-1
+这里所发生的是
+

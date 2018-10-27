@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.426 --> 00:20:00.326 A:middle
+data organization and you can
+
+00:20:00.366 --> 00:20:02.056 A:middle
+actually organize your test data
+
+00:20:02.056 --> 00:20:03.326 A:middle
+in the exact same way.
+
+00:20:06.376 --> 00:20:08.296 A:middle
+Now with your training data and
+
+00:20:08.296 --> 00:20:10.196 A:middle
+test data ready, what other
+
+00:20:10.196 --> 00:20:12.246 A:middle
+steps involve to train such a
+
+00:20:12.246 --> 00:20:13.196 A:middle
+text classifier?
+
+00:20:16.046 --> 00:20:17.806 A:middle
+A typical workflow would look
+
+00:20:17.806 --> 00:20:18.576 A:middle
+something like this.
+
+00:20:20.046 --> 00:20:21.396 A:middle
+You start with your raw text.
+
+00:20:22.286 --> 00:20:24.206 A:middle
+You do a language identification
+
+00:20:24.206 --> 00:20:25.536 A:middle
+to figure out which language it
+
+00:20:25.536 --> 00:20:25.906 A:middle
+is in.
+
+00:20:27.286 --> 00:20:28.916 A:middle
+You convert that into tokens.
+
+00:20:30.306 --> 00:20:31.756 A:middle
+And then you convert that into
+
+00:20:31.756 --> 00:20:34.946 A:middle
+some feature values and then you
+
+00:20:34.946 --> 00:20:36.216 A:middle
+can apply a machine learning
+
+00:20:36.216 --> 00:20:38.536 A:middle
+model that gives you some
+
+00:20:38.536 --> 00:20:40.116 A:middle
+predictive value that you have
+
+00:20:40.116 --> 00:20:42.066 A:middle
+to map to some desired label.
+
+00:20:42.066 --> 00:20:44.126 A:middle
+And then you can compare that
+
+00:20:44.126 --> 00:20:46.256 A:middle
+label to your truth label and
+
+00:20:46.346 --> 00:20:49.206 A:middle
+start iterating on it.
+
+00:20:49.466 --> 00:20:51.926 A:middle
+With Create ML, though, we took
+
+00:20:51.926 --> 00:20:54.666 A:middle
+away all these complexities so
+
+00:20:54.666 --> 00:20:56.696 A:middle
+that all you need to do is to
+
+00:20:56.696 --> 00:20:58.896 A:middle
+prepare raw text with their
+
+00:20:58.896 --> 00:21:01.226 A:middle
+truth label and start training
+

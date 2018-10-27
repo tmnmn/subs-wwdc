@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:02.186 --> 00:09:03.346 A:middle
+The second quantization
+
+00:09:03.346 --> 00:09:04.726 A:middle
+technique that Core ML supports
+
+00:09:05.046 --> 00:09:06.356 A:middle
+is lookup table quantization.
+
+00:09:07.226 --> 00:09:08.456 A:middle
+And this technique is exactly
+
+00:09:08.456 --> 00:09:09.166 A:middle
+what it sounds like.
+
+00:09:09.716 --> 00:09:10.816 A:middle
+We construct a lookup table.
+
+00:09:11.986 --> 00:09:13.396 A:middle
+Now again it's helpful if we
+
+00:09:13.396 --> 00:09:14.596 A:middle
+imagine how we would go back
+
+00:09:14.596 --> 00:09:15.946 A:middle
+from our quantized weights back
+
+00:09:15.946 --> 00:09:16.676 A:middle
+to our original weights.
+
+00:09:17.016 --> 00:09:19.056 A:middle
+And in this case, the quantized
+
+00:09:19.056 --> 00:09:21.006 A:middle
+weights are simply indices back
+
+00:09:21.006 --> 00:09:22.746 A:middle
+into our lookup table.
+
+00:09:24.036 --> 00:09:25.326 A:middle
+Now, if you notice, unlike
+
+00:09:25.326 --> 00:09:26.546 A:middle
+linear quantization, we have the
+
+00:09:26.546 --> 00:09:28.986 A:middle
+ability to move our quantized
+
+00:09:28.986 --> 00:09:29.536 A:middle
+weights around.
+
+00:09:29.696 --> 00:09:30.956 A:middle
+They don't have to be spaced out
+
+00:09:30.956 --> 00:09:31.866 A:middle
+in a linear fashion.
+
+00:09:33.906 --> 00:09:35.806 A:middle
+So to recap, Core ML Tools
+
+00:09:35.806 --> 00:09:38.746 A:middle
+supports linear quantization and
+
+00:09:38.746 --> 00:09:40.126 A:middle
+lookup table quantization where
+
+00:09:40.126 --> 00:09:41.266 A:middle
+we start off with a full
+
+00:09:41.266 --> 00:09:42.576 A:middle
+precision neural network model.
+
+00:09:42.936 --> 00:09:43.906 A:middle
+And quantize the weights for
+
+00:09:43.906 --> 00:09:45.396 A:middle
+that model using the utilities.
+
+00:09:46.226 --> 00:09:48.276 A:middle
+Now you may be wondering well
+
+00:09:48.276 --> 00:09:49.646 A:middle
+great, I can reduce the size of
+
+00:09:49.646 --> 00:09:50.106 A:middle
+my model.
+
+00:09:50.836 --> 00:09:52.326 A:middle
+But how do I figure out the
+
+00:09:52.466 --> 00:09:53.956 A:middle
+parameters for my quantization?
+
+00:09:54.436 --> 00:09:55.296 A:middle
+If I'm doing linear
+
+00:09:55.296 --> 00:09:56.706 A:middle
+quantization, how do I figure
+
+00:09:56.706 --> 00:09:57.676 A:middle
+out my scale and bias?
+
+00:09:58.366 --> 00:09:59.336 A:middle
+If I'm doing lookup table
+
+00:09:59.336 --> 00:10:01.326 A:middle
+quantization, how do I construct
+

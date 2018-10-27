@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.916 --> 00:44:01.826 A:middle
+that initial data if we can to
+
+00:44:01.826 --> 00:44:04.226 A:middle
+send in TCP Fast Open.
+
+00:44:04.936 --> 00:44:06.696 A:middle
+There is one other way I want to
+
+00:44:06.696 --> 00:44:08.816 A:middle
+point out to use TCP Fast Open
+
+00:44:09.166 --> 00:44:10.636 A:middle
+that doesn't require your
+
+00:44:10.636 --> 00:44:12.146 A:middle
+application to send it's own
+
+00:44:12.926 --> 00:44:13.056 A:middle
+data.
+
+00:44:14.416 --> 00:44:16.666 A:middle
+If you're using TLS on top of
+
+00:44:16.696 --> 00:44:19.926 A:middle
+TCP, the first message from TLS,
+
+00:44:20.096 --> 00:44:21.716 A:middle
+the client hello, can actually
+
+00:44:21.716 --> 00:44:24.216 A:middle
+be used as the TCP Fast Open
+
+00:44:24.286 --> 00:44:24.926 A:middle
+initial data.
+
+00:44:25.946 --> 00:44:27.376 A:middle
+If you want to just enable this
+
+00:44:27.376 --> 00:44:29.316 A:middle
+and not provide your own Fast
+
+00:44:29.316 --> 00:44:32.226 A:middle
+Open data, simply go into the
+
+00:44:32.226 --> 00:44:34.846 A:middle
+TCP-specific options and mark
+
+00:44:34.846 --> 00:44:35.896 A:middle
+that you want to enable Fast
+
+00:44:35.896 --> 00:44:37.766 A:middle
+Open there, and it will
+
+00:44:37.866 --> 00:44:39.886 A:middle
+automatically grab the first
+
+00:44:39.886 --> 00:44:41.706 A:middle
+message from TLS to send out
+
+00:44:41.866 --> 00:44:43.086 A:middle
+during connection establishment.
+
+00:44:46.816 --> 00:44:47.896 A:middle
+There's another thing that you
+
+00:44:47.896 --> 00:44:49.456 A:middle
+can do to optimize your
+
+00:44:49.456 --> 00:44:50.586 A:middle
+connection establishment and
+
+00:44:50.586 --> 00:44:52.356 A:middle
+save a roundtrip, and this is
+
+00:44:52.356 --> 00:44:53.816 A:middle
+something that Stuart mentioned
+
+00:44:53.916 --> 00:44:55.876 A:middle
+in the previous session, which
+
+00:44:55.876 --> 00:44:57.626 A:middle
+we're calling Optimistic DNS.
+
+00:44:58.736 --> 00:45:00.256 A:middle
+This allows you to use
+

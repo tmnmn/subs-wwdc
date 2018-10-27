@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.146 --> 00:21:00.466 A:middle
+telltale sign of this being the
+
+00:21:00.466 --> 00:21:01.816 A:middle
+situation that there's actually
+
+00:21:01.816 --> 00:21:03.426 A:middle
+just two completely separate
+
+00:21:03.426 --> 00:21:04.896 A:middle
+layouts that someone has in mind
+
+00:21:05.346 --> 00:21:07.406 A:middle
+and we're trying to sort of pack
+
+00:21:07.406 --> 00:21:09.196 A:middle
+them together into one set of
+
+00:21:09.196 --> 00:21:10.766 A:middle
+constraints and do it all in
+
+00:21:10.766 --> 00:21:11.286 A:middle
+one.
+
+00:21:11.836 --> 00:21:13.606 A:middle
+And that's also not a real good
+
+00:21:13.606 --> 00:21:13.906 A:middle
+idea.
+
+00:21:14.276 --> 00:21:17.056 A:middle
+So that will -- that creates a
+
+00:21:17.056 --> 00:21:18.316 A:middle
+lot of false dependencies,
+
+00:21:18.616 --> 00:21:19.776 A:middle
+places where it seems like
+
+00:21:19.776 --> 00:21:20.846 A:middle
+things interact that they really
+
+00:21:20.846 --> 00:21:21.196 A:middle
+don't.
+
+00:21:21.586 --> 00:21:22.786 A:middle
+It's also nearly impossible to
+
+00:21:22.786 --> 00:21:25.506 A:middle
+Debug, if you haven't noticed.
+
+00:21:26.186 --> 00:21:30.406 A:middle
+So the overall advice is try to
+
+00:21:30.406 --> 00:21:32.026 A:middle
+model the problem as directly as
+
+00:21:32.026 --> 00:21:32.516 A:middle
+possible.
+
+00:21:32.766 --> 00:21:33.826 A:middle
+Kasia is going to walk through
+
+00:21:33.826 --> 00:21:34.786 A:middle
+this kind of case where you're
+
+00:21:34.786 --> 00:21:35.736 A:middle
+switching between different
+
+00:21:35.736 --> 00:21:36.706 A:middle
+layouts and show that a little
+
+00:21:36.706 --> 00:21:37.396 A:middle
+more explicitly.
+
+00:21:38.186 --> 00:21:40.106 A:middle
+But that's the general advice.
+
+00:21:40.346 --> 00:21:41.886 A:middle
+Just use it in a natural way.
+
+00:21:42.036 --> 00:21:43.276 A:middle
+It's better for both performance
+
+00:21:43.606 --> 00:21:45.176 A:middle
+and for understandability.
+
+00:21:45.736 --> 00:21:50.596 A:middle
+OK, so that most of what we have
+
+00:21:50.596 --> 00:21:50.926 A:middle
+to say.
+
+00:21:51.186 --> 00:21:52.526 A:middle
+But since we're trying to build
+
+00:21:52.526 --> 00:21:54.276 A:middle
+an overall mental model of the
+
+00:21:54.276 --> 00:21:55.336 A:middle
+performance characteristics of
+
+00:21:55.336 --> 00:21:57.146 A:middle
+Layout, I want to at least make
+
+00:21:57.146 --> 00:21:58.836 A:middle
+sure we touch on all of the
+
+00:21:58.836 --> 00:21:59.636 A:middle
+major features.
+
+00:21:59.856 --> 00:22:01.186 A:middle
+So there are some other things
+

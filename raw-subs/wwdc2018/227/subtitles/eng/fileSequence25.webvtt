@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.126 --> 00:25:00.456 A:middle
+identify the stretchable
+
+00:25:00.456 --> 00:25:02.526 A:middle
+portions of the image and the
+
+00:25:02.526 --> 00:25:03.526 A:middle
+unstretchable portions of the
+
+00:25:03.526 --> 00:25:03.806 A:middle
+image.
+
+00:25:04.066 --> 00:25:05.616 A:middle
+In this example the left and
+
+00:25:05.616 --> 00:25:06.786 A:middle
+right end caps and then that
+
+00:25:06.876 --> 00:25:08.646 A:middle
+middle slice that's orange is
+
+00:25:08.646 --> 00:25:09.596 A:middle
+the one that's the stretchable
+
+00:25:09.596 --> 00:25:09.956 A:middle
+piece.
+
+00:25:10.696 --> 00:25:13.696 A:middle
+Now you may notice there's a big
+
+00:25:13.896 --> 00:25:15.446 A:middle
+piece of this image that has got
+
+00:25:15.446 --> 00:25:17.366 A:middle
+this white shading over it, what
+
+00:25:17.366 --> 00:25:18.086 A:middle
+is that all about?
+
+00:25:18.086 --> 00:25:19.736 A:middle
+Well that's actually a really
+
+00:25:19.736 --> 00:25:21.986 A:middle
+interesting thing, that part of
+
+00:25:21.986 --> 00:25:24.086 A:middle
+the asset is not actually going
+
+00:25:24.086 --> 00:25:26.106 A:middle
+to be needed anymore because we
+
+00:25:26.106 --> 00:25:27.556 A:middle
+can represent any possible size
+
+00:25:27.556 --> 00:25:28.886 A:middle
+with the three remaining pieces.
+
+00:25:29.506 --> 00:25:31.126 A:middle
+Okay why is this important?
+
+00:25:31.966 --> 00:25:33.596 A:middle
+Well the nice thing is now that
+
+00:25:33.596 --> 00:25:35.876 A:middle
+Xcode knows this at build time
+
+00:25:35.876 --> 00:25:37.866 A:middle
+we can actually just take the
+
+00:25:37.866 --> 00:25:39.066 A:middle
+pieces we need and leave the
+
+00:25:39.066 --> 00:25:40.056 A:middle
+rest behind.
+
+00:25:40.756 --> 00:25:42.306 A:middle
+So that large section we don't
+
+00:25:42.306 --> 00:25:43.126 A:middle
+have to include that in the
+
+00:25:43.126 --> 00:25:44.836 A:middle
+bytes on disk that we actually
+
+00:25:44.836 --> 00:25:46.746 A:middle
+ship in your app, that's great.
+
+00:25:47.276 --> 00:25:49.616 A:middle
+And it also means that it has a
+
+00:25:49.616 --> 00:25:50.936 A:middle
+secondary benefit and this is a
+
+00:25:50.936 --> 00:25:52.376 A:middle
+more subtle one, but I really
+
+00:25:52.376 --> 00:25:52.856 A:middle
+like this.
+
+00:25:53.366 --> 00:25:54.556 A:middle
+It means that you can tell your
+
+00:25:54.556 --> 00:25:56.376 A:middle
+designer to feel totally
+
+00:25:56.376 --> 00:25:57.956 A:middle
+comfortable delivering assets at
+
+00:25:57.956 --> 00:26:00.066 A:middle
+sort of their natural size and
+

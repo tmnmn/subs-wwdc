@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.956 --> 00:30:01.056 A:middle
+Comic Sans because it's been
+
+00:30:01.056 --> 00:30:02.136 A:middle
+totally eliminated from the
+
+00:30:02.226 --> 00:30:03.976 A:middle
+string but it's wrong.
+
+00:30:04.086 --> 00:30:05.446 A:middle
+And it's wrong in a different
+
+00:30:05.446 --> 00:30:06.276 A:middle
+way from last time.
+
+00:30:06.826 --> 00:30:08.586 A:middle
+And to understand the
+
+00:30:08.586 --> 00:30:09.796 A:middle
+difference, let's recall that
+
+00:30:09.796 --> 00:30:11.686 A:middle
+attribute fixing happens before
+
+00:30:11.686 --> 00:30:13.296 A:middle
+layout and this is where the
+
+00:30:13.296 --> 00:30:14.736 A:middle
+system repairs the inconsistent
+
+00:30:14.736 --> 00:30:15.236 A:middle
+attributes.
+
+00:30:16.216 --> 00:30:17.196 A:middle
+And so here in our attributed
+
+00:30:17.286 --> 00:30:18.546 A:middle
+string we have a single
+
+00:30:18.546 --> 00:30:19.906 A:middle
+paragraph with multiple
+
+00:30:19.906 --> 00:30:21.736 A:middle
+paragraph styles and that's
+
+00:30:21.776 --> 00:30:22.646 A:middle
+pretty inconsistent.
+
+00:30:23.496 --> 00:30:24.996 A:middle
+So when the system fixes the
+
+00:30:24.996 --> 00:30:26.426 A:middle
+attributes of this string, it's
+
+00:30:26.426 --> 00:30:27.086 A:middle
+going to take the first
+
+00:30:27.086 --> 00:30:28.976 A:middle
+paragraph style it finds and
+
+00:30:28.976 --> 00:30:29.706 A:middle
+apply it to the entire
+
+00:30:29.706 --> 00:30:30.206 A:middle
+paragraph.
+
+00:30:31.236 --> 00:30:32.296 A:middle
+And that's how we ended up with
+
+00:30:32.296 --> 00:30:34.096 A:middle
+our attributed string displaying
+
+00:30:34.096 --> 00:30:35.046 A:middle
+with the default paragraph
+
+00:30:35.046 --> 00:30:35.386 A:middle
+style.
+
+00:30:35.946 --> 00:30:38.486 A:middle
+And the key take away here is to
+
+00:30:38.486 --> 00:30:39.906 A:middle
+be explicit with your
+
+00:30:39.906 --> 00:30:41.416 A:middle
+attributes, especially when
+
+00:30:41.416 --> 00:30:42.216 A:middle
+you're mixing plain and
+
+00:30:42.216 --> 00:30:42.926 A:middle
+attributed text.
+
+00:30:43.836 --> 00:30:44.916 A:middle
+So by doing this, you're going
+
+00:30:44.916 --> 00:30:46.346 A:middle
+to avoid this reset effect with
+
+00:30:46.346 --> 00:30:47.216 A:middle
+the default attributes.
+
+00:30:47.826 --> 00:30:49.406 A:middle
+And for AppKit developers, this
+
+00:30:49.406 --> 00:30:51.126 A:middle
+is actually super important if
+
+00:30:51.126 --> 00:30:52.176 A:middle
+you're updating your app for
+
+00:30:52.176 --> 00:30:52.696 A:middle
+dark mode.
+
+00:30:53.286 --> 00:30:54.526 A:middle
+So by using the explicit
+
+00:30:54.526 --> 00:30:56.056 A:middle
+attributes with the dynamic
+
+00:30:56.056 --> 00:30:57.886 A:middle
+colors like NSColor.textColor,
+
+00:30:57.946 --> 00:30:59.216 A:middle
+you'll ensure that your text is
+
+00:30:59.216 --> 00:31:00.146 A:middle
+drawn with the correct colors
+

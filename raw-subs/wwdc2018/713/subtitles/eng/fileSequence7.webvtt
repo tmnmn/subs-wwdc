@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.836 --> 00:07:00.276 A:middle
+feel familiar, but it's much
+
+00:07:00.276 --> 00:07:01.656 A:middle
+easier to remember and to use.
+
+00:07:02.126 --> 00:07:03.986 A:middle
+You import Natural Language.
+
+00:07:04.866 --> 00:07:06.246 A:middle
+You now create an instance of
+
+00:07:06.306 --> 00:07:08.516 A:middle
+NLTagger, and you specify the
+
+00:07:08.516 --> 00:07:09.996 A:middle
+scheme type to be name type.
+
+00:07:10.926 --> 00:07:11.896 A:middle
+If you want part of speech
+
+00:07:11.896 --> 00:07:13.076 A:middle
+tagging, then you would specify
+
+00:07:13.076 --> 00:07:14.426 A:middle
+the scheme type to be lexical
+
+00:07:14.426 --> 00:07:14.906 A:middle
+class.
+
+00:07:15.656 --> 00:07:17.556 A:middle
+You again specify the string
+
+00:07:17.556 --> 00:07:18.546 A:middle
+that you want to process.
+
+00:07:19.466 --> 00:07:21.336 A:middle
+In this particular instance, you
+
+00:07:21.336 --> 00:07:23.446 A:middle
+specify the language, so you set
+
+00:07:23.446 --> 00:07:24.636 A:middle
+the language to be English.
+
+00:07:24.866 --> 00:07:27.016 A:middle
+So if you were not familiar or
+
+00:07:27.016 --> 00:07:28.026 A:middle
+if you're not sure about what
+
+00:07:28.026 --> 00:07:29.646 A:middle
+the language is, Natural
+
+00:07:29.646 --> 00:07:30.956 A:middle
+Language will automatically
+
+00:07:30.956 --> 00:07:32.726 A:middle
+recognize the language using the
+
+00:07:32.726 --> 00:07:34.076 A:middle
+language identification API
+
+00:07:34.076 --> 00:07:34.886 A:middle
+under the hood.
+
+00:07:35.116 --> 00:07:37.816 A:middle
+And finally, you call the tags
+
+00:07:38.296 --> 00:07:39.936 A:middle
+method on this object that you
+
+00:07:39.936 --> 00:07:40.556 A:middle
+just created.
+
+00:07:40.836 --> 00:07:42.456 A:middle
+You specify the unit to be word
+
+00:07:42.456 --> 00:07:44.026 A:middle
+and the scheme to be name type.
+
+00:07:44.536 --> 00:07:46.826 A:middle
+And what you get as an output is
+
+00:07:47.166 --> 00:07:49.006 A:middle
+the person names here, Prince
+
+00:07:49.006 --> 00:07:50.426 A:middle
+Harry and Meghan Markle, and the
+
+00:07:50.426 --> 00:07:51.526 A:middle
+location to be Windsor.
+
+00:07:51.776 --> 00:07:53.376 A:middle
+Now if the user were to go back
+
+00:07:53.376 --> 00:07:55.246 A:middle
+to the search bar, based on the
+
+00:07:55.246 --> 00:07:56.596 A:middle
+contextual information of what
+
+00:07:56.596 --> 00:07:58.006 A:middle
+the user has been browsing, you
+
+00:07:58.006 --> 00:07:59.326 A:middle
+can significantly enhance the
+
+00:07:59.326 --> 00:08:01.386 A:middle
+search experience in your app.
+

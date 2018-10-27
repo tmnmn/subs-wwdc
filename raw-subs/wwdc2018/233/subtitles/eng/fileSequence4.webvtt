@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.706 --> 00:04:00.066 A:middle
+information shown on this
+
+00:04:00.066 --> 00:04:02.126 A:middle
+display is public.
+
+00:04:02.956 --> 00:04:04.416 A:middle
+&gt;&gt; Additionally, while the
+
+00:04:04.416 --> 00:04:06.186 A:middle
+displays built into iPhone and
+
+00:04:06.276 --> 00:04:08.406 A:middle
+iPad are interactive, the
+
+00:04:08.406 --> 00:04:10.096 A:middle
+external display is not.
+
+00:04:10.246 --> 00:04:12.656 A:middle
+So, you should avoid showing UI
+
+00:04:12.656 --> 00:04:14.326 A:middle
+elements, or other interactable
+
+00:04:14.326 --> 00:04:15.856 A:middle
+controls on the external
+
+00:04:15.856 --> 00:04:16.276 A:middle
+display.
+
+00:04:16.856 --> 00:04:19.526 A:middle
+&gt;&gt; So, let's apply this kind of
+
+00:04:19.606 --> 00:04:21.685 A:middle
+thinking to our demo app, and
+
+00:04:21.685 --> 00:04:24.086 A:middle
+see what we can come up with.
+
+00:04:24.266 --> 00:04:26.316 A:middle
+Here's our optimized version for
+
+00:04:26.316 --> 00:04:27.206 A:middle
+the external display.
+
+00:04:28.516 --> 00:04:29.636 A:middle
+As you can see, we're now
+
+00:04:29.636 --> 00:04:32.356 A:middle
+showing the selected photo full
+
+00:04:32.356 --> 00:04:34.326 A:middle
+size on the external display.
+
+00:04:34.326 --> 00:04:36.886 A:middle
+And, on the integrated display,
+
+00:04:37.316 --> 00:04:38.206 A:middle
+we're showing just the
+
+00:04:38.256 --> 00:04:39.816 A:middle
+thumbnails, and a new selection
+
+00:04:39.816 --> 00:04:41.896 A:middle
+indicator to show the photo that
+
+00:04:41.896 --> 00:04:43.086 A:middle
+is currently being shown full
+
+00:04:43.086 --> 00:04:43.496 A:middle
+screen.
+
+00:04:45.096 --> 00:04:46.886 A:middle
+While simple, this is a really
+
+00:04:46.926 --> 00:04:49.386 A:middle
+powerful use of this design.
+
+00:04:50.616 --> 00:04:52.166 A:middle
+To show you how we built this
+
+00:04:52.166 --> 00:04:53.736 A:middle
+into our demo app, we're going
+
+00:04:53.736 --> 00:04:54.886 A:middle
+to cover three topics.
+
+00:04:56.176 --> 00:04:58.716 A:middle
+Connectivity, behavior, and
+
+00:04:58.716 --> 00:04:59.886 A:middle
+connection transitions.
+

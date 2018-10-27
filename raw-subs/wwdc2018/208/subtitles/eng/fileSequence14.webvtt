@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.586 --> 00:14:00.666 A:middle
+find your environment, and its
+
+00:14:00.666 --> 00:14:02.876 A:middle
+child environments or items, you
+
+00:14:02.876 --> 00:14:04.766 A:middle
+must supply a parent focus
+
+00:14:04.766 --> 00:14:05.906 A:middle
+environment, and a
+
+00:14:05.906 --> 00:14:07.066 A:middle
+focusItemContainer.
+
+00:14:07.326 --> 00:14:09.506 A:middle
+For example, UIViewController
+
+00:14:09.506 --> 00:14:10.736 A:middle
+might provide its parent
+
+00:14:10.736 --> 00:14:11.866 A:middle
+viewController as its
+
+00:14:11.866 --> 00:14:13.806 A:middle
+parentFocusEnvironment, and its
+
+00:14:13.806 --> 00:14:16.076 A:middle
+view as its focusItemContainer.
+
+00:14:17.336 --> 00:14:18.926 A:middle
+FocusEnvironment provides
+
+00:14:18.926 --> 00:14:20.296 A:middle
+several methods you can use to
+
+00:14:20.296 --> 00:14:22.016 A:middle
+control and react to focus
+
+00:14:22.016 --> 00:14:22.636 A:middle
+updates.
+
+00:14:22.986 --> 00:14:23.766 A:middle
+For example,
+
+00:14:24.036 --> 00:14:25.706 A:middle
+preferredFocusEnvironments
+
+00:14:25.706 --> 00:14:27.336 A:middle
+allows you to guide the focus
+
+00:14:27.336 --> 00:14:29.476 A:middle
+system in selecting what item is
+
+00:14:29.546 --> 00:14:30.636 A:middle
+focused after view
+
+00:14:30.636 --> 00:14:32.246 A:middle
+initialization, or a
+
+00:14:32.246 --> 00:14:33.776 A:middle
+programmatic focus update.
+
+00:14:34.686 --> 00:14:36.136 A:middle
+I'd like to call your attention
+
+00:14:36.136 --> 00:14:38.036 A:middle
+to two specific methods on the
+
+00:14:38.036 --> 00:14:39.076 A:middle
+focusEnvironment.
+
+00:14:39.666 --> 00:14:41.666 A:middle
+SetNeedsFocusUpdate and
+
+00:14:41.666 --> 00:14:42.836 A:middle
+updateFocusIfNeeded.
+
+00:14:43.276 --> 00:14:44.866 A:middle
+Your implementation of these
+
+00:14:44.866 --> 00:14:48.006 A:middle
+methods must call to a specific
+
+00:14:48.006 --> 00:14:49.766 A:middle
+method on the focusSystem.
+
+00:14:51.116 --> 00:14:53.626 A:middle
+Next, let's implement a custom
+
+00:14:53.626 --> 00:14:54.896 A:middle
+focusItemContainer.
+
+00:14:56.876 --> 00:14:58.716 A:middle
+First, you will need to provide
+
+00:14:58.716 --> 00:14:59.726 A:middle
+a coordinateSpace.
+

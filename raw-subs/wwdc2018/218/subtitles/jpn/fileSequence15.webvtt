@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.665 --> 00:15:02.469 align:start position:32% line:-2
+しかし ビュー自体の
+無効化については
+
+00:15:02.703 --> 00:15:04.905 align:start position:32% line:-2
+AppKitが
+自動でやってくれます
+
+00:15:07.107 --> 00:15:10.077 align:start position:12% line:-2
+次はCurrent Appearanceの
+概念です
+
+00:15:10.477 --> 00:15:13.647 align:start position:27% line:-2
+このスレッドローカル変数に
+アクセスするには
+
+00:15:13.747 --> 00:15:17.284 align:start position:23% line:-2
+NSAppearanceの
+classプロパティを使います
+
+00:15:18.385 --> 00:15:23.624 align:start position:20% line:-2
+最新のNSGraphicsや
+NSProgressに詳しい方なら
+
+00:15:23.724 --> 00:15:25.759 align:start position:34% line:-1
+理解できるでしょう
+
+00:15:25.859 --> 00:15:29.062 align:start position:29% line:-1
+つまりは動的な色や画像を
+
+00:15:29.163 --> 00:15:32.065 align:start position:36% line:-2
+変化させるための
+アピアランスです
+
+00:15:34.301 --> 00:15:38.505 align:start position:4% line:-2
+AppKitはCurrent Appearanceを
+自動で設定します
+
+00:15:38.605 --> 00:15:41.808 align:start position:7% line:-2
+updateConstraintsやlayout
+draw updateLayerといった―
+
+00:15:41.909 --> 00:15:45.546 align:start position:29% line:-2
+NSViewのメソッドを
+呼び出す前にです
+
+00:15:46.613 --> 00:15:49.817 align:start position:32% line:-2
+自身で実行することも
+できます
+
+00:15:49.917 --> 00:15:52.386 align:start position:29% line:-1
+その例をお見せしましょう
+
+00:15:55.255 --> 00:15:58.892 align:start position:29% line:-2
+サブレイヤを維持する
+カスタムビューがあります
+

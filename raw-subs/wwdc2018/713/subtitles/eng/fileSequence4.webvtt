@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.186 --> 00:04:00.226 A:middle
+your app, when it gets the
+
+00:04:00.226 --> 00:04:01.886 A:middle
+message in Chinese, simply
+
+00:04:01.886 --> 00:04:03.886 A:middle
+doesn't know what to do with it.
+
+00:04:04.086 --> 00:04:05.246 A:middle
+So how can we use natural
+
+00:04:05.246 --> 00:04:06.346 A:middle
+language to overcome this
+
+00:04:06.346 --> 00:04:06.756 A:middle
+problem?
+
+00:04:06.926 --> 00:04:09.816 A:middle
+Well, we can do this with two
+
+00:04:09.816 --> 00:04:11.266 A:middle
+simple calls to two different
+
+00:04:11.266 --> 00:04:11.636 A:middle
+APIs.
+
+00:04:12.216 --> 00:04:13.256 A:middle
+The first is language
+
+00:04:13.256 --> 00:04:13.986 A:middle
+identification.
+
+00:04:14.326 --> 00:04:16.106 A:middle
+With the new Natural Language
+
+00:04:16.106 --> 00:04:17.396 A:middle
+framework, you start off by
+
+00:04:17.456 --> 00:04:18.696 A:middle
+importing Natural Language.
+
+00:04:19.836 --> 00:04:21.226 A:middle
+You create an instance of
+
+00:04:21.226 --> 00:04:23.146 A:middle
+NLLanguageRecognizer class.
+
+00:04:24.006 --> 00:04:25.456 A:middle
+You attach the string that you
+
+00:04:25.456 --> 00:04:27.476 A:middle
+would like to process, and you
+
+00:04:27.476 --> 00:04:28.676 A:middle
+simply call the dominant
+
+00:04:28.676 --> 00:04:29.436 A:middle
+language API.
+
+00:04:30.036 --> 00:04:32.256 A:middle
+Now this will return the single
+
+00:04:32.256 --> 00:04:34.596 A:middle
+best hypothesis in terms of
+
+00:04:34.596 --> 00:04:35.746 A:middle
+language for the string.
+
+00:04:36.806 --> 00:04:38.036 A:middle
+So the output here is
+
+00:04:38.036 --> 00:04:39.446 A:middle
+essentially simplified Chinese.
+
+00:04:40.466 --> 00:04:41.856 A:middle
+Now in Natural Language, we also
+
+00:04:41.856 --> 00:04:42.906 A:middle
+support a new API.
+
+00:04:43.496 --> 00:04:44.766 A:middle
+There are instances where you
+
+00:04:44.766 --> 00:04:46.046 A:middle
+would like to know the top-end
+
+00:04:46.046 --> 00:04:47.506 A:middle
+hypothesis for a particular
+
+00:04:47.506 --> 00:04:47.876 A:middle
+string.
+
+00:04:48.146 --> 00:04:49.996 A:middle
+So you'd like to know what are
+
+00:04:49.996 --> 00:04:51.396 A:middle
+the top languages along with
+
+00:04:51.396 --> 00:04:52.796 A:middle
+their associated probabilities.
+
+00:04:52.836 --> 00:04:54.776 A:middle
+So you can envision using this
+
+00:04:54.776 --> 00:04:55.476 A:middle
+in several different
+
+00:04:55.476 --> 00:04:56.906 A:middle
+applications where there's a lot
+
+00:04:56.906 --> 00:04:58.636 A:middle
+of multilinguality, and you want
+
+00:04:58.636 --> 00:05:00.066 A:middle
+that leeway in terms of what
+

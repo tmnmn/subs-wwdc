@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:57.086 --> 00:32:00.546 A:middle
+vaccine coding has a system and
+
+00:32:01.166 --> 00:32:02.426 A:middle
+a code.
+
+00:32:02.636 --> 00:32:05.836 A:middle
+With that I instantiate a JSON
+
+00:32:05.836 --> 00:32:08.436 A:middle
+decoder and I use it to decode
+
+00:32:08.436 --> 00:32:10.376 A:middle
+the FHIR resources data as an
+
+00:32:10.376 --> 00:32:11.746 A:middle
+immunization resource.
+
+00:32:12.276 --> 00:32:16.046 A:middle
+All that's left is to iterate
+
+00:32:16.046 --> 00:32:19.396 A:middle
+over each coding, check to see
+
+00:32:19.396 --> 00:32:23.846 A:middle
+whether the system is CVX, and
+
+00:32:24.106 --> 00:32:26.296 A:middle
+then pass the code to this
+
+00:32:26.296 --> 00:32:27.916 A:middle
+method to mark it in the data
+
+00:32:27.916 --> 00:32:28.266 A:middle
+source.
+
+00:32:28.816 --> 00:32:30.776 A:middle
+All this method does is compares
+
+00:32:30.776 --> 00:32:32.976 A:middle
+the code against lists of codes
+
+00:32:33.046 --> 00:32:34.806 A:middle
+per disease and if there's a
+
+00:32:34.806 --> 00:32:38.026 A:middle
+match marks in the UI that
+
+00:32:38.026 --> 00:32:41.196 A:middle
+disease for the found disease.
+
+00:32:41.766 --> 00:32:44.176 A:middle
+So with that I'm going to build
+
+00:32:44.176 --> 00:32:45.916 A:middle
+and run and take a look at my
+
+00:32:45.916 --> 00:32:46.936 A:middle
+immunization checklist.
+
+00:32:47.956 --> 00:32:49.436 A:middle
+So here I am on my training log,
+
+00:32:50.026 --> 00:32:50.866 A:middle
+I'm going to tap on the
+
+00:32:50.866 --> 00:32:53.746 A:middle
+Immunizations tab and just like
+
+00:32:53.746 --> 00:32:55.546 A:middle
+that with a few lines of code I
+
+00:32:55.546 --> 00:32:56.816 A:middle
+have an immunization checklist.
+
+00:32:57.516 --> 00:33:02.316 A:middle
+[ Applause ]
+

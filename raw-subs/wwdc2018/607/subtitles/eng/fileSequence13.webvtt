@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.346 --> 00:13:02.566 A:middle
+buffers, and this will allow you
+
+00:13:02.566 --> 00:13:04.686 A:middle
+to move entire rendering loops
+
+00:13:04.686 --> 00:13:05.526 A:middle
+onto the GPU.
+
+00:13:06.776 --> 00:13:09.046 A:middle
+So first, let's briefly recap
+
+00:13:09.146 --> 00:13:10.236 A:middle
+the argument buffer feature.
+
+00:13:11.076 --> 00:13:12.826 A:middle
+An argument buffer is simply a
+
+00:13:12.826 --> 00:13:16.386 A:middle
+structure represented like this.
+
+00:13:17.756 --> 00:13:18.946 A:middle
+Previously, these would have
+
+00:13:18.946 --> 00:13:20.026 A:middle
+only constants, but with
+
+00:13:20.026 --> 00:13:21.256 A:middle
+argument buffers, we can have
+
+00:13:21.326 --> 00:13:22.916 A:middle
+textures and samplers.
+
+00:13:23.606 --> 00:13:24.716 A:middle
+Before, these would have to have
+
+00:13:24.716 --> 00:13:26.646 A:middle
+separate shader bind points.
+
+00:13:27.666 --> 00:13:30.226 A:middle
+So since this structure, you
+
+00:13:30.226 --> 00:13:31.366 A:middle
+have all the features of the
+
+00:13:31.366 --> 00:13:32.646 A:middle
+Metal shading language at your
+
+00:13:32.646 --> 00:13:34.216 A:middle
+disposal, so it's really
+
+00:13:34.216 --> 00:13:35.906 A:middle
+flexible and really easy.
+
+00:13:36.196 --> 00:13:37.156 A:middle
+You could do things like add
+
+00:13:37.156 --> 00:13:39.476 A:middle
+substructures, or arrays, or
+
+00:13:39.476 --> 00:13:40.986 A:middle
+even pointers to other argument
+
+00:13:40.986 --> 00:13:41.476 A:middle
+buffers.
+
+00:13:43.156 --> 00:13:44.556 A:middle
+You could modify textures and
+
+00:13:44.556 --> 00:13:46.856 A:middle
+samplers, creating new materials
+
+00:13:46.856 --> 00:13:49.026 A:middle
+on a GPU without any CPU
+
+00:13:49.026 --> 00:13:49.516 A:middle
+involvement.
+
+00:13:50.766 --> 00:13:52.746 A:middle
+Or you can make giant arrays of
+
+00:13:52.746 --> 00:13:54.446 A:middle
+materials and use a
+
+00:13:54.446 --> 00:13:56.886 A:middle
+single-instance draw call to
+
+00:13:56.886 --> 00:13:58.276 A:middle
+render many objects with unique
+
+00:13:58.276 --> 00:13:58.956 A:middle
+properties.
+

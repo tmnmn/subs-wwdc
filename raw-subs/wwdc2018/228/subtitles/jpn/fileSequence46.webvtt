@@ -1,0 +1,42 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.159 --> 00:46:00.894 align:start position:34% line:-1
+もう１つ見ましょう
+
+00:46:13.540 --> 00:46:16.076 align:start position:16% line:-2
+ここでは
+setNextUpdateTimerと
+
+00:46:16.176 --> 00:46:19.379 align:start position:27% line:-2
+addNewSpriteで
+時間がかかっています
+
+00:46:19.680 --> 00:46:22.583 align:start position:30% line:-1
+この関数を調べましょう
+
+00:46:25.686 --> 00:46:27.087 align:start position:38% line:-1
+コードを見ます
+
+00:46:37.131 --> 00:46:41.969 align:start position:23% line:-2
+addNewSprite関数で
+時間がかかっていますね
+
+00:46:42.603 --> 00:46:45.005 align:start position:27% line:-1
+この関数は高くつくようです
+
+00:46:46.140 --> 00:46:50.477 align:start position:30% line:-2
+このワークロードは
+想定どおりでしょうか？
+
+00:46:51.245 --> 00:46:54.147 align:start position:25% line:-1
+この場合 そうとは言えません
+
+00:46:54.348 --> 00:46:59.219 align:start position:30% line:-2
+スプライトを加えるのは
+数秒に一度のはずです
+
+00:46:59.453 --> 00:47:03.223 align:start position:30% line:-2
+なぜこんなにも
+CPUを食うのでしょう
+

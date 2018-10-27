@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.306 --> 00:11:00.066 A:middle
+they're walking out of the
+
+00:11:00.066 --> 00:11:01.416 A:middle
+building, texting their friend
+
+00:11:01.696 --> 00:11:02.626 A:middle
+to let them know that they're on
+
+00:11:02.626 --> 00:11:03.006 A:middle
+their way.
+
+00:11:03.706 --> 00:11:04.766 A:middle
+And you want to make sure that
+
+00:11:04.766 --> 00:11:06.216 A:middle
+you're handling that transition
+
+00:11:06.446 --> 00:11:07.466 A:middle
+from the WiFi network in the
+
+00:11:07.466 --> 00:11:08.626 A:middle
+building to the cell network
+
+00:11:08.656 --> 00:11:10.466 A:middle
+that they're going onto and that
+
+00:11:10.466 --> 00:11:11.986 A:middle
+you don't hand a long time for
+
+00:11:11.986 --> 00:11:13.306 A:middle
+that message to actually get to
+
+00:11:13.306 --> 00:11:13.766 A:middle
+their friend.
+
+00:11:14.246 --> 00:11:16.606 A:middle
+And these are just three
+
+00:11:16.606 --> 00:11:18.286 A:middle
+examples of the types of apps
+
+00:11:18.286 --> 00:11:19.766 A:middle
+that may use low-level
+
+00:11:19.766 --> 00:11:20.826 A:middle
+networking like this.
+
+00:11:21.576 --> 00:11:22.816 A:middle
+There are many other types of
+
+00:11:22.816 --> 00:11:24.356 A:middle
+apps that could take advantage
+
+00:11:24.356 --> 00:11:25.596 A:middle
+of this, so if you have an app
+
+00:11:25.596 --> 00:11:27.506 A:middle
+like one of these or some other
+
+00:11:27.506 --> 00:11:28.756 A:middle
+use case that currently uses
+
+00:11:28.756 --> 00:11:30.696 A:middle
+sockets, I invite you to follow
+
+00:11:30.696 --> 00:11:33.046 A:middle
+along and see how your app can
+
+00:11:33.046 --> 00:11:33.476 A:middle
+benefit.
+
+00:11:33.476 --> 00:11:36.096 A:middle
+So to get started, I want to
+
+00:11:36.096 --> 00:11:37.766 A:middle
+focus on that last case, the
+
+00:11:37.766 --> 00:11:39.316 A:middle
+simplest case of mail and
+
+00:11:39.316 --> 00:11:41.056 A:middle
+messaging apps and looking at
+
+00:11:41.056 --> 00:11:42.586 A:middle
+how they establish connections.
+
+00:11:43.286 --> 00:11:46.076 A:middle
+So when you want to establish
+
+00:11:46.076 --> 00:11:47.126 A:middle
+your connection to a server,
+
+00:11:47.306 --> 00:11:49.226 A:middle
+let's say it's for a mail
+
+00:11:49.226 --> 00:11:51.716 A:middle
+connection, iMap with security,
+
+00:11:51.826 --> 00:11:54.006 A:middle
+with TLS, you start with your
+
+00:11:54.006 --> 00:11:56.426 A:middle
+hostname, mail.example.com.
+
+00:11:57.326 --> 00:11:58.336 A:middle
+You have a port you want to
+
+00:11:58.336 --> 00:12:00.956 A:middle
+connect to, port 993, and you
+

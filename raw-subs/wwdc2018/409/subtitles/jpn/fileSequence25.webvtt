@@ -1,0 +1,44 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:00.033 --> 00:25:03.070 align:start position:23% line:-1
+まずスタックの機能を把握します
+
+00:25:04.905 --> 00:25:08.976 align:start position:18% line:-1
+ここにdlogというC関数があります
+
+00:25:09.309 --> 00:25:13.380 align:start position:23% line:-1
+デバッグの文字列を含んでいます
+
+00:25:14.715 --> 00:25:17.651 align:start position:23% line:-1
+今回 Helloを呼び出します
+
+00:25:18.285 --> 00:25:24.358 align:start position:21% line:-2
+この呼び出しを記録していくために
+メモリを割り当てます
+
+00:25:26.026 --> 00:25:29.196 align:start position:27% line:-1
+割り当てる場所がスタックで
+
+00:25:29.663 --> 00:25:33.834 align:start position:29% line:-2
+領域はnullポインタか
+０のアドレスまでです
+
+00:25:35.903 --> 00:25:40.774 align:start position:25% line:-2
+スタックフレームという単位に
+Helloを割り当てます
+
+00:25:41.375 --> 00:25:46.813 align:start position:27% line:-2
+スタックフレームは
+戻りアドレスなどを含みます
+
+00:25:47.681 --> 00:25:51.018 align:start position:25% line:-1
+他にはローカル変数もあります
+
+00:25:51.652 --> 00:25:55.389 align:start position:21% line:-2
+ローカル変数を
+logfile pathにすると
+
+00:25:56.023 --> 00:25:58.058 align:start position:27% line:-1
+スタックフレームに入ります
+

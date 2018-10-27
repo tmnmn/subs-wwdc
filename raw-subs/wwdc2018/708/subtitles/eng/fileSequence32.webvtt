@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.406 --> 00:32:00.856 A:middle
+provided here should be general
+
+00:32:00.856 --> 00:32:02.336 A:middle
+and applicable to any instance
+
+00:32:02.336 --> 00:32:02.916 A:middle
+of the new layer.
+
+00:32:04.736 --> 00:32:05.986 A:middle
+It simply needs to be included
+
+00:32:05.986 --> 00:32:07.206 A:middle
+in your app at runtime.
+
+00:32:07.706 --> 00:32:08.996 A:middle
+Then the parameters for this
+
+00:32:08.996 --> 00:32:10.196 A:middle
+particular layer are
+
+00:32:10.196 --> 00:32:11.946 A:middle
+encapsulated in the ML model
+
+00:32:12.106 --> 00:32:13.466 A:middle
+with the rest of the information
+
+00:32:13.466 --> 00:32:14.136 A:middle
+about the model.
+
+00:32:15.996 --> 00:32:17.196 A:middle
+Implementing a custom layer is
+
+00:32:17.196 --> 00:32:17.476 A:middle
+simple.
+
+00:32:18.136 --> 00:32:19.576 A:middle
+We expose an MLCustomLayer
+
+00:32:19.576 --> 00:32:20.196 A:middle
+protocol.
+
+00:32:20.556 --> 00:32:21.816 A:middle
+You simply provide methods to
+
+00:32:21.816 --> 00:32:23.356 A:middle
+initialize the layer based on
+
+00:32:23.356 --> 00:32:24.846 A:middle
+the data stored in the ML model.
+
+00:32:26.096 --> 00:32:27.176 A:middle
+You'll need to provide a method
+
+00:32:27.176 --> 00:32:28.516 A:middle
+that tells us how much space to
+
+00:32:28.516 --> 00:32:29.826 A:middle
+allocate for the outputs of the
+
+00:32:29.826 --> 00:32:31.846 A:middle
+layer, and then a method that
+
+00:32:31.846 --> 00:32:32.846 A:middle
+does the computation.
+
+00:32:34.676 --> 00:32:36.596 A:middle
+Plus, you can add this
+
+00:32:36.596 --> 00:32:38.406 A:middle
+flexibility without sacrificing
+
+00:32:38.406 --> 00:32:39.626 A:middle
+the performance of your model as
+
+00:32:39.626 --> 00:32:39.946 A:middle
+a whole.
+
+00:32:40.976 --> 00:32:41.996 A:middle
+The protocol includes an
+
+00:32:41.996 --> 00:32:43.336 A:middle
+optional method, which allows
+
+00:32:43.336 --> 00:32:44.506 A:middle
+you to provide us with a MTL
+
+00:32:44.506 --> 00:32:45.946 A:middle
+shader implementation of your
+
+00:32:45.946 --> 00:32:47.436 A:middle
+model -- of the layer, excuse
+
+00:32:47.436 --> 00:32:47.556 A:middle
+me.
+
+00:32:47.936 --> 00:32:50.056 A:middle
+If you give us this, then it can
+
+00:32:50.056 --> 00:32:51.556 A:middle
+be encoded in the same command
+
+00:32:51.556 --> 00:32:52.796 A:middle
+buffer as the rest of the Core
+
+00:32:52.796 --> 00:32:53.866 A:middle
+ML computation.
+
+00:32:53.866 --> 00:32:55.026 A:middle
+So there is no extra overhead
+
+00:32:55.026 --> 00:32:56.196 A:middle
+from additional encodings or
+
+00:32:56.196 --> 00:32:57.346 A:middle
+multiple trips to and from the
+
+00:32:57.346 --> 00:32:57.786 A:middle
+GPU.
+
+00:32:58.536 --> 00:32:59.826 A:middle
+If you don't provide this, then
+
+00:32:59.826 --> 00:33:01.026 A:middle
+we'll simply evaluate the layer
+

@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.454 --> 00:37:03.457 align:middle line:-2
+导入器在umbrella头文件中
+查找声明
+
+00:37:04.591 --> 00:37:07.294 align:middle line:-1
+这个头文件定义了公共接口
+
+00:37:08.262 --> 00:37:10.898 align:middle line:-1
+这样 框架内的Swift代码
+
+00:37:10.964 --> 00:37:14.635 align:middle line:-2
+就可以调用同一框架内的
+公共Objective-C代码
+
+00:37:16.870 --> 00:37:19.173 align:middle line:-2
+最后
+在app和单元测试中
+
+00:37:19.473 --> 00:37:21.975 align:middle line:-1
+可以导入目标的桥接头文件
+
+00:37:22.176 --> 00:37:25.612 align:middle line:-2
+允许其中的声明
+被Swift调用
+
+00:37:28.348 --> 00:37:29.183 align:middle line:-1
+现在…
+
+00:37:29.650 --> 00:37:31.618 align:middle line:-1
+导入器找到声明后
+
+00:37:31.885 --> 00:37:34.788 align:middle line:-2
+通常会修改它们
+让它们变得更口语化
+
+00:37:35.589 --> 00:37:37.891 align:middle line:-2
+比如它会导入
+Objective-C函数
+
+00:37:37.958 --> 00:37:39.593 align:middle line:-1
+用NSError惯用语
+
+00:37:40.027 --> 00:37:41.662 align:middle line:-1
+作为throwing函数
+
+00:37:42.062 --> 00:37:44.798 align:middle line:-2
+使用Swift内置的
+错误处理语言功能
+
+00:37:47.835 --> 00:37:50.537 align:middle line:-2
+具体来说
+就是输入参数类型名称
+
+00:37:50.804 --> 00:37:52.673 align:middle line:-1
+后跟动词和介词
+
+00:37:53.907 --> 00:37:56.443 align:middle line:-2
+比如函数
+drawPet atPoint
+
+00:37:56.777 --> 00:37:58.045 align:middle line:-1
+带有宠物这个词
+
+00:37:58.579 --> 00:38:00.380 align:middle line:-2
+对于参数类型
+宠物
+

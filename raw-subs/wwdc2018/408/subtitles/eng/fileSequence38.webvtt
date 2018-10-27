@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:00.476 --> 00:38:01.566 A:middle
+And there's one more note.
+
+00:38:02.636 --> 00:38:04.206 A:middle
+This file here that I defined,
+
+00:38:04.796 --> 00:38:06.626 A:middle
+well, it's possible that nothing
+
+00:38:06.626 --> 00:38:08.256 A:middle
+else in my Objective-C code
+
+00:38:08.256 --> 00:38:09.586 A:middle
+needs to access this property,
+
+00:38:09.656 --> 00:38:09.966 A:middle
+either.
+
+00:38:11.156 --> 00:38:12.796 A:middle
+In which case, there's no need
+
+00:38:12.796 --> 00:38:13.786 A:middle
+for a separate file.
+
+00:38:14.266 --> 00:38:16.256 A:middle
+I can put this category directly
+
+00:38:16.256 --> 00:38:17.176 A:middle
+into my .m.
+
+00:38:18.356 --> 00:38:19.676 A:middle
+There's nothing wrong with doing
+
+00:38:19.676 --> 00:38:19.946 A:middle
+this.
+
+00:38:20.056 --> 00:38:21.316 A:middle
+Everything will work fine.
+
+00:38:21.646 --> 00:38:23.076 A:middle
+And as I said before, property
+
+00:38:23.076 --> 00:38:24.736 A:middle
+synthesis will still work for
+
+00:38:24.736 --> 00:38:26.046 A:middle
+the network manager property.
+
+00:38:26.536 --> 00:38:28.976 A:middle
+So what have we seen?
+
+00:38:29.946 --> 00:38:32.636 A:middle
+We used private and block-based
+
+00:38:32.636 --> 00:38:34.456 A:middle
+API's, and turning off that
+
+00:38:34.456 --> 00:38:35.906 A:middle
+Build setting to shrink the
+
+00:38:35.906 --> 00:38:37.276 A:middle
+contents of the generated
+
+00:38:37.276 --> 00:38:37.586 A:middle
+header.
+
+00:38:38.786 --> 00:38:40.826 A:middle
+And, we've broken out separate
+
+00:38:40.826 --> 00:38:42.736 A:middle
+contents from the Objective-C
+
+00:38:42.736 --> 00:38:44.266 A:middle
+headers that we declared, which
+
+00:38:44.266 --> 00:38:45.536 A:middle
+shrink the contents of the
+
+00:38:45.576 --> 00:38:46.306 A:middle
+bridging header.
+
+00:38:47.096 --> 00:38:49.076 A:middle
+Less content means less work
+
+00:38:49.076 --> 00:38:49.996 A:middle
+done on each build.
+
+00:38:50.336 --> 00:38:51.856 A:middle
+And it also means fewer
+
+00:38:51.856 --> 00:38:53.916 A:middle
+opportunities for changes, which
+
+00:38:53.916 --> 00:38:55.406 A:middle
+means fewer chances for
+
+00:38:55.406 --> 00:38:56.026 A:middle
+rebuilds.
+
+00:38:56.686 --> 00:38:57.936 A:middle
+We win on both counts.
+
+00:38:59.126 --> 00:39:01.066 A:middle
+So let's wrap things up.
+

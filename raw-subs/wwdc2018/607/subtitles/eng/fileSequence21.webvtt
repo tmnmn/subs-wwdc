@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.606 --> 00:21:00.006 A:middle
+As you could imagine, this would
+
+00:21:00.006 --> 00:21:01.966 A:middle
+be a lot of API calls on the
+
+00:21:02.036 --> 00:21:04.116 A:middle
+CPU, but we are using indirect
+
+00:21:04.116 --> 00:21:05.106 A:middle
+command buffers here, so
+
+00:21:05.156 --> 00:21:06.806 A:middle
+everything is being encoded on
+
+00:21:06.806 --> 00:21:07.356 A:middle
+the GPU.
+
+00:21:09.276 --> 00:21:10.786 A:middle
+We're also selecting the
+
+00:21:10.926 --> 00:21:12.926 A:middle
+appropriate level of detail, and
+
+00:21:12.926 --> 00:21:13.906 A:middle
+therefore, we're able to render
+
+00:21:13.906 --> 00:21:16.676 A:middle
+multiple objects without
+
+00:21:16.676 --> 00:21:19.046 A:middle
+increasing the CPU or GPU cost.
+
+00:21:19.736 --> 00:21:20.966 A:middle
+So on the left, you could see a
+
+00:21:20.966 --> 00:21:22.486 A:middle
+view of the regular camera.
+
+00:21:22.776 --> 00:21:23.906 A:middle
+And on the right, we've zoomed
+
+00:21:23.906 --> 00:21:25.786 A:middle
+in to a single bus, so you could
+
+00:21:25.786 --> 00:21:27.316 A:middle
+see the level of detail actually
+
+00:21:27.316 --> 00:21:27.916 A:middle
+changing.
+
+00:21:29.126 --> 00:21:31.346 A:middle
+ICBs enabled us to introduce
+
+00:21:31.346 --> 00:21:32.936 A:middle
+another really incredible
+
+00:21:32.936 --> 00:21:33.746 A:middle
+optimization.
+
+00:21:35.886 --> 00:21:37.456 A:middle
+We're able to split the geometry
+
+00:21:37.456 --> 00:21:39.036 A:middle
+into chunks of a few hundred
+
+00:21:39.036 --> 00:21:40.356 A:middle
+triangles and analyze those
+
+00:21:40.356 --> 00:21:41.766 A:middle
+chunks in a separate compute
+
+00:21:41.766 --> 00:21:42.126 A:middle
+kernel.
+
+00:21:43.366 --> 00:21:44.466 A:middle
+You could see the chunks in
+
+00:21:44.466 --> 00:21:45.706 A:middle
+different colors on the screen.
+
+00:21:47.106 --> 00:21:48.236 A:middle
+Each thread of the kernel
+
+00:21:48.236 --> 00:21:49.796 A:middle
+determines whether triangles are
+
+00:21:49.796 --> 00:21:51.456 A:middle
+facing away from the camera or
+
+00:21:51.456 --> 00:21:52.696 A:middle
+if they're obscured by other
+
+00:21:52.696 --> 00:21:54.456 A:middle
+objects or geometry in the
+
+00:21:54.456 --> 00:21:54.906 A:middle
+scene.
+
+00:21:55.756 --> 00:21:57.566 A:middle
+This is all really, really fast
+
+00:21:57.566 --> 00:21:58.386 A:middle
+because we've performed the
+
+00:21:58.386 --> 00:22:00.526 A:middle
+calculation for a chunk only and
+

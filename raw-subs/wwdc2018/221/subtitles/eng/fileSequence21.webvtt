@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.326 --> 00:21:03.446 A:middle
+Now if we want to emphasize part
+
+00:21:03.446 --> 00:21:05.806 A:middle
+of our text, we can use keyboard
+
+00:21:05.806 --> 00:21:07.586 A:middle
+shortcuts or the menu to apply
+
+00:21:07.586 --> 00:21:08.616 A:middle
+formatting like bold.
+
+00:21:09.166 --> 00:21:11.846 A:middle
+But it would be great if we
+
+00:21:11.846 --> 00:21:13.946 A:middle
+could support modern text
+
+00:21:13.946 --> 00:21:15.746 A:middle
+formatting like Markdown, which
+
+00:21:15.746 --> 00:21:17.346 A:middle
+uses control characters to
+
+00:21:17.406 --> 00:21:18.406 A:middle
+specify formatting.
+
+00:21:19.206 --> 00:21:20.566 A:middle
+So if we start inserting
+
+00:21:20.786 --> 00:21:22.536 A:middle
+asterisks before and after, we
+
+00:21:22.536 --> 00:21:23.366 A:middle
+want it to be bold.
+
+00:21:24.216 --> 00:21:26.426 A:middle
+But which hammer should we use
+
+00:21:27.816 --> 00:21:28.216 A:middle
+for this?
+
+00:21:28.336 --> 00:21:29.276 A:middle
+Well, we want to know when a
+
+00:21:29.276 --> 00:21:31.396 A:middle
+change happens, and we want to
+
+00:21:31.396 --> 00:21:32.586 A:middle
+know where a change happens.
+
+00:21:32.616 --> 00:21:33.846 A:middle
+But notifications don't really
+
+00:21:33.846 --> 00:21:35.286 A:middle
+give us much information about
+
+00:21:35.286 --> 00:21:35.896 A:middle
+this change.
+
+00:21:37.416 --> 00:21:38.456 A:middle
+So we're going to use a bigger
+
+00:21:38.456 --> 00:21:40.076 A:middle
+hammer and implement the text
+
+00:21:40.076 --> 00:21:42.686 A:middle
+storage delegate, specifically
+
+00:21:42.686 --> 00:21:44.286 A:middle
+the didProcessEditing method.
+
+00:21:45.226 --> 00:21:46.786 A:middle
+Now we can make a new bold font
+
+00:21:47.016 --> 00:21:47.946 A:middle
+from our existing one.
+
+00:21:48.646 --> 00:21:50.026 A:middle
+And we can add that font
+
+00:21:50.026 --> 00:21:51.426 A:middle
+directly to our text storage for
+
+00:21:51.426 --> 00:21:52.336 A:middle
+the range that we want to be
+
+00:21:52.336 --> 00:21:52.646 A:middle
+bold.
+
+00:21:53.176 --> 00:21:55.586 A:middle
+And now when we insert that last
+
+00:21:55.586 --> 00:21:57.696 A:middle
+asterisk, we can make it bold.
+
+00:21:58.346 --> 00:22:01.126 A:middle
+Now we're feeling pretty good
+

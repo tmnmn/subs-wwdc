@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.616 --> 00:05:00.376 A:middle
+should be substantial, so you
+
+00:05:00.376 --> 00:05:01.836 A:middle
+shouldn't just expose a shortcut
+
+00:05:01.836 --> 00:05:03.346 A:middle
+that does about the same thing
+
+00:05:03.346 --> 00:05:04.676 A:middle
+as opening your app normally.
+
+00:05:05.316 --> 00:05:06.936 A:middle
+If you expose a shortcut that
+
+00:05:06.936 --> 00:05:08.096 A:middle
+doesn't provide very much
+
+00:05:08.096 --> 00:05:09.636 A:middle
+acceleration to the user, it
+
+00:05:10.186 --> 00:05:11.346 A:middle
+won't be suggested as
+
+00:05:11.346 --> 00:05:11.826 A:middle
+frequently.
+
+00:05:12.416 --> 00:05:15.446 A:middle
+And, next, every shortcut that
+
+00:05:15.446 --> 00:05:16.426 A:middle
+you expose should be of
+
+00:05:16.426 --> 00:05:18.056 A:middle
+persistent interest to the user,
+
+00:05:18.166 --> 00:05:19.286 A:middle
+so that means it should be
+
+00:05:19.346 --> 00:05:20.236 A:middle
+something that the user might
+
+00:05:20.236 --> 00:05:21.516 A:middle
+want to do multiple times.
+
+00:05:21.926 --> 00:05:23.696 A:middle
+It's not a good idea to expose a
+
+00:05:23.696 --> 00:05:24.966 A:middle
+shortcut for something that the
+
+00:05:24.966 --> 00:05:27.126 A:middle
+user might only want to use once
+
+00:05:27.256 --> 00:05:28.976 A:middle
+or twice.
+
+00:05:29.076 --> 00:05:30.906 A:middle
+And you should also expose only
+
+00:05:30.906 --> 00:05:32.706 A:middle
+shortcuts that are executable at
+
+00:05:32.706 --> 00:05:35.036 A:middle
+any time, because you can't rely
+
+00:05:35.036 --> 00:05:36.566 A:middle
+on the user being in some
+
+00:05:36.566 --> 00:05:38.076 A:middle
+particular state before your
+
+00:05:38.076 --> 00:05:39.596 A:middle
+shortcut will be ready for use.
+
+00:05:40.806 --> 00:05:43.246 A:middle
+So, once you've decided what
+
+00:05:43.246 --> 00:05:44.406 A:middle
+shortcuts to expose, you're
+
+00:05:44.406 --> 00:05:45.686 A:middle
+ready to check out the
+
+00:05:45.686 --> 00:05:47.386 A:middle
+shortcuts' APIs.
+
+00:05:48.396 --> 00:05:51.026 A:middle
+There were two APIs that we
+
+00:05:51.026 --> 00:05:52.766 A:middle
+support for adopting shortcuts.
+
+00:05:53.216 --> 00:05:55.316 A:middle
+The first is NSUserActivity.
+
+00:05:56.076 --> 00:05:58.086 A:middle
+NSUserActivity is a lightweight
+
+00:05:58.086 --> 00:05:59.596 A:middle
+way to represent the state of
+
+00:05:59.596 --> 00:06:01.426 A:middle
+your app, and it integrates with
+

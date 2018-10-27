@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:56.623 --> 00:51:01.161 align:start position:21% line:-2
+ストレージにアクセスするコードに
+制限を設けられました
+
+00:51:01.261 --> 00:51:04.164 align:start position:25% line:-1
+ゲッタかセッタのどちらかです
+
+00:51:04.264 --> 00:51:06.500 align:start position:25% line:-1
+他のコードはアクセスできない
+
+00:51:06.600 --> 00:51:11.038 align:start position:7% line:-2
+これでSwift Access Raceの修正に
+近づきました
+
+00:51:11.839 --> 00:51:13.974 align:start position:25% line:-1
+ディスパッチキューで直します
+
+00:51:14.074 --> 00:51:17.277 align:start position:30% line:-2
+“queue”という
+プライベート変数を作り
+
+00:51:17.377 --> 00:51:20.647 align:start position:21% line:-1
+ディスパッチキューを割り当てます
+
+00:51:21.315 --> 00:51:23.550 align:start position:21% line:-1
+ディスパッチキューはシリアルです
+
+00:51:23.650 --> 00:51:24.885 align:start position:41% line:-1
+これも同様
+
+00:51:24.985 --> 00:51:31.125 align:start position:20% line:-2
+つまり このqueueの中で一度に
+１つのコードしか実行できません
+
+00:51:31.725 --> 00:51:34.361 align:start position:32% line:-1
+これが必要なことです
+
+00:51:34.628 --> 00:51:37.631 align:start position:29% line:-2
+ディスパッチキュー内で
+コードをどう実行するか？
+
+00:51:37.731 --> 00:51:39.800 align:start position:23% line:-1
+queue.syncを使います
+
+00:51:39.900 --> 00:51:43.303 align:start position:14% line:-1
+queue.syncに移動したコードは―
+
+00:51:44.838 --> 00:51:48.442 align:start position:20% line:-1
+１つずつqueue内で実行されます
+
+00:51:48.609 --> 00:51:52.880 align:start position:21% line:-2
+ゲッタから何か返す必要があるので
+値を返します
+
+00:51:53.414 --> 00:51:56.150 align:start position:34% line:-1
+セッタでも同様です
+
+00:51:57.518 --> 00:52:00.788 align:start position:18% line:-1
+コードをqueue.syncに移すと
+

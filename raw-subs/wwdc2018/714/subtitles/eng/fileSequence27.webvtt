@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:57.426 --> 00:27:00.406 A:middle
+At this point, it's safe for us
+
+00:27:00.406 --> 00:27:01.486 A:middle
+to assume we're talking to the
+
+00:27:01.486 --> 00:27:03.796 A:middle
+same endpoint and reuse the
+
+00:27:03.796 --> 00:27:05.726 A:middle
+connection instead of opening a
+
+00:27:05.726 --> 00:27:07.346 A:middle
+new one when we want to fetch
+
+00:27:07.346 --> 00:27:08.406 A:middle
+the second resource.
+
+00:27:09.126 --> 00:27:10.506 A:middle
+This saves us time by not
+
+00:27:10.506 --> 00:27:11.936 A:middle
+opening a new connection and
+
+00:27:11.936 --> 00:27:13.316 A:middle
+makes the load much faster.
+
+00:27:13.896 --> 00:27:16.086 A:middle
+HTTP/2 [inaudible] HTTP/2
+
+00:27:16.086 --> 00:27:20.276 A:middle
+Connection Coalescing new in iOS
+
+00:27:20.306 --> 00:27:22.156 A:middle
+12 and macOS Mojave.
+
+00:27:23.416 --> 00:27:26.296 A:middle
+Now let's see how using fewer
+
+00:27:26.386 --> 00:27:28.716 A:middle
+URLSession objects can help
+
+00:27:28.716 --> 00:27:29.826 A:middle
+reduce latency.
+
+00:27:30.356 --> 00:27:34.656 A:middle
+All the benefits of connections
+
+00:27:34.656 --> 00:27:36.876 A:middle
+we use that we just discussed in
+
+00:27:36.876 --> 00:27:38.876 A:middle
+the previous slides are
+
+00:27:38.876 --> 00:27:41.306 A:middle
+applicable only if you use the
+
+00:27:41.306 --> 00:27:43.546 A:middle
+same URLSession object to create
+
+00:27:43.546 --> 00:27:44.916 A:middle
+your tasks.
+
+00:27:47.016 --> 00:27:48.876 A:middle
+It's also important to know that
+
+00:27:48.936 --> 00:27:51.586 A:middle
+every URLSession object has a
+
+00:27:51.586 --> 00:27:53.206 A:middle
+connection pool and when you
+
+00:27:53.206 --> 00:27:54.506 A:middle
+create multiple of these
+
+00:27:54.506 --> 00:27:56.106 A:middle
+URLSession objects, you don't
+
+00:27:56.106 --> 00:27:57.606 A:middle
+get any benefit of connection to
+
+00:27:57.606 --> 00:27:58.026 A:middle
+use.
+
+00:27:59.066 --> 00:28:01.306 A:middle
+It's also important to note that
+

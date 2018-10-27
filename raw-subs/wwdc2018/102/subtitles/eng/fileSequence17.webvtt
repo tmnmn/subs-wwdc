@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.906 --> 00:17:00.406 A:middle
+Now, as I look at this, I think
+
+00:17:00.406 --> 00:17:02.126 A:middle
+I see what the problem might be
+
+00:17:02.126 --> 00:17:02.626 A:middle
+right away.
+
+00:17:02.886 --> 00:17:04.256 A:middle
+So every time I go to process
+
+00:17:04.306 --> 00:17:05.756 A:middle
+data and parse it here, I can
+
+00:17:05.756 --> 00:17:07.336 A:middle
+see a corresponding spike in the
+
+00:17:07.336 --> 00:17:08.846 A:middle
+CPU use on the main thread.
+
+00:17:08.846 --> 00:17:11.096 A:middle
+And to me, that is a bright red
+
+00:17:11.096 --> 00:17:13.376 A:middle
+flag that I'm probably parsing
+
+00:17:13.376 --> 00:17:14.886 A:middle
+and processing this on the main
+
+00:17:14.886 --> 00:17:15.126 A:middle
+thread.
+
+00:17:15.746 --> 00:17:17.326 A:middle
+Not a recipe for a smooth UI.
+
+00:17:18.066 --> 00:17:19.876 A:middle
+So with just a log statement, a
+
+00:17:19.876 --> 00:17:21.256 A:middle
+couple of signposts, you could
+
+00:17:21.256 --> 00:17:22.366 A:middle
+see I can start to get some
+
+00:17:22.366 --> 00:17:23.876 A:middle
+really great insight into the
+
+00:17:23.876 --> 00:17:26.236 A:middle
+performance of my app.
+
+00:17:26.486 --> 00:17:28.465 A:middle
+Now the new tools, they let you
+
+00:17:28.465 --> 00:17:29.866 A:middle
+do way more than that.
+
+00:17:30.286 --> 00:17:32.516 A:middle
+So with Xcode 10, there's a new
+
+00:17:32.516 --> 00:17:34.366 A:middle
+template that lets you create a
+
+00:17:34.546 --> 00:17:36.506 A:middle
+fully customized Instruments
+
+00:17:36.686 --> 00:17:37.296 A:middle
+package.
+
+00:17:37.786 --> 00:17:38.836 A:middle
+Now, one of my team mates, he's
+
+00:17:38.836 --> 00:17:40.286 A:middle
+gone ahead and built one based
+
+00:17:40.286 --> 00:17:41.686 A:middle
+on some network, some signposts
+
+00:17:41.686 --> 00:17:43.386 A:middle
+that he added to our networking
+
+00:17:43.596 --> 00:17:44.006 A:middle
+framework.
+
+00:17:44.456 --> 00:17:45.516 A:middle
+And I've got the latest version
+
+00:17:45.516 --> 00:17:46.796 A:middle
+he sent me here in my downloads.
+
+00:17:47.236 --> 00:17:50.056 A:middle
+So let me open that up and when
+
+00:17:50.056 --> 00:17:51.576 A:middle
+I do, Instruments offers to
+
+00:17:51.576 --> 00:17:52.446 A:middle
+install it for me.
+
+00:17:53.036 --> 00:17:54.376 A:middle
+So I'll say install.
+
+00:17:54.786 --> 00:17:56.056 A:middle
+And now you'll see, I've got a
+
+00:17:56.056 --> 00:17:56.756 A:middle
+new template.
+
+00:17:56.756 --> 00:17:57.636 A:middle
+Here are my templates.
+
+00:17:57.636 --> 00:17:58.696 A:middle
+These are called Solar Systems.
+
+00:17:58.696 --> 00:17:59.866 A:middle
+I'm going to double click that.
+
+00:17:59.866 --> 00:18:02.516 A:middle
+And then we'll start recording
+

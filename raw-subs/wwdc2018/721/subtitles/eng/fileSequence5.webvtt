@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.946 --> 00:05:00.566 A:middle
+logging in, so you can suggest
+
+00:05:00.566 --> 00:05:01.926 A:middle
+the most relevant credentials.
+
+00:05:03.816 --> 00:05:05.436 A:middle
+AutoFill will do this by
+
+00:05:05.436 --> 00:05:06.736 A:middle
+preparing a list of AS
+
+00:05:06.736 --> 00:05:08.086 A:middle
+credentials service identifier
+
+00:05:08.086 --> 00:05:09.446 A:middle
+objects, representing the
+
+00:05:09.446 --> 00:05:10.716 A:middle
+service the user is currently
+
+00:05:10.716 --> 00:05:11.146 A:middle
+using.
+
+00:05:11.976 --> 00:05:12.956 A:middle
+Your extension may receive
+
+00:05:12.956 --> 00:05:14.636 A:middle
+multiple service identifiers, if
+
+00:05:14.636 --> 00:05:16.086 A:middle
+AutoFill can determine multiple
+
+00:05:16.086 --> 00:05:17.386 A:middle
+better [inaudible] to use in the
+
+00:05:17.386 --> 00:05:18.236 A:middle
+current context.
+
+00:05:19.956 --> 00:05:21.866 A:middle
+In apps, service identifiers are
+
+00:05:21.866 --> 00:05:23.216 A:middle
+based on the app's associated
+
+00:05:23.216 --> 00:05:23.836 A:middle
+domains.
+
+00:05:24.406 --> 00:05:25.976 A:middle
+Apps that have adopted universal
+
+00:05:25.976 --> 00:05:27.876 A:middle
+links hand-off or shared web
+
+00:05:27.876 --> 00:05:29.346 A:middle
+credentials will have associated
+
+00:05:29.346 --> 00:05:29.856 A:middle
+domains.
+
+00:05:31.006 --> 00:05:32.606 A:middle
+For example, the Shiny app is
+
+00:05:32.606 --> 00:05:33.456 A:middle
+associated with
+
+00:05:33.456 --> 00:05:36.386 A:middle
+shiny.example.com, so AutoFill
+
+00:05:36.386 --> 00:05:37.586 A:middle
+will provide your extension a
+
+00:05:37.586 --> 00:05:39.086 A:middle
+service identifier of type
+
+00:05:39.086 --> 00:05:41.436 A:middle
+domain for shiny.example.com.
+
+00:05:42.866 --> 00:05:44.286 A:middle
+In Safari, the service
+
+00:05:44.286 --> 00:05:46.056 A:middle
+identifiers are based on the URL
+
+00:05:46.086 --> 00:05:47.336 A:middle
+of the current page the user is
+
+00:05:47.336 --> 00:05:47.966 A:middle
+logging into.
+
+00:05:51.316 --> 00:05:52.976 A:middle
+AutoFill will send the service
+
+00:05:52.976 --> 00:05:54.786 A:middle
+identifiers to your extension by
+
+00:05:54.786 --> 00:05:56.186 A:middle
+calling the prepared credential
+
+00:05:56.186 --> 00:05:57.796 A:middle
+list for service identifiers
+
+00:05:57.796 --> 00:05:59.266 A:middle
+method on your view controller.
+

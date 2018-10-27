@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.456 --> 00:33:01.586 A:middle
+the old default in case you need
+
+00:33:02.386 --> 00:33:02.466 A:middle
+it.
+
+00:33:02.966 --> 00:33:03.806 A:middle
+Once you have such an
+
+00:33:03.806 --> 00:33:05.416 A:middle
+Unarchiver, well you can decode
+
+00:33:05.416 --> 00:33:06.026 A:middle
+as usual.
+
+00:33:06.686 --> 00:33:09.916 A:middle
+Now, if you're working on a
+
+00:33:09.916 --> 00:33:11.976 A:middle
+Swift app, NSSecureCoding isn't
+
+00:33:11.976 --> 00:33:13.306 A:middle
+the only way for you to convert
+
+00:33:13.306 --> 00:33:14.836 A:middle
+your own model types to external
+
+00:33:14.836 --> 00:33:17.016 A:middle
+representations and back.
+
+00:33:17.726 --> 00:33:18.906 A:middle
+Last year with Swift 4, we
+
+00:33:18.906 --> 00:33:20.246 A:middle
+introduced the Codable protocols
+
+00:33:20.246 --> 00:33:21.636 A:middle
+which make it easier to do just
+
+00:33:21.636 --> 00:33:21.836 A:middle
+that.
+
+00:33:21.836 --> 00:33:24.696 A:middle
+And importantly, all the design
+
+00:33:24.696 --> 00:33:26.026 A:middle
+decisions that made their way
+
+00:33:26.186 --> 00:33:28.126 A:middle
+into NSSecureCoding were also
+
+00:33:28.126 --> 00:33:29.646 A:middle
+present in Codable from day one.
+
+00:33:30.796 --> 00:33:32.956 A:middle
+Specifically, Codable never
+
+00:33:32.956 --> 00:33:34.166 A:middle
+writes type information into
+
+00:33:34.166 --> 00:33:34.806 A:middle
+archives.
+
+00:33:35.096 --> 00:33:36.146 A:middle
+So, there's nothing to trust
+
+00:33:36.146 --> 00:33:36.576 A:middle
+later on.
+
+00:33:36.576 --> 00:33:38.796 A:middle
+By requiring you to pass in
+
+00:33:38.796 --> 00:33:40.446 A:middle
+static type information upfront
+
+00:33:40.446 --> 00:33:41.976 A:middle
+about what you expect to decode,
+
+00:33:42.376 --> 00:33:43.696 A:middle
+you can prevent exactly this
+
+00:33:43.696 --> 00:33:44.966 A:middle
+sort of attack.
+
+00:33:45.776 --> 00:33:47.396 A:middle
+Now, Codable also comes with
+
+00:33:47.426 --> 00:33:48.196 A:middle
+conveniences.
+
+00:33:48.196 --> 00:33:49.626 A:middle
+If you have a type whose fields
+
+00:33:49.626 --> 00:33:51.366 A:middle
+are all themselves codable, well
+
+00:33:51.366 --> 00:33:52.406 A:middle
+you'll get a synthesized
+
+00:33:52.406 --> 00:33:53.706 A:middle
+implementation of the init from
+
+00:33:53.706 --> 00:33:54.886 A:middle
+and encode to requirements.
+
+00:33:55.806 --> 00:33:56.716 A:middle
+And the synthesized
+
+00:33:56.716 --> 00:33:58.086 A:middle
+implementation gives you type
+
+00:33:58.086 --> 00:33:59.236 A:middle
+and nullability checking for
+
+00:33:59.236 --> 00:33:59.546 A:middle
+free.
+

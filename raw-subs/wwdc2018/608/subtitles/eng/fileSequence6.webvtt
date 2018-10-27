@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.726 --> 00:06:01.576 A:middle
+And these are tricky to debug.
+
+00:06:01.716 --> 00:06:04.476 A:middle
+You might have degenerated
+
+00:06:04.476 --> 00:06:05.946 A:middle
+triangles, where you have
+
+00:06:05.946 --> 00:06:07.716 A:middle
+multiple of your vertices going
+
+00:06:07.716 --> 00:06:08.656 A:middle
+into the same location.
+
+00:06:09.296 --> 00:06:11.146 A:middle
+Or you might have infinites and
+
+00:06:11.146 --> 00:06:12.666 A:middle
+[inaudible] in your vertex
+
+00:06:12.666 --> 00:06:14.086 A:middle
+output position, which is
+
+00:06:14.086 --> 00:06:15.716 A:middle
+undefined behavior for GPU.
+
+00:06:16.736 --> 00:06:18.906 A:middle
+Thankfully, geometry viewer
+
+00:06:19.196 --> 00:06:21.126 A:middle
+detects these cases and provides
+
+00:06:21.126 --> 00:06:22.566 A:middle
+an issue button for you.
+
+00:06:22.916 --> 00:06:28.766 A:middle
+With a single click to that, you
+
+00:06:28.766 --> 00:06:30.316 A:middle
+can get a list of issues it
+
+00:06:30.316 --> 00:06:30.736 A:middle
+finds.
+
+00:06:31.356 --> 00:06:34.036 A:middle
+In this case, it found several
+
+00:06:34.036 --> 00:06:35.466 A:middle
+degenerate triangles.
+
+00:06:36.476 --> 00:06:38.466 A:middle
+Clicking one, you can directly
+
+00:06:38.466 --> 00:06:39.126 A:middle
+see the data.
+
+00:06:40.126 --> 00:06:42.046 A:middle
+And just looking at this data, I
+
+00:06:42.046 --> 00:06:44.036 A:middle
+can clearly tell that two of my
+
+00:06:44.036 --> 00:06:46.286 A:middle
+vertices are going to the
+
+00:06:46.286 --> 00:06:48.206 A:middle
+origin, so it's a degenerate
+
+00:06:48.206 --> 00:06:48.556 A:middle
+triangle.
+
+00:06:50.366 --> 00:06:52.526 A:middle
+And so as you've seen in all
+
+00:06:52.526 --> 00:06:55.186 A:middle
+these examples, geometry viewer
+
+00:06:55.216 --> 00:06:57.666 A:middle
+is a powerful tool to quickly
+
+00:06:57.666 --> 00:06:59.016 A:middle
+investigate all your
+
+00:06:59.016 --> 00:07:01.186 A:middle
+geometry-related issues, and if
+

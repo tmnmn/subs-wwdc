@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.786 --> 00:19:01.106 A:middle
+session from 2016, where we go
+
+00:19:01.106 --> 00:19:03.616 A:middle
+into even more detail.
+
+00:19:04.086 --> 00:19:05.656 A:middle
+So, now that we understand how
+
+00:19:05.656 --> 00:19:07.396 A:middle
+our tests execute, we can
+
+00:19:07.396 --> 00:19:09.046 A:middle
+finally talk about how Xcode
+
+00:19:09.046 --> 00:19:10.026 A:middle
+runs them in parallel.
+
+00:19:11.116 --> 00:19:13.336 A:middle
+Just like before, Xcode will
+
+00:19:13.336 --> 00:19:15.566 A:middle
+launch a test runner to execute
+
+00:19:15.566 --> 00:19:17.976 A:middle
+our tests but instead of just
+
+00:19:17.976 --> 00:19:20.236 A:middle
+launching a single runner, Xcode
+
+00:19:20.236 --> 00:19:22.006 A:middle
+will launch multiple runners,
+
+00:19:22.456 --> 00:19:24.396 A:middle
+each of which executes a subset
+
+00:19:24.436 --> 00:19:26.406 A:middle
+of the tests.
+
+00:19:26.406 --> 00:19:28.426 A:middle
+In fact, Xcode will dynamically
+
+00:19:28.426 --> 00:19:29.766 A:middle
+distribute tests to the runners
+
+00:19:30.346 --> 00:19:31.446 A:middle
+in order to get the best
+
+00:19:31.446 --> 00:19:32.706 A:middle
+utilization of the course on
+
+00:19:32.706 --> 00:19:33.296 A:middle
+your machine.
+
+00:19:33.886 --> 00:19:36.556 A:middle
+Let's go into more detail.
+
+00:19:38.076 --> 00:19:39.876 A:middle
+When Xcode distributes tests to
+
+00:19:39.876 --> 00:19:41.856 A:middle
+the runners, it does so by
+
+00:19:41.856 --> 00:19:42.146 A:middle
+class.
+
+00:19:43.466 --> 00:19:45.046 A:middle
+Each runner receives a test
+
+00:19:45.046 --> 00:19:46.986 A:middle
+class to execute and it'll
+
+00:19:46.986 --> 00:19:48.756 A:middle
+execute that test class before
+
+00:19:48.756 --> 00:19:50.196 A:middle
+going on to execute another one.
+
+00:19:51.286 --> 00:19:52.676 A:middle
+And then testing finishes once
+
+00:19:52.766 --> 00:19:54.566 A:middle
+all the classes have executed.
+
+00:19:55.146 --> 00:19:58.016 A:middle
+Now you might be wondering why
+
+00:19:58.016 --> 00:19:59.856 A:middle
+Xcode distributes tests by class
+

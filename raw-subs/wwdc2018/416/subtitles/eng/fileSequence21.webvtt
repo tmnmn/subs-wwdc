@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:01.106 --> 00:21:03.006 A:middle
+If you migrate away from using
+
+00:21:03.006 --> 00:21:04.876 A:middle
+the UIGraphics BeginImageContext
+
+00:21:04.876 --> 00:21:07.416 A:middle
+WithOptions API, which has been
+
+00:21:07.416 --> 00:21:09.276 A:middle
+in iOS since it began, and
+
+00:21:09.276 --> 00:21:10.816 A:middle
+instead switch to the UIGraphics
+
+00:21:10.856 --> 00:21:12.576 A:middle
+ImageRenderer format, you can
+
+00:21:12.576 --> 00:21:14.206 A:middle
+save a lot of memory because the
+
+00:21:15.036 --> 00:21:17.456 A:middle
+UIGraphics BeginImageContext
+
+00:21:17.456 --> 00:21:19.006 A:middle
+WithOptions is always a
+
+00:21:19.356 --> 00:21:20.916 A:middle
+4-byte-per-pixel format.
+
+00:21:21.886 --> 00:21:22.866 A:middle
+It's always SRGB.
+
+00:21:23.186 --> 00:21:24.416 A:middle
+So you don't get the wide format
+
+00:21:24.416 --> 00:21:25.446 A:middle
+if you want it, and you don't
+
+00:21:25.446 --> 00:21:27.216 A:middle
+get the 1-byte-per-pixel A8
+
+00:21:27.216 --> 00:21:28.596 A:middle
+format if you need it.
+
+00:21:28.716 --> 00:21:29.346 A:middle
+Instead, if you use the
+
+00:21:29.346 --> 00:21:30.966 A:middle
+UIGraphics ImageRenderer API,
+
+00:21:31.566 --> 00:21:33.576 A:middle
+which came in iOS 10, as of iOS
+
+00:21:33.626 --> 00:21:35.156 A:middle
+12, it will automatically pick
+
+00:21:35.156 --> 00:21:36.236 A:middle
+the best graphics format for
+
+00:21:36.236 --> 00:21:36.396 A:middle
+you.
+
+00:21:36.866 --> 00:21:39.176 A:middle
+Here's an example.
+
+00:21:39.716 --> 00:21:40.976 A:middle
+Say I'm drawing a circle for a
+
+00:21:40.976 --> 00:21:41.146 A:middle
+mask.
+
+00:21:41.956 --> 00:21:43.666 A:middle
+Now, using the old API with the
+
+00:21:43.666 --> 00:21:45.626 A:middle
+highlighted code here is my
+
+00:21:45.626 --> 00:21:46.866 A:middle
+drawing code, I'm getting a
+
+00:21:46.866 --> 00:21:48.326 A:middle
+4-byte-per-pixel format just to
+
+00:21:48.326 --> 00:21:49.586 A:middle
+draw a black circle.
+
+00:21:51.026 --> 00:21:52.366 A:middle
+If I instead switch to the new
+
+00:21:52.366 --> 00:21:54.336 A:middle
+API, I'm using the exact same
+
+00:21:54.336 --> 00:21:54.826 A:middle
+drawing code.
+
+00:21:55.676 --> 00:21:57.406 A:middle
+Just using the new API, I'm now
+
+00:21:57.406 --> 00:21:58.826 A:middle
+getting a 1-byte-per-pixel
+
+00:21:58.826 --> 00:21:59.096 A:middle
+image.
+
+00:21:59.176 --> 00:22:01.396 A:middle
+This means that it's 75% less
+

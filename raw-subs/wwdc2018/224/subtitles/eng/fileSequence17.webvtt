@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.566 --> 00:17:00.176 A:middle
+user is taking that you're not
+
+00:17:00.176 --> 00:17:02.326 A:middle
+yet ready to manifest in a given
+
+00:17:02.326 --> 00:17:03.006 A:middle
+context.
+
+00:17:04.026 --> 00:17:05.286 A:middle
+Query generations provide a
+
+00:17:05.286 --> 00:17:07.026 A:middle
+consistent, durable view of the
+
+00:17:07.026 --> 00:17:08.806 A:middle
+database that will return the
+
+00:17:08.806 --> 00:17:10.435 A:middle
+same results for fetches
+
+00:17:10.435 --> 00:17:11.606 A:middle
+regardless of what other
+
+00:17:11.606 --> 00:17:12.806 A:middle
+contexts are writing to the
+
+00:17:12.806 --> 00:17:14.165 A:middle
+database at a given time.
+
+00:17:17.415 --> 00:17:19.695 A:middle
+The best part is we can adopt
+
+00:17:19.695 --> 00:17:20.816 A:middle
+them in one line of code.
+
+00:17:21.715 --> 00:17:23.116 A:middle
+This is a typical change for
+
+00:17:23.116 --> 00:17:24.256 A:middle
+reloading a table view.
+
+00:17:24.675 --> 00:17:26.626 A:middle
+We would just have to insert a
+
+00:17:26.626 --> 00:17:28.496 A:middle
+call to NSManagedObjectContext
+
+00:17:28.496 --> 00:17:30.256 A:middle
+setQueryGenerationFrom token
+
+00:17:30.336 --> 00:17:31.276 A:middle
+with the current query
+
+00:17:31.276 --> 00:17:31.966 A:middle
+generation.
+
+00:17:33.456 --> 00:17:34.746 A:middle
+And when it comes time to update
+
+00:17:34.746 --> 00:17:37.206 A:middle
+them, we can update them as we
+
+00:17:37.206 --> 00:17:38.296 A:middle
+normally do by using
+
+00:17:38.366 --> 00:17:40.056 A:middle
+NSMangedObjectContextDidSave
+
+00:17:40.056 --> 00:17:40.766 A:middle
+notification.
+
+00:17:41.236 --> 00:17:44.226 A:middle
+And this allows us to manifest
+
+00:17:44.226 --> 00:17:45.806 A:middle
+changes to the application's
+
+00:17:45.806 --> 00:17:47.866 A:middle
+data in the UI at the right
+
+00:17:48.786 --> 00:17:48.876 A:middle
+time.
+
+00:17:52.096 --> 00:17:53.536 A:middle
+But what if the data that we're
+
+00:17:53.536 --> 00:17:54.986 A:middle
+writing isn't related to the UI,
+
+00:17:55.676 --> 00:17:56.716 A:middle
+such as downloading some
+
+00:17:56.716 --> 00:17:57.986 A:middle
+comments that Scott mentioned
+
+00:17:57.986 --> 00:17:58.466 A:middle
+earlier?
+
+00:17:59.556 --> 00:18:02.046 A:middle
+In this case, we don't want that
+

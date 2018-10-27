@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.016 --> 00:32:00.476 A:middle
+The application should be
+
+00:32:01.076 --> 00:32:03.476 A:middle
+observing AV Player Item status
+
+00:32:04.006 --> 00:32:05.576 A:middle
+and AV Player Item error
+
+00:32:05.576 --> 00:32:07.716 A:middle
+property to find out this type
+
+00:32:07.716 --> 00:32:08.086 A:middle
+of error.
+
+00:32:09.146 --> 00:32:10.816 A:middle
+These errors are fatal errors.
+
+00:32:11.916 --> 00:32:13.056 A:middle
+When the error indicated
+
+00:32:13.406 --> 00:32:15.106 A:middle
+playback has been terminated
+
+00:32:15.106 --> 00:32:17.586 A:middle
+already, so what should we do?
+
+00:32:18.306 --> 00:32:19.626 A:middle
+How do we find out the cause?
+
+00:32:20.206 --> 00:32:22.016 A:middle
+Here is example.
+
+00:32:22.806 --> 00:32:24.576 A:middle
+The application is observing
+
+00:32:24.986 --> 00:32:27.706 A:middle
+player item status when the
+
+00:32:27.706 --> 00:32:29.346 A:middle
+status changed to failed.
+
+00:32:30.286 --> 00:32:32.936 A:middle
+Application go off to check the
+
+00:32:32.936 --> 00:32:35.636 A:middle
+AV Player error properties as
+
+00:32:35.636 --> 00:32:37.766 A:middle
+well as the Error Log from the
+
+00:32:37.766 --> 00:32:39.416 A:middle
+AV Player Item.
+
+00:32:41.376 --> 00:32:45.766 A:middle
+Here is the error property from
+
+00:32:45.766 --> 00:32:46.716 A:middle
+the player item.
+
+00:32:47.146 --> 00:32:48.446 A:middle
+It provides some useful
+
+00:32:48.446 --> 00:32:49.056 A:middle
+information.
+
+00:32:50.206 --> 00:32:52.296 A:middle
+Error code from AV foundation
+
+00:32:52.296 --> 00:32:53.026 A:middle
+error domain.
+
+00:32:53.746 --> 00:32:56.536 A:middle
+It also provides some hint, go
+
+00:32:56.536 --> 00:32:59.246 A:middle
+off and check the Error Log from
+
+00:32:59.246 --> 00:33:00.516 A:middle
+AV Player Item.
+

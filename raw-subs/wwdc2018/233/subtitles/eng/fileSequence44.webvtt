@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.916 --> 00:44:00.196 A:middle
+for.
+
+00:44:00.196 --> 00:44:02.206 A:middle
+Our screenshots view is there.
+
+00:44:02.206 --> 00:44:03.256 A:middle
+We can see it.
+
+00:44:03.506 --> 00:44:05.606 A:middle
+And, on inspection, we can see
+
+00:44:05.606 --> 00:44:06.656 A:middle
+that it is currently hidden.
+
+00:44:07.226 --> 00:44:09.266 A:middle
+So, we need to go and look at
+
+00:44:09.266 --> 00:44:10.786 A:middle
+everywhere we're setting the
+
+00:44:10.786 --> 00:44:11.876 A:middle
+hidden property on this view,
+
+00:44:11.876 --> 00:44:13.366 A:middle
+and really understand why it's
+
+00:44:14.086 --> 00:44:15.406 A:middle
+not showing.
+
+00:44:16.236 --> 00:44:16.736 A:middle
+In addition to
+
+00:44:16.736 --> 00:44:18.626 A:middle
+recursiveDescription, UIView
+
+00:44:18.626 --> 00:44:20.166 A:middle
+also has parentDescription,
+
+00:44:20.476 --> 00:44:21.666 A:middle
+which will walk up the view
+
+00:44:21.666 --> 00:44:24.046 A:middle
+hierarchy to the parent views,
+
+00:44:24.946 --> 00:44:26.486 A:middle
+until it reaches no -- to a nil
+
+00:44:26.486 --> 00:44:26.866 A:middle
+parent.
+
+00:44:27.536 --> 00:44:28.626 A:middle
+It'll print the same kind of
+
+00:44:28.626 --> 00:44:29.536 A:middle
+debugging information.
+
+00:44:31.856 --> 00:44:33.476 A:middle
+&gt;&gt; RecursiveDescription and
+
+00:44:33.476 --> 00:44:35.206 A:middle
+parentDescription are great for
+
+00:44:35.206 --> 00:44:36.326 A:middle
+UIView issues.
+
+00:44:36.946 --> 00:44:38.066 A:middle
+But, sometimes you have a
+
+00:44:38.066 --> 00:44:40.016 A:middle
+problem with UIViewControllers.
+
+00:44:40.246 --> 00:44:41.736 A:middle
+And, for that you can use the
+
+00:44:41.736 --> 00:44:43.026 A:middle
+great class method,
+
+00:44:43.406 --> 00:44:45.686 A:middle
+UIViewController printHierarchy.
+
+00:44:47.026 --> 00:44:48.536 A:middle
+Recently we had a bug in our
+
+00:44:48.536 --> 00:44:50.286 A:middle
+screenshot editor, where one of
+
+00:44:50.286 --> 00:44:51.676 A:middle
+our viewControllers had not yet
+
+00:44:51.676 --> 00:44:53.296 A:middle
+received the viewDidAppear
+
+00:44:53.296 --> 00:44:53.846 A:middle
+message.
+
+00:44:54.266 --> 00:44:55.366 A:middle
+And so, it hadn't set up its
+
+00:44:55.366 --> 00:44:56.256 A:middle
+state appropriately.
+
+00:44:57.316 --> 00:44:58.916 A:middle
+By running UIViewController
+
+00:44:58.986 --> 00:45:01.136 A:middle
+printHierarchy, we can get an
+

@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:57.951 --> 00:52:00.954 align:start position:30% line:-1
+２つ目の方法は大変です
+
+00:52:01.121 --> 00:52:04.725 align:start position:23% line:-2
+immediate modeは
+レコード形式で―
+
+00:52:04.825 --> 00:52:09.730 align:start position:32% line:-2
+ほぼリアルタイムで
+データを可視化します
+
+00:52:09.897 --> 00:52:12.666 align:start position:29% line:-1
+大変な理由は２つあります
+
+00:52:12.766 --> 00:52:15.636 align:start position:30% line:-2
+まずは追加でサポートが
+必要なこと
+
+00:52:15.802 --> 00:52:19.606 align:start position:30% line:-2
+時間が足りず
+当日中に対応できません
+
+00:52:19.873 --> 00:52:22.075 align:start position:32% line:-1
+今 取り組んでいます
+
+00:52:22.309 --> 00:52:25.412 align:start position:36% line:-2
+そして重要な
+２つ目の理由は―
+
+00:52:26.080 --> 00:52:28.882 align:start position:30% line:-1
+インターバルデータです
+
+00:52:28.982 --> 00:52:33.320 align:start position:23% line:-2
+Analysis Coreでは
+beginとendを見れば―
+
+00:52:33.420 --> 00:52:36.557 align:start position:21% line:-2
+インターバルデータは それが
+閉じるまではテーブルに入りません
+
+00:52:36.657 --> 00:52:40.694 align:start position:29% line:-2
+でも実演していると多くの
+インターバルができます
+
+00:52:40.794 --> 00:52:44.865 align:start position:32% line:-2
+モデラが 実行可能な
+出力として要求すれば
+
+00:52:44.998 --> 00:52:48.535 align:start position:21% line:-2
+upstreamにインターバルが
+あると―
+
+00:52:48.635 --> 00:52:50.804 align:start position:29% line:-2
+インターバルが閉じるまで
+全モデラクロックの
+
+00:52:50.904 --> 00:52:53.307 align:start position:30% line:-2
+ダウンストリームを
+停止する必要があります
+
+00:52:53.407 --> 00:52:56.844 align:start position:29% line:-1
+モデラは時間順だからです
+
+00:52:56.944 --> 00:53:01.682 align:start position:21% line:-2
+インターバルのアップストリームが
+閉じるまでクロックは動かせません
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:57.336 --> 00:47:00.956 A:middle
+So for the printf function,
+
+00:47:01.396 --> 00:47:02.646 A:middle
+there's code represented by a
+
+00:47:02.646 --> 00:47:03.096 A:middle
+symbol.
+
+00:47:03.496 --> 00:47:04.756 A:middle
+For any of the functions in
+
+00:47:04.756 --> 00:47:06.176 A:middle
+PetKit which we're going to see
+
+00:47:06.176 --> 00:47:09.716 A:middle
+in a second, the same thing.
+
+00:47:09.936 --> 00:47:11.206 A:middle
+And fragments may reference
+
+00:47:11.206 --> 00:47:12.406 A:middle
+undefined symbols.
+
+00:47:12.406 --> 00:47:16.476 A:middle
+So if your .o file refers to a
+
+00:47:16.476 --> 00:47:18.166 A:middle
+function in another .o file,
+
+00:47:18.166 --> 00:47:20.586 A:middle
+that .o file's undefined.
+
+00:47:20.626 --> 00:47:22.276 A:middle
+And the linker will go and find
+
+00:47:22.276 --> 00:47:23.936 A:middle
+those undefined symbols and link
+
+00:47:24.426 --> 00:47:26.146 A:middle
+them up.
+
+00:47:26.406 --> 00:47:28.746 A:middle
+So I said that object files are
+
+00:47:28.746 --> 00:47:30.236 A:middle
+the output of your compiler
+
+00:47:30.236 --> 00:47:30.686 A:middle
+actions.
+
+00:47:30.686 --> 00:47:31.726 A:middle
+So what are libraries?
+
+00:47:32.576 --> 00:47:34.496 A:middle
+Libraries are files that define
+
+00:47:34.496 --> 00:47:36.026 A:middle
+symbols that are not part of the
+
+00:47:36.026 --> 00:47:37.426 A:middle
+target you are building.
+
+00:47:38.516 --> 00:47:40.896 A:middle
+So we have dynamic libraries,
+
+00:47:41.726 --> 00:47:44.316 A:middle
+and those are Mach-O files that
+
+00:47:44.316 --> 00:47:46.376 A:middle
+expose code and data fragments
+
+00:47:46.696 --> 00:47:48.526 A:middle
+for executables to use.
+
+00:47:49.546 --> 00:47:52.336 A:middle
+Those are distributed as part of
+
+00:47:52.336 --> 00:47:52.676 A:middle
+the system.
+
+00:47:52.676 --> 00:47:53.636 A:middle
+That's what our frameworks are.
+
+00:47:53.636 --> 00:47:54.916 A:middle
+And a number of you also use
+
+00:47:54.916 --> 00:47:55.956 A:middle
+your own frameworks.
+
+00:47:55.956 --> 00:48:00.256 A:middle
+There are also TBD files, or
+

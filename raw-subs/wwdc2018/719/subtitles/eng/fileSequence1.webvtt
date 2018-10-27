@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.296 --> 00:01:00.236 A:middle
+And lastly, we're going to be
+
+00:01:00.236 --> 00:01:01.836 A:middle
+talking about how you can use
+
+00:01:01.836 --> 00:01:04.036 A:middle
+Core Image with various machine
+
+00:01:04.036 --> 00:01:05.656 A:middle
+learning applications.
+
+00:01:07.336 --> 00:01:08.046 A:middle
+All right.
+
+00:01:08.046 --> 00:01:10.026 A:middle
+So, let's get into this and
+
+00:01:10.026 --> 00:01:11.216 A:middle
+start talking about performance
+
+00:01:11.216 --> 00:01:11.376 A:middle
+APIs.
+
+00:01:11.376 --> 00:01:13.066 A:middle
+There's two main areas where
+
+00:01:13.066 --> 00:01:15.206 A:middle
+we've worked on performance this
+
+00:01:15.206 --> 00:01:15.396 A:middle
+year.
+
+00:01:15.396 --> 00:01:16.856 A:middle
+First of all, we've added some
+
+00:01:16.856 --> 00:01:18.266 A:middle
+new controls for inserting
+
+00:01:18.636 --> 00:01:20.076 A:middle
+intermediate buffers -- we'll
+
+00:01:20.076 --> 00:01:21.386 A:middle
+talk about that in some detail.
+
+00:01:22.006 --> 00:01:23.356 A:middle
+And the second thing is we'll be
+
+00:01:23.356 --> 00:01:25.346 A:middle
+talking about some new CI kernel
+
+00:01:25.346 --> 00:01:27.196 A:middle
+language features that you can
+
+00:01:27.196 --> 00:01:27.916 A:middle
+take advantage of.
+
+00:01:28.156 --> 00:01:30.356 A:middle
+So, let's start by talking about
+
+00:01:30.356 --> 00:01:31.376 A:middle
+intermediate buffers.
+
+00:01:32.806 --> 00:01:34.546 A:middle
+As you are aware, if you've used
+
+00:01:34.546 --> 00:01:36.076 A:middle
+Core Image before, Core Image
+
+00:01:36.076 --> 00:01:37.356 A:middle
+allows you to easily chain
+
+00:01:37.356 --> 00:01:39.866 A:middle
+together sequences of filters.
+
+00:01:40.266 --> 00:01:41.836 A:middle
+Every filter in Core Image is
+
+00:01:41.836 --> 00:01:43.796 A:middle
+made up of one or more kernels.
+
+00:01:44.076 --> 00:01:45.196 A:middle
+And one of the great features
+
+00:01:45.196 --> 00:01:46.926 A:middle
+that Core Image uses to improve
+
+00:01:46.926 --> 00:01:48.376 A:middle
+performance is the ability to
+
+00:01:48.376 --> 00:01:49.836 A:middle
+concatenate kernels in order to
+
+00:01:49.836 --> 00:01:50.886 A:middle
+minimize the number of
+
+00:01:50.886 --> 00:01:51.836 A:middle
+intermediate buffers.
+
+00:01:52.226 --> 00:01:53.966 A:middle
+In many cases, to get the best
+
+00:01:53.966 --> 00:01:54.996 A:middle
+performance you want to have the
+
+00:01:54.996 --> 00:01:56.496 A:middle
+minimum number of buffers.
+
+00:01:57.596 --> 00:01:58.796 A:middle
+However, there are some
+
+00:01:58.796 --> 00:02:00.776 A:middle
+scenarios where you don't want
+

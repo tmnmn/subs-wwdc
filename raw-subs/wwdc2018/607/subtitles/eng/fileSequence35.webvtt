@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:05.336 --> 00:35:06.846 A:middle
+Okay, so threadgroup memory is a
+
+00:35:06.846 --> 00:35:07.786 A:middle
+well-known feature of Metal
+
+00:35:07.786 --> 00:35:08.206 A:middle
+compute.
+
+00:35:08.826 --> 00:35:09.856 A:middle
+It lets threads within a
+
+00:35:09.856 --> 00:35:11.766 A:middle
+threadgroup share data using
+
+00:35:11.766 --> 00:35:12.636 A:middle
+fast, on-ship memory.
+
+00:35:13.736 --> 00:35:14.886 A:middle
+Now, thanks to tile shading,
+
+00:35:14.936 --> 00:35:16.096 A:middle
+threadgroup memory is now also
+
+00:35:16.096 --> 00:35:17.396 A:middle
+available in the render pass.
+
+00:35:18.446 --> 00:35:19.586 A:middle
+But threadgroup memory in the
+
+00:35:19.586 --> 00:35:20.756 A:middle
+render pass has 2 new
+
+00:35:20.756 --> 00:35:21.946 A:middle
+capabilities not traditionally
+
+00:35:21.946 --> 00:35:22.766 A:middle
+available to compute.
+
+00:35:23.376 --> 00:35:25.286 A:middle
+First, a fragment shader now
+
+00:35:25.286 --> 00:35:26.756 A:middle
+also has access to the same
+
+00:35:26.756 --> 00:35:27.446 A:middle
+threadgroup memory.
+
+00:35:28.126 --> 00:35:29.366 A:middle
+And second, the contents of
+
+00:35:29.366 --> 00:35:30.496 A:middle
+threadgroup memory persist
+
+00:35:30.496 --> 00:35:31.656 A:middle
+across the entire life of a
+
+00:35:31.656 --> 00:35:32.116 A:middle
+tile.
+
+00:35:33.476 --> 00:35:35.706 A:middle
+Taken together, this makes a
+
+00:35:35.756 --> 00:35:37.146 A:middle
+powerful tool for sharing data
+
+00:35:37.146 --> 00:35:38.676 A:middle
+across both draws and
+
+00:35:38.676 --> 00:35:39.286 A:middle
+dispatches.
+
+00:35:40.486 --> 00:35:41.646 A:middle
+In fact, we believe it's so
+
+00:35:41.646 --> 00:35:42.666 A:middle
+useful that we've actually
+
+00:35:42.666 --> 00:35:43.916 A:middle
+doubled the maximum size of
+
+00:35:43.916 --> 00:35:44.876 A:middle
+threadgroup memory over our
+
+00:35:44.876 --> 00:35:46.466 A:middle
+previous generation so that you
+
+00:35:46.466 --> 00:35:47.326 A:middle
+can store more of your
+
+00:35:47.326 --> 00:35:50.606 A:middle
+intermediate data on ship.
+
+00:35:50.786 --> 00:35:51.546 A:middle
+Okay, so now, let's use
+
+00:35:51.546 --> 00:35:52.956 A:middle
+threadgroup persistence to
+
+00:35:52.956 --> 00:35:54.176 A:middle
+further optimize our tiled
+
+00:35:54.176 --> 00:35:55.106 A:middle
+forward shading example.
+
+00:35:55.686 --> 00:36:00.576 A:middle
+So with persistence, tile, the
+

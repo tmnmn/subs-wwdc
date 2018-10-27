@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.196 --> 00:15:02.256 A:middle
+This implements an A-weighted
+
+00:15:02.256 --> 00:15:04.316 A:middle
+filter, in order to measure the
+
+00:15:04.316 --> 00:15:05.596 A:middle
+environmental sound pressure
+
+00:15:05.596 --> 00:15:08.726 A:middle
+level in DBA, or in other words,
+
+00:15:08.986 --> 00:15:10.276 A:middle
+it tells you how noisy it is.
+
+00:15:11.036 --> 00:15:13.226 A:middle
+Now, this step also accepts a
+
+00:15:13.226 --> 00:15:15.576 A:middle
+threshold value, and this makes
+
+00:15:15.576 --> 00:15:17.506 A:middle
+things interesting, because now
+
+00:15:17.836 --> 00:15:19.896 A:middle
+you can use the step as a gating
+
+00:15:19.896 --> 00:15:20.286 A:middle
+step.
+
+00:15:20.796 --> 00:15:22.196 A:middle
+So, for example, if you want
+
+00:15:22.196 --> 00:15:23.846 A:middle
+your users to perform the tone
+
+00:15:23.846 --> 00:15:25.906 A:middle
+audiometry task, you can add
+
+00:15:25.966 --> 00:15:27.956 A:middle
+this task before that to ensure
+
+00:15:27.956 --> 00:15:30.086 A:middle
+that your users are not in an
+
+00:15:30.086 --> 00:15:31.896 A:middle
+environment that is too noisy to
+
+00:15:31.896 --> 00:15:36.296 A:middle
+accurately perform the task.
+
+00:15:36.446 --> 00:15:37.946 A:middle
+To add this you create an
+
+00:15:37.946 --> 00:15:39.606 A:middle
+instance of ORK environment,
+
+00:15:39.606 --> 00:15:41.226 A:middle
+SPLMeterStep with a unique
+
+00:15:41.226 --> 00:15:43.096 A:middle
+identifier and provide us the
+
+00:15:43.096 --> 00:15:43.966 A:middle
+threshold value.
+
+00:15:44.826 --> 00:15:46.386 A:middle
+We're also exposing additional
+
+00:15:46.386 --> 00:15:47.656 A:middle
+properties that you can further
+
+00:15:47.656 --> 00:15:48.336 A:middle
+customize.
+
+00:15:49.976 --> 00:15:51.486 A:middle
+And now, let's take a quick
+
+00:15:51.486 --> 00:15:53.696 A:middle
+detour and move on to our next
+
+00:15:53.696 --> 00:15:55.906 A:middle
+category, speech.
+
+00:15:57.186 --> 00:15:58.596 A:middle
+We're adding a speech
+
+00:15:58.746 --> 00:16:00.606 A:middle
+recognition module, which
+

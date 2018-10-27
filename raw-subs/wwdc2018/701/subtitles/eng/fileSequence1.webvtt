@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:00.996 --> 00:01:01.826 A:middle
+The first one, we're going to
+
+00:01:01.826 --> 00:01:03.036 A:middle
+show you how to extract signal
+
+00:01:03.036 --> 00:01:04.686 A:middle
+from noise, and then we're going
+
+00:01:04.686 --> 00:01:06.346 A:middle
+to show you how you can remove
+
+00:01:06.466 --> 00:01:07.666 A:middle
+certain types of artifacts from
+
+00:01:07.666 --> 00:01:07.996 A:middle
+an image.
+
+00:01:09.426 --> 00:01:10.696 A:middle
+We're then going to take a look
+
+00:01:10.696 --> 00:01:12.406 A:middle
+at simd, and we're going to show
+
+00:01:12.406 --> 00:01:13.656 A:middle
+you how you can use quaternions
+
+00:01:13.656 --> 00:01:14.986 A:middle
+to represent rotations in three
+
+00:01:14.986 --> 00:01:15.446 A:middle
+dimensions.
+
+00:01:16.056 --> 00:01:19.526 A:middle
+I'm then going to pass off the
+
+00:01:19.526 --> 00:01:20.646 A:middle
+presentation to my colleague,
+
+00:01:20.646 --> 00:01:21.926 A:middle
+Luke Cheng, who's going to show
+
+00:01:21.926 --> 00:01:22.726 A:middle
+you some of the interesting
+
+00:01:22.726 --> 00:01:23.646 A:middle
+things that you can do with
+
+00:01:23.646 --> 00:01:24.116 A:middle
+vImage.
+
+00:01:25.256 --> 00:01:27.116 A:middle
+So with that, let's get started.
+
+00:01:27.736 --> 00:01:30.226 A:middle
+So you're probably asking
+
+00:01:30.226 --> 00:01:31.266 A:middle
+yourself exactly this.
+
+00:01:31.656 --> 00:01:33.026 A:middle
+What on Earth is Accelerate?
+
+00:01:33.596 --> 00:01:37.276 A:middle
+So the primary purpose of
+
+00:01:37.276 --> 00:01:38.616 A:middle
+Accelerate is to provide
+
+00:01:38.906 --> 00:01:40.236 A:middle
+thousands of low-level math
+
+00:01:40.236 --> 00:01:42.146 A:middle
+primitives, and we provide these
+
+00:01:42.146 --> 00:01:43.606 A:middle
+primitives across all of Apple's
+
+00:01:43.606 --> 00:01:44.186 A:middle
+platforms.
+
+00:01:44.846 --> 00:01:46.376 A:middle
+So this includes not only iOS
+
+00:01:46.376 --> 00:01:48.436 A:middle
+and macOS but watchOS and tvOS
+
+00:01:48.436 --> 00:01:48.796 A:middle
+as well.
+
+00:01:51.536 --> 00:01:52.796 A:middle
+Most of these primitives are
+
+00:01:52.796 --> 00:01:53.546 A:middle
+hand-tuned to the
+
+00:01:53.546 --> 00:01:54.846 A:middle
+microarchitecture of the
+
+00:01:54.846 --> 00:01:55.316 A:middle
+processor.
+
+00:01:56.156 --> 00:01:57.596 A:middle
+So this means we get excellent
+
+00:01:57.596 --> 00:01:58.276 A:middle
+performance.
+
+00:01:58.766 --> 00:02:01.536 A:middle
+And this performance translates
+

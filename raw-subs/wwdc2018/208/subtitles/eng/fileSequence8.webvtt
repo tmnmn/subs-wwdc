@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.946 --> 00:08:01.096 A:middle
+apps, and the steps are
+
+00:08:01.096 --> 00:08:02.826 A:middle
+identical for tvOS apps.
+
+00:08:04.796 --> 00:08:06.086 A:middle
+So, after adopting Associated
+
+00:08:06.086 --> 00:08:07.486 A:middle
+Domains, this is what the user
+
+00:08:07.486 --> 00:08:09.686 A:middle
+will likely see on the shiny app
+
+00:08:09.686 --> 00:08:11.046 A:middle
+after tapping your credential on
+
+00:08:11.046 --> 00:08:11.766 A:middle
+the QuickType bar.
+
+00:08:12.006 --> 00:08:13.046 A:middle
+And, this is awesome.
+
+00:08:13.346 --> 00:08:14.806 A:middle
+The user has their username and
+
+00:08:14.806 --> 00:08:16.526 A:middle
+passwords on their Apple TV
+
+00:08:16.526 --> 00:08:17.856 A:middle
+without having to type a single
+
+00:08:17.856 --> 00:08:18.476 A:middle
+character.
+
+00:08:18.546 --> 00:08:20.446 A:middle
+But what we really want the user
+
+00:08:20.446 --> 00:08:21.966 A:middle
+to see is this.
+
+00:08:22.996 --> 00:08:24.586 A:middle
+Being automatically signed in
+
+00:08:24.586 --> 00:08:25.626 A:middle
+and seeing their pupper of the
+
+00:08:25.626 --> 00:08:27.696 A:middle
+day, because they've been signed
+
+00:08:27.696 --> 00:08:28.476 A:middle
+in with one tap.
+
+00:08:30.186 --> 00:08:31.796 A:middle
+You can get this behavior by
+
+00:08:31.796 --> 00:08:32.436 A:middle
+implementing the
+
+00:08:32.436 --> 00:08:34.916 A:middle
+preferredFocusEnvironments API.
+
+00:08:36.056 --> 00:08:38.025 A:middle
+So, after filling in a password,
+
+00:08:38.166 --> 00:08:39.566 A:middle
+a focus update occurs.
+
+00:08:39.775 --> 00:08:40.846 A:middle
+And, Password AutoFill will
+
+00:08:40.846 --> 00:08:42.116 A:middle
+perform the action of the
+
+00:08:42.116 --> 00:08:43.566 A:middle
+focused button if one is
+
+00:08:43.566 --> 00:08:44.046 A:middle
+focused.
+
+00:08:44.606 --> 00:08:46.056 A:middle
+So, you should implement the
+
+00:08:46.056 --> 00:08:47.696 A:middle
+preferredFocusEnvironments API,
+
+00:08:48.176 --> 00:08:49.536 A:middle
+so you can provide your login
+
+00:08:49.536 --> 00:08:50.766 A:middle
+button to the focus engine.
+
+00:08:51.386 --> 00:08:52.126 A:middle
+Let's look at how you might
+
+00:08:52.126 --> 00:08:53.966 A:middle
+implement this.
+
+00:08:54.636 --> 00:08:55.546 A:middle
+Here I have a sample
+
+00:08:55.546 --> 00:08:56.406 A:middle
+implementation of the
+
+00:08:56.406 --> 00:08:58.036 A:middle
+preferredFocusEnvironments API,
+
+00:08:58.516 --> 00:08:59.716 A:middle
+which returns an array of
+
+00:08:59.716 --> 00:09:01.636 A:middle
+UIFocusEnvironment objects.
+

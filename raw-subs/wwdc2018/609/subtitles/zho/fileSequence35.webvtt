@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.199 --> 00:35:02.236 align:middle line:-1
+方便来回转换图像和矩阵
+
+00:35:03.136 --> 00:35:04.438 align:middle line:-1
+那么要复制
+
+00:35:05.205 --> 00:35:06.607 align:middle line:0
+一张图像到矩阵
+
+00:35:06.673 --> 00:35:10.077 align:middle line:0
+需要使用
+MPSImageCopyToMatrix内核
+
+00:35:10.143 --> 00:35:11.812 align:middle line:0
+这是创建方法
+
+00:35:12.145 --> 00:35:15.883 align:middle line:0
+以及如何给一批图像编码
+
+00:35:17.084 --> 00:35:21.955 align:middle line:0
+目的矩阵的每行都含有一个源图像
+
+00:35:23.056 --> 00:35:25.459 align:middle line:0
+要从矩阵复制到图像
+
+00:35:25.926 --> 00:35:29.162 align:middle line:0
+需要内核
+MPSMatrixCopyToImage
+
+00:35:29.229 --> 00:35:30.697 align:middle line:0
+这一部分是创建
+
+00:35:30.998 --> 00:35:33.267 align:middle line:0
+这部分是在GPU上编码
+
+00:35:35.302 --> 00:35:40.807 align:middle line:-2
+大家已经了解了如何使用MPS
+训练CNN和RNN
+
+00:35:41.808 --> 00:35:44.344 align:middle line:-2
+也看过了
+Turi Create的演示
+
+00:35:44.411 --> 00:35:46.180 align:middle line:-1
+现在由MPS驱动
+
+00:35:46.246 --> 00:35:47.881 align:middle line:-1
+现在再看一个演示
+
+00:35:49.550 --> 00:35:51.218 align:middle line:-1
+我们在与Google合作
+
+00:35:51.285 --> 00:35:53.987 align:middle line:-1
+添加Metal性能着色器框架
+
+00:35:54.054 --> 00:35:56.323 align:middle line:-1
+给TensorFlow…
+
+00:35:57.090 --> 00:35:59.193 align:middle line:-1
+以提升macOS机器学习的速度
+
+00:35:59.259 --> 00:36:01.495 align:middle line:-1
+也给大家带来了动态演示
+

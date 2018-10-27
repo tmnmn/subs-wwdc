@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.316 --> 00:28:01.606 A:middle
+created two protocols, BitStream
+
+00:28:01.606 --> 00:28:03.216 A:middle
+Encodable and BitStream
+
+00:28:03.216 --> 00:28:03.796 A:middle
+Decodable.
+
+00:28:04.576 --> 00:28:05.616 A:middle
+Combine those and you get
+
+00:28:05.616 --> 00:28:06.376 A:middle
+BitStream Codable.
+
+00:28:07.266 --> 00:28:09.186 A:middle
+Then we took that and marked all
+
+00:28:09.186 --> 00:28:10.416 A:middle
+the objects that we needed to
+
+00:28:10.416 --> 00:28:12.176 A:middle
+serialize, using that protocol,
+
+00:28:12.176 --> 00:28:12.926 A:middle
+helping us to get the
+
+00:28:12.926 --> 00:28:13.576 A:middle
+implementation.
+
+00:28:14.106 --> 00:28:16.006 A:middle
+That includes both our own data
+
+00:28:16.006 --> 00:28:17.266 A:middle
+objects and the object we use
+
+00:28:17.266 --> 00:28:19.916 A:middle
+from the system such as the simD
+
+00:28:20.226 --> 00:28:22.886 A:middle
+floating point vector type.
+
+00:28:24.936 --> 00:28:26.556 A:middle
+So, here's the implementation of
+
+00:28:26.556 --> 00:28:27.856 A:middle
+compressing floats.
+
+00:28:28.526 --> 00:28:30.006 A:middle
+The compressors, configured with
+
+00:28:30.006 --> 00:28:31.436 A:middle
+the minimum and maximum range,
+
+00:28:31.656 --> 00:28:32.866 A:middle
+and the number of bits we wanted
+
+00:28:32.866 --> 00:28:33.326 A:middle
+to use.
+
+00:28:34.646 --> 00:28:36.786 A:middle
+It clamps the value to the range
+
+00:28:37.036 --> 00:28:37.996 A:middle
+and then converts it to an
+
+00:28:37.996 --> 00:28:40.396 A:middle
+integer value for encoding using
+
+00:28:40.396 --> 00:28:42.326 A:middle
+the specified number of bits.
+
+00:28:42.836 --> 00:28:44.326 A:middle
+Each component for each object
+
+00:28:44.326 --> 00:28:45.406 A:middle
+in the scene is compressed in
+
+00:28:45.406 --> 00:28:45.716 A:middle
+this way.
+
+00:28:46.616 --> 00:28:48.316 A:middle
+We also use an additional bit at
+
+00:28:48.316 --> 00:28:49.766 A:middle
+the front to tell if an object
+
+00:28:49.766 --> 00:28:51.306 A:middle
+has moved since the last update.
+
+00:28:52.026 --> 00:28:53.716 A:middle
+If it hasn't moved, we don't
+
+00:28:53.716 --> 00:28:54.716 A:middle
+resend that information.
+
+00:28:56.696 --> 00:28:58.746 A:middle
+So, let's go back to our action
+
+00:28:58.746 --> 00:28:59.716 A:middle
+enum, with the three different
+
+00:28:59.716 --> 00:29:00.816 A:middle
+actions to talk about how we
+

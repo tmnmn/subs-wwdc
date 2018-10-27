@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.836 --> 00:24:01.296 A:middle
+It's really easy to set up a
+
+00:24:01.296 --> 00:24:03.296 A:middle
+listener to advertise a bonjour
+
+00:24:03.296 --> 00:24:03.826 A:middle
+service.
+
+00:24:04.146 --> 00:24:05.316 A:middle
+In this case, we'll use
+
+00:24:05.316 --> 00:24:06.076 A:middle
+camera.udp.
+
+00:24:06.076 --> 00:24:10.246 A:middle
+When a new connection is
+
+00:24:10.246 --> 00:24:11.946 A:middle
+received by a listener, it will
+
+00:24:11.946 --> 00:24:13.286 A:middle
+pass that connection to a block
+
+00:24:13.286 --> 00:24:14.566 A:middle
+that you provide as the
+
+00:24:14.566 --> 00:24:15.436 A:middle
+newConnectionHandler.
+
+00:24:16.496 --> 00:24:17.606 A:middle
+This is your opportunity to
+
+00:24:17.666 --> 00:24:19.096 A:middle
+perform any configuration that
+
+00:24:19.096 --> 00:24:20.586 A:middle
+you choose on that connection,
+
+00:24:21.036 --> 00:24:22.216 A:middle
+and then you need to call start
+
+00:24:22.556 --> 00:24:24.006 A:middle
+to let that connection know that
+
+00:24:24.006 --> 00:24:26.716 A:middle
+it's time to get going.
+
+00:24:26.936 --> 00:24:28.226 A:middle
+Similarly, you need to call
+
+00:24:28.226 --> 00:24:29.576 A:middle
+start on your listener, and
+
+00:24:29.576 --> 00:24:30.566 A:middle
+again, just like with
+
+00:24:30.566 --> 00:24:31.696 A:middle
+connections, you provide a
+
+00:24:31.696 --> 00:24:33.016 A:middle
+dispatch queue where you want
+
+00:24:33.016 --> 00:24:34.136 A:middle
+these callbacks to be scheduled.
+
+00:24:34.666 --> 00:24:36.706 A:middle
+So that's listeners.
+
+00:24:37.106 --> 00:24:38.516 A:middle
+If you think about it, we just
+
+00:24:38.516 --> 00:24:39.916 A:middle
+implemented the equivalent of
+
+00:24:39.916 --> 00:24:41.806 A:middle
+calling listen on a UDP socket.
+
+00:24:42.926 --> 00:24:45.236 A:middle
+Except listen doesn't actually
+
+00:24:45.236 --> 00:24:47.346 A:middle
+work on UDP sockets.
+
+00:24:47.476 --> 00:24:48.906 A:middle
+Now we're ready to build our app
+
+00:24:48.906 --> 00:24:49.376 A:middle
+in Xcode.
+
+00:24:50.646 --> 00:24:51.476 A:middle
+So here we've got our
+
+00:24:51.476 --> 00:24:53.026 A:middle
+application, and we've got a
+
+00:24:53.026 --> 00:24:54.596 A:middle
+bunch of files over here that
+
+00:24:54.596 --> 00:24:55.976 A:middle
+already handle the camera and
+
+00:24:55.976 --> 00:24:57.876 A:middle
+the display functionality, so
+
+00:24:57.876 --> 00:24:59.126 A:middle
+we're going to focus just on the
+
+00:24:59.126 --> 00:25:01.316 A:middle
+UDPClient class and the
+

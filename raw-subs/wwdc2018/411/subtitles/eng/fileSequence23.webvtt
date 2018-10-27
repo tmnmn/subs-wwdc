@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.666 --> 00:23:00.076 A:middle
+together.
+
+00:23:01.276 --> 00:23:02.396 A:middle
+This is a development only
+
+00:23:02.396 --> 00:23:04.816 A:middle
+feature, so you have to change
+
+00:23:04.816 --> 00:23:06.446 A:middle
+to certain version dependencies
+
+00:23:06.706 --> 00:23:10.786 A:middle
+before you publish a tag.
+
+00:23:10.986 --> 00:23:12.636 A:middle
+Local packages allow you to use
+
+00:23:12.636 --> 00:23:14.526 A:middle
+packages directly from the file
+
+00:23:14.526 --> 00:23:16.536 A:middle
+system, instead of from a git
+
+00:23:16.536 --> 00:23:17.296 A:middle
+repository.
+
+00:23:17.806 --> 00:23:19.056 A:middle
+This is useful to make it
+
+00:23:19.056 --> 00:23:22.876 A:middle
+possible to bring up multiple
+
+00:23:22.876 --> 00:23:24.306 A:middle
+packages during the initial
+
+00:23:24.306 --> 00:23:24.816 A:middle
+creation.
+
+00:23:27.936 --> 00:23:29.566 A:middle
+So, last topic, I want to talk
+
+00:23:29.566 --> 00:23:30.996 A:middle
+to you about adopting new
+
+00:23:30.996 --> 00:23:32.426 A:middle
+versions of SwiftPM and the
+
+00:23:32.426 --> 00:23:33.176 A:middle
+Swift language.
+
+00:23:33.746 --> 00:23:37.766 A:middle
+Each new version of Swift can
+
+00:23:37.766 --> 00:23:39.156 A:middle
+bring a new version of the
+
+00:23:39.156 --> 00:23:40.866 A:middle
+package.swift manifest API.
+
+00:23:41.796 --> 00:23:43.146 A:middle
+The previous API is still
+
+00:23:43.146 --> 00:23:45.876 A:middle
+available, so that you can take
+
+00:23:45.876 --> 00:23:47.366 A:middle
+advantage of new source tools
+
+00:23:47.556 --> 00:23:48.716 A:middle
+without having to update your
+
+00:23:48.716 --> 00:23:51.226 A:middle
+package or losing access to
+
+00:23:51.226 --> 00:23:52.316 A:middle
+existing packages.
+
+00:23:53.576 --> 00:23:55.156 A:middle
+New API can be adopted
+
+00:23:55.626 --> 00:23:57.676 A:middle
+independently of changing to a
+
+00:23:57.676 --> 00:23:59.466 A:middle
+new Swift language version for
+
+00:23:59.466 --> 00:24:00.546 A:middle
+your packages' source code.
+

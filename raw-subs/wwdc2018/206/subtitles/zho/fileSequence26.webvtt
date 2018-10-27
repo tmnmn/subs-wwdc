@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.525 --> 00:26:00.861 align:middle line:-2
+对于用户来说很有用
+它们无需启动app
+
+00:26:01.228 --> 00:26:04.331 align:middle line:-2
+回忆一下前面的饮食
+和天气app例子
+
+00:26:04.598 --> 00:26:05.632 align:middle line:-1
+只需要看一下表盘
+
+00:26:05.699 --> 00:26:08.669 align:middle line:-1
+就可知道温度是72度 多云
+
+00:26:08.902 --> 00:26:09.736 align:middle line:-1
+不必进行点击
+
+00:26:11.238 --> 00:26:12.573 align:middle line:-1
+为了更好实现这个功能
+
+00:26:12.906 --> 00:26:15.075 align:middle line:-1
+我们添加了一个后台刷新任务：
+
+00:26:15.142 --> 00:26:18.111 align:middle line:-2
+WKRelevantShortcut
+RefreshBackgroundTask
+
+00:26:19.179 --> 00:26:22.783 align:middle line:-2
+当你使用此任务时
+应该检查你的数据是否需要更新
+
+00:26:22.850 --> 00:26:26.119 align:middle line:-1
+然后提供新的相关性快捷方式
+
+00:26:27.421 --> 00:26:29.423 align:middle line:-1
+在安排这些后台任务时
+
+00:26:29.489 --> 00:26:31.391 align:middle line:-1
+我们会考虑用户活动
+
+00:26:31.625 --> 00:26:35.095 align:middle line:-1
+和信息查看次数
+
+00:26:38.699 --> 00:26:42.703 align:middle line:-2
+如果基于意图的快捷方式
+当app在后台运行时
+
+00:26:42.769 --> 00:26:45.072 align:middle line:-2
+快捷方式的意图
+可能会更新app
+
+00:26:46.540 --> 00:26:49.710 align:middle line:-1
+由于意图扩展是一个独立于
+
+00:26:49.776 --> 00:26:51.178 align:middle line:-1
+WatchKit扩展的过程
+
+00:26:51.445 --> 00:26:54.748 align:middle line:-2
+现在我们提供一个
+新的刷新后台任务 名为
+
+00:26:54.815 --> 00:26:57.985 align:middle line:-2
+WKIntentDidRun
+RefreshBackgroundTask
+
+00:26:58.418 --> 00:27:02.656 align:middle line:-2
+以运行你的主扩展
+并且在你的意图执行之后
+

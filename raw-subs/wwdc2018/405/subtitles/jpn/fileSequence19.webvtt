@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.873 --> 00:19:05.245 align:start position:29% line:-2
+最初は白い背景が表示され
+遅れて画像が現れます
+
+00:19:05.345 --> 00:19:11.318 align:start position:27% line:-2
+最新のアプリケーションでは
+一般的な挙動と言えます
+
+00:19:11.852 --> 00:19:15.422 align:start position:34% line:-2
+パフォーマンスには
+優れますが
+
+00:19:15.522 --> 00:19:17.758 align:start position:27% line:-1
+プロファイルには不向きです
+
+00:19:18.025 --> 00:19:21.728 align:start position:34% line:-2
+多くの非同期処理が
+起きるためで
+
+00:19:21.828 --> 00:19:25.899 align:start position:32% line:-2
+スクロールと 画像の
+読み込みが重なります
+
+00:19:25.999 --> 00:19:28.535 align:start position:30% line:-1
+速くスクロールされると
+
+00:19:28.735 --> 00:19:33.874 align:start position:32% line:-2
+読み込みが完了せず
+画像が表示されません
+
+00:19:33.974 --> 00:19:38.712 align:start position:34% line:-2
+こういう場合は
+キャンセルしないと
+
+00:19:38.812 --> 00:19:42.416 align:start position:27% line:-2
+平行して
+読み込みを続けようとします
+
+00:19:42.883 --> 00:19:45.319 align:start position:23% line:-1
+そこでsignpostを使って
+
+00:19:45.419 --> 00:19:48.121 align:start position:34% line:-2
+アプリケーションを
+分析します
+
+00:19:49.223 --> 00:19:51.558 align:start position:36% line:-1
+これがコードです
+
+00:19:51.658 --> 00:19:55.129 align:start position:16% line:-2
+startImageDownloadを
+使っています
+
+00:19:55.229 --> 00:19:58.198 align:start position:36% line:-2
+画像を読み込む際
+呼び出され
+
+00:19:58.332 --> 00:20:02.169 align:start position:34% line:-2
+該当の画像の名前が
+渡されます
+

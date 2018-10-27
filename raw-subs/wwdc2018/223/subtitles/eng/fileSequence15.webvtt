@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.766 --> 00:15:01.126 A:middle
+j, and there's a single loop,
+
+00:15:01.616 --> 00:15:04.906 A:middle
+and the loop index j moves
+
+00:15:05.046 --> 00:15:06.646 A:middle
+forward one on each iteration.
+
+00:15:07.696 --> 00:15:09.196 A:middle
+So, it's a sure bet that j makes
+
+00:15:09.196 --> 00:15:10.716 A:middle
+just one pass over the elements.
+
+00:15:11.116 --> 00:15:14.086 A:middle
+You can almost see the order and
+
+00:15:14.086 --> 00:15:20.306 A:middle
+complexity just from that.
+
+00:15:20.516 --> 00:15:22.106 A:middle
+Lastly, because this method
+
+00:15:22.106 --> 00:15:23.526 A:middle
+needs to rearrange elements but
+
+00:15:23.526 --> 00:15:24.726 A:middle
+not change the length or
+
+00:15:24.726 --> 00:15:26.396 A:middle
+structure of the collection, it
+
+00:15:26.396 --> 00:15:27.506 A:middle
+only depends on mutable
+
+00:15:27.506 --> 00:15:28.606 A:middle
+collection conformance.
+
+00:15:29.146 --> 00:15:32.366 A:middle
+So, this is the first lesson I
+
+00:15:32.366 --> 00:15:32.676 A:middle
+learned.
+
+00:15:33.686 --> 00:15:34.966 A:middle
+Become familiar with what's in
+
+00:15:34.966 --> 00:15:36.166 A:middle
+the Swift Standard Library.
+
+00:15:37.176 --> 00:15:38.606 A:middle
+It contains a suite of
+
+00:15:38.606 --> 00:15:40.416 A:middle
+algorithms with documented
+
+00:15:40.416 --> 00:15:41.486 A:middle
+meanings and performance
+
+00:15:41.486 --> 00:15:42.316 A:middle
+characteristics.
+
+00:15:43.406 --> 00:15:45.526 A:middle
+And although we happened to peek
+
+00:15:45.526 --> 00:15:47.416 A:middle
+at the implementation, and you
+
+00:15:47.416 --> 00:15:49.126 A:middle
+can learn a lot that way, it's
+
+00:15:49.156 --> 00:15:50.786 A:middle
+designed so that you do not have
+
+00:15:50.836 --> 00:15:50.946 A:middle
+to.
+
+00:15:52.426 --> 00:15:53.756 A:middle
+The official documentation
+
+00:15:53.756 --> 00:15:55.046 A:middle
+should tell you everything you
+
+00:15:55.046 --> 00:15:56.856 A:middle
+need to know in order to use the
+
+00:15:56.856 --> 00:15:58.006 A:middle
+library effectively.
+
+00:15:58.996 --> 00:16:00.126 A:middle
+You'll even find a playground
+

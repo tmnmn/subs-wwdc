@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.486 --> 00:08:00.596 A:middle
+please go ahead and clean these
+
+00:08:00.596 --> 00:08:01.186 A:middle
+usages.
+
+00:08:02.406 --> 00:08:04.346 A:middle
+And, the fix is pretty
+
+00:08:04.346 --> 00:08:05.086 A:middle
+straightforward.
+
+00:08:05.086 --> 00:08:06.196 A:middle
+Instead of accessing the
+
+00:08:06.196 --> 00:08:07.366 A:middle
+instance variable directly,
+
+00:08:07.686 --> 00:08:08.866 A:middle
+please go ahead and call the
+
+00:08:08.866 --> 00:08:10.006 A:middle
+getter, or the property
+
+00:08:10.006 --> 00:08:11.346 A:middle
+accessed, or whatever there
+
+00:08:11.346 --> 00:08:11.806 A:middle
+might be.
+
+00:08:11.986 --> 00:08:14.116 A:middle
+And, if you have some reason to
+
+00:08:14.116 --> 00:08:15.246 A:middle
+access the instance variable,
+
+00:08:15.246 --> 00:08:16.266 A:middle
+and you don't see a way around
+
+00:08:16.266 --> 00:08:17.496 A:middle
+it, you might want to let us
+
+00:08:17.496 --> 00:08:17.706 A:middle
+know.
+
+00:08:18.936 --> 00:08:20.216 A:middle
+Now, speaking of deprecation,
+
+00:08:20.576 --> 00:08:21.626 A:middle
+we're doing one more thing
+
+00:08:23.276 --> 00:08:25.326 A:middle
+called formal soft deprecation.
+
+00:08:25.976 --> 00:08:26.906 A:middle
+So, over the years we have
+
+00:08:26.906 --> 00:08:28.866 A:middle
+deprecated a lot of API's, and
+
+00:08:28.866 --> 00:08:29.986 A:middle
+have replaced them with better
+
+00:08:30.016 --> 00:08:30.416 A:middle
+ones.
+
+00:08:30.966 --> 00:08:32.275 A:middle
+In cases where the deprecation
+
+00:08:32.275 --> 00:08:33.976 A:middle
+isn't urgent, we usually go
+
+00:08:33.976 --> 00:08:35.346 A:middle
+through an informal deprecation
+
+00:08:35.346 --> 00:08:36.765 A:middle
+phase, where we tell you the
+
+00:08:36.765 --> 00:08:38.336 A:middle
+API's deprecated, we release
+
+00:08:38.336 --> 00:08:39.916 A:middle
+note it, we comment it, and so
+
+00:08:39.916 --> 00:08:41.426 A:middle
+on, before we actually mark the
+
+00:08:41.426 --> 00:08:42.456 A:middle
+API's deprecated.
+
+00:08:42.836 --> 00:08:44.116 A:middle
+Usually to reduce disruption.
+
+00:08:44.916 --> 00:08:46.016 A:middle
+But now, we have a way to mark
+
+00:08:46.016 --> 00:08:47.366 A:middle
+API's as to be formally
+
+00:08:47.366 --> 00:08:47.956 A:middle
+deprecated.
+
+00:08:48.566 --> 00:08:49.556 A:middle
+Let me give you an example.
+
+00:08:50.726 --> 00:08:51.626 A:middle
+Here we have a symbol,
+
+00:08:51.676 --> 00:08:54.356 A:middle
+NSBoxOldStyle, which of course
+
+00:08:54.356 --> 00:08:55.846 A:middle
+happens to be a name that begs
+
+00:08:55.846 --> 00:08:56.626 A:middle
+to be deprecated.
+
+00:08:57.186 --> 00:08:58.176 A:middle
+And, you'll note that we've
+
+00:08:58.206 --> 00:08:59.696 A:middle
+marked it as deprecated.
+

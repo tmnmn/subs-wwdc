@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:59.946 --> 00:52:01.446 A:middle
+This is a feature we have in
+
+00:52:01.486 --> 00:52:02.806 A:middle
+Unreal where we can take
+
+00:52:03.276 --> 00:52:04.976 A:middle
+multiple draw calls and generate
+
+00:52:04.976 --> 00:52:06.226 A:middle
+a simplified version, a
+
+00:52:06.226 --> 00:52:08.426 A:middle
+simplified mesh, as well as a
+
+00:52:08.426 --> 00:52:09.466 A:middle
+material so that we can
+
+00:52:09.466 --> 00:52:10.286 A:middle
+basically render a
+
+00:52:10.286 --> 00:52:14.176 A:middle
+representation of that area in a
+
+00:52:14.176 --> 00:52:15.036 A:middle
+single draw call.
+
+00:52:15.526 --> 00:52:18.116 A:middle
+We use this for taking POIs and
+
+00:52:18.356 --> 00:52:19.566 A:middle
+generating the simplified
+
+00:52:19.566 --> 00:52:20.906 A:middle
+versions for rendering very,
+
+00:52:20.906 --> 00:52:21.646 A:middle
+very far away.
+
+00:52:22.056 --> 00:52:22.816 A:middle
+For instance, during the
+
+00:52:22.816 --> 00:52:24.386 A:middle
+skydive, you can see the entire
+
+00:52:24.386 --> 00:52:24.696 A:middle
+map.
+
+00:52:25.166 --> 00:52:26.296 A:middle
+In fact, when you're on the map,
+
+00:52:26.296 --> 00:52:28.086 A:middle
+you can get on a cliff or just
+
+00:52:28.166 --> 00:52:29.606 A:middle
+build a very high tower of your
+
+00:52:29.606 --> 00:52:32.096 A:middle
+own and see points of interest
+
+00:52:32.096 --> 00:52:33.616 A:middle
+from up to 2 kilometers away.
+
+00:52:35.936 --> 00:52:38.056 A:middle
+Digging into some of the other
+
+00:52:38.056 --> 00:52:40.476 A:middle
+details on the Metal side, I
+
+00:52:40.476 --> 00:52:41.376 A:middle
+want to talk a little bit about
+
+00:52:41.376 --> 00:52:42.366 A:middle
+pipeline state objects.
+
+00:52:42.366 --> 00:52:43.546 A:middle
+This was something that took us
+
+00:52:43.546 --> 00:52:44.706 A:middle
+a little bit of time to get into
+
+00:52:44.706 --> 00:52:46.146 A:middle
+a shippable state for Fortnite.
+
+00:52:46.796 --> 00:52:48.116 A:middle
+You really want to minimize how
+
+00:52:48.116 --> 00:52:50.446 A:middle
+many PSOs you're creating while
+
+00:52:50.446 --> 00:52:51.576 A:middle
+you're simulating the game
+
+00:52:51.576 --> 00:52:52.286 A:middle
+during the frame.
+
+00:52:52.586 --> 00:52:53.816 A:middle
+If you create too many, it's
+
+00:52:53.816 --> 00:52:55.396 A:middle
+very easy to hitch and create a
+
+00:52:55.396 --> 00:52:56.686 A:middle
+poor player experience.
+
+00:52:57.236 --> 00:52:58.606 A:middle
+So first of all, follow best
+
+00:52:58.606 --> 00:52:59.456 A:middle
+practices, right.
+
+00:52:59.846 --> 00:53:01.266 A:middle
+Compile your functions offline,
+

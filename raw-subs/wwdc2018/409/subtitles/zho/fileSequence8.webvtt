@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.046 --> 00:08:03.217 align:middle line:-2
+如果你们当中
+由于缺少这样的特性
+
+00:08:03.517 --> 00:08:06.119 align:middle line:-1
+而推迟迁移到ARC中的话
+
+00:08:06.186 --> 00:08:10.524 align:middle line:-2
+我希望Xcode 10中
+对ARC对象指针字段的支持
+
+00:08:10.991 --> 00:08:12.860 align:middle line:-1
+可以帮助你重新考虑你的选择
+
+00:08:14.027 --> 00:08:18.732 align:middle line:-2
+我们来看看Objective-C
+指针和一般的结构
+
+00:08:18.799 --> 00:08:23.270 align:middle line:-2
+看看在Xcode 10中
+在不同的语言模式中
+
+00:08:23.570 --> 00:08:26.273 align:middle line:-1
+在哪里以及如何使用这些结构
+
+00:08:27.774 --> 00:08:31.745 align:middle line:-2
+在Xcode 10中
+你可以使用具有
+
+00:08:31.812 --> 00:08:34.248 align:middle line:-1
+Objective-C
+
+00:08:34.515 --> 00:08:36.216 align:middle line:-2
+对象指针字段的结构
+来跨越不同的语言模式
+
+00:08:36.549 --> 00:08:41.788 align:middle line:-2
+例如你可以在C、Objective-C
+甚至Objective-C++中
+
+00:08:41.855 --> 00:08:43.789 align:middle line:-1
+使用相同的结构
+
+00:08:44.791 --> 00:08:50.330 align:middle line:-2
+而且即使在ARC或
+手动保留释放模式下编译代码时
+
+00:08:50.564 --> 00:08:52.666 align:middle line:-1
+它也会正常工作
+
+00:08:54.067 --> 00:08:58.839 align:middle line:-2
+在Xcode 10中
+实际上我们在调用函数之间
+
+00:08:59.306 --> 00:09:04.745 align:middle line:-2
+统一了
+Objective-C++ ABI
+

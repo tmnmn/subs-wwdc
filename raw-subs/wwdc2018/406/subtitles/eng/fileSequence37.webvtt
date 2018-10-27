@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.916 --> 00:37:02.186 A:middle
+syntax to all collections.
+
+00:37:02.766 --> 00:37:03.966 A:middle
+That's great, but there's just
+
+00:37:03.966 --> 00:37:04.776 A:middle
+one problem.
+
+00:37:05.536 --> 00:37:07.296 A:middle
+Some collections don't want this
+
+00:37:07.296 --> 00:37:08.786 A:middle
+particular slice type.
+
+00:37:09.306 --> 00:37:10.456 A:middle
+They really want to provide
+
+00:37:10.456 --> 00:37:12.226 A:middle
+their own slicing operations
+
+00:37:12.466 --> 00:37:14.056 A:middle
+that produce a different type.
+
+00:37:14.606 --> 00:37:16.086 A:middle
+String is the most common
+
+00:37:16.086 --> 00:37:16.626 A:middle
+example.
+
+00:37:17.016 --> 00:37:19.106 A:middle
+When you slice a string, you get
+
+00:37:19.106 --> 00:37:20.406 A:middle
+back a substring.
+
+00:37:21.516 --> 00:37:22.466 A:middle
+And so if you apply our
+
+00:37:22.466 --> 00:37:24.056 A:middle
+divide-and-conquer algorithms to
+
+00:37:24.236 --> 00:37:25.436 A:middle
+the string collection.
+
+00:37:25.666 --> 00:37:26.776 A:middle
+You really want those to be in
+
+00:37:26.776 --> 00:37:27.786 A:middle
+terms of substring.
+
+00:37:27.966 --> 00:37:29.196 A:middle
+Rather than some other type like
+
+00:37:29.196 --> 00:37:30.086 A:middle
+the slice of a string.
+
+00:37:30.836 --> 00:37:32.526 A:middle
+Range is another interesting
+
+00:37:32.526 --> 00:37:33.176 A:middle
+example.
+
+00:37:33.406 --> 00:37:35.146 A:middle
+Because its slicing operation
+
+00:37:35.376 --> 00:37:37.436 A:middle
+returns an instance of the exact
+
+00:37:37.436 --> 00:37:39.766 A:middle
+same range type just with the
+
+00:37:39.766 --> 00:37:40.626 A:middle
+new bounds.
+
+00:37:41.306 --> 00:37:43.126 A:middle
+So to capture this variation
+
+00:37:43.246 --> 00:37:44.766 A:middle
+among different types that
+
+00:37:44.766 --> 00:37:46.676 A:middle
+conform to collection, we can
+
+00:37:46.676 --> 00:37:48.796 A:middle
+introduce new requirements into
+
+00:37:48.796 --> 00:37:49.896 A:middle
+the collection protocol.
+
+00:37:50.066 --> 00:37:51.486 A:middle
+Specifically for slicing.
+
+00:37:52.396 --> 00:37:54.176 A:middle
+So here we've pulled the slicing
+
+00:37:54.176 --> 00:37:55.606 A:middle
+subscript into the collection
+
+00:37:55.606 --> 00:37:57.536 A:middle
+protocol itself as a
+
+00:37:57.536 --> 00:37:58.316 A:middle
+requirement.
+
+00:37:59.136 --> 00:38:00.686 A:middle
+Now note that the result type of
+

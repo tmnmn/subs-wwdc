@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.336 --> 00:02:00.646 A:middle
+cross-origin lockdown.
+
+00:02:01.146 --> 00:02:03.976 A:middle
+This is basically me showing you
+
+00:02:03.976 --> 00:02:05.426 A:middle
+a bunch of technologies that are
+
+00:02:05.426 --> 00:02:07.856 A:middle
+available to you in WebKit and
+
+00:02:07.856 --> 00:02:09.606 A:middle
+in browser engines across the
+
+00:02:09.606 --> 00:02:12.426 A:middle
+line that can help you get into
+
+00:02:12.726 --> 00:02:14.776 A:middle
+more secure defaults for your
+
+00:02:14.776 --> 00:02:15.476 A:middle
+web content.
+
+00:02:16.056 --> 00:02:17.396 A:middle
+We would like to opt in for you,
+
+00:02:17.396 --> 00:02:19.186 A:middle
+but we can't test your sites for
+
+00:02:19.186 --> 00:02:21.636 A:middle
+you or your web content for you,
+
+00:02:21.636 --> 00:02:23.346 A:middle
+so we need you to opt in.
+
+00:02:23.946 --> 00:02:25.686 A:middle
+And then, as a motivation, if
+
+00:02:25.686 --> 00:02:27.056 A:middle
+you feel, well, why should I
+
+00:02:27.056 --> 00:02:28.326 A:middle
+care about these security
+
+00:02:28.326 --> 00:02:30.226 A:middle
+mechanisms, I'll actually show
+
+00:02:30.226 --> 00:02:32.386 A:middle
+you some attack scenarios and
+
+00:02:32.386 --> 00:02:34.546 A:middle
+map them back to the security
+
+00:02:34.616 --> 00:02:36.026 A:middle
+technologies so that you
+
+00:02:36.026 --> 00:02:37.716 A:middle
+understand where they come into
+
+00:02:37.776 --> 00:02:39.746 A:middle
+play and how they can defend
+
+00:02:39.746 --> 00:02:40.596 A:middle
+your web content.
+
+00:02:41.266 --> 00:02:42.966 A:middle
+So, let's head right in to
+
+00:02:42.966 --> 00:02:44.476 A:middle
+securing your transports.
+
+00:02:45.096 --> 00:02:46.636 A:middle
+This one should be familiar to
+
+00:02:46.636 --> 00:02:46.876 A:middle
+you.
+
+00:02:47.486 --> 00:02:49.276 A:middle
+So, this is about moving to
+
+00:02:49.276 --> 00:02:51.196 A:middle
+HTTPS and WSS.
+
+00:02:52.286 --> 00:02:54.376 A:middle
+WSS is for web sockets.
+
+00:02:55.526 --> 00:02:58.306 A:middle
+Now, just the fact that HTTP and
+
+00:02:58.306 --> 00:03:00.386 A:middle
+WS, the plain text equivalents,
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.316 --> 00:36:01.496 A:middle
+frameworks such as UIKit are
+
+00:36:01.496 --> 00:36:02.766 A:middle
+written in Objective-C.
+
+00:36:06.696 --> 00:36:08.396 A:middle
+Swift takes a different approach
+
+00:36:08.676 --> 00:36:10.126 A:middle
+than many other languages.
+
+00:36:10.326 --> 00:36:11.886 A:middle
+And it doesn't require you to
+
+00:36:12.186 --> 00:36:13.316 A:middle
+provide a foreign function
+
+00:36:13.316 --> 00:36:14.036 A:middle
+interface.
+
+00:36:15.576 --> 00:36:17.086 A:middle
+This is where you would have to,
+
+00:36:17.086 --> 00:36:18.416 A:middle
+for example, write a Swift
+
+00:36:18.416 --> 00:36:20.536 A:middle
+declaration for each Objective-C
+
+00:36:20.536 --> 00:36:21.846 A:middle
+API you want to use.
+
+00:36:23.056 --> 00:36:25.066 A:middle
+Instead, the compiler embeds a
+
+00:36:25.066 --> 00:36:27.556 A:middle
+large part of Clang inside of it
+
+00:36:28.316 --> 00:36:29.566 A:middle
+and uses it as a library.
+
+00:36:30.556 --> 00:36:32.326 A:middle
+This makes it possible to import
+
+00:36:32.326 --> 00:36:34.136 A:middle
+Objective-C frameworks directly.
+
+00:36:36.896 --> 00:36:38.196 A:middle
+So where do Objective-C
+
+00:36:38.196 --> 00:36:39.306 A:middle
+declarations come from?
+
+00:36:40.376 --> 00:36:41.566 A:middle
+The compile-- the importer will
+
+00:36:41.566 --> 00:36:43.066 A:middle
+look in headers depending on the
+
+00:36:43.146 --> 00:36:44.076 A:middle
+type of the target.
+
+00:36:45.596 --> 00:36:47.926 A:middle
+In any target, when you import
+
+00:36:47.926 --> 00:36:50.166 A:middle
+an Objective-C framework, the
+
+00:36:50.166 --> 00:36:51.796 A:middle
+importer finds declarations in
+
+00:36:51.796 --> 00:36:53.726 A:middle
+the headers exposing Clang's
+
+00:36:53.726 --> 00:36:55.256 A:middle
+module map for that framework.
+
+00:36:56.716 --> 00:36:58.396 A:middle
+Within a framework that mixes
+
+00:36:58.396 --> 00:37:00.656 A:middle
+Swift and Objective-C code, the
+

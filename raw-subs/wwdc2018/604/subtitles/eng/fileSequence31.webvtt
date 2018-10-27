@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.106 --> 00:31:00.506 A:middle
+render pipeline objects that
+
+00:31:00.506 --> 00:31:02.036 A:middle
+contain them.
+
+00:31:02.776 --> 00:31:04.046 A:middle
+You create one of these pipeline
+
+00:31:04.046 --> 00:31:05.766 A:middle
+state objects using a render
+
+00:31:05.766 --> 00:31:07.096 A:middle
+pipeline descriptor object.
+
+00:31:08.466 --> 00:31:10.116 A:middle
+The object contains a vertex and
+
+00:31:10.116 --> 00:31:11.066 A:middle
+fragment shader pair.
+
+00:31:12.446 --> 00:31:13.886 A:middle
+It also specifies the layout of
+
+00:31:13.886 --> 00:31:15.516 A:middle
+vertices feeding the vertex
+
+00:31:16.286 --> 00:31:16.416 A:middle
+shader.
+
+00:31:17.066 --> 00:31:19.506 A:middle
+And also blend state and the
+
+00:31:19.586 --> 00:31:21.586 A:middle
+pixel formats of render targets
+
+00:31:21.866 --> 00:31:23.706 A:middle
+that the fragment and shader can
+
+00:31:23.706 --> 00:31:24.136 A:middle
+render to.
+
+00:31:25.666 --> 00:31:27.206 A:middle
+Just like with the texture
+
+00:31:27.206 --> 00:31:28.556 A:middle
+object you call method on the
+
+00:31:28.556 --> 00:31:30.136 A:middle
+device which will produce an
+
+00:31:30.136 --> 00:31:31.996 A:middle
+immutable render state pipeline
+
+00:31:31.996 --> 00:31:32.406 A:middle
+object.
+
+00:31:33.706 --> 00:31:34.926 A:middle
+And also like a texture object
+
+00:31:35.056 --> 00:31:36.306 A:middle
+you only need the descriptor to
+
+00:31:36.306 --> 00:31:37.546 A:middle
+create that object.
+
+00:31:38.156 --> 00:31:40.456 A:middle
+Here's some code showing how to
+
+00:31:40.456 --> 00:31:41.726 A:middle
+build these pipeline state
+
+00:31:41.726 --> 00:31:42.226 A:middle
+objects.
+
+00:31:43.536 --> 00:31:44.916 A:middle
+Before you create the pipeline,
+
+00:31:45.096 --> 00:31:47.456 A:middle
+you'll need to get the shaders
+
+00:31:47.456 --> 00:31:48.686 A:middle
+out of a Metal library.
+
+00:31:49.256 --> 00:31:51.446 A:middle
+This line here loads the default
+
+00:31:51.446 --> 00:31:53.816 A:middle
+Metal library that we built in
+
+00:31:54.416 --> 00:31:54.586 A:middle
+Xcode.
+
+00:31:54.726 --> 00:31:56.616 A:middle
+For this library you can obtain
+
+00:31:56.616 --> 00:31:58.316 A:middle
+your vertex and fragment shader
+
+00:31:59.116 --> 00:32:00.726 A:middle
+using their function names.
+

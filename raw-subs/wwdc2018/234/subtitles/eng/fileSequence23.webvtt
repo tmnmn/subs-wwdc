@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.516 --> 00:23:01.936 A:middle
+[ Applause ]
+
+00:23:02.436 --> 00:23:05.416 A:middle
+Thanks. So, with subresource
+
+00:23:05.416 --> 00:23:06.566 A:middle
+integrity, I'll be more
+
+00:23:06.566 --> 00:23:08.146 A:middle
+confident that my visitors will
+
+00:23:08.146 --> 00:23:09.926 A:middle
+see the styles and scripts that
+
+00:23:09.926 --> 00:23:12.686 A:middle
+I expect them to get.
+
+00:23:12.886 --> 00:23:13.926 A:middle
+Now, let's switch gears a little
+
+00:23:13.926 --> 00:23:15.006 A:middle
+bit and talk about some
+
+00:23:15.006 --> 00:23:16.166 A:middle
+performance improvements we can
+
+00:23:16.166 --> 00:23:16.426 A:middle
+make.
+
+00:23:16.426 --> 00:23:19.556 A:middle
+I found it insightful to know
+
+00:23:19.556 --> 00:23:20.806 A:middle
+which links are being clicked on
+
+00:23:20.806 --> 00:23:22.446 A:middle
+my site, and which ones aren't.
+
+00:23:22.716 --> 00:23:23.586 A:middle
+It helps me make more informed
+
+00:23:23.586 --> 00:23:23.976 A:middle
+design decisions.
+
+00:23:29.346 --> 00:23:30.956 A:middle
+So, I have this click handler
+
+00:23:30.956 --> 00:23:32.106 A:middle
+that reports which links are
+
+00:23:32.106 --> 00:23:33.666 A:middle
+being clicked to a server that I
+
+00:23:33.666 --> 00:23:35.176 A:middle
+control that aggregates that
+
+00:23:35.176 --> 00:23:35.856 A:middle
+data so I can take a look at it
+
+00:23:35.856 --> 00:23:35.976 A:middle
+later.
+
+00:23:40.736 --> 00:23:43.106 A:middle
+But, notice this delay when I
+
+00:23:43.106 --> 00:23:44.686 A:middle
+click on this Woodworking link
+
+00:23:44.846 --> 00:23:45.976 A:middle
+that goes to a page that
+
+00:23:45.976 --> 00:23:46.756 A:middle
+showcases other
+
+00:23:46.756 --> 00:23:48.616 A:middle
+woodworking-related sites on my
+
+00:23:48.616 --> 00:23:49.066 A:middle
+page.
+
+00:23:50.086 --> 00:23:51.126 A:middle
+I'm going to click the link now.
+
+00:23:52.816 --> 00:23:55.136 A:middle
+Took about a half a second to a
+
+00:23:55.136 --> 00:23:59.036 A:middle
+second, and this is happening
+
+00:23:59.036 --> 00:24:00.706 A:middle
+because I'm making a synchronous
+

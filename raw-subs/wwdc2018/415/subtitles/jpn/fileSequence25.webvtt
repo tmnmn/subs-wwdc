@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.899 --> 00:25:03.270 align:start position:30% line:-2
+モジュールに依存関係を
+記述させるのです
+
+00:25:04.104 --> 00:25:06.673 align:start position:34% line:-1
+便利な機能ですよね
+
+00:25:06.840 --> 00:25:10.110 align:start position:29% line:-2
+一度 モジュールを
+インポートしてしまえば―
+
+00:25:10.477 --> 00:25:15.983 align:start position:27% line:-2
+ヘッダの追加を
+意識する必要がなくなります
+
+00:25:19.152 --> 00:25:24.792 align:start position:23% line:-2
+モジュールが必要か
+どうやって判断するのでしょう？
+
+00:25:25.959 --> 00:25:29.630 align:start position:29% line:-2
+サンプルで確認します
+NSString.hです
+
+00:25:30.497 --> 00:25:34.735 align:start position:23% line:-2
+Clangはフレームワーク内で
+このヘッダを探します
+
+00:25:37.037 --> 00:25:38.539 align:start position:36% line:-1
+先ほどと同じです
+
+00:25:38.639 --> 00:25:41.408 align:start position:12% line:-2
+Foundation.frameworkの
+ディレクトリへ
+
+00:25:42.042 --> 00:25:44.278 align:start position:25% line:-1
+ここでClangが探すのは―
+
+00:25:44.411 --> 00:25:47.047 align:start position:29% line:-2
+モジュールディレクトリの
+モジュールマップです
+
+00:25:47.147 --> 00:25:49.149 align:start position:30% line:-2
+ひも付き先が
+ヘッダディレクトリです
+
+00:25:49.550 --> 00:25:50.284 align:start position:41% line:-1
+ありました
+
+00:25:51.485 --> 00:25:53.253 align:start position:30% line:-1
+モジュールマップとは？
+
+00:25:53.353 --> 00:25:57.591 align:start position:23% line:-2
+一連のヘッダファイルが
+モジュールに変換される過程を―
+
+00:25:57.691 --> 00:25:59.860 align:start position:34% line:-1
+記述したマップです
+

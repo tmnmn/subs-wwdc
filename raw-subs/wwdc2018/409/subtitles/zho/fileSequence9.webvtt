@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.306 --> 00:09:04.745 align:middle line:-2
+统一了
+Objective-C++ ABI
+
+00:09:04.811 --> 00:09:07.915 align:middle line:-2
+这些函数接收或返回具有
+Objective-C++中的ARC对象指针字段的结构
+
+00:09:08.715 --> 00:09:12.653 align:middle line:-2
+这是通过Xcode 10中的
+ABI更改来完成的
+
+00:09:13.053 --> 00:09:17.291 align:middle line:-2
+这种ABI变化影响了
+Objective-C++中的函数
+
+00:09:17.858 --> 00:09:21.195 align:middle line:-1
+这些函数通过值返回或接受
+
+00:09:21.528 --> 00:09:26.466 align:middle line:-1
+具有ARC对象指针字段的结构
+
+00:09:26.533 --> 00:09:28.635 align:middle line:-2
+而没有像构造函数或析构函数
+那样的特殊成员函数
+
+00:09:30.037 --> 00:09:33.106 align:middle line:-1
+现在如果你不确定这对你意味着什么
+
+00:09:33.173 --> 00:09:36.643 align:middle line:-2
+或者你的代码是否受到
+此ABI更改的影响
+
+00:09:37.077 --> 00:09:39.713 align:middle line:-1
+请查看Xcode的发行说明
+
+00:09:39.947 --> 00:09:41.882 align:middle line:-1
+描述了此ABI更改的
+
+00:09:42.182 --> 00:09:45.352 align:middle line:-1
+效果和影响
+
+00:09:45.419 --> 00:09:48.922 align:middle line:-2
+（结构中的
+OBJECTIVE-C对象）
+
+00:09:48.989 --> 00:09:50.224 align:middle line:-1
+对于ARC对象指针字段
+
+00:09:50.290 --> 00:09:54.494 align:middle line:-1
+和C结构 我们有一个警告
+
+00:09:55.629 --> 00:09:57.431 align:middle line:-1
+它们在Swift中没有支持
+
+00:09:57.698 --> 00:09:59.733 align:middle line:-1
+因此如果你尝试使用一个具有
+
+00:09:59.967 --> 00:10:02.669 align:middle line:-2
+Swift中
+ARC对象指针字段的结构
+

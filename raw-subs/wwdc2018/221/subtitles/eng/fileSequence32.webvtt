@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.946 --> 00:32:01.626 A:middle
+luckily, we can avoid this
+
+00:32:01.626 --> 00:32:03.616 A:middle
+situation by using noncontinuous
+
+00:32:03.616 --> 00:32:03.916 A:middle
+layout.
+
+00:32:04.966 --> 00:32:06.896 A:middle
+And so as the name implies, with
+
+00:32:06.896 --> 00:32:08.286 A:middle
+noncontinuous layout, the layout
+
+00:32:08.286 --> 00:32:10.216 A:middle
+manager doesn't have to do glyph
+
+00:32:10.216 --> 00:32:11.656 A:middle
+generation and layout in order
+
+00:32:11.716 --> 00:32:12.896 A:middle
+from the beginning of the text
+
+00:32:12.896 --> 00:32:13.296 A:middle
+storage.
+
+00:32:14.166 --> 00:32:15.626 A:middle
+So now when that person, using
+
+00:32:15.626 --> 00:32:16.756 A:middle
+your app, scrolls to the middle
+
+00:32:17.026 --> 00:32:18.956 A:middle
+of your text view, the layout
+
+00:32:18.956 --> 00:32:20.016 A:middle
+manager can perform glyph
+
+00:32:20.016 --> 00:32:21.106 A:middle
+generation and layout for that
+
+00:32:21.106 --> 00:32:22.696 A:middle
+middle section right away.
+
+00:32:23.346 --> 00:32:25.696 A:middle
+So if your text storage has a
+
+00:32:25.696 --> 00:32:26.886 A:middle
+lot of text in it, using
+
+00:32:26.886 --> 00:32:28.376 A:middle
+noncontinuous layout is a huge
+
+00:32:28.376 --> 00:32:29.276 A:middle
+performance win.
+
+00:32:29.776 --> 00:32:32.476 A:middle
+Great. So how do you turn this
+
+00:32:33.266 --> 00:32:33.366 A:middle
+on?
+
+00:32:33.836 --> 00:32:35.946 A:middle
+Well, noncontinuous layout is a
+
+00:32:35.946 --> 00:32:37.366 A:middle
+property of NSLayoutManager.
+
+00:32:37.366 --> 00:32:39.346 A:middle
+And so for NSTextView, you can
+
+00:32:39.346 --> 00:32:41.346 A:middle
+access the text to use layout
+
+00:32:41.346 --> 00:32:42.486 A:middle
+manager and then you can set
+
+00:32:42.486 --> 00:32:43.436 A:middle
+that property there.
+
+00:32:44.006 --> 00:32:46.896 A:middle
+For UITextView, you usually
+
+00:32:46.896 --> 00:32:47.786 A:middle
+don't have to do anything
+
+00:32:47.786 --> 00:32:48.756 A:middle
+because this is turned on by
+
+00:32:48.756 --> 00:32:50.846 A:middle
+default, but there's just one
+
+00:32:50.846 --> 00:32:51.946 A:middle
+important thing to remember.
+
+00:32:53.006 --> 00:32:54.926 A:middle
+Since UITextView is a subclass
+
+00:32:55.416 --> 00:32:57.806 A:middle
+of UIScrollView, noncontinuous
+
+00:32:57.846 --> 00:32:59.586 A:middle
+layout will require scrolling to
+
+00:32:59.586 --> 00:33:00.106 A:middle
+be enabled.
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.506 --> 00:15:00.426 A:middle
+behind the scenes at what's
+
+00:15:00.426 --> 00:15:00.966 A:middle
+going on.
+
+00:15:02.296 --> 00:15:04.536 A:middle
+So scroll views use content
+
+00:15:04.536 --> 00:15:06.446 A:middle
+offset as a way to represent the
+
+00:15:06.446 --> 00:15:07.626 A:middle
+current scroll position of the
+
+00:15:07.626 --> 00:15:08.086 A:middle
+scroll view.
+
+00:15:09.356 --> 00:15:10.286 A:middle
+Right now, we're scrolled to the
+
+00:15:10.286 --> 00:15:10.776 A:middle
+very top.
+
+00:15:11.066 --> 00:15:12.626 A:middle
+So our content offset is at
+
+00:15:12.626 --> 00:15:14.496 A:middle
+zero, meaning our top edge of
+
+00:15:14.496 --> 00:15:16.326 A:middle
+the content is aligned with the
+
+00:15:16.326 --> 00:15:17.476 A:middle
+top edge of the scroll view.
+
+00:15:18.916 --> 00:15:20.366 A:middle
+Now, if we go ahead and scroll
+
+00:15:20.366 --> 00:15:21.676 A:middle
+the scroll view down, that will
+
+00:15:21.836 --> 00:15:23.146 A:middle
+slide our content up.
+
+00:15:23.296 --> 00:15:24.576 A:middle
+So let's scroll to the bottom
+
+00:15:24.576 --> 00:15:25.466 A:middle
+and watch that happens here.
+
+00:15:26.346 --> 00:15:27.616 A:middle
+And as you can see, the content
+
+00:15:27.616 --> 00:15:29.866 A:middle
+offset increases and goes all
+
+00:15:29.866 --> 00:15:31.766 A:middle
+the way to 100 in our example
+
+00:15:31.766 --> 00:15:32.676 A:middle
+when we reach the bottom.
+
+00:15:33.186 --> 00:15:34.376 A:middle
+That's because the top edge of
+
+00:15:34.376 --> 00:15:36.626 A:middle
+the sc-- the scroll view is now
+
+00:15:36.626 --> 00:15:38.446 A:middle
+100 points below the top edge of
+
+00:15:38.446 --> 00:15:39.296 A:middle
+that content area.
+
+00:15:40.546 --> 00:15:42.166 A:middle
+If we set a content offset of
+
+00:15:42.276 --> 00:15:43.936 A:middle
+zero on the scroll view, that
+
+00:15:43.936 --> 00:15:45.166 A:middle
+will put us all the way back up
+
+00:15:45.166 --> 00:15:45.636 A:middle
+to the top.
+
+00:15:45.636 --> 00:15:47.256 A:middle
+And we're back where we started.
+
+00:15:48.146 --> 00:15:49.616 A:middle
+So that's pretty much just the
+
+00:15:49.616 --> 00:15:50.966 A:middle
+basics of scrolling a simple
+
+00:15:50.966 --> 00:15:51.776 A:middle
+scroll view around.
+
+00:15:52.376 --> 00:15:53.436 A:middle
+Now let's talk about a very
+
+00:15:53.436 --> 00:15:54.946 A:middle
+important concept about
+
+00:15:55.186 --> 00:15:57.666 A:middle
+extending the scrollable area of
+
+00:15:57.666 --> 00:15:58.216 A:middle
+the scroll view.
+
+00:15:58.416 --> 00:15:59.716 A:middle
+And we do that through a
+
+00:15:59.716 --> 00:16:01.196 A:middle
+property called content inset.
+

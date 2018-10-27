@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.106 --> 00:21:00.016 A:middle
+autorelease pool.
+
+00:21:00.776 --> 00:21:02.416 A:middle
+So here is a similar function
+
+00:21:02.666 --> 00:21:04.676 A:middle
+which [inaudible] and out
+
+00:21:04.676 --> 00:21:06.696 A:middle
+parameter error and then it
+
+00:21:06.696 --> 00:21:07.176 A:middle
+calls an
+
+00:21:07.176 --> 00:21:10.236 A:middle
+enumerateObjectsUsingBlock which
+
+00:21:10.236 --> 00:21:12.476 A:middle
+is a popular foundation API
+
+00:21:12.616 --> 00:21:14.126 A:middle
+which calls a block on every
+
+00:21:14.126 --> 00:21:15.676 A:middle
+element of a collection.
+
+00:21:16.486 --> 00:21:17.046 A:middle
+However
+
+00:21:17.316 --> 00:21:19.246 A:middle
+enumerateObjectsUsingBlock
+
+00:21:19.476 --> 00:21:21.156 A:middle
+actually calls [inaudible] given
+
+00:21:21.156 --> 00:21:22.576 A:middle
+block inside the autorelease
+
+00:21:22.576 --> 00:21:23.486 A:middle
+pool of return.
+
+00:21:24.096 --> 00:21:25.906 A:middle
+So a similar problem occurs here
+
+00:21:26.386 --> 00:21:28.066 A:middle
+that when we create an error
+
+00:21:28.066 --> 00:21:30.726 A:middle
+value inside the block and write
+
+00:21:30.726 --> 00:21:32.916 A:middle
+it to the out parameter it will
+
+00:21:32.916 --> 00:21:34.666 A:middle
+actually get released by the
+
+00:21:34.666 --> 00:21:36.386 A:middle
+time the control reaches out of
+
+00:21:36.436 --> 00:21:38.126 A:middle
+enumerateObjectsUsingBlock.
+
+00:21:39.356 --> 00:21:41.106 A:middle
+And then when the caller tries
+
+00:21:41.816 --> 00:21:44.126 A:middle
+to read it they also can crash
+
+00:21:44.126 --> 00:21:45.186 A:middle
+with the use-after-free.
+
+00:21:45.666 --> 00:21:49.416 A:middle
+And previously we have
+
+00:21:49.416 --> 00:21:51.056 A:middle
+introduced the compiler warning
+
+00:21:51.456 --> 00:21:53.436 A:middle
+which warns when an implicitly
+
+00:21:53.436 --> 00:21:55.376 A:middle
+autoreleasing out parameter is
+
+00:21:55.376 --> 00:21:56.466 A:middle
+captured in the block.
+
+00:21:57.046 --> 00:21:58.206 A:middle
+And the compiler warning
+
+00:21:58.206 --> 00:21:59.436 A:middle
+suggested to make such
+
+00:21:59.476 --> 00:22:00.636 A:middle
+parameters explicitly
+

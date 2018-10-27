@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.412 --> 00:28:00.948 align:start position:27% line:-1
+変換のコールを書き換えます
+
+00:28:01.048 --> 00:28:03.350 align:start position:27% line:-1
+まずはCore MLモデル
+
+00:28:05.953 --> 00:28:09.056 align:start position:34% line:-1
+引数を１つ加えます
+
+00:28:09.156 --> 00:28:11.558 align:start position:34% line:-1
+“custom…”
+
+00:28:13.227 --> 00:28:15.562 align:start position:11% line:-1
+“conversion functions”
+
+00:28:19.399 --> 00:28:23.070 align:start position:34% line:-2
+これが辞書になって
+レイヤの名前から
+
+00:28:23.303 --> 00:28:27.708 align:start position:20% line:-2
+私が定義する関数まで含み
+“GridSampler”とします
+
+00:28:27.841 --> 00:28:30.344 align:start position:27% line:-1
+まずは おさらいしましょう
+
+00:28:30.510 --> 00:28:35.916 align:start position:27% line:-2
+コンバータはKerasの
+すべてのレイヤを解析します
+
+00:28:36.783 --> 00:28:40.687 align:start position:32% line:-2
+解析したレイヤごとに
+パラメータを―
+
+00:28:40.787 --> 00:28:43.857 align:start position:27% line:-1
+Core MLに翻訳します
+
+00:28:44.658 --> 00:28:47.394 align:start position:36% line:-2
+カスタムレイヤは
+対応できません
+
+00:28:47.728 --> 00:28:51.665 align:start position:27% line:-2
+そこで グリッドサンプラの
+関数を与えると
+
+00:28:51.932 --> 00:28:54.701 align:start position:32% line:-1
+変換が可能になります
+
+00:28:54.868 --> 00:28:57.504 align:start position:32% line:-1
+関数を見てみましょう
+

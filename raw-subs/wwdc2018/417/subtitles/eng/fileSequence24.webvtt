@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.956 --> 00:24:01.146 A:middle
+to the checkCurrentLocation
+
+00:24:01.146 --> 00:24:02.776 A:middle
+method to use the renamed
+
+00:24:02.826 --> 00:24:03.176 A:middle
+property.
+
+00:24:03.946 --> 00:24:06.596 A:middle
+And, finally, let's look at that
+
+00:24:06.636 --> 00:24:07.266 A:middle
+delegate method.
+
+00:24:08.246 --> 00:24:09.336 A:middle
+This part is a little trickier
+
+00:24:09.336 --> 00:24:11.046 A:middle
+to handle, because the delegate
+
+00:24:11.046 --> 00:24:12.816 A:middle
+expects the manager parameter to
+
+00:24:12.866 --> 00:24:15.376 A:middle
+be a real CLLocationManager, and
+
+00:24:15.376 --> 00:24:16.356 A:middle
+not my new protocol.
+
+00:24:16.986 --> 00:24:18.716 A:middle
+So, things get a little more
+
+00:24:18.716 --> 00:24:19.976 A:middle
+complicated when delegates are
+
+00:24:19.976 --> 00:24:21.866 A:middle
+involved, but we can still apply
+
+00:24:21.866 --> 00:24:22.606 A:middle
+protocols here.
+
+00:24:23.156 --> 00:24:25.716 A:middle
+Let's take a look at how.
+
+00:24:26.326 --> 00:24:27.976 A:middle
+I'll go back to LocationFetcher
+
+00:24:28.126 --> 00:24:29.436 A:middle
+protocol that I defined earlier,
+
+00:24:30.226 --> 00:24:31.456 A:middle
+and I'll rename that delegate
+
+00:24:31.586 --> 00:24:32.346 A:middle
+property to
+
+00:24:32.546 --> 00:24:33.886 A:middle
+LocationFetcherDelegate.
+
+00:24:34.666 --> 00:24:35.896 A:middle
+And I'll change its type to a
+
+00:24:35.896 --> 00:24:37.676 A:middle
+new protocol whose interface is
+
+00:24:37.676 --> 00:24:38.786 A:middle
+nearly identical to
+
+00:24:38.886 --> 00:24:41.226 A:middle
+CLLocationManagerDelegate, but I
+
+00:24:41.226 --> 00:24:42.826 A:middle
+tweaked the method name, and I
+
+00:24:42.826 --> 00:24:44.016 A:middle
+changed the type of the first
+
+00:24:44.016 --> 00:24:45.456 A:middle
+parameter to LocationFetcher.
+
+00:24:49.406 --> 00:24:50.486 A:middle
+Now I need to implement the
+
+00:24:50.486 --> 00:24:52.086 A:middle
+LocationFetcherDelegate property
+
+00:24:52.196 --> 00:24:54.436 A:middle
+in my extension now, since it no
+
+00:24:54.436 --> 00:24:55.446 A:middle
+longer satisfies that
+
+00:24:55.446 --> 00:24:55.876 A:middle
+requirement.
+
+00:24:56.796 --> 00:24:58.076 A:middle
+And I'll implement the getter
+
+00:24:58.076 --> 00:24:59.456 A:middle
+and the setter to use force
+
+00:24:59.456 --> 00:25:00.846 A:middle
+casting to convert back and
+

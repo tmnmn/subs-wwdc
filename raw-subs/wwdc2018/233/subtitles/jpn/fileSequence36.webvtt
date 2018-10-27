@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.125 --> 00:36:03.130 align:start position:14% line:-2
+最後に View Controllerの
+userActivityプロパティに設定
+
+00:36:03.897 --> 00:36:08.335 align:start position:11% line:-2
+View Controllerの表示のたびに
+現在のアクティビティになります
+
+00:36:09.403 --> 00:36:11.772 align:start position:32% line:-2
+元のデバイスの設定は
+以上です
+
+00:36:12.840 --> 00:36:14.441 align:start position:30% line:-1
+引き継ぐデバイスでは―
+
+00:36:14.541 --> 00:36:19.613 align:start position:25% line:-2
+まず生成したアクティビティの
+タイプのサポートを宣言し
+
+00:36:20.047 --> 00:36:24.051 align:start position:5% line:-2
+２つのUIApplicationDelegateの
+コールバックを実装
+
+00:36:24.585 --> 00:36:27.888 align:start position:0% line:-2
+１つ目はapplication: will
+ContinueUserActivityWithType:
+
+00:36:27.988 --> 00:36:30.858 align:start position:30% line:-2
+アイコンをクリックか
+タップすると すぐに―
+
+00:36:30.958 --> 00:36:33.427 align:start position:32% line:-2
+これが呼び出され
+引き継ぎが始まります
+
+00:36:34.328 --> 00:36:37.898 align:start position:12% line:-2
+NSUserActivityオブジェクトを
+まだ用意してませんが
+
+00:36:38.265 --> 00:36:41.168 align:start position:29% line:-2
+継続するアクティビティの
+種類は分かるので―
+
+00:36:41.268 --> 00:36:43.570 align:start position:29% line:-1
+UIの準備を始められます
+
+00:36:44.771 --> 00:36:45.873 align:start position:36% line:-1
+直後に受け取る―
+
+00:36:45.973 --> 00:36:49.343 align:start position:0% line:-2
+applicationContinueRestoration
+ハンドラが―
+
+00:36:49.743 --> 00:36:53.547 align:start position:9% line:-2
+完全に復元された
+NSUserActivityオブジェクトを収容
+
+00:36:54.648 --> 00:36:59.853 align:start position:21% line:-2
+その時点から 引き継ぐデバイスで
+体験の継続ができます
+

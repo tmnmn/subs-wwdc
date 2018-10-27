@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.256 --> 00:33:00.036 A:middle
+information in the first place.
+
+00:33:01.096 --> 00:33:03.566 A:middle
+Now these two APIs make adoption
+
+00:33:03.566 --> 00:33:05.276 A:middle
+of on-device machine learning
+
+00:33:05.506 --> 00:33:05.816 A:middle
+easy.
+
+00:33:08.896 --> 00:33:10.486 A:middle
+And you should already be asking
+
+00:33:10.486 --> 00:33:12.086 A:middle
+privacy questions when
+
+00:33:12.086 --> 00:33:13.256 A:middle
+developing features like the
+
+00:33:13.256 --> 00:33:15.926 A:middle
+ones Joey went over earlier, and
+
+00:33:15.926 --> 00:33:17.656 A:middle
+these questions are great, and
+
+00:33:17.656 --> 00:33:19.106 A:middle
+Joey and I use them every day
+
+00:33:19.106 --> 00:33:21.776 A:middle
+doing feature reviews at Apple.
+
+00:33:21.976 --> 00:33:23.116 A:middle
+However, machine learning
+
+00:33:23.116 --> 00:33:24.856 A:middle
+requires you to ask a new set of
+
+00:33:24.916 --> 00:33:26.986 A:middle
+questions to address the same
+
+00:33:27.096 --> 00:33:29.006 A:middle
+underlying privacy goals.
+
+00:33:30.256 --> 00:33:32.836 A:middle
+For example, you should ask does
+
+00:33:32.836 --> 00:33:35.296 A:middle
+my model reveal anything about
+
+00:33:35.296 --> 00:33:36.656 A:middle
+the data it was trained on?
+
+00:33:38.386 --> 00:33:40.456 A:middle
+It's actually possible to invert
+
+00:33:40.536 --> 00:33:42.446 A:middle
+a machine learned model and
+
+00:33:42.446 --> 00:33:44.026 A:middle
+recover much of the data it was
+
+00:33:44.026 --> 00:33:44.516 A:middle
+trained on.
+
+00:33:45.766 --> 00:33:47.446 A:middle
+This could result in unexpected
+
+00:33:47.446 --> 00:33:49.276 A:middle
+disclosure if you ship a model
+
+00:33:49.276 --> 00:33:51.076 A:middle
+with your app and it's inverted
+
+00:33:51.076 --> 00:33:53.096 A:middle
+to expose information about
+
+00:33:53.096 --> 00:33:54.126 A:middle
+people it was trained on.
+
+00:33:54.606 --> 00:33:58.006 A:middle
+Now this is an area of active
+
+00:33:58.076 --> 00:33:59.866 A:middle
+academic research that you can
+
+00:33:59.866 --> 00:34:01.066 A:middle
+learn more about in the paper
+

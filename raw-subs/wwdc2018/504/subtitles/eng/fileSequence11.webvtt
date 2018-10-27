@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.166 --> 00:11:00.216 A:middle
+when the Apple Watch is on its
+
+00:11:00.216 --> 00:11:03.156 A:middle
+charger, so keep that in mind.
+
+00:11:03.326 --> 00:11:04.796 A:middle
+All right, so we talked about
+
+00:11:04.796 --> 00:11:07.186 A:middle
+getting content, and now that we
+
+00:11:07.186 --> 00:11:08.216 A:middle
+have it, let's talk about
+
+00:11:08.216 --> 00:11:09.466 A:middle
+actually playing something back.
+
+00:11:10.466 --> 00:11:12.326 A:middle
+And on watchOS, we have a bunch
+
+00:11:12.326 --> 00:11:13.736 A:middle
+of different tools we can use.
+
+00:11:14.186 --> 00:11:16.226 A:middle
+And some of those audio tools
+
+00:11:16.226 --> 00:11:17.546 A:middle
+are in WatchKit itself.
+
+00:11:18.036 --> 00:11:20.646 A:middle
+So there's a presentMedia
+
+00:11:20.646 --> 00:11:22.216 A:middle
+PlayerController with options,
+
+00:11:22.216 --> 00:11:23.966 A:middle
+completion that you can use.
+
+00:11:24.426 --> 00:11:26.446 A:middle
+And there's also WKAudioFile
+
+00:11:26.446 --> 00:11:27.086 A:middle
+QueuePlayer.
+
+00:11:27.306 --> 00:11:29.076 A:middle
+And so you can give it a list of
+
+00:11:29.076 --> 00:11:30.416 A:middle
+items, and then the queue player
+
+00:11:30.416 --> 00:11:31.506 A:middle
+will appropriately play back
+
+00:11:31.536 --> 00:11:32.126 A:middle
+that content.
+
+00:11:32.636 --> 00:11:35.536 A:middle
+So the presentMedia
+
+00:11:35.536 --> 00:11:37.256 A:middle
+PlayerController option will
+
+00:11:37.326 --> 00:11:38.716 A:middle
+present the system UI.
+
+00:11:38.716 --> 00:11:40.006 A:middle
+So the controls are taken care
+
+00:11:40.006 --> 00:11:40.656 A:middle
+of for you.
+
+00:11:41.056 --> 00:11:42.006 A:middle
+There's not really much you have
+
+00:11:42.006 --> 00:11:42.476 A:middle
+to do.
+
+00:11:42.826 --> 00:11:44.456 A:middle
+And this is perfect for when
+
+00:11:44.456 --> 00:11:46.306 A:middle
+it's short-form content and you
+
+00:11:46.306 --> 00:11:47.176 A:middle
+don't really want to have to
+
+00:11:47.176 --> 00:11:48.686 A:middle
+think too much about it.
+
+00:11:50.096 --> 00:11:52.536 A:middle
+And WKAudioFIleQueuePlayer is
+
+00:11:52.536 --> 00:11:53.416 A:middle
+great for when you have more
+
+00:11:53.416 --> 00:11:54.736 A:middle
+long-form content that you want
+
+00:11:54.736 --> 00:11:55.706 A:middle
+to play in the background.
+
+00:11:56.126 --> 00:11:57.346 A:middle
+And this is more of a conveyer
+
+00:11:57.346 --> 00:12:00.116 A:middle
+belt type approach where you
+

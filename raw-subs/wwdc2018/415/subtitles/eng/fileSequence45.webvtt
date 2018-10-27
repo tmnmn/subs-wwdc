@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.326 --> 00:45:00.306 A:middle
+The first one being dylibs or
+
+00:45:00.306 --> 00:45:01.146 A:middle
+being libraries.
+
+00:45:01.556 --> 00:45:03.316 A:middle
+There are multiple-- the first
+
+00:45:03.316 --> 00:45:04.616 A:middle
+one being object files.
+
+00:45:04.876 --> 00:45:06.476 A:middle
+Which are what come out of your
+
+00:45:06.476 --> 00:45:06.996 A:middle
+build process.
+
+00:45:06.996 --> 00:45:07.756 A:middle
+And the second one being
+
+00:45:07.756 --> 00:45:09.486 A:middle
+libraries which consist of
+
+00:45:09.486 --> 00:45:11.026 A:middle
+several types including dylibs,
+
+00:45:11.326 --> 00:45:13.746 A:middle
+tbd's, and .a files or static
+
+00:45:13.746 --> 00:45:14.366 A:middle
+archives.
+
+00:45:16.136 --> 00:45:17.936 A:middle
+So what are symbols?
+
+00:45:18.556 --> 00:45:20.426 A:middle
+A symbol is just a name to refer
+
+00:45:20.426 --> 00:45:23.746 A:middle
+to a fragment of code or data.
+
+00:45:24.706 --> 00:45:26.626 A:middle
+These fragments may refer to
+
+00:45:26.626 --> 00:45:28.816 A:middle
+other symbols which you would
+
+00:45:28.816 --> 00:45:30.036 A:middle
+see if you write a function that
+
+00:45:30.106 --> 00:45:30.986 A:middle
+calls another function.
+
+00:45:33.376 --> 00:45:35.176 A:middle
+Symbols can have attributes on
+
+00:45:35.176 --> 00:45:36.566 A:middle
+them that affect how the linker
+
+00:45:36.566 --> 00:45:37.076 A:middle
+behaves.
+
+00:45:37.076 --> 00:45:38.026 A:middle
+And there are a lot of these.
+
+00:45:38.486 --> 00:45:39.546 A:middle
+I'm just going to give you one
+
+00:45:39.546 --> 00:45:41.826 A:middle
+example which is a weak symbol.
+
+00:45:42.336 --> 00:45:43.516 A:middle
+So a weak symbol is an
+
+00:45:43.516 --> 00:45:44.896 A:middle
+annotation on a symbol that says
+
+00:45:44.896 --> 00:45:48.026 A:middle
+it might not be there when we
+
+00:45:48.026 --> 00:45:49.726 A:middle
+run the syst-- when we build
+
+00:45:49.726 --> 00:45:51.396 A:middle
+the, when we run the executable
+
+00:45:51.896 --> 00:45:52.706 A:middle
+on the system.
+
+00:45:53.376 --> 00:45:54.106 A:middle
+This is what all the
+
+00:45:54.106 --> 00:45:55.896 A:middle
+availability markup that says
+
+00:45:56.336 --> 00:45:59.106 A:middle
+this API is available on iOS 12.
+
+00:45:59.106 --> 00:46:00.606 A:middle
+And this API's available on the
+

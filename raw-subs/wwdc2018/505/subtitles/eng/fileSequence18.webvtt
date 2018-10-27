@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.696 --> 00:18:01.096 A:middle
+we add that.
+
+00:18:01.476 --> 00:18:02.236 A:middle
+Change observer.
+
+00:18:02.236 --> 00:18:04.876 A:middle
+And, down here--
+
+00:18:09.506 --> 00:18:10.146 A:middle
+We implement
+
+00:18:10.146 --> 00:18:11.526 A:middle
+photoLibraryDidChange.
+
+00:18:12.126 --> 00:18:14.456 A:middle
+PhotoLibraryDidChange is called
+
+00:18:14.456 --> 00:18:16.396 A:middle
+whenever anything changes in the
+
+00:18:16.396 --> 00:18:19.946 A:middle
+photo library, and we get a
+
+00:18:20.026 --> 00:18:22.016 A:middle
+change instance as a method
+
+00:18:22.016 --> 00:18:22.396 A:middle
+argument.
+
+00:18:22.976 --> 00:18:25.036 A:middle
+We can ask the change engine
+
+00:18:25.066 --> 00:18:27.286 A:middle
+instance for changeDetails of an
+
+00:18:27.286 --> 00:18:28.286 A:middle
+object we're interested in.
+
+00:18:28.876 --> 00:18:30.386 A:middle
+We're interested in the changes
+
+00:18:30.386 --> 00:18:32.596 A:middle
+of the fetchAllAssets on the
+
+00:18:32.596 --> 00:18:34.106 A:middle
+project, so we pass that
+
+00:18:34.106 --> 00:18:34.866 A:middle
+fetchResult in.
+
+00:18:35.746 --> 00:18:38.186 A:middle
+And, if change results are
+
+00:18:38.186 --> 00:18:41.256 A:middle
+returned, we update our locally
+
+00:18:41.256 --> 00:18:43.786 A:middle
+cached fetch result with the
+
+00:18:43.786 --> 00:18:45.846 A:middle
+fetchResultsAfterChanges, and
+
+00:18:45.846 --> 00:18:47.616 A:middle
+get the projectExtensionContext,
+
+00:18:47.616 --> 00:18:49.436 A:middle
+and call updatedProjectInfo.
+
+00:18:50.636 --> 00:18:52.256 A:middle
+And pass in the project info we
+
+00:18:53.136 --> 00:18:53.226 A:middle
+have.
+
+00:18:53.656 --> 00:18:55.876 A:middle
+Once the updatedProjectInfo is
+
+00:18:55.876 --> 00:18:57.576 A:middle
+returned to us, we call the same
+
+00:18:57.576 --> 00:18:59.176 A:middle
+setup code, but you could do
+
+00:18:59.176 --> 00:19:00.626 A:middle
+something more sophisticated in
+

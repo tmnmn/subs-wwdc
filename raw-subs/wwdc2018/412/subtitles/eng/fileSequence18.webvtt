@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.176 --> 00:18:01.356 A:middle
+I'm going to set a breakpoint on
+
+00:18:01.356 --> 00:18:01.806 A:middle
+this line.
+
+00:18:02.086 --> 00:18:03.466 A:middle
+Let's clear the debug console
+
+00:18:03.776 --> 00:18:05.226 A:middle
+and initiate a new jump by
+
+00:18:05.226 --> 00:18:06.636 A:middle
+tapping the astronaut, and now
+
+00:18:06.636 --> 00:18:07.646 A:middle
+we're paused on this line.
+
+00:18:08.156 --> 00:18:10.286 A:middle
+So I need to ask the debugger to
+
+00:18:10.286 --> 00:18:11.806 A:middle
+replace this line with a call to
+
+00:18:11.806 --> 00:18:13.226 A:middle
+jump astronaut animated false.
+
+00:18:13.656 --> 00:18:15.026 A:middle
+Well, the code's compiled in, we
+
+00:18:15.076 --> 00:18:16.306 A:middle
+can't replace it, but what we
+
+00:18:16.306 --> 00:18:17.756 A:middle
+can do is ask the debugger to
+
+00:18:17.926 --> 00:18:19.506 A:middle
+skip over this line, to not
+
+00:18:19.506 --> 00:18:20.656 A:middle
+execute it but skip over it.
+
+00:18:20.656 --> 00:18:21.776 A:middle
+And then we can use expression
+
+00:18:21.776 --> 00:18:23.016 A:middle
+to inject the change that we --
+
+00:18:23.016 --> 00:18:24.226 A:middle
+or the call that we'd like to
+
+00:18:24.226 --> 00:18:24.506 A:middle
+make.
+
+00:18:25.096 --> 00:18:26.416 A:middle
+So how do we skip over a line?
+
+00:18:26.626 --> 00:18:27.996 A:middle
+Well, let me draw your attention
+
+00:18:27.996 --> 00:18:29.476 A:middle
+to this green annotation label
+
+00:18:29.476 --> 00:18:30.116 A:middle
+thread one.
+
+00:18:30.566 --> 00:18:31.836 A:middle
+We call this the instruction
+
+00:18:31.836 --> 00:18:32.256 A:middle
+pointer.
+
+00:18:32.666 --> 00:18:34.076 A:middle
+It points to the line containing
+
+00:18:34.076 --> 00:18:35.076 A:middle
+the instructions that will be
+
+00:18:35.076 --> 00:18:36.016 A:middle
+executed next.
+
+00:18:36.016 --> 00:18:37.576 A:middle
+And this icon here, that kind of
+
+00:18:37.576 --> 00:18:39.416 A:middle
+looks like a grab handle, in
+
+00:18:39.416 --> 00:18:40.446 A:middle
+fact, is a grab handle.
+
+00:18:40.446 --> 00:18:41.616 A:middle
+If I hold the mouse down, I can
+
+00:18:41.616 --> 00:18:43.236 A:middle
+move this around, and I'm able
+
+00:18:43.236 --> 00:18:44.406 A:middle
+to change the instruction
+
+00:18:44.406 --> 00:18:46.166 A:middle
+pointer while paused, so I can
+
+00:18:46.166 --> 00:18:47.846 A:middle
+move it down one line and let go
+
+00:18:47.936 --> 00:18:49.926 A:middle
+and then we get a scary message
+
+00:18:49.926 --> 00:18:50.516 A:middle
+from Xcode.
+
+00:18:50.926 --> 00:18:52.166 A:middle
+And basically, what it's saying
+
+00:18:52.436 --> 00:18:54.216 A:middle
+is, with great power comes great
+
+00:18:54.216 --> 00:18:54.956 A:middle
+responsibility.
+
+00:18:55.126 --> 00:18:56.076 A:middle
+And I'll be honest with you,
+
+00:18:56.076 --> 00:18:57.076 A:middle
+this is the riskiest feature
+
+00:18:57.076 --> 00:18:57.916 A:middle
+I'll tell you about today.
+
+00:18:57.916 --> 00:19:00.116 A:middle
+But it's only risky because the
+

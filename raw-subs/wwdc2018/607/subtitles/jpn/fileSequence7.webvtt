@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.084 --> 00:07:00.220 align:start position:29% line:-1
+CPUの並列化は以上です
+
+00:07:00.721 --> 00:07:04.691 align:start position:30% line:-2
+次に紹介するのは
+GPUの自動並列化です
+
+00:07:06.293 --> 00:07:08.762 align:start position:30% line:-1
+最初の図に戻りましょう
+
+00:07:09.897 --> 00:07:12.633 align:start position:34% line:-2
+GPUはどう処理を
+実行するのか
+
+00:07:13.200 --> 00:07:18.071 align:start position:23% line:-2
+Metalは 開発環境に応じて
+データの従属性を分析し
+
+00:07:18.172 --> 00:07:21.375 align:start position:29% line:-1
+自動的に並列化を行います
+
+00:07:21.475 --> 00:07:23.944 align:start position:30% line:-1
+例を２つ見てみましょう
+
+00:07:24.578 --> 00:07:27.915 align:start position:30% line:-2
+粒子シミュレーションで
+データを描画する例です
+
+00:07:28.015 --> 00:07:31.752 align:start position:34% line:-2
+このデータを使って
+粒子を描きます
+
+00:07:33.020 --> 00:07:37.291 align:start position:29% line:-2
+同様に Ｇバッファパスで
+ジオメトリを生成し
+
+00:07:37.391 --> 00:07:41.428 align:start position:30% line:-2
+物質の陰影を描くために
+使用します
+
+00:07:43.430 --> 00:07:49.636 align:start position:23% line:-2
+Metalは この情報をもとに
+自動的に全体のパスを特定し
+
+00:07:49.736 --> 00:07:52.773 align:start position:30% line:-2
+非同期演算などを用いて
+描画します
+
+00:07:56.276 --> 00:08:01.081 align:start position:25% line:-2
+GPUの並列化と非同期演算が
+手軽に実現できます
+

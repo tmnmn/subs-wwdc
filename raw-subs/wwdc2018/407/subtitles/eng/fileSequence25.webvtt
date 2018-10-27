@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.456 --> 00:25:00.806 A:middle
+going to begin making changes,
+
+00:25:01.046 --> 00:25:01.716 A:middle
+then you make a bunch of
+
+00:25:01.716 --> 00:25:02.996 A:middle
+changes, and then you say you're
+
+00:25:02.996 --> 00:25:05.046 A:middle
+done, and it computes something
+
+00:25:05.046 --> 00:25:05.856 A:middle
+that happened for the whole
+
+00:25:05.856 --> 00:25:07.356 A:middle
+range of your changes, more
+
+00:25:07.356 --> 00:25:08.656 A:middle
+efficiently than if it had done
+
+00:25:08.656 --> 00:25:10.116 A:middle
+them all individually.
+
+00:25:11.126 --> 00:25:12.306 A:middle
+So at this point, I would head
+
+00:25:12.306 --> 00:25:14.336 A:middle
+over to the NS Outline View, or
+
+00:25:14.336 --> 00:25:15.996 A:middle
+NS Table View API, and I would
+
+00:25:15.996 --> 00:25:17.296 A:middle
+look for some such method.
+
+00:25:17.686 --> 00:25:19.646 A:middle
+And there is exactly one there.
+
+00:25:19.646 --> 00:25:20.936 A:middle
+In NS Table View, there is
+
+00:25:20.936 --> 00:25:22.176 A:middle
+methods for beginning and end
+
+00:25:22.176 --> 00:25:23.546 A:middle
+updating, that allow the table
+
+00:25:23.546 --> 00:25:25.096 A:middle
+view to coalesce, and make all
+
+00:25:25.096 --> 00:25:26.296 A:middle
+this work significantly more
+
+00:25:26.296 --> 00:25:26.666 A:middle
+efficient.
+
+00:25:27.426 --> 00:25:28.856 A:middle
+Of course, we adopted that in
+
+00:25:28.896 --> 00:25:29.606 A:middle
+Xcode 10.
+
+00:25:30.246 --> 00:25:32.966 A:middle
+Let me show you.
+
+00:25:33.046 --> 00:25:34.376 A:middle
+I'm going to launch Xcode 10.
+
+00:25:38.056 --> 00:25:39.136 A:middle
+I'm going to open the source as
+
+00:25:39.136 --> 00:25:43.086 A:middle
+an application, and I'm going to
+
+00:25:43.086 --> 00:25:44.056 A:middle
+create a couple of tabs.
+
+00:25:44.586 --> 00:25:46.116 A:middle
+And you can see, there is no
+
+00:25:46.116 --> 00:25:47.666 A:middle
+awful flashing, and the tabs
+
+00:25:47.666 --> 00:25:48.626 A:middle
+open much more quickly.
+
+00:25:49.506 --> 00:25:52.686 A:middle
+Now, I'd like the tabs to open
+
+00:25:52.876 --> 00:25:54.846 A:middle
+even quicker than that, right?
+
+00:25:54.846 --> 00:25:55.916 A:middle
+So what am I going to do next?
+
+00:25:56.596 --> 00:25:57.586 A:middle
+I got lucky here.
+
+00:25:58.536 --> 00:25:59.496 A:middle
+It's not every day that you're
+
+00:25:59.496 --> 00:26:00.956 A:middle
+going to go into the trace, and
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.326 --> 00:15:00.356 A:middle
+presented full screen.
+
+00:15:01.306 --> 00:15:02.506 A:middle
+To share the same consistent
+
+00:15:02.506 --> 00:15:04.166 A:middle
+experience with AR Quick Look, I
+
+00:15:04.166 --> 00:15:05.316 A:middle
+recommend you configure your
+
+00:15:05.316 --> 00:15:06.336 A:middle
+Quick Look PreviewController's
+
+00:15:06.336 --> 00:15:08.426 A:middle
+appearance to have the same zoom
+
+00:15:08.426 --> 00:15:09.346 A:middle
+transition animation.
+
+00:15:09.846 --> 00:15:11.576 A:middle
+So when the file's up, you can
+
+00:15:11.576 --> 00:15:12.646 A:middle
+see the nice transition from the
+
+00:15:12.646 --> 00:15:16.096 A:middle
+thumbnail view to the viewer and
+
+00:15:16.206 --> 00:15:17.576 A:middle
+back down as it goes down for
+
+00:15:17.576 --> 00:15:17.986 A:middle
+dismissal.
+
+00:15:19.806 --> 00:15:21.616 A:middle
+In code, the easiest and
+
+00:15:21.616 --> 00:15:22.796 A:middle
+recommended way to achieve this
+
+00:15:22.796 --> 00:15:24.196 A:middle
+effect is to implement
+
+00:15:24.636 --> 00:15:26.276 A:middle
+PreviewController, controller
+
+00:15:26.506 --> 00:15:28.546 A:middle
+transitionViewfor item and
+
+00:15:28.546 --> 00:15:29.476 A:middle
+return a UIView.
+
+00:15:30.376 --> 00:15:31.986 A:middle
+So, Quick Look does all of the
+
+00:15:31.986 --> 00:15:33.926 A:middle
+heavy work here for you and uses
+
+00:15:33.926 --> 00:15:35.466 A:middle
+the UIView to infer the
+
+00:15:35.466 --> 00:15:36.546 A:middle
+rectangular frame that the
+
+00:15:36.546 --> 00:15:38.276 A:middle
+animation should start from when
+
+00:15:38.276 --> 00:15:40.816 A:middle
+presenting and ending when
+
+00:15:40.816 --> 00:15:41.276 A:middle
+dismissing.
+
+00:15:42.216 --> 00:15:44.206 A:middle
+If possible, I suggest the final
+
+00:15:44.436 --> 00:15:46.126 A:middle
+or UIView to have a square
+
+00:15:46.126 --> 00:15:48.436 A:middle
+frame, to have the best seamless
+
+00:15:48.436 --> 00:15:48.926 A:middle
+transition.
+
+00:15:49.866 --> 00:15:51.746 A:middle
+AR Quick Look nicely handles the
+
+00:15:51.746 --> 00:15:53.506 A:middle
+transition from this view to the
+
+00:15:53.506 --> 00:15:54.606 A:middle
+full screen viewer on
+
+00:15:54.606 --> 00:15:56.696 A:middle
+presentation and dismissal,
+
+00:15:57.086 --> 00:15:58.356 A:middle
+creating this effect where the
+
+00:15:58.356 --> 00:16:00.166 A:middle
+model just magically appears.
+

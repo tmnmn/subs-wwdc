@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.666 --> 00:07:01.356 A:middle
+these in more detail in the
+
+00:07:01.356 --> 00:07:01.876 A:middle
+following.
+
+00:07:04.036 --> 00:07:05.836 A:middle
+Dependencies are those Swift
+
+00:07:05.836 --> 00:07:08.336 A:middle
+packages that you can use when
+
+00:07:08.336 --> 00:07:09.476 A:middle
+developing your features.
+
+00:07:10.146 --> 00:07:14.346 A:middle
+Each dependency provides one or
+
+00:07:14.346 --> 00:07:16.736 A:middle
+more products such as libraries
+
+00:07:17.256 --> 00:07:18.466 A:middle
+that your package can use.
+
+00:07:19.046 --> 00:07:21.816 A:middle
+Let's take a look at how
+
+00:07:21.816 --> 00:07:23.286 A:middle
+dependencies look in the package
+
+00:07:23.286 --> 00:07:26.216 A:middle
+of Swift manifest file.
+
+00:07:26.426 --> 00:07:27.816 A:middle
+Each dependency has a source
+
+00:07:27.816 --> 00:07:31.486 A:middle
+location and it is versioned.
+
+00:07:35.576 --> 00:07:37.436 A:middle
+Targets are the basic building
+
+00:07:37.436 --> 00:07:38.646 A:middle
+blocks of packages.
+
+00:07:39.786 --> 00:07:42.076 A:middle
+A target describes how to build
+
+00:07:42.076 --> 00:07:44.736 A:middle
+a set of source files into
+
+00:07:45.156 --> 00:07:47.606 A:middle
+either a module or a test suite.
+
+00:07:49.956 --> 00:07:51.856 A:middle
+Targets can depend on other
+
+00:07:51.856 --> 00:07:54.736 A:middle
+targets of the same package and
+
+00:07:56.456 --> 00:07:58.716 A:middle
+on products exported from other
+
+00:07:58.716 --> 00:08:00.106 A:middle
+packages, declared as
+

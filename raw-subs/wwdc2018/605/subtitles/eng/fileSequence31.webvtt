@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.386 --> 00:31:00.606 A:middle
+method on the writable BitStream
+
+00:31:00.606 --> 00:31:02.526 A:middle
+type allowing us to encode that
+
+00:31:02.526 --> 00:31:02.756 A:middle
+enum.
+
+00:31:03.436 --> 00:31:04.696 A:middle
+It appends things of that type
+
+00:31:04.696 --> 00:31:06.306 A:middle
+and it uses that new static
+
+00:31:06.306 --> 00:31:07.656 A:middle
+property to figure out the
+
+00:31:07.656 --> 00:31:09.306 A:middle
+number of bits that are needed
+
+00:31:09.966 --> 00:31:11.536 A:middle
+to use.
+
+00:31:11.736 --> 00:31:13.336 A:middle
+Now, our encode method is much
+
+00:31:13.336 --> 00:31:13.716 A:middle
+simpler.
+
+00:31:14.246 --> 00:31:16.566 A:middle
+We just used append enum on the
+
+00:31:16.566 --> 00:31:18.086 A:middle
+proper coding key for each and
+
+00:31:18.086 --> 00:31:19.256 A:middle
+Swift takes care of the rest.
+
+00:31:19.576 --> 00:31:21.186 A:middle
+When we add more cases to the
+
+00:31:21.186 --> 00:31:22.996 A:middle
+enum, the BitField expands
+
+00:31:22.996 --> 00:31:23.576 A:middle
+automatically.
+
+00:31:24.016 --> 00:31:25.656 A:middle
+If we remove cases, it contracts
+
+00:31:25.656 --> 00:31:26.266 A:middle
+automatically.
+
+00:31:26.546 --> 00:31:28.246 A:middle
+We don't have to worry about it.
+
+00:31:31.356 --> 00:31:32.676 A:middle
+So, how much faster and more
+
+00:31:32.676 --> 00:31:34.466 A:middle
+compact is BitStreamCodable?
+
+00:31:35.066 --> 00:31:36.976 A:middle
+We ran some tests using XE test
+
+00:31:36.976 --> 00:31:38.286 A:middle
+support for performance testing
+
+00:31:38.706 --> 00:31:40.106 A:middle
+using a representative message
+
+00:31:40.106 --> 00:31:41.356 A:middle
+in which we send information
+
+00:31:41.356 --> 00:31:42.366 A:middle
+about object movement.
+
+00:31:43.716 --> 00:31:44.826 A:middle
+The results were pretty
+
+00:31:44.826 --> 00:31:46.666 A:middle
+impressive - 1/10 the size,
+
+00:31:46.666 --> 00:31:48.436 A:middle
+twice as fast to code, 10 times
+
+00:31:48.436 --> 00:31:49.276 A:middle
+as fast to decode.
+
+00:31:50.196 --> 00:31:51.536 A:middle
+Now when we talk about going
+
+00:31:51.536 --> 00:31:53.906 A:middle
+from 75 microseconds down to 6
+
+00:31:53.906 --> 00:31:55.246 A:middle
+microseconds, that seems like
+
+00:31:55.246 --> 00:31:56.056 A:middle
+small potatoes.
+
+00:31:56.186 --> 00:31:58.206 A:middle
+But there's around 200 objects
+
+00:31:58.206 --> 00:31:59.436 A:middle
+in the game and we want to do
+
+00:31:59.436 --> 00:32:00.626 A:middle
+this very frequently to make
+

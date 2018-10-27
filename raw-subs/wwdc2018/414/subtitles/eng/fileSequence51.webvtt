@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:59.276 --> 00:51:00.476 A:middle
+the code that can access
+
+00:51:00.536 --> 00:51:00.946 A:middle
+storage.
+
+00:51:01.146 --> 00:51:02.676 A:middle
+It's either going to be code in
+
+00:51:02.676 --> 00:51:04.536 A:middle
+this getter or the setter, no
+
+00:51:04.536 --> 00:51:06.066 A:middle
+other code in my app has access
+
+00:51:06.116 --> 00:51:06.336 A:middle
+to it.
+
+00:51:06.646 --> 00:51:08.046 A:middle
+So I'm in a very good position
+
+00:51:08.046 --> 00:51:09.696 A:middle
+to actually fix this Swift
+
+00:51:09.696 --> 00:51:10.436 A:middle
+access race.
+
+00:51:11.796 --> 00:51:13.216 A:middle
+And let me do that by using a
+
+00:51:13.216 --> 00:51:13.856 A:middle
+dispatch queue.
+
+00:51:14.066 --> 00:51:15.976 A:middle
+So let's create a new private
+
+00:51:15.976 --> 00:51:17.766 A:middle
+variable called queue and let's
+
+00:51:17.766 --> 00:51:19.976 A:middle
+assign a new dispatch queue into
+
+00:51:19.976 --> 00:51:20.076 A:middle
+it.
+
+00:51:21.346 --> 00:51:23.296 A:middle
+Dispatch queues are serial by
+
+00:51:23.296 --> 00:51:24.446 A:middle
+default, so this one is also
+
+00:51:24.446 --> 00:51:25.886 A:middle
+serial, which means that it will
+
+00:51:25.886 --> 00:51:28.136 A:middle
+only allow one piece of code to
+
+00:51:28.136 --> 00:51:30.336 A:middle
+execute inside that queue at a
+
+00:51:30.336 --> 00:51:30.726 A:middle
+time.
+
+00:51:31.046 --> 00:51:32.556 A:middle
+So that's perfect, that's
+
+00:51:32.556 --> 00:51:33.776 A:middle
+exactly what we need here.
+
+00:51:34.676 --> 00:51:36.236 A:middle
+How do we actually execute code
+
+00:51:36.236 --> 00:51:37.406 A:middle
+inside a dispatch queue?
+
+00:51:37.766 --> 00:51:40.066 A:middle
+We can use queue.sync and
+
+00:51:40.066 --> 00:51:42.076 A:middle
+whatever code I move into
+
+00:51:42.186 --> 00:51:45.756 A:middle
+queue.sync will be executed
+
+00:51:45.856 --> 00:51:47.246 A:middle
+inside that serial queue and
+
+00:51:47.246 --> 00:51:48.146 A:middle
+only one at a time.
+
+00:51:48.676 --> 00:51:50.256 A:middle
+And I can return a value here
+
+00:51:50.256 --> 00:51:51.446 A:middle
+because I need to return
+
+00:51:51.446 --> 00:51:52.316 A:middle
+something from the getter.
+
+00:51:53.476 --> 00:51:55.406 A:middle
+And I can fix the same thing in
+
+00:51:55.406 --> 00:51:56.146 A:middle
+the setter as well.
+
+00:51:56.316 --> 00:51:58.926 A:middle
+And if I move this line of code
+
+00:51:59.126 --> 00:52:01.296 A:middle
+into this queue.sync it will be
+

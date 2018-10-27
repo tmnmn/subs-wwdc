@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.616 --> 00:28:00.956 A:middle
+converter call just a little bit
+
+00:28:01.176 --> 00:28:03.046 A:middle
+so I have my Core ML model.
+
+00:28:03.646 --> 00:28:08.096 A:middle
+And now I'm going to pass one
+
+00:28:08.096 --> 00:28:08.946 A:middle
+additional argument.
+
+00:28:09.176 --> 00:28:14.176 A:middle
+It's called custom conversion
+
+00:28:14.576 --> 00:28:14.976 A:middle
+functions.
+
+00:28:19.396 --> 00:28:20.676 A:middle
+And this will be a dictionary
+
+00:28:21.396 --> 00:28:23.796 A:middle
+from the name of the layer to a
+
+00:28:23.796 --> 00:28:25.496 A:middle
+function that I will define in a
+
+00:28:25.496 --> 00:28:25.826 A:middle
+minute.
+
+00:28:26.186 --> 00:28:27.066 A:middle
+And that I'm calling a good
+
+00:28:27.066 --> 00:28:27.386 A:middle
+sampler.
+
+00:28:27.926 --> 00:28:29.006 A:middle
+So let me take a step back and
+
+00:28:29.006 --> 00:28:30.026 A:middle
+explain what is happening here.
+
+00:28:30.576 --> 00:28:31.796 A:middle
+So as we know the way converter
+
+00:28:31.796 --> 00:28:34.126 A:middle
+works is that it goes through
+
+00:28:34.346 --> 00:28:35.666 A:middle
+each and every Keras layer.
+
+00:28:36.016 --> 00:28:38.386 A:middle
+It will, if you look at the
+
+00:28:38.476 --> 00:28:38.986 A:middle
+first layer.
+
+00:28:38.986 --> 00:28:40.046 A:middle
+Then [inaudible] its parameters
+
+00:28:40.046 --> 00:28:40.666 A:middle
+to Core ML.
+
+00:28:40.666 --> 00:28:41.816 A:middle
+If you go to the second layer,
+
+00:28:41.816 --> 00:28:43.146 A:middle
+then translate its parameters
+
+00:28:43.146 --> 00:28:44.306 A:middle
+and so on.
+
+00:28:44.676 --> 00:28:45.936 A:middle
+Now when it hits this custom
+
+00:28:45.936 --> 00:28:46.886 A:middle
+layer, it doesn't know what to
+
+00:28:46.886 --> 00:28:47.146 A:middle
+do.
+
+00:28:47.756 --> 00:28:49.446 A:middle
+So this function that I'm
+
+00:28:49.446 --> 00:28:50.886 A:middle
+passing here that convert this
+
+00:28:50.936 --> 00:28:53.246 A:middle
+sampler is going to help my
+
+00:28:53.246 --> 00:28:54.256 A:middle
+converter in doing that.
+
+00:28:54.876 --> 00:28:56.316 A:middle
+And let me show you what this
+
+00:28:56.316 --> 00:28:56.976 A:middle
+function looks like.
+

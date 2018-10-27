@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:00.636 --> 00:02:02.216 A:middle
+Another failure case that some
+
+00:02:02.216 --> 00:02:03.766 A:middle
+developers may have had was due
+
+00:02:03.766 --> 00:02:05.286 A:middle
+to the debugger being unable to
+
+00:02:05.286 --> 00:02:07.406 A:middle
+materialize variable types while
+
+00:02:07.406 --> 00:02:07.826 A:middle
+debugging.
+
+00:02:08.806 --> 00:02:09.946 A:middle
+This would manifest itself in
+
+00:02:09.946 --> 00:02:11.216 A:middle
+Xcode looking something like
+
+00:02:11.266 --> 00:02:11.626 A:middle
+this.
+
+00:02:11.986 --> 00:02:12.866 A:middle
+Where on the left, you can see
+
+00:02:12.866 --> 00:02:14.486 A:middle
+the variables' view shows all
+
+00:02:14.486 --> 00:02:15.586 A:middle
+the names of the variables in
+
+00:02:15.586 --> 00:02:17.216 A:middle
+the frame but there'd be no type
+
+00:02:17.216 --> 00:02:18.626 A:middle
+information or values visible.
+
+00:02:18.966 --> 00:02:19.966 A:middle
+And attempts to print out the
+
+00:02:19.966 --> 00:02:22.086 A:middle
+value of a variable would fail
+
+00:02:22.086 --> 00:02:23.116 A:middle
+with errors like these.
+
+00:02:23.596 --> 00:02:26.216 A:middle
+Now, thanks again, in big part
+
+00:02:26.216 --> 00:02:27.386 A:middle
+to your bug reports, the team
+
+00:02:27.386 --> 00:02:28.806 A:middle
+has been able to track down and
+
+00:02:28.806 --> 00:02:30.706 A:middle
+fix these many edge cases where
+
+00:02:30.706 --> 00:02:32.386 A:middle
+debug information was not being
+
+00:02:32.386 --> 00:02:33.366 A:middle
+reliably generated.
+
+00:02:33.826 --> 00:02:34.916 A:middle
+So I want to thank you guys on
+
+00:02:34.916 --> 00:02:36.326 A:middle
+behalf of the team again for
+
+00:02:36.326 --> 00:02:38.076 A:middle
+filing issues when you've
+
+00:02:38.226 --> 00:02:40.246 A:middle
+encountered any problems while
+
+00:02:40.246 --> 00:02:40.716 A:middle
+debugging.
+
+00:02:41.206 --> 00:02:42.366 A:middle
+And if you find any more
+
+00:02:42.366 --> 00:02:44.226 A:middle
+problems with Xcode 10 while
+
+00:02:44.226 --> 00:02:45.696 A:middle
+debugging a project, please
+
+00:02:45.696 --> 00:02:47.136 A:middle
+continue to file bug reports for
+
+00:02:47.136 --> 00:02:47.376 A:middle
+us.
+
+00:02:47.376 --> 00:02:48.376 A:middle
+For those of you at the
+
+00:02:48.376 --> 00:02:49.696 A:middle
+conference, if you find a
+
+00:02:49.696 --> 00:02:50.536 A:middle
+problem with your project,
+
+00:02:50.616 --> 00:02:51.776 A:middle
+please come along to the labs.
+
+00:02:51.876 --> 00:02:54.236 A:middle
+We have an Xcode debugging and
+
+00:02:54.236 --> 00:02:55.796 A:middle
+profiling lab tomorrow morning
+
+00:02:55.796 --> 00:02:56.656 A:middle
+from nine till 12.
+
+00:02:57.156 --> 00:02:58.266 A:middle
+Bring your project and ask for
+
+00:02:58.266 --> 00:02:59.816 A:middle
+an Xcode debugger engineer or an
+
+00:02:59.816 --> 00:03:01.106 A:middle
+LLDB engineer, as they would
+

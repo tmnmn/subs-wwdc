@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.296 --> 00:19:00.546 A:middle
+classes are a little bit more
+
+00:19:00.546 --> 00:19:01.296 A:middle
+special case.
+
+00:19:02.446 --> 00:19:04.656 A:middle
+So, if you really want to get
+
+00:19:04.656 --> 00:19:05.926 A:middle
+into detail on this, there's
+
+00:19:05.926 --> 00:19:07.336 A:middle
+another AppKit class I want to
+
+00:19:07.336 --> 00:19:08.186 A:middle
+mention, which is
+
+00:19:08.276 --> 00:19:09.356 A:middle
+NSVisualEffectView.
+
+00:19:09.956 --> 00:19:11.376 A:middle
+And, NSVisualEffectView has this
+
+00:19:11.376 --> 00:19:13.336 A:middle
+material property that allows
+
+00:19:13.336 --> 00:19:14.606 A:middle
+you to determine how the visual
+
+00:19:14.606 --> 00:19:15.256 A:middle
+effect you use is going to
+
+00:19:15.256 --> 00:19:16.576 A:middle
+process the background behind
+
+00:19:16.576 --> 00:19:17.746 A:middle
+it, and what sort of blending
+
+00:19:17.746 --> 00:19:19.146 A:middle
+operations it's going to do.
+
+00:19:19.366 --> 00:19:20.376 A:middle
+And, we have a few of these to
+
+00:19:20.376 --> 00:19:21.736 A:middle
+describe where the
+
+00:19:21.736 --> 00:19:23.426 A:middle
+visualEffectView's being used in
+
+00:19:23.426 --> 00:19:24.316 A:middle
+your UI.
+
+00:19:24.456 --> 00:19:26.546 A:middle
+In macOS 10.14, we've added a
+
+00:19:26.546 --> 00:19:27.226 A:middle
+lot more.
+
+00:19:27.476 --> 00:19:28.686 A:middle
+So, pretty much whatever sort of
+
+00:19:28.686 --> 00:19:30.016 A:middle
+UI you're trying to construct,
+
+00:19:30.016 --> 00:19:31.286 A:middle
+we should have a material that's
+
+00:19:31.286 --> 00:19:32.636 A:middle
+appropriate for that use case.
+
+00:19:33.376 --> 00:19:34.876 A:middle
+In previous OS's, you'll note we
+
+00:19:34.876 --> 00:19:36.116 A:middle
+had some materials labeled
+
+00:19:36.436 --> 00:19:38.026 A:middle
+explicitly as light or dark.
+
+00:19:38.276 --> 00:19:38.986 A:middle
+And, you're going to want to
+
+00:19:38.986 --> 00:19:40.156 A:middle
+stay away from those, as they're
+
+00:19:40.156 --> 00:19:41.726 A:middle
+not going to look right across
+
+00:19:41.726 --> 00:19:42.836 A:middle
+our many new appearances.
+
+00:19:43.426 --> 00:19:46.466 A:middle
+So, that brings me to another
+
+00:19:46.466 --> 00:19:47.986 A:middle
+topic, which is accent colors.
+
+00:19:48.686 --> 00:19:49.966 A:middle
+If we go ahead and look at these
+
+00:19:49.966 --> 00:19:51.296 A:middle
+UI elements, we can see there's
+
+00:19:51.296 --> 00:19:53.086 A:middle
+this delightful splash of view,
+
+00:19:53.086 --> 00:19:55.376 A:middle
+of color, in a lot of these
+
+00:19:55.376 --> 00:19:55.826 A:middle
+elements.
+
+00:19:56.336 --> 00:19:59.826 A:middle
+And, in macOS 10.14, we've added
+

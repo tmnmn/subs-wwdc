@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.046 --> 00:27:00.196 A:middle
+increment and decrement
+
+00:27:00.196 --> 00:27:00.916 A:middle
+functionality.
+
+00:27:01.456 --> 00:27:02.836 A:middle
+First, we'd like to override
+
+00:27:02.836 --> 00:27:04.396 A:middle
+accessibility traits to return
+
+00:27:04.396 --> 00:27:08.826 A:middle
+the adjustable trait.
+
+00:27:09.296 --> 00:27:10.086 A:middle
+Let's first implement
+
+00:27:10.086 --> 00:27:11.096 A:middle
+accessibility increment.
+
+00:27:14.116 --> 00:27:16.366 A:middle
+We want our increment function
+
+00:27:16.436 --> 00:27:17.616 A:middle
+to scroll the collection view
+
+00:27:17.616 --> 00:27:17.996 A:middle
+forward.
+
+00:27:18.376 --> 00:27:19.536 A:middle
+So let's create a function that
+
+00:27:19.536 --> 00:27:19.976 A:middle
+does exactly that.
+
+00:27:28.046 --> 00:27:29.126 A:middle
+Here, I have a function called
+
+00:27:29.126 --> 00:27:30.606 A:middle
+accessibility scroll collection
+
+00:27:30.606 --> 00:27:30.806 A:middle
+view.
+
+00:27:31.476 --> 00:27:32.926 A:middle
+It takes in a bullion, which
+
+00:27:32.926 --> 00:27:34.036 A:middle
+determines if the collection
+
+00:27:34.036 --> 00:27:35.196 A:middle
+view will scroll forwards or
+
+00:27:35.196 --> 00:27:35.746 A:middle
+backwards.
+
+00:27:36.586 --> 00:27:37.786 A:middle
+Let's dive into this function.
+
+00:27:38.846 --> 00:27:39.866 A:middle
+I get a reference to my
+
+00:27:39.866 --> 00:27:42.256 A:middle
+container view, my current dog,
+
+00:27:42.876 --> 00:27:44.086 A:middle
+and my list of all the dogs.
+
+00:27:45.356 --> 00:27:47.176 A:middle
+If I'm moving forwards, I get
+
+00:27:47.176 --> 00:27:49.116 A:middle
+the index of my current dog, and
+
+00:27:49.116 --> 00:27:50.796 A:middle
+I validate that it doesn't
+
+00:27:50.796 --> 00:27:53.326 A:middle
+exceed out of bounds, and if
+
+00:27:53.326 --> 00:27:54.896 A:middle
+doesn't, I'll ask my collection
+
+00:27:54.896 --> 00:27:55.906 A:middle
+view to scroll forward by one
+
+00:27:55.906 --> 00:27:56.366 A:middle
+index.
+
+00:27:57.286 --> 00:27:58.696 A:middle
+I'll do something similar if I'm
+
+00:27:58.696 --> 00:28:01.006 A:middle
+going backwards except I'll make
+

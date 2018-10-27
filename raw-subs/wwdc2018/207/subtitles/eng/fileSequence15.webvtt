@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.396 --> 00:15:02.036 A:middle
+Content security policy, you
+
+00:15:02.036 --> 00:15:03.966 A:middle
+start out default source self.
+
+00:15:04.296 --> 00:15:05.506 A:middle
+Lock everything down.
+
+00:15:05.506 --> 00:15:06.616 A:middle
+Everything that's going to be
+
+00:15:06.616 --> 00:15:08.476 A:middle
+loaded with a source attribute,
+
+00:15:08.476 --> 00:15:10.586 A:middle
+like loaded from a server, needs
+
+00:15:10.586 --> 00:15:12.646 A:middle
+to be from my origin, my domain.
+
+00:15:13.476 --> 00:15:14.666 A:middle
+Then you open up.
+
+00:15:15.076 --> 00:15:17.346 A:middle
+For script, you add what domain
+
+00:15:17.346 --> 00:15:19.716 A:middle
+names do I allow scripts from.
+
+00:15:20.786 --> 00:15:23.366 A:middle
+You say where do I allow myself
+
+00:15:23.366 --> 00:15:24.746 A:middle
+to load frames from.
+
+00:15:25.436 --> 00:15:26.496 A:middle
+You whitelist them.
+
+00:15:26.696 --> 00:15:28.526 A:middle
+And, finally, if you're ever
+
+00:15:28.526 --> 00:15:30.156 A:middle
+going to be in an iframe
+
+00:15:30.156 --> 00:15:32.026 A:middle
+yourself under someone else's
+
+00:15:32.026 --> 00:15:33.996 A:middle
+page, you put them in that white
+
+00:15:33.996 --> 00:15:35.726 A:middle
+list for frame ancestors.
+
+00:15:36.926 --> 00:15:38.446 A:middle
+OK. That's the content security
+
+00:15:38.446 --> 00:15:38.986 A:middle
+policy.
+
+00:15:39.286 --> 00:15:42.256 A:middle
+It has more knobs to turn and
+
+00:15:42.256 --> 00:15:44.276 A:middle
+we'll also see in a couple of
+
+00:15:44.276 --> 00:15:46.346 A:middle
+the attack scenarios a few
+
+00:15:46.346 --> 00:15:47.646 A:middle
+flavors of these things.
+
+00:15:48.986 --> 00:15:49.476 A:middle
+Moving on.
+
+00:15:49.716 --> 00:15:50.786 A:middle
+We're going to have a look at
+
+00:15:50.846 --> 00:15:51.476 A:middle
+cookies.
+
+00:15:51.916 --> 00:15:53.616 A:middle
+Cookies are-- they actually were
+
+00:15:53.616 --> 00:15:56.456 A:middle
+called magic cookies in the
+
+00:15:56.536 --> 00:15:58.426 A:middle
+beginning of the web, and they
+
+00:15:58.426 --> 00:16:00.476 A:middle
+really are magic in that we use
+

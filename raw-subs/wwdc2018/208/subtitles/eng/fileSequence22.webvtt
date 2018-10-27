@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.726 --> 00:22:01.496 A:middle
+contentOffset as focus moves to
+
+00:22:01.496 --> 00:22:02.676 A:middle
+keep the currently focused item
+
+00:22:02.676 --> 00:22:03.296 A:middle
+onscreen.
+
+00:22:04.306 --> 00:22:05.426 A:middle
+Because this is a UIView, I'm
+
+00:22:05.426 --> 00:22:07.206 A:middle
+going to also update by
+
+00:22:07.206 --> 00:22:08.986 A:middle
+bounds.origin so that the
+
+00:22:08.986 --> 00:22:10.336 A:middle
+coordinateSpace conversion
+
+00:22:10.336 --> 00:22:11.486 A:middle
+continues to work correctly.
+
+00:22:14.886 --> 00:22:17.466 A:middle
+See how that works?
+
+00:22:18.676 --> 00:22:19.616 A:middle
+So, now you can see that as I
+
+00:22:19.616 --> 00:22:21.836 A:middle
+focus a tile, it moves onscreen.
+
+00:22:22.586 --> 00:22:24.546 A:middle
+If I keep going, I get nice,
+
+00:22:24.576 --> 00:22:26.286 A:middle
+smooth scrolling with the same
+
+00:22:26.286 --> 00:22:28.746 A:middle
+momentum-- thanks-- nice, smooth
+
+00:22:28.746 --> 00:22:30.216 A:middle
+scrolling with the same momentum
+
+00:22:30.216 --> 00:22:31.826 A:middle
+and animation as if this was a
+
+00:22:31.826 --> 00:22:32.536 A:middle
+UIScrollView.
+
+00:22:32.986 --> 00:22:35.006 A:middle
+So, this is looking pretty good,
+
+00:22:35.446 --> 00:22:36.476 A:middle
+but I think we can do even
+
+00:22:36.476 --> 00:22:36.776 A:middle
+better.
+
+00:22:37.376 --> 00:22:38.496 A:middle
+What I really want is for these
+
+00:22:38.526 --> 00:22:40.036 A:middle
+tiles to come alive when they're
+
+00:22:40.036 --> 00:22:41.506 A:middle
+focused, just like the system
+
+00:22:41.506 --> 00:22:41.986 A:middle
+elements.
+
+00:22:43.106 --> 00:22:45.246 A:middle
+Let's go ahead and do that.
+
+00:22:46.016 --> 00:22:47.046 A:middle
+Going to go back up to
+
+00:22:47.046 --> 00:22:47.776 A:middle
+LevelTile.
+
+00:22:47.776 --> 00:22:49.886 A:middle
+And, I'm going to implement an
+
+00:22:49.886 --> 00:22:50.666 A:middle
+optional method,
+
+00:22:51.296 --> 00:22:52.406 A:middle
+didHintFocusMovement.
+
+00:22:53.486 --> 00:22:55.036 A:middle
+I'm going to take the suggested
+
+00:22:55.036 --> 00:22:56.866 A:middle
+perspective, rotation, and
+
+00:22:56.866 --> 00:22:58.156 A:middle
+translation values from the
+
+00:22:58.156 --> 00:23:00.176 A:middle
+UIFocusMovementHint, and apply
+

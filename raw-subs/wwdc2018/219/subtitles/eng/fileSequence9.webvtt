@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.546 --> 00:09:01.676 A:middle
+And, eventually, if your
+
+00:09:01.676 --> 00:09:02.776 A:middle
+application consumes enough
+
+00:09:02.776 --> 00:09:04.736 A:middle
+memory, your application itself
+
+00:09:04.736 --> 00:09:05.556 A:middle
+could get terminated.
+
+00:09:06.266 --> 00:09:07.306 A:middle
+And some of those background
+
+00:09:07.306 --> 00:09:08.536 A:middle
+processes are doing important
+
+00:09:08.536 --> 00:09:09.586 A:middle
+work on behalf of the user.
+
+00:09:09.906 --> 00:09:10.986 A:middle
+So, they might get started up
+
+00:09:10.986 --> 00:09:11.906 A:middle
+again as soon as they get
+
+00:09:11.906 --> 00:09:12.456 A:middle
+terminated.
+
+00:09:13.586 --> 00:09:15.086 A:middle
+So, even though your application
+
+00:09:15.396 --> 00:09:16.666 A:middle
+might only be consuming memory
+
+00:09:16.666 --> 00:09:18.546 A:middle
+for a short period of time, it
+
+00:09:18.546 --> 00:09:20.456 A:middle
+can have this really long-tail
+
+00:09:20.456 --> 00:09:22.996 A:middle
+effect on CPU utilization.
+
+00:09:24.106 --> 00:09:25.626 A:middle
+So, we want to reduce the amount
+
+00:09:25.626 --> 00:09:26.876 A:middle
+of memory that our application
+
+00:09:26.876 --> 00:09:27.436 A:middle
+uses.
+
+00:09:27.556 --> 00:09:28.596 A:middle
+And we can get ahead of the
+
+00:09:28.596 --> 00:09:30.406 A:middle
+curve with a technique called
+
+00:09:30.406 --> 00:09:31.146 A:middle
+downsampling.
+
+00:09:32.336 --> 00:09:34.236 A:middle
+Now, here we see a little bit
+
+00:09:34.416 --> 00:09:35.726 A:middle
+more detail about our image
+
+00:09:35.726 --> 00:09:36.606 A:middle
+rendering pipeline.
+
+00:09:37.006 --> 00:09:38.346 A:middle
+Including the fact that the
+
+00:09:38.346 --> 00:09:39.236 A:middle
+image view we're going to
+
+00:09:39.236 --> 00:09:41.206 A:middle
+display our image in is actually
+
+00:09:41.206 --> 00:09:42.906 A:middle
+smaller than the image we're
+
+00:09:42.906 --> 00:09:44.366 A:middle
+going to display inside of it.
+
+00:09:44.996 --> 00:09:47.096 A:middle
+Normally, the core animation
+
+00:09:47.376 --> 00:09:48.656 A:middle
+framework would be responsible
+
+00:09:48.656 --> 00:09:50.346 A:middle
+for shrinking that image down
+
+00:09:50.346 --> 00:09:52.326 A:middle
+during the rendering phase, but
+
+00:09:52.326 --> 00:09:54.226 A:middle
+we can save some memory by using
+
+00:09:54.226 --> 00:09:55.526 A:middle
+this downsampling technique.
+
+00:09:55.666 --> 00:09:56.906 A:middle
+And what we're going to do,
+
+00:09:56.906 --> 00:09:58.596 A:middle
+essentially, is capture that
+
+00:09:58.596 --> 00:10:01.106 A:middle
+shrinking operation into an
+

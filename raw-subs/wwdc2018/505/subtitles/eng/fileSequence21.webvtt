@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.836 --> 00:21:01.386 A:middle
+PhotoKit objects to the
+
+00:21:01.386 --> 00:21:03.396 A:middle
+extension by default, but your
+
+00:21:03.396 --> 00:21:04.626 A:middle
+extension can potentially
+
+00:21:04.626 --> 00:21:05.806 A:middle
+interfere with that if you
+
+00:21:05.806 --> 00:21:06.986 A:middle
+register for the wrong types.
+
+00:21:07.276 --> 00:21:08.876 A:middle
+So, please be careful what types
+
+00:21:08.876 --> 00:21:10.456 A:middle
+your extension is registering
+
+00:21:10.456 --> 00:21:12.796 A:middle
+for, and only register for
+
+00:21:12.796 --> 00:21:14.746 A:middle
+extension internal drags, or
+
+00:21:14.746 --> 00:21:16.096 A:middle
+other drags you really want to
+
+00:21:16.096 --> 00:21:16.416 A:middle
+handle.
+
+00:21:16.806 --> 00:21:19.166 A:middle
+Be especially careful if you use
+
+00:21:19.166 --> 00:21:21.546 A:middle
+WKWebView, because it registers
+
+00:21:21.596 --> 00:21:24.926 A:middle
+for a bunch of drag types by
+
+00:21:26.046 --> 00:21:26.476 A:middle
+default.
+
+00:21:26.556 --> 00:21:28.036 A:middle
+That was everything about photo
+
+00:21:28.036 --> 00:21:28.866 A:middle
+project extensions.
+
+00:21:29.136 --> 00:21:30.346 A:middle
+Let me now hand over to my
+
+00:21:30.346 --> 00:21:32.416 A:middle
+colleague Sanaa to talk about
+
+00:21:32.596 --> 00:21:33.856 A:middle
+integrating with Photos--
+
+00:21:33.976 --> 00:21:35.666 A:middle
+interacting with Photos as a
+
+00:21:35.666 --> 00:21:36.526 A:middle
+third-party application.
+
+00:21:36.526 --> 00:21:36.716 A:middle
+Thank you.
+
+00:21:37.516 --> 00:21:40.136 A:middle
+[ Applause ]
+
+00:21:40.636 --> 00:21:41.156 A:middle
+&gt;&gt; Thank you, Tobias.
+
+00:21:41.886 --> 00:21:43.176 A:middle
+Hello, everyone.
+
+00:21:43.846 --> 00:21:44.746 A:middle
+My name is Sanaa.
+
+00:21:44.746 --> 00:21:46.136 A:middle
+I am a Photos engineer, and
+
+00:21:46.136 --> 00:21:47.606 A:middle
+today with my colleague Joachim,
+
+00:21:47.606 --> 00:21:48.896 A:middle
+we are going to talk about some
+
+00:21:48.896 --> 00:21:51.136 A:middle
+best practices for receiving and
+
+00:21:51.136 --> 00:21:52.696 A:middle
+providing images or videos
+
+00:21:52.696 --> 00:21:54.886 A:middle
+between apps on macOS, using
+
+00:21:54.886 --> 00:21:55.406 A:middle
+drag and drop.
+
+00:21:55.856 --> 00:21:59.086 A:middle
+Drag and drop is one of the most
+
+00:21:59.086 --> 00:22:00.576 A:middle
+intuitive and easiest way to
+

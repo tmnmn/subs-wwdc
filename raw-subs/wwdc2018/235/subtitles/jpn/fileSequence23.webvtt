@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.479 --> 00:23:00.647 align:start position:27% line:-1
+これは分かりやすいはずです
+
+00:23:00.747 --> 00:23:05.886 align:start position:21% line:-2
+safeAreaInsetsなど
+あらゆるシステムの余白をいつでも
+
+00:23:05.986 --> 00:23:09.289 align:start position:12% line:-2
+adjustedContentInsetに
+取り込みます
+
+00:23:09.389 --> 00:23:11.458 align:start position:34% line:-1
+この例でもそうです
+
+00:23:11.558 --> 00:23:14.695 align:start position:16% line:-2
+上部と下部にのみ
+safeAreaInsetsがあります
+
+00:23:14.795 --> 00:23:19.032 align:start position:25% line:-2
+これらが取り込まれるので
+コンテンツはバーに隠れません
+
+00:23:19.132 --> 00:23:23.070 align:start position:23% line:-2
+水平方向の左右には
+余白はないので問題ありませんが
+
+00:23:23.170 --> 00:23:29.576 align:start position:14% line:-2
+例えばiPhone Xでテーブルビューを
+横向きで表示する際は要注意です
+
+00:23:29.743 --> 00:23:31.678 align:start position:11% line:-1
+左右にsafeAreaInsetsがあります
+
+00:23:31.778 --> 00:23:36.717 align:start position:21% line:-2
+alwaysの挙動を使えば
+テーブルビューはそれらを取り込み
+
+00:23:36.817 --> 00:23:41.188 align:start position:21% line:-2
+スクロール領域が増え 水平方向に
+スクロール可能となります
+
+00:23:41.588 --> 00:23:42.923 align:start position:39% line:-1
+困りますよね
+
+00:23:43.757 --> 00:23:47.227 align:start position:12% line:-2
+それを解決するのが
+次のscrollableAxesの挙動です
+
+00:23:47.828 --> 00:23:53.734 align:start position:23% line:-2
+縦軸と横軸にあるものが
+別々に考慮されるようになります
+
+00:23:53.834 --> 00:23:59.139 align:start position:21% line:-2
+例えばコンテンツサイズが
+場合に応じて幅や高さを上回ったり
+
+00:23:59.239 --> 00:24:01.942 align:start position:9% line:-1
+alwaysBounceHorizontalや
+

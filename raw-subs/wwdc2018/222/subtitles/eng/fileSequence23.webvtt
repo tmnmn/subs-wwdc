@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.786 --> 00:23:02.246 A:middle
+When we make such a call,
+
+00:23:02.636 --> 00:23:04.456 A:middle
+NSKeyedUnarchiver, takes the
+
+00:23:04.456 --> 00:23:06.606 A:middle
+object that we used, this class,
+
+00:23:07.056 --> 00:23:08.516 A:middle
+and constructs an allowed class
+
+00:23:08.516 --> 00:23:09.706 A:middle
+list from it.
+
+00:23:10.296 --> 00:23:12.626 A:middle
+When we go ahead and decode an
+
+00:23:12.626 --> 00:23:14.306 A:middle
+object from an archive, it's
+
+00:23:14.306 --> 00:23:16.016 A:middle
+class is first checked against
+
+00:23:16.016 --> 00:23:16.936 A:middle
+the allowed class list.
+
+00:23:17.286 --> 00:23:19.626 A:middle
+And if it isn't present, the
+
+00:23:19.626 --> 00:23:20.886 A:middle
+decode call will be rejected.
+
+00:23:21.556 --> 00:23:24.436 A:middle
+Now, if the class of the object
+
+00:23:24.436 --> 00:23:25.906 A:middle
+that we find in the archive is
+
+00:23:25.906 --> 00:23:26.966 A:middle
+in the allowed class list,
+
+00:23:27.556 --> 00:23:28.566 A:middle
+there's a few checks that we
+
+00:23:28.566 --> 00:23:29.196 A:middle
+need to perform.
+
+00:23:30.246 --> 00:23:31.726 A:middle
+Specifically, we'll need to make
+
+00:23:31.726 --> 00:23:33.276 A:middle
+sure that this class itself also
+
+00:23:33.276 --> 00:23:34.596 A:middle
+conforms to NSSecureCoding.
+
+00:23:35.906 --> 00:23:37.666 A:middle
+If it doesn't, we can't be sure
+
+00:23:37.666 --> 00:23:38.896 A:middle
+that it itself will be able to
+
+00:23:38.896 --> 00:23:40.546 A:middle
+further securely decode its own
+
+00:23:40.546 --> 00:23:41.146 A:middle
+contents.
+
+00:23:41.496 --> 00:23:43.086 A:middle
+And so, we can't safely decode
+
+00:23:43.086 --> 00:23:43.996 A:middle
+one of these objects.
+
+00:23:44.996 --> 00:23:46.256 A:middle
+In our case, the purchase class
+
+00:23:46.316 --> 00:23:46.506 A:middle
+will.
+
+00:23:46.776 --> 00:23:47.976 A:middle
+And so, it's safe to decode and
+
+00:23:47.976 --> 00:23:48.706 A:middle
+keep track of it.
+
+00:23:49.746 --> 00:23:51.086 A:middle
+Now, there's two other checks
+
+00:23:51.086 --> 00:23:51.716 A:middle
+that are related to
+
+00:23:51.716 --> 00:23:52.856 A:middle
+superclass-subclass
+
+00:23:53.256 --> 00:23:54.006 A:middle
+relationships.
+
+00:23:54.576 --> 00:23:56.906 A:middle
+If you have two classes, one of
+
+00:23:56.906 --> 00:23:58.226 A:middle
+which is a subclass of another,
+
+00:23:58.586 --> 00:24:00.636 A:middle
+both conforming to NSCoding, and
+

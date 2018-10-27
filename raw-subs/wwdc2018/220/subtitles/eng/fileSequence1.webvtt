@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.096 --> 00:01:00.406 A:middle
+relationships between views.
+
+00:01:01.206 --> 00:01:02.826 A:middle
+When it comes to performance, I
+
+00:01:03.126 --> 00:01:04.756 A:middle
+think the challenge here is that
+
+00:01:04.756 --> 00:01:06.146 A:middle
+if all you've said is the
+
+00:01:06.146 --> 00:01:07.276 A:middle
+distance between these two
+
+00:01:07.416 --> 00:01:09.286 A:middle
+buttons should be 20, it can be
+
+00:01:09.286 --> 00:01:10.446 A:middle
+hard to understand the
+
+00:01:10.446 --> 00:01:12.606 A:middle
+step-by-step process that the
+
+00:01:12.606 --> 00:01:13.936 A:middle
+machine goes through to do that
+
+00:01:14.226 --> 00:01:15.466 A:middle
+and that means it can be hard to
+
+00:01:15.466 --> 00:01:17.726 A:middle
+understand the expectations
+
+00:01:17.726 --> 00:01:18.736 A:middle
+around performance and
+
+00:01:18.736 --> 00:01:19.826 A:middle
+understand what's fast and
+
+00:01:19.826 --> 00:01:21.296 A:middle
+what's not and generally how
+
+00:01:21.296 --> 00:01:22.006 A:middle
+things are working.
+
+00:01:22.986 --> 00:01:24.886 A:middle
+So that's our goal for this
+
+00:01:24.886 --> 00:01:25.156 A:middle
+talk.
+
+00:01:25.456 --> 00:01:27.386 A:middle
+It's to really understand that,
+
+00:01:27.386 --> 00:01:28.926 A:middle
+to have a good feel for how
+
+00:01:28.926 --> 00:01:29.556 A:middle
+things are going to work.
+
+00:01:29.896 --> 00:01:31.146 A:middle
+So we're going to start things
+
+00:01:31.146 --> 00:01:32.696 A:middle
+off by first showing some of the
+
+00:01:32.696 --> 00:01:33.826 A:middle
+work that we've been doing in
+
+00:01:33.826 --> 00:01:35.556 A:middle
+this release for iOS 12 around
+
+00:01:35.556 --> 00:01:36.096 A:middle
+performance.
+
+00:01:36.436 --> 00:01:37.256 A:middle
+We've been doing a lot of work,
+
+00:01:37.706 --> 00:01:40.286 A:middle
+that's we get to give this talk.
+
+00:01:41.206 --> 00:01:44.646 A:middle
+When that's done we're going to
+
+00:01:44.646 --> 00:01:46.166 A:middle
+move on to trying to build that
+
+00:01:46.166 --> 00:01:47.636 A:middle
+step-by-step understanding that
+
+00:01:47.636 --> 00:01:48.376 A:middle
+I was talking about.
+
+00:01:48.686 --> 00:01:50.506 A:middle
+So we have good intuition and
+
+00:01:50.506 --> 00:01:51.576 A:middle
+good expectations around
+
+00:01:51.576 --> 00:01:52.006 A:middle
+performance.
+
+00:01:52.456 --> 00:01:53.626 A:middle
+To do that we're going to do
+
+00:01:53.626 --> 00:01:55.496 A:middle
+something very unusual for us,
+
+00:01:55.786 --> 00:01:57.076 A:middle
+which is to go into internals.
+
+00:01:57.746 --> 00:01:58.756 A:middle
+So enjoy that please.
+

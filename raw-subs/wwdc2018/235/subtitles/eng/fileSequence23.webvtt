@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.666 --> 00:23:00.446 A:middle
+as you might expect.
+
+00:23:00.866 --> 00:23:02.506 A:middle
+Scroll view is going to always
+
+00:23:02.506 --> 00:23:04.846 A:middle
+incorporate any system inset
+
+00:23:04.846 --> 00:23:06.546 A:middle
+like safe area insets into its
+
+00:23:06.546 --> 00:23:08.596 A:middle
+adjusted content inset on any
+
+00:23:08.596 --> 00:23:08.926 A:middle
+edge.
+
+00:23:09.236 --> 00:23:10.396 A:middle
+And this works fine in our
+
+00:23:10.396 --> 00:23:11.656 A:middle
+particular example here.
+
+00:23:11.656 --> 00:23:13.026 A:middle
+We only have a top and bottom
+
+00:23:13.026 --> 00:23:14.336 A:middle
+safe area inset on our scroll
+
+00:23:14.336 --> 00:23:14.606 A:middle
+view.
+
+00:23:14.906 --> 00:23:16.816 A:middle
+And so it will incorporate those
+
+00:23:16.816 --> 00:23:17.966 A:middle
+and the content gets to move out
+
+00:23:17.966 --> 00:23:18.996 A:middle
+from underneath the bars.
+
+00:23:19.216 --> 00:23:20.306 A:middle
+We don't have any horizontal
+
+00:23:20.306 --> 00:23:21.596 A:middle
+insets on the left or right.
+
+00:23:21.956 --> 00:23:22.726 A:middle
+So no problems.
+
+00:23:23.176 --> 00:23:24.686 A:middle
+But be careful with this one
+
+00:23:24.686 --> 00:23:25.836 A:middle
+because if you have something
+
+00:23:25.836 --> 00:23:27.676 A:middle
+like let's say a table view on
+
+00:23:27.676 --> 00:23:29.196 A:middle
+the iPhone 10 in landscape,
+
+00:23:29.646 --> 00:23:30.746 A:middle
+there are left and right safe
+
+00:23:30.746 --> 00:23:31.546 A:middle
+area insets.
+
+00:23:31.896 --> 00:23:33.626 A:middle
+Using this behavior the table
+
+00:23:33.626 --> 00:23:34.786 A:middle
+view is going to incorporate
+
+00:23:34.786 --> 00:23:36.186 A:middle
+those into its adjusted content
+
+00:23:36.186 --> 00:23:37.616 A:middle
+inset, which increases the
+
+00:23:37.616 --> 00:23:39.146 A:middle
+scrollable area, which is going
+
+00:23:39.146 --> 00:23:39.836 A:middle
+to make a table view
+
+00:23:39.836 --> 00:23:40.846 A:middle
+horizontally scrollable.
+
+00:23:40.846 --> 00:23:42.206 A:middle
+You're not going to want that
+
+00:23:42.206 --> 00:23:42.536 A:middle
+behavior.
+
+00:23:43.876 --> 00:23:45.106 A:middle
+That's why we have the next
+
+00:23:45.106 --> 00:23:46.466 A:middle
+behavior which is scrollable
+
+00:23:46.466 --> 00:23:46.736 A:middle
+axes.
+
+00:23:47.766 --> 00:23:49.536 A:middle
+For this one, the scroll view is
+
+00:23:49.536 --> 00:23:50.796 A:middle
+going to independently consider
+
+00:23:50.796 --> 00:23:52.426 A:middle
+things on the vertical axis and
+
+00:23:52.426 --> 00:23:53.506 A:middle
+the horizontal axis.
+
+00:23:53.926 --> 00:23:55.516 A:middle
+For each of those, if the
+
+00:23:55.516 --> 00:23:57.606 A:middle
+content size exceeds the width
+
+00:23:57.606 --> 00:23:59.716 A:middle
+or the height as appropriate, or
+

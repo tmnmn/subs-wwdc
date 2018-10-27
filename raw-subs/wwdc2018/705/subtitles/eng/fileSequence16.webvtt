@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.586 --> 00:16:00.386 A:middle
+subscription window.
+
+00:16:00.756 --> 00:16:02.376 A:middle
+And so the user who is on your
+
+00:16:02.376 --> 00:16:03.796 A:middle
+website trying to access your
+
+00:16:03.796 --> 00:16:05.666 A:middle
+content can now access that next
+
+00:16:05.666 --> 00:16:06.956 A:middle
+subscription period all without
+
+00:16:06.956 --> 00:16:08.636 A:middle
+the app having to launch with
+
+00:16:08.636 --> 00:16:09.646 A:middle
+that new transaction.
+
+00:16:10.276 --> 00:16:12.546 A:middle
+If you are using this technique
+
+00:16:12.546 --> 00:16:13.466 A:middle
+though status polling it's
+
+00:16:13.466 --> 00:16:14.546 A:middle
+important to remember one thing
+
+00:16:14.546 --> 00:16:15.456 A:middle
+and that's that when your app
+
+00:16:15.566 --> 00:16:16.946 A:middle
+does come back online again
+
+00:16:17.256 --> 00:16:19.076 A:middle
+transactions will still appear
+
+00:16:19.316 --> 00:16:20.576 A:middle
+through StoreKit in the updated
+
+00:16:20.576 --> 00:16:21.556 A:middle
+transactions callback.
+
+00:16:21.556 --> 00:16:22.866 A:middle
+And you still should handle
+
+00:16:22.866 --> 00:16:24.966 A:middle
+these transactions passing them
+
+00:16:24.966 --> 00:16:25.596 A:middle
+up to your server for
+
+00:16:25.686 --> 00:16:27.316 A:middle
+verification and finishing them
+
+00:16:27.316 --> 00:16:28.546 A:middle
+back down on the user's device
+
+00:16:28.546 --> 00:16:29.676 A:middle
+again, even if your server
+
+00:16:29.676 --> 00:16:31.316 A:middle
+already knows about them through
+
+00:16:31.426 --> 00:16:33.386 A:middle
+a status poll.
+
+00:16:33.586 --> 00:16:34.536 A:middle
+We'd encourage you to use that
+
+00:16:34.536 --> 00:16:35.916 A:middle
+as an opportunity just to send
+
+00:16:35.916 --> 00:16:37.736 A:middle
+up that new latest receipt data
+
+00:16:37.736 --> 00:16:39.146 A:middle
+for storage against the current
+
+00:16:39.146 --> 00:16:39.936 A:middle
+user on the server.
+
+00:16:44.316 --> 00:16:45.646 A:middle
+Now status polling works great
+
+00:16:46.096 --> 00:16:47.116 A:middle
+when the user's credit card is
+
+00:16:47.116 --> 00:16:49.206 A:middle
+able to be charged, but what if
+
+00:16:50.086 --> 00:16:51.266 A:middle
+some subscription period the
+
+00:16:51.266 --> 00:16:52.766 A:middle
+user's credit card has some kind
+
+00:16:52.766 --> 00:16:54.036 A:middle
+of billing issue and the App
+
+00:16:54.036 --> 00:16:55.246 A:middle
+Store isn't able to charge it
+
+00:16:55.776 --> 00:16:57.016 A:middle
+for the next subscription
+
+00:16:57.016 --> 00:16:57.366 A:middle
+period.
+
+00:16:57.996 --> 00:16:59.346 A:middle
+Is this user destined to remain
+
+00:16:59.346 --> 00:17:00.756 A:middle
+unsubscribed involuntarily?
+

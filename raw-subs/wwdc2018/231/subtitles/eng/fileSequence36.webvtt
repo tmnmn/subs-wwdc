@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.576 --> 00:36:01.206 A:middle
+year, it's not dark at 7 p.m.,
+
+00:36:01.636 --> 00:36:02.786 A:middle
+or sometimes, parts of the year,
+
+00:36:02.786 --> 00:36:04.336 A:middle
+it gets dark before 7 p.m.
+
+00:36:04.586 --> 00:36:06.106 A:middle
+Sometimes it gets dark after 7
+
+00:36:06.106 --> 00:36:06.456 A:middle
+p.m.
+
+00:36:07.126 --> 00:36:08.306 A:middle
+So turning on the light at 7
+
+00:36:08.306 --> 00:36:09.696 A:middle
+p.m. every night isn't really
+
+00:36:09.696 --> 00:36:12.126 A:middle
+what you want.
+
+00:36:12.276 --> 00:36:14.306 A:middle
+So we also support what we call
+
+00:36:14.306 --> 00:36:15.636 A:middle
+significant time events.
+
+00:36:16.216 --> 00:36:18.546 A:middle
+And this is sunrise and sunset.
+
+00:36:19.076 --> 00:36:21.536 A:middle
+So if we look at that previous
+
+00:36:21.536 --> 00:36:23.556 A:middle
+example, we could change that to
+
+00:36:23.666 --> 00:36:26.076 A:middle
+say, turn on the light every
+
+00:36:26.076 --> 00:36:28.576 A:middle
+night at 7 p.m.
+
+00:36:28.736 --> 00:36:30.536 A:middle
+We also support relative time
+
+00:36:30.536 --> 00:36:32.386 A:middle
+offsets, so you can have the
+
+00:36:32.386 --> 00:36:34.386 A:middle
+light turn on, say, 30 minutes
+
+00:36:34.386 --> 00:36:35.206 A:middle
+prior to sunset.
+
+00:36:35.716 --> 00:36:38.846 A:middle
+So let's go back to the code we
+
+00:36:38.846 --> 00:36:41.256 A:middle
+had before and make some changes
+
+00:36:42.236 --> 00:36:44.676 A:middle
+so that we can have it run every
+
+00:36:44.676 --> 00:36:45.796 A:middle
+night at 30 minutes before
+
+00:36:45.796 --> 00:36:46.226 A:middle
+sunset.
+
+00:36:46.736 --> 00:36:48.946 A:middle
+So the first thing we need to do
+
+00:36:49.436 --> 00:36:51.406 A:middle
+is change our date components to
+
+00:36:51.406 --> 00:36:52.506 A:middle
+be 30 minutes.
+
+00:36:53.016 --> 00:36:54.056 A:middle
+Now, you'll see that it's
+
+00:36:54.056 --> 00:36:55.896 A:middle
+negative 30 here because we want
+
+00:36:55.896 --> 00:36:57.296 A:middle
+it to run 30 minutes prior to
+
+00:36:57.296 --> 00:36:57.746 A:middle
+sunset.
+
+00:36:59.056 --> 00:37:00.766 A:middle
+Then, we'll create a significant
+

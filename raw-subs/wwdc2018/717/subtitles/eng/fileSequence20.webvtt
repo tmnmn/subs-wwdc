@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.366 --> 00:20:01.036 A:middle
+that actually mean, "analyze on
+
+00:20:01.036 --> 00:20:01.836 A:middle
+the current image."
+
+00:20:02.516 --> 00:20:04.496 A:middle
+So, when it's time to analyze
+
+00:20:04.496 --> 00:20:07.446 A:middle
+it, I get my device orientation,
+
+00:20:07.446 --> 00:20:09.326 A:middle
+which is important to know how
+
+00:20:09.326 --> 00:20:10.936 A:middle
+am I holding my phone.
+
+00:20:11.886 --> 00:20:13.116 A:middle
+I create an image request
+
+00:20:13.116 --> 00:20:14.966 A:middle
+handler on that buffer that we
+
+00:20:15.536 --> 00:20:16.626 A:middle
+currently want to process.
+
+00:20:17.936 --> 00:20:21.016 A:middle
+And asynchronously, I let it
+
+00:20:21.046 --> 00:20:22.586 A:middle
+perform its work.
+
+00:20:24.056 --> 00:20:25.226 A:middle
+That's all I have to do
+
+00:20:25.226 --> 00:20:26.476 A:middle
+basically for actually doing the
+
+00:20:26.476 --> 00:20:28.706 A:middle
+processing with Core ML and
+
+00:20:28.706 --> 00:20:29.506 A:middle
+barcode reading.
+
+00:20:30.326 --> 00:20:32.556 A:middle
+Now, a few things, just okay.
+
+00:20:32.556 --> 00:20:33.976 A:middle
+How do I do the scene stability
+
+00:20:33.976 --> 00:20:34.306 A:middle
+part?
+
+00:20:34.766 --> 00:20:36.076 A:middle
+So, I have a queue that I can
+
+00:20:36.076 --> 00:20:36.536 A:middle
+reset.
+
+00:20:36.766 --> 00:20:38.916 A:middle
+I can add my points into that.
+
+00:20:39.966 --> 00:20:41.376 A:middle
+And then simply I had created a
+
+00:20:41.376 --> 00:20:43.396 A:middle
+function that allows me to look
+
+00:20:43.396 --> 00:20:44.776 A:middle
+basically through the queue of
+
+00:20:44.856 --> 00:20:46.096 A:middle
+points that I've recorded.
+
+00:20:46.526 --> 00:20:47.806 A:middle
+And then setting like, "Well, if
+
+00:20:47.806 --> 00:20:49.986 A:middle
+they all sum together, only show
+
+00:20:49.986 --> 00:20:51.576 A:middle
+a distance of like 20 pixels."
+
+00:20:51.576 --> 00:20:52.876 A:middle
+Again, that's an empirical value
+
+00:20:52.876 --> 00:20:53.546 A:middle
+that I chose.
+
+00:20:53.876 --> 00:20:55.376 A:middle
+Then I know the scene is stable.
+
+00:20:55.376 --> 00:20:56.366 A:middle
+So, I'm holding stable.
+
+00:20:56.366 --> 00:20:57.646 A:middle
+Nothing is moving in front of my
+
+00:20:57.646 --> 00:20:58.076 A:middle
+camera.
+
+00:20:58.866 --> 00:21:01.326 A:middle
+And then comes our part of catch
+

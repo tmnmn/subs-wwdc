@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.176 --> 00:17:00.136 A:middle
+This is how the life cycle of
+
+00:17:00.136 --> 00:17:01.286 A:middle
+the broadcast usually looks
+
+00:17:01.286 --> 00:17:01.526 A:middle
+like.
+
+00:17:03.056 --> 00:17:05.685 A:middle
+So we have states called setup,
+
+00:17:05.806 --> 00:17:09.496 A:middle
+initialized, started, processing
+
+00:17:09.616 --> 00:17:10.156 A:middle
+and stopped.
+
+00:17:10.286 --> 00:17:14.606 A:middle
+Over on the left there's this
+
+00:17:14.646 --> 00:17:16.096 A:middle
+green square which corresponds
+
+00:17:16.096 --> 00:17:18.476 A:middle
+to the state when your broadcast
+
+00:17:18.476 --> 00:17:20.986 A:middle
+extension is not running yet and
+
+00:17:20.986 --> 00:17:23.415 A:middle
+at this point your app could,
+
+00:17:23.415 --> 00:17:24.646 A:middle
+for example, get the login
+
+00:17:24.646 --> 00:17:26.526 A:middle
+credentials from the user and
+
+00:17:26.526 --> 00:17:28.616 A:middle
+use a shared keychain to process
+
+00:17:28.616 --> 00:17:31.126 A:middle
+credentials to the extension.
+
+00:17:31.816 --> 00:17:34.226 A:middle
+Or again, here you could let the
+
+00:17:34.226 --> 00:17:35.906 A:middle
+user to type in that message for
+
+00:17:35.906 --> 00:17:39.326 A:middle
+the Facebook part and pass it to
+
+00:17:39.376 --> 00:17:41.526 A:middle
+the extension like one way or
+
+00:17:41.526 --> 00:17:41.856 A:middle
+another.
+
+00:17:42.536 --> 00:17:45.356 A:middle
+So once the user initiates a
+
+00:17:45.356 --> 00:17:47.386 A:middle
+broadcast, using the Control
+
+00:17:47.386 --> 00:17:49.656 A:middle
+Center or your application that
+
+00:17:49.656 --> 00:17:51.066 A:middle
+adopted the broadcast picker,
+
+00:17:52.526 --> 00:17:55.136 A:middle
+ReplayKit launches an extension
+
+00:17:55.136 --> 00:17:57.206 A:middle
+process and creates an instance
+
+00:17:57.206 --> 00:17:58.756 A:middle
+of your SampleHandler class.
+
+00:17:59.826 --> 00:18:02.626 A:middle
+And at that point you can
+

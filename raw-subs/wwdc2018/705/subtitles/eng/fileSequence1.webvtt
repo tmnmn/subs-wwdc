@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.896 --> 00:01:00.226 A:middle
+analytics and reporting tools
+
+00:01:00.266 --> 00:01:01.036 A:middle
+available to you.
+
+00:01:02.246 --> 00:01:03.456 A:middle
+But first up let's talk a bit
+
+00:01:03.456 --> 00:01:04.906 A:middle
+about how to build your app and
+
+00:01:04.906 --> 00:01:05.856 A:middle
+server infrastructure.
+
+00:01:07.406 --> 00:01:08.456 A:middle
+Let's start off by asking a
+
+00:01:08.516 --> 00:01:10.776 A:middle
+simple question, what is a
+
+00:01:10.776 --> 00:01:11.286 A:middle
+subscription?
+
+00:01:12.626 --> 00:01:14.216 A:middle
+Well a subscription gives a user
+
+00:01:14.366 --> 00:01:15.406 A:middle
+access to your content or
+
+00:01:15.406 --> 00:01:17.026 A:middle
+service by them repeatedly
+
+00:01:17.026 --> 00:01:18.476 A:middle
+paying you some amount of money.
+
+00:01:19.176 --> 00:01:19.926 A:middle
+When you look at this at the
+
+00:01:19.926 --> 00:01:21.596 A:middle
+engineering layer a subscription
+
+00:01:21.596 --> 00:01:22.946 A:middle
+is really just a set of
+
+00:01:22.946 --> 00:01:24.666 A:middle
+repeating transactions each of
+
+00:01:24.666 --> 00:01:26.796 A:middle
+which unlock some subscription
+
+00:01:26.866 --> 00:01:27.266 A:middle
+period.
+
+00:01:28.576 --> 00:01:30.276 A:middle
+To use subscriptions in your app
+
+00:01:30.646 --> 00:01:31.366 A:middle
+there's a couple of things that
+
+00:01:31.366 --> 00:01:32.696 A:middle
+you need to do as a developer to
+
+00:01:32.696 --> 00:01:33.516 A:middle
+be able to handle these
+
+00:01:33.516 --> 00:01:34.766 A:middle
+transactions as they come in.
+
+00:01:35.436 --> 00:01:36.216 A:middle
+Let's go through each of these
+
+00:01:36.216 --> 00:01:36.566 A:middle
+steps.
+
+00:01:36.566 --> 00:01:39.156 A:middle
+Firstly, it starts off with your
+
+00:01:39.156 --> 00:01:40.616 A:middle
+app receiving a transaction.
+
+00:01:42.056 --> 00:01:42.866 A:middle
+Once your app has received a
+
+00:01:42.866 --> 00:01:44.166 A:middle
+transaction you need to go ahead
+
+00:01:44.166 --> 00:01:45.226 A:middle
+and verify that it's an
+
+00:01:45.226 --> 00:01:46.646 A:middle
+authentic transaction, that
+
+00:01:46.646 --> 00:01:48.186 A:middle
+money really has changed hands.
+
+00:01:49.466 --> 00:01:51.376 A:middle
+Then it's up to you to update
+
+00:01:51.376 --> 00:01:52.466 A:middle
+and maintain that user's
+
+00:01:52.466 --> 00:01:54.196 A:middle
+subscription state for ongoing
+
+00:01:54.196 --> 00:01:55.766 A:middle
+access to your service.
+
+00:01:56.656 --> 00:01:57.786 A:middle
+So let's go into each of these
+
+00:01:57.786 --> 00:01:58.656 A:middle
+in a little more detail.
+
+00:01:58.656 --> 00:02:00.306 A:middle
+Firstly, let's talk a bit about
+

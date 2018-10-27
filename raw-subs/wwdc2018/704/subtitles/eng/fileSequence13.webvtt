@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.866 --> 00:13:00.426 A:middle
+the big boss at the end of it
+
+00:13:01.036 --> 00:13:02.386 A:middle
+it's not a great time to ask
+
+00:13:02.386 --> 00:13:04.516 A:middle
+them to rate your game, wait
+
+00:13:04.516 --> 00:13:05.156 A:middle
+until they're done.
+
+00:13:05.676 --> 00:13:09.186 A:middle
+You should also wait until both
+
+00:13:09.386 --> 00:13:10.876 A:middle
+they've had enough experience
+
+00:13:10.876 --> 00:13:12.276 A:middle
+with your app to actually have a
+
+00:13:12.276 --> 00:13:14.196 A:middle
+good opinion about it, as well
+
+00:13:14.196 --> 00:13:15.046 A:middle
+as wait until they've had a
+
+00:13:15.046 --> 00:13:16.236 A:middle
+positive experience.
+
+00:13:16.236 --> 00:13:17.516 A:middle
+Maybe they just finished
+
+00:13:17.516 --> 00:13:19.216 A:middle
+fighting that boss, maybe they
+
+00:13:19.216 --> 00:13:20.616 A:middle
+just ordered food and it got
+
+00:13:20.616 --> 00:13:22.126 A:middle
+delivered through your app, wait
+
+00:13:22.126 --> 00:13:23.856 A:middle
+until that positive experience.
+
+00:13:25.196 --> 00:13:26.376 A:middle
+Finally, I mentioned before that
+
+00:13:26.376 --> 00:13:28.746 A:middle
+we limit the number of times we
+
+00:13:28.746 --> 00:13:30.666 A:middle
+will prompt this review her app,
+
+00:13:30.836 --> 00:13:33.046 A:middle
+per device, per year, but that
+
+00:13:33.046 --> 00:13:34.206 A:middle
+doesn't mean we do any sort of
+
+00:13:34.206 --> 00:13:34.876 A:middle
+rate limiting.
+
+00:13:35.786 --> 00:13:37.906 A:middle
+So if within one session you
+
+00:13:37.906 --> 00:13:39.886 A:middle
+call the SKStoreReviewController
+
+00:13:40.046 --> 00:13:42.046 A:middle
+3 times and the user keeps
+
+00:13:42.046 --> 00:13:44.006 A:middle
+clicking not now they will see
+
+00:13:44.006 --> 00:13:45.486 A:middle
+that 3 times in a row.
+
+00:13:45.486 --> 00:13:47.316 A:middle
+It's up to you to add your own
+
+00:13:47.316 --> 00:13:49.186 A:middle
+rate limiting to your app.
+
+00:13:49.466 --> 00:13:50.706 A:middle
+So how does this look in code?
+
+00:13:51.826 --> 00:13:54.556 A:middle
+Well as I've been saying, wrap
+
+00:13:54.556 --> 00:13:55.216 A:middle
+any call to the
+
+00:13:55.216 --> 00:13:56.396 A:middle
+StoreReviewController around
+
+00:13:56.396 --> 00:13:58.096 A:middle
+your own app's business logic.
+
+00:13:58.396 --> 00:13:59.286 A:middle
+Here's what you're going to want
+
+00:13:59.286 --> 00:14:00.946 A:middle
+to check, is this a good time to
+

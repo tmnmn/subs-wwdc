@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.319 --> 00:17:02.189 align:middle line:-2
+因为现有的客户端不需要通过
+新的参数
+
+00:17:02.256 --> 00:17:03.757 align:middle line:-1
+只有我们的单元测试会需要
+
+00:17:05.925 --> 00:17:07.828 align:middle line:-1
+现在让我们回去并更新我们的测试
+
+00:17:08.862 --> 00:17:10.396 align:middle line:-1
+这是最初的测试代码
+
+00:17:11.031 --> 00:17:14.434 align:middle line:-2
+我已修改它以使用单独的
+NotificationCenter
+
+00:17:18.105 --> 00:17:21.608 align:middle line:-2
+这显示了如何测试
+我们的主题是否观察到了通知
+
+00:17:21.675 --> 00:17:24.578 align:middle line:-2
+但是如何测试
+我们的主题是否发布了通知呢？
+
+00:17:25.479 --> 00:17:29.116 align:middle line:-2
+我们将再次使用相同的
+单独NotificationCenter技巧
+
+00:17:29.183 --> 00:17:32.252 align:middle line:-2
+但我还将展示如何使用
+内置的预期API
+
+00:17:32.319 --> 00:17:34.087 align:middle line:-1
+来添加通知观察者
+
+00:17:35.489 --> 00:17:37.691 align:middle line:-1
+这是我们app的另一部分代码
+
+00:17:37.958 --> 00:17:39.893 align:middle line:-1
+CurrentLocationProvider类
+
+00:17:40.527 --> 00:17:44.431 align:middle line:-2
+稍后我将详细讨论这个类
+但是请注意
+
+00:17:44.498 --> 00:17:46.700 align:middle line:-2
+它有向我app中其他类
+发送消息的方法
+
+00:17:46.767 --> 00:17:50.771 align:middle line:-2
+即该app的位置授权
+已经通过发布通知进行更改
+
+00:17:51.939 --> 00:17:53.273 align:middle line:-1
+和我们的视图控制器一样
+
+00:17:53.340 --> 00:17:56.276 align:middle line:-2
+它目前正硬编码默认的
+NotificationCenter
+
+00:17:58.545 --> 00:18:00.881 align:middle line:-1
+这是我为这个类写的单元测试
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.776 --> 00:17:01.406 A:middle
+element, but the lazy filter
+
+00:17:01.406 --> 00:17:02.286 A:middle
+collection doesn't know.
+
+00:17:02.996 --> 00:17:04.175 A:middle
+It wraps something that might
+
+00:17:04.256 --> 00:17:04.435 A:middle
+know.
+
+00:17:05.026 --> 00:17:06.006 A:middle
+And so it'll defer to the map
+
+00:17:06.086 --> 00:17:06.536 A:middle
+collection.
+
+00:17:06.596 --> 00:17:08.356 A:middle
+And the map collection also
+
+00:17:08.596 --> 00:17:09.756 A:middle
+doesn't know it's first element,
+
+00:17:10.205 --> 00:17:11.326 A:middle
+but it wraps a collection that
+
+00:17:11.326 --> 00:17:12.876 A:middle
+might, and indeed, the range
+
+00:17:12.876 --> 00:17:13.756 A:middle
+knows it's first element.
+
+00:17:14.925 --> 00:17:16.296 A:middle
+The first element of the range
+
+00:17:16.356 --> 00:17:17.816 A:middle
+is the value one, which it
+
+00:17:17.816 --> 00:17:18.826 A:middle
+returns to the lazy map
+
+00:17:18.876 --> 00:17:21.226 A:middle
+collection where now the lazy
+
+00:17:21.226 --> 00:17:22.215 A:middle
+map collection can actually
+
+00:17:22.215 --> 00:17:24.296 A:middle
+perform it's closure, computing
+
+00:17:24.296 --> 00:17:26.126 A:middle
+the value 2, which it returns to
+
+00:17:26.126 --> 00:17:27.506 A:middle
+the lazy filter collection as a
+
+00:17:27.656 --> 00:17:28.716 A:middle
+candidatefirst element.
+
+00:17:29.346 --> 00:17:31.096 A:middle
+Now lucky for us in this case, 2
+
+00:17:31.096 --> 00:17:32.586 A:middle
+happens to be less than 10, and
+
+00:17:32.586 --> 00:17:33.696 A:middle
+so the lazy filter collection
+
+00:17:33.696 --> 00:17:35.076 A:middle
+finds it first element on the
+
+00:17:35.076 --> 00:17:37.006 A:middle
+first try, which it returns back
+
+00:17:37.006 --> 00:17:37.506 A:middle
+to its caller.
+
+00:17:38.056 --> 00:17:40.096 A:middle
+Now that's a lot of different
+
+00:17:40.096 --> 00:17:40.736 A:middle
+computation.
+
+00:17:41.426 --> 00:17:43.346 A:middle
+And I mentioned that lazy aims
+
+00:17:43.346 --> 00:17:44.906 A:middle
+to only do calculation as needed
+
+00:17:44.906 --> 00:17:46.626 A:middle
+on demand, but another thing
+
+00:17:46.626 --> 00:17:47.716 A:middle
+that it avoids is creating
+
+00:17:47.716 --> 00:17:48.586 A:middle
+intermediate storage.
+
+00:17:49.446 --> 00:17:51.216 A:middle
+So I want to show an example of
+
+00:17:52.096 --> 00:17:52.236 A:middle
+that.
+
+00:17:52.286 --> 00:17:53.426 A:middle
+Let's suppose we had an array of
+
+00:17:53.426 --> 00:17:54.406 A:middle
+different kind of bears.
+
+00:17:55.296 --> 00:17:57.206 A:middle
+However, I want to point out
+
+00:17:57.206 --> 00:17:58.196 A:middle
+that some of these bears are
+
+00:17:58.196 --> 00:17:58.636 A:middle
+redundant.
+
+00:17:59.416 --> 00:18:00.176 A:middle
+We already know that they're
+

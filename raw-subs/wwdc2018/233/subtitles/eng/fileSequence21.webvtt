@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.516 --> 00:21:00.876 A:middle
+make up the anatomy of a launch.
+
+00:21:02.536 --> 00:21:03.986 A:middle
+Starting with number one,
+
+00:21:04.716 --> 00:21:05.656 A:middle
+process forking.
+
+00:21:07.096 --> 00:21:08.486 A:middle
+Peter, what can we do in this
+
+00:21:08.486 --> 00:21:09.256 A:middle
+phase of the launch?
+
+00:21:10.196 --> 00:21:12.066 A:middle
+&gt;&gt; Well, for process forking,
+
+00:21:12.066 --> 00:21:13.396 A:middle
+it's really complicated.
+
+00:21:13.796 --> 00:21:14.576 A:middle
+You're going to want to read the
+
+00:21:14.576 --> 00:21:17.166 A:middle
+Man pages for fork and exec, and
+
+00:21:17.166 --> 00:21:19.056 A:middle
+familiarize yourself with POSIX
+
+00:21:19.056 --> 00:21:19.796 A:middle
+fundamentals.
+
+00:21:20.076 --> 00:21:21.226 A:middle
+No, no, I'm just kidding.
+
+00:21:21.266 --> 00:21:23.456 A:middle
+iOS will take care of process
+
+00:21:23.456 --> 00:21:24.236 A:middle
+forking for you.
+
+00:21:24.776 --> 00:21:26.726 A:middle
+&gt;&gt; We'll deal with number one
+
+00:21:26.726 --> 00:21:27.096 A:middle
+for you.
+
+00:21:27.156 --> 00:21:27.976 A:middle
+Let's look at number two.
+
+00:21:28.516 --> 00:21:30.816 A:middle
+[ Audience Laughter ]
+
+00:21:31.316 --> 00:21:32.416 A:middle
+Dynamic linking.
+
+00:21:32.886 --> 00:21:36.666 A:middle
+At this phase, we're allocating
+
+00:21:36.666 --> 00:21:38.236 A:middle
+memory to begin executing your
+
+00:21:38.236 --> 00:21:38.876 A:middle
+application.
+
+00:21:39.926 --> 00:21:41.096 A:middle
+We're linking libraries and
+
+00:21:41.096 --> 00:21:41.766 A:middle
+frameworks.
+
+00:21:42.676 --> 00:21:43.896 A:middle
+We're initializing Swift,
+
+00:21:43.896 --> 00:21:45.476 A:middle
+Objective-C, and Foundation.
+
+00:21:46.446 --> 00:21:47.626 A:middle
+And, we're doing static object
+
+00:21:47.626 --> 00:21:48.746 A:middle
+initialization as well.
+
+00:21:49.286 --> 00:21:51.636 A:middle
+And, typically we see this can
+
+00:21:51.636 --> 00:21:54.686 A:middle
+take 40 to 50% of the typical
+
+00:21:54.686 --> 00:21:56.466 A:middle
+launch time of an app.
+
+00:21:57.016 --> 00:21:58.606 A:middle
+And, one key thing to remember
+
+00:21:58.956 --> 00:22:00.476 A:middle
+is at this point, none of your
+

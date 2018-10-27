@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:01.076 --> 00:04:02.986 A:middle
+Now in making some enhancements
+
+00:04:02.986 --> 00:04:05.046 A:middle
+to Moon Jumper, such as some
+
+00:04:05.046 --> 00:04:06.886 A:middle
+visual enhancements and a
+
+00:04:06.886 --> 00:04:08.816 A:middle
+GamePlay mode, while we're not
+
+00:04:08.816 --> 00:04:10.866 A:middle
+ready to ship, we've done a test
+
+00:04:10.926 --> 00:04:12.156 A:middle
+pass and come up with a list of
+
+00:04:12.226 --> 00:04:14.506 A:middle
+bugs that we need to look at.
+
+00:04:14.756 --> 00:04:15.886 A:middle
+So these are the bugs for Solar
+
+00:04:15.886 --> 00:04:16.286 A:middle
+System.
+
+00:04:16.495 --> 00:04:18.026 A:middle
+I'll be tackling the iOS bugs
+
+00:04:18.026 --> 00:04:19.516 A:middle
+first, and later on, Sebastian
+
+00:04:19.516 --> 00:04:21.076 A:middle
+will come out and solve the
+
+00:04:21.076 --> 00:04:22.256 A:middle
+macOS bugs.
+
+00:04:22.716 --> 00:04:24.146 A:middle
+Now, as it says, none of us are
+
+00:04:24.146 --> 00:04:25.476 A:middle
+getting out of here to the Beer
+
+00:04:25.476 --> 00:04:26.876 A:middle
+Bash until we fix all of these
+
+00:04:26.876 --> 00:04:28.706 A:middle
+bugs, so there's nothing more
+
+00:04:28.706 --> 00:04:29.656 A:middle
+exhilarating than peer
+
+00:04:29.656 --> 00:04:31.236 A:middle
+programming with 2000 people.
+
+00:04:31.746 --> 00:04:34.066 A:middle
+Let's get straight into it and
+
+00:04:34.066 --> 00:04:35.486 A:middle
+start with the first bug.
+
+00:04:35.776 --> 00:04:37.036 A:middle
+The jump failure animation does
+
+00:04:37.036 --> 00:04:38.226 A:middle
+not match the specification.
+
+00:04:38.986 --> 00:04:39.936 A:middle
+So what's that talking about?
+
+00:04:40.716 --> 00:04:41.936 A:middle
+Well, switching to the simulator
+
+00:04:42.186 --> 00:04:42.836 A:middle
+because we're using the
+
+00:04:42.836 --> 00:04:44.486 A:middle
+simulator to speed up debugging
+
+00:04:44.486 --> 00:04:45.596 A:middle
+and development.
+
+00:04:45.866 --> 00:04:46.996 A:middle
+I've wired up a tap just to
+
+00:04:46.996 --> 00:04:48.466 A:middle
+recognize them, so every time I
+
+00:04:48.466 --> 00:04:49.776 A:middle
+tap the astronaut he performs a
+
+00:04:49.776 --> 00:04:51.156 A:middle
+successful jump to the height of
+
+00:04:51.196 --> 00:04:51.856 A:middle
+the bar.
+
+00:04:52.436 --> 00:04:53.886 A:middle
+Now this bug is talking about
+
+00:04:53.886 --> 00:04:54.936 A:middle
+the case where the astronaut
+
+00:04:54.986 --> 00:04:55.866 A:middle
+doesn't reach the height of the
+
+00:04:55.866 --> 00:04:57.096 A:middle
+bar, so let's reproduce that.
+
+00:04:57.856 --> 00:04:59.086 A:middle
+Switching to the editor, I'm
+
+00:04:59.376 --> 00:05:00.656 A:middle
+going to use the jump bar to
+

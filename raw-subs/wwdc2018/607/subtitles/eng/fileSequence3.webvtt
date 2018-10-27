@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.226 --> 00:03:01.126 A:middle
+show you how to optimize for the
+
+00:03:01.126 --> 00:03:03.086 A:middle
+A11 to improve performance
+
+00:03:03.246 --> 00:03:04.286 A:middle
+extend playtime.
+
+00:03:05.176 --> 00:03:08.616 A:middle
+And finally, I'm really excited
+
+00:03:08.616 --> 00:03:09.756 A:middle
+that we're going to be joined by
+
+00:03:09.756 --> 00:03:12.386 A:middle
+Nick Penwarden from Epic Games.
+
+00:03:12.736 --> 00:03:14.366 A:middle
+He is going to show us how
+
+00:03:14.366 --> 00:03:15.836 A:middle
+they've used Metal to bring
+
+00:03:15.836 --> 00:03:17.736 A:middle
+console-level games to our
+
+00:03:17.736 --> 00:03:18.206 A:middle
+devices.
+
+00:03:19.216 --> 00:03:23.286 A:middle
+So let's get started.
+
+00:03:23.286 --> 00:03:25.176 A:middle
+Harnessing both CPU and GPU
+
+00:03:25.176 --> 00:03:27.526 A:middle
+parallelism is probably the most
+
+00:03:27.526 --> 00:03:28.816 A:middle
+important and easiest
+
+00:03:28.816 --> 00:03:32.116 A:middle
+optimization you can make.
+
+00:03:32.116 --> 00:03:33.346 A:middle
+Building a command stream on a
+
+00:03:33.346 --> 00:03:34.996 A:middle
+single thread is not sufficient
+
+00:03:34.996 --> 00:03:35.476 A:middle
+anymore.
+
+00:03:36.266 --> 00:03:38.076 A:middle
+The latest iPhone has 6 cores,
+
+00:03:38.356 --> 00:03:39.836 A:middle
+and the iMac Pro can have up to
+
+00:03:39.876 --> 00:03:40.476 A:middle
+18.
+
+00:03:41.186 --> 00:03:42.876 A:middle
+So scalable, multithreaded
+
+00:03:42.876 --> 00:03:45.856 A:middle
+architecture is key to great
+
+00:03:45.856 --> 00:03:48.396 A:middle
+performance on all of our
+
+00:03:49.576 --> 00:03:49.896 A:middle
+devices.
+
+00:03:49.896 --> 00:03:51.286 A:middle
+Metal is designed for
+
+00:03:51.286 --> 00:03:51.936 A:middle
+multithreading.
+
+00:03:51.936 --> 00:03:53.736 A:middle
+I'm going to show you 2 ways how
+
+00:03:53.736 --> 00:03:55.966 A:middle
+to parallelize on the CPU, and
+
+00:03:55.966 --> 00:03:56.826 A:middle
+then I'm going to close this
+
+00:03:56.826 --> 00:03:58.526 A:middle
+section by showing you how Metal
+
+00:03:58.526 --> 00:04:00.036 A:middle
+could automatically parallelize
+

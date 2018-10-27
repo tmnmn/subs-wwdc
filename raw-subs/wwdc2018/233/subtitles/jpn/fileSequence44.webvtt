@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:58.939 --> 00:44:03.377 align:start position:25% line:-2
+スクリーンショットのビューが
+ここにあると分かっています
+
+00:44:03.477 --> 00:44:06.847 align:start position:27% line:-2
+調べると現在は
+隠されていると分かるので―
+
+00:44:08.248 --> 00:44:13.854 align:start position:20% line:-2
+hiddenプロパティの設定場所を
+すべて調べ 原因を把握します
+
+00:44:16.090 --> 00:44:20.294 align:start position:11% line:-2
+さらにUIViewには
+parentDescriptionもあります
+
+00:44:20.394 --> 00:44:24.398 align:start position:29% line:-2
+これはビュー階層を
+親ビューまで上っていき―
+
+00:44:24.798 --> 00:44:29.737 align:start position:21% line:-2
+同じ種類のデバッグ情報を出力する
+nil parentに達します
+
+00:44:32.039 --> 00:44:36.577 align:start position:21% line:-2
+以上のどちらも
+UIViewのデバッグに最適です
+
+00:44:36.810 --> 00:44:40.214 align:start position:11% line:-2
+しかし問題が
+UIViewControllerにあることも
+
+00:44:40.347 --> 00:44:44.451 align:start position:18% line:-2
+そこで使えるのが
+UIViewControllerの―
+
+00:44:44.551 --> 00:44:45.919 align:start position:21% line:-1
+printHierarchyです
+
+00:44:46.887 --> 00:44:49.656 align:start position:21% line:-2
+先日の
+スクリーンショットエディタのバグ
+
+00:44:49.757 --> 00:44:53.994 align:start position:11% line:-2
+viewDidAppearのメッセージを
+View Controllerが受信してない
+
+00:44:54.094 --> 00:44:56.430 align:start position:34% line:-2
+状態の設定が
+不適切だったのです
+
+00:44:57.197 --> 00:45:00.167 align:start position:23% line:-2
+printHierarchyを
+実行すると―
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.476 --> 00:35:00.846 A:middle
+You're going to take those 3
+
+00:35:00.846 --> 00:35:03.826 A:middle
+values, generate your SHA-1 hash
+
+00:35:04.696 --> 00:35:07.126 A:middle
+and compare and if it matches
+
+00:35:07.846 --> 00:35:09.256 A:middle
+what you generate with what's in
+
+00:35:09.256 --> 00:35:10.776 A:middle
+the receipt you know that that
+
+00:35:10.776 --> 00:35:12.786 A:middle
+receipt was generated for your
+
+00:35:12.786 --> 00:35:14.246 A:middle
+app on that device.
+
+00:35:17.056 --> 00:35:18.406 A:middle
+Well what happens if you get an
+
+00:35:18.596 --> 00:35:21.526 A:middle
+invalid receipt or it just
+
+00:35:21.526 --> 00:35:22.776 A:middle
+doesn't exist for whatever
+
+00:35:22.776 --> 00:35:23.276 A:middle
+reason?
+
+00:35:24.556 --> 00:35:26.676 A:middle
+StoreKit gives you APIs to
+
+00:35:26.876 --> 00:35:28.836 A:middle
+request a new receipt from the
+
+00:35:28.836 --> 00:35:29.466 A:middle
+App Store.
+
+00:35:30.176 --> 00:35:31.656 A:middle
+Again, the receipt comes from
+
+00:35:31.656 --> 00:35:33.616 A:middle
+our commerce backend so you're
+
+00:35:33.616 --> 00:35:35.806 A:middle
+going to need a network in order
+
+00:35:35.806 --> 00:35:36.686 A:middle
+to be able to complete this
+
+00:35:36.686 --> 00:35:37.426 A:middle
+operation.
+
+00:35:38.596 --> 00:35:41.586 A:middle
+In order to make sure that we
+
+00:35:41.586 --> 00:35:43.196 A:middle
+are using an authentic receipt
+
+00:35:43.196 --> 00:35:44.886 A:middle
+from an authentic user a sign-in
+
+00:35:44.886 --> 00:35:45.806 A:middle
+may be required.
+
+00:35:46.306 --> 00:35:49.806 A:middle
+When you get an updated receipt
+
+00:35:49.806 --> 00:35:51.526 A:middle
+you need to be careful to avoid
+
+00:35:51.526 --> 00:35:53.386 A:middle
+any sort of continuous loop of
+
+00:35:53.386 --> 00:35:54.586 A:middle
+validate and refresh.
+
+00:35:54.586 --> 00:35:55.916 A:middle
+If you get an updated receipt
+
+00:35:56.136 --> 00:35:57.836 A:middle
+check it once and if it's still
+
+00:35:57.836 --> 00:35:59.486 A:middle
+invalid error out then.
+

@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:01.341 --> 00:09:05.279 align:middle line:-2
+通知界面控制器有一个
+新notificationActions属性
+
+00:09:05.345 --> 00:09:06.747 align:middle line:-1
+此属性返回操作数组
+
+00:09:06.813 --> 00:09:08.782 align:middle line:-1
+并显示给通知
+
+00:09:09.249 --> 00:09:13.720 align:middle line:-1
+可以在didReceive notification回调中
+
+00:09:13.787 --> 00:09:15.956 align:middle line:-2
+将这个属性设置为
+UNNotificationAction对象数组
+
+00:09:16.390 --> 00:09:19.293 align:middle line:-1
+这让你能够灵活地添加或删除按钮
+
+00:09:19.359 --> 00:09:21.161 align:middle line:-1
+以满足交互界面需求
+
+00:09:23.130 --> 00:09:25.032 align:middle line:-1
+在未来版本中
+
+00:09:25.098 --> 00:09:27.668 align:middle line:-2
+我们将允许
+在调用didReceive notification后
+
+00:09:27.734 --> 00:09:29.903 align:middle line:-1
+随时更改操作
+
+00:09:30.304 --> 00:09:33.340 align:middle line:-1
+让你能够根据用户的交互操作
+
+00:09:33.407 --> 00:09:35.442 align:middle line:-1
+在交互通知界面中
+
+00:09:35.509 --> 00:09:37.744 align:middle line:-1
+更改操作按钮
+
+00:09:40.781 --> 00:09:43.483 align:middle line:-1
+因此 通知和通知创建方法
+
+00:09:43.550 --> 00:09:45.819 align:middle line:-1
+发生了很大的改变
+
+00:09:46.753 --> 00:09:49.890 align:middle line:-1
+接下来我还要讲两件事情
+
+00:09:52.392 --> 00:09:55.062 align:middle line:-1
+关键报警是一种新类型的通知
+
+00:09:55.128 --> 00:09:58.065 align:middle line:-1
+会触发振动和提示音
+
+00:09:58.131 --> 00:10:01.134 align:middle line:-1
+即使你的手表处于静音免打扰模式
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:01.506 --> 00:20:02.696 A:middle
+The first thing I'm going to do
+
+00:20:02.916 --> 00:20:04.566 A:middle
+is extend my LevelTile class to
+
+00:20:04.566 --> 00:20:06.046 A:middle
+implement the UIFocusItem.
+
+00:20:06.316 --> 00:20:07.826 A:middle
+This is what will allow it to
+
+00:20:07.826 --> 00:20:08.536 A:middle
+become focused.
+
+00:20:09.726 --> 00:20:10.866 A:middle
+There's a few methods here.
+
+00:20:10.866 --> 00:20:11.956 A:middle
+I'm just going to direct your
+
+00:20:11.956 --> 00:20:13.126 A:middle
+attention to a few at the top.
+
+00:20:14.226 --> 00:20:15.556 A:middle
+It canBecomeFocused, I'm going
+
+00:20:15.556 --> 00:20:16.396 A:middle
+to enter in "true."
+
+00:20:16.786 --> 00:20:17.616 A:middle
+That's straightforward.
+
+00:20:18.616 --> 00:20:20.116 A:middle
+For parentFocusEnvironment, I'm
+
+00:20:20.216 --> 00:20:21.536 A:middle
+going to return the MetalView
+
+00:20:21.536 --> 00:20:22.576 A:middle
+that renders these items.
+
+00:20:23.536 --> 00:20:25.156 A:middle
+Finally in didUpdateFocus in
+
+00:20:25.206 --> 00:20:26.676 A:middle
+context, I'm going to set the
+
+00:20:26.676 --> 00:20:28.516 A:middle
+tile to draw itself in an active
+
+00:20:28.516 --> 00:20:30.286 A:middle
+state when it becomes focused.
+
+00:20:31.686 --> 00:20:33.356 A:middle
+Next, I need to tell the focus
+
+00:20:33.356 --> 00:20:34.666 A:middle
+engine about these new items.
+
+00:20:35.466 --> 00:20:37.076 A:middle
+To do that, I'm going to extend
+
+00:20:37.076 --> 00:20:39.176 A:middle
+that MetalView that renders
+
+00:20:39.176 --> 00:20:39.356 A:middle
+them.
+
+00:20:40.496 --> 00:20:41.636 A:middle
+The view is already in the view
+
+00:20:41.636 --> 00:20:43.026 A:middle
+hierarchy, and the focus engine
+
+00:20:43.026 --> 00:20:43.956 A:middle
+already knows about it.
+
+00:20:44.016 --> 00:20:45.216 A:middle
+So, it's a great place to hook
+
+00:20:45.216 --> 00:20:45.496 A:middle
+in.
+
+00:20:46.436 --> 00:20:47.906 A:middle
+And, because this is a UIView,
+
+00:20:48.186 --> 00:20:49.196 A:middle
+it already conforms to
+
+00:20:49.196 --> 00:20:50.526 A:middle
+UIFocusItemContainer.
+
+00:20:50.906 --> 00:20:52.686 A:middle
+And, it provides itself as a
+
+00:20:52.686 --> 00:20:53.526 A:middle
+coordinatespace.
+
+00:20:54.406 --> 00:20:55.776 A:middle
+The only thing I have to do is
+
+00:20:55.776 --> 00:20:58.296 A:middle
+override FocusItem in rect to
+
+00:20:58.296 --> 00:21:00.066 A:middle
+return my level tiles, which of
+

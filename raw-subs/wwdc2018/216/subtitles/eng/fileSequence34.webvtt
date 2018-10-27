@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.546 --> 00:34:00.376 A:middle
+As you may know, your apps on
+
+00:34:00.506 --> 00:34:01.966 A:middle
+iOS are Sandbox.
+
+00:34:02.816 --> 00:34:04.666 A:middle
+The App Sandbox is a security
+
+00:34:04.666 --> 00:34:07.286 A:middle
+feature, whereas every app has
+
+00:34:07.356 --> 00:34:09.426 A:middle
+unrestricted access to documents
+
+00:34:09.426 --> 00:34:12.126 A:middle
+in its own app container, and by
+
+00:34:12.126 --> 00:34:14.896 A:middle
+default, access is restricted to
+
+00:34:14.896 --> 00:34:16.775 A:middle
+documents in other containers,
+
+00:34:17.085 --> 00:34:18.735 A:middle
+namely in other app containers
+
+00:34:18.735 --> 00:34:20.196 A:middle
+and in cloud service containers.
+
+00:34:21.466 --> 00:34:23.636 A:middle
+So, this is a security feature
+
+00:34:23.906 --> 00:34:25.585 A:middle
+that guarantees that other apps
+
+00:34:25.585 --> 00:34:27.426 A:middle
+and processes don't just go
+
+00:34:27.426 --> 00:34:29.036 A:middle
+snooping around in your app
+
+00:34:29.036 --> 00:34:30.366 A:middle
+container, accessing your
+
+00:34:30.366 --> 00:34:31.016 A:middle
+documents.
+
+00:34:31.356 --> 00:34:33.166 A:middle
+And, always make sure that if
+
+00:34:33.166 --> 00:34:35.076 A:middle
+they do access them, access
+
+00:34:35.076 --> 00:34:37.815 A:middle
+these documents, that is done
+
+00:34:37.906 --> 00:34:39.126 A:middle
+with user consent.
+
+00:34:40.636 --> 00:34:43.916 A:middle
+So, since access to documents in
+
+00:34:43.916 --> 00:34:45.656 A:middle
+other containers is restricted,
+
+00:34:46.106 --> 00:34:48.065 A:middle
+how can your app gain access to
+
+00:34:48.065 --> 00:34:49.466 A:middle
+these documents that your
+
+00:34:49.466 --> 00:34:50.485 A:middle
+customer has picked?
+
+00:34:51.585 --> 00:34:53.666 A:middle
+What we have to do, is to extend
+
+00:34:53.666 --> 00:34:55.476 A:middle
+our App Sandbox to include these
+
+00:34:55.476 --> 00:34:56.065 A:middle
+documents.
+
+00:34:56.775 --> 00:34:59.246 A:middle
+Here's again the URL returned by
+
+00:34:59.246 --> 00:35:00.266 A:middle
+the Browser or the Picker.
+

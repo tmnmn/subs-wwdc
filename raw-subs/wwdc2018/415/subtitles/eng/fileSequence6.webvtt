@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.856 --> 00:06:00.936 A:middle
+discovered dependencies.
+
+00:06:01.526 --> 00:06:02.886 A:middle
+Now since you can never have too
+
+00:06:02.886 --> 00:06:04.686 A:middle
+much dependency information, the
+
+00:06:04.686 --> 00:06:06.026 A:middle
+build system might actually
+
+00:06:06.126 --> 00:06:07.546 A:middle
+discover more information during
+
+00:06:07.546 --> 00:06:08.936 A:middle
+the task execution process.
+
+00:06:09.726 --> 00:06:11.466 A:middle
+For example, when Clang compiles
+
+00:06:11.466 --> 00:06:13.496 A:middle
+an Objective-C file, it produces
+
+00:06:13.496 --> 00:06:15.066 A:middle
+and object file as you'd expect.
+
+00:06:15.616 --> 00:06:17.056 A:middle
+But it can also produce another
+
+00:06:17.056 --> 00:06:19.936 A:middle
+file that contains a listing of
+
+00:06:19.936 --> 00:06:21.186 A:middle
+which header files were included
+
+00:06:21.186 --> 00:06:22.086 A:middle
+by that source file.
+
+00:06:22.776 --> 00:06:24.446 A:middle
+Then the next time you build,
+
+00:06:24.736 --> 00:06:25.696 A:middle
+the build system uses the
+
+00:06:25.696 --> 00:06:27.226 A:middle
+information from this file to
+
+00:06:27.226 --> 00:06:28.426 A:middle
+make sure that it recompiles the
+
+00:06:28.426 --> 00:06:30.396 A:middle
+source file if you change any of
+
+00:06:30.396 --> 00:06:31.706 A:middle
+the header files that it
+
+00:06:31.706 --> 00:06:32.146 A:middle
+includes.
+
+00:06:32.146 --> 00:06:33.676 A:middle
+And you can see the dependency
+
+00:06:33.676 --> 00:06:35.746 A:middle
+path through PetController.h,
+
+00:06:35.746 --> 00:06:37.916 A:middle
+PetController.d, .n, all the way
+
+00:06:37.916 --> 00:06:38.786 A:middle
+to the .o file.
+
+00:06:40.376 --> 00:06:42.236 A:middle
+Now we've been talking a lot
+
+00:06:42.236 --> 00:06:44.326 A:middle
+about how the build system's
+
+00:06:44.326 --> 00:06:47.036 A:middle
+main job is to execute tasks.
+
+00:06:47.966 --> 00:06:49.086 A:middle
+And of course the bigger your
+
+00:06:49.086 --> 00:06:50.646 A:middle
+project, the longer the build
+
+00:06:50.646 --> 00:06:51.586 A:middle
+process will take.
+
+00:06:51.586 --> 00:06:53.286 A:middle
+So you don't want to run all of
+
+00:06:53.286 --> 00:06:54.886 A:middle
+these tasks every single time
+
+00:06:54.926 --> 00:06:55.366 A:middle
+you build.
+
+00:06:56.116 --> 00:06:57.666 A:middle
+Instead, the build system might
+
+00:06:57.666 --> 00:06:59.796 A:middle
+only execute a subset of the
+
+00:06:59.796 --> 00:07:02.606 A:middle
+tasks on the graph.
+

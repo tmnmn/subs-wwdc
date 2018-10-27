@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.196 --> 00:16:02.926 A:middle
+The forward drop-out node drops,
+
+00:16:02.996 --> 00:16:04.636 A:middle
+or it zeroes out, values in its
+
+00:16:04.636 --> 00:16:05.676 A:middle
+input, with a certain
+
+00:16:05.676 --> 00:16:06.366 A:middle
+probability.
+
+00:16:06.996 --> 00:16:08.736 A:middle
+And then, the dropout state
+
+00:16:08.736 --> 00:16:10.826 A:middle
+object captures information
+
+00:16:10.826 --> 00:16:11.926 A:middle
+about the forward drop-out
+
+00:16:11.926 --> 00:16:14.486 A:middle
+operation, so it can later be
+
+00:16:14.486 --> 00:16:16.186 A:middle
+used by the drop-out gradient
+
+00:16:16.186 --> 00:16:18.576 A:middle
+node because it used to zero out
+
+00:16:19.886 --> 00:16:22.376 A:middle
+values in its input gradient at
+
+00:16:22.376 --> 00:16:24.156 A:middle
+the exact same locations as was
+
+00:16:24.156 --> 00:16:25.316 A:middle
+zeroed out by the forward
+
+00:16:25.316 --> 00:16:25.756 A:middle
+operation.
+
+00:16:26.176 --> 00:16:30.056 A:middle
+So, as I said, you don't
+
+00:16:30.056 --> 00:16:31.126 A:middle
+generally need to worry about
+
+00:16:31.126 --> 00:16:32.216 A:middle
+states, because the graph
+
+00:16:32.216 --> 00:16:32.946 A:middle
+manages them.
+
+00:16:33.416 --> 00:16:35.396 A:middle
+But because the labels for loss
+
+00:16:35.396 --> 00:16:37.346 A:middle
+computation are passed as states
+
+00:16:37.346 --> 00:16:39.786 A:middle
+to the graph, and because they
+
+00:16:39.786 --> 00:16:40.756 A:middle
+require user input.
+
+00:16:40.756 --> 00:16:42.396 A:middle
+So, that's your ground truth or
+
+00:16:42.396 --> 00:16:43.516 A:middle
+correct results.
+
+00:16:44.016 --> 00:16:45.536 A:middle
+You need to create a batch of
+
+00:16:45.536 --> 00:16:47.436 A:middle
+labels for loss computation and
+
+00:16:47.436 --> 00:16:49.036 A:middle
+pass this batch as input to the
+
+00:16:49.776 --> 00:16:50.026 A:middle
+graph.
+
+00:16:50.186 --> 00:16:51.436 A:middle
+So, this is an example of how
+
+00:16:51.436 --> 00:16:53.106 A:middle
+you would create a single label
+
+00:16:53.506 --> 00:16:54.926 A:middle
+for loss computation.
+
+00:16:55.276 --> 00:16:56.676 A:middle
+You first need to create a loss
+
+00:16:56.746 --> 00:16:58.856 A:middle
+data descriptor which describes
+
+00:16:58.856 --> 00:17:00.326 A:middle
+how the label's data is laid out
+

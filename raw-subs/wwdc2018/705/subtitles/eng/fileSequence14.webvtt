@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.146 --> 00:14:01.116 A:middle
+You use a technique for this
+
+00:14:01.116 --> 00:14:02.556 A:middle
+called status polling, this
+
+00:14:02.556 --> 00:14:03.886 A:middle
+allows you to discover these
+
+00:14:03.886 --> 00:14:05.306 A:middle
+transactions directly from your
+
+00:14:05.306 --> 00:14:05.616 A:middle
+server.
+
+00:14:06.496 --> 00:14:07.566 A:middle
+In order to get set up to be
+
+00:14:07.566 --> 00:14:09.116 A:middle
+able to status poll from your
+
+00:14:09.226 --> 00:14:11.316 A:middle
+server you just save a latest
+
+00:14:11.316 --> 00:14:12.796 A:middle
+version of that encoded receipt
+
+00:14:12.796 --> 00:14:14.796 A:middle
+data that you send up associated
+
+00:14:14.796 --> 00:14:15.386 A:middle
+with each user.
+
+00:14:16.196 --> 00:14:17.196 A:middle
+And what you can do is you can
+
+00:14:17.256 --> 00:14:19.166 A:middle
+treat that encoded data just
+
+00:14:19.166 --> 00:14:19.786 A:middle
+like a token.
+
+00:14:20.636 --> 00:14:21.666 A:middle
+The reason why it can treat it
+
+00:14:21.666 --> 00:14:22.886 A:middle
+like a token is every time you
+
+00:14:22.886 --> 00:14:25.216 A:middle
+send up that encoded receipt
+
+00:14:25.216 --> 00:14:26.386 A:middle
+data to the verify receipt
+
+00:14:26.386 --> 00:14:28.046 A:middle
+endpoint the verify receipt
+
+00:14:28.046 --> 00:14:29.536 A:middle
+endpoint doesn't just respond
+
+00:14:29.536 --> 00:14:31.256 A:middle
+with a decoded version of that
+
+00:14:31.736 --> 00:14:32.986 A:middle
+receipt data, it also includes
+
+00:14:32.986 --> 00:14:34.506 A:middle
+any new transactions that have
+
+00:14:34.506 --> 00:14:36.166 A:middle
+occurred for this particular
+
+00:14:36.166 --> 00:14:37.166 A:middle
+user's subscription.
+
+00:14:37.696 --> 00:14:38.816 A:middle
+It's located in a field called
+
+00:14:38.816 --> 00:14:40.916 A:middle
+the latest receipt info field in
+
+00:14:40.916 --> 00:14:42.106 A:middle
+that JSON response.
+
+00:14:42.806 --> 00:14:44.036 A:middle
+And you can use that info to
+
+00:14:44.036 --> 00:14:45.406 A:middle
+unlock those new subscription
+
+00:14:45.406 --> 00:14:46.956 A:middle
+periods for this particular user
+
+00:14:46.956 --> 00:14:48.436 A:middle
+without the app having to launch
+
+00:14:48.436 --> 00:14:48.776 A:middle
+at all.
+
+00:14:50.046 --> 00:14:50.916 A:middle
+Let's see how this works.
+
+00:14:50.916 --> 00:14:52.156 A:middle
+So when you're verifying
+
+00:14:52.156 --> 00:14:53.436 A:middle
+transactions just like we saw
+
+00:14:53.436 --> 00:14:54.796 A:middle
+before you're sending up that
+
+00:14:54.796 --> 00:14:55.396 A:middle
+receipt data.
+
+00:14:56.676 --> 00:14:57.976 A:middle
+Now once you've determined that
+
+00:14:57.976 --> 00:14:59.966 A:middle
+this transaction in question has
+
+00:14:59.966 --> 00:15:01.456 A:middle
+passed those same checks that
+

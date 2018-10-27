@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.856 --> 00:07:00.456 A:middle
+the request.
+
+00:07:01.446 --> 00:07:02.616 A:middle
+The user may change their mind
+
+00:07:02.616 --> 00:07:03.986 A:middle
+about signing into the service,
+
+00:07:03.986 --> 00:07:05.136 A:middle
+or realize they don't have a
+
+00:07:05.136 --> 00:07:06.746 A:middle
+credential saved, so you should
+
+00:07:06.746 --> 00:07:08.096 A:middle
+support letting the user dismiss
+
+00:07:08.096 --> 00:07:09.466 A:middle
+your extension without selecting
+
+00:07:09.466 --> 00:07:09.956 A:middle
+a credential.
+
+00:07:12.856 --> 00:07:14.746 A:middle
+Also, your credential list UI
+
+00:07:14.746 --> 00:07:16.006 A:middle
+should make it possible to see
+
+00:07:16.006 --> 00:07:17.646 A:middle
+all credentials, whether or not
+
+00:07:17.676 --> 00:07:18.536 A:middle
+they match the service
+
+00:07:18.536 --> 00:07:19.216 A:middle
+identifiers.
+
+00:07:19.896 --> 00:07:21.486 A:middle
+In some cases, the user may need
+
+00:07:21.486 --> 00:07:22.526 A:middle
+to choose a credential from a
+
+00:07:22.526 --> 00:07:23.246 A:middle
+different domain.
+
+00:07:24.226 --> 00:07:25.516 A:middle
+Allowing the user to access
+
+00:07:25.516 --> 00:07:26.776 A:middle
+their entire set of credentials
+
+00:07:26.776 --> 00:07:28.256 A:middle
+from the list, ensures your
+
+00:07:28.256 --> 00:07:29.696 A:middle
+extension is always useful.
+
+00:07:31.916 --> 00:07:33.576 A:middle
+And user authentication is
+
+00:07:33.576 --> 00:07:35.096 A:middle
+completely up to your extension.
+
+00:07:35.406 --> 00:07:36.796 A:middle
+If you need to authenticate the
+
+00:07:36.796 --> 00:07:38.236 A:middle
+user, you should do so when the
+
+00:07:38.236 --> 00:07:39.426 A:middle
+credential list is presented.
+
+00:07:39.856 --> 00:07:43.396 A:middle
+And that is how you can
+
+00:07:43.396 --> 00:07:44.596 A:middle
+implement a credential list in
+
+00:07:44.596 --> 00:07:45.936 A:middle
+your extension so your app's
+
+00:07:45.936 --> 00:07:47.576 A:middle
+credentials are available to use
+
+00:07:47.576 --> 00:07:48.466 A:middle
+when signing in anywhere.
+
+00:07:49.076 --> 00:07:51.566 A:middle
+Now we will make this even more
+
+00:07:51.566 --> 00:07:53.206 A:middle
+convenient by allowing AutoFill
+
+00:07:53.206 --> 00:07:54.396 A:middle
+to surface these credentials
+
+00:07:54.486 --> 00:07:55.566 A:middle
+directly on the QuickType bar.
+
+00:07:56.116 --> 00:07:58.346 A:middle
+I'll start with an overview of
+
+00:07:58.346 --> 00:07:59.516 A:middle
+how this process works,
+
+00:07:59.776 --> 00:08:01.116 A:middle
+describing the roles played by
+

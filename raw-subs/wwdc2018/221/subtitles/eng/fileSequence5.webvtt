@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.296 --> 00:05:00.236 A:middle
+NSAttributedString.
+
+00:05:01.146 --> 00:05:02.366 A:middle
+And many of you may be using
+
+00:05:02.366 --> 00:05:03.696 A:middle
+this for the performance benefit
+
+00:05:03.846 --> 00:05:05.236 A:middle
+to avoid the overhead of view
+
+00:05:05.236 --> 00:05:06.276 A:middle
+objects at the kit level.
+
+00:05:07.606 --> 00:05:08.446 A:middle
+And so if you're going to go
+
+00:05:08.446 --> 00:05:09.836 A:middle
+this route, please keep the
+
+00:05:09.836 --> 00:05:10.826 A:middle
+following tips in mind.
+
+00:05:11.696 --> 00:05:12.686 A:middle
+You want to use it for small
+
+00:05:12.686 --> 00:05:13.676 A:middle
+amounts of static text.
+
+00:05:14.166 --> 00:05:14.926 A:middle
+And you want to limit how
+
+00:05:14.926 --> 00:05:16.066 A:middle
+frequently you call the draw
+
+00:05:16.066 --> 00:05:16.396 A:middle
+methods.
+
+00:05:17.236 --> 00:05:18.186 A:middle
+Now if you're calling the string
+
+00:05:18.186 --> 00:05:20.296 A:middle
+drawing methods a lot, you might
+
+00:05:20.296 --> 00:05:21.626 A:middle
+actually get better performance
+
+00:05:21.896 --> 00:05:23.706 A:middle
+out of a label or a text field
+
+00:05:23.846 --> 00:05:25.006 A:middle
+because these controls provide
+
+00:05:25.006 --> 00:05:26.516 A:middle
+better caching, especially if
+
+00:05:26.516 --> 00:05:27.306 A:middle
+you're using auto layout.
+
+00:05:27.306 --> 00:05:29.216 A:middle
+And if you're drawing an
+
+00:05:29.216 --> 00:05:31.056 A:middle
+attributed string with a lot of
+
+00:05:31.056 --> 00:05:33.176 A:middle
+custom attributes, this could
+
+00:05:33.176 --> 00:05:34.366 A:middle
+also be slowing down your string
+
+00:05:34.366 --> 00:05:35.756 A:middle
+drawing because the text system
+
+00:05:35.756 --> 00:05:36.936 A:middle
+needs to validate all of the
+
+00:05:36.936 --> 00:05:38.966 A:middle
+attributes before rendering and
+
+00:05:38.966 --> 00:05:40.386 A:middle
+so for best performance, you
+
+00:05:40.386 --> 00:05:41.326 A:middle
+should strip out extra
+
+00:05:41.326 --> 00:05:42.906 A:middle
+attributes before drawing and
+
+00:05:42.906 --> 00:05:44.776 A:middle
+only pass in the ones that are
+
+00:05:44.776 --> 00:05:46.706 A:middle
+needed to determine the visual
+
+00:05:46.706 --> 00:05:48.236 A:middle
+appearance like font or like
+
+00:05:48.236 --> 00:05:48.506 A:middle
+color.
+
+00:05:49.076 --> 00:05:51.996 A:middle
+And finally, remember that by
+
+00:05:51.996 --> 00:05:53.146 A:middle
+using string drawing, you'll
+
+00:05:53.146 --> 00:05:54.546 A:middle
+miss out on all of this free
+
+00:05:54.546 --> 00:05:55.746 A:middle
+functionality that's offered by
+
+00:05:55.746 --> 00:05:57.286 A:middle
+the text controls, so you should
+
+00:05:57.286 --> 00:05:58.746 A:middle
+use the text controls whenever
+
+00:05:58.746 --> 00:05:59.166 A:middle
+possible.
+
+00:05:59.726 --> 00:06:02.706 A:middle
+So now you know what you can do
+

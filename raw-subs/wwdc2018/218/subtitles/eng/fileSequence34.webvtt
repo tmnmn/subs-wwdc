@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.646 --> 00:34:00.066 A:middle
+vibrant blend mode or
+
+00:34:00.066 --> 00:34:01.006 A:middle
+non-vibrant blend mode is
+
+00:34:01.006 --> 00:34:02.176 A:middle
+appropriate for the drawing that
+
+00:34:02.176 --> 00:34:02.646 A:middle
+you're doing.
+
+00:34:03.536 --> 00:34:04.256 A:middle
+That's vibrancy.
+
+00:34:05.366 --> 00:34:06.316 A:middle
+Next, I want to talk a little
+
+00:34:06.316 --> 00:34:07.566 A:middle
+bit about background styles,
+
+00:34:07.846 --> 00:34:09.085 A:middle
+specifically the ones that we
+
+00:34:09.085 --> 00:34:10.766 A:middle
+use for selections.
+
+00:34:11.886 --> 00:34:12.726 A:middle
+So, here we have a pretty
+
+00:34:12.726 --> 00:34:14.706 A:middle
+typical situation in a aqua
+
+00:34:14.706 --> 00:34:15.606 A:middle
+Cocoa application.
+
+00:34:16.556 --> 00:34:18.386 A:middle
+In this case, it's a message
+
+00:34:18.386 --> 00:34:20.775 A:middle
+from the Mail application and we
+
+00:34:20.775 --> 00:34:22.126 A:middle
+can see that when we have a
+
+00:34:22.126 --> 00:34:23.775 A:middle
+selection state, we need our
+
+00:34:23.775 --> 00:34:25.646 A:middle
+content inside of this table row
+
+00:34:26.036 --> 00:34:28.775 A:middle
+to invert to look good against
+
+00:34:28.775 --> 00:34:29.656 A:middle
+that blue selection.
+
+00:34:30.206 --> 00:34:32.786 A:middle
+But when we add darkAqua into
+
+00:34:32.786 --> 00:34:36.025 A:middle
+the mix, we can see that we
+
+00:34:36.025 --> 00:34:37.366 A:middle
+can't just naively invert our
+
+00:34:37.366 --> 00:34:38.235 A:middle
+content anymore.
+
+00:34:38.396 --> 00:34:39.226 A:middle
+That's not going to work
+
+00:34:39.226 --> 00:34:39.815 A:middle
+uniformly.
+
+00:34:40.216 --> 00:34:41.416 A:middle
+And so we need to describe these
+
+00:34:41.416 --> 00:34:42.556 A:middle
+states semantically.
+
+00:34:43.206 --> 00:34:45.286 A:middle
+Now, if you're familiar with
+
+00:34:45.286 --> 00:34:48.216 A:middle
+Cocoa, you've probably seen the
+
+00:34:48.216 --> 00:34:50.496 A:middle
+NSView.BackgroundStyle enum and
+
+00:34:50.496 --> 00:34:51.726 A:middle
+that includes a couple of cases,
+
+00:34:51.726 --> 00:34:54.036 A:middle
+including light and dark, and
+
+00:34:54.036 --> 00:34:54.996 A:middle
+NSTableView sets this
+
+00:34:54.996 --> 00:34:56.226 A:middle
+automatically on the
+
+00:34:56.226 --> 00:34:58.816 A:middle
+TableRowView, TableCellView, and
+
+00:34:58.816 --> 00:35:00.176 A:middle
+also all of the controls that
+

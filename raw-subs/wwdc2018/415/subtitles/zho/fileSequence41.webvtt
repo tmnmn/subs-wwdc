@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.893 --> 00:41:04.998 align:middle line:0
+我用了PWL前缀
+防止冲突
+
+00:41:05.632 --> 00:41:11.271 align:middle line:0
+这样就能在Objective-C中
+引用这个类PWLPetCollar
+
+00:41:14.107 --> 00:41:15.909 align:middle line:-1
+编译器用类似的方法
+
+00:41:15.976 --> 00:41:19.413 align:middle line:-1
+生成其他Swift目标的接口
+
+00:41:21.248 --> 00:41:22.082 align:middle line:-1
+为此
+
+00:41:22.416 --> 00:41:25.285 align:middle line:-2
+Swift基于Clang的
+模块概念进行构建
+
+00:41:25.352 --> 00:41:26.720 align:middle line:-1
+就像Jurgen说的
+
+00:41:27.321 --> 00:41:29.489 align:middle line:-1
+然后更深层的融入语言
+
+00:41:30.624 --> 00:41:31.458 align:middle line:-1
+Swift里
+
+00:41:31.525 --> 00:41:34.561 align:middle line:-1
+模块是可分布的声明单元
+
+00:41:34.828 --> 00:41:39.299 align:middle line:-2
+为了使用这些声明
+就要导入模块
+
+00:41:40.334 --> 00:41:42.703 align:middle line:-2
+你可以导入
+Objective-C模块
+
+00:41:42.936 --> 00:41:44.571 align:middle line:-1
+比如XEtest
+
+00:41:45.305 --> 00:41:46.440 align:middle line:-1
+Xcode里
+
+00:41:46.507 --> 00:41:49.610 align:middle line:-2
+每个Swift目标
+生成单独的模块
+
+00:41:50.043 --> 00:41:51.378 align:middle line:-1
+包括目标app
+
+00:41:52.479 --> 00:41:55.115 align:middle line:-2
+所以要导入
+app的主模块
+
+00:41:55.182 --> 00:41:57.551 align:middle line:-1
+以便进行单元测试
+

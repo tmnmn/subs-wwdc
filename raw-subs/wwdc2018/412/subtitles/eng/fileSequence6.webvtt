@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.126 --> 00:06:00.816 A:middle
+did reach selected height, so
+
+00:06:00.816 --> 00:06:02.306 A:middle
+I'd like to have a look at the
+
+00:06:02.306 --> 00:06:03.206 A:middle
+value of this property.
+
+00:06:03.596 --> 00:06:04.916 A:middle
+So switching to the debug
+
+00:06:04.916 --> 00:06:07.436 A:middle
+console, I can use po to look at
+
+00:06:07.436 --> 00:06:09.326 A:middle
+the value of that property and
+
+00:06:09.396 --> 00:06:13.746 A:middle
+it's currently set to true.
+
+00:06:13.746 --> 00:06:15.176 A:middle
+So the [inaudible] always sets
+
+00:06:15.226 --> 00:06:16.386 A:middle
+this to true, and I'd like to
+
+00:06:16.386 --> 00:06:17.336 A:middle
+change it to false so we can
+
+00:06:17.336 --> 00:06:18.146 A:middle
+reproduce the bug.
+
+00:06:18.146 --> 00:06:20.126 A:middle
+Now I could go to the code and
+
+00:06:20.126 --> 00:06:21.896 A:middle
+modify it, tap just to recognize
+
+00:06:21.896 --> 00:06:23.316 A:middle
+it to set it to false, but I
+
+00:06:23.316 --> 00:06:24.876 A:middle
+don't like to make changes to my
+
+00:06:24.876 --> 00:06:26.626 A:middle
+code just for debugging purposes
+
+00:06:26.736 --> 00:06:27.596 A:middle
+if I can avoid it.
+
+00:06:28.096 --> 00:06:29.846 A:middle
+So in this case, what I can do
+
+00:06:29.846 --> 00:06:31.126 A:middle
+is use the debugger to do it for
+
+00:06:31.126 --> 00:06:31.306 A:middle
+me.
+
+00:06:31.716 --> 00:06:32.666 A:middle
+I can use the expression
+
+00:06:32.666 --> 00:06:33.076 A:middle
+command.
+
+00:06:33.436 --> 00:06:35.756 A:middle
+And here I can give it any Swift
+
+00:06:35.756 --> 00:06:38.066 A:middle
+expression, such as did reach
+
+00:06:38.066 --> 00:06:39.476 A:middle
+selected height equals false,
+
+00:06:39.926 --> 00:06:41.826 A:middle
+and it will evaluate that and
+
+00:06:41.826 --> 00:06:42.386 A:middle
+execute it.
+
+00:06:42.516 --> 00:06:43.906 A:middle
+So now, we can see that this
+
+00:06:44.036 --> 00:06:45.496 A:middle
+property has indeed changed to
+
+00:06:45.496 --> 00:06:45.926 A:middle
+false.
+
+00:06:46.486 --> 00:06:48.096 A:middle
+And if I step over the line
+
+00:06:48.096 --> 00:06:49.286 A:middle
+using the debugger, we can see
+
+00:06:49.386 --> 00:06:50.286 A:middle
+that we've entered the false
+
+00:06:50.286 --> 00:06:51.116 A:middle
+side of the branch.
+
+00:06:51.686 --> 00:06:52.946 A:middle
+So now, when we continue, we can
+
+00:06:52.946 --> 00:06:54.496 A:middle
+see that the astronaut doesn't
+
+00:06:54.496 --> 00:06:55.396 A:middle
+quite reach the height of the
+
+00:06:55.396 --> 00:06:56.736 A:middle
+bar and falls down.
+
+00:06:57.256 --> 00:06:58.136 A:middle
+So that's the case we're trying
+
+00:06:58.136 --> 00:06:58.796 A:middle
+to reproduce.
+
+00:06:59.236 --> 00:07:00.626 A:middle
+I'd like this to happen every
+

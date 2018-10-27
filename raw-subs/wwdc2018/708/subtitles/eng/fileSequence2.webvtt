@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.816 --> 00:02:00.816 A:middle
+than those implementation
+
+00:02:00.816 --> 00:02:01.216 A:middle
+details.
+
+00:02:04.806 --> 00:02:06.556 A:middle
+Adding a Core ML model to your
+
+00:02:06.926 --> 00:02:08.106 A:middle
+app is simple as adding that
+
+00:02:08.196 --> 00:02:09.666 A:middle
+file to your Xcode project.
+
+00:02:11.226 --> 00:02:12.456 A:middle
+Xcode will give you a simple
+
+00:02:12.456 --> 00:02:15.206 A:middle
+view, describe what it does in
+
+00:02:15.236 --> 00:02:17.106 A:middle
+terms of the inputs it requires
+
+00:02:17.416 --> 00:02:18.616 A:middle
+and the outputs it provides.
+
+00:02:20.136 --> 00:02:21.476 A:middle
+Xcode will take this one step
+
+00:02:21.476 --> 00:02:22.576 A:middle
+further and generate an
+
+00:02:22.576 --> 00:02:25.186 A:middle
+interface for you, so that
+
+00:02:25.186 --> 00:02:26.336 A:middle
+interacting with this model is
+
+00:02:26.336 --> 00:02:29.206 A:middle
+just a few lines of code, one to
+
+00:02:29.206 --> 00:02:31.916 A:middle
+load the model, one to make a
+
+00:02:31.916 --> 00:02:34.526 A:middle
+prediction, and sometimes one to
+
+00:02:34.526 --> 00:02:35.876 A:middle
+pull out the specific output you
+
+00:02:35.876 --> 00:02:36.516 A:middle
+are interested in.
+
+00:02:38.146 --> 00:02:39.206 A:middle
+Note that in some cases you
+
+00:02:39.206 --> 00:02:40.116 A:middle
+don't even have to write back
+
+00:02:40.146 --> 00:02:41.806 A:middle
+code because Core ML integrates
+
+00:02:41.806 --> 00:02:43.296 A:middle
+with some of our higher-level
+
+00:02:43.296 --> 00:02:44.966 A:middle
+APIs and allows you to customize
+
+00:02:44.966 --> 00:02:46.416 A:middle
+their behavior if you give them
+
+00:02:46.416 --> 00:02:47.286 A:middle
+a Core ML model.
+
+00:02:47.736 --> 00:02:49.576 A:middle
+So with Vision, this is done
+
+00:02:49.576 --> 00:02:51.106 A:middle
+through the VNCoreML Request
+
+00:02:51.106 --> 00:02:51.496 A:middle
+object.
+
+00:02:51.946 --> 00:02:53.106 A:middle
+And in the new Natural Language
+
+00:02:53.106 --> 00:02:54.586 A:middle
+framework, you can instantiate
+
+00:02:54.686 --> 00:02:56.536 A:middle
+an MLModel from a CoreML model.
+
+00:02:57.246 --> 00:03:00.786 A:middle
+So that's Core ML in a nutshell.
+

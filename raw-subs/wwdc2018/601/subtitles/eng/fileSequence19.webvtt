@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.806 --> 00:19:02.066 A:middle
+now ReplayKit will provide raw
+
+00:19:02.066 --> 00:19:04.346 A:middle
+audio and video samples and your
+
+00:19:04.346 --> 00:19:06.046 A:middle
+extension needs to encode it and
+
+00:19:06.046 --> 00:19:08.146 A:middle
+upload it to your video service
+
+00:19:08.396 --> 00:19:09.966 A:middle
+using whatever technology you
+
+00:19:09.966 --> 00:19:10.736 A:middle
+prefer to use.
+
+00:19:11.096 --> 00:19:13.686 A:middle
+ReplayKit provides your
+
+00:19:13.686 --> 00:19:15.406 A:middle
+extension three types of the
+
+00:19:15.406 --> 00:19:19.456 A:middle
+samples; samples with video
+
+00:19:19.456 --> 00:19:20.576 A:middle
+captured from the screen,
+
+00:19:21.236 --> 00:19:22.596 A:middle
+samples with audio tapped from
+
+00:19:22.596 --> 00:19:25.586 A:middle
+the application and samples with
+
+00:19:25.586 --> 00:19:27.236 A:middle
+audio captured from the
+
+00:19:27.236 --> 00:19:29.226 A:middle
+microphone, and your extension
+
+00:19:29.376 --> 00:19:31.076 A:middle
+will encode all of this and
+
+00:19:31.126 --> 00:19:33.206 A:middle
+upload to the service.
+
+00:19:35.236 --> 00:19:37.016 A:middle
+And all of those are going to
+
+00:19:37.016 --> 00:19:38.976 A:middle
+the extension and are handled by
+
+00:19:38.976 --> 00:19:39.786 A:middle
+the function called
+
+00:19:40.576 --> 00:19:42.336 A:middle
+processSampleBuffer.
+
+00:19:42.986 --> 00:19:45.546 A:middle
+This function receives a single
+
+00:19:45.616 --> 00:19:47.716 A:middle
+CMSampleBuffer, as you see, and
+
+00:19:47.716 --> 00:19:48.646 A:middle
+the type of the buffer.
+
+00:19:49.696 --> 00:19:51.286 A:middle
+And what it needs to do is to
+
+00:19:51.286 --> 00:19:52.576 A:middle
+encode and upload the media
+
+00:19:52.576 --> 00:19:54.556 A:middle
+samples, and in this code
+
+00:19:54.556 --> 00:19:56.096 A:middle
+example we show you how you can
+
+00:19:56.096 --> 00:19:58.026 A:middle
+encode the video using the Video
+
+00:19:58.026 --> 00:19:58.646 A:middle
+Toolbox.
+
+00:19:59.736 --> 00:20:02.066 A:middle
+So we recommend using the Video
+

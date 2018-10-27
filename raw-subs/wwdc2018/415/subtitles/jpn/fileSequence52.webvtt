@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:56.083 --> 00:52:00.954 align:start position:30% line:-2
+こうして 文字列が
+x0に読み込まれました
+
+00:52:01.722 --> 00:52:04.591 align:start position:21% line:-2
+これで
+playSoundを呼び出せます
+
+00:52:04.691 --> 00:52:10.597 align:start position:18% line:-2
+ただし その名前は
+  Z9playSoundPKcです
+
+00:52:11.265 --> 00:52:14.935 align:start position:30% line:-2
+これは マングリングで
+生成されたシンボルです
+
+00:52:15.035 --> 00:52:18.205 align:start position:23% line:-2
+Cat.mmの記述言語は
+Objective-C++です
+
+00:52:18.372 --> 00:52:21.642 align:start position:25% line:-2
+しかし playSoundは
+C++関数なのです
+
+00:52:22.042 --> 00:52:24.511 align:start position:34% line:-1
+判断できない場合―
+
+00:52:25.512 --> 00:52:28.615 align:start position:29% line:-2
+実際にターミナルで
+ツールを使ってみましょう
+
+00:52:28.716 --> 00:52:33.587 align:start position:20% line:-2
+swift-demangleの後に
+シンボルを付けて実行します
+
+00:52:33.687 --> 00:52:36.090 align:start position:29% line:-2
+Swiftのシンボルでは
+ありませんね
+
+00:52:36.490 --> 00:52:40.894 align:start position:21% line:-2
+では C++のデマングラ
+c++filtではどうでしょう？
+
+00:52:41.195 --> 00:52:43.831 align:start position:21% line:-2
+playSoundのシンボルだと
+分かるだけでなく―
+
+00:52:43.931 --> 00:52:47.501 align:start position:25% line:-2
+引数も分かりました
+const char *です
+
+00:52:47.601 --> 00:52:52.206 align:start position:27% line:-2
+C++はマングル名に情報も
+エンコードしているのです
+
+00:52:53.640 --> 00:52:58.011 align:start position:27% line:-2
+プロジェクトのビルド時には
+.oファイルが多数できます
+
+00:52:58.846 --> 00:53:01.215 align:start position:30% line:-1
+これを どうするのか？
+

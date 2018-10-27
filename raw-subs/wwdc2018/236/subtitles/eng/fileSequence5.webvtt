@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.166 --> 00:05:00.356 A:middle
+First you make your utterance
+
+00:05:00.356 --> 00:05:01.406 A:middle
+and then you set the voice
+
+00:05:01.406 --> 00:05:02.506 A:middle
+property using
+
+00:05:02.506 --> 00:05:03.886 A:middle
+AVSpeechSynthesisVoice.
+
+00:05:04.236 --> 00:05:07.286 A:middle
+As an example of using the
+
+00:05:07.286 --> 00:05:09.296 A:middle
+identifier initializer, you
+
+00:05:09.296 --> 00:05:10.896 A:middle
+could get all the speech voices
+
+00:05:11.536 --> 00:05:13.266 A:middle
+which is an array of speech
+
+00:05:13.266 --> 00:05:15.116 A:middle
+voice objects and then choose
+
+00:05:15.116 --> 00:05:16.546 A:middle
+the first one, for example, and
+
+00:05:16.546 --> 00:05:17.626 A:middle
+then pass in the identifier
+
+00:05:17.626 --> 00:05:18.126 A:middle
+property.
+
+00:05:19.996 --> 00:05:22.136 A:middle
+Here are some of the languages
+
+00:05:22.256 --> 00:05:24.166 A:middle
+that are supported on iOS by
+
+00:05:24.166 --> 00:05:24.476 A:middle
+default.
+
+00:05:29.266 --> 00:05:30.136 A:middle
+Now let's talk about some of the
+
+00:05:30.136 --> 00:05:31.096 A:middle
+properties that you can use on
+
+00:05:31.096 --> 00:05:32.116 A:middle
+AVSpeechSynthesizer.
+
+00:05:32.686 --> 00:05:34.096 A:middle
+Speech rate can be controlled
+
+00:05:34.526 --> 00:05:36.336 A:middle
+using the rate property, and it
+
+00:05:36.336 --> 00:05:37.406 A:middle
+goes from 0 to 1.
+
+00:05:38.226 --> 00:05:40.856 A:middle
+Now this will scale speech to go
+
+00:05:40.856 --> 00:05:42.496 A:middle
+slower or faster.
+
+00:05:43.166 --> 00:05:44.626 A:middle
+Speech will be scaled from about
+
+00:05:44.626 --> 00:05:47.686 A:middle
+0 to 1 with values from 0 to .5.
+
+00:05:48.326 --> 00:05:50.206 A:middle
+So that means if you pass in .5,
+
+00:05:50.516 --> 00:05:51.776 A:middle
+you will get the default normal
+
+00:05:51.776 --> 00:05:52.396 A:middle
+speaking rate.
+
+00:05:53.736 --> 00:05:55.606 A:middle
+If you want to go faster, you
+
+00:05:55.606 --> 00:05:58.066 A:middle
+can pass in values from .5 to 1
+
+00:05:58.066 --> 00:05:59.806 A:middle
+and that will scale speech from
+
+00:05:59.806 --> 00:06:01.296 A:middle
+normal speaking rates at 1x all
+

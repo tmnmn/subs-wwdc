@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.466 --> 00:11:01.326 A:middle
+we can obtain a single value of
+
+00:11:01.326 --> 00:11:02.766 A:middle
+video quality that we can
+
+00:11:02.766 --> 00:11:04.956 A:middle
+compare across sessions.
+
+00:11:06.046 --> 00:11:07.226 A:middle
+We call this measure a
+
+00:11:07.226 --> 00:11:09.206 A:middle
+Time-Weighted Indicated Bitrate,
+
+00:11:09.586 --> 00:11:11.706 A:middle
+and computing it is just as
+
+00:11:11.836 --> 00:11:13.656 A:middle
+simple as with the total
+
+00:11:13.656 --> 00:11:14.266 A:middle
+duration.
+
+00:11:15.116 --> 00:11:17.496 A:middle
+Once again, we get a reference
+
+00:11:17.496 --> 00:11:19.176 A:middle
+to the Player Items Access Log.
+
+00:11:19.546 --> 00:11:21.076 A:middle
+We iterate through the events in
+
+00:11:21.076 --> 00:11:21.526 A:middle
+the log.
+
+00:11:21.846 --> 00:11:23.526 A:middle
+We compute the time weight of
+
+00:11:23.526 --> 00:11:25.026 A:middle
+each event with respect to the
+
+00:11:25.026 --> 00:11:26.936 A:middle
+total duration watch we computed
+
+00:11:26.936 --> 00:11:29.396 A:middle
+earlier, and finally, we sum up
+
+00:11:29.586 --> 00:11:31.126 A:middle
+the weighted bitrate value.
+
+00:11:31.526 --> 00:11:33.036 A:middle
+Now keep in mind that some of
+
+00:11:33.036 --> 00:11:35.546 A:middle
+these properties may not be
+
+00:11:35.546 --> 00:11:36.516 A:middle
+initialized, so do the
+
+00:11:36.516 --> 00:11:39.206 A:middle
+appropriate checks in your code.
+
+00:11:41.076 --> 00:11:42.656 A:middle
+Another event which you must
+
+00:11:42.656 --> 00:11:44.286 A:middle
+absolutely track is of course
+
+00:11:44.376 --> 00:11:45.306 A:middle
+playback failure.
+
+00:11:45.866 --> 00:11:47.526 A:middle
+To do that, you observe the AV
+
+00:11:47.526 --> 00:11:48.796 A:middle
+Player item status.
+
+00:11:49.646 --> 00:11:51.256 A:middle
+If the value ever changes to
+
+00:11:51.256 --> 00:11:52.986 A:middle
+false, it means AV Player
+
+00:11:52.986 --> 00:11:54.376 A:middle
+encountered an unrecoverable
+
+00:11:54.376 --> 00:11:54.746 A:middle
+error.
+
+00:11:55.666 --> 00:11:56.926 A:middle
+A good way to transform this
+
+00:11:56.926 --> 00:11:58.576 A:middle
+observation into a KPI?
+
+00:11:59.736 --> 00:12:02.856 A:middle
+Well, one way to do it is to
+

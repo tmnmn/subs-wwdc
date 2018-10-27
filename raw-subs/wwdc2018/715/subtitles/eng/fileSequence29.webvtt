@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.456 --> 00:29:01.206 A:middle
+where an endpoint is added, and
+
+00:29:01.206 --> 00:29:03.476 A:middle
+if it's of service type, I tell
+
+00:29:03.476 --> 00:29:05.006 A:middle
+the rest of the application the
+
+00:29:05.006 --> 00:29:06.446 A:middle
+name that is being advertised,
+
+00:29:06.586 --> 00:29:07.796 A:middle
+that default device name that I
+
+00:29:07.796 --> 00:29:08.956 A:middle
+ask the system to provide so
+
+00:29:08.956 --> 00:29:10.506 A:middle
+that I can display it in the UI
+
+00:29:10.506 --> 00:29:11.586 A:middle
+and have my users type it in
+
+00:29:11.586 --> 00:29:11.976 A:middle
+somewhere else.
+
+00:29:20.046 --> 00:29:20.916 A:middle
+I'm going to set a new
+
+00:29:20.916 --> 00:29:22.246 A:middle
+connection handler on the
+
+00:29:22.246 --> 00:29:23.766 A:middle
+listener, which will be called
+
+00:29:23.766 --> 00:29:25.046 A:middle
+every time the listener receives
+
+00:29:25.046 --> 00:29:26.046 A:middle
+a new incoming connection.
+
+00:29:26.116 --> 00:29:28.906 A:middle
+I could do some configuration on
+
+00:29:28.906 --> 00:29:29.986 A:middle
+these connections, but the
+
+00:29:29.986 --> 00:29:31.136 A:middle
+default settings are fine here,
+
+00:29:31.356 --> 00:29:31.996 A:middle
+so I simply call
+
+00:29:31.996 --> 00:29:34.536 A:middle
+connection.start and pass it to
+
+00:29:36.176 --> 00:29:36.286 A:middle
+queue.
+
+00:29:36.466 --> 00:29:38.216 A:middle
+Here, I notify the rest of the
+
+00:29:38.216 --> 00:29:39.746 A:middle
+application that I've received
+
+00:29:39.746 --> 00:29:41.076 A:middle
+an incoming connection, so it
+
+00:29:41.076 --> 00:29:42.336 A:middle
+can start warming up the display
+
+00:29:42.336 --> 00:29:43.766 A:middle
+pipeline and become ready to
+
+00:29:43.766 --> 00:29:45.106 A:middle
+display the video frames.
+
+00:29:46.336 --> 00:29:47.976 A:middle
+I'll also call receive on
+
+00:29:47.976 --> 00:29:49.406 A:middle
+myself, which we'll implement in
+
+00:29:49.406 --> 00:29:50.666 A:middle
+a minute, to start reading that
+
+00:29:50.666 --> 00:29:52.016 A:middle
+data off of the network and
+
+00:29:52.016 --> 00:29:52.966 A:middle
+shipping it up to the display
+
+00:29:52.966 --> 00:29:53.326 A:middle
+pipeline.
+
+00:29:53.326 --> 00:29:56.736 A:middle
+Just like with connections,
+
+00:29:57.056 --> 00:30:01.756 A:middle
+listeners have state update
+

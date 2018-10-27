@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.913 --> 00:08:01.682 align:middle line:-1
+系统为实现这点提供了很大的帮助
+
+00:08:04.184 --> 00:08:07.588 align:middle line:-2
+URLSession为用于
+执行网络请求的app
+
+00:08:07.654 --> 00:08:09.089 align:middle line:-1
+提供了一个高级API
+
+00:08:10.424 --> 00:08:12.459 align:middle line:-1
+弯曲对象 如表示飞行请求的
+
+00:08:12.526 --> 00:08:14.561 align:middle line:-1
+URLSession数据任务
+
+00:08:15.896 --> 00:08:17.264 align:middle line:-1
+然而在幕后还有另一个较低级别的
+
+00:08:17.497 --> 00:08:20.701 align:middle line:-1
+API URLProtocol
+
+00:08:21.368 --> 00:08:24.571 align:middle line:-1
+它来执行打开网络连接 编写请求
+
+00:08:24.738 --> 00:08:27.674 align:middle line:-1
+和读取响应的底层工作
+
+00:08:29.810 --> 00:08:32.145 align:middle line:-2
+URLProtocol
+被设计为子类
+
+00:08:32.546 --> 00:08:35.849 align:middle line:-1
+为URL加载系统提供了一个扩展点
+
+00:08:39.253 --> 00:08:42.589 align:middle line:-2
+Foundation为诸如
+HTTPS这样的公共协议
+
+00:08:42.789 --> 00:08:44.725 align:middle line:-1
+提供内置协议子类
+
+00:08:45.592 --> 00:08:49.229 align:middle line:-1
+但是我们可以在测试中覆盖这些内容
+
+00:08:50.063 --> 00:08:51.932 align:middle line:-1
+方法是提供一个模拟协议
+
+00:08:51.999 --> 00:08:55.636 align:middle line:-2
+允许我们对即将发出的请求进行断言
+并提供模拟响应
+
+00:08:59.673 --> 00:09:02.509 align:middle line:-2
+URLProtocol通过
+URLProtocol客户端实例
+

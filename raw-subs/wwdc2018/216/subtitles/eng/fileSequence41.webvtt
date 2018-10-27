@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:59.866 --> 00:41:01.446 A:middle
+And so, when we relaunch our
+
+00:41:01.446 --> 00:41:03.886 A:middle
+app, we again lose access to
+
+00:41:03.886 --> 00:41:05.986 A:middle
+this document, even if that
+
+00:41:05.986 --> 00:41:07.216 A:middle
+document wasn't moved or
+
+00:41:07.216 --> 00:41:07.646 A:middle
+renamed.
+
+00:41:08.076 --> 00:41:12.026 A:middle
+The correct solution is to use a
+
+00:41:12.026 --> 00:41:13.886 A:middle
+security scoped bookmark, that
+
+00:41:13.886 --> 00:41:15.176 A:middle
+we get from our URL.
+
+00:41:15.556 --> 00:41:17.376 A:middle
+And, as you can see, the
+
+00:41:17.376 --> 00:41:18.886 A:middle
+bookmark correctly references
+
+00:41:18.886 --> 00:41:20.906 A:middle
+the document, even if it has
+
+00:41:20.906 --> 00:41:21.966 A:middle
+been moved or renamed.
+
+00:41:27.316 --> 00:41:29.206 A:middle
+To save the security scoped
+
+00:41:29.206 --> 00:41:31.326 A:middle
+bookmark, we must first get it
+
+00:41:31.326 --> 00:41:33.166 A:middle
+from the URL, using the
+
+00:41:33.166 --> 00:41:35.356 A:middle
+bookmarkData API on the URL.
+
+00:41:35.676 --> 00:41:37.226 A:middle
+And, we will then persist it to
+
+00:41:37.226 --> 00:41:37.566 A:middle
+disk.
+
+00:41:38.636 --> 00:41:40.596 A:middle
+Once our app is relaunched, we
+
+00:41:40.596 --> 00:41:42.386 A:middle
+can restore the original URL
+
+00:41:42.736 --> 00:41:44.516 A:middle
+using the URL resulting
+
+00:41:44.516 --> 00:41:47.546 A:middle
+bookmarkData call.
+
+00:41:47.746 --> 00:41:49.636 A:middle
+Alright. Now that we have all
+
+00:41:49.636 --> 00:41:51.036 A:middle
+the ingredients to save and
+
+00:41:51.036 --> 00:41:53.076 A:middle
+restore UI state, let's jump to
+
+00:41:53.076 --> 00:41:53.776 A:middle
+a quick demo to see it in
+
+00:41:53.776 --> 00:41:53.926 A:middle
+action.
+

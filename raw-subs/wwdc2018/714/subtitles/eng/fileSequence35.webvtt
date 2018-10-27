@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:00.056 --> 00:35:02.206 A:middle
+Background sessions have upload
+
+00:35:02.206 --> 00:35:03.456 A:middle
+and download tasks.
+
+00:35:04.456 --> 00:35:06.156 A:middle
+These tasks use system
+
+00:35:06.156 --> 00:35:08.046 A:middle
+intelligence to decide when to
+
+00:35:08.046 --> 00:35:09.876 A:middle
+start and when to stop a
+
+00:35:09.876 --> 00:35:11.926 A:middle
+download based on various
+
+00:35:11.926 --> 00:35:14.486 A:middle
+factors like battery, CPU,
+
+00:35:14.716 --> 00:35:15.726 A:middle
+Wi-Fi, etcetera.
+
+00:35:17.616 --> 00:35:19.276 A:middle
+If your app wants to fetch a
+
+00:35:19.276 --> 00:35:21.416 A:middle
+large file, consider using
+
+00:35:21.416 --> 00:35:22.346 A:middle
+background sessions.
+
+00:35:23.736 --> 00:35:26.036 A:middle
+These tasks run out of process
+
+00:35:26.836 --> 00:35:28.276 A:middle
+which means your download will
+
+00:35:28.276 --> 00:35:30.676 A:middle
+continue even when your app is
+
+00:35:30.676 --> 00:35:31.766 A:middle
+in a suspended state.
+
+00:35:33.036 --> 00:35:34.476 A:middle
+For more information on
+
+00:35:34.476 --> 00:35:36.246 A:middle
+background sessions, please view
+
+00:35:36.246 --> 00:35:38.096 A:middle
+the WWDC session from the year
+
+00:35:38.156 --> 00:35:42.676 A:middle
+2014.
+
+00:35:42.796 --> 00:35:44.216 A:middle
+Caching is a great way of
+
+00:35:44.276 --> 00:35:46.576 A:middle
+reducing latency but it's
+
+00:35:46.576 --> 00:35:48.526 A:middle
+important to note that caching
+
+00:35:48.526 --> 00:35:50.076 A:middle
+might result in disk IO.
+
+00:35:51.366 --> 00:35:52.816 A:middle
+In the real world, we've seen
+
+00:35:52.816 --> 00:35:54.596 A:middle
+some apps write several
+
+00:35:54.596 --> 00:35:56.746 A:middle
+gigabytes of data to disk each
+
+00:35:56.746 --> 00:35:58.656 A:middle
+day which can cause severe flash
+
+00:35:58.656 --> 00:35:59.706 A:middle
+storage degradation.
+

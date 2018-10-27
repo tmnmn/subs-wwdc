@@ -1,0 +1,80 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.766 --> 00:15:02.102 align:middle line:-1
+通过了与你以前一样的检查过程后
+
+00:15:02.402 --> 00:15:04.905 align:middle line:-2
+你就可以将
+receiptData的值存储到
+
+00:15:04.972 --> 00:15:08.141 align:middle line:-1
+该用户的latestReceiptData字段中
+
+00:15:09.510 --> 00:15:11.879 align:middle line:-2
+你现已存储了用户的
+latestReceiptData
+
+00:15:12.246 --> 00:15:14.781 align:middle line:-2
+这是一个
+base64Encode字符串
+
+00:15:15.282 --> 00:15:17.284 align:middle line:-1
+当需要回答以下这个问题时
+
+00:15:17.351 --> 00:15:18.852 align:middle line:-1
+即我的用户是否处于订阅有效期
+
+00:15:18.919 --> 00:15:22.055 align:middle line:-2
+你可以直接从服务器获取
+latestReceiptData
+
+00:15:22.122 --> 00:15:24.358 align:middle line:-2
+并将其发送到
+/verifyReceipt端点
+
+00:15:25.225 --> 00:15:29.329 align:middle line:-2
+你还可包含一可选标志
+即exclude-old-transactions
+
+00:15:29.796 --> 00:15:31.932 align:middle line:-2
+这会告诉/verifyReceipt
+你甚至不想知道
+
+00:15:31.999 --> 00:15:33.600 align:middle line:-1
+收据的解码版本
+
+00:15:33.667 --> 00:15:36.069 align:middle line:-1
+你只想了解是否有任何新的交易
+
+00:15:36.136 --> 00:15:37.271 align:middle line:-1
+（状态轮询）
+
+00:15:37.337 --> 00:15:41.175 align:middle line:-2
+/verifyReceipt
+将返回这个特定的对象
+
+00:15:41.241 --> 00:15:42.676 align:middle line:-1
+即latest_receipt_info对象
+
+00:15:42.910 --> 00:15:45.445 align:middle line:-2
+这个对象中包含那些
+在生成此收据数据之前
+
+00:15:45.512 --> 00:15:48.815 align:middle line:-1
+发生的新的交易
+
+00:15:48.882 --> 00:15:52.119 align:middle line:-2
+你可以直接从响应中的
+latest_receipt_info对象中
+
+00:15:52.753 --> 00:15:54.254 align:middle line:-1
+获取expires_date
+
+00:15:55.222 --> 00:15:57.090 align:middle line:-1
+并针对当前用户进行更新
+
+00:15:57.391 --> 00:16:00.360 align:middle line:-2
+从而再次延长他们的访问有效期
+到下一个订阅窗口
+

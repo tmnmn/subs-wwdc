@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.426 --> 00:15:00.686 A:middle
+To tell you all about the new
+
+00:15:00.686 --> 00:15:01.926 A:middle
+parallel testing features in
+
+00:15:01.926 --> 00:15:03.516 A:middle
+Xcode, I would like to welcome
+
+00:15:03.516 --> 00:15:04.566 A:middle
+Ethan Vaughan to the stage.
+
+00:15:04.766 --> 00:15:04.976 A:middle
+Ethan.
+
+00:15:05.516 --> 00:15:11.866 A:middle
+[ Applause ]
+
+00:15:12.366 --> 00:15:13.076 A:middle
+&gt;&gt; Thanks, Honza.
+
+00:15:14.926 --> 00:15:16.506 A:middle
+So, many of you have a
+
+00:15:16.506 --> 00:15:18.346 A:middle
+development cycle that looks
+
+00:15:18.346 --> 00:15:19.066 A:middle
+like this.
+
+00:15:19.696 --> 00:15:21.686 A:middle
+You write some code, you debug
+
+00:15:21.686 --> 00:15:23.916 A:middle
+it, and then you run your tests
+
+00:15:24.196 --> 00:15:25.326 A:middle
+before you commit and push your
+
+00:15:25.326 --> 00:15:26.796 A:middle
+changes to the repository.
+
+00:15:27.926 --> 00:15:29.386 A:middle
+By running your tests before you
+
+00:15:29.386 --> 00:15:31.386 A:middle
+push, you can catch regressions
+
+00:15:31.496 --> 00:15:32.836 A:middle
+before they ever make it into a
+
+00:15:32.836 --> 00:15:32.976 A:middle
+build.
+
+00:15:35.256 --> 00:15:37.456 A:middle
+However, one of the bottlenecks
+
+00:15:37.456 --> 00:15:39.476 A:middle
+in this process can be just how
+
+00:15:39.536 --> 00:15:42.016 A:middle
+long it takes to run your tests.
+
+00:15:42.186 --> 00:15:43.616 A:middle
+Some of you have test suites
+
+00:15:43.946 --> 00:15:45.296 A:middle
+that take on the order of 30
+
+00:15:45.296 --> 00:15:47.016 A:middle
+minutes to hours to run.
+
+00:15:47.956 --> 00:15:49.046 A:middle
+And if you have to wait that
+
+00:15:49.046 --> 00:15:50.826 A:middle
+long before you can confidently
+
+00:15:50.826 --> 00:15:52.746 A:middle
+land your work, that represents
+
+00:15:52.746 --> 00:15:54.026 A:middle
+a serious bottleneck in your
+
+00:15:54.026 --> 00:15:54.536 A:middle
+workflow.
+
+00:15:55.916 --> 00:15:57.036 A:middle
+We want to make sure that your
+
+00:15:57.036 --> 00:15:59.736 A:middle
+tests run as fast as possible in
+
+00:15:59.736 --> 00:16:01.206 A:middle
+order to shorten this critical
+

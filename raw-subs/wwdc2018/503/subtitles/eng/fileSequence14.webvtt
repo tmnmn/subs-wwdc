@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.286 --> 00:14:00.046 A:middle
+&gt;&gt; Thank you Emmanuel.
+
+00:14:01.186 --> 00:14:02.826 A:middle
+Great photo effects but what
+
+00:14:02.826 --> 00:14:03.456 A:middle
+about video.
+
+00:14:04.866 --> 00:14:06.926 A:middle
+My name is Ron Sokolovsky and I
+
+00:14:06.926 --> 00:14:07.916 A:middle
+am from video engineering.
+
+00:14:08.476 --> 00:14:11.946 A:middle
+In this part we are going to
+
+00:14:11.946 --> 00:14:13.236 A:middle
+leverage the TrueDepth's camera
+
+00:14:13.446 --> 00:14:15.576 A:middle
+to create similar effects with
+
+00:14:15.576 --> 00:14:17.636 A:middle
+real-time video, like for
+
+00:14:17.636 --> 00:14:19.226 A:middle
+example this background
+
+00:14:19.226 --> 00:14:20.426 A:middle
+replacement app.
+
+00:14:21.856 --> 00:14:24.556 A:middle
+In order to create such effects
+
+00:14:24.836 --> 00:14:26.486 A:middle
+we are going to deep dive into
+
+00:14:26.486 --> 00:14:27.776 A:middle
+the stream coming from the
+
+00:14:27.776 --> 00:14:29.306 A:middle
+TrueDepth camera, the
+
+00:14:29.306 --> 00:14:31.336 A:middle
+characteristics, best practices,
+
+00:14:31.336 --> 00:14:32.066 A:middle
+and challenges.
+
+00:14:32.636 --> 00:14:35.316 A:middle
+We are also going to show you
+
+00:14:35.316 --> 00:14:36.706 A:middle
+how to work with point clouds, a
+
+00:14:36.706 --> 00:14:38.286 A:middle
+completely different way to
+
+00:14:38.286 --> 00:14:40.006 A:middle
+process and render rich depth
+
+00:14:40.006 --> 00:14:40.546 A:middle
+information.
+
+00:14:41.056 --> 00:14:42.626 A:middle
+And that background replacement
+
+00:14:42.846 --> 00:14:44.116 A:middle
+app we're calling it Backdrop
+
+00:14:44.476 --> 00:14:45.516 A:middle
+and we'll show you how to make
+
+00:14:45.516 --> 00:14:46.756 A:middle
+it step-by-step.
+
+00:14:48.336 --> 00:14:50.116 A:middle
+But first things first, the
+
+00:14:50.386 --> 00:14:51.446 A:middle
+stream for the TrueDepth's
+
+00:14:51.446 --> 00:14:53.396 A:middle
+camera is made of frames, each
+
+00:14:53.396 --> 00:14:55.326 A:middle
+frame is a depth map, a 2-D
+
+00:14:55.326 --> 00:14:57.186 A:middle
+image in which each pixel
+
+00:14:57.426 --> 00:14:58.926 A:middle
+contains the depth information
+
+00:14:59.236 --> 00:15:00.526 A:middle
+or the distance to the scene in
+

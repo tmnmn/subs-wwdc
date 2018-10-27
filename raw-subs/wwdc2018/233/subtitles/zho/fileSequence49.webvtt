@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:01.375 --> 00:49:04.745 align:middle line:-2
+但有时我们的view
+或viewController没有问题
+
+00:49:05.345 --> 00:49:07.347 align:middle line:-1
+我们的状态也没有问题
+
+00:49:08.048 --> 00:49:11.185 align:middle line:-2
+我们遇到的是一个非常棘手的
+内存管理问题
+
+00:49:12.319 --> 00:49:14.288 align:middle line:-1
+Ben 为此我们有何工具使用吗？
+
+00:49:15.322 --> 00:49:16.623 align:middle line:-1
+我很高兴你问这个问题 Peter
+
+00:49:16.690 --> 00:49:19.960 align:middle line:-2
+因为Xcode中
+的确还有另一个很棒的工具
+
+00:49:20.427 --> 00:49:21.862 align:middle line:-1
+即Xcode内存调试器
+
+00:49:23.530 --> 00:49:27.868 align:middle line:-2
+此工具将帮助你可视化
+app使用内存的方式
+
+00:49:29.570 --> 00:49:31.405 align:middle line:-2
+Peter和我
+前几天在调试一个问题
+
+00:49:31.471 --> 00:49:33.073 align:middle line:-2
+我们有一个泄漏的
+viewController
+
+00:49:33.841 --> 00:49:36.610 align:middle line:-2
+这里我们可以看到
+它正被一个块所持有
+
+00:49:37.778 --> 00:49:39.813 align:middle line:-1
+通过启用Malloc堆栈日志记录
+
+00:49:39.880 --> 00:49:44.151 align:middle line:-1
+我们能够看到分配此块时的完整回溯
+
+00:49:46.019 --> 00:49:47.754 align:middle line:-1
+通过放大 我们可以看到这个块
+
+00:49:47.821 --> 00:49:50.490 align:middle line:-2
+实际上由该
+viewController创建
+
+00:49:51.358 --> 00:49:53.961 align:middle line:-2
+因此那个块持有着
+viewController
+
+00:49:54.027 --> 00:49:56.296 align:middle line:-2
+但该viewController
+也持有该块
+
+00:49:57.164 --> 00:49:58.432 align:middle line:-1
+这就是一个持有循环
+
+00:49:59.633 --> 00:50:02.469 align:middle line:-2
+哇 太棒了
+Xcode内存图调试器
+

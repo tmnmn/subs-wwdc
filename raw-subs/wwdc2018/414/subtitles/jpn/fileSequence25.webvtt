@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.397 --> 00:25:00.801 align:start position:11% line:-1
+では objc releaseは何が原因か？
+
+00:25:00.901 --> 00:25:03.003 align:start position:25% line:-1
+スタックトレースを見ましょう
+
+00:25:03.170 --> 00:25:06.206 align:start position:21% line:-1
+オブジェクトの破棄関数があります
+
+00:25:06.373 --> 00:25:11.812 align:start position:14% line:-2
+Objective-Cランタイムの関数で
+オブジェクトを解放するものです
+
+00:25:12.479 --> 00:25:17.084 align:start position:9% line:-2
+破棄関数が
+LoginViewControllerクラスで
+
+00:25:17.184 --> 00:25:21.388 align:start position:14% line:-2
+ivar destroyerという関数を
+呼び出しました
+
+00:25:21.788 --> 00:25:25.826 align:start position:20% line:-2
+ivar destroyer関数は
+Swiftコードの一部です
+
+00:25:25.926 --> 00:25:30.497 align:start position:27% line:-2
+オブジェクトのプロパティや
+ivarストレージを―
+
+00:25:30.597 --> 00:25:33.200 align:start position:34% line:-1
+解放時に処分します
+
+00:25:34.034 --> 00:25:37.805 align:start position:29% line:-2
+ここから クラッシュの
+原因の一部が見えてきます
+
+00:25:37.905 --> 00:25:42.876 align:start position:9% line:-2
+LoginViewControllerクラスの
+オブジェクトを解放していました
+
+00:25:43.544 --> 00:25:49.449 align:start position:18% line:-2
+そのdeinitコードのクラスが
+プロパティとivarを処分しようとし
+
+00:25:49.550 --> 00:25:53.520 align:start position:29% line:-2
+いずれかが解放される間に
+クラッシュしています
+
+00:25:54.521 --> 00:25:57.090 align:start position:27% line:-1
+問題の詳細が少し見えました
+
+00:25:57.257 --> 00:26:02.196 align:start position:21% line:-2
+クラッシュログに
+もっと状況が分かる情報はないか？
+

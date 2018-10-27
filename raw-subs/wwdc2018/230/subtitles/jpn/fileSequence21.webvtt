@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.593 --> 00:21:02.863 align:start position:34% line:-2
+これで新しい要素を
+作るのです
+
+00:21:03.163 --> 00:21:07.367 align:start position:9% line:-2
+UIAccessibilityElementは
+カスタム要素を作るクラスで
+
+00:21:07.468 --> 00:21:13.373 align:start position:29% line:-2
+大抵は アクセス不能な
+UI上のパーツに使います
+
+00:21:13.841 --> 00:21:19.379 align:start position:21% line:-2
+でも 今回のように
+カスタム体験を作る時にも使えます
+
+00:21:20.114 --> 00:21:23.517 align:start position:5% line:-2
+ビューのaccessibilityElements
+プロパティから
+
+00:21:23.617 --> 00:21:25.986 align:start position:32% line:-2
+任意のカスタム要素を
+返します
+
+00:21:26.086 --> 00:21:30.023 align:start position:27% line:-2
+すると その特定のビューの
+子要素と
+
+00:21:30.124 --> 00:21:34.862 align:start position:30% line:-2
+それを読み上げる順序が
+支援技術に伝わります
+
+00:21:36.563 --> 00:21:41.135 align:start position:27% line:-2
+これで スワイプで
+各犬のコンテンツに進めます
+
+00:21:41.435 --> 00:21:44.171 align:start position:38% line:-2
+では 別の犬を
+閲覧するには？
+
+00:21:45.239 --> 00:21:49.276 align:start position:30% line:-2
+インクリメントと
+デクリメントを使います
+
+00:21:49.476 --> 00:21:52.346 align:start position:30% line:-2
+カスタム要素に
+可変のTraitを加え
+
+00:21:52.446 --> 00:21:56.750 align:start position:21% line:-2
+要素が コールバックに応答すると
+支援技術に理解させます
+
+00:21:56.850 --> 00:22:01.088 align:start position:20% line:-2
+これで VoiceOver起動中は
+上下のスワイプで
+

@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.794 --> 00:21:05.332 align:start position:14% line:-2
+requestLocationメソッドを
+呼び出しています
+
+00:21:05.833 --> 00:21:09.169 align:start position:27% line:-1
+すると現在地の取得を試みて
+
+00:21:09.269 --> 00:21:11.939 align:start position:27% line:-2
+最後にデリゲートメソッドを
+呼びます
+
+00:21:12.039 --> 00:21:14.007 align:start position:38% line:-1
+見てみましょう
+
+00:21:15.275 --> 00:21:16.176 align:start position:29% line:-1
+extensionを使い
+
+00:21:16.276 --> 00:21:19.646 align:start position:5% line:-2
+CLLocationManagerDelegate
+プロトコルに準拠
+
+00:21:19.746 --> 00:21:21.949 align:start position:29% line:-2
+保存された完了ブロックを
+呼びます
+
+00:21:22.349 --> 00:21:25.586 align:start position:32% line:-2
+ではユニットテストを
+書きましょう
+
+00:21:26.720 --> 00:21:29.389 align:start position:32% line:-1
+全体を読んでみると―
+
+00:21:29.490 --> 00:21:33.393 align:start position:4% line:-2
+まずCurrentLocationProviderを
+作成して
+
+00:21:33.494 --> 00:21:37.297 align:start position:27% line:-2
+目標精度とデリゲート設定を
+確認します
+
+00:21:37.397 --> 00:21:38.799 align:start position:41% line:-1
+順調ですね
+
+00:21:39.099 --> 00:21:40.934 align:start position:34% line:-1
+ここから ご注意を
+
+00:21:41.235 --> 00:21:46.039 align:start position:5% line:-2
+checkCurrentLocationメソッドを
+確認したいですが―
+
+00:21:46.140 --> 00:21:48.008 align:start position:38% line:-1
+問題があります
+
+00:21:48.108 --> 00:21:51.812 align:start position:21% line:-2
+requestLocationが
+いつ呼ばれるか分かりません
+
+00:21:51.912 --> 00:21:56.283 align:start position:16% line:-2
+CLLocationManager上の
+メソッドだからです
+
+00:21:57.451 --> 00:22:00.154 align:start position:32% line:-1
+もう１つ問題なのは―
+

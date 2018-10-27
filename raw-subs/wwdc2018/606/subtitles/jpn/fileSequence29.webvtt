@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:55.135 --> 00:29:00.574 align:start position:23% line:-2
+システムメモリを通じて領域を
+別のGPUにblit転送します
+
+00:29:01.909 --> 00:29:04.211 align:start position:30% line:-1
+設定をご説明しましょう
+
+00:29:04.945 --> 00:29:09.049 align:start position:30% line:-2
+デバイスAのバッファは
+共有ストレージモード
+
+00:29:09.650 --> 00:29:12.319 align:start position:23% line:-1
+内部でシステムメモリを割り当て
+
+00:29:12.486 --> 00:29:15.656 align:start position:18% line:-1
+.contentsメソッドを使います
+
+00:29:18.559 --> 00:29:20.594 align:start position:29% line:-1
+デバイスBのバッファは―
+
+00:29:20.694 --> 00:29:25.365 align:start position:25% line:-2
+NoCopyで バッファAに
+割り当てたメモリをラップ
+
+00:29:26.900 --> 00:29:32.406 align:start position:27% line:-2
+このAPIでバッファは
+ページサイズの倍数にします
+
+00:29:32.673 --> 00:29:35.642 align:start position:29% line:-1
+長さを水増ししてください
+
+00:29:38.745 --> 00:29:43.383 align:start position:32% line:-2
+メモリを共有したので
+同期について考えます
+
+00:29:43.817 --> 00:29:49.223 align:start position:27% line:-2
+２つのGPUの動きを示した
+タイムラインの一例です
+
+00:29:49.456 --> 00:29:52.926 align:start position:34% line:-2
+黒ボックスは
+コマンドバッファで
+
+00:29:53.026 --> 00:29:58.832 align:start position:29% line:-2
+緑ボックスは バッファに
+エンコードした処理です
+
+00:29:59.900 --> 00:30:03.237 align:start position:34% line:-2
+上のGPUは
+レンダリングをして
+

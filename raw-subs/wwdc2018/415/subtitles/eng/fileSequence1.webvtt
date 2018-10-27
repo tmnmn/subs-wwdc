@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.986 --> 00:01:00.426 A:middle
+We'll answer questions like what
+
+00:01:00.426 --> 00:01:01.686 A:middle
+exactly happens when you press
+
+00:01:01.686 --> 00:01:02.236 A:middle
+Command B?
+
+00:01:02.576 --> 00:01:03.566 A:middle
+How is the build process
+
+00:01:03.566 --> 00:01:04.075 A:middle
+structured?
+
+00:01:04.275 --> 00:01:05.336 A:middle
+And how does Xcode use the
+
+00:01:05.336 --> 00:01:06.666 A:middle
+information in your project file
+
+00:01:06.946 --> 00:01:08.706 A:middle
+to determine how to model and
+
+00:01:08.706 --> 00:01:10.006 A:middle
+orchestrate the build process?
+
+00:01:11.176 --> 00:01:12.936 A:middle
+Next we'll venture into the
+
+00:01:12.936 --> 00:01:13.696 A:middle
+compiler realm.
+
+00:01:14.236 --> 00:01:16.116 A:middle
+And find out about Clang and
+
+00:01:16.116 --> 00:01:17.396 A:middle
+Swift builds your source code
+
+00:01:17.486 --> 00:01:18.416 A:middle
+into object files.
+
+00:01:19.246 --> 00:01:20.366 A:middle
+We'll show how headers and
+
+00:01:20.366 --> 00:01:21.216 A:middle
+modules work.
+
+00:01:21.586 --> 00:01:22.686 A:middle
+See how the compilers find
+
+00:01:22.686 --> 00:01:24.496 A:middle
+declarations in your code, and
+
+00:01:24.496 --> 00:01:25.826 A:middle
+how the Swift compilation model
+
+00:01:25.826 --> 00:01:27.116 A:middle
+fundamentally differs from that
+
+00:01:27.116 --> 00:01:29.506 A:middle
+of C, C++ and Objective-C.
+
+00:01:30.126 --> 00:01:32.076 A:middle
+Finally, we'll land at the
+
+00:01:32.076 --> 00:01:33.836 A:middle
+linker which performs one of the
+
+00:01:33.836 --> 00:01:35.126 A:middle
+final steps in the build
+
+00:01:35.126 --> 00:01:35.706 A:middle
+process.
+
+00:01:36.416 --> 00:01:37.836 A:middle
+We'll explain what symbols are
+
+00:01:37.836 --> 00:01:38.596 A:middle
+and how they relate to your
+
+00:01:38.596 --> 00:01:39.276 A:middle
+source code.
+
+00:01:39.556 --> 00:01:40.496 A:middle
+And how the linker takes the
+
+00:01:40.496 --> 00:01:41.756 A:middle
+object files produced by the
+
+00:01:41.756 --> 00:01:43.076 A:middle
+compilers and glues them
+
+00:01:43.076 --> 00:01:44.236 A:middle
+together to produce the final
+
+00:01:44.236 --> 00:01:45.786 A:middle
+executable for your application
+
+00:01:45.786 --> 00:01:46.306 A:middle
+or framework.
+
+00:01:47.046 --> 00:01:49.426 A:middle
+By the way, we're going to use a
+
+00:01:49.426 --> 00:01:50.996 A:middle
+small sample app called PetWall
+
+00:01:50.996 --> 00:01:52.256 A:middle
+as a running example throughout
+
+00:01:52.256 --> 00:01:52.766 A:middle
+this talk.
+
+00:01:53.066 --> 00:01:54.486 A:middle
+It's just a small iOS app that
+
+00:01:54.486 --> 00:01:58.986 A:middle
+displays photos of our pets.
+
+00:01:59.166 --> 00:02:00.986 A:middle
+So let's first understand what
+

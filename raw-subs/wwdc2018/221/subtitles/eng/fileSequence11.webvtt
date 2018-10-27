@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.006 --> 00:11:02.476 A:middle
+the end of the session.
+
+00:11:02.626 --> 00:11:02.946 A:middle
+All right.
+
+00:11:04.036 --> 00:11:04.946 A:middle
+So we've looked at the built-in
+
+00:11:04.946 --> 00:11:05.576 A:middle
+text controls.
+
+00:11:06.296 --> 00:11:07.236 A:middle
+We've looked at the components
+
+00:11:07.236 --> 00:11:07.766 A:middle
+in TextKit.
+
+00:11:07.976 --> 00:11:09.016 A:middle
+And we've look at how to
+
+00:11:09.016 --> 00:11:10.336 A:middle
+configure those components to
+
+00:11:10.336 --> 00:11:11.066 A:middle
+achieve different effects.
+
+00:11:11.066 --> 00:11:12.956 A:middle
+And there's a lot that you can
+
+00:11:12.956 --> 00:11:14.406 A:middle
+do with that knowledge already,
+
+00:11:14.636 --> 00:11:15.586 A:middle
+but if you need even more,
+
+00:11:16.196 --> 00:11:17.056 A:middle
+you'll need to extend and
+
+00:11:17.056 --> 00:11:18.216 A:middle
+customize parts of TextKit
+
+00:11:18.216 --> 00:11:18.596 A:middle
+yourself.
+
+00:11:19.766 --> 00:11:21.076 A:middle
+And so now we'll talk a little
+
+00:11:21.076 --> 00:11:22.166 A:middle
+bit about choosing the right
+
+00:11:22.166 --> 00:11:23.766 A:middle
+approach for doing that.
+
+00:11:24.826 --> 00:11:26.516 A:middle
+And choosing the right approach
+
+00:11:26.556 --> 00:11:27.686 A:middle
+is like building up your text
+
+00:11:27.686 --> 00:11:28.036 A:middle
+toolbox.
+
+00:11:28.616 --> 00:11:29.806 A:middle
+It's like going to the store
+
+00:11:29.806 --> 00:11:30.606 A:middle
+because you need a hammer.
+
+00:11:30.606 --> 00:11:32.056 A:middle
+And then when you get there, you
+
+00:11:32.056 --> 00:11:33.246 A:middle
+encounter this giant wall of
+
+00:11:33.246 --> 00:11:34.216 A:middle
+hammers to choose from.
+
+00:11:34.966 --> 00:11:36.086 A:middle
+And you want to pick your hammer
+
+00:11:36.216 --> 00:11:38.206 A:middle
+that can do the job and ideally
+
+00:11:38.286 --> 00:11:39.526 A:middle
+the least expensive one that
+
+00:11:39.526 --> 00:11:40.346 A:middle
+will do what you need.
+
+00:11:40.896 --> 00:11:43.416 A:middle
+And so these are the hammers
+
+00:11:43.566 --> 00:11:44.456 A:middle
+that are available to us.
+
+00:11:45.396 --> 00:11:46.836 A:middle
+Delegation is like your standard
+
+00:11:46.836 --> 00:11:48.046 A:middle
+hammer with the claw on the end,
+
+00:11:48.176 --> 00:11:48.866 A:middle
+and it's used to perform
+
+00:11:48.866 --> 00:11:49.626 A:middle
+multiple tasks.
+
+00:11:50.316 --> 00:11:51.466 A:middle
+So the delegates have a lot of
+
+00:11:51.466 --> 00:11:52.566 A:middle
+different customization hooks
+
+00:11:52.706 --> 00:11:53.766 A:middle
+and most of the time they'll get
+
+00:11:53.766 --> 00:11:56.206 A:middle
+the job done for you.
+
+00:11:56.426 --> 00:11:57.686 A:middle
+Notifications is like a
+
+00:11:57.686 --> 00:11:58.446 A:middle
+ball-peen hammer.
+
+00:11:58.596 --> 00:11:59.666 A:middle
+And this has a ball on the end
+
+00:11:59.666 --> 00:12:01.786 A:middle
+instead of a claw so it's more
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.086 --> 00:05:01.686 A:middle
+If there for some reason is a
+
+00:05:01.766 --> 00:05:03.696 A:middle
+plain text request for my server
+
+00:05:03.936 --> 00:05:05.776 A:middle
+or to my server, don't send the
+
+00:05:05.776 --> 00:05:06.066 A:middle
+cookie.
+
+00:05:06.836 --> 00:05:08.336 A:middle
+And, since you should be using
+
+00:05:08.336 --> 00:05:10.186 A:middle
+secure transports, all of your
+
+00:05:10.186 --> 00:05:11.606 A:middle
+cookies should be marked secure.
+
+00:05:12.606 --> 00:05:14.846 A:middle
+Final-- finally on your to-do
+
+00:05:14.846 --> 00:05:16.316 A:middle
+list here for secure transports
+
+00:05:16.346 --> 00:05:17.886 A:middle
+is specific for apps.
+
+00:05:18.476 --> 00:05:19.566 A:middle
+You might have heard about app
+
+00:05:19.566 --> 00:05:21.246 A:middle
+transport security or ATS.
+
+00:05:21.246 --> 00:05:24.266 A:middle
+It is the default behavior for
+
+00:05:24.266 --> 00:05:26.116 A:middle
+iOS apps, meaning that they
+
+00:05:26.116 --> 00:05:27.996 A:middle
+should be using only secure
+
+00:05:27.996 --> 00:05:29.436 A:middle
+transports for network traffic.
+
+00:05:30.496 --> 00:05:32.156 A:middle
+Now, there is an opt out you can
+
+00:05:32.156 --> 00:05:33.836 A:middle
+have in your info p list to say,
+
+00:05:33.836 --> 00:05:35.606 A:middle
+hey, you know, for web content,
+
+00:05:35.686 --> 00:05:37.276 A:middle
+I'd still like to do insecure
+
+00:05:37.276 --> 00:05:37.956 A:middle
+requests.
+
+00:05:38.826 --> 00:05:39.536 A:middle
+Don't do that.
+
+00:05:40.136 --> 00:05:42.276 A:middle
+You should be saying no in this
+
+00:05:42.316 --> 00:05:44.096 A:middle
+info p list and specifically for
+
+00:05:44.096 --> 00:05:45.926 A:middle
+arbitrary web content loads.
+
+00:05:46.976 --> 00:05:48.396 A:middle
+OK. Now we've secured the
+
+00:05:48.396 --> 00:05:49.066 A:middle
+transport.
+
+00:05:49.386 --> 00:05:50.136 A:middle
+Let's move on.
+
+00:05:50.476 --> 00:05:51.226 A:middle
+We're now going to look at
+
+00:05:51.316 --> 00:05:52.786 A:middle
+cross-origin lockdown.
+
+00:05:53.716 --> 00:05:54.756 A:middle
+The reason why I call it
+
+00:05:54.756 --> 00:05:57.106 A:middle
+lockdown is this is really you
+
+00:05:57.106 --> 00:06:00.276 A:middle
+opting into saner, safer, more
+

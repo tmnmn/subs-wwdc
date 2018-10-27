@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.906 --> 00:39:01.946 A:middle
+include a timestamp, since that
+
+00:39:01.946 --> 00:39:03.726 A:middle
+might not longer be relevant by
+
+00:39:03.726 --> 00:39:04.846 A:middle
+the time this donation would be
+
+00:39:04.846 --> 00:39:05.426 A:middle
+suggested.
+
+00:39:06.576 --> 00:39:08.976 A:middle
+For instance, a shortcut that
+
+00:39:08.976 --> 00:39:09.766 A:middle
+shows appointments for a
+
+00:39:09.766 --> 00:39:11.396 A:middle
+specific day is probably not
+
+00:39:11.396 --> 00:39:12.926 A:middle
+that useful, since, if you see
+
+00:39:12.926 --> 00:39:14.586 A:middle
+that the next day or later,
+
+00:39:14.586 --> 00:39:15.756 A:middle
+you're probably no longer
+
+00:39:15.756 --> 00:39:16.976 A:middle
+interested in the meetings of
+
+00:39:16.976 --> 00:39:18.026 A:middle
+that specific day.
+
+00:39:19.156 --> 00:39:20.716 A:middle
+A shortcut with a relative time,
+
+00:39:20.716 --> 00:39:22.626 A:middle
+however, is a lot more useful.
+
+00:39:23.236 --> 00:39:27.646 A:middle
+You should also make sure that
+
+00:39:27.646 --> 00:39:29.636 A:middle
+you donate exactly once for each
+
+00:39:29.636 --> 00:39:31.416 A:middle
+user action, even if that user
+
+00:39:31.416 --> 00:39:33.036 A:middle
+action involves multiple actions
+
+00:39:33.036 --> 00:39:34.606 A:middle
+inside your app.
+
+00:39:35.236 --> 00:39:37.116 A:middle
+Finally, selecting the correct
+
+00:39:37.116 --> 00:39:38.536 A:middle
+parameters of your intent is
+
+00:39:38.536 --> 00:39:39.216 A:middle
+also important.
+
+00:39:39.646 --> 00:39:40.616 A:middle
+So, let's take a look at two
+
+00:39:40.616 --> 00:39:42.376 A:middle
+possible types, starting with
+
+00:39:42.376 --> 00:39:42.836 A:middle
+enums.
+
+00:39:43.556 --> 00:39:46.026 A:middle
+You can define enums in your
+
+00:39:46.026 --> 00:39:47.696 A:middle
+intent definition file next to
+
+00:39:47.696 --> 00:39:49.566 A:middle
+your intents, and use it as the
+
+00:39:49.566 --> 00:39:53.106 A:middle
+types of your parameters.
+
+00:39:53.596 --> 00:39:55.486 A:middle
+We recommend that you use enums
+
+00:39:55.546 --> 00:39:56.596 A:middle
+whenever the values for a
+
+00:39:56.596 --> 00:39:57.666 A:middle
+parameter are bounded.
+
+00:39:58.296 --> 00:39:59.776 A:middle
+For instance, if you would add a
+
+00:39:59.776 --> 00:40:01.476 A:middle
+size parameter to a order soup
+

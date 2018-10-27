@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.896 --> 00:02:00.116 A:middle
+And, here are some examples.
+
+00:02:00.326 --> 00:02:02.326 A:middle
+The first one is declared as NS
+
+00:02:02.356 --> 00:02:03.286 A:middle
+STRING ENUM.
+
+00:02:03.596 --> 00:02:05.356 A:middle
+This is used for string
+
+00:02:05.356 --> 00:02:07.206 A:middle
+enumerations, where we provide
+
+00:02:07.206 --> 00:02:08.156 A:middle
+some values out of the
+
+00:02:08.156 --> 00:02:09.666 A:middle
+frameworks with no ability to
+
+00:02:09.666 --> 00:02:11.206 A:middle
+extend them, so it's a fixed set
+
+00:02:11.206 --> 00:02:12.016 A:middle
+of values.
+
+00:02:12.536 --> 00:02:14.556 A:middle
+The next two here, NS EXTENSIBLE
+
+00:02:14.556 --> 00:02:17.456 A:middle
+STRING ENUM, this is used to
+
+00:02:17.456 --> 00:02:19.416 A:middle
+declare string enumerations
+
+00:02:19.676 --> 00:02:20.646 A:middle
+where we might provide some
+
+00:02:20.646 --> 00:02:22.346 A:middle
+values out of the box, but other
+
+00:02:22.346 --> 00:02:23.936 A:middle
+frameworks and applications can
+
+00:02:23.936 --> 00:02:25.746 A:middle
+also add to that set.
+
+00:02:26.556 --> 00:02:28.176 A:middle
+So, we've done two changes here.
+
+00:02:28.526 --> 00:02:29.866 A:middle
+First one is a simple one.
+
+00:02:30.276 --> 00:02:31.896 A:middle
+We've simply replaced NS STRING
+
+00:02:31.896 --> 00:02:34.766 A:middle
+ENUM and NS STRING EXTENSIBLE
+
+00:02:34.766 --> 00:02:36.226 A:middle
+ENUM with their typed variants.
+
+00:02:36.226 --> 00:02:37.566 A:middle
+This is effectively a no-op
+
+00:02:37.566 --> 00:02:38.076 A:middle
+change.
+
+00:02:38.336 --> 00:02:39.376 A:middle
+These are just more general
+
+00:02:39.376 --> 00:02:40.866 A:middle
+forms of the same declarations.
+
+00:02:41.196 --> 00:02:43.056 A:middle
+So, no changes in your code, or
+
+00:02:43.056 --> 00:02:44.076 A:middle
+call sites, or anything.
+
+00:02:44.736 --> 00:02:46.216 A:middle
+Now, the next one, NSImageName,
+
+00:02:46.876 --> 00:02:49.066 A:middle
+underwent a bigger change, a
+
+00:02:49.066 --> 00:02:50.726 A:middle
+more significant change, instead
+
+00:02:50.726 --> 00:02:52.256 A:middle
+of a string enumeration, it's
+
+00:02:52.256 --> 00:02:54.226 A:middle
+now declared as NS SWIFT BRIDGED
+
+00:02:54.226 --> 00:02:56.316 A:middle
+TYPEDEF, which is effectively a
+
+00:02:56.316 --> 00:02:56.766 A:middle
+typedef.
+
+00:02:56.766 --> 00:02:58.456 A:middle
+Now, here's what the Swift
+
+00:02:58.456 --> 00:02:59.716 A:middle
+exposure of this looks like.
+

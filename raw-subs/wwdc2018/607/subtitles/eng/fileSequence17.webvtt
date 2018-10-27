@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.736 --> 00:17:01.846 A:middle
+visible objects and LODs coming
+
+00:17:01.846 --> 00:17:03.076 A:middle
+from our culling dispatch.
+
+00:17:03.796 --> 00:17:05.165 A:middle
+Also, keep in mind that we're
+
+00:17:05.165 --> 00:17:06.526 A:middle
+utilizing the power of argument
+
+00:17:06.526 --> 00:17:07.066 A:middle
+buffers here.
+
+00:17:07.896 --> 00:17:09.866 A:middle
+So in this case, each element
+
+00:17:10.266 --> 00:17:12.816 A:middle
+has a pointer to the actual
+
+00:17:12.816 --> 00:17:14.165 A:middle
+properties, so we don't need to
+
+00:17:14.165 --> 00:17:15.496 A:middle
+store everything in the same
+
+00:17:15.496 --> 00:17:15.896 A:middle
+buffer.
+
+00:17:17.736 --> 00:17:20.136 A:middle
+This solution saves us a lot of
+
+00:17:20.136 --> 00:17:21.906 A:middle
+memory and performance, and it's
+
+00:17:22.116 --> 00:17:23.726 A:middle
+because we only build a very
+
+00:17:23.726 --> 00:17:25.126 A:middle
+small list of information.
+
+00:17:25.896 --> 00:17:27.026 A:middle
+The actual argument buffer
+
+00:17:27.026 --> 00:17:28.786 A:middle
+contains several levels of
+
+00:17:28.786 --> 00:17:29.866 A:middle
+detail for geometry.
+
+00:17:30.936 --> 00:17:33.726 A:middle
+This includes position, vertex
+
+00:17:33.726 --> 00:17:35.406 A:middle
+buffer, index buffer, and a
+
+00:17:35.406 --> 00:17:36.626 A:middle
+material argument buffer.
+
+00:17:37.256 --> 00:17:39.486 A:middle
+For rendering, we only select 1
+
+00:17:39.876 --> 00:17:41.206 A:middle
+of these LODs per object.
+
+00:17:41.836 --> 00:17:45.026 A:middle
+The actual encoding happens in a
+
+00:17:45.026 --> 00:17:47.126 A:middle
+compute kernel, and we encode
+
+00:17:47.126 --> 00:17:48.716 A:middle
+into an indirect command buffer.
+
+00:17:49.826 --> 00:17:51.716 A:middle
+Each thread of the compute
+
+00:17:51.716 --> 00:17:53.466 A:middle
+kernel encodes a single draw
+
+00:17:53.466 --> 00:17:53.756 A:middle
+call.
+
+00:17:54.226 --> 00:17:55.976 A:middle
+So we read the object with all
+
+00:17:55.976 --> 00:17:58.756 A:middle
+of its properties, and we encode
+
+00:17:58.756 --> 00:18:00.526 A:middle
+these into the ICB.
+

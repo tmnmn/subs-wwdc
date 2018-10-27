@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:58.826 --> 00:51:04.431 align:start position:23% line:-2
+GPUのフレーム処理が終わると
+フレームが表示されます
+
+00:51:05.532 --> 00:51:08.535 align:start position:27% line:-2
+Metalでレンダリングを
+ディスプレイ表示する方法を
+
+00:51:08.635 --> 00:51:10.904 align:start position:34% line:-1
+足早に紹介しました
+
+00:51:12.373 --> 00:51:14.541 align:start position:25% line:-1
+他にもいくつかコツがあります
+
+00:51:15.208 --> 00:51:20.214 align:start position:23% line:-2
+Metaにレンダパスを１つずつ
+移植することは可能です
+
+00:51:20.647 --> 00:51:24.284 align:start position:21% line:-2
+IOSurfaceと
+CVPixelBufferを使い
+
+00:51:24.751 --> 00:51:29.490 align:start position:18% line:-2
+OpenGLとMetalで共有できる
+テクスチャが作成できます
+
+00:51:30.190 --> 00:51:35.996 align:start position:18% line:-2
+これによりOpenGLでテクスチャに
+レンダしてそれをMetalで読む―
+
+00:51:36.096 --> 00:51:37.598 align:start position:27% line:-1
+またその逆が可能となります
+
+00:51:38.198 --> 00:51:43.504 align:start position:21% line:-2
+これを移植の増強や
+OpenGL系プラグインの移植に
+
+00:51:43.604 --> 00:51:46.773 align:start position:27% line:-2
+活用できる
+アプリケーションもあります
+
+00:51:47.774 --> 00:51:50.477 align:start position:32% line:-2
+この方法の参考として
+サンプルコードが
+
+00:51:50.577 --> 00:51:53.113 align:start position:34% line:-2
+当セッションに
+リンクされています
+
+00:51:55.582 --> 00:52:00.354 align:start position:20% line:-2
+Metalアプリケーションがあれば
+その特性がすべて活用できます
+

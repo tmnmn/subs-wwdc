@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:57.016 --> 00:27:00.056 A:middle
+In what we call immediate mode,
+
+00:27:00.056 --> 00:27:01.166 A:middle
+which is the default recording
+
+00:27:01.166 --> 00:27:03.126 A:middle
+mode, Instruments is trying to
+
+00:27:03.126 --> 00:27:05.876 A:middle
+show and record the data in near
+
+00:27:05.906 --> 00:27:06.416 A:middle
+real time.
+
+00:27:07.056 --> 00:27:07.926 A:middle
+And so when it goes into
+
+00:27:07.926 --> 00:27:09.556 A:middle
+immediate mode recording, all
+
+00:27:09.626 --> 00:27:11.636 A:middle
+the signposts have to be sent
+
+00:27:11.636 --> 00:27:12.826 A:middle
+directly to Instruments.
+
+00:27:13.326 --> 00:27:15.106 A:middle
+And we have to bypass all of
+
+00:27:15.106 --> 00:27:16.176 A:middle
+those optimizations that you get
+
+00:27:16.176 --> 00:27:18.136 A:middle
+from buffering in the operating
+
+00:27:18.136 --> 00:27:18.486 A:middle
+system.
+
+00:27:19.196 --> 00:27:21.966 A:middle
+Now with our signposts -- with
+
+00:27:21.966 --> 00:27:23.576 A:middle
+our signposts application here,
+
+00:27:24.036 --> 00:27:25.546 A:middle
+we're not really emitting enough
+
+00:27:25.546 --> 00:27:27.176 A:middle
+intervals to really notice that
+
+00:27:27.176 --> 00:27:29.186 A:middle
+overhead, but if you have a game
+
+00:27:29.186 --> 00:27:30.156 A:middle
+engine and you want to emit
+
+00:27:30.156 --> 00:27:32.146 A:middle
+thousands of signposts per
+
+00:27:32.146 --> 00:27:34.106 A:middle
+second, that overhead will start
+
+00:27:34.106 --> 00:27:34.836 A:middle
+to build up.
+
+00:27:35.266 --> 00:27:37.336 A:middle
+So in order to work around that,
+
+00:27:37.756 --> 00:27:39.376 A:middle
+what you can do is change the
+
+00:27:39.376 --> 00:27:41.176 A:middle
+recording mode of Instruments
+
+00:27:41.616 --> 00:27:42.736 A:middle
+before you take your recording.
+
+00:27:43.286 --> 00:27:45.016 A:middle
+And the way you do that is by
+
+00:27:45.016 --> 00:27:46.956 A:middle
+holding down on the record
+
+00:27:46.956 --> 00:27:48.656 A:middle
+button and selecting recording
+
+00:27:48.656 --> 00:27:49.266 A:middle
+options.
+
+00:27:50.706 --> 00:27:52.496 A:middle
+And then in this section here
+
+00:27:52.646 --> 00:27:55.326 A:middle
+for the global options, you can
+
+00:27:55.326 --> 00:27:56.566 A:middle
+see that we have our immediate
+
+00:27:56.566 --> 00:27:57.176 A:middle
+mode selected.
+
+00:27:57.496 --> 00:27:58.976 A:middle
+And we can change that to last
+
+00:27:58.976 --> 00:27:59.876 A:middle
+five second mode.
+

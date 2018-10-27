@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.596 --> 00:17:00.866 A:middle
+original model and the quantized
+
+00:17:00.866 --> 00:17:01.166 A:middle
+model.
+
+00:17:01.686 --> 00:17:02.936 A:middle
+And we see this time we're
+
+00:17:02.936 --> 00:17:04.286 A:middle
+getting a much better, little
+
+00:17:04.286 --> 00:17:05.726 A:middle
+bit better Top 1 Agreement.
+
+00:17:06.256 --> 00:17:08.425 A:middle
+Now for this model, we see that
+
+00:17:08.425 --> 00:17:09.526 A:middle
+lookup table was the right way
+
+00:17:09.526 --> 00:17:09.856 A:middle
+to go.
+
+00:17:10.386 --> 00:17:11.016 A:middle
+But again, this is
+
+00:17:11.016 --> 00:17:12.226 A:middle
+model-dependent and for other
+
+00:17:12.226 --> 00:17:13.886 A:middle
+models, linear may be the way.
+
+00:17:14.136 --> 00:17:15.705 A:middle
+So now that we're happy with
+
+00:17:15.705 --> 00:17:17.536 A:middle
+this and we see that this is
+
+00:17:17.685 --> 00:17:18.566 A:middle
+good enough for at least my
+
+00:17:18.566 --> 00:17:19.836 A:middle
+application, let's go ahead and
+
+00:17:19.836 --> 00:17:21.406 A:middle
+save this model out.
+
+00:17:22.695 --> 00:17:24.925 A:middle
+We do that by causing or calling
+
+00:17:24.925 --> 00:17:25.276 A:middle
+save.
+
+00:17:31.076 --> 00:17:31.616 A:middle
+I'm going to give it the
+
+00:17:31.616 --> 00:17:33.576 A:middle
+creative name of Quantized
+
+00:17:33.656 --> 00:17:34.186 A:middle
+SqueezeNet.
+
+00:17:41.076 --> 00:17:41.746 A:middle
+And there we go.
+
+00:17:42.236 --> 00:17:43.256 A:middle
+We have a quantized model.
+
+00:17:43.816 --> 00:17:45.616 A:middle
+So this was an original model.
+
+00:17:45.616 --> 00:17:46.806 A:middle
+And we saw that it was 5
+
+00:17:46.806 --> 00:17:47.626 A:middle
+megabytes in size.
+
+00:17:48.226 --> 00:17:49.726 A:middle
+Let's open up our quantized
+
+00:17:49.726 --> 00:17:50.036 A:middle
+model.
+
+00:17:50.036 --> 00:17:53.646 A:middle
+And the first thing we notice
+
+00:17:53.646 --> 00:17:54.826 A:middle
+right off the bat is that this
+
+00:17:54.826 --> 00:17:57.206 A:middle
+model is only 1.3 megabytes in
+
+00:17:57.206 --> 00:17:57.556 A:middle
+size.
+
+00:17:58.516 --> 00:18:03.636 A:middle
+[ Applause ]
+

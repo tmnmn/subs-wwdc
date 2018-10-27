@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.445 --> 00:28:00.948 align:middle line:-1
+现在我稍微改一下我的转换器调用
+
+00:28:01.181 --> 00:28:03.050 align:middle line:-1
+这是我的Core ML模型
+
+00:28:06.019 --> 00:28:08.956 align:middle line:-1
+现在我要传递一个额外的参数
+
+00:28:09.223 --> 00:28:15.229 align:middle line:-2
+它被称为
+custom_convertions_functions
+
+00:28:19.399 --> 00:28:20.801 align:middle line:-1
+这是一个字典类型
+
+00:28:21.401 --> 00:28:25.839 align:middle line:-2
+它是从层的名称到一个
+我稍后会定义的函数的映射
+
+00:28:26.139 --> 00:28:27.774 align:middle line:-2
+将其命名为
+covert_grid_sampler
+
+00:28:27.841 --> 00:28:30.511 align:middle line:-1
+让我退后一步并解释这里发生的事情
+
+00:28:30.577 --> 00:28:34.214 align:middle line:-1
+转换器的工作方式是
+
+00:28:34.281 --> 00:28:35.682 align:middle line:-1
+它会遍历每个Keras层
+
+00:28:36.817 --> 00:28:38.452 align:middle line:-1
+先进入第一层
+
+00:28:38.519 --> 00:28:40.754 align:middle line:-1
+将其参数转换为Core ML
+
+00:28:40.821 --> 00:28:43.857 align:middle line:-2
+然后转到第二层继续转换它的参数
+如此类推
+
+00:28:44.625 --> 00:28:47.427 align:middle line:-2
+当它碰到这个自定义层时
+它不知道该怎么做
+
+00:28:47.761 --> 00:28:51.398 align:middle line:-2
+所以我传入的这个函数
+convert_grid_sampler
+
+00:28:51.965 --> 00:28:54.268 align:middle line:-1
+将帮助我的转换器做到这一点
+
+00:28:54.868 --> 00:28:57.171 align:middle line:-1
+我们来看看这个函数长什么样
+

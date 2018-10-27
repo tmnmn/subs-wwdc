@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.636 --> 00:17:01.046 A:middle
+just as a timestamp, they're
+
+00:17:01.046 --> 00:17:01.816 A:middle
+treated differently.
+
+00:17:02.586 --> 00:17:04.705 A:middle
+And if the column being targeted
+
+00:17:04.705 --> 00:17:06.945 A:middle
+has a magnitude, meaning that it
+
+00:17:06.945 --> 00:17:08.296 A:middle
+can draw a bar graph out of it,
+
+00:17:08.296 --> 00:17:10.026 A:middle
+it will draw a bar graph like
+
+00:17:10.066 --> 00:17:10.396 A:middle
+this.
+
+00:17:11.126 --> 00:17:13.136 A:middle
+An alternative here is our Life
+
+00:17:13.136 --> 00:17:15.476 A:middle
+Cycle lane where it's still an
+
+00:17:15.476 --> 00:17:16.935 A:middle
+interval schema but we're
+
+00:17:16.935 --> 00:17:18.756 A:middle
+targeting a column that's a
+
+00:17:18.756 --> 00:17:20.366 A:middle
+state and the state does not
+
+00:17:20.366 --> 00:17:21.955 A:middle
+inherently have a magnitude.
+
+00:17:22.185 --> 00:17:23.126 A:middle
+So it doesn't make sense to draw
+
+00:17:23.126 --> 00:17:23.896 A:middle
+a bar graph there.
+
+00:17:24.516 --> 00:17:25.476 A:middle
+So the Standard UI will
+
+00:17:25.476 --> 00:17:27.006 A:middle
+automatically pick a state style
+
+00:17:27.006 --> 00:17:28.976 A:middle
+treatment which involves drawing
+
+00:17:28.976 --> 00:17:31.626 A:middle
+these intervals with a label in
+
+00:17:31.626 --> 00:17:33.096 A:middle
+a rounded rectangle style so you
+
+00:17:33.096 --> 00:17:34.776 A:middle
+can tell it apart from just a
+
+00:17:34.776 --> 00:17:35.656 A:middle
+flat bar graph.
+
+00:17:36.356 --> 00:17:37.296 A:middle
+Now it's really important that
+
+00:17:37.296 --> 00:17:38.336 A:middle
+the Standard UI be able to pick
+
+00:17:38.336 --> 00:17:39.796 A:middle
+these treatments for you because
+
+00:17:39.796 --> 00:17:41.406 A:middle
+that's what keeps Instruments UI
+
+00:17:41.406 --> 00:17:42.086 A:middle
+consistent.
+
+00:17:42.376 --> 00:17:43.616 A:middle
+So if you define a state graph
+
+00:17:43.616 --> 00:17:45.356 A:middle
+and we define a state graph, the
+
+00:17:45.356 --> 00:17:46.896 A:middle
+Standard UI will enforce that
+
+00:17:46.896 --> 00:17:48.046 A:middle
+they look the same way, which
+
+00:17:48.296 --> 00:17:49.686 A:middle
+makes it a lot easier for user
+
+00:17:49.686 --> 00:17:51.526 A:middle
+of Instruments to move from
+
+00:17:51.526 --> 00:17:54.496 A:middle
+instrument to instrument.
+
+00:17:54.496 --> 00:17:57.156 A:middle
+Now if you want to create graphs
+
+00:17:57.156 --> 00:17:58.236 A:middle
+or the number of lanes
+
+00:17:58.236 --> 00:17:59.606 A:middle
+dynamically, based on the
+
+00:17:59.606 --> 00:18:00.926 A:middle
+contents of the data, you can
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.356 --> 00:26:00.326 A:middle
+I think this can be a lot
+
+00:26:00.326 --> 00:26:00.776 A:middle
+smoother.
+
+00:26:06.066 --> 00:26:07.796 A:middle
+So, here's my carousel class.
+
+00:26:08.516 --> 00:26:10.036 A:middle
+I want to focus on this method
+
+00:26:10.036 --> 00:26:11.336 A:middle
+here, setCurrentSlide.
+
+00:26:11.896 --> 00:26:13.086 A:middle
+This is the method that's called
+
+00:26:13.086 --> 00:26:14.256 A:middle
+when the button is clicked to
+
+00:26:14.256 --> 00:26:15.656 A:middle
+transition to the slide at the
+
+00:26:15.656 --> 00:26:16.476 A:middle
+given index.
+
+00:26:18.816 --> 00:26:20.376 A:middle
+Because each slide isn't
+
+00:26:20.376 --> 00:26:21.896 A:middle
+immediately visible on page
+
+00:26:21.896 --> 00:26:24.056 A:middle
+load, my carousel only loads the
+
+00:26:24.056 --> 00:26:25.826 A:middle
+next slide's image when the user
+
+00:26:25.826 --> 00:26:26.826 A:middle
+taps the button to advance to
+
+00:26:26.826 --> 00:26:26.976 A:middle
+it.
+
+00:26:31.176 --> 00:26:33.036 A:middle
+The problem that we're seeing is
+
+00:26:33.086 --> 00:26:35.266 A:middle
+that the transition is happening
+
+00:26:35.866 --> 00:26:36.506 A:middle
+immediately.
+
+00:26:37.716 --> 00:26:39.026 A:middle
+It's not waiting for the image
+
+00:26:39.026 --> 00:26:39.446 A:middle
+to load.
+
+00:26:39.956 --> 00:26:41.356 A:middle
+And, after the image has loaded,
+
+00:26:41.356 --> 00:26:42.746 A:middle
+it still needs to be decoded
+
+00:26:42.746 --> 00:26:43.676 A:middle
+before it's ready to be
+
+00:26:43.676 --> 00:26:44.816 A:middle
+displayed on the screen.
+
+00:26:45.876 --> 00:26:47.486 A:middle
+So, what I really want to do is
+
+00:26:47.486 --> 00:26:49.036 A:middle
+wait until the image has been
+
+00:26:49.036 --> 00:26:51.316 A:middle
+loaded and decoded, and I'm sure
+
+00:26:51.316 --> 00:26:52.466 A:middle
+that we can show the image.
+
+00:26:53.156 --> 00:26:54.996 A:middle
+And, I can use the new decode
+
+00:26:54.996 --> 00:26:57.486 A:middle
+method on the HTML image element
+
+00:26:58.936 --> 00:27:01.276 A:middle
+to make this a lot better.
+

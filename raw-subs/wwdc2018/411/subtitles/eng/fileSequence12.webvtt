@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.736 --> 00:12:00.356 A:middle
+This will now again compile our
+
+00:12:01.166 --> 00:12:04.186 A:middle
+package and run the tests in
+
+00:12:04.186 --> 00:12:05.236 A:middle
+just a few seconds.
+
+00:12:09.136 --> 00:12:10.716 A:middle
+And as you can see, we get a
+
+00:12:10.716 --> 00:12:13.236 A:middle
+nice progress bar and the tests
+
+00:12:13.286 --> 00:12:14.536 A:middle
+finish really fast, because we
+
+00:12:14.536 --> 00:12:15.636 A:middle
+were running them in parallel.
+
+00:12:18.026 --> 00:12:19.566 A:middle
+Let's switch back to the slides
+
+00:12:19.566 --> 00:12:19.836 A:middle
+again.
+
+00:12:26.536 --> 00:12:27.776 A:middle
+Next, I'm going to talk to you
+
+00:12:27.776 --> 00:12:29.456 A:middle
+about the design of the Swift
+
+00:12:29.456 --> 00:12:29.936 A:middle
+Package Manager.
+
+00:12:36.216 --> 00:12:37.986 A:middle
+SwiftPM follows Swift's
+
+00:12:37.986 --> 00:12:38.606 A:middle
+philosophy.
+
+00:12:38.986 --> 00:12:40.706 A:middle
+It is fast, safe, and
+
+00:12:40.706 --> 00:12:41.146 A:middle
+expressive.
+
+00:12:41.816 --> 00:12:44.736 A:middle
+It is safe due to its isolated
+
+00:12:44.736 --> 00:12:46.426 A:middle
+build environment and the fact
+
+00:12:46.426 --> 00:12:48.046 A:middle
+the builds cannot run arbitrary
+
+00:12:48.046 --> 00:12:48.546 A:middle
+commands.
+
+00:12:49.256 --> 00:12:52.116 A:middle
+It is fast due to using a build
+
+00:12:52.116 --> 00:12:53.896 A:middle
+engine that is scalable to large
+
+00:12:53.896 --> 00:12:54.886 A:middle
+dependency graphs.
+
+00:12:55.416 --> 00:12:58.526 A:middle
+And it's expressive due to using
+
+00:12:58.636 --> 00:12:59.926 A:middle
+the Swift language for the
+
+00:12:59.926 --> 00:13:00.716 A:middle
+package manifest.
+

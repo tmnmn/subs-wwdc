@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.566 --> 00:13:01.456 A:middle
+The App Store is charging the
+
+00:13:01.456 --> 00:13:02.276 A:middle
+user's credit card in the
+
+00:13:02.276 --> 00:13:03.626 A:middle
+background and you're using
+
+00:13:03.626 --> 00:13:05.046 A:middle
+StoreKit to process these
+
+00:13:05.046 --> 00:13:06.436 A:middle
+transactions as they come in
+
+00:13:06.836 --> 00:13:07.306 A:middle
+through the app.
+
+00:13:07.306 --> 00:13:09.086 A:middle
+And then your server is updating
+
+00:13:09.086 --> 00:13:10.566 A:middle
+and maintaining this latest
+
+00:13:10.566 --> 00:13:12.106 A:middle
+expires date field on your
+
+00:13:12.106 --> 00:13:12.436 A:middle
+server.
+
+00:13:12.436 --> 00:13:13.706 A:middle
+So you've got that server-side
+
+00:13:13.976 --> 00:13:15.176 A:middle
+source of truth as to whether or
+
+00:13:15.176 --> 00:13:16.466 A:middle
+not a user is subscribed.
+
+00:13:17.746 --> 00:13:18.906 A:middle
+Let's now introduce a slightly
+
+00:13:18.906 --> 00:13:20.056 A:middle
+more complex example though to
+
+00:13:20.056 --> 00:13:21.236 A:middle
+the mix, which is maybe that you
+
+00:13:21.236 --> 00:13:22.236 A:middle
+offer your service through a
+
+00:13:22.236 --> 00:13:23.196 A:middle
+website as well.
+
+00:13:24.276 --> 00:13:25.956 A:middle
+Now when the user accesses your
+
+00:13:25.956 --> 00:13:26.956 A:middle
+subscription service through a
+
+00:13:26.956 --> 00:13:29.006 A:middle
+website you know based on that
+
+00:13:29.006 --> 00:13:30.156 A:middle
+latest expires date field that
+
+00:13:30.156 --> 00:13:31.216 A:middle
+the user is a subscriber.
+
+00:13:32.606 --> 00:13:34.006 A:middle
+But as much as we'd like to
+
+00:13:34.076 --> 00:13:35.296 A:middle
+think that people use our apps
+
+00:13:35.356 --> 00:13:37.296 A:middle
+all the time let's say that the
+
+00:13:37.296 --> 00:13:38.266 A:middle
+user doesn't use your app for a
+
+00:13:38.266 --> 00:13:39.006 A:middle
+number of days.
+
+00:13:39.546 --> 00:13:40.426 A:middle
+And then during this time the
+
+00:13:40.426 --> 00:13:41.606 A:middle
+App Store actually successfully
+
+00:13:41.606 --> 00:13:43.696 A:middle
+renews a user's subscription in
+
+00:13:43.696 --> 00:13:44.226 A:middle
+the background.
+
+00:13:45.226 --> 00:13:46.526 A:middle
+When the user tries to access
+
+00:13:46.696 --> 00:13:47.496 A:middle
+your servers through your
+
+00:13:47.496 --> 00:13:49.716 A:middle
+website that latest expires date
+
+00:13:49.716 --> 00:13:50.776 A:middle
+is now out of date because your
+
+00:13:50.776 --> 00:13:52.036 A:middle
+server hasn't learned about that
+
+00:13:52.036 --> 00:13:52.756 A:middle
+new transaction.
+
+00:13:52.826 --> 00:13:54.606 A:middle
+So how can your server know
+
+00:13:54.606 --> 00:13:56.036 A:middle
+about this transaction that's
+
+00:13:56.036 --> 00:13:59.926 A:middle
+occurred on the App Store?
+

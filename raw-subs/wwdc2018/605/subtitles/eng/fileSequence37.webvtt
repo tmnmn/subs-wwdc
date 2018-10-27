@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.296 --> 00:37:00.586 A:middle
+Each frame, the shader updates
+
+00:37:00.586 --> 00:37:02.056 A:middle
+the geometry of the match to its
+
+00:37:02.056 --> 00:37:02.586 A:middle
+new position.
+
+00:37:03.296 --> 00:37:04.776 A:middle
+By taking advantage of the GPU
+
+00:37:04.776 --> 00:37:06.316 A:middle
+in this way, we get a great
+
+00:37:06.316 --> 00:37:08.936 A:middle
+effect without it impacting the
+
+00:37:08.936 --> 00:37:09.646 A:middle
+main CPU.
+
+00:37:12.056 --> 00:37:13.936 A:middle
+So, lastly I'd like to talk
+
+00:37:13.936 --> 00:37:15.186 A:middle
+about the audio implementation
+
+00:37:15.186 --> 00:37:15.746 A:middle
+in SwiftShot.
+
+00:37:16.586 --> 00:37:18.156 A:middle
+Audio can make any game even
+
+00:37:18.156 --> 00:37:19.726 A:middle
+more immersive and engaging.
+
+00:37:20.756 --> 00:37:22.096 A:middle
+We knew we wanted to provide
+
+00:37:22.096 --> 00:37:23.346 A:middle
+realistic sound effects
+
+00:37:23.536 --> 00:37:25.006 A:middle
+positioned properly in the world
+
+00:37:25.286 --> 00:37:26.366 A:middle
+for that really immersive
+
+00:37:26.366 --> 00:37:26.896 A:middle
+experience.
+
+00:37:26.896 --> 00:37:28.046 A:middle
+And giving the user great
+
+00:37:28.046 --> 00:37:28.866 A:middle
+feedback on how they're
+
+00:37:28.866 --> 00:37:29.816 A:middle
+interacting with that world.
+
+00:37:30.926 --> 00:37:31.946 A:middle
+We also wanted to make sure it
+
+00:37:31.946 --> 00:37:33.626 A:middle
+was fast and pay attention to
+
+00:37:33.626 --> 00:37:35.096 A:middle
+how much adding the audio would
+
+00:37:35.176 --> 00:37:37.046 A:middle
+add to the size of our app.
+
+00:37:37.046 --> 00:37:38.356 A:middle
+So, we came up with what we
+
+00:37:38.356 --> 00:37:39.256 A:middle
+think is a great solution.
+
+00:37:40.336 --> 00:37:42.156 A:middle
+We created a few representative
+
+00:37:42.156 --> 00:37:44.036 A:middle
+sound samples using some toys we
+
+00:37:44.036 --> 00:37:45.626 A:middle
+borrowed from children of people
+
+00:37:45.626 --> 00:37:47.406 A:middle
+on the team.
+
+00:37:47.406 --> 00:37:49.246 A:middle
+We then recorded those and used
+
+00:37:49.246 --> 00:37:51.656 A:middle
+those to combine them into an AU
+
+00:37:51.656 --> 00:37:53.516 A:middle
+preset file and use those to
+
+00:37:53.516 --> 00:37:55.256 A:middle
+build a custom Midi instrument
+
+00:37:55.496 --> 00:37:57.506 A:middle
+in AV Foundation using AV Audio
+
+00:37:57.506 --> 00:37:58.636 A:middle
+Unit Midi Instrument.
+
+00:37:59.486 --> 00:38:00.746 A:middle
+That made it easy to quickly
+

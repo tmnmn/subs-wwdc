@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.536 --> 00:38:00.066 A:middle
+Well, one unfortunate answer is
+
+00:38:00.066 --> 00:38:01.246 A:middle
+that there's no one size that
+
+00:38:01.246 --> 00:38:02.916 A:middle
+fits all solution here, but you
+
+00:38:02.916 --> 00:38:03.846 A:middle
+can try a couple of things.
+
+00:38:04.326 --> 00:38:05.536 A:middle
+First, you can play with fast or
+
+00:38:05.536 --> 00:38:06.986 A:middle
+accurate, and you can figure out
+
+00:38:06.986 --> 00:38:09.186 A:middle
+that your particular use case
+
+00:38:09.266 --> 00:38:10.736 A:middle
+works better with a particular
+
+00:38:10.736 --> 00:38:11.176 A:middle
+algorithm.
+
+00:38:14.956 --> 00:38:16.546 A:middle
+If you're in charge of selecting
+
+00:38:16.546 --> 00:38:18.966 A:middle
+bounding box, try to find a
+
+00:38:18.966 --> 00:38:21.486 A:middle
+select salient object in the
+
+00:38:22.636 --> 00:38:22.766 A:middle
+same.
+
+00:38:22.976 --> 00:38:23.956 A:middle
+Which confidence threshold to
+
+00:38:23.956 --> 00:38:24.236 A:middle
+use?
+
+00:38:25.386 --> 00:38:26.676 A:middle
+Again, there is no single answer
+
+00:38:26.676 --> 00:38:26.936 A:middle
+here.
+
+00:38:27.266 --> 00:38:28.286 A:middle
+You will find that some use
+
+00:38:28.286 --> 00:38:29.366 A:middle
+cases work with certain
+
+00:38:29.366 --> 00:38:30.816 A:middle
+thresholds while other use cases
+
+00:38:30.816 --> 00:38:32.746 A:middle
+work with other thresholds.
+
+00:38:34.656 --> 00:38:36.106 A:middle
+There's one more technique that
+
+00:38:36.106 --> 00:38:36.836 A:middle
+I could recommend.
+
+00:38:37.146 --> 00:38:37.996 A:middle
+Let's say you have a long
+
+00:38:37.996 --> 00:38:39.086 A:middle
+tracking sequence, and for the
+
+00:38:39.086 --> 00:38:40.556 A:middle
+sake of this example, 1,000
+
+00:38:40.556 --> 00:38:40.936 A:middle
+frames.
+
+00:38:42.266 --> 00:38:43.616 A:middle
+If you start that tracking
+
+00:38:43.616 --> 00:38:45.486 A:middle
+sequence, your object that you
+
+00:38:45.486 --> 00:38:46.976 A:middle
+selected in the first frame will
+
+00:38:46.976 --> 00:38:48.236 A:middle
+start deviating, and it'll
+
+00:38:48.236 --> 00:38:50.496 A:middle
+change everything about itself
+
+00:38:50.996 --> 00:38:52.756 A:middle
+the more you go off of that
+
+00:38:52.756 --> 00:38:53.376 A:middle
+initial frame.
+
+00:38:54.356 --> 00:38:55.786 A:middle
+What you can do instead, you can
+
+00:38:55.786 --> 00:38:57.186 A:middle
+break that sequence into smaller
+
+00:38:57.186 --> 00:38:58.606 A:middle
+subsequences, let's say 50
+
+00:38:58.606 --> 00:38:59.136 A:middle
+frames each.
+
+00:38:59.706 --> 00:39:01.576 A:middle
+You run your detector, you track
+

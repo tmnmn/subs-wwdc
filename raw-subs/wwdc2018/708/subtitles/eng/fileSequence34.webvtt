@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.736 --> 00:34:01.096 A:middle
+needed encouragement to someone
+
+00:34:01.096 --> 00:34:02.126 A:middle
+who doesn't always close his
+
+00:34:02.126 --> 00:34:02.506 A:middle
+rings.
+
+00:34:04.826 --> 00:34:06.336 A:middle
+Or even a completely new model
+
+00:34:06.336 --> 00:34:07.776 A:middle
+type we haven't even imagined
+
+00:34:07.776 --> 00:34:08.886 A:middle
+yet that enables novel
+
+00:34:08.886 --> 00:34:10.286 A:middle
+experiences for your users.
+
+00:34:11.076 --> 00:34:12.266 A:middle
+In all these cases, it would be
+
+00:34:12.266 --> 00:34:13.116 A:middle
+great if we could have the
+
+00:34:13.116 --> 00:34:14.545 A:middle
+simplicity and portability of
+
+00:34:14.545 --> 00:34:16.496 A:middle
+Core ML without having to
+
+00:34:16.496 --> 00:34:18.106 A:middle
+sacrifice the flexibility to
+
+00:34:18.106 --> 00:34:19.096 A:middle
+keep up with the field.
+
+00:34:19.815 --> 00:34:22.005 A:middle
+So we are introducing custom
+
+00:34:22.005 --> 00:34:22.505 A:middle
+models.
+
+00:34:23.496 --> 00:34:25.056 A:middle
+A Core ML custom model allows
+
+00:34:25.056 --> 00:34:26.045 A:middle
+you to encapsulate the
+
+00:34:26.045 --> 00:34:27.315 A:middle
+implementation of a part of a
+
+00:34:27.315 --> 00:34:28.576 A:middle
+computation that's missing
+
+00:34:28.735 --> 00:34:29.686 A:middle
+inside Core ML.
+
+00:34:30.436 --> 00:34:32.045 A:middle
+Just like for custom layers, the
+
+00:34:32.045 --> 00:34:33.286 A:middle
+model stores the name of an
+
+00:34:33.286 --> 00:34:34.456 A:middle
+implementation class.
+
+00:34:34.956 --> 00:34:36.216 A:middle
+The class fills the role of the
+
+00:34:36.216 --> 00:34:37.606 A:middle
+general inference engine for
+
+00:34:37.606 --> 00:34:38.656 A:middle
+this type of model.
+
+00:34:39.116 --> 00:34:40.906 A:middle
+Then the parameters are stored
+
+00:34:40.906 --> 00:34:42.235 A:middle
+in the ML Model just like
+
+00:34:42.266 --> 00:34:42.626 A:middle
+before.
+
+00:34:43.386 --> 00:34:44.826 A:middle
+This allows the model to be
+
+00:34:44.826 --> 00:34:46.366 A:middle
+updated as an asset in your app
+
+00:34:46.366 --> 00:34:48.286 A:middle
+without having to touch code.
+
+00:34:50.005 --> 00:34:51.806 A:middle
+And implementing a custom model
+
+00:34:51.806 --> 00:34:52.556 A:middle
+is simple as well.
+
+00:34:52.896 --> 00:34:54.016 A:middle
+We expose a protocol,
+
+00:34:54.065 --> 00:34:55.216 A:middle
+MLCustomModel.
+
+00:34:55.466 --> 00:34:56.485 A:middle
+You provide methods to
+
+00:34:56.485 --> 00:34:57.876 A:middle
+initialize based on the data
+
+00:34:57.876 --> 00:34:59.126 A:middle
+stored in the ML Model.
+
+00:34:59.126 --> 00:35:01.076 A:middle
+And you provide a method to
+

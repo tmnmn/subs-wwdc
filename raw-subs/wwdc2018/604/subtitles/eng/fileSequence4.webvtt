@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.626 --> 00:04:01.146 A:middle
+If the interface needed to be
+
+00:04:01.146 --> 00:04:02.416 A:middle
+predictable to prevent
+
+00:04:02.716 --> 00:04:04.056 A:middle
+developers from falling into
+
+00:04:04.136 --> 00:04:08.586 A:middle
+hidden pitfalls in the API every
+
+00:04:08.586 --> 00:04:09.926 A:middle
+call should have an obvious
+
+00:04:09.926 --> 00:04:12.146 A:middle
+consequence and few operations
+
+00:04:12.206 --> 00:04:13.846 A:middle
+should be performed implicitly.
+
+00:04:14.336 --> 00:04:16.476 A:middle
+Part of this predictability
+
+00:04:16.576 --> 00:04:17.805 A:middle
+would be the need to control
+
+00:04:17.805 --> 00:04:19.916 A:middle
+where resources were placed and
+
+00:04:19.956 --> 00:04:21.826 A:middle
+if and when synchronization was
+
+00:04:21.826 --> 00:04:22.376 A:middle
+necessary.
+
+00:04:22.966 --> 00:04:26.156 A:middle
+Now Apple had a few other
+
+00:04:26.156 --> 00:04:26.686 A:middle
+requirements.
+
+00:04:27.896 --> 00:04:29.456 A:middle
+We wanted this interface to be
+
+00:04:29.456 --> 00:04:31.416 A:middle
+approachable, it needed to have
+
+00:04:31.416 --> 00:04:32.536 A:middle
+the right balance between
+
+00:04:32.536 --> 00:04:34.306 A:middle
+low-level control and clear
+
+00:04:34.306 --> 00:04:36.436 A:middle
+usage because the easier it is
+
+00:04:36.436 --> 00:04:37.556 A:middle
+for you to understand something
+
+00:04:37.876 --> 00:04:39.156 A:middle
+the more effectively and
+
+00:04:39.206 --> 00:04:40.566 A:middle
+efficiently you can use it.
+
+00:04:41.976 --> 00:04:43.766 A:middle
+And of course, we designed Metal
+
+00:04:43.766 --> 00:04:46.516 A:middle
+to map well to all modern GPUs.
+
+00:04:46.516 --> 00:04:49.486 A:middle
+In particular, we knew that
+
+00:04:49.486 --> 00:04:50.446 A:middle
+hardware coming down the
+
+00:04:50.496 --> 00:04:52.666 A:middle
+pipeline needed software that
+
+00:04:52.666 --> 00:04:53.216 A:middle
+could push it.
+
+00:04:53.906 --> 00:04:55.556 A:middle
+This included the Apple designed
+
+00:04:55.696 --> 00:04:58.486 A:middle
+GPU of the A11 bionic.
+
+00:04:59.956 --> 00:05:01.326 A:middle
+So how is Metal different than
+

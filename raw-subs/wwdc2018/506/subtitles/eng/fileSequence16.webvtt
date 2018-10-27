@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.716 --> 00:16:01.476 A:middle
+you can start playback.
+
+00:16:01.766 --> 00:16:03.626 A:middle
+You do this using the setQueue
+
+00:16:03.626 --> 00:16:03.996 A:middle
+method.
+
+00:16:04.946 --> 00:16:06.576 A:middle
+Here we're supplying the idea of
+
+00:16:06.576 --> 00:16:07.926 A:middle
+an album, and MusicKit will
+
+00:16:07.926 --> 00:16:10.286 A:middle
+handle fetching the metadata and
+
+00:16:10.286 --> 00:16:11.206 A:middle
+then setting that queue.
+
+00:16:12.346 --> 00:16:13.496 A:middle
+If you have a content object
+
+00:16:13.496 --> 00:16:15.206 A:middle
+that we saw previously, you can
+
+00:16:15.206 --> 00:16:16.526 A:middle
+pass that in directly, and it
+
+00:16:16.526 --> 00:16:19.946 A:middle
+will figure out what to do.
+
+00:16:19.946 --> 00:16:21.176 A:middle
+setQueue returns a promise.
+
+00:16:22.166 --> 00:16:23.276 A:middle
+When the queue is fully loaded,
+
+00:16:23.276 --> 00:16:24.206 A:middle
+you can start playback.
+
+00:16:24.256 --> 00:16:24.966 A:middle
+Here we're going to start
+
+00:16:24.966 --> 00:16:26.556 A:middle
+playback automatically with
+
+00:16:26.556 --> 00:16:30.996 A:middle
+music.play.
+
+00:16:31.206 --> 00:16:32.176 A:middle
+Once those songs are playing,
+
+00:16:32.176 --> 00:16:33.246 A:middle
+you might want to be able to
+
+00:16:33.246 --> 00:16:34.616 A:middle
+control that.
+
+00:16:34.616 --> 00:16:36.356 A:middle
+You can skip to the next or
+
+00:16:36.356 --> 00:16:37.106 A:middle
+previous item.
+
+00:16:37.146 --> 00:16:38.000 A:middle
+You can pause.
+
+00:16:42.406 --> 00:16:44.056 A:middle
+You can present actions in your
+
+00:16:44.056 --> 00:16:46.016 A:middle
+UI that will let a user quickly
+
+00:16:46.016 --> 00:16:47.196 A:middle
+add those songs, albums, or
+
+00:16:47.196 --> 00:16:49.056 A:middle
+playlists they're browsing to
+
+00:16:49.056 --> 00:16:50.366 A:middle
+their own iCloud Music Library.
+
+00:16:51.236 --> 00:16:52.746 A:middle
+We have an addToLibrary method
+
+00:16:52.746 --> 00:16:52.986 A:middle
+here.
+
+00:16:52.986 --> 00:16:58.646 A:middle
+You can do that same, you can do
+
+00:16:58.646 --> 00:17:00.216 A:middle
+those same 3 calls in batch.
+

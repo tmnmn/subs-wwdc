@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.716 --> 00:36:00.966 A:middle
+love to show you a demo of that
+
+00:36:00.966 --> 00:36:01.476 A:middle
+in action.
+
+00:36:01.646 --> 00:36:03.276 A:middle
+Specifically, we want to show
+
+00:36:03.276 --> 00:36:04.706 A:middle
+you a demo of training the
+
+00:36:04.706 --> 00:36:06.006 A:middle
+InceptionV3 Object
+
+00:36:06.006 --> 00:36:08.566 A:middle
+Classification Network, using
+
+00:36:08.566 --> 00:36:11.736 A:middle
+TensorFlow, powered by MPS.
+
+00:36:11.806 --> 00:36:15.396 A:middle
+So, for this demo, I will again
+
+00:36:15.396 --> 00:36:17.216 A:middle
+be using a MacBook Pro with an
+
+00:36:17.216 --> 00:36:18.456 A:middle
+attached external GPU.
+
+00:36:19.006 --> 00:36:20.856 A:middle
+So, I will be running TensorFlow
+
+00:36:21.216 --> 00:36:24.336 A:middle
+on this MacBook Pro, and I will
+
+00:36:24.336 --> 00:36:25.876 A:middle
+use an external GPU to train a
+
+00:36:25.876 --> 00:36:27.446 A:middle
+network using MPS.
+
+00:36:27.836 --> 00:36:29.806 A:middle
+So, in this demo setup, I've
+
+00:36:29.806 --> 00:36:32.116 A:middle
+already imported TensorFlow and
+
+00:36:32.496 --> 00:36:34.276 A:middle
+preloaded the InceptionV3
+
+00:36:34.276 --> 00:36:35.986 A:middle
+Network and a training data set.
+
+00:36:36.236 --> 00:36:37.226 A:middle
+So, now, let's train this
+
+00:36:37.286 --> 00:36:39.376 A:middle
+network for 30 iterations.
+
+00:36:39.376 --> 00:36:42.516 A:middle
+So, you can see how fast this is
+
+00:36:42.516 --> 00:36:42.896 A:middle
+going.
+
+00:36:43.476 --> 00:36:45.076 A:middle
+Again, the entire network, all
+
+00:36:45.076 --> 00:36:46.066 A:middle
+of the primitives, the
+
+00:36:46.066 --> 00:36:47.506 A:middle
+optimizer, and the weight update
+
+00:36:47.506 --> 00:36:49.316 A:middle
+step, everything is running on
+
+00:36:49.316 --> 00:36:50.266 A:middle
+the external GPU.
+
+00:36:50.726 --> 00:36:51.816 A:middle
+And we're already done.
+
+00:36:52.516 --> 00:36:54.266 A:middle
+And as you can see, the training
+
+00:36:54.266 --> 00:36:56.576 A:middle
+rate is approximately 100 images
+
+00:36:56.606 --> 00:36:57.086 A:middle
+per second.
+
+00:36:57.546 --> 00:36:58.906 A:middle
+So, as was stated in the
+
+00:36:59.336 --> 00:37:00.736 A:middle
+platform State of the Union,
+

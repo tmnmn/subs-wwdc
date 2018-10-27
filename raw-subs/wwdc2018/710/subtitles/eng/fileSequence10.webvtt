@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.506 --> 00:10:00.216 A:middle
+For example, here, we have two
+
+00:10:00.216 --> 00:10:01.566 A:middle
+actions here for like and
+
+00:10:01.566 --> 00:10:03.706 A:middle
+comment, and we create a simple
+
+00:10:03.706 --> 00:10:05.336 A:middle
+UNNotificationAction for like
+
+00:10:06.746 --> 00:10:08.376 A:middle
+and a text input action for
+
+00:10:08.376 --> 00:10:08.966 A:middle
+commenting.
+
+00:10:11.596 --> 00:10:12.836 A:middle
+And once we've created these
+
+00:10:12.836 --> 00:10:14.236 A:middle
+actions, we create a new
+
+00:10:14.236 --> 00:10:16.186 A:middle
+category giving it the same
+
+00:10:16.186 --> 00:10:17.616 A:middle
+identifier as the content
+
+00:10:17.616 --> 00:10:19.186 A:middle
+extension where we want these
+
+00:10:19.186 --> 00:10:20.256 A:middle
+actions to be presented.
+
+00:10:20.256 --> 00:10:23.216 A:middle
+And then, we pass it, the two
+
+00:10:23.216 --> 00:10:27.656 A:middle
+new actions that we created.
+
+00:10:27.656 --> 00:10:29.476 A:middle
+Once we've set up this category,
+
+00:10:29.476 --> 00:10:30.406 A:middle
+then we call
+
+00:10:30.406 --> 00:10:32.576 A:middle
+setNotificationCategories on the
+
+00:10:32.576 --> 00:10:34.436 A:middle
+UNNotificationCenter object
+
+00:10:34.436 --> 00:10:35.876 A:middle
+associated with our class,
+
+00:10:36.176 --> 00:10:37.596 A:middle
+giving it the new category that
+
+00:10:37.596 --> 00:10:38.766 A:middle
+we created.
+
+00:10:40.856 --> 00:10:43.276 A:middle
+So by simply doing so, the next
+
+00:10:43.276 --> 00:10:44.266 A:middle
+time when the user goes to your
+
+00:10:44.266 --> 00:10:46.226 A:middle
+content extension we can see
+
+00:10:46.226 --> 00:10:47.486 A:middle
+that these actions are now
+
+00:10:47.486 --> 00:10:49.066 A:middle
+available for them to interact
+
+00:10:49.066 --> 00:10:50.526 A:middle
+with your notification content.
+
+00:10:51.636 --> 00:10:53.216 A:middle
+Now let's take a look at how we
+
+00:10:53.216 --> 00:10:54.856 A:middle
+can handle the responses from
+
+00:10:54.856 --> 00:10:55.516 A:middle
+these actions.
+
+00:10:55.996 --> 00:10:57.306 A:middle
+There are two ways to do that.
+
+00:10:58.636 --> 00:11:00.116 A:middle
+Firstly, you can handle this
+

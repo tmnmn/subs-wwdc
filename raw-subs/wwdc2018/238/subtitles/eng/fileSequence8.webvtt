@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:02.356 --> 00:08:03.946 A:middle
+And it behaves the same way as
+
+00:08:03.946 --> 00:08:04.986 A:middle
+items binding does.
+
+00:08:05.566 --> 00:08:06.686 A:middle
+You require the use of
+
+00:08:06.686 --> 00:08:09.086 A:middle
+prototypes to define the
+
+00:08:09.186 --> 00:08:10.356 A:middle
+elements that data should be
+
+00:08:10.356 --> 00:08:13.526 A:middle
+converted into and this will be
+
+00:08:13.526 --> 00:08:15.536 A:middle
+used as a template when
+
+00:08:15.536 --> 00:08:16.976 A:middle
+generating the final DOM itself.
+
+00:08:20.346 --> 00:08:21.596 A:middle
+Let's take an example to explain
+
+00:08:21.596 --> 00:08:22.286 A:middle
+how this works.
+
+00:08:23.256 --> 00:08:24.766 A:middle
+I am going back to the same
+
+00:08:24.766 --> 00:08:26.536 A:middle
+example of tree items in an
+
+00:08:26.536 --> 00:08:26.916 A:middle
+array.
+
+00:08:27.536 --> 00:08:28.916 A:middle
+We have this very same piece of
+
+00:08:28.916 --> 00:08:30.736 A:middle
+data but in this particular
+
+00:08:30.736 --> 00:08:32.546 A:middle
+situation, we have three
+
+00:08:32.546 --> 00:08:33.655 A:middle
+different menu items.
+
+00:08:34.346 --> 00:08:36.086 A:middle
+And this would be used in a menu
+
+00:08:36.086 --> 00:08:36.326 A:middle
+bar.
+
+00:08:37.676 --> 00:08:39.246 A:middle
+This is the final representation
+
+00:08:39.246 --> 00:08:40.466 A:middle
+we expect to see.
+
+00:08:40.836 --> 00:08:42.796 A:middle
+Basically a menu bar tree, menu
+
+00:08:42.796 --> 00:08:43.635 A:middle
+bar items.
+
+00:08:46.026 --> 00:08:47.846 A:middle
+And this is a very simple way to
+
+00:08:47.846 --> 00:08:50.876 A:middle
+specify the template for it.
+
+00:08:50.876 --> 00:08:52.686 A:middle
+As you can see, it's similar to
+
+00:08:52.686 --> 00:08:54.236 A:middle
+how you would do items binding.
+
+00:08:54.756 --> 00:08:56.196 A:middle
+It has prototypes that's used to
+
+00:08:56.196 --> 00:08:58.386 A:middle
+map data to elements and it has
+
+00:08:58.386 --> 00:08:59.516 A:middle
+a binding expression.
+

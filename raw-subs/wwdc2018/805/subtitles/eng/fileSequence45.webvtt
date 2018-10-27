@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.256 --> 00:45:00.246 A:middle
+modern 3D rendering.
+
+00:45:00.496 --> 00:45:02.716 A:middle
+It's a pretty complex topic that
+
+00:45:02.876 --> 00:45:03.916 A:middle
+will take a lot more time than
+
+00:45:03.916 --> 00:45:05.486 A:middle
+we actually have in this session
+
+00:45:05.486 --> 00:45:06.156 A:middle
+to go over.
+
+00:45:06.576 --> 00:45:08.266 A:middle
+But, the basic concept describes
+
+00:45:08.376 --> 00:45:09.856 A:middle
+the ability to take the
+
+00:45:09.856 --> 00:45:11.356 A:middle
+application of your different
+
+00:45:11.356 --> 00:45:12.796 A:middle
+material properties onto your
+
+00:45:12.796 --> 00:45:14.766 A:middle
+mesh, in order to have it react
+
+00:45:14.956 --> 00:45:16.666 A:middle
+realistically to the simulated
+
+00:45:16.666 --> 00:45:18.866 A:middle
+lights found in your AR scene.
+
+00:45:19.456 --> 00:45:20.546 A:middle
+And, moving forward, all the
+
+00:45:20.546 --> 00:45:21.206 A:middle
+materials that we'll be
+
+00:45:21.206 --> 00:45:22.696 A:middle
+discussing will conform to this
+
+00:45:22.696 --> 00:45:23.436 A:middle
+shading technique.
+
+00:45:24.586 --> 00:45:25.296 A:middle
+If you want further details
+
+00:45:25.296 --> 00:45:26.376 A:middle
+about this concept, there's a
+
+00:45:26.376 --> 00:45:29.596 A:middle
+great WWDC 2016 talk that goes
+
+00:45:29.596 --> 00:45:30.896 A:middle
+over details about
+
+00:45:30.896 --> 00:45:32.036 A:middle
+physically-based rendering as it
+
+00:45:32.036 --> 00:45:33.186 A:middle
+applies to SceneKit, called
+
+00:45:33.416 --> 00:45:34.736 A:middle
+Advances in SceneKit Rendering.
+
+00:45:34.736 --> 00:45:37.276 A:middle
+Now, with that said, let's start
+
+00:45:37.356 --> 00:45:38.466 A:middle
+talking about our first material
+
+00:45:38.466 --> 00:45:40.056 A:middle
+property, albedo, or what is
+
+00:45:40.056 --> 00:45:41.296 A:middle
+sometimes lovingly referred to
+
+00:45:41.296 --> 00:45:42.836 A:middle
+as the base or diffuse color
+
+00:45:42.836 --> 00:45:43.316 A:middle
+property.
+
+00:45:44.616 --> 00:45:45.516 A:middle
+So, let's jump back into
+
+00:45:45.516 --> 00:45:46.076 A:middle
+CampfiAR.
+
+00:45:47.016 --> 00:45:48.006 A:middle
+Previously our base measure's
+
+00:45:48.006 --> 00:45:48.886 A:middle
+looking a little bit boring,
+
+00:45:49.146 --> 00:45:50.066 A:middle
+with the gray material
+
+00:45:50.066 --> 00:45:51.626 A:middle
+associated with it, but after
+
+00:45:51.676 --> 00:45:52.956 A:middle
+you apply albedo, you start to
+
+00:45:52.956 --> 00:45:54.356 A:middle
+see that it looks a lot better.
+
+00:45:54.766 --> 00:45:55.756 A:middle
+But, the campfire is still
+
+00:45:55.756 --> 00:45:56.996 A:middle
+missing a lot of those small,
+
+00:45:57.076 --> 00:45:58.436 A:middle
+finite details that were
+
+00:45:58.436 --> 00:45:59.456 A:middle
+originally found in that
+
+00:45:59.456 --> 00:46:00.406 A:middle
+high-density mesh.
+

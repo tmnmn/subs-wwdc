@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.886 --> 00:32:01.426 A:middle
+added an ORK ordered task of
+
+00:32:01.426 --> 00:32:02.386 A:middle
+type speech recognition.
+
+00:32:02.956 --> 00:32:05.106 A:middle
+And if you notice, one of the
+
+00:32:05.106 --> 00:32:06.166 A:middle
+parameters is the speech
+
+00:32:06.166 --> 00:32:07.916 A:middle
+recognizer locale, which is an
+
+00:32:08.066 --> 00:32:09.586 A:middle
+item provided by ResearchKit
+
+00:32:09.906 --> 00:32:12.076 A:middle
+that represent all the locales
+
+00:32:12.136 --> 00:32:13.306 A:middle
+that are supported by speech
+
+00:32:13.306 --> 00:32:15.206 A:middle
+recognition API, so that you, as
+
+00:32:15.206 --> 00:32:16.566 A:middle
+developers don't have to worry
+
+00:32:16.566 --> 00:32:18.376 A:middle
+about conforming if your locale
+
+00:32:18.376 --> 00:32:19.476 A:middle
+is supported by these speech
+
+00:32:19.476 --> 00:32:20.096 A:middle
+recognition API.
+
+00:32:21.436 --> 00:32:22.776 A:middle
+Now, let's move on to our
+
+00:32:22.776 --> 00:32:23.486 A:middle
+assessment manager.
+
+00:32:23.996 --> 00:32:26.816 A:middle
+As Gabriel mentioned, we have a
+
+00:32:26.816 --> 00:32:28.186 A:middle
+variable call manager, which is
+
+00:32:28.186 --> 00:32:29.456 A:middle
+of type see and movement
+
+00:32:29.576 --> 00:32:30.396 A:middle
+disorder manager.
+
+00:32:30.966 --> 00:32:32.436 A:middle
+And if you notice, we have a
+
+00:32:32.436 --> 00:32:33.526 A:middle
+function that calls the
+
+00:32:33.526 --> 00:32:35.266 A:middle
+monitorKinesias method for the
+
+00:32:35.266 --> 00:32:36.716 A:middle
+maximum duration of seven days.
+
+00:32:37.396 --> 00:32:38.536 A:middle
+Let's call this matter in our
+
+00:32:38.536 --> 00:32:39.156 A:middle
+initializer.
+
+00:32:40.736 --> 00:32:43.026 A:middle
+Now, whoever creates an object
+
+00:32:43.366 --> 00:32:45.346 A:middle
+of a type assessment manager
+
+00:32:45.716 --> 00:32:47.076 A:middle
+will simply start the tremor and
+
+00:32:47.076 --> 00:32:48.086 A:middle
+dyskinesia symptom query.
+
+00:32:49.096 --> 00:32:50.056 A:middle
+Once we have collected these
+
+00:32:50.056 --> 00:32:51.586 A:middle
+data, we need a way to query
+
+00:32:51.586 --> 00:32:52.476 A:middle
+these data points also.
+
+00:32:52.826 --> 00:32:53.976 A:middle
+So, let's go ahead and add a
+
+00:32:53.976 --> 00:32:55.476 A:middle
+method that record these data.
+
+00:32:56.516 --> 00:32:57.966 A:middle
+I add a new, query new
+
+00:32:57.966 --> 00:32:59.896 A:middle
+assessments method, where I'm
+
+00:32:59.896 --> 00:33:01.126 A:middle
+calling the query tremor method
+

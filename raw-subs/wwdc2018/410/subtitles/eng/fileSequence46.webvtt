@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:00.256 --> 00:46:01.826 A:middle
+To do this, I will create file
+
+00:46:01.826 --> 00:46:03.736 A:middle
+that I previously referenced in
+
+00:46:03.736 --> 00:46:04.766 A:middle
+modeler definition.
+
+00:46:05.566 --> 00:46:07.256 A:middle
+To create Clips file, you go to
+
+00:46:07.256 --> 00:46:12.796 A:middle
+File, New, select macOS
+
+00:46:14.276 --> 00:46:15.786 A:middle
+platform, Other section, and
+
+00:46:15.786 --> 00:46:16.366 A:middle
+Clips file.
+
+00:46:19.196 --> 00:46:19.976 A:middle
+I will fill out the name
+
+00:46:23.976 --> 00:46:27.586 A:middle
+and create.
+
+00:46:27.966 --> 00:46:30.286 A:middle
+So algorithm for detecting
+
+00:46:30.286 --> 00:46:31.936 A:middle
+whether one cell is doing more
+
+00:46:31.936 --> 00:46:33.486 A:middle
+than one request at a time will
+
+00:46:33.486 --> 00:46:34.256 A:middle
+be as follows.
+
+00:46:35.046 --> 00:46:37.036 A:middle
+We'll be tracking every request
+
+00:46:37.036 --> 00:46:38.756 A:middle
+as a fact in working memory.
+
+00:46:39.196 --> 00:46:40.856 A:middle
+Firstly, we need to create
+
+00:46:41.046 --> 00:46:42.946 A:middle
+template for this fact.
+
+00:46:44.376 --> 00:46:47.696 A:middle
+So every fact will be storing
+
+00:46:47.786 --> 00:46:49.996 A:middle
+time, caller address, which is
+
+00:46:49.996 --> 00:46:53.236 A:middle
+cell address, signpost id that
+
+00:46:53.236 --> 00:46:56.286 A:middle
+we captured, and the image name
+
+00:46:56.286 --> 00:46:57.286 A:middle
+that we are requesting.
+
+00:46:57.806 --> 00:46:59.346 A:middle
+We will call this fact started
+
+00:46:59.406 --> 00:46:59.796 A:middle
+download.
+

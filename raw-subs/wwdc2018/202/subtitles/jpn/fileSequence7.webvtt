@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.352 --> 00:07:01.288 align:start position:27% line:-1
+トレースを詳しく見ましょう
+
+00:07:01.922 --> 00:07:07.694 align:start position:25% line:-2
+先読みAPIとカレントセルの
+呼び出しが同時です
+
+00:07:08.061 --> 00:07:10.597 align:start position:34% line:-2
+ここで呼び出された
+セルは―
+
+00:07:10.697 --> 00:07:13.567 align:start position:30% line:-1
+将来必要になるセルです
+
+00:07:13.667 --> 00:07:15.836 align:start position:32% line:-1
+処理が重なって起こり
+
+00:07:15.969 --> 00:07:20.908 align:start position:32% line:-2
+CPU上でフレームの
+競合が起こりました
+
+00:07:21.008 --> 00:07:24.778 align:start position:30% line:-2
+まだ必要のないデータを
+取り込んだのです
+
+00:07:25.679 --> 00:07:30.217 align:start position:27% line:-2
+その競合により
+時間がかかってしまいました
+
+00:07:30.651 --> 00:07:32.119 align:start position:34% line:-1
+iOS 12では―
+
+00:07:32.219 --> 00:07:38.091 align:start position:27% line:-2
+バックで実行する先読みの
+スケジュールを改善しました
+
+00:07:38.192 --> 00:07:43.997 align:start position:29% line:-2
+CPUの競合を起こさず
+連続的に実行させるのです
+
+00:07:44.097 --> 00:07:48.168 align:start position:32% line:-2
+カレントセルの
+読み込み時間も短縮し
+
+00:07:48.268 --> 00:07:50.871 align:start position:29% line:-1
+フレームの欠落を防ぎます
+
+00:07:51.772 --> 00:07:56.743 align:start position:43% line:-1
+（拍手）
+
+00:07:56.877 --> 00:07:59.513 align:start position:30% line:-1
+修正後のAppの分析で
+
+00:07:59.613 --> 00:08:05.219 align:start position:29% line:-2
+フレーム欠落の驚くべき
+新たな原因を発見しました
+

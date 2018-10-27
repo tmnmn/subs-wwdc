@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.486 --> 00:33:01.086 A:middle
+So in this example, I have a
+
+00:33:01.086 --> 00:33:02.126 A:middle
+view controller that I'm
+
+00:33:02.126 --> 00:33:03.036 A:middle
+defining in Swift.
+
+00:33:03.316 --> 00:33:04.476 A:middle
+And it has an it an IBOutlet
+
+00:33:04.516 --> 00:33:06.636 A:middle
+property and an IBAction method.
+
+00:33:07.606 --> 00:33:09.526 A:middle
+By default, these will be
+
+00:33:09.526 --> 00:33:11.966 A:middle
+exposed in your generated header
+
+00:33:12.426 --> 00:33:14.166 A:middle
+because they're methods and
+
+00:33:14.166 --> 00:33:15.356 A:middle
+properties exposed to
+
+00:33:15.356 --> 00:33:16.596 A:middle
+Objective-C.
+
+00:33:17.226 --> 00:33:18.426 A:middle
+And they're not declared as
+
+00:33:18.426 --> 00:33:18.876 A:middle
+private.
+
+00:33:20.276 --> 00:33:22.216 A:middle
+But most of the time you don't
+
+00:33:22.216 --> 00:33:23.756 A:middle
+need to expose these to any
+
+00:33:23.756 --> 00:33:24.986 A:middle
+other files in your project.
+
+00:33:25.376 --> 00:33:26.276 A:middle
+They're just for interacting
+
+00:33:26.276 --> 00:33:27.206 A:middle
+with Interface Builder.
+
+00:33:28.286 --> 00:33:30.326 A:middle
+And so, in this case, I can mark
+
+00:33:30.366 --> 00:33:32.636 A:middle
+these private and watch as the
+
+00:33:32.676 --> 00:33:34.396 A:middle
+property and method vanish from
+
+00:33:34.466 --> 00:33:35.396 A:middle
+the generated header.
+
+00:33:37.216 --> 00:33:39.606 A:middle
+Another example of this is when
+
+00:33:39.606 --> 00:33:41.746 A:middle
+dealing with methods exposed to
+
+00:33:41.746 --> 00:33:43.526 A:middle
+Objective-C for use with
+
+00:33:43.526 --> 00:33:45.106 A:middle
+Objective-C runtime features
+
+00:33:45.106 --> 00:33:46.126 A:middle
+like #selector.
+
+00:33:46.786 --> 00:33:47.886 A:middle
+In this case, I'm using
+
+00:33:47.886 --> 00:33:49.476 A:middle
+foundations Notification Center
+
+00:33:49.476 --> 00:33:51.646 A:middle
+API, which takes a selector to
+
+00:33:51.646 --> 00:33:53.166 A:middle
+use as a callback when the
+
+00:33:53.166 --> 00:33:54.326 A:middle
+notification is sent.
+
+00:33:55.896 --> 00:33:58.026 A:middle
+Once again, the only requirement
+
+00:33:58.086 --> 00:33:59.086 A:middle
+here is that the method is
+
+00:33:59.086 --> 00:34:00.816 A:middle
+exposed to Objective-C.
+

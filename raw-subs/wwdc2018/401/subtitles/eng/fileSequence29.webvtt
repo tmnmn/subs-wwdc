@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.356 --> 00:29:00.796 A:middle
+code that is shared between iOS
+
+00:29:00.796 --> 00:29:03.836 A:middle
+and macOS and on iOS you want to
+
+00:29:03.836 --> 00:29:05.206 A:middle
+do something with UIKit.
+
+00:29:05.586 --> 00:29:06.776 A:middle
+On macOS you want to do
+
+00:29:06.776 --> 00:29:08.156 A:middle
+something similar in AppKit.
+
+00:29:08.896 --> 00:29:10.466 A:middle
+So if you want to do this today
+
+00:29:10.466 --> 00:29:11.816 A:middle
+you're going to write a #if
+
+00:29:12.236 --> 00:29:14.186 A:middle
+compile time condition check and
+
+00:29:14.186 --> 00:29:15.386 A:middle
+then you have to list out those
+
+00:29:15.386 --> 00:29:17.216 A:middle
+operating systems where UIKit is
+
+00:29:17.216 --> 00:29:17.736 A:middle
+available.
+
+00:29:18.566 --> 00:29:20.046 A:middle
+So but what you really care
+
+00:29:20.046 --> 00:29:21.836 A:middle
+about is not that you're running
+
+00:29:21.836 --> 00:29:23.016 A:middle
+on this particular operating
+
+00:29:23.016 --> 00:29:24.606 A:middle
+system, but that you can import
+
+00:29:24.606 --> 00:29:25.096 A:middle
+UIKit.
+
+00:29:25.626 --> 00:29:27.956 A:middle
+So on Swift 4.2 we've added a
+
+00:29:27.956 --> 00:29:30.086 A:middle
+has import Build Configuration
+
+00:29:30.086 --> 00:29:32.486 A:middle
+Directive so you can better
+
+00:29:32.486 --> 00:29:33.476 A:middle
+express your intent.
+
+00:29:34.171 --> 00:29:36.171 A:middle
+[ Applause ]
+
+00:29:36.326 --> 00:29:38.026 A:middle
+And with the new features of
+
+00:29:38.026 --> 00:29:39.686 A:middle
+Swift 4.2, I can actually
+
+00:29:39.686 --> 00:29:40.766 A:middle
+improve this code further.
+
+00:29:41.246 --> 00:29:43.326 A:middle
+So let's say that I'm also going
+
+00:29:43.326 --> 00:29:44.966 A:middle
+to explicitly check for AppKit
+
+00:29:45.306 --> 00:29:47.036 A:middle
+and then if neither UIKit nor
+
+00:29:47.036 --> 00:29:48.866 A:middle
+AppKit is available, for example
+
+00:29:48.866 --> 00:29:50.576 A:middle
+if I'm building on Linux, I'm
+
+00:29:50.576 --> 00:29:52.356 A:middle
+going to use the new #error
+
+00:29:52.546 --> 00:29:53.916 A:middle
+build directive to produce a
+
+00:29:53.916 --> 00:29:55.306 A:middle
+friendly compile time error
+
+00:29:55.306 --> 00:29:55.796 A:middle
+message.
+
+00:29:57.206 --> 00:29:59.376 A:middle
+OK, now here's another similar
+
+00:29:59.376 --> 00:30:00.416 A:middle
+source of boilerplate.
+

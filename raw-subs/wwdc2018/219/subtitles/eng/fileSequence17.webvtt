@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.746 --> 00:17:00.966 A:middle
+that work at once.
+
+00:17:00.966 --> 00:17:02.396 A:middle
+We can't parallelize over CPUs
+
+00:17:02.396 --> 00:17:03.346 A:middle
+that don't exist.
+
+00:17:03.906 --> 00:17:07.445 A:middle
+Now, to avoid deadlock when we
+
+00:17:07.445 --> 00:17:08.896 A:middle
+dispatch asynchronously to a
+
+00:17:08.896 --> 00:17:11.556 A:middle
+global queue, GCD is going to
+
+00:17:11.556 --> 00:17:14.016 A:middle
+create new threads to capture
+
+00:17:14.016 --> 00:17:15.215 A:middle
+the work we're asking it to do.
+
+00:17:15.215 --> 00:17:17.046 A:middle
+And then, the CPUs are going to
+
+00:17:17.046 --> 00:17:18.915 A:middle
+spend a lot of time moving
+
+00:17:18.915 --> 00:17:20.726 A:middle
+between those threads to try and
+
+00:17:20.726 --> 00:17:22.886 A:middle
+make incremental progress on all
+
+00:17:22.886 --> 00:17:23.856 A:middle
+of the work we asked the
+
+00:17:23.856 --> 00:17:25.175 A:middle
+operating system to do for us.
+
+00:17:25.506 --> 00:17:26.695 A:middle
+And switching between those
+
+00:17:26.695 --> 00:17:28.086 A:middle
+threads, actually, has a pretty
+
+00:17:28.086 --> 00:17:28.966 A:middle
+significant overhead.
+
+00:17:29.456 --> 00:17:33.796 A:middle
+We'd do a lot better if one or
+
+00:17:33.796 --> 00:17:35.146 A:middle
+more of the CPUs just got a
+
+00:17:35.146 --> 00:17:37.606 A:middle
+chance to get images out the
+
+00:17:37.606 --> 00:17:38.066 A:middle
+door.
+
+00:17:39.196 --> 00:17:39.906 A:middle
+So, we're going to borrow a
+
+00:17:39.906 --> 00:17:42.446 A:middle
+technique that was presented
+
+00:17:42.446 --> 00:17:44.556 A:middle
+last year in the Modernizing
+
+00:17:44.556 --> 00:17:45.856 A:middle
+Grand Central Dispatch Usage
+
+00:17:45.856 --> 00:17:46.216 A:middle
+talk.
+
+00:17:46.326 --> 00:17:47.586 A:middle
+And we're going to synchronize
+
+00:17:47.586 --> 00:17:48.526 A:middle
+some work, or I'm sorry.
+
+00:17:48.526 --> 00:17:49.396 A:middle
+Not synchronize, we're going to
+
+00:17:49.396 --> 00:17:51.326 A:middle
+serialize some work.
+
+00:17:52.456 --> 00:17:54.746 A:middle
+So, rather than simply
+
+00:17:54.746 --> 00:17:55.936 A:middle
+dispatching work to one of the
+
+00:17:55.936 --> 00:17:57.176 A:middle
+global asynchronous queues,
+
+00:17:58.146 --> 00:17:59.526 A:middle
+we're going to create a serial
+
+00:17:59.526 --> 00:17:59.826 A:middle
+queue.
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.966 --> 00:15:00.356 A:middle
+called.
+
+00:15:01.086 --> 00:15:03.296 A:middle
+And so here, if, for example,
+
+00:15:03.296 --> 00:15:04.866 A:middle
+I'm interested in the heart rate
+
+00:15:04.866 --> 00:15:07.346 A:middle
+type, I will make sure that it's
+
+00:15:07.346 --> 00:15:08.876 A:middle
+one of the collected types.
+
+00:15:09.046 --> 00:15:11.956 A:middle
+And then, I simply make use of
+
+00:15:11.956 --> 00:15:14.196 A:middle
+the builder's statistics for
+
+00:15:14.286 --> 00:15:16.426 A:middle
+quantity type method, which
+
+00:15:16.426 --> 00:15:19.086 A:middle
+gives me an HKStatistics object
+
+00:15:19.706 --> 00:15:21.366 A:middle
+that will contain information,
+
+00:15:21.396 --> 00:15:23.426 A:middle
+in this case, like minimum,
+
+00:15:23.726 --> 00:15:25.816 A:middle
+maximum, average, as well as
+
+00:15:25.816 --> 00:15:28.246 A:middle
+most recent value for the heart
+
+00:15:28.246 --> 00:15:30.216 A:middle
+rate that's recorded throughout
+
+00:15:30.216 --> 00:15:30.776 A:middle
+this workout.
+
+00:15:31.886 --> 00:15:33.576 A:middle
+From there, I can simply update
+
+00:15:33.576 --> 00:15:34.526 A:middle
+my user interface.
+
+00:15:35.086 --> 00:15:37.896 A:middle
+One thing that's also very
+
+00:15:37.976 --> 00:15:40.296 A:middle
+common in workout apps is to
+
+00:15:40.956 --> 00:15:43.296 A:middle
+have an elapsed timer.
+
+00:15:43.886 --> 00:15:46.756 A:middle
+And so, of course, we start the
+
+00:15:46.756 --> 00:15:48.006 A:middle
+timer at the beginning of the
+
+00:15:48.006 --> 00:15:49.936 A:middle
+workout, but that's not enough
+
+00:15:50.026 --> 00:15:52.596 A:middle
+because pause or resume events
+
+00:15:52.966 --> 00:15:54.866 A:middle
+will affect duration of the
+
+00:15:54.866 --> 00:15:55.286 A:middle
+workout.
+
+00:15:56.226 --> 00:15:58.486 A:middle
+So every time new events are
+
+00:15:58.486 --> 00:16:00.436 A:middle
+added to the builder, the
+

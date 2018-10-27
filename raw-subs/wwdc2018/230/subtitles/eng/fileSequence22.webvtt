@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.286 --> 00:22:00.586 A:middle
+swipes up or down with their
+
+00:22:00.586 --> 00:22:02.076 A:middle
+finger, then the collection view
+
+00:22:02.076 --> 00:22:03.126 A:middle
+will scroll to the next or
+
+00:22:03.126 --> 00:22:05.446 A:middle
+previous item.
+
+00:22:06.476 --> 00:22:07.866 A:middle
+Now, next let's take a look at
+
+00:22:07.866 --> 00:22:09.066 A:middle
+these information labels.
+
+00:22:09.646 --> 00:22:10.716 A:middle
+When Bhavya was swiping through
+
+00:22:10.716 --> 00:22:12.196 A:middle
+them, they were out of order,
+
+00:22:12.196 --> 00:22:13.506 A:middle
+and the value labels lack the
+
+00:22:13.506 --> 00:22:14.976 A:middle
+context of what information they
+
+00:22:14.976 --> 00:22:15.606 A:middle
+were providing.
+
+00:22:16.716 --> 00:22:18.846 A:middle
+Context is hugely important.
+
+00:22:19.376 --> 00:22:20.566 A:middle
+If I just touch on the value
+
+00:22:20.566 --> 00:22:21.796 A:middle
+label for whether or not the dog
+
+00:22:21.796 --> 00:22:23.536 A:middle
+is fostered, all I'm going to
+
+00:22:23.536 --> 00:22:25.216 A:middle
+hear from VoiceOver is yes.
+
+00:22:25.816 --> 00:22:27.036 A:middle
+Well, yes what?
+
+00:22:27.516 --> 00:22:28.486 A:middle
+What does that mean?
+
+00:22:28.486 --> 00:22:29.646 A:middle
+What does that correspond to?
+
+00:22:30.886 --> 00:22:32.096 A:middle
+As well, we have an issue with
+
+00:22:32.096 --> 00:22:32.896 A:middle
+navigation.
+
+00:22:33.346 --> 00:22:34.466 A:middle
+We're looking at having to swipe
+
+00:22:34.466 --> 00:22:36.396 A:middle
+through 14 different labels just
+
+00:22:36.396 --> 00:22:37.646 A:middle
+to find what we're looking for.
+
+00:22:38.196 --> 00:22:39.446 A:middle
+But combining them would cut
+
+00:22:39.446 --> 00:22:41.096 A:middle
+that in half and makes
+
+00:22:41.096 --> 00:22:43.026 A:middle
+navigation much, much faster.
+
+00:22:44.476 --> 00:22:45.796 A:middle
+It makes more sense to group
+
+00:22:45.796 --> 00:22:46.946 A:middle
+these labels together as a
+
+00:22:46.946 --> 00:22:48.496 A:middle
+single element so that I
+
+00:22:48.496 --> 00:22:49.586 A:middle
+understand the relationship
+
+00:22:49.586 --> 00:22:50.716 A:middle
+between label and value.
+
+00:22:51.346 --> 00:22:52.406 A:middle
+We again can use UI
+
+00:22:52.406 --> 00:22:53.656 A:middle
+accessibility element to
+
+00:22:53.656 --> 00:22:55.146 A:middle
+accomplish this by creating
+
+00:22:55.146 --> 00:22:56.836 A:middle
+elements for each pair of labels
+
+00:22:56.946 --> 00:22:58.026 A:middle
+and returning them from the
+
+00:22:58.026 --> 00:22:59.526 A:middle
+containing views accessibility
+
+00:22:59.526 --> 00:23:00.346 A:middle
+elements property.
+

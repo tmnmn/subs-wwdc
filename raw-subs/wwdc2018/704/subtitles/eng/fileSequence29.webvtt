@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.096 --> 00:29:00.676 A:middle
+actually get from the App Store.
+
+00:29:00.676 --> 00:29:01.696 A:middle
+It comes from the server,
+
+00:29:01.696 --> 00:29:03.256 A:middle
+StoreKit doesn't make it and we
+
+00:29:03.256 --> 00:29:04.946 A:middle
+store it on the device and your
+
+00:29:05.066 --> 00:29:07.506 A:middle
+app can actually read it.
+
+00:29:07.776 --> 00:29:09.626 A:middle
+It's signed by the App Store so
+
+00:29:09.626 --> 00:29:10.796 A:middle
+that's how you know it's
+
+00:29:10.796 --> 00:29:11.506 A:middle
+authentic.
+
+00:29:12.966 --> 00:29:15.116 A:middle
+And finally, it's for your app
+
+00:29:15.116 --> 00:29:16.636 A:middle
+and for that device.
+
+00:29:17.316 --> 00:29:19.526 A:middle
+The receipt is an important way
+
+00:29:19.526 --> 00:29:22.066 A:middle
+for making sure that that app is
+
+00:29:22.066 --> 00:29:23.776 A:middle
+valid for the device it's trying
+
+00:29:23.776 --> 00:29:24.336 A:middle
+to run on.
+
+00:29:24.856 --> 00:29:28.046 A:middle
+How do you validate the receipt?
+
+00:29:28.086 --> 00:29:29.356 A:middle
+Well there's two things you can
+
+00:29:29.356 --> 00:29:29.616 A:middle
+do.
+
+00:29:29.686 --> 00:29:31.356 A:middle
+First, you can look at on-device
+
+00:29:31.356 --> 00:29:32.876 A:middle
+receipt validation, this is
+
+00:29:32.876 --> 00:29:34.336 A:middle
+where you can just use
+
+00:29:35.086 --> 00:29:36.296 A:middle
+cryptography right on your
+
+00:29:36.296 --> 00:29:38.176 A:middle
+device to validate that receipt
+
+00:29:38.416 --> 00:29:39.876 A:middle
+and unlock content right then
+
+00:29:39.876 --> 00:29:40.226 A:middle
+and there.
+
+00:29:40.666 --> 00:29:42.406 A:middle
+Alternatively, you can do
+
+00:29:42.406 --> 00:29:44.176 A:middle
+server-to-server validation.
+
+00:29:44.346 --> 00:29:45.486 A:middle
+This is where you take the
+
+00:29:45.486 --> 00:29:47.116 A:middle
+receipt, send it up to your
+
+00:29:47.116 --> 00:29:49.106 A:middle
+trusted server, and it'll manage
+
+00:29:49.106 --> 00:29:49.756 A:middle
+it for you.
+
+00:29:50.316 --> 00:29:52.956 A:middle
+In this case it'll call
+
+00:29:53.086 --> 00:29:56.136 A:middle
+itunes.apple.com/verifyreceipt,
+
+00:29:56.276 --> 00:29:57.946 A:middle
+send that receipt over and the
+
+00:29:57.946 --> 00:29:59.976 A:middle
+App Store will validate it for
+
+00:29:59.976 --> 00:30:00.976 A:middle
+your trusted server.
+

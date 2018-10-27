@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:58.566 --> 00:48:00.366 A:middle
+happens now if I try to add a
+
+00:48:00.366 --> 00:48:00.986 A:middle
+new recipe.
+
+00:48:03.056 --> 00:48:05.056 A:middle
+If I click the + button now
+
+00:48:05.926 --> 00:48:06.796 A:middle
+you'll see that he app gets
+
+00:48:06.796 --> 00:48:07.966 A:middle
+immediately stopped because
+
+00:48:08.056 --> 00:48:09.246 A:middle
+Thread Sanitizer found the bug.
+
+00:48:09.636 --> 00:48:11.056 A:middle
+And notice that I didn't have to
+
+00:48:11.056 --> 00:48:12.776 A:middle
+try multiple times, Thread
+
+00:48:12.776 --> 00:48:14.056 A:middle
+Sanitizer reproduces
+
+00:48:14.056 --> 00:48:15.706 A:middle
+multithreading issues extremely
+
+00:48:15.706 --> 00:48:16.226 A:middle
+reliably.
+
+00:48:16.406 --> 00:48:18.616 A:middle
+So let's look at some details of
+
+00:48:18.616 --> 00:48:18.986 A:middle
+this bug.
+
+00:48:20.056 --> 00:48:22.106 A:middle
+We see that it's a Swift access
+
+00:48:22.106 --> 00:48:22.456 A:middle
+race.
+
+00:48:22.686 --> 00:48:25.306 A:middle
+And if we look at the left side
+
+00:48:25.306 --> 00:48:27.106 A:middle
+into the debug navigator we get
+
+00:48:27.106 --> 00:48:28.556 A:middle
+even some more details about
+
+00:48:28.556 --> 00:48:28.976 A:middle
+this bug.
+
+00:48:29.556 --> 00:48:31.606 A:middle
+We see that there's two accesses
+
+00:48:31.996 --> 00:48:33.076 A:middle
+performed by two different
+
+00:48:33.076 --> 00:48:34.976 A:middle
+threads, here is thread 2 and
+
+00:48:34.976 --> 00:48:37.086 A:middle
+thread 4, that are both trying
+
+00:48:37.086 --> 00:48:38.306 A:middle
+to access the same memory
+
+00:48:38.306 --> 00:48:40.266 A:middle
+location at the same time, which
+
+00:48:40.266 --> 00:48:40.926 A:middle
+is not allowed.
+
+00:48:41.446 --> 00:48:44.286 A:middle
+So if we take a look at these
+
+00:48:44.336 --> 00:48:45.756 A:middle
+two lines of code that are
+
+00:48:45.756 --> 00:48:47.686 A:middle
+forming the race we see that
+
+00:48:47.686 --> 00:48:49.486 A:middle
+they are both accessing the
+
+00:48:49.576 --> 00:48:50.526 A:middle
+image cache again.
+
+00:48:51.396 --> 00:48:52.806 A:middle
+So since this is a data
+
+00:48:52.806 --> 00:48:54.826 A:middle
+structure that is shared between
+
+00:48:54.826 --> 00:48:56.266 A:middle
+multiple threads as we see here
+
+00:48:56.536 --> 00:48:57.696 A:middle
+it needs to be a thread data
+
+00:48:57.696 --> 00:48:58.136 A:middle
+structure.
+
+00:48:58.866 --> 00:49:00.136 A:middle
+So let's look at how it's
+

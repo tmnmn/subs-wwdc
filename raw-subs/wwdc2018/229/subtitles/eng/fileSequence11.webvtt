@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.856 --> 00:11:00.216 A:middle
+There's something called slices,
+
+00:11:00.606 --> 00:11:01.716 A:middle
+but before I show how to do it
+
+00:11:01.756 --> 00:11:02.946 A:middle
+with slices, I want to talk
+
+00:11:02.946 --> 00:11:04.826 A:middle
+about what slices are and how
+
+00:11:04.826 --> 00:11:05.000 A:middle
+they work.
+
+00:11:08.266 --> 00:11:10.946 A:middle
+Slices are a type that describe
+
+00:11:10.946 --> 00:11:11.946 A:middle
+only part of a collection.
+
+00:11:13.176 --> 00:11:14.476 A:middle
+And every slice has their own
+
+00:11:14.476 --> 00:11:17.606 A:middle
+start and end index, and slices
+
+00:11:17.606 --> 00:11:18.556 A:middle
+exist separately from the
+
+00:11:18.556 --> 00:11:19.956 A:middle
+collections, from their
+
+00:11:19.986 --> 00:11:20.916 A:middle
+originating collection.
+
+00:11:21.336 --> 00:11:22.526 A:middle
+And what makes slices so
+
+00:11:22.526 --> 00:11:23.746 A:middle
+efficient is they occupy no
+
+00:11:23.746 --> 00:11:24.406 A:middle
+extra storage.
+
+00:11:24.536 --> 00:11:25.806 A:middle
+They simply refer back to the
+
+00:11:25.806 --> 00:11:28.856 A:middle
+original collection, and when
+
+00:11:28.856 --> 00:11:30.416 A:middle
+slices are subscripted, they
+
+00:11:30.416 --> 00:11:31.586 A:middle
+read out of the original buffer.
+
+00:11:32.806 --> 00:11:33.736 A:middle
+And they can do this because
+
+00:11:34.796 --> 00:11:36.046 A:middle
+they share the same indices as
+
+00:11:36.046 --> 00:11:37.016 A:middle
+their underlying collection.
+
+00:11:37.466 --> 00:11:38.286 A:middle
+And let's take a look at how
+
+00:11:38.286 --> 00:11:38.706 A:middle
+that works.
+
+00:11:38.706 --> 00:11:39.806 A:middle
+We can prove this to ourselves.
+
+00:11:40.136 --> 00:11:41.976 A:middle
+We'll start with an array, and
+
+00:11:41.976 --> 00:11:43.296 A:middle
+we'll ask that array to drop its
+
+00:11:43.296 --> 00:11:45.356 A:middle
+first element, producing a slice
+
+00:11:45.386 --> 00:11:46.286 A:middle
+that's one element shorter.
+
+00:11:46.636 --> 00:11:47.916 A:middle
+And because we care about
+
+00:11:48.116 --> 00:11:49.546 A:middle
+proving about the indices, we'll
+
+00:11:49.546 --> 00:11:50.926 A:middle
+actually get the second index of
+
+00:11:50.926 --> 00:11:52.836 A:middle
+the array by asking to advance
+
+00:11:53.046 --> 00:11:54.576 A:middle
+one after the start index, and
+
+00:11:54.576 --> 00:11:55.426 A:middle
+then we'll compare those.
+
+00:11:55.466 --> 00:11:58.446 A:middle
+And indeed, they are the same.
+
+00:11:58.546 --> 00:11:59.696 A:middle
+Now this dropfirst function
+
+00:11:59.696 --> 00:12:00.836 A:middle
+looks exactly like we need to
+

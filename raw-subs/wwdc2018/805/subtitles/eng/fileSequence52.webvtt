@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:58.006 --> 00:52:00.466 A:middle
+to be reflective in the areas on
+
+00:52:00.466 --> 00:52:01.446 A:middle
+the map that were actually
+
+00:52:01.446 --> 00:52:01.626 A:middle
+white.
+
+00:52:02.296 --> 00:52:03.316 A:middle
+And, despite begin called
+
+00:52:03.316 --> 00:52:04.326 A:middle
+metalness, it doesn't
+
+00:52:04.326 --> 00:52:05.336 A:middle
+necessarily mean that your
+
+00:52:05.336 --> 00:52:06.886 A:middle
+object needs to contain metal.
+
+00:52:07.556 --> 00:52:08.336 A:middle
+Rather, we're just letting the
+
+00:52:08.336 --> 00:52:10.296 A:middle
+3D engine know that this object
+
+00:52:10.296 --> 00:52:11.416 A:middle
+should exhibit, kind of, a
+
+00:52:11.416 --> 00:52:12.906 A:middle
+reflective surface.
+
+00:52:13.416 --> 00:52:16.016 A:middle
+Now, it's best to use the
+
+00:52:16.016 --> 00:52:17.176 A:middle
+metalness map on your model,
+
+00:52:17.526 --> 00:52:19.336 A:middle
+like our kettle here, when it
+
+00:52:19.336 --> 00:52:21.266 A:middle
+has both a mixture of metallic
+
+00:52:21.266 --> 00:52:22.466 A:middle
+and non-metallic surfaces.
+
+00:52:23.066 --> 00:52:24.276 A:middle
+It's a simple grayscale map,
+
+00:52:24.726 --> 00:52:25.676 A:middle
+where the level of metalness
+
+00:52:25.676 --> 00:52:27.646 A:middle
+ranges from being black, for
+
+00:52:27.646 --> 00:52:29.006 A:middle
+non-metal surfaces, to white,
+
+00:52:29.006 --> 00:52:30.166 A:middle
+for metallic surfaces.
+
+00:52:31.016 --> 00:52:32.256 A:middle
+And, it allows for a single
+
+00:52:32.256 --> 00:52:34.836 A:middle
+material to be used to represent
+
+00:52:34.836 --> 00:52:35.906 A:middle
+both reflective and
+
+00:52:35.906 --> 00:52:37.466 A:middle
+non-reflective surfaces on your
+
+00:52:37.466 --> 00:52:38.126 A:middle
+single object.
+
+00:52:38.926 --> 00:52:41.216 A:middle
+However, this kettle's a bit
+
+00:52:41.276 --> 00:52:42.066 A:middle
+crazy reflective.
+
+00:52:42.336 --> 00:52:43.966 A:middle
+And, doesn't really quite
+
+00:52:44.016 --> 00:52:44.966 A:middle
+provide the look that we're
+
+00:52:44.966 --> 00:52:45.466 A:middle
+hoping for.
+
+00:52:45.846 --> 00:52:47.636 A:middle
+So, in this case, we want to
+
+00:52:47.636 --> 00:52:49.146 A:middle
+potentially vary the amount of
+
+00:52:49.146 --> 00:52:50.456 A:middle
+reflectivity, as well as
+
+00:52:50.456 --> 00:52:51.906 A:middle
+simulate the fact that all
+
+00:52:51.906 --> 00:52:53.576 A:middle
+surfaces are not perfectly
+
+00:52:53.576 --> 00:52:54.006 A:middle
+smooth.
+
+00:52:54.296 --> 00:52:55.526 A:middle
+And, they actually might exhibit
+
+00:52:55.816 --> 00:52:58.056 A:middle
+slight small, microabrasions to
+
+00:52:58.056 --> 00:52:58.696 A:middle
+their surface.
+
+00:52:59.206 --> 00:53:01.466 A:middle
+And, this is where the roughness
+

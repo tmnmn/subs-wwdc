@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.976 --> 00:29:01.506 A:middle
+This has been available in iOS
+
+00:29:01.506 --> 00:29:02.806 A:middle
+for some time now, and with
+
+00:29:02.806 --> 00:29:04.846 A:middle
+macOS Mojave, we're bringing it
+
+00:29:04.846 --> 00:29:05.316 A:middle
+to the Mac.
+
+00:29:07.646 --> 00:29:09.546 A:middle
+This allows for better control
+
+00:29:09.546 --> 00:29:10.676 A:middle
+of user notifications.
+
+00:29:11.226 --> 00:29:12.126 A:middle
+And, it also means that your
+
+00:29:12.126 --> 00:29:13.246 A:middle
+apps can interact with them the
+
+00:29:13.296 --> 00:29:14.986 A:middle
+same way that they do on iOS.
+
+00:29:15.676 --> 00:29:17.576 A:middle
+They should do that using the
+
+00:29:17.576 --> 00:29:18.666 A:middle
+NSApplication method,
+
+00:29:18.886 --> 00:29:20.486 A:middle
+registerForRemoteNotifications,
+
+00:29:21.176 --> 00:29:21.976 A:middle
+as well as the
+
+00:29:21.976 --> 00:29:24.296 A:middle
+requestAuthorization method on
+
+00:29:24.476 --> 00:29:25.536 A:middle
+userNotificationCenter.
+
+00:29:27.306 --> 00:29:28.676 A:middle
+As a part of this work, we're
+
+00:29:28.676 --> 00:29:30.406 A:middle
+also deprecating some existing
+
+00:29:30.806 --> 00:29:32.786 A:middle
+user notification-related API's.
+
+00:29:32.826 --> 00:29:34.956 A:middle
+Specifically, in NSApplication,
+
+00:29:35.316 --> 00:29:36.126 A:middle
+we're deprecating the
+
+00:29:36.126 --> 00:29:37.296 A:middle
+remoteNotificationType
+
+00:29:37.386 --> 00:29:39.416 A:middle
+OptionSet, as well as the
+
+00:29:39.656 --> 00:29:41.276 A:middle
+registerForRemoteNotifications
+
+00:29:41.276 --> 00:29:41.776 A:middle
+method and the
+
+00:29:41.776 --> 00:29:43.566 A:middle
+enabledRemoteNotificationTypes
+
+00:29:44.186 --> 00:29:44.576 A:middle
+property.
+
+00:29:45.326 --> 00:29:46.686 A:middle
+We're also deprecating all of
+
+00:29:46.686 --> 00:29:47.846 A:middle
+NSUserNotification.
+
+00:29:49.256 --> 00:29:50.716 A:middle
+So, as you rebuild with the new
+
+00:29:50.876 --> 00:29:52.866 A:middle
+SDK, you should try to update to
+
+00:29:52.866 --> 00:29:53.846 A:middle
+the user notifications
+
+00:29:53.846 --> 00:29:54.256 A:middle
+framework.
+
+00:29:56.586 --> 00:29:57.796 A:middle
+Next, I'd like to talk a little
+
+00:29:57.796 --> 00:29:59.356 A:middle
+bit about NSToolbar.
+

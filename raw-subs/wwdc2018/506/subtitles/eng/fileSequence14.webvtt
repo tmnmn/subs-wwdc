@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.486 --> 00:14:00.756 A:middle
+shows you the attributes of that
+
+00:14:00.756 --> 00:14:02.906 A:middle
+song and any relationships --
+
+00:14:03.216 --> 00:14:05.496 A:middle
+for example, the artist and the
+
+00:14:05.496 --> 00:14:05.826 A:middle
+album.
+
+00:14:06.116 --> 00:14:10.806 A:middle
+As Betim talked about earlier,
+
+00:14:10.806 --> 00:14:11.806 A:middle
+if you don't have a content ID,
+
+00:14:11.806 --> 00:14:13.716 A:middle
+you can do the exact same lookup
+
+00:14:14.216 --> 00:14:16.246 A:middle
+with a query filter for the
+
+00:14:16.246 --> 00:14:16.936 A:middle
+ISRC.
+
+00:14:17.766 --> 00:14:19.056 A:middle
+The objects that get returned
+
+00:14:19.376 --> 00:14:20.566 A:middle
+are the same as the previous
+
+00:14:20.566 --> 00:14:20.926 A:middle
+example.
+
+00:14:24.596 --> 00:14:27.176 A:middle
+We have a batch API if you want
+
+00:14:27.586 --> 00:14:29.766 A:middle
+to return a array of song
+
+00:14:29.766 --> 00:14:30.896 A:middle
+objects with a single network
+
+00:14:30.896 --> 00:14:33.156 A:middle
+call, and this also works for
+
+00:14:33.156 --> 00:14:35.000 A:middle
+albums and playlists.
+
+00:14:39.756 --> 00:14:41.146 A:middle
+We can let the user play back
+
+00:14:41.146 --> 00:14:42.436 A:middle
+content from within their iCloud
+
+00:14:42.436 --> 00:14:43.156 A:middle
+Music Library.
+
+00:14:44.436 --> 00:14:46.246 A:middle
+So these APIs live under the
+
+00:14:46.246 --> 00:14:47.306 A:middle
+library scope.
+
+00:14:47.976 --> 00:14:49.506 A:middle
+You can get a list of songs,
+
+00:14:49.876 --> 00:14:51.166 A:middle
+albums, and playlists.
+
+00:14:52.356 --> 00:14:54.206 A:middle
+These APIs are paginated, so you
+
+00:14:54.206 --> 00:14:56.346 A:middle
+can fetch just a subset
+
+00:14:56.466 --> 00:14:57.846 A:middle
+[inaudible] manner, and you can
+
+00:14:57.846 --> 00:15:00.066 A:middle
+unload more in as the user pages
+

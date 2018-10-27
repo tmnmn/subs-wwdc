@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.206 --> 00:07:00.326 A:middle
+So in this case, you could have
+
+00:07:00.796 --> 00:07:02.496 A:middle
+a 1-year renewing subscription
+
+00:07:02.736 --> 00:07:04.206 A:middle
+and offer a 1-month introductory
+
+00:07:04.206 --> 00:07:04.606 A:middle
+price.
+
+00:07:05.166 --> 00:07:08.086 A:middle
+So if we can take our previous
+
+00:07:08.086 --> 00:07:10.106 A:middle
+example of our 3-month auto
+
+00:07:10.106 --> 00:07:11.706 A:middle
+renewable subscription, this
+
+00:07:12.376 --> 00:07:14.426 A:middle
+time we'll offer a payUpFront
+
+00:07:14.426 --> 00:07:15.846 A:middle
+introductory price for 6 months.
+
+00:07:16.286 --> 00:07:19.666 A:middle
+Charging 3.99, so it's about the
+
+00:07:19.666 --> 00:07:20.846 A:middle
+same overall cost as the
+
+00:07:20.846 --> 00:07:22.476 A:middle
+previous example, but this time
+
+00:07:22.836 --> 00:07:24.416 A:middle
+the user will pay 3.99 upfront
+
+00:07:24.416 --> 00:07:25.986 A:middle
+and receive the entire 6 months.
+
+00:07:26.106 --> 00:07:28.806 A:middle
+After that's up we'll renew with
+
+00:07:28.806 --> 00:07:29.616 A:middle
+the normal terms of the
+
+00:07:29.616 --> 00:07:31.826 A:middle
+subscription at 9.99 for every 3
+
+00:07:31.826 --> 00:07:31.976 A:middle
+months.
+
+00:07:36.046 --> 00:07:36.556 A:middle
+Here's what the data from
+
+00:07:36.556 --> 00:07:37.386 A:middle
+StoreKit would look like in this
+
+00:07:37.386 --> 00:07:37.766 A:middle
+case.
+
+00:07:38.416 --> 00:07:39.736 A:middle
+The subscriptionPeriod's unit is
+
+00:07:39.736 --> 00:07:41.126 A:middle
+still month, but this time we
+
+00:07:41.126 --> 00:07:42.046 A:middle
+have 6 units.
+
+00:07:42.636 --> 00:07:44.566 A:middle
+The numberOfPeriods is 1 because
+
+00:07:44.566 --> 00:07:45.816 A:middle
+it's a payUpFront introductory
+
+00:07:45.816 --> 00:07:45.976 A:middle
+price.
+
+00:07:51.216 --> 00:07:52.446 A:middle
+The final payment mode is
+
+00:07:52.556 --> 00:07:52.986 A:middle
+freeTrial.
+
+00:07:54.306 --> 00:07:55.436 A:middle
+This behaves the same as the old
+
+00:07:55.436 --> 00:07:56.886 A:middle
+freeTrial behavior where the
+
+00:07:56.886 --> 00:07:57.896 A:middle
+user pays nothing and receives
+
+00:07:57.896 --> 00:07:58.796 A:middle
+the entire introductory
+
+00:07:58.796 --> 00:07:59.156 A:middle
+duration.
+

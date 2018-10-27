@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.166 --> 00:29:01.596 A:middle
+You can provide destination
+
+00:29:01.596 --> 00:29:03.136 A:middle
+names, information that is
+
+00:29:03.136 --> 00:29:04.236 A:middle
+pertinent to the route, such as
+
+00:29:04.236 --> 00:29:05.206 A:middle
+advisory notices.
+
+00:29:05.976 --> 00:29:07.156 A:middle
+You can, also, provide estimates
+
+00:29:07.156 --> 00:29:08.336 A:middle
+to let them know when they'll
+
+00:29:08.336 --> 00:29:08.606 A:middle
+arrive.
+
+00:29:09.676 --> 00:29:11.136 A:middle
+And if the trip has multiple
+
+00:29:11.136 --> 00:29:12.546 A:middle
+routes the CarPlay framework
+
+00:29:12.546 --> 00:29:13.856 A:middle
+will automatically display a
+
+00:29:13.856 --> 00:29:14.846 A:middle
+more routes button.
+
+00:29:15.756 --> 00:29:17.076 A:middle
+This will allow your users to
+
+00:29:17.076 --> 00:29:19.096 A:middle
+toggle between individual routes
+
+00:29:19.636 --> 00:29:20.436 A:middle
+and select the one that they
+
+00:29:20.436 --> 00:29:22.306 A:middle
+want to take.
+
+00:29:22.506 --> 00:29:23.816 A:middle
+Let's look at the classes and
+
+00:29:23.816 --> 00:29:24.976 A:middle
+methods you'll want to be
+
+00:29:24.976 --> 00:29:26.256 A:middle
+familiar with to build an
+
+00:29:26.256 --> 00:29:27.406 A:middle
+experience in the CarPlay
+
+00:29:27.406 --> 00:29:28.356 A:middle
+framework route preview.
+
+00:29:29.876 --> 00:29:31.586 A:middle
+The first is CPTrip.
+
+00:29:32.126 --> 00:29:33.876 A:middle
+This is a representation of the
+
+00:29:33.876 --> 00:29:35.616 A:middle
+upcoming trip for your users.
+
+00:29:36.236 --> 00:29:37.426 A:middle
+It includes items such as the
+
+00:29:37.426 --> 00:29:39.416 A:middle
+origin and destination, as well
+
+00:29:39.416 --> 00:29:41.626 A:middle
+as multiple CPRouteChoices for
+
+00:29:41.626 --> 00:29:42.866 A:middle
+each route that they may take.
+
+00:29:44.166 --> 00:29:46.116 A:middle
+CPTravelEstimates describes how
+
+00:29:46.116 --> 00:29:47.746 A:middle
+long it will take for an entire
+
+00:29:47.746 --> 00:29:49.176 A:middle
+trip, as well as for individual
+
+00:29:49.176 --> 00:29:49.646 A:middle
+maneuvers.
+
+00:29:50.076 --> 00:29:51.916 A:middle
+On your map template, when you
+
+00:29:51.916 --> 00:29:53.706 A:middle
+are ready to show a route
+
+00:29:53.706 --> 00:29:55.696 A:middle
+preview to your users, you call
+
+00:29:55.696 --> 00:29:57.666 A:middle
+ShowTripPreviews on your map
+
+00:29:57.666 --> 00:29:59.116 A:middle
+template with the CPTrip object
+
+00:29:59.116 --> 00:29:59.726 A:middle
+you've created.
+

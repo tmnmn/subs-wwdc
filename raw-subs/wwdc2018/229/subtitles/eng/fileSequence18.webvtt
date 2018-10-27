@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.416 --> 00:18:00.176 A:middle
+We already know that they're
+
+00:18:00.176 --> 00:18:00.706 A:middle
+bears.
+
+00:18:01.016 --> 00:18:01.796 A:middle
+They don't need to tell us
+
+00:18:01.796 --> 00:18:02.336 A:middle
+again.
+
+00:18:03.376 --> 00:18:04.576 A:middle
+So let's write some code to find
+
+00:18:04.576 --> 00:18:05.756 A:middle
+those silly, redundant bears,
+
+00:18:05.756 --> 00:18:07.356 A:middle
+and we'll do this using a lazy
+
+00:18:07.356 --> 00:18:08.366 A:middle
+filter, as before.
+
+00:18:08.366 --> 00:18:11.996 A:middle
+And in this case, producing a
+
+00:18:11.996 --> 00:18:13.206 A:middle
+lazy filter is going to be a
+
+00:18:13.206 --> 00:18:14.676 A:middle
+lazy filter collection that
+
+00:18:14.746 --> 00:18:16.156 A:middle
+wraps an array of strings.
+
+00:18:16.716 --> 00:18:17.946 A:middle
+In our closer here, were going
+
+00:18:17.946 --> 00:18:19.396 A:middle
+to print out which bear we're
+
+00:18:19.396 --> 00:18:21.056 A:middle
+currently iterating on before we
+
+00:18:21.056 --> 00:18:21.836 A:middle
+do our predicate check.
+
+00:18:21.836 --> 00:18:23.006 A:middle
+And we're doing this because I
+
+00:18:23.006 --> 00:18:24.146 A:middle
+want to understand how filter
+
+00:18:24.146 --> 00:18:25.096 A:middle
+works a little better, and then
+
+00:18:25.096 --> 00:18:26.806 A:middle
+we'll call first, and when we do
+
+00:18:26.806 --> 00:18:28.116 A:middle
+this, we'll defer to the lazy
+
+00:18:28.116 --> 00:18:31.446 A:middle
+filter collection, and then the
+
+00:18:31.446 --> 00:18:32.726 A:middle
+lazy filter collection will in
+
+00:18:32.776 --> 00:18:33.966 A:middle
+turn defer to the original
+
+00:18:33.966 --> 00:18:37.226 A:middle
+storage where we'll print out
+
+00:18:37.326 --> 00:18:41.476 A:middle
+Grizzly, check the predicate,
+
+00:18:42.016 --> 00:18:43.496 A:middle
+which in this case is false,
+
+00:18:43.496 --> 00:18:44.406 A:middle
+Grizzly does not contain the
+
+00:18:44.406 --> 00:18:45.636 A:middle
+word bear, and advance on to
+
+00:18:45.636 --> 00:18:45.976 A:middle
+panda.
+
+00:18:47.336 --> 00:18:51.046 A:middle
+When we get to panda, when we
+
+00:18:51.046 --> 00:18:52.456 A:middle
+get to panda, we'll again print
+
+00:18:52.746 --> 00:18:54.596 A:middle
+out panda, check to see if it
+
+00:18:54.596 --> 00:18:55.936 A:middle
+contains the word bear, and
+
+00:18:55.936 --> 00:18:56.926 A:middle
+advance on to spectacle.
+
+00:18:57.996 --> 00:19:00.006 A:middle
+Spectacle gets printed, also
+

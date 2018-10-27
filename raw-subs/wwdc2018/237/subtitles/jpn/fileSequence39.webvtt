@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:57.104 --> 00:39:01.675 align:start position:27% line:-2
+ここではヘルパーメソッドを
+呼び出し
+
+00:39:02.075 --> 00:39:05.212 align:start position:30% line:-2
+サムネールの描画処理を
+行います
+
+00:39:05.312 --> 00:39:08.448 align:start position:32% line:-2
+では このメソッドを
+実装します
+
+00:39:09.016 --> 00:39:12.186 align:start position:27% line:-2
+drawingBlockは
+ブーリアンを返します
+
+00:39:12.486 --> 00:39:15.856 align:start position:30% line:-2
+サムネール描画のために
+呼び出された際―
+
+00:39:15.956 --> 00:39:18.892 align:start position:29% line:-1
+正しく描けたかを示します
+
+00:39:19.459 --> 00:39:22.696 align:start position:30% line:-2
+次は パーティクル
+サムネールを作成します
+
+00:39:24.598 --> 00:39:28.835 align:start position:32% line:-2
+サムネールを描くには
+ファイルのURLと―
+
+00:39:29.203 --> 00:39:31.705 align:start position:30% line:-1
+作成場所のサイズを入力
+
+00:39:32.139 --> 00:39:35.943 align:start position:27% line:-1
+今回は最大サイズで作ります
+
+00:39:36.043 --> 00:39:38.946 align:start position:36% line:-2
+どんなサイズでも
+生成可能です
+
+00:39:40.147 --> 00:39:44.017 align:start position:23% line:-2
+まずは ファイルに
+対応するdocumentを作成
+
+00:39:44.184 --> 00:39:45.752 align:start position:36% line:-1
+開けるか試します
+
+00:39:46.186 --> 00:39:50.791 align:start position:29% line:-2
+開けない場合 生成失敗を
+示すfalseを返します
+
+00:39:51.525 --> 00:39:56.497 align:start position:5% line:-2
+ファイルを開き
+particleViewControllerを作成
+
+00:39:56.597 --> 00:39:58.966 align:start position:34% line:-2
+ファイルを
+レンダリングします
+
+00:39:59.466 --> 00:40:04.037 align:start position:2% line:-2
+particleViewControllerのスナップ
+ショットでサムネールを描きます
+

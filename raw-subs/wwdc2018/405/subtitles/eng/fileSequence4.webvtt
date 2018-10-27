@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.086 --> 00:04:00.626 A:middle
+that you're doing the work to
+
+00:04:00.626 --> 00:04:01.346 A:middle
+grab an asset.
+
+00:04:01.486 --> 00:04:02.456 A:middle
+And after you've gotten them
+
+00:04:02.456 --> 00:04:04.296 A:middle
+all, the interface is refreshed.
+
+00:04:05.436 --> 00:04:07.116 A:middle
+What a signpost allows us to do
+
+00:04:07.176 --> 00:04:09.466 A:middle
+is to mark the beginning and the
+
+00:04:09.466 --> 00:04:11.196 A:middle
+end of a piece of work and then
+
+00:04:11.196 --> 00:04:12.586 A:middle
+associate those two points in
+
+00:04:12.586 --> 00:04:14.046 A:middle
+time, those two log events with
+
+00:04:14.046 --> 00:04:14.476 A:middle
+each other.
+
+00:04:15.326 --> 00:04:18.086 A:middle
+And they do it with an os
+
+00:04:18.086 --> 00:04:19.106 A:middle
+signpost function call.
+
+00:04:19.305 --> 00:04:20.516 A:middle
+There are two calls.
+
+00:04:20.616 --> 00:04:22.806 A:middle
+One with .begin and one with
+
+00:04:23.016 --> 00:04:23.296 A:middle
+.end.
+
+00:04:23.726 --> 00:04:25.776 A:middle
+Here I've represented the begin
+
+00:04:25.776 --> 00:04:26.976 A:middle
+with that arrow with the b
+
+00:04:26.976 --> 00:04:27.526 A:middle
+underneath it.
+
+00:04:27.926 --> 00:04:29.446 A:middle
+And I represented the end with
+
+00:04:29.446 --> 00:04:31.626 A:middle
+the arrow with the e under it.
+
+00:04:31.626 --> 00:04:32.936 A:middle
+And then we're going to relate
+
+00:04:32.936 --> 00:04:34.126 A:middle
+those two points to each other
+
+00:04:34.126 --> 00:04:36.296 A:middle
+to give you a sense of what the
+
+00:04:36.366 --> 00:04:37.486 A:middle
+elapsed time is for that
+
+00:04:37.486 --> 00:04:37.736 A:middle
+interval.
+
+00:04:37.736 --> 00:04:39.276 A:middle
+All right.
+
+00:04:40.126 --> 00:04:42.246 A:middle
+In code, there's this simple
+
+00:04:42.246 --> 00:04:44.076 A:middle
+implementation of that algorithm
+
+00:04:44.556 --> 00:04:45.886 A:middle
+where for each element in our
+
+00:04:45.886 --> 00:04:47.236 A:middle
+interface, we're going to fetch
+
+00:04:47.236 --> 00:04:49.296 A:middle
+that asset and that's the piece
+
+00:04:49.296 --> 00:04:50.496 A:middle
+of operation that we're
+
+00:04:50.646 --> 00:04:51.506 A:middle
+interested in measuring.
+
+00:04:52.426 --> 00:04:53.786 A:middle
+So to incorporate signpost into
+
+00:04:53.786 --> 00:04:55.716 A:middle
+this code base, we're going to
+
+00:04:55.716 --> 00:04:57.396 A:middle
+simply import the module
+
+00:04:57.596 --> 00:04:58.986 A:middle
+os.signpost that contains that
+
+00:04:58.986 --> 00:04:59.636 A:middle
+functionality.
+

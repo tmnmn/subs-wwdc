@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:58.286 --> 00:49:00.446 A:middle
+code that we'll import into our
+
+00:49:00.446 --> 00:49:01.156 A:middle
+project.
+
+00:49:03.336 --> 00:49:03.936 A:middle
+This is the
+
+00:49:03.936 --> 00:49:06.586 A:middle
+details-view-controller class.
+
+00:49:07.116 --> 00:49:09.056 A:middle
+Let's jump to it from our jump
+
+00:49:09.166 --> 00:49:09.466 A:middle
+bar.
+
+00:49:11.226 --> 00:49:14.326 A:middle
+Here we have some IBOutlets for
+
+00:49:14.326 --> 00:49:15.746 A:middle
+the different views in our
+
+00:49:15.746 --> 00:49:17.126 A:middle
+details-view-controller.
+
+00:49:18.196 --> 00:49:20.506 A:middle
+Remember when we wrote the game,
+
+00:49:20.506 --> 00:49:22.526 A:middle
+we connected these IBOutlets to
+
+00:49:22.526 --> 00:49:24.236 A:middle
+the views on the storyboard.
+
+00:49:25.226 --> 00:49:26.526 A:middle
+But we're not able to do that
+
+00:49:26.616 --> 00:49:27.196 A:middle
+right now.
+
+00:49:28.026 --> 00:49:30.376 A:middle
+This is because we haven't told
+
+00:49:30.436 --> 00:49:32.526 A:middle
+Xcode that the code for this
+
+00:49:32.526 --> 00:49:34.196 A:middle
+view controller is right here.
+
+00:49:35.076 --> 00:49:36.636 A:middle
+Let's do that again by going to
+
+00:49:36.636 --> 00:49:38.466 A:middle
+the Identity Inspector and
+
+00:49:38.466 --> 00:49:39.936 A:middle
+changing the class name to
+
+00:49:39.936 --> 00:49:41.246 A:middle
+details-view-controller.
+
+00:49:42.456 --> 00:49:44.806 A:middle
+Now we can connect the IBOutlets
+
+00:49:44.896 --> 00:49:45.476 A:middle
+easily.
+
+00:49:52.256 --> 00:49:55.166 A:middle
+By doing this, we can set the
+
+00:49:55.166 --> 00:49:57.506 A:middle
+views from our code like I've
+
+00:49:57.506 --> 00:49:59.946 A:middle
+done in the view load method
+
+00:49:59.946 --> 00:50:00.226 A:middle
+here.
+

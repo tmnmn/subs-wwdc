@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.087 --> 00:27:03.724 align:start position:23% line:-1
+実際 皆さんが必要としているのは
+
+00:27:03.924 --> 00:27:07.261 align:start position:27% line:-1
+処理時間を短くすることです
+
+00:27:07.795 --> 00:27:13.400 align:start position:29% line:-2
+解決のため 今年は新たに
+バッチAPIを紹介します
+
+00:27:14.101 --> 00:27:19.540 align:start position:25% line:-2
+以前は入力をループし別々に
+予測したのが 新APIでは―
+
+00:27:20.440 --> 00:27:24.812 align:start position:32% line:-2
+１行の予測で
+入力の配列を消費し―
+
+00:27:24.912 --> 00:27:26.813 align:start position:36% line:-1
+出力の配列を生成
+
+00:27:26.914 --> 00:27:28.515 align:start position:21% line:-1
+残りはCore MLが処理します
+
+00:27:28.615 --> 00:27:34.288 align:start position:43% line:-1
+(拍手)
+
+00:27:34.788 --> 00:27:39.593 align:start position:20% line:-2
+では 先ほどのスタイル変換Appを
+例に見てみましょう
+
+00:27:39.693 --> 00:27:43.831 align:start position:30% line:-2
+ライブラリ内の全画像に
+画質を適用するため―
+
+00:27:43.931 --> 00:27:46.633 align:start position:30% line:-2
+それだけに特化した
+単純なAppを使います
+
+00:27:46.733 --> 00:27:49.203 align:start position:27% line:-1
+200枚の画像に適用します
+
+00:27:49.303 --> 00:27:51.839 align:start position:34% line:-1
+左側を見てください
+
+00:27:51.939 --> 00:27:55.843 align:start position:25% line:-2
+ループのため
+昨年のAPIを実装しています
+
+00:27:55.943 --> 00:27:58.445 align:start position:25% line:-1
+右側が新しいバッチAPIです
+
+00:27:58.545 --> 00:28:01.415 align:start position:29% line:-1
+早速 動かしてみましょう
+

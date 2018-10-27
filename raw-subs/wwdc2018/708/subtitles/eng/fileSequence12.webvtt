@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.626 --> 00:12:00.586 A:middle
+obtain a quantized
+
+00:12:00.586 --> 00:12:01.476 A:middle
+representation of it.
+
+00:12:01.716 --> 00:12:03.496 A:middle
+So Core ML 2 should quantize for
+
+00:12:03.496 --> 00:12:04.216 A:middle
+you automatically.
+
+00:12:05.516 --> 00:12:07.386 A:middle
+Or you can train quantized
+
+00:12:07.386 --> 00:12:07.756 A:middle
+models.
+
+00:12:09.316 --> 00:12:10.596 A:middle
+You can either train quantized
+
+00:12:10.596 --> 00:12:11.416 A:middle
+-- with a quantization
+
+00:12:11.416 --> 00:12:12.866 A:middle
+constraint from scratch, or
+
+00:12:12.866 --> 00:12:14.256 A:middle
+retrain existing models with
+
+00:12:14.256 --> 00:12:15.406 A:middle
+quantization constraints.
+
+00:12:16.376 --> 00:12:17.426 A:middle
+After you have obtained your
+
+00:12:17.426 --> 00:12:18.336 A:middle
+quantized model with your
+
+00:12:18.336 --> 00:12:19.556 A:middle
+training tools, you can then
+
+00:12:19.556 --> 00:12:21.616 A:middle
+convert it to Core ML as usual.
+
+00:12:22.156 --> 00:12:23.466 A:middle
+And nothing will change in the
+
+00:12:23.466 --> 00:12:24.596 A:middle
+app in the way you use the
+
+00:12:24.596 --> 00:12:24.976 A:middle
+model.
+
+00:12:25.626 --> 00:12:27.466 A:middle
+Inside the model, the numbers
+
+00:12:27.466 --> 00:12:28.716 A:middle
+are going to be stored in
+
+00:12:28.716 --> 00:12:29.826 A:middle
+different precision, but the
+
+00:12:29.826 --> 00:12:31.816 A:middle
+interface for using the model
+
+00:12:32.176 --> 00:12:32.976 A:middle
+will not change at all.
+
+00:12:35.216 --> 00:12:36.856 A:middle
+However, we always have to
+
+00:12:36.856 --> 00:12:38.426 A:middle
+consider that quantized models
+
+00:12:38.986 --> 00:12:40.016 A:middle
+have lower-precision
+
+00:12:40.016 --> 00:12:41.586 A:middle
+approximations of the original
+
+00:12:41.586 --> 00:12:43.446 A:middle
+reference floating-point models.
+
+00:12:44.256 --> 00:12:45.686 A:middle
+And this means that quantized
+
+00:12:45.686 --> 00:12:47.166 A:middle
+models come with an accuracy
+
+00:12:47.166 --> 00:12:48.316 A:middle
+versus size-of-the-model
+
+00:12:48.316 --> 00:12:48.836 A:middle
+tradeoff.
+
+00:12:49.736 --> 00:12:51.436 A:middle
+This tradeoff is model dependent
+
+00:12:51.546 --> 00:12:53.096 A:middle
+and use case dependent.
+
+00:12:53.096 --> 00:12:55.166 A:middle
+And it's also a very active area
+
+00:12:55.166 --> 00:12:55.706 A:middle
+of research.
+
+00:12:56.456 --> 00:12:57.846 A:middle
+So it's always recommended to
+
+00:12:57.936 --> 00:12:58.846 A:middle
+check the accuracy of the
+
+00:12:58.846 --> 00:13:00.786 A:middle
+quantized model and compare it
+

@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:56.830 --> 00:20:00.267 align:start position:25% line:-2
+さらに別ファイルに
+テンプレートヘルパもあります
+
+00:20:00.801 --> 00:20:05.639 align:start position:27% line:-2
+左側のマークアップが
+少し妙な状態になっています
+
+00:20:05.772 --> 00:20:11.044 align:start position:25% line:-2
+ボタンがフローティング状態で
+アートワークは明らかに空です
+
+00:20:11.345 --> 00:20:15.916 align:start position:23% line:-2
+これはMusicKit JSは
+メタタグで設定が行われると
+
+00:20:16.016 --> 00:20:21.088 align:start position:21% line:-2
+宣言型マークアップの有効化が
+求められていると判断するからです
+
+00:20:21.255 --> 00:20:24.992 align:start position:18% line:-2
+設定がなければ
+JavaScriptの稼動を推定して
+
+00:20:25.092 --> 00:20:27.027 align:start position:32% line:-2
+宣言型マークアップは
+不要と判断します
+
+00:20:27.161 --> 00:20:30.697 align:start position:14% line:-2
+しかしJavaScriptで再有効化する
+フックを用意しています
+
+00:20:33.100 --> 00:20:36.403 align:start position:18% line:-2
+ドキュメントに発せられる
+musicitloadedイベントを
+
+00:20:36.503 --> 00:20:38.672 align:start position:18% line:-2
+待機して
+MusicKit JSを設定できます
+
+00:20:38.939 --> 00:20:40.807 align:start position:18% line:-1
+これによってMusicKit JSは
+
+00:20:40.908 --> 00:20:44.545 align:start position:27% line:-2
+設定済みの状態で
+再生できることがわかります
+
+00:20:45.546 --> 00:20:49.116 align:start position:21% line:-2
+メタタグ同様に
+アプリケーション名を設定できます
+
+00:20:49.249 --> 00:20:53.153 align:start position:12% line:-2
+declarativeMarkupと称する
+属性を“true”に設定すると
+
+00:20:53.554 --> 00:20:56.590 align:start position:11% line:-2
+MusicKit JSは ミックスドモードで
+稼動しているため
+
+00:20:56.690 --> 00:20:59.927 align:start position:25% line:-2
+宣言型マークアップの有効化が
+必要と認識できます
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.016 --> 00:07:01.186 A:middle
+geometry-related issues, and if
+
+00:07:01.186 --> 00:07:02.486 A:middle
+the problem is in your inputs,
+
+00:07:03.036 --> 00:07:04.556 A:middle
+then you have to go back and
+
+00:07:04.696 --> 00:07:05.286 A:middle
+check your model.
+
+00:07:05.766 --> 00:07:07.246 A:middle
+But if the problem is in your
+
+00:07:07.246 --> 00:07:09.646 A:middle
+output, then you have to debug
+
+00:07:09.646 --> 00:07:10.426 A:middle
+vertex shaders.
+
+00:07:11.336 --> 00:07:12.776 A:middle
+Which brings us to our next
+
+00:07:13.166 --> 00:07:13.326 A:middle
+topic.
+
+00:07:15.976 --> 00:07:18.076 A:middle
+Debugging shaders, using the new
+
+00:07:18.076 --> 00:07:18.686 A:middle
+Shader Debugger.
+
+00:07:20.196 --> 00:07:21.496 A:middle
+Shaders are hard to debug.
+
+00:07:22.556 --> 00:07:24.386 A:middle
+They have math-heavy code, with
+
+00:07:24.386 --> 00:07:25.736 A:middle
+lots of vector operations.
+
+00:07:26.446 --> 00:07:28.556 A:middle
+And they are highly parallel.
+
+00:07:28.776 --> 00:07:30.196 A:middle
+The shader code you are writing
+
+00:07:30.526 --> 00:07:32.716 A:middle
+gets executed millions of times,
+
+00:07:32.806 --> 00:07:33.736 A:middle
+every single frame.
+
+00:07:33.736 --> 00:07:37.706 A:middle
+Here is the scene from Unity's
+
+00:07:37.706 --> 00:07:39.016 A:middle
+Book of the Dead demo, that
+
+00:07:39.016 --> 00:07:41.056 A:middle
+we've seen in the keynote and
+
+00:07:41.056 --> 00:07:42.306 A:middle
+State of the Union earlier this
+
+00:07:42.306 --> 00:07:42.466 A:middle
+week.
+
+00:07:43.296 --> 00:07:45.486 A:middle
+In a single frame of this scene
+
+00:07:46.426 --> 00:07:48.246 A:middle
+makes 10 million vertexing
+
+00:07:48.246 --> 00:07:51.196 A:middle
+locations, and rendering into 60
+
+00:07:51.196 --> 00:07:53.196 A:middle
+million triangles, every single
+
+00:07:53.196 --> 00:07:54.236 A:middle
+frame, in all the different
+
+00:07:54.236 --> 00:07:54.776 A:middle
+passes.
+
+00:07:55.866 --> 00:07:57.696 A:middle
+So when you have a problem with
+
+00:07:57.696 --> 00:07:59.356 A:middle
+your shaders, it's not going to
+
+00:07:59.356 --> 00:08:00.846 A:middle
+be easy to find where the
+

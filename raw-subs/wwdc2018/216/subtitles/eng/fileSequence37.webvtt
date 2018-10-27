@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.366 --> 00:37:01.126 A:middle
+they'll simply be a no-op.
+
+00:37:03.176 --> 00:37:05.336 A:middle
+Great. Now, we know how to gain
+
+00:37:05.336 --> 00:37:06.626 A:middle
+access to our documents.
+
+00:37:06.766 --> 00:37:08.816 A:middle
+We can go ahead and pick that
+
+00:37:08.816 --> 00:37:10.396 A:middle
+document, like the particle
+
+00:37:10.396 --> 00:37:11.386 A:middle
+image in our example.
+
+00:37:11.666 --> 00:37:14.466 A:middle
+And, start accessing it.
+
+00:37:14.466 --> 00:37:16.316 A:middle
+As you can see here, the cloud
+
+00:37:16.316 --> 00:37:17.726 A:middle
+service that is hosting this
+
+00:37:17.726 --> 00:37:19.706 A:middle
+document, as well as other apps
+
+00:37:20.046 --> 00:37:21.606 A:middle
+also can access this document,
+
+00:37:21.746 --> 00:37:23.716 A:middle
+and sometimes concurrently with
+
+00:37:23.716 --> 00:37:24.966 A:middle
+your app.
+
+00:37:25.236 --> 00:37:26.746 A:middle
+What we need here is a
+
+00:37:26.746 --> 00:37:29.046 A:middle
+system-wide mechanism to make
+
+00:37:29.046 --> 00:37:30.396 A:middle
+sure that access to this
+
+00:37:30.396 --> 00:37:32.166 A:middle
+document is always coordinated,
+
+00:37:32.656 --> 00:37:34.326 A:middle
+so that processes don't go
+
+00:37:34.326 --> 00:37:35.666 A:middle
+stepping on each other's feet,
+
+00:37:36.076 --> 00:37:38.236 A:middle
+accessing, reading, and writing
+
+00:37:38.236 --> 00:37:39.466 A:middle
+to this document.
+
+00:37:40.916 --> 00:37:43.806 A:middle
+On iOS, this mechanism is called
+
+00:37:43.986 --> 00:37:46.076 A:middle
+file coordination, and it is
+
+00:37:46.076 --> 00:37:47.276 A:middle
+exposed via the
+
+00:37:47.456 --> 00:37:48.956 A:middle
+NSFileCoordinator and
+
+00:37:49.046 --> 00:37:50.486 A:middle
+NSFilePresenter API's.
+
+00:37:51.616 --> 00:37:53.316 A:middle
+It acts as a system-wide
+
+00:37:53.486 --> 00:37:55.166 A:middle
+multiple reader/single writer
+
+00:37:55.166 --> 00:37:58.546 A:middle
+lock, and it's also the way for
+
+00:37:58.546 --> 00:38:00.506 A:middle
+your app to instruct the system
+

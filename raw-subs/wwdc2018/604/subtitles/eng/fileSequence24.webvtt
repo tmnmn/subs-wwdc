@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:00.816 --> 00:24:03.156 A:middle
+This also allocates the memory
+
+00:24:03.266 --> 00:24:04.726 A:middle
+backing the texture image.
+
+00:24:06.086 --> 00:24:07.166 A:middle
+Once you've created the object
+
+00:24:07.166 --> 00:24:07.946 A:middle
+you no longer need the
+
+00:24:07.946 --> 00:24:09.286 A:middle
+descriptor as it's only used for
+
+00:24:09.286 --> 00:24:10.126 A:middle
+object creation.
+
+00:24:11.256 --> 00:24:12.296 A:middle
+And properties you set in the
+
+00:24:12.296 --> 00:24:13.506 A:middle
+descriptor are locked and can no
+
+00:24:13.506 --> 00:24:14.396 A:middle
+longer be changed.
+
+00:24:15.766 --> 00:24:17.056 A:middle
+However, the contents of the
+
+00:24:17.056 --> 00:24:18.726 A:middle
+texture image can be modified.
+
+00:24:18.756 --> 00:24:21.816 A:middle
+So I want to talk about one
+
+00:24:21.816 --> 00:24:22.816 A:middle
+property you'll set in the
+
+00:24:22.816 --> 00:24:24.096 A:middle
+texture descriptor and you'll
+
+00:24:24.096 --> 00:24:25.876 A:middle
+also use when creating a buffer.
+
+00:24:26.626 --> 00:24:28.166 A:middle
+This is called the storage mode.
+
+00:24:29.286 --> 00:24:30.366 A:middle
+As mentioned, when you create a
+
+00:24:30.366 --> 00:24:31.966 A:middle
+texture object Metal allocates
+
+00:24:31.966 --> 00:24:33.366 A:middle
+memory for it right then and
+
+00:24:33.366 --> 00:24:33.596 A:middle
+there.
+
+00:24:34.106 --> 00:24:35.276 A:middle
+The storage mode property tells
+
+00:24:35.276 --> 00:24:36.696 A:middle
+Metal in which pool memory it
+
+00:24:36.696 --> 00:24:37.406 A:middle
+should be allocated.
+
+00:24:38.576 --> 00:24:40.056 A:middle
+The simplest option shared
+
+00:24:40.056 --> 00:24:42.436 A:middle
+storage mode gives both the CPU
+
+00:24:42.876 --> 00:24:44.046 A:middle
+and the GPU access.
+
+00:24:44.656 --> 00:24:46.076 A:middle
+For buffers this means you get a
+
+00:24:46.076 --> 00:24:47.666 A:middle
+pointer to the memory backing
+
+00:24:47.666 --> 00:24:48.156 A:middle
+the object.
+
+00:24:48.996 --> 00:24:50.166 A:middle
+Protectors, this means you can
+
+00:24:50.166 --> 00:24:51.926 A:middle
+call certain easy-to-use methods
+
+00:24:52.196 --> 00:24:53.806 A:middle
+to set and retrieve data from
+
+00:24:53.806 --> 00:24:54.196 A:middle
+the texture.
+
+00:24:54.736 --> 00:24:57.246 A:middle
+You can use private storage mode
+
+00:24:57.246 --> 00:24:58.836 A:middle
+which only gives the GPU access
+
+00:24:58.926 --> 00:25:00.486 A:middle
+to the data, this allows the
+

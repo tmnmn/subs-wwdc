@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:01.856 --> 00:13:04.036 A:middle
+We'll begin by getting the list
+
+00:13:04.036 --> 00:13:05.556 A:middle
+of all the users in our team by
+
+00:13:05.556 --> 00:13:07.596 A:middle
+sending GET request to the users
+
+00:13:07.596 --> 00:13:10.156 A:middle
+resource, which is GET v1/users.
+
+00:13:10.986 --> 00:13:12.346 A:middle
+And this returns all the users
+
+00:13:12.346 --> 00:13:14.046 A:middle
+we have access to in our team.
+
+00:13:15.196 --> 00:13:16.416 A:middle
+Now let's try to find the user
+
+00:13:16.416 --> 00:13:17.796 A:middle
+we're looking for and we can
+
+00:13:17.796 --> 00:13:19.176 A:middle
+search by the email of the user
+
+00:13:19.176 --> 00:13:20.356 A:middle
+by applying the filter
+
+00:13:20.356 --> 00:13:20.896 A:middle
+parameter.
+
+00:13:21.206 --> 00:13:22.606 A:middle
+So this filter parameter of
+
+00:13:22.606 --> 00:13:24.246 A:middle
+email specified that we would
+
+00:13:24.246 --> 00:13:25.536 A:middle
+like to find the users that
+
+00:13:25.536 --> 00:13:28.116 A:middle
+matches JohnAppleseed@mac.com.
+
+00:13:28.366 --> 00:13:29.526 A:middle
+So let's send this request.
+
+00:13:30.976 --> 00:13:32.126 A:middle
+And we get a response with a
+
+00:13:32.126 --> 00:13:33.686 A:middle
+user that contains the email of
+
+00:13:33.686 --> 00:13:34.496 A:middle
+John Appleseed.
+
+00:13:35.836 --> 00:13:39.166 A:middle
+Now let's use the ID of this
+
+00:13:39.166 --> 00:13:41.126 A:middle
+user to get the instance of this
+
+00:13:41.126 --> 00:13:46.766 A:middle
+user, which is users/ID and this
+
+00:13:46.766 --> 00:13:48.176 A:middle
+should return the instance of
+
+00:13:48.176 --> 00:13:49.746 A:middle
+the user with a matching ID.
+
+00:13:50.346 --> 00:13:53.106 A:middle
+And we get a response with the
+
+00:13:53.106 --> 00:13:54.526 A:middle
+username John Appleseed.
+
+00:13:55.516 --> 00:13:56.596 A:middle
+So we found the user that we're
+
+00:13:56.596 --> 00:13:57.236 A:middle
+looking for.
+
+00:13:57.666 --> 00:13:59.376 A:middle
+Let's try to remove this user by
+
+00:13:59.376 --> 00:14:01.376 A:middle
+sending DELETE request to self
+

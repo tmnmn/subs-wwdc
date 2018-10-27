@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.386 --> 00:23:00.166 A:middle
+So, you should really limit your
+
+00:23:00.166 --> 00:23:01.226 A:middle
+use of these third-party
+
+00:23:01.226 --> 00:23:02.906 A:middle
+libraries as much as possible.
+
+00:23:04.006 --> 00:23:05.546 A:middle
+And, finally, you're going to
+
+00:23:05.546 --> 00:23:06.926 A:middle
+want to avoid static
+
+00:23:06.926 --> 00:23:09.586 A:middle
+initializers, and having any
+
+00:23:09.586 --> 00:23:11.076 A:middle
+behavior in methods like plus
+
+00:23:11.076 --> 00:23:12.966 A:middle
+initialize, and plus load.
+
+00:23:13.426 --> 00:23:15.116 A:middle
+Because these have to run before
+
+00:23:15.116 --> 00:23:16.706 A:middle
+your app can do any meaningful
+
+00:23:16.706 --> 00:23:17.026 A:middle
+work.
+
+00:23:18.556 --> 00:23:19.566 A:middle
+&gt;&gt; To learn more about this
+
+00:23:19.566 --> 00:23:21.366 A:middle
+vital part of your launch time,
+
+00:23:21.856 --> 00:23:23.316 A:middle
+check out App Start-up Time:
+
+00:23:23.366 --> 00:23:25.116 A:middle
+Past, Present, and Future from
+
+00:23:25.116 --> 00:23:27.376 A:middle
+WWDC 2017.
+
+00:23:28.436 --> 00:23:30.786 A:middle
+The next phase of your launch is
+
+00:23:30.786 --> 00:23:31.976 A:middle
+your UI Construction.
+
+00:23:32.916 --> 00:23:34.796 A:middle
+At this point, you're preparing
+
+00:23:34.796 --> 00:23:36.366 A:middle
+your UI, building up your
+
+00:23:36.366 --> 00:23:37.076 A:middle
+viewControllers.
+
+00:23:37.516 --> 00:23:40.136 A:middle
+The system is doing state
+
+00:23:40.136 --> 00:23:41.596 A:middle
+restoration, and loading in your
+
+00:23:41.596 --> 00:23:42.256 A:middle
+preferences.
+
+00:23:42.856 --> 00:23:45.026 A:middle
+And, you're loading in the data
+
+00:23:45.026 --> 00:23:46.746 A:middle
+that you need for your app to
+
+00:23:46.746 --> 00:23:47.626 A:middle
+become responsive.
+
+00:23:48.186 --> 00:23:50.996 A:middle
+So, Peter, what can we do at
+
+00:23:50.996 --> 00:23:52.026 A:middle
+this phase of the launch to
+
+00:23:52.026 --> 00:23:52.536 A:middle
+optimize?
+
+00:23:53.636 --> 00:23:54.896 A:middle
+&gt;&gt; You'll want to optimize the
+
+00:23:54.896 --> 00:23:56.686 A:middle
+UI construction phase to be as
+
+00:23:56.686 --> 00:23:58.276 A:middle
+fast as possible for your app.
+
+00:23:59.376 --> 00:24:01.226 A:middle
+This means returning as quickly
+

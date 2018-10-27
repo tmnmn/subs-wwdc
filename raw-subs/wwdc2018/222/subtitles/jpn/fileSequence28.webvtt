@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:55.542 --> 00:28:00.013 align:start position:12% line:-2
+failWithErrorはnilを返さず
+情報を記録します
+
+00:28:01.315 --> 00:28:03.484 align:start position:34% line:-1
+注意事項があります
+
+00:28:04.384 --> 00:28:07.421 align:start position:11% line:-2
+decodingFailurePolicyが
+エラーを設定する際
+
+00:28:07.521 --> 00:28:12.025 align:start position:27% line:-2
+Unarchiver上だと
+あとで変更できません
+
+00:28:12.726 --> 00:28:17.564 align:start position:27% line:-2
+復号化の失敗は
+連鎖することが多いからです
+
+00:28:17.664 --> 00:28:20.134 align:start position:32% line:-1
+最初の情報が重要です
+
+00:28:22.269 --> 00:28:25.205 align:start position:14% line:-1
+所定のfailWithErrorコールは
+
+00:28:25.305 --> 00:28:30.477 align:start position:23% line:-2
+例外を投げるか 実行を続けると
+覚えていてください
+
+00:28:30.577 --> 00:28:34.047 align:start position:25% line:-2
+特にObjective-Cは
+例外が見つけやすく
+
+00:28:34.181 --> 00:28:35.716 align:start position:39% line:-1
+対処できます
+
+00:28:37.017 --> 00:28:39.887 align:start position:30% line:-1
+nilやゼロの戻り値は
+
+00:28:40.354 --> 00:28:45.826 align:start position:29% line:-2
+エラーを設定し戻す場合に
+復号化の失敗で生じます
+
+00:28:45.926 --> 00:28:50.731 align:start position:29% line:-2
+またはデータが消えたか
+nilで符号化したかです
+
+00:28:50.964 --> 00:28:55.335 align:start position:32% line:-2
+エラーのプロパティで
+原因が分かります
+
+00:28:57.604 --> 00:28:59.640 align:start position:34% line:-1
+盛りだくさんですね
+
+00:28:59.807 --> 00:29:04.645 align:start position:16% line:-2
+NSSecureCodingを導入する
+方法を確認しましょう
+

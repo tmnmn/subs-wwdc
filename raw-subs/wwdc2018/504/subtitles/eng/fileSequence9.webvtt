@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.956 --> 00:09:00.546 A:middle
+Here we are in code, and I see
+
+00:09:00.546 --> 00:09:02.236 A:middle
+my WCSession FileTransfer.
+
+00:09:02.596 --> 00:09:03.996 A:middle
+And new, there's a progress
+
+00:09:03.996 --> 00:09:05.526 A:middle
+property that's available in
+
+00:09:05.526 --> 00:09:08.166 A:middle
+watchOS 5 and iOS 12.
+
+00:09:12.996 --> 00:09:14.666 A:middle
+And then, I can just get my
+
+00:09:14.666 --> 00:09:16.186 A:middle
+fileTransfer, query for the
+
+00:09:16.186 --> 00:09:18.746 A:middle
+progress, and update my view on
+
+00:09:18.746 --> 00:09:18.966 A:middle
+iOS.
+
+00:09:20.566 --> 00:09:21.476 A:middle
+And if you want to know some
+
+00:09:21.476 --> 00:09:22.766 A:middle
+more about watch connectivity.
+
+00:09:23.156 --> 00:09:24.346 A:middle
+There's some great sample code
+
+00:09:24.346 --> 00:09:25.596 A:middle
+that's available online.
+
+00:09:25.936 --> 00:09:27.056 A:middle
+Highly recommend you check it
+
+00:09:27.056 --> 00:09:28.196 A:middle
+out, the simple watch
+
+00:09:28.196 --> 00:09:29.426 A:middle
+connectivity sample code.
+
+00:09:29.906 --> 00:09:33.196 A:middle
+And you might be wondering --
+
+00:09:33.776 --> 00:09:34.936 A:middle
+there's URLSession, there's
+
+00:09:34.936 --> 00:09:36.896 A:middle
+watch connectivity -- which one
+
+00:09:37.106 --> 00:09:38.176 A:middle
+do we use, exactly?
+
+00:09:38.176 --> 00:09:39.486 A:middle
+And when does it make sense?
+
+00:09:41.016 --> 00:09:43.126 A:middle
+Well, for URLSession, we want to
+
+00:09:43.126 --> 00:09:44.176 A:middle
+use that when it's user
+
+00:09:44.176 --> 00:09:45.866 A:middle
+initiated on the watch itself.
+
+00:09:46.646 --> 00:09:47.566 A:middle
+And then, when we do that, we
+
+00:09:47.566 --> 00:09:48.836 A:middle
+want a query the waits for
+
+00:09:48.836 --> 00:09:50.676 A:middle
+connectivity property to know
+
+00:09:50.676 --> 00:09:51.586 A:middle
+that we have a network
+
+00:09:51.586 --> 00:09:54.136 A:middle
+connection at that point.
+
+00:09:54.306 --> 00:09:55.476 A:middle
+And I just wanted to mention
+
+00:09:55.476 --> 00:09:57.006 A:middle
+that if the iPhone is nearby,
+
+00:09:57.006 --> 00:09:58.306 A:middle
+then requests are proxied
+
+00:09:58.606 --> 00:09:59.876 A:middle
+through the iPhone when it's in
+
+00:09:59.876 --> 00:10:00.336 A:middle
+range.
+

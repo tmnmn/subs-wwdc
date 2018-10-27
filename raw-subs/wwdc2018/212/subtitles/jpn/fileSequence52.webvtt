@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:00.587 --> 00:52:04.558 align:start position:27% line:-2
+リストから
+経路が複数提示されるので―
+
+00:52:05.526 --> 00:52:09.496 align:start position:30% line:-2
+そこから経路を
+選べることがわかります
+
+00:52:09.596 --> 00:52:11.865 align:start position:30% line:-1
+まだ表示はしていません
+
+00:52:12.099 --> 00:52:14.368 align:start position:27% line:-1
+別の経路を選んでみましょう
+
+00:52:14.568 --> 00:52:19.139 align:start position:25% line:-2
+初期設定では オーバーレイを
+選んでも何も起こらず
+
+00:52:19.239 --> 00:52:22.042 align:start position:36% line:-2
+選択を解除しても
+何も起きません
+
+00:52:22.142 --> 00:52:25.612 align:start position:25% line:-1
+この部分も動作指定が必要です
+
+00:52:27.314 --> 00:52:28.615 align:start position:38% line:-1
+では ここで―
+
+00:52:28.982 --> 00:52:33.821 align:start position:27% line:-2
+選択解除時の
+イベントリスナを追加します
+
+00:52:34.121 --> 00:52:36.223 align:start position:34% line:-1
+選択が解除されたら
+
+00:52:36.623 --> 00:52:39.526 align:start position:25% line:-1
+初期設定のスタイルに戻します
+
+00:52:41.328 --> 00:52:42.663 align:start position:38% line:-1
+これで問題が―
+
+00:52:43.564 --> 00:52:44.731 align:start position:39% line:-1
+解消されます
+
+00:52:45.699 --> 00:52:47.000 align:start position:38% line:-1
+では もう一度
+
+00:52:47.234 --> 00:52:49.136 align:start position:32% line:-1
+ここに経路があります
+
+00:52:49.336 --> 00:52:54.274 align:start position:23% line:-2
+同じ場所を選ぶと
+オーバーレイが重なっているので
+
+00:52:54.375 --> 00:52:56.510 align:start position:25% line:-1
+別のオーバーレイが選ばれます
+
+00:52:56.810 --> 00:53:02.716 align:start position:27% line:-2
+選択解除のハンドラが働き
+前のハイライトが消えました
+

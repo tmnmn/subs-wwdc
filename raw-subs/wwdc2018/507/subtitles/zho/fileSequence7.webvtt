@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.185 --> 00:07:03.190 align:middle line:-2
+另一种办法是在创作内容时
+把所有密钥标识符
+
+00:07:03.457 --> 00:07:06.293 align:middle line:-1
+包括在主播放列表中作为会话密钥
+
+00:07:06.360 --> 00:07:10.964 align:middle line:-2
+并在AVAssetResourceLoader上使用
+preloadsEligibleContentKeys属性
+
+00:07:12.799 --> 00:07:14.735 align:middle line:-1
+说到这里我想指出
+
+00:07:14.801 --> 00:07:19.373 align:middle line:0
+我们有一个关于优化HLS性能的
+专门的一场演讲
+
+00:07:19.439 --> 00:07:20.574 align:middle line:0
+不只是密钥交付
+
+00:07:21.642 --> 00:07:23.377 align:middle line:0
+你一定要看看
+
+00:07:26.513 --> 00:07:28.081 align:middle line:-1
+预加载说完了 看下面
+
+00:07:28.148 --> 00:07:32.419 align:middle line:-2
+AVContentKeySession
+也可以帮助你扩展现场服务
+
+00:07:33.187 --> 00:07:34.421 align:middle line:-1
+大家知道怎么做？
+
+00:07:35.222 --> 00:07:39.593 align:middle line:-1
+你可以使用AVContentKeySession来分散
+
+00:07:39.993 --> 00:07:42.696 align:middle line:-2
+正在传输实时内容的客户的
+密钥加载请求
+
+00:07:44.031 --> 00:07:48.335 align:middle line:-1
+通常 直播流会定期轮换密钥
+
+00:07:48.402 --> 00:07:51.471 align:middle line:-1
+以为内容添加额外的保护层
+
+00:07:53.407 --> 00:07:57.144 align:middle line:-2
+可以想像
+在客户刷新实况播放列表时
+
+00:07:57.444 --> 00:07:59.313 align:middle line:-1
+这些密钥会同时出现
+
+00:07:59.546 --> 00:08:00.514 align:middle line:-1
+当发生这种情况时
+

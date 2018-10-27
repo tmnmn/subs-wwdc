@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:59.853 --> 00:42:04.825 align:start position:5% line:-2
+またframeBoundarySemaphoreの
+初期スタート値を３に設定します
+
+00:42:04.925 --> 00:42:09.329 align:start position:23% line:-2
+これは各フレーム境界線で
+セマフォが発信されることを表し
+
+00:42:09.429 --> 00:42:12.833 align:start position:25% line:-2
+それはGPUがフレーム処理を
+終えたことを意味します
+
+00:42:13.033 --> 00:42:15.936 align:start position:29% line:-2
+CPUのバッファ再利用が
+可能となるのです
+
+00:42:17.337 --> 00:42:19.506 align:start position:27% line:-1
+またバッファインデックスを
+
+00:42:19.606 --> 00:42:22.743 align:start position:25% line:-2
+カレントフレームのバッファに
+ポイントするよう設定します
+
+00:42:23.677 --> 00:42:29.083 align:start position:25% line:-2
+レンダリングループにおいては
+バッファの書き込み前に
+
+00:42:29.183 --> 00:42:34.087 align:start position:23% line:-2
+対応するフレームの
+GPU処理終了の確認が必要です
+
+00:42:34.188 --> 00:42:35.923 align:start position:34% line:-1
+フレームの先頭で―
+
+00:42:36.056 --> 00:42:38.992 align:start position:9% line:-2
+frameBoundarySemaphoreを
+待ちます
+
+00:42:39.493 --> 00:42:42.162 align:start position:34% line:-2
+カレントフレームが
+GPU処理を―
+
+00:42:42.262 --> 00:42:45.933 align:start position:29% line:-2
+終えたことを知らせる
+セマフォが発信されると…
+
+00:42:47.634 --> 00:42:52.139 align:start position:25% line:-2
+安全にバッファをつかみ
+新しいデータに再利用できます
+
+00:42:53.774 --> 00:42:58.145 align:start position:30% line:-2
+このバッファをGPUに
+関連付けるために
+
+00:42:58.745 --> 00:43:02.583 align:start position:32% line:-2
+いくつかのコマンドを
+エンコードします
+

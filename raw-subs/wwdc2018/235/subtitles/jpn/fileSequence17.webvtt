@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:54.815 --> 00:17:00.254 align:start position:14% line:-2
+下辺のcontentInsetは変わらず
+0だからです
+
+00:17:00.888 --> 00:17:05.291 align:start position:30% line:-2
+ですが 一番上まで
+スクロールして戻すと―
+
+00:17:05.392 --> 00:17:08.762 align:start position:12% line:-1
+contentOffsetが負数になります
+
+00:17:09.630 --> 00:17:14.067 align:start position:23% line:-2
+コンテンツの上辺を超えて
+スクロール可能となったからです
+
+00:17:14.166 --> 00:17:18.906 align:start position:21% line:-2
+負数の分だけ より
+スクロールできるようになりました
+
+00:17:20.307 --> 00:17:24.912 align:start position:7% line:-2
+iOS 7以降は このcontentInsetが
+非常に重要です
+
+00:17:25.012 --> 00:17:30.150 align:start position:18% line:-2
+iOS 7では システム全体にわたり
+各種バーが半透明になったからです
+
+00:17:30.250 --> 00:17:33.654 align:start position:29% line:-2
+コンテンツは端から端まで
+表示できます
+
+00:17:33.754 --> 00:17:39.593 align:start position:23% line:-2
+バーの下に入ったコンテンツは
+美しくカラフルに ぼやけますね
+
+00:17:39.693 --> 00:17:42.162 align:start position:27% line:-2
+ツールバーや
+ナビゲーションバーなどです
+
+00:17:42.496 --> 00:17:45.299 align:start position:25% line:-1
+様々な箇所で使われているので
+
+00:17:45.399 --> 00:17:50.370 align:start position:11% line:-2
+スクロールビューにcontentInsetを
+自動で設定したいところです
+
+00:17:50.604 --> 00:17:53.674 align:start position:11% line:-2
+以前 便利なプロパティが
+UIViewControllerにありました
+
+00:17:54.174 --> 00:17:57.644 align:start position:14% line:-2
+automaticallyAdjusts
+ScrollViewInsetsです
+
+00:17:57.744 --> 00:18:03.250 align:start position:25% line:-2
+ナビゲーションバーや
+ツールバーなどと重なる場合に
+

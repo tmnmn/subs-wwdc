@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.736 --> 00:07:00.976 A:middle
+element to an array that
+
+00:07:00.976 --> 00:07:01.996 A:middle
+includes that descriptor.
+
+00:07:03.986 --> 00:07:05.796 A:middle
+Let's go back to our bar graph
+
+00:07:05.796 --> 00:07:07.156 A:middle
+code that set the Accessibility
+
+00:07:07.156 --> 00:07:08.306 A:middle
+elements of the graph view.
+
+00:07:08.556 --> 00:07:10.226 A:middle
+What do we need to do to expose
+
+00:07:10.226 --> 00:07:11.500 A:middle
+dragging each element?
+
+00:07:14.286 --> 00:07:15.636 A:middle
+We compute a point within the
+
+00:07:15.636 --> 00:07:17.636 A:middle
+bar represented by that element
+
+00:07:17.636 --> 00:07:19.226 A:middle
+in the View's coordinate space,
+
+00:07:19.976 --> 00:07:21.296 A:middle
+make an appropriate descriptor
+
+00:07:21.296 --> 00:07:22.556 A:middle
+with that point in that View.
+
+00:07:22.556 --> 00:07:24.556 A:middle
+And set the accessibilityDrag
+
+00:07:24.556 --> 00:07:25.916 A:middle
+SourceDescriptors property of
+
+00:07:25.916 --> 00:07:26.486 A:middle
+the element.
+
+00:07:26.566 --> 00:07:27.236 A:middle
+And that's it.
+
+00:07:30.446 --> 00:07:31.326 A:middle
+Now, let's look at a slightly
+
+00:07:31.326 --> 00:07:31.996 A:middle
+different example.
+
+00:07:32.216 --> 00:07:34.086 A:middle
+Let's try to expose multiple
+
+00:07:34.086 --> 00:07:35.576 A:middle
+drops from a single element.
+
+00:07:36.626 --> 00:07:37.766 A:middle
+This might be useful for a
+
+00:07:37.766 --> 00:07:39.656 A:middle
+situation like a contact card,
+
+00:07:40.226 --> 00:07:41.746 A:middle
+where the card is small enough
+
+00:07:42.596 --> 00:07:44.736 A:middle
+that we're going to expose it as
+
+00:07:44.736 --> 00:07:47.406 A:middle
+one element to Accessibility.
+
+00:07:47.766 --> 00:07:49.796 A:middle
+But there are multiple wells
+
+00:07:49.796 --> 00:07:52.486 A:middle
+into which we can drop content
+
+00:07:52.486 --> 00:07:54.466 A:middle
+into the card.
+
+00:07:54.506 --> 00:07:55.746 A:middle
+So, for instance, it might have
+
+00:07:55.746 --> 00:07:58.126 A:middle
+a portrait and a space for you
+
+00:07:58.126 --> 00:07:59.986 A:middle
+to drop arbitrary attachments
+
+00:07:59.986 --> 00:08:00.736 A:middle
+for that contact.
+

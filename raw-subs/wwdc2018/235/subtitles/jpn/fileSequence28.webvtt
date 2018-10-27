@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.647 --> 00:28:03.851 align:start position:11% line:-2
+Navigation Controllerは
+その内側にあるので
+
+00:28:03.951 --> 00:28:07.821 align:start position:16% line:-2
+タブバーを構成する
+下部のSafe Areaも受け取ります
+
+00:28:08.388 --> 00:28:13.293 align:start position:2% line:-2
+Content View Controllerは上下の
+safeAreaInsetsを受け取ります
+
+00:28:14.795 --> 00:28:20.500 align:start position:9% line:-2
+横向きになってもsafeAreaInsetsが
+上部と下部に確認できます
+
+00:28:20.601 --> 00:28:26.273 align:start position:27% line:-2
+しかし画面サイズに合わせて
+左右にも余白があります
+
+00:28:26.373 --> 00:28:30.978 align:start position:9% line:-2
+View Controllerの階層上位にある
+画面から伝播されたものです
+
+00:28:32.146 --> 00:28:34.515 align:start position:30% line:-1
+今から この例を使って
+
+00:28:34.615 --> 00:28:40.220 align:start position:14% line:-2
+独自のビューを実装する場合の
+Safe Areaの使い方を考えましょう
+
+00:28:40.721 --> 00:28:45.392 align:start position:14% line:-2
+このカスタムビューは iPhone Xで
+実行されているとは知らず
+
+00:28:45.492 --> 00:28:49.730 align:start position:4% line:-2
+Container View Controllerの
+中にあることも知りません
+
+00:28:50.531 --> 00:28:53.033 align:start position:25% line:-1
+これはカプセル化の考え方です
+
+00:28:53.133 --> 00:28:59.006 align:start position:16% line:-2
+もしビューが４辺で与えられた
+safeAreaInsetsだけを読み
+
+00:28:59.106 --> 00:29:04.678 align:start position:12% line:-2
+異なる任意のsafeAreaInsetsに
+適応できるとしましょう
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.846 --> 00:22:04.006 A:middle
+So let's copy this id.
+
+00:22:04.136 --> 00:22:05.156 A:middle
+So we just created a group
+
+00:22:05.156 --> 00:22:05.986 A:middle
+called Test Group.
+
+00:22:06.066 --> 00:22:07.236 A:middle
+But what if you don't like the
+
+00:22:07.236 --> 00:22:08.136 A:middle
+name of the group we just
+
+00:22:08.136 --> 00:22:08.736 A:middle
+created?
+
+00:22:09.446 --> 00:22:10.936 A:middle
+We can modify the existing group
+
+00:22:11.046 --> 00:22:12.836 A:middle
+by sending PATCH request to the
+
+00:22:12.836 --> 00:22:13.786 A:middle
+self link of this group.
+
+00:22:15.156 --> 00:22:18.066 A:middle
+We'll send PATCH and then beta
+
+00:22:18.496 --> 00:22:22.646 A:middle
+Groups/the id and we'll also
+
+00:22:22.646 --> 00:22:24.306 A:middle
+need to provide the payload that
+
+00:22:24.306 --> 00:22:25.236 A:middle
+looks like this.
+
+00:22:25.816 --> 00:22:27.806 A:middle
+This looks a lot like payload
+
+00:22:27.806 --> 00:22:29.336 A:middle
+for posting but we also need to
+
+00:22:29.336 --> 00:22:31.296 A:middle
+provide the id to make sure that
+
+00:22:31.296 --> 00:22:32.286 A:middle
+we're modifying the correct
+
+00:22:32.286 --> 00:22:32.576 A:middle
+data.
+
+00:22:32.656 --> 00:22:35.736 A:middle
+And let's paste the id of the
+
+00:22:35.736 --> 00:22:36.476 A:middle
+beta Group.
+
+00:22:36.476 --> 00:22:38.096 A:middle
+And the only information we'd
+
+00:22:38.096 --> 00:22:39.586 A:middle
+like to change is the name.
+
+00:22:39.986 --> 00:22:42.746 A:middle
+So let's rename it to WWDC
+
+00:22:44.216 --> 00:22:44.346 A:middle
+Group.
+
+00:22:44.516 --> 00:22:46.546 A:middle
+And I'm sending the request and
+
+00:22:46.546 --> 00:22:47.926 A:middle
+now we get a 200 response and it
+
+00:22:47.926 --> 00:22:48.926 A:middle
+looks like the name has been
+
+00:22:48.926 --> 00:22:49.666 A:middle
+updated.
+
+00:22:50.686 --> 00:22:51.896 A:middle
+So now we have the group that we
+
+00:22:51.896 --> 00:22:52.376 A:middle
+wanted.
+
+00:22:52.486 --> 00:22:53.996 A:middle
+Let's start adding some external
+
+00:22:53.996 --> 00:22:54.506 A:middle
+testers.
+
+00:22:55.186 --> 00:22:57.146 A:middle
+To create tester, we send POST
+
+00:22:57.146 --> 00:22:58.676 A:middle
+request to the beta testers
+
+00:22:58.676 --> 00:23:02.736 A:middle
+endpoint, which is v1/beta
+

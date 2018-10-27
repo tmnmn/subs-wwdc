@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:01.426 --> 00:27:03.936 A:middle
+That is a clue from the memory
+
+00:27:03.936 --> 00:27:05.266 A:middle
+allocator itself.
+
+00:27:05.266 --> 00:27:06.766 A:middle
+Let me show you why that is.
+
+00:27:07.556 --> 00:27:08.776 A:middle
+Here's what our object looked
+
+00:27:08.776 --> 00:27:10.756 A:middle
+like when it was still valid.
+
+00:27:11.466 --> 00:27:13.226 A:middle
+An object starts with an isa
+
+00:27:13.226 --> 00:27:15.516 A:middle
+field, the isa field points to
+
+00:27:15.516 --> 00:27:16.566 A:middle
+the object's class.
+
+00:27:17.326 --> 00:27:19.146 A:middle
+This is how Objective-C objects
+
+00:27:19.146 --> 00:27:20.536 A:middle
+are laid out, this is how some
+
+00:27:20.536 --> 00:27:22.096 A:middle
+swift objects are laid out.
+
+00:27:22.736 --> 00:27:24.766 A:middle
+So what does the objc release
+
+00:27:24.766 --> 00:27:25.486 A:middle
+function do?
+
+00:27:26.226 --> 00:27:28.776 A:middle
+It reads the isa field and then
+
+00:27:28.776 --> 00:27:30.796 A:middle
+dreferences the isa field so it
+
+00:27:30.796 --> 00:27:32.556 A:middle
+can get to the class object and
+
+00:27:32.556 --> 00:27:33.806 A:middle
+perform method lookups.
+
+00:27:35.186 --> 00:27:37.206 A:middle
+Ordinarily of course this works,
+
+00:27:37.206 --> 00:27:38.176 A:middle
+this is how it's supposed to
+
+00:27:38.176 --> 00:27:38.456 A:middle
+work.
+
+00:27:39.346 --> 00:27:40.886 A:middle
+What happens if our object has
+
+00:27:40.956 --> 00:27:42.396 A:middle
+already been freed.
+
+00:27:42.676 --> 00:27:46.416 A:middle
+When the free function deletes
+
+00:27:46.416 --> 00:27:49.826 A:middle
+an object it inserts it into a
+
+00:27:49.826 --> 00:27:52.556 A:middle
+free list of other dead objects.
+
+00:27:53.206 --> 00:27:55.496 A:middle
+And it writes a free list
+
+00:27:55.496 --> 00:27:57.296 A:middle
+pointer to the next object in
+
+00:27:57.296 --> 00:27:59.356 A:middle
+the list where the isa field
+
+00:27:59.356 --> 00:28:00.036 A:middle
+used to be.
+

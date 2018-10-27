@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.956 --> 00:27:01.696 A:middle
+What makes the compiler choose
+
+00:27:01.926 --> 00:27:03.186 A:middle
+whether a file needs to be
+
+00:27:03.186 --> 00:27:03.906 A:middle
+recompiled?
+
+00:27:04.636 --> 00:27:06.536 A:middle
+For that, we need to understand
+
+00:27:06.536 --> 00:27:07.836 A:middle
+Swift's dependency model.
+
+00:27:09.496 --> 00:27:12.326 A:middle
+Now, Swift's dependency model is
+
+00:27:12.356 --> 00:27:13.686 A:middle
+based around files.
+
+00:27:14.056 --> 00:27:15.366 A:middle
+And it's a little bit tricky
+
+00:27:15.466 --> 00:27:17.186 A:middle
+because in Swift there are no
+
+00:27:17.186 --> 00:27:17.926 A:middle
+header files.
+
+00:27:18.546 --> 00:27:20.236 A:middle
+We just see everything that's
+
+00:27:20.796 --> 00:27:22.626 A:middle
+defined somewhere in our target
+
+00:27:22.706 --> 00:27:23.286 A:middle
+by default.
+
+00:27:24.256 --> 00:27:25.486 A:middle
+In this case, I'm declaring a
+
+00:27:25.486 --> 00:27:26.936 A:middle
+struct point in the file on the
+
+00:27:26.936 --> 00:27:27.316 A:middle
+left.
+
+00:27:27.866 --> 00:27:29.176 A:middle
+And if I bring in a file on the
+
+00:27:29.176 --> 00:27:31.106 A:middle
+right, the compiler knows that
+
+00:27:31.106 --> 00:27:32.916 A:middle
+I'm referring to that first
+
+00:27:32.916 --> 00:27:33.656 A:middle
+declaration.
+
+00:27:34.316 --> 00:27:35.766 A:middle
+The same is true for the use of
+
+00:27:35.766 --> 00:27:37.466 A:middle
+the X and Y properties in that
+
+00:27:37.466 --> 00:27:41.216 A:middle
+file on the right.
+
+00:27:41.416 --> 00:27:43.286 A:middle
+Now, this file-based dependency
+
+00:27:43.286 --> 00:27:44.776 A:middle
+means that if I change the file
+
+00:27:44.776 --> 00:27:47.846 A:middle
+on the left, both files will
+
+00:27:47.846 --> 00:27:49.086 A:middle
+need to be recompiled.
+
+00:27:50.306 --> 00:27:51.686 A:middle
+And that's important because
+
+00:27:51.686 --> 00:27:52.886 A:middle
+we're actually trying to call
+
+00:27:52.886 --> 00:27:53.816 A:middle
+this initializer.
+
+00:27:54.016 --> 00:27:55.326 A:middle
+And we want to make sure that
+
+00:27:55.326 --> 00:27:56.486 A:middle
+we're calling it correctly.
+
+00:27:57.036 --> 00:28:00.306 A:middle
+The compiler is smart enough to
+

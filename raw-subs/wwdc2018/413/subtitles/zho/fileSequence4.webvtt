@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.766 --> 00:04:01.736 A:middle
+PlaygroundLiveViewMessageHandler 
+
+00:04:01.736 --> 00:04:03.206 A:middle
+协议中的 send() 方法来向
+
+00:04:03.206 --> 00:04:04.956 A:middle
+实况视图发送信息
+
+00:04:04.956 --> 00:04:06.176 A:middle
+这个协议是在 PlaygroundSupport 框架中
+
+00:04:06.176 --> 00:04:07.086 A:middle
+声明的
+
+00:04:07.086 --> 00:04:10.536 A:middle
+信息是以 PlaygroundValue 的形式
+
+00:04:10.536 --> 00:04:12.056 A:middle
+发送到实况视图的
+
+00:04:12.836 --> 00:04:14.316 A:middle
+PlaygroundValue 是一个枚举
+
+00:04:14.316 --> 00:04:16.716 A:middle
+它同样也是在 PlaygroundSupport 框架中声明的
+
+00:04:17.366 --> 00:04:20.826 A:middle
+为了简化把对象转化为
+
+00:04:20.906 --> 00:04:22.596 A:middle
+PlaygroundValue 的过程
+
+00:04:22.596 --> 00:04:23.536 A:middle
+我在一个叫做 LiveViewSupport.swift 的
+
+00:04:23.536 --> 00:04:25.336 A:middle
+文件中 写了一个叫做
+
+00:04:25.336 --> 00:04:27.536 A:middle
+PlaygroundValueConvertible 的协议
+
+00:04:27.916 --> 00:04:29.406 A:middle
+我把这个文件包括到
+
+00:04:29.406 --> 00:04:31.086 A:middle
+每本 Playground Book 中
+
+00:04:31.146 --> 00:04:32.756 A:middle
+Book 层级的资源文件夹中
+
+00:04:33.446 --> 00:04:35.376 A:middle
+然后 如果我想发送任何类型的对象
+
+00:04:35.376 --> 00:04:38.706 A:middle
+比如一个 CIFilter
+
+00:04:38.706 --> 00:04:40.376 A:middle
+我可以扩展那个类型
+
+00:04:40.376 --> 00:04:42.846 A:middle
+以遵循 PlaygroundValueConvertible 协议
+
+00:04:42.846 --> 00:04:45.436 A:middle
+然后实现 asPlaygroundValue() 方法
+
+00:04:45.846 --> 00:04:47.096 A:middle
+这个方法将会把原始对象
+
+00:04:47.096 --> 00:04:49.326 A:middle
+转换成一个 PlaygroundValue
+
+00:04:51.196 --> 00:04:52.796 A:middle
+我还写了一个 Helper 函数
+
+00:04:52.796 --> 00:04:54.836 A:middle
+叫做 sendValue 它可以获取一个
+
+00:04:54.866 --> 00:04:56.646 A:middle
+PlaygroundValueConvertible 并把它
+
+00:04:56.646 --> 00:04:58.046 A:middle
+以 PlaygroundValue 的形式发送到
+
+00:04:58.046 --> 00:05:00.106 A:middle
+当且页面的实况视图中
+

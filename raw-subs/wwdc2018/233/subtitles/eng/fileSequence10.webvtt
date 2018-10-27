@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.576 --> 00:10:00.586 A:middle
+do, is you need to identify and
+
+00:10:00.696 --> 00:10:02.386 A:middle
+track all of the state that
+
+00:10:02.546 --> 00:10:03.596 A:middle
+affects your UI.
+
+00:10:05.196 --> 00:10:07.356 A:middle
+Then, every time that states
+
+00:10:07.356 --> 00:10:09.116 A:middle
+changes, you should dirty the
+
+00:10:09.116 --> 00:10:10.476 A:middle
+layout system by calling
+
+00:10:10.556 --> 00:10:11.466 A:middle
+setNeedsLayout.
+
+00:10:12.696 --> 00:10:15.496 A:middle
+Finally, you'll want to update
+
+00:10:15.496 --> 00:10:17.176 A:middle
+your UI with this state in
+
+00:10:17.176 --> 00:10:18.006 A:middle
+layoutSubviews.
+
+00:10:18.936 --> 00:10:19.826 A:middle
+And, that's it.
+
+00:10:20.746 --> 00:10:21.706 A:middle
+&gt;&gt; So, what I love about this
+
+00:10:21.706 --> 00:10:23.596 A:middle
+recipe is just how easy it is to
+
+00:10:23.596 --> 00:10:24.036 A:middle
+follow.
+
+00:10:24.576 --> 00:10:27.276 A:middle
+And, if we apply layout-driven
+
+00:10:27.276 --> 00:10:29.216 A:middle
+UI to our app holistically,
+
+00:10:30.376 --> 00:10:32.106 A:middle
+while considering the three core
+
+00:10:32.106 --> 00:10:33.486 A:middle
+components of an iOS app,
+
+00:10:34.196 --> 00:10:36.226 A:middle
+layout, animations, and
+
+00:10:36.226 --> 00:10:38.646 A:middle
+gestures, you'll find that our
+
+00:10:38.646 --> 00:10:40.226 A:middle
+implementation of all three of
+
+00:10:40.226 --> 00:10:43.256 A:middle
+these works harmoniously, in a
+
+00:10:43.256 --> 00:10:44.516 A:middle
+really awesome way.
+
+00:10:45.956 --> 00:10:47.496 A:middle
+Let's start with layout.
+
+00:10:49.556 --> 00:10:51.586 A:middle
+Layout is the process by which
+
+00:10:51.586 --> 00:10:53.026 A:middle
+you position your application's
+
+00:10:53.026 --> 00:10:54.476 A:middle
+content onscreen.
+
+00:10:55.576 --> 00:10:57.056 A:middle
+But, we're also recommending
+
+00:10:57.056 --> 00:10:59.446 A:middle
+that you do all other UI updates
+
+00:10:59.636 --> 00:11:00.186 A:middle
+in layout.
+

@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.059 --> 00:06:01.929 align:start position:20% line:-2
+あることに特化した
+View Controllerです
+
+00:06:02.196 --> 00:06:07.034 align:start position:25% line:-2
+左は私のポスト
+右は全ての作成者のポストです
+
+00:06:07.134 --> 00:06:12.005 align:start position:27% line:-2
+重複しているので
+半分のコードで済みそうです
+
+00:06:13.974 --> 00:06:17.544 align:start position:23% line:-1
+片方では複数のポストを表示させ
+
+00:06:17.644 --> 00:06:20.180 align:start position:25% line:-1
+片方では１つだけ表示させます
+
+00:06:20.547 --> 00:06:25.185 align:start position:11% line:-2
+モデルオブジェクトを取る
+２つのView Controllerの境界を
+
+00:06:25.285 --> 00:06:28.088 align:start position:29% line:-1
+うまく設定すれば可能です
+
+00:06:29.156 --> 00:06:31.992 align:start position:20% line:-2
+各View Controllerは
+モデルパラメータにより構成され
+
+00:06:32.459 --> 00:06:37.698 align:start position:21% line:-2
+表示するポストによって ビューを
+細かくカスタマイズできます
+
+00:06:39.766 --> 00:06:41.768 align:start position:30% line:-2
+リストビューには
+フェッチ要求を取得させ
+
+00:06:41.869 --> 00:06:46.373 align:start position:23% line:-2
+ディテールビューには
+管理オブジェクトを取得させます
+
+00:06:47.407 --> 00:06:49.943 align:start position:23% line:-2
+管理オブジェクトコンテキストも
+必要です
+
+00:06:50.043 --> 00:06:54.248 align:start position:25% line:-2
+ビューコンテキストか 他の
+メインキューコンテキストです
+
+00:06:54.615 --> 00:06:57.417 align:start position:14% line:-2
+View Controllerを汎化する
+この方法は
+
+00:06:57.518 --> 00:07:01.155 align:start position:25% line:-2
+ユーティリティのデータ型にも
+非常に有効です
+

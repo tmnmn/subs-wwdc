@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.856 --> 00:12:00.166 A:middle
+back.
+
+00:12:00.716 --> 00:12:01.886 A:middle
+Wrap that in the UIImage and
+
+00:12:01.886 --> 00:12:02.806 A:middle
+return it from our helper
+
+00:12:02.806 --> 00:12:03.656 A:middle
+function that we've written
+
+00:12:03.656 --> 00:12:03.826 A:middle
+here.
+
+00:12:04.366 --> 00:12:06.866 A:middle
+So, to give you an idea of the
+
+00:12:06.866 --> 00:12:08.346 A:middle
+magnitude of savings that this
+
+00:12:08.346 --> 00:12:10.086 A:middle
+technique gives us, we're just
+
+00:12:10.086 --> 00:12:11.216 A:middle
+displaying the full screen image
+
+00:12:11.216 --> 00:12:11.386 A:middle
+here.
+
+00:12:11.846 --> 00:12:12.586 A:middle
+This is a photograph.
+
+00:12:12.586 --> 00:12:14.286 A:middle
+It's 3,000 by 2,000 pixels.
+
+00:12:14.626 --> 00:12:16.136 A:middle
+If we do no optimization, just
+
+00:12:16.136 --> 00:12:17.536 A:middle
+throw UIImageView in the
+
+00:12:17.536 --> 00:12:19.216 A:middle
+storyboard and assign our image
+
+00:12:19.216 --> 00:12:20.996 A:middle
+to it, this application takes
+
+00:12:20.996 --> 00:12:23.606 A:middle
+31.5 megabytes just sitting
+
+00:12:23.606 --> 00:12:24.116 A:middle
+doing nothing.
+
+00:12:24.116 --> 00:12:27.006 A:middle
+Now, using this downsampling
+
+00:12:27.006 --> 00:12:29.266 A:middle
+technique and only producing an
+
+00:12:29.266 --> 00:12:30.406 A:middle
+image buffer that's the size of
+
+00:12:30.406 --> 00:12:32.616 A:middle
+the actual display, we can get
+
+00:12:32.616 --> 00:12:33.526 A:middle
+the memory usage of this
+
+00:12:33.526 --> 00:12:35.816 A:middle
+application down to 18.4
+
+00:12:35.816 --> 00:12:36.376 A:middle
+megabytes.
+
+00:12:36.536 --> 00:12:38.786 A:middle
+And that is a huge reduction in
+
+00:12:38.786 --> 00:12:39.486 A:middle
+memory usage.
+
+00:12:41.508 --> 00:12:43.508 A:middle
+[ Applause ]
+
+00:12:44.366 --> 00:12:45.846 A:middle
+Thanks for the applause, but you
+
+00:12:45.846 --> 00:12:46.806 A:middle
+should all get the applause for
+
+00:12:46.806 --> 00:12:47.666 A:middle
+implementing this technique in
+
+00:12:47.666 --> 00:12:48.336 A:middle
+your applications.
+
+00:12:48.966 --> 00:12:51.336 A:middle
+You can imagine how much of a
+
+00:12:51.336 --> 00:12:52.856 A:middle
+big deal this is for an app
+
+00:12:52.856 --> 00:12:54.276 A:middle
+that's displaying a lot of
+
+00:12:54.276 --> 00:12:56.286 A:middle
+potentially large input images
+
+00:12:56.866 --> 00:12:58.726 A:middle
+in a small space on screen.
+
+00:12:59.446 --> 00:13:02.606 A:middle
+For example, the Camera Roll.
+

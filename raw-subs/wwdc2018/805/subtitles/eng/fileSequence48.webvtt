@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.206 --> 00:48:01.236 A:middle
+So, how do we make this normal
+
+00:48:01.236 --> 00:48:01.446 A:middle
+map?
+
+00:48:02.146 --> 00:48:03.196 A:middle
+Let's see a closer look at one
+
+00:48:03.196 --> 00:48:05.156 A:middle
+of the branches, and see what we
+
+00:48:05.156 --> 00:48:06.216 A:middle
+can do to make this work.
+
+00:48:06.626 --> 00:48:07.936 A:middle
+In most modern 3D modeling
+
+00:48:07.936 --> 00:48:09.346 A:middle
+applications, artists have the
+
+00:48:09.346 --> 00:48:10.406 A:middle
+ability to generate these normal
+
+00:48:10.406 --> 00:48:12.496 A:middle
+maps by projecting details from
+
+00:48:12.496 --> 00:48:14.236 A:middle
+a high-density mesh over to a
+
+00:48:14.236 --> 00:48:14.986 A:middle
+low-density one.
+
+00:48:15.546 --> 00:48:16.556 A:middle
+So, here you can see what the
+
+00:48:16.556 --> 00:48:17.936 A:middle
+normal map looks like on the
+
+00:48:17.936 --> 00:48:19.176 A:middle
+branches after they've been
+
+00:48:19.176 --> 00:48:20.636 A:middle
+generated from this high-density
+
+00:48:20.636 --> 00:48:21.046 A:middle
+mesh.
+
+00:48:21.756 --> 00:48:23.296 A:middle
+And, after applying the normal
+
+00:48:23.296 --> 00:48:24.786 A:middle
+map, you start to notice all
+
+00:48:24.786 --> 00:48:25.826 A:middle
+those nice details that were
+
+00:48:25.826 --> 00:48:27.276 A:middle
+originally lost come back into
+
+00:48:27.276 --> 00:48:27.756 A:middle
+this model.
+
+00:48:27.756 --> 00:48:28.876 A:middle
+But we still are able to
+
+00:48:28.876 --> 00:48:30.446 A:middle
+maintain that high performance,
+
+00:48:30.496 --> 00:48:31.656 A:middle
+of the low-poly mesh.
+
+00:48:31.656 --> 00:48:34.386 A:middle
+So, you may be wondering why the
+
+00:48:34.416 --> 00:48:35.456 A:middle
+normal map looks kind of
+
+00:48:35.456 --> 00:48:37.356 A:middle
+strange, well the colors of the
+
+00:48:37.356 --> 00:48:38.836 A:middle
+normal map actually represent
+
+00:48:38.996 --> 00:48:40.626 A:middle
+visual representations of the
+
+00:48:40.626 --> 00:48:41.236 A:middle
+vector data.
+
+00:48:41.236 --> 00:48:43.816 A:middle
+And, determine how the normals
+
+00:48:43.816 --> 00:48:45.446 A:middle
+on the surface model will be
+
+00:48:45.446 --> 00:48:47.866 A:middle
+offset in order to change the
+
+00:48:47.866 --> 00:48:48.566 A:middle
+way that light is being
+
+00:48:48.566 --> 00:48:50.526 A:middle
+reflected, and our key to making
+
+00:48:50.526 --> 00:48:51.196 A:middle
+this effect work.
+
+00:48:51.706 --> 00:48:53.766 A:middle
+That was a bit of a mouthful, so
+
+00:48:53.766 --> 00:48:54.936 A:middle
+let's dive a little bit more
+
+00:48:54.936 --> 00:48:57.006 A:middle
+into this property, because
+
+00:48:57.276 --> 00:48:58.636 A:middle
+normals we feel are a really
+
+00:48:58.636 --> 00:48:59.326 A:middle
+important topic.
+
+00:48:59.946 --> 00:49:00.946 A:middle
+And, we want to spend a couple
+

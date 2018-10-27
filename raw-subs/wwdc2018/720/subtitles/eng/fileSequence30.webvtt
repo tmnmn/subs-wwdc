@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:01.496 --> 00:30:03.016 A:middle
+We then instantiated a
+
+00:30:03.016 --> 00:30:05.006 A:middle
+PKAddPassesViewController with
+
+00:30:05.006 --> 00:30:07.906 A:middle
+that pass, and presented it.
+
+00:30:08.636 --> 00:30:09.816 A:middle
+But, as Ben had mentioned
+
+00:30:09.816 --> 00:30:11.626 A:middle
+earlier, there's a better API we
+
+00:30:11.626 --> 00:30:12.686 A:middle
+can use in order to
+
+00:30:12.686 --> 00:30:14.106 A:middle
+automatically add passes to
+
+00:30:14.106 --> 00:30:14.436 A:middle
+Wallet.
+
+00:30:15.346 --> 00:30:16.346 A:middle
+So, let's go ahead and remove
+
+00:30:16.346 --> 00:30:17.716 A:middle
+these two lines of code, and
+
+00:30:17.716 --> 00:30:18.746 A:middle
+replace it with that API.
+
+00:30:21.046 --> 00:30:22.856 A:middle
+That API's on the PKPass
+
+00:30:22.856 --> 00:30:24.206 A:middle
+library, so let's create an
+
+00:30:24.206 --> 00:30:24.956 A:middle
+instance of that.
+
+00:30:27.396 --> 00:30:29.006 A:middle
+And, let's call the API.
+
+00:30:31.176 --> 00:30:33.096 A:middle
+The function's called addPasses.
+
+00:30:33.876 --> 00:30:36.206 A:middle
+Takes an array of passes, has a
+
+00:30:36.206 --> 00:30:37.586 A:middle
+completion handler with a
+
+00:30:37.586 --> 00:30:38.026 A:middle
+status.
+
+00:30:38.686 --> 00:30:39.716 A:middle
+And, there are three possible
+
+00:30:39.716 --> 00:30:40.956 A:middle
+statuses that can be returned.
+
+00:30:41.876 --> 00:30:44.146 A:middle
+DidAddPasses, which means the
+
+00:30:44.146 --> 00:30:45.456 A:middle
+user wants to add the pass to
+
+00:30:45.456 --> 00:30:45.786 A:middle
+Wallet.
+
+00:30:46.776 --> 00:30:48.626 A:middle
+DidCancelAddPasses, which means
+
+00:30:48.626 --> 00:30:49.526 A:middle
+the user does not want to add
+
+00:30:49.526 --> 00:30:50.236 A:middle
+the pass to Wallet.
+
+00:30:51.266 --> 00:30:52.266 A:middle
+And, shouldReviewPasses.
+
+00:30:52.306 --> 00:30:55.116 A:middle
+In this case, the user wishes to
+
+00:30:55.116 --> 00:30:56.376 A:middle
+be presented with a preview of
+
+00:30:56.376 --> 00:30:58.886 A:middle
+the pass before deciding to add
+
+00:30:58.886 --> 00:30:59.616 A:middle
+it to Wallet or not.
+

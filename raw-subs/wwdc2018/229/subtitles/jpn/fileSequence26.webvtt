@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.558 --> 00:26:01.528 align:start position:25% line:-2
+どの列から手をつければいいか
+教えます
+
+00:26:02.329 --> 00:26:06.800 align:start position:34% line:-2
+バグを見つけるのに
+とても便利です
+
+00:26:06.900 --> 00:26:11.538 align:start position:27% line:-2
+バグの箇所に関して
+TSanはウソをつきません
+
+00:26:12.639 --> 00:26:16.743 align:start position:23% line:-1
+クマが同時に寝る条件を消すのを
+
+00:26:16.844 --> 00:26:18.912 align:start position:21% line:-1
+直列ディスパッチキューで行います
+
+00:26:19.746 --> 00:26:21.748 align:start position:27% line:-1
+順番に寝るようになりました
+
+00:26:21.949 --> 00:26:27.187 align:start position:16% line:-2
+キューの並びに注意しながら
+sleepingBearsを見にいくと
+
+00:26:27.955 --> 00:26:32.426 align:start position:30% line:-2
+GranpaとCubが
+仲良く寝ています
+
+00:26:34.161 --> 00:26:40.234 align:start position:21% line:-2
+単独のスレッドからだけ見えるよう
+データを隔離しましょう
+
+00:26:40.467 --> 00:26:44.571 align:start position:32% line:-2
+それができない場合は
+排他制御をしましょう
+
+00:26:44.671 --> 00:26:47.074 align:start position:29% line:-2
+直列ディスパッチキューや
+ロックです
+
+00:26:47.741 --> 00:26:50.644 align:start position:20% line:-1
+そしてTSanで二重チェックします
+
+00:26:50.744 --> 00:26:54.548 align:start position:32% line:-2
+バグは リリース前に
+発見すべきですよね
+
+00:26:55.782 --> 00:26:58.385 align:start position:25% line:-1
+さらに可変コレクションの話を
+
+00:26:59.753 --> 00:27:03.791 align:start position:25% line:-2
+できれば
+可変状態の使用を避けましょう
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.436 --> 00:40:00.206 A:middle
+actually matches exactly to my
+
+00:40:00.206 --> 00:40:00.976 A:middle
+GPU class.
+
+00:40:01.566 --> 00:40:04.736 A:middle
+But because we prefer and scan
+
+00:40:04.736 --> 00:40:05.796 A:middle
+through things in memory
+
+00:40:05.796 --> 00:40:07.176 A:middle
+priority order before we do
+
+00:40:07.176 --> 00:40:08.376 A:middle
+graphics classes, we're going to
+
+00:40:08.376 --> 00:40:09.126 A:middle
+select this first.
+
+00:40:09.126 --> 00:40:10.366 A:middle
+This is really important because
+
+00:40:10.366 --> 00:40:11.966 A:middle
+we have decided that memory is
+
+00:40:11.966 --> 00:40:13.126 A:middle
+really the most important way
+
+00:40:13.126 --> 00:40:14.086 A:middle
+that you can characterize the
+
+00:40:14.086 --> 00:40:15.436 A:middle
+overall performance of a device,
+
+00:40:15.726 --> 00:40:17.516 A:middle
+so we're going to prefer that as
+
+00:40:17.516 --> 00:40:19.026 A:middle
+we go through the selection
+
+00:40:19.026 --> 00:40:19.526 A:middle
+matrix.
+
+00:40:21.586 --> 00:40:23.046 A:middle
+Okay that's how it works, how do
+
+00:40:23.046 --> 00:40:24.006 A:middle
+you think about using it.
+
+00:40:24.916 --> 00:40:26.616 A:middle
+Memory really represents the
+
+00:40:26.616 --> 00:40:28.346 A:middle
+overall headroom of your device
+
+00:40:28.776 --> 00:40:30.336 A:middle
+and is really the best aggregate
+
+00:40:30.336 --> 00:40:31.796 A:middle
+indicator of capability.
+
+00:40:31.796 --> 00:40:33.006 A:middle
+So it's a really good choice to
+
+00:40:33.006 --> 00:40:34.426 A:middle
+use with larger or richer
+
+00:40:34.426 --> 00:40:35.896 A:middle
+assets, more detailed stuff,
+
+00:40:35.896 --> 00:40:37.256 A:middle
+things that are bigger on disk,
+
+00:40:37.576 --> 00:40:38.306 A:middle
+things that are going to take a
+
+00:40:38.306 --> 00:40:39.196 A:middle
+little more memory when they're
+
+00:40:39.196 --> 00:40:41.416 A:middle
+expanded in in memory for
+
+00:40:41.416 --> 00:40:41.836 A:middle
+rendering.
+
+00:40:42.486 --> 00:40:44.046 A:middle
+Just a richer user experience is
+
+00:40:44.046 --> 00:40:45.076 A:middle
+usually associated with higher
+
+00:40:45.076 --> 00:40:45.336 A:middle
+memory.
+
+00:40:45.826 --> 00:40:47.116 A:middle
+Now higher graphics is a little
+
+00:40:47.116 --> 00:40:48.946 A:middle
+more subtle since that tracks
+
+00:40:48.946 --> 00:40:50.566 A:middle
+the raw processing capability,
+
+00:40:50.566 --> 00:40:52.626 A:middle
+both CPU and GPU, of the device
+
+00:40:52.846 --> 00:40:54.166 A:middle
+so it's better for more complex
+
+00:40:54.166 --> 00:40:54.646 A:middle
+assets.
+
+00:40:55.436 --> 00:40:57.696 A:middle
+Maybe you use a shader that
+
+00:40:57.696 --> 00:40:58.526 A:middle
+takes advantage of certain
+
+00:40:58.526 --> 00:40:59.536 A:middle
+features that are only available
+
+00:40:59.536 --> 00:41:01.326 A:middle
+on certain GPUs or not or you
+

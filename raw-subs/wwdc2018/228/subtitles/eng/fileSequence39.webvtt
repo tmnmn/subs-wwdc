@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.446 --> 00:39:00.346 A:middle
+being executed and how much time
+
+00:39:00.586 --> 00:39:01.336 A:middle
+was being spent.
+
+00:39:04.716 --> 00:39:06.266 A:middle
+So, when an Energy Log is
+
+00:39:06.266 --> 00:39:08.466 A:middle
+created, there's a collection of
+
+00:39:08.506 --> 00:39:10.766 A:middle
+periodic backtraces sampled at
+
+00:39:10.766 --> 00:39:11.586 A:middle
+one per second.
+
+00:39:12.166 --> 00:39:15.616 A:middle
+For each backtrace contains a
+
+00:39:15.616 --> 00:39:17.136 A:middle
+list of the active frames being
+
+00:39:17.136 --> 00:39:19.946 A:middle
+executed by the CPU, these
+
+00:39:20.016 --> 00:39:21.546 A:middle
+backtraces are aggregated by
+
+00:39:21.546 --> 00:39:24.916 A:middle
+sample count into a tree where
+
+00:39:24.916 --> 00:39:27.786 A:middle
+the samples, where more samples
+
+00:39:27.786 --> 00:39:29.366 A:middle
+mean more heavily executed code.
+
+00:39:30.426 --> 00:39:31.596 A:middle
+And you can use these weighted
+
+00:39:31.596 --> 00:39:33.036 A:middle
+call graphs to identify
+
+00:39:33.226 --> 00:39:35.216 A:middle
+unexpected workloads in your
+
+00:39:35.756 --> 00:39:35.826 A:middle
+app.
+
+00:39:37.336 --> 00:39:38.736 A:middle
+So, now that we know what an
+
+00:39:38.736 --> 00:39:40.846 A:middle
+Energy Log is, how do we access
+
+00:39:40.846 --> 00:39:41.086 A:middle
+them?
+
+00:39:42.576 --> 00:39:44.736 A:middle
+First, Energy Logs are created
+
+00:39:44.736 --> 00:39:45.446 A:middle
+on device.
+
+00:39:46.806 --> 00:39:48.416 A:middle
+Then, your beta testers and your
+
+00:39:48.416 --> 00:39:50.246 A:middle
+customers, who have opted in,
+
+00:39:50.876 --> 00:39:53.076 A:middle
+will upload these logs up to
+
+00:39:53.076 --> 00:39:53.456 A:middle
+Apple.
+
+00:39:54.636 --> 00:39:55.996 A:middle
+Now, there might be hundreds or
+
+00:39:55.996 --> 00:39:58.856 A:middle
+even thousands of these logs, so
+
+00:39:58.856 --> 00:40:01.096 A:middle
+we will aggregate these logs for
+

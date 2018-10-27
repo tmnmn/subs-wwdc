@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.956 --> 00:45:00.906 A:middle
+to a render pass.
+
+00:45:01.316 --> 00:45:03.636 A:middle
+Now all the draws issued by this
+
+00:45:03.636 --> 00:45:05.596 A:middle
+encoder will be rendering to
+
+00:45:05.596 --> 00:45:06.936 A:middle
+these render targets.
+
+00:45:08.566 --> 00:45:09.816 A:middle
+When you want to draw to a
+
+00:45:09.816 --> 00:45:11.406 A:middle
+different set of render targets
+
+00:45:11.576 --> 00:45:13.246 A:middle
+then you end this render pass
+
+00:45:13.246 --> 00:45:14.226 A:middle
+and start a new one.
+
+00:45:14.756 --> 00:45:18.936 A:middle
+And here is where we are
+
+00:45:18.936 --> 00:45:20.286 A:middle
+creating a render pass
+
+00:45:20.286 --> 00:45:22.916 A:middle
+descriptor and binding color and
+
+00:45:22.916 --> 00:45:23.876 A:middle
+depth attachments.
+
+00:45:25.166 --> 00:45:27.036 A:middle
+Now you can use that descriptor
+
+00:45:27.086 --> 00:45:29.026 A:middle
+and create a render command
+
+00:45:29.026 --> 00:45:29.716 A:middle
+encoder.
+
+00:45:30.436 --> 00:45:33.116 A:middle
+Now all the draws issued by this
+
+00:45:33.116 --> 00:45:34.506 A:middle
+encoder will be rendering to
+
+00:45:34.506 --> 00:45:34.966 A:middle
+these targets.
+
+00:45:37.216 --> 00:45:39.426 A:middle
+Additionally, in Metal you can
+
+00:45:39.426 --> 00:45:41.856 A:middle
+also provide load and store
+
+00:45:41.856 --> 00:45:43.546 A:middle
+actions for these attachments
+
+00:45:43.786 --> 00:45:45.526 A:middle
+for optional GPU bandwidth
+
+00:45:45.526 --> 00:45:46.126 A:middle
+usage.
+
+00:45:48.236 --> 00:45:50.076 A:middle
+So these load and store actions
+
+00:45:50.076 --> 00:45:52.086 A:middle
+allow you to control how the
+
+00:45:52.086 --> 00:45:53.796 A:middle
+texture contents will be handled
+
+00:45:53.956 --> 00:45:55.486 A:middle
+before and after a rendered
+
+00:45:55.526 --> 00:45:55.876 A:middle
+pass.
+
+00:45:56.266 --> 00:45:59.016 A:middle
+So here we have color and depth
+
+00:45:59.016 --> 00:46:01.856 A:middle
+attachments for a render pass.
+

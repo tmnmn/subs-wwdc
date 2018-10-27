@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.106 --> 00:01:00.666 A:middle
+Then, Nick is going to talk
+
+00:01:00.666 --> 00:01:01.946 A:middle
+about a few ways our app can
+
+00:01:01.946 --> 00:01:03.226 A:middle
+maintain its performance, even
+
+00:01:03.226 --> 00:01:04.726 A:middle
+as it scales beyond our wildest
+
+00:01:04.726 --> 00:01:07.666 A:middle
+dreams, and we'll wrap up with
+
+00:01:08.406 --> 00:01:09.196 A:middle
+some good stuff about
+
+00:01:09.196 --> 00:01:10.646 A:middle
+transformers, debugging, and
+
+00:01:10.646 --> 00:01:11.046 A:middle
+testing.
+
+00:01:11.586 --> 00:01:15.976 A:middle
+But first, let's build an app.
+
+00:01:15.976 --> 00:01:17.716 A:middle
+I like to take photos, so we're
+
+00:01:17.716 --> 00:01:18.416 A:middle
+going to build something that
+
+00:01:18.416 --> 00:01:19.486 A:middle
+allows me to share photos with
+
+00:01:19.486 --> 00:01:21.746 A:middle
+friends and get comments from
+
+00:01:21.746 --> 00:01:22.946 A:middle
+them, even if it's just Nick
+
+00:01:22.946 --> 00:01:25.316 A:middle
+asking how my slides are going.
+
+00:01:26.236 --> 00:01:28.026 A:middle
+Where should we keep our app's
+
+00:01:28.026 --> 00:01:28.406 A:middle
+data?
+
+00:01:28.586 --> 00:01:30.016 A:middle
+Well, we could keep it all
+
+00:01:30.016 --> 00:01:31.456 A:middle
+online, but I usually take
+
+00:01:31.456 --> 00:01:32.776 A:middle
+photos when I'm traveling, and
+
+00:01:32.776 --> 00:01:33.696 A:middle
+the connection can be kind of
+
+00:01:33.696 --> 00:01:35.756 A:middle
+spotty, so we should keep it
+
+00:01:35.756 --> 00:01:37.046 A:middle
+locally, organized into some
+
+00:01:37.046 --> 00:01:37.736 A:middle
+kind of store.
+
+00:01:40.296 --> 00:01:42.596 A:middle
+So, we have posts and comments
+
+00:01:42.596 --> 00:01:44.006 A:middle
+and their instances and the
+
+00:01:44.006 --> 00:01:45.606 A:middle
+relationships between them form
+
+00:01:45.606 --> 00:01:47.386 A:middle
+an object graph and we've
+
+00:01:47.386 --> 00:01:48.846 A:middle
+decided we need to persist these
+
+00:01:48.846 --> 00:01:52.316 A:middle
+things on disk, so that's what
+
+00:01:52.316 --> 00:01:53.096 A:middle
+Core Data is for.
+
+00:01:56.006 --> 00:01:57.236 A:middle
+So, we'll use that and we'll
+
+00:01:57.236 --> 00:01:59.166 A:middle
+start by translating our mock
+
+00:01:59.216 --> 00:02:01.006 A:middle
+here into something a store can
+

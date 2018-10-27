@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.576 --> 00:07:02.516 A:middle
+area would have stayed on screen
+
+00:07:02.736 --> 00:07:04.236 A:middle
+during the entire transition,
+
+00:07:05.066 --> 00:07:06.156 A:middle
+which would have meant that you
+
+00:07:06.156 --> 00:07:07.286 A:middle
+would have not seen the
+
+00:07:07.286 --> 00:07:08.406 A:middle
+background come up with it.
+
+00:07:09.156 --> 00:07:10.936 A:middle
+And so that's why the safe area
+
+00:07:10.936 --> 00:07:12.486 A:middle
+never grows larger on any
+
+00:07:12.486 --> 00:07:14.136 A:middle
+dimension than what its parent
+
+00:07:14.136 --> 00:07:14.506 A:middle
+provides.
+
+00:07:15.996 --> 00:07:18.466 A:middle
+So to summarize that safe area
+
+00:07:18.466 --> 00:07:19.936 A:middle
+part, let's took a look at how
+
+00:07:19.936 --> 00:07:21.606 A:middle
+you can interact with it.
+
+00:07:22.296 --> 00:07:23.646 A:middle
+Again, we've already mentioned
+
+00:07:23.646 --> 00:07:25.236 A:middle
+the safe area insets property
+
+00:07:25.586 --> 00:07:26.726 A:middle
+and the safe area layout guide
+
+00:07:26.726 --> 00:07:27.146 A:middle
+property.
+
+00:07:28.126 --> 00:07:29.986 A:middle
+But if your view needs to react
+
+00:07:30.066 --> 00:07:31.936 A:middle
+to when safe area insets change,
+
+00:07:32.286 --> 00:07:33.906 A:middle
+then you can override the safe
+
+00:07:33.906 --> 00:07:36.506 A:middle
+area insets did change method.
+
+00:07:37.316 --> 00:07:38.846 A:middle
+Typical thing you might do is
+
+00:07:38.846 --> 00:07:39.966 A:middle
+just call set needs layout.
+
+00:07:39.966 --> 00:07:40.866 A:middle
+But if there's any additional
+
+00:07:40.866 --> 00:07:41.926 A:middle
+logic you need to run, that's
+
+00:07:41.926 --> 00:07:42.486 A:middle
+okay too.
+
+00:07:43.796 --> 00:07:45.116 A:middle
+If your view controller needs to
+
+00:07:45.116 --> 00:07:46.716 A:middle
+respond to its view safe area
+
+00:07:46.766 --> 00:07:48.716 A:middle
+layout changing, then you can
+
+00:07:48.716 --> 00:07:50.766 A:middle
+override view safe area insets
+
+00:07:50.766 --> 00:07:52.086 A:middle
+did change on your view
+
+00:07:52.086 --> 00:07:52.616 A:middle
+controller.
+
+00:07:53.626 --> 00:07:55.126 A:middle
+And finally, if you're doing
+
+00:07:55.126 --> 00:07:56.756 A:middle
+your interface in IB, you can
+
+00:07:57.056 --> 00:07:59.106 A:middle
+use that safe area property
+
+00:07:59.546 --> 00:08:01.666 A:middle
+that's shown in the view list to
+

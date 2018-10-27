@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:56.964 --> 00:25:01.034 align:start position:25% line:-2
+ユーザはコンテキストを見失い
+混乱します
+
+00:25:02.102 --> 00:25:06.940 align:start position:0% line:-2
+そこでaccessibilityViewIsModalと
+オーバーライドして
+
+00:25:07.040 --> 00:25:11.912 align:start position:25% line:-2
+今 アクセスできる要素は
+ビュー内だけだと認識させます
+
+00:25:13.180 --> 00:25:16.550 align:start position:32% line:-2
+オンスクリーン要素が
+変わった時に
+
+00:25:16.650 --> 00:25:20.821 align:start position:34% line:-2
+再フォーカスを
+促す通知も必要です
+
+00:25:21.655 --> 00:25:24.525 align:start position:18% line:-2
+これにはScreen Changeの
+通知が使えます
+
+00:25:26.193 --> 00:25:31.798 align:start position:21% line:-2
+ここからはバビヤが
+今 紹介したAPIの実装をします
+
+00:25:32.332 --> 00:25:33.033 align:start position:43% line:-1
+よろしく
+
+00:25:34.501 --> 00:25:38.539 align:start position:43% line:-1
+(拍手)
+
+00:25:38.639 --> 00:25:39.640 align:start position:41% line:-1
+ありがとう
+
+00:25:39.740 --> 00:25:44.077 align:start position:30% line:-2
+アクセシビリティ体験を
+極上にしましょう
+
+00:25:44.177 --> 00:25:45.579 align:start position:32% line:-1
+Xcodeを開きます
+
+00:25:53.120 --> 00:25:56.623 align:start position:27% line:-1
+まずトップのカルーセルです
+
+00:25:56.723 --> 00:25:59.560 align:start position:0% line:-1
+DogCarouselContainerViewクラスに
+
+00:25:59.660 --> 00:26:04.398 align:start position:27% line:-2
+犬のコレクションビューと
+２つのボタンが入っています
+

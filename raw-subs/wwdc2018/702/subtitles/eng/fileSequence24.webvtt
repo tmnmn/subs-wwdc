@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.256 --> 00:24:01.246 A:middle
+that are not properly signed or
+
+00:24:01.246 --> 00:24:03.626 A:middle
+not signed at all, then you have
+
+00:24:03.676 --> 00:24:05.096 A:middle
+to use the second entitlement in
+
+00:24:05.096 --> 00:24:05.456 A:middle
+this list.
+
+00:24:06.886 --> 00:24:09.016 A:middle
+And finally, if your app needs
+
+00:24:09.016 --> 00:24:10.626 A:middle
+the ability to modify its own
+
+00:24:10.626 --> 00:24:11.816 A:middle
+code pages at runtime,
+
+00:24:12.286 --> 00:24:14.056 A:middle
+effectively breaking its own
+
+00:24:14.056 --> 00:24:15.896 A:middle
+code signature, then you will
+
+00:24:15.896 --> 00:24:18.616 A:middle
+have to use the last entitlement
+
+00:24:18.846 --> 00:24:19.376 A:middle
+in the system.
+
+00:24:20.226 --> 00:24:21.766 A:middle
+And note that the vast majority
+
+00:24:21.766 --> 00:24:23.496 A:middle
+of apps should not need that
+
+00:24:23.496 --> 00:24:24.146 A:middle
+functionality.
+
+00:24:24.606 --> 00:24:28.756 A:middle
+But we still want it to operate
+
+00:24:28.786 --> 00:24:28.936 A:middle
+anyway.
+
+00:24:28.936 --> 00:24:31.686 A:middle
+Next, library validation: When
+
+00:24:31.686 --> 00:24:32.986 A:middle
+you opt into the new runtime,
+
+00:24:33.536 --> 00:24:35.216 A:middle
+the system will enforce the code
+
+00:24:35.216 --> 00:24:37.296 A:middle
+signature of every library,
+
+00:24:37.476 --> 00:24:39.546 A:middle
+framework, and plug-in that you
+
+00:24:39.546 --> 00:24:41.706 A:middle
+dynamically load at runtime, and
+
+00:24:41.706 --> 00:24:44.666 A:middle
+by default will enforce that.
+
+00:24:45.366 --> 00:24:47.316 A:middle
+These modules have - these
+
+00:24:47.316 --> 00:24:48.606 A:middle
+objects have to be signed by
+
+00:24:48.606 --> 00:24:49.966 A:middle
+Apple and shipping as part of
+
+00:24:49.966 --> 00:24:52.256 A:middle
+the OS -- or that they be signed
+
+00:24:52.256 --> 00:24:53.496 A:middle
+with the same Team ID as the
+
+00:24:53.496 --> 00:24:55.086 A:middle
+main executable that ships with
+
+00:24:55.086 --> 00:24:55.376 A:middle
+your app.
+
+00:24:56.306 --> 00:24:57.866 A:middle
+If you have a plug-in ecosystem
+
+00:24:57.866 --> 00:24:59.646 A:middle
+here and you need the ability to
+
+00:24:59.646 --> 00:25:02.936 A:middle
+load objects that are signed by
+

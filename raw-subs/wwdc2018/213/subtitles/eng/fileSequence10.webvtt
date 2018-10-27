@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.746 --> 00:10:00.606 A:middle
+communication to your app to
+
+00:10:00.606 --> 00:10:02.046 A:middle
+anticipate whatever the user may
+
+00:10:02.046 --> 00:10:03.736 A:middle
+want to play or to browse on the
+
+00:10:03.736 --> 00:10:04.506 A:middle
+CarPlay display.
+
+00:10:05.726 --> 00:10:06.876 A:middle
+Now, there's lots of room to
+
+00:10:06.876 --> 00:10:08.076 A:middle
+improve on your audio app.
+
+00:10:08.216 --> 00:10:09.226 A:middle
+And let's see how we can do
+
+00:10:09.226 --> 00:10:09.566 A:middle
+this.
+
+00:10:09.756 --> 00:10:11.006 A:middle
+The first of which, is that we
+
+00:10:11.006 --> 00:10:12.306 A:middle
+looked into the implementation
+
+00:10:12.306 --> 00:10:13.206 A:middle
+of reloadData.
+
+00:10:13.356 --> 00:10:14.186 A:middle
+Which, is a call in
+
+00:10:14.316 --> 00:10:15.656 A:middle
+MPPlayableContent, and figured
+
+00:10:15.656 --> 00:10:17.246 A:middle
+out how to better optimize this
+
+00:10:17.246 --> 00:10:18.286 A:middle
+for your audio app.
+
+00:10:19.076 --> 00:10:21.276 A:middle
+What we found is that you should
+
+00:10:21.276 --> 00:10:22.876 A:middle
+really only call reloadData when
+
+00:10:22.916 --> 00:10:23.956 A:middle
+absolutely needed.
+
+00:10:24.756 --> 00:10:26.236 A:middle
+What it does is that it
+
+00:10:26.236 --> 00:10:27.976 A:middle
+deconstructs the entire apps'
+
+00:10:27.976 --> 00:10:29.556 A:middle
+hierarchy on the CarPlay display
+
+00:10:29.836 --> 00:10:31.306 A:middle
+and asks your audio app to
+
+00:10:31.306 --> 00:10:32.636 A:middle
+reconstruct everything again.
+
+00:10:32.816 --> 00:10:34.056 A:middle
+And this can be a very expensive
+
+00:10:34.056 --> 00:10:35.706 A:middle
+operation, leaving your app not
+
+00:10:35.706 --> 00:10:36.486 A:middle
+very responsive.
+
+00:10:37.806 --> 00:10:38.996 A:middle
+Instead, if you just have
+
+00:10:38.996 --> 00:10:40.216 A:middle
+content that just needs to be
+
+00:10:40.216 --> 00:10:41.436 A:middle
+updated, you should wrap them
+
+00:10:41.436 --> 00:10:42.366 A:middle
+together inside of a
+
+00:10:42.366 --> 00:10:44.216 A:middle
+beginUpdates and an endUpdates
+
+00:10:44.216 --> 00:10:45.866 A:middle
+call, so then that content can
+
+00:10:45.866 --> 00:10:47.006 A:middle
+be updated, appropriately.
+
+00:10:48.356 --> 00:10:50.596 A:middle
+Now, these calls that
+
+00:10:50.596 --> 00:10:52.036 A:middle
+MPPlayableContent has are
+
+00:10:52.096 --> 00:10:53.636 A:middle
+asynchronous operations when we
+
+00:10:53.636 --> 00:10:55.006 A:middle
+ask you app for your data.
+
+00:10:55.436 --> 00:10:56.976 A:middle
+So, keep an internal
+
+00:10:56.976 --> 00:10:58.746 A:middle
+representation or a cache of
+
+00:10:58.746 --> 00:11:00.876 A:middle
+your information on somewhere in
+

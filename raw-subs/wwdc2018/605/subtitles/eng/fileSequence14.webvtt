@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.806 --> 00:14:01.566 A:middle
+WorldMap for a particular retail
+
+00:14:01.566 --> 00:14:02.996 A:middle
+location somewhere out in the
+
+00:14:02.996 --> 00:14:03.246 A:middle
+world.
+
+00:14:04.326 --> 00:14:05.086 A:middle
+There's really a lot
+
+00:14:05.086 --> 00:14:06.866 A:middle
+possibilities here to tailor
+
+00:14:06.866 --> 00:14:08.146 A:middle
+users' experience and really
+
+00:14:08.146 --> 00:14:08.836 A:middle
+build something great.
+
+00:14:09.336 --> 00:14:12.746 A:middle
+So, those are a couple of the
+
+00:14:12.746 --> 00:14:14.426 A:middle
+ways to get that WorldMap data
+
+00:14:14.576 --> 00:14:15.726 A:middle
+from one device to another.
+
+00:14:16.386 --> 00:14:17.746 A:middle
+Let's talk about how you then
+
+00:14:17.746 --> 00:14:19.106 A:middle
+load it on the second device.
+
+00:14:19.386 --> 00:14:20.796 A:middle
+In this case, we use
+
+00:14:20.846 --> 00:14:24.336 A:middle
+NSKeyUnarchiveder to blow up
+
+00:14:24.336 --> 00:14:25.746 A:middle
+that WorldMap again from the
+
+00:14:25.746 --> 00:14:26.956 A:middle
+data that we received.
+
+00:14:27.836 --> 00:14:29.926 A:middle
+We then build an ARWorldTracking
+
+00:14:29.926 --> 00:14:31.696 A:middle
+configuration and add the
+
+00:14:31.696 --> 00:14:33.456 A:middle
+WorldMap to that configuration
+
+00:14:33.456 --> 00:14:35.236 A:middle
+object, setting up the way we
+
+00:14:35.236 --> 00:14:35.386 A:middle
+want.
+
+00:14:36.246 --> 00:14:38.606 A:middle
+And then lastly, we ask the
+
+00:14:38.606 --> 00:14:39.646 A:middle
+ARSession to run that
+
+00:14:39.646 --> 00:14:41.736 A:middle
+configuration, resetting any
+
+00:14:41.736 --> 00:14:45.116 A:middle
+existing anchors and tracking.
+
+00:14:45.116 --> 00:14:47.016 A:middle
+ARKit on the target device then
+
+00:14:47.016 --> 00:14:48.366 A:middle
+starts scanning the world around
+
+00:14:48.366 --> 00:14:50.366 A:middle
+you, correlating those feature
+
+00:14:50.366 --> 00:14:52.706 A:middle
+points from the original map
+
+00:14:52.706 --> 00:14:53.776 A:middle
+with those that it sees there.
+
+00:14:54.166 --> 00:14:55.396 A:middle
+Once it's able to do that,
+
+00:14:55.656 --> 00:14:56.456 A:middle
+you've got that shared
+
+00:14:56.456 --> 00:14:57.276 A:middle
+coordinate space.
+
+00:14:57.696 --> 00:14:59.966 A:middle
+Both devices have 000 in the
+
+00:14:59.966 --> 00:15:01.096 A:middle
+same place in the real world.
+

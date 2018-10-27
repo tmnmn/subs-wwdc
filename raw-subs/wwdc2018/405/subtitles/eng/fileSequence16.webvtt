@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.106 --> 00:16:00.596 A:middle
+that initialization conditional.
+
+00:16:01.076 --> 00:16:02.866 A:middle
+So I'm either going to assign it
+
+00:16:02.976 --> 00:16:04.546 A:middle
+to the normal os log constructor
+
+00:16:05.066 --> 00:16:05.906 A:middle
+or I'm going to assign it to
+
+00:16:05.906 --> 00:16:07.196 A:middle
+that disabled log handle.
+
+00:16:07.776 --> 00:16:11.126 A:middle
+If we take the first path, all
+
+00:16:11.126 --> 00:16:12.776 A:middle
+the os signpost calls will work
+
+00:16:12.776 --> 00:16:14.546 A:middle
+as I described, but if we take
+
+00:16:14.546 --> 00:16:15.996 A:middle
+the second path, those os
+
+00:16:15.996 --> 00:16:17.256 A:middle
+signpost calls will turn into
+
+00:16:17.256 --> 00:16:18.026 A:middle
+near no-ops.
+
+00:16:18.876 --> 00:16:21.696 A:middle
+So as I said before, notice that
+
+00:16:21.696 --> 00:16:22.886 A:middle
+I didn't have to call any of my
+
+00:16:22.886 --> 00:16:24.196 A:middle
+call -- I didn't have to change
+
+00:16:24.196 --> 00:16:25.126 A:middle
+any of my call sites.
+
+00:16:25.126 --> 00:16:25.976 A:middle
+I only had to change the
+
+00:16:25.976 --> 00:16:26.756 A:middle
+initialization.
+
+00:16:27.566 --> 00:16:29.346 A:middle
+And I made the initialization
+
+00:16:29.346 --> 00:16:31.066 A:middle
+conditional on an environment
+
+00:16:31.066 --> 00:16:31.446 A:middle
+variable.
+
+00:16:31.696 --> 00:16:32.716 A:middle
+This is the kind of thing that
+
+00:16:32.716 --> 00:16:34.046 A:middle
+you can set up in your Xcode
+
+00:16:34.046 --> 00:16:35.136 A:middle
+scheme while you're debugging
+
+00:16:35.136 --> 00:16:37.236 A:middle
+your program.
+
+00:16:37.836 --> 00:16:39.126 A:middle
+Now I said you didn't have to
+
+00:16:39.126 --> 00:16:40.346 A:middle
+change in the call sites, but
+
+00:16:40.346 --> 00:16:41.326 A:middle
+maybe you have some
+
+00:16:41.326 --> 00:16:42.916 A:middle
+functionality that is
+
+00:16:43.036 --> 00:16:44.506 A:middle
+instrumentation specific.
+
+00:16:44.586 --> 00:16:46.346 A:middle
+That is, it might be expensive
+
+00:16:46.346 --> 00:16:47.586 A:middle
+but it might only be used for
+
+00:16:47.586 --> 00:16:48.086 A:middle
+while debugging.
+
+00:16:48.926 --> 00:16:50.976 A:middle
+So in that case, you can check a
+
+00:16:50.976 --> 00:16:52.486 A:middle
+particular log handle to see if
+
+00:16:52.486 --> 00:16:53.736 A:middle
+signposts are turned on for it
+
+00:16:54.076 --> 00:16:55.126 A:middle
+with the signposts enabled
+
+00:16:55.126 --> 00:16:55.536 A:middle
+property.
+
+00:16:56.036 --> 00:16:57.256 A:middle
+The signposts enabled property
+
+00:16:57.256 --> 00:16:58.656 A:middle
+can then be used to gate that
+
+00:16:58.656 --> 00:17:00.526 A:middle
+additional operation.
+

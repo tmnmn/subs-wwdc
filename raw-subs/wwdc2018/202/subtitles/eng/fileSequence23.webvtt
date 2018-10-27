@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.546 --> 00:23:00.286 A:middle
+help improve understandability
+
+00:23:00.286 --> 00:23:02.246 A:middle
+and remove some confusion.
+
+00:23:02.696 --> 00:23:03.546 A:middle
+So in this case, let's look at
+
+00:23:03.546 --> 00:23:05.016 A:middle
+UI Tab Bar Item Positioning.
+
+00:23:05.626 --> 00:23:06.216 A:middle
+Now do you think that's
+
+00:23:06.306 --> 00:23:09.086 A:middle
+UITabBarItemPositioning or
+
+00:23:09.226 --> 00:23:10.896 A:middle
+UITabBarItem Positioning?
+
+00:23:10.896 --> 00:23:12.586 A:middle
+It could actually be either.
+
+00:23:12.836 --> 00:23:13.906 A:middle
+Those are both classes.
+
+00:23:14.406 --> 00:23:16.546 A:middle
+And in Swift 42, it is now
+
+00:23:16.616 --> 00:23:17.726 A:middle
+perfectly clear that it is, in
+
+00:23:17.726 --> 00:23:20.066 A:middle
+fact, UITabBar ItemPositioning.
+
+00:23:20.646 --> 00:23:23.226 A:middle
+So in addition to nested types,
+
+00:23:23.546 --> 00:23:25.036 A:middle
+we've also nested a bunch of
+
+00:23:25.036 --> 00:23:25.666 A:middle
+constants.
+
+00:23:26.106 --> 00:23:27.486 A:middle
+So if we look here at Swift 4,
+
+00:23:27.486 --> 00:23:29.926 A:middle
+we had NS notifications were all
+
+00:23:29.926 --> 00:23:30.636 A:middle
+in the global
+
+00:23:30.706 --> 00:23:32.796 A:middle
+NSNotification.Name namespace
+
+00:23:33.206 --> 00:23:34.616 A:middle
+and their associated user info
+
+00:23:34.616 --> 00:23:35.956 A:middle
+keys were actually just global
+
+00:23:35.956 --> 00:23:37.206 A:middle
+constants that were floating out
+
+00:23:37.206 --> 00:23:37.386 A:middle
+there.
+
+00:23:38.026 --> 00:23:39.676 A:middle
+So for consistency with AppKit
+
+00:23:39.676 --> 00:23:41.146 A:middle
+and to make it easier to find
+
+00:23:41.146 --> 00:23:42.656 A:middle
+and associate these types
+
+00:23:42.706 --> 00:23:44.196 A:middle
+together, they've now all been
+
+00:23:44.196 --> 00:23:45.436 A:middle
+nested under the class that
+
+00:23:45.436 --> 00:23:46.026 A:middle
+they're used with.
+
+00:23:46.456 --> 00:23:47.426 A:middle
+So something like did Change
+
+00:23:47.426 --> 00:23:49.006 A:middle
+Status Bar Orientation is now
+
+00:23:49.316 --> 00:23:51.336 A:middle
+under UI Application did Change
+
+00:23:51.336 --> 00:23:52.346 A:middle
+Status Bar Orientation
+
+00:23:52.346 --> 00:23:54.106 A:middle
+Notification and its user info
+
+00:23:54.106 --> 00:23:55.436 A:middle
+key moved along with it so that
+
+00:23:55.436 --> 00:23:56.486 A:middle
+they're all co-located.
+
+00:23:57.126 --> 00:23:59.656 A:middle
+Now we've also audited all of
+
+00:23:59.656 --> 00:24:01.326 A:middle
+the other global constants all
+

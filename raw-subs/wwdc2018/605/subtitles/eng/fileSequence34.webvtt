@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.976 --> 00:34:00.306 A:middle
+part of our build process on
+
+00:34:00.306 --> 00:34:02.336 A:middle
+macOS and include the SceneKit
+
+00:34:02.336 --> 00:34:04.016 A:middle
+files directly in our iOS build
+
+00:34:04.016 --> 00:34:04.776 A:middle
+in the application.
+
+00:34:06.496 --> 00:34:08.315 A:middle
+We structured the data so that
+
+00:34:08.315 --> 00:34:10.346 A:middle
+each individual type of block is
+
+00:34:10.346 --> 00:34:12.646 A:middle
+its own file and then for each
+
+00:34:12.646 --> 00:34:14.106 A:middle
+levels, we combine those blocks
+
+00:34:14.106 --> 00:34:14.466 A:middle
+together.
+
+00:34:15.476 --> 00:34:17.186 A:middle
+This let us iterate on the
+
+00:34:17.186 --> 00:34:18.636 A:middle
+appearance and physics behavior
+
+00:34:18.636 --> 00:34:20.396 A:middle
+of each individual block and
+
+00:34:20.396 --> 00:34:21.896 A:middle
+then pull them all together for
+
+00:34:21.896 --> 00:34:23.295 A:middle
+those levels and iterate on
+
+00:34:23.295 --> 00:34:24.036 A:middle
+gameplay design.
+
+00:34:24.346 --> 00:34:25.335 A:middle
+Try out some of the different
+
+00:34:25.335 --> 00:34:26.306 A:middle
+levels that you'll see if you
+
+00:34:26.306 --> 00:34:27.466 A:middle
+look in the source code to the
+
+00:34:27.466 --> 00:34:28.025 A:middle
+application.
+
+00:34:30.116 --> 00:34:32.275 A:middle
+To optimize, further optimize
+
+00:34:32.275 --> 00:34:33.576 A:middle
+for different distances,
+
+00:34:33.926 --> 00:34:35.206 A:middle
+SceneKit supports varying the
+
+00:34:35.206 --> 00:34:37.116 A:middle
+assets used based on the level
+
+00:34:37.116 --> 00:34:37.946 A:middle
+of detail required.
+
+00:34:39.116 --> 00:34:40.806 A:middle
+Nearby objects use more polygons
+
+00:34:40.806 --> 00:34:42.446 A:middle
+and more detailed textures while
+
+00:34:42.446 --> 00:34:43.735 A:middle
+far away objects use fewer
+
+00:34:43.735 --> 00:34:45.005 A:middle
+polygons and less detailed
+
+00:34:45.005 --> 00:34:45.466 A:middle
+textures.
+
+00:34:46.005 --> 00:34:47.216 A:middle
+This really optimizes the
+
+00:34:47.216 --> 00:34:50.996 A:middle
+rendering of the scene.
+
+00:34:51.156 --> 00:34:52.806 A:middle
+However, we still want the
+
+00:34:52.806 --> 00:34:54.096 A:middle
+gameplay to stay consistent.
+
+00:34:54.466 --> 00:34:55.876 A:middle
+And so we specified the physics
+
+00:34:55.876 --> 00:34:56.775 A:middle
+body separately.
+
+00:34:57.886 --> 00:34:58.966 A:middle
+SceneKit provides a number of
+
+00:34:58.966 --> 00:35:00.556 A:middle
+built-in physics body types such
+

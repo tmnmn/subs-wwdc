@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:57.646 --> 00:33:01.066 A:middle
+Let's return to our example,
+
+00:33:01.136 --> 00:33:01.796 A:middle
+PetWall app.
+
+00:33:02.956 --> 00:33:04.266 A:middle
+The app has a view in
+
+00:33:04.266 --> 00:33:05.356 A:middle
+ViewCcontroller, written in
+
+00:33:05.406 --> 00:33:05.846 A:middle
+Swift.
+
+00:33:06.936 --> 00:33:08.476 A:middle
+An Objective-C app delegate.
+
+00:33:09.076 --> 00:33:10.506 A:middle
+And Swift unit tests.
+
+00:33:11.686 --> 00:33:13.256 A:middle
+In order to compile even just
+
+00:33:13.256 --> 00:33:15.036 A:middle
+this top PetViewController part
+
+00:33:15.076 --> 00:33:17.316 A:middle
+of the file, the compiler has to
+
+00:33:17.316 --> 00:33:18.446 A:middle
+perform four different
+
+00:33:18.446 --> 00:33:19.276 A:middle
+operations.
+
+00:33:20.426 --> 00:33:21.836 A:middle
+First, it has to find
+
+00:33:21.936 --> 00:33:22.576 A:middle
+declarations.
+
+00:33:23.396 --> 00:33:25.806 A:middle
+Both within the Swift target and
+
+00:33:25.836 --> 00:33:27.556 A:middle
+also coming from Objective-C.
+
+00:33:29.016 --> 00:33:30.706 A:middle
+Further, it has to generate
+
+00:33:30.706 --> 00:33:31.986 A:middle
+interfaces describing the
+
+00:33:31.986 --> 00:33:33.106 A:middle
+contents of the file.
+
+00:33:33.516 --> 00:33:35.096 A:middle
+So that its declarations can be
+
+00:33:35.096 --> 00:33:37.326 A:middle
+found and used in Objective-C
+
+00:33:37.796 --> 00:33:39.606 A:middle
+and in other Swift targets.
+
+00:33:40.836 --> 00:33:41.906 A:middle
+In the rest of this section of
+
+00:33:41.906 --> 00:33:43.156 A:middle
+the talk, I'm going to walk
+
+00:33:43.156 --> 00:33:44.746 A:middle
+through this example to
+
+00:33:44.746 --> 00:33:46.186 A:middle
+illustrate each of these four
+
+00:33:46.186 --> 00:33:46.836 A:middle
+tasks.
+
+00:33:47.766 --> 00:33:48.786 A:middle
+Let's start with finding
+
+00:33:48.786 --> 00:33:50.386 A:middle
+declarations within a Swift
+
+00:33:50.386 --> 00:33:50.776 A:middle
+target.
+
+00:33:55.296 --> 00:33:56.326 A:middle
+When compiling
+
+00:33:56.376 --> 00:33:58.936 A:middle
+PetViewController.swift, the
+
+00:33:58.936 --> 00:34:00.616 A:middle
+compiler will look up the type
+

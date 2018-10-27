@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.646 --> 00:30:01.696 A:middle
+this through the instrument, I
+
+00:30:01.696 --> 00:30:02.386 A:middle
+know that these labels
+
+00:30:02.426 --> 00:30:03.876 A:middle
+correspond to the Title Label,
+
+00:30:03.876 --> 00:30:05.386 A:middle
+Date Label, and our Log Entry
+
+00:30:05.386 --> 00:30:05.686 A:middle
+Label.
+
+00:30:07.036 --> 00:30:08.516 A:middle
+That's almost all of our views
+
+00:30:08.516 --> 00:30:09.086 A:middle
+in this cell.
+
+00:30:09.086 --> 00:30:10.736 A:middle
+That's a little concerning.
+
+00:30:11.406 --> 00:30:12.136 A:middle
+Let's see what happened.
+
+00:30:13.766 --> 00:30:15.066 A:middle
+All right, back to our spec
+
+00:30:15.156 --> 00:30:15.376 A:middle
+here.
+
+00:30:16.326 --> 00:30:19.626 A:middle
+So look into the code and find
+
+00:30:19.666 --> 00:30:21.096 A:middle
+that UpdateConstraints is being
+
+00:30:21.096 --> 00:30:21.566 A:middle
+overridden.
+
+00:30:22.526 --> 00:30:24.876 A:middle
+And in that method when anything
+
+00:30:24.876 --> 00:30:25.956 A:middle
+changes or when
+
+00:30:25.956 --> 00:30:27.426 A:middle
+UpdateConstraints runs at all,
+
+00:30:27.896 --> 00:30:28.696 A:middle
+we're removing all of the
+
+00:30:28.696 --> 00:30:30.716 A:middle
+constraints and then adding back
+
+00:30:30.716 --> 00:30:32.056 A:middle
+the ones that we think we still
+
+00:30:32.056 --> 00:30:32.276 A:middle
+need.
+
+00:30:33.876 --> 00:30:35.956 A:middle
+Well, everything landed back in
+
+00:30:35.956 --> 00:30:37.206 A:middle
+the same place where it started.
+
+00:30:37.646 --> 00:30:39.436 A:middle
+So that removal just is
+
+00:30:39.436 --> 00:30:41.146 A:middle
+contributing to performance
+
+00:30:41.146 --> 00:30:41.516 A:middle
+issues.
+
+00:30:42.486 --> 00:30:44.986 A:middle
+So in the instance of the social
+
+00:30:44.986 --> 00:30:46.986 A:middle
+label here, social avatar thing,
+
+00:30:47.356 --> 00:30:49.176 A:middle
+being added and removed, we
+
+00:30:49.176 --> 00:30:50.076 A:middle
+don't actually need to pull it
+
+00:30:50.076 --> 00:30:50.626 A:middle
+all the way out.
+
+00:30:51.806 --> 00:30:52.856 A:middle
+When you look at the constraints
+
+00:30:52.856 --> 00:30:54.966 A:middle
+around this view, you'll see
+
+00:30:54.966 --> 00:30:56.036 A:middle
+that they don't actually
+
+00:30:56.036 --> 00:30:57.316 A:middle
+interact with anything else,
+
+00:30:57.876 --> 00:30:58.946 A:middle
+just that particular view.
+
+00:30:59.516 --> 00:31:01.156 A:middle
+So here you can use, you know,
+

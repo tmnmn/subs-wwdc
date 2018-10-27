@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:55.556 --> 00:26:00.627 align:start position:27% line:-2
+深度マップは
+ポイントクラウドに変換でき
+
+00:26:00.727 --> 00:26:05.332 align:start position:34% line:-2
+そこにRGB画像を
+再投影させるのです
+
+00:26:05.866 --> 00:26:10.971 align:start position:29% line:-2
+深度ストリームはすでに
+映像ストリームにあるため
+
+00:26:11.071 --> 00:26:14.107 align:start position:34% line:-2
+RGBDデータに
+なるということです
+
+00:26:14.274 --> 00:26:15.375 align:start position:43% line:-1
+（口笛）
+
+00:26:15.475 --> 00:26:17.377 align:start position:32% line:-1
+ありがとうございます
+
+00:26:17.478 --> 00:26:18.912 align:start position:38% line:-1
+すごいですよね
+
+00:26:19.913 --> 00:26:24.051 align:start position:32% line:-2
+これはMetalの
+シェーダで行われます
+
+00:26:24.151 --> 00:26:28.889 align:start position:30% line:-2
+ダウンロードすれば
+２ヵ所に焦点が合います
+
+00:26:30.424 --> 00:26:33.293 align:start position:34% line:-2
+頂点シェーダで
+頂点の集合を制御し
+
+00:26:33.393 --> 00:26:38.499 align:start position:30% line:-2
+深度マップを使って
+3D座標に変換してから
+
+00:26:39.032 --> 00:26:44.071 align:start position:32% line:-2
+ビュー行列で位置を
+変えることもできます
+
+00:26:47.141 --> 00:26:51.044 align:start position:30% line:-2
+フラグメントシェーダは
+頂点シェーダを得て
+
+00:26:51.345 --> 00:26:55.716 align:start position:29% line:-2
+実際の値なのか
+深度マップの穴かを判断し
+
+00:26:55.816 --> 00:26:59.553 align:start position:32% line:-2
+穴の場合は
+深度は分からないため
+
+00:26:59.653 --> 00:27:04.324 align:start position:34% line:-2
+3Dには変換できず
+その部分を除きます
+

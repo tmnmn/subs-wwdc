@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:00.776 --> 00:46:03.766 A:middle
+The index path argument tells us
+
+00:46:03.856 --> 00:46:06.636 A:middle
+the row number for the cell that
+
+00:46:06.636 --> 00:46:07.576 A:middle
+will be displayed.
+
+00:46:08.856 --> 00:46:10.706 A:middle
+And in here, we're expected to
+
+00:46:10.756 --> 00:46:13.256 A:middle
+configure the cell just like the
+
+00:46:13.306 --> 00:46:14.116 A:middle
+comment says.
+
+00:46:15.526 --> 00:46:18.146 A:middle
+So let me pull in some code to
+
+00:46:18.256 --> 00:46:18.956 A:middle
+set up this cell.
+
+00:46:18.956 --> 00:46:22.126 A:middle
+We are using our game data class
+
+00:46:22.386 --> 00:46:22.876 A:middle
+again.
+
+00:46:23.886 --> 00:46:26.256 A:middle
+And the index paths row will
+
+00:46:26.256 --> 00:46:28.366 A:middle
+tell us the rank of the player.
+
+00:46:28.976 --> 00:46:30.046 A:middle
+Since we want to display the
+
+00:46:30.046 --> 00:46:31.566 A:middle
+players in ascending order.
+
+00:46:32.726 --> 00:46:35.036 A:middle
+Once we have the player rank, we
+
+00:46:35.036 --> 00:46:36.816 A:middle
+can send it to the player data
+
+00:46:36.816 --> 00:46:38.806 A:middle
+method on our game data class
+
+00:46:39.316 --> 00:46:40.996 A:middle
+and get more information about
+
+00:46:40.996 --> 00:46:41.466 A:middle
+that player.
+
+00:46:42.906 --> 00:46:45.006 A:middle
+Using this information, we can
+
+00:46:45.136 --> 00:46:46.336 A:middle
+set up our cell.
+
+00:46:47.246 --> 00:46:49.626 A:middle
+The text label is the title.
+
+00:46:50.326 --> 00:46:51.956 A:middle
+The detail text label is the
+
+00:46:51.956 --> 00:46:52.826 A:middle
+subtitle.
+
+00:46:53.296 --> 00:46:54.996 A:middle
+And the image view is the image
+
+00:46:54.996 --> 00:46:56.486 A:middle
+that will have the photo.
+
+00:46:56.486 --> 00:46:59.216 A:middle
+Now instead of creating this
+
+00:46:59.256 --> 00:47:01.136 A:middle
+game data instance twice, I'm
+

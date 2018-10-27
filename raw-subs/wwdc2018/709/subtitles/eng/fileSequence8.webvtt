@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.226 --> 00:08:00.346 A:middle
+our model takes in terms of
+
+00:08:00.346 --> 00:08:00.786 A:middle
+accuracy.
+
+00:08:00.786 --> 00:08:02.206 A:middle
+And we'll get back to that in a
+
+00:08:02.206 --> 00:08:02.436 A:middle
+bit.
+
+00:08:03.556 --> 00:08:04.716 A:middle
+So that's an overview of
+
+00:08:04.716 --> 00:08:05.326 A:middle
+quantization.
+
+00:08:06.016 --> 00:08:06.936 A:middle
+But the question remains.
+
+00:08:07.246 --> 00:08:08.716 A:middle
+How do we obtain this mapping?
+
+00:08:09.506 --> 00:08:10.796 A:middle
+Well, there are many popular
+
+00:08:10.796 --> 00:08:12.386 A:middle
+algorithms and techniques out
+
+00:08:12.386 --> 00:08:13.346 A:middle
+there which help you to do this.
+
+00:08:13.716 --> 00:08:15.536 A:middle
+And Core ML supports two of the
+
+00:08:15.536 --> 00:08:17.456 A:middle
+most popular ones: linear
+
+00:08:17.456 --> 00:08:19.026 A:middle
+quantization and lookup table
+
+00:08:19.026 --> 00:08:19.706 A:middle
+quantization.
+
+00:08:20.626 --> 00:08:21.986 A:middle
+Let's have a brief overview.
+
+00:08:26.276 --> 00:08:27.566 A:middle
+Linear quantization is an
+
+00:08:27.566 --> 00:08:29.116 A:middle
+algorithm in which you map these
+
+00:08:29.156 --> 00:08:31.596 A:middle
+full parameters equally.
+
+00:08:32.946 --> 00:08:34.736 A:middle
+The quantization is parametrized
+
+00:08:34.736 --> 00:08:37.106 A:middle
+by a scale and by values.
+
+00:08:37.106 --> 00:08:38.775 A:middle
+And these values are calculated
+
+00:08:38.885 --> 00:08:40.416 A:middle
+based on the parameters of the
+
+00:08:40.416 --> 00:08:42.405 A:middle
+layers that we're quantizing.
+
+00:08:43.086 --> 00:08:44.866 A:middle
+Now and a really intuitive way
+
+00:08:44.926 --> 00:08:46.946 A:middle
+to see how this mapping works is
+
+00:08:46.946 --> 00:08:47.896 A:middle
+if we take a step back.
+
+00:08:47.896 --> 00:08:49.356 A:middle
+And see how we would go back
+
+00:08:49.386 --> 00:08:50.756 A:middle
+from our quantized weights which
+
+00:08:50.756 --> 00:08:52.236 A:middle
+are at the bottom back to our
+
+00:08:52.236 --> 00:08:53.106 A:middle
+original float weights.
+
+00:08:53.876 --> 00:08:55.416 A:middle
+In linear quantization, we would
+
+00:08:55.416 --> 00:08:57.276 A:middle
+simply multiply our quantized
+
+00:08:57.276 --> 00:08:58.846 A:middle
+weights with the scale parameter
+
+00:08:59.196 --> 00:08:59.886 A:middle
+and add the bias.
+

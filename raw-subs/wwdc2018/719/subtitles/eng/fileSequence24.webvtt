@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.566 --> 00:24:00.836 A:middle
+still extract capture time of
+
+00:24:00.836 --> 00:24:02.456 A:middle
+the data as well as portrait
+
+00:24:02.456 --> 00:24:04.756 A:middle
+depth and matte information.
+
+00:24:05.656 --> 00:24:06.536 A:middle
+Last but not least, you have
+
+00:24:06.536 --> 00:24:08.086 A:middle
+more than 200 built-in filters
+
+00:24:08.086 --> 00:24:08.776 A:middle
+that you can use.
+
+00:24:09.296 --> 00:24:11.306 A:middle
+The first change we made is that
+
+00:24:11.306 --> 00:24:12.826 A:middle
+by default, all your renders
+
+00:24:12.826 --> 00:24:14.676 A:middle
+will be done using full 32-bit
+
+00:24:14.676 --> 00:24:14.986 A:middle
+float.
+
+00:24:16.676 --> 00:24:18.506 A:middle
+Second change, everything will
+
+00:24:18.506 --> 00:24:20.266 A:middle
+be done using SRGB color spaces.
+
+00:24:21.516 --> 00:24:22.956 A:middle
+Third, all the boundary
+
+00:24:22.956 --> 00:24:24.196 A:middle
+conditions will be handled with
+
+00:24:24.196 --> 00:24:25.166 A:middle
+clamped and cropping.
+
+00:24:25.166 --> 00:24:26.426 A:middle
+What that means is, if you're
+
+00:24:26.426 --> 00:24:27.866 A:middle
+applying convolution or
+
+00:24:27.866 --> 00:24:29.796 A:middle
+creation, for example, your
+
+00:24:29.796 --> 00:24:30.916 A:middle
+image will be repeated
+
+00:24:30.916 --> 00:24:31.616 A:middle
+infinitely.
+
+00:24:32.256 --> 00:24:33.926 A:middle
+A filter will be applied, and
+
+00:24:33.926 --> 00:24:34.716 A:middle
+the resulting image will be
+
+00:24:34.716 --> 00:24:36.296 A:middle
+cropped back to your input size.
+
+00:24:36.556 --> 00:24:38.236 A:middle
+This is a setting that can also
+
+00:24:38.236 --> 00:24:40.526 A:middle
+be overridden at one time.
+
+00:24:41.616 --> 00:24:44.146 A:middle
+Finally, infinite images become
+
+00:24:44.146 --> 00:24:45.826 A:middle
+finite so that we can get their
+
+00:24:45.956 --> 00:24:48.596 A:middle
+pixel buffer representation, and
+
+00:24:49.546 --> 00:24:52.326 A:middle
+that's what really PyCoreImage
+
+00:24:52.326 --> 00:24:52.976 A:middle
+is under the hood.
+
+00:24:53.466 --> 00:24:57.086 A:middle
+So, before looking at a great
+
+00:24:57.086 --> 00:24:59.076 A:middle
+demo of all of this in practice,
+
+00:24:59.076 --> 00:24:59.986 A:middle
+I just want to go through
+
+00:24:59.986 --> 00:25:01.926 A:middle
+quickly a cheat sheet for
+

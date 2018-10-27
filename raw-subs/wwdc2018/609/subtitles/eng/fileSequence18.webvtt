@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.636 --> 00:18:00.106 A:middle
+that conforms to the protocol.
+
+00:18:00.416 --> 00:18:01.706 A:middle
+We call it MyWeights in this
+
+00:18:01.706 --> 00:18:02.116 A:middle
+example.
+
+00:18:02.596 --> 00:18:06.886 A:middle
+Data source providers are very
+
+00:18:06.886 --> 00:18:08.066 A:middle
+useful in many ways.
+
+00:18:08.646 --> 00:18:10.996 A:middle
+For example, if you have many
+
+00:18:10.996 --> 00:18:12.136 A:middle
+convolution nodes in your
+
+00:18:12.136 --> 00:18:14.486 A:middle
+network, the overall size of the
+
+00:18:14.486 --> 00:18:15.526 A:middle
+weights for the network can be
+
+00:18:15.526 --> 00:18:16.406 A:middle
+quite considerable.
+
+00:18:17.006 --> 00:18:18.606 A:middle
+And we do not want the weights
+
+00:18:18.606 --> 00:18:19.956 A:middle
+for all of your convolution
+
+00:18:19.956 --> 00:18:21.486 A:middle
+nodes to be in memory all at the
+
+00:18:21.486 --> 00:18:22.086 A:middle
+same time.
+
+00:18:22.806 --> 00:18:24.206 A:middle
+We want to keep the memory
+
+00:18:24.206 --> 00:18:25.806 A:middle
+footprints of your networks as
+
+00:18:25.806 --> 00:18:26.566 A:middle
+low as possible.
+
+00:18:27.466 --> 00:18:28.876 A:middle
+And data source providers come
+
+00:18:28.876 --> 00:18:30.746 A:middle
+into play here because they
+
+00:18:30.746 --> 00:18:33.306 A:middle
+provide just in time loading and
+
+00:18:33.466 --> 00:18:34.556 A:middle
+purging of weights data.
+
+00:18:35.726 --> 00:18:37.076 A:middle
+So, we load the weights for one
+
+00:18:37.076 --> 00:18:39.186 A:middle
+convolution kernel, when we
+
+00:18:39.186 --> 00:18:39.846 A:middle
+process it.
+
+00:18:40.076 --> 00:18:41.626 A:middle
+And then we purge them before
+
+00:18:41.626 --> 00:18:43.436 A:middle
+moving on the next convolution.
+
+00:18:43.906 --> 00:18:47.726 A:middle
+So, here's an implementation of
+
+00:18:47.726 --> 00:18:48.366 A:middle
+MyWeights.
+
+00:18:49.516 --> 00:18:51.056 A:middle
+You need to provide an
+
+00:18:51.246 --> 00:18:52.996 A:middle
+initialization method that is
+
+00:18:52.996 --> 00:18:54.646 A:middle
+responsible for pulling in
+
+00:18:54.646 --> 00:18:55.856 A:middle
+memory and making it ready.
+
+00:18:56.226 --> 00:18:57.936 A:middle
+And then the graph will call the
+
+00:18:57.936 --> 00:18:58.686 A:middle
+load function.
+
+00:18:59.136 --> 00:19:00.946 A:middle
+And then when the purge method
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.616 --> 00:25:00.216 A:middle
+frame of the attributes.
+
+00:25:00.216 --> 00:25:02.396 A:middle
+So if our attributes have a
+
+00:25:02.476 --> 00:25:04.466 A:middle
+frame that intersects our query
+
+00:25:04.466 --> 00:25:06.566 A:middle
+rect, we can return them.
+
+00:25:06.566 --> 00:25:08.826 A:middle
+Okay. So let's switch back to
+
+00:25:08.826 --> 00:25:11.206 A:middle
+the sim and see what our layout
+
+00:25:11.206 --> 00:25:11.786 A:middle
+looks like.
+
+00:25:12.626 --> 00:25:14.106 A:middle
+So I'm going to select one of
+
+00:25:14.106 --> 00:25:15.806 A:middle
+these feeds, and there you go.
+
+00:25:15.806 --> 00:25:17.586 A:middle
+We have our layout.
+
+00:25:17.586 --> 00:25:19.086 A:middle
+Our images are nicely loaded in
+
+00:25:19.086 --> 00:25:21.146 A:middle
+this fancy mosaic configuration,
+
+00:25:21.146 --> 00:25:23.706 A:middle
+and if we rotate to landscape,
+
+00:25:23.706 --> 00:25:25.246 A:middle
+you can see that our cells have
+
+00:25:25.246 --> 00:25:26.996 A:middle
+resized so we've updated
+
+00:25:26.996 --> 00:25:28.036 A:middle
+everything correctly, we've
+
+00:25:28.036 --> 00:25:29.466 A:middle
+invalidated, which is great.
+
+00:25:32.286 --> 00:25:36.876 A:middle
+So this looks like our spec, but
+
+00:25:36.876 --> 00:25:38.516 A:middle
+that scrolling performance isn't
+
+00:25:38.516 --> 00:25:39.306 A:middle
+great, is it?
+
+00:25:39.436 --> 00:25:39.636 A:middle
+&gt;&gt; No.
+
+00:25:39.636 --> 00:25:40.786 A:middle
+&gt;&gt; No, it's pretty bad, huh.
+
+00:25:41.826 --> 00:25:43.116 A:middle
+So you might already have an
+
+00:25:43.116 --> 00:25:44.286 A:middle
+idea of what's going on here.
+
+00:25:44.386 --> 00:25:45.536 A:middle
+Let's switch back to the code
+
+00:25:45.536 --> 00:25:47.946 A:middle
+and see what might be happening.
+
+00:25:49.176 --> 00:25:50.386 A:middle
+So if we take a look at our
+
+00:25:50.386 --> 00:25:51.666 A:middle
+layout attributes or elements in
+
+00:25:51.666 --> 00:25:54.386 A:middle
+rect here, remember that this
+
+00:25:54.386 --> 00:25:55.946 A:middle
+method gets called frequently
+
+00:25:55.946 --> 00:25:56.836 A:middle
+during scrolling.
+
+00:25:58.616 --> 00:26:01.376 A:middle
+So this function here, which is
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.836 --> 00:06:00.986 A:middle
+take a look at another case.
+
+00:06:02.186 --> 00:06:04.626 A:middle
+You might have a window that
+
+00:06:04.836 --> 00:06:06.076 A:middle
+kind of hangs off of a
+
+00:06:06.076 --> 00:06:07.026 A:middle
+particular view.
+
+00:06:07.936 --> 00:06:09.306 A:middle
+And you probably want its
+
+00:06:09.306 --> 00:06:11.236 A:middle
+appearance to match the view it
+
+00:06:11.236 --> 00:06:12.016 A:middle
+hangs off of.
+
+00:06:12.886 --> 00:06:15.196 A:middle
+Now, we could just assign the
+
+00:06:15.196 --> 00:06:16.446 A:middle
+aqua appearance to this window
+
+00:06:16.476 --> 00:06:17.756 A:middle
+just like we did to the view,
+
+00:06:18.766 --> 00:06:20.316 A:middle
+but what we really want is
+
+00:06:20.616 --> 00:06:21.636 A:middle
+something a little stronger.
+
+00:06:21.636 --> 00:06:23.196 A:middle
+We want its appearance to
+
+00:06:23.196 --> 00:06:26.576 A:middle
+inherit from the view and we can
+
+00:06:26.576 --> 00:06:28.716 A:middle
+do that-- first of all, AppKit
+
+00:06:28.716 --> 00:06:30.316 A:middle
+will automatically do this for
+
+00:06:30.316 --> 00:06:31.696 A:middle
+us for a number of common
+
+00:06:31.696 --> 00:06:34.586 A:middle
+windows, like menus, popovers,
+
+00:06:34.626 --> 00:06:36.546 A:middle
+tool tips, and sheets, so you
+
+00:06:36.546 --> 00:06:37.456 A:middle
+don't have to worry about it in
+
+00:06:37.456 --> 00:06:38.156 A:middle
+those cases.
+
+00:06:39.286 --> 00:06:40.966 A:middle
+But, for custom cases like this,
+
+00:06:41.476 --> 00:06:43.266 A:middle
+there's new API in Mojave that
+
+00:06:43.266 --> 00:06:45.436 A:middle
+you can use to do this.
+
+00:06:46.746 --> 00:06:48.256 A:middle
+It's called Appearance Source.
+
+00:06:49.486 --> 00:06:51.746 A:middle
+Now, this is a property that
+
+00:06:51.746 --> 00:06:54.446 A:middle
+takes any object that conforms
+
+00:06:54.446 --> 00:06:54.776 A:middle
+to that
+
+00:06:54.856 --> 00:06:55.976 A:middle
+NSAppearanceCustomization
+
+00:06:55.976 --> 00:06:57.386 A:middle
+protocol-- so, views and
+
+00:06:57.386 --> 00:07:00.506 A:middle
+windows-- and you just assign it
+

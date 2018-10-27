@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:01.116 --> 00:34:02.546 A:middle
+If you're going to check that
+
+00:34:02.546 --> 00:34:03.776 A:middle
+the receipt is for your
+
+00:34:03.776 --> 00:34:05.656 A:middle
+application first you want to
+
+00:34:05.656 --> 00:34:07.866 A:middle
+check that bundle identifier and
+
+00:34:07.866 --> 00:34:10.016 A:middle
+you want to check type 3, which
+
+00:34:10.016 --> 00:34:11.406 A:middle
+gives you the version that goes
+
+00:34:11.406 --> 00:34:13.866 A:middle
+with the app.
+
+00:34:14.126 --> 00:34:15.626 A:middle
+But a best practice here is
+
+00:34:15.996 --> 00:34:17.656 A:middle
+always use hardcoded values,
+
+00:34:17.656 --> 00:34:19.266 A:middle
+don't just read from your app's
+
+00:34:19.266 --> 00:34:20.416 A:middle
+Info.plist.
+
+00:34:20.726 --> 00:34:22.085 A:middle
+It's too easy to change the
+
+00:34:22.085 --> 00:34:24.436 A:middle
+Info.plist to match an invalid
+
+00:34:24.436 --> 00:34:26.085 A:middle
+receipt to spoof your app into
+
+00:34:26.085 --> 00:34:26.436 A:middle
+running.
+
+00:34:27.786 --> 00:34:29.536 A:middle
+Now that you've matched that
+
+00:34:29.536 --> 00:34:31.516 A:middle
+bundle identifier and version to
+
+00:34:31.516 --> 00:34:33.386 A:middle
+the receipt you're going to want
+
+00:34:33.386 --> 00:34:35.005 A:middle
+to make sure that it's valid for
+
+00:34:35.005 --> 00:34:36.806 A:middle
+your device and the way to do
+
+00:34:36.806 --> 00:34:38.456 A:middle
+this is to use attribute 5.
+
+00:34:39.255 --> 00:34:41.846 A:middle
+Attribute 5 is shawl SHA-1 hash
+
+00:34:42.116 --> 00:34:44.936 A:middle
+of a couple values, including
+
+00:34:44.936 --> 00:34:46.536 A:middle
+the bundle identifier, the
+
+00:34:46.536 --> 00:34:48.016 A:middle
+device identifier, the thing
+
+00:34:48.016 --> 00:34:49.636 A:middle
+that represents the hardware
+
+00:34:49.746 --> 00:34:50.525 A:middle
+that is running your
+
+00:34:50.525 --> 00:34:52.456 A:middle
+application, and an opaque
+
+00:34:52.456 --> 00:34:52.976 A:middle
+value.
+
+00:34:53.536 --> 00:34:54.686 A:middle
+This is a bit of cryptic or
+
+00:34:54.926 --> 00:34:55.966 A:middle
+[inaudible] entropy, it changes
+
+00:34:55.966 --> 00:34:57.496 A:middle
+over time and we store that in
+
+00:34:57.496 --> 00:34:58.776 A:middle
+the receipt as type 4.
+
+00:34:59.476 --> 00:35:00.846 A:middle
+You're going to take those 3
+

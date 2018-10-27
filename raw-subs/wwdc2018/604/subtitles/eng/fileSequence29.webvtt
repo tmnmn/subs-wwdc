@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.266 --> 00:29:00.506 A:middle
+Three 4 byte components is 12
+
+00:29:00.506 --> 00:29:01.096 A:middle
+bytes right.
+
+00:29:01.936 --> 00:29:03.436 A:middle
+Well if you pack your data that
+
+00:29:03.436 --> 00:29:04.716 A:middle
+way you'll run into trouble
+
+00:29:05.356 --> 00:29:06.586 A:middle
+because the shading language
+
+00:29:06.666 --> 00:29:08.296 A:middle
+actually interprets a float3 as
+
+00:29:08.296 --> 00:29:09.586 A:middle
+consuming 16 bytes.
+
+00:29:10.336 --> 00:29:11.236 A:middle
+That's because the types are
+
+00:29:11.236 --> 00:29:12.936 A:middle
+kept as stricter alignments for
+
+00:29:12.936 --> 00:29:16.366 A:middle
+CPU and GPU optimal CPU and GPU
+
+00:29:16.366 --> 00:29:16.816 A:middle
+usage.
+
+00:29:18.026 --> 00:29:19.626 A:middle
+Similar problems often occur
+
+00:29:19.996 --> 00:29:21.176 A:middle
+with three by three matrices.
+
+00:29:22.316 --> 00:29:23.936 A:middle
+If you really want to tack, if
+
+00:29:23.936 --> 00:29:26.046 A:middle
+you really want to pack data
+
+00:29:26.186 --> 00:29:28.996 A:middle
+tightly there are pack types
+
+00:29:28.996 --> 00:29:30.416 A:middle
+available in the Metal shading
+
+00:29:30.416 --> 00:29:30.776 A:middle
+language.
+
+00:29:31.246 --> 00:29:33.126 A:middle
+After passing a pack data in a
+
+00:29:33.126 --> 00:29:34.596 A:middle
+buffer your shader code would
+
+00:29:34.596 --> 00:29:37.356 A:middle
+need to pack data, would you
+
+00:29:37.356 --> 00:29:38.846 A:middle
+need to pass that packed data to
+
+00:29:38.846 --> 00:29:40.686 A:middle
+a regular vector before it can
+
+00:29:40.686 --> 00:29:42.236 A:middle
+perform operations on that data.
+
+00:29:43.716 --> 00:29:45.436 A:middle
+So when you're bringing up your
+
+00:29:45.436 --> 00:29:48.446 A:middle
+application I recommend using
+
+00:29:48.756 --> 00:29:49.956 A:middle
+the most convenient storage
+
+00:29:49.956 --> 00:29:50.376 A:middle
+modes.
+
+00:29:51.396 --> 00:29:53.436 A:middle
+This makes it more easy to
+
+00:29:53.466 --> 00:29:55.486 A:middle
+access the data in those
+
+00:29:55.486 --> 00:29:55.976 A:middle
+resources.
+
+00:29:57.006 --> 00:29:58.676 A:middle
+So in iOS create all textures
+
+00:29:58.676 --> 00:29:59.696 A:middle
+and buffers with
+

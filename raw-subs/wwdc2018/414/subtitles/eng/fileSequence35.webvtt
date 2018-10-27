@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.996 --> 00:35:02.026 A:middle
+database property was invalid.
+
+00:35:04.446 --> 00:35:06.496 A:middle
+So we haven't actually found a
+
+00:35:06.566 --> 00:35:08.036 A:middle
+bug yet, none of this code is
+
+00:35:08.036 --> 00:35:09.706 A:middle
+incorrect, the ivar destroyer
+
+00:35:09.706 --> 00:35:11.656 A:middle
+function is not wrong, something
+
+00:35:11.656 --> 00:35:13.716 A:middle
+else was buggy in our code.
+
+00:35:14.376 --> 00:35:15.856 A:middle
+But from the crash log we have
+
+00:35:15.856 --> 00:35:17.966 A:middle
+been able to narrow down where
+
+00:35:17.966 --> 00:35:20.326 A:middle
+our testing should go, where our
+
+00:35:20.326 --> 00:35:22.036 A:middle
+attempts to reproduce the bug
+
+00:35:22.036 --> 00:35:22.596 A:middle
+should go.
+
+00:35:22.596 --> 00:35:24.086 A:middle
+We should be exercising this
+
+00:35:24.086 --> 00:35:26.396 A:middle
+class, we should be exercising
+
+00:35:26.396 --> 00:35:27.876 A:middle
+the database field, we should be
+
+00:35:27.876 --> 00:35:30.176 A:middle
+reading the code that uses that
+
+00:35:30.176 --> 00:35:32.246 A:middle
+database object and try and find
+
+00:35:32.246 --> 00:35:32.616 A:middle
+the bug.
+
+00:35:32.996 --> 00:35:36.206 A:middle
+So what have we just done?
+
+00:35:37.036 --> 00:35:38.296 A:middle
+We read a crash log from
+
+00:35:38.296 --> 00:35:38.886 A:middle
+scratch.
+
+00:35:38.886 --> 00:35:40.096 A:middle
+We started with the crash
+
+00:35:40.156 --> 00:35:42.396 A:middle
+reason, we read the exception
+
+00:35:42.396 --> 00:35:43.606 A:middle
+type, we understand what the
+
+00:35:43.606 --> 00:35:44.886 A:middle
+exception type means.
+
+00:35:45.996 --> 00:35:48.656 A:middle
+We examined the stack trace of
+
+00:35:48.656 --> 00:35:49.986 A:middle
+the thread that crashed,
+
+00:35:50.246 --> 00:35:51.806 A:middle
+understand what it was doing,
+
+00:35:52.186 --> 00:35:54.146 A:middle
+and what the actual error that
+
+00:35:54.146 --> 00:35:55.126 A:middle
+failed was.
+
+00:35:55.126 --> 00:35:57.426 A:middle
+And we looked for clues
+
+00:35:57.516 --> 00:35:59.466 A:middle
+elsewhere in the crash log, in
+
+00:35:59.466 --> 00:36:00.716 A:middle
+this case we used the bad
+

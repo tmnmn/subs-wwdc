@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.406 --> 00:04:00.908 align:middle line:-2
+让我们来仔细看下
+SKProductDiscount
+
+00:04:03.944 --> 00:04:05.913 align:middle line:-1
+反映了你所设置的
+
+00:04:05.979 --> 00:04:08.382 align:middle line:-2
+在App Store Connect中
+关于推广价的数据
+
+00:04:09.550 --> 00:04:12.653 align:middle line:-2
+它有price
+和priceLocale属性 这些属性
+
+00:04:12.719 --> 00:04:15.489 align:middle line:-2
+与SKProduct中
+你所熟悉的同名属性有相似性
+
+00:04:17.891 --> 00:04:19.660 align:middle line:-2
+还有个
+subscriptionPeriod属性
+
+00:04:20.394 --> 00:04:23.030 align:middle line:-2
+这是个叫
+SKProductSubscriptionPeriod的新类
+
+00:04:24.064 --> 00:04:26.733 align:middle line:-1
+它反映了关于推广价付款和续费
+
+00:04:26.800 --> 00:04:27.935 align:middle line:-1
+的全部数据
+
+00:04:29.536 --> 00:04:31.205 align:middle line:-1
+它是通过自己的两个属性来实现的
+
+00:04:32.139 --> 00:04:35.809 align:middle line:-2
+第一个属性是Unit
+这是枚举 可以是天、星期、月或年
+
+00:04:37.477 --> 00:04:38.846 align:middle line:-2
+第二个属性是
+numberOfUnits
+
+00:04:39.313 --> 00:04:44.885 align:middle line:-2
+例如 如果你有一个月的Unit
+还有两个numberOfUnits
+
+00:04:45.419 --> 00:04:47.888 align:middle line:-2
+这就意味着推广价
+会每两个月续费一次
+
+00:04:50.424 --> 00:04:53.560 align:middle line:-2
+在SKProductDiscount上
+也有一个numberOfPeriods属性
+
+00:04:54.962 --> 00:04:56.964 align:middle line:-1
+它反映了推广价有效的
+
+00:04:57.030 --> 00:04:58.665 align:middle line:-1
+订阅周期数
+
+00:04:59.633 --> 00:05:01.969 align:middle line:-1
+比方说 你有个两个月的推广价
+

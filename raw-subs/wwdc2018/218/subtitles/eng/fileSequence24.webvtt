@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.336 --> 00:24:00.806 A:middle
+and then I'll set its fillColor
+
+00:24:00.856 --> 00:24:02.746 A:middle
+to the underPageBackgroundColor.
+
+00:24:03.286 --> 00:24:05.366 A:middle
+Of course, I can also use
+
+00:24:05.366 --> 00:24:06.986 A:middle
+NSVisualEffectView, I can set
+
+00:24:06.986 --> 00:24:08.506 A:middle
+it's material property to the
+
+00:24:08.506 --> 00:24:09.906 A:middle
+underPageBackground material.
+
+00:24:10.116 --> 00:24:11.296 A:middle
+Now, the advantage of using
+
+00:24:11.416 --> 00:24:13.506 A:middle
+NSBox is it's back-deployable
+
+00:24:13.506 --> 00:24:15.416 A:middle
+actually all the way back to
+
+00:24:15.416 --> 00:24:15.956 A:middle
+Leopard.
+
+00:24:17.076 --> 00:24:18.086 A:middle
+VisualEffectView, on the other
+
+00:24:18.086 --> 00:24:19.086 A:middle
+hand, gives you a little more
+
+00:24:19.086 --> 00:24:21.346 A:middle
+flexibility and I'll give you an
+
+00:24:21.346 --> 00:24:22.246 A:middle
+example of that later.
+
+00:24:22.826 --> 00:24:26.906 A:middle
+So, just as a reminder, these
+
+00:24:26.906 --> 00:24:28.356 A:middle
+materials will show their
+
+00:24:28.496 --> 00:24:30.656 A:middle
+untinted color in light.
+
+00:24:31.156 --> 00:24:33.946 A:middle
+And in dark, they'll show that
+
+00:24:33.946 --> 00:24:35.026 A:middle
+desktop-tinting effect.
+
+00:24:35.726 --> 00:24:37.366 A:middle
+But remember that the tint
+
+00:24:37.366 --> 00:24:39.046 A:middle
+effect can be disabled.
+
+00:24:39.176 --> 00:24:40.026 A:middle
+Let me show you why.
+
+00:24:40.706 --> 00:24:45.826 A:middle
+So, in Mojave, you can choose an
+
+00:24:45.926 --> 00:24:47.376 A:middle
+accent color for the system.
+
+00:24:47.896 --> 00:24:52.276 A:middle
+And if I switch this over to
+
+00:24:52.386 --> 00:24:55.276 A:middle
+graphite, you'll probably first
+
+00:24:55.276 --> 00:24:56.696 A:middle
+notice that all the controls
+
+00:24:56.696 --> 00:24:59.806 A:middle
+lost their colored accents, but
+

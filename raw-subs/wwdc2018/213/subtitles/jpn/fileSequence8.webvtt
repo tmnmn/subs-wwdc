@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.379 --> 00:08:03.383 align:start position:25% line:-2
+“Now Playing”を
+ロック画面で表示できるなら
+
+00:08:03.483 --> 00:08:08.989 align:start position:29% line:-2
+次の２つのAPIは
+すでにご存知だと思います
+
+00:08:10.023 --> 00:08:14.628 align:start position:9% line:-2
+MPNowPlayingInfoCenterは
+メタデータを追加
+
+00:08:14.728 --> 00:08:18.265 align:start position:38% line:-2
+曲のタイトルや
+アートワークが
+
+00:08:18.365 --> 00:08:20.234 align:start position:21% line:-2
+CarPlayの
+“Now Playing”と連動
+
+00:08:20.334 --> 00:08:23.504 align:start position:30% line:-1
+ロック画面でも同じです
+
+00:08:24.404 --> 00:08:28.375 align:start position:11% line:-2
+MPRemoteCommandCenterは
+遠隔操作に対応
+
+00:08:28.475 --> 00:08:31.345 align:start position:21% line:-2
+“Play”や
+“Next Track”などです
+
+00:08:32.044 --> 00:08:35.616 align:start position:25% line:-2
+CarPlayでも連続再生を
+実現します
+
+00:08:35.716 --> 00:08:37.851 align:start position:34% line:-1
+コードを見ましょう
+
+00:08:38.952 --> 00:08:42.389 align:start position:25% line:-2
+Srirockaを例に挙げて
+説明します
+
+00:08:42.489 --> 00:08:45.826 align:start position:30% line:-2
+アプリケーションに
+最低限必要なのはこちら
+
+00:08:45.926 --> 00:08:50.564 align:start position:7% line:-2
+まずは
+MPPlayableContentManager
+
+00:08:50.664 --> 00:08:54.067 align:start position:29% line:-2
+Srirockaが情報を
+CarPlayに提供し
+
+00:08:54.168 --> 00:08:56.403 align:start position:30% line:-1
+必要に応じて表示します
+
+00:08:57.337 --> 00:09:01.108 align:start position:14% line:-2
+次に使うのは
+NowPlayingInfoCenter
+

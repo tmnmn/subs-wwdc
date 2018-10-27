@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.326 --> 00:08:00.796 A:middle
+It supports TLS and DTLS by
+
+00:08:00.796 --> 00:08:01.226 A:middle
+default.
+
+00:08:01.476 --> 00:08:03.776 A:middle
+It's really simple to use.
+
+00:08:04.256 --> 00:08:05.616 A:middle
+It has great support for
+
+00:08:05.616 --> 00:08:06.136 A:middle
+mobility.
+
+00:08:06.336 --> 00:08:07.926 A:middle
+It provides notifications about
+
+00:08:07.926 --> 00:08:08.946 A:middle
+network changes that are
+
+00:08:08.976 --> 00:08:10.386 A:middle
+relevant to the connections that
+
+00:08:10.386 --> 00:08:11.216 A:middle
+your application is
+
+00:08:11.216 --> 00:08:11.876 A:middle
+establishing.
+
+00:08:12.476 --> 00:08:17.046 A:middle
+It's available on iOS, macOS,
+
+00:08:17.146 --> 00:08:19.366 A:middle
+and tvOS as a CAPI with
+
+00:08:19.366 --> 00:08:20.616 A:middle
+automatic reference counting, so
+
+00:08:20.616 --> 00:08:21.836 A:middle
+it's easy to use from Objective
+
+00:08:21.836 --> 00:08:23.646 A:middle
+C, and it has an incredible
+
+00:08:23.646 --> 00:08:24.306 A:middle
+Swift API.
+
+00:08:25.066 --> 00:08:28.166 A:middle
+With that, I'd like to turn it
+
+00:08:28.166 --> 00:08:29.566 A:middle
+over to Tommy Pauly, to walk you
+
+00:08:29.566 --> 00:08:30.406 A:middle
+through making your first
+
+00:08:30.406 --> 00:08:30.856 A:middle
+connection.
+
+00:08:31.416 --> 00:08:31.756 A:middle
+Thank you.
+
+00:08:32.508 --> 00:08:34.508 A:middle
+[ Applause ]
+
+00:08:38.496 --> 00:08:39.866 A:middle
+&gt;&gt; All right, hello everyone.
+
+00:08:40.126 --> 00:08:41.556 A:middle
+My name is Tommy Pauly, and I'm
+
+00:08:41.556 --> 00:08:43.306 A:middle
+on the networking team here at
+
+00:08:43.306 --> 00:08:43.586 A:middle
+Apple.
+
+00:08:44.686 --> 00:08:46.766 A:middle
+And so I'm sure a lot of you are
+
+00:08:46.766 --> 00:08:48.156 A:middle
+really excited to start seeing
+
+00:08:48.156 --> 00:08:50.226 A:middle
+how you can start adopting
+
+00:08:50.366 --> 00:08:52.086 A:middle
+Network.framework in your apps.
+
+00:08:53.366 --> 00:08:55.386 A:middle
+And the best place to start and
+
+00:08:55.386 --> 00:08:56.836 A:middle
+just dive right in is by making
+
+00:08:56.836 --> 00:08:57.726 A:middle
+your first connection.
+
+00:08:57.726 --> 00:08:59.266 A:middle
+And you're going to be making
+
+00:08:59.266 --> 00:09:00.266 A:middle
+your connection from your local
+

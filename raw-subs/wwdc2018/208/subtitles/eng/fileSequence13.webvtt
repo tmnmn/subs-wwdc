@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.926 --> 00:13:00.596 A:middle
+currently focused item off of
+
+00:13:00.596 --> 00:13:01.466 A:middle
+the focusSystem.
+
+00:13:02.346 --> 00:13:04.256 A:middle
+Next, we are introducing a new
+
+00:13:04.256 --> 00:13:05.346 A:middle
+protocol, called
+
+00:13:05.346 --> 00:13:07.446 A:middle
+UIFocusItemContainer, which
+
+00:13:07.446 --> 00:13:09.306 A:middle
+provides geometric context to
+
+00:13:09.306 --> 00:13:10.056 A:middle
+Focus items.
+
+00:13:11.266 --> 00:13:13.416 A:middle
+A focusItemContainer is owned by
+
+00:13:13.416 --> 00:13:15.276 A:middle
+a focusEnvironment, and can
+
+00:13:15.276 --> 00:13:17.136 A:middle
+locate focus items within
+
+00:13:17.136 --> 00:13:19.076 A:middle
+specific regions, allowing the
+
+00:13:19.076 --> 00:13:20.826 A:middle
+focus engine to move focus to
+
+00:13:20.826 --> 00:13:21.886 A:middle
+the best candidate.
+
+00:13:22.306 --> 00:13:25.476 A:middle
+Next, we have a special type of
+
+00:13:25.476 --> 00:13:27.046 A:middle
+focusItemContainer, called
+
+00:13:27.046 --> 00:13:28.836 A:middle
+focusItemScrollableContainer,
+
+00:13:29.126 --> 00:13:30.236 A:middle
+which adds support for
+
+00:13:30.236 --> 00:13:31.646 A:middle
+automatically scrolling through
+
+00:13:31.646 --> 00:13:33.426 A:middle
+content as focus is moved.
+
+00:13:34.516 --> 00:13:36.606 A:middle
+And, finally, we now supply
+
+00:13:36.606 --> 00:13:38.846 A:middle
+focusItems with movement hints,
+
+00:13:39.036 --> 00:13:40.726 A:middle
+which contain raw values that
+
+00:13:40.726 --> 00:13:42.206 A:middle
+you can use to create visual
+
+00:13:42.206 --> 00:13:44.236 A:middle
+effects that suggest what
+
+00:13:44.236 --> 00:13:46.056 A:middle
+direction focus is about to move
+
+00:13:46.056 --> 00:13:46.266 A:middle
+in.
+
+00:13:47.266 --> 00:13:49.446 A:middle
+Now, let's take a closer look at
+
+00:13:49.446 --> 00:13:51.346 A:middle
+how we can form our own classes
+
+00:13:51.346 --> 00:13:52.246 A:middle
+to these protocols.
+
+00:13:53.086 --> 00:13:54.576 A:middle
+Let's start by implementing a
+
+00:13:54.576 --> 00:13:56.056 A:middle
+custom focusEnvironment.
+
+00:13:56.826 --> 00:13:58.586 A:middle
+In order for the focus engine to
+
+00:13:58.586 --> 00:14:00.666 A:middle
+find your environment, and its
+

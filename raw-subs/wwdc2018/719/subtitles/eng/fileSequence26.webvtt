@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.476 --> 00:26:00.956 A:middle
+So, all of that is handled for
+
+00:26:00.956 --> 00:26:02.226 A:middle
+you under the hood.
+
+00:26:02.956 --> 00:26:04.266 A:middle
+Core Image also supports
+
+00:26:04.366 --> 00:26:05.746 A:middle
+residual images, such as
+
+00:26:05.746 --> 00:26:08.006 A:middle
+creating images from a color or
+
+00:26:08.006 --> 00:26:08.856 A:middle
+creating an image from a
+
+00:26:08.856 --> 00:26:09.406 A:middle
+generator.
+
+00:26:11.156 --> 00:26:12.546 A:middle
+Let's have a look at how to
+
+00:26:12.546 --> 00:26:13.296 A:middle
+apply filters now.
+
+00:26:14.526 --> 00:26:16.126 A:middle
+So, applying a filter has never
+
+00:26:16.126 --> 00:26:16.476 A:middle
+been easier.
+
+00:26:16.476 --> 00:26:17.936 A:middle
+You take a CIImage instance,
+
+00:26:18.466 --> 00:26:19.676 A:middle
+call the filter name directly on
+
+00:26:19.676 --> 00:26:21.666 A:middle
+it and pass the list of input
+
+00:26:21.706 --> 00:26:22.266 A:middle
+primaries.
+
+00:26:23.026 --> 00:26:24.476 A:middle
+Every CIImage instance is
+
+00:26:24.476 --> 00:26:26.496 A:middle
+augmented with more than 200
+
+00:26:26.686 --> 00:26:28.536 A:middle
+lambda expressions, which
+
+00:26:28.536 --> 00:26:30.516 A:middle
+directly map to the Core Image
+
+00:26:30.516 --> 00:26:30.996 A:middle
+filters.
+
+00:26:31.216 --> 00:26:33.406 A:middle
+If you're in Swift, this is the
+
+00:26:33.406 --> 00:26:34.726 A:middle
+syntax you've seen before I'm
+
+00:26:34.726 --> 00:26:36.476 A:middle
+sure, applying filter, passing
+
+00:26:36.476 --> 00:26:38.106 A:middle
+the filter name as well as the
+
+00:26:38.106 --> 00:26:39.866 A:middle
+list of input arguments as a
+
+00:26:39.866 --> 00:26:41.536 A:middle
+dictionary of key value pairs.
+
+00:26:42.856 --> 00:26:45.376 A:middle
+To apply kernels, you can go
+
+00:26:45.376 --> 00:26:46.876 A:middle
+applykernel in your CIMG
+
+00:26:46.876 --> 00:26:48.966 A:middle
+instance, passing of the source
+
+00:26:48.966 --> 00:26:50.346 A:middle
+string containing your kernel
+
+00:26:50.346 --> 00:26:52.316 A:middle
+code and the list of input
+
+00:26:52.416 --> 00:26:53.976 A:middle
+parameters to that kernel, and
+
+00:26:53.976 --> 00:26:55.376 A:middle
+we'll have a look at this in
+
+00:26:55.376 --> 00:26:55.906 A:middle
+just a second.
+
+00:26:57.526 --> 00:26:58.806 A:middle
+Then you just specify the extent
+
+00:26:58.806 --> 00:26:59.456 A:middle
+in which you're applying that
+
+00:26:59.456 --> 00:27:00.746 A:middle
+kernel, as well as a region of
+

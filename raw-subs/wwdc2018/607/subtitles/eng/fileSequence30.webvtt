@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.556 --> 00:30:02.416 A:middle
+So now, let's talk about
+
+00:30:02.416 --> 00:30:04.376 A:middle
+imageblocks, which allow you to
+
+00:30:04.376 --> 00:30:05.936 A:middle
+merge render passes in even more
+
+00:30:05.936 --> 00:30:06.696 A:middle
+circumstances.
+
+00:30:12.476 --> 00:30:13.546 A:middle
+Imageblocks give you full
+
+00:30:13.546 --> 00:30:14.736 A:middle
+control of your data in tile
+
+00:30:14.736 --> 00:30:15.116 A:middle
+memory.
+
+00:30:15.536 --> 00:30:17.196 A:middle
+Instead of describing pixels as
+
+00:30:17.196 --> 00:30:18.506 A:middle
+arrays of render pass
+
+00:30:18.506 --> 00:30:20.486 A:middle
+attachments in the Metal API,
+
+00:30:21.456 --> 00:30:22.696 A:middle
+imageblocks let you declare your
+
+00:30:22.696 --> 00:30:24.006 A:middle
+pixel layouts directly in the
+
+00:30:24.006 --> 00:30:25.816 A:middle
+shading language as structs.
+
+00:30:28.056 --> 00:30:29.336 A:middle
+It adds new pack data types to
+
+00:30:29.336 --> 00:30:30.556 A:middle
+the shading language that match
+
+00:30:30.556 --> 00:30:31.856 A:middle
+the texture formats you already
+
+00:30:31.856 --> 00:30:33.446 A:middle
+use, and these types are
+
+00:30:33.446 --> 00:30:35.116 A:middle
+transparently packed and
+
+00:30:35.116 --> 00:30:36.296 A:middle
+unpacked when accessing the
+
+00:30:36.296 --> 00:30:36.666 A:middle
+shader.
+
+00:30:37.646 --> 00:30:39.196 A:middle
+In fact, you can also use these
+
+00:30:39.196 --> 00:30:40.676 A:middle
+new pack data types in your
+
+00:30:40.676 --> 00:30:42.216 A:middle
+vertex buffers and constant
+
+00:30:42.216 --> 00:30:43.976 A:middle
+buffers to more tightly pack all
+
+00:30:43.976 --> 00:30:44.476 A:middle
+of your data.
+
+00:30:46.736 --> 00:30:47.946 A:middle
+Imageblocks also let you
+
+00:30:47.946 --> 00:30:49.996 A:middle
+describe more complex per-pixel
+
+00:30:49.996 --> 00:30:50.826 A:middle
+data structures.
+
+00:30:51.176 --> 00:30:52.806 A:middle
+You can use arrays, nested
+
+00:30:52.806 --> 00:30:54.276 A:middle
+structs, or combinations
+
+00:30:54.276 --> 00:30:54.616 A:middle
+thereof.
+
+00:30:55.126 --> 00:30:56.586 A:middle
+It all just works.
+
+00:30:59.096 --> 00:31:01.016 A:middle
+Now, direct control of your
+

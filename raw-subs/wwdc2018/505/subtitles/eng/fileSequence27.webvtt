@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:01.066 --> 00:27:02.736 A:middle
+So, that was receiving file
+
+00:27:02.736 --> 00:27:03.216 A:middle
+promises.
+
+00:27:03.676 --> 00:27:05.236 A:middle
+Now, let's see how we can
+
+00:27:05.236 --> 00:27:06.336 A:middle
+provide file promises.
+
+00:27:07.186 --> 00:27:08.736 A:middle
+And, you should consider
+
+00:27:09.106 --> 00:27:10.636 A:middle
+implementing this in your app,
+
+00:27:11.276 --> 00:27:12.636 A:middle
+if the data you want to send
+
+00:27:12.636 --> 00:27:14.296 A:middle
+over drag and drop does not
+
+00:27:14.296 --> 00:27:15.416 A:middle
+exist yet on disk.
+
+00:27:16.556 --> 00:27:18.196 A:middle
+So, let's have a look on how we
+
+00:27:18.196 --> 00:27:20.806 A:middle
+can do that by looking at the
+
+00:27:20.806 --> 00:27:20.976 A:middle
+API.
+
+00:27:25.336 --> 00:27:27.906 A:middle
+First, you will need to create
+
+00:27:27.906 --> 00:27:28.616 A:middle
+an instance of
+
+00:27:28.616 --> 00:27:29.896 A:middle
+NSFilePromiseProvider.
+
+00:27:31.816 --> 00:27:33.796 A:middle
+You should create one instance
+
+00:27:33.796 --> 00:27:34.906 A:middle
+for each promised file.
+
+00:27:35.436 --> 00:27:37.236 A:middle
+And, before writing the
+
+00:27:37.236 --> 00:27:39.226 A:middle
+filePromiseProvider object to
+
+00:27:39.226 --> 00:27:41.186 A:middle
+the pasteboard, it must contain
+
+00:27:41.186 --> 00:27:43.416 A:middle
+a file type, and a delegate.
+
+00:27:44.296 --> 00:27:45.486 A:middle
+These delegate is doing the
+
+00:27:45.486 --> 00:27:46.976 A:middle
+heavy lifting of writing files
+
+00:27:46.976 --> 00:27:47.516 A:middle
+to disk.
+
+00:27:48.456 --> 00:27:50.696 A:middle
+There are only three methods for
+
+00:27:50.696 --> 00:27:52.526 A:middle
+NSFilePromiseProvider delegates.
+
+00:27:53.136 --> 00:27:54.746 A:middle
+The first one is called by the
+
+00:27:54.746 --> 00:27:57.586 A:middle
+drag destination, and returns
+
+00:27:57.586 --> 00:27:58.966 A:middle
+the file name, not the full
+
+00:27:58.966 --> 00:27:59.416 A:middle
+path.
+
+00:27:59.976 --> 00:28:03.136 A:middle
+The second one return an
+

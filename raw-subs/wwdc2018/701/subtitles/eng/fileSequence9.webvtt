@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.796 --> 00:09:00.576 A:middle
+So let me show you the first
+
+00:09:00.576 --> 00:09:00.956 A:middle
+attempt.
+
+00:09:05.066 --> 00:09:06.346 A:middle
+So what we're doing is we are
+
+00:09:06.346 --> 00:09:08.306 A:middle
+identifying a frequency
+
+00:09:08.306 --> 00:09:09.366 A:middle
+component at a certain
+
+00:09:09.366 --> 00:09:11.276 A:middle
+threshold, and any frequency
+
+00:09:11.276 --> 00:09:13.286 A:middle
+component higher than that
+
+00:09:13.286 --> 00:09:16.496 A:middle
+threshold we're going to remove.
+
+00:09:17.066 --> 00:09:17.866 A:middle
+And you see, if we set the
+
+00:09:17.866 --> 00:09:20.486 A:middle
+threshold too low, not only do
+
+00:09:20.486 --> 00:09:22.466 A:middle
+we remove the artifacts, but we
+
+00:09:22.466 --> 00:09:23.326 A:middle
+also remove quite a bit of the
+
+00:09:23.326 --> 00:09:23.896 A:middle
+image as well.
+
+00:09:27.716 --> 00:09:29.336 A:middle
+If we set it too high, you can
+
+00:09:29.756 --> 00:09:34.486 A:middle
+see that we didn't do much of
+
+00:09:37.756 --> 00:09:37.976 A:middle
+anything.
+
+00:09:38.986 --> 00:09:39.976 A:middle
+Medium seems about right.
+
+00:09:40.836 --> 00:09:42.386 A:middle
+Medium seems too correctly
+
+00:09:42.386 --> 00:09:45.136 A:middle
+identify the artifacts in the
+
+00:09:45.136 --> 00:09:47.316 A:middle
+image without damaging too much
+
+00:09:47.316 --> 00:09:47.726 A:middle
+of the image.
+
+00:09:48.366 --> 00:09:49.626 A:middle
+So let me show you how we do
+
+00:09:49.626 --> 00:09:49.876 A:middle
+that.
+
+00:09:55.316 --> 00:09:56.346 A:middle
+At a high level what we're going
+
+00:09:56.346 --> 00:09:57.986 A:middle
+to do is we're going to perform
+
+00:09:57.986 --> 00:09:59.626 A:middle
+an FFT on the image and the
+
+00:09:59.626 --> 00:09:59.976 A:middle
+sample.
+

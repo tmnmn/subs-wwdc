@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.257 --> 00:26:02.196 align:start position:21% line:-2
+クラッシュログに
+もっと状況が分かる情報はないか？
+
+00:26:03.464 --> 00:26:06.900 align:start position:27% line:-1
+無効なアドレスを見ましょう
+
+00:26:07.234 --> 00:26:13.574 align:start position:21% line:-2
+問題のあるアドレス値が
+役に立つ情報を含む場合があります
+
+00:26:13.874 --> 00:26:19.980 align:start position:29% line:-2
+この問題のあるアドレスは
+解放後の使用に見えます
+
+00:26:20.480 --> 00:26:23.584 align:start position:23% line:-1
+主に経験から そうと分かります
+
+00:26:23.684 --> 00:26:29.156 align:start position:21% line:-2
+クラッシュログを読んでると
+少しずつパターンが分かってきます
+
+00:26:29.790 --> 00:26:31.959 align:start position:34% line:-1
+このアドレス値は―
+
+00:26:32.593 --> 00:26:38.098 align:start position:23% line:-2
+mallocメモリアロケータの
+アドレス範囲とよく似ています
+
+00:26:38.198 --> 00:26:41.235 align:start position:25% line:-1
+クラッシュログにもありました
+
+00:26:41.902 --> 00:26:45.505 align:start position:27% line:-1
+これがそのアドレス範囲です
+
+00:26:45.606 --> 00:26:51.044 align:start position:21% line:-2
+無効なアドレスは
+mallocの範囲内のようですが
+
+00:26:51.378 --> 00:26:53.146 align:start position:32% line:-1
+４ビット移っています
+
+00:26:53.247 --> 00:26:55.649 align:start position:30% line:-1
+４ビット回転しています
+
+00:26:55.816 --> 00:27:00.053 align:start position:25% line:-2
+有効なmallocアドレスが
+回転したと思われます
+

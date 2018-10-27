@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:56.223 --> 00:46:02.463 align:start position:21% line:-2
+非再帰的な分割統治アルゴリズムが
+可能になります
+
+00:46:02.563 --> 00:46:06.533 align:start position:30% line:-2
+型の“果てしない塔”は
+もう不要です
+
+00:46:06.900 --> 00:46:10.504 align:start position:29% line:-1
+ただ 最後の問題として―
+
+00:46:10.604 --> 00:46:16.243 align:start position:9% line:-2
+SubSequence型は Random
+AccessCollectionであるべきです
+
+00:46:16.543 --> 00:46:19.980 align:start position:20% line:-2
+offsetByインデックス操作の
+ためです
+
+00:46:20.714 --> 00:46:24.651 align:start position:18% line:-1
+この記述には where句が使えます
+
+00:46:24.751 --> 00:46:28.288 align:start position:7% line:-2
+BidirectionalCollectionを
+継承すると―
+
+00:46:28.388 --> 00:46:35.162 align:start position:14% line:-2
+それに準拠するという制約が
+SubSequenceに新たに加わります
+
+00:46:35.262 --> 00:46:40.768 align:start position:25% line:-2
+これも再帰的制約ですが
+このプロトコル上に表されます
+
+00:46:40.868 --> 00:46:44.738 align:start position:7% line:-2
+RandomAccessCollectionでも
+まったく同じです
+
+00:46:44.838 --> 00:46:50.477 align:start position:4% line:-2
+これのSubSequenceは
+RandomAccessCollection準拠です
+
+00:46:50.611 --> 00:46:55.282 align:start position:23% line:-2
+SubSequenceの制約が
+そのプロトコルに従うのは
+
+00:46:55.382 --> 00:46:58.152 align:start position:25% line:-1
+聞き覚えがあるかもしれません
+
+00:46:58.485 --> 00:47:04.258 align:start position:27% line:-2
+再帰的制約も条件付き準拠も
+プロトコル階層を追跡します
+

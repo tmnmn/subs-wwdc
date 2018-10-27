@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:58.876 --> 00:43:00.546 A:middle
+names and types of private
+
+00:43:00.546 --> 00:43:01.426 A:middle
+declarations.
+
+00:43:02.186 --> 00:43:03.496 A:middle
+This allows you to refer to them
+
+00:43:03.496 --> 00:43:05.006 A:middle
+in the debugger which is really
+
+00:43:05.006 --> 00:43:05.706 A:middle
+handy.
+
+00:43:06.306 --> 00:43:07.426 A:middle
+But it does mean that for
+
+00:43:07.426 --> 00:43:09.376 A:middle
+example, you shouldn't name a
+
+00:43:09.376 --> 00:43:10.756 A:middle
+private variable after your
+
+00:43:10.756 --> 00:43:12.156 A:middle
+deepest, darkest secret.
+
+00:43:15.596 --> 00:43:17.456 A:middle
+For incremental builds, the
+
+00:43:17.456 --> 00:43:19.256 A:middle
+compiler produces partial Swift
+
+00:43:19.256 --> 00:43:21.436 A:middle
+module files and then merges
+
+00:43:21.436 --> 00:43:23.666 A:middle
+them into a single file that
+
+00:43:23.666 --> 00:43:25.086 A:middle
+represents the contents of the
+
+00:43:25.086 --> 00:43:25.836 A:middle
+entire module.
+
+00:43:27.046 --> 00:43:28.686 A:middle
+This merging process also makes
+
+00:43:28.686 --> 00:43:31.316 A:middle
+it possible to produce a single
+
+00:43:31.396 --> 00:43:32.646 A:middle
+Objective-C header.
+
+00:43:34.296 --> 00:43:36.366 A:middle
+In many ways, this is similar to
+
+00:43:36.366 --> 00:43:37.636 A:middle
+what the linker does when it
+
+00:43:37.636 --> 00:43:39.066 A:middle
+smooshes together your object
+
+00:43:39.066 --> 00:43:41.526 A:middle
+files into a single executable.
+
+00:43:42.306 --> 00:43:43.506 A:middle
+And to tell you more about that,
+
+00:43:43.646 --> 00:43:45.726 A:middle
+I'll hand it off to Louis and
+
+00:43:45.726 --> 00:43:46.186 A:middle
+the linker.
+
+00:43:46.906 --> 00:43:47.766 A:middle
+Louis?
+
+00:43:48.176 --> 00:43:48.976 A:middle
+&gt;&gt; Thank you, Devin.
+
+00:43:49.516 --> 00:43:54.136 A:middle
+[ Applause ]
+
+00:43:54.636 --> 00:43:56.206 A:middle
+Hi, I'm Louis Gerbarg.
+
+00:43:56.206 --> 00:43:57.516 A:middle
+I work on the linker.
+
+00:43:57.956 --> 00:43:59.046 A:middle
+Which is one of the final steps
+
+00:43:59.046 --> 00:44:00.336 A:middle
+in the Xcode build process.
+

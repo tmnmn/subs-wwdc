@@ -1,0 +1,48 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.219 --> 00:22:00.287 align:start position:41% line:-1
+そうします
+
+00:22:01.321 --> 00:22:06.760 align:start position:29% line:-2
+もちろん 必要な時に
+そのつど権限を要求します
+
+00:22:07.094 --> 00:22:13.400 align:start position:21% line:-2
+今回は このUIが表示される度に
+要求したいと思います
+
+00:22:13.667 --> 00:22:18.038 align:start position:30% line:-2
+ワークアウト開始の前に
+権限を得るためです
+
+00:22:18.972 --> 00:22:21.575 align:start position:29% line:-1
+この画面で使っているのは
+
+00:22:21.742 --> 00:22:25.345 align:start position:9% line:-2
+WorkoutStartViewの
+WKInterfaceControllerです
+
+00:22:25.612 --> 00:22:31.218 align:start position:18% line:-2
+これからdidAppearメソッドで
+権限を実行します
+
+00:22:33.854 --> 00:22:40.227 align:start position:12% line:-2
+最後に保存したいので
+typesToShareはワークアウトです
+
+00:22:42.262 --> 00:22:47.534 align:start position:16% line:-2
+読み取りたいのは heartRateと
+activeEnergyBurned
+
+00:22:47.935 --> 00:22:50.404 align:start position:7% line:-2
+そして
+distanceWalkingRunningです
+
+00:22:51.672 --> 00:22:54.208 align:start position:32% line:-1
+この２つを指定したら
+
+00:22:54.741 --> 00:23:00.447 align:start position:5% line:-2
+requestAuthorizationを呼び出し
+タイプを渡します
+

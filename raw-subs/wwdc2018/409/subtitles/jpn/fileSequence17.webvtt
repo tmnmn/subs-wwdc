@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.153 --> 00:17:04.724 align:start position:27% line:-2
+しかし同期させて
+使いたい状況もあるでしょう
+
+00:17:05.526 --> 00:17:09.229 align:start position:32% line:-2
+バックグラウンドで
+コードが実行中の時や
+
+00:17:09.463 --> 00:17:14.201 align:start position:29% line:-2
+必須の値が使えるまで
+関数が機能しない場合など
+
+00:17:14.701 --> 00:17:19.772 align:start position:25% line:-2
+有効な解決策は
+同期化を確保するセマフォです
+
+00:17:20.440 --> 00:17:22.843 align:start position:29% line:-1
+こちらの例をご覧ください
+
+00:17:22.943 --> 00:17:27.681 align:start position:21% line:-2
+NSXPCConnectionの
+オブジェクトです
+
+00:17:27.781 --> 00:17:31.785 align:start position:11% line:-2
+プロパティの
+remoteObjectProxyを呼び出し
+
+00:17:31.885 --> 00:17:36.857 align:start position:16% line:-2
+異なるプロセスから非同期で
+CurrentTaskNameを得ます
+
+00:17:37.491 --> 00:17:39.860 align:start position:29% line:-1
+そしてセマフォを対応させ
+
+00:17:39.960 --> 00:17:42.829 align:start position:25% line:-1
+コールバックはsignalに
+
+00:17:43.163 --> 00:17:49.369 align:start position:21% line:-2
+これで関数が返す前に
+taskNameが有効になります
+
+00:17:49.703 --> 00:17:53.974 align:start position:27% line:-2
+しかし この方法は
+パフォーマンスに影響します
+
+00:17:54.341 --> 00:18:00.547 align:start position:25% line:-2
+非同期でセマフォを使う時
+問題が生じる可能性があります
+

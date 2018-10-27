@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.276 --> 00:19:00.706 A:middle
+That's perfect marks for this
+
+00:19:00.706 --> 00:19:01.106 A:middle
+kind of thing.
+
+00:19:01.246 --> 00:19:03.816 A:middle
+So I want to stress this again,
+
+00:19:03.816 --> 00:19:05.496 A:middle
+the reason why it's linear is
+
+00:19:05.496 --> 00:19:06.306 A:middle
+because there aren't any
+
+00:19:06.306 --> 00:19:07.546 A:middle
+dependencies between these
+
+00:19:07.546 --> 00:19:07.886 A:middle
+pieces.
+
+00:19:08.516 --> 00:19:09.596 A:middle
+If you do have a dependency,
+
+00:19:10.066 --> 00:19:11.846 A:middle
+then it will tie those blocks of
+
+00:19:11.846 --> 00:19:14.106 A:middle
+equations together and that will
+
+00:19:14.106 --> 00:19:15.996 A:middle
+be somewhat more, you know, more
+
+00:19:15.996 --> 00:19:18.096 A:middle
+computation to deal with but
+
+00:19:18.566 --> 00:19:19.876 A:middle
+that's only if you use it.
+
+00:19:20.396 --> 00:19:21.456 A:middle
+And of course if you do have
+
+00:19:21.456 --> 00:19:22.236 A:middle
+something like that, you know,
+
+00:19:22.236 --> 00:19:23.446 A:middle
+if you're doing it by hand of
+
+00:19:23.446 --> 00:19:24.246 A:middle
+course it's going to be a little
+
+00:19:24.246 --> 00:19:25.396 A:middle
+bit more expensive that's what
+
+00:19:25.396 --> 00:19:25.776 A:middle
+you expect.
+
+00:19:26.006 --> 00:19:26.986 A:middle
+You're doing something more
+
+00:19:26.986 --> 00:19:27.446 A:middle
+complicated.
+
+00:19:27.546 --> 00:19:29.626 A:middle
+So it's kind of this usual thing
+
+00:19:29.626 --> 00:19:31.456 A:middle
+that we often aim for in Cocoa,
+
+00:19:31.456 --> 00:19:32.626 A:middle
+which is that the simple things
+
+00:19:32.626 --> 00:19:34.286 A:middle
+are simple and the complex
+
+00:19:34.286 --> 00:19:34.976 A:middle
+things are possible.
+
+00:19:35.306 --> 00:19:36.476 A:middle
+In this case it's more like they
+
+00:19:36.476 --> 00:19:37.176 A:middle
+cost a little more.
+
+00:19:37.596 --> 00:19:38.986 A:middle
+But you're not paying for it if
+
+00:19:38.986 --> 00:19:41.296 A:middle
+you're not using it, which is
+
+00:19:41.296 --> 00:19:43.036 A:middle
+actually the right way to think
+
+00:19:43.036 --> 00:19:44.716 A:middle
+of the whole engine in terms of
+
+00:19:44.716 --> 00:19:46.726 A:middle
+intuition again, you can think
+
+00:19:46.726 --> 00:19:49.206 A:middle
+of it as a cache for layout and
+
+00:19:49.206 --> 00:19:50.446 A:middle
+as a dependency tracker.
+
+00:19:51.296 --> 00:19:52.736 A:middle
+It's very, very targeted.
+
+00:19:52.776 --> 00:19:54.396 A:middle
+It understands which constraints
+
+00:19:54.396 --> 00:19:55.896 A:middle
+affect which views, and when you
+
+00:19:55.896 --> 00:19:58.346 A:middle
+change things it just updates
+
+00:19:58.346 --> 00:19:59.526 A:middle
+exactly the things that are
+
+00:19:59.526 --> 00:19:59.866 A:middle
+needed.
+

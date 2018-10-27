@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.086 --> 00:20:01.076 A:middle
+your team, or your continuous
+
+00:20:01.576 --> 00:20:03.496 A:middle
+integration infrastructure, so
+
+00:20:03.496 --> 00:20:04.676 A:middle
+that you get dependable build
+
+00:20:04.676 --> 00:20:05.896 A:middle
+results, and you can
+
+00:20:05.896 --> 00:20:07.436 A:middle
+deliberately choose when you
+
+00:20:07.436 --> 00:20:10.976 A:middle
+want to update a dependency.
+
+00:20:11.046 --> 00:20:12.536 A:middle
+You do so by running Swift
+
+00:20:12.536 --> 00:20:13.716 A:middle
+Package Update, when you're
+
+00:20:13.716 --> 00:20:14.406 A:middle
+ready to update.
+
+00:20:15.366 --> 00:20:17.466 A:middle
+Note also, that this is your
+
+00:20:17.466 --> 00:20:19.896 A:middle
+top-level package that contains
+
+00:20:19.936 --> 00:20:21.286 A:middle
+package.resolved.
+
+00:20:22.176 --> 00:20:23.126 A:middle
+If one of the transitive
+
+00:20:23.126 --> 00:20:24.626 A:middle
+dependencies contains a
+
+00:20:24.626 --> 00:20:26.606 A:middle
+package.resolve file, it will be
+
+00:20:26.606 --> 00:20:27.876 A:middle
+ignored for dependency
+
+00:20:27.876 --> 00:20:28.506 A:middle
+resolution.
+
+00:20:30.776 --> 00:20:32.206 A:middle
+Next, let's take a look at
+
+00:20:32.206 --> 00:20:36.796 A:middle
+building your package.
+
+00:20:36.796 --> 00:20:38.446 A:middle
+SwiftPM uses llbuild as its
+
+00:20:38.446 --> 00:20:39.846 A:middle
+underlying build engine.
+
+00:20:40.526 --> 00:20:42.146 A:middle
+llbuild is a set of libraries
+
+00:20:42.146 --> 00:20:43.156 A:middle
+for building build systems.
+
+00:20:43.726 --> 00:20:45.146 A:middle
+And it's built around a general
+
+00:20:45.146 --> 00:20:47.176 A:middle
+purpose and reusable build
+
+00:20:47.176 --> 00:20:47.546 A:middle
+engine.
+
+00:20:47.956 --> 00:20:49.836 A:middle
+This provides us with ability to
+
+00:20:49.836 --> 00:20:51.396 A:middle
+do fast as well as correct
+
+00:20:51.396 --> 00:20:52.206 A:middle
+incremental builds.
+
+00:20:53.056 --> 00:20:54.926 A:middle
+And is also used by Xcode's new
+
+00:20:54.926 --> 00:20:55.536 A:middle
+build system.
+
+00:20:56.096 --> 00:20:59.606 A:middle
+It is also the part of the Swift
+
+00:20:59.606 --> 00:21:00.606 A:middle
+open source project.
+

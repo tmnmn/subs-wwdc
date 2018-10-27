@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.816 --> 00:36:00.826 A:middle
+What about reload data?
+
+00:36:00.826 --> 00:36:02.466 A:middle
+And I know Mohammed said we
+
+00:36:02.466 --> 00:36:03.396 A:middle
+could just hit that and we're
+
+00:36:03.396 --> 00:36:04.676 A:middle
+done, and everybody laughed so
+
+00:36:04.676 --> 00:36:05.586 A:middle
+I'm pretty sure I yelled and
+
+00:36:05.586 --> 00:36:07.456 A:middle
+that's the case, but the thing
+
+00:36:07.456 --> 00:36:08.606 A:middle
+about reloaded data is you don't
+
+00:36:08.606 --> 00:36:09.926 A:middle
+get those great animations, and
+
+00:36:09.926 --> 00:36:11.236 A:middle
+this is really a sledge hammer
+
+00:36:11.236 --> 00:36:11.826 A:middle
+approach.
+
+00:36:12.516 --> 00:36:13.816 A:middle
+So, and we really prefer the
+
+00:36:13.816 --> 00:36:15.286 A:middle
+apps to be lively and animated
+
+00:36:15.286 --> 00:36:16.146 A:middle
+and feel great for our
+
+00:36:16.146 --> 00:36:16.686 A:middle
+customers.
+
+00:36:16.686 --> 00:36:19.036 A:middle
+So, and this is used in special
+
+00:36:19.036 --> 00:36:19.496 A:middle
+cases.
+
+00:36:20.356 --> 00:36:21.576 A:middle
+Okay, Mohammed, let's switch
+
+00:36:21.576 --> 00:36:23.416 A:middle
+back over real quick and see if
+
+00:36:23.416 --> 00:36:24.536 A:middle
+we can get this fixed in code
+
+00:36:24.536 --> 00:36:26.046 A:middle
+and save that totally cool
+
+00:36:26.566 --> 00:36:27.236 A:middle
+update animation.
+
+00:36:27.676 --> 00:36:28.546 A:middle
+&gt;&gt; All right, time to redeem
+
+00:36:28.546 --> 00:36:29.666 A:middle
+myself.
+
+00:36:29.666 --> 00:36:29.766 A:middle
+&gt;&gt; Yes.
+
+00:36:29.766 --> 00:36:32.066 A:middle
+&gt;&gt; So let's use the guidelines
+
+00:36:32.066 --> 00:36:33.446 A:middle
+that Steve just shared with us
+
+00:36:33.446 --> 00:36:34.966 A:middle
+to fix our update animation.
+
+00:36:35.156 --> 00:36:36.756 A:middle
+So let's remove our existing
+
+00:36:36.756 --> 00:36:37.556 A:middle
+implementation here.
+
+00:36:37.746 --> 00:36:40.456 A:middle
+And if you recall, our update
+
+00:36:40.456 --> 00:36:44.066 A:middle
+consisted of a reload, a delete
+
+00:36:44.066 --> 00:36:46.916 A:middle
+and a move, and our reload and
+
+00:36:46.916 --> 00:36:48.876 A:middle
+the move were at the same index
+
+00:36:48.876 --> 00:36:49.086 A:middle
+path.
+
+00:36:49.296 --> 00:36:50.386 A:middle
+They started at the same one.
+
+00:36:50.386 --> 00:36:51.286 A:middle
+So that's really where our
+
+00:36:51.286 --> 00:36:52.326 A:middle
+conflict is.
+
+00:36:52.796 --> 00:36:54.316 A:middle
+So we'll need to start out by
+
+00:36:54.436 --> 00:36:55.396 A:middle
+separating those two.
+
+00:36:55.956 --> 00:36:57.926 A:middle
+So let's take our reload out
+
+00:36:57.926 --> 00:36:59.706 A:middle
+into its own call to perform
+
+00:36:59.706 --> 00:37:03.546 A:middle
+batch updates, and here I'm just
+

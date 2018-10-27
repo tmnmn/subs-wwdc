@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:02.406 --> 00:04:03.706 A:middle
+In an early prototype of the
+
+00:04:03.846 --> 00:04:05.476 A:middle
+app, we had a method in our view
+
+00:04:05.476 --> 00:04:06.946 A:middle
+controller that was doing all of
+
+00:04:06.946 --> 00:04:09.226 A:middle
+this in a single place, and it
+
+00:04:09.226 --> 00:04:10.036 A:middle
+looked like this.
+
+00:04:12.356 --> 00:04:13.906 A:middle
+The method takes a parameter
+
+00:04:13.906 --> 00:04:15.786 A:middle
+with the user's location and
+
+00:04:17.096 --> 00:04:19.416 A:middle
+uses that to construct a URL for
+
+00:04:19.416 --> 00:04:21.386 A:middle
+a service API endpoint with a
+
+00:04:21.386 --> 00:04:23.026 A:middle
+location as query parameters.
+
+00:04:25.856 --> 00:04:27.476 A:middle
+Then it uses Foundation's
+
+00:04:27.476 --> 00:04:29.906 A:middle
+URLSession APIs to make a data
+
+00:04:29.906 --> 00:04:32.076 A:middle
+task for a get request to that
+
+00:04:32.076 --> 00:04:32.356 A:middle
+URL.
+
+00:04:34.616 --> 00:04:37.226 A:middle
+Then the server responds, it
+
+00:04:37.226 --> 00:04:40.106 A:middle
+would unwrap the data, decode it
+
+00:04:40.106 --> 00:04:41.476 A:middle
+using foundation's JSONDecoder
+
+00:04:41.476 --> 00:04:44.146 A:middle
+API, into an array of point of
+
+00:04:44.146 --> 00:04:45.796 A:middle
+interest values, which is a
+
+00:04:45.796 --> 00:04:47.286 A:middle
+struct that I declared elsewhere
+
+00:04:47.286 --> 00:04:49.036 A:middle
+and conforms the decodable
+
+00:04:49.036 --> 00:04:49.536 A:middle
+protocol.
+
+00:04:49.536 --> 00:04:52.936 A:middle
+And it stores that into a
+
+00:04:52.936 --> 00:04:54.386 A:middle
+property to drive a table view
+
+00:04:54.386 --> 00:04:55.616 A:middle
+[inaudible] implementation,
+
+00:04:56.086 --> 00:04:56.976 A:middle
+putting it onto the screen.
+

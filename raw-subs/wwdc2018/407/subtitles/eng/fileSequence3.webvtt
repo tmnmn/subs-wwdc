@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.966 --> 00:03:00.516 A:middle
+introduced any unwanted side
+
+00:03:00.516 --> 00:03:02.046 A:middle
+effects, and we repeat as
+
+00:03:02.046 --> 00:03:03.546 A:middle
+necessary until we've completely
+
+00:03:03.546 --> 00:03:04.186 A:middle
+solved the bug.
+
+00:03:05.736 --> 00:03:07.686 A:middle
+I've fixed performance bugs in
+
+00:03:07.686 --> 00:03:08.996 A:middle
+just the same way.
+
+00:03:10.086 --> 00:03:11.136 A:middle
+Except instead of using a
+
+00:03:11.136 --> 00:03:13.766 A:middle
+debugger, I use a profiler, and
+
+00:03:13.826 --> 00:03:15.666 A:middle
+a profiler is just a fancy tool
+
+00:03:15.666 --> 00:03:16.246 A:middle
+for measuring.
+
+00:03:16.996 --> 00:03:18.666 A:middle
+I find some set of steps to
+
+00:03:18.666 --> 00:03:20.806 A:middle
+reproduce the program being
+
+00:03:20.806 --> 00:03:21.216 A:middle
+slow.
+
+00:03:21.966 --> 00:03:23.386 A:middle
+And I run those steps with a
+
+00:03:23.386 --> 00:03:25.106 A:middle
+profiler attached, so that I can
+
+00:03:25.106 --> 00:03:26.606 A:middle
+get an insight into what my code
+
+00:03:26.606 --> 00:03:27.656 A:middle
+is doing while it's running
+
+00:03:27.656 --> 00:03:28.106 A:middle
+slowly.
+
+00:03:29.226 --> 00:03:31.016 A:middle
+I combine that knowledge with
+
+00:03:31.016 --> 00:03:32.556 A:middle
+what my program has to do to
+
+00:03:32.556 --> 00:03:34.206 A:middle
+accomplish the task at hand, and
+
+00:03:34.266 --> 00:03:36.056 A:middle
+I find steps that are happening
+
+00:03:36.236 --> 00:03:37.606 A:middle
+and remove them, because the
+
+00:03:37.606 --> 00:03:39.926 A:middle
+primary way you make your code
+
+00:03:39.926 --> 00:03:42.286 A:middle
+faster is you remove redundant
+
+00:03:42.286 --> 00:03:43.756 A:middle
+steps from whatever is that is
+
+00:03:43.756 --> 00:03:44.326 A:middle
+calculating.
+
+00:03:45.736 --> 00:03:47.456 A:middle
+Now, I make the modifications to
+
+00:03:47.456 --> 00:03:49.136 A:middle
+the source code, and I repeat
+
+00:03:49.136 --> 00:03:50.486 A:middle
+and measure as necessary until
+
+00:03:50.486 --> 00:03:52.886 A:middle
+I'm happy with the total result.
+
+00:03:54.936 --> 00:03:56.186 A:middle
+When I'm doing this type of
+
+00:03:56.186 --> 00:03:57.666 A:middle
+performance work, I often find
+
+00:03:57.666 --> 00:03:59.486 A:middle
+myself in one of a handful of
+
+00:03:59.486 --> 00:04:00.176 A:middle
+scenarios.
+

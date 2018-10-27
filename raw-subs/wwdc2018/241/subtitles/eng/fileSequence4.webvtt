@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.216 --> 00:04:00.966 A:middle
+going to be a CALayer object.
+
+00:04:01.556 --> 00:04:03.286 A:middle
+How would we go about
+
+00:04:03.286 --> 00:04:05.336 A:middle
+implementing drag for this?
+
+00:04:05.896 --> 00:04:08.366 A:middle
+It might look something like
+
+00:04:08.366 --> 00:04:09.000 A:middle
+this.
+
+00:04:10.346 --> 00:04:11.886 A:middle
+Note that because layers aren't
+
+00:04:11.886 --> 00:04:13.356 A:middle
+views they can't host
+
+00:04:13.356 --> 00:04:14.176 A:middle
+interactions.
+
+00:04:14.176 --> 00:04:16.106 A:middle
+So, the bar graph itself has the
+
+00:04:16.106 --> 00:04:17.176 A:middle
+interaction installed.
+
+00:04:17.716 --> 00:04:19.286 A:middle
+And in this itemsForBeginning
+
+00:04:19.286 --> 00:04:22.636 A:middle
+session callback, depending on
+
+00:04:22.636 --> 00:04:24.926 A:middle
+the bar that is hit tested, we
+
+00:04:24.926 --> 00:04:27.376 A:middle
+return different data in the
+
+00:04:27.376 --> 00:04:28.086 A:middle
+drag item.
+
+00:04:29.156 --> 00:04:30.266 A:middle
+Note that even though I only
+
+00:04:30.266 --> 00:04:32.086 A:middle
+have one drag interaction I am
+
+00:04:32.086 --> 00:04:33.716 A:middle
+using it to support multiple
+
+00:04:33.716 --> 00:04:34.816 A:middle
+logical drags.
+
+00:04:34.816 --> 00:04:36.376 A:middle
+This is a totally supported
+
+00:04:36.376 --> 00:04:37.836 A:middle
+approach and it is an example of
+
+00:04:37.836 --> 00:04:39.466 A:middle
+how powerful, in general, the
+
+00:04:39.466 --> 00:04:41.116 A:middle
+base Drag and Drop API's are.
+
+00:04:41.726 --> 00:04:44.356 A:middle
+Now, how do you make this
+
+00:04:44.356 --> 00:04:44.946 A:middle
+accessible?
+
+00:04:45.086 --> 00:04:46.986 A:middle
+A good approach to making a
+
+00:04:46.986 --> 00:04:49.596 A:middle
+graph like this accessible is to
+
+00:04:49.596 --> 00:04:51.836 A:middle
+expose each bar as an
+
+00:04:51.836 --> 00:04:54.076 A:middle
+Accessibility element, which
+
+00:04:54.076 --> 00:04:54.616 A:middle
+I've done here.
+
+00:04:55.676 --> 00:04:57.346 A:middle
+Note that what I'm doing here is
+
+00:04:57.346 --> 00:04:58.946 A:middle
+providing data about the logical
+
+00:04:58.946 --> 00:05:01.096 A:middle
+structure of my app's content to
+

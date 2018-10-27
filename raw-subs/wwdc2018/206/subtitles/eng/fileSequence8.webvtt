@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.136 --> 00:08:00.316 A:middle
+You can still launch your app
+
+00:08:00.556 --> 00:08:01.256 A:middle
+from an interactive
+
+00:08:01.256 --> 00:08:02.826 A:middle
+notification, if you need to.
+
+00:08:02.926 --> 00:08:03.906 A:middle
+You just have to do it
+
+00:08:03.906 --> 00:08:05.376 A:middle
+explicitly by calling a new
+
+00:08:05.596 --> 00:08:07.546 A:middle
+method, performed notification
+
+00:08:07.546 --> 00:08:09.206 A:middle
+default action.
+
+00:08:11.416 --> 00:08:13.216 A:middle
+Similarly, if you include a
+
+00:08:13.216 --> 00:08:14.646 A:middle
+button in your notification
+
+00:08:14.646 --> 00:08:16.126 A:middle
+interface that should dismiss
+
+00:08:16.126 --> 00:08:17.356 A:middle
+the notification after taking
+
+00:08:17.406 --> 00:08:19.536 A:middle
+action, as in this case where
+
+00:08:19.536 --> 00:08:20.836 A:middle
+tapping the extend button should
+
+00:08:20.836 --> 00:08:22.216 A:middle
+both commit the changes to my
+
+00:08:22.216 --> 00:08:23.716 A:middle
+rental time and dismiss the
+
+00:08:23.716 --> 00:08:25.736 A:middle
+notification, you do this by
+
+00:08:25.816 --> 00:08:27.576 A:middle
+calling perform dismiss action
+
+00:08:27.826 --> 00:08:29.216 A:middle
+at the end of the IB action
+
+00:08:29.216 --> 00:08:31.466 A:middle
+function associated with the
+
+00:08:33.736 --> 00:08:33.905 A:middle
+button.
+
+00:08:34.046 --> 00:08:35.366 A:middle
+You could also process the
+
+00:08:35.366 --> 00:08:36.736 A:middle
+changes made in the body of the
+
+00:08:36.736 --> 00:08:38.186 A:middle
+notification using a standard
+
+00:08:38.186 --> 00:08:38.916 A:middle
+action button.
+
+00:08:39.106 --> 00:08:40.535 A:middle
+Since action buttons always
+
+00:08:40.576 --> 00:08:41.676 A:middle
+dismiss the notification.
+
+00:08:42.246 --> 00:08:44.966 A:middle
+Wait, you're probably thinking,
+
+00:08:45.446 --> 00:08:46.616 A:middle
+action buttons are shared
+
+00:08:46.616 --> 00:08:47.846 A:middle
+between all the notification
+
+00:08:47.846 --> 00:08:48.656 A:middle
+interfaces.
+
+00:08:48.656 --> 00:08:49.816 A:middle
+And some of those buttons
+
+00:08:49.816 --> 00:08:51.076 A:middle
+wouldn't make sense if the
+
+00:08:51.076 --> 00:08:52.196 A:middle
+interactive elements weren't
+
+00:08:52.196 --> 00:08:52.526 A:middle
+there.
+
+00:08:53.526 --> 00:08:55.916 A:middle
+Well, new in WatchOS 5, you can
+
+00:08:55.916 --> 00:08:57.426 A:middle
+now adjust the action buttons
+
+00:08:57.426 --> 00:08:58.756 A:middle
+that are shown at runtime.
+
+00:08:59.276 --> 00:09:02.316 A:middle
+There's a new notification
+

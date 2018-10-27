@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.086 --> 00:08:00.236 A:middle
+textures can be created.
+
+00:08:02.636 --> 00:08:03.906 A:middle
+Because shareable textures
+
+00:08:03.996 --> 00:08:06.316 A:middle
+allows us now to pass complex
+
+00:08:06.366 --> 00:08:08.296 A:middle
+textures between processes, we
+
+00:08:08.296 --> 00:08:10.676 A:middle
+will create 2D array texture
+
+00:08:10.676 --> 00:08:12.006 A:middle
+that we will pass to VR
+
+00:08:12.206 --> 00:08:12.936 A:middle
+compositor.
+
+00:08:13.216 --> 00:08:16.116 A:middle
+As you can see, to do that, we
+
+00:08:16.226 --> 00:08:18.126 A:middle
+use new methods, new shared
+
+00:08:18.206 --> 00:08:19.426 A:middle
+texture with this creator.
+
+00:08:19.976 --> 00:08:22.986 A:middle
+And while doing that, you need
+
+00:08:23.056 --> 00:08:24.926 A:middle
+to remember to use private
+
+00:08:25.096 --> 00:08:27.036 A:middle
+storage mode, as this texture
+
+00:08:27.036 --> 00:08:29.286 A:middle
+can be only accessed by the GPU
+
+00:08:29.706 --> 00:08:33.126 A:middle
+on which it was created.
+
+00:08:33.876 --> 00:08:35.996 A:middle
+Now, we see a code snippet
+
+00:08:36.456 --> 00:08:38.546 A:middle
+showing us how our VR
+
+00:08:38.546 --> 00:08:41.416 A:middle
+application would send IOSurface
+
+00:08:41.556 --> 00:08:44.186 A:middle
+to VR compositor in the past.
+
+00:08:44.186 --> 00:08:45.526 A:middle
+We will now go through this code
+
+00:08:45.526 --> 00:08:47.656 A:middle
+snippet, and see what changes
+
+00:08:47.746 --> 00:08:50.676 A:middle
+needs to be applied to switch
+
+00:08:50.676 --> 00:08:52.656 A:middle
+from using IOSurfaces to shared
+
+00:08:52.706 --> 00:08:53.516 A:middle
+Metal textures.
+
+00:08:54.976 --> 00:08:56.166 A:middle
+So we don't need those two
+
+00:08:56.166 --> 00:08:59.366 A:middle
+IOSurfaces anymore, and those
+
+00:08:59.426 --> 00:09:01.006 A:middle
+two textures that were backed by
+

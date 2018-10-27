@@ -1,0 +1,68 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:57.064 --> 00:30:01.768 align:start position:21% line:-2
+メインキューを解放し UI更新と
+ユーザ入力の処理をさせます
+
+00:30:02.336 --> 00:30:05.405 align:start position:30% line:-2
+ベン
+どんな作業が減らせる？
+
+00:30:06.039 --> 00:30:08.308 align:start position:27% line:-1
+予想の範囲内では通常の作業
+
+00:30:08.575 --> 00:30:11.278 align:start position:25% line:-2
+ネットワークや
+ファイルシステムへのアクセス
+
+00:30:11.378 --> 00:30:13.347 align:start position:36% line:-2
+メインスレッドで
+実行すべきでない
+
+00:30:14.047 --> 00:30:18.085 align:start position:25% line:-2
+意外なところでは画像の描画や
+テキストのサイズ設定
+
+00:30:18.819 --> 00:30:23.924 align:start position:7% line:-2
+UIGraphicsImageRendererと
+その分散型文字列は安全に―
+
+00:30:24.024 --> 00:30:25.893 align:start position:27% line:-2
+バックグラウンドスレッドで
+使えます
+
+00:30:25.993 --> 00:30:31.732 align:start position:25% line:-2
+複雑な計算を一部
+メインキューから移動できます
+
+00:30:33.233 --> 00:30:37.571 align:start position:32% line:-2
+すばらしいヒントだ
+思いもよらなかったよ
+
+00:30:38.038 --> 00:30:40.974 align:start position:16% line:-2
+“言われたとおり
+Time Profilerを実行し―”
+
+00:30:41.074 --> 00:30:46.914 align:start position:23% line:-2
+“先読みをやり メインキューの
+作業を減らしたのに―”
+
+00:30:47.548 --> 00:30:49.550 align:start position:34% line:-1
+“まだ動作が遅い”
+
+00:30:49.850 --> 00:30:52.152 align:start position:27% line:-1
+“問題は他にあるのでは？”
+
+00:30:52.853 --> 00:30:55.756 align:start position:32% line:-2
+まだ問題が
+解決していないのかも
+
+00:30:56.223 --> 00:30:58.859 align:start position:32% line:-2
+可能性としては
+計算を最適化しても―
+
+00:30:59.359 --> 00:31:02.696 align:start position:30% line:-2
+グラフィックシステムに
+まだ問題が
+

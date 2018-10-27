@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.926 --> 00:44:02.936 A:middle
+I will be talking about render
+
+00:44:02.936 --> 00:44:04.626 A:middle
+command encoders which provides
+
+00:44:04.626 --> 00:44:06.656 A:middle
+APIs for typical graphics,
+
+00:44:06.816 --> 00:44:08.216 A:middle
+operations like setting your
+
+00:44:08.216 --> 00:44:10.186 A:middle
+pipelines, texture buffer
+
+00:44:10.186 --> 00:44:11.696 A:middle
+objects, and also issuing the
+
+00:44:11.696 --> 00:44:12.276 A:middle
+draw calls.
+
+00:44:12.786 --> 00:44:16.816 A:middle
+So when creating your encoder
+
+00:44:16.966 --> 00:44:18.336 A:middle
+you need to first set the render
+
+00:44:18.336 --> 00:44:18.906 A:middle
+targets.
+
+00:44:18.936 --> 00:44:20.756 A:middle
+So here is a render pass
+
+00:44:20.756 --> 00:44:22.396 A:middle
+descriptor where you will set
+
+00:44:22.396 --> 00:44:24.746 A:middle
+the render targets and then ask
+
+00:44:24.746 --> 00:44:26.586 A:middle
+the command buffer to create a
+
+00:44:26.586 --> 00:44:28.256 A:middle
+new encoder for this render
+
+00:44:28.256 --> 00:44:28.706 A:middle
+pass.
+
+00:44:29.366 --> 00:44:31.186 A:middle
+And now you can use this encoder
+
+00:44:31.186 --> 00:44:33.256 A:middle
+to encode your draw calls.
+
+00:44:35.136 --> 00:44:37.946 A:middle
+One key change from OpenGL is in
+
+00:44:38.106 --> 00:44:40.666 A:middle
+Metal once the encoder is
+
+00:44:40.666 --> 00:44:42.736 A:middle
+created you cannot change its
+
+00:44:42.736 --> 00:44:45.606 A:middle
+render targets because GPU
+
+00:44:45.696 --> 00:44:47.646 A:middle
+performs much better when it
+
+00:44:47.646 --> 00:44:49.776 A:middle
+sees a largest span of draw
+
+00:44:49.776 --> 00:44:51.436 A:middle
+calls which are rendering to the
+
+00:44:51.436 --> 00:44:53.106 A:middle
+same set of render targets.
+
+00:44:54.046 --> 00:44:56.906 A:middle
+So Metal API reflects this by
+
+00:44:57.246 --> 00:44:59.876 A:middle
+giving an explicit start and end
+
+00:44:59.956 --> 00:45:00.906 A:middle
+to a render pass.
+

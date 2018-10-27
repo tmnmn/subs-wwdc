@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.986 --> 00:05:01.626 A:middle
+You'll also notice the blue bar.
+
+00:05:02.496 --> 00:05:04.396 A:middle
+The blue bar is the threshold
+
+00:05:04.396 --> 00:05:05.416 A:middle
+slider, so you can see I can
+
+00:05:05.416 --> 00:05:06.266 A:middle
+move it.
+
+00:05:07.596 --> 00:05:10.026 A:middle
+So what I'm going to do now is
+
+00:05:10.516 --> 00:05:11.386 A:middle
+add some more noise to the
+
+00:05:11.386 --> 00:05:11.746 A:middle
+signal.
+
+00:05:12.706 --> 00:05:13.656 A:middle
+Actually, let's add quite a bit
+
+00:05:13.656 --> 00:05:13.976 A:middle
+of noise.
+
+00:05:18.466 --> 00:05:19.526 A:middle
+So you can see the signal that
+
+00:05:19.526 --> 00:05:21.286 A:middle
+I'm still interested in is
+
+00:05:21.426 --> 00:05:22.896 A:middle
+represented by the spikes on the
+
+00:05:22.896 --> 00:05:24.896 A:middle
+left or another way of looking
+
+00:05:24.896 --> 00:05:26.036 A:middle
+at it is the spikes with the
+
+00:05:26.106 --> 00:05:28.326 A:middle
+tallest height, and what we've
+
+00:05:28.326 --> 00:05:29.366 A:middle
+added, the type of noise we're
+
+00:05:29.366 --> 00:05:30.406 A:middle
+adding to this, is background
+
+00:05:30.406 --> 00:05:30.726 A:middle
+noise.
+
+00:05:31.406 --> 00:05:32.176 A:middle
+So it's kind of evenly
+
+00:05:32.176 --> 00:05:34.026 A:middle
+distributed spikes everywhere,
+
+00:05:34.026 --> 00:05:36.746 A:middle
+but they're low-level spikes.
+
+00:05:37.126 --> 00:05:38.876 A:middle
+So now I'm going to remove this
+
+00:05:38.876 --> 00:05:40.276 A:middle
+noise, and the way I'm going to
+
+00:05:40.276 --> 00:05:41.196 A:middle
+do this is I'm going to move
+
+00:05:41.196 --> 00:05:42.436 A:middle
+this threshold slightly higher.
+
+00:05:44.146 --> 00:05:45.956 A:middle
+As I do this, what's happening
+
+00:05:45.956 --> 00:05:47.816 A:middle
+is, behind the scenes, is we're
+
+00:05:47.816 --> 00:05:50.246 A:middle
+identifying any frequency
+
+00:05:50.246 --> 00:05:51.146 A:middle
+component less than this
+
+00:05:51.146 --> 00:05:52.466 A:middle
+threshold and removing it.
+
+00:05:52.646 --> 00:05:54.166 A:middle
+We're saying effectively if
+
+00:05:54.166 --> 00:05:55.876 A:middle
+there is any spike with a height
+
+00:05:55.876 --> 00:05:57.056 A:middle
+less than this blue bar, we're
+
+00:05:57.416 --> 00:05:58.586 A:middle
+going to pretend it's noise and
+
+00:05:58.586 --> 00:05:59.726 A:middle
+remove it.
+

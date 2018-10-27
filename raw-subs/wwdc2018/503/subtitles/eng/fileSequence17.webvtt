@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:00.036 --> 00:17:01.666 A:middle
+Know that if you work with depth
+
+00:17:01.746 --> 00:17:05.246 A:middle
+that the depth error goes with
+
+00:17:05.246 --> 00:17:05.935 A:middle
+the depth squared.
+
+00:17:06.036 --> 00:17:08.096 A:middle
+That means that an object at 1
+
+00:17:08.096 --> 00:17:09.685 A:middle
+meter would have four times the
+
+00:17:09.685 --> 00:17:11.826 A:middle
+depth accuracy as an object at 2
+
+00:17:11.826 --> 00:17:11.976 A:middle
+meters.
+
+00:17:16.286 --> 00:17:18.496 A:middle
+We have two streams, video and
+
+00:17:18.496 --> 00:17:19.425 A:middle
+depth, and they don't
+
+00:17:19.425 --> 00:17:20.596 A:middle
+necessarily share the same
+
+00:17:20.596 --> 00:17:21.136 A:middle
+resolution.
+
+00:17:21.646 --> 00:17:23.006 A:middle
+The native resolution of the
+
+00:17:23.006 --> 00:17:24.596 A:middle
+TrueDepth's camera is VGA or
+
+00:17:24.596 --> 00:17:27.736 A:middle
+640x480 and that's what you'll
+
+00:17:27.736 --> 00:17:30.176 A:middle
+get if you choose a video preset
+
+00:17:30.656 --> 00:17:32.236 A:middle
+of an aspect racial of 4:3.
+
+00:17:33.226 --> 00:17:35.516 A:middle
+If however you choose an aspect
+
+00:17:35.516 --> 00:17:37.816 A:middle
+ratio of 16x9 you'll get a depth
+
+00:17:37.816 --> 00:17:40.246 A:middle
+map of 640x360.
+
+00:17:40.966 --> 00:17:42.916 A:middle
+In both cases the depth map will
+
+00:17:42.916 --> 00:17:44.856 A:middle
+cover the entire field of view
+
+00:17:45.146 --> 00:17:46.146 A:middle
+of the RGB image.
+
+00:17:46.666 --> 00:17:49.466 A:middle
+Now we are talking about video
+
+00:17:49.466 --> 00:17:51.116 A:middle
+applications, so we are
+
+00:17:51.116 --> 00:17:52.946 A:middle
+crunching a lot of numbers very,
+
+00:17:52.946 --> 00:17:54.956 A:middle
+very fast and that could create
+
+00:17:55.306 --> 00:17:57.266 A:middle
+system pressure over time.
+
+00:17:57.936 --> 00:17:59.696 A:middle
+So you can test your application
+
+00:17:59.696 --> 00:18:01.306 A:middle
+and gauge the system pressure
+

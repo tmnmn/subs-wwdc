@@ -1,0 +1,138 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:57.796 --> 00:10:00.536 A:middle
+collection doesn't have a second
+
+00:10:00.536 --> 00:10:00.866 A:middle
+element.
+
+00:10:01.486 --> 00:10:04.166 A:middle
+Oh, and so now we can assume
+
+00:10:04.166 --> 00:10:05.486 A:middle
+that our collection has one
+
+00:10:05.486 --> 00:10:06.156 A:middle
+element in it.
+
+00:10:06.596 --> 00:10:09.356 A:middle
+We can use index after to get
+
+00:10:09.356 --> 00:10:10.666 A:middle
+the second element or the second
+
+00:10:10.666 --> 00:10:12.316 A:middle
+index, but we need to make sure
+
+00:10:12.316 --> 00:10:14.286 A:middle
+that that index is valid, and
+
+00:10:14.286 --> 00:10:15.206 A:middle
+let's see this visually.
+
+00:10:15.326 --> 00:10:16.506 A:middle
+We advance after, but if the
+
+00:10:16.506 --> 00:10:17.646 A:middle
+collection only had one element
+
+00:10:17.646 --> 00:10:18.856 A:middle
+in it, we have now actually
+
+00:10:18.856 --> 00:10:19.966 A:middle
+produced an invalid index, and
+
+00:10:19.966 --> 00:10:20.886 A:middle
+if we tried to subscript with
+
+00:10:20.886 --> 00:10:22.076 A:middle
+that index, we'd get that fatal
+
+00:10:22.076 --> 00:10:23.056 A:middle
+error that we saw just a moment
+
+00:10:23.056 --> 00:10:23.246 A:middle
+ago.
+
+00:10:23.696 --> 00:10:24.786 A:middle
+So we check for it to be valid,
+
+00:10:24.786 --> 00:10:25.796 A:middle
+and this is very similar to the
+
+00:10:25.796 --> 00:10:26.066 A:middle
+empty [inaudible].
+
+00:10:26.296 --> 00:10:27.756 A:middle
+We just make sure that our index
+
+00:10:28.096 --> 00:10:29.376 A:middle
+is not equal to the end index
+
+00:10:29.516 --> 00:10:30.096 A:middle
+returning nil.
+
+00:10:30.626 --> 00:10:31.786 A:middle
+Again, because two-element
+
+00:10:31.786 --> 00:10:33.276 A:middle
+collections don't have a, or
+
+00:10:33.276 --> 00:10:34.336 A:middle
+one-element collections don't
+
+00:10:34.336 --> 00:10:35.196 A:middle
+have a second element.
+
+00:10:35.996 --> 00:10:36.956 A:middle
+At this point, we have all the
+
+00:10:36.956 --> 00:10:38.296 A:middle
+assumptions we need to know that
+
+00:10:38.296 --> 00:10:39.386 A:middle
+our collection has at least two
+
+00:10:39.386 --> 00:10:40.746 A:middle
+elements in it, and so we're
+
+00:10:40.746 --> 00:10:41.696 A:middle
+safe to use the subscript
+
+00:10:41.696 --> 00:10:42.696 A:middle
+operator with that index,
+
+00:10:43.906 --> 00:10:44.856 A:middle
+retrieving the value that we
+
+00:10:44.856 --> 00:10:45.236 A:middle
+desire.
+
+00:10:45.236 --> 00:10:48.736 A:middle
+Now, it turns out, or that looks
+
+00:10:48.736 --> 00:10:50.436 A:middle
+like a lot of code, but it's
+
+00:10:50.506 --> 00:10:51.576 A:middle
+worth pointing out that this
+
+00:10:51.576 --> 00:10:53.016 A:middle
+general purpose index math will
+
+00:10:53.016 --> 00:10:54.546 A:middle
+work with any collection, which
+
+00:10:54.546 --> 00:10:56.266 A:middle
+is pretty awesome, and it turns
+
+00:10:56.266 --> 00:10:57.786 A:middle
+out Swift has a better way to do
+
+00:10:57.786 --> 00:10:58.106 A:middle
+this though.
+
+00:10:58.856 --> 00:11:00.216 A:middle
+There's something called slices,
+

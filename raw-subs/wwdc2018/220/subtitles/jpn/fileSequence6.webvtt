@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.126 --> 00:06:03.463 align:start position:4% line:-2
+“super.updateConstraints”を
+忘れずに呼び出します
+
+00:06:03.564 --> 00:06:07.968 align:start position:18% line:-2
+なぜならこれで
+UIViewの実装が完了するからです
+
+00:06:09.069 --> 00:06:12.673 align:start position:30% line:-1
+以上が基本的な構造です
+
+00:06:12.773 --> 00:06:15.642 align:start position:25% line:-1
+もちろん実際に機能しています
+
+00:06:15.876 --> 00:06:17.711 align:start position:32% line:-1
+ここからは具体的に―
+
+00:06:17.811 --> 00:06:21.548 align:start position:32% line:-2
+パフォーマンスを
+理解していきましょう
+
+00:06:21.915 --> 00:06:24.785 align:start position:23% line:-1
+今 オーバーライドしていたのが
+
+00:06:24.885 --> 00:06:27.287 align:start position:11% line:-2
+“updateConstraints”という
+メソッドです
+
+00:06:28.555 --> 00:06:30.991 align:start position:21% line:-2
+これは Render Loopの
+コンポーネントの１つです
+
+00:06:31.525 --> 00:06:36.830 align:start position:11% line:-2
+Render Loopとは 毎秒120回走る
+潜在力のあるプロセスで
+
+00:06:37.130 --> 00:06:40.968 align:start position:29% line:-2
+コンテンツを各フレームに
+確実に表示させます
+
+00:06:41.535 --> 00:06:44.071 align:start position:36% line:-2
+３つのフェーズで
+構成されています
+
+00:06:44.171 --> 00:06:46.740 align:start position:16% line:-2
+updateConstraints
+Layout Displayの３つです
+
+00:06:47.074 --> 00:06:48.475 align:start position:36% line:-1
+すべてのビューは
+
+00:06:48.575 --> 00:06:51.245 align:start position:14% line:-2
+“updateConstraints”を
+受け取ります
+
+00:06:51.545 --> 00:06:56.150 align:start position:27% line:-2
+そしてウィンドウに向かって
+ビュー階層を上っていきます
+
+00:06:56.550 --> 00:06:59.152 align:start position:25% line:-2
+次にレイアウトのサブビューを
+受け取ります
+
+00:06:59.253 --> 00:07:02.923 align:start position:30% line:-2
+これはウィンドウから
+下へと逆方向に動きます
+

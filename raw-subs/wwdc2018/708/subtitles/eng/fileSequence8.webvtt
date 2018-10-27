@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.476 --> 00:08:00.966 A:middle
+And the first, really, is of
+
+00:08:00.966 --> 00:08:02.606 A:middle
+Core ML in iOS 11.
+
+00:08:03.486 --> 00:08:04.816 A:middle
+Neural networks were stored
+
+00:08:04.816 --> 00:08:07.296 A:middle
+using floating-point 32-bit
+
+00:08:07.506 --> 00:08:07.856 A:middle
+weights.
+
+00:08:08.496 --> 00:08:12.466 A:middle
+In iOS 11.2, we heard your
+
+00:08:12.466 --> 00:08:13.856 A:middle
+feedback and we introduced half
+
+00:08:13.856 --> 00:08:16.006 A:middle
+precision floating-point 16
+
+00:08:16.006 --> 00:08:16.246 A:middle
+weight.
+
+00:08:16.676 --> 00:08:18.986 A:middle
+This gives your app half the
+
+00:08:18.986 --> 00:08:21.126 A:middle
+storage required for the same
+
+00:08:21.126 --> 00:08:21.646 A:middle
+accuracy.
+
+00:08:22.236 --> 00:08:23.756 A:middle
+But this year we wanted to take
+
+00:08:23.756 --> 00:08:25.616 A:middle
+several steps further, and we
+
+00:08:25.616 --> 00:08:27.116 A:middle
+are introducing quantized
+
+00:08:27.116 --> 00:08:27.336 A:middle
+weights.
+
+00:08:28.576 --> 00:08:29.836 A:middle
+With quantized weights we are no
+
+00:08:29.836 --> 00:08:31.526 A:middle
+longer restricted to use either
+
+00:08:31.526 --> 00:08:33.756 A:middle
+Float 32 or Float 16 values.
+
+00:08:34.155 --> 00:08:35.236 A:middle
+But neural networks can be
+
+00:08:35.236 --> 00:08:37.956 A:middle
+encoded using 8 bits, 4 bits,
+
+00:08:38.476 --> 00:08:40.515 A:middle
+any bits all the way down to 1
+
+00:08:41.876 --> 00:08:41.976 A:middle
+bit.
+
+00:08:42.186 --> 00:08:43.876 A:middle
+So let's now see what
+
+00:08:43.876 --> 00:08:45.166 A:middle
+quantization here is.
+
+00:08:46.336 --> 00:08:47.746 A:middle
+Here we are representing a
+
+00:08:47.746 --> 00:08:49.176 A:middle
+subset of the weights of our
+
+00:08:49.176 --> 00:08:49.986 A:middle
+neural networks.
+
+00:08:50.546 --> 00:08:52.186 A:middle
+As we can see, these weights can
+
+00:08:52.186 --> 00:08:54.166 A:middle
+take any value in a continuous
+
+00:08:54.166 --> 00:08:54.486 A:middle
+range.
+
+00:08:55.536 --> 00:08:57.426 A:middle
+This means that in theory, a
+
+00:08:57.426 --> 00:08:58.726 A:middle
+single weight can take an
+
+00:08:58.726 --> 00:09:00.086 A:middle
+infinite number of possible
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:59.296 --> 00:51:00.916 A:middle
+Draw calls were our main
+
+00:51:00.916 --> 00:51:02.586 A:middle
+performance bottleneck, and this
+
+00:51:02.586 --> 00:51:03.836 A:middle
+is actually where Metal really
+
+00:51:03.836 --> 00:51:04.536 A:middle
+helped us out.
+
+00:51:05.516 --> 00:51:07.346 A:middle
+We found Metal to be somewhere
+
+00:51:07.346 --> 00:51:08.606 A:middle
+on the order of 3 to 4 times
+
+00:51:08.606 --> 00:51:10.666 A:middle
+faster than OpenGL for what we
+
+00:51:10.666 --> 00:51:12.876 A:middle
+were doing, and that allowed us
+
+00:51:12.876 --> 00:51:14.206 A:middle
+to ship without doing a lot of
+
+00:51:14.206 --> 00:51:15.386 A:middle
+aggressive work trying to reduce
+
+00:51:15.386 --> 00:51:15.876 A:middle
+draw calls.
+
+00:51:16.186 --> 00:51:17.276 A:middle
+We did stuff to reduce draw
+
+00:51:17.276 --> 00:51:19.116 A:middle
+calls, mostly pulling in cull
+
+00:51:19.116 --> 00:51:20.946 A:middle
+distance on decorative objects
+
+00:51:20.946 --> 00:51:23.236 A:middle
+as well as leveraging the
+
+00:51:23.236 --> 00:51:24.696 A:middle
+hierarchical level of detail
+
+00:51:24.696 --> 00:51:25.236 A:middle
+system.
+
+00:51:27.696 --> 00:51:29.066 A:middle
+So here's an example.
+
+00:51:29.066 --> 00:51:30.656 A:middle
+This is one of those POIs that
+
+00:51:30.656 --> 00:51:31.726 A:middle
+we tracked over time.
+
+00:51:32.176 --> 00:51:33.006 A:middle
+If you're familiar with the
+
+00:51:33.006 --> 00:51:34.216 A:middle
+game, this is looking down on
+
+00:51:34.216 --> 00:51:38.386 A:middle
+Tilted Towers from a cliff and
+
+00:51:38.386 --> 00:51:40.016 A:middle
+was kind of our draw call hot
+
+00:51:40.016 --> 00:51:40.866 A:middle
+spot in the map.
+
+00:51:41.396 --> 00:51:42.686 A:middle
+As you can see, it takes about
+
+00:51:42.686 --> 00:51:45.056 A:middle
+1300 draw calls to render this.
+
+00:51:45.196 --> 00:51:46.476 A:middle
+This is just for the main pass.
+
+00:51:46.476 --> 00:51:47.896 A:middle
+It doesn't include shadows, UI,
+
+00:51:48.776 --> 00:51:50.126 A:middle
+anything else that consumed draw
+
+00:51:50.126 --> 00:51:50.686 A:middle
+call time.
+
+00:51:51.196 --> 00:51:52.606 A:middle
+But Metal's really fast here.
+
+00:51:52.606 --> 00:51:53.766 A:middle
+On an iPhone 8 Plus, we were
+
+00:51:53.766 --> 00:51:55.136 A:middle
+able to chew through that in
+
+00:51:55.136 --> 00:51:56.266 A:middle
+under 5 milliseconds.
+
+00:51:58.456 --> 00:51:59.946 A:middle
+I mentioned hierarchical LOD.
+
+00:51:59.946 --> 00:52:01.446 A:middle
+This is a feature we have in
+

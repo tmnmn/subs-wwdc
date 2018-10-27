@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.386 --> 00:23:01.416 A:middle
+capture time; exist tags, as
+
+00:23:01.416 --> 00:23:04.456 A:middle
+well as embedded metadata such
+
+00:23:04.456 --> 00:23:06.266 A:middle
+as portrait map and portrait
+
+00:23:06.266 --> 00:23:07.086 A:middle
+depth information.
+
+00:23:09.466 --> 00:23:10.866 A:middle
+Core Image handles color
+
+00:23:10.866 --> 00:23:11.786 A:middle
+management very well.
+
+00:23:11.786 --> 00:23:13.086 A:middle
+This is a difficult topic on its
+
+00:23:13.086 --> 00:23:14.496 A:middle
+own that a lot of frameworks
+
+00:23:14.496 --> 00:23:15.226 A:middle
+don't handle.
+
+00:23:16.376 --> 00:23:17.696 A:middle
+Core Image supports many battery
+
+00:23:17.696 --> 00:23:20.536 A:middle
+conditions, infinite images, and
+
+00:23:20.536 --> 00:23:21.856 A:middle
+has more than 200 built-in
+
+00:23:21.856 --> 00:23:23.046 A:middle
+filters that you can use, so you
+
+00:23:23.046 --> 00:23:24.066 A:middle
+don't need to invent the wheel.
+
+00:23:25.416 --> 00:23:26.226 A:middle
+All right, so I don't think I
+
+00:23:26.226 --> 00:23:27.306 A:middle
+need to convince you that that's
+
+00:23:27.306 --> 00:23:28.826 A:middle
+a lot of information and if
+
+00:23:28.956 --> 00:23:30.246 A:middle
+you're trying to use Core Image
+
+00:23:30.246 --> 00:23:31.156 A:middle
+in your prototype and your
+
+00:23:31.156 --> 00:23:34.546 A:middle
+workflow, the learning curve can
+
+00:23:34.546 --> 00:23:35.186 A:middle
+be quite steep.
+
+00:23:35.336 --> 00:23:36.796 A:middle
+So what we did is we kept the
+
+00:23:36.796 --> 00:23:38.486 A:middle
+best of that list, made a few
+
+00:23:38.486 --> 00:23:39.956 A:middle
+simplifications, which,
+
+00:23:39.956 --> 00:23:41.376 A:middle
+remember, these simplifications
+
+00:23:41.376 --> 00:23:42.636 A:middle
+can all be overridden at one
+
+00:23:42.636 --> 00:23:42.996 A:middle
+time.
+
+00:23:43.116 --> 00:23:44.076 A:middle
+And since we'll be giving you a
+
+00:23:44.076 --> 00:23:45.536 A:middle
+weighted code, you can actually
+
+00:23:45.536 --> 00:23:46.846 A:middle
+hardcode these changes in if
+
+00:23:46.846 --> 00:23:48.356 A:middle
+this was your prototyping stack.
+
+00:23:48.896 --> 00:23:50.726 A:middle
+The first thing we did is that
+
+00:23:50.726 --> 00:23:51.596 A:middle
+we still have the
+
+00:23:51.596 --> 00:23:54.036 A:middle
+high-performance feature of Core
+
+00:23:54.036 --> 00:23:54.356 A:middle
+Image.
+
+00:23:54.356 --> 00:23:55.226 A:middle
+We still render to a Metal
+
+00:23:55.226 --> 00:23:55.736 A:middle
+backend.
+
+00:23:56.586 --> 00:23:57.566 A:middle
+Most all formats are still
+
+00:23:57.566 --> 00:23:59.566 A:middle
+supported in and out and we can
+
+00:23:59.566 --> 00:24:00.836 A:middle
+still extract capture time of
+

@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.900 --> 00:30:03.237 align:start position:34% line:-2
+上のGPUは
+レンダリングをして
+
+00:30:03.403 --> 00:30:08.642 align:start position:27% line:-2
+処理し終えた領域を
+共有バッファにblit転送
+
+00:30:09.910 --> 00:30:14.047 align:start position:30% line:-2
+同時にGPU Bも
+レンダリングを行います
+
+00:30:15.015 --> 00:30:17.885 align:start position:30% line:-1
+合成に用いるGPUです
+
+00:30:18.051 --> 00:30:22.456 align:start position:25% line:-2
+GPU Aが作ったバッファが
+必要になります
+
+00:30:23.323 --> 00:30:25.125 align:start position:36% line:-1
+ここで問題が発生
+
+00:30:25.826 --> 00:30:28.462 align:start position:30% line:-1
+この部分は同期しません
+
+00:30:28.862 --> 00:30:34.468 align:start position:29% line:-2
+GPU Aの書き込み中に
+GPU Bが読み出します
+
+00:30:35.602 --> 00:30:38.272 align:start position:23% line:-1
+ここでMetalイベントを使用
+
+00:30:38.939 --> 00:30:42.409 align:start position:30% line:-2
+コマンドバッファに
+“Wait”を入れます
+
+00:30:42.943 --> 00:30:47.548 align:start position:32% line:-2
+実行中のGPUは
+ここで処理を止めて―
+
+00:30:48.649 --> 00:30:51.952 align:start position:21% line:-1
+他方のGPUのシグナルを待ちます
+
+00:30:53.453 --> 00:30:57.958 align:start position:25% line:-2
+GPU Aが書き込みを終えて
+シグナルを発すると
+
+00:30:58.058 --> 00:31:00.627 align:start position:29% line:-1
+GPU Bが読み出せます
+

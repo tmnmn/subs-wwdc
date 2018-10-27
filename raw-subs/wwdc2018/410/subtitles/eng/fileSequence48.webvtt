@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:57.846 --> 00:48:00.096 A:middle
+that signpost begin and end has
+
+00:48:00.136 --> 00:48:01.526 A:middle
+to have the same identifier.
+
+00:48:02.706 --> 00:48:04.336 A:middle
+We are looking in working memory
+
+00:48:04.566 --> 00:48:07.296 A:middle
+for a fact that has a signpost
+
+00:48:07.296 --> 00:48:09.726 A:middle
+identifier that we captured and
+
+00:48:09.726 --> 00:48:11.346 A:middle
+retract this fact.
+
+00:48:14.116 --> 00:48:16.286 A:middle
+Then, we can write our recorder
+
+00:48:16.286 --> 00:48:18.546 A:middle
+rule that will generate all of
+
+00:48:18.546 --> 00:48:18.976 A:middle
+the narrative data.
+
+00:48:24.216 --> 00:48:27.106 A:middle
+This recorder rule looks at all
+
+00:48:27.106 --> 00:48:28.546 A:middle
+of the started download facts
+
+00:48:28.726 --> 00:48:29.986 A:middle
+and captures them.
+
+00:48:30.616 --> 00:48:32.136 A:middle
+We captured time, caller
+
+00:48:32.136 --> 00:48:33.696 A:middle
+address, and image name.
+
+00:48:34.796 --> 00:48:36.936 A:middle
+If that's true and there is
+
+00:48:37.606 --> 00:48:39.176 A:middle
+another started download which
+
+00:48:39.216 --> 00:48:40.996 A:middle
+has the same caller address, you
+
+00:48:40.996 --> 00:48:42.786 A:middle
+can notice that variables
+
+00:48:42.786 --> 00:48:44.646 A:middle
+referenced here are the same and
+
+00:48:45.376 --> 00:48:48.616 A:middle
+happened before the first fact.
+
+00:48:49.606 --> 00:48:51.136 A:middle
+We notice that there is some
+
+00:48:51.136 --> 00:48:52.326 A:middle
+anti-pattern and there is
+
+00:48:52.326 --> 00:48:53.616 A:middle
+overlap in our request.
+
+00:48:54.716 --> 00:48:56.086 A:middle
+We can then check whether we
+
+00:48:56.086 --> 00:48:57.346 A:middle
+have access to downloader
+
+00:48:57.346 --> 00:49:01.386 A:middle
+narrative schema, create new row
+

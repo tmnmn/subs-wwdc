@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.656 --> 00:05:00.756 A:middle
+This is the case we're going to
+
+00:05:00.756 --> 00:05:01.436 A:middle
+go through so we're going to
+
+00:05:01.436 --> 00:05:04.006 A:middle
+produce this layout, obviously
+
+00:05:04.006 --> 00:05:04.516 A:middle
+very simple.
+
+00:05:05.106 --> 00:05:06.976 A:middle
+Oftentimes I think you would
+
+00:05:06.976 --> 00:05:08.046 A:middle
+build this in interface builder.
+
+00:05:08.806 --> 00:05:09.756 A:middle
+That's a great idea.
+
+00:05:09.876 --> 00:05:11.716 A:middle
+It is such a good idea that it
+
+00:05:11.716 --> 00:05:12.786 A:middle
+would completely prevent the
+
+00:05:12.786 --> 00:05:13.896 A:middle
+performance issues that we'd
+
+00:05:13.896 --> 00:05:15.796 A:middle
+like to go through.
+
+00:05:16.076 --> 00:05:18.976 A:middle
+So let's say we didn't do that.
+
+00:05:19.406 --> 00:05:21.006 A:middle
+Let's say that we built it like
+
+00:05:21.766 --> 00:05:21.886 A:middle
+this.
+
+00:05:24.066 --> 00:05:25.216 A:middle
+First let's just walk through --
+
+00:05:25.216 --> 00:05:26.406 A:middle
+before we try to analyze it,
+
+00:05:26.406 --> 00:05:27.236 A:middle
+let's walk through what this
+
+00:05:27.236 --> 00:05:27.796 A:middle
+code is doing.
+
+00:05:28.826 --> 00:05:31.316 A:middle
+First, we are overriding the
+
+00:05:31.316 --> 00:05:33.226 A:middle
+UIView method updateConstraints,
+
+00:05:33.866 --> 00:05:34.976 A:middle
+whatever that does.
+
+00:05:35.366 --> 00:05:37.426 A:middle
+So we'll talk about it.
+
+00:05:37.916 --> 00:05:41.736 A:middle
+Next, we have an Ivar called
+
+00:05:41.736 --> 00:05:42.476 A:middle
+myConstraints.
+
+00:05:42.716 --> 00:05:45.446 A:middle
+And we are taking everything in
+
+00:05:45.446 --> 00:05:46.436 A:middle
+that variable and we are
+
+00:05:46.436 --> 00:05:47.336 A:middle
+deactivating all those
+
+00:05:47.336 --> 00:05:47.836 A:middle
+constraints.
+
+00:05:48.586 --> 00:05:49.516 A:middle
+We are then creating
+
+00:05:49.516 --> 00:05:51.176 A:middle
+constraints, which implement the
+
+00:05:51.176 --> 00:05:52.216 A:middle
+layout that we were just looking
+
+00:05:52.216 --> 00:05:52.416 A:middle
+at.
+
+00:05:53.006 --> 00:05:54.106 A:middle
+That's fairly straightforward.
+
+00:05:54.106 --> 00:05:55.066 A:middle
+It's using visual format
+
+00:05:55.066 --> 00:05:55.546 A:middle
+language here.
+
+00:05:56.276 --> 00:05:57.276 A:middle
+We're then activating those
+
+00:05:57.276 --> 00:05:58.776 A:middle
+constraints, installing them,
+
+00:05:59.236 --> 00:06:00.296 A:middle
+and last we're calling
+

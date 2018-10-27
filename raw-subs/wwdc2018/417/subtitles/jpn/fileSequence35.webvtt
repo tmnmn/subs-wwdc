@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.633 --> 00:35:02.770 align:start position:29% line:-2
+アプリケーションの起動を
+速めることです
+
+00:35:03.237 --> 00:35:06.673 align:start position:30% line:-2
+ほとんどは起動時に
+セットアップを行います
+
+00:35:06.773 --> 00:35:10.177 align:start position:36% line:-2
+通常の起動には
+欠かせませんが―
+
+00:35:10.277 --> 00:35:14.982 align:start position:29% line:-2
+テスト実行の際には
+その多くが不要になります
+
+00:35:15.249 --> 00:35:19.119 align:start position:12% line:-2
+View Controllerの読み込みや
+ネットワークリクエストの開始
+
+00:35:19.219 --> 00:35:21.521 align:start position:36% line:-2
+分析パッケージの
+設定などです
+
+00:35:21.622 --> 00:35:25.826 align:start position:27% line:-2
+これらはユニットテストでも
+不要です
+
+00:35:26.994 --> 00:35:32.933 align:start position:25% line:-2
+XCTestは デリゲートが
+起動終了を伝えるのを待ちます
+
+00:35:33.066 --> 00:35:37.671 align:start position:29% line:-2
+テスト時に
+起動に時間がかかるなら―
+
+00:35:38.072 --> 00:35:42.409 align:start position:29% line:-2
+テスト実行だと検出させて
+回避させるのも手です
+
+00:35:44.011 --> 00:35:45.178 align:start position:38% line:-1
+１つの方法は―
+
+00:35:45.279 --> 00:35:49.316 align:start position:34% line:-2
+カスタム環境変数や
+起動引数の特定です
+
+00:35:49.783 --> 00:35:55.289 align:start position:11% line:-2
+スキームエディタの左側の
+“Test”から“Arguments”を開き
+
+00:35:55.389 --> 00:35:58.592 align:start position:32% line:-2
+環境変数か起動引数を
+追加しましょう
+
+00:35:59.226 --> 00:36:04.598 align:start position:9% line:-2
+このスクリーンショットでは
+IS UNIT TESTINGを１にしています
+

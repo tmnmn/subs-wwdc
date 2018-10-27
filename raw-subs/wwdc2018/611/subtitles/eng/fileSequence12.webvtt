@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:01.776 --> 00:12:03.266 A:middle
+We've just described two new
+
+00:12:03.266 --> 00:12:04.236 A:middle
+Metal features.
+
+00:12:04.576 --> 00:12:07.846 A:middle
+Shareable Metal textures, and 2D
+
+00:12:07.846 --> 00:12:09.746 A:middle
+multi-sample array texture type.
+
+00:12:09.746 --> 00:12:12.356 A:middle
+And the way they can be used to
+
+00:12:12.406 --> 00:12:14.246 A:middle
+further optimize your rendering
+
+00:12:14.326 --> 00:12:14.856 A:middle
+pipeline.
+
+00:12:16.026 --> 00:12:17.406 A:middle
+Both features will be soon
+
+00:12:17.406 --> 00:12:19.326 A:middle
+supported in upcoming SteamVR
+
+00:12:19.326 --> 00:12:20.836 A:middle
+runtime updates.
+
+00:12:22.016 --> 00:12:23.686 A:middle
+So now, let's focus on
+
+00:12:23.686 --> 00:12:25.166 A:middle
+techniques that will allow your
+
+00:12:25.166 --> 00:12:27.376 A:middle
+application to maximize its CPU
+
+00:12:27.376 --> 00:12:28.736 A:middle
+and GPU utilization.
+
+00:12:29.796 --> 00:12:32.276 A:middle
+We will divide this section into
+
+00:12:32.366 --> 00:12:34.696 A:middle
+two subsections-- Advanced frame
+
+00:12:34.696 --> 00:12:36.656 A:middle
+pacing and a reducing free rate.
+
+00:12:38.386 --> 00:12:40.436 A:middle
+We will start with frame pacing.
+
+00:12:41.276 --> 00:12:43.426 A:middle
+And in this section, we will
+
+00:12:43.426 --> 00:12:45.446 A:middle
+analyze application frame pacing
+
+00:12:45.536 --> 00:12:47.116 A:middle
+and how it can be optimized for
+
+00:12:47.116 --> 00:12:47.266 A:middle
+VR.
+
+00:12:48.306 --> 00:12:49.936 A:middle
+So let's start with simple,
+
+00:12:50.146 --> 00:12:52.096 A:middle
+single-threaded application that
+
+00:12:52.096 --> 00:12:53.646 A:middle
+is executing everything in
+
+00:12:53.646 --> 00:12:54.476 A:middle
+serial monitoring.
+
+00:12:55.406 --> 00:12:57.336 A:middle
+Such application will start its
+
+00:12:57.336 --> 00:12:59.816 A:middle
+frame by calling WaitGet pauses,
+

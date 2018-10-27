@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.956 --> 00:05:01.326 A:middle
+So how is Metal different than
+
+00:05:01.326 --> 00:05:01.736 A:middle
+OpenGL?
+
+00:05:02.196 --> 00:05:03.556 A:middle
+Well you perform the most
+
+00:05:03.626 --> 00:05:06.036 A:middle
+expensive operations less often.
+
+00:05:07.046 --> 00:05:08.236 A:middle
+Objects are designed in such a
+
+00:05:08.236 --> 00:05:09.916 A:middle
+way that API state can be
+
+00:05:09.916 --> 00:05:12.226 A:middle
+translated and prepackaged into
+
+00:05:12.226 --> 00:05:13.926 A:middle
+GPU commands at creation.
+
+00:05:15.726 --> 00:05:17.406 A:middle
+This way, there's much less cost
+
+00:05:17.406 --> 00:05:18.556 A:middle
+to use them later on when
+
+00:05:18.556 --> 00:05:19.266 A:middle
+actually rendering.
+
+00:05:20.576 --> 00:05:21.656 A:middle
+The graphics pipeline with
+
+00:05:21.686 --> 00:05:23.286 A:middle
+Vertex and fragment shaders also
+
+00:05:23.286 --> 00:05:24.756 A:middle
+reflects the modern GPU.
+
+00:05:25.716 --> 00:05:27.396 A:middle
+So it's less costly to translate
+
+00:05:27.516 --> 00:05:29.526 A:middle
+the API's configuration to GP
+
+00:05:29.526 --> 00:05:29.986 A:middle
+commands.
+
+00:05:31.236 --> 00:05:32.926 A:middle
+This doesn't mean the pipeline
+
+00:05:32.926 --> 00:05:34.296 A:middle
+is entirely different or
+
+00:05:34.296 --> 00:05:35.666 A:middle
+requires some whole new way of
+
+00:05:35.666 --> 00:05:36.026 A:middle
+thinking.
+
+00:05:36.946 --> 00:05:38.256 A:middle
+The main difference in Metal is
+
+00:05:38.256 --> 00:05:39.406 A:middle
+that the grouping of the
+
+00:05:39.436 --> 00:05:41.686 A:middle
+pipeline stages into objects is
+
+00:05:41.686 --> 00:05:43.326 A:middle
+more efficient, not that the
+
+00:05:43.326 --> 00:05:45.396 A:middle
+pipeline itself is changed.
+
+00:05:46.816 --> 00:05:49.366 A:middle
+Metal also has a clear model for
+
+00:05:49.366 --> 00:05:50.616 A:middle
+multithreaded execution.
+
+00:05:51.496 --> 00:05:52.356 A:middle
+There are a number of different
+
+00:05:52.356 --> 00:05:53.976 A:middle
+ways for applications to drive
+
+00:05:53.976 --> 00:05:55.796 A:middle
+the GPU from different threads,
+
+00:05:56.286 --> 00:05:57.906 A:middle
+but for each there are explicit
+
+00:05:57.996 --> 00:05:59.456 A:middle
+but unconstraining rules to do
+
+00:05:59.456 --> 00:05:59.686 A:middle
+this.
+

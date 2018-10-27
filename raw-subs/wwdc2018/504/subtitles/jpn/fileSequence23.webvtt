@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.947 --> 00:23:02.749 align:start position:27% line:-2
+iPhoneでコンテンツを
+聴いている限り―
+
+00:23:02.849 --> 00:23:07.454 align:start position:34% line:-2
+アプリケーションは
+最前面に留まります
+
+00:23:08.722 --> 00:23:10.757 align:start position:29% line:-1
+WatchOS 5では―
+
+00:23:10.858 --> 00:23:13.594 align:start position:7% line:-2
+Now Playing session APIが
+追加されています
+
+00:23:13.794 --> 00:23:18.365 align:start position:21% line:-2
+iPhoneで「再生中」画面が
+ローンチされると通知が届くのです
+
+00:23:18.465 --> 00:23:21.735 align:start position:30% line:-2
+ユーザを直接
+適切なビューに導きます
+
+00:23:22.736 --> 00:23:23.670 align:start position:39% line:-1
+そのために―
+
+00:23:23.771 --> 00:23:28.675 align:start position:5% line:-2
+RemoteNowPlayingActivityの
+処理をします
+
+00:23:30.210 --> 00:23:33.347 align:start position:36% line:-2
+では どう使うか
+見てみましょう
+
+00:23:35.983 --> 00:23:38.585 align:start position:23% line:-1
+エクステンションデリゲートに―
+
+00:23:39.052 --> 00:23:43.056 align:start position:0% line:-2
+myhandleRemoteNowPlayingActivity
+を実装
+
+00:23:43.257 --> 00:23:47.227 align:start position:29% line:-2
+最初にチェックするのは
+ユーザがどこにいるかです
+
+00:23:47.394 --> 00:23:51.365 align:start position:25% line:-2
+インタフェースコントローラを
+取り込むと―
+
+00:23:51.465 --> 00:23:55.269 align:start position:36% line:-2
+ユーザの位置を
+チェックできます
+
+00:23:55.369 --> 00:23:58.939 align:start position:18% line:-2
+Now Playing UIにいれば
+最高です
+
+00:23:59.873 --> 00:24:04.111 align:start position:30% line:-2
+そうでない場合は
+ビューにリロードします
+

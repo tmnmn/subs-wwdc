@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:02.216 --> 00:13:06.253 align:start position:16% line:-2
++1 reference countが
+付随します
+
+00:13:06.687 --> 00:13:11.091 align:start position:30% line:-2
+規約ではオブジェクトが
+別の関数に渡されると
+
+00:13:11.191 --> 00:13:14.728 align:start position:34% line:-2
+関数が呼び出され
+リリースされました
+
+00:13:14.828 --> 00:13:19.800 align:start position:30% line:-2
+リリース処理を
+別の関数にさせるのです
+
+00:13:20.300 --> 00:13:24.638 align:start position:27% line:-2
+これはオブジェクトの
+ライフタイムを縮めています
+
+00:13:24.738 --> 00:13:27.307 align:start position:29% line:-1
+最小限の働きしかしません
+
+00:13:27.708 --> 00:13:31.245 align:start position:23% line:-1
+しかし こういったコードの場合
+
+00:13:31.345 --> 00:13:35.716 align:start position:25% line:-2
+オブジェクトを異なるAPIに
+何度も渡します
+
+00:13:35.816 --> 00:13:38.352 align:start position:34% line:-1
+呼び出し規約に従い
+
+00:13:38.452 --> 00:13:43.257 align:start position:30% line:-2
+初めの参照数が最後の
+呼び出しとつり合います
+
+00:13:43.423 --> 00:13:47.828 align:start position:36% line:-2
+しかし規約では
+途中の呼び出しが
+
+00:13:47.928 --> 00:13:50.297 align:start position:29% line:-1
+保持されリリースされます
+
+00:13:50.797 --> 00:13:52.432 align:start position:38% line:-1
+無駄な作業です
+
+00:13:52.533 --> 00:13:57.404 align:start position:29% line:-2
+オブジェクトは一連の
+流れの中でも生きています
+
+00:13:57.704 --> 00:14:00.707 align:start position:20% line:-1
+Swift 4.2では改善しました
+

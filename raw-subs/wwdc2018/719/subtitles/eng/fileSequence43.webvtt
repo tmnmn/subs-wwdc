@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.076 --> 00:43:00.506 A:middle
+we'll take a look at here -- how
+
+00:43:00.506 --> 00:43:01.936 A:middle
+they are being -- actually saved
+
+00:43:01.936 --> 00:43:03.126 A:middle
+to disc in real time.
+
+00:43:03.306 --> 00:43:04.826 A:middle
+So let's just do that, just to
+
+00:43:04.826 --> 00:43:05.856 A:middle
+give you a sense of how fast
+
+00:43:05.856 --> 00:43:06.000 A:middle
+that is.
+
+00:43:10.156 --> 00:43:11.000 A:middle
+That's really powerful.
+
+00:43:15.236 --> 00:43:15.686 A:middle
+All right.
+
+00:43:16.886 --> 00:43:17.806 A:middle
+This next thing I want to show
+
+00:43:17.806 --> 00:43:20.346 A:middle
+you is how to use CoreML using
+
+00:43:20.346 --> 00:43:20.836 A:middle
+Core Image.
+
+00:43:22.026 --> 00:43:23.776 A:middle
+And first thing you do is to
+
+00:43:23.776 --> 00:43:25.096 A:middle
+load your Core ML model in,
+
+00:43:25.246 --> 00:43:26.066 A:middle
+which we did here.
+
+00:43:26.066 --> 00:43:28.606 A:middle
+We have a glass model, which
+
+00:43:28.606 --> 00:43:30.736 A:middle
+we're going to be using to
+
+00:43:30.866 --> 00:43:32.046 A:middle
+generate interesting effect.
+
+00:43:32.146 --> 00:43:32.806 A:middle
+So, let's start with the
+
+00:43:32.806 --> 00:43:33.696 A:middle
+procedural image.
+
+00:43:34.376 --> 00:43:35.316 A:middle
+We've seen this one before.
+
+00:43:35.876 --> 00:43:37.866 A:middle
+And then to make it a bit more
+
+00:43:37.866 --> 00:43:38.756 A:middle
+interesting, we'll add some
+
+00:43:38.756 --> 00:43:39.416 A:middle
+texture to it.
+
+00:43:40.196 --> 00:43:42.336 A:middle
+So, we'll be adding multi-band
+
+00:43:42.336 --> 00:43:46.096 A:middle
+noise on it as well as some
+
+00:43:46.096 --> 00:43:47.956 A:middle
+feathering and some [inaudible].
+
+00:43:47.956 --> 00:43:51.146 A:middle
+All right, so this is the input
+
+00:43:51.146 --> 00:43:52.526 A:middle
+image we're going to be feeding
+
+00:43:52.526 --> 00:43:54.126 A:middle
+to our neural network alongside
+
+00:43:54.126 --> 00:43:55.796 A:middle
+the other -- the CoreML model
+
+00:43:55.796 --> 00:43:57.716 A:middle
+that we have pre-trained.
+
+00:43:58.026 --> 00:43:58.326 A:middle
+All right?
+
+00:43:58.916 --> 00:44:01.500 A:middle
+So, let's run this.
+

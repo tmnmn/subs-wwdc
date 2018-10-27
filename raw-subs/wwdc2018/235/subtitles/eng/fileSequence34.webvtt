@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.816 --> 00:34:00.106 A:middle
+So if you have a table view with
+
+00:34:00.106 --> 00:34:01.606 A:middle
+a lot of multiline text in it,
+
+00:34:01.956 --> 00:34:03.306 A:middle
+it makes sense that you would
+
+00:34:03.306 --> 00:34:04.546 A:middle
+want to adjust the margins of
+
+00:34:04.546 --> 00:34:07.466 A:middle
+the table view to bring all
+
+00:34:07.466 --> 00:34:08.636 A:middle
+these elements into alignment
+
+00:34:08.636 --> 00:34:09.755 A:middle
+and still respect the readable
+
+00:34:09.755 --> 00:34:09.926 A:middle
+width.
+
+00:34:10.735 --> 00:34:12.226 A:middle
+So to do this, table view
+
+00:34:12.226 --> 00:34:12.916 A:middle
+provides an API.
+
+00:34:12.916 --> 00:34:15.246 A:middle
+Called cell layout margins
+
+00:34:15.436 --> 00:34:16.366 A:middle
+follow readable width.
+
+00:34:16.866 --> 00:34:18.255 A:middle
+Now when it's false, table view
+
+00:34:18.255 --> 00:34:19.795 A:middle
+will use its normal system
+
+00:34:19.795 --> 00:34:20.306 A:middle
+margins.
+
+00:34:20.806 --> 00:34:22.545 A:middle
+And if it's true, all the
+
+00:34:22.545 --> 00:34:23.815 A:middle
+content will inset.
+
+00:34:25.056 --> 00:34:27.505 A:middle
+Now, something to note is that
+
+00:34:27.505 --> 00:34:28.686 A:middle
+the default value of this
+
+00:34:28.746 --> 00:34:30.976 A:middle
+property has changed in iOS 12.
+
+00:34:31.886 --> 00:34:35.295 A:middle
+It is now false by default.
+
+00:34:35.576 --> 00:34:36.755 A:middle
+It was previously true.
+
+00:34:37.806 --> 00:34:38.746 A:middle
+This shouldn't affect the
+
+00:34:38.746 --> 00:34:39.926 A:middle
+behavior of your appl-- of your
+
+00:34:39.926 --> 00:34:41.036 A:middle
+applications too much,
+
+00:34:41.036 --> 00:34:42.065 A:middle
+especially on phones.
+
+00:34:42.596 --> 00:34:44.556 A:middle
+Our general recommendation is to
+
+00:34:44.556 --> 00:34:47.016 A:middle
+leave the default alone and set
+
+00:34:47.016 --> 00:34:48.976 A:middle
+it to true when you know that
+
+00:34:48.976 --> 00:34:50.136 A:middle
+you have a table view that's
+
+00:34:50.136 --> 00:34:51.156 A:middle
+going to contain a lot of
+
+00:34:51.156 --> 00:34:52.626 A:middle
+multiline text where it would
+
+00:34:53.306 --> 00:34:54.426 A:middle
+make sense.
+
+00:34:54.606 --> 00:34:55.886 A:middle
+And this property's also
+
+00:34:55.886 --> 00:34:56.856 A:middle
+adjustable from Interface
+
+00:34:56.856 --> 00:34:58.796 A:middle
+Builder with the follow readable
+
+00:34:58.796 --> 00:35:00.000 A:middle
+width checkbox.
+

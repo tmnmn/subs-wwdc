@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.136 --> 00:22:00.756 A:middle
+all you need to do is mark that
+
+00:22:00.756 --> 00:22:02.406 A:middle
+struct as codable and the Swift
+
+00:22:02.406 --> 00:22:03.646 A:middle
+compiler takes care of the rest,
+
+00:22:04.096 --> 00:22:05.286 A:middle
+building all the infrastructure
+
+00:22:05.286 --> 00:22:06.596 A:middle
+needed for the serialization.
+
+00:22:07.006 --> 00:22:09.706 A:middle
+Swift doesn't do that for enums
+
+00:22:09.936 --> 00:22:11.456 A:middle
+and so we ended up implementing
+
+00:22:11.456 --> 00:22:14.226 A:middle
+that ourselves, implementing the
+
+00:22:14.226 --> 00:22:16.806 A:middle
+init and then coding method from
+
+00:22:16.806 --> 00:22:18.766 A:middle
+the codable protocol to make
+
+00:22:19.196 --> 00:22:20.716 A:middle
+that work.
+
+00:22:20.906 --> 00:22:22.596 A:middle
+Serialization then is very easy.
+
+00:22:22.806 --> 00:22:23.926 A:middle
+Just build a property listing
+
+00:22:23.926 --> 00:22:25.426 A:middle
+coder and have it encode the
+
+00:22:25.426 --> 00:22:26.146 A:middle
+object out for you.
+
+00:22:26.786 --> 00:22:28.986 A:middle
+We can then send a data packet
+
+00:22:29.246 --> 00:22:30.056 A:middle
+within the multi-peer
+
+00:22:30.056 --> 00:22:30.986 A:middle
+connectivity session.
+
+00:22:32.026 --> 00:22:33.466 A:middle
+Now, a reasonable question here
+
+00:22:33.466 --> 00:22:35.206 A:middle
+might be how's this going to do
+
+00:22:35.206 --> 00:22:37.166 A:middle
+in size and performance?
+
+00:22:38.626 --> 00:22:39.956 A:middle
+Property-- binary property lists
+
+00:22:39.956 --> 00:22:41.116 A:middle
+are pretty compact and the
+
+00:22:41.116 --> 00:22:42.506 A:middle
+encoder's pretty fast.
+
+00:22:43.496 --> 00:22:45.466 A:middle
+But sometimes, you know, the
+
+00:22:45.466 --> 00:22:47.216 A:middle
+soft implementation in many ways
+
+00:22:47.216 --> 00:22:49.256 A:middle
+is optimized for developer time,
+
+00:22:49.356 --> 00:22:50.406 A:middle
+which is sometimes your most
+
+00:22:50.406 --> 00:22:51.756 A:middle
+precious resource on a project.
+
+00:22:52.646 --> 00:22:55.146 A:middle
+Now, we ran up against some of
+
+00:22:55.146 --> 00:22:56.426 A:middle
+those limitations as we started
+
+00:22:56.426 --> 00:22:57.836 A:middle
+to build the next feature, and
+
+00:22:57.836 --> 00:22:59.026 A:middle
+we'll talk about how we overcame
+
+00:22:59.746 --> 00:22:59.866 A:middle
+this.
+

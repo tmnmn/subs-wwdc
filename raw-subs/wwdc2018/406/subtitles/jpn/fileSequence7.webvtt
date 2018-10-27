@@ -1,0 +1,44 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.518 --> 00:07:03.190 align:start position:25% line:-2
+要素に必要なケイパビリティを
+コンパイラに伝えないと―
+
+00:07:03.290 --> 00:07:06.326 align:start position:29% line:-1
+このメソッドが使えません
+
+00:07:07.361 --> 00:07:14.201 align:start position:20% line:-2
+簡単な方法は 要素型を
+Intのような型に制約することです
+
+00:07:16.803 --> 00:07:21.975 align:start position:25% line:-2
+そのように拡張すれば
+あとで汎用化するのも簡単です
+
+00:07:22.075 --> 00:07:26.079 align:start position:18% line:-2
+DoubleやFloatのバッファが
+必要になれば―
+
+00:07:26.847 --> 00:07:29.550 align:start position:29% line:-1
+制約した型を見てください
+
+00:07:29.983 --> 00:07:32.519 align:start position:30% line:-1
+プロトコル準拠を見て―
+
+00:07:32.619 --> 00:07:37.024 align:start position:29% line:-2
+最も汎用的なプロトコルを
+探してください
+
+00:07:37.558 --> 00:07:43.430 align:start position:18% line:-2
+ここでは Numericプロトコルで
+ゼロ値の要素を作成し
+
+00:07:44.064 --> 00:07:51.038 align:start position:27% line:-2
+それに要素を追加するという
+２つの機能が果たせます
+
+00:07:53.574 --> 00:07:58.478 align:start position:29% line:-2
+では プロトコル抽出の
+プロセスについて話します
+

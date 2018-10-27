@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.605 --> 00:14:01.808 align:start position:30% line:-1
+推定することができます
+
+00:14:03.143 --> 00:14:08.315 align:start position:7% line:-2
+次に HKLiveWorkoutBuilderに
+このdata sourceをセットします
+
+00:14:09.483 --> 00:14:14.354 align:start position:32% line:-2
+収集するタイプは
+追加や削除ができます
+
+00:14:14.655 --> 00:14:17.457 align:start position:29% line:-1
+では 追加してみましょう
+
+00:14:17.558 --> 00:14:21.228 align:start position:27% line:-1
+追加したいタイプを指定して
+
+00:14:21.328 --> 00:14:27.067 align:start position:18% line:-2
+optionalPredicateで
+収集するタイプも限定できます
+
+00:14:27.901 --> 00:14:32.806 align:start position:0% line:-2
+dataSource.collectStatisticsを
+呼び出して
+
+00:14:33.373 --> 00:14:37.878 align:start position:11% line:-2
+収集するタイプと
+optionalPredicateを渡します
+
+00:14:40.147 --> 00:14:42.683 align:start position:27% line:-1
+これでデータが収集されます
+
+00:14:42.783 --> 00:14:47.688 align:start position:27% line:-2
+それをUIに表示する方法を
+見てみましょう
+
+00:14:49.723 --> 00:14:55.762 align:start position:18% line:-2
+builderのデリゲートメソッドに
+データが入ってくると
+
+00:14:55.863 --> 00:15:00.634 align:start position:11% line:-2
+そのつど didCollectDataOf
+collectedTypesが呼び出されます
+

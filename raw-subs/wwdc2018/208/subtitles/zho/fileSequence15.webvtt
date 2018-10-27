@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.133 --> 00:15:02.569 align:middle line:-2
+UIView会把它自己提供为一个
+coordinateSpace
+
+00:15:03.003 --> 00:15:04.938 align:middle line:-1
+如果你的容器更抽象
+
+00:15:05.005 --> 00:15:08.675 align:middle line:-2
+你可能会返回一个现有的coordinateSpace
+或实施你自己的coordinateSpace
+
+00:15:09.910 --> 00:15:12.746 align:middle line:-2
+接下来你需要在方框中
+实施FocusItems
+
+00:15:13.113 --> 00:15:16.016 align:middle line:-2
+这个方法必须返回任意一个
+所包含的FocusItems
+
+00:15:16.283 --> 00:15:18.685 align:middle line:-1
+它的框架贯穿所提供的方框
+
+00:15:19.152 --> 00:15:21.321 align:middle line:-1
+请注意传递到这个方法中的方框
+
+00:15:21.388 --> 00:15:23.891 align:middle line:-1
+是在容器的coordinateSpace中表达的
+
+00:15:24.224 --> 00:15:27.928 align:middle line:-2
+并且你从这个方法中所返回的每一个
+focusItem的框架
+
+00:15:28.295 --> 00:15:30.998 align:middle line:-2
+必须也在那个coordinateSpace中
+进行了表达
+
+00:15:33.200 --> 00:15:35.869 align:middle line:-2
+接下来让我们实施一个
+自定义FocusItem
+
+00:15:36.904 --> 00:15:39.740 align:middle line:-2
+请记住这个协议继承
+FocusEnvironment
+
+00:15:39.973 --> 00:15:42.476 align:middle line:-1
+因此你也需要实施全部方法
+
+00:15:43.510 --> 00:15:46.747 align:middle line:-1
+为了让聚焦引擎聚焦到你的项
+
+00:15:47.014 --> 00:15:49.850 align:middle line:-2
+它必须从canBecomeFocused中
+返回“真”
+
+00:15:51.084 --> 00:15:53.987 align:middle line:-2
+DidHintFocusMovement
+是一个可选方法
+
+00:15:54.054 --> 00:15:56.390 align:middle line:-2
+无论何时当用户移动他们的手指时
+就会调用它
+
+00:15:56.456 --> 00:15:58.392 align:middle line:-1
+在Siri Remote触摸表面
+
+00:15:58.926 --> 00:16:02.262 align:middle line:-2
+它向FocusItem
+提供了一个移动暗示
+

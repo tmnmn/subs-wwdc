@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.976 --> 00:04:01.736 A:middle
+willSpeakRangeOfSpeechString
+
+00:04:02.166 --> 00:04:03.186 A:middle
+which will give you back an
+
+00:04:03.226 --> 00:04:04.636 A:middle
+NSRange which then you can
+
+00:04:04.636 --> 00:04:06.966 A:middle
+convert into a string range to
+
+00:04:06.966 --> 00:04:08.306 A:middle
+use that in your string.
+
+00:04:11.436 --> 00:04:12.606 A:middle
+Now a little demo.
+
+00:04:15.166 --> 00:04:17.046 A:middle
+&gt;&gt; Hello, my friends.
+
+00:04:17.426 --> 00:04:18.976 A:middle
+I'm inside the iPhone.
+
+00:04:22.906 --> 00:04:24.116 A:middle
+&gt;&gt; Great. Those are the basics
+
+00:04:24.116 --> 00:04:26.226 A:middle
+of AVSpeechSynthesis and, as you
+
+00:04:26.226 --> 00:04:27.796 A:middle
+can see, it's very simple to get
+
+00:04:27.796 --> 00:04:28.386 A:middle
+off the ground.
+
+00:04:29.246 --> 00:04:30.766 A:middle
+The next topic is how do you
+
+00:04:30.766 --> 00:04:31.746 A:middle
+choose a right voice?
+
+00:04:31.986 --> 00:04:33.236 A:middle
+There are many built-in voices,
+
+00:04:33.236 --> 00:04:34.716 A:middle
+one for each supported language.
+
+00:04:36.096 --> 00:04:37.516 A:middle
+Something to note is Siri voices
+
+00:04:37.516 --> 00:04:39.146 A:middle
+are not available through this
+
+00:04:39.146 --> 00:04:39.446 A:middle
+API.
+
+00:04:40.726 --> 00:04:42.356 A:middle
+Users can, however, download
+
+00:04:42.356 --> 00:04:43.766 A:middle
+higher-quality voices.
+
+00:04:43.766 --> 00:04:44.716 A:middle
+And when those are downloaded,
+
+00:04:44.716 --> 00:04:46.286 A:middle
+they will appear in the list of
+
+00:04:46.286 --> 00:04:46.856 A:middle
+voices.
+
+00:04:48.466 --> 00:04:50.846 A:middle
+So you can select a voice using
+
+00:04:50.956 --> 00:04:52.176 A:middle
+either an identifier or a
+
+00:04:52.176 --> 00:04:52.706 A:middle
+language.
+
+00:04:53.246 --> 00:04:54.386 A:middle
+If you select a voice by
+
+00:04:54.386 --> 00:04:55.486 A:middle
+language, it will select the
+
+00:04:55.486 --> 00:04:56.606 A:middle
+user's default voice.
+
+00:04:57.776 --> 00:04:58.736 A:middle
+So how do we do that?
+
+00:04:59.166 --> 00:05:00.356 A:middle
+First you make your utterance
+

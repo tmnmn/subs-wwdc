@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.776 --> 00:04:00.126 A:middle
+templates can reduce the amount
+
+00:04:00.126 --> 00:04:01.366 A:middle
+of JavaScript code you actually
+
+00:04:01.366 --> 00:04:02.566 A:middle
+have to write to convert your
+
+00:04:02.566 --> 00:04:04.556 A:middle
+data to TVML documents, since
+
+00:04:04.556 --> 00:04:06.116 A:middle
+the framework does this on your
+
+00:04:06.776 --> 00:04:07.016 A:middle
+behalf.
+
+00:04:07.016 --> 00:04:08.566 A:middle
+In fact, by authoring your
+
+00:04:08.566 --> 00:04:10.646 A:middle
+documents on your behalf, it is
+
+00:04:10.646 --> 00:04:11.716 A:middle
+able to do it in the most
+
+00:04:11.716 --> 00:04:13.236 A:middle
+performing way so you don't have
+
+00:04:13.236 --> 00:04:14.666 A:middle
+to worry about the right APIs to
+
+00:04:14.666 --> 00:04:15.076 A:middle
+use.
+
+00:04:16.456 --> 00:04:17.926 A:middle
+Let's look at a practical
+
+00:04:17.926 --> 00:04:19.266 A:middle
+example to explain this.
+
+00:04:19.856 --> 00:04:21.026 A:middle
+Say you want to generate a
+
+00:04:21.026 --> 00:04:22.936 A:middle
+banner with a title and a
+
+00:04:22.936 --> 00:04:23.596 A:middle
+description.
+
+00:04:24.136 --> 00:04:25.316 A:middle
+And this is how you would
+
+00:04:25.386 --> 00:04:26.706 A:middle
+typically do it without data
+
+00:04:26.706 --> 00:04:28.546 A:middle
+binding itself.
+
+00:04:30.996 --> 00:04:32.386 A:middle
+First, you will fetch the
+
+00:04:32.386 --> 00:04:33.666 A:middle
+relevant data that's supposed to
+
+00:04:33.666 --> 00:04:35.146 A:middle
+be shown to the user in this
+
+00:04:35.146 --> 00:04:36.856 A:middle
+case, a title and a description.
+
+00:04:38.656 --> 00:04:40.596 A:middle
+And upon fetching, you pass it
+
+00:04:40.596 --> 00:04:42.406 A:middle
+onto a part of the JavaScript
+
+00:04:42.406 --> 00:04:43.666 A:middle
+code you've already written that
+
+00:04:43.666 --> 00:04:45.126 A:middle
+processes this data and
+
+00:04:45.126 --> 00:04:46.786 A:middle
+generates the actual final
+
+00:04:46.976 --> 00:04:47.766 A:middle
+document itself.
+
+00:04:49.306 --> 00:04:52.336 A:middle
+Now, with data bindings, you can
+
+00:04:52.336 --> 00:04:53.666 A:middle
+take out JavaScript processing
+
+00:04:53.666 --> 00:04:55.526 A:middle
+step and provide binding
+
+00:04:55.526 --> 00:04:57.206 A:middle
+specifications in your template
+
+00:04:57.206 --> 00:04:58.956 A:middle
+itself, and TVMLKit will
+
+00:04:58.956 --> 00:05:00.556 A:middle
+populate the final document on
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.966 --> 00:02:01.826 A:middle
+But what if someone is profiling
+
+00:02:01.826 --> 00:02:02.916 A:middle
+your application and they're not
+
+00:02:02.916 --> 00:02:04.176 A:middle
+familiar with their code, right?
+
+00:02:04.176 --> 00:02:05.746 A:middle
+What if they just want to see is
+
+00:02:05.746 --> 00:02:07.216 A:middle
+the application spending a lot
+
+00:02:07.216 --> 00:02:08.265 A:middle
+of time in the networking layer,
+
+00:02:08.316 --> 00:02:10.086 A:middle
+and, if so, what is it doing?
+
+00:02:10.596 --> 00:02:12.946 A:middle
+Well, a good use for a custom
+
+00:02:12.946 --> 00:02:14.566 A:middle
+instrument would be to try to
+
+00:02:14.696 --> 00:02:16.886 A:middle
+tell the story of what your
+
+00:02:16.886 --> 00:02:18.096 A:middle
+layer or what your application
+
+00:02:18.096 --> 00:02:19.936 A:middle
+is doing in a way that someone
+
+00:02:19.936 --> 00:02:21.216 A:middle
+who doesn't understand the code
+
+00:02:21.496 --> 00:02:22.916 A:middle
+can understand and appreciate
+
+00:02:22.916 --> 00:02:22.983 A:middle
+it.
+
+00:02:24.856 --> 00:02:25.986 A:middle
+Now in the advanced section,
+
+00:02:25.986 --> 00:02:27.516 A:middle
+we're going to show you how to
+
+00:02:27.516 --> 00:02:28.596 A:middle
+take advantage of the Expert
+
+00:02:28.596 --> 00:02:30.296 A:middle
+System Technology that built
+
+00:02:30.296 --> 00:02:31.846 A:middle
+inside of Instruments so that
+
+00:02:31.846 --> 00:02:33.766 A:middle
+you can create an instrument
+
+00:02:33.846 --> 00:02:35.366 A:middle
+that's actually able to look for
+
+00:02:35.366 --> 00:02:36.476 A:middle
+bad patterns and spot
+
+00:02:36.476 --> 00:02:38.206 A:middle
+anti-patterns in your code even
+
+00:02:38.206 --> 00:02:38.786 A:middle
+if you're not there.
+
+00:02:40.376 --> 00:02:41.256 A:middle
+Alright, so let's take a look at
+
+00:02:41.256 --> 00:02:42.666 A:middle
+the architecture that makes this
+
+00:02:42.666 --> 00:02:43.156 A:middle
+possible.
+
+00:02:43.626 --> 00:02:45.226 A:middle
+And to do that, we're going to
+
+00:02:45.226 --> 00:02:47.996 A:middle
+have to start here, back at the
+
+00:02:47.996 --> 00:02:48.406 A:middle
+beginning.
+
+00:02:49.196 --> 00:02:51.276 A:middle
+So in the beginning, Instruments
+
+00:02:51.276 --> 00:02:52.656 A:middle
+works about the same as it does
+
+00:02:52.656 --> 00:02:52.866 A:middle
+today.
+
+00:02:52.936 --> 00:02:54.156 A:middle
+There's still a library.
+
+00:02:54.196 --> 00:02:55.546 A:middle
+You still drag instruments out
+
+00:02:55.546 --> 00:02:56.816 A:middle
+and drop them into your trace
+
+00:02:56.816 --> 00:02:58.456 A:middle
+document and then you press
+
+00:02:58.456 --> 00:02:59.346 A:middle
+Record and it's like running a
+
+00:02:59.346 --> 00:03:00.516 A:middle
+bunch of performance tools at
+

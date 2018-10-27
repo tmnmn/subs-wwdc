@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.106 --> 00:27:01.706 A:middle
+In fact, for your app all you
+
+00:27:01.706 --> 00:27:02.666 A:middle
+are really concerned with for
+
+00:27:02.666 --> 00:27:05.336 A:middle
+your users is going from a long
+
+00:27:05.336 --> 00:27:06.636 A:middle
+time to get results to a short
+
+00:27:06.676 --> 00:27:06.886 A:middle
+time.
+
+00:27:07.846 --> 00:27:10.096 A:middle
+So this year we are introducing
+
+00:27:10.096 --> 00:27:11.796 A:middle
+a new batch API that will allow
+
+00:27:11.796 --> 00:27:13.026 A:middle
+you to do exactly this.
+
+00:27:14.096 --> 00:27:15.336 A:middle
+Where before you needed to loop
+
+00:27:15.336 --> 00:27:16.386 A:middle
+over your inputs and call
+
+00:27:16.386 --> 00:27:18.056 A:middle
+separate predictions, the new
+
+00:27:18.056 --> 00:27:19.156 A:middle
+API is very simple.
+
+00:27:20.466 --> 00:27:22.516 A:middle
+One-line predictions, it
+
+00:27:22.516 --> 00:27:24.366 A:middle
+consumes an input -- an array of
+
+00:27:24.366 --> 00:27:25.946 A:middle
+inputs and produces an array of
+
+00:27:25.946 --> 00:27:26.566 A:middle
+outputs.
+
+00:27:26.936 --> 00:27:27.826 A:middle
+Core ML will take care of the
+
+00:27:27.826 --> 00:27:27.976 A:middle
+rest.
+
+00:27:28.516 --> 00:27:34.336 A:middle
+[ Applause ]
+
+00:27:34.836 --> 00:27:35.716 A:middle
+So let's see it in action.
+
+00:27:36.446 --> 00:27:38.696 A:middle
+So in keeping with our style
+
+00:27:38.696 --> 00:27:40.386 A:middle
+transfer example, let's look at
+
+00:27:40.386 --> 00:27:41.376 A:middle
+the case where we wanted to
+
+00:27:41.376 --> 00:27:42.776 A:middle
+apply a style to our entire
+
+00:27:42.776 --> 00:27:43.586 A:middle
+photo library.
+
+00:27:43.956 --> 00:27:45.046 A:middle
+So here I have a simple app
+
+00:27:45.116 --> 00:27:46.066 A:middle
+that's going to do just that.
+
+00:27:46.066 --> 00:27:47.926 A:middle
+I am going to apply a style to
+
+00:27:47.926 --> 00:27:48.946 A:middle
+200 images.
+
+00:27:49.206 --> 00:27:51.396 A:middle
+On the left, as in your left,
+
+00:27:51.976 --> 00:27:54.026 A:middle
+there is an implementation using
+
+00:27:54.026 --> 00:27:55.526 A:middle
+last year's API in a for loop.
+
+00:27:55.936 --> 00:27:57.636 A:middle
+And on the right we have the new
+
+00:27:57.636 --> 00:27:58.276 A:middle
+batch API.
+
+00:27:58.626 --> 00:27:59.346 A:middle
+So let's get started.
+

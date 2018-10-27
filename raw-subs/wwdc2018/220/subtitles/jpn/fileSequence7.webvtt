@@ -1,0 +1,77 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.253 --> 00:07:02.923 align:start position:30% line:-2
+これはウィンドウから
+下へと逆方向に動きます
+
+00:07:03.056 --> 00:07:07.461 align:start position:34% line:-2
+最後に必要ならば
+表示を受け取ります
+
+00:07:08.562 --> 00:07:12.599 align:start position:27% line:-2
+さて これらは
+何のためにあるのでしょう？
+
+00:07:13.267 --> 00:07:15.669 align:start position:27% line:-1
+これらは同じ目的を持った―
+
+00:07:15.769 --> 00:07:18.539 align:start position:32% line:-2
+パラレル処理される
+メソッドのセットです
+
+00:07:18.639 --> 00:07:21.942 align:start position:23% line:-2
+その目的とは
+“ムダな仕事を避ける”ことです
+
+00:07:22.576 --> 00:07:24.344 align:start position:32% line:-1
+例を使って説明します
+
+00:07:24.745 --> 00:07:26.780 align:start position:36% line:-1
+まず ラベルです
+
+00:07:26.880 --> 00:07:30.484 align:start position:27% line:-2
+UILabelは
+テキストサイズを定義した―
+
+00:07:30.584 --> 00:07:33.820 align:start position:29% line:-1
+制約を持つ必要があります
+
+00:07:33.921 --> 00:07:36.223 align:start position:29% line:-2
+それに関するプロパティが
+数多くあります
+
+00:07:36.323 --> 00:07:38.125 align:start position:34% line:-1
+テキストプロパティ
+
+00:07:38.258 --> 00:07:39.426 align:start position:43% line:-1
+フォント
+
+00:07:39.526 --> 00:07:41.728 align:start position:34% line:-1
+テキストサイズなど
+
+00:07:42.896 --> 00:07:45.332 align:start position:29% line:-1
+プロパティを変更する度に
+
+00:07:45.432 --> 00:07:48.001 align:start position:29% line:-2
+テキストを
+再測定する方法があります
+
+00:07:48.468 --> 00:07:51.538 align:start position:29% line:-2
+しかし
+連続して変更する場合には
+
+00:07:51.638 --> 00:07:54.007 align:start position:36% line:-1
+かなり非効率です
+
+00:07:54.107 --> 00:07:55.442 align:start position:36% line:-1
+ラベル設定時に―
+
+00:07:55.542 --> 00:07:57.811 align:start position:32% line:-2
+プロパティセッターを
+呼び出すでしょう
+
+00:07:57.911 --> 00:08:00.214 align:start position:32% line:-2
+そこで １つずつ
+再測定するとしたら？
+

@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.071 --> 00:34:02.443 align:start position:20% line:-1
+その情報がVisionに送られると
+
+00:34:02.576 --> 00:34:08.114 align:start position:27% line:-2
+Visionが情報を取得し
+調整してくれるのです
+
+00:34:09.149 --> 00:34:13.587 align:start position:25% line:-2
+しかし 先ほどのデモのように
+動画の場合は
+
+00:34:13.687 --> 00:34:16.089 align:start position:32% line:-1
+自分で情報を送ります
+
+00:34:16.188 --> 00:34:21.428 align:start position:12% line:-2
+そこで UIDevice.current.
+orientationを確認し
+
+00:34:21.527 --> 00:34:27.167 align:start position:2% line:-2
+CGImagePropertyOrientationに
+変換します
+
+00:34:29.369 --> 00:34:32.306 align:start position:30% line:-1
+次は座標系についてです
+
+00:34:33.373 --> 00:34:36.543 align:start position:34% line:-2
+Visionの場合
+原点は左下隅です
+
+00:34:37.710 --> 00:34:43.217 align:start position:32% line:-2
+そして画像に沿って
+垂直に処理されるため
+
+00:34:43.317 --> 00:34:45.418 align:start position:34% line:-1
+向きが重要なのです
+
+00:34:47.187 --> 00:34:50.591 align:start position:32% line:-2
+正規化された座標上で
+処理されますが
+
+00:34:50.891 --> 00:34:54.527 align:start position:27% line:-2
+ピクセル数が不明な
+レジストレーションは別です
+
+00:34:54.761 --> 00:35:00.801 align:start position:21% line:-2
+正規座標系とは 座標が0.0から
+1.1までの範囲のものです
+

@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.545 --> 00:18:00.881 align:middle line:-1
+这是我为这个类写的单元测试
+
+00:18:01.014 --> 00:18:03.050 align:middle line:-1
+它用来验证
+
+00:18:03.116 --> 00:18:05.652 align:middle line:-2
+在调用NotifyAuthChanged
+方法时是否发布通知
+
+00:18:06.887 --> 00:18:10.824 align:middle line:-2
+我们可以在这里的中间部分看到
+这个测试使用addObserver方法
+
+00:18:10.891 --> 00:18:12.726 align:middle line:-1
+创建一个基于块的观察者
+
+00:18:12.926 --> 00:18:15.095 align:middle line:-1
+然后它移除块内的观察者
+
+00:18:16.063 --> 00:18:18.031 align:middle line:-1
+现在我可以对这个测试做一个改进
+
+00:18:18.098 --> 00:18:19.399 align:middle line:-1
+就是使用内置的
+
+00:18:19.466 --> 00:18:22.402 align:middle line:-2
+XCTNSNotificationExpectation
+API
+
+00:18:22.469 --> 00:18:26.373 align:middle line:-2
+来为我们创建这个
+NotificationCenter观察者
+
+00:18:27.574 --> 00:18:28.876 align:middle line:-1
+这是一个很好的改进
+
+00:18:29.142 --> 00:18:31.612 align:middle line:-1
+它允许我们删除几行代码
+
+00:18:32.713 --> 00:18:34.515 align:middle line:-1
+但它仍然有我们之前看到的问题
+
+00:18:34.581 --> 00:18:37.417 align:middle line:-2
+即隐式使用默认
+NotificationCenter
+
+00:18:37.484 --> 00:18:38.652 align:middle line:-1
+我们来解决这个问题
+
+00:18:40.120 --> 00:18:41.388 align:middle line:-1
+这是我们的原始代码
+
+00:18:42.556 --> 00:18:44.525 align:middle line:-1
+我将应用前面看到的相同的技术
+
+00:18:44.591 --> 00:18:47.728 align:middle line:-2
+在初始化器中使用一个单独的
+NotificationCenter
+
+00:18:47.928 --> 00:18:50.664 align:middle line:-1
+存储它并使用它而不是默认值
+
+00:18:53.734 --> 00:18:55.369 align:middle line:-2
+现在回到我们的测试代码
+我将修改它
+
+00:18:56.203 --> 00:18:59.339 align:middle line:-2
+将一个新的NotificationCenter
+传递给我们的主题
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.166 --> 00:45:00.136 A:middle
+that this is a multithreading
+
+00:45:00.136 --> 00:45:00.496 A:middle
+issue.
+
+00:45:01.656 --> 00:45:04.096 A:middle
+So let's actually take a look at
+
+00:45:04.096 --> 00:45:05.156 A:middle
+our LazyImageView class.
+
+00:45:05.156 --> 00:45:07.256 A:middle
+So I'll click this button right
+
+00:45:07.256 --> 00:45:08.656 A:middle
+here to jump straight to this
+
+00:45:08.656 --> 00:45:10.006 A:middle
+line of code and open it in our
+
+00:45:10.006 --> 00:45:10.436 A:middle
+project.
+
+00:45:11.866 --> 00:45:13.126 A:middle
+And you can see the source of
+
+00:45:13.126 --> 00:45:14.816 A:middle
+LazyImageView right here.
+
+00:45:15.306 --> 00:45:17.396 A:middle
+It's a subclass of UIImageView,
+
+00:45:17.706 --> 00:45:19.116 A:middle
+but it has an extra feature
+
+00:45:19.116 --> 00:45:21.036 A:middle
+because it loads images lazily
+
+00:45:21.036 --> 00:45:22.136 A:middle
+and asynchronously.
+
+00:45:22.776 --> 00:45:24.096 A:middle
+And we can the logic for this
+
+00:45:24.096 --> 00:45:25.196 A:middle
+right here in the initializer.
+
+00:45:25.826 --> 00:45:28.026 A:middle
+What we do is we dispatch a job
+
+00:45:28.026 --> 00:45:30.106 A:middle
+to a background queue where we
+
+00:45:30.106 --> 00:45:31.476 A:middle
+will create the image on a
+
+00:45:31.476 --> 00:45:33.356 A:middle
+background thread and once that
+
+00:45:33.356 --> 00:45:35.206 A:middle
+is done we will dispatch back to
+
+00:45:35.206 --> 00:45:36.876 A:middle
+the main queue to actually
+
+00:45:36.876 --> 00:45:37.956 A:middle
+display the image on the screen.
+
+00:45:39.046 --> 00:45:40.976 A:middle
+The crash log points us to this
+
+00:45:40.976 --> 00:45:43.096 A:middle
+line of code here where we are
+
+00:45:43.286 --> 00:45:45.986 A:middle
+accessing an image cache which
+
+00:45:45.986 --> 00:45:47.506 A:middle
+we are using to make sure that
+
+00:45:47.506 --> 00:45:49.156 A:middle
+we don't unnecessarily create
+
+00:45:49.376 --> 00:45:50.806 A:middle
+the same image multiple times.
+
+00:45:51.346 --> 00:45:52.616 A:middle
+So maybe there is some bug in
+
+00:45:52.616 --> 00:45:54.246 A:middle
+the way my cache is implemented.
+
+00:45:54.896 --> 00:45:56.146 A:middle
+Let's try to avoid guessing,
+
+00:45:56.246 --> 00:45:58.246 A:middle
+instead I'll run the app in the
+
+00:45:58.246 --> 00:45:59.496 A:middle
+Simulator and we will try to
+
+00:45:59.496 --> 00:46:00.336 A:middle
+reproduce this crash.
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.636 --> 00:38:00.146 A:middle
+For a parameter of type pet
+
+00:38:00.826 --> 00:38:02.046 A:middle
+following the verb draw.
+
+00:38:03.096 --> 00:38:06.456 A:middle
+And similarly the word point for
+
+00:38:06.456 --> 00:38:08.206 A:middle
+a parameter of type CGPoint
+
+00:38:08.776 --> 00:38:10.606 A:middle
+following the preposition at.
+
+00:38:11.736 --> 00:38:13.946 A:middle
+These words are omitted in Swift
+
+00:38:14.236 --> 00:38:15.886 A:middle
+when the method is imported as
+
+00:38:15.886 --> 00:38:18.326 A:middle
+simply draw at.
+
+00:38:19.156 --> 00:38:20.266 A:middle
+So how does this work?
+
+00:38:21.126 --> 00:38:22.806 A:middle
+Well, you might be surprised to
+
+00:38:22.806 --> 00:38:24.996 A:middle
+know that the compiler contains
+
+00:38:24.996 --> 00:38:26.946 A:middle
+a list of common English verbs
+
+00:38:26.946 --> 00:38:27.836 A:middle
+and prepositions.
+
+00:38:29.416 --> 00:38:31.346 A:middle
+Because it is just a hard-coded
+
+00:38:31.346 --> 00:38:32.656 A:middle
+list and human language is
+
+00:38:32.656 --> 00:38:34.416 A:middle
+messy, sometimes it's missing
+
+00:38:34.416 --> 00:38:34.936 A:middle
+words.
+
+00:38:35.796 --> 00:38:37.376 A:middle
+Furthermore, in order to match
+
+00:38:37.376 --> 00:38:39.126 A:middle
+Swift's naming conventions, the
+
+00:38:39.126 --> 00:38:40.826 A:middle
+importer will also rename
+
+00:38:40.826 --> 00:38:43.116 A:middle
+methods to remove words based on
+
+00:38:43.116 --> 00:38:43.996 A:middle
+the part of speech.
+
+00:38:45.206 --> 00:38:47.316 A:middle
+For example the verb feed is not
+
+00:38:47.366 --> 00:38:49.376 A:middle
+in the list, and so feedPet is
+
+00:38:49.376 --> 00:38:51.646 A:middle
+not imported as feed as we might
+
+00:38:51.646 --> 00:38:52.096 A:middle
+expect.
+
+00:38:53.546 --> 00:38:55.246 A:middle
+When this happens, you can use
+
+00:38:55.246 --> 00:38:57.686 A:middle
+the NS Swift Name annotation to
+
+00:38:57.686 --> 00:38:59.416 A:middle
+have the compiler import the
+
+00:38:59.416 --> 00:39:01.966 A:middle
+method exactly as you want.
+

@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:00.754 --> 00:12:03.323 align:middle line:-2
+所以我猜我们会有一个
+名为feelingCool的变量
+
+00:12:03.891 --> 00:12:04.858 align:middle line:-1
+好
+
+00:12:04.925 --> 00:12:06.927 align:middle line:-1
+Ben 配方的第二步是什么？
+
+00:12:07.494 --> 00:12:09.730 align:middle line:-1
+现在 每当这种状态改变时
+
+00:12:09.796 --> 00:12:13.033 align:middle line:-2
+我们需要通过调用setNeedsLayout
+来脏化布局系统
+
+00:12:13.600 --> 00:12:17.371 align:middle line:-2
+但我们需要确保每次状态发生变化时
+都会进行该操作
+
+00:12:17.437 --> 00:12:21.141 align:middle line:-2
+此状态可能会在我们app中的
+各个位置发生改变
+
+00:12:21.575 --> 00:12:24.678 align:middle line:-2
+那么 Peter
+我们怎样才能确保当变化发生时
+
+00:12:24.745 --> 00:12:25.846 align:middle line:-1
+我们总能脏化布局系统呢？
+
+00:12:25.913 --> 00:12:26.847 align:middle line:-1
+我很高兴你问这点
+
+00:12:26.914 --> 00:12:28.749 align:middle line:-1
+因为我觉得我对此有个好主意
+
+00:12:29.316 --> 00:12:32.452 align:middle line:-2
+我们可以使用一个名为
+Swift属性观察器的功能
+
+00:12:33.287 --> 00:12:37.257 align:middle line:-2
+它让我们能够在属性被设置
+之前或之后运行代码
+
+00:12:37.758 --> 00:12:40.160 align:middle line:-2
+因此我们可以使用
+didSet属性观察器
+
+00:12:40.627 --> 00:12:42.129 align:middle line:-2
+来调用
+setNeedsLayout
+
+00:12:42.563 --> 00:12:46.366 align:middle line:-2
+这是在你的app中使用
+Swift属性观察器的绝好时机
+
+00:12:47.267 --> 00:12:49.102 align:middle line:-1
+好的 我们差不多完成了
+
+00:12:49.536 --> 00:12:51.405 align:middle line:-1
+Ben 配方的最后一步是什么
+
+00:12:51.839 --> 00:12:53.507 align:middle line:-1
+Peter 通过使用该状态
+
+00:12:53.574 --> 00:12:56.376 align:middle line:-2
+我们需要在layoutSubviews中
+更新我们的UI
+
+00:12:57.311 --> 00:12:58.879 align:middle line:-1
+好的 这很简单
+
+00:12:59.313 --> 00:13:03.083 align:middle line:-2
+覆盖layoutSubviews
+并基于feelingCool值
+

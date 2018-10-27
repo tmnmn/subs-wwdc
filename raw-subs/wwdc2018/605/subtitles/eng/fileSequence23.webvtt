@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:01.576 --> 00:23:03.046 A:middle
+So, let's talk next about the
+
+00:23:03.046 --> 00:23:04.326 A:middle
+physics simulation in the game.
+
+00:23:04.616 --> 00:23:06.106 A:middle
+For a game like SwiftShot,
+
+00:23:06.726 --> 00:23:08.156 A:middle
+physics is really key to create
+
+00:23:08.156 --> 00:23:10.206 A:middle
+a fun interaction that comes
+
+00:23:10.206 --> 00:23:11.296 A:middle
+from the realistic interaction
+
+00:23:11.296 --> 00:23:12.316 A:middle
+between objects and the game.
+
+00:23:12.816 --> 00:23:14.146 A:middle
+It's a really great experience
+
+00:23:14.146 --> 00:23:16.106 A:middle
+to take that shot and bounce it
+
+00:23:16.106 --> 00:23:17.556 A:middle
+off an object in a game and take
+
+00:23:17.556 --> 00:23:18.526 A:middle
+out the opponent's slingshot.
+
+00:23:19.346 --> 00:23:20.676 A:middle
+And that really comes from the
+
+00:23:20.676 --> 00:23:21.466 A:middle
+physics simulation.
+
+00:23:23.716 --> 00:23:25.066 A:middle
+We use SceneKit's built-in
+
+00:23:25.066 --> 00:23:25.656 A:middle
+physics engine.
+
+00:23:25.986 --> 00:23:26.886 A:middle
+It's integrated with the
+
+00:23:26.886 --> 00:23:28.336 A:middle
+rendering engine, updating
+
+00:23:28.386 --> 00:23:29.476 A:middle
+positions of the object and
+
+00:23:29.526 --> 00:23:30.996 A:middle
+scene automatically, and
+
+00:23:30.996 --> 00:23:32.676 A:middle
+informing us of collisions using
+
+00:23:32.676 --> 00:23:33.196 A:middle
+delegation.
+
+00:23:34.616 --> 00:23:35.966 A:middle
+In our implementation, we
+
+00:23:35.966 --> 00:23:37.286 A:middle
+decided that the best approach
+
+00:23:37.356 --> 00:23:39.426 A:middle
+was for one device in the
+
+00:23:39.426 --> 00:23:40.516 A:middle
+session to act as a source of
+
+00:23:40.546 --> 00:23:41.576 A:middle
+truth or server.
+
+00:23:42.296 --> 00:23:44.306 A:middle
+It sends periodic updates about
+
+00:23:44.306 --> 00:23:45.846 A:middle
+the physics state to the other
+
+00:23:45.846 --> 00:23:47.596 A:middle
+devices in the network using
+
+00:23:47.596 --> 00:23:49.026 A:middle
+that multi-peer connectivity
+
+00:23:49.296 --> 00:23:50.876 A:middle
+broadcast method.
+
+00:23:52.706 --> 00:23:55.716 A:middle
+Now, the other devices also have
+
+00:23:55.756 --> 00:23:56.986 A:middle
+the physics simulation on.
+
+00:23:57.736 --> 00:23:58.856 A:middle
+That's because we don't send
+
+00:23:58.856 --> 00:24:00.436 A:middle
+information about every object
+

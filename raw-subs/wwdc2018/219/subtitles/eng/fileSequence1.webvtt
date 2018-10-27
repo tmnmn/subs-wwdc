@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.996 --> 00:01:00.786 A:middle
+touch, briefly, on integrating
+
+00:01:00.786 --> 00:01:02.806 A:middle
+advanced CPU and GPU
+
+00:01:02.806 --> 00:01:04.516 A:middle
+technologies into your
+
+00:01:04.516 --> 00:01:05.296 A:middle
+applications.
+
+00:01:06.466 --> 00:01:07.626 A:middle
+And throughout this talk we're
+
+00:01:07.626 --> 00:01:09.336 A:middle
+going to be focusing primarily
+
+00:01:09.336 --> 00:01:11.706 A:middle
+on our use of two scarce
+
+00:01:11.706 --> 00:01:14.116 A:middle
+resources on the device; memory
+
+00:01:14.516 --> 00:01:15.336 A:middle
+and CPU.
+
+00:01:16.026 --> 00:01:17.216 A:middle
+And we tend to think of these
+
+00:01:17.216 --> 00:01:19.296 A:middle
+things as separate quantities.
+
+00:01:19.636 --> 00:01:20.716 A:middle
+They have their own tracks in
+
+00:01:20.716 --> 00:01:21.746 A:middle
+the debug navigator.
+
+00:01:22.116 --> 00:01:23.966 A:middle
+They have their own instruments
+
+00:01:23.966 --> 00:01:25.336 A:middle
+in the instruments application.
+
+00:01:25.886 --> 00:01:27.406 A:middle
+But really, they're intricately
+
+00:01:27.406 --> 00:01:27.786 A:middle
+linked.
+
+00:01:28.906 --> 00:01:31.736 A:middle
+And it might be apparent that as
+
+00:01:31.906 --> 00:01:34.206 A:middle
+your application uses more CPU,
+
+00:01:34.346 --> 00:01:36.406 A:middle
+that has a negative impact on
+
+00:01:36.406 --> 00:01:38.116 A:middle
+the battery life and the
+
+00:01:38.116 --> 00:01:39.076 A:middle
+responsiveness of your
+
+00:01:39.076 --> 00:01:39.706 A:middle
+application.
+
+00:01:39.986 --> 00:01:42.146 A:middle
+But what might be less obvious
+
+00:01:42.466 --> 00:01:44.876 A:middle
+is that as your application and
+
+00:01:44.876 --> 00:01:46.426 A:middle
+other applications on the system
+
+00:01:46.726 --> 00:01:49.306 A:middle
+consume more memory, that also
+
+00:01:49.306 --> 00:01:51.236 A:middle
+causes more CPU utilization.
+
+00:01:51.656 --> 00:01:52.966 A:middle
+Which, has further detrimental
+
+00:01:52.966 --> 00:01:55.046 A:middle
+effects on battery life and
+
+00:01:55.046 --> 00:01:55.546 A:middle
+performance.
+
+00:01:55.546 --> 00:01:57.216 A:middle
+So, we're going to focus on how
+
+00:01:57.216 --> 00:01:58.406 A:middle
+to improve our use of these
+
+00:01:58.406 --> 00:01:59.006 A:middle
+resources.
+
+00:01:59.876 --> 00:02:03.006 A:middle
+What better context for
+

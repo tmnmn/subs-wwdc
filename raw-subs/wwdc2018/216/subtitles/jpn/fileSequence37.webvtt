@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:57.718 --> 00:37:00.921 align:start position:25% line:-1
+実際は何もしなくていいのです
+
+00:37:03.457 --> 00:37:06.793 align:start position:25% line:-1
+アクセス方法は分かりましたね
+
+00:37:06.894 --> 00:37:12.966 align:start position:21% line:-2
+事例で説明した方法で
+ドキュメントにアクセスしましょう
+
+00:37:14.401 --> 00:37:19.907 align:start position:23% line:-2
+ご覧のとおり
+クラウド上の複数のAppからの
+
+00:37:20.007 --> 00:37:24.545 align:start position:30% line:-2
+ドキュメントへの
+同時アクセスも可能です
+
+00:37:25.212 --> 00:37:28.582 align:start position:27% line:-1
+ここではアクセスするための
+
+00:37:28.715 --> 00:37:32.452 align:start position:21% line:-1
+システムの仕組みが必要となります
+
+00:37:32.619 --> 00:37:38.659 align:start position:21% line:-2
+この仕組みにより
+他からのドキュメントの読み書きを
+
+00:37:38.759 --> 00:37:39.793 align:start position:41% line:-1
+防ぐのです
+
+00:37:41.228 --> 00:37:45.332 align:start position:27% line:-2
+ファイルコーディネーション
+という仕組みです
+
+00:37:45.432 --> 00:37:50.938 align:start position:12% line:-2
+NSFileCoordinatorと
+NSFilePresenterで実行します
+
+00:37:51.572 --> 00:37:55.776 align:start position:30% line:-2
+このコードは
+読み書きをロックします
+
+00:37:57.111 --> 00:38:03.984 align:start position:25% line:-2
+ローカルにないドキュメントの
+ダウンロードの命令もします
+

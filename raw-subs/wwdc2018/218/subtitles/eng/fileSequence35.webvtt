@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.816 --> 00:35:00.176 A:middle
+also all of the controls that
+
+00:35:00.176 --> 00:35:01.676 A:middle
+are immediate subviews of your
+
+00:35:01.676 --> 00:35:02.426 A:middle
+TableCellView.
+
+00:35:03.856 --> 00:35:05.286 A:middle
+Now, traditionally, we have set
+
+00:35:05.286 --> 00:35:07.376 A:middle
+the light background style on
+
+00:35:07.376 --> 00:35:09.146 A:middle
+unselected rows and the dark
+
+00:35:09.146 --> 00:35:10.346 A:middle
+background style on selected
+
+00:35:10.346 --> 00:35:10.666 A:middle
+ones.
+
+00:35:11.206 --> 00:35:13.336 A:middle
+But, in the face of this
+
+00:35:13.336 --> 00:35:15.416 A:middle
+brand-new, beautiful theme where
+
+00:35:15.416 --> 00:35:16.586 A:middle
+the background is effectively
+
+00:35:16.586 --> 00:35:18.526 A:middle
+always dark, these names don't
+
+00:35:18.526 --> 00:35:20.006 A:middle
+make sense anymore and so we've
+
+00:35:20.006 --> 00:35:22.096 A:middle
+renamed them to normal and
+
+00:35:22.096 --> 00:35:23.426 A:middle
+emphasized, respectively.
+
+00:35:24.006 --> 00:35:25.616 A:middle
+And these are just more semantic
+
+00:35:25.616 --> 00:35:27.356 A:middle
+descriptions that better match
+
+00:35:27.356 --> 00:35:29.266 A:middle
+the way that these enum cases
+
+00:35:29.266 --> 00:35:30.496 A:middle
+are used in a modern Cocoa
+
+00:35:30.496 --> 00:35:31.076 A:middle
+application.
+
+00:35:32.636 --> 00:35:33.866 A:middle
+We also have some additional
+
+00:35:33.866 --> 00:35:35.146 A:middle
+updates with background styles,
+
+00:35:35.396 --> 00:35:37.196 A:middle
+including that TableView will
+
+00:35:37.196 --> 00:35:38.446 A:middle
+now automatically set that
+
+00:35:38.446 --> 00:35:40.806 A:middle
+background style recursively on
+
+00:35:40.806 --> 00:35:41.796 A:middle
+all of the controls in your
+
+00:35:41.796 --> 00:35:43.586 A:middle
+table row, not just the ones
+
+00:35:43.586 --> 00:35:44.946 A:middle
+that are immediate subviews of
+
+00:35:44.946 --> 00:35:45.496 A:middle
+your CellView.
+
+00:35:46.006 --> 00:35:46.996 A:middle
+And so, if you've been catching
+
+00:35:46.996 --> 00:35:48.316 A:middle
+that background style and trying
+
+00:35:48.316 --> 00:35:49.556 A:middle
+to forward it along to all these
+
+00:35:49.556 --> 00:35:51.036 A:middle
+subviews because you wanted to
+
+00:35:51.036 --> 00:35:52.226 A:middle
+use a stacked view or something
+
+00:35:52.226 --> 00:35:53.886 A:middle
+for layout, you no longer have
+
+00:35:53.886 --> 00:35:55.346 A:middle
+to do that on Mojave.
+
+00:35:56.086 --> 00:35:58.286 A:middle
+That's the applause of somebody
+
+00:35:58.286 --> 00:35:59.196 A:middle
+who's done this manually.
+
+00:35:59.196 --> 00:35:59.996 A:middle
+Thank you, I agree.
+

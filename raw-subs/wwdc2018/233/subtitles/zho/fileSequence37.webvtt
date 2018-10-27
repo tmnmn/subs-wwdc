@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.921 --> 00:37:04.892 align:middle line:-2
+若信息多于userInfo字典中
+能够存储的信息
+
+00:37:04.958 --> 00:37:07.694 align:middle line:-2
+你可以使用NSUserActivity的
+一个强大功能
+
+00:37:08.128 --> 00:37:10.097 align:middle line:-1
+它被称为延续流
+
+00:37:10.697 --> 00:37:14.701 align:middle line:-2
+你所要做的就是将
+supportsContinuationStreams属性
+
+00:37:14.768 --> 00:37:15.769 align:middle line:-1
+设为true
+
+00:37:16.270 --> 00:37:18.705 align:middle line:-1
+然后在后续设备上
+
+00:37:19.173 --> 00:37:22.509 align:middle line:-2
+你将调用
+NSUserActivity上的
+
+00:37:22.576 --> 00:37:24.011 align:middle line:-1
+getContinuationStreams方法
+
+00:37:24.444 --> 00:37:27.447 align:middle line:-1
+它将为你提供输入和输出流
+
+00:37:28.482 --> 00:37:32.586 align:middle line:-2
+在源设备上
+NSUserActivity的委托方法
+
+00:37:32.653 --> 00:37:37.057 align:middle line:-2
+将收到一个回调
+并也为其提供相应的输入和输出流
+
+00:37:37.858 --> 00:37:41.495 align:middle line:-1
+通过这些管道 你就可以在源设备
+
+00:37:41.562 --> 00:37:44.565 align:middle line:-1
+和后续设备之间进行双向通信
+
+00:37:45.332 --> 00:37:48.202 align:middle line:-1
+但你最好尽快完成这个过程
+
+00:37:48.268 --> 00:37:51.471 align:middle line:-2
+因为用户可能正在离开
+并断开两个设备的连接
+
+00:37:52.439 --> 00:37:53.941 align:middle line:-1
+关于流的更多信息
+
+00:37:54.007 --> 00:37:57.611 align:middle line:-2
+请查看developer.apple.com上的
+“流编程指南”
+
+00:37:58.846 --> 00:38:00.480 align:middle line:-1
+这非常适合传输某些
+

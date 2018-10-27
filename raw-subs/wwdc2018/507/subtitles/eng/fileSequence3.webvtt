@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.016 --> 00:03:00.336 A:middle
+delivered on our platforms come
+
+00:03:00.336 --> 00:03:01.676 A:middle
+through AVContentKeySession.
+
+00:03:03.156 --> 00:03:05.286 A:middle
+The API has helped developers
+
+00:03:05.286 --> 00:03:06.856 A:middle
+optimize key delivery in their
+
+00:03:06.856 --> 00:03:07.726 A:middle
+applications.
+
+00:03:08.876 --> 00:03:10.436 A:middle
+I will present some ways you
+
+00:03:10.436 --> 00:03:11.876 A:middle
+could get more out of the API.
+
+00:03:11.876 --> 00:03:14.206 A:middle
+But before that, let's see what
+
+00:03:14.206 --> 00:03:15.256 A:middle
+makes AVContentKeySession
+
+00:03:15.256 --> 00:03:15.816 A:middle
+different.
+
+00:03:17.456 --> 00:03:19.656 A:middle
+With AVAssetResourceLoader
+
+00:03:19.656 --> 00:03:22.266 A:middle
+applications could load keys
+
+00:03:22.266 --> 00:03:24.426 A:middle
+only when AVFoundation requires
+
+00:03:24.426 --> 00:03:26.766 A:middle
+one and sends an on-demand key
+
+00:03:26.766 --> 00:03:27.626 A:middle
+loading request.
+
+00:03:28.956 --> 00:03:30.786 A:middle
+This, typically, happens when
+
+00:03:30.786 --> 00:03:31.816 A:middle
+AVFoundation downloads
+
+00:03:31.816 --> 00:03:33.506 A:middle
+playlists, parses them, and then
+
+00:03:33.506 --> 00:03:35.346 A:middle
+finds out that the content is
+
+00:03:35.986 --> 00:03:36.736 A:middle
+encrypted.
+
+00:03:36.736 --> 00:03:38.206 A:middle
+Further, AVFoundation could send
+
+00:03:38.206 --> 00:03:39.886 A:middle
+these key loading requests at
+
+00:03:39.886 --> 00:03:41.306 A:middle
+any point during playback.
+
+00:03:41.926 --> 00:03:44.106 A:middle
+For example, AVFoundation sends
+
+00:03:44.366 --> 00:03:45.996 A:middle
+new key loading requests if it's
+
+00:03:46.086 --> 00:03:49.466 A:middle
+switched to a radian that uses a
+
+00:03:49.466 --> 00:03:50.616 A:middle
+different key in the middle of
+
+00:03:50.616 --> 00:03:51.306 A:middle
+the playback.
+
+00:03:52.476 --> 00:03:53.596 A:middle
+AVContentKeySession,
+
+00:03:53.596 --> 00:03:55.056 A:middle
+essentially, changes that model.
+
+00:03:56.246 --> 00:03:58.086 A:middle
+It decouples key loading from
+
+00:03:58.086 --> 00:04:00.026 A:middle
+media loading or playback and
+

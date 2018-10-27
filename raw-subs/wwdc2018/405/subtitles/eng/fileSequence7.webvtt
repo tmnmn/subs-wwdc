@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.426 --> 00:07:01.156 A:middle
+points are associated with each
+
+00:07:01.156 --> 00:07:01.326 A:middle
+other.
+
+00:07:02.846 --> 00:07:03.136 A:middle
+All right.
+
+00:07:03.926 --> 00:07:05.796 A:middle
+It's not a super simple example.
+
+00:07:06.226 --> 00:07:07.876 A:middle
+If your program ever does step
+
+00:07:07.906 --> 00:07:09.736 A:middle
+one and then step two then step
+
+00:07:09.736 --> 00:07:11.046 A:middle
+three in a sequential fashion
+
+00:07:11.166 --> 00:07:11.816 A:middle
+then that would work.
+
+00:07:12.256 --> 00:07:14.706 A:middle
+But in our systems, often we
+
+00:07:14.706 --> 00:07:16.026 A:middle
+have a lot of work that happens
+
+00:07:16.026 --> 00:07:16.686 A:middle
+asynchronously.
+
+00:07:17.146 --> 00:07:17.386 A:middle
+Right.
+
+00:07:17.796 --> 00:07:19.816 A:middle
+So instead of having step one,
+
+00:07:19.816 --> 00:07:21.066 A:middle
+step two, step three, we're
+
+00:07:21.066 --> 00:07:23.136 A:middle
+often kicking things off in
+
+00:07:23.136 --> 00:07:24.796 A:middle
+sequence, right, and then
+
+00:07:24.796 --> 00:07:25.956 A:middle
+letting them complete later.
+
+00:07:26.296 --> 00:07:27.106 A:middle
+So that means that these
+
+00:07:27.736 --> 00:07:28.766 A:middle
+operations can happen
+
+00:07:28.766 --> 00:07:29.346 A:middle
+concurrently.
+
+00:07:29.346 --> 00:07:30.086 A:middle
+They can overlap.
+
+00:07:31.226 --> 00:07:32.786 A:middle
+In that case, we need to give
+
+00:07:32.786 --> 00:07:34.046 A:middle
+some additional piece of
+
+00:07:34.046 --> 00:07:35.636 A:middle
+information to the system in
+
+00:07:35.636 --> 00:07:36.836 A:middle
+order for it to tell those
+
+00:07:36.836 --> 00:07:38.126 A:middle
+signposts apart from each other.
+
+00:07:39.156 --> 00:07:42.096 A:middle
+And to do that, so far we've
+
+00:07:42.096 --> 00:07:43.366 A:middle
+only used that name.
+
+00:07:43.716 --> 00:07:43.886 A:middle
+Right.
+
+00:07:43.886 --> 00:07:45.726 A:middle
+That name will match up the end
+
+00:07:45.726 --> 00:07:46.566 A:middle
+and the beginning point.
+
+00:07:47.276 --> 00:07:48.436 A:middle
+So that string literal so far
+
+00:07:48.436 --> 00:07:50.026 A:middle
+has identified intervals, but it
+
+00:07:50.026 --> 00:07:51.236 A:middle
+hasn't given us a way to
+
+00:07:51.236 --> 00:07:53.036 A:middle
+discriminate between overlapping
+
+00:07:53.036 --> 00:07:53.436 A:middle
+intervals.
+
+00:07:54.236 --> 00:07:55.346 A:middle
+To do that, we're going to add
+
+00:07:55.346 --> 00:07:56.606 A:middle
+another piece of data to our
+
+00:07:56.606 --> 00:07:58.516 A:middle
+signpost calls called a signpost
+
+00:07:58.516 --> 00:07:58.816 A:middle
+ID.
+

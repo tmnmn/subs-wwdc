@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:57.036 --> 00:28:00.306 A:middle
+The compiler is smart enough to
+
+00:28:00.306 --> 00:28:01.976 A:middle
+know that when you make change
+
+00:28:01.976 --> 00:28:04.136 A:middle
+within a function body, in this
+
+00:28:04.166 --> 00:28:05.586 A:middle
+case making the assertion more
+
+00:28:05.586 --> 00:28:09.056 A:middle
+appropriate, that only that file
+
+00:28:09.056 --> 00:28:10.316 A:middle
+will need to be recompiled.
+
+00:28:11.136 --> 00:28:13.446 A:middle
+Other files won't have to change
+
+00:28:13.616 --> 00:28:15.556 A:middle
+how they use the API's from the
+
+00:28:15.586 --> 00:28:16.196 A:middle
+first file.
+
+00:28:16.646 --> 00:28:20.206 A:middle
+However, it does need to be
+
+00:28:20.206 --> 00:28:20.946 A:middle
+conservative.
+
+00:28:21.096 --> 00:28:22.916 A:middle
+And so if I add a separate type
+
+00:28:22.916 --> 00:28:25.326 A:middle
+to this file, a human can tell
+
+00:28:25.326 --> 00:28:26.706 A:middle
+that this path segment struct
+
+00:28:26.906 --> 00:28:28.336 A:middle
+won't affect the file on the
+
+00:28:28.336 --> 00:28:28.636 A:middle
+right.
+
+00:28:29.256 --> 00:28:30.596 A:middle
+But the compiler will still be
+
+00:28:30.596 --> 00:28:31.876 A:middle
+conservative and rebuild them
+
+00:28:31.876 --> 00:28:32.186 A:middle
+both.
+
+00:28:32.726 --> 00:28:36.116 A:middle
+Let's see how this applies to
+
+00:28:36.116 --> 00:28:37.456 A:middle
+the game example that David was
+
+00:28:37.456 --> 00:28:38.216 A:middle
+using earlier.
+
+00:28:39.246 --> 00:28:40.576 A:middle
+So here we have the app target
+
+00:28:40.576 --> 00:28:41.856 A:middle
+and the Utilities framework.
+
+00:28:41.856 --> 00:28:42.766 A:middle
+And I'm showing some of the
+
+00:28:42.766 --> 00:28:44.016 A:middle
+Swift files that are in each
+
+00:28:44.016 --> 00:28:44.426 A:middle
+target.
+
+00:28:45.586 --> 00:28:47.096 A:middle
+So if I change a file in the App
+
+00:28:47.096 --> 00:28:50.636 A:middle
+target, well, we know already
+
+00:28:50.636 --> 00:28:51.616 A:middle
+that that file needs to be
+
+00:28:51.616 --> 00:28:52.286 A:middle
+recompiled.
+
+00:28:52.436 --> 00:28:53.606 A:middle
+And of course, anything that
+
+00:28:53.606 --> 00:28:55.146 A:middle
+depends on that file will also
+
+00:28:55.146 --> 00:28:56.236 A:middle
+need to be recompiled.
+
+00:28:57.026 --> 00:28:58.316 A:middle
+But there's no chance that
+
+00:28:58.316 --> 00:28:59.716 A:middle
+anything within the utilities
+
+00:28:59.756 --> 00:29:01.376 A:middle
+target will be recompiled.
+

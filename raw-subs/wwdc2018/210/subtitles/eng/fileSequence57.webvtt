@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:56:58.966 --> 00:57:00.386 A:middle
+the light appearance.
+
+00:57:00.786 --> 00:57:01.976 A:middle
+Adding support for things like
+
+00:57:01.976 --> 00:57:03.416 A:middle
+the accent color as well as
+
+00:57:03.416 --> 00:57:04.616 A:middle
+making our label colors more
+
+00:57:04.616 --> 00:57:05.756 A:middle
+consistent with the rest of the
+
+00:57:05.756 --> 00:57:06.146 A:middle
+system.
+
+00:57:07.436 --> 00:57:09.246 A:middle
+Further, these same sets of
+
+00:57:09.246 --> 00:57:11.196 A:middle
+changes needed to be great in
+
+00:57:11.196 --> 00:57:13.446 A:middle
+Dark Mode are also the same sets
+
+00:57:13.446 --> 00:57:15.146 A:middle
+of changes needed to have great
+
+00:57:15.146 --> 00:57:16.906 A:middle
+support for the high contrast
+
+00:57:17.066 --> 00:57:18.056 A:middle
+accessibility setting.
+
+00:57:18.146 --> 00:57:20.916 A:middle
+So, to reiterate what those
+
+00:57:20.916 --> 00:57:22.436 A:middle
+steps were, the first and
+
+00:57:22.436 --> 00:57:24.166 A:middle
+foremost was linking on the
+
+00:57:24.166 --> 00:57:27.636 A:middle
+10.14 SDK using Xcode 10.
+
+00:57:27.636 --> 00:57:29.536 A:middle
+For a handful of apps that
+
+00:57:29.536 --> 00:57:30.966 A:middle
+already use system controls and
+
+00:57:30.966 --> 00:57:32.986 A:middle
+system colors, this is the only
+
+00:57:32.986 --> 00:57:34.026 A:middle
+step that's going to be needed,
+
+00:57:34.166 --> 00:57:35.476 A:middle
+and it's already going to look
+
+00:57:35.476 --> 00:57:36.306 A:middle
+great in Dark Mode.
+
+00:57:36.846 --> 00:57:38.646 A:middle
+For the rest of us, the next
+
+00:57:38.646 --> 00:57:40.536 A:middle
+step is to audit our app for the
+
+00:57:40.536 --> 00:57:42.056 A:middle
+use of static colors,
+
+00:57:42.736 --> 00:57:44.506 A:middle
+non-template images, and
+
+00:57:44.666 --> 00:57:46.376 A:middle
+nonsemantic materials, and
+
+00:57:46.376 --> 00:57:47.526 A:middle
+replace those as appropriate.
+
+00:57:47.526 --> 00:57:49.396 A:middle
+For instance, this might be
+
+00:57:49.396 --> 00:57:51.276 A:middle
+using a system color, a semantic
+
+00:57:51.276 --> 00:57:53.216 A:middle
+material, or, in some cases,
+
+00:57:53.216 --> 00:57:54.686 A:middle
+defining a custom asset catalog
+
+00:57:54.686 --> 00:57:55.686 A:middle
+color or image.
+
+00:57:56.506 --> 00:57:57.416 A:middle
+And, again, it's important to
+
+00:57:57.416 --> 00:57:58.326 A:middle
+keep an eye out for those
+
+00:57:58.326 --> 00:58:00.216 A:middle
+accidental appearance overrides.
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:58.156 --> 00:35:00.866 A:middle
+-O, compared with the p
+
+00:35:00.866 --> 00:35:02.046 A:middle
+commands, which is simply an
+
+00:35:02.046 --> 00:35:03.006 A:middle
+alias for expression.
+
+00:35:03.476 --> 00:35:05.946 A:middle
+And it uses LLDB's built-in
+
+00:35:05.946 --> 00:35:07.116 A:middle
+formatters to show a
+
+00:35:07.116 --> 00:35:08.716 A:middle
+representation of that object.
+
+00:35:10.126 --> 00:35:10.976 A:middle
+The third command that's
+
+00:35:10.976 --> 00:35:12.836 A:middle
+important to know is frame
+
+00:35:12.836 --> 00:35:13.296 A:middle
+variable.
+
+00:35:13.696 --> 00:35:14.916 A:middle
+It differs from the previous two
+
+00:35:14.916 --> 00:35:15.736 A:middle
+in that it doesn't have to
+
+00:35:15.736 --> 00:35:16.886 A:middle
+compile and evaluate an
+
+00:35:16.886 --> 00:35:17.756 A:middle
+expression at all.
+
+00:35:17.986 --> 00:35:19.446 A:middle
+It simply reads the value of the
+
+00:35:19.446 --> 00:35:21.066 A:middle
+name variable directly from
+
+00:35:21.066 --> 00:35:22.686 A:middle
+memory and then uses LLDB's
+
+00:35:22.686 --> 00:35:23.586 A:middle
+built-in formatters.
+
+00:35:24.216 --> 00:35:25.196 A:middle
+So the choice of which command
+
+00:35:25.196 --> 00:35:26.266 A:middle
+to use is more personal
+
+00:35:26.266 --> 00:35:27.336 A:middle
+preference and the type of
+
+00:35:27.426 --> 00:35:28.436 A:middle
+information you want to see
+
+00:35:28.436 --> 00:35:29.076 A:middle
+while debugging.
+
+00:35:29.636 --> 00:35:30.876 A:middle
+But it's important to remember
+
+00:35:30.876 --> 00:35:31.746 A:middle
+that if you ever end up in a
+
+00:35:31.746 --> 00:35:33.986 A:middle
+situation where expressions are
+
+00:35:33.986 --> 00:35:36.356 A:middle
+failing or so po and p may not
+
+00:35:36.356 --> 00:35:38.036 A:middle
+be working for you, if you need
+
+00:35:38.036 --> 00:35:39.006 A:middle
+to inspect a variable in the
+
+00:35:39.006 --> 00:35:40.066 A:middle
+current frame, then frame
+
+00:35:40.066 --> 00:35:40.906 A:middle
+variable should still work for
+
+00:35:40.946 --> 00:35:41.000 A:middle
+you.
+
+00:35:44.176 --> 00:35:45.436 A:middle
+And with that, I'd like to hand
+
+00:35:45.436 --> 00:35:47.246 A:middle
+over to Sebastian, who's going
+
+00:35:47.246 --> 00:35:48.596 A:middle
+to tell you about some advanced
+
+00:35:48.596 --> 00:35:49.536 A:middle
+view debugging techniques.
+
+00:35:49.536 --> 00:35:49.866 A:middle
+Thank you.
+
+00:35:50.516 --> 00:35:55.026 A:middle
+[ Applause ]
+
+00:35:55.526 --> 00:35:56.076 A:middle
+&gt;&gt; Thank you, Chris.
+
+00:35:58.476 --> 00:36:01.646 A:middle
+I'm excited to show you tips and
+

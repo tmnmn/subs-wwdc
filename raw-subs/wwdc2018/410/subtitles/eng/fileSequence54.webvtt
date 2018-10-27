@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.156 --> 00:54:00.646 A:middle
+that the last five-second
+
+00:54:00.646 --> 00:54:03.466 A:middle
+recording mode is by far the
+
+00:54:03.466 --> 00:54:04.066 A:middle
+most efficient.
+
+00:54:04.346 --> 00:54:05.816 A:middle
+Now the way you switch that is
+
+00:54:05.816 --> 00:54:07.256 A:middle
+in the recording options of your
+
+00:54:07.256 --> 00:54:08.886 A:middle
+trace document, you'll see that
+
+00:54:08.886 --> 00:54:09.776 A:middle
+you have a choice between
+
+00:54:09.776 --> 00:54:11.256 A:middle
+immediate, deferred, and this
+
+00:54:11.256 --> 00:54:12.676 A:middle
+last end seconds mode.
+
+00:54:13.246 --> 00:54:14.486 A:middle
+That is going to be a lot more
+
+00:54:14.486 --> 00:54:16.476 A:middle
+efficient because what it allows
+
+00:54:16.476 --> 00:54:18.016 A:middle
+the recording technology to do
+
+00:54:18.296 --> 00:54:19.666 A:middle
+is use buffering to improve
+
+00:54:19.716 --> 00:54:20.906 A:middle
+performance so that it's not
+
+00:54:20.906 --> 00:54:21.896 A:middle
+trying to feed the data to
+
+00:54:21.896 --> 00:54:22.976 A:middle
+Instruments in real time.
+
+00:54:23.376 --> 00:54:24.586 A:middle
+Now this can have a profound
+
+00:54:24.586 --> 00:54:26.876 A:middle
+effect and it can have a huge
+
+00:54:26.876 --> 00:54:28.286 A:middle
+effect on signpost data where it
+
+00:54:28.286 --> 00:54:29.856 A:middle
+can be up to ten times faster
+
+00:54:30.096 --> 00:54:31.756 A:middle
+inside five-second mode.
+
+00:54:32.246 --> 00:54:33.326 A:middle
+Now of course the trade-off is
+
+00:54:33.466 --> 00:54:34.796 A:middle
+that you're only seeing the last
+
+00:54:34.796 --> 00:54:37.136 A:middle
+five seconds of data but for
+
+00:54:37.296 --> 00:54:39.056 A:middle
+instruments that produce high
+
+00:54:39.056 --> 00:54:40.736 A:middle
+volumes of data, that's usually
+
+00:54:40.736 --> 00:54:41.276 A:middle
+a good thing.
+
+00:54:41.446 --> 00:54:43.016 A:middle
+So this is the common mode for a
+
+00:54:43.016 --> 00:54:45.346 A:middle
+System Trace and a Metal System
+
+00:54:45.346 --> 00:54:46.486 A:middle
+Trace and Game Performance
+
+00:54:46.536 --> 00:54:46.916 A:middle
+template.
+
+00:54:47.176 --> 00:54:48.566 A:middle
+And if you're targeting one of
+
+00:54:48.566 --> 00:54:50.066 A:middle
+those kinds of applications, I
+
+00:54:50.066 --> 00:54:51.546 A:middle
+would also opt your instrument
+
+00:54:51.546 --> 00:54:53.136 A:middle
+out of supporting immediate mode
+
+00:54:53.476 --> 00:54:54.506 A:middle
+just so that your user
+
+00:54:54.506 --> 00:54:56.096 A:middle
+experience is not terrible or
+
+00:54:56.096 --> 00:54:58.086 A:middle
+Instruments gets way behind on
+
+00:54:58.086 --> 00:54:59.236 A:middle
+trying to get the data or you
+
+00:54:59.236 --> 00:55:00.286 A:middle
+run into that problem with the
+

@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.616 --> 00:36:00.346 A:middle
+but we're still bridging.
+
+00:36:01.406 --> 00:36:03.456 A:middle
+Brown here is a Swift value type
+
+00:36:03.456 --> 00:36:03.786 A:middle
+string.
+
+00:36:04.956 --> 00:36:07.976 A:middle
+And every time we call into the
+
+00:36:07.976 --> 00:36:09.526 A:middle
+objective-C API range of
+
+00:36:09.606 --> 00:36:10.376 A:middle
+[inaudible] NSString, we're
+
+00:36:10.376 --> 00:36:11.896 A:middle
+actually going to bridge that
+
+00:36:11.896 --> 00:36:13.236 A:middle
+teeny, tiny string back to an
+
+00:36:13.236 --> 00:36:13.686 A:middle
+NSString.
+
+00:36:14.966 --> 00:36:15.886 A:middle
+This is inexpensive in this
+
+00:36:15.886 --> 00:36:16.066 A:middle
+case.
+
+00:36:16.066 --> 00:36:17.546 A:middle
+I'm only doing it once, but you
+
+00:36:17.606 --> 00:36:18.696 A:middle
+can imagine, if this was in a
+
+00:36:18.696 --> 00:36:20.206 A:middle
+loop, that small amount would
+
+00:36:20.206 --> 00:36:21.006 A:middle
+add up over time.
+
+00:36:21.156 --> 00:36:23.246 A:middle
+And so you want to take care to
+
+00:36:23.476 --> 00:36:24.486 A:middle
+avoid bridging the same small
+
+00:36:24.486 --> 00:36:25.246 A:middle
+strings repeatedly.
+
+00:36:25.546 --> 00:36:26.446 A:middle
+However, before you do such
+
+00:36:26.446 --> 00:36:28.056 A:middle
+optimizations, always measure.
+
+00:36:29.476 --> 00:36:30.516 A:middle
+And so now that we've seen the
+
+00:36:30.516 --> 00:36:31.406 A:middle
+details of bridging, I want to
+
+00:36:31.406 --> 00:36:32.346 A:middle
+offer a little bit of advice
+
+00:36:32.346 --> 00:36:33.616 A:middle
+about when to use Foundation
+
+00:36:33.616 --> 00:36:34.196 A:middle
+collections.
+
+00:36:34.686 --> 00:36:36.836 A:middle
+You should consider using them
+
+00:36:36.946 --> 00:36:38.106 A:middle
+explicitly when you need a
+
+00:36:38.106 --> 00:36:39.096 A:middle
+collection with reference
+
+00:36:39.096 --> 00:36:39.756 A:middle
+semantics.
+
+00:36:40.606 --> 00:36:41.496 A:middle
+Don't need to write one of those
+
+00:36:41.496 --> 00:36:42.596 A:middle
+for yourself, we already have
+
+00:36:42.666 --> 00:36:43.326 A:middle
+many great ones.
+
+00:36:43.326 --> 00:36:44.956 A:middle
+You should also use it when
+
+00:36:44.956 --> 00:36:45.796 A:middle
+you're working with types that
+
+00:36:45.796 --> 00:36:46.876 A:middle
+you know to be reference types.
+
+00:36:47.076 --> 00:36:48.636 A:middle
+Things like NS proxies or core
+
+00:36:48.636 --> 00:36:49.716 A:middle
+data managed objects.
+
+00:36:49.956 --> 00:36:52.066 A:middle
+And the final time to consider
+
+00:36:52.066 --> 00:36:53.386 A:middle
+using them is when you're round
+
+00:36:53.386 --> 00:36:54.816 A:middle
+tripping with objective-C code,
+
+00:36:55.216 --> 00:36:56.486 A:middle
+but I'd recommend strongly doing
+
+00:36:56.486 --> 00:36:58.416 A:middle
+this only after you've measured
+
+00:36:58.416 --> 00:36:59.506 A:middle
+and identified that bridging is
+
+00:36:59.506 --> 00:37:00.516 A:middle
+indeed the culprit for whatever
+

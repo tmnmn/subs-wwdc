@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:57.497 --> 00:15:00.767 align:start position:25% line:-2
+AR Quick Lookは
+全画面表示が基本です
+
+00:15:01.268 --> 00:15:03.937 align:start position:30% line:-1
+同じように表示するには
+
+00:15:04.037 --> 00:15:07.007 align:start position:14% line:-2
+QLPreviewControllerの
+ズーム設定も
+
+00:15:07.107 --> 00:15:09.776 align:start position:29% line:-1
+同じ動きにすべきでしょう
+
+00:15:09.877 --> 00:15:14.481 align:start position:25% line:-2
+ファイルAppのサムネールが
+このように表示され
+
+00:15:15.883 --> 00:15:18.418 align:start position:32% line:-1
+閉じると元に戻ります
+
+00:15:19.786 --> 00:15:24.391 align:start position:29% line:-2
+この効果を実現する
+簡単で推奨されるコードは
+
+00:15:24.491 --> 00:15:29.930 align:start position:0% line:-2
+“previewController(  controller”
+“transitionViewFor item”
+
+00:15:30.330 --> 00:15:33.333 align:start position:27% line:-1
+面倒な処理は必要ありません
+
+00:15:33.433 --> 00:15:38.005 align:start position:29% line:-2
+Quick Lookが
+アニメ開始時と終了時の―
+
+00:15:38.105 --> 00:15:41.742 align:start position:34% line:-2
+長方形のフレームを
+推測します
+
+00:15:42.176 --> 00:15:46.880 align:start position:32% line:-2
+UIViewの設定を
+正方形にすると
+
+00:15:47.114 --> 00:15:49.483 align:start position:27% line:-1
+動きがシームレスになります
+
+00:15:49.817 --> 00:15:53.187 align:start position:34% line:-2
+正方形のアイコンと
+全画面表示を
+
+00:15:53.287 --> 00:15:55.789 align:start position:32% line:-1
+滑らかに切り替えます
+
+00:15:55.889 --> 00:16:00.427 align:start position:29% line:-2
+3Dモデルが
+魔法のように現れるのです
+

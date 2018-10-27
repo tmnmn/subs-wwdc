@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.826 --> 00:46:00.906 A:middle
+The advanced Dark Mode talk is
+
+00:46:00.906 --> 00:46:01.756 A:middle
+going to go into a lot more
+
+00:46:01.756 --> 00:46:03.036 A:middle
+detail about how you can use
+
+00:46:03.036 --> 00:46:04.366 A:middle
+those blend modes effectively.
+
+00:46:06.686 --> 00:46:08.046 A:middle
+Turns out that a lot of places
+
+00:46:08.046 --> 00:46:09.256 A:middle
+automatically get these blur
+
+00:46:09.256 --> 00:46:10.676 A:middle
+materials for free.
+
+00:46:10.856 --> 00:46:12.916 A:middle
+For instance, every titlebar of
+
+00:46:12.916 --> 00:46:14.326 A:middle
+an NSWindow will automatically
+
+00:46:14.326 --> 00:46:16.006 A:middle
+have a titlebar material showing
+
+00:46:16.006 --> 00:46:17.706 A:middle
+onto the content behind it.
+
+00:46:18.496 --> 00:46:20.156 A:middle
+Source list table views and
+
+00:46:20.156 --> 00:46:21.756 A:middle
+sidebar style split-view items
+
+00:46:22.046 --> 00:46:23.286 A:middle
+will automatically get a sidebar
+
+00:46:23.286 --> 00:46:24.866 A:middle
+material showing onto the
+
+00:46:24.866 --> 00:46:26.166 A:middle
+content behind the window.
+
+00:46:26.386 --> 00:46:29.436 A:middle
+For custom UIs it's pretty easy
+
+00:46:29.436 --> 00:46:30.616 A:middle
+to build these custom effects
+
+00:46:30.616 --> 00:46:31.426 A:middle
+ourselves, as well.
+
+00:46:32.136 --> 00:46:33.326 A:middle
+But the most important quality
+
+00:46:33.326 --> 00:46:34.726 A:middle
+of them are the material that
+
+00:46:34.726 --> 00:46:36.276 A:middle
+you choose to have them
+
+00:46:36.276 --> 00:46:36.776 A:middle
+represent.
+
+00:46:37.976 --> 00:46:39.406 A:middle
+We have a few nonsemantic
+
+00:46:39.406 --> 00:46:41.256 A:middle
+materials, which, like hardcoded
+
+00:46:41.256 --> 00:46:43.126 A:middle
+colors, just describe the exact
+
+00:46:43.126 --> 00:46:44.536 A:middle
+visual quality of the material
+
+00:46:44.916 --> 00:46:46.256 A:middle
+and not the intent of what
+
+00:46:46.256 --> 00:46:47.126 A:middle
+you're trying to represent.
+
+00:46:48.086 --> 00:46:49.536 A:middle
+These will not be adjusted for
+
+00:46:49.536 --> 00:46:50.786 A:middle
+Dark Mode and will stay with
+
+00:46:50.786 --> 00:46:51.866 A:middle
+that exact quality.
+
+00:46:53.066 --> 00:46:54.106 A:middle
+However, we have a number of
+
+00:46:54.106 --> 00:46:55.486 A:middle
+semantic materials, as well,
+
+00:46:55.986 --> 00:46:57.346 A:middle
+which allow you to describe what
+
+00:46:57.346 --> 00:46:59.126 A:middle
+type of UI your custom UI is
+
+00:46:59.256 --> 00:47:00.216 A:middle
+intending to represent.
+

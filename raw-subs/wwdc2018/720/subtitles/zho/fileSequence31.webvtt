@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.127 --> 00:31:04.565 align:middle line:0
+如果是这种情况
+你应该执行我们之前执行的操作
+
+00:31:04.631 --> 00:31:08.035 align:middle line:0
+实例化一个PKAddPassesViewController
+并呈现它
+
+00:31:10.204 --> 00:31:12.973 align:middle line:-2
+现在我们来看看
+viewDidLoad方法
+
+00:31:14.241 --> 00:31:16.410 align:middle line:-2
+正如我们刚才所见
+这里有一个二维码
+
+00:31:17.277 --> 00:31:19.379 align:middle line:-1
+同样的 如果你的凭证正面有二维码
+
+00:31:19.446 --> 00:31:20.848 align:middle line:-1
+你没必要在app中使用它
+
+00:31:20.981 --> 00:31:25.018 align:middle line:-2
+由于我们的凭证现在具有NFC功能
+我们不再需要此视图了
+
+00:31:25.085 --> 00:31:27.688 align:middle line:-1
+所以让我们删除这些代码
+
+00:31:31.525 --> 00:31:38.265 align:middle line:-2
+这个PKAddPassButton
+代表的是我们的Add to Wallet按钮
+
+00:31:39.099 --> 00:31:42.135 align:middle line:-1
+另一种增强用户体验的方法
+
+00:31:42.202 --> 00:31:46.573 align:middle line:-2
+是在他们购买门票后
+并立即显示摘要视图的时候
+
+00:31:46.874 --> 00:31:51.111 align:middle line:-2
+我们立即询问他们
+是否要将凭证添加到Wallet中
+
+00:31:51.178 --> 00:31:53.247 align:middle line:-1
+而不是在屏幕上显示一个按钮
+
+00:31:53.981 --> 00:31:57.284 align:middle line:-2
+当然你也可以将此
+Add to Apple Wallet按钮
+
+00:31:57.351 --> 00:32:00.854 align:middle line:-2
+放到app中的其他位置
+以便他们稍后决定添加凭证
+

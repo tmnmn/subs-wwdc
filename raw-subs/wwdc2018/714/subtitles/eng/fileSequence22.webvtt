@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.346 --> 00:22:01.766 A:middle
+and URLSession will create a new
+
+00:22:01.766 --> 00:22:03.126 A:middle
+connection to fetch this
+
+00:22:03.126 --> 00:22:04.726 A:middle
+resource since it does not have
+
+00:22:04.726 --> 00:22:06.006 A:middle
+an idle connection in its
+
+00:22:06.006 --> 00:22:06.676 A:middle
+connection pool.
+
+00:22:08.136 --> 00:22:09.336 A:middle
+If your app wants to fetch yet
+
+00:22:09.336 --> 00:22:10.576 A:middle
+another resource from the same
+
+00:22:10.576 --> 00:22:12.616 A:middle
+server, you can create another
+
+00:22:12.616 --> 00:22:14.726 A:middle
+URLSession task and call resume
+
+00:22:15.126 --> 00:22:16.196 A:middle
+and we will create another
+
+00:22:16.196 --> 00:22:17.236 A:middle
+connection to fetch the
+
+00:22:17.236 --> 00:22:17.856 A:middle
+resource.
+
+00:22:18.376 --> 00:22:21.236 A:middle
+In this example, I've shown you
+
+00:22:21.236 --> 00:22:22.616 A:middle
+that we've created three
+
+00:22:22.616 --> 00:22:24.236 A:middle
+different connections to fetch
+
+00:22:24.306 --> 00:22:25.866 A:middle
+these resources from the same
+
+00:22:25.866 --> 00:22:26.356 A:middle
+server.
+
+00:22:27.726 --> 00:22:29.246 A:middle
+If you notice, we've spent a lot
+
+00:22:29.246 --> 00:22:31.076 A:middle
+of time opening new connections.
+
+00:22:31.606 --> 00:22:33.466 A:middle
+Let's see how this would look
+
+00:22:33.466 --> 00:22:34.926 A:middle
+like if you used a single
+
+00:22:34.926 --> 00:22:35.716 A:middle
+connection instead.
+
+00:22:38.416 --> 00:22:39.896 A:middle
+This is a single connection
+
+00:22:39.896 --> 00:22:40.306 A:middle
+case.
+
+00:22:41.006 --> 00:22:42.436 A:middle
+We saved a lot of time by not
+
+00:22:42.436 --> 00:22:44.366 A:middle
+opening new connections, but
+
+00:22:44.366 --> 00:22:45.456 A:middle
+there is another problem here.
+
+00:22:46.636 --> 00:22:48.406 A:middle
+The request number two which is
+
+00:22:48.406 --> 00:22:50.416 A:middle
+the green request has to wait
+
+00:22:50.586 --> 00:22:52.316 A:middle
+until response number one is
+
+00:22:52.316 --> 00:22:53.056 A:middle
+fully received.
+
+00:22:54.216 --> 00:22:55.596 A:middle
+The same problem applies to
+
+00:22:55.596 --> 00:22:57.196 A:middle
+request number three which is
+
+00:22:57.196 --> 00:22:59.016 A:middle
+the orange request which has to
+
+00:22:59.016 --> 00:23:01.116 A:middle
+wait until response number two
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:57.926 --> 00:28:00.056 A:middle
+be populated by the system for
+
+00:28:00.056 --> 00:28:00.266 A:middle
+you.
+
+00:28:00.846 --> 00:28:03.206 A:middle
+So when the user taps on any of
+
+00:28:03.206 --> 00:28:04.456 A:middle
+these links, this delegate
+
+00:28:04.456 --> 00:28:06.816 A:middle
+method will be called.
+
+00:28:06.986 --> 00:28:09.426 A:middle
+And it's really important when
+
+00:28:09.426 --> 00:28:10.696 A:middle
+this delegate method is called
+
+00:28:10.696 --> 00:28:12.096 A:middle
+that you immediately take your
+
+00:28:12.096 --> 00:28:13.856 A:middle
+users into the view where they
+
+00:28:13.856 --> 00:28:15.906 A:middle
+can configure their notification
+
+00:28:15.906 --> 00:28:19.106 A:middle
+settings within your app.
+
+00:28:19.366 --> 00:28:22.246 A:middle
+And if you notice, we have
+
+00:28:22.246 --> 00:28:23.626 A:middle
+[inaudible] parameter to this
+
+00:28:23.626 --> 00:28:25.766 A:middle
+method, and it is notification.
+
+00:28:26.236 --> 00:28:27.726 A:middle
+So depending on where the link
+
+00:28:27.726 --> 00:28:29.126 A:middle
+was tapped from, if it was
+
+00:28:29.126 --> 00:28:29.866 A:middle
+tapped from one of the
+
+00:28:29.866 --> 00:28:31.686 A:middle
+management views, it will have
+
+00:28:31.686 --> 00:28:33.306 A:middle
+the value of the notification
+
+00:28:33.566 --> 00:28:34.776 A:middle
+that that management view came
+
+00:28:34.776 --> 00:28:35.006 A:middle
+from.
+
+00:28:35.996 --> 00:28:37.496 A:middle
+If it was tapped from the
+
+00:28:37.496 --> 00:28:39.176 A:middle
+settings app, the value of
+
+00:28:39.176 --> 00:28:41.546 A:middle
+notification will be nil, and
+
+00:28:41.546 --> 00:28:43.366 A:middle
+you can use this information to
+
+00:28:43.366 --> 00:28:44.466 A:middle
+show the appropriate
+
+00:28:44.466 --> 00:28:46.366 A:middle
+notification settings when this
+
+00:28:46.366 --> 00:28:47.756 A:middle
+delegate method is called.
+
+00:28:48.286 --> 00:28:52.066 A:middle
+So that's what we have for
+
+00:28:52.066 --> 00:28:53.316 A:middle
+notification management.
+
+00:28:53.726 --> 00:28:56.266 A:middle
+It's a new way for your users to
+
+00:28:56.616 --> 00:28:57.726 A:middle
+configure whether they want
+
+00:28:57.726 --> 00:28:58.986 A:middle
+their notifications delivered
+
+00:28:59.306 --> 00:29:02.246 A:middle
+prominently or quietly, or turn
+

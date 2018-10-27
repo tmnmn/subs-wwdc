@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:00.346 --> 00:11:01.256 A:middle
+updateConstraints?
+
+00:11:01.326 --> 00:11:03.396 A:middle
+And a good way to do that is use
+
+00:11:03.396 --> 00:11:03.936 A:middle
+Interface Builder.
+
+00:11:04.286 --> 00:11:05.796 A:middle
+If you can use Interface Builder
+
+00:11:06.026 --> 00:11:06.506 A:middle
+you should.
+
+00:11:07.496 --> 00:11:08.606 A:middle
+It's great for all sorts of
+
+00:11:08.606 --> 00:11:08.946 A:middle
+reasons.
+
+00:11:08.946 --> 00:11:11.276 A:middle
+It puts you on a good path.
+
+00:11:11.466 --> 00:11:13.206 A:middle
+OK, so that's great.
+
+00:11:13.346 --> 00:11:14.876 A:middle
+We've now talked about that.
+
+00:11:14.876 --> 00:11:15.856 A:middle
+I think we have a better
+
+00:11:15.856 --> 00:11:17.286 A:middle
+understanding for why that's
+
+00:11:17.286 --> 00:11:18.746 A:middle
+problematic, at least somewhat
+
+00:11:18.966 --> 00:11:20.266 A:middle
+by analogy sub use.
+
+00:11:21.336 --> 00:11:22.486 A:middle
+But for the purposes of this
+
+00:11:22.486 --> 00:11:23.606 A:middle
+talk we want to do better than
+
+00:11:23.606 --> 00:11:23.846 A:middle
+that.
+
+00:11:23.846 --> 00:11:25.706 A:middle
+We don't just want to say this
+
+00:11:25.706 --> 00:11:26.336 A:middle
+is bad.
+
+00:11:26.536 --> 00:11:28.376 A:middle
+We want to really understand it
+
+00:11:28.376 --> 00:11:29.666 A:middle
+and understand the process.
+
+00:11:30.366 --> 00:11:32.956 A:middle
+So to do that we're now going to
+
+00:11:33.016 --> 00:11:34.816 A:middle
+peel back the covers and start
+
+00:11:34.816 --> 00:11:36.596 A:middle
+to really see what really
+
+00:11:36.596 --> 00:11:36.976 A:middle
+happens.
+
+00:11:37.546 --> 00:11:42.156 A:middle
+So when we activate these
+
+00:11:42.156 --> 00:11:43.096 A:middle
+constraints, when we add the
+
+00:11:43.096 --> 00:11:45.246 A:middle
+constraints, what is the process
+
+00:11:45.246 --> 00:11:45.626 A:middle
+that occurs?
+
+00:11:46.916 --> 00:11:48.016 A:middle
+Let's diagram it out at a high
+
+00:11:48.016 --> 00:11:48.276 A:middle
+level.
+
+00:11:48.626 --> 00:11:50.856 A:middle
+So if this is the view that
+
+00:11:50.856 --> 00:11:51.946 A:middle
+we're adding the constraints to,
+
+00:11:53.056 --> 00:11:55.596 A:middle
+this view is in a window.
+
+00:11:55.726 --> 00:11:57.406 A:middle
+Hanging off the window is an
+
+00:11:57.406 --> 00:11:59.426 A:middle
+internal object called the
+
+00:11:59.426 --> 00:12:00.086 A:middle
+engine.
+

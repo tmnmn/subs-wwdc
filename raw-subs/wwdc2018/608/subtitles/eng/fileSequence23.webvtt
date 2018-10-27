@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.556 --> 00:23:00.296 A:middle
+frame and shader.
+
+00:23:05.416 --> 00:23:07.656 A:middle
+As we can see here, the
+
+00:23:07.726 --> 00:23:09.186 A:middle
+highlights are generated in
+
+00:23:09.186 --> 00:23:10.416 A:middle
+three different steps.
+
+00:23:10.976 --> 00:23:12.346 A:middle
+So let's use the detailed views
+
+00:23:12.346 --> 00:23:13.646 A:middle
+to quickly understand what is
+
+00:23:13.646 --> 00:23:14.126 A:middle
+happening.
+
+00:23:14.516 --> 00:23:16.466 A:middle
+Let's start at the beginning on
+
+00:23:16.466 --> 00:23:17.416 A:middle
+this close first one.
+
+00:23:17.876 --> 00:23:21.676 A:middle
+As we can see here, we are just
+
+00:23:21.676 --> 00:23:23.336 A:middle
+sampling from our original
+
+00:23:23.336 --> 00:23:25.576 A:middle
+color, and this looks correct.
+
+00:23:25.986 --> 00:23:29.056 A:middle
+So let's see what is next.
+
+00:23:29.176 --> 00:23:30.596 A:middle
+Here, we are accumulating
+
+00:23:30.676 --> 00:23:31.716 A:middle
+highlights in one of the
+
+00:23:31.716 --> 00:23:33.696 A:middle
+directions, so let's take the
+
+00:23:33.696 --> 00:23:35.246 A:middle
+results by opening the detailed
+
+00:23:35.246 --> 00:23:35.436 A:middle
+view.
+
+00:23:35.926 --> 00:23:39.246 A:middle
+And as we can see here in the
+
+00:23:39.246 --> 00:23:41.116 A:middle
+detailed view, there is already
+
+00:23:41.116 --> 00:23:42.776 A:middle
+dark area in the bottom part,
+
+00:23:42.896 --> 00:23:45.556 A:middle
+right here, so then the problem
+
+00:23:45.556 --> 00:23:46.696 A:middle
+must be in how we are
+
+00:23:46.696 --> 00:23:48.066 A:middle
+accumulating those highlights.
+
+00:23:48.726 --> 00:23:51.016 A:middle
+As you can see, detailed views
+
+00:23:51.016 --> 00:23:52.136 A:middle
+are a powerful tool to
+
+00:23:52.376 --> 00:23:53.816 A:middle
+understand your shader without
+
+00:23:53.816 --> 00:23:55.186 A:middle
+even having to read the code.
+
+00:23:56.396 --> 00:23:58.376 A:middle
+So let's use the Debug Navigator
+
+00:23:58.476 --> 00:24:00.056 A:middle
+to go to that first one and
+

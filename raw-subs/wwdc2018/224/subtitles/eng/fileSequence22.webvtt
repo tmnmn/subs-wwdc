@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.176 --> 00:22:00.976 A:middle
+problems with batch operations
+
+00:22:01.596 --> 00:22:02.776 A:middle
+is that they were difficult to
+
+00:22:02.776 --> 00:22:03.926 A:middle
+work with because they don't
+
+00:22:03.926 --> 00:22:05.606 A:middle
+generate save notifications.
+
+00:22:06.376 --> 00:22:07.426 A:middle
+That's where history tracking
+
+00:22:07.426 --> 00:22:08.176 A:middle
+comes back in.
+
+00:22:09.026 --> 00:22:10.016 A:middle
+With persistent history
+
+00:22:10.016 --> 00:22:11.306 A:middle
+tracking, we can fetch out the
+
+00:22:11.306 --> 00:22:12.846 A:middle
+transactions from the database
+
+00:22:13.286 --> 00:22:14.266 A:middle
+that occurred as part of the
+
+00:22:14.266 --> 00:22:17.156 A:middle
+batch delete or update and we
+
+00:22:17.156 --> 00:22:18.996 A:middle
+can use the objectIDNotification
+
+00:22:18.996 --> 00:22:20.276 A:middle
+method to generate a
+
+00:22:20.276 --> 00:22:21.676 A:middle
+notification that works like a
+
+00:22:21.676 --> 00:22:22.866 A:middle
+save notification.
+
+00:22:23.386 --> 00:22:24.786 A:middle
+In this way, the fetched results
+
+00:22:24.786 --> 00:22:26.666 A:middle
+controller or any other context
+
+00:22:26.666 --> 00:22:28.846 A:middle
+in your application can update
+
+00:22:28.846 --> 00:22:29.846 A:middle
+to those notifications
+
+00:22:29.846 --> 00:22:30.656 A:middle
+incrementally.
+
+00:22:31.226 --> 00:22:35.546 A:middle
+And so those are some ways you
+
+00:22:35.546 --> 00:22:37.016 A:middle
+can manage growing data with
+
+00:22:37.016 --> 00:22:39.456 A:middle
+Core Data, but how about your
+
+00:22:39.456 --> 00:22:40.586 A:middle
+workflow itself?
+
+00:22:40.966 --> 00:22:43.396 A:middle
+What can Core Data do for you as
+
+00:22:43.396 --> 00:22:45.426 A:middle
+a developer and engineer to make
+
+00:22:45.426 --> 00:22:46.886 A:middle
+it easier to build and test your
+
+00:22:46.886 --> 00:22:47.726 A:middle
+applications?
+
+00:22:49.166 --> 00:22:51.136 A:middle
+The first thing is that we can
+
+00:22:51.136 --> 00:22:52.286 A:middle
+help future you today.
+
+00:22:53.856 --> 00:22:55.576 A:middle
+As you may know, NSKeyedArchiver
+
+00:22:55.576 --> 00:22:56.326 A:middle
+is changing.
+
+00:22:57.056 --> 00:22:58.416 A:middle
+We're adopting secure coding
+
+00:22:58.416 --> 00:23:00.926 A:middle
+across the entire platform and
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.266 --> 00:16:01.766 A:middle
+And then, what I'd like to do,
+
+00:16:02.376 --> 00:16:03.856 A:middle
+rather than recompile and rerun
+
+00:16:03.856 --> 00:16:05.936 A:middle
+to test this change, I'd like to
+
+00:16:06.266 --> 00:16:08.336 A:middle
+actually test this change in the
+
+00:16:08.336 --> 00:16:09.416 A:middle
+context of the current running
+
+00:16:09.416 --> 00:16:10.606 A:middle
+application like before.
+
+00:16:10.606 --> 00:16:12.086 A:middle
+So I'm going to add a breakpoint
+
+00:16:12.086 --> 00:16:13.276 A:middle
+below the current line because
+
+00:16:13.276 --> 00:16:14.286 A:middle
+remember, we've changed the code
+
+00:16:14.286 --> 00:16:15.536 A:middle
+but we haven't recompiled.
+
+00:16:15.906 --> 00:16:17.076 A:middle
+So while the label will still be
+
+00:16:17.076 --> 00:16:19.226 A:middle
+set, we'll add our line below
+
+00:16:19.226 --> 00:16:20.366 A:middle
+that to set it to the value we
+
+00:16:20.366 --> 00:16:21.046 A:middle
+think it should be.
+
+00:16:21.476 --> 00:16:22.906 A:middle
+So another custom breakpoint,
+
+00:16:23.276 --> 00:16:24.746 A:middle
+and we can use expression once
+
+00:16:24.746 --> 00:16:27.346 A:middle
+again to inject that code and
+
+00:16:27.346 --> 00:16:28.566 A:middle
+make this auto-continuing.
+
+00:16:29.656 --> 00:16:30.856 A:middle
+So now, if I press continue,
+
+00:16:30.986 --> 00:16:32.846 A:middle
+code execution will continue to
+
+00:16:32.846 --> 00:16:34.406 A:middle
+flow through here, and we see
+
+00:16:34.406 --> 00:16:35.446 A:middle
+that the attempts label is
+
+00:16:35.446 --> 00:16:36.236 A:middle
+indeed updated.
+
+00:16:36.546 --> 00:16:38.196 A:middle
+I'd like to make sure that also
+
+00:16:38.196 --> 00:16:38.676 A:middle
+works.
+
+00:16:38.676 --> 00:16:39.226 A:middle
+Well, thank you.
+
+00:16:40.516 --> 00:16:43.896 A:middle
+[ Applause ]
+
+00:16:44.396 --> 00:16:45.826 A:middle
+I'd like to make sure that also
+
+00:16:45.826 --> 00:16:47.676 A:middle
+works for the score label after
+
+00:16:47.676 --> 00:16:49.546 A:middle
+a successful jump, so let's
+
+00:16:49.826 --> 00:16:51.296 A:middle
+navigate back to here.
+
+00:16:51.756 --> 00:16:53.606 A:middle
+I can remove this jump-completed
+
+00:16:53.706 --> 00:16:54.916 A:middle
+breakpoint that was creating the
+
+00:16:54.916 --> 00:16:56.016 A:middle
+one shot breakpoint because we
+
+00:16:56.016 --> 00:16:56.916 A:middle
+don't need that anymore.
+
+00:16:57.386 --> 00:16:59.026 A:middle
+And I can disable the breakpoint
+
+00:16:59.026 --> 00:17:00.626 A:middle
+in jump because we don't want to
+

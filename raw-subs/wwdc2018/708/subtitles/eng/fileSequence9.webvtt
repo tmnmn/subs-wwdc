@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.726 --> 00:09:00.086 A:middle
+infinite number of possible
+
+00:09:00.086 --> 00:09:00.576 A:middle
+values.
+
+00:09:01.096 --> 00:09:02.506 A:middle
+So in practice, in neural
+
+00:09:02.506 --> 00:09:04.476 A:middle
+networks we store weights using
+
+00:09:04.476 --> 00:09:07.186 A:middle
+floater 32 point -- Float 32
+
+00:09:07.186 --> 00:09:07.586 A:middle
+numbers.
+
+00:09:08.096 --> 00:09:09.256 A:middle
+This means that this weight can
+
+00:09:09.256 --> 00:09:10.946 A:middle
+take billions of values to
+
+00:09:10.946 --> 00:09:13.206 A:middle
+better represent the -- their
+
+00:09:13.206 --> 00:09:14.036 A:middle
+continuous nature.
+
+00:09:14.576 --> 00:09:16.146 A:middle
+But it turns out the neural
+
+00:09:16.146 --> 00:09:18.006 A:middle
+networks also work with lower
+
+00:09:18.006 --> 00:09:18.716 A:middle
+precision weights.
+
+00:09:19.946 --> 00:09:21.776 A:middle
+Quantization is the process it
+
+00:09:21.826 --> 00:09:23.536 A:middle
+takes to discontinue strings of
+
+00:09:23.536 --> 00:09:25.566 A:middle
+values and constrains them to
+
+00:09:25.566 --> 00:09:27.926 A:middle
+take a very small and discrete
+
+00:09:28.016 --> 00:09:30.606 A:middle
+subset of possible values.
+
+00:09:31.176 --> 00:09:32.956 A:middle
+For example, here quantization
+
+00:09:32.956 --> 00:09:34.156 A:middle
+has turned this continuous
+
+00:09:34.156 --> 00:09:37.156 A:middle
+spectrum of weights into only
+
+00:09:37.156 --> 00:09:39.196 A:middle
+256 possible values.
+
+00:09:39.536 --> 00:09:41.156 A:middle
+So before quantization, the
+
+00:09:41.156 --> 00:09:42.556 A:middle
+weights would take any possible
+
+00:09:42.556 --> 00:09:42.986 A:middle
+values.
+
+00:09:43.316 --> 00:09:44.906 A:middle
+After quantization, they only
+
+00:09:44.906 --> 00:09:46.926 A:middle
+have 256 options.
+
+00:09:47.976 --> 00:09:50.326 A:middle
+Now since its weight can be
+
+00:09:50.366 --> 00:09:52.796 A:middle
+taken from this small set, Core
+
+00:09:52.796 --> 00:09:54.366 A:middle
+ML now needs only 8 bits of
+
+00:09:54.366 --> 00:09:55.606 A:middle
+stored information of a weight.
+
+00:09:56.876 --> 00:09:58.856 A:middle
+But nothing can stop us here.
+
+00:09:59.296 --> 00:09:59.976 A:middle
+We can go further.
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:57.656 --> 00:17:00.076 A:middle
+are asynchronous, but sometimes
+
+00:17:00.076 --> 00:17:01.606 A:middle
+developers would like to use
+
+00:17:01.606 --> 00:17:03.296 A:middle
+them in a synchronous way for
+
+00:17:03.296 --> 00:17:04.476 A:middle
+one reason or another.
+
+00:17:05.526 --> 00:17:06.796 A:middle
+Maybe because their code is
+
+00:17:06.796 --> 00:17:07.796 A:middle
+already running on the
+
+00:17:07.796 --> 00:17:09.915 A:middle
+background queue or maybe
+
+00:17:09.915 --> 00:17:11.036 A:middle
+because the function cannot
+
+00:17:11.036 --> 00:17:12.415 A:middle
+proceed at all until the
+
+00:17:12.415 --> 00:17:13.915 A:middle
+required value is available.
+
+00:17:14.306 --> 00:17:16.415 A:middle
+And the tempting solution there
+
+00:17:16.415 --> 00:17:18.606 A:middle
+is to use a semaphore to ensure
+
+00:17:18.606 --> 00:17:19.486 A:middle
+synchronization.
+
+00:17:20.536 --> 00:17:21.965 A:middle
+So that's what's happening in
+
+00:17:21.965 --> 00:17:24.685 A:middle
+this example, so here there is
+
+00:17:24.906 --> 00:17:27.336 A:middle
+an SXPC object self.connection
+
+00:17:27.826 --> 00:17:29.186 A:middle
+and we use its property
+
+00:17:29.186 --> 00:17:32.046 A:middle
+remoteObjectProxy to call, to
+
+00:17:32.046 --> 00:17:33.846 A:middle
+get the current task name
+
+00:17:33.996 --> 00:17:35.866 A:middle
+asynchronously from a different
+
+00:17:35.866 --> 00:17:36.606 A:middle
+process.
+
+00:17:37.566 --> 00:17:39.506 A:middle
+And then we wait on a semaphore
+
+00:17:40.076 --> 00:17:41.666 A:middle
+which is signal to inside the
+
+00:17:41.926 --> 00:17:42.546 A:middle
+callback.
+
+00:17:43.286 --> 00:17:45.126 A:middle
+And that helps to ensure that by
+
+00:17:45.126 --> 00:17:46.696 A:middle
+the time the function returns
+
+00:17:47.376 --> 00:17:48.996 A:middle
+the task name is available.
+
+00:17:49.256 --> 00:17:51.966 A:middle
+So this approach works but has
+
+00:17:51.966 --> 00:17:53.566 A:middle
+known performance implications.
+
+00:17:54.466 --> 00:17:56.536 A:middle
+So the main problem here is when
+
+00:17:56.536 --> 00:17:58.956 A:middle
+you wait using a semaphore on
+
+00:17:58.956 --> 00:18:01.016 A:middle
+some asynchronous process you
+

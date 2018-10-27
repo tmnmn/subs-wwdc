@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.216 --> 00:04:00.756 A:middle
+And this is also a thing you can
+
+00:04:00.756 --> 00:04:02.486 A:middle
+tell the rendering engine for
+
+00:04:02.486 --> 00:04:03.796 A:middle
+how long it should remember
+
+00:04:03.796 --> 00:04:04.106 A:middle
+this.
+
+00:04:04.336 --> 00:04:05.916 A:middle
+So, typically at least half a
+
+00:04:05.916 --> 00:04:06.956 A:middle
+year ahead in time.
+
+00:04:08.426 --> 00:04:09.846 A:middle
+Now, you might also be loading
+
+00:04:09.846 --> 00:04:11.546 A:middle
+content off of other servers,
+
+00:04:11.546 --> 00:04:12.966 A:middle
+servers that are not under your
+
+00:04:12.966 --> 00:04:14.536 A:middle
+control, not your domain name.
+
+00:04:15.216 --> 00:04:16.916 A:middle
+There's also a header you can
+
+00:04:16.916 --> 00:04:18.685 A:middle
+send to the browser engine
+
+00:04:18.685 --> 00:04:19.896 A:middle
+called upgrade insecure
+
+00:04:19.896 --> 00:04:23.036 A:middle
+requests, also an HTTP response
+
+00:04:23.036 --> 00:04:25.076 A:middle
+header, which tells the browser,
+
+00:04:25.076 --> 00:04:27.256 A:middle
+hey, go ahead and upgrade all
+
+00:04:27.256 --> 00:04:28.796 A:middle
+those other links to content
+
+00:04:28.826 --> 00:04:31.086 A:middle
+too, even if it's not from my
+
+00:04:31.086 --> 00:04:33.126 A:middle
+server and even if they have not
+
+00:04:33.126 --> 00:04:35.406 A:middle
+set strict transport security.
+
+00:04:36.356 --> 00:04:38.476 A:middle
+So, those two things that will
+
+00:04:38.556 --> 00:04:40.106 A:middle
+automatically upgrade to secure
+
+00:04:40.106 --> 00:04:40.836 A:middle
+transports.
+
+00:04:42.166 --> 00:04:43.516 A:middle
+Another thing you need to do is
+
+00:04:43.516 --> 00:04:45.206 A:middle
+make sure that you mark your
+
+00:04:45.266 --> 00:04:46.646 A:middle
+cookies secure.
+
+00:04:46.866 --> 00:04:48.346 A:middle
+This is an attribute you add in
+
+00:04:48.346 --> 00:04:49.486 A:middle
+your set cookie header,
+
+00:04:49.846 --> 00:04:51.606 A:middle
+semi-colon secure.
+
+00:04:52.226 --> 00:04:54.376 A:middle
+This means that you're telling
+
+00:04:54.476 --> 00:04:56.666 A:middle
+the network stack this cookie
+
+00:04:56.666 --> 00:04:58.716 A:middle
+should only ever be sent over a
+
+00:04:58.716 --> 00:04:59.716 A:middle
+secure transport.
+

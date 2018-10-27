@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.826 --> 00:21:00.596 A:middle
+comparing cases where you can
+
+00:21:00.596 --> 00:21:02.566 A:middle
+clearly see good and bad pixels.
+
+00:21:03.006 --> 00:21:04.456 A:middle
+You can quickly switch between
+
+00:21:04.456 --> 00:21:06.676 A:middle
+them and see what the back pixel
+
+00:21:06.676 --> 00:21:07.116 A:middle
+is doing.
+
+00:21:08.666 --> 00:21:10.526 A:middle
+Once we switch threads, we
+
+00:21:10.526 --> 00:21:12.306 A:middle
+update the execution history and
+
+00:21:12.306 --> 00:21:14.456 A:middle
+the variable views, so that you
+
+00:21:14.456 --> 00:21:15.806 A:middle
+can fully debug your
+
+00:21:15.806 --> 00:21:17.606 A:middle
+newly-selected threads.
+
+00:21:19.096 --> 00:21:20.596 A:middle
+This gets even better.
+
+00:21:21.716 --> 00:21:23.276 A:middle
+Detail views also help you
+
+00:21:23.276 --> 00:21:24.836 A:middle
+understand your divergence.
+
+00:21:26.256 --> 00:21:29.706 A:middle
+So whenever you enable detail
+
+00:21:29.706 --> 00:21:31.716 A:middle
+view, the mask on the right-hand
+
+00:21:31.716 --> 00:21:34.716 A:middle
+side will always show you what
+
+00:21:34.786 --> 00:21:36.556 A:middle
+other threads executed the same
+
+00:21:36.556 --> 00:21:37.226 A:middle
+line of code.
+
+00:21:38.686 --> 00:21:40.456 A:middle
+In this example, it's
+
+00:21:40.556 --> 00:21:43.776 A:middle
+conditional, and just looking at
+
+00:21:43.776 --> 00:21:45.416 A:middle
+the mask, I can clearly tell
+
+00:21:45.416 --> 00:21:47.796 A:middle
+that roughly half of my threads
+
+00:21:48.086 --> 00:21:49.786 A:middle
+executed inside this-- if
+
+00:21:49.786 --> 00:21:51.786 A:middle
+conditional, in a diagonal
+
+00:21:51.786 --> 00:21:52.046 A:middle
+shape.
+
+00:21:53.556 --> 00:21:57.276 A:middle
+So now, to show you how you can
+
+00:21:57.276 --> 00:21:59.196 A:middle
+use detail views to fix problems
+
+00:21:59.196 --> 00:22:00.946 A:middle
+in fragment shaders, I would
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.306 --> 00:17:00.206 A:middle
+whatever reason we've asked our
+
+00:17:00.206 --> 00:17:01.996 A:middle
+API for, but there's not really
+
+00:17:01.996 --> 00:17:02.846 A:middle
+much else happening.
+
+00:17:03.206 --> 00:17:04.726 A:middle
+And then, we have a long tail of
+
+00:17:04.726 --> 00:17:06.205 A:middle
+overhead because we've kept the
+
+00:17:06.205 --> 00:17:08.656 A:middle
+system awake and subsystems we
+
+00:17:08.656 --> 00:17:10.596 A:middle
+thought they needed to be using
+
+00:17:10.596 --> 00:17:12.195 A:middle
+their own resources are now
+
+00:17:12.306 --> 00:17:13.356 A:middle
+waiting for us to finish.
+
+00:17:13.866 --> 00:17:17.526 A:middle
+The quick solution to this is to
+
+00:17:17.526 --> 00:17:18.766 A:middle
+simply call your completion
+
+00:17:18.766 --> 00:17:20.236 A:middle
+handlers whenever they're
+
+00:17:20.236 --> 00:17:21.256 A:middle
+available.
+
+00:17:21.796 --> 00:17:23.886 A:middle
+And as I mentioned, UI
+
+00:17:23.886 --> 00:17:25.016 A:middle
+background task is one of the
+
+00:17:25.016 --> 00:17:25.656 A:middle
+biggest ones.
+
+00:17:25.976 --> 00:17:27.026 A:middle
+When we enter the background
+
+00:17:27.336 --> 00:17:28.886 A:middle
+from the foreground, we can call
+
+00:17:28.886 --> 00:17:29.966 A:middle
+this API and UIKit.
+
+00:17:30.746 --> 00:17:31.946 A:middle
+If we don't let our system know
+
+00:17:31.946 --> 00:17:33.446 A:middle
+that we don't need, if we let
+
+00:17:33.446 --> 00:17:34.276 A:middle
+our system know that we don't
+
+00:17:34.276 --> 00:17:35.756 A:middle
+need to do any work anymore, we
+
+00:17:35.756 --> 00:17:37.406 A:middle
+save a lot of energy and allow
+
+00:17:37.406 --> 00:17:39.746 A:middle
+hardware systems to go idle when
+
+00:17:39.746 --> 00:17:40.426 A:middle
+they need to go idle.
+
+00:17:41.446 --> 00:17:42.586 A:middle
+Here's what that looks like if
+
+00:17:42.586 --> 00:17:43.406 A:middle
+we call these completion
+
+00:17:43.406 --> 00:17:43.866 A:middle
+handlers.
+
+00:17:45.006 --> 00:17:46.506 A:middle
+You could see here that the tail
+
+00:17:46.506 --> 00:17:47.446 A:middle
+of active energy that we saw
+
+00:17:47.446 --> 00:17:49.476 A:middle
+before is gone, and now we've
+
+00:17:49.476 --> 00:17:50.686 A:middle
+greatly reduced our tail of
+
+00:17:50.686 --> 00:17:51.456 A:middle
+overhead as well.
+
+00:17:52.026 --> 00:17:54.596 A:middle
+A simple solution, but it has a
+
+00:17:54.596 --> 00:17:56.066 A:middle
+big impact on your overall
+
+00:17:56.066 --> 00:17:56.856 A:middle
+energy consumption.
+

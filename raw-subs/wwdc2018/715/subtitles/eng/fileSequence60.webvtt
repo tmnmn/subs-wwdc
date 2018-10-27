@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:59:58.736 --> 01:00:00.056 A:middle
+Going forward, the preferred
+
+01:00:00.056 --> 01:00:01.576 A:middle
+APIs on our platforms for
+
+01:00:01.576 --> 01:00:03.546 A:middle
+networking are URLSession and
+
+01:00:03.546 --> 01:00:04.346 A:middle
+Network.framework.
+
+01:00:04.816 --> 01:00:06.836 A:middle
+URLSession is really focused on
+
+01:00:06.836 --> 01:00:09.046 A:middle
+HTTP, but Stream Task provides
+
+01:00:09.636 --> 01:00:11.716 A:middle
+pretty simple access to TCP and
+
+01:00:11.716 --> 01:00:12.686 A:middle
+TLS connections.
+
+01:00:13.586 --> 01:00:14.856 A:middle
+If you need something more
+
+01:00:14.856 --> 01:00:16.516 A:middle
+advanced, Network.framework
+
+01:00:16.516 --> 01:00:18.376 A:middle
+gives you great support for TCP,
+
+01:00:18.726 --> 01:00:20.776 A:middle
+TLS, UDP, DTLS.
+
+01:00:21.166 --> 01:00:22.696 A:middle
+It handles listening for inbound
+
+01:00:22.696 --> 01:00:23.896 A:middle
+connections as well as outbound
+
+01:00:23.896 --> 01:00:25.606 A:middle
+connections, and we've got Path
+
+01:00:25.606 --> 01:00:26.876 A:middle
+Monitor to handle some of the
+
+01:00:26.876 --> 01:00:27.666 A:middle
+mobility stuff.
+
+01:00:28.006 --> 01:00:30.986 A:middle
+Next steps, we really want to
+
+01:00:30.986 --> 01:00:32.806 A:middle
+see you adopt these, adopt
+
+01:00:32.806 --> 01:00:33.756 A:middle
+Network.framework and
+
+01:00:33.756 --> 01:00:34.516 A:middle
+URLSession.
+
+01:00:35.116 --> 01:00:35.936 A:middle
+Your customers are going to
+
+01:00:35.936 --> 01:00:37.016 A:middle
+appreciate how much better your
+
+01:00:37.016 --> 01:00:38.676 A:middle
+connections, how much more
+
+01:00:38.676 --> 01:00:39.736 A:middle
+reliable your connections are
+
+01:00:39.736 --> 01:00:40.876 A:middle
+established, and they'll
+
+01:00:40.876 --> 01:00:42.006 A:middle
+appreciate the longer battery
+
+01:00:42.006 --> 01:00:42.606 A:middle
+life from the better
+
+01:00:42.606 --> 01:00:43.216 A:middle
+performance.
+
+01:00:45.156 --> 01:00:46.066 A:middle
+While you're working on these,
+
+01:00:46.146 --> 01:00:48.866 A:middle
+focus on how you're handling
+
+01:00:48.866 --> 01:00:50.166 A:middle
+your sending and receiving to
+
+01:00:50.166 --> 01:00:50.946 A:middle
+really optimize that
+
+01:00:50.946 --> 01:00:51.536 A:middle
+performance.
+
+01:00:52.146 --> 01:00:53.446 A:middle
+And take a lot of time to get
+
+01:00:53.446 --> 01:00:55.386 A:middle
+that support for the viability
+
+01:00:55.386 --> 01:00:57.186 A:middle
+and better route changes in
+
+01:00:57.186 --> 01:00:57.356 A:middle
+there.
+
+01:00:57.506 --> 01:00:59.136 A:middle
+It can make all the difference
+
+01:00:59.136 --> 01:01:00.016 A:middle
+for providing a seamless
+

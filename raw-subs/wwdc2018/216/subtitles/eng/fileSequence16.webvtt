@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.106 --> 00:16:00.896 A:middle
+really want to, you can use it
+
+00:16:01.366 --> 00:16:04.536 A:middle
+to copy things from and to the
+
+00:16:04.536 --> 00:16:04.796 A:middle
+cloud.
+
+00:16:09.336 --> 00:16:12.506 A:middle
+So, let's say we want to let our
+
+00:16:12.506 --> 00:16:14.646 A:middle
+customers access a movie they've
+
+00:16:14.646 --> 00:16:15.646 A:middle
+stored in the cloud.
+
+00:16:16.506 --> 00:16:18.076 A:middle
+This is a great use of Document
+
+00:16:18.076 --> 00:16:18.746 A:middle
+Picker controller.
+
+00:16:20.116 --> 00:16:21.626 A:middle
+You create a Document Picker
+
+00:16:21.626 --> 00:16:23.426 A:middle
+controller, and you specify the
+
+00:16:23.426 --> 00:16:25.566 A:middle
+types of file you want your
+
+00:16:25.566 --> 00:16:26.776 A:middle
+users to choose as a first
+
+00:16:26.776 --> 00:16:27.306 A:middle
+document.
+
+00:16:28.166 --> 00:16:29.666 A:middle
+And, the second document is one
+
+00:16:29.666 --> 00:16:30.806 A:middle
+of the constants we have
+
+00:16:30.806 --> 00:16:34.276 A:middle
+described on the previous slide.
+
+00:16:34.366 --> 00:16:36.046 A:middle
+Then, you set the Document
+
+00:16:36.046 --> 00:16:38.026 A:middle
+Picker delegate, because this is
+
+00:16:38.026 --> 00:16:41.446 A:middle
+how we get notified that your
+
+00:16:41.706 --> 00:16:43.106 A:middle
+customer has chosen their file,
+
+00:16:43.106 --> 00:16:45.866 A:middle
+and you present it.
+
+00:16:47.016 --> 00:16:49.376 A:middle
+Once the file is chosen, you're
+
+00:16:49.376 --> 00:16:51.296 A:middle
+going to get called back at this
+
+00:16:51.516 --> 00:16:53.976 A:middle
+delegate method.
+
+00:16:54.136 --> 00:16:55.296 A:middle
+You get [inaudible] of your
+
+00:16:55.296 --> 00:16:56.766 A:middle
+files in this method.
+
+00:16:57.426 --> 00:16:58.586 A:middle
+You can use them directly.
+

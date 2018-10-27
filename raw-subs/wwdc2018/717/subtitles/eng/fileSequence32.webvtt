@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.546 --> 00:32:00.286 A:middle
+Breakfast Finder.
+
+00:32:00.926 --> 00:32:04.966 A:middle
+Now, there's one more thing I
+
+00:32:04.966 --> 00:32:06.216 A:middle
+would like to highlight in this
+
+00:32:06.216 --> 00:32:06.756 A:middle
+example.
+
+00:32:08.426 --> 00:32:09.646 A:middle
+You saw how these boxes were a
+
+00:32:09.646 --> 00:32:10.666 A:middle
+little bit jittering around
+
+00:32:10.666 --> 00:32:11.496 A:middle
+because I was running the
+
+00:32:11.496 --> 00:32:12.896 A:middle
+detector frame by frame, by
+
+00:32:12.896 --> 00:32:13.636 A:middle
+frame, by frame.
+
+00:32:14.346 --> 00:32:16.506 A:middle
+Tracking can often be a better
+
+00:32:16.506 --> 00:32:17.086 A:middle
+choice here.
+
+00:32:17.376 --> 00:32:20.216 A:middle
+Why? Tracking is much faster
+
+00:32:20.216 --> 00:32:21.646 A:middle
+even in terms of like running,
+
+00:32:21.646 --> 00:32:22.936 A:middle
+than actually these models would
+
+00:32:22.936 --> 00:32:23.116 A:middle
+run.
+
+00:32:25.276 --> 00:32:27.136 A:middle
+So, redetection takes more time
+
+00:32:27.136 --> 00:32:28.976 A:middle
+than actually running a tracking
+
+00:32:28.976 --> 00:32:29.566 A:middle
+request.
+
+00:32:31.306 --> 00:32:33.056 A:middle
+I can use the tracker basically
+
+00:32:33.056 --> 00:32:34.306 A:middle
+if I want to follow now an
+
+00:32:34.306 --> 00:32:37.416 A:middle
+object on the screen because
+
+00:32:37.416 --> 00:32:38.376 A:middle
+it's a lighter algorithm.
+
+00:32:38.376 --> 00:32:39.306 A:middle
+It runs faster.
+
+00:32:39.906 --> 00:32:41.846 A:middle
+And on top of it, we have
+
+00:32:41.906 --> 00:32:43.666 A:middle
+temporal smoothing so that these
+
+00:32:43.716 --> 00:32:44.896 A:middle
+boxes will not jitter around
+
+00:32:44.896 --> 00:32:46.616 A:middle
+anymore and if you see some of
+
+00:32:46.616 --> 00:32:47.836 A:middle
+our tracking examples, they
+
+00:32:47.836 --> 00:32:48.946 A:middle
+actually move nicely and
+
+00:32:48.946 --> 00:32:50.046 A:middle
+smoothly across the screen.
+
+00:32:50.966 --> 00:32:52.156 A:middle
+If you want to learn more about
+
+00:32:52.156 --> 00:32:54.996 A:middle
+tracking, the previous session
+
+00:32:54.996 --> 00:32:56.106 A:middle
+from my colleague Sergei,
+
+00:32:56.106 --> 00:32:58.216 A:middle
+actually talks about how to do
+
+00:32:58.216 --> 00:33:00.546 A:middle
+all the implementation work of
+

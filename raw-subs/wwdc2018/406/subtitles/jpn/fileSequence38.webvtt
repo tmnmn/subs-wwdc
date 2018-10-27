@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.046 --> 00:38:05.786 align:start position:18% line:-2
+結果の型が 新たな関連型
+SubSequenceで記述されます
+
+00:38:06.787 --> 00:38:11.658 align:start position:27% line:-2
+これで文字列もRangeも
+新しい要件を満たします
+
+00:38:11.892 --> 00:38:15.596 align:start position:20% line:-2
+文字列のSubSequence型は
+部分文字列で―
+
+00:38:16.530 --> 00:38:20.500 align:start position:16% line:-2
+RangeのSubSequence型は
+Rangeです
+
+00:38:21.368 --> 00:38:23.604 align:start position:30% line:-1
+でも この２つ以外の―
+
+00:38:23.704 --> 00:38:29.143 align:start position:27% line:-2
+SubSequence型の
+カスタマイズを嫌う型には？
+
+00:38:29.243 --> 00:38:32.045 align:start position:25% line:-1
+スライスのデフォルト制限で―
+
+00:38:32.312 --> 00:38:37.818 align:start position:21% line:-2
+これらの型の作者は
+コレクション準拠の手間が省けます
+
+00:38:37.918 --> 00:38:40.487 align:start position:30% line:-1
+スライス動作は無償です
+
+00:38:41.021 --> 00:38:43.524 align:start position:14% line:-1
+では SubSequenceから始めます
+
+00:38:43.924 --> 00:38:47.961 align:start position:30% line:-2
+関連型は 自身で
+デフォルト値を持てます
+
+00:38:48.095 --> 00:38:50.330 align:start position:25% line:-1
+“=”のあとに書かれています
+
+00:38:50.631 --> 00:38:57.204 align:start position:12% line:-2
+SubSequenceにとって Slice
+アダプタ型は完全なデフォルトです
+
+00:38:57.371 --> 00:39:03.344 align:start position:14% line:-2
+自身のSubSequence型を持たない
+すべての準拠型に使えます
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.466 --> 00:09:00.346 A:middle
+Streaming feature that allows
+
+00:09:00.346 --> 00:09:02.646 A:middle
+you to specify two expiration
+
+00:09:02.646 --> 00:09:04.566 A:middle
+durations on persistent keys;
+
+00:09:05.176 --> 00:09:07.126 A:middle
+storage and playback duration.
+
+00:09:08.956 --> 00:09:11.046 A:middle
+Storage duration specifies for
+
+00:09:11.046 --> 00:09:13.196 A:middle
+how long you wish the key to be
+
+00:09:13.196 --> 00:09:15.336 A:middle
+valid while it is sitting in
+
+00:09:15.336 --> 00:09:16.006 A:middle
+your storage.
+
+00:09:16.506 --> 00:09:18.446 A:middle
+That is, before being used for
+
+00:09:18.446 --> 00:09:19.016 A:middle
+playback.
+
+00:09:19.456 --> 00:09:22.686 A:middle
+It is, typically, large, like 30
+
+00:09:22.686 --> 00:09:23.076 A:middle
+days.
+
+00:09:24.436 --> 00:09:25.966 A:middle
+Playback duration, on the other
+
+00:09:25.966 --> 00:09:28.896 A:middle
+hand, specifies how long you
+
+00:09:28.896 --> 00:09:31.176 A:middle
+with the key to be valid after
+
+00:09:31.176 --> 00:09:32.346 A:middle
+it was used for playback.
+
+00:09:32.906 --> 00:09:34.216 A:middle
+It is, typically, shorter than
+
+00:09:34.216 --> 00:09:35.116 A:middle
+storage duration.
+
+00:09:35.496 --> 00:09:36.786 A:middle
+For example, 24 hours.
+
+00:09:38.696 --> 00:09:40.396 A:middle
+This feature allows you to
+
+00:09:40.396 --> 00:09:42.006 A:middle
+specify such expiration
+
+00:09:42.006 --> 00:09:43.826 A:middle
+durations when you create
+
+00:09:44.086 --> 00:09:45.946 A:middle
+persistent keys and the platform
+
+00:09:45.946 --> 00:09:47.406 A:middle
+ensures that the two expiration
+
+00:09:47.406 --> 00:09:49.556 A:middle
+durations are enforced, even
+
+00:09:49.556 --> 00:09:50.706 A:middle
+when the device is offline.
+
+00:09:51.936 --> 00:09:53.806 A:middle
+So, you might be wondering how
+
+00:09:53.806 --> 00:09:55.396 A:middle
+and where can you specify these
+
+00:09:55.396 --> 00:09:56.716 A:middle
+two expiration durations.
+
+00:09:58.136 --> 00:10:00.396 A:middle
+FairPlay introduced a new TLLV
+

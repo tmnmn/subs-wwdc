@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.524 --> 00:16:02.362 align:middle line:-2
+活动分项和抽象类
+在我们的系统中
+
+00:16:02.429 --> 00:16:04.665 align:middle line:-1
+我们已经定义了三个子类
+
+00:16:05.966 --> 00:16:07.901 align:middle line:-2
+其中之一是
+CLSQuantityItem
+
+00:16:07.968 --> 00:16:10.971 align:middle line:-1
+这对于简单的标量 如提示
+
+00:16:11.471 --> 00:16:13.407 align:middle line:-1
+经验点和类似的事情非常有用
+
+00:16:13.473 --> 00:16:14.408 align:middle line:-1
+（CLSActivityItem）
+
+00:16:14.474 --> 00:16:15.909 align:middle line:-1
+我们还有一个ScoreItem
+
+00:16:15.976 --> 00:16:19.012 align:middle line:-2
+这对于表示"Y分之X"之类的
+数值很有用
+
+00:16:19.880 --> 00:16:23.984 align:middle line:-2
+例如 对于测验的最终分数
+这可能很有用
+
+00:16:24.751 --> 00:16:27.054 align:middle line:-1
+我们也有一个BinaryItem
+
+00:16:27.988 --> 00:16:32.993 align:middle line:-2
+这个是用来回答
+“是或否”一类的问题
+
+00:16:34.661 --> 00:16:38.665 align:middle line:-2
+我们来看看如何将主活动项目
+添加到活动中
+
+00:16:38.732 --> 00:16:41.535 align:middle line:-1
+你首先需要创建一个活动项目
+
+00:16:42.002 --> 00:16:43.403 align:middle line:-1
+在幻灯片中
+
+00:16:43.470 --> 00:16:46.807 align:middle line:-2
+我们向你展示了如何创建名为
+“Total Score”的ScoreItem
+
+00:16:47.374 --> 00:16:50.410 align:middle line:-2
+然后将其作为主活动项目
+与一个活动进行关联
+
+00:16:50.477 --> 00:16:51.979 align:middle line:-1
+你需要设置
+
+00:16:52.513 --> 00:16:55.682 align:middle line:-2
+一个活动的
+primaryActivityItem属性
+
+00:16:58.151 --> 00:17:02.289 align:middle line:-2
+要添加其他活动项目
+你将再次创建一个新的活动项目
+

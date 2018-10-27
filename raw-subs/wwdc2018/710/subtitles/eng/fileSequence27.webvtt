@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.256 --> 00:27:01.106 A:middle
+about what kind of podcast
+
+00:27:01.106 --> 00:27:02.696 A:middle
+notifications they want.
+
+00:27:04.056 --> 00:27:06.096 A:middle
+And as your apps send more and
+
+00:27:06.096 --> 00:27:07.456 A:middle
+more notifications and various
+
+00:27:07.456 --> 00:27:09.536 A:middle
+type of notifications, we think
+
+00:27:09.536 --> 00:27:12.276 A:middle
+it's really important to allow
+
+00:27:12.276 --> 00:27:13.776 A:middle
+them this granular level of
+
+00:27:13.776 --> 00:27:15.986 A:middle
+control over what kind of
+
+00:27:15.986 --> 00:27:17.626 A:middle
+notifications are important to
+
+00:27:17.626 --> 00:27:17.886 A:middle
+them.
+
+00:27:21.476 --> 00:27:23.816 A:middle
+This link can also be accessed
+
+00:27:23.966 --> 00:27:26.086 A:middle
+from the systems settings app
+
+00:27:26.336 --> 00:27:27.886 A:middle
+from your apps' notification
+
+00:27:27.886 --> 00:27:28.256 A:middle
+settings.
+
+00:27:28.486 --> 00:27:30.046 A:middle
+And you can see for podcasts
+
+00:27:30.376 --> 00:27:31.456 A:middle
+it's right at the bottom.
+
+00:27:31.856 --> 00:27:33.926 A:middle
+It says podcast notifications
+
+00:27:33.966 --> 00:27:34.296 A:middle
+settings.
+
+00:27:34.796 --> 00:27:37.356 A:middle
+Let's see how we do this in
+
+00:27:37.356 --> 00:27:37.606 A:middle
+code.
+
+00:27:38.196 --> 00:27:41.256 A:middle
+In the class that conforms to
+
+00:27:41.436 --> 00:27:43.256 A:middle
+UNUserNotificationCenter
+
+00:27:43.356 --> 00:27:45.526 A:middle
+Delegate, we have a new delegate
+
+00:27:45.526 --> 00:27:45.906 A:middle
+method.
+
+00:27:46.566 --> 00:27:48.986 A:middle
+Open settings for notification,
+
+00:27:49.816 --> 00:27:51.316 A:middle
+and as long as you implement
+
+00:27:51.316 --> 00:27:53.296 A:middle
+this delegate method, those
+
+00:27:53.296 --> 00:27:54.866 A:middle
+links that we talked about from
+
+00:27:54.866 --> 00:27:56.206 A:middle
+the management view, or from the
+
+00:27:56.206 --> 00:27:57.926 A:middle
+settings app, will automatically
+
+00:27:57.926 --> 00:28:00.056 A:middle
+be populated by the system for
+

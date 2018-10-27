@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:57.056 --> 00:30:01.756 A:middle
+listeners have state update
+
+00:30:01.756 --> 00:30:03.086 A:middle
+handlers, which I'll use to
+
+00:30:03.086 --> 00:30:04.556 A:middle
+check for the ready and the
+
+00:30:04.556 --> 00:30:05.696 A:middle
+failed states.
+
+00:30:07.236 --> 00:30:08.896 A:middle
+I need to not forget to start my
+
+00:30:08.896 --> 00:30:10.856 A:middle
+listener, which I do by calling
+
+00:30:10.856 --> 00:30:12.496 A:middle
+listener.start and passing it
+
+00:30:12.496 --> 00:30:14.406 A:middle
+that queue we created up above.
+
+00:30:15.436 --> 00:30:17.036 A:middle
+So I've got my listener ready, I
+
+00:30:17.036 --> 00:30:18.506 A:middle
+just need to read data off the
+
+00:30:18.506 --> 00:30:19.976 A:middle
+network and implement this
+
+00:30:19.976 --> 00:30:20.636 A:middle
+receive function.
+
+00:30:24.656 --> 00:30:26.156 A:middle
+Here, we start by calling
+
+00:30:26.156 --> 00:30:28.036 A:middle
+connection.receive and passing
+
+00:30:28.036 --> 00:30:28.976 A:middle
+it into completion handler.
+
+00:30:29.646 --> 00:30:30.856 A:middle
+When data comes in off of that
+
+00:30:30.856 --> 00:30:32.376 A:middle
+connection, we'll see if we're
+
+00:30:32.376 --> 00:30:33.206 A:middle
+not yet connected.
+
+00:30:33.966 --> 00:30:35.586 A:middle
+If we weren't connected, this is
+
+00:30:35.586 --> 00:30:37.136 A:middle
+probably that handshake that the
+
+00:30:37.136 --> 00:30:40.166 A:middle
+client is starting by sending.
+
+00:30:40.306 --> 00:30:41.476 A:middle
+We'll simply turn right around
+
+00:30:41.476 --> 00:30:42.716 A:middle
+and call connection.send,
+
+00:30:43.246 --> 00:30:45.136 A:middle
+passing that same content back
+
+00:30:45.396 --> 00:30:46.476 A:middle
+so it will be echoed over to the
+
+00:30:46.476 --> 00:30:46.756 A:middle
+client.
+
+00:30:47.656 --> 00:30:48.516 A:middle
+We then remember that we're
+
+00:30:48.516 --> 00:30:50.516 A:middle
+connected, and on all subsequent
+
+00:30:50.516 --> 00:30:52.776 A:middle
+received callbacks, we will
+
+00:30:52.776 --> 00:30:53.916 A:middle
+simply tell the rest of the
+
+00:30:53.916 --> 00:30:55.516 A:middle
+application that we received
+
+00:30:55.836 --> 00:30:57.326 A:middle
+this frame, and it should send
+
+00:30:57.326 --> 00:30:58.966 A:middle
+it up to the display pipeline so
+
+00:30:58.966 --> 00:31:00.666 A:middle
+that we can see it on the
+

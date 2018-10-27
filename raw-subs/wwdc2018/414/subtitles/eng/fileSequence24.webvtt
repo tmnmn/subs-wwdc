@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.846 --> 00:24:01.226 A:middle
+We start again with the
+
+00:24:01.226 --> 00:24:02.716 A:middle
+exception type.
+
+00:24:03.436 --> 00:24:06.086 A:middle
+This is an EXC bad access
+
+00:24:06.086 --> 00:24:09.096 A:middle
+exception, the SEG violation
+
+00:24:09.096 --> 00:24:09.606 A:middle
+signal.
+
+00:24:10.236 --> 00:24:12.306 A:middle
+This is typically caused by a
+
+00:24:12.306 --> 00:24:13.266 A:middle
+memory error.
+
+00:24:13.706 --> 00:24:15.396 A:middle
+The bad access exception means
+
+00:24:15.396 --> 00:24:17.666 A:middle
+one of two things, either we
+
+00:24:17.666 --> 00:24:19.586 A:middle
+were writing to memory that is
+
+00:24:19.586 --> 00:24:21.896 A:middle
+read-only or we were reading
+
+00:24:21.896 --> 00:24:23.436 A:middle
+from memory that does not exist
+
+00:24:23.436 --> 00:24:23.896 A:middle
+at all.
+
+00:24:24.106 --> 00:24:25.936 A:middle
+Either of those will cause a bad
+
+00:24:25.936 --> 00:24:27.976 A:middle
+access exception and the process
+
+00:24:27.976 --> 00:24:28.516 A:middle
+will stop.
+
+00:24:29.806 --> 00:24:32.256 A:middle
+We see here the address that we
+
+00:24:32.256 --> 00:24:34.256 A:middle
+were accessing at the time of
+
+00:24:35.076 --> 00:24:36.366 A:middle
+the crash.
+
+00:24:36.626 --> 00:24:38.416 A:middle
+We can look at the stack trace,
+
+00:24:38.416 --> 00:24:39.346 A:middle
+this is the function that
+
+00:24:39.346 --> 00:24:40.946 A:middle
+performed the bad access of
+
+00:24:40.946 --> 00:24:41.376 A:middle
+course.
+
+00:24:41.896 --> 00:24:43.736 A:middle
+This is the objc release
+
+00:24:43.736 --> 00:24:45.286 A:middle
+function, it's part of the
+
+00:24:45.286 --> 00:24:47.106 A:middle
+implementation of reference
+
+00:24:47.106 --> 00:24:49.316 A:middle
+counting in Objective-C and some
+
+00:24:49.316 --> 00:24:50.386 A:middle
+Swift objects.
+
+00:24:50.946 --> 00:24:52.836 A:middle
+So that again sounds like it's
+
+00:24:52.836 --> 00:24:54.456 A:middle
+likely to have been a memory
+
+00:24:54.456 --> 00:24:55.646 A:middle
+error that caused the bug.
+
+00:24:57.126 --> 00:24:59.856 A:middle
+So what code caused objc
+
+00:24:59.856 --> 00:25:00.486 A:middle
+release?
+

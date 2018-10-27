@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.416 --> 00:32:00.986 A:middle
+to move onto the next topic.
+
+00:32:01.616 --> 00:32:05.446 A:middle
+LINPACK Benchmark.
+
+00:32:06.076 --> 00:32:07.866 A:middle
+We talked about the
+
+00:32:07.866 --> 00:32:09.426 A:middle
+functionality of Accelerate.
+
+00:32:09.986 --> 00:32:12.026 A:middle
+We talk about how easy it is to
+
+00:32:12.026 --> 00:32:13.616 A:middle
+use in Accelerate in your apps.
+
+00:32:14.456 --> 00:32:16.456 A:middle
+We haven't talked about how fast
+
+00:32:16.456 --> 00:32:17.766 A:middle
+Accelerate really is.
+
+00:32:18.676 --> 00:32:20.026 A:middle
+And LINPACK Benchmark is a
+
+00:32:20.026 --> 00:32:23.326 A:middle
+perfect tool to do that.
+
+00:32:23.526 --> 00:32:24.706 A:middle
+What is LINPACK Benchmark?
+
+00:32:25.796 --> 00:32:26.826 A:middle
+Basically, it's trying to
+
+00:32:26.826 --> 00:32:28.956 A:middle
+measure how fast you can solve a
+
+00:32:28.956 --> 00:32:30.446 A:middle
+linear system on your machine.
+
+00:32:31.816 --> 00:32:32.586 A:middle
+There are actually three
+
+00:32:32.586 --> 00:32:34.526 A:middle
+different LINPACK Benchmarks.
+
+00:32:34.686 --> 00:32:36.136 A:middle
+The first one is solving a
+
+00:32:36.136 --> 00:32:37.916 A:middle
+100-by-100 linear system.
+
+00:32:38.516 --> 00:32:40.086 A:middle
+The second one is solving a
+
+00:32:40.086 --> 00:32:41.356 A:middle
+1000-by-1000.
+
+00:32:41.706 --> 00:32:44.526 A:middle
+The last one, which is the most
+
+00:32:44.526 --> 00:32:46.286 A:middle
+interesting one, that's the one
+
+00:32:46.286 --> 00:32:48.236 A:middle
+we're going to use today, is no
+
+00:32:48.236 --> 00:32:48.776 A:middle
+holds barred.
+
+00:32:49.216 --> 00:32:50.856 A:middle
+You can solve as large a system
+
+00:32:50.856 --> 00:32:53.486 A:middle
+you want to fully utilize every
+
+00:32:53.486 --> 00:32:54.906 A:middle
+last bit of the computational
+
+00:32:54.906 --> 00:32:55.996 A:middle
+power on your machine.
+
+00:32:56.496 --> 00:32:59.136 A:middle
+Let's see the performance of
+
+00:32:59.436 --> 00:33:01.646 A:middle
+iPhone X using Accelerate.
+

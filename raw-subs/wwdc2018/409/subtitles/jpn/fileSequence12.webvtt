@@ -1,0 +1,53 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.285 --> 00:12:01.221 align:start position:14% line:-1
+performOperationを提供し
+
+00:12:01.321 --> 00:12:07.194 align:start position:21% line:-2
+クロージャのパラメータに対応する
+ハンドラブロックを取り込みます
+
+00:12:07.394 --> 00:12:10.731 align:start position:27% line:-1
+しかしコードを見ただけでは
+
+00:12:10.831 --> 00:12:15.002 align:start position:21% line:-2
+handlerがエスケープ可能か
+分かりません
+
+00:12:16.003 --> 00:12:19.206 align:start position:20% line:-1
+そこでXcode 10は警告を出し
+
+00:12:19.306 --> 00:12:25.012 align:start position:23% line:-2
+パラメータがエスケープ不可だと
+知らせてくれます
+
+00:12:27.414 --> 00:12:28.815 align:start position:39% line:-1
+修正するには
+
+00:12:28.916 --> 00:12:33.787 align:start position:16% line:-2
+ブロックの値に
+NS NOESCAPEと注釈を補います
+
+00:12:34.555 --> 00:12:37.624 align:start position:14% line:-1
+メソッドのimplementationか
+
+00:12:38.158 --> 00:12:43.063 align:start position:29% line:-2
+そのパラメータにも
+注釈を補っておきましょう
+
+00:12:44.131 --> 00:12:48.268 align:start position:27% line:-2
+NS NOESCAPEが
+明白なリマインダとなります
+
+00:12:48.368 --> 00:12:52.773 align:start position:12% line:-1
+performOperationが返した後
+
+00:12:52.873 --> 00:12:57.477 align:start position:29% line:-2
+ハンドラブロックの保存や
+呼び出しはしません
+
+00:12:58.979 --> 00:13:04.117 align:start position:14% line:-2
+SwiftとObjective-Cの間で
+規定があると
+

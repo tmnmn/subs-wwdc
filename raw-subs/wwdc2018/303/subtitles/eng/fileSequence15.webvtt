@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.246 --> 00:15:02.296 A:middle
+&gt;&gt; Thanks, Sehoon.
+
+00:15:02.446 --> 00:15:04.456 A:middle
+So now you know how to create,
+
+00:15:04.666 --> 00:15:07.086 A:middle
+read, update, and delete all
+
+00:15:07.086 --> 00:15:08.326 A:middle
+these various resources and it
+
+00:15:08.326 --> 00:15:09.326 A:middle
+and might feel like that's
+
+00:15:09.576 --> 00:15:10.666 A:middle
+basically it, that's all you
+
+00:15:10.666 --> 00:15:12.426 A:middle
+need to be able to do but isn't
+
+00:15:12.426 --> 00:15:14.086 A:middle
+the whole story and that brings
+
+00:15:14.086 --> 00:15:15.566 A:middle
+us to relationships.
+
+00:15:16.046 --> 00:15:16.966 A:middle
+Sometimes it's not the
+
+00:15:16.966 --> 00:15:18.406 A:middle
+individual resources that you're
+
+00:15:18.406 --> 00:15:19.776 A:middle
+most interested in but the
+
+00:15:19.776 --> 00:15:21.246 A:middle
+connections between them.
+
+00:15:21.576 --> 00:15:22.816 A:middle
+It helps if I give you an
+
+00:15:22.816 --> 00:15:23.296 A:middle
+example.
+
+00:15:23.846 --> 00:15:25.066 A:middle
+We have a resource called Beta
+
+00:15:25.066 --> 00:15:25.606 A:middle
+Groups.
+
+00:15:25.756 --> 00:15:27.116 A:middle
+These represent all your groups
+
+00:15:27.206 --> 00:15:27.876 A:middle
+in TestFlight.
+
+00:15:28.426 --> 00:15:29.556 A:middle
+We have another one called Beta
+
+00:15:29.636 --> 00:15:31.256 A:middle
+Testers that represent all of
+
+00:15:31.256 --> 00:15:32.636 A:middle
+the people who can test your
+
+00:15:32.636 --> 00:15:33.436 A:middle
+applications.
+
+00:15:33.916 --> 00:15:35.106 A:middle
+And as you know, you can put
+
+00:15:35.106 --> 00:15:36.946 A:middle
+those testers into groups.
+
+00:15:37.696 --> 00:15:38.726 A:middle
+So how do we model something
+
+00:15:38.726 --> 00:15:40.336 A:middle
+like this in the API?
+
+00:15:41.316 --> 00:15:42.536 A:middle
+Let's start by getting Beta
+
+00:15:42.536 --> 00:15:42.956 A:middle
+Groups.
+
+00:15:43.426 --> 00:15:46.026 A:middle
+We go a GET v1/beta Groups and
+
+00:15:46.026 --> 00:15:47.536 A:middle
+we get back an array of Groups.
+
+00:15:47.986 --> 00:15:48.886 A:middle
+And if we look at the first
+
+00:15:48.886 --> 00:15:50.576 A:middle
+group and in particular the
+
+00:15:50.576 --> 00:15:52.616 A:middle
+relationship section, we see
+
+00:15:52.616 --> 00:15:53.616 A:middle
+that this group has three
+
+00:15:53.616 --> 00:15:55.796 A:middle
+relationships: app, beta
+
+00:15:55.796 --> 00:15:57.016 A:middle
+testers, and builds.
+
+00:15:57.286 --> 00:15:58.416 A:middle
+We're only going to talk about
+
+00:15:58.416 --> 00:15:59.426 A:middle
+Beta Testers today.
+
+00:15:59.756 --> 00:16:00.856 A:middle
+So we'll pop that one open.
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.306 --> 00:34:00.240 align:middle line:0
+我想给你看的第一个是
+
+00:34:00.307 --> 00:34:03.377 align:middle line:0
+每当你在CIImage实例上
+调用生成时
+
+00:34:03.710 --> 00:34:06.547 align:middle line:0
+NumPy被预处理并缓存
+
+00:34:07.047 --> 00:34:08.649 align:middle line:0
+例如 我们在这里创建一个图像
+
+00:34:08.715 --> 00:34:11.251 align:middle line:0
+我们按比例缩小
+并应用GaussianBlur
+
+00:34:11.585 --> 00:34:13.520 align:middle line:0
+第一次调用历时56毫秒
+
+00:34:13.587 --> 00:34:15.088 align:middle line:0
+第二次只需两毫秒
+
+00:34:15.989 --> 00:34:18.725 align:middle line:0
+让我们来看看大卷积
+
+00:34:18.792 --> 00:34:20.494 align:middle line:0
+Core Image非常快
+
+00:34:20.960 --> 00:34:23.096 align:middle line:0
+并且能够处理大型卷积
+
+00:34:23.163 --> 00:34:24.264 align:middle line:0
+轻松搞定
+
+00:34:24.531 --> 00:34:26.466 align:middle line:-1
+这里我们用CIBlur
+
+00:34:26.766 --> 00:34:32.005 align:middle line:-2
+一个CIGaussianBlur
+西格玛值为200
+
+00:34:32.072 --> 00:34:32.906 align:middle line:-1
+这很大
+
+00:34:33.206 --> 00:34:34.741 align:middle line:-1
+这里给大家一个概念
+
+00:34:34.808 --> 00:34:36.643 align:middle line:-1
+我向你展示这个图像时
+
+00:34:36.909 --> 00:34:40.179 align:middle line:0
+我实际用scikit-image
+执行equivalent
+
+00:34:40.480 --> 00:34:42.549 align:middle line:0
+我们的运行时间是16秒
+
+00:34:42.949 --> 00:34:45.052 align:middle line:0
+但这次使用
+CoreImage做同样的事
+
+00:34:45.351 --> 00:34:46.954 align:middle line:0
+一百三十毫秒
+
+00:34:47.221 --> 00:34:48.388 align:middle line:0
+是的 就是这么快
+
+00:34:48.455 --> 00:34:49.755 align:middle line:-1
+200倍 耶
+
+00:34:50.324 --> 00:34:51.158 align:middle line:-1
+谢谢
+
+00:34:52.525 --> 00:34:53.560 align:middle line:-1
+好吧 我们继续
+
+00:34:53.627 --> 00:34:56.663 align:middle line:-2
+PyCoreImage
+最强大的功能之一
+
+00:34:56.730 --> 00:35:00.200 align:middle line:-1
+是内联创建自定义GP内核的能力
+

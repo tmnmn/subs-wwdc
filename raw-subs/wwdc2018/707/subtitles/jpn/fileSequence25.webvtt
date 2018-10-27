@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.232 --> 00:25:01.068 align:start position:16% line:-2
+次に sessionとbuilderの
+設定です
+
+00:25:02.169 --> 00:25:05.739 align:start position:12% line:-2
+ここでは
+interface controllerに
+
+00:25:05.839 --> 00:25:09.676 align:start position:21% line:-2
+sessionとbuilderを
+デリゲートします
+
+00:25:09.977 --> 00:25:14.047 align:start position:30% line:-2
+デバイスが生成する
+サンプルも集めたいので
+
+00:25:14.147 --> 00:25:19.853 align:start position:2% line:-2
+HKLiveWorkoutDataSourceを用いて
+workoutConfigurationを渡し
+
+00:25:20.120 --> 00:25:23.857 align:start position:32% line:-2
+自動的にタイプを
+推定するようにします
+
+00:25:25.859 --> 00:25:31.532 align:start position:14% line:-2
+そして sessionとbuilderを
+開始します
+
+00:25:33.901 --> 00:25:38.438 align:start position:32% line:-2
+ワークアウトを始めて
+最初にすることは
+
+00:25:38.539 --> 00:25:41.341 align:start position:30% line:-2
+タイマーを
+スタートさせることです
+
+00:25:41.708 --> 00:25:46.580 align:start position:21% line:-2
+beginCollectionの
+コールバックで行います
+
+00:25:49.783 --> 00:25:52.553 align:start position:29% line:-1
+これが そのメソッドです
+
+00:25:52.953 --> 00:25:59.426 align:start position:30% line:-2
+中断や再開のイベントが
+経過時間に影響するので
+
+00:25:59.526 --> 00:26:04.665 align:start position:0% line:-2
+workoutBuilberDidCollectEventも
+使います
+

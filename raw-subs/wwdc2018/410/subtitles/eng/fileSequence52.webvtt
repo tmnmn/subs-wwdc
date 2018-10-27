@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:59.436 --> 00:52:00.336 A:middle
+is hard.
+
+00:52:01.156 --> 00:52:03.256 A:middle
+Immediate mode refers to the
+
+00:52:03.256 --> 00:52:04.616 A:middle
+recording mode of Instruments
+
+00:52:04.916 --> 00:52:07.016 A:middle
+where we're visualizing the data
+
+00:52:07.016 --> 00:52:08.916 A:middle
+as it's coming in, in near
+
+00:52:08.916 --> 00:52:10.586 A:middle
+real-time, and the reason it's
+
+00:52:10.586 --> 00:52:12.156 A:middle
+hard, well there's really two
+
+00:52:12.156 --> 00:52:12.766 A:middle
+reasons it's hard.
+
+00:52:12.856 --> 00:52:14.246 A:middle
+The first one is it requires
+
+00:52:14.246 --> 00:52:16.006 A:middle
+some additional support that as
+
+00:52:16.006 --> 00:52:17.176 A:middle
+much as we wanted to cover
+
+00:52:17.176 --> 00:52:18.436 A:middle
+today, we just couldn't.
+
+00:52:18.436 --> 00:52:19.546 A:middle
+We just didn't have the time.
+
+00:52:19.956 --> 00:52:20.726 A:middle
+And so we're going to be working
+
+00:52:20.726 --> 00:52:21.936 A:middle
+on the documentation for that.
+
+00:52:22.426 --> 00:52:24.156 A:middle
+But the second reason, and this
+
+00:52:24.156 --> 00:52:26.456 A:middle
+is the more important reason, is
+
+00:52:26.456 --> 00:52:28.606 A:middle
+that, well it's interval data,
+
+00:52:29.076 --> 00:52:29.296 A:middle
+right.
+
+00:52:29.296 --> 00:52:31.236 A:middle
+So intervals can't be entered
+
+00:52:31.236 --> 00:52:32.766 A:middle
+into the tables in the Analysis
+
+00:52:32.766 --> 00:52:34.406 A:middle
+Core until they're closed,
+
+00:52:34.406 --> 00:52:35.316 A:middle
+meaning that we've seen both the
+
+00:52:35.316 --> 00:52:36.346 A:middle
+begin and the end.
+
+00:52:36.496 --> 00:52:37.576 A:middle
+And so when you're looking at a
+
+00:52:37.576 --> 00:52:39.386 A:middle
+recording live, you have a bunch
+
+00:52:39.386 --> 00:52:40.176 A:middle
+of what are called open
+
+00:52:40.176 --> 00:52:40.696 A:middle
+intervals.
+
+00:52:40.886 --> 00:52:42.216 A:middle
+Now if your modelers require
+
+00:52:42.216 --> 00:52:43.506 A:middle
+these as inputs, which is
+
+00:52:43.586 --> 00:52:45.576 A:middle
+totally feasible, then what
+
+00:52:45.576 --> 00:52:46.956 A:middle
+you'll notice is that if there's
+
+00:52:46.956 --> 00:52:48.936 A:middle
+an open interval upstream, well
+
+00:52:48.936 --> 00:52:50.426 A:middle
+all of the modeler clocks
+
+00:52:50.426 --> 00:52:52.266 A:middle
+downstream have to stop until
+
+00:52:52.266 --> 00:52:53.716 A:middle
+that interval is closed because
+
+00:52:53.716 --> 00:52:55.186 A:middle
+remember, the modeler's vision
+
+00:52:55.186 --> 00:52:56.986 A:middle
+is all in time order.
+
+00:52:57.116 --> 00:52:58.796 A:middle
+So it can't move that clock
+
+00:52:58.796 --> 00:53:00.196 A:middle
+forward until all those
+

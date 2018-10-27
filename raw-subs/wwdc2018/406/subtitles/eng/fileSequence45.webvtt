@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:00.076 --> 00:45:01.736 A:middle
+Remember that the slice types
+
+00:45:01.966 --> 00:45:04.246 A:middle
+use the same indices as their
+
+00:45:04.246 --> 00:45:05.576 A:middle
+underlying collection.
+
+00:45:05.976 --> 00:45:07.546 A:middle
+And they also know about their
+
+00:45:07.546 --> 00:45:08.846 A:middle
+underlying basic collection.
+
+00:45:09.356 --> 00:45:11.686 A:middle
+So when we slice the slice, we
+
+00:45:11.686 --> 00:45:13.436 A:middle
+can take those new indices, I2
+
+00:45:13.436 --> 00:45:14.286 A:middle
+and J2.
+
+00:45:14.286 --> 00:45:16.566 A:middle
+Bring them back to the original
+
+00:45:16.566 --> 00:45:18.766 A:middle
+base collection and form the new
+
+00:45:18.766 --> 00:45:19.936 A:middle
+slice from there.
+
+00:45:19.936 --> 00:45:22.486 A:middle
+And what this does is it means
+
+00:45:22.486 --> 00:45:23.946 A:middle
+that when you slice a slice, you
+
+00:45:23.946 --> 00:45:25.436 A:middle
+get something back of the same
+
+00:45:25.436 --> 00:45:26.146 A:middle
+slice type.
+
+00:45:26.316 --> 00:45:28.746 A:middle
+Effectively tying off the
+
+00:45:28.746 --> 00:45:29.466 A:middle
+recursion.
+
+00:45:29.906 --> 00:45:31.206 A:middle
+This is exactly the same
+
+00:45:31.206 --> 00:45:32.946 A:middle
+behavior we saw with substring.
+
+00:45:33.246 --> 00:45:34.846 A:middle
+And it's completely reasonable
+
+00:45:34.846 --> 00:45:36.616 A:middle
+to expect that all subsequence
+
+00:45:36.616 --> 00:45:38.706 A:middle
+types behave in this way.
+
+00:45:39.026 --> 00:45:41.246 A:middle
+So let's model it as an explicit
+
+00:45:41.246 --> 00:45:42.456 A:middle
+part of the collection's
+
+00:45:42.456 --> 00:45:43.746 A:middle
+protocol requirements.
+
+00:45:44.416 --> 00:45:46.436 A:middle
+So here we're saying that the
+
+00:45:46.436 --> 00:45:48.616 A:middle
+subsequence of a subsequence is
+
+00:45:48.616 --> 00:45:49.976 A:middle
+the same type as the
+
+00:45:49.976 --> 00:45:50.766 A:middle
+subsequence.
+
+00:45:51.086 --> 00:45:52.326 A:middle
+In other words, when you slice a
+
+00:45:52.326 --> 00:45:54.786 A:middle
+slice, you get back the same
+
+00:45:54.786 --> 00:45:55.356 A:middle
+slice.
+
+00:45:56.326 --> 00:45:57.976 A:middle
+This makes our nonrecursive
+
+00:45:57.976 --> 00:45:59.256 A:middle
+divide-and-conquer algorithm
+
+00:45:59.336 --> 00:45:59.836 A:middle
+work.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.126 --> 00:06:00.586 A:middle
+So don't necessarily assume that
+
+00:06:00.996 --> 00:06:02.826 A:middle
+a memory warning is your cause.
+
+00:06:03.986 --> 00:06:06.386 A:middle
+So this compressor complicates
+
+00:06:06.386 --> 00:06:08.636 A:middle
+freeing memory because,
+
+00:06:09.516 --> 00:06:10.146 A:middle
+depending on what it's
+
+00:06:10.146 --> 00:06:11.236 A:middle
+compressed, you can actually use
+
+00:06:11.236 --> 00:06:12.106 A:middle
+more memory than before.
+
+00:06:12.356 --> 00:06:14.336 A:middle
+So instead, we recommend policy
+
+00:06:14.336 --> 00:06:15.986 A:middle
+changes, such as maybe not
+
+00:06:15.986 --> 00:06:17.136 A:middle
+caching anything for a little
+
+00:06:17.686 --> 00:06:18.896 A:middle
+bit or kind of throttling some
+
+00:06:18.896 --> 00:06:20.146 A:middle
+of the background work when a
+
+00:06:20.146 --> 00:06:21.106 A:middle
+memory warning occurs.
+
+00:06:22.536 --> 00:06:24.386 A:middle
+Now, some of us may have this in
+
+00:06:24.386 --> 00:06:24.846 A:middle
+our apps.
+
+00:06:25.476 --> 00:06:27.726 A:middle
+We get a memory warning, and we
+
+00:06:27.726 --> 00:06:28.826 A:middle
+decide to remove all objects
+
+00:06:28.826 --> 00:06:31.126 A:middle
+from our cache.
+
+00:06:31.336 --> 00:06:32.766 A:middle
+Going back to that example of
+
+00:06:32.766 --> 00:06:33.856 A:middle
+the compressed dictionary,
+
+00:06:34.646 --> 00:06:35.606 A:middle
+what's going to happen?
+
+00:06:35.896 --> 00:06:37.446 A:middle
+Well, since I'm now accessing
+
+00:06:37.446 --> 00:06:39.496 A:middle
+that dictionary, I'm now using
+
+00:06:39.496 --> 00:06:41.216 A:middle
+up more pages than I was before.
+
+00:06:42.046 --> 00:06:43.866 A:middle
+This is not what we want to do
+
+00:06:43.926 --> 00:06:44.896 A:middle
+in a memory-constrained
+
+00:06:45.066 --> 00:06:45.546 A:middle
+environment.
+
+00:06:46.466 --> 00:06:47.726 A:middle
+And because I'm removing all the
+
+00:06:47.726 --> 00:06:50.186 A:middle
+objects, I'm doing a lot of work
+
+00:06:50.186 --> 00:06:51.306 A:middle
+just to get it back down to one
+
+00:06:51.306 --> 00:06:52.356 A:middle
+page, which is what it was when
+
+00:06:52.356 --> 00:06:53.016 A:middle
+it was compressed.
+
+00:06:54.246 --> 00:06:55.346 A:middle
+So we really got to be careful
+
+00:06:55.346 --> 00:06:57.486 A:middle
+about memory warnings in
+
+00:06:57.486 --> 00:06:57.796 A:middle
+general.
+
+00:06:59.376 --> 00:07:01.326 A:middle
+Now, this brings up an important
+

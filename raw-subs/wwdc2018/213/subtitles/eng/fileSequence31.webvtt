@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.396 --> 00:31:00.716 A:middle
+image representing the maneuver.
+
+00:31:01.226 --> 00:31:02.676 A:middle
+How much farther it is until you
+
+00:31:02.676 --> 00:31:03.136 A:middle
+arrive there.
+
+00:31:04.286 --> 00:31:05.936 A:middle
+And of course, instructions on
+
+00:31:05.936 --> 00:31:06.806 A:middle
+what to do when you get there,
+
+00:31:06.806 --> 00:31:08.366 A:middle
+such as turn left or continue
+
+00:31:08.366 --> 00:31:08.706 A:middle
+straight.
+
+00:31:09.186 --> 00:31:12.616 A:middle
+Let's take a look at what you'll
+
+00:31:12.616 --> 00:31:15.026 A:middle
+need to learn to use turn by
+
+00:31:15.026 --> 00:31:16.046 A:middle
+turn guidance in the CarPlay
+
+00:31:16.046 --> 00:31:16.416 A:middle
+framework.
+
+00:31:16.916 --> 00:31:20.826 A:middle
+The CPMapTemplateDelegate and
+
+00:31:20.826 --> 00:31:22.436 A:middle
+the mapTemplate are two places
+
+00:31:22.436 --> 00:31:23.126 A:middle
+you'll need to start.
+
+00:31:23.486 --> 00:31:24.716 A:middle
+First, when the user hits that
+
+00:31:24.716 --> 00:31:25.926 A:middle
+go button from Route Preview
+
+00:31:26.686 --> 00:31:28.426 A:middle
+mapTemplate startedTrip using
+
+00:31:28.426 --> 00:31:29.656 A:middle
+routeChoice will be called on
+
+00:31:29.656 --> 00:31:30.636 A:middle
+your template delegate.
+
+00:31:31.226 --> 00:31:33.166 A:middle
+This is your indication to begin
+
+00:31:33.166 --> 00:31:34.966 A:middle
+navigation to that destination
+
+00:31:34.966 --> 00:31:36.436 A:middle
+using the route choice the user
+
+00:31:36.436 --> 00:31:36.996 A:middle
+has selected.
+
+00:31:37.656 --> 00:31:39.276 A:middle
+This is when you would begin
+
+00:31:39.386 --> 00:31:41.276 A:middle
+navigation in your app, and
+
+00:31:41.276 --> 00:31:42.686 A:middle
+also, begin providing turn by
+
+00:31:42.686 --> 00:31:43.796 A:middle
+turn updates to the CarPlay
+
+00:31:43.796 --> 00:31:44.186 A:middle
+framework.
+
+00:31:44.686 --> 00:31:46.066 A:middle
+You'll want to call
+
+00:31:46.066 --> 00:31:48.126 A:middle
+startNavigationSession for trip
+
+00:31:48.356 --> 00:31:49.226 A:middle
+on your map template.
+
+00:31:49.456 --> 00:31:50.536 A:middle
+And this will provide you with
+
+00:31:50.536 --> 00:31:51.456 A:middle
+an instance of
+
+00:31:51.516 --> 00:31:52.886 A:middle
+CPNavigationSession.
+
+00:31:52.886 --> 00:31:54.636 A:middle
+And this is where you manage
+
+00:31:54.636 --> 00:31:55.966 A:middle
+those upcoming maneuvers.
+
+00:31:56.406 --> 00:31:59.836 A:middle
+Using CPNavigationSession and
+
+00:31:59.836 --> 00:32:01.896 A:middle
+CPManeuver you will set upcoming
+

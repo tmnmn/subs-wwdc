@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.046 --> 00:06:00.426 A:middle
+collections remain collections,
+
+00:06:00.426 --> 00:06:01.316 A:middle
+and so you can still iterate
+
+00:06:01.316 --> 00:06:02.536 A:middle
+forward and backward.
+
+00:06:02.606 --> 00:06:05.796 A:middle
+Now as Swift developers, we have
+
+00:06:05.796 --> 00:06:06.896 A:middle
+access to many useful
+
+00:06:06.896 --> 00:06:08.046 A:middle
+collections that conform to
+
+00:06:08.046 --> 00:06:10.626 A:middle
+these protocols, collections
+
+00:06:10.626 --> 00:06:11.666 A:middle
+such as array, set, and
+
+00:06:11.666 --> 00:06:12.186 A:middle
+dictionary.
+
+00:06:12.656 --> 00:06:14.836 A:middle
+But thanks to the general
+
+00:06:14.836 --> 00:06:15.746 A:middle
+purpose utility of these
+
+00:06:15.746 --> 00:06:17.006 A:middle
+protocols, many other types
+
+00:06:17.196 --> 00:06:18.696 A:middle
+conform to these collection
+
+00:06:18.696 --> 00:06:20.186 A:middle
+protocols as well, such as data,
+
+00:06:20.476 --> 00:06:21.416 A:middle
+range, and string.
+
+00:06:22.566 --> 00:06:24.356 A:middle
+Or the index collections, and
+
+00:06:24.356 --> 00:06:25.546 A:middle
+they all gain access to all of
+
+00:06:25.546 --> 00:06:26.816 A:middle
+this rich functionality by
+
+00:06:26.816 --> 00:06:28.216 A:middle
+simply conforming to Collection
+
+00:06:28.216 --> 00:06:29.036 A:middle
+in their own fashion.
+
+00:06:29.346 --> 00:06:31.006 A:middle
+Indeed, once you know how any
+
+00:06:31.006 --> 00:06:32.246 A:middle
+one of these types works, you
+
+00:06:32.246 --> 00:06:33.616 A:middle
+can apply that knowledge to any
+
+00:06:33.616 --> 00:06:35.326 A:middle
+of the others, and there are
+
+00:06:35.326 --> 00:06:35.886 A:middle
+quite a few.
+
+00:06:35.916 --> 00:06:38.006 A:middle
+So I'm going to talk about the
+
+00:06:38.006 --> 00:06:39.586 A:middle
+details about how a type
+
+00:06:39.586 --> 00:06:41.166 A:middle
+conforms to Collection, and it
+
+00:06:41.166 --> 00:06:43.456 A:middle
+all begins with describing how
+
+00:06:43.666 --> 00:06:46.376 A:middle
+it is indexed.
+
+00:06:46.446 --> 00:06:47.746 A:middle
+Each collection has its own kind
+
+00:06:47.746 --> 00:06:48.336 A:middle
+of index.
+
+00:06:48.856 --> 00:06:50.766 A:middle
+And that index must be
+
+00:06:50.766 --> 00:06:51.306 A:middle
+comparable.
+
+00:06:52.286 --> 00:06:54.306 A:middle
+In some cases, the indices can
+
+00:06:54.306 --> 00:06:56.446 A:middle
+look like integers, like arrays,
+
+00:06:56.716 --> 00:06:57.566 A:middle
+but just because an index
+
+00:06:57.566 --> 00:06:58.736 A:middle
+happens to look like an integer
+
+00:06:58.896 --> 00:06:59.956 A:middle
+doesn't mean that you should use
+
+00:06:59.956 --> 00:07:00.456 A:middle
+it like one.
+

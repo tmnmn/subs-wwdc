@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.586 --> 00:25:00.206 A:middle
+Now, if you do this, you're
+
+00:25:00.206 --> 00:25:01.556 A:middle
+actually going to be disabling
+
+00:25:02.146 --> 00:25:03.726 A:middle
+the optimization that we
+
+00:25:03.726 --> 00:25:04.906 A:middle
+introduced in iOS 12.
+
+00:25:05.426 --> 00:25:07.456 A:middle
+So, check your implementations
+
+00:25:07.456 --> 00:25:08.456 A:middle
+of layerWillDraw.
+
+00:25:08.806 --> 00:25:10.016 A:middle
+Make sure you're not going to
+
+00:25:10.016 --> 00:25:10.926 A:middle
+accidentally defeat an
+
+00:25:10.926 --> 00:25:12.236 A:middle
+optimization that could benefit
+
+00:25:12.236 --> 00:25:13.916 A:middle
+your code when running on iOS
+
+00:25:13.916 --> 00:25:14.236 A:middle
+12.
+
+00:25:16.696 --> 00:25:19.376 A:middle
+But we can do better than just
+
+00:25:19.646 --> 00:25:21.786 A:middle
+hinting at whether we need a
+
+00:25:21.786 --> 00:25:23.106 A:middle
+wide color capable backing
+
+00:25:23.106 --> 00:25:23.446 A:middle
+store.
+
+00:25:23.836 --> 00:25:25.146 A:middle
+We can, actually, reduce the
+
+00:25:25.146 --> 00:25:26.386 A:middle
+total amount of backing storage
+
+00:25:26.386 --> 00:25:27.636 A:middle
+that our application needs.
+
+00:25:27.636 --> 00:25:29.616 A:middle
+We can do that by refactoring
+
+00:25:29.676 --> 00:25:31.526 A:middle
+this larger view into smaller
+
+00:25:31.526 --> 00:25:32.206 A:middle
+subviews.
+
+00:25:32.926 --> 00:25:34.586 A:middle
+And reducing or eliminating
+
+00:25:34.656 --> 00:25:36.026 A:middle
+places that override the draw
+
+00:25:36.026 --> 00:25:36.496 A:middle
+function.
+
+00:25:37.016 --> 00:25:39.306 A:middle
+This will help us eliminate
+
+00:25:39.306 --> 00:25:40.806 A:middle
+duplicate copies of image data
+
+00:25:41.076 --> 00:25:42.016 A:middle
+that exist in memory.
+
+00:25:42.166 --> 00:25:43.966 A:middle
+And it will allow us to use
+
+00:25:43.966 --> 00:25:46.256 A:middle
+optimized properties of UIView
+
+00:25:46.256 --> 00:25:47.336 A:middle
+that don't require a backing
+
+00:25:47.336 --> 00:25:47.706 A:middle
+store.
+
+00:25:48.236 --> 00:25:52.246 A:middle
+So, as I mentioned, overriding
+
+00:25:52.246 --> 00:25:53.776 A:middle
+the draw method will require
+
+00:25:53.776 --> 00:25:55.206 A:middle
+creating a backing store to go
+
+00:25:55.206 --> 00:25:56.056 A:middle
+with your CALayer.
+
+00:25:56.526 --> 00:25:58.286 A:middle
+But some of the properties in
+
+00:25:58.286 --> 00:26:00.236 A:middle
+UIView can still work, even if
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:00.206 --> 00:41:02.606 A:middle
+There are two ways to represent
+
+00:41:02.606 --> 00:41:04.296 A:middle
+the combination of an identifier
+
+00:41:04.296 --> 00:41:06.306 A:middle
+with a display string.
+
+00:41:06.346 --> 00:41:07.966 A:middle
+You could add two parameters to
+
+00:41:07.966 --> 00:41:09.156 A:middle
+your intent, one for the
+
+00:41:09.156 --> 00:41:10.516 A:middle
+identifier, one for the display
+
+00:41:10.516 --> 00:41:12.726 A:middle
+string, or you could add a
+
+00:41:12.726 --> 00:41:15.686 A:middle
+single parameter using the
+
+00:41:15.906 --> 00:41:16.536 A:middle
+INObject.
+
+00:41:16.536 --> 00:41:17.586 A:middle
+With the first approach, you
+
+00:41:17.586 --> 00:41:18.366 A:middle
+have a dependency.
+
+00:41:18.366 --> 00:41:19.716 A:middle
+Since the display string depends
+
+00:41:20.196 --> 00:41:21.936 A:middle
+on the object as referenced by
+
+00:41:21.936 --> 00:41:24.456 A:middle
+the identifier, we discourage
+
+00:41:24.456 --> 00:41:25.696 A:middle
+having these dependencies as
+
+00:41:25.696 --> 00:41:27.246 A:middle
+they could cause issues when we
+
+00:41:27.246 --> 00:41:28.486 A:middle
+suggest this intent later.
+
+00:41:29.186 --> 00:41:34.106 A:middle
+A good shortcut should also have
+
+00:41:34.106 --> 00:41:35.676 A:middle
+an understandable title,
+
+00:41:35.926 --> 00:41:37.376 A:middle
+subtitle, and image.
+
+00:41:38.056 --> 00:41:39.116 A:middle
+It should represent what will
+
+00:41:39.116 --> 00:41:40.306 A:middle
+happen when the user taps the
+
+00:41:40.306 --> 00:41:42.236 A:middle
+shortcut, since it will be the
+
+00:41:42.236 --> 00:41:43.376 A:middle
+only thing the user will see
+
+00:41:43.616 --> 00:41:44.666 A:middle
+before interacting with it.
+
+00:41:44.916 --> 00:41:46.716 A:middle
+And, of course, you want to test
+
+00:41:46.716 --> 00:41:47.926 A:middle
+your shortcuts to make sure that
+
+00:41:47.926 --> 00:41:49.066 A:middle
+they look right and that they
+
+00:41:49.066 --> 00:41:50.266 A:middle
+behave as expected.
+
+00:41:51.056 --> 00:41:52.106 A:middle
+There are a couple of ways to do
+
+00:41:52.106 --> 00:41:52.316 A:middle
+that.
+
+00:41:52.426 --> 00:41:55.096 A:middle
+As I showed you earlier, we
+
+00:41:55.096 --> 00:41:56.396 A:middle
+added two new developer settings
+
+00:41:56.526 --> 00:41:57.716 A:middle
+that allow you to see your
+
+00:41:57.716 --> 00:41:59.406 A:middle
+recent donations on search and
+
+00:41:59.406 --> 00:42:00.746 A:middle
+on the lock screen, instead of
+

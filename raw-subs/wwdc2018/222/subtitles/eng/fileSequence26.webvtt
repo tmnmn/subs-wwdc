@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.996 --> 00:26:01.936 A:middle
+There's another form of failure
+
+00:26:01.936 --> 00:26:02.606 A:middle
+that can happen here.
+
+00:26:02.956 --> 00:26:04.106 A:middle
+And that's archive corruption.
+
+00:26:04.106 --> 00:26:05.436 A:middle
+If the archive itself is too
+
+00:26:05.436 --> 00:26:07.356 A:middle
+corrupted and doesn't follow the
+
+00:26:07.356 --> 00:26:08.336 A:middle
+expected format for
+
+00:26:08.336 --> 00:26:09.866 A:middle
+NSKeyedUnarchiver, well we won't
+
+00:26:09.866 --> 00:26:11.256 A:middle
+be able to decode anything, and
+
+00:26:11.256 --> 00:26:13.246 A:middle
+so you'll get that same sort of
+
+00:26:13.976 --> 00:26:14.166 A:middle
+failure.
+
+00:26:14.906 --> 00:26:17.166 A:middle
+Now, what happens on failure is
+
+00:26:17.166 --> 00:26:18.666 A:middle
+decided by the decoding failure
+
+00:26:18.666 --> 00:26:20.286 A:middle
+policy on the Unarchiver.
+
+00:26:20.786 --> 00:26:21.606 A:middle
+There's two options here.
+
+00:26:22.886 --> 00:26:23.946 A:middle
+On failure, we can either raise
+
+00:26:23.946 --> 00:26:26.586 A:middle
+an exception or store
+
+00:26:26.586 --> 00:26:27.836 A:middle
+information about what happened
+
+00:26:27.836 --> 00:26:28.976 A:middle
+and continue execution.
+
+00:26:29.926 --> 00:26:31.456 A:middle
+Raising exceptions is currently
+
+00:26:31.456 --> 00:26:31.916 A:middle
+the default.
+
+00:26:32.466 --> 00:26:35.766 A:middle
+So, if we have a call, again
+
+00:26:35.766 --> 00:26:36.776 A:middle
+this is our call from earlier,
+
+00:26:36.776 --> 00:26:37.846 A:middle
+trying to decode a listing.
+
+00:26:38.116 --> 00:26:39.826 A:middle
+And we find an object of an
+
+00:26:39.826 --> 00:26:41.296 A:middle
+unexpected class in the archive,
+
+00:26:42.146 --> 00:26:43.256 A:middle
+under the hood this calls the
+
+00:26:43.256 --> 00:26:44.816 A:middle
+failWithError method, on the
+
+00:26:44.816 --> 00:26:47.036 A:middle
+Unarchiver and passes in an
+
+00:26:47.036 --> 00:26:48.466 A:middle
+error that indicates what went
+
+00:26:48.466 --> 00:26:49.046 A:middle
+wrong and where.
+
+00:26:50.246 --> 00:26:51.146 A:middle
+Now, under the hood,
+
+00:26:51.146 --> 00:26:52.946 A:middle
+failWithError has a decision to
+
+00:26:52.946 --> 00:26:53.136 A:middle
+make.
+
+00:26:54.056 --> 00:26:55.566 A:middle
+If the decoding failure policy
+
+00:26:55.566 --> 00:26:57.256 A:middle
+is to raise exceptions, it will
+
+00:26:57.706 --> 00:26:58.476 A:middle
+raise exceptions.
+
+00:26:59.336 --> 00:27:00.326 A:middle
+If you're writing a Swift app,
+

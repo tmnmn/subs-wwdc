@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.920 --> 00:27:04.324 align:start position:32% line:-2
+なぜ 再コンパイルが
+必要なのでしょうか？
+
+00:27:04.625 --> 00:27:08.161 align:start position:36% line:-2
+依存関係モデルを
+理解しましょう
+
+00:27:09.763 --> 00:27:14.001 align:start position:25% line:-2
+Swiftの依存関係モデルは
+ファイルに基づきます
+
+00:27:14.101 --> 00:27:18.272 align:start position:29% line:-2
+ヘッダファイルがないため
+少し厄介です
+
+00:27:18.605 --> 00:27:23.577 align:start position:25% line:-2
+デフォルトで定義されたものが
+すべて見えます
+
+00:27:24.211 --> 00:27:27.548 align:start position:14% line:-2
+左のファイルで
+struct Pointを宣言しています
+
+00:27:27.881 --> 00:27:29.716 align:start position:36% line:-1
+右のファイルでは
+
+00:27:29.817 --> 00:27:33.954 align:start position:27% line:-2
+最初の宣言を参照し
+コンパイラも分かっています
+
+00:27:34.321 --> 00:27:38.625 align:start position:30% line:-2
+右のファイルのxとyの
+プロパティも同様です
+
+00:27:41.361 --> 00:27:45.799 align:start position:29% line:-2
+このため 左のファイルを
+変更した場合―
+
+00:27:46.467 --> 00:27:49.469 align:start position:27% line:-2
+両ファイルの再コンパイルが
+必要です
+
+00:27:50.304 --> 00:27:52.473 align:start position:36% line:-1
+これが重要なのは
+
+00:27:52.573 --> 00:27:56.810 align:start position:27% line:-2
+このイニシャライザを
+正しく呼び出したいからです
+
+00:27:58.645 --> 00:28:03.650 align:start position:23% line:-2
+コンパイラは 関数本体の変更を
+分かっています
+

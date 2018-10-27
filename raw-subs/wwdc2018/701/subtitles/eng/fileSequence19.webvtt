@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.866 --> 00:19:00.566 A:middle
+taking a look at vDSP, and we
+
+00:19:00.566 --> 00:19:01.546 A:middle
+showed you two examples.
+
+00:19:01.746 --> 00:19:02.786 A:middle
+The first was how to extract a
+
+00:19:02.786 --> 00:19:04.776 A:middle
+signal from noise, and the
+
+00:19:04.776 --> 00:19:06.136 A:middle
+second was how to remove certain
+
+00:19:06.136 --> 00:19:07.276 A:middle
+types of artifacts from an
+
+00:19:07.276 --> 00:19:07.586 A:middle
+image.
+
+00:19:08.996 --> 00:19:10.606 A:middle
+We then took a look at simd, and
+
+00:19:10.606 --> 00:19:11.456 A:middle
+I showed you how you can
+
+00:19:11.456 --> 00:19:12.776 A:middle
+represent rotations in three
+
+00:19:12.776 --> 00:19:13.996 A:middle
+dimensions using quaternions.
+
+00:19:14.466 --> 00:19:16.196 A:middle
+I'm now going to pass off the
+
+00:19:16.196 --> 00:19:17.216 A:middle
+presentation to my colleague,
+
+00:19:17.216 --> 00:19:18.686 A:middle
+Luke Chang, who's going to show
+
+00:19:18.686 --> 00:19:19.376 A:middle
+you some of the interesting
+
+00:19:19.376 --> 00:19:20.376 A:middle
+things you can do with vImage.
+
+00:19:21.516 --> 00:19:26.246 A:middle
+[ Applause ]
+
+00:19:26.746 --> 00:19:27.356 A:middle
+&gt;&gt; Thank you, Matthew.
+
+00:19:30.206 --> 00:19:30.916 A:middle
+Hello everyone.
+
+00:19:31.276 --> 00:19:32.546 A:middle
+My name is Luke Chang.
+
+00:19:32.546 --> 00:19:33.786 A:middle
+I'm an engineer in Vector and
+
+00:19:33.786 --> 00:19:34.456 A:middle
+Numerics group.
+
+00:19:35.226 --> 00:19:36.576 A:middle
+Today, I'm going to talk about
+
+00:19:36.576 --> 00:19:39.176 A:middle
+vImage, what vImage offers, and
+
+00:19:39.176 --> 00:19:41.086 A:middle
+how easy it is to use vImage in
+
+00:19:41.086 --> 00:19:41.626 A:middle
+your apps.
+
+00:19:41.816 --> 00:19:43.796 A:middle
+With just a few lines of code,
+
+00:19:43.796 --> 00:19:45.836 A:middle
+you can create engaging video
+
+00:19:45.836 --> 00:19:46.906 A:middle
+effects in your app.
+
+00:19:47.446 --> 00:19:49.636 A:middle
+Let's get right to it.
+
+00:19:50.876 --> 00:19:52.856 A:middle
+VImage is our image processing
+
+00:19:52.856 --> 00:19:53.346 A:middle
+library.
+
+00:19:53.816 --> 00:19:55.886 A:middle
+It has several components.
+
+00:19:56.146 --> 00:19:58.386 A:middle
+The first component is the
+
+00:19:58.386 --> 00:19:59.216 A:middle
+conversion function.
+

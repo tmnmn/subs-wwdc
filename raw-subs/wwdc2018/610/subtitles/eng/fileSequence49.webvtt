@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:58.866 --> 00:49:00.046 A:middle
+We can see an example here.
+
+00:49:00.046 --> 00:49:02.566 A:middle
+That's the Nefertiti bust.
+
+00:49:02.716 --> 00:49:04.266 A:middle
+It's a statue that could be
+
+00:49:04.266 --> 00:49:05.326 A:middle
+present in a museum.
+
+00:49:05.636 --> 00:49:07.166 A:middle
+And now, you can detect it with
+
+00:49:07.166 --> 00:49:07.576 A:middle
+ARKit.
+
+00:49:08.216 --> 00:49:10.376 A:middle
+And then, for example, display
+
+00:49:10.376 --> 00:49:12.296 A:middle
+some information on top of the
+
+00:49:12.296 --> 00:49:14.476 A:middle
+physical object.
+
+00:49:15.466 --> 00:49:17.536 A:middle
+Note also that in the object
+
+00:49:17.736 --> 00:49:18.936 A:middle
+detection in ARKit, we are
+
+00:49:18.936 --> 00:49:20.516 A:middle
+talking about specific instances
+
+00:49:20.516 --> 00:49:21.116 A:middle
+of an object.
+
+00:49:21.646 --> 00:49:22.506 A:middle
+So, we're not talking about
+
+00:49:22.506 --> 00:49:23.986 A:middle
+detecting statues in general,
+
+00:49:24.346 --> 00:49:26.406 A:middle
+but this particular instance of
+
+00:49:26.406 --> 00:49:27.456 A:middle
+the Nefertiti statue.
+
+00:49:28.836 --> 00:49:29.986 A:middle
+So, how do we represent these
+
+00:49:29.986 --> 00:49:31.006 A:middle
+objects in ARKit?
+
+00:49:31.626 --> 00:49:33.366 A:middle
+You first need to scan the
+
+00:49:33.366 --> 00:49:33.736 A:middle
+object.
+
+00:49:33.806 --> 00:49:35.086 A:middle
+So, really, there's two steps to
+
+00:49:35.086 --> 00:49:35.196 A:middle
+it.
+
+00:49:35.316 --> 00:49:36.936 A:middle
+First, you scan the object and
+
+00:49:36.936 --> 00:49:38.336 A:middle
+then you can detect it.
+
+00:49:39.096 --> 00:49:40.546 A:middle
+Let's talk about the scanning
+
+00:49:40.546 --> 00:49:42.446 A:middle
+part, which mostly is going to
+
+00:49:42.446 --> 00:49:44.166 A:middle
+be on your side as a developer,
+
+00:49:44.886 --> 00:49:46.016 A:middle
+to basically, create that
+
+00:49:46.016 --> 00:49:47.296 A:middle
+representation of the object
+
+00:49:47.406 --> 00:49:49.176 A:middle
+that can be used for detection.
+
+00:49:51.276 --> 00:49:53.716 A:middle
+Internally, an object is
+
+00:49:53.716 --> 00:49:55.616 A:middle
+represented in a similar way as
+
+00:49:55.616 --> 00:49:56.196 A:middle
+the world map.
+
+00:49:56.776 --> 00:49:58.576 A:middle
+You can see an example of the 3D
+
+00:49:58.916 --> 00:50:00.456 A:middle
+feature points of the Nefertiti
+

@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.860 --> 00:36:02.062 align:start position:29% line:-1
+まず 参照するイメージを
+
+00:36:02.162 --> 00:36:04.865 align:start position:27% line:-2
+ファイルか
+アセットカタログからロード
+
+00:36:05.599 --> 00:36:08.435 align:start position:34% line:-2
+参照するイメージを
+ロードし終えたら
+
+00:36:08.569 --> 00:36:12.306 align:start position:27% line:-2
+次の２種類の
+セッションの設定に用います
+
+00:36:12.406 --> 00:36:16.176 align:start position:0% line:-2
+ARWorldTrackingConfigurationに
+detectionImagesを指定するか
+
+00:36:16.276 --> 00:36:21.281 align:start position:0% line:-2
+ARImageTrackingConfigurationに
+trackingImagesを指定します
+
+00:36:22.249 --> 00:36:27.254 align:start position:30% line:-2
+設定が完了したら
+セッションを起動します
+
+00:36:28.222 --> 00:36:29.456 align:start position:36% line:-1
+いつものとおり―
+
+00:36:29.823 --> 00:36:33.894 align:start position:23% line:-2
+セッションが起動すると
+更新ごとにARFrameを取得
+
+00:36:34.328 --> 00:36:38.832 align:start position:9% line:-2
+ARFrameにはARImageAnchorの
+オブジェクトが含まれます
+
+00:36:38.932 --> 00:36:41.034 align:start position:29% line:-1
+イメージ検出後のことです
+
+00:36:42.369 --> 00:36:45.138 align:start position:21% line:-2
+このARImageAnchorは
+追跡可能です
+
+00:36:45.239 --> 00:36:48.509 align:start position:18% line:-2
+ARTrackableのプロトコルで
+確認できます
+
+00:36:48.675 --> 00:36:50.577 align:start position:29% line:-1
+ここにはBooleanの
+
+00:36:51.445 --> 00:36:52.913 align:start position:25% line:-1
+isTrackedがあります
+
+00:36:53.013 --> 00:36:56.717 align:start position:27% line:-2
+イメージの
+トラッキング状態を示します
+
+00:36:56.817 --> 00:36:59.753 align:start position:25% line:-1
+trueだと追跡されています
+

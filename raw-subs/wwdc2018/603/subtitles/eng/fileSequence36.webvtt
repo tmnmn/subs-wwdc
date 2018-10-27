@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.786 --> 00:36:01.156 A:middle
+animations won't be modified.
+
+00:36:01.406 --> 00:36:02.496 A:middle
+It's only the textures that will
+
+00:36:02.496 --> 00:36:02.976 A:middle
+be downsampled.
+
+00:36:06.276 --> 00:36:07.576 A:middle
+You're probably thinking at this
+
+00:36:07.576 --> 00:36:09.506 A:middle
+point, okay, so how big can my
+
+00:36:09.506 --> 00:36:09.986 A:middle
+model be?
+
+00:36:09.986 --> 00:36:11.706 A:middle
+How big and complex can my
+
+00:36:11.706 --> 00:36:12.286 A:middle
+textures be?
+
+00:36:12.286 --> 00:36:15.146 A:middle
+And the answer is there is no
+
+00:36:15.146 --> 00:36:15.626 A:middle
+one answer.
+
+00:36:16.376 --> 00:36:17.986 A:middle
+Many factors affect a model's
+
+00:36:17.986 --> 00:36:19.786 A:middle
+memory usage, its mesh, and its
+
+00:36:19.786 --> 00:36:21.436 A:middle
+animation complexity, and its
+
+00:36:21.436 --> 00:36:22.576 A:middle
+textures size and count.
+
+00:36:23.816 --> 00:36:26.536 A:middle
+But as a guide, for a model that
+
+00:36:26.536 --> 00:36:28.716 A:middle
+has a single PBR texture, using
+
+00:36:28.716 --> 00:36:30.126 A:middle
+those six textures we saw
+
+00:36:30.126 --> 00:36:32.116 A:middle
+earlier on, if you aim for about
+
+00:36:32.336 --> 00:36:35.606 A:middle
+100k polygons, one set of 2k by
+
+00:36:35.606 --> 00:36:38.136 A:middle
+2k PBR textures and about ten
+
+00:36:38.136 --> 00:36:39.956 A:middle
+seconds of animation, this is
+
+00:36:39.956 --> 00:36:40.916 A:middle
+typically good for those
+
+00:36:40.916 --> 00:36:42.216 A:middle
+high-memory devices we mentioned
+
+00:36:42.216 --> 00:36:42.576 A:middle
+earlier on.
+
+00:36:43.156 --> 00:36:45.976 A:middle
+If in doubt, always test your
+
+00:36:45.976 --> 00:36:47.786 A:middle
+model on a device to make sure
+
+00:36:47.786 --> 00:36:49.166 A:middle
+that it renders and loads as you
+
+00:36:49.946 --> 00:36:52.116 A:middle
+would expect.
+
+00:36:52.236 --> 00:36:53.736 A:middle
+As you optimize your models for
+
+00:36:53.796 --> 00:36:55.336 A:middle
+use in AR Quick Look, a few
+
+00:36:55.336 --> 00:36:56.906 A:middle
+things to keep in mind.
+
+00:36:57.636 --> 00:36:59.316 A:middle
+Do be sure to freeze any
+
+00:36:59.316 --> 00:37:00.656 A:middle
+transforms in your models and
+

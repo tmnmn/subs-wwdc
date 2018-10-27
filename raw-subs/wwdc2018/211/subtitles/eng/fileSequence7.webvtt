@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.146 --> 00:07:02.436 A:middle
+But for the best Shortcuts
+
+00:07:02.436 --> 00:07:03.936 A:middle
+experience, you'll want to adopt
+
+00:07:03.936 --> 00:07:05.746 A:middle
+intents, and intents-based
+
+00:07:05.746 --> 00:07:06.646 A:middle
+shortcuts are really cool,
+
+00:07:06.646 --> 00:07:08.596 A:middle
+because they can run inline
+
+00:07:08.596 --> 00:07:10.156 A:middle
+without launching your app.
+
+00:07:10.156 --> 00:07:11.656 A:middle
+And they can include custom
+
+00:07:11.656 --> 00:07:13.626 A:middle
+voice responses and custom UIs
+
+00:07:13.626 --> 00:07:14.726 A:middle
+like we saw earlier.
+
+00:07:14.726 --> 00:07:16.186 A:middle
+And they can also include
+
+00:07:16.336 --> 00:07:17.956 A:middle
+granular parameter predictions,
+
+00:07:18.266 --> 00:07:19.756 A:middle
+which Willem tell you a little
+
+00:07:19.756 --> 00:07:20.346 A:middle
+bit about later.
+
+00:07:21.516 --> 00:07:23.616 A:middle
+So, once you've decided how to
+
+00:07:23.616 --> 00:07:25.356 A:middle
+adopt, you're ready to dive into
+
+00:07:25.356 --> 00:07:28.116 A:middle
+the implementation, so let's do
+
+00:07:29.176 --> 00:07:29.996 A:middle
+that now.
+
+00:07:29.996 --> 00:07:30.976 A:middle
+First, let's go over how to
+
+00:07:30.976 --> 00:07:31.766 A:middle
+adopt shortcuts with
+
+00:07:31.766 --> 00:07:33.586 A:middle
+NSUserActivity, and the first
+
+00:07:33.586 --> 00:07:35.416 A:middle
+step is to define your shortcut.
+
+00:07:35.416 --> 00:07:37.376 A:middle
+For NSUserActivity, that means
+
+00:07:37.406 --> 00:07:38.806 A:middle
+you need to declare a
+
+00:07:38.806 --> 00:07:41.116 A:middle
+UserActivityType in your app's
+
+00:07:41.116 --> 00:07:43.466 A:middle
+Info.plist file to register your
+
+00:07:43.466 --> 00:07:44.596 A:middle
+activity type with the system.
+
+00:07:46.006 --> 00:07:47.896 A:middle
+Next, you need to donate your
+
+00:07:47.896 --> 00:07:48.326 A:middle
+shortcut.
+
+00:07:48.736 --> 00:07:50.836 A:middle
+For NSUserActivity, that means
+
+00:07:50.946 --> 00:07:52.186 A:middle
+every time the user is looking
+
+00:07:52.186 --> 00:07:53.596 A:middle
+at the screen in your app that
+
+00:07:53.596 --> 00:07:54.716 A:middle
+you want to provide a shortcut
+
+00:07:54.716 --> 00:07:56.076 A:middle
+to, you should make an
+
+00:07:56.076 --> 00:07:57.836 A:middle
+NSUserActivity object available.
+
+00:07:58.696 --> 00:08:01.106 A:middle
+So, there's one key new thing
+

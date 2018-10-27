@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.406 --> 00:32:00.056 A:middle
+GPU to take, approximately, the
+
+00:32:00.056 --> 00:32:01.796 A:middle
+same amount of time to render
+
+00:32:01.796 --> 00:32:04.176 A:middle
+its part of the scene.
+
+00:32:04.306 --> 00:32:05.736 A:middle
+Now, the way we do this is we
+
+00:32:05.736 --> 00:32:07.326 A:middle
+start with the fixed partitions
+
+00:32:07.326 --> 00:32:09.096 A:middle
+that you see here, and we render
+
+00:32:09.096 --> 00:32:09.426 A:middle
+a frame.
+
+00:32:09.716 --> 00:32:12.296 A:middle
+And we time how long each GPU is
+
+00:32:12.296 --> 00:32:12.956 A:middle
+working for.
+
+00:32:12.956 --> 00:32:14.836 A:middle
+And then, we use that to decide
+
+00:32:14.836 --> 00:32:16.166 A:middle
+how big a region to give each
+
+00:32:16.166 --> 00:32:17.236 A:middle
+GPU the next time around.
+
+00:32:17.366 --> 00:32:21.276 A:middle
+And we do this the whole time
+
+00:32:21.276 --> 00:32:22.246 A:middle
+your application is running.
+
+00:32:23.166 --> 00:32:24.756 A:middle
+So, it constantly adapts to the
+
+00:32:24.756 --> 00:32:26.036 A:middle
+performance of the GPUs that you
+
+00:32:26.036 --> 00:32:26.676 A:middle
+have connected.
+
+00:32:27.206 --> 00:32:28.686 A:middle
+And wherever you are and
+
+00:32:28.686 --> 00:32:29.596 A:middle
+wherever you're looking in your
+
+00:32:29.596 --> 00:32:29.886 A:middle
+scene.
+
+00:32:30.446 --> 00:32:34.876 A:middle
+So, to measure how hard a GPU is
+
+00:32:34.876 --> 00:32:36.346 A:middle
+working, we use command buffer
+
+00:32:36.346 --> 00:32:37.236 A:middle
+completion handlers.
+
+00:32:38.746 --> 00:32:40.426 A:middle
+Now, completion handler is a
+
+00:32:40.516 --> 00:32:42.206 A:middle
+block of CPU code that you can
+
+00:32:42.206 --> 00:32:43.686 A:middle
+have run after the GPU has
+
+00:32:43.686 --> 00:32:44.916 A:middle
+finished executing your command
+
+00:32:44.916 --> 00:32:45.146 A:middle
+buffer.
+
+00:32:46.826 --> 00:32:49.776 A:middle
+Now, on iOS command buffers have
+
+00:32:49.776 --> 00:32:50.986 A:middle
+a couple of useful properties
+
+00:32:50.986 --> 00:32:52.576 A:middle
+that you can read to find out
+
+00:32:52.576 --> 00:32:53.936 A:middle
+how long it took to run on the
+
+00:32:53.936 --> 00:32:54.266 A:middle
+GPU.
+
+00:32:55.616 --> 00:32:56.726 A:middle
+But these aren't available on
+
+00:32:56.726 --> 00:32:57.366 A:middle
+macOS.
+
+00:32:57.436 --> 00:32:58.616 A:middle
+So, we need to come up with an
+
+00:32:58.616 --> 00:32:59.276 A:middle
+approximation.
+
+00:32:59.456 --> 00:33:02.186 A:middle
+And the way we do this is we
+

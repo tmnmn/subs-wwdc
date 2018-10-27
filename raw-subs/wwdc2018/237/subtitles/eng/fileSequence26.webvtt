@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.216 --> 00:26:02.936 A:middle
+However, since iOS 11 this list
+
+00:26:03.046 --> 00:26:04.836 A:middle
+can be extended by bundling a
+
+00:26:04.836 --> 00:26:06.646 A:middle
+preview extension with your iOS
+
+00:26:06.646 --> 00:26:08.886 A:middle
+app which allows you as a
+
+00:26:08.886 --> 00:26:10.876 A:middle
+developer to provide previews
+
+00:26:10.876 --> 00:26:12.326 A:middle
+for your custom file formats.
+
+00:26:12.636 --> 00:26:15.666 A:middle
+You should provide a preview if
+
+00:26:15.666 --> 00:26:16.886 A:middle
+you're in a custom fil format
+
+00:26:17.166 --> 00:26:18.536 A:middle
+and you'd like this one to be
+
+00:26:18.536 --> 00:26:20.436 A:middle
+previewed by Quick Look just
+
+00:26:20.436 --> 00:26:22.466 A:middle
+like any other native type.
+
+00:26:23.656 --> 00:26:25.146 A:middle
+File types that are meant to be
+
+00:26:25.146 --> 00:26:27.126 A:middle
+shared are usually good types to
+
+00:26:27.126 --> 00:26:28.656 A:middle
+create an extension for,
+
+00:26:29.576 --> 00:26:31.046 A:middle
+especially if you want your
+
+00:26:31.046 --> 00:26:32.886 A:middle
+users to preview the content
+
+00:26:32.936 --> 00:26:35.106 A:middle
+easily after receiving a file in
+
+00:26:35.106 --> 00:26:37.516 A:middle
+an app like Mail, Messages or in
+
+00:26:37.516 --> 00:26:38.256 A:middle
+a Note for instance.
+
+00:26:38.766 --> 00:26:40.536 A:middle
+And then everything works
+
+00:26:40.536 --> 00:26:43.176 A:middle
+together and your application
+
+00:26:43.176 --> 00:26:44.096 A:middle
+that is using a
+
+00:26:44.096 --> 00:26:45.896 A:middle
+QLPreviewController with a file
+
+00:26:46.196 --> 00:26:48.026 A:middle
+that is not natively supported
+
+00:26:48.476 --> 00:26:49.806 A:middle
+will benefit from your preview
+
+00:26:49.806 --> 00:26:50.326 A:middle
+extension.
+
+00:26:52.606 --> 00:26:54.796 A:middle
+Here is an example of what you
+
+00:26:54.796 --> 00:26:56.456 A:middle
+can achieve thanks to a preview
+
+00:26:56.456 --> 00:26:56.916 A:middle
+extension.
+
+00:26:57.346 --> 00:26:59.876 A:middle
+We have built a sample app that
+
+00:26:59.876 --> 00:27:01.386 A:middle
+can be downloaded from Apple's
+

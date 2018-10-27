@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.366 --> 00:35:01.435 align:start position:7% line:-2
+ツールの
+“Constraint churning”の下に
+
+00:35:01.535 --> 00:35:04.571 align:start position:16% line:-2
+“UILabel sizing”という
+ビューがあります
+
+00:35:05.105 --> 00:35:10.344 align:start position:27% line:-2
+これはラベルが寸法の計測に
+要する時間を示します
+
+00:35:10.444 --> 00:35:12.512 align:start position:25% line:-2
+今から“固有の寸法”について
+説明します
+
+00:35:13.814 --> 00:35:15.682 align:start position:38% line:-1
+少し移動します
+
+00:35:15.782 --> 00:35:19.419 align:start position:23% line:-2
+すべてのビューに
+固有の寸法が必要ではありません
+
+00:35:20.621 --> 00:35:23.624 align:start position:34% line:-2
+不可視の背景がある
+ビューの場合は―
+
+00:35:23.824 --> 00:35:28.262 align:start position:21% line:-1
+その固有の寸法を返すため必要です
+
+00:35:28.362 --> 00:35:29.830 align:start position:36% line:-1
+２つ例をあげます
+
+00:35:29.930 --> 00:35:33.434 align:start position:23% line:-2
+まず UIImageViewは
+画像サイズを使って
+
+00:35:33.534 --> 00:35:35.636 align:start position:27% line:-1
+画像の固有の寸法を測ります
+
+00:35:35.736 --> 00:35:38.472 align:start position:30% line:-2
+また UILabelは
+テキストを計測し―
+
+00:35:38.572 --> 00:35:41.241 align:start position:29% line:-1
+その固有の寸法を返します
+
+00:35:41.775 --> 00:35:45.279 align:start position:29% line:-2
+固有の寸法は
+魔法のようなものではなく
+
+00:35:45.379 --> 00:35:48.282 align:start position:25% line:-2
+UIViewから
+制約を生成するために使います
+
+00:35:48.382 --> 00:35:51.218 align:start position:29% line:-1
+寸法の制約を作るだけです
+
+00:35:51.485 --> 00:35:54.288 align:start position:27% line:-1
+寸法をすべて制約で定義して
+
+00:35:54.388 --> 00:35:55.923 align:start position:29% line:-1
+面倒なことを省略できます
+
+00:35:56.356 --> 00:35:59.626 align:start position:29% line:-2
+まれに
+オーバーライドされますが
+
+00:35:59.727 --> 00:36:04.131 align:start position:25% line:-2
+UIViewのサブクラス内で
+起こることと同様です
+

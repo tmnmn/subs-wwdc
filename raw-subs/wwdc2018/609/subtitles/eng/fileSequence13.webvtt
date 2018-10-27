@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.526 --> 00:13:01.376 A:middle
+previously, and now you have a
+
+00:13:01.376 --> 00:13:03.206 A:middle
+complete training graph.
+
+00:13:05.156 --> 00:13:06.766 A:middle
+So, as you can see from this
+
+00:13:06.766 --> 00:13:09.576 A:middle
+example, the graph API is very
+
+00:13:09.576 --> 00:13:10.396 A:middle
+simple to use.
+
+00:13:11.666 --> 00:13:12.586 A:middle
+The graph does a lot for you
+
+00:13:12.586 --> 00:13:13.236 A:middle
+automatically.
+
+00:13:13.346 --> 00:13:14.906 A:middle
+It manages all the intermediate
+
+00:13:14.906 --> 00:13:17.786 A:middle
+results, and even the output
+
+00:13:17.786 --> 00:13:18.156 A:middle
+image.
+
+00:13:19.246 --> 00:13:21.476 A:middle
+It minimizes the memory
+
+00:13:21.476 --> 00:13:23.326 A:middle
+footprint of your networks, by
+
+00:13:23.656 --> 00:13:25.516 A:middle
+aliasing memory for all your
+
+00:13:25.516 --> 00:13:27.456 A:middle
+intermediate images, using Metal
+
+00:13:28.386 --> 00:13:28.926 A:middle
+heaps.
+
+00:13:28.926 --> 00:13:30.386 A:middle
+It can also fuse graph nodes.
+
+00:13:30.386 --> 00:13:32.386 A:middle
+For example, it can fuse batch
+
+00:13:32.386 --> 00:13:34.186 A:middle
+normalization and neural nodes.
+
+00:13:34.626 --> 00:13:36.306 A:middle
+And it can optimize away nodes.
+
+00:13:36.736 --> 00:13:38.056 A:middle
+For example, it optimizes the
+
+00:13:38.056 --> 00:13:39.186 A:middle
+way you can cut nation nodes.
+
+00:13:40.416 --> 00:13:41.996 A:middle
+The graph also automatically
+
+00:13:41.996 --> 00:13:44.046 A:middle
+handles padding and manages
+
+00:13:44.046 --> 00:13:45.336 A:middle
+state objects for you, which we
+
+00:13:45.336 --> 00:13:46.276 A:middle
+will discuss later in this
+
+00:13:46.276 --> 00:13:46.656 A:middle
+session.
+
+00:13:47.456 --> 00:13:49.186 A:middle
+So, please take advantage of the
+
+00:13:49.186 --> 00:13:49.876 A:middle
+graph API.
+
+00:13:54.196 --> 00:13:55.906 A:middle
+So, now that we know how to
+
+00:13:55.906 --> 00:13:57.736 A:middle
+create a training graph, let's
+
+00:13:57.736 --> 00:14:00.266 A:middle
+now take a look at the inputs we
+

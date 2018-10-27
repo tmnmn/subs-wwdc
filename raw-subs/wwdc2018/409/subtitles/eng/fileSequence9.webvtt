@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.746 --> 00:09:02.596 A:middle
+calls to functions that took in
+
+00:09:02.666 --> 00:09:05.126 A:middle
+or returned structures that had
+
+00:09:05.126 --> 00:09:06.676 A:middle
+ARC object pointer fields in
+
+00:09:06.676 --> 00:09:07.916 A:middle
+Objective-C++.
+
+00:09:08.316 --> 00:09:10.756 A:middle
+And this was done through an ABI
+
+00:09:11.056 --> 00:09:14.046 A:middle
+change in Xcode 10 and ABI
+
+00:09:14.226 --> 00:09:16.016 A:middle
+change affects functions in
+
+00:09:16.016 --> 00:09:19.166 A:middle
+Objective C++ which return or
+
+00:09:19.166 --> 00:09:21.206 A:middle
+take in a structure by value
+
+00:09:21.606 --> 00:09:23.516 A:middle
+that has ARC object pointer
+
+00:09:23.516 --> 00:09:26.006 A:middle
+fields and no special member
+
+00:09:26.006 --> 00:09:27.726 A:middle
+functions like constructors or
+
+00:09:27.726 --> 00:09:28.626 A:middle
+destructors.
+
+00:09:30.126 --> 00:09:31.776 A:middle
+Now if you are not sure what
+
+00:09:31.896 --> 00:09:33.656 A:middle
+this means for you or whether
+
+00:09:33.946 --> 00:09:35.676 A:middle
+your code is affected by this
+
+00:09:35.716 --> 00:09:38.146 A:middle
+ABI change please take a look at
+
+00:09:38.276 --> 00:09:40.286 A:middle
+Xcode's release notes where we
+
+00:09:40.286 --> 00:09:42.526 A:middle
+describe in more details the
+
+00:09:42.526 --> 00:09:44.296 A:middle
+effects and the impact of this
+
+00:09:44.296 --> 00:09:44.886 A:middle
+ABI change.
+
+00:09:49.046 --> 00:09:50.676 A:middle
+Now there is one caveat when it
+
+00:09:50.676 --> 00:09:53.176 A:middle
+comes to the ARC object pointer
+
+00:09:53.176 --> 00:09:55.866 A:middle
+fields and C structures, they're
+
+00:09:55.866 --> 00:09:56.976 A:middle
+not supported in Swift.
+
+00:09:57.766 --> 00:09:59.546 A:middle
+So if you try to use a structure
+

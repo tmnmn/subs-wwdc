@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.766 --> 00:15:05.339 align:start position:29% line:-2
+今度はアノテーションを
+SFrame形式でロード
+
+00:15:08.175 --> 00:15:14.114 align:start position:12% line:-2
+このファイル名を
+“annotations.csv”とします
+
+00:15:14.214 --> 00:15:19.019 align:start position:27% line:-2
+このcsvは画像に対応した
+アノテーションを含みます
+
+00:15:22.022 --> 00:15:23.557 align:start position:38% line:-1
+見てみましょう
+
+00:15:23.757 --> 00:15:27.594 align:start position:34% line:-2
+このSFrameの
+パスのカラムは
+
+00:15:27.694 --> 00:15:30.964 align:start position:25% line:-1
+画像の相対パスを示しています
+
+00:15:31.064 --> 00:15:34.601 align:start position:27% line:-2
+アノテーションは
+JSONオブジェクトを含み
+
+00:15:34.701 --> 00:15:38.705 align:start position:30% line:-2
+画像のラベルと
+境界ボックスを示します
+
+00:15:39.673 --> 00:15:41.708 align:start position:38% line:-2
+データソースが
+２つありますが
+
+00:15:41.808 --> 00:15:45.078 align:start position:34% line:-2
+モデルの訓練用に
+１つにしたいですね
+
+00:15:45.212 --> 00:15:46.780 align:start position:32% line:-1
+２つを結合しましょう
+
+00:15:46.980 --> 00:15:50.451 align:start position:27% line:-2
+Turi Createでは
+結合も簡単です
+
+00:15:50.551 --> 00:15:55.956 align:start position:16% line:-2
+“data = images.join
+(annotations)”と入力
+
+00:15:58.025 --> 00:16:01.995 align:start position:30% line:-2
+SFrameにカラムが
+３つできました
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.076 --> 00:23:02.666 A:middle
+demo, let's look actually what
+
+00:23:02.666 --> 00:23:04.836 A:middle
+happens in terms of the CPU.
+
+00:23:05.256 --> 00:23:08.206 A:middle
+Alright, so right now, I'm not
+
+00:23:08.206 --> 00:23:08.846 A:middle
+doing anything.
+
+00:23:08.846 --> 00:23:11.466 A:middle
+I'm just showing my screen.
+
+00:23:12.256 --> 00:23:13.656 A:middle
+So, when I'm just moving the
+
+00:23:13.656 --> 00:23:16.366 A:middle
+camera around, scene is not
+
+00:23:16.366 --> 00:23:18.976 A:middle
+stable, I'm using about 22% of
+
+00:23:18.976 --> 00:23:19.476 A:middle
+the CPU.
+
+00:23:19.476 --> 00:23:21.326 A:middle
+Now, if I hold it stable and
+
+00:23:21.326 --> 00:23:22.506 A:middle
+actually the classifier runs,
+
+00:23:22.506 --> 00:23:23.916 A:middle
+you see how the CPU goes up.
+
+00:23:24.486 --> 00:23:25.686 A:middle
+And that's why I always
+
+00:23:25.686 --> 00:23:27.736 A:middle
+recommend only run these tasks
+
+00:23:27.736 --> 00:23:28.486 A:middle
+when you really need.
+
+00:23:29.046 --> 00:23:33.466 A:middle
+Alright, that was a lot to take
+
+00:23:33.466 --> 00:23:33.756 A:middle
+in.
+
+00:23:34.146 --> 00:23:36.256 A:middle
+Let's go back to the slides and
+
+00:23:36.256 --> 00:23:37.376 A:middle
+recap a little bit what we have
+
+00:23:37.376 --> 00:23:38.306 A:middle
+just seen to now.
+
+00:23:39.846 --> 00:23:40.926 A:middle
+So, go right to the slides.
+
+00:23:41.516 --> 00:23:47.736 A:middle
+[ Applause ]
+
+00:23:48.236 --> 00:23:49.076 A:middle
+Okay, recap.
+
+00:23:49.586 --> 00:23:51.566 A:middle
+First thing, how did we achieve
+
+00:23:51.566 --> 00:23:52.556 A:middle
+our scene stability?
+
+00:23:53.296 --> 00:23:55.206 A:middle
+We used a sequence request
+
+00:23:55.206 --> 00:23:56.706 A:middle
+handler together with the VN
+
+00:23:56.706 --> 00:23:58.166 A:middle
+Translational Image Registration
+
+00:23:58.166 --> 00:24:01.186 A:middle
+Request, to compare against the
+

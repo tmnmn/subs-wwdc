@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:59.696 --> 00:38:00.346 A:middle
+application.
+
+00:38:00.746 --> 00:38:02.076 A:middle
+So that may be something I want
+
+00:38:02.076 --> 00:38:04.036 A:middle
+to investigate further as well.
+
+00:38:04.036 --> 00:38:05.406 A:middle
+I happen to have already done
+
+00:38:05.406 --> 00:38:07.666 A:middle
+that and haven't found anything
+
+00:38:08.216 --> 00:38:08.906 A:middle
+useful.
+
+00:38:09.296 --> 00:38:11.286 A:middle
+So I can't really get anywhere
+
+00:38:11.286 --> 00:38:13.006 A:middle
+further looking at the leaks
+
+00:38:13.216 --> 00:38:15.566 A:middle
+output, which is unfortunate.
+
+00:38:15.666 --> 00:38:17.976 A:middle
+So what should I go to next?
+
+00:38:18.826 --> 00:38:21.716 A:middle
+Fortunately, James had
+
+00:38:23.106 --> 00:38:25.536 A:middle
+memory-backed trace recording,
+
+00:38:25.536 --> 00:38:26.456 A:middle
+allocation-backed trace
+
+00:38:26.456 --> 00:38:27.886 A:middle
+recording turned on when he
+
+00:38:27.886 --> 00:38:29.736 A:middle
+captured this Memgraph, which
+
+00:38:29.736 --> 00:38:31.366 A:middle
+means I can use the other tool
+
+00:38:31.366 --> 00:38:33.336 A:middle
+he talked about to look at the
+
+00:38:33.336 --> 00:38:36.896 A:middle
+creation backtrace of my object.
+
+00:38:36.896 --> 00:38:38.096 A:middle
+So I'm going to use malloc
+
+00:38:38.096 --> 00:38:38.566 A:middle
+history.
+
+00:38:40.096 --> 00:38:42.206 A:middle
+And this time, I pass it, the
+
+00:38:42.206 --> 00:38:43.866 A:middle
+Memgraph file, first.
+
+00:38:44.136 --> 00:38:47.306 A:middle
+And then, I'm going to pass it
+
+00:38:47.306 --> 00:38:48.836 A:middle
+from the help documentation,
+
+00:38:48.836 --> 00:38:50.256 A:middle
+this fullStacks flag.
+
+00:38:51.046 --> 00:38:52.546 A:middle
+And what that does is it prints
+
+00:38:52.546 --> 00:38:55.216 A:middle
+out each frame on its own line,
+
+00:38:55.216 --> 00:38:56.196 A:middle
+makes it a lot more human
+
+00:38:56.196 --> 00:38:56.646 A:middle
+readable.
+
+00:38:57.096 --> 00:38:58.366 A:middle
+And then, I'm going to pass it
+
+00:38:58.556 --> 00:39:00.156 A:middle
+the starting memory address of
+

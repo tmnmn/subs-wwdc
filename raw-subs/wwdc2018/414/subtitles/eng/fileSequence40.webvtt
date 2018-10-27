@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:58.176 --> 00:40:00.436 A:middle
+So it is useful to browse
+
+00:40:00.436 --> 00:40:02.606 A:middle
+through multiple crashes in the
+
+00:40:02.606 --> 00:40:04.876 A:middle
+same crash set to see if some of
+
+00:40:04.876 --> 00:40:06.136 A:middle
+them have information that is
+
+00:40:06.136 --> 00:40:07.456 A:middle
+more useful than others.
+
+00:40:08.326 --> 00:40:11.296 A:middle
+In addition, the Organizer as a
+
+00:40:11.396 --> 00:40:13.596 A:middle
+group crashes together will
+
+00:40:13.596 --> 00:40:15.586 A:middle
+sometimes put crashes with
+
+00:40:15.856 --> 00:40:18.086 A:middle
+different causes together in the
+
+00:40:18.086 --> 00:40:18.916 A:middle
+same group.
+
+00:40:19.396 --> 00:40:21.466 A:middle
+There may be other threads or
+
+00:40:21.546 --> 00:40:22.936 A:middle
+the backtrace of a crashed
+
+00:40:22.936 --> 00:40:26.016 A:middle
+thread that identify to you, to
+
+00:40:26.016 --> 00:40:28.246 A:middle
+a human eye you will recognize
+
+00:40:28.246 --> 00:40:29.766 A:middle
+that there are multiple causes
+
+00:40:29.806 --> 00:40:31.956 A:middle
+of this group of crashes even
+
+00:40:31.956 --> 00:40:33.296 A:middle
+though the Xcode Organizer put
+
+00:40:33.296 --> 00:40:34.036 A:middle
+them all together.
+
+00:40:34.856 --> 00:40:36.486 A:middle
+If you only looked at one crash
+
+00:40:36.486 --> 00:40:38.686 A:middle
+log you might not even know that
+
+00:40:38.686 --> 00:40:40.436 A:middle
+that second crash is occurring
+
+00:40:40.826 --> 00:40:42.886 A:middle
+until you fix the first one and
+
+00:40:42.886 --> 00:40:44.896 A:middle
+ship it and start getting crash
+
+00:40:44.896 --> 00:40:45.986 A:middle
+logs from your users.
+
+00:40:48.616 --> 00:40:50.036 A:middle
+Once you've done some analysis
+
+00:40:50.036 --> 00:40:51.056 A:middle
+of your crash, once you've
+
+00:40:51.056 --> 00:40:53.416 A:middle
+narrowed down where in your
+
+00:40:53.416 --> 00:40:55.146 A:middle
+process it might be occurring or
+
+00:40:55.146 --> 00:40:56.476 A:middle
+which objects it might've been
+
+00:40:56.476 --> 00:40:58.896 A:middle
+using you can use tools like the
+
+00:40:58.896 --> 00:41:00.546 A:middle
+Address Sanitizer and the
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.876 --> 00:31:01.536 A:middle
+within the first seven days of
+
+00:31:01.536 --> 00:31:03.016 A:middle
+entering a Billing Retry state
+
+00:31:03.016 --> 00:31:03.656 A:middle
+on the platform.
+
+00:31:03.656 --> 00:31:07.406 A:middle
+This might be a time to offer a
+
+00:31:07.406 --> 00:31:09.466 A:middle
+full access grace period because
+
+00:31:09.466 --> 00:31:10.416 A:middle
+we see a lot of users
+
+00:31:10.516 --> 00:31:12.626 A:middle
+self-recovering during this
+
+00:31:13.696 --> 00:31:13.806 A:middle
+time.
+
+00:31:14.026 --> 00:31:15.176 A:middle
+You may want to deploy that
+
+00:31:15.176 --> 00:31:16.496 A:middle
+customer messaging towards the
+
+00:31:16.496 --> 00:31:18.006 A:middle
+tail end of this to bring in
+
+00:31:18.006 --> 00:31:19.066 A:middle
+some of those subscribers that
+
+00:31:19.066 --> 00:31:20.196 A:middle
+might've taken longer to come
+
+00:31:20.196 --> 00:31:20.976 A:middle
+back into your application.
+
+00:31:25.156 --> 00:31:26.406 A:middle
+Let's flip back to our example
+
+00:31:26.516 --> 00:31:26.916 A:middle
+subscription.
+
+00:31:27.356 --> 00:31:28.756 A:middle
+What happens if this is
+
+00:31:28.756 --> 00:31:30.016 A:middle
+effective and we're able to
+
+00:31:30.016 --> 00:31:31.096 A:middle
+recover these customers?
+
+00:31:31.606 --> 00:31:34.236 A:middle
+When a retry attempt is
+
+00:31:34.236 --> 00:31:36.726 A:middle
+successful the date of the retry
+
+00:31:36.726 --> 00:31:38.276 A:middle
+or recovery becomes the new
+
+00:31:38.276 --> 00:31:39.646 A:middle
+subscription anniversary date
+
+00:31:39.646 --> 00:31:41.306 A:middle
+moving forward and this will be
+
+00:31:41.306 --> 00:31:43.196 A:middle
+reflected in JSON response when
+
+00:31:43.196 --> 00:31:44.376 A:middle
+validating that successful
+
+00:31:44.376 --> 00:31:46.466 A:middle
+transaction and finishing it.
+
+00:31:47.676 --> 00:31:48.846 A:middle
+But we're not going to stop
+
+00:31:48.846 --> 00:31:50.756 A:middle
+there we're also going to deploy
+
+00:31:50.756 --> 00:31:51.646 A:middle
+our server-to-server
+
+00:31:51.646 --> 00:31:53.266 A:middle
+notifications so that you can
+
+00:31:53.266 --> 00:31:55.226 A:middle
+immediately unlock access on all
+
+00:31:55.226 --> 00:31:57.206 A:middle
+platforms and close the loop
+
+00:31:57.206 --> 00:31:58.566 A:middle
+with your customer letting them
+
+00:31:58.566 --> 00:32:00.116 A:middle
+know hey you're all set.
+

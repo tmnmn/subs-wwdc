@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.806 --> 00:47:03.556 A:middle
+my filter method and change this
+
+00:47:03.556 --> 00:47:05.456 A:middle
+UIBeginImageContext code and do
+
+00:47:05.456 --> 00:47:06.746 A:middle
+what Kyle suggested here.
+
+00:47:06.826 --> 00:47:08.206 A:middle
+So I'm going to go ahead and
+
+00:47:08.746 --> 00:47:12.136 A:middle
+delete this code and add in my
+
+00:47:12.136 --> 00:47:12.986 A:middle
+new filter.
+
+00:47:14.456 --> 00:47:16.126 A:middle
+So now, in this case, I'm going
+
+00:47:16.126 --> 00:47:18.136 A:middle
+ahead and creating a UIGraphics
+
+00:47:18.136 --> 00:47:19.076 A:middle
+ImageRenderer.
+
+00:47:19.356 --> 00:47:21.946 A:middle
+And I'm using my CI filter
+
+00:47:21.946 --> 00:47:24.136 A:middle
+within the renderer to do the
+
+00:47:24.786 --> 00:47:26.506 A:middle
+filter, apply the filter.
+
+00:47:26.956 --> 00:47:28.936 A:middle
+Let's go ahead and run this --
+
+00:47:29.306 --> 00:47:30.866 A:middle
+hopefully, it'll build -- and
+
+00:47:30.866 --> 00:47:32.076 A:middle
+see if this happens to make any
+
+00:47:32.076 --> 00:47:33.426 A:middle
+difference in terms of my memory
+
+00:47:33.426 --> 00:47:33.876 A:middle
+usage.
+
+00:47:35.316 --> 00:47:37.286 A:middle
+So let's go back to the debug
+
+00:47:37.286 --> 00:47:38.986 A:middle
+navigator and to the memory
+
+00:47:38.986 --> 00:47:39.616 A:middle
+report.
+
+00:47:40.586 --> 00:47:42.406 A:middle
+And once again, we get to go
+
+00:47:42.406 --> 00:47:46.516 A:middle
+back to Saturn, and let's go
+
+00:47:46.746 --> 00:47:50.306 A:middle
+ahead and apply our filter.
+
+00:47:51.076 --> 00:47:51.766 A:middle
+Now, let's see what our
+
+00:47:51.766 --> 00:47:54.056 A:middle
+high-water mark ends up this
+
+00:47:54.346 --> 00:47:54.846 A:middle
+time.
+
+00:47:54.846 --> 00:47:55.496 A:middle
+Ninety-eight.
+
+00:47:56.066 --> 00:47:59.136 A:middle
+So that's actually the same, but
+
+00:47:59.136 --> 00:48:00.206 A:middle
+it turns out that's, if you
+

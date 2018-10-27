@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:00.046 --> 00:39:01.526 A:middle
+interesting points from both the
+
+00:39:01.526 --> 00:39:03.256 A:middle
+reference image and the current
+
+00:39:03.316 --> 00:39:03.566 A:middle
+scene.
+
+00:39:04.676 --> 00:39:05.996 A:middle
+And then, we try to go in the
+
+00:39:05.996 --> 00:39:07.356 A:middle
+current scene and match those
+
+00:39:07.356 --> 00:39:08.616 A:middle
+features to the one on the
+
+00:39:08.616 --> 00:39:09.346 A:middle
+reference image.
+
+00:39:10.436 --> 00:39:11.696 A:middle
+By applying some projected
+
+00:39:11.696 --> 00:39:12.866 A:middle
+geometry and linear algebra,
+
+00:39:13.186 --> 00:39:14.366 A:middle
+this is enough to give an
+
+00:39:14.456 --> 00:39:16.126 A:middle
+initial estimation of the
+
+00:39:16.126 --> 00:39:17.286 A:middle
+position orientation of the
+
+00:39:17.286 --> 00:39:18.556 A:middle
+image with respect to the
+
+00:39:18.556 --> 00:39:19.156 A:middle
+current scene.
+
+00:39:20.516 --> 00:39:21.386 A:middle
+But we don't stop here.
+
+00:39:22.566 --> 00:39:23.486 A:middle
+In order to give you a really
+
+00:39:23.486 --> 00:39:25.836 A:middle
+precise pose and track at 60
+
+00:39:25.836 --> 00:39:27.846 A:middle
+frames per second, we then do a
+
+00:39:27.846 --> 00:39:29.276 A:middle
+dense tracking stage.
+
+00:39:29.986 --> 00:39:31.316 A:middle
+So, with that initial estimate
+
+00:39:31.976 --> 00:39:33.136 A:middle
+we take the pixels from the
+
+00:39:33.136 --> 00:39:36.486 A:middle
+current scene and warp them back
+
+00:39:36.566 --> 00:39:38.266 A:middle
+to a rectangular shape like you
+
+00:39:38.266 --> 00:39:40.616 A:middle
+see on the right-- top right
+
+00:39:40.696 --> 00:39:40.916 A:middle
+there.
+
+00:39:41.306 --> 00:39:42.776 A:middle
+So, that's a reconstructed image
+
+00:39:43.536 --> 00:39:45.296 A:middle
+by warping the pixels of the
+
+00:39:45.296 --> 00:39:46.576 A:middle
+current image into the
+
+00:39:46.576 --> 00:39:46.986 A:middle
+rectangle.
+
+00:39:47.916 --> 00:39:48.766 A:middle
+We can then compare the
+
+00:39:48.766 --> 00:39:50.456 A:middle
+reconstructed image with a
+
+00:39:50.506 --> 00:39:51.726 A:middle
+reference image that we have
+
+00:39:51.726 --> 00:39:54.056 A:middle
+available to create an error
+
+00:39:54.056 --> 00:39:55.106 A:middle
+image like the one you see
+
+00:39:55.106 --> 00:39:55.436 A:middle
+below.
+
+00:39:56.636 --> 00:39:58.296 A:middle
+We then optimize the position
+
+00:39:58.296 --> 00:39:59.836 A:middle
+orientation of the image, such
+
+00:39:59.906 --> 00:40:00.976 A:middle
+that that error is minimized.
+

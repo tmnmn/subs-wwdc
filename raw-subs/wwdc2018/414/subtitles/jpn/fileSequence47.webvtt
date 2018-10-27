@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:00.454 --> 00:47:01.822 align:start position:39% line:-1
+起きましたね
+
+00:47:01.922 --> 00:47:05.158 align:start position:23% line:-1
+クラッシュしたので終了しました
+
+00:47:05.259 --> 00:47:09.930 align:start position:27% line:-2
+でもデバッガで再現できても
+あまり意味がありません
+
+00:47:10.264 --> 00:47:14.401 align:start position:21% line:-2
+EXC BAD ACCESSだと
+分かるだけです
+
+00:47:14.501 --> 00:47:16.904 align:start position:30% line:-1
+一体 原因は何でしょう
+
+00:47:17.004 --> 00:47:19.640 align:start position:25% line:-1
+なぜ起きたか教えてくれません
+
+00:47:19.740 --> 00:47:23.210 align:start position:25% line:-2
+でもXcodeに
+うってつけのツールがあります
+
+00:47:23.310 --> 00:47:26.447 align:start position:18% line:-2
+Thread Sanitizerです
+これを使います
+
+00:47:26.613 --> 00:47:28.815 align:start position:23% line:-1
+スキームエディタを開きましょう
+
+00:47:28.916 --> 00:47:32.953 align:start position:12% line:-2
+ここで このAppを選び
+“Edit Scheme...”をクリック
+
+00:47:33.720 --> 00:47:37.291 align:start position:14% line:-1
+Diagnosticsタブに切り替えると
+
+00:47:37.391 --> 00:47:41.061 align:start position:25% line:-1
+いくつか診断ツールがあります
+
+00:47:41.161 --> 00:47:44.932 align:start position:11% line:-2
+Address Sanitizerはバッファ
+オーバーフローの発見に便利です
+
+00:47:45.432 --> 00:47:48.902 align:start position:9% line:-2
+Thread Sanitizerを選択し
+“Pause on issues”も選択します
+
+00:47:49.002 --> 00:47:53.440 align:start position:23% line:-2
+バグを検出すると
+デバッガが止まるということです
+
+00:47:54.575 --> 00:47:57.844 align:start position:9% line:-1
+Thread Sanitizerを有効にして―
+
+00:47:57.945 --> 00:48:01.481 align:start position:21% line:-1
+もう一度 Appを操作しましょう
+

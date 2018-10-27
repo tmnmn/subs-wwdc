@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.696 --> 00:36:00.956 A:middle
+It really improves the immersion
+
+00:36:00.956 --> 00:36:01.866 A:middle
+in the game environment.
+
+00:36:02.626 --> 00:36:04.076 A:middle
+We wanted a realistic wind
+
+00:36:04.076 --> 00:36:04.896 A:middle
+effect on this.
+
+00:36:05.156 --> 00:36:06.296 A:middle
+Now, we could've used a cloth
+
+00:36:06.386 --> 00:36:07.656 A:middle
+simulation out of the physics
+
+00:36:07.656 --> 00:36:07.976 A:middle
+engine.
+
+00:36:09.506 --> 00:36:11.026 A:middle
+But instead, we decided to use
+
+00:36:11.026 --> 00:36:12.846 A:middle
+the GPU and do it with Metal.
+
+00:36:14.736 --> 00:36:16.626 A:middle
+We started with a SceneKit asset
+
+00:36:16.626 --> 00:36:17.976 A:middle
+built by our technical artist.
+
+00:36:18.516 --> 00:36:19.566 A:middle
+To get the Apple logo on the
+
+00:36:19.566 --> 00:36:21.946 A:middle
+flag, we applied a texture at
+
+00:36:21.946 --> 00:36:22.336 A:middle
+RunTime.
+
+00:36:23.716 --> 00:36:25.026 A:middle
+Then we built a Swift class
+
+00:36:25.026 --> 00:36:26.136 A:middle
+around the Metal device.
+
+00:36:26.806 --> 00:36:28.506 A:middle
+Swift code builds a metal
+
+00:36:28.506 --> 00:36:29.746 A:middle
+command queue and inserts
+
+00:36:29.746 --> 00:36:31.126 A:middle
+information from the state of
+
+00:36:31.126 --> 00:36:32.736 A:middle
+the game, such as the direction
+
+00:36:32.736 --> 00:36:34.466 A:middle
+the wind is blowing.
+
+00:36:34.586 --> 00:36:35.706 A:middle
+That command queue is running a
+
+00:36:35.706 --> 00:36:37.016 A:middle
+custom Metal compute shader.
+
+00:36:37.826 --> 00:36:39.046 A:middle
+That comes from a legacy code
+
+00:36:39.046 --> 00:36:39.816 A:middle
+built in C.
+
+00:36:40.176 --> 00:36:41.536 A:middle
+But because Metal is based on
+
+00:36:41.536 --> 00:36:43.916 A:middle
+modern C++, it was a very easy
+
+00:36:43.916 --> 00:36:44.726 A:middle
+conversion to make.
+
+00:36:45.826 --> 00:36:47.486 A:middle
+We then also run another compute
+
+00:36:47.486 --> 00:36:49.226 A:middle
+shader to compute normal for the
+
+00:36:49.226 --> 00:36:50.966 A:middle
+surface, so we can get a great,
+
+00:36:50.966 --> 00:36:53.426 A:middle
+smooth flag look without a huge
+
+00:36:53.426 --> 00:36:54.716 A:middle
+number of polygons in the scene.
+
+00:36:55.196 --> 00:36:56.646 A:middle
+And it really makes the flag
+
+00:36:56.646 --> 00:36:57.156 A:middle
+look amazing.
+
+00:36:58.296 --> 00:37:00.586 A:middle
+Each frame, the shader updates
+

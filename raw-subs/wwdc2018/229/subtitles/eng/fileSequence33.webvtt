@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.886 --> 00:33:00.186 A:middle
+Suppose I have a manuscript for
+
+00:33:00.186 --> 00:33:01.746 A:middle
+a great children's story that
+
+00:33:01.746 --> 00:33:02.646 A:middle
+I'm working on, but it's really
+
+00:33:02.646 --> 00:33:03.516 A:middle
+long, so I'm only going to show
+
+00:33:03.516 --> 00:33:05.086 A:middle
+a little bit here, but to really
+
+00:33:05.086 --> 00:33:07.486 A:middle
+make it pop, I want to make
+
+00:33:07.756 --> 00:33:09.646 A:middle
+every word or every instance of
+
+00:33:09.646 --> 00:33:11.006 A:middle
+the word brown actually be the
+
+00:33:11.006 --> 00:33:12.596 A:middle
+color brown, and in the interest
+
+00:33:12.596 --> 00:33:13.636 A:middle
+of space, I'm only going to show
+
+00:33:13.636 --> 00:33:14.636 A:middle
+highlighting the first word.
+
+00:33:14.846 --> 00:33:17.386 A:middle
+To do this, I'm going to use an
+
+00:33:17.386 --> 00:33:18.486 A:middle
+NS mutable attributed string.
+
+00:33:18.806 --> 00:33:21.666 A:middle
+I'll pass my story in there.
+
+00:33:21.926 --> 00:33:23.566 A:middle
+And then using the attributed
+
+00:33:23.566 --> 00:33:25.266 A:middle
+strings string property, I'll
+
+00:33:25.266 --> 00:33:26.416 A:middle
+ask for the range of the Swift
+
+00:33:26.416 --> 00:33:28.206 A:middle
+string brown, which will produce
+
+00:33:28.206 --> 00:33:29.886 A:middle
+a range of strings native index
+
+00:33:29.886 --> 00:33:30.086 A:middle
+type.
+
+00:33:30.656 --> 00:33:32.466 A:middle
+And as mutable string works with
+
+00:33:32.556 --> 00:33:33.626 A:middle
+NS ranges, and so I'll use the
+
+00:33:33.626 --> 00:33:34.916 A:middle
+convenience initializer that we
+
+00:33:34.916 --> 00:33:37.526 A:middle
+introduced last year to convert
+
+00:33:37.586 --> 00:33:39.626 A:middle
+to an NS range, and this, I'm
+
+00:33:39.626 --> 00:33:41.756 A:middle
+calling again attributed strings
+
+00:33:41.926 --> 00:33:43.606 A:middle
+string property to do the
+
+00:33:43.606 --> 00:33:44.006 A:middle
+conversion.
+
+00:33:44.296 --> 00:33:45.296 A:middle
+And then we'll color the first
+
+00:33:45.466 --> 00:33:46.396 A:middle
+instance of the word brown.
+
+00:33:47.156 --> 00:33:48.206 A:middle
+And when I go to run this code,
+
+00:33:48.206 --> 00:33:49.636 A:middle
+I notice it's a little slow.
+
+00:33:50.916 --> 00:33:52.526 A:middle
+So I profile it.
+
+00:33:52.526 --> 00:33:54.516 A:middle
+And I see that, to my surprise,
+
+00:33:54.516 --> 00:33:55.296 A:middle
+I thought all the time would be
+
+00:33:55.296 --> 00:33:56.436 A:middle
+spent coloring the word brown,
+
+00:33:56.436 --> 00:33:57.306 A:middle
+but indeed, it's actually
+
+00:33:57.306 --> 00:33:58.366 A:middle
+computing the indices, and why
+
+00:33:58.366 --> 00:33:58.676 A:middle
+is that?
+
+00:33:59.306 --> 00:34:01.416 A:middle
+And the reason for that is that
+

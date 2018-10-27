@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.086 --> 00:31:00.586 A:middle
+these extra stridable
+
+00:31:00.586 --> 00:31:01.376 A:middle
+requirements on it.
+
+00:31:01.736 --> 00:31:02.736 A:middle
+It's a simple application of
+
+00:31:02.736 --> 00:31:03.706 A:middle
+conditional conformance.
+
+00:31:04.166 --> 00:31:05.746 A:middle
+But it makes the range type more
+
+00:31:05.816 --> 00:31:08.186 A:middle
+powerful when used with better
+
+00:31:08.236 --> 00:31:09.266 A:middle
+type parameters.
+
+00:31:10.806 --> 00:31:13.206 A:middle
+Now, notice that I'm just
+
+00:31:13.206 --> 00:31:13.696 A:middle
+conforming to
+
+00:31:13.696 --> 00:31:14.876 A:middle
+randomAccessCollection.
+
+00:31:15.496 --> 00:31:17.686 A:middle
+I have not actually mentioned
+
+00:31:17.746 --> 00:31:18.236 A:middle
+collection or
+
+00:31:18.236 --> 00:31:19.326 A:middle
+bidirectionalCollection.
+
+00:31:20.366 --> 00:31:21.876 A:middle
+With unconditional performances,
+
+00:31:21.876 --> 00:31:22.546 A:middle
+this is okay.
+
+00:31:23.036 --> 00:31:24.356 A:middle
+Declaring conformance to
+
+00:31:24.356 --> 00:31:26.446 A:middle
+randomAccessCollection implies
+
+00:31:26.446 --> 00:31:28.276 A:middle
+conformances to any protocols
+
+00:31:28.276 --> 00:31:29.526 A:middle
+that it inherits.
+
+00:31:29.586 --> 00:31:30.286 A:middle
+In this case,
+
+00:31:30.366 --> 00:31:31.416 A:middle
+bidirectionalCollection and
+
+00:31:31.416 --> 00:31:31.946 A:middle
+collection.
+
+00:31:32.626 --> 00:31:34.016 A:middle
+However, with conditional
+
+00:31:34.016 --> 00:31:35.326 A:middle
+conformance, this is actually an
+
+00:31:35.326 --> 00:31:35.586 A:middle
+error.
+
+00:31:36.576 --> 00:31:37.636 A:middle
+Now, if you think back to the
+
+00:31:37.636 --> 00:31:39.666 A:middle
+slice example, we needed to have
+
+00:31:39.776 --> 00:31:41.686 A:middle
+different constraints for those,
+
+00:31:41.926 --> 00:31:43.186 A:middle
+for those different levels of
+
+00:31:43.186 --> 00:31:44.466 A:middle
+the hierarchy for collection.
+
+00:31:44.466 --> 00:31:45.746 A:middle
+Versus bidirectionalCollection
+
+00:31:45.746 --> 00:31:47.176 A:middle
+versus randomAccessCollection.
+
+00:31:47.756 --> 00:31:49.416 A:middle
+And so, compiler's enforcing
+
+00:31:49.416 --> 00:31:50.636 A:middle
+that you've thought about this,
+
+00:31:50.636 --> 00:31:52.096 A:middle
+and made sure that you have the
+
+00:31:52.146 --> 00:31:53.426 A:middle
+right set of constraints for
+
+00:31:53.736 --> 00:31:54.776 A:middle
+conditional conformance.
+
+00:31:55.906 --> 00:31:57.406 A:middle
+In this case, the constraints
+
+00:31:57.406 --> 00:31:58.596 A:middle
+across the entire hierarchy are
+
+00:31:58.596 --> 00:31:59.076 A:middle
+the same.
+
+00:31:59.416 --> 00:32:00.506 A:middle
+So, we can just write out
+

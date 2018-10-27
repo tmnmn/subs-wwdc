@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:00.076 --> 00:41:01.246 A:middle
+And since all those views
+
+00:41:01.246 --> 00:41:02.776 A:middle
+themselves don't have content,
+
+00:41:03.146 --> 00:41:04.186 A:middle
+we currently only show
+
+00:41:04.186 --> 00:41:04.676 A:middle
+wireframes.
+
+00:41:05.356 --> 00:41:07.626 A:middle
+So with the constraint selected,
+
+00:41:08.016 --> 00:41:09.166 A:middle
+let's take a look at the inspect
+
+00:41:09.166 --> 00:41:09.916 A:middle
+on the right-hand side.
+
+00:41:10.516 --> 00:41:12.696 A:middle
+We can see that it aligns the
+
+00:41:12.696 --> 00:41:14.006 A:middle
+horizontal center of the image
+
+00:41:14.006 --> 00:41:15.716 A:middle
+view with the horizontal center
+
+00:41:15.716 --> 00:41:17.126 A:middle
+of the planet globe view and it
+
+00:41:17.126 --> 00:41:18.916 A:middle
+does so with a constant of zero.
+
+00:41:19.076 --> 00:41:20.536 A:middle
+So it aligns it horizontally
+
+00:41:20.536 --> 00:41:21.516 A:middle
+centered in its super view.
+
+00:41:22.606 --> 00:41:24.136 A:middle
+Now let's select the planet
+
+00:41:24.136 --> 00:41:26.186 A:middle
+globe view from the debug
+
+00:41:26.186 --> 00:41:27.756 A:middle
+navigator, and we can see that
+
+00:41:27.756 --> 00:41:29.036 A:middle
+it's a little bit larger towards
+
+00:41:29.036 --> 00:41:30.826 A:middle
+the left-hand side but it aligns
+
+00:41:30.826 --> 00:41:31.526 A:middle
+on the right-hand side.
+
+00:41:31.526 --> 00:41:32.526 A:middle
+So that's a little bit weird
+
+00:41:32.526 --> 00:41:33.556 A:middle
+because we just saw the
+
+00:41:33.556 --> 00:41:34.746 A:middle
+constraints aligning them
+
+00:41:34.816 --> 00:41:36.326 A:middle
+correctly or exactly
+
+00:41:36.326 --> 00:41:38.486 A:middle
+horizontally, but that's not
+
+00:41:38.556 --> 00:41:39.556 A:middle
+really what we see in the view
+
+00:41:39.556 --> 00:41:39.866 A:middle
+debugger.
+
+00:41:40.146 --> 00:41:40.986 A:middle
+So let's take a look at the
+
+00:41:40.986 --> 00:41:42.666 A:middle
+constraints of the planet globe
+
+00:41:42.666 --> 00:41:43.376 A:middle
+view and see if we can
+
+00:41:43.426 --> 00:41:45.286 A:middle
+understand what's going on.
+
+00:41:45.596 --> 00:41:46.416 A:middle
+I'll select the leading
+
+00:41:46.416 --> 00:41:47.956 A:middle
+constraint here, and taking a
+
+00:41:47.956 --> 00:41:49.476 A:middle
+look at the inspect again, we
+
+00:41:49.476 --> 00:41:50.526 A:middle
+can see that it aligns the
+
+00:41:50.526 --> 00:41:51.856 A:middle
+leading edge of the planet globe
+
+00:41:51.856 --> 00:41:53.696 A:middle
+view with the leading edge of
+
+00:41:53.806 --> 00:41:55.316 A:middle
+the NS visual effect view, which
+
+00:41:55.316 --> 00:41:56.446 A:middle
+we saw in super view.
+
+00:41:56.906 --> 00:41:58.656 A:middle
+So it simply inserts it relative
+
+00:41:58.656 --> 00:42:00.196 A:middle
+to its super view and it does so
+

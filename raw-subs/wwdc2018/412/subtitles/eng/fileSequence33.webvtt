@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.756 --> 00:33:01.526 A:middle
+So thanks for [inaudible] I hope
+
+00:33:01.616 --> 00:33:02.616 A:middle
+you enjoyed that and can use
+
+00:33:02.616 --> 00:33:03.536 A:middle
+these techniques in your
+
+00:33:03.536 --> 00:33:04.536 A:middle
+debugging sessions.
+
+00:33:05.516 --> 00:33:14.966 A:middle
+[ Applause ]
+
+00:33:15.466 --> 00:33:17.396 A:middle
+I'd just like to quickly recap
+
+00:33:17.396 --> 00:33:19.556 A:middle
+all of the features and tricks
+
+00:33:19.556 --> 00:33:21.676 A:middle
+that we went over during that
+
+00:33:21.676 --> 00:33:22.416 A:middle
+debug session.
+
+00:33:22.806 --> 00:33:24.486 A:middle
+So firstly, we looked at how we
+
+00:33:24.486 --> 00:33:25.926 A:middle
+can use Xcode behaviors to
+
+00:33:25.926 --> 00:33:27.246 A:middle
+dedicate attempt to debugging
+
+00:33:27.586 --> 00:33:29.196 A:middle
+and how to use LLDB expressions
+
+00:33:29.196 --> 00:33:30.416 A:middle
+to modify program state.
+
+00:33:31.076 --> 00:33:32.526 A:middle
+We can use auto-continuing
+
+00:33:32.526 --> 00:33:33.486 A:middle
+breakpoints with debugger
+
+00:33:33.486 --> 00:33:35.136 A:middle
+commands to inject code live,
+
+00:33:35.696 --> 00:33:37.246 A:middle
+and we can create dependent
+
+00:33:37.246 --> 00:33:38.746 A:middle
+breakpoint configurations using
+
+00:33:38.746 --> 00:33:40.696 A:middle
+breakpoint set one shot as a
+
+00:33:40.696 --> 00:33:42.056 A:middle
+debugger command action for
+
+00:33:42.056 --> 00:33:42.736 A:middle
+another breakpoint.
+
+00:33:43.536 --> 00:33:45.286 A:middle
+Even when in assembly frames, we
+
+00:33:45.286 --> 00:33:47.036 A:middle
+can easily inspect the function
+
+00:33:47.036 --> 00:33:48.626 A:middle
+arguments using po dollar arg
+
+00:33:48.626 --> 00:33:49.766 A:middle
+one, dollar arg two, et cetera,
+
+00:33:50.256 --> 00:33:52.476 A:middle
+and we can skip lines of code by
+
+00:33:52.476 --> 00:33:53.726 A:middle
+dragging the instruction pointer
+
+00:33:53.906 --> 00:33:55.206 A:middle
+or using the command thread
+
+00:33:55.206 --> 00:33:55.446 A:middle
+jump.
+
+00:33:56.336 --> 00:33:57.736 A:middle
+We can request that the debugger
+
+00:33:57.736 --> 00:33:58.746 A:middle
+pause when a variable is
+
+00:33:58.746 --> 00:34:01.586 A:middle
+modified using watchpoints, and
+

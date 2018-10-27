@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.956 --> 00:29:01.446 A:middle
+at how some of those security
+
+00:29:01.446 --> 00:29:02.636 A:middle
+mechanisms help us.
+
+00:29:03.026 --> 00:29:04.046 A:middle
+We're going to move on to
+
+00:29:04.046 --> 00:29:06.166 A:middle
+something that's really exotic
+
+00:29:06.386 --> 00:29:08.846 A:middle
+and new; Spectre attacks or
+
+00:29:08.846 --> 00:29:10.956 A:middle
+speculative execution attacks.
+
+00:29:11.606 --> 00:29:16.776 A:middle
+What I'm going to cover here is
+
+00:29:16.946 --> 00:29:18.476 A:middle
+what speculative execution is,
+
+00:29:19.186 --> 00:29:20.846 A:middle
+how it can be turned into an
+
+00:29:20.846 --> 00:29:22.336 A:middle
+attack, and then we'll look at
+
+00:29:22.336 --> 00:29:24.636 A:middle
+how to defend against it.
+
+00:29:25.316 --> 00:29:27.486 A:middle
+So, now we're deep down in a
+
+00:29:27.676 --> 00:29:28.436 A:middle
+CPU.
+
+00:29:28.566 --> 00:29:31.246 A:middle
+It's executing code.
+
+00:29:31.646 --> 00:29:33.726 A:middle
+It has reached a conditional.
+
+00:29:34.276 --> 00:29:35.786 A:middle
+It's going to do something
+
+00:29:35.786 --> 00:29:36.476 A:middle
+conditionally.
+
+00:29:36.916 --> 00:29:38.756 A:middle
+It's asking itself, hey, I've
+
+00:29:38.756 --> 00:29:40.856 A:middle
+got an array index here, x.
+
+00:29:41.326 --> 00:29:42.806 A:middle
+Is this index OK?
+
+00:29:43.226 --> 00:29:45.096 A:middle
+Is this in bounds or out of
+
+00:29:45.096 --> 00:29:46.516 A:middle
+bounds for my array read?
+
+00:29:47.416 --> 00:29:50.046 A:middle
+Because if it's out of bounds, I
+
+00:29:50.046 --> 00:29:51.516 A:middle
+should do some error handling
+
+00:29:51.516 --> 00:29:53.446 A:middle
+here, but if it's in bound I
+
+00:29:53.446 --> 00:29:54.906 A:middle
+should go ahead and load that
+
+00:29:54.906 --> 00:29:55.756 A:middle
+data in the array.
+
+00:29:57.036 --> 00:30:00.326 A:middle
+Now, modern CPUs learn over time
+

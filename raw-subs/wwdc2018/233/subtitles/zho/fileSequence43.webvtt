@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:56.710 --> 00:43:00.948 align:middle line:-2
+是用于在app中调试视图
+和视图控制器问题的绝佳工具
+
+00:43:01.882 --> 00:43:03.851 align:middle line:-1
+同样 它们虽然很棒
+
+00:43:03.917 --> 00:43:06.119 align:middle line:-2
+但你无法将其提交到
+App Store中
+
+00:43:07.354 --> 00:43:10.691 align:middle line:-2
+重要的是要注意它们是
+Objective-C选择器
+
+00:43:11.091 --> 00:43:13.861 align:middle line:-2
+因此在使用它们之前
+你需要使用此命令
+
+00:43:13.927 --> 00:43:17.331 align:middle line:-2
+将调试器设为
+Objective-C模式
+
+00:43:18.365 --> 00:43:22.269 align:middle line:-1
+我们将逐步介绍每种调试方法
+
+00:43:22.336 --> 00:43:23.770 align:middle line:-1
+以及它们如何帮助你
+
+00:43:23.837 --> 00:43:26.640 align:middle line:-2
+先从UIView
+recursiveDescription开始
+
+00:43:28.642 --> 00:43:30.811 align:middle line:-1
+UIView recursiveDescription
+
+00:43:31.211 --> 00:43:35.749 align:middle line:-2
+将打印出接收者的视图层次结构
+即子视图层次结构
+
+00:43:36.049 --> 00:43:38.218 align:middle line:-1
+以及一些相关的属性
+
+00:43:38.285 --> 00:43:40.420 align:middle line:-1
+以帮助你了解布局属性
+
+00:43:41.622 --> 00:43:43.023 align:middle line:-1
+让我们来看一个例子
+
+00:43:43.657 --> 00:43:46.527 align:middle line:-2
+我们的截屏UI中
+还有另一个缺少视图的漏洞
+
+00:43:47.561 --> 00:43:49.530 align:middle line:-1
+我们将在viewController的视图上
+
+00:43:49.596 --> 00:43:51.565 align:middle line:-1
+调用recursiveDescription
+
+00:43:53.767 --> 00:43:57.237 align:middle line:-2
+这看起来像是一面调试文本墙
+因为它的确是
+
+00:43:58.972 --> 00:44:02.509 align:middle line:-2
+但我们知道我们在寻找什么
+我们的截屏视图就在那里
+

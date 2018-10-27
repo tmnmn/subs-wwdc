@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.526 --> 00:20:00.986 A:middle
+We follow the model of DOM Event
+
+00:20:00.986 --> 00:20:02.556 A:middle
+Handling, so you will have the
+
+00:20:02.556 --> 00:20:04.216 A:middle
+familiar method such as Add
+
+00:20:04.216 --> 00:20:05.396 A:middle
+Event Listener and Remove Event
+
+00:20:05.396 --> 00:20:07.536 A:middle
+Listener, the name of the event,
+
+00:20:07.536 --> 00:20:09.256 A:middle
+and you get past an event object
+
+00:20:09.256 --> 00:20:10.516 A:middle
+with the parameters of the
+
+00:20:10.516 --> 00:20:10.826 A:middle
+event.
+
+00:20:11.146 --> 00:20:13.006 A:middle
+So, for instance, if I wanted to
+
+00:20:13.006 --> 00:20:15.376 A:middle
+refresh my map with some new
+
+00:20:15.376 --> 00:20:16.856 A:middle
+information every time the user
+
+00:20:16.856 --> 00:20:18.166 A:middle
+has mapped to a different area,
+
+00:20:18.456 --> 00:20:20.076 A:middle
+I can listen to region change
+
+00:20:20.076 --> 00:20:22.106 A:middle
+and events, and that will let me
+
+00:20:22.106 --> 00:20:23.836 A:middle
+know that the map has settled to
+
+00:20:23.836 --> 00:20:25.616 A:middle
+a new place, and I can now use
+
+00:20:25.616 --> 00:20:27.866 A:middle
+the region of that map to
+
+00:20:28.216 --> 00:20:30.876 A:middle
+compute which information I
+
+00:20:30.876 --> 00:20:34.586 A:middle
+wanted to show at this stage.
+
+00:20:34.796 --> 00:20:36.816 A:middle
+Now, that we know how to set up
+
+00:20:36.816 --> 00:20:38.416 A:middle
+a map, let's add some our own
+
+00:20:38.416 --> 00:20:39.346 A:middle
+information on it.
+
+00:20:39.766 --> 00:20:40.606 A:middle
+And we can do that with
+
+00:20:40.606 --> 00:20:41.686 A:middle
+annotations and overlay.
+
+00:20:41.686 --> 00:20:43.046 A:middle
+We'll start with annotations.
+
+00:20:43.126 --> 00:20:44.506 A:middle
+And MapKit JS provides three
+
+00:20:44.506 --> 00:20:45.496 A:middle
+kinds of annotations.
+
+00:20:45.496 --> 00:20:46.576 A:middle
+The first one, you've had a
+
+00:20:46.576 --> 00:20:48.276 A:middle
+quick peek at it, which is the
+
+00:20:48.276 --> 00:20:49.236 A:middle
+Marker Annotation.
+
+00:20:50.546 --> 00:20:52.036 A:middle
+You can customize annotations
+
+00:20:52.036 --> 00:20:53.606 A:middle
+further than the -- what the
+
+00:20:53.606 --> 00:20:54.986 A:middle
+marker annotation provides by
+
+00:20:54.986 --> 00:20:57.406 A:middle
+using images, or even DOM
+
+00:20:57.406 --> 00:20:58.566 A:middle
+Elements that will have
+
+00:20:58.566 --> 00:21:00.166 A:middle
+completely customizable
+

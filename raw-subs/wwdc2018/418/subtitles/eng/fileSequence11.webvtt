@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.186 --> 00:11:00.236 A:middle
+In general, SSH connections for
+
+00:11:00.236 --> 00:11:02.576 A:middle
+Git are secured using a public
+
+00:11:02.846 --> 00:11:05.636 A:middle
+and private key pair that is
+
+00:11:05.636 --> 00:11:07.396 A:middle
+generated on each machine.
+
+00:11:08.586 --> 00:11:09.936 A:middle
+The public portion of the pair
+
+00:11:09.936 --> 00:11:11.906 A:middle
+is then uploaded to the hosting
+
+00:11:11.906 --> 00:11:12.336 A:middle
+site.
+
+00:11:13.336 --> 00:11:14.266 A:middle
+This means that it is easy to
+
+00:11:14.266 --> 00:11:16.136 A:middle
+have one set of keys per
+
+00:11:16.136 --> 00:11:16.836 A:middle
+machine.
+
+00:11:16.936 --> 00:11:18.956 A:middle
+And often even one per service
+
+00:11:19.516 --> 00:11:20.936 A:middle
+so they can be managed and
+
+00:11:20.936 --> 00:11:22.696 A:middle
+revoked much more easily than a
+
+00:11:22.696 --> 00:11:23.276 A:middle
+password.
+
+00:11:24.956 --> 00:11:27.116 A:middle
+Xcode can help you easily do
+
+00:11:27.116 --> 00:11:28.886 A:middle
+these setup steps for SSH.
+
+00:11:28.986 --> 00:11:31.566 A:middle
+When you sign into an account
+
+00:11:31.566 --> 00:11:33.436 A:middle
+but have not created an SSH key
+
+00:11:33.436 --> 00:11:35.966 A:middle
+pair locally, Xcode will offer
+
+00:11:35.966 --> 00:11:38.226 A:middle
+to create a pair.
+
+00:11:38.416 --> 00:11:40.096 A:middle
+The private portion of the SSH
+
+00:11:40.096 --> 00:11:41.956 A:middle
+key should be protected by a
+
+00:11:41.956 --> 00:11:42.836 A:middle
+pass phrase.
+
+00:11:43.876 --> 00:11:45.426 A:middle
+This adds an additional layer of
+
+00:11:45.426 --> 00:11:47.426 A:middle
+security and prevents it from
+
+00:11:47.426 --> 00:11:49.246 A:middle
+being used even in the event
+
+00:11:49.246 --> 00:11:50.906 A:middle
+someone else were to get a copy
+
+00:11:50.906 --> 00:11:54.136 A:middle
+of your private key.
+
+00:11:54.366 --> 00:11:55.796 A:middle
+Once the key pair has been
+
+00:11:55.796 --> 00:11:58.586 A:middle
+created, Xcode can also upload
+
+00:11:58.586 --> 00:12:00.076 A:middle
+the public portion of the key
+

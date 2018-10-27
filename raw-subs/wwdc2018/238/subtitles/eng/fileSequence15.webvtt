@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.946 --> 00:15:00.416 A:middle
+provided.
+
+00:15:02.136 --> 00:15:04.016 A:middle
+Effectively you can move your
+
+00:15:04.016 --> 00:15:05.606 A:middle
+application logic to deal with
+
+00:15:05.606 --> 00:15:07.276 A:middle
+how things are displayed into a
+
+00:15:07.276 --> 00:15:08.916 A:middle
+statically specific template
+
+00:15:09.596 --> 00:15:11.216 A:middle
+that exists within the context
+
+00:15:11.586 --> 00:15:12.926 A:middle
+of elements that's transformed
+
+00:15:13.106 --> 00:15:14.196 A:middle
+into user interfaces.
+
+00:15:15.556 --> 00:15:16.846 A:middle
+Now let's switch gears and talk
+
+00:15:16.876 --> 00:15:18.506 A:middle
+about playback in TVMLKit.
+
+00:15:19.296 --> 00:15:20.896 A:middle
+TVMLKit has long provided
+
+00:15:20.966 --> 00:15:22.486 A:middle
+extension points where you need
+
+00:15:22.486 --> 00:15:24.226 A:middle
+more customization of your user
+
+00:15:24.226 --> 00:15:26.326 A:middle
+interfaces, be it individual
+
+00:15:26.326 --> 00:15:28.226 A:middle
+views or even whole templates.
+
+00:15:29.126 --> 00:15:31.276 A:middle
+In tvOS 12, we are extending
+
+00:15:31.276 --> 00:15:32.586 A:middle
+this to our playback pipeline,
+
+00:15:32.976 --> 00:15:34.586 A:middle
+giving you control over playback
+
+00:15:34.726 --> 00:15:36.586 A:middle
+as well as its associated user
+
+00:15:36.766 --> 00:15:37.416 A:middle
+experience.
+
+00:15:41.046 --> 00:15:43.976 A:middle
+This experience works with all
+
+00:15:44.046 --> 00:15:45.176 A:middle
+the different playback styles we
+
+00:15:45.176 --> 00:15:47.786 A:middle
+have, whether it is embedded or
+
+00:15:47.866 --> 00:15:48.656 A:middle
+in a full screen.
+
+00:15:51.676 --> 00:15:53.106 A:middle
+You do this by providing a
+
+00:15:53.106 --> 00:15:55.006 A:middle
+TVPlayer object and its
+
+00:15:55.006 --> 00:15:56.936 A:middle
+associated user interface as a
+
+00:15:56.936 --> 00:15:57.916 A:middle
+UIViewController.
+

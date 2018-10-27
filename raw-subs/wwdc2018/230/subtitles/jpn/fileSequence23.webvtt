@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.077 --> 00:23:00.681 align:start position:5% line:-2
+ビューのaccessibilityElements
+プロパティから返すのです
+
+00:23:02.416 --> 00:23:05.018 align:start position:30% line:-1
+また 先ほどのデモでは
+
+00:23:05.119 --> 00:23:08.755 align:start position:29% line:-2
+施設のビューが
+３要素に分かれていました
+
+00:23:08.856 --> 00:23:12.125 align:start position:32% line:-2
+施設名 マップボタン
+発信ボタンです
+
+00:23:13.560 --> 00:23:16.897 align:start position:25% line:-2
+ボタンにも
+コンテキストが欠けていました
+
+00:23:17.097 --> 00:23:22.469 align:start position:29% line:-2
+施設名より先に触ると
+何のボタンか分かりません
+
+00:23:23.504 --> 00:23:27.141 align:start position:32% line:-2
+３つが分離していると
+要素の数が増え
+
+00:23:27.241 --> 00:23:30.444 align:start position:36% line:-2
+情報を探すのに
+時間がかかります
+
+00:23:30.544 --> 00:23:34.948 align:start position:30% line:-2
+だから１要素にまとめ
+操作を簡略化するのです
+
+00:23:36.116 --> 00:23:39.019 align:start position:29% line:-1
+優先順位も考慮すべきです
+
+00:23:39.119 --> 00:23:42.689 align:start position:30% line:-2
+最も必要な情報は
+その犬がいる施設名です
+
+00:23:42.789 --> 00:23:48.028 align:start position:23% line:-2
+よってそれを最初に伝え
+場所の特定と発信はあとにします
+
+00:23:48.962 --> 00:23:53.000 align:start position:0% line:-2
+これを実現するAPIは
+accessibilityCustomActionsです
+
+00:23:53.200 --> 00:23:57.271 align:start position:30% line:-2
+これなら要素に
+アクションを加えられて
+
+00:23:57.371 --> 00:24:00.240 align:start position:36% line:-2
+ユーザは順に
+情報に当たれます
+

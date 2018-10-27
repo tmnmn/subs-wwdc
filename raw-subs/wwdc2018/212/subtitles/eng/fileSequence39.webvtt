@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:05.666 --> 00:39:07.216 A:middle
+&gt;&gt; MapKit JS provides you with
+
+00:39:07.216 --> 00:39:08.776 A:middle
+access to three services,
+
+00:39:09.176 --> 00:39:10.816 A:middle
+Geocoding, Search, and
+
+00:39:10.886 --> 00:39:11.536 A:middle
+Directions.
+
+00:39:12.346 --> 00:39:14.126 A:middle
+I'll step through examples of
+
+00:39:14.126 --> 00:39:15.476 A:middle
+each of those, but before that,
+
+00:39:15.476 --> 00:39:16.386 A:middle
+I'll tell you what they have in
+
+00:39:16.386 --> 00:39:16.756 A:middle
+common.
+
+00:39:17.296 --> 00:39:19.876 A:middle
+You can use the services in a
+
+00:39:19.876 --> 00:39:21.546 A:middle
+similar way, with four easy
+
+00:39:21.546 --> 00:39:21.916 A:middle
+steps.
+
+00:39:22.536 --> 00:39:23.806 A:middle
+You first create the service
+
+00:39:23.806 --> 00:39:25.996 A:middle
+object, then you specify the
+
+00:39:25.996 --> 00:39:27.666 A:middle
+request parameters and options,
+
+00:39:28.376 --> 00:39:30.366 A:middle
+then you make the request, and
+
+00:39:30.366 --> 00:39:31.926 A:middle
+finally, handle the asynchronous
+
+00:39:31.926 --> 00:39:33.286 A:middle
+response via a callback
+
+00:39:33.286 --> 00:39:33.676 A:middle
+function.
+
+00:39:34.186 --> 00:39:35.766 A:middle
+So first, let's talk about the
+
+00:39:35.766 --> 00:39:36.326 A:middle
+Geocoder.
+
+00:39:37.916 --> 00:39:39.816 A:middle
+Here's an example of how you can
+
+00:39:39.816 --> 00:39:41.756 A:middle
+use the Geocoder, and it has two
+
+00:39:41.896 --> 00:39:43.716 A:middle
+methods: Lookup and Reverse
+
+00:39:43.716 --> 00:39:44.126 A:middle
+Lookup.
+
+00:39:44.636 --> 00:39:45.986 A:middle
+So, this is if have you an
+
+00:39:46.066 --> 00:39:47.636 A:middle
+address or a place, and you want
+
+00:39:47.636 --> 00:39:49.236 A:middle
+to find the coordinate, or if
+
+00:39:49.236 --> 00:39:50.026 A:middle
+you have the opposite.
+
+00:39:50.026 --> 00:39:51.046 A:middle
+You have a coordinate and you
+
+00:39:51.046 --> 00:39:53.826 A:middle
+want to find the address.
+
+00:39:54.046 --> 00:39:55.386 A:middle
+So, the first step is to create
+
+00:39:55.386 --> 00:39:58.106 A:middle
+your object, which you can
+
+00:39:58.106 --> 00:40:00.056 A:middle
+optionally provide at Gets User
+

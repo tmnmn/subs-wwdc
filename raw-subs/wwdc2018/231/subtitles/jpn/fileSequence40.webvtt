@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:02.903 --> 00:40:07.708 align:start position:29% line:-2
+カメラのストリームを
+開始させる関数があります
+
+00:40:09.677 --> 00:40:12.679 align:start position:38% line:-2
+コールバックを
+得られるように
+
+00:40:12.780 --> 00:40:15.048 align:start position:29% line:-1
+自分をデリゲートにします
+
+00:40:17.117 --> 00:40:20.320 align:start position:14% line:-2
+開始には
+startStream APIを使います
+
+00:40:21.555 --> 00:40:24.425 align:start position:32% line:-1
+カメラビューも生成し
+
+00:40:25.426 --> 00:40:27.661 align:start position:30% line:-1
+ビューの階層に加えます
+
+00:40:28.562 --> 00:40:31.131 align:start position:34% line:-2
+これでストリームが
+表示されます
+
+00:40:34.201 --> 00:40:37.104 align:start position:32% line:-2
+あとでコールバックを
+受け取ります
+
+00:40:37.204 --> 00:40:40.307 align:start position:18% line:-2
+HMCameraStream
+ControlDelegateを使い
+
+00:40:41.942 --> 00:40:47.014 align:start position:2% line:-2
+デリゲートのコールバックはcamera
+StreamControlDidStartStream
+
+00:40:48.515 --> 00:40:52.386 align:start position:32% line:-2
+あとはカメラソースを
+設定すれば完了です
+
+00:40:54.788 --> 00:40:56.924 align:start position:36% line:-2
+サンプルコードは
+以上ですが
+
+00:40:57.558 --> 00:41:01.328 align:start position:25% line:-2
+オンラインに
+多数のドキュメントがあります
+

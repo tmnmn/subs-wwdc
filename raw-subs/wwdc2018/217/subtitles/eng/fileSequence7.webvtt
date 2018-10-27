@@ -1,0 +1,144 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.916 --> 00:07:00.136 A:middle
+launched into the appropriate
+
+00:07:00.136 --> 00:07:00.726 A:middle
+context.
+
+00:07:01.256 --> 00:07:03.756 A:middle
+If instead, your app is-- or,
+
+00:07:03.756 --> 00:07:04.886 A:middle
+your shortcut is based off of
+
+00:07:04.886 --> 00:07:06.316 A:middle
+intents, when the user taps on
+
+00:07:06.316 --> 00:07:07.476 A:middle
+the platter, we'll see this
+
+00:07:07.476 --> 00:07:08.516 A:middle
+intent confirmation view.
+
+00:07:09.336 --> 00:07:10.556 A:middle
+And, if they tap to confirm it,
+
+00:07:11.156 --> 00:07:11.906 A:middle
+if your intent runs at the
+
+00:07:11.906 --> 00:07:13.106 A:middle
+background, we'll execute it
+
+00:07:13.106 --> 00:07:13.536 A:middle
+inline.
+
+00:07:14.576 --> 00:07:15.906 A:middle
+If instead your intent can't run
+
+00:07:15.906 --> 00:07:16.976 A:middle
+in the background, we'll launch
+
+00:07:16.976 --> 00:07:18.166 A:middle
+your application, and hand you
+
+00:07:18.166 --> 00:07:19.156 A:middle
+the intent to continue
+
+00:07:19.156 --> 00:07:19.716 A:middle
+execution.
+
+00:07:21.216 --> 00:07:22.556 A:middle
+So, let's look at the API for
+
+00:07:22.556 --> 00:07:23.306 A:middle
+Relevant Shortcuts.
+
+00:07:23.916 --> 00:07:25.146 A:middle
+At the core of a relevant
+
+00:07:25.146 --> 00:07:25.976 A:middle
+shortcut, of course, is a
+
+00:07:25.976 --> 00:07:26.396 A:middle
+shortcut.
+
+00:07:26.886 --> 00:07:28.286 A:middle
+If you want to give us hints as
+
+00:07:28.286 --> 00:07:29.086 A:middle
+to when this content is
+
+00:07:29.086 --> 00:07:30.166 A:middle
+relevant, you can provide us
+
+00:07:30.166 --> 00:07:31.256 A:middle
+relevanceProviders, which we'll
+
+00:07:31.256 --> 00:07:31.806 A:middle
+go over soon.
+
+00:07:33.196 --> 00:07:34.186 A:middle
+And, if you want to customize
+
+00:07:34.186 --> 00:07:36.216 A:middle
+the UI beyond what your shortcut
+
+00:07:36.216 --> 00:07:37.916 A:middle
+will provide, you can give us a
+
+00:07:37.916 --> 00:07:39.196 A:middle
+defaultCardTemplate on the
+
+00:07:39.196 --> 00:07:40.106 A:middle
+watchTemplate property.
+
+00:07:40.726 --> 00:07:43.246 A:middle
+Now, once you're done creating
+
+00:07:43.246 --> 00:07:44.166 A:middle
+all of your wonderful relevant
+
+00:07:44.166 --> 00:07:45.146 A:middle
+shortcuts, you need to let us
+
+00:07:45.146 --> 00:07:45.676 A:middle
+know about them.
+
+00:07:45.926 --> 00:07:46.886 A:middle
+So, you want to inform the
+
+00:07:46.886 --> 00:07:48.186 A:middle
+default relevantShortcutStore.
+
+00:07:48.696 --> 00:07:49.696 A:middle
+And, the way you do that is
+
+00:07:49.696 --> 00:07:50.576 A:middle
+providing an array.
+
+00:07:50.966 --> 00:07:52.066 A:middle
+And, every time you give us an
+
+00:07:52.066 --> 00:07:53.286 A:middle
+array, it'll erase the previous
+
+00:07:53.286 --> 00:07:54.596 A:middle
+contents we had in our shortcut
+
+00:07:54.596 --> 00:07:55.946 A:middle
+store, which is really useful
+
+00:07:55.946 --> 00:07:57.246 A:middle
+for invalidating stale relevant
+
+00:07:57.246 --> 00:07:57.786 A:middle
+shortcuts.
+
+00:07:58.116 --> 00:07:58.846 A:middle
+But, you just need to keep in
+
+00:07:58.846 --> 00:08:00.406 A:middle
+mind to provide us all of the
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.086 --> 00:11:00.236 A:middle
+installation in a retail
+
+00:11:00.236 --> 00:11:01.636 A:middle
+environment or a museum.
+
+00:11:02.486 --> 00:11:04.856 A:middle
+In the game room downstairs, we
+
+00:11:04.856 --> 00:11:06.326 A:middle
+use iBeacons so devices know
+
+00:11:06.326 --> 00:11:09.436 A:middle
+which table they're next to and
+
+00:11:09.436 --> 00:11:10.666 A:middle
+can load the correct WorldMap
+
+00:11:10.986 --> 00:11:11.636 A:middle
+for that area.
+
+00:11:12.236 --> 00:11:13.436 A:middle
+That really makes the experience
+
+00:11:13.436 --> 00:11:13.786 A:middle
+magical.
+
+00:11:14.326 --> 00:11:17.946 A:middle
+One of the features of SwiftShot
+
+00:11:17.996 --> 00:11:18.866 A:middle
+you may have used if you built
+
+00:11:18.866 --> 00:11:20.476 A:middle
+your app yourself is the ability
+
+00:11:20.476 --> 00:11:23.036 A:middle
+to, ability for players to place
+
+00:11:23.036 --> 00:11:23.956 A:middle
+the game board in the virtual
+
+00:11:23.956 --> 00:11:24.326 A:middle
+world.
+
+00:11:24.706 --> 00:11:26.136 A:middle
+At the tables downstairs, we're
+
+00:11:26.136 --> 00:11:27.326 A:middle
+using preloaded maps.
+
+00:11:27.456 --> 00:11:28.766 A:middle
+But here's an example of
+
+00:11:28.766 --> 00:11:30.046 A:middle
+building your own board and
+
+00:11:30.046 --> 00:11:31.866 A:middle
+placing it in the virtual world.
+
+00:11:32.716 --> 00:11:34.986 A:middle
+This is how that works.
+
+00:11:36.046 --> 00:11:37.316 A:middle
+As you saw in the video, you
+
+00:11:37.316 --> 00:11:38.836 A:middle
+start by scanning the surface,
+
+00:11:38.916 --> 00:11:40.366 A:middle
+letting ARKit build up a map of
+
+00:11:40.366 --> 00:11:40.766 A:middle
+the area.
+
+00:11:41.376 --> 00:11:43.916 A:middle
+You can then serialize that map
+
+00:11:43.916 --> 00:11:45.726 A:middle
+out as data and transfer it to
+
+00:11:45.726 --> 00:11:46.436 A:middle
+another device.
+
+00:11:47.716 --> 00:11:49.236 A:middle
+The target device then loads the
+
+00:11:49.236 --> 00:11:51.386 A:middle
+map into ARKit and uses it to
+
+00:11:51.386 --> 00:11:52.816 A:middle
+recognize the same surface.
+
+00:11:53.346 --> 00:11:54.396 A:middle
+At that point, we now have a
+
+00:11:54.396 --> 00:11:55.626 A:middle
+shared reference point in the
+
+00:11:55.626 --> 00:11:57.926 A:middle
+real world, and both devices can
+
+00:11:57.926 --> 00:11:58.986 A:middle
+render the game board into the
+
+00:11:58.986 --> 00:12:00.446 A:middle
+same place in that world.
+

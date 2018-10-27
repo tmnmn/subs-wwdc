@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.526 --> 00:12:01.046 A:middle
+any product listings that don't
+
+00:12:01.046 --> 00:12:02.416 A:middle
+have a valid list of tags.
+
+00:12:03.226 --> 00:12:04.336 A:middle
+I could throw an error, but in
+
+00:12:04.336 --> 00:12:07.356 A:middle
+this case, I chose not to.
+
+00:12:07.876 --> 00:12:09.456 A:middle
+Now, type validation isn't the
+
+00:12:09.456 --> 00:12:10.986 A:middle
+only form of validation that you
+
+00:12:10.986 --> 00:12:12.546 A:middle
+want to perform at this stage.
+
+00:12:13.106 --> 00:12:14.986 A:middle
+For instance, if that had been
+
+00:12:14.986 --> 00:12:16.266 A:middle
+replaced by null, which is
+
+00:12:16.266 --> 00:12:18.856 A:middle
+totally valid in JSON, I
+
+00:12:19.096 --> 00:12:20.556 A:middle
+would've seen a similar crash.
+
+00:12:21.876 --> 00:12:23.876 A:middle
+In Swift strong static type
+
+00:12:23.876 --> 00:12:25.176 A:middle
+system nullability is part of
+
+00:12:25.176 --> 00:12:25.556 A:middle
+the type.
+
+00:12:25.556 --> 00:12:27.346 A:middle
+And indeed, you can't downcast
+
+00:12:27.346 --> 00:12:28.166 A:middle
+null to a string.
+
+00:12:28.616 --> 00:12:30.416 A:middle
+And so, again, this cast would
+
+00:12:30.806 --> 00:12:32.356 A:middle
+have failed.
+
+00:12:32.896 --> 00:12:34.696 A:middle
+Now, even if all of these values
+
+00:12:34.696 --> 00:12:35.746 A:middle
+are of the correct type and
+
+00:12:35.746 --> 00:12:37.186 A:middle
+nullability, there's other forms
+
+00:12:37.186 --> 00:12:38.136 A:middle
+of validations that we should
+
+00:12:38.136 --> 00:12:38.786 A:middle
+care about here.
+
+00:12:39.626 --> 00:12:41.236 A:middle
+For instance, I said that each
+
+00:12:41.296 --> 00:12:42.666 A:middle
+product listing has a positive
+
+00:12:42.666 --> 00:12:43.196 A:middle
+integer ID.
+
+00:12:43.196 --> 00:12:44.246 A:middle
+In my case, they're all
+
+00:12:44.246 --> 00:12:45.296 A:middle
+sequential integers.
+
+00:12:45.966 --> 00:12:47.076 A:middle
+Does it make sense for one of
+
+00:12:47.076 --> 00:12:48.216 A:middle
+these IDs to be negative?
+
+00:12:49.206 --> 00:12:49.926 A:middle
+No, it doesn't.
+
+00:12:49.926 --> 00:12:51.366 A:middle
+But even if it is always
+
+00:12:51.366 --> 00:12:53.026 A:middle
+positive, does it make sense for
+
+00:12:53.026 --> 00:12:54.486 A:middle
+it to be such a large positive
+
+00:12:54.486 --> 00:12:55.176 A:middle
+integer value?
+
+00:12:55.976 --> 00:12:57.406 A:middle
+I'm not selling that many
+
+00:12:57.406 --> 00:12:57.776 A:middle
+things.
+
+00:12:58.036 --> 00:12:58.786 A:middle
+So, no it doesn't.
+
+00:12:58.786 --> 00:12:59.886 A:middle
+and in this case, this might be
+
+00:12:59.886 --> 00:13:01.376 A:middle
+due to somebody trying to cause
+

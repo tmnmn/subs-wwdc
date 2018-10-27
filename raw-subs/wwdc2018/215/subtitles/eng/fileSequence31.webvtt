@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.936 --> 00:31:01.266 A:middle
+Then, we're going to make sure
+
+00:31:01.266 --> 00:31:02.766 A:middle
+that we call our same published
+
+00:31:02.766 --> 00:31:05.346 A:middle
+context function, and that so,
+
+00:31:05.346 --> 00:31:06.816 A:middle
+if the context has not been
+
+00:31:06.816 --> 00:31:08.196 A:middle
+created, we'll make sure to
+
+00:31:08.196 --> 00:31:09.066 A:middle
+create them.
+
+00:31:09.756 --> 00:31:11.246 A:middle
+This will return an optional
+
+00:31:11.246 --> 00:31:12.676 A:middle
+error, and we'll make sure to
+
+00:31:12.706 --> 00:31:14.266 A:middle
+handle any errors.
+
+00:31:14.816 --> 00:31:16.416 A:middle
+Then, we're just going to sync
+
+00:31:16.486 --> 00:31:17.746 A:middle
+back up with our main thread and
+
+00:31:18.526 --> 00:31:20.806 A:middle
+instantiate our storyboard and
+
+00:31:20.806 --> 00:31:22.596 A:middle
+also instantiate the correct
+
+00:31:22.596 --> 00:31:24.216 A:middle
+view controllers for this quiz.
+
+00:31:25.296 --> 00:31:26.766 A:middle
+Then we're going to set our quiz
+
+00:31:26.766 --> 00:31:28.926 A:middle
+on our view controller, and push
+
+00:31:28.926 --> 00:31:30.036 A:middle
+on the appropriate views.
+
+00:31:30.916 --> 00:31:33.166 A:middle
+So, now let's go ahead and run
+
+00:31:33.166 --> 00:31:34.906 A:middle
+this code and test that our
+
+00:31:34.906 --> 00:31:36.146 A:middle
+deep-linking is working.
+
+00:31:36.706 --> 00:31:38.116 A:middle
+So, I'm going to switch back to
+
+00:31:38.116 --> 00:31:40.046 A:middle
+my device, and then we're going
+
+00:31:40.046 --> 00:31:41.336 A:middle
+to navigate back to the
+
+00:31:41.336 --> 00:31:42.606 A:middle
+Schoolwork app.
+
+00:31:43.936 --> 00:31:46.296 A:middle
+Here, let's tap on the icon one
+
+00:31:46.296 --> 00:31:46.866 A:middle
+more time.
+
+00:31:48.186 --> 00:31:50.286 A:middle
+Awesome. It launched us straight
+
+00:31:50.286 --> 00:31:51.946 A:middle
+into the addition math quiz.
+
+00:31:52.306 --> 00:31:53.636 A:middle
+So, now we're ready to start
+
+00:31:53.636 --> 00:31:55.466 A:middle
+writing our user generated
+
+00:31:55.466 --> 00:31:56.076 A:middle
+activity data.
+
+00:31:56.746 --> 00:31:58.356 A:middle
+So, let's go back to XCode, and
+
+00:31:58.356 --> 00:31:59.766 A:middle
+let's navigate to the part of
+
+00:31:59.766 --> 00:32:01.576 A:middle
+our code that gets called when a
+

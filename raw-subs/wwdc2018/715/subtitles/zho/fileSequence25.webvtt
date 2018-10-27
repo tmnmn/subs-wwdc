@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:57.664 --> 00:25:00.400 align:middle line:-2
+所以我们将只关注
+UDPClient类
+
+00:25:00.734 --> 00:25:02.269 align:middle line:-1
+和UDPServer类
+
+00:25:03.103 --> 00:25:04.304 align:middle line:-1
+UDPClient
+
+00:25:04.438 --> 00:25:07.641 align:middle line:-1
+将负责创建与另一端的连接
+
+00:25:07.708 --> 00:25:09.243 align:middle line:-1
+并发送帧
+
+00:25:10.177 --> 00:25:13.313 align:middle line:-1
+同样的 服务器负责创建监听器
+
+00:25:13.814 --> 00:25:15.349 align:middle line:-1
+接受传入的连接
+
+00:25:15.782 --> 00:25:17.351 align:middle line:-1
+从该连接中读取数据
+
+00:25:17.518 --> 00:25:18.785 align:middle line:-1
+并将其发送到屏幕
+
+00:25:19.620 --> 00:25:20.687 align:middle line:-1
+让我们从客户端开始
+
+00:25:22.422 --> 00:25:25.626 align:middle line:-2
+我的客户端类有个接收一个名字的
+初始化函数
+
+00:25:25.926 --> 00:25:28.629 align:middle line:-1
+它是描述我们要连接的
+
+00:25:28.695 --> 00:25:29.963 align:middle line:-1
+Bonjour服务名称的字符串
+
+00:25:31.598 --> 00:25:32.799 align:middle line:-2
+我通过调用
+NWConnection
+
+00:25:33.634 --> 00:25:35.369 align:middle line:-1
+并传入服务端点
+
+00:25:35.769 --> 00:25:37.471 align:middle line:-1
+来创建我的连接
+
+00:25:38.005 --> 00:25:39.706 align:middle line:-1
+使用提供给我的名称
+
+00:25:40.207 --> 00:25:42.242 align:middle line:-2
+并将_camera._udp
+作为类型
+
+00:25:43.644 --> 00:25:45.979 align:middle line:-1
+我们还传递了默认的UDP参数
+
+00:25:47.714 --> 00:25:50.584 align:middle line:-2
+正如Tommy所说我们可以使用
+stateUpdateHandler
+
+00:25:52.286 --> 00:25:55.155 align:middle line:-1
+来检查就绪状态和失败状态
+
+00:25:55.989 --> 00:25:59.726 align:middle line:-2
+这里 当我们的连接就绪
+我们将调用sendInitialFrame()
+

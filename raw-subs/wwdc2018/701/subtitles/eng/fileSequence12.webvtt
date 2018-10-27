@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:01.076 --> 00:12:03.876 A:middle
+In this case, one key detail is
+
+00:12:03.916 --> 00:12:05.266 A:middle
+we're going to store the image
+
+00:12:05.316 --> 00:12:06.896 A:middle
+in two arrays because this is a
+
+00:12:06.896 --> 00:12:07.646 A:middle
+complex structure.
+
+00:12:08.136 --> 00:12:09.366 A:middle
+So the even pixels are going to
+
+00:12:09.366 --> 00:12:10.496 A:middle
+be in the real array, and the
+
+00:12:10.496 --> 00:12:11.576 A:middle
+odd pixels are going to be in
+
+00:12:11.576 --> 00:12:12.086 A:middle
+the imaginary.
+
+00:12:12.656 --> 00:12:16.136 A:middle
+And again we're going to specify
+
+00:12:16.136 --> 00:12:16.596 A:middle
+a direction.
+
+00:12:16.596 --> 00:12:17.436 A:middle
+In this case, we're going to use
+
+00:12:17.436 --> 00:12:18.576 A:middle
+an inverse FFT.
+
+00:12:18.726 --> 00:12:21.066 A:middle
+So now I want to shift gears for
+
+00:12:21.066 --> 00:12:21.536 A:middle
+a moment.
+
+00:12:22.096 --> 00:12:23.536 A:middle
+Previously we showed you two
+
+00:12:23.536 --> 00:12:27.616 A:middle
+examples, and we had two working
+
+00:12:27.616 --> 00:12:29.616 A:middle
+examples for vDSP, and then we
+
+00:12:29.616 --> 00:12:30.876 A:middle
+worked backwards, and we showed
+
+00:12:30.876 --> 00:12:33.786 A:middle
+you how we constructed these
+
+00:12:34.116 --> 00:12:34.706 A:middle
+examples.
+
+00:12:34.706 --> 00:12:35.576 A:middle
+We worked backwards and showed
+
+00:12:35.576 --> 00:12:36.756 A:middle
+you the moving pieces.
+
+00:12:37.586 --> 00:12:39.086 A:middle
+For this next library, what I
+
+00:12:39.086 --> 00:12:40.286 A:middle
+want to do is start at the basic
+
+00:12:40.286 --> 00:12:40.816 A:middle
+components.
+
+00:12:41.256 --> 00:12:42.636 A:middle
+I want to build up to a result.
+
+00:12:42.636 --> 00:12:44.066 A:middle
+So we're going to take a look at
+
+00:12:44.066 --> 00:12:46.066 A:middle
+simd, and we're going to start
+
+00:12:46.066 --> 00:12:46.956 A:middle
+at the basic low-level
+
+00:12:46.956 --> 00:12:48.246 A:middle
+primitives, and we're going to
+
+00:12:48.246 --> 00:12:50.116 A:middle
+build up to rotations.
+
+00:12:50.116 --> 00:12:51.336 A:middle
+In this case, rotations of 3D
+
+00:12:51.336 --> 00:12:51.836 A:middle
+objects.
+
+00:12:52.896 --> 00:12:57.556 A:middle
+At a high level, simd is an
+
+00:12:57.556 --> 00:12:58.776 A:middle
+abstraction for the vector
+
+00:12:58.776 --> 00:12:59.476 A:middle
+processing unit.
+

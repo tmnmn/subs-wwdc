@@ -1,0 +1,138 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.296 --> 00:33:00.346 A:middle
+index one.
+
+00:33:01.186 --> 00:33:02.526 A:middle
+Okay, on the second example, we
+
+00:33:02.526 --> 00:33:03.846 A:middle
+reverse the order and do the
+
+00:33:03.846 --> 00:33:05.246 A:middle
+insert first and then the
+
+00:33:05.246 --> 00:33:05.626 A:middle
+delete.
+
+00:33:06.526 --> 00:33:08.436 A:middle
+So our intuition holds, indeed
+
+00:33:08.436 --> 00:33:09.356 A:middle
+we get a different result.
+
+00:33:09.456 --> 00:33:10.426 A:middle
+This is probably not a good
+
+00:33:10.496 --> 00:33:10.936 A:middle
+thing, right.
+
+00:33:12.376 --> 00:33:14.776 A:middle
+So let's contrast this with the
+
+00:33:14.776 --> 00:33:15.986 A:middle
+CollectionView updates.
+
+00:33:16.126 --> 00:33:17.806 A:middle
+Now here I have two sets of
+
+00:33:17.806 --> 00:33:18.816 A:middle
+CollectionView updates on a
+
+00:33:18.816 --> 00:33:21.256 A:middle
+submit via batch updates, and
+
+00:33:21.256 --> 00:33:22.396 A:middle
+I've left out the data source
+
+00:33:22.396 --> 00:33:23.526 A:middle
+updates, just to keep the slide
+
+00:33:23.636 --> 00:33:23.926 A:middle
+tidy.
+
+00:33:24.996 --> 00:33:25.906 A:middle
+But I've got an insert and a
+
+00:33:25.906 --> 00:33:27.206 A:middle
+delete on the first one, and the
+
+00:33:27.206 --> 00:33:28.766 A:middle
+second one has a delete and a
+
+00:33:28.766 --> 00:33:30.026 A:middle
+insert, and the order is
+
+00:33:30.056 --> 00:33:30.406 A:middle
+different.
+
+00:33:30.406 --> 00:33:31.696 A:middle
+This will give you the exact
+
+00:33:31.696 --> 00:33:32.326 A:middle
+same result.
+
+00:33:33.426 --> 00:33:34.376 A:middle
+We're all engineers.
+
+00:33:34.376 --> 00:33:35.956 A:middle
+We want to know why, why is
+
+00:33:35.956 --> 00:33:36.286 A:middle
+that?
+
+00:33:36.286 --> 00:33:38.066 A:middle
+Well, let's talk about that.
+
+00:33:38.676 --> 00:33:39.796 A:middle
+How does this happen?
+
+00:33:39.796 --> 00:33:40.766 A:middle
+Why is the ordering not
+
+00:33:40.766 --> 00:33:42.166 A:middle
+important for the update sent to
+
+00:33:42.166 --> 00:33:43.106 A:middle
+the CollectionView, and of
+
+00:33:43.106 --> 00:33:44.096 A:middle
+course it is for your data
+
+00:33:44.096 --> 00:33:44.296 A:middle
+source.
+
+00:33:44.296 --> 00:33:46.446 A:middle
+Okay. So let's walk through
+
+00:33:46.446 --> 00:33:47.926 A:middle
+these operation by operation.
+
+00:33:47.926 --> 00:33:50.346 A:middle
+So the first one to delete, this
+
+00:33:50.346 --> 00:33:52.506 A:middle
+is process in descending index
+
+00:33:52.586 --> 00:33:53.196 A:middle
+path order.
+
+00:33:53.196 --> 00:33:55.146 A:middle
+Now let's talk about the index
+
+00:33:55.146 --> 00:33:55.536 A:middle
+paths.
+
+00:33:55.716 --> 00:33:57.576 A:middle
+So first of all, if you can
+
+00:33:57.576 --> 00:33:58.586 A:middle
+think about what's happening on
+
+00:33:58.586 --> 00:33:59.946 A:middle
+a PerformBatchUpdate, before the
+
+00:33:59.946 --> 00:34:01.206 A:middle
+batch update starts, your data
+

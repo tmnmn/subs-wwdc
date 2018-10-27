@@ -1,0 +1,46 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:00.394 --> 00:36:06.767 align:start position:16% line:-2
+startAccessingのコードは
+冒頭でコールし
+
+00:36:07.401 --> 00:36:13.240 align:start position:25% line:-2
+stopAccessingは
+作業終了時にコールします
+
+00:36:14.508 --> 00:36:17.578 align:start position:23% line:-1
+startが“true”なら―
+
+00:36:18.145 --> 00:36:23.116 align:start position:21% line:-2
+stopをコールするというように
+単純です
+
+00:36:25.285 --> 00:36:28.522 align:start position:27% line:-1
+アクセス時間を最小限に抑え
+
+00:36:28.855 --> 00:36:35.662 align:start position:20% line:-2
+startをコールする際の
+Appのリソース消費量を節約します
+
+00:36:35.762 --> 00:36:39.900 align:start position:32% line:-2
+そしてタスク終了時に
+リソースを放棄し
+
+00:36:40.000 --> 00:36:45.939 align:start position:25% line:-2
+追加のドキュメントへの
+アクセスができるようにします
+
+00:36:47.374 --> 00:36:51.812 align:start position:27% line:-2
+ドキュメントが
+自分のコンテナ内にあるなら
+
+00:36:51.912 --> 00:36:54.014 align:start position:36% line:-1
+コールは不要です
+
+00:36:54.248 --> 00:36:57.451 align:start position:29% line:-1
+不安ならコール可能ですが
+
+00:36:57.718 --> 00:37:00.921 align:start position:25% line:-1
+実際は何もしなくていいのです
+

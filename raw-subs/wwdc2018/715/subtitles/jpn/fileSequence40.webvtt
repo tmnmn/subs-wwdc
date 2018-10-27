@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:55.762 --> 00:40:01.668 align:start position:30% line:-2
+接続を円滑にし 速度を
+うまく調整する方法です
+
+00:40:02.536 --> 00:40:07.307 align:start position:29% line:-2
+これは全てのTCP接続で
+標準的に使用できます
+
+00:40:07.407 --> 00:40:08.709 align:start position:38% line:-1
+設定は不要です
+
+00:40:09.309 --> 00:40:13.113 align:start position:32% line:-2
+以前はUDPベースの
+プロトコルを用いた―
+
+00:40:13.213 --> 00:40:15.349 align:start position:29% line:-1
+ECNの使用は困難でした
+
+00:40:15.916 --> 00:40:18.185 align:start position:29% line:-1
+ではECNの使用方法は？
+
+00:40:19.653 --> 00:40:23.557 align:start position:20% line:-2
+ipMetadataオブジェクトの
+作成から始めましょう
+
+00:40:23.657 --> 00:40:27.728 align:start position:23% line:-2
+ECNはIPパケットのフラグに
+管理されていて
+
+00:40:27.995 --> 00:40:33.534 align:start position:25% line:-2
+パケットごとに様々なフラグを
+設定することができます
+
+00:40:34.201 --> 00:40:37.071 align:start position:30% line:-2
+それを１つに
+まとめることも可能です
+
+00:40:37.171 --> 00:40:42.743 align:start position:27% line:-2
+コンテキストオブジェクトは
+複数のプロトコルのための
+
+00:40:42.943 --> 00:40:47.214 align:start position:29% line:-2
+全オプションや優先事項を
+類型化できます
+
+00:40:48.082 --> 00:40:52.853 align:start position:29% line:-2
+そしてこのコンテキストを
+特別なパラメータとして
+
+00:40:53.086 --> 00:40:55.522 align:start position:32% line:-1
+送信コールへ送ります
+
+00:40:55.889 --> 00:40:59.359 align:start position:32% line:-2
+これを送信する時
+生成されるパケットは
+
+00:40:59.459 --> 00:41:03.096 align:start position:30% line:-2
+マークしたかった
+全てのフラグを持ちます
+

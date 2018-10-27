@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.946 --> 00:05:00.336 A:middle
+this is where you can override
+
+00:05:00.336 --> 00:05:01.916 A:middle
+the appearance for a particular
+
+00:05:01.916 --> 00:05:02.386 A:middle
+object.
+
+00:05:03.346 --> 00:05:05.066 A:middle
+Now, it's an optional
+
+00:05:05.116 --> 00:05:07.696 A:middle
+NSAppearance because, if you set
+
+00:05:07.696 --> 00:05:09.216 A:middle
+it to nil, the object will
+
+00:05:09.216 --> 00:05:10.716 A:middle
+simply inherit its appearance
+
+00:05:10.916 --> 00:05:11.886 A:middle
+from its ancestors.
+
+00:05:13.496 --> 00:05:15.346 A:middle
+There's also effective
+
+00:05:15.346 --> 00:05:17.356 A:middle
+appearance and this is a
+
+00:05:17.476 --> 00:05:19.456 A:middle
+read-only property that you can
+
+00:05:19.456 --> 00:05:21.806 A:middle
+use to find out what appearance
+
+00:05:22.006 --> 00:05:22.976 A:middle
+a view will draw with.
+
+00:05:23.516 --> 00:05:26.986 A:middle
+And of course, to use this,
+
+00:05:26.986 --> 00:05:28.346 A:middle
+you'll have to get the right
+
+00:05:28.346 --> 00:05:30.086 A:middle
+NSAppearance object and you can
+
+00:05:30.086 --> 00:05:32.216 A:middle
+do that pretty easily using the
+
+00:05:32.216 --> 00:05:34.456 A:middle
+NSAppearance named initializer.
+
+00:05:34.896 --> 00:05:38.416 A:middle
+Just pass aqua or darkAqua based
+
+00:05:38.416 --> 00:05:40.166 A:middle
+on which appearance you want and
+
+00:05:41.576 --> 00:05:42.996 A:middle
+then you can go ahead and just
+
+00:05:42.996 --> 00:05:44.396 A:middle
+assign that to the appearance
+
+00:05:44.396 --> 00:05:45.886 A:middle
+property of the object that
+
+00:05:45.886 --> 00:05:46.936 A:middle
+you'd like to customize.
+
+00:05:47.106 --> 00:05:49.046 A:middle
+So, in this case, we'll assign
+
+00:05:49.136 --> 00:05:51.466 A:middle
+the aqua appearance to the
+
+00:05:51.466 --> 00:05:52.826 A:middle
+appearance property of the text
+
+00:05:52.826 --> 00:05:54.416 A:middle
+view and now it uses the light
+
+00:05:54.416 --> 00:05:54.996 A:middle
+appearance.
+
+00:05:54.996 --> 00:05:55.646 A:middle
+All right.
+
+00:05:56.956 --> 00:05:59.836 A:middle
+That was pretty easy, so let's
+
+00:05:59.836 --> 00:06:00.986 A:middle
+take a look at another case.
+

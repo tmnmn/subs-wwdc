@@ -1,0 +1,69 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:58.805 --> 00:39:01.975 align:start position:32% line:-2
+デバッガは
+アクティブ状態で停止
+
+00:39:02.075 --> 00:39:05.412 align:start position:36% line:-1
+UIは描画を続け
+
+00:39:05.512 --> 00:39:07.347 align:start position:29% line:-1
+ポップオーバーも出てます
+
+00:39:07.448 --> 00:39:09.483 align:start position:29% line:-1
+待機カーソルになるのは―
+
+00:39:09.583 --> 00:39:13.620 align:start position:27% line:-2
+アプリケーションが停止し
+マウスに反応しないからです
+
+00:39:14.822 --> 00:39:19.960 align:start position:27% line:-2
+ビューデバッガでは
+ポップオーバーが見えません
+
+00:39:20.394 --> 00:39:23.430 align:start position:34% line:-2
+でも ちゃんと
+取り込んでいるので
+
+00:39:23.530 --> 00:39:25.966 align:start position:36% line:-1
+後でお見せします
+
+00:39:26.066 --> 00:39:29.503 align:start position:32% line:-2
+まず 画像ビューの
+レイアウトの問題です
+
+00:39:29.803 --> 00:39:33.073 align:start position:27% line:-1
+画像ビューを少し拡大します
+
+00:39:33.173 --> 00:39:35.542 align:start position:27% line:-1
+右側のインスペクタを見ると
+
+00:39:35.642 --> 00:39:39.713 align:start position:0% line:-2
+NSImageViewSimpleImageViewと
+なっています
+
+00:39:39.813 --> 00:39:42.716 align:start position:30% line:-2
+アンダースコアのついた
+プレフィックスなので―
+
+00:39:42.816 --> 00:39:46.420 align:start position:29% line:-2
+システムフレームワークの
+インターナルクラスです
+
+00:39:46.520 --> 00:39:51.759 align:start position:29% line:-2
+コードなどで画像ビューを
+設定する際には使いません
+
+00:39:51.859 --> 00:39:54.561 align:start position:32% line:-2
+ビュー階層で
+オブジェクトを見ます
+
+00:39:54.661 --> 00:39:58.899 align:start position:0% line:-2
+Navigateメニューから
+“Reveal in Debug Navigator”へ
+
+00:39:58.999 --> 00:40:03.937 align:start position:21% line:-2
+左側でスーパービューと
+サブビューに関連づけられています
+

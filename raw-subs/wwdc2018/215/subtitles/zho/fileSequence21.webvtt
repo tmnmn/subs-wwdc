@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.159 --> 00:21:01.828 align:middle line:-1
+如果我们这样做
+
+00:21:01.895 --> 00:21:03.130 align:middle line:-1
+最终会得到这样一个结构
+
+00:21:03.931 --> 00:21:07.000 align:middle line:-1
+其中最顶层是我们的主app上下文
+
+00:21:07.067 --> 00:21:08.702 align:middle line:-1
+即我们的Quizzler app
+
+00:21:09.236 --> 00:21:14.007 align:middle line:-2
+在它的下面是“Addition”上下文
+和“Multiplication”上下文
+
+00:21:14.641 --> 00:21:16.410 align:middle line:-1
+在它们各自的下面
+
+00:21:16.677 --> 00:21:21.014 align:middle line:-2
+还有“Scoreboard”上下文
+以及真正的“Quiz”上下文
+
+00:21:22.049 --> 00:21:27.754 align:middle line:-2
+Pavel告诉我们
+上下文是我们app的一部分
+
+00:21:27.821 --> 00:21:30.490 align:middle line:-1
+教师将它们布置给学生
+
+00:21:31.258 --> 00:21:32.559 align:middle line:-1
+现在我们牢记这一点
+
+00:21:32.626 --> 00:21:35.028 align:middle line:-2
+我们先来谈谈
+“Scoreboard”上下文
+
+00:21:36.129 --> 00:21:39.967 align:middle line:-2
+“Scoreboard”上下文
+是什么？
+
+00:21:40.467 --> 00:21:42.236 align:middle line:-1
+这是所有用户的最高分
+
+00:21:42.936 --> 00:21:47.441 align:middle line:-2
+一位老师给他的学生分发这些
+真的有意义吗？
+
+00:21:49.076 --> 00:21:49.977 align:middle line:-1
+好像并没有
+
+00:21:50.043 --> 00:21:52.179 align:middle line:-1
+所以我们将删除它
+
+00:21:53.046 --> 00:21:55.716 align:middle line:-1
+现在 剩下的结构看起来像这样
+
+00:21:56.650 --> 00:21:59.586 align:middle line:-2
+接下来让我们看看
+“Addition”上下文
+

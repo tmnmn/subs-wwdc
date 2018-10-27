@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.466 --> 00:12:00.786 A:middle
+and swap that's really important
+
+00:12:00.786 --> 00:12:00.956 A:middle
+here.
+
+00:12:02.016 --> 00:12:03.646 A:middle
+One important point of note is
+
+00:12:03.646 --> 00:12:05.066 A:middle
+the swap size gives you the
+
+00:12:05.066 --> 00:12:07.486 A:middle
+precompressed size of your data,
+
+00:12:07.486 --> 00:12:08.746 A:middle
+not what it compressed down to.
+
+00:12:10.226 --> 00:12:11.686 A:middle
+If you really need to dig deeper
+
+00:12:11.756 --> 00:12:13.186 A:middle
+and you want more information,
+
+00:12:13.546 --> 00:12:14.956 A:middle
+you can just run vmmap against
+
+00:12:14.956 --> 00:12:16.186 A:middle
+the Memgraph , and you'll get
+
+00:12:16.186 --> 00:12:17.786 A:middle
+contents of all of the regions.
+
+00:12:17.896 --> 00:12:19.606 A:middle
+So we'll start by printing you
+
+00:12:19.606 --> 00:12:20.686 A:middle
+the nonwritable region, so,
+
+00:12:20.686 --> 00:12:22.156 A:middle
+like, your program's text or
+
+00:12:22.156 --> 00:12:24.536 A:middle
+executable code, and then the
+
+00:12:24.536 --> 00:12:26.156 A:middle
+writable regions, so the data
+
+00:12:26.156 --> 00:12:27.186 A:middle
+sections, for instance.
+
+00:12:27.256 --> 00:12:28.786 A:middle
+This is where your process heap
+
+00:12:29.286 --> 00:12:30.436 A:middle
+will be.
+
+00:12:30.676 --> 00:12:31.986 A:middle
+One really cool aside to all of
+
+00:12:31.986 --> 00:12:33.456 A:middle
+this is that all these tools
+
+00:12:33.456 --> 00:12:34.836 A:middle
+work really well with standard
+
+00:12:34.836 --> 00:12:35.976 A:middle
+command-line utilities.
+
+00:12:36.526 --> 00:12:38.286 A:middle
+So for example, I was profiling
+
+00:12:38.286 --> 00:12:39.356 A:middle
+my app in VM Tracker the other
+
+00:12:39.356 --> 00:12:41.506 A:middle
+day, and I saw the, an increase
+
+00:12:41.506 --> 00:12:42.526 A:middle
+in the amount of dirty memory.
+
+00:12:43.106 --> 00:12:45.316 A:middle
+So I took a Memgraph, and I want
+
+00:12:45.316 --> 00:12:48.036 A:middle
+to find out, are any frameworks
+
+00:12:48.036 --> 00:12:49.166 A:middle
+or libraries I'm linking to
+
+00:12:49.166 --> 00:12:52.076 A:middle
+contributing to this dirty data?
+
+00:12:52.276 --> 00:12:54.216 A:middle
+So here I've run vmmap against
+
+00:12:54.216 --> 00:12:55.296 A:middle
+the Memgraph I took.
+
+00:12:56.296 --> 00:12:58.456 A:middle
+And I've used the pages flag.
+
+00:12:58.866 --> 00:13:00.206 A:middle
+This means that vmmap will print
+

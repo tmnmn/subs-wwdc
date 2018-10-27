@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.116 --> 00:20:01.366 A:middle
+also registering asset change
+
+00:20:01.366 --> 00:20:03.326 A:middle
+observer to get notified
+
+00:20:03.326 --> 00:20:04.716 A:middle
+whenever anything changes in the
+
+00:20:04.716 --> 00:20:06.536 A:middle
+photo lobby, and also update my
+
+00:20:06.536 --> 00:20:06.976 A:middle
+project info.
+
+00:20:10.486 --> 00:20:11.526 A:middle
+There are two things I want to
+
+00:20:11.526 --> 00:20:12.806 A:middle
+highlight with integration.
+
+00:20:13.376 --> 00:20:16.106 A:middle
+By default, Photos handles copy
+
+00:20:16.106 --> 00:20:17.816 A:middle
+and paste of assets or albums
+
+00:20:17.996 --> 00:20:20.356 A:middle
+from Photos into the extension.
+
+00:20:20.896 --> 00:20:22.466 A:middle
+But, if your extension also
+
+00:20:22.466 --> 00:20:23.536 A:middle
+wants to implement the paste
+
+00:20:23.536 --> 00:20:24.386 A:middle
+section, which you should
+
+00:20:24.386 --> 00:20:25.886 A:middle
+probably do for text and things
+
+00:20:25.886 --> 00:20:27.886 A:middle
+like that, we need your help to
+
+00:20:27.886 --> 00:20:29.586 A:middle
+know when your extension should
+
+00:20:29.586 --> 00:20:30.926 A:middle
+handle the paste section, and
+
+00:20:30.926 --> 00:20:32.376 A:middle
+when Photos should try to handle
+
+00:20:32.376 --> 00:20:32.976 A:middle
+the paste section.
+
+00:20:33.196 --> 00:20:34.666 A:middle
+So, please implement
+
+00:20:34.666 --> 00:20:37.396 A:middle
+validateMenuItem, and if the
+
+00:20:37.396 --> 00:20:39.226 A:middle
+menu action is a paste action,
+
+00:20:39.456 --> 00:20:41.406 A:middle
+check if your extension can
+
+00:20:41.406 --> 00:20:42.466 A:middle
+handle the current pasteboard
+
+00:20:42.466 --> 00:20:44.376 A:middle
+contents, and if no, return
+
+00:20:44.376 --> 00:20:46.206 A:middle
+false, and we will try to handle
+
+00:20:46.206 --> 00:20:47.296 A:middle
+it as Photos.
+
+00:20:47.566 --> 00:20:49.076 A:middle
+And, otherwise, if you can
+
+00:20:49.076 --> 00:20:51.146 A:middle
+handle it, return true, and your
+
+00:20:51.146 --> 00:20:52.136 A:middle
+photos will get the paste
+
+00:20:52.136 --> 00:20:52.456 A:middle
+action.
+
+00:20:53.566 --> 00:20:55.436 A:middle
+Something similar applies to
+
+00:20:55.436 --> 00:20:55.996 A:middle
+drag and drop.
+
+00:20:56.646 --> 00:20:58.836 A:middle
+Photos handles any drags of
+
+00:20:58.836 --> 00:21:01.386 A:middle
+PhotoKit objects to the
+

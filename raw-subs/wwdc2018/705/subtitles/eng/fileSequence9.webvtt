@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.986 --> 00:09:01.096 A:middle
+now with that third step,
+
+00:09:01.756 --> 00:09:02.806 A:middle
+updating the user's subscription
+
+00:09:02.806 --> 00:09:02.926 A:middle
+state.
+
+00:09:07.516 --> 00:09:08.476 A:middle
+Now in the same way that each
+
+00:09:08.476 --> 00:09:10.166 A:middle
+subscription period starts with
+
+00:09:10.166 --> 00:09:12.206 A:middle
+a transaction it also ends with
+
+00:09:12.206 --> 00:09:13.086 A:middle
+an expiry date.
+
+00:09:14.116 --> 00:09:15.516 A:middle
+And the response from verify
+
+00:09:15.516 --> 00:09:17.456 A:middle
+receipt tells us each of these
+
+00:09:17.456 --> 00:09:18.796 A:middle
+expiry dates for each
+
+00:09:18.876 --> 00:09:19.476 A:middle
+transaction.
+
+00:09:19.536 --> 00:09:21.426 A:middle
+So looking back at this response
+
+00:09:21.426 --> 00:09:22.776 A:middle
+from verify receipt you'll
+
+00:09:22.776 --> 00:09:24.086 A:middle
+notice that there's this expires
+
+00:09:24.116 --> 00:09:25.766 A:middle
+date field in the transaction
+
+00:09:25.766 --> 00:09:26.476 A:middle
+and the response.
+
+00:09:27.746 --> 00:09:29.036 A:middle
+Let's bring up the user table
+
+00:09:29.036 --> 00:09:30.266 A:middle
+now that you might be saving
+
+00:09:30.266 --> 00:09:31.356 A:middle
+this data on your server.
+
+00:09:33.026 --> 00:09:34.346 A:middle
+You can take this expires date
+
+00:09:34.346 --> 00:09:35.526 A:middle
+from this transaction and
+
+00:09:35.526 --> 00:09:36.776 A:middle
+actually populate this into a
+
+00:09:36.776 --> 00:09:38.276 A:middle
+field on your own server, maybe
+
+00:09:38.276 --> 00:09:39.766 A:middle
+the latest expires date field
+
+00:09:39.796 --> 00:09:40.686 A:middle
+for this particular user.
+
+00:09:40.976 --> 00:09:42.446 A:middle
+And this field is going to
+
+00:09:42.446 --> 00:09:44.206 A:middle
+become the new source of truth
+
+00:09:44.206 --> 00:09:45.326 A:middle
+on your server for whether or
+
+00:09:45.326 --> 00:09:46.976 A:middle
+not this user is a subscriber.
+
+00:09:48.386 --> 00:09:49.026 A:middle
+While you're here you should
+
+00:09:49.026 --> 00:09:50.606 A:middle
+also keep track of this other
+
+00:09:50.606 --> 00:09:51.936 A:middle
+field, original transaction ID,
+
+00:09:51.936 --> 00:09:53.736 A:middle
+and you can save that in the
+
+00:09:53.736 --> 00:09:54.556 A:middle
+field called original
+
+00:09:54.556 --> 00:09:55.846 A:middle
+transaction ID against this
+
+00:09:55.886 --> 00:09:56.866 A:middle
+current user as well.
+
+00:09:56.986 --> 00:09:57.966 A:middle
+Well come back to this one in
+
+00:09:57.966 --> 00:09:58.636 A:middle
+just a moment as to why that's
+
+00:09:58.636 --> 00:09:58.976 A:middle
+important.
+

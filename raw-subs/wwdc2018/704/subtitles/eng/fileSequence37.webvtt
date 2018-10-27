@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.286 --> 00:37:00.036 A:middle
+subscription consumable and
+
+00:37:00.036 --> 00:37:01.846 A:middle
+non-consumable IAPs.
+
+00:37:03.246 --> 00:37:05.496 A:middle
+Within type 17 there's a couple
+
+00:37:05.936 --> 00:37:07.866 A:middle
+subdictionaries of data.
+
+00:37:08.466 --> 00:37:12.816 A:middle
+Type 1702 is going to be the
+
+00:37:12.816 --> 00:37:14.066 A:middle
+product identifier that's
+
+00:37:14.066 --> 00:37:15.376 A:middle
+associated with your
+
+00:37:15.746 --> 00:37:17.246 A:middle
+non-consumable IAP.
+
+00:37:17.246 --> 00:37:19.316 A:middle
+This is where you're going to
+
+00:37:19.316 --> 00:37:21.186 A:middle
+want to check to see is it my
+
+00:37:21.956 --> 00:37:23.316 A:middle
+non-consumable that represents
+
+00:37:23.316 --> 00:37:24.746 A:middle
+the beginning of the free trial
+
+00:37:24.746 --> 00:37:25.796 A:middle
+or the non-consumable that
+
+00:37:25.796 --> 00:37:27.366 A:middle
+represents the full unlock of
+
+00:37:27.366 --> 00:37:27.866 A:middle
+the app.
+
+00:37:29.246 --> 00:37:30.176 A:middle
+You're also going to want use
+
+00:37:30.176 --> 00:37:32.076 A:middle
+type 1704, this is where you can
+
+00:37:32.076 --> 00:37:33.496 A:middle
+check the purchase date of when
+
+00:37:33.496 --> 00:37:34.866 A:middle
+that consumable was actually
+
+00:37:34.866 --> 00:37:34.966 A:middle
+made.
+
+00:37:38.076 --> 00:37:39.326 A:middle
+So what's the algorithm you're
+
+00:37:39.326 --> 00:37:40.176 A:middle
+going to want to follow?
+
+00:37:40.646 --> 00:37:41.366 A:middle
+Well first, you're going to
+
+00:37:41.436 --> 00:37:43.136 A:middle
+iterate over all those in-app
+
+00:37:43.136 --> 00:37:44.766 A:middle
+purchases, all of those type
+
+00:37:44.766 --> 00:37:45.576 A:middle
+17's.
+
+00:37:46.966 --> 00:37:48.526 A:middle
+If you find any within the
+
+00:37:48.526 --> 00:37:50.256 A:middle
+receipt that matches the product
+
+00:37:50.256 --> 00:37:51.576 A:middle
+identifier that you've
+
+00:37:51.576 --> 00:37:53.216 A:middle
+represented the Full Unlock of
+
+00:37:53.216 --> 00:37:54.526 A:middle
+the app you're done.
+
+00:37:54.806 --> 00:37:55.956 A:middle
+You know that the user has
+
+00:37:56.016 --> 00:37:57.506 A:middle
+purchased the Full Unlock of
+
+00:37:57.506 --> 00:37:59.196 A:middle
+your app, give them the access
+
+00:37:59.196 --> 00:38:01.006 A:middle
+to it.
+

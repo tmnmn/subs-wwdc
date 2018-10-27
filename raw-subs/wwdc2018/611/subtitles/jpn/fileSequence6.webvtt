@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:01.028 --> 00:06:03.063 align:start position:18% line:-1
+sampleCountの設定は４です
+
+00:06:03.163 --> 00:06:07.034 align:start position:30% line:-2
+画質とパフォーマンスの
+兼ね合いからです
+
+00:06:07.134 --> 00:06:11.605 align:start position:21% line:-2
+同時に arrayLengthは
+２に設定しました
+
+00:06:11.705 --> 00:06:17.544 align:start position:30% line:-2
+両眼の画像を それぞれ
+別に保存したいからです
+
+00:06:18.912 --> 00:06:22.716 align:start position:32% line:-2
+パイプラインは
+どう変わるでしょうか
+
+00:06:23.517 --> 00:06:26.887 align:start position:34% line:-2
+2Dマルチサンプル
+テクスチャを
+
+00:06:27.154 --> 00:06:30.090 align:start position:30% line:-2
+2Dマルチサンプル配列
+テクスチャに替えました
+
+00:06:33.026 --> 00:06:37.998 align:start position:30% line:-2
+１つのパスで 両眼の
+レンダリングが可能です
+
+00:06:38.098 --> 00:06:43.170 align:start position:29% line:-2
+インスタンシングを使えば
+ドローコールも１回です
+
+00:06:43.837 --> 00:06:47.541 align:start position:32% line:-2
+しかし まだ
+改善の余地があります
+
+00:06:47.641 --> 00:06:50.978 align:start position:30% line:-2
+2Dマルチサンプル配列
+テクスチャを
+
+00:06:51.078 --> 00:06:56.116 align:start position:27% line:-2
+別々にIOSurfaceに
+変換しなくてはなりません
+
+00:06:57.484 --> 00:07:02.322 align:start position:20% line:-2
+テクスチャをCompositorと
+共有するには
+

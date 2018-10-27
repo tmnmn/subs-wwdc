@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.836 --> 00:24:01.136 A:middle
+In this case, trying to steal
+
+00:24:01.136 --> 00:24:02.326 A:middle
+the cookies of that user.
+
+00:24:02.776 --> 00:24:04.376 A:middle
+But remember, the scripts are
+
+00:24:04.376 --> 00:24:05.726 A:middle
+running with full power.
+
+00:24:05.726 --> 00:24:07.586 A:middle
+They can take over your whole
+
+00:24:07.716 --> 00:24:09.536 A:middle
+UI, make requests on your-- on
+
+00:24:09.536 --> 00:24:10.916 A:middle
+the victim user's behalf.
+
+00:24:11.916 --> 00:24:13.366 A:middle
+Cross-site scripting, which this
+
+00:24:13.366 --> 00:24:15.116 A:middle
+is an example of, is a bad
+
+00:24:15.196 --> 00:24:15.506 A:middle
+thing.
+
+00:24:15.506 --> 00:24:16.646 A:middle
+You don't want it to happen to
+
+00:24:16.646 --> 00:24:16.836 A:middle
+you.
+
+00:24:17.846 --> 00:24:19.976 A:middle
+Luckily, you have marked your
+
+00:24:19.976 --> 00:24:21.856 A:middle
+authentication cookies Http
+
+00:24:21.856 --> 00:24:22.616 A:middle
+Only, right?
+
+00:24:22.976 --> 00:24:25.626 A:middle
+So, ha, they're not available to
+
+00:24:25.626 --> 00:24:26.546 A:middle
+that malicious script.
+
+00:24:27.466 --> 00:24:29.306 A:middle
+Now, Http Only cookies don't
+
+00:24:29.306 --> 00:24:30.796 A:middle
+protect you against cross-site
+
+00:24:30.796 --> 00:24:31.256 A:middle
+scripting.
+
+00:24:31.566 --> 00:24:32.626 A:middle
+That script is still running.
+
+00:24:33.376 --> 00:24:35.886 A:middle
+Http Only cookies protect your
+
+00:24:35.886 --> 00:24:36.226 A:middle
+cookies.
+
+00:24:37.196 --> 00:24:38.216 A:middle
+So, you need to do something
+
+00:24:38.216 --> 00:24:39.926 A:middle
+more and what did you do?
+
+00:24:40.686 --> 00:24:41.926 A:middle
+Content security policy.
+
+00:24:42.656 --> 00:24:44.626 A:middle
+You started out with default
+
+00:24:44.626 --> 00:24:45.696 A:middle
+source self, right?
+
+00:24:46.036 --> 00:24:48.566 A:middle
+Saying, eh, only I get to run
+
+00:24:48.566 --> 00:24:49.986 A:middle
+script on my page please.
+
+00:24:50.716 --> 00:24:52.726 A:middle
+And that means by default no
+
+00:24:52.726 --> 00:24:55.416 A:middle
+inline scripting and that whole
+
+00:24:55.416 --> 00:24:57.466 A:middle
+class of bugs just goes away.
+
+00:24:58.956 --> 00:25:00.966 A:middle
+Now there is no way to inject
+

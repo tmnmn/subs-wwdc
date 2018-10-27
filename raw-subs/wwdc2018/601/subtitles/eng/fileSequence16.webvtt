@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.836 --> 00:16:03.156 A:middle
+ReplayKit, the raw samples of
+
+00:16:03.156 --> 00:16:05.646 A:middle
+the audio from the app, video of
+
+00:16:05.646 --> 00:16:07.666 A:middle
+the screen and perhaps audio
+
+00:16:07.846 --> 00:16:09.416 A:middle
+from the microphone and encoding
+
+00:16:09.416 --> 00:16:11.516 A:middle
+starts and uploading to your
+
+00:16:11.516 --> 00:16:12.676 A:middle
+service using whatever
+
+00:16:12.676 --> 00:16:14.046 A:middle
+technology you prefer to use.
+
+00:16:17.016 --> 00:16:18.506 A:middle
+To help you get started
+
+00:16:18.816 --> 00:16:20.196 A:middle
+developing the new broadcast
+
+00:16:20.196 --> 00:16:22.826 A:middle
+services we provide the Xcode
+
+00:16:22.866 --> 00:16:26.036 A:middle
+template and just add the
+
+00:16:26.036 --> 00:16:27.856 A:middle
+extension to your project using
+
+00:16:27.856 --> 00:16:29.406 A:middle
+the template and you'll be ready
+
+00:16:29.406 --> 00:16:30.096 A:middle
+to begin.
+
+00:16:30.866 --> 00:16:32.316 A:middle
+So now let's look how you can
+
+00:16:32.496 --> 00:16:35.386 A:middle
+code all of this.
+
+00:16:35.566 --> 00:16:37.296 A:middle
+So when you create an extension
+
+00:16:37.536 --> 00:16:39.236 A:middle
+in your project using Xcode
+
+00:16:39.236 --> 00:16:40.386 A:middle
+template, you'll get a
+
+00:16:40.386 --> 00:16:41.876 A:middle
+SampleHandler class like this
+
+00:16:42.406 --> 00:16:45.756 A:middle
+and this is where you add your
+
+00:16:45.756 --> 00:16:47.556 A:middle
+code to handle different events
+
+00:16:47.556 --> 00:16:49.026 A:middle
+during the broadcast.
+
+00:16:49.676 --> 00:16:51.226 A:middle
+And also, you would implement
+
+00:16:51.226 --> 00:16:52.406 A:middle
+this function that handles
+
+00:16:52.796 --> 00:16:53.746 A:middle
+incoming audio and video
+
+00:16:53.746 --> 00:16:53.976 A:middle
+samples.
+
+00:16:58.176 --> 00:17:00.136 A:middle
+This is how the life cycle of
+

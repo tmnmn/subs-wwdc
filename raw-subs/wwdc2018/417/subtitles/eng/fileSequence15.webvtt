@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.826 --> 00:15:01.506 A:middle
+When it observes this
+
+00:15:01.506 --> 00:15:03.336 A:middle
+notification, it reloads its
+
+00:15:03.336 --> 00:15:04.876 A:middle
+data if necessary, and, then,
+
+00:15:05.126 --> 00:15:06.416 A:middle
+for the purpose of this example,
+
+00:15:06.416 --> 00:15:07.346 A:middle
+it sets a flag.
+
+00:15:08.316 --> 00:15:10.376 A:middle
+This way, our test code can
+
+00:15:10.456 --> 00:15:11.846 A:middle
+check that the flag to see if
+
+00:15:11.846 --> 00:15:12.996 A:middle
+the notification was actually
+
+00:15:12.996 --> 00:15:13.406 A:middle
+received.
+
+00:15:13.876 --> 00:15:15.956 A:middle
+We can see here that it's using
+
+00:15:15.956 --> 00:15:17.526 A:middle
+the default notification center
+
+00:15:17.526 --> 00:15:18.456 A:middle
+to add the observer.
+
+00:15:19.916 --> 00:15:21.066 A:middle
+Let's take a look at what a unit
+
+00:15:21.066 --> 00:15:22.166 A:middle
+test for this code might look
+
+00:15:22.166 --> 00:15:22.436 A:middle
+like.
+
+00:15:23.476 --> 00:15:25.616 A:middle
+Here in our test for this class,
+
+00:15:25.836 --> 00:15:27.466 A:middle
+we post the authChanged method
+
+00:15:27.546 --> 00:15:29.066 A:middle
+notification to simulate it, and
+
+00:15:29.356 --> 00:15:30.516 A:middle
+we post it to the default
+
+00:15:30.516 --> 00:15:32.096 A:middle
+NotificationCenter, the same one
+
+00:15:32.096 --> 00:15:33.366 A:middle
+that our view controller uses.
+
+00:15:34.066 --> 00:15:36.166 A:middle
+Now, this test works, but it may
+
+00:15:36.166 --> 00:15:37.506 A:middle
+have unknown side effects
+
+00:15:37.506 --> 00:15:38.716 A:middle
+elsewhere in our app's code.
+
+00:15:39.506 --> 00:15:40.796 A:middle
+It's common for some system
+
+00:15:40.796 --> 00:15:42.406 A:middle
+notifications like UI
+
+00:15:42.406 --> 00:15:43.196 A:middle
+applications
+
+00:15:43.306 --> 00:15:44.496 A:middle
+appDidFinishLaunching
+
+00:15:44.496 --> 00:15:46.086 A:middle
+notification to be observed by
+
+00:15:46.086 --> 00:15:47.756 A:middle
+many layers and to have unknown
+
+00:15:47.756 --> 00:15:49.826 A:middle
+side effects, or it could simply
+
+00:15:49.826 --> 00:15:50.986 A:middle
+slow down our tests.
+
+00:15:51.636 --> 00:15:53.286 A:middle
+So, we'd like to isolate this
+
+00:15:53.286 --> 00:15:54.576 A:middle
+code better to test this.
+
+00:15:55.016 --> 00:15:57.996 A:middle
+There's a technique we can use
+
+00:15:57.996 --> 00:15:59.576 A:middle
+to better isolate these tests.
+

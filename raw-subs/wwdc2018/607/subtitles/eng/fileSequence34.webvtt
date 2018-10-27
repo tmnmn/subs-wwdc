@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.806 --> 00:34:00.716 A:middle
+depth bounds and per-tile light
+
+00:34:00.716 --> 00:34:02.106 A:middle
+lists using that scene depth
+
+00:34:02.106 --> 00:34:02.446 A:middle
+buffer.
+
+00:34:03.326 --> 00:34:04.886 A:middle
+And finally, another render pass
+
+00:34:04.886 --> 00:34:05.956 A:middle
+is going to shade the pixels in
+
+00:34:05.956 --> 00:34:07.096 A:middle
+each tile using the
+
+00:34:07.096 --> 00:34:08.096 A:middle
+corresponding light list.
+
+00:34:08.706 --> 00:34:13.235 A:middle
+Now, this pattern of mixing
+
+00:34:13.235 --> 00:34:14.386 A:middle
+render with compute occurs
+
+00:34:14.386 --> 00:34:14.976 A:middle
+frequently.
+
+00:34:14.976 --> 00:34:17.366 A:middle
+And prior to A11, communicating
+
+00:34:17.366 --> 00:34:18.585 A:middle
+across these passes required
+
+00:34:18.585 --> 00:34:19.226 A:middle
+system memory.
+
+00:34:19.936 --> 00:34:21.755 A:middle
+But with tile shading, we can
+
+00:34:21.755 --> 00:34:22.856 A:middle
+inline the compute so that the
+
+00:34:22.856 --> 00:34:24.036 A:middle
+render passes can be merged.
+
+00:34:26.396 --> 00:34:28.356 A:middle
+Here the depth bounds and light
+
+00:34:28.356 --> 00:34:29.476 A:middle
+culling steps are now
+
+00:34:29.476 --> 00:34:31.036 A:middle
+implemented as tile shaders and
+
+00:34:31.036 --> 00:34:32.076 A:middle
+inlined into a single render
+
+00:34:32.076 --> 00:34:32.576 A:middle
+pass.
+
+00:34:33.496 --> 00:34:34.735 A:middle
+Depth is now only stored in the
+
+00:34:34.735 --> 00:34:36.426 A:middle
+imageblock and, but is
+
+00:34:36.525 --> 00:34:37.966 A:middle
+accessible across the entire
+
+00:34:42.596 --> 00:34:42.706 A:middle
+pass.
+
+00:34:42.906 --> 00:34:44.496 A:middle
+So, now, tile shading is going
+
+00:34:44.496 --> 00:34:45.696 A:middle
+to help you eliminate a lot of
+
+00:34:45.696 --> 00:34:47.626 A:middle
+bandwidth, but these tile shader
+
+00:34:47.626 --> 00:34:48.876 A:middle
+outputs are still being stored
+
+00:34:48.876 --> 00:34:49.545 A:middle
+to system memory.
+
+00:34:50.545 --> 00:34:51.826 A:middle
+Tile shader dispatches are
+
+00:34:51.826 --> 00:34:53.226 A:middle
+synchronized with draws, so
+
+00:34:53.226 --> 00:34:54.286 A:middle
+that's completely safe to do,
+
+00:34:54.656 --> 00:34:55.606 A:middle
+but I think we could still do
+
+00:34:55.606 --> 00:34:57.136 A:middle
+better using our next feature,
+
+00:34:57.706 --> 00:34:59.426 A:middle
+persistent threadgroup memory.
+

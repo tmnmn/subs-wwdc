@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.786 --> 00:06:00.816 A:middle
+What this means that in your
+
+00:06:00.816 --> 00:06:02.076 A:middle
+applications you need to make
+
+00:06:02.076 --> 00:06:04.236 A:middle
+sure to either down-sample your
+
+00:06:04.236 --> 00:06:06.076 A:middle
+RGB image to the size of your
+
+00:06:06.076 --> 00:06:08.636 A:middle
+portrait depth or portrait matte
+
+00:06:09.336 --> 00:06:11.086 A:middle
+or [inaudible] and sample them
+
+00:06:11.086 --> 00:06:12.496 A:middle
+to the size of your RGB image.
+
+00:06:13.256 --> 00:06:15.316 A:middle
+So that's all I wanted to talk
+
+00:06:15.316 --> 00:06:16.286 A:middle
+about today for the portrait
+
+00:06:16.286 --> 00:06:18.686 A:middle
+segmentation API and we have a
+
+00:06:18.686 --> 00:06:20.626 A:middle
+great demo for you to see this
+
+00:06:20.626 --> 00:06:21.226 A:middle
+live in action.
+
+00:06:22.056 --> 00:06:24.986 A:middle
+So during this demo I'll be
+
+00:06:24.986 --> 00:06:26.376 A:middle
+making use of a Jupyter Notebook
+
+00:06:26.896 --> 00:06:28.276 A:middle
+which is a browser-based,
+
+00:06:28.426 --> 00:06:30.816 A:middle
+real-time interpreter for
+
+00:06:32.056 --> 00:06:32.436 A:middle
+Python.
+
+00:06:33.306 --> 00:06:34.826 A:middle
+And we'll be making use of
+
+00:06:34.886 --> 00:06:36.456 A:middle
+Python bindings for Core Image
+
+00:06:36.546 --> 00:06:37.646 A:middle
+which we'll be introducing later
+
+00:06:37.646 --> 00:06:38.976 A:middle
+today in a separate session.
+
+00:06:45.056 --> 00:06:46.626 A:middle
+So let's start and load an image
+
+00:06:46.626 --> 00:06:48.686 A:middle
+that contains portrait depth and
+
+00:06:48.686 --> 00:06:49.706 A:middle
+portrait matte in.
+
+00:06:50.016 --> 00:06:50.906 A:middle
+So this is the image we're going
+
+00:06:50.906 --> 00:06:51.516 A:middle
+to be working with.
+
+00:06:52.296 --> 00:06:54.956 A:middle
+The first thing I want to show
+
+00:06:54.956 --> 00:06:56.796 A:middle
+you is what the depth data looks
+
+00:06:56.796 --> 00:06:57.906 A:middle
+like for that image, so let's
+
+00:06:57.906 --> 00:06:59.196 A:middle
+look at the two side-by-side.
+
+00:06:59.296 --> 00:07:00.436 A:middle
+So we have the portrait depth on
+

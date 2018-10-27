@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:00.676 --> 00:23:01.576 A:middle
+Cross-site scripting.
+
+00:23:01.806 --> 00:23:02.906 A:middle
+Imagine you have built a
+
+00:23:02.906 --> 00:23:03.876 A:middle
+messaging app.
+
+00:23:04.306 --> 00:23:06.346 A:middle
+You have it as a native app with
+
+00:23:06.346 --> 00:23:08.066 A:middle
+a web view for rich formatting,
+
+00:23:08.066 --> 00:23:09.706 A:middle
+for instance, and you may have a
+
+00:23:09.706 --> 00:23:11.646 A:middle
+companion web app that one can
+
+00:23:11.646 --> 00:23:13.346 A:middle
+go or your users can go to in a
+
+00:23:13.346 --> 00:23:15.216 A:middle
+regular web browser, and you can
+
+00:23:15.216 --> 00:23:16.906 A:middle
+send messages to each other and
+
+00:23:16.906 --> 00:23:18.676 A:middle
+maybe with very rich formatting.
+
+00:23:19.356 --> 00:23:20.756 A:middle
+Most of your users are, of
+
+00:23:20.756 --> 00:23:21.956 A:middle
+course, nice.
+
+00:23:22.176 --> 00:23:23.676 A:middle
+Nice people sending each other
+
+00:23:23.676 --> 00:23:24.476 A:middle
+nice messages.
+
+00:23:24.926 --> 00:23:26.256 A:middle
+Some of them are angry sending
+
+00:23:26.256 --> 00:23:28.206 A:middle
+angry messages, but every now
+
+00:23:28.206 --> 00:23:29.996 A:middle
+and then comes along a malicious
+
+00:23:29.996 --> 00:23:32.166 A:middle
+user who might send a message
+
+00:23:32.166 --> 00:23:33.076 A:middle
+looking like this.
+
+00:23:34.106 --> 00:23:36.066 A:middle
+It starts out nice, hello, but
+
+00:23:36.286 --> 00:23:37.586 A:middle
+then it contains markup.
+
+00:23:38.396 --> 00:23:40.476 A:middle
+Now, if you have made a mistake
+
+00:23:40.476 --> 00:23:42.226 A:middle
+somewhere in the chain, in the
+
+00:23:42.226 --> 00:23:43.936 A:middle
+native apps web view or on the
+
+00:23:43.936 --> 00:23:46.626 A:middle
+website, where this will
+
+00:23:46.626 --> 00:23:48.336 A:middle
+actually be interpreted as real
+
+00:23:48.336 --> 00:23:50.076 A:middle
+markup instead of a message,
+
+00:23:50.556 --> 00:23:52.766 A:middle
+suddenly the attacker, the
+
+00:23:52.766 --> 00:23:54.436 A:middle
+malicious user here, is able to
+
+00:23:54.556 --> 00:23:57.976 A:middle
+run scripts in the recipient's
+
+00:23:58.266 --> 00:23:59.036 A:middle
+browser engine.
+
+00:23:59.836 --> 00:24:01.136 A:middle
+In this case, trying to steal
+

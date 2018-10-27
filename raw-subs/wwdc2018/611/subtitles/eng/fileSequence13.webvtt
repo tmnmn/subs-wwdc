@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.866 --> 00:13:03.256 A:middle
+to receive pauses, and
+
+00:13:03.256 --> 00:13:05.866 A:middle
+synchronize its execution to the
+
+00:13:05.866 --> 00:13:07.256 A:middle
+frame rate of the headset.
+
+00:13:09.026 --> 00:13:11.506 A:middle
+Both Vive and Vive Pro has
+
+00:13:11.506 --> 00:13:13.286 A:middle
+refresh rate of 90 frames per
+
+00:13:13.286 --> 00:13:14.936 A:middle
+second, which means the
+
+00:13:14.986 --> 00:13:17.096 A:middle
+application has only 11.1
+
+00:13:17.096 --> 00:13:18.706 A:middle
+milliseconds to process the
+
+00:13:18.706 --> 00:13:19.316 A:middle
+whole frame.
+
+00:13:20.086 --> 00:13:22.496 A:middle
+For comparison, blink of an eye
+
+00:13:22.746 --> 00:13:24.756 A:middle
+takes about 300 milliseconds.
+
+00:13:25.536 --> 00:13:27.286 A:middle
+So in this time, the application
+
+00:13:27.286 --> 00:13:28.666 A:middle
+should render 50 frames.
+
+00:13:30.326 --> 00:13:32.436 A:middle
+So once our application receives
+
+00:13:32.616 --> 00:13:34.736 A:middle
+pauses from WaitGet pauses, it
+
+00:13:34.806 --> 00:13:37.106 A:middle
+can start simulation of your
+
+00:13:37.106 --> 00:13:37.636 A:middle
+trial [inaudible].
+
+00:13:38.816 --> 00:13:39.886 A:middle
+When this simulation is
+
+00:13:39.956 --> 00:13:41.676 A:middle
+complete, and state of all
+
+00:13:41.676 --> 00:13:43.756 A:middle
+objects is known, application
+
+00:13:43.756 --> 00:13:46.076 A:middle
+can continue with encoding
+
+00:13:46.206 --> 00:13:48.286 A:middle
+command buffer that will be then
+
+00:13:48.286 --> 00:13:50.386 A:middle
+sent to GPU for execution.
+
+00:13:51.886 --> 00:13:54.786 A:middle
+Once GPU is done, an image for
+
+00:13:54.786 --> 00:13:57.416 A:middle
+both i's is rendered, it can be
+
+00:13:57.416 --> 00:13:59.906 A:middle
+sent to VR compositor for final
+
+00:13:59.906 --> 00:14:01.426 A:middle
+post-processing, as we talked
+

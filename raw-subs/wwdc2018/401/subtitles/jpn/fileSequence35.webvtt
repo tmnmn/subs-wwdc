@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.333 --> 00:35:03.070 align:start position:30% line:-2
+コードが
+あいまいになっています
+
+00:35:03.470 --> 00:35:07.574 align:start position:29% line:-2
+クロージャ内の
+局所変数にアクセスした時
+
+00:35:07.674 --> 00:35:12.946 align:start position:23% line:-2
+withAppendedにより
+数値が変更されています
+
+00:35:13.180 --> 00:35:15.549 align:start position:30% line:-1
+あいまいな点はこうです
+
+00:35:15.649 --> 00:35:21.388 align:start position:16% line:-2
+withAppendedで呼び出す前の
+パスの値を指すのか
+
+00:35:21.488 --> 00:35:26.260 align:start position:32% line:-2
+変更されたあとの
+現在値を指すのかです
+
+00:35:26.660 --> 00:35:32.532 align:start position:25% line:-2
+Swift 4ではコンパイル
+時間エラーとされていました
+
+00:35:32.633 --> 00:35:37.137 align:start position:29% line:-2
+これを解消するには
+コンパイラに命令をします
+
+00:35:37.237 --> 00:35:39.506 align:start position:32% line:-1
+新しい値が得たいなら
+
+00:35:39.606 --> 00:35:44.711 align:start position:25% line:-2
+クロージャにパラメータとして
+渡すだけです
+
+00:35:45.846 --> 00:35:48.048 align:start position:34% line:-1
+これを見てください
+
+00:35:48.148 --> 00:35:51.852 align:start position:34% line:-2
+ほぼ同じ機能ですが
+ジェネリックで―
+
+00:35:51.952 --> 00:35:54.988 align:start position:27% line:-1
+パラメータが戻り値の型です
+
+00:35:55.255 --> 00:36:02.496 align:start position:27% line:-2
+この場合も クロージャ内の
+パス値は同じくあいまいです
+

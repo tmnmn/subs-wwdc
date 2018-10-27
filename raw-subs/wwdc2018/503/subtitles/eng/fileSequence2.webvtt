@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.646 --> 00:02:01.666 A:middle
+great many effects, here is just
+
+00:02:01.666 --> 00:02:03.556 A:middle
+one of them where we essentially
+
+00:02:03.556 --> 00:02:04.916 A:middle
+do a foreground and background
+
+00:02:04.916 --> 00:02:06.306 A:middle
+separation by darkening the
+
+00:02:06.306 --> 00:02:06.866 A:middle
+background.
+
+00:02:06.866 --> 00:02:08.466 A:middle
+But we're really putting this
+
+00:02:08.466 --> 00:02:09.806 A:middle
+tool into your hands so that you
+
+00:02:09.806 --> 00:02:12.256 A:middle
+can create amazing apps and new
+
+00:02:12.256 --> 00:02:13.836 A:middle
+effects and delight your users.
+
+00:02:15.836 --> 00:02:18.466 A:middle
+All right, so the portrait
+
+00:02:18.466 --> 00:02:20.116 A:middle
+effects matte is coming to you
+
+00:02:20.116 --> 00:02:21.326 A:middle
+with iOS 12.
+
+00:02:22.056 --> 00:02:25.536 A:middle
+It is available for both the
+
+00:02:25.536 --> 00:02:27.046 A:middle
+front and the rear facing
+
+00:02:27.046 --> 00:02:27.476 A:middle
+camera.
+
+00:02:28.056 --> 00:02:31.516 A:middle
+It is available to you with
+
+00:02:31.516 --> 00:02:33.726 A:middle
+portrait still images and at the
+
+00:02:33.726 --> 00:02:34.766 A:middle
+moment only when there are
+
+00:02:34.766 --> 00:02:35.616 A:middle
+people in the scene.
+
+00:02:37.426 --> 00:02:39.426 A:middle
+Note that the portrait matte is
+
+00:02:39.426 --> 00:02:41.086 A:middle
+linearly encoded, so it's not
+
+00:02:41.086 --> 00:02:42.306 A:middle
+gamma encoded and what you get
+
+00:02:42.306 --> 00:02:43.346 A:middle
+is a grayscale buffer.
+
+00:02:44.756 --> 00:02:46.966 A:middle
+And also there's no guarantee
+
+00:02:46.966 --> 00:02:47.826 A:middle
+that you will be getting a
+
+00:02:47.826 --> 00:02:49.036 A:middle
+portrait matte alongside your
+
+00:02:49.036 --> 00:02:50.076 A:middle
+portrait still images, you
+
+00:02:50.116 --> 00:02:51.516 A:middle
+always do get the depth data but
+
+00:02:51.866 --> 00:02:53.316 A:middle
+you need to make sure to test
+
+00:02:53.316 --> 00:02:54.196 A:middle
+for its existence.
+
+00:02:54.516 --> 00:02:57.176 A:middle
+All right, let's take a look at
+
+00:02:57.176 --> 00:02:58.666 A:middle
+the API and how we can actually
+
+00:02:58.666 --> 00:03:00.126 A:middle
+load that data in.
+

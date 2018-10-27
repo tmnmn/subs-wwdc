@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:00.334 --> 00:45:02.636 align:middle line:-2
+在此找到你的方案
+然后选择Edit Scheme
+
+00:45:03.770 --> 00:45:05.239 align:middle line:-1
+并在Scheme Options的
+
+00:45:05.372 --> 00:45:07.641 align:middle line:-1
+Diagnostics选项卡中
+
+00:45:07.808 --> 00:45:10.511 align:middle line:-2
+在Logging选项处
+可启用Malloc Stack日志
+
+00:45:10.911 --> 00:45:12.713 align:middle line:-2
+并选中 All Allocations
+and Free History
+
+00:45:13.580 --> 00:45:16.216 align:middle line:-2
+这将为你提供这些方便的
+分配回溯信息 即视图调试器
+
+00:45:16.283 --> 00:45:18.151 align:middle line:-1
+和Xcode的内存图像调试器中的
+
+00:45:18.218 --> 00:45:20.053 align:middle line:-1
+所选对象的分配回溯信息
+
+00:45:21.088 --> 00:45:23.991 align:middle line:-1
+现在当我将鼠标悬停在这个堆栈上时
+
+00:45:24.324 --> 00:45:26.894 align:middle line:-1
+我们可以看到该框的全名
+
+00:45:27.594 --> 00:45:31.231 align:middle line:-2
+我们可以看到
+这是SceneViewController中的
+
+00:45:31.298 --> 00:45:32.533 align:middle line:-1
+setupPlanetGlobeLayout方法
+
+00:45:33.467 --> 00:45:36.436 align:middle line:-1
+我可以使用此跳转箭头
+
+00:45:36.837 --> 00:45:38.138 align:middle line:-1
+跳到这部分代码
+
+00:45:39.139 --> 00:45:41.775 align:middle line:-2
+我通过按住Shift-Control-Option键
+来做到这点
+
+00:45:41.975 --> 00:45:44.011 align:middle line:-1
+这将打开这个导航框
+
+00:45:44.211 --> 00:45:46.947 align:middle line:-1
+并允许我在新窗口中打开此文件
+
+00:45:48.715 --> 00:45:50.517 align:middle line:-1
+现在你可以看到分配约束的这行代码
+
+00:45:50.584 --> 00:45:52.786 align:middle line:-1
+被高亮显示了
+
+00:45:52.853 --> 00:45:54.154 align:middle line:-1
+我们看到值为30的常量
+
+00:45:54.221 --> 00:45:55.756 align:middle line:-1
+我可以将其反转为-30
+
+00:45:56.490 --> 00:45:58.325 align:middle line:-1
+保存该文件并关闭它
+
+00:45:58.392 --> 00:45:59.793 align:middle line:-1
+我们解决了第一个漏洞
+

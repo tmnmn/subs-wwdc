@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.296 --> 00:05:00.076 A:middle
+Transporter and it can use those
+
+00:05:00.076 --> 00:05:00.976 A:middle
+for authentication as well.
+
+00:05:01.066 --> 00:05:04.206 A:middle
+It just makes the process easier
+
+00:05:04.206 --> 00:05:04.956 A:middle
+to manage for you.
+
+00:05:05.456 --> 00:05:08.066 A:middle
+Okay, we have a whole bunch to
+
+00:05:08.066 --> 00:05:08.466 A:middle
+get through.
+
+00:05:08.466 --> 00:05:09.536 A:middle
+We're going to go kind of fast
+
+00:05:09.536 --> 00:05:09.826 A:middle
+today.
+
+00:05:10.136 --> 00:05:11.276 A:middle
+I apologize for that but we have
+
+00:05:11.276 --> 00:05:11.936 A:middle
+a lot to cover.
+
+00:05:12.086 --> 00:05:12.746 A:middle
+We're going to talk about
+
+00:05:12.796 --> 00:05:14.286 A:middle
+getting data and changing data
+
+00:05:14.286 --> 00:05:14.856 A:middle
+with the API.
+
+00:05:15.326 --> 00:05:16.596 A:middle
+We'll talk about relationships
+
+00:05:16.596 --> 00:05:17.686 A:middle
+which is how the different parts
+
+00:05:17.686 --> 00:05:19.386 A:middle
+of the API fit together and how
+
+00:05:19.386 --> 00:05:20.296 A:middle
+you work with those.
+
+00:05:20.726 --> 00:05:21.626 A:middle
+We'll talk about how to handle
+
+00:05:21.626 --> 00:05:23.256 A:middle
+errors, how to get access to the
+
+00:05:23.256 --> 00:05:24.436 A:middle
+API and authenticate your
+
+00:05:24.436 --> 00:05:26.046 A:middle
+request, then we'll wrap up with
+
+00:05:26.046 --> 00:05:27.066 A:middle
+some best practices.
+
+00:05:28.676 --> 00:05:29.446 A:middle
+So, you ready to get started?
+
+00:05:30.516 --> 00:05:33.586 A:middle
+[ Applause ]
+
+00:05:34.086 --> 00:05:35.646 A:middle
+So like I said, we're going to
+
+00:05:35.646 --> 00:05:36.766 A:middle
+start with getting data and that
+
+00:05:36.766 --> 00:05:37.906 A:middle
+means we start right here,
+
+00:05:38.206 --> 00:05:40.996 A:middle
+api.appstoreconnect.apple.com.
+
+00:05:41.296 --> 00:05:42.966 A:middle
+This is the home base of the API
+
+00:05:43.426 --> 00:05:44.336 A:middle
+and from here we want to
+
+00:05:44.336 --> 00:05:45.586 A:middle
+construct a URL.
+
+00:05:46.286 --> 00:05:48.126 A:middle
+First we will add a version.
+
+00:05:48.836 --> 00:05:50.356 A:middle
+Now all API endpoints have a
+
+00:05:50.356 --> 00:05:51.566 A:middle
+version and right now that's
+
+00:05:51.566 --> 00:05:51.976 A:middle
+always v1.
+
+00:05:51.976 --> 00:05:54.216 A:middle
+But inevitably as App Store
+
+00:05:54.216 --> 00:05:55.936 A:middle
+Connect grows and changes over
+
+00:05:55.936 --> 00:05:57.536 A:middle
+time, we'll have to make changes
+
+00:05:57.536 --> 00:05:59.056 A:middle
+to the API that might cause your
+
+00:05:59.056 --> 00:06:00.116 A:middle
+code to stop working.
+

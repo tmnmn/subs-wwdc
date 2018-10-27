@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:01.215 --> 00:13:04.751 align:start position:20% line:-2
+Apple Musicカタログ内の
+コンテンツを検索できます
+
+00:13:06.386 --> 00:13:10.257 align:start position:18% line:-2
+iCloudミュージックライブラリの
+ブラウズが可能で
+
+00:13:10.390 --> 00:13:13.360 align:start position:32% line:-2
+ライブラリの範囲内で
+検索も機能します
+
+00:13:14.294 --> 00:13:17.698 align:start position:30% line:-2
+楽曲キューも直接設定し
+制御できます
+
+00:13:19.399 --> 00:13:22.703 align:start position:32% line:-2
+再生イベントに反応し
+UIを駆動させます
+
+00:13:25.973 --> 00:13:27.908 align:start position:25% line:-1
+いくつかコードを見ていきます
+
+00:13:28.775 --> 00:13:32.146 align:start position:5% line:-2
+MusicKit getInstanceメソッドを
+最初に使います
+
+00:13:33.380 --> 00:13:37.151 align:start position:21% line:-2
+MusicKitは１度に１曲しか
+再生できないシングルトンです
+
+00:13:37.484 --> 00:13:42.756 align:start position:20% line:-2
+それをmusic変数にアサインして
+今回の事例に使用していきます
+
+00:13:44.124 --> 00:13:46.293 align:start position:30% line:-1
+IDを頼りに楽曲を参照
+
+00:13:47.561 --> 00:13:50.931 align:start position:23% line:-2
+songメソッドがIDを取ると
+コールバックの供給が必要
+
+00:13:51.064 --> 00:13:52.266 align:start position:29% line:-1
+これはpromiseです
+
+00:13:52.366 --> 00:13:54.935 align:start position:20% line:-2
+このpromiseモデルは
+MusicKit全般で使用されます
+
+00:13:56.970 --> 00:13:59.406 align:start position:29% line:-2
+コンテンツオブジェクトが
+返送され―
+
+00:13:59.506 --> 00:14:03.043 align:start position:30% line:-2
+これには楽曲の属性や
+関係性が示されています
+

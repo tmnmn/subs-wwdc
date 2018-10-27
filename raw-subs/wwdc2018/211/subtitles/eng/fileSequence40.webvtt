@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.776 --> 00:40:01.476 A:middle
+size parameter to a order soup
+
+00:40:01.476 --> 00:40:03.206 A:middle
+intent, it might make sense to
+
+00:40:03.206 --> 00:40:04.546 A:middle
+make that an enum, since the
+
+00:40:04.546 --> 00:40:06.036 A:middle
+possible sizes are probably just
+
+00:40:06.036 --> 00:40:07.986 A:middle
+small, medium, and large.
+
+00:40:09.916 --> 00:40:11.016 A:middle
+Using an enum will lead to
+
+00:40:11.016 --> 00:40:12.956 A:middle
+better suggestions and clearer
+
+00:40:12.956 --> 00:40:14.286 A:middle
+titles and subtitles for your
+
+00:40:14.286 --> 00:40:14.806 A:middle
+users.
+
+00:40:15.646 --> 00:40:17.176 A:middle
+To learn more about how enums
+
+00:40:17.176 --> 00:40:18.716 A:middle
+are used to generate titles and
+
+00:40:18.716 --> 00:40:20.296 A:middle
+subtitles, I recommend that you
+
+00:40:20.296 --> 00:40:21.706 A:middle
+watch the localization session.
+
+00:40:22.206 --> 00:40:25.076 A:middle
+Another type you can use is the
+
+00:40:25.076 --> 00:40:25.736 A:middle
+custom type.
+
+00:40:27.116 --> 00:40:28.556 A:middle
+Using a custom type will result
+
+00:40:28.556 --> 00:40:29.836 A:middle
+in an INObject and your
+
+00:40:29.836 --> 00:40:31.116 A:middle
+generated intent code.
+
+00:40:32.156 --> 00:40:33.426 A:middle
+An INObject combines an
+
+00:40:33.426 --> 00:40:35.206 A:middle
+identifier with a display
+
+00:40:35.206 --> 00:40:35.516 A:middle
+string.
+
+00:40:36.336 --> 00:40:38.566 A:middle
+The identifier can be used to
+
+00:40:38.566 --> 00:40:40.086 A:middle
+refer to an object internal to
+
+00:40:40.086 --> 00:40:42.066 A:middle
+your app, while the display
+
+00:40:42.066 --> 00:40:43.126 A:middle
+string contains the user
+
+00:40:43.126 --> 00:40:44.626 A:middle
+readable representation of that
+
+00:40:44.626 --> 00:40:45.066 A:middle
+object.
+
+00:40:45.946 --> 00:40:47.516 A:middle
+That way both your users and
+
+00:40:47.516 --> 00:40:49.306 A:middle
+your app always understands what
+
+00:40:49.496 --> 00:40:50.856 A:middle
+the value of this parameter is.
+
+00:40:52.196 --> 00:40:54.666 A:middle
+Finally, using an INObject also
+
+00:40:54.666 --> 00:40:56.096 A:middle
+prevents the possible dependency
+
+00:40:56.096 --> 00:40:56.966 A:middle
+between parameters.
+
+00:40:57.676 --> 00:40:59.866 A:middle
+Let me illustrate that.
+

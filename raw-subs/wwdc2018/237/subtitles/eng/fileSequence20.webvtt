@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.656 --> 00:20:02.766 A:middle
+To fix this let's switch to the
+
+00:20:02.766 --> 00:20:04.366 A:middle
+implementation of the document
+
+00:20:04.366 --> 00:20:04.976 A:middle
+data source.
+
+00:20:10.246 --> 00:20:11.606 A:middle
+The document data source is a
+
+00:20:11.606 --> 00:20:13.486 A:middle
+very simple kind of object, it
+
+00:20:13.576 --> 00:20:15.926 A:middle
+simply owns an area of URLs so
+
+00:20:15.926 --> 00:20:16.246 A:middle
+far.
+
+00:20:17.256 --> 00:20:18.286 A:middle
+We need to add the
+
+00:20:18.286 --> 00:20:20.086 A:middle
+QLPreviewController data source
+
+00:20:20.086 --> 00:20:21.646 A:middle
+protocol to the list of
+
+00:20:21.646 --> 00:20:23.206 A:middle
+protocols that this class
+
+00:20:23.206 --> 00:20:23.936 A:middle
+implements.
+
+00:20:33.246 --> 00:20:34.566 A:middle
+Next, we implement the missing
+
+00:20:34.566 --> 00:20:34.956 A:middle
+methods.
+
+00:20:45.096 --> 00:20:46.456 A:middle
+As you can see the way we use
+
+00:20:46.456 --> 00:20:48.376 A:middle
+the document data source here is
+
+00:20:48.376 --> 00:20:50.216 A:middle
+very similar to the way we use
+
+00:20:50.216 --> 00:20:51.326 A:middle
+it for the collection view.
+
+00:20:51.586 --> 00:20:54.066 A:middle
+In the numberOfPreviewItems
+
+00:20:54.066 --> 00:20:56.046 A:middle
+method we return the number of
+
+00:20:56.046 --> 00:20:57.516 A:middle
+URLs that we have gathered
+
+00:20:57.516 --> 00:20:58.986 A:middle
+before from our documents
+
+00:20:58.986 --> 00:20:59.326 A:middle
+folder.
+
+00:20:59.806 --> 00:21:03.626 A:middle
+And then Quick Look asks for the
+

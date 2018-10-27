@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.696 --> 00:29:02.466 A:middle
+But it's not always feasible to
+
+00:29:02.466 --> 00:29:03.746 A:middle
+just avoid mixing plain and
+
+00:29:03.746 --> 00:29:04.256 A:middle
+attributed text.
+
+00:29:04.576 --> 00:29:06.156 A:middle
+So if you've got to mix it up,
+
+00:29:06.736 --> 00:29:08.096 A:middle
+you can explicitly supply the
+
+00:29:08.096 --> 00:29:09.876 A:middle
+attributes when creating that
+
+00:29:09.876 --> 00:29:11.216 A:middle
+new attributed string from the
+
+00:29:11.216 --> 00:29:11.846 A:middle
+plain text string.
+
+00:29:11.846 --> 00:29:13.596 A:middle
+And if we make sure to apply the
+
+00:29:13.656 --> 00:29:14.526 A:middle
+same attributes from the
+
+00:29:14.526 --> 00:29:15.716 A:middle
+original text, we'll get the
+
+00:29:15.716 --> 00:29:16.356 A:middle
+correct result.
+
+00:29:16.886 --> 00:29:19.816 A:middle
+But you should be aware that
+
+00:29:19.816 --> 00:29:20.896 A:middle
+this reset effect can happen
+
+00:29:20.896 --> 00:29:22.126 A:middle
+with any attributes that have
+
+00:29:22.126 --> 00:29:23.456 A:middle
+default values and not just
+
+00:29:23.456 --> 00:29:23.736 A:middle
+fonts.
+
+00:29:24.816 --> 00:29:26.106 A:middle
+And as you can see, there are a
+
+00:29:26.106 --> 00:29:27.326 A:middle
+lot of attributes with default
+
+00:29:27.326 --> 00:29:27.676 A:middle
+values.
+
+00:29:27.676 --> 00:29:30.746 A:middle
+So I'd like to call out the
+
+00:29:30.746 --> 00:29:31.986 A:middle
+paragraph style here in
+
+00:29:31.986 --> 00:29:33.506 A:middle
+particular as being a sneaky
+
+00:29:33.506 --> 00:29:34.096 A:middle
+reset point.
+
+00:29:35.056 --> 00:29:36.466 A:middle
+And to see why, we'll revisit
+
+00:29:36.466 --> 00:29:37.256 A:middle
+our earlier example.
+
+00:29:37.406 --> 00:29:38.496 A:middle
+But instead of changing the
+
+00:29:38.496 --> 00:29:39.826 A:middle
+font, we're going to change the
+
+00:29:39.826 --> 00:29:41.576 A:middle
+paragraph style to truncate the
+
+00:29:41.576 --> 00:29:43.136 A:middle
+word hate because nobody likes
+
+00:29:43.646 --> 00:29:43.746 A:middle
+hate.
+
+00:29:44.376 --> 00:29:45.786 A:middle
+So we want our text to look like
+
+00:29:45.856 --> 00:29:47.886 A:middle
+this, but when we run this code,
+
+00:29:48.716 --> 00:29:49.836 A:middle
+we'll get a result like this
+
+00:29:50.686 --> 00:29:51.696 A:middle
+with all of the text in
+
+00:29:51.696 --> 00:29:53.526 A:middle
+Helvetica 12 and using the
+
+00:29:53.526 --> 00:29:55.136 A:middle
+default paragraph style with the
+
+00:29:55.136 --> 00:29:56.526 A:middle
+default line break mode of word
+
+00:29:56.526 --> 00:29:56.866 A:middle
+wrapping.
+
+00:29:57.566 --> 00:29:59.016 A:middle
+And, again, this is really great
+
+00:29:59.016 --> 00:29:59.956 A:middle
+for those of you who loathe
+
+00:29:59.956 --> 00:30:01.056 A:middle
+Comic Sans because it's been
+

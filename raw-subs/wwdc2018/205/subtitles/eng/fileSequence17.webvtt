@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.886 --> 00:17:01.656 A:middle
+To add this to your app, you
+
+00:17:01.656 --> 00:17:03.376 A:middle
+create an instance of ORK
+
+00:17:03.376 --> 00:17:05.056 A:middle
+speechRecognitionStep, and
+
+00:17:05.056 --> 00:17:06.596 A:middle
+provide us with either a UI
+
+00:17:06.596 --> 00:17:07.915 A:middle
+image, or a string.
+
+00:17:08.866 --> 00:17:10.386 A:middle
+You can also customize the
+
+00:17:10.386 --> 00:17:12.286 A:middle
+locale for this recognition.
+
+00:17:12.935 --> 00:17:14.266 A:middle
+And also, you can surface
+
+00:17:14.266 --> 00:17:16.316 A:middle
+real-time transcription as the
+
+00:17:16.316 --> 00:17:17.326 A:middle
+user is speaking.
+
+00:17:18.175 --> 00:17:20.695 A:middle
+Now, let's take a closer look at
+
+00:17:20.695 --> 00:17:22.746 A:middle
+one of the subsets of our result
+
+00:17:22.746 --> 00:17:23.326 A:middle
+object.
+
+00:17:24.536 --> 00:17:26.816 A:middle
+This is of type FS transcription
+
+00:17:27.086 --> 00:17:28.306 A:middle
+as surface by the speech
+
+00:17:28.306 --> 00:17:29.406 A:middle
+recognition framework.
+
+00:17:29.896 --> 00:17:31.576 A:middle
+The formattedString provides the
+
+00:17:31.576 --> 00:17:33.316 A:middle
+transcript, and the array of
+
+00:17:33.316 --> 00:17:35.276 A:middle
+segment objects, essentially
+
+00:17:35.276 --> 00:17:37.006 A:middle
+breakdown the transcript into
+
+00:17:37.006 --> 00:17:39.186 A:middle
+substrings, as well as provide a
+
+00:17:39.256 --> 00:17:40.496 A:middle
+confidence letter for each
+
+00:17:40.496 --> 00:17:41.076 A:middle
+substring.
+
+00:17:41.636 --> 00:17:42.866 A:middle
+On top of this, they also
+
+00:17:42.866 --> 00:17:44.926 A:middle
+provide an array of alternative
+
+00:17:44.926 --> 00:17:46.846 A:middle
+string, as you can see here in
+
+00:17:46.846 --> 00:17:48.146 A:middle
+this illustrative example.
+
+00:17:48.606 --> 00:17:51.536 A:middle
+Now, these results can be used
+
+00:17:51.536 --> 00:17:53.896 A:middle
+to derive syntactic, semantic
+
+00:17:54.206 --> 00:17:55.986 A:middle
+and linguistic features, as well
+
+00:17:55.986 --> 00:17:58.146 A:middle
+as speaking rate in order to
+
+00:17:58.146 --> 00:18:00.446 A:middle
+evaluate the speech patterns for
+

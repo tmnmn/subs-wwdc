@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.306 --> 00:19:01.346 A:middle
+was waiting for pauses to encode
+
+00:19:01.346 --> 00:19:02.996 A:middle
+any type of work to GPU.
+
+00:19:03.626 --> 00:19:05.336 A:middle
+But if we split those workloads
+
+00:19:05.336 --> 00:19:08.636 A:middle
+in half, we can encode pause
+
+00:19:08.636 --> 00:19:09.676 A:middle
+independent workloads
+
+00:19:09.766 --> 00:19:11.936 A:middle
+immediately and then wait for
+
+00:19:12.026 --> 00:19:14.046 A:middle
+pauses to continue with encoding
+
+00:19:14.146 --> 00:19:15.156 A:middle
+pause-dependent ones.
+
+00:19:16.126 --> 00:19:19.456 A:middle
+In this slide, we've already
+
+00:19:19.456 --> 00:19:21.076 A:middle
+separated pause independent
+
+00:19:21.076 --> 00:19:23.006 A:middle
+workloads from pause dependent
+
+00:19:23.036 --> 00:19:23.346 A:middle
+ones.
+
+00:19:24.516 --> 00:19:26.096 A:middle
+Pause independent workloads is
+
+00:19:26.096 --> 00:19:27.346 A:middle
+now encoded in [inaudible]
+
+00:19:27.496 --> 00:19:29.096 A:middle
+common buffer, and is marked
+
+00:19:29.446 --> 00:19:31.066 A:middle
+with a little bit darker shade
+
+00:19:31.276 --> 00:19:32.746 A:middle
+than pause-dependent workload
+
+00:19:32.746 --> 00:19:33.446 A:middle
+following it.
+
+00:19:34.336 --> 00:19:35.666 A:middle
+Because pause-independent
+
+00:19:35.666 --> 00:19:36.886 A:middle
+workload can be encoded
+
+00:19:36.886 --> 00:19:39.146 A:middle
+immediately, we will do exactly
+
+00:19:39.146 --> 00:19:39.376 A:middle
+that.
+
+00:19:39.966 --> 00:19:41.526 A:middle
+We will encode it as soon as the
+
+00:19:41.636 --> 00:19:42.796 A:middle
+previous frame workload is
+
+00:19:42.796 --> 00:19:43.286 A:middle
+encoded.
+
+00:19:44.766 --> 00:19:46.866 A:middle
+This gives CPU more time to
+
+00:19:46.866 --> 00:19:49.246 A:middle
+encode the GPU work, and what is
+
+00:19:49.416 --> 00:19:51.646 A:middle
+even more important, it ensures
+
+00:19:51.646 --> 00:19:54.196 A:middle
+us that this GPU work is already
+
+00:19:54.196 --> 00:19:56.556 A:middle
+waiting for being executed on
+
+00:19:56.556 --> 00:19:59.336 A:middle
+GPU so there will be exactly no
+
+00:19:59.336 --> 00:20:00.576 A:middle
+idle time on GPU.
+

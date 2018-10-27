@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.756 --> 00:13:01.866 A:middle
+So it's there for you to help
+
+00:13:01.866 --> 00:13:03.196 A:middle
+you remember that there is this
+
+00:13:03.196 --> 00:13:05.686 A:middle
+contract that exists between
+
+00:13:05.686 --> 00:13:09.926 A:middle
+your Swift and Objective-C code.
+
+00:13:10.146 --> 00:13:11.616 A:middle
+Now the second warning might be
+
+00:13:11.616 --> 00:13:14.326 A:middle
+of interest to those of you who
+
+00:13:14.326 --> 00:13:16.056 A:middle
+work with more low-level code
+
+00:13:16.056 --> 00:13:18.296 A:middle
+and who care about the way that
+
+00:13:18.296 --> 00:13:20.156 A:middle
+structures are laid out in
+
+00:13:20.156 --> 00:13:20.566 A:middle
+memory.
+
+00:13:21.846 --> 00:13:22.886 A:middle
+Let's take a look at one
+
+00:13:22.886 --> 00:13:23.406 A:middle
+structure.
+
+00:13:23.866 --> 00:13:25.776 A:middle
+So in C structures have to
+
+00:13:25.776 --> 00:13:27.766 A:middle
+follow strict layout and
+
+00:13:27.766 --> 00:13:28.816 A:middle
+alignment rules.
+
+00:13:29.866 --> 00:13:31.126 A:middle
+In this particular structure
+
+00:13:31.126 --> 00:13:32.096 A:middle
+that you see right now on the
+
+00:13:32.096 --> 00:13:34.606 A:middle
+slide the compiler has to insert
+
+00:13:34.646 --> 00:13:36.706 A:middle
+a 2-byte pattern between the
+
+00:13:36.706 --> 00:13:38.666 A:middle
+second and the third field of
+
+00:13:38.666 --> 00:13:39.246 A:middle
+the structure.
+
+00:13:40.776 --> 00:13:42.066 A:middle
+Sometimes you might want to
+
+00:13:42.066 --> 00:13:44.386 A:middle
+relax these rules and the
+
+00:13:44.386 --> 00:13:46.956 A:middle
+compiler provides a pragma pack
+
+00:13:47.066 --> 00:13:48.906 A:middle
+directive that you can use to
+
+00:13:48.906 --> 00:13:50.446 A:middle
+control the layout and the
+
+00:13:50.446 --> 00:13:51.846 A:middle
+alignment of your structures.
+
+00:13:54.196 --> 00:13:56.956 A:middle
+Now in this example we use the
+
+00:13:56.956 --> 00:13:59.906 A:middle
+pragma pack push, 1 directive to
+
+00:13:59.906 --> 00:14:03.556 A:middle
+remove this fixated layout and
+

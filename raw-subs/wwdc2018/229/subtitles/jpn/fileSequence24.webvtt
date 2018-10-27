@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.139 --> 00:24:01.708 align:start position:27% line:-1
+必要な箇所だけにしましょう
+
+00:24:02.976 --> 00:24:05.579 align:start position:32% line:-1
+次にスレッドの話です
+
+00:24:05.746 --> 00:24:10.617 align:start position:23% line:-2
+あなたのスレッドは
+複数のスレッドから見えますか？
+
+00:24:11.652 --> 00:24:16.657 align:start position:23% line:-2
+我々のコレクションは
+１つのスレッドを想定しています
+
+00:24:17.591 --> 00:24:20.260 align:start position:21% line:-1
+パフォーマンス面で有利だからです
+
+00:24:20.627 --> 00:24:23.864 align:start position:36% line:-2
+単独スレッドなら
+ロックなどの―
+
+00:24:23.964 --> 00:24:29.403 align:start position:29% line:-2
+排他制御による負担を
+心配することはありません
+
+00:24:30.204 --> 00:24:35.375 align:start position:23% line:-2
+コレクションのデベロッパのみが
+ロックや直列キューで
+
+00:24:35.475 --> 00:24:36.910 align:start position:30% line:-1
+スレッドを制御できます
+
+00:24:37.010 --> 00:24:41.248 align:start position:30% line:-2
+フレームワークより
+高い抽象化レベルでです
+
+00:24:42.616 --> 00:24:44.685 align:start position:29% line:-1
+この問題を見てみましょう
+
+00:24:45.452 --> 00:24:48.689 align:start position:20% line:-2
+sleepingBearsで配列を
+埋めるとします
+
+00:24:49.256 --> 00:24:55.362 align:start position:12% line:-2
+各クマを独自のクマとし
+DispatchQueueにアクセスします
+
+00:24:56.196 --> 00:24:58.298 align:start position:29% line:-1
+クマに寝るよう指示します
+
+00:24:58.899 --> 00:25:03.771 align:start position:21% line:-2
+並列なのでコードが
+同時に走ってるとイメージできます
+

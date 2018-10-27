@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.086 --> 00:22:00.576 A:middle
+intuitive and easiest way to
+
+00:22:00.576 --> 00:22:01.916 A:middle
+move items from one place to
+
+00:22:01.916 --> 00:22:02.326 A:middle
+another.
+
+00:22:03.296 --> 00:22:04.476 A:middle
+But, sometimes, you might have
+
+00:22:04.476 --> 00:22:05.726 A:middle
+encountered this situation
+
+00:22:05.726 --> 00:22:05.976 A:middle
+instead.
+
+00:22:10.206 --> 00:22:11.336 A:middle
+If this is something happening
+
+00:22:11.336 --> 00:22:12.656 A:middle
+with your app, then you are
+
+00:22:12.656 --> 00:22:13.796 A:middle
+sitting in the right session.
+
+00:22:13.866 --> 00:22:13.933 A:middle
+So--
+
+00:22:14.516 --> 00:22:18.046 A:middle
+[ Applause ]
+
+00:22:18.546 --> 00:22:19.616 A:middle
+Let's take a step back to
+
+00:22:19.616 --> 00:22:20.646 A:middle
+understand what's happening
+
+00:22:20.646 --> 00:22:20.916 A:middle
+here.
+
+00:22:22.656 --> 00:22:24.786 A:middle
+Drag and drop on macOS is using
+
+00:22:24.786 --> 00:22:27.186 A:middle
+NSPasteboard, and when it's
+
+00:22:27.186 --> 00:22:28.526 A:middle
+wrapped in with the pasteboard,
+
+00:22:28.686 --> 00:22:30.276 A:middle
+reading and writing data happens
+
+00:22:30.276 --> 00:22:31.866 A:middle
+on the main trade, for both the
+
+00:22:31.866 --> 00:22:33.806 A:middle
+receiving and providing apps.
+
+00:22:34.326 --> 00:22:36.976 A:middle
+In the past, since all local was
+
+00:22:36.976 --> 00:22:38.716 A:middle
+stored on local disk, you could
+
+00:22:39.206 --> 00:22:40.526 A:middle
+put the file URL's into the
+
+00:22:40.526 --> 00:22:41.066 A:middle
+pasteboard.
+
+00:22:41.466 --> 00:22:44.276 A:middle
+But, things have changed today.
+
+00:22:44.536 --> 00:22:46.816 A:middle
+Images or videos might not be on
+
+00:22:46.816 --> 00:22:48.176 A:middle
+disk if the user is using
+
+00:22:48.176 --> 00:22:50.636 A:middle
+iCloud, so Photos, we need to
+
+00:22:50.636 --> 00:22:51.906 A:middle
+download the full resolution
+
+00:22:51.906 --> 00:22:53.696 A:middle
+item first, before putting the
+
+00:22:53.696 --> 00:22:55.246 A:middle
+file URL into the pasteboard.
+
+00:22:55.716 --> 00:22:58.966 A:middle
+Also, Photos respect the privacy
+
+00:22:58.966 --> 00:23:01.566 A:middle
+settings of drag and drop, so if
+

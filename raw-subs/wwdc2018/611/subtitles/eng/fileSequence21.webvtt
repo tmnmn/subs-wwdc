@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.196 --> 00:21:01.706 A:middle
+As a result, we further
+
+00:21:01.706 --> 00:21:03.596 A:middle
+increased the amount of GPU time
+
+00:21:03.676 --> 00:21:04.916 A:middle
+that you had for your frame.
+
+00:21:07.546 --> 00:21:09.856 A:middle
+But, by splitting this work into
+
+00:21:09.856 --> 00:21:13.146 A:middle
+multiple GPUs, we now get to the
+
+00:21:13.256 --> 00:21:14.926 A:middle
+point where we need a way to
+
+00:21:14.926 --> 00:21:16.886 A:middle
+synchronize those workloads with
+
+00:21:16.886 --> 00:21:17.446 A:middle
+each other.
+
+00:21:22.676 --> 00:21:24.426 A:middle
+So today we introduce new
+
+00:21:24.426 --> 00:21:26.006 A:middle
+synchronization parameters to
+
+00:21:26.066 --> 00:21:27.316 A:middle
+deal exactly with such
+
+00:21:27.316 --> 00:21:28.086 A:middle
+situation.
+
+00:21:28.816 --> 00:21:31.196 A:middle
+MTL Events can now be used to
+
+00:21:31.196 --> 00:21:33.616 A:middle
+synchronize GPU work in scope of
+
+00:21:33.616 --> 00:21:35.566 A:middle
+single GPU across different
+
+00:21:35.626 --> 00:21:38.826 A:middle
+Metal cues and MTL Shared Events
+
+00:21:39.276 --> 00:21:41.436 A:middle
+extends this functionality by
+
+00:21:41.436 --> 00:21:42.886 A:middle
+allowing it to synchronize
+
+00:21:42.886 --> 00:21:44.816 A:middle
+workloads across different GPUs
+
+00:21:44.986 --> 00:21:46.176 A:middle
+and even across different
+
+00:21:46.236 --> 00:21:46.796 A:middle
+processes.
+
+00:21:49.136 --> 00:21:50.996 A:middle
+So here we will go through the
+
+00:21:51.106 --> 00:21:52.426 A:middle
+simple code example.
+
+00:21:53.546 --> 00:21:55.406 A:middle
+We have our Mac, with attached
+
+00:21:55.406 --> 00:21:57.486 A:middle
+eGPU through Thunderbolt 3
+
+00:21:57.486 --> 00:21:58.166 A:middle
+connection.
+
+00:21:58.266 --> 00:22:00.936 A:middle
+This eGPU will be our primary
+

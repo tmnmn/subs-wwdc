@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.366 --> 00:31:01.256 A:middle
+we're not losing any features in
+
+00:31:01.836 --> 00:31:02.706 A:middle
+the data.
+
+00:31:03.276 --> 00:31:04.446 A:middle
+And then, this new
+
+00:31:04.446 --> 00:31:06.426 A:middle
+representation of the data, is
+
+00:31:06.426 --> 00:31:08.116 A:middle
+passed to LSTM primitive as a
+
+00:31:08.116 --> 00:31:09.306 A:middle
+sequence of lengths 20.
+
+00:31:10.146 --> 00:31:11.826 A:middle
+And we ran LSTM for 20
+
+00:31:11.826 --> 00:31:12.376 A:middle
+iterations.
+
+00:31:12.936 --> 00:31:14.506 A:middle
+So, our LSTM is operating on a
+
+00:31:14.506 --> 00:31:16.106 A:middle
+sequence of lengths 20 instead
+
+00:31:16.106 --> 00:31:18.246 A:middle
+of 2,000, so it's operating on a
+
+00:31:18.246 --> 00:31:19.126 A:middle
+higher-level feature
+
+00:31:19.126 --> 00:31:20.416 A:middle
+representation of the data.
+
+00:31:21.036 --> 00:31:24.056 A:middle
+And then we have additional CNN
+
+00:31:24.056 --> 00:31:26.796 A:middle
+primitives that we find
+
+00:31:26.906 --> 00:31:28.326 A:middle
+high-level features in the data.
+
+00:31:29.366 --> 00:31:30.626 A:middle
+And the last primitive in this
+
+00:31:30.626 --> 00:31:32.846 A:middle
+network is the SoftMax primitive
+
+00:31:33.236 --> 00:31:34.906 A:middle
+which generates probabilities
+
+00:31:34.906 --> 00:31:35.896 A:middle
+for the different activity
+
+00:31:35.896 --> 00:31:37.306 A:middle
+classes, which is the output of
+
+00:31:37.306 --> 00:31:37.756 A:middle
+the network.
+
+00:31:38.666 --> 00:31:39.746 A:middle
+And now, let's take a look at
+
+00:31:39.746 --> 00:31:40.896 A:middle
+how to train this network.
+
+00:31:42.346 --> 00:31:44.166 A:middle
+So, we again need a loss
+
+00:31:44.166 --> 00:31:45.626 A:middle
+primitive, which takes the
+
+00:31:45.626 --> 00:31:46.886 A:middle
+output of the network and the
+
+00:31:46.886 --> 00:31:47.906 A:middle
+labels as input.
+
+00:31:48.386 --> 00:31:49.936 A:middle
+And then we need the second half
+
+00:31:49.936 --> 00:31:50.296 A:middle
+of the graph.
+
+00:31:50.926 --> 00:31:52.146 A:middle
+So, in the second half of the
+
+00:31:52.146 --> 00:31:53.956 A:middle
+graph, we again have gradient
+
+00:31:53.956 --> 00:31:55.496 A:middle
+primitives for the corresponding
+
+00:31:55.496 --> 00:31:57.086 A:middle
+forward primitives, including
+
+00:31:57.146 --> 00:31:58.176 A:middle
+the LSTM primitive.
+
+00:31:59.036 --> 00:32:02.216 A:middle
+And now, for training, we do the
+

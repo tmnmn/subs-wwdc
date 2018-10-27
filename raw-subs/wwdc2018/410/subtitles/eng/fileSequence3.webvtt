@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.346 --> 00:03:00.516 A:middle
+bunch of performance tools at
+
+00:03:00.516 --> 00:03:00.946 A:middle
+once.
+
+00:03:01.616 --> 00:03:02.966 A:middle
+Now the major difference between
+
+00:03:02.966 --> 00:03:04.646 A:middle
+then and now is that back then
+
+00:03:04.716 --> 00:03:05.516 A:middle
+the infrastructure of
+
+00:03:05.516 --> 00:03:06.816 A:middle
+Instruments didn't really do a
+
+00:03:06.816 --> 00:03:08.626 A:middle
+lot to help us write instruments
+
+00:03:08.626 --> 00:03:08.976 A:middle
+quickly.
+
+00:03:09.746 --> 00:03:11.606 A:middle
+And at the time, that was okay
+
+00:03:11.606 --> 00:03:12.866 A:middle
+because we had already inherited
+
+00:03:12.916 --> 00:03:14.526 A:middle
+quite a few assets and
+
+00:03:14.526 --> 00:03:15.766 A:middle
+performance tools that we
+
+00:03:15.766 --> 00:03:16.336 A:middle
+already had.
+
+00:03:16.796 --> 00:03:17.956 A:middle
+They all had their own recording
+
+00:03:17.956 --> 00:03:18.726 A:middle
+technology and their own
+
+00:03:18.726 --> 00:03:20.436 A:middle
+analysis logic and all we had to
+
+00:03:20.436 --> 00:03:22.196 A:middle
+do was build a custom storage
+
+00:03:22.196 --> 00:03:23.266 A:middle
+mechanism to get the data in the
+
+00:03:23.266 --> 00:03:25.506 A:middle
+trace and a custom UI to help
+
+00:03:25.506 --> 00:03:26.806 A:middle
+integrate it with the rest of
+
+00:03:27.466 --> 00:03:27.786 A:middle
+the app.
+
+00:03:27.886 --> 00:03:29.816 A:middle
+Now over time, the maintenance
+
+00:03:29.816 --> 00:03:31.126 A:middle
+costs of Instruments and
+
+00:03:31.126 --> 00:03:32.736 A:middle
+maintaining this model shot up.
+
+00:03:33.576 --> 00:03:34.626 A:middle
+And the reason for that was
+
+00:03:34.626 --> 00:03:36.526 A:middle
+every time we wanted to add a
+
+00:03:36.526 --> 00:03:37.876 A:middle
+new feature we had to modify
+
+00:03:37.876 --> 00:03:39.546 A:middle
+seven custom UIs and seven
+
+00:03:39.546 --> 00:03:41.846 A:middle
+custom storage mechanisms and
+
+00:03:42.196 --> 00:03:43.746 A:middle
+that's not the model we wanted
+
+00:03:43.746 --> 00:03:44.676 A:middle
+you guys to inherent.
+
+00:03:44.676 --> 00:03:45.626 A:middle
+We didn't want you to inherit
+
+00:03:45.626 --> 00:03:46.756 A:middle
+this kind of maintenance costs.
+
+00:03:47.216 --> 00:03:48.516 A:middle
+So before we even talked about
+
+00:03:48.516 --> 00:03:49.646 A:middle
+doing a custom Instruments'
+
+00:03:49.646 --> 00:03:51.236 A:middle
+feature, we needed to solve that
+
+00:03:51.236 --> 00:03:52.776 A:middle
+first and I think we did.
+
+00:03:53.586 --> 00:03:54.556 A:middle
+So in the new version of
+
+00:03:54.556 --> 00:03:56.186 A:middle
+Instruments, instead of having
+
+00:03:56.186 --> 00:03:57.516 A:middle
+custom UIs and custom storage
+
+00:03:57.516 --> 00:03:58.906 A:middle
+mechanisms, we have two
+
+00:03:58.906 --> 00:04:00.456 A:middle
+standardized components and
+

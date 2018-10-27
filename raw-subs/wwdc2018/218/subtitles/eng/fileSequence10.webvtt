@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.346 --> 00:10:00.796 A:middle
+NSColor for a CG color.
+
+00:10:01.836 --> 00:10:03.436 A:middle
+And if our color changes,
+
+00:10:03.606 --> 00:10:05.356 A:middle
+instead of updating our layer
+
+00:10:05.356 --> 00:10:07.306 A:middle
+right there, we'll just set the
+
+00:10:07.386 --> 00:10:08.946 A:middle
+needsDisplay property to true.
+
+00:10:09.426 --> 00:10:10.776 A:middle
+AppKit will come back around
+
+00:10:10.856 --> 00:10:12.446 A:middle
+automatically and call
+
+00:10:12.446 --> 00:10:12.906 A:middle
+updateLayer.
+
+00:10:14.336 --> 00:10:15.076 A:middle
+So, let's run it again.
+
+00:10:16.536 --> 00:10:17.426 A:middle
+Still looks good in light.
+
+00:10:17.426 --> 00:10:21.496 A:middle
+And now it uses the correct
+
+00:10:21.496 --> 00:10:22.896 A:middle
+color in dark just like we
+
+00:10:22.896 --> 00:10:24.706 A:middle
+wanted, so that's great.
+
+00:10:25.976 --> 00:10:27.216 A:middle
+Now, what if we want to do
+
+00:10:27.216 --> 00:10:28.146 A:middle
+something a little more
+
+00:10:28.146 --> 00:10:29.826 A:middle
+complicated that might not be
+
+00:10:29.826 --> 00:10:31.486 A:middle
+expressible just with dynamic
+
+00:10:31.706 --> 00:10:32.576 A:middle
+colors or images?
+
+00:10:33.656 --> 00:10:35.796 A:middle
+For example, maybe I would like
+
+00:10:35.796 --> 00:10:38.546 A:middle
+to add this nice white glow
+
+00:10:38.936 --> 00:10:40.416 A:middle
+behind Chloe's beautiful face
+
+00:10:40.416 --> 00:10:42.206 A:middle
+here, but only in Dark Mode.
+
+00:10:43.166 --> 00:10:43.796 A:middle
+How would I do that?
+
+00:10:44.806 --> 00:10:46.476 A:middle
+Well, for cases like that, we
+
+00:10:46.476 --> 00:10:49.166 A:middle
+have new API in Mojave that you
+
+00:10:49.166 --> 00:10:50.876 A:middle
+can use to match against your
+
+00:10:50.876 --> 00:10:51.686 A:middle
+view's appearance.
+
+00:10:51.786 --> 00:10:52.686 A:middle
+Let me show you how it works.
+
+00:10:53.856 --> 00:10:56.676 A:middle
+So, in this view, I'll override
+
+00:10:56.676 --> 00:10:58.846 A:middle
+the layout method and I'll
+
+00:10:58.846 --> 00:11:00.916 A:middle
+switch on effectiveAppearance
+

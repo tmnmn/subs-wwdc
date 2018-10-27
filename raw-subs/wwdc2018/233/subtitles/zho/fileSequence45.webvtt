@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:00.567 --> 00:45:03.670 align:middle line:-2
+我们可以获得来自以下对象的输出
+即所有正在呈现的viewController
+
+00:45:03.904 --> 00:45:07.941 align:middle line:-2
+我们提供的viewController
+我们的parentViewController
+
+00:45:08.008 --> 00:45:12.012 align:middle line:-2
+和childViewController
+甚至我们的presentationController
+
+00:45:12.279 --> 00:45:13.714 align:middle line:-1
+这简直是是控制器大荟萃
+
+00:45:14.448 --> 00:45:17.518 align:middle line:-2
+所以让我们在截屏UI中
+运行printHierarchy
+
+00:45:19.453 --> 00:45:22.222 align:middle line:-2
+这里我们可以看到
+我们的viewController层次结构
+
+00:45:22.523 --> 00:45:25.459 align:middle line:-2
+而当我们检查发生问题的
+viewController时
+
+00:45:25.926 --> 00:45:28.662 align:middle line:-2
+我们可以看到
+它卡在了appearing状态
+
+00:45:29.263 --> 00:45:32.699 align:middle line:-2
+所以我们错过了回调
+因此我们需要查看app中
+
+00:45:32.766 --> 00:45:36.703 align:middle line:-2
+调用此回调的位置
+然后我们发现了问题
+
+00:45:37.504 --> 00:45:42.543 align:middle line:-2
+太棒了 通过使用这些方法
+你可以识别视图和视图控制器问题
+
+00:45:43.210 --> 00:45:46.280 align:middle line:-1
+但有时你的app存在更基本的问题
+
+00:45:47.080 --> 00:45:50.083 align:middle line:-2
+为此我们可以使用一些
+我们为你准备的
+
+00:45:50.150 --> 00:45:51.251 align:middle line:-1
+很棒的状态调试技巧
+
+00:45:51.919 --> 00:45:57.391 align:middle line:0
+LLDB的表达式命令可以让你
+在调试器中运行任意代码
+
+00:45:57.958 --> 00:46:01.595 align:middle line:0
+想想这点 你在代码编辑器中
+可以运行的任何代码
+

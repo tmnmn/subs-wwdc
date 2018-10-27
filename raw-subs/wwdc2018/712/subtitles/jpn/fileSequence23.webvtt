@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:55.676 --> 00:23:01.115 align:start position:27% line:-2
+ボックス内の物体は
+バナナだと表示されています
+
+00:23:01.782 --> 00:23:03.317 align:start position:32% line:-1
+これはコーヒーですね
+
+00:23:04.117 --> 00:23:05.786 align:start position:43% line:-1
+(拍手)
+
+00:23:15.996 --> 00:23:18.198 align:start position:36% line:-1
+では まとめます
+
+00:23:19.800 --> 00:23:23.937 align:start position:27% line:-2
+まず画像とアノテーションを
+SFrame形式にロード
+
+00:23:24.037 --> 00:23:27.007 align:start position:36% line:-2
+関数を呼び出して
+データを結合
+
+00:23:27.174 --> 00:23:31.078 align:start position:29% line:-2
+Exploreメソッドで
+対話式にデータを探す
+
+00:23:31.712 --> 00:23:36.617 align:start position:32% line:-2
+画像と境界ボックスと
+ラベルのデータから
+
+00:23:36.717 --> 00:23:40.320 align:start position:29% line:-2
+高レベルのAPIを使って
+モデルを作成
+
+00:23:40.787 --> 00:23:46.360 align:start position:27% line:-2
+モデルの評価では 質的には
+アウトプットを抜き取り検査
+
+00:23:46.460 --> 00:23:51.832 align:start position:30% line:-2
+量的には タスクに使う
+メトリックを求めました
+
+00:23:52.232 --> 00:23:56.537 align:start position:21% line:-2
+最後にモデルを
+Core ML形式でエクスポート
+
+00:23:58.605 --> 00:24:04.511 align:start position:12% line:-2
+ここからはTuri Create 5.0の
+新機能を紹介します
+

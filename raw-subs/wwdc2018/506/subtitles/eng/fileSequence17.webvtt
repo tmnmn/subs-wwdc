@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.646 --> 00:17:00.216 A:middle
+those same 3 calls in batch.
+
+00:17:00.706 --> 00:17:01.886 A:middle
+Here we're adding those same 4
+
+00:17:01.886 --> 00:17:03.546 A:middle
+items as the top example, but
+
+00:17:03.846 --> 00:17:04.646 A:middle
+we're going to do it in a single
+
+00:17:04.646 --> 00:17:05.146 A:middle
+network call.
+
+00:17:05.715 --> 00:17:11.476 A:middle
+So let's look at events next.
+
+00:17:11.636 --> 00:17:12.945 A:middle
+MusicKit's going to fire events
+
+00:17:13.256 --> 00:17:14.616 A:middle
+that you use to drive your UI
+
+00:17:14.616 --> 00:17:14.806 A:middle
+from.
+
+00:17:15.185 --> 00:17:16.846 A:middle
+We do this because MusicKit
+
+00:17:16.955 --> 00:17:18.445 A:middle
+needs to own the audio element
+
+00:17:18.636 --> 00:17:19.856 A:middle
+in order to do that full song
+
+00:17:19.856 --> 00:17:20.826 A:middle
+playback.
+
+00:17:21.376 --> 00:17:22.606 A:middle
+Here we're going to use
+
+00:17:22.766 --> 00:17:24.656 A:middle
+addEventListener, which is going
+
+00:17:24.656 --> 00:17:26.016 A:middle
+to be a very familiar pattern if
+
+00:17:26.016 --> 00:17:27.146 A:middle
+you've done DOM scripting in the
+
+00:17:27.146 --> 00:17:27.606 A:middle
+past.
+
+00:17:28.856 --> 00:17:30.096 A:middle
+We're going to dive into just a
+
+00:17:30.096 --> 00:17:31.256 A:middle
+couple of the events to give you
+
+00:17:31.256 --> 00:17:31.766 A:middle
+an example.
+
+00:17:34.756 --> 00:17:36.756 A:middle
+The mediaItem WillChange and the
+
+00:17:36.756 --> 00:17:38.536 A:middle
+mediaItem DidChange events fire
+
+00:17:38.536 --> 00:17:39.766 A:middle
+when the Now Playing item in the
+
+00:17:39.766 --> 00:17:41.386 A:middle
+queue changes, when the first
+
+00:17:41.386 --> 00:17:42.586 A:middle
+song you're playing transitions
+
+00:17:42.586 --> 00:17:43.326 A:middle
+to the second song.
+
+00:17:44.266 --> 00:17:45.646 A:middle
+You can use this to trigger an
+
+00:17:45.646 --> 00:17:47.726 A:middle
+update to your UI that shows the
+
+00:17:47.726 --> 00:17:48.696 A:middle
+song that's currently playing.
+
+00:17:49.186 --> 00:17:53.106 A:middle
+When you actually begin
+
+00:17:53.106 --> 00:17:54.616 A:middle
+playback, the playbackState
+
+00:17:54.686 --> 00:17:56.096 A:middle
+changes events are fired.
+
+00:17:56.266 --> 00:17:57.326 A:middle
+Here we have a will and a did
+
+00:17:57.326 --> 00:17:58.686 A:middle
+change event again.
+
+00:17:59.616 --> 00:18:01.586 A:middle
+For example, you can know when a
+

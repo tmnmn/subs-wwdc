@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.856 --> 00:05:01.386 A:middle
+another subview here.
+
+00:05:01.906 --> 00:05:03.726 A:middle
+And along with that, it will
+
+00:05:03.726 --> 00:05:05.516 A:middle
+have a view controller because a
+
+00:05:05.516 --> 00:05:06.456 A:middle
+view controller is where we
+
+00:05:06.456 --> 00:05:07.526 A:middle
+actually have the property that
+
+00:05:07.526 --> 00:05:09.006 A:middle
+allows you to add additional
+
+00:05:09.006 --> 00:05:09.606 A:middle
+insets.
+
+00:05:10.106 --> 00:05:11.346 A:middle
+And that property is called
+
+00:05:12.826 --> 00:05:14.616 A:middle
+additional safe area insets.
+
+00:05:15.496 --> 00:05:16.336 A:middle
+We're going to go ahead and
+
+00:05:16.336 --> 00:05:17.906 A:middle
+inherit the insets we got from
+
+00:05:17.906 --> 00:05:18.316 A:middle
+our parent.
+
+00:05:19.446 --> 00:05:21.116 A:middle
+Add those additional safe area
+
+00:05:21.116 --> 00:05:22.366 A:middle
+insets to this view.
+
+00:05:23.026 --> 00:05:24.616 A:middle
+And finally construct the final
+
+00:05:24.616 --> 00:05:26.736 A:middle
+safe area that let-- , layout
+
+00:05:27.226 --> 00:05:27.326 A:middle
+guide.
+
+00:05:28.196 --> 00:05:29.506 A:middle
+What other things might you want
+
+00:05:29.506 --> 00:05:30.646 A:middle
+to know about how safe area
+
+00:05:30.646 --> 00:05:31.816 A:middle
+behaves in your application?
+
+00:05:32.636 --> 00:05:33.796 A:middle
+Well, let's take a look at
+
+00:05:33.796 --> 00:05:34.576 A:middle
+another example.
+
+00:05:35.136 --> 00:05:37.086 A:middle
+Here we've got one view safely
+
+00:05:37.086 --> 00:05:38.366 A:middle
+inside of the safe area of its
+
+00:05:38.476 --> 00:05:38.776 A:middle
+parent.
+
+00:05:39.356 --> 00:05:40.676 A:middle
+So that view safe area, of
+
+00:05:40.726 --> 00:05:42.276 A:middle
+course, encapsulates the entire
+
+00:05:42.276 --> 00:05:43.066 A:middle
+region of that view.
+
+00:05:43.856 --> 00:05:45.186 A:middle
+And we'll move it closer to one
+
+00:05:45.186 --> 00:05:46.766 A:middle
+edge and as you might expect,
+
+00:05:46.766 --> 00:05:47.756 A:middle
+we're not going to gain a safe
+
+00:05:47.756 --> 00:05:49.406 A:middle
+area because we haven't left the
+
+00:05:49.406 --> 00:05:50.706 A:middle
+safe area of our parent yet.
+
+00:05:51.096 --> 00:05:53.196 A:middle
+We'll move a little bit further
+
+00:05:53.196 --> 00:05:55.236 A:middle
+out, and you'll see that the
+
+00:05:55.236 --> 00:05:56.996 A:middle
+bottom inset on that safe area
+
+00:05:56.996 --> 00:05:57.966 A:middle
+now grows a little bit.
+
+00:05:58.236 --> 00:05:59.486 A:middle
+It takes up a part where it
+
+00:05:59.486 --> 00:06:01.716 A:middle
+overlaps, where it extends
+

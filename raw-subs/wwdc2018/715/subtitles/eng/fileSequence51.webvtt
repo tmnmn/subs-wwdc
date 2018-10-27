@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:59.726 --> 00:51:00.836 A:middle
+It will indicate that there's a
+
+00:51:00.836 --> 00:51:02.436 A:middle
+lack of connectivity or the
+
+00:51:02.476 --> 00:51:04.166 A:middle
+connectivity changed while you
+
+00:51:04.166 --> 00:51:05.486 A:middle
+were in the middle of doing DNS
+
+00:51:05.636 --> 00:51:06.096 A:middle
+or TCP.
+
+00:51:06.096 --> 00:51:08.996 A:middle
+We really encourage you please
+
+00:51:08.996 --> 00:51:11.106 A:middle
+avoid using APIs like
+
+00:51:11.206 --> 00:51:13.426 A:middle
+reachability to check the
+
+00:51:13.426 --> 00:51:14.496 A:middle
+network state before you
+
+00:51:14.496 --> 00:51:15.466 A:middle
+establish your connection.
+
+00:51:16.306 --> 00:51:17.306 A:middle
+That will lead to race
+
+00:51:17.376 --> 00:51:19.016 A:middle
+conditions and may not provide
+
+00:51:19.016 --> 00:51:20.126 A:middle
+an accurate picture of what's
+
+00:51:20.126 --> 00:51:21.566 A:middle
+actually happening in the
+
+00:51:21.566 --> 00:51:21.996 A:middle
+connection.
+
+00:51:22.536 --> 00:51:25.066 A:middle
+And if you need to make sure
+
+00:51:25.066 --> 00:51:26.396 A:middle
+that your connection does not
+
+00:51:26.396 --> 00:51:27.966 A:middle
+establish over a cellular
+
+00:51:27.966 --> 00:51:31.516 A:middle
+network, don't check up front is
+
+00:51:31.516 --> 00:51:32.516 A:middle
+the device currently on a
+
+00:51:32.516 --> 00:51:33.976 A:middle
+cellular network, because that
+
+00:51:33.976 --> 00:51:34.716 A:middle
+could change.
+
+00:51:35.486 --> 00:51:36.846 A:middle
+Simply restrict the interface
+
+00:51:36.846 --> 00:51:38.716 A:middle
+types that you want to use using
+
+00:51:38.716 --> 00:51:40.046 A:middle
+the NWParameters.
+
+00:51:41.266 --> 00:51:42.316 A:middle
+So once you've started your
+
+00:51:42.316 --> 00:51:44.006 A:middle
+connection and you're in the
+
+00:51:44.006 --> 00:51:45.506 A:middle
+ready state, there are a series
+
+00:51:45.506 --> 00:51:47.006 A:middle
+of events that we will give you
+
+00:51:47.476 --> 00:51:49.176 A:middle
+to let you know when the network
+
+00:51:49.176 --> 00:51:49.976 A:middle
+has changed.
+
+00:51:51.336 --> 00:51:53.006 A:middle
+The first one is called
+
+00:51:53.006 --> 00:51:54.236 A:middle
+connection viability.
+
+00:51:55.586 --> 00:51:58.186 A:middle
+So viability means that your
+
+00:51:58.186 --> 00:51:59.646 A:middle
+connection is able to send and
+
+00:51:59.646 --> 00:52:02.306 A:middle
+receive data out the interface
+

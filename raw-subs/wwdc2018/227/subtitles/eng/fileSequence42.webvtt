@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:59.396 --> 00:42:00.776 A:middle
+of that capability spectrum.
+
+00:42:01.076 --> 00:42:03.426 A:middle
+And then on the lower end you
+
+00:42:03.426 --> 00:42:05.226 A:middle
+put a still image or a very
+
+00:42:05.226 --> 00:42:06.846 A:middle
+simple image sequence that's not
+
+00:42:06.846 --> 00:42:08.016 A:middle
+going to take any time or
+
+00:42:08.016 --> 00:42:09.316 A:middle
+excessive resources on those
+
+00:42:09.316 --> 00:42:10.906 A:middle
+devices and still give those
+
+00:42:10.906 --> 00:42:11.866 A:middle
+customers running those older
+
+00:42:11.866 --> 00:42:13.616 A:middle
+devices a nice and responsive
+
+00:42:13.616 --> 00:42:14.436 A:middle
+user experience.
+
+00:42:16.076 --> 00:42:17.176 A:middle
+So that's one example.
+
+00:42:17.176 --> 00:42:18.566 A:middle
+Another more intriguing example
+
+00:42:18.566 --> 00:42:20.656 A:middle
+is plist, well why I put a plist
+
+00:42:20.656 --> 00:42:21.546 A:middle
+in an Asset Catalog, it seems
+
+00:42:21.546 --> 00:42:22.536 A:middle
+like there's much better ways to
+
+00:42:22.536 --> 00:42:24.156 A:middle
+deploy plists than Asset
+
+00:42:24.156 --> 00:42:24.546 A:middle
+Catalogs.
+
+00:42:24.546 --> 00:42:26.096 A:middle
+Well when you use it in
+
+00:42:26.096 --> 00:42:28.226 A:middle
+conjunction with NSDataAsset for
+
+00:42:28.226 --> 00:42:29.386 A:middle
+example you could consider using
+
+00:42:29.386 --> 00:42:31.146 A:middle
+a plist to tune your application
+
+00:42:32.246 --> 00:42:33.396 A:middle
+with different configuration
+
+00:42:33.396 --> 00:42:35.196 A:middle
+parameters that scale according
+
+00:42:35.196 --> 00:42:36.566 A:middle
+to the performance class that
+
+00:42:36.566 --> 00:42:39.086 A:middle
+you cataloged that plist in, in
+
+00:42:39.086 --> 00:42:40.026 A:middle
+your NSDataAsset.
+
+00:42:40.446 --> 00:42:42.266 A:middle
+So for example if you have an
+
+00:42:42.266 --> 00:42:45.596 A:middle
+app that renders a crowd for
+
+00:42:45.596 --> 00:42:47.246 A:middle
+example you could set the size
+
+00:42:47.246 --> 00:42:48.266 A:middle
+of the crowd based on the
+
+00:42:48.266 --> 00:42:49.566 A:middle
+capability of the underlying
+
+00:42:49.566 --> 00:42:52.226 A:middle
+hardware and your code would
+
+00:42:52.226 --> 00:42:53.906 A:middle
+automatically be self-tuned
+
+00:42:53.906 --> 00:42:55.436 A:middle
+based on what device it's
+
+00:42:55.436 --> 00:42:56.476 A:middle
+actually running on at the
+
+00:42:56.476 --> 00:42:56.816 A:middle
+moment.
+
+00:42:57.756 --> 00:42:58.856 A:middle
+So that's an interesting idea
+
+00:42:58.856 --> 00:43:00.056 A:middle
+about how to use performance
+

@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.019 --> 00:12:02.523 align:middle line:-2
+UIViewController是一个
+聚焦环境的很棒的例子
+
+00:12:03.457 --> 00:12:05.726 align:middle line:-2
+接下来我们有
+UIFocusItem
+
+00:12:06.360 --> 00:12:08.896 align:middle line:-2
+这个原型继承
+FocusEnvironment
+
+00:12:09.162 --> 00:12:13.300 align:middle line:-2
+并添加了焦点项的功能
+以使其能够真正聚焦
+
+00:12:13.600 --> 00:12:19.239 align:middle line:-2
+UIKit的UIView和SpriteKit的
+SKNode是焦点项的好例子
+
+00:12:19.940 --> 00:12:22.910 align:middle line:-2
+最后我们还有
+UIFocusSystem
+
+00:12:23.143 --> 00:12:25.445 align:middle line:-1
+它提供了一个著名而又有用的功能
+
+00:12:25.646 --> 00:12:30.250 align:middle line:-2
+即在聚焦交互过程中
+能够注册自定义语音
+
+00:12:31.251 --> 00:12:34.188 align:middle line:-1
+要了解更多关于如何使用这些组件
+
+00:12:34.388 --> 00:12:35.656 align:middle line:-1
+以及调试聚焦的信息
+
+00:12:35.889 --> 00:12:37.558 align:middle line:-1
+我强烈推荐你们观看
+
+00:12:37.724 --> 00:12:41.261 align:middle line:-2
+去年的一场演讲
+“tvOS 11中的聚焦交互”
+
+00:12:42.095 --> 00:12:47.167 align:middle line:-2
+我要向聚焦引擎中引入一些新组件
+对此我感到万分激动
+
+00:12:47.734 --> 00:12:50.137 align:middle line:-1
+首先从tvOS 12开始讲
+
+00:12:50.571 --> 00:12:54.107 align:middle line:-2
+我们扩展了
+FocusSystem对象的功能
+
+00:12:54.608 --> 00:12:57.644 align:middle line:-2
+你可以在指定环境下
+取回一个FocusSystem
+
+00:12:57.911 --> 00:13:01.548 align:middle line:-2
+并从FocusSystem外
+获取当前的焦点项
+

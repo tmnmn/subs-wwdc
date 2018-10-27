@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.976 --> 00:28:00.976 A:middle
+transition between modes.
+
+00:28:01.776 --> 00:28:03.196 A:middle
+It also means it can apply
+
+00:28:03.416 --> 00:28:05.116 A:middle
+ambient lighting conditions to
+
+00:28:05.116 --> 00:28:06.836 A:middle
+the shadow as the lighting
+
+00:28:06.836 --> 00:28:07.616 A:middle
+changes around you.
+
+00:28:08.816 --> 00:28:10.606 A:middle
+Because of this, don't bake a
+
+00:28:10.606 --> 00:28:12.166 A:middle
+contact shadow into the models
+
+00:28:12.166 --> 00:28:12.676 A:middle
+you provide.
+
+00:28:13.426 --> 00:28:14.626 A:middle
+If you do, you'll end up with
+
+00:28:14.626 --> 00:28:14.976 A:middle
+two shadows.
+
+00:28:17.436 --> 00:28:19.196 A:middle
+Note also that the first frame
+
+00:28:19.196 --> 00:28:20.846 A:middle
+of any animation is used to
+
+00:28:20.846 --> 00:28:22.326 A:middle
+create the shadow for a model,
+
+00:28:22.996 --> 00:28:24.596 A:middle
+and sometimes this means it's
+
+00:28:24.596 --> 00:28:25.626 A:middle
+important to choose the right
+
+00:28:25.626 --> 00:28:26.176 A:middle
+first frame.
+
+00:28:26.686 --> 00:28:29.206 A:middle
+We'll see an example.
+
+00:28:29.206 --> 00:28:30.556 A:middle
+Here, I have a model of a
+
+00:28:30.556 --> 00:28:32.536 A:middle
+Newton's cradle, a desktop type,
+
+00:28:33.096 --> 00:28:34.476 A:middle
+and it has a swinging animation,
+
+00:28:34.476 --> 00:28:35.716 A:middle
+a transform animation to bring
+
+00:28:35.716 --> 00:28:36.256 A:middle
+it to life.
+
+00:28:36.356 --> 00:28:39.356 A:middle
+Now, if we freeze this with its
+
+00:28:39.356 --> 00:28:41.176 A:middle
+first frame, here the first
+
+00:28:41.176 --> 00:28:42.046 A:middle
+frame has one of the ball
+
+00:28:42.046 --> 00:28:43.796 A:middle
+bearings out to the side, we can
+
+00:28:43.796 --> 00:28:44.586 A:middle
+see there's a problem.
+
+00:28:45.716 --> 00:28:47.106 A:middle
+The shadow we've generated from
+
+00:28:47.106 --> 00:28:48.716 A:middle
+this first frame also has that
+
+00:28:48.746 --> 00:28:49.986 A:middle
+ball bearing out to the side.
+
+00:28:50.966 --> 00:28:52.546 A:middle
+And so, if we animate to the
+
+00:28:52.546 --> 00:28:54.076 A:middle
+other extreme of this animation,
+
+00:28:54.696 --> 00:28:55.606 A:middle
+at this point, the shadow
+
+00:28:55.606 --> 00:28:58.486 A:middle
+doesn't really make sense.
+
+00:28:58.656 --> 00:29:00.686 A:middle
+Now, because animations loop, we
+

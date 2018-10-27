@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:58.025 --> 00:46:01.762 align:start position:0% line:-2
+ARWorldTrackingConfiguration
+の設定をします
+
+00:46:01.862 --> 00:46:04.598 align:start position:20% line:-2
+detectionObjectsの
+プロパティを指定
+
+00:46:05.599 --> 00:46:10.738 align:start position:30% line:-2
+構成の設定が済んだら
+セッションを開始します
+
+00:46:11.271 --> 00:46:13.040 align:start position:34% line:-1
+イメージ検出と同様
+
+00:46:13.140 --> 00:46:16.243 align:start position:18% line:-2
+ARSessionの作動中は
+更新ごとにARFrameが得られます
+
+00:46:16.510 --> 00:46:17.978 align:start position:41% line:-1
+この場合―
+
+00:46:18.479 --> 00:46:21.014 align:start position:30% line:-2
+シーンにオブジェクトが
+検出されると
+
+00:46:21.115 --> 00:46:26.720 align:start position:14% line:-2
+ARFrameの一部として
+ARObjectAnchorが得られます
+
+00:46:28.722 --> 00:46:32.860 align:start position:21% line:-2
+このようなARオブジェクトは
+ARAnchorのサブクラスです
+
+00:46:32.960 --> 00:46:37.865 align:start position:20% line:-2
+従って 位置･向き･6DoFを表す
+transformを持ちます
+
+00:46:38.098 --> 00:46:42.336 align:start position:16% line:-2
+ARReferenceObjectへの
+参照点が提示されるため
+
+00:46:42.436 --> 00:46:45.205 align:start position:30% line:-2
+どのオブジェクトを
+検出したかが分かります
+
+00:46:46.173 --> 00:46:48.108 align:start position:41% line:-1
+この機能は
+
+00:46:49.209 --> 00:46:52.579 align:start position:32% line:-2
+３行の簡単なコードで
+実装できます
+
+00:46:52.913 --> 00:46:56.483 align:start position:0% line:-2
+ARWorldTrackingConfiguration
+の構成を作成
+
+00:46:56.617 --> 00:47:00.120 align:start position:29% line:-2
+検出したいオブジェクトを
+指定します
+

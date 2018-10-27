@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.826 --> 00:37:00.106 A:middle
+Mode, everything just works.
+
+00:37:00.106 --> 00:37:01.026 A:middle
+We don't have to do anything
+
+00:37:01.026 --> 00:37:04.466 A:middle
+special to support that.
+
+00:37:04.466 --> 00:37:05.846 A:middle
+One final note on selections.
+
+00:37:06.906 --> 00:37:08.736 A:middle
+The selection material that you
+
+00:37:08.736 --> 00:37:10.966 A:middle
+commonly see in sidebars, menus,
+
+00:37:10.966 --> 00:37:13.696 A:middle
+and popovers now follows the
+
+00:37:13.696 --> 00:37:15.086 A:middle
+accent color preference on
+
+00:37:15.086 --> 00:37:15.546 A:middle
+Mojave.
+
+00:37:16.186 --> 00:37:17.226 A:middle
+And what that means is that if
+
+00:37:17.226 --> 00:37:18.446 A:middle
+you're drawing a custom blue
+
+00:37:18.446 --> 00:37:20.116 A:middle
+selection, it's not going to fit
+
+00:37:20.116 --> 00:37:20.326 A:middle
+in.
+
+00:37:21.426 --> 00:37:22.436 A:middle
+Instead, you should use
+
+00:37:22.436 --> 00:37:23.446 A:middle
+NSVisualEffectView.
+
+00:37:23.756 --> 00:37:24.826 A:middle
+It has a special selection
+
+00:37:24.826 --> 00:37:26.726 A:middle
+material just for this and when
+
+00:37:26.726 --> 00:37:27.696 A:middle
+you use this it's going to
+
+00:37:27.696 --> 00:37:28.666 A:middle
+automatically follow the
+
+00:37:28.666 --> 00:37:30.000 A:middle
+preference, as you expect.
+
+00:37:33.716 --> 00:37:35.476 A:middle
+Now, before I get into the
+
+00:37:35.476 --> 00:37:36.676 A:middle
+exciting part, the tips and the
+
+00:37:36.676 --> 00:37:38.156 A:middle
+tricks, I want to say a couple
+
+00:37:38.156 --> 00:37:39.316 A:middle
+of words about backward
+
+00:37:39.316 --> 00:37:40.996 A:middle
+deployment because we know that
+
+00:37:40.996 --> 00:37:42.446 A:middle
+many of you, especially on the
+
+00:37:42.446 --> 00:37:43.856 A:middle
+Mac, like to deploy your
+
+00:37:43.856 --> 00:37:45.256 A:middle
+applications back to previous
+
+00:37:45.256 --> 00:37:47.016 A:middle
+releases of macOS and it was
+
+00:37:47.016 --> 00:37:48.086 A:middle
+important to us to make sure
+
+00:37:48.086 --> 00:37:49.446 A:middle
+that you could adopt Dark Mode
+
+00:37:49.876 --> 00:37:51.456 A:middle
+without necessarily compromising
+
+00:37:51.456 --> 00:37:52.456 A:middle
+on your backward deployment.
+
+00:37:52.976 --> 00:37:55.136 A:middle
+And so I'm going to step through
+
+00:37:55.136 --> 00:37:56.186 A:middle
+a couple of APIs and just
+
+00:37:56.186 --> 00:37:57.146 A:middle
+examine them for backward
+
+00:37:57.146 --> 00:37:58.576 A:middle
+deployment, starting with system
+
+00:37:58.576 --> 00:37:59.076 A:middle
+colors.
+
+00:37:59.506 --> 00:38:00.856 A:middle
+So, here's a sampling of the
+

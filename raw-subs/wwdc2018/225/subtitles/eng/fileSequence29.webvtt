@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:00.216 --> 00:29:01.386 A:middle
+Why don't we switch back over to
+
+00:29:01.386 --> 00:29:03.616 A:middle
+the dev machine, and Mohammed,
+
+00:29:03.776 --> 00:29:04.686 A:middle
+why don't you show us how this
+
+00:29:04.686 --> 00:29:04.996 A:middle
+works?
+
+00:29:06.096 --> 00:29:08.416 A:middle
+&gt;&gt; Sure thing.
+
+00:29:08.636 --> 00:29:11.226 A:middle
+Okay, so we're doing multiple
+
+00:29:11.226 --> 00:29:12.746 A:middle
+animated updates at the same
+
+00:29:12.746 --> 00:29:13.216 A:middle
+time.
+
+00:29:14.036 --> 00:29:15.606 A:middle
+So you might be aware of a great
+
+00:29:15.606 --> 00:29:17.206 A:middle
+tool that UICollectionView and
+
+00:29:17.206 --> 00:29:19.576 A:middle
+UITableView provide us, and it's
+
+00:29:19.576 --> 00:29:21.236 A:middle
+the Perform Batch Updates API,
+
+00:29:21.936 --> 00:29:24.266 A:middle
+which basically allows us to
+
+00:29:24.266 --> 00:29:26.636 A:middle
+pass the collection view a set
+
+00:29:26.636 --> 00:29:28.036 A:middle
+of updates that can be performed
+
+00:29:28.036 --> 00:29:29.736 A:middle
+at the same time with animation.
+
+00:29:30.606 --> 00:29:33.226 A:middle
+So I'm going to add a call to
+
+00:29:33.486 --> 00:29:34.126 A:middle
+CollectionView
+
+00:29:34.186 --> 00:29:36.426 A:middle
+PerformBatchUpdates, and note
+
+00:29:36.426 --> 00:29:37.646 A:middle
+that I'm doing both my data
+
+00:29:37.646 --> 00:29:38.896 A:middle
+source updates and my
+
+00:29:38.896 --> 00:29:40.126 A:middle
+CollectionView updates in the
+
+00:29:40.126 --> 00:29:40.856 A:middle
+closure here.
+
+00:29:41.256 --> 00:29:43.196 A:middle
+This is really the best way that
+
+00:29:43.196 --> 00:29:45.486 A:middle
+I have of coordinating my
+
+00:29:45.606 --> 00:29:47.576 A:middle
+updates and keeping things
+
+00:29:47.576 --> 00:29:48.806 A:middle
+neatly in sync and avoiding
+
+00:29:48.806 --> 00:29:49.676 A:middle
+inconsistencies.
+
+00:29:50.836 --> 00:29:53.356 A:middle
+So, first I'm just updating my
+
+00:29:53.356 --> 00:29:57.586 A:middle
+last item in my data source.
+
+00:29:57.666 --> 00:29:59.476 A:middle
+I'm removing the second to last
+
+00:29:59.476 --> 00:30:01.316 A:middle
+item, picking up the last item,
+

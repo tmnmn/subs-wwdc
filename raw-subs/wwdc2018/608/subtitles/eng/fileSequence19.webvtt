@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.686 --> 00:19:01.996 A:middle
+executed, so it's a really great
+
+00:19:01.996 --> 00:19:05.966 A:middle
+way to focus.
+
+00:19:06.166 --> 00:19:08.286 A:middle
+So far, what we have seen is
+
+00:19:08.406 --> 00:19:09.686 A:middle
+great for debugging a single
+
+00:19:09.686 --> 00:19:12.286 A:middle
+thread, but what about other
+
+00:19:12.286 --> 00:19:12.706 A:middle
+threads?
+
+00:19:14.346 --> 00:19:16.156 A:middle
+Shader Debugger also gives you
+
+00:19:16.156 --> 00:19:18.276 A:middle
+access to other threads based on
+
+00:19:18.276 --> 00:19:20.596 A:middle
+the initial thread you selected.
+
+00:19:21.866 --> 00:19:23.926 A:middle
+What this means is, for vertex,
+
+00:19:24.456 --> 00:19:25.886 A:middle
+you'll get the primitive of your
+
+00:19:25.886 --> 00:19:27.846 A:middle
+selected vertex.
+
+00:19:28.156 --> 00:19:30.056 A:middle
+For fragment, you'll get direct
+
+00:19:30.056 --> 00:19:31.576 A:middle
+angle area, and on your selected
+
+00:19:31.576 --> 00:19:31.996 A:middle
+pixel.
+
+00:19:33.436 --> 00:19:35.316 A:middle
+For compute, you'll be getting
+
+00:19:35.316 --> 00:19:36.596 A:middle
+the full thread group of your
+
+00:19:36.596 --> 00:19:38.326 A:middle
+selected compute thread, so that
+
+00:19:38.326 --> 00:19:39.836 A:middle
+you have access to all variables
+
+00:19:40.106 --> 00:19:42.146 A:middle
+interacting with the thread
+
+00:19:42.636 --> 00:19:43.696 A:middle
+group memory.
+
+00:19:43.936 --> 00:19:46.476 A:middle
+Now, let's look at how accessing
+
+00:19:46.476 --> 00:19:48.966 A:middle
+other threads can help you debug
+
+00:19:48.966 --> 00:19:49.786 A:middle
+fragment shaders.
+
+00:19:50.336 --> 00:19:54.766 A:middle
+So while your code executes
+
+00:19:55.106 --> 00:19:56.606 A:middle
+millions of different pixels,
+
+00:19:57.576 --> 00:20:00.196 A:middle
+seeing a single variable for a
+

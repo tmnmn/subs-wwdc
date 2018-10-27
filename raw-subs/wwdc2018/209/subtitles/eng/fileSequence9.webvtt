@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:00.316 --> 00:09:01.386 A:middle
+And, the version number for the
+
+00:09:01.386 --> 00:09:02.846 A:middle
+deprecation is API TO BE
+
+00:09:02.846 --> 00:09:03.416 A:middle
+DEPRECATED.
+
+00:09:04.836 --> 00:09:07.386 A:middle
+So, what this does is, it tells
+
+00:09:07.386 --> 00:09:09.186 A:middle
+the compiler not to generate a
+
+00:09:09.186 --> 00:09:10.706 A:middle
+deprecation warning or an error,
+
+00:09:11.206 --> 00:09:12.906 A:middle
+however our intent is that if
+
+00:09:12.906 --> 00:09:14.396 A:middle
+you try to use the symbol in
+
+00:09:14.426 --> 00:09:16.516 A:middle
+Xcode, or new code, or in access
+
+00:09:16.516 --> 00:09:18.026 A:middle
+documentation, you will get a
+
+00:09:18.026 --> 00:09:19.216 A:middle
+warning that the symbol is
+
+00:09:19.216 --> 00:09:20.216 A:middle
+deprecated, and it will be
+
+00:09:20.216 --> 00:09:21.356 A:middle
+pointed at the replacement
+
+00:09:21.356 --> 00:09:21.736 A:middle
+symbol.
+
+00:09:22.336 --> 00:09:23.546 A:middle
+So, of course, comes across in
+
+00:09:23.546 --> 00:09:24.466 A:middle
+Swift as well.
+
+00:09:24.556 --> 00:09:26.856 A:middle
+As you can see here, one thing
+
+00:09:26.856 --> 00:09:28.126 A:middle
+to note, the version number
+
+00:09:28.156 --> 00:09:29.016 A:middle
+100,000.
+
+00:09:29.706 --> 00:09:30.996 A:middle
+This is not a pre-announcement,
+
+00:09:30.996 --> 00:09:32.676 A:middle
+or a leak of some far, future
+
+00:09:32.676 --> 00:09:32.956 A:middle
+SDK.
+
+00:09:32.956 --> 00:09:34.996 A:middle
+It's just that's a placeholder
+
+00:09:34.996 --> 00:09:36.526 A:middle
+number we're using for now to
+
+00:09:36.526 --> 00:09:39.036 A:middle
+indicate this feature.
+
+00:09:40.196 --> 00:09:41.206 A:middle
+Now, we use formal soft
+
+00:09:41.206 --> 00:09:42.126 A:middle
+deprecation in a few other
+
+00:09:42.126 --> 00:09:42.806 A:middle
+cases.
+
+00:09:43.826 --> 00:09:45.286 A:middle
+Earlier I showed you this.
+
+00:09:46.146 --> 00:09:47.436 A:middle
+And, I told you that we renamed
+
+00:09:47.436 --> 00:09:49.076 A:middle
+MiterLineJoinStyle to by
+
+00:09:49.076 --> 00:09:50.126 A:middle
+LineJoinStyleMiter.
+
+00:09:50.956 --> 00:09:51.846 A:middle
+And, I also said that
+
+00:09:51.846 --> 00:09:53.786 A:middle
+Objective-C source code was 100%
+
+00:09:53.786 --> 00:09:54.326 A:middle
+compatible.
+
+00:09:54.826 --> 00:09:56.066 A:middle
+So, you might be wondering,
+
+00:09:56.066 --> 00:09:57.076 A:middle
+well, what happened to that old
+
+00:09:57.076 --> 00:09:58.336 A:middle
+symbol that you renamed?
+
+00:09:58.876 --> 00:10:00.066 A:middle
+Well, we actually declared that
+

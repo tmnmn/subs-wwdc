@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.466 --> 00:32:00.696 A:middle
+by clamping to extent.
+
+00:32:01.856 --> 00:32:03.576 A:middle
+By repeating the border pixels
+
+00:32:03.576 --> 00:32:06.446 A:middle
+outwards we can make sure all
+
+00:32:06.446 --> 00:32:07.566 A:middle
+the borders of the image are
+
+00:32:07.566 --> 00:32:10.996 A:middle
+handled correctly by the filter.
+
+00:32:11.126 --> 00:32:13.236 A:middle
+Moreover, after the filtering
+
+00:32:13.236 --> 00:32:14.616 A:middle
+and just before the upscaling
+
+00:32:15.116 --> 00:32:16.286 A:middle
+the best practice will be to
+
+00:32:16.286 --> 00:32:18.386 A:middle
+crop back to the original extent
+
+00:32:18.886 --> 00:32:20.006 A:middle
+because that's the part of the
+
+00:32:20.006 --> 00:32:21.496 A:middle
+image we really care about.
+
+00:32:21.766 --> 00:32:25.816 A:middle
+At this point we have an alpha
+
+00:32:25.816 --> 00:32:27.766 A:middle
+matte of the foreground and you
+
+00:32:27.766 --> 00:32:29.096 A:middle
+can use it to create different
+
+00:32:29.096 --> 00:32:30.246 A:middle
+kinds of effects for the
+
+00:32:30.246 --> 00:32:31.336 A:middle
+background and the foreground
+
+00:32:31.796 --> 00:32:33.006 A:middle
+just like Emmanuel showed in the
+
+00:32:33.006 --> 00:32:33.646 A:middle
+first half.
+
+00:32:34.076 --> 00:32:39.266 A:middle
+In Backdrop, we blend the RGB
+
+00:32:39.266 --> 00:32:41.136 A:middle
+stream with a loaded background
+
+00:32:41.136 --> 00:32:43.186 A:middle
+image in a single line of Core
+
+00:32:43.186 --> 00:32:45.016 A:middle
+Image code using the alpha matte
+
+00:32:45.016 --> 00:32:46.296 A:middle
+we created from the TrueDepth
+
+00:32:46.296 --> 00:32:48.706 A:middle
+camera to create this background
+
+00:32:49.216 --> 00:32:50.236 A:middle
+replacement effect.
+
+00:32:53.996 --> 00:32:57.056 A:middle
+So the TrueDepth camera gives us
+
+00:32:58.046 --> 00:32:59.416 A:middle
+a resolution of depth map of
+
+00:32:59.416 --> 00:33:02.576 A:middle
+640x480 coming at you 30 frames
+

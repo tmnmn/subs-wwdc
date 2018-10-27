@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.646 --> 00:18:05.886 align:start position:16% line:-2
+ここにiPad Appの背景に使いたい
+美しい画像があります
+
+00:18:06.587 --> 00:18:10.124 align:start position:27% line:-2
+寸法は幅が2048ピクセル
+高さが1536ピクセル
+
+00:18:10.457 --> 00:18:13.727 align:start position:21% line:-1
+ディスク上で590キロバイトです
+
+00:18:13.927 --> 00:18:16.497 align:start position:29% line:-1
+さて メモリの使用量は？
+
+00:18:18.732 --> 00:18:19.900 align:start position:34% line:-1
+10メガバイトです
+
+00:18:20.000 --> 00:18:22.202 align:start position:34% line:-1
+とても大きいですね
+
+00:18:22.469 --> 00:18:27.875 align:start position:18% line:-2
+2048ピクセルと1536ピクセルの
+積のサイズがその原因です
+
+00:18:27.975 --> 00:18:31.178 align:start position:27% line:-2
+1ピクセル４バイトなので
+約10メガバイトになります
+
+00:18:31.712 --> 00:18:34.381 align:start position:29% line:-1
+なぜこんなに大きいのか？
+
+00:18:34.948 --> 00:18:38.051 align:start position:25% line:-1
+iOSでの画像の説明をします
+
+00:18:38.151 --> 00:18:40.721 align:start position:21% line:-2
+“Load”と“Decode”
+そして“Render”があります
+
+00:18:41.321 --> 00:18:47.728 align:start position:21% line:-2
+ロードには590キロに圧縮された
+JPEGファイルがあります
+
+00:18:47.828 --> 00:18:49.129 align:start position:32% line:-1
+メモリにロードします
+
+00:18:49.797 --> 00:18:55.769 align:start position:23% line:-2
+デコードではJPEGをGPUで
+読み込めるフォーマットに変換
+
+00:18:55.869 --> 00:18:59.406 align:start position:20% line:-1
+この解凍で10メガバイトになります
+
+00:18:59.907 --> 00:19:02.910 align:start position:34% line:-2
+デコードすると
+レンダーが可能です
+

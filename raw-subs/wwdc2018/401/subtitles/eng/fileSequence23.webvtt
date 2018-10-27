@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.926 --> 00:23:00.256 A:middle
+can in Swift 4.2.
+
+00:23:01.176 --> 00:23:02.666 A:middle
+And this also works for
+
+00:23:02.666 --> 00:23:03.186 A:middle
+Hashable.
+
+00:23:04.676 --> 00:23:07.166 A:middle
+So now I can have a set of
+
+00:23:07.356 --> 00:23:09.256 A:middle
+either Int's or strings as one
+
+00:23:09.256 --> 00:23:09.786 A:middle
+example.
+
+00:23:11.546 --> 00:23:11.656 A:middle
+OK.
+
+00:23:12.516 --> 00:23:15.676 A:middle
+[ Applause ]
+
+00:23:16.176 --> 00:23:18.146 A:middle
+Now, there are cases where you
+
+00:23:18.146 --> 00:23:19.526 A:middle
+really do have to implement
+
+00:23:19.586 --> 00:23:22.766 A:middle
+equality and Hashing by hand.
+
+00:23:23.436 --> 00:23:25.216 A:middle
+So let's look at one example of
+
+00:23:25.216 --> 00:23:25.456 A:middle
+that.
+
+00:23:26.616 --> 00:23:27.866 A:middle
+Let's say I have a data type
+
+00:23:28.006 --> 00:23:30.796 A:middle
+that represents a city and it's
+
+00:23:30.796 --> 00:23:32.166 A:middle
+got a name, it's got the state
+
+00:23:32.166 --> 00:23:33.456 A:middle
+that it's located in, and it has
+
+00:23:33.456 --> 00:23:34.296 A:middle
+the population.
+
+00:23:34.706 --> 00:23:35.556 A:middle
+And let's say that for the
+
+00:23:35.556 --> 00:23:38.006 A:middle
+purposes of this example I only
+
+00:23:38.006 --> 00:23:39.536 A:middle
+have to compare the name and the
+
+00:23:39.536 --> 00:23:41.456 A:middle
+state for equality and if I know
+
+00:23:41.456 --> 00:23:42.826 A:middle
+those are equal I don't have to
+
+00:23:42.826 --> 00:23:43.926 A:middle
+check the population.
+
+00:23:44.616 --> 00:23:46.446 A:middle
+So if I let the compiler
+
+00:23:46.446 --> 00:23:48.056 A:middle
+synthesize the implementation of
+
+00:23:48.056 --> 00:23:49.706 A:middle
+equality here it's going to do
+
+00:23:49.706 --> 00:23:51.046 A:middle
+unnecessary work because it's
+
+00:23:51.046 --> 00:23:52.006 A:middle
+going to be comparing that
+
+00:23:52.006 --> 00:23:53.046 A:middle
+population field.
+
+00:23:53.776 --> 00:23:55.436 A:middle
+But I certainly write it out by
+
+00:23:55.436 --> 00:23:56.976 A:middle
+hand and maybe in this case it's
+
+00:23:56.976 --> 00:23:57.636 A:middle
+not too bad.
+
+00:23:58.556 --> 00:23:59.796 A:middle
+But what about Hashable?
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.856 --> 00:04:00.236 A:middle
+important changes in just how
+
+00:04:00.236 --> 00:04:01.876 A:middle
+UICollectionView uses Auto
+
+00:04:01.876 --> 00:04:03.576 A:middle
+Layout and is more performance
+
+00:04:04.296 --> 00:04:04.866 A:middle
+due to it.
+
+00:04:05.376 --> 00:04:07.186 A:middle
+Which is a good segue to the
+
+00:04:07.186 --> 00:04:09.186 A:middle
+rest of the talk, which is how
+
+00:04:09.256 --> 00:04:10.116 A:middle
+you can do that too.
+
+00:04:10.676 --> 00:04:11.786 A:middle
+So how to use it properly.
+
+00:04:12.606 --> 00:04:14.286 A:middle
+When we were going through these
+
+00:04:15.026 --> 00:04:16.505 A:middle
+I think a lot of the time the
+
+00:04:16.505 --> 00:04:17.956 A:middle
+reason why we were able to make
+
+00:04:17.956 --> 00:04:19.375 A:middle
+all these improvements is that
+
+00:04:19.375 --> 00:04:21.786 A:middle
+we have a good mental model for
+
+00:04:21.786 --> 00:04:24.336 A:middle
+how things are put together and
+
+00:04:24.366 --> 00:04:26.226 A:middle
+how it performs, how it works.
+
+00:04:27.366 --> 00:04:29.156 A:middle
+We want to help you develop that
+
+00:04:29.156 --> 00:04:29.756 A:middle
+model as well.
+
+00:04:30.286 --> 00:04:31.876 A:middle
+So to frame this we're going to
+
+00:04:31.876 --> 00:04:34.126 A:middle
+go through an example case, some
+
+00:04:34.126 --> 00:04:36.726 A:middle
+client code, that is not -- that
+
+00:04:36.726 --> 00:04:38.036 A:middle
+has some issues and we're going
+
+00:04:38.036 --> 00:04:38.676 A:middle
+to discuss why.
+
+00:04:39.266 --> 00:04:40.796 A:middle
+So your code may or may not have
+
+00:04:40.796 --> 00:04:42.166 A:middle
+this particular issue, but we
+
+00:04:42.166 --> 00:04:43.226 A:middle
+did choose what we thought was
+
+00:04:43.226 --> 00:04:44.636 A:middle
+the most common thing that we
+
+00:04:44.636 --> 00:04:45.816 A:middle
+saw when we went through all
+
+00:04:46.056 --> 00:04:47.496 A:middle
+these client apps.
+
+00:04:48.096 --> 00:04:49.146 A:middle
+But even if you don't have this
+
+00:04:49.146 --> 00:04:50.876 A:middle
+particular issue, the work we do
+
+00:04:50.876 --> 00:04:52.476 A:middle
+to go through what's happening
+
+00:04:52.706 --> 00:04:53.596 A:middle
+should be meaningful to
+
+00:04:53.596 --> 00:04:55.326 A:middle
+everybody and probably new to
+
+00:04:55.326 --> 00:04:56.026 A:middle
+almost everybody.
+
+00:04:56.876 --> 00:04:58.426 A:middle
+So let's do it.
+
+00:04:59.656 --> 00:05:00.756 A:middle
+This is the case we're going to
+

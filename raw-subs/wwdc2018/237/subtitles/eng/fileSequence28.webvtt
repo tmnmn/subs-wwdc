@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.276 --> 00:28:02.666 A:middle
+First, you will need to add a
+
+00:28:02.666 --> 00:28:04.556 A:middle
+new target in your existing
+
+00:28:04.556 --> 00:28:05.696 A:middle
+application project.
+
+00:28:06.786 --> 00:28:08.736 A:middle
+To do so you will have to select
+
+00:28:08.736 --> 00:28:10.116 A:middle
+the Quick Look Preview Extension
+
+00:28:10.156 --> 00:28:13.986 A:middle
+template in Xcode.
+
+00:28:13.986 --> 00:28:16.486 A:middle
+After that several files will be
+
+00:28:16.486 --> 00:28:17.956 A:middle
+generated for you by Xcode.
+
+00:28:19.226 --> 00:28:20.936 A:middle
+The PreviewViewController class
+
+00:28:20.936 --> 00:28:22.426 A:middle
+with a basic implementation.
+
+00:28:23.296 --> 00:28:25.186 A:middle
+This is where you will have to
+
+00:28:25.186 --> 00:28:26.476 A:middle
+add code for your preview.
+
+00:28:27.066 --> 00:28:29.816 A:middle
+The storyboard that has the
+
+00:28:29.816 --> 00:28:31.646 A:middle
+PreviewViewController as its
+
+00:28:31.646 --> 00:28:32.216 A:middle
+entry point.
+
+00:28:32.686 --> 00:28:35.696 A:middle
+And an Info.plist that's the
+
+00:28:35.696 --> 00:28:36.966 A:middle
+first thing you will want to
+
+00:28:37.436 --> 00:28:37.626 A:middle
+edit.
+
+00:28:37.626 --> 00:28:42.586 A:middle
+Let's take a closer look at it.
+
+00:28:42.796 --> 00:28:45.066 A:middle
+To get started the attribute we
+
+00:28:45.066 --> 00:28:46.776 A:middle
+are the most interested in is
+
+00:28:46.776 --> 00:28:48.836 A:middle
+named QLSupportedContentTypes.
+
+00:28:49.706 --> 00:28:50.786 A:middle
+This is the one that is
+
+00:28:50.816 --> 00:28:52.256 A:middle
+highlighted on the screen shot.
+
+00:28:53.706 --> 00:28:55.066 A:middle
+This is an array in which you
+
+00:28:55.066 --> 00:28:56.346 A:middle
+list all the file types for
+
+00:28:56.346 --> 00:28:57.756 A:middle
+which your extension can provide
+
+00:28:57.756 --> 00:28:58.136 A:middle
+previews.
+
+00:28:59.366 --> 00:29:00.946 A:middle
+Please note that you can only
+

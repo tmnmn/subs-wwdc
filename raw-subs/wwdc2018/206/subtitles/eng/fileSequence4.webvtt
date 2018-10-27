@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.566 --> 00:04:00.306 A:middle
+notifications that have a
+
+00:04:00.306 --> 00:04:01.816 A:middle
+matching category and thread ID
+
+00:04:01.816 --> 00:04:03.986 A:middle
+arrive, did receive notification
+
+00:04:03.986 --> 00:04:05.296 A:middle
+will be called again on the
+
+00:04:05.296 --> 00:04:06.856 A:middle
+existing notification interface
+
+00:04:06.856 --> 00:04:07.386 A:middle
+controller.
+
+00:04:07.916 --> 00:04:10.066 A:middle
+So, you should be prepared to
+
+00:04:10.066 --> 00:04:11.686 A:middle
+append content to the existing
+
+00:04:11.686 --> 00:04:12.856 A:middle
+notification interface.
+
+00:04:13.236 --> 00:04:14.936 A:middle
+Perhaps by adding a blank line
+
+00:04:15.346 --> 00:04:16.696 A:middle
+and the new body content to an
+
+00:04:16.696 --> 00:04:17.505 A:middle
+existing label.
+
+00:04:17.856 --> 00:04:19.076 A:middle
+Or by adding a new row to a
+
+00:04:19.076 --> 00:04:20.245 A:middle
+table, as you saw on the
+
+00:04:20.245 --> 00:04:21.125 A:middle
+previous example.
+
+00:04:24.486 --> 00:04:25.566 A:middle
+And speaking of did receive
+
+00:04:25.566 --> 00:04:27.216 A:middle
+notification, its signature has
+
+00:04:27.246 --> 00:04:28.556 A:middle
+changed in WatchOS 5.
+
+00:04:29.536 --> 00:04:30.556 A:middle
+This version, with the
+
+00:04:30.556 --> 00:04:31.896 A:middle
+completion handler has been
+
+00:04:31.896 --> 00:04:35.196 A:middle
+deprecated, in favor of this
+
+00:04:35.256 --> 00:04:36.286 A:middle
+simplified version.
+
+00:04:37.166 --> 00:04:38.356 A:middle
+We did this, so we'd have a
+
+00:04:38.356 --> 00:04:39.616 A:middle
+clear boundary for when you're
+
+00:04:39.616 --> 00:04:40.686 A:middle
+done processing your
+
+00:04:40.686 --> 00:04:41.676 A:middle
+notification data.
+
+00:04:41.676 --> 00:04:43.116 A:middle
+And we'd know that everything is
+
+00:04:43.116 --> 00:04:44.326 A:middle
+ready to be shown on screen.
+
+00:04:45.366 --> 00:04:47.166 A:middle
+We encourage you to do only the
+
+00:04:47.166 --> 00:04:49.126 A:middle
+work necessary to display the
+
+00:04:49.126 --> 00:04:51.176 A:middle
+notification and to do it as
+
+00:04:51.176 --> 00:04:52.196 A:middle
+quickly as possible.
+
+00:04:54.536 --> 00:04:56.516 A:middle
+By the way, it's not necessary
+
+00:04:56.516 --> 00:04:57.896 A:middle
+for the user to keep their wrist
+
+00:04:57.896 --> 00:04:59.636 A:middle
+up to see all the notifications
+
+00:04:59.636 --> 00:05:01.026 A:middle
+with the same thread ID as they
+

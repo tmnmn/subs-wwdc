@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.816 --> 00:34:01.096 A:middle
+to watch my favorite content,
+
+00:34:01.656 --> 00:34:03.506 A:middle
+but not all this content may be
+
+00:34:03.506 --> 00:34:04.736 A:middle
+appropriate for everybody in my
+
+00:34:04.786 --> 00:34:06.006 A:middle
+household, so what I'd like to
+
+00:34:06.006 --> 00:34:07.846 A:middle
+do is protect it behind a PIN
+
+00:34:07.846 --> 00:34:09.596 A:middle
+code, so I can restrict who's
+
+00:34:09.596 --> 00:34:10.326 A:middle
+allowed to watch it.
+
+00:34:11.126 --> 00:34:12.116 A:middle
+So, what we have here is a
+
+00:34:12.116 --> 00:34:13.706 A:middle
+collection view, full of some
+
+00:34:13.706 --> 00:34:15.085 A:middle
+TVPosterViews that Hans
+
+00:34:15.085 --> 00:34:15.676 A:middle
+introduced.
+
+00:34:17.016 --> 00:34:19.025 A:middle
+So, if we dive in to our
+
+00:34:19.076 --> 00:34:19.815 A:middle
+collection views:
+
+00:34:19.815 --> 00:34:21.286 A:middle
+didSelectItemAt indexPath.
+
+00:34:21.846 --> 00:34:23.646 A:middle
+First thing we want to do is
+
+00:34:23.646 --> 00:34:24.045 A:middle
+vend a
+
+00:34:24.045 --> 00:34:26.186 A:middle
+TVDigitEntryViewController, and
+
+00:34:26.226 --> 00:34:27.446 A:middle
+send appropriate title and
+
+00:34:27.446 --> 00:34:29.416 A:middle
+prompt text, let the user know
+
+00:34:29.416 --> 00:34:30.775 A:middle
+they should enter a 5-digit
+
+00:34:30.775 --> 00:34:31.266 A:middle
+passcode.
+
+00:34:32.085 --> 00:34:33.235 A:middle
+We set the number of digits to
+
+00:34:33.235 --> 00:34:35.896 A:middle
+5, and we set the isSecure entry
+
+00:34:35.896 --> 00:34:36.985 A:middle
+to "true" since we are
+
+00:34:36.985 --> 00:34:38.326 A:middle
+collecting a passcode.
+
+00:34:40.235 --> 00:34:41.835 A:middle
+Next, we're going to implement
+
+00:34:41.835 --> 00:34:43.295 A:middle
+the entryCompletionHandler.
+
+00:34:44.166 --> 00:34:46.545 A:middle
+This returns a string, once the
+
+00:34:46.646 --> 00:34:48.136 A:middle
+user has filled in the total
+
+00:34:48.136 --> 00:34:49.696 A:middle
+number of digits in the digit
+
+00:34:49.696 --> 00:34:49.956 A:middle
+view.
+
+00:34:50.906 --> 00:34:52.416 A:middle
+So, here for now, since I'm
+
+00:34:52.416 --> 00:34:53.456 A:middle
+working on the app, we're just
+
+00:34:53.456 --> 00:34:54.286 A:middle
+going to check to see if it's
+
+00:34:54.286 --> 00:34:54.746 A:middle
+all 1's.
+
+00:34:54.835 --> 00:34:56.525 A:middle
+If it is, we're going to dismiss
+
+00:34:56.525 --> 00:34:57.456 A:middle
+the view controller, and play
+
+00:34:57.456 --> 00:34:58.046 A:middle
+the content.
+
+00:34:58.566 --> 00:34:59.756 A:middle
+Otherwise, we're going to update
+
+00:34:59.756 --> 00:35:01.006 A:middle
+the prompt text, let the user
+

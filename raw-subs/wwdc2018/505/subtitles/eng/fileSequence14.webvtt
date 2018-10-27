@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.516 --> 00:14:00.376 A:middle
+representative image for a
+
+00:14:00.376 --> 00:14:01.426 A:middle
+person, or for a region of
+
+00:14:01.426 --> 00:14:02.576 A:middle
+interest, it's kind of hard to
+
+00:14:02.576 --> 00:14:03.256 A:middle
+do with this API.
+
+00:14:04.286 --> 00:14:05.836 A:middle
+That's why we're adding a new
+
+00:14:05.836 --> 00:14:07.896 A:middle
+quality score, which represents
+
+00:14:08.086 --> 00:14:10.006 A:middle
+the quality of the region of
+
+00:14:10.006 --> 00:14:12.146 A:middle
+interest in the asset.
+
+00:14:12.266 --> 00:14:14.026 A:middle
+On the left-hand side, the
+
+00:14:14.026 --> 00:14:16.146 A:middle
+Person B is kind of out of focus
+
+00:14:16.146 --> 00:14:17.376 A:middle
+and not really central to the
+
+00:14:17.376 --> 00:14:18.696 A:middle
+image, while on the right-hand
+
+00:14:18.696 --> 00:14:20.556 A:middle
+side, he's really in focus.
+
+00:14:20.886 --> 00:14:22.686 A:middle
+That's why the quality score on
+
+00:14:22.686 --> 00:14:23.746 A:middle
+the right-hand side is higher
+
+00:14:23.746 --> 00:14:26.536 A:middle
+than on the left-hand side.
+
+00:14:27.336 --> 00:14:28.726 A:middle
+On an API level, that looks like
+
+00:14:28.726 --> 00:14:29.026 A:middle
+this.
+
+00:14:29.026 --> 00:14:30.716 A:middle
+We have this alt weight, which
+
+00:14:30.716 --> 00:14:32.826 A:middle
+is the importance of the region
+
+00:14:32.826 --> 00:14:34.116 A:middle
+of interest in the context of
+
+00:14:34.166 --> 00:14:34.776 A:middle
+the project.
+
+00:14:35.216 --> 00:14:37.476 A:middle
+And then, the quality in the
+
+00:14:38.166 --> 00:14:38.306 A:middle
+asset.
+
+00:14:39.136 --> 00:14:41.336 A:middle
+I would now like to show you a
+
+00:14:41.336 --> 00:14:43.066 A:middle
+quick demo, how you can use
+
+00:14:43.066 --> 00:14:44.806 A:middle
+regions of interest in your
+
+00:14:44.806 --> 00:14:45.686 A:middle
+extension to improve the
+
+00:14:45.686 --> 00:14:47.656 A:middle
+experience, and also listen to a
+
+00:14:47.656 --> 00:14:48.786 A:middle
+library notification to get
+
+00:14:48.786 --> 00:14:50.696 A:middle
+notified whenever the assets or
+
+00:14:50.696 --> 00:14:51.576 A:middle
+the project changes.
+
+00:14:52.156 --> 00:14:54.656 A:middle
+And, use a new updateProjectInfo
+
+00:14:54.656 --> 00:14:54.976 A:middle
+API.
+

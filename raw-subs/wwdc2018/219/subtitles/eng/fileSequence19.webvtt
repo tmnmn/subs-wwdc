@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:58.606 --> 00:19:00.006 A:middle
+It's faster to look up an image
+
+00:19:00.006 --> 00:19:01.756 A:middle
+asset in the asset catalog, than
+
+00:19:01.756 --> 00:19:03.146 A:middle
+it is to search for files on
+
+00:19:03.146 --> 00:19:04.286 A:middle
+disk that have a certain naming
+
+00:19:04.286 --> 00:19:04.636 A:middle
+scheme.
+
+00:19:05.096 --> 00:19:08.246 A:middle
+The asset catalog runtime has,
+
+00:19:08.246 --> 00:19:10.046 A:middle
+also, got some really good
+
+00:19:10.046 --> 00:19:11.556 A:middle
+smarts in it for managing buffer
+
+00:19:11.556 --> 00:19:12.096 A:middle
+sizes.
+
+00:19:12.386 --> 00:19:14.566 A:middle
+And there are, also, some
+
+00:19:14.566 --> 00:19:16.026 A:middle
+features unrelated to runtime
+
+00:19:16.026 --> 00:19:17.876 A:middle
+performance that are exclusive
+
+00:19:17.876 --> 00:19:18.766 A:middle
+to image assets.
+
+00:19:19.086 --> 00:19:20.326 A:middle
+Including features like per
+
+00:19:20.326 --> 00:19:21.776 A:middle
+device thinning, which mean that
+
+00:19:21.776 --> 00:19:23.306 A:middle
+your application only downloads
+
+00:19:23.616 --> 00:19:24.626 A:middle
+image resources that are
+
+00:19:24.626 --> 00:19:25.876 A:middle
+relevant to the device that it's
+
+00:19:25.876 --> 00:19:27.886 A:middle
+going to run on and vector
+
+00:19:27.886 --> 00:19:28.396 A:middle
+artwork.
+
+00:19:30.416 --> 00:19:32.076 A:middle
+The vector artwork was a feature
+
+00:19:32.076 --> 00:19:33.546 A:middle
+that was introduced in iOS 11.
+
+00:19:33.616 --> 00:19:34.876 A:middle
+And you enable it by checking
+
+00:19:34.876 --> 00:19:36.196 A:middle
+the Preserve Vector Data
+
+00:19:36.616 --> 00:19:38.576 A:middle
+checkbox in the editor for your
+
+00:19:38.576 --> 00:19:39.246 A:middle
+image asset.
+
+00:19:39.246 --> 00:19:41.896 A:middle
+And the upshot of this is that
+
+00:19:42.046 --> 00:19:43.496 A:middle
+if your image gets rendered in
+
+00:19:43.496 --> 00:19:45.236 A:middle
+an image view that is larger or
+
+00:19:45.236 --> 00:19:46.476 A:middle
+smaller than the native size of
+
+00:19:46.476 --> 00:19:48.266 A:middle
+the image it doesn't get blurry.
+
+00:19:49.376 --> 00:19:50.456 A:middle
+The image is, actually,
+
+00:19:50.456 --> 00:19:51.966 A:middle
+re-rasterized from the vector
+
+00:19:51.966 --> 00:19:53.586 A:middle
+artwork so that it has nice
+
+00:19:53.586 --> 00:19:54.416 A:middle
+crisp edges.
+
+00:19:55.686 --> 00:19:57.076 A:middle
+One place that we use this in
+
+00:19:57.076 --> 00:19:57.956 A:middle
+the operating system.
+
+00:19:58.266 --> 00:20:00.386 A:middle
+If you turn on dynamic type to a
+

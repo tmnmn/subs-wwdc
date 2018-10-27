@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:56.703 --> 00:14:02.509 align:start position:27% line:-2
+フォーカスエンジンが
+プロトコルを見つけるために
+
+00:14:02.609 --> 00:14:07.214 align:start position:7% line:-2
+parentFocusEnvironmentと
+focusItemContainerを設定します
+
+00:14:07.314 --> 00:14:11.318 align:start position:11% line:-2
+例えば UIViewControllerでは
+parentViewControllerに
+
+00:14:11.418 --> 00:14:16.390 align:start position:9% line:-2
+parentFocusEnvironmentを
+設定するといった具合です
+
+00:14:17.491 --> 00:14:22.763 align:start position:25% line:-2
+更新をコントロールするための
+メソッドがいくつかあります
+
+00:14:22.863 --> 00:14:27.701 align:start position:4% line:-2
+preferredFocusEnvironmentは
+最初のビューが決まると
+
+00:14:27.801 --> 00:14:31.605 align:start position:29% line:-2
+次にフォーカスする場所を
+選べます
+
+00:14:31.705 --> 00:14:34.174 align:start position:38% line:-2
+プログラムでの
+更新も同じです
+
+00:14:34.675 --> 00:14:39.446 align:start position:30% line:-2
+さらに２つのメソッドを
+ご紹介したいと思います
+
+00:14:39.546 --> 00:14:43.050 align:start position:12% line:-2
+SetNeedsFocusUpdateと
+updateFocusIfNeededです
+
+00:14:43.150 --> 00:14:45.285 align:start position:36% line:-1
+これらの実装には
+
+00:14:45.385 --> 00:14:50.090 align:start position:18% line:-2
+UIFocusSystem上の特定の
+メソッドを呼び出します
+
+00:14:51.291 --> 00:14:55.262 align:start position:11% line:-2
+次に
+UIFocusItemContainerです
+
+00:14:57.030 --> 00:14:59.933 align:start position:18% line:-2
+まずcoordinateSpaceを
+入力します
+

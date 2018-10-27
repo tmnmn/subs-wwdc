@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:59.326 --> 00:52:01.916 A:middle
+mesh, and it comes in the form
+
+00:52:01.976 --> 00:52:05.566 A:middle
+of all vertices, triangles, as
+
+00:52:05.566 --> 00:52:07.296 A:middle
+well as detection coordinates.
+
+00:52:08.556 --> 00:52:10.356 A:middle
+The main anchor type of face
+
+00:52:10.356 --> 00:52:12.186 A:middle
+tracking is ARFaceAnchor, which
+
+00:52:12.186 --> 00:52:13.876 A:middle
+contains all information needed
+
+00:52:13.876 --> 00:52:15.266 A:middle
+to perform face tracking.
+
+00:52:16.666 --> 00:52:18.486 A:middle
+And in order to render such
+
+00:52:18.486 --> 00:52:20.886 A:middle
+geometry realistically, we added
+
+00:52:20.956 --> 00:52:22.506 A:middle
+a directional light estimate.
+
+00:52:23.616 --> 00:52:25.426 A:middle
+Here, ARKit uses your light as a
+
+00:52:25.426 --> 00:52:27.786 A:middle
+light probe and estimates this
+
+00:52:28.616 --> 00:52:30.986 A:middle
+ARDirectionLightEstimate, which
+
+00:52:31.316 --> 00:52:33.026 A:middle
+consists of the light intensity,
+
+00:52:33.176 --> 00:52:34.696 A:middle
+direction, as well as the color
+
+00:52:34.696 --> 00:52:35.096 A:middle
+temperature.
+
+00:52:36.086 --> 00:52:39.066 A:middle
+This estimate will be sufficient
+
+00:52:39.346 --> 00:52:41.406 A:middle
+to make most apps already look
+
+00:52:41.506 --> 00:52:43.456 A:middle
+great, but if your app has more
+
+00:52:43.456 --> 00:52:45.896 A:middle
+sophisticated needs, we also
+
+00:52:45.896 --> 00:52:47.686 A:middle
+provide the second-degree
+
+00:52:47.686 --> 00:52:48.986 A:middle
+spherical harmonics coefficients
+
+00:52:49.396 --> 00:52:51.046 A:middle
+that gather lighting conditions
+
+00:52:51.086 --> 00:52:53.266 A:middle
+throughout the entire scene for
+
+00:52:53.356 --> 00:52:55.606 A:middle
+you to make your content even
+
+00:52:56.216 --> 00:52:57.726 A:middle
+look better.
+
+00:52:57.926 --> 00:52:59.106 A:middle
+And ARKit can also track
+
+00:52:59.106 --> 00:53:00.426 A:middle
+expressions in real-time.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.686 --> 00:26:01.616 A:middle
+random preprocess seed, which is
+
+00:26:01.616 --> 00:26:03.346 A:middle
+generated when your app starts.
+
+00:26:05.136 --> 00:26:07.236 A:middle
+And we think that it should be
+
+00:26:07.316 --> 00:26:09.136 A:middle
+pretty easy to migrate your code
+
+00:26:09.136 --> 00:26:10.746 A:middle
+to using the new Hashable
+
+00:26:10.746 --> 00:26:12.256 A:middle
+protocol and we encourage you to
+
+00:26:12.256 --> 00:26:12.756 A:middle
+do so.
+
+00:26:13.206 --> 00:26:15.016 A:middle
+The one caveat to watch out for
+
+00:26:15.016 --> 00:26:16.936 A:middle
+is you might have some code
+
+00:26:16.936 --> 00:26:18.746 A:middle
+where you're expecting that Hash
+
+00:26:18.746 --> 00:26:20.426 A:middle
+values remain constant from
+
+00:26:20.426 --> 00:26:22.296 A:middle
+different runs of your app or
+
+00:26:22.296 --> 00:26:23.566 A:middle
+that if you iterate over a
+
+00:26:23.566 --> 00:26:25.416 A:middle
+dictionary or a set you're going
+
+00:26:25.416 --> 00:26:26.636 A:middle
+to get the elements in the same
+
+00:26:26.636 --> 00:26:26.976 A:middle
+order.
+
+00:26:27.256 --> 00:26:28.726 A:middle
+And this is no longer the case
+
+00:26:28.726 --> 00:26:29.656 A:middle
+because of that random
+
+00:26:29.656 --> 00:26:30.676 A:middle
+preprocess seed.
+
+00:26:30.746 --> 00:26:31.816 A:middle
+So you will need to fix your
+
+00:26:31.816 --> 00:26:32.116 A:middle
+code.
+
+00:26:32.916 --> 00:26:35.096 A:middle
+And to make this easier we've
+
+00:26:35.096 --> 00:26:37.336 A:middle
+added a build setting, the Swift
+
+00:26:37.336 --> 00:26:38.426 A:middle
+Deterministic Hashing
+
+00:26:38.426 --> 00:26:39.996 A:middle
+Environment Variable, which you
+
+00:26:39.996 --> 00:26:41.666 A:middle
+can enable in the scheme editor
+
+00:26:42.246 --> 00:26:43.736 A:middle
+to temporarily disable that
+
+00:26:43.786 --> 00:26:45.256 A:middle
+preprocess random seed.
+
+00:26:45.796 --> 00:26:49.466 A:middle
+OK, so let's talk about
+
+00:26:49.606 --> 00:26:51.096 A:middle
+generating random numbers.
+
+00:26:52.396 --> 00:26:53.656 A:middle
+So how do you generate random
+
+00:26:53.656 --> 00:26:54.706 A:middle
+numbers in Swift today?
+
+00:26:55.356 --> 00:26:57.916 A:middle
+Well, you have to use imported C
+
+00:26:57.916 --> 00:26:58.376 A:middle
+APIs.
+
+00:26:58.446 --> 00:26:59.876 A:middle
+And this is really not ideal
+
+00:26:59.876 --> 00:27:01.446 A:middle
+because they are different
+

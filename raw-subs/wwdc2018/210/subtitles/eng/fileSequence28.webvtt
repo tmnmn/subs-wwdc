@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.516 --> 00:28:02.466 A:middle
+So, what we needed to do was
+
+00:28:02.466 --> 00:28:04.686 A:middle
+link against the 10.14 SDK and
+
+00:28:04.736 --> 00:28:05.496 A:middle
+Xcode 10.
+
+00:28:07.116 --> 00:28:09.166 A:middle
+We built and ran our app, and
+
+00:28:09.166 --> 00:28:09.416 A:middle
+voila.
+
+00:28:10.606 --> 00:28:11.486 A:middle
+It's a lot darker.
+
+00:28:12.456 --> 00:28:13.596 A:middle
+Comparing with light, you can
+
+00:28:13.596 --> 00:28:14.616 A:middle
+see a lot of things are
+
+00:28:14.616 --> 00:28:16.256 A:middle
+different and darker,
+
+00:28:16.256 --> 00:28:18.756 A:middle
+automatically, but there's still
+
+00:28:18.756 --> 00:28:20.176 A:middle
+some things we'd like to fix up.
+
+00:28:21.586 --> 00:28:23.576 A:middle
+So, we'll go into detail about
+
+00:28:23.576 --> 00:28:24.386 A:middle
+some of the colors.
+
+00:28:24.996 --> 00:28:27.976 A:middle
+There's a lot of colors.
+
+00:28:28.876 --> 00:28:32.296 A:middle
+Let's take a look at this header
+
+00:28:32.296 --> 00:28:34.096 A:middle
+area that's light green.
+
+00:28:35.576 --> 00:28:39.416 A:middle
+We implemented this using a
+
+00:28:39.616 --> 00:28:41.056 A:middle
+hardcoded color, where we
+
+00:28:41.056 --> 00:28:42.716 A:middle
+specified our custom RGBA
+
+00:28:42.716 --> 00:28:43.606 A:middle
+values.
+
+00:28:45.016 --> 00:28:46.376 A:middle
+The problem with this approach
+
+00:28:46.636 --> 00:28:48.056 A:middle
+is that it doesn't change
+
+00:28:48.216 --> 00:28:49.036 A:middle
+between the different
+
+00:28:49.036 --> 00:28:49.676 A:middle
+appearances.
+
+00:28:50.306 --> 00:28:51.646 A:middle
+You're stuck with the same color
+
+00:28:51.696 --> 00:28:52.996 A:middle
+no matter what the system
+
+00:28:52.996 --> 00:28:53.946 A:middle
+preference setting is.
+
+00:28:56.056 --> 00:28:57.346 A:middle
+Instead of doing it this way,
+
+00:28:57.746 --> 00:28:59.426 A:middle
+we're going to take advantage of
+
+00:28:59.426 --> 00:29:01.256 A:middle
+colors in asset catalogs.
+

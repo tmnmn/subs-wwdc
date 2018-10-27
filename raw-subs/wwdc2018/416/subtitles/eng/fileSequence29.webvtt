@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.336 --> 00:29:01.586 A:middle
+or multiple noir filters, or
+
+00:29:01.586 --> 00:29:03.366 A:middle
+multiple filters in memory, more
+
+00:29:03.366 --> 00:29:04.676 A:middle
+than I expect, that's something
+
+00:29:04.676 --> 00:29:05.716 A:middle
+else I could investigate.
+
+00:29:06.496 --> 00:29:09.736 A:middle
+Well, there's no more instances
+
+00:29:09.736 --> 00:29:10.816 A:middle
+here than I expect, but maybe
+
+00:29:10.816 --> 00:29:12.076 A:middle
+one of these is really big.
+
+00:29:12.186 --> 00:29:13.726 A:middle
+It's not very likely, but I
+
+00:29:13.726 --> 00:29:14.366 A:middle
+might as well check.
+
+00:29:14.566 --> 00:29:16.956 A:middle
+So I'm going to go to the memory
+
+00:29:16.956 --> 00:29:17.386 A:middle
+inspector.
+
+00:29:17.386 --> 00:29:18.206 A:middle
+I'm going to look at these.
+
+00:29:18.286 --> 00:29:19.576 A:middle
+Each of them, it lists the size
+
+00:29:19.576 --> 00:29:20.666 A:middle
+for each of the objects.
+
+00:29:21.016 --> 00:29:22.296 A:middle
+So I can see my app delegate is
+
+00:29:22.366 --> 00:29:23.486 A:middle
+32 bytes.
+
+00:29:23.966 --> 00:29:24.896 A:middle
+The data view controller is
+
+00:29:24.896 --> 00:29:25.796 A:middle
+1500.
+
+00:29:26.216 --> 00:29:27.556 A:middle
+As I go through each of these,
+
+00:29:28.506 --> 00:29:30.056 A:middle
+none of these are clearly
+
+00:29:30.056 --> 00:29:33.596 A:middle
+responsible for the, you know, 1
+
+00:29:33.596 --> 00:29:35.876 A:middle
+plus gigabytes of memory my app
+
+00:29:35.876 --> 00:29:36.436 A:middle
+is using.
+
+00:29:37.096 --> 00:29:38.766 A:middle
+So that's it for my bag of
+
+00:29:38.766 --> 00:29:40.246 A:middle
+tricks in dealing with Memgraph
+
+00:29:40.246 --> 00:29:40.936 A:middle
+in Xcode.
+
+00:29:41.466 --> 00:29:42.436 A:middle
+Where do I go now?
+
+00:29:43.256 --> 00:29:45.106 A:middle
+Well, I just watched this great
+
+00:29:45.356 --> 00:29:48.236 A:middle
+WWDC session about using
+
+00:29:48.366 --> 00:29:50.276 A:middle
+command-line tools in Memgraph
+
+00:29:50.276 --> 00:29:50.646 A:middle
+files.
+
+00:29:51.516 --> 00:29:53.276 A:middle
+So let me see if I can find
+
+00:29:53.276 --> 00:29:55.876 A:middle
+anything by trying that.
+
+00:29:55.876 --> 00:29:57.236 A:middle
+And thinking back, the first
+
+00:29:57.236 --> 00:29:59.036 A:middle
+thing James suggested was using
+
+00:29:59.036 --> 00:30:01.636 A:middle
+vmmap with the summary flag.
+

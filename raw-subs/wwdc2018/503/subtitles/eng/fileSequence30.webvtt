@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.456 --> 00:30:00.236 A:middle
+can use this binary mask and
+
+00:30:00.236 --> 00:30:00.956 A:middle
+create the effect.
+
+00:30:01.596 --> 00:30:02.816 A:middle
+The transition from background
+
+00:30:02.816 --> 00:30:04.166 A:middle
+to foreground will be very
+
+00:30:04.166 --> 00:30:06.636 A:middle
+sharp, but we'll get some
+
+00:30:06.636 --> 00:30:07.826 A:middle
+fidgeting around the edges.
+
+00:30:09.486 --> 00:30:10.856 A:middle
+So we want to filter it a bit.
+
+00:30:11.826 --> 00:30:14.156 A:middle
+The first stage will be to apply
+
+00:30:14.156 --> 00:30:15.216 A:middle
+some smoothing from the
+
+00:30:15.216 --> 00:30:16.346 A:middle
+background to the foreground, in
+
+00:30:16.346 --> 00:30:17.896 A:middle
+this case Gaussian Blurring.
+
+00:30:18.626 --> 00:30:20.446 A:middle
+The radius of Gaussian Blurring
+
+00:30:20.446 --> 00:30:22.716 A:middle
+will determine the slope of the
+
+00:30:22.716 --> 00:30:25.096 A:middle
+transition and you can play with
+
+00:30:25.096 --> 00:30:26.696 A:middle
+the value to get different
+
+00:30:27.996 --> 00:30:28.526 A:middle
+effects.
+
+00:30:29.426 --> 00:30:31.126 A:middle
+Another processing stage we add
+
+00:30:31.346 --> 00:30:33.966 A:middle
+is gamma adjustments, it allows
+
+00:30:33.966 --> 00:30:35.286 A:middle
+us to further fine-tune this
+
+00:30:35.286 --> 00:30:36.456 A:middle
+transition from background to
+
+00:30:36.456 --> 00:30:36.976 A:middle
+foreground.
+
+00:30:37.426 --> 00:30:39.386 A:middle
+If we use a gamma value which is
+
+00:30:39.386 --> 00:30:41.576 A:middle
+higher than one we'll get a
+
+00:30:41.576 --> 00:30:43.156 A:middle
+narrower foreground mask.
+
+00:30:44.176 --> 00:30:45.966 A:middle
+On the other hand, if we use a
+
+00:30:45.966 --> 00:30:47.526 A:middle
+gamma value that is smaller than
+
+00:30:47.526 --> 00:30:49.886 A:middle
+one we'll get a wider foreground
+
+00:30:49.886 --> 00:30:51.026 A:middle
+mask and maybe some aura.
+
+00:30:52.386 --> 00:30:53.646 A:middle
+So you can create different
+
+00:30:53.646 --> 00:30:56.286 A:middle
+effects by combining those two
+
+00:30:56.446 --> 00:30:57.136 A:middle
+parameters.
+
+00:30:57.556 --> 00:31:01.156 A:middle
+If you use a large blur radius
+

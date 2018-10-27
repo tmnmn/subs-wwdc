@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.751 --> 00:07:00.254 align:start position:30% line:-1
+コンテキストで実行され
+
+00:07:00.354 --> 00:07:04.258 align:start position:18% line:-2
+APIステートの追跡や
+OpenGLオブジェクトのメモリ管理
+
+00:07:04.358 --> 00:07:07.094 align:start position:27% line:-2
+GPUコマンドの変換などを
+担います
+
+00:07:07.194 --> 00:07:10.063 align:start position:27% line:-1
+Metalはこれらをさらに
+
+00:07:10.164 --> 00:07:12.733 align:start position:32% line:-2
+小さなオブジェクトに
+分けます
+
+00:07:14.401 --> 00:07:17.771 align:start position:32% line:-2
+最初のオブジェクトは
+Metalデバイスで
+
+00:07:17.938 --> 00:07:22.075 align:start position:32% line:-2
+物理GPUの
+抽象的表示となります
+
+00:07:23.243 --> 00:07:26.780 align:start position:32% line:-2
+テクスチャやバッファ
+またシェーダを含む―
+
+00:07:26.880 --> 00:07:30.284 align:start position:27% line:-2
+パイプラインオブジェクトを
+作成します
+
+00:07:30.818 --> 00:07:35.022 align:start position:23% line:-2
+Metalコマンドキューという
+オブジェクトも作成されます
+
+00:07:36.190 --> 00:07:38.792 align:start position:34% line:-2
+コマンドキューは
+コマンドバッファの
+
+00:07:38.892 --> 00:07:41.495 align:start position:30% line:-1
+シーケンスを作成します
+
+00:07:41.795 --> 00:07:43.831 align:start position:32% line:-1
+コマンドバッファとは
+
+00:07:43.931 --> 00:07:47.601 align:start position:29% line:-2
+GPUに送信される
+GPUコマンドのリストで
+
+00:07:47.734 --> 00:07:50.537 align:start position:30% line:-2
+アプリケーションにより
+満たされます
+
+00:07:50.971 --> 00:07:53.473 align:start position:34% line:-2
+アプリケーションは
+フレームあたり
+
+00:07:53.574 --> 00:07:57.377 align:start position:30% line:-2
+これを1つ作成しますが
+２つ以上作成した方が
+
+00:07:57.477 --> 00:07:59.947 align:start position:29% line:-1
+理にかなう場合もあります
+

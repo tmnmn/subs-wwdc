@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.366 --> 00:29:00.946 A:middle
+Please note that you can only
+
+00:29:00.946 --> 00:29:02.716 A:middle
+provide previews for UTIs you
+
+00:29:02.756 --> 00:29:03.996 A:middle
+own and export.
+
+00:29:05.356 --> 00:29:07.146 A:middle
+When Quick Look can't natively
+
+00:29:07.146 --> 00:29:09.246 A:middle
+preview a file type it will make
+
+00:29:09.246 --> 00:29:10.826 A:middle
+use of the content types added
+
+00:29:10.826 --> 00:29:13.986 A:middle
+to this array and select an
+
+00:29:13.986 --> 00:29:15.306 A:middle
+extension that can handle
+
+00:29:15.506 --> 00:29:16.106 A:middle
+previewing it.
+
+00:29:16.906 --> 00:29:18.246 A:middle
+So make sure to list all file
+
+00:29:18.246 --> 00:29:19.426 A:middle
+types [inaudible] extension
+
+00:29:19.426 --> 00:29:19.946 A:middle
+support.
+
+00:29:21.056 --> 00:29:22.526 A:middle
+Let's see how we achieve this
+
+00:29:22.746 --> 00:29:24.176 A:middle
+with our Particles app.
+
+00:29:24.426 --> 00:29:29.576 A:middle
+As you can see Particles
+
+00:29:29.576 --> 00:29:30.896 A:middle
+declares and exports a new
+
+00:29:31.276 --> 00:29:32.176 A:middle
+particles file type.
+
+00:29:32.326 --> 00:29:34.806 A:middle
+Its identifier is [inaudible]
+
+00:29:35.486 --> 00:29:37.986 A:middle
+example.applesample
+
+00:29:37.986 --> 00:29:39.996 A:middle
+code.particles.particles.
+
+00:29:41.296 --> 00:29:43.006 A:middle
+Since we wanted our extension to
+
+00:29:43.006 --> 00:29:45.196 A:middle
+support particles previews we
+
+00:29:45.196 --> 00:29:47.016 A:middle
+added this identifier to the
+
+00:29:47.016 --> 00:29:48.836 A:middle
+QLSupportedContentTypes of its
+
+00:29:48.836 --> 00:29:49.566 A:middle
+Info.plist.
+
+00:29:50.256 --> 00:29:52.196 A:middle
+By the way, if you're interested
+
+00:29:52.196 --> 00:29:54.756 A:middle
+in UTIs you should check out the
+
+00:29:54.756 --> 00:29:56.646 A:middle
+Documents Manager session of
+
+00:29:56.646 --> 00:29:56.956 A:middle
+this year.
+

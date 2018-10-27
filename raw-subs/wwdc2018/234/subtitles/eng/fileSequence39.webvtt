@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.406 --> 00:39:02.726 A:middle
+Let's take a look at how we can
+
+00:39:02.726 --> 00:39:03.886 A:middle
+provide a great Apple Pay
+
+00:39:03.886 --> 00:39:05.256 A:middle
+experience with the Payment
+
+00:39:05.256 --> 00:39:06.796 A:middle
+Request API.
+
+00:39:08.836 --> 00:39:10.156 A:middle
+So, I've already added the
+
+00:39:10.156 --> 00:39:12.726 A:middle
+necessary HTML and CSS to my
+
+00:39:12.726 --> 00:39:14.036 A:middle
+site to display an Apple Pay
+
+00:39:14.036 --> 00:39:15.996 A:middle
+button, but I've hidden it by
+
+00:39:15.996 --> 00:39:16.396 A:middle
+default.
+
+00:39:16.976 --> 00:39:17.976 A:middle
+You should only show the Apple
+
+00:39:17.976 --> 00:39:20.626 A:middle
+Pay button if the user's device
+
+00:39:20.626 --> 00:39:23.126 A:middle
+is capable of using Apple Pay.
+
+00:39:24.176 --> 00:39:27.966 A:middle
+so, let's check for that, using
+
+00:39:27.966 --> 00:39:28.033 A:middle
+the
+
+00:39:28.366 --> 00:39:30.256 A:middle
+ApplePaySession.canMakePayments
+
+00:39:30.256 --> 00:39:30.616 A:middle
+method.
+
+00:39:30.776 --> 00:39:33.556 A:middle
+If Apple Pay is available, we
+
+00:39:33.556 --> 00:39:33.976 A:middle
+can show the button.
+
+00:39:38.326 --> 00:39:41.036 A:middle
+Let's add an eventListener to
+
+00:39:42.816 --> 00:39:43.396 A:middle
+the button.
+
+00:39:43.396 --> 00:39:44.666 A:middle
+Now, inside this function is
+
+00:39:44.666 --> 00:39:45.606 A:middle
+where we'll create a new
+
+00:39:45.606 --> 00:39:47.736 A:middle
+paymentRequest instance to
+
+00:39:47.736 --> 00:39:48.976 A:middle
+initiate the transaction.
+
+00:39:54.436 --> 00:39:55.866 A:middle
+If paymentRequest isn't
+
+00:39:55.866 --> 00:39:57.146 A:middle
+available, we should consider
+
+00:39:57.146 --> 00:39:57.976 A:middle
+using Apple Pay JS instead.
+

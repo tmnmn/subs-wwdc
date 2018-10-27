@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.305 --> 00:24:04.077 align:start position:23% line:-2
+App上では 入力された画像を
+図案化します
+
+00:24:04.344 --> 00:24:07.314 align:start position:29% line:-2
+それを可能にする
+重要な要素が２つあります
+
+00:24:07.414 --> 00:24:13.253 align:start position:21% line:-2
+スタイル適用のためのパラメータを
+格納するMLモデルファイル
+
+00:24:13.520 --> 00:24:17.157 align:start position:27% line:-2
+そしてMLモデルに取り込む
+推論エンジンです
+
+00:24:17.257 --> 00:24:21.228 align:start position:30% line:-2
+それは出力の生成に
+必要な計算を実行します
+
+00:24:21.895 --> 00:24:25.966 align:start position:21% line:-2
+スタイル変換を効率的に行うために
+Appleの技術が―
+
+00:24:26.066 --> 00:24:28.702 align:start position:32% line:-2
+どのように
+活用されているのか？
+
+00:24:30.137 --> 00:24:36.210 align:start position:23% line:-2
+ニューラルネットワークの例で
+レイヤと呼ばれる数学的演算です
+
+00:24:36.376 --> 00:24:41.882 align:start position:30% line:-2
+各レイヤが画像を変換し
+図案化して出力します
+
+00:24:42.583 --> 00:24:48.789 align:start position:21% line:-2
+モデルには変換やスタイルを決める
+各レイヤのウェイトが格納されます
+
+00:24:49.623 --> 00:24:55.095 align:start position:21% line:-2
+Core MLの推論エンジンでは
+各レイヤを高度に最適化
+
+00:24:55.195 --> 00:24:57.331 align:start position:20% line:-1
+GPUではMetalシェーダを使い
+
+00:24:57.431 --> 00:25:01.201 align:start position:23% line:-2
+CPU上では有能な計算ができる
+Accelerateを使います
+

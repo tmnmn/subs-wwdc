@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.696 --> 00:22:01.256 A:middle
+complicated expression involving
+
+00:22:01.256 --> 00:22:03.236 A:middle
+reduced and the power function
+
+00:22:03.236 --> 00:22:06.586 A:middle
+from the system frameworks, you
+
+00:22:06.586 --> 00:22:08.026 A:middle
+might not have even guessed that
+
+00:22:08.026 --> 00:22:09.566 A:middle
+"double" was inferred type of
+
+00:22:09.566 --> 00:22:10.296 A:middle
+this property.
+
+00:22:11.066 --> 00:22:12.126 A:middle
+And so by providing this
+
+00:22:12.126 --> 00:22:14.076 A:middle
+information here, you've saved
+
+00:22:14.076 --> 00:22:15.406 A:middle
+work that the compiler would
+
+00:22:15.406 --> 00:22:17.796 A:middle
+have to do in every file that
+
+00:22:17.826 --> 00:22:18.876 A:middle
+uses this struct.
+
+00:22:19.626 --> 00:22:21.636 A:middle
+And you've also saved work that
+
+00:22:21.636 --> 00:22:23.046 A:middle
+your coworkers would have to do
+
+00:22:23.336 --> 00:22:25.086 A:middle
+to figure out what really is the
+
+00:22:25.086 --> 00:22:26.086 A:middle
+type of that big number
+
+00:22:26.086 --> 00:22:26.576 A:middle
+property.
+
+00:22:27.156 --> 00:22:30.166 A:middle
+So a lot of times you can get
+
+00:22:30.166 --> 00:22:31.226 A:middle
+this extra key piece of
+
+00:22:31.226 --> 00:22:32.596 A:middle
+information that will help your
+
+00:22:32.596 --> 00:22:34.786 A:middle
+build times is also an example
+
+00:22:34.786 --> 00:22:36.036 A:middle
+of a good software engineering
+
+00:22:36.036 --> 00:22:36.666 A:middle
+practice.
+
+00:22:37.806 --> 00:22:38.846 A:middle
+Let's take a look at another
+
+00:22:38.846 --> 00:22:40.516 A:middle
+example involving closures.
+
+00:22:41.536 --> 00:22:43.286 A:middle
+This time I'm trying to define a
+
+00:22:43.286 --> 00:22:44.936 A:middle
+function that will return the
+
+00:22:44.936 --> 00:22:47.156 A:middle
+sum of the non-optional values
+
+00:22:47.156 --> 00:22:48.186 A:middle
+of its arguments.
+
+00:22:48.926 --> 00:22:50.156 A:middle
+And if all three arguments are
+
+00:22:50.156 --> 00:22:51.826 A:middle
+nil, it will return nil.
+
+00:22:53.136 --> 00:22:54.696 A:middle
+And I'm trying to use one of
+
+00:22:54.696 --> 00:22:56.726 A:middle
+Swift's cool features where if
+
+00:22:56.726 --> 00:22:58.526 A:middle
+you have a closure with a single
+
+00:22:58.526 --> 00:23:00.646 A:middle
+expression in its body, then the
+

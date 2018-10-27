@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.236 --> 00:01:00.216 A:middle
+See a map you like?
+
+00:01:00.626 --> 00:01:02.016 A:middle
+View its source, see how it
+
+00:01:02.016 --> 00:01:02.526 A:middle
+works.
+
+00:01:02.916 --> 00:01:04.135 A:middle
+It's certainly how I learned.
+
+00:01:05.846 --> 00:01:07.396 A:middle
+Unfortunately, that sometimes
+
+00:01:07.396 --> 00:01:08.596 A:middle
+means that your API
+
+00:01:08.596 --> 00:01:10.006 A:middle
+authorization credentials can
+
+00:01:10.006 --> 00:01:11.796 A:middle
+get copied and used by mistake
+
+00:01:11.796 --> 00:01:14.076 A:middle
+without your permission and that
+
+00:01:14.076 --> 00:01:16.106 A:middle
+unauthorized use can count
+
+00:01:16.106 --> 00:01:17.316 A:middle
+against your usage limits.
+
+00:01:18.196 --> 00:01:19.846 A:middle
+Once the limit is reached, your
+
+00:01:19.846 --> 00:01:21.526 A:middle
+site may no longer be able to
+
+00:01:21.526 --> 00:01:22.426 A:middle
+display maps.
+
+00:01:23.216 --> 00:01:24.946 A:middle
+The MapKit JS authorization
+
+00:01:24.946 --> 00:01:26.066 A:middle
+system is designed to give you
+
+00:01:26.066 --> 00:01:27.456 A:middle
+more control over how your
+
+00:01:27.456 --> 00:01:28.566 A:middle
+credentials are used.
+
+00:01:29.106 --> 00:01:31.806 A:middle
+You can set a time when access
+
+00:01:31.806 --> 00:01:34.306 A:middle
+should expire and restrict
+
+00:01:34.306 --> 00:01:35.966 A:middle
+access to a specific domain.
+
+00:01:36.306 --> 00:01:38.306 A:middle
+It's the web and others will
+
+00:01:38.306 --> 00:01:39.576 A:middle
+still be able to view course and
+
+00:01:39.576 --> 00:01:40.386 A:middle
+poke around in the web
+
+00:01:40.386 --> 00:01:42.436 A:middle
+inspector, but if somebody ends
+
+00:01:42.436 --> 00:01:43.666 A:middle
+up with your credentials for any
+
+00:01:43.666 --> 00:01:45.016 A:middle
+reason, there will be limits on
+
+00:01:45.016 --> 00:01:45.936 A:middle
+how they can use it.
+
+00:01:47.476 --> 00:01:50.076 A:middle
+Let's discuss how MapKit JS
+
+00:01:50.076 --> 00:01:51.406 A:middle
+authorization works at a high
+
+00:01:51.406 --> 00:01:51.836 A:middle
+level.
+
+00:01:52.896 --> 00:01:54.956 A:middle
+Once you have a MapKit JS key,
+
+00:01:55.436 --> 00:01:56.916 A:middle
+you'll save it somewhere safe.
+
+00:01:57.586 --> 00:01:58.796 A:middle
+This will never be shared over
+
+00:01:58.796 --> 00:01:59.236 A:middle
+the web.
+
+00:01:59.446 --> 00:02:01.616 A:middle
+Instead, you'll create tokens
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.326 --> 00:19:01.116 A:middle
+immediately be unlocked since
+
+00:19:01.116 --> 00:19:02.886 A:middle
+your server received that push
+
+00:19:03.016 --> 00:19:05.716 A:middle
+straight from the App Store.
+
+00:19:05.956 --> 00:19:07.416 A:middle
+It's really important to unlock
+
+00:19:07.416 --> 00:19:09.076 A:middle
+users in a speedy manner when
+
+00:19:09.076 --> 00:19:09.866 A:middle
+this sort of thing happens,
+
+00:19:09.866 --> 00:19:10.916 A:middle
+especially when they go to all
+
+00:19:10.916 --> 00:19:12.066 A:middle
+that effort for updating their
+
+00:19:12.066 --> 00:19:13.866 A:middle
+credit card info manually and
+
+00:19:13.866 --> 00:19:14.846 A:middle
+waiting for access to the
+
+00:19:14.846 --> 00:19:15.326 A:middle
+servers.
+
+00:19:15.626 --> 00:19:16.436 A:middle
+But there's one thing to note
+
+00:19:16.436 --> 00:19:17.656 A:middle
+here and that's the notification
+
+00:19:17.656 --> 00:19:19.386 A:middle
+is only sent if the subscription
+
+00:19:19.386 --> 00:19:20.846 A:middle
+actually lapsed like we just
+
+00:19:20.846 --> 00:19:21.166 A:middle
+saw.
+
+00:19:22.026 --> 00:19:23.476 A:middle
+To discover successful renewal
+
+00:19:23.476 --> 00:19:24.936 A:middle
+transactions you still need to
+
+00:19:24.936 --> 00:19:26.036 A:middle
+rely on status polling
+
+00:19:26.036 --> 00:19:27.256 A:middle
+techniques we just outlined
+
+00:19:27.256 --> 00:19:27.626 A:middle
+before.
+
+00:19:28.616 --> 00:19:30.016 A:middle
+But it's really easy to set up
+
+00:19:30.016 --> 00:19:30.926 A:middle
+to use server-to-server
+
+00:19:30.926 --> 00:19:31.646 A:middle
+notifications.
+
+00:19:31.876 --> 00:19:34.096 A:middle
+All you do is enter a URL in App
+
+00:19:34.096 --> 00:19:34.506 A:middle
+Store Connect.
+
+00:19:35.306 --> 00:19:36.426 A:middle
+This is just an endpoint on your
+
+00:19:36.426 --> 00:19:38.146 A:middle
+own server and if you enter it
+
+00:19:38.146 --> 00:19:39.746 A:middle
+into App Store Connect the App
+
+00:19:39.746 --> 00:19:40.736 A:middle
+Store will begin to send your
+
+00:19:40.736 --> 00:19:42.936 A:middle
+server HTTPS posts for these
+
+00:19:43.026 --> 00:19:44.056 A:middle
+status change events.
+
+00:19:44.466 --> 00:19:45.926 A:middle
+And as we saw included in the
+
+00:19:45.926 --> 00:19:47.336 A:middle
+post is that latest transaction
+
+00:19:47.376 --> 00:19:49.276 A:middle
+info for the transaction that
+
+00:19:49.276 --> 00:19:49.566 A:middle
+triggered it.
+
+00:19:50.666 --> 00:19:51.866 A:middle
+You do make sure your server is
+
+00:19:51.866 --> 00:19:53.896 A:middle
+ATS in order to receive these,
+
+00:19:54.096 --> 00:19:55.186 A:middle
+but it's a really simple step
+
+00:19:55.186 --> 00:19:56.656 A:middle
+that you can do to give a bunch
+
+00:19:56.656 --> 00:19:57.526 A:middle
+of users a much better
+
+00:19:57.526 --> 00:19:57.976 A:middle
+experience.
+

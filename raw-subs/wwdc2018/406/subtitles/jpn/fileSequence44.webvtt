@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:57.538 --> 00:44:02.242 align:start position:27% line:-2
+型の相違が考慮され
+コンパイラエラーになります
+
+00:44:02.442 --> 00:44:07.581 align:start position:27% line:-2
+非再帰的アルゴリズムが
+書けなくなるので不便ですし
+
+00:44:07.714 --> 00:44:11.719 align:start position:25% line:-2
+特定のコレクション型の動作も
+反映されません
+
+00:44:11.819 --> 00:44:16.256 align:start position:27% line:-2
+例えば 文字列のスライスは
+部分文字列ですが
+
+00:44:16.356 --> 00:44:20.928 align:start position:25% line:-2
+そのスライスは
+部分部分文字列ではありません
+
+00:44:21.161 --> 00:44:24.731 align:start position:21% line:-1
+部分文字列型の別インスタンスです
+
+00:44:25.098 --> 00:44:30.170 align:start position:23% line:-2
+このSliceアダプタの動きを
+振り返ってみましょう
+
+00:44:30.304 --> 00:44:34.975 align:start position:20% line:-2
+コレクションSelfを
+“i”から“j”までスライスすると
+
+00:44:35.442 --> 00:44:38.545 align:start position:18% line:-1
+Slice<Self>の型ができます
+
+00:44:38.645 --> 00:44:42.449 align:start position:25% line:-2
+これは土台のSelfの表示に
+過ぎません
+
+00:44:42.583 --> 00:44:47.654 align:start position:16% line:-2
+さらにスライスすると
+Slice<Slice<Self>>で
+
+00:44:47.754 --> 00:44:53.594 align:start position:21% line:-2
+同じ土台のコレクションSelfの
+表示の表示です
+
+00:44:53.827 --> 00:44:57.164 align:start position:21% line:-1
+これが“果てしない塔”の実例です
+
+00:44:57.297 --> 00:44:59.833 align:start position:27% line:-1
+しかし 他の方法もあります
+
+00:44:59.967 --> 00:45:05.839 align:start position:18% line:-2
+Slice型は 土台のコレクションと
+同じインデックスを使いましたね
+

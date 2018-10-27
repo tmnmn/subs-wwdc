@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.336 --> 00:12:00.956 A:middle
+connect to, port 993, and you
+
+00:12:00.956 --> 00:12:04.306 A:middle
+want to be using TLS as well as
+
+00:12:04.856 --> 00:12:04.946 A:middle
+TCP.
+
+00:12:05.156 --> 00:12:06.336 A:middle
+So how would this look in
+
+00:12:06.336 --> 00:12:07.426 A:middle
+sockets traditionally?
+
+00:12:08.466 --> 00:12:09.576 A:middle
+Something like this to get
+
+00:12:09.576 --> 00:12:09.926 A:middle
+started.
+
+00:12:10.526 --> 00:12:11.516 A:middle
+You would take your host name.
+
+00:12:12.126 --> 00:12:13.866 A:middle
+You would call some DNS API to
+
+00:12:13.866 --> 00:12:14.796 A:middle
+resolve that host name.
+
+00:12:15.156 --> 00:12:16.576 A:middle
+Let's say this is getaddrinfo.
+
+00:12:17.346 --> 00:12:18.256 A:middle
+You'll get back one or more
+
+00:12:18.256 --> 00:12:18.876 A:middle
+addresses.
+
+00:12:19.206 --> 00:12:20.386 A:middle
+You'll have to decide which one
+
+00:12:20.386 --> 00:12:21.526 A:middle
+you want to connect to first.
+
+00:12:22.576 --> 00:12:24.116 A:middle
+You'll call socket with the
+
+00:12:24.116 --> 00:12:25.316 A:middle
+appropriate address family.
+
+00:12:26.446 --> 00:12:28.066 A:middle
+You will set a series of socket
+
+00:12:28.066 --> 00:12:28.726 A:middle
+options.
+
+00:12:29.116 --> 00:12:30.176 A:middle
+Let's say you want to make your
+
+00:12:30.176 --> 00:12:32.126 A:middle
+socket nonblocking like Josh
+
+00:12:32.126 --> 00:12:32.876 A:middle
+mentioned before.
+
+00:12:34.356 --> 00:12:36.296 A:middle
+Then you call connect to start
+
+00:12:36.296 --> 00:12:38.216 A:middle
+TCP, and then you wait for a
+
+00:12:38.216 --> 00:12:38.856 A:middle
+writable event.
+
+00:12:40.056 --> 00:12:41.426 A:middle
+And this is before you do
+
+00:12:41.426 --> 00:12:42.876 A:middle
+anything with TLS, and that's a
+
+00:12:42.876 --> 00:12:44.426 A:middle
+whole host of other problems.
+
+00:12:44.966 --> 00:12:47.726 A:middle
+So how does this look in
+
+00:12:47.726 --> 00:12:48.366 A:middle
+Network.framework?
+
+00:12:48.756 --> 00:12:50.066 A:middle
+And we hope that it looks very
+
+00:12:50.066 --> 00:12:52.536 A:middle
+familiar to you but a little bit
+
+00:12:52.536 --> 00:12:52.956 A:middle
+simpler.
+
+00:12:53.716 --> 00:12:54.856 A:middle
+So the first thing you do is you
+
+00:12:54.856 --> 00:12:55.986 A:middle
+create a connect a connection
+
+00:12:55.986 --> 00:12:56.206 A:middle
+object.
+
+00:12:56.536 --> 00:12:57.936 A:middle
+And a connection object is based
+
+00:12:57.936 --> 00:12:58.606 A:middle
+on two things.
+
+00:12:59.116 --> 00:13:00.286 A:middle
+You have an endpoint, which
+

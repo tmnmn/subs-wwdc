@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:00.446 --> 00:52:02.656 A:middle
+And now, we can see that we can
+
+00:52:02.656 --> 00:52:05.666 A:middle
+select the routes to - from the
+
+00:52:05.666 --> 00:52:08.336 A:middle
+list of routes that have - that
+
+00:52:08.336 --> 00:52:09.686 A:middle
+has been provided.
+
+00:52:09.686 --> 00:52:10.926 A:middle
+I haven't implemented showing
+
+00:52:10.926 --> 00:52:11.546 A:middle
+the data yet.
+
+00:52:12.196 --> 00:52:13.786 A:middle
+Let's see if I select another
+
+00:52:13.786 --> 00:52:14.126 A:middle
+route.
+
+00:52:14.716 --> 00:52:16.336 A:middle
+What happens is that there is
+
+00:52:16.336 --> 00:52:18.246 A:middle
+nothing happening by default
+
+00:52:18.246 --> 00:52:19.416 A:middle
+when an overlay's selected, but
+
+00:52:19.416 --> 00:52:20.496 A:middle
+there is nothing happening by
+
+00:52:20.496 --> 00:52:21.566 A:middle
+default when an overlay is
+
+00:52:21.566 --> 00:52:22.216 A:middle
+deselected.
+
+00:52:22.216 --> 00:52:23.276 A:middle
+So, I have to implement that
+
+00:52:23.376 --> 00:52:25.336 A:middle
+part of the behavior as well.
+
+00:52:25.896 --> 00:52:29.826 A:middle
+So, in this case, I will add a
+
+00:52:29.826 --> 00:52:33.266 A:middle
+new event listener for deselect
+
+00:52:33.266 --> 00:52:33.646 A:middle
+events.
+
+00:52:34.206 --> 00:52:35.316 A:middle
+So, when an overlay is
+
+00:52:35.316 --> 00:52:37.616 A:middle
+deselected, then I will switch
+
+00:52:37.616 --> 00:52:39.286 A:middle
+its style to the default one.
+
+00:52:41.076 --> 00:52:44.456 A:middle
+So, this should fix my issue.
+
+00:52:45.686 --> 00:52:46.686 A:middle
+So, let's try again.
+
+00:52:47.426 --> 00:52:48.796 A:middle
+I have a route here.
+
+00:52:49.466 --> 00:52:51.626 A:middle
+And if I select again, I do the
+
+00:52:51.626 --> 00:52:52.786 A:middle
+same place because here we have
+
+00:52:52.786 --> 00:52:53.966 A:middle
+two overlays on top of each
+
+00:52:53.966 --> 00:52:54.256 A:middle
+other.
+
+00:52:54.486 --> 00:52:55.656 A:middle
+This will select the other
+
+00:52:55.656 --> 00:52:56.106 A:middle
+overlay.
+
+00:52:56.956 --> 00:52:58.456 A:middle
+And the deselection event
+
+00:52:58.456 --> 00:53:00.026 A:middle
+handler is working, so, my
+

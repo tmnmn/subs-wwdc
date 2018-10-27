@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.306 --> 00:10:02.126 A:middle
+builder, but because it's on
+
+00:10:02.126 --> 00:10:04.226 A:middle
+watchOS and it works closely
+
+00:10:04.226 --> 00:10:06.676 A:middle
+with HKWorkoutSession, it has
+
+00:10:06.736 --> 00:10:08.106 A:middle
+all of these really cool
+
+00:10:08.106 --> 00:10:10.956 A:middle
+features like automatic sample
+
+00:10:11.026 --> 00:10:12.786 A:middle
+and event collection, which
+
+00:10:12.786 --> 00:10:13.776 A:middle
+we'll talk about later.
+
+00:10:15.736 --> 00:10:18.006 A:middle
+So let's go back to the workout
+
+00:10:18.006 --> 00:10:21.136 A:middle
+app life cycle, and we'll see
+
+00:10:21.136 --> 00:10:23.206 A:middle
+how we can now set up and start
+
+00:10:23.206 --> 00:10:25.186 A:middle
+the workout using the new
+
+00:10:25.276 --> 00:10:25.986 A:middle
+workout builder.
+
+00:10:29.456 --> 00:10:31.936 A:middle
+So first, we need to create a
+
+00:10:31.936 --> 00:10:32.736 A:middle
+workout builder.
+
+00:10:33.736 --> 00:10:34.956 A:middle
+And to do that, we use the
+
+00:10:34.956 --> 00:10:37.356 A:middle
+initializer, and we have to pass
+
+00:10:37.356 --> 00:10:39.526 A:middle
+a healthStore object, a
+
+00:10:39.606 --> 00:10:41.666 A:middle
+configuration which contains
+
+00:10:41.666 --> 00:10:43.646 A:middle
+information like the workout
+
+00:10:43.646 --> 00:10:45.656 A:middle
+type, whether it's indoor or
+
+00:10:45.656 --> 00:10:47.796 A:middle
+outdoor, and other information.
+
+00:10:48.616 --> 00:10:51.156 A:middle
+And finally, an optional device
+
+00:10:51.726 --> 00:10:53.546 A:middle
+if the data comes from an
+
+00:10:53.546 --> 00:10:54.906 A:middle
+external device, for example.
+
+00:10:56.336 --> 00:10:58.946 A:middle
+Once my builder is created, all
+
+00:10:58.946 --> 00:10:59.996 A:middle
+I need to do is call
+
+00:10:59.996 --> 00:11:02.706 A:middle
+beginCollection and pass a start
+

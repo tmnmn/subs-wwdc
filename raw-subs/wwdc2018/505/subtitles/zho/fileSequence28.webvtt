@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.980 --> 00:28:06.453 align:middle line:-2
+第二个方法会返回一个
+operationQueue
+
+00:28:06.520 --> 00:28:10.257 align:middle line:-1
+文件会被写入其中
+
+00:28:10.991 --> 00:28:15.395 align:middle line:-1
+我们强烈建议你实现这个可选的方法
+
+00:28:15.462 --> 00:28:19.366 align:middle line:-2
+提供一个后台
+operationQueue
+
+00:28:19.433 --> 00:28:21.902 align:middle line:-1
+否则主队列会被用在其他内容上
+
+00:28:24.137 --> 00:28:27.941 align:middle line:0
+最后writePromiseToFile
+会被调用
+
+00:28:28.008 --> 00:28:30.110 align:middle line:0
+让你将文件写入磁盘上
+
+00:28:31.645 --> 00:28:34.781 align:middle line:-2
+在你完成的时候
+别忘了调用完成句柄
+
+00:28:37.217 --> 00:28:40.988 align:middle line:-1
+这就是接收以及提供文件承诺的内容
+
+00:28:41.054 --> 00:28:44.391 align:middle line:-1
+我们还介绍了你可以用来
+
+00:28:44.458 --> 00:28:48.762 align:middle line:-2
+将你的app调整为可以
+接收和提供文件承诺的API
+
+00:28:48.829 --> 00:28:52.065 align:middle line:-1
+现在我想请Joachim上台来
+
+00:28:52.132 --> 00:28:54.201 align:middle line:-2
+通过示例app
+给你们展示所有这些内容
+
+00:28:54.268 --> 00:28:55.335 align:middle line:-1
+谢谢 Joachim？
+
+00:28:59.039 --> 00:28:59.973 align:middle line:-1
+谢谢
+

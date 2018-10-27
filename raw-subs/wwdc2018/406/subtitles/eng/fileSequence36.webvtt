@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.526 --> 00:36:01.716 A:middle
+comes before the middle element.
+
+00:36:01.956 --> 00:36:03.166 A:middle
+So we know which half of the
+
+00:36:03.166 --> 00:36:04.696 A:middle
+collection contains our
+
+00:36:04.696 --> 00:36:05.516 A:middle
+insertion point.
+
+00:36:06.516 --> 00:36:08.396 A:middle
+Now in our example, the value to
+
+00:36:08.396 --> 00:36:09.626 A:middle
+insert is greater than the
+
+00:36:09.626 --> 00:36:10.316 A:middle
+middle element.
+
+00:36:10.656 --> 00:36:11.846 A:middle
+So we take a slice of the
+
+00:36:11.846 --> 00:36:13.766 A:middle
+collection from the index after
+
+00:36:13.766 --> 00:36:14.316 A:middle
+the middle.
+
+00:36:14.576 --> 00:36:16.036 A:middle
+All the way until the end.
+
+00:36:16.556 --> 00:36:18.106 A:middle
+And recursively call sort and
+
+00:36:18.106 --> 00:36:19.616 A:middle
+insertion point of on that
+
+00:36:19.616 --> 00:36:20.266 A:middle
+slice.
+
+00:36:20.686 --> 00:36:21.466 A:middle
+This is common of
+
+00:36:21.466 --> 00:36:22.936 A:middle
+divide-and-conquer algorithms.
+
+00:36:23.126 --> 00:36:24.236 A:middle
+Where you reduce the problem
+
+00:36:24.236 --> 00:36:26.036 A:middle
+space and then recurse.
+
+00:36:26.036 --> 00:36:28.706 A:middle
+Now to make this work, we need
+
+00:36:28.706 --> 00:36:30.116 A:middle
+that slicing syntax.
+
+00:36:30.116 --> 00:36:31.636 A:middle
+Provide a suitable slice of a
+
+00:36:31.636 --> 00:36:32.316 A:middle
+collection.
+
+00:36:33.076 --> 00:36:34.356 A:middle
+We can do this for all
+
+00:36:34.356 --> 00:36:35.966 A:middle
+collections by introducing a
+
+00:36:35.966 --> 00:36:37.846 A:middle
+general operation that takes a
+
+00:36:37.846 --> 00:36:40.496 A:middle
+range of indices and produces a
+
+00:36:40.496 --> 00:36:40.966 A:middle
+slice.
+
+00:36:41.296 --> 00:36:41.816 A:middle
+Like this.
+
+00:36:42.966 --> 00:36:44.386 A:middle
+Now remember that the slice
+
+00:36:44.386 --> 00:36:46.086 A:middle
+adapter we discussed earlier
+
+00:36:46.126 --> 00:36:47.896 A:middle
+works on any collection.
+
+00:36:48.116 --> 00:36:50.066 A:middle
+Providing a view of the elements
+
+00:36:50.066 --> 00:36:51.576 A:middle
+of the underlying collection
+
+00:36:51.866 --> 00:36:53.956 A:middle
+that is itself a collection.
+
+00:36:54.616 --> 00:36:55.166 A:middle
+This makes our
+
+00:36:55.166 --> 00:36:56.286 A:middle
+divide-and-conquer algorithm
+
+00:36:56.286 --> 00:36:57.776 A:middle
+work for any collection.
+
+00:36:58.196 --> 00:36:59.916 A:middle
+As well as providing slicing
+
+00:36:59.916 --> 00:37:02.186 A:middle
+syntax to all collections.
+

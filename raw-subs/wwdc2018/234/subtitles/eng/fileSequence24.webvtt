@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.036 --> 00:24:00.706 A:middle
+because I'm making a synchronous
+
+00:24:00.706 --> 00:24:02.416 A:middle
+request in the click handler,
+
+00:24:02.666 --> 00:24:04.206 A:middle
+which blocks Safari from
+
+00:24:04.206 --> 00:24:05.706 A:middle
+navigating to the next page.
+
+00:24:06.446 --> 00:24:08.026 A:middle
+Making a synchronous request
+
+00:24:08.026 --> 00:24:09.306 A:middle
+ensures the browser doesn't
+
+00:24:09.306 --> 00:24:10.766 A:middle
+cancel the request when
+
+00:24:10.766 --> 00:24:12.226 A:middle
+navigating to the next page.
+
+00:24:13.636 --> 00:24:14.636 A:middle
+But, this is waiting for my
+
+00:24:14.636 --> 00:24:16.066 A:middle
+server to respond, which can
+
+00:24:16.066 --> 00:24:16.766 A:middle
+take a while.
+
+00:24:16.906 --> 00:24:18.046 A:middle
+And, the thing is, I don't
+
+00:24:18.046 --> 00:24:19.256 A:middle
+really care about the response,
+
+00:24:19.256 --> 00:24:20.286 A:middle
+I just want to make sure that
+
+00:24:20.286 --> 00:24:21.636 A:middle
+that data hits my server.
+
+00:24:22.536 --> 00:24:24.406 A:middle
+So, the Beacon API is actually a
+
+00:24:24.406 --> 00:24:25.826 A:middle
+perfect replacement for this.
+
+00:24:26.376 --> 00:24:29.776 A:middle
+I'm going to start by checking
+
+00:24:30.416 --> 00:24:32.266 A:middle
+that the Beacon API is available
+
+00:24:32.266 --> 00:24:33.746 A:middle
+in the browser by looking for
+
+00:24:33.746 --> 00:24:35.396 A:middle
+the sendBeacon method on the
+
+00:24:35.396 --> 00:24:36.386 A:middle
+navigator object.
+
+00:24:37.366 --> 00:24:38.656 A:middle
+If it's not available, I'll
+
+00:24:38.656 --> 00:24:39.996 A:middle
+continue doing what I was doing
+
+00:24:39.996 --> 00:24:40.346 A:middle
+before.
+
+00:24:41.526 --> 00:24:43.626 A:middle
+Then, we can just use it.
+
+00:24:46.496 --> 00:24:49.106 A:middle
+Passing in the endpoint I want
+
+00:24:49.756 --> 00:24:53.666 A:middle
+to hit, along with the data.
+
+00:24:53.666 --> 00:24:54.356 A:middle
+Let's save that.
+
+00:24:55.196 --> 00:24:57.726 A:middle
+We'll go back, reload to get the
+
+00:24:57.726 --> 00:24:58.236 A:middle
+new script.
+
+00:24:59.336 --> 00:25:00.676 A:middle
+And now, when I click this link
+

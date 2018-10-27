@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.456 --> 00:33:02.186 A:middle
+And the way we do this is we
+
+00:33:02.186 --> 00:33:03.846 A:middle
+store the host time when each
+
+00:33:03.846 --> 00:33:04.776 A:middle
+command buffer completion
+
+00:33:04.776 --> 00:33:05.456 A:middle
+handler was called.
+
+00:33:05.526 --> 00:33:07.366 A:middle
+And if you do this for every
+
+00:33:07.366 --> 00:33:09.256 A:middle
+command buffer, you can then use
+
+00:33:09.256 --> 00:33:10.346 A:middle
+the differences between these
+
+00:33:10.346 --> 00:33:11.456 A:middle
+times to figure out how long the
+
+00:33:11.456 --> 00:33:12.376 A:middle
+GPU was running for.
+
+00:33:13.416 --> 00:33:15.976 A:middle
+So, for example, to estimate how
+
+00:33:15.976 --> 00:33:17.106 A:middle
+long the three command buffers
+
+00:33:17.106 --> 00:33:19.096 A:middle
+shown here took execute, we've
+
+00:33:19.096 --> 00:33:20.266 A:middle
+measured the time between the
+
+00:33:20.266 --> 00:33:21.386 A:middle
+completion handler was called
+
+00:33:21.386 --> 00:33:23.356 A:middle
+for command buffer 3 and command
+
+00:33:23.356 --> 00:33:23.816 A:middle
+buffer 0.
+
+00:33:25.276 --> 00:33:27.996 A:middle
+So, that's the theory.
+
+00:33:28.286 --> 00:33:29.586 A:middle
+And now, let's see it in action.
+
+00:33:42.126 --> 00:33:42.326 A:middle
+All right.
+
+00:33:42.326 --> 00:33:43.436 A:middle
+So, this is the Amazon
+
+00:33:43.436 --> 00:33:44.836 A:middle
+Lumberyard Bistro scene that
+
+00:33:44.836 --> 00:33:46.586 A:middle
+Sean was showing you earlier.
+
+00:33:47.586 --> 00:33:48.776 A:middle
+And this time, it's running on a
+
+00:33:48.776 --> 00:33:49.456 A:middle
+MacBook Pro.
+
+00:33:49.456 --> 00:33:52.126 A:middle
+And you can see in the top left
+
+00:33:52.126 --> 00:33:53.176 A:middle
+of the screen here, we have a
+
+00:33:53.176 --> 00:33:54.376 A:middle
+rays per second metric.
+
+00:33:54.896 --> 00:33:56.176 A:middle
+As you can get an idea for how
+
+00:33:56.176 --> 00:33:56.566 A:middle
+it's running.
+
+00:33:57.156 --> 00:33:59.566 A:middle
+So, this includes the primary
+
+00:33:59.566 --> 00:34:01.266 A:middle
+rays, secondary rays, and the
+

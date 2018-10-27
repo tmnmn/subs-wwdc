@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.396 --> 00:37:00.656 A:middle
+Swift and Objective-C code, the
+
+00:37:00.656 --> 00:37:02.436 A:middle
+importer finds declarations in
+
+00:37:02.436 --> 00:37:03.226 A:middle
+the umbrella header.
+
+00:37:04.646 --> 00:37:05.936 A:middle
+This is the header that defines
+
+00:37:05.976 --> 00:37:07.176 A:middle
+the public interface.
+
+00:37:08.316 --> 00:37:10.156 A:middle
+In this way, Swift code inside
+
+00:37:10.186 --> 00:37:11.876 A:middle
+the framework can call public
+
+00:37:11.876 --> 00:37:13.926 A:middle
+Objective-C code in the same
+
+00:37:14.036 --> 00:37:14.466 A:middle
+framework.
+
+00:37:16.636 --> 00:37:18.496 A:middle
+Finally, within your app and
+
+00:37:18.496 --> 00:37:20.466 A:middle
+unit tests, you can add imports
+
+00:37:20.466 --> 00:37:21.876 A:middle
+to the target's bridging header.
+
+00:37:22.256 --> 00:37:23.766 A:middle
+To allow declarations from them
+
+00:37:24.156 --> 00:37:25.486 A:middle
+to be called from Swift.
+
+00:37:25.906 --> 00:37:30.786 A:middle
+Now when the importer brings in
+
+00:37:30.786 --> 00:37:32.856 A:middle
+declarations, it often changes
+
+00:37:32.856 --> 00:37:34.076 A:middle
+them to make them more
+
+00:37:34.076 --> 00:37:34.636 A:middle
+idiomatic.
+
+00:37:35.666 --> 00:37:36.906 A:middle
+For example, it will import
+
+00:37:36.906 --> 00:37:38.546 A:middle
+Objective-C methods that use the
+
+00:37:38.546 --> 00:37:41.146 A:middle
+NSError idiom as throwing
+
+00:37:41.146 --> 00:37:43.286 A:middle
+methods using Swift's built-in
+
+00:37:43.286 --> 00:37:44.596 A:middle
+error handling language feature.
+
+00:37:45.256 --> 00:37:49.286 A:middle
+In particular, it will drop
+
+00:37:49.436 --> 00:37:51.276 A:middle
+parameter type names following
+
+00:37:51.276 --> 00:37:52.606 A:middle
+verbs and prepositions.
+
+00:37:53.976 --> 00:37:56.006 A:middle
+For example, the drawPet atPoint
+
+00:37:56.046 --> 00:37:57.846 A:middle
+method has the word pet.
+
+00:37:58.636 --> 00:38:00.146 A:middle
+For a parameter of type pet
+

@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:56.210 --> 00:18:02.149 align:start position:23% line:-2
+そして 再生用のリファレンスを
+TVPlayerへ渡します
+
+00:18:04.618 --> 00:18:10.924 align:start position:20% line:-2
+ここで TVPlayerの注意点を
+いくつかお伝えします
+
+00:18:12.159 --> 00:18:15.495 align:start position:21% line:-2
+まず“should”イベントへの
+対応が必要です
+
+00:18:15.996 --> 00:18:20.434 align:start position:23% line:-2
+インタースティシャルのケースが
+多いため
+
+00:18:20.534 --> 00:18:23.704 align:start position:25% line:-1
+ネイティブコードで処理します
+
+00:18:25.806 --> 00:18:29.276 align:start position:14% line:-1
+再生にFairPlayの暗号化を使う場合
+
+00:18:29.643 --> 00:18:33.814 align:start position:7% line:-1
+AVContentKeySessionが必要です
+
+00:18:34.948 --> 00:18:37.584 align:start position:25% line:-1
+関連セッションは次の２つです
+
+00:18:37.684 --> 00:18:41.555 align:start position:0% line:-1
+Advances in HTTP Live Streaming
+
+00:18:41.655 --> 00:18:45.526 align:start position:11% line:-2
+そしてAVContentKeySession
+Best Practicesです
+
+00:18:47.661 --> 00:18:52.966 align:start position:14% line:-2
+最後に overlayと
+interactiveOverlayには
+
+00:18:53.066 --> 00:18:55.135 align:start position:36% line:-1
+対応していません
+
+00:18:55.502 --> 00:19:00.274 align:start position:30% line:-2
+インターフェイスのため
+個別の対応が必要です
+

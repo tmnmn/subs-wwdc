@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.536 --> 00:18:00.626 A:middle
+Let's take a look at what's
+
+00:18:00.626 --> 00:18:02.296 A:middle
+under the hood of PyCoreImage.
+
+00:18:03.566 --> 00:18:05.906 A:middle
+So, PyCoreImage is made of three
+
+00:18:05.906 --> 00:18:06.656 A:middle
+main pieces.
+
+00:18:07.206 --> 00:18:09.366 A:middle
+It uses Core Image for its
+
+00:18:09.366 --> 00:18:10.086 A:middle
+rendering back end.
+
+00:18:10.636 --> 00:18:12.216 A:middle
+It uses Python for the
+
+00:18:12.216 --> 00:18:13.806 A:middle
+programming interface.
+
+00:18:14.296 --> 00:18:16.796 A:middle
+And it had -- it also has a thin
+
+00:18:16.796 --> 00:18:19.106 A:middle
+layer of an [inaudible] code to
+
+00:18:19.106 --> 00:18:20.416 A:middle
+allow interoperability with your
+
+00:18:20.416 --> 00:18:21.356 A:middle
+existing code bases.
+
+00:18:22.356 --> 00:18:24.526 A:middle
+We believe PyCoreImage can now
+
+00:18:24.526 --> 00:18:25.686 A:middle
+allow you to reduce the friction
+
+00:18:25.686 --> 00:18:27.466 A:middle
+between your prototyping and
+
+00:18:27.466 --> 00:18:28.206 A:middle
+product-ready code.
+
+00:18:28.796 --> 00:18:30.126 A:middle
+If you'd like to stay in a
+
+00:18:30.126 --> 00:18:31.576 A:middle
+Swift-centric environment, a lot
+
+00:18:31.576 --> 00:18:32.686 A:middle
+of that can be done as well
+
+00:18:32.686 --> 00:18:34.316 A:middle
+using Swift playgrounds, and we
+
+00:18:34.316 --> 00:18:35.066 A:middle
+encourage you to look at a
+
+00:18:35.066 --> 00:18:36.146 A:middle
+session on creating your own
+
+00:18:36.146 --> 00:18:38.936 A:middle
+Swift playgrounds subscription.
+
+00:18:41.016 --> 00:18:42.256 A:middle
+All right.
+
+00:18:42.506 --> 00:18:44.086 A:middle
+Let's take a look at the main
+
+00:18:44.086 --> 00:18:45.386 A:middle
+components of PyCoreImage.
+
+00:18:46.266 --> 00:18:48.276 A:middle
+So, PyCoreImage leverages Python
+
+00:18:48.276 --> 00:18:50.036 A:middle
+bindings for objective C, PyObjC
+
+00:18:50.036 --> 00:18:52.536 A:middle
+and interestingly, we've been
+
+00:18:52.536 --> 00:18:54.256 A:middle
+shipping PyObjC since Mac OS
+
+00:18:54.256 --> 00:18:55.156 A:middle
+10.5 Leopard.
+
+00:18:56.276 --> 00:18:58.096 A:middle
+It was initially implemented as
+
+00:18:58.096 --> 00:18:59.316 A:middle
+a bidirectional bridge between
+
+00:18:59.316 --> 00:19:01.076 A:middle
+Python and Objective C and
+

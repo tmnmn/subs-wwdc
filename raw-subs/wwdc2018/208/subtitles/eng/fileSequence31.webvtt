@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.856 --> 00:31:01.396 A:middle
+Now, you might have noticed that
+
+00:31:01.396 --> 00:31:02.946 A:middle
+there's a consistent pattern
+
+00:31:03.206 --> 00:31:04.376 A:middle
+among these four elements.
+
+00:31:05.696 --> 00:31:08.056 A:middle
+Namely, there's a main content,
+
+00:31:09.146 --> 00:31:10.496 A:middle
+and an optional header and
+
+00:31:10.546 --> 00:31:10.816 A:middle
+footer.
+
+00:31:11.806 --> 00:31:13.116 A:middle
+And, when this composition comes
+
+00:31:13.116 --> 00:31:14.916 A:middle
+in focus, the header and footer
+
+00:31:14.916 --> 00:31:16.726 A:middle
+move out of the way, and the
+
+00:31:16.726 --> 00:31:18.886 A:middle
+content to grow in size.
+
+00:31:19.876 --> 00:31:21.766 A:middle
+This common behavior is
+
+00:31:21.766 --> 00:31:23.606 A:middle
+encapsulated in a base class,
+
+00:31:24.076 --> 00:31:25.066 A:middle
+TVLockupView.
+
+00:31:25.656 --> 00:31:28.206 A:middle
+Some of the things you can
+
+00:31:28.206 --> 00:31:31.066 A:middle
+customize in a TVLockupView are
+
+00:31:32.126 --> 00:31:33.496 A:middle
+the explicit content size.
+
+00:31:34.576 --> 00:31:35.696 A:middle
+This is really helpful when
+
+00:31:35.696 --> 00:31:36.696 A:middle
+you're laying out multiple
+
+00:31:36.696 --> 00:31:37.546 A:middle
+LockupViews.
+
+00:31:40.086 --> 00:31:41.856 A:middle
+Another one is the content-- the
+
+00:31:41.906 --> 00:31:43.406 A:middle
+size by which the content grows
+
+00:31:43.406 --> 00:31:44.176 A:middle
+when it's in focus.
+
+00:31:45.796 --> 00:31:47.066 A:middle
+These are directional insets, so
+
+00:31:47.626 --> 00:31:49.426 A:middle
+you can even specify different
+
+00:31:49.426 --> 00:31:50.776 A:middle
+amount in all four directions.
+
+00:31:51.436 --> 00:31:53.496 A:middle
+You may recall that the
+
+00:31:53.496 --> 00:31:54.456 A:middle
+CaptionButtonView is actually
+
+00:31:54.456 --> 00:31:54.916 A:middle
+using this.
+
+00:31:59.296 --> 00:32:00.546 A:middle
+When you're providing your own
+

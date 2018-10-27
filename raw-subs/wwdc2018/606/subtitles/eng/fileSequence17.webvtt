@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:00.906 --> 00:17:02.106 A:middle
+To do this we can cast
+
+00:17:02.106 --> 00:17:03.976 A:middle
+additional shadow rays from the
+
+00:17:04.026 --> 00:17:05.296 A:middle
+intersection points towards the
+
+00:17:05.296 --> 00:17:05.996 A:middle
+light source.
+
+00:17:07.175 --> 00:17:08.965 A:middle
+If a shadow ray doesn't make it
+
+00:17:08.965 --> 00:17:10.156 A:middle
+all the way to the light source,
+
+00:17:10.215 --> 00:17:11.626 A:middle
+then the original shaded point
+
+00:17:11.626 --> 00:17:12.306 A:middle
+wasn't shadow.
+
+00:17:12.665 --> 00:17:13.796 A:middle
+So, we shouldn't add its color
+
+00:17:13.796 --> 00:17:14.415 A:middle
+to the image.
+
+00:17:17.076 --> 00:17:19.106 A:middle
+We'll modify our shading kernel
+
+00:17:19.806 --> 00:17:21.185 A:middle
+to write out additional shadow
+
+00:17:21.185 --> 00:17:22.695 A:middle
+rays into another METAL buffer.
+
+00:17:24.415 --> 00:17:25.445 A:middle
+We'll then, find the
+
+00:17:25.445 --> 00:17:26.486 A:middle
+intersections with the scene,
+
+00:17:26.486 --> 00:17:26.935 A:middle
+again.
+
+00:17:27.526 --> 00:17:29.366 A:middle
+And then, we'll launch one final
+
+00:17:29.366 --> 00:17:30.996 A:middle
+kernel which will conditionally
+
+00:17:30.996 --> 00:17:32.466 A:middle
+write the shaded color into the
+
+00:17:32.466 --> 00:17:34.136 A:middle
+image based on whether or not
+
+00:17:34.136 --> 00:17:35.216 A:middle
+the shadow rays intersect at
+
+00:17:35.216 --> 00:17:35.486 A:middle
+anything.
+
+00:17:36.646 --> 00:17:38.116 A:middle
+So, let's start with the changes
+
+00:17:38.116 --> 00:17:38.946 A:middle
+to the shading kernel.
+
+00:17:39.546 --> 00:17:42.106 A:middle
+Now, shadow rays are a little
+
+00:17:42.106 --> 00:17:43.366 A:middle
+different than primary rays.
+
+00:17:43.886 --> 00:17:45.876 A:middle
+First, we need to provide a
+
+00:17:45.876 --> 00:17:48.096 A:middle
+maximum intersection distance so
+
+00:17:48.096 --> 00:17:49.166 A:middle
+that our shadow rays don't
+
+00:17:49.166 --> 00:17:50.306 A:middle
+overshoot the light source.
+
+00:17:50.916 --> 00:17:54.106 A:middle
+We also don't need to know which
+
+00:17:54.106 --> 00:17:55.396 A:middle
+triangle we hit or what the
+
+00:17:55.396 --> 00:17:56.666 A:middle
+barycentric coordinates were.
+
+00:17:57.016 --> 00:17:58.146 A:middle
+So, there are some optimizations
+
+00:17:58.146 --> 00:17:58.576 A:middle
+we can do.
+
+00:17:58.886 --> 00:18:01.876 A:middle
+And finally, remember that we
+

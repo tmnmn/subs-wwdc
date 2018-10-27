@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.217 --> 00:12:02.089 align:start position:34% line:-2
+日付が過ぎていたら
+確かに期限切れです
+
+00:12:02.189 --> 00:12:07.761 align:start position:29% line:-2
+未来の日付になっていたら
+購読期間内です
+
+00:12:08.395 --> 00:12:11.532 align:start position:34% line:-1
+例で見てみましょう
+
+00:12:13.367 --> 00:12:16.670 align:start position:29% line:-2
+オリジナルの
+トランザクションIDと―
+
+00:12:16.837 --> 00:12:20.274 align:start position:23% line:-1
+トランザクションを取り出します
+
+00:12:20.774 --> 00:12:26.079 align:start position:32% line:-2
+有効期限をソートして
+最新の日付を見て―
+
+00:12:26.180 --> 00:12:31.919 align:start position:27% line:-2
+サーバ上の最新の有効期限の
+フィールドを更新します
+
+00:12:32.553 --> 00:12:37.291 align:start position:30% line:-2
+これでユーザの
+購読期間が延長されて―
+
+00:12:37.391 --> 00:12:41.061 align:start position:27% line:-2
+サーバ側でも購読が有効だと
+確認できます
+
+00:12:41.828 --> 00:12:44.198 align:start position:23% line:-1
+StoreKitで更新する時も
+
+00:12:44.298 --> 00:12:49.369 align:start position:27% line:-2
+検証できたことをデバイスに
+通知する必要があります
+
+00:12:49.469 --> 00:12:53.907 align:start position:11% line:-2
+アプリケーションがStoreKitに
+finishTransactionを出します
+
+00:12:57.377 --> 00:13:00.147 align:start position:29% line:-1
+正常に動作できたとします
+

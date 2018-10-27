@@ -1,0 +1,72 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:07.016 --> 00:00:15.500 A:middle
+[ Music ]
+
+00:00:23.516 --> 00:00:27.616 A:middle
+[ Applause ]
+
+00:00:28.116 --> 00:00:28.656 A:middle
+&gt;&gt; Hi, everyone.
+
+00:00:29.016 --> 00:00:29.686 A:middle
+My name's Kyle.
+
+00:00:29.686 --> 00:00:30.776 A:middle
+I'm a software engineer at Apple
+
+00:00:30.876 --> 00:00:32.195 A:middle
+and today we'd like to take a
+
+00:00:32.195 --> 00:00:33.386 A:middle
+deep dive into iOS memory.
+
+00:00:34.066 --> 00:00:35.986 A:middle
+Now, just as a quick note, even
+
+00:00:35.986 --> 00:00:36.986 A:middle
+though this is focused on iOS, a
+
+00:00:36.986 --> 00:00:38.536 A:middle
+lot of what we're covering will
+
+00:00:38.536 --> 00:00:41.386 A:middle
+apply to other platforms as
+
+00:00:42.396 --> 00:00:42.546 A:middle
+well.
+
+00:00:43.186 --> 00:00:44.626 A:middle
+So the first thing we'd want to
+
+00:00:44.626 --> 00:00:46.386 A:middle
+talk about is, why reduce
+
+00:00:46.386 --> 00:00:46.706 A:middle
+memory?
+
+00:00:48.886 --> 00:00:50.836 A:middle
+And when we want to reduce
+
+00:00:50.836 --> 00:00:51.746 A:middle
+memory, really, we're talking
+
+00:00:51.746 --> 00:00:52.676 A:middle
+about reducing our memory
+
+00:00:52.676 --> 00:00:53.116 A:middle
+footprint.
+
+00:00:53.296 --> 00:00:53.976 A:middle
+So we'll talk about that.
+
+00:00:55.326 --> 00:00:56.586 A:middle
+We have some tools for how to
+
+00:00:56.586 --> 00:00:57.986 A:middle
+profile a memory footprint.
+
+00:00:59.146 --> 00:01:00.706 A:middle
+We have some special notes on
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.246 --> 00:26:01.026 A:middle
+OK. Oh, now the attacker needs
+
+00:26:01.026 --> 00:26:02.586 A:middle
+to be a little bit more sneaky.
+
+00:26:03.426 --> 00:26:05.066 A:middle
+He or she is probably going to
+
+00:26:05.126 --> 00:26:07.306 A:middle
+change the script on the CDN
+
+00:26:07.306 --> 00:26:08.796 A:middle
+server instead of redirecting it
+
+00:26:08.936 --> 00:26:10.666 A:middle
+to the evil.example server.
+
+00:26:11.206 --> 00:26:12.626 A:middle
+So-- and it's on your white
+
+00:26:12.626 --> 00:26:14.046 A:middle
+list, so you're going to load
+
+00:26:14.046 --> 00:26:15.036 A:middle
+and execute that script.
+
+00:26:16.056 --> 00:26:19.256 A:middle
+But, you've got subresource
+
+00:26:19.256 --> 00:26:20.566 A:middle
+integrity to save you.
+
+00:26:21.206 --> 00:26:22.576 A:middle
+You are in control of the
+
+00:26:22.576 --> 00:26:24.356 A:middle
+integrity of that script coming
+
+00:26:24.356 --> 00:26:26.126 A:middle
+from a server that you don't own
+
+00:26:26.806 --> 00:26:28.096 A:middle
+and if it doesn't match the
+
+00:26:28.196 --> 00:26:29.566 A:middle
+check sum, you're going to load
+
+00:26:29.566 --> 00:26:30.756 A:middle
+it off of your own server
+
+00:26:30.756 --> 00:26:31.206 A:middle
+instead.
+
+00:26:32.186 --> 00:26:33.926 A:middle
+So, that attack is also foiled.
+
+00:26:35.746 --> 00:26:37.566 A:middle
+OK. That's compromised CDN.
+
+00:26:37.756 --> 00:26:39.686 A:middle
+Final of the cross-origin
+
+00:26:39.686 --> 00:26:41.986 A:middle
+attack, the cross-site request
+
+00:26:41.986 --> 00:26:42.736 A:middle
+forgeries.
+
+00:26:43.316 --> 00:26:45.336 A:middle
+This really ties into the last
+
+00:26:45.336 --> 00:26:46.206 A:middle
+word, forgeries.
+
+00:26:46.206 --> 00:26:48.926 A:middle
+These are-- this is the attacker
+
+00:26:48.926 --> 00:26:50.936 A:middle
+trying to forge a request to
+
+00:26:50.936 --> 00:26:52.906 A:middle
+look like something one of your
+
+00:26:52.906 --> 00:26:55.156 A:middle
+users is trying to do, where
+
+00:26:55.156 --> 00:26:58.046 A:middle
+they're actually not.
+
+00:26:59.156 --> 00:27:00.786 A:middle
+So, we're back at the messaging
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.486 --> 00:26:00.376 A:middle
+texture object.
+
+00:26:00.816 --> 00:26:04.256 A:middle
+First you create a texture
+
+00:26:04.256 --> 00:26:06.126 A:middle
+descriptor and set a number of
+
+00:26:06.126 --> 00:26:07.966 A:middle
+properties in it, including the
+
+00:26:07.966 --> 00:26:08.586 A:middle
+storage mode.
+
+00:26:09.106 --> 00:26:12.836 A:middle
+And then we create a texture
+
+00:26:13.586 --> 00:26:14.556 A:middle
+using the device.
+
+00:26:15.916 --> 00:26:17.166 A:middle
+To fill a texture's image data
+
+00:26:17.316 --> 00:26:18.936 A:middle
+we calculate the bytes per row
+
+00:26:19.886 --> 00:26:21.336 A:middle
+and just like with GLText
+
+00:26:21.336 --> 00:26:23.056 A:middle
+[inaudible] we specify a region
+
+00:26:23.056 --> 00:26:23.466 A:middle
+to load.
+
+00:26:26.196 --> 00:26:27.536 A:middle
+And then we call the texture
+
+00:26:27.536 --> 00:26:29.506 A:middle
+object's replace region method
+
+00:26:29.756 --> 00:26:31.596 A:middle
+which copies the data into the
+
+00:26:31.596 --> 00:26:32.676 A:middle
+texture from a pointer we
+
+00:26:32.676 --> 00:26:32.926 A:middle
+supply.
+
+00:26:37.046 --> 00:26:38.266 A:middle
+Now there are a few notable
+
+00:26:38.266 --> 00:26:39.396 A:middle
+differences between OpenGL and
+
+00:26:39.396 --> 00:26:40.446 A:middle
+Metal texture objects.
+
+00:26:40.816 --> 00:26:42.556 A:middle
+While OpenGL does have a sampler
+
+00:26:42.556 --> 00:26:43.886 A:middle
+object they are optional.
+
+00:26:44.406 --> 00:26:45.576 A:middle
+Wrap modes and filters can be
+
+00:26:45.576 --> 00:26:46.826 A:middle
+set in the texture's object
+
+00:26:46.826 --> 00:26:47.886 A:middle
+itself in OpenGL.
+
+00:26:48.276 --> 00:26:49.736 A:middle
+In Metal you need to create a
+
+00:26:49.816 --> 00:26:51.376 A:middle
+separate sampler object or
+
+00:26:51.376 --> 00:26:53.576 A:middle
+specify sampler parameters in
+
+00:26:54.206 --> 00:26:55.096 A:middle
+your shaders.
+
+00:26:55.786 --> 00:26:57.336 A:middle
+Texture image data is not
+
+00:26:57.416 --> 00:26:57.946 A:middle
+flipped in Metal.
+
+00:26:58.496 --> 00:27:00.996 A:middle
+OpenGL uses a bottom-left origin
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.786 --> 00:22:01.306 A:middle
+show you how you can use this to
+
+00:22:01.306 --> 00:22:03.286 A:middle
+build a simple app, I'd like to
+
+00:22:03.286 --> 00:22:04.776 A:middle
+invite Eric up to the stage.
+
+00:22:05.516 --> 00:22:10.500 A:middle
+[ Applause ]
+
+00:22:13.196 --> 00:22:14.066 A:middle
+&gt;&gt; Thanks Tommy.
+
+00:22:14.676 --> 00:22:16.216 A:middle
+I'm Eric Kinnear, also from the
+
+00:22:16.216 --> 00:22:17.386 A:middle
+networking team here at Apple,
+
+00:22:17.716 --> 00:22:19.156 A:middle
+and I'm really excited to build
+
+00:22:19.156 --> 00:22:20.636 A:middle
+with you an example application
+
+00:22:20.926 --> 00:22:21.926 A:middle
+using Network.framework.
+
+00:22:23.026 --> 00:22:24.076 A:middle
+We're going to use the live
+
+00:22:24.076 --> 00:22:25.696 A:middle
+streaming example that Tommy
+
+00:22:25.696 --> 00:22:27.516 A:middle
+mentioned earlier to build an
+
+00:22:27.516 --> 00:22:29.106 A:middle
+application that can take the
+
+00:22:29.106 --> 00:22:31.216 A:middle
+camera input on one device and
+
+00:22:31.216 --> 00:22:32.976 A:middle
+send it over a network to be
+
+00:22:32.976 --> 00:22:34.326 A:middle
+displayed on another device.
+
+00:22:35.396 --> 00:22:36.196 A:middle
+Because we're going to be
+
+00:22:36.196 --> 00:22:37.806 A:middle
+continuously generating live
+
+00:22:37.806 --> 00:22:40.156 A:middle
+video frames, we're going to use
+
+00:22:40.376 --> 00:22:41.736 A:middle
+UDP to send those packets across
+
+00:22:41.736 --> 00:22:42.126 A:middle
+the network.
+
+00:22:43.186 --> 00:22:46.036 A:middle
+So how do we do this?
+
+00:22:46.266 --> 00:22:48.126 A:middle
+Well, first, we need a capture
+
+00:22:48.126 --> 00:22:49.566 A:middle
+session with the camera so that
+
+00:22:49.566 --> 00:22:51.026 A:middle
+we can receive the video frames
+
+00:22:51.106 --> 00:22:51.996 A:middle
+from the image sensor.
+
+00:22:53.046 --> 00:22:54.296 A:middle
+For the sake of this example,
+
+00:22:54.666 --> 00:22:55.946 A:middle
+we're not going to use any video
+
+00:22:55.946 --> 00:22:57.346 A:middle
+codecs or other compression.
+
+00:22:57.846 --> 00:22:58.966 A:middle
+We're simply going to take the
+
+00:22:58.966 --> 00:23:00.706 A:middle
+raw bytes from the camera, ship
+

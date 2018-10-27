@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:55.255 --> 00:06:00.894 align:start position:21% line:-2
+小さなデバイスでは
+フォントが大きくても判読不能です
+
+00:06:00.994 --> 00:06:05.098 align:start position:27% line:-2
+コントラスト比2.9：１は
+低すぎます
+
+00:06:08.335 --> 00:06:12.706 align:start position:0% line:-2
+XcodeのAccessibility Inspector
+内蔵ツールを使えば
+
+00:06:12.806 --> 00:06:16.076 align:start position:27% line:-1
+コントラスト比が分かります
+
+00:06:16.176 --> 00:06:21.281 align:start position:27% line:-2
+及第点になる色のペアや
+文字サイズが分かるツールで
+
+00:06:21.381 --> 00:06:24.785 align:start position:29% line:-2
+先に述べたガイドラインに
+従うものです
+
+00:06:25.419 --> 00:06:32.092 align:start position:20% line:-2
+ただし これで推奨されている
+4.5：１という数値を超えていても
+
+00:06:32.226 --> 00:06:38.599 align:start position:25% line:-2
+低視力の人にとっては
+まだ読みにくいかもしれません
+
+00:06:39.199 --> 00:06:43.203 align:start position:30% line:-2
+そこで コントラストを
+上げる設定を作りました
+
+00:06:43.437 --> 00:06:47.541 align:start position:11% line:-2
+以前のiOSで Darken Colorsと
+呼んでいた機能です
+
+00:06:47.841 --> 00:06:51.912 align:start position:0% line:-2
+isDarkerSystemColorsEnabledと
+入れてください
+
+00:06:52.012 --> 00:06:56.049 align:start position:18% line:-2
+標準のUIKitコントロールで
+tintColorをオンに設定しても
+
+00:06:56.150 --> 00:06:58.218 align:start position:36% line:-1
+それで機能します
+
+00:06:59.052 --> 00:07:03.657 align:start position:2% line:-2
+macOSではaccessibilityDisplay
+ShouldIncreaseContrastとします
+

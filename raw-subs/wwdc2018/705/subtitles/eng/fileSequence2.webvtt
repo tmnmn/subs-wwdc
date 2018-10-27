@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.656 --> 00:02:00.306 A:middle
+Firstly, let's talk a bit about
+
+00:02:00.306 --> 00:02:01.826 A:middle
+receiving that transaction in
+
+00:02:01.826 --> 00:02:02.726 A:middle
+your app.
+
+00:02:03.756 --> 00:02:05.376 A:middle
+Now whether it's the initial
+
+00:02:05.426 --> 00:02:06.966 A:middle
+purchase of a subscription or a
+
+00:02:06.966 --> 00:02:08.306 A:middle
+renewal transaction for a
+
+00:02:08.306 --> 00:02:10.916 A:middle
+prescription your app is set up
+
+00:02:10.916 --> 00:02:12.166 A:middle
+to handle subscriptions and
+
+00:02:12.166 --> 00:02:13.376 A:middle
+transactions using the StoreKit
+
+00:02:13.426 --> 00:02:13.766 A:middle
+framework.
+
+00:02:14.766 --> 00:02:15.636 A:middle
+Now when you are set up to
+
+00:02:15.636 --> 00:02:16.676 A:middle
+handle transactions using
+
+00:02:16.676 --> 00:02:18.696 A:middle
+StoreKit the App Store will make
+
+00:02:18.696 --> 00:02:20.276 A:middle
+these charges on a user's credit
+
+00:02:20.276 --> 00:02:21.216 A:middle
+card in the background.
+
+00:02:21.726 --> 00:02:23.226 A:middle
+And anytime a transaction occurs
+
+00:02:23.226 --> 00:02:24.836 A:middle
+it informs your app of these
+
+00:02:24.836 --> 00:02:26.286 A:middle
+transactions via a thing called
+
+00:02:26.346 --> 00:02:26.466 A:middle
+the
+
+00:02:26.516 --> 00:02:28.196 A:middle
+SKPaymentTransactionsObserver.
+
+00:02:28.906 --> 00:02:31.496 A:middle
+This transaction observer object
+
+00:02:31.496 --> 00:02:32.866 A:middle
+is really the central piece of
+
+00:02:32.866 --> 00:02:34.456 A:middle
+in-app purchases when it comes
+
+00:02:34.456 --> 00:02:35.626 A:middle
+to your application.
+
+00:02:35.836 --> 00:02:37.156 A:middle
+It's actually just a protocol in
+
+00:02:37.156 --> 00:02:38.556 A:middle
+StoreKit, it looks like this and
+
+00:02:38.556 --> 00:02:39.836 A:middle
+you can set it on any object.
+
+00:02:40.336 --> 00:02:41.206 A:middle
+In this example we're just
+
+00:02:41.206 --> 00:02:42.266 A:middle
+setting it on the AppDelegate
+
+00:02:42.266 --> 00:02:44.636 A:middle
+itself, but the really important
+
+00:02:44.636 --> 00:02:45.376 A:middle
+thing is that you add a
+
+00:02:45.466 --> 00:02:46.706 A:middle
+Transaction Observer to the
+
+00:02:46.706 --> 00:02:48.106 A:middle
+default payment queue as early
+
+00:02:48.106 --> 00:02:49.586 A:middle
+on in the application lifecycle
+
+00:02:49.586 --> 00:02:50.106 A:middle
+as possible.
+
+00:02:51.516 --> 00:02:52.586 A:middle
+Once you've got a Transaction
+
+00:02:53.026 --> 00:02:54.066 A:middle
+Observer registered on the
+
+00:02:54.066 --> 00:02:55.086 A:middle
+default payment queue you're
+
+00:02:55.086 --> 00:02:56.156 A:middle
+ready to start receiving
+
+00:02:56.156 --> 00:02:57.906 A:middle
+transactions as they occur in
+
+00:02:58.836 --> 00:02:59.946 A:middle
+the background.
+
+00:02:59.946 --> 00:03:01.296 A:middle
+You receive transactions on a
+

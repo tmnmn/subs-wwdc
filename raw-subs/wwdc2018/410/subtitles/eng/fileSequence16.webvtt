@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.446 --> 00:16:00.716 A:middle
+you more about Standard UI.
+
+00:16:01.516 --> 00:16:04.466 A:middle
+[ Applause ]
+
+00:16:04.966 --> 00:16:05.226 A:middle
+&gt;&gt; Alright.
+
+00:16:05.226 --> 00:16:05.986 A:middle
+Thank you, Kacper.
+
+00:16:06.786 --> 00:16:07.906 A:middle
+Okay, so we've seen how to
+
+00:16:07.906 --> 00:16:09.326 A:middle
+create a very basic instrument.
+
+00:16:09.326 --> 00:16:11.136 A:middle
+We see how to get started with
+
+00:16:11.326 --> 00:16:12.476 A:middle
+creating your first project in
+
+00:16:12.526 --> 00:16:12.946 A:middle
+Xcode.
+
+00:16:13.706 --> 00:16:15.126 A:middle
+Now let's talk about the
+
+00:16:15.126 --> 00:16:16.386 A:middle
+different kind of graphs that we
+
+00:16:16.386 --> 00:16:17.416 A:middle
+have and the different kind of
+
+00:16:17.416 --> 00:16:18.846 A:middle
+details we have and how we can
+
+00:16:18.846 --> 00:16:20.466 A:middle
+potentially do this with real
+
+00:16:20.466 --> 00:16:20.716 A:middle
+data.
+
+00:16:21.656 --> 00:16:23.686 A:middle
+Starting with graph lanes.
+
+00:16:24.896 --> 00:16:27.206 A:middle
+So you saw how Kacper was able
+
+00:16:27.206 --> 00:16:28.626 A:middle
+to define a graph and a lane
+
+00:16:28.966 --> 00:16:30.266 A:middle
+using what we call the plot
+
+00:16:30.266 --> 00:16:30.636 A:middle
+element.
+
+00:16:31.066 --> 00:16:34.256 A:middle
+Now the plot element is a way to
+
+00:16:34.366 --> 00:16:36.566 A:middle
+tell the Standard UI that we
+
+00:16:36.566 --> 00:16:38.016 A:middle
+should be taking the entire
+
+00:16:38.016 --> 00:16:39.816 A:middle
+contents of the table and trying
+
+00:16:39.816 --> 00:16:41.336 A:middle
+to plot it in that particular
+
+00:16:41.336 --> 00:16:41.586 A:middle
+lane.
+
+00:16:42.276 --> 00:16:44.406 A:middle
+Now the way that the plot
+
+00:16:44.436 --> 00:16:46.536 A:middle
+element determines how to graph
+
+00:16:46.536 --> 00:16:47.536 A:middle
+this, what the graphing
+
+00:16:47.536 --> 00:16:49.406 A:middle
+treatment should be, is by
+
+00:16:49.406 --> 00:16:51.186 A:middle
+looking at both the schema and
+
+00:16:51.186 --> 00:16:52.446 A:middle
+the column that was targeted to
+
+00:16:52.446 --> 00:16:53.306 A:middle
+take the value from.
+
+00:16:54.026 --> 00:16:55.586 A:middle
+If the schema is an interval
+
+00:16:55.586 --> 00:16:56.856 A:middle
+schema, meaning that it has a
+
+00:16:56.856 --> 00:16:58.286 A:middle
+time and a duration, or if it's
+
+00:16:58.286 --> 00:16:59.636 A:middle
+a point schema, which means it
+
+00:16:59.636 --> 00:17:01.046 A:middle
+just as a timestamp, they're
+

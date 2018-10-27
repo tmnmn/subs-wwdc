@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:55.822 --> 00:11:00.994 align:middle line:-2
+在设备上选择Settings-&gt;Privacy-&gt;
+Analytics-&gt;Analytics Data
+
+00:11:01.061 --> 00:11:03.030 align:middle line:-1
+你可以看到保存到磁盘的所有日志
+
+00:11:03.096 --> 00:11:06.033 align:middle line:-2
+你的用户可以直接
+在此屏幕上共享日志
+
+00:11:08.535 --> 00:11:09.369 align:middle line:-1
+好的
+
+00:11:09.770 --> 00:11:12.673 align:middle line:-1
+为了确保符号化能够正常工作
+
+00:11:12.739 --> 00:11:15.175 align:middle line:-1
+我想谈三个重要的最佳实践
+
+00:11:16.009 --> 00:11:17.010 align:middle line:-1
+第一
+
+00:11:18.145 --> 00:11:21.982 align:middle line:-2
+若你用Crashes Organizer
+请与你的app一起上传符号表
+
+00:11:22.049 --> 00:11:23.150 align:middle line:-1
+这是默认行为
+
+00:11:23.517 --> 00:11:27.354 align:middle line:-2
+这将确保服务器端符号化
+能够正常工作 非常简单
+
+00:11:28.689 --> 00:11:32.559 align:middle line:-1
+第二 请务必保存你的app档案
+
+00:11:33.026 --> 00:11:37.097 align:middle line:-2
+你的档案包含调试符号的副本
+即你的dSYM
+
+00:11:37.564 --> 00:11:40.100 align:middle line:-2
+Xcode用Spotlight
+查找dSYM
+
+00:11:40.167 --> 00:11:43.537 align:middle line:-1
+并在必要时自动执行本地符号化
+
+00:11:45.305 --> 00:11:48.609 align:middle line:-1
+如果你上传包含位码的app
+
+00:11:49.243 --> 00:11:53.146 align:middle line:-2
+你应该使用“Archives Organizer
+Download Debug Symbols”按钮
+
+00:11:53.213 --> 00:11:56.917 align:middle line:-1
+来下载位码编译生成的任何dSYM
+
+00:11:58.819 --> 00:12:02.022 align:middle line:-1
+我们已经涵盖了我们提供的所有工具
+

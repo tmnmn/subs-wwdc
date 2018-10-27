@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.016 --> 00:25:01.216 A:middle
+background queue, so that
+
+00:25:01.216 --> 00:25:02.366 A:middle
+[inaudible] or whatever you do
+
+00:25:02.366 --> 00:25:03.176 A:middle
+in the camera, can actually
+
+00:25:03.176 --> 00:25:04.306 A:middle
+continuously running.
+
+00:25:05.036 --> 00:25:06.256 A:middle
+But to do this particularly with
+
+00:25:06.256 --> 00:25:07.656 A:middle
+the camera, you do not want to
+
+00:25:07.656 --> 00:25:08.866 A:middle
+continuously queue up the
+
+00:25:08.866 --> 00:25:10.266 A:middle
+buffers coming from the camera.
+
+00:25:10.266 --> 00:25:11.336 A:middle
+So, you want to drop busy
+
+00:25:11.336 --> 00:25:11.826 A:middle
+buffers.
+
+00:25:12.216 --> 00:25:14.006 A:middle
+In this case, I said I only work
+
+00:25:14.006 --> 00:25:14.526 A:middle
+with one.
+
+00:25:14.526 --> 00:25:15.756 A:middle
+That's actually in my use case
+
+00:25:15.756 --> 00:25:16.816 A:middle
+scenario works pretty well.
+
+00:25:17.286 --> 00:25:18.586 A:middle
+So, I have a queue of 1, and
+
+00:25:18.586 --> 00:25:19.666 A:middle
+that's why I simply held onto
+
+00:25:19.666 --> 00:25:21.156 A:middle
+one buffer and check, as long as
+
+00:25:21.156 --> 00:25:22.506 A:middle
+that one is running, I'm not
+
+00:25:22.506 --> 00:25:23.536 A:middle
+queuing new buffers up.
+
+00:25:23.956 --> 00:25:25.906 A:middle
+Once I'm done with it, I can
+
+00:25:25.906 --> 00:25:30.266 A:middle
+reset and work on the next
+
+00:25:30.876 --> 00:25:31.056 A:middle
+buffer.
+
+00:25:31.206 --> 00:25:33.336 A:middle
+Now, you might ask, "Why am I
+
+00:25:33.336 --> 00:25:34.906 A:middle
+using Vision when I can run this
+
+00:25:34.906 --> 00:25:35.696 A:middle
+model in Core ML?
+
+00:25:35.696 --> 00:25:36.646 A:middle
+It's a Core ML model."
+
+00:25:38.206 --> 00:25:40.196 A:middle
+Well, there is one thing why
+
+00:25:40.196 --> 00:25:41.236 A:middle
+this is important to actually
+
+00:25:41.236 --> 00:25:41.746 A:middle
+use Vision.
+
+00:25:42.316 --> 00:25:43.676 A:middle
+Let's go back and look what we
+
+00:25:43.676 --> 00:25:45.196 A:middle
+saw when we looked at our model.
+
+00:25:45.646 --> 00:25:47.616 A:middle
+It was the strange number of 299
+
+00:25:47.616 --> 00:25:48.936 A:middle
+by 299 pixels.
+
+00:25:49.626 --> 00:25:50.886 A:middle
+Now, this is simply how this
+
+00:25:50.886 --> 00:25:51.666 A:middle
+model is trained.
+
+00:25:51.666 --> 00:25:53.036 A:middle
+This is what it wants to ingest.
+
+00:25:53.886 --> 00:25:54.996 A:middle
+But our camera gives us
+
+00:25:54.996 --> 00:25:57.206 A:middle
+something like 640 by 480 or
+
+00:25:57.206 --> 00:25:58.746 A:middle
+larger resolutions if you want.
+
+00:25:59.876 --> 00:26:02.156 A:middle
+Now, Vision is going to do all
+

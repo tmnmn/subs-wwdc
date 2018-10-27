@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.976 --> 00:28:00.496 A:middle
+images.
+
+00:28:01.386 --> 00:28:03.886 A:middle
+And the mask only masks the
+
+00:28:03.886 --> 00:28:06.626 A:middle
+material, not any subviews or
+
+00:28:06.626 --> 00:28:07.926 A:middle
+other descendent views of the
+
+00:28:07.926 --> 00:28:08.696 A:middle
+VisualEffectView.
+
+00:28:10.096 --> 00:28:12.516 A:middle
+A common technique is to provide
+
+00:28:12.516 --> 00:28:15.156 A:middle
+a resizable image for this-- for
+
+00:28:15.156 --> 00:28:16.406 A:middle
+the maskImage using the
+
+00:28:16.406 --> 00:28:18.246 A:middle
+capInsets and resizingMode
+
+00:28:18.246 --> 00:28:19.796 A:middle
+properties of NSImage.
+
+00:28:20.206 --> 00:28:22.046 A:middle
+And this is really good for
+
+00:28:22.046 --> 00:28:22.706 A:middle
+performance.
+
+00:28:24.176 --> 00:28:24.496 A:middle
+OK.
+
+00:28:24.646 --> 00:28:25.846 A:middle
+With that, I'll hand it off to
+
+00:28:25.846 --> 00:28:26.886 A:middle
+Jeff, who is going to talk about
+
+00:28:26.886 --> 00:28:27.856 A:middle
+vibrant blending.
+
+00:28:28.506 --> 00:28:30.506 A:middle
+[ Applause ]
+
+00:28:30.996 --> 00:28:31.316 A:middle
+Jeff.
+
+00:28:33.336 --> 00:28:33.666 A:middle
+&gt;&gt; All right.
+
+00:28:33.726 --> 00:28:34.436 A:middle
+Thank you, Matt.
+
+00:28:35.466 --> 00:28:36.506 A:middle
+So, now that we've had a look at
+
+00:28:36.506 --> 00:28:38.076 A:middle
+our great materials, I want to
+
+00:28:38.076 --> 00:28:39.666 A:middle
+cover the things that we draw in
+
+00:28:39.666 --> 00:28:40.906 A:middle
+front of those materials,
+
+00:28:41.446 --> 00:28:42.646 A:middle
+particularly the materials that
+
+00:28:42.646 --> 00:28:44.696 A:middle
+we use that pull in part of the
+
+00:28:44.696 --> 00:28:46.466 A:middle
+background and provide that
+
+00:28:46.466 --> 00:28:47.626 A:middle
+really awesome blur effect.
+
+00:28:48.786 --> 00:28:50.846 A:middle
+So, if we revisit our Chameleon
+
+00:28:51.036 --> 00:28:52.786 A:middle
+Wrangler application, we have
+
+00:28:52.786 --> 00:28:53.916 A:middle
+this UI here, it's our
+
+00:28:53.916 --> 00:28:54.756 A:middle
+mood-o-meter.
+
+00:28:54.756 --> 00:28:56.156 A:middle
+It's where we go to record how
+
+00:28:56.156 --> 00:28:57.836 A:middle
+our various reptiles are
+
+00:28:57.836 --> 00:28:58.226 A:middle
+feeling.
+
+00:28:58.996 --> 00:29:00.786 A:middle
+And it's in a popover, which
+

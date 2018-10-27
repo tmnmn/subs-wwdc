@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:57.731 --> 00:05:00.734 align:middle line:-1
+跨越不同弧度使用多个密钥
+
+00:05:00.801 --> 00:05:05.005 align:middle line:-2
+你可以在与密钥服务器交涉之前
+批量处理所有密钥请求
+
+00:05:06.073 --> 00:05:08.909 align:middle line:-1
+这可以减少密钥服务器上的一些负载
+
+00:05:08.976 --> 00:05:11.545 align:middle line:-1
+并且消除了每个密钥往返的延迟
+
+00:05:14.915 --> 00:05:18.919 align:middle line:0
+你可以通过
+在AVContentKeySession实例上
+
+00:05:18.986 --> 00:05:21.355 align:middle line:0
+调用processContentKeyRequest
+来启动密钥加载过程
+
+00:05:22.723 --> 00:05:24.124 align:middle line:0
+一旦你调用这个方法
+
+00:05:24.491 --> 00:05:28.529 align:middle line:0
+AVContentKeySession
+会通过调用委托回调
+
+00:05:28.695 --> 00:05:30.430 align:middle line:0
+向你发一个
+AVContentKeyRequest对象
+
+00:05:31.798 --> 00:05:36.637 align:middle line:0
+AVContentKeySession允许你
+执行FairPlay Streaming特定操作
+
+00:05:36.703 --> 00:05:39.206 align:middle line:0
+比如发加密的密钥请求
+
+00:05:39.273 --> 00:05:41.875 align:middle line:0
+和以加密的密钥响应
+
+00:05:44.778 --> 00:05:49.082 align:middle line:-2
+现在我们假设
+你已成功预装了一个特定的密钥
+
+00:05:49.349 --> 00:05:53.253 align:middle line:-2
+有没有可能在回放开始后
+再次请求密钥？
+
+00:05:54.154 --> 00:05:55.422 align:middle line:-1
+这是可能的
+
+00:05:56.323 --> 00:06:00.327 align:middle line:-1
+app可能会收到按需加载请求
+

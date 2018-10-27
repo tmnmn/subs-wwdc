@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:57.224 --> 00:36:02.830 align:start position:27% line:-2
+設定ボタンから行えるように
+調整が可能です
+
+00:36:03.297 --> 00:36:05.499 align:start position:23% line:-1
+IBActionをセットします
+
+00:36:05.899 --> 00:36:09.703 align:start position:2% line:-2
+TVDigitEntryViewControllerを
+再び用意
+
+00:36:09.837 --> 00:36:12.539 align:start position:32% line:-1
+タイトルテキストには
+
+00:36:12.639 --> 00:36:16.410 align:start position:30% line:-2
+視聴制限のための
+パスコード要求をセット
+
+00:36:16.510 --> 00:36:18.378 align:start position:36% line:-1
+桁数は５にします
+
+00:36:19.313 --> 00:36:23.250 align:start position:9% line:-2
+entryCompletionHandlerを
+再び実装します
+
+00:36:23.350 --> 00:36:28.155 align:start position:12% line:-2
+するとオプショナル変数
+passcodeToVerifyが現れます
+
+00:36:28.255 --> 00:36:33.193 align:start position:29% line:-2
+１回目にユーザが入力した
+パスコードは維持され
+
+00:36:33.293 --> 00:36:37.197 align:start position:32% line:-2
+再入力のパスコードと
+照合できます
+
+00:36:37.397 --> 00:36:40.100 align:start position:38% line:-2
+完了ハンドラが
+呼び出された時
+
+00:36:40.500 --> 00:36:42.703 align:start position:20% line:-2
+passcodeToVerifyが
+nilか確認
+
+00:36:42.803 --> 00:36:48.175 align:start position:27% line:-2
+１回目ならユーザに
+パスコードの確認を促します
+
+00:36:48.275 --> 00:36:52.146 align:start position:14% line:-2
+clearEntryのanimatedは
+falseにします
+
+00:36:52.246 --> 00:36:56.884 align:start position:32% line:-2
+揺れがなくなり
+入力値だけが消えます
+
+00:36:57.151 --> 00:37:00.087 align:start position:20% line:-2
+passcodeToVerifyに
+値があれば
+

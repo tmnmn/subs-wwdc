@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.606 --> 00:31:00.816 A:middle
+operating system uses to
+
+00:31:00.816 --> 00:31:02.586 A:middle
+determine how much memory my app
+
+00:31:02.586 --> 00:31:03.726 A:middle
+is really using.
+
+00:31:04.266 --> 00:31:05.516 A:middle
+So those are the two columns I
+
+00:31:05.516 --> 00:31:06.796 A:middle
+really want to concentrate on,
+
+00:31:06.796 --> 00:31:07.856 A:middle
+so let's look for some big
+
+00:31:07.856 --> 00:31:08.596 A:middle
+numbers there.
+
+00:31:08.596 --> 00:31:11.126 A:middle
+I can see immediately CG image
+
+00:31:11.126 --> 00:31:11.636 A:middle
+jumps out.
+
+00:31:11.636 --> 00:31:13.996 A:middle
+It has a very big dirty size and
+
+00:31:13.996 --> 00:31:15.206 A:middle
+a very big swapped size.
+
+00:31:15.256 --> 00:31:16.906 A:middle
+That's a giant red flag, but
+
+00:31:16.956 --> 00:31:17.846 A:middle
+let's keep looking.
+
+00:31:18.496 --> 00:31:21.616 A:middle
+I can see this is IOSurface has
+
+00:31:21.616 --> 00:31:23.676 A:middle
+a pretty big dirty size but no
+
+00:31:23.676 --> 00:31:24.686 A:middle
+swapped size.
+
+00:31:25.156 --> 00:31:27.776 A:middle
+MALLOC LARGE has a big dirty
+
+00:31:27.776 --> 00:31:29.876 A:middle
+size but a really small or
+
+00:31:30.146 --> 00:31:31.256 A:middle
+smaller swapped size.
+
+00:31:31.256 --> 00:31:33.396 A:middle
+And there's nothing else in here
+
+00:31:33.396 --> 00:31:35.056 A:middle
+that's really that big.
+
+00:31:35.576 --> 00:31:37.696 A:middle
+So I think, based on what I see
+
+00:31:37.696 --> 00:31:39.036 A:middle
+here, I really want to
+
+00:31:39.036 --> 00:31:41.476 A:middle
+concentrate on the CG image VM
+
+00:31:41.476 --> 00:31:42.376 A:middle
+regions.
+
+00:31:43.096 --> 00:31:43.986 A:middle
+So I'm going to go ahead and
+
+00:31:43.986 --> 00:31:44.606 A:middle
+copy that.
+
+00:31:45.586 --> 00:31:47.426 A:middle
+So what's the next step?
+
+00:31:48.096 --> 00:31:50.266 A:middle
+Well, we want to know more about
+
+00:31:50.266 --> 00:31:52.326 A:middle
+some virtual memory, so vmmap
+
+00:31:52.326 --> 00:31:53.496 A:middle
+seems like the place to go
+
+00:31:53.496 --> 00:31:53.986 A:middle
+again.
+
+00:31:54.636 --> 00:31:55.616 A:middle
+This time, instead of the
+
+00:31:55.616 --> 00:31:57.216 A:middle
+summary flag, I'm just going to
+
+00:31:57.216 --> 00:32:00.376 A:middle
+pass my Memgraph file.
+

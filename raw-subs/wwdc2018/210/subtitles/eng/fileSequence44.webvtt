@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.696 --> 00:44:00.756 A:middle
+controlAccentColor.
+
+00:44:02.676 --> 00:44:04.046 A:middle
+The next problem here with the
+
+00:44:04.046 --> 00:44:05.516 A:middle
+tab bar is a little more subtle.
+
+00:44:06.366 --> 00:44:07.956 A:middle
+If we bring our cursor over and
+
+00:44:08.056 --> 00:44:10.046 A:middle
+press down on it, we can see
+
+00:44:10.046 --> 00:44:11.086 A:middle
+that we're getting a darkening
+
+00:44:11.086 --> 00:44:12.406 A:middle
+effect instead of the
+
+00:44:12.406 --> 00:44:13.546 A:middle
+brightening effect that we
+
+00:44:13.546 --> 00:44:14.586 A:middle
+should in Dark Mode.
+
+00:44:15.846 --> 00:44:16.986 A:middle
+This is because we are taking
+
+00:44:16.986 --> 00:44:18.256 A:middle
+that base color and just
+
+00:44:18.256 --> 00:44:20.006 A:middle
+applying a constant 30%
+
+00:44:20.006 --> 00:44:21.856 A:middle
+darkening effect to it, assuming
+
+00:44:21.856 --> 00:44:23.116 A:middle
+that would look fine in the
+
+00:44:23.116 --> 00:44:24.506 A:middle
+light appearance.
+
+00:44:25.576 --> 00:44:27.356 A:middle
+Instead, we want to describe
+
+00:44:27.356 --> 00:44:28.666 A:middle
+something that basically this
+
+00:44:28.726 --> 00:44:30.976 A:middle
+color is being pressed, and that
+
+00:44:30.976 --> 00:44:33.726 A:middle
+semantic description can carry
+
+00:44:33.726 --> 00:44:35.316 A:middle
+whatever effect it needs to in
+
+00:44:35.316 --> 00:44:36.176 A:middle
+the light versus dark
+
+00:44:36.176 --> 00:44:37.416 A:middle
+appearance.
+
+00:44:37.416 --> 00:44:38.596 A:middle
+So, with the new system effect
+
+00:44:38.596 --> 00:44:41.546 A:middle
+API in Mojave on NSColor, we can
+
+00:44:41.546 --> 00:44:42.946 A:middle
+describe that exact semantic.
+
+00:44:43.836 --> 00:44:45.036 A:middle
+We can take our base color of
+
+00:44:45.036 --> 00:44:46.806 A:middle
+controlAccentColor, say that we
+
+00:44:46.806 --> 00:44:47.876 A:middle
+want to get the pressed variant,
+
+00:44:48.076 --> 00:44:49.656 A:middle
+and it will react appropriately
+
+00:44:49.746 --> 00:44:51.026 A:middle
+in both the light and dark
+
+00:44:51.026 --> 00:44:52.246 A:middle
+appearance.
+
+00:44:54.936 --> 00:44:56.316 A:middle
+There's one more area of our
+
+00:44:56.316 --> 00:44:57.726 A:middle
+application where you can see
+
+00:44:57.836 --> 00:44:59.586 A:middle
+the accent color, and that's in
+
+00:44:59.586 --> 00:45:01.076 A:middle
+this photo browser where we draw
+

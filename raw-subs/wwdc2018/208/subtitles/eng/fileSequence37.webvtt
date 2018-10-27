@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.766 --> 00:37:00.366 A:middle
+stored in the passcodeToVerify,
+
+00:37:00.366 --> 00:37:01.606 A:middle
+we know they are verifying it.
+
+00:37:01.606 --> 00:37:02.646 A:middle
+And, we check to make sure
+
+00:37:02.646 --> 00:37:03.116 A:middle
+they're equal.
+
+00:37:03.306 --> 00:37:05.126 A:middle
+If they are, we save the new
+
+00:37:05.126 --> 00:37:06.646 A:middle
+passcode, and dismiss the
+
+00:37:06.646 --> 00:37:07.236 A:middle
+viewController.
+
+00:37:07.626 --> 00:37:09.456 A:middle
+Otherwise, we reset the prompt
+
+00:37:09.456 --> 00:37:10.726 A:middle
+text back to what we originally
+
+00:37:10.726 --> 00:37:13.096 A:middle
+asked, clear the entry, and then
+
+00:37:13.296 --> 00:37:14.666 A:middle
+set the passcodeToVerify to nil
+
+00:37:14.666 --> 00:37:15.546 A:middle
+so they can try again.
+
+00:37:16.046 --> 00:37:17.336 A:middle
+And, finally we present our
+
+00:37:17.336 --> 00:37:17.886 A:middle
+viewController.
+
+00:37:22.046 --> 00:37:22.976 A:middle
+So, now we're going to go to
+
+00:37:22.976 --> 00:37:23.326 A:middle
+Settings.
+
+00:37:23.326 --> 00:37:24.756 A:middle
+It's going to ask us to please
+
+00:37:24.756 --> 00:37:25.646 A:middle
+set a passcode.
+
+00:37:25.736 --> 00:37:27.156 A:middle
+Let's go ahead and set it all
+
+00:37:27.156 --> 00:37:27.866 A:middle
+1's first.
+
+00:37:28.266 --> 00:37:29.436 A:middle
+Now it's asked us to verify.
+
+00:37:29.586 --> 00:37:30.556 A:middle
+But, this time I'm going to
+
+00:37:30.556 --> 00:37:31.146 A:middle
+enter all 2's.
+
+00:37:32.146 --> 00:37:32.836 A:middle
+Since we know that was
+
+00:37:32.836 --> 00:37:33.376 A:middle
+incorrect.
+
+00:37:33.916 --> 00:37:35.136 A:middle
+So, now let's do it correctly
+
+00:37:35.136 --> 00:37:35.526 A:middle
+this time.
+
+00:37:36.376 --> 00:37:37.716 A:middle
+We've got five 1's, we're going
+
+00:37:37.716 --> 00:37:38.796 A:middle
+to verify our PIN code.
+
+00:37:39.476 --> 00:37:40.756 A:middle
+And, we can save the PIN code so
+
+00:37:40.756 --> 00:37:42.026 A:middle
+the user can use it when they
+
+00:37:42.026 --> 00:37:42.336 A:middle
+need to.
+
+00:37:42.566 --> 00:37:44.226 A:middle
+And, that's how you can
+
+00:37:44.226 --> 00:37:44.626 A:middle
+implement
+
+00:37:44.626 --> 00:37:46.896 A:middle
+TVDigitEntryViewController into
+
+00:37:46.896 --> 00:37:47.546 A:middle
+your application.
+
+00:37:47.686 --> 00:37:48.756 A:middle
+I'd like to invite Hans back up
+
+00:37:48.756 --> 00:37:48.976 A:middle
+on stage.
+
+00:37:49.516 --> 00:37:52.546 A:middle
+[ Applause ]
+
+00:37:53.046 --> 00:37:53.696 A:middle
+&gt;&gt; Thank you, Marshall.
+
+00:37:54.576 --> 00:37:56.586 A:middle
+That was a great demo showing
+
+00:37:56.586 --> 00:37:58.196 A:middle
+just how easy it is to adopt a
+
+00:37:58.196 --> 00:37:59.726 A:middle
+common UI patterns, using
+
+00:37:59.726 --> 00:38:00.446 A:middle
+TVUIKit.
+

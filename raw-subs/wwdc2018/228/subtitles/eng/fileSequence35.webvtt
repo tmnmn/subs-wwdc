@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:00.476 --> 00:35:02.296 A:middle
+This can be natural, depending
+
+00:35:02.296 --> 00:35:03.326 A:middle
+on what your app is doing.
+
+00:35:04.396 --> 00:35:05.646 A:middle
+Well, let's say it's putting a
+
+00:35:05.646 --> 00:35:07.846 A:middle
+really heavy load on the CPU for
+
+00:35:07.846 --> 00:35:08.496 A:middle
+a long time.
+
+00:35:09.066 --> 00:35:14.046 A:middle
+This causes a high CPU energy
+
+00:35:14.046 --> 00:35:15.136 A:middle
+event to be detected.
+
+00:35:15.656 --> 00:35:18.236 A:middle
+Now, there are two key
+
+00:35:18.236 --> 00:35:20.616 A:middle
+thresholds that are checked for
+
+00:35:21.246 --> 00:35:22.546 A:middle
+for a high CPU energy event.
+
+00:35:23.186 --> 00:35:24.836 A:middle
+The first threshold is when your
+
+00:35:24.836 --> 00:35:27.216 A:middle
+app is spinning 80% CPU for more
+
+00:35:27.216 --> 00:35:28.966 A:middle
+than three minutes while in the
+
+00:35:29.016 --> 00:35:30.806 A:middle
+foreground, and the second
+
+00:35:30.806 --> 00:35:33.636 A:middle
+threshold is more than 80% CPU
+
+00:35:34.006 --> 00:35:35.446 A:middle
+for more than one minute while
+
+00:35:35.446 --> 00:35:36.086 A:middle
+in the background.
+
+00:35:37.056 --> 00:35:38.696 A:middle
+In this latter case, your app
+
+00:35:38.696 --> 00:35:40.346 A:middle
+may actually get killed to
+
+00:35:40.346 --> 00:35:41.576 A:middle
+prevent runaway background
+
+00:35:41.576 --> 00:35:42.046 A:middle
+usage.
+
+00:35:44.896 --> 00:35:47.486 A:middle
+Each instance of a CPU Energy
+
+00:35:47.486 --> 00:35:49.496 A:middle
+Log indicates that your app uses
+
+00:35:49.496 --> 00:35:51.086 A:middle
+so much CPU that it was worth
+
+00:35:51.086 --> 00:35:51.566 A:middle
+flagging.
+
+00:35:52.726 --> 00:35:53.816 A:middle
+What this means in practical
+
+00:35:53.816 --> 00:35:56.276 A:middle
+terms is that it was responsible
+
+00:35:56.276 --> 00:35:59.536 A:middle
+for up to a 1% battery drop in a
+
+00:35:59.536 --> 00:36:01.636 A:middle
+typical case.
+

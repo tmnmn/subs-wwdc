@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:00.876 --> 00:26:02.856 A:middle
+we're able to eliminate the sign
+
+00:26:02.856 --> 00:26:05.666 A:middle
+bit by normalizing that between
+
+00:26:05.666 --> 00:26:07.206 A:middle
+0 and 80 meters, even though our
+
+00:26:07.206 --> 00:26:08.356 A:middle
+origin is at the center of the
+
+00:26:08.356 --> 00:26:08.646 A:middle
+table.
+
+00:26:09.446 --> 00:26:10.556 A:middle
+Now all values are positive.
+
+00:26:11.196 --> 00:26:13.966 A:middle
+We then scale that value to be
+
+00:26:13.966 --> 00:26:15.096 A:middle
+in a range of 0 to 1.
+
+00:26:15.696 --> 00:26:16.636 A:middle
+That way we don't need the
+
+00:26:16.636 --> 00:26:17.866 A:middle
+exponent information that's
+
+00:26:17.866 --> 00:26:20.626 A:middle
+inherent in the protocol.
+
+00:26:21.176 --> 00:26:24.366 A:middle
+And then lastly, we take that
+
+00:26:24.366 --> 00:26:25.786 A:middle
+and we scale it to the number of
+
+00:26:25.786 --> 00:26:29.136 A:middle
+bits available so that all 1s is
+
+00:26:29.266 --> 00:26:31.876 A:middle
+a floating point 1 and all 0s is
+
+00:26:31.876 --> 00:26:32.806 A:middle
+the floating point 0.
+
+00:26:34.126 --> 00:26:35.356 A:middle
+This gave us millimeter scale
+
+00:26:35.356 --> 00:26:37.376 A:middle
+precision which, as we
+
+00:26:37.376 --> 00:26:39.296 A:middle
+discovered, was really enough to
+
+00:26:39.296 --> 00:26:40.716 A:middle
+achieve that smooth synchronous
+
+00:26:40.906 --> 00:26:43.296 A:middle
+appearance in the game.
+
+00:26:43.436 --> 00:26:44.816 A:middle
+Now, we did a similar technique
+
+00:26:44.816 --> 00:26:46.026 A:middle
+for all the other values that
+
+00:26:46.026 --> 00:26:46.546 A:middle
+you saw.
+
+00:26:46.716 --> 00:26:48.526 A:middle
+The velocity, angular velocity
+
+00:26:48.666 --> 00:26:49.466 A:middle
+and orientation.
+
+00:26:50.336 --> 00:26:52.326 A:middle
+Tailing the ranges and the
+
+00:26:52.326 --> 00:26:53.906 A:middle
+number of bits for each to
+
+00:26:53.906 --> 00:26:54.806 A:middle
+really make sure that we
+
+00:26:55.226 --> 00:26:56.526 A:middle
+transmit the information using
+
+00:26:56.526 --> 00:26:57.436 A:middle
+the minimal amount of data.
+
+00:26:58.096 --> 00:27:00.356 A:middle
+Overall, we reduce the number of
+

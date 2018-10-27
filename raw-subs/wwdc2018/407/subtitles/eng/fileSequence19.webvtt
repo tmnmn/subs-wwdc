@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.996 --> 00:19:02.036 A:middle
+this call, which is to IDE
+
+00:19:02.036 --> 00:19:04.636 A:middle
+Navigator, replacement view, did
+
+00:19:04.636 --> 00:19:05.576 A:middle
+install view controller.
+
+00:19:05.936 --> 00:19:07.106 A:middle
+Now, I'm familiar with this API,
+
+00:19:07.106 --> 00:19:08.746 A:middle
+because it's an internal API of
+
+00:19:08.746 --> 00:19:09.176 A:middle
+Xcode.
+
+00:19:10.156 --> 00:19:12.686 A:middle
+And in the trace, I can see over
+
+00:19:12.686 --> 00:19:13.636 A:middle
+here on the left-hand side of
+
+00:19:13.636 --> 00:19:14.686 A:middle
+the window that it is
+
+00:19:14.686 --> 00:19:18.656 A:middle
+responsible for 1.19 seconds of
+
+00:19:18.656 --> 00:19:19.846 A:middle
+the total time we're recording,
+
+00:19:20.116 --> 00:19:21.596 A:middle
+or 45% of the time.
+
+00:19:22.176 --> 00:19:24.196 A:middle
+That is far and away above my
+
+00:19:24.196 --> 00:19:25.356 A:middle
+expectations for how much this
+
+00:19:25.356 --> 00:19:27.756 A:middle
+method should cost.
+
+00:19:27.936 --> 00:19:29.526 A:middle
+However, it's hard to focus on
+
+00:19:29.526 --> 00:19:30.386 A:middle
+what is happening here.
+
+00:19:30.586 --> 00:19:32.336 A:middle
+Right? I'm, there is all this
+
+00:19:32.336 --> 00:19:33.346 A:middle
+other stuff at the bottom of the
+
+00:19:33.346 --> 00:19:35.926 A:middle
+trace, and it looks like I'm,
+
+00:19:35.926 --> 00:19:37.596 A:middle
+you know, 30 or 40 stack ranges
+
+00:19:37.596 --> 00:19:37.736 A:middle
+deep.
+
+00:19:38.056 --> 00:19:39.096 A:middle
+That can be intimidating.
+
+00:19:39.456 --> 00:19:40.726 A:middle
+I want to show you how to focus.
+
+00:19:41.276 --> 00:19:43.006 A:middle
+The first technique is back here
+
+00:19:43.006 --> 00:19:46.976 A:middle
+in that call tree popover again.
+
+00:19:47.176 --> 00:19:49.126 A:middle
+I'm going to use this popover to
+
+00:19:49.126 --> 00:19:50.516 A:middle
+choose the flattened recursion.
+
+00:19:51.756 --> 00:19:55.126 A:middle
+Let's go ahead and do that.
+
+00:19:55.196 --> 00:19:56.326 A:middle
+And now you can see that, that
+
+00:19:56.326 --> 00:19:57.526 A:middle
+repeated set of method calls
+
+00:19:57.526 --> 00:20:00.466 A:middle
+that was right here, oops, has
+

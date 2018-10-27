@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:56.896 --> 00:08:00.406 A:middle
+World Tracking uses a motion
+
+00:08:00.406 --> 00:08:03.236 A:middle
+sensor, the motion data of your
+
+00:08:03.236 --> 00:08:05.436 A:middle
+device's accelerometer and
+
+00:08:05.436 --> 00:08:08.376 A:middle
+gyroscope to compute its change
+
+00:08:08.376 --> 00:08:10.796 A:middle
+in orientation and translation
+
+00:08:11.116 --> 00:08:12.436 A:middle
+on a high frequency.
+
+00:08:14.706 --> 00:08:16.926 A:middle
+It also provides its information
+
+00:08:17.116 --> 00:08:19.276 A:middle
+in correct scale in Metal.
+
+00:08:20.656 --> 00:08:23.056 A:middle
+In literature, just this part of
+
+00:08:23.106 --> 00:08:24.306 A:middle
+the tracking system is also
+
+00:08:24.306 --> 00:08:25.976 A:middle
+called Inertial Odometry.
+
+00:08:27.076 --> 00:08:29.046 A:middle
+While this motion data provides
+
+00:08:29.106 --> 00:08:31.026 A:middle
+good motion information for
+
+00:08:31.026 --> 00:08:32.826 A:middle
+movement across small time
+
+00:08:32.826 --> 00:08:34.226 A:middle
+intervals and whenever there's
+
+00:08:34.275 --> 00:08:36.566 A:middle
+like, sudden movement, it does
+
+00:08:36.645 --> 00:08:38.635 A:middle
+drift over larger time intervals
+
+00:08:39.015 --> 00:08:40.456 A:middle
+as the data is not ideally
+
+00:08:40.616 --> 00:08:42.126 A:middle
+precise and subject to
+
+00:08:42.126 --> 00:08:43.296 A:middle
+cumulative errors.
+
+00:08:44.496 --> 00:08:45.616 A:middle
+That's why it cannot be used
+
+00:08:45.906 --> 00:08:47.446 A:middle
+just by its own for tracking.
+
+00:08:48.036 --> 00:08:51.456 A:middle
+Now, to compensate this drift,
+
+00:08:51.696 --> 00:08:53.416 A:middle
+World Tracking, additionally,
+
+00:08:53.516 --> 00:08:55.506 A:middle
+applies a computer version
+
+00:08:55.506 --> 00:08:58.656 A:middle
+process in which it uses the
+
+00:08:58.656 --> 00:08:59.606 A:middle
+camera frames.
+

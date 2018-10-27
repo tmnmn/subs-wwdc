@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:00.046 --> 00:39:01.666 A:middle
+So at Photos, really keep in
+
+00:39:01.666 --> 00:39:02.646 A:middle
+mind that we are dealing with a
+
+00:39:02.646 --> 00:39:05.526 A:middle
+non-bonded data sets.
+
+00:39:05.766 --> 00:39:07.016 A:middle
+Now, let's see how we optimize
+
+00:39:07.016 --> 00:39:09.166 A:middle
+each of these steps for Photos,
+
+00:39:09.166 --> 00:39:09.836 A:middle
+and let's start with
+
+00:39:09.836 --> 00:39:11.846 A:middle
+initializing the database.
+
+00:39:13.236 --> 00:39:15.146 A:middle
+So first, usually, the database
+
+00:39:15.146 --> 00:39:16.606 A:middle
+is initialized and loaded when
+
+00:39:16.606 --> 00:39:18.056 A:middle
+the first query is being fired.
+
+00:39:18.656 --> 00:39:19.886 A:middle
+One optimization that we have
+
+00:39:19.886 --> 00:39:21.806 A:middle
+found was to do it as early as
+
+00:39:21.806 --> 00:39:22.796 A:middle
+possible in the background
+
+00:39:22.796 --> 00:39:24.586 A:middle
+thread, so that it doesn't have
+
+00:39:24.586 --> 00:39:26.346 A:middle
+to do the initialization when
+
+00:39:26.346 --> 00:39:27.636 A:middle
+the first query has been fired.
+
+00:39:28.996 --> 00:39:30.736 A:middle
+And this is an issue, especially
+
+00:39:30.946 --> 00:39:32.256 A:middle
+if the first query is being done
+
+00:39:32.256 --> 00:39:33.006 A:middle
+from the main thread.
+
+00:39:34.756 --> 00:39:39.696 A:middle
+Now, we spend a lot of time and
+
+00:39:39.696 --> 00:39:40.646 A:middle
+we are still spending a lot of
+
+00:39:40.706 --> 00:39:41.956 A:middle
+time reviewing all the queries
+
+00:39:41.956 --> 00:39:43.116 A:middle
+that we're doing during launch,
+
+00:39:43.626 --> 00:39:44.766 A:middle
+and we want to make sure that
+
+00:39:44.846 --> 00:39:46.396 A:middle
+the work that we are doing is
+
+00:39:46.396 --> 00:39:47.786 A:middle
+only the necessary one, and we
+
+00:39:47.786 --> 00:39:49.276 A:middle
+are not doing more.
+
+00:39:53.246 --> 00:39:56.106 A:middle
+Now, lastly, we want to ensure
+
+00:39:56.106 --> 00:39:57.586 A:middle
+that all the queries that we are
+
+00:39:57.586 --> 00:39:59.576 A:middle
+doing are efficient as possible,
+
+00:39:59.576 --> 00:40:01.086 A:middle
+and we want to avoid the complex
+

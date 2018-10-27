@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:55.108 --> 00:13:00.147 align:start position:30% line:-2
+一方 ディクショナリは
+カスタム実装を与えます
+
+00:13:04.251 --> 00:13:09.356 align:start position:21% line:-2
+では インデックスの汎用化のため
+カウントに戻りましょう
+
+00:13:09.456 --> 00:13:16.230 align:start position:21% line:-2
+この便利なプロパティを
+コレクションの拡張として戻します
+
+00:13:16.630 --> 00:13:21.034 align:start position:30% line:-2
+コレクションをまたいで
+インデックスを進め―
+
+00:13:21.134 --> 00:13:24.104 align:start position:21% line:-1
+カウンタをインクリメントさせます
+
+00:13:26.440 --> 00:13:29.776 align:start position:30% line:-2
+でもこの実装に
+足りない要件があります
+
+00:13:30.577 --> 00:13:33.213 align:start position:29% line:-1
+Intを移動させたので―
+
+00:13:33.313 --> 00:13:36.950 align:start position:21% line:-2
+インデックス型はもう
+Equatableではありません
+
+00:13:37.417 --> 00:13:44.324 align:start position:21% line:-2
+しかし終了に達したことを知るには
+Equatableが必要です
+
+00:13:45.492 --> 00:13:49.129 align:start position:34% line:-2
+これを解決するには
+前と同じく―
+
+00:13:49.229 --> 00:13:53.834 align:start position:16% line:-2
+Equatableの時だけ適用するよう
+拡張を制約します
+
+00:13:54.635 --> 00:13:56.336 align:start position:32% line:-1
+でもしっくりきません
+
+00:13:57.538 --> 00:14:00.440 align:start position:21% line:-1
+使いやすいプロトコルが欲しいのに
+

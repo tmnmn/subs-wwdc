@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.676 --> 00:31:01.066 A:middle
+And then adjust your assets and
+
+00:31:01.066 --> 00:31:03.556 A:middle
+use the point snapping to adjust
+
+00:31:03.556 --> 00:31:05.336 A:middle
+your strokes and edges to fit
+
+00:31:05.406 --> 00:31:05.656 A:middle
+there.
+
+00:31:06.256 --> 00:31:08.686 A:middle
+Okay that's great, now what do
+
+00:31:08.686 --> 00:31:09.556 A:middle
+you do with this thing once
+
+00:31:09.556 --> 00:31:10.996 A:middle
+you've got it, it's too big
+
+00:31:10.996 --> 00:31:11.716 A:middle
+right, it doesn't work?
+
+00:31:12.286 --> 00:31:14.496 A:middle
+Yes it does, all you have to do
+
+00:31:14.496 --> 00:31:16.196 A:middle
+is just drop it into the 2x slot
+
+00:31:16.476 --> 00:31:18.936 A:middle
+in the Asset Catalog scales bins
+
+00:31:19.316 --> 00:31:20.716 A:middle
+and that will automatically
+
+00:31:20.716 --> 00:31:22.686 A:middle
+enable Xcode to process that
+
+00:31:22.686 --> 00:31:24.266 A:middle
+artwork, realize it's actually a
+
+00:31:24.266 --> 00:31:25.956 A:middle
+2x piece of artwork, it's
+
+00:31:25.956 --> 00:31:27.246 A:middle
+slightly too big, one point is
+
+00:31:27.246 --> 00:31:29.256 A:middle
+not equal to two pixels of
+
+00:31:29.256 --> 00:31:30.816 A:middle
+retina, but rather the other way
+
+00:31:30.816 --> 00:31:31.146 A:middle
+around.
+
+00:31:31.386 --> 00:31:32.746 A:middle
+We'll do all the math, we'll
+
+00:31:32.746 --> 00:31:34.776 A:middle
+render all the right rasterized
+
+00:31:34.776 --> 00:31:35.826 A:middle
+bitmaps for all the other scale
+
+00:31:35.826 --> 00:31:37.926 A:middle
+factors and handle that for you.
+
+00:31:37.926 --> 00:31:40.106 A:middle
+Freeing the designer to use that
+
+00:31:40.106 --> 00:31:41.626 A:middle
+2x grid which can be rather
+
+00:31:41.626 --> 00:31:41.986 A:middle
+helpful.
+
+00:31:43.746 --> 00:31:45.656 A:middle
+Of course, if the automatic
+
+00:31:45.656 --> 00:31:46.506 A:middle
+scaling that we do is
+
+00:31:46.506 --> 00:31:47.726 A:middle
+insufficient or still presents
+
+00:31:47.796 --> 00:31:50.756 A:middle
+problems in some areas, you can
+
+00:31:50.756 --> 00:31:52.276 A:middle
+have ultimate control of your
+
+00:31:52.276 --> 00:31:54.366 A:middle
+results as always by dropping in
+
+00:31:54.366 --> 00:31:55.696 A:middle
+hinted bitmaps into the
+
+00:31:55.696 --> 00:31:56.956 A:middle
+appropriate scale factor bins
+
+00:31:57.116 --> 00:31:58.586 A:middle
+and we'll go ahead and use that
+
+00:31:58.586 --> 00:31:59.726 A:middle
+and prefer that over the
+
+00:31:59.976 --> 00:32:02.656 A:middle
+generated PDF rasterizations.
+

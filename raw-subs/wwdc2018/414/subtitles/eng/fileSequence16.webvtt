@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:57.736 --> 00:16:01.356 A:middle
+function being called and that
+
+00:16:01.356 --> 00:16:03.116 A:middle
+function in turn called fatal
+
+00:16:03.116 --> 00:16:04.736 A:middle
+error message as a result of
+
+00:16:04.736 --> 00:16:05.476 A:middle
+some error.
+
+00:16:06.806 --> 00:16:08.736 A:middle
+Because this is a symbolicated
+
+00:16:08.736 --> 00:16:10.426 A:middle
+stack trace with full debug
+
+00:16:10.426 --> 00:16:12.376 A:middle
+information we have a file and
+
+00:16:12.376 --> 00:16:14.856 A:middle
+line number in our code of what
+
+00:16:14.856 --> 00:16:15.566 A:middle
+the crash was.
+
+00:16:16.516 --> 00:16:17.856 A:middle
+So we can take a look at that
+
+00:16:17.856 --> 00:16:19.506 A:middle
+line, we can open up our
+
+00:16:19.506 --> 00:16:20.706 A:middle
+project, this is
+
+00:16:20.706 --> 00:16:24.316 A:middle
+RecipeImage.swift, line 26 was
+
+00:16:24.316 --> 00:16:25.276 A:middle
+the one that was marked in the
+
+00:16:25.276 --> 00:16:25.806 A:middle
+crash.
+
+00:16:26.716 --> 00:16:27.926 A:middle
+And those of you who are
+
+00:16:27.926 --> 00:16:29.436 A:middle
+experienced Swift programmers
+
+00:16:29.436 --> 00:16:31.066 A:middle
+will have a pretty good guess as
+
+00:16:31.066 --> 00:16:32.896 A:middle
+to why this line might crash.
+
+00:16:33.946 --> 00:16:36.836 A:middle
+We have a force unwrap operator.
+
+00:16:37.766 --> 00:16:40.076 A:middle
+We have a function, The UIImage
+
+00:16:40.076 --> 00:16:41.516 A:middle
+Constructor which returns an
+
+00:16:41.586 --> 00:16:42.746 A:middle
+optional value.
+
+00:16:43.536 --> 00:16:45.696 A:middle
+If the optional value is nil the
+
+00:16:45.696 --> 00:16:48.596 A:middle
+force unwrap operator will halt
+
+00:16:48.596 --> 00:16:50.726 A:middle
+the process, generate a crash
+
+00:16:50.726 --> 00:16:52.186 A:middle
+log and exit.
+
+00:16:53.796 --> 00:16:54.856 A:middle
+If we remember the
+
+00:16:54.856 --> 00:16:56.906 A:middle
+application-specific information
+
+00:16:57.216 --> 00:16:58.926 A:middle
+it included the error message
+
+00:16:59.046 --> 00:17:01.256 A:middle
+that the Swift runtime prints as
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.466 --> 00:04:02.736 A:middle
+we have available to us.
+
+00:04:02.946 --> 00:04:04.736 A:middle
+So, if parallelization -- or
+
+00:04:04.736 --> 00:04:07.366 A:middle
+parallelization is such a good
+
+00:04:07.366 --> 00:04:09.036 A:middle
+thing, why don't we just create
+
+00:04:09.036 --> 00:04:10.126 A:middle
+a build graph that looks like
+
+00:04:10.126 --> 00:04:10.326 A:middle
+this?
+
+00:04:10.536 --> 00:04:11.796 A:middle
+We just build everything at once
+
+00:04:11.796 --> 00:04:13.016 A:middle
+up front in our build timeline.
+
+00:04:14.156 --> 00:04:16.276 A:middle
+Well, in the best case, you're
+
+00:04:16.276 --> 00:04:17.516 A:middle
+going to deterministic build
+
+00:04:17.856 --> 00:04:18.875 A:middle
+errors.
+
+00:04:19.096 --> 00:04:20.596 A:middle
+And this because that dependency
+
+00:04:20.596 --> 00:04:22.076 A:middle
+information is actually a vital
+
+00:04:22.076 --> 00:04:23.326 A:middle
+part of your project
+
+00:04:23.326 --> 00:04:24.136 A:middle
+configuration.
+
+00:04:24.796 --> 00:04:25.916 A:middle
+And when it's set up like this,
+
+00:04:26.636 --> 00:04:28.306 A:middle
+you're trying to build, for
+
+00:04:28.306 --> 00:04:29.956 A:middle
+example, your game target before
+
+00:04:29.956 --> 00:04:31.196 A:middle
+you've built your dependencies.
+
+00:04:31.456 --> 00:04:32.526 A:middle
+So, this is not a good state to
+
+00:04:32.526 --> 00:04:32.816 A:middle
+be in.
+
+00:04:34.176 --> 00:04:35.216 A:middle
+So, how do we get there?
+
+00:04:35.876 --> 00:04:37.906 A:middle
+How do we get from the long,
+
+00:04:37.906 --> 00:04:39.896 A:middle
+serialized build timeline to the
+
+00:04:39.896 --> 00:04:43.486 A:middle
+better parallelized build time?
+
+00:04:44.356 --> 00:04:45.586 A:middle
+Well first, we need to make sure
+
+00:04:45.586 --> 00:04:48.206 A:middle
+that Xcode is actually set up
+
+00:04:48.206 --> 00:04:49.446 A:middle
+and configured to allow our
+
+00:04:49.446 --> 00:04:51.076 A:middle
+targets to be built in parallel.
+
+00:04:51.126 --> 00:04:52.516 A:middle
+And we do that through the
+
+00:04:52.516 --> 00:04:53.056 A:middle
+Scheme Editor.
+
+00:04:53.796 --> 00:04:54.876 A:middle
+You can get to the Scheme Editor
+
+00:04:54.876 --> 00:04:56.226 A:middle
+by opening the Scheme Chooser
+
+00:04:57.176 --> 00:04:58.366 A:middle
+and selecting Edit Scheme.
+
+00:04:58.836 --> 00:05:00.696 A:middle
+And specifically, you'll need to
+

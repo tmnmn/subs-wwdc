@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.886 --> 00:09:01.236 A:middle
+9 samples from the input image
+
+00:09:01.486 --> 00:09:02.556 A:middle
+and we're only using the red
+
+00:09:02.556 --> 00:09:03.106 A:middle
+channel of it.
+
+00:09:03.756 --> 00:09:05.486 A:middle
+And then once we have those 9
+
+00:09:05.486 --> 00:09:06.596 A:middle
+values, we're going to average
+
+00:09:06.596 --> 00:09:08.146 A:middle
+those 9 values and write them
+
+00:09:08.146 --> 00:09:09.516 A:middle
+out in the traditional way by
+
+00:09:09.516 --> 00:09:11.146 A:middle
+returning a single vec4 pixel
+
+00:09:11.426 --> 00:09:11.996 A:middle
+value.
+
+00:09:12.606 --> 00:09:15.586 A:middle
+Now, first step to make this
+
+00:09:15.586 --> 00:09:16.776 A:middle
+faster is to convert this to
+
+00:09:16.776 --> 00:09:16.976 A:middle
+Metal.
+
+00:09:17.176 --> 00:09:18.366 A:middle
+This is actually quite simple.
+
+00:09:18.366 --> 00:09:19.576 A:middle
+So, we start with code that
+
+00:09:19.576 --> 00:09:20.876 A:middle
+looks like this, which is our
+
+00:09:20.876 --> 00:09:22.196 A:middle
+traditional CI kernel language.
+
+00:09:22.656 --> 00:09:23.646 A:middle
+And with effectively, some
+
+00:09:23.646 --> 00:09:24.796 A:middle
+searching and replacing in your
+
+00:09:24.796 --> 00:09:26.646 A:middle
+code, you could update this to
+
+00:09:26.646 --> 00:09:28.686 A:middle
+the new Metal-based CI kernel
+
+00:09:28.686 --> 00:09:29.136 A:middle
+language.
+
+00:09:29.346 --> 00:09:30.186 A:middle
+There's a couple things that are
+
+00:09:30.186 --> 00:09:31.086 A:middle
+important to notice here.
+
+00:09:31.496 --> 00:09:33.806 A:middle
+We have added a destination
+
+00:09:33.806 --> 00:09:35.096 A:middle
+parameter to the kernel, and
+
+00:09:35.096 --> 00:09:36.606 A:middle
+this is important if you're
+
+00:09:37.106 --> 00:09:38.236 A:middle
+checking for the destination
+
+00:09:38.236 --> 00:09:39.756 A:middle
+coordinate inside your shader,
+
+00:09:39.756 --> 00:09:41.436 A:middle
+which a convolution-like kernel
+
+00:09:41.436 --> 00:09:42.156 A:middle
+like this does.
+
+00:09:42.686 --> 00:09:44.056 A:middle
+And then we're using the new,
+
+00:09:44.056 --> 00:09:45.686 A:middle
+more modern syntax to sample
+
+00:09:45.886 --> 00:09:47.146 A:middle
+from the input by just saying
+
+00:09:47.146 --> 00:09:49.056 A:middle
+sample -- s.sample and
+
+00:09:49.056 --> 00:09:49.986 A:middle
+s.transform.
+
+00:09:50.806 --> 00:09:52.246 A:middle
+And the last thing we've done
+
+00:09:52.246 --> 00:09:53.416 A:middle
+when we've updated this code is
+
+00:09:53.416 --> 00:09:55.666 A:middle
+to change the traditional vec4
+
+00:09:55.666 --> 00:09:57.266 A:middle
+and vec2 parameter types to
+
+00:09:57.706 --> 00:09:59.756 A:middle
+float 4 and float 2.
+

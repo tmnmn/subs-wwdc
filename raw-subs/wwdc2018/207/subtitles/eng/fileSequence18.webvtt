@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.596 --> 00:18:00.436 A:middle
+saying is this particular
+
+00:18:00.436 --> 00:18:02.976 A:middle
+cookie, only send it when I am
+
+00:18:02.976 --> 00:18:04.446 A:middle
+the page owner, when I am the
+
+00:18:04.446 --> 00:18:06.436 A:middle
+main page, not when I'm
+
+00:18:06.436 --> 00:18:06.946 A:middle
+embedded.
+
+00:18:07.406 --> 00:18:08.946 A:middle
+When I own the whole user
+
+00:18:08.946 --> 00:18:10.906 A:middle
+experience, I have the whole web
+
+00:18:10.906 --> 00:18:12.816 A:middle
+view, then send this cookie.
+
+00:18:13.836 --> 00:18:16.606 A:middle
+So, in the embedded case, if
+
+00:18:16.606 --> 00:18:18.016 A:middle
+your web content is being
+
+00:18:18.016 --> 00:18:19.386 A:middle
+embedded by someone you don't
+
+00:18:19.386 --> 00:18:21.726 A:middle
+trust, the SameSite cookie will
+
+00:18:21.726 --> 00:18:24.266 A:middle
+not be sent and your server can
+
+00:18:24.266 --> 00:18:24.946 A:middle
+detect this.
+
+00:18:25.036 --> 00:18:27.516 A:middle
+Aha! I didn't get that SameSite
+
+00:18:27.516 --> 00:18:29.576 A:middle
+cookie, so either this user is
+
+00:18:29.576 --> 00:18:31.086 A:middle
+not logged in or I'm being
+
+00:18:31.086 --> 00:18:32.796 A:middle
+embedded and I'm not going to
+
+00:18:32.796 --> 00:18:34.866 A:middle
+allow this thing to happen were
+
+00:18:34.866 --> 00:18:36.356 A:middle
+that, for instance, a sensitive
+
+00:18:36.356 --> 00:18:36.966 A:middle
+transaction.
+
+00:18:37.886 --> 00:18:40.376 A:middle
+So, that's getting in control of
+
+00:18:40.376 --> 00:18:41.076 A:middle
+being embedded.
+
+00:18:41.276 --> 00:18:42.826 A:middle
+SameSite cookies.
+
+00:18:43.696 --> 00:18:46.336 A:middle
+OK. Cross-origin lockdown.
+
+00:18:46.436 --> 00:18:47.206 A:middle
+We're now going to look at
+
+00:18:47.406 --> 00:18:49.446 A:middle
+really brand new technology.
+
+00:18:49.796 --> 00:18:51.706 A:middle
+WebKit is first implementing
+
+00:18:51.706 --> 00:18:53.726 A:middle
+these two new response headers
+
+00:18:54.236 --> 00:18:55.736 A:middle
+and they're all about
+
+00:18:55.736 --> 00:18:57.376 A:middle
+restricting who gets to load
+
+00:18:57.376 --> 00:18:58.296 A:middle
+your resources.
+
+00:18:58.716 --> 00:19:00.686 A:middle
+Cross-origin resource policy.
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.926 --> 00:08:01.416 A:middle
+Now, let's move on to the next
+
+00:08:01.416 --> 00:08:03.016 A:middle
+topic and talk about
+
+00:08:03.016 --> 00:08:04.706 A:middle
+notification content extensions.
+
+00:08:05.236 --> 00:08:07.466 A:middle
+Now, some of you might already
+
+00:08:07.466 --> 00:08:08.606 A:middle
+be familiar with these content
+
+00:08:08.606 --> 00:08:10.056 A:middle
+extensions that we included with
+
+00:08:10.136 --> 00:08:10.716 A:middle
+iOS 10.
+
+00:08:11.976 --> 00:08:13.726 A:middle
+Content extensions allow your
+
+00:08:13.726 --> 00:08:15.776 A:middle
+applications to present a rich
+
+00:08:15.776 --> 00:08:17.686 A:middle
+notification view around the
+
+00:08:18.006 --> 00:08:20.076 A:middle
+user's notifications, so you can
+
+00:08:20.076 --> 00:08:21.996 A:middle
+have a much more customized and
+
+00:08:21.996 --> 00:08:23.706 A:middle
+interactive interface for the
+
+00:08:23.706 --> 00:08:25.596 A:middle
+notification that the user is
+
+00:08:25.596 --> 00:08:25.936 A:middle
+seeing.
+
+00:08:25.936 --> 00:08:28.836 A:middle
+Let's do a quick recap of
+
+00:08:28.836 --> 00:08:29.846 A:middle
+setting up these content
+
+00:08:29.846 --> 00:08:30.436 A:middle
+extensions.
+
+00:08:31.336 --> 00:08:32.686 A:middle
+Xcode gives you a standard
+
+00:08:32.686 --> 00:08:34.566 A:middle
+template to add a target for the
+
+00:08:34.635 --> 00:08:35.746 A:middle
+content extensions to your
+
+00:08:35.746 --> 00:08:39.456 A:middle
+applications and once you set
+
+00:08:39.456 --> 00:08:40.986 A:middle
+that up, we create a default
+
+00:08:40.986 --> 00:08:42.306 A:middle
+class for the notification view
+
+00:08:42.306 --> 00:08:44.476 A:middle
+controller, which implements the
+
+00:08:44.476 --> 00:08:46.296 A:middle
+UNNotificationContentExtension
+
+00:08:46.296 --> 00:08:46.716 A:middle
+protocol.
+
+00:08:47.606 --> 00:08:49.026 A:middle
+Here, the did receive
+
+00:08:49.026 --> 00:08:51.186 A:middle
+notification method is important
+
+00:08:51.186 --> 00:08:52.516 A:middle
+because this is your entry point
+
+00:08:52.516 --> 00:08:53.576 A:middle
+for setting up the view
+
+00:08:53.576 --> 00:08:55.116 A:middle
+associated with the content
+
+00:08:55.116 --> 00:08:57.096 A:middle
+extension, and you can use the
+
+00:08:57.096 --> 00:08:59.276 A:middle
+notification object past here to
+
+00:08:59.276 --> 00:09:01.006 A:middle
+get all the information around
+

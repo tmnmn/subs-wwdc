@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.496 --> 00:03:01.126 A:middle
+so that the assumption is that a
+
+00:03:01.126 --> 00:03:02.906 A:middle
+subsequent render can be made as
+
+00:03:02.906 --> 00:03:03.776 A:middle
+fast as possible.
+
+00:03:04.296 --> 00:03:05.946 A:middle
+There are, sometimes, however,
+
+00:03:06.166 --> 00:03:07.546 A:middle
+when you might want to turn off
+
+00:03:07.706 --> 00:03:08.886 A:middle
+caching of intermediates.
+
+00:03:09.386 --> 00:03:10.756 A:middle
+So, for example, if you
+
+00:03:10.756 --> 00:03:12.106 A:middle
+application is going to be doing
+
+00:03:12.106 --> 00:03:14.436 A:middle
+a batch export of 100 images,
+
+00:03:14.986 --> 00:03:16.306 A:middle
+there is little benefit of
+
+00:03:16.336 --> 00:03:17.656 A:middle
+caching the first one, because
+
+00:03:17.656 --> 00:03:18.776 A:middle
+you'll be rendering a completely
+
+00:03:18.776 --> 00:03:20.026 A:middle
+different image afterwards.
+
+00:03:20.476 --> 00:03:21.956 A:middle
+So, you can do that today in
+
+00:03:21.956 --> 00:03:23.336 A:middle
+your application by using the
+
+00:03:23.336 --> 00:03:24.936 A:middle
+context option cache
+
+00:03:24.936 --> 00:03:26.046 A:middle
+intermediates and setting that
+
+00:03:26.046 --> 00:03:26.976 A:middle
+value to false.
+
+00:03:28.616 --> 00:03:30.176 A:middle
+However, if you are also using
+
+00:03:30.176 --> 00:03:31.966 A:middle
+this new API that we spoke
+
+00:03:31.966 --> 00:03:34.466 A:middle
+about, you can still turn on
+
+00:03:34.466 --> 00:03:35.836 A:middle
+caching of intermediates, even
+
+00:03:35.836 --> 00:03:37.676 A:middle
+if this context option is turned
+
+00:03:37.676 --> 00:03:38.436 A:middle
+off.
+
+00:03:38.436 --> 00:03:39.686 A:middle
+So, this allows you to really
+
+00:03:39.686 --> 00:03:40.806 A:middle
+make sure that we cache
+
+00:03:40.806 --> 00:03:41.956 A:middle
+something and don't cache
+
+00:03:41.956 --> 00:03:42.686 A:middle
+anything else.
+
+00:03:44.516 --> 00:03:46.846 A:middle
+The next subject I'd like to
+
+00:03:46.846 --> 00:03:48.606 A:middle
+talk about is some new features
+
+00:03:48.606 --> 00:03:50.446 A:middle
+we've added to the kernel
+
+00:03:50.446 --> 00:03:52.876 A:middle
+language that allows us to apply
+
+00:03:52.876 --> 00:03:53.656 A:middle
+image processing.
+
+00:03:55.156 --> 00:03:56.596 A:middle
+So, one thing to keep in mind is
+
+00:03:56.596 --> 00:03:58.216 A:middle
+that we have two different ways
+
+00:03:58.216 --> 00:03:59.386 A:middle
+of writing kernels in Core
+
+00:03:59.386 --> 00:03:59.696 A:middle
+Image.
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.096 --> 00:10:01.726 A:middle
+as of Swift 4.2, this happens
+
+00:10:01.846 --> 00:10:02.516 A:middle
+automatically.
+
+00:10:03.256 --> 00:10:04.416 A:middle
+Because we also named their
+
+00:10:04.416 --> 00:10:06.016 A:middle
+generic parameters to be element
+
+00:10:06.016 --> 00:10:06.416 A:middle
+as well.
+
+00:10:07.706 --> 00:10:09.136 A:middle
+This is a nice side benefit of
+
+00:10:09.136 --> 00:10:10.356 A:middle
+giving your generic arguments
+
+00:10:10.466 --> 00:10:11.856 A:middle
+meaningful names that follow
+
+00:10:11.856 --> 00:10:13.816 A:middle
+common conventions like the word
+
+00:10:13.816 --> 00:10:14.226 A:middle
+element.
+
+00:10:15.726 --> 00:10:16.406 A:middle
+Rather than giving them
+
+00:10:16.406 --> 00:10:17.856 A:middle
+something arbitrary like T that
+
+00:10:17.856 --> 00:10:19.256 A:middle
+you'd have to separately state
+
+00:10:19.256 --> 00:10:20.116 A:middle
+was the element type.
+
+00:10:22.096 --> 00:10:23.296 A:middle
+For other data types, you might
+
+00:10:23.296 --> 00:10:24.186 A:middle
+need to do something slightly
+
+00:10:24.186 --> 00:10:24.816 A:middle
+more specific.
+
+00:10:24.816 --> 00:10:26.186 A:middle
+For example, a dictionary needs
+
+00:10:26.186 --> 00:10:27.466 A:middle
+to set the element type to be
+
+00:10:27.466 --> 00:10:28.986 A:middle
+the pair of its key and value
+
+00:10:29.066 --> 00:10:29.266 A:middle
+type.
+
+00:10:29.746 --> 00:10:33.486 A:middle
+Next, let's talk about adding
+
+00:10:33.486 --> 00:10:34.646 A:middle
+the subscript operation.
+
+00:10:35.896 --> 00:10:37.026 A:middle
+Now, if we were talking about
+
+00:10:37.156 --> 00:10:38.566 A:middle
+just a protocol for types like
+
+00:10:38.626 --> 00:10:40.376 A:middle
+array, we might be tempted to
+
+00:10:40.376 --> 00:10:42.576 A:middle
+have subscripts take an Int as
+
+00:10:42.576 --> 00:10:43.146 A:middle
+its argument.
+
+00:10:45.036 --> 00:10:47.256 A:middle
+But making subscript take an Int
+
+00:10:47.476 --> 00:10:49.006 A:middle
+would imply a very strong
+
+00:10:49.006 --> 00:10:50.456 A:middle
+contract.
+
+00:10:50.936 --> 00:10:52.466 A:middle
+Every conforming type would have
+
+00:10:52.586 --> 00:10:54.536 A:middle
+to supply the ability to fetch
+
+00:10:54.536 --> 00:10:55.756 A:middle
+an element's given position that
+
+00:10:55.756 --> 00:10:57.396 A:middle
+was represented by an integer.
+
+00:10:57.916 --> 00:10:59.836 A:middle
+And, that works great for types
+

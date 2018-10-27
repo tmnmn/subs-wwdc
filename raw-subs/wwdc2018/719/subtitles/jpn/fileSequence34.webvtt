@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.839 --> 00:34:03.544 align:start position:25% line:-2
+CIImageインスタンスで
+レンダリングを呼び出すたび
+
+00:34:03.644 --> 00:34:06.813 align:start position:30% line:-2
+NumPyがベイクされ
+格納されます
+
+00:34:07.047 --> 00:34:11.451 align:start position:14% line:-2
+例えばGaussianBlurを適用した
+画像を作成します
+
+00:34:11.552 --> 00:34:15.188 align:start position:25% line:-2
+最初の呼び出しに56ミリ秒
+２回目は２ミリ秒かかりました
+
+00:34:15.956 --> 00:34:18.692 align:start position:36% line:-2
+大きな畳み込みも
+見てみましょう
+
+00:34:18.792 --> 00:34:20.793 align:start position:18% line:-1
+Core Imageはスピードが速く
+
+00:34:20.928 --> 00:34:24.398 align:start position:36% line:-2
+大きな畳み込みを
+簡単にこなします
+
+00:34:24.498 --> 00:34:31.972 align:start position:16% line:-2
+ここではCIGaussianBlurを
+200のシグマで適用
+
+00:34:32.072 --> 00:34:33.139 align:start position:34% line:-1
+かなりの大きさです
+
+00:34:33.239 --> 00:34:36.810 align:start position:30% line:-1
+画像をお見せしましょう
+
+00:34:36.909 --> 00:34:40.347 align:start position:21% line:-2
+scikit-imageを使って
+同じ作業をすると
+
+00:34:40.447 --> 00:34:42.783 align:start position:32% line:-1
+約16秒かかりました
+
+00:34:42.882 --> 00:34:47.087 align:start position:16% line:-2
+同じことをCore Imageで行うと
+130ミリ秒です
+
+00:34:47.187 --> 00:34:49.822 align:start position:36% line:-1
+かなり速いですね
+
+00:34:50.023 --> 00:34:50.824 align:start position:45% line:-1
+どうも
+
+00:34:50.924 --> 00:34:52.458 align:start position:43% line:-1
+(拍手)
+
+00:34:52.559 --> 00:34:53.327 align:start position:43% line:-1
+続けます
+
+00:34:53.427 --> 00:34:56.597 align:start position:29% line:-2
+PyCoreImageは
+カスタムGPカーネルを
+
+00:34:56.697 --> 00:35:01.268 align:start position:25% line:-2
+インラインで作成して
+複数の処理をまとめて行います
+

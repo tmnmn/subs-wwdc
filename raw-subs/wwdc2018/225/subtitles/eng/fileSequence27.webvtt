@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:57.786 --> 00:27:00.216 A:middle
+implementation here, and let's
+
+00:27:00.216 --> 00:27:01.026 A:middle
+replace it with something that
+
+00:27:01.026 --> 00:27:01.936 A:middle
+should be much faster.
+
+00:27:03.856 --> 00:27:06.196 A:middle
+So I'm going to step through
+
+00:27:06.196 --> 00:27:07.226 A:middle
+this bit by bit, don't worry.
+
+00:27:08.216 --> 00:27:10.066 A:middle
+So the first thing we're doing
+
+00:27:10.066 --> 00:27:12.606 A:middle
+here is we're calling into
+
+00:27:13.476 --> 00:27:15.136 A:middle
+binary search function that
+
+00:27:15.316 --> 00:27:16.656 A:middle
+we've already prepared, which
+
+00:27:16.656 --> 00:27:17.986 A:middle
+takes in a range of indices
+
+00:27:17.986 --> 00:27:20.526 A:middle
+within our array and our query
+
+00:27:20.526 --> 00:27:20.806 A:middle
+rect.
+
+00:27:22.276 --> 00:27:25.956 A:middle
+If it finds a set of attributes
+
+00:27:25.956 --> 00:27:27.086 A:middle
+with a frame that sits within
+
+00:27:27.086 --> 00:27:28.706 A:middle
+our rect, it'll return the
+
+00:27:28.706 --> 00:27:30.586 A:middle
+attributes as index within our
+
+00:27:30.586 --> 00:27:30.806 A:middle
+array.
+
+00:27:32.716 --> 00:27:34.616 A:middle
+Then starting from that index,
+
+00:27:34.616 --> 00:27:36.856 A:middle
+we can build up the set of the
+
+00:27:36.856 --> 00:27:39.016 A:middle
+rest of attributes for our query
+
+00:27:39.016 --> 00:27:41.736 A:middle
+rect simply by looping up and
+
+00:27:41.736 --> 00:27:43.736 A:middle
+down in our array and picking up
+
+00:27:43.736 --> 00:27:46.376 A:middle
+attributes until we exit our
+
+00:27:46.376 --> 00:27:47.506 A:middle
+query rect, until we find
+
+00:27:47.506 --> 00:27:49.016 A:middle
+attributes that are outside our
+
+00:27:49.016 --> 00:27:49.176 A:middle
+rect.
+
+00:27:49.886 --> 00:27:51.466 A:middle
+And this should be much faster.
+
+00:27:51.946 --> 00:27:53.056 A:middle
+You have thousands of items in
+
+00:27:53.056 --> 00:27:53.416 A:middle
+your array.
+
+00:27:53.416 --> 00:27:55.276 A:middle
+You're not going to loop through
+
+00:27:55.276 --> 00:27:56.566 A:middle
+the array thousands of items,
+
+00:27:56.566 --> 00:27:57.886 A:middle
+thousands of times.
+
+00:27:58.576 --> 00:28:00.626 A:middle
+Okay, so let's go back to the
+

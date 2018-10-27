@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.936 --> 00:06:01.096 A:middle
+as they were changing.
+
+00:06:01.096 --> 00:06:03.556 A:middle
+And that double wide light blue
+
+00:06:03.556 --> 00:06:05.806 A:middle
+bar, that is a place where we
+
+00:06:05.846 --> 00:06:08.386 A:middle
+drew the same frame for two full
+
+00:06:08.436 --> 00:06:09.196 A:middle
+frame durations.
+
+00:06:09.946 --> 00:06:11.306 A:middle
+So for a customer looking at the
+
+00:06:11.306 --> 00:06:12.556 A:middle
+device while this was happening,
+
+00:06:12.556 --> 00:06:14.156 A:middle
+that looked like a dropped frame
+
+00:06:14.246 --> 00:06:15.456 A:middle
+or a scrolling hitch, which
+
+00:06:15.456 --> 00:06:16.486 A:middle
+obviously is what we're trying
+
+00:06:16.486 --> 00:06:16.916 A:middle
+to avoid.
+
+00:06:18.276 --> 00:06:19.116 A:middle
+So what was happening in this
+
+00:06:19.146 --> 00:06:19.386 A:middle
+case?
+
+00:06:20.276 --> 00:06:22.296 A:middle
+Well, here you can see that red
+
+00:06:22.426 --> 00:06:23.996 A:middle
+bar is representing the time
+
+00:06:23.996 --> 00:06:24.716 A:middle
+that we're spending in the
+
+00:06:24.716 --> 00:06:26.126 A:middle
+critical section we just talked
+
+00:06:26.126 --> 00:06:27.656 A:middle
+about, all the self-[inaudible]
+
+00:06:27.746 --> 00:06:29.646 A:middle
+index path, layout, and drawing.
+
+00:06:30.206 --> 00:06:31.396 A:middle
+And here, it's actually taking
+
+00:06:31.396 --> 00:06:33.166 A:middle
+longer than the 16 milliseconds
+
+00:06:33.166 --> 00:06:34.206 A:middle
+we had to draw the frame.
+
+00:06:34.946 --> 00:06:36.456 A:middle
+Now because the device can only
+
+00:06:36.456 --> 00:06:39.216 A:middle
+swap new frames onto the screen
+
+00:06:39.216 --> 00:06:41.966 A:middle
+at fixed positions in time, once
+
+00:06:41.966 --> 00:06:43.376 A:middle
+we miss that deadline, we ended
+
+00:06:43.376 --> 00:06:45.196 A:middle
+up displaying the same frame for
+
+00:06:45.196 --> 00:06:46.776 A:middle
+two full durations, which was
+
+00:06:46.776 --> 00:06:47.526 A:middle
+obviously not great.
+
+00:06:48.206 --> 00:06:49.746 A:middle
+So why did that happen here?
+
+00:06:49.746 --> 00:06:50.696 A:middle
+In this case, we're looking at
+
+00:06:50.696 --> 00:06:52.136 A:middle
+an app where we actually had
+
+00:06:52.136 --> 00:06:53.706 A:middle
+implemented the cell prefetching
+
+00:06:53.706 --> 00:06:55.106 A:middle
+method so our data should've
+
+00:06:55.106 --> 00:06:55.606 A:middle
+been ready.
+
+00:06:55.806 --> 00:06:56.956 A:middle
+Ideally, this could've been done
+
+00:06:56.956 --> 00:06:57.466 A:middle
+more quickly.
+
+00:06:58.346 --> 00:06:59.256 A:middle
+Well, if we look at a little
+
+00:06:59.256 --> 00:07:00.286 A:middle
+more of the trace, we can see
+

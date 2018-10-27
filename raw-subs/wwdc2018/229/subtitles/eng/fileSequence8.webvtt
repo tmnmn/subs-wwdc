@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.286 --> 00:08:00.496 A:middle
+this, this will actually work
+
+00:08:00.496 --> 00:08:01.326 A:middle
+with all collections.
+
+00:08:01.496 --> 00:08:03.076 A:middle
+Start index is always going to
+
+00:08:03.076 --> 00:08:05.246 A:middle
+be the element of the first item
+
+00:08:05.246 --> 00:08:05.966 A:middle
+that you would see when you
+
+00:08:05.966 --> 00:08:06.336 A:middle
+iterate.
+
+00:08:06.986 --> 00:08:08.056 A:middle
+But there's a nuance to watch
+
+00:08:08.056 --> 00:08:09.626 A:middle
+out for when using indices to
+
+00:08:09.626 --> 00:08:10.896 A:middle
+directly subscript into any
+
+00:08:10.896 --> 00:08:11.356 A:middle
+collection.
+
+00:08:11.636 --> 00:08:14.966 A:middle
+And that is, it can crash.
+
+00:08:15.216 --> 00:08:17.146 A:middle
+I haven't actually asserted that
+
+00:08:17.146 --> 00:08:18.356 A:middle
+these collections have contents
+
+00:08:18.356 --> 00:08:20.056 A:middle
+in them, and so when you're, I'm
+
+00:08:20.216 --> 00:08:21.276 A:middle
+just using start index, and
+
+00:08:21.276 --> 00:08:22.126 A:middle
+these collections could be
+
+00:08:22.126 --> 00:08:22.426 A:middle
+empty.
+
+00:08:23.636 --> 00:08:24.416 A:middle
+It turns out though that
+
+00:08:24.416 --> 00:08:25.616 A:middle
+accessing the first element in a
+
+00:08:25.616 --> 00:08:27.996 A:middle
+collection is such a common task
+
+00:08:28.206 --> 00:08:30.866 A:middle
+that there's an even better way.
+
+00:08:31.076 --> 00:08:32.236 A:middle
+Simply call first.
+
+00:08:32.885 --> 00:08:34.346 A:middle
+And if you call first, this is a
+
+00:08:34.346 --> 00:08:35.756 A:middle
+lot safer, because the return
+
+00:08:35.756 --> 00:08:37.056 A:middle
+time of this is optional,
+
+00:08:37.326 --> 00:08:38.676 A:middle
+reflecting the fact that not all
+
+00:08:38.676 --> 00:08:39.606 A:middle
+collections have a first
+
+00:08:39.606 --> 00:08:39.956 A:middle
+element.
+
+00:08:39.956 --> 00:08:43.285 A:middle
+So I have another question.
+
+00:08:44.526 --> 00:08:45.696 A:middle
+It's the second element of a
+
+00:08:45.696 --> 00:08:46.796 A:middle
+collection, and I want to
+
+00:08:46.796 --> 00:08:48.116 A:middle
+emphasize collection here.
+
+00:08:48.306 --> 00:08:49.606 A:middle
+It could be any collection, an
+
+00:08:49.606 --> 00:08:50.626 A:middle
+array, a set, or something that
+
+00:08:50.626 --> 00:08:51.626 A:middle
+doesn't even exist yet.
+
+00:08:52.026 --> 00:08:53.796 A:middle
+Let's go ahead and add a new
+
+00:08:53.876 --> 00:08:55.106 A:middle
+property to collection via
+
+00:08:55.106 --> 00:08:55.976 A:middle
+protocol extension, and we'll
+
+00:08:55.976 --> 00:08:57.566 A:middle
+call it second, and just like
+
+00:08:57.636 --> 00:08:58.436 A:middle
+first, it's going to return
+
+00:08:58.436 --> 00:08:59.556 A:middle
+optional, because not all
+
+00:08:59.556 --> 00:09:00.936 A:middle
+collections have two elements.
+

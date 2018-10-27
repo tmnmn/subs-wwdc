@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.966 --> 00:15:01.096 A:middle
+same place in the real world.
+
+00:15:01.396 --> 00:15:05.446 A:middle
+So, a quick word about privacy
+
+00:15:05.446 --> 00:15:06.196 A:middle
+with WorldMaps.
+
+00:15:06.826 --> 00:15:07.916 A:middle
+In the process of recording the
+
+00:15:07.916 --> 00:15:09.926 A:middle
+WorldMap, we take into account
+
+00:15:10.076 --> 00:15:11.226 A:middle
+features of the world around
+
+00:15:11.226 --> 00:15:12.386 A:middle
+you, physical arrangements of
+
+00:15:12.386 --> 00:15:13.616 A:middle
+objects and so forth.
+
+00:15:15.016 --> 00:15:16.746 A:middle
+While it does include geographic
+
+00:15:16.746 --> 00:15:18.036 A:middle
+information like latitude and
+
+00:15:18.036 --> 00:15:19.366 A:middle
+longitude and thus your
+
+00:15:19.366 --> 00:15:20.756 A:middle
+application doesn't need to ask
+
+00:15:20.756 --> 00:15:22.296 A:middle
+for location permission to use
+
+00:15:22.296 --> 00:15:25.046 A:middle
+ARKit, it may include personally
+
+00:15:25.046 --> 00:15:26.726 A:middle
+identifiable information about
+
+00:15:26.726 --> 00:15:27.736 A:middle
+the user's environment.
+
+00:15:28.686 --> 00:15:29.976 A:middle
+So, we recommend that you treat
+
+00:15:30.046 --> 00:15:32.086 A:middle
+a serialized WorldMap the same
+
+00:15:32.156 --> 00:15:33.266 A:middle
+way that you would any other
+
+00:15:33.266 --> 00:15:35.866 A:middle
+user-created private data.
+
+00:15:36.156 --> 00:15:38.686 A:middle
+This means that you want to make
+
+00:15:38.686 --> 00:15:39.846 A:middle
+sure that you're encrypting it
+
+00:15:40.616 --> 00:15:41.976 A:middle
+both at rest and when moving
+
+00:15:41.976 --> 00:15:42.746 A:middle
+across the network.
+
+00:15:43.666 --> 00:15:44.676 A:middle
+You may also want to let your
+
+00:15:44.676 --> 00:15:46.406 A:middle
+users know if you're planning to
+
+00:15:46.636 --> 00:15:48.156 A:middle
+save that WorldMap information
+
+00:15:48.156 --> 00:15:49.586 A:middle
+for an extended period of time,
+
+00:15:49.896 --> 00:15:51.316 A:middle
+past a single session of your
+
+00:15:51.316 --> 00:15:51.856 A:middle
+application.
+
+00:15:53.296 --> 00:15:54.766 A:middle
+In SwiftShot, we're able to take
+
+00:15:54.766 --> 00:15:56.806 A:middle
+advantage of iOS's built-in
+
+00:15:56.986 --> 00:15:59.596 A:middle
+encryption for encrypting the
+
+00:15:59.596 --> 00:16:00.606 A:middle
+data while at rest.
+

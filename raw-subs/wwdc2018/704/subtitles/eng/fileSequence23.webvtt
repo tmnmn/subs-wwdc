@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.346 --> 00:23:00.676 A:middle
+transaction until you add the
+
+00:23:00.676 --> 00:23:01.576 A:middle
+Transaction Observer.
+
+00:23:01.746 --> 00:23:03.446 A:middle
+If the user decides to buy
+
+00:23:03.446 --> 00:23:04.676 A:middle
+something else this could result
+
+00:23:04.676 --> 00:23:05.846 A:middle
+in confusion when they receive
+
+00:23:05.846 --> 00:23:08.156 A:middle
+two prompts or they could
+
+00:23:08.156 --> 00:23:09.346 A:middle
+receive a prompt out of nowhere
+
+00:23:09.346 --> 00:23:10.416 A:middle
+when you finally add the
+
+00:23:10.416 --> 00:23:12.666 A:middle
+Transaction Observer again.
+
+00:23:13.446 --> 00:23:14.926 A:middle
+Not great [inaudible].
+
+00:23:15.106 --> 00:23:16.156 A:middle
+Another common case where the
+
+00:23:16.156 --> 00:23:17.176 A:middle
+user needs to leave your app in
+
+00:23:17.176 --> 00:23:18.216 A:middle
+the middle of a transaction is
+
+00:23:18.216 --> 00:23:18.886 A:middle
+if they have to edit their
+
+00:23:18.886 --> 00:23:20.456 A:middle
+billing info, this happens all
+
+00:23:20.456 --> 00:23:20.816 A:middle
+the time.
+
+00:23:21.156 --> 00:23:22.086 A:middle
+You'd have to leave your app and
+
+00:23:22.086 --> 00:23:22.816 A:middle
+you want to make sure to
+
+00:23:22.816 --> 00:23:23.596 A:middle
+smoothly continue the
+
+00:23:23.596 --> 00:23:24.806 A:middle
+transaction when they do return.
+
+00:23:26.916 --> 00:23:29.276 A:middle
+Finally, it happens your app can
+
+00:23:29.276 --> 00:23:31.016 A:middle
+crash, in this case you want to
+
+00:23:31.016 --> 00:23:32.466 A:middle
+make sure to smoothly continue
+
+00:23:32.466 --> 00:23:32.886 A:middle
+as well.
+
+00:23:33.426 --> 00:23:37.026 A:middle
+Now there are some other reason
+
+00:23:37.026 --> 00:23:38.316 A:middle
+as well that you want to make
+
+00:23:38.316 --> 00:23:39.286 A:middle
+sure to add this as early as
+
+00:23:39.286 --> 00:23:39.766 A:middle
+possible.
+
+00:23:39.766 --> 00:23:41.806 A:middle
+There are several types of
+
+00:23:41.806 --> 00:23:43.246 A:middle
+transactions that can actually
+
+00:23:43.246 --> 00:23:44.016 A:middle
+come from outside your app.
+
+00:23:45.236 --> 00:23:46.266 A:middle
+For example subscription
+
+00:23:46.266 --> 00:23:47.076 A:middle
+renewals come through the
+
+00:23:47.076 --> 00:23:47.956 A:middle
+Transaction Observer.
+
+00:23:49.096 --> 00:23:50.726 A:middle
+When an auto renewable renews
+
+00:23:50.726 --> 00:23:52.236 A:middle
+successfully you'll receive a
+
+00:23:52.236 --> 00:23:53.426 A:middle
+transaction in the payment
+
+00:23:53.426 --> 00:23:53.616 A:middle
+queue.
+
+00:23:53.756 --> 00:23:56.066 A:middle
+You definitely want to make sure
+
+00:23:56.066 --> 00:23:57.246 A:middle
+to receive this as early as
+
+00:23:57.246 --> 00:23:58.346 A:middle
+possible so you don't interrupt
+
+00:23:58.346 --> 00:23:59.636 A:middle
+the user's service when they
+
+00:23:59.636 --> 00:24:02.866 A:middle
+actually have paid for it.
+

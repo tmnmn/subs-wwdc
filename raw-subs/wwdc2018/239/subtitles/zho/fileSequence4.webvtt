@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:56.937 --> 00:04:00.040 align:middle line:-2
+但是 通过用媒体查询
+把这个双列的布局
+
+00:04:00.107 --> 00:04:03.076 align:middle line:-2
+限制于大于
+320 CSS像素的视点
+
+00:04:03.143 --> 00:04:06.180 align:middle line:-2
+我使这个页面做到了
+在Apple Watch上的响应
+
+00:04:07.681 --> 00:04:08.749 align:middle line:-1
+现在我只需要
+
+00:04:08.815 --> 00:04:12.052 align:middle line:-2
+告诉WebKit此页面已针对
+Apple Watch做了优化
+
+00:04:12.452 --> 00:04:14.354 align:middle line:-1
+从而不需要默认的修改
+
+00:04:15.088 --> 00:04:16.089 align:middle line:-1
+为此
+
+00:04:16.156 --> 00:04:18.725 align:middle line:-2
+我只需在文档的头部
+添加一个新的meta-tag
+
+00:04:19.059 --> 00:04:23.363 align:middle line:-2
+name="disabled-adaptations"
+和content="watch"
+
+00:04:24.064 --> 00:04:26.934 align:middle line:-2
+我用这个meta-tag
+disabled-adaptations
+
+00:04:27.000 --> 00:04:29.937 align:middle line:-1
+以及已有的视口meta-tag
+
+00:04:30.204 --> 00:04:32.806 align:middle line:-2
+确保iPhone和iPad上的
+响应式布局
+
+00:04:33.874 --> 00:04:36.376 align:middle line:-2
+这让WebKit
+可以把视口的设备宽度
+
+00:04:36.443 --> 00:04:38.178 align:middle line:-2
+当作Apple Watch的
+实际宽度
+
+00:04:40.914 --> 00:04:41.915 align:middle line:-1
+现在我们换个话题
+
+00:04:41.982 --> 00:04:44.451 align:middle line:-1
+谈谈表单控制的最佳实践
+
+00:04:45.419 --> 00:04:48.455 align:middle line:-1
+WebKit本身支持表单控制
+
+00:04:49.089 --> 00:04:52.860 align:middle line:-2
+对表单控制和输入
+为确保良好用户体验
+
+00:04:53.327 --> 00:04:55.529 align:middle line:-1
+有几件事很重要
+
+00:04:56.930 --> 00:04:59.833 align:middle line:0
+首先 为你的表单控制
+选择适当的type属性
+
+00:04:59.900 --> 00:05:00.934 align:middle line:0
+和element标记
+

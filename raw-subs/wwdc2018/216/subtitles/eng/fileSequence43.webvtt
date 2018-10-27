@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:59.536 --> 00:43:01.406 A:middle
+storyboard, and give our
+
+00:43:01.406 --> 00:43:02.886 A:middle
+DocumentBrowserViewController
+
+00:43:02.886 --> 00:43:05.296 A:middle
+subclass a restoration ID, so
+
+00:43:05.296 --> 00:43:08.516 A:middle
+that the system restores this
+
+00:43:08.516 --> 00:43:08.926 A:middle
+object.
+
+00:43:09.846 --> 00:43:11.366 A:middle
+And in this example, we'll
+
+00:43:11.366 --> 00:43:16.306 A:middle
+simply use the storyboard ID.
+
+00:43:16.566 --> 00:43:18.326 A:middle
+Next, we're going to implement
+
+00:43:18.376 --> 00:43:19.716 A:middle
+state preservation and
+
+00:43:19.716 --> 00:43:21.256 A:middle
+restoration in this
+
+00:43:21.256 --> 00:43:22.726 A:middle
+documentBrowserViewController
+
+00:43:22.726 --> 00:43:23.316 A:middle
+subclass.
+
+00:43:25.996 --> 00:43:28.236 A:middle
+So, first I start by
+
+00:43:28.236 --> 00:43:28.846 A:middle
+implementing
+
+00:43:28.846 --> 00:43:30.166 A:middle
+encodeRestorableState.
+
+00:43:31.436 --> 00:43:35.036 A:middle
+We get the editorViewController,
+
+00:43:35.086 --> 00:43:36.856 A:middle
+if it exists, and get the
+
+00:43:36.856 --> 00:43:39.366 A:middle
+document URL from it.
+
+00:43:39.736 --> 00:43:40.716 A:middle
+Once we have that URL-- I'm
+
+00:43:40.716 --> 00:43:42.856 A:middle
+going to make this a bit bigger.
+
+00:43:43.376 --> 00:43:45.976 A:middle
+Once we have this URL, we start
+
+00:43:45.976 --> 00:43:47.276 A:middle
+accessing it to extend our
+
+00:43:47.276 --> 00:43:49.176 A:middle
+Sandbox as described previously.
+
+00:43:50.626 --> 00:43:52.596 A:middle
+And, the defer block, we stop
+
+00:43:52.596 --> 00:43:58.306 A:middle
+accessing once we are done using
+
+00:43:58.816 --> 00:43:58.886 A:middle
+it.
+
+00:43:59.836 --> 00:44:01.606 A:middle
+If we can start accessing this
+

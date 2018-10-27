@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.266 --> 00:37:00.466 A:middle
+position its safe area unaware
+
+00:37:00.466 --> 00:37:03.796 A:middle
+content inside the safe area by
+
+00:37:04.416 --> 00:37:05.986 A:middle
+analyzing the safe area insets.
+
+00:37:06.406 --> 00:37:08.596 A:middle
+And it can also provide the
+
+00:37:08.596 --> 00:37:11.966 A:middle
+background, which extends beyond
+
+00:37:11.966 --> 00:37:13.036 A:middle
+the safe area and makes your
+
+00:37:13.036 --> 00:37:14.396 A:middle
+control feel connected to the
+
+00:37:14.726 --> 00:37:16.506 A:middle
+edge of the screen in this case.
+
+00:37:17.376 --> 00:37:19.736 A:middle
+The-- another technique we want
+
+00:37:19.736 --> 00:37:20.816 A:middle
+to talk about related to safe
+
+00:37:20.816 --> 00:37:22.096 A:middle
+area and positioning elements
+
+00:37:22.166 --> 00:37:23.296 A:middle
+close to the edge of the screen
+
+00:37:23.796 --> 00:37:25.656 A:middle
+is when you have a control or
+
+00:37:25.656 --> 00:37:29.876 A:middle
+button that on one device you
+
+00:37:29.876 --> 00:37:31.356 A:middle
+may want to place directly
+
+00:37:31.356 --> 00:37:33.106 A:middle
+against the safe area and on
+
+00:37:33.106 --> 00:37:34.746 A:middle
+another device where the safe
+
+00:37:34.746 --> 00:37:36.376 A:middle
+area insets are zero you may
+
+00:37:36.376 --> 00:37:37.056 A:middle
+want some padding.
+
+00:37:37.616 --> 00:37:38.806 A:middle
+And the reason for doing this in
+
+00:37:38.806 --> 00:37:40.426 A:middle
+design is that the safe area
+
+00:37:40.426 --> 00:37:42.326 A:middle
+insets can sometimes incorporate
+
+00:37:42.396 --> 00:37:43.456 A:middle
+some implicit padding.
+
+00:37:44.106 --> 00:37:45.556 A:middle
+So let me bring-- I want to
+
+00:37:45.596 --> 00:37:47.756 A:middle
+provide you a single solution
+
+00:37:47.986 --> 00:37:49.706 A:middle
+that will work for both of these
+
+00:37:49.706 --> 00:37:50.436 A:middle
+situations.
+
+00:37:51.246 --> 00:37:54.036 A:middle
+So let's bring in a diagram, and
+
+00:37:54.036 --> 00:37:55.286 A:middle
+I'm going to give you two auto
+
+00:37:55.286 --> 00:37:56.836 A:middle
+layout constraints that will
+
+00:37:56.836 --> 00:37:58.246 A:middle
+produce this result in these two
+
+00:37:58.246 --> 00:37:59.146 A:middle
+different situations.
+
+00:37:59.946 --> 00:38:02.626 A:middle
+So the first constraint we need
+

@@ -1,0 +1,132 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.636 --> 00:21:01.206 A:middle
+associate multiple devices.
+
+00:21:02.506 --> 00:21:03.476 A:middle
+If you're using anonymous
+
+00:21:03.476 --> 00:21:04.906 A:middle
+accounts like this, when it
+
+00:21:04.906 --> 00:21:06.546 A:middle
+comes time down the road to
+
+00:21:06.546 --> 00:21:08.126 A:middle
+actually give the user an
+
+00:21:08.126 --> 00:21:09.476 A:middle
+account creation flow, you can
+
+00:21:09.476 --> 00:21:10.716 A:middle
+just simply take them through a
+
+00:21:10.716 --> 00:21:12.176 A:middle
+deanonymization step where you
+
+00:21:12.176 --> 00:21:13.956 A:middle
+update those email fields and
+
+00:21:13.956 --> 00:21:14.896 A:middle
+maybe other personally
+
+00:21:14.896 --> 00:21:16.056 A:middle
+identifiable fields.
+
+00:21:16.606 --> 00:21:19.266 A:middle
+So that's tip number one.
+
+00:21:19.266 --> 00:21:20.856 A:middle
+Tip number two is around selling
+
+00:21:20.856 --> 00:21:21.966 A:middle
+your in-app purchase.
+
+00:21:22.296 --> 00:21:23.146 A:middle
+When it comes to selling your
+
+00:21:23.146 --> 00:21:24.836 A:middle
+subscription, you can use a
+
+00:21:24.926 --> 00:21:25.946 A:middle
+feature that we launched last
+
+00:21:25.946 --> 00:21:26.966 A:middle
+year Introductory Pricing.
+
+00:21:27.916 --> 00:21:28.946 A:middle
+Now there's an important step
+
+00:21:28.946 --> 00:21:30.656 A:middle
+with Introductory Pricing which
+
+00:21:30.656 --> 00:21:31.826 A:middle
+is that you need to know at
+
+00:21:31.826 --> 00:21:33.166 A:middle
+runtime whether or not a user is
+
+00:21:33.166 --> 00:21:34.576 A:middle
+actually eligible for an
+
+00:21:34.576 --> 00:21:35.466 A:middle
+introductory price.
+
+00:21:35.686 --> 00:21:36.696 A:middle
+And the reason you need to know
+
+00:21:36.696 --> 00:21:38.106 A:middle
+this is you have to know which
+
+00:21:38.216 --> 00:21:39.636 A:middle
+price to render to your user,
+
+00:21:40.096 --> 00:21:41.016 A:middle
+whether to render the normal
+
+00:21:41.016 --> 00:21:42.236 A:middle
+StoreKit price or the
+
+00:21:42.236 --> 00:21:43.716 A:middle
+introductory offer that you want
+
+00:21:43.716 --> 00:21:44.786 A:middle
+to offer a user to get them in
+
+00:21:44.786 --> 00:21:45.136 A:middle
+the door.
+
+00:21:46.386 --> 00:21:47.576 A:middle
+Now you can set yourself up to
+
+00:21:47.576 --> 00:21:48.816 A:middle
+actually know this ahead of time
+
+00:21:48.816 --> 00:21:50.176 A:middle
+by monitoring the transactions
+
+00:21:50.176 --> 00:21:51.456 A:middle
+that are occurring in the
+
+00:21:51.456 --> 00:21:52.626 A:middle
+background as they come in.
+
+00:21:53.516 --> 00:21:54.456 A:middle
+Let's see how this works.
+
+00:21:54.456 --> 00:21:55.896 A:middle
+When you're verifying
+
+00:21:55.896 --> 00:21:57.126 A:middle
+transactions like we just saw
+
+00:21:57.126 --> 00:21:58.336 A:middle
+earlier keep an eye out for
+
+00:21:58.336 --> 00:21:59.076 A:middle
+these two fields.
+
+00:21:59.736 --> 00:22:01.356 A:middle
+The is trial period field and
+

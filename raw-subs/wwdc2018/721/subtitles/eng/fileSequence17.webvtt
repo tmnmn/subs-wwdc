@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.766 --> 00:17:00.956 A:middle
+the associated password
+
+00:17:00.956 --> 00:17:01.786 A:middle
+belonging to the given
+
+00:17:01.786 --> 00:17:03.346 A:middle
+credential and hand it back to
+
+00:17:03.346 --> 00:17:05.106 A:middle
+AutoFill using the Complete
+
+00:17:05.106 --> 00:17:06.646 A:middle
+Request With Selected Credential
+
+00:17:06.646 --> 00:17:07.026 A:middle
+method.
+
+00:17:07.536 --> 00:17:11.016 A:middle
+If your extension wants to have
+
+00:17:11.016 --> 00:17:12.526 A:middle
+its UI presented at this point,
+
+00:17:13.195 --> 00:17:14.546 A:middle
+cancel the extension request
+
+00:17:14.705 --> 00:17:15.986 A:middle
+with the User Interaction
+
+00:17:15.986 --> 00:17:18.016 A:middle
+Required error code in the
+
+00:17:18.016 --> 00:17:19.846 A:middle
+domain AS Extension Error
+
+00:17:19.846 --> 00:17:20.236 A:middle
+Domain.
+
+00:17:22.116 --> 00:17:23.836 A:middle
+The system will then call the
+
+00:17:23.836 --> 00:17:25.746 A:middle
+Prepare Interface To Provide
+
+00:17:25.746 --> 00:17:27.386 A:middle
+Credential For method on your
+
+00:17:27.386 --> 00:17:28.966 A:middle
+view controller, and present its
+
+00:17:28.966 --> 00:17:29.286 A:middle
+UI.
+
+00:17:30.436 --> 00:17:31.966 A:middle
+In this method, your extension
+
+00:17:31.966 --> 00:17:33.786 A:middle
+sets up its UI for its workflow
+
+00:17:33.786 --> 00:17:34.726 A:middle
+to provide the password.
+
+00:17:35.796 --> 00:17:37.236 A:middle
+When the password is eventually
+
+00:17:37.236 --> 00:17:39.006 A:middle
+available, you return the
+
+00:17:39.006 --> 00:17:40.916 A:middle
+credential to AutoFill, also
+
+00:17:40.916 --> 00:17:42.356 A:middle
+using the Complete Request With
+
+00:17:42.356 --> 00:17:43.586 A:middle
+Selected Credential method.
+
+00:17:44.806 --> 00:17:46.346 A:middle
+Once again, if your Extensions
+
+00:17:46.346 --> 00:17:48.746 A:middle
+UI was presented, AutoFill won't
+
+00:17:48.746 --> 00:17:50.076 A:middle
+perform any authentication
+
+00:17:50.076 --> 00:17:51.166 A:middle
+before filling the returned
+
+00:17:51.166 --> 00:17:51.676 A:middle
+credential.
+
+00:17:52.266 --> 00:17:53.486 A:middle
+It is up to your extension to
+
+00:17:53.486 --> 00:17:54.236 A:middle
+decide what type of
+
+00:17:54.236 --> 00:17:55.546 A:middle
+authentication is needed.
+
+00:17:59.016 --> 00:18:00.436 A:middle
+The most important thing to keep
+

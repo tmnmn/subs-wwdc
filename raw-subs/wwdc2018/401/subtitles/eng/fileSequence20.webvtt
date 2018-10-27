@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.316 --> 00:20:00.666 A:middle
+either because if the element
+
+00:20:00.666 --> 00:20:01.836 A:middle
+type of the array is not
+
+00:20:01.836 --> 00:20:03.366 A:middle
+Equatable, like a function
+
+00:20:03.396 --> 00:20:05.056 A:middle
+perhaps, then you can't really
+
+00:20:05.056 --> 00:20:06.566 A:middle
+make the array Equatable either.
+
+00:20:07.956 --> 00:20:09.286 A:middle
+But certainly if the element
+
+00:20:09.326 --> 00:20:10.846 A:middle
+type of the array is Equatable
+
+00:20:10.846 --> 00:20:12.726 A:middle
+then I can define an equality
+
+00:20:12.726 --> 00:20:14.516 A:middle
+operation on arrays that just
+
+00:20:14.516 --> 00:20:16.376 A:middle
+compares the elements pair wise.
+
+00:20:17.116 --> 00:20:18.516 A:middle
+And this is what conditional
+
+00:20:18.516 --> 00:20:20.116 A:middle
+conformance allows a standard
+
+00:20:20.116 --> 00:20:21.286 A:middle
+library to do.
+
+00:20:21.376 --> 00:20:23.076 A:middle
+So now array gets an
+
+00:20:23.076 --> 00:20:24.916 A:middle
+implementation of Equatable for
+
+00:20:24.916 --> 00:20:26.246 A:middle
+the case where the element type
+
+00:20:26.246 --> 00:20:27.056 A:middle
+is equitable.
+
+00:20:27.416 --> 00:20:29.776 A:middle
+And in Swift 4.2 this example we
+
+00:20:29.776 --> 00:20:31.366 A:middle
+saw earlier now works.
+
+00:20:31.856 --> 00:20:34.776 A:middle
+And in addition to arrays being
+
+00:20:34.776 --> 00:20:36.146 A:middle
+Equatable the standard library
+
+00:20:36.146 --> 00:20:37.636 A:middle
+defines a number of other
+
+00:20:37.636 --> 00:20:38.896 A:middle
+conditional conformance.
+
+00:20:39.436 --> 00:20:41.026 A:middle
+For example, optional and
+
+00:20:41.026 --> 00:20:42.726 A:middle
+dictionaries are now Equatable
+
+00:20:42.726 --> 00:20:44.126 A:middle
+when their element type is
+
+00:20:44.126 --> 00:20:46.486 A:middle
+Equatable and the same works for
+
+00:20:46.536 --> 00:20:49.576 A:middle
+Hashable, Encodable, and
+
+00:20:49.576 --> 00:20:51.306 A:middle
+Decodable conformances.
+
+00:20:52.516 --> 00:20:57.576 A:middle
+[ Applause ]
+
+00:20:58.076 --> 00:20:59.746 A:middle
+And this allows you to compose
+
+00:20:59.746 --> 00:21:01.156 A:middle
+collections in ways that were
+

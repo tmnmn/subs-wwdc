@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.266 --> 00:35:01.226 A:middle
+Now, let me update my Shader.
+
+00:35:02.126 --> 00:35:03.806 A:middle
+The Shader is now sent to the
+
+00:35:03.806 --> 00:35:06.286 A:middle
+device as we compiled, and then
+
+00:35:06.286 --> 00:35:09.106 A:middle
+the entire frame is rerun and
+
+00:35:09.106 --> 00:35:11.106 A:middle
+reprofiled, because changing a
+
+00:35:11.106 --> 00:35:12.896 A:middle
+single Shader or pipeline might
+
+00:35:12.896 --> 00:35:14.566 A:middle
+influence your entire GPU
+
+00:35:14.566 --> 00:35:15.006 A:middle
+timing.
+
+00:35:16.496 --> 00:35:18.096 A:middle
+Once that is done, let's take a
+
+00:35:18.836 --> 00:35:18.926 A:middle
+look.
+
+00:35:20.336 --> 00:35:22.606 A:middle
+We can see that we now spend
+
+00:35:22.796 --> 00:35:24.376 A:middle
+just three milliseconds in the
+
+00:35:24.376 --> 00:35:26.166 A:middle
+shader from down over to 20.
+
+00:35:26.846 --> 00:35:28.656 A:middle
+But let's also take a look into
+
+00:35:28.656 --> 00:35:29.866 A:middle
+the instruction categories.
+
+00:35:30.586 --> 00:35:35.496 A:middle
+Here we can see that we nearly
+
+00:35:35.496 --> 00:35:37.206 A:middle
+eliminated the entire time in
+
+00:35:37.206 --> 00:35:39.116 A:middle
+synchronization, and we keep our
+
+00:35:39.116 --> 00:35:41.256 A:middle
+GPU busy doing work for us.
+
+00:35:42.526 --> 00:35:44.396 A:middle
+So, as a summary, when you
+
+00:35:44.396 --> 00:35:45.506 A:middle
+detect the bottleneck in your
+
+00:35:45.506 --> 00:35:47.516 A:middle
+shader, the per line timing
+
+00:35:47.516 --> 00:35:49.706 A:middle
+information tells you exactly
+
+00:35:49.706 --> 00:35:51.226 A:middle
+where your problem is, and the
+
+00:35:51.226 --> 00:35:53.396 A:middle
+instruction categories help you
+
+00:35:53.396 --> 00:35:54.516 A:middle
+to understand why.
+
+00:35:55.316 --> 00:35:56.146 A:middle
+That's it for me.
+
+00:35:56.626 --> 00:35:57.576 A:middle
+Back to my colleague, Alp.
+
+00:35:58.516 --> 00:36:04.216 A:middle
+[ Applause ]
+

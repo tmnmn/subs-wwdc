@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.466 --> 00:24:00.546 A:middle
+your packages' source code.
+
+00:24:01.146 --> 00:24:05.546 A:middle
+To specify which version of the
+
+00:24:05.546 --> 00:24:08.006 A:middle
+API is being used, we're using
+
+00:24:08.006 --> 00:24:09.476 A:middle
+the Swift Tools Version command
+
+00:24:10.526 --> 00:24:12.036 A:middle
+at the top of the package.swift
+
+00:24:12.066 --> 00:24:12.846 A:middle
+manifest file.
+
+00:24:13.446 --> 00:24:15.306 A:middle
+This specifies the minimum
+
+00:24:15.306 --> 00:24:16.476 A:middle
+required version of the Swift
+
+00:24:16.476 --> 00:24:19.266 A:middle
+tools that is needed to process
+
+00:24:19.266 --> 00:24:20.226 A:middle
+the given manifest.
+
+00:24:20.686 --> 00:24:24.056 A:middle
+Each package can also declare
+
+00:24:24.176 --> 00:24:25.356 A:middle
+which versions of the Swift
+
+00:24:25.356 --> 00:24:27.936 A:middle
+language it uses for compiling
+
+00:24:27.936 --> 00:24:28.646 A:middle
+its source code.
+
+00:24:29.536 --> 00:24:31.186 A:middle
+This is a list, so you can
+
+00:24:31.186 --> 00:24:32.436 A:middle
+choose to support multiple
+
+00:24:32.436 --> 00:24:34.216 A:middle
+versions of Swift with the same
+
+00:24:34.216 --> 00:24:35.566 A:middle
+version of your package, by
+
+00:24:35.566 --> 00:24:36.846 A:middle
+using compiler directives.
+
+00:24:37.816 --> 00:24:39.256 A:middle
+A package graph can be a
+
+00:24:39.256 --> 00:24:40.796 A:middle
+mix-and-match of packages with
+
+00:24:40.796 --> 00:24:41.826 A:middle
+different language versions.
+
+00:24:44.456 --> 00:24:45.866 A:middle
+I told you a lot about how
+
+00:24:45.866 --> 00:24:48.136 A:middle
+SwiftPM works today, next I'd
+
+00:24:48.136 --> 00:24:49.516 A:middle
+like to invite Rick back up to
+
+00:24:49.516 --> 00:24:51.746 A:middle
+the stage to tell you where we
+
+00:24:51.746 --> 00:24:52.476 A:middle
+can go from here.
+
+00:24:53.516 --> 00:24:58.626 A:middle
+[ Applause ]
+
+00:24:59.126 --> 00:24:59.946 A:middle
+&gt;&gt; Thanks, Boris.
+

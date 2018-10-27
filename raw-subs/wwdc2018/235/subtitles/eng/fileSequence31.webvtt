@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.546 --> 00:31:00.106 A:middle
+The problem with doing that, if
+
+00:31:00.106 --> 00:31:01.146 A:middle
+we had rendered the text all the
+
+00:31:01.146 --> 00:31:03.446 A:middle
+way to the edge, is that it can
+
+00:31:03.736 --> 00:31:05.606 A:middle
+become difficult to read, for
+
+00:31:05.606 --> 00:31:07.246 A:middle
+your eye to track from one line
+
+00:31:07.246 --> 00:31:10.156 A:middle
+of text to the next at a given
+
+00:31:10.156 --> 00:31:10.576 A:middle
+font size.
+
+00:31:11.716 --> 00:31:14.396 A:middle
+And so the solution is to always
+
+00:31:14.396 --> 00:31:16.806 A:middle
+render text inside of a readable
+
+00:31:16.806 --> 00:31:18.636 A:middle
+width, a recommended readable
+
+00:31:18.636 --> 00:31:20.036 A:middle
+width provided by the system
+
+00:31:20.476 --> 00:31:22.256 A:middle
+based on the user's currently
+
+00:31:22.346 --> 00:31:24.626 A:middle
+selected dynamic type font size.
+
+00:31:25.106 --> 00:31:26.676 A:middle
+Dynamic type being another
+
+00:31:26.876 --> 00:31:30.246 A:middle
+adaptive element of our iOS.
+
+00:31:30.986 --> 00:31:32.616 A:middle
+Now you can get the readable
+
+00:31:32.616 --> 00:31:35.676 A:middle
+width with this API on UIView
+
+00:31:35.976 --> 00:31:37.136 A:middle
+called the readable content
+
+00:31:37.136 --> 00:31:37.416 A:middle
+guide.
+
+00:31:37.866 --> 00:31:39.176 A:middle
+So this is another layout guide
+
+00:31:39.336 --> 00:31:40.656 A:middle
+just like the layout guide for
+
+00:31:40.656 --> 00:31:42.106 A:middle
+margins and safe area.
+
+00:31:42.976 --> 00:31:44.086 A:middle
+And it works just the same.
+
+00:31:44.646 --> 00:31:47.646 A:middle
+And I mentioned that this
+
+00:31:48.066 --> 00:31:49.536 A:middle
+readable width depends on the
+
+00:31:49.536 --> 00:31:50.756 A:middle
+user's currently selected
+
+00:31:50.756 --> 00:31:52.656 A:middle
+dynamic type size, which means
+
+00:31:52.656 --> 00:31:53.916 A:middle
+if the user changes their
+
+00:31:53.916 --> 00:31:55.486 A:middle
+dynamic type size in Control
+
+00:31:55.486 --> 00:31:57.666 A:middle
+Center or the setting app, the
+
+00:31:57.666 --> 00:31:58.976 A:middle
+readable width will get smaller
+
+00:31:58.976 --> 00:32:00.000 A:middle
+or larger to compensate.
+

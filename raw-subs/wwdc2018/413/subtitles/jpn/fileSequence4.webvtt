@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.172 --> 00:04:00.174 align:start position:0% line:-2
+PlaygroundLiveViewMessageHandler
+から―
+
+00:04:00.274 --> 00:04:04.778 align:start position:23% line:-2
+メソッドを呼び出し
+ライブビューに値を送信できます
+
+00:04:04.878 --> 00:04:07.581 align:start position:18% line:-2
+Playground Support
+フレームワークで宣言されます
+
+00:04:09.116 --> 00:04:12.586 align:start position:18% line:-2
+PlaygroundValueとして
+メッセージが送信されます
+
+00:04:12.819 --> 00:04:17.257 align:start position:11% line:-2
+PlaygroundValuesはENUMで
+フレームワークで宣言されます
+
+00:04:18.992 --> 00:04:22.095 align:start position:9% line:-2
+オブジェクトをPlaygroundValueに
+変換するため―
+
+00:04:22.196 --> 00:04:25.032 align:start position:9% line:-2
+“LiveViewSupport.swift”
+というファイルに―
+
+00:04:25.132 --> 00:04:27.734 align:start position:2% line:-2
+PlaygroundValueConvertibleを
+記述しました
+
+00:04:27.835 --> 00:04:33.173 align:start position:11% line:-2
+ファイルは各Playground Bookの
+Sourcesフォルダに入れます
+
+00:04:33.473 --> 00:04:38.946 align:start position:27% line:-2
+例えば CIFilterを
+ライブビューに送りたい時は
+
+00:04:39.046 --> 00:04:42.516 align:start position:2% line:-2
+PlaygroundValueConvertibleに
+準拠するよう型を拡張し
+
+00:04:42.616 --> 00:04:45.819 align:start position:11% line:-2
+asPlaygroundValueメソッドを
+実装します
+
+00:04:45.919 --> 00:04:49.723 align:start position:11% line:-2
+元のオブジェクトを
+PlaygroundValueに変換できます
+
+00:04:51.158 --> 00:04:53.927 align:start position:21% line:-2
+さらにヘルパ関数である
+sendValueも記述しました
+
+00:04:54.027 --> 00:05:00.467 align:start position:11% line:-2
+現在のページのライブビューを
+PlaygroundValueとして送ります
+

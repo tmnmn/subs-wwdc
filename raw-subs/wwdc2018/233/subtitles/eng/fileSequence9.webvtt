@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.376 --> 00:09:00.176 A:middle
+features, and easier to debug.
+
+00:09:01.436 --> 00:09:03.486 A:middle
+Layout-driven UI helps us deal
+
+00:09:03.486 --> 00:09:04.996 A:middle
+with the number one cause of
+
+00:09:04.996 --> 00:09:07.786 A:middle
+issues in iOS apps, and that's
+
+00:09:08.086 --> 00:09:10.026 A:middle
+managing UI complexity.
+
+00:09:10.816 --> 00:09:12.226 A:middle
+I'm sure you've been here
+
+00:09:12.226 --> 00:09:12.726 A:middle
+before.
+
+00:09:12.816 --> 00:09:13.656 A:middle
+I know I have.
+
+00:09:14.416 --> 00:09:16.016 A:middle
+You add some code, and a gesture
+
+00:09:16.016 --> 00:09:16.636 A:middle
+callback.
+
+00:09:17.246 --> 00:09:18.986 A:middle
+You add even more UI update code
+
+00:09:19.016 --> 00:09:20.446 A:middle
+in a notification callback.
+
+00:09:20.686 --> 00:09:22.376 A:middle
+And, more when you get a value
+
+00:09:22.376 --> 00:09:24.376 A:middle
+trigger from a UI control.
+
+00:09:25.076 --> 00:09:26.806 A:middle
+And, suddenly your app is in
+
+00:09:26.806 --> 00:09:28.176 A:middle
+this weird, and hard to
+
+00:09:28.176 --> 00:09:29.206 A:middle
+understand state.
+
+00:09:29.986 --> 00:09:30.956 A:middle
+And, you have to follow these
+
+00:09:30.956 --> 00:09:32.636 A:middle
+strange orders to reproduce
+
+00:09:32.636 --> 00:09:33.966 A:middle
+these unusual bugs.
+
+00:09:34.566 --> 00:09:36.026 A:middle
+And, as you add more features to
+
+00:09:36.026 --> 00:09:38.186 A:middle
+your app, the problem gets worse
+
+00:09:38.256 --> 00:09:38.806 A:middle
+and worse.
+
+00:09:40.256 --> 00:09:42.286 A:middle
+If we instead follow a simple
+
+00:09:42.286 --> 00:09:44.106 A:middle
+recipe, and push these UI
+
+00:09:44.106 --> 00:09:47.706 A:middle
+updates into layout, we can get
+
+00:09:47.706 --> 00:09:49.066 A:middle
+rid of these bugs, and make it
+
+00:09:49.066 --> 00:09:50.506 A:middle
+much easier to add features.
+
+00:09:51.426 --> 00:09:53.226 A:middle
+Let's walk through the recipe
+
+00:09:53.476 --> 00:09:54.876 A:middle
+for adding layout-driven UI to
+
+00:09:55.146 --> 00:09:56.146 A:middle
+your app.
+
+00:09:57.276 --> 00:09:58.576 A:middle
+&gt;&gt; The first thing you should
+
+00:09:58.576 --> 00:10:00.586 A:middle
+do, is you need to identify and
+

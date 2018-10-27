@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.466 --> 00:11:01.316 A:middle
+the check sum of the script I
+
+00:11:01.316 --> 00:11:04.176 A:middle
+expect to get from my CDN, and
+
+00:11:04.176 --> 00:11:05.816 A:middle
+only if I get something that
+
+00:11:05.816 --> 00:11:07.946 A:middle
+matches this check sum, then you
+
+00:11:07.946 --> 00:11:08.576 A:middle
+execute it.
+
+00:11:09.266 --> 00:11:11.036 A:middle
+So, the browser engine will go
+
+00:11:11.036 --> 00:11:13.556 A:middle
+through and make sure to compare
+
+00:11:13.556 --> 00:11:15.536 A:middle
+that check sum before executing
+
+00:11:15.536 --> 00:11:15.976 A:middle
+the code.
+
+00:11:17.196 --> 00:11:18.756 A:middle
+Well, what happens if it doesn't
+
+00:11:18.756 --> 00:11:19.186 A:middle
+match?
+
+00:11:19.246 --> 00:11:21.506 A:middle
+What if they bumped the version
+
+00:11:21.506 --> 00:11:22.606 A:middle
+or something went wrong and I
+
+00:11:22.606 --> 00:11:23.406 A:middle
+got the wrong script?
+
+00:11:24.096 --> 00:11:25.846 A:middle
+Now my web content doesn't work
+
+00:11:25.846 --> 00:11:26.216 A:middle
+anymore.
+
+00:11:26.666 --> 00:11:28.056 A:middle
+Well, you add a check.
+
+00:11:28.276 --> 00:11:29.906 A:middle
+In this case, you've loaded or
+
+00:11:29.906 --> 00:11:31.266 A:middle
+tried to load a framework.
+
+00:11:31.736 --> 00:11:33.336 A:middle
+You checked did the framework
+
+00:11:33.336 --> 00:11:35.376 A:middle
+load OK, do I have that object
+
+00:11:35.376 --> 00:11:36.266 A:middle
+in my dom now.
+
+00:11:36.856 --> 00:11:39.246 A:middle
+If not, go load it from my own
+
+00:11:39.246 --> 00:11:41.516 A:middle
+server which I am in control of
+
+00:11:41.516 --> 00:11:43.366 A:middle
+and I don't make changes to
+
+00:11:43.506 --> 00:11:44.126 A:middle
+willy-nilly.
+
+00:11:44.896 --> 00:11:47.496 A:middle
+That may reduce performance, but
+
+00:11:47.496 --> 00:11:49.266 A:middle
+at least you have a still
+
+00:11:49.266 --> 00:11:50.526 A:middle
+functioning web content or
+
+00:11:50.526 --> 00:11:50.986 A:middle
+website.
+
+00:11:51.986 --> 00:11:53.336 A:middle
+OK. That's sub-resource
+
+00:11:53.336 --> 00:11:53.886 A:middle
+integrity.
+
+00:11:54.336 --> 00:11:55.696 A:middle
+Let's move on to content
+
+00:11:55.696 --> 00:11:56.866 A:middle
+security policy.
+
+00:11:57.486 --> 00:11:59.186 A:middle
+I mentioned this is like setting
+
+00:11:59.186 --> 00:12:00.616 A:middle
+a policy for your page, like
+

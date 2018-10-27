@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.345 --> 00:18:01.081 align:middle line:-1
+第三我们有visibleSize
+
+00:18:01.148 --> 00:18:04.051 align:middle line:-1
+表示你的容器在屏幕上的尺寸
+
+00:18:04.384 --> 00:18:08.388 align:middle line:-2
+这个属性类似于UIScrollView上的
+bounds.size
+
+00:18:09.857 --> 00:18:14.061 align:middle line:-2
+重要的是要谨记
+contentOffset会被自动设置
+
+00:18:14.361 --> 00:18:16.396 align:middle line:-1
+而你要负责
+
+00:18:16.463 --> 00:18:19.066 align:middle line:-1
+适时更新你的渲染内容
+
+00:18:19.132 --> 00:18:21.001 align:middle line:-1
+无论何时当这个属性被设置
+
+00:18:24.137 --> 00:18:28.342 align:middle line:-2
+现在让我们谈谈如何
+向自定义渲染app中添加权限
+
+00:18:28.909 --> 00:18:30.944 align:middle line:-1
+它实际上非常简单
+
+00:18:31.411 --> 00:18:35.849 align:middle line:-2
+通过实施FocusItemContainers
+FocusItems方法
+
+00:18:36.149 --> 00:18:39.152 align:middle line:-1
+你会向聚焦引擎提供足够的信息
+
+00:18:39.419 --> 00:18:42.823 align:middle line:-2
+从而允许旁白在导航上
+辅助你的用户
+
+00:18:43.490 --> 00:18:47.794 align:middle line:-1
+请一定记得设置权限标签和权限暗示
+
+00:18:47.861 --> 00:18:48.896 align:middle line:-1
+在你的FocusItems上
+
+00:18:49.196 --> 00:18:53.100 align:middle line:-1
+以便旁白给你的用户提供最佳体验
+
+00:18:53.767 --> 00:18:55.435 align:middle line:-1
+我强烈建议你们观看
+
+00:18:55.669 --> 00:18:59.907 align:middle line:-2
+2016年WWDC的
+“权限新特性”演讲
+

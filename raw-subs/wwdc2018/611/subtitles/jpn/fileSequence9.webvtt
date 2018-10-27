@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.739 --> 00:09:01.475 align:start position:29% line:-2
+IOSurface対応の
+テクスチャは
+
+00:09:01.575 --> 00:09:05.779 align:start position:25% line:-2
+１つのMetalテクスチャに
+置き換えます
+
+00:09:05.879 --> 00:09:07.915 align:start position:38% line:-1
+2D配列型です
+
+00:09:09.449 --> 00:09:14.454 align:start position:12% line:-2
+２つのtextureDescriptorに
+これを割り当てます
+
+00:09:14.855 --> 00:09:17.124 align:start position:36% line:-2
+オープンソースの
+VR SDKです
+
+00:09:17.624 --> 00:09:21.795 align:start position:23% line:-1
+タイプをMetalに変更します
+
+00:09:22.462 --> 00:09:25.432 align:start position:27% line:-1
+いくつかの変更を加えました
+
+00:09:25.732 --> 00:09:32.005 align:start position:20% line:-2
+これで左右の眼の画像を
+Compositorに提出できます
+
+00:09:32.239 --> 00:09:34.841 align:start position:21% line:-1
+これによりCompositorは
+
+00:09:34.942 --> 00:09:39.413 align:start position:30% line:-2
+Metalテクスチャを
+渡されたと理解します
+
+00:09:39.813 --> 00:09:45.018 align:start position:32% line:-2
+テクスチャのタイプを
+チェックしてみると
+
+00:09:45.152 --> 00:09:48.989 align:start position:16% line:-1
+Compositorが自動で判断します
+
+00:09:49.089 --> 00:09:52.759 align:start position:32% line:-2
+左眼の画像は
+スライス０に保管され
+
+00:09:52.860 --> 00:09:56.230 align:start position:34% line:-2
+右眼はスライス１に
+保管されています
+
+00:09:56.463 --> 00:09:59.700 align:start position:30% line:-2
+アプリケーションは
+何もしなくてよいのです
+

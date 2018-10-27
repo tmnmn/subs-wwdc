@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.716 --> 00:31:00.736 A:middle
+extension to that there's
+
+00:31:00.736 --> 00:31:02.226 A:middle
+certain things you can do to
+
+00:31:02.226 --> 00:31:02.976 A:middle
+really speed up that
+
+00:31:02.976 --> 00:31:03.466 A:middle
+development.
+
+00:31:03.986 --> 00:31:07.276 A:middle
+Your main app may have several
+
+00:31:07.276 --> 00:31:09.166 A:middle
+business logic classes, a whole
+
+00:31:09.166 --> 00:31:11.186 A:middle
+bunch of utility classes, even
+
+00:31:11.186 --> 00:31:12.106 A:middle
+custom views and view
+
+00:31:12.106 --> 00:31:13.036 A:middle
+controllers that you could
+
+00:31:13.076 --> 00:31:14.556 A:middle
+easily reuse in your iMessage
+
+00:31:14.556 --> 00:31:14.806 A:middle
+app.
+
+00:31:15.186 --> 00:31:17.596 A:middle
+All you have to do is add an
+
+00:31:17.626 --> 00:31:20.106 A:middle
+iMessage app target and then
+
+00:31:20.276 --> 00:31:22.246 A:middle
+check off those classes so
+
+00:31:22.246 --> 00:31:23.816 A:middle
+they're provided, also available
+
+00:31:23.816 --> 00:31:24.926 A:middle
+in your iMessage app.
+
+00:31:25.276 --> 00:31:28.396 A:middle
+Now sometimes code is not the
+
+00:31:28.396 --> 00:31:31.496 A:middle
+cleanest and by checking one
+
+00:31:31.496 --> 00:31:33.596 A:middle
+class you may have to pull a
+
+00:31:33.596 --> 00:31:34.836 A:middle
+whole bunch of other classes
+
+00:31:34.836 --> 00:31:37.666 A:middle
+that that represents so that's
+
+00:31:37.666 --> 00:31:39.316 A:middle
+not always the best way to go
+
+00:31:39.316 --> 00:31:41.116 A:middle
+about it and we think this is a
+
+00:31:41.116 --> 00:31:43.256 A:middle
+great opportunity where if your
+
+00:31:43.256 --> 00:31:44.166 A:middle
+classes aren't fully
+
+00:31:44.166 --> 00:31:46.366 A:middle
+encapsulated it's a great time
+
+00:31:46.436 --> 00:31:48.456 A:middle
+for you to potentially refactor
+
+00:31:48.536 --> 00:31:50.856 A:middle
+to get your specific business
+
+00:31:50.926 --> 00:31:52.916 A:middle
+logic into its own kind of
+
+00:31:52.916 --> 00:31:54.886 A:middle
+encapsulated place for much
+
+00:31:54.886 --> 00:31:55.816 A:middle
+better code in the future.
+
+00:31:56.686 --> 00:31:58.386 A:middle
+So that's shared core resources,
+
+00:31:58.746 --> 00:32:00.406 A:middle
+really you know adding your
+

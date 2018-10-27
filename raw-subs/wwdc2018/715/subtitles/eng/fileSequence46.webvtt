@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:01.756 --> 00:46:03.376 A:middle
+The next area I want to talk
+
+00:46:03.376 --> 00:46:04.516 A:middle
+about for performance is
+
+00:46:04.516 --> 00:46:05.486 A:middle
+something that you don't
+
+00:46:05.536 --> 00:46:06.896 A:middle
+actually need to do anything in
+
+00:46:06.896 --> 00:46:07.676 A:middle
+your app to get.
+
+00:46:08.206 --> 00:46:09.266 A:middle
+This is something that you get
+
+00:46:09.266 --> 00:46:11.176 A:middle
+totally for free whenever you
+
+00:46:11.656 --> 00:46:13.226 A:middle
+use URLSession or
+
+00:46:13.226 --> 00:46:14.486 A:middle
+Network.framework connections,
+
+00:46:14.846 --> 00:46:16.446 A:middle
+and this is user-space
+
+00:46:16.506 --> 00:46:17.006 A:middle
+networking.
+
+00:46:17.726 --> 00:46:18.626 A:middle
+So this is something that we
+
+00:46:18.626 --> 00:46:20.456 A:middle
+introduced last year here at
+
+00:46:20.456 --> 00:46:23.986 A:middle
+WWDC, and it's enabled on iOS
+
+00:46:23.986 --> 00:46:24.646 A:middle
+and tvOS.
+
+00:46:24.886 --> 00:46:27.446 A:middle
+This is where we're avoiding the
+
+00:46:27.446 --> 00:46:28.966 A:middle
+socket layer entirely, and we've
+
+00:46:28.966 --> 00:46:31.196 A:middle
+moved the transport stack into
+
+00:46:31.196 --> 00:46:32.396 A:middle
+your app.
+
+00:46:32.546 --> 00:46:33.656 A:middle
+So to give you an idea of what
+
+00:46:33.656 --> 00:46:35.646 A:middle
+this is doing, I want to start
+
+00:46:35.646 --> 00:46:37.136 A:middle
+with what the legacy model of
+
+00:46:37.136 --> 00:46:39.166 A:middle
+the stack generally is.
+
+00:46:39.876 --> 00:46:40.836 A:middle
+So let's say that you're
+
+00:46:40.836 --> 00:46:42.226 A:middle
+receiving a packet off the
+
+00:46:42.226 --> 00:46:42.546 A:middle
+network.
+
+00:46:42.896 --> 00:46:44.226 A:middle
+It's the WiFi interface.
+
+00:46:44.906 --> 00:46:45.896 A:middle
+That packet will come into the
+
+00:46:45.896 --> 00:46:48.806 A:middle
+driver, will be sent into the
+
+00:46:48.806 --> 00:46:50.926 A:middle
+TCP receive buffer within the
+
+00:46:50.926 --> 00:46:53.546 A:middle
+kernel, and then when your
+
+00:46:53.546 --> 00:46:55.476 A:middle
+application reads on a socket,
+
+00:46:56.206 --> 00:46:57.196 A:middle
+that's going to do a context
+
+00:46:57.196 --> 00:46:59.106 A:middle
+switch and copy the data up from
+
+00:46:59.106 --> 00:47:01.636 A:middle
+the kernel into your app, and
+

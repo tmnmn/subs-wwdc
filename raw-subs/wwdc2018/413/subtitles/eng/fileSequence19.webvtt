@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:00.046 --> 00:19:02.586 A:middle
+And lastly we need our documents
+
+00:19:02.636 --> 00:19:02.866 A:middle
+key.
+
+00:19:03.406 --> 00:19:04.466 A:middle
+So this is the beginning of the
+
+00:19:04.466 --> 00:19:06.376 A:middle
+second section of the Playground
+
+00:19:06.376 --> 00:19:06.876 A:middle
+feed format.
+
+00:19:07.716 --> 00:19:09.186 A:middle
+The value for this key should be
+
+00:19:09.186 --> 00:19:10.986 A:middle
+an array of objects that
+
+00:19:10.986 --> 00:19:12.636 A:middle
+represent your Playground Books
+
+00:19:12.636 --> 00:19:13.266 A:middle
+within your feed.
+
+00:19:13.946 --> 00:19:14.956 A:middle
+So next we'll talk about the
+
+00:19:14.956 --> 00:19:17.966 A:middle
+format of these objects.
+
+00:19:18.216 --> 00:19:21.646 A:middle
+Documents is an array of objects
+
+00:19:22.726 --> 00:19:24.276 A:middle
+that represent documents with
+
+00:19:24.276 --> 00:19:25.126 A:middle
+key value pairs.
+
+00:19:25.666 --> 00:19:27.306 A:middle
+Let's go through what you need
+
+00:19:27.306 --> 00:19:28.856 A:middle
+to represent a document and then
+
+00:19:28.856 --> 00:19:29.686 A:middle
+we'll put it all together.
+
+00:19:31.596 --> 00:19:33.956 A:middle
+Title and overviewSubtitle are
+
+00:19:33.956 --> 00:19:34.436 A:middle
+strings.
+
+00:19:35.096 --> 00:19:36.296 A:middle
+They should be the tile and the
+
+00:19:36.296 --> 00:19:37.376 A:middle
+subtitle for each of your
+
+00:19:37.376 --> 00:19:38.046 A:middle
+documents.
+
+00:19:38.546 --> 00:19:39.886 A:middle
+And they show up within your
+
+00:19:39.886 --> 00:19:42.276 A:middle
+subscription cell and also
+
+00:19:42.276 --> 00:19:43.896 A:middle
+within Detail Views for each of
+
+00:19:43.896 --> 00:19:44.586 A:middle
+your documents.
+
+00:19:48.176 --> 00:19:50.096 A:middle
+Detail subtitle is an optional
+
+00:19:50.096 --> 00:19:51.866 A:middle
+string that you can use to
+
+00:19:51.866 --> 00:19:53.236 A:middle
+create a different subtitle to
+
+00:19:53.236 --> 00:19:54.896 A:middle
+be shown in Detail Views like
+
+00:19:54.976 --> 00:19:55.146 A:middle
+here.
+
+00:19:56.076 --> 00:19:57.496 A:middle
+If you don't provide one, we'll
+
+00:19:57.496 --> 00:19:59.000 A:middle
+just omit that section.
+

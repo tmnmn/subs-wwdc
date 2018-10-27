@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.206 --> 00:24:01.909 align:start position:32% line:-2
+つまりできるだけ速く
+UIの―
+
+00:24:02.009 --> 00:24:05.212 align:start position:21% line:-2
+アプリケーション起動メソッドから
+戻ること
+
+00:24:05.412 --> 00:24:08.215 align:start position:11% line:-2
+willFinishLaunching
+didFinishLaunching そして
+
+00:24:08.315 --> 00:24:09.917 align:start position:20% line:-1
+DidBecomeActiveです
+
+00:24:10.050 --> 00:24:13.020 align:start position:30% line:-2
+アプリケーションが
+アクティブになるのは―
+
+00:24:13.120 --> 00:24:15.656 align:start position:27% line:-1
+これらから戻った後なのです
+
+00:24:16.957 --> 00:24:19.660 align:start position:29% line:-2
+次に アプリケーションの
+起動中は―
+
+00:24:19.927 --> 00:24:23.030 align:start position:32% line:-2
+ファイルシステムへの
+書き込みを避けます
+
+00:24:23.430 --> 00:24:26.133 align:start position:34% line:-2
+システムコールを
+要求されるからです
+
+00:24:26.767 --> 00:24:32.406 align:start position:29% line:-2
+これに合わせて 起動中の
+大量の読み込みも避けます
+
+00:24:32.873 --> 00:24:38.111 align:start position:23% line:-2
+今すぐ必要なデータのみの
+ストリーミングを考えてください
+
+00:24:38.979 --> 00:24:44.618 align:start position:21% line:-2
+最後に データベースがクリーンか
+整理状況の確認をお勧めします
+
+00:24:45.319 --> 00:24:47.888 align:start position:25% line:-2
+CoreDataライブラリを
+使う時は―
+
+00:24:48.121 --> 00:24:52.426 align:start position:21% line:-2
+スキーマのできるだけ早い最適化を
+検討してください
+
+00:24:52.759 --> 00:24:56.897 align:start position:21% line:-2
+独自のソリューションを
+SQLiteなどで展開するなら―
+
+00:24:56.997 --> 00:25:00.467 align:start position:25% line:-2
+データベースの定期的な掃除を
+検討してください
+

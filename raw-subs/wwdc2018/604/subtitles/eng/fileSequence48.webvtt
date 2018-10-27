@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.776 --> 00:48:00.916 A:middle
+And finally, we draw.
+
+00:48:01.546 --> 00:48:03.956 A:middle
+So here is the Metal equivalent,
+
+00:48:04.566 --> 00:48:05.956 A:middle
+it's a few more lines of code
+
+00:48:05.996 --> 00:48:07.936 A:middle
+since it's explicit but it's
+
+00:48:07.936 --> 00:48:09.766 A:middle
+actually very similar to OpenGL.
+
+00:48:10.586 --> 00:48:11.866 A:middle
+First, we create a render
+
+00:48:11.866 --> 00:48:13.336 A:middle
+command encoder using render
+
+00:48:13.336 --> 00:48:15.456 A:middle
+pass descriptor which has our
+
+00:48:15.456 --> 00:48:16.346 A:middle
+render targets.
+
+00:48:17.696 --> 00:48:19.296 A:middle
+Then we set a pipeline object
+
+00:48:19.296 --> 00:48:20.506 A:middle
+which has our shaders.
+
+00:48:21.836 --> 00:48:24.606 A:middle
+Then we set a buffer for
+
+00:48:24.606 --> 00:48:26.276 A:middle
+accessing our vertex shader and
+
+00:48:26.676 --> 00:48:27.836 A:middle
+this happens to contain the
+
+00:48:27.836 --> 00:48:29.226 A:middle
+vertices we will draw with.
+
+00:48:30.436 --> 00:48:32.316 A:middle
+Note that the Metal doesn't
+
+00:48:32.316 --> 00:48:33.846 A:middle
+distinguish between buffers
+
+00:48:33.846 --> 00:48:36.026 A:middle
+containing uniforms or those
+
+00:48:36.026 --> 00:48:37.176 A:middle
+containing vertices.
+
+00:48:37.816 --> 00:48:40.276 A:middle
+So we will use the same API to
+
+00:48:40.276 --> 00:48:41.386 A:middle
+set uniform buffer.
+
+00:48:41.386 --> 00:48:44.026 A:middle
+So here the first call will give
+
+00:48:44.026 --> 00:48:46.026 A:middle
+buffer access to vertex shader
+
+00:48:46.026 --> 00:48:47.236 A:middle
+while the second call will give
+
+00:48:47.236 --> 00:48:48.746 A:middle
+access to the fragment shader.
+
+00:48:49.286 --> 00:48:52.166 A:middle
+Next, we set a texture for our
+
+00:48:52.166 --> 00:48:54.026 A:middle
+fragment shader to sample from.
+
+00:48:54.516 --> 00:48:56.556 A:middle
+And then we draw.
+
+00:48:57.076 --> 00:48:59.846 A:middle
+And once we are done encoding
+
+00:48:59.846 --> 00:49:01.456 A:middle
+commands we will indicate this
+

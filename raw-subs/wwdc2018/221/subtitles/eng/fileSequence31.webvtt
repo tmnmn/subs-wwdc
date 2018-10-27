@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.216 --> 00:31:00.146 A:middle
+drawn with the correct colors
+
+00:31:00.316 --> 00:31:03.116 A:middle
+for the context.
+
+00:31:03.216 --> 00:31:03.786 A:middle
+So moving on.
+
+00:31:04.316 --> 00:31:05.416 A:middle
+The next topic is performance.
+
+00:31:06.306 --> 00:31:07.116 A:middle
+If you're working with large
+
+00:31:07.116 --> 00:31:08.656 A:middle
+amounts of text, a good way to
+
+00:31:08.656 --> 00:31:10.046 A:middle
+improve your apps performance is
+
+00:31:10.046 --> 00:31:11.636 A:middle
+to use noncontinuous layout.
+
+00:31:11.636 --> 00:31:14.076 A:middle
+And to understand what that
+
+00:31:14.076 --> 00:31:15.276 A:middle
+means, let's revisit our old
+
+00:31:15.336 --> 00:31:16.766 A:middle
+friend the layout process.
+
+00:31:17.826 --> 00:31:18.856 A:middle
+We said that the layout process
+
+00:31:18.896 --> 00:31:20.436 A:middle
+consists of glyph generation
+
+00:31:20.526 --> 00:31:21.386 A:middle
+followed by glyph layout.
+
+00:31:22.806 --> 00:31:24.046 A:middle
+And so with continuous layout,
+
+00:31:24.266 --> 00:31:25.416 A:middle
+the layout manager is going to
+
+00:31:25.416 --> 00:31:26.716 A:middle
+perform glyph generation and
+
+00:31:26.716 --> 00:31:27.946 A:middle
+glyph layout starting at the
+
+00:31:27.986 --> 00:31:29.496 A:middle
+beginning of the text storage.
+
+00:31:30.286 --> 00:31:31.546 A:middle
+And it goes in order from the
+
+00:31:31.546 --> 00:31:32.426 A:middle
+beginning to the end.
+
+00:31:33.786 --> 00:31:34.986 A:middle
+And so if someone using your app
+
+00:31:35.026 --> 00:31:36.066 A:middle
+scrolls to some point in the
+
+00:31:36.066 --> 00:31:37.556 A:middle
+middle of your text view, the
+
+00:31:37.556 --> 00:31:38.966 A:middle
+layout manager has to generate
+
+00:31:38.966 --> 00:31:41.056 A:middle
+and layout the glyphs for all
+
+00:31:41.056 --> 00:31:42.316 A:middle
+the glyphs that come before that
+
+00:31:42.316 --> 00:31:44.106 A:middle
+point as indicated by the red
+
+00:31:44.106 --> 00:31:44.596 A:middle
+rectangle.
+
+00:31:45.166 --> 00:31:46.726 A:middle
+And note that this also includes
+
+00:31:46.726 --> 00:31:47.846 A:middle
+the text that you can't see
+
+00:31:47.846 --> 00:31:49.016 A:middle
+that's been scrolled off the top
+
+00:31:49.016 --> 00:31:50.116 A:middle
+of the screen all the way back
+
+00:31:50.176 --> 00:31:51.196 A:middle
+to the beginning of the text
+
+00:31:51.196 --> 00:31:51.596 A:middle
+storage.
+
+00:31:52.696 --> 00:31:54.186 A:middle
+And so if you have a lot of
+
+00:31:54.236 --> 00:31:56.406 A:middle
+text, that poor person might
+
+00:31:56.406 --> 00:31:57.756 A:middle
+have to wait a while for your
+
+00:31:57.756 --> 00:31:59.946 A:middle
+app to finish layout but
+
+00:31:59.946 --> 00:32:01.626 A:middle
+luckily, we can avoid this
+

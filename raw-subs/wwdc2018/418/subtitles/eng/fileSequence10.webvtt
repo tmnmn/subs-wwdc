@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.486 --> 00:10:01.336 A:middle
+If you're signing into a
+
+00:10:01.336 --> 00:10:03.666 A:middle
+self-hosted version, you'll also
+
+00:10:03.666 --> 00:10:05.256 A:middle
+get a chance to provide the URL
+
+00:10:05.256 --> 00:10:06.506 A:middle
+for the specific server that you
+
+00:10:06.506 --> 00:10:09.806 A:middle
+want to connect to.
+
+00:10:09.806 --> 00:10:11.486 A:middle
+Now that Xcode is signed into a
+
+00:10:11.486 --> 00:10:13.126 A:middle
+hosted source control account,
+
+00:10:13.566 --> 00:10:15.026 A:middle
+we can start sending our changes
+
+00:10:15.026 --> 00:10:16.686 A:middle
+up to the server and getting
+
+00:10:16.686 --> 00:10:19.426 A:middle
+other changes from it.
+
+00:10:19.716 --> 00:10:20.956 A:middle
+But before we start pushing and
+
+00:10:20.956 --> 00:10:23.456 A:middle
+pulling code in Xcode, let's
+
+00:10:23.456 --> 00:10:25.006 A:middle
+take a brief moment to discuss
+
+00:10:25.006 --> 00:10:26.956 A:middle
+how Git and these hosting
+
+00:10:26.956 --> 00:10:28.716 A:middle
+solutions handle security.
+
+00:10:32.296 --> 00:10:34.106 A:middle
+Git supports two main methods
+
+00:10:34.106 --> 00:10:35.266 A:middle
+for securing changes when
+
+00:10:35.266 --> 00:10:36.456 A:middle
+connecting to a server.
+
+00:10:36.956 --> 00:10:40.546 A:middle
+The first, HTTPS, is the same
+
+00:10:40.546 --> 00:10:42.226 A:middle
+way most websites are secured.
+
+00:10:43.146 --> 00:10:44.726 A:middle
+It trusts the server based on a
+
+00:10:44.726 --> 00:10:46.986 A:middle
+certificate and uses a username
+
+00:10:46.986 --> 00:10:48.536 A:middle
+and password to authenticate you
+
+00:10:48.536 --> 00:10:49.046 A:middle
+as a user.
+
+00:10:50.626 --> 00:10:53.676 A:middle
+The other method, SSH, works a
+
+00:10:53.676 --> 00:10:55.396 A:middle
+bit differently, particularly
+
+00:10:55.396 --> 00:10:56.846 A:middle
+with these hosted solutions.
+
+00:10:58.186 --> 00:11:00.236 A:middle
+In general, SSH connections for
+

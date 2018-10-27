@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:59.016 --> 00:46:01.856 A:middle
+attachments for a render pass.
+
+00:46:02.066 --> 00:46:03.856 A:middle
+If it specified the load action
+
+00:46:03.856 --> 00:46:05.906 A:middle
+as clear for both of these
+
+00:46:05.906 --> 00:46:08.346 A:middle
+render targets the GPU will
+
+00:46:08.386 --> 00:46:09.836 A:middle
+first clear their contents.
+
+00:46:10.266 --> 00:46:13.246 A:middle
+Then the GPU will execute
+
+00:46:13.246 --> 00:46:14.556 A:middle
+commands in this encoder
+
+00:46:14.556 --> 00:46:15.686 A:middle
+rendering to these render
+
+00:46:15.686 --> 00:46:16.346 A:middle
+targets.
+
+00:46:16.886 --> 00:46:19.616 A:middle
+Now you can specify the store
+
+00:46:19.616 --> 00:46:21.026 A:middle
+actions to be performed at the
+
+00:46:21.136 --> 00:46:22.176 A:middle
+end of the render pass.
+
+00:46:22.536 --> 00:46:24.486 A:middle
+Here for the color buffer since
+
+00:46:24.486 --> 00:46:25.996 A:middle
+the store action is store it
+
+00:46:25.996 --> 00:46:28.656 A:middle
+will preserve the contents of
+
+00:46:28.686 --> 00:46:30.256 A:middle
+this color buffer at the end of
+
+00:46:30.256 --> 00:46:30.966 A:middle
+the render pass.
+
+00:46:31.576 --> 00:46:33.006 A:middle
+And for the depth attachment,
+
+00:46:33.006 --> 00:46:35.286 A:middle
+since we said store action as
+
+00:46:35.286 --> 00:46:37.176 A:middle
+don't care it will discard its
+
+00:46:37.176 --> 00:46:37.786 A:middle
+contents.
+
+00:46:39.006 --> 00:46:40.876 A:middle
+So these texture load and stores
+
+00:46:40.876 --> 00:46:42.806 A:middle
+are expensive GPU operations
+
+00:46:42.806 --> 00:46:44.376 A:middle
+that consumes memory bandwidth.
+
+00:46:44.946 --> 00:46:47.346 A:middle
+So choose clear and don't care
+
+00:46:47.346 --> 00:46:48.416 A:middle
+wherever possible.
+
+00:46:48.976 --> 00:46:51.816 A:middle
+And here is how you set your
+
+00:46:51.896 --> 00:46:52.246 A:middle
+action.
+
+00:46:52.526 --> 00:46:54.876 A:middle
+In this example we specify clear
+
+00:46:54.876 --> 00:46:57.246 A:middle
+as a load action and set the
+
+00:46:57.286 --> 00:46:57.966 A:middle
+clear color.
+
+00:46:59.186 --> 00:47:00.806 A:middle
+And here we specify store action
+

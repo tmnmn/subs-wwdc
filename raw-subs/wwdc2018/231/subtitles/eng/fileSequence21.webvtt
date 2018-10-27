@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.916 --> 00:21:00.986 A:middle
+and characteristics.
+
+00:21:01.536 --> 00:21:04.416 A:middle
+Now, with HomeKit, there's a lot
+
+00:21:04.416 --> 00:21:05.546 A:middle
+of APIs that I'm going to talk
+
+00:21:05.546 --> 00:21:07.736 A:middle
+about today, but before I get
+
+00:21:07.736 --> 00:21:09.416 A:middle
+into the details, I think it's
+
+00:21:09.416 --> 00:21:10.666 A:middle
+important to take a look at a
+
+00:21:10.666 --> 00:21:13.246 A:middle
+high level at the object
+
+00:21:13.246 --> 00:21:13.786 A:middle
+hierarchy.
+
+00:21:14.376 --> 00:21:16.896 A:middle
+So the first class that I want
+
+00:21:16.896 --> 00:21:18.876 A:middle
+to tell you about is this core
+
+00:21:18.876 --> 00:21:20.286 A:middle
+object, which is the HMHome.
+
+00:21:20.766 --> 00:21:23.376 A:middle
+Now, this is corresponds to the
+
+00:21:23.376 --> 00:21:27.556 A:middle
+overall home, and within the
+
+00:21:28.296 --> 00:21:28.676 A:middle
+HMHome,
+
+00:21:28.736 --> 00:21:30.196 A:middle
+you can also optionally have
+
+00:21:30.196 --> 00:21:30.866 A:middle
+HMZones.
+
+00:21:31.316 --> 00:21:32.786 A:middle
+Now, these are things like
+
+00:21:32.786 --> 00:21:34.136 A:middle
+upstairs and downstairs.
+
+00:21:35.146 --> 00:21:36.526 A:middle
+Now, you could also have
+
+00:21:36.526 --> 00:21:38.566 A:middle
+HMRooms, and these are the rooms
+
+00:21:38.816 --> 00:21:39.726 A:middle
+that are normally associated
+
+00:21:39.726 --> 00:21:41.246 A:middle
+with the home -- the kitchen,
+
+00:21:41.466 --> 00:21:42.706 A:middle
+the living room, the dining
+
+00:21:42.706 --> 00:21:45.376 A:middle
+room, the bedroom.
+
+00:21:45.626 --> 00:21:47.656 A:middle
+And within those rooms, you can
+
+00:21:47.656 --> 00:21:48.626 A:middle
+have HMAccessories.
+
+00:21:49.376 --> 00:21:50.506 A:middle
+And these are the lights, the
+
+00:21:50.506 --> 00:21:52.516 A:middle
+fans, the cameras, the locks,
+
+00:21:52.696 --> 00:21:54.206 A:middle
+all the normal accessories we
+
+00:21:54.206 --> 00:21:54.636 A:middle
+support.
+
+00:21:56.076 --> 00:21:57.826 A:middle
+So your home, the HMHome
+
+00:21:57.826 --> 00:21:59.196 A:middle
+contains HMZones.
+
+00:21:59.826 --> 00:22:02.166 A:middle
+The HMZone contains HMRooms.
+

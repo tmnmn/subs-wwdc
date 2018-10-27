@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.336 --> 00:11:00.826 A:middle
+So I'm just going to add
+
+00:11:00.926 --> 00:11:04.226 A:middle
+DidSelectItemAtIndexPath where
+
+00:11:04.226 --> 00:11:06.186 A:middle
+we'll just instantiate our
+
+00:11:06.186 --> 00:11:07.716 A:middle
+FeedView controller, which is
+
+00:11:07.716 --> 00:11:09.246 A:middle
+going to be our second screen if
+
+00:11:09.246 --> 00:11:10.056 A:middle
+we don't already have an
+
+00:11:10.056 --> 00:11:11.886 A:middle
+instance, and then we're going
+
+00:11:12.136 --> 00:11:14.406 A:middle
+to pass it a person object so we
+
+00:11:14.406 --> 00:11:16.566 A:middle
+know whose images to display,
+
+00:11:17.116 --> 00:11:19.386 A:middle
+and then we'll push it onto our
+
+00:11:19.386 --> 00:11:20.366 A:middle
+navigation controller.
+
+00:11:21.256 --> 00:11:24.136 A:middle
+Okay. So let's build this and
+
+00:11:24.176 --> 00:11:27.006 A:middle
+switch to the simulator to see.
+
+00:11:29.256 --> 00:11:29.976 A:middle
+All right.
+
+00:11:30.516 --> 00:11:33.606 A:middle
+[ Applause and Cheering ]
+
+00:11:34.106 --> 00:11:35.836 A:middle
+Okay. So we have our
+
+00:11:35.836 --> 00:11:37.446 A:middle
+CollectionView on screen here,
+
+00:11:37.546 --> 00:11:39.816 A:middle
+and we have some cells.
+
+00:11:39.816 --> 00:11:41.196 A:middle
+You can see them, though they're
+
+00:11:41.196 --> 00:11:42.096 A:middle
+kind of squished.
+
+00:11:42.146 --> 00:11:44.026 A:middle
+They're not the right size, so
+
+00:11:44.026 --> 00:11:45.116 A:middle
+we're going to have to do some
+
+00:11:45.116 --> 00:11:46.786 A:middle
+of that customization we thought
+
+00:11:46.786 --> 00:11:47.656 A:middle
+we might need to do.
+
+00:11:47.996 --> 00:11:51.066 A:middle
+So let's go back to Xcode, and
+
+00:11:51.066 --> 00:11:55.916 A:middle
+let's pop open our column of
+
+00:11:55.996 --> 00:11:59.906 A:middle
+class here, our ColumnFlowLayout
+

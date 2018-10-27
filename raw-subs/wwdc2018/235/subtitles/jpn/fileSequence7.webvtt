@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.086 --> 00:07:04.558 align:start position:23% line:-2
+そうなると その間このビューは
+画面に留まることになり
+
+00:07:04.992 --> 00:07:08.762 align:start position:30% line:-2
+後ろに表示されるものが
+見えなくなります
+
+00:07:09.062 --> 00:07:13.200 align:start position:29% line:-2
+子のSafe Areaは
+親から与えられる以上は
+
+00:07:13.300 --> 00:07:15.002 align:start position:36% line:-1
+広がらないのです
+
+00:07:16.236 --> 00:07:21.942 align:start position:14% line:-2
+それではSafe Areaについての話を
+まとめていきます
+
+00:07:22.209 --> 00:07:25.612 align:start position:14% line:-2
+safeAreaInsetsと
+safeAreaLayoutGuideは
+
+00:07:25.712 --> 00:07:27.581 align:start position:36% line:-1
+ご説明しましたね
+
+00:07:28.015 --> 00:07:32.052 align:start position:18% line:-2
+safeAreaInsetsの変更を
+感知すべき時は
+
+00:07:32.152 --> 00:07:36.190 align:start position:4% line:-2
+safeAreaInsetsDidChange()を
+オーバーライドします
+
+00:07:37.491 --> 00:07:39.827 align:start position:12% line:-2
+setNeedsLayout()を呼ぶのが
+典型的ですが
+
+00:07:39.927 --> 00:07:42.829 align:start position:29% line:-2
+他のロジックを走らせても
+構いません
+
+00:07:43.664 --> 00:07:48.035 align:start position:14% line:-2
+View Controllerが
+Safe Areaの変更に対応すべき時は
+
+00:07:48.135 --> 00:07:52.973 align:start position:0% line:-2
+viewSafeAreaInsetsDidChange()を
+オーバーライドします
+
+00:07:53.607 --> 00:07:56.877 align:start position:18% line:-2
+Interface Builderで
+インターフェイスを作っている場合
+
+00:07:56.977 --> 00:07:59.346 align:start position:14% line:-1
+Safe Areaのプロパティが使えます
+
+00:07:59.446 --> 00:08:05.052 align:start position:14% line:-2
+Safe Areaの制約を構築するための
+ビューの一覧で確認できます
+

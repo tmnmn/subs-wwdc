@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.986 --> 00:09:00.426 A:middle
+protocol.
+
+00:09:00.426 --> 00:09:02.496 A:middle
+We'll take a look at this in a
+
+00:09:02.496 --> 00:09:02.906 A:middle
+second.
+
+00:09:03.396 --> 00:09:07.116 A:middle
+And as a third and last step,
+
+00:09:07.586 --> 00:09:09.006 A:middle
+all you have to do is present
+
+00:09:09.006 --> 00:09:09.786 A:middle
+the view controller.
+
+00:09:15.046 --> 00:09:16.296 A:middle
+Let's take a closer look at how
+
+00:09:16.296 --> 00:09:17.436 A:middle
+the data source works.
+
+00:09:18.376 --> 00:09:20.236 A:middle
+Your data source has to conform
+
+00:09:20.236 --> 00:09:22.106 A:middle
+to the QLPreviewController data
+
+00:09:22.106 --> 00:09:22.956 A:middle
+source protocol.
+
+00:09:24.026 --> 00:09:25.706 A:middle
+This is a protocol that requires
+
+00:09:25.706 --> 00:09:26.426 A:middle
+two methods.
+
+00:09:26.776 --> 00:09:28.666 A:middle
+First, you need to return the
+
+00:09:28.666 --> 00:09:30.406 A:middle
+number of items that your
+
+00:09:30.406 --> 00:09:31.456 A:middle
+preview controller should
+
+00:09:31.456 --> 00:09:31.946 A:middle
+preview.
+
+00:09:32.956 --> 00:09:34.336 A:middle
+It should provide more than one
+
+00:09:34.336 --> 00:09:36.166 A:middle
+item the users will be able to
+
+00:09:36.166 --> 00:09:37.926 A:middle
+swipe left and right to flick
+
+00:09:37.926 --> 00:09:38.936 A:middle
+through the documents.
+
+00:09:41.156 --> 00:09:43.216 A:middle
+Next, Quick Look then will ask
+
+00:09:43.216 --> 00:09:44.186 A:middle
+you for one or more
+
+00:09:44.186 --> 00:09:46.446 A:middle
+QLPreviewItems depending on what
+
+00:09:46.446 --> 00:09:47.706 A:middle
+number you've previously
+
+00:09:47.706 --> 00:09:48.176 A:middle
+returned.
+
+00:09:50.516 --> 00:09:52.636 A:middle
+Okay what's a QLPreviewItem?
+
+00:09:53.456 --> 00:09:54.966 A:middle
+It's a protocol that acts as an
+
+00:09:54.966 --> 00:09:56.736 A:middle
+abstraction for your documents.
+
+00:09:57.386 --> 00:09:59.326 A:middle
+For Quick Look a preview item is
+
+00:09:59.326 --> 00:10:02.136 A:middle
+basically the URL, where to find
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.196 --> 00:18:01.476 A:middle
+Finally, once I'm unauthorized
+
+00:18:02.086 --> 00:18:03.376 A:middle
+I'm going to call this query for
+
+00:18:03.376 --> 00:18:04.726 A:middle
+immunizations method which I'll
+
+00:18:04.726 --> 00:18:06.576 A:middle
+implement now.
+
+00:18:06.806 --> 00:18:08.466 A:middle
+Here in query for immunizations
+
+00:18:08.716 --> 00:18:09.946 A:middle
+I'm going to create a sample
+
+00:18:09.946 --> 00:18:12.046 A:middle
+query, I'm going to iterate over
+
+00:18:12.046 --> 00:18:13.656 A:middle
+all the return samples, and I'm
+
+00:18:13.656 --> 00:18:15.346 A:middle
+going to pass each sample's
+
+00:18:15.346 --> 00:18:16.916 A:middle
+display name to my data source.
+
+00:18:17.526 --> 00:18:17.976 A:middle
+So let's do that.
+
+00:18:22.116 --> 00:18:23.666 A:middle
+Here I've got my sample query
+
+00:18:24.016 --> 00:18:25.716 A:middle
+and I'm using the humanization
+
+00:18:25.716 --> 00:18:27.246 A:middle
+record sample type.
+
+00:18:28.166 --> 00:18:30.686 A:middle
+No predicate because I want all
+
+00:18:30.686 --> 00:18:32.656 A:middle
+of the users' immunizations and
+
+00:18:32.656 --> 00:18:35.316 A:middle
+similarly no limit because I
+
+00:18:35.316 --> 00:18:36.636 A:middle
+want to get all of my users'
+
+00:18:36.936 --> 00:18:37.526 A:middle
+immunizations.
+
+00:18:37.986 --> 00:18:40.266 A:middle
+No sort descriptors, it doesn't
+
+00:18:40.266 --> 00:18:41.856 A:middle
+matter to me in what order these
+
+00:18:41.856 --> 00:18:42.616 A:middle
+samples are returned.
+
+00:18:43.496 --> 00:18:45.916 A:middle
+And with that I'm going to check
+
+00:18:46.256 --> 00:18:48.556 A:middle
+for results and if not handle
+
+00:18:48.556 --> 00:18:49.426 A:middle
+errors appropriately.
+
+00:18:50.806 --> 00:18:52.936 A:middle
+Next, I'm going to iterate over
+
+00:18:52.936 --> 00:18:55.216 A:middle
+the samples and I'll pass them
+
+00:18:55.446 --> 00:18:57.396 A:middle
+to my data source by display
+
+00:18:57.966 --> 00:18:58.056 A:middle
+name.
+

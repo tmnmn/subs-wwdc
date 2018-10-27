@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.386 --> 00:38:02.536 A:middle
+So the way atomics work is
+
+00:38:03.546 --> 00:38:04.746 A:middle
+through a small sequence of
+
+00:38:04.796 --> 00:38:05.096 A:middle
+codes.
+
+00:38:05.776 --> 00:38:08.116 A:middle
+So suppose I have a thread and
+
+00:38:08.116 --> 00:38:09.156 A:middle
+it's trying to access main
+
+00:38:09.156 --> 00:38:11.856 A:middle
+memory, so it has an atomic
+
+00:38:11.856 --> 00:38:13.826 A:middle
+shared variable in there and
+
+00:38:13.826 --> 00:38:14.996 A:middle
+it's just trying to increment
+
+00:38:15.656 --> 00:38:15.726 A:middle
+it.
+
+00:38:17.216 --> 00:38:18.716 A:middle
+So under the hood the code
+
+00:38:18.716 --> 00:38:20.176 A:middle
+generator will emit a small
+
+00:38:20.176 --> 00:38:23.026 A:middle
+sequence of codes that first
+
+00:38:23.276 --> 00:38:24.946 A:middle
+takes exclusive excess of a
+
+00:38:24.946 --> 00:38:26.816 A:middle
+cache line and that's a small
+
+00:38:26.816 --> 00:38:28.766 A:middle
+region of memory that contains
+
+00:38:28.766 --> 00:38:30.836 A:middle
+completely this atomic variable.
+
+00:38:31.426 --> 00:38:34.816 A:middle
+Now that we have exclusive
+
+00:38:34.816 --> 00:38:36.186 A:middle
+access we can load from the
+
+00:38:36.186 --> 00:38:38.046 A:middle
+variable, then we can do our
+
+00:38:38.046 --> 00:38:39.326 A:middle
+increment on the temporary
+
+00:38:39.436 --> 00:38:41.756 A:middle
+loaded value and store the
+
+00:38:41.756 --> 00:38:43.026 A:middle
+result back.
+
+00:38:44.636 --> 00:38:46.186 A:middle
+And we know that this is safe
+
+00:38:46.186 --> 00:38:47.066 A:middle
+because we have exclusive
+
+00:38:47.066 --> 00:38:48.766 A:middle
+access, so no other thread could
+
+00:38:48.766 --> 00:38:50.376 A:middle
+have changed the value while
+
+00:38:50.376 --> 00:38:51.936 A:middle
+we're computing our temporary
+
+00:38:51.936 --> 00:38:52.346 A:middle
+results.
+
+00:38:53.696 --> 00:38:55.496 A:middle
+But now suppose another thread
+
+00:38:55.496 --> 00:38:57.446 A:middle
+does access either the same
+
+00:38:57.446 --> 00:38:58.906 A:middle
+variable or another variable in
+
+00:38:58.906 --> 00:39:02.536 A:middle
+the same cache line.
+

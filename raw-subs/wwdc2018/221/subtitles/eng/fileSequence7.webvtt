@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.586 --> 00:07:00.006 A:middle
+And by default, it's a rectangle
+
+00:07:00.306 --> 00:07:01.596 A:middle
+but you can customize the flow
+
+00:07:01.596 --> 00:07:02.746 A:middle
+or the shape of the text layout
+
+00:07:02.876 --> 00:07:03.486 A:middle
+as shown here.
+
+00:07:04.096 --> 00:07:06.186 A:middle
+And for more detailed
+
+00:07:06.186 --> 00:07:07.216 A:middle
+information on working with the
+
+00:07:07.266 --> 00:07:08.806 A:middle
+storage objects, check out these
+
+00:07:08.806 --> 00:07:10.606 A:middle
+great past WWDC sessions and
+
+00:07:10.606 --> 00:07:11.246 A:middle
+documentation.
+
+00:07:11.246 --> 00:07:12.656 A:middle
+And they'll be available from
+
+00:07:12.656 --> 00:07:13.896 A:middle
+the more information link at the
+
+00:07:13.896 --> 00:07:16.596 A:middle
+end of the session.
+
+00:07:17.396 --> 00:07:18.676 A:middle
+And next up is the display phase
+
+00:07:18.966 --> 00:07:21.156 A:middle
+and that corresponds to the
+
+00:07:21.156 --> 00:07:21.276 A:middle
+view.
+
+00:07:21.276 --> 00:07:22.626 A:middle
+And we've already talked about
+
+00:07:22.626 --> 00:07:23.746 A:middle
+the display phase quite a bit
+
+00:07:23.746 --> 00:07:24.736 A:middle
+when we talked about choosing
+
+00:07:24.736 --> 00:07:25.396 A:middle
+the right control.
+
+00:07:25.766 --> 00:07:26.436 A:middle
+And so for additional
+
+00:07:26.436 --> 00:07:27.876 A:middle
+information, you can again check
+
+00:07:27.876 --> 00:07:28.816 A:middle
+out these documentation
+
+00:07:28.816 --> 00:07:29.186 A:middle
+resources.
+
+00:07:29.186 --> 00:07:30.796 A:middle
+And they'll also be accessible
+
+00:07:30.796 --> 00:07:31.986 A:middle
+from that more information link
+
+00:07:31.986 --> 00:07:35.166 A:middle
+at the end of the session.
+
+00:07:35.426 --> 00:07:36.586 A:middle
+And finally, we have the layout
+
+00:07:36.586 --> 00:07:37.956 A:middle
+phase which corresponds to the
+
+00:07:37.956 --> 00:07:38.446 A:middle
+controller.
+
+00:07:39.026 --> 00:07:41.836 A:middle
+And NSLayoutManager is the only
+
+00:07:41.836 --> 00:07:42.656 A:middle
+component in this phase.
+
+00:07:42.656 --> 00:07:44.396 A:middle
+And let me tell you it is a
+
+00:07:44.546 --> 00:07:44.806 A:middle
+beast.
+
+00:07:46.036 --> 00:07:47.386 A:middle
+And I mean that in a good way
+
+00:07:47.726 --> 00:07:49.256 A:middle
+because it's so awesome at what
+
+00:07:49.256 --> 00:07:49.656 A:middle
+it does.
+
+00:07:50.146 --> 00:07:51.316 A:middle
+So it's the brains of the whole
+
+00:07:51.316 --> 00:07:52.056 A:middle
+operation.
+
+00:07:52.056 --> 00:07:53.296 A:middle
+It coordinates changes between
+
+00:07:53.296 --> 00:07:54.616 A:middle
+all of the phases, and it
+
+00:07:54.616 --> 00:07:55.776 A:middle
+controls the layout process
+
+00:07:55.776 --> 00:07:55.996 A:middle
+itself.
+
+00:07:56.066 --> 00:07:59.296 A:middle
+So here's a quick overview of
+
+00:07:59.296 --> 00:08:00.546 A:middle
+how that layout process works.
+

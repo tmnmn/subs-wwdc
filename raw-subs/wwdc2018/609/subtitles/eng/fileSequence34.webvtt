@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.776 --> 00:34:01.286 A:middle
+for both the forward and
+
+00:34:01.286 --> 00:34:02.146 A:middle
+gradient passes.
+
+00:34:02.446 --> 00:34:03.926 A:middle
+You will need 20 matrices for
+
+00:34:03.926 --> 00:34:05.906 A:middle
+each one of those.
+
+00:34:05.906 --> 00:34:06.896 A:middle
+And here is how you would
+
+00:34:06.896 --> 00:34:08.496 A:middle
+initialize these matrices with
+
+00:34:08.536 --> 00:34:08.746 A:middle
+data.
+
+00:34:09.366 --> 00:34:13.346 A:middle
+And now, we are ready to train
+
+00:34:13.346 --> 00:34:14.906 A:middle
+our activity classifier network
+
+00:34:15.346 --> 00:34:15.795 A:middle
+in MPS.
+
+00:34:16.166 --> 00:34:17.516 A:middle
+So, in this code example, I will
+
+00:34:17.516 --> 00:34:19.335 A:middle
+be highlighting only the LSTM
+
+00:34:19.335 --> 00:34:23.246 A:middle
+filter in the interest of time.
+
+00:34:23.406 --> 00:34:24.976 A:middle
+So, in the forward pass, we ran
+
+00:34:24.976 --> 00:34:26.585 A:middle
+a sequence of 20 matrices
+
+00:34:26.585 --> 00:34:28.196 A:middle
+forward through the LSTM
+
+00:34:28.196 --> 00:34:28.806 A:middle
+training layer.
+
+00:34:29.726 --> 00:34:30.735 A:middle
+And then in the backward pass,
+
+00:34:30.735 --> 00:34:33.166 A:middle
+we ran a sequence of 20 matrices
+
+00:34:33.275 --> 00:34:34.936 A:middle
+though the LSTM layer to compute
+
+00:34:34.936 --> 00:34:35.545 A:middle
+gradients.
+
+00:34:36.676 --> 00:34:38.706 A:middle
+And now, you have the training
+
+00:34:38.706 --> 00:34:39.755 A:middle
+weights, and you have the
+
+00:34:39.755 --> 00:34:41.406 A:middle
+computed gradients, and you can
+
+00:34:41.406 --> 00:34:43.186 A:middle
+pass them to an optimizer to
+
+00:34:43.186 --> 00:34:43.926 A:middle
+update weights.
+
+00:34:44.646 --> 00:34:46.896 A:middle
+So, there's just one more thing
+
+00:34:46.896 --> 00:34:47.786 A:middle
+I'd like to mention.
+
+00:34:49.466 --> 00:34:50.735 A:middle
+[Inaudible] neural networks
+
+00:34:50.735 --> 00:34:53.676 A:middle
+operate on images and LSTMs
+
+00:34:53.676 --> 00:34:54.886 A:middle
+operate on matrices.
+
+00:34:55.946 --> 00:34:57.316 A:middle
+And we'll provide convenience
+
+00:34:57.316 --> 00:34:59.616 A:middle
+kernels in the framework to make
+
+00:34:59.616 --> 00:35:00.966 A:middle
+it easy to convert between
+

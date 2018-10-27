@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.786 --> 00:22:01.726 A:middle
+frames, specifically in this
+
+00:22:01.726 --> 00:22:02.506 A:middle
+case the hair.
+
+00:22:03.476 --> 00:22:05.556 A:middle
+But still most of the depth on
+
+00:22:05.556 --> 00:22:07.126 A:middle
+the foreground is intact and
+
+00:22:07.126 --> 00:22:07.696 A:middle
+very useful.
+
+00:22:08.256 --> 00:22:12.436 A:middle
+One final point I want to cover
+
+00:22:12.596 --> 00:22:14.616 A:middle
+for getting holes is the fact
+
+00:22:14.616 --> 00:22:15.736 A:middle
+that from the perspective of the
+
+00:22:15.736 --> 00:22:17.516 A:middle
+TrueDepth camera some of the
+
+00:22:17.516 --> 00:22:19.396 A:middle
+light projected hits an object
+
+00:22:19.396 --> 00:22:21.306 A:middle
+on the way back so we get
+
+00:22:21.306 --> 00:22:23.006 A:middle
+shadows from the parallax
+
+00:22:23.006 --> 00:22:24.886 A:middle
+between the projector and the
+
+00:22:25.776 --> 00:22:26.096 A:middle
+camera.
+
+00:22:26.096 --> 00:22:27.316 A:middle
+You can see an example on the
+
+00:22:27.316 --> 00:22:29.266 A:middle
+right side of this mug, but
+
+00:22:30.176 --> 00:22:31.576 A:middle
+something is different here.
+
+00:22:32.676 --> 00:22:34.426 A:middle
+This is not a depth map so why
+
+00:22:34.426 --> 00:22:36.916 A:middle
+do we even get holes?
+
+00:22:37.096 --> 00:22:38.586 A:middle
+Well in TrueDepth Streamer you
+
+00:22:38.586 --> 00:22:41.076 A:middle
+can switch from 2-D mode into
+
+00:22:41.076 --> 00:22:43.136 A:middle
+3-D mode, which gives us a point
+
+00:22:43.136 --> 00:22:43.616 A:middle
+cloud view.
+
+00:22:44.326 --> 00:22:45.956 A:middle
+With point clouds we can
+
+00:22:45.956 --> 00:22:47.426 A:middle
+dynamically change the
+
+00:22:47.426 --> 00:22:48.936 A:middle
+perspective of the scene
+
+00:22:50.796 --> 00:22:53.506 A:middle
+creating even more holes when we
+
+00:22:54.106 --> 00:22:56.256 A:middle
+do so.
+
+00:22:56.396 --> 00:22:58.226 A:middle
+And now I can ask you is this
+
+00:22:58.226 --> 00:23:01.706 A:middle
+mug half empty or half full and
+

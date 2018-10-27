@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.286 --> 00:26:00.236 A:middle
+UIView can still work, even if
+
+00:26:00.236 --> 00:26:01.336 A:middle
+you don't override draw.
+
+00:26:01.766 --> 00:26:03.026 A:middle
+For example, setting the
+
+00:26:03.026 --> 00:26:04.546 A:middle
+background color of a UIView
+
+00:26:04.796 --> 00:26:06.196 A:middle
+doesn't require creating a
+
+00:26:06.196 --> 00:26:08.036 A:middle
+backing store, unless you're
+
+00:26:08.036 --> 00:26:09.026 A:middle
+using a pattern color.
+
+00:26:09.486 --> 00:26:10.716 A:middle
+So, I recommend not using
+
+00:26:10.716 --> 00:26:11.536 A:middle
+patterned colors with a
+
+00:26:11.536 --> 00:26:12.736 A:middle
+background color property on
+
+00:26:12.736 --> 00:26:13.296 A:middle
+UIView.
+
+00:26:14.836 --> 00:26:17.176 A:middle
+Instead, create a UIImageView.
+
+00:26:17.746 --> 00:26:19.316 A:middle
+Assign your image to that image
+
+00:26:19.316 --> 00:26:19.536 A:middle
+view.
+
+00:26:20.056 --> 00:26:21.256 A:middle
+And use the functions on
+
+00:26:21.256 --> 00:26:23.466 A:middle
+UIImageView to set your tiling
+
+00:26:23.466 --> 00:26:24.576 A:middle
+parameters appropriately.
+
+00:26:25.086 --> 00:26:29.466 A:middle
+When we want to clip the corners
+
+00:26:29.796 --> 00:26:32.466 A:middle
+of that rounded rectangle, we
+
+00:26:32.466 --> 00:26:33.836 A:middle
+want to use the CALayer
+
+00:26:33.836 --> 00:26:34.986 A:middle
+cornerRadius property.
+
+00:26:35.776 --> 00:26:37.536 A:middle
+Because Core Animation is able
+
+00:26:37.536 --> 00:26:39.886 A:middle
+to render clipped corners
+
+00:26:40.206 --> 00:26:41.626 A:middle
+without taking any extra memory
+
+00:26:41.626 --> 00:26:42.426 A:middle
+allocations.
+
+00:26:43.416 --> 00:26:44.556 A:middle
+If we, instead, use the more
+
+00:26:44.556 --> 00:26:46.966 A:middle
+powerful maskView or maskLayer
+
+00:26:46.966 --> 00:26:49.176 A:middle
+properties we'd wind up taking
+
+00:26:49.176 --> 00:26:50.666 A:middle
+in extra allocation to store
+
+00:26:50.666 --> 00:26:51.986 A:middle
+that mask.
+
+00:26:53.216 --> 00:26:55.006 A:middle
+If you have a more complicated
+
+00:26:55.006 --> 00:26:56.996 A:middle
+background that has transparent
+
+00:26:56.996 --> 00:26:59.246 A:middle
+areas that can't be expressed by
+
+00:26:59.246 --> 00:27:00.346 A:middle
+the cornerRadius property,
+

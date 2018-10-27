@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.356 --> 00:06:00.976 A:middle
+A data buffer that contains an
+
+00:06:00.976 --> 00:06:02.576 A:middle
+image file, typically, begins
+
+00:06:02.716 --> 00:06:04.496 A:middle
+with some metadata describing
+
+00:06:04.496 --> 00:06:05.586 A:middle
+the size of the image that's
+
+00:06:05.586 --> 00:06:06.746 A:middle
+stored in that data buffer.
+
+00:06:07.856 --> 00:06:09.066 A:middle
+And then, contains the image
+
+00:06:09.066 --> 00:06:11.086 A:middle
+data itself, which is encoded in
+
+00:06:11.086 --> 00:06:13.556 A:middle
+some form like JPEG compression
+
+00:06:13.636 --> 00:06:13.916 A:middle
+or PNG.
+
+00:06:13.916 --> 00:06:17.356 A:middle
+Which means that the bytes
+
+00:06:17.666 --> 00:06:19.026 A:middle
+subsequent to that metadata
+
+00:06:19.626 --> 00:06:20.876 A:middle
+don't, actually, directly
+
+00:06:20.876 --> 00:06:22.536 A:middle
+describe anything about the
+
+00:06:22.536 --> 00:06:26.686 A:middle
+pixels in the image.
+
+00:06:27.006 --> 00:06:28.856 A:middle
+So, we can take a deeper look at
+
+00:06:28.856 --> 00:06:30.576 A:middle
+this pipeline that we've set up.
+
+00:06:31.086 --> 00:06:32.866 A:middle
+We have a UIImageView here and
+
+00:06:32.866 --> 00:06:34.086 A:middle
+we've highlighted the region of
+
+00:06:34.086 --> 00:06:35.596 A:middle
+the frame buffer that will be
+
+00:06:35.996 --> 00:06:37.546 A:middle
+populated by the image view's
+
+00:06:37.546 --> 00:06:38.036 A:middle
+rendering.
+
+00:06:38.396 --> 00:06:40.156 A:middle
+And we've assigned a UIImage to
+
+00:06:40.156 --> 00:06:40.786 A:middle
+this image view.
+
+00:06:41.316 --> 00:06:43.486 A:middle
+It's got a data buffer that
+
+00:06:43.486 --> 00:06:44.916 A:middle
+represents the content of an
+
+00:06:44.916 --> 00:06:45.606 A:middle
+image file.
+
+00:06:45.606 --> 00:06:46.786 A:middle
+Perhaps, downloaded from the
+
+00:06:46.786 --> 00:06:48.306 A:middle
+network or read from disk.
+
+00:06:49.196 --> 00:06:50.326 A:middle
+But we need to be able to
+
+00:06:50.326 --> 00:06:52.886 A:middle
+populate the frame buffer with
+
+00:06:52.956 --> 00:06:54.146 A:middle
+per pixel data.
+
+00:06:55.436 --> 00:06:58.176 A:middle
+So, in order to do that UIImage
+
+00:06:58.256 --> 00:06:59.986 A:middle
+will allocate an image buffer
+

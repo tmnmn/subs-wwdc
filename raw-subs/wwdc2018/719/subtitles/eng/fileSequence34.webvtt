@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.396 --> 00:34:00.216 A:middle
+First thing I want to show you
+
+00:34:00.216 --> 00:34:02.156 A:middle
+is that whenever you call render
+
+00:34:02.156 --> 00:34:03.876 A:middle
+on your CIImage instances, the
+
+00:34:03.876 --> 00:34:06.206 A:middle
+NumPy is baked and cached under
+
+00:34:06.206 --> 00:34:06.516 A:middle
+the hood.
+
+00:34:06.646 --> 00:34:08.406 A:middle
+For example, here we create an
+
+00:34:08.406 --> 00:34:10.196 A:middle
+image where we scaled down as
+
+00:34:10.196 --> 00:34:11.856 A:middle
+well as applied GaussianBlur, so
+
+00:34:11.856 --> 00:34:13.116 A:middle
+the first call took 56
+
+00:34:13.116 --> 00:34:14.016 A:middle
+milliseconds; the second one
+
+00:34:14.016 --> 00:34:14.976 A:middle
+only 2 milliseconds.
+
+00:34:16.085 --> 00:34:17.976 A:middle
+And let's take a look at large
+
+00:34:17.976 --> 00:34:18.795 A:middle
+convolutions as well.
+
+00:34:18.886 --> 00:34:21.116 A:middle
+Core Image is extremely fast and
+
+00:34:21.116 --> 00:34:22.406 A:middle
+is able to handle large
+
+00:34:22.406 --> 00:34:23.806 A:middle
+convolutions as if it was
+
+00:34:23.806 --> 00:34:24.176 A:middle
+nothing.
+
+00:34:24.646 --> 00:34:26.406 A:middle
+Here we're using CIBlur,
+
+00:34:26.806 --> 00:34:28.636 A:middle
+CIGaussianBlur with a radius --
+
+00:34:28.636 --> 00:34:31.005 A:middle
+with a sigma of 200 -- a value
+
+00:34:31.005 --> 00:34:32.585 A:middle
+of 200 for a sigma, which is
+
+00:34:32.585 --> 00:34:32.866 A:middle
+huge.
+
+00:34:32.866 --> 00:34:34.466 A:middle
+Just to give you a sense here,
+
+00:34:34.936 --> 00:34:36.186 A:middle
+as I was look -- showing you the
+
+00:34:36.186 --> 00:34:38.306 A:middle
+image, I'm actually executing
+
+00:34:38.306 --> 00:34:39.116 A:middle
+the equivalent using
+
+00:34:39.326 --> 00:34:40.156 A:middle
+scikit-image.
+
+00:34:40.616 --> 00:34:42.235 A:middle
+And we had a 16 seconds running
+
+00:34:42.235 --> 00:34:42.606 A:middle
+time.
+
+00:34:43.025 --> 00:34:44.306 A:middle
+But this time the same thing
+
+00:34:44.306 --> 00:34:46.076 A:middle
+using CoreImage; 130
+
+00:34:46.076 --> 00:34:46.786 A:middle
+milliseconds.
+
+00:34:47.335 --> 00:34:48.306 A:middle
+Yeah, it's that fast [applause]
+
+00:34:48.576 --> 00:34:49.536 A:middle
+-- 200X, yeah.
+
+00:34:50.166 --> 00:34:50.476 A:middle
+Thank you.
+
+00:34:51.936 --> 00:34:53.606 A:middle
+All right, let's keep going.
+
+00:34:53.606 --> 00:34:55.676 A:middle
+So, one of the most powerful
+
+00:34:55.676 --> 00:34:56.985 A:middle
+features of PyCoreImage is its
+
+00:34:56.985 --> 00:34:59.536 A:middle
+ability to create custom GP
+
+00:34:59.536 --> 00:35:00.986 A:middle
+kernels inline and execute them
+

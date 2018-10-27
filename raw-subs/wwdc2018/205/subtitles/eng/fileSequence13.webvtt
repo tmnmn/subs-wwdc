@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.466 --> 00:13:00.636 A:middle
+The first one, is a pre-stimulus
+
+00:13:00.636 --> 00:13:01.746 A:middle
+delay, which is a
+
+00:13:01.746 --> 00:13:03.706 A:middle
+developer-specified maximum
+
+00:13:03.706 --> 00:13:05.876 A:middle
+number in seconds that we use to
+
+00:13:05.876 --> 00:13:08.086 A:middle
+generate a random delay between
+
+00:13:08.086 --> 00:13:09.976 A:middle
+one and that value before we
+
+00:13:09.976 --> 00:13:11.126 A:middle
+start playing the tone to the
+
+00:13:11.126 --> 00:13:11.616 A:middle
+user.
+
+00:13:12.266 --> 00:13:13.876 A:middle
+This is to ensure that the user
+
+00:13:13.876 --> 00:13:15.556 A:middle
+cannot cheat the test by just
+
+00:13:15.556 --> 00:13:18.446 A:middle
+randomly tapping on the button.
+
+00:13:18.596 --> 00:13:20.526 A:middle
+Next, we are also providing a
+
+00:13:20.526 --> 00:13:22.176 A:middle
+property for tone duration,
+
+00:13:22.176 --> 00:13:23.406 A:middle
+which governs the actual
+
+00:13:23.406 --> 00:13:24.786 A:middle
+duration for which the tone will
+
+00:13:24.786 --> 00:13:25.416 A:middle
+be played.
+
+00:13:26.216 --> 00:13:28.026 A:middle
+And finally, is the post
+
+00:13:28.026 --> 00:13:29.286 A:middle
+stimulus delay, which is the
+
+00:13:29.286 --> 00:13:31.136 A:middle
+amount of time allocated to the
+
+00:13:31.136 --> 00:13:33.226 A:middle
+user to respond for that
+
+00:13:33.226 --> 00:13:34.186 A:middle
+specific tone.
+
+00:13:35.136 --> 00:13:36.696 A:middle
+To incorporate this in your app,
+
+00:13:37.716 --> 00:13:39.266 A:middle
+you create an instance of
+
+00:13:39.376 --> 00:13:42.016 A:middle
+ORKdBHL tone audiometry step
+
+00:13:42.016 --> 00:13:44.226 A:middle
+with a unique identifier and
+
+00:13:44.226 --> 00:13:45.796 A:middle
+provide us values for some of
+
+00:13:45.796 --> 00:13:47.506 A:middle
+the parameters, including a
+
+00:13:47.506 --> 00:13:49.216 A:middle
+frequency list, which is an
+
+00:13:49.216 --> 00:13:51.326 A:middle
+array of frequency that you wish
+
+00:13:51.326 --> 00:13:52.776 A:middle
+to be played back to your user.
+
+00:13:53.396 --> 00:13:54.766 A:middle
+We're also exposing more
+
+00:13:54.766 --> 00:13:56.166 A:middle
+properties that you can further
+
+00:13:56.206 --> 00:13:58.146 A:middle
+customize for your specific use
+
+00:13:58.146 --> 00:13:58.626 A:middle
+case.
+
+00:13:59.086 --> 00:14:01.886 A:middle
+Now, when the user completes
+

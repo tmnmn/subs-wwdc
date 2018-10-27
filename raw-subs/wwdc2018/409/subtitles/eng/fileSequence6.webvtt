@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.826 --> 00:06:01.646 A:middle
+synthesizes code that retains
+
+00:06:01.646 --> 00:06:02.826 A:middle
+and releases the fields.
+
+00:06:03.676 --> 00:06:04.956 A:middle
+So the compiler is really your
+
+00:06:04.956 --> 00:06:07.056 A:middle
+friend here and it does the
+
+00:06:07.056 --> 00:06:09.116 A:middle
+correct job of managing memory
+
+00:06:09.286 --> 00:06:12.056 A:middle
+for variables on the stack and
+
+00:06:12.056 --> 00:06:13.846 A:middle
+also for fields in other
+
+00:06:13.846 --> 00:06:16.156 A:middle
+structures, and also instance
+
+00:06:16.156 --> 00:06:17.916 A:middle
+variables inside Objective-C
+
+00:06:17.916 --> 00:06:18.436 A:middle
+classes.
+
+00:06:19.686 --> 00:06:21.756 A:middle
+But there is one place we have
+
+00:06:21.816 --> 00:06:23.346 A:middle
+to put in a little bit of extra
+
+00:06:23.346 --> 00:06:25.126 A:middle
+work to support structures with
+
+00:06:25.126 --> 00:06:27.996 A:middle
+ARC object pointer fields and
+
+00:06:27.996 --> 00:06:29.386 A:middle
+that place is heap.
+
+00:06:30.656 --> 00:06:31.926 A:middle
+Let's go back to our structure,
+
+00:06:32.216 --> 00:06:33.126 A:middle
+let's say you would like to
+
+00:06:33.126 --> 00:06:35.366 A:middle
+allocate an array of menu items
+
+00:06:35.366 --> 00:06:36.046 A:middle
+on the heap.
+
+00:06:36.796 --> 00:06:38.526 A:middle
+Now if this was an Objective-C
+
+00:06:38.526 --> 00:06:40.836 A:middle
+interface we could have used an
+
+00:06:40.946 --> 00:06:43.366 A:middle
+NSArray here, but it's not so
+
+00:06:43.366 --> 00:06:45.196 A:middle
+let's use malloc and free.
+
+00:06:46.166 --> 00:06:48.416 A:middle
+Now this code actually has two
+
+00:06:48.596 --> 00:06:49.176 A:middle
+issues.
+
+00:06:49.766 --> 00:06:52.176 A:middle
+First issue, the memory is not
+
+00:06:52.176 --> 00:06:53.956 A:middle
+zero initialized when it's
+
+00:06:53.956 --> 00:06:56.146 A:middle
+allocated, which means that
+
+00:06:56.146 --> 00:06:58.106 A:middle
+their pointers will be invalid
+
+00:06:58.646 --> 00:07:00.396 A:middle
+which will cause undesired
+

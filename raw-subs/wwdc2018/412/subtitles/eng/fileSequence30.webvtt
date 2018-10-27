@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.916 --> 00:30:00.926 A:middle
+Why a Python file?
+
+00:30:01.416 --> 00:30:03.496 A:middle
+Well, LLDB is scriptable using
+
+00:30:03.496 --> 00:30:04.536 A:middle
+Python, where you get full
+
+00:30:04.536 --> 00:30:06.256 A:middle
+access to the LLDB API.
+
+00:30:06.936 --> 00:30:09.436 A:middle
+So I've created an LLDB Python
+
+00:30:09.436 --> 00:30:11.176 A:middle
+script to create a nudge
+
+00:30:11.176 --> 00:30:12.516 A:middle
+command, which takes an x
+
+00:30:12.516 --> 00:30:13.676 A:middle
+offset, a y offset and a view
+
+00:30:13.676 --> 00:30:15.156 A:middle
+expression, and you can use that
+
+00:30:15.156 --> 00:30:16.186 A:middle
+to nudge views around while
+
+00:30:16.236 --> 00:30:16.976 A:middle
+paused in the debugger.
+
+00:30:16.976 --> 00:30:18.436 A:middle
+Now, it might look like a sort
+
+00:30:18.436 --> 00:30:19.846 A:middle
+of long script but most of that
+
+00:30:19.846 --> 00:30:20.876 A:middle
+is argument pausing.
+
+00:30:21.366 --> 00:30:22.716 A:middle
+The core of it, in the middle,
+
+00:30:22.806 --> 00:30:24.516 A:middle
+is just calling out to the
+
+00:30:24.516 --> 00:30:25.726 A:middle
+expressions we would call in
+
+00:30:25.726 --> 00:30:26.186 A:middle
+manually.
+
+00:30:26.786 --> 00:30:27.956 A:middle
+We don't have time unfortunately
+
+00:30:27.956 --> 00:30:28.986 A:middle
+to go into detail in this
+
+00:30:28.986 --> 00:30:29.276 A:middle
+script.
+
+00:30:29.276 --> 00:30:30.206 A:middle
+But we're going to make this
+
+00:30:30.206 --> 00:30:31.116 A:middle
+available for you guys to
+
+00:30:31.116 --> 00:30:32.406 A:middle
+download, so you can see how it
+
+00:30:32.406 --> 00:30:33.556 A:middle
+works and use it as the basis
+
+00:30:33.556 --> 00:30:34.576 A:middle
+for your custom debugging
+
+00:30:34.576 --> 00:30:35.096 A:middle
+commands.
+
+00:30:36.376 --> 00:30:39.506 A:middle
+Let me show you how to enable a
+
+00:30:39.506 --> 00:30:40.376 A:middle
+script like this.
+
+00:30:40.666 --> 00:30:42.606 A:middle
+Just edit your .lldb in it file
+
+00:30:43.266 --> 00:30:45.846 A:middle
+in your home directory and add a
+
+00:30:45.846 --> 00:30:47.196 A:middle
+line command script import.
+
+00:30:47.736 --> 00:30:49.056 A:middle
+I'd also like to add some of the
+
+00:30:49.056 --> 00:30:50.566 A:middle
+aliases that I find convenient,
+
+00:30:50.786 --> 00:30:52.426 A:middle
+such as the poc alias I created
+
+00:30:52.426 --> 00:30:53.866 A:middle
+before, and an alias for
+
+00:30:53.866 --> 00:30:54.846 A:middle
+flushing the transaction.
+
+00:30:55.086 --> 00:30:56.000 A:middle
+I think I'll remember this one.
+

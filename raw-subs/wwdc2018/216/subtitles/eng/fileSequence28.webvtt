@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.066 --> 00:28:01.516 A:middle
+So, here I have a new item, of
+
+00:28:01.576 --> 00:28:01.996 A:middle
+particles.
+
+00:28:02.656 --> 00:28:06.396 A:middle
+And, with this, our declaration
+
+00:28:06.886 --> 00:28:07.286 A:middle
+is done.
+
+00:28:08.856 --> 00:28:11.176 A:middle
+There's just one more thing I
+
+00:28:11.176 --> 00:28:11.876 A:middle
+didn't mention.
+
+00:28:12.406 --> 00:28:15.786 A:middle
+It is if you-- if this was the
+
+00:28:15.786 --> 00:28:18.466 A:middle
+case where we were declaring our
+
+00:28:18.466 --> 00:28:19.056 A:middle
+own type.
+
+00:28:19.746 --> 00:28:21.026 A:middle
+But, you might also want to use
+
+00:28:21.026 --> 00:28:22.306 A:middle
+type defined by another
+
+00:28:22.306 --> 00:28:22.926 A:middle
+application.
+
+00:28:23.476 --> 00:28:26.286 A:middle
+If that is the case, you also
+
+00:28:26.286 --> 00:28:28.616 A:middle
+need to declare the type so that
+
+00:28:28.616 --> 00:28:30.706 A:middle
+iOS knows about it, in case that
+
+00:28:30.706 --> 00:28:31.596 A:middle
+app is not [inaudible].
+
+00:28:32.486 --> 00:28:34.486 A:middle
+And, because this is an imported
+
+00:28:34.636 --> 00:28:39.096 A:middle
+type declaration, this means
+
+00:28:39.486 --> 00:28:41.856 A:middle
+that if iOS finds an extra
+
+00:28:41.856 --> 00:28:42.956 A:middle
+definition of that type
+
+00:28:43.006 --> 00:28:44.856 A:middle
+somewhere else, it will prefer
+
+00:28:44.856 --> 00:28:46.366 A:middle
+that definition over yours.
+
+00:28:47.476 --> 00:28:48.826 A:middle
+This is also what you need to do
+
+00:28:49.236 --> 00:28:50.606 A:middle
+if you want to use a common file
+
+00:28:50.606 --> 00:28:52.456 A:middle
+type which is not declared by
+
+00:28:52.456 --> 00:28:53.396 A:middle
+iOS yet.
+
+00:28:54.536 --> 00:28:55.736 A:middle
+Now, do not freak out, it is the
+
+00:28:55.736 --> 00:28:58.976 A:middle
+same UI as what we've just went
+
+00:28:58.976 --> 00:29:02.136 A:middle
+through, except that it is in
+

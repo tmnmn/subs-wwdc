@@ -1,0 +1,138 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.676 --> 00:38:00.136 A:middle
+tokens over and over again.
+
+00:38:00.516 --> 00:38:01.966 A:middle
+And usually this is really easy,
+
+00:38:02.016 --> 00:38:02.236 A:middle
+right.
+
+00:38:02.296 --> 00:38:03.566 A:middle
+You just generate a token at the
+
+00:38:03.566 --> 00:38:05.266 A:middle
+top of the script, send it with
+
+00:38:05.266 --> 00:38:06.226 A:middle
+every request until you're
+
+00:38:06.226 --> 00:38:06.686 A:middle
+finished.
+
+00:38:07.266 --> 00:38:08.356 A:middle
+And we let you control the
+
+00:38:08.356 --> 00:38:09.776 A:middle
+expiration time because you're
+
+00:38:09.776 --> 00:38:11.776 A:middle
+the best person to know how long
+
+00:38:11.776 --> 00:38:13.176 A:middle
+it should last, long enough to
+
+00:38:13.176 --> 00:38:14.666 A:middle
+complete that process and not
+
+00:38:14.716 --> 00:38:16.176 A:middle
+significantly longer than it
+
+00:38:16.176 --> 00:38:17.666 A:middle
+needs to be.
+
+00:38:17.906 --> 00:38:18.716 A:middle
+Of course, you might have
+
+00:38:18.786 --> 00:38:20.096 A:middle
+processes that run for longer
+
+00:38:20.096 --> 00:38:21.066 A:middle
+than 20 minutes or run
+
+00:38:21.066 --> 00:38:22.516 A:middle
+continuously and when that's the
+
+00:38:22.516 --> 00:38:23.506 A:middle
+case you'll want to structure
+
+00:38:23.506 --> 00:38:24.586 A:middle
+your code a little differently.
+
+00:38:25.236 --> 00:38:26.096 A:middle
+Maybe you'll generate a
+
+00:38:26.096 --> 00:38:28.046 A:middle
+20-minute token and use it as
+
+00:38:28.086 --> 00:38:29.776 A:middle
+needed and then throw it away
+
+00:38:29.776 --> 00:38:31.096 A:middle
+and issue a new one before the
+
+00:38:31.096 --> 00:38:32.816 A:middle
+old one expires, say every 18
+
+00:38:32.816 --> 00:38:33.216 A:middle
+minutes.
+
+00:38:33.576 --> 00:38:34.646 A:middle
+That way, you're getting maximum
+
+00:38:34.646 --> 00:38:35.876 A:middle
+token reuse for the best
+
+00:38:35.876 --> 00:38:37.166 A:middle
+performance and you're never
+
+00:38:37.166 --> 00:38:38.556 A:middle
+sending expired tokens.
+
+00:38:38.556 --> 00:38:41.446 A:middle
+The next think I want to talk
+
+00:38:41.446 --> 00:38:42.416 A:middle
+about is the links that we
+
+00:38:42.416 --> 00:38:43.646 A:middle
+include in the responses.
+
+00:38:44.206 --> 00:38:45.316 A:middle
+Now we've talked about these
+
+00:38:45.356 --> 00:38:47.056 A:middle
+today as a sort of nice form of
+
+00:38:47.056 --> 00:38:48.566 A:middle
+self-documentation, a way for
+
+00:38:48.566 --> 00:38:50.126 A:middle
+you to look at the data and see
+
+00:38:50.126 --> 00:38:51.366 A:middle
+what else is available, but
+
+00:38:51.366 --> 00:38:52.306 A:middle
+that's not the only reason
+
+00:38:52.306 --> 00:38:52.746 A:middle
+they're there.
+
+00:38:52.976 --> 00:38:54.076 A:middle
+They're actually intended to be
+
+00:38:54.076 --> 00:38:55.676 A:middle
+used by your code.
+
+00:38:56.346 --> 00:38:57.486 A:middle
+When you're doing a multistep
+
+00:38:57.536 --> 00:38:59.856 A:middle
+process, whenever possible take
+
+00:38:59.856 --> 00:39:01.196 A:middle
+the link we gave you out of the
+

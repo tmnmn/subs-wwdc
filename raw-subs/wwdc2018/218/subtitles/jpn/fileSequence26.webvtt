@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:55.289 --> 00:26:00.427 align:start position:32% line:-2
+一見いい感じですが
+吹き出しを拡大すると
+
+00:26:00.794 --> 00:26:04.264 align:start position:12% line:-2
+Desktop-Tintingエフェクトが
+見えません
+
+00:26:04.364 --> 00:26:06.033 align:start position:36% line:-1
+普通のグレーです
+
+00:26:06.967 --> 00:26:08.335 align:start position:38% line:-1
+なぜでしょう？
+
+00:26:09.403 --> 00:26:15.209 align:start position:25% line:-2
+非同期的にアプリケーションを
+アップデートする―
+
+00:26:15.876 --> 00:26:19.746 align:start position:12% line:-2
+Quartz Window Serverの
+使用が理由です
+
+00:26:19.847 --> 00:26:22.115 align:start position:27% line:-1
+パフォーマンスはいいですが
+
+00:26:22.783 --> 00:26:28.722 align:start position:29% line:-2
+直接 その色で描画したり
+RGB値を取得できません
+
+00:26:29.756 --> 00:26:33.193 align:start position:21% line:-2
+代わりに
+maskImageのプロパティで
+
+00:26:33.293 --> 00:26:36.130 align:start position:29% line:-1
+類似の効果を演出できます
+
+00:26:36.997 --> 00:26:42.069 align:start position:29% line:-2
+イメージマスクは
+任意のNSImageです
+
+00:26:42.803 --> 00:26:45.305 align:start position:20% line:-1
+VisualEffectViewが
+
+00:26:45.405 --> 00:26:48.709 align:start position:30% line:-2
+表示されるマテリアルを
+マスクします
+
+00:26:49.810 --> 00:26:52.846 align:start position:34% line:-2
+標準のアート画像の
+使用に加え
+
+00:26:52.946 --> 00:26:57.417 align:start position:32% line:-2
+描画ハンドラ画像でも
+類似の描画が可能です
+
+00:26:58.352 --> 00:26:59.753 align:start position:36% line:-1
+例を見せましょう
+

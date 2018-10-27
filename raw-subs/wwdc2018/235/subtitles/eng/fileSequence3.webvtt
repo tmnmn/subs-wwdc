@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.816 --> 00:03:00.866 A:middle
+adaptive applications?
+
+00:03:03.236 --> 00:03:05.296 A:middle
+So let's just pick up an
+
+00:03:05.296 --> 00:03:06.106 A:middle
+arbitrary view.
+
+00:03:06.676 --> 00:03:07.316 A:middle
+Whole thing.
+
+00:03:08.166 --> 00:03:09.876 A:middle
+There are four insets on the
+
+00:03:09.876 --> 00:03:11.926 A:middle
+top, bottom, and left and right
+
+00:03:12.596 --> 00:03:15.236 A:middle
+that represent areas that might
+
+00:03:15.236 --> 00:03:17.456 A:middle
+have some kind of overlay or
+
+00:03:17.456 --> 00:03:18.936 A:middle
+other thing that might occlude
+
+00:03:18.936 --> 00:03:20.456 A:middle
+your content if you placed it
+
+00:03:20.456 --> 00:03:20.626 A:middle
+there.
+
+00:03:21.826 --> 00:03:23.466 A:middle
+You can access this on your UI
+
+00:03:23.466 --> 00:03:25.966 A:middle
+views using the safe area insets
+
+00:03:25.966 --> 00:03:26.426 A:middle
+property.
+
+00:03:26.916 --> 00:03:28.966 A:middle
+A UI edge inset that has those
+
+00:03:28.966 --> 00:03:29.696 A:middle
+four values.
+
+00:03:31.116 --> 00:03:32.286 A:middle
+Now if you're doing layout with
+
+00:03:32.286 --> 00:03:33.726 A:middle
+Auto Layout, you actually might
+
+00:03:33.726 --> 00:03:35.906 A:middle
+want to just see the entire rec
+
+00:03:36.066 --> 00:03:36.686 A:middle
+that's safe.
+
+00:03:37.306 --> 00:03:39.336 A:middle
+And you can get that by looking
+
+00:03:39.336 --> 00:03:41.236 A:middle
+at the safe area layout guide.
+
+00:03:41.586 --> 00:03:43.966 A:middle
+Which is a UI layout guide that
+
+00:03:44.326 --> 00:03:45.916 A:middle
+represents that information.
+
+00:03:46.036 --> 00:03:47.286 A:middle
+It has layout anchors for you to
+
+00:03:47.286 --> 00:03:48.166 A:middle
+do Auto Layout with.
+
+00:03:48.306 --> 00:03:49.606 A:middle
+And a layout frame if you just
+
+00:03:49.606 --> 00:03:50.416 A:middle
+want to see the actual
+
+00:03:50.416 --> 00:03:50.876 A:middle
+rectangle.
+
+00:03:52.896 --> 00:03:54.966 A:middle
+So now that we've seen how
+
+00:03:54.966 --> 00:03:56.166 A:middle
+that's represented on our view,
+
+00:03:56.166 --> 00:03:58.676 A:middle
+let's take a look at how it gets
+
+00:03:58.676 --> 00:04:00.846 A:middle
+from one view to the next.
+

@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.766 --> 00:02:01.536 A:middle
+And this performance translates
+
+00:02:01.536 --> 00:02:02.956 A:middle
+directly into energy savings.
+
+00:02:03.756 --> 00:02:05.646 A:middle
+So if you're an app developer
+
+00:02:05.816 --> 00:02:06.696 A:middle
+and you use the Accelerate
+
+00:02:06.696 --> 00:02:08.276 A:middle
+framework, not only will your
+
+00:02:08.276 --> 00:02:09.876 A:middle
+application run faster, but
+
+00:02:09.876 --> 00:02:10.816 A:middle
+you'll also use less battery
+
+00:02:10.816 --> 00:02:11.146 A:middle
+life.
+
+00:02:11.846 --> 00:02:12.776 A:middle
+This means your users are going
+
+00:02:12.776 --> 00:02:13.676 A:middle
+to have an overall better
+
+00:02:13.676 --> 00:02:13.976 A:middle
+experience.
+
+00:02:18.446 --> 00:02:20.416 A:middle
+Now, because we provide so many
+
+00:02:20.416 --> 00:02:22.496 A:middle
+primitives, we find it useful to
+
+00:02:22.496 --> 00:02:24.186 A:middle
+organize or group them into
+
+00:02:24.186 --> 00:02:25.406 A:middle
+domain-specific libraries.
+
+00:02:26.706 --> 00:02:28.676 A:middle
+So, for instance, we group all
+
+00:02:28.676 --> 00:02:29.926 A:middle
+the signal processing primitives
+
+00:02:29.996 --> 00:02:31.026 A:middle
+under vDSP.
+
+00:02:32.156 --> 00:02:33.256 A:middle
+So, for instance, this would be
+
+00:02:33.256 --> 00:02:35.196 A:middle
+your FFTs or your DFTs and your
+
+00:02:35.196 --> 00:02:36.636 A:middle
+DCTs, your fast Fourier
+
+00:02:36.636 --> 00:02:37.956 A:middle
+transforms, your discrete cosine
+
+00:02:37.956 --> 00:02:38.516 A:middle
+transforms.
+
+00:02:40.186 --> 00:02:42.786 A:middle
+VImage contains the image
+
+00:02:42.786 --> 00:02:43.586 A:middle
+processing primitives.
+
+00:02:44.306 --> 00:02:45.506 A:middle
+If you're doing color space
+
+00:02:45.506 --> 00:02:46.976 A:middle
+conversions, this is the library
+
+00:02:48.296 --> 00:02:49.836 A:middle
+for you.
+
+00:02:49.836 --> 00:02:51.056 A:middle
+VForce contains vector versions
+
+00:02:51.056 --> 00:02:52.196 A:middle
+of the transcendental functions.
+
+00:02:52.466 --> 00:02:55.906 A:middle
+So for instance sine and cosine.
+
+00:02:56.616 --> 00:02:57.906 A:middle
+We also have support for dense
+
+00:02:57.906 --> 00:03:00.596 A:middle
+linear algebra as well as sparse
+

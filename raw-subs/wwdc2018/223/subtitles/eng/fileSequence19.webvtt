@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.096 --> 00:19:01.316 A:middle
+even be contiguous in the list.
+
+00:19:05.226 --> 00:19:06.486 A:middle
+So, it turns out that the
+
+00:19:06.486 --> 00:19:07.906 A:middle
+behavior that makes sense is to
+
+00:19:07.906 --> 00:19:09.166 A:middle
+leave all of the selected
+
+00:19:09.166 --> 00:19:10.826 A:middle
+elements next to each other
+
+00:19:10.826 --> 00:19:12.126 A:middle
+after the operation is finished.
+
+00:19:13.126 --> 00:19:14.176 A:middle
+So, when you're bringing shapes
+
+00:19:14.176 --> 00:19:15.596 A:middle
+forward, you hop the front most
+
+00:19:15.596 --> 00:19:17.136 A:middle
+selected shape in front of its
+
+00:19:17.136 --> 00:19:18.936 A:middle
+neighbor, and then you group all
+
+00:19:18.936 --> 00:19:20.566 A:middle
+the other ones behind it.
+
+00:19:22.386 --> 00:19:23.736 A:middle
+And when you send shapes
+
+00:19:23.776 --> 00:19:25.496 A:middle
+backward, you hop the bottom
+
+00:19:25.496 --> 00:19:26.926 A:middle
+most selected shape backward
+
+00:19:26.926 --> 00:19:28.396 A:middle
+behind its neighbor and group
+
+00:19:28.396 --> 00:19:30.366 A:middle
+the other ones in front of it.
+
+00:19:33.756 --> 00:19:36.256 A:middle
+So, if you didn't follow that
+
+00:19:36.256 --> 00:19:37.626 A:middle
+completely, don't worry.
+
+00:19:37.626 --> 00:19:38.526 A:middle
+We'll come back to it.
+
+00:19:38.856 --> 00:19:41.386 A:middle
+But suffice it to say that I had
+
+00:19:41.386 --> 00:19:42.836 A:middle
+some pretty carefully worked out
+
+00:19:42.836 --> 00:19:44.356 A:middle
+code to get all of these details
+
+00:19:44.356 --> 00:19:44.606 A:middle
+right.
+
+00:19:45.866 --> 00:19:47.996 A:middle
+For example, this was
+
+00:19:47.996 --> 00:19:51.256 A:middle
+bringToFront, and when I looked
+
+00:19:51.256 --> 00:19:53.656 A:middle
+at it, sure enough, there was an
+
+00:19:53.656 --> 00:19:55.366 A:middle
+order n loop over the shapes
+
+00:19:55.956 --> 00:19:57.716 A:middle
+containing two order n
+
+00:19:57.716 --> 00:20:00.186 A:middle
+operations, remove(at:) and
+

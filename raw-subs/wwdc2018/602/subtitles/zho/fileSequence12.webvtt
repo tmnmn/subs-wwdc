@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:55.449 --> 00:12:00.587 align:middle line:-2
+因此你可以自由选择
+任何与其它用户共享的技术
+
+00:12:02.422 --> 00:12:07.227 align:middle line:-2
+比如对于共享 你可以使用
+AirDrop或Multipeer Connectivity
+
+00:12:07.294 --> 00:12:10.664 align:middle line:-2
+它们依赖于本地蓝牙
+或Wi-Fi连接
+
+00:12:11.999 --> 00:12:14.968 align:middle line:-1
+这意味着你不需要联网
+
+00:12:15.035 --> 00:12:16.537 align:middle line:-1
+就可以使用此功能
+
+00:12:22.643 --> 00:12:25.312 align:middle line:-2
+让我们看看
+ARKit API如何让你
+
+00:12:25.379 --> 00:12:28.148 align:middle line:-2
+轻松实现获取
+并加载WorldMap
+
+00:12:31.018 --> 00:12:32.653 align:middle line:-1
+在你的AR会话对象上
+
+00:12:33.320 --> 00:12:36.290 align:middle line:-1
+你可以在任何时间点
+
+00:12:36.356 --> 00:12:38.091 align:middle line:-1
+调用getCurrentWorldMap
+
+00:12:39.793 --> 00:12:42.229 align:middle line:-1
+此方法带有一个完成处理程序
+
+00:12:42.729 --> 00:12:46.166 align:middle line:-2
+它将返回一个
+ARWorldMap对象
+
+00:12:48.869 --> 00:12:51.738 align:middle line:-1
+另外注意它也可能返回错误
+
+00:12:51.805 --> 00:12:53.941 align:middle line:-1
+如果WorldMap不可用的话
+
+00:12:54.174 --> 00:12:57.611 align:middle line:-2
+因此在app代码中
+处理此错误非常重要
+
+00:12:59.746 --> 00:13:01.715 align:middle line:-1
+一旦你得到了ARWorldMap
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.876 --> 00:31:00.176 A:middle
+happens when you import the same
+
+00:31:00.176 --> 00:31:01.036 A:middle
+header twice.
+
+00:31:03.216 --> 00:31:05.246 A:middle
+Clang works very hard behind the
+
+00:31:05.246 --> 00:31:07.556 A:middle
+scenes to fix the most common
+
+00:31:07.596 --> 00:31:09.176 A:middle
+issues that happen like this.
+
+00:31:10.616 --> 00:31:12.116 A:middle
+But it cannot fix all of them.
+
+00:31:13.286 --> 00:31:14.156 A:middle
+And this is just a simple
+
+00:31:14.156 --> 00:31:14.686 A:middle
+example.
+
+00:31:15.506 --> 00:31:18.396 A:middle
+Let's just make a little tweak.
+
+00:31:18.606 --> 00:31:19.956 A:middle
+Let's change the context.
+
+00:31:21.436 --> 00:31:24.296 A:middle
+Now the module import won't be
+
+00:31:24.296 --> 00:31:26.046 A:middle
+affected by this at all because
+
+00:31:26.046 --> 00:31:27.336 A:middle
+as I said, we ignore the
+
+00:31:27.336 --> 00:31:27.946 A:middle
+context.
+
+00:31:28.476 --> 00:31:32.086 A:middle
+The cat import is still a
+
+00:31:32.086 --> 00:31:33.606 A:middle
+textual inclusion of the header
+
+00:31:33.946 --> 00:31:35.596 A:middle
+which will observe this change.
+
+00:31:36.386 --> 00:31:38.586 A:middle
+So now you might not even have
+
+00:31:38.666 --> 00:31:39.736 A:middle
+duplicate definitions.
+
+00:31:40.006 --> 00:31:40.616 A:middle
+You might even have
+
+00:31:40.866 --> 00:31:42.206 A:middle
+contradictory definitions.
+
+00:31:42.526 --> 00:31:43.966 A:middle
+Which can mean we cannot fix,
+
+00:31:44.766 --> 00:31:46.096 A:middle
+Clang cannot fix this for you.
+
+00:31:47.036 --> 00:31:48.796 A:middle
+So as I recommended in the
+
+00:31:48.796 --> 00:31:51.126 A:middle
+beginning, always specify the
+
+00:31:51.126 --> 00:31:53.526 A:middle
+framework name when you import
+
+00:31:53.746 --> 00:31:55.316 A:middle
+your public or private headers.
+
+00:31:56.676 --> 00:31:57.636 A:middle
+And now I'm handing it over to
+
+00:31:57.636 --> 00:31:59.726 A:middle
+Devin who's going to talk about
+
+00:31:59.726 --> 00:32:01.656 A:middle
+Swift and how Swift uses Clang
+

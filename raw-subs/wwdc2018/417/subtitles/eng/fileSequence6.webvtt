@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.686 --> 00:06:00.536 A:middle
+without any side effects.
+
+00:06:03.056 --> 00:06:04.166 A:middle
+This makes it very
+
+00:06:04.166 --> 00:06:06.176 A:middle
+straightforward for us to write
+
+00:06:06.176 --> 00:06:08.226 A:middle
+a focused unit test for the
+
+00:06:09.236 --> 00:06:09.346 A:middle
+code.
+
+00:06:09.556 --> 00:06:10.226 A:middle
+Here we're testing the
+
+00:06:10.226 --> 00:06:12.356 A:middle
+makeRequest method just by
+
+00:06:12.356 --> 00:06:13.306 A:middle
+making a sample and put
+
+00:06:13.336 --> 00:06:14.986 A:middle
+location, passing it into the
+
+00:06:14.986 --> 00:06:16.826 A:middle
+method, and making some
+
+00:06:16.826 --> 00:06:18.146 A:middle
+assertions about its return
+
+00:06:18.146 --> 00:06:18.330 A:middle
+value.
+
+00:06:22.056 --> 00:06:23.206 A:middle
+Similarly, we can test the
+
+00:06:23.206 --> 00:06:25.056 A:middle
+response parsing by passing in
+
+00:06:25.056 --> 00:06:26.806 A:middle
+some mock JSON and making
+
+00:06:26.806 --> 00:06:27.946 A:middle
+assertions about the parsed
+
+00:06:27.946 --> 00:06:28.906 A:middle
+result.
+
+00:06:31.236 --> 00:06:33.396 A:middle
+One other thing to note about
+
+00:06:33.396 --> 00:06:34.936 A:middle
+this test is that I'm taking
+
+00:06:34.936 --> 00:06:37.266 A:middle
+advantage of XCTest support for
+
+00:06:37.266 --> 00:06:38.766 A:middle
+test methods marked as throws,
+
+00:06:39.476 --> 00:06:41.256 A:middle
+allowing me to use try in my
+
+00:06:41.256 --> 00:06:43.066 A:middle
+test code without needing an
+
+00:06:43.066 --> 00:06:44.616 A:middle
+explicit do catch block around
+
+00:06:44.946 --> 00:06:45.000 A:middle
+it.
+
+00:06:49.346 --> 00:06:50.516 A:middle
+Now, let's see the code for
+
+00:06:50.516 --> 00:06:51.876 A:middle
+interacting with URL session.
+
+00:06:54.296 --> 00:06:55.886 A:middle
+Here, again, we pull it out the
+
+00:06:55.886 --> 00:06:58.716 A:middle
+view controller, made a
+
+00:06:58.716 --> 00:07:00.966 A:middle
+APIRequest protocol with methods
+

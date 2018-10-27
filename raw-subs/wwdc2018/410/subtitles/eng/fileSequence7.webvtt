@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.836 --> 00:07:00.036 A:middle
+Standard UI, everything in the
+
+00:07:00.036 --> 00:07:01.636 A:middle
+Analysis Core appears to be a
+
+00:07:01.746 --> 00:07:02.096 A:middle
+table.
+
+00:07:02.096 --> 00:07:03.166 A:middle
+So let's talk a little bit about
+
+00:07:03.256 --> 00:07:03.986 A:middle
+tables and what they are.
+
+00:07:05.196 --> 00:07:06.916 A:middle
+Tables are collections of rows
+
+00:07:06.916 --> 00:07:07.886 A:middle
+and they have a structure that's
+
+00:07:07.886 --> 00:07:09.516 A:middle
+defined by a table schema.
+
+00:07:09.666 --> 00:07:10.746 A:middle
+Right, so it's very similar to a
+
+00:07:10.746 --> 00:07:11.656 A:middle
+database application.
+
+00:07:12.536 --> 00:07:14.106 A:middle
+The schema defines the columns
+
+00:07:14.106 --> 00:07:15.396 A:middle
+and the names of the columns and
+
+00:07:15.396 --> 00:07:16.236 A:middle
+also the types.
+
+00:07:16.746 --> 00:07:18.246 A:middle
+Now the Analysis Core uses a
+
+00:07:18.246 --> 00:07:19.606 A:middle
+very rich typing system called
+
+00:07:19.606 --> 00:07:21.296 A:middle
+an engineering type and that
+
+00:07:21.296 --> 00:07:22.446 A:middle
+both tells us how to store the
+
+00:07:22.446 --> 00:07:24.216 A:middle
+data and also how to visualize
+
+00:07:24.216 --> 00:07:25.236 A:middle
+it and analyze it in the
+
+00:07:25.236 --> 00:07:25.806 A:middle
+Standard UI.
+
+00:07:27.556 --> 00:07:29.886 A:middle
+Now in addition to or while the
+
+00:07:29.886 --> 00:07:31.426 A:middle
+schema describes the structure
+
+00:07:31.546 --> 00:07:33.246 A:middle
+of a table, you can use
+
+00:07:33.246 --> 00:07:34.516 A:middle
+attributes which are key/value
+
+00:07:34.516 --> 00:07:36.146 A:middle
+pairs to describe the content.
+
+00:07:36.616 --> 00:07:37.586 A:middle
+So that kind of helps us
+
+00:07:37.586 --> 00:07:38.616 A:middle
+describe what goes into the
+
+00:07:38.616 --> 00:07:38.986 A:middle
+table.
+
+00:07:39.566 --> 00:07:42.216 A:middle
+You can think of schemas as like
+
+00:07:42.216 --> 00:07:44.606 A:middle
+a class in Objective-C or Swift
+
+00:07:44.606 --> 00:07:45.596 A:middle
+whereas the rows are like the
+
+00:07:45.596 --> 00:07:46.246 A:middle
+instances.
+
+00:07:46.586 --> 00:07:47.886 A:middle
+And so it's important that your
+
+00:07:48.006 --> 00:07:50.236 A:middle
+schema names are singular, just
+
+00:07:50.236 --> 00:07:51.296 A:middle
+like we have class names in
+
+00:07:51.296 --> 00:07:53.516 A:middle
+Objective-C that are singular,
+
+00:07:53.516 --> 00:07:55.416 A:middle
+like NSString instead of
+
+00:07:55.416 --> 00:07:56.056 A:middle
+strings.
+
+00:07:56.246 --> 00:07:58.136 A:middle
+So this will be more important
+
+00:07:58.136 --> 00:07:58.906 A:middle
+when we get to the advanced
+
+00:07:58.906 --> 00:07:59.876 A:middle
+section but I wanted to call it
+
+00:07:59.876 --> 00:08:01.496 A:middle
+out now so we can know what
+

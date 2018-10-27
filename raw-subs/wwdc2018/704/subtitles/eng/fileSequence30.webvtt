@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.976 --> 00:30:00.976 A:middle
+your trusted server.
+
+00:30:01.596 --> 00:30:02.796 A:middle
+This is great if you have a
+
+00:30:02.796 --> 00:30:04.106 A:middle
+subscription service on the
+
+00:30:04.106 --> 00:30:04.726 A:middle
+backend.
+
+00:30:05.366 --> 00:30:07.576 A:middle
+However, I'm going to focus more
+
+00:30:07.576 --> 00:30:09.226 A:middle
+for the purposes of my talk for
+
+00:30:09.226 --> 00:30:10.626 A:middle
+on-device validation.
+
+00:30:11.086 --> 00:30:12.256 A:middle
+If you have a subscription
+
+00:30:12.256 --> 00:30:14.686 A:middle
+service I highly suggest you
+
+00:30:14.686 --> 00:30:15.686 A:middle
+check out engineering
+
+00:30:15.686 --> 00:30:18.026 A:middle
+subscriptions here in Hall 1
+
+00:30:18.026 --> 00:30:19.386 A:middle
+today at 3 o'clock right after
+
+00:30:19.386 --> 00:30:19.966 A:middle
+this talk.
+
+00:30:20.446 --> 00:30:23.816 A:middle
+But I do want to make one point
+
+00:30:24.006 --> 00:30:25.166 A:middle
+about server-to-server
+
+00:30:25.166 --> 00:30:25.876 A:middle
+validation.
+
+00:30:27.276 --> 00:30:28.296 A:middle
+As I said, it's completely
+
+00:30:28.296 --> 00:30:29.356 A:middle
+correct, it's completely
+
+00:30:29.356 --> 00:30:30.836 A:middle
+appropriate to take that receipt
+
+00:30:30.886 --> 00:30:32.176 A:middle
+from the device and send it up
+
+00:30:32.176 --> 00:30:32.996 A:middle
+to your server.
+
+00:30:34.226 --> 00:30:36.026 A:middle
+But you should never send the
+
+00:30:36.026 --> 00:30:37.586 A:middle
+receipt from your device
+
+00:30:37.746 --> 00:30:39.926 A:middle
+directly to Verify Receipt.
+
+00:30:40.746 --> 00:30:42.166 A:middle
+You don't control either end of
+
+00:30:42.166 --> 00:30:43.066 A:middle
+that connection, you don't
+
+00:30:43.066 --> 00:30:44.596 A:middle
+control the user's device and
+
+00:30:44.596 --> 00:30:45.966 A:middle
+what connections it makes and
+
+00:30:45.966 --> 00:30:47.166 A:middle
+you don't control the other end
+
+00:30:47.216 --> 00:30:48.026 A:middle
+with the App Store.
+
+00:30:48.246 --> 00:30:49.986 A:middle
+There's no way to make a trusted
+
+00:30:49.986 --> 00:30:51.266 A:middle
+connection from your app right
+
+00:30:51.266 --> 00:30:51.716 A:middle
+then and there.
+
+00:30:51.986 --> 00:30:53.266 A:middle
+You should send it, always send
+
+00:30:53.266 --> 00:30:54.856 A:middle
+it up to an intermediate server.
+
+00:30:55.376 --> 00:30:59.046 A:middle
+So what is the structure of the
+
+00:30:59.046 --> 00:30:59.556 A:middle
+receipt?
+

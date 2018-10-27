@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.156 --> 00:24:01.446 A:middle
+But, this may not be the best
+
+00:24:01.446 --> 00:24:02.706 A:middle
+solution for this particular
+
+00:24:02.706 --> 00:24:03.256 A:middle
+problem.
+
+00:24:03.536 --> 00:24:04.676 A:middle
+So let's go back to what we had
+
+00:24:04.676 --> 00:24:05.116 A:middle
+before.
+
+00:24:06.686 --> 00:24:08.416 A:middle
+Recall that I said that I'm
+
+00:24:08.416 --> 00:24:09.646 A:middle
+trying to write a single
+
+00:24:09.646 --> 00:24:11.596 A:middle
+expression here so that it can
+
+00:24:11.596 --> 00:24:13.026 A:middle
+be used to help determine the
+
+00:24:13.026 --> 00:24:13.996 A:middle
+type of the closure.
+
+00:24:15.176 --> 00:24:16.846 A:middle
+But in this case, that's not
+
+00:24:16.846 --> 00:24:17.856 A:middle
+really necessary.
+
+00:24:18.716 --> 00:24:20.316 A:middle
+We already know from the call to
+
+00:24:20.316 --> 00:24:22.366 A:middle
+Reduce what this closure has to
+
+00:24:22.366 --> 00:24:22.916 A:middle
+be.
+
+00:24:23.266 --> 00:24:24.716 A:middle
+Reduce is being called on an
+
+00:24:24.716 --> 00:24:26.156 A:middle
+array of optional integers.
+
+00:24:26.766 --> 00:24:28.736 A:middle
+And the result type has to match
+
+00:24:28.776 --> 00:24:30.126 A:middle
+the return type of the function.
+
+00:24:31.076 --> 00:24:33.186 A:middle
+So we already know that this
+
+00:24:33.486 --> 00:24:35.576 A:middle
+callback for Reduce is going to
+
+00:24:35.576 --> 00:24:37.106 A:middle
+be operating just on optional
+
+00:24:37.106 --> 00:24:37.746 A:middle
+integers.
+
+00:24:38.336 --> 00:24:40.136 A:middle
+That means there's no need to
+
+00:24:40.136 --> 00:24:41.576 A:middle
+put a single expression in that
+
+00:24:41.576 --> 00:24:42.046 A:middle
+closure.
+
+00:24:42.436 --> 00:24:44.626 A:middle
+And it's perfectly okay to break
+
+00:24:44.626 --> 00:24:46.146 A:middle
+it up into separate, more
+
+00:24:46.146 --> 00:24:47.146 A:middle
+readable statements.
+
+00:24:48.556 --> 00:24:49.966 A:middle
+So here's a direct translation
+
+00:24:49.966 --> 00:24:51.306 A:middle
+of the code that I had before.
+
+00:24:52.616 --> 00:24:53.936 A:middle
+But I also have the freedom now
+
+00:24:54.326 --> 00:24:55.206 A:middle
+to make it something more
+
+00:24:55.206 --> 00:24:55.776 A:middle
+Swifty.
+
+00:24:56.196 --> 00:24:57.806 A:middle
+This is a lot more readable.
+
+00:24:58.076 --> 00:24:59.346 A:middle
+A lot more maintainable.
+
+00:24:59.686 --> 00:25:01.226 A:middle
+And it compiles in a quick,
+

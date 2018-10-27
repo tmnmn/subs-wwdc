@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.346 --> 00:33:02.883 align:start position:27% line:-1
+JPEGイメージを与えます
+
+00:33:03.250 --> 00:33:08.489 align:start position:16% line:-2
+このuserInfoプロパティを使って
+snapshotItemを保存します
+
+00:33:08.856 --> 00:33:12.059 align:start position:23% line:-1
+これは書き込みの際に使用します
+
+00:33:13.927 --> 00:33:18.899 align:start position:0% line:-2
+NSFilePromiseProvideDelegeteに
+実装しましょう
+
+00:33:22.035 --> 00:33:23.370 align:start position:38% line:-1
+こんな感じです
+
+00:33:24.471 --> 00:33:25.806 align:start position:38% line:-1
+下に移動します
+
+00:33:26.106 --> 00:33:29.710 align:start position:29% line:-2
+そして３つのデリゲートを
+実装します
+
+00:33:32.146 --> 00:33:34.848 align:start position:27% line:-1
+ファイル名を返すデリゲート
+
+00:33:36.483 --> 00:33:39.820 align:start position:23% line:-1
+ここでは静的ファイル名にします
+
+00:33:41.188 --> 00:33:44.091 align:start position:16% line:-2
+次はoperationQueueを返す
+デリゲート
+
+00:33:44.691 --> 00:33:46.894 align:start position:34% line:-1
+ここにありましたね
+
+00:33:47.861 --> 00:33:52.533 align:start position:25% line:-2
+最後はファイルを
+ディスクに書き込むデリゲート
+
+00:33:58.639 --> 00:34:02.209 align:start position:7% line:-1
+これでfilePromiseProviderから
+

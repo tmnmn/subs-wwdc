@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:01.216 --> 00:26:03.166 A:middle
+New in watchOS 5, though, there
+
+00:26:03.166 --> 00:26:03.906 A:middle
+is this method
+
+00:26:04.246 --> 00:26:05.816 A:middle
+updateUserActivity on
+
+00:26:05.816 --> 00:26:07.706 A:middle
+WKInterfaceController, where you
+
+00:26:07.706 --> 00:26:09.596 A:middle
+can attach your user activity to
+
+00:26:09.596 --> 00:26:11.226 A:middle
+an interfaceController, and
+
+00:26:11.226 --> 00:26:11.776 A:middle
+whenever this
+
+00:26:11.776 --> 00:26:13.036 A:middle
+interfaceController's visible to
+
+00:26:13.116 --> 00:26:14.336 A:middle
+the user, the system will
+
+00:26:14.336 --> 00:26:15.836 A:middle
+automatically be donating the
+
+00:26:15.836 --> 00:26:17.166 A:middle
+user activities on your behalf.
+
+00:26:17.916 --> 00:26:19.416 A:middle
+This is similar to the API's
+
+00:26:19.416 --> 00:26:21.116 A:middle
+that we have over on iOS, on
+
+00:26:21.116 --> 00:26:22.036 A:middle
+UIViewController, and
+
+00:26:22.036 --> 00:26:23.536 A:middle
+UIResponder, where you can, kind
+
+00:26:23.536 --> 00:26:26.116 A:middle
+of, attach an NSUserActivity to
+
+00:26:26.116 --> 00:26:26.796 A:middle
+a piece of your UI.
+
+00:26:28.066 --> 00:26:29.166 A:middle
+And so now, this is the
+
+00:26:29.166 --> 00:26:30.846 A:middle
+recommended way to be providing
+
+00:26:31.026 --> 00:26:32.286 A:middle
+NSUserActivity donations on
+
+00:26:32.286 --> 00:26:32.966 A:middle
+watchOS.
+
+00:26:34.416 --> 00:26:37.436 A:middle
+If your shortcuts are backed by
+
+00:26:37.436 --> 00:26:39.786 A:middle
+an intent, you can provide those
+
+00:26:39.886 --> 00:26:41.726 A:middle
+intent donations by using the
+
+00:26:41.826 --> 00:26:42.786 A:middle
+INInteraction API.
+
+00:26:43.186 --> 00:26:45.096 A:middle
+So, if you attended any of the
+
+00:26:45.096 --> 00:26:46.166 A:middle
+previous shortcut talks, this
+
+00:26:46.166 --> 00:26:47.286 A:middle
+probably looks familiar to you.
+
+00:26:47.286 --> 00:26:49.696 A:middle
+But, to provide this donation,
+
+00:26:49.696 --> 00:26:50.786 A:middle
+first you create your intent,
+
+00:26:51.196 --> 00:26:52.656 A:middle
+and adjust any parameters as
+
+00:26:52.656 --> 00:26:53.576 A:middle
+they're necessary for what the
+
+00:26:53.576 --> 00:26:54.636 A:middle
+user just did within your app.
+
+00:26:55.506 --> 00:26:56.596 A:middle
+Next, you create your
+
+00:26:56.596 --> 00:26:58.476 A:middle
+INInteraction with intent, and
+
+00:26:58.476 --> 00:27:00.276 A:middle
+call the donate method when
+

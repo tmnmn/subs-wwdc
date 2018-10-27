@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.566 --> 00:09:01.676 A:middle
+the networking layer, including
+
+00:09:01.676 --> 00:09:03.426 A:middle
+discovery of nearby devices and
+
+00:09:03.426 --> 00:09:05.716 A:middle
+synchronization, and encryption
+
+00:09:05.716 --> 00:09:05.976 A:middle
+as well.
+
+00:09:07.396 --> 00:09:09.206 A:middle
+AV Foundation controls both the
+
+00:09:09.206 --> 00:09:11.056 A:middle
+music for atmosphere and the
+
+00:09:11.056 --> 00:09:13.186 A:middle
+sound effects for the devices,
+
+00:09:13.186 --> 00:09:14.236 A:middle
+really giving you that immersive
+
+00:09:14.236 --> 00:09:14.846 A:middle
+experience.
+
+00:09:16.026 --> 00:09:17.706 A:middle
+And lastly, we built the entire
+
+00:09:17.706 --> 00:09:18.806 A:middle
+application in Swift.
+
+00:09:19.426 --> 00:09:22.216 A:middle
+Swift's type safety, performance
+
+00:09:22.696 --> 00:09:25.196 A:middle
+and advanced features like
+
+00:09:25.196 --> 00:09:27.366 A:middle
+protocol extensions let us focus
+
+00:09:27.366 --> 00:09:28.756 A:middle
+more on the gameplay and worry
+
+00:09:28.756 --> 00:09:30.196 A:middle
+less about crashes and
+
+00:09:30.196 --> 00:09:31.536 A:middle
+mismatched interfaces between
+
+00:09:31.536 --> 00:09:32.136 A:middle
+code layers.
+
+00:09:32.626 --> 00:09:36.716 A:middle
+Those are the iOS technologies
+
+00:09:36.716 --> 00:09:37.176 A:middle
+we use.
+
+00:09:37.576 --> 00:09:39.026 A:middle
+I'll talk about how we use those
+
+00:09:39.026 --> 00:09:40.406 A:middle
+as we implemented several of the
+
+00:09:40.406 --> 00:09:41.266 A:middle
+features of the game.
+
+00:09:41.836 --> 00:09:43.206 A:middle
+Establishing the shared
+
+00:09:43.206 --> 00:09:43.996 A:middle
+coordinate space.
+
+00:09:44.796 --> 00:09:45.366 A:middle
+Networking.
+
+00:09:46.096 --> 00:09:48.546 A:middle
+Physics. Asset important and
+
+00:09:48.546 --> 00:09:48.896 A:middle
+management.
+
+00:09:49.696 --> 00:09:50.656 A:middle
+Flag simulation.
+
+00:09:51.086 --> 00:09:52.006 A:middle
+And the dynamic audio.
+
+00:09:52.006 --> 00:09:56.226 A:middle
+We'll start by talking about
+
+00:09:56.226 --> 00:09:57.556 A:middle
+setting up a shared coordinate
+
+00:09:57.556 --> 00:09:58.036 A:middle
+space.
+
+00:09:58.376 --> 00:10:00.926 A:middle
+The key in the experience is
+

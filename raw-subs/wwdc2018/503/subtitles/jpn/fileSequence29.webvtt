@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.404 --> 00:29:00.807 align:start position:36% line:-2
+フレームごとには
+必要ありません
+
+00:29:01.041 --> 00:29:05.145 align:start position:30% line:-2
+それで
+大きな成果が得られます
+
+00:29:06.113 --> 00:29:08.215 align:start position:29% line:-1
+深度データにいきましょう
+
+00:29:08.315 --> 00:29:12.085 align:start position:29% line:-1
+まず顔の中央を見極めます
+
+00:29:12.186 --> 00:29:17.791 align:start position:23% line:-2
+iOSには顔のメタデータを得る
+様々な方法があります
+
+00:29:18.025 --> 00:29:21.795 align:start position:14% line:-2
+Core Image detector
+Vision Frameworkなどです
+
+00:29:21.895 --> 00:29:25.833 align:start position:30% line:-2
+しかし
+顔の中心が知りたい場合
+
+00:29:25.933 --> 00:29:29.336 align:start position:20% line:-2
+AVMetadataObjectの
+faceを使います
+
+00:29:30.304 --> 00:29:34.842 align:start position:29% line:-2
+これでRGB画像の中央は
+分かりますが
+
+00:29:34.942 --> 00:29:39.446 align:start position:34% line:-2
+深度マップの中央も
+知る必要があります
+
+00:29:41.515 --> 00:29:45.719 align:start position:29% line:-1
+顔の深度の値が判明したら
+
+00:29:45.819 --> 00:29:51.058 align:start position:21% line:-2
+しきい値を顔の深度＋25センチに
+設定し
+
+00:29:51.158 --> 00:29:55.963 align:start position:36% line:-2
+マスクの前景を１
+背景を０とします
+
+00:29:56.430 --> 00:30:00.801 align:start position:29% line:-2
+これでも十分ですが
+バイナリマスクも使えます
+

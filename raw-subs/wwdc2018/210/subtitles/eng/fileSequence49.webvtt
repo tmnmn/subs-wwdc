@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:00.776 --> 00:49:01.776 A:middle
+We've seen a number of places
+
+00:49:01.776 --> 00:49:02.826 A:middle
+across this system that were
+
+00:49:02.826 --> 00:49:04.196 A:middle
+actually able to improve their
+
+00:49:04.196 --> 00:49:05.996 A:middle
+Dark Mode support by deleting an
+
+00:49:05.996 --> 00:49:07.916 A:middle
+override of these default colors
+
+00:49:08.296 --> 00:49:09.186 A:middle
+that these views have.
+
+00:49:10.486 --> 00:49:12.546 A:middle
+If you want to customize beyond
+
+00:49:12.606 --> 00:49:13.816 A:middle
+the default color that these
+
+00:49:13.816 --> 00:49:15.666 A:middle
+views have, you can explicitly
+
+00:49:15.666 --> 00:49:17.556 A:middle
+set a variety of system colors
+
+00:49:17.626 --> 00:49:19.346 A:middle
+as their background color to get
+
+00:49:19.346 --> 00:49:20.926 A:middle
+the exact material effect you
+
+00:49:20.926 --> 00:49:21.216 A:middle
+want.
+
+00:49:22.916 --> 00:49:24.446 A:middle
+One really important note here,
+
+00:49:24.446 --> 00:49:25.986 A:middle
+though, is that if you were to
+
+00:49:25.986 --> 00:49:27.396 A:middle
+read the RGB values of these
+
+00:49:27.396 --> 00:49:29.166 A:middle
+colors, they would not include
+
+00:49:29.166 --> 00:49:29.946 A:middle
+the desktop tint.
+
+00:49:30.836 --> 00:49:31.796 A:middle
+This is because, as Raymond
+
+00:49:31.796 --> 00:49:32.816 A:middle
+mentioned, this tint is
+
+00:49:32.816 --> 00:49:33.876 A:middle
+extremely dynamic.
+
+00:49:34.306 --> 00:49:35.606 A:middle
+As you move your window around
+
+00:49:35.606 --> 00:49:36.956 A:middle
+on screen, that's getting
+
+00:49:36.956 --> 00:49:38.596 A:middle
+updated asynchronously to the
+
+00:49:38.596 --> 00:49:40.576 A:middle
+applications rendering itself,
+
+00:49:40.576 --> 00:49:41.536 A:middle
+creating a really nice
+
+00:49:41.536 --> 00:49:43.456 A:middle
+experience as the user is moving
+
+00:49:43.456 --> 00:49:44.336 A:middle
+around windows.
+
+00:49:45.556 --> 00:49:46.886 A:middle
+So, jumping back to Chameleon
+
+00:49:46.886 --> 00:49:48.396 A:middle
+Wrangler, we automatically got
+
+00:49:48.396 --> 00:49:49.976 A:middle
+this content background because
+
+00:49:49.976 --> 00:49:51.226 A:middle
+we just use a stock
+
+00:49:51.226 --> 00:49:52.006 A:middle
+NSCollectionView.
+
+00:49:53.456 --> 00:49:55.006 A:middle
+In the vital section, we got
+
+00:49:55.006 --> 00:49:56.196 A:middle
+that window background material
+
+00:49:56.196 --> 00:49:57.466 A:middle
+showing through because we had
+
+00:49:57.466 --> 00:49:58.996 A:middle
+nothing opaque covering it up.
+

@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:56.623 --> 00:16:00.127 align:start position:34% line:-2
+あるテクニックで
+うまく分離できます
+
+00:16:00.227 --> 00:16:04.932 align:start position:25% line:-2
+通知センターは
+複数のインスタンスがあります
+
+00:16:05.432 --> 00:16:10.070 align:start position:27% line:-2
+デフォルトのインスタンスが
+ありますが―
+
+00:16:10.170 --> 00:16:13.273 align:start position:29% line:-2
+必要に応じ
+インスタンスを生成します
+
+00:16:13.373 --> 00:16:16.009 align:start position:25% line:-1
+これが分離のカギとなるのです
+
+00:16:16.343 --> 00:16:20.714 align:start position:11% line:-2
+新しいNotificationCenterを
+作成し
+
+00:16:20.814 --> 00:16:24.885 align:start position:27% line:-2
+デフォルトのインスタンスの
+代わりに使うのです
+
+00:16:25.486 --> 00:16:28.088 align:start position:27% line:-1
+依存性の注入とも呼ばれます
+
+00:16:28.422 --> 00:16:31.124 align:start position:21% line:-2
+View Controllerで
+使ってみましょう
+
+00:16:31.825 --> 00:16:35.696 align:start position:5% line:-2
+デフォルトのNotificationCenterを
+使った元のコードを
+
+00:16:35.796 --> 00:16:38.499 align:start position:36% line:-1
+修正したものです
+
+00:16:39.399 --> 00:16:44.338 align:start position:27% line:-2
+パラメータとプロパティを
+イニシャライザに加えました
+
+00:16:44.738 --> 00:16:49.810 align:start position:27% line:-2
+オブザーバを加えず
+新しいプロパティを使います
+
+00:16:51.912 --> 00:16:56.216 align:start position:20% line:-2
+また.defaultのデフォルトの
+パラメータ値を加え
+
+00:16:56.316 --> 00:16:59.153 align:start position:27% line:-1
+既存コードの破壊を避けます
+
+00:16:59.253 --> 00:17:04.124 align:start position:27% line:-2
+新しいパラメータを渡すのは
+ユニットテストだけです
+

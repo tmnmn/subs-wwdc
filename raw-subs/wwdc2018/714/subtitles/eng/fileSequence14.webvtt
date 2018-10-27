@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.896 --> 00:14:01.776 A:middle
+the server a signed affidavit
+
+00:14:02.146 --> 00:14:03.656 A:middle
+that its certificate has been
+
+00:14:03.656 --> 00:14:04.646 A:middle
+publicly recorded.
+
+00:14:04.926 --> 00:14:06.076 A:middle
+And then when the client
+
+00:14:06.166 --> 00:14:08.066 A:middle
+connects, the server can give
+
+00:14:08.066 --> 00:14:09.096 A:middle
+all that information to the
+
+00:14:09.096 --> 00:14:11.046 A:middle
+client and the client can verify
+
+00:14:11.046 --> 00:14:12.256 A:middle
+that not only is this a signed
+
+00:14:12.256 --> 00:14:14.236 A:middle
+certificate, it is a publicly
+
+00:14:14.236 --> 00:14:15.786 A:middle
+logged signed certificate.
+
+00:14:16.916 --> 00:14:18.156 A:middle
+Now suppose we have a rogue
+
+00:14:18.156 --> 00:14:20.226 A:middle
+certificate authority that
+
+00:14:20.326 --> 00:14:22.286 A:middle
+doesn't publicly expose the
+
+00:14:22.286 --> 00:14:23.836 A:middle
+rogue certificates it's issuing.
+
+00:14:24.726 --> 00:14:26.426 A:middle
+The client will reject that
+
+00:14:26.426 --> 00:14:27.916 A:middle
+because it doesn't have the
+
+00:14:27.916 --> 00:14:30.386 A:middle
+affidavit to attest to it being
+
+00:14:30.476 --> 00:14:31.826 A:middle
+recorded in a public log.
+
+00:14:33.006 --> 00:14:34.286 A:middle
+Starting later this year, we
+
+00:14:34.596 --> 00:14:35.896 A:middle
+will be enforcing this.
+
+00:14:37.456 --> 00:14:39.806 A:middle
+All newly issued TLS
+
+00:14:39.806 --> 00:14:41.726 A:middle
+certificates must include the
+
+00:14:41.726 --> 00:14:43.236 A:middle
+verification that they are
+
+00:14:43.236 --> 00:14:44.096 A:middle
+publicly logged.
+
+00:14:44.486 --> 00:14:46.036 A:middle
+And if they're not, then the
+
+00:14:46.036 --> 00:14:47.056 A:middle
+client will reject it.
+
+00:14:47.536 --> 00:14:49.686 A:middle
+Your apps don't need to make any
+
+00:14:49.686 --> 00:14:51.926 A:middle
+changes, but if you have
+
+00:14:51.926 --> 00:14:53.006 A:middle
+tailored certificates for your
+
+00:14:53.006 --> 00:14:54.996 A:middle
+servers, make sure that your
+
+00:14:54.996 --> 00:14:56.686 A:middle
+certificate authority is
+
+00:14:56.686 --> 00:14:58.186 A:middle
+recording them in the public
+
+00:14:58.306 --> 00:14:59.906 A:middle
+certificate transparency logs.
+

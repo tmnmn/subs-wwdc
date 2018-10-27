@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.326 --> 00:16:01.496 A:middle
+To use it, we first have to
+
+00:16:01.496 --> 00:16:02.186 A:middle
+recognize that
+
+00:16:02.186 --> 00:16:03.576 A:middle
+NotificationCenter can have
+
+00:16:03.576 --> 00:16:04.646 A:middle
+multiple instances.
+
+00:16:05.516 --> 00:16:08.106 A:middle
+As you may note, it has a
+
+00:16:08.256 --> 00:16:09.526 A:middle
+default instance as a class
+
+00:16:09.526 --> 00:16:10.766 A:middle
+property, but it supports
+
+00:16:10.766 --> 00:16:12.106 A:middle
+creating additional instances
+
+00:16:12.106 --> 00:16:13.536 A:middle
+whenever necessary, and this is
+
+00:16:13.536 --> 00:16:14.936 A:middle
+going to be key to isolating our
+
+00:16:14.936 --> 00:16:15.516 A:middle
+tests.
+
+00:16:16.436 --> 00:16:18.036 A:middle
+So, to apply this technique, we
+
+00:16:18.036 --> 00:16:19.386 A:middle
+first have to create a new
+
+00:16:19.386 --> 00:16:21.376 A:middle
+NotificationCenter, pass it to
+
+00:16:21.376 --> 00:16:23.366 A:middle
+our subject and use it instead
+
+00:16:23.366 --> 00:16:24.376 A:middle
+of the default instance.
+
+00:16:25.156 --> 00:16:26.636 A:middle
+This is often referred to as
+
+00:16:26.636 --> 00:16:27.546 A:middle
+dependency injection.
+
+00:16:28.486 --> 00:16:29.716 A:middle
+So, let's take a look at using
+
+00:16:29.716 --> 00:16:30.546 A:middle
+this in our view controller.
+
+00:16:31.936 --> 00:16:33.256 A:middle
+Here, I have the original code
+
+00:16:33.256 --> 00:16:34.476 A:middle
+that uses the default
+
+00:16:34.476 --> 00:16:36.096 A:middle
+NotificationCenter, and I'll
+
+00:16:36.096 --> 00:16:37.456 A:middle
+modify it to use a separate
+
+00:16:37.456 --> 00:16:38.006 A:middle
+instance.
+
+00:16:38.476 --> 00:16:40.136 A:middle
+I've added a new
+
+00:16:40.136 --> 00:16:42.046 A:middle
+NotificationCenter property and
+
+00:16:42.046 --> 00:16:43.316 A:middle
+a parameter in the initializer
+
+00:16:43.316 --> 00:16:43.896 A:middle
+that sets it.
+
+00:16:44.796 --> 00:16:45.756 A:middle
+And, instead of adding an
+
+00:16:45.756 --> 00:16:47.446 A:middle
+observer to the default center,
+
+00:16:47.446 --> 00:16:51.626 A:middle
+it uses this new property.
+
+00:16:51.876 --> 00:16:53.046 A:middle
+I'll also add a default
+
+00:16:53.046 --> 00:16:55.076 A:middle
+parameter value of .default to
+
+00:16:55.076 --> 00:16:57.056 A:middle
+the initializer, and this avoids
+
+00:16:57.056 --> 00:16:58.656 A:middle
+breaking any existing code in my
+
+00:16:58.656 --> 00:17:00.526 A:middle
+app, since existing clients
+

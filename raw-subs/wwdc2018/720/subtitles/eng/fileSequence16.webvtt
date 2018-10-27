@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.846 --> 00:16:01.406 A:middle
+Secondly, making passes look
+
+00:16:01.406 --> 00:16:01.776 A:middle
+great.
+
+00:16:02.626 --> 00:16:03.766 A:middle
+There's some new design options,
+
+00:16:03.936 --> 00:16:05.476 A:middle
+and some tips for making passes
+
+00:16:05.476 --> 00:16:06.856 A:middle
+work across all your devices.
+
+00:16:08.376 --> 00:16:10.746 A:middle
+Thirdly, rich pass content.
+
+00:16:11.736 --> 00:16:13.006 A:middle
+New ways to make your passes
+
+00:16:13.006 --> 00:16:15.126 A:middle
+more deeply integrate with the
+
+00:16:15.676 --> 00:16:15.936 A:middle
+system.
+
+00:16:16.006 --> 00:16:17.696 A:middle
+And, finally, contactless
+
+00:16:17.696 --> 00:16:19.786 A:middle
+passes, and how you can get
+
+00:16:20.596 --> 00:16:20.836 A:middle
+started.
+
+00:16:20.936 --> 00:16:21.936 A:middle
+So, let's begin with adding
+
+00:16:21.936 --> 00:16:22.676 A:middle
+passes to Wallet.
+
+00:16:23.616 --> 00:16:24.606 A:middle
+Many of you have seen or
+
+00:16:24.606 --> 00:16:26.026 A:middle
+experienced the full model UI
+
+00:16:26.026 --> 00:16:27.676 A:middle
+that was presented to add
+
+00:16:27.676 --> 00:16:28.336 A:middle
+passes.
+
+00:16:28.396 --> 00:16:29.136 A:middle
+But, there's a better way.
+
+00:16:31.346 --> 00:16:33.636 A:middle
+For almost all situations, we
+
+00:16:33.636 --> 00:16:34.996 A:middle
+recommend using our automatic
+
+00:16:35.056 --> 00:16:35.896 A:middle
+pass adding API.
+
+00:16:37.186 --> 00:16:39.176 A:middle
+To use this, simply call the
+
+00:16:39.176 --> 00:16:40.436 A:middle
+addPasses function in
+
+00:16:40.436 --> 00:16:42.226 A:middle
+PKPassLibrary, with the array of
+
+00:16:42.226 --> 00:16:43.306 A:middle
+passes you intend to add.
+
+00:16:44.396 --> 00:16:45.636 A:middle
+Now, this presents a simple
+
+00:16:45.636 --> 00:16:47.356 A:middle
+alert to the user, requesting
+
+00:16:47.356 --> 00:16:48.536 A:middle
+them to add or to review those
+
+00:16:48.536 --> 00:16:48.926 A:middle
+passes.
+
+00:16:49.746 --> 00:16:51.166 A:middle
+And, that's much less friction
+
+00:16:51.166 --> 00:16:52.146 A:middle
+compared to the full-screen
+
+00:16:52.146 --> 00:16:52.556 A:middle
+model UI.
+
+00:16:52.556 --> 00:16:55.026 A:middle
+And, the user still has the
+
+00:16:55.026 --> 00:16:56.666 A:middle
+option to review the passes in
+
+00:16:56.666 --> 00:16:56.946 A:middle
+full.
+
+00:16:57.436 --> 00:16:58.536 A:middle
+And, you should handle that in
+
+00:16:58.536 --> 00:17:00.656 A:middle
+the completion, and present that
+

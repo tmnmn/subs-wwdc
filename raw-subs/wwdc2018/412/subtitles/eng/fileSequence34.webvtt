@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:58.746 --> 00:34:01.586 A:middle
+modified using watchpoints, and
+
+00:34:01.756 --> 00:34:03.706 A:middle
+we can even evaluate Objective-C
+
+00:34:03.706 --> 00:34:05.336 A:middle
+code in Swift frames using
+
+00:34:05.336 --> 00:34:06.686 A:middle
+expression -l objc.
+
+00:34:06.816 --> 00:34:10.525 A:middle
+We can request that view changes
+
+00:34:10.525 --> 00:34:11.466 A:middle
+are flashed directly to the
+
+00:34:11.466 --> 00:34:12.806 A:middle
+screen, even while paused in the
+
+00:34:12.806 --> 00:34:14.166 A:middle
+debugger, using the expression
+
+00:34:14.216 --> 00:34:15.366 A:middle
+ca transition flush.
+
+00:34:16.136 --> 00:34:18.516 A:middle
+And you can add custom LLDB
+
+00:34:18.516 --> 00:34:20.116 A:middle
+commands, either aliasing
+
+00:34:20.246 --> 00:34:21.596 A:middle
+commonly used commands to
+
+00:34:21.596 --> 00:34:23.466 A:middle
+correct shortcuts or by
+
+00:34:23.466 --> 00:34:25.196 A:middle
+completely customizing and
+
+00:34:25.196 --> 00:34:26.886 A:middle
+creating your own command using
+
+00:34:26.886 --> 00:34:28.356 A:middle
+LLDB's Python scripting.
+
+00:34:28.775 --> 00:34:29.936 A:middle
+And don't forget to check out
+
+00:34:29.936 --> 00:34:30.815 A:middle
+our session website.
+
+00:34:30.815 --> 00:34:32.076 A:middle
+We'll be posting that nudge
+
+00:34:32.076 --> 00:34:33.436 A:middle
+script soon, so you can download
+
+00:34:33.436 --> 00:34:34.746 A:middle
+it, check it out, and use it as
+
+00:34:34.746 --> 00:34:36.005 A:middle
+the basis for your commands.
+
+00:34:37.956 --> 00:34:39.116 A:middle
+There's one more thing I wanted
+
+00:34:39.116 --> 00:34:40.516 A:middle
+to cover with you guys and
+
+00:34:40.516 --> 00:34:42.306 A:middle
+that's just the current LLDB
+
+00:34:42.306 --> 00:34:43.076 A:middle
+print commands.
+
+00:34:43.476 --> 00:34:44.766 A:middle
+So you might be familiar with
+
+00:34:44.766 --> 00:34:44.833 A:middle
+po.
+
+00:34:44.833 --> 00:34:45.746 A:middle
+We used it a lot during the
+
+00:34:45.746 --> 00:34:47.646 A:middle
+demo, and we saw that po
+
+00:34:47.646 --> 00:34:49.266 A:middle
+requests the debug description
+
+00:34:49.266 --> 00:34:50.346 A:middle
+of an object, and you can
+
+00:34:50.346 --> 00:34:51.036 A:middle
+customize that.
+
+00:34:51.036 --> 00:34:52.696 A:middle
+And that's because po is simply
+
+00:34:52.696 --> 00:34:54.216 A:middle
+an alias for expression --
+
+00:34:54.216 --> 00:34:58.156 A:middle
+object description or expression
+
+00:34:58.156 --> 00:35:00.866 A:middle
+-O, compared with the p
+

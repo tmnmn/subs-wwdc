@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.366 --> 00:05:01.806 A:middle
+Now, it's pretty remarkable that
+
+00:05:01.806 --> 00:05:03.516 A:middle
+I was able to do all of this in
+
+00:05:03.516 --> 00:05:05.086 A:middle
+just about 15 lines of code,
+
+00:05:05.796 --> 00:05:07.106 A:middle
+leveraging the power of Swift
+
+00:05:07.106 --> 00:05:10.296 A:middle
+and Foundation, but, by putting
+
+00:05:10.296 --> 00:05:11.586 A:middle
+this together in the one method,
+
+00:05:12.256 --> 00:05:12.646 A:middle
+I [inaudible] the
+
+00:05:12.676 --> 00:05:14.726 A:middle
+maintainability and especially
+
+00:05:14.766 --> 00:05:20.786 A:middle
+the testability of this code.
+
+00:05:20.986 --> 00:05:22.116 A:middle
+Looking at the base of our
+
+00:05:22.176 --> 00:05:23.956 A:middle
+testing pyramid, what we really
+
+00:05:23.956 --> 00:05:25.456 A:middle
+want to be able to do here is
+
+00:05:25.456 --> 00:05:27.376 A:middle
+write focus unit tests for each
+
+00:05:27.376 --> 00:05:28.436 A:middle
+of these pieces of the flow.
+
+00:05:29.066 --> 00:05:32.576 A:middle
+Let's first consider the request
+
+00:05:32.576 --> 00:05:34.216 A:middle
+preparation and response parsing
+
+00:05:34.216 --> 00:05:34.746 A:middle
+steps.
+
+00:05:38.516 --> 00:05:40.306 A:middle
+In order to make this code more
+
+00:05:40.306 --> 00:05:42.646 A:middle
+testable, we started by pulling
+
+00:05:42.646 --> 00:05:43.886 A:middle
+it out of the view controller
+
+00:05:44.506 --> 00:05:46.976 A:middle
+and made two methods on this
+
+00:05:46.976 --> 00:05:47.596 A:middle
+dedicated
+
+00:05:47.596 --> 00:05:50.386 A:middle
+PointsOfInterestRequest type,
+
+00:05:50.596 --> 00:05:52.466 A:middle
+giving us two nicely decoupled
+
+00:05:52.466 --> 00:05:54.306 A:middle
+methods that each take some
+
+00:05:54.306 --> 00:05:57.216 A:middle
+values as input and transform
+
+00:05:57.216 --> 00:05:58.576 A:middle
+them into some output values
+
+00:05:58.686 --> 00:06:00.536 A:middle
+without any side effects.
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.196 --> 00:03:00.216 A:middle
+with a very specific set of
+
+00:03:00.216 --> 00:03:02.316 A:middle
+arguments and in a particular
+
+00:03:02.396 --> 00:03:03.746 A:middle
+order based on the configuration
+
+00:03:03.826 --> 00:03:04.866 A:middle
+of your Xcode project.
+
+00:03:05.386 --> 00:03:07.936 A:middle
+So what the build system does
+
+00:03:07.936 --> 00:03:09.226 A:middle
+for you is to automate the
+
+00:03:09.226 --> 00:03:10.506 A:middle
+orchestration and execution of
+
+00:03:10.506 --> 00:03:11.946 A:middle
+these tasks each time you
+
+00:03:11.946 --> 00:03:12.736 A:middle
+perform a build.
+
+00:03:13.526 --> 00:03:14.876 A:middle
+And since there can be tens of
+
+00:03:14.876 --> 00:03:16.926 A:middle
+thousands of tasks or even more
+
+00:03:16.926 --> 00:03:18.436 A:middle
+involved in a build process with
+
+00:03:18.436 --> 00:03:19.386 A:middle
+a complex graph of
+
+00:03:19.386 --> 00:03:20.346 A:middle
+interdependencies.
+
+00:03:20.616 --> 00:03:21.616 A:middle
+It's definitely not something
+
+00:03:21.616 --> 00:03:22.626 A:middle
+you want to be manually typing
+
+00:03:22.626 --> 00:03:23.776 A:middle
+into the terminal 110 times a
+
+00:03:23.776 --> 00:03:24.056 A:middle
+day.
+
+00:03:24.056 --> 00:03:27.176 A:middle
+Let the build system do that for
+
+00:03:27.176 --> 00:03:27.316 A:middle
+you.
+
+00:03:29.476 --> 00:03:31.276 A:middle
+Now I mentioned that the tasks
+
+00:03:31.276 --> 00:03:32.446 A:middle
+in the build process are
+
+00:03:32.446 --> 00:03:33.976 A:middle
+executed in a particular order.
+
+00:03:34.456 --> 00:03:35.506 A:middle
+Let's talk about how that
+
+00:03:35.506 --> 00:03:37.226 A:middle
+ordering is determined and why
+
+00:03:37.226 --> 00:03:37.836 A:middle
+it's important.
+
+00:03:38.866 --> 00:03:40.036 A:middle
+The order in which build tasks
+
+00:03:40.036 --> 00:03:42.116 A:middle
+are executed is determined from
+
+00:03:42.116 --> 00:03:43.456 A:middle
+the dependency information that
+
+00:03:43.456 --> 00:03:45.476 A:middle
+is the tasks, the inputs that a
+
+00:03:45.476 --> 00:03:47.426 A:middle
+task consumes, and the outputs
+
+00:03:47.426 --> 00:03:48.096 A:middle
+that it produces.
+
+00:03:49.386 --> 00:03:51.166 A:middle
+For example, a compilation task
+
+00:03:51.236 --> 00:03:52.976 A:middle
+consumes a source code file like
+
+00:03:52.976 --> 00:03:55.636 A:middle
+PetController.m as input and
+
+00:03:55.636 --> 00:03:57.146 A:middle
+produces an object file like
+
+00:03:57.146 --> 00:03:59.146 A:middle
+PetController.o as output.
+

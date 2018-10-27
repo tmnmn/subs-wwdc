@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.806 --> 00:15:00.516 A:middle
+This is different than getting 0
+
+00:15:00.516 --> 00:15:01.256 A:middle
+observations met.
+
+00:15:01.956 --> 00:15:03.666 A:middle
+Getting 0 observations met means
+
+00:15:03.666 --> 00:15:04.736 A:middle
+that whatever you were looking
+
+00:15:04.736 --> 00:15:05.946 A:middle
+for is just not there.
+
+00:15:05.946 --> 00:15:08.796 A:middle
+As an example, let's say you run
+
+00:15:08.796 --> 00:15:09.526 A:middle
+a face detector.
+
+00:15:10.816 --> 00:15:11.846 A:middle
+If you feed an image with no
+
+00:15:11.846 --> 00:15:13.306 A:middle
+faces in it, naturally, you will
+
+00:15:13.306 --> 00:15:14.476 A:middle
+get 0 observations met.
+
+00:15:15.416 --> 00:15:16.596 A:middle
+On the other hand, if you feed
+
+00:15:16.596 --> 00:15:18.336 A:middle
+the image with one or more faces
+
+00:15:18.726 --> 00:15:20.896 A:middle
+in it, you'll get appropriate
+
+00:15:20.896 --> 00:15:22.606 A:middle
+number of observations met.
+
+00:15:24.036 --> 00:15:25.506 A:middle
+Another important property of
+
+00:15:25.506 --> 00:15:27.196 A:middle
+observations is that
+
+00:15:27.326 --> 00:15:28.446 A:middle
+observations are immutable.
+
+00:15:28.446 --> 00:15:30.016 A:middle
+We will look at the example
+
+00:15:30.576 --> 00:15:31.696 A:middle
+where it's used.
+
+00:15:32.196 --> 00:15:34.286 A:middle
+There are two more properties
+
+00:15:34.286 --> 00:15:34.996 A:middle
+that I want to pay your
+
+00:15:34.996 --> 00:15:36.406 A:middle
+attention to, and they are both
+
+00:15:36.406 --> 00:15:37.566 A:middle
+declared in the base [inaudible]
+
+00:15:37.566 --> 00:15:38.846 A:middle
+for all observations.
+
+00:15:39.286 --> 00:15:40.416 A:middle
+One is the unique ID.
+
+00:15:41.056 --> 00:15:42.586 A:middle
+This unique ID identifies the
+
+00:15:42.586 --> 00:15:44.326 A:middle
+processing step for this
+
+00:15:44.326 --> 00:15:45.226 A:middle
+particular-- where this
+
+00:15:45.226 --> 00:15:46.666 A:middle
+particular result was created.
+
+00:15:47.576 --> 00:15:48.836 A:middle
+Another one is the confidence
+
+00:15:48.836 --> 00:15:49.136 A:middle
+level.
+
+00:15:50.376 --> 00:15:51.756 A:middle
+Confidence level tells you how
+
+00:15:51.756 --> 00:15:53.126 A:middle
+confident the algorithm was
+
+00:15:53.376 --> 00:15:54.316 A:middle
+producing the results.
+
+00:15:55.596 --> 00:15:57.756 A:middle
+The confidence is in the range
+
+00:15:57.756 --> 00:15:58.526 A:middle
+from 0 to 1.
+
+00:15:59.176 --> 00:16:00.646 A:middle
+Again, this topic also will be
+

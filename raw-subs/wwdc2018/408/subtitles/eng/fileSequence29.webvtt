@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:59.756 --> 00:29:01.376 A:middle
+target will be recompiled.
+
+00:29:02.276 --> 00:29:03.326 A:middle
+It's in a separate target.
+
+00:29:03.326 --> 00:29:05.576 A:middle
+It has an explicit dependency.
+
+00:29:05.676 --> 00:29:07.426 A:middle
+And it doesn't have implicit
+
+00:29:07.426 --> 00:29:09.406 A:middle
+visibility between those two
+
+00:29:09.406 --> 00:29:12.456 A:middle
+sets of files.
+
+00:29:12.626 --> 00:29:15.286 A:middle
+Now, similarly, if I change
+
+00:29:15.286 --> 00:29:16.376 A:middle
+something in the framework
+
+00:29:16.376 --> 00:29:17.896 A:middle
+target, then I would need to
+
+00:29:17.896 --> 00:29:20.246 A:middle
+recompile that file and anything
+
+00:29:20.246 --> 00:29:21.416 A:middle
+else in the utilities framework
+
+00:29:21.416 --> 00:29:22.236 A:middle
+that depends on it.
+
+00:29:23.156 --> 00:29:24.696 A:middle
+However, these dependencies are
+
+00:29:24.696 --> 00:29:25.776 A:middle
+more coarse-grained.
+
+00:29:26.236 --> 00:29:28.296 A:middle
+And so Xcode will also recompile
+
+00:29:28.296 --> 00:29:29.906 A:middle
+everything that's in the Game
+
+00:29:29.906 --> 00:29:32.136 A:middle
+target as well, unless the
+
+00:29:32.136 --> 00:29:34.016 A:middle
+changes are entirely confined to
+
+00:29:34.016 --> 00:29:34.846 A:middle
+function bodies.
+
+00:29:35.436 --> 00:29:38.996 A:middle
+So to recap those rules, the
+
+00:29:38.996 --> 00:29:39.906 A:middle
+compiler needs to be
+
+00:29:39.906 --> 00:29:40.746 A:middle
+conservative.
+
+00:29:41.056 --> 00:29:42.506 A:middle
+Even if a human can tell that a
+
+00:29:42.506 --> 00:29:43.656 A:middle
+change doesn't affect other
+
+00:29:43.656 --> 00:29:45.506 A:middle
+files, that doesn't necessarily
+
+00:29:45.506 --> 00:29:46.936 A:middle
+mean that the compiler can.
+
+00:29:47.716 --> 00:29:49.486 A:middle
+However, one change that the
+
+00:29:49.486 --> 00:29:51.136 A:middle
+compiler does know how to handle
+
+00:29:51.536 --> 00:29:52.696 A:middle
+is function bodies.
+
+00:29:52.936 --> 00:29:54.196 A:middle
+It knows that this doesn't
+
+00:29:54.196 --> 00:29:55.576 A:middle
+affect the file's interface.
+
+00:29:55.896 --> 00:29:57.776 A:middle
+And therefore, will not require
+
+00:29:57.776 --> 00:29:59.406 A:middle
+other files to be recompiled.
+

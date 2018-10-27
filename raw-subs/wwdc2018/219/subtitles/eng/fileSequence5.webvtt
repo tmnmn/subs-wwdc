@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:59.936 --> 00:05:00.616 A:middle
+fixed interval.
+
+00:05:00.866 --> 00:05:03.376 A:middle
+It can happen at 60 fps.
+
+00:05:03.456 --> 00:05:05.836 A:middle
+So, every 1/60th of a second.
+
+00:05:05.836 --> 00:05:08.006 A:middle
+Or on an iPad with ProMotion
+
+00:05:08.006 --> 00:05:09.496 A:middle
+Display, it can happen as fast
+
+00:05:09.646 --> 00:05:11.936 A:middle
+as every 1/120th of a second.
+
+00:05:12.406 --> 00:05:15.156 A:middle
+And if nothing's changed in your
+
+00:05:15.156 --> 00:05:16.586 A:middle
+application, the display
+
+00:05:16.586 --> 00:05:17.976 A:middle
+hardware will get the same data
+
+00:05:17.976 --> 00:05:19.546 A:middle
+back out of the frame buffer
+
+00:05:19.786 --> 00:05:20.926 A:middle
+that it saw, previously.
+
+00:05:21.836 --> 00:05:25.326 A:middle
+But as you change the content of
+
+00:05:25.326 --> 00:05:26.456 A:middle
+the views in your application,
+
+00:05:26.456 --> 00:05:28.226 A:middle
+for example, you assign a new
+
+00:05:28.226 --> 00:05:29.906 A:middle
+UIImage to our image view, here.
+
+00:05:31.066 --> 00:05:32.826 A:middle
+UIKit will re-render your
+
+00:05:32.826 --> 00:05:34.366 A:middle
+application's window into the
+
+00:05:34.366 --> 00:05:34.986 A:middle
+frame buffer.
+
+00:05:34.986 --> 00:05:36.786 A:middle
+And the next time the display
+
+00:05:36.786 --> 00:05:37.926 A:middle
+hardware pulls from the frame
+
+00:05:37.926 --> 00:05:39.406 A:middle
+buffer it'll get your new
+
+00:05:39.406 --> 00:05:39.946 A:middle
+content.
+
+00:05:40.516 --> 00:05:43.036 A:middle
+Now, you can contrast an image
+
+00:05:43.036 --> 00:05:44.606 A:middle
+buffer to another kind of
+
+00:05:44.606 --> 00:05:46.376 A:middle
+buffer, a data buffer, which is
+
+00:05:46.376 --> 00:05:47.896 A:middle
+just a buffer that contains a
+
+00:05:47.896 --> 00:05:48.846 A:middle
+sequence of bytes.
+
+00:05:49.926 --> 00:05:51.116 A:middle
+In our case, we're concerned
+
+00:05:51.116 --> 00:05:53.026 A:middle
+about data buffers that contain
+
+00:05:53.356 --> 00:05:54.306 A:middle
+image files.
+
+00:05:54.646 --> 00:05:55.606 A:middle
+Perhaps, we've downloaded them
+
+00:05:55.606 --> 00:05:57.366 A:middle
+from the network or we've loaded
+
+00:05:57.366 --> 00:05:58.586 A:middle
+them from disk.
+
+00:05:59.356 --> 00:06:00.976 A:middle
+A data buffer that contains an
+

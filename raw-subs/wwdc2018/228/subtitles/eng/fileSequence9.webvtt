@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.186 --> 00:09:00.736 A:middle
+timer-based approach to refresh
+
+00:09:00.736 --> 00:09:01.456 A:middle
+the content feed.
+
+00:09:01.816 --> 00:09:03.436 A:middle
+This will ensure that the
+
+00:09:03.436 --> 00:09:05.136 A:middle
+content of the user is seeing is
+
+00:09:05.136 --> 00:09:06.916 A:middle
+as fresh as possible without any
+
+00:09:06.916 --> 00:09:07.796 A:middle
+sort of interaction.
+
+00:09:09.016 --> 00:09:09.936 A:middle
+This isn't a very
+
+00:09:09.936 --> 00:09:12.196 A:middle
+energy-efficient approach, and
+
+00:09:12.196 --> 00:09:13.336 A:middle
+let's sort of understand why.
+
+00:09:13.956 --> 00:09:16.496 A:middle
+If we plot the power over time
+
+00:09:16.496 --> 00:09:18.576 A:middle
+curve for a solution like that,
+
+00:09:19.116 --> 00:09:20.546 A:middle
+we see that every time our timer
+
+00:09:20.546 --> 00:09:22.576 A:middle
+fires, we have a little bit of
+
+00:09:22.576 --> 00:09:23.886 A:middle
+active energy that's consumed.
+
+00:09:25.266 --> 00:09:26.336 A:middle
+But the really important part
+
+00:09:26.336 --> 00:09:28.146 A:middle
+here is that we have a ton of
+
+00:09:28.146 --> 00:09:30.486 A:middle
+overhead, and this is because
+
+00:09:30.486 --> 00:09:32.426 A:middle
+every time we ask to display new
+
+00:09:32.426 --> 00:09:34.056 A:middle
+content, we likely have to bring
+
+00:09:34.056 --> 00:09:35.236 A:middle
+up subsystems such as
+
+00:09:35.236 --> 00:09:37.246 A:middle
+networking, graphics, and
+
+00:09:37.246 --> 00:09:38.886 A:middle
+processing to do all that work
+
+00:09:38.886 --> 00:09:40.256 A:middle
+and display that content, and
+
+00:09:40.256 --> 00:09:41.636 A:middle
+the user might not actually want
+
+00:09:41.636 --> 00:09:41.766 A:middle
+it.
+
+00:09:42.326 --> 00:09:43.446 A:middle
+So, we'll end up burning a lot
+
+00:09:43.446 --> 00:09:45.036 A:middle
+of energy consistently while
+
+00:09:45.036 --> 00:09:45.946 A:middle
+that application is running.
+
+00:09:46.456 --> 00:09:48.026 A:middle
+We can do better.
+
+00:09:48.336 --> 00:09:50.926 A:middle
+If we think about what the user
+
+00:09:50.926 --> 00:09:52.236 A:middle
+actually wants, the fresh
+
+00:09:52.236 --> 00:09:53.876 A:middle
+content, we can implement a
+
+00:09:53.876 --> 00:09:55.896 A:middle
+solution that is on demand.
+
+00:09:57.326 --> 00:09:59.146 A:middle
+Now, in this new solution, user
+
+00:09:59.146 --> 00:10:00.646 A:middle
+interaction or some kind of a
+

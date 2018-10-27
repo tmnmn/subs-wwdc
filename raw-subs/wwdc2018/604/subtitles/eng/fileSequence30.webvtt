@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.086 --> 00:30:00.976 A:middle
+StorageModeShared.
+
+00:30:02.386 --> 00:30:03.726 A:middle
+On macOS you can't use
+
+00:30:03.726 --> 00:30:05.076 A:middle
+StorageModeShared with textures,
+
+00:30:05.246 --> 00:30:07.146 A:middle
+but StorageModeManaged does make
+
+00:30:07.146 --> 00:30:08.526 A:middle
+image data access easier,
+
+00:30:08.856 --> 00:30:10.426 A:middle
+although private storage is most
+
+00:30:10.426 --> 00:30:10.846 A:middle
+optimal.
+
+00:30:16.046 --> 00:30:16.996 A:middle
+You can use StorageModeShared
+
+00:30:16.996 --> 00:30:19.216 A:middle
+with buffers on macOS, but be
+
+00:30:19.216 --> 00:30:19.906 A:middle
+careful with this.
+
+00:30:20.526 --> 00:30:22.456 A:middle
+If you mix data that both the
+
+00:30:22.576 --> 00:30:26.066 A:middle
+CPU and GPU needs access to with
+
+00:30:26.066 --> 00:30:28.336 A:middle
+data only the GPU needs access
+
+00:30:28.376 --> 00:30:29.456 A:middle
+to it can be difficult to
+
+00:30:29.456 --> 00:30:31.246 A:middle
+detangle these two types of data
+
+00:30:31.246 --> 00:30:33.046 A:middle
+later on and put them in
+
+00:30:33.046 --> 00:30:34.286 A:middle
+separate memory pools.
+
+00:30:34.906 --> 00:30:37.816 A:middle
+Now that I've described a little
+
+00:30:37.816 --> 00:30:39.166 A:middle
+bit about creating textures and
+
+00:30:39.166 --> 00:30:41.186 A:middle
+buffer objects directly I'd like
+
+00:30:41.186 --> 00:30:42.106 A:middle
+to mention the MetalKit
+
+00:30:42.156 --> 00:30:43.526 A:middle
+framework which can easily
+
+00:30:43.526 --> 00:30:44.676 A:middle
+create textures and vertex
+
+00:30:44.676 --> 00:30:46.156 A:middle
+buffers from common file
+
+00:30:46.216 --> 00:30:46.606 A:middle
+formats.
+
+00:30:47.146 --> 00:30:48.336 A:middle
+There's a texture loading class
+
+00:30:48.626 --> 00:30:50.286 A:middle
+and some functionality to create
+
+00:30:50.286 --> 00:30:52.216 A:middle
+Metal buffer backed meshes
+
+00:30:52.376 --> 00:30:53.936 A:middle
+loaded by Model I/O.
+
+00:30:58.046 --> 00:30:59.106 A:middle
+Let's talk about shaders and the
+
+00:30:59.106 --> 00:31:00.506 A:middle
+render pipeline objects that
+

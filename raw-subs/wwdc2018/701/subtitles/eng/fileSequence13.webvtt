@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:00.556 --> 00:13:02.306 A:middle
+So what this lets you do is
+
+00:13:02.716 --> 00:13:04.156 A:middle
+declare vector and matrix
+
+00:13:04.156 --> 00:13:06.256 A:middle
+objects, and you get to perform
+
+00:13:06.256 --> 00:13:08.046 A:middle
+operations on these objects, and
+
+00:13:08.046 --> 00:13:09.256 A:middle
+this will map directly to the
+
+00:13:09.256 --> 00:13:10.056 A:middle
+vector hardware of the
+
+00:13:10.056 --> 00:13:10.506 A:middle
+processor.
+
+00:13:11.626 --> 00:13:12.866 A:middle
+So let me show you a coding
+
+00:13:12.866 --> 00:13:13.296 A:middle
+example.
+
+00:13:13.296 --> 00:13:16.866 A:middle
+So what we're going to do here
+
+00:13:16.866 --> 00:13:17.886 A:middle
+is we're going to take two
+
+00:13:17.886 --> 00:13:18.716 A:middle
+arrays, and we're going to
+
+00:13:18.716 --> 00:13:19.896 A:middle
+average the components.
+
+00:13:19.896 --> 00:13:21.916 A:middle
+So we're going to iteratively go
+
+00:13:21.916 --> 00:13:23.146 A:middle
+through each of the scaler
+
+00:13:23.146 --> 00:13:24.526 A:middle
+components, add them together,
+
+00:13:24.526 --> 00:13:25.186 A:middle
+and divide by 2.
+
+00:13:25.366 --> 00:13:28.636 A:middle
+This is going to be really slow.
+
+00:13:30.816 --> 00:13:32.486 A:middle
+Instead, you can declare these
+
+00:13:32.486 --> 00:13:34.366 A:middle
+arrays as simd float4 vector
+
+00:13:34.366 --> 00:13:34.796 A:middle
+types.
+
+00:13:36.116 --> 00:13:38.606 A:middle
+So then we can perform basic
+
+00:13:38.606 --> 00:13:40.906 A:middle
+arithmetic operations on these
+
+00:13:40.906 --> 00:13:41.436 A:middle
+objects.
+
+00:13:42.086 --> 00:13:44.516 A:middle
+So not only can you express the
+
+00:13:44.516 --> 00:13:45.996 A:middle
+computation more naturally, but
+
+00:13:45.996 --> 00:13:47.916 A:middle
+this will also run about as fast
+
+00:13:47.916 --> 00:13:48.356 A:middle
+as it can.
+
+00:13:49.036 --> 00:13:51.056 A:middle
+And this will work across all of
+
+00:13:51.056 --> 00:13:51.826 A:middle
+Apple's platforms.
+
+00:13:56.066 --> 00:13:57.276 A:middle
+Simd has a tremendous amount of
+
+00:13:57.276 --> 00:13:57.846 A:middle
+functionality.
+
+00:13:58.906 --> 00:14:00.686 A:middle
+In addition to vector and matrix
+

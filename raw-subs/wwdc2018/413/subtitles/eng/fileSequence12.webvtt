@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.086 --> 00:12:00.396 A:middle
+So where we can see what the
+
+00:12:00.396 --> 00:12:02.366 A:middle
+live view will look like in a
+
+00:12:02.366 --> 00:12:03.866 A:middle
+side-by-side mode similarly to
+
+00:12:03.866 --> 00:12:05.076 A:middle
+how it would be shown next to
+
+00:12:05.076 --> 00:12:06.476 A:middle
+the Source Code Editor in Swift
+
+00:12:06.476 --> 00:12:06.986 A:middle
+Playgrounds.
+
+00:12:07.306 --> 00:12:08.776 A:middle
+And to simulate sending filters
+
+00:12:08.776 --> 00:12:10.276 A:middle
+over to the live view, I've
+
+00:12:10.276 --> 00:12:11.906 A:middle
+added a couple of buttons, which
+
+00:12:11.906 --> 00:12:13.096 A:middle
+you see here on the left.
+
+00:12:13.416 --> 00:12:14.736 A:middle
+And these are implemented in my
+
+00:12:14.736 --> 00:12:15.626 A:middle
+test app code.
+
+00:12:15.816 --> 00:12:17.466 A:middle
+So now if Grace taps on one of
+
+00:12:17.466 --> 00:12:19.566 A:middle
+the filters, we should see that
+
+00:12:19.566 --> 00:12:20.716 A:middle
+filter applied to the live
+
+00:12:20.756 --> 00:12:21.446 A:middle
+camera output.
+
+00:12:22.076 --> 00:12:23.216 A:middle
+So this looks great.
+
+00:12:23.576 --> 00:12:24.826 A:middle
+I want to try out some of the
+
+00:12:24.826 --> 00:12:26.966 A:middle
+other filters, so Grace I really
+
+00:12:26.966 --> 00:12:28.926 A:middle
+like the CIPointillize filter.
+
+00:12:28.926 --> 00:12:32.576 A:middle
+So if she taps on that this
+
+00:12:32.576 --> 00:12:34.866 A:middle
+looks pretty close but if you
+
+00:12:34.866 --> 00:12:37.836 A:middle
+can -- if you notice the pink
+
+00:12:37.836 --> 00:12:39.536 A:middle
+filter from before is still
+
+00:12:39.536 --> 00:12:41.946 A:middle
+around some of the edges and the
+
+00:12:41.946 --> 00:12:43.116 A:middle
+pointillize filter is a little
+
+00:12:43.116 --> 00:12:44.146 A:middle
+smaller than we want.
+
+00:12:44.446 --> 00:12:45.536 A:middle
+So I'm going to head back over
+
+00:12:45.536 --> 00:12:47.256 A:middle
+to Xcode because I think we have
+
+00:12:47.256 --> 00:12:49.236 A:middle
+a bug in my filter renderer that
+
+00:12:49.236 --> 00:12:51.286 A:middle
+I wrote in a function called
+
+00:12:51.286 --> 00:12:51.716 A:middle
+Render.
+
+00:12:52.026 --> 00:12:53.136 A:middle
+So I'm going to navigate to that
+
+00:12:53.136 --> 00:12:54.646 A:middle
+function using Open Quickly with
+
+00:12:54.676 --> 00:12:55.616 A:middle
+Command Shift O.
+
+00:12:56.766 --> 00:12:58.356 A:middle
+And I'm going to set a
+
+00:12:58.356 --> 00:13:00.256 A:middle
+breakpoint right before this
+

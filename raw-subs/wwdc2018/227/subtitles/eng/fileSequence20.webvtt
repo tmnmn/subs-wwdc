@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.276 --> 00:20:01.496 A:middle
+with different characteristics
+
+00:20:01.706 --> 00:20:03.006 A:middle
+and something needs to make sure
+
+00:20:03.006 --> 00:20:04.146 A:middle
+that the actual colors in your
+
+00:20:04.146 --> 00:20:05.556 A:middle
+assets match appropriately and
+
+00:20:05.556 --> 00:20:06.406 A:middle
+look appropriate and get
+
+00:20:06.406 --> 00:20:08.086 A:middle
+reproduced appropriately on all
+
+00:20:08.086 --> 00:20:09.186 A:middle
+those different displays, that's
+
+00:20:09.186 --> 00:20:11.146 A:middle
+the job of color management.
+
+00:20:11.776 --> 00:20:13.586 A:middle
+This is a computational process,
+
+00:20:14.236 --> 00:20:15.946 A:middle
+it can be done either on a CPU
+
+00:20:15.946 --> 00:20:18.226 A:middle
+or at times on a GPU, but it is
+
+00:20:18.226 --> 00:20:18.786 A:middle
+some work.
+
+00:20:20.146 --> 00:20:22.406 A:middle
+Now Asset Catalogs come into
+
+00:20:22.406 --> 00:20:24.006 A:middle
+play here because what they will
+
+00:20:24.006 --> 00:20:25.536 A:middle
+do is at build time in the
+
+00:20:25.536 --> 00:20:27.416 A:middle
+compilation process they will
+
+00:20:27.416 --> 00:20:29.116 A:middle
+perform this color matching for
+
+00:20:29.116 --> 00:20:29.236 A:middle
+you.
+
+00:20:29.906 --> 00:20:31.116 A:middle
+And this is really great because
+
+00:20:31.116 --> 00:20:32.916 A:middle
+it means that computation is not
+
+00:20:32.916 --> 00:20:34.056 A:middle
+happening on device when it
+
+00:20:34.056 --> 00:20:34.986 A:middle
+really doesn't have to.
+
+00:20:35.856 --> 00:20:37.746 A:middle
+And your assets are ready to go
+
+00:20:37.746 --> 00:20:39.076 A:middle
+on device and ready to be loaded
+
+00:20:39.076 --> 00:20:39.986 A:middle
+and ready to be displayed
+
+00:20:39.986 --> 00:20:41.236 A:middle
+without any further ado.
+
+00:20:42.176 --> 00:20:43.566 A:middle
+And as a bonus this extra
+
+00:20:43.566 --> 00:20:44.806 A:middle
+processing we do to do this
+
+00:20:44.806 --> 00:20:46.066 A:middle
+color management at build time
+
+00:20:46.426 --> 00:20:48.276 A:middle
+eliminates the profile payload
+
+00:20:48.276 --> 00:20:49.246 A:middle
+that you might've intended to
+
+00:20:49.246 --> 00:20:51.086 A:middle
+strip earlier and replaces it
+
+00:20:51.086 --> 00:20:52.516 A:middle
+with an ultra-efficient way of
+
+00:20:52.516 --> 00:20:54.846 A:middle
+annotating exactly what color
+
+00:20:54.846 --> 00:20:56.316 A:middle
+space we now have and the pixels
+
+00:20:56.316 --> 00:20:59.416 A:middle
+on disk, so that's color
+
+00:20:59.416 --> 00:20:59.896 A:middle
+management.
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.596 --> 00:14:00.966 A:middle
+Does it make sense for it to be
+
+00:14:01.356 --> 00:14:02.406 A:middle
+any arbitrary string?
+
+00:14:02.896 --> 00:14:04.916 A:middle
+No, and in my case, I want to
+
+00:14:04.916 --> 00:14:05.876 A:middle
+make sure that it actually
+
+00:14:05.876 --> 00:14:06.706 A:middle
+represents a URL.
+
+00:14:07.646 --> 00:14:09.366 A:middle
+But more importantly, just
+
+00:14:09.366 --> 00:14:10.646 A:middle
+because it looks like a URL,
+
+00:14:10.646 --> 00:14:11.956 A:middle
+doesn't mean it will point to my
+
+00:14:11.956 --> 00:14:12.426 A:middle
+domain.
+
+00:14:12.916 --> 00:14:13.916 A:middle
+And this is something I care
+
+00:14:13.916 --> 00:14:14.866 A:middle
+very deeply about.
+
+00:14:14.866 --> 00:14:16.976 A:middle
+I really, really want to keep my
+
+00:14:16.976 --> 00:14:17.736 A:middle
+customers safe.
+
+00:14:17.736 --> 00:14:19.466 A:middle
+I don't want to possibly send
+
+00:14:19.466 --> 00:14:21.266 A:middle
+them to a phishing domain, which
+
+00:14:21.266 --> 00:14:23.056 A:middle
+could look like mine, but not
+
+00:14:23.056 --> 00:14:23.936 A:middle
+really be my site.
+
+00:14:25.426 --> 00:14:26.476 A:middle
+So, this is something that I
+
+00:14:26.476 --> 00:14:29.046 A:middle
+care about watching out for.
+
+00:14:29.546 --> 00:14:30.986 A:middle
+Now, lastly, even if each of
+
+00:14:30.986 --> 00:14:32.656 A:middle
+these fields is valid on its
+
+00:14:32.656 --> 00:14:34.126 A:middle
+own, sometimes the relationships
+
+00:14:34.126 --> 00:14:35.376 A:middle
+between fields that matters.
+
+00:14:36.956 --> 00:14:38.026 A:middle
+For instance, each product
+
+00:14:38.026 --> 00:14:39.186 A:middle
+listing has a date when it was
+
+00:14:39.186 --> 00:14:40.446 A:middle
+created, and a date when it was
+
+00:14:40.446 --> 00:14:41.126 A:middle
+last updated.
+
+00:14:42.226 --> 00:14:43.276 A:middle
+Each of these can be valid on
+
+00:14:43.276 --> 00:14:44.486 A:middle
+their own, but does it make
+
+00:14:44.486 --> 00:14:45.566 A:middle
+sense for the date that it was
+
+00:14:45.566 --> 00:14:47.256 A:middle
+last updated to come before when
+
+00:14:47.256 --> 00:14:47.936 A:middle
+it was created?
+
+00:14:49.106 --> 00:14:50.716 A:middle
+No. And in my case, this might
+
+00:14:50.716 --> 00:14:51.636 A:middle
+not open a security
+
+00:14:51.636 --> 00:14:52.406 A:middle
+vulnerability in my app.
+
+00:14:52.406 --> 00:14:54.436 A:middle
+But this is something that maybe
+
+00:14:54.436 --> 00:14:55.536 A:middle
+you watch out for because it's a
+
+00:14:55.536 --> 00:14:56.946 A:middle
+good indicator that something's
+
+00:14:56.946 --> 00:14:57.946 A:middle
+gone wrong, and maybe I
+
+00:14:57.946 --> 00:14:58.966 A:middle
+shouldn't trust this data.
+
+00:14:58.966 --> 00:15:01.736 A:middle
+So, let's take a look at how we
+

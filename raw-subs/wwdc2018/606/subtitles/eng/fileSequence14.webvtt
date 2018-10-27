@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.046 --> 00:14:00.276 A:middle
+buffer, which contains the
+
+00:14:00.276 --> 00:14:03.596 A:middle
+primary rays we just created, as
+
+00:14:03.596 --> 00:14:04.806 A:middle
+well as an intersection buffer,
+
+00:14:04.806 --> 00:14:05.486 A:middle
+which will contain the
+
+00:14:05.486 --> 00:14:06.496 A:middle
+intersection results.
+
+00:14:07.866 --> 00:14:08.816 A:middle
+We, also, need to provide the
+
+00:14:08.816 --> 00:14:10.616 A:middle
+rayCount, which in this case, is
+
+00:14:10.616 --> 00:14:11.896 A:middle
+just the image width times the
+
+00:14:11.896 --> 00:14:12.456 A:middle
+image height.
+
+00:14:12.456 --> 00:14:15.096 A:middle
+And finally, we'll provide our
+
+00:14:15.096 --> 00:14:16.106 A:middle
+accelerationStructure.
+
+00:14:17.756 --> 00:14:18.986 A:middle
+MPS will find the closest
+
+00:14:18.986 --> 00:14:20.716 A:middle
+intersection along each ray and
+
+00:14:20.716 --> 00:14:21.766 A:middle
+return the results in the
+
+00:14:21.766 --> 00:14:22.666 A:middle
+intersection buffer.
+
+00:14:23.316 --> 00:14:24.706 A:middle
+So, all that's left is to use
+
+00:14:24.706 --> 00:14:26.106 A:middle
+the intersection data to compute
+
+00:14:26.106 --> 00:14:26.546 A:middle
+shading.
+
+00:14:27.166 --> 00:14:29.956 A:middle
+To do this, we'll launch another
+
+00:14:29.956 --> 00:14:30.686 A:middle
+compute kernel.
+
+00:14:31.266 --> 00:14:32.816 A:middle
+We can apply lighting and
+
+00:14:32.816 --> 00:14:34.426 A:middle
+textures similar to the way that
+
+00:14:34.426 --> 00:14:35.616 A:middle
+we would in a fragment shader.
+
+00:14:36.066 --> 00:14:37.626 A:middle
+Most of the standard texture and
+
+00:14:37.626 --> 00:14:38.846 A:middle
+math functions that are
+
+00:14:38.846 --> 00:14:40.356 A:middle
+available in a fragment shader
+
+00:14:40.756 --> 00:14:41.656 A:middle
+are, also, available in a
+
+00:14:41.656 --> 00:14:42.336 A:middle
+compute kernel.
+
+00:14:43.246 --> 00:14:45.126 A:middle
+But shading, typically, depends
+
+00:14:45.126 --> 00:14:46.586 A:middle
+on both the intersection point
+
+00:14:46.856 --> 00:14:48.226 A:middle
+and vertex attributes, such as
+
+00:14:48.266 --> 00:14:49.356 A:middle
+colors and normals.
+
+00:14:50.076 --> 00:14:52.076 A:middle
+In a fragment shader the GPU
+
+00:14:52.076 --> 00:14:53.426 A:middle
+would interpolate these for us.
+
+00:14:53.566 --> 00:14:54.966 A:middle
+But we'll need to interpolate
+
+00:14:54.966 --> 00:14:56.256 A:middle
+them ourselves based on the
+
+00:14:56.256 --> 00:14:57.086 A:middle
+intersection data.
+
+00:14:58.036 --> 00:14:59.946 A:middle
+So, let's first look at how we
+
+00:14:59.946 --> 00:15:01.016 A:middle
+can compute the intersection
+

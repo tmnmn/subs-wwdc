@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:55.549 --> 00:22:01.788 align:start position:20% line:-2
+全メンバーが“Codable”なら
+構造体をCodableでマークし
+
+00:22:01.889 --> 00:22:06.960 align:start position:30% line:-2
+Swiftコンパイラに
+後の対応を任せます
+
+00:22:07.995 --> 00:22:12.332 align:start position:34% line:-2
+列挙型は自分たちで
+対応しました
+
+00:22:12.432 --> 00:22:19.072 align:start position:25% line:-2
+initを実装し メソッドを
+コーディングして動かします
+
+00:22:20.841 --> 00:22:22.609 align:start position:32% line:-1
+シリアライズは簡単で
+
+00:22:22.709 --> 00:22:26.547 align:start position:11% line:-2
+“PropertyListEncoder”で
+オブジェクトをエンコード
+
+00:22:27.247 --> 00:22:31.218 align:start position:30% line:-2
+これでデータパケットを
+送れます
+
+00:22:32.419 --> 00:22:37.491 align:start position:29% line:-2
+サイズとパフォーマンスは
+どうでしょうか？
+
+00:22:38.525 --> 00:22:42.930 align:start position:29% line:-2
+プロパティリストは小さく
+エンコーダは速い
+
+00:22:43.630 --> 00:22:49.169 align:start position:27% line:-2
+しかしこうしたソフト実装は
+最適化されていて
+
+00:22:49.269 --> 00:22:52.172 align:start position:32% line:-1
+開発の時間は貴重です
+
+00:22:54.007 --> 00:22:59.546 align:start position:30% line:-2
+次の新機能はこうした
+制限にも関連しています
+

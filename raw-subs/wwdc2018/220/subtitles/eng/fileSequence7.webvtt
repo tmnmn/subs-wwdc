@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.366 --> 00:07:00.616 A:middle
+This runs the opposite direction
+
+00:07:00.616 --> 00:07:01.686 A:middle
+starting from the window going
+
+00:07:01.686 --> 00:07:02.516 A:middle
+down towards the leaves.
+
+00:07:03.176 --> 00:07:05.886 A:middle
+Last, every view gets draw if it
+
+00:07:05.886 --> 00:07:07.856 A:middle
+needs it, that kind of thing.
+
+00:07:08.636 --> 00:07:11.166 A:middle
+OK, what are these for?
+
+00:07:11.166 --> 00:07:12.156 A:middle
+Why do they exist?
+
+00:07:13.306 --> 00:07:14.736 A:middle
+Well, they all have the exact
+
+00:07:14.736 --> 00:07:17.016 A:middle
+same purpose and they have exact
+
+00:07:17.056 --> 00:07:18.226 A:middle
+parallel sets of methods.
+
+00:07:18.646 --> 00:07:20.586 A:middle
+And that purpose is to avoid
+
+00:07:20.846 --> 00:07:23.416 A:middle
+wasted work, which I can explain
+
+00:07:23.416 --> 00:07:23.966 A:middle
+by example.
+
+00:07:24.856 --> 00:07:28.516 A:middle
+So a label, a UI label needs to
+
+00:07:28.516 --> 00:07:30.346 A:middle
+have constraints that describe
+
+00:07:30.576 --> 00:07:33.466 A:middle
+the size of its text, OK?
+
+00:07:34.056 --> 00:07:34.986 A:middle
+But there are many properties
+
+00:07:34.986 --> 00:07:36.126 A:middle
+that contribute to that size.
+
+00:07:36.406 --> 00:07:37.426 A:middle
+There's the text property
+
+00:07:37.426 --> 00:07:39.936 A:middle
+itself, there's the font, and
+
+00:07:39.936 --> 00:07:41.356 A:middle
+the text size, etcetera.
+
+00:07:41.936 --> 00:07:44.196 A:middle
+One way to do this would be that
+
+00:07:44.196 --> 00:07:44.946 A:middle
+every time one of those
+
+00:07:44.946 --> 00:07:47.076 A:middle
+properties changes go re-measure
+
+00:07:47.076 --> 00:07:47.576 A:middle
+your text.
+
+00:07:48.556 --> 00:07:51.006 A:middle
+However, that would often be
+
+00:07:51.006 --> 00:07:52.096 A:middle
+pretty inefficient because you
+
+00:07:52.096 --> 00:07:53.206 A:middle
+usually change a bunch of these
+
+00:07:53.206 --> 00:07:53.766 A:middle
+right in a row.
+
+00:07:54.206 --> 00:07:55.076 A:middle
+When you're first setting up a
+
+00:07:55.076 --> 00:07:56.176 A:middle
+label, you're probably going to
+
+00:07:56.176 --> 00:07:57.306 A:middle
+call a bunch of these property
+
+00:07:57.306 --> 00:07:58.506 A:middle
+setters and if you're
+
+00:07:58.506 --> 00:07:59.976 A:middle
+re-measuring text on each one,
+

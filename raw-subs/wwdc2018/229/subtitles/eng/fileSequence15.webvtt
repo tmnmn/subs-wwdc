@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.046 --> 00:15:02.716 A:middle
+So in this matter, slices sort
+
+00:15:02.716 --> 00:15:03.876 A:middle
+of work like lazy copies.
+
+00:15:04.256 --> 00:15:05.966 A:middle
+You get to choose when you make
+
+00:15:05.966 --> 00:15:07.416 A:middle
+a copy of the elements yourself,
+
+00:15:08.246 --> 00:15:09.016 A:middle
+and it turns out that this
+
+00:15:09.016 --> 00:15:10.646 A:middle
+concept of being lazy and doing
+
+00:15:10.646 --> 00:15:12.946 A:middle
+something later is really useful
+
+00:15:12.946 --> 00:15:14.156 A:middle
+in other contexts too.
+
+00:15:15.566 --> 00:15:17.386 A:middle
+One such context is function
+
+00:15:17.386 --> 00:15:17.746 A:middle
+calls.
+
+00:15:18.816 --> 00:15:20.316 A:middle
+Now function calls in Swift are
+
+00:15:20.316 --> 00:15:21.216 A:middle
+eager by default.
+
+00:15:22.056 --> 00:15:23.326 A:middle
+That is, they consume their
+
+00:15:23.326 --> 00:15:25.626 A:middle
+input and return their output as
+
+00:15:25.696 --> 00:15:26.156 A:middle
+demanded.
+
+00:15:27.056 --> 00:15:28.236 A:middle
+Consider this example.
+
+00:15:28.596 --> 00:15:29.776 A:middle
+We start with a range from one
+
+00:15:29.776 --> 00:15:31.506 A:middle
+to 4000, and ranges are a really
+
+00:15:31.556 --> 00:15:32.836 A:middle
+succinct way of representing a
+
+00:15:32.836 --> 00:15:33.516 A:middle
+lot of numbers.
+
+00:15:33.906 --> 00:15:35.266 A:middle
+It's just a start and an end,
+
+00:15:35.266 --> 00:15:36.586 A:middle
+and it knows how to produce
+
+00:15:36.846 --> 00:15:36.936 A:middle
+them.
+
+00:15:37.336 --> 00:15:38.516 A:middle
+We then map this though
+
+00:15:38.516 --> 00:15:39.836 A:middle
+multiplying each value by two,
+
+00:15:39.836 --> 00:15:40.916 A:middle
+and so we've now actually
+
+00:15:40.916 --> 00:15:42.026 A:middle
+allocated an array of 4000
+
+00:15:42.026 --> 00:15:43.536 A:middle
+elements and performed our
+
+00:15:43.536 --> 00:15:45.456 A:middle
+mapping function on each of
+
+00:15:45.456 --> 00:15:45.626 A:middle
+them.
+
+00:15:46.396 --> 00:15:47.676 A:middle
+We then filter that down to four
+
+00:15:47.676 --> 00:15:48.126 A:middle
+elements.
+
+00:15:48.746 --> 00:15:49.586 A:middle
+And so at this point, we've
+
+00:15:49.586 --> 00:15:50.476 A:middle
+actually gone ahead and
+
+00:15:50.476 --> 00:15:53.746 A:middle
+allocated 4004, you know, space
+
+00:15:53.746 --> 00:15:56.636 A:middle
+for 4004 elements, but we only
+
+00:15:56.636 --> 00:15:57.696 A:middle
+really needed the final four.
+
+00:15:58.216 --> 00:16:01.256 A:middle
+And that's an awful lot of
+

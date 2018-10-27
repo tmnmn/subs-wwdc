@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.886 --> 00:17:01.216 A:middle
+And the reason this is going to
+
+00:17:01.216 --> 00:17:02.556 A:middle
+take a minute is it actually
+
+00:17:02.556 --> 00:17:03.856 A:middle
+goes through and resizes all of
+
+00:17:03.856 --> 00:17:05.445 A:middle
+those images in order to get
+
+00:17:05.445 --> 00:17:06.856 A:middle
+them ready to run through the
+
+00:17:06.856 --> 00:17:07.435 A:middle
+neural network.
+
+00:17:07.435 --> 00:17:08.836 A:middle
+That is under the hood of this
+
+00:17:08.836 --> 00:17:09.665 A:middle
+object detector.
+
+00:17:10.465 --> 00:17:12.036 A:middle
+And then it will perform just
+
+00:17:12.036 --> 00:17:14.856 A:middle
+one iteration on this Mac GPO.
+
+00:17:16.116 --> 00:17:17.965 A:middle
+But this is probably not the
+
+00:17:17.965 --> 00:17:19.435 A:middle
+best model we could get because
+
+00:17:19.435 --> 00:17:20.496 A:middle
+I just wanted to train it in a
+
+00:17:20.496 --> 00:17:21.306 A:middle
+couple of seconds.
+
+00:17:21.656 --> 00:17:22.906 A:middle
+So I'm going to go ahead and
+
+00:17:22.906 --> 00:17:24.685 A:middle
+switch over to like cooking show
+
+00:17:24.685 --> 00:17:25.016 A:middle
+mode.
+
+00:17:25.056 --> 00:17:26.406 A:middle
+And I'm going to take one out of
+
+00:17:26.406 --> 00:17:27.445 A:middle
+the oven that we've had in there
+
+00:17:27.445 --> 00:17:28.036 A:middle
+for an hour [laughter].
+
+00:17:28.726 --> 00:17:30.826 A:middle
+[Applause] So I'm going to say
+
+00:17:30.826 --> 00:17:34.676 A:middle
+TC.loadmodel and it's called
+
+00:17:34.796 --> 00:17:36.696 A:middle
+breakfastmodel.model.
+
+00:17:36.696 --> 00:17:39.546 A:middle
+And this is one that I've had an
+
+00:17:39.546 --> 00:17:40.896 A:middle
+opportunity to train for a bit
+
+00:17:40.896 --> 00:17:41.316 A:middle
+longer.
+
+00:17:41.806 --> 00:17:43.466 A:middle
+So let's inspect that right here
+
+00:17:43.466 --> 00:17:44.026 A:middle
+in the notebook.
+
+00:17:44.266 --> 00:17:45.396 A:middle
+And we can see that it's an
+
+00:17:45.396 --> 00:17:46.576 A:middle
+object detector model.
+
+00:17:47.226 --> 00:17:48.356 A:middle
+It's been trained on six
+
+00:17:48.386 --> 00:17:50.336 A:middle
+classes, and we trained it for
+
+00:17:50.336 --> 00:17:51.486 A:middle
+55 minutes.
+
+00:17:52.026 --> 00:17:53.006 A:middle
+This is means, this means you
+
+00:17:53.006 --> 00:17:54.296 A:middle
+can train a useful
+
+00:17:54.296 --> 00:17:55.966 A:middle
+object-detector model in under
+
+00:17:55.966 --> 00:17:58.000 A:middle
+an hour on your Mac.
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.166 --> 00:11:00.786 A:middle
+We have the new method on the
+
+00:11:00.786 --> 00:11:02.456 A:middle
+projectExtensionsController
+
+00:11:02.456 --> 00:11:05.646 A:middle
+protocol, and we ask for a data
+
+00:11:05.646 --> 00:11:06.726 A:middle
+source, instead of a list of
+
+00:11:06.726 --> 00:11:07.676 A:middle
+product type descriptions.
+
+00:11:08.006 --> 00:11:10.266 A:middle
+And, pass in the category from
+
+00:11:10.266 --> 00:11:11.246 A:middle
+the menu in which the
+
+00:11:11.246 --> 00:11:12.816 A:middle
+selection-- the extension was
+
+00:11:12.816 --> 00:11:13.216 A:middle
+selected.
+
+00:11:13.476 --> 00:11:14.936 A:middle
+And also, an invalidator object.
+
+00:11:15.816 --> 00:11:17.416 A:middle
+Once you return the data source,
+
+00:11:17.986 --> 00:11:19.776 A:middle
+we ask the data source for the
+
+00:11:19.776 --> 00:11:21.366 A:middle
+project type descriptions, and
+
+00:11:21.366 --> 00:11:22.586 A:middle
+for the optional footer text.
+
+00:11:23.386 --> 00:11:24.726 A:middle
+Whenever your extension has the
+
+00:11:24.726 --> 00:11:26.236 A:middle
+need to invalidate the
+
+00:11:26.236 --> 00:11:27.946 A:middle
+information returned, you can
+
+00:11:27.946 --> 00:11:29.506 A:middle
+use invalidator to invalidate
+
+00:11:29.506 --> 00:11:30.566 A:middle
+the project type descriptions,
+
+00:11:30.786 --> 00:11:32.586 A:middle
+or the footer text, and when
+
+00:11:32.586 --> 00:11:34.536 A:middle
+necessary, photos will refetch
+
+00:11:34.786 --> 00:11:36.036 A:middle
+the data from the data source,
+
+00:11:36.306 --> 00:11:37.706 A:middle
+and display the up-to-date data
+
+00:11:37.706 --> 00:11:37.976 A:middle
+in the UI.
+
+00:11:42.326 --> 00:11:43.616 A:middle
+The next topic is the
+
+00:11:43.616 --> 00:11:44.376 A:middle
+projectInfo.
+
+00:11:45.246 --> 00:11:47.516 A:middle
+The projectInfo is structured,
+
+00:11:47.516 --> 00:11:48.906 A:middle
+additional information about the
+
+00:11:48.906 --> 00:11:50.146 A:middle
+contents of the project.
+
+00:11:50.796 --> 00:11:52.546 A:middle
+And, it's structured into
+
+00:11:52.546 --> 00:11:54.646 A:middle
+sections, and sectionContents
+
+00:11:54.646 --> 00:11:56.646 A:middle
+which reflect creation level.
+
+00:11:57.676 --> 00:11:59.686 A:middle
+And, the elements have basic
+
+00:11:59.836 --> 00:12:03.416 A:middle
+layout hints, and also weights
+

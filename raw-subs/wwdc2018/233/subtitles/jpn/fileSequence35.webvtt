@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.133 --> 00:35:01.769 align:start position:27% line:-2
+近くの全デバイスに
+Handoff可能の表示が
+
+00:35:02.502 --> 00:35:04.972 align:start position:32% line:-2
+MacではDockに
+アイコンがあります
+
+00:35:06.607 --> 00:35:09.309 align:start position:32% line:-2
+“メール”アイコンを
+クリックすると―
+
+00:35:09.443 --> 00:35:12.212 align:start position:36% line:-2
+アクティビティが
+Macへ移動し
+
+00:35:13.146 --> 00:35:16.517 align:start position:23% line:-2
+メールが起動
+中断したところから続けられます
+
+00:35:18.619 --> 00:35:21.521 align:start position:32% line:-2
+設定に必要なコードを
+見てみましょう
+
+00:35:24.558 --> 00:35:29.730 align:start position:20% line:-2
+元のデバイスでは任意のタイプの
+NSUserActivityを生成
+
+00:35:30.430 --> 00:35:34.568 align:start position:23% line:-2
+このタイプはユーザの
+現在のアクティビティを示します
+
+00:35:36.036 --> 00:35:39.873 align:start position:0% line:-2
+次にタイトルを設定し
+isEligibleForHandoffをtrueに設定
+
+00:35:40.841 --> 00:35:43.911 align:start position:27% line:-2
+次にuserInfo辞書に
+値を設定します
+
+00:35:44.478 --> 00:35:49.917 align:start position:25% line:-2
+アクティビティの継続に必要な
+すべての情報を入れます
+
+00:35:50.617 --> 00:35:56.256 align:start position:21% line:-2
+ここではビデオの例なので
+ビデオのIDと現在の再生時間です
+
+00:35:58.125 --> 00:36:03.130 align:start position:14% line:-2
+最後に View Controllerの
+userActivityプロパティに設定
+

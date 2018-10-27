@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:01.866 --> 00:17:04.006 A:middle
+Now we've seen how it works.
+
+00:17:04.006 --> 00:17:05.136 A:middle
+There's a few things I want to
+
+00:17:05.136 --> 00:17:06.326 A:middle
+highlight actually when we
+
+00:17:06.326 --> 00:17:08.786 A:middle
+actually go through the code.
+
+00:17:09.016 --> 00:17:09.796 A:middle
+So, I promise, we're going to
+
+00:17:09.796 --> 00:17:11.465 A:middle
+live code here a little bit.
+
+00:17:12.006 --> 00:17:15.165 A:middle
+Okay, let me take everything
+
+00:17:15.165 --> 00:17:16.146 A:middle
+away that we don't need to look
+
+00:17:16.146 --> 00:17:16.606 A:middle
+at right now.
+
+00:17:16.606 --> 00:17:21.496 A:middle
+And make this a bit bigger.
+
+00:17:22.185 --> 00:17:24.685 A:middle
+Okay, so, how did I solve all
+
+00:17:24.685 --> 00:17:24.915 A:middle
+this?
+
+00:17:25.445 --> 00:17:26.906 A:middle
+So, we started, we actually
+
+00:17:27.226 --> 00:17:28.666 A:middle
+created a Sequence Request
+
+00:17:28.666 --> 00:17:28.906 A:middle
+Handler.
+
+00:17:29.076 --> 00:17:30.106 A:middle
+This is the one that I'm going
+
+00:17:30.106 --> 00:17:31.816 A:middle
+to use for my registration work,
+
+00:17:32.126 --> 00:17:33.696 A:middle
+just as Sergei already explained
+
+00:17:33.696 --> 00:17:35.446 A:middle
+in the earlier session, this is
+
+00:17:35.446 --> 00:17:36.646 A:middle
+good for tracking objects.
+
+00:17:38.016 --> 00:17:39.956 A:middle
+I will create my request, put
+
+00:17:39.956 --> 00:17:41.676 A:middle
+them into one array, and now
+
+00:17:41.676 --> 00:17:42.686 A:middle
+what do you see here for the
+
+00:17:42.686 --> 00:17:43.336 A:middle
+registration?
+
+00:17:43.336 --> 00:17:45.146 A:middle
+Just keeping like the last 15
+
+00:17:45.146 --> 00:17:47.106 A:middle
+registration results, and then
+
+00:17:47.106 --> 00:17:48.466 A:middle
+I'm going to do some analysis on
+
+00:17:48.466 --> 00:17:49.496 A:middle
+that and see if actually I'm
+
+00:17:49.496 --> 00:17:50.076 A:middle
+holding still.
+
+00:17:51.316 --> 00:17:52.616 A:middle
+I'm going to keep one buffer
+
+00:17:52.616 --> 00:17:54.456 A:middle
+that I'm holding onto while I'm
+
+00:17:54.456 --> 00:17:55.346 A:middle
+analyzing this.
+
+00:17:55.346 --> 00:17:56.316 A:middle
+This is actually when I run my
+
+00:17:56.316 --> 00:17:57.326 A:middle
+classification.
+
+00:17:58.746 --> 00:18:00.406 A:middle
+And since this can be a longer
+

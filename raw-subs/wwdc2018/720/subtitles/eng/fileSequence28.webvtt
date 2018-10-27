@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.986 --> 00:28:00.296 A:middle
+pass to Wallet.
+
+00:28:03.166 --> 00:28:04.526 A:middle
+You can see, we're presented
+
+00:28:04.526 --> 00:28:07.166 A:middle
+with the pass for the user to
+
+00:28:07.166 --> 00:28:07.596 A:middle
+review.
+
+00:28:07.596 --> 00:28:09.536 A:middle
+It has information about the
+
+00:28:09.896 --> 00:28:10.816 A:middle
+event, and a QR code.
+
+00:28:11.916 --> 00:28:12.576 A:middle
+So, let's add it.
+
+00:28:15.596 --> 00:28:17.486 A:middle
+Now, let's go over to the JSON,
+
+00:28:17.666 --> 00:28:19.436 A:middle
+and-- for this pass, and see
+
+00:28:19.436 --> 00:28:20.506 A:middle
+what changes we can make in
+
+00:28:20.506 --> 00:28:21.956 A:middle
+order to enhance the customer's
+
+00:28:21.956 --> 00:28:22.526 A:middle
+experience.
+
+00:28:25.316 --> 00:28:26.646 A:middle
+There are two major changes I
+
+00:28:26.646 --> 00:28:27.316 A:middle
+want to make here.
+
+00:28:28.276 --> 00:28:30.196 A:middle
+First, when people come to my
+
+00:28:30.196 --> 00:28:31.596 A:middle
+event, I want to check them in
+
+00:28:31.596 --> 00:28:33.036 A:middle
+using a contactless reader.
+
+00:28:33.976 --> 00:28:36.716 A:middle
+And, second, when the user gets
+
+00:28:36.866 --> 00:28:39.166 A:middle
+close to my event location, and
+
+00:28:39.266 --> 00:28:41.066 A:middle
+in this case, Discovery Meadow,
+
+00:28:41.286 --> 00:28:42.696 A:middle
+I want the pass to become
+
+00:28:42.696 --> 00:28:43.966 A:middle
+relevant on the lock screen.
+
+00:28:44.606 --> 00:28:47.116 A:middle
+So, let's first take a look at
+
+00:28:47.116 --> 00:28:48.476 A:middle
+this barcode dictionary here.
+
+00:28:48.686 --> 00:28:50.706 A:middle
+Since I'm going to be checking
+
+00:28:50.706 --> 00:28:52.626 A:middle
+people in using a contactless
+
+00:28:52.626 --> 00:28:54.416 A:middle
+reader, there's no need to have
+
+00:28:54.416 --> 00:28:55.956 A:middle
+a QR code on the front anymore.
+
+00:28:56.326 --> 00:28:57.176 A:middle
+So, let's remove this
+
+00:28:57.226 --> 00:28:57.726 A:middle
+dictionary.
+
+00:28:59.086 --> 00:29:00.696 A:middle
+And, instead, let's replace it
+

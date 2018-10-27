@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:55.302 --> 00:04:00.440 align:start position:43% line:-1
+(拍手)
+
+00:04:00.541 --> 00:04:04.845 align:start position:29% line:-2
+料理を注文する
+アプリケーションを例とし
+
+00:04:05.312 --> 00:04:09.383 align:start position:23% line:-1
+メニューの構造体を作ってみます
+
+00:04:10.684 --> 00:04:12.786 align:start position:25% line:-1
+Xcode 9以前の旧版では
+
+00:04:12.886 --> 00:04:18.858 align:start position:20% line:-2
+通常 ARCオブジェクトポインタを
+Cの構造体で使えません
+
+00:04:18.959 --> 00:04:23.096 align:start position:23% line:-2
+Objective-Cクラスの
+作成が必須でした
+
+00:04:24.231 --> 00:04:28.001 align:start position:25% line:-2
+しかし Xcode 10では
+そのまま―
+
+00:04:28.101 --> 00:04:30.904 align:start position:29% line:-1
+Cの構造体が作成できます
+
+00:04:34.474 --> 00:04:37.845 align:start position:21% line:-1
+アプリケーションを作っていきます
+
+00:04:38.045 --> 00:04:41.481 align:start position:23% line:-1
+まず無料で注文できる関数を用意
+
+00:04:41.582 --> 00:04:47.287 align:start position:29% line:-2
+メニューの変数アイテムは
+価格を０にしておきます
+
+00:04:48.388 --> 00:04:53.694 align:start position:29% line:-2
+そして注文用の別の関数に
+アイテムを移行します
+
+00:04:54.761 --> 00:04:59.900 align:start position:23% line:-2
+アイテムができると
+コンパイラはretainを合成
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.436 --> 00:17:00.816 A:middle
+First, it's only beneficial if
+
+00:17:00.816 --> 00:17:01.816 A:middle
+you test on multiple
+
+00:17:01.816 --> 00:17:02.556 A:middle
+destinations.
+
+00:17:03.406 --> 00:17:04.675 A:middle
+If you just want to run unit
+
+00:17:04.675 --> 00:17:06.205 A:middle
+tests for your Mac app, for
+
+00:17:06.205 --> 00:17:09.596 A:middle
+example, this doesn't help.
+
+00:17:09.906 --> 00:17:11.786 A:middle
+Also, it's only available from
+
+00:17:11.786 --> 00:17:13.846 A:middle
+xcodebuild, so it's primarily
+
+00:17:13.846 --> 00:17:15.156 A:middle
+useful in the context of a
+
+00:17:15.156 --> 00:17:16.175 A:middle
+continuous integration
+
+00:17:16.175 --> 00:17:17.965 A:middle
+environment, like Xcode Server
+
+00:17:18.195 --> 00:17:18.836 A:middle
+or Jenkins.
+
+00:17:20.526 --> 00:17:22.656 A:middle
+I'm excited to tell you about a
+
+00:17:22.656 --> 00:17:24.246 A:middle
+new way to run tests faster than
+
+00:17:24.246 --> 00:17:26.175 A:middle
+ever called Parallel Distributed
+
+00:17:26.175 --> 00:17:26.576 A:middle
+Testing.
+
+00:17:28.566 --> 00:17:29.736 A:middle
+With Parallel Distributed
+
+00:17:29.736 --> 00:17:31.426 A:middle
+Testing, you can execute tests
+
+00:17:31.426 --> 00:17:32.816 A:middle
+in parallel on a single
+
+00:17:32.816 --> 00:17:33.476 A:middle
+destination.
+
+00:17:34.386 --> 00:17:36.166 A:middle
+Previously, testing on a single
+
+00:17:36.166 --> 00:17:38.446 A:middle
+destination looks like this, a
+
+00:17:38.446 --> 00:17:40.256 A:middle
+continuous straight line with
+
+00:17:40.256 --> 00:17:42.256 A:middle
+one test executing after the
+
+00:17:42.886 --> 00:17:42.976 A:middle
+other.
+
+00:17:44.346 --> 00:17:45.656 A:middle
+Parallel Distributed Testing
+
+00:17:45.686 --> 00:17:46.676 A:middle
+allows you to run tests
+
+00:17:46.676 --> 00:17:48.616 A:middle
+simultaneously so that testing
+
+00:17:48.616 --> 00:17:49.306 A:middle
+now looks like this.
+
+00:17:51.066 --> 00:17:52.486 A:middle
+In addition, it's supported both
+
+00:17:52.486 --> 00:17:53.776 A:middle
+from Xcode, as well as
+
+00:17:53.776 --> 00:17:55.576 A:middle
+xcodebuild, so no matter where
+
+00:17:55.576 --> 00:17:57.146 A:middle
+you run your tests, you'll get
+
+00:17:57.146 --> 00:17:58.176 A:middle
+the best performance.
+
+00:17:58.746 --> 00:18:01.636 A:middle
+Now in order to tell you about
+

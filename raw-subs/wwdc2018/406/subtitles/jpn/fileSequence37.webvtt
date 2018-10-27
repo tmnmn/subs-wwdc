@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:58.118 --> 00:37:02.456 align:start position:34% line:-2
+スライシング構文も
+提供できるのです
+
+00:37:02.689 --> 00:37:05.092 align:start position:29% line:-1
+ただ １つ問題があります
+
+00:37:05.392 --> 00:37:09.096 align:start position:30% line:-2
+このSlice型を嫌う
+コレクションです
+
+00:37:09.196 --> 00:37:14.368 align:start position:30% line:-2
+それらは独自の操作で
+異なる型を生み出します
+
+00:37:14.501 --> 00:37:16.937 align:start position:30% line:-1
+文字列は最も良い例です
+
+00:37:17.037 --> 00:37:20.708 align:start position:30% line:-2
+スライスすれば
+部分文字列が返されます
+
+00:37:21.441 --> 00:37:25.479 align:start position:23% line:-2
+文字列に分割統治アルゴリズムを
+使うなら―
+
+00:37:25.579 --> 00:37:30.350 align:start position:30% line:-2
+それらを部分文字列にも
+適用したいですね
+
+00:37:30.751 --> 00:37:33.287 align:start position:29% line:-1
+Rangeも面白い例です
+
+00:37:33.387 --> 00:37:38.825 align:start position:23% line:-2
+スライス操作で返されるのは
+まったく同じRange型ですが
+
+00:37:38.926 --> 00:37:40.928 align:start position:30% line:-1
+新しいバウンド付きです
+
+00:37:41.228 --> 00:37:46.199 align:start position:32% line:-2
+そこで 様々な型を
+キャプチャするために
+
+00:37:46.300 --> 00:37:51.805 align:start position:25% line:-2
+コレクションプロトコルに
+スライス用の要件を導入します
+
+00:37:52.306 --> 00:37:58.645 align:start position:25% line:-2
+スライスするサブスクリプトを
+要件として引き入れると―
+
+00:37:59.046 --> 00:38:05.786 align:start position:18% line:-2
+結果の型が 新たな関連型
+SubSequenceで記述されます
+

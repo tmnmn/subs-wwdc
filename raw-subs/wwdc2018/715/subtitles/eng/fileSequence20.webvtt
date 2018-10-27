@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.186 --> 00:20:00.976 A:middle
+use a proxy on your given
+
+00:20:00.976 --> 00:20:01.396 A:middle
+connection.
+
+00:20:01.396 --> 00:20:02.596 A:middle
+Maybe it's not appropriate for
+
+00:20:02.836 --> 00:20:04.266 A:middle
+your connection to go through a
+
+00:20:04.266 --> 00:20:05.096 A:middle
+SOCKS proxy.
+
+00:20:05.766 --> 00:20:07.206 A:middle
+In that case, you can simply
+
+00:20:07.416 --> 00:20:08.856 A:middle
+prohibit the use of proxies as
+
+00:20:08.886 --> 00:20:09.056 A:middle
+well.
+
+00:20:09.646 --> 00:20:12.676 A:middle
+So that's what happens in the
+
+00:20:12.676 --> 00:20:13.386 A:middle
+preparing state.
+
+00:20:14.736 --> 00:20:16.256 A:middle
+I mentioned before that things
+
+00:20:16.636 --> 00:20:17.546 A:middle
+can go wrong.
+
+00:20:17.546 --> 00:20:18.956 A:middle
+You can have no network when you
+
+00:20:18.956 --> 00:20:20.836 A:middle
+try to establish, and what we'll
+
+00:20:20.836 --> 00:20:22.456 A:middle
+do after going to preparing is
+
+00:20:22.456 --> 00:20:23.646 A:middle
+if we find there are no good
+
+00:20:23.646 --> 00:20:25.776 A:middle
+options, DNS failed, there was
+
+00:20:25.776 --> 00:20:27.086 A:middle
+no network, maybe you're in
+
+00:20:27.086 --> 00:20:28.536 A:middle
+airplane mode, we'll move into
+
+00:20:28.536 --> 00:20:29.596 A:middle
+the waiting state and let you
+
+00:20:29.596 --> 00:20:30.516 A:middle
+know the reason for that.
+
+00:20:31.476 --> 00:20:32.766 A:middle
+And we'll keep going back into
+
+00:20:32.766 --> 00:20:34.976 A:middle
+preparing every time the network
+
+00:20:34.976 --> 00:20:36.396 A:middle
+changes and the system thinks,
+
+00:20:36.806 --> 00:20:38.206 A:middle
+yeah, there's a good chance that
+
+00:20:38.266 --> 00:20:39.396 A:middle
+your connection will become
+
+00:20:39.396 --> 00:20:40.816 A:middle
+established now, and we'll
+
+00:20:40.816 --> 00:20:42.586 A:middle
+handle all that for you and let
+
+00:20:42.586 --> 00:20:43.956 A:middle
+you know every time that we're
+
+00:20:43.956 --> 00:20:44.526 A:middle
+reattempting.
+
+00:20:46.236 --> 00:20:48.146 A:middle
+Eventually, hopefully your
+
+00:20:48.146 --> 00:20:49.626 A:middle
+connection does get established.
+
+00:20:49.966 --> 00:20:51.136 A:middle
+At this point, we'll move into
+
+00:20:51.136 --> 00:20:51.826 A:middle
+the ready state.
+
+00:20:52.296 --> 00:20:54.186 A:middle
+And the ready state, as I
+
+00:20:54.186 --> 00:20:56.336 A:middle
+mentioned before, is when your
+
+00:20:56.336 --> 00:20:57.776 A:middle
+connection is fully established.
+
+00:20:57.956 --> 00:20:59.566 A:middle
+So this is all of the protocols
+
+00:20:59.646 --> 00:21:02.086 A:middle
+in your stack up to TLS, for
+

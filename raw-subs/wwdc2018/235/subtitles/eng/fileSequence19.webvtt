@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.716 --> 00:19:00.696 A:middle
+Well you're probably asking
+
+00:19:00.696 --> 00:19:01.666 A:middle
+what's the difference between
+
+00:19:01.666 --> 00:19:03.726 A:middle
+this adjusted content inset and
+
+00:19:03.726 --> 00:19:04.796 A:middle
+the content inset that we just
+
+00:19:04.796 --> 00:19:05.356 A:middle
+talked about?
+
+00:19:05.886 --> 00:19:06.456 A:middle
+Great question.
+
+00:19:07.236 --> 00:19:08.066 A:middle
+Here's how it breaks down.
+
+00:19:09.286 --> 00:19:11.616 A:middle
+Adjusted content inset is equal
+
+00:19:11.616 --> 00:19:13.626 A:middle
+to the content inset that your
+
+00:19:13.626 --> 00:19:16.276 A:middle
+app provides plus any automatic
+
+00:19:16.276 --> 00:19:18.096 A:middle
+insets coming from the system or
+
+00:19:18.096 --> 00:19:18.506 A:middle
+UIKit.
+
+00:19:19.686 --> 00:19:21.156 A:middle
+And so because we now separate
+
+00:19:21.156 --> 00:19:23.276 A:middle
+these two, it's a lot easier to
+
+00:19:23.276 --> 00:19:24.326 A:middle
+reason about what's happening.
+
+00:19:25.446 --> 00:19:26.526 A:middle
+Of course you might be wondering
+
+00:19:26.556 --> 00:19:28.106 A:middle
+where and when would I get a
+
+00:19:28.206 --> 00:19:29.696 A:middle
+system inset on my scroll view.
+
+00:19:31.096 --> 00:19:32.726 A:middle
+Well, one most common case will
+
+00:19:32.726 --> 00:19:34.426 A:middle
+be safe area insets.
+
+00:19:35.126 --> 00:19:36.326 A:middle
+Let's look at how this works.
+
+00:19:36.736 --> 00:19:37.946 A:middle
+So we're back to our basic
+
+00:19:37.946 --> 00:19:38.696 A:middle
+diagram here.
+
+00:19:38.696 --> 00:19:39.726 A:middle
+But we're going to bring some
+
+00:19:39.726 --> 00:19:41.436 A:middle
+safe area insets into the mix.
+
+00:19:42.746 --> 00:19:44.466 A:middle
+So if we go ahead and start out
+
+00:19:44.466 --> 00:19:45.856 A:middle
+right now we have no safe area
+
+00:19:45.856 --> 00:19:46.986 A:middle
+insets on any edge.
+
+00:19:47.016 --> 00:19:48.526 A:middle
+But we'll go ahead and add some
+
+00:19:48.526 --> 00:19:50.346 A:middle
+safe area insets to the top edge
+
+00:19:50.346 --> 00:19:51.036 A:middle
+of our scroll view.
+
+00:19:51.976 --> 00:19:54.026 A:middle
+And what you'll see is that by
+
+00:19:54.026 --> 00:19:55.806 A:middle
+default, the scroll view is
+
+00:19:55.806 --> 00:19:57.886 A:middle
+automatically absorbing those
+
+00:19:57.886 --> 00:20:00.046 A:middle
+safe area insets on its top edge
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:59.636 --> 00:45:01.756 A:middle
+using an iOS app running ARKit.
+
+00:45:02.686 --> 00:45:05.016 A:middle
+For this we offered the full
+
+00:45:05.016 --> 00:45:06.666 A:middle
+source code of a full-featured
+
+00:45:07.036 --> 00:45:09.256 A:middle
+iOS app that allows you to scan
+
+00:45:09.256 --> 00:45:10.296 A:middle
+your own 3D objects.
+
+00:45:11.436 --> 00:45:13.006 A:middle
+Such objects have a few
+
+00:45:13.096 --> 00:45:15.236 A:middle
+properties such that they need
+
+00:45:15.236 --> 00:45:17.336 A:middle
+to be well textured, rigid, and
+
+00:45:17.376 --> 00:45:18.056 A:middle
+nonreflective.
+
+00:45:18.576 --> 00:45:20.396 A:middle
+And they need to have roughly
+
+00:45:20.396 --> 00:45:23.866 A:middle
+the size of a tabletop.
+
+00:45:23.866 --> 00:45:25.586 A:middle
+ARKit can be used to estimate
+
+00:45:25.586 --> 00:45:27.356 A:middle
+the position and orientation of
+
+00:45:27.356 --> 00:45:28.796 A:middle
+such objects in six degrees of
+
+00:45:28.796 --> 00:45:29.166 A:middle
+freedom.
+
+00:45:29.726 --> 00:45:33.716 A:middle
+And all of this is fully
+
+00:45:33.716 --> 00:45:34.936 A:middle
+integrated into world tracking.
+
+00:45:35.396 --> 00:45:37.026 A:middle
+So all you need to do is set one
+
+00:45:37.026 --> 00:45:38.726 A:middle
+single property to get started
+
+00:45:38.726 --> 00:45:39.526 A:middle
+with object detection.
+
+00:45:40.296 --> 00:45:41.976 A:middle
+So let's have a look how it can
+
+00:45:41.976 --> 00:45:42.356 A:middle
+be set up.
+
+00:45:42.406 --> 00:45:45.206 A:middle
+I load a set of AR reference
+
+00:45:45.296 --> 00:45:47.486 A:middle
+images from file or from Xcode
+
+00:45:47.486 --> 00:45:48.166 A:middle
+asset catalog.
+
+00:45:49.066 --> 00:45:50.726 A:middle
+I will talk about the reference
+
+00:45:50.726 --> 00:45:51.506 A:middle
+objects in a second.
+
+00:45:52.496 --> 00:45:53.586 A:middle
+Once I'm done loading these
+
+00:45:53.586 --> 00:45:54.926 A:middle
+reference objects, I used them
+
+00:45:55.776 --> 00:45:59.716 A:middle
+to set up my configuration of
+
+00:45:59.716 --> 00:46:00.056 A:middle
+type
+

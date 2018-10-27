@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:58.296 --> 00:21:00.026 A:middle
+object, and here we see the
+
+00:21:00.026 --> 00:21:01.656 A:middle
+debugged description for this
+
+00:21:01.656 --> 00:21:02.556 A:middle
+GamePlay object.
+
+00:21:02.986 --> 00:21:04.186 A:middle
+And we have a custom debugged
+
+00:21:04.186 --> 00:21:05.676 A:middle
+description here, so it's worth
+
+00:21:05.736 --> 00:21:07.726 A:middle
+pointing out that po requests
+
+00:21:07.726 --> 00:21:08.596 A:middle
+the programmatic debug
+
+00:21:08.626 --> 00:21:10.116 A:middle
+description of an object and you
+
+00:21:10.116 --> 00:21:11.196 A:middle
+can customize these.
+
+00:21:11.696 --> 00:21:12.586 A:middle
+I'll show you how we did that
+
+00:21:12.586 --> 00:21:13.246 A:middle
+for GamePlay.
+
+00:21:13.316 --> 00:21:14.546 A:middle
+If I switch to the source code
+
+00:21:14.906 --> 00:21:16.626 A:middle
+and scroll to the bottom, you
+
+00:21:16.626 --> 00:21:17.856 A:middle
+can see that we've added an
+
+00:21:17.856 --> 00:21:19.656 A:middle
+extension to conform GamePlay to
+
+00:21:19.796 --> 00:21:21.626 A:middle
+custom debug string convertible.
+
+00:21:22.206 --> 00:21:23.546 A:middle
+And conformance requires that
+
+00:21:23.546 --> 00:21:25.676 A:middle
+you implement a property called
+
+00:21:25.676 --> 00:21:27.126 A:middle
+debug description and return a
+
+00:21:27.126 --> 00:21:27.526 A:middle
+string.
+
+00:21:27.896 --> 00:21:29.656 A:middle
+And you can return whatever
+
+00:21:29.656 --> 00:21:31.136 A:middle
+string you like to represent
+
+00:21:31.136 --> 00:21:32.756 A:middle
+this object for your debugging
+
+00:21:32.756 --> 00:21:33.386 A:middle
+purposes.
+
+00:21:34.096 --> 00:21:35.896 A:middle
+You can do the same for
+
+00:21:35.976 --> 00:21:37.486 A:middle
+Objective-C objects as well by
+
+00:21:37.486 --> 00:21:38.736 A:middle
+implementing debug description.
+
+00:21:39.786 --> 00:21:41.366 A:middle
+Compare that with the command p
+
+00:21:41.366 --> 00:21:41.826 A:middle
+GamePlay.
+
+00:21:43.036 --> 00:21:46.796 A:middle
+P is an alternate LLDB command,
+
+00:21:47.136 --> 00:21:48.746 A:middle
+which uses LLDB's built-in
+
+00:21:48.746 --> 00:21:50.256 A:middle
+formatters to represent the
+
+00:21:50.256 --> 00:21:50.676 A:middle
+object.
+
+00:21:50.926 --> 00:21:51.586 A:middle
+So here, we see two
+
+00:21:51.586 --> 00:21:52.706 A:middle
+representations of the same
+
+00:21:52.706 --> 00:21:55.106 A:middle
+object, and default formatter
+
+00:21:55.106 --> 00:21:56.126 A:middle
+shows you the full [inaudible]
+
+00:21:56.126 --> 00:21:57.446 A:middle
+type name, the memory address,
+
+00:21:57.806 --> 00:21:58.826 A:middle
+and then a list of all the
+
+00:21:58.826 --> 00:21:59.986 A:middle
+properties and their values.
+

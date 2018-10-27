@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.876 --> 00:25:03.956 A:middle
+access to that specific zone.
+
+00:25:04.156 --> 00:25:06.446 A:middle
+Now, on the HMRoom object, we
+
+00:25:06.446 --> 00:25:08.406 A:middle
+also support exposing the name
+
+00:25:08.406 --> 00:25:09.946 A:middle
+and the list of the accessories,
+
+00:25:10.316 --> 00:25:12.256 A:middle
+and it also contains this unique
+
+00:25:12.256 --> 00:25:13.756 A:middle
+identifier property so you can
+
+00:25:13.756 --> 00:25:14.756 A:middle
+keep track of rooms as well.
+
+00:25:17.716 --> 00:25:19.826 A:middle
+Again, the rooms and zones are
+
+00:25:19.826 --> 00:25:21.956 A:middle
+managed through the HMHome APIs,
+
+00:25:22.386 --> 00:25:24.186 A:middle
+so if you want to add or remove
+
+00:25:24.186 --> 00:25:26.716 A:middle
+a room or if you want to add or
+
+00:25:26.716 --> 00:25:28.796 A:middle
+remove a zone, you do through,
+
+00:25:28.906 --> 00:25:30.936 A:middle
+do that through the HMHome APIs.
+
+00:25:31.506 --> 00:25:34.606 A:middle
+So if we go back to some sample
+
+00:25:34.606 --> 00:25:37.136 A:middle
+code, let's take a look at this
+
+00:25:37.656 --> 00:25:40.446 A:middle
+[inaudible] in action.
+
+00:25:40.636 --> 00:25:42.866 A:middle
+So here we are adding a room to
+
+00:25:42.866 --> 00:25:44.356 A:middle
+the home with our roomName.
+
+00:25:44.906 --> 00:25:47.846 A:middle
+And then, we're adding a zone to
+
+00:25:47.846 --> 00:25:49.276 A:middle
+the home with a zoneName.
+
+00:25:49.786 --> 00:25:52.696 A:middle
+And then, we associate that room
+
+00:25:52.696 --> 00:25:54.000 A:middle
+to the zone.
+
+00:25:58.226 --> 00:25:59.406 A:middle
+Now, the next level of object
+
+00:25:59.406 --> 00:26:01.666 A:middle
+hierarchy that's important is
+

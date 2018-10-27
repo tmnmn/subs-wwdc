@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.416 --> 00:32:00.506 A:middle
+So, we can just write out
+
+00:32:00.506 --> 00:32:01.646 A:middle
+explicitly collection and
+
+00:32:01.646 --> 00:32:02.756 A:middle
+bidirectionalCollection.
+
+00:32:03.346 --> 00:32:05.066 A:middle
+To assert that this is where all
+
+00:32:05.066 --> 00:32:06.056 A:middle
+these conformances are.
+
+00:32:06.506 --> 00:32:07.936 A:middle
+Or we can do the stylistically
+
+00:32:07.936 --> 00:32:09.616 A:middle
+better thing, and split out the
+
+00:32:09.616 --> 00:32:10.556 A:middle
+different conformances.
+
+00:32:12.486 --> 00:32:13.726 A:middle
+Now at this point, our range
+
+00:32:13.726 --> 00:32:15.346 A:middle
+type is pretty powerful.
+
+00:32:15.346 --> 00:32:15.946 A:middle
+It does everything the
+
+00:32:15.946 --> 00:32:17.016 A:middle
+countableRange does.
+
+00:32:17.296 --> 00:32:17.976 A:middle
+So what should we do with
+
+00:32:17.976 --> 00:32:18.686 A:middle
+countableRange?
+
+00:32:19.536 --> 00:32:20.206 A:middle
+We could throw it away.
+
+00:32:20.726 --> 00:32:21.496 A:middle
+In this case we're talking about
+
+00:32:21.496 --> 00:32:23.066 A:middle
+the standard library, and
+
+00:32:23.066 --> 00:32:23.936 A:middle
+there's a lot of code that
+
+00:32:23.936 --> 00:32:25.706 A:middle
+actually uses countableRange.
+
+00:32:25.986 --> 00:32:28.176 A:middle
+So we can keep it around as a
+
+00:32:28.176 --> 00:32:29.586 A:middle
+generic type alias.
+
+00:32:30.886 --> 00:32:32.476 A:middle
+This is a really nice solution.
+
+00:32:32.476 --> 00:32:34.466 A:middle
+So the generic type alias adds
+
+00:32:34.546 --> 00:32:35.886 A:middle
+all of those extra requirements
+
+00:32:35.886 --> 00:32:37.306 A:middle
+you need to make the range
+
+00:32:37.306 --> 00:32:37.806 A:middle
+countable.
+
+00:32:38.066 --> 00:32:39.276 A:middle
+The requirements you need to
+
+00:32:39.276 --> 00:32:42.056 A:middle
+turn it into a collection, but
+
+00:32:42.056 --> 00:32:43.366 A:middle
+it's just an alternate name for
+
+00:32:43.366 --> 00:32:44.706 A:middle
+the underlying range type.
+
+00:32:46.826 --> 00:32:47.806 A:middle
+Again, this is great for source
+
+00:32:47.806 --> 00:32:49.166 A:middle
+compatibility, because code can
+
+00:32:49.166 --> 00:32:50.846 A:middle
+still use countableRange.
+
+00:32:51.116 --> 00:32:52.416 A:middle
+On the other hand, it's also
+
+00:32:52.466 --> 00:32:54.466 A:middle
+really nice to give a name to
+
+00:32:54.466 --> 00:32:56.046 A:middle
+those ranges that have
+
+00:32:56.046 --> 00:32:57.856 A:middle
+additional capabilities of being
+
+00:32:57.856 --> 00:32:59.286 A:middle
+a randomAccessCollection.
+
+00:32:59.916 --> 00:33:01.276 A:middle
+In fact, we can use this to
+

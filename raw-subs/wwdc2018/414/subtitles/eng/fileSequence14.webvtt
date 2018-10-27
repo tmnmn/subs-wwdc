@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.906 --> 00:14:00.306 A:middle
+stacks, these were the
+
+00:14:00.446 --> 00:14:02.166 A:middle
+backtraces of all the threads
+
+00:14:02.166 --> 00:14:03.276 A:middle
+that were running at the time of
+
+00:14:03.276 --> 00:14:03.906 A:middle
+the crash.
+
+00:14:04.506 --> 00:14:05.666 A:middle
+One of them is marked as the
+
+00:14:05.666 --> 00:14:08.436 A:middle
+crash thread and we also have
+
+00:14:08.436 --> 00:14:09.526 A:middle
+whatever other threads were
+
+00:14:09.526 --> 00:14:11.196 A:middle
+running at the time that the
+
+00:14:11.196 --> 00:14:12.056 A:middle
+process died.
+
+00:14:13.866 --> 00:14:15.676 A:middle
+Below that we have some
+
+00:14:15.676 --> 00:14:17.326 A:middle
+low-level information, we have
+
+00:14:17.376 --> 00:14:19.806 A:middle
+the register state of the thread
+
+00:14:19.806 --> 00:14:21.916 A:middle
+that crashed and we have the
+
+00:14:21.916 --> 00:14:23.816 A:middle
+binary images that were loaded
+
+00:14:23.816 --> 00:14:25.196 A:middle
+into the process.
+
+00:14:25.316 --> 00:14:27.046 A:middle
+This is the application
+
+00:14:27.046 --> 00:14:28.686 A:middle
+executable and all the other
+
+00:14:28.686 --> 00:14:29.666 A:middle
+libraries.
+
+00:14:30.276 --> 00:14:32.176 A:middle
+And Xcode uses this for
+
+00:14:32.176 --> 00:14:34.556 A:middle
+symbolication in order to look
+
+00:14:34.586 --> 00:14:37.306 A:middle
+up the symbols, the files and
+
+00:14:37.306 --> 00:14:38.866 A:middle
+line number information for the
+
+00:14:38.866 --> 00:14:39.656 A:middle
+stack traces.
+
+00:14:39.656 --> 00:14:42.576 A:middle
+So that's the content of a crash
+
+00:14:42.576 --> 00:14:43.156 A:middle
+log file.
+
+00:14:44.036 --> 00:14:45.696 A:middle
+So how do we debug this, how do
+
+00:14:45.696 --> 00:14:47.026 A:middle
+we read this, what do we look
+
+00:14:47.026 --> 00:14:47.306 A:middle
+at?
+
+00:14:48.446 --> 00:14:51.066 A:middle
+We start with the crash reason,
+
+00:14:51.176 --> 00:14:52.316 A:middle
+the exception type.
+
+00:14:53.156 --> 00:14:54.736 A:middle
+In this case, the exception type
+
+00:14:54.736 --> 00:14:56.796 A:middle
+is an EXC bad instruction
+
+00:14:56.856 --> 00:15:00.816 A:middle
+exception, the SIGILL signal was
+

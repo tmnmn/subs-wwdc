@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:57.484 --> 00:02:03.524 align:start position:23% line:-2
+しかし できるだけ
+連結を避けたいケースもあります
+
+00:02:03.857 --> 00:02:08.794 align:start position:25% line:-2
+例えばフィルタチェインに
+高負荷なフィルタを使っていて
+
+00:02:09.229 --> 00:02:14.768 align:start position:27% line:-2
+ユーザがフィルタを調整する
+可能性があるケースです
+
+00:02:15.102 --> 00:02:19.439 align:start position:32% line:-2
+その場合には
+間に中間バッファが―
+
+00:02:20.007 --> 00:02:22.409 align:start position:29% line:-1
+あったほうがよいでしょう
+
+00:02:22.809 --> 00:02:26.046 align:start position:34% line:-2
+中間バッファが
+メリットを生みます
+
+00:02:26.146 --> 00:02:30.551 align:start position:29% line:-2
+高負荷なフィルタにかかる
+コストを
+
+00:02:30.651 --> 00:02:33.887 align:start position:36% line:-2
+再びかける必要が
+なくなるのです
+
+00:02:34.121 --> 00:02:35.822 align:start position:34% line:-1
+それを実現するのは
+
+00:02:35.923 --> 00:02:40.194 align:start position:7% line:-2
+insertingIntermediateという
+新しいAPIです
+
+00:02:40.761 --> 00:02:43.597 align:start position:32% line:-1
+次のような仕組みです
+
+00:02:43.697 --> 00:02:46.433 align:start position:27% line:-1
+単に多く連結するのではなく
+
+00:02:46.533 --> 00:02:52.005 align:start position:29% line:-2
+中間バッファの周辺で
+できるだけ多く連結します
+
+00:02:53.173 --> 00:02:59.246 align:start position:20% line:-2
+デフォルトのCore Imageは
+全ての中間バッファのキャッシュで
+
+00:02:59.346 --> 00:03:03.984 align:start position:30% line:-2
+後続のレンダリングを
+できる限り速く行います
+

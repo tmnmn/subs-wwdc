@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.936 --> 00:07:00.296 A:middle
+You can generate this using your
+
+00:07:00.296 --> 00:07:00.976 A:middle
+private key.
+
+00:07:01.506 --> 00:07:05.466 A:middle
+We have a really great way to
+
+00:07:05.466 --> 00:07:07.606 A:middle
+use declarative HTML markup.
+
+00:07:07.796 --> 00:07:08.696 A:middle
+You can add some markup to your
+
+00:07:08.696 --> 00:07:09.156 A:middle
+page.
+
+00:07:09.196 --> 00:07:10.636 A:middle
+For example, buttons for sign
+
+00:07:10.636 --> 00:07:11.906 A:middle
+in, sign out, or playback
+
+00:07:11.906 --> 00:07:12.376 A:middle
+controls.
+
+00:07:13.776 --> 00:07:15.236 A:middle
+We'll handle wiring up those
+
+00:07:15.236 --> 00:07:16.866 A:middle
+elements to the appropriate
+
+00:07:16.866 --> 00:07:17.856 A:middle
+functions in MusicKit.
+
+00:07:18.346 --> 00:07:20.366 A:middle
+Then, we're going to add some
+
+00:07:20.366 --> 00:07:21.026 A:middle
+play buttons.
+
+00:07:21.026 --> 00:07:22.596 A:middle
+We'll use some content IDs or
+
+00:07:22.596 --> 00:07:24.456 A:middle
+some URLs from the Apple Music
+
+00:07:24.456 --> 00:07:26.236 A:middle
+catalog that'll let the users
+
+00:07:26.236 --> 00:07:26.876 A:middle
+start playback.
+
+00:07:27.236 --> 00:07:31.446 A:middle
+So let's take a look at the code
+
+00:07:31.446 --> 00:07:31.716 A:middle
+for this.
+
+00:07:31.716 --> 00:07:33.476 A:middle
+You're going to include the
+
+00:07:33.476 --> 00:07:34.926 A:middle
+JavaScript library, and we're
+
+00:07:34.926 --> 00:07:36.176 A:middle
+going to host this on our CDN
+
+00:07:36.176 --> 00:07:36.566 A:middle
+for you.
+
+00:07:37.086 --> 00:07:39.016 A:middle
+We're going to add some buttons
+
+00:07:39.256 --> 00:07:41.286 A:middle
+for signing in and signing out.
+
+00:07:42.496 --> 00:07:43.656 A:middle
+Some buttons to control
+
+00:07:43.656 --> 00:07:44.156 A:middle
+playback.
+
+00:07:44.366 --> 00:07:45.386 A:middle
+Here we have a play button, a
+
+00:07:45.386 --> 00:07:46.766 A:middle
+pause button, and a next track
+
+00:07:46.766 --> 00:07:46.936 A:middle
+button.
+
+00:07:46.936 --> 00:07:50.836 A:middle
+We'll add some elements that we
+
+00:07:50.836 --> 00:07:52.286 A:middle
+will render in metadata about
+
+00:07:52.286 --> 00:07:53.126 A:middle
+what's currently playing.
+
+00:07:53.546 --> 00:07:54.636 A:middle
+Here we can get the playlist
+
+00:07:54.636 --> 00:07:56.336 A:middle
+name, the title, and the artist
+
+00:07:56.336 --> 00:07:57.046 A:middle
+name, for example.
+
+00:07:57.476 --> 00:07:59.746 A:middle
+And then, we have some elements
+
+00:07:59.746 --> 00:08:01.736 A:middle
+that let you show the progress
+

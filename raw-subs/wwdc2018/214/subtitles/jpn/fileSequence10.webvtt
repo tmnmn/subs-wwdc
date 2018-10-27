@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:56.063 --> 00:10:00.167 align:start position:30% line:-2
+メニューにあれば
+注文可能と判定されます
+
+00:10:00.834 --> 00:10:06.940 align:start position:25% line:-2
+この段階で 実際に注文可能か
+スープの在庫も確認します
+
+00:10:07.241 --> 00:10:08.675 align:start position:36% line:-1
+やってみましょう
+
+00:10:09.476 --> 00:10:12.312 align:start position:30% line:-1
+まず メニューを参照し
+
+00:10:13.280 --> 00:10:15.349 align:start position:36% line:-1
+在庫を確認します
+
+00:10:15.649 --> 00:10:18.986 align:start position:23% line:-2
+売り切れの場合は
+completionハンドラを
+
+00:10:19.086 --> 00:10:22.823 align:start position:18% line:-2
+failureOutOfStockで
+呼び出します
+
+00:10:24.391 --> 00:10:27.794 align:start position:23% line:-1
+問題がなければ次に進みましょう
+
+00:10:28.328 --> 00:10:34.234 align:start position:25% line:-2
+これを機にカスタム確認応答も
+加えたいところですね
+
+00:10:34.468 --> 00:10:37.471 align:start position:27% line:-1
+それも追ってサポートします
+
+00:10:38.438 --> 00:10:40.641 align:start position:29% line:-1
+さて 確認が終わりました
+
+00:10:41.775 --> 00:10:44.077 align:start position:25% line:-1
+次はIntentをハンドルし
+
+00:10:44.311 --> 00:10:47.247 align:start position:27% line:-1
+スープの注文を入れましょう
+
+00:10:47.581 --> 00:10:53.020 align:start position:23% line:-2
+Intent上の全情報を使って
+注文を作成し
+
+00:10:54.054 --> 00:10:56.857 align:start position:18% line:-1
+orderManagerで注文します
+
+00:10:57.157 --> 00:11:03.397 align:start position:23% line:-2
+注文が完了したら 応答コードで
+システムに通知します
+

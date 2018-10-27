@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.346 --> 00:08:00.886 A:middle
+to train custom image
+
+00:08:00.886 --> 00:08:02.156 A:middle
+classification models.
+
+00:08:03.316 --> 00:08:04.686 A:middle
+Image classification is the
+
+00:08:04.686 --> 00:08:06.626 A:middle
+problem of identifying what
+
+00:08:06.626 --> 00:08:08.546 A:middle
+label out of a set of categories
+
+00:08:08.546 --> 00:08:10.336 A:middle
+you'd like to apply to an image.
+
+00:08:11.646 --> 00:08:12.486 A:middle
+Depending on the type of
+
+00:08:12.486 --> 00:08:14.216 A:middle
+training data, you can target
+
+00:08:14.216 --> 00:08:16.676 A:middle
+domain specific use cases to
+
+00:08:16.676 --> 00:08:18.666 A:middle
+enable in your apps.
+
+00:08:19.346 --> 00:08:21.236 A:middle
+The first step is to collect
+
+00:08:21.416 --> 00:08:21.876 A:middle
+training data.
+
+00:08:23.826 --> 00:08:25.286 A:middle
+In doing so, we'll take a look
+
+00:08:25.536 --> 00:08:27.586 A:middle
+at a fruit classifier and see
+
+00:08:27.586 --> 00:08:28.286 A:middle
+how you would do so.
+
+00:08:29.596 --> 00:08:31.756 A:middle
+First, you'd want to gather many
+
+00:08:31.756 --> 00:08:33.306 A:middle
+varied types of images that
+
+00:08:33.306 --> 00:08:34.756 A:middle
+reflect the true data that
+
+00:08:34.756 --> 00:08:36.296 A:middle
+you'll end up seeing and then
+
+00:08:36.296 --> 00:08:37.796 A:middle
+label them.
+
+00:08:37.796 --> 00:08:38.726 A:middle
+First, you can do this as a
+
+00:08:38.726 --> 00:08:41.775 A:middle
+dictionary with the string label
+
+00:08:42.066 --> 00:08:43.256 A:middle
+corresponding to arrays of
+
+00:08:43.256 --> 00:08:43.726 A:middle
+images.
+
+00:08:44.376 --> 00:08:46.466 A:middle
+Or what we've noticed is many
+
+00:08:46.506 --> 00:08:48.226 A:middle
+popular data sets are organized
+
+00:08:48.316 --> 00:08:49.636 A:middle
+in hierarchical directory
+
+00:08:49.636 --> 00:08:51.706 A:middle
+structures such that the label
+
+00:08:52.356 --> 00:08:53.726 A:middle
+is the name of the folder that
+
+00:08:53.726 --> 00:08:55.006 A:middle
+contains all images within it.
+
+00:08:56.726 --> 00:08:57.556 A:middle
+There are also other data
+
+00:08:57.806 --> 00:09:00.116 A:middle
+sources such as single folders
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:59.406 --> 00:12:01.156 A:middle
+intersections between those rays
+
+00:12:01.156 --> 00:12:02.276 A:middle
+and the scene, using the
+
+00:12:02.276 --> 00:12:02.966 A:middle
+intersector.
+
+00:12:03.256 --> 00:12:05.506 A:middle
+And finally, we'll use the
+
+00:12:05.506 --> 00:12:07.136 A:middle
+intersection results to compute
+
+00:12:07.136 --> 00:12:07.656 A:middle
+shading.
+
+00:12:08.766 --> 00:12:09.876 A:middle
+So, let's start with the
+
+00:12:09.876 --> 00:12:10.506 A:middle
+intersector.
+
+00:12:11.136 --> 00:12:14.556 A:middle
+The MPSRayIntersector class
+
+00:12:14.786 --> 00:12:15.806 A:middle
+coordinates all of the ray
+
+00:12:15.806 --> 00:12:17.186 A:middle
+triangle intersection testing.
+
+00:12:18.256 --> 00:12:19.736 A:middle
+All we need to do to create one
+
+00:12:19.826 --> 00:12:21.136 A:middle
+is provide the METAL device that
+
+00:12:21.136 --> 00:12:22.436 A:middle
+we want to use for intersection
+
+00:12:22.436 --> 00:12:22.806 A:middle
+testing.
+
+00:12:23.426 --> 00:12:26.106 A:middle
+Next, we'll create the
+
+00:12:26.106 --> 00:12:27.156 A:middle
+acceleration structure.
+
+00:12:28.416 --> 00:12:30.416 A:middle
+This is represented by the
+
+00:12:30.416 --> 00:12:31.966 A:middle
+MPSTriangleAccelerationStructure
+
+00:12:31.966 --> 00:12:32.366 A:middle
+class.
+
+00:12:33.136 --> 00:12:34.306 A:middle
+Again, all we need to do to
+
+00:12:34.306 --> 00:12:35.936 A:middle
+create one is provide the same
+
+00:12:35.936 --> 00:12:37.196 A:middle
+METAL device we used to create
+
+00:12:37.196 --> 00:12:37.926 A:middle
+the intersector.
+
+00:12:38.536 --> 00:12:41.716 A:middle
+We then, attach our vertexBuffer
+
+00:12:41.716 --> 00:12:43.186 A:middle
+and specify the triangleCount.
+
+00:12:43.356 --> 00:12:45.786 A:middle
+And finally, we build the
+
+00:12:45.786 --> 00:12:46.846 A:middle
+acceleration structure.
+
+00:12:47.536 --> 00:12:48.986 A:middle
+We only need to do this once.
+
+00:12:48.986 --> 00:12:50.066 A:middle
+And then, we can reuse the
+
+00:12:50.066 --> 00:12:51.746 A:middle
+acceleration structure as many
+
+00:12:51.746 --> 00:12:52.536 A:middle
+times as we'd like.
+
+00:12:56.616 --> 00:12:57.976 A:middle
+So next, we'll generate primary
+
+00:12:57.976 --> 00:12:59.386 A:middle
+rays and write them into our ray
+
+00:12:59.386 --> 00:12:59.796 A:middle
+buffer.
+

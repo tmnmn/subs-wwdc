@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.118 --> 00:12:02.789 align:start position:29% line:-2
+有効なタグリストがないと
+無視できます
+
+00:12:03.123 --> 00:12:06.059 align:start position:29% line:-1
+エラーを投げない選択です
+
+00:12:07.794 --> 00:12:12.966 align:start position:25% line:-2
+この段階では
+型以外の検証も行いたいですね
+
+00:12:13.367 --> 00:12:17.738 align:start position:18% line:-1
+nullに換えるとJSONで有効です
+
+00:12:19.006 --> 00:12:20.974 align:start position:34% line:-1
+クラッシュしません
+
+00:12:22.109 --> 00:12:25.746 align:start position:23% line:-2
+Swiftでnull化可能性は
+型の一部です
+
+00:12:25.846 --> 00:12:30.851 align:start position:29% line:-2
+nullは文字列に
+ダウンキャストできません
+
+00:12:32.820 --> 00:12:36.223 align:start position:20% line:-1
+すべて正しい型のnull化可能でも
+
+00:12:36.323 --> 00:12:39.193 align:start position:27% line:-1
+要注意の検証事項があります
+
+00:12:39.827 --> 00:12:45.666 align:start position:23% line:-2
+製品リストには連続した自然数の
+IDが付いていますが
+
+00:12:45.933 --> 00:12:48.635 align:start position:27% line:-1
+負の数でも平気でしょうか？
+
+00:12:49.102 --> 00:12:50.103 align:start position:43% line:-1
+ダメです
+
+00:12:50.204 --> 00:12:55.542 align:start position:23% line:-2
+正の数だとしても
+非常に大きな値はどうでしょう？
+
+00:12:55.943 --> 00:12:57.845 align:start position:36% line:-1
+商品が多すぎます
+
+00:12:57.945 --> 00:13:03.083 align:start position:29% line:-2
+誰かがオーバーフローを
+狙っているかもしれません
+

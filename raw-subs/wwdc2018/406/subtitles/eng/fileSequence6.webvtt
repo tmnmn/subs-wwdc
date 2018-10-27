@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.576 --> 00:06:01.266 A:middle
+of the elements in a contiguous
+
+00:06:01.306 --> 00:06:02.416 A:middle
+block of memory, with no
+
+00:06:02.416 --> 00:06:02.936 A:middle
+overhead.
+
+00:06:03.966 --> 00:06:05.476 A:middle
+Even if those types are
+
+00:06:05.476 --> 00:06:06.526 A:middle
+arbitrarily large.
+
+00:06:08.196 --> 00:06:09.866 A:middle
+And because the compiler has
+
+00:06:10.816 --> 00:06:12.416 A:middle
+direct knowledge at all times of
+
+00:06:12.416 --> 00:06:14.546 A:middle
+exactly what element type the
+
+00:06:14.546 --> 00:06:15.376 A:middle
+buffer contains.
+
+00:06:15.956 --> 00:06:16.976 A:middle
+It has optimization
+
+00:06:16.976 --> 00:06:18.356 A:middle
+opportunities available to it
+
+00:06:18.356 --> 00:06:19.646 A:middle
+that it wouldn't otherwise have.
+
+00:06:20.586 --> 00:06:21.796 A:middle
+So, in the case here, where I've
+
+00:06:21.796 --> 00:06:23.436 A:middle
+declared a buffer of integers.
+
+00:06:24.296 --> 00:06:25.686 A:middle
+A loop like this ought to be
+
+00:06:25.686 --> 00:06:27.366 A:middle
+compiled down to just a handful
+
+00:06:27.366 --> 00:06:28.766 A:middle
+of very efficient CPU
+
+00:06:28.766 --> 00:06:29.436 A:middle
+instructions.
+
+00:06:31.936 --> 00:06:32.876 A:middle
+Now, if you were writing a loop
+
+00:06:32.876 --> 00:06:36.186 A:middle
+like this, on a regular basis.
+
+00:06:36.546 --> 00:06:37.826 A:middle
+To sum up a buffer of integers,
+
+00:06:38.006 --> 00:06:39.336 A:middle
+it might make sense to extract
+
+00:06:39.336 --> 00:06:40.776 A:middle
+it out into a method.
+
+00:06:40.876 --> 00:06:44.086 A:middle
+An extension on buffer that's
+
+00:06:44.086 --> 00:06:45.526 A:middle
+more unit-testable, and more
+
+00:06:45.526 --> 00:06:46.966 A:middle
+readable when you actually call
+
+00:06:47.026 --> 00:06:47.206 A:middle
+it.
+
+00:06:48.356 --> 00:06:49.326 A:middle
+But, you probably know that if
+
+00:06:49.326 --> 00:06:50.306 A:middle
+you've written code like this,
+
+00:06:50.706 --> 00:06:52.026 A:middle
+you'll get a compilation issue,
+
+00:06:52.516 --> 00:06:54.466 A:middle
+because not all element types
+
+00:06:54.466 --> 00:06:57.366 A:middle
+can be summed up like this.
+
+00:06:57.666 --> 00:06:58.916 A:middle
+We need to tell the compiler
+
+00:06:59.126 --> 00:07:01.506 A:middle
+more about the capabilities the
+

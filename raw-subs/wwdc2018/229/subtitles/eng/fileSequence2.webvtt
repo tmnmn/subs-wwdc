@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.916 --> 00:02:00.506 A:middle
+share so many common features
+
+00:02:00.506 --> 00:02:01.686 A:middle
+and algorithms that in Swift
+
+00:02:01.686 --> 00:02:03.036 A:middle
+they all conform to a common
+
+00:02:03.036 --> 00:02:03.476 A:middle
+protocol.
+
+00:02:04.036 --> 00:02:06.446 A:middle
+Not surprisingly, it's called
+
+00:02:06.446 --> 00:02:06.876 A:middle
+collection.
+
+00:02:06.876 --> 00:02:09.186 A:middle
+And in Swift, collections are
+
+00:02:09.186 --> 00:02:10.675 A:middle
+sequences whose elements can be
+
+00:02:10.675 --> 00:02:12.196 A:middle
+traversed multiple times,
+
+00:02:12.426 --> 00:02:13.806 A:middle
+nondestructively, and whose
+
+00:02:13.806 --> 00:02:15.106 A:middle
+elements can be accessed via a
+
+00:02:15.106 --> 00:02:15.606 A:middle
+subscript.
+
+00:02:17.576 --> 00:02:19.106 A:middle
+Let's see, look at how they do
+
+00:02:19.106 --> 00:02:20.446 A:middle
+that but considering an abstract
+
+00:02:20.446 --> 00:02:21.736 A:middle
+representation of a collection.
+
+00:02:23.026 --> 00:02:24.456 A:middle
+This could be an array defined
+
+00:02:24.456 --> 00:02:26.006 A:middle
+contiguously in memory, a hash
+
+00:02:26.076 --> 00:02:29.246 A:middle
+table, a red black tree, a link
+
+00:02:29.246 --> 00:02:30.266 A:middle
+list or anything else that you
+
+00:02:30.266 --> 00:02:30.776 A:middle
+can imagine.
+
+00:02:31.516 --> 00:02:32.636 A:middle
+What matters is that it supports
+
+00:02:32.636 --> 00:02:34.296 A:middle
+the concept of an initial index
+
+00:02:34.296 --> 00:02:35.386 A:middle
+called start index.
+
+00:02:36.796 --> 00:02:38.426 A:middle
+It can be used to access the
+
+00:02:38.426 --> 00:02:39.306 A:middle
+initial element of the
+
+00:02:39.306 --> 00:02:39.806 A:middle
+collection.
+
+00:02:40.556 --> 00:02:41.736 A:middle
+It has an end index, which
+
+00:02:41.736 --> 00:02:42.646 A:middle
+identifies the end of the
+
+00:02:42.646 --> 00:02:44.746 A:middle
+collection, and collections
+
+00:02:44.746 --> 00:02:46.166 A:middle
+support the ability to iterate
+
+00:02:46.166 --> 00:02:47.546 A:middle
+from their start index to their
+
+00:02:47.546 --> 00:02:48.286 A:middle
+end index.
+
+00:02:49.476 --> 00:02:51.056 A:middle
+They can do this multiple times,
+
+00:02:51.426 --> 00:02:52.396 A:middle
+and they also support a
+
+00:02:52.396 --> 00:02:54.646 A:middle
+subscript to retrieve elements
+
+00:02:54.676 --> 00:02:55.876 A:middle
+from the collection itself.
+
+00:02:56.456 --> 00:02:58.336 A:middle
+Let's see what this looks like
+
+00:02:58.336 --> 00:02:58.746 A:middle
+in code.
+
+00:02:59.736 --> 00:03:00.606 A:middle
+Indeed, if we look at the
+

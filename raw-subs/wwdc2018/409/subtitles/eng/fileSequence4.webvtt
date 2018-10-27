@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:52.516 --> 00:04:00.616 A:middle
+[ Applause ]
+
+00:04:01.116 --> 00:04:02.166 A:middle
+Let's take a look at an example
+
+00:04:02.336 --> 00:04:03.506 A:middle
+let's say we'd like to write a
+
+00:04:03.506 --> 00:04:05.846 A:middle
+food ordering app and we'd like
+
+00:04:05.876 --> 00:04:07.676 A:middle
+to create a data structure which
+
+00:04:07.676 --> 00:04:09.176 A:middle
+represents a menu item.
+
+00:04:09.736 --> 00:04:13.226 A:middle
+In Xcode 9 and earlier it would
+
+00:04:13.226 --> 00:04:14.716 A:middle
+have been impossible for us to
+
+00:04:14.716 --> 00:04:17.055 A:middle
+actually use a C structure with
+
+00:04:17.055 --> 00:04:19.505 A:middle
+ARC object pointer fields, so we
+
+00:04:19.536 --> 00:04:21.546 A:middle
+would have had to use a C, an
+
+00:04:21.546 --> 00:04:24.506 A:middle
+Objective-C class here.
+
+00:04:24.506 --> 00:04:26.516 A:middle
+Xcode 10 now allows us to
+
+00:04:26.516 --> 00:04:27.926 A:middle
+actually create a C structure
+
+00:04:27.926 --> 00:04:29.616 A:middle
+that has ARC object pointer
+
+00:04:29.726 --> 00:04:29.976 A:middle
+fields.
+
+00:04:35.066 --> 00:04:35.906 A:middle
+Let's keep going and keep
+
+00:04:35.906 --> 00:04:38.176 A:middle
+writing our food ordering app.
+
+00:04:38.176 --> 00:04:39.546 A:middle
+Let's create a function that
+
+00:04:39.606 --> 00:04:41.236 A:middle
+orders free food for us.
+
+00:04:41.696 --> 00:04:43.246 A:middle
+In the function let's create a
+
+00:04:43.246 --> 00:04:45.736 A:middle
+variable item of type menu item
+
+00:04:45.976 --> 00:04:46.996 A:middle
+with a price of zero.
+
+00:04:48.416 --> 00:04:50.436 A:middle
+Then let's pass this item into
+
+00:04:50.436 --> 00:04:52.096 A:middle
+another function that actually
+
+00:04:52.376 --> 00:04:53.416 A:middle
+orders the food for us.
+
+00:04:54.846 --> 00:04:57.276 A:middle
+When the item is created the
+
+00:04:57.276 --> 00:04:59.716 A:middle
+compiler has to synthesize code
+

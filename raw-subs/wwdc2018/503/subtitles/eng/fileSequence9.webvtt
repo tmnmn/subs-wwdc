@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.206 --> 00:09:01.746 A:middle
+for this thresholding here and
+
+00:09:01.906 --> 00:09:02.676 A:middle
+this is what I'll be using for
+
+00:09:02.676 --> 00:09:02.976 A:middle
+my foreground.
+
+00:09:07.256 --> 00:09:09.416 A:middle
+Next, I'm applying an effect
+
+00:09:09.416 --> 00:09:10.536 A:middle
+only on my foreground, so in
+
+00:09:10.536 --> 00:09:11.546 A:middle
+this particular case I'm using
+
+00:09:11.546 --> 00:09:12.936 A:middle
+the Core Image photo effect Noir
+
+00:09:13.056 --> 00:09:14.396 A:middle
+which turns everything grayscale
+
+00:09:14.396 --> 00:09:15.556 A:middle
+and has a has a bit of contrast.
+
+00:09:16.186 --> 00:09:17.206 A:middle
+I'm doing an exposure
+
+00:09:17.206 --> 00:09:19.816 A:middle
+adjustment, as well as
+
+00:09:19.846 --> 00:09:21.156 A:middle
+desaturating my image slightly
+
+00:09:21.156 --> 00:09:22.766 A:middle
+and augmenting the contrast even
+
+00:09:22.766 --> 00:09:23.196 A:middle
+further.
+
+00:09:23.936 --> 00:09:24.896 A:middle
+Let's take a look at the output.
+
+00:09:24.896 --> 00:09:25.716 A:middle
+This is going to be the
+
+00:09:25.716 --> 00:09:26.826 A:middle
+foreground that I'll be using
+
+00:09:27.336 --> 00:09:28.936 A:middle
+and what I want to do here is
+
+00:09:29.016 --> 00:09:32.016 A:middle
+leverage the depth data mask
+
+00:09:32.016 --> 00:09:33.756 A:middle
+that I have to composite this
+
+00:09:33.756 --> 00:09:35.446 A:middle
+foreground onto a background.
+
+00:09:36.496 --> 00:09:37.866 A:middle
+Let's just generate a background
+
+00:09:37.866 --> 00:09:39.276 A:middle
+which is just a darker version
+
+00:09:39.396 --> 00:09:40.236 A:middle
+of the original image.
+
+00:09:40.766 --> 00:09:43.816 A:middle
+We can then composite the two
+
+00:09:43.816 --> 00:09:45.146 A:middle
+together using the Core Image
+
+00:09:45.146 --> 00:09:48.956 A:middle
+filter blendWithMask and we have
+
+00:09:48.956 --> 00:09:50.186 A:middle
+the result right there, it's
+
+00:09:50.186 --> 00:09:50.726 A:middle
+that simple.
+
+00:09:51.386 --> 00:09:52.866 A:middle
+All right.
+
+00:09:52.866 --> 00:09:54.936 A:middle
+Thank you.
+
+00:09:55.516 --> 00:09:58.716 A:middle
+[ Applause ]
+
+00:09:59.216 --> 00:10:02.076 A:middle
+Okay so as you saw that required
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.526 --> 00:17:00.346 A:middle
+and to start out with I'm going
+
+00:17:00.346 --> 00:17:02.216 A:middle
+to display my users a list of
+
+00:17:02.216 --> 00:17:04.286 A:middle
+their current vaccinations and
+
+00:17:04.286 --> 00:17:05.915 A:middle
+I'm going to use the
+
+00:17:05.915 --> 00:17:07.376 A:middle
+HKClinicalRecords display name
+
+00:17:07.376 --> 00:17:07.836 A:middle
+property.
+
+00:17:08.646 --> 00:17:09.986 A:middle
+I've already added the Health
+
+00:17:09.986 --> 00:17:11.866 A:middle
+Records capability to my project
+
+00:17:12.156 --> 00:17:14.516 A:middle
+and I've created a purpose
+
+00:17:14.516 --> 00:17:16.195 A:middle
+string to tell my users how I
+
+00:17:16.195 --> 00:17:17.596 A:middle
+plan to use their immunizations.
+
+00:17:18.516 --> 00:17:20.356 A:middle
+Now it's time to implement my
+
+00:17:20.356 --> 00:17:20.836 A:middle
+dashboard.
+
+00:17:21.816 --> 00:17:22.695 A:middle
+So here I am at the
+
+00:17:22.695 --> 00:17:24.195 A:middle
+ImmunizationsViewController
+
+00:17:24.296 --> 00:17:25.256 A:middle
+powering that tab.
+
+00:17:25.976 --> 00:17:27.856 A:middle
+In HealthKit it's good practice
+
+00:17:28.006 --> 00:17:29.806 A:middle
+to request authorization every
+
+00:17:29.806 --> 00:17:31.486 A:middle
+time your user enters the part
+
+00:17:31.486 --> 00:17:33.086 A:middle
+of your application using
+
+00:17:33.086 --> 00:17:33.496 A:middle
+HealthKit.
+
+00:17:34.086 --> 00:17:36.526 A:middle
+So for this app viewWillAppear
+
+00:17:36.676 --> 00:17:37.456 A:middle
+is a great place.
+
+00:17:38.836 --> 00:17:43.156 A:middle
+Here I need to first specify
+
+00:17:43.956 --> 00:17:44.776 A:middle
+that I'm interested in
+
+00:17:44.776 --> 00:17:46.256 A:middle
+immunization record samples.
+
+00:17:46.886 --> 00:17:50.816 A:middle
+And next, call my Health Store's
+
+00:17:50.816 --> 00:17:52.306 A:middle
+requestAuthorization method.
+
+00:17:53.356 --> 00:17:54.786 A:middle
+In the callback I'm going to
+
+00:17:54.786 --> 00:17:56.906 A:middle
+check for success and handle
+
+00:17:56.906 --> 00:17:57.846 A:middle
+errors appropriately.
+
+00:17:59.196 --> 00:18:01.476 A:middle
+Finally, once I'm unauthorized
+

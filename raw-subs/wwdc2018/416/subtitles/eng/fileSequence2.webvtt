@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:00.236 --> 00:02:01.806 A:middle
+The memory use of your app is
+
+00:02:01.806 --> 00:02:03.036 A:middle
+actually the number of pages
+
+00:02:03.116 --> 00:02:04.686 A:middle
+multiplied by the page size.
+
+00:02:05.366 --> 00:02:09.116 A:middle
+So as an example of clean and
+
+00:02:09.116 --> 00:02:10.586 A:middle
+dirty pages, let's say I
+
+00:02:10.586 --> 00:02:13.766 A:middle
+allocate an array of 20,000
+
+00:02:13.766 --> 00:02:14.196 A:middle
+integers.
+
+00:02:14.816 --> 00:02:16.406 A:middle
+The system may give me six
+
+00:02:16.406 --> 00:02:16.916 A:middle
+pages.
+
+00:02:18.036 --> 00:02:19.966 A:middle
+Now, these pages are clean when
+
+00:02:19.966 --> 00:02:20.676 A:middle
+I allocate them.
+
+00:02:21.156 --> 00:02:22.386 A:middle
+However, when I start writing to
+
+00:02:22.386 --> 00:02:23.816 A:middle
+the data buffers, for example,
+
+00:02:23.816 --> 00:02:25.406 A:middle
+if I write to the first place in
+
+00:02:25.406 --> 00:02:27.346 A:middle
+this array, that page has become
+
+00:02:27.436 --> 00:02:27.766 A:middle
+dirty.
+
+00:02:28.856 --> 00:02:30.996 A:middle
+Similarly, if I write to the
+
+00:02:30.996 --> 00:02:33.396 A:middle
+last page, that, or the last
+
+00:02:33.396 --> 00:02:34.646 A:middle
+place in the buffer, the last
+
+00:02:34.646 --> 00:02:35.686 A:middle
+page becomes dirty as well.
+
+00:02:36.436 --> 00:02:37.416 A:middle
+Note that the four pages in
+
+00:02:37.416 --> 00:02:38.566 A:middle
+between are still clean because
+
+00:02:38.566 --> 00:02:42.656 A:middle
+the app has not written to them
+
+00:02:42.806 --> 00:02:42.896 A:middle
+yet.
+
+00:02:42.896 --> 00:02:43.766 A:middle
+Another interesting thing to
+
+00:02:43.766 --> 00:02:45.156 A:middle
+talk about is memory-mapped
+
+00:02:45.206 --> 00:02:45.556 A:middle
+files.
+
+00:02:45.856 --> 00:02:48.206 A:middle
+Now, this is files that are on
+
+00:02:48.206 --> 00:02:49.306 A:middle
+disk but loaded in the memory.
+
+00:02:50.296 --> 00:02:51.506 A:middle
+Now, if you use read-only files,
+
+00:02:51.506 --> 00:02:52.266 A:middle
+these are always going to be
+
+00:02:52.266 --> 00:02:52.976 A:middle
+clean pages.
+
+00:02:53.846 --> 00:02:55.066 A:middle
+The kernel actually manages when
+
+00:02:55.066 --> 00:02:56.536 A:middle
+they come in and off of disk
+
+00:02:56.536 --> 00:02:57.056 A:middle
+into RAM.
+
+00:02:57.746 --> 00:03:00.026 A:middle
+So a good example of this would
+

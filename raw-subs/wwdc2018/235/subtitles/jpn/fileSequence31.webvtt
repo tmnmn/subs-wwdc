@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.492 --> 00:31:02.663 align:start position:32% line:-2
+これを広げてしまうと
+ある問題が起きます
+
+00:31:02.763 --> 00:31:07.901 align:start position:25% line:-2
+広い範囲を１行１行 読むのは
+目にとって負担なのです
+
+00:31:08.001 --> 00:31:11.104 align:start position:29% line:-2
+フォントサイズによっては
+特に顕著です
+
+00:31:11.638 --> 00:31:17.544 align:start position:21% line:-2
+それを避けるには可読領域に収めて
+テキストを表示します
+
+00:31:17.644 --> 00:31:20.314 align:start position:25% line:-1
+システムが推奨する可読領域は
+
+00:31:20.414 --> 00:31:24.918 align:start position:27% line:-2
+ダイナミックタイプの
+フォントサイズに基づきます
+
+00:31:25.018 --> 00:31:29.923 align:start position:23% line:-2
+ダイナミックタイプは iOSの
+アダプティブな要素のひとつです
+
+00:31:31.225 --> 00:31:34.495 align:start position:27% line:-1
+可読領域の設定に役立つのが
+
+00:31:34.595 --> 00:31:37.664 align:start position:11% line:-2
+UIViewのAPI
+readableContentGuideです
+
+00:31:37.765 --> 00:31:44.471 align:start position:18% line:-2
+これはマージンやSafe Areaの
+レイアウトガイドと ほぼ同じです
+
+00:31:46.673 --> 00:31:52.679 align:start position:23% line:-2
+可読領域はダイナミックタイプの
+フォントサイズに基づきます
+
+00:31:52.780 --> 00:31:57.384 align:start position:29% line:-2
+ですからユーザが
+フォントサイズを変えると
+
+00:31:57.484 --> 00:32:00.687 align:start position:29% line:-1
+可読領域も拡大縮小します
+

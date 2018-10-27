@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:59.256 --> 00:47:01.136 A:middle
+game data instance twice, I'm
+
+00:47:01.136 --> 00:47:02.406 A:middle
+just going to put it at the top
+
+00:47:02.406 --> 00:47:04.036 A:middle
+of the class so it can be
+
+00:47:04.036 --> 00:47:04.556 A:middle
+reused.
+
+00:47:06.136 --> 00:47:08.136 A:middle
+Let me also delete the number of
+
+00:47:08.236 --> 00:47:09.976 A:middle
+sections method that was added
+
+00:47:09.976 --> 00:47:11.936 A:middle
+for us by default, because we
+
+00:47:11.936 --> 00:47:12.936 A:middle
+don't need this today.
+
+00:47:13.506 --> 00:47:15.576 A:middle
+Now that we have written the
+
+00:47:15.656 --> 00:47:17.996 A:middle
+code for the leaderboard, let's
+
+00:47:18.076 --> 00:47:20.546 A:middle
+open the main storyboard and the
+
+00:47:20.546 --> 00:47:21.986 A:middle
+Assistant Editor on the right.
+
+00:47:23.546 --> 00:47:25.486 A:middle
+I'll rotate the specs so we can
+
+00:47:25.676 --> 00:47:26.646 A:middle
+see it properly.
+
+00:47:30.476 --> 00:47:33.116 A:middle
+We need to tell Xcode that the
+
+00:47:33.256 --> 00:47:35.786 A:middle
+code for our leaderboard here is
+
+00:47:35.786 --> 00:47:37.616 A:middle
+written in the class that we
+
+00:47:37.616 --> 00:47:38.426 A:middle
+just created.
+
+00:47:39.466 --> 00:47:41.786 A:middle
+To do this, I'll select the view
+
+00:47:41.786 --> 00:47:43.516 A:middle
+controller for the leaderboard.
+
+00:47:44.466 --> 00:47:46.616 A:middle
+Go to the Identity Inspector,
+
+00:47:47.306 --> 00:47:49.386 A:middle
+and change the class name to
+
+00:47:49.386 --> 00:47:50.806 A:middle
+leaderboard-view-controller.
+
+00:47:51.346 --> 00:47:54.216 A:middle
+After this, I'll select the
+
+00:47:54.316 --> 00:47:57.366 A:middle
+table view in the storyboard.
+
+00:47:58.066 --> 00:48:00.146 A:middle
+Go to the attributes Inspector
+

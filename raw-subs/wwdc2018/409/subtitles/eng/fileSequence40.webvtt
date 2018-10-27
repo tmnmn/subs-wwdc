@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.106 --> 00:40:02.096 A:middle
+So these are already tweaked for
+
+00:40:02.096 --> 00:40:03.976 A:middle
+ARM v8.1, but they also
+
+00:40:03.976 --> 00:40:04.976 A:middle
+cooperate to the operating
+
+00:40:04.976 --> 00:40:06.236 A:middle
+system to have even better
+
+00:40:06.236 --> 00:40:06.856 A:middle
+performance.
+
+00:40:11.216 --> 00:40:13.446 A:middle
+So another feature in the A11
+
+00:40:13.506 --> 00:40:15.356 A:middle
+CPU is 16-bit floating points.
+
+00:40:16.346 --> 00:40:18.186 A:middle
+So you are all familiar with the
+
+00:40:18.616 --> 00:40:20.366 A:middle
+two standard floating point
+
+00:40:20.366 --> 00:40:21.966 A:middle
+types, so we have double which
+
+00:40:21.966 --> 00:40:24.596 A:middle
+is 64 bits and float which is 32
+
+00:40:24.596 --> 00:40:24.956 A:middle
+bits.
+
+00:40:26.186 --> 00:40:27.456 A:middle
+So on A11 we also have the
+
+00:40:27.456 --> 00:40:31.756 A:middle
+16-bit float16, this has much
+
+00:40:31.756 --> 00:40:34.436 A:middle
+less range and precision so it's
+
+00:40:34.966 --> 00:40:37.126 A:middle
+not as useful for as many cases.
+
+00:40:37.916 --> 00:40:39.066 A:middle
+But in some cases like machine
+
+00:40:39.066 --> 00:40:39.856 A:middle
+learning or when you're trying
+
+00:40:39.856 --> 00:40:41.986 A:middle
+to talk to GPU via Metal this is
+
+00:40:41.986 --> 00:40:43.236 A:middle
+great because it's smaller and
+
+00:40:43.236 --> 00:40:44.176 A:middle
+it's faster to compute.
+
+00:40:45.256 --> 00:40:46.726 A:middle
+And that's even more true if you
+
+00:40:46.726 --> 00:40:48.166 A:middle
+put them in vectors where you
+
+00:40:48.166 --> 00:40:49.626 A:middle
+can put more of them in the same
+
+00:40:49.866 --> 00:40:50.456 A:middle
+ARM vector.
+
+00:40:51.086 --> 00:40:54.476 A:middle
+So this is also something that
+
+00:40:54.476 --> 00:40:56.966 A:middle
+you can specialize code for and
+
+00:40:56.966 --> 00:40:58.426 A:middle
+in general something to keep in
+
+00:40:58.426 --> 00:40:59.966 A:middle
+mind with all of these features
+

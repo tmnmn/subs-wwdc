@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.332 --> 00:25:01.168 align:start position:30% line:-2
+まずは
+プリバイアスを取り出し
+
+00:25:01.268 --> 00:25:05.072 align:start position:29% line:-2
+例では-128ですが
+これでバイアスを除きます
+
+00:25:06.140 --> 00:25:11.278 align:start position:29% line:-2
+彩度は点が浮いていますが
+画像は整数値です
+
+00:25:11.712 --> 00:25:16.150 align:start position:30% line:-2
+彩度の値を定点に
+変換する必要があります
+
+00:25:16.283 --> 00:25:21.622 align:start position:27% line:-2
+Q12を定点とすると
+除数は0×100となります
+
+00:25:22.756 --> 00:25:28.095 align:start position:29% line:-2
+ポストバイアス×除数で
+バイアスを画素に戻します
+
+00:25:30.397 --> 00:25:32.933 align:start position:29% line:-1
+マトリクスはシンプルです
+
+00:25:33.033 --> 00:25:37.337 align:start position:34% line:-2
+CbCrチャネルを
+スケーリングします
+
+00:25:37.438 --> 00:25:44.311 align:start position:27% line:-2
+マトリクスはスケーラーで
+CbCrチャネルを掛けます
+
+00:25:45.512 --> 00:25:49.449 align:start position:12% line:-2
+vImageMatrixMultiplyを
+呼び出すと
+
+00:25:49.883 --> 00:25:55.656 align:start position:29% line:-2
+１つの配列と１つの機能で
+エフェクトがかけられます
+
+00:25:57.157 --> 00:26:00.094 align:start position:30% line:-1
+ではステップに戻ります
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:00.236 --> 00:34:01.696 A:middle
+But as we saw, most types
+
+00:34:01.696 --> 00:34:03.276 A:middle
+require additional validation if
+
+00:34:03.276 --> 00:34:04.596 A:middle
+they come from external sources,
+
+00:34:04.626 --> 00:34:05.446 A:middle
+just like ours do.
+
+00:34:06.586 --> 00:34:07.896 A:middle
+So, we need to further validate
+
+00:34:07.896 --> 00:34:08.156 A:middle
+those.
+
+00:34:09.366 --> 00:34:11.585 A:middle
+So, we can do that for our own
+
+00:34:11.585 --> 00:34:12.856 A:middle
+types by overwriting in it with
+
+00:34:13.085 --> 00:34:13.916 A:middle
+init from decoder.
+
+00:34:13.996 --> 00:34:15.985 A:middle
+And in this case, again, here's
+
+00:34:15.985 --> 00:34:17.466 A:middle
+that JSON response from earlier.
+
+00:34:17.656 --> 00:34:18.996 A:middle
+And I can trivially turn it into
+
+00:34:18.996 --> 00:34:20.386 A:middle
+a Codable type by simply
+
+00:34:20.386 --> 00:34:21.376 A:middle
+creating a type with all the
+
+00:34:21.376 --> 00:34:22.366 A:middle
+same name fields.
+
+00:34:23.726 --> 00:34:24.606 A:middle
+Because all these fields are
+
+00:34:24.606 --> 00:34:26.216 A:middle
+codable, I get that free
+
+00:34:26.216 --> 00:34:27.545 A:middle
+implementation of init from and
+
+00:34:27.545 --> 00:34:27.996 A:middle
+encode to.
+
+00:34:28.886 --> 00:34:30.005 A:middle
+But, I want to override init
+
+00:34:30.005 --> 00:34:31.436 A:middle
+from to make sure I'm performing
+
+00:34:31.436 --> 00:34:32.596 A:middle
+the same validation that I was
+
+00:34:32.596 --> 00:34:33.516 A:middle
+before with the primitive
+
+00:34:33.516 --> 00:34:33.936 A:middle
+values.
+
+00:34:34.676 --> 00:34:36.716 A:middle
+So, I can do that here, the same
+
+00:34:36.716 --> 00:34:36.886 A:middle
+way.
+
+00:34:38.536 --> 00:34:40.926 A:middle
+Where my old code decoded the ID
+
+00:34:41.016 --> 00:34:42.866 A:middle
+from the payload by downcasting
+
+00:34:42.866 --> 00:34:44.846 A:middle
+to an int, I can do similarly
+
+00:34:44.896 --> 00:34:46.646 A:middle
+here by decoding an int from the
+
+00:34:46.646 --> 00:34:47.025 A:middle
+decoder.
+
+00:34:48.496 --> 00:34:50.366 A:middle
+If the type found in the payload
+
+00:34:50.676 --> 00:34:52.226 A:middle
+is of a different type or is
+
+00:34:52.226 --> 00:34:53.315 A:middle
+missing, this will throw an
+
+00:34:53.315 --> 00:34:54.295 A:middle
+error that indicates what
+
+00:34:54.295 --> 00:34:54.656 A:middle
+happened.
+
+00:34:55.246 --> 00:34:58.866 A:middle
+Now, more important than that is
+
+00:34:58.866 --> 00:35:00.166 A:middle
+my own validation that I added
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.236 --> 00:10:02.726 A:middle
+If that authentication is
+
+00:10:02.726 --> 00:10:04.686 A:middle
+successful, AutoFill will fill
+
+00:10:04.686 --> 00:10:05.856 A:middle
+the username and the password in
+
+00:10:05.856 --> 00:10:05.976 A:middle
+the app.
+
+00:10:06.336 --> 00:10:08.676 A:middle
+There is a lot going on here, so
+
+00:10:08.806 --> 00:10:09.596 A:middle
+I'm going to walk through the
+
+00:10:09.596 --> 00:10:10.666 A:middle
+steps you need to take as a
+
+00:10:10.666 --> 00:10:11.856 A:middle
+developer to support this
+
+00:10:11.856 --> 00:10:12.286 A:middle
+workflow.
+
+00:10:12.816 --> 00:10:16.096 A:middle
+The three things you need to do
+
+00:10:16.346 --> 00:10:17.656 A:middle
+are provide AutoFill with the
+
+00:10:17.656 --> 00:10:18.866 A:middle
+credential identities you want
+
+00:10:18.866 --> 00:10:19.966 A:middle
+it to suggest to the user.
+
+00:10:20.926 --> 00:10:21.836 A:middle
+Implement support in your
+
+00:10:21.836 --> 00:10:22.736 A:middle
+extension to provide the
+
+00:10:22.736 --> 00:10:24.196 A:middle
+passwords when those suggestions
+
+00:10:24.196 --> 00:10:26.266 A:middle
+are selected, and display custom
+
+00:10:26.266 --> 00:10:27.666 A:middle
+UI in your extension to
+
+00:10:27.666 --> 00:10:28.866 A:middle
+authenticate the user before
+
+00:10:28.866 --> 00:10:30.446 A:middle
+returning the credential, if
+
+00:10:30.446 --> 00:10:31.546 A:middle
+your UX requires it.
+
+00:10:32.546 --> 00:10:33.736 A:middle
+Once again, this step is
+
+00:10:33.736 --> 00:10:34.196 A:middle
+optional.
+
+00:10:34.776 --> 00:10:36.036 A:middle
+If you don't show custom UI for
+
+00:10:36.036 --> 00:10:37.716 A:middle
+authentication, AutoFill will
+
+00:10:37.716 --> 00:10:38.646 A:middle
+perform appropriate
+
+00:10:38.646 --> 00:10:39.746 A:middle
+authentication for you.
+
+00:10:42.936 --> 00:10:44.296 A:middle
+Credential identities are
+
+00:10:44.296 --> 00:10:46.246 A:middle
+represented by instances of AS
+
+00:10:46.246 --> 00:10:47.606 A:middle
+Password Credential Identity.
+
+00:10:48.336 --> 00:10:49.526 A:middle
+This class contains all the
+
+00:10:49.526 --> 00:10:50.816 A:middle
+information about a credential
+
+00:10:50.816 --> 00:10:52.126 A:middle
+that AutoFill needs to know in
+
+00:10:52.126 --> 00:10:53.246 A:middle
+order to determine where to
+
+00:10:53.246 --> 00:10:53.746 A:middle
+offer it.
+
+00:10:54.676 --> 00:10:55.636 A:middle
+This includes a service
+
+00:10:55.636 --> 00:10:57.526 A:middle
+identifier, which tells AutoFill
+
+00:10:57.526 --> 00:10:59.036 A:middle
+which apps or websites to
+
+00:10:59.036 --> 00:11:00.336 A:middle
+suggest the credential on.
+

@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.512 --> 00:18:00.881 align:start position:32% line:-2
+このユニットテストを
+記述しました
+
+00:18:00.981 --> 00:18:02.950 align:start position:11% line:-2
+notifyAuthChangedメソッドが
+呼ばれたら―
+
+00:18:03.050 --> 00:18:05.953 align:start position:27% line:-1
+通知を送信するか確認します
+
+00:18:06.887 --> 00:18:08.522 align:start position:21% line:-2
+ここでは
+addObserverメソッドで
+
+00:18:08.622 --> 00:18:12.793 align:start position:34% line:-2
+ブロックベースの
+オブザーバを作成し
+
+00:18:12.893 --> 00:18:15.362 align:start position:36% line:-2
+ブロックの中に
+移動させています
+
+00:18:16.063 --> 00:18:22.402 align:start position:9% line:-2
+ビルトインのXCTNSNotification
+Expectation APIを使い
+
+00:18:22.503 --> 00:18:26.640 align:start position:18% line:-2
+NotificationCenter
+オブザーバを作成できます
+
+00:18:27.508 --> 00:18:32.045 align:start position:30% line:-2
+コードの行数を減らせる
+いい改善です
+
+00:18:32.679 --> 00:18:37.317 align:start position:11% line:-2
+しかしデフォルトの
+NotificationCenterの使用は
+
+00:18:37.417 --> 00:18:38.852 align:start position:34% line:-1
+再考すべきでしょう
+
+00:18:40.087 --> 00:18:41.655 align:start position:38% line:-1
+元のコードです
+
+00:18:42.523 --> 00:18:47.761 align:start position:12% line:-2
+イニシャライザに 分離した
+NotificationCenterを入れ
+
+00:18:47.861 --> 00:18:50.998 align:start position:32% line:-2
+デフォルトの代わりに
+使いましょう
+
+00:18:53.667 --> 00:18:55.636 align:start position:34% line:-1
+テストコードに戻り
+
+00:18:56.136 --> 00:18:59.840 align:start position:11% line:-2
+新しいNotificationCenterを
+対象に渡すため修正
+

@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:57:57.516 --> 00:58:01.636 A:middle
+[ Applause ]
+
+00:58:02.136 --> 00:58:03.126 A:middle
+&gt;&gt; Thank you, Tommy.
+
+00:58:03.916 --> 00:58:05.416 A:middle
+So I've got a great new API for
+
+00:58:05.566 --> 00:58:06.996 A:middle
+you that we think you're going
+
+00:58:06.996 --> 00:58:07.316 A:middle
+to love.
+
+00:58:08.346 --> 00:58:09.156 A:middle
+We'd like to talk about the
+
+00:58:09.156 --> 00:58:10.416 A:middle
+things that you can do to start
+
+00:58:10.416 --> 00:58:12.206 A:middle
+using it today, but first I want
+
+00:58:12.206 --> 00:58:13.276 A:middle
+to talk about a few things that
+
+00:58:13.276 --> 00:58:14.886 A:middle
+we'd like you to stop doing so
+
+00:58:14.886 --> 00:58:16.166 A:middle
+we can really take advantage of
+
+00:58:16.166 --> 00:58:17.376 A:middle
+the new technologies like user
+
+00:58:17.376 --> 00:58:18.216 A:middle
+space networking.
+
+00:58:19.796 --> 00:58:21.206 A:middle
+If you're on macOS, and you have
+
+00:58:21.206 --> 00:58:22.446 A:middle
+a Network Kernel Extension, and
+
+00:58:22.446 --> 00:58:23.376 A:middle
+there's something you're doing
+
+00:58:23.376 --> 00:58:24.546 A:middle
+in that Network Kernel Extension
+
+00:58:24.546 --> 00:58:25.946 A:middle
+that you can't do any other way,
+
+00:58:26.106 --> 00:58:27.206 A:middle
+please get in touch with us
+
+00:58:27.296 --> 00:58:27.836 A:middle
+right away.
+
+00:58:28.106 --> 00:58:29.226 A:middle
+We need to provide you a better
+
+00:58:29.226 --> 00:58:30.636 A:middle
+alternative because Network
+
+00:58:30.636 --> 00:58:31.846 A:middle
+Kernel Extensions are not
+
+00:58:31.846 --> 00:58:33.176 A:middle
+compatible with User Space
+
+00:58:33.176 --> 00:58:33.686 A:middle
+Networking.
+
+00:58:34.656 --> 00:58:36.226 A:middle
+We wanted to give you a heads-up
+
+00:58:36.276 --> 00:58:39.286 A:middle
+that with URLSession, FTP and
+
+00:58:39.286 --> 00:58:40.696 A:middle
+file URLs are no longer going to
+
+00:58:40.696 --> 00:58:42.166 A:middle
+be supported for Proxy Automatic
+
+00:58:42.166 --> 00:58:42.936 A:middle
+Configuration.
+
+00:58:43.016 --> 00:58:44.076 A:middle
+Going forward, the only
+
+00:58:44.076 --> 00:58:46.006 A:middle
+supported URL schemes will be
+
+00:58:46.006 --> 00:58:47.226 A:middle
+HTTP and HTTPS.
+
+00:58:47.226 --> 00:58:50.826 A:middle
+There are a number of APIs at
+
+00:58:50.826 --> 00:58:52.626 A:middle
+the CoreFoundation layer that we
+
+00:58:52.626 --> 00:58:53.746 A:middle
+would like you to stop using.
+
+00:58:54.066 --> 00:58:54.966 A:middle
+They will be deprecated
+
+00:58:54.966 --> 00:58:55.456 A:middle
+eventually.
+
+00:58:55.606 --> 00:58:56.916 A:middle
+They are not yet marked as
+
+00:58:56.916 --> 00:58:57.466 A:middle
+deprecated.
+
+00:58:58.046 --> 00:58:58.806 A:middle
+These are
+
+00:58:59.126 --> 00:59:01.496 A:middle
+CFStreamCreatePairWith, anything
+

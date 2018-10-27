@@ -1,0 +1,76 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:00.487 --> 00:47:01.588 align:middle line:-1
+果然如此
+
+00:47:01.755 --> 00:47:05.025 align:middle line:-2
+调试器已终止app
+因为它已经崩溃了
+
+00:47:05.225 --> 00:47:08.262 align:middle line:-2
+但即使你的确在调试器中
+捕获了这个崩溃
+
+00:47:08.328 --> 00:47:09.596 align:middle line:-1
+这也并没有什么用
+
+00:47:10.163 --> 00:47:11.331 align:middle line:-1
+调试器所提供的信息
+
+00:47:11.398 --> 00:47:14.168 align:middle line:-2
+只是说存在某种
+EXC_BAD_ACCESS
+
+00:47:14.501 --> 00:47:16.970 align:middle line:-1
+但它没有解释导致崩溃的原因
+
+00:47:17.037 --> 00:47:19.039 align:middle line:-1
+或者这为什么会发生
+
+00:47:19.640 --> 00:47:23.243 align:middle line:-2
+幸运的是 Xcode中有一个
+非常适合这种情况的工具
+
+00:47:23.310 --> 00:47:26.547 align:middle line:-2
+它被称为Thread Sanitizer
+我现在就会使用它
+
+00:47:26.613 --> 00:47:28.849 align:middle line:-1
+让我们打开项目的方案编辑器
+
+00:47:28.916 --> 00:47:31.084 align:middle line:-2
+我点击此处的app名称
+并选择Edit Scheme
+
+00:47:31.151 --> 00:47:32.553 align:middle line:-1
+来做到这点
+
+00:47:33.854 --> 00:47:36.957 align:middle line:-2
+然后我切换到
+Diagnostics标签页
+
+00:47:37.357 --> 00:47:41.094 align:middle line:-2
+你会看到我们这里有
+几个运行时诊断工具
+
+00:47:41.161 --> 00:47:44.464 align:middle line:-2
+比如Address Sanitizer
+它非常适合寻找缓冲区溢出
+
+00:47:45.399 --> 00:47:48.936 align:middle line:-2
+让我选中Thread Sanitizer
+并且选中Pause on issues
+
+00:47:49.002 --> 00:47:53.006 align:middle line:-2
+这意味着每次Sanitizer
+检测到错误时 调试器都会中断
+
+00:47:54.541 --> 00:47:57.811 align:middle line:-2
+让我们在启用了Thread Sanitizer的
+模拟器中运行app
+
+00:47:57.878 --> 00:48:00.981 align:middle line:-2
+我们看看如果我尝试
+添加新食谱时会发生什么
+

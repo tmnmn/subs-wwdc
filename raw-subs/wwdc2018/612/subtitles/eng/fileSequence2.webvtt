@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.686 --> 00:02:00.976 A:middle
+Let's start with the tools.
+
+00:02:01.686 --> 00:02:05.846 A:middle
+This is the most important
+
+00:02:05.846 --> 00:02:06.416 A:middle
+message.
+
+00:02:06.816 --> 00:02:08.886 A:middle
+You should profile early and do
+
+00:02:08.886 --> 00:02:09.496 A:middle
+it often.
+
+00:02:10.586 --> 00:02:12.456 A:middle
+Do not ship your game unless
+
+00:02:12.456 --> 00:02:13.276 A:middle
+you've profiled it.
+
+00:02:14.056 --> 00:02:15.756 A:middle
+And for that you will need to
+
+00:02:15.756 --> 00:02:16.486 A:middle
+know your tools.
+
+00:02:17.576 --> 00:02:19.626 A:middle
+Today, I will focus on two of
+
+00:02:19.656 --> 00:02:19.966 A:middle
+them.
+
+00:02:21.036 --> 00:02:22.746 A:middle
+First, we have instruments,
+
+00:02:23.166 --> 00:02:24.406 A:middle
+which is our main profiling
+
+00:02:24.406 --> 00:02:24.656 A:middle
+tool.
+
+00:02:25.356 --> 00:02:26.336 A:middle
+You will want to use it to
+
+00:02:26.336 --> 00:02:28.966 A:middle
+understand performance, latency,
+
+00:02:29.286 --> 00:02:30.266 A:middle
+and overall timing.
+
+00:02:31.216 --> 00:02:33.246 A:middle
+Second, we have the Metal Frame
+
+00:02:33.246 --> 00:02:34.936 A:middle
+Debugger, which is also very
+
+00:02:34.936 --> 00:02:37.066 A:middle
+powerful tool, which you will
+
+00:02:37.066 --> 00:02:38.466 A:middle
+want to use to debug your GPU
+
+00:02:38.466 --> 00:02:38.976 A:middle
+workload.
+
+00:02:39.546 --> 00:02:41.776 A:middle
+So where do we start?
+
+00:02:42.836 --> 00:02:44.306 A:middle
+This is a question we often get.
+
+00:02:45.196 --> 00:02:47.026 A:middle
+Well, this year we are making it
+
+00:02:47.026 --> 00:02:47.756 A:middle
+easier for you.
+
+00:02:48.236 --> 00:02:49.246 A:middle
+We are introducing a new
+
+00:02:49.246 --> 00:02:51.146 A:middle
+instruments template, which will
+
+00:02:51.146 --> 00:02:52.706 A:middle
+be a great starting point.
+
+00:02:53.126 --> 00:02:54.446 A:middle
+The Game Performance Template.
+
+00:02:55.396 --> 00:02:56.776 A:middle
+It is the combination of already
+
+00:02:56.776 --> 00:02:58.796 A:middle
+existing instruments such as
+
+00:02:58.936 --> 00:03:02.346 A:middle
+System Trace, Time Profiler, and
+

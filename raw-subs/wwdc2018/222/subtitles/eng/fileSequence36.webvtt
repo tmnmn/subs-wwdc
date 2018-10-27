@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.876 --> 00:36:00.496 A:middle
+strings to my own type, maybe
+
+00:36:00.586 --> 00:36:02.026 A:middle
+for further validation later on.
+
+00:36:04.026 --> 00:36:05.736 A:middle
+Here, again with Codable, I have
+
+00:36:05.736 --> 00:36:07.286 A:middle
+the benefit of tag conforming to
+
+00:36:07.286 --> 00:36:08.126 A:middle
+Codable itself.
+
+00:36:08.126 --> 00:36:09.806 A:middle
+And so, I can just decode an
+
+00:36:09.806 --> 00:36:10.816 A:middle
+array of tags directly.
+
+00:36:11.726 --> 00:36:12.846 A:middle
+This happens automatically.
+
+00:36:12.846 --> 00:36:14.356 A:middle
+And instead of focusing on the
+
+00:36:14.356 --> 00:36:15.456 A:middle
+type conversion, allows me to
+
+00:36:15.456 --> 00:36:16.776 A:middle
+focus on the validation that
+
+00:36:16.776 --> 00:36:17.386 A:middle
+matters to me.
+
+00:36:18.236 --> 00:36:19.416 A:middle
+This lets me make sure that this
+
+00:36:19.466 --> 00:36:20.686 A:middle
+data is data I can trust.
+
+00:36:24.156 --> 00:36:25.966 A:middle
+We talked about a lot today.
+
+00:36:27.196 --> 00:36:28.636 A:middle
+We started with raw data and
+
+00:36:28.636 --> 00:36:30.326 A:middle
+carried it all away across the
+
+00:36:30.326 --> 00:36:31.776 A:middle
+abstraction spectrum to our own
+
+00:36:31.776 --> 00:36:32.476 A:middle
+model types.
+
+00:36:32.716 --> 00:36:34.486 A:middle
+And along the way we saw how to
+
+00:36:34.486 --> 00:36:38.456 A:middle
+build trust into that data by
+
+00:36:38.676 --> 00:36:40.496 A:middle
+validating a checksum, or the
+
+00:36:40.496 --> 00:36:42.056 A:middle
+length on that raw data, we made
+
+00:36:42.056 --> 00:36:43.366 A:middle
+sure that it was valid to work
+
+00:36:43.366 --> 00:36:45.226 A:middle
+with an inspect, and even check
+
+00:36:45.716 --> 00:36:46.666 A:middle
+whether it conforms to some
+
+00:36:46.666 --> 00:36:47.046 A:middle
+format.
+
+00:36:47.356 --> 00:36:48.556 A:middle
+Once we've made sure that it
+
+00:36:48.556 --> 00:36:50.746 A:middle
+conforms to a known format, we
+
+00:36:50.746 --> 00:36:52.636 A:middle
+knew that that formatted data
+
+00:36:52.636 --> 00:36:54.376 A:middle
+was valid to work with and pull
+
+00:36:54.446 --> 00:36:55.466 A:middle
+primitive values out of.
+
+00:36:57.196 --> 00:36:59.106 A:middle
+By validating the contents and
+
+00:36:59.106 --> 00:37:00.476 A:middle
+structure of those primitive
+

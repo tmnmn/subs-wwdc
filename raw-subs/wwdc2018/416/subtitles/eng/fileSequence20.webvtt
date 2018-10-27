@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:00.066 --> 00:20:01.706 A:middle
+But these are only really useful
+
+00:20:01.706 --> 00:20:02.856 A:middle
+on the wide format displays, so
+
+00:20:02.856 --> 00:20:03.766 A:middle
+we don't want to use this when
+
+00:20:03.766 --> 00:20:04.616 A:middle
+we don't need to.
+
+00:20:05.756 --> 00:20:06.836 A:middle
+On the flip side, we can
+
+00:20:06.836 --> 00:20:07.766 A:middle
+actually go smaller.
+
+00:20:08.356 --> 00:20:09.186 A:middle
+Now, there's a luminance and
+
+00:20:09.186 --> 00:20:10.066 A:middle
+alpha 8 format.
+
+00:20:10.606 --> 00:20:13.176 A:middle
+This format stores a grayscale
+
+00:20:13.176 --> 00:20:14.236 A:middle
+and an alpha value only.
+
+00:20:14.886 --> 00:20:16.486 A:middle
+This is typically used in
+
+00:20:16.486 --> 00:20:18.336 A:middle
+shaders, so like Metal apps and
+
+00:20:18.336 --> 00:20:18.626 A:middle
+stuff.
+
+00:20:19.306 --> 00:20:21.246 A:middle
+Not very common in our usage.
+
+00:20:21.446 --> 00:20:22.336 A:middle
+We can actually get even
+
+00:20:22.336 --> 00:20:22.776 A:middle
+smaller.
+
+00:20:23.736 --> 00:20:24.936 A:middle
+We can go down to what we call
+
+00:20:24.936 --> 00:20:26.086 A:middle
+the alpha 8 format.
+
+00:20:26.516 --> 00:20:28.096 A:middle
+Now, alpha 8 just has 1 channel,
+
+00:20:28.156 --> 00:20:28.996 A:middle
+1 byte per pixel.
+
+00:20:29.226 --> 00:20:30.196 A:middle
+Very small.
+
+00:20:30.196 --> 00:20:32.056 A:middle
+It's 75% smaller than SRGB.
+
+00:20:33.026 --> 00:20:34.546 A:middle
+Now, this is great for masks or
+
+00:20:34.546 --> 00:20:36.246 A:middle
+text that's monochrome because
+
+00:20:36.246 --> 00:20:37.966 A:middle
+we're using 75% less memory.
+
+00:20:39.096 --> 00:20:41.396 A:middle
+So if we look at the breakdown,
+
+00:20:42.296 --> 00:20:43.966 A:middle
+we can go from 1 byte per pixel
+
+00:20:44.006 --> 00:20:45.786 A:middle
+with alpha 8 all the way up to 8
+
+00:20:45.786 --> 00:20:46.816 A:middle
+bytes per pixel with wide
+
+00:20:46.816 --> 00:20:47.096 A:middle
+format.
+
+00:20:47.466 --> 00:20:48.606 A:middle
+There's a huge range.
+
+00:20:48.916 --> 00:20:50.806 A:middle
+So what we really need to do is
+
+00:20:50.806 --> 00:20:51.756 A:middle
+know how to pick the right
+
+00:20:51.756 --> 00:20:52.046 A:middle
+format.
+
+00:20:52.926 --> 00:20:53.956 A:middle
+So how do we pick the right
+
+00:20:53.956 --> 00:20:54.906 A:middle
+format?
+
+00:20:55.656 --> 00:20:57.676 A:middle
+The short answer is don't pick
+
+00:20:57.676 --> 00:20:58.126 A:middle
+the format.
+
+00:20:58.456 --> 00:20:59.646 A:middle
+Let the format pick you.
+

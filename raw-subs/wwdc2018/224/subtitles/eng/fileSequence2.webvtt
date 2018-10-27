@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.216 --> 00:02:01.006 A:middle
+here into something a store can
+
+00:02:01.006 --> 00:02:02.306 A:middle
+understand, a managed object
+
+00:02:02.306 --> 00:02:02.606 A:middle
+model.
+
+00:02:03.616 --> 00:02:04.276 A:middle
+We'll need fields for
+
+00:02:04.276 --> 00:02:05.816 A:middle
+everything, with attributes for
+
+00:02:05.816 --> 00:02:07.406 A:middle
+things like the image's data as
+
+00:02:07.406 --> 00:02:08.606 A:middle
+well as the time it was posted,
+
+00:02:09.076 --> 00:02:11.266 A:middle
+and we'll need relationships for
+
+00:02:11.266 --> 00:02:12.236 A:middle
+posts and comments.
+
+00:02:12.596 --> 00:02:14.066 A:middle
+We've also defined a need for a
+
+00:02:14.066 --> 00:02:15.446 A:middle
+store, but there's a lot
+
+00:02:15.446 --> 00:02:17.366 A:middle
+involved in maintaining data on
+
+00:02:17.366 --> 00:02:18.156 A:middle
+disk over time.
+
+00:02:19.056 --> 00:02:20.386 A:middle
+Luckily, Core Data provides a
+
+00:02:20.386 --> 00:02:21.956 A:middle
+persistent store coordinator to
+
+00:02:21.956 --> 00:02:22.546 A:middle
+manage that.
+
+00:02:22.986 --> 00:02:24.836 A:middle
+The coordinator can do things
+
+00:02:24.836 --> 00:02:26.246 A:middle
+like compare the app's model
+
+00:02:26.246 --> 00:02:27.806 A:middle
+with the store's version and
+
+00:02:27.806 --> 00:02:29.276 A:middle
+automatically migrate it forward
+
+00:02:29.276 --> 00:02:30.306 A:middle
+as our app evolves.
+
+00:02:30.786 --> 00:02:32.916 A:middle
+Finally, managed object context
+
+00:02:32.916 --> 00:02:34.436 A:middle
+provide safe, fast, and
+
+00:02:34.436 --> 00:02:35.936 A:middle
+predictable access to our data,
+
+00:02:36.616 --> 00:02:37.826 A:middle
+even when we're using many at
+
+00:02:37.826 --> 00:02:39.426 A:middle
+the same time through features
+
+00:02:39.426 --> 00:02:40.636 A:middle
+like query generations,
+
+00:02:40.716 --> 00:02:41.896 A:middle
+connection pooling, and history
+
+00:02:41.896 --> 00:02:42.376 A:middle
+tracking.
+
+00:02:44.236 --> 00:02:46.486 A:middle
+Setting this all up requires
+
+00:02:46.566 --> 00:02:47.736 A:middle
+finding the model and loading it
+
+00:02:47.736 --> 00:02:49.236 A:middle
+and deciding where to keep the
+
+00:02:49.236 --> 00:02:51.186 A:middle
+store, but a lot of these error
+
+00:02:51.186 --> 00:02:53.026 A:middle
+paths can't actually fail once
+
+00:02:53.026 --> 00:02:54.816 A:middle
+you've shipped your app, so Core
+
+00:02:54.816 --> 00:02:56.246 A:middle
+Data provides a container type
+
+00:02:56.576 --> 00:02:57.716 A:middle
+that dramatically reduces the
+
+00:02:57.716 --> 00:02:58.946 A:middle
+amount of boilerplate required
+
+00:02:58.946 --> 00:03:00.736 A:middle
+to set up your stack, just refer
+

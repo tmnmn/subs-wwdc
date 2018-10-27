@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.087 --> 00:37:06.493 align:start position:21% line:-2
+新しいオブジェクトが 古いものと
+同じアドレスに割り当てられました
+
+00:37:06.827 --> 00:37:12.499 align:start position:27% line:-2
+コードが前のオブジェクトを
+使おうとしても―
+
+00:37:12.599 --> 00:37:16.870 align:start position:27% line:-2
+同じアドレスに別のタイプの
+オブジェクトがあります
+
+00:37:16.970 --> 00:37:22.509 align:start position:27% line:-2
+そのため関数が認識できず
+認識されないセレクタ例外に
+
+00:37:24.978 --> 00:37:27.781 align:start position:30% line:-2
+もう１つ
+よくあるエラー症状は―
+
+00:37:27.881 --> 00:37:31.618 align:start position:23% line:-1
+メモリアロケータ内での停止です
+
+00:37:31.719 --> 00:37:34.488 align:start position:21% line:-1
+malloc/free関数内です
+
+00:37:34.888 --> 00:37:38.292 align:start position:25% line:-1
+これも前提条件の例の１つで―
+
+00:37:38.392 --> 00:37:41.695 align:start position:21% line:-1
+メモリアロケータ内の前提条件です
+
+00:37:41.962 --> 00:37:45.165 align:start position:30% line:-1
+代表的なケースとしては
+
+00:37:45.466 --> 00:37:49.269 align:start position:29% line:-2
+mallocメモリ自体の
+ヒープデータ構造が―
+
+00:37:49.369 --> 00:37:53.941 align:start position:21% line:-2
+メモリエラーで壊れ
+プロセスや反応が停止する場合です
+
+00:37:54.041 --> 00:37:59.246 align:start position:23% line:-2
+あるいはmalloc APIの
+間違った使い方を探知した場合
+
+00:37:59.346 --> 00:38:03.016 align:start position:30% line:-2
+例えば オブジェクトを
+２回連続で解放すると―
+

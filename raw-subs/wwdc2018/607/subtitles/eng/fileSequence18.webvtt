@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.756 --> 00:18:00.526 A:middle
+these into the ICB.
+
+00:18:01.336 --> 00:18:03.216 A:middle
+There's a couple of details
+
+00:18:03.216 --> 00:18:03.936 A:middle
+worth noting.
+
+00:18:04.336 --> 00:18:06.036 A:middle
+You can think of an ICB as an
+
+00:18:06.036 --> 00:18:07.196 A:middle
+array of render commands.
+
+00:18:07.796 --> 00:18:09.156 A:middle
+A render command consists of a
+
+00:18:09.156 --> 00:18:10.716 A:middle
+pipeline object with shaders,
+
+00:18:11.136 --> 00:18:12.846 A:middle
+any number of buffers, and a
+
+00:18:12.846 --> 00:18:14.466 A:middle
+draw call.
+
+00:18:14.736 --> 00:18:16.366 A:middle
+Next, an ICB is built for
+
+00:18:16.366 --> 00:18:18.446 A:middle
+parallelism, so you could encode
+
+00:18:18.446 --> 00:18:20.256 A:middle
+concurrently and out of order.
+
+00:18:20.756 --> 00:18:23.316 A:middle
+And lastly, we kept the API very
+
+00:18:23.316 --> 00:18:25.126 A:middle
+simple, so it's just like what
+
+00:18:25.126 --> 00:18:26.356 A:middle
+you might be doing today on the
+
+00:18:26.356 --> 00:18:26.836 A:middle
+CPU.
+
+00:18:28.116 --> 00:18:29.886 A:middle
+Another thing -- each command
+
+00:18:29.886 --> 00:18:31.196 A:middle
+could have different properties
+
+00:18:31.196 --> 00:18:32.306 A:middle
+and even draw types.
+
+00:18:32.566 --> 00:18:35.116 A:middle
+So this is a really, really
+
+00:18:35.116 --> 00:18:36.486 A:middle
+significant step forward from
+
+00:18:36.486 --> 00:18:37.876 A:middle
+all the flavors of indirect
+
+00:18:37.876 --> 00:18:38.996 A:middle
+rendering that many of you may
+
+00:18:38.996 --> 00:18:39.886 A:middle
+have seen elsewhere.
+
+00:18:40.976 --> 00:18:42.096 A:middle
+Now, let's take a look at how we
+
+00:18:42.096 --> 00:18:43.036 A:middle
+can do this in your code.
+
+00:18:44.416 --> 00:18:46.476 A:middle
+So this is how easy it is to
+
+00:18:46.476 --> 00:18:47.526 A:middle
+encode a draw call.
+
+00:18:48.436 --> 00:18:49.616 A:middle
+The first thing you're going to
+
+00:18:49.616 --> 00:18:51.096 A:middle
+do is select the render command
+
+00:18:51.096 --> 00:18:53.666 A:middle
+by index using your thread ID.
+
+00:18:54.816 --> 00:18:56.576 A:middle
+Then, we're going to set the
+
+00:18:56.576 --> 00:18:57.296 A:middle
+properties.
+
+00:18:57.586 --> 00:18:58.906 A:middle
+So in this example, we're
+
+00:18:58.906 --> 00:19:00.286 A:middle
+setting a shader with a pipeline
+

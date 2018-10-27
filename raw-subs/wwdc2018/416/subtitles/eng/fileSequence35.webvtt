@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.516 --> 00:35:00.466 A:middle
+I already know from looking at
+
+00:35:00.466 --> 00:35:01.796 A:middle
+the Memgraph there's no leaks,
+
+00:35:02.096 --> 00:35:03.346 A:middle
+so that doesn't seem like the
+
+00:35:03.346 --> 00:35:04.276 A:middle
+tool I want to use.
+
+00:35:04.696 --> 00:35:06.636 A:middle
+But I went looking through the
+
+00:35:06.776 --> 00:35:09.896 A:middle
+help information for leaks, and
+
+00:35:09.896 --> 00:35:11.466 A:middle
+it turns out leaks can do lots
+
+00:35:11.466 --> 00:35:14.016 A:middle
+of things and including telling
+
+00:35:14.016 --> 00:35:16.296 A:middle
+me who has references to either
+
+00:35:16.296 --> 00:35:17.986 A:middle
+an object on the heap or virtual
+
+00:35:17.986 --> 00:35:18.736 A:middle
+memory region.
+
+00:35:19.226 --> 00:35:20.236 A:middle
+So let's go ahead and see what
+
+00:35:20.236 --> 00:35:21.016 A:middle
+that tells us.
+
+00:35:21.696 --> 00:35:23.556 A:middle
+So I'm going to use leaks, and
+
+00:35:23.556 --> 00:35:25.746 A:middle
+then I'm going to pass this
+
+00:35:25.806 --> 00:35:27.326 A:middle
+traceTree flag.
+
+00:35:27.986 --> 00:35:29.146 A:middle
+And what that does is it gives
+
+00:35:29.146 --> 00:35:32.056 A:middle
+me a tree view of everything
+
+00:35:32.056 --> 00:35:33.556 A:middle
+that has a reference to the
+
+00:35:33.556 --> 00:35:34.826 A:middle
+address I'm passing in.
+
+00:35:34.826 --> 00:35:36.916 A:middle
+In this case, I'm passing in the
+
+00:35:36.916 --> 00:35:39.786 A:middle
+starting address of my virtual
+
+00:35:39.786 --> 00:35:41.886 A:middle
+memory region.
+
+00:35:42.446 --> 00:35:44.006 A:middle
+And then, finally, we give it
+
+00:35:44.006 --> 00:35:44.956 A:middle
+the Memgraph file.
+
+00:35:45.906 --> 00:35:47.276 A:middle
+So what does this look like?
+
+00:35:47.466 --> 00:35:49.526 A:middle
+So what we see here is this tree
+
+00:35:49.636 --> 00:35:50.936 A:middle
+of all these references.
+
+00:35:50.936 --> 00:35:52.136 A:middle
+If we scroll up to the top,
+
+00:35:53.196 --> 00:35:55.076 A:middle
+which is way up here, I can
+
+00:35:55.076 --> 00:35:56.746 A:middle
+actually see here's my VM
+
+00:35:56.746 --> 00:35:58.716 A:middle
+region, here's my CG image
+
+00:35:58.716 --> 00:35:59.856 A:middle
+region, and then I can see
+
+00:35:59.856 --> 00:36:02.346 A:middle
+there's a tree view here of all
+

@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.266 --> 00:10:02.369 align:middle line:-2
+要查找“section-1”
+我们将首先访问“App”上下文
+
+00:10:03.136 --> 00:10:04.872 align:middle line:-1
+然后我们访问“Book”上下文
+
+00:10:04.938 --> 00:10:06.773 align:middle line:-2
+然后找到“Book”上下文的
+孩子中
+
+00:10:06.840 --> 00:10:08.408 align:middle line:-2
+标识符为“chapter-2”的
+上下文
+
+00:10:08.909 --> 00:10:11.712 align:middle line:-2
+我们将访问这个节点 然后以同样的
+方式访问“section-1”
+
+00:10:12.579 --> 00:10:15.315 align:middle line:-2
+由于“section-1”
+是我们路径上的最后一个节点
+
+00:10:15.382 --> 00:10:18.285 align:middle line:-1
+这个节点就是该路径所代表的节点
+
+00:10:20.454 --> 00:10:23.891 align:middle line:-2
+我们有几种方法来查找
+系统中的上下文
+
+00:10:24.791 --> 00:10:27.961 align:middle line:-2
+一种是使用绝对上下文路径
+为此你可以调用
+
+00:10:28.028 --> 00:10:32.633 align:middle line:-2
+CLSDataStore的 contexts
+(matchingIdentifierPath)方法
+
+00:10:34.101 --> 00:10:39.473 align:middle line:-1
+此方法将会返回路径中的所有上下文
+
+00:10:39.840 --> 00:10:43.477 align:middle line:-2
+所以在这个例子中
+它应该是一个包含“App”上下文
+
+00:10:43.544 --> 00:10:46.747 align:middle line:-2
+“Book”上下文、“chapter-2”上下文
+以及“section-1”上下文的数组
+
+00:10:48.015 --> 00:10:51.018 align:middle line:-2
+如果由于某种原因 “section-1”中的
+“chapter-2”丢失了
+
+00:10:51.485 --> 00:10:53.620 align:middle line:-1
+那么完成块中的数组
+
+00:10:53.687 --> 00:10:56.790 align:middle line:-2
+将继续包含“App”上下文
+和“Book”上下文
+
+00:10:57.958 --> 00:11:02.262 align:middle line:-2
+这使你有机会为遗失的上下文
+创建完全不同的内容
+

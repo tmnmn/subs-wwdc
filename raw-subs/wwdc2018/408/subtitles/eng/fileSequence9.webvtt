@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.276 --> 00:09:00.146 A:middle
+everything that's in that
+
+00:09:00.146 --> 00:09:00.426 A:middle
+target.
+
+00:09:01.226 --> 00:09:02.386 A:middle
+So if we look at our game, it
+
+00:09:02.806 --> 00:09:04.506 A:middle
+has a dependency on Physics,
+
+00:09:04.676 --> 00:09:05.696 A:middle
+Shaders, and Utilities.
+
+00:09:06.046 --> 00:09:06.906 A:middle
+This is actually okay.
+
+00:09:08.196 --> 00:09:09.936 A:middle
+The suspect one is the
+
+00:09:09.936 --> 00:09:11.306 A:middle
+dependency between our Shaders
+
+00:09:11.306 --> 00:09:13.026 A:middle
+target and our Utilities target.
+
+00:09:13.786 --> 00:09:15.436 A:middle
+Now, our Shaders target produces
+
+00:09:15.436 --> 00:09:16.936 A:middle
+a meta library, which is
+
+00:09:16.936 --> 00:09:18.556 A:middle
+essentially just a bundle of GPU
+
+00:09:18.556 --> 00:09:19.596 A:middle
+code that's going to run on our
+
+00:09:19.596 --> 00:09:20.256 A:middle
+graphics card.
+
+00:09:21.376 --> 00:09:23.286 A:middle
+And our Utilities target just
+
+00:09:23.286 --> 00:09:24.696 A:middle
+produces a normal frame, which
+
+00:09:24.696 --> 00:09:25.666 A:middle
+is just CPU code.
+
+00:09:25.936 --> 00:09:26.906 A:middle
+So there's already a little bit
+
+00:09:26.906 --> 00:09:28.946 A:middle
+of a suspect dependency here.
+
+00:09:29.506 --> 00:09:30.926 A:middle
+When we dig into it we see that
+
+00:09:30.926 --> 00:09:32.796 A:middle
+the utilities target actually
+
+00:09:32.796 --> 00:09:34.466 A:middle
+has a build phase in it that's
+
+00:09:34.466 --> 00:09:36.316 A:middle
+generating some information
+
+00:09:36.316 --> 00:09:37.566 A:middle
+that's used by both targets.
+
+00:09:37.826 --> 00:09:38.726 A:middle
+Which is totally fine.
+
+00:09:39.276 --> 00:09:40.466 A:middle
+It's just that Shaders doesn't
+
+00:09:40.466 --> 00:09:42.016 A:middle
+need anything else from the
+
+00:09:42.016 --> 00:09:42.796 A:middle
+Utilities target.
+
+00:09:43.306 --> 00:09:46.016 A:middle
+So it's best to break out that
+
+00:09:46.016 --> 00:09:47.356 A:middle
+into its own target.
+
+00:09:48.226 --> 00:09:49.666 A:middle
+And we're going to see that this
+
+00:09:49.666 --> 00:09:50.866 A:middle
+small incremental change
+
+00:09:50.866 --> 00:09:52.196 A:middle
+actually has a large and
+
+00:09:52.196 --> 00:09:53.666 A:middle
+significant impact on our
+
+00:09:53.666 --> 00:09:54.746 A:middle
+overall build timeline.
+
+00:09:56.826 --> 00:09:58.446 A:middle
+So the new green box that just
+
+00:09:58.446 --> 00:09:59.896 A:middle
+moved in is our new code target.
+

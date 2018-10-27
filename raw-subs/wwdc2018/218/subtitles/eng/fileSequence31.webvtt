@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.676 --> 00:31:00.086 A:middle
+Not only do they include the
+
+00:31:00.086 --> 00:31:01.786 A:middle
+exact formula that we use for
+
+00:31:01.786 --> 00:31:03.236 A:middle
+that lightening or darkening
+
+00:31:03.236 --> 00:31:05.306 A:middle
+effect, but they also have a set
+
+00:31:05.306 --> 00:31:06.876 A:middle
+of control artwork and color
+
+00:31:06.876 --> 00:31:07.806 A:middle
+definitions that have been
+
+00:31:07.806 --> 00:31:09.596 A:middle
+designed to work great with that
+
+00:31:09.636 --> 00:31:10.126 A:middle
+blend mode.
+
+00:31:10.646 --> 00:31:13.426 A:middle
+But how does your code use it?
+
+00:31:14.176 --> 00:31:15.436 A:middle
+Well, it's very simple.
+
+00:31:16.356 --> 00:31:18.286 A:middle
+In your NSView subclass, you can
+
+00:31:18.286 --> 00:31:19.676 A:middle
+override the allowsVibrancy
+
+00:31:19.676 --> 00:31:22.206 A:middle
+property to return true and the
+
+00:31:22.206 --> 00:31:23.206 A:middle
+blending effect is going to
+
+00:31:23.206 --> 00:31:24.546 A:middle
+automatically apply to your
+
+00:31:24.546 --> 00:31:25.906 A:middle
+views drawing and also the
+
+00:31:25.906 --> 00:31:27.456 A:middle
+drawing of all of its
+
+00:31:27.676 --> 00:31:28.000 A:middle
+descendants.
+
+00:31:29.946 --> 00:31:31.046 A:middle
+Typically, when you're drawing
+
+00:31:31.046 --> 00:31:33.116 A:middle
+in this vibrant context, you
+
+00:31:33.116 --> 00:31:34.566 A:middle
+want to use one of the built-in
+
+00:31:34.566 --> 00:31:35.886 A:middle
+label colors, depending on the
+
+00:31:35.886 --> 00:31:37.166 A:middle
+prominence of your content.
+
+00:31:37.996 --> 00:31:38.976 A:middle
+Both vibrantDark and
+
+00:31:38.976 --> 00:31:39.896 A:middle
+vibrantLight have great
+
+00:31:39.896 --> 00:31:41.166 A:middle
+definitions for all four of
+
+00:31:41.166 --> 00:31:42.636 A:middle
+these colors that allow you to
+
+00:31:42.636 --> 00:31:44.036 A:middle
+establish that nice hierarchy.
+
+00:31:45.476 --> 00:31:46.616 A:middle
+However, you don't have to use
+
+00:31:46.616 --> 00:31:47.176 A:middle
+these colors.
+
+00:31:47.176 --> 00:31:48.696 A:middle
+You can use any color that you'd
+
+00:31:48.696 --> 00:31:50.336 A:middle
+like, but we prefer to use
+
+00:31:50.336 --> 00:31:51.866 A:middle
+non-grayscale colors.
+
+00:31:52.546 --> 00:31:53.936 A:middle
+Avoid non-grayscale colors
+
+00:31:53.976 --> 00:31:55.736 A:middle
+because, if you use them, the
+
+00:31:56.126 --> 00:31:57.696 A:middle
+blending effect is going to
+
+00:31:57.746 --> 00:31:59.696 A:middle
+impact the design intent of your
+
+00:31:59.696 --> 00:32:00.876 A:middle
+color and it's going to wash it
+

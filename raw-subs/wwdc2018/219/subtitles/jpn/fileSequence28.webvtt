@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:58.445 --> 00:28:00.447 align:start position:36% line:-1
+単色を設定します
+
+00:28:00.581 --> 00:28:05.586 align:start position:34% line:-2
+単色のコピー画像を
+別々には持ちません
+
+00:28:07.988 --> 00:28:11.058 align:start position:30% line:-1
+一方 UILabelは
+
+00:28:11.358 --> 00:28:15.262 align:start position:38% line:-2
+カラーの文字や
+絵文字ではなく
+
+00:28:15.863 --> 00:28:20.801 align:start position:29% line:-2
+黒い文字の表示なら
+メモリを75％節約します
+
+00:28:21.835 --> 00:28:25.539 align:start position:34% line:-2
+この最適化の詳細は
+WWDC18の―
+
+00:28:25.839 --> 00:28:31.145 align:start position:9% line:-2
+“iOS Memory Deep Dive”を
+どうぞ
+
+00:28:31.345 --> 00:28:34.982 align:start position:29% line:-2
+A8のバッキングストアの
+解説です
+
+00:28:38.252 --> 00:28:39.887 align:start position:38% line:-1
+UIKitで―
+
+00:28:41.388 --> 00:28:45.959 align:start position:27% line:-2
+オフスクリーンバッファの
+画像をレンダリングする時は
+
+00:28:46.093 --> 00:28:50.264 align:start position:7% line:-2
+UIGraphicsImageRendererを
+使います
+
+00:28:50.898 --> 00:28:56.970 align:start position:14% line:-2
+UIGraphicsBeginImage
+Contextは使いません
+
+00:28:57.070 --> 00:29:02.443 align:start position:27% line:-2
+前者だけが広色域を
+正しくレンダリングできます
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.986 --> 00:03:00.126 A:middle
+that you have to be aware of.
+
+00:03:00.986 --> 00:03:01.966 A:middle
+The first comes from the
+
+00:03:01.966 --> 00:03:03.476 A:middle
+additional disk storage that
+
+00:03:03.476 --> 00:03:05.656 A:middle
+comes with doing so.
+
+00:03:07.046 --> 00:03:08.876 A:middle
+Traditional image container
+
+00:03:08.876 --> 00:03:11.796 A:middle
+formats uses extra space to
+
+00:03:11.796 --> 00:03:13.376 A:middle
+store metadata, as well as other
+
+00:03:13.376 --> 00:03:15.516 A:middle
+attributes associated with the
+
+00:03:15.516 --> 00:03:16.396 A:middle
+underlying image.
+
+00:03:17.766 --> 00:03:18.876 A:middle
+Now if your application has a
+
+00:03:18.876 --> 00:03:21.006 A:middle
+huge number of assets, and if
+
+00:03:21.006 --> 00:03:23.366 A:middle
+they have similar metadata, the
+
+00:03:23.366 --> 00:03:25.016 A:middle
+same information gets duplicated
+
+00:03:25.016 --> 00:03:26.796 A:middle
+over and over on disk for no
+
+00:03:26.796 --> 00:03:27.466 A:middle
+real benefit.
+
+00:03:28.936 --> 00:03:31.276 A:middle
+Additionally, if most of your
+
+00:03:31.276 --> 00:03:33.636 A:middle
+assets are fairly small then you
+
+00:03:33.636 --> 00:03:35.026 A:middle
+do not get the full benefit of
+
+00:03:35.076 --> 00:03:36.236 A:middle
+most image compression.
+
+00:03:38.346 --> 00:03:40.486 A:middle
+The other type of drawback comes
+
+00:03:40.486 --> 00:03:41.726 A:middle
+mainly from the organizational
+
+00:03:41.726 --> 00:03:43.086 A:middle
+overhead that you have to pay
+
+00:03:43.086 --> 00:03:43.396 A:middle
+for.
+
+00:03:43.766 --> 00:03:45.826 A:middle
+It is very hard work with a
+
+00:03:45.826 --> 00:03:47.626 A:middle
+large cache of loose image files
+
+00:03:48.666 --> 00:03:50.636 A:middle
+and it's also much harder to
+
+00:03:50.636 --> 00:03:52.096 A:middle
+interact with them from the
+
+00:03:52.096 --> 00:03:53.986 A:middle
+NSImage and UIImage family of
+
+00:03:53.986 --> 00:03:54.476 A:middle
+APIs.
+
+00:03:55.966 --> 00:03:57.526 A:middle
+Last but not least, you also
+
+00:03:57.526 --> 00:03:58.176 A:middle
+have to deal with the
+
+00:03:58.176 --> 00:04:00.416 A:middle
+inconsistency in image format,
+

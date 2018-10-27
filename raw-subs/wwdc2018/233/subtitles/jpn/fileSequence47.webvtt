@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:58.919 --> 00:47:01.321 align:start position:34% line:-2
+そのラベルの１つが
+消えています
+
+00:47:02.089 --> 00:47:06.693 align:start position:27% line:-2
+親ビューでダンプを実行し
+何が起きているか見てみます
+
+00:47:07.728 --> 00:47:10.197 align:start position:38% line:-2
+消えたラベルが
+見つかりました
+
+00:47:10.631 --> 00:47:15.202 align:start position:21% line:-2
+しかし その並びの
+imageViewを見てみると―
+
+00:47:15.569 --> 00:47:21.175 align:start position:27% line:-2
+この２つのフレームの起点が
+同じだと分かります
+
+00:47:21.942 --> 00:47:26.513 align:start position:25% line:-2
+imageViewがラベルを
+塞いでいるのでしょう
+
+00:47:27.214 --> 00:47:29.483 align:start position:34% line:-2
+レイアウトコードを
+再度 調べるべきだ
+
+00:47:31.418 --> 00:47:34.922 align:start position:25% line:-2
+Swiftのオブジェクト用の
+ダンプに加えて―
+
+00:47:35.022 --> 00:47:38.125 align:start position:21% line:-2
+Objective-Cのコードが
+まだあるなら―
+
+00:47:38.458 --> 00:47:41.862 align:start position:14% line:-2
+ivarDescriptionメソッドも
+NSObjectにはあります
+
+00:47:42.696 --> 00:47:47.134 align:start position:16% line:-2
+Objective-Cのオブジェクトの
+インスタント変数を出力します
+
+00:47:48.402 --> 00:47:51.138 align:start position:32% line:-2
+スクリーンショットの
+コードにもバグが
+
+00:47:51.238 --> 00:47:53.841 align:start position:32% line:-2
+クロップハンドルが
+なぜか機能していない
+
+00:47:55.309 --> 00:48:00.514 align:start position:11% line:-2
+スクリーンショットのビューで
+ivarDescriptionを呼び出すと―
+

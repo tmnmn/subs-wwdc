@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.386 --> 00:11:00.616 A:middle
+more than 100 megabytes.
+
+00:11:01.196 --> 00:11:03.856 A:middle
+If we quantize it to 8-bits,
+
+00:11:04.396 --> 00:11:05.616 A:middle
+then the architecture hasn't
+
+00:11:05.616 --> 00:11:07.476 A:middle
+changed; we still have 25
+
+00:11:07.476 --> 00:11:08.886 A:middle
+million parameters.
+
+00:11:09.616 --> 00:11:11.606 A:middle
+But we are now using only 1 byte
+
+00:11:12.686 --> 00:11:14.236 A:middle
+to store a single weight, and
+
+00:11:14.236 --> 00:11:15.396 A:middle
+this means that the model size
+
+00:11:15.396 --> 00:11:16.856 A:middle
+is reduced by a factor of 4x.
+
+00:11:17.326 --> 00:11:18.686 A:middle
+It's only -- it now only takes
+
+00:11:18.686 --> 00:11:20.066 A:middle
+26 megabytes to store this
+
+00:11:20.066 --> 00:11:20.366 A:middle
+model.
+
+00:11:20.906 --> 00:11:22.046 A:middle
+And we can go further.
+
+00:11:22.426 --> 00:11:23.386 A:middle
+We can use that quantized
+
+00:11:23.386 --> 00:11:24.926 A:middle
+representation that only uses 4
+
+00:11:24.926 --> 00:11:26.716 A:middle
+bits per weight in this model
+
+00:11:27.286 --> 00:11:28.586 A:middle
+and end up with a model that is
+
+00:11:28.586 --> 00:11:28.976 A:middle
+even smaller.
+
+00:11:29.516 --> 00:11:36.016 A:middle
+[ Applause ]
+
+00:11:36.516 --> 00:11:38.986 A:middle
+And again, Core ML supports all
+
+00:11:38.986 --> 00:11:40.626 A:middle
+the quantization modes all the
+
+00:11:40.626 --> 00:11:43.876 A:middle
+way down to 8 bits.
+
+00:11:44.296 --> 00:11:47.096 A:middle
+Now quantization is a powerful
+
+00:11:47.096 --> 00:11:48.886 A:middle
+technique to take an existing
+
+00:11:48.886 --> 00:11:50.286 A:middle
+architecture and of a smaller
+
+00:11:50.286 --> 00:11:50.896 A:middle
+version of it.
+
+00:11:51.396 --> 00:11:52.616 A:middle
+But how can you obtain quantized
+
+00:11:52.616 --> 00:11:52.896 A:middle
+model?
+
+00:11:54.516 --> 00:11:56.486 A:middle
+If you have any neural
+
+00:11:56.486 --> 00:11:58.306 A:middle
+networking in Core ML format,
+
+00:11:58.306 --> 00:11:59.626 A:middle
+you can use Core ML Tools to
+
+00:11:59.626 --> 00:12:00.586 A:middle
+obtain a quantized
+

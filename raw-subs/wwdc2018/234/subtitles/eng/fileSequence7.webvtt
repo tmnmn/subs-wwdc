@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:00.516 --> 00:07:07.076 A:middle
+[ Applause ]
+
+00:07:07.576 --> 00:07:09.076 A:middle
+Now that we've covered the two
+
+00:07:09.076 --> 00:07:11.316 A:middle
+biggest announcements for native
+
+00:07:11.316 --> 00:07:12.866 A:middle
+developers using WebViews, and
+
+00:07:12.866 --> 00:07:14.376 A:middle
+extensions developers, the
+
+00:07:14.376 --> 00:07:15.656 A:middle
+remainder of these features are
+
+00:07:15.716 --> 00:07:17.336 A:middle
+primarily going to be about web
+
+00:07:17.336 --> 00:07:17.906 A:middle
+development.
+
+00:07:18.346 --> 00:07:20.016 A:middle
+So, let's start with subresource
+
+00:07:20.136 --> 00:07:20.756 A:middle
+integrity.
+
+00:07:21.626 --> 00:07:23.286 A:middle
+Now, as a developer, you may
+
+00:07:23.356 --> 00:07:25.396 A:middle
+serve your content over an HTTPS
+
+00:07:25.396 --> 00:07:26.596 A:middle
+connection to your user.
+
+00:07:26.596 --> 00:07:28.546 A:middle
+And, that resulting content may
+
+00:07:28.676 --> 00:07:31.056 A:middle
+also include content distributed
+
+00:07:31.056 --> 00:07:33.356 A:middle
+over a third-party server, like
+
+00:07:33.356 --> 00:07:34.696 A:middle
+a content delivery network.
+
+00:07:35.576 --> 00:07:36.876 A:middle
+Now, both connections may be
+
+00:07:36.876 --> 00:07:39.316 A:middle
+secure, both may use HTTPS,
+
+00:07:39.806 --> 00:07:40.906 A:middle
+which means you maintain the
+
+00:07:41.126 --> 00:07:43.156 A:middle
+confidentiality, authentication,
+
+00:07:43.156 --> 00:07:44.616 A:middle
+and integrity of the data
+
+00:07:44.616 --> 00:07:45.216 A:middle
+transferred.
+
+00:07:45.826 --> 00:07:48.326 A:middle
+But, what happens if that third
+
+00:07:48.326 --> 00:07:50.686 A:middle
+party itself is compromised?
+
+00:07:51.066 --> 00:07:51.726 A:middle
+It could happen.
+
+00:07:52.296 --> 00:07:54.526 A:middle
+And, in this case, while HTTPS
+
+00:07:54.526 --> 00:07:56.256 A:middle
+secures the connection, it
+
+00:07:56.256 --> 00:07:57.446 A:middle
+doesn't secure against a
+
+00:07:57.446 --> 00:07:58.816 A:middle
+compromised server.
+
+00:07:59.436 --> 00:08:01.356 A:middle
+It can modify the scripts, and
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.456 --> 00:38:00.486 A:middle
+Also this allows us to track and
+
+00:38:00.486 --> 00:38:02.116 A:middle
+efficiently update shared
+
+00:38:02.116 --> 00:38:04.236 A:middle
+resources whose data is changing
+
+00:38:04.236 --> 00:38:05.076 A:middle
+every frame.
+
+00:38:05.556 --> 00:38:08.676 A:middle
+Since we are here let's talk
+
+00:38:08.676 --> 00:38:09.876 A:middle
+more about these resource
+
+00:38:09.876 --> 00:38:12.486 A:middle
+updates and see how we can make
+
+00:38:12.486 --> 00:38:13.796 A:middle
+them efficient using this
+
+00:38:13.796 --> 00:38:14.656 A:middle
+completion handler.
+
+00:38:14.656 --> 00:38:18.626 A:middle
+So almost all applications will
+
+00:38:18.626 --> 00:38:21.066 A:middle
+be pushing new data to GPU every
+
+00:38:21.066 --> 00:38:21.436 A:middle
+frame.
+
+00:38:21.926 --> 00:38:24.206 A:middle
+For example, new shaded uniforms
+
+00:38:24.316 --> 00:38:25.716 A:middle
+needed for animations.
+
+00:38:26.256 --> 00:38:29.146 A:middle
+In Metal CPU can write to this
+
+00:38:29.146 --> 00:38:31.776 A:middle
+shared resources anytime even if
+
+00:38:31.886 --> 00:38:33.966 A:middle
+GP is accessing the same memory
+
+00:38:35.206 --> 00:38:36.276 A:middle
+at the same time.
+
+00:38:37.376 --> 00:38:38.876 A:middle
+Metal does not protect you
+
+00:38:38.876 --> 00:38:40.456 A:middle
+against these data-races.
+
+00:38:41.256 --> 00:38:44.176 A:middle
+This compares to OpenGL which by
+
+00:38:44.176 --> 00:38:45.666 A:middle
+default prevents these
+
+00:38:45.666 --> 00:38:48.056 A:middle
+data-races either by waiting for
+
+00:38:48.056 --> 00:38:50.676 A:middle
+the GPU workloads to finish or
+
+00:38:50.676 --> 00:38:53.166 A:middle
+by doing extra copies, which may
+
+00:38:53.166 --> 00:38:54.586 A:middle
+not be optimal for your
+
+00:38:54.586 --> 00:38:55.376 A:middle
+application.
+
+00:38:56.256 --> 00:38:58.756 A:middle
+With Metal you can implement any
+
+00:38:58.756 --> 00:39:01.546 A:middle
+optimal synchronization strategy
+

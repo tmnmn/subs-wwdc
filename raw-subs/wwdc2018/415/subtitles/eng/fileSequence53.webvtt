@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:58.996 --> 00:53:00.186 A:middle
+So what are we going to do with
+
+00:53:00.186 --> 00:53:00.516 A:middle
+that?
+
+00:53:00.516 --> 00:53:03.496 A:middle
+Well, first off, the build
+
+00:53:03.496 --> 00:53:05.166 A:middle
+system is going to pass all of
+
+00:53:05.166 --> 00:53:06.366 A:middle
+the .o's in as inputs to the
+
+00:53:06.366 --> 00:53:06.796 A:middle
+linker.
+
+00:53:06.796 --> 00:53:07.766 A:middle
+And the linker's going to start
+
+00:53:07.766 --> 00:53:08.986 A:middle
+by creating a file to put them
+
+00:53:08.986 --> 00:53:09.196 A:middle
+in.
+
+00:53:09.196 --> 00:53:10.656 A:middle
+In this case we're building
+
+00:53:10.656 --> 00:53:11.886 A:middle
+PetKit which is an embedded
+
+00:53:11.886 --> 00:53:13.066 A:middle
+framework inside of PetWall.
+
+00:53:13.066 --> 00:53:15.906 A:middle
+And so we'll just start by
+
+00:53:15.906 --> 00:53:16.626 A:middle
+copying.
+
+00:53:16.626 --> 00:53:17.846 A:middle
+We'll create what's called a
+
+00:53:17.896 --> 00:53:18.506 A:middle
+text segment.
+
+00:53:19.366 --> 00:53:20.696 A:middle
+Which is where we keep all of
+
+00:53:20.696 --> 00:53:21.836 A:middle
+the code for an application.
+
+00:53:21.896 --> 00:53:24.226 A:middle
+And we'll take the cat.o and
+
+00:53:24.226 --> 00:53:25.026 A:middle
+we'll copy it in.
+
+00:53:25.026 --> 00:53:25.846 A:middle
+But we're going to split it into
+
+00:53:25.846 --> 00:53:26.596 A:middle
+two sections.
+
+00:53:26.966 --> 00:53:28.366 A:middle
+One for that string, and one for
+
+00:53:28.366 --> 00:53:29.316 A:middle
+the executable code.
+
+00:53:29.316 --> 00:53:32.176 A:middle
+But we now know the absolute
+
+00:53:32.496 --> 00:53:33.816 A:middle
+addresses of these things so the
+
+00:53:33.816 --> 00:53:37.406 A:middle
+linker can go and rewrite cat.o
+
+00:53:37.616 --> 00:53:40.196 A:middle
+to load from a specific offset.
+
+00:53:40.796 --> 00:53:42.186 A:middle
+You'll notice that the second
+
+00:53:42.186 --> 00:53:43.796 A:middle
+instruction just went away.
+
+00:53:43.796 --> 00:53:45.456 A:middle
+We replaced it with what, with a
+
+00:53:45.456 --> 00:53:46.496 A:middle
+null instruction that does
+
+00:53:46.496 --> 00:53:46.906 A:middle
+nothing.
+
+00:53:47.866 --> 00:53:49.916 A:middle
+But we cannot remove the
+
+00:53:49.916 --> 00:53:51.756 A:middle
+instruction because we can't
+
+00:53:51.756 --> 00:53:52.816 A:middle
+create or remove code.
+
+00:53:52.816 --> 00:53:55.116 A:middle
+It would mess up all of the
+
+00:53:55.116 --> 00:53:56.226 A:middle
+sizing that we've already done.
+
+00:53:56.586 --> 00:53:58.706 A:middle
+So instead it just is removed.
+
+00:53:59.336 --> 00:54:01.556 A:middle
+It, it's just replaced with a no
+

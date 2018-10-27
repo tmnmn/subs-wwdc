@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.416 --> 00:30:02.316 A:middle
+updated on my container view.
+
+00:30:05.756 --> 00:30:06.696 A:middle
+We're almost done.
+
+00:30:07.366 --> 00:30:09.286 A:middle
+Recall that when I swipe to the
+
+00:30:09.286 --> 00:30:11.696 A:middle
+carousel, the information, the
+
+00:30:11.696 --> 00:30:13.386 A:middle
+content of the stats view is
+
+00:30:13.386 --> 00:30:13.876 A:middle
+changing.
+
+00:30:14.526 --> 00:30:15.836 A:middle
+However, when I'm swiping with
+
+00:30:15.836 --> 00:30:17.676 A:middle
+VoiceOver, I need to let the
+
+00:30:17.676 --> 00:30:18.986 A:middle
+app, I need to let VoiceOver
+
+00:30:18.986 --> 00:30:19.896 A:middle
+know to update it's
+
+00:30:19.896 --> 00:30:20.626 A:middle
+understanding of the
+
+00:30:20.626 --> 00:30:21.826 A:middle
+accessibility elements on
+
+00:30:21.826 --> 00:30:22.256 A:middle
+screen.
+
+00:30:22.726 --> 00:30:24.526 A:middle
+To do that, I can post a layout
+
+00:30:24.526 --> 00:30:25.826 A:middle
+change notification whenever a
+
+00:30:25.826 --> 00:30:26.586 A:middle
+scroll occurs.
+
+00:30:27.156 --> 00:30:29.496 A:middle
+I'll head over in my view
+
+00:30:29.496 --> 00:30:31.736 A:middle
+controller file, and inside my
+
+00:30:31.736 --> 00:30:33.896 A:middle
+scroll view did scroll view at
+
+00:30:33.896 --> 00:30:35.606 A:middle
+the very end I'll post that
+
+00:30:35.606 --> 00:30:37.066 A:middle
+layout change notification like
+
+00:30:37.096 --> 00:30:37.436 A:middle
+this.
+
+00:30:37.996 --> 00:30:41.566 A:middle
+And that's it for the carousel
+
+00:30:41.566 --> 00:30:42.106 A:middle
+container view.
+
+00:30:42.946 --> 00:30:45.986 A:middle
+A core part of this solution was
+
+00:30:45.986 --> 00:30:47.706 A:middle
+using and creating accessibility
+
+00:30:47.706 --> 00:30:49.666 A:middle
+elements, and I can use this
+
+00:30:49.666 --> 00:30:51.026 A:middle
+same concept to help me solve a
+
+00:30:51.026 --> 00:30:52.846 A:middle
+different problem in the stats
+
+00:30:52.846 --> 00:30:53.146 A:middle
+view.
+
+00:30:53.796 --> 00:30:55.156 A:middle
+Recall that in the stats view
+
+00:30:55.286 --> 00:30:56.146 A:middle
+all the information was
+
+00:30:56.146 --> 00:30:57.546 A:middle
+separated, and it lacked
+
+00:30:57.546 --> 00:30:58.246 A:middle
+context.
+
+00:30:58.856 --> 00:31:00.456 A:middle
+I can use this same concept to
+

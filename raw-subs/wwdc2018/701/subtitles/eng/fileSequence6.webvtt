@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:00.996 --> 00:06:02.186 A:middle
+So if I keep sliding this
+
+00:06:02.186 --> 00:06:02.566 A:middle
+higher,
+
+00:06:05.976 --> 00:06:07.276 A:middle
+eventually I've removed all the
+
+00:06:07.276 --> 00:06:07.616 A:middle
+noise.
+
+00:06:07.946 --> 00:06:12.186 A:middle
+And if I go back to the time
+
+00:06:12.186 --> 00:06:12.866 A:middle
+domain, you can see that I
+
+00:06:12.866 --> 00:06:13.636 A:middle
+removed the noise.
+
+00:06:14.066 --> 00:06:14.916 A:middle
+And in case you don't believe
+
+00:06:14.946 --> 00:06:17.166 A:middle
+me, we can remove the threshold,
+
+00:06:17.976 --> 00:06:19.096 A:middle
+and this is what this looks like
+
+00:06:19.496 --> 00:06:21.096 A:middle
+with all the noise still added.
+
+00:06:21.666 --> 00:06:23.606 A:middle
+So let me show you how we do
+
+00:06:23.606 --> 00:06:23.856 A:middle
+that.
+
+00:06:30.046 --> 00:06:30.876 A:middle
+At a high level what we're going
+
+00:06:30.876 --> 00:06:32.146 A:middle
+to do is first perform an
+
+00:06:32.146 --> 00:06:33.256 A:middle
+analysis on a signal.
+
+00:06:33.656 --> 00:06:34.686 A:middle
+That's what the switch let me
+
+00:06:34.686 --> 00:06:34.846 A:middle
+do.
+
+00:06:36.246 --> 00:06:37.936 A:middle
+We're then going to identify the
+
+00:06:37.936 --> 00:06:38.956 A:middle
+frequency components that
+
+00:06:38.956 --> 00:06:40.426 A:middle
+represent the noise and remove
+
+00:06:40.426 --> 00:06:40.616 A:middle
+them.
+
+00:06:41.926 --> 00:06:43.016 A:middle
+After we have done that, we're
+
+00:06:43.016 --> 00:06:44.366 A:middle
+going to reconstruct the audio
+
+00:06:44.366 --> 00:06:44.686 A:middle
+signal.
+
+00:06:44.686 --> 00:06:45.966 A:middle
+So let me show you some code.
+
+00:06:50.176 --> 00:06:51.446 A:middle
+What we're going to use here is
+
+00:06:51.446 --> 00:06:53.296 A:middle
+a discrete cosine transform or a
+
+00:06:53.296 --> 00:06:53.786 A:middle
+DCT.
+
+00:06:55.496 --> 00:06:56.666 A:middle
+You can see here the DCT
+
+00:06:56.666 --> 00:06:57.476 A:middle
+CreateSetup.
+
+00:06:58.516 --> 00:07:01.046 A:middle
+This context is going to
+

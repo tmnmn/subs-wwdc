@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.896 --> 00:15:00.536 A:middle
+had before.
+
+00:15:00.536 --> 00:15:02.466 A:middle
+This is the bounds inset by the
+
+00:15:02.466 --> 00:15:05.546 A:middle
+margins, and some arbitrary
+
+00:15:05.546 --> 00:15:07.726 A:middle
+definition of what a minimum
+
+00:15:07.856 --> 00:15:10.726 A:middle
+column width is, it's 300
+
+00:15:10.726 --> 00:15:11.156 A:middle
+points.
+
+00:15:11.696 --> 00:15:14.106 A:middle
+And then taking both of those
+
+00:15:14.106 --> 00:15:15.796 A:middle
+values and using them to
+
+00:15:15.796 --> 00:15:17.476 A:middle
+calculate a maximum number of
+
+00:15:17.476 --> 00:15:18.986 A:middle
+column that I think I can fit
+
+00:15:18.986 --> 00:15:21.146 A:middle
+within the available space, and
+
+00:15:21.146 --> 00:15:23.096 A:middle
+I'm taking that and dividing the
+
+00:15:23.096 --> 00:15:24.536 A:middle
+available width by it to
+
+00:15:24.536 --> 00:15:26.546 A:middle
+calculate an optimal cell width,
+
+00:15:26.546 --> 00:15:29.446 A:middle
+which might be more than our 300
+
+00:15:29.446 --> 00:15:29.816 A:middle
+points.
+
+00:15:30.626 --> 00:15:32.346 A:middle
+I'm then passing that to the CT
+
+00:15:32.346 --> 00:15:33.636 A:middle
+size that I'm using as my item
+
+00:15:33.636 --> 00:15:33.966 A:middle
+size.
+
+00:15:34.886 --> 00:15:37.166 A:middle
+Okay. So let's go back to our
+
+00:15:37.166 --> 00:15:39.546 A:middle
+simulator again and see what our
+
+00:15:39.546 --> 00:15:40.676 A:middle
+updated layout looks like.
+
+00:15:42.246 --> 00:15:43.596 A:middle
+Okay. So everything is the same
+
+00:15:43.596 --> 00:15:43.806 A:middle
+here.
+
+00:15:43.806 --> 00:15:44.466 A:middle
+We didn't break it.
+
+00:15:44.736 --> 00:15:47.756 A:middle
+It's a good start, and if we go
+
+00:15:47.756 --> 00:15:50.146 A:middle
+to portrait, there are our
+
+00:15:50.146 --> 00:15:51.416 A:middle
+multiple columns side by side,
+
+00:15:51.536 --> 00:15:52.136 A:middle
+just what we want.
+
+00:15:53.436 --> 00:15:55.186 A:middle
+What do you think, Steve?
+
+00:15:55.656 --> 00:15:56.306 A:middle
+&gt;&gt; That looks great.
+
+00:15:56.306 --> 00:15:57.596 A:middle
+We got a great adaptable
+
+00:15:57.596 --> 00:15:58.706 A:middle
+columnar base layout.
+
+00:15:58.706 --> 00:15:59.726 A:middle
+Not a lot of work.
+

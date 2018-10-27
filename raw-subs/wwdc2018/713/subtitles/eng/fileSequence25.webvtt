@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.006 --> 00:25:00.126 A:middle
+data, tokenizing it, extracting
+
+00:25:00.126 --> 00:25:00.856 A:middle
+features from it.
+
+00:25:01.266 --> 00:25:03.226 A:middle
+This one is a bit larger model.
+
+00:25:03.226 --> 00:25:04.226 A:middle
+It takes a couple minutes to
+
+00:25:04.226 --> 00:25:04.556 A:middle
+train.
+
+00:25:04.556 --> 00:25:06.746 A:middle
+So let's just let that go, and
+
+00:25:06.746 --> 00:25:08.696 A:middle
+in the meantime, take a look at
+
+00:25:08.696 --> 00:25:10.966 A:middle
+some of the code we have to use
+
+00:25:10.966 --> 00:25:12.026 A:middle
+these at run time.
+
+00:25:12.546 --> 00:25:14.166 A:middle
+So I've written two very small
+
+00:25:14.166 --> 00:25:16.106 A:middle
+classes to do what I need to do
+
+00:25:16.106 --> 00:25:16.576 A:middle
+at run time.
+
+00:25:17.106 --> 00:25:18.546 A:middle
+The first one uses the text
+
+00:25:18.546 --> 00:25:22.136 A:middle
+classifier by finding that model
+
+00:25:22.386 --> 00:25:24.386 A:middle
+in my apps resources and
+
+00:25:24.386 --> 00:25:25.826 A:middle
+creating an NL model for it.
+
+00:25:26.856 --> 00:25:28.656 A:middle
+And then when I run across an
+
+00:25:28.656 --> 00:25:32.016 A:middle
+article, I just ask the model
+
+00:25:32.016 --> 00:25:33.616 A:middle
+for a predicted label for that
+
+00:25:33.616 --> 00:25:35.856 A:middle
+article, and that's really all
+
+00:25:35.856 --> 00:25:38.246 A:middle
+there is to it.
+
+00:25:38.506 --> 00:25:42.726 A:middle
+Slightly more code for use of my
+
+00:25:42.726 --> 00:25:43.486 A:middle
+word tagger.
+
+00:25:44.176 --> 00:25:46.006 A:middle
+So as you saw before, I have a
+
+00:25:46.006 --> 00:25:49.026 A:middle
+custom tag scheme for my product
+
+00:25:49.196 --> 00:25:51.616 A:middle
+name recognition, and the only
+
+00:25:51.616 --> 00:25:53.566 A:middle
+tag I'm really interested in is
+
+00:25:53.566 --> 00:25:54.546 A:middle
+the product tag.
+
+00:25:54.716 --> 00:25:57.416 A:middle
+So I create a custom tag for
+
+00:25:58.036 --> 00:25:58.146 A:middle
+that.
+
+00:25:58.366 --> 00:26:00.396 A:middle
+Again, I have to find the model
+

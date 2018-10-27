@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:58.726 --> 00:09:00.566 A:middle
+types, and then try and unify
+
+00:09:00.566 --> 00:09:01.816 A:middle
+them with a protocol.
+
+00:09:03.336 --> 00:09:04.176 A:middle
+What do those types have in
+
+00:09:04.176 --> 00:09:04.566 A:middle
+common?
+
+00:09:05.186 --> 00:09:06.456 A:middle
+What don't they have in common?
+
+00:09:07.356 --> 00:09:08.706 A:middle
+When you're designing a protocol
+
+00:09:08.706 --> 00:09:09.886 A:middle
+like this, you can think of it
+
+00:09:09.886 --> 00:09:11.246 A:middle
+kind of like a contract
+
+00:09:11.246 --> 00:09:11.966 A:middle
+negotiation.
+
+00:09:13.316 --> 00:09:14.686 A:middle
+There's a natural push and pull
+
+00:09:14.686 --> 00:09:16.426 A:middle
+here, between conforming types
+
+00:09:16.426 --> 00:09:17.086 A:middle
+on the one hand.
+
+00:09:17.526 --> 00:09:19.386 A:middle
+That want as much flexibility as
+
+00:09:19.386 --> 00:09:20.896 A:middle
+possible in fulfilling that
+
+00:09:20.896 --> 00:09:21.376 A:middle
+contract.
+
+00:09:22.636 --> 00:09:24.636 A:middle
+And users of the protocol, that
+
+00:09:24.636 --> 00:09:25.856 A:middle
+want a really nice, tight,
+
+00:09:26.086 --> 00:09:28.546 A:middle
+simple protocol in order to do
+
+00:09:28.546 --> 00:09:29.246 A:middle
+their extensions.
+
+00:09:30.306 --> 00:09:32.196 A:middle
+That's why it's really important
+
+00:09:32.226 --> 00:09:33.776 A:middle
+to have both a variety of
+
+00:09:33.776 --> 00:09:35.006 A:middle
+different possible conforming
+
+00:09:35.006 --> 00:09:35.396 A:middle
+types.
+
+00:09:35.916 --> 00:09:37.226 A:middle
+And a number of different use
+
+00:09:37.226 --> 00:09:38.616 A:middle
+cases in mind when you're
+
+00:09:38.616 --> 00:09:39.626 A:middle
+designing your protocol.
+
+00:09:40.276 --> 00:09:42.246 A:middle
+Because it's a balancing act.
+
+00:09:43.076 --> 00:09:45.716 A:middle
+So, let's start to flesh out the
+
+00:09:45.716 --> 00:09:46.546 A:middle
+collection protocol.
+
+00:09:46.726 --> 00:09:47.896 A:middle
+So, first we need to represent
+
+00:09:47.896 --> 00:09:48.616 A:middle
+the element type.
+
+00:09:49.036 --> 00:09:50.236 A:middle
+Now, in protocols, we use an
+
+00:09:50.236 --> 00:09:52.556 A:middle
+associated type for that.
+
+00:09:52.956 --> 00:09:54.356 A:middle
+Each conforming type needs to
+
+00:09:54.356 --> 00:09:55.906 A:middle
+set element to be something
+
+00:09:55.906 --> 00:09:56.476 A:middle
+appropriate.
+
+00:09:56.556 --> 00:09:59.096 A:middle
+In the case of buffer, or array,
+
+00:09:59.096 --> 00:10:01.726 A:middle
+as of Swift 4.2, this happens
+

@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.046 --> 00:18:00.396 A:middle
+website you give them some
+
+00:18:00.396 --> 00:18:01.866 A:middle
+appropriate error message about
+
+00:18:01.866 --> 00:18:02.806 A:middle
+the fact that their subscription
+
+00:18:03.106 --> 00:18:03.986 A:middle
+wasn't able to be renewed.
+
+00:18:04.666 --> 00:18:05.726 A:middle
+And you can direct that user to
+
+00:18:05.726 --> 00:18:07.526 A:middle
+go and update their billing info
+
+00:18:07.636 --> 00:18:08.456 A:middle
+in the App Store.
+
+00:18:09.476 --> 00:18:10.826 A:middle
+Now when the user does update
+
+00:18:10.826 --> 00:18:11.746 A:middle
+their billing info, maybe they
+
+00:18:11.746 --> 00:18:12.966 A:middle
+just need to update an expiry
+
+00:18:12.966 --> 00:18:14.676 A:middle
+date or something, two things
+
+00:18:14.676 --> 00:18:14.986 A:middle
+happen.
+
+00:18:15.916 --> 00:18:17.176 A:middle
+Firstly, the App Store will
+
+00:18:17.176 --> 00:18:18.866 A:middle
+actually immediately charge that
+
+00:18:18.866 --> 00:18:20.286 A:middle
+user's credit card and make a
+
+00:18:20.286 --> 00:18:21.276 A:middle
+successful transaction.
+
+00:18:21.806 --> 00:18:22.866 A:middle
+And when the App Store does do
+
+00:18:22.866 --> 00:18:24.446 A:middle
+this the second part of what it
+
+00:18:24.446 --> 00:18:26.016 A:middle
+does is it sends your server a
+
+00:18:26.016 --> 00:18:28.956 A:middle
+direct HTTP post upon the
+
+00:18:28.956 --> 00:18:29.786 A:middle
+successful renewal.
+
+00:18:29.786 --> 00:18:31.576 A:middle
+And then the payload of this
+
+00:18:31.636 --> 00:18:33.876 A:middle
+post includes the new
+
+00:18:33.876 --> 00:18:35.016 A:middle
+transaction info for the
+
+00:18:35.016 --> 00:18:36.026 A:middle
+transaction that's just
+
+00:18:36.026 --> 00:18:36.266 A:middle
+occurred.
+
+00:18:37.046 --> 00:18:37.906 A:middle
+You can use that original
+
+00:18:37.906 --> 00:18:39.546 A:middle
+transaction ID field located in
+
+00:18:39.546 --> 00:18:41.426 A:middle
+the payload to locate which user
+
+00:18:41.426 --> 00:18:42.506 A:middle
+this notification is for.
+
+00:18:43.346 --> 00:18:44.736 A:middle
+Once you find out which user
+
+00:18:44.736 --> 00:18:45.746 A:middle
+you're talking about, well you
+
+00:18:45.746 --> 00:18:47.376 A:middle
+can grab that latest expires
+
+00:18:47.376 --> 00:18:49.006 A:middle
+date and update it for this new
+
+00:18:49.006 --> 00:18:51.166 A:middle
+user giving them access again to
+
+00:18:51.166 --> 00:18:52.366 A:middle
+that next subscription period.
+
+00:18:52.366 --> 00:18:54.586 A:middle
+And then the user who's probably
+
+00:18:54.586 --> 00:18:55.756 A:middle
+still sitting on your website
+
+00:18:55.756 --> 00:18:57.056 A:middle
+trying to get access to your
+
+00:18:57.056 --> 00:18:59.326 A:middle
+content will be able to
+
+00:18:59.326 --> 00:19:01.116 A:middle
+immediately be unlocked since
+

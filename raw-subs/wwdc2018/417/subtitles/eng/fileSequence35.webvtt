@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.956 --> 00:35:01.346 A:middle
+ensure that your app launches as
+
+00:35:01.346 --> 00:35:02.256 A:middle
+quickly as possible.
+
+00:35:03.396 --> 00:35:04.796 A:middle
+Now, most apps have to do some
+
+00:35:04.796 --> 00:35:06.066 A:middle
+amount of setup work at launch
+
+00:35:06.066 --> 00:35:07.916 A:middle
+time, and, although that work is
+
+00:35:07.916 --> 00:35:09.236 A:middle
+necessary for regular app
+
+00:35:09.236 --> 00:35:11.576 A:middle
+launches, when your app is being
+
+00:35:11.576 --> 00:35:13.256 A:middle
+launched as a test runner, a lot
+
+00:35:13.256 --> 00:35:14.446 A:middle
+of that work may be unnecessary.
+
+00:35:15.296 --> 00:35:16.366 A:middle
+Things like loading view
+
+00:35:16.366 --> 00:35:18.216 A:middle
+controllers, kicking off network
+
+00:35:18.216 --> 00:35:20.296 A:middle
+requests, or configuring
+
+00:35:20.296 --> 00:35:21.976 A:middle
+analytics packages-- these are
+
+00:35:21.976 --> 00:35:23.096 A:middle
+all examples of things that are
+
+00:35:23.096 --> 00:35:24.586 A:middle
+commonly unnecessary in unit
+
+00:35:24.586 --> 00:35:25.516 A:middle
+testing scenarios.
+
+00:35:26.836 --> 00:35:28.656 A:middle
+XCTest waits until your app
+
+00:35:28.696 --> 00:35:30.186 A:middle
+delegates did finish launching
+
+00:35:30.186 --> 00:35:31.666 A:middle
+method returns before beginning
+
+00:35:31.666 --> 00:35:32.486 A:middle
+to run tests.
+
+00:35:33.126 --> 00:35:34.786 A:middle
+So, if you profile and notice
+
+00:35:34.816 --> 00:35:36.256 A:middle
+that app launch is taking a long
+
+00:35:36.256 --> 00:35:38.596 A:middle
+time in your tests, then one tip
+
+00:35:38.626 --> 00:35:39.866 A:middle
+is to detect when your app is
+
+00:35:39.866 --> 00:35:41.256 A:middle
+launched as a test runner and
+
+00:35:41.256 --> 00:35:41.856 A:middle
+avoid this work.
+
+00:35:42.516 --> 00:35:46.656 A:middle
+One way to do this is to specify
+
+00:35:46.656 --> 00:35:48.156 A:middle
+a custom environment variable or
+
+00:35:48.156 --> 00:35:48.776 A:middle
+launch argument.
+
+00:35:49.896 --> 00:35:51.606 A:middle
+Open the scheme editor, go to
+
+00:35:51.606 --> 00:35:52.876 A:middle
+the test action on the left
+
+00:35:52.876 --> 00:35:54.946 A:middle
+side, then to the arguments tab,
+
+00:35:55.346 --> 00:35:56.916 A:middle
+and add either an environment
+
+00:35:56.916 --> 00:35:58.276 A:middle
+variable or a launch argument.
+
+00:35:59.316 --> 00:36:00.806 A:middle
+In this screenshot, I've added
+

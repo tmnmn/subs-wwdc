@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.286 --> 00:22:03.516 A:middle
+So, the value of this attribute
+
+00:22:03.956 --> 00:22:06.266 A:middle
+is the hashing algorithm that
+
+00:22:06.266 --> 00:22:07.406 A:middle
+was used to generate the
+
+00:22:07.406 --> 00:22:09.316 A:middle
+checksum for the file that I
+
+00:22:09.316 --> 00:22:12.586 A:middle
+expect my users to see.
+
+00:22:12.826 --> 00:22:14.196 A:middle
+I've already prepared a hash
+
+00:22:14.316 --> 00:22:15.566 A:middle
+with SHA256.
+
+00:22:16.896 --> 00:22:20.156 A:middle
+Next, a hyphen, and then a
+
+00:22:20.156 --> 00:22:22.336 A:middle
+base64 representation of the
+
+00:22:22.336 --> 00:22:22.786 A:middle
+hash.
+
+00:22:24.006 --> 00:22:26.296 A:middle
+Now, let's save this, go back to
+
+00:22:26.296 --> 00:22:28.256 A:middle
+our page, reload.
+
+00:22:29.436 --> 00:22:30.866 A:middle
+And, we'll see there's no
+
+00:22:30.866 --> 00:22:31.326 A:middle
+styles.
+
+00:22:31.876 --> 00:22:32.916 A:middle
+Because the hash for the
+
+00:22:32.916 --> 00:22:34.666 A:middle
+downloaded file doesn't match
+
+00:22:34.666 --> 00:22:36.026 A:middle
+the hash in the HTML.
+
+00:22:36.606 --> 00:22:38.396 A:middle
+So, Safari has blocked it from
+
+00:22:38.396 --> 00:22:38.986 A:middle
+being loaded.
+
+00:22:41.916 --> 00:22:43.376 A:middle
+Now, let's connect to my CDN.
+
+00:22:43.376 --> 00:22:46.256 A:middle
+And, here's my backup on my
+
+00:22:46.256 --> 00:22:46.726 A:middle
+desktop.
+
+00:22:47.246 --> 00:22:50.786 A:middle
+Let's drag in my backup to the
+
+00:22:50.886 --> 00:22:53.456 A:middle
+CDN, replace the compromised
+
+00:22:53.456 --> 00:22:53.876 A:middle
+file.
+
+00:22:54.806 --> 00:22:57.036 A:middle
+And now, when we reload, that
+
+00:22:57.356 --> 00:22:57.976 A:middle
+looks a lot better.
+
+00:22:58.516 --> 00:23:01.936 A:middle
+[ Applause ]
+

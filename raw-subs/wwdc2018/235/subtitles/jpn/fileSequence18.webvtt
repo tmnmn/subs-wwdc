@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:57.744 --> 00:18:03.250 align:start position:25% line:-2
+ナビゲーションバーや
+ツールバーなどと重なる場合に
+
+00:18:03.350 --> 00:18:08.288 align:start position:11% line:-2
+スクロールビューにcontentInsetを
+自動で設定できるものでした
+
+00:18:08.589 --> 00:18:11.425 align:start position:7% line:-1
+Navigation Controllerの中に
+
+00:18:11.525 --> 00:18:14.528 align:start position:32% line:-2
+スクロールビューが
+含まれる場合にもです
+
+00:18:15.562 --> 00:18:17.931 align:start position:29% line:-1
+大抵はうまくいきましたが
+
+00:18:18.031 --> 00:18:23.136 align:start position:25% line:-2
+UIScrollViewに
+手を加えている場合は別でした
+
+00:18:23.237 --> 00:18:29.476 align:start position:14% line:-2
+もし コードとUIKitの両方が
+contentInsetを設定していると
+
+00:18:29.576 --> 00:18:30.744 align:start position:36% line:-1
+複雑だったのです
+
+00:18:31.578 --> 00:18:33.781 align:start position:29% line:-1
+そこでiOS 11以降は
+
+00:18:33.881 --> 00:18:39.319 align:start position:25% line:-2
+より明確でパワフルな方法で
+自動化できるようになりました
+
+00:18:39.620 --> 00:18:46.894 align:start position:9% line:-2
+adjustedContentInsetという
+UIScrollViewのプロパティです
+
+00:18:48.228 --> 00:18:54.234 align:start position:21% line:-2
+iOS 11から新たに導入された
+このプロパティは読み取り専用で
+
+00:18:54.334 --> 00:18:59.072 align:start position:29% line:-2
+スクロールビューの動作を
+記述するものです
+
+00:18:59.573 --> 00:19:05.679 align:start position:11% line:-2
+“contentInsetとの違いは何だ？”
+と疑問に思うかもしれません
+

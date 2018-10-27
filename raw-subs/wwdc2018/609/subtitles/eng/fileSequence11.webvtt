@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.886 --> 00:11:00.296 A:middle
+So, here we again have a
+
+00:11:00.296 --> 00:11:02.106 A:middle
+visualization of our
+
+00:11:02.106 --> 00:11:03.576 A:middle
+handwritten, digit recognition
+
+00:11:03.576 --> 00:11:03.966 A:middle
+network.
+
+00:11:04.656 --> 00:11:06.276 A:middle
+But in this visualization, you
+
+00:11:06.276 --> 00:11:08.026 A:middle
+can also see the image notes.
+
+00:11:08.026 --> 00:11:09.846 A:middle
+They're the small white notes.
+
+00:11:10.576 --> 00:11:12.666 A:middle
+The image notes are for your
+
+00:11:12.666 --> 00:11:12.936 A:middle
+data.
+
+00:11:13.426 --> 00:11:15.026 A:middle
+For your input, your outputs,
+
+00:11:15.026 --> 00:11:16.356 A:middle
+and all of the intermediate
+
+00:11:17.136 --> 00:11:17.346 A:middle
+results.
+
+00:11:18.256 --> 00:11:20.576 A:middle
+They describe how data moves
+
+00:11:20.576 --> 00:11:21.866 A:middle
+between different operations.
+
+00:11:22.766 --> 00:11:24.026 A:middle
+And then, operations on the
+
+00:11:24.026 --> 00:11:25.786 A:middle
+data, like convolution and
+
+00:11:25.816 --> 00:11:28.976 A:middle
+pooling, are described with your
+
+00:11:29.276 --> 00:11:29.826 A:middle
+filter nodes.
+
+00:11:30.626 --> 00:11:32.416 A:middle
+We support all of the nodes
+
+00:11:32.416 --> 00:11:34.236 A:middle
+necessary to create commonly
+
+00:11:34.236 --> 00:11:35.716 A:middle
+used neural networks.
+
+00:11:36.306 --> 00:11:38.316 A:middle
+And now, let's take a look at
+
+00:11:38.316 --> 00:11:39.716 A:middle
+how easy it is to use the neural
+
+00:11:39.716 --> 00:11:40.696 A:middle
+network graph API.
+
+00:11:41.346 --> 00:11:43.916 A:middle
+So, here's an example of how you
+
+00:11:43.916 --> 00:11:47.006 A:middle
+can create an MPSImageNode using
+
+00:11:47.006 --> 00:11:48.136 A:middle
+the neural network graph API.
+
+00:11:48.786 --> 00:11:49.906 A:middle
+And this is how you would create
+
+00:11:49.906 --> 00:11:51.656 A:middle
+a convolution node using the
+
+00:11:51.656 --> 00:11:52.296 A:middle
+graph API.
+
+00:11:53.416 --> 00:11:55.676 A:middle
+And now, for every forward node,
+
+00:11:56.046 --> 00:11:58.016 A:middle
+we support a corresponding
+
+00:11:58.066 --> 00:11:59.416 A:middle
+gradient node for training.
+
+00:11:59.796 --> 00:12:01.356 A:middle
+It takes a single line of code
+

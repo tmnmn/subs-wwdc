@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.827 --> 00:21:01.728 align:start position:29% line:-1
+次は出力のキャプチャです
+
+00:21:01.828 --> 00:21:06.233 align:start position:18% line:-2
+これはカメラのバッファと
+AVFoundationのコードです
+
+00:21:06.700 --> 00:21:10.104 align:start position:30% line:-2
+前のピクセルバッファを
+残しておき
+
+00:21:10.204 --> 00:21:13.740 align:start position:27% line:-1
+レジストレーションと比較し
+
+00:21:14.007 --> 00:21:17.311 align:start position:23% line:-1
+終了したらスワップアウトします
+
+00:21:17.844 --> 00:21:21.915 align:start position:9% line:-2
+VNTranslationalImage
+RegistrationRequestを作成し
+
+00:21:22.649 --> 00:21:26.820 align:start position:7% line:-2
+sequenceRequestHandler上で
+リクエストを実行します
+
+00:21:27.287 --> 00:21:31.158 align:start position:25% line:-1
+結果が出たら内容を確認します
+
+00:21:31.658 --> 00:21:33.527 align:start position:38% line:-1
+配列に追加して
+
+00:21:34.428 --> 00:21:38.098 align:start position:30% line:-2
+カメラが静止した状態か
+確認します
+
+00:21:38.499 --> 00:21:43.570 align:start position:25% line:-2
+確認できたら黄色いボックスを
+表示するようにします
+
+00:21:44.404 --> 00:21:47.374 align:start position:29% line:-1
+バッファは解析済みなので
+
+00:21:47.708 --> 00:21:52.646 align:start position:32% line:-2
+画像を解析するように
+指示を出します
+
+00:21:54.548 --> 00:21:59.686 align:start position:30% line:-2
+ご覧のとおり
+非同期呼び出しの最後に
+
+00:21:59.786 --> 00:22:02.656 align:start position:32% line:-1
+バッファを解放します
+

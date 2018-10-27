@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:00.366 --> 00:45:01.736 A:middle
+You go to your scheme up here
+
+00:45:01.736 --> 00:45:02.816 A:middle
+and [inaudible] edit scheme.
+
+00:45:03.836 --> 00:45:05.606 A:middle
+And in the diagnostics tab of
+
+00:45:05.656 --> 00:45:08.096 A:middle
+the scheme options, under
+
+00:45:08.096 --> 00:45:09.556 A:middle
+logging, you can enable mailx
+
+00:45:09.836 --> 00:45:11.396 A:middle
+stack logging for all
+
+00:45:11.396 --> 00:45:12.766 A:middle
+allocations in prehistory.
+
+00:45:13.606 --> 00:45:14.546 A:middle
+And that will provide you with
+
+00:45:14.546 --> 00:45:15.816 A:middle
+these handy allocation
+
+00:45:15.816 --> 00:45:17.076 A:middle
+backtraces for all selected
+
+00:45:17.076 --> 00:45:18.406 A:middle
+objects in the view debugger as
+
+00:45:18.436 --> 00:45:19.766 A:middle
+well as in Xcode's memory graph
+
+00:45:19.766 --> 00:45:20.016 A:middle
+debugger.
+
+00:45:21.146 --> 00:45:22.766 A:middle
+Now, when I mouse over this
+
+00:45:23.256 --> 00:45:24.866 A:middle
+stackframe here, we can see the
+
+00:45:24.866 --> 00:45:26.926 A:middle
+full name of that frame.
+
+00:45:27.596 --> 00:45:29.546 A:middle
+And we can see that it is the
+
+00:45:29.546 --> 00:45:30.886 A:middle
+set up planet globe view layout
+
+00:45:30.886 --> 00:45:31.966 A:middle
+method in the scene view
+
+00:45:31.966 --> 00:45:32.476 A:middle
+controller.
+
+00:45:33.496 --> 00:45:35.956 A:middle
+And I can jump to these points
+
+00:45:35.956 --> 00:45:37.706 A:middle
+in code using this jump to
+
+00:45:37.706 --> 00:45:38.086 A:middle
+arrow.
+
+00:45:38.906 --> 00:45:40.466 A:middle
+And I will do so by holding down
+
+00:45:40.466 --> 00:45:42.196 A:middle
+shift control option, which
+
+00:45:42.196 --> 00:45:44.096 A:middle
+brings us this navigational
+
+00:45:44.246 --> 00:45:45.006 A:middle
+[inaudible] and allows me to
+
+00:45:45.006 --> 00:45:46.776 A:middle
+open this file in a separate
+
+00:45:46.776 --> 00:45:47.056 A:middle
+window.
+
+00:45:47.586 --> 00:45:50.376 A:middle
+Now you can see that the line of
+
+00:45:50.486 --> 00:45:51.356 A:middle
+code where the constraint is
+
+00:45:51.356 --> 00:45:52.376 A:middle
+allocated is highlighted.
+
+00:45:52.896 --> 00:45:54.196 A:middle
+We can see the constant of 30,
+
+00:45:54.246 --> 00:45:55.526 A:middle
+and I can invert it to negative
+
+00:45:55.526 --> 00:45:55.836 A:middle
+30.
+
+00:45:56.526 --> 00:45:58.436 A:middle
+I'll save this file and close it
+
+00:45:58.436 --> 00:45:59.736 A:middle
+and we're done with our first
+

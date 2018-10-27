@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:57.736 --> 00:14:00.266 A:middle
+now take a look at the inputs we
+
+00:14:00.266 --> 00:14:01.386 A:middle
+need to pass to the graph.
+
+00:14:02.556 --> 00:14:03.966 A:middle
+And for this, let's take a look
+
+00:14:03.966 --> 00:14:05.546 A:middle
+at the encode call we will use
+
+00:14:05.816 --> 00:14:07.266 A:middle
+to encode the graph to the GPU.
+
+00:14:08.296 --> 00:14:09.886 A:middle
+So, as I already mentioned,
+
+00:14:09.886 --> 00:14:11.636 A:middle
+we're not going to send in one
+
+00:14:11.676 --> 00:14:13.026 A:middle
+image at a time for training.
+
+00:14:13.156 --> 00:14:14.926 A:middle
+We're going to operate on groups
+
+00:14:14.926 --> 00:14:16.236 A:middle
+or batches of images.
+
+00:14:16.576 --> 00:14:17.856 A:middle
+So, one of the inputs to the
+
+00:14:17.856 --> 00:14:19.536 A:middle
+graph, is a batch of images.
+
+00:14:20.926 --> 00:14:22.746 A:middle
+And as you recall, for every
+
+00:14:22.746 --> 00:14:24.566 A:middle
+batch of images, we also need a
+
+00:14:24.566 --> 00:14:26.346 A:middle
+corresponding batch of labels
+
+00:14:26.346 --> 00:14:27.446 A:middle
+for loss computation.
+
+00:14:28.696 --> 00:14:31.836 A:middle
+The labels for loss computation
+
+00:14:31.916 --> 00:14:33.366 A:middle
+are passed to the graph as
+
+00:14:33.446 --> 00:14:33.786 A:middle
+states.
+
+00:14:34.226 --> 00:14:36.536 A:middle
+So, the code call also takes a
+
+00:14:36.536 --> 00:14:37.786 A:middle
+batch of states as input.
+
+00:14:38.756 --> 00:14:40.496 A:middle
+And now, let's talk about these
+
+00:14:40.496 --> 00:14:41.406 A:middle
+batches and states.
+
+00:14:41.936 --> 00:14:42.456 A:middle
+What are they?
+
+00:14:42.596 --> 00:14:43.516 A:middle
+Let's start with batches.
+
+00:14:44.226 --> 00:14:46.496 A:middle
+So, batches are just arrays of
+
+00:14:46.756 --> 00:14:47.996 A:middle
+images or states.
+
+00:14:48.286 --> 00:14:49.416 A:middle
+We've added them this year
+
+00:14:49.416 --> 00:14:50.676 A:middle
+specifically to support
+
+00:14:50.676 --> 00:14:51.086 A:middle
+training.
+
+00:14:51.596 --> 00:14:53.416 A:middle
+There are two new MPS types for
+
+00:14:53.416 --> 00:14:56.376 A:middle
+you to use: MPSImageBatch and
+
+00:14:56.376 --> 00:14:57.696 A:middle
+MPSStateBatch.
+
+00:14:58.266 --> 00:15:00.106 A:middle
+So, here's an example of how you
+

@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.733 --> 00:10:02.703 align:middle line:-2
+在该方法中我们将使用测试设置的
+requestHandler
+
+00:10:03.437 --> 00:10:05.906 align:middle line:-2
+并在参数处使用
+URLRequest调用它
+
+00:10:07.574 --> 00:10:10.344 align:middle line:-2
+我们将获取它返回的内容
+并将其作为URL响应
+
+00:10:10.978 --> 00:10:13.547 align:middle line:-1
+和数据传递回系统
+
+00:10:14.748 --> 00:10:15.782 align:middle line:-1
+或作为一个错误传递回系统
+
+00:10:18.619 --> 00:10:20.787 align:middle line:-1
+如果你想要取消测试请求
+
+00:10:20.854 --> 00:10:24.591 align:middle line:-2
+我们可以在停止加载方法实现中
+执行类似的操作
+
+00:10:28.862 --> 00:10:31.832 align:middle line:-1
+有了存根协议我们就可以编写测试了
+
+00:10:33.400 --> 00:10:36.336 align:middle line:-2
+我们创建一个
+APIRequestLoader实例
+
+00:10:36.637 --> 00:10:40.340 align:middle line:-1
+用一个请求类型和一个配置为使用
+
+00:10:40.407 --> 00:10:42.776 align:middle line:-2
+我们的URLProtocol的
+URLSession来配置它
+
+00:10:46.313 --> 00:10:50.851 align:middle line:-2
+在测试体中我们在MockURLProtocol上
+设置了一个requestHandler
+
+00:10:51.752 --> 00:10:54.621 align:middle line:-1
+对将要发出的请求作出断言
+
+00:10:55.889 --> 00:10:57.524 align:middle line:-1
+然后提供一个存根响应
+
+00:10:59.826 --> 00:11:01.862 align:middle line:-2
+然后我们可以调用
+loadAPIRequest
+

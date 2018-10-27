@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.886 --> 00:37:01.656 A:middle
+this example, the only reason
+
+00:37:01.656 --> 00:37:03.096 A:middle
+we're importing the MyNetwork
+
+00:37:03.096 --> 00:37:04.986 A:middle
+Manager header is to declare
+
+00:37:04.986 --> 00:37:06.436 A:middle
+this property, this network
+
+00:37:06.436 --> 00:37:07.606 A:middle
+manager property on the view
+
+00:37:07.606 --> 00:37:08.176 A:middle
+controller.
+
+00:37:09.576 --> 00:37:11.986 A:middle
+And it's possible that that
+
+00:37:11.986 --> 00:37:14.036 A:middle
+property is never actually used
+
+00:37:14.036 --> 00:37:14.816 A:middle
+from Swift.
+
+00:37:15.436 --> 00:37:17.876 A:middle
+In which case, it's unnecessary
+
+00:37:17.876 --> 00:37:19.376 A:middle
+for us to be declaring it here.
+
+00:37:20.346 --> 00:37:21.976 A:middle
+So what you can do is use
+
+00:37:21.976 --> 00:37:23.886 A:middle
+categories, Objective-C's
+
+00:37:23.886 --> 00:37:25.486 A:middle
+equivalent of extensions, to
+
+00:37:25.486 --> 00:37:26.866 A:middle
+break up this interface.
+
+00:37:27.606 --> 00:37:28.566 A:middle
+So I'm going to define a new
+
+00:37:28.566 --> 00:37:30.186 A:middle
+file here, MyViewController
+
+00:37:30.186 --> 00:37:32.526 A:middle
+Internal, and use the special
+
+00:37:32.526 --> 00:37:34.586 A:middle
+nameless category syntax that
+
+00:37:34.586 --> 00:37:36.116 A:middle
+allows me to declare additional
+
+00:37:36.116 --> 00:37:37.896 A:middle
+properties while still taking
+
+00:37:37.896 --> 00:37:39.346 A:middle
+advantage of the property
+
+00:37:39.346 --> 00:37:41.276 A:middle
+synthesis feature in my main Add
+
+00:37:41.276 --> 00:37:42.326 A:middle
+Implementation block.
+
+00:37:42.436 --> 00:37:47.066 A:middle
+Now I can just move the import
+
+00:37:47.066 --> 00:37:48.066 A:middle
+and the property down to the
+
+00:37:48.066 --> 00:37:48.696 A:middle
+category.
+
+00:37:49.426 --> 00:37:50.066 A:middle
+And voila!
+
+00:37:50.796 --> 00:37:52.316 A:middle
+The headers that are being
+
+00:37:52.316 --> 00:37:54.636 A:middle
+imported into Swift have gotten
+
+00:37:54.636 --> 00:37:56.536 A:middle
+much smaller and are much less
+
+00:37:56.536 --> 00:37:58.246 A:middle
+likely to change now and cause
+
+00:37:58.246 --> 00:37:59.506 A:middle
+an unnecessary rebuild.
+

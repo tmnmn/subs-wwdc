@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.716 --> 00:21:00.776 A:middle
+them when you run your app.
+
+00:21:01.896 --> 00:21:03.436 A:middle
+Finally, if you compile at
+
+00:21:03.436 --> 00:21:04.766 A:middle
+runtime you can't include
+
+00:21:04.766 --> 00:21:06.246 A:middle
+headers in your shaders, so you
+
+00:21:06.246 --> 00:21:07.526 A:middle
+can't share types between your
+
+00:21:07.526 --> 00:21:09.396 A:middle
+shaders or your application
+
+00:21:09.396 --> 00:21:09.686 A:middle
+code.
+
+00:21:10.236 --> 00:21:12.776 A:middle
+If you use runtime share
+
+00:21:12.776 --> 00:21:14.546 A:middle
+compilation to get your app up
+
+00:21:14.546 --> 00:21:16.066 A:middle
+and running quickly I strongly
+
+00:21:16.066 --> 00:21:18.146 A:middle
+encourage you to spend some time
+
+00:21:18.146 --> 00:21:19.086 A:middle
+getting your shaders to build
+
+00:21:19.086 --> 00:21:19.966 A:middle
+within Xcode.
+
+00:21:20.586 --> 00:21:21.676 A:middle
+This way you can benefit from
+
+00:21:21.676 --> 00:21:23.056 A:middle
+not only the runtime performance
+
+00:21:23.056 --> 00:21:24.246 A:middle
+savings but also these
+
+00:21:24.246 --> 00:21:25.546 A:middle
+conveniences in shader
+
+00:21:25.546 --> 00:21:26.046 A:middle
+development.
+
+00:21:26.526 --> 00:21:29.426 A:middle
+Let's move onto the steps your
+
+00:21:29.426 --> 00:21:30.646 A:middle
+app will need to take to
+
+00:21:30.646 --> 00:21:31.946 A:middle
+initialize your Metal renderer,
+
+00:21:32.186 --> 00:21:33.376 A:middle
+so this includes creating a
+
+00:21:33.376 --> 00:21:34.246 A:middle
+number of objects.
+
+00:21:34.746 --> 00:21:36.286 A:middle
+I'll start out with the devices
+
+00:21:36.286 --> 00:21:37.666 A:middle
+and command queues and then I'll
+
+00:21:37.666 --> 00:21:39.826 A:middle
+describe how to create objects
+
+00:21:39.826 --> 00:21:40.966 A:middle
+for your assets, including
+
+00:21:40.966 --> 00:21:42.936 A:middle
+textures, buffers and pipeline
+
+00:21:42.936 --> 00:21:43.426 A:middle
+objects.
+
+00:21:45.046 --> 00:21:47.566 A:middle
+So devices and queues.
+
+00:21:47.726 --> 00:21:49.246 A:middle
+These are the first objects
+
+00:21:49.366 --> 00:21:50.016 A:middle
+you'll create.
+
+00:21:50.636 --> 00:21:53.506 A:middle
+The device is an abstract
+
+00:21:53.506 --> 00:21:54.866 A:middle
+representation of a GPU.
+
+00:21:56.226 --> 00:21:57.346 A:middle
+It's responsible for creating
+
+00:21:57.346 --> 00:21:58.436 A:middle
+objects that are used for
+
+00:21:58.436 --> 00:21:59.416 A:middle
+rendering including these
+
+00:21:59.456 --> 00:22:00.956 A:middle
+textures, buffers and pipeline
+

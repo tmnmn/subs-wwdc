@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.746 --> 00:32:00.826 A:middle
+object.
+
+00:32:07.576 --> 00:32:09.006 A:middle
+There are a couple of fields
+
+00:32:09.006 --> 00:32:09.866 A:middle
+that are important here.
+
+00:32:10.106 --> 00:32:11.406 A:middle
+This is the unique ID that we
+
+00:32:11.406 --> 00:32:11.866 A:middle
+discussed.
+
+00:32:11.966 --> 00:32:14.236 A:middle
+And then it's our bounding box
+
+00:32:14.476 --> 00:32:15.606 A:middle
+in normalize organize.
+
+00:32:18.076 --> 00:32:19.716 A:middle
+Now, if I run through, I'm going
+
+00:32:19.716 --> 00:32:21.486 A:middle
+to hit this breakpoint because
+
+00:32:21.486 --> 00:32:23.256 A:middle
+this case we're not using
+
+00:32:23.286 --> 00:32:24.426 A:middle
+[inaudible] rectangles.
+
+00:32:26.116 --> 00:32:27.756 A:middle
+This is where I create my
+
+00:32:27.756 --> 00:32:28.726 A:middle
+sequence request handler.
+
+00:32:29.246 --> 00:32:32.126 A:middle
+Now, I have my frame counter,
+
+00:32:32.806 --> 00:32:35.276 A:middle
+I have my flag if something has
+
+00:32:35.276 --> 00:32:37.486 A:middle
+failed, and I'm finally going to
+
+00:32:37.486 --> 00:32:38.916 A:middle
+start my tracking sequence.
+
+00:32:39.226 --> 00:32:40.636 A:middle
+As you can see, this is an
+
+00:32:40.636 --> 00:32:42.006 A:middle
+infinite loop, and the
+
+00:32:42.006 --> 00:32:43.256 A:middle
+conditions to get out of that
+
+00:32:43.256 --> 00:32:44.656 A:middle
+loop is if the cancellation was
+
+00:32:44.656 --> 00:32:46.676 A:middle
+requested, or if the movie has
+
+00:32:46.676 --> 00:32:47.000 A:middle
+ended.
+
+00:32:51.046 --> 00:32:53.566 A:middle
+I'm going to initialize my rect
+
+00:32:54.976 --> 00:32:56.766 A:middle
+structure to keep the
+
+00:32:56.766 --> 00:32:57.876 A:middle
+information for the graphical
+
+00:32:57.876 --> 00:32:59.246 A:middle
+user in this interface to be
+
+00:32:59.246 --> 00:33:01.846 A:middle
+displayed later, and I'm going
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.646 --> 00:25:00.136 A:middle
+geometry into screen-aligned,
+
+00:25:00.526 --> 00:25:01.796 A:middle
+tiled vertex buffers.
+
+00:25:02.416 --> 00:25:03.766 A:middle
+These tiled vertex buffers are
+
+00:25:03.766 --> 00:25:04.606 A:middle
+then stored in the system
+
+00:25:04.606 --> 00:25:04.886 A:middle
+memory.
+
+00:25:07.606 --> 00:25:08.876 A:middle
+Now, each tiled vertex buffer is
+
+00:25:08.876 --> 00:25:10.876 A:middle
+then processed entirely on ship
+
+00:25:10.976 --> 00:25:12.476 A:middle
+as part of the fragment stage.
+
+00:25:13.606 --> 00:25:15.026 A:middle
+This tiled architecture enables
+
+00:25:15.026 --> 00:25:16.586 A:middle
+2 major optimizations that your
+
+00:25:16.586 --> 00:25:18.436 A:middle
+games get for free.
+
+00:25:19.596 --> 00:25:22.156 A:middle
+First, the GPU rasterizes all
+
+00:25:22.156 --> 00:25:23.306 A:middle
+primitives in a tile before
+
+00:25:23.306 --> 00:25:25.476 A:middle
+shading any pixels using fast,
+
+00:25:25.476 --> 00:25:26.176 A:middle
+on-ship memory.
+
+00:25:26.846 --> 00:25:28.606 A:middle
+This eliminates overdraw, which
+
+00:25:28.606 --> 00:25:30.386 A:middle
+improves performance and reduces
+
+00:25:30.386 --> 00:25:30.756 A:middle
+power.
+
+00:25:32.436 --> 00:25:35.356 A:middle
+Second, a larger, more flexible
+
+00:25:35.356 --> 00:25:36.886 A:middle
+tile memory is used to store the
+
+00:25:36.886 --> 00:25:37.726 A:middle
+shaded fragments.
+
+00:25:38.366 --> 00:25:39.766 A:middle
+Blending operations are fast
+
+00:25:39.766 --> 00:25:40.796 A:middle
+because all the data is stored
+
+00:25:40.796 --> 00:25:42.416 A:middle
+on ship next to the shading
+
+00:25:42.416 --> 00:25:42.806 A:middle
+cores.
+
+00:25:43.326 --> 00:25:46.096 A:middle
+Now, tile memory is written to
+
+00:25:46.096 --> 00:25:48.266 A:middle
+system memory only once for each
+
+00:25:48.266 --> 00:25:49.946 A:middle
+tile after all fragments have
+
+00:25:49.946 --> 00:25:50.476 A:middle
+been shaded.
+
+00:25:51.216 --> 00:25:52.946 A:middle
+This reduces bandwidth, which
+
+00:25:52.946 --> 00:25:54.256 A:middle
+also improves your performance
+
+00:25:54.296 --> 00:25:56.696 A:middle
+and reduces your power.
+
+00:25:56.826 --> 00:25:59.126 A:middle
+Now, these optimizations happen
+
+00:25:59.126 --> 00:25:59.896 A:middle
+underneath the hood.
+

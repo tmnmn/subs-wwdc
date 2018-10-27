@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:00.096 --> 00:50:02.506 A:middle
+So let me show you a code
+
+00:50:02.506 --> 00:50:02.996 A:middle
+sample.
+
+00:50:03.516 --> 00:50:06.196 A:middle
+First, I want to mention that
+
+00:50:06.196 --> 00:50:07.886 A:middle
+these drawables are limited
+
+00:50:08.166 --> 00:50:10.696 A:middle
+shade system resources, so you
+
+00:50:10.696 --> 00:50:12.206 A:middle
+should hold on to them as
+
+00:50:12.206 --> 00:50:13.536 A:middle
+briefly as possible.
+
+00:50:14.236 --> 00:50:15.776 A:middle
+This means that you should
+
+00:50:15.776 --> 00:50:18.096 A:middle
+encode all your offscreen render
+
+00:50:18.126 --> 00:50:20.016 A:middle
+passes before you acquire a
+
+00:50:20.016 --> 00:50:20.606 A:middle
+drawable.
+
+00:50:21.906 --> 00:50:23.626 A:middle
+Then you can create a MetalKit
+
+00:50:23.626 --> 00:50:26.856 A:middle
+view for either a fully
+
+00:50:26.856 --> 00:50:29.206 A:middle
+populated render pass descriptor
+
+00:50:29.466 --> 00:50:30.926 A:middle
+which you can directly use to
+
+00:50:30.926 --> 00:50:33.836 A:middle
+create encoders, which is what
+
+00:50:33.836 --> 00:50:36.336 A:middle
+you see here or you can ask for
+
+00:50:36.336 --> 00:50:37.746 A:middle
+a specific texture using
+
+00:50:37.976 --> 00:50:41.626 A:middle
+view.currentDrawable property.
+
+00:50:41.626 --> 00:50:42.706 A:middle
+And then you can build your own
+
+00:50:42.706 --> 00:50:44.276 A:middle
+render pass descriptor around
+
+00:50:45.016 --> 00:50:45.086 A:middle
+it.
+
+00:50:47.136 --> 00:50:48.846 A:middle
+Once you are finished encoding
+
+00:50:48.846 --> 00:50:50.496 A:middle
+your frame you can call the
+
+00:50:50.496 --> 00:50:51.896 A:middle
+command buffer's present
+
+00:50:51.896 --> 00:50:53.456 A:middle
+drawable method which puts your
+
+00:50:53.456 --> 00:50:55.626 A:middle
+drawable onto the screen when
+
+00:50:55.626 --> 00:50:57.466 A:middle
+GPU finishes executing this
+
+00:50:57.466 --> 00:50:58.166 A:middle
+command buffer.
+
+00:50:58.986 --> 00:51:00.946 A:middle
+So now once GPU is done
+

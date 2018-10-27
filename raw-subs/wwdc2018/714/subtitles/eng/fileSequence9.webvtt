@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.286 --> 00:09:00.876 A:middle
+at the same time, doing the
+
+00:09:00.876 --> 00:09:02.816 A:middle
+normal DNS query we would have
+
+00:09:02.816 --> 00:09:03.476 A:middle
+done anyway.
+
+00:09:04.576 --> 00:09:05.796 A:middle
+If the answer comes back the
+
+00:09:05.796 --> 00:09:07.636 A:middle
+same, as we predict it will
+
+00:09:07.636 --> 00:09:09.586 A:middle
+almost always, everything is
+
+00:09:09.586 --> 00:09:11.136 A:middle
+fine, you just saved a
+
+00:09:11.136 --> 00:09:12.516 A:middle
+round-trip time and got your
+
+00:09:12.516 --> 00:09:13.766 A:middle
+connection started faster.
+
+00:09:14.426 --> 00:09:15.856 A:middle
+If the answer comes back as a
+
+00:09:15.856 --> 00:09:18.156 A:middle
+different address, we will then
+
+00:09:18.156 --> 00:09:19.356 A:middle
+give another asynchronous
+
+00:09:19.356 --> 00:09:21.416 A:middle
+notification to your client that
+
+00:09:21.416 --> 00:09:22.666 A:middle
+there's a new address available
+
+00:09:22.696 --> 00:09:23.926 A:middle
+which it should also try.
+
+00:09:24.706 --> 00:09:26.096 A:middle
+And to make use of this, you
+
+00:09:26.096 --> 00:09:27.446 A:middle
+have to use it in conjunction
+
+00:09:27.446 --> 00:09:28.946 A:middle
+with Happy Eyeballs algorithm.
+
+00:09:29.436 --> 00:09:30.996 A:middle
+That means your racing multiple
+
+00:09:30.996 --> 00:09:32.126 A:middle
+connections in parallel.
+
+00:09:32.996 --> 00:09:33.976 A:middle
+You're trying IPv4, IPv6,
+
+00:09:34.006 --> 00:09:36.886 A:middle
+multiple addresses, multiple
+
+00:09:36.886 --> 00:09:37.756 A:middle
+interfaces.
+
+00:09:38.566 --> 00:09:39.846 A:middle
+If that sounds like a lot of
+
+00:09:39.846 --> 00:09:41.356 A:middle
+work and it's hard to get right,
+
+00:09:41.516 --> 00:09:42.606 A:middle
+you're absolutely correct.
+
+00:09:42.606 --> 00:09:43.496 A:middle
+It is a lot of work.
+
+00:09:44.096 --> 00:09:46.246 A:middle
+Stay after the break and we will
+
+00:09:46.246 --> 00:09:48.686 A:middle
+tell you about some new APIs
+
+00:09:48.966 --> 00:09:50.406 A:middle
+that let you take advantage of
+
+00:09:50.406 --> 00:09:51.666 A:middle
+this without doing all the hard
+
+00:09:51.666 --> 00:09:52.346 A:middle
+work yourself.
+
+00:09:54.526 --> 00:09:56.056 A:middle
+Now moving on to some guidance.
+
+00:09:56.726 --> 00:09:58.836 A:middle
+We have seen a common pattern
+
+00:09:59.246 --> 00:10:02.296 A:middle
+that many developers use
+

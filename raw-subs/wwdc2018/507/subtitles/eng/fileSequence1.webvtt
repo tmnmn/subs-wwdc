@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.936 --> 00:01:01.846 A:middle
+Streaming key delivery and
+
+00:01:01.846 --> 00:01:04.376 A:middle
+answer a few frequently asked
+
+00:01:04.376 --> 00:01:06.146 A:middle
+questions from developers, along
+
+00:01:06.146 --> 00:01:06.476 A:middle
+the way.
+
+00:01:07.776 --> 00:01:09.546 A:middle
+So, let's get started.
+
+00:01:10.696 --> 00:01:11.846 A:middle
+FairPlay Streaming was
+
+00:01:11.846 --> 00:01:14.306 A:middle
+introduced back in 2015 to help
+
+00:01:14.446 --> 00:01:16.416 A:middle
+protect HLS streams delivered to
+
+00:01:16.416 --> 00:01:17.196 A:middle
+our platforms.
+
+00:01:18.216 --> 00:01:20.026 A:middle
+FairPlay Streaming specification
+
+00:01:20.156 --> 00:01:22.586 A:middle
+specifies a set of steps an app
+
+00:01:22.586 --> 00:01:24.316 A:middle
+needs to follow in order to
+
+00:01:24.316 --> 00:01:25.716 A:middle
+securely deliver content
+
+00:01:25.716 --> 00:01:27.706 A:middle
+decryption keys so the platform
+
+00:01:27.706 --> 00:01:29.476 A:middle
+could decrypt and play back
+
+00:01:29.606 --> 00:01:30.596 A:middle
+encrypted media.
+
+00:01:32.616 --> 00:01:33.806 A:middle
+While delivering FairPlay
+
+00:01:33.806 --> 00:01:36.506 A:middle
+Streaming keys your app works as
+
+00:01:36.506 --> 00:01:38.306 A:middle
+a liaison between the platform
+
+00:01:38.656 --> 00:01:39.996 A:middle
+and your key server.
+
+00:01:41.206 --> 00:01:43.096 A:middle
+When it receives an on-demand
+
+00:01:43.096 --> 00:01:44.836 A:middle
+key loading request from
+
+00:01:44.836 --> 00:01:46.886 A:middle
+AVFoundation it, in turn,
+
+00:01:46.996 --> 00:01:48.976 A:middle
+requests for an Encrypted Key
+
+00:01:48.976 --> 00:01:51.756 A:middle
+Request, also known as SPC.
+
+00:01:52.176 --> 00:01:54.576 A:middle
+The SPC is then sent to the key
+
+00:01:54.576 --> 00:01:57.996 A:middle
+server, which responds back with
+
+00:01:58.116 --> 00:02:00.496 A:middle
+an Encrypted Key Response, also
+

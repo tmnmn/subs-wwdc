@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:58.406 --> 00:01:00.076 A:middle
+you can speed up your tests by
+
+00:01:00.076 --> 00:01:01.236 A:middle
+running them in parallel.
+
+00:01:01.786 --> 00:01:04.116 A:middle
+Let's kick off with code
+
+00:01:04.116 --> 00:01:04.575 A:middle
+coverage.
+
+00:01:05.116 --> 00:01:08.196 A:middle
+We completely reworked code
+
+00:01:08.196 --> 00:01:10.776 A:middle
+coverage in Xcode 9.3 and this
+
+00:01:10.776 --> 00:01:12.826 A:middle
+resulted in many performance and
+
+00:01:12.826 --> 00:01:15.576 A:middle
+accuracy improvements and it
+
+00:01:15.576 --> 00:01:17.166 A:middle
+allowed us to add a new feature
+
+00:01:17.336 --> 00:01:18.506 A:middle
+so that you have the granular
+
+00:01:18.506 --> 00:01:20.486 A:middle
+control over which targets
+
+00:01:20.636 --> 00:01:22.036 A:middle
+contribute to code coverage.
+
+00:01:22.596 --> 00:01:25.486 A:middle
+We created a new command line
+
+00:01:25.486 --> 00:01:28.746 A:middle
+tool called xccov and last but
+
+00:01:28.746 --> 00:01:30.616 A:middle
+not least, we gave code coverage
+
+00:01:30.616 --> 00:01:32.346 A:middle
+in the source editor a visual
+
+00:01:32.346 --> 00:01:32.866 A:middle
+refresh.
+
+00:01:33.616 --> 00:01:35.246 A:middle
+Let's look at all of these in
+
+00:01:35.246 --> 00:01:35.616 A:middle
+detail.
+
+00:01:36.696 --> 00:01:38.716 A:middle
+First, to give you a sense of
+
+00:01:38.716 --> 00:01:40.446 A:middle
+how much better code coverage is
+
+00:01:40.446 --> 00:01:42.616 A:middle
+now, we measured it on a large
+
+00:01:42.616 --> 00:01:46.076 A:middle
+internal project at Apple.
+
+00:01:46.266 --> 00:01:47.756 A:middle
+To understand the speed, we
+
+00:01:47.756 --> 00:01:49.486 A:middle
+measured how long it took Xcode
+
+00:01:49.666 --> 00:01:51.486 A:middle
+to load and show code coverage
+
+00:01:51.486 --> 00:01:52.366 A:middle
+in the source editor.
+
+00:01:52.976 --> 00:01:56.486 A:middle
+In Xcode 9, it took about six
+
+00:01:56.486 --> 00:01:59.786 A:middle
+and a half seconds to do that.
+
+00:01:59.956 --> 00:02:01.656 A:middle
+In Xcode 9.3, however, we got it
+

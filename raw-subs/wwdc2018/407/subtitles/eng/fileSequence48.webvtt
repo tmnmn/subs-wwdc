@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:01.156 --> 00:48:03.336 A:middle
+Now, we use image raw data so
+
+00:48:03.336 --> 00:48:04.866 A:middle
+that we can avoid decoding each
+
+00:48:04.866 --> 00:48:07.766 A:middle
+thumbnail as we send.
+
+00:48:08.376 --> 00:48:09.576 A:middle
+So basically we are displaying a
+
+00:48:09.576 --> 00:48:10.726 A:middle
+random strip of images.
+
+00:48:12.406 --> 00:48:14.286 A:middle
+Now, we generate and cache them
+
+00:48:14.286 --> 00:48:15.566 A:middle
+on the fly so that we can be
+
+00:48:15.566 --> 00:48:16.206 A:middle
+more flexible.
+
+00:48:18.436 --> 00:48:20.086 A:middle
+And as we render multiple images
+
+00:48:20.086 --> 00:48:22.026 A:middle
+into a single one, we are
+
+00:48:22.026 --> 00:48:23.316 A:middle
+registering the number of cells,
+
+00:48:23.316 --> 00:48:24.716 A:middle
+layers, objects drastically,
+
+00:48:24.716 --> 00:48:26.006 A:middle
+which simplifies the layout and
+
+00:48:26.006 --> 00:48:29.066 A:middle
+the time spent building it.
+
+00:48:29.686 --> 00:48:31.266 A:middle
+Now, the separate works well,
+
+00:48:31.266 --> 00:48:32.356 A:middle
+but it has trade offs to
+
+00:48:32.356 --> 00:48:34.386 A:middle
+consider as well, and this is
+
+00:48:34.386 --> 00:48:34.966 A:middle
+one of them.
+
+00:48:36.806 --> 00:48:38.606 A:middle
+So if someone tries to long
+
+00:48:38.606 --> 00:48:40.996 A:middle
+press or force search an item
+
+00:48:40.996 --> 00:48:42.866 A:middle
+here, we will need to figure its
+
+00:48:42.916 --> 00:48:44.536 A:middle
+position so that we can achieve
+
+00:48:44.536 --> 00:48:45.426 A:middle
+the preview correctly.
+
+00:48:45.996 --> 00:48:48.136 A:middle
+And as we display a single
+
+00:48:48.136 --> 00:48:50.776 A:middle
+image, we need to maintain the
+
+00:48:50.776 --> 00:48:53.156 A:middle
+mapping of each individual
+
+00:48:53.156 --> 00:48:54.736 A:middle
+image, and its render strip.
+
+00:48:56.086 --> 00:48:57.226 A:middle
+Now, you might be thinking, why
+
+00:48:57.226 --> 00:48:58.216 A:middle
+are we generating them on the
+
+00:48:58.216 --> 00:48:58.536 A:middle
+fly?
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.826 --> 00:26:00.206 A:middle
+information in the crash log
+
+00:26:00.206 --> 00:26:01.226 A:middle
+that will tell us more about
+
+00:26:01.226 --> 00:26:02.906 A:middle
+what happened?
+
+00:26:03.516 --> 00:26:05.256 A:middle
+We can look at the invalid
+
+00:26:05.256 --> 00:26:08.356 A:middle
+address itself, sometimes the
+
+00:26:08.356 --> 00:26:10.966 A:middle
+actual bad address value will
+
+00:26:10.966 --> 00:26:12.856 A:middle
+contain useful information in
+
+00:26:13.506 --> 00:26:13.586 A:middle
+it.
+
+00:26:13.926 --> 00:26:16.006 A:middle
+And this particular bad address
+
+00:26:16.006 --> 00:26:18.556 A:middle
+I can tell you looks like a use
+
+00:26:18.606 --> 00:26:19.536 A:middle
+after free.
+
+00:26:20.446 --> 00:26:21.566 A:middle
+Well how do I know that?
+
+00:26:21.706 --> 00:26:22.946 A:middle
+Partly it's just long
+
+00:26:22.946 --> 00:26:24.336 A:middle
+experience, when you read enough
+
+00:26:24.336 --> 00:26:26.246 A:middle
+crash logs you start to learn
+
+00:26:26.246 --> 00:26:28.316 A:middle
+patterns of what the bad values
+
+00:26:28.396 --> 00:26:28.736 A:middle
+are.
+
+00:26:29.856 --> 00:26:32.886 A:middle
+This particular bad value looks
+
+00:26:32.886 --> 00:26:35.296 A:middle
+very much like the address range
+
+00:26:35.296 --> 00:26:37.906 A:middle
+for the malloc memory allocator
+
+00:26:38.246 --> 00:26:39.416 A:middle
+which we happen to have
+
+00:26:39.416 --> 00:26:40.966 A:middle
+available in this crash log.
+
+00:26:41.616 --> 00:26:43.196 A:middle
+So we have the address range
+
+00:26:43.196 --> 00:26:44.486 A:middle
+that was used by the memory
+
+00:26:44.486 --> 00:26:46.656 A:middle
+allocator and our invalid
+
+00:26:46.656 --> 00:26:49.526 A:middle
+address looks like it's inside
+
+00:26:49.526 --> 00:26:51.836 A:middle
+the malloc range, but it's been
+
+00:26:51.836 --> 00:26:53.756 A:middle
+shifted by 4 bits, it's been
+
+00:26:53.756 --> 00:26:55.386 A:middle
+rotated by 4 bits.
+
+00:26:55.906 --> 00:26:57.566 A:middle
+So it looks like it was a valid
+
+00:26:57.566 --> 00:26:59.686 A:middle
+malloc address rotated.
+

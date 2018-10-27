@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:00.206 --> 00:18:01.576 A:middle
+The format here looks exactly
+
+00:18:01.576 --> 00:18:03.646 A:middle
+like what you'd get if you did a
+
+00:18:03.796 --> 00:18:05.666 A:middle
+Get of v1/beta testers.
+
+00:18:05.926 --> 00:18:06.776 A:middle
+The only difference is we're
+
+00:18:06.776 --> 00:18:07.866 A:middle
+getting the testers in this
+
+00:18:07.866 --> 00:18:09.386 A:middle
+group rather than all the
+
+00:18:09.386 --> 00:18:10.406 A:middle
+testers in your TestFlight
+
+00:18:10.406 --> 00:18:10.866 A:middle
+program.
+
+00:18:11.366 --> 00:18:13.766 A:middle
+And I want to pause there and
+
+00:18:13.766 --> 00:18:14.776 A:middle
+make sure I'm being clear.
+
+00:18:15.276 --> 00:18:16.216 A:middle
+We're getting the testers in
+
+00:18:16.216 --> 00:18:17.586 A:middle
+this group and when I say "this
+
+00:18:17.586 --> 00:18:18.566 A:middle
+group," I mean the group whose
+
+00:18:18.566 --> 00:18:20.506 A:middle
+identifier is in that URL.
+
+00:18:20.506 --> 00:18:22.756 A:middle
+So this URL get the testers in
+
+00:18:22.756 --> 00:18:23.246 A:middle
+one group.
+
+00:18:23.606 --> 00:18:24.576 A:middle
+If I want to get the testers in
+
+00:18:24.576 --> 00:18:25.696 A:middle
+a bunch of different groups
+
+00:18:26.056 --> 00:18:27.456 A:middle
+using this mechanism, I'd have
+
+00:18:27.486 --> 00:18:28.476 A:middle
+to make a bunch of different
+
+00:18:28.476 --> 00:18:30.356 A:middle
+requests, which can sometimes be
+
+00:18:30.356 --> 00:18:30.956 A:middle
+inconvenient.
+
+00:18:31.476 --> 00:18:32.636 A:middle
+So we do have one more way to
+
+00:18:32.636 --> 00:18:33.456 A:middle
+get related data.
+
+00:18:33.676 --> 00:18:34.496 A:middle
+It's called the include
+
+00:18:34.496 --> 00:18:34.966 A:middle
+parameter.
+
+00:18:35.606 --> 00:18:36.406 A:middle
+It looks like this.
+
+00:18:36.546 --> 00:18:39.106 A:middle
+We do a GET of v1/beta Groups
+
+00:18:39.506 --> 00:18:40.496 A:middle
+and then we add this query
+
+00:18:40.566 --> 00:18:42.866 A:middle
+parameter: include = beta
+
+00:18:42.866 --> 00:18:43.386 A:middle
+testers.
+
+00:18:43.716 --> 00:18:45.316 A:middle
+And this tells the API while
+
+00:18:45.316 --> 00:18:46.596 A:middle
+you're bringing me back the beta
+
+00:18:46.596 --> 00:18:48.426 A:middle
+groups, also include information
+
+00:18:48.426 --> 00:18:49.766 A:middle
+about the related testers in
+
+00:18:49.986 --> 00:18:50.936 A:middle
+each group.
+
+00:18:51.296 --> 00:18:54.096 A:middle
+Here's what it looks like.
+
+00:18:54.726 --> 00:18:55.706 A:middle
+We get our array of beta
+
+00:18:55.706 --> 00:18:57.616 A:middle
+testers, of beta Groups, excuse
+
+00:18:57.616 --> 00:18:59.006 A:middle
+me, and if you look at the beta
+
+00:18:59.006 --> 00:19:00.616 A:middle
+testers relationship in the
+

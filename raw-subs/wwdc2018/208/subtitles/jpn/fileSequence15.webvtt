@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:00.033 --> 00:15:02.803 align:start position:34% line:-2
+UIView自体が
+座標空間となります
+
+00:15:02.903 --> 00:15:07.007 align:start position:12% line:-2
+抽象クラスの場合は
+今のcoordinateSpaceを返すか
+
+00:15:07.107 --> 00:15:08.909 align:start position:32% line:-1
+独自の座標空間を実装
+
+00:15:09.776 --> 00:15:12.880 align:start position:12% line:-2
+次にfocusItems in rectを
+実装します
+
+00:15:12.980 --> 00:15:16.083 align:start position:27% line:-2
+これは与えられたrectと
+重なった―
+
+00:15:16.183 --> 00:15:18.919 align:start position:27% line:-1
+すべてのアイテムを返します
+
+00:15:19.052 --> 00:15:24.024 align:start position:21% line:-2
+このメソッドに渡されたrectは
+座標空間に現れます
+
+00:15:24.124 --> 00:15:28.095 align:start position:30% line:-2
+各アイテムのフレームも
+同じように
+
+00:15:28.195 --> 00:15:31.231 align:start position:14% line:-1
+coordinateSpaceに現れます
+
+00:15:33.100 --> 00:15:36.169 align:start position:25% line:-2
+次にカスタムした
+UIFocusItemを実装
+
+00:15:36.770 --> 00:15:42.576 align:start position:7% line:-2
+UIFocusEnvironmentのメソッドも
+実装する必要があります
+
+00:15:43.410 --> 00:15:46.847 align:start position:30% line:-2
+アイテムにフォーカスを
+動かすために
+
+00:15:46.947 --> 00:15:50.117 align:start position:18% line:-2
+canBecomeFocusedから
+trueを返します
+
+00:15:50.951 --> 00:15:56.223 align:start position:18% line:-1
+ユーザがTouchサーフェスに触ると
+
+00:15:56.323 --> 00:15:58.725 align:start position:29% line:-1
+呼び出されるメソッドです
+
+00:15:58.826 --> 00:16:02.129 align:start position:30% line:-2
+フォーカスアイテムに
+動きのヒントを与えます
+

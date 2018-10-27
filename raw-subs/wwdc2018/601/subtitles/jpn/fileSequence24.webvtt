@@ -1,0 +1,52 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:57.571 --> 00:24:01.408 align:start position:20% line:-2
+broadcastStartedを
+使ったコードの例です
+
+00:24:01.508 --> 00:24:06.079 align:start position:30% line:-2
+ログインしていない時の
+対処方法ですが
+
+00:24:06.346 --> 00:24:10.117 align:start position:7% line:-2
+finishBroadcastWithError
+という関数があります
+
+00:24:10.984 --> 00:24:13.520 align:start position:34% line:-1
+ここで必要なのは―
+
+00:24:14.154 --> 00:24:18.158 align:start position:27% line:-2
+ユーザ情報辞書に
+エラーの理由を渡すことです
+
+00:24:18.258 --> 00:24:23.564 align:start position:16% line:-2
+ReplayKitは この文字列を使い
+セッション停止後に表示させます
+
+00:24:29.603 --> 00:24:30.571 align:start position:41% line:-1
+それでは…
+
+00:24:32.873 --> 00:24:35.843 align:start position:23% line:-2
+以上がBroadcast
+Extensionについてです
+
+00:24:36.643 --> 00:24:40.114 align:start position:34% line:-2
+ご覧のように
+プロセスは簡潔です
+
+00:24:41.548 --> 00:24:44.117 align:start position:34% line:-2
+アプリケーションが
+セットアップして―
+
+00:24:44.585 --> 00:24:47.254 align:start position:20% line:-1
+Extensionに情報を伝えます
+
+00:24:50.724 --> 00:24:56.363 align:start position:25% line:-2
+セッション開始後は
+メディアサンプルをエンコード
+
+00:24:57.097 --> 00:25:00.167 align:start position:27% line:-2
+画面上のアプリケーションの
+情報を使用して
+

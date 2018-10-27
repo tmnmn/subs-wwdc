@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:00.467 --> 00:25:03.303 align:start position:21% line:-1
+つまりファイルを送受信したければ
+
+00:25:03.403 --> 00:25:09.176 align:start position:20% line:-2
+File Promiseを読み込み
+受信を承諾する必要があります
+
+00:25:09.776 --> 00:25:12.513 align:start position:27% line:-1
+ではコードを見てみましょう
+
+00:25:14.982 --> 00:25:18.619 align:start position:4% line:-2
+まずregisterForDraggedTypesを
+呼び出し
+
+00:25:18.719 --> 00:25:21.355 align:start position:29% line:-1
+承諾する型を登録させます
+
+00:25:21.455 --> 00:25:24.324 align:start position:14% line:-1
+File Promiseを承諾するために
+
+00:25:24.424 --> 00:25:29.863 align:start position:4% line:-2
+NSFilePromiseRecevier内の
+readableDraggerdTypesを使います
+
+00:25:31.999 --> 00:25:38.906 align:start position:25% line:-2
+ドラッグ操作を実行したり
+アイテムを列挙したりするには
+
+00:25:39.373 --> 00:25:44.511 align:start position:12% line:-2
+NSFilePromiseReciverに
+supportを追加しておきます
+
+00:25:45.112 --> 00:25:49.850 align:start position:30% line:-2
+これは質の高い表現を
+含む場合があるからです
+
+00:25:52.419 --> 00:25:56.690 align:start position:7% line:-2
+各filePromiseReceiverに対して
+Promiseを呼び出します
+
+00:25:57.224 --> 00:25:58.959 align:start position:36% line:-1
+準備が整ったら―
+
+00:25:59.626 --> 00:26:05.532 align:start position:14% line:-2
+operationQueueで
+Reader Blockが呼び出されます
+

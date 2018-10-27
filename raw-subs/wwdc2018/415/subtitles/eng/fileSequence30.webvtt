@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:00.006 --> 00:30:02.356 A:middle
+But the abstraction basically
+
+00:30:02.356 --> 00:30:04.076 A:middle
+only points to the files back in
+
+00:30:04.076 --> 00:30:04.696 A:middle
+your directory.
+
+00:30:05.406 --> 00:30:07.726 A:middle
+So again, Clang will be able to
+
+00:30:07.726 --> 00:30:08.996 A:middle
+produce [inaudible] and errors
+
+00:30:09.106 --> 00:30:10.036 A:middle
+for your source code.
+
+00:30:10.646 --> 00:30:13.406 A:middle
+And that's how we build modules
+
+00:30:13.986 --> 00:30:15.726 A:middle
+for, when you have frameworks.
+
+00:30:16.256 --> 00:30:19.186 A:middle
+As you remember, in the
+
+00:30:19.186 --> 00:30:20.926 A:middle
+beginning I mentioned there
+
+00:30:20.926 --> 00:30:23.046 A:middle
+might be issues if you don't
+
+00:30:23.046 --> 00:30:24.906 A:middle
+specify the framework name.
+
+00:30:25.496 --> 00:30:27.286 A:middle
+So let me give you an example
+
+00:30:27.326 --> 00:30:28.426 A:middle
+where this can go wrong.
+
+00:30:28.976 --> 00:30:31.186 A:middle
+This is a very simple-- very
+
+00:30:31.186 --> 00:30:31.966 A:middle
+simple code example.
+
+00:30:31.966 --> 00:30:33.646 A:middle
+We only have two imports.
+
+00:30:34.036 --> 00:30:36.316 A:middle
+The first import imports the
+
+00:30:36.316 --> 00:30:37.456 A:middle
+pet, PetKit module.
+
+00:30:38.896 --> 00:30:41.786 A:middle
+The second import, you and I
+
+00:30:41.786 --> 00:30:43.586 A:middle
+know this is also part of the
+
+00:30:43.586 --> 00:30:46.116 A:middle
+PetKit module, but Clang might
+
+00:30:46.116 --> 00:30:47.336 A:middle
+now be able to figure that out
+
+00:30:48.116 --> 00:30:49.486 A:middle
+because you didn't specify the
+
+00:30:49.486 --> 00:30:50.156 A:middle
+framework name.
+
+00:30:50.716 --> 00:30:53.846 A:middle
+In this case, it might be
+
+00:30:53.916 --> 00:30:56.076 A:middle
+possible you get duplicate
+
+00:30:56.076 --> 00:30:56.886 A:middle
+definition errors.
+
+00:30:56.886 --> 00:30:58.876 A:middle
+That's basically, that basically
+
+00:30:58.876 --> 00:31:00.176 A:middle
+happens when you import the same
+

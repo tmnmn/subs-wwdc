@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.438 --> 00:24:01.708 align:middle line:-2
+我需要对checkCurrentLocation
+方法做一个小的更改
+
+00:24:02.009 --> 00:24:03.544 align:middle line:-1
+以使用重命名的属性
+
+00:24:05.445 --> 00:24:07.548 align:middle line:-1
+最后让我们看一下委托方法
+
+00:24:08.182 --> 00:24:09.850 align:middle line:-1
+这个部分处理起来有点棘手
+
+00:24:09.917 --> 00:24:12.786 align:middle line:-1
+因为委托期望Manager参数
+
+00:24:12.853 --> 00:24:16.623 align:middle line:-2
+是真正的CLLocationManager
+而不是我的新协议
+
+00:24:17.558 --> 00:24:20.627 align:middle line:-2
+因此当委托参与时
+事情会变得有点复杂
+
+00:24:20.694 --> 00:24:22.930 align:middle line:-1
+但是我们仍然可以在这里应用协议
+
+00:24:23.130 --> 00:24:24.431 align:middle line:-1
+让我们来看看
+
+00:24:26.400 --> 00:24:29.770 align:middle line:-2
+我将回到前面定义的
+LocationFetcher协议
+
+00:24:30.337 --> 00:24:34.141 align:middle line:-2
+并将该委托属性重命名为
+LocationFetcherDelegate
+
+00:24:34.641 --> 00:24:36.677 align:middle line:-1
+我将其类型更改为一个新协议
+
+00:24:36.743 --> 00:24:40.514 align:middle line:-2
+该协议的接口与
+CLLocationManagerDelegate几乎相同
+
+00:24:40.848 --> 00:24:42.516 align:middle line:-1
+但是我调整了方法名
+
+00:24:42.583 --> 00:24:45.719 align:middle line:-2
+我将第一个参数的类型改为
+LocationFetcher
+
+00:24:49.356 --> 00:24:52.125 align:middle line:-1
+现在我需要在扩展中实现
+
+00:24:52.192 --> 00:24:56.063 align:middle line:-2
+LocationFetcherDelegate属性
+因为它不再满足这个要求
+
+00:24:56.997 --> 00:24:59.867 align:middle line:-2
+我将实现getter
+和setter来使用强制转换
+
+00:24:59.933 --> 00:25:03.070 align:middle line:-2
+来回转换到
+CLLocationManagerDelegate
+

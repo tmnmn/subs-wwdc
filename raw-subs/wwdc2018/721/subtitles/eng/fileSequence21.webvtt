@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:00.286 --> 00:21:02.156 A:middle
+Authentication services provides
+
+00:21:02.156 --> 00:21:03.366 A:middle
+an API to support these work
+
+00:21:03.366 --> 00:21:03.816 A:middle
+flows.
+
+00:21:04.476 --> 00:21:05.516 A:middle
+When these are enabled to your
+
+00:21:05.516 --> 00:21:07.396 A:middle
+extension, settings can launch
+
+00:21:07.396 --> 00:21:08.726 A:middle
+your extension and present its
+
+00:21:08.726 --> 00:21:10.216 A:middle
+UI, so you can let users
+
+00:21:10.216 --> 00:21:11.386 A:middle
+configure it.
+
+00:21:13.096 --> 00:21:15.646 A:middle
+To opt into this behavior, open
+
+00:21:15.646 --> 00:21:17.076 A:middle
+the Info Property List for your
+
+00:21:17.076 --> 00:21:19.176 A:middle
+app extension and add a new key
+
+00:21:19.276 --> 00:21:21.096 A:middle
+under NS extension attributes.
+
+00:21:21.156 --> 00:21:23.716 A:middle
+AS Credential Provider Extension
+
+00:21:23.716 --> 00:21:26.186 A:middle
+shows configuration UI with the
+
+00:21:26.186 --> 00:21:27.496 A:middle
+bullion value of yes.
+
+00:21:28.426 --> 00:21:29.666 A:middle
+This is how the system will know
+
+00:21:29.666 --> 00:21:30.956 A:middle
+to launch your extension when
+
+00:21:30.956 --> 00:21:31.496 A:middle
+its enabled.
+
+00:21:33.896 --> 00:21:36.276 A:middle
+Then, implement the Prepare
+
+00:21:36.276 --> 00:21:37.546 A:middle
+Interface For Extension
+
+00:21:37.546 --> 00:21:38.906 A:middle
+Configuration method in your
+
+00:21:38.906 --> 00:21:40.466 A:middle
+view controller, and set up the
+
+00:21:40.466 --> 00:21:41.776 A:middle
+appropriate UI for when your
+
+00:21:41.776 --> 00:21:43.026 A:middle
+extension is first enabled.
+
+00:21:43.606 --> 00:21:47.146 A:middle
+When your extension is done,
+
+00:21:47.726 --> 00:21:49.076 A:middle
+call the Complete Extension
+
+00:21:49.076 --> 00:21:50.906 A:middle
+Configuration Request method on
+
+00:21:50.906 --> 00:21:52.616 A:middle
+your extension context, and
+
+00:21:52.616 --> 00:21:54.256 A:middle
+settings will dismiss your UI.
+
+00:21:54.336 --> 00:21:57.036 A:middle
+At this point, your extension is
+
+00:21:57.036 --> 00:21:57.456 A:middle
+enabled.
+
+00:21:57.906 --> 00:21:58.936 A:middle
+It has provided credential
+
+00:21:58.936 --> 00:22:00.236 A:middle
+identities for AutoFill to
+

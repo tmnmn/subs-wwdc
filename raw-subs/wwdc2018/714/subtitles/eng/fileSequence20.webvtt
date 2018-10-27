@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:56.766 --> 00:20:00.746 A:middle
+support for HTTP/2 and HTTP/1.1.
+
+00:20:02.056 --> 00:20:04.136 A:middle
+If your app does not use HTTP,
+
+00:20:04.136 --> 00:20:05.966 A:middle
+we have support for
+
+00:20:06.066 --> 00:20:09.226 A:middle
+URLSessionStreamTask, an API
+
+00:20:09.226 --> 00:20:11.056 A:middle
+that allows you to make secure
+
+00:20:11.056 --> 00:20:12.946 A:middle
+TCP connections to a server over
+
+00:20:13.256 --> 00:20:14.786 A:middle
+which you can build your
+
+00:20:14.786 --> 00:20:15.796 A:middle
+arbitrary protocol.
+
+00:20:17.136 --> 00:20:18.656 A:middle
+That's URLSession.
+
+00:20:19.716 --> 00:20:20.866 A:middle
+Let's move on to our first
+
+00:20:20.866 --> 00:20:23.926 A:middle
+agenda item: reducing latency.
+
+00:20:25.296 --> 00:20:26.246 A:middle
+Let's suppose you and your
+
+00:20:26.246 --> 00:20:28.096 A:middle
+friends go to a restaurant where
+
+00:20:28.226 --> 00:20:29.706 A:middle
+the waiter walks up to you and
+
+00:20:29.706 --> 00:20:31.296 A:middle
+you say, "Can I get a glass of
+
+00:20:31.296 --> 00:20:31.866 A:middle
+water please?"
+
+00:20:32.746 --> 00:20:34.576 A:middle
+The waiter say, "Sure," walks
+
+00:20:34.576 --> 00:20:35.896 A:middle
+away, fetches you a glass of
+
+00:20:35.896 --> 00:20:36.196 A:middle
+water.
+
+00:20:37.016 --> 00:20:38.366 A:middle
+Your friend then says, "Can I
+
+00:20:38.366 --> 00:20:39.406 A:middle
+get a glass of water too?"
+
+00:20:40.066 --> 00:20:41.386 A:middle
+The waiter says, "Sure," walks
+
+00:20:41.386 --> 00:20:42.886 A:middle
+away, and fetches your friend a
+
+00:20:42.886 --> 00:20:43.876 A:middle
+glass of water.
+
+00:20:44.526 --> 00:20:45.576 A:middle
+Wouldn't it be faster if the
+
+00:20:45.576 --> 00:20:46.836 A:middle
+waiter took everyone's order at
+
+00:20:46.836 --> 00:20:48.556 A:middle
+the same time and reduce the
+
+00:20:48.556 --> 00:20:49.486 A:middle
+number of round trips?
+
+00:20:50.816 --> 00:20:52.286 A:middle
+The idea to reduce latency is
+
+00:20:52.286 --> 00:20:52.746 A:middle
+simple.
+
+00:20:53.536 --> 00:20:54.966 A:middle
+To reduce the number of back and
+
+00:20:54.966 --> 00:20:56.116 A:middle
+forths when you fetch a
+
+00:20:56.116 --> 00:20:56.696 A:middle
+resource.
+
+00:20:57.626 --> 00:20:59.896 A:middle
+Let's see how your apps can do
+

@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:57.936 --> 00:12:00.486 A:middle
+dictionary to control moving
+
+00:12:00.486 --> 00:12:02.126 A:middle
+forward through the collection
+
+00:12:02.126 --> 00:12:03.346 A:middle
+by advancing the index.
+
+00:12:04.096 --> 00:12:05.356 A:middle
+And so to do that, we add
+
+00:12:05.356 --> 00:12:05.986 A:middle
+another method.
+
+00:12:06.926 --> 00:12:08.756 A:middle
+That given an index, gives you
+
+00:12:08.756 --> 00:12:09.706 A:middle
+the index that marks the
+
+00:12:09.706 --> 00:12:12.256 A:middle
+position after it.
+
+00:12:12.506 --> 00:12:13.386 A:middle
+Once you take this step, you
+
+00:12:13.386 --> 00:12:14.376 A:middle
+need a couple more things.
+
+00:12:14.376 --> 00:12:15.806 A:middle
+You need a start index property,
+
+00:12:16.126 --> 00:12:17.706 A:middle
+and an end index property.
+
+00:12:18.226 --> 00:12:19.356 A:middle
+Because a simple count isn't
+
+00:12:19.356 --> 00:12:20.356 A:middle
+going to work anymore in order
+
+00:12:20.356 --> 00:12:21.346 A:middle
+to tell us that we've reached
+
+00:12:21.346 --> 00:12:21.766 A:middle
+the end.
+
+00:12:22.076 --> 00:12:24.056 A:middle
+Now that we're not using Ints as
+
+00:12:24.056 --> 00:12:24.696 A:middle
+our index type.
+
+00:12:26.376 --> 00:12:27.586 A:middle
+So let's bring those back to the
+
+00:12:27.586 --> 00:12:28.466 A:middle
+collection protocol.
+
+00:12:30.086 --> 00:12:31.606 A:middle
+So we've got a subscript that
+
+00:12:31.606 --> 00:12:33.136 A:middle
+takes some index type to
+
+00:12:33.136 --> 00:12:34.396 A:middle
+represent a position, and gives
+
+00:12:34.396 --> 00:12:35.056 A:middle
+you an element there.
+
+00:12:35.636 --> 00:12:36.956 A:middle
+And, we've got a way of moving
+
+00:12:36.956 --> 00:12:37.916 A:middle
+that position forward.
+
+00:12:39.076 --> 00:12:41.176 A:middle
+But we also need types to supply
+
+00:12:41.176 --> 00:12:42.206 A:middle
+what kind of type they're going
+
+00:12:42.206 --> 00:12:43.576 A:middle
+to use for their index.
+
+00:12:43.816 --> 00:12:44.946 A:middle
+We do that with another
+
+00:12:44.946 --> 00:12:45.916 A:middle
+associated type.
+
+00:12:47.886 --> 00:12:49.436 A:middle
+Conforming types would supply
+
+00:12:50.046 --> 00:12:50.736 A:middle
+the appropriate types.
+
+00:12:50.736 --> 00:12:52.946 A:middle
+So an array or a data would give
+
+00:12:53.156 --> 00:12:54.536 A:middle
+an Int as their index type.
+
+00:12:55.206 --> 00:12:56.406 A:middle
+Whereas a dictionary would give
+
+00:12:56.406 --> 00:12:58.096 A:middle
+its own custom implementation
+
+00:12:58.176 --> 00:12:59.426 A:middle
+that handles its own internal
+
+00:12:59.426 --> 00:12:59.756 A:middle
+logic.
+

@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.506 --> 00:33:00.736 A:middle
+And that is the start of our
+
+00:33:00.736 --> 00:33:01.536 A:middle
+investigation.
+
+00:33:04.256 --> 00:33:07.306 A:middle
+So what we see here right now on
+
+00:33:07.306 --> 00:33:08.716 A:middle
+the right-hand side is a
+
+00:33:08.716 --> 00:33:10.446 A:middle
+percentage of time we are
+
+00:33:10.446 --> 00:33:11.666 A:middle
+spending inside of this
+
+00:33:11.666 --> 00:33:14.196 A:middle
+function, and further down the
+
+00:33:14.196 --> 00:33:16.326 A:middle
+percentage of time we spend in
+
+00:33:16.326 --> 00:33:17.846 A:middle
+each file-- each line.
+
+00:33:19.186 --> 00:33:20.916 A:middle
+Be aware the Shader Profiler
+
+00:33:20.916 --> 00:33:23.386 A:middle
+works on optimized code, so the
+
+00:33:23.386 --> 00:33:24.786 A:middle
+compiler can reorder the
+
+00:33:24.786 --> 00:33:26.946 A:middle
+instructions and there may be no
+
+00:33:26.946 --> 00:33:28.416 A:middle
+timing information for some
+
+00:33:28.416 --> 00:33:28.786 A:middle
+lines.
+
+00:33:29.536 --> 00:33:32.366 A:middle
+Next to the timing information,
+
+00:33:32.866 --> 00:33:33.766 A:middle
+we have the instruction
+
+00:33:33.766 --> 00:33:34.386 A:middle
+categories.
+
+00:33:34.526 --> 00:33:37.346 A:middle
+Let's take a look.
+
+00:33:37.606 --> 00:33:39.626 A:middle
+We can see that we spend time in
+
+00:33:39.626 --> 00:33:41.986 A:middle
+ALU doing math operations, we
+
+00:33:41.986 --> 00:33:43.346 A:middle
+are reading from memory, from
+
+00:33:43.346 --> 00:33:45.696 A:middle
+textures, but what raises my
+
+00:33:45.696 --> 00:33:46.986 A:middle
+concern is the time we are
+
+00:33:46.986 --> 00:33:48.536 A:middle
+spending in synchronization,
+
+00:33:48.936 --> 00:33:50.656 A:middle
+specifically, waiting on memory
+
+00:33:50.656 --> 00:33:50.966 A:middle
+here.
+
+00:33:51.586 --> 00:33:53.316 A:middle
+That means our GPU could not
+
+00:33:53.316 --> 00:33:55.336 A:middle
+read data fast enough, and it
+
+00:33:55.336 --> 00:33:57.216 A:middle
+could not hide this latency by
+
+00:33:57.216 --> 00:33:58.866 A:middle
+doing ALU work in other threads.
+

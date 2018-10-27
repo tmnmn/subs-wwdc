@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:00.956 --> 00:40:02.996 A:middle
+But, from time to time, you have
+
+00:40:03.076 --> 00:40:04.006 A:middle
+problems that you need to
+
+00:40:04.006 --> 00:40:04.706 A:middle
+investigate.
+
+00:40:05.466 --> 00:40:07.286 A:middle
+And, for that, we're going to
+
+00:40:07.286 --> 00:40:09.256 A:middle
+teach you some Matrix-level
+
+00:40:09.256 --> 00:40:10.176 A:middle
+debugging skills.
+
+00:40:10.566 --> 00:40:12.866 A:middle
+But first, a word of warning.
+
+00:40:14.236 --> 00:40:15.986 A:middle
+Before we give you this red
+
+00:40:15.986 --> 00:40:17.616 A:middle
+pill, and show you just how deep
+
+00:40:17.616 --> 00:40:19.836 A:middle
+the rabbit hole goes, I want to
+
+00:40:19.836 --> 00:40:21.056 A:middle
+let you know that the methods
+
+00:40:21.056 --> 00:40:22.246 A:middle
+that we're going to show you in
+
+00:40:22.246 --> 00:40:23.976 A:middle
+this section are great for
+
+00:40:23.976 --> 00:40:25.866 A:middle
+debugging, but must not be
+
+00:40:25.866 --> 00:40:27.116 A:middle
+submitted to the App Store.
+
+00:40:27.946 --> 00:40:29.726 A:middle
+If you do, your application will
+
+00:40:29.726 --> 00:40:31.046 A:middle
+be rejected, and you'll have a
+
+00:40:31.046 --> 00:40:31.606 A:middle
+bad day.
+
+00:40:32.476 --> 00:40:34.056 A:middle
+So, with that warning, let's get
+
+00:40:34.056 --> 00:40:34.516 A:middle
+started.
+
+00:40:35.036 --> 00:40:37.276 A:middle
+We're going to start with a
+
+00:40:37.276 --> 00:40:38.576 A:middle
+detective mindset.
+
+00:40:38.966 --> 00:40:40.836 A:middle
+How you should approach problems
+
+00:40:40.836 --> 00:40:41.946 A:middle
+that you find in your program.
+
+00:40:42.976 --> 00:40:44.366 A:middle
+Next, we're going to talk to you
+
+00:40:44.366 --> 00:40:45.886 A:middle
+about how to debug issues with
+
+00:40:45.886 --> 00:40:47.466 A:middle
+your views and view controllers.
+
+00:40:48.306 --> 00:40:49.406 A:middle
+We're going to teach you about
+
+00:40:49.406 --> 00:40:51.436 A:middle
+LLDB, and how you can use it to
+
+00:40:51.436 --> 00:40:53.066 A:middle
+identify state issues in your
+
+00:40:53.066 --> 00:40:53.386 A:middle
+app.
+
+00:40:54.336 --> 00:40:55.516 A:middle
+And finally, we're going to look
+
+00:40:55.516 --> 00:40:56.906 A:middle
+at some techniques for some
+
+00:40:56.906 --> 00:40:58.716 A:middle
+great memory issues that you
+
+00:40:58.716 --> 00:41:00.356 A:middle
+might run into that make you
+

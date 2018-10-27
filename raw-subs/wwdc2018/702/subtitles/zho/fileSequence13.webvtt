@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:56.877 --> 00:13:00.080 align:middle line:0
+向其他app暴露一些功能
+以实现自动化
+
+00:13:00.647 --> 00:13:02.182 align:middle line:-1
+拿邮件举例
+
+00:13:02.583 --> 00:13:05.686 align:middle line:-2
+邮件的本地数据库
+有很多个人信息
+
+00:13:06.086 --> 00:13:09.957 align:middle line:-2
+他有我朋友、家人、往来公司的
+邮件地址
+
+00:13:10.023 --> 00:13:12.993 align:middle line:-1
+还有邮件内容本身
+
+00:13:13.393 --> 00:13:16.296 align:middle line:-1
+我的私人回复 购物回执
+
+00:13:16.363 --> 00:13:17.831 align:middle line:-1
+发货通知
+
+00:13:18.465 --> 00:13:21.768 align:middle line:0
+还有我忘了的服务的临时密码
+
+00:13:23.036 --> 00:13:26.640 align:middle line:0
+所以邮件app自然有权
+访问其本地数据库
+
+00:13:27.241 --> 00:13:30.677 align:middle line:0
+macOS Mojave里
+其他app则无权访问
+
+00:13:32.479 --> 00:13:35.215 align:middle line:0
+而邮件可以由其他app脚本访问
+
+00:13:35.282 --> 00:13:39.720 align:middle line:0
+我们需确保其只在我同意时
+共享我的个人信息
+
+00:13:42.856 --> 00:13:44.291 align:middle line:0
+因为要让用户控制
+
+00:13:44.358 --> 00:13:46.827 align:middle line:0
+受信访问其数据的app
+
+00:13:46.894 --> 00:13:48.695 align:middle line:0
+与其他app怎样交互
+
+00:13:49.363 --> 00:13:52.065 align:middle line:0
+macOS Mojave
+将包含这样的提示信息
+
+00:13:52.132 --> 00:13:54.668 align:middle line:0
+以授权app访问其他app
+
+00:13:55.502 --> 00:13:56.737 align:middle line:0
+现在Developer Preview
+
+00:13:56.803 --> 00:14:00.073 align:middle line:0
+不要求授权以自动化其他app
+

@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:15:59.166 --> 00:16:00.436 A:middle
+application can have better
+
+00:16:00.436 --> 00:16:01.096 A:middle
+visualize.
+
+00:16:02.856 --> 00:16:04.216 A:middle
+But there is one trick.
+
+00:16:05.436 --> 00:16:07.386 A:middle
+Because simulation is now
+
+00:16:07.386 --> 00:16:09.256 A:middle
+happening one frame in advance,
+
+00:16:09.956 --> 00:16:12.196 A:middle
+it requires separate set of
+
+00:16:12.286 --> 00:16:13.326 A:middle
+predicted pauses.
+
+00:16:14.066 --> 00:16:16.586 A:middle
+This set is predicted 56
+
+00:16:16.586 --> 00:16:18.956 A:middle
+milliseconds into the future so
+
+00:16:18.956 --> 00:16:20.276 A:middle
+that it will match the set
+
+00:16:20.366 --> 00:16:21.886 A:middle
+predicted for rendering thread
+
+00:16:22.416 --> 00:16:24.176 A:middle
+and both will match the moment
+
+00:16:24.206 --> 00:16:25.266 A:middle
+when photons are emitted.
+
+00:16:27.126 --> 00:16:28.646 A:middle
+This diagram already looks good
+
+00:16:28.646 --> 00:16:31.056 A:middle
+from CPU side, as we can see
+
+00:16:31.056 --> 00:16:32.276 A:middle
+application is nicely
+
+00:16:32.276 --> 00:16:33.566 A:middle
+distributing its work
+
+00:16:33.566 --> 00:16:35.236 A:middle
+[inaudible] CPU course, but
+
+00:16:36.236 --> 00:16:37.566 A:middle
+let's focus on GPU.
+
+00:16:38.446 --> 00:16:43.596 A:middle
+As you can see, now our example
+
+00:16:43.596 --> 00:16:46.696 A:middle
+application is encoding all
+
+00:16:46.696 --> 00:16:48.576 A:middle
+these GPU [inaudible] for the
+
+00:16:48.746 --> 00:16:51.286 A:middle
+whole frame into a single common
+
+00:16:51.286 --> 00:16:54.016 A:middle
+buffer, so unless this common
+
+00:16:54.016 --> 00:16:56.466 A:middle
+buffer is complete, GPU is
+
+00:16:56.466 --> 00:16:57.316 A:middle
+waiting idle.
+
+00:16:58.836 --> 00:17:00.306 A:middle
+But it's important to notice
+

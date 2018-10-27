@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.316 --> 00:24:00.226 A:middle
+We know those are different.
+
+00:24:00.526 --> 00:24:02.066 A:middle
+So we need some operation.
+
+00:24:02.116 --> 00:24:03.706 A:middle
+Let's call it index offsetBy.
+
+00:24:04.506 --> 00:24:06.106 A:middle
+To jump from the start index
+
+00:24:06.516 --> 00:24:07.606 A:middle
+quickly over to whatever
+
+00:24:07.606 --> 00:24:08.816 A:middle
+position we've selected.
+
+00:24:10.106 --> 00:24:11.926 A:middle
+The other operation we need is
+
+00:24:11.926 --> 00:24:13.276 A:middle
+the ability to swap two
+
+00:24:13.276 --> 00:24:13.816 A:middle
+elements.
+
+00:24:14.916 --> 00:24:17.116 A:middle
+Great. We have two operations
+
+00:24:17.116 --> 00:24:18.086 A:middle
+that we need to add to the
+
+00:24:18.086 --> 00:24:19.596 A:middle
+notion of a collection to be
+
+00:24:19.596 --> 00:24:21.026 A:middle
+able to implement shuffle.
+
+00:24:21.336 --> 00:24:22.456 A:middle
+Therefore, we have a new
+
+00:24:22.456 --> 00:24:23.686 A:middle
+shuffleCollection protocol.
+
+00:24:25.976 --> 00:24:27.606 A:middle
+Please don't do this.
+
+00:24:28.096 --> 00:24:29.396 A:middle
+So this is an anti-pattern that
+
+00:24:29.396 --> 00:24:29.836 A:middle
+we see.
+
+00:24:30.466 --> 00:24:32.106 A:middle
+And the anti-pattern here is we
+
+00:24:32.106 --> 00:24:33.096 A:middle
+had one algorithm.
+
+00:24:33.276 --> 00:24:34.956 A:middle
+We found its requirements, and
+
+00:24:34.956 --> 00:24:36.236 A:middle
+then we packaged it up into a
+
+00:24:36.236 --> 00:24:38.366 A:middle
+protocol that is just that one--
+
+00:24:39.316 --> 00:24:40.296 A:middle
+just describes that one
+
+00:24:40.296 --> 00:24:40.856 A:middle
+algorithm.
+
+00:24:41.116 --> 00:24:42.556 A:middle
+If you do this, you have lots
+
+00:24:42.626 --> 00:24:44.236 A:middle
+and lots and lots of protocols
+
+00:24:44.236 --> 00:24:45.756 A:middle
+around that don't have any
+
+00:24:45.756 --> 00:24:46.526 A:middle
+interesting meaning.
+
+00:24:46.526 --> 00:24:47.656 A:middle
+You're not learning anything
+
+00:24:47.656 --> 00:24:48.526 A:middle
+from those protocols.
+
+00:24:49.026 --> 00:24:51.486 A:middle
+So what you should do is notice
+
+00:24:51.486 --> 00:24:52.956 A:middle
+that we actually have distinct
+
+00:24:52.956 --> 00:24:53.956 A:middle
+capabilities here.
+
+00:24:54.436 --> 00:24:55.536 A:middle
+So shuffle is using random
+
+00:24:55.536 --> 00:24:57.496 A:middle
+access, and it's using mutation.
+
+00:24:57.956 --> 00:24:58.806 A:middle
+But, these are, these are
+
+00:24:58.806 --> 00:25:00.076 A:middle
+separate, and we can categorize
+

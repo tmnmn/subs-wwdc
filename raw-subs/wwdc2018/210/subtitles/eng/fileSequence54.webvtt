@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:59.546 --> 00:54:00.536 A:middle
+So, in general, this is the
+
+00:54:00.536 --> 00:54:01.506 A:middle
+system preference.
+
+00:54:01.716 --> 00:54:02.926 A:middle
+Some of you maybe already have a
+
+00:54:02.926 --> 00:54:04.086 A:middle
+dark theme for your application
+
+00:54:04.086 --> 00:54:05.476 A:middle
+controlled via app preference,
+
+00:54:05.526 --> 00:54:06.796 A:middle
+so your first step would be to
+
+00:54:06.876 --> 00:54:07.916 A:middle
+tie that back to the system
+
+00:54:07.916 --> 00:54:10.156 A:middle
+preference so the people using
+
+00:54:10.156 --> 00:54:11.426 A:middle
+the system can have a consistent
+
+00:54:11.426 --> 00:54:12.786 A:middle
+experience.
+
+00:54:13.366 --> 00:54:15.056 A:middle
+And in some ambiguous cases like
+
+00:54:15.056 --> 00:54:16.286 A:middle
+Raymond mentioned, there may be
+
+00:54:16.286 --> 00:54:17.356 A:middle
+some additional need for an
+
+00:54:17.356 --> 00:54:18.566 A:middle
+in-app preference, such as in
+
+00:54:18.566 --> 00:54:20.296 A:middle
+the mail case, but for the most
+
+00:54:20.296 --> 00:54:21.606 A:middle
+part, the system preference
+
+00:54:21.606 --> 00:54:23.456 A:middle
+should be exactly what users go
+
+00:54:23.456 --> 00:54:23.706 A:middle
+for.
+
+00:54:23.706 --> 00:54:26.466 A:middle
+If you do decide you need to
+
+00:54:26.516 --> 00:54:27.876 A:middle
+have an always dark application,
+
+00:54:28.096 --> 00:54:29.276 A:middle
+it's really important to not to
+
+00:54:29.276 --> 00:54:30.486 A:middle
+use the Vibrant Dark appearance
+
+00:54:30.486 --> 00:54:31.926 A:middle
+on the entire window, because
+
+00:54:31.926 --> 00:54:33.196 A:middle
+that's not appropriate for the
+
+00:54:33.196 --> 00:54:35.416 A:middle
+opaque window areas of the
+
+00:54:35.416 --> 00:54:37.136 A:middle
+application and are really only
+
+00:54:37.136 --> 00:54:38.266 A:middle
+intended for sidebars.
+
+00:54:39.316 --> 00:54:40.226 A:middle
+Instead, you want to use the
+
+00:54:40.226 --> 00:54:41.866 A:middle
+Dark Aqua appearance if you want
+
+00:54:41.866 --> 00:54:43.746 A:middle
+to have that always dark look.
+
+00:54:44.596 --> 00:54:46.096 A:middle
+In addition to be able to be set
+
+00:54:46.096 --> 00:54:47.626 A:middle
+on the window as a whole, you
+
+00:54:47.626 --> 00:54:49.046 A:middle
+can also set it on an individual
+
+00:54:49.046 --> 00:54:50.276 A:middle
+window or view scoping, and
+
+00:54:50.626 --> 00:54:51.826 A:middle
+that's inherited by all of the
+
+00:54:51.866 --> 00:54:52.856 A:middle
+views contained within it.
+
+00:54:53.626 --> 00:54:55.086 A:middle
+For instance, here, we're
+
+00:54:55.086 --> 00:54:56.506 A:middle
+setting the sidebar to always
+
+00:54:56.506 --> 00:54:58.736 A:middle
+have the darkAqua appearance if
+
+00:54:58.736 --> 00:54:59.506 A:middle
+we want to experiment with
+
+00:54:59.506 --> 00:55:00.176 A:middle
+something like that.
+

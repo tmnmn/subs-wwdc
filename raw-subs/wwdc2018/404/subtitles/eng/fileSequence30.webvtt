@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:58.246 --> 00:30:00.126 A:middle
+enumerations that you've defined
+
+00:30:00.126 --> 00:30:01.556 A:middle
+in your intent definition when
+
+00:30:01.556 --> 00:30:02.856 A:middle
+it's generating the strings
+
+00:30:02.856 --> 00:30:02.976 A:middle
+files.
+
+00:30:03.146 --> 00:30:08.106 A:middle
+And you can use both strings and
+
+00:30:08.166 --> 00:30:10.356 A:middle
+stringsdict files to localize
+
+00:30:10.356 --> 00:30:11.106 A:middle
+your shortcuts.
+
+00:30:11.586 --> 00:30:14.796 A:middle
+And if you're creating an intent
+
+00:30:14.886 --> 00:30:16.836 A:middle
+in code to donate it to the
+
+00:30:16.916 --> 00:30:18.716 A:middle
+system, to inform the system of
+
+00:30:18.716 --> 00:30:19.986 A:middle
+a user action that might be
+
+00:30:19.986 --> 00:30:23.066 A:middle
+repeated, you can use deferred
+
+00:30:23.066 --> 00:30:26.616 A:middle
+Localized Intents String to wrap
+
+00:30:26.616 --> 00:30:28.236 A:middle
+that string in such a way that
+
+00:30:28.236 --> 00:30:29.476 A:middle
+it'll be localized when it's
+
+00:30:29.476 --> 00:30:31.526 A:middle
+presented to the user, not at
+
+00:30:31.526 --> 00:30:32.826 A:middle
+the point where it's created in
+
+00:30:32.826 --> 00:30:33.626 A:middle
+your application.
+
+00:30:33.626 --> 00:30:35.416 A:middle
+So if the user changes their
+
+00:30:35.416 --> 00:30:37.546 A:middle
+phone's language in between when
+
+00:30:37.546 --> 00:30:39.196 A:middle
+you've donated that intent, and
+
+00:30:39.196 --> 00:30:40.996 A:middle
+when a shortcut is displayed, it
+
+00:30:41.146 --> 00:30:43.416 A:middle
+still follows the user's phone
+
+00:30:43.416 --> 00:30:43.976 A:middle
+language.
+
+00:30:44.546 --> 00:30:49.566 A:middle
+Now when you define strings in a
+
+00:30:49.616 --> 00:30:51.566 A:middle
+stringsdict file, they are
+
+00:30:51.566 --> 00:30:53.146 A:middle
+actually going to be preferred
+
+00:30:53.146 --> 00:30:53.876 A:middle
+at runtime.
+
+00:30:54.626 --> 00:30:56.046 A:middle
+That means you can do the
+
+00:30:56.046 --> 00:30:58.266 A:middle
+majority of your localization in
+
+00:30:58.266 --> 00:31:00.246 A:middle
+your strings files for all of
+

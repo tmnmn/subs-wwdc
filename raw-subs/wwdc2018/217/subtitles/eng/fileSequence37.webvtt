@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.566 --> 00:37:01.376 A:middle
+We actually use both these two
+
+00:37:01.436 --> 00:37:02.696 A:middle
+properties with the existing
+
+00:37:02.696 --> 00:37:04.266 A:middle
+location based reminders on the
+
+00:37:04.266 --> 00:37:06.036 A:middle
+Siri watch face, to get, kind
+
+00:37:06.036 --> 00:37:07.686 A:middle
+of, a geofencing-like behavior.
+
+00:37:10.146 --> 00:37:12.106 A:middle
+By default on CLRegion, both
+
+00:37:12.106 --> 00:37:13.096 A:middle
+these properties are set to
+
+00:37:13.096 --> 00:37:13.476 A:middle
+"true."
+
+00:37:14.016 --> 00:37:15.386 A:middle
+And, in that case, we'll
+
+00:37:15.706 --> 00:37:17.226 A:middle
+smoothly interpolate the
+
+00:37:17.226 --> 00:37:18.766 A:middle
+relevance based on how close the
+
+00:37:18.766 --> 00:37:19.806 A:middle
+user is to a particular
+
+00:37:19.806 --> 00:37:20.346 A:middle
+location.
+
+00:37:21.716 --> 00:37:24.506 A:middle
+And so, creating your CLRegion
+
+00:37:24.556 --> 00:37:25.306 A:middle
+is really easy.
+
+00:37:26.516 --> 00:37:27.866 A:middle
+In this example, we're creating
+
+00:37:27.866 --> 00:37:29.396 A:middle
+one around Apple Park, so I've
+
+00:37:29.486 --> 00:37:30.386 A:middle
+brought in the coordinates for
+
+00:37:30.386 --> 00:37:32.546 A:middle
+Apple Park, along with the
+
+00:37:32.546 --> 00:37:33.026 A:middle
+radius.
+
+00:37:33.026 --> 00:37:34.256 A:middle
+So, how close do I need to be?
+
+00:37:34.526 --> 00:37:35.826 A:middle
+In this case, 2 kilometers.
+
+00:37:36.276 --> 00:37:39.366 A:middle
+Next, I will go adjust the
+
+00:37:39.366 --> 00:37:40.926 A:middle
+notifyOnEntry, notifyOnExit
+
+00:37:40.956 --> 00:37:42.066 A:middle
+properties as they make sense
+
+00:37:42.066 --> 00:37:42.836 A:middle
+for my use case.
+
+00:37:43.476 --> 00:37:44.836 A:middle
+And, once I have my region fully
+
+00:37:44.836 --> 00:37:46.846 A:middle
+configured, I can really easily
+
+00:37:46.846 --> 00:37:47.266 A:middle
+create a
+
+00:37:47.266 --> 00:37:48.436 A:middle
+locationRelevanceProvider.
+
+00:37:50.696 --> 00:37:52.276 A:middle
+A couple of quick notes about
+
+00:37:52.276 --> 00:37:53.616 A:middle
+the locationRelevanceProvider.
+
+00:37:54.696 --> 00:37:56.086 A:middle
+In order to use it, your app
+
+00:37:56.086 --> 00:37:57.596 A:middle
+needs location authorization,
+
+00:37:57.736 --> 00:37:58.796 A:middle
+otherwise we're going to ignore
+
+00:37:58.796 --> 00:37:59.326 A:middle
+this particular
+
+00:37:59.326 --> 00:38:00.606 A:middle
+locationRelevanceProvider.
+

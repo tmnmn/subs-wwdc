@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:55.382 --> 00:07:00.053 align:start position:30% line:-2
+そこでUIImageは
+イメージバッファを
+
+00:07:00.621 --> 00:07:04.791 align:start position:34% line:-2
+画像と同じサイズで
+割り当てます
+
+00:07:05.492 --> 00:07:13.333 align:start position:27% line:-2
+そしてデコードにより
+JPEGなどの画像データを
+
+00:07:13.433 --> 00:07:16.703 align:start position:30% line:-2
+ピクセル単位の色情報に
+変換します
+
+00:07:17.604 --> 00:07:23.210 align:start position:27% line:-2
+UIKitがレンダリングを
+要求すると 画像ビューは
+
+00:07:23.810 --> 00:07:28.348 align:start position:32% line:-2
+イメージバッファから
+フレームバッファへ―
+
+00:07:28.448 --> 00:07:30.017 align:start position:39% line:-1
+コピーします
+
+00:07:32.619 --> 00:07:38.225 align:start position:30% line:-2
+大きな画像のデコードは
+CPUには負担です
+
+00:07:38.692 --> 00:07:43.363 align:start position:32% line:-2
+でもUIImageを
+毎回コピーせずに
+
+00:07:43.931 --> 00:07:48.802 align:start position:29% line:-2
+イメージバッファに残せば
+一度で済みます
+
+00:07:49.436 --> 00:07:53.207 align:start position:27% line:-2
+これなら
+画像をすべてデコードしても
+
+00:07:53.307 --> 00:07:56.844 align:start position:36% line:-2
+大容量のメモリを
+確保できます
+
+00:07:57.978 --> 00:08:03.016 align:start position:27% line:-2
+この割り当てに比例するのは
+画像サイズであり
+

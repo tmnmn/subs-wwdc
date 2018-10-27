@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.596 --> 00:06:01.426 A:middle
+your app, and it integrates with
+
+00:06:01.456 --> 00:06:02.776 A:middle
+other Apple features like
+
+00:06:02.806 --> 00:06:04.156 A:middle
+Spotlight and Handoff.
+
+00:06:05.046 --> 00:06:07.046 A:middle
+And the second is intents.
+
+00:06:07.626 --> 00:06:08.676 A:middle
+Intents are a way of
+
+00:06:08.676 --> 00:06:10.726 A:middle
+representing, in detail, a type
+
+00:06:10.726 --> 00:06:12.286 A:middle
+of action that your app can
+
+00:06:12.286 --> 00:06:14.726 A:middle
+perform, and Siri includes a
+
+00:06:14.726 --> 00:06:18.166 A:middle
+bunch of great built-in intents
+
+00:06:18.166 --> 00:06:19.106 A:middle
+that support a range of
+
+00:06:19.106 --> 00:06:20.786 A:middle
+capabilities that apps can use
+
+00:06:20.786 --> 00:06:21.716 A:middle
+to integrate with Siri.
+
+00:06:22.226 --> 00:06:22.916 A:middle
+And, this year, we're
+
+00:06:22.916 --> 00:06:23.896 A:middle
+introducing something really
+
+00:06:23.896 --> 00:06:25.176 A:middle
+cool, which is the ability for
+
+00:06:25.176 --> 00:06:26.556 A:middle
+you to define your own custom
+
+00:06:26.556 --> 00:06:27.886 A:middle
+intents for use with Shortcuts.
+
+00:06:29.006 --> 00:06:30.676 A:middle
+So, for every shortcut you
+
+00:06:30.676 --> 00:06:32.286 A:middle
+expose, you'll need to decide
+
+00:06:32.286 --> 00:06:33.126 A:middle
+whether it should be an
+
+00:06:33.126 --> 00:06:34.836 A:middle
+NSUserActivity or an intent.
+
+00:06:35.266 --> 00:06:36.836 A:middle
+So, let's talk about how to make
+
+00:06:37.466 --> 00:06:39.266 A:middle
+that decision.
+
+00:06:40.236 --> 00:06:42.426 A:middle
+Now, NSUserActivity is a great
+
+00:06:42.426 --> 00:06:43.606 A:middle
+choice for building a shortcut.
+
+00:06:43.866 --> 00:06:45.366 A:middle
+If you're just building a simple
+
+00:06:45.366 --> 00:06:46.746 A:middle
+shortcut that opens something in
+
+00:06:46.746 --> 00:06:49.186 A:middle
+your app, or if you're exposing
+
+00:06:49.186 --> 00:06:51.496 A:middle
+a shortcut for something that
+
+00:06:51.496 --> 00:06:53.216 A:middle
+you already index in Spotlight
+
+00:06:53.216 --> 00:06:55.386 A:middle
+search, or that you already
+
+00:06:55.426 --> 00:06:57.486 A:middle
+offer in NSUserActivity for, for
+
+00:06:57.486 --> 00:06:58.616 A:middle
+example, for Handoff.
+
+00:06:59.146 --> 00:07:02.436 A:middle
+But for the best Shortcuts
+

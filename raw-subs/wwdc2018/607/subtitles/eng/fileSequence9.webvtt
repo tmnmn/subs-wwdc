@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.606 --> 00:09:00.796 A:middle
+allocations can happen in the
+
+00:09:00.796 --> 00:09:02.146 A:middle
+middle of your frame, causing
+
+00:09:02.146 --> 00:09:02.866 A:middle
+stutters.
+
+00:09:03.726 --> 00:09:05.156 A:middle
+Resource heaps are a great
+
+00:09:05.256 --> 00:09:06.396 A:middle
+solution to this problem.
+
+00:09:07.556 --> 00:09:08.786 A:middle
+Heaps also let you allocate
+
+00:09:09.386 --> 00:09:11.246 A:middle
+large slabs of memory from the
+
+00:09:11.246 --> 00:09:12.196 A:middle
+system upfront.
+
+00:09:12.456 --> 00:09:13.566 A:middle
+And from those, you can later
+
+00:09:13.606 --> 00:09:14.966 A:middle
+add or remove textures and
+
+00:09:14.966 --> 00:09:16.546 A:middle
+buffers from those slabs without
+
+00:09:16.546 --> 00:09:18.286 A:middle
+any costly round trip.
+
+00:09:18.836 --> 00:09:20.836 A:middle
+So starting from a case where
+
+00:09:20.836 --> 00:09:22.996 A:middle
+you allocate 3 normal textures,
+
+00:09:23.866 --> 00:09:25.406 A:middle
+Metal typically places these in
+
+00:09:25.406 --> 00:09:27.876 A:middle
+3 separate allocations, but
+
+00:09:27.986 --> 00:09:29.776 A:middle
+putting these all instead into a
+
+00:09:29.776 --> 00:09:31.976 A:middle
+single heap lets you perform all
+
+00:09:31.976 --> 00:09:34.396 A:middle
+memory allocation upfront at
+
+00:09:34.396 --> 00:09:35.286 A:middle
+heap creation time.
+
+00:09:35.696 --> 00:09:37.456 A:middle
+So then, the act of creating
+
+00:09:37.456 --> 00:09:38.926 A:middle
+textures becomes extremely
+
+00:09:38.926 --> 00:09:39.296 A:middle
+cheap.
+
+00:09:40.506 --> 00:09:42.956 A:middle
+Also, heaps can sometimes let us
+
+00:09:42.956 --> 00:09:44.836 A:middle
+use the space more efficiently
+
+00:09:45.206 --> 00:09:46.856 A:middle
+by packing allocations closer
+
+00:09:46.856 --> 00:09:47.286 A:middle
+together.
+
+00:09:48.396 --> 00:09:50.696 A:middle
+So with a traditional model, you
+
+00:09:50.696 --> 00:09:51.886 A:middle
+would deallocate textures,
+
+00:09:52.736 --> 00:09:53.836 A:middle
+releasing pages back to the
+
+00:09:53.836 --> 00:09:55.836 A:middle
+system, and then reallocate,
+
+00:09:56.536 --> 00:09:57.796 A:middle
+which will allocate a new set of
+
+00:09:57.796 --> 00:09:58.976 A:middle
+textures all over again.
+
+00:09:59.476 --> 00:10:02.006 A:middle
+With heaps, you deallocate and
+

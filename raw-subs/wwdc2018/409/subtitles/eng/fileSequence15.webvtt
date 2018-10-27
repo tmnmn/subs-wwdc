@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:57.186 --> 00:15:00.986 A:middle
+Once we do that the new layout
+
+00:15:00.986 --> 00:15:02.546 A:middle
+rules will apply only to the
+
+00:15:02.546 --> 00:15:05.006 A:middle
+packed structure so they won't
+
+00:15:05.296 --> 00:15:06.676 A:middle
+affect any other structures in
+
+00:15:06.676 --> 00:15:06.976 A:middle
+our program.
+
+00:15:12.046 --> 00:15:13.596 A:middle
+These two new warnings that I
+
+00:15:13.596 --> 00:15:16.026 A:middle
+mentioned are enabled by default
+
+00:15:16.026 --> 00:15:18.936 A:middle
+in Xcode 10 and they are there
+
+00:15:18.936 --> 00:15:21.186 A:middle
+to help you write more correct
+
+00:15:21.346 --> 00:15:22.606 A:middle
+and more robust code.
+
+00:15:23.306 --> 00:15:24.766 A:middle
+And to talk more about more
+
+00:15:24.766 --> 00:15:27.066 A:middle
+correct and more robust code I'd
+
+00:15:27.066 --> 00:15:28.646 A:middle
+like to invite George up on
+
+00:15:28.646 --> 00:15:30.126 A:middle
+stage who will talk about the
+
+00:15:30.126 --> 00:15:31.556 A:middle
+new static analyzing
+
+00:15:31.556 --> 00:15:33.126 A:middle
+improvements in Xcode 10.
+
+00:15:33.376 --> 00:15:33.536 A:middle
+George.
+
+00:15:34.516 --> 00:15:39.500 A:middle
+[ Applause ]
+
+00:15:42.056 --> 00:15:43.426 A:middle
+&gt;&gt; Thanks Alex, so I would like
+
+00:15:43.426 --> 00:15:44.836 A:middle
+to tell you about some of the
+
+00:15:44.836 --> 00:15:46.706 A:middle
+improvements we have done for
+
+00:15:46.986 --> 00:15:48.896 A:middle
+Xcode 10 for the Clang Static
+
+00:15:48.896 --> 00:15:49.456 A:middle
+Analyzer.
+
+00:15:50.356 --> 00:15:52.086 A:middle
+So the Clang Static Analyzer is
+
+00:15:52.086 --> 00:15:53.566 A:middle
+a great tool for finding HK
+
+00:15:53.566 --> 00:15:55.936 A:middle
+hard-to-reproduce bugs in your
+
+00:15:55.936 --> 00:15:56.486 A:middle
+program.
+
+00:15:56.736 --> 00:15:58.656 A:middle
+And not only the Static Analyzer
+
+00:15:58.656 --> 00:16:00.726 A:middle
+finds the bug for you it also
+

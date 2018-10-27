@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.426 --> 00:31:01.762 align:start position:30% line:-1
+ご存知だと思いますが―
+
+00:31:02.095 --> 00:31:05.165 align:start position:23% line:-2
+これが“setHidden”と
+呼ばれるものです
+
+00:31:05.365 --> 00:31:09.303 align:start position:34% line:-2
+周りのビューに
+影響を与えないので
+
+00:31:09.403 --> 00:31:11.472 align:start position:34% line:-1
+制約はそのままです
+
+00:31:11.572 --> 00:31:15.909 align:start position:25% line:-2
+これはビューの表示を変更する
+一番楽な方法です
+
+00:31:16.009 --> 00:31:20.013 align:start position:23% line:-1
+ビュー階層からやるより簡単です
+
+00:31:20.114 --> 00:31:22.850 align:start position:34% line:-2
+一方 画像ビューは
+どうでしょう？
+
+00:31:23.350 --> 00:31:24.985 align:start position:38% line:-1
+説明しましょう
+
+00:31:25.085 --> 00:31:28.422 align:start position:27% line:-2
+こちらも
+一度すべての制約を破棄して
+
+00:31:28.522 --> 00:31:31.258 align:start position:23% line:-1
+元々あった画像ビューを加えます
+
+00:31:31.792 --> 00:31:35.662 align:start position:29% line:-2
+すべて元の場所に戻るので
+衝突が発生します
+
+00:31:36.463 --> 00:31:38.031 align:start position:34% line:-1
+このような状況では
+
+00:31:38.131 --> 00:31:41.502 align:start position:32% line:-2
+制約をグループ化して
+考えてください
+
+00:31:42.135 --> 00:31:45.005 align:start position:27% line:-1
+緑線の部分が１グループです
+
+00:31:46.106 --> 00:31:49.943 align:start position:27% line:-2
+これらの制約は
+すべてのレイアウト共通です
+
+00:31:50.377 --> 00:31:53.914 align:start position:29% line:-2
+変更しなくてよいビューで
+表示を切り替えても
+
+00:31:54.014 --> 00:31:55.616 align:start position:27% line:-1
+アバタービューは動きません
+
+00:31:55.716 --> 00:31:58.452 align:start position:30% line:-2
+ログエントリのラベルが
+長くなることを除いて
+
+00:31:58.552 --> 00:32:01.155 align:start position:30% line:-1
+他のラベルは動きません
+

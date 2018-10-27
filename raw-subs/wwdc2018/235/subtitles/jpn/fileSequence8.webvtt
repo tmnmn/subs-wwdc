@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:59.446 --> 00:08:05.052 align:start position:14% line:-2
+Safe Areaの制約を構築するための
+ビューの一覧で確認できます
+
+00:08:06.353 --> 00:08:10.390 align:start position:23% line:-2
+次はレイアウトマージンについて
+お話しします
+
+00:08:13.260 --> 00:08:17.664 align:start position:30% line:-2
+レイアウトマージンとは
+つまり余白です
+
+00:08:17.931 --> 00:08:21.068 align:start position:29% line:-2
+通常 これらは制御可能な
+プロパティで
+
+00:08:21.168 --> 00:08:25.873 align:start position:27% line:-2
+ビューの縁からのスペースを
+指定できます
+
+00:08:26.707 --> 00:08:28.175 align:start position:27% line:-1
+Safe Areaと同様―
+
+00:08:28.275 --> 00:08:33.212 align:start position:2% line:-2
+UIEdgeInsets型のlayoutMargins
+プロパティで参照できます
+
+00:08:33.881 --> 00:08:38.885 align:start position:2% line:-2
+昨年はdirectionalLayoutMargins
+プロパティが新たに追加されました
+
+00:08:39.153 --> 00:08:44.892 align:start position:16% line:-2
+layoutMarginsは
+UIEdgeInsetsの値を使います
+
+00:08:45.125 --> 00:08:46.860 align:start position:5% line:-2
+しかし
+directionalLayoutMarginsは
+
+00:08:46.960 --> 00:08:49.062 align:start position:7% line:-2
+NSDirectionalEdgeInsetsを
+使います
+
+00:08:49.496 --> 00:08:51.732 align:start position:27% line:-1
+２つの構造体の最大の違いは
+
+00:08:51.832 --> 00:08:55.969 align:start position:30% line:-2
+後者は 左右ではなく
+前辺と後辺を扱う点です
+
+00:08:56.069 --> 00:09:01.842 align:start position:25% line:-2
+RTLレイアウトに対応する
+マージンを作るのに役立ちます
+

@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.852 --> 00:32:01.288 align:start position:32% line:-1
+ここでは重視しません
+
+00:32:02.556 --> 00:32:05.292 align:start position:27% line:-1
+もう一度 左から見てみます
+
+00:32:05.792 --> 00:32:08.228 align:start position:23% line:-1
+Objective-Cのヘッダ
+
+00:32:08.996 --> 00:32:12.399 align:start position:29% line:-2
+Swiftに情報を与える
+Bridgingヘッダ
+
+00:32:13.267 --> 00:32:15.302 align:start position:29% line:-1
+Swiftの実装ファイル
+
+00:32:15.969 --> 00:32:20.274 align:start position:20% line:-2
+Objective-Cに情報を返す
+Generatedヘッダ
+
+00:32:20.607 --> 00:32:24.178 align:start position:14% line:-1
+Objective-Cの実装ファイルです
+
+00:32:26.013 --> 00:32:28.015 align:start position:36% line:-1
+このような図では
+
+00:32:28.215 --> 00:32:31.418 align:start position:29% line:-1
+矢印はすべて依存関係です
+
+00:32:31.518 --> 00:32:34.121 align:start position:30% line:-1
+ターゲット単位ではなく
+
+00:32:34.221 --> 00:32:37.858 align:start position:23% line:-1
+その中のファイル単位の依存です
+
+00:32:38.358 --> 00:32:42.729 align:start position:21% line:-2
+Generatedヘッダと
+Bridgingヘッダが焦点です
+
+00:32:42.830 --> 00:32:45.599 align:start position:27% line:-1
+このヘッダの内容を減らせば
+
+00:32:45.699 --> 00:32:49.203 align:start position:23% line:-1
+変更の余地も少なくなるからです
+
+00:32:49.303 --> 00:32:51.872 align:start position:27% line:-1
+リビルドの必要性も減ります
+
+00:32:53.373 --> 00:32:54.508 align:start position:32% line:-1
+では 見てみましょう
+
+00:32:54.908 --> 00:32:59.179 align:start position:20% line:-2
+Generatedヘッダでは
+privateキーワードが有効です
+
+00:32:59.513 --> 00:33:03.183 align:start position:16% line:-2
+この例では
+ViewControllerがあります
+

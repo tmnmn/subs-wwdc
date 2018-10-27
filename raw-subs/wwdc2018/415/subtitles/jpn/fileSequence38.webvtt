@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.545 --> 00:38:02.416 align:start position:25% line:-2
+タイプのパラメータ Petが
+動詞drawの後にあります
+
+00:38:03.016 --> 00:38:08.555 align:start position:21% line:-2
+同じく タイプのパラメータである
+CGPointのPointも―
+
+00:38:08.655 --> 00:38:10.457 align:start position:27% line:-1
+前置詞atの後にありますね
+
+00:38:11.925 --> 00:38:15.462 align:start position:32% line:-2
+しかし Swiftに
+インポートされると―
+
+00:38:15.562 --> 00:38:18.098 align:start position:25% line:-1
+単にdrawとatになります
+
+00:38:19.333 --> 00:38:23.036 align:start position:29% line:-2
+その仕組みは
+意外に思うかもしれません
+
+00:38:23.771 --> 00:38:28.142 align:start position:32% line:-2
+英語の動詞と前置詞の
+リストがあるのです
+
+00:38:29.610 --> 00:38:33.313 align:start position:32% line:-2
+しかし 人間の言語は
+あまりに複雑です
+
+00:38:33.414 --> 00:38:35.315 align:start position:27% line:-1
+リストにない単語もあります
+
+00:38:35.682 --> 00:38:38.819 align:start position:27% line:-2
+そして Swiftの慣例に
+合わせるために―
+
+00:38:38.919 --> 00:38:44.291 align:start position:27% line:-2
+インポータは品詞によって
+不要な単語を判断しています
+
+00:38:45.125 --> 00:38:47.828 align:start position:30% line:-2
+例えば feedは
+単語リストにありません
+
+00:38:47.928 --> 00:38:52.532 align:start position:27% line:-2
+このため feedPetは
+例外的な形に変換されます
+
+00:38:53.467 --> 00:38:57.237 align:start position:30% line:-2
+任意の名前で
+インポートさせるには―
+
+00:38:57.337 --> 00:39:01.775 align:start position:20% line:-2
+NS SWIFT NAMEの注釈を
+使いましょう
+

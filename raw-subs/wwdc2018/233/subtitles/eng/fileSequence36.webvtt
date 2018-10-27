@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.966 --> 00:36:00.816 A:middle
+activity to your
+
+00:36:00.816 --> 00:36:02.376 A:middle
+viewController's userActivity
+
+00:36:02.376 --> 00:36:02.876 A:middle
+property.
+
+00:36:04.016 --> 00:36:05.276 A:middle
+This will cause it to become the
+
+00:36:05.276 --> 00:36:06.836 A:middle
+current activity, whenever that
+
+00:36:06.836 --> 00:36:08.056 A:middle
+viewController is presented.
+
+00:36:09.526 --> 00:36:10.326 A:middle
+And, that's all you need to do
+
+00:36:10.326 --> 00:36:11.356 A:middle
+on the originating device.
+
+00:36:12.946 --> 00:36:14.776 A:middle
+On the continuing device, first
+
+00:36:14.776 --> 00:36:15.886 A:middle
+of all, your app needs to
+
+00:36:15.886 --> 00:36:18.096 A:middle
+declare support for the type of
+
+00:36:18.096 --> 00:36:19.316 A:middle
+activity that you created.
+
+00:36:20.186 --> 00:36:21.606 A:middle
+Then, you need to implement two
+
+00:36:21.846 --> 00:36:23.656 A:middle
+UIApplicationDelegate callbacks.
+
+00:36:24.736 --> 00:36:25.926 A:middle
+The first is application
+
+00:36:25.926 --> 00:36:26.796 A:middle
+willContinueUser
+
+00:36:26.796 --> 00:36:27.616 A:middle
+ActivityWithType.
+
+00:36:27.956 --> 00:36:29.646 A:middle
+And, this is called as soon as
+
+00:36:29.646 --> 00:36:32.086 A:middle
+you click or tap on the icon to
+
+00:36:32.086 --> 00:36:33.216 A:middle
+initiate the handoff.
+
+00:36:34.356 --> 00:36:36.016 A:middle
+At this point, we don't have the
+
+00:36:36.016 --> 00:36:37.616 A:middle
+NSUserActivity object ready yet,
+
+00:36:38.376 --> 00:36:39.436 A:middle
+but you know the kind of
+
+00:36:39.436 --> 00:36:40.306 A:middle
+activity that's going to be
+
+00:36:40.306 --> 00:36:42.136 A:middle
+continued, so you can begin
+
+00:36:42.136 --> 00:36:43.916 A:middle
+preparing your UI.
+
+00:36:44.506 --> 00:36:46.316 A:middle
+Very shortly after, you'll
+
+00:36:46.316 --> 00:36:46.696 A:middle
+receive
+
+00:36:46.696 --> 00:36:48.716 A:middle
+applicationContinueRestoration
+
+00:36:48.716 --> 00:36:50.876 A:middle
+handler, which will contain the
+
+00:36:50.876 --> 00:36:52.016 A:middle
+fully reconstructed
+
+00:36:52.016 --> 00:36:53.296 A:middle
+NSUserActivity object.
+
+00:36:53.706 --> 00:36:56.496 A:middle
+From that point, you can set up
+
+00:36:56.496 --> 00:36:58.766 A:middle
+and continue the experience
+
+00:36:58.766 --> 00:36:59.526 A:middle
+right on that device.
+

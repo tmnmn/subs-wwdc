@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.956 --> 00:12:00.706 A:middle
+proceed with the authorization
+
+00:12:00.706 --> 00:12:01.306 A:middle
+process.
+
+00:12:03.366 --> 00:12:04.516 A:middle
+If you're using long-lived
+
+00:12:04.516 --> 00:12:06.416 A:middle
+tokens, simply call the done
+
+00:12:06.416 --> 00:12:08.136 A:middle
+function immediately in the body
+
+00:12:08.136 --> 00:12:09.846 A:middle
+of the authorization callback
+
+00:12:09.846 --> 00:12:10.406 A:middle
+function.
+
+00:12:11.146 --> 00:12:12.936 A:middle
+MapKit JS will use the same
+
+00:12:12.936 --> 00:12:14.846 A:middle
+long-lived token any time it
+
+00:12:14.846 --> 00:12:16.756 A:middle
+needs to refresh its
+
+00:12:16.756 --> 00:12:17.536 A:middle
+authorization.
+
+00:12:19.526 --> 00:12:21.976 A:middle
+Finally, set a map container and
+
+00:12:21.976 --> 00:12:23.016 A:middle
+center for your map.
+
+00:12:25.896 --> 00:12:27.656 A:middle
+Now, let's start our server and
+
+00:12:27.656 --> 00:12:28.756 A:middle
+see this all in action.
+
+00:12:31.176 --> 00:12:32.206 A:middle
+If everything is set up
+
+00:12:32.206 --> 00:12:33.996 A:middle
+correctly, your browser should
+
+00:12:33.996 --> 00:12:34.756 A:middle
+display a map.
+
+00:12:36.686 --> 00:12:37.836 A:middle
+If you're using short-lived
+
+00:12:37.836 --> 00:12:40.276 A:middle
+tokens in the web inspector, you
+
+00:12:40.276 --> 00:12:42.576 A:middle
+should see a server endpoint
+
+00:12:42.576 --> 00:12:44.466 A:middle
+being called, returning an
+
+00:12:44.466 --> 00:12:45.626 A:middle
+authorization token.
+
+00:12:46.876 --> 00:12:48.516 A:middle
+Now that MapKit JS has its
+
+00:12:48.516 --> 00:12:49.996 A:middle
+authorization, it'll do the
+
+00:12:49.996 --> 00:12:50.416 A:middle
+rest.
+
+00:12:51.146 --> 00:12:53.816 A:middle
+MapKit JS will request from your
+
+00:12:53.916 --> 00:12:55.166 A:middle
+route whenever it needs a new
+
+00:12:55.166 --> 00:12:55.666 A:middle
+token.
+
+00:12:57.896 --> 00:12:59.926 A:middle
+So now you know how MapKit JS
+
+00:12:59.926 --> 00:13:01.066 A:middle
+authorization works.
+

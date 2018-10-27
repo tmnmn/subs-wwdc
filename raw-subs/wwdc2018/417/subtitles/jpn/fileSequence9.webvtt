@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.740 --> 00:09:02.543 align:start position:18% line:-1
+URLProtocolはプログレスを
+
+00:09:02.643 --> 00:09:05.579 align:start position:14% line:-2
+URLProtocolClientを通じ
+システムに伝達
+
+00:09:07.948 --> 00:09:10.083 align:start position:34% line:-1
+このように使えます
+
+00:09:10.951 --> 00:09:14.221 align:start position:18% line:-2
+テストバンドルに
+MockURLProtocolを作成
+
+00:09:14.755 --> 00:09:17.357 align:start position:27% line:-2
+canInitリクエストを
+オーバーライドし
+
+00:09:17.457 --> 00:09:21.562 align:start position:32% line:-2
+あらゆるリクエストに
+興味があると示します
+
+00:09:23.730 --> 00:09:26.366 align:start position:20% line:-2
+canonicalRequestを
+実装しますが
+
+00:09:26.466 --> 00:09:30.337 align:start position:25% line:-2
+startLoadingと
+stopLoadingも実装
+
+00:09:34.741 --> 00:09:37.911 align:start position:25% line:-2
+このURLProtocolに
+フックするため―
+
+00:09:38.011 --> 00:09:42.282 align:start position:23% line:-2
+requestHandlerを
+テストに提供します
+
+00:09:44.852 --> 00:09:47.054 align:start position:18% line:-1
+URLSessionタスクが始まると
+
+00:09:47.154 --> 00:09:50.424 align:start position:20% line:-2
+URLProtocolサブクラスを
+インスタンス化
+
+00:09:50.524 --> 00:09:55.729 align:start position:9% line:-2
+URLRequest値とURLProtocol
+クライアントインスタンスを提供
+
+00:09:57.197 --> 00:09:59.533 align:start position:20% line:-2
+そして
+startLoadingを呼び出し
+
+00:09:59.633 --> 00:10:03.136 align:start position:20% line:-2
+テストサブセットに
+requestHandlerを提供
+

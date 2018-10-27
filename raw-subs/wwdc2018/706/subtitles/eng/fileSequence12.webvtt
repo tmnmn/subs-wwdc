@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.366 --> 00:12:00.496 A:middle
+You should be aware that in
+
+00:12:00.496 --> 00:12:02.526 A:middle
+order to maintain user privacy
+
+00:12:02.976 --> 00:12:05.066 A:middle
+we don't reveal to you which
+
+00:12:05.176 --> 00:12:07.046 A:middle
+categories a user has granted
+
+00:12:07.046 --> 00:12:08.976 A:middle
+access or denied access to.
+
+00:12:14.046 --> 00:12:14.676 A:middle
+And now to querying.
+
+00:12:14.896 --> 00:12:17.306 A:middle
+Because HKClinicalRecord is an
+
+00:12:17.306 --> 00:12:19.306 A:middle
+HKSample you can take advantage
+
+00:12:19.306 --> 00:12:21.296 A:middle
+of all of the existing sample
+
+00:12:21.296 --> 00:12:22.506 A:middle
+query infrastructure in
+
+00:12:22.506 --> 00:12:23.036 A:middle
+HealthKit.
+
+00:12:24.006 --> 00:12:25.406 A:middle
+Things like SampleQuery,
+
+00:12:25.826 --> 00:12:27.266 A:middle
+AnchoredObjectQuery and
+
+00:12:27.266 --> 00:12:29.936 A:middle
+ObserverQuery will all work and
+
+00:12:29.936 --> 00:12:31.366 A:middle
+if your user has granted
+
+00:12:31.366 --> 00:12:33.476 A:middle
+continuous access background
+
+00:12:33.476 --> 00:12:37.706 A:middle
+delivery will also work.
+
+00:12:38.396 --> 00:12:40.296 A:middle
+Again, you define the type that
+
+00:12:40.296 --> 00:12:41.496 A:middle
+you wish to query for.
+
+00:12:42.256 --> 00:12:45.006 A:middle
+We're creating a sample query
+
+00:12:45.006 --> 00:12:48.226 A:middle
+here and you can execute that on
+
+00:12:48.226 --> 00:12:48.836 A:middle
+the Health Store.
+
+00:12:53.076 --> 00:12:54.006 A:middle
+So that's the basic
+
+00:12:54.006 --> 00:12:55.146 A:middle
+authorization flow.
+
+00:12:55.606 --> 00:12:57.446 A:middle
+But we've actually introduced
+
+00:12:57.446 --> 00:12:59.216 A:middle
+some additional mechanisms
+
+00:12:59.216 --> 00:13:00.856 A:middle
+specific to Health Records.
+

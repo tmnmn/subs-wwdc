@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:58.776 --> 00:06:02.296 A:middle
+names, including a coding in the
+
+00:06:02.296 --> 00:06:03.826 A:middle
+LOINC coding system.
+
+00:06:04.096 --> 00:06:05.476 A:middle
+This is an industry standard
+
+00:06:05.476 --> 00:06:06.816 A:middle
+reference for medical
+
+00:06:06.816 --> 00:06:09.086 A:middle
+information and it is required
+
+00:06:09.086 --> 00:06:10.806 A:middle
+by FHIR for observations.
+
+00:06:11.376 --> 00:06:14.336 A:middle
+You can see here that we've
+
+00:06:14.336 --> 00:06:16.366 A:middle
+taken that LOINC coding and
+
+00:06:16.366 --> 00:06:18.396 A:middle
+performed a lookup to provide a
+
+00:06:18.396 --> 00:06:20.126 A:middle
+canonical name which we will
+
+00:06:20.126 --> 00:06:21.806 A:middle
+surface to you as the display
+
+00:06:21.806 --> 00:06:21.976 A:middle
+name.
+
+00:06:26.046 --> 00:06:27.426 A:middle
+And finally, we provide access
+
+00:06:27.426 --> 00:06:29.646 A:middle
+to the full FHIR resource, but
+
+00:06:29.646 --> 00:06:30.946 A:middle
+there's a lot you can benefit
+
+00:06:30.946 --> 00:06:32.106 A:middle
+from looking at the
+
+00:06:32.106 --> 00:06:33.756 A:middle
+HKClinicalRecord so I'm going to
+
+00:06:33.756 --> 00:06:35.626 A:middle
+set this aside right now and we
+
+00:06:35.626 --> 00:06:36.736 A:middle
+can come back to it later.
+
+00:06:41.356 --> 00:06:42.696 A:middle
+Like all of Health data,
+
+00:06:43.046 --> 00:06:45.236 A:middle
+provenance, or the source of
+
+00:06:45.236 --> 00:06:47.396 A:middle
+that data, is very important.
+
+00:06:48.626 --> 00:06:50.086 A:middle
+You want to know where this
+
+00:06:50.086 --> 00:06:51.406 A:middle
+health record comes from.
+
+00:06:51.896 --> 00:06:54.106 A:middle
+And as with the rest of
+
+00:06:54.106 --> 00:06:56.326 A:middle
+HealthKit we model this using
+
+00:06:56.326 --> 00:06:58.606 A:middle
+HKSource which is available on
+
+00:06:58.606 --> 00:07:00.366 A:middle
+the HKSample superclass.
+

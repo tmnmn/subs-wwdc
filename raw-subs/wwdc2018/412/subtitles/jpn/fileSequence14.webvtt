@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.540 --> 00:14:03.744 align:start position:29% line:-2
+式を編集して
+テストすることができます
+
+00:14:03.844 --> 00:14:07.047 align:start position:32% line:-2
+プロパティがないので
+別の方法を見せます
+
+00:14:07.147 --> 00:14:09.416 align:start position:30% line:-2
+シンボリック
+ブレークポイントを消し
+
+00:14:09.516 --> 00:14:14.588 align:start position:16% line:-2
+jumpCompletedという関数で
+ブレークポイントを設定
+
+00:14:14.688 --> 00:14:18.158 align:start position:30% line:-2
+アニメーション終了後に
+関数が呼び出され
+
+00:14:18.258 --> 00:14:20.894 align:start position:23% line:-1
+UIとゲームの状態を更新します
+
+00:14:21.094 --> 00:14:23.997 align:start position:32% line:-1
+ここでやりたいのは―
+
+00:14:24.097 --> 00:14:29.536 align:start position:23% line:-2
+シンボリックブレークポイントの
+setTextへの設定です
+
+00:14:29.636 --> 00:14:32.339 align:start position:14% line:-1
+Debugger Commandを加えて
+
+00:14:32.439 --> 00:14:37.010 align:start position:16% line:-2
+“breakpoint set”続いて
+“one-shot true”と入力
+
+00:14:37.110 --> 00:14:41.014 align:start position:34% line:-2
+これは一時的な
+ブレークポイントで
+
+00:14:41.114 --> 00:14:43.684 align:start position:25% line:-1
+起動後 自動的に削除されます
+
+00:14:44.084 --> 00:14:48.155 align:start position:18% line:-2
+UILabel setTextという
+名前を与えて
+
+00:14:48.255 --> 00:14:50.357 align:start position:30% line:-1
+自動で再開するよう設定
+
+00:14:50.457 --> 00:14:56.663 align:start position:9% line:-2
+これで jumpCompletedという関数の
+実行が開始されると
+
+00:14:56.763 --> 00:15:01.535 align:start position:27% line:-2
+一時的なブレークポイントが
+設定され 再開します
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:58.386 --> 00:24:00.216 A:middle
+One of them, one of the most
+
+00:24:00.286 --> 00:24:02.966 A:middle
+important one is context-free.
+
+00:24:03.516 --> 00:24:04.846 A:middle
+What do I mean by context-free?
+
+00:24:05.446 --> 00:24:08.306 A:middle
+You can see here two code
+
+00:24:08.306 --> 00:24:08.896 A:middle
+snippets.
+
+00:24:09.276 --> 00:24:11.626 A:middle
+In both cases we import the
+
+00:24:11.706 --> 00:24:12.766 A:middle
+PetKit module.
+
+00:24:13.966 --> 00:24:16.686 A:middle
+But we have two different macro
+
+00:24:16.686 --> 00:24:17.826 A:middle
+definitions beforehand.
+
+00:24:19.456 --> 00:24:20.976 A:middle
+If you would use a traditional
+
+00:24:20.976 --> 00:24:22.536 A:middle
+model of importing those
+
+00:24:22.536 --> 00:24:23.716 A:middle
+headers, that means they're
+
+00:24:24.106 --> 00:24:24.696 A:middle
+[inaudible] included.
+
+00:24:25.376 --> 00:24:27.496 A:middle
+The preprocessor would honor
+
+00:24:27.496 --> 00:24:29.396 A:middle
+this definition and apply it to
+
+00:24:29.396 --> 00:24:30.516 A:middle
+the header file.
+
+00:24:31.266 --> 00:24:32.546 A:middle
+But if you would do that, that
+
+00:24:32.546 --> 00:24:33.826 A:middle
+means the modules would be
+
+00:24:33.826 --> 00:24:35.786 A:middle
+different for each header case,
+
+00:24:35.786 --> 00:24:37.486 A:middle
+and we couldn't reuse it.
+
+00:24:37.726 --> 00:24:40.136 A:middle
+So if you want to use modules,
+
+00:24:40.336 --> 00:24:41.306 A:middle
+you cannot do that.
+
+00:24:41.926 --> 00:24:44.016 A:middle
+Instead, the module will ignore
+
+00:24:44.016 --> 00:24:45.746 A:middle
+all those context-related
+
+00:24:45.886 --> 00:24:48.036 A:middle
+information that allows us to
+
+00:24:48.036 --> 00:24:49.716 A:middle
+be, that allows it to be reused
+
+00:24:50.186 --> 00:24:52.246 A:middle
+across all implementation files.
+
+00:24:53.816 --> 00:24:57.106 A:middle
+Another requirement is modules
+
+00:24:57.106 --> 00:24:58.226 A:middle
+have to be self-contained.
+
+00:24:59.006 --> 00:25:01.126 A:middle
+That means they have to specify
+

@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:58.031 --> 00:15:02.836 align:start position:18% line:-1
+SIGILLは不正命令のシグナルです
+
+00:15:03.270 --> 00:15:10.043 align:start position:25% line:-2
+つまりCPUが 存在しないか
+無効な命令を実行しようとして
+
+00:15:10.143 --> 00:15:12.312 align:start position:27% line:-1
+プロセスが止まったわけです
+
+00:15:14.047 --> 00:15:17.584 align:start position:29% line:-2
+クラッシュしたスレッドも
+見られます
+
+00:15:17.684 --> 00:15:20.420 align:start position:25% line:-1
+クラッシュ時のコードは何か？
+
+00:15:20.754 --> 00:15:25.492 align:start position:7% line:-2
+Swiftランタイムに
+fatalErrorMessage関数があります
+
+00:15:25.859 --> 00:15:30.164 align:start position:14% line:-2
+fatalErrorMessage関数が
+何をするかは分かりません
+
+00:15:30.898 --> 00:15:36.203 align:start position:23% line:-2
+この場合 エラーメッセージは
+App固有情報に含まれています
+
+00:15:36.436 --> 00:15:41.108 align:start position:25% line:-2
+プロセスが終了する際に
+何が表示されたかが分かります
+
+00:15:45.279 --> 00:15:48.248 align:start position:32% line:-2
+スタックトレースを
+詳しく見てみましょう
+
+00:15:48.382 --> 00:15:51.285 align:start position:12% line:-1
+fatalErrorMessage関数は―
+
+00:15:51.585 --> 00:15:55.088 align:start position:21% line:-1
+コード内の関数に呼び出されました
+
+00:15:55.389 --> 00:16:00.727 align:start position:23% line:-2
+“レシピ”というクラスの
+image関数が呼び出されます
+

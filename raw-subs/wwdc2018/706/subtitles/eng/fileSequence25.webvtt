@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:59.586 --> 00:25:01.036 A:middle
+encourage you to go and look at
+
+00:25:01.036 --> 00:25:02.006 A:middle
+the Argonaut Project
+
+00:25:02.006 --> 00:25:04.026 A:middle
+documentation to find out more
+
+00:25:04.026 --> 00:25:06.146 A:middle
+and I'll have details of these
+
+00:25:06.636 --> 00:25:08.966 A:middle
+at the end.
+
+00:25:08.966 --> 00:25:10.716 A:middle
+In HealthKit we model a FHIR
+
+00:25:10.716 --> 00:25:12.896 A:middle
+resources as HKFHIRResource.
+
+00:25:13.926 --> 00:25:15.606 A:middle
+We provide some key properties
+
+00:25:15.826 --> 00:25:18.126 A:middle
+like the data, access to the
+
+00:25:18.126 --> 00:25:19.536 A:middle
+full raw data.
+
+00:25:21.376 --> 00:25:23.596 A:middle
+We surface common elements like
+
+00:25:23.596 --> 00:25:26.206 A:middle
+the resource type and
+
+00:25:26.206 --> 00:25:26.806 A:middle
+identifier.
+
+00:25:27.426 --> 00:25:32.306 A:middle
+You can access the data using
+
+00:25:32.306 --> 00:25:34.186 A:middle
+Swift codable or JSON
+
+00:25:34.186 --> 00:25:35.186 A:middle
+serialization.
+
+00:25:35.916 --> 00:25:37.156 A:middle
+Here you can see that I've
+
+00:25:37.156 --> 00:25:39.076 A:middle
+defined my own codable struct,
+
+00:25:39.336 --> 00:25:42.046 A:middle
+my codable observation and I'm
+
+00:25:42.046 --> 00:25:43.656 A:middle
+using that to pull out the value
+
+00:25:43.656 --> 00:25:44.966 A:middle
+quantity that we saw earlier.
+
+00:25:45.516 --> 00:25:49.166 A:middle
+You can have confidence that the
+
+00:25:49.166 --> 00:25:50.906 A:middle
+data is structured correctly
+
+00:25:50.906 --> 00:25:53.606 A:middle
+here as we only share valid FHIR
+
+00:25:53.606 --> 00:25:57.726 A:middle
+resources through the API.
+
+00:25:58.196 --> 00:25:59.136 A:middle
+We also introduce some
+
+00:25:59.136 --> 00:26:00.556 A:middle
+predicates to make it easier for
+

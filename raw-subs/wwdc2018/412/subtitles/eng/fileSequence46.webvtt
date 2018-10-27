@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:46:00.256 --> 00:46:00.346 A:middle
+bug.
+
+00:46:01.036 --> 00:46:01.576 A:middle
+Perfect.
+
+00:46:01.646 --> 00:46:03.636 A:middle
+So the second bug was that we
+
+00:46:03.636 --> 00:46:06.076 A:middle
+wouldn't be able to read the
+
+00:46:06.076 --> 00:46:08.106 A:middle
+description inside that popover,
+
+00:46:08.316 --> 00:46:09.676 A:middle
+so let's take a look at that.
+
+00:46:10.446 --> 00:46:11.996 A:middle
+First of all, I want to disable
+
+00:46:11.996 --> 00:46:14.456 A:middle
+constraint mode and clipping so
+
+00:46:14.456 --> 00:46:17.046 A:middle
+we see the constant again.
+
+00:46:17.166 --> 00:46:18.576 A:middle
+And I will also clear the
+
+00:46:18.576 --> 00:46:18.926 A:middle
+console.
+
+00:46:19.976 --> 00:46:20.736 A:middle
+Now, I showed you at the
+
+00:46:20.736 --> 00:46:22.556 A:middle
+beginning how to capture this
+
+00:46:22.826 --> 00:46:23.796 A:middle
+[inaudible] in its active state
+
+00:46:23.796 --> 00:46:25.566 A:middle
+so we would be able to get to
+
+00:46:25.666 --> 00:46:26.646 A:middle
+the view hierarchy of the
+
+00:46:26.646 --> 00:46:27.766 A:middle
+popover while it's open;
+
+00:46:28.256 --> 00:46:29.186 A:middle
+however, we don't see it.
+
+00:46:29.506 --> 00:46:30.416 A:middle
+That is because the view
+
+00:46:30.416 --> 00:46:31.816 A:middle
+debugger only shows you a single
+
+00:46:31.816 --> 00:46:32.556 A:middle
+window at a time.
+
+00:46:33.516 --> 00:46:34.806 A:middle
+Let me show you how to take a
+
+00:46:34.806 --> 00:46:35.596 A:middle
+look at other windows.
+
+00:46:36.416 --> 00:46:37.436 A:middle
+When I scroll up in the view
+
+00:46:37.436 --> 00:46:38.796 A:middle
+hierarchy and walk up the view
+
+00:46:38.796 --> 00:46:40.746 A:middle
+hierarchy to eventually hit the
+
+00:46:40.746 --> 00:46:42.266 A:middle
+window of the current window
+
+00:46:42.266 --> 00:46:43.566 A:middle
+that we see, we can see that
+
+00:46:43.566 --> 00:46:44.516 A:middle
+it's hosted by a window
+
+00:46:44.516 --> 00:46:44.986 A:middle
+controller.
+
+00:46:45.156 --> 00:46:47.196 A:middle
+And if I collapse this root
+
+00:46:47.196 --> 00:46:48.846 A:middle
+level item here, we can see that
+
+00:46:48.846 --> 00:46:49.946 A:middle
+there's actually another root
+
+00:46:49.946 --> 00:46:51.226 A:middle
+level item, which is exactly
+
+00:46:51.226 --> 00:46:51.966 A:middle
+what we're looking for.
+
+00:46:52.716 --> 00:46:53.416 A:middle
+Our popover.
+
+00:46:54.276 --> 00:46:55.286 A:middle
+So if your application has
+
+00:46:55.286 --> 00:46:56.446 A:middle
+multiple windows, and that is
+
+00:46:56.446 --> 00:46:58.536 A:middle
+true for macOS and iOS, they
+
+00:46:58.536 --> 00:46:59.856 A:middle
+show up as multiple root level
+
+00:46:59.856 --> 00:47:01.586 A:middle
+objects in the outline on the
+

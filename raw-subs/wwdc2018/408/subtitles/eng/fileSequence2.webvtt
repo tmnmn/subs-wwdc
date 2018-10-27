@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.816 --> 00:02:00.086 A:middle
+projects through the use of
+
+00:02:00.086 --> 00:02:00.736 A:middle
+targets.
+
+00:02:01.606 --> 00:02:04.016 A:middle
+And targets specify the output
+
+00:02:04.016 --> 00:02:04.976 A:middle
+or the product that you would
+
+00:02:04.976 --> 00:02:05.566 A:middle
+like to build.
+
+00:02:06.226 --> 00:02:07.916 A:middle
+Some examples are iOS app,
+
+00:02:08.756 --> 00:02:10.545 A:middle
+framework, and unit tests.
+
+00:02:11.276 --> 00:02:12.776 A:middle
+Now, there's another piece of
+
+00:02:12.776 --> 00:02:13.846 A:middle
+information, that's the
+
+00:02:13.846 --> 00:02:15.046 A:middle
+dependency between these
+
+00:02:15.046 --> 00:02:15.696 A:middle
+targets.
+
+00:02:16.226 --> 00:02:17.886 A:middle
+And Xcode provides us two ways
+
+00:02:18.326 --> 00:02:19.526 A:middle
+to define our dependencies.
+
+00:02:19.816 --> 00:02:21.556 A:middle
+There's an explicit means, which
+
+00:02:21.556 --> 00:02:22.396 A:middle
+we do through the target
+
+00:02:22.396 --> 00:02:23.436 A:middle
+dependencies phase.
+
+00:02:24.046 --> 00:02:25.276 A:middle
+And there's an implicit means,
+
+00:02:25.336 --> 00:02:26.586 A:middle
+which is primarily done through
+
+00:02:26.586 --> 00:02:28.116 A:middle
+the linked binary with libraries
+
+00:02:28.116 --> 00:02:28.526 A:middle
+phase.
+
+00:02:28.926 --> 00:02:29.806 A:middle
+And we'll be taking a look at
+
+00:02:29.806 --> 00:02:32.026 A:middle
+those more in depth in just a
+
+00:02:32.026 --> 00:02:32.696 A:middle
+few moments.
+
+00:02:33.426 --> 00:02:34.546 A:middle
+Now, throughout this section I
+
+00:02:34.546 --> 00:02:35.956 A:middle
+want to use a sample project to
+
+00:02:35.956 --> 00:02:36.996 A:middle
+ground our discussion.
+
+00:02:37.686 --> 00:02:38.656 A:middle
+And so we're going to take a
+
+00:02:38.656 --> 00:02:40.006 A:middle
+look at a dependency graph for
+
+00:02:40.006 --> 00:02:40.686 A:middle
+that project.
+
+00:02:41.706 --> 00:02:43.736 A:middle
+Now, a dependency graph is
+
+00:02:43.796 --> 00:02:45.416 A:middle
+simply a listing of all of the
+
+00:02:45.416 --> 00:02:46.006 A:middle
+targets.
+
+00:02:46.146 --> 00:02:47.206 A:middle
+And this case we're going to
+
+00:02:47.206 --> 00:02:48.236 A:middle
+have five targets that we're
+
+00:02:48.236 --> 00:02:48.896 A:middle
+going to be building.
+
+00:02:50.226 --> 00:02:51.336 A:middle
+And it has that dependency
+
+00:02:51.336 --> 00:02:52.906 A:middle
+information between those
+
+00:02:52.906 --> 00:02:53.466 A:middle
+targets.
+
+00:02:54.376 --> 00:02:55.966 A:middle
+And based on these two pieces of
+
+00:02:55.966 --> 00:02:58.696 A:middle
+information Xcode can derive our
+
+00:02:58.696 --> 00:02:59.226 A:middle
+build order.
+
+00:02:59.226 --> 00:03:01.696 A:middle
+Now, let's take a look at what
+

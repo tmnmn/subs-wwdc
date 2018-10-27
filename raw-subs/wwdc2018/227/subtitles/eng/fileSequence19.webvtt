@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:01.256 --> 00:19:03.886 A:middle
+So on disk an image asset is
+
+00:19:03.926 --> 00:19:05.296 A:middle
+just a bunch of boring bytes
+
+00:19:05.946 --> 00:19:07.126 A:middle
+right, it doesn't really mean
+
+00:19:07.126 --> 00:19:09.846 A:middle
+anything until you apply color
+
+00:19:09.846 --> 00:19:10.126 A:middle
+to it.
+
+00:19:10.206 --> 00:19:11.276 A:middle
+How does it get the color, how
+
+00:19:11.276 --> 00:19:12.756 A:middle
+does the system even know what
+
+00:19:12.756 --> 00:19:13.656 A:middle
+each of the numbers on those
+
+00:19:13.656 --> 00:19:14.476 A:middle
+bytes means?
+
+00:19:14.546 --> 00:19:15.926 A:middle
+Well the answer is it comes from
+
+00:19:15.926 --> 00:19:17.836 A:middle
+the color profile, that is what
+
+00:19:17.836 --> 00:19:19.816 A:middle
+actually gives each one of those
+
+00:19:19.816 --> 00:19:21.746 A:middle
+color [inaudible] a value and an
+
+00:19:21.746 --> 00:19:23.206 A:middle
+absolute colorimetric value, it
+
+00:19:23.206 --> 00:19:24.776 A:middle
+tells the system how it should
+
+00:19:24.776 --> 00:19:25.006 A:middle
+look.
+
+00:19:25.866 --> 00:19:27.086 A:middle
+As such, I want to emphasize
+
+00:19:27.086 --> 00:19:27.996 A:middle
+that it's really important to
+
+00:19:27.996 --> 00:19:29.376 A:middle
+maintain those color profiles in
+
+00:19:29.376 --> 00:19:31.016 A:middle
+your assets as source artifacts.
+
+00:19:31.536 --> 00:19:33.016 A:middle
+These are vital pieces of
+
+00:19:33.016 --> 00:19:34.956 A:middle
+metadata that keep the designer
+
+00:19:34.956 --> 00:19:37.706 A:middle
+intent intact on how that asset
+
+00:19:37.706 --> 00:19:38.256 A:middle
+was delivered.
+
+00:19:38.696 --> 00:19:40.966 A:middle
+And resist the temptation to
+
+00:19:40.966 --> 00:19:42.476 A:middle
+strip those profiles out because
+
+00:19:42.476 --> 00:19:43.616 A:middle
+you think they're just extra
+
+00:19:43.616 --> 00:19:45.266 A:middle
+metadata that you know take up a
+
+00:19:45.266 --> 00:19:45.946 A:middle
+bunch of payload.
+
+00:19:45.946 --> 00:19:47.216 A:middle
+These are source artifacts that
+
+00:19:47.216 --> 00:19:48.166 A:middle
+are checking into your project,
+
+00:19:48.386 --> 00:19:49.706 A:middle
+let the tools worry about
+
+00:19:49.706 --> 00:19:51.066 A:middle
+optimization for deployment.
+
+00:19:53.526 --> 00:19:55.496 A:middle
+So why is any of this color
+
+00:19:55.496 --> 00:19:55.966 A:middle
+stuff important?
+
+00:19:56.106 --> 00:19:58.236 A:middle
+Well the answer is our devices
+
+00:19:58.236 --> 00:19:59.866 A:middle
+have a broad range of displays
+

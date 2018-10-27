@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:57.551 --> 00:02:00.754 align:start position:25% line:-1
+Xcodeのプロジェクトでは
+
+00:02:01.522 --> 00:02:05.626 align:start position:30% line:-2
+ビルドしたい対象を
+ターゲットで指定します
+
+00:02:06.193 --> 00:02:10.764 align:start position:23% line:-2
+例えば アプリケーション
+フレームワーク ユニットテスト
+
+00:02:11.832 --> 00:02:15.702 align:start position:30% line:-2
+また ターゲット間には
+依存関係があります
+
+00:02:16.136 --> 00:02:19.673 align:start position:25% line:-1
+依存関係を定義する方法は２つ
+
+00:02:19.773 --> 00:02:23.644 align:start position:11% line:-2
+Target Dependenciesによる
+明示的な方法と
+
+00:02:23.944 --> 00:02:28.649 align:start position:4% line:-2
+Link Binary With Libraries
+などの暗示的な方法です
+
+00:02:28.882 --> 00:02:33.020 align:start position:30% line:-2
+後ほど もう少し詳しく
+説明します
+
+00:02:33.353 --> 00:02:37.291 align:start position:34% line:-2
+サンプルを見ながら
+話をします
+
+00:02:37.858 --> 00:02:40.894 align:start position:23% line:-1
+プロジェクトの依存関係の図です
+
+00:02:41.595 --> 00:02:45.966 align:start position:30% line:-2
+単純に 全ターゲットが
+並んでいます
+
+00:02:46.066 --> 00:02:49.236 align:start position:25% line:-1
+ここでは ５つをビルドします
+
+00:02:50.137 --> 00:02:53.574 align:start position:30% line:-1
+依存関係も示しています
+
+00:02:54.641 --> 00:02:56.977 align:start position:32% line:-1
+この２つの情報により
+
+00:02:57.077 --> 00:02:59.546 align:start position:25% line:-1
+Xcodeはビルドを行います
+

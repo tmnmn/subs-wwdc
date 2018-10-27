@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:59.766 --> 00:32:01.596 A:middle
+around and go from NumPy to Core
+
+00:32:01.656 --> 00:32:01.886 A:middle
+Image.
+
+00:32:02.506 --> 00:32:04.596 A:middle
+To do this, let's start with a
+
+00:32:04.596 --> 00:32:05.576 A:middle
+NumPy array-- that's
+
+00:32:05.576 --> 00:32:06.146 A:middle
+non-trivial.
+
+00:32:06.186 --> 00:32:08.066 A:middle
+In this case, a random -- a
+
+00:32:08.066 --> 00:32:10.046 A:middle
+random buffer where 75% of the
+
+00:32:10.046 --> 00:32:11.346 A:middle
+values have been [inaudible] to
+
+00:32:11.346 --> 00:32:11.746 A:middle
+black.
+
+00:32:12.926 --> 00:32:15.396 A:middle
+First thing I do here is wrap my
+
+00:32:15.396 --> 00:32:16.646 A:middle
+NumPy array into my CIMG
+
+00:32:16.646 --> 00:32:18.566 A:middle
+constructor, and we can see that
+
+00:32:18.566 --> 00:32:19.946 A:middle
+we have again, our CIMG class
+
+00:32:19.946 --> 00:32:21.656 A:middle
+instance and the backing
+
+00:32:21.726 --> 00:32:22.336 A:middle
+CIImage.
+
+00:32:23.576 --> 00:32:26.376 A:middle
+Now that I have my CIImage, I
+
+00:32:26.376 --> 00:32:27.606 A:middle
+can apply a variety of filters
+
+00:32:27.606 --> 00:32:27.866 A:middle
+on it.
+
+00:32:28.296 --> 00:32:29.936 A:middle
+So, the first thing I do is I'll
+
+00:32:29.936 --> 00:32:30.756 A:middle
+apply this blur.
+
+00:32:31.426 --> 00:32:33.036 A:middle
+I'll use a wire filter; a light
+
+00:32:33.036 --> 00:32:33.396 A:middle
+tunnel.
+
+00:32:34.286 --> 00:32:35.576 A:middle
+Change of contrast in my image.
+
+00:32:36.036 --> 00:32:38.006 A:middle
+The exposure adjustment as well
+
+00:32:38.006 --> 00:32:38.866 A:middle
+as the gamma value.
+
+00:32:39.916 --> 00:32:40.706 A:middle
+Let's take a look at these
+
+00:32:40.706 --> 00:32:41.916 A:middle
+filters side-by-side.
+
+00:32:42.556 --> 00:32:44.346 A:middle
+So at this blur, light tunnel,
+
+00:32:44.346 --> 00:32:45.966 A:middle
+exposure adjust; gamma adjust,
+
+00:32:46.616 --> 00:32:47.506 A:middle
+here's our final effect.
+
+00:32:48.396 --> 00:32:49.576 A:middle
+Pretty fun and really easy to
+
+00:32:49.576 --> 00:32:49.986 A:middle
+work with.
+
+00:32:52.586 --> 00:32:53.336 A:middle
+So we -- let's put it all
+
+00:32:53.336 --> 00:32:53.746 A:middle
+together.
+
+00:32:53.746 --> 00:32:54.916 A:middle
+So, I'm going to start with a
+
+00:32:54.916 --> 00:32:57.316 A:middle
+new image here, and what I'll be
+
+00:32:57.316 --> 00:32:59.246 A:middle
+showing you in this demo is, how
+
+00:32:59.246 --> 00:33:00.536 A:middle
+we can do bend processing.
+

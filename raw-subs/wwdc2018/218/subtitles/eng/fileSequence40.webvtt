@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.496 --> 00:40:00.556 A:middle
+And this works whether you're
+
+00:40:00.556 --> 00:40:01.626 A:middle
+using the legacy
+
+00:40:01.746 --> 00:40:03.406 A:middle
+NSCollectionView API or the
+
+00:40:03.406 --> 00:40:05.016 A:middle
+modern one, although we'd prefer
+
+00:40:05.016 --> 00:40:07.776 A:middle
+that you use the modern one.
+
+00:40:08.396 --> 00:40:11.706 A:middle
+Finally, enabling Dark Mode is
+
+00:40:12.266 --> 00:40:14.386 A:middle
+generally gated on linking
+
+00:40:14.386 --> 00:40:17.426 A:middle
+against the 10.14 SDK, but, as
+
+00:40:17.426 --> 00:40:19.966 A:middle
+you can see, really, the tools
+
+00:40:19.966 --> 00:40:21.376 A:middle
+that you need to develop a great
+
+00:40:21.376 --> 00:40:23.126 A:middle
+Dark Mode application aren't
+
+00:40:23.126 --> 00:40:24.876 A:middle
+necessarily specific to the
+
+00:40:24.876 --> 00:40:26.866 A:middle
+10.14 SDK and you could have
+
+00:40:26.866 --> 00:40:28.466 A:middle
+developed one just using the
+
+00:40:28.466 --> 00:40:30.126 A:middle
+10.13 SDK that you have today.
+
+00:40:31.246 --> 00:40:33.356 A:middle
+And so, if you have a situation
+
+00:40:33.356 --> 00:40:34.396 A:middle
+where you can't necessarily
+
+00:40:34.396 --> 00:40:36.446 A:middle
+update your SDK, we have an
+
+00:40:36.446 --> 00:40:38.036 A:middle
+Info.plist key that you can use
+
+00:40:38.036 --> 00:40:39.326 A:middle
+to opt-in to Dark Mode.
+
+00:40:39.926 --> 00:40:40.396 A:middle
+It's called
+
+00:40:40.506 --> 00:40:42.286 A:middle
+NSRequiresAquaSystemAppearance
+
+00:40:42.576 --> 00:40:43.706 A:middle
+and if you set that to NO
+
+00:40:43.706 --> 00:40:45.206 A:middle
+explicitly, then that's going to
+
+00:40:45.206 --> 00:40:46.706 A:middle
+enable Dark Mode even if you're
+
+00:40:46.706 --> 00:40:47.926 A:middle
+linking on an earlier SDK,
+
+00:40:48.546 --> 00:40:50.176 A:middle
+although we very strongly prefer
+
+00:40:50.446 --> 00:40:51.396 A:middle
+that you update your SDK.
+
+00:40:51.396 --> 00:40:52.696 A:middle
+It's a far better solution.
+
+00:40:53.586 --> 00:40:55.276 A:middle
+You can also set this key to YES
+
+00:40:55.276 --> 00:40:57.136 A:middle
+to disable it temporarily-- and
+
+00:40:57.136 --> 00:40:58.916 A:middle
+I want to emphasize temporarily.
+
+00:40:59.326 --> 00:41:00.586 A:middle
+This is a key that you can use
+

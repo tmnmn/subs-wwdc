@@ -1,0 +1,78 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.146 --> 00:10:01.466 A:middle
+The first thing we want to do is
+
+00:10:01.466 --> 00:10:02.816 A:middle
+allow the users of your
+
+00:10:02.816 --> 00:10:03.926 A:middle
+application, which are
+
+00:10:03.926 --> 00:10:05.396 A:middle
+subscribers of Apple Music, to
+
+00:10:05.396 --> 00:10:06.336 A:middle
+log in and log out.
+
+00:10:06.806 --> 00:10:08.476 A:middle
+And we'll do that by adding
+
+00:10:08.536 --> 00:10:09.666 A:middle
+Authorize and Unauthorize
+
+00:10:09.696 --> 00:10:13.316 A:middle
+buttons to the page.
+
+00:10:13.376 --> 00:10:15.946 A:middle
+We use the Apple Music Authorize
+
+00:10:15.946 --> 00:10:19.706 A:middle
+and Unauthorize attribute, and
+
+00:10:19.706 --> 00:10:21.376 A:middle
+MusicKit JS manages the state of
+
+00:10:21.376 --> 00:10:22.816 A:middle
+displaying those buttons for me.
+
+00:10:22.946 --> 00:10:24.576 A:middle
+I've logged in previously, so
+
+00:10:24.576 --> 00:10:25.826 A:middle
+you see that the state reflects,
+
+00:10:25.826 --> 00:10:28.000 A:middle
+"Sign out of Apple Music."
+
+00:10:32.276 --> 00:10:33.776 A:middle
+Next, we want to add some
+
+00:10:33.776 --> 00:10:34.746 A:middle
+playback controls.
+
+00:10:35.346 --> 00:10:37.116 A:middle
+And we can specify these using
+
+00:10:37.116 --> 00:10:39.156 A:middle
+the Apple Music attribute, and
+
+00:10:39.156 --> 00:10:41.206 A:middle
+we can specify things like skip
+
+00:10:41.276 --> 00:10:47.656 A:middle
+to previous item, pause, play,
+
+00:10:48.156 --> 00:10:52.000 A:middle
+skip to next item.
+
+00:10:56.556 --> 00:10:58.276 A:middle
+We can add Now Playing
+
+00:10:58.276 --> 00:10:59.696 A:middle
+information for the user to see
+
+00:10:59.696 --> 00:11:00.756 A:middle
+the current playing item in the
+

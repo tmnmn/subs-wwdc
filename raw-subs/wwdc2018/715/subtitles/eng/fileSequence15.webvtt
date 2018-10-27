@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:59.346 --> 00:15:00.616 A:middle
+this connection, it's totally
+
+00:15:00.616 --> 00:15:03.026 A:middle
+established, and if you're using
+
+00:15:03.386 --> 00:15:05.046 A:middle
+TCP and TLS, this means that the
+
+00:15:05.046 --> 00:15:06.926 A:middle
+TLS handshake is finished.
+
+00:15:08.096 --> 00:15:09.806 A:middle
+We also though let you know
+
+00:15:09.806 --> 00:15:11.216 A:middle
+about the waiting state.
+
+00:15:11.856 --> 00:15:14.526 A:middle
+So last year in URLSession, we
+
+00:15:14.526 --> 00:15:15.636 A:middle
+introduced waits for
+
+00:15:15.636 --> 00:15:17.306 A:middle
+connectivity, and the waiting
+
+00:15:17.306 --> 00:15:19.056 A:middle
+state of an NWConnection is
+
+00:15:19.056 --> 00:15:20.166 A:middle
+exactly the same thing.
+
+00:15:20.446 --> 00:15:21.996 A:middle
+And this is on always by
+
+00:15:21.996 --> 00:15:22.496 A:middle
+default.
+
+00:15:22.866 --> 00:15:23.636 A:middle
+So when you create your
+
+00:15:23.636 --> 00:15:24.746 A:middle
+connection and when you start
+
+00:15:24.746 --> 00:15:25.896 A:middle
+it, if there is no network
+
+00:15:25.896 --> 00:15:28.336 A:middle
+available, we won't fail, we'll
+
+00:15:28.336 --> 00:15:29.816 A:middle
+just tell you we're waiting for
+
+00:15:29.816 --> 00:15:30.726 A:middle
+a network to be available.
+
+00:15:30.726 --> 00:15:32.396 A:middle
+We'll give you a helpful reason
+
+00:15:32.396 --> 00:15:34.246 A:middle
+code, but you don't have to do
+
+00:15:34.246 --> 00:15:35.736 A:middle
+anything more to watch network
+
+00:15:35.736 --> 00:15:36.766 A:middle
+transitions yourself.
+
+00:15:37.516 --> 00:15:38.846 A:middle
+Mobility is an essential,
+
+00:15:38.886 --> 00:15:40.216 A:middle
+critical part of this API.
+
+00:15:40.906 --> 00:15:43.286 A:middle
+And we'll also let you know if
+
+00:15:43.286 --> 00:15:44.196 A:middle
+there's a fatal error.
+
+00:15:44.196 --> 00:15:46.076 A:middle
+Let's say we had to reset from
+
+00:15:46.076 --> 00:15:47.496 A:middle
+the server or TLS failed, and
+
+00:15:47.496 --> 00:15:48.846 A:middle
+we'll give you that as a failed
+
+00:15:49.386 --> 00:15:49.546 A:middle
+event.
+
+00:15:50.276 --> 00:15:52.426 A:middle
+So once you've set this up, you
+
+00:15:52.426 --> 00:15:54.386 A:middle
+simply call start and provide
+
+00:15:54.386 --> 00:15:56.636 A:middle
+the dispatch queue upon which
+
+00:15:56.816 --> 00:15:58.276 A:middle
+you want to receive callbacks.
+
+00:15:58.336 --> 00:16:01.616 A:middle
+So I want to dig into what
+

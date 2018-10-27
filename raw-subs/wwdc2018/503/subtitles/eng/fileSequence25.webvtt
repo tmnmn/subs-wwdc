@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.486 --> 00:25:00.076 A:middle
+And we want to transform it to a
+
+00:25:00.076 --> 00:25:01.586 A:middle
+new coordinate system in 3-D
+
+00:25:01.586 --> 00:25:03.486 A:middle
+space, X, Y, Z.
+
+00:25:04.336 --> 00:25:06.256 A:middle
+Now we already have Z right,
+
+00:25:06.256 --> 00:25:07.616 A:middle
+that's the depth from the depth
+
+00:25:07.616 --> 00:25:09.766 A:middle
+map but we want to get X and Y.
+
+00:25:10.416 --> 00:25:13.606 A:middle
+For that we need to get the help
+
+00:25:13.606 --> 00:25:15.806 A:middle
+from the Intrinsics Matrix which
+
+00:25:15.806 --> 00:25:17.196 A:middle
+holds information for the focal
+
+00:25:17.196 --> 00:25:18.346 A:middle
+lengths and principle point.
+
+00:25:19.376 --> 00:25:21.686 A:middle
+If for example I want to get X I
+
+00:25:21.686 --> 00:25:22.936 A:middle
+need to start with the pixel
+
+00:25:22.936 --> 00:25:24.506 A:middle
+coordinate U, subtract the
+
+00:25:24.506 --> 00:25:26.576 A:middle
+principle point, multiply by the
+
+00:25:26.576 --> 00:25:28.576 A:middle
+depth, and divide by the focal
+
+00:25:28.576 --> 00:25:28.916 A:middle
+lengths.
+
+00:25:29.136 --> 00:25:30.416 A:middle
+And naturally I have to do the
+
+00:25:30.416 --> 00:25:31.256 A:middle
+same thing for the other
+
+00:25:31.256 --> 00:25:32.026 A:middle
+dimension as well.
+
+00:25:33.196 --> 00:25:36.976 A:middle
+Now this Intrinsics Matrix is
+
+00:25:36.976 --> 00:25:38.436 A:middle
+accessible through the camera
+
+00:25:38.436 --> 00:25:39.126 A:middle
+calibration data.
+
+00:25:39.716 --> 00:25:43.656 A:middle
+In fact, this operation is done
+
+00:25:44.786 --> 00:25:46.676 A:middle
+in every frame of the TrueDepth
+
+00:25:46.676 --> 00:25:47.056 A:middle
+stream.
+
+00:25:47.506 --> 00:25:49.836 A:middle
+The reason for that is that the
+
+00:25:49.836 --> 00:25:51.656 A:middle
+video stream and the depth
+
+00:25:51.656 --> 00:25:53.076 A:middle
+stream are coming from two
+
+00:25:53.286 --> 00:25:54.506 A:middle
+separate cameras.
+
+00:25:55.136 --> 00:25:57.246 A:middle
+But because the TrueDepth camera
+
+00:25:57.246 --> 00:25:58.936 A:middle
+gives us a depth map we can
+
+00:25:58.936 --> 00:26:00.446 A:middle
+transform it into a point cloud
+

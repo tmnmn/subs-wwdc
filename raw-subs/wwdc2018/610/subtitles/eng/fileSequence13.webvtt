@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.656 --> 00:13:01.016 A:middle
+Now, to place virtual content
+
+00:13:01.066 --> 00:13:03.416 A:middle
+correctly to an ARSession, you
+
+00:13:03.416 --> 00:13:06.256 A:middle
+should use ARAnchors from ARKit,
+
+00:13:06.636 --> 00:13:07.826 A:middle
+which are denoted with an A
+
+00:13:07.826 --> 00:13:08.096 A:middle
+here.
+
+00:13:09.536 --> 00:13:12.326 A:middle
+ARAnchors are reference points
+
+00:13:12.536 --> 00:13:14.076 A:middle
+within this World map, within
+
+00:13:14.076 --> 00:13:15.816 A:middle
+this world coordinates system.
+
+00:13:16.486 --> 00:13:18.386 A:middle
+And you should use them because
+
+00:13:18.386 --> 00:13:20.686 A:middle
+the World Tracking might update
+
+00:13:20.686 --> 00:13:22.206 A:middle
+them during the tracking.
+
+00:13:22.206 --> 00:13:23.636 A:middle
+Meaning that, also, all the
+
+00:13:23.636 --> 00:13:25.336 A:middle
+virtual content that is assigned
+
+00:13:25.336 --> 00:13:27.776 A:middle
+to it will be updated and
+
+00:13:27.886 --> 00:13:31.626 A:middle
+correctly augmented into the
+
+00:13:32.456 --> 00:13:32.746 A:middle
+camera's view.
+
+00:13:32.746 --> 00:13:34.446 A:middle
+So, now that you've used the
+
+00:13:34.446 --> 00:13:36.436 A:middle
+ARAnchors you can add virtual
+
+00:13:36.466 --> 00:13:38.356 A:middle
+content to the anchor, which
+
+00:13:38.386 --> 00:13:40.496 A:middle
+will them be augmented correctly
+
+00:13:40.886 --> 00:13:44.116 A:middle
+into the current camera's view.
+
+00:13:45.576 --> 00:13:48.676 A:middle
+From now on, this created 3D
+
+00:13:48.676 --> 00:13:51.026 A:middle
+World map of your environment is
+
+00:13:51.026 --> 00:13:52.526 A:middle
+your reference system for the
+
+00:13:52.526 --> 00:13:53.236 A:middle
+World Tracking.
+
+00:13:54.046 --> 00:13:55.506 A:middle
+It is used to reference new
+
+00:13:55.506 --> 00:13:56.456 A:middle
+images against.
+
+00:13:57.076 --> 00:13:58.796 A:middle
+And features are matched from
+
+00:13:58.796 --> 00:14:01.806 A:middle
+image to image and triangulated.
+

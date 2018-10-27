@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.876 --> 00:26:00.226 A:middle
+And, I need to conform to
+
+00:26:00.226 --> 00:26:02.196 A:middle
+public.content either directly,
+
+00:26:02.506 --> 00:26:03.786 A:middle
+or indirectly through
+
+00:26:03.786 --> 00:26:06.326 A:middle
+public.spreadsheet or .image if
+
+00:26:06.326 --> 00:26:07.956 A:middle
+I want my files to show up in
+
+00:26:07.956 --> 00:26:11.616 A:middle
+Recents and in Search.
+
+00:26:12.456 --> 00:26:13.766 A:middle
+Then you have a second tree,
+
+00:26:14.166 --> 00:26:15.446 A:middle
+which we call the physical tree,
+
+00:26:16.046 --> 00:26:17.706 A:middle
+which lets iOS know how the
+
+00:26:17.706 --> 00:26:19.316 A:middle
+files are represented on-disk.
+
+00:26:20.216 --> 00:26:21.706 A:middle
+And, here this is much simpler,
+
+00:26:22.036 --> 00:26:23.556 A:middle
+because you only have two
+
+00:26:23.556 --> 00:26:23.926 A:middle
+choices.
+
+00:26:25.406 --> 00:26:27.556 A:middle
+In most cases, you will be
+
+00:26:27.556 --> 00:26:29.286 A:middle
+dealing with a single file on
+
+00:26:29.286 --> 00:26:31.496 A:middle
+disk for your document.
+
+00:26:32.136 --> 00:26:35.956 A:middle
+If you need to group multiple
+
+00:26:35.956 --> 00:26:38.446 A:middle
+resources together, and you have
+
+00:26:38.446 --> 00:26:40.446 A:middle
+the file package, you're going
+
+00:26:40.446 --> 00:26:42.006 A:middle
+to use com.apple.package.
+
+00:26:42.466 --> 00:26:43.536 A:middle
+But, in most cases, you have a
+
+00:26:43.536 --> 00:26:44.576 A:middle
+single file disk, so it's
+
+00:26:44.576 --> 00:26:45.926 A:middle
+public.data.
+
+00:26:47.656 --> 00:26:49.146 A:middle
+This is because I am in with
+
+00:26:49.186 --> 00:26:50.846 A:middle
+particles, so I'm going to
+
+00:26:50.846 --> 00:26:52.156 A:middle
+conform to public.data.
+
+00:26:52.746 --> 00:26:55.936 A:middle
+Now, because this is a tree,
+
+00:26:56.346 --> 00:26:58.666 A:middle
+.data and .package both iterate
+
+00:26:58.666 --> 00:27:00.786 A:middle
+from our root type from the
+

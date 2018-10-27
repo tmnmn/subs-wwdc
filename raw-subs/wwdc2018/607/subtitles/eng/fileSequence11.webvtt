@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.906 --> 00:11:00.856 A:middle
+So in this example, the G-buffer
+
+00:11:00.856 --> 00:11:02.576 A:middle
+updates the fence, and the
+
+00:11:02.576 --> 00:11:03.766 A:middle
+deferred shading waits for it.
+
+00:11:04.686 --> 00:11:08.266 A:middle
+So now, let's take a look at how
+
+00:11:08.266 --> 00:11:09.406 A:middle
+we could apply these basic
+
+00:11:09.406 --> 00:11:10.966 A:middle
+concepts in your code.
+
+00:11:12.856 --> 00:11:15.206 A:middle
+So the first thing that we're
+
+00:11:15.206 --> 00:11:16.006 A:middle
+going to do is we're going to
+
+00:11:16.006 --> 00:11:17.456 A:middle
+apply this to our G-buffer and
+
+00:11:17.456 --> 00:11:18.676 A:middle
+deferred shading example.
+
+00:11:19.966 --> 00:11:21.356 A:middle
+First, we're going to allocate
+
+00:11:21.356 --> 00:11:23.046 A:middle
+our temporary render target from
+
+00:11:23.046 --> 00:11:23.436 A:middle
+the heap.
+
+00:11:23.806 --> 00:11:24.866 A:middle
+This looks just like what you're
+
+00:11:24.866 --> 00:11:26.046 A:middle
+probably already doing today
+
+00:11:26.046 --> 00:11:28.706 A:middle
+when you allocate a texture.
+
+00:11:28.846 --> 00:11:31.056 A:middle
+Next, we're going to render into
+
+00:11:31.056 --> 00:11:32.246 A:middle
+that temporary render target.
+
+00:11:33.166 --> 00:11:35.646 A:middle
+And finally, update the fence
+
+00:11:36.316 --> 00:11:37.566 A:middle
+after the fragment stage
+
+00:11:37.566 --> 00:11:38.216 A:middle
+completes.
+
+00:11:38.386 --> 00:11:39.526 A:middle
+This will ensure that all the
+
+00:11:39.526 --> 00:11:41.656 A:middle
+data is produced before the next
+
+00:11:41.656 --> 00:11:42.956 A:middle
+pass consumes it.
+
+00:11:43.706 --> 00:11:45.876 A:middle
+So now, let's switch gears over
+
+00:11:45.876 --> 00:11:47.356 A:middle
+to the deferred shading pass.
+
+00:11:48.156 --> 00:11:49.936 A:middle
+Now, we're going to use this
+
+00:11:49.936 --> 00:11:51.346 A:middle
+temporary render target to
+
+00:11:51.346 --> 00:11:52.606 A:middle
+compute material lighting.
+
+00:11:54.836 --> 00:11:56.196 A:middle
+Then, we're going to wait for
+
+00:11:56.196 --> 00:11:57.986 A:middle
+the fence to make sure that it's
+
+00:11:58.046 --> 00:11:59.476 A:middle
+been produced before we consume
+
+00:11:59.476 --> 00:11:59.566 A:middle
+it.
+

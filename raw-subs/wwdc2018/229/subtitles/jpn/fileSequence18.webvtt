@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:59.379 --> 00:18:02.349 align:start position:21% line:-1
+クマだと繰り返す必要はありません
+
+00:18:03.283 --> 00:18:09.723 align:start position:23% line:-2
+重複したクマ見つけるため
+lazy.filterを使うと
+
+00:18:10.791 --> 00:18:16.430 align:start position:5% line:-2
+文字列をラップする
+lazyFilterCollectionができます
+
+00:18:16.663 --> 00:18:22.169 align:start position:29% line:-2
+反復させたいクマを出力し
+条件を確認します
+
+00:18:22.269 --> 00:18:26.206 align:start position:20% line:-1
+firstというフィルタを使います
+
+00:18:26.306 --> 00:18:29.176 align:start position:5% line:-2
+この際 lazyFilterCollectionに
+従います
+
+00:18:30.144 --> 00:18:34.882 align:start position:12% line:-2
+lazyFilterCollectionは
+元のストレージに従い
+
+00:18:36.383 --> 00:18:38.151 align:start position:23% line:-1
+“Grizzly”を出力します
+
+00:18:40.587 --> 00:18:46.393 align:start position:12% line:-2
+“Grizzly”に“bear”は含まれず
+falseなので
+
+00:18:47.261 --> 00:18:48.428 align:start position:29% line:-1
+“Panda”に進みます
+
+00:18:50.764 --> 00:18:53.233 align:start position:30% line:-1
+“Panda”を出力し
+
+00:18:53.834 --> 00:18:57.237 align:start position:20% line:-2
+“bear”を含むか確認し
+“Spectacled”に進みます
+
+00:18:57.938 --> 00:19:03.043 align:start position:18% line:-2
+“Spectacled”もないので
+“Gummy Bears”に進みます
+

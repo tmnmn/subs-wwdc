@@ -1,0 +1,47 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:00.140 --> 00:24:02.309 align:start position:29% line:-1
+前のフレームと比較します
+
+00:24:03.377 --> 00:24:08.348 align:start position:30% line:-2
+すると アライメントの
+変換が分かるので
+
+00:24:08.448 --> 00:24:14.354 align:start position:27% line:-2
+フレームが どう移行したか
+知ることができます
+
+00:24:15.923 --> 00:24:19.660 align:start position:30% line:-2
+カメラが静止した時だけ
+解析するには
+
+00:24:20.194 --> 00:24:25.332 align:start position:7% line:-1
+VNImageRequestHandlerを作り
+
+00:24:25.966 --> 00:24:31.839 align:start position:27% line:-2
+バーコード検出と分類機能を
+実行させます
+
+00:24:32.105 --> 00:24:36.577 align:start position:29% line:-2
+そうすると
+Visionが最適化され
+
+00:24:36.677 --> 00:24:40.581 align:start position:25% line:-1
+より速い処理が可能になります
+
+00:24:43.083 --> 00:24:47.488 align:start position:25% line:-2
+バッファをいくつ保持するかも
+話しましたね
+
+00:24:47.588 --> 00:24:49.923 align:start position:32% line:-1
+自分で管理しましょう
+
+00:24:50.891 --> 00:24:55.629 align:start position:27% line:-2
+畳み込みネットワークなどは
+時間がかかるので
+
+00:24:55.929 --> 00:25:00.200 align:start position:29% line:-2
+バックグラウンドキューで
+動かすようにします
+

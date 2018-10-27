@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:58.976 --> 00:11:00.346 A:middle
+intent you've defined in your
+
+00:11:00.346 --> 00:11:01.296 A:middle
+intents definition file.
+
+00:11:02.596 --> 00:11:04.336 A:middle
+Additionally, that color is
+
+00:11:04.336 --> 00:11:05.706 A:middle
+chosen from your application's
+
+00:11:05.706 --> 00:11:07.266 A:middle
+global tint color in your watch
+
+00:11:07.266 --> 00:11:08.056 A:middle
+app storyboard.
+
+00:11:08.666 --> 00:11:10.886 A:middle
+Now, it's very important to keep
+
+00:11:10.886 --> 00:11:11.946 A:middle
+in mind that the intents that
+
+00:11:11.976 --> 00:11:13.226 A:middle
+you support in your watch app
+
+00:11:13.276 --> 00:11:14.816 A:middle
+must be a subset of the intents
+
+00:11:14.816 --> 00:11:15.686 A:middle
+you support in your iOS
+
+00:11:15.686 --> 00:11:16.206 A:middle
+application.
+
+00:11:16.686 --> 00:11:17.406 A:middle
+That means you're going to be
+
+00:11:17.406 --> 00:11:19.066 A:middle
+sharing the same title strings,
+
+00:11:19.066 --> 00:11:21.196 A:middle
+and subtitle strings on iOS and
+
+00:11:21.196 --> 00:11:21.836 A:middle
+watchOS.
+
+00:11:22.306 --> 00:11:23.356 A:middle
+And, watchOS is a very
+
+00:11:23.356 --> 00:11:24.316 A:middle
+constrained canvas.
+
+00:11:24.536 --> 00:11:25.446 A:middle
+Every word counts.
+
+00:11:25.936 --> 00:11:27.426 A:middle
+So, we highly recommend using
+
+00:11:27.426 --> 00:11:28.776 A:middle
+string dictionaries, with the
+
+00:11:28.776 --> 00:11:30.666 A:middle
+NSStringVariableWidthRuleType
+
+00:11:30.726 --> 00:11:30.956 A:middle
+key.
+
+00:11:31.476 --> 00:11:32.636 A:middle
+That allows you to give us a
+
+00:11:32.636 --> 00:11:34.356 A:middle
+list of varying sizes of strings
+
+00:11:34.446 --> 00:11:35.296 A:middle
+that we can choose from,
+
+00:11:35.456 --> 00:11:36.456 A:middle
+depending on the context we're
+
+00:11:36.456 --> 00:11:37.096 A:middle
+displaying them in.
+
+00:11:38.456 --> 00:11:39.496 A:middle
+When providing content to
+
+00:11:39.496 --> 00:11:41.876 A:middle
+watchOS, we recommend supplying
+
+00:11:41.876 --> 00:11:43.776 A:middle
+a string with a width rule of 20
+
+00:11:44.166 --> 00:11:45.616 A:middle
+for a 38 millimeter watch.
+
+00:11:45.656 --> 00:11:47.506 A:middle
+And, a width rule of 24 for a 42
+
+00:11:47.506 --> 00:11:48.106 A:middle
+millimeter watch.
+
+00:11:48.756 --> 00:11:51.266 A:middle
+To get more information on
+
+00:11:51.266 --> 00:11:53.216 A:middle
+adopting this API, please see
+
+00:11:53.216 --> 00:11:54.476 A:middle
+the "Localizing with Xcode 9"
+
+00:11:54.476 --> 00:11:55.166 A:middle
+talk from last year's
+
+00:11:55.166 --> 00:11:55.706 A:middle
+conference.
+
+00:11:56.646 --> 00:11:58.726 A:middle
+So now, let's talk about
+
+00:11:58.726 --> 00:11:59.566 A:middle
+relevance providers.
+

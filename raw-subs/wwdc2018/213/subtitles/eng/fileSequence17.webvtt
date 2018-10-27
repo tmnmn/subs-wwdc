@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:59.226 --> 00:17:00.496 A:middle
+When connected to CarPlay, a
+
+00:17:00.496 --> 00:17:01.826 A:middle
+navigation app will be given a
+
+00:17:01.826 --> 00:17:03.276 A:middle
+window to draw content on the
+
+00:17:03.276 --> 00:17:03.846 A:middle
+car screen.
+
+00:17:04.406 --> 00:17:06.576 A:middle
+This window is your canvas for
+
+00:17:06.576 --> 00:17:08.156 A:middle
+displaying all that beautiful
+
+00:17:08.215 --> 00:17:09.955 A:middle
+noninteractive mapping and
+
+00:17:09.955 --> 00:17:11.316 A:middle
+navigation related content.
+
+00:17:12.286 --> 00:17:14.086 A:middle
+Then, as the app used templates
+
+00:17:14.396 --> 00:17:16.136 A:middle
+iOS will take those templates
+
+00:17:16.136 --> 00:17:17.626 A:middle
+and translate it into a UI
+
+00:17:17.626 --> 00:17:19.606 A:middle
+presented on top of your app.
+
+00:17:20.326 --> 00:17:21.116 A:middle
+So, let's take a look at the
+
+00:17:21.116 --> 00:17:23.296 A:middle
+code on what happens when your
+
+00:17:23.296 --> 00:17:24.316 A:middle
+app is connected to CarPlay.
+
+00:17:25.746 --> 00:17:26.496 A:middle
+The first thing you'll need to
+
+00:17:26.496 --> 00:17:28.195 A:middle
+note is that your application
+
+00:17:28.195 --> 00:17:30.086 A:middle
+delegate will need to conform to
+
+00:17:30.086 --> 00:17:31.756 A:middle
+the CarPlay application delegate
+
+00:17:31.756 --> 00:17:33.466 A:middle
+protocol, CP Application
+
+00:17:33.466 --> 00:17:33.846 A:middle
+Delegate.
+
+00:17:35.106 --> 00:17:36.736 A:middle
+One function in that protocol is
+
+00:17:36.736 --> 00:17:38.496 A:middle
+application didConnectCar
+
+00:17:38.496 --> 00:17:40.106 A:middle
+InterfaceController to window.
+
+00:17:41.136 --> 00:17:42.426 A:middle
+This function will provide two
+
+00:17:42.426 --> 00:17:43.806 A:middle
+very important objects to your
+
+00:17:43.806 --> 00:17:44.216 A:middle
+apps.
+
+00:17:44.756 --> 00:17:46.396 A:middle
+The first is an instance of
+
+00:17:46.496 --> 00:17:47.846 A:middle
+CPInterfaceController.
+
+00:17:48.776 --> 00:17:50.416 A:middle
+CPInterfaceController is your
+
+00:17:50.416 --> 00:17:51.876 A:middle
+connection to the template world
+
+00:17:52.186 --> 00:17:53.276 A:middle
+and what your apps will use to
+
+00:17:53.276 --> 00:17:54.656 A:middle
+manage what is displaying on the
+
+00:17:54.656 --> 00:17:55.176 A:middle
+car screen.
+
+00:17:56.066 --> 00:17:57.096 A:middle
+Additionally, you're given the
+
+00:17:57.096 --> 00:17:58.426 A:middle
+window I just mentioned, which
+
+00:17:58.426 --> 00:17:59.686 A:middle
+is where you can draw all your
+
+00:17:59.686 --> 00:18:00.486 A:middle
+mapping content.
+

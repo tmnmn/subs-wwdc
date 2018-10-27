@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.204 --> 00:29:02.376 align:start position:23% line:-2
+アクションの列挙型には
+BitStreamを用いました
+
+00:29:03.811 --> 00:29:07.414 align:start position:36% line:-2
+Codableの
+シリアライズでは
+
+00:29:07.514 --> 00:29:11.318 align:start position:23% line:-2
+列挙型用の
+“CodingKeys”を指定
+
+00:29:12.119 --> 00:29:17.124 align:start position:30% line:-2
+BitStreamでは
+整数値を使いました
+
+00:29:18.492 --> 00:29:23.130 align:start position:30% line:-2
+エンコードのメソッドで
+その値をアペンドし
+
+00:29:23.297 --> 00:29:27.801 align:start position:32% line:-2
+ケースに関連した
+データ構造が続きます
+
+00:29:28.402 --> 00:29:31.472 align:start position:29% line:-1
+ここに落とし穴があります
+
+00:29:31.738 --> 00:29:36.810 align:start position:30% line:-2
+３つのケースがあり
+エンコードに必要なのは
+
+00:29:37.177 --> 00:29:39.513 align:start position:38% line:-1
+２ビットですね
+
+00:29:40.647 --> 00:29:45.619 align:start position:29% line:-2
+ケースが１つ追加されても
+問題ありません
+
+00:29:45.719 --> 00:29:48.689 align:start position:32% line:-1
+ケースが５つになると
+
+00:29:48.789 --> 00:29:53.560 align:start position:29% line:-2
+３ビット使用に
+変更しなくてはなりません
+
+00:29:54.027 --> 00:29:57.097 align:start position:27% line:-1
+このコードは くどいですね
+
+00:29:57.197 --> 00:30:02.770 align:start position:27% line:-2
+それにうっかりして
+ひどい結果になりかねません
+

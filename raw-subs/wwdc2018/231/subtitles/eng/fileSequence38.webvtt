@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:55.736 --> 00:38:00.476 A:middle
+Now, I have an automation in my
+
+00:38:00.476 --> 00:38:03.506 A:middle
+house which turns off the lights
+
+00:38:03.676 --> 00:38:04.636 A:middle
+whenever someone leaves.
+
+00:38:05.296 --> 00:38:08.996 A:middle
+Now, that's great, except that I
+
+00:38:09.206 --> 00:38:10.656 A:middle
+live with my wife, and so
+
+00:38:10.656 --> 00:38:12.006 A:middle
+whenever she leaves the house,
+
+00:38:12.256 --> 00:38:13.956 A:middle
+all the lights turn off and I'm
+
+00:38:13.956 --> 00:38:16.256 A:middle
+left in the dark.
+
+00:38:16.256 --> 00:38:18.156 A:middle
+So with presence-based
+
+00:38:18.156 --> 00:38:20.136 A:middle
+conditions, you can update this
+
+00:38:20.306 --> 00:38:21.836 A:middle
+so that the lights only turn off
+
+00:38:22.336 --> 00:38:23.516 A:middle
+when the last person leaves.
+
+00:38:24.056 --> 00:38:27.776 A:middle
+Now, to set these conditions, we
+
+00:38:27.776 --> 00:38:28.506 A:middle
+use predicates.
+
+00:38:28.506 --> 00:38:31.556 A:middle
+So let's take a look at some
+
+00:38:31.556 --> 00:38:32.846 A:middle
+sample code.
+
+00:38:34.356 --> 00:38:37.306 A:middle
+So here we can see that we're
+
+00:38:37.306 --> 00:38:41.026 A:middle
+using our same sunset time
+
+00:38:41.026 --> 00:38:41.876 A:middle
+offset from before.
+
+00:38:41.876 --> 00:38:44.256 A:middle
+Now, we're going to create a
+
+00:38:44.256 --> 00:38:48.586 A:middle
+presence event that's when users
+
+00:38:48.586 --> 00:38:50.816 A:middle
+are at home.
+
+00:38:50.816 --> 00:38:52.336 A:middle
+We're going to use that presence
+
+00:38:52.336 --> 00:38:54.226 A:middle
+event to generate a predicate.
+
+00:38:56.116 --> 00:38:57.656 A:middle
+And we'll pass that predicate
+
+00:38:57.656 --> 00:38:58.796 A:middle
+into our trigger generation.
+
+00:38:59.296 --> 00:39:02.256 A:middle
+Then, we'll go back to the same
+

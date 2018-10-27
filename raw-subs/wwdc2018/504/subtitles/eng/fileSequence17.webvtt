@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:58.806 --> 00:17:00.346 A:middle
+route from iPhone and bring it
+
+00:17:00.346 --> 00:17:01.586 A:middle
+directly to your watch.
+
+00:17:02.616 --> 00:17:03.806 A:middle
+And there's some cases where
+
+00:17:03.806 --> 00:17:04.646 A:middle
+that won't happen.
+
+00:17:04.646 --> 00:17:06.126 A:middle
+It's really just when your
+
+00:17:06.126 --> 00:17:07.435 A:middle
+iPhone has more priority.
+
+00:17:07.866 --> 00:17:09.205 A:middle
+So for example, say I'm in the
+
+00:17:09.205 --> 00:17:10.886 A:middle
+middle of a phone call on my
+
+00:17:10.886 --> 00:17:11.465 A:middle
+phone.
+
+00:17:11.685 --> 00:17:12.636 A:middle
+Then, we're not going to take
+
+00:17:12.636 --> 00:17:13.766 A:middle
+that route and put it on your
+
+00:17:13.766 --> 00:17:15.286 A:middle
+watch because phone call's
+
+00:17:15.776 --> 00:17:16.945 A:middle
+probably pretty important.
+
+00:17:17.425 --> 00:17:20.195 A:middle
+And if there are no active
+
+00:17:20.195 --> 00:17:21.356 A:middle
+routes, then the route picker
+
+00:17:21.356 --> 00:17:23.685 A:middle
+will just appear on your behalf.
+
+00:17:24.636 --> 00:17:26.425 A:middle
+All right, so that's our route
+
+00:17:26.425 --> 00:17:27.576 A:middle
+picker, and now let's talk
+
+00:17:27.576 --> 00:17:29.296 A:middle
+about, how do we actually get
+
+00:17:29.296 --> 00:17:30.316 A:middle
+some playback to occur?
+
+00:17:31.306 --> 00:17:32.686 A:middle
+Well, you just use the same
+
+00:17:32.686 --> 00:17:34.836 A:middle
+AVAudioPlayer and AVAudioEngine.
+
+00:17:34.996 --> 00:17:35.946 A:middle
+And there's a variety of
+
+00:17:35.946 --> 00:17:36.946 A:middle
+different formats that are
+
+00:17:36.946 --> 00:17:38.236 A:middle
+supported on watchOS.
+
+00:17:38.946 --> 00:17:40.116 A:middle
+And what's great about this is
+
+00:17:40.226 --> 00:17:42.586 A:middle
+if you have iOS code that uses
+
+00:17:42.586 --> 00:17:44.006 A:middle
+these classes, then you could
+
+00:17:44.006 --> 00:17:45.256 A:middle
+have a shared framework between
+
+00:17:45.256 --> 00:17:46.936 A:middle
+your iOS and watchOS playback
+
+00:17:47.246 --> 00:17:48.026 A:middle
+operations.
+
+00:17:49.096 --> 00:17:51.206 A:middle
+And in the case of
+
+00:17:51.206 --> 00:17:53.736 A:middle
+AVAudioEngine, you can actually
+
+00:17:53.736 --> 00:17:55.506 A:middle
+play some DRM content in
+
+00:17:55.506 --> 00:17:57.186 A:middle
+conjunction with AVAudioPlayer
+
+00:17:57.186 --> 00:17:57.446 A:middle
+node.
+
+00:17:57.996 --> 00:17:59.666 A:middle
+And so you can now play your own
+
+00:17:59.666 --> 00:18:01.086 A:middle
+DRM content, decrypt it
+

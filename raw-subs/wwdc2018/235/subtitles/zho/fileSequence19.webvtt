@@ -1,0 +1,73 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.540 --> 00:19:01.074 align:middle line:-2
+你可能会问我们刚才讨论的
+contentInset和
+
+00:19:01.141 --> 00:19:03.377 align:middle line:-1
+adjustedContentInset
+
+00:19:03.443 --> 00:19:05.546 align:middle line:-1
+的区别是什么？
+
+00:19:05.812 --> 00:19:08.081 align:middle line:-2
+一个好问题
+下面就是它的分解答案
+
+00:19:09.216 --> 00:19:14.821 align:middle line:-2
+adjustedContentInset
+等于你app上的contentInset
+
+00:19:14.888 --> 00:19:18.559 align:middle line:-2
+加上来自系统或UIKit的
+任何自动嵌入
+
+00:19:19.660 --> 00:19:21.962 align:middle line:-1
+因为我们现在把这两个分开
+
+00:19:22.029 --> 00:19:24.464 align:middle line:-1
+所以很容易推断出正在发生的事情
+
+00:19:25.365 --> 00:19:28.735 align:middle line:-2
+当然你可能想要知道
+我什么时候在哪里可以在
+
+00:19:28.802 --> 00:19:29.870 align:middle line:-2
+滚动视图中得到一个
+systemInset？
+
+00:19:30.838 --> 00:19:34.408 align:middle line:-2
+一个最常见的例子是
+safeAreaInsets
+
+00:19:35.042 --> 00:19:38.645 align:middle line:-2
+让我们看看它是如何工作的
+回到我们的基本图
+
+00:19:38.712 --> 00:19:41.348 align:middle line:-2
+但我们会把一些
+safeAreaInsets放入其中
+
+00:19:42.683 --> 00:19:44.318 align:middle line:-1
+那么 如果我们现在开始的话
+
+00:19:44.384 --> 00:19:46.887 align:middle line:-2
+我们在边缘没有
+safeAreaInsets
+
+00:19:46.954 --> 00:19:49.423 align:middle line:-2
+但是我们将继续
+在滚动视图的顶部添加一些
+
+00:19:49.489 --> 00:19:51.158 align:middle line:-1
+safeAreaInsets
+
+00:19:52.359 --> 00:19:57.598 align:middle line:-2
+你会看到在默认情况下
+滚动视图会自动地将这些
+
+00:19:57.664 --> 00:20:02.603 align:middle line:-2
+在其顶部边缘的safeAreaInsets放入到其
+adjustedContentInset里面
+

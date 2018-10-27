@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.616 --> 00:27:00.366 A:middle
+it by creating a covering index.
+
+00:27:01.366 --> 00:27:02.606 A:middle
+And we can do this in the model
+
+00:27:02.606 --> 00:27:05.256 A:middle
+editor by adding a fetch index
+
+00:27:05.576 --> 00:27:06.416 A:middle
+to our post entity.
+
+00:27:07.066 --> 00:27:08.416 A:middle
+Here I've configured it to run
+
+00:27:08.416 --> 00:27:10.216 A:middle
+on the timestamp and fetch them
+
+00:27:10.216 --> 00:27:12.676 A:middle
+out in descending order because
+
+00:27:12.676 --> 00:27:13.786 A:middle
+we're showing the most recent
+
+00:27:13.786 --> 00:27:15.306 A:middle
+posts at the top of the table
+
+00:27:15.306 --> 00:27:15.526 A:middle
+view.
+
+00:27:17.676 --> 00:27:19.106 A:middle
+When we run the application
+
+00:27:19.106 --> 00:27:20.586 A:middle
+again, we see the same select
+
+00:27:20.586 --> 00:27:20.976 A:middle
+logs.
+
+00:27:24.386 --> 00:27:26.546 A:middle
+Except that this time we see
+
+00:27:26.546 --> 00:27:27.876 A:middle
+that the select query hits the
+
+00:27:27.876 --> 00:27:29.616 A:middle
+covering index during the query.
+
+00:27:30.126 --> 00:27:31.726 A:middle
+Explain shows us that the query
+
+00:27:31.726 --> 00:27:33.746 A:middle
+will use the covering index for
+
+00:27:33.746 --> 00:27:38.296 A:middle
+its order by.
+
+00:27:38.536 --> 00:27:39.966 A:middle
+Core Data supports many types of
+
+00:27:39.966 --> 00:27:41.696 A:middle
+indexing, including compound
+
+00:27:41.696 --> 00:27:43.356 A:middle
+indexes using R-trees.
+
+00:27:43.906 --> 00:27:45.646 A:middle
+And these are great for creating
+
+00:27:45.646 --> 00:27:47.346 A:middle
+any kind of query or optimizing
+
+00:27:47.346 --> 00:27:49.806 A:middle
+a query that uses a bounding box
+
+00:27:50.406 --> 00:27:51.536 A:middle
+in its select statement.
+
+00:27:52.196 --> 00:27:53.386 A:middle
+This is most commonly done with
+
+00:27:53.426 --> 00:27:55.216 A:middle
+locations and we can set this up
+
+00:27:55.216 --> 00:27:57.396 A:middle
+by adding another index to our
+
+00:27:57.396 --> 00:27:58.876 A:middle
+post entity, which works in the
+
+00:27:58.876 --> 00:28:00.396 A:middle
+latitude and longitude property
+

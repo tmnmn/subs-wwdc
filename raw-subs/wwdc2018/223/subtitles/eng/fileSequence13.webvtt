@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.266 --> 00:13:00.776 A:middle
+Now, the first thing I noticed
+
+00:13:00.776 --> 00:13:03.106 A:middle
+was the dot comment, which was
+
+00:13:03.136 --> 00:13:04.456 A:middle
+the source of all that Quick
+
+00:13:04.456 --> 00:13:06.636 A:middle
+Help, describing both what the
+
+00:13:06.636 --> 00:13:08.556 A:middle
+algorithm does and its
+
+00:13:08.556 --> 00:13:09.136 A:middle
+complexity.
+
+00:13:09.596 --> 00:13:14.046 A:middle
+Next, it turns out that
+
+00:13:14.046 --> 00:13:15.946 A:middle
+removeAll(where) isn't just some
+
+00:13:15.946 --> 00:13:18.486 A:middle
+method on a reg; it's a generic
+
+00:13:18.486 --> 00:13:20.466 A:middle
+algorithm, which means that it
+
+00:13:20.466 --> 00:13:22.126 A:middle
+works on a wide variety of
+
+00:13:22.126 --> 00:13:22.926 A:middle
+different collections.
+
+00:13:24.286 --> 00:13:25.296 A:middle
+It depends on a couple of
+
+00:13:25.296 --> 00:13:28.376 A:middle
+things, the ability to rearrange
+
+00:13:28.376 --> 00:13:29.556 A:middle
+elements, which comes from
+
+00:13:29.556 --> 00:13:31.636 A:middle
+mutable collection, and the
+
+00:13:31.966 --> 00:13:34.626 A:middle
+ability to change the length and
+
+00:13:34.626 --> 00:13:36.506 A:middle
+structure, which comes from
+
+00:13:36.506 --> 00:13:37.656 A:middle
+range-replaceable collection.
+
+00:13:38.186 --> 00:13:41.606 A:middle
+And it's built from a couple of
+
+00:13:41.606 --> 00:13:43.206 A:middle
+other order n algorithms.
+
+00:13:44.016 --> 00:13:46.126 A:middle
+The first is a half stable
+
+00:13:46.126 --> 00:13:48.096 A:middle
+partition, which moves all of
+
+00:13:48.096 --> 00:13:49.416 A:middle
+the elements satisfying some
+
+00:13:49.416 --> 00:13:53.456 A:middle
+predicate to the end and tells
+
+00:13:53.456 --> 00:13:54.846 A:middle
+us where that suffix starts.
+
+00:13:56.136 --> 00:13:57.786 A:middle
+The half stable in its name,
+
+00:13:58.186 --> 00:14:00.196 A:middle
+that comes, that indicates that
+

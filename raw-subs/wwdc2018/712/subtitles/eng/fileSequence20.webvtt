@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:58.906 --> 00:20:00.406 A:middle
+utility called draw bounding
+
+00:20:00.406 --> 00:20:00.896 A:middle
+boxes.
+
+00:20:01.756 --> 00:20:03.736 A:middle
+And I'm going to pass into draw
+
+00:20:03.736 --> 00:20:06.536 A:middle
+bounding boxes that test image
+
+00:20:06.536 --> 00:20:06.946 A:middle
+column.
+
+00:20:07.016 --> 00:20:09.176 A:middle
+So that's the image itself and
+
+00:20:09.176 --> 00:20:11.616 A:middle
+then I'm also going to pass the
+
+00:20:11.616 --> 00:20:13.226 A:middle
+predictions that I just got from
+
+00:20:13.226 --> 00:20:13.626 A:middle
+the model.
+
+00:20:13.766 --> 00:20:15.616 A:middle
+That's going to draw those
+
+00:20:15.656 --> 00:20:17.316 A:middle
+predicted bounding boxes onto
+
+00:20:17.316 --> 00:20:18.126 A:middle
+each image.
+
+00:20:18.656 --> 00:20:19.996 A:middle
+Now let's take a look at that
+
+00:20:19.996 --> 00:20:21.286 A:middle
+number two prediction again.
+
+00:20:21.566 --> 00:20:23.096 A:middle
+This time in image form.
+
+00:20:24.676 --> 00:20:25.586 A:middle
+So I can say
+
+00:20:25.586 --> 00:20:28.396 A:middle
+testpredictedimage2.show.
+
+00:20:28.836 --> 00:20:30.296 A:middle
+And it will render right here in
+
+00:20:30.296 --> 00:20:30.786 A:middle
+the notebook.
+
+00:20:31.516 --> 00:20:38.016 A:middle
+[ Applause ]
+
+00:20:38.516 --> 00:20:39.946 A:middle
+And this is great as a spot
+
+00:20:39.946 --> 00:20:41.596 A:middle
+check because at least for one
+
+00:20:41.596 --> 00:20:42.396 A:middle
+picture, we know that the
+
+00:20:42.396 --> 00:20:43.146 A:middle
+model's working.
+
+00:20:43.616 --> 00:20:44.706 A:middle
+But this doesn't tell us if
+
+00:20:44.706 --> 00:20:45.996 A:middle
+it'll work for say the next
+
+00:20:45.996 --> 00:20:47.786 A:middle
+50,000 images that we pass in.
+
+00:20:48.636 --> 00:20:49.986 A:middle
+So for that, we're going to
+
+00:20:49.986 --> 00:20:50.916 A:middle
+evaluate the model
+
+00:20:50.976 --> 00:20:51.846 A:middle
+quantitatively.
+
+00:20:52.446 --> 00:20:53.966 A:middle
+And I'm going to start a new
+
+00:20:53.966 --> 00:20:55.106 A:middle
+section here in the notebook
+
+00:20:55.106 --> 00:20:56.326 A:middle
+called evaluate the model.
+
+00:20:56.426 --> 00:20:58.286 A:middle
+And what we're going to do is
+
+00:20:58.286 --> 00:21:01.226 A:middle
+call model.evaluate and once
+

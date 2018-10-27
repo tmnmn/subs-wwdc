@@ -1,0 +1,75 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:59.259 --> 00:36:01.495 align:middle line:-1
+也给大家带来了动态演示
+
+00:36:01.562 --> 00:36:03.864 align:middle line:-1
+具体来说 我们要演示的是
+
+00:36:03.931 --> 00:36:07.034 align:middle line:-2
+训练InceptionV3
+对象分类网络
+
+00:36:08.135 --> 00:36:10.737 align:middle line:-2
+使用TensorFlow
+驱动是MPS
+
+00:36:11.638 --> 00:36:12.739 align:middle line:-1
+这个演示中
+
+00:36:14.608 --> 00:36:18.545 align:middle line:-2
+我还是使用MacBook Pro
+外接一个GPU
+
+00:36:19.313 --> 00:36:22.883 align:middle line:-2
+TensorFlow
+在MacBook Pro上
+
+00:36:23.317 --> 00:36:27.454 align:middle line:-2
+外部GPU
+用MPS训练网络
+
+00:36:27.921 --> 00:36:29.056 align:middle line:-1
+演示设置
+
+00:36:29.623 --> 00:36:31.358 align:middle line:-2
+我己安装了
+TensorFlow
+
+00:36:31.658 --> 00:36:34.761 align:middle line:-2
+也预先加载了
+InceptionV3网络
+
+00:36:34.862 --> 00:36:36.196 align:middle line:-1
+和训练数据集
+
+00:36:36.263 --> 00:36:39.499 align:middle line:-1
+现在训练网络30次迭代
+
+00:36:41.001 --> 00:36:42.970 align:middle line:-1
+你看速度多快
+
+00:36:43.437 --> 00:36:44.705 align:middle line:-1
+同样 整个网络
+
+00:36:44.838 --> 00:36:47.808 align:middle line:-2
+所有原语
+优化器和权重更新步骤
+
+00:36:48.075 --> 00:36:50.277 align:middle line:-1
+都是在外部GPU上运行
+
+00:36:50.777 --> 00:36:51.912 align:middle line:-1
+这就完成了
+
+00:36:52.479 --> 00:36:53.714 align:middle line:-1
+大家看到
+
+00:36:53.780 --> 00:36:57.117 align:middle line:-2
+训练速度大概是
+每秒100张图
+
+00:36:57.784 --> 00:37:00.721 align:middle line:-1
+平台状态汇总中说过
+

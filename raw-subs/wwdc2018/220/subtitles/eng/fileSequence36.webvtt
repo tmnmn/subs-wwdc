@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:35:58.646 --> 00:36:00.026 A:middle
+that's what it's there, as we
+
+00:36:00.026 --> 00:36:01.156 A:middle
+saw there are these couple of
+
+00:36:01.156 --> 00:36:02.586 A:middle
+things plus some other examples
+
+00:36:02.586 --> 00:36:03.776 A:middle
+in UIView subclasses.
+
+00:36:04.346 --> 00:36:05.786 A:middle
+But a lot of the times it gets
+
+00:36:05.786 --> 00:36:07.026 A:middle
+overridden because the
+
+00:36:07.026 --> 00:36:07.986 A:middle
+assumption that it's either
+
+00:36:07.986 --> 00:36:10.136 A:middle
+faster or more exact and it is
+
+00:36:10.136 --> 00:36:10.946 A:middle
+neither of those things.
+
+00:36:12.076 --> 00:36:14.546 A:middle
+However, there is a circumstance
+
+00:36:14.546 --> 00:36:15.846 A:middle
+where overriding it might help
+
+00:36:15.846 --> 00:36:16.506 A:middle
+your performance.
+
+00:36:18.206 --> 00:36:19.406 A:middle
+Text measurement can be
+
+00:36:19.406 --> 00:36:19.926 A:middle
+expensive.
+
+00:36:21.186 --> 00:36:24.106 A:middle
+In our app here the UILabel
+
+00:36:24.106 --> 00:36:25.626 A:middle
+sizing did not take very long.
+
+00:36:25.716 --> 00:36:27.386 A:middle
+It was very short durations.
+
+00:36:27.826 --> 00:36:28.986 A:middle
+So messing around with that is
+
+00:36:28.986 --> 00:36:29.766 A:middle
+not going to improve the
+
+00:36:29.766 --> 00:36:31.096 A:middle
+performance of that that much.
+
+00:36:31.666 --> 00:36:32.956 A:middle
+But if you have a text intensive
+
+00:36:32.956 --> 00:36:34.586 A:middle
+app and you're seeing a lot of
+
+00:36:34.586 --> 00:36:36.106 A:middle
+time happening in the UILabel
+
+00:36:36.106 --> 00:36:37.886 A:middle
+text measurement or you have
+
+00:36:37.886 --> 00:36:38.936 A:middle
+text view text measurement or
+
+00:36:39.066 --> 00:36:39.956 A:middle
+whatever else you're using, you
+
+00:36:40.386 --> 00:36:42.136 A:middle
+might be able to help it along
+
+00:36:42.136 --> 00:36:43.026 A:middle
+if you have some additional
+
+00:36:43.026 --> 00:36:43.566 A:middle
+information.
+
+00:36:45.116 --> 00:36:46.296 A:middle
+If you know the size that the
+
+00:36:46.296 --> 00:36:47.886 A:middle
+text needs to be without doing
+
+00:36:47.886 --> 00:36:49.696 A:middle
+all that text measurement, you
+
+00:36:49.696 --> 00:36:50.746 A:middle
+can return that size and
+
+00:36:50.746 --> 00:36:53.916 A:middle
+intrinsic content size, or if
+
+00:36:53.916 --> 00:36:55.286 A:middle
+when you're going to be putting
+
+00:36:55.286 --> 00:36:56.726 A:middle
+this view on the screen the
+
+00:36:56.726 --> 00:36:57.546 A:middle
+constraints are going to be
+
+00:36:57.546 --> 00:36:58.706 A:middle
+fully defining the size
+
+00:36:58.776 --> 00:36:59.976 A:middle
+regardless of the size of the
+

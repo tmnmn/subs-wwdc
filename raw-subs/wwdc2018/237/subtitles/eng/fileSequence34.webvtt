@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.296 --> 00:34:00.866 A:middle
+provideThumbnail for request
+
+00:34:00.866 --> 00:34:02.316 A:middle
+handler method in your
+
+00:34:02.536 --> 00:34:04.326 A:middle
+QLThumbnailProvider subclass.
+
+00:34:05.546 --> 00:34:07.816 A:middle
+We extensively covered this part
+
+00:34:07.816 --> 00:34:09.795 A:middle
+of the Quick Look API in your
+
+00:34:09.826 --> 00:34:14.376 A:middle
+session for WWDC 2017, Building
+
+00:34:14.376 --> 00:34:16.106 A:middle
+Great Document-Based Apps in iOS
+
+00:34:16.106 --> 00:34:16.556 A:middle
+11.
+
+00:34:17.076 --> 00:34:18.166 A:middle
+So if you'd like to provide
+
+00:34:18.166 --> 00:34:19.485 A:middle
+thumbnails for your custom file
+
+00:34:19.485 --> 00:34:21.966 A:middle
+types I highly encourage you to
+
+00:34:21.966 --> 00:34:23.666 A:middle
+check it out.
+
+00:34:23.936 --> 00:34:25.485 A:middle
+In a nutshell, you will need to
+
+00:34:25.485 --> 00:34:26.936 A:middle
+make use of the parameters
+
+00:34:26.936 --> 00:34:28.166 A:middle
+contained in the
+
+00:34:28.275 --> 00:34:29.866 A:middle
+QLFileThumbnailRequest of the
+
+00:34:29.866 --> 00:34:30.286 A:middle
+method.
+
+00:34:31.856 --> 00:34:34.126 A:middle
+The URL of the file, the maximum
+
+00:34:34.126 --> 00:34:35.176 A:middle
+and minimum sizes of the
+
+00:34:35.176 --> 00:34:37.295 A:middle
+thumbnail, and its scale.
+
+00:34:39.596 --> 00:34:41.565 A:middle
+For each thumbnail request the
+
+00:34:41.565 --> 00:34:43.646 A:middle
+API expects you to create a
+
+00:34:43.646 --> 00:34:45.315 A:middle
+QLThumbnailReply object.
+
+00:34:45.916 --> 00:34:48.025 A:middle
+This object will have to take
+
+00:34:48.025 --> 00:34:49.335 A:middle
+care of generating the
+
+00:34:49.335 --> 00:34:49.886 A:middle
+thumbnail.
+
+00:34:50.826 --> 00:34:51.886 A:middle
+You will have to provide it to
+
+00:34:51.886 --> 00:34:53.116 A:middle
+Quick Look through the
+
+00:34:53.116 --> 00:34:55.286 A:middle
+completion handler of the
+
+00:34:57.456 --> 00:34:57.636 A:middle
+method.
+
+00:34:57.766 --> 00:34:59.166 A:middle
+All right let's see all of this
+
+00:34:59.166 --> 00:35:00.306 A:middle
+in action it's demo time.
+

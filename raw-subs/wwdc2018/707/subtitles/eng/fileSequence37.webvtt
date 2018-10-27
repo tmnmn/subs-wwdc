@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.546 --> 00:37:01.376 A:middle
+Next, we have our Quantity
+
+00:37:01.376 --> 00:37:03.116 A:middle
+series sample builder, which,
+
+00:37:03.116 --> 00:37:04.396 A:middle
+like I mentioned, is really
+
+00:37:04.396 --> 00:37:06.036 A:middle
+great for apps that do have
+
+00:37:06.106 --> 00:37:07.706 A:middle
+high-frequency data ingestion
+
+00:37:08.106 --> 00:37:09.526 A:middle
+because it's a more efficient
+
+00:37:09.526 --> 00:37:10.986 A:middle
+way to store that data but also
+
+00:37:10.986 --> 00:37:12.906 A:middle
+allows you to kind of create
+
+00:37:13.096 --> 00:37:14.326 A:middle
+connections between that.
+
+00:37:15.166 --> 00:37:16.906 A:middle
+So first, we, of course, want to
+
+00:37:16.906 --> 00:37:19.326 A:middle
+start with creating our sample
+
+00:37:19.326 --> 00:37:19.666 A:middle
+builder.
+
+00:37:19.946 --> 00:37:20.676 A:middle
+We initialize with the
+
+00:37:20.776 --> 00:37:22.346 A:middle
+healthStore and we initialize it
+
+00:37:22.346 --> 00:37:23.686 A:middle
+with the quantityType that we're
+
+00:37:23.686 --> 00:37:24.376 A:middle
+interested in.
+
+00:37:25.126 --> 00:37:27.346 A:middle
+Next, for whatever cadence
+
+00:37:27.346 --> 00:37:28.756 A:middle
+you're interested in inserting
+
+00:37:28.756 --> 00:37:30.036 A:middle
+samples, you do that.
+
+00:37:30.506 --> 00:37:32.006 A:middle
+Let's use my soccer app as an
+
+00:37:32.006 --> 00:37:32.576 A:middle
+example.
+
+00:37:33.026 --> 00:37:34.616 A:middle
+I am super interested in the
+
+00:37:34.616 --> 00:37:36.476 A:middle
+actual distances that my users
+
+00:37:36.476 --> 00:37:37.726 A:middle
+are moving, so I'm going to
+
+00:37:37.726 --> 00:37:39.996 A:middle
+declare the meter unit as the
+
+00:37:39.996 --> 00:37:41.316 A:middle
+quantity that I'm interested in,
+
+00:37:41.576 --> 00:37:43.236 A:middle
+and I insert that into my
+
+00:37:43.236 --> 00:37:44.056 A:middle
+seriesBuilder.
+
+00:37:44.816 --> 00:37:48.506 A:middle
+And at the end, we call finish
+
+00:37:48.826 --> 00:37:50.606 A:middle
+on my series, and we're actually
+
+00:37:50.606 --> 00:37:52.426 A:middle
+going to get the new Quantity
+
+00:37:52.426 --> 00:37:54.106 A:middle
+series sample and be able to
+
+00:37:54.106 --> 00:37:55.376 A:middle
+have stored that in a more
+
+00:37:55.376 --> 00:37:56.066 A:middle
+efficient way.
+
+00:37:56.636 --> 00:37:57.986 A:middle
+And so we're really, really
+
+00:37:57.986 --> 00:37:59.596 A:middle
+excited for you to start
+
+00:37:59.596 --> 00:38:00.946 A:middle
+implemented our new Quantity
+

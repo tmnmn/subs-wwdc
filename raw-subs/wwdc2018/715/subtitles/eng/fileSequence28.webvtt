@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.896 --> 00:28:01.416 A:middle
+On the server side, we need a
+
+00:28:01.416 --> 00:28:02.856 A:middle
+listener that can accept the
+
+00:28:02.856 --> 00:28:03.766 A:middle
+incoming connections.
+
+00:28:04.246 --> 00:28:05.236 A:middle
+We need to respond to that
+
+00:28:05.236 --> 00:28:06.516 A:middle
+handshake that we just sent from
+
+00:28:06.516 --> 00:28:08.066 A:middle
+the client, and we need to read
+
+00:28:08.066 --> 00:28:09.456 A:middle
+data off the network so that we
+
+00:28:09.456 --> 00:28:10.436 A:middle
+can push it up to the display.
+
+00:28:11.496 --> 00:28:13.066 A:middle
+Starting with the listener, we
+
+00:28:15.976 --> 00:28:17.836 A:middle
+simply create an NWListener
+
+00:28:18.156 --> 00:28:19.126 A:middle
+using the default UDP
+
+00:28:19.126 --> 00:28:19.686 A:middle
+parameters.
+
+00:28:20.236 --> 00:28:22.656 A:middle
+If I wanted to, this is also my
+
+00:28:22.656 --> 00:28:23.736 A:middle
+opportunity to use those
+
+00:28:23.736 --> 00:28:25.236 A:middle
+parameters to tell the listener
+
+00:28:25.236 --> 00:28:26.596 A:middle
+to listen on a specific local
+
+00:28:26.596 --> 00:28:26.886 A:middle
+port.
+
+00:28:27.376 --> 00:28:28.406 A:middle
+But since we're using a bonjour
+
+00:28:28.406 --> 00:28:29.566 A:middle
+service, we don't need to do
+
+00:28:29.566 --> 00:28:30.366 A:middle
+that.
+
+00:28:33.316 --> 00:28:35.236 A:middle
+To set up that service, I'm
+
+00:28:35.236 --> 00:28:36.166 A:middle
+going to set the service
+
+00:28:36.166 --> 00:28:38.476 A:middle
+property on the listener to a
+
+00:28:38.476 --> 00:28:39.516 A:middle
+service object of type
+
+00:28:39.516 --> 00:28:40.426 A:middle
+camera.udp.
+
+00:28:41.216 --> 00:28:42.286 A:middle
+Notice that I don't pass the
+
+00:28:42.286 --> 00:28:43.826 A:middle
+name here because I want the
+
+00:28:43.826 --> 00:28:45.396 A:middle
+system to provide the default
+
+00:28:45.396 --> 00:28:46.236 A:middle
+device name for me.
+
+00:28:47.766 --> 00:28:49.666 A:middle
+I also provide a block to the
+
+00:28:49.666 --> 00:28:50.586 A:middle
+serviceRegistration
+
+00:28:50.586 --> 00:28:52.806 A:middle
+UpdateHandler, which is going to
+
+00:28:52.806 --> 00:28:54.466 A:middle
+be called anytime the set of
+
+00:28:54.466 --> 00:28:55.786 A:middle
+endpoints advertised by the
+
+00:28:55.786 --> 00:28:57.196 A:middle
+system changes.
+
+00:28:57.966 --> 00:28:59.366 A:middle
+Here, I'm interested in the case
+
+00:28:59.456 --> 00:29:01.206 A:middle
+where an endpoint is added, and
+

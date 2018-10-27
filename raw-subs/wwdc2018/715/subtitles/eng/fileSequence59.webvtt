@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:58:59.126 --> 00:59:01.496 A:middle
+CFStreamCreatePairWith, anything
+
+00:59:01.496 --> 00:59:03.276 A:middle
+related to sockets as well as
+
+00:59:03.276 --> 00:59:03.796 A:middle
+CFSocket.
+
+00:59:04.606 --> 00:59:06.146 A:middle
+These cannot take advantage of a
+
+00:59:06.146 --> 00:59:07.296 A:middle
+lot of the connection
+
+00:59:07.296 --> 00:59:08.316 A:middle
+establishment that we've put in
+
+00:59:08.316 --> 00:59:09.486 A:middle
+there with the new
+
+00:59:09.486 --> 00:59:10.766 A:middle
+Network.framework, and they
+
+00:59:10.766 --> 00:59:11.776 A:middle
+can't take advantage of the new
+
+00:59:11.776 --> 00:59:12.886 A:middle
+User Space Networking.
+
+00:59:12.996 --> 00:59:14.006 A:middle
+So we really want you to move
+
+00:59:14.006 --> 00:59:15.266 A:middle
+off of these to take advantage
+
+00:59:15.546 --> 00:59:17.356 A:middle
+of the incredibly robust
+
+00:59:17.356 --> 00:59:18.556 A:middle
+connectivity improvements that
+
+00:59:18.556 --> 00:59:19.376 A:middle
+you'll get with
+
+00:59:19.376 --> 00:59:21.046 A:middle
+Network.framework and URLSession
+
+00:59:21.536 --> 00:59:22.776 A:middle
+and the improved performance.
+
+00:59:23.936 --> 00:59:25.656 A:middle
+There are some foundation APIs
+
+00:59:25.656 --> 00:59:26.566 A:middle
+as well that we'd like you to
+
+00:59:26.566 --> 00:59:27.246 A:middle
+move away from.
+
+00:59:27.526 --> 00:59:29.106 A:middle
+If you're using any of these
+
+00:59:29.196 --> 00:59:31.856 A:middle
+NSStream, NSNetService, or
+
+00:59:31.906 --> 00:59:34.076 A:middle
+NSSocket for APIs, please move
+
+00:59:34.076 --> 00:59:35.656 A:middle
+to Network.framework or
+
+00:59:35.886 --> 00:59:36.606 A:middle
+URLSession.
+
+00:59:37.576 --> 00:59:38.476 A:middle
+Finally, if you're using
+
+00:59:38.556 --> 00:59:40.906 A:middle
+SCNetworkReachability, we feel
+
+00:59:40.906 --> 00:59:41.996 A:middle
+that the Wait for Connectivity
+
+00:59:41.996 --> 00:59:43.836 A:middle
+model is a much better model, so
+
+00:59:43.836 --> 00:59:45.196 A:middle
+we'd really like you to move to
+
+00:59:45.196 --> 00:59:45.406 A:middle
+that.
+
+00:59:46.166 --> 00:59:47.166 A:middle
+And for those few cases where
+
+00:59:47.166 --> 00:59:48.526 A:middle
+Wait for Connectivity isn't the
+
+00:59:48.526 --> 00:59:50.576 A:middle
+right answer, NWPathMonitor is a
+
+00:59:50.576 --> 00:59:51.776 A:middle
+much better solution going
+
+00:59:51.776 --> 00:59:52.146 A:middle
+forward.
+
+00:59:52.956 --> 00:59:54.216 A:middle
+So now that we've talked about
+
+00:59:54.216 --> 00:59:55.016 A:middle
+some things we'd like you to
+
+00:59:55.016 --> 00:59:56.216 A:middle
+stop doing, I want to focus on
+
+00:59:56.216 --> 00:59:57.216 A:middle
+the things we really want to see
+
+00:59:57.216 --> 00:59:57.516 A:middle
+you do.
+
+00:59:58.736 --> 01:00:00.056 A:middle
+Going forward, the preferred
+

@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.656 --> 00:35:01.446 A:middle
+compiled in parallel, but it
+
+00:35:01.446 --> 00:35:02.716 A:middle
+forced the compiler to
+
+00:35:02.716 --> 00:35:04.286 A:middle
+repeatedly parse each file.
+
+00:35:05.386 --> 00:35:07.006 A:middle
+Once as an implementation to
+
+00:35:07.006 --> 00:35:09.536 A:middle
+produce a .o, and multiple times
+
+00:35:09.736 --> 00:35:11.626 A:middle
+as an interface to find
+
+00:35:11.626 --> 00:35:12.486 A:middle
+declarations.
+
+00:35:13.976 --> 00:35:16.636 A:middle
+Xcode 10 reduces this overhead.
+
+00:35:17.546 --> 00:35:19.296 A:middle
+It does so by combining the
+
+00:35:19.296 --> 00:35:21.556 A:middle
+files into groups that share as
+
+00:35:21.556 --> 00:35:23.056 A:middle
+much work as possible.
+
+00:35:23.646 --> 00:35:26.206 A:middle
+While still allowing maximum
+
+00:35:26.206 --> 00:35:26.996 A:middle
+parallelism.
+
+00:35:27.956 --> 00:35:29.796 A:middle
+This reuses parsing within a
+
+00:35:29.796 --> 00:35:32.656 A:middle
+group and only repeats work
+
+00:35:32.656 --> 00:35:33.666 A:middle
+across groups.
+
+00:35:34.596 --> 00:35:36.186 A:middle
+Since the number of groups is
+
+00:35:36.186 --> 00:35:38.656 A:middle
+typically relatively low, this
+
+00:35:38.656 --> 00:35:41.066 A:middle
+can significantly speed up your
+
+00:35:41.066 --> 00:35:41.976 A:middle
+incremental debug builds.
+
+00:35:45.876 --> 00:35:48.096 A:middle
+Now, Swift code doesn't only
+
+00:35:48.096 --> 00:35:49.636 A:middle
+call other Swift code.
+
+00:35:50.156 --> 00:35:53.406 A:middle
+It can also call Objective-C.
+
+00:35:53.656 --> 00:35:55.216 A:middle
+Returning to our PetWall example
+
+00:35:55.216 --> 00:35:57.586 A:middle
+app, we can see that, that this
+
+00:35:57.586 --> 00:35:59.316 A:middle
+is crucial since the system
+
+00:35:59.316 --> 00:36:01.496 A:middle
+frameworks such as UIKit are
+

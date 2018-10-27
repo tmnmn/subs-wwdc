@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.553 --> 00:07:02.322 align:start position:21% line:-2
+セクション番号が
+“０”か“１”ではないのでしょう
+
+00:07:02.756 --> 00:07:05.225 align:start position:29% line:-1
+かなり状況が分かりました
+
+00:07:05.325 --> 00:07:09.062 align:start position:27% line:-2
+Appで再現して
+さらに詳しく見てみましょう
+
+00:07:09.163 --> 00:07:10.531 align:start position:34% line:-1
+“再生”を押します
+
+00:07:11.732 --> 00:07:15.502 align:start position:9% line:-1
+ChocolateChipはレシピのAppです
+
+00:07:15.802 --> 00:07:18.872 align:start position:27% line:-2
+ホイップクリームのレシピで
+テストすると―
+
+00:07:19.173 --> 00:07:20.174 align:start position:38% line:-1
+問題ありません
+
+00:07:20.274 --> 00:07:22.743 align:start position:32% line:-2
+“材料”と“手順”が
+示されています
+
+00:07:22.843 --> 00:07:24.144 align:start position:25% line:-1
+ここがレシピのセクションです
+
+00:07:24.244 --> 00:07:28.182 align:start position:27% line:-2
+セクションは材料が“０”で
+ステップが“１”です
+
+00:07:28.582 --> 00:07:30.818 align:start position:32% line:-1
+他のレシピを選ぶと―
+
+00:07:31.385 --> 00:07:32.686 align:start position:34% line:-1
+クラッシュしました
+
+00:07:32.786 --> 00:07:36.590 align:start position:25% line:-1
+同じフェイタルエラーで止まり
+
+00:07:36.690 --> 00:07:40.527 align:start position:25% line:-2
+バックトレースも
+先ほどのログとよく似ています
+
+00:07:40.627 --> 00:07:43.297 align:start position:30% line:-1
+同じ問題だと思われます
+
+00:07:43.397 --> 00:07:46.366 align:start position:29% line:-1
+クラッシュログを削除し―
+
+00:07:46.633 --> 00:07:49.503 align:start position:23% line:-1
+デバッグセッションを見ましょう
+
+00:07:50.103 --> 00:07:55.943 align:start position:21% line:-2
+このフェイタルエラーの
+セクション番号は“８”とあります
+
+00:07:56.043 --> 00:07:59.012 align:start position:29% line:-2
+“０”か“１”以外だから
+クラッシュした
+
+00:07:59.546 --> 00:08:02.049 align:start position:25% line:-1
+どうやら私が悪かったようです
+

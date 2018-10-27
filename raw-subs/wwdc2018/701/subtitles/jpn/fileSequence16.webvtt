@@ -1,0 +1,49 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:00.127 --> 00:16:03.063 align:start position:38% line:-2
+掛け算を用いて
+回転させます
+
+00:16:03.163 --> 00:16:06.700 align:start position:34% line:-2
+また掛け算は
+可換ではありません
+
+00:16:06.833 --> 00:16:11.038 align:start position:32% line:-2
+演算対象を変更する際
+位数も変えます
+
+00:16:13.373 --> 00:16:16.643 align:start position:36% line:-2
+３ラジアン分のπ
+上方に動かし
+
+00:16:17.144 --> 00:16:18.946 align:start position:32% line:-1
+同様に右へ動かします
+
+00:16:19.046 --> 00:16:21.281 align:start position:29% line:-1
+これを１つの動きにします
+
+00:16:26.854 --> 00:16:30.791 align:start position:32% line:-2
+四元数でできることに
+補間があります
+
+00:16:30.891 --> 00:16:33.527 align:start position:30% line:-1
+２つのタイプの補間です
+
+00:16:34.828 --> 00:16:36.129 align:start position:36% line:-1
+まずはSlerp
+
+00:16:37.865 --> 00:16:40.100 align:start position:32% line:-1
+球面線形補間のことで
+
+00:16:42.035 --> 00:16:43.770 align:start position:34% line:-1
+異体が２つあります
+
+00:16:47.174 --> 00:16:52.646 align:start position:21% line:-2
+simd slerpは最短の弧で
+青と緑を結んだもの
+
+00:16:53.747 --> 00:16:58.452 align:start position:16% line:-2
+simd slerp longestは
+最長で背面に回っています
+

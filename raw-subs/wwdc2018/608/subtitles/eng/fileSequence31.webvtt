@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:58.366 --> 00:31:00.136 A:middle
+So using health, overflows,
+
+00:31:00.186 --> 00:31:02.026 A:middle
+might bring significant things
+
+00:31:02.346 --> 00:31:03.296 A:middle
+on your GP budget.
+
+00:31:03.526 --> 00:31:07.596 A:middle
+And another category now you
+
+00:31:07.596 --> 00:31:08.786 A:middle
+have visibility into is
+
+00:31:08.886 --> 00:31:10.786 A:middle
+synchronization, which is an
+
+00:31:10.786 --> 00:31:12.006 A:middle
+important category to look at
+
+00:31:12.006 --> 00:31:13.696 A:middle
+because you want your Shader
+
+00:31:13.696 --> 00:31:16.246 A:middle
+core to be busy doing work, not
+
+00:31:16.246 --> 00:31:17.396 A:middle
+waiting for synchronization.
+
+00:31:18.266 --> 00:31:20.776 A:middle
+And in your shader code, if you
+
+00:31:20.776 --> 00:31:21.826 A:middle
+are reading from texture,
+
+00:31:21.826 --> 00:31:24.616 A:middle
+buffers, or using atomics or
+
+00:31:24.616 --> 00:31:26.886 A:middle
+barriers, you might have stalls
+
+00:31:27.046 --> 00:31:28.286 A:middle
+waiting for synchronization.
+
+00:31:29.576 --> 00:31:32.196 A:middle
+And also now we provide you
+
+00:31:32.196 --> 00:31:34.066 A:middle
+ability to see cost of in-line
+
+00:31:34.066 --> 00:31:35.706 A:middle
+functions, you are calling from
+
+00:31:35.706 --> 00:31:36.396 A:middle
+your shaders.
+
+00:31:36.946 --> 00:31:39.286 A:middle
+This way you can directly
+
+00:31:39.286 --> 00:31:40.646 A:middle
+navigate to your most expensive
+
+00:31:40.646 --> 00:31:42.706 A:middle
+function, and start optimizing
+
+00:31:46.326 --> 00:31:47.000 A:middle
+that [applause].
+
+00:31:48.886 --> 00:31:51.166 A:middle
+&gt;&gt; Welcome to the Apple designed
+
+00:31:51.166 --> 00:31:52.566 A:middle
+A11 bionic chip.
+
+00:31:53.056 --> 00:31:54.786 A:middle
+We can provide better profiling
+
+00:31:54.786 --> 00:31:55.666 A:middle
+data than ever.
+
+00:31:56.346 --> 00:31:58.256 A:middle
+This year, we are introducing
+
+00:31:58.256 --> 00:32:00.456 A:middle
+per line timing information and
+

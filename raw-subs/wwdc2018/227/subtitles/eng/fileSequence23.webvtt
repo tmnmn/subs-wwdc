@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.506 --> 00:23:00.106 A:middle
+Okay now let's get into some
+
+00:23:00.106 --> 00:23:03.496 A:middle
+actual software art here.
+
+00:23:03.496 --> 00:23:08.396 A:middle
+Okay so you may have, your UI
+
+00:23:08.396 --> 00:23:10.296 A:middle
+typically has to adapt to a lot
+
+00:23:10.296 --> 00:23:11.436 A:middle
+of different presentations and
+
+00:23:11.436 --> 00:23:14.026 A:middle
+layouts, this can commonly call
+
+00:23:14.026 --> 00:23:15.706 A:middle
+for artwork that actually needs
+
+00:23:15.756 --> 00:23:18.576 A:middle
+to stretch and grow to adapt to
+
+00:23:18.576 --> 00:23:19.546 A:middle
+those layout changes.
+
+00:23:20.076 --> 00:23:21.126 A:middle
+How do you accomplish this with
+
+00:23:21.126 --> 00:23:21.616 A:middle
+artwork?
+
+00:23:22.506 --> 00:23:24.396 A:middle
+Well the most common approach is
+
+00:23:24.396 --> 00:23:25.976 A:middle
+to identify a stretchable
+
+00:23:25.976 --> 00:23:27.176 A:middle
+portion of the image and the
+
+00:23:27.176 --> 00:23:28.266 A:middle
+unstretchable portions of the
+
+00:23:28.266 --> 00:23:28.556 A:middle
+image.
+
+00:23:29.056 --> 00:23:29.986 A:middle
+Why is there a difference?
+
+00:23:29.986 --> 00:23:31.576 A:middle
+Well considering, this is a
+
+00:23:31.726 --> 00:23:33.136 A:middle
+crude example here on the slide,
+
+00:23:33.136 --> 00:23:34.146 A:middle
+but imagine that we had a
+
+00:23:34.146 --> 00:23:35.686 A:middle
+beautiful shape to the overall
+
+00:23:35.686 --> 00:23:36.946 A:middle
+asset and like round corners
+
+00:23:36.946 --> 00:23:37.856 A:middle
+that you wanted to preserve at
+
+00:23:37.856 --> 00:23:39.576 A:middle
+all possible sizes like a frame.
+
+00:23:40.276 --> 00:23:41.126 A:middle
+You want to make sure that you
+
+00:23:41.126 --> 00:23:42.486 A:middle
+don't stretch those pieces, the
+
+00:23:42.486 --> 00:23:44.126 A:middle
+blue pieces in this slide but
+
+00:23:44.126 --> 00:23:45.396 A:middle
+you can stretch the yellow
+
+00:23:45.396 --> 00:23:45.786 A:middle
+pieces.
+
+00:23:46.496 --> 00:23:48.286 A:middle
+So traditionally the way this is
+
+00:23:48.286 --> 00:23:50.236 A:middle
+done is with the modern design
+
+00:23:50.236 --> 00:23:52.066 A:middle
+tools is to slice all these
+
+00:23:52.256 --> 00:23:54.276 A:middle
+items up, identify all these
+
+00:23:54.276 --> 00:23:55.556 A:middle
+regions, and distribute them as
+
+00:23:55.556 --> 00:23:56.716 A:middle
+individual assets.
+
+00:23:57.096 --> 00:23:58.746 A:middle
+Then the programmer would
+
+00:23:58.746 --> 00:24:00.426 A:middle
+reassemble these in the final
+

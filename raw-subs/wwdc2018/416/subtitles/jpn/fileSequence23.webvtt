@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.179 --> 00:23:04.017 align:start position:25% line:-2
+最終画像にはダーティメモリの
+コストしか必要ないため
+
+00:23:04.117 --> 00:23:06.053 align:start position:25% line:-1
+メモリ使用量の上昇を防ぎます
+
+00:23:07.521 --> 00:23:10.357 align:start position:23% line:-2
+例えば ディスクからファイルを
+取得した際のコードです
+
+00:23:10.457 --> 00:23:12.359 align:start position:34% line:-2
+ダウンロードした
+ファイルでも可です
+
+00:23:12.893 --> 00:23:17.931 align:start position:27% line:-2
+そしてUIImageを使い
+小さい長方形を描きます
+
+00:23:18.031 --> 00:23:20.267 align:start position:29% line:-1
+メモリ使用量が上昇します
+
+00:23:21.001 --> 00:23:25.672 align:start position:14% line:-2
+今度はImageIOを使い ディスクから
+ファイルをロードします
+
+00:23:26.140 --> 00:23:31.245 align:start position:29% line:-2
+画像の大きさを入力する
+パラメータをセットします
+
+00:23:31.678 --> 00:23:35.749 align:start position:7% line:-2
+そしてCGImageSourceCreate
+ThumbnailAtIndexを使い作成します
+
+00:23:35.849 --> 00:23:38.919 align:start position:27% line:-2
+CG画像は
+UIImageでも作れます
+
+00:23:39.019 --> 00:23:43.190 align:start position:23% line:-2
+より小さな画像を
+以前の半分の時間で手にしました
+
+00:23:45.425 --> 00:23:49.396 align:start position:21% line:-2
+次のトピックはバックグラウンドで
+使用する場合の最適化です
+
+00:23:49.830 --> 00:23:54.067 align:start position:23% line:-2
+フルスクリーンのAppの画像が
+あるとします
+
+00:23:54.167 --> 00:23:55.769 align:start position:32% line:-1
+とても美しい画像です
+
+00:23:55.869 --> 00:24:01.275 align:start position:25% line:-2
+しかし通知を確認する際などに
+ホームスクリーンに戻ります
+

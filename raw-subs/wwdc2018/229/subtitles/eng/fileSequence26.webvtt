@@ -1,0 +1,129 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.126 --> 00:26:00.346 A:middle
+which line to actually go start
+
+00:26:00.346 --> 00:26:01.256 A:middle
+looking for our problem.
+
+00:26:02.336 --> 00:26:03.336 A:middle
+And all that evidence is
+
+00:26:03.336 --> 00:26:04.226 A:middle
+actually going to be really
+
+00:26:04.226 --> 00:26:06.946 A:middle
+helpful to find the bug.
+
+00:26:06.946 --> 00:26:07.746 A:middle
+So we've proven that there's a
+
+00:26:07.746 --> 00:26:08.156 A:middle
+bug here.
+
+00:26:08.416 --> 00:26:10.376 A:middle
+TSAN has never lied in my
+
+00:26:10.376 --> 00:26:11.256 A:middle
+experience with them.
+
+00:26:12.616 --> 00:26:14.036 A:middle
+So we can fix this by
+
+00:26:14.036 --> 00:26:15.446 A:middle
+eliminating the bears' ability
+
+00:26:15.446 --> 00:26:16.466 A:middle
+to go to sleep at the same time,
+
+00:26:16.846 --> 00:26:17.826 A:middle
+and we'll do that with a serial
+
+00:26:17.826 --> 00:26:18.456 A:middle
+dispatch queue.
+
+00:26:19.736 --> 00:26:20.846 A:middle
+And now only one bear can go to
+
+00:26:20.846 --> 00:26:21.446 A:middle
+sleep at a time.
+
+00:26:21.946 --> 00:26:22.846 A:middle
+And so if we peek in on our
+
+00:26:22.846 --> 00:26:25.236 A:middle
+sleeping bears again now, taking
+
+00:26:25.236 --> 00:26:26.516 A:middle
+care to do so on the appropriate
+
+00:26:26.516 --> 00:26:28.926 A:middle
+queue, we see that sure enough
+
+00:26:29.226 --> 00:26:30.496 A:middle
+grandpa and cub are snoozing
+
+00:26:30.496 --> 00:26:31.586 A:middle
+away peacefully like we
+
+00:26:31.586 --> 00:26:32.006 A:middle
+expected.
+
+00:26:33.936 --> 00:26:35.306 A:middle
+So my advice for working with
+
+00:26:35.306 --> 00:26:36.526 A:middle
+collections for multiple threads
+
+00:26:36.976 --> 00:26:38.336 A:middle
+is try to isolate your data so
+
+00:26:38.336 --> 00:26:39.296 A:middle
+that it can only be seen from a
+
+00:26:39.296 --> 00:26:40.856 A:middle
+single thread, and when you
+
+00:26:40.856 --> 00:26:42.906 A:middle
+can't do that, make sure that
+
+00:26:42.906 --> 00:26:43.766 A:middle
+you have an appropriate form in
+
+00:26:43.766 --> 00:26:45.126 A:middle
+mutual exclusion, such as a
+
+00:26:45.126 --> 00:26:46.726 A:middle
+serial dispatch queue or locks.
+
+00:26:47.816 --> 00:26:49.016 A:middle
+And always use the thread
+
+00:26:49.016 --> 00:26:50.226 A:middle
+sanitizer to double check your
+
+00:26:50.226 --> 00:26:50.476 A:middle
+work.
+
+00:26:50.876 --> 00:26:52.376 A:middle
+It's far better to catch bugs
+
+00:26:52.406 --> 00:26:53.426 A:middle
+before they ship in your app
+
+00:26:53.816 --> 00:26:54.236 A:middle
+than after.
+
+00:26:54.236 --> 00:26:56.496 A:middle
+And I have a little bit more
+
+00:26:56.496 --> 00:26:57.496 A:middle
+advice for working with mutable
+
+00:26:57.496 --> 00:26:58.046 A:middle
+collections.
+
+00:26:59.476 --> 00:27:01.166 A:middle
+The first of which is if you can
+

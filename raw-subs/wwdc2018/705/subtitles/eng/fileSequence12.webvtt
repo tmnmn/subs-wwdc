@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.476 --> 00:12:00.226 A:middle
+past that's an indication that
+
+00:12:00.226 --> 00:12:01.266 A:middle
+this user is no longer a
+
+00:12:01.266 --> 00:12:02.176 A:middle
+subscriber anymore.
+
+00:12:02.206 --> 00:12:03.616 A:middle
+But if you find a date in the
+
+00:12:03.616 --> 00:12:05.186 A:middle
+future that's an indication that
+
+00:12:05.186 --> 00:12:06.346 A:middle
+this user is in a valid
+
+00:12:06.346 --> 00:12:07.246 A:middle
+subscription period.
+
+00:12:08.396 --> 00:12:09.816 A:middle
+So let's look at how this works
+
+00:12:09.816 --> 00:12:11.696 A:middle
+in the example that we're going
+
+00:12:13.056 --> 00:12:13.156 A:middle
+through.
+
+00:12:13.366 --> 00:12:14.836 A:middle
+Grab that original transaction
+
+00:12:14.836 --> 00:12:16.986 A:middle
+ID associated with this user and
+
+00:12:16.986 --> 00:12:18.536 A:middle
+pull out all the transactions
+
+00:12:18.536 --> 00:12:19.336 A:middle
+associated with this
+
+00:12:19.336 --> 00:12:19.836 A:middle
+subscription.
+
+00:12:20.776 --> 00:12:22.256 A:middle
+Then sort those transactions by
+
+00:12:22.256 --> 00:12:24.066 A:middle
+that expires date field and grab
+
+00:12:24.066 --> 00:12:25.026 A:middle
+the one that has the latest
+
+00:12:25.026 --> 00:12:25.786 A:middle
+expires date.
+
+00:12:26.176 --> 00:12:27.516 A:middle
+Now you can take that expires
+
+00:12:27.556 --> 00:12:29.436 A:middle
+date and update that latest
+
+00:12:29.436 --> 00:12:30.926 A:middle
+expires date field associated
+
+00:12:30.926 --> 00:12:31.396 A:middle
+with this user.
+
+00:12:31.396 --> 00:12:33.346 A:middle
+And when you do that you're
+
+00:12:33.346 --> 00:12:34.486 A:middle
+effectively extending that
+
+00:12:34.486 --> 00:12:36.326 A:middle
+user's subscription by another
+
+00:12:36.456 --> 00:12:37.626 A:middle
+length of time and your
+
+00:12:37.626 --> 00:12:38.956 A:middle
+server-side logic now knows that
+
+00:12:38.956 --> 00:12:39.806 A:middle
+the user is in a valid
+
+00:12:39.806 --> 00:12:40.576 A:middle
+subscription window.
+
+00:12:41.866 --> 00:12:42.696 A:middle
+Of course when you're dealing
+
+00:12:42.696 --> 00:12:43.826 A:middle
+with renewal transactions like
+
+00:12:43.826 --> 00:12:44.806 A:middle
+this that have come through
+
+00:12:44.806 --> 00:12:45.876 A:middle
+StoreKit you still need to
+
+00:12:45.876 --> 00:12:47.626 A:middle
+inform the device that it passed
+
+00:12:47.706 --> 00:12:48.886 A:middle
+those validation checks.
+
+00:12:49.486 --> 00:12:50.646 A:middle
+And have your device, your app
+
+00:12:51.086 --> 00:12:52.446 A:middle
+call Finish Transaction back
+
+00:12:52.446 --> 00:12:52.976 A:middle
+down in StoreKit again.
+
+00:12:57.376 --> 00:12:58.576 A:middle
+So let's say you have this set
+
+00:12:58.576 --> 00:12:59.646 A:middle
+up and working correctly.
+

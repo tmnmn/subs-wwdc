@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:59.196 --> 00:28:00.346 A:middle
+memory address for one of those.
+
+00:28:00.406 --> 00:28:01.536 A:middle
+And now we can use [inaudible]
+
+00:28:01.936 --> 00:28:04.036 A:middle
+po memory address, which you
+
+00:28:04.036 --> 00:28:05.116 A:middle
+might be familiar with if you're
+
+00:28:05.116 --> 00:28:06.176 A:middle
+an Objective-C developer.
+
+00:28:06.526 --> 00:28:07.376 A:middle
+Well, that doesn't work and
+
+00:28:07.496 --> 00:28:08.696 A:middle
+that's because Swift doesn't
+
+00:28:08.696 --> 00:28:12.046 A:middle
+treat numbers as pointers and
+
+00:28:12.046 --> 00:28:12.936 A:middle
+de-reference them for you.
+
+00:28:13.236 --> 00:28:14.326 A:middle
+So once again, we need to do
+
+00:28:14.326 --> 00:28:16.026 A:middle
+this from an Objective-C
+
+00:28:16.026 --> 00:28:16.616 A:middle
+context.
+
+00:28:16.986 --> 00:28:18.036 A:middle
+So we could do the same thing we
+
+00:28:18.036 --> 00:28:19.566 A:middle
+did before, but I find this to
+
+00:28:19.566 --> 00:28:21.296 A:middle
+be so convenient that I like to
+
+00:28:21.496 --> 00:28:23.926 A:middle
+shortcut this down to just a
+
+00:28:23.926 --> 00:28:25.676 A:middle
+simple short command.
+
+00:28:26.136 --> 00:28:27.726 A:middle
+So I'm going to do that by using
+
+00:28:27.796 --> 00:28:29.466 A:middle
+command alias, and I'm going to
+
+00:28:29.466 --> 00:28:30.616 A:middle
+call that command poc.
+
+00:28:31.216 --> 00:28:32.076 A:middle
+So now that I've created an
+
+00:28:32.076 --> 00:28:33.416 A:middle
+alias, I can simply poc that
+
+00:28:33.416 --> 00:28:34.756 A:middle
+memory address and see the debug
+
+00:28:34.756 --> 00:28:35.886 A:middle
+description for that object.
+
+00:28:36.326 --> 00:28:37.856 A:middle
+I'd like to show you another way
+
+00:28:38.106 --> 00:28:40.396 A:middle
+to look at the description of an
+
+00:28:40.396 --> 00:28:41.366 A:middle
+object if you only have its
+
+00:28:41.366 --> 00:28:42.066 A:middle
+memory address.
+
+00:28:42.396 --> 00:28:43.886 A:middle
+And in Swift, you can use a
+
+00:28:43.886 --> 00:28:45.596 A:middle
+function called unsafe bit cast.
+
+00:28:46.436 --> 00:28:47.416 A:middle
+Give it the memory address and
+
+00:28:47.416 --> 00:28:48.546 A:middle
+then it's unsafe because it's up
+
+00:28:48.576 --> 00:28:50.016 A:middle
+to you to provide the correct
+
+00:28:50.496 --> 00:28:52.416 A:middle
+type, so I'll give it scoreboard
+
+00:28:52.416 --> 00:28:53.096 A:middle
+view.self.
+
+00:28:53.736 --> 00:28:55.436 A:middle
+And now we see we can use unsafe
+
+00:28:55.496 --> 00:28:57.146 A:middle
+bit cast to see the debug
+
+00:28:57.146 --> 00:28:58.146 A:middle
+description for an object.
+
+00:28:58.876 --> 00:29:00.366 A:middle
+Now the great thing about unsafe
+

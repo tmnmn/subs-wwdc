@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.437 --> 00:09:02.509 align:middle line:-2
+接下来我会设置NowPlayingInfoCenter
+并让MPNowPlayingInfoCenter了解
+
+00:09:02.576 --> 00:09:05.045 align:middle line:-1
+我的app将提供立即播放元数据
+
+00:09:05.112 --> 00:09:06.647 align:middle line:-1
+当它成为立即播放app时
+
+00:09:07.781 --> 00:09:10.851 align:middle line:-2
+最后我会响应
+MPRemoteCommandCenter事件
+
+00:09:10.918 --> 00:09:14.888 align:middle line:-2
+特别注意的是在本例中只需
+一个播放命令 当Srirocka
+
+00:09:14.955 --> 00:09:17.624 align:middle line:-2
+成为立即播放app时
+它会响应这些事件
+
+00:09:18.892 --> 00:09:22.996 align:middle line:-2
+我们可以在此看到CarPlay
+车载系统所需要的那个API
+
+00:09:23.063 --> 00:09:24.398 align:middle line:-1
+就是MPPlayableContent
+
+00:09:24.898 --> 00:09:28.569 align:middle line:-2
+对于iOS 12 我们针对如何
+更好优化这个API进行了深刻审视
+
+00:09:28.969 --> 00:09:32.906 align:middle line:-2
+我们可以安全地说在iOS 12中
+我们重新灌录了MPPlayableContent
+
+00:09:32.973 --> 00:09:39.046 align:middle line:-2
+（重新灌录
+MPPLAYABLECONTENT）
+
+00:09:39.112 --> 00:09:43.617 align:middle line:-2
+我们深度分析了MPPlayableContent
+并且我们改善了它的性能
+
+00:09:43.684 --> 00:09:46.186 align:middle line:-2
+在如何调取数据源
+和如何调用委托方面
+
+00:09:47.054 --> 00:09:50.257 align:middle line:-2
+你不需要修改当前音频app
+在CarPlay车载系统中的实施
+
+00:09:50.624 --> 00:09:53.927 align:middle line:-2
+我们加速了启动过程
+并提供更流畅的动画
+
+00:09:53.994 --> 00:09:56.396 align:middle line:-2
+无论何时当CarPlay
+车载显示屏上的内容发生变更时
+
+00:09:57.331 --> 00:10:00.067 align:middle line:-1
+我们还向你的app提供更好的通讯
+

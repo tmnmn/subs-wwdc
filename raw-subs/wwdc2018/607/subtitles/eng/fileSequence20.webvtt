@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.886 --> 00:20:01.526 A:middle
+all the redundant state, and the
+
+00:20:01.526 --> 00:20:03.036 A:middle
+end result is a lean and
+
+00:20:03.036 --> 00:20:04.536 A:middle
+highly-efficient set of GPU
+
+00:20:04.536 --> 00:20:05.196 A:middle
+commands.
+
+00:20:06.226 --> 00:20:08.876 A:middle
+Now, once the ICB is encoded and
+
+00:20:08.876 --> 00:20:10.416 A:middle
+optimized, it's time to schedule
+
+00:20:10.416 --> 00:20:11.286 A:middle
+it for execution.
+
+00:20:11.776 --> 00:20:12.986 A:middle
+You notice here that you could
+
+00:20:12.986 --> 00:20:14.996 A:middle
+actually specify the exact range
+
+00:20:14.996 --> 00:20:16.396 A:middle
+of commands that you execute.
+
+00:20:17.316 --> 00:20:18.736 A:middle
+Also in this example, we use an
+
+00:20:18.736 --> 00:20:20.666 A:middle
+indirect buffer, which itself
+
+00:20:21.076 --> 00:20:22.476 A:middle
+can be encoded with a GPU.
+
+00:20:25.586 --> 00:20:28.066 A:middle
+So once the ICB is encoded, it
+
+00:20:28.066 --> 00:20:29.746 A:middle
+could be reused again and again,
+
+00:20:29.746 --> 00:20:31.526 A:middle
+and the overhead is completely
+
+00:20:31.526 --> 00:20:32.146 A:middle
+negligible.
+
+00:20:32.856 --> 00:20:33.966 A:middle
+So I'm really excited, but we
+
+00:20:33.966 --> 00:20:35.236 A:middle
+actually went ahead and we put
+
+00:20:35.236 --> 00:20:36.686 A:middle
+together a sample so you could
+
+00:20:36.686 --> 00:20:37.206 A:middle
+take a look.
+
+00:20:39.216 --> 00:20:41.066 A:middle
+So here you could see a number
+
+00:20:41.066 --> 00:20:42.346 A:middle
+of school buses in the middle of
+
+00:20:42.346 --> 00:20:42.756 A:middle
+a city.
+
+00:20:43.996 --> 00:20:46.766 A:middle
+Each bus is composed of 500,000
+
+00:20:46.766 --> 00:20:49.726 A:middle
+polygons and 2000 individual
+
+00:20:49.726 --> 00:20:50.326 A:middle
+parts.
+
+00:20:50.866 --> 00:20:53.446 A:middle
+Each part requires a separate
+
+00:20:53.446 --> 00:20:55.116 A:middle
+draw call, its own material
+
+00:20:55.116 --> 00:20:56.836 A:middle
+argument buffer, index buffer,
+
+00:20:56.836 --> 00:20:57.636 A:middle
+and vertex buffer.
+
+00:20:58.606 --> 00:21:00.006 A:middle
+As you could imagine, this would
+

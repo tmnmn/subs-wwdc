@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:58.956 --> 00:05:00.446 A:middle
+Core ML Tools ecosystem.
+
+00:05:00.866 --> 00:05:02.496 A:middle
+Now to talk about quantization,
+
+00:05:02.656 --> 00:05:04.446 A:middle
+I would like to invite my friend
+
+00:05:04.446 --> 00:05:05.476 A:middle
+Sohaib on stage.
+
+00:05:06.516 --> 00:05:13.596 A:middle
+[ Applause ]
+
+00:05:14.096 --> 00:05:14.876 A:middle
+&gt;&gt; Good morning, everyone.
+
+00:05:15.186 --> 00:05:15.976 A:middle
+My name is Sohaib.
+
+00:05:16.206 --> 00:05:17.426 A:middle
+I'm an engineer in the Core ML
+
+00:05:17.426 --> 00:05:17.716 A:middle
+team.
+
+00:05:18.106 --> 00:05:19.156 A:middle
+And today we're going to be
+
+00:05:19.156 --> 00:05:20.256 A:middle
+taking a look at new
+
+00:05:20.256 --> 00:05:21.766 A:middle
+quantization utilities in Core
+
+00:05:21.766 --> 00:05:23.026 A:middle
+ML Tools 2.0.
+
+00:05:28.136 --> 00:05:29.826 A:middle
+Core ML Tools 2.0 has support
+
+00:05:29.826 --> 00:05:31.206 A:middle
+for the latest Core ML model
+
+00:05:31.206 --> 00:05:32.366 A:middle
+format specification.
+
+00:05:32.796 --> 00:05:34.306 A:middle
+It also has utilities which make
+
+00:05:34.306 --> 00:05:36.166 A:middle
+it really easy for you to add
+
+00:05:36.226 --> 00:05:38.016 A:middle
+flexible shapes and quantize in
+
+00:05:38.016 --> 00:05:38.876 A:middle
+your own network machine
+
+00:05:38.876 --> 00:05:39.486 A:middle
+learning models.
+
+00:05:40.296 --> 00:05:41.416 A:middle
+Using these great new features
+
+00:05:41.416 --> 00:05:43.046 A:middle
+in Core ML, you can not only
+
+00:05:43.046 --> 00:05:44.266 A:middle
+reduce the size of your models.
+
+00:05:44.576 --> 00:05:46.366 A:middle
+But also reduce the number of
+
+00:05:46.366 --> 00:05:48.126 A:middle
+models in your app, reducing the
+
+00:05:48.126 --> 00:05:49.536 A:middle
+footprint of your app.
+
+00:05:50.356 --> 00:05:51.896 A:middle
+Now let's start off by taking a
+
+00:05:51.896 --> 00:05:53.316 A:middle
+look at quantization.
+
+00:05:54.846 --> 00:05:55.876 A:middle
+Core ML Tools supports
+
+00:05:55.906 --> 00:05:57.166 A:middle
+post-training quantization.
+
+00:05:57.666 --> 00:05:59.186 A:middle
+We start off with a Core ML
+
+00:05:59.286 --> 00:06:00.976 A:middle
+neural network model which has
+

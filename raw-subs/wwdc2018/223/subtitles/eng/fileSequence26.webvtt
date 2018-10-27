@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.386 --> 00:26:00.556 A:middle
+need is probably out there with
+
+00:26:00.556 --> 00:26:03.396 A:middle
+tests, with documentation, often
+
+00:26:03.396 --> 00:26:04.786 A:middle
+with a proof of correctness.
+
+00:26:05.746 --> 00:26:07.436 A:middle
+Learn how to search the web for
+
+00:26:07.436 --> 00:26:08.746 A:middle
+research that applies to your
+
+00:26:08.746 --> 00:26:10.086 A:middle
+problem domain.
+
+00:26:12.716 --> 00:26:12.946 A:middle
+Okay.
+
+00:26:12.946 --> 00:26:13.596 A:middle
+Back to the code.
+
+00:26:14.076 --> 00:26:15.656 A:middle
+I was intrigued by this slice
+
+00:26:15.706 --> 00:26:17.136 A:middle
+thing, and when I checked out
+
+00:26:17.136 --> 00:26:19.596 A:middle
+its type, I saw that it wasn't
+
+00:26:19.596 --> 00:26:20.156 A:middle
+an array.
+
+00:26:20.716 --> 00:26:23.306 A:middle
+Since we had used stable
+
+00:26:23.306 --> 00:26:24.876 A:middle
+partition on an array and
+
+00:26:24.876 --> 00:26:27.216 A:middle
+bringToFront and sendToBack, and
+
+00:26:27.216 --> 00:26:28.776 A:middle
+now we were using it on an array
+
+00:26:28.776 --> 00:26:30.876 A:middle
+slice, I guessed out loud that
+
+00:26:30.876 --> 00:26:32.496 A:middle
+it must be generic.
+
+00:26:32.496 --> 00:26:34.636 A:middle
+"Of course, it is.
+
+00:26:35.176 --> 00:26:36.446 A:middle
+What's stable partition got to
+
+00:26:36.446 --> 00:26:37.846 A:middle
+do with the specifics of array?"
+
+00:26:39.166 --> 00:26:40.436 A:middle
+"That's right, nothing.
+
+00:26:41.336 --> 00:26:44.046 A:middle
+Speaking of which, Blonkey, just
+
+00:26:44.046 --> 00:26:45.416 A:middle
+what does bringForward have to
+
+00:26:45.416 --> 00:26:46.946 A:middle
+do with shapes and selection?"
+
+00:26:48.616 --> 00:26:51.166 A:middle
+"Well," I said, "it works on
+
+00:26:51.166 --> 00:26:52.876 A:middle
+shapes, and it brings forward
+
+00:26:52.876 --> 00:26:53.796 A:middle
+the selected ones."
+
+00:26:54.046 --> 00:26:55.936 A:middle
+"That's right, nothing," he went
+
+00:26:55.936 --> 00:26:56.736 A:middle
+on without listening.
+
+00:26:58.636 --> 00:27:00.006 A:middle
+"Can you run bring forward on a
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.016 --> 00:33:00.746 A:middle
+It's actually emitting light.
+
+00:33:01.026 --> 00:33:02.266 A:middle
+Emissive texture is a fairly
+
+00:33:02.266 --> 00:33:03.606 A:middle
+special case but not something
+
+00:33:03.606 --> 00:33:04.636 A:middle
+you'd use every day.
+
+00:33:05.436 --> 00:33:06.326 A:middle
+But if the object you're
+
+00:33:06.326 --> 00:33:07.656 A:middle
+modeling would glow if you
+
+00:33:07.656 --> 00:33:09.116 A:middle
+turned the lights off, it might
+
+00:33:09.116 --> 00:33:10.056 A:middle
+be a good candidate for an
+
+00:33:10.056 --> 00:33:10.716 A:middle
+emissive texture.
+
+00:33:13.196 --> 00:33:14.446 A:middle
+We can also make parts of our
+
+00:33:14.446 --> 00:33:15.596 A:middle
+models transparent.
+
+00:33:15.596 --> 00:33:17.366 A:middle
+This is useful for making
+
+00:33:17.366 --> 00:33:18.516 A:middle
+objects made out of partly
+
+00:33:18.516 --> 00:33:19.296 A:middle
+glass, for example.
+
+00:33:19.626 --> 00:33:22.686 A:middle
+If you do this, be sure to use a
+
+00:33:22.686 --> 00:33:24.256 A:middle
+separate material for the
+
+00:33:24.256 --> 00:33:25.986 A:middle
+transparent and non-transparent
+
+00:33:25.986 --> 00:33:27.366 A:middle
+parts of your model to ensure
+
+00:33:27.366 --> 00:33:28.116 A:middle
+they render correctly.
+
+00:33:28.696 --> 00:33:31.366 A:middle
+You do this by providing an
+
+00:33:31.366 --> 00:33:32.736 A:middle
+albedo texture that has the
+
+00:33:32.736 --> 00:33:34.156 A:middle
+transparency in its alpha
+
+00:33:34.156 --> 00:33:34.536 A:middle
+channel.
+
+00:33:34.786 --> 00:33:36.666 A:middle
+So, a transparent PNG file, for
+
+00:33:36.666 --> 00:33:37.056 A:middle
+example.
+
+00:33:38.506 --> 00:33:40.046 A:middle
+Note that transparency is really
+
+00:33:40.046 --> 00:33:41.726 A:middle
+intended for see-through parts
+
+00:33:41.726 --> 00:33:43.216 A:middle
+of the model, not for creating
+
+00:33:43.216 --> 00:33:44.796 A:middle
+cutouts like a leaf edge or a
+
+00:33:44.796 --> 00:33:45.396 A:middle
+butterfly wing.
+
+00:33:45.956 --> 00:33:48.896 A:middle
+We'll see this in action for our
+
+00:33:48.996 --> 00:33:50.196 A:middle
+TV model from before.
+
+00:33:50.196 --> 00:33:52.336 A:middle
+In addition to the mesh we
+
+00:33:52.336 --> 00:33:53.596 A:middle
+already have for the base of the
+
+00:33:53.596 --> 00:33:55.806 A:middle
+model, I'm going to add a second
+
+00:33:55.806 --> 00:33:57.436 A:middle
+mesh for a curved screen, a
+
+00:33:57.436 --> 00:33:58.416 A:middle
+screen cover that's made of
+
+00:33:58.416 --> 00:34:00.346 A:middle
+glass, with a slight amount of
+

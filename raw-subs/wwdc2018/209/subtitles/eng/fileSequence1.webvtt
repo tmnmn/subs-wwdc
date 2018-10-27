@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:00.396 --> 00:01:01.986 A:middle
+Now, as you know, we pride
+
+00:01:01.986 --> 00:01:04.105 A:middle
+ourselves on our API's, and our
+
+00:01:04.105 --> 00:01:05.876 A:middle
+goal always, is to have API's
+
+00:01:05.876 --> 00:01:07.446 A:middle
+that are capable, and
+
+00:01:07.446 --> 00:01:08.686 A:middle
+consistent, and powerful.
+
+00:01:09.796 --> 00:01:10.756 A:middle
+So, with that in mind, we
+
+00:01:10.756 --> 00:01:12.806 A:middle
+continue to do refinements that
+
+00:01:12.806 --> 00:01:14.516 A:middle
+improve both the Objective-C and
+
+00:01:14.516 --> 00:01:16.086 A:middle
+Swift exposure of our API's.
+
+00:01:16.086 --> 00:01:18.436 A:middle
+And, this is not just in AppKit
+
+00:01:18.436 --> 00:01:20.306 A:middle
+or Foundation, but also other
+
+00:01:20.306 --> 00:01:21.906 A:middle
+frameworks including UIKit, as
+
+00:01:21.956 --> 00:01:23.166 A:middle
+you might have heard in this
+
+00:01:23.166 --> 00:01:24.596 A:middle
+morning's "What's New in Cocoa
+
+00:01:24.596 --> 00:01:24.966 A:middle
+Touch."
+
+00:01:26.226 --> 00:01:28.236 A:middle
+Now, the API changes we're doing
+
+00:01:28.236 --> 00:01:30.586 A:middle
+are fully source compatible in
+
+00:01:30.586 --> 00:01:32.646 A:middle
+Objective-C, and we also expect
+
+00:01:32.646 --> 00:01:34.466 A:middle
+them to be 100% migratable in
+
+00:01:34.466 --> 00:01:36.846 A:middle
+Swift by the time we GM the SDK.
+
+00:01:37.516 --> 00:01:38.756 A:middle
+So, with that, let's look at
+
+00:01:38.756 --> 00:01:39.906 A:middle
+some of the API refinements
+
+00:01:39.906 --> 00:01:40.886 A:middle
+within this release.
+
+00:01:41.416 --> 00:01:44.226 A:middle
+First I'm going to talk about
+
+00:01:44.656 --> 00:01:47.036 A:middle
+some updates to string types.
+
+00:01:48.296 --> 00:01:49.486 A:middle
+Last release, we introduced
+
+00:01:49.486 --> 00:01:51.016 A:middle
+string enumeration types as a
+
+00:01:51.016 --> 00:01:52.476 A:middle
+way to collect groups of related
+
+00:01:52.476 --> 00:01:53.616 A:middle
+string constants together.
+
+00:01:54.286 --> 00:01:55.696 A:middle
+These helped make API's that
+
+00:01:55.746 --> 00:01:56.876 A:middle
+deal in these types much
+
+00:01:56.876 --> 00:01:57.236 A:middle
+clearer.
+
+00:01:58.896 --> 00:02:00.116 A:middle
+And, here are some examples.
+

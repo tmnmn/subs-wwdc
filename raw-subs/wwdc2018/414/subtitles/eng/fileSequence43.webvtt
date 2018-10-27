@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:42:58.486 --> 00:43:00.016 A:middle
+happening at slightly different
+
+00:43:00.096 --> 00:43:01.606 A:middle
+lines of code or slightly
+
+00:43:01.606 --> 00:43:02.406 A:middle
+different addresses.
+
+00:43:02.836 --> 00:43:04.556 A:middle
+And as Greg mentioned, you can
+
+00:43:04.556 --> 00:43:06.956 A:middle
+see those show up as different
+
+00:43:07.946 --> 00:43:09.716 A:middle
+crash points in Xcode even
+
+00:43:09.716 --> 00:43:10.746 A:middle
+though it's the same bug.
+
+00:43:12.086 --> 00:43:13.696 A:middle
+And also the crashing thread
+
+00:43:13.756 --> 00:43:14.836 A:middle
+might not actually be the
+
+00:43:14.836 --> 00:43:15.966 A:middle
+culprit of the bug, so it's
+
+00:43:15.966 --> 00:43:18.016 A:middle
+important to look at the stack
+
+00:43:18.016 --> 00:43:19.406 A:middle
+traces of the other threads in a
+
+00:43:19.406 --> 00:43:19.856 A:middle
+crash log.
+
+00:43:20.546 --> 00:43:22.286 A:middle
+So now let's take a closer look
+
+00:43:22.376 --> 00:43:23.436 A:middle
+at an example of a
+
+00:43:23.436 --> 00:43:24.746 A:middle
+multithreading bug and I will
+
+00:43:24.746 --> 00:43:26.056 A:middle
+show you how we can diagnose
+
+00:43:26.056 --> 00:43:27.856 A:middle
+such a bug using a tool called
+
+00:43:27.856 --> 00:43:29.296 A:middle
+Thread Sanitizer which is part
+
+00:43:29.296 --> 00:43:29.886 A:middle
+of Xcode.
+
+00:43:39.046 --> 00:43:40.066 A:middle
+So let's take another look at
+
+00:43:40.066 --> 00:43:41.716 A:middle
+our cookies recipe app that
+
+00:43:41.886 --> 00:43:43.416 A:middle
+Chris and I made and let's look
+
+00:43:43.416 --> 00:43:44.766 A:middle
+at some more crash logs that we
+
+00:43:44.766 --> 00:43:46.066 A:middle
+received from our users.
+
+00:43:46.666 --> 00:43:49.116 A:middle
+Let's focus on this second app
+
+00:43:49.116 --> 00:43:50.546 A:middle
+crasher of our app, this one.
+
+00:43:52.066 --> 00:43:53.476 A:middle
+This crash log indicates that
+
+00:43:53.476 --> 00:43:54.746 A:middle
+there's something wrong going on
+
+00:43:54.746 --> 00:43:56.256 A:middle
+when we're doing with a class
+
+00:43:56.256 --> 00:43:58.066 A:middle
+called LazyImageView, which is a
+
+00:43:58.066 --> 00:43:59.836 A:middle
+class that I wrote and we'll
+
+00:43:59.836 --> 00:44:00.996 A:middle
+look at it in just a second.
+

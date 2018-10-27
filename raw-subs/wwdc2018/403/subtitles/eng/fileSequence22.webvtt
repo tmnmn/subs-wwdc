@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.136 --> 00:22:01.216 A:middle
+on disk, you can't expect those
+
+00:22:01.216 --> 00:22:02.886 A:middle
+file modifications to be visible
+
+00:22:02.886 --> 00:22:04.996 A:middle
+to another test class because it
+
+00:22:04.996 --> 00:22:05.846 A:middle
+could have access to a
+
+00:22:05.846 --> 00:22:06.886 A:middle
+completely separate data
+
+00:22:06.886 --> 00:22:07.296 A:middle
+container.
+
+00:22:07.946 --> 00:22:10.836 A:middle
+In practice, the fact that class
+
+00:22:10.836 --> 00:22:12.306 A:middle
+is executed on different clones
+
+00:22:12.756 --> 00:22:14.166 A:middle
+will likely be invisible to your
+
+00:22:14.166 --> 00:22:16.296 A:middle
+tests, but it's something to be
+
+00:22:16.296 --> 00:22:17.406 A:middle
+aware of.
+
+00:22:18.416 --> 00:22:20.516 A:middle
+So, where can you run tests in
+
+00:22:20.516 --> 00:22:20.966 A:middle
+parallel?
+
+00:22:21.786 --> 00:22:22.866 A:middle
+You can run unit tests in
+
+00:22:22.866 --> 00:22:25.356 A:middle
+parallel on macOS, as well as
+
+00:22:25.356 --> 00:22:27.546 A:middle
+unit and UI tests in parallel on
+
+00:22:27.546 --> 00:22:29.256 A:middle
+the iOS and tvOS simulators.
+
+00:22:29.786 --> 00:22:31.996 A:middle
+And with that, I'd like to give
+
+00:22:31.996 --> 00:22:33.216 A:middle
+you a demo of Parallel
+
+00:22:33.216 --> 00:22:34.876 A:middle
+Distributed Testing in action.
+
+00:22:48.226 --> 00:22:49.636 A:middle
+All right, so this is the Solar
+
+00:22:49.636 --> 00:22:51.446 A:middle
+System app, which you may have
+
+00:22:51.446 --> 00:22:52.226 A:middle
+seen at some of the other
+
+00:22:52.226 --> 00:22:53.416 A:middle
+sessions here at Dub-Dub.
+
+00:22:54.346 --> 00:22:55.526 A:middle
+As one of the developers of this
+
+00:22:55.526 --> 00:22:57.296 A:middle
+app, I want to run all of my
+
+00:22:57.296 --> 00:22:58.876 A:middle
+tests before committing and
+
+00:22:58.876 --> 00:22:59.786 A:middle
+pushing my changes to the
+
+00:22:59.786 --> 00:23:00.456 A:middle
+repository.
+

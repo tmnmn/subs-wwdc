@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.616 --> 00:27:00.946 A:middle
+do that.
+
+00:27:01.116 --> 00:27:02.086 A:middle
+So how do we build the
+
+00:27:02.086 --> 00:27:02.966 A:middle
+foundation module?
+
+00:27:03.916 --> 00:27:05.916 A:middle
+First of all, we create a
+
+00:27:05.986 --> 00:27:07.126 A:middle
+separate Clang location for
+
+00:27:07.126 --> 00:27:07.306 A:middle
+that.
+
+00:27:08.186 --> 00:27:10.466 A:middle
+And that Clang location contains
+
+00:27:10.646 --> 00:27:12.076 A:middle
+all the header files from the
+
+00:27:12.076 --> 00:27:12.826 A:middle
+foundation module.
+
+00:27:13.476 --> 00:27:17.216 A:middle
+We don't transfer any of the
+
+00:27:17.216 --> 00:27:19.626 A:middle
+existing context from the
+
+00:27:19.626 --> 00:27:21.136 A:middle
+original compiler invocation.
+
+00:27:21.586 --> 00:27:23.256 A:middle
+Hence, it's context-free.
+
+00:27:24.126 --> 00:27:25.896 A:middle
+The thing we actually transfer
+
+00:27:25.896 --> 00:27:27.346 A:middle
+are the command line arguments
+
+00:27:27.346 --> 00:27:28.176 A:middle
+you passed to Clang.
+
+00:27:28.446 --> 00:27:31.966 A:middle
+Those are passed on.
+
+00:27:32.226 --> 00:27:33.586 A:middle
+While we build the foundation
+
+00:27:33.586 --> 00:27:36.496 A:middle
+module, we mod-- the module
+
+00:27:36.496 --> 00:27:37.816 A:middle
+itself or the framework, the
+
+00:27:37.816 --> 00:27:40.176 A:middle
+framework itself will include
+
+00:27:40.316 --> 00:27:41.776 A:middle
+additional frameworks.
+
+00:27:42.086 --> 00:27:43.866 A:middle
+That means we have to build
+
+00:27:43.866 --> 00:27:44.836 A:middle
+those modules too.
+
+00:27:45.616 --> 00:27:48.226 A:middle
+And we have to keep going
+
+00:27:48.226 --> 00:27:50.156 A:middle
+because those might also include
+
+00:27:50.156 --> 00:27:51.256 A:middle
+additional frameworks.
+
+00:27:52.346 --> 00:27:53.536 A:middle
+But we already can see there is
+
+00:27:53.536 --> 00:27:54.266 A:middle
+a benefit here.
+
+00:27:55.296 --> 00:27:56.676 A:middle
+Some of those imports might be
+
+00:27:56.676 --> 00:27:57.266 A:middle
+the same.
+
+00:27:57.706 --> 00:27:59.586 A:middle
+So we can always start reusing
+
+00:27:59.586 --> 00:28:00.256 A:middle
+that module.
+

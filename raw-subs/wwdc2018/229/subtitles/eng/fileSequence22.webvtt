@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.396 --> 00:22:00.546 A:middle
+collection, say by removing its
+
+00:22:00.546 --> 00:22:03.146 A:middle
+first element, and we go ahead
+
+00:22:03.146 --> 00:22:04.796 A:middle
+and print the element associated
+
+00:22:04.796 --> 00:22:05.576 A:middle
+with that index.
+
+00:22:06.206 --> 00:22:07.076 A:middle
+Well when we do this,
+
+00:22:07.076 --> 00:22:09.526 A:middle
+unfortunately this will produce
+
+00:22:09.526 --> 00:22:10.366 A:middle
+a fatal error.
+
+00:22:11.796 --> 00:22:13.226 A:middle
+The index is no longer valid.
+
+00:22:13.326 --> 00:22:14.826 A:middle
+In fact, the index became
+
+00:22:14.826 --> 00:22:16.306 A:middle
+invalid the moment we mutated
+
+00:22:16.306 --> 00:22:16.946 A:middle
+our collection.
+
+00:22:17.466 --> 00:22:20.676 A:middle
+A far safer approach would be to
+
+00:22:20.676 --> 00:22:22.586 A:middle
+mutate our collection first and
+
+00:22:22.586 --> 00:22:24.196 A:middle
+then calculate the index.
+
+00:22:24.196 --> 00:22:27.356 A:middle
+It's worth pointing out that
+
+00:22:27.356 --> 00:22:28.566 A:middle
+mutation always invalidates
+
+00:22:28.566 --> 00:22:29.006 A:middle
+indices.
+
+00:22:29.066 --> 00:22:30.116 A:middle
+This doesn't just apply to
+
+00:22:30.116 --> 00:22:30.496 A:middle
+arrays.
+
+00:22:31.146 --> 00:22:32.206 A:middle
+Let's take a look at how this
+
+00:22:32.376 --> 00:22:33.266 A:middle
+problem could manifest with
+
+00:22:33.266 --> 00:22:33.866 A:middle
+dictionaries.
+
+00:22:35.036 --> 00:22:35.816 A:middle
+Let's suppose that we have a
+
+00:22:35.816 --> 00:22:36.936 A:middle
+dictionary showing a few of a
+
+00:22:36.936 --> 00:22:37.966 A:middle
+bear's favorite things.
+
+00:22:39.096 --> 00:22:40.056 A:middle
+We'll grab the index of our
+
+00:22:40.056 --> 00:22:41.586 A:middle
+bear's favorite food and print
+
+00:22:41.586 --> 00:22:43.316 A:middle
+it out, confirming that, indeed,
+
+00:22:43.316 --> 00:22:43.706 A:middle
+it's salmon.
+
+00:22:45.036 --> 00:22:46.486 A:middle
+Next, we'll add a couple more
+
+00:22:46.486 --> 00:22:47.466 A:middle
+favorite things that this bear
+
+00:22:47.466 --> 00:22:49.226 A:middle
+has, and then we'll make sure
+
+00:22:49.226 --> 00:22:50.106 A:middle
+that our favorite food is still
+
+00:22:50.106 --> 00:22:50.376 A:middle
+salmon.
+
+00:22:50.376 --> 00:22:52.446 A:middle
+And we'll see that, wait a
+
+00:22:52.446 --> 00:22:53.836 A:middle
+minute, our favorite good isn't
+
+00:22:53.886 --> 00:22:55.136 A:middle
+hibernation, it's salmon.
+
+00:22:55.436 --> 00:22:58.076 A:middle
+And just like arrays, we
+
+00:22:58.076 --> 00:22:59.576 A:middle
+invalidated our index the moment
+
+00:22:59.576 --> 00:23:00.646 A:middle
+we mutated the dictionary.
+

@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:55:00.256 --> 00:55:02.306 A:middle
+which is multipath connections,
+
+00:55:02.336 --> 00:55:03.386 A:middle
+Multipath TCP.
+
+00:55:04.236 --> 00:55:05.956 A:middle
+So if you were able to on your
+
+00:55:05.956 --> 00:55:07.636 A:middle
+server enable Multipath TCP and
+
+00:55:07.636 --> 00:55:10.446 A:middle
+you can enable it on the client
+
+00:55:10.446 --> 00:55:11.236 A:middle
+side with the
+
+00:55:11.236 --> 00:55:13.136 A:middle
+multipathServiceType in your
+
+00:55:13.136 --> 00:55:15.166 A:middle
+parameters, then your connection
+
+00:55:15.166 --> 00:55:16.686 A:middle
+will automatically migrate
+
+00:55:16.896 --> 00:55:18.226 A:middle
+between networks as they come
+
+00:55:18.226 --> 00:55:18.606 A:middle
+and go.
+
+00:55:19.096 --> 00:55:20.606 A:middle
+It's a great seamless experience
+
+00:55:20.606 --> 00:55:22.556 A:middle
+that doesn't require any work in
+
+00:55:22.556 --> 00:55:23.676 A:middle
+your application to handle.
+
+00:55:24.616 --> 00:55:26.106 A:middle
+And this is also the same
+
+00:55:26.106 --> 00:55:27.866 A:middle
+service type that's available in
+
+00:55:27.866 --> 00:55:28.676 A:middle
+URLSession.
+
+00:55:29.296 --> 00:55:31.716 A:middle
+A couple points I want to
+
+00:55:31.716 --> 00:55:33.926 A:middle
+highlight here, specific to
+
+00:55:33.926 --> 00:55:34.646 A:middle
+Network.framework.
+
+00:55:35.686 --> 00:55:37.196 A:middle
+If you restrict the interface
+
+00:55:37.196 --> 00:55:38.676 A:middle
+types that you allow to be used
+
+00:55:39.266 --> 00:55:41.296 A:middle
+with your NWParameters that will
+
+00:55:41.296 --> 00:55:43.766 A:middle
+apply to MPTCP, so you can still
+
+00:55:43.896 --> 00:55:45.696 A:middle
+not want to use the cellular
+
+00:55:45.696 --> 00:55:46.726 A:middle
+network with a multipath
+
+00:55:46.756 --> 00:55:48.776 A:middle
+connection, and instead we'll
+
+00:55:48.776 --> 00:55:50.356 A:middle
+just seamlessly migrate between
+
+00:55:50.356 --> 00:55:51.596 A:middle
+different WiFi networks as they
+
+00:55:51.596 --> 00:55:52.326 A:middle
+become available.
+
+00:55:54.496 --> 00:55:56.586 A:middle
+Also, the connection viability
+
+00:55:56.586 --> 00:55:57.986 A:middle
+handler that I mentioned before
+
+00:55:58.496 --> 00:55:59.346 A:middle
+is slightly different from
+
+00:55:59.346 --> 00:56:01.756 A:middle
+Multipath TCP because whenever
+

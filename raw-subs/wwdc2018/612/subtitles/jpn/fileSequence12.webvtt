@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.051 --> 00:12:02.122 align:start position:30% line:-2
+実際に起こり得る問題を
+ご覧いただきました
+
+00:12:02.389 --> 00:12:06.693 align:start position:29% line:-2
+では どのように
+修正すればよいのでしょう
+
+00:12:07.861 --> 00:12:11.765 align:start position:32% line:-2
+フレームレートを
+調整するのが一番です
+
+00:12:12.166 --> 00:12:17.004 align:start position:27% line:-2
+フレーム持続時間の最小値を
+APIを使って―
+
+00:12:17.938 --> 00:12:20.841 align:start position:32% line:-2
+レンダリング時間より
+長く設定します
+
+00:12:21.241 --> 00:12:24.444 align:start position:14% line:-2
+例えばMTLDrawable
+addPresentedHandlerは
+
+00:12:24.545 --> 00:12:27.648 align:start position:27% line:-2
+drawableが現れると
+コールバックし
+
+00:12:27.748 --> 00:12:31.185 align:start position:29% line:-2
+マイクロスタッタリングを
+認識できます
+
+00:12:31.852 --> 00:12:35.722 align:start position:34% line:-2
+他の２つのAPIは
+実際に問題を解決し
+
+00:12:35.823 --> 00:12:40.194 align:start position:32% line:-2
+フレームペーシングを
+コントロールします
+
+00:12:40.394 --> 00:12:44.531 align:start position:29% line:-2
+今回は下の２つのAPIを
+利用します
+
+00:12:45.132 --> 00:12:51.171 align:start position:27% line:-2
+フレーム持続時間の最小値を
+レンダリング時間より―
+
+00:12:51.839 --> 00:12:54.508 align:start position:36% line:-2
+長く設定すると
+どうなるでしょう
+
+00:12:55.976 --> 00:13:01.014 align:start position:27% line:-2
+レンダリングを始めた時から
+フレーム持続時間は
+

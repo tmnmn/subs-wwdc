@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:59.856 --> 00:24:01.936 A:middle
+safe to perform pause-dependent
+
+00:24:01.966 --> 00:24:05.246 A:middle
+work, so a second command buffer
+
+00:24:05.556 --> 00:24:08.206 A:middle
+will signal lockout event to let
+
+00:24:08.356 --> 00:24:10.166 A:middle
+pause-dependent work know that
+
+00:24:10.166 --> 00:24:11.546 A:middle
+it can start executing.
+
+00:24:12.366 --> 00:24:14.346 A:middle
+After encoding and submitting
+
+00:24:14.416 --> 00:24:15.776 A:middle
+those two command buffers,
+
+00:24:16.386 --> 00:24:18.436 A:middle
+rendering thread can continue as
+
+00:24:18.436 --> 00:24:20.566 A:middle
+usual, with waiting for pauses,
+
+00:24:20.816 --> 00:24:21.826 A:middle
+and later encoding
+
+00:24:21.916 --> 00:24:26.076 A:middle
+pause-dependent work.
+
+00:24:26.296 --> 00:24:28.296 A:middle
+So now we have a mechanism to
+
+00:24:28.296 --> 00:24:30.306 A:middle
+synchronize different workloads
+
+00:24:30.306 --> 00:24:31.146 A:middle
+between different GPUs.
+
+00:24:31.146 --> 00:24:35.156 A:middle
+But as you can see, our
+
+00:24:35.156 --> 00:24:37.426 A:middle
+secondary GPU is still a little
+
+00:24:37.426 --> 00:24:38.176 A:middle
+bit idle.
+
+00:24:38.226 --> 00:24:40.506 A:middle
+That's because in this example
+
+00:24:40.926 --> 00:24:43.886 A:middle
+we decided to push through it,
+
+00:24:44.316 --> 00:24:45.846 A:middle
+pause dependent workloads that
+
+00:24:45.846 --> 00:24:47.396 A:middle
+have dependency with pause
+
+00:24:47.396 --> 00:24:48.856 A:middle
+dependent ones.
+
+00:24:49.346 --> 00:24:49.786 A:middle
+Excuse me.
+
+00:24:50.796 --> 00:24:52.156 A:middle
+But of course there are types of
+
+00:24:52.206 --> 00:24:53.396 A:middle
+workloads that have no
+
+00:24:53.396 --> 00:24:55.086 A:middle
+dependencies, and they can
+
+00:24:55.216 --> 00:24:57.496 A:middle
+happen at lower frequencies, the
+
+00:24:57.496 --> 00:24:58.806 A:middle
+frequency of the headset.
+
+00:24:59.576 --> 00:25:01.076 A:middle
+One example of such workloads
+

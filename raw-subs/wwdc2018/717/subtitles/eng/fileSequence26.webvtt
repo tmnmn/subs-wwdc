@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.876 --> 00:26:02.156 A:middle
+Now, Vision is going to do all
+
+00:26:02.156 --> 00:26:03.766 A:middle
+the work by taking these
+
+00:26:03.766 --> 00:26:04.646 A:middle
+[inaudible] buffers as they come
+
+00:26:04.646 --> 00:26:05.976 A:middle
+from the camera, converts it
+
+00:26:05.976 --> 00:26:07.466 A:middle
+into RGB and scales it down and
+
+00:26:07.466 --> 00:26:08.606 A:middle
+you don't have to write any code
+
+00:26:08.606 --> 00:26:09.836 A:middle
+for that.
+
+00:26:10.326 --> 00:26:11.506 A:middle
+That makes it much easier to
+
+00:26:11.576 --> 00:26:13.026 A:middle
+drive these Core ML models for
+
+00:26:13.026 --> 00:26:14.436 A:middle
+image requests through Vision.
+
+00:26:15.056 --> 00:26:18.146 A:middle
+So, that was image
+
+00:26:18.146 --> 00:26:19.106 A:middle
+classification.
+
+00:26:19.346 --> 00:26:20.996 A:middle
+Next, we talk about object
+
+00:26:20.996 --> 00:26:21.546 A:middle
+recognition.
+
+00:26:22.186 --> 00:26:25.406 A:middle
+Now, a little warning.
+
+00:26:25.406 --> 00:26:26.726 A:middle
+In this demo, actually a live
+
+00:26:26.726 --> 00:26:27.876 A:middle
+croissant might actually get
+
+00:26:27.876 --> 00:26:28.506 A:middle
+hurt on stage.
+
+00:26:28.506 --> 00:26:29.796 A:middle
+So, for the squeamish ones,
+
+00:26:29.796 --> 00:26:32.466 A:middle
+please look away.
+
+00:26:34.726 --> 00:26:36.966 A:middle
+So, what we're using for our
+
+00:26:36.966 --> 00:26:38.826 A:middle
+object recognition is a model
+
+00:26:38.826 --> 00:26:40.926 A:middle
+that is based on this YOLO
+
+00:26:40.926 --> 00:26:42.676 A:middle
+technique, You Only Look Once.
+
+00:26:43.096 --> 00:26:44.786 A:middle
+That is a pretty fast-running
+
+00:26:44.786 --> 00:26:46.646 A:middle
+model that allows us to get the
+
+00:26:46.646 --> 00:26:49.326 A:middle
+bounding boxes off objects and a
+
+00:26:49.326 --> 00:26:50.856 A:middle
+label for that.
+
+00:26:50.906 --> 00:26:52.346 A:middle
+And it finds multiple of them in
+
+00:26:52.346 --> 00:26:52.676 A:middle
+the screen.
+
+00:26:52.676 --> 00:26:53.906 A:middle
+As you see in the screenshots.
+
+00:26:56.256 --> 00:26:59.626 A:middle
+The advantage of those is that I
+
+00:26:59.626 --> 00:27:00.726 A:middle
+get actually like where they
+

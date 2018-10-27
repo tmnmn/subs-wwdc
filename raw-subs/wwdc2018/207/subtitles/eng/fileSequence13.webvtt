@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:59.716 --> 00:13:00.636 A:middle
+And, as you see, I made a
+
+00:13:00.636 --> 00:13:01.206 A:middle
+comment there.
+
+00:13:01.206 --> 00:13:02.016 A:middle
+No inline.
+
+00:13:02.136 --> 00:13:03.876 A:middle
+That is also part of the default
+
+00:13:03.916 --> 00:13:04.526 A:middle
+behavior.
+
+00:13:04.776 --> 00:13:06.086 A:middle
+Once you set it this way, you're
+
+00:13:06.086 --> 00:13:08.496 A:middle
+also saying no inline scripting.
+
+00:13:08.726 --> 00:13:10.726 A:middle
+Only load scripts from files.
+
+00:13:11.276 --> 00:13:12.606 A:middle
+That's why I keep thinking of it
+
+00:13:12.606 --> 00:13:14.116 A:middle
+as an architecture policy
+
+00:13:14.366 --> 00:13:15.976 A:middle
+because you're separating logic
+
+00:13:15.976 --> 00:13:17.786 A:middle
+into files, separating from
+
+00:13:17.786 --> 00:13:21.246 A:middle
+markup, and separating from
+
+00:13:21.316 --> 00:13:23.516 A:middle
+styling, which are also in
+
+00:13:23.516 --> 00:13:23.946 A:middle
+files.
+
+00:13:24.166 --> 00:13:25.046 A:middle
+CSS files.
+
+00:13:26.066 --> 00:13:29.636 A:middle
+OK. Now, you wanted to load that
+
+00:13:29.636 --> 00:13:31.686 A:middle
+script from cdn.example and if
+
+00:13:31.686 --> 00:13:33.176 A:middle
+you just go with a default
+
+00:13:33.176 --> 00:13:35.186 A:middle
+source self, then that's going
+
+00:13:35.186 --> 00:13:35.976 A:middle
+to be locked down.
+
+00:13:35.976 --> 00:13:37.116 A:middle
+Right? You can't do remote
+
+00:13:37.116 --> 00:13:37.776 A:middle
+script loading.
+
+00:13:38.126 --> 00:13:39.776 A:middle
+Well, there's a whitelisting
+
+00:13:39.776 --> 00:13:41.036 A:middle
+mechanism in the content
+
+00:13:41.036 --> 00:13:41.856 A:middle
+security policy.
+
+00:13:42.396 --> 00:13:44.356 A:middle
+You just say script source, hey,
+
+00:13:44.566 --> 00:13:47.256 A:middle
+let's open up for cdn.example
+
+00:13:47.366 --> 00:13:48.566 A:middle
+because I actually want to load
+
+00:13:48.566 --> 00:13:49.246 A:middle
+script from there.
+
+00:13:49.786 --> 00:13:51.066 A:middle
+Now you can load from your own
+
+00:13:51.066 --> 00:13:53.716 A:middle
+server and cdn.example, but
+
+00:13:53.716 --> 00:13:54.466 A:middle
+nowhere else.
+
+00:13:55.866 --> 00:13:57.206 A:middle
+Well, you might want to have
+
+00:13:57.206 --> 00:14:00.326 A:middle
+that social media plugin, little
+

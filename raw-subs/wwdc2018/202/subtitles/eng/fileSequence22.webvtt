@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:58.226 --> 00:22:00.096 A:middle
+to UIKit are all automatically
+
+00:22:00.096 --> 00:22:01.706 A:middle
+migratable so there's no
+
+00:22:01.706 --> 00:22:02.546 A:middle
+additional work that you should
+
+00:22:02.546 --> 00:22:03.966 A:middle
+have to do in order to get these
+
+00:22:03.966 --> 00:22:04.536 A:middle
+updates.
+
+00:22:05.746 --> 00:22:07.536 A:middle
+Now, these updates fall into
+
+00:22:07.536 --> 00:22:08.766 A:middle
+really three categories that
+
+00:22:08.766 --> 00:22:09.736 A:middle
+we'll talk about this morning,
+
+00:22:10.016 --> 00:22:11.756 A:middle
+although there's actually a ton
+
+00:22:11.756 --> 00:22:13.856 A:middle
+of improvements and consistency
+
+00:22:13.856 --> 00:22:15.076 A:middle
+improvements that you'll find as
+
+00:22:15.076 --> 00:22:15.816 A:middle
+you look at the SDK.
+
+00:22:16.566 --> 00:22:17.326 A:middle
+But today we'll talk about
+
+00:22:17.326 --> 00:22:19.126 A:middle
+nesting of types, constants, and
+
+00:22:19.166 --> 00:22:19.586 A:middle
+functions.
+
+00:22:19.656 --> 00:22:22.176 A:middle
+So let's first look at nesting
+
+00:22:22.176 --> 00:22:22.636 A:middle
+types.
+
+00:22:23.516 --> 00:22:25.476 A:middle
+Now in Swift 4, there were a
+
+00:22:25.476 --> 00:22:26.776 A:middle
+number of types that were in the
+
+00:22:26.776 --> 00:22:28.766 A:middle
+global name space, things like
+
+00:22:28.806 --> 00:22:30.006 A:middle
+UI Application State.
+
+00:22:30.666 --> 00:22:32.916 A:middle
+For types like this that have a
+
+00:22:32.966 --> 00:22:35.096 A:middle
+really strong use along with
+
+00:22:35.096 --> 00:22:37.276 A:middle
+another class, we've now nested
+
+00:22:37.276 --> 00:22:38.016 A:middle
+them within this class.
+
+00:22:38.796 --> 00:22:39.746 A:middle
+So we looked at all the
+
+00:22:39.746 --> 00:22:42.156 A:middle
+enumerations and other global
+
+00:22:42.206 --> 00:22:43.796 A:middle
+types of this sort and now have
+
+00:22:43.796 --> 00:22:45.476 A:middle
+moved them to be child types of
+
+00:22:45.646 --> 00:22:46.576 A:middle
+the relevant class.
+
+00:22:46.906 --> 00:22:47.576 A:middle
+So this becomes
+
+00:22:47.576 --> 00:22:49.326 A:middle
+UIApplication.State.
+
+00:22:49.796 --> 00:22:51.536 A:middle
+This sends a much stronger
+
+00:22:51.536 --> 00:22:52.786 A:middle
+message about the relationship
+
+00:22:52.786 --> 00:22:54.216 A:middle
+between these two and makes them
+
+00:22:54.216 --> 00:22:55.276 A:middle
+easier to find as well.
+
+00:22:56.046 --> 00:22:57.546 A:middle
+Now in comes cases this can also
+
+00:22:57.546 --> 00:23:00.286 A:middle
+help improve understandability
+

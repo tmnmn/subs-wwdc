@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:57.786 --> 00:40:00.516 A:middle
+a fraud page that looks like
+
+00:40:00.516 --> 00:40:02.646 A:middle
+your page and asks the user to
+
+00:40:02.646 --> 00:40:04.736 A:middle
+please log in again, of course
+
+00:40:04.736 --> 00:40:05.906 A:middle
+stealing the credentials and
+
+00:40:05.906 --> 00:40:07.036 A:middle
+sending them off to the
+
+00:40:07.036 --> 00:40:07.496 A:middle
+attacker.
+
+00:40:08.436 --> 00:40:09.416 A:middle
+This is one of the things that
+
+00:40:09.416 --> 00:40:10.756 A:middle
+can happen if you leave the
+
+00:40:10.756 --> 00:40:12.126 A:middle
+control up to the opener.
+
+00:40:13.206 --> 00:40:14.286 A:middle
+Instead, you deploy the
+
+00:40:14.286 --> 00:40:16.836 A:middle
+cross-origin window policy, you
+
+00:40:16.836 --> 00:40:19.466 A:middle
+deny this thing, and there will
+
+00:40:19.466 --> 00:40:21.556 A:middle
+be no handler for the attacker
+
+00:40:21.556 --> 00:40:23.846 A:middle
+page to navigate your window
+
+00:40:23.846 --> 00:40:24.126 A:middle
+with.
+
+00:40:24.666 --> 00:40:27.386 A:middle
+So, that's the final defense in
+
+00:40:27.386 --> 00:40:27.756 A:middle
+attack.
+
+00:40:28.496 --> 00:40:31.046 A:middle
+It's time to take action.
+
+00:40:31.366 --> 00:40:32.656 A:middle
+We're going to review what we've
+
+00:40:32.656 --> 00:40:34.516 A:middle
+been looking at here, just so
+
+00:40:34.516 --> 00:40:35.656 A:middle
+that you know what you need to
+
+00:40:35.656 --> 00:40:37.956 A:middle
+go back to your office or your
+
+00:40:37.956 --> 00:40:39.456 A:middle
+home and start working on.
+
+00:40:40.196 --> 00:40:42.926 A:middle
+First, we have to secure these
+
+00:40:42.926 --> 00:40:43.746 A:middle
+transports.
+
+00:40:44.066 --> 00:40:45.916 A:middle
+Move to HTTPS and WSS.
+
+00:40:47.206 --> 00:40:49.126 A:middle
+You should have secure cookies.
+
+00:40:49.546 --> 00:40:51.056 A:middle
+You should also mark them
+
+00:40:51.056 --> 00:40:51.916 A:middle
+HttpOnly.
+
+00:40:52.296 --> 00:40:53.966 A:middle
+If you take the Swede's advice,
+
+00:40:54.246 --> 00:40:55.486 A:middle
+just make all of your cookies
+
+00:40:55.486 --> 00:40:56.716 A:middle
+HttpOnly and secure.
+
+00:40:57.806 --> 00:40:59.706 A:middle
+And you need to migrate off of
+
+00:40:59.706 --> 00:41:01.636 A:middle
+UIWebView to WKWebview.
+

@@ -1,0 +1,64 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:58.665 --> 00:10:00.667 align:start position:38% line:-1
+訓練は十分です
+
+00:10:00.767 --> 00:10:04.605 align:start position:25% line:-2
+計算した訓練済みパラメータを
+推論に使えます
+
+00:10:04.738 --> 00:10:08.976 align:start position:21% line:-1
+次は MPSフレームワークを使い
+
+00:10:09.076 --> 00:10:11.678 align:start position:29% line:-2
+ニューラルネットワークを
+訓練します
+
+00:10:11.879 --> 00:10:15.849 align:start position:27% line:-2
+グラフの抽象化を利用すれば
+ネットワークは
+
+00:10:15.949 --> 00:10:19.520 align:start position:32% line:-2
+MPSでは
+グラフとして描けます
+
+00:10:20.821 --> 00:10:22.890 align:start position:29% line:-1
+まず 訓練グラフを作成し
+
+00:10:24.391 --> 00:10:29.229 align:start position:23% line:-2
+入力データを準備し 重みを指定
+グラフを実行します
+
+00:10:29.329 --> 00:10:35.002 align:start position:23% line:-2
+フォワードパス 損失計算
+勾配のパス 重み更新を行います
+
+00:10:35.802 --> 00:10:41.074 align:start position:30% line:-2
+訓練は反復プロセスで
+多数の反復が必要ですが
+
+00:10:41.174 --> 00:10:43.977 align:start position:34% line:-2
+やめる時期を
+知る必要もあります
+
+00:10:44.077 --> 00:10:47.381 align:start position:34% line:-2
+では 各トピックの
+詳細を見ましょう
+
+00:10:47.681 --> 00:10:50.717 align:start position:29% line:-1
+訓練グラフの作成からです
+
+00:10:52.619 --> 00:10:54.054 align:start position:38% line:-1
+繰り返しますが
+
+00:10:54.154 --> 00:10:56.957 align:start position:20% line:-2
+MPSでは ニューラルネットワーク
+グラフAPIを使い
+
+00:10:57.057 --> 00:10:58.625 align:start position:30% line:-1
+ネットワークを描けます
+
+00:10:59.059 --> 00:11:01.328 align:start position:32% line:-1
+これは　手入力した―
+

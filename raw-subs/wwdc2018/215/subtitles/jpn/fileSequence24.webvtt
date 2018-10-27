@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:23:56.637 --> 00:24:01.208 align:start position:30% line:-2
+学習データが
+このように表示されます
+
+00:24:01.942 --> 00:24:06.513 align:start position:27% line:-1
+生徒がテストにかけた時間を
+
+00:24:06.613 --> 00:24:09.149 align:start position:29% line:-1
+記録するのが良さそうです
+
+00:24:09.383 --> 00:24:10.651 align:start position:41% line:-1
+そのため―
+
+00:24:10.751 --> 00:24:16.323 align:start position:21% line:-2
+メソッドのstartとstopを
+コールしましょう
+
+00:24:17.157 --> 00:24:22.496 align:start position:29% line:-2
+更に テストの点数を
+表示できるといいですよね
+
+00:24:22.996 --> 00:24:26.767 align:start position:34% line:-2
+ただ よく考えると
+生徒の得点は
+
+00:24:26.867 --> 00:24:31.338 align:start position:34% line:-2
+テストで恐らく
+最も重要な情報です
+
+00:24:31.438 --> 00:24:35.876 align:start position:29% line:-2
+スクールワークの画面上で
+目立たせましょう
+
+00:24:36.109 --> 00:24:40.948 align:start position:20% line:-2
+そのためには
+CLSScoreItemを作成して
+
+00:24:41.048 --> 00:24:44.351 align:start position:14% line:-2
+primaryActivityItemに
+設定します
+
+00:24:44.451 --> 00:24:47.588 align:start position:27% line:-1
+すると 画面に反映されます
+
+00:24:48.689 --> 00:24:54.795 align:start position:27% line:-2
+加えて それぞれの回答の
+正誤も表示したいところです
+
+00:24:55.462 --> 00:25:01.068 align:start position:18% line:-2
+ですから 今度は
+CLSBinaryItemを作成して
+

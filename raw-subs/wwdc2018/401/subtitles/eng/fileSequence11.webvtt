@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:59.566 --> 00:11:01.446 A:middle
+compilation that means all the
+
+00:11:01.446 --> 00:11:02.906 A:middle
+files within your target are
+
+00:11:02.906 --> 00:11:04.226 A:middle
+always built together.
+
+00:11:04.386 --> 00:11:05.836 A:middle
+This is to enable maximum
+
+00:11:05.836 --> 00:11:07.326 A:middle
+opportunities for optimization.
+
+00:11:07.326 --> 00:11:08.676 A:middle
+It's not the amount of
+
+00:11:08.676 --> 00:11:09.756 A:middle
+optimization done but the
+
+00:11:09.756 --> 00:11:11.366 A:middle
+opportunities for optimization.
+
+00:11:12.166 --> 00:11:14.146 A:middle
+And for Debug builds the default
+
+00:11:14.146 --> 00:11:15.176 A:middle
+is incremental.
+
+00:11:15.386 --> 00:11:16.486 A:middle
+That means not all the files are
+
+00:11:16.486 --> 00:11:18.256 A:middle
+all built, re-built always all
+
+00:11:18.256 --> 00:11:18.626 A:middle
+together.
+
+00:11:19.616 --> 00:11:20.506 A:middle
+So this is a tradeoff in
+
+00:11:20.506 --> 00:11:22.536 A:middle
+performance for build times.
+
+00:11:23.516 --> 00:11:24.826 A:middle
+Optimization level for Debug
+
+00:11:24.826 --> 00:11:25.746 A:middle
+builds continues to be no
+
+00:11:25.746 --> 00:11:26.966 A:middle
+optimization by default.
+
+00:11:26.966 --> 00:11:27.946 A:middle
+This is for faster builds and
+
+00:11:27.946 --> 00:11:29.806 A:middle
+better Debug information and the
+
+00:11:29.806 --> 00:11:31.816 A:middle
+release builds are optimized for
+
+00:11:31.816 --> 00:11:32.096 A:middle
+speed.
+
+00:11:32.636 --> 00:11:33.186 A:middle
+We'll get back to the
+
+00:11:33.186 --> 00:11:35.076 A:middle
+optimization level in a few
+
+00:11:35.076 --> 00:11:35.306 A:middle
+minutes.
+
+00:11:38.436 --> 00:11:41.886 A:middle
+All right so this separation of
+
+00:11:41.886 --> 00:11:42.696 A:middle
+compilation mode and
+
+00:11:42.696 --> 00:11:45.296 A:middle
+optimization level nicely
+
+00:11:45.356 --> 00:11:46.516 A:middle
+highlights and interesting
+
+00:11:46.516 --> 00:11:48.096 A:middle
+stopgap measure that various
+
+00:11:48.096 --> 00:11:50.176 A:middle
+folds discovered that when they
+
+00:11:50.176 --> 00:11:51.126 A:middle
+combined whole module
+
+00:11:51.126 --> 00:11:53.946 A:middle
+compilation with no optimization
+
+00:11:53.946 --> 00:11:54.876 A:middle
+that they sometimes would get
+
+00:11:55.036 --> 00:11:56.026 A:middle
+faster Debug builds.
+
+00:11:56.966 --> 00:11:58.786 A:middle
+And this is because that
+
+00:11:58.786 --> 00:12:00.756 A:middle
+combination reduces a lot of
+

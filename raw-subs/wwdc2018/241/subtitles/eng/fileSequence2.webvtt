@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.316 --> 00:02:00.356 A:middle
+from a view that hosts
+
+00:02:00.356 --> 00:02:01.776 A:middle
+interactions that are logically
+
+00:02:01.776 --> 00:02:03.876 A:middle
+associated with it.
+
+00:02:03.876 --> 00:02:04.756 A:middle
+The solution is that the
+
+00:02:04.756 --> 00:02:06.276 A:middle
+Accessibility Drag and Drop
+
+00:02:06.276 --> 00:02:08.086 A:middle
+API's allow you to specify
+
+00:02:08.086 --> 00:02:09.925 A:middle
+logical drags and drops to the
+
+00:02:09.925 --> 00:02:11.966 A:middle
+system in a way that makes them
+
+00:02:11.966 --> 00:02:12.976 A:middle
+usable with assistive
+
+00:02:12.976 --> 00:02:13.756 A:middle
+technologies.
+
+00:02:14.056 --> 00:02:15.846 A:middle
+Let's get into those API's now.
+
+00:02:16.356 --> 00:02:19.006 A:middle
+The UIAccessibilityDragging
+
+00:02:19.006 --> 00:02:20.256 A:middle
+informal protocol defines two
+
+00:02:20.256 --> 00:02:21.306 A:middle
+properties that you use to
+
+00:02:21.306 --> 00:02:22.526 A:middle
+express drags and drops to
+
+00:02:22.526 --> 00:02:23.216 A:middle
+Accessibility.
+
+00:02:23.316 --> 00:02:25.606 A:middle
+It deals with the concept of
+
+00:02:25.606 --> 00:02:27.486 A:middle
+Drag Sources and Drop Points.
+
+00:02:28.576 --> 00:02:30.306 A:middle
+Drag Sources describe where to
+
+00:02:30.306 --> 00:02:31.826 A:middle
+start drags that are associated
+
+00:02:31.826 --> 00:02:33.746 A:middle
+with an element and Drop Points
+
+00:02:33.746 --> 00:02:35.496 A:middle
+describe places associated with
+
+00:02:35.496 --> 00:02:36.786 A:middle
+an element where items can be
+
+00:02:36.786 --> 00:02:37.306 A:middle
+dropped.
+
+00:02:37.916 --> 00:02:39.076 A:middle
+To use these properties, you can
+
+00:02:39.076 --> 00:02:40.616 A:middle
+assign to them or override the
+
+00:02:40.616 --> 00:02:41.686 A:middle
+getter to provide data on
+
+00:02:41.686 --> 00:02:42.176 A:middle
+demand.
+
+00:02:42.996 --> 00:02:45.306 A:middle
+These drags and drops are
+
+00:02:45.306 --> 00:02:46.756 A:middle
+exposed to users of assistive
+
+00:02:46.756 --> 00:02:48.246 A:middle
+technologies in much the same
+
+00:02:48.246 --> 00:02:49.836 A:middle
+way as Accessibility custom
+
+00:02:49.836 --> 00:02:50.406 A:middle
+actions are.
+
+00:02:51.086 --> 00:02:55.756 A:middle
+So, that's the API, there.
+
+00:02:55.886 --> 00:02:57.376 A:middle
+Often, drags and drops are
+
+00:02:57.376 --> 00:02:58.706 A:middle
+exposed automatically to
+
+00:02:58.706 --> 00:03:00.176 A:middle
+Accessibility by the system.
+

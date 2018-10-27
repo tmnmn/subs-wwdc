@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.316 --> 00:04:00.286 A:middle
+So let's dive into
+
+00:04:00.286 --> 00:04:01.526 A:middle
+SKProductDiscount.
+
+00:04:03.636 --> 00:04:05.266 A:middle
+SKProductDiscount reflects the
+
+00:04:05.266 --> 00:04:06.236 A:middle
+data you've set up about the
+
+00:04:06.236 --> 00:04:07.946 A:middle
+introductory price in App Store
+
+00:04:07.946 --> 00:04:08.216 A:middle
+Connect.
+
+00:04:08.216 --> 00:04:10.756 A:middle
+It has a price and a price
+
+00:04:10.756 --> 00:04:12.396 A:middle
+locale property and these behave
+
+00:04:12.396 --> 00:04:13.466 A:middle
+the same as the properties with
+
+00:04:13.466 --> 00:04:14.436 A:middle
+the same names you're familiar
+
+00:04:14.436 --> 00:04:15.306 A:middle
+with on SKProduct.
+
+00:04:15.306 --> 00:04:19.315 A:middle
+Also as a subscription period
+
+00:04:19.315 --> 00:04:21.146 A:middle
+property, this is a new class
+
+00:04:21.146 --> 00:04:21.546 A:middle
+called
+
+00:04:21.546 --> 00:04:24.276 A:middle
+SKProductSubscriptionPeriod and
+
+00:04:24.276 --> 00:04:25.456 A:middle
+this reflects all the data about
+
+00:04:25.456 --> 00:04:26.976 A:middle
+the billing and renewal terms of
+
+00:04:26.976 --> 00:04:27.976 A:middle
+the introductory price.
+
+00:04:28.516 --> 00:04:30.466 A:middle
+It achieves this with two
+
+00:04:30.466 --> 00:04:32.496 A:middle
+properties of its own, the first
+
+00:04:32.496 --> 00:04:33.826 A:middle
+is unit which is an enum that
+
+00:04:33.826 --> 00:04:35.806 A:middle
+can be day, week, month or year.
+
+00:04:37.196 --> 00:04:38.866 A:middle
+The next is number of units.
+
+00:04:39.386 --> 00:04:42.606 A:middle
+So for example if you have a
+
+00:04:42.606 --> 00:04:44.286 A:middle
+unit of month and a number of
+
+00:04:44.286 --> 00:04:45.976 A:middle
+units of 2 that means that the
+
+00:04:45.976 --> 00:04:47.306 A:middle
+introductory price renews every
+
+00:04:47.306 --> 00:04:47.836 A:middle
+2 months.
+
+00:04:48.346 --> 00:04:51.866 A:middle
+And back on SKProductDiscount
+
+00:04:51.936 --> 00:04:53.296 A:middle
+there's also a numberOfPeriods
+
+00:04:53.296 --> 00:04:53.686 A:middle
+property.
+
+00:04:54.676 --> 00:04:56.016 A:middle
+So this reflects the number of
+
+00:04:56.016 --> 00:04:57.166 A:middle
+those subscription periods the
+
+00:04:57.166 --> 00:04:58.666 A:middle
+introductory price is valid for.
+
+00:04:59.706 --> 00:05:00.906 A:middle
+Say if you have that 2-month
+

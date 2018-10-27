@@ -1,0 +1,56 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.986 --> 00:32:00.621 align:start position:38% line:-1
+訓練するために
+
+00:32:01.655 --> 00:32:06.760 align:start position:21% line:-2
+ネットワークで フォワードパスと
+損失計算を行います
+
+00:32:07.494 --> 00:32:12.399 align:start position:21% line:-2
+そして勾配のパスで 勾配を計算し
+重みを更新します
+
+00:32:12.499 --> 00:32:16.904 align:start position:34% line:-2
+これはCNN訓練の
+設定に似ています
+
+00:32:17.004 --> 00:32:19.706 align:start position:27% line:-1
+最後はもちろん重み更新です
+
+00:32:19.807 --> 00:32:23.977 align:start position:32% line:-2
+LSTMも重みがあり
+更新が必要です
+
+00:32:25.979 --> 00:32:30.484 align:start position:34% line:-2
+このネットワークを
+MPSで訓練します
+
+00:32:30.584 --> 00:32:35.823 align:start position:23% line:-2
+フレームワークを使った
+LSTM層の作り方を見ましょう
+
+00:32:36.490 --> 00:32:39.593 align:start position:27% line:-2
+まず LSTM層の記述子を
+作ります
+
+00:32:40.494 --> 00:32:46.200 align:start position:25% line:-2
+データソースプロバイダを使い
+記述子を初期化します
+
+00:32:46.300 --> 00:32:48.402 align:start position:30% line:-1
+初期化訓練パラメータは
+
+00:32:48.502 --> 00:32:51.672 align:start position:30% line:-2
+小さなランダム数字か
+チェックポイント値です
+
+00:32:52.306 --> 00:32:57.077 align:start position:32% line:-2
+訓練の記述子の設定は
+推論と全く同じです
+
+00:32:58.479 --> 00:33:04.952 align:start position:4% line:-2
+Layer Descriptor Setupの詳細は
+昨年のWWDCで説明されました
+

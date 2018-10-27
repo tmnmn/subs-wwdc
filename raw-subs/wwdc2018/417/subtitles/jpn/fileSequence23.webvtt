@@ -1,0 +1,65 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:57.010 --> 00:23:02.416 align:start position:27% line:-2
+別のメソッドを呼び出したと
+コンパイラが通知せず―
+
+00:23:02.516 --> 00:23:04.985 align:start position:34% line:-2
+つい忘れて
+テストが失敗します
+
+00:23:05.452 --> 00:23:07.287 align:start position:27% line:-1
+この方法は お勧めしません
+
+00:23:07.387 --> 00:23:11.291 align:start position:30% line:-2
+プロトコルで外部の型を
+モックするのがいい
+
+00:23:11.391 --> 00:23:13.160 align:start position:32% line:-1
+その方法を説明します
+
+00:23:14.461 --> 00:23:16.130 align:start position:38% line:-1
+元のコードです
+
+00:23:16.230 --> 00:23:19.333 align:start position:29% line:-2
+まず 新しいプロトコルを
+定義します
+
+00:23:20.234 --> 00:23:22.803 align:start position:21% line:-2
+LocationFetcherと
+名づけました
+
+00:23:22.903 --> 00:23:28.342 align:start position:12% line:-2
+CLLocationManagerから使う
+メソッドとプロパティを含みます
+
+00:23:28.942 --> 00:23:31.979 align:start position:27% line:-1
+メンバーの名前と型が一致し
+
+00:23:32.079 --> 00:23:37.284 align:start position:18% line:-2
+CLLocationManagerに
+extensionを作成できます
+
+00:23:37.384 --> 00:23:39.620 align:start position:32% line:-1
+要件を満たすからです
+
+00:23:41.255 --> 00:23:44.925 align:start position:12% line:-2
+locationManagerプロパティを
+locationFetcherと名を変え
+
+00:23:45.025 --> 00:23:48.128 align:start position:12% line:-2
+locationFetcherプロトコルに
+型を変えます
+
+00:23:49.596 --> 00:23:53.700 align:start position:23% line:-2
+イニシャライザに
+デフォルトのパラメータ値を与え
+
+00:23:53.801 --> 00:23:56.370 align:start position:27% line:-1
+既存コードの破壊を避けます
+
+00:23:58.372 --> 00:24:03.777 align:start position:5% line:-2
+checkCurrentLocationメソッドに
+１カ所 変更が必要です
+

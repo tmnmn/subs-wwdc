@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.416 --> 00:25:00.416 A:middle
+Where should we store
+
+00:25:00.416 --> 00:25:02.126 A:middle
+information about our users?
+
+00:25:03.006 --> 00:25:04.466 A:middle
+How do we retrieve this data?
+
+00:25:05.946 --> 00:25:08.006 A:middle
+Second is the user interface.
+
+00:25:08.936 --> 00:25:10.266 A:middle
+What does the leaderboard look
+
+00:25:10.266 --> 00:25:10.626 A:middle
+like?
+
+00:25:11.166 --> 00:25:13.056 A:middle
+What use should it have?
+
+00:25:13.666 --> 00:25:15.666 A:middle
+And finally, we'll talk about
+
+00:25:15.666 --> 00:25:17.936 A:middle
+the logic that's used for
+
+00:25:18.016 --> 00:25:19.786 A:middle
+managing [inaudible] for passing
+
+00:25:19.786 --> 00:25:21.936 A:middle
+data, and for doing other tasks
+
+00:25:22.116 --> 00:25:22.756 A:middle
+within our apps.
+
+00:25:23.826 --> 00:25:26.826 A:middle
+If we break down our app into
+
+00:25:26.826 --> 00:25:29.326 A:middle
+these three categories, then we
+
+00:25:29.326 --> 00:25:31.286 A:middle
+would actually end up following
+
+00:25:31.636 --> 00:25:33.526 A:middle
+a really popular architectural
+
+00:25:33.526 --> 00:25:35.636 A:middle
+pattern known as the
+
+00:25:35.636 --> 00:25:37.046 A:middle
+model-view-controller.
+
+00:25:38.716 --> 00:25:40.596 A:middle
+The model-view-controller
+
+00:25:41.456 --> 00:25:43.976 A:middle
+represents the data in the
+
+00:25:43.976 --> 00:25:44.696 A:middle
+model.
+
+00:25:45.746 --> 00:25:48.276 A:middle
+The UI is represented as the
+
+00:25:48.276 --> 00:25:48.856 A:middle
+view.
+
+00:25:49.566 --> 00:25:52.286 A:middle
+And the controller is the logic
+
+00:25:52.646 --> 00:25:55.056 A:middle
+that communicates with both the
+
+00:25:55.056 --> 00:25:56.606 A:middle
+model and the view.
+
+00:25:57.146 --> 00:26:00.346 A:middle
+This pattern helps us group
+

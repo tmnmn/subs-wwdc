@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:59.276 --> 00:10:00.746 A:middle
+To find Section 1, we will first
+
+00:10:00.746 --> 00:10:02.216 A:middle
+visit the App Context.
+
+00:10:03.136 --> 00:10:04.216 A:middle
+Then we'll visit the Book
+
+00:10:04.216 --> 00:10:04.806 A:middle
+Context.
+
+00:10:04.926 --> 00:10:05.986 A:middle
+We will find the [inaudible] of
+
+00:10:05.986 --> 00:10:07.536 A:middle
+the Book Context with Identifier
+
+00:10:07.596 --> 00:10:08.116 A:middle
+Chapter 2.
+
+00:10:08.116 --> 00:10:10.266 A:middle
+We will visit that one, and we
+
+00:10:10.266 --> 00:10:11.586 A:middle
+will do the same for Section 1.
+
+00:10:12.586 --> 00:10:14.196 A:middle
+Since Section 1 is the last
+
+00:10:14.266 --> 00:10:15.946 A:middle
+thing on our path, then this is
+
+00:10:15.946 --> 00:10:18.236 A:middle
+what the path is referring to.
+
+00:10:20.466 --> 00:10:22.416 A:middle
+So, we have a few ways to look
+
+00:10:22.416 --> 00:10:23.916 A:middle
+up contexts with our system.
+
+00:10:24.806 --> 00:10:26.396 A:middle
+One is using absolute context
+
+00:10:26.446 --> 00:10:27.786 A:middle
+paths, and to do that, you would
+
+00:10:27.786 --> 00:10:30.226 A:middle
+call the CLS Data Store Context
+
+00:10:30.266 --> 00:10:32.546 A:middle
+Matching Identifier Path Method.
+
+00:10:34.096 --> 00:10:36.036 A:middle
+The completion block of this
+
+00:10:36.116 --> 00:10:38.676 A:middle
+method will return all contexts
+
+00:10:38.676 --> 00:10:39.396 A:middle
+among the paths.
+
+00:10:39.836 --> 00:10:42.026 A:middle
+So, for example, it will be an
+
+00:10:42.026 --> 00:10:43.796 A:middle
+array of the Up Context, Book
+
+00:10:43.836 --> 00:10:45.736 A:middle
+Context, Chapter 2 Context, and
+
+00:10:45.736 --> 00:10:46.686 A:middle
+Section 1 Context.
+
+00:10:48.016 --> 00:10:49.546 A:middle
+If for some reason, Chapter 2 in
+
+00:10:49.546 --> 00:10:52.296 A:middle
+Section 1 was missing, then that
+
+00:10:52.526 --> 00:10:53.736 A:middle
+array in the completion block
+
+00:10:53.736 --> 00:10:55.956 A:middle
+will just continue to Up Context
+
+00:10:55.956 --> 00:10:56.776 A:middle
+and the Book Context.
+
+00:10:57.966 --> 00:10:59.376 A:middle
+And that gives you a chance to
+

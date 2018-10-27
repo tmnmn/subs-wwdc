@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:00.306 --> 00:37:01.826 A:middle
+If you try to allocate more,
+
+00:37:01.826 --> 00:37:02.806 A:middle
+you'll get an error back.
+
+00:37:03.976 --> 00:37:06.556 A:middle
+So, if it happens, you probably
+
+00:37:06.556 --> 00:37:07.526 A:middle
+need to release some of the
+
+00:37:07.526 --> 00:37:08.446 A:middle
+trackers that you're already
+
+00:37:08.446 --> 00:37:08.776 A:middle
+using.
+
+00:37:09.506 --> 00:37:12.576 A:middle
+How to do that?
+
+00:37:12.576 --> 00:37:14.426 A:middle
+First way is you can set a last
+
+00:37:14.426 --> 00:37:16.576 A:middle
+frame property under request and
+
+00:37:16.576 --> 00:37:18.366 A:middle
+feed that request into the
+
+00:37:18.366 --> 00:37:19.716 A:middle
+request handler for processing.
+
+00:37:20.186 --> 00:37:21.436 A:middle
+That way, the request handler
+
+00:37:21.436 --> 00:37:23.006 A:middle
+will know that the tracker
+
+00:37:23.006 --> 00:37:24.206 A:middle
+associated with this request
+
+00:37:24.206 --> 00:37:25.416 A:middle
+object should be released.
+
+00:37:26.286 --> 00:37:27.936 A:middle
+Another way is to release the
+
+00:37:27.936 --> 00:37:29.196 A:middle
+entire sequence request handler;
+
+00:37:29.466 --> 00:37:31.136 A:middle
+in this case, all the trackers
+
+00:37:31.136 --> 00:37:32.396 A:middle
+associated with that request
+
+00:37:32.396 --> 00:37:34.000 A:middle
+handler will be released.
+
+00:37:38.086 --> 00:37:39.646 A:middle
+Now, let's say you've
+
+00:37:39.646 --> 00:37:40.566 A:middle
+implemented the tracking
+
+00:37:40.566 --> 00:37:41.046 A:middle
+signals.
+
+00:37:41.356 --> 00:37:42.206 A:middle
+What are the potential
+
+00:37:42.206 --> 00:37:43.456 A:middle
+challenges that you may face?
+
+00:37:44.486 --> 00:37:46.666 A:middle
+Well, as you've seen, objects in
+
+00:37:46.666 --> 00:37:47.836 A:middle
+tracking sequence can change
+
+00:37:47.836 --> 00:37:49.276 A:middle
+pretty much everything about
+
+00:37:49.276 --> 00:37:49.836 A:middle
+themselves.
+
+00:37:50.076 --> 00:37:50.966 A:middle
+They can change their shape,
+
+00:37:50.966 --> 00:37:53.616 A:middle
+appearance, color, location, and
+
+00:37:53.616 --> 00:37:54.566 A:middle
+that represents a great
+
+00:37:54.566 --> 00:37:55.606 A:middle
+challenge for the algorithm.
+
+00:37:56.606 --> 00:37:57.546 A:middle
+So, what can you do here?
+
+00:37:58.536 --> 00:38:00.066 A:middle
+Well, one unfortunate answer is
+

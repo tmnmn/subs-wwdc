@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:00.886 --> 00:32:02.696 A:middle
+So we see the stack trace of our
+
+00:32:02.696 --> 00:32:04.876 A:middle
+crash thread, we see the file
+
+00:32:04.876 --> 00:32:06.036 A:middle
+and line number information
+
+00:32:06.036 --> 00:32:07.926 A:middle
+where available, and now we can
+
+00:32:07.926 --> 00:32:08.526 A:middle
+go to work.
+
+00:32:09.076 --> 00:32:10.776 A:middle
+Now we can find the address of
+
+00:32:10.776 --> 00:32:13.036 A:middle
+the ivar destroyer function and
+
+00:32:13.036 --> 00:32:15.306 A:middle
+disassemble it.
+
+00:32:15.476 --> 00:32:17.336 A:middle
+This shows us the assembly code
+
+00:32:17.616 --> 00:32:18.636 A:middle
+of our function.
+
+00:32:20.066 --> 00:32:21.646 A:middle
+Now I don't have time to teach
+
+00:32:21.646 --> 00:32:22.946 A:middle
+you how to read assembly code,
+
+00:32:23.436 --> 00:32:25.556 A:middle
+but luckily for crash logs you
+
+00:32:25.556 --> 00:32:26.846 A:middle
+don't actually have to be
+
+00:32:27.006 --> 00:32:29.436 A:middle
+completely fluent in reading
+
+00:32:29.436 --> 00:32:30.346 A:middle
+assembly code.
+
+00:32:30.656 --> 00:32:32.146 A:middle
+It often is sufficient to be
+
+00:32:32.146 --> 00:32:33.996 A:middle
+able to skim the assembly code
+
+00:32:33.996 --> 00:32:35.486 A:middle
+and get a general idea of what
+
+00:32:35.486 --> 00:32:37.016 A:middle
+is going on, you don't have to
+
+00:32:37.016 --> 00:32:38.286 A:middle
+understand every single
+
+00:32:38.286 --> 00:32:39.966 A:middle
+instruction to be able to get
+
+00:32:39.966 --> 00:32:41.656 A:middle
+useful information out of a
+
+00:32:41.656 --> 00:32:42.296 A:middle
+crash log.
+
+00:32:43.456 --> 00:32:45.626 A:middle
+If we read through this function
+
+00:32:46.006 --> 00:32:47.776 A:middle
+and we know about the call
+
+00:32:47.906 --> 00:32:50.106 A:middle
+instruction and the jump
+
+00:32:50.106 --> 00:32:51.876 A:middle
+instruction which are how you
+
+00:32:51.876 --> 00:32:54.486 A:middle
+call functions, we can separate
+
+00:32:54.486 --> 00:32:56.606 A:middle
+this code into three blocks.
+
+00:32:57.476 --> 00:33:00.566 A:middle
+We have this top section which
+

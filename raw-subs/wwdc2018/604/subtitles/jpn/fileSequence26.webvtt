@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.758 --> 00:26:00.828 align:start position:30% line:-1
+テクスチャ作成の例です
+
+00:26:02.963 --> 00:26:05.332 align:start position:27% line:-2
+テクスチャディスクリプタを
+作成し
+
+00:26:05.432 --> 00:26:09.036 align:start position:30% line:-2
+ストレージモードなど
+プロパティを設定します
+
+00:26:10.637 --> 00:26:14.975 align:start position:30% line:-2
+次にデバイスで
+テクスチャを作成します
+
+00:26:15.742 --> 00:26:19.479 align:start position:29% line:-2
+イメージデータは
+行単位でバイト数を計算し
+
+00:26:19.680 --> 00:26:23.917 align:start position:25% line:-2
+GLText同様にロード先の
+リージョンを指定します
+
+00:26:26.019 --> 00:26:29.523 align:start position:12% line:-2
+次にreplace regionメソッドを
+コールして
+
+00:26:29.623 --> 00:26:33.927 align:start position:27% line:-2
+ポインタからデータコピーし
+テクスチャに収めます
+
+00:26:36.830 --> 00:26:40.634 align:start position:29% line:-2
+テクスチャオブジェクトは
+いくつかの点で異なります
+
+00:26:40.734 --> 00:26:44.104 align:start position:25% line:-2
+OpenGLのsampler
+オブジェクトは選択型ですが
+
+00:26:44.204 --> 00:26:48.008 align:start position:29% line:-2
+ラップモードやフィルタを
+その中に設定できます
+
+00:26:48.108 --> 00:26:50.878 align:start position:20% line:-2
+Metalでは別途
+samplerオブジェクトを作るか
+
+00:26:50.978 --> 00:26:54.114 align:start position:29% line:-2
+シェーダにsampler
+パラメータ設定が必要です
+
+00:26:55.582 --> 00:26:58.185 align:start position:23% line:-2
+Metalではイメージデータは
+反転しません
+
+00:26:58.285 --> 00:27:02.923 align:start position:23% line:-2
+OpenGLは左下原点で
+Metalは左上原点を使います
+

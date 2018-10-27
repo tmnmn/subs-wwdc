@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:58.766 --> 00:14:00.796 A:middle
+They are read when your build
+
+00:14:00.796 --> 00:14:01.666 A:middle
+process starts.
+
+00:14:02.086 --> 00:14:03.376 A:middle
+And all that information is used
+
+00:14:03.376 --> 00:14:03.576 A:middle
+then.
+
+00:14:03.576 --> 00:14:07.216 A:middle
+Next I want to talk to you about
+
+00:14:07.216 --> 00:14:08.266 A:middle
+your output files.
+
+00:14:08.516 --> 00:14:09.596 A:middle
+Your output files are another
+
+00:14:09.596 --> 00:14:10.886 A:middle
+key piece of information that's
+
+00:14:10.886 --> 00:14:11.816 A:middle
+used throughout your build
+
+00:14:11.866 --> 00:14:12.396 A:middle
+process.
+
+00:14:13.016 --> 00:14:14.086 A:middle
+And Xcode will use this
+
+00:14:14.086 --> 00:14:15.926 A:middle
+information to determine if your
+
+00:14:15.926 --> 00:14:17.436 A:middle
+run script phase actually needs
+
+00:14:17.436 --> 00:14:17.786 A:middle
+to run.
+
+00:14:17.886 --> 00:14:20.616 A:middle
+And of course, we have support
+
+00:14:20.616 --> 00:14:23.026 A:middle
+for output files -- or file
+
+00:14:23.026 --> 00:14:24.166 A:middle
+lists for your output files as
+
+00:14:24.166 --> 00:14:24.376 A:middle
+well.
+
+00:14:25.336 --> 00:14:27.066 A:middle
+So I want to recap for you when
+
+00:14:27.066 --> 00:14:28.186 A:middle
+your run script phase is
+
+00:14:28.186 --> 00:14:28.726 A:middle
+actually run.
+
+00:14:29.856 --> 00:14:31.186 A:middle
+If you have no input files
+
+00:14:31.186 --> 00:14:33.896 A:middle
+declared, the Xcode build system
+
+00:14:34.076 --> 00:14:35.186 A:middle
+will need to run to your run
+
+00:14:35.186 --> 00:14:36.566 A:middle
+script phase on every single
+
+00:14:36.566 --> 00:14:36.896 A:middle
+build.
+
+00:14:37.556 --> 00:14:38.936 A:middle
+So this is one of key reasons
+
+00:14:38.936 --> 00:14:40.106 A:middle
+it's important to declare your
+
+00:14:40.106 --> 00:14:40.626 A:middle
+inputs.
+
+00:14:42.006 --> 00:14:43.476 A:middle
+Now if any of your input files
+
+00:14:43.476 --> 00:14:45.396 A:middle
+change, including the contents
+
+00:14:45.396 --> 00:14:47.996 A:middle
+of your file lists or any of the
+
+00:14:47.996 --> 00:14:49.506 A:middle
+inputs that the file lists point
+
+00:14:49.506 --> 00:14:51.376 A:middle
+to, Xcode will know that it
+
+00:14:51.376 --> 00:14:52.596 A:middle
+needs to rerun your run script
+
+00:14:52.596 --> 00:14:53.196 A:middle
+phase for you.
+
+00:14:53.696 --> 00:14:56.216 A:middle
+And finally, if any of your
+
+00:14:56.216 --> 00:14:58.426 A:middle
+output files are missing, the
+
+00:14:58.426 --> 00:14:59.876 A:middle
+Xcode build system will run your
+
+00:14:59.876 --> 00:15:01.116 A:middle
+run script phase to give you the
+

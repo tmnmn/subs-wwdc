@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:57.691 --> 00:26:00.928 align:start position:32% line:-2
+GPUの処理の配分を
+考えることです
+
+00:26:01.028 --> 00:26:06.366 align:start position:25% line:-2
+AppleではマルチGPUが
+一般的になりつつあります
+
+00:26:08.569 --> 00:26:12.072 align:start position:25% line:-1
+では ここまでのおさらいです
+
+00:26:12.406 --> 00:26:17.778 align:start position:25% line:-2
+マルチスレッドで
+CPUコードを最大限に活用し
+
+00:26:18.846 --> 00:26:23.050 align:start position:29% line:-2
+コマンドバッファを分割し
+GPUの無駄をなくします
+
+00:26:23.650 --> 00:26:25.953 align:start position:34% line:-1
+その際に できれば
+
+00:26:26.053 --> 00:26:30.090 align:start position:30% line:-2
+Pose依存処理と
+独立処理を分けましょう
+
+00:26:30.657 --> 00:26:33.994 align:start position:30% line:-2
+なるべく迅速に
+エンコードするためです
+
+00:26:34.461 --> 00:26:39.066 align:start position:30% line:-2
+そして 更新頻度により
+処理を分けます
+
+00:26:39.800 --> 00:26:43.504 align:start position:25% line:-2
+マルチGPUで
+アプリケーションを実行する時
+
+00:26:43.604 --> 00:26:47.841 align:start position:30% line:-2
+簡単に 各GPUに
+割り振ることができます
+
+00:26:48.175 --> 00:26:49.510 align:start position:41% line:-1
+その時には
+
+00:26:49.943 --> 00:26:55.048 align:start position:27% line:-2
+別のレンダリングスレッドで
+各GPUを動かしましょう
+
+00:26:55.382 --> 00:26:58.519 align:start position:29% line:-1
+非同期に実行するためです
+
+00:26:59.019 --> 00:27:01.422 align:start position:29% line:-1
+次はフィルレートの話です
+

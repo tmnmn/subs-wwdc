@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.476 --> 00:18:00.046 A:middle
+background, because then they'll
+
+00:18:00.046 --> 00:18:01.526 A:middle
+run right in line inside of
+
+00:18:01.526 --> 00:18:03.046 A:middle
+Siri, on the lock screen, in
+
+00:18:03.046 --> 00:18:04.426 A:middle
+search, in the Shortcuts app,
+
+00:18:04.426 --> 00:18:05.796 A:middle
+and on the Siri Watch Face,
+
+00:18:05.796 --> 00:18:06.796 A:middle
+without having to launch your
+
+00:18:06.796 --> 00:18:07.026 A:middle
+app.
+
+00:18:07.726 --> 00:18:08.986 A:middle
+The most valuable shortcuts are
+
+00:18:08.986 --> 00:18:09.736 A:middle
+the ones that run in the
+
+00:18:09.736 --> 00:18:11.886 A:middle
+background, but you can also
+
+00:18:11.886 --> 00:18:12.996 A:middle
+build a lot of great other
+
+00:18:12.996 --> 00:18:13.486 A:middle
+shortcuts.
+
+00:18:13.736 --> 00:18:15.546 A:middle
+And keep in mind that, even if
+
+00:18:15.546 --> 00:18:16.696 A:middle
+you implement an intents
+
+00:18:16.696 --> 00:18:18.166 A:middle
+extension, you should always
+
+00:18:18.166 --> 00:18:19.816 A:middle
+implement continueUserActivity,
+
+00:18:20.126 --> 00:18:21.476 A:middle
+because the user will have the
+
+00:18:21.476 --> 00:18:23.076 A:middle
+opportunity to open the shortcut
+
+00:18:23.076 --> 00:18:24.816 A:middle
+in your app from Siri, for
+
+00:18:24.816 --> 00:18:26.906 A:middle
+example, by tapping on the card
+
+00:18:27.206 --> 00:18:29.126 A:middle
+in Siri that shows your apps'
+
+00:18:29.126 --> 00:18:31.226 A:middle
+custom UI.
+
+00:18:31.766 --> 00:18:33.206 A:middle
+So, there's one more thing that
+
+00:18:33.206 --> 00:18:34.506 A:middle
+I want to tell you about, which
+
+00:18:34.506 --> 00:18:35.946 A:middle
+is INRelevantShortcut.
+
+00:18:36.346 --> 00:18:37.896 A:middle
+Now, INRelevantShortcut is the
+
+00:18:37.896 --> 00:18:39.386 A:middle
+way to expose shortcuts to the
+
+00:18:39.386 --> 00:18:41.746 A:middle
+Siri Watch Face, and you do it
+
+00:18:41.746 --> 00:18:42.726 A:middle
+just by providing
+
+00:18:42.876 --> 00:18:44.756 A:middle
+INRelevantShortcut objects that
+
+00:18:44.756 --> 00:18:46.706 A:middle
+include your intents or user
+
+00:18:46.706 --> 00:18:47.176 A:middle
+activities.
+
+00:18:48.026 --> 00:18:49.266 A:middle
+You can, optionally, include
+
+00:18:49.266 --> 00:18:50.956 A:middle
+relevance information in your
+
+00:18:50.956 --> 00:18:52.316 A:middle
+relevant shortcuts, which is a
+
+00:18:52.316 --> 00:18:54.546 A:middle
+hint to the Siri Watch Face as
+
+00:18:54.546 --> 00:18:56.046 A:middle
+to when your shortcuts will be
+
+00:18:56.046 --> 00:18:57.326 A:middle
+relevant and when's the best
+
+00:18:57.326 --> 00:18:58.286 A:middle
+time to show your shortcut?
+
+00:18:59.376 --> 00:19:01.266 A:middle
+Now, the really cool thing about
+

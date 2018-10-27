@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.026 --> 00:22:01.366 A:middle
+low power mode condition in a
+
+00:22:01.406 --> 00:22:02.216 A:middle
+similar fashion.
+
+00:22:03.026 --> 00:22:05.396 A:middle
+Also consider querying the GPU
+
+00:22:05.396 --> 00:22:07.086 A:middle
+start/GPU end time from the MTL
+
+00:22:07.086 --> 00:22:08.966 A:middle
+Command Buffer in order to
+
+00:22:08.966 --> 00:22:11.206 A:middle
+understand how system loads may
+
+00:22:11.206 --> 00:22:12.466 A:middle
+impact the GPU time.
+
+00:22:13.026 --> 00:22:15.876 A:middle
+Let's see how we do that with a
+
+00:22:15.876 --> 00:22:17.136 A:middle
+simple code example.
+
+00:22:18.456 --> 00:22:19.546 A:middle
+This comes straight from our
+
+00:22:19.546 --> 00:22:20.396 A:middle
+best practices.
+
+00:22:21.286 --> 00:22:23.606 A:middle
+A tip score is a very simple
+
+00:22:23.606 --> 00:22:25.646 A:middle
+switch statement when every case
+
+00:22:25.686 --> 00:22:27.216 A:middle
+corresponds to a thermal state.
+
+00:22:27.806 --> 00:22:32.886 A:middle
+We have nominal, fair, serious,
+
+00:22:33.836 --> 00:22:34.476 A:middle
+and critical.
+
+00:22:34.996 --> 00:22:39.416 A:middle
+And that is all very good.
+
+00:22:39.416 --> 00:22:41.106 A:middle
+So now we know that we are in a
+
+00:22:41.106 --> 00:22:43.546 A:middle
+thermal state and thse command's
+
+00:22:43.546 --> 00:22:45.126 A:middle
+telling us to do something about
+
+00:22:45.126 --> 00:22:45.216 A:middle
+it.
+
+00:22:46.046 --> 00:22:48.536 A:middle
+So how can, how can we actually
+
+00:22:48.536 --> 00:22:49.906 A:middle
+help the system stay cool?
+
+00:22:51.096 --> 00:22:53.936 A:middle
+Well, I can give you some
+
+00:22:53.936 --> 00:22:55.626 A:middle
+suggestions, but it's up to you
+
+00:22:55.626 --> 00:22:57.096 A:middle
+game developers to decide what
+
+00:22:57.156 --> 00:22:59.616 A:middle
+compromises to make in order to
+
+00:22:59.616 --> 00:23:00.526 A:middle
+help the system.
+

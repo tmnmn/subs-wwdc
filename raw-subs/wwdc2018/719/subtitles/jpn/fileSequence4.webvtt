@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.240 --> 00:04:03.777 align:start position:27% line:-2
+従来の方法は
+“CIカーネル言語の使用”
+
+00:04:03.877 --> 00:04:09.416 align:start position:27% line:-2
+この場合 ソースファイルに
+文字列が含まれ
+
+00:04:09.516 --> 00:04:14.021 align:start position:7% line:-2
+実行時に“CIKernel(source:)”で
+呼び出します
+
+00:04:14.655 --> 00:04:18.358 align:start position:30% line:-2
+そのカーネルをベースに
+画像を作る時―
+
+00:04:18.458 --> 00:04:21.128 align:start position:21% line:-2
+その画像を
+CIのコンテキストに書き込みます
+
+00:04:21.228 --> 00:04:25.799 align:start position:25% line:-2
+MetalとOpenGLの
+いずれのバックアップでもです
+
+00:04:26.867 --> 00:04:30.070 align:start position:27% line:-2
+レンダリングには
+そのソースの変換が必要です
+
+00:04:30.170 --> 00:04:35.909 align:start position:21% line:-2
+MetalかGLSLに変換する際
+コストがかかります
+
+00:04:36.343 --> 00:04:41.215 align:start position:25% line:-2
+コードがGPUの命令セットに
+コンパイルされ 実行されます
+
+00:04:42.583 --> 00:04:48.956 align:start position:23% line:-2
+昨年iOS 11を立ち上げた際
+新たな手法を追加しました
+
+00:04:49.056 --> 00:04:52.226 align:start position:18% line:-2
+Metalシェーディング言語に基づく
+CIカーネルです
+
+00:04:52.526 --> 00:04:55.462 align:start position:25% line:-1
+プロジェクト内にあるソースが
+
+00:04:55.562 --> 00:05:00.534 align:start position:27% line:-2
+実行時ではなく
+構築時にコンパイルされます
+

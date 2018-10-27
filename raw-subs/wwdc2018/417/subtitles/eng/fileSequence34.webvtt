@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:59.136 --> 00:34:00.496 A:middle
+mock delayed actions at all.
+
+00:34:01.556 --> 00:34:03.986 A:middle
+For example, in our app, the
+
+00:34:04.026 --> 00:34:05.446 A:middle
+action being delayed was
+
+00:34:05.446 --> 00:34:06.746 A:middle
+changing to the next featured
+
+00:34:06.746 --> 00:34:07.166 A:middle
+place.
+
+00:34:07.826 --> 00:34:09.916 A:middle
+I probably only need one or two
+
+00:34:10.016 --> 00:34:11.746 A:middle
+tests that show that the timer
+
+00:34:11.746 --> 00:34:12.676 A:middle
+delay works properly.
+
+00:34:13.106 --> 00:34:14.366 A:middle
+And, for the rest of the class,
+
+00:34:14.366 --> 00:34:16.206 A:middle
+I can call the show next place
+
+00:34:16.206 --> 00:34:17.735 A:middle
+method directly and not need to
+
+00:34:17.735 --> 00:34:22.416 A:middle
+mock a timer scheduler at all.
+
+00:34:22.626 --> 00:34:23.795 A:middle
+While we're on the topic of text
+
+00:34:23.795 --> 00:34:25.606 A:middle
+execution speed, we had a couple
+
+00:34:25.606 --> 00:34:26.335 A:middle
+of other tips to share.
+
+00:34:27.755 --> 00:34:29.116 A:middle
+One area we've seen concerns the
+
+00:34:29.116 --> 00:34:31.076 A:middle
+use of NSPredicateExpectations.
+
+00:34:31.896 --> 00:34:33.036 A:middle
+We wanted to mention that these
+
+00:34:33.036 --> 00:34:34.585 A:middle
+are not nearly as performant as
+
+00:34:34.585 --> 00:34:36.556 A:middle
+other expectation classes, since
+
+00:34:36.556 --> 00:34:37.846 A:middle
+they rely on polar rather than
+
+00:34:37.846 --> 00:34:39.696 A:middle
+more direct callback mechanisms.
+
+00:34:40.576 --> 00:34:42.286 A:middle
+They're mainly used in UI tests,
+
+00:34:42.565 --> 00:34:43.485 A:middle
+where the conditions being
+
+00:34:43.485 --> 00:34:45.005 A:middle
+evaluated are happening in
+
+00:34:45.005 --> 00:34:45.846 A:middle
+another process.
+
+00:34:46.436 --> 00:34:47.916 A:middle
+So, in your unit tests, we
+
+00:34:47.916 --> 00:34:48.985 A:middle
+recommend more direct
+
+00:34:48.985 --> 00:34:50.896 A:middle
+mechanisms, such as regular
+
+00:34:50.896 --> 00:34:52.166 A:middle
+XCTestExpectations,
+
+00:34:52.616 --> 00:34:54.016 A:middle
+NSNotification, or
+
+00:34:54.016 --> 00:34:55.295 A:middle
+KVOExpectations.
+
+00:34:57.756 --> 00:34:59.956 A:middle
+Another testing speed tip is to
+
+00:34:59.956 --> 00:35:01.346 A:middle
+ensure that your app launches as
+

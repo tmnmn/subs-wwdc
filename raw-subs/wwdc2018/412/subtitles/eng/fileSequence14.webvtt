@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:13:59.656 --> 00:14:01.066 A:middle
+could edit an expression to test
+
+00:14:01.066 --> 00:14:02.386 A:middle
+if that was false and then the
+
+00:14:02.386 --> 00:14:03.506 A:middle
+breakpoint would trigger.
+
+00:14:03.506 --> 00:14:04.876 A:middle
+I don't have a property in this
+
+00:14:04.876 --> 00:14:05.866 A:middle
+case, so I'm going to show you a
+
+00:14:05.866 --> 00:14:06.536 A:middle
+different method.
+
+00:14:06.536 --> 00:14:08.046 A:middle
+I'm going to delete that
+
+00:14:08.046 --> 00:14:10.426 A:middle
+symbolic breakpoint and instead,
+
+00:14:10.426 --> 00:14:12.196 A:middle
+scroll down to this function
+
+00:14:12.196 --> 00:14:13.286 A:middle
+jump completed and set a
+
+00:14:13.286 --> 00:14:14.076 A:middle
+breakpoint here.
+
+00:14:14.716 --> 00:14:16.046 A:middle
+Now jump completed is called
+
+00:14:16.046 --> 00:14:17.896 A:middle
+after the animation has finished
+
+00:14:18.256 --> 00:14:19.526 A:middle
+so that it can update UI and
+
+00:14:19.526 --> 00:14:20.406 A:middle
+update game state.
+
+00:14:20.406 --> 00:14:22.196 A:middle
+However, we don't want a break
+
+00:14:22.196 --> 00:14:23.106 A:middle
+in this function.
+
+00:14:23.346 --> 00:14:24.526 A:middle
+What I want to do is configure
+
+00:14:24.526 --> 00:14:26.436 A:middle
+this breakpoint to actually set
+
+00:14:26.436 --> 00:14:27.956 A:middle
+the symbolic breakpoint in UI
+
+00:14:27.956 --> 00:14:29.086 A:middle
+label set text for me.
+
+00:14:29.126 --> 00:14:30.806 A:middle
+And I can do that by adding a
+
+00:14:30.806 --> 00:14:32.736 A:middle
+debugger command action, which
+
+00:14:32.736 --> 00:14:34.366 A:middle
+is breakpoint set, and I'm going
+
+00:14:34.366 --> 00:14:36.366 A:middle
+to use the option one shot true.
+
+00:14:36.576 --> 00:14:38.746 A:middle
+And a one shot breakpoint is a
+
+00:14:38.746 --> 00:14:40.396 A:middle
+temporary breakpoint that only
+
+00:14:40.396 --> 00:14:41.996 A:middle
+exists until it's triggered and
+
+00:14:41.996 --> 00:14:43.196 A:middle
+then it's automatically deleted.
+
+00:14:43.716 --> 00:14:45.546 A:middle
+And we can give it the symbolic
+
+00:14:45.546 --> 00:14:48.366 A:middle
+name, UI label set text, and
+
+00:14:48.366 --> 00:14:49.586 A:middle
+make this an order continuing
+
+00:14:49.586 --> 00:14:50.076 A:middle
+breakpoint.
+
+00:14:50.466 --> 00:14:51.646 A:middle
+So what we've created, in this
+
+00:14:51.646 --> 00:14:53.936 A:middle
+case, is a breakpoint that when
+
+00:14:53.936 --> 00:14:55.336 A:middle
+the execution enters the jump
+
+00:14:55.396 --> 00:14:57.766 A:middle
+completed function, it sets a
+
+00:14:58.146 --> 00:14:59.136 A:middle
+temporary breakpoint in the
+
+00:14:59.136 --> 00:15:00.396 A:middle
+location we're interested in and
+

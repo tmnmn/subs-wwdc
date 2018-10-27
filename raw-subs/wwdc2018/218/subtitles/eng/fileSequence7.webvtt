@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:57.386 --> 00:07:00.506 A:middle
+windows-- and you just assign it
+
+00:07:00.506 --> 00:07:03.926 A:middle
+to the appearanceSource property
+
+00:07:04.496 --> 00:07:06.176 A:middle
+and the window will inherit its
+
+00:07:06.176 --> 00:07:07.526 A:middle
+appearance from that object.
+
+00:07:08.146 --> 00:07:11.516 A:middle
+So, in this case, we'll assign
+
+00:07:11.516 --> 00:07:12.636 A:middle
+the text view to the
+
+00:07:12.636 --> 00:07:14.926 A:middle
+appearanceSource property of
+
+00:07:14.926 --> 00:07:16.816 A:middle
+that child window and now it's
+
+00:07:16.816 --> 00:07:18.186 A:middle
+appearance will always inherit
+
+00:07:18.186 --> 00:07:19.956 A:middle
+from that view no matter what it
+
+00:07:20.656 --> 00:07:20.746 A:middle
+is.
+
+00:07:22.476 --> 00:07:24.826 A:middle
+In fact, you should think of the
+
+00:07:24.826 --> 00:07:26.616 A:middle
+appearance system as a sort of
+
+00:07:26.616 --> 00:07:27.316 A:middle
+hierarchy.
+
+00:07:27.986 --> 00:07:29.666 A:middle
+Similar to the view hierarchy
+
+00:07:29.706 --> 00:07:30.926 A:middle
+you're probably familiar with,
+
+00:07:31.016 --> 00:07:32.726 A:middle
+but extending to windows and the
+
+00:07:32.726 --> 00:07:33.756 A:middle
+application as well.
+
+00:07:34.896 --> 00:07:37.196 A:middle
+And when we ask AppKit for a
+
+00:07:37.196 --> 00:07:38.686 A:middle
+view's effective appearance,
+
+00:07:39.916 --> 00:07:41.806 A:middle
+AppKit will simply walk up this
+
+00:07:41.806 --> 00:07:43.646 A:middle
+hierarchy until it finds an
+
+00:07:43.646 --> 00:07:45.116 A:middle
+object with a specified
+
+00:07:45.116 --> 00:07:47.486 A:middle
+appearance and that's the
+
+00:07:47.486 --> 00:07:48.546 A:middle
+appearance we'll use.
+
+00:07:49.096 --> 00:07:49.196 A:middle
+OK.
+
+00:07:50.476 --> 00:07:53.326 A:middle
+So, now that we know how objects
+
+00:07:53.376 --> 00:07:54.406 A:middle
+get an appearance and how the
+
+00:07:54.406 --> 00:07:55.876 A:middle
+appearance system works, let's
+
+00:07:55.876 --> 00:07:57.156 A:middle
+talk about how you can use it in
+
+00:07:57.156 --> 00:07:58.676 A:middle
+your custom views and controls.
+
+00:07:59.156 --> 00:08:00.876 A:middle
+Here's an example.
+

@@ -1,0 +1,90 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.156 --> 00:07:01.276 A:middle
+application shares textures with
+
+00:07:01.306 --> 00:07:01.746 A:middle
+compositor.
+
+00:07:01.746 --> 00:07:04.676 A:middle
+So now, for sharing textures, we
+
+00:07:04.676 --> 00:07:05.826 A:middle
+use IOSurfaces.
+
+00:07:06.786 --> 00:07:08.316 A:middle
+They are sharing textures
+
+00:07:08.426 --> 00:07:10.086 A:middle
+between different process spaces
+
+00:07:10.796 --> 00:07:14.086 A:middle
+and different GPUs, that we've
+
+00:07:14.186 --> 00:07:15.466 A:middle
+got [inaudible] comes a price.
+
+00:07:16.436 --> 00:07:19.466 A:middle
+IOSurfaces can be only used to
+
+00:07:19.466 --> 00:07:22.316 A:middle
+share simple 2D textures, so if
+
+00:07:22.316 --> 00:07:23.876 A:middle
+you have a multi-sampled one,
+
+00:07:24.266 --> 00:07:25.996 A:middle
+storing [inaudible] or having
+
+00:07:26.806 --> 00:07:27.386 A:middle
+[inaudible], they couldn't be
+
+00:07:27.386 --> 00:07:27.736 A:middle
+shared.
+
+00:07:29.046 --> 00:07:30.706 A:middle
+That's why today we introduce
+
+00:07:30.706 --> 00:07:32.836 A:middle
+shareable Metal textures that
+
+00:07:32.836 --> 00:07:34.676 A:middle
+allow your applications to share
+
+00:07:34.806 --> 00:07:36.486 A:middle
+any type of Metal texture
+
+00:07:36.796 --> 00:07:39.736 A:middle
+between process spaces, as long
+
+00:07:39.836 --> 00:07:42.046 A:middle
+as these textures stay in scope
+
+00:07:42.046 --> 00:07:43.106 A:middle
+of single GPU.
+
+00:07:43.996 --> 00:07:46.726 A:middle
+This file features [inaudible]
+
+00:07:46.856 --> 00:07:49.116 A:middle
+advanced view of these cases.
+
+00:07:49.636 --> 00:07:51.956 A:middle
+For example, sharing depth of
+
+00:07:52.036 --> 00:07:53.946 A:middle
+your scene with VR compositor.
+
+00:07:54.486 --> 00:07:55.846 A:middle
+But, of course, it's not limited
+
+00:07:55.846 --> 00:07:56.446 A:middle
+just to that.
+
+00:07:57.256 --> 00:07:59.016 A:middle
+Now, let's look how those
+
+00:07:59.086 --> 00:08:00.236 A:middle
+textures can be created.
+

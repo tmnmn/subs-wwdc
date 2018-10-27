@@ -1,0 +1,44 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:01.695 --> 00:11:06.033 align:start position:30% line:-2
+アーティファクト除去は
+さらに複雑なので
+
+00:11:06.133 --> 00:11:08.702 align:start position:29% line:-1
+上級者向けにお話しします
+
+00:11:09.069 --> 00:11:12.539 align:start position:30% line:-2
+サンプルはオンラインで
+取得できます
+
+00:11:12.773 --> 00:11:18.545 align:start position:23% line:-2
+vDSPの項目に工程を解説した
+ドキュメントもあります
+
+00:11:20.480 --> 00:11:26.520 align:start position:27% line:-2
+まずサンプルの周波数成分の
+大きさを割り出してから
+
+00:11:27.921 --> 00:11:30.357 align:start position:29% line:-1
+除去する成分も確認します
+
+00:11:33.026 --> 00:11:35.562 align:start position:30% line:-1
+そこからマスクを作成し
+
+00:11:36.964 --> 00:11:39.833 align:start position:30% line:-1
+元の画像に適用させます
+
+00:11:41.101 --> 00:11:43.704 align:start position:29% line:-1
+除去したい成分に０を掛け
+
+00:11:43.837 --> 00:11:47.407 align:start position:27% line:-1
+残したい成分に１を掛けます
+
+00:11:52.312 --> 00:11:54.882 align:start position:25% line:-1
+zropで画像を再構築します
+
+00:11:54.982 --> 00:11:57.718 align:start position:30% line:-2
+FFTはコンテキストを
+再利用できます
+

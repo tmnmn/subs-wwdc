@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:59.066 --> 00:02:00.216 A:middle
+The operating system will
+
+00:02:00.216 --> 00:02:01.986 A:middle
+preserve the user experience by
+
+00:02:01.986 --> 00:02:03.886 A:middle
+killing your app if it's taking
+
+00:02:03.886 --> 00:02:05.546 A:middle
+too long to launch or it's using
+
+00:02:05.546 --> 00:02:08.256 A:middle
+too much memory.
+
+00:02:08.256 --> 00:02:09.476 A:middle
+Sometimes the programming
+
+00:02:09.476 --> 00:02:11.476 A:middle
+language you're using is trying
+
+00:02:11.476 --> 00:02:13.006 A:middle
+to prevent a failure and will
+
+00:02:13.006 --> 00:02:13.896 A:middle
+trigger a crash.
+
+00:02:14.456 --> 00:02:16.596 A:middle
+A Swift array and NSArray will
+
+00:02:16.596 --> 00:02:18.156 A:middle
+halt your process if you attempt
+
+00:02:18.156 --> 00:02:19.146 A:middle
+to go outside of your array
+
+00:02:19.146 --> 00:02:19.586 A:middle
+bounds.
+
+00:02:21.006 --> 00:02:22.586 A:middle
+Or sometimes it's you, the
+
+00:02:22.586 --> 00:02:23.536 A:middle
+developer that's trying to
+
+00:02:23.536 --> 00:02:24.276 A:middle
+prevent a failure.
+
+00:02:24.856 --> 00:02:26.756 A:middle
+You may have an API where you
+
+00:02:26.756 --> 00:02:28.446 A:middle
+assert is a parameter is non nil
+
+00:02:28.446 --> 00:02:30.726 A:middle
+and that's perfectly all right.
+
+00:02:32.176 --> 00:02:33.546 A:middle
+So stop me if you've seen this
+
+00:02:33.546 --> 00:02:35.686 A:middle
+before, this is what it looks
+
+00:02:35.686 --> 00:02:38.396 A:middle
+like in Xcode in the debugger
+
+00:02:38.446 --> 00:02:39.786 A:middle
+when the debugger is attached to
+
+00:02:39.786 --> 00:02:41.806 A:middle
+your app and has paused the
+
+00:02:41.806 --> 00:02:43.346 A:middle
+process just before your app is
+
+00:02:43.346 --> 00:02:43.876 A:middle
+terminated.
+
+00:02:44.786 --> 00:02:46.396 A:middle
+And let's take a closer look at
+
+00:02:46.396 --> 00:02:47.566 A:middle
+this backtrace on the left.
+
+00:02:48.996 --> 00:02:51.386 A:middle
+You can see here how the app was
+
+00:02:51.386 --> 00:02:52.986 A:middle
+started by the operating system
+
+00:02:53.866 --> 00:02:55.446 A:middle
+and while we're paused we can
+
+00:02:55.446 --> 00:02:56.636 A:middle
+see how the main function was
+
+00:02:56.666 --> 00:02:58.466 A:middle
+called and functions are calling
+
+00:02:58.466 --> 00:02:59.756 A:middle
+other functions within your app
+

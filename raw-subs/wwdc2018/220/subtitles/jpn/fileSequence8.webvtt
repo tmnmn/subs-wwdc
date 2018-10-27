@@ -1,0 +1,74 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:57.911 --> 00:08:00.214 align:start position:32% line:-2
+そこで １つずつ
+再測定するとしたら？
+
+00:08:00.414 --> 00:08:03.650 align:start position:32% line:-2
+それまでの作業が
+すべてムダになります
+
+00:08:03.750 --> 00:08:05.652 align:start position:14% line:-1
+そこで Render Loopを使います
+
+00:08:05.819 --> 00:08:09.756 align:start position:32% line:-2
+そうすれば
+セットフォントの中で
+
+00:08:09.857 --> 00:08:12.926 align:start position:0% line:-2
+“setNeedsUpdateConstraints”を
+呼び出すだけです
+
+00:08:13.260 --> 00:08:16.463 align:start position:32% line:-2
+それで フレームが
+画面に表示される前に
+
+00:08:16.563 --> 00:08:19.132 align:start position:29% line:-1
+制約が確実に更新されます
+
+00:08:19.733 --> 00:08:20.901 align:start position:38% line:-1
+それが狙いです
+
+00:08:21.368 --> 00:08:25.005 align:start position:25% line:-1
+先に進む前におさらいをします
+
+00:08:25.105 --> 00:08:27.975 align:start position:21% line:-2
+まず
+“毎秒120フレームの高速動作”
+
+00:08:28.308 --> 00:08:30.544 align:start position:32% line:-1
+次に“パラレル処理”
+
+00:08:30.644 --> 00:08:32.546 align:start position:38% line:-1
+直感で使えます
+
+00:08:32.645 --> 00:08:35.948 align:start position:30% line:-2
+もし レイアウトパスが
+理解できているなら―
+
+00:08:36.116 --> 00:08:39.586 align:start position:14% line:-2
+“updateConstraints”も
+同じように使えます
+
+00:08:40.053 --> 00:08:45.459 align:start position:27% line:-2
+最後が すべての目的である
+“ムダな作業の回避”
+
+00:08:45.726 --> 00:08:48.395 align:start position:29% line:-1
+作業を延期か省略できます
+
+00:08:49.363 --> 00:08:50.030 align:start position:41% line:-1
+いいですね
+
+00:08:51.064 --> 00:08:56.503 align:start position:25% line:-2
+では 今から
+このメソッドの解析に入ります
+
+00:08:56.803 --> 00:08:58.872 align:start position:36% line:-1
+毎回 私たちは―
+
+00:08:58.972 --> 00:09:04.311 align:start position:25% line:-2
+制約を無効にしてから
+新しい設定を再度有効にします
+

@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.056 --> 00:03:00.676 A:middle
+integration tests that targeted
+
+00:03:00.676 --> 00:03:02.916 A:middle
+discreet subsystem or cluster of
+
+00:03:02.916 --> 00:03:05.176 A:middle
+classes in your app, checking
+
+00:03:05.176 --> 00:03:05.906 A:middle
+that they worked together
+
+00:03:05.906 --> 00:03:07.826 A:middle
+properly, each taking no more
+
+00:03:07.826 --> 00:03:08.926 A:middle
+than a few seconds to run.
+
+00:03:11.486 --> 00:03:13.176 A:middle
+And the suite is topped off by a
+
+00:03:13.176 --> 00:03:14.606 A:middle
+handful of end-to-end system
+
+00:03:14.606 --> 00:03:16.436 A:middle
+tests, most often taking the
+
+00:03:16.436 --> 00:03:19.016 A:middle
+form of UI tests that exercise
+
+00:03:19.016 --> 00:03:20.906 A:middle
+the app in a way very similar to
+
+00:03:20.906 --> 00:03:22.336 A:middle
+how the end-user will do so on
+
+00:03:22.336 --> 00:03:25.196 A:middle
+their devices, checking that all
+
+00:03:25.196 --> 00:03:26.036 A:middle
+the pieces are hooked up
+
+00:03:26.036 --> 00:03:28.486 A:middle
+properly and interact well with
+
+00:03:28.486 --> 00:03:30.006 A:middle
+the underlying operating system
+
+00:03:30.136 --> 00:03:31.476 A:middle
+and external resources.
+
+00:03:32.026 --> 00:03:34.946 A:middle
+A test suite following this
+
+00:03:34.946 --> 00:03:36.526 A:middle
+model can provide a
+
+00:03:36.526 --> 00:03:38.076 A:middle
+comprehensive picture of how an
+
+00:03:38.076 --> 00:03:39.266 A:middle
+app code's base is functioning.
+
+00:03:43.476 --> 00:03:45.056 A:middle
+For testing the networking stack
+
+00:03:45.056 --> 00:03:46.966 A:middle
+in this app, we really wanted to
+
+00:03:46.966 --> 00:03:48.346 A:middle
+take the pyramid model to heart
+
+00:03:48.956 --> 00:03:50.436 A:middle
+and use it as a guide for how to
+
+00:03:50.436 --> 00:03:52.026 A:middle
+structure our test suite.
+
+00:03:53.056 --> 00:03:54.626 A:middle
+Here, we see the high-level data
+
+00:03:54.626 --> 00:03:56.126 A:middle
+flow involved in making a
+
+00:03:56.126 --> 00:03:58.036 A:middle
+network request in the app and
+
+00:03:58.076 --> 00:03:59.146 A:middle
+feeding the data into the UI.
+

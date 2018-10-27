@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:00.406 --> 00:03:02.266 A:middle
+this beautiful visualization of
+
+00:03:02.266 --> 00:03:03.736 A:middle
+a timeline of what your program
+
+00:03:03.736 --> 00:03:04.906 A:middle
+is doing and the signpost
+
+00:03:04.906 --> 00:03:05.596 A:middle
+activity there.
+
+00:03:06.046 --> 00:03:07.186 A:middle
+And then on the bottom there's
+
+00:03:07.186 --> 00:03:09.486 A:middle
+that table with statistical
+
+00:03:09.546 --> 00:03:11.316 A:middle
+aggregation and analysis of the
+
+00:03:11.316 --> 00:03:13.216 A:middle
+signpost data, slicing and
+
+00:03:13.216 --> 00:03:15.056 A:middle
+dicing to see what your
+
+00:03:15.056 --> 00:03:16.706 A:middle
+program's behavior is really
+
+00:03:16.876 --> 00:03:17.126 A:middle
+like.
+
+00:03:18.506 --> 00:03:20.476 A:middle
+In this session, I'll talk about
+
+00:03:20.706 --> 00:03:21.986 A:middle
+adopting signposts into your
+
+00:03:21.986 --> 00:03:23.366 A:middle
+code and show you some of what
+
+00:03:23.366 --> 00:03:24.086 A:middle
+they're capable of.
+
+00:03:24.536 --> 00:03:25.226 A:middle
+And then we're going to
+
+00:03:25.226 --> 00:03:26.836 A:middle
+demonstrate the new Instrument
+
+00:03:26.836 --> 00:03:29.436 A:middle
+signpost visualization to give
+
+00:03:29.436 --> 00:03:31.296 A:middle
+you an idea how signposts and
+
+00:03:31.296 --> 00:03:33.976 A:middle
+Instruments work together.
+
+00:03:34.096 --> 00:03:34.736 A:middle
+So let's start.
+
+00:03:35.556 --> 00:03:37.856 A:middle
+I'm going to start with a really
+
+00:03:37.996 --> 00:03:38.946 A:middle
+basic example.
+
+00:03:39.766 --> 00:03:42.466 A:middle
+Imagine that this is your app.
+
+00:03:43.116 --> 00:03:44.586 A:middle
+And what you're trying to
+
+00:03:44.586 --> 00:03:46.836 A:middle
+investigate is the amount of
+
+00:03:46.896 --> 00:03:48.116 A:middle
+time a particular part of the
+
+00:03:48.116 --> 00:03:49.456 A:middle
+interface takes to refresh.
+
+00:03:49.966 --> 00:03:51.856 A:middle
+And you know to do that you want
+
+00:03:51.856 --> 00:03:53.566 A:middle
+to load some images and put them
+
+00:03:53.566 --> 00:03:54.176 A:middle
+on the screen.
+
+00:03:54.696 --> 00:03:57.576 A:middle
+So once again, an abstract,
+
+00:03:57.576 --> 00:03:59.086 A:middle
+simple view of this app might be
+
+00:03:59.086 --> 00:04:00.626 A:middle
+that you're doing the work to
+

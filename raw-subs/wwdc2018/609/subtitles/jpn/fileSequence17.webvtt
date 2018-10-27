@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:16:55.115 --> 00:17:01.121 align:start position:21% line:-2
+損失データの記述子はメモリの中の
+レベルデータの配置を記述します
+
+00:17:01.688 --> 00:17:06.660 align:start position:7% line:-2
+次に この記述子でMPSCNNLossLabel
+オブジェクトを作ります
+
+00:17:08.262 --> 00:17:13.133 align:start position:32% line:-2
+訓練用にバッチを作り
+グラフ実行が終わると
+
+00:17:13.333 --> 00:17:18.839 align:start position:27% line:-2
+ラベルのバッチは
+画像ごとの損失値を含みます
+
+00:17:18.939 --> 00:17:24.377 align:start position:27% line:-2
+この値やバッチ中の単一値は
+計算し調べることができます
+
+00:17:27.647 --> 00:17:32.486 align:start position:30% line:-2
+訓練グラフとグラフへの
+入力について話しました
+
+00:17:32.586 --> 00:17:36.723 align:start position:30% line:-2
+次は グラフノードへの
+重みの付与です
+
+00:17:38.892 --> 00:17:42.463 align:start position:32% line:-2
+完全結合の畳み込みに
+重みを与えるには
+
+00:17:42.629 --> 00:17:46.800 align:start position:30% line:-2
+バッチとインスタンスの
+ノーマライズノードで
+
+00:17:46.900 --> 00:17:49.369 align:start position:12% line:-2
+Data Source Providerの
+プロトコルを使います
+
+00:17:50.838 --> 00:17:55.409 align:start position:27% line:-2
+これを使った
+畳み込みノードの作成例です
+
+00:17:56.043 --> 00:18:00.147 align:start position:32% line:-2
+プロトコルに合致する
+クラスを実装します
+

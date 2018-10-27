@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.016 --> 00:23:01.116 A:middle
+wait until response number two
+
+00:23:01.356 --> 00:23:02.286 A:middle
+is fully received.
+
+00:23:03.436 --> 00:23:05.666 A:middle
+This problem is known as HTTP
+
+00:23:05.666 --> 00:23:06.746 A:middle
+head-of-line blocking.
+
+00:23:08.096 --> 00:23:10.406 A:middle
+Consider moving to HTTP/2.
+
+00:23:11.676 --> 00:23:14.126 A:middle
+HTTP/2 uses a single connection,
+
+00:23:14.496 --> 00:23:16.166 A:middle
+and it also solves the HTTP
+
+00:23:16.166 --> 00:23:17.866 A:middle
+head-of-line blocking problem.
+
+00:23:18.396 --> 00:23:21.956 A:middle
+HTTP/2 multiplexes multiple
+
+00:23:21.956 --> 00:23:24.156 A:middle
+streams over a single connection
+
+00:23:24.696 --> 00:23:26.756 A:middle
+allowing you to receive parallel
+
+00:23:26.756 --> 00:23:28.576 A:middle
+responses in an [inaudible]
+
+00:23:28.576 --> 00:23:29.136 A:middle
+fashion.
+
+00:23:29.666 --> 00:23:32.456 A:middle
+Let's analyze this example a
+
+00:23:32.456 --> 00:23:34.966 A:middle
+little more to see how HTTP/2
+
+00:23:35.026 --> 00:23:37.166 A:middle
+performs better than HTTP/1.1.
+
+00:23:39.456 --> 00:23:41.406 A:middle
+Pay attention to the times when
+
+00:23:41.406 --> 00:23:42.656 A:middle
+your app wants to fetch a
+
+00:23:42.656 --> 00:23:44.806 A:middle
+resource and the time when the
+
+00:23:44.806 --> 00:23:45.966 A:middle
+request is sent out.
+
+00:23:47.206 --> 00:23:50.156 A:middle
+In the HTTP/1.1 case, there is a
+
+00:23:50.156 --> 00:23:52.306 A:middle
+significant delay between the
+
+00:23:52.306 --> 00:23:53.676 A:middle
+time when your app desires a
+
+00:23:53.676 --> 00:23:55.126 A:middle
+resource and the time the
+
+00:23:55.126 --> 00:23:56.106 A:middle
+request is sent out.
+
+00:23:57.336 --> 00:24:00.336 A:middle
+HTTP/2 can significantly reduce
+

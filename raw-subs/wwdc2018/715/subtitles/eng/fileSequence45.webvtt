@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.736 --> 00:45:00.256 A:middle
+This allows you to use
+
+00:45:00.626 --> 00:45:02.766 A:middle
+previously expired DNS answers
+
+00:45:02.996 --> 00:45:04.136 A:middle
+that may have had a very short
+
+00:45:04.136 --> 00:45:07.616 A:middle
+time to live, and try connecting
+
+00:45:07.616 --> 00:45:10.296 A:middle
+to them while we do a new DNS
+
+00:45:10.936 --> 00:45:12.506 A:middle
+query in parallel.
+
+00:45:13.716 --> 00:45:16.236 A:middle
+So if the addresses that you had
+
+00:45:16.236 --> 00:45:18.876 A:middle
+previously received that did
+
+00:45:18.876 --> 00:45:21.346 A:middle
+expire are still valid, and you
+
+00:45:21.346 --> 00:45:23.486 A:middle
+mark the expired DNS behavior to
+
+00:45:23.486 --> 00:45:24.196 A:middle
+be allow.
+
+00:45:24.696 --> 00:45:26.506 A:middle
+When you call start, we'll try
+
+00:45:26.506 --> 00:45:27.646 A:middle
+connecting to those addresses
+
+00:45:27.646 --> 00:45:29.626 A:middle
+first and not have to wait for
+
+00:45:29.626 --> 00:45:31.116 A:middle
+the new DNS query to finish.
+
+00:45:31.506 --> 00:45:33.006 A:middle
+This can shave off a lot of
+
+00:45:33.006 --> 00:45:34.456 A:middle
+set-up time from your
+
+00:45:34.456 --> 00:45:37.226 A:middle
+connection, but if your server
+
+00:45:37.226 --> 00:45:39.176 A:middle
+has indeed moved addresses,
+
+00:45:39.636 --> 00:45:40.896 A:middle
+because we're trying multiple
+
+00:45:40.896 --> 00:45:43.156 A:middle
+different connection options, if
+
+00:45:43.156 --> 00:45:44.736 A:middle
+that first one doesn't work, we
+
+00:45:44.736 --> 00:45:47.006 A:middle
+will gracefully wait for the new
+
+00:45:47.006 --> 00:45:48.986 A:middle
+DNS query to come back and try
+
+00:45:48.986 --> 00:45:50.456 A:middle
+those addresses as well.
+
+00:45:51.396 --> 00:45:52.746 A:middle
+So this is a very simple way
+
+00:45:53.006 --> 00:45:54.266 A:middle
+that if it's appropriate for
+
+00:45:54.266 --> 00:45:56.266 A:middle
+your server configuration, you
+
+00:45:56.266 --> 00:45:57.986 A:middle
+can get a much faster connection
+
+00:45:57.986 --> 00:45:58.556 A:middle
+establishment.
+

@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.886 --> 00:07:00.746 A:middle
+groups of pixels.
+
+00:07:01.166 --> 00:07:02.156 A:middle
+This gives you the ability to
+
+00:07:02.156 --> 00:07:04.196 A:middle
+write four pixels of an image
+
+00:07:04.576 --> 00:07:06.526 A:middle
+with just one call inside your
+
+00:07:06.526 --> 00:07:06.836 A:middle
+shader.
+
+00:07:08.246 --> 00:07:10.296 A:middle
+So, all three of these features
+
+00:07:10.296 --> 00:07:12.966 A:middle
+can be used in your shaders to
+
+00:07:13.406 --> 00:07:14.756 A:middle
+give great performance
+
+00:07:14.896 --> 00:07:15.446 A:middle
+improvements.
+
+00:07:15.446 --> 00:07:16.296 A:middle
+So, let me talk a little bit
+
+00:07:16.296 --> 00:07:17.606 A:middle
+about an example of how that
+
+00:07:17.606 --> 00:07:18.006 A:middle
+works.
+
+00:07:18.316 --> 00:07:20.686 A:middle
+So, imagine today you have a
+
+00:07:20.686 --> 00:07:22.946 A:middle
+simple 3 by 3 convolution kernel
+
+00:07:23.626 --> 00:07:25.616 A:middle
+that is working only on one
+
+00:07:25.616 --> 00:07:26.556 A:middle
+channel of an image.
+
+00:07:26.686 --> 00:07:27.916 A:middle
+This is actually a fairly common
+
+00:07:27.916 --> 00:07:29.186 A:middle
+operation, for example, if you
+
+00:07:29.186 --> 00:07:30.356 A:middle
+want to sharpen the luminance of
+
+00:07:30.356 --> 00:07:30.756 A:middle
+an image.
+
+00:07:31.226 --> 00:07:32.826 A:middle
+So, in a kernel like this,
+
+00:07:32.826 --> 00:07:34.636 A:middle
+typically, you're -- each time
+
+00:07:34.636 --> 00:07:36.386 A:middle
+your kernel is evoked, it is
+
+00:07:37.076 --> 00:07:38.606 A:middle
+responsible for producing one
+
+00:07:38.606 --> 00:07:39.336 A:middle
+output pixel.
+
+00:07:39.986 --> 00:07:41.386 A:middle
+But, because this is a 3 by 3
+
+00:07:41.386 --> 00:07:43.366 A:middle
+convolution, your kernel needs
+
+00:07:43.366 --> 00:07:46.296 A:middle
+to read 9 pixels in order to
+
+00:07:46.296 --> 00:07:46.946 A:middle
+achieve that effect.
+
+00:07:47.186 --> 00:07:48.756 A:middle
+So, we have 9 pixels read for
+
+00:07:48.756 --> 00:07:50.116 A:middle
+every one pixel written.
+
+00:07:51.466 --> 00:07:52.956 A:middle
+However, we can improve this by
+
+00:07:52.956 --> 00:07:54.956 A:middle
+making use of the new group
+
+00:07:54.956 --> 00:07:55.866 A:middle
+write functionality.
+
+00:07:56.466 --> 00:07:57.326 A:middle
+With the new group write
+
+00:07:57.326 --> 00:07:59.026 A:middle
+functionality, your kernel can
+
+00:07:59.116 --> 00:08:01.866 A:middle
+write a 2 by 2 group of pixels
+

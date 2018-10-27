@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:43:59.506 --> 00:44:03.510 align:start position:18% line:-2
+iPhone Xは3Xデバイスなので
+幅３を掛けます
+
+00:44:04.711 --> 00:44:10.083 align:start position:25% line:-2
+さらに高さ３を掛け
+１ピクセル４バイトも掛けます
+
+00:44:11.852 --> 00:44:14.154 align:start position:32% line:-1
+また大きな数字ですね
+
+00:44:15.789 --> 00:44:21.929 align:start position:21% line:-2
+メモリの内7.5ギガバイツほどを
+使用しているということです
+
+00:44:23.096 --> 00:44:25.933 align:start position:7% line:-1
+原因はbeginImageContextではなく
+
+00:44:26.033 --> 00:44:27.601 align:start position:36% line:-1
+画像サイズでした
+
+00:44:27.701 --> 00:44:30.804 align:start position:27% line:-1
+画像は大きくなくてよいです
+
+00:44:30.904 --> 00:44:35.008 align:start position:29% line:-2
+自分のビューと同じ寸法へ
+縮小したいです
+
+00:44:35.108 --> 00:44:37.244 align:start position:29% line:-1
+メモリの削減にもなります
+
+00:44:37.444 --> 00:44:40.214 align:start position:29% line:-2
+画像をロードするコードに
+戻ります
+
+00:44:40.314 --> 00:44:43.384 align:start position:27% line:-2
+その前にブレークポイントを
+無効にします
+
+00:44:44.785 --> 00:44:46.153 align:start position:29% line:-1
+どうなるか見てみましょう
+
+00:44:46.253 --> 00:44:47.521 align:start position:41% line:-1
+簡単ですね
+
+00:44:47.621 --> 00:44:49.923 align:start position:27% line:-1
+バンドルからURLを取得し
+
+00:44:50.023 --> 00:44:54.061 align:start position:21% line:-2
+URLのデータから
+UIImageにロードしています
+
+00:44:54.161 --> 00:44:57.031 align:start position:25% line:-1
+それがフィルタにパスされます
+
+00:44:57.364 --> 00:45:01.902 align:start position:32% line:-2
+フィルタに渡る前に
+画像を縮小したいです
+

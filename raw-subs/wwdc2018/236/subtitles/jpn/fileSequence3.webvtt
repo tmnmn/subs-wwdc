@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.946 --> 00:03:01.381 align:start position:25% line:-1
+duckOthersとします
+
+00:03:02.416 --> 00:03:03.684 align:start position:30% line:-1
+オーディオセッションは
+
+00:03:03.951 --> 00:03:07.688 align:start position:36% line:-2
+読み上げ終了後も
+無効になりません
+
+00:03:07.855 --> 00:03:10.290 align:start position:32% line:-1
+共有セッションなので
+
+00:03:10.390 --> 00:03:15.596 align:start position:27% line:-2
+他の音声が入っても
+読み上げを止めないためです
+
+00:03:15.696 --> 00:03:19.867 align:start position:29% line:-2
+無効にするには
+ご自身で設定してください
+
+00:03:22.069 --> 00:03:28.008 align:start position:27% line:-2
+再生状況を通知する
+コールバックも利用できます
+
+00:03:28.509 --> 00:03:31.845 align:start position:32% line:-2
+それにはデリゲートを
+使用します
+
+00:03:32.513 --> 00:03:36.383 align:start position:30% line:-2
+通知できるのは
+読み上げ開始時や終了時
+
+00:03:36.550 --> 00:03:38.952 align:start position:32% line:-1
+発話される文字の範囲
+
+00:03:39.386 --> 00:03:42.022 align:start position:30% line:-1
+一時停止時や再開時です
+
+00:03:43.056 --> 00:03:46.293 align:start position:29% line:-1
+コード例を紹介しましょう
+
+00:03:46.393 --> 00:03:51.265 align:start position:32% line:-2
+デリゲートを作成して
+メソッドを実行します
+
+00:03:51.365 --> 00:03:54.768 align:start position:23% line:-1
+didStartは開始時の通知
+
+00:03:55.736 --> 00:03:59.339 align:start position:20% line:-2
+didFinishは終了時の通知を
+設定します
+
+00:03:59.439 --> 00:04:03.844 align:start position:11% line:-2
+willSpeakRangeOfSpeech
+Stringが渡すNSRangeからは
+

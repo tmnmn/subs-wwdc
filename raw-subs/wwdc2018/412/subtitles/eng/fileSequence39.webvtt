@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:38:59.676 --> 00:39:00.676 A:middle
+application while it was still
+
+00:39:00.826 --> 00:39:02.476 A:middle
+in its active state, and we can
+
+00:39:02.476 --> 00:39:04.346 A:middle
+see that the UI still renders as
+
+00:39:04.346 --> 00:39:05.796 A:middle
+if the app was front most and
+
+00:39:05.796 --> 00:39:06.556 A:middle
+the popover hasn't been
+
+00:39:06.556 --> 00:39:07.006 A:middle
+dismissed.
+
+00:39:07.456 --> 00:39:08.266 A:middle
+If you're wondering why that
+
+00:39:08.266 --> 00:39:09.406 A:middle
+spinning [inaudible] is coming
+
+00:39:09.406 --> 00:39:10.236 A:middle
+up, that's because the
+
+00:39:10.236 --> 00:39:11.216 A:middle
+application is paused in the
+
+00:39:11.216 --> 00:39:12.226 A:middle
+debugger and doesn't respond to
+
+00:39:12.226 --> 00:39:12.986 A:middle
+mouse events anymore.
+
+00:39:14.806 --> 00:39:16.116 A:middle
+Now, you may be wondering, if we
+
+00:39:16.116 --> 00:39:17.156 A:middle
+take a look at the view debugger
+
+00:39:17.156 --> 00:39:19.256 A:middle
+here, why the popover isn't
+
+00:39:19.256 --> 00:39:19.616 A:middle
+visible.
+
+00:39:20.426 --> 00:39:21.696 A:middle
+Don't worry, the view hierarchy
+
+00:39:21.696 --> 00:39:22.396 A:middle
+has been captured.
+
+00:39:22.486 --> 00:39:24.176 A:middle
+I'll get to how we take a look
+
+00:39:24.176 --> 00:39:25.346 A:middle
+at the popover once we get to
+
+00:39:25.346 --> 00:39:26.986 A:middle
+that bug, but first I want to
+
+00:39:26.986 --> 00:39:28.176 A:middle
+take a look at the layout issue
+
+00:39:28.176 --> 00:39:29.786 A:middle
+of this image view here.
+
+00:39:29.836 --> 00:39:31.356 A:middle
+So I'll select the image view
+
+00:39:31.356 --> 00:39:32.396 A:middle
+here and I'll zoom in a little
+
+00:39:32.586 --> 00:39:32.676 A:middle
+bit.
+
+00:39:33.176 --> 00:39:34.096 A:middle
+When we take a look at the
+
+00:39:34.096 --> 00:39:35.416 A:middle
+inspect on the right-hand side,
+
+00:39:35.906 --> 00:39:37.276 A:middle
+we can see that this is an
+
+00:39:37.326 --> 00:39:39.146 A:middle
+underscore NS image view simple
+
+00:39:39.146 --> 00:39:39.546 A:middle
+image view.
+
+00:39:39.806 --> 00:39:41.556 A:middle
+Now the fact that this is prefix
+
+00:39:41.556 --> 00:39:43.426 A:middle
+with an underscore usually hints
+
+00:39:43.426 --> 00:39:44.466 A:middle
+at the fact that this is an
+
+00:39:44.516 --> 00:39:45.836 A:middle
+internal class from a system
+
+00:39:45.836 --> 00:39:48.496 A:middle
+framework and not what we use
+
+00:39:48.496 --> 00:39:50.576 A:middle
+when we set up image views in
+
+00:39:50.576 --> 00:39:51.716 A:middle
+code or in interface builder.
+
+00:39:51.976 --> 00:39:52.876 A:middle
+So let's take a look at this
+
+00:39:52.876 --> 00:39:54.486 A:middle
+object in the view hierarchy.
+
+00:39:54.656 --> 00:39:55.836 A:middle
+And I can do that by using the
+
+00:39:55.836 --> 00:39:57.696 A:middle
+navigate menu, select reveal in
+
+00:39:57.696 --> 00:39:58.476 A:middle
+debug navigator.
+
+00:39:59.016 --> 00:40:00.016 A:middle
+We can now, on the left-hand
+

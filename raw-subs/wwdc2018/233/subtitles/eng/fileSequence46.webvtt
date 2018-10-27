@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:45:58.786 --> 00:46:00.676 A:middle
+Any code that you can run in the
+
+00:46:00.676 --> 00:46:02.376 A:middle
+source editor, you can write
+
+00:46:02.376 --> 00:46:03.986 A:middle
+right in the debugger, and run
+
+00:46:04.216 --> 00:46:05.696 A:middle
+while your program is running.
+
+00:46:06.406 --> 00:46:08.446 A:middle
+This is so useful for debugging.
+
+00:46:09.166 --> 00:46:10.416 A:middle
+You can call functions on your
+
+00:46:10.416 --> 00:46:12.496 A:middle
+structs, get properties on your
+
+00:46:12.496 --> 00:46:14.816 A:middle
+objects, and better diagnose
+
+00:46:14.926 --> 00:46:16.146 A:middle
+what your program is doing.
+
+00:46:17.176 --> 00:46:18.726 A:middle
+For even more about debugging,
+
+00:46:19.136 --> 00:46:20.856 A:middle
+check out this great talk on how
+
+00:46:20.856 --> 00:46:23.286 A:middle
+to debug with LLDB from 2012,
+
+00:46:23.866 --> 00:46:25.776 A:middle
+and how to debug with Swift from
+
+00:46:25.776 --> 00:46:26.826 A:middle
+2014.
+
+00:46:27.796 --> 00:46:29.376 A:middle
+There's some great functions
+
+00:46:29.376 --> 00:46:31.346 A:middle
+that you can run inside of LLDB
+
+00:46:31.346 --> 00:46:33.006 A:middle
+with the expression command,
+
+00:46:33.116 --> 00:46:34.236 A:middle
+that we're going to teach you.
+
+00:46:34.486 --> 00:46:35.976 A:middle
+And, the first one, is dump.
+
+00:46:36.516 --> 00:46:40.906 A:middle
+[ Laughter ]
+
+00:46:41.406 --> 00:46:43.446 A:middle
+&gt;&gt; Dump will print all of your
+
+00:46:43.446 --> 00:46:45.866 A:middle
+Swift objects and structs
+
+00:46:46.286 --> 00:46:46.816 A:middle
+properties.
+
+00:46:48.246 --> 00:46:49.656 A:middle
+Let's go through another bug
+
+00:46:50.066 --> 00:46:51.536 A:middle
+that we have in some of our
+
+00:46:51.536 --> 00:46:52.106 A:middle
+custom UI.
+
+00:46:53.686 --> 00:46:55.076 A:middle
+We have a view with a number of
+
+00:46:55.156 --> 00:46:57.906 A:middle
+subviews, including some labels,
+
+00:46:57.906 --> 00:46:58.676 A:middle
+and an imageView.
+
+00:46:59.026 --> 00:47:00.566 A:middle
+And, right now one of our labels
+

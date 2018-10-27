@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:55.816 --> 00:09:02.916 A:middle
+Oh. Okay. So, 3D models are,
+
+00:09:02.916 --> 00:09:04.276 A:middle
+usually, represented as arrays
+
+00:09:04.276 --> 00:09:04.916 A:middle
+of triangles.
+
+00:09:05.966 --> 00:09:07.756 A:middle
+What we need to do is search
+
+00:09:07.756 --> 00:09:09.306 A:middle
+through those triangles and
+
+00:09:09.306 --> 00:09:10.986 A:middle
+figure out which ones intersect
+
+00:09:10.986 --> 00:09:11.486 A:middle
+each ray.
+
+00:09:11.576 --> 00:09:13.926 A:middle
+And furthermore, we need to
+
+00:09:13.926 --> 00:09:15.526 A:middle
+figure out which intersection
+
+00:09:15.526 --> 00:09:16.956 A:middle
+point is closest to the ray's
+
+00:09:16.956 --> 00:09:17.346 A:middle
+origin.
+
+00:09:17.586 --> 00:09:20.516 A:middle
+And the simplest way to do this
+
+00:09:20.996 --> 00:09:22.116 A:middle
+would be to just loop through
+
+00:09:22.116 --> 00:09:23.506 A:middle
+all the triangles and check for
+
+00:09:23.506 --> 00:09:24.506 A:middle
+intersection with the ray.
+
+00:09:25.376 --> 00:09:26.226 A:middle
+But for anything but the
+
+00:09:26.226 --> 00:09:27.776 A:middle
+smallest scenes, this would be
+
+00:09:27.776 --> 00:09:28.646 A:middle
+far too slow.
+
+00:09:29.666 --> 00:09:31.416 A:middle
+So instead, we built a data
+
+00:09:31.416 --> 00:09:32.516 A:middle
+structure that we call an
+
+00:09:32.516 --> 00:09:33.606 A:middle
+Acceleration Structure.
+
+00:09:34.156 --> 00:09:36.056 A:middle
+The acceleration structure works
+
+00:09:36.096 --> 00:09:37.336 A:middle
+by recursively dividing the
+
+00:09:37.336 --> 00:09:39.186 A:middle
+scene into groups of triangles
+
+00:09:39.216 --> 00:09:40.426 A:middle
+that are located nearby in
+
+00:09:40.426 --> 00:09:40.826 A:middle
+space.
+
+00:09:42.496 --> 00:09:43.696 A:middle
+When you want to intersect a ray
+
+00:09:43.696 --> 00:09:45.796 A:middle
+with a scene, we intersect the
+
+00:09:45.796 --> 00:09:47.086 A:middle
+ray with the bounding boxes in
+
+00:09:47.086 --> 00:09:47.486 A:middle
+the tree.
+
+00:09:48.386 --> 00:09:50.016 A:middle
+If a ray misses a bounding box,
+
+00:09:50.136 --> 00:09:51.276 A:middle
+then we can skip the entire
+
+00:09:51.276 --> 00:09:51.806 A:middle
+subtree.
+
+00:09:53.136 --> 00:09:54.226 A:middle
+In the end, we're left with just
+
+00:09:54.226 --> 00:09:55.456 A:middle
+a fraction of the triangles that
+
+00:09:55.456 --> 00:09:56.636 A:middle
+we actually need to check for
+
+00:09:56.636 --> 00:09:57.586 A:middle
+intersection with the ray.
+
+00:09:58.746 --> 00:10:00.356 A:middle
+So, this is the main way that we
+

@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.426 --> 00:37:00.436 A:middle
+access them.
+
+00:37:00.606 --> 00:37:01.866 A:middle
+Even better, they can also be
+
+00:37:01.866 --> 00:37:03.456 A:middle
+suggested right on the Siri
+
+00:37:03.456 --> 00:37:05.126 A:middle
+watch face on Apple Watch.
+
+00:37:06.696 --> 00:37:08.246 A:middle
+Now not only are Siri actions
+
+00:37:08.276 --> 00:37:09.916 A:middle
+suggested proactively but they
+
+00:37:09.916 --> 00:37:11.236 A:middle
+can also be set up to be
+
+00:37:11.236 --> 00:37:13.146 A:middle
+executed using a custom voice
+
+00:37:13.226 --> 00:37:13.596 A:middle
+phrase.
+
+00:37:17.256 --> 00:37:19.296 A:middle
+Now, adding Siri Action Support
+
+00:37:19.296 --> 00:37:21.786 A:middle
+to your apps is really easy.
+
+00:37:21.786 --> 00:37:22.946 A:middle
+You can use two APIs.
+
+00:37:23.266 --> 00:37:24.826 A:middle
+There's NS User Activity, which
+
+00:37:24.826 --> 00:37:26.306 A:middle
+you may already be using for
+
+00:37:26.306 --> 00:37:28.916 A:middle
+support for Handoff and
+
+00:37:28.916 --> 00:37:29.886 A:middle
+Spotlight integration, and
+
+00:37:30.356 --> 00:37:32.016 A:middle
+there's also support for Siri
+
+00:37:32.016 --> 00:37:33.346 A:middle
+Intents for more complex
+
+00:37:33.396 --> 00:37:35.316 A:middle
+scenarios where you have more
+
+00:37:35.316 --> 00:37:36.246 A:middle
+custom interactions.
+
+00:37:36.816 --> 00:37:38.156 A:middle
+So let's look first at NS User
+
+00:37:38.156 --> 00:37:38.606 A:middle
+Activity.
+
+00:37:39.406 --> 00:37:40.466 A:middle
+Now as I mentioned, NS User
+
+00:37:40.466 --> 00:37:42.056 A:middle
+Activity is a common API with
+
+00:37:42.056 --> 00:37:43.856 A:middle
+Handoff and Spotlight and this
+
+00:37:43.856 --> 00:37:45.116 A:middle
+could be a really great API to
+
+00:37:45.116 --> 00:37:46.826 A:middle
+use if your Siri Shortcuts
+
+00:37:46.826 --> 00:37:48.416 A:middle
+should get your customers back
+
+00:37:48.466 --> 00:37:50.116 A:middle
+to a specific place in your app,
+
+00:37:50.316 --> 00:37:51.516 A:middle
+for example loading a particular
+
+00:37:51.516 --> 00:37:54.226 A:middle
+message or document, the same as
+
+00:37:54.226 --> 00:37:55.056 A:middle
+you would do if you were trying
+
+00:37:55.056 --> 00:37:55.986 A:middle
+to hand that off to another
+
+00:37:55.986 --> 00:37:56.516 A:middle
+device.
+
+00:37:57.176 --> 00:37:58.706 A:middle
+If you're already doing this,
+
+00:37:58.806 --> 00:38:00.336 A:middle
+it's really easy to add support
+

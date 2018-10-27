@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:56.376 --> 00:23:00.214 align:start position:25% line:-1
+単式を含むクロージャがある時
+
+00:23:00.347 --> 00:23:05.285 align:start position:27% line:-2
+コンパイラがその式から
+型を判定してくれる機能です
+
+00:23:05.786 --> 00:23:07.588 align:start position:36% line:-1
+非常に便利ですが
+
+00:23:08.055 --> 00:23:11.291 align:start position:25% line:-1
+時々 こんなコードになります
+
+00:23:12.726 --> 00:23:16.363 align:start position:30% line:-2
+これはひどい
+レビューで却下でしょう
+
+00:23:17.197 --> 00:23:22.336 align:start position:32% line:-2
+入れ子の三項演算子や
+nilとの明示的比較
+
+00:23:22.436 --> 00:23:27.107 align:start position:32% line:-2
+これでうまく動くとは
+思えません
+
+00:23:27.407 --> 00:23:29.443 align:start position:34% line:-1
+別の問題もあります
+
+00:23:29.643 --> 00:23:34.348 align:start position:30% line:-2
+式が大きくなり
+独立した断片が多いため
+
+00:23:34.815 --> 00:23:40.254 align:start position:29% line:-2
+Swiftのコンパイラは
+時間内に処理できません
+
+00:23:40.888 --> 00:23:44.958 align:start position:27% line:-2
+コンパイラもお手上げという
+究極の例です
+
+00:23:45.726 --> 00:23:48.462 align:start position:30% line:-1
+コードを再考しましょう
+
+00:23:48.829 --> 00:23:53.033 align:start position:32% line:-2
+まず 先ほどの例と
+同じことをしてみます
+
+00:23:53.133 --> 00:23:55.002 align:start position:38% line:-1
+型を追加します
+
+00:23:55.102 --> 00:23:58.205 align:start position:34% line:-2
+クロージャでは
+inの前に入れます
+
+00:23:59.506 --> 00:24:03.544 align:start position:30% line:-2
+しかし この場合
+最善の策とは言えません
+

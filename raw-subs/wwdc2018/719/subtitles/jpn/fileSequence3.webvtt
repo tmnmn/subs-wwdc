@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.346 --> 00:03:03.984 align:start position:30% line:-2
+後続のレンダリングを
+できる限り速く行います
+
+00:03:04.151 --> 00:03:09.122 align:start position:23% line:-2
+しかしキャッシュを
+無効にしたい場合もあるでしょう
+
+00:03:09.423 --> 00:03:14.628 align:start position:27% line:-2
+例えば100の画像を
+バッチエクスポートする際に
+
+00:03:14.862 --> 00:03:20.300 align:start position:25% line:-2
+最初の画像をキャッシュしても
+レンダリングでは使いません
+
+00:03:20.667 --> 00:03:25.205 align:start position:12% line:-2
+従ってコンテキストオプションの
+cacheIntermediatesを使い
+
+00:03:25.305 --> 00:03:27.241 align:start position:23% line:-1
+その値をfalseに設定します
+
+00:03:28.475 --> 00:03:32.513 align:start position:21% line:-2
+しかし新しいAPIは
+コンテキストオプションが無効でも
+
+00:03:32.679 --> 00:03:38.185 align:start position:27% line:-2
+中間バッファのキャッシュを
+有効にできます
+
+00:03:38.285 --> 00:03:42.956 align:start position:34% line:-2
+何を格納するかを
+選択しているのです
+
+00:03:45.492 --> 00:03:50.797 align:start position:30% line:-2
+次にお話しするテーマは
+画像処理を行うための―
+
+00:03:50.898 --> 00:03:53.834 align:start position:38% line:-2
+カーネル言語の
+新しい機能です
+
+00:03:55.002 --> 00:03:59.973 align:start position:21% line:-2
+Core Imageにカーネルを
+書き込む方法は２つあります
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.056 --> 00:27:00.126 A:middle
+incoming data off of the
+
+00:27:00.126 --> 00:27:00.576 A:middle
+connection.
+
+00:27:01.536 --> 00:27:03.006 A:middle
+In that completion handler, we
+
+00:27:03.006 --> 00:27:04.106 A:middle
+validate that the content is
+
+00:27:04.106 --> 00:27:06.216 A:middle
+present, and if so, we let the
+
+00:27:06.216 --> 00:27:07.386 A:middle
+rest of the application know
+
+00:27:07.386 --> 00:27:08.836 A:middle
+that we're connected, and it
+
+00:27:08.836 --> 00:27:09.776 A:middle
+should bring up the camera
+
+00:27:09.776 --> 00:27:11.156 A:middle
+hardware and start generating
+
+00:27:11.156 --> 00:27:11.476 A:middle
+frames.
+
+00:27:12.076 --> 00:27:15.186 A:middle
+When those frames are generated,
+
+00:27:15.616 --> 00:27:16.566 A:middle
+the rest of the application
+
+00:27:16.566 --> 00:27:18.266 A:middle
+knows to call send on our
+
+00:27:18.266 --> 00:27:22.986 A:middle
+UDPClient class and pass it an
+
+00:27:23.246 --> 00:27:24.676 A:middle
+array of data objects
+
+00:27:24.796 --> 00:27:26.056 A:middle
+representing the video frames
+
+00:27:26.186 --> 00:27:28.906 A:middle
+that we're trying to send.
+
+00:27:29.096 --> 00:27:30.006 A:middle
+Because we're going to be doing
+
+00:27:30.006 --> 00:27:31.406 A:middle
+a lot of send operations in very
+
+00:27:31.406 --> 00:27:32.876 A:middle
+quick succession, we're going to
+
+00:27:32.876 --> 00:27:34.516 A:middle
+do them within a block that we
+
+00:27:34.516 --> 00:27:37.436 A:middle
+passed in connection.batch.
+
+00:27:37.646 --> 00:27:39.126 A:middle
+Within this block we're going to
+
+00:27:39.126 --> 00:27:41.026 A:middle
+go through every frame in that
+
+00:27:41.026 --> 00:27:43.206 A:middle
+array of data objects and pass
+
+00:27:43.206 --> 00:27:45.226 A:middle
+each one to connection.send.
+
+00:27:45.926 --> 00:27:47.826 A:middle
+Similarly to above, we use the
+
+00:27:47.826 --> 00:27:48.976 A:middle
+completion handler to check for
+
+00:27:48.976 --> 00:27:50.466 A:middle
+any errors that were encountered
+
+00:27:50.466 --> 00:27:50.916 A:middle
+while sending.
+
+00:27:52.056 --> 00:27:52.526 A:middle
+And that's it.
+
+00:27:53.216 --> 00:27:54.546 A:middle
+We've got our UDPClient class,
+
+00:27:54.826 --> 00:27:55.556 A:middle
+and we're ready to go.
+
+00:27:55.556 --> 00:27:58.566 A:middle
+Let's look at the server.
+
+00:27:59.896 --> 00:28:01.416 A:middle
+On the server side, we need a
+

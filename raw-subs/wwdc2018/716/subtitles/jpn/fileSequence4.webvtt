@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.740 --> 00:04:02.910 align:start position:29% line:-2
+ニューラルネットワークに
+入れる情報を
+
+00:04:03.010 --> 00:04:06.480 align:start position:30% line:-2
+リクエストハンドラでも
+キャッシュします
+
+00:04:06.580 --> 00:04:12.719 align:start position:29% line:-2
+次に同一の形式を使う際に
+再計算の必要がありません
+
+00:04:13.187 --> 00:04:17.891 align:start position:23% line:-2
+リクエストの結果もキャッシュし
+パイプライン上で使えます
+
+00:04:17.991 --> 00:04:21.428 align:start position:36% line:-2
+パイプラインを
+見ていきましょう
+
+00:04:22.930 --> 00:04:24.865 align:start position:9% line:-1
+SequenceRequestHandlerは
+
+00:04:25.499 --> 00:04:31.839 align:start position:25% line:-2
+フレームのシーケンス内での
+トラッキングなどに使われます
+
+00:04:32.406 --> 00:04:35.509 align:start position:29% line:-2
+シーケンス全体にわたって
+フレーム間の―
+
+00:04:35.609 --> 00:04:38.512 align:start position:32% line:-2
+オペレーション状況を
+キャッシュします
+
+00:04:39.546 --> 00:04:43.750 align:start position:23% line:-2
+Visionではトラッキングや
+画像登録処理などに使われ
+
+00:04:43.884 --> 00:04:46.987 align:start position:7% line:-2
+その他の処理は
+ImageRequestHandlerによります
+
+00:04:51.124 --> 00:04:54.928 align:start position:27% line:-2
+結果は
+オブザベーションから出ます
+
+00:04:55.295 --> 00:05:01.401 align:start position:18% line:-2
+これはVNObservationから
+派生するクラスの集合体です
+

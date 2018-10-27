@@ -1,0 +1,51 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:58.619 --> 00:07:03.590 align:start position:29% line:-2
+そのためプログラム実行時
+予想外の動作をします
+
+00:07:05.225 --> 00:07:07.361 align:start position:29% line:-1
+２つ目はメモリ解放の前に
+
+00:07:07.461 --> 00:07:12.299 align:start position:25% line:-2
+ARCオブジェクトポインタが
+クリアされません
+
+00:07:12.533 --> 00:07:17.304 align:start position:29% line:-2
+そのためプログラム実行時
+メモリリークが起きます
+
+00:07:19.139 --> 00:07:21.642 align:start position:29% line:-1
+１つ目の問題を修正します
+
+00:07:21.742 --> 00:07:25.245 align:start position:14% line:-1
+mallocをcallocに置き換えます
+
+00:07:25.746 --> 00:07:29.583 align:start position:25% line:-1
+これでメモリは０に初期化され
+
+00:07:30.050 --> 00:07:34.688 align:start position:32% line:-2
+実行時の厄介な問題は
+すべて解消されます
+
+00:07:35.756 --> 00:07:42.062 align:start position:23% line:-2
+２つ目はメモリに割り当てる前に
+ループを書くことで
+
+00:07:42.162 --> 00:07:45.599 align:start position:25% line:-2
+ARCオブジェクトポインタを
+クリアできます
+
+00:07:46.266 --> 00:07:49.837 align:start position:25% line:-1
+これでアイテムの名前と価格は
+
+00:07:49.937 --> 00:07:52.606 align:start position:30% line:-1
+解放時にリークしません
+
+00:07:56.009 --> 00:07:58.712 align:start position:30% line:-1
+ARCは非常に便利です
+
+00:07:59.046 --> 00:08:01.315 align:start position:29% line:-1
+このような機能がないため
+

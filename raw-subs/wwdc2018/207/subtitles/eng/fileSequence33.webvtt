@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:58.186 --> 00:33:00.386 A:middle
+process that your web content
+
+00:33:00.386 --> 00:33:02.646 A:middle
+resides in and read your bytes.
+
+00:33:03.436 --> 00:33:04.746 A:middle
+So, how do we make sure this
+
+00:33:04.746 --> 00:33:05.326 A:middle
+never happens?
+
+00:33:06.286 --> 00:33:07.656 A:middle
+OK. We've got these things.
+
+00:33:07.936 --> 00:33:09.836 A:middle
+First, WKWebView.
+
+00:33:10.036 --> 00:33:11.406 A:middle
+Now we're looking at apps using
+
+00:33:11.406 --> 00:33:12.616 A:middle
+WebKit as a framework.
+
+00:33:13.616 --> 00:33:16.466 A:middle
+I'm looking here at Safari,
+
+00:33:16.756 --> 00:33:18.046 A:middle
+which is an example of an app
+
+00:33:18.046 --> 00:33:20.216 A:middle
+that has been using WKWebView
+
+00:33:20.326 --> 00:33:22.386 A:middle
+and we sometimes refer to it as
+
+00:33:22.386 --> 00:33:24.306 A:middle
+Modern WebKit, has been using it
+
+00:33:24.306 --> 00:33:25.596 A:middle
+for many, many years.
+
+00:33:25.986 --> 00:33:27.866 A:middle
+And it provides excellent
+
+00:33:28.096 --> 00:33:29.346 A:middle
+advantages.
+
+00:33:30.096 --> 00:33:32.336 A:middle
+For instance, these three tabs,
+
+00:33:32.536 --> 00:33:34.296 A:middle
+the evil.example, your web
+
+00:33:34.296 --> 00:33:36.696 A:middle
+content, and webkit.org are all
+
+00:33:36.696 --> 00:33:38.516 A:middle
+rendered in separate web content
+
+00:33:38.516 --> 00:33:39.096 A:middle
+processes.
+
+00:33:40.126 --> 00:33:42.896 A:middle
+Further, WKWebView provides you
+
+00:33:43.026 --> 00:33:44.726 A:middle
+with a separate process for
+
+00:33:44.726 --> 00:33:45.566 A:middle
+networking.
+
+00:33:45.816 --> 00:33:47.436 A:middle
+This is where cookies get added
+
+00:33:47.436 --> 00:33:51.136 A:middle
+and HTTP headers are parsed and
+
+00:33:51.316 --> 00:33:51.966 A:middle
+et cetera.
+
+00:33:54.306 --> 00:33:56.036 A:middle
+Now, speculative execution
+
+00:33:56.036 --> 00:33:58.346 A:middle
+attacks all rely on being in the
+
+00:33:58.346 --> 00:34:00.796 A:middle
+same web content process and
+

@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.696 --> 00:02:00.476 A:middle
+frame is loaded, we're just back
+
+00:02:00.526 --> 00:02:02.246 A:middle
+to moving content around, so the
+
+00:02:02.246 --> 00:02:03.696 A:middle
+amount of work we do on the CPU
+
+00:02:03.696 --> 00:02:05.236 A:middle
+goes back to being pretty small
+
+00:02:05.236 --> 00:02:06.276 A:middle
+for most of that other
+
+00:02:06.276 --> 00:02:06.806 A:middle
+scrolling.
+
+00:02:07.386 --> 00:02:10.235 A:middle
+So what's happening during that
+
+00:02:10.295 --> 00:02:11.676 A:middle
+really expensive frame that
+
+00:02:11.676 --> 00:02:13.446 A:middle
+causes that one to be more than
+
+00:02:13.446 --> 00:02:14.116 A:middle
+all the others?
+
+00:02:14.776 --> 00:02:15.986 A:middle
+Well, let's take a look from the
+
+00:02:16.026 --> 00:02:18.096 A:middle
+perspective UI Table View but
+
+00:02:18.096 --> 00:02:19.276 A:middle
+everything we look at here will
+
+00:02:19.276 --> 00:02:20.326 A:middle
+really be the same for UI
+
+00:02:20.326 --> 00:02:22.066 A:middle
+Collection View or really any of
+
+00:02:22.066 --> 00:02:23.226 A:middle
+your own custom views that you
+
+00:02:23.226 --> 00:02:24.786 A:middle
+may build that behave in similar
+
+00:02:24.786 --> 00:02:25.156 A:middle
+ways.
+
+00:02:25.866 --> 00:02:28.706 A:middle
+So the work in that expensive
+
+00:02:28.756 --> 00:02:30.386 A:middle
+frame probably starts in your
+
+00:02:30.386 --> 00:02:32.296 A:middle
+implementation of TableView,
+
+00:02:32.396 --> 00:02:33.616 A:middle
+cell For Row At index Path
+
+00:02:33.676 --> 00:02:34.306 A:middle
+delegate method.
+
+00:02:34.906 --> 00:02:36.906 A:middle
+Now the first thing we're going
+
+00:02:36.906 --> 00:02:38.416 A:middle
+to do in there is get the cell
+
+00:02:38.416 --> 00:02:39.316 A:middle
+that we want to display.
+
+00:02:39.746 --> 00:02:40.786 A:middle
+And so we're going to try and
+
+00:02:40.856 --> 00:02:42.166 A:middle
+dequeue it ideally from the
+
+00:02:42.166 --> 00:02:44.666 A:middle
+reuse queue although if one is
+
+00:02:44.666 --> 00:02:45.966 A:middle
+not available already in the
+
+00:02:45.966 --> 00:02:46.936 A:middle
+queue, we might actually have to
+
+00:02:46.936 --> 00:02:48.326 A:middle
+do some memory allocation in
+
+00:02:48.326 --> 00:02:50.176 A:middle
+order to get it ready.
+
+00:02:51.036 --> 00:02:52.196 A:middle
+Once we have the cell, we're
+
+00:02:52.196 --> 00:02:53.446 A:middle
+then going to populate it with
+
+00:02:53.446 --> 00:02:54.316 A:middle
+your model data.
+
+00:02:54.916 --> 00:02:56.496 A:middle
+Now how expensive that is will
+
+00:02:56.496 --> 00:02:57.686 A:middle
+vary depending on your
+
+00:02:57.686 --> 00:02:59.496 A:middle
+application but it can be
+
+00:02:59.496 --> 00:03:01.476 A:middle
+including a fairly large amount
+

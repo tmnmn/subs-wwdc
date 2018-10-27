@@ -1,0 +1,57 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:56.063 --> 00:35:00.033 align:start position:25% line:-1
+リロードの仕組みを理解すると
+
+00:35:00.134 --> 00:35:04.938 align:start position:29% line:-2
+今回のアプリケーションの
+エラーが分かってきます
+
+00:35:05.372 --> 00:35:10.778 align:start position:23% line:-2
+リロードでの削除が
+移動と矛盾を起こしているのです
+
+00:35:10.878 --> 00:35:13.180 align:start position:30% line:-1
+後でコードで修正します
+
+00:35:14.248 --> 00:35:17.951 align:start position:25% line:-1
+参考までに紹介しておきますが
+
+00:35:18.052 --> 00:35:23.557 align:start position:18% line:-2
+これがCollectionViewが
+作動しなくなる原因です
+
+00:35:25.325 --> 00:35:29.730 align:start position:25% line:-2
+どうやって
+これらの知識を活用できるのか
+
+00:35:29.830 --> 00:35:33.133 align:start position:27% line:-2
+どのように
+データソースの更新を適用し
+
+00:35:33.233 --> 00:35:36.937 align:start position:23% line:-1
+全てが同期するように保てるのか
+
+00:35:37.037 --> 00:35:39.173 align:start position:29% line:-1
+４つの基本原則があります
+
+00:35:39.373 --> 00:35:43.243 align:start position:25% line:-1
+移動を 削除と挿入に分解して
+
+00:35:43.710 --> 00:35:47.047 align:start position:30% line:-1
+２つのリストに分けます
+
+00:35:47.981 --> 00:35:52.085 align:start position:27% line:-2
+まずindexPath上で
+削除を降順で処理し
+
+00:35:52.319 --> 00:35:55.355 align:start position:30% line:-1
+挿入を昇順で適用します
+
+00:35:55.756 --> 00:35:58.192 align:start position:30% line:-1
+これをやれば大丈夫です
+
+00:35:59.727 --> 00:36:01.428 align:start position:32% line:-1
+データのリロードは？
+

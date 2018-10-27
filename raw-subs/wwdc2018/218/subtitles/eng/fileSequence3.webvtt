@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.186 --> 00:03:01.956 A:middle
+Now, in addition to being at the
+
+00:03:01.956 --> 00:03:03.976 A:middle
+core of Dark Mode, we've already
+
+00:03:03.976 --> 00:03:05.426 A:middle
+been using NSAppearance for
+
+00:03:05.426 --> 00:03:06.936 A:middle
+several years and it's underlied
+
+00:03:06.936 --> 00:03:08.316 A:middle
+[phonetic] such features as the
+
+00:03:08.316 --> 00:03:10.636 A:middle
+high contrast mode of macOS as
+
+00:03:10.636 --> 00:03:12.376 A:middle
+well as the touch bar UI
+
+00:03:12.616 --> 00:03:14.266 A:middle
+designed specifically for that
+
+00:03:14.266 --> 00:03:15.266 A:middle
+awesome piece of hardware.
+
+00:03:16.116 --> 00:03:20.056 A:middle
+Now, previously we've had one
+
+00:03:20.196 --> 00:03:21.726 A:middle
+main appearance, one main light
+
+00:03:21.726 --> 00:03:23.546 A:middle
+appearance for aqua windows and
+
+00:03:23.546 --> 00:03:24.226 A:middle
+we called aqua.
+
+00:03:24.816 --> 00:03:26.336 A:middle
+And, of course, in 10.14, we're
+
+00:03:26.336 --> 00:03:27.806 A:middle
+introducing a second appearance
+
+00:03:27.806 --> 00:03:29.636 A:middle
+for aqua windows for Dark Mode
+
+00:03:30.166 --> 00:03:30.966 A:middle
+called darkAqua.
+
+00:03:32.346 --> 00:03:33.916 A:middle
+These objects contain all the
+
+00:03:33.916 --> 00:03:35.556 A:middle
+assets that views draw with.
+
+00:03:36.336 --> 00:03:38.036 A:middle
+So, any time you use system
+
+00:03:38.036 --> 00:03:39.886 A:middle
+dynamic colors or standard
+
+00:03:39.886 --> 00:03:42.226 A:middle
+effects or named images or even
+
+00:03:42.226 --> 00:03:43.606 A:middle
+just standard Cocoa controls,
+
+00:03:43.786 --> 00:03:45.076 A:middle
+this is where all that stuff is
+
+00:03:45.166 --> 00:03:45.746 A:middle
+coming from.
+
+00:03:46.166 --> 00:03:49.436 A:middle
+And AppKit will automatically
+
+00:03:49.436 --> 00:03:51.486 A:middle
+provide appearances for all of
+
+00:03:51.486 --> 00:03:53.646 A:middle
+you views and windows based on
+
+00:03:53.646 --> 00:03:55.136 A:middle
+the user's light/dark preference
+
+00:03:55.136 --> 00:03:56.796 A:middle
+in system preferences once you
+
+00:03:56.796 --> 00:03:59.326 A:middle
+link on the macOS 10.14 SDK.
+

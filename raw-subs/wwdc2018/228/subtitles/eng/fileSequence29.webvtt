@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:57.706 --> 00:29:00.976 A:middle
+And as you see, the weighted
+
+00:29:00.976 --> 00:29:03.346 A:middle
+cobra apples start populating in
+
+00:29:03.346 --> 00:29:08.136 A:middle
+a moment; here, we can see that
+
+00:29:08.136 --> 00:29:09.386 A:middle
+the dispatched thread here is
+
+00:29:09.386 --> 00:29:10.666 A:middle
+consuming the most CPU time.
+
+00:29:11.076 --> 00:29:12.436 A:middle
+Let's go ahead and dig into it.
+
+00:29:12.896 --> 00:29:16.886 A:middle
+And we can see that we have
+
+00:29:16.886 --> 00:29:17.996 A:middle
+closure at something called
+
+00:29:17.996 --> 00:29:19.156 A:middle
+appdelegate.compute.
+
+00:29:20.226 --> 00:29:21.936 A:middle
+Well, let's jump back to our
+
+00:29:21.936 --> 00:29:22.676 A:middle
+application and try to
+
+00:29:22.676 --> 00:29:23.656 A:middle
+understand what that is.
+
+00:29:29.596 --> 00:29:30.736 A:middle
+So, for the purpose of this
+
+00:29:30.736 --> 00:29:32.676 A:middle
+demo, when we entered the
+
+00:29:32.676 --> 00:29:34.006 A:middle
+background in Energy Game, we
+
+00:29:34.006 --> 00:29:34.826 A:middle
+called something called
+
+00:29:34.826 --> 00:29:35.466 A:middle
+computation.
+
+00:29:36.656 --> 00:29:39.896 A:middle
+Computation is a really terrible
+
+00:29:40.866 --> 00:29:41.686 A:middle
+function.
+
+00:29:41.686 --> 00:29:44.006 A:middle
+It basically starts spinning
+
+00:29:44.206 --> 00:29:45.836 A:middle
+wildly with a while true loop
+
+00:29:46.346 --> 00:29:47.886 A:middle
+when we inject Big1.
+
+00:29:48.046 --> 00:29:49.096 A:middle
+So, it's very simple for the
+
+00:29:49.096 --> 00:29:51.246 A:middle
+purpose of this demo, but using
+
+00:29:51.246 --> 00:29:52.636 A:middle
+both the gauges and the time
+
+00:29:52.636 --> 00:29:53.796 A:middle
+profiler, we were able to dig
+
+00:29:53.796 --> 00:29:55.326 A:middle
+back directly to where this was
+
+00:29:55.326 --> 00:29:57.186 A:middle
+happening, and we can see that
+
+00:29:57.186 --> 00:29:59.076 A:middle
+this while true loop is not
+
+00:29:59.076 --> 00:29:59.266 A:middle
+good.
+

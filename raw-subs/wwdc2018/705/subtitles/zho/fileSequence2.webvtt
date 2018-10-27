@@ -1,0 +1,77 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.652 --> 00:02:02.256 align:middle line:-2
+首先 我们谈谈在你的app中
+接收该交易
+
+00:02:04.024 --> 00:02:06.426 align:middle line:0
+现在无论是首次购买订阅
+
+00:02:06.493 --> 00:02:08.862 align:middle line:0
+还是续订交易
+
+00:02:09.395 --> 00:02:11.932 align:middle line:0
+你的app均已被设为
+使用StoreKit框架
+
+00:02:11.999 --> 00:02:14.101 align:middle line:0
+来处理订阅和交易
+
+00:02:14.735 --> 00:02:17.237 align:middle line:0
+当你用StoreKit处理交易时
+
+00:02:17.304 --> 00:02:21.208 align:middle line:0
+App Store将在后台
+对用户的信用卡收取这些费用
+
+00:02:21.642 --> 00:02:25.345 align:middle line:0
+无论何时只要有交易发生
+它都会通过一个名为
+
+00:02:25.412 --> 00:02:27.214 align:middle line:0
+SKPaymentTransactionsObserver
+的东西
+
+00:02:27.281 --> 00:02:28.515 align:middle line:0
+来通知你的app
+
+00:02:30.083 --> 00:02:33.720 align:middle line:0
+这个交易观察者对象
+实际上是你的app中
+
+00:02:33.921 --> 00:02:35.689 align:middle line:0
+app内购买的核心部分
+
+00:02:35.756 --> 00:02:38.392 align:middle line:-2
+它只是StoreKit中
+一个协议 看起来像这样
+
+00:02:38.458 --> 00:02:39.860 align:middle line:-1
+你可将其设置在任何对象上
+
+00:02:40.260 --> 00:02:42.963 align:middle line:-2
+这例子中 我们将它
+设置在AppDelegate上
+
+00:02:43.797 --> 00:02:46.433 align:middle line:-2
+但最重要的是你需要
+在app生命周期中
+
+00:02:46.500 --> 00:02:50.404 align:middle line:-2
+尽可能早的添加一个交易观察者
+到默认支付队列
+
+00:02:51.471 --> 00:02:54.875 align:middle line:-2
+一旦你在默认支付队列中
+注册了交易观察者
+
+00:02:54.942 --> 00:02:56.743 align:middle line:-1
+你就准备好开始接收
+
+00:02:56.810 --> 00:02:58.245 align:middle line:-1
+后台所发生的交易了
+
+00:02:59.880 --> 00:03:01.682 align:middle line:-1
+你在交易观察者中的
+

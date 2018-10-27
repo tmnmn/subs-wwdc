@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.876 --> 00:30:00.726 A:middle
+Specifically, we want to
+
+00:30:00.726 --> 00:30:02.466 A:middle
+localize into Chinese.
+
+00:30:03.346 --> 00:30:03.856 A:middle
+Okay.
+
+00:30:04.026 --> 00:30:05.326 A:middle
+So, we sent off all our strings
+
+00:30:05.326 --> 00:30:06.666 A:middle
+for translation and they've come
+
+00:30:06.666 --> 00:30:06.896 A:middle
+back.
+
+00:30:07.386 --> 00:30:08.876 A:middle
+And our app is now perfectly
+
+00:30:08.876 --> 00:30:09.976 A:middle
+localized into simplified
+
+00:30:09.976 --> 00:30:10.346 A:middle
+Chinese.
+
+00:30:11.036 --> 00:30:11.546 A:middle
+Cool.
+
+00:30:12.956 --> 00:30:14.716 A:middle
+But it's not really, though.
+
+00:30:14.816 --> 00:30:15.886 A:middle
+Because look at what happened to
+
+00:30:15.886 --> 00:30:16.356 A:middle
+the title.
+
+00:30:17.366 --> 00:30:19.146 A:middle
+So, in English, we have this fun
+
+00:30:19.196 --> 00:30:22.016 A:middle
+font, but in Chinese we are
+
+00:30:22.016 --> 00:30:22.976 A:middle
+using the system font.
+
+00:30:23.126 --> 00:30:24.506 A:middle
+That's because our font only
+
+00:30:24.506 --> 00:30:25.636 A:middle
+supports the Cyrillic, Greek,
+
+00:30:25.636 --> 00:30:26.336 A:middle
+and Latin scripts.
+
+00:30:27.926 --> 00:30:29.386 A:middle
+So, of course, the way to fix
+
+00:30:29.386 --> 00:30:30.856 A:middle
+this is to repeat the same
+
+00:30:30.986 --> 00:30:33.696 A:middle
+process for Chinese.
+
+00:30:33.696 --> 00:30:35.236 A:middle
+And here now, we have out fun
+
+00:30:35.276 --> 00:30:36.136 A:middle
+font in Chinese.
+
+00:30:36.326 --> 00:30:38.416 A:middle
+It's as simple as that.
+
+00:30:39.136 --> 00:30:40.556 A:middle
+And unfortunately, I can't
+
+00:30:40.556 --> 00:30:41.326 A:middle
+really help you with that.
+
+00:30:41.326 --> 00:30:42.606 A:middle
+That's a stylistic thing and you
+
+00:30:42.606 --> 00:30:43.616 A:middle
+have to choose your own fonts.
+
+00:30:43.846 --> 00:30:45.586 A:middle
+But I can show you how this is
+
+00:30:45.586 --> 00:30:46.126 A:middle
+done in code.
+
+00:30:48.006 --> 00:30:49.646 A:middle
+So, this is really
+
+00:30:49.646 --> 00:30:50.216 A:middle
+straightforward.
+
+00:30:50.646 --> 00:30:52.596 A:middle
+First of all, you start with
+
+00:30:52.596 --> 00:30:53.676 A:middle
+your font for your development
+
+00:30:53.676 --> 00:30:55.006 A:middle
+language, normally.
+
+00:30:55.056 --> 00:30:57.096 A:middle
+Such as, in our case, it's
+
+00:30:57.146 --> 00:30:57.536 A:middle
+English.
+
+00:30:57.636 --> 00:30:58.856 A:middle
+So, we choose our Latin script
+
+00:30:58.856 --> 00:30:59.896 A:middle
+font and get our font here.
+

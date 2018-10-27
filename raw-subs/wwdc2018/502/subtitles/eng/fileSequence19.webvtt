@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.296 --> 00:19:00.886 A:middle
+So where do we move those
+
+00:19:00.886 --> 00:19:01.866 A:middle
+operations to?
+
+00:19:03.916 --> 00:19:06.156 A:middle
+While your user is viewing the
+
+00:19:06.156 --> 00:19:09.286 A:middle
+video catalogue or video info,
+
+00:19:09.776 --> 00:19:11.336 A:middle
+it's a good time to create an
+
+00:19:12.356 --> 00:19:15.026 A:middle
+inspect AV Asset before the user
+
+00:19:15.026 --> 00:19:17.696 A:middle
+decides to play.
+
+00:19:17.916 --> 00:19:19.926 A:middle
+Now, last year we had introduced
+
+00:19:19.926 --> 00:19:21.446 A:middle
+AV Content Key Session API.
+
+00:19:22.346 --> 00:19:25.646 A:middle
+This new API decouples the media
+
+00:19:25.646 --> 00:19:27.056 A:middle
+load from key fetching.
+
+00:19:27.596 --> 00:19:29.836 A:middle
+It gives the application total
+
+00:19:29.836 --> 00:19:31.326 A:middle
+control on key management.
+
+00:19:31.926 --> 00:19:35.336 A:middle
+It offers ways to optimize key
+
+00:19:35.336 --> 00:19:37.416 A:middle
+fetching, such as bundling up
+
+00:19:37.416 --> 00:19:39.316 A:middle
+multiple key requests back to
+
+00:19:39.816 --> 00:19:40.686 A:middle
+the key server.
+
+00:19:41.566 --> 00:19:43.346 A:middle
+If you happen to adopt AV
+
+00:19:43.346 --> 00:19:45.906 A:middle
+Content Key Session, spending a
+
+00:19:45.906 --> 00:19:47.686 A:middle
+few hours of engineering hours,
+
+00:19:48.566 --> 00:19:50.886 A:middle
+your user will notice a faster
+
+00:19:50.886 --> 00:19:52.356 A:middle
+startup time.
+
+00:19:53.476 --> 00:19:56.136 A:middle
+So we have moved the AV Asset
+
+00:19:56.186 --> 00:19:58.436 A:middle
+creation and key fetching out of
+
+00:19:58.436 --> 00:19:59.316 A:middle
+startup time.
+
+00:19:59.896 --> 00:20:03.256 A:middle
+Now what's left is mainly the AV
+

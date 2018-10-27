@@ -1,0 +1,77 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:59.406 --> 00:19:00.607 align:middle line:-1
+传递到最后内核
+
+00:19:02.242 --> 00:19:04.611 align:middle line:-2
+我们可以在光线Intersector上
+配置这些选项
+
+00:19:05.312 --> 00:19:06.146 align:middle line:0
+首先…
+
+00:19:06.346 --> 00:19:08.649 align:middle line:0
+设置rayDataType
+以匹配我们的结构类型
+
+00:19:10.651 --> 00:19:11.885 align:middle line:0
+然后 设置rayStride
+
+00:19:11.952 --> 00:19:14.188 align:middle line:0
+以跳过结构末尾的颜色
+
+00:19:16.590 --> 00:19:18.859 align:middle line:-2
+接下来 通过Intersector
+运行阴影光线
+
+00:19:20.894 --> 00:19:22.996 align:middle line:0
+这是Intersector
+首次调用
+
+00:19:23.564 --> 00:19:26.200 align:middle line:0
+记住 阴影光线仅检查
+
+00:19:26.266 --> 00:19:28.836 align:middle line:0
+原始阴影点与光源之间的可见性
+
+00:19:28.902 --> 00:19:30.704 align:middle line:0
+我们可以进行两项优化
+
+00:19:31.538 --> 00:19:34.908 align:middle line:0
+与自定义
+rayDataType一样
+
+00:19:34.975 --> 00:19:37.377 align:middle line:0
+我们可以自定义
+Intersection数据类型
+
+00:19:37.711 --> 00:19:40.380 align:middle line:0
+或Intersector的
+返回数据类型
+
+00:19:41.982 --> 00:19:45.152 align:middle line:0
+在本例中只需要知道
+距离是否为正值或负值
+
+00:19:45.219 --> 00:19:46.820 align:middle line:0
+表示是否存在交叉
+
+00:19:47.454 --> 00:19:50.324 align:middle line:-2
+因此可以将intersection数据类型
+设置为distance
+
+00:19:50.724 --> 00:19:52.326 align:middle line:-1
+这会节省一些内存带宽
+
+00:19:52.392 --> 00:19:55.162 align:middle line:-2
+加快Intersection
+缓冲区读写速度
+
+00:19:57.497 --> 00:19:58.332 align:middle line:0
+其次
+
+00:19:58.398 --> 00:20:00.968 align:middle line:0
+由于并不需要知道
+将会遇到哪个三角形
+

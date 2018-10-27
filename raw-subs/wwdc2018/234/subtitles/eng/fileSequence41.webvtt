@@ -1,0 +1,84 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:40:58.626 --> 00:41:01.606 A:middle
+and add some supplies to my
+
+00:41:01.606 --> 00:41:01.916 A:middle
+list.
+
+00:41:11.186 --> 00:41:12.676 A:middle
+So, now that we've passed all
+
+00:41:12.676 --> 00:41:13.936 A:middle
+the information in, we actually
+
+00:41:13.936 --> 00:41:16.006 A:middle
+need to call another method to
+
+00:41:16.006 --> 00:41:17.016 A:middle
+show the sheet.
+
+00:41:17.286 --> 00:41:20.716 A:middle
+And, that's the show method on
+
+00:41:20.716 --> 00:41:21.606 A:middle
+the paymentRequest.
+
+00:41:22.106 --> 00:41:23.086 A:middle
+And, this method returns a
+
+00:41:23.086 --> 00:41:24.766 A:middle
+promise that resolves with a
+
+00:41:24.986 --> 00:41:26.506 A:middle
+payment response when the user
+
+00:41:26.506 --> 00:41:28.036 A:middle
+authorizes the transaction.
+
+00:41:28.036 --> 00:41:29.546 A:middle
+So, [inaudible] with Face ID or
+
+00:41:29.546 --> 00:41:30.206 A:middle
+Touch ID.
+
+00:41:30.906 --> 00:41:32.066 A:middle
+In here, is where you would
+
+00:41:32.066 --> 00:41:33.446 A:middle
+process the transaction.
+
+00:41:33.946 --> 00:41:37.456 A:middle
+And then, finally, you'll call
+
+00:41:37.456 --> 00:41:39.846 A:middle
+complete with a value of success
+
+00:41:39.846 --> 00:41:41.626 A:middle
+or failure, depending on the
+
+00:41:41.626 --> 00:41:42.796 A:middle
+state of the transaction.
+
+00:41:42.796 --> 00:41:45.436 A:middle
+Alright, now let's check that
+
+00:41:45.436 --> 00:41:45.966 A:middle
+out on the iPad.
+
+00:41:50.276 --> 00:41:50.976 A:middle
+There we go.
+
+00:41:51.516 --> 00:41:56.046 A:middle
+[ Applause ]
+
+00:41:56.546 --> 00:41:58.156 A:middle
+So, there are a few additional
+
+00:41:58.156 --> 00:41:59.626 A:middle
+steps you'll need to take, like
+
+00:41:59.626 --> 00:42:01.026 A:middle
+obtaining a payment session from
+

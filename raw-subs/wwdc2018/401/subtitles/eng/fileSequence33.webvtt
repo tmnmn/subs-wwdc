@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.606 --> 00:33:00.956 A:middle
+then I could make an array of
+
+00:33:01.016 --> 00:33:03.166 A:middle
+this type alias and I would get
+
+00:33:03.166 --> 00:33:04.756 A:middle
+very confusing behavior from the
+
+00:33:04.756 --> 00:33:06.296 A:middle
+compiler that made code hard to
+
+00:33:06.296 --> 00:33:06.906 A:middle
+understand.
+
+00:33:07.596 --> 00:33:09.516 A:middle
+So in Swift 4.2 we've
+
+00:33:09.516 --> 00:33:10.816 A:middle
+re-implemented Implicitly
+
+00:33:10.816 --> 00:33:12.556 A:middle
+Unwrapped Optional so that it
+
+00:33:12.666 --> 00:33:14.736 A:middle
+exactly matches the mental model
+
+00:33:14.736 --> 00:33:17.186 A:middle
+I outlined earlier and this
+
+00:33:17.386 --> 00:33:19.226 A:middle
+confusing code example now
+
+00:33:19.226 --> 00:33:20.986 A:middle
+generates a compile time warning
+
+00:33:21.306 --> 00:33:23.586 A:middle
+and the compiler parses that as
+
+00:33:23.946 --> 00:33:25.816 A:middle
+if it was just a plain array of
+
+00:33:25.816 --> 00:33:27.576 A:middle
+integers, of optional integers.
+
+00:33:28.546 --> 00:33:30.836 A:middle
+Now, most code will not be
+
+00:33:30.836 --> 00:33:32.266 A:middle
+affected by this change to
+
+00:33:32.266 --> 00:33:33.626 A:middle
+Implicitly Unwrapped Optional,
+
+00:33:34.036 --> 00:33:35.436 A:middle
+but if you were accidentally
+
+00:33:35.436 --> 00:33:37.426 A:middle
+relying on these edge cases I
+
+00:33:37.426 --> 00:33:38.696 A:middle
+encourage you to check out this
+
+00:33:38.746 --> 00:33:41.096 A:middle
+blog post on Swift.org that goes
+
+00:33:41.096 --> 00:33:42.486 A:middle
+into a lot of detail and has a
+
+00:33:42.486 --> 00:33:44.736 A:middle
+lot of examples about what
+
+00:33:44.736 --> 00:33:47.136 A:middle
+changed and how.
+
+00:33:47.376 --> 00:33:49.756 A:middle
+OK, now there's only one more
+
+00:33:49.756 --> 00:33:50.566 A:middle
+thing here today.
+
+00:33:50.986 --> 00:33:52.566 A:middle
+Let's talk about memory
+
+00:33:52.566 --> 00:33:53.866 A:middle
+exclusivity checking.
+
+00:33:55.196 --> 00:33:57.946 A:middle
+So if you recall, in Swift 4 we
+
+00:33:57.946 --> 00:33:59.896 A:middle
+introduced something called
+
+00:33:59.896 --> 00:34:01.386 A:middle
+Memory Exclusivity Checking,
+

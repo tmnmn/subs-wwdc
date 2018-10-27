@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:55.896 --> 00:20:01.568 align:start position:29% line:-2
+今回はセッションを始めた
+１台が情報源ですが
+
+00:20:01.668 --> 00:20:07.441 align:start position:5% line:-2
+Multipeer Connectivity本来の
+プロトコルではありません
+
+00:20:10.043 --> 00:20:15.816 align:start position:30% line:-2
+設定が済むと次の３つの
+方法でデータを送れます
+
+00:20:15.916 --> 00:20:17.518 align:start position:38% line:-1
+データパケット
+
+00:20:17.751 --> 00:20:20.921 align:start position:29% line:-2
+ローカル上のURLという
+リソース
+
+00:20:21.021 --> 00:20:22.256 align:start position:41% line:-1
+ストリーム
+
+00:20:22.689 --> 00:20:25.893 align:start position:32% line:-2
+データオブジェクトは
+全ピアに送れますが
+
+00:20:25.993 --> 00:20:29.162 align:start position:30% line:-2
+リソースとストリームは
+デバイス間です
+
+00:20:29.696 --> 00:20:33.300 align:start position:30% line:-2
+SwiftShotでは
+データパケットで
+
+00:20:33.400 --> 00:20:38.005 align:start position:27% line:-2
+ゲームイベントと
+物理ステートを共有しました
+
+00:20:38.472 --> 00:20:41.542 align:start position:27% line:-2
+リソースで
+World Mapを転送し
+
+00:20:42.142 --> 00:20:44.511 align:start position:34% line:-1
+ストリームは不採用
+
+00:20:46.013 --> 00:20:51.218 align:start position:30% line:-2
+デバイス間の転送は
+UDPに依存しています
+
+00:20:51.318 --> 00:20:55.889 align:start position:32% line:-2
+レイテンシが低く
+ゲームに適しています
+
+00:20:56.457 --> 00:21:01.929 align:start position:29% line:-2
+UDPは本来デリバリーを
+保証しないので
+

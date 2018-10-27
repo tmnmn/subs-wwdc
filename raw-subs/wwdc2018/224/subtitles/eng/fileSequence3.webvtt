@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.946 --> 00:03:00.736 A:middle
+to set up your stack, just refer
+
+00:03:00.736 --> 00:03:02.056 A:middle
+to the model by name, and the
+
+00:03:02.056 --> 00:03:03.486 A:middle
+persistent container will load
+
+00:03:03.486 --> 00:03:05.046 A:middle
+it out of the main bundle and
+
+00:03:05.046 --> 00:03:06.276 A:middle
+keep a stored in a consistent
+
+00:03:06.276 --> 00:03:06.766 A:middle
+location.
+
+00:03:07.306 --> 00:03:10.386 A:middle
+This persistent container type
+
+00:03:10.386 --> 00:03:11.926 A:middle
+encapsulates a whole stack and
+
+00:03:11.926 --> 00:03:13.526 A:middle
+includes conveniences for a
+
+00:03:13.526 --> 00:03:15.256 A:middle
+shared main queue view context
+
+00:03:15.806 --> 00:03:17.926 A:middle
+as well as factory methods for
+
+00:03:18.246 --> 00:03:20.286 A:middle
+generating background contexts
+
+00:03:20.286 --> 00:03:21.396 A:middle
+as well as performing background
+
+00:03:21.396 --> 00:03:21.676 A:middle
+work.
+
+00:03:22.426 --> 00:03:23.796 A:middle
+It's also designed to be easy to
+
+00:03:23.796 --> 00:03:25.366 A:middle
+work with as our app grows.
+
+00:03:25.776 --> 00:03:27.706 A:middle
+For example, let's say we want
+
+00:03:27.706 --> 00:03:29.176 A:middle
+to factor our model layer into
+
+00:03:29.176 --> 00:03:29.956 A:middle
+its own framework.
+
+00:03:30.836 --> 00:03:31.856 A:middle
+We can do that by creating a new
+
+00:03:31.856 --> 00:03:33.166 A:middle
+framework target in Xcode and
+
+00:03:33.166 --> 00:03:34.116 A:middle
+moving our code into it.
+
+00:03:34.446 --> 00:03:36.166 A:middle
+It's all super easy, but when we
+
+00:03:36.166 --> 00:03:37.116 A:middle
+move our model into the new
+
+00:03:37.116 --> 00:03:38.836 A:middle
+target, in the built product,
+
+00:03:38.836 --> 00:03:40.836 A:middle
+targets move from the app into
+
+00:03:40.836 --> 00:03:42.736 A:middle
+the new framework, which is
+
+00:03:42.736 --> 00:03:43.806 A:middle
+what's supposed to happen, but
+
+00:03:43.806 --> 00:03:45.246 A:middle
+now NSPersistentContainer
+
+00:03:45.436 --> 00:03:46.196 A:middle
+doesn't know where to find our
+
+00:03:46.196 --> 00:03:46.896 A:middle
+model anymore.
+
+00:03:47.476 --> 00:03:48.566 A:middle
+This is because it only checks
+
+00:03:48.566 --> 00:03:49.846 A:middle
+the main bundle by default.
+
+00:03:50.416 --> 00:03:51.056 A:middle
+Why stop there?
+
+00:03:51.806 --> 00:03:53.296 A:middle
+Well, searching all of the app's
+
+00:03:53.296 --> 00:03:54.826 A:middle
+bundles could get really slow
+
+00:03:54.826 --> 00:03:56.526 A:middle
+for a complicated app and it's
+
+00:03:56.526 --> 00:03:57.816 A:middle
+not a cost you want to pay every
+
+00:03:57.816 --> 00:03:58.866 A:middle
+time you spin up a stack.
+

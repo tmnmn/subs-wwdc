@@ -1,0 +1,63 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:24:58.432 --> 00:25:02.803 align:start position:25% line:-2
+Swift 4.2はより良い
+APIを導入しました
+
+00:25:03.370 --> 00:25:07.241 align:start position:25% line:-2
+Swift 4と4.1の
+Hashableプロトコルは
+
+00:25:07.474 --> 00:25:12.079 align:start position:29% line:-2
+１つのハッシュ値が
+１つの整数値を生成します
+
+00:25:12.346 --> 00:25:16.116 align:start position:32% line:-2
+Swift 4.2は
+プロトコルを改良し
+
+00:25:16.216 --> 00:25:19.920 align:start position:7% line:-2
+hash(into:) requirementを
+加えました
+
+00:25:20.020 --> 00:25:22.990 align:start position:34% line:-2
+１つの値を
+生成するのではなく
+
+00:25:23.090 --> 00:25:25.759 align:start position:30% line:-1
+インスタンスを取り出し
+
+00:25:25.859 --> 00:25:31.765 align:start position:21% line:-2
+複数の値を与え
+ハッシュコードとして１つにします
+
+00:25:32.166 --> 00:25:35.435 align:start position:27% line:-1
+都市データの例に戻りますと
+
+00:25:35.602 --> 00:25:40.174 align:start position:18% line:-2
+都市名と州のhash(into:)を
+再帰的に呼び出し―
+
+00:25:40.274 --> 00:25:45.646 align:start position:27% line:-2
+Hasherオブジェクトに
+インスタンスを渡します
+
+00:25:46.380 --> 00:25:47.147 align:start position:43% line:-1
+すると―
+
+00:25:48.115 --> 00:25:50.851 align:start position:30% line:-1
+ハッシュアルゴリズムが
+
+00:25:50.951 --> 00:25:55.289 align:start position:30% line:-2
+ハッシュコードの質と
+動作を調整してくれます
+
+00:25:55.389 --> 00:25:58.892 align:start position:32% line:-2
+DoS攻撃の
+さらなる予防策として
+
+00:25:58.992 --> 00:26:03.564 align:start position:27% line:-2
+アプリケーション起動時には
+乱数が使われます
+

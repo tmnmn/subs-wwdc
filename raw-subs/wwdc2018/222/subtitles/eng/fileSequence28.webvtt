@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:00.256 --> 00:28:02.156 A:middle
+If you do, there are a few
+
+00:28:02.156 --> 00:28:03.066 A:middle
+things to keep in mind.
+
+00:28:04.466 --> 00:28:05.716 A:middle
+If the decoding failure policy
+
+00:28:05.716 --> 00:28:07.166 A:middle
+is to set an error, and return,
+
+00:28:07.536 --> 00:28:08.546 A:middle
+you have to keep in mind, that
+
+00:28:08.546 --> 00:28:09.826 A:middle
+once an error is set on
+
+00:28:09.826 --> 00:28:11.186 A:middle
+Unarchiver, it won't later be
+
+00:28:11.186 --> 00:28:11.596 A:middle
+reset.
+
+00:28:11.746 --> 00:28:14.616 A:middle
+And that's because one decoding
+
+00:28:14.616 --> 00:28:16.366 A:middle
+failure often leads to a cascade
+
+00:28:16.366 --> 00:28:17.306 A:middle
+of decoding failures.
+
+00:28:17.406 --> 00:28:18.516 A:middle
+And we don't want to lose sight
+
+00:28:18.516 --> 00:28:21.796 A:middle
+of what originally went wrong.
+
+00:28:22.356 --> 00:28:24.226 A:middle
+Second, keep in mind that any
+
+00:28:24.226 --> 00:28:25.776 A:middle
+given failWithError call, can
+
+00:28:25.776 --> 00:28:26.976 A:middle
+either throw an exception or
+
+00:28:26.976 --> 00:28:29.026 A:middle
+continue execution, so you have
+
+00:28:29.026 --> 00:28:30.276 A:middle
+to keep both of those options in
+
+00:28:30.276 --> 00:28:30.526 A:middle
+mind.
+
+00:28:30.686 --> 00:28:31.666 A:middle
+Especially if you're working
+
+00:28:31.666 --> 00:28:32.286 A:middle
+Objective-C.
+
+00:28:32.286 --> 00:28:33.206 A:middle
+Maybe you can catch the
+
+00:28:33.206 --> 00:28:33.656 A:middle
+exception.
+
+00:28:34.266 --> 00:28:35.146 A:middle
+So, there's things to handle
+
+00:28:35.146 --> 00:28:35.266 A:middle
+there.
+
+00:28:35.886 --> 00:28:38.206 A:middle
+And lastly, keeping an eye out
+
+00:28:38.326 --> 00:28:40.176 A:middle
+for nil, or 0 return values.
+
+00:28:40.456 --> 00:28:41.806 A:middle
+This could either happen because
+
+00:28:41.806 --> 00:28:43.106 A:middle
+of a decoding failure, if the
+
+00:28:43.226 --> 00:28:44.406 A:middle
+decoding failure policy is to
+
+00:28:44.406 --> 00:28:45.486 A:middle
+set an error and return.
+
+00:28:46.006 --> 00:28:47.276 A:middle
+Or, the data could have just
+
+00:28:47.276 --> 00:28:47.806 A:middle
+been missing.
+
+00:28:48.166 --> 00:28:50.266 A:middle
+Or, even encoded as nil or 0.
+
+00:28:51.056 --> 00:28:52.566 A:middle
+So, to disambiguate between
+
+00:28:52.566 --> 00:28:53.706 A:middle
+these cases, check the error
+
+00:28:53.706 --> 00:28:54.786 A:middle
+property on the Unarchiver.
+
+00:28:54.856 --> 00:28:58.636 A:middle
+All right, so that was a lot of
+
+00:28:58.636 --> 00:28:59.196 A:middle
+information.
+
+00:28:59.926 --> 00:29:01.116 A:middle
+Let's distill this down into a
+

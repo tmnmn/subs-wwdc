@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:00.686 --> 00:17:02.066 A:middle
+So what do I mean by the
+
+00:17:02.066 --> 00:17:03.036 A:middle
+Sandbox?
+
+00:17:03.656 --> 00:17:05.906 A:middle
+Well first what don't I mean,
+
+00:17:05.996 --> 00:17:07.906 A:middle
+I'm not talking about the app
+
+00:17:07.906 --> 00:17:10.236 A:middle
+Sandbox, that part of the
+
+00:17:10.266 --> 00:17:11.766 A:middle
+operating system in kernel that
+
+00:17:11.766 --> 00:17:14.106 A:middle
+limits what resources your apps
+
+00:17:14.106 --> 00:17:14.886 A:middle
+have access to.
+
+00:17:15.126 --> 00:17:16.435 A:middle
+What I'm really talking about is
+
+00:17:16.435 --> 00:17:18.435 A:middle
+a dedicated environment, it's an
+
+00:17:18.435 --> 00:17:20.736 A:middle
+entire copy of the App Store
+
+00:17:20.736 --> 00:17:22.106 A:middle
+commerce engine on the server
+
+00:17:22.106 --> 00:17:24.106 A:middle
+side that's there for you to
+
+00:17:24.106 --> 00:17:26.016 A:middle
+test your apps and in-app
+
+00:17:26.016 --> 00:17:26.915 A:middle
+purchases.
+
+00:17:28.435 --> 00:17:31.076 A:middle
+StoreKit knows when to go to the
+
+00:17:31.076 --> 00:17:32.946 A:middle
+Sandbox environment based on how
+
+00:17:32.946 --> 00:17:34.036 A:middle
+your app is signed.
+
+00:17:34.806 --> 00:17:36.486 A:middle
+So for example, you're building
+
+00:17:36.486 --> 00:17:38.196 A:middle
+your app in Xcode, it's signed
+
+00:17:38.196 --> 00:17:39.946 A:middle
+with the developer's certificate
+
+00:17:40.566 --> 00:17:41.756 A:middle
+StoreKit knows right then and
+
+00:17:41.756 --> 00:17:43.526 A:middle
+there take all of your requests
+
+00:17:43.526 --> 00:17:44.846 A:middle
+to the Sandbox environment.
+
+00:17:45.356 --> 00:17:47.996 A:middle
+If the user downloads the app
+
+00:17:48.076 --> 00:17:49.676 A:middle
+from the production App Store in
+
+00:17:49.676 --> 00:17:50.466 A:middle
+that case it's going to be
+
+00:17:50.466 --> 00:17:51.346 A:middle
+production signed.
+
+00:17:51.906 --> 00:17:53.476 A:middle
+StoreKit knows to go right to
+
+00:17:53.476 --> 00:17:55.016 A:middle
+the regular production
+
+00:17:55.016 --> 00:17:55.536 A:middle
+environment.
+
+00:17:56.916 --> 00:17:58.496 A:middle
+So what makes the Sandbox
+
+00:17:58.496 --> 00:17:59.386 A:middle
+environment different?
+
+00:17:59.386 --> 00:18:02.676 A:middle
+Well first we don't charge, this
+

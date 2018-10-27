@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:12:58.256 --> 00:13:00.416 A:middle
+Then the issue must be in how we
+
+00:13:00.416 --> 00:13:01.336 A:middle
+are calculating this
+
+00:13:01.336 --> 00:13:02.116 A:middle
+displacement vector.
+
+00:13:02.116 --> 00:13:05.556 A:middle
+So let's use the debug navigator
+
+00:13:05.806 --> 00:13:07.046 A:middle
+to go through the function and
+
+00:13:07.046 --> 00:13:09.000 A:middle
+investigate what is happening.
+
+00:13:17.086 --> 00:13:18.236 A:middle
+And here, without even having to
+
+00:13:18.236 --> 00:13:19.906 A:middle
+read the code, we can already
+
+00:13:19.906 --> 00:13:21.076 A:middle
+tell that there is something
+
+00:13:21.076 --> 00:13:21.696 A:middle
+going wrong.
+
+00:13:22.156 --> 00:13:24.176 A:middle
+One of our variables has a value
+
+00:13:24.176 --> 00:13:25.966 A:middle
+that is not a number, and this
+
+00:13:25.966 --> 00:13:27.706 A:middle
+is likely corrupt in further
+
+00:13:27.706 --> 00:13:28.136 A:middle
+math.
+
+00:13:28.666 --> 00:13:30.276 A:middle
+So let's check why this is
+
+00:13:30.276 --> 00:13:30.826 A:middle
+happening.
+
+00:13:31.356 --> 00:13:32.846 A:middle
+If we check here in the
+
+00:13:32.846 --> 00:13:34.796 A:middle
+debugger, it turns out that we
+
+00:13:34.796 --> 00:13:37.096 A:middle
+are doing this operation on this
+
+00:13:37.096 --> 00:13:38.826 A:middle
+negative number, and this is
+
+00:13:38.826 --> 00:13:40.036 A:middle
+what is causing the [inaudible].
+
+00:13:40.806 --> 00:13:42.316 A:middle
+So now that we have found the
+
+00:13:42.316 --> 00:13:43.956 A:middle
+cause of our issue, let me
+
+00:13:43.956 --> 00:13:45.396 A:middle
+quickly fix this just by
+
+00:13:45.396 --> 00:13:47.176 A:middle
+swapping those two lines, so
+
+00:13:47.176 --> 00:13:48.966 A:middle
+that we don't do operation on a
+
+00:13:48.966 --> 00:13:49.786 A:middle
+negative number.
+
+00:13:50.526 --> 00:13:53.826 A:middle
+And now that we have done our
+
+00:13:54.026 --> 00:13:55.686 A:middle
+changes to the shader, let's try
+
+00:13:55.686 --> 00:13:56.946 A:middle
+out those changes just by
+
+00:13:56.946 --> 00:13:58.166 A:middle
+clicking in the reload changes
+
+00:13:58.166 --> 00:14:03.466 A:middle
+button, here in the debug bar.
+

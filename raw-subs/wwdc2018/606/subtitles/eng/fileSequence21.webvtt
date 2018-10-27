@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.686 --> 00:21:01.026 A:middle
+we can, also, randomly sample
+
+00:21:01.026 --> 00:21:02.336 A:middle
+the surface of the light source,
+
+00:21:02.516 --> 00:21:03.766 A:middle
+which gives us these nice soft
+
+00:21:03.766 --> 00:21:04.236 A:middle
+shadows.
+
+00:21:06.756 --> 00:21:09.156 A:middle
+So last, we'll look at secondary
+
+00:21:09.786 --> 00:21:09.926 A:middle
+rays.
+
+00:21:10.636 --> 00:21:12.626 A:middle
+Remember that secondary rays
+
+00:21:12.626 --> 00:21:14.136 A:middle
+simulate light bouncing around
+
+00:21:14.136 --> 00:21:14.636 A:middle
+the scene.
+
+00:21:15.646 --> 00:21:16.666 A:middle
+All we need to do to add
+
+00:21:16.666 --> 00:21:18.626 A:middle
+secondary rays is move all of
+
+00:21:18.626 --> 00:21:19.716 A:middle
+our kernels into a loop.
+
+00:21:20.136 --> 00:21:21.986 A:middle
+In each iteration we'll choose a
+
+00:21:21.986 --> 00:21:23.966 A:middle
+new random direction to continue
+
+00:21:23.966 --> 00:21:24.656 A:middle
+they ray's path.
+
+00:21:29.756 --> 00:21:31.716 A:middle
+So, modify the shading kernel to
+
+00:21:31.716 --> 00:21:33.206 A:middle
+produce the rays for the next
+
+00:21:33.406 --> 00:21:34.066 A:middle
+iteration.
+
+00:21:35.206 --> 00:21:36.356 A:middle
+Once we finish updating our
+
+00:21:36.356 --> 00:21:38.536 A:middle
+image we can simply loop back to
+
+00:21:38.536 --> 00:21:39.896 A:middle
+the first intersection test.
+
+00:21:40.766 --> 00:21:41.946 A:middle
+And we can repeat this loop
+
+00:21:41.946 --> 00:21:43.486 A:middle
+however many times we want rays
+
+00:21:43.486 --> 00:21:44.046 A:middle
+to bounce.
+
+00:21:46.576 --> 00:21:48.506 A:middle
+So, let's look at the changes to
+
+00:21:48.506 --> 00:21:49.236 A:middle
+the shading kernel.
+
+00:21:51.276 --> 00:21:53.946 A:middle
+In each iteration we'll move the
+
+00:21:53.946 --> 00:21:55.366 A:middle
+ray origin to the intersection
+
+00:21:55.366 --> 00:21:55.686 A:middle
+point.
+
+00:21:56.256 --> 00:21:58.536 A:middle
+We'll then, choose a random
+
+00:21:58.536 --> 00:21:59.916 A:middle
+direction to continue the path.
+

@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:58.956 --> 00:18:01.016 A:middle
+some asynchronous process you
+
+00:18:01.016 --> 00:18:02.736 A:middle
+might be waiting on a queue with
+
+00:18:02.736 --> 00:18:04.776 A:middle
+a much lower priority than yours
+
+00:18:05.156 --> 00:18:07.256 A:middle
+costing prior inversion which
+
+00:18:07.756 --> 00:18:08.516 A:middle
+[inaudible] performance and
+
+00:18:08.516 --> 00:18:09.176 A:middle
+cause hangs.
+
+00:18:09.816 --> 00:18:12.876 A:middle
+And moreover using a semaphore
+
+00:18:12.876 --> 00:18:14.956 A:middle
+in such a way also spawns
+
+00:18:14.956 --> 00:18:16.426 A:middle
+useless threads which further
+
+00:18:16.426 --> 00:18:17.616 A:middle
+degrades the performance.
+
+00:18:18.426 --> 00:18:20.706 A:middle
+And to help you address this
+
+00:18:20.706 --> 00:18:23.016 A:middle
+issue now Static Analyzer warns
+
+00:18:23.386 --> 00:18:27.966 A:middle
+on such cases helping to see
+
+00:18:27.966 --> 00:18:29.096 A:middle
+where the issue occurs.
+
+00:18:29.096 --> 00:18:32.846 A:middle
+Now let's see how the issue can
+
+00:18:32.846 --> 00:18:33.446 A:middle
+be fixed.
+
+00:18:34.066 --> 00:18:35.776 A:middle
+In the best-case scenario there
+
+00:18:35.836 --> 00:18:38.406 A:middle
+is a synchronous API available
+
+00:18:38.446 --> 00:18:39.646 A:middle
+which can be used in stat.
+
+00:18:40.286 --> 00:18:42.966 A:middle
+So for an SXPC connection there
+
+00:18:42.966 --> 00:18:44.146 A:middle
+is an [inaudible] API
+
+00:18:44.576 --> 00:18:47.116 A:middle
+synchronousRemoteObjectProxy
+
+00:18:47.736 --> 00:18:49.526 A:middle
+which when used in start
+
+00:18:49.526 --> 00:18:50.536 A:middle
+eliminates the need for the
+
+00:18:50.536 --> 00:18:53.016 A:middle
+semaphore and runs much foster.
+
+00:18:55.196 --> 00:18:57.306 A:middle
+Alternatively, if no such
+
+00:18:57.306 --> 00:18:59.976 A:middle
+synchronous API is available you
+
+00:18:59.976 --> 00:19:00.836 A:middle
+could restructure your
+

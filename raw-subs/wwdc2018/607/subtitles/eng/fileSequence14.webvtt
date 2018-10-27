@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:00.466 --> 00:14:02.346 A:middle
+So argument buffers allow you to
+
+00:14:02.986 --> 00:14:04.536 A:middle
+offload the material management
+
+00:14:05.176 --> 00:14:07.036 A:middle
+onto the GPU and save valuable
+
+00:14:07.146 --> 00:14:08.366 A:middle
+CPU resources.
+
+00:14:08.916 --> 00:14:10.206 A:middle
+But this year, we're putting it
+
+00:14:10.206 --> 00:14:11.546 A:middle
+a little bit, extending it a
+
+00:14:11.546 --> 00:14:13.436 A:middle
+little bit more.
+
+00:14:13.926 --> 00:14:15.506 A:middle
+We started by adding 2 new
+
+00:14:15.506 --> 00:14:16.516 A:middle
+argument types.
+
+00:14:17.426 --> 00:14:19.046 A:middle
+This includes pipeline states
+
+00:14:19.156 --> 00:14:20.126 A:middle
+and command buffers.
+
+00:14:21.056 --> 00:14:22.646 A:middle
+Now, these are used to support
+
+00:14:22.646 --> 00:14:24.226 A:middle
+our brand-new indirect command
+
+00:14:24.226 --> 00:14:24.836 A:middle
+buffer feature.
+
+00:14:26.116 --> 00:14:27.916 A:middle
+With indirect command buffers,
+
+00:14:27.916 --> 00:14:30.266 A:middle
+you could encode entire scenes
+
+00:14:30.266 --> 00:14:30.956 A:middle
+on the GPU.
+
+00:14:31.506 --> 00:14:33.066 A:middle
+On the CPU, you only have a few
+
+00:14:33.066 --> 00:14:34.426 A:middle
+threads available for rendering,
+
+00:14:34.866 --> 00:14:35.936 A:middle
+but on the GPU, you have
+
+00:14:35.936 --> 00:14:37.986 A:middle
+hundreds or even thousands of
+
+00:14:37.986 --> 00:14:40.036 A:middle
+threads all running at the same
+
+00:14:40.886 --> 00:14:40.976 A:middle
+time.
+
+00:14:41.716 --> 00:14:42.856 A:middle
+With indirect command buffers,
+
+00:14:42.856 --> 00:14:44.416 A:middle
+you can fully utilize this
+
+00:14:44.416 --> 00:14:45.916 A:middle
+massively parallel nature.
+
+00:14:47.236 --> 00:14:49.186 A:middle
+Also, indirect command buffers
+
+00:14:49.186 --> 00:14:51.376 A:middle
+are completely reusable, so you
+
+00:14:51.376 --> 00:14:52.556 A:middle
+could spend the encoding cost
+
+00:14:52.556 --> 00:14:54.866 A:middle
+once and reuse it again and
+
+00:14:54.866 --> 00:14:55.196 A:middle
+again.
+
+00:14:55.886 --> 00:14:57.626 A:middle
+And since an ICB is a directly
+
+00:14:57.716 --> 00:15:00.276 A:middle
+accessible buffer, you can
+

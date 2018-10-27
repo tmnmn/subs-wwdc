@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:19:59.006 --> 00:20:00.476 A:middle
+is very close to the hardware,
+
+00:20:00.556 --> 00:20:01.786 A:middle
+so it's able to redirect your
+
+00:20:01.786 --> 00:20:02.996 A:middle
+filtered calls to the most
+
+00:20:02.996 --> 00:20:04.036 A:middle
+appropriate rendering back end,
+
+00:20:04.616 --> 00:20:05.656 A:middle
+to give you as much performance
+
+00:20:05.656 --> 00:20:06.256 A:middle
+as possible.
+
+00:20:07.496 --> 00:20:08.936 A:middle
+PyObjC lives on top of Core
+
+00:20:08.936 --> 00:20:10.276 A:middle
+Image, and it can communicate
+
+00:20:10.276 --> 00:20:11.916 A:middle
+with it through the Python
+
+00:20:11.916 --> 00:20:13.556 A:middle
+bindings for Core Image by the
+
+00:20:13.556 --> 00:20:15.106 A:middle
+Quartz umbrella package.
+
+00:20:15.726 --> 00:20:18.116 A:middle
+And the Quartz is a package that
+
+00:20:18.116 --> 00:20:19.546 A:middle
+also contains a variety of other
+
+00:20:19.546 --> 00:20:20.676 A:middle
+image processing frameworks such
+
+00:20:20.676 --> 00:20:22.426 A:middle
+as Core Graphics, and all the
+
+00:20:22.426 --> 00:20:24.006 A:middle
+classes that's using Core Image,
+
+00:20:24.006 --> 00:20:25.916 A:middle
+such as CIVector, CIImages, and
+
+00:20:25.916 --> 00:20:26.646 A:middle
+CI Context.
+
+00:20:28.766 --> 00:20:29.966 A:middle
+PyCoreImage lives on top of
+
+00:20:29.966 --> 00:20:31.946 A:middle
+PyObjC, and it provides--
+
+00:20:33.586 --> 00:20:36.056 A:middle
+essentially leverages PyObjC to
+
+00:20:36.056 --> 00:20:37.236 A:middle
+be able to communicate with Core
+
+00:20:37.236 --> 00:20:38.736 A:middle
+Image and makes a lot of
+
+00:20:38.736 --> 00:20:39.826 A:middle
+simplifications under the hood
+
+00:20:39.826 --> 00:20:41.906 A:middle
+for you, so that you don't have
+
+00:20:41.906 --> 00:20:43.196 A:middle
+as much setup code when you're
+
+00:20:43.196 --> 00:20:44.116 A:middle
+working with Core Image.
+
+00:20:44.116 --> 00:20:45.036 A:middle
+And we'll take a look at this in
+
+00:20:45.036 --> 00:20:45.616 A:middle
+just a moment.
+
+00:20:46.156 --> 00:20:48.046 A:middle
+A lot of it is done through the
+
+00:20:48.046 --> 00:20:50.596 A:middle
+class CIMG that you can also use
+
+00:20:50.876 --> 00:20:52.126 A:middle
+to interpret with NumPy via
+
+00:20:52.126 --> 00:20:52.976 A:middle
+vendor call.
+
+00:20:53.816 --> 00:20:55.656 A:middle
+And you can also wrap your NumPy
+
+00:20:55.656 --> 00:20:57.226 A:middle
+buffers by using the class
+
+00:20:57.226 --> 00:20:58.166 A:middle
+constructor directly.
+
+00:20:59.546 --> 00:21:00.696 A:middle
+All right.
+

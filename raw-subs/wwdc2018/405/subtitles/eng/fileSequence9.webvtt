@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:57.926 --> 00:09:00.576 A:middle
+which can relate the begin and
+
+00:09:00.576 --> 00:09:01.776 A:middle
+end markers for a particular
+
+00:09:01.776 --> 00:09:03.036 A:middle
+operation with each other.
+
+00:09:03.716 --> 00:09:04.916 A:middle
+And this is important because
+
+00:09:04.916 --> 00:09:06.336 A:middle
+not only can these operations
+
+00:09:06.336 --> 00:09:08.116 A:middle
+overlap, but they often take
+
+00:09:08.186 --> 00:09:11.896 A:middle
+differing amounts of time.
+
+00:09:12.116 --> 00:09:14.236 A:middle
+Let's see this in our code
+
+00:09:14.236 --> 00:09:14.666 A:middle
+example.
+
+00:09:15.716 --> 00:09:16.466 A:middle
+So here's our code.
+
+00:09:16.466 --> 00:09:18.026 A:middle
+I'm going to transform that
+
+00:09:18.026 --> 00:09:20.066 A:middle
+synchronous fetch async call in
+
+00:09:20.066 --> 00:09:21.036 A:middle
+to an asynchronous one.
+
+00:09:21.946 --> 00:09:23.266 A:middle
+So here I'm just going to give
+
+00:09:23.396 --> 00:09:24.436 A:middle
+it a completion handler.
+
+00:09:24.436 --> 00:09:25.756 A:middle
+This is a closure that will run
+
+00:09:25.846 --> 00:09:26.846 A:middle
+after the fetch asset is
+
+00:09:26.846 --> 00:09:27.236 A:middle
+complete.
+
+00:09:28.446 --> 00:09:29.486 A:middle
+And then I've also added a
+
+00:09:29.486 --> 00:09:30.946 A:middle
+closure, a completion handler
+
+00:09:31.346 --> 00:09:33.236 A:middle
+for running after all the assets
+
+00:09:33.416 --> 00:09:34.076 A:middle
+have been fetched.
+
+00:09:35.006 --> 00:09:36.676 A:middle
+In each case, I've moved that os
+
+00:09:36.676 --> 00:09:38.266 A:middle
+signpost end call inside of a
+
+00:09:38.306 --> 00:09:40.426 A:middle
+closure to indicate that that's
+
+00:09:40.426 --> 00:09:42.256 A:middle
+when I want that marked period
+
+00:09:42.256 --> 00:09:42.916 A:middle
+of time to end.
+
+00:09:44.266 --> 00:09:44.526 A:middle
+Okay.
+
+00:09:45.796 --> 00:09:47.426 A:middle
+So because we think that these
+
+00:09:48.296 --> 00:09:49.616 A:middle
+intervals will overlap with each
+
+00:09:49.616 --> 00:09:51.046 A:middle
+other, we're going to create new
+
+00:09:51.076 --> 00:09:52.456 A:middle
+signpost IDs for each of them.
+
+00:09:52.876 --> 00:09:54.416 A:middle
+Notice in the top example I've
+
+00:09:54.606 --> 00:09:55.756 A:middle
+created one with the constructor
+
+00:09:55.756 --> 00:09:56.576 A:middle
+taking a log handle.
+
+00:09:56.686 --> 00:09:58.106 A:middle
+And the second one, I've made
+
+00:09:58.106 --> 00:09:59.776 A:middle
+off that object that is being
+
+00:09:59.776 --> 00:10:00.666 A:middle
+worked on, the element.
+

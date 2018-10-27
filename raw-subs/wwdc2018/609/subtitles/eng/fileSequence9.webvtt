@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.916 --> 00:09:00.576 A:middle
+computation.
+
+00:09:00.736 --> 00:09:02.096 A:middle
+So, in this case, we have a
+
+00:09:02.096 --> 00:09:04.046 A:middle
+batch of labels, was 1 for the
+
+00:09:04.046 --> 00:09:05.426 A:middle
+correct class and zeroes
+
+00:09:05.426 --> 00:09:05.976 A:middle
+everywhere else.
+
+00:09:09.506 --> 00:09:10.596 A:middle
+And in each situation of
+
+00:09:10.596 --> 00:09:12.176 A:middle
+training, we're going to use a
+
+00:09:12.176 --> 00:09:14.366 A:middle
+different batch of images and a
+
+00:09:14.416 --> 00:09:15.716 A:middle
+responding batch of labels.
+
+00:09:16.166 --> 00:09:17.166 A:middle
+So, let's now run through
+
+00:09:17.166 --> 00:09:18.596 A:middle
+several iterations of training.
+
+00:09:21.066 --> 00:09:23.686 A:middle
+For the first batch of images,
+
+00:09:23.686 --> 00:09:25.006 A:middle
+we're doing a forward pass,
+
+00:09:25.086 --> 00:09:27.276 A:middle
+computing loss, and doing a
+
+00:09:27.276 --> 00:09:28.846 A:middle
+gradient pass.
+
+00:09:28.976 --> 00:09:29.926 A:middle
+And updating weights.
+
+00:09:30.356 --> 00:09:31.906 A:middle
+So, what happens with the second
+
+00:09:31.906 --> 00:09:32.276 A:middle
+batch?
+
+00:09:32.536 --> 00:09:33.876 A:middle
+Exactly the same process.
+
+00:09:34.306 --> 00:09:35.446 A:middle
+The forward pass, then we
+
+00:09:35.446 --> 00:09:37.276 A:middle
+compute loss, to the gradient
+
+00:09:37.276 --> 00:09:38.656 A:middle
+pass, and update weights.
+
+00:09:40.156 --> 00:09:41.566 A:middle
+And as we go through iterations
+
+00:09:41.566 --> 00:09:44.126 A:middle
+of training, we want the loss
+
+00:09:44.616 --> 00:09:47.006 A:middle
+for our network to decrease and
+
+00:09:47.066 --> 00:09:48.796 A:middle
+the accuracy of the network to
+
+00:09:48.796 --> 00:09:49.186 A:middle
+increase.
+
+00:09:49.576 --> 00:09:51.526 A:middle
+And we continue training until
+
+00:09:51.526 --> 00:09:52.736 A:middle
+the loss falls below a
+
+00:09:52.736 --> 00:09:54.756 A:middle
+particular threshold and the
+
+00:09:54.756 --> 00:09:56.916 A:middle
+accuracy of our network reaches
+
+00:09:56.916 --> 00:09:57.626 A:middle
+a desired level.
+
+00:09:58.426 --> 00:09:59.666 A:middle
+And then we know that the
+
+00:09:59.666 --> 00:10:01.206 A:middle
+network is fully trained and now
+

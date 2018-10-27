@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:59.746 --> 00:04:01.686 A:middle
+Watch by using a media query to
+
+00:04:01.686 --> 00:04:03.476 A:middle
+limit my two-column layout only
+
+00:04:03.476 --> 00:04:05.676 A:middle
+to viewports larger than 320 CSS
+
+00:04:05.676 --> 00:04:06.196 A:middle
+pixels.
+
+00:04:07.676 --> 00:04:09.146 A:middle
+Now all I need to do is tell
+
+00:04:09.146 --> 00:04:10.776 A:middle
+WebKit that this page is already
+
+00:04:10.776 --> 00:04:12.616 A:middle
+optimized for Apple Watch and
+
+00:04:12.616 --> 00:04:13.556 A:middle
+doesn't need the default
+
+00:04:13.556 --> 00:04:14.376 A:middle
+adaptations.
+
+00:04:15.086 --> 00:04:16.636 A:middle
+To do this, I simply include a
+
+00:04:16.636 --> 00:04:18.146 A:middle
+new meta-tag in the head of my
+
+00:04:18.146 --> 00:04:20.086 A:middle
+document with name equal to
+
+00:04:20.086 --> 00:04:22.346 A:middle
+disabled-adaptations and content
+
+00:04:22.346 --> 00:04:23.126 A:middle
+equal to watch.
+
+00:04:24.186 --> 00:04:25.456 A:middle
+I'm using this new disabled
+
+00:04:25.456 --> 00:04:27.556 A:middle
+adaptations meta-tag along side
+
+00:04:27.556 --> 00:04:29.026 A:middle
+the existing viewport meta-tag
+
+00:04:29.026 --> 00:04:30.616 A:middle
+I'm already using to ensure
+
+00:04:30.616 --> 00:04:32.506 A:middle
+responsive layout on iPhone and
+
+00:04:33.326 --> 00:04:33.776 A:middle
+iPad.
+
+00:04:33.866 --> 00:04:35.246 A:middle
+This allows WebKit to treat the
+
+00:04:35.246 --> 00:04:36.706 A:middle
+viewport's device width as the
+
+00:04:36.706 --> 00:04:38.146 A:middle
+real width of Apple Watch.
+
+00:04:40.966 --> 00:04:42.276 A:middle
+Let's now switch gears and talk
+
+00:04:42.276 --> 00:04:43.616 A:middle
+about some best practices for
+
+00:04:43.616 --> 00:04:44.446 A:middle
+form controls.
+
+00:04:45.416 --> 00:04:46.866 A:middle
+WebKit supports interaction with
+
+00:04:46.866 --> 00:04:48.376 A:middle
+form controls out-of-the-box.
+
+00:04:49.036 --> 00:04:50.626 A:middle
+To ensure a great experience for
+
+00:04:50.626 --> 00:04:51.836 A:middle
+users when designing form
+
+00:04:51.836 --> 00:04:53.496 A:middle
+controls and inputs, it's
+
+00:04:53.496 --> 00:04:54.636 A:middle
+important to keep a couple of
+
+00:04:54.636 --> 00:04:55.476 A:middle
+things in mind.
+
+00:04:56.896 --> 00:04:58.386 A:middle
+First, choose the appropriate
+
+00:04:58.386 --> 00:04:59.886 A:middle
+type attribute and element tag
+
+00:04:59.886 --> 00:05:00.886 A:middle
+for your form controls.
+

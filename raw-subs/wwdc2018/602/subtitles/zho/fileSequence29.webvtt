@@ -1,0 +1,42 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:28:58.405 --> 00:29:02.709 align:middle line:-2
+ARKit还为你提供了
+立方体贴图的物理范围
+
+00:29:02.776 --> 00:29:07.347 align:middle line:-1
+它是反射探头所影响的区域
+
+00:29:07.915 --> 00:29:12.653 align:middle line:-1
+并且渲染代理可以使用它来校正并行
+
+00:29:12.753 --> 00:29:17.324 align:middle line:-2
+因此如果你的对象在场景中移动
+它将自动适应到新位置
+
+00:29:17.391 --> 00:29:22.229 align:middle line:-1
+并且环境中的新纹理将被反射出来
+
+00:29:24.965 --> 00:29:28.836 align:middle line:-1
+请注意这与其它锚的生命周期相同
+
+00:29:28.902 --> 00:29:31.772 align:middle line:-2
+例如ARPlaneAnchor
+或ARImageAnchor
+
+00:29:36.944 --> 00:29:40.681 align:middle line:-2
+此外 它被完全集成到
+ARSCNView中
+
+00:29:40.981 --> 00:29:44.852 align:middle line:-2
+因此如果你使用SceneKit
+作为你的渲染技术
+
+00:29:45.752 --> 00:29:50.557 align:middle line:-1
+你只需在世界跟踪配置中启用此功能
+
+00:29:50.991 --> 00:29:54.194 align:middle line:-2
+其余部分将由
+ARSCNView自动完成
+

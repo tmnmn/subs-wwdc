@@ -1,0 +1,111 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:00.256 --> 00:05:01.366 A:middle
+All right Core Image also
+
+00:05:01.366 --> 00:05:02.986 A:middle
+provides you with a way to load
+
+00:05:02.986 --> 00:05:04.406 A:middle
+and save your portrait effects
+
+00:05:04.406 --> 00:05:04.626 A:middle
+matte.
+
+00:05:05.546 --> 00:05:06.806 A:middle
+A new queue was introduced
+
+00:05:06.926 --> 00:05:07.726 A:middle
+auxiliaryPortrait
+
+00:05:07.726 --> 00:05:09.106 A:middle
+EffectsMatte which you just pass
+
+00:05:09.106 --> 00:05:10.976 A:middle
+your image with contents of URL
+
+00:05:11.536 --> 00:05:13.386 A:middle
+and you get a CI image back
+
+00:05:13.386 --> 00:05:14.456 A:middle
+which contains the portrait
+
+00:05:14.456 --> 00:05:14.776 A:middle
+effect.
+
+00:05:19.046 --> 00:05:19.866 A:middle
+Core Image also allows you to
+
+00:05:19.866 --> 00:05:21.636 A:middle
+save your portrait effects
+
+00:05:21.636 --> 00:05:23.946 A:middle
+mattes directly into your files.
+
+00:05:24.426 --> 00:05:26.526 A:middle
+To do this there's a new context
+
+00:05:26.526 --> 00:05:27.326 A:middle
+option called
+
+00:05:27.576 --> 00:05:29.506 A:middle
+portraitEffectsMatteImage, you
+
+00:05:29.506 --> 00:05:30.876 A:middle
+pass in your CI image containing
+
+00:05:30.876 --> 00:05:32.696 A:middle
+the portrait effects matte, and
+
+00:05:32.696 --> 00:05:34.086 A:middle
+then you can write your file to
+
+00:05:34.086 --> 00:05:35.246 A:middle
+disk using for example
+
+00:05:35.246 --> 00:05:36.576 A:middle
+writeHEIFRepresntationOfImage.
+
+00:05:37.196 --> 00:05:39.246 A:middle
+All right so one thing that's
+
+00:05:39.246 --> 00:05:41.136 A:middle
+important to note here is that
+
+00:05:41.416 --> 00:05:42.826 A:middle
+the three images, so your RGB,
+
+00:05:42.826 --> 00:05:44.796 A:middle
+the depth buffer, and the
+
+00:05:44.796 --> 00:05:47.116 A:middle
+portrait matte buffer live at a
+
+00:05:47.116 --> 00:05:47.996 A:middle
+different resolution.
+
+00:05:49.266 --> 00:05:50.426 A:middle
+So for example, the portrait
+
+00:05:50.426 --> 00:05:51.876 A:middle
+matte for the rear facing camera
+
+00:05:51.876 --> 00:05:53.866 A:middle
+is half-size and the depth data
+
+00:05:53.866 --> 00:05:54.696 A:middle
+is even smaller.
+
+00:05:55.526 --> 00:05:56.386 A:middle
+So let's look at the images
+
+00:05:56.386 --> 00:05:57.616 A:middle
+side-by-side in the case of the
+
+00:05:57.616 --> 00:05:58.516 A:middle
+rear facing camera.
+
+00:05:59.786 --> 00:06:00.816 A:middle
+What this means that in your
+

@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:41:58.586 --> 00:42:00.386 A:middle
+Let's take a look at all of this
+
+00:42:00.386 --> 00:42:01.000 A:middle
+in practice.
+
+00:42:09.156 --> 00:42:09.446 A:middle
+All right.
+
+00:42:09.446 --> 00:42:10.376 A:middle
+So, we're back to my Jupiter
+
+00:42:10.376 --> 00:42:11.036 A:middle
+notebook here.
+
+00:42:11.406 --> 00:42:13.006 A:middle
+Same setup as before.
+
+00:42:13.156 --> 00:42:14.776 A:middle
+First thing I want to show you
+
+00:42:14.776 --> 00:42:15.106 A:middle
+is how to [inaudible]
+
+00:42:15.106 --> 00:42:16.386 A:middle
+augmentations using Core Image.
+
+00:42:17.176 --> 00:42:18.506 A:middle
+So, we're loading an image in
+
+00:42:19.216 --> 00:42:20.646 A:middle
+and we're going to define our
+
+00:42:20.646 --> 00:42:21.846 A:middle
+augmentation function here.
+
+00:42:21.846 --> 00:42:22.646 A:middle
+And what we'll be doing
+
+00:42:22.646 --> 00:42:23.856 A:middle
+essentially is sampling from a
+
+00:42:23.856 --> 00:42:25.526 A:middle
+random space for each of the
+
+00:42:25.526 --> 00:42:26.686 A:middle
+filter I've defined here.
+
+00:42:26.856 --> 00:42:28.096 A:middle
+So, we'll be applying
+
+00:42:28.556 --> 00:42:30.816 A:middle
+GaussianBlur, scaling rotation,
+
+00:42:31.336 --> 00:42:32.616 A:middle
+a few adjustments -- exposure
+
+00:42:32.616 --> 00:42:34.706 A:middle
+adjustments -- fibrines as well
+
+00:42:34.706 --> 00:42:35.816 A:middle
+as dithering for noise.
+
+00:42:36.516 --> 00:42:38.186 A:middle
+All right?
+
+00:42:38.256 --> 00:42:40.286 A:middle
+Let's cache that function in and
+
+00:42:40.566 --> 00:42:41.656 A:middle
+let's have a look at a few
+
+00:42:41.656 --> 00:42:43.416 A:middle
+realizations of that
+
+00:42:44.176 --> 00:42:44.786 A:middle
+augmentation.
+
+00:42:45.056 --> 00:42:48.396 A:middle
+So my slider here controls the
+
+00:42:48.396 --> 00:42:49.626 A:middle
+[inaudible] that I'm using in
+
+00:42:49.626 --> 00:42:50.866 A:middle
+the back end.
+
+00:42:52.416 --> 00:42:53.296 A:middle
+All right, pretty cool.
+
+00:42:53.296 --> 00:42:55.106 A:middle
+I'm not sure how efficient that
+
+00:42:55.106 --> 00:42:56.286 A:middle
+is, so here I'm going to be
+
+00:42:56.286 --> 00:42:57.346 A:middle
+processing 200 of these
+
+00:42:57.346 --> 00:42:58.506 A:middle
+augmentations in real time and
+
+00:42:59.076 --> 00:43:00.506 A:middle
+we'll take a look at here -- how
+

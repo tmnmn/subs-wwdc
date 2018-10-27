@@ -1,0 +1,70 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:01.915 --> 00:03:05.652 align:middle line:-2
+现在让我向你展示一段简短的代码
+以演示如何显示实时视图
+
+00:03:06.520 --> 00:03:08.822 align:middle line:-2
+首先 你需要导入
+PlaygroundSupport
+
+00:03:10.224 --> 00:03:13.060 align:middle line:-2
+PlaygroundSupport
+是由Xcode提供的框架
+
+00:03:13.126 --> 00:03:15.462 align:middle line:-2
+以允许Playground能够
+与Xcode之间进行交互
+
+00:03:15.863 --> 00:03:17.998 align:middle line:-1
+其中就包括了对显示实时视图的支持
+
+00:03:18.866 --> 00:03:21.068 align:middle line:-2
+你需要导入这个
+Playground支持框架
+
+00:03:21.134 --> 00:03:22.536 align:middle line:-1
+以便使用其API
+
+00:03:23.704 --> 00:03:28.108 align:middle line:-2
+一旦你使用标准的UIKit或AppKit API
+创建一个viewController
+
+00:03:28.509 --> 00:03:31.111 align:middle line:-2
+你需要将其传递给
+PlaygroundSupport框架
+
+00:03:31.778 --> 00:03:34.081 align:middle line:-2
+你可以通过将当前
+Playground页面的liveView属性
+
+00:03:34.147 --> 00:03:36.884 align:middle line:-2
+设置为viewController
+来完成此操作
+
+00:03:37.584 --> 00:03:40.354 align:middle line:-2
+这将会告诉Xcode
+它应该在辅助编辑器中
+
+00:03:40.420 --> 00:03:41.855 align:middle line:-1
+显示viewController
+
+00:03:43.690 --> 00:03:46.059 align:middle line:-1
+-为让Playground更好看
+
+00:03:46.126 --> 00:03:47.961 align:middle line:-1
+你可以包含一些标记文本
+
+00:03:48.362 --> 00:03:51.632 align:middle line:-2
+当你在创建一个想与他人分享的
+Playground时 这一点尤其有用
+
+00:03:52.065 --> 00:03:57.171 align:middle line:-2
+通过标记 你能在Playground中
+添加风格化的文字、图片和视频
+
+00:03:58.038 --> 00:04:01.341 align:middle line:-2
+现在让我们快速浏览一下
+可以怎样使用标记
+

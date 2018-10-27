@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:00.256 --> 00:08:02.196 A:middle
+The signpost ID will tell the
+
+00:08:02.196 --> 00:08:04.076 A:middle
+system that these are the same
+
+00:08:04.076 --> 00:08:06.516 A:middle
+kind of operation but each one
+
+00:08:06.546 --> 00:08:07.586 A:middle
+is different from each other.
+
+00:08:08.366 --> 00:08:11.276 A:middle
+So if two operations overlap but
+
+00:08:11.276 --> 00:08:12.376 A:middle
+they have different signpost
+
+00:08:12.376 --> 00:08:13.446 A:middle
+IDs, the system will know that
+
+00:08:13.486 --> 00:08:14.686 A:middle
+they're two different intervals.
+
+00:08:15.096 --> 00:08:16.516 A:middle
+As long as you pass the same
+
+00:08:16.516 --> 00:08:18.046 A:middle
+signpost ID at the begin call
+
+00:08:18.046 --> 00:08:19.196 A:middle
+site and the end call site,
+
+00:08:19.626 --> 00:08:21.096 A:middle
+those two signposts will be
+
+00:08:21.316 --> 00:08:22.546 A:middle
+associated with each other.
+
+00:08:23.596 --> 00:08:25.936 A:middle
+You can make signpost IDs with
+
+00:08:25.936 --> 00:08:27.196 A:middle
+this constructor here that takes
+
+00:08:27.196 --> 00:08:29.666 A:middle
+a log handle, but you can also
+
+00:08:29.666 --> 00:08:31.736 A:middle
+make them with an object.
+
+00:08:32.606 --> 00:08:33.765 A:middle
+This could be useful if you have
+
+00:08:33.765 --> 00:08:35.226 A:middle
+some object that represents the
+
+00:08:35.226 --> 00:08:36.426 A:middle
+work that you're trying to do
+
+00:08:36.895 --> 00:08:38.515 A:middle
+and the same signpost ID will be
+
+00:08:38.515 --> 00:08:39.736 A:middle
+generated as long as you use the
+
+00:08:39.736 --> 00:08:41.456 A:middle
+same instance of that object.
+
+00:08:41.826 --> 00:08:42.756 A:middle
+So this means you don't have to
+
+00:08:42.806 --> 00:08:44.386 A:middle
+carry or store the signpost ID
+
+00:08:44.386 --> 00:08:44.876 A:middle
+around.
+
+00:08:44.876 --> 00:08:46.316 A:middle
+You can just use the object
+
+00:08:46.316 --> 00:08:46.756 A:middle
+that's handy.
+
+00:08:48.966 --> 00:08:51.646 A:middle
+Visually, you can think of
+
+00:08:51.646 --> 00:08:53.616 A:middle
+signpost IDs as allowing us to
+
+00:08:53.616 --> 00:08:55.086 A:middle
+pass a little bit of extra
+
+00:08:55.086 --> 00:08:56.926 A:middle
+context to each signpost call
+
+00:08:57.926 --> 00:09:00.576 A:middle
+which can relate the begin and
+

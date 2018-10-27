@@ -1,0 +1,135 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.956 --> 00:07:00.456 A:middle
+it like one.
+
+00:07:01.436 --> 00:07:02.186 A:middle
+Now I want to ask a few
+
+00:07:02.186 --> 00:07:03.396 A:middle
+questions that might have
+
+00:07:03.396 --> 00:07:04.386 A:middle
+surprising answers.
+
+00:07:05.056 --> 00:07:06.116 A:middle
+The first is how do we get the
+
+00:07:06.116 --> 00:07:08.926 A:middle
+first element of an array, and
+
+00:07:08.996 --> 00:07:10.496 A:middle
+instantly you probably all
+
+00:07:10.566 --> 00:07:11.786 A:middle
+thought, well I'll just call
+
+00:07:11.786 --> 00:07:12.456 A:middle
+array subzero.
+
+00:07:12.526 --> 00:07:14.196 A:middle
+An array's index happens to be
+
+00:07:14.196 --> 00:07:14.386 A:middle
+it.
+
+00:07:14.766 --> 00:07:16.236 A:middle
+So you can sometimes say this
+
+00:07:16.366 --> 00:07:17.586 A:middle
+and get exactly what you intend.
+
+00:07:18.036 --> 00:07:19.106 A:middle
+But it isn't the best way to do
+
+00:07:19.106 --> 00:07:19.446 A:middle
+this.
+
+00:07:19.636 --> 00:07:20.636 A:middle
+I'm going to go ahead and ask
+
+00:07:20.676 --> 00:07:22.026 A:middle
+the same question, but this time
+
+00:07:22.196 --> 00:07:23.166 A:middle
+about a different collection.
+
+00:07:23.666 --> 00:07:26.056 A:middle
+What's the first element of a
+
+00:07:26.056 --> 00:07:26.246 A:middle
+set?
+
+00:07:26.986 --> 00:07:27.856 A:middle
+Now this might seem like a
+
+00:07:27.856 --> 00:07:29.276 A:middle
+really weird question, right?
+
+00:07:29.576 --> 00:07:30.356 A:middle
+Sets are unordered.
+
+00:07:31.016 --> 00:07:32.236 A:middle
+However, they are collections,
+
+00:07:32.376 --> 00:07:33.286 A:middle
+and being collections, you can
+
+00:07:33.286 --> 00:07:34.706 A:middle
+iterate through them, and when
+
+00:07:34.706 --> 00:07:35.576 A:middle
+you iterate through a set,
+
+00:07:35.636 --> 00:07:36.886 A:middle
+you're going to iterate through
+
+00:07:36.886 --> 00:07:38.156 A:middle
+one element first, and so that's
+
+00:07:38.156 --> 00:07:39.326 A:middle
+really the question we're asking
+
+00:07:39.396 --> 00:07:39.586 A:middle
+here.
+
+00:07:40.896 --> 00:07:42.026 A:middle
+So can I say set subzero?
+
+00:07:42.856 --> 00:07:44.306 A:middle
+Happily, the compiler will say
+
+00:07:44.306 --> 00:07:46.986 A:middle
+no, and that's because set's
+
+00:07:46.986 --> 00:07:49.346 A:middle
+index type is an int, the type
+
+00:07:49.346 --> 00:07:50.446 A:middle
+system wants us to use the
+
+00:07:50.446 --> 00:07:52.816 A:middle
+correct index type.
+
+00:07:52.996 --> 00:07:54.016 A:middle
+Lucky for us we already know how
+
+00:07:54.016 --> 00:07:54.486 A:middle
+to do that.
+
+00:07:54.796 --> 00:07:55.796 A:middle
+We know the collection protocol
+
+00:07:55.796 --> 00:07:56.856 A:middle
+tells us that all collections
+
+00:07:56.856 --> 00:07:58.266 A:middle
+have a start index, so let's go
+
+00:07:58.266 --> 00:07:59.286 A:middle
+ahead and use that, and if we do
+
+00:07:59.286 --> 00:08:00.496 A:middle
+this, this will actually work
+

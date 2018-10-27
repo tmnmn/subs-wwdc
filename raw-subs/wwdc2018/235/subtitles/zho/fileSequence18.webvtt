@@ -1,0 +1,66 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:17:57.744 --> 00:18:02.883 align:middle line:-2
+其目的是当滚动视图上
+有来自导航栏或工具栏的
+
+00:18:03.417 --> 00:18:07.955 align:middle line:-2
+重叠栏时 将自动设置滚动
+视图上的contentInset
+
+00:18:08.488 --> 00:18:11.458 align:middle line:-2
+这是因为当你的滚动视图
+在视图控制器里面的时候
+
+00:18:11.525 --> 00:18:14.328 align:middle line:-1
+它本身就包含在导航控制器里面了
+
+00:18:15.495 --> 00:18:17.731 align:middle line:-2
+现在对于一些常见的情况
+这个工作效果很好
+
+00:18:17.998 --> 00:18:22.703 align:middle line:-2
+但若你的app有更多自定义或高级
+UIScrollView的使用
+
+00:18:23.303 --> 00:18:27.374 align:middle line:-2
+有时让你的代码设置
+contentInset
+
+00:18:27.441 --> 00:18:30.744 align:middle line:-2
+和UIKit设置相同的contentInset属性
+这可能会带来一些挑战
+
+00:18:31.612 --> 00:18:35.249 align:middle line:-2
+因此从iOS 11开始
+我们有一个更加明确
+
+00:18:35.315 --> 00:18:38.952 align:middle line:-2
+和强大的方法
+来使你获得相同的自动行为
+
+00:18:39.653 --> 00:18:43.390 align:middle line:-2
+实现这一点的机制是利用
+UIScrollView上的一个新属性
+
+00:18:43.790 --> 00:18:46.660 align:middle line:-2
+我们现在会讲到它
+它叫做adjustedContentInset
+
+00:18:48.262 --> 00:18:51.899 align:middle line:-2
+所以从iOS 11开始我们在
+UIScrollView中引入了一个新属性
+
+00:18:51.965 --> 00:18:56.136 align:middle line:-2
+它是只读的
+它是adjustedContentInset
+
+00:18:56.203 --> 00:18:58.739 align:middle line:-2
+它基本上描述了
+滚动视图实际上是如何行为的
+
+00:18:59.540 --> 00:19:01.074 align:middle line:-2
+你可能会问我们刚才讨论的
+contentInset和
+

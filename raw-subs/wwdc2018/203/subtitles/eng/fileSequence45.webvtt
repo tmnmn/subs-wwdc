@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:44:58.106 --> 00:45:00.036 A:middle
+has been generated for us by
+
+00:45:00.126 --> 00:45:00.726 A:middle
+Xcode.
+
+00:45:01.536 --> 00:45:03.156 A:middle
+These are methods that
+
+00:45:03.646 --> 00:45:05.956 A:middle
+developers find useful when
+
+00:45:05.956 --> 00:45:06.756 A:middle
+building their own
+
+00:45:06.756 --> 00:45:07.916 A:middle
+table-view-controllers.
+
+00:45:08.976 --> 00:45:11.016 A:middle
+We will implement two of these
+
+00:45:11.016 --> 00:45:11.536 A:middle
+methods.
+
+00:45:12.766 --> 00:45:15.666 A:middle
+First is a table view number of
+
+00:45:15.736 --> 00:45:16.866 A:middle
+rows in sections.
+
+00:45:17.936 --> 00:45:20.916 A:middle
+This method is asking us for the
+
+00:45:21.066 --> 00:45:22.906 A:middle
+total number of rows that we
+
+00:45:22.906 --> 00:45:24.576 A:middle
+want to display in our table
+
+00:45:24.576 --> 00:45:24.836 A:middle
+view.
+
+00:45:25.966 --> 00:45:28.416 A:middle
+In our case, the total number of
+
+00:45:28.466 --> 00:45:30.656 A:middle
+rows will be the same as the
+
+00:45:30.766 --> 00:45:32.146 A:middle
+total number of players that
+
+00:45:32.146 --> 00:45:33.336 A:middle
+have played the game.
+
+00:45:33.336 --> 00:45:36.026 A:middle
+And we can get this information
+
+00:45:36.026 --> 00:45:37.736 A:middle
+again from our data model.
+
+00:45:38.706 --> 00:45:40.586 A:middle
+So the number of players
+
+00:45:40.586 --> 00:45:42.836 A:middle
+variable will give us the total
+
+00:45:42.836 --> 00:45:43.616 A:middle
+number of rows.
+
+00:45:45.056 --> 00:45:46.986 A:middle
+The second method that we need
+
+00:45:46.986 --> 00:45:49.396 A:middle
+to implement is the cell
+
+00:45:49.396 --> 00:45:50.226 A:middle
+[inaudible] at index path
+
+00:45:50.506 --> 00:45:50.976 A:middle
+method.
+
+00:45:52.536 --> 00:45:55.906 A:middle
+This method is called every time
+
+00:45:56.116 --> 00:45:59.006 A:middle
+a cell needs to be displayed on
+
+00:45:59.006 --> 00:45:59.746 A:middle
+our leaderboard.
+

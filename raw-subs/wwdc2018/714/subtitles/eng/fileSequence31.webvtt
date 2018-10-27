@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:30:59.926 --> 00:31:01.216 A:middle
+We are in no rush."
+
+00:31:02.226 --> 00:31:03.646 A:middle
+The same concept can be applied
+
+00:31:03.646 --> 00:31:05.366 A:middle
+to responsiveness where you mark
+
+00:31:05.366 --> 00:31:06.866 A:middle
+your tasks with priority
+
+00:31:07.096 --> 00:31:08.456 A:middle
+depending on the other tasks
+
+00:31:08.506 --> 00:31:09.166 A:middle
+that you're doing.
+
+00:31:10.106 --> 00:31:11.306 A:middle
+Let's see how your apps can
+
+00:31:11.306 --> 00:31:12.186 A:middle
+benefit from this.
+
+00:31:12.566 --> 00:31:16.936 A:middle
+You might be familiar with these
+
+00:31:16.936 --> 00:31:19.756 A:middle
+five QoS classes associated with
+
+00:31:19.756 --> 00:31:22.026 A:middle
+dispatch queues and NSOperation
+
+00:31:22.026 --> 00:31:22.666 A:middle
+objects.
+
+00:31:23.616 --> 00:31:24.976 A:middle
+Data [inaudible] the CPU
+
+00:31:24.976 --> 00:31:26.096 A:middle
+scheduling policy.
+
+00:31:27.656 --> 00:31:31.156 A:middle
+URLSession is QoS-aware which
+
+00:31:31.156 --> 00:31:33.356 A:middle
+means it will capture the QoS
+
+00:31:33.426 --> 00:31:35.176 A:middle
+off the queue on which you call
+
+00:31:35.176 --> 00:31:36.146 A:middle
+task.resume.
+
+00:31:37.156 --> 00:31:38.646 A:middle
+And all the messages that it
+
+00:31:38.646 --> 00:31:40.296 A:middle
+sends to your delegates will
+
+00:31:40.296 --> 00:31:41.086 A:middle
+respect this QoS.
+
+00:31:41.086 --> 00:31:44.196 A:middle
+Let's take an example.
+
+00:31:45.246 --> 00:31:46.986 A:middle
+If your app wants to fetch some
+
+00:31:46.986 --> 00:31:48.786 A:middle
+data which is not time critical,
+
+00:31:49.406 --> 00:31:51.476 A:middle
+consider resuming that task on a
+
+00:31:51.476 --> 00:31:53.356 A:middle
+queue which has background QoS
+
+00:31:54.026 --> 00:31:56.056 A:middle
+to make sure this task does not
+
+00:31:56.056 --> 00:31:58.066 A:middle
+contend for CPU with other
+
+00:31:58.066 --> 00:31:59.436 A:middle
+higher priority work that your
+
+00:31:59.436 --> 00:32:04.016 A:middle
+app might be doing.
+

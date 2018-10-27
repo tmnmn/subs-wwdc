@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:00.106 --> 00:34:01.086 A:middle
+And here we go.
+
+00:34:01.086 --> 00:34:03.496 A:middle
+Alright, and you can see as I
+
+00:34:03.496 --> 00:34:06.426 A:middle
+scroll through, it has every
+
+00:34:06.426 --> 00:34:08.516 A:middle
+possible string given the
+
+00:34:08.516 --> 00:34:09.916 A:middle
+possible values for the
+
+00:34:09.916 --> 00:34:12.156 A:middle
+parameters defined in enums.
+
+00:34:13.045 --> 00:34:14.556 A:middle
+This is great because, again, I
+
+00:34:14.556 --> 00:34:16.456 A:middle
+don't speak French but I know
+
+00:34:16.456 --> 00:34:18.386 A:middle
+from the slides that flight and
+
+00:34:18.456 --> 00:34:19.416 A:middle
+cruise have different
+
+00:34:19.416 --> 00:34:20.735 A:middle
+grammatical gender, they're
+
+00:34:20.735 --> 00:34:22.045 A:middle
+going to need different forms of
+
+00:34:22.045 --> 00:34:25.096 A:middle
+the word for "a."
+
+00:34:25.356 --> 00:34:27.306 A:middle
+Alright, but there's still some
+
+00:34:27.306 --> 00:34:29.686 A:middle
+grammar problems I can fix and
+
+00:34:29.686 --> 00:34:30.916 A:middle
+those are the ones in English,
+
+00:34:31.176 --> 00:34:34.926 A:middle
+the case of one person and an
+
+00:34:35.266 --> 00:34:36.106 A:middle
+expedition.
+
+00:34:36.585 --> 00:34:38.436 A:middle
+So to do that, I need, or at
+
+00:34:38.436 --> 00:34:40.275 A:middle
+least to fix the plural case,
+
+00:34:40.676 --> 00:34:41.946 A:middle
+I'm going to add a stringsdict
+
+00:34:41.946 --> 00:34:44.146 A:middle
+file with the same name as my
+
+00:34:44.146 --> 00:34:45.216 A:middle
+intent definition.
+
+00:34:46.406 --> 00:34:47.656 A:middle
+So just go over here to my
+
+00:34:47.656 --> 00:34:48.186 A:middle
+project.
+
+00:34:48.676 --> 00:34:49.936 A:middle
+Create new file.
+
+00:34:51.146 --> 00:34:52.366 A:middle
+And I'm going to use the
+
+00:34:52.366 --> 00:34:53.896 A:middle
+stringsdict template that was
+
+00:34:54.045 --> 00:34:55.116 A:middle
+added in Xcode 9.
+
+00:34:56.696 --> 00:34:57.406 A:middle
+Click Next.
+
+00:34:58.516 --> 00:34:59.536 A:middle
+Alright, here's the important
+
+00:34:59.536 --> 00:34:59.746 A:middle
+part.
+
+00:34:59.746 --> 00:35:00.576 A:middle
+I need to make sure I get the
+

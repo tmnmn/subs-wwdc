@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:39:59.906 --> 00:40:01.786 A:middle
+support the frame rate attribute
+
+00:40:02.096 --> 00:40:02.886 A:middle
+because it doesn't make any
+
+00:40:02.886 --> 00:40:04.136 A:middle
+sense in that context.
+
+00:40:04.986 --> 00:40:06.166 A:middle
+Now, a good test for your
+
+00:40:06.166 --> 00:40:07.936 A:middle
+I-frame playlist is to try and
+
+00:40:07.936 --> 00:40:08.746 A:middle
+play it directly.
+
+00:40:09.346 --> 00:40:11.376 A:middle
+That is, take the URI of your
+
+00:40:11.376 --> 00:40:13.116 A:middle
+I-frame playlist and paste it
+
+00:40:13.116 --> 00:40:13.846 A:middle
+into Safari.
+
+00:40:14.316 --> 00:40:16.496 A:middle
+It should play at 1X speed, and
+
+00:40:16.496 --> 00:40:18.136 A:middle
+you should see the I-frames
+
+00:40:18.136 --> 00:40:20.916 A:middle
+displayed one after another in a
+
+00:40:20.916 --> 00:40:22.216 A:middle
+slowly changing sequence.
+
+00:40:23.596 --> 00:40:24.886 A:middle
+Now also I want to point out the
+
+00:40:24.886 --> 00:40:26.266 A:middle
+difference in the bitrate.
+
+00:40:27.036 --> 00:40:28.516 A:middle
+Notice that the I-frame bitrate
+
+00:40:28.516 --> 00:40:30.266 A:middle
+is much lower than the normal
+
+00:40:30.266 --> 00:40:30.796 A:middle
+bitrate.
+
+00:40:30.936 --> 00:40:33.806 A:middle
+That should always be the case.
+
+00:40:34.256 --> 00:40:36.326 A:middle
+Now, speaking of bitrates, we've
+
+00:40:36.616 --> 00:40:39.366 A:middle
+defined how to compute the peak
+
+00:40:39.436 --> 00:40:40.766 A:middle
+bitrate in the HLS
+
+00:40:40.766 --> 00:40:41.616 A:middle
+specification.
+
+00:40:42.396 --> 00:40:43.976 A:middle
+Make sure you do it that way.
+
+00:40:43.976 --> 00:40:44.986 A:middle
+Otherwise, you may get that
+
+00:40:45.086 --> 00:40:46.616 A:middle
+segment exceeds playlist,
+
+00:40:46.616 --> 00:40:49.066 A:middle
+exceeds specified bandwidth
+
+00:40:49.066 --> 00:40:49.436 A:middle
+error.
+
+00:40:50.026 --> 00:40:52.306 A:middle
+Now, we're going to move away
+
+00:40:52.306 --> 00:40:54.316 A:middle
+from video and talk about audio
+
+00:40:54.316 --> 00:40:54.986 A:middle
+for a little bit.
+
+00:40:55.426 --> 00:40:57.046 A:middle
+Now the most common question is
+
+00:40:57.046 --> 00:40:57.936 A:middle
+how do I support multiple
+
+00:40:57.936 --> 00:40:58.606 A:middle
+languages?
+
+00:40:59.306 --> 00:41:00.646 A:middle
+Here's what the interface looks
+

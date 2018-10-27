@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:59.786 --> 00:23:00.456 A:middle
+repository.
+
+00:23:01.586 --> 00:23:02.996 A:middle
+However, as I add more and more
+
+00:23:02.996 --> 00:23:04.686 A:middle
+tests, this is starting to take
+
+00:23:04.686 --> 00:23:05.946 A:middle
+longer and longer, and it's
+
+00:23:05.946 --> 00:23:06.956 A:middle
+becoming a bottleneck in my
+
+00:23:06.956 --> 00:23:07.516 A:middle
+workflow.
+
+00:23:08.486 --> 00:23:09.466 A:middle
+So, let's see how parallel
+
+00:23:09.466 --> 00:23:10.156 A:middle
+testing can help.
+
+00:23:11.266 --> 00:23:12.626 A:middle
+I'll go ahead and switch over to
+
+00:23:12.626 --> 00:23:15.166 A:middle
+the Xcode project and I already
+
+00:23:15.166 --> 00:23:16.866 A:middle
+ran my tests and I want to see
+
+00:23:16.866 --> 00:23:21.416 A:middle
+how long they took to run.
+
+00:23:21.596 --> 00:23:23.736 A:middle
+All right, let's go back to the
+
+00:23:23.736 --> 00:23:24.356 A:middle
+test report.
+
+00:23:25.116 --> 00:23:26.526 A:middle
+So, here, you can see next to
+
+00:23:26.526 --> 00:23:28.496 A:middle
+each method, we show exactly how
+
+00:23:28.496 --> 00:23:29.626 A:middle
+long that method took to
+
+00:23:29.626 --> 00:23:30.146 A:middle
+execute.
+
+00:23:31.296 --> 00:23:33.376 A:middle
+Next, for each test class, we
+
+00:23:33.376 --> 00:23:35.126 A:middle
+show the percentage of passing
+
+00:23:35.126 --> 00:23:37.236 A:middle
+and failing tests, as well as
+
+00:23:37.236 --> 00:23:38.786 A:middle
+how long the test class took to
+
+00:23:38.786 --> 00:23:39.266 A:middle
+execute.
+
+00:23:40.536 --> 00:23:41.836 A:middle
+And finally, in the top right
+
+00:23:41.836 --> 00:23:43.826 A:middle
+corner, you can see exactly how
+
+00:23:43.826 --> 00:23:45.196 A:middle
+long all of your tests took to
+
+00:23:45.196 --> 00:23:45.416 A:middle
+run.
+
+00:23:46.226 --> 00:23:47.266 A:middle
+So, here, we can see that our
+
+00:23:47.266 --> 00:23:48.446 A:middle
+tests took 14 seconds.
+
+00:23:49.676 --> 00:23:50.676 A:middle
+Now I'd like to enable
+
+00:23:50.676 --> 00:23:52.626 A:middle
+parallelization, which I can do
+
+00:23:52.626 --> 00:23:53.606 A:middle
+by going to the scheme.
+
+00:23:54.066 --> 00:23:55.826 A:middle
+So, I'll select the scheme and
+
+00:23:55.826 --> 00:23:56.846 A:middle
+choose edit scheme.
+
+00:23:57.876 --> 00:23:59.516 A:middle
+Next, I'll click the test action
+

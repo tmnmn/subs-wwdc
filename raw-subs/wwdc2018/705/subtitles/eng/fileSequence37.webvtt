@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.506 --> 00:37:01.236 A:middle
+churned by showing them
+
+00:37:01.236 --> 00:37:03.386 A:middle
+resubscription offers or
+
+00:37:03.386 --> 00:37:04.566 A:middle
+potentially surveying them to
+
+00:37:04.566 --> 00:37:06.236 A:middle
+understand why they've left.
+
+00:37:06.856 --> 00:37:09.166 A:middle
+If we look at our example
+
+00:37:09.166 --> 00:37:10.846 A:middle
+subscription let's see what a
+
+00:37:10.846 --> 00:37:12.116 A:middle
+voluntary cancellation would
+
+00:37:12.116 --> 00:37:13.236 A:middle
+look like and how we can
+
+00:37:13.236 --> 00:37:14.656 A:middle
+leverage that inside of our app.
+
+00:37:16.066 --> 00:37:18.596 A:middle
+Here our user has elected to
+
+00:37:18.596 --> 00:37:19.736 A:middle
+cancel via AppleCare.
+
+00:37:20.946 --> 00:37:22.856 A:middle
+In order to let you know we're
+
+00:37:22.856 --> 00:37:24.156 A:middle
+going to surface a cancellation
+
+00:37:24.156 --> 00:37:25.626 A:middle
+date field in the JSON response.
+
+00:37:26.586 --> 00:37:27.416 A:middle
+This is your signal to
+
+00:37:27.416 --> 00:37:29.286 A:middle
+understand this customer has
+
+00:37:29.356 --> 00:37:31.126 A:middle
+contacted AppleCare and either
+
+00:37:31.156 --> 00:37:32.756 A:middle
+canceled or requested a refund.
+
+00:37:33.766 --> 00:37:36.056 A:middle
+But as a developer you would
+
+00:37:36.056 --> 00:37:37.206 A:middle
+want to know this information
+
+00:37:37.266 --> 00:37:37.816 A:middle
+immediately.
+
+00:37:38.986 --> 00:37:40.136 A:middle
+For this we'll deploy a
+
+00:37:40.136 --> 00:37:41.506 A:middle
+server-to-server notification.
+
+00:37:42.836 --> 00:37:43.996 A:middle
+This is important because you'll
+
+00:37:43.996 --> 00:37:45.366 A:middle
+immediately want to shut off
+
+00:37:45.366 --> 00:37:47.096 A:middle
+access to those users on all
+
+00:37:47.096 --> 00:37:49.376 A:middle
+platforms and potentially
+
+00:37:49.446 --> 00:37:50.536 A:middle
+prompting them to see
+
+00:37:50.536 --> 00:37:52.036 A:middle
+alternative subscription offers.
+
+00:37:52.586 --> 00:37:55.926 A:middle
+Now after this user has churned
+
+00:37:56.276 --> 00:37:57.766 A:middle
+it would be important to easily
+
+00:37:57.836 --> 00:37:59.066 A:middle
+segment between those that have
+
+00:37:59.066 --> 00:38:00.306 A:middle
+voluntarily chosen to
+

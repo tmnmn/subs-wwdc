@@ -1,0 +1,126 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:29:59.676 --> 00:30:01.126 A:middle
+CocoaError to return a
+
+00:30:01.126 --> 00:30:02.346 A:middle
+meaningful error that has a good
+
+00:30:02.346 --> 00:30:03.496 A:middle
+localized description for our
+
+00:30:03.496 --> 00:30:04.566 A:middle
+customers and that indicates
+
+00:30:04.566 --> 00:30:06.976 A:middle
+what went wrong.
+
+00:30:07.046 --> 00:30:07.766 A:middle
+We can always add a debug
+
+00:30:07.766 --> 00:30:09.406 A:middle
+description for ourselves, to
+
+00:30:09.406 --> 00:30:10.646 A:middle
+later log if we care to.
+
+00:30:10.766 --> 00:30:11.846 A:middle
+But this is the core.
+
+00:30:12.126 --> 00:30:13.606 A:middle
+We want to failWithError before
+
+00:30:13.606 --> 00:30:14.136 A:middle
+returning nil.
+
+00:30:14.676 --> 00:30:18.526 A:middle
+And then, later on, again, we
+
+00:30:18.526 --> 00:30:19.826 A:middle
+were decoding the purchase date.
+
+00:30:20.306 --> 00:30:22.206 A:middle
+And here, there is a great
+
+00:30:22.206 --> 00:30:23.726 A:middle
+opportunity to add further
+
+00:30:23.726 --> 00:30:24.826 A:middle
+validation where we weren't
+
+00:30:24.826 --> 00:30:25.216 A:middle
+before.
+
+00:30:26.616 --> 00:30:28.056 A:middle
+Here, if we can decode a date,
+
+00:30:28.056 --> 00:30:29.276 A:middle
+well, I was simply storing the
+
+00:30:29.276 --> 00:30:29.756 A:middle
+property.
+
+00:30:30.516 --> 00:30:31.806 A:middle
+But instead, I want to make sure
+
+00:30:31.806 --> 00:30:32.926 A:middle
+that that date is valid.
+
+00:30:33.406 --> 00:30:34.356 A:middle
+For instance, a purchase
+
+00:30:34.356 --> 00:30:35.686 A:middle
+couldn't possibly had been made
+
+00:30:35.736 --> 00:30:37.026 A:middle
+before my app went live on the
+
+00:30:37.026 --> 00:30:37.516 A:middle
+app store.
+
+00:30:37.516 --> 00:30:38.676 A:middle
+So, this is something you could
+
+00:30:38.676 --> 00:30:38.936 A:middle
+check.
+
+00:30:39.286 --> 00:30:40.266 A:middle
+And again, if something goes
+
+00:30:40.266 --> 00:30:42.286 A:middle
+wrong here, we want to fail with
+
+00:30:42.286 --> 00:30:43.096 A:middle
+a meaningful error.
+
+00:30:44.236 --> 00:30:45.256 A:middle
+In this case, it wasn't that the
+
+00:30:45.256 --> 00:30:46.656 A:middle
+data was missing, it was that
+
+00:30:46.656 --> 00:30:47.786 A:middle
+the data was corrupted or
+
+00:30:47.786 --> 00:30:48.656 A:middle
+invalid in some way.
+
+00:30:48.656 --> 00:30:49.736 A:middle
+And so, we'll indicate just
+
+00:30:49.736 --> 00:30:49.926 A:middle
+that.
+
+00:30:49.966 --> 00:30:54.786 A:middle
+Now, that we've gone ahead and
+
+00:30:54.786 --> 00:30:56.136 A:middle
+done exactly this on our type,
+
+00:30:56.796 --> 00:30:58.716 A:middle
+we can go ahead and claim that
+
+00:30:58.716 --> 00:30:59.836 A:middle
+it supports secure coding.
+

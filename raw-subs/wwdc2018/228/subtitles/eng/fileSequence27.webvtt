@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:58.296 --> 00:27:00.656 A:middle
+So, if I go to my View
+
+00:27:00.656 --> 00:27:02.076 A:middle
+controller, where I actually add
+
+00:27:02.076 --> 00:27:03.346 A:middle
+a new sprite, I've had a
+
+00:27:03.346 --> 00:27:04.466 A:middle
+function here to upload the
+
+00:27:04.466 --> 00:27:05.876 A:middle
+sprite count, which creates a
+
+00:27:05.876 --> 00:27:07.906 A:middle
+simple connection object and
+
+00:27:07.906 --> 00:27:09.176 A:middle
+uploads the sprite count every
+
+00:27:09.176 --> 00:27:10.106 A:middle
+time a new sprite is added.
+
+00:27:10.476 --> 00:27:11.446 A:middle
+I'm going to go ahead and
+
+00:27:11.446 --> 00:27:13.946 A:middle
+comment the cell and then jump
+
+00:27:13.946 --> 00:27:15.416 A:middle
+into my app delegate and move it
+
+00:27:16.056 --> 00:27:17.586 A:middle
+to the only upload the sprite
+
+00:27:17.586 --> 00:27:18.396 A:middle
+account when I'm in the
+
+00:27:18.396 --> 00:27:18.826 A:middle
+background.
+
+00:27:19.306 --> 00:27:21.486 A:middle
+And for the sake of this demo,
+
+00:27:21.486 --> 00:27:22.516 A:middle
+I've named that my networking
+
+00:27:22.516 --> 00:27:23.086 A:middle
+optimization.
+
+00:27:24.066 --> 00:27:24.986 A:middle
+I'm going to go ahead and
+
+00:27:24.986 --> 00:27:27.216 A:middle
+rebuild Energy Game and show you
+
+00:27:27.216 --> 00:27:28.276 A:middle
+the effect this has on the
+
+00:27:28.276 --> 00:27:31.806 A:middle
+energy gauges.
+
+00:27:31.936 --> 00:27:33.376 A:middle
+Now, Energy Game is running
+
+00:27:33.376 --> 00:27:33.656 A:middle
+again.
+
+00:27:33.656 --> 00:27:35.286 A:middle
+I'm going to jump back to the
+
+00:27:35.286 --> 00:27:37.906 A:middle
+Xcode Debugger UI, jump back to
+
+00:27:37.906 --> 00:27:41.686 A:middle
+Energy Impact, and now we don't
+
+00:27:41.686 --> 00:27:42.826 A:middle
+see any networking energy, and
+
+00:27:42.826 --> 00:27:44.606 A:middle
+we don't see any overhead, which
+
+00:27:44.606 --> 00:27:44.936 A:middle
+is good.
+
+00:27:45.756 --> 00:27:47.186 A:middle
+So, that's simple optimization,
+
+00:27:47.486 --> 00:27:48.596 A:middle
+simply moving a networking
+
+00:27:48.596 --> 00:27:50.066 A:middle
+request from one area to the
+
+00:27:50.066 --> 00:27:51.416 A:middle
+other and preventing it from
+
+00:27:51.416 --> 00:27:54.116 A:middle
+happening often allowed us to
+
+00:27:54.116 --> 00:27:56.066 A:middle
+greatly reduce our energy impact
+
+00:27:56.976 --> 00:27:58.076 A:middle
+in our quiescent use case.
+
+00:27:58.596 --> 00:28:01.156 A:middle
+So, now, I'm going to go ahead
+

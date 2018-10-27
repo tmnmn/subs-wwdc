@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:59.226 --> 00:27:01.106 A:middle
+in the test report, as well as
+
+00:27:01.106 --> 00:27:02.616 A:middle
+how our classes are distributed
+
+00:27:02.616 --> 00:27:03.586 A:middle
+in the test log.
+
+00:27:05.356 --> 00:27:07.486 A:middle
+Then we saw Xcode launch
+
+00:27:07.486 --> 00:27:09.126 A:middle
+multiple instances of our Mac
+
+00:27:09.126 --> 00:27:10.856 A:middle
+app to run unit tests in
+
+00:27:10.856 --> 00:27:11.486 A:middle
+parallel.
+
+00:27:12.866 --> 00:27:14.736 A:middle
+And finally, we saw multiple
+
+00:27:14.736 --> 00:27:16.666 A:middle
+clones of the simulator running
+
+00:27:16.666 --> 00:27:20.286 A:middle
+our UI tests in parallel.
+
+00:27:20.666 --> 00:27:21.846 A:middle
+Like I mentioned earlier,
+
+00:27:22.386 --> 00:27:24.136 A:middle
+xcodebuild has great support for
+
+00:27:24.136 --> 00:27:25.526 A:middle
+parallel testing as well.
+
+00:27:26.546 --> 00:27:27.766 A:middle
+We've added some new command
+
+00:27:27.766 --> 00:27:29.136 A:middle
+line options that allow you to
+
+00:27:29.136 --> 00:27:30.806 A:middle
+control this behavior and I'd
+
+00:27:30.806 --> 00:27:31.966 A:middle
+like to point out two of those
+
+00:27:31.966 --> 00:27:32.166 A:middle
+now.
+
+00:27:33.706 --> 00:27:35.206 A:middle
+First, we have
+
+00:27:35.276 --> 00:27:36.826 A:middle
+parallel-testing-worker-count,
+
+00:27:37.306 --> 00:27:38.416 A:middle
+which allows you to control the
+
+00:27:38.416 --> 00:27:40.056 A:middle
+exact number of workers or
+
+00:27:40.056 --> 00:27:42.106 A:middle
+runners that Xcode should launch
+
+00:27:42.136 --> 00:27:42.946 A:middle
+during parallel testing.
+
+00:27:44.816 --> 00:27:46.326 A:middle
+Normally, Xcode tries to
+
+00:27:46.326 --> 00:27:47.786 A:middle
+determine an optimal number of
+
+00:27:47.786 --> 00:27:49.336 A:middle
+runners based off of the
+
+00:27:49.336 --> 00:27:51.036 A:middle
+resources of your machine, as
+
+00:27:51.036 --> 00:27:51.866 A:middle
+well as the workload.
+
+00:27:52.956 --> 00:27:54.106 A:middle
+This means that on a higher core
+
+00:27:54.106 --> 00:27:55.356 A:middle
+machine, you will likely
+
+00:27:55.356 --> 00:27:56.576 A:middle
+experience more runners.
+
+00:27:58.126 --> 00:27:59.436 A:middle
+But if you find that the default
+
+00:27:59.436 --> 00:28:00.606 A:middle
+number isn't working well for
+

@@ -1,0 +1,99 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:03:58.086 --> 00:04:00.026 A:middle
+media loading or playback and
+
+00:04:00.026 --> 00:04:02.066 A:middle
+gives applications more control
+
+00:04:02.146 --> 00:04:03.816 A:middle
+over the timing of key loading.
+
+00:04:04.996 --> 00:04:06.756 A:middle
+AVContentKeySession allows
+
+00:04:06.756 --> 00:04:08.776 A:middle
+applications to initiate key
+
+00:04:08.776 --> 00:04:10.516 A:middle
+loading on their own at any
+
+00:04:10.516 --> 00:04:11.246 A:middle
+point in time.
+
+00:04:12.246 --> 00:04:13.986 A:middle
+This opens up new use cases,
+
+00:04:14.546 --> 00:04:16.136 A:middle
+allows applications to optimize
+
+00:04:16.136 --> 00:04:17.966 A:middle
+key delivery, and improve
+
+00:04:17.966 --> 00:04:19.276 A:middle
+different aspects of playback
+
+00:04:19.276 --> 00:04:19.956 A:middle
+experience.
+
+00:04:22.416 --> 00:04:24.646 A:middle
+Playback startup is one such
+
+00:04:24.646 --> 00:04:26.066 A:middle
+thing AVContentKeySession could
+
+00:04:26.066 --> 00:04:26.906 A:middle
+help improve.
+
+00:04:28.706 --> 00:04:30.076 A:middle
+Instead of waiting for
+
+00:04:30.076 --> 00:04:32.426 A:middle
+AVFoundation to send on demand
+
+00:04:32.426 --> 00:04:33.526 A:middle
+key loading requests.
+
+00:04:33.526 --> 00:04:36.096 A:middle
+After requesting playback, you
+
+00:04:36.096 --> 00:04:38.816 A:middle
+could use AVContentKeySession to
+
+00:04:38.816 --> 00:04:41.256 A:middle
+proactively load keys that you
+
+00:04:41.256 --> 00:04:42.736 A:middle
+predict might be required in the
+
+00:04:42.736 --> 00:04:44.596 A:middle
+near future based on user
+
+00:04:44.596 --> 00:04:45.196 A:middle
+actions.
+
+00:04:46.736 --> 00:04:48.236 A:middle
+You could do all this, even
+
+00:04:48.236 --> 00:04:49.536 A:middle
+before a user picks something to
+
+00:04:49.536 --> 00:04:49.896 A:middle
+play.
+
+00:04:51.196 --> 00:04:52.976 A:middle
+We call this key preloading or
+
+00:04:52.976 --> 00:04:53.896 A:middle
+prewarming.
+
+00:04:55.416 --> 00:04:58.016 A:middle
+Further, if you have assets that
+
+00:04:58.016 --> 00:04:59.606 A:middle
+use multiple keys across
+
+00:04:59.606 --> 00:05:01.156 A:middle
+different radians, you could
+

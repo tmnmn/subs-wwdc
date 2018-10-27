@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:32:59.513 --> 00:33:01.849 align:start position:32% line:-2
+そのラインを
+調べることができます
+
+00:33:04.551 --> 00:33:08.355 align:start position:36% line:-2
+この画面の右側に
+見えているのは―
+
+00:33:08.455 --> 00:33:12.526 align:start position:32% line:-2
+この関数で使っている
+時間の割合
+
+00:33:12.860 --> 00:33:18.165 align:start position:29% line:-2
+さらに下に行くと
+各ラインの時間の割合です
+
+00:33:19.199 --> 00:33:22.369 align:start position:21% line:-2
+Shader Profilerは
+最適化コードで動くので―
+
+00:33:22.469 --> 00:33:25.539 align:start position:34% line:-2
+コンパイラは命令を
+再オーダーできます
+
+00:33:25.639 --> 00:33:29.443 align:start position:32% line:-2
+タイミング情報がない
+ラインもあります
+
+00:33:30.777 --> 00:33:34.381 align:start position:32% line:-2
+タイミング情報の次は
+命令カテゴリ
+
+00:33:34.481 --> 00:33:35.749 align:start position:38% line:-1
+見てみましょう
+
+00:33:37.551 --> 00:33:41.688 align:start position:32% line:-2
+ALUの計算に時間を
+費やしています
+
+00:33:41.788 --> 00:33:44.358 align:start position:30% line:-2
+メモリとテクスチャから
+読んでいます
+
+00:33:44.725 --> 00:33:48.796 align:start position:32% line:-2
+しかし心配なのは
+同期に費やす時間です
+
+00:33:48.896 --> 00:33:51.398 align:start position:30% line:-2
+特にメモリの待機時間が
+長いです
+
+00:33:51.498 --> 00:33:54.935 align:start position:27% line:-2
+これはつまり GPUが
+データをすばやく読み込めず
+
+00:33:55.035 --> 00:33:59.506 align:start position:21% line:-2
+別のスレッドでALUを稼働しても
+カバーできなかったということです
+

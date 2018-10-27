@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:59.076 --> 00:01:01.196 A:middle
+example of a design that adapts
+
+00:01:01.316 --> 00:01:03.886 A:middle
+beautifully to iPhone 10 and
+
+00:01:03.886 --> 00:01:04.495 A:middle
+iPhone 8.
+
+00:01:06.236 --> 00:01:08.266 A:middle
+And so these are the three
+
+00:01:08.266 --> 00:01:09.396 A:middle
+things we're going to be talking
+
+00:01:09.396 --> 00:01:10.216 A:middle
+to you about today.
+
+00:01:11.186 --> 00:01:12.726 A:middle
+I'll be speaking about safe area
+
+00:01:12.726 --> 00:01:13.716 A:middle
+and layout margins.
+
+00:01:13.876 --> 00:01:14.906 A:middle
+How you can use them in your
+
+00:01:14.906 --> 00:01:16.756 A:middle
+application to adapt to various
+
+00:01:16.756 --> 00:01:17.916 A:middle
+screen sizes and shapes.
+
+00:01:19.116 --> 00:01:21.546 A:middle
+Then Tyler will come up and talk
+
+00:01:21.546 --> 00:01:22.576 A:middle
+to you about scroll views.
+
+00:01:22.726 --> 00:01:24.406 A:middle
+How they interact with safe
+
+00:01:24.406 --> 00:01:25.686 A:middle
+area, layout margins, and other
+
+00:01:25.686 --> 00:01:26.926 A:middle
+UIKit technologies.
+
+00:01:27.346 --> 00:01:30.856 A:middle
+And finally, Russell will get up
+
+00:01:30.856 --> 00:01:32.236 A:middle
+and talk to you about using all
+
+00:01:32.236 --> 00:01:34.096 A:middle
+UIKit tools to build adaptive
+
+00:01:34.096 --> 00:01:34.936 A:middle
+applications.
+
+00:01:36.086 --> 00:01:38.156 A:middle
+And so with that, let's get to
+
+00:01:38.156 --> 00:01:39.686 A:middle
+talking about safe area and
+
+00:01:39.686 --> 00:01:40.456 A:middle
+layout margins.
+
+00:01:42.016 --> 00:01:44.646 A:middle
+So what is a safe area, and what
+
+00:01:44.646 --> 00:01:46.166 A:middle
+does it look like on the devices
+
+00:01:46.166 --> 00:01:47.026 A:middle
+that you've come to know and
+
+00:01:47.026 --> 00:01:47.576 A:middle
+love?
+
+00:01:48.406 --> 00:01:50.336 A:middle
+Well, on an iPhone 8 with a
+
+00:01:50.336 --> 00:01:52.536 A:middle
+rectangular screen, the entire
+
+00:01:52.536 --> 00:01:53.666 A:middle
+screen is a safe area.
+
+00:01:54.236 --> 00:01:56.356 A:middle
+All of it's there, no overlaps
+
+00:01:56.356 --> 00:01:58.986 A:middle
+on your content.
+
+00:01:58.986 --> 00:02:01.286 A:middle
+On iPhone 10, there's a little
+

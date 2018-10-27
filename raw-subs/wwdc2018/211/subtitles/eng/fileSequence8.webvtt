@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:07:58.696 --> 00:08:01.106 A:middle
+So, there's one key new thing
+
+00:08:01.106 --> 00:08:02.066 A:middle
+here, which is the
+
+00:08:02.246 --> 00:08:04.056 A:middle
+isEligibleForPrediction flag.
+
+00:08:04.546 --> 00:08:06.206 A:middle
+Setting this on any user
+
+00:08:06.206 --> 00:08:07.386 A:middle
+activity turns it into a
+
+00:08:07.386 --> 00:08:09.236 A:middle
+shortcut, and what's really cool
+
+00:08:09.236 --> 00:08:10.716 A:middle
+is if you have an existing user
+
+00:08:10.716 --> 00:08:12.286 A:middle
+activity in your app, you just
+
+00:08:12.286 --> 00:08:14.796 A:middle
+have to set this to true and
+
+00:08:14.796 --> 00:08:16.416 A:middle
+that user activity will become a
+
+00:08:16.416 --> 00:08:17.606 A:middle
+shortcut automatically.
+
+00:08:18.616 --> 00:08:19.926 A:middle
+Now, note that the
+
+00:08:19.926 --> 00:08:21.826 A:middle
+isEligibleForSearch flag has to
+
+00:08:21.826 --> 00:08:22.906 A:middle
+be true in order for
+
+00:08:22.906 --> 00:08:24.956 A:middle
+isEligibleForPrediction to have
+
+00:08:24.956 --> 00:08:25.336 A:middle
+an effect.
+
+00:08:25.486 --> 00:08:27.746 A:middle
+And, by the way, you might also
+
+00:08:27.746 --> 00:08:28.746 A:middle
+want to consider the
+
+00:08:28.746 --> 00:08:30.806 A:middle
+isEligibleForHandoff flag, which
+
+00:08:30.876 --> 00:08:31.786 A:middle
+defaults to true.
+
+00:08:31.786 --> 00:08:34.196 A:middle
+So, by default, all of your user
+
+00:08:34.196 --> 00:08:35.885 A:middle
+activities will be able to be
+
+00:08:35.885 --> 00:08:38.846 A:middle
+handed off between devices.
+
+00:08:38.926 --> 00:08:40.066 A:middle
+Now, when you're creating your
+
+00:08:40.066 --> 00:08:41.166 A:middle
+user activity, you want to make
+
+00:08:41.166 --> 00:08:42.426 A:middle
+sure to include all of the
+
+00:08:42.426 --> 00:08:44.246 A:middle
+information in your user info
+
+00:08:44.246 --> 00:08:45.896 A:middle
+dictionary that you'll need to
+
+00:08:45.896 --> 00:08:47.326 A:middle
+restore the activity later on.
+
+00:08:48.886 --> 00:08:50.976 A:middle
+And the last step is to mark
+
+00:08:50.976 --> 00:08:52.306 A:middle
+your activity current by
+
+00:08:52.306 --> 00:08:54.186 A:middle
+attaching it to a UI
+
+00:08:54.186 --> 00:08:55.566 A:middle
+viewController or a UI responder
+
+00:08:55.566 --> 00:08:56.586 A:middle
+object that's onscreen.
+
+00:08:57.186 --> 00:09:00.476 A:middle
+Now, the last step is to handle
+

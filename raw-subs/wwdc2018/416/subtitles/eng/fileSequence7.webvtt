@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.376 --> 00:07:01.326 A:middle
+Now, this brings up an important
+
+00:07:01.586 --> 00:07:02.466 A:middle
+point about caching.
+
+00:07:03.276 --> 00:07:04.826 A:middle
+When we cache, we are really
+
+00:07:04.826 --> 00:07:05.926 A:middle
+trying to save the CPU from
+
+00:07:05.926 --> 00:07:07.466 A:middle
+doing repeated work, but if we
+
+00:07:07.466 --> 00:07:08.826 A:middle
+cache too much, we're going to
+
+00:07:08.826 --> 00:07:10.306 A:middle
+use up all of our memory, and
+
+00:07:10.716 --> 00:07:12.076 A:middle
+that can have problems with the
+
+00:07:12.076 --> 00:07:12.476 A:middle
+system.
+
+00:07:13.436 --> 00:07:15.316 A:middle
+So try and remember that there's
+
+00:07:15.316 --> 00:07:16.536 A:middle
+a memory compressor and cache,
+
+00:07:16.696 --> 00:07:17.966 A:middle
+you know, get that balance just
+
+00:07:17.966 --> 00:07:19.076 A:middle
+right on what to cache and what
+
+00:07:19.076 --> 00:07:20.326 A:middle
+to kind of recompute.
+
+00:07:21.386 --> 00:07:22.676 A:middle
+One other note is that if you
+
+00:07:22.676 --> 00:07:23.796 A:middle
+use an NSCache instead of a
+
+00:07:23.796 --> 00:07:25.706 A:middle
+dictionary, that's a threat-safe
+
+00:07:25.706 --> 00:07:28.146 A:middle
+way to store cached objects.
+
+00:07:28.506 --> 00:07:30.336 A:middle
+And because of the way NSCache
+
+00:07:30.336 --> 00:07:31.326 A:middle
+allocates its memory, it's
+
+00:07:31.326 --> 00:07:32.806 A:middle
+actually purgeable, so it works
+
+00:07:32.806 --> 00:07:33.396 A:middle
+even better in a
+
+00:07:33.396 --> 00:07:34.436 A:middle
+memory-constrained environment.
+
+00:07:34.876 --> 00:07:38.396 A:middle
+Going back to our typical app
+
+00:07:38.396 --> 00:07:40.136 A:middle
+with those three sections, when
+
+00:07:40.136 --> 00:07:41.166 A:middle
+we talk about the app's
+
+00:07:41.166 --> 00:07:42.636 A:middle
+footprint, we're really talking
+
+00:07:42.636 --> 00:07:44.046 A:middle
+about the dirty and compressed
+
+00:07:44.146 --> 00:07:44.656 A:middle
+segments.
+
+00:07:45.096 --> 00:07:46.556 A:middle
+Clean memory doesn't really
+
+00:07:46.556 --> 00:07:46.766 A:middle
+count.
+
+00:07:47.876 --> 00:07:51.396 A:middle
+Now, every app has a footprint
+
+00:07:51.396 --> 00:07:51.646 A:middle
+limit.
+
+00:07:53.016 --> 00:07:54.816 A:middle
+Now, this limit's fairly high
+
+00:07:54.816 --> 00:07:56.486 A:middle
+for an app, but keep in mind
+
+00:07:56.556 --> 00:07:57.786 A:middle
+that, depending on the device,
+
+00:07:58.276 --> 00:07:59.386 A:middle
+your limit will change.
+
+00:07:59.506 --> 00:08:01.346 A:middle
+So you won't be able to use as
+

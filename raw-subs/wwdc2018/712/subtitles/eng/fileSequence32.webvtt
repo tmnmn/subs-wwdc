@@ -1,0 +1,102 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:58.816 --> 00:32:01.266 A:middle
+So to recap what we just saw, we
+
+00:32:01.266 --> 00:32:02.886 A:middle
+loaded images into SFrame
+
+00:32:02.886 --> 00:32:03.336 A:middle
+format.
+
+00:32:03.646 --> 00:32:05.576 A:middle
+This time style and content
+
+00:32:05.576 --> 00:32:07.346 A:middle
+images into two SFrames.
+
+00:32:07.836 --> 00:32:09.656 A:middle
+We created a model using a
+
+00:32:09.656 --> 00:32:10.966 A:middle
+high-level API for style
+
+00:32:10.966 --> 00:32:12.816 A:middle
+transfer that operates directly
+
+00:32:12.946 --> 00:32:14.576 A:middle
+on a set of style images and a
+
+00:32:14.576 --> 00:32:15.646 A:middle
+set of content images.
+
+00:32:16.436 --> 00:32:18.956 A:middle
+We then stylize images to check
+
+00:32:19.256 --> 00:32:20.546 A:middle
+whether the model is performing
+
+00:32:20.546 --> 00:32:20.836 A:middle
+well.
+
+00:32:21.356 --> 00:32:22.876 A:middle
+We visualized those predictions
+
+00:32:22.876 --> 00:32:23.706 A:middle
+in Turi Create.
+
+00:32:24.226 --> 00:32:25.686 A:middle
+And finally we exported the
+
+00:32:25.686 --> 00:32:27.566 A:middle
+model in Core ML format for use
+
+00:32:27.566 --> 00:32:29.996 A:middle
+in our app.
+
+00:32:30.636 --> 00:32:31.566 A:middle
+Switching gears a bit.
+
+00:32:31.616 --> 00:32:32.656 A:middle
+I want to talk about some other
+
+00:32:32.656 --> 00:32:34.336 A:middle
+features in Turi Create 5.0.
+
+00:32:35.066 --> 00:32:37.186 A:middle
+We now have Mac GPU acceleration
+
+00:32:37.536 --> 00:32:39.626 A:middle
+offering up to a 12x performance
+
+00:32:39.626 --> 00:32:40.726 A:middle
+increase in image
+
+00:32:40.726 --> 00:32:41.586 A:middle
+classification.
+
+00:32:41.756 --> 00:32:43.966 A:middle
+And 9x in object detection, and
+
+00:32:43.966 --> 00:32:45.226 A:middle
+that's on an iMac Pro.
+
+00:32:46.516 --> 00:32:50.586 A:middle
+[ Applause ]
+
+00:32:51.086 --> 00:32:53.096 A:middle
+We have a new task available for
+
+00:32:53.096 --> 00:32:54.616 A:middle
+export into Core ML format.
+
+00:32:54.876 --> 00:32:55.776 A:middle
+Personalization.
+
+00:32:56.466 --> 00:32:58.096 A:middle
+The task here is to recommend
+
+00:32:58.096 --> 00:33:00.496 A:middle
+items for users based on user's
+

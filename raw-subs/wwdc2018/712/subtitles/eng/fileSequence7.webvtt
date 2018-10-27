@@ -1,0 +1,114 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.846 --> 00:07:01.196 A:middle
+an object detection model.
+
+00:07:01.746 --> 00:07:02.866 A:middle
+So we'll want to recognize
+
+00:07:03.186 --> 00:07:04.486 A:middle
+different foods within an image.
+
+00:07:04.726 --> 00:07:05.636 A:middle
+And we'll need to know where
+
+00:07:05.636 --> 00:07:07.046 A:middle
+those, where in the image those
+
+00:07:07.046 --> 00:07:08.396 A:middle
+foods are so that we could tap
+
+00:07:08.396 --> 00:07:09.346 A:middle
+on them to see the different
+
+00:07:09.346 --> 00:07:10.000 A:middle
+calorie counts.
+
+00:07:13.196 --> 00:07:14.636 A:middle
+So let's take a look at the type
+
+00:07:14.636 --> 00:07:16.036 A:middle
+of data that we'll need to
+
+00:07:16.036 --> 00:07:17.576 A:middle
+create this machine learning
+
+00:07:17.576 --> 00:07:17.846 A:middle
+model.
+
+00:07:18.436 --> 00:07:20.906 A:middle
+Of course we need images.
+
+00:07:20.906 --> 00:07:21.866 A:middle
+And if we were just building a
+
+00:07:21.866 --> 00:07:24.006 A:middle
+simple image classifier model,
+
+00:07:24.306 --> 00:07:25.286 A:middle
+we would just need our set of
+
+00:07:25.286 --> 00:07:27.316 A:middle
+images and labels that describe
+
+00:07:27.316 --> 00:07:28.356 A:middle
+the images overall.
+
+00:07:29.366 --> 00:07:30.506 A:middle
+But because we're performing
+
+00:07:30.746 --> 00:07:32.506 A:middle
+object detection, we need a bit
+
+00:07:32.506 --> 00:07:33.316 A:middle
+more information.
+
+00:07:33.956 --> 00:07:35.416 A:middle
+We need to understand not just
+
+00:07:35.416 --> 00:07:36.226 A:middle
+what's in the image.
+
+00:07:36.496 --> 00:07:37.766 A:middle
+But where those objects are.
+
+00:07:38.146 --> 00:07:40.126 A:middle
+Now if we zoom in a bit closer
+
+00:07:40.126 --> 00:07:42.596 A:middle
+to one example, we see a red box
+
+00:07:42.646 --> 00:07:43.756 A:middle
+around a cup of coffee.
+
+00:07:44.616 --> 00:07:45.866 A:middle
+And a green box around a
+
+00:07:45.866 --> 00:07:46.376 A:middle
+croissant.
+
+00:07:47.336 --> 00:07:48.916 A:middle
+We call those boxes bounding
+
+00:07:48.916 --> 00:07:50.996 A:middle
+boxes and we represent those in
+
+00:07:50.996 --> 00:07:51.936 A:middle
+JSON format.
+
+00:07:52.296 --> 00:07:53.806 A:middle
+With a label, and then with
+
+00:07:53.806 --> 00:07:55.796 A:middle
+coordinates x, y, width and
+
+00:07:55.796 --> 00:07:56.086 A:middle
+height.
+
+00:07:56.656 --> 00:07:58.186 A:middle
+Where x and y refer to the
+
+00:07:58.186 --> 00:07:59.926 A:middle
+center of that bounding box.
+

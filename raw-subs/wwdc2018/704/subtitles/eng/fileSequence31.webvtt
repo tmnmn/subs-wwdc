@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:31:00.856 --> 00:31:01.836 A:middle
+Well it has some purchase
+
+00:31:01.836 --> 00:31:03.296 A:middle
+information, the certificates
+
+00:31:03.296 --> 00:31:04.206 A:middle
+and signatures.
+
+00:31:04.666 --> 00:31:06.496 A:middle
+We give you an API to pull it
+
+00:31:06.496 --> 00:31:07.636 A:middle
+off the file system.
+
+00:31:08.216 --> 00:31:09.976 A:middle
+And as I said it's a single
+
+00:31:10.686 --> 00:31:10.786 A:middle
+file.
+
+00:31:11.836 --> 00:31:14.546 A:middle
+We use opensource standards,
+
+00:31:15.116 --> 00:31:18.566 A:middle
+PKCS Cryptographic Container and
+
+00:31:18.566 --> 00:31:20.706 A:middle
+ASN.1 to store the metadata
+
+00:31:20.706 --> 00:31:21.496 A:middle
+within the receipt.
+
+00:31:21.496 --> 00:31:23.216 A:middle
+These are all well documented
+
+00:31:23.216 --> 00:31:24.906 A:middle
+and well published open file
+
+00:31:25.286 --> 00:31:26.266 A:middle
+formats.
+
+00:31:26.776 --> 00:31:29.236 A:middle
+And there are tons of options
+
+00:31:29.236 --> 00:31:30.856 A:middle
+out there for verifying and
+
+00:31:30.856 --> 00:31:33.366 A:middle
+reading the receipt, OpenSSL,
+
+00:31:34.366 --> 00:31:36.466 A:middle
+asn1c, there's tons more, you
+
+00:31:36.466 --> 00:31:37.766 A:middle
+can even build your own.
+
+00:31:38.586 --> 00:31:39.826 A:middle
+How do you read that receipt no
+
+00:31:39.826 --> 00:31:40.876 A:middle
+matter what API you're going to
+
+00:31:40.876 --> 00:31:41.286 A:middle
+use?
+
+00:31:41.286 --> 00:31:42.196 A:middle
+Well you call
+
+00:31:42.196 --> 00:31:44.666 A:middle
+bundle.appStoreReceiptURL, this
+
+00:31:44.666 --> 00:31:46.616 A:middle
+returns a URL to your app, but
+
+00:31:46.616 --> 00:31:48.126 A:middle
+again it's just a path to the
+
+00:31:48.126 --> 00:31:49.466 A:middle
+file in the file system.
+
+00:31:50.256 --> 00:31:50.966 A:middle
+There you're going to want to
+
+00:31:50.966 --> 00:31:52.736 A:middle
+read in that content, get that
+
+00:31:52.736 --> 00:31:54.766 A:middle
+blob of data into memory, and if
+
+00:31:54.766 --> 00:31:55.906 A:middle
+you're doing server-to-server
+
+00:31:55.906 --> 00:31:57.486 A:middle
+validation send it up to your
+
+00:31:57.486 --> 00:31:58.886 A:middle
+server, otherwise you can
+
+00:31:58.886 --> 00:32:00.066 A:middle
+process it right there on the
+

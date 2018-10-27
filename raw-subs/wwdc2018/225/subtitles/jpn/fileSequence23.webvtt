@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:22:58.111 --> 00:23:01.415 align:start position:30% line:-2
+後で使うため
+属性をキャッシュ保存し
+
+00:23:01.515 --> 00:23:03.951 align:start position:25% line:-1
+キャッシュ属性配列に置きます
+
+00:23:05.219 --> 00:23:09.890 align:start position:25% line:-2
+次にコンテンツ境界矩形を使い
+フレームを統合し
+
+00:23:10.057 --> 00:23:12.626 align:start position:23% line:-1
+コンテンツ境界を最新に保ちます
+
+00:23:14.127 --> 00:23:17.931 align:start position:18% line:-1
+prepareメソッドは作動したので
+
+00:23:18.131 --> 00:23:22.035 align:start position:27% line:-2
+レイアウトの
+残りのメソッドを実装します
+
+00:23:24.338 --> 00:23:27.508 align:start position:20% line:-2
+まずCollectionViewの
+コンテンツサイズです
+
+00:23:27.608 --> 00:23:30.177 align:start position:21% line:-1
+prepareで設定しているので
+
+00:23:30.277 --> 00:23:33.313 align:start position:32% line:-2
+コンテンツ境界を
+サイズとして返します
+
+00:23:35.449 --> 00:23:38.585 align:start position:7% line:-2
+次はshouldInvalidateLayout
+(forBoundsChange:)です
+
+00:23:39.453 --> 00:23:43.257 align:start position:27% line:-2
+スクロール中に
+無効化する必要のある要素は
+
+00:23:43.357 --> 00:23:45.659 align:start position:25% line:-1
+レイアウトに含まれていません
+
+00:23:45.759 --> 00:23:49.897 align:start position:23% line:-2
+フローティングヘッダもフッタも
+ありません
+
+00:23:49.997 --> 00:23:54.468 align:start position:23% line:-2
+境界のサイズが変更された時のみ
+無効化します
+
+00:23:54.568 --> 00:23:57.871 align:start position:32% line:-2
+新しい境界のサイズが
+現在のサイズと
+
+00:23:57.971 --> 00:24:02.242 align:start position:23% line:-1
+異なる場合にtrueを返します
+

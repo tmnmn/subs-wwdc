@@ -1,0 +1,55 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:58.946 --> 00:03:00.914 align:start position:34% line:-1
+ループで０から数え
+
+00:03:02.316 --> 00:03:05.752 align:start position:30% line:-2
+目的の位置で
+“削除”を呼び出します
+
+00:03:06.086 --> 00:03:08.856 align:start position:30% line:-1
+そしてループが続いて…
+
+00:03:09.122 --> 00:03:10.157 align:start position:45% line:-1
+おっと
+
+00:03:10.791 --> 00:03:12.159 align:start position:39% line:-1
+問題発生です
+
+00:03:13.260 --> 00:03:17.431 align:start position:25% line:-2
+反復回数より
+配列が短くなってしまいました
+
+00:03:17.798 --> 00:03:23.570 align:start position:27% line:-2
+幸い Swiftのテストで
+このバグは発見できます
+
+00:03:23.837 --> 00:03:29.376 align:start position:25% line:-2
+しかしＣ言語だと
+そう簡単にはいかないでしょう
+
+00:03:29.843 --> 00:03:35.549 align:start position:20% line:-2
+これを修正する場合
+forループをwhileループにし
+
+00:03:35.649 --> 00:03:38.418 align:start position:27% line:-1
+各反復でカウントを調べます
+
+00:03:39.720 --> 00:03:43.090 align:start position:23% line:-1
+しかし これにもバグはあります
+
+00:03:43.857 --> 00:03:49.363 align:start position:27% line:-2
+隣り合う２つの要素を選択し
+１つ目を削除すると―
+
+00:03:50.664 --> 00:03:53.033 align:start position:32% line:-1
+続く要素が移動します
+
+00:03:54.334 --> 00:03:57.371 align:start position:30% line:-1
+このバグは少し厄介です
+
+00:03:57.471 --> 00:04:01.308 align:start position:30% line:-2
+テストを実行しない限り
+見つかりません
+

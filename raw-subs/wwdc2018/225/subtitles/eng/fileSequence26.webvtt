@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:58.616 --> 00:26:01.376 A:middle
+So this function here, which is
+
+00:26:01.376 --> 00:26:03.656 A:middle
+filtering our entire array, you
+
+00:26:03.656 --> 00:26:05.036 A:middle
+might imagine can get really
+
+00:26:05.036 --> 00:26:06.666 A:middle
+expensive as the number of items
+
+00:26:06.666 --> 00:26:08.096 A:middle
+in our CollectionView increases.
+
+00:26:08.416 --> 00:26:09.476 A:middle
+So the more photos we have in
+
+00:26:09.476 --> 00:26:11.106 A:middle
+our app, the slower our
+
+00:26:11.106 --> 00:26:12.316 A:middle
+scrolling performance is going
+
+00:26:12.316 --> 00:26:13.096 A:middle
+to be.
+
+00:26:14.296 --> 00:26:15.506 A:middle
+So if you find yourself in a
+
+00:26:15.506 --> 00:26:17.146 A:middle
+situation like this, it helps to
+
+00:26:17.146 --> 00:26:18.766 A:middle
+step back and think about the
+
+00:26:18.766 --> 00:26:20.776 A:middle
+nature of your layout and think
+
+00:26:20.776 --> 00:26:21.976 A:middle
+about whether you can find any
+
+00:26:21.976 --> 00:26:23.466 A:middle
+optimization opportunities.
+
+00:26:24.296 --> 00:26:28.476 A:middle
+So our layout kind of demands
+
+00:26:28.476 --> 00:26:31.226 A:middle
+that every cell apps next to or
+
+00:26:31.226 --> 00:26:32.856 A:middle
+below it's preceding cell.
+
+00:26:33.536 --> 00:26:34.976 A:middle
+So this means that our
+
+00:26:34.976 --> 00:26:37.926 A:middle
+attributes are already sorted
+
+00:26:37.926 --> 00:26:39.126 A:middle
+within our cached attributes
+
+00:26:39.126 --> 00:26:41.376 A:middle
+array by their frame's minimum y
+
+00:26:41.376 --> 00:26:41.736 A:middle
+value.
+
+00:26:43.456 --> 00:26:45.736 A:middle
+So we have a sorted array, so we
+
+00:26:45.736 --> 00:26:48.006 A:middle
+can speed up our search by doing
+
+00:26:48.006 --> 00:26:49.206 A:middle
+something like a binary search
+
+00:26:49.206 --> 00:26:51.826 A:middle
+as opposed to our linear filter
+
+00:26:51.826 --> 00:26:52.506 A:middle
+that we're doing now.
+
+00:26:53.386 --> 00:26:57.786 A:middle
+So let's remove our slow
+
+00:26:57.786 --> 00:27:00.216 A:middle
+implementation here, and let's
+

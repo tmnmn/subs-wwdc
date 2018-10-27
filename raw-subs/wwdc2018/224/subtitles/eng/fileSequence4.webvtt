@@ -1,0 +1,120 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:04:00.206 --> 00:04:01.506 A:middle
+How do we fix this?
+
+00:04:02.666 --> 00:04:03.926 A:middle
+Well, we could resuscitate the
+
+00:04:03.926 --> 00:04:05.206 A:middle
+model out of the framework
+
+00:04:05.206 --> 00:04:06.766 A:middle
+bundle ourselves and use one of
+
+00:04:06.766 --> 00:04:07.456 A:middle
+the container's other
+
+00:04:07.456 --> 00:04:08.666 A:middle
+initializers, like one that
+
+00:04:08.736 --> 00:04:10.606 A:middle
+takes an explicit managed object
+
+00:04:10.606 --> 00:04:12.986 A:middle
+model, but NSPersistentContainer
+
+00:04:12.986 --> 00:04:14.486 A:middle
+actually has a way for you to
+
+00:04:14.486 --> 00:04:16.036 A:middle
+change which bundle it searches.
+
+00:04:17.856 --> 00:04:19.856 A:middle
+See, NSPersistentContainer knows
+
+00:04:19.856 --> 00:04:21.086 A:middle
+when it's been subclassed and
+
+00:04:21.086 --> 00:04:21.906 A:middle
+will use the type of the
+
+00:04:21.906 --> 00:04:24.106 A:middle
+subclass as a hint when it looks
+
+00:04:24.106 --> 00:04:24.666 A:middle
+for the model.
+
+00:04:25.156 --> 00:04:26.256 A:middle
+All we need to do to take
+
+00:04:26.256 --> 00:04:27.566 A:middle
+advantage of this is to create a
+
+00:04:27.566 --> 00:04:28.236 A:middle
+subclass.
+
+00:04:28.756 --> 00:04:29.826 A:middle
+It doesn't even need to have
+
+00:04:29.826 --> 00:04:30.466 A:middle
+anything in it.
+
+00:04:31.916 --> 00:04:33.026 A:middle
+Then, any code setting up
+
+00:04:33.026 --> 00:04:33.976 A:middle
+through the container that wants
+
+00:04:33.976 --> 00:04:35.816 A:middle
+to use our model can just adopt
+
+00:04:35.816 --> 00:04:37.466 A:middle
+that subclass and the persistent
+
+00:04:37.466 --> 00:04:38.646 A:middle
+container will check in our
+
+00:04:38.646 --> 00:04:40.106 A:middle
+frameworks bundle for our model
+
+00:04:40.106 --> 00:04:40.586 A:middle
+instead.
+
+00:04:41.196 --> 00:04:45.126 A:middle
+So, that's fun, but since we're
+
+00:04:45.126 --> 00:04:45.856 A:middle
+going through the effort of
+
+00:04:45.856 --> 00:04:47.286 A:middle
+factoring our app's resources,
+
+00:04:47.436 --> 00:04:48.486 A:middle
+wouldn't it be nice if we also
+
+00:04:48.486 --> 00:04:49.696 A:middle
+improved the organization of our
+
+00:04:49.696 --> 00:04:50.426 A:middle
+data on disk?
+
+00:04:51.146 --> 00:04:53.306 A:middle
+By default, new persistent
+
+00:04:53.306 --> 00:04:54.276 A:middle
+containers come with a store
+
+00:04:54.276 --> 00:04:55.986 A:middle
+description for an SQLite store
+
+00:04:56.116 --> 00:04:58.136 A:middle
+with automatic migration that on
+
+00:04:58.136 --> 00:04:59.926 A:middle
+iOS lives in our app's documents
+
+00:04:59.926 --> 00:05:00.366 A:middle
+directory.
+

@@ -1,0 +1,71 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:10:00.968 --> 00:10:01.969 align:middle line:-1
+另一种能够得益于
+
+00:10:02.035 --> 00:10:04.438 align:middle line:-2
+Network.framework的
+app类别
+
+00:10:04.838 --> 00:10:06.440 align:middle line:-1
+是直播app
+
+00:10:06.673 --> 00:10:08.775 align:middle line:-1
+直播app
+
+00:10:08.842 --> 00:10:10.477 align:middle line:-1
+通常在app中结合使用UDP
+
+00:10:10.777 --> 00:10:12.579 align:middle line:-1
+和TCP
+
+00:10:13.313 --> 00:10:17.484 align:middle line:-2
+但这里的关键点是
+它正在实时地生成数据
+
+00:10:17.885 --> 00:10:20.654 align:middle line:-1
+如果你有新的视频帧或音频帧
+
+00:10:20.821 --> 00:10:23.056 align:middle line:-1
+你需要确保它们步调一致
+
+00:10:23.190 --> 00:10:24.992 align:middle line:-1
+而且你不会在设备或网络上
+
+00:10:25.058 --> 00:10:27.461 align:middle line:-1
+造成很多缓冲
+
+00:10:28.629 --> 00:10:31.698 align:middle line:-2
+Network.framework中
+用于读写的异步模型
+
+00:10:31.999 --> 00:10:33.834 align:middle line:-1
+可以完美的应用于
+
+00:10:34.067 --> 00:10:36.036 align:middle line:-1
+确保你能够减少这种缓冲
+
+00:10:38.238 --> 00:10:42.075 align:middle line:-2
+我要强调的最后一个用例
+是邮件和消息app
+
+00:10:42.910 --> 00:10:45.879 align:middle line:-1
+这些app将使用更传统的协议
+
+00:10:45.946 --> 00:10:48.081 align:middle line:-1
+即TCP上的TLS
+
+00:10:48.916 --> 00:10:51.051 align:middle line:-1
+然而优雅地处理网络转换
+
+00:10:51.118 --> 00:10:53.587 align:middle line:-1
+对于像这样的app来说非常重要
+
+00:10:55.355 --> 00:10:59.026 align:middle line:-2
+通常 如果你有一个消息传递app
+你的用户会在他走出大楼时
+
+00:10:59.092 --> 00:11:00.494 align:middle line:-1
+使用你的app
+

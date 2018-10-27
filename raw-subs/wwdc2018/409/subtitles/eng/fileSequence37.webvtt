@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:59.016 --> 00:37:01.716 A:middle
+So one of the first feature is
+
+00:37:02.196 --> 00:37:05.476 A:middle
+ARM v8.1 Atomics and that's
+
+00:37:05.626 --> 00:37:07.066 A:middle
+thanks to one of the great
+
+00:37:07.066 --> 00:37:09.566 A:middle
+things about the iPhone X and
+
+00:37:09.706 --> 00:37:11.976 A:middle
+that's the A11 Bionic chip.
+
+00:37:16.426 --> 00:37:19.786 A:middle
+So the A11 Bionic chip has one
+
+00:37:20.176 --> 00:37:22.426 A:middle
+great new feature compared to
+
+00:37:22.466 --> 00:37:24.616 A:middle
+the A10 which is its support for
+
+00:37:24.956 --> 00:37:27.636 A:middle
+six CPUs, six cores running all
+
+00:37:27.636 --> 00:37:29.326 A:middle
+at the same time and that's a
+
+00:37:29.326 --> 00:37:30.786 A:middle
+first in iOS.
+
+00:37:32.196 --> 00:37:34.386 A:middle
+And since you have more cores
+
+00:37:34.386 --> 00:37:35.326 A:middle
+than you probably have more
+
+00:37:35.326 --> 00:37:37.376 A:middle
+threads all at the same time and
+
+00:37:37.376 --> 00:37:38.616 A:middle
+with more threads you might need
+
+00:37:38.616 --> 00:37:40.376 A:middle
+more synchronization to make
+
+00:37:40.376 --> 00:37:41.326 A:middle
+these threads cooperate.
+
+00:37:42.256 --> 00:37:43.876 A:middle
+And that's implemented using
+
+00:37:43.876 --> 00:37:44.426 A:middle
+atomics.
+
+00:37:45.756 --> 00:37:47.636 A:middle
+So the A11 chip also introduces
+
+00:37:47.636 --> 00:37:48.826 A:middle
+a new family of atomic
+
+00:37:48.826 --> 00:37:51.116 A:middle
+instructions that are better
+
+00:37:51.116 --> 00:37:54.346 A:middle
+optimized for the new extra
+
+00:37:54.346 --> 00:37:54.796 A:middle
+cores.
+
+00:37:55.366 --> 00:37:58.386 A:middle
+So let's look at how that works.
+
+00:37:58.386 --> 00:38:02.536 A:middle
+So the way atomics work is
+

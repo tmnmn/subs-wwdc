@@ -1,0 +1,96 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:21:59.076 --> 00:22:00.466 A:middle
+that's why the process died.
+
+00:22:03.456 --> 00:22:06.366 A:middle
+So launch timeouts, how can you
+
+00:22:06.366 --> 00:22:06.886 A:middle
+avoid them.
+
+00:22:07.306 --> 00:22:08.716 A:middle
+We want you to avoid them,
+
+00:22:08.816 --> 00:22:10.626 A:middle
+launch timeouts are a common
+
+00:22:10.626 --> 00:22:13.166 A:middle
+reason for app rejection during
+
+00:22:13.166 --> 00:22:14.536 A:middle
+Apple's app review.
+
+00:22:15.756 --> 00:22:17.256 A:middle
+So how do you avoid this?
+
+00:22:17.256 --> 00:22:19.516 A:middle
+Well test your app of course.
+
+00:22:19.626 --> 00:22:23.316 A:middle
+But there's a catch, the launch
+
+00:22:23.316 --> 00:22:26.016 A:middle
+timeout watchdog is disabled in
+
+00:22:26.016 --> 00:22:27.986 A:middle
+the Simulator and it's disabled
+
+00:22:27.986 --> 00:22:29.586 A:middle
+in the debugger so if you're
+
+00:22:29.586 --> 00:22:30.766 A:middle
+doing all your testing in the
+
+00:22:30.766 --> 00:22:32.076 A:middle
+Simulator and the debugger
+
+00:22:32.076 --> 00:22:33.356 A:middle
+you'll never see watchdog
+
+00:22:33.356 --> 00:22:33.976 A:middle
+timeouts.
+
+00:22:35.206 --> 00:22:37.596 A:middle
+So when you test your app be
+
+00:22:37.596 --> 00:22:39.336 A:middle
+sure to test without the
+
+00:22:39.336 --> 00:22:39.906 A:middle
+debugger.
+
+00:22:40.346 --> 00:22:42.416 A:middle
+If you're a macOS app launch
+
+00:22:42.416 --> 00:22:43.406 A:middle
+your app in the Finder.
+
+00:22:43.786 --> 00:22:46.456 A:middle
+If you're an iOS app run in
+
+00:22:46.456 --> 00:22:48.776 A:middle
+TestFlight or launch your app
+
+00:22:49.026 --> 00:22:50.726 A:middle
+using the iOS App Launcher.
+
+00:22:51.016 --> 00:22:52.656 A:middle
+All of these will run your app
+
+00:22:52.656 --> 00:22:54.526 A:middle
+outside the debugger and the
+
+00:22:54.526 --> 00:22:56.286 A:middle
+launch timeouts will be enabled
+
+00:22:56.286 --> 00:22:57.026 A:middle
+and enforced.
+
+00:22:58.426 --> 00:22:59.966 A:middle
+When you test, test on a real
+
+00:22:59.966 --> 00:23:01.566 A:middle
+device of course, test outside
+

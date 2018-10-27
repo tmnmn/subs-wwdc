@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:34:59.026 --> 00:35:00.926 A:middle
+resume, because it's when your
+
+00:35:00.926 --> 00:35:02.526 A:middle
+app is already running and is
+
+00:35:02.526 --> 00:35:03.666 A:middle
+being brought back to the
+
+00:35:03.666 --> 00:35:04.206 A:middle
+foreground.
+
+00:35:05.046 --> 00:35:06.136 A:middle
+So when you start measuring
+
+00:35:06.136 --> 00:35:07.656 A:middle
+launch, you should start by
+
+00:35:07.656 --> 00:35:08.786 A:middle
+measuring the warm launch.
+
+00:35:09.456 --> 00:35:12.636 A:middle
+And the time it takes to launch
+
+00:35:12.636 --> 00:35:14.036 A:middle
+during this warm is less
+
+00:35:14.036 --> 00:35:17.326 A:middle
+variable than the cold launch,
+
+00:35:17.326 --> 00:35:18.656 A:middle
+and the test iteration is much
+
+00:35:18.656 --> 00:35:19.656 A:middle
+faster as you don't need to
+
+00:35:19.656 --> 00:35:20.536 A:middle
+reboot your device.
+
+00:35:21.846 --> 00:35:23.226 A:middle
+Now, the way we measure launch
+
+00:35:23.226 --> 00:35:25.156 A:middle
+is by evaluating the time it
+
+00:35:25.156 --> 00:35:26.566 A:middle
+takes from the moment you hit
+
+00:35:26.676 --> 00:35:28.236 A:middle
+the application icon, and until
+
+00:35:28.236 --> 00:35:29.706 A:middle
+you can start interacting with
+
+00:35:29.706 --> 00:35:30.696 A:middle
+the app.
+
+00:35:30.986 --> 00:35:32.316 A:middle
+And what I mean by interacting
+
+00:35:32.316 --> 00:35:34.386 A:middle
+is that it's really using and
+
+00:35:34.386 --> 00:35:35.726 A:middle
+not interacting with a spinner.
+
+00:35:37.436 --> 00:35:38.826 A:middle
+A common pattern is to dispatch
+
+00:35:38.856 --> 00:35:40.536 A:middle
+some work and display a spinner
+
+00:35:40.536 --> 00:35:41.956 A:middle
+in the meantime, well that
+
+00:35:41.956 --> 00:35:43.126 A:middle
+doesn't make the app usable
+
+00:35:43.126 --> 00:35:44.526 A:middle
+sooner, so we are trying to
+
+00:35:44.526 --> 00:35:47.086 A:middle
+avoid that here.
+
+00:35:47.386 --> 00:35:48.656 A:middle
+Now there are three goals that
+
+00:35:48.656 --> 00:35:49.886 A:middle
+we are shooting for at Photos,
+
+00:35:50.576 --> 00:35:52.056 A:middle
+and the first one is that we
+
+00:35:52.056 --> 00:35:54.486 A:middle
+want to instant, we don't want
+
+00:35:54.486 --> 00:35:57.666 A:middle
+to display any spinner, and we
+
+00:35:57.666 --> 00:35:59.266 A:middle
+don't want to display any
+

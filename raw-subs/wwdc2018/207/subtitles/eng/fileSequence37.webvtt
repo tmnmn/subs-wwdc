@@ -1,0 +1,108 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:36:57.986 --> 00:37:00.616 A:middle
+cannot pull in your content in
+
+00:37:00.616 --> 00:37:01.126 A:middle
+an iframe.
+
+00:37:01.446 --> 00:37:03.026 A:middle
+And, of course, we do that
+
+00:37:03.126 --> 00:37:05.386 A:middle
+blocking in the network process.
+
+00:37:05.816 --> 00:37:07.236 A:middle
+That's important, right, because
+
+00:37:07.426 --> 00:37:08.886 A:middle
+a speculative execution attack
+
+00:37:08.886 --> 00:37:10.116 A:middle
+can only happen in the same
+
+00:37:10.116 --> 00:37:12.056 A:middle
+process space, so we cut it off
+
+00:37:12.056 --> 00:37:13.336 A:middle
+before it enters where
+
+00:37:13.336 --> 00:37:15.186 A:middle
+evil.example can execute
+
+00:37:15.186 --> 00:37:15.716 A:middle
+JavaScript.
+
+00:37:17.336 --> 00:37:19.756 A:middle
+OK. HttpOnly cookies, do they
+
+00:37:19.756 --> 00:37:21.266 A:middle
+really map to speculative
+
+00:37:21.266 --> 00:37:22.226 A:middle
+execution attacks?
+
+00:37:22.666 --> 00:37:23.616 A:middle
+Yes, they do.
+
+00:37:23.886 --> 00:37:25.606 A:middle
+They're even more important here
+
+00:37:25.606 --> 00:37:27.356 A:middle
+than to try to fight cross-site
+
+00:37:27.356 --> 00:37:27.776 A:middle
+scripting.
+
+00:37:28.456 --> 00:37:31.426 A:middle
+Why? Well, remember that old API
+
+00:37:31.426 --> 00:37:33.616 A:middle
+document.cookie is the way to
+
+00:37:33.616 --> 00:37:35.236 A:middle
+look at cookies from JavaScript?
+
+00:37:36.076 --> 00:37:37.376 A:middle
+Now that we don't-- we can't
+
+00:37:37.376 --> 00:37:38.906 A:middle
+rely on the same-origin policy
+
+00:37:38.906 --> 00:37:41.646 A:middle
+anymore, evil.example can reach
+
+00:37:41.646 --> 00:37:43.636 A:middle
+into an iframe from your content
+
+00:37:43.636 --> 00:37:44.956 A:middle
+and actually read the cookies.
+
+00:37:45.816 --> 00:37:46.676 A:middle
+Super bad.
+
+00:37:47.196 --> 00:37:49.016 A:middle
+But if you mark them HttpOnly,
+
+00:37:49.516 --> 00:37:51.446 A:middle
+WebKit will make sure to keep
+
+00:37:51.546 --> 00:37:52.896 A:middle
+them in the network process.
+
+00:37:53.256 --> 00:37:54.456 A:middle
+We don't need to move them into
+
+00:37:54.456 --> 00:37:55.706 A:middle
+the web content process because
+
+00:37:55.706 --> 00:37:57.216 A:middle
+they never need to be exposed in
+
+00:37:57.216 --> 00:37:58.476 A:middle
+the document.cookie API.
+
+00:37:59.506 --> 00:38:00.836 A:middle
+So, this automatically protects
+

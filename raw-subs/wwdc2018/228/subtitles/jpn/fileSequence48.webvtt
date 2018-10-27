@@ -1,0 +1,59 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:58.145 --> 00:48:00.414 align:start position:32% line:-1
+負の値かも知れません
+
+00:48:01.315 --> 00:48:03.350 align:start position:32% line:-1
+ユーザがシステムを―
+
+00:48:03.450 --> 00:48:06.553 align:start position:23% line:-1
+だまそうとする時に起きがちです
+
+00:48:07.087 --> 00:48:11.358 align:start position:32% line:-2
+ゲーム中 時間を
+リセットしたい場合や
+
+00:48:11.759 --> 00:48:14.528 align:start position:27% line:-1
+ゲームオーバーを避けるべく
+
+00:48:14.628 --> 00:48:18.632 align:start position:25% line:-2
+システム設定で
+時計を24時間前に戻すのです
+
+00:48:19.600 --> 00:48:23.904 align:start position:11% line:-2
+するとnextUpdateIntervalは
+負の値になります
+
+00:48:24.538 --> 00:48:29.009 align:start position:30% line:-2
+タイマーは過去の時間に
+設定されると
+
+00:48:29.343 --> 00:48:34.047 align:start position:29% line:-2
+すぐに作動し
+自身を何度も呼び出します
+
+00:48:34.948 --> 00:48:37.584 align:start position:30% line:-1
+つまりは無限ループです
+
+00:48:39.586 --> 00:48:41.922 align:start position:32% line:-1
+幸い 修復は簡単です
+
+00:48:42.656 --> 00:48:44.725 align:start position:30% line:-1
+この関数を書き換えます
+
+00:48:45.792 --> 00:48:48.195 align:start position:23% line:-1
+ゼロもしくはゼロ未満に変えれば
+
+00:48:48.295 --> 00:48:52.966 align:start position:7% line:-2
+nextUpdateIntervalが負の値でも
+ループから抜け出せます
+
+00:48:54.401 --> 00:48:58.238 align:start position:34% line:-2
+エネルギーの問題を
+よく表した例です
+
+00:48:58.338 --> 00:49:03.344 align:start position:25% line:-2
+通常のテストだけでは
+極めて把握しにくい問題ですが
+

@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:06:59.436 --> 00:07:00.936 A:middle
+They share very similar APIs.
+
+00:07:00.936 --> 00:07:03.416 A:middle
+Okay, so if the layout is all
+
+00:07:03.416 --> 00:07:05.766 A:middle
+about the where content goes,
+
+00:07:06.276 --> 00:07:07.756 A:middle
+the data source is the what.
+
+00:07:07.916 --> 00:07:08.986 A:middle
+The content itself.
+
+00:07:09.836 --> 00:07:11.136 A:middle
+Three core methods to think
+
+00:07:11.136 --> 00:07:11.816 A:middle
+about here.
+
+00:07:11.816 --> 00:07:12.746 A:middle
+The first one is optional,
+
+00:07:12.846 --> 00:07:13.686 A:middle
+number of sections in
+
+00:07:13.686 --> 00:07:16.026 A:middle
+CollectionView, and this one if
+
+00:07:16.026 --> 00:07:16.986 A:middle
+you don't provide it, we'll just
+
+00:07:16.986 --> 00:07:18.086 A:middle
+assume you mean one.
+
+00:07:19.336 --> 00:07:21.446 A:middle
+Similarly, we have number of
+
+00:07:21.446 --> 00:07:22.966 A:middle
+items in section, and this is
+
+00:07:22.966 --> 00:07:24.556 A:middle
+going to tell you the number of
+
+00:07:24.556 --> 00:07:25.346 A:middle
+items in each individual
+
+00:07:25.346 --> 00:07:26.116 A:middle
+section, because they can all
+
+00:07:26.116 --> 00:07:26.986 A:middle
+have different numbers of items.
+
+00:07:27.536 --> 00:07:29.026 A:middle
+And then the last one, sell for
+
+00:07:29.026 --> 00:07:30.206 A:middle
+item index path is where you
+
+00:07:30.206 --> 00:07:31.546 A:middle
+provide the actually content
+
+00:07:31.546 --> 00:07:32.456 A:middle
+you're going to display to your
+
+00:07:32.456 --> 00:07:32.836 A:middle
+users.
+
+00:07:33.506 --> 00:07:35.686 A:middle
+Okay. So that's the data source.
+
+00:07:36.076 --> 00:07:37.736 A:middle
+Okay, the final of our three
+
+00:07:37.736 --> 00:07:38.846 A:middle
+topics we're going to talk about
+
+00:07:39.086 --> 00:07:40.356 A:middle
+before we dive into code with
+
+00:07:40.356 --> 00:07:42.086 A:middle
+Mohammed is the Delegate.
+
+00:07:42.726 --> 00:07:45.346 A:middle
+Okay. So use of the Delegate is
+
+00:07:45.346 --> 00:07:45.786 A:middle
+optional.
+
+00:07:47.226 --> 00:07:48.576 A:middle
+Now, CollectionView is a
+
+00:07:48.576 --> 00:07:50.036 A:middle
+subclass of UIScrollView.
+
+00:07:50.476 --> 00:07:52.256 A:middle
+So we use the same Delegate
+
+00:07:52.686 --> 00:07:54.276 A:middle
+that's provided by the
+
+00:07:54.276 --> 00:07:56.116 A:middle
+ScrollView superclass, but we
+
+00:07:56.116 --> 00:07:56.696 A:middle
+extend it.
+
+00:07:57.526 --> 00:07:58.646 A:middle
+So if you need to modify
+
+00:07:58.906 --> 00:08:00.116 A:middle
+scrolling behavior, you can do
+

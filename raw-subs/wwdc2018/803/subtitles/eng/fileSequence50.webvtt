@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:50:00.116 --> 00:50:01.956 A:middle
+We're going to start by looking
+
+00:50:01.956 --> 00:50:03.196 A:middle
+at a gesture that is apparently
+
+00:50:03.196 --> 00:50:04.926 A:middle
+very simple, a tap.
+
+00:50:05.786 --> 00:50:07.006 A:middle
+You would think that something--
+
+00:50:07.006 --> 00:50:08.866 A:middle
+you would think that a tap is
+
+00:50:08.866 --> 00:50:09.786 A:middle
+something that doesn't have to
+
+00:50:09.786 --> 00:50:11.396 A:middle
+be designed, but you'll see how
+
+00:50:11.396 --> 00:50:13.006 A:middle
+its behavior has more nuances
+
+00:50:13.006 --> 00:50:13.766 A:middle
+than it seems.
+
+00:50:14.896 --> 00:50:16.926 A:middle
+In our example, we're going to
+
+00:50:16.926 --> 00:50:18.856 A:middle
+look at tapping on a button, in
+
+00:50:18.856 --> 00:50:19.916 A:middle
+this case, on the Calculator
+
+00:50:19.916 --> 00:50:19.983 A:middle
+app.
+
+00:50:24.476 --> 00:50:26.216 A:middle
+The first thing to remember is
+
+00:50:26.216 --> 00:50:27.276 A:middle
+that the button should highlight
+
+00:50:27.276 --> 00:50:29.176 A:middle
+immediately when I touch down on
+
+00:50:29.176 --> 00:50:29.346 A:middle
+it.
+
+00:50:30.226 --> 00:50:31.246 A:middle
+This shows me the button is
+
+00:50:31.246 --> 00:50:32.916 A:middle
+working, and that the system is
+
+00:50:32.916 --> 00:50:34.026 A:middle
+reacting to my gesture.
+
+00:50:34.766 --> 00:50:36.526 A:middle
+But, we shouldn't confirm the
+
+00:50:36.576 --> 00:50:39.006 A:middle
+tap until my touch goes up.
+
+00:50:39.976 --> 00:50:41.866 A:middle
+The next thing to remember is to
+
+00:50:41.866 --> 00:50:43.456 A:middle
+create an extra margin around
+
+00:50:43.456 --> 00:50:44.006 A:middle
+the tap area.
+
+00:50:44.636 --> 00:50:46.516 A:middle
+This extra margin will make our
+
+00:50:46.516 --> 00:50:48.506 A:middle
+taps more comfortable, and avoid
+
+00:50:48.506 --> 00:50:50.336 A:middle
+accidental cancellations if a
+
+00:50:50.336 --> 00:50:51.906 A:middle
+touch moves during interaction.
+
+00:50:52.376 --> 00:50:54.746 A:middle
+And, like my colleague Chan was
+
+00:50:54.746 --> 00:50:56.276 A:middle
+saying, I should be able to
+
+00:50:56.276 --> 00:50:57.386 A:middle
+change my mind after I've
+
+00:50:57.456 --> 00:50:58.566 A:middle
+touched down on the button.
+
+00:50:59.066 --> 00:51:00.686 A:middle
+So, if I drag my finger outside
+

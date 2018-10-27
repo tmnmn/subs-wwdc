@@ -1,0 +1,50 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:25:59.293 --> 00:26:01.295 align:start position:34% line:-1
+改善できるはずです
+
+00:26:05.933 --> 00:26:08.235 align:start position:25% line:-1
+これがスライドショーのクラス
+
+00:26:08.602 --> 00:26:11.672 align:start position:12% line:-1
+setCurrentSlideに注目します
+
+00:26:11.772 --> 00:26:16.910 align:start position:27% line:-2
+これがボタンのクリック時に
+呼び出されるメソッドです
+
+00:26:18.979 --> 00:26:22.516 align:start position:21% line:-1
+各スライドは すぐに映らないので
+
+00:26:22.616 --> 00:26:27.788 align:start position:29% line:-2
+クリックすると
+次の画像だけ読み込みます
+
+00:26:31.391 --> 00:26:33.527 align:start position:36% line:-1
+ここでの問題は―
+
+00:26:33.627 --> 00:26:36.997 align:start position:21% line:-1
+移行だけが すぐ行われることです
+
+00:26:37.598 --> 00:26:39.800 align:start position:36% line:-1
+画像を待ちません
+
+00:26:39.900 --> 00:26:45.239 align:start position:27% line:-2
+画像がロードできても
+表示にはデコードが必要です
+
+00:26:46.106 --> 00:26:50.344 align:start position:30% line:-2
+そこで画像のロードと
+デコードを待つように―
+
+00:26:50.444 --> 00:26:52.913 align:start position:32% line:-1
+調整したいと思います
+
+00:26:53.080 --> 00:26:57.985 align:start position:23% line:-2
+HTMLのimg要素に
+新たなdecodeメソッドを―
+
+00:26:58.819 --> 00:27:01.622 align:start position:32% line:-1
+加えれば改善できます
+

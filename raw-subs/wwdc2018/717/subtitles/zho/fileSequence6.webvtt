@@ -1,0 +1,62 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.493 --> 00:06:00.594 align:middle line:0
+Vision怎样？
+
+00:06:01.728 --> 00:06:03.931 align:middle line:0
+在大多数情况下
+它不到1兆字节
+
+00:06:06.233 --> 00:06:09.403 align:middle line:-2
+我们相信这对你来说
+是一个好选择的另一个原因是
+
+00:06:10.070 --> 00:06:11.338 align:middle line:0
+它已经经过优化
+
+00:06:11.638 --> 00:06:15.375 align:middle line:0
+我们了解我们的硬件
+或者说GPU和CPU
+
+00:06:15.442 --> 00:06:17.044 align:middle line:0
+我们对该模型进行了大量优化
+
+00:06:17.878 --> 00:06:21.415 align:middle line:0
+因此它在我们的设备上表现最佳
+
+00:06:24.318 --> 00:06:25.853 align:middle line:-1
+我们如何使用它来训练呢？
+
+00:06:26.954 --> 00:06:31.058 align:middle line:-2
+我们从一些带标签的图像开始
+并将它们放入Create ML
+
+00:06:31.391 --> 00:06:35.395 align:middle line:-2
+而Create ML知道如何从中提取
+Vision FeaturePrint
+
+00:06:36.563 --> 00:06:38.198 align:middle line:-1
+它训练我们的分类器
+
+00:06:38.465 --> 00:06:42.402 align:middle line:-2
+并且该分类器实际上就是最终
+将进入Core ML模型中的东西
+
+00:06:42.469 --> 00:06:43.837 align:middle line:-1
+这就是它如此之小的原因
+
+00:06:45.372 --> 00:06:48.141 align:middle line:-1
+当我真正想要分析图像的时候
+
+00:06:48.809 --> 00:06:53.747 align:middle line:-1
+我所要做的就是使用我的图像和模型
+
+00:06:53.814 --> 00:06:57.618 align:middle line:-2
+在Vision或Core ML中
+它在底层知道如何
+
+00:06:57.885 --> 00:07:01.855 align:middle line:-2
+使用我们的
+Vision FeaturePrint
+

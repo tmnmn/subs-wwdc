@@ -1,0 +1,117 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:05:59.926 --> 00:06:00.896 A:middle
+pretty specialized view
+
+00:06:00.896 --> 00:06:01.606 A:middle
+controllers here.
+
+00:06:02.296 --> 00:06:03.386 A:middle
+Here's one that shows all of my
+
+00:06:03.386 --> 00:06:04.826 A:middle
+posts as well as another that
+
+00:06:04.826 --> 00:06:06.746 A:middle
+shows all posts by all authors.
+
+00:06:07.226 --> 00:06:08.226 A:middle
+Even the detail views are
+
+00:06:08.346 --> 00:06:09.166 A:middle
+duplicated.
+
+00:06:09.306 --> 00:06:10.796 A:middle
+It feels a lot like we could
+
+00:06:10.796 --> 00:06:13.386 A:middle
+have written half the code.
+
+00:06:13.776 --> 00:06:15.656 A:middle
+All we should really need is one
+
+00:06:15.656 --> 00:06:16.916 A:middle
+view controller for displaying a
+
+00:06:16.916 --> 00:06:18.556 A:middle
+list of posts and another for
+
+00:06:18.556 --> 00:06:19.926 A:middle
+displaying a single post.
+
+00:06:20.626 --> 00:06:21.656 A:middle
+We can accomplish this by
+
+00:06:21.656 --> 00:06:23.526 A:middle
+defining good boundaries in
+
+00:06:23.526 --> 00:06:25.516 A:middle
+between our view controllers in
+
+00:06:25.516 --> 00:06:26.916 A:middle
+the form of interfaces that take
+
+00:06:26.916 --> 00:06:27.786 A:middle
+model objects.
+
+00:06:29.286 --> 00:06:30.576 A:middle
+Each controller gets configured
+
+00:06:30.576 --> 00:06:33.026 A:middle
+by its model parameters and then
+
+00:06:33.026 --> 00:06:34.136 A:middle
+they can customize their views
+
+00:06:34.136 --> 00:06:35.306 A:middle
+in cells based on whether
+
+00:06:35.306 --> 00:06:36.626 A:middle
+they're showing my posts or
+
+00:06:36.626 --> 00:06:37.386 A:middle
+someone else's.
+
+00:06:37.906 --> 00:06:40.936 A:middle
+When drafting view controllers
+
+00:06:40.936 --> 00:06:42.566 A:middle
+using Core Data, list views
+
+00:06:42.566 --> 00:06:44.016 A:middle
+should get fetch requests and
+
+00:06:44.016 --> 00:06:45.406 A:middle
+detail views should get managed
+
+00:06:45.406 --> 00:06:46.096 A:middle
+objects.
+
+00:06:47.506 --> 00:06:48.776 A:middle
+View controllers also need a
+
+00:06:48.776 --> 00:06:50.446 A:middle
+managed object context, either
+
+00:06:50.446 --> 00:06:52.076 A:middle
+the container's view context or
+
+00:06:52.076 --> 00:06:53.886 A:middle
+some other main queue context.
+
+00:06:54.046 --> 00:06:55.536 A:middle
+And this pattern for
+
+00:06:55.536 --> 00:06:56.806 A:middle
+generalizing view controllers
+
+00:06:56.806 --> 00:06:58.176 A:middle
+with Core Data isn't just for
+
+00:06:58.176 --> 00:06:59.596 A:middle
+UIs; it works really well for
+
+00:06:59.596 --> 00:07:00.836 A:middle
+utility types as well.
+

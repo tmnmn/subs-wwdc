@@ -1,0 +1,67 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:33:57.271 --> 00:34:00.240 align:middle line:-1
+它是函数调用之后的指令
+
+00:34:00.908 --> 00:34:04.845 align:middle line:-2
+所以调用objc_release
+的指令是前面一条指令
+
+00:34:04.912 --> 00:34:06.180 align:middle line:-1
+即这条指令
+
+00:34:07.347 --> 00:34:11.752 align:middle line:-2
+如果我们读到这个 就说明它是对
+objc_release的调用 这很好
+
+00:34:11.818 --> 00:34:15.789 align:middle line:-2
+这与我们在崩溃日志的堆栈跟踪中
+看到的一致
+
+00:34:15.856 --> 00:34:19.293 align:middle line:-2
+即在此偏移量的
+对objc_release的调用
+
+00:34:20.127 --> 00:34:24.931 align:middle line:-2
+这个释放函数正在释放
+database属性
+
+00:34:25.799 --> 00:34:29.136 align:middle line:-2
+现在我们有了关于崩溃时
+正在做什么的更多细节
+
+00:34:29.670 --> 00:34:33.040 align:middle line:-2
+我们释放了username属性
+并且成功了
+
+00:34:33.739 --> 00:34:36.577 align:middle line:-1
+我们尚未运行到views属性
+
+00:34:36.643 --> 00:34:39.413 align:middle line:-2
+它可能有效 可能无效
+我们并不知道
+
+00:34:39.813 --> 00:34:43.684 align:middle line:-2
+我们知道的是我们试图
+释放database属性
+
+00:34:44.083 --> 00:34:48.688 align:middle line:-2
+并且根据malloc释放列表指针
+的签名 该对象看起来像一个
+
+00:34:48.755 --> 00:34:51.091 align:middle line:-1
+已经被释放过的对象
+
+00:34:52.259 --> 00:34:55.429 align:middle line:-2
+所以这告诉了我们
+导致这次崩溃的原因
+
+00:34:56.029 --> 00:34:59.032 align:middle line:-2
+我们正在释放一个
+LoginViewController对象
+
+00:34:59.399 --> 00:35:02.035 align:middle line:-2
+而其中的database属性
+是无效的
+

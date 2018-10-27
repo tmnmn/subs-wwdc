@@ -1,0 +1,54 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:59.426 --> 00:21:03.831 align:start position:29% line:-2
+すぐにエンコードコールが
+返ってきます
+
+00:21:04.097 --> 00:21:08.836 align:start position:25% line:-2
+GPUのグラフ実行が終わると
+ユーザ指定コールバックです
+
+00:21:09.303 --> 00:21:11.905 align:start position:27% line:-1
+GPUのグラフ処理が終了し
+
+00:21:12.005 --> 00:21:16.810 align:start position:29% line:-2
+CPUはGPUに処理の
+エンコードを継続させます
+
+00:21:17.578 --> 00:21:20.280 align:start position:34% line:-2
+セマファで
+待っていた処理です
+
+00:21:21.281 --> 00:21:22.683 align:start position:32% line:-1
+なぜダブルバッファで
+
+00:21:22.783 --> 00:21:27.821 align:start position:27% line:-2
+GPUのグラフ実行と
+同時ではないのでしょうか？
+
+00:21:28.689 --> 00:21:33.527 align:start position:29% line:-2
+コマンドバッファの方が
+時間がかからないからです
+
+00:21:33.627 --> 00:21:38.565 align:start position:29% line:-2
+メモリの使用を減らすため
+同時処理を避けています
+
+00:21:41.235 --> 00:21:43.670 align:start position:34% line:-1
+グラフを実行すると
+
+00:21:43.771 --> 00:21:49.142 align:start position:29% line:-2
+フォワードパス 損失計算
+勾配のパスを行い
+
+00:21:49.243 --> 00:21:51.345 align:start position:29% line:-1
+グラフは重みを更新します
+
+00:21:51.478 --> 00:21:53.914 align:start position:25% line:-1
+では 重みの更新を見ましょう
+
+00:21:55.782 --> 00:22:00.888 align:start position:29% line:-2
+データソースプロバイダは
+訓練に必須であり
+

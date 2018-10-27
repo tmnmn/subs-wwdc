@@ -1,0 +1,61 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:37:58.312 --> 00:38:02.816 align:start position:23% line:-2
+また毎フレームデータが変化する
+共有リソースをトラックして
+
+00:38:02.916 --> 00:38:05.452 align:start position:23% line:-1
+効率的なアップデートができます
+
+00:38:06.820 --> 00:38:11.058 align:start position:29% line:-2
+この完了ハンドラを用いた
+リソースアップデートの―
+
+00:38:11.158 --> 00:38:15.062 align:start position:30% line:-1
+効率化を見てみましょう
+
+00:38:16.630 --> 00:38:18.565 align:start position:32% line:-2
+ほとんどの
+アプリケーションは―
+
+00:38:18.665 --> 00:38:21.702 align:start position:32% line:-2
+新データを毎フレーム
+GPUに押し出します
+
+00:38:21.969 --> 00:38:25.939 align:start position:25% line:-2
+例えばアニメーションに必要な
+シェーダユニフォームなど
+
+00:38:26.106 --> 00:38:30.944 align:start position:18% line:-2
+MetalではGPUがアクセス中でも
+CPUは同じメモリの―
+
+00:38:31.044 --> 00:38:36.550 align:start position:30% line:-2
+共有リソースに
+書き込むことができます
+
+00:38:37.184 --> 00:38:40.821 align:start position:29% line:-2
+Metalはこのような
+データ競合を保護しません
+
+00:38:41.121 --> 00:38:46.493 align:start position:18% line:-2
+OpenGLはGPUのワークロードが
+終了するのを待つか
+
+00:38:46.660 --> 00:38:52.399 align:start position:23% line:-2
+追加コピーを取ってデフォルトで
+データ競合を防止しますが
+
+00:38:52.633 --> 00:38:55.736 align:start position:32% line:-2
+アプリケーションには
+最適ではないでしょう
+
+00:38:56.069 --> 00:38:59.606 align:start position:21% line:-2
+Metalではアプリケーションに
+最も適合する―
+
+00:38:59.707 --> 00:39:03.544 align:start position:38% line:-2
+最適同期戦略を
+採用できます
+

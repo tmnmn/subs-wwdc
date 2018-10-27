@@ -1,0 +1,105 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:20:01.136 --> 00:20:02.156 A:middle
+Let's take a look at how
+
+00:20:02.156 --> 00:20:03.546 A:middle
+KeyedUnarchiver can make use of
+
+00:20:03.546 --> 00:20:04.216 A:middle
+this information.
+
+00:20:05.346 --> 00:20:07.136 A:middle
+So, we have a decode call we're
+
+00:20:07.136 --> 00:20:07.876 A:middle
+currently making.
+
+00:20:08.486 --> 00:20:09.876 A:middle
+And this under the hood creates
+
+00:20:09.876 --> 00:20:11.126 A:middle
+a KeyedUnarchiver, and decodes
+
+00:20:11.126 --> 00:20:13.346 A:middle
+an object for the object key.
+
+00:20:14.196 --> 00:20:15.666 A:middle
+When you perform this in
+
+00:20:15.666 --> 00:20:17.086 A:middle
+KeyedUnarchiver, KeyedUnarchiver
+
+00:20:17.086 --> 00:20:18.596 A:middle
+finds that class name in the
+
+00:20:18.596 --> 00:20:20.636 A:middle
+object in the archive and pulls
+
+00:20:20.636 --> 00:20:20.926 A:middle
+it out.
+
+00:20:21.666 --> 00:20:23.396 A:middle
+And dynamically finds a class
+
+00:20:23.396 --> 00:20:25.506 A:middle
+with that same name in your app.
+
+00:20:26.046 --> 00:20:28.896 A:middle
+It then allocates an instance of
+
+00:20:28.896 --> 00:20:30.756 A:middle
+that class and then initializes
+
+00:20:30.756 --> 00:20:32.726 A:middle
+it to allow it to decode its own
+
+00:20:32.726 --> 00:20:33.236 A:middle
+contents.
+
+00:20:34.416 --> 00:20:36.026 A:middle
+Afterwards, it awakens the
+
+00:20:36.026 --> 00:20:37.186 A:middle
+object to give it a chance to
+
+00:20:37.186 --> 00:20:38.746 A:middle
+finalize its state.
+
+00:20:40.336 --> 00:20:42.336 A:middle
+Now, this works great for our
+
+00:20:42.336 --> 00:20:42.906 A:middle
+objects.
+
+00:20:43.336 --> 00:20:45.096 A:middle
+But now, we might wonder what
+
+00:20:45.096 --> 00:20:46.176 A:middle
+happens if the data is
+
+00:20:46.176 --> 00:20:47.776 A:middle
+maliciously changed to contain
+
+00:20:47.776 --> 00:20:50.226 A:middle
+an object of a class that we
+
+00:20:50.956 --> 00:20:51.486 A:middle
+didn't expect?
+
+00:20:51.486 --> 00:20:52.656 A:middle
+Well, this whole process that we
+
+00:20:52.656 --> 00:20:54.656 A:middle
+just performed happened on a
+
+00:20:54.656 --> 00:20:55.256 A:middle
+different type.
+
+00:20:56.486 --> 00:20:58.616 A:middle
+We just allocated, initialized
+
+00:20:58.616 --> 00:21:00.746 A:middle
+and awoke an object of a class
+

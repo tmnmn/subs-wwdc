@@ -1,0 +1,123 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:11:58.956 --> 00:12:01.476 A:middle
+So let's talk about run script
+
+00:12:01.476 --> 00:12:01.976 A:middle
+phases.
+
+00:12:02.776 --> 00:12:04.116 A:middle
+Run script phases allow you to
+
+00:12:04.116 --> 00:12:05.636 A:middle
+customize your build process to
+
+00:12:05.636 --> 00:12:06.496 A:middle
+meet your needs.
+
+00:12:07.066 --> 00:12:08.436 A:middle
+And so with this flexibility
+
+00:12:08.826 --> 00:12:10.436 A:middle
+comes some responsibility for
+
+00:12:10.436 --> 00:12:11.906 A:middle
+you as a developer as well.
+
+00:12:12.316 --> 00:12:13.206 A:middle
+And so we want to walk you
+
+00:12:13.206 --> 00:12:14.266 A:middle
+through the configuration
+
+00:12:14.266 --> 00:12:15.856 A:middle
+process and make sure that you
+
+00:12:15.856 --> 00:12:17.196 A:middle
+have your run script phases set
+
+00:12:17.196 --> 00:12:18.866 A:middle
+up and configured well so that
+
+00:12:18.866 --> 00:12:19.856 A:middle
+your builds behave.
+
+00:12:22.116 --> 00:12:24.446 A:middle
+Now, this is your Script Phase
+
+00:12:24.446 --> 00:12:24.786 A:middle
+Editor.
+
+00:12:25.226 --> 00:12:26.566 A:middle
+It can also be found within your
+
+00:12:26.566 --> 00:12:27.356 A:middle
+Build Phase Editor.
+
+00:12:27.356 --> 00:12:28.766 A:middle
+Now I want to call your
+
+00:12:28.766 --> 00:12:31.406 A:middle
+attention to first the script
+
+00:12:31.696 --> 00:12:32.176 A:middle
+body here.
+
+00:12:32.786 --> 00:12:33.916 A:middle
+You can either put your entire
+
+00:12:33.916 --> 00:12:34.916 A:middle
+script contents here.
+
+00:12:34.916 --> 00:12:36.176 A:middle
+Or you can do what I've done and
+
+00:12:36.176 --> 00:12:37.456 A:middle
+reference another script that's
+
+00:12:37.456 --> 00:12:38.286 A:middle
+within your project.
+
+00:12:39.666 --> 00:12:40.876 A:middle
+Now, throughout the entirety of
+
+00:12:40.876 --> 00:12:42.806 A:middle
+your run script phase, there are
+
+00:12:42.806 --> 00:12:43.996 A:middle
+a set of build settings that are
+
+00:12:43.996 --> 00:12:44.746 A:middle
+available to you.
+
+00:12:44.906 --> 00:12:45.926 A:middle
+And I'm making use of one of
+
+00:12:45.926 --> 00:12:47.266 A:middle
+those right now, which is the
+
+00:12:47.266 --> 00:12:47.746 A:middle
+source group.
+
+00:12:48.956 --> 00:12:50.506 A:middle
+This gives you a convenient way
+
+00:12:50.506 --> 00:12:52.646 A:middle
+to not have to provide absolute
+
+00:12:52.646 --> 00:12:54.336 A:middle
+paths or try to do some relative
+
+00:12:54.336 --> 00:12:55.956 A:middle
+path hacks to get your stuff to
+
+00:12:55.956 --> 00:12:56.116 A:middle
+work.
+
+00:12:57.436 --> 00:12:59.676 A:middle
+The next section are you input
+
+00:12:59.676 --> 00:13:00.136 A:middle
+files.
+

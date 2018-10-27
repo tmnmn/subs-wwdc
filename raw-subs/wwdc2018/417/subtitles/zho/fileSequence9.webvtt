@@ -1,0 +1,60 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:59.673 --> 00:09:02.509 align:middle line:-2
+URLProtocol通过
+URLProtocol客户端实例
+
+00:09:02.676 --> 00:09:05.279 align:middle line:-1
+将进程通信回系统
+
+00:09:08.015 --> 00:09:09.850 align:middle line:-1
+我们可以用这个方法
+
+00:09:10.984 --> 00:09:13.987 align:middle line:-2
+我们在测试包中创建一个
+MockURLProtocol类
+
+00:09:14.821 --> 00:09:18.458 align:middle line:-1
+重写canInit请求
+
+00:09:18.525 --> 00:09:21.295 align:middle line:-2
+以向系统表明
+我们对它提供的任何请求感兴趣
+
+00:09:23.864 --> 00:09:26.099 align:middle line:-2
+实现canonicalRequest
+用于请求
+
+00:09:26.567 --> 00:09:29.970 align:middle line:-2
+但startLoading和StopLoading
+方法用于大多数操作发生的地方
+
+00:09:34.808 --> 00:09:37.611 align:middle line:-2
+为了给我们的测试提供一种连接到
+这个URLProtocol的方法
+
+00:09:38.078 --> 00:09:41.949 align:middle line:-2
+我们将提供一个闭包属性
+requestHandler来设置测试
+
+00:09:44.885 --> 00:09:47.120 align:middle line:-2
+当一个URLSession
+任务开始时
+
+00:09:47.187 --> 00:09:50.224 align:middle line:-2
+系统将实例化我们的
+URLProtocol子类
+
+00:09:50.591 --> 00:09:55.395 align:middle line:-2
+为它提供URLRequest值和
+URLProtocol客户端实例
+
+00:09:57.264 --> 00:09:59.132 align:middle line:-2
+然后它将调用
+startLoading方法
+
+00:09:59.733 --> 00:10:02.703 align:middle line:-2
+在该方法中我们将使用测试设置的
+requestHandler
+

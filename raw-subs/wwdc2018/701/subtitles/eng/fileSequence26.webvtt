@@ -1,0 +1,87 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:26:01.226 --> 00:26:03.256 A:middle
+We need to take the image from
+
+00:26:03.256 --> 00:26:03.726 A:middle
+the camera.
+
+00:26:04.036 --> 00:26:06.516 A:middle
+How do we do that?
+
+00:26:06.556 --> 00:26:07.546 A:middle
+We need to write a delegate
+
+00:26:07.546 --> 00:26:10.616 A:middle
+method, and what camera gives us
+
+00:26:10.616 --> 00:26:12.246 A:middle
+is a CV image buffer.
+
+00:26:13.376 --> 00:26:14.806 A:middle
+So we get the buffer.
+
+00:26:14.806 --> 00:26:17.706 A:middle
+We have to make sure this buffer
+
+00:26:17.706 --> 00:26:19.586 A:middle
+is accessible to CPU.
+
+00:26:19.956 --> 00:26:21.186 A:middle
+That's where vImage lives.
+
+00:26:21.806 --> 00:26:24.196 A:middle
+After we apply the effects,
+
+00:26:24.676 --> 00:26:26.026 A:middle
+whatever effects that may be,
+
+00:26:26.426 --> 00:26:28.416 A:middle
+and we have to unlock the base
+
+00:26:28.416 --> 00:26:31.066 A:middle
+address of this pixel buffer so
+
+00:26:31.066 --> 00:26:32.736 A:middle
+that the camera can reuse this
+
+00:26:32.736 --> 00:26:33.386 A:middle
+piece of memory.
+
+00:26:36.556 --> 00:26:38.236 A:middle
+The second step, we have to
+
+00:26:38.236 --> 00:26:40.116 A:middle
+prepare the vImage input and
+
+00:26:40.116 --> 00:26:40.706 A:middle
+output buffer.
+
+00:26:43.276 --> 00:26:45.486 A:middle
+We already have this image in CV
+
+00:26:45.546 --> 00:26:46.616 A:middle
+image buffer.
+
+00:26:46.736 --> 00:26:48.676 A:middle
+All we need to do is just get
+
+00:26:48.676 --> 00:26:50.696 A:middle
+the information such as height
+
+00:26:51.336 --> 00:26:54.206 A:middle
+and width, and then we can
+
+00:26:54.366 --> 00:26:55.856 A:middle
+package this into a vImage
+
+00:26:55.856 --> 00:26:57.906 A:middle
+buffer object so it can be
+
+00:26:57.906 --> 00:26:59.376 A:middle
+consumed by vImage library.
+
+00:26:59.806 --> 00:27:01.346 A:middle
+We do this for luminance and
+

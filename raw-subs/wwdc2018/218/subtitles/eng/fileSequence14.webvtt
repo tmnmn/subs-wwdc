@@ -1,0 +1,93 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:14:01.236 --> 00:14:03.316 A:middle
+Primarily, you need to know that
+
+00:14:03.566 --> 00:14:05.466 A:middle
+custom sublayers will not
+
+00:14:05.716 --> 00:14:07.066 A:middle
+inherit your view's appearance
+
+00:14:07.156 --> 00:14:07.936 A:middle
+automatically.
+
+00:14:08.586 --> 00:14:12.456 A:middle
+Now, the easiest fix for this is
+
+00:14:12.536 --> 00:14:13.656 A:middle
+to switch them from being
+
+00:14:13.726 --> 00:14:15.476 A:middle
+sublayers to subviews.
+
+00:14:15.626 --> 00:14:17.606 A:middle
+If you do that, AppKit will
+
+00:14:17.606 --> 00:14:19.056 A:middle
+automatically handle the
+
+00:14:19.226 --> 00:14:22.096 A:middle
+appearance inheritance for those
+
+00:14:22.096 --> 00:14:23.826 A:middle
+views, just like any other view.
+
+00:14:25.226 --> 00:14:27.186 A:middle
+Otherwise, you'll have to manage
+
+00:14:27.186 --> 00:14:29.136 A:middle
+those layers manually using a
+
+00:14:29.136 --> 00:14:30.266 A:middle
+couple techniques that I'll talk
+
+00:14:30.266 --> 00:14:31.866 A:middle
+about now, viewDidChange
+
+00:14:31.866 --> 00:14:33.686 A:middle
+EffectiveAppearance and the
+
+00:14:33.686 --> 00:14:35.076 A:middle
+concept of the current
+
+00:14:35.076 --> 00:14:35.576 A:middle
+appearance.
+
+00:14:36.146 --> 00:14:39.856 A:middle
+So, first viewDidChange
+
+00:14:39.856 --> 00:14:40.996 A:middle
+EffectiveAppearance.
+
+00:14:41.416 --> 00:14:43.886 A:middle
+This is a new method on NSView
+
+00:14:44.186 --> 00:14:47.226 A:middle
+that you can override to find
+
+00:14:47.226 --> 00:14:48.896 A:middle
+out when your view's effective
+
+00:14:48.896 --> 00:14:49.746 A:middle
+appearance changes.
+
+00:14:51.166 --> 00:14:52.246 A:middle
+Now, this is a good time to
+
+00:14:52.326 --> 00:14:53.906 A:middle
+perform any custom invalidation
+
+00:14:53.906 --> 00:14:56.276 A:middle
+you might need to do or drop any
+
+00:14:56.276 --> 00:14:57.426 A:middle
+caches that are no longer
+
+00:14:57.426 --> 00:14:57.826 A:middle
+relevant.
+
+00:14:58.636 --> 00:15:00.246 A:middle
+But remember you don't need to
+

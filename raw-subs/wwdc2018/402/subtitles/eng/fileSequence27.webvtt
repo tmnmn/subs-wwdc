@@ -1,0 +1,81 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:27:00.816 --> 00:27:03.336 A:middle
+This is still text though and
+
+00:27:03.336 --> 00:27:06.056 A:middle
+there are times when text isn't
+
+00:27:06.056 --> 00:27:07.066 A:middle
+going to be enough and you would
+
+00:27:07.066 --> 00:27:08.456 A:middle
+like to return something
+
+00:27:08.456 --> 00:27:10.446 A:middle
+graphical, maybe a picture.
+
+00:27:12.136 --> 00:27:14.656 A:middle
+The way to control what you
+
+00:27:14.656 --> 00:27:17.706 A:middle
+return is to implement Custom
+
+00:27:17.706 --> 00:27:19.226 A:middle
+Playground Display Convertible,
+
+00:27:20.106 --> 00:27:22.936 A:middle
+a new protocol introduced in
+
+00:27:22.936 --> 00:27:26.506 A:middle
+Xcode 9.3 and Swift 4.1.
+
+00:27:27.256 --> 00:27:29.436 A:middle
+It replaces Custom Playground
+
+00:27:29.436 --> 00:27:31.046 A:middle
+Quick Lookable, which was
+
+00:27:31.046 --> 00:27:32.686 A:middle
+deprecated in the same versions.
+
+00:27:33.026 --> 00:27:36.756 A:middle
+Let's take a look at conformance
+
+00:27:36.756 --> 00:27:39.016 A:middle
+right now.
+
+00:27:40.086 --> 00:27:41.926 A:middle
+You can see here that conforming
+
+00:27:41.926 --> 00:27:44.356 A:middle
+involves only returning one
+
+00:27:44.356 --> 00:27:45.426 A:middle
+property, Playground
+
+00:27:45.426 --> 00:27:45.856 A:middle
+Description.
+
+00:27:46.546 --> 00:27:47.946 A:middle
+Playground Description is of
+
+00:27:47.946 --> 00:27:49.916 A:middle
+type Any, which means you can
+
+00:27:49.916 --> 00:27:51.456 A:middle
+return anything that you feel
+
+00:27:51.456 --> 00:27:54.686 A:middle
+best describes your value.
+
+00:27:56.496 --> 00:27:58.256 A:middle
+Now, there are certain types
+
+00:27:58.256 --> 00:27:59.416 A:middle
+that have specialized
+
+00:27:59.416 --> 00:28:01.446 A:middle
+representations already and
+

@@ -1,0 +1,80 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:09:57.331 --> 00:10:00.067 align:middle line:-1
+我们还向你的app提供更好的通讯
+
+00:10:00.434 --> 00:10:02.669 align:middle line:-1
+以预估用户可能希望播放什么内容
+
+00:10:02.736 --> 00:10:04.505 align:middle line:-2
+或在CarPlay车载显示屏上
+想要浏览什么内容
+
+00:10:05.639 --> 00:10:08.175 align:middle line:-2
+现在你有更大的空间
+来改善你的音频app
+
+00:10:08.242 --> 00:10:09.643 align:middle line:-1
+让我们看看该如何实现
+
+00:10:09.710 --> 00:10:13.247 align:middle line:-2
+首先要查看
+reloadData的实施
+
+00:10:13.313 --> 00:10:15.082 align:middle line:-2
+这是MPPlayableContent中的
+一个调用
+
+00:10:15.148 --> 00:10:18.285 align:middle line:-2
+它会了解如何为你的音频app
+进行更好优化
+
+00:10:19.186 --> 00:10:22.589 align:middle line:-2
+我们发现你其实
+应该只调用reloadData
+
+00:10:22.656 --> 00:10:23.957 align:middle line:-1
+当绝对必要时
+
+00:10:24.725 --> 00:10:26.793 align:middle line:-1
+它的功能是拆解
+
+00:10:26.860 --> 00:10:29.696 align:middle line:-2
+整个app的层级
+在CarPlay车载显示器上
+
+00:10:29.763 --> 00:10:32.799 align:middle line:-2
+并请求你的音频app
+再次进行重新构建
+
+00:10:32.866 --> 00:10:34.801 align:middle line:-1
+这可能是一个非常昂贵的操作
+
+00:10:34.868 --> 00:10:36.537 align:middle line:-1
+让你app的响应性变得不那么强
+
+00:10:37.771 --> 00:10:40.707 align:middle line:-1
+相反 如果你只需要更新一些内容
+
+00:10:40.774 --> 00:10:44.711 align:middle line:-2
+你应该把它们一起打包到一个
+beginUpdates和一个endUpdates中
+
+00:10:44.778 --> 00:10:47.047 align:middle line:-1
+从而可以适当地更新内容
+
+00:10:48.348 --> 00:10:51.685 align:middle line:-2
+现在MPPlayableContent
+所拥有的调用
+
+00:10:51.752 --> 00:10:55.022 align:middle line:-2
+是异步操作
+当我们向你的app请求数据时
+
+00:10:55.422 --> 00:10:57.791 align:middle line:-1
+因此 需要在你app的某个位置
+
+00:10:57.858 --> 00:11:01.328 align:middle line:-1
+保存内部陈述或信息缓存
+

@@ -1,0 +1,58 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:18:57.070 --> 00:19:01.041 align:start position:25% line:-2
+４つ目のカスタムレイアウトの
+サブクラスは
+
+00:19:01.141 --> 00:19:04.311 align:start position:27% line:-1
+prepareメソッドです
+
+00:19:04.411 --> 00:19:06.547 align:start position:34% line:-1
+これはレイアウトが
+
+00:19:06.647 --> 00:19:09.783 align:start position:23% line:-1
+無効化される度に呼び出されます
+
+00:19:09.917 --> 00:19:14.421 align:start position:32% line:-2
+キャッシュ保存したい
+レイアウト属性や
+
+00:19:14.721 --> 00:19:19.526 align:start position:32% line:-2
+コンテンツのサイズを
+計算する良い機会です
+
+00:19:23.363 --> 00:19:26.867 align:start position:25% line:-1
+追加のAPIについて話します
+
+00:19:26.967 --> 00:19:30.170 align:start position:11% line:-2
+shouldInvalidateLayout
+(forBoundsChange:)です
+
+00:19:30.704 --> 00:19:34.908 align:start position:25% line:-2
+これは境界が
+変更される度に呼び出されます
+
+00:19:35.008 --> 00:19:38.445 align:start position:21% line:-2
+これもUIScrollViewの
+サブクラスです
+
+00:19:38.545 --> 00:19:41.982 align:start position:25% line:-1
+境界の変更とは何を指すのか？
+
+00:19:42.082 --> 00:19:46.487 align:start position:23% line:-1
+スクロール中に原点が変わったり
+
+00:19:46.587 --> 00:19:51.492 align:start position:29% line:-2
+アプリケーションと共に
+サイズが変わったりします
+
+00:19:51.592 --> 00:19:54.528 align:start position:29% line:-1
+そのため スクロール時や
+
+00:19:55.028 --> 00:19:57.998 align:start position:23% line:-1
+絵文字の使用中に呼び出されます
+
+00:19:58.098 --> 00:20:01.301 align:start position:25% line:-1
+うまく設定する必要があります
+
