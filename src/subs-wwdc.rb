@@ -6,6 +6,7 @@ require 'json'
 require 'fileutils'
 require 'parallel'
 require 'ruby-progressbar'
+require "webvtt"
 
 class SessionInfo
   attr_accessor :title, :genre, :url, :m3uUrl, :summaryText, :sessionDetail
@@ -165,6 +166,73 @@ class MasterPlayListParser
       end
     end
     return m3uHash
+  end
+end
+
+class SubText
+  attr_accessor :text, :startTime, :endTime
+
+  def initalize()
+    @text = ""
+    @startTime = 0
+    @endTime = 0
+  end
+
+  def self.create(text, startTime, endTime)
+    obj = self.new()
+    obj.text = text
+    obj.startTime = startTime
+    obj.endTime = endTime
+    return obj
+  end
+end
+
+class SessionSub
+  attr_accessor :sessionInfo, :subTexts
+
+  def initalize()
+    @sessionInfo = sessionInfo
+    @subTexts = []
+  end
+
+  def self.create(sessionInfo)
+    obj = self.new()
+    obj.sessionInfo = sessionInfo
+    obj.subTexts = []
+    return obj
+  end
+
+  def addSubs(subs)
+    @subTexts.concat(subs)
+  end
+
+  def generateMdText()
+    text = ""
+    text = "\# #{@sessionInfo.title}\n\n"
+    text = "#{text}\#\# Summary\n#{@sessionInfo.summaryText}\n\n"
+    text = "#{text}\#\# Info\n* #{@sessionInfo.genre}\n* #{@sessionInfo.sessionDetail}\n* #{@sessionInfo.url}\n\n"
+    text = "#{text}\#\# Text\n"
+
+    subTexts.each do |subText|
+      url = "#{@sessionInfo.url}?time=#{subText.startTime.to_s}"
+      text = "#{text} [#{subText.text}](#{url})"
+    end
+    return text
+  end
+end
+
+class SubParser
+  def self.parse(webvttFilePath)
+    subs = []
+
+    # dependes on https://github.com/opencoconut/webvtt-ruby
+    webvtt = WebVTT.read(webvttFilePath)
+    webvtt.cues.each do |cue|
+      sub = SubText.create(cue.text, cue.start_in_sec.floor, cue.end_in_sec.floor)
+      subs.push(sub)
+    end
+
+    return subs
   end
 end
 
@@ -375,6 +443,71 @@ def download_subs(rootDirPath)
   }
 end
 
+def generate_subs(indexFilePath)
+  sessionInfoHashs = []
+  begin
+    File.open(indexFilePath, "r") do |f|
+      sessionInfoHashs = JSON.load(f)
+    end
+  rescue => e
+    p "! #{indexFilePath} (#{e})"
+  end
+
+  sessionInfoHashs.each do |sessionInfoHash|
+    sessionInfo = SessionInfo.create_from_hash(sessionInfoHash)
+
+    sessionNumber = File.basename(sessionInfo.url)
+    dirPath = File.join(File.dirname(indexFilePath), sessionNumber)
+    subDirPath = File.join(dirPath, "subtitles")
+
+    sessionDirPaths = Dir.entries(subDirPath) - [".", ".."]
+    results = Parallel.map(sessionDirPaths, in_threads: 1, progress: "generate file") { |sessionDirPath|
+      # generate subs
+      dirPath = File.join(subDirPath, sessionDirPath)
+      if !File.directory?(dirPath)
+        next
+      end
+
+      # Read sub file
+      sessionSub = SessionSub.create(sessionInfo)
+
+      subFilePathes = Dir.entries(dirPath) - [".", ".."]
+      subFilePathes.delete_if { |a|
+        aMatches = a.match(%r{fileSequence([0-9]+?).webvtt})
+        aMatches.kind_of?(NilClass)
+      }
+
+      subFilePathes = subFilePathes.sort {|a, b|
+        aMatches = a.match(%r{fileSequence([0-9]+?).webvtt})
+        bMatches = b.match(%r{fileSequence([0-9]+?).webvtt})
+
+        aNum = aMatches[1]
+        bNum = bMatches[1]
+
+        aNum.to_i <=> bNum.to_i
+      }
+
+      subFilePathes.each do |subFilePath|
+        subFullFilePath = File.join(dirPath, subFilePath)
+        subs = SubParser.parse(subFullFilePath)
+        sessionSub.addSubs(subs)
+      end
+
+      text = sessionSub.generateMdText()
+
+      # Write file
+      begin
+        filePath = File.join(dirPath, "text.md")
+        File.open(filePath, "w") do |f|
+          f.write(text)
+        end
+      rescue => e
+        p "! #{filePath} (#{e})"
+      end
+    }
+  end
+end
+
 # main
 def main (argv)
   wwdcyear = "wwdc2018"
@@ -391,6 +524,9 @@ def main (argv)
     exit true
   when 'downloadSubs'
     download_subs(File.dirname(filePath))
+    exit true
+  when 'generateSubs'
+    generate_subs(filePath)
     exit true
   else
     puts "sub commands: `createIndexFile` `downloadMasterPlaylists` `downloadSubPlaylists` `downloadSubs` `generateSubs`"
