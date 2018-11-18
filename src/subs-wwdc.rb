@@ -462,6 +462,8 @@ def generate_subs(indexFilePath)
 
     sessionDirPaths = Dir.entries(subDirPath) - [".", ".."]
     results = Parallel.map(sessionDirPaths, in_threads: 1, progress: "generate file") { |sessionDirPath|
+      # TODO: Fix to fail webvtt file parsing when enabled multi thread
+
       # generate subs
       dirPath = File.join(subDirPath, sessionDirPath)
       if !File.directory?(dirPath)
